@@ -4,12 +4,12 @@ ms.assetid: 17bf848f-6d45-4588-aaa7-50fe99579440
 title: System.Identity.DisplayName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85d995c03e4aaf5a2ce8d744e84c0a953ec063af
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c0204218c96dac91e3ae1f71c77106a0d4e37d3654ec62ba4b43bb218a9082a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844795"
 ---
 # <a name="systemidentitydisplayname"></a>System.Identity.DisplayName
 

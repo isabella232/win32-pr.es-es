@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene los datos de tinta, alternativas y confianza para el contenido de la entrada de lápiz que es un elemento InkWord (en lugar de un elemento de dibujo).
+description: Define el tipo que contiene los datos de entrada de lápiz, las alternativas y la confianza para el contenido de entrada de lápiz que es un elemento InkWord (en lugar de un elemento Drawing).
 ms.assetid: 361bc4a2-04e1-4cba-9925-a42cd0587760
-title: Tipo complejo de InkWordType
+title: Tipo complejo InkWordType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 3fb1de16eadae66fcb688e63d80d19778ce68953
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1d839bd332d5f629cf5ecd0e6ae29094d1b88894ef9376007875d868530fc15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938645"
 ---
-# <a name="inkwordtype-complex-type"></a>Tipo complejo de InkWordType
+# <a name="inkwordtype-complex-type"></a>Tipo complejo InkWordType
 
-Define el tipo que contiene los datos de tinta, alternativas y confianza para el contenido de la entrada de lápiz que es un [elemento InkWord](inkword-element.md) (en lugar de un [elemento de dibujo](drawing-element.md)).
+Define el tipo que contiene los datos de entrada de lápiz, las alternativas y la confianza para el contenido de entrada de lápiz que es un [elemento InkWord](inkword-element.md) (en lugar de un [elemento Drawing](drawing-element.md)).
 
 ``` syntax
 <xs:complexType name="InkWordType" />
@@ -33,7 +33,7 @@ Define el tipo que contiene los datos de tinta, alternativas y confianza para el
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

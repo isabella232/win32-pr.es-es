@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. Network
-description: La propiedad Network obtiene una interfaz IWMPNetwork que proporciona acceso a la información y a la configuración de la red.
+title: Propiedad AxWindowsMediaPlayer.network
+description: La propiedad de red obtiene una interfaz IWMPNetwork que proporciona acceso a la información y la configuración de red.
 ms.assetid: 0a6c4a8c-8759-47d4-be03-9909a8460e71
 keywords:
-- Media Player de Windows de propiedades de red
-- propiedad de red Media Player de Windows, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad de red
+- propiedad de red Reproductor de Windows Media
+- propiedad network Reproductor de Windows Media , clase AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad de red
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 287efa3df7887aa7e448d5e732444cf5e79e0e37
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d68d05b8d3c360d3008ec9ba699bdf71655dc6a953091c21605d354a4610d66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764825"
 ---
-# <a name="axwindowsmediaplayernetwork-property"></a>Propiedad AxWindowsMediaPlayer. Network
+# <a name="axwindowsmediaplayernetwork-property"></a>Propiedad AxWindowsMediaPlayer.network
 
-La propiedad Network obtiene una interfaz IWMPNetwork que proporciona acceso a la información y a la configuración de la red.
+La propiedad de red obtiene una interfaz IWMPNetwork que proporciona acceso a la información y la configuración de red.
 
 Esta propiedad es de solo lectura.
 
@@ -48,7 +48,7 @@ Public ReadOnly Property network As IWMPNetwork
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La interfaz WMPLib. IWMPNetwork.
+Interfaz WMPLib.IWMPNetwork.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ La interfaz WMPLib. IWMPNetwork.
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

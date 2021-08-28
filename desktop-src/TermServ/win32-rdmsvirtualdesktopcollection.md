@@ -1,11 +1,11 @@
 ---
-title: Win32_RDMSVirtualDesktopCollection (clase)
+title: Win32_RDMSVirtualDesktopCollection clase
 description: Crea y administra una colección de escritorios virtuales.
 ms.assetid: fe0a484e-f9e3-4b99-8e69-da8f337ae957
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDMSVirtualDesktopCollection de clase, se describe
+- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -29,14 +29,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a6da0c13b6ab223afc7afe6e92039a5388c6204
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 580b5ae194a28726a06143dce0007eeedfbb8564b49a4cbc2e7c2d0d8507dfe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868075"
 ---
-# <a name="win32_rdmsvirtualdesktopcollection-class"></a>\_Clase Win32 RDMSVirtualDesktopCollection
+# <a name="win32_rdmsvirtualdesktopcollection-class"></a>Clase \_ RDMSVirtualDesktopCollection de Win32
 
 Crea y administra una colección de escritorios virtuales.
 
@@ -73,7 +73,7 @@ La **clase \_ RDMSVirtualDesktopCollection de Win32** tiene estos tipos de miemb
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ RDMSVirtualDesktopCollection** tiene estos métodos.
+La **clase \_ RDMSVirtualDesktopCollection de Win32** tiene estos métodos.
 
 
 
@@ -81,17 +81,17 @@ La clase **Win32 \_ RDMSVirtualDesktopCollection** tiene estos métodos.
 |:--------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddVirtualDesktop**](addvirtualdesktop-win32-rdmsvirtualdesktopcollection.md)                 | Agrega un escritorio virtual a una colección de escritorios virtuales.<br/>                                                                              |
 | [**CancelPatch**](cancelpatch-win32-rdmsvirtualdesktopcollection.md)                             | Cancela un trabajo de aprovisionamiento de actualizaciones de software para las máquinas virtuales de una colección de escritorios virtuales.<br/>                                 |
-| [**GetInt32Property**](getint32property-win32-rdmsvirtualdesktopcollection.md)                   | Recupera un valor de propiedad de entero de una colección de escritorios virtuales.<br/>                                                               |
+| [**GetInt32Property**](getint32property-win32-rdmsvirtualdesktopcollection.md)                   | Recupera un valor de propiedad entero de una colección de escritorios virtuales.<br/>                                                               |
 | [**GetPatchProperties**](getpatchproperties-win32-rdmsvirtualdesktopcollection.md)               | Recupera las propiedades de un trabajo de aprovisionamiento de actualizaciones de software para las máquinas virtuales de una colección de escritorios virtuales.<br/>             |
 | [**GetStringProperty**](getstringproperty-win32-rdmsvirtualdesktopcollection.md)                 | Recupera un valor de propiedad de cadena de una colección de escritorios virtuales.<br/>                                                                 |
-| [**ProvisioningEnumerateJobs**](provisioningenumeratejobs-win32-rdmsvirtualdesktopcollection.md) | Enumera los trabajos de aprovisionamiento de escritorio virtual para este servicio.<br/>                                                                       |
+| [**ProvisioningEnumerateJobs**](provisioningenumeratejobs-win32-rdmsvirtualdesktopcollection.md) | Enumera los trabajos de aprovisionamiento de escritorios virtuales para este servicio.<br/>                                                                       |
 | [**ProvisioningJobCancel**](provisioningjobcancel-win32-rdmsvirtualdesktopcollection.md)         | Cancela un trabajo de aprovisionamiento de escritorio virtual.<br/>                                                                                          |
 | [**ProvisioningJobExecute**](provisioningjobexecute-win32-rdmsvirtualdesktopcollection.md)       | Ejecuta un trabajo de aprovisionamiento de escritorio virtual.<br/>                                                                                             |
 | [**ProvisioningJobGetReport**](provisioningjobgetreport-win32-rdmsvirtualdesktopcollection.md)   | Obtiene un informe sobre el estado de un trabajo de aprovisionamiento de escritorio virtual.<br/>                                                                |
 | [**ProvisioningPrepJob**](win32-rdmsvirtualdesktopcollection-provisioningprepjob.md)             | Crea un trabajo de aprovisionamiento de escritorio virtual.<br/>                                                                                          |
 | [**RemoveVirtualDesktop**](removevirtualdesktop-win32-rdmsvirtualdesktopcollection.md)           | Quita un escritorio virtual de una colección de escritorios virtuales.<br/>                                                                         |
-| [**SchedulePatch**](schedulepatch-win32-rdmsvirtualdesktopcollection.md)                         | Programa un trabajo de aprovisionamiento de actualizaciones de software que instala las actualizaciones de software en las máquinas virtuales de una colección de escritorios virtuales.<br/> |
-| [**SetInt32Property**](setint32property-win32-rdmsvirtualdesktopcollection.md)                   | Actualiza un valor de propiedad de entero de una colección de escritorios virtuales.<br/>                                                                   |
+| [**SchedulePatch**](schedulepatch-win32-rdmsvirtualdesktopcollection.md)                         | Programa un trabajo de aprovisionamiento de actualizaciones de software que instala actualizaciones de software en las máquinas virtuales de una colección de escritorios virtuales.<br/> |
+| [**SetInt32Property**](setint32property-win32-rdmsvirtualdesktopcollection.md)                   | Actualiza un valor de propiedad entero de una colección de escritorios virtuales.<br/>                                                                   |
 | [**SetStringProperty**](setstringproperty-win32-rdmsvirtualdesktopcollection.md)                 | Actualiza un valor de propiedad de cadena de una colección de escritorios virtuales.<br/>                                                                     |
 
 
@@ -110,10 +110,10 @@ La **clase \_ RDMSVirtualDesktopCollection de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Obtiene o establece el alias de la colección.
@@ -126,7 +126,7 @@ Obtiene o establece el alias de la colección.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
@@ -136,45 +136,45 @@ Obtiene o establece la descripción de la colección.
 
 </dd> <dt>
 
-**IconContents**
+**IconoContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Obtiene o establece una matriz de valores que especifican los iconos de la colección.
+Obtiene o establece una matriz de valores que especifican iconos para la colección.
 
 </dd> <dt>
 
-**IsHA**
+**Isha**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene o establece un valor que indica si la colección contiene máquinas virtuales de alta disponibilidad. **True** si la colección contiene máquinas virtuales de alta disponibilidad; en caso contrario, **false**.
+Obtiene o establece un valor que indica si la colección contiene máquinas virtuales de alta disponibilidad. **TRUE** si la colección contiene máquinas virtuales de alta disponibilidad; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
-**IsManaged (**
+**IsManaged**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene o establece un valor que indica si la colección está administrada. **True** si la colección es administrada; en caso contrario, **false**.
+Obtiene o establece un valor que indica si la colección está administrada. **TRUE** si se administra la colección; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -184,10 +184,10 @@ Obtiene o establece un valor que indica si la colección está administrada. **T
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene o establece un valor que indica si un usuario es un administrador en una máquina virtual. **True** si el usuario es un administrador de una máquina virtual; en caso contrario, **false**.
+Obtiene o establece un valor que indica si un usuario es administrador de una máquina virtual. **TRUE** si el usuario es administrador en una máquina virtual; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -197,7 +197,7 @@ Obtiene o establece un valor que indica si un usuario es un administrador en una
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene o establece el nombre de la colección.
@@ -210,10 +210,10 @@ Obtiene o establece el nombre de la colección.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene o establece un valor que indica si una máquina virtual se ha distribuido con una instantánea de máquina virtual. **True** si la máquina virtual se ha distribuido con una instantánea de máquina virtual; en caso contrario, **false**.
+Obtiene o establece un valor que indica si una máquina virtual se ha implantado con una instantánea de máquina virtual. **TRUE** si la máquina virtual se ha implantado con una instantánea de máquina virtual; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -223,7 +223,7 @@ Obtiene o establece un valor que indica si una máquina virtual se ha distribuid
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
@@ -239,25 +239,25 @@ Obtiene o establece un descriptor de seguridad con formato SSDL que controla el 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene o establece un valor que indica si la colección se muestra en Terminal Services acceso web (acceso web de TS). **True** para mostrar la colección en acceso web de TS; en caso contrario, **false**.
+Obtiene o establece un valor que indica si la colección se muestra en Terminal Services Web Access (TS Web Access). **TRUE** para mostrar la colección en TS Web Access; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene o establece un valor que indica el tipo de sesiones de máquina virtual hospedadas por la colección.
 
-Esta propiedad contiene uno de los siguientes valores:
+Esta propiedad contiene uno de los valores siguientes:
 
 <dt>
 
@@ -302,13 +302,13 @@ Máquinas virtuales generadas automáticamente.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Obtiene o establece la configuración de VHD de datos de usuario para la colección.
+Obtiene o establece la configuración del VHD de datos de usuario para la colección.
 
 </dd> <dt>
 
@@ -318,13 +318,13 @@ Obtiene o establece la configuración de VHD de datos de usuario para la colecci
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Obtiene o establece la configuración de escritorio de las máquinas virtuales de la colección.
+Obtiene o establece la configuración de escritorio para las máquinas virtuales de la colección.
 
 </dd> </dl>
 
@@ -336,8 +336,8 @@ Obtiene o establece la configuración de escritorio de las máquinas virtuales d
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -346,7 +346,7 @@ Obtiene o establece la configuración de escritorio de las máquinas virtuales d
 
 <dl> <dt>
 
-[Proveedor de servicios de administración de Escritorio remoto](rdms-api-reference.md)
+[Escritorio remoto Management Services Provider](rdms-api-reference.md)
 </dt> </dl>
 
  

@@ -1,31 +1,31 @@
 ---
-title: Estructuras de extensiones de NPS
-description: Use las \_ estructuras de atributo RADIUS para representar un atributo RADIUS o un atributo extendido al desarrollar archivos dll de extensión NPS.
+title: Estructuras de extensiones nps
+description: Use las estructuras RADIUS \_ ATTRIBUTE para representar un atributo RADIUS o un atributo extendido al desarrollar archivos DLL de extensión NPS.
 ms.assetid: 8b13a21c-edbe-4982-8718-a34d62ecc38d
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe35ede53a80c5d196818264c76be6a24d5045a3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 739ca9621699b8545d57b555968c57abb08c9159472f7a2f5ab7dac8d3d03f3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742175"
 ---
-# <a name="nps-extensions-structures"></a>Estructuras de extensiones de NPS
+# <a name="nps-extensions-structures"></a>Estructuras de extensiones nps
 
 > [!Note]  
-> Se ha cambiado el nombre del servicio de autenticación de Internet (IAS) a partir de Windows Server 2008. El contenido de este tema se aplica a IAS y NPS.
+> El nombre del Servicio de autenticación de Internet (IAS) se ha cambiado a Servidor de directivas de red (NPS) a partir Windows Server 2008. El contenido de este tema se aplica a IAS y NPS.
 
- 
+ 
 
-Use las estructuras de [**\_ atributo RADIUS**](/windows/desktop/api/authif/ns-authif-radius_attribute) para representar un atributo RADIUS o un atributo extendido al desarrollar archivos dll de extensión NPS.
+Use las [**estructuras RADIUS \_ ATTRIBUTE**](/windows/desktop/api/authif/ns-authif-radius_attribute) para representar un atributo RADIUS o un atributo extendido al desarrollar archivos DLL de extensión NPS.
 
--   [**\_atributo RADIUS**](/windows/desktop/api/authif/ns-authif-radius_attribute)
--   [**\_matriz de atributos RADIUS \_**](/windows/desktop/api/authif/ns-authif-radius_attribute_array)
--   [**\_bloque de \_ control de extensión RADIUS \_**](/windows/desktop/api/authif/ns-authif-radius_extension_control_block)
--   [**\_formato de VSA de RADIUS \_**](/windows/desktop/api/authif/ns-authif-radius_vsa_format)
+-   [**ATRIBUTO \_ RADIUS**](/windows/desktop/api/authif/ns-authif-radius_attribute)
+-   [**MATRIZ \_ DE ATRIBUTOS \_ RADIUS**](/windows/desktop/api/authif/ns-authif-radius_attribute_array)
+-   [**BLOQUE DE \_ CONTROL DE EXTENSIÓN \_ \_ RADIUS**](/windows/desktop/api/authif/ns-authif-radius_extension_control_block)
+-   [**FORMATO \_ DE VSA RADIUS \_**](/windows/desktop/api/authif/ns-authif-radius_vsa_format)
 
- 
+ 
 
- 
+ 

@@ -1,15 +1,15 @@
 ---
 title: Reservar puertos
-description: En el código de ejemplo siguiente se muestra cómo usar las capas de asignación de recursos para reservar un intervalo de puertos para los administradores.
+description: El código de ejemplo siguiente muestra cómo usar las capas de asignación de recursos para reservar un intervalo de puertos para los administradores.
 ms.assetid: 415aa0c9-40d6-4dc9-9ce9-352f52ef7a76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 853faa22b75e90eec8992c736ae693860ebaf112
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 22c5fd8e2819e70d9dcc51b88556d153d974158372bb4c63b148566fbe5cd6dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755185"
 ---
 # <a name="reserving-ports"></a>Reservar puertos
 
@@ -184,12 +184,12 @@ CLEANUP:
 
 <dl> <dt>
 
-[**Condiciones de filtrado disponibles en cada nivel de filtrado**](filtering-conditions-available-at-each-filtering-layer.md)
+[**Condiciones de filtrado disponibles en cada capa de filtrado**](filtering-conditions-available-at-each-filtering-layer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

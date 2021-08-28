@@ -3,7 +3,7 @@ title: reversebits (función)
 description: Invierte el orden de los bits, por componente.
 ms.assetid: dad46e25-9980-4645-98eb-d834db704fc8
 keywords:
-- reversebits (de función HLSL
+- función reversebits HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d98b824883ddc4f06e6c11d30c2759bb0fc2be26
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: b9f055764c04f552fe9d7afda2adf1e401352cf3fc3dd3ead16c4ca6377bd4fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104487142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853725"
 ---
 # <a name="reversebits-function"></a>reversebits (función)
 
@@ -28,7 +28,7 @@ Invierte el orden de los bits, por componente.
 
 ``` syntax
 uint reversebits(
-  in uint value
+  in uint value
 );
 ```
 
@@ -36,7 +36,7 @@ uint reversebits(
 
 <dl> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -51,7 +51,7 @@ Tipo: **uint**
 
 Valor de entrada, con el orden de bits invertido.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 También están disponibles las siguientes versiones sobrecargadas:
 
@@ -61,7 +61,7 @@ uint3 reversebits(uint3 value);
 uint4 reversebits(uint4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -69,23 +69,23 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| Modelos de sombreador [modelo 5](d3d11-graphics-reference-sm5.md) y versiones posteriores | sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
- 
+ 
 
 Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -94,12 +94,12 @@ Esta función se admite en los siguientes tipos de sombreadores:
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

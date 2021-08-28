@@ -1,7 +1,7 @@
 ---
 description: Proporciona la inicialización en un subproceso.
 ms.assetid: a9c330bb-0a2b-45bf-9b24-d03dd61d7dbf
-title: Método CMsgThread. OnThreadInit (Msgthrd. h)
+title: Método CMsgThread.OnThreadInit (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 80e15d6430da77c0f22f5566375394b8fe6994ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9105bf8399b036421c5360c62a63d8c3fac44471adc13b9e8c224fb0eb84e8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831845"
 ---
-# <a name="cmsgthreadonthreadinit-method"></a>CMsgThread. OnThreadInit, método
+# <a name="cmsgthreadonthreadinit-method"></a>Método CMsgThread.OnThreadInit
 
 Proporciona la inicialización en un subproceso.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Invalide esta función si desea realizar su propia inicialización específica en el inicio del subproceso.
+Invalide esta función si desea realizar su propia inicialización específica al iniciar el subproceso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Invalide esta función si desea realizar su propia inicialización específica e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Msgthrd. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Msgthrd.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Invalide esta función si desea realizar su propia inicialización específica e
 
 <dl> <dt>
 
-[**Clase CMsgThread**](cmsgthread.md)
+[**CMsgThread (clase)**](cmsgthread.md)
 </dt> </dl>
 
  

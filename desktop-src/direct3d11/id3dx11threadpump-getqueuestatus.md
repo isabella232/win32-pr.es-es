@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX11ThreadPump GetQueueStatus (D3DX11core. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Obtiene el número de elementos de cada una de las tres colas dentro del bombeo de subprocesos.
+title: Método ID3DX11ThreadPump GetQueueStatus (D3DX11core.h)
+description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Obtiene el número de elementos de cada una de las tres colas dentro de la bomba de subprocesos.'
 ms.assetid: 69e1c786-6c7d-4432-bf34-3bf7606a07f6
 keywords:
 - Método GetQueueStatus Direct3D 11
@@ -17,21 +17,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3c945cb2978af15263d3f72d34a47c5e8ca8a69
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 41535dba7c5abb96c132714ecbc6ee4e02f1f42fcb6a45ebe8795286d8613c66
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104986905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119851505"
 ---
-# <a name="id3dx11threadpumpgetqueuestatus-method"></a>ID3DX11ThreadPump:: GetQueueStatus (método)
+# <a name="id3dx11threadpumpgetqueuestatus-method"></a>Método ID3DX11ThreadPump::GetQueueStatus
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
-Obtiene el número de elementos de cada una de las tres colas dentro del bombeo de subprocesos.
+Obtiene el número de elementos de cada una de las tres colas dentro de la bomba de subprocesos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,30 +50,30 @@ HRESULT GetQueueStatus(
 
 <dl> <dt>
 
-*pIoQueue* \[ de\]
+*pIoQueue* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)\***
 
-Número de elementos de la cola de e/s.
+Número de elementos de la cola de E/S.
 
 </dd> <dt>
 
-*pProcessQueue* \[ de\]
+*pProcessQueue* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)\***
 
 Número de elementos de la cola de procesos.
 
 </dd> <dt>
 
-*pDeviceQueue* \[ de\]
+*pDeviceQueue* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)\***
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)\***
 
-Número de elementos en la cola del dispositivo.
+Número de elementos de la cola del dispositivo.
 
 </dd> </dl>
 
@@ -81,7 +81,7 @@ Número de elementos en la cola del dispositivo.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
@@ -101,7 +101,7 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 [ID3DX11ThreadPump](id3dx11threadpump.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: VERSION (instrucción)
-description: Define la información de versión de un recurso que pueden usar las herramientas que leen y escriben archivos de recursos.
+title: Version (instrucción)
+description: Define información de versión sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos.
 ms.assetid: 3a33cff3-b8b3-43f4-b43a-ff1d1728cdc1
 keywords:
-- Menús de instrucciones de versión y otros recursos
+- Menús de instrucción VERSION y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 302ffcee38b287afff2697b9c5a5241fa406b55c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2c95f2af63d5c7bdb499d371892d0c2fa6ddb875fda5daf5b19fd0d188a478fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103784048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776665"
 ---
-# <a name="version-statement"></a>VERSION (instrucción)
+# <a name="version-statement"></a>Version (instrucción)
 
-Define la información de versión de un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. El valor *DWORD* especificado aparece con el recurso en el compilado. Archivo RES. Sin embargo, el valor no se almacena en el archivo ejecutable y no tiene importancia para el sistema.
+Define información de versión sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. El valor *dword* especificado aparece con el recurso en el objeto compilado. Archivo RES. Sin embargo, el valor no se almacena en el archivo ejecutable y no tiene ninguna importancia para el sistema.
 
-La instrucción de la **versión** aparece antes del principio del cuerpo de una definición de recursos [**Accelerators**](accelerators-resource.md), [**DIALOGEX**](dialogex-resource.md), [**Menu**](menu-resource.md), [**RCDATA**](rcdata-resource.md)o [**stringtable**](stringtable-resource.md) . El valor especificado se aplica solo a ese recurso.
+La **instrucción VERSION** aparece antes del principio del cuerpo de una definición de recursos [**ACCELERATORS,**](accelerators-resource.md) [**DIALOGEX,**](dialogex-resource.md) [**MENU,**](menu-resource.md) [**RCDATA**](rcdata-resource.md)o [**STRINGTABLE.**](stringtable-resource.md) El valor especificado solo se aplica a ese recurso.
 
 ``` syntax
 VERSION dword
@@ -31,7 +31,7 @@ VERSION dword
 
 <dl> <dt>
 
-<span id="dword"></span><span id="DWORD"></span>*DWORD*
+<span id="dword"></span><span id="DWORD"></span>*Dword*
 </dt> <dd>
 
 Valor **DWORD** definido por el usuario.
@@ -42,16 +42,16 @@ Valor **DWORD** definido por el usuario.
 
 <dl> <dt>
 
-[**ACELERADORES**](accelerators-resource.md)
+[**Aceleradores**](accelerators-resource.md)
 </dt> <dt>
 
-[**SUS**](characteristics-statement.md)
+[**Características**](characteristics-statement.md)
 </dt> <dt>
 
-[**MÓDULO**](language-statement.md)
+[**Lengua**](language-statement.md)
 </dt> <dt>
 
-[**MENU**](menu-resource.md)
+[**Menú**](menu-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
@@ -60,9 +60,9 @@ Valor **DWORD** definido por el usuario.
 [**STRINGTABLE**](stringtable-resource.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

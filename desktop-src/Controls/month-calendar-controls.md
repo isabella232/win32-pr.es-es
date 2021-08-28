@@ -1,23 +1,23 @@
 ---
-title: Acerca de los controles de calendario del mes
+title: Acerca de los controles de calendario mensual
 description: Un control de calendario mensual implementa una interfaz de usuario de tipo calendario.
 ms.assetid: 81b8f233-272e-4043-92ff-5ff47b0610d6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f21fba66f9fb71ad45f8853578821ad5f83da00e
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 72000e0cecbfe627068260c5d9263821437246c15bebdfb876ecaa84e61f9cda
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834530"
 ---
-# <a name="about-month-calendar-controls"></a>Acerca de los controles de calendario del mes
+# <a name="about-month-calendar-controls"></a>Acerca de los controles de calendario mensual
 
-Un control de calendario mensual implementa una interfaz de usuario de tipo calendario. Esto proporciona al usuario un método muy intuitivo y reconocible para escribir o seleccionar una fecha. El control también proporciona a la aplicación los medios para obtener y establecer la información de fecha en el control mediante tipos de datos existentes.
+Un control de calendario mensual implementa una interfaz de usuario de tipo calendario. Esto proporciona al usuario un método muy intuitivo y reconocible para especificar o seleccionar una fecha. El control también proporciona a la aplicación los medios para obtener y establecer la información de fecha en el control mediante tipos de datos existentes.
 
 -   [Características de control de calendario mensual](#month-calendar-control-features)
     -   [Selección de un día](#selecting-a-day)
-    -   [Selección de un mes no consecutivo](#selecting-a-nonadjacent-month)
+    -   [Selección de un mes no próximo](#selecting-a-nonadjacent-month)
     -   [Selección de un año diferente](#selecting-a-different-year)
 -   [Localización](#localization)
 -   [Horas del control Calendario mensual](#times-in-the-month-calendar-control)
@@ -29,7 +29,7 @@ En la siguiente captura de pantalla se muestra un control de calendario mensual 
 ![captura de pantalla de un cuadro de diálogo con un control de calendario mensual que muestra dos meses, en paralelo](images/mc-simple.png)
 
 > [!Note]  
-> La apariencia y el comportamiento del control de calendario mensual difieren ligeramente en las distintas versiones de la biblioteca en tiempo de ejecución. Este tema se centra en el control tal como aparece en Windows Vista con la versión 6 de Comctl32.dll.
+> La apariencia y el comportamiento del control de calendario mensual difiere ligeramente en las distintas versiones de la biblioteca en tiempo de ejecución. Este tema se centra en el control tal como aparece en Windows Vista con la versión 6 de Comctl32.dll.
 
  
 
@@ -62,14 +62,14 @@ Los siguientes comandos de teclado también se pueden usar para mover la selecci
 | Flecha derecha (VK \_ RIGHT) | Seleccione el día siguiente.                                                                                                                                                                                                                     |
 | Flecha arriba (VK \_ UP)       | Seleccione el mismo día de la semana anterior.                                                                                                                                                                                                |
 | Flecha abajo (VK \_ DOWN)   | Seleccione el mismo día de la semana siguiente.                                                                                                                                                                                                    |
-| PÁGINA ARRIBA (VK \_ ANTERIOR)     | Seleccione el mismo día del mes anterior. (Si ese mes no tiene el día, se selecciona el día más cercano; por ejemplo, la selección pasa del 31 de marzo al 28 o 29 de febrero).                                                      |
-| PÁGINA ABAJO (VK \_ SIGUIENTE)    | Seleccione el mismo día del mes siguiente.                                                                                                                                                                                                   |
+| PAGE UP (VK \_ PRIOR)     | Seleccione el mismo día del mes anterior. (Si ese mes no tiene el día, se selecciona el día más cercano; por ejemplo, la selección pasa del 31 de marzo al 28 o 29 de febrero).                                                      |
+| PÁGINA ABAJO (SIGUIENTE \_ VK)    | Seleccione el mismo día del mes siguiente.                                                                                                                                                                                                   |
 | HOME (VK \_ HOME)         | Seleccione el primer día del mes actual.                                                                                                                                                                                               |
 | END (VK \_ END)           | Seleccione el último día del mes actual.                                                                                                                                                                                                |
 | CTRL + INICIO             | Desplácese un mes hacia atrás y seleccione un día en la columna situada más a la izquierda.                                                                                                                                                                       |
 | CTRL + FINAL              | Desplácese un mes hacia delante y seleccione un día en la columna situada más a la derecha.                                                                                                                                                                       |
-| CTRL + PAGINAR HACIA ARRIBA          | Seleccione el mismo día de un mes anterior. El número de meses por los que se mueve la selección es el número de meses que se muestran en el control . Por ejemplo, si se muestran dos meses, la selección se movería del 6 de junio al 6 de mayo.    |
-| CTRL + PÁGINA HACIA ABAJO        | Seleccione el mismo día de un mes anterior. El número de meses por los que se mueve la selección es el número de meses que se muestran en el control. Por ejemplo, si se muestran dos meses, la selección se movería del 6 de junio al 6 de agosto. |
+| CTRL + SUBIR PÁGINA          | Seleccione el mismo día de un mes anterior. El número de meses por los que se mueve la selección es el número de meses que se muestran en el control. Por ejemplo, si se muestran dos meses, la selección se movería del 6 de junio al 6 de mayo.    |
+| CTRL + BAJAR PÁGINA        | Seleccione el mismo día de un mes anterior. El número de meses por los que se mueve la selección es el número de meses que se muestran en el control. Por ejemplo, si se muestran dos meses, la selección se movería del 6 de junio al 6 de agosto. |
 
 
 
@@ -103,16 +103,16 @@ El control de calendario mensual no muestra la hora. Sin embargo, la [**estructu
 
 |  Message         |  Descripción            |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MCM \_ SETCURSEL**](mcm-setcursel.md)     | El control copia los campos de hora tal y como están, sin validación ni modificación.                                                                                                                                        |
-| [**MCM \_ SETRANGE**](mcm-setrange.md)       | Se validan los campos de tiempo de las estructuras pasadas. Si son válidos, los campos de hora se copian sin modificaciones. Si no son válidos, el control copia los campos de hora de los datos actuales.                  |
+| [**MCM \_ SETCURSEL**](mcm-setcursel.md)     | El control copia los campos de tiempo tal como están, sin validación ni modificación.                                                                                                                                        |
+| [**MCM \_ SETRANGE**](mcm-setrange.md)       | Se validan los campos de tiempo de las estructuras pasadas. Si son válidos, los campos de hora se copian sin modificaciones. Si no son válidos, el control copia los campos de tiempo de los datos actuales.                  |
 | [**MCM \_ SETSELRANGE**](mcm-setselrange.md) | Se validan los campos de tiempo de las estructuras pasadas. Si son válidos, los campos de hora se copian sin modificaciones. Si no son válidas, el control conserva los campos de tiempo de los intervalos de selección actuales. |
-| [**MCM \_ SETTODAY**](mcm-settoday.md)       | El control copia los campos de hora tal y como están, sin validación ni modificación.                                                                                                                                        |
+| [**MCM \_ SETTODAY**](mcm-settoday.md)       | El control copia los campos de tiempo tal como están, sin validación ni modificación.                                                                                                                                        |
 
 
 
  
 
-Cuando se recupera una fecha del control, los campos de hora se copian de las horas almacenadas sin modificaciones. El control de los campos de tiempo por parte del control se proporciona como comodidad para el programador. El control no examina ni modifica los campos de hora como resultado de ninguna operación que no sea la enumerada anteriormente.
+Cuando se recupera una fecha del control , los campos de hora se copiarán de las horas almacenadas sin modificaciones. El control de los campos de tiempo por parte del control se proporciona como una comodidad para el programador. El control no examina ni modifica los campos de tiempo como resultado de ninguna operación que no sea la enumerada anteriormente.
 
  
 

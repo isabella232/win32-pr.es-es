@@ -1,19 +1,19 @@
 ---
-description: El nombre de familia del paquete registrado como la aplicación para este dispositivo.
+description: Nombre de familia del paquete registrado como aplicación para este dispositivo.
 ms.assetid: 7fac1acb-2e9d-4d74-b5ed-7ea98e209637
-title: System. Devices. AppPackageFamilyName
+title: System.Devices.AppPackageFamilyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fae92e0e89e6989fba41b0eea712171613e0dd97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec554daafd9aea39fc21cf2f8c82858314e3388da47b04bb5774d549fddd380d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775655"
 ---
-# <a name="systemdevicesapppackagefamilyname"></a>System. Devices. AppPackageFamilyName
+# <a name="systemdevicesapppackagefamilyname"></a>System.Devices.AppPackageFamilyName
 
-El nombre de familia del paquete registrado como la aplicación para este dispositivo.
+Nombre de familia del paquete registrado como aplicación para este dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

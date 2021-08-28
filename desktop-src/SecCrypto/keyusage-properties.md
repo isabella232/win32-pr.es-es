@@ -4,16 +4,16 @@ ms.assetid: b7edba4f-8f76-4ed1-bd54-9f9dd5e7c3d0
 title: Propiedades de KeyUsage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24c9d21dab75d68c5980bdb4a2a61b57d2d2df79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cedc3dd8046c14ae8003e8f877cd2096b31f5c729dc7082f3f78726f43e5d6a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797345"
 ---
 # <a name="keyusage-properties"></a>Propiedades de KeyUsage
 
-El objeto [**KeyUsage**](keyusage.md) expone las siguientes propiedades.
+El [**objeto KeyUsage**](keyusage.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 

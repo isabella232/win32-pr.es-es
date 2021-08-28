@@ -1,41 +1,41 @@
 ---
-description: Explica la definición de usuarios y grupos en la API de administrador de autorización.
+description: Explica la definición de usuarios y grupos en la API de Authorization Manager.
 ms.assetid: 783be0b2-7894-4780-900d-98918f824a04
 title: Usuarios y grupos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c40ee9234fa8d6259282855011cfc3fc008d6e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea7d6ae84dba833ddd06eb81944cecb9aa401c0f8f1971c3164317cefae14fbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119906825"
 ---
 # <a name="users-and-groups"></a>Usuarios y grupos
 
-En Administrador de autorización, los destinatarios de la Directiva de autorización se representan mediante los siguientes grupos:
+En el Administrador de autorización, los destinatarios de la directiva de autorización se representan mediante los grupos siguientes:
 
 -   Usuarios y grupos de Windows
 
     Estos grupos incluyen usuarios, equipos y grupos integrados para entidades de seguridad.
 
--   Grupos de consulta LDAP
+-   Grupos de consultas LDAP
 
-    La pertenencia a estos grupos se calcula dinámicamente según sea necesario desde las consultas de Protocolo ligero de acceso a directorios (LDAP). Un grupo de consulta LDAP es un tipo de grupo de aplicación.
+    La pertenencia a estos grupos se calcula dinámicamente según sea necesario a partir de consultas del Protocolo ligero de acceso a directorios (LDAP). Un grupo de consulta LDAP es un tipo de grupo de aplicación.
 
 -   Grupos de aplicaciones básicos
 
-    Estos grupos se componen de grupos de consulta LDAP, usuarios y grupos de Windows y otros grupos de aplicaciones básicos.
+    Estos grupos constan de grupos de consultas LDAP, Windows usuarios y grupos, y otros grupos de aplicaciones básicos.
 
 ## <a name="windows-users-and-groups"></a>Usuarios y grupos de Windows
 
-Son los mismos que los usuarios y grupos que se usan en todo el sistema operativo Windows.
+Son los mismos que los usuarios y grupos que se usan en Windows sistema operativo.
 
-## <a name="ldap-query-groups"></a>Grupos de consulta LDAP
+## <a name="ldap-query-groups"></a>Grupos de consultas LDAP
 
-En Administrador de autorización, puede usar consultas LDAP para hacer coincidir los atributos del usuario con los del objeto del usuario en Active Directory.
+En el Administrador de autorización, puede usar consultas LDAP para hacer coincidir los atributos del usuario con los del objeto del usuario en Active Directory.
 
-Por ejemplo, la siguiente consulta busca todos los usuarios excepto Andy.
+Por ejemplo, la consulta siguiente busca a todos excepto Andy.
 
 
 ```C++
@@ -44,7 +44,7 @@ Por ejemplo, la siguiente consulta busca todos los usuarios excepto Andy.
 
 
 
-La siguiente consulta busca todos los miembros del alias alguien en www.fabrikam.com.
+La consulta siguiente busca todos los miembros del alias de alguien en www.fabrikam.com.
 
 
 ```C++
@@ -55,13 +55,13 @@ La siguiente consulta busca todos los miembros del alias alguien en www.fabrikam
 
 ## <a name="basic-application-groups"></a>Grupos de aplicaciones básicos
 
-En la API de administrador de autorización, un grupo de aplicaciones se representa mediante un objeto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) . Un grupo de aplicación básico es un tipo de grupo de aplicación.
+En la API del Administrador de autorización, un grupo de aplicaciones se representa mediante un [**objeto IAzApplicationGroup.**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) Un grupo de aplicación básico es un tipo de grupo de aplicación.
 
-Para definir la pertenencia a grupos de aplicaciones básica, defina quién es miembro y defina quién no es miembro. Ambos pasos se realizan de la misma manera. Especifique cero o más usuarios y grupos de Windows, grupos de aplicaciones básicos definidos previamente o grupos de consultas LDAP. La pertenencia del grupo de aplicación básico se calcula quitando los miembros del grupo. Administrador de autorización lo hace automáticamente en tiempo de ejecución.
+Para definir la pertenencia básica al grupo de aplicaciones, defina quién es miembro y defina quién no es miembro. Ambos pasos se llevan a cabo de la misma manera. Especifique cero o más Windows usuarios y grupos, grupos de aplicaciones básicos definidos previamente o grupos de consultas LDAP. La pertenencia del grupo de aplicaciones básico se calcula quitando los miembros que no son miembros del grupo. El Administrador de autorización lo hace automáticamente en tiempo de ejecución.
 
-La no afiliación de un grupo de aplicación básico tiene prioridad sobre la pertenencia.
+La no pertenencia en un grupo de aplicaciones básico tiene prioridad sobre la pertenencia.
 
-No se permiten definiciones de pertenencia circulares; dan como resultado el siguiente mensaje de error: "no se puede Agregar GroupName. Se produjo el siguiente problema: se ha detectado un bucle ".
+No se permiten definiciones de pertenencia circular; se produce el siguiente mensaje de error: "No se puede agregar GroupName. Se produjo el siguiente problema: se ha detectado un bucle ."
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,7 +1,7 @@
 ---
-description: El método Run cambia al modo de ejecución para que se puedan ejecutar los comandos diferidos por tiempo de secuencia.
+description: El método Run cambia al modo de ejecución para que se puedan ejecutar los comandos que se aplazan por el tiempo de transmisión.
 ms.assetid: c529ae84-c9b7-46f1-a1e4-716fc9e9df13
-title: Método CCmdQueue. Run (Winutil. h)
+title: Método CCmdQueue.Run (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 424914e53a12ff0f43e8b7e2a3345c28d84437d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5da70c4ac0c5890e4483f7facdc4d1f5a3d5dd70906c53917bd83029dfaa6c6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757145"
 ---
-# <a name="ccmdqueuerun-method"></a>CCmdQueue. Run (método)
+# <a name="ccmdqueuerun-method"></a>CCmdQueue.Run (método)
 
-El `Run` método cambia al modo de ejecución para que se puedan ejecutar los comandos diferidos por tiempo de secuencia.
+El método cambia al modo de ejecución para que se puedan ejecutar los comandos que se `Run` aplazan por el tiempo de transmisión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ virtual HRESULT Run(
 *tStreamTimeOffset* 
 </dt> <dd>
 
-Hora de desplazamiento.
+Tiempo de desplazamiento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Durante el modo de ejecución, se conoce la asignación del tiempo de espera de la presentación de la secuencia.
+Durante el modo de ejecución, se conoce la asignación en tiempo de transmisión a tiempo de presentación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Durante el modo de ejecución, se conoce la asignación del tiempo de espera de 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Durante el modo de ejecución, se conoce la asignación del tiempo de espera de 
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

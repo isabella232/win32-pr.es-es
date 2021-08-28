@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Max-Connection-Time
-description: Terminal Services tiempo máximo de conexión de la sesión es el tiempo máximo, en minutos, de la sesión Terminal Services.
+title: Atributo ms-TS-Max-Connection-Time
+description: Tiempo máximo de conexión de la sesión de Terminal Services es la cantidad máxima de tiempo, en minutos, de la sesión de Terminal Services.
 ms.assetid: ea81fedb-5906-4d07-8632-2dc3615aad21
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-TS-Max-Connection-Time
-- msTSMaxConnectionTime esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Max-Connection-Time
+- Esquema de AD del atributo msTSMaxConnectionTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce1655a63e49a624a647a1ec622a644a05a08171
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 27e7e464366c8aec49fbcfdd9a33b1371068e9cfc751ff45e80a71c266712fec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761205"
 ---
-# <a name="ms-ts-max-connection-time-attribute"></a>atributo MS-TS-Max-Connection-Time
+# <a name="ms-ts-max-connection-time-attribute"></a>Atributo ms-TS-Max-Connection-Time
 
-Terminal Services tiempo máximo de conexión de la sesión es el tiempo máximo, en minutos, de la sesión Terminal Services.
+Tiempo máximo de conexión de la sesión de Terminal Services es la cantidad máxima de tiempo, en minutos, de la sesión de Terminal Services.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Max-Connection-Time            |
-| Nombre para mostrar de LDAP | msTSMaxConnectionTime                |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-TS-Max-Connection-Time            |
+| Ldap-Display-Name | msTSMaxConnectionTime                |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1982              |
-| System-ID-GUID    | 1d960ee2-6464-4e95-a781-e3b5cd5f9588 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 1d960ee2-6464-4e95-a781-e3b5cd5f9588 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ Terminal Services tiempo máximo de conexión de la sesión es el tiempo máximo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Terminal Services tiempo máximo de conexión de la sesión es el tiempo máximo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Terminal Services tiempo máximo de conexión de la sesión es el tiempo máximo
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

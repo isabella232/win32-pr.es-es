@@ -1,11 +1,11 @@
 ---
-title: 'Trust-auth: atributo entrante'
+title: Atributo Trust-Auth-Incoming
 description: Información de autenticación para la parte entrante de una confianza.
 ms.assetid: 15d079f8-a77c-4baf-bb60-1af7a8e8da25
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de entrada de confianza-autenticación
-- trustAuthIncoming esquema de AD de atributos
+- Esquema de AD del atributo Trust-Auth-Incoming
+- TrustAuthIncoming attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b605efb326ff9a75426a98810a6cc27f4d29adc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5ac7d9c6d56628d95564fe5bb4e33e08df38056f62606cfda6f0699e0af06041
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835667"
 ---
-# <a name="trust-auth-incoming-attribute"></a>Trust-auth: atributo entrante
+# <a name="trust-auth-incoming-attribute"></a>Atributo Trust-Auth-Incoming
 
 Información de autenticación para la parte entrante de una confianza.
 
@@ -29,14 +29,14 @@ Información de autenticación para la parte entrante de una confianza.
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | Trust-auth-entrante                                   |
-| Nombre para mostrar de LDAP | trustAuthIncoming                                     |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Trust-Auth-Incoming                                   |
+| Ldap-Display-Name | trustAuthIncoming                                     |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.129                                |
-| System-ID-GUID    | bf967a59-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a59-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Información de autenticación para la parte entrante de una confianza.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -76,13 +76,13 @@ Información de autenticación para la parte entrante de una confianza.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -97,13 +97,13 @@ Información de autenticación para la parte entrante de una confianza.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -118,13 +118,13 @@ Información de autenticación para la parte entrante de una confianza.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -139,13 +139,13 @@ Información de autenticación para la parte entrante de una confianza.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -160,13 +160,13 @@ Información de autenticación para la parte entrante de una confianza.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |

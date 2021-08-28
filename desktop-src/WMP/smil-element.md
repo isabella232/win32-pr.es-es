@@ -1,9 +1,9 @@
 ---
-title: Elemento SMIL
-description: El elemento SMIL siempre es el elemento de nivel superior de un archivo de lista de reproducción de Windows Media (WPL). Especifica que el archivo usa la gramática y la sintaxis de SMIL (lenguaje de integración multimedia sincronizado).
+title: smil (Elemento)
+description: El elemento smil siempre es el elemento de nivel superior de un Windows lista de reproducción multimedia (WPL). Especifica que el archivo usa la sintaxis y la gramática de SMIL (lenguaje de integración multimedia sincronizada).
 ms.assetid: bb14f1b8-53d0-47ff-9fd3-4620a1467985
 keywords:
-- Media Player de ventanas de elemento SMIL
+- smil Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 78ec8900139cfbd5982228c59010674bbc14765e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15ed9c3d70b0af65019cd384bc68ab9c26f8d01673481b9ced3595730379bf1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763465"
 ---
-# <a name="smil-element"></a>Elemento SMIL
+# <a name="smil-element"></a>smil (Elemento)
 
-El elemento **SMIL** siempre es el elemento de nivel superior de un archivo de lista de reproducción de Windows Media (Wpl). Especifica que el archivo usa la gramática y la sintaxis de SMIL (lenguaje de integración multimedia sincronizado).
+El **elemento smil** siempre es el elemento de nivel superior de un archivo Windows lista de reproducción multimedia (WPL). Especifica que el archivo usa la sintaxis y la gramática de SMIL (lenguaje de integración multimedia sincronizada).
 
 ``` syntax
 <smil>
@@ -39,16 +39,16 @@ Este elemento no tiene atributos.
 
 | Hierarchy | Elementos                                           |
 |-----------|----------------------------------------------------|
-| Parent    | None                                               |
-| Elemento secundario     | [encabezado](head-element.md), [cuerpo](body-element.md) |
+| Parent    | Ninguno                                               |
+| Elemento secundario     | [head](head-element.md), [body](body-element.md) |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada lista de reproducción de Windows Media debe tener el elemento **SMIL** en su raíz.
+Cada Windows lista de reproducción multimedia debe tener **el elemento smil** en su raíz.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -74,7 +74,7 @@ Cada lista de reproducción de Windows Media debe tener el elemento **SMIL** en 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
@@ -82,13 +82,13 @@ Cada lista de reproducción de Windows Media debe tener el elemento **SMIL** en 
 
 <dl> <dt>
 
-[**Elemento BODY**](body-element.md)
+[**body (Elemento)**](body-element.md)
 </dt> <dt>
 
-[**Elemento de encabezado**](head-element.md)
+[**elemento head**](head-element.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

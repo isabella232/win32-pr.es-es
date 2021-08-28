@@ -1,19 +1,19 @@
 ---
-description: Orientación del BoundingOrientedBox representado como cuaternión.
+description: Orientación de BoundingOrientedBox representada como cuaternión.
 ms.assetid: 9f765328-4bce-470e-a591-52376b572543
-title: BoundingOrientedBox. Orientation (DirectXCollision. h)
+title: BoundingOrientedBox.Orientation (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 336e3025883963eb343fb4dee3f127f1e51e88b1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac7a54fd31630fecca1e7718a144cbab0da23e8f9832fd81ed4a0974b1d5bfd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841735"
 ---
-# <a name="boundingorientedboxorientation"></a>BoundingOrientedBox. Orientation
+# <a name="boundingorientedboxorientation"></a>BoundingOrientedBox.Orientation
 
-Orientación del [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox) representado como cuaternión.
+Orientación de [**BoundingOrientedBox representada**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox) como cuaternión.
 
 
 ```C++
@@ -23,11 +23,11 @@ public:
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 

@@ -1,30 +1,30 @@
 ---
-title: Funciones de e/s de archivos multimedia
-description: Funciones de e/s de archivos multimedia
+title: Funciones de E/S de archivos multimedia
+description: Funciones de E/S de archivos multimedia
 ms.assetid: a5d51906-881f-4fe0-a988-c10776a3b40d
 keywords:
-- Windows multimedia, funciones de e/s de archivos
-- multimedia, funciones de e/s de archivos
-- entrada multimedia, funciones de e/s de archivos
-- e/s de archivos multimedia, funciones
-- e/s de archivos, funciones
-- entrada y salida (e/s), funciones
-- E/s (entrada y salida), funciones
-- referencia de e/s de archivos multimedia, funciones
-- referencia de e/s de archivos multimedia, funciones
-- referencia de e/s de archivo, funciones
+- Windows multimedia, funciones de E/S de archivos
+- multimedia, funciones de E/S de archivos
+- entrada multimedia, funciones de E/S de archivo
+- E/S de archivos multimedia, funciones
+- E/S de archivo, funciones
+- entrada y salida (E/S),funciones
+- E/S (entrada y salida),funciones
+- referencia de E/S de archivos multimedia, funciones
+- referencia de E/S de archivos multimedia, funciones
+- referencia de E/S de archivo, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b62b8daf8e84953acebcca9106165f27b350ef2f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0bbbdf3df443eb21a74c74413c6274217fd9b6752bc012f1e2706deaeeaeaa6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104533112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806975"
 ---
-# <a name="multimedia-file-io-functions"></a>Funciones de e/s de archivos multimedia
+# <a name="multimedia-file-io-functions"></a>Funciones de E/S de archivos multimedia
 
-Las siguientes funciones se usan con e/s de archivos multimedia.
+Las siguientes funciones se usan con E/S de archivos multimedia.
 
 -   [**IOProc**](/previous-versions//dd757098(v=vs.85))
 -   [**mmioAdvance**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioadvance)
@@ -49,9 +49,9 @@ Las siguientes funciones se usan con e/s de archivos multimedia.
 
 <dl> <dt>
 
-[Referencia de e/s de archivos multimedia](multimedia-file-i-o-reference.md)
+[Referencia de E/S de archivos multimedia](multimedia-file-i-o-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

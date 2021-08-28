@@ -1,10 +1,10 @@
 ---
-title: Estructura OPAQUECOMMAND
-description: La estructura OPAQUECOMMAND contiene los datos de los comandos que se pasan a través de Windows Media Administrador de dispositivos a un dispositivo, pero que no están diseñados para ser actuados por Windows Media Administrador de dispositivos.
+title: ESTRUCTURA OPAQUECOMMAND
+description: La estructura OPAQUECOMMAND contiene datos para los comandos que se pasan a través de Windows Media Administrador de dispositivos a un dispositivo, pero que no están diseñados para ser actuados por Windows Media Administrador de dispositivos.
 ms.assetid: 5b39cf07-2816-4615-a754-e3f0c57bf4ce
 keywords:
-- Estructura OPAQUECOMMAND Administrador de dispositivos Windows Media
-- estructura Administrador de dispositivos Windows Media
+- Estructura OPAQUECOMMAND windows Media Administrador de dispositivos
+- estructura windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 672147cb99336f95a1ced88a3cc6b8df977aec74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76d3f0b94146262c480e7e510497111bf82f0c020001717cb0000ee4a88df440
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904015"
 ---
-# <a name="opaquecommand-structure"></a>Estructura OPAQUECOMMAND
+# <a name="opaquecommand-structure"></a>ESTRUCTURA OPAQUECOMMAND
 
-La estructura **OPAQUECOMMAND** contiene los datos de los comandos que se pasan a través de windows media administrador de dispositivos a un dispositivo, pero que no están diseñados para ser actuados por windows media administrador de dispositivos.
+La **estructura OPAQUECOMMAND** contiene datos para los comandos que se pasan a través de Windows Media Administrador de dispositivos a un dispositivo, pero que no están diseñados para ser actuados por Windows Media Administrador de dispositivos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,28 +47,28 @@ typedef struct OPAQUECOMMAND {
 **guidCommand**
 </dt> <dd>
 
-**GUID** que representa el comando solicitado.
+**GUID que** representa el comando solicitado.
 
 </dd> <dt>
 
 **dwDataLen**
 </dt> <dd>
 
-Longitud de los datos a los que se redirige *pdata* , en bytes.
+Longitud de los datos a los que *apunta pData,* en bytes.
 
 </dd> <dt>
 
 **pData**
 </dt> <dd>
 
-Datos necesarios para ejecutar el comando o los datos devueltos por el comando.
+Datos necesarios para ejecutar el comando o datos devueltos por el comando.
 
 </dd> <dt>
 
 **abMAC \[ 20\]**
 </dt> <dd>
 
-Este código de autenticación de mensajes (MAC) debe incluir el miembro **guidCommand** , los datos a los que apunta *pdwDataLen* y los datos a los que se señala *pdata* , si los hay. Si *pdata* es **null**, no se debe incluir en el equipo Mac. La \_ \_ longitud de Mac de WMDM se define como 20.
+Este código de autenticación de mensajes (MAC) debe incluir el miembro **guidCommand,** los datos a los que *apunta pdwDataLen* y los datos a los que *apunta pData,* si los hay. Si *pData* **es NULL,** no debe incluirse en el equipo MAC. WMDM \_ MAC LENGTH se define como \_ 20.
 
 </dd> </dl>
 
@@ -78,7 +78,7 @@ Este código de autenticación de mensajes (MAC) debe incluir el miembro **guidC
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

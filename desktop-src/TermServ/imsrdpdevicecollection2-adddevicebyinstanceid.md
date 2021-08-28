@@ -1,12 +1,12 @@
 ---
-title: IMsRdpDeviceCollection2 AddDeviceByInstanceId, método
-description: Agrega un dispositivo que no está en la lista a la recopilación de dispositivos.
+title: Método IMsRdpDeviceCollection2 AddDeviceByInstanceId
+description: Agrega un dispositivo no publicado a la recopilación de dispositivos.
 ms.assetid: 7ef200c5-b99e-40c9-80e1-0758ddfa0902
 ms.tgt_platform: multiple
 keywords:
 - Método AddDeviceByInstanceId Servicios de Escritorio remoto
-- Método AddDeviceByInstanceId Servicios de Escritorio remoto, interfaz IMsRdpDeviceCollection2
-- Interfaz IMsRdpDeviceCollection2 Servicios de Escritorio remoto, método AddDeviceByInstanceId
+- Método AddDeviceByInstanceId Servicios de Escritorio remoto , interfaz IMsRdpDeviceCollection2
+- Interfaz IMsRdpDeviceCollection2 Servicios de Escritorio remoto , método AddDeviceByInstanceId
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f817a5beb4d8762787c4bf2f8a3995d3918e8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df11fa2a58aca505661da1f7643f8d1d6ff2f502e6c10bf835aa67a6e2d0615d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119870825"
 ---
-# <a name="imsrdpdevicecollection2adddevicebyinstanceid-method"></a>IMsRdpDeviceCollection2:: AddDeviceByInstanceId (método)
+# <a name="imsrdpdevicecollection2adddevicebyinstanceid-method"></a>Método IMsRdpDeviceCollection2::AddDeviceByInstanceId
 
-Agrega un dispositivo que no está en la lista a la recopilación de dispositivos.
+Agrega un dispositivo no publicado a la recopilación de dispositivos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ HRESULT AddDeviceByInstanceId(
 
 <dl> <dt>
 
-*Tipo* \[ de de\]
+*Tipo* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **RedirectDeviceType**](redirectdevicetype.md)**
 
-Valor de la enumeración [**RedirectDeviceType**](redirectdevicetype.md) que especifica el tipo de dispositivo que se va a agregar.
+Valor de la [**enumeración RedirectDeviceType**](redirectdevicetype.md) que especifica el tipo de dispositivo que se va a agregar.
 
 </dd> <dt>
 
-*InstanceID* \[ de\]
+*InstanceId* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Identificador de instancia del dispositivo que se va a agregar.
+Identificador de instancia del dispositivo que se agregará.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Identificador de instancia del dispositivo que se va a agregar.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

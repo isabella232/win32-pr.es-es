@@ -1,50 +1,50 @@
-- name: Bibliotecas de Dynamic-Link
+- name: Dynamic-Link bibliotecas
   href: dynamic-link-libraries.md
   items:
-    - name: Acerca de las bibliotecas de Dynamic-Link
+    - name: Acerca de Dynamic-Link bibliotecas
       href: about-dynamic-link-libraries.md
       items:
         - name: Ventajas de la vinculación dinámica
           href: advantages-of-dynamic-linking.md
-        - name: Creación de la biblioteca Dynamic-Link
+        - name: Dynamic-Link de bibliotecas
           href: dynamic-link-library-creation.md
-        - name: Dynamic-Link biblioteca Entry-Point función
+        - name: Dynamic-Link library Entry-Point Function
           href: dynamic-link-library-entry-point-function.md
-        - name: Vinculación dinámica Load-Time
+        - name: Load-Time dynamic linking
           href: load-time-dynamic-linking.md
-        - name: Vinculación dinámica Run-Time
+        - name: Run-Time dynamic linking
           href: run-time-dynamic-linking.md
         - name: Orden de búsqueda de la biblioteca de vínculos dinámicos
           href: dynamic-link-library-search-order.md
-        - name: Datos de la biblioteca Dynamic-Link
+        - name: Dynamic-Link library data
           href: dynamic-link-library-data.md
-        - name: Redirección de la biblioteca Dynamic-Link
+        - name: Dynamic-Link de la biblioteca de recursos
           href: dynamic-link-library-redirection.md
-        - name: Actualizaciones de la biblioteca Dynamic-Link
+        - name: Dynamic-Link actualizaciones de la biblioteca de aplicaciones
           href: dynamic-link-library-updates.md
-        - name: Seguridad de biblioteca Dynamic-Link
+        - name: Dynamic-Link seguridad de la biblioteca
           href: dynamic-link-library-security.md
-        - name: Archivos dll de arranque seguro y AppInit
+        - name: Archivos DLL de Arranque seguro y AppInit
           href: secure-boot-and-appinit-dlls.md
-        - name: Procedimientos recomendados de la biblioteca Dynamic-Link
+        - name: Dynamic-Link procedimientos recomendados de la biblioteca de bibliotecas
           href: dynamic-link-library-best-practices.md
-    - name: Usar bibliotecas de Dynamic-Link
+    - name: Uso de Dynamic-Link bibliotecas
       href: using-dynamic-link-libraries.md
       items:
-        - name: Creación de una biblioteca de Dynamic-Link simple
+        - name: Crear una biblioteca de Dynamic-Link simple
           href: creating-a-simple-dynamic-link-library.md
-        - name: Usar Load-Time vinculación dinámica
+        - name: Uso Load-Time dynamic linking
           href: using-load-time-dynamic-linking.md
-        - name: Usar Run-Time vinculación dinámica
+        - name: Uso Run-Time dynamic linking
           href: using-run-time-dynamic-linking.md
-        - name: Uso de memoria compartida en una biblioteca de Dynamic-Link
+        - name: Uso de memoria compartida en una biblioteca Dynamic-Link datos
           href: using-shared-memory-in-a-dynamic-link-library.md
-        - name: Usar el almacenamiento local para el subproceso en una biblioteca de Dynamic-Link
+        - name: Uso de subprocesos Storage local en una biblioteca Dynamic-Link de subprocesos
           href: using-thread-local-storage-in-a-dynamic-link-library.md
-    - name: Referencia de la biblioteca Dynamic-Link
+    - name: referencia Dynamic-Link biblioteca de archivos
       href: dynamic-link-library-reference.md
       items:
-        - name: Funciones de la biblioteca Dynamic-Link
+        - name: Dynamic-Link library functions
           href: dynamic-link-library-functions.md
           items:
             - name: AddDllDirectory
@@ -71,7 +71,7 @@
               href: /windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya
             - name: LoadLibraryEx
               href: /windows/desktop/api/LibLoaderAPI/nf-libloaderapi-loadlibraryexa
-            - name: LoadModule (
+            - name: Loadmodule
               href: /windows/desktop/api/Winbase/nf-winbase-loadmodule
             - name: LoadPackagedLibrary
               href: /windows/desktop/api/Winbase/nf-winbase-loadpackagedlibrary

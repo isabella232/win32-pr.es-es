@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: e81071d44340ef7a4b874633e736e21016c697a6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4953b51cdd09cdbcac4855bd423ce37dda5b979e06153589b5b2ded21004b3ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853405"
 ---
 # <a name="d3dxmatrixa16-structure-d3dx10mathh"></a>Estructura D3DXMATRIXA16 (D3DX10Math.h)
 
@@ -107,7 +107,7 @@ typedef D3DX_ALIGN16 _D3DXMATRIXA16 D3DXMATRIXA16, *LPD3DXMATRIXA16;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

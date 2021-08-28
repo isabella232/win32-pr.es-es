@@ -1,7 +1,7 @@
 ---
-description: El método get recupera el elemento en la posición especificada.
+description: El método Get recupera el elemento en la posición especificada.
 ms.assetid: cafa4083-96e6-4ed3-afbc-5828b7f1c5be
-title: Método CGenericList. get (Wxlist. h)
+title: Método CGenericList.Get (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 02af7d57d2219e6eb0506a8ab11521b4cf3570eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dae90872ea607571b215aafe3f9f35a645cd50d140dcbad0783369ce2189c881
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813775"
 ---
-# <a name="cgenericlistget-method"></a>CGenericList. get (método)
+# <a name="cgenericlistget-method"></a>CGenericList.Get (método)
 
 El `Get` método recupera el elemento en la posición especificada.
 
@@ -45,17 +45,17 @@ OBJECT* Get(
 *pos* 
 </dt> <dd>
 
-Indicador de posición del elemento que se va a recuperar.
+Indicador de posición del elemento que se recuperará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a un objeto de tipo **Object** (el tipo de plantilla).
+Devuelve un puntero a un objeto de tipo **OBJECT** (el tipo de plantilla).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *pos* es **null**, el método devuelve **null**.
+Si *pos* es **NULL,** el método devuelve **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si *pos* es **null**, el método devuelve **null**.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si *pos* es **null**, el método devuelve **null**.
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (clase)**](cgenericlist.md)
 </dt> </dl>
 
  

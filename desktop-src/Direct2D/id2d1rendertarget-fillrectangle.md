@@ -1,9 +1,9 @@
 ---
-title: Métodos de ID2D1RenderTarget FillRectangle (D2d1 \_ 1. h)
+title: Métodos ID2D1RenderTarget FillRectangle (D2d1 \_ 1.h)
 description: Pinta el interior del rectángulo especificado.
 ms.assetid: 08e498f9-b564-4da6-ba9b-bff08964ce08
 keywords:
-- FillRectangle (métodos) Direct2D
+- Métodos FillRectangle Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 21339e535aec294b3737f8a81ce313d524004bcf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ae33b1d63633361b43ff61cd7ff0297ac3b8a6553c6218f0fc093f566c31742
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874115"
 ---
-# <a name="id2d1rendertargetfillrectangle-methods"></a>ID2D1RenderTarget:: FillRectangle (métodos)
+# <a name="id2d1rendertargetfillrectangle-methods"></a>Métodos ID2D1RenderTarget::FillRectangle
 
 Pinta el interior del rectángulo especificado.
 
@@ -29,20 +29,20 @@ Pinta el interior del rectángulo especificado.
 
 | Método                                                                                                               | Descripción                                                 |
 |:---------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|
-| [**FillRectangle (D2D1 \_ Rect \_ F&, ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush))  | Pinta el interior del rectángulo especificado. <br/> |
-| [**FillRectangle (D2D1 \_ Rect \_ F \* , ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush)) | Pinta el interior del rectángulo especificado. <br/> |
+| [**FillRectangle(D2D1 \_ RECT \_ F&,ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush))  | Pinta el interior del rectángulo especificado. <br/> |
+| [**FillRectangle(D2D1 \_ RECT \_ F , \* ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush)) | Pinta el interior del rectángulo especificado. <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no devuelve un código de error si se produce un error. Para determinar si una operación de dibujo (como **FillRectangle**) produjo un error, compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget:: EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget:: Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush) .
+Este método no devuelve un código de error si se produce un error. Para determinar si se ha producido un error en una operación de dibujo (como **FillRectangle),** compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa un [**ID2D1HwndRenderTarget**](/previous-versions/windows/desktop/legacy/dd371275(v=vs.85)) para dibujar y rellenar varios rectángulos. En este ejemplo se genera el resultado que se muestra en la ilustración siguiente.
+En el ejemplo siguiente se [**usa id2D1HwndRenderTarget**](/previous-versions/windows/desktop/legacy/dd371275(v=vs.85)) para dibujar y rellenar varios rectángulos. En este ejemplo se genera la salida que se muestra en la ilustración siguiente.
 
-![Ilustración de dos rectángulos en un fondo de cuadrícula](images/drawrectangleexample-small.png)
+![ilustración de dos rectángulos en un fondo de cuadrícula](images/drawrectangleexample-small.png)
 
 
 ```C++
@@ -126,7 +126,7 @@ HRESULT DemoApp::OnRender()
 
 
 
-Para ver un tutorial relacionado, consulte [creación de una aplicación de Direct2D simple](direct2d-quickstart.md).
+Para ver un tutorial relacionado, consulte [Creación de una aplicación direct2D simple.](direct2d-quickstart.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -134,8 +134,8 @@ Para ver un tutorial relacionado, consulte [creación de una aplicación de Dire
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1 \_ 1. h (incluir D2d1. h)</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl>                   |
+| Encabezado<br/>  | <dl> <dt>D2d1 \_ 1.h (incluir D2d1.h)</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl>                   |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl>                   |
 
 
@@ -147,7 +147,7 @@ Para ver un tutorial relacionado, consulte [creación de una aplicación de Dire
 [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 </dt> <dt>
 
-[Crear una aplicación de Direct2D simple](direct2d-quickstart.md)
+[Creación de una aplicación direct2D simple](direct2d-quickstart.md)
 </dt> </dl>
 
 �

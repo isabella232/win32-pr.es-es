@@ -1,17 +1,17 @@
 ---
 description: Para enumerar los archivos de un directorio especificado, llame a FindFirstFile, FindNextFile y FindClose.
 ms.assetid: ab0d977d-f71c-4a18-9b1d-2221169324f0
-title: Enumerar los archivos de un directorio
+title: Enumeración de los archivos de un directorio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0ef872917656957253498c54560971ca87ddaa5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18ca78c2ed6ee0a8adf2e80574ed029eea9e9e5dc2d5bbe6f69a6f0cecc12892
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765895"
 ---
-# <a name="listing-the-files-in-a-directory"></a>Enumerar los archivos de un directorio
+# <a name="listing-the-files-in-a-directory"></a>Enumeración de los archivos de un directorio
 
 En el ejemplo siguiente se llama a [**FindFirstFile**](/windows/desktop/api/FileAPI/nf-fileapi-findfirstfilea), [**FindNextFile**](/windows/desktop/api/FileAPI/nf-fileapi-findnextfilea)y [**FindClose**](/windows/desktop/api/FileAPI/nf-fileapi-findclose) para enumerar los archivos de un directorio especificado.
 

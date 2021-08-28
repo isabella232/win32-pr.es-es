@@ -3,34 +3,34 @@ title: Traducción avanzada
 description: Traducción avanzada
 ms.assetid: 48a1bdd5-8b7b-4460-9b7b-1ab8969a28f8
 keywords:
-- Windows Touch, traducción
-- Windows Touch, traducción avanzada
-- Windows Touch, manipulaciones
+- Windows Touch,translation
+- Windows Touch,advanced translation
+- Windows Táctil, manipulaciones
 - manipulaciones, traducción
 - manipulaciones, traducción avanzada
 - traducción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc383c71e1f1417d30b64db18aa627039602b942
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4712375c12420e076bb93c1240d18dc8e3c1d58006eb24ced7a62a7485e01c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810355"
 ---
 # <a name="advanced-translation"></a>Traducción avanzada
 
 En la ilustración siguiente se muestran dos interpretaciones de la traducción.
 
-![Ilustración que primero muestra la traducción simple, en la que un objeto se mueve sin giro y, a continuación, muestra la traducción avanzada, que implica el movimiento con rotación](images/translation.png)
+![ilustración que muestra primero la traducción simple, en la que un objeto se mueve sin rotación y, a continuación, muestra la traducción avanzada, que implica el movimiento con rotación](images/translation.png)
 
-En el ejemplo A, el ejemplo de traducción simple, el objeto se mueve sin giro. En el ejemplo B, el objeto se gira durante la traducción, dependiendo de dónde se encuentra el punto de contacto del objeto. Si habilita la rotación de un solo dedo como se describe en [rotación de un solo dedo](single-finger-rotation.md), puede habilitar la traducción compleja. En el diagrama siguiente se muestran los distintos componentes de la rotación de un solo dedo cuando se realiza la traducción.
+En el ejemplo A, el ejemplo de traducción simple, el objeto se mueve sin rotación. En el ejemplo B, el objeto se gira durante la traducción, dependiendo de dónde se encuentra el punto de contacto del objeto. Si habilita la rotación con un solo dedo como se describe en Rotación con un solo [dedo](single-finger-rotation.md), puede habilitar la traducción compleja. En el diagrama siguiente se muestran los distintos componentes de rotación con un solo dedo al realizar la traducción.
 
-![Ilustración que muestra los componentes de la rotación de un solo dedo: pivotpointx, pivotpointy y pivotradius](images/translation-complex-components.png)
+![ilustración que muestra los componentes de rotación con un solo dedo: pivotpointx, pivotpointy y pivotradius](images/translation-complex-components.png)
 
 A medida que se mueve el objeto, se vuelve a calcular el radio y se mueve el punto de pivote.
 
-En el código siguiente se muestra una forma de hacerlo en una implementación de [**ManipulationDelta**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta) que habilita la traducción compleja.
+El código siguiente muestra una manera de hacerlo en una implementación de [**ManipulationDelta**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta) que permite la traducción compleja.
 
 
 ```C++
@@ -58,9 +58,9 @@ En el código siguiente se muestra una forma de hacerlo en una implementación d
 
 
 > [!Note]  
-> Las transformaciones de objeto se producen antes de que se calculen los puntos de pivote y el radio. De esta manera, el objeto se moverá correctamente si el usuario realiza la expansión en el objeto mientras se mueve.
+> Las transformaciones de objetos se producen antes de calcular los puntos de pivote y el radio. De esta manera, el objeto se moverá correctamente si el usuario realiza la expansión en el objeto mientras se mueve.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -69,9 +69,9 @@ En el código siguiente se muestra una forma de hacerlo en una implementación d
 [Manipulaciones](getting-started-with-manipulations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

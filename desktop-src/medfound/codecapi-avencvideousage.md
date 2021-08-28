@@ -1,17 +1,17 @@
 ---
 description: Establece el uso de vídeo para un codificador de vídeo.
 ms.assetid: 2A6941A3-CCA0-467C-AC8A-DADC2CD1D405
-title: Propiedad CODECAPI_AVEncVideoUsage (Codecapi. h)
+title: CODECAPI_AVEncVideoUsage propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27568412613702846e99d0ca556cc59cdc4fc77e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5b6d3ee174fbc22ca7b1ab4e309d87112463740a075b497cc35033f8c96bbe8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777715"
 ---
-# <a name="codecapi_avencvideousage-property"></a>\_Propiedad AVEncVideoUsage de CODECAPI
+# <a name="codecapi_avencvideousage-property"></a>Propiedad CODECAPI \_ AVEncVideoUsage
 
 Establece el uso de vídeo para un codificador de vídeo.
 
@@ -23,11 +23,11 @@ Establece el uso de vídeo para un codificador de vídeo.
 
 **CODECAPI \_ AVEncVideoUsage**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Esta propiedad también se usa con codificadores de cámara [H.264 UVC 1.5.](camera-encoder-h264-uvc-1-5.md)
 
-[CODECAPI \_ AVEncVideoTemporalLayerCount](codecapi-avencvideotemporallayercount.md), CODECAPI \_ AVEncVideoUsage y [CODECAPI \_ AVEncCommonRateControlMode](/windows/desktop/DirectShow/avenccommonratecontrolmode-property) son propiedades del codificador estático. Una vez que se han establecido, solo surtirán efecto después de llamar a un tipo de medio establecido en el PIN de salida de la cámara.
+[CODECAPI \_ AVEncVideo PseudoLayerCount,](codecapi-avencvideotemporallayercount.md)CODECAPI \_ AVEncVideoUsage y [CODECAPI \_ AVEncCommonRateControlMode](/windows/desktop/DirectShow/avenccommonratecontrolmode-property) son propiedades de codificador estático. Una vez establecidos, solo tendrán efecto después de llamar a un tipo de medio establecido en el pin de salida de la cámara.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](cam
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ Esta propiedad también se usa con [codificadores de cámara H. 264 UVC 1,5](cam
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

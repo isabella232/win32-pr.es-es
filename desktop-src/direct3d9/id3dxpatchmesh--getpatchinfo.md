@@ -1,7 +1,7 @@
 ---
 description: Obtiene los atributos de la revisión.
 ms.assetid: 601a3275-25ea-4e16-8297-a9fc1f5fdd49
-title: 'ID3DXPatchMesh:: GetPatchInfo (método) (D3DX9Mesh. h)'
+title: Método ID3DXPatchMesh::GetPatchInfo (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 70308857aa66551ed371dbe511acb6bd2d211bfb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 10b6d327b665b30418478d06d21433614587824eeb481202a9bef202b8727001
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105670247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847445"
 ---
-# <a name="id3dxpatchmeshgetpatchinfo-method"></a>ID3DXPatchMesh:: GetPatchInfo (método)
+# <a name="id3dxpatchmeshgetpatchinfo-method"></a>Método ID3DXPatchMesh::GetPatchInfo
 
 Obtiene los atributos de la revisión.
 
@@ -45,7 +45,7 @@ HRESULT GetPatchInfo(
 
 Tipo: **[ **LPD3DXPATCHINFO**](d3dxpatchinfo.md)**
 
-Puntero a las estructuras que contienen los atributos patch. Para obtener más información sobre los atributos de revisión, vea [**D3DXPATCHINFO**](d3dxpatchinfo.md).
+Puntero a las estructuras que contienen los atributos de revisión. Para obtener más información sobre los atributos de revisión, [**vea D3DXPATCHINFO**](d3dxpatchinfo.md).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a las estructuras que contienen los atributos patch. Para obtener más i
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

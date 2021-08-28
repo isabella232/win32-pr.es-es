@@ -1,10 +1,10 @@
 ---
-title: BITS_JOB_PROPERTY_VALUE estructura (Deliveryoptimization. h)
-description: La Unión BITS_JOB_PROPERTY_VALUE proporciona el valor de propiedad del trabajo DO basándose en el valor de la enumeración BITS_JOB_PROPERTY_ID.
+title: BITS_JOB_PROPERTY_VALUE estructura (Deliveryoptimization.h)
+description: La BITS_JOB_PROPERTY_VALUE de datos proporciona el valor de propiedad del trabajo do basándose en el valor de la enumeración BITS_JOB_PROPERTY_ID datos.
 ms.assetid: C24D9EA1-2E72-4403-939A-7B01D7133FE7
 keywords:
-- Estructura de BITS_JOB_PROPERTY_VALUE
-- Estructura de BITS_JOB_PROPERTY_VALUE
+- BITS_JOB_PROPERTY_VALUE estructura
+- BITS_JOB_PROPERTY_VALUE estructura
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c48c1fe550db51b6b838379d44df21c95fa95e41
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f7366f993f23a16aa6c0d4486c33f45cd501962add9ab524a008aba51cd8ec9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755735"
 ---
-# <a name="bits_job_property_value-structure"></a>Estructura de BITS_JOB_PROPERTY_VALUE
+# <a name="bits_job_property_value-structure"></a>BITS_JOB_PROPERTY_VALUE estructura
 
-La Unión **BITS_JOB_PROPERTY_VALUE** proporciona el valor de propiedad del trabajo do basándose en el valor de la enumeración [**BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) .
+La **BITS_JOB_PROPERTY_VALUE** de datos proporciona el valor de propiedad del trabajo do en función del valor de la [**enumeración BITS_JOB_PROPERTY_ID**](bits-job-property-id.md) datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,38 +46,38 @@ typedef struct {
 
 <dl> <dt>
 
-**DWORD**
+**Dword**
 </dt> <dd>
 
-Este valor se devuelve al utilizar el identificador de la propiedad de enumeración **BITS_JOB_PROPERTY_ID_COST_FLAGS** y se aplica como la [Directiva de transferencia](https://www.bing.com/search?q=transfer+policy) en el trabajo do.
+Este valor se devuelve cuando se usa el identificador de propiedad de **enumeración BITS_JOB_PROPERTY_ID_COST_FLAGS** y se aplica como directiva [de transferencia](https://www.bing.com/search?q=transfer+policy) en el trabajo do.
 
 </dd> <dt>
 
-**ClsID**
+**Clsid**
 </dt> <dd>
 
-Este valor se devuelve cuando se usa el identificador de la propiedad de enumeración **BITS_JOB_PROPERTY_NOTIFICATION_CLSID** y representa el CLSID del objeto de devolución de llamada que se va a registrar con el trabajo.
+Este valor se devuelve cuando se  usa el identificador de propiedad de enumeración BITS_JOB_PROPERTY_NOTIFICATION_CLSID y representa el CLSID del objeto de devolución de llamada que se va a registrar con el trabajo do.
 
 </dd> <dt>
 
-**Habilitar**
+**Habilitación**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 **Uint64**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 **Target**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> </dl>
 
@@ -87,9 +87,9 @@ No se admite.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

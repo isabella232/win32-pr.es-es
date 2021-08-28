@@ -1,9 +1,9 @@
 ---
-title: Months (monthlyScheduleType), elemento
-description: Especifica los meses del año en los que se ejecuta la tarea para una programación mensual.
+title: Months (monthlyScheduleType) (Elemento)
+description: Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual.
 ms.assetid: 71c9f7ac-01fc-4837-bccf-1869df2bc24e
 keywords:
-- Months, elemento Programador de tareas
+- Elementos Months Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ed40fd2466f8962f839f39e7addd3b7e1bc33eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1b655b47fc3135006f8629246d63350d36a4b32e92398a00f40ae86fe3f70d1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796505"
 ---
-# <a name="months-monthlyscheduletype-element"></a>Months (monthlyScheduleType), elemento
+# <a name="months-monthlyscheduletype-element"></a>Months (monthlyScheduleType) (Elemento)
 
-Especifica los meses del año en los que se ejecuta la tarea para una programación mensual.
+Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual.
 
 ``` syntax
 <xs:element name="Months"
@@ -30,7 +30,7 @@ Especifica los meses del año en los que se ejecuta la tarea para una programaci
  />
 ```
 
-El elemento **months** se define mediante el tipo complejo [**monthlyScheduleType**](taskschedulerschema-monthlyscheduletype-complextype.md) .
+El **elemento Months** se define mediante el tipo complejo [**monthlyScheduleType.**](taskschedulerschema-monthlyscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -63,15 +63,15 @@ El elemento **months** se define mediante el tipo complejo [**monthlyScheduleTyp
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripts, los meses de la programación se especifican mediante la propiedad [**MonthlyTrigger. MonthsOfYear**](monthlytrigger-monthsofyear.md) .
+Para el desarrollo de scripts, los meses de la programación se especifican mediante la [**propiedad MonthlyTrigger.MonthsOfYear.**](monthlytrigger-monthsofyear.md)
 
-En el desarrollo de C++, los meses de la programación se especifican mediante la propiedad [**IMonthlyTrigger:: MonthsOfYear**](/windows/desktop/api/taskschd/nf-taskschd-imonthlytrigger-get_monthsofyear) .
+Para el desarrollo de C++, los meses de la programación se especifican mediante la [**propiedad IMonthlyTrigger::MonthsOfYear.**](/windows/desktop/api/taskschd/nf-taskschd-imonthlytrigger-get_monthsofyear)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un calendario mensual que inicia la tarea el día 1 y 15 de cada mes del año.
+El xml siguiente define un calendario mensual que inicia la tarea el día 1 y el 15 de cada mes del año.
 
 
 ```XML
@@ -105,8 +105,8 @@ El siguiente código XML define un calendario mensual que inicia la tarea el dí
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -114,7 +114,7 @@ El siguiente código XML define un calendario mensual que inicia la tarea el dí
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

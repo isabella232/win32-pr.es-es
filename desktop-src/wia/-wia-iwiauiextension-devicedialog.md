@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiadevd.h
-ms.openlocfilehash: d467769308707032b8e92b4ac7877488991356dd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a06ac5428743c31bae22c6d106ee927791739295754b15ac9764045c3aeeffab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813875"
 ---
 # <a name="iwiauiextensiondevicedialog-method"></a>IWiaUIExtension::D eviceDialog (método)
 
@@ -64,9 +64,9 @@ Si implementa la interfaz [**IWiaUIExtension**](-wia-iwiauiextension.md) y no de
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Wiadevd.h</dt> </dl> |
 
 
 

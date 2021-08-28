@@ -1,9 +1,9 @@
 ---
-title: 'Texture1DArray:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | Texture1DArray:: Getdimensions ((función)'
+title: Función Texture1DArray::GetDimensions
+description: Devuelve las dimensiones del recurso. | Función Texture1DArray::GetDimensions
 ms.assetid: a15f1808-296d-43ac-80c0-5cbec0bcb801
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 46cc7e93fc01e14ff34091da4549308730d7cd7c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 14a079443370f2363006ce23fcc5f5119b7ec7c48e3b15afe4969c989e071af3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853325"
 ---
-# <a name="texture1darraygetdimensions-function"></a>Texture1DArray:: Getdimensions ((función)
+# <a name="texture1darraygetdimensions-function"></a>Función Texture1DArray::GetDimensions
 
 Devuelve las dimensiones del recurso.
 
@@ -39,39 +39,39 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ de\]
+*MipLevel* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nivel de mipmap (debe especificarse si se usa *NumberOfLevels* ).
+Opcional. Nivel de mapa mip (se debe especificar si *se usa NumberOfLevels).*
 
 </dd> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> <dt>
 
-*Elementos* \[ de enuncia\]
+*Elementos* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Número de elementos de la matriz.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ enuncia\]
+*NumberOfLevels* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El número de niveles de mipmap (requiere también *MipLevel* ).
+El número de niveles de mapa mip *(también requiere MipLevel).*
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ El número de niveles de mipmap (requiere también *MipLevel* ).
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta es una lista de las versiones sobrecargadas de este método.
 
@@ -104,11 +104,11 @@ void GetDimensions(out float Width,
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -123,7 +123,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Texture1DArray](sm5-object-texture1darray.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

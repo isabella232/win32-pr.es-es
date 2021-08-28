@@ -4,12 +4,12 @@ ms.assetid: d9fdafed-5958-4995-a1b5-8881feca1291
 title: Usar un efecto (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1170fde625e5eee5e9665f0759d302b5f5450a41
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d240148c8817a3e480099a3ad1acb81bbff60803b0d0a8327e3a77cba681b5b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856105"
 ---
 # <a name="using-an-effect-direct3d-9"></a>Usar un efecto (Direct3D 9)
 
@@ -17,17 +17,17 @@ En esta página se muestra cómo generar y usar un efecto. Los temas tratados in
 
 -   [Crear un efecto](#create-an-effect)
 -   [Representar un efecto](#render-an-effect)
--   [Usar la semántica para buscar parámetros de efectos](#use-semantics-to-find-effect-parameters)
--   [Usar los controladores para obtener y establecer los parámetros de forma eficaz](#use-handles-to-get-and-set-parameters-efficiently)
+-   [Usar semántica para buscar parámetros de efecto](#use-semantics-to-find-effect-parameters)
+-   [Uso de identificadores para obtener y establecer parámetros de forma eficaz](#use-handles-to-get-and-set-parameters-efficiently)
 -   [Agregar información de parámetros con anotaciones](#add-parameter-information-with-annotations)
--   [Parámetros de efectos compartidos](#share-effect-parameters)
+-   [Parámetros de efecto de recurso compartido](#share-effect-parameters)
 -   [Compilar un efecto sin conexión](#compile-an-effect-offline)
--   [Mejorar el rendimiento con los sombreadores](#improve-performance-with-preshaders)
--   [Usar bloques de parámetros para administrar parámetros de efectos](#use-parameter-blocks-to-manage-effect-parameters)
+-   [Mejora del rendimiento con preshaders](#improve-performance-with-preshaders)
+-   [Usar bloques de parámetros para administrar parámetros de efecto](#use-parameter-blocks-to-manage-effect-parameters)
 
 ## <a name="create-an-effect"></a>Crear un efecto
 
-Este es un ejemplo de la creación de un efecto tomado del [ejemplo BasicHLSL](../directx-sdk--august-2009-.md). El código de creación del efecto para crear un sombreador de depuración es desde **OnCreateDevice**:
+Este es un ejemplo de creación de un efecto tomado del [ejemplo basicHLSL](../directx-sdk--august-2009-.md). El código de creación del efecto para crear un sombreador de depuración es **de OnCreateDevice**:
 
 
 ```
@@ -58,33 +58,33 @@ DWORD dwShaderFlags = 0;
 Esta función toma estos argumentos:
 
 -   Dispositivo.
--   Nombre del archivo de efecto.
--   Un puntero a una lista de definiciones terminada en NULL \# que se va a utilizar al analizar el sombreador.
--   Un puntero opcional a un controlador de inclusión escrito por el usuario. El procesador llama al controlador cada vez que necesita resolver un \# include.
--   Una marca de compilación del sombreador que proporciona sugerencias del compilador sobre cómo se utilizará el sombreador. Entre estas opciones se incluyen:
-    -   Omitiendo la validación, si se están compilando sombreadores buenos conocidos.
-    -   Omitiendo la optimización (a veces se usa cuando las optimizaciones dificultan la depuración).
-    -   Solicitar la información de depuración que se va a incluir en el sombreador para que se pueda depurar.
--   Grupo de efectos. Si más de un efecto utiliza el mismo puntero de bloque de memoria, las variables globales de los efectos se comparten entre sí. Si no es necesario compartir las variables de efecto, el bloque de memoria se puede establecer en **null**.
+-   Nombre de archivo del archivo de efecto.
+-   Puntero a una lista de define terminada en NULL \# que se usará al analizar el sombreador.
+-   Puntero opcional a un controlador de incluir escrito por el usuario. El procesador llama al controlador siempre que necesite resolver un \# include.
+-   Marca de compilación de sombreador que proporciona sugerencias del compilador sobre cómo se usará el sombreador. Entre estas opciones se incluyen:
+    -   Omitir la validación, si se compilan sombreadores buenos conocidos.
+    -   Omitir la optimización (a veces se usa cuando las optimizaciones dificultan la depuración).
+    -   Solicitud de información de depuración que se va a incluir en el sombreador para que se pueda depurar.
+-   Grupo de efectos. Si más de un efecto usa el mismo puntero de grupo de memoria, las variables globales de los efectos se comparten entre sí. Si no es necesario compartir variables de efecto, el grupo de memoria se puede establecer en **NULL.**
 -   Puntero al nuevo efecto.
--   Un puntero a un búfer al que se pueden enviar los errores de validación. En este ejemplo, el parámetro se ha establecido en **null** y no se ha usado.
+-   Puntero a un búfer al que se pueden enviar errores de validación. En este ejemplo, el parámetro se estableció en **NULL** y no se usó.
 
 > [!Note]  
-> A partir del SDK de diciembre de 2006, el compilador de HLSL de DirectX 10 es ahora el compilador predeterminado en DirectX 9 y DirectX 10. Consulte [herramienta de compilador de efectos](../direct3dtools/fxc.md) para más información.
+> A partir del SDK de diciembre de 2006, el compilador HLSL de DirectX 10 es ahora el compilador predeterminado en DirectX 9 y DirectX 10. Vea [Effect-Compiler Tool para](../direct3dtools/fxc.md) obtener más información.
 
  
 
 ## <a name="render-an-effect"></a>Representar un efecto
 
-La secuencia de llamadas para aplicar el estado de efectos a un dispositivo es:
+La secuencia de llamadas para aplicar el estado de efecto a un dispositivo es:
 
--   [**ID3DXEffect:: Begin**](id3dxeffect--begin.md) establece la técnica activa.
--   [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md) establece el paso activo.
--   [**ID3DXEffect:: commitChanges**](id3dxeffect--commitchanges.md) actualiza los cambios en cualquier llamada establecida en el paso. Se debe llamar a este método antes de cualquier llamada a Draw.
--   [**ID3DXEffect:: EndPass**](id3dxeffect--endpass.md) finaliza un paso.
--   [**ID3DXEffect:: end**](id3dxeffect--end.md) finaliza la técnica activa.
+-   [**ID3DXEffect::Begin**](id3dxeffect--begin.md) establece la técnica activa.
+-   [**ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md) establece el paso activo.
+-   [**ID3DXEffect::CommitChanges actualiza**](id3dxeffect--commitchanges.md) los cambios en las llamadas de conjunto en el paso. Se debe llamar a este método antes de cualquier llamada a draw.
+-   [**ID3DXEffect::EndPass**](id3dxeffect--endpass.md) finaliza un paso.
+-   [**ID3DXEffect::End finaliza**](id3dxeffect--end.md) la técnica activa.
 
-El código de representación del efecto también es más sencillo que el código de representación correspondiente sin ningún efecto. Este es el código de representación con un efecto:
+El código de representación de efecto también es más sencillo que el código de representación correspondiente sin ningún efecto. Este es el código de representación con un efecto:
 
 
 ```
@@ -109,11 +109,11 @@ g_pEffect->End();
 
 
 
-El bucle de representación consiste en consultar el efecto para ver cuántas pasadas contiene y, a continuación, llamar a todas las pasadas para una técnica. El bucle de representación se puede expandir para llamar a varias técnicas, cada una con varias fases.
+El bucle de representación consiste en consultar el efecto para ver cuántos pases contiene y, a continuación, llamar a todos los pases para una técnica. El bucle de representación se podría expandir para llamar a varias técnicas, cada una con varios pases.
 
-## <a name="use-semantics-to-find-effect-parameters"></a>Usar la semántica para buscar parámetros de efectos
+## <a name="use-semantics-to-find-effect-parameters"></a>Usar semántica para buscar parámetros de efecto
 
-Una semántica es un identificador que se adjunta a un parámetro de efecto para permitir que una aplicación busque el parámetro. Un parámetro puede tener como máximo una semántica. La semántica se encuentra después de dos puntos (:) después del nombre del parámetro. Por ejemplo:
+Una semántica es un identificador asociado a un parámetro de efecto para permitir que una aplicación busque el parámetro. Un parámetro puede tener como máximo una semántica. La semántica se encuentra después de dos puntos (:) después del nombre del parámetro. Por ejemplo:
 
 
 ```
@@ -122,7 +122,7 @@ float4x4 matWorldViewProj : WORLDVIEWPROJ;
 
 
 
-Si ha declarado la variable global de efecto sin usar una semántica, tendría un aspecto similar al siguiente:
+Si declaró la variable global de efecto sin usar una semántica, tendría este aspecto en su lugar:
 
 
 ```
@@ -131,7 +131,7 @@ float4x4 matWorldViewProj;
 
 
 
-La interfaz de efecto puede usar una semántica para obtener un identificador de un parámetro de efecto determinado. Por ejemplo, lo siguiente devuelve el identificador de la matriz:
+La interfaz de efecto puede usar una semántica para obtener un identificador para un parámetro de efecto determinado. Por ejemplo, lo siguiente devuelve el identificador de la matriz:
 
 
 ```
@@ -143,15 +143,15 @@ D3DHANDLE handle =
 
 Además de buscar por nombre semántico, la interfaz de efecto tiene muchos otros métodos para buscar parámetros.
 
-## <a name="use-handles-to-get-and-set-parameters-efficiently"></a>Usar los controladores para obtener y establecer los parámetros de forma eficaz
+## <a name="use-handles-to-get-and-set-parameters-efficiently"></a>Uso de identificadores para obtener y establecer parámetros de forma eficaz
 
-Los identificadores proporcionan un medio eficaz para hacer referencia a parámetros de efectos, técnicas, pasadas y anotaciones con un efecto. Los identificadores (que son de tipo D3DXHANDLE) son punteros de cadena. Los identificadores que se pasan a funciones como GetParameterxxx o GetAnnotationxxx pueden tener una de las tres formas siguientes:
+Los identificadores proporcionan un medio eficaz para hacer referencia a parámetros de efecto, técnicas, pases y anotaciones con un efecto. Los identificadores (que son de tipo D3DXHANDLE) son punteros de cadena. Los identificadores que se pasan a funciones como GetParameterxxx o GetAnnotationxxx pueden tener una de estas tres formas:
 
 -   Identificador devuelto por una función como GetParameterxxx.
--   Cadena que contiene el nombre del parámetro, la técnica, la fase o la anotación.
--   Identificador establecido en **null**.
+-   Cadena que contiene el nombre del parámetro, la técnica, el paso o la anotación.
+-   Identificador establecido en **NULL.**
 
-Este ejemplo devuelve un identificador al parámetro que tiene la semántica WORLDVIEWPROJ asociada:
+En este ejemplo se devuelve un identificador al parámetro que tiene asociada la semántica WORLDVIEWPROJ:
 
 
 ```
@@ -163,11 +163,11 @@ D3DHANDLE handle =
 
 ## <a name="add-parameter-information-with-annotations"></a>Agregar información de parámetros con anotaciones
 
-Las anotaciones son datos específicos del usuario que se pueden adjuntar a cualquier técnica, paso o parámetro. Una anotación es una forma flexible de agregar información a parámetros individuales. La información se puede volver a leer y usar de cualquier manera que la aplicación elija. Una anotación puede ser de cualquier tipo de datos y se puede agregar dinámicamente. Las declaraciones de anotación se delimitan mediante corchetes angulares. Una anotación contiene:
+Las anotaciones son datos específicos del usuario que se pueden adjuntar a cualquier técnica, paso o parámetro. Una anotación es una manera flexible de agregar información a parámetros individuales. La información se puede volver a leer y usar de la manera que elija la aplicación. Una anotación puede ser de cualquier tipo de datos y se puede agregar dinámicamente. Las declaraciones de anotación están delimitadas por corchetes angulares. Una anotación contiene:
 
--   Un tipo de datos.
--   Un nombre de variable.
--   Un signo igual (=).
+-   Tipo de datos.
+-   Nombre de variable.
+-   Signo igual (=).
 -   Valor de datos.
 -   Punto y coma final (;).
 
@@ -180,23 +180,23 @@ texture Tex0 < string name = "tiger.bmp"; >;
 
 
 
-La anotación se adjunta al objeto Texture y especifica el archivo de textura que se debe usar para inicializar el objeto Texture. La anotación no inicializa el objeto Texture, sino simplemente una parte de la información del usuario que se adjunta a la variable. Una aplicación puede leer la anotación con [**ID3DXBaseEffect:: GetAnnotation**](id3dxbaseeffect--getannotation.md) o [**ID3DXBaseEffect:: GetAnnotationByName**](id3dxbaseeffect--getannotationbyname.md) para devolver la cadena. La aplicación también puede agregar anotaciones.
+La anotación se adjunta al objeto de textura y especifica el archivo de textura que se debe usar para inicializar el objeto de textura. La anotación no inicializa el objeto de textura, simplemente es un fragmento de información del usuario que está asociado a la variable. Una aplicación puede leer la anotación con [**ID3DXBaseEffect::GetAnnotation**](id3dxbaseeffect--getannotation.md) o [**ID3DXBaseEffect::GetAnnotationByName**](id3dxbaseeffect--getannotationbyname.md) para devolver la cadena. La aplicación también puede agregar anotaciones.
 
 Cada anotación:
 
--   Debe ser un valor numérico o cadenas.
+-   Debe ser numérico o cadenas.
 -   Siempre se debe inicializar con un valor predeterminado.
--   Se puede asociar a [técnicas y pases (Direct3D 9)](techniques-and-passes.md) y [parámetros de efecto](/previous-versions/windows/desktop/ee417539(v=vs.85))de nivel superior.
--   Se puede escribir y leer desde con [**ID3DXEffect**](id3dxeffect.md) o [**ID3DXEffectCompiler**](id3dxeffectcompiler.md).
--   Se puede Agregar con [**ID3DXEffect**](id3dxeffect.md).
--   No se puede hacer referencia dentro del efecto.
--   No puede tener subexpresiones o subestados.
+-   Se puede asociar con [técnicas y pases (Direct3D 9)](techniques-and-passes.md) y parámetros de [efecto de nivel superior.](/previous-versions/windows/desktop/ee417539(v=vs.85))
+-   Se puede escribir y leer con [**ID3DXEffect**](id3dxeffect.md) o [**ID3DXEffectCompiler.**](id3dxeffectcompiler.md)
+-   Se puede agregar con [**ID3DXEffect.**](id3dxeffect.md)
+-   No se puede hacer referencia a dentro del efecto.
+-   No puede tener submánticos ni subta anotaciones.
 
-## <a name="share-effect-parameters"></a>Parámetros de efectos compartidos
+## <a name="share-effect-parameters"></a>Parámetros de efecto de recurso compartido
 
-Los parámetros de efecto son todas las variables no estáticas declaradas en un efecto. Esto puede incluir variables globales y anotaciones. Los parámetros de efecto se pueden compartir entre distintos efectos declarando parámetros con la palabra clave "Shared" y creando después el efecto con un grupo de efectos.
+Los parámetros de efecto son todas las variables no estáticas declaradas en un efecto. Esto puede incluir variables globales y anotaciones. Los parámetros de efecto se pueden compartir entre distintos efectos declarando parámetros con la palabra clave "shared" y, a continuación, creando el efecto con un grupo de efectos.
 
-Un grupo de efectos contiene parámetros de efectos compartidos. El grupo se crea llamando a [**D3DXCreateEffectPool**](d3dxcreateeffectpool.md), que devuelve una interfaz [**ID3DXEffectPool**](id3dxeffectpool.md) . La interfaz se puede proporcionar como entrada a cualquiera de las funciones de D3DXCreateEffectxxx cuando se crea un efecto. Para que un parámetro se comparta entre varios efectos, el parámetro debe tener el mismo nombre, tipo y semántica en cada uno de los efectos compartidos.
+Un grupo de efectos contiene parámetros de efecto compartido. El grupo se crea mediante una llamada a [**D3DXCreateEffectPool**](d3dxcreateeffectpool.md), que devuelve una [**interfaz ID3DXEffectPool.**](id3dxeffectpool.md) La interfaz se puede proporcionar como entrada a cualquiera de las funciones D3DXCreateEffectxxx cuando se crea un efecto. Para que un parámetro se comparta entre varios efectos, el parámetro debe tener el mismo nombre, tipo y semántica en cada uno de los efectos compartidos.
 
 
 ```
@@ -207,13 +207,13 @@ ID3DXEffectPool* g_pEffectPool = NULL;   // Effect pool for sharing parameters
 
 
 
-Los efectos que comparten parámetros deben usar el mismo dispositivo. Esto se aplica para impedir el uso compartido de parámetros dependientes del dispositivo (como sombreadores o texturas) en distintos dispositivos. Los parámetros se eliminan del grupo cada vez que se liberan los efectos que contienen los parámetros compartidos. Si los parámetros de uso compartido no son necesarios, proporcione **null** para el grupo de efectos cuando se cree un efecto.
+Los efectos que comparten parámetros deben usar el mismo dispositivo. Esto se aplica para evitar el uso compartido de parámetros dependientes del dispositivo (como sombreadores o texturas) entre distintos dispositivos. Los parámetros se eliminan del grupo cada vez que se liberan los efectos que contienen los parámetros compartidos. Si no es necesario compartir parámetros, proporcione **NULL para** el grupo de efectos cuando se cree un efecto.
 
-Los efectos clonados usan el mismo grupo de efectos que el efecto desde el que se clonan. La clonación de un efecto realiza una copia exacta de un efecto, incluidas las variables globales, las técnicas, las pasadas y las anotaciones.
+Los efectos clonados usan el mismo grupo de efectos que el efecto desde el que se clonan. La clonación de un efecto realiza una copia exacta de un efecto, incluidas variables globales, técnicas, pases y anotaciones.
 
 ## <a name="compile-an-effect-offline"></a>Compilar un efecto sin conexión
 
-Puede compilar un efecto en tiempo de ejecución con [**D3DXCreateEffect**](d3dxcreateeffect.md)o puede compilar un efecto sin conexión mediante la herramienta de compilador de línea de comandos fxc.exe. El efecto en el [ejemplo CompiledEffect](https://msdn.microsoft.com/library/Ee416326(v=VS.85).aspx) contiene un sombreador de vértices, un sombreador de píxeles y una técnica:
+Puede compilar un efecto en tiempo de ejecución con [**D3DXCreateEffect**](d3dxcreateeffect.md)o puede compilar un efecto sin conexión mediante la herramienta de compilador de línea de comandos fxc.exe. El efecto del ejemplo [CompiledEffect contiene](https://msdn.microsoft.com/library/Ee416326(v=VS.85).aspx) un sombreador de vértices, un sombreador de píxeles y una técnica:
 
 
 ```
@@ -254,7 +254,7 @@ technique RenderScene
 
 
 
-El uso de la [herramienta de compilador de efectos](../direct3dtools/fxc.md) para compilar el sombreador de vs \_ 1 \_ 1 generó las siguientes instrucciones del sombreador de ensamblado:
+El [uso de la herramienta Effect-Compiler para](../direct3dtools/fxc.md) compilar el sombreador para vs \_ \_ 1 1 generó las siguientes instrucciones de sombreador de ensamblado:
 
 
 ```
@@ -349,9 +349,9 @@ El uso de la [herramienta de compilador de efectos](../direct3dtools/fxc.md) par
 
 
 
-## <a name="improve-performance-with-preshaders"></a>Mejorar el rendimiento con los sombreadores
+## <a name="improve-performance-with-preshaders"></a>Mejora del rendimiento con preshaders
 
-Un presombreador es una técnica para aumentar la eficacia del sombreador mediante el cálculo previo de expresiones de sombreador constantes. El compilador de efectos extrae automáticamente los cálculos del sombreador del cuerpo de un sombreador y los ejecuta en la CPU antes de que se ejecute el sombreador. Por consiguiente, los presombreadores solo funcionan con efectos. Por ejemplo, estas dos expresiones se pueden evaluar fuera del sombreador antes de ejecutarse.
+Un preshader es una técnica para aumentar la eficacia del sombreador mediante el cálculo previo de expresiones de sombreador constante. El compilador de efectos extrae automáticamente los cálculos del sombreador del cuerpo de un sombreador y los ejecuta en la CPU antes de que se ejecute el sombreador. Por lo tanto, los preshaders solo funcionan con efectos. Por ejemplo, estas dos expresiones se pueden evaluar fuera del sombreador antes de que se ejecute.
 
 
 ```
@@ -361,9 +361,9 @@ sin(time)
 
 
 
-Los cálculos del sombreador que se pueden desplace son los asociados a los parámetros uniformes; es decir, los cálculos no cambian para cada vértice o píxel. Si usa efectos, el compilador de efectos genera y ejecuta automáticamente un sombreador. no hay marcas para habilitar. Los presombreadores pueden reducir el número de instrucciones por sombreador y también pueden reducir el número de registros constantes que utiliza un sombreador.
+Los cálculos de sombreador que se pueden mover son los asociados a parámetros uniformes; Es decir, los cálculos no cambian para cada vértice o píxel. Si usa efectos, el compilador de efectos genera y ejecuta automáticamente un preconfigurador. no hay marcas que habilitar. Los sombreadores previos pueden reducir el número de instrucciones por sombreador y también pueden reducir el número de registros constantes que consume un sombreador.
 
-Piense en el compilador de efectos como una especie de compilador de varios procesadores porque compila código de sombreador para dos tipos de procesadores: una CPU y una GPU. Además, el compilador de efectos está diseñado para trasladar el código de la GPU a la CPU y, por tanto, mejorar el rendimiento del sombreador. Esto es muy similar a la extracción de una expresión estática fuera de un bucle. Sombreador que transforma la posición del espacio universal en el espacio de proyección y copia las coordenadas de textura con el siguiente aspecto en HLSL:
+Piense en el compilador de efectos como una clase de compilador de varios procesadores porque compila el código del sombreador para dos tipos de procesadores: una CPU y una GPU. Además, el compilador de efectos está diseñado para mover código de la GPU a la CPU y, por tanto, mejorar el rendimiento del sombreador. Esto es muy similar a extraer una expresión estática de un bucle. Un sombreador que transforma la posición del espacio mundial al espacio de proyección y copia las coordenadas de textura tendría este aspecto en HLSL:
 
 
 ```
@@ -410,7 +410,7 @@ technique RenderVS
 
 
 
-El uso de la [herramienta de compilador de efectos](../direct3dtools/fxc.md) para compilar el sombreador de vs \_ 1 \_ 1 genera las siguientes instrucciones de ensamblado:
+El [uso de la herramienta Effect-Compiler para](../direct3dtools/fxc.md) compilar el sombreador para vs \_ \_ 1 1 genera las siguientes instrucciones de ensamblado:
 
 
 ```
@@ -469,7 +469,7 @@ technique RenderVS
 
 
 
-Esto usa 14 ranuras aproximadamente y consume 9 registros constantes. Con un presombreador, el compilador mueve las expresiones estáticas fuera del sombreador y al sombreador. El mismo sombreador tendría un aspecto similar al siguiente con un sombreador:
+Esto usa aproximadamente 14 ranuras y consume 9 registros constantes. Con un preshader, el compilador mueve las expresiones estáticas fuera del sombreador y al preshader. El mismo sombreador tendría este aspecto con un preshader:
 
 
 ```
@@ -543,9 +543,9 @@ technique RenderVS
 
 
 
-Un efecto ejecuta un sombreador inmediatamente antes de ejecutar un sombreador. El resultado es la misma funcionalidad con mayor rendimiento del sombreador, ya que se ha reducido el número de instrucciones que es necesario ejecutar (para cada vértice o píxel según el tipo de sombreador). Además, el sombreador consume menos registros constantes como resultado de las expresiones estáticas que se mueven al presombreador. Esto significa que los sombreadores previamente limitados por el número de registros constantes que requieren ahora pueden compilarse porque requieren menos registros constantes. Es razonable esperar una mejora del rendimiento del 5 por ciento y del 20 por ciento de los sombreadores.
+Un efecto ejecuta un preshader justo antes de ejecutar un sombreador. El resultado es la misma funcionalidad con un mayor rendimiento del sombreador porque se ha reducido el número de instrucciones que deben ejecutarse (para cada vértice o píxel según el tipo de sombreador). Además, el sombreador consume menos registros constantes como resultado de que las expresiones estáticas se mueven al objeto anterior. Esto significa que los sombreadores anteriormente limitados por el número de registros constantes que requerían ahora se pueden compilar porque requieren menos registros constantes. Es razonable esperar un 5 % y una mejora del rendimiento del 20 % de los preshaders.
 
-Tenga en cuenta que las constantes de entrada son diferentes de las constantes de salida en un sombreador. El resultado C1 no es el mismo que el registro C1 de entrada. La escritura en un registro constante en un sombreador escribe realmente en la ranura de entrada (constante) del sombreador correspondiente.
+Tenga en cuenta que las constantes de entrada son diferentes de las constantes de salida de un preconfigurador. La salida c1 no es la misma que el registro c1 de entrada. La escritura en un registro constante en un preconfigurador escribe realmente en la ranura de entrada (constante) del sombreador correspondiente.
 
 
 ```
@@ -559,11 +559,11 @@ cmp c5.x, c1.x, (1), (0)
 
 
 
-La instrucción de CMP anterior leerá el valor C1 del presombreador, mientras que la instrucción mul escribirá en los registros del sombreador de hardware para que los use el sombreador de vértices.
+La instrucción cmp anterior leerá el valor c1 del preshader, mientras que la instrucción mul escribirá en los registros del sombreador de hardware para que lo utilice el sombreador de vértices.
 
-## <a name="use-parameter-blocks-to-manage-effect-parameters"></a>Usar bloques de parámetros para administrar parámetros de efectos
+## <a name="use-parameter-blocks-to-manage-effect-parameters"></a>Usar bloques de parámetros para administrar parámetros de efecto
 
-Los bloques de parámetros son bloques de cambios de estado de efecto. Un bloque de parámetros puede registrar cambios de estado, de modo que se puedan aplicar más adelante con una sola llamada. Cree un bloque de parámetros mediante una llamada a [**ID3DXEffect:: BeginParameterBlock**](id3dxeffect--beginparameterblock.md):
+Los bloques de parámetros son bloques de cambios de estado de efecto. Un bloque de parámetros puede registrar los cambios de estado, de modo que se puedan aplicar más adelante con una sola llamada. Cree un bloque de parámetros mediante una [**llamada a ID3DXEffect::BeginParameterBlock**](id3dxeffect--beginparameterblock.md):
 
 
 ```
@@ -580,7 +580,7 @@ Los bloques de parámetros son bloques de cambios de estado de efecto. Un bloque
 
 
 
-El bloque de parámetros guarda cuatro cambios aplicados por las llamadas a la API. La llamada a [**ID3DXEffect:: BeginParameterBlock**](id3dxeffect--beginparameterblock.md) inicia la grabación de los cambios de estado. [**ID3DXEffect:: EndParameterBlock**](id3dxeffect--endparameterblock.md) deja de agregar los cambios al bloque de parámetros y devuelve un identificador. El identificador se usará al llamar a [**ID3DXEffect:: ApplyParameterBlock**](id3dxeffect--applyparameterblock.md).
+El bloque de parámetros guarda cuatro cambios aplicados por las llamadas API. La [**llamada a ID3DXEffect::BeginParameterBlock**](id3dxeffect--beginparameterblock.md) comienza a registrar los cambios de estado. [**ID3DXEffect::EndParameterBlock deja**](id3dxeffect--endparameterblock.md) de agregar los cambios al bloque de parámetros y devuelve un identificador. El identificador se usará al llamar a [**ID3DXEffect::ApplyParameterBlock.**](id3dxeffect--applyparameterblock.md)
 
 En el [ejemplo EffectParam](https://msdn.microsoft.com/library/Ee417535(v=VS.85).aspx), el bloque de parámetros se aplica en la secuencia de representación:
 
@@ -617,7 +617,7 @@ CObj g_aObj[NUM_OBJS];       // Object instances
 
 
 
-El bloque de parámetros establece el valor de los cuatro cambios de Estado justo antes de que se llame a [**ID3DXEffect:: Begin**](id3dxeffect--begin.md) . Los bloques de parámetros son una forma cómoda de establecer varios cambios de estado con una única llamada API.
+El bloque de parámetros establece el valor de los cuatro cambios de estado justo antes de llamar [**a ID3DXEffect::Begin.**](id3dxeffect--begin.md) Los bloques de parámetros son una manera práctica de establecer varios cambios de estado con una sola llamada API.
 
 ## <a name="related-topics"></a>Temas relacionados
 

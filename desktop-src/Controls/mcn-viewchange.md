@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de MCN_VIEWCHANGE (commctrl. h)
-description: Se envía por un control de calendario mensual cuando cambia la vista actual. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: MCN_VIEWCHANGE de notificación (Commctrl.h)
+description: Enviado por un control de calendario mensual cuando cambia la vista actual. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: ee35ac1d-9aeb-4d75-9cef-016487f23602
 keywords:
-- MCN_VIEWCHANGE controles de código de notificación de Windows
+- MCN_VIEWCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abbcad3fdda355ac2795dbe49a89fa4e7c2c5cad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef04fc370d67f6e6c7a4ef854d542584e170ddd05bf7c12a5135c84e97f33875
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799135"
 ---
-# <a name="mcn_viewchange-notification-code"></a>Código de notificación de VIEWCHANGE de MCN \_
+# <a name="mcn_viewchange-notification-code"></a>Código de notificación \_ DE MCN VIEWCHANGE
 
-Se envía por un control de calendario mensual cuando cambia la vista actual. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de calendario mensual cuando cambia la vista actual. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ MCN_VIEWCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMVIEWCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmviewchange) que contiene información sobre la vista actual.
+Puntero a una [**estructura NMVIEWCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmviewchange) que contiene información sobre la vista actual.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

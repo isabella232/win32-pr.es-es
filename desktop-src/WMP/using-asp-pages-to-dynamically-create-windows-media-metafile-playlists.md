@@ -1,19 +1,19 @@
 ---
-title: Usar páginas ASP para crear de forma dinámica listas de reproducción de metarchivos de Windows Media
-description: Usar páginas ASP para crear de forma dinámica listas de reproducción de metarchivos de Windows Media
+title: Usar páginas ASP para crear dinámicamente listas de reproducción Windows de metarchivo multimedia
+description: Usar páginas ASP para crear dinámicamente listas de reproducción Windows de metarchivo multimedia
 ms.assetid: 9abf04a4-33b9-4502-aaf3-e40de06c7b41
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, crear
-- listas de reproducción de metarchivos, crear
+- Windows Listas de reproducción de metarchivos multimedia, crear
+- listas de reproducción de metarchivo, crear
 - listas de reproducción, crear
-- Listas de reproducción de metarchivos de Windows Media, creación dinámica
-- listas de reproducción de metarchivos, creación dinámica
+- Windows Listas de reproducción de metarchivos multimedia, creación dinámica
+- listas de reproducción de metarchivo, creación dinámica
 - listas de reproducción, creación dinámica
-- Listas de reproducción de metarchivos de Windows Media, páginas ASP
-- listas de reproducción de metarchivos, páginas ASP
+- Windows Listas de reproducción de metarchivos multimedia, páginas ASP
+- listas de reproducción de metarchivo, páginas ASP
 - listas de reproducción, páginas ASP
-- crear listas de reproducción de metarchivo de Windows Media
-- creación dinámica de listas de reproducción de metarchivos de Windows Media
+- crear listas Windows de metarchivo multimedia
+- crear dinámicamente listas Windows de metarchivo multimedia
 - páginas ASP
 ms.topic: article
 ms.date: 05/31/2018
@@ -22,26 +22,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0ea3cef88d86078aa95785163d7c2f4b0e57e975
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 096a71a5ffedb353cbfd75fb1b5c23b97065ca96c0d75ac30588c44e7720f779
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762075"
 ---
-# <a name="using-asp-pages-to-dynamically-create-windows-media-metafile-playlists"></a>Usar páginas ASP para crear de forma dinámica listas de reproducción de metarchivos de Windows Media
+# <a name="using-asp-pages-to-dynamically-create-windows-media-metafile-playlists"></a>Usar páginas ASP para crear dinámicamente listas de reproducción Windows de metarchivo multimedia
 
-Puede usar Active Server páginas (archivos ASP o. asp) para generar listas de reproducción de forma dinámica en función de la información proporcionada por los usuarios. Una página ASP es una página web dinámica que se usa junto con Microsoft Internet Information Services (IIS). ASP es un entorno en el que se pueden combinar HTML, scripts y componentes de servidor ActiveX reutilizables para crear soluciones empresariales dinámicas y eficaces basadas en Web. Las páginas ASP habilitan el scripting del lado servidor para IIS con compatibilidad nativa con Microsoft Visual Basic Scripting Edition (VBScript) y Microsoft JScript. En este debate se supone que está familiarizado con ASP y la definición de variables.
+Puede usar Active Server Pages (archivos ASP o .asp) para generar dinámicamente listas de reproducción basadas en la información proporcionada por los usuarios. Una página ASP es una página web dinámica que se usa junto con Microsoft Internet Information Services (IIS). ASP es un entorno en el que puede combinar HTML, scripts y componentes de servidor de ActiveX reutilizables para crear soluciones empresariales dinámicas y eficaces basadas en web. Las páginas ASP habilitan el scripting del lado servidor para IIS con compatibilidad nativa con Microsoft Visual Basic Scripting Edition (VBScript) y Microsoft JScript. En esta discusión se da por supuesto que está familiarizado con ASP y que define variables.
 
-Toda la información de encabezado debe estar incluida en la primera línea de la cadena de página ASP devuelta a Windows Media Player.
+Toda la información de encabezado debe estar contenida en la primera línea de la cadena de página ASP devuelta a Reproductor de Windows Media.
 
-Al usar páginas ASP para generar listas de reproducción, debe especificar los valores para el **ContentType** del objeto de **respuesta** y las propiedades **Expires** en la página ASP debido a problemas de latencia con Windows Media Player. El valor **Response. ContentType** debe ser una extensión de nombre de archivo válida para los metaarchivos de Windows Media. Entre los valores aceptables se incluyen WMA, Wax, WMV, WVX, ASF y ASX.
+Al usar páginas ASP para generar listas de  reproducción, debe especificar  valores para **contentType** del objeto Response y expira las propiedades en la página ASP debido a problemas de latencia con Reproductor de Windows Media. El **valor Response.ContentType** debe ser una extensión de nombre de archivo válida para Windows metarchivos multimedia. Los valores aceptables son wma, wma, wmv, wvx, asf y asx.
 
-La propiedad **Response. Expires** especifica el período de tiempo, en segundos, que Windows Media Player almacena en caché el archivo de lista de reproducción. Si se especifica un valor de cero, Windows Media Player solicita una nueva lista de reproducción del servidor cada vez que el usuario actualiza la página.
+La **propiedad Response.expires** especifica el tiempo, en segundos, que Reproductor de Windows Media almacena en caché el archivo de lista de reproducción. Si se especifica un valor de cero, Reproductor de Windows Media solicitar una nueva lista de reproducción del servidor cada vez que el usuario actualiza la página.
 
-Vea el SDK de la plataforma para obtener más información sobre cómo usar el objeto de **respuesta** en páginas de Active Server.
+Consulte el SDK de plataforma para obtener más información sobre el uso del **objeto Response** en Active Server Pages.
 
-El código siguiente es un ejemplo de una página ASP que se usa para generar una lista de reproducción de metarchivo de Windows Media.
+El código siguiente es un ejemplo de una página ASP que se usa para generar una lista Windows de metarchivo multimedia.
 
 
 ```XML
@@ -61,12 +61,12 @@ El código siguiente es un ejemplo de una página ASP que se usa para generar un
 
 <dl> <dt>
 
-[**Crear listas de reproducción de metarchivo**](creating-metafile-playlists.md)
+[**Creación de listas de reproducción de metarchivo**](creating-metafile-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

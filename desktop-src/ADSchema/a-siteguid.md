@@ -1,11 +1,11 @@
 ---
-title: 'Site: atributo GUID'
+title: Atributo GUID de sitio
 description: Identificador único de un sitio.
 ms.assetid: 1baa967e-5aa3-495f-aa4f-14eac74f70e4
 ms.tgt_platform: multiple
 keywords:
-- Site-GUID atributo AD Schema
-- siteGUID esquema de AD de atributos
+- Esquema de AD de atributo GUID de sitio
+- Esquema de AD del atributo siteGUID
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3932eb2ced2fe14480010c1120266619cc34456
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e65d4623c97f112285258254ef0029a35e7b8e966b3c929f1e9414b9ad588870
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836285"
 ---
-# <a name="site-guid-attribute"></a>Site: atributo GUID
+# <a name="site-guid-attribute"></a>Atributo GUID de sitio
 
 Identificador único de un sitio.
 
@@ -30,13 +30,13 @@ Identificador único de un sitio.
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | GUID de sitio                                             |
-| Nombre para mostrar de LDAP | siteGUID                                              |
-| Tamaño              | 16 bytes                                              |
-| Actualizar privilegio  | El sistema establece este valor.                      |
-| Frecuencia de actualización  | Siempre que se crea un nuevo sitio.                       |
+| Ldap-Display-Name | siteGUID                                              |
+| Size              | 16 bytes                                              |
+| Privilegio actualizar  | El sistema establece este valor.                      |
+| Frecuencia de actualización  | Cada vez que se crea un nuevo sitio.                       |
 | Attribute-Id      | 1.2.840.113556.1.4.362                                |
-| System-ID-GUID    | 3e978924-8c01-11d0-afda-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 3e978924-8c01-11d0-afda-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Identificador único de un sitio.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 16                                        |
 | Range-Upper            | 16                                        |
 | Search-Flags           | 0x00000000                                |
@@ -76,13 +76,13 @@ Identificador único de un sitio.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 16                                        |
 | Range-Upper            | 16                                        |
 | Search-Flags           | 0x00000000                                |
@@ -97,13 +97,13 @@ Identificador único de un sitio.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 16                                        |
 | Range-Upper            | 16                                        |
 | Search-Flags           | 0x00000000                                |
@@ -118,13 +118,13 @@ Identificador único de un sitio.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 16                                        |
 | Range-Upper            | 16                                        |
 | Search-Flags           | 0x00000000                                |
@@ -139,13 +139,13 @@ Identificador único de un sitio.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 16                                        |
 | Range-Upper            | 16                                        |
 | Search-Flags           | 0x00000000                                |
@@ -160,13 +160,13 @@ Identificador único de un sitio.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 16                                        |
 | Range-Upper            | 16                                        |
 | Search-Flags           | 0x00000000                                |

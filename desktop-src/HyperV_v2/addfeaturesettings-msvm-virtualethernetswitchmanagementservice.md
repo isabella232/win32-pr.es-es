@@ -1,7 +1,7 @@
 ---
-description: Agrega configuraciones de características a la configuración de un puerto de conmutador Ethernet.
+description: Agrega la configuración de características a la configuración de un puerto de conmutador Ethernet.
 ms.assetid: 628a6546-cc78-4fde-be0c-533a2c3f9483
-title: Método AddFeatureSettings de la clase Msvm_VirtualEthernetSwitchManagementService
+title: Método AddFeatureSettings de la Msvm_VirtualEthernetSwitchManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: e3b46a26d3c67f5efce4944c8b2e874febced32e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 679e4dbba4b8d3e90691955a0642f9a22692d73824059419f5faceacc85abaf1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104002021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829665"
 ---
-# <a name="addfeaturesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método AddFeatureSettings de la \_ clase VirtualEthernetSwitchManagementService de MSVM
+# <a name="addfeaturesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método AddFeatureSettings de la clase \_ VirtualEthernetSwitchManagementService de Msvm
 
-Agrega configuraciones de características a la configuración de un puerto de conmutador Ethernet.
+Agrega la configuración de características a la configuración de un puerto de conmutador Ethernet.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ uint32 AddFeatureSettings(
 
 <dl> <dt>
 
-*AffectedConfiguration* \[ de\]
+*AffectedConfiguration* \[ En\]
 </dt> <dd>
 
-Una referencia a una clase derivada de [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)) que representa el puerto del conmutador Ethernet afectado o la configuración del conmutador Ethernet.
+Referencia a una clase [**derivada \_ CIM SettingData**](/previous-versions//cc136911(v=vs.85)) que representa el puerto de conmutador Ethernet afectado o la configuración del conmutador Ethernet.
 
 </dd> <dt>
 
-*FeatureSettings* \[ de\]
+*FeatureSettings* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas que contiene una instancia incrustada de una clase derivada de la clase [**MSVM \_ FeatureSettingData**](msvm-featuresettingdata.md) , que describe la configuración de características que se va a agregar a la configuración del puerto del conmutador.
+Matriz de cadenas que contienen una instancia incrustada de una clase derivada de la clase [**\_ FeatureSettingData de Msvm,**](msvm-featuresettingdata.md) que describe la configuración de características que se va a agregar a la configuración del puerto del conmutador.
 
 </dd> <dt>
 
-*ResultingFeatureSettings* \[ enuncia\]
+*ResultingFeatureSettings* \[ out\]
 </dt> <dd>
 
-Una matriz de referencias a las instancias de la clase [**MSVM \_ FeatureSettingData**](msvm-featuresettingdata.md) que representan la configuración de características agregada.
+Matriz de referencias a instancias de la clase [**\_ FeatureSettingData de Msvm**](msvm-featuresettingdata.md) que representan la configuración de características agregada.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -85,7 +85,7 @@ Este método devuelve uno de los valores siguientes.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -97,10 +97,10 @@ Este método devuelve uno de los valores siguientes.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -109,10 +109,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -127,7 +127,7 @@ Este método devuelve uno de los valores siguientes.
 [**RemoveFeatureSettings**](removefeaturesettings-msvm-virtualethernetswitchmanagementservice.md)
 </dt> <dt>
 
-[**MSVM \_ VirtualEthernetSwitchManagementService**](msvm-virtualethernetswitchmanagementservice.md)
+[**Msvm \_ VirtualEthernetSwitchManagementService**](msvm-virtualethernetswitchmanagementservice.md)
 </dt> </dl>
 
  

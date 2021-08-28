@@ -1,31 +1,31 @@
 ---
-title: Tipos enumerados NDF
-description: Los tipos enumerados siguientes admiten el marco de diagnóstico de redes (NDF)
+title: Tipos enumerados de NDF
+description: Los siguientes tipos enumerados admiten Marco de diagnóstico de redes (NDF)
 ms.assetid: ed50af4b-1b0b-4005-b052-ff7a2695f659
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2972cf773bae4bff97c5091b54e50c6bf481c875
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 703b1ffff224fffa31d3a5f748dd096be327bb4787e75325abae7071e40ea16c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802406"
 ---
-# <a name="ndf-enumerated-types"></a>Tipos enumerados NDF
+# <a name="ndf-enumerated-types"></a>Tipos enumerados de NDF
 
-Los tipos enumerados siguientes admiten el marco de diagnóstico de redes (NDF):
+Los siguientes tipos enumerados admiten Marco de diagnóstico de redes (NDF):
 
--   [**tipo de atributo \_**](/windows/win32/api/ndattrib/ne-ndattrib-attribute_type)
--   [**Estado de diagnóstico \_**](/windows/win32/api/ndhelper/ne-ndhelper-diagnosis_status)
--   [**tipo de problema \_**](/windows/win32/api/ndhelper/ne-ndhelper-problem_type)
--   [**REPARAR \_ riesgo**](/windows/win32/api/ndattrib/ne-ndattrib-repair_risk)
--   [**Estado de reparación \_**](/windows/win32/api/ndhelper/ne-ndhelper-repair_status)
--   [**ámbito de reparación \_**](/windows/win32/api/ndattrib/ne-ndattrib-repair_scope)
--   [**\_tipo de información de la interfaz de usuario \_**](/windows/win32/api/ndattrib/ne-ndattrib-ui_info_type)
+-   [**TIPO DE \_ ATRIBUTO**](/windows/win32/api/ndattrib/ne-ndattrib-attribute_type)
+-   [**ESTADO DE \_ DIAGNÓSTICO**](/windows/win32/api/ndhelper/ne-ndhelper-diagnosis_status)
+-   [**TIPO DE \_ PROBLEMA**](/windows/win32/api/ndhelper/ne-ndhelper-problem_type)
+-   [**RIESGO DE \_ REPARACIÓN**](/windows/win32/api/ndattrib/ne-ndattrib-repair_risk)
+-   [**ESTADO DE \_ REPARACIÓN**](/windows/win32/api/ndhelper/ne-ndhelper-repair_status)
+-   [**ÁMBITO DE \_ REPARACIÓN**](/windows/win32/api/ndattrib/ne-ndattrib-repair_scope)
+-   [**TIPO DE \_ INFORMACIÓN DE INTERFAZ DE \_ USUARIO**](/windows/win32/api/ndattrib/ne-ndattrib-ui_info_type)
 
- 
+ 
 
- 
+ 
 
 
 

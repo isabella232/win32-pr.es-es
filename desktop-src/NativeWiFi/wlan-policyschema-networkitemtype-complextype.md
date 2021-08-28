@@ -1,7 +1,7 @@
 ---
 description: Especifica el nombre y el tipo de una red inalámbrica.
 ms.assetid: 839afae0-b8e1-489f-8811-19a82c173627
-title: Tipo complejo de networkItemType
+title: tipo complejo networkItemType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5db7c5fc4d9b5227d9cd29c5e2dfc69da6fad139
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c5a08eafebc81a1ff9f18c3d4c2cc9df9c096ac0fef9c10ff1caf1142a1ecf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800195"
 ---
-# <a name="networkitemtype-complex-type"></a>Tipo complejo de networkItemType
+# <a name="networkitemtype-complex-type"></a>tipo complejo networkItemType
 
-El tipo complejo de networkItemType especifica el nombre y el tipo de una red inalámbrica.
+El tipo complejo networkItemType especifica el nombre y el tipo de una red inalámbrica.
 
 ``` syntax
 <xs:complexType name="networkItemType">
@@ -48,7 +48,7 @@ El tipo complejo de networkItemType especifica el nombre y el tipo de una red in
 
 | Elemento                                                                      | Tipo                                                                    | Descripción                                                   |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------|
-| [**networkName**](wlan-policyschema-networkname-networkitemtype-element.md) | [**networkNameType**](wlan-policyschema-networknametype-simpletype.md) | El identificador del conjunto de servicios (SSID) de la red. <br/> |
+| [**networkName**](wlan-policyschema-networkname-networkitemtype-element.md) | [**networkNameType**](wlan-policyschema-networknametype-simpletype.md) | Identificador del conjunto de servicios (SSID) de la red. <br/> |
 | [**networkType**](wlan-policyschema-networktype-networkitemtype-element.md) | [**networkTypeType**](wlan-policyschema-networktypetype-simpletype.md) | El tipo de red. <br/>                                 |
 
 
@@ -59,8 +59,8 @@ El tipo complejo de networkItemType especifica el nombre y el tipo de una red in
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Enumeración WINBIO_CREDENTIAL_TYPE (Winbio \_ Types. h)
+title: WINBIO_CREDENTIAL_TYPE enumeración (Winbio \_ types.h)
 description: Define las marcas que se pueden usar para filtrar por el tipo de credencial.
 ms.assetid: 7ef2d4b3-e1f9-46a0-8fc2-0e8660805ac3
 keywords:
-- WINBIO_CREDENTIAL_TYPE enumeración Plataforma de biometría de Windows API
+- WINBIO_CREDENTIAL_TYPE enumeración Windows BIOMETRIC Framework API
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae41693db264308d33bc30191bdb73007b6b2dba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d559d97022f6c240e8a310adef829d47799683ad214fd0bfb0b54c6ec66cf5c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119867975"
 ---
-# <a name="winbio_credential_type-enumeration"></a>\_Enumeración de tipo de credencial WINBIO \_
+# <a name="winbio_credential_type-enumeration"></a>Enumeración \_ CREDENTIAL TYPE de WINBIO \_
 
-Define las marcas que se pueden usar para filtrar por el tipo de credencial. Esta enumeración la usan las funciones [**WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential), [**WinBioRemoveCredential**](/windows/desktop/api/Winbio/nf-winbio-winbioremovecredential)y [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate) .
+Define las marcas que se pueden usar para filtrar por el tipo de credencial. Esta enumeración la usan las [**funciones WinBioSetCredential**](/windows/desktop/api/Winbio/nf-winbio-winbiosetcredential), [**WinBioRemoveCredential**](/windows/desktop/api/Winbio/nf-winbio-winbioremovecredential)y [**WinBioGetCredentialState.**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,14 +41,14 @@ typedef enum _WINBIO_CREDENTIAL_TYPE {
 
 <dl> <dt>
 
-<span id="WINBIO_CREDENTIAL_PASSWORD"></span><span id="winbio_credential_password"></span>**contraseña de la \_ credencial WINBIO \_**
+<span id="WINBIO_CREDENTIAL_PASSWORD"></span><span id="winbio_credential_password"></span>**CONTRASEÑA DE \_ CREDENCIALES DE \_ WINBIO**
 </dt> <dd>
 
 Filtra las credenciales de contraseña.
 
 </dd> <dt>
 
-<span id="WINBIO_CREDENTIAL_ALL"></span><span id="winbio_credential_all"></span>**WINBIO \_ credencial \_ All**
+<span id="WINBIO_CREDENTIAL_ALL"></span><span id="winbio_credential_all"></span>**WINBIO \_ CREDENTIAL \_ ALL**
 </dt> <dd>
 
 Filtra todas las credenciales.
@@ -61,9 +61,9 @@ Filtra todas las credenciales.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ Filtra todas las credenciales.
 
 <dl> <dt>
 
-[Enumeraciones de aplicación cliente](client-application-enumerations.md)
+[Enumeraciones de aplicaciones cliente](client-application-enumerations.md)
 </dt> <dt>
 
 [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate)

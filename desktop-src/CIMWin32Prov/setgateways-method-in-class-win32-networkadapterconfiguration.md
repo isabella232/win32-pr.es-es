@@ -1,8 +1,8 @@
 ---
-description: SetGateways &\# 32; Método de clase WMI especifica una lista de puertas de enlace para enrutar paquetes a una subred diferente de la subred a la que está conectado el adaptador de red.
+description: SetGateways &\# 32; El método de clase WMI especifica una lista de puertas de enlace para enrutar paquetes a una subred diferente de la subred a la que está conectado el adaptador de red.
 ms.assetid: 240f7aff-7a07-4e0d-af30-7bcabb68c736
 ms.tgt_platform: multiple
-title: Método SetGateways de la clase Win32_NetworkAdapterConfiguration
+title: Método SetGateways de la Win32_NetworkAdapterConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 215bfa736a0f9d67ae587ac1f0e1b4aa394b85d9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 190076822a181d7b0731cb1e7b42eb0cd9d35e37c64aa0736245d1e58994763b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759725"
 ---
-# <a name="setgateways-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetGateways de la \_ clase NetworkAdapterConfiguration de Win32
+# <a name="setgateways-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetGateways de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetGateways** especifica una lista de puertas de enlace para enrutar paquetes a una subred diferente de la subred a la que está conectado el adaptador de red.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetGateways** especifica una lista de puertas de enlace para enrutar paquetes a una subred diferente de la subred a la que está conectado el adaptador de red.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,34 +43,34 @@ uint32 SetGateways(
 
 <dl> <dt>
 
-*DefaultIPGateway* \[ de\]
+*DefaultIPGateway* \[ En\]
 </dt> <dd>
 
-Lista de direcciones IP a las puertas de enlace en las que se enrutan los paquetes de red.
+Lista de direcciones IP a puertas de enlace en las que se enrutados los paquetes de red.
 
 </dd> <dt>
 
-*GatewayCostMetric* \[ en, opcional\]
+*GatewayCostMetric* \[ in, opcional\]
 </dt> <dd>
 
-Asigna un valor que oscila entre 1 y 9999, que se usa para calcular las rutas más rápidas y confiables. Los valores de este parámetro se corresponden con los valores del parámetro *DefaultIPGateway* . El valor predeterminado de una puerta de enlace es 1.
+Asigna un valor que oscila entre 1 y 9999, que se usa para calcular las rutas más rápidas y confiables. Los valores de este parámetro se corresponden con los valores del *parámetro DefaultIPGateway.* El valor predeterminado de una puerta de enlace es 1.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere un reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio, y cualquier otro valor si se produce un error. Para obtener más información sobre los códigos de error, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere un reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio y cualquier otro valor si se produce un error. Para obtener más información sobre los códigos de error, vea [**Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Finalización correcta, no se requiere ningún reinicio**
+**Finalización correcta, no se requiere reinicio**
 </dt> <dd>
 
 0
 
 </dd> <dt>
 
-**Finalización correcta, se requiere un reinicio**
+**Finalización correcta, reinicio necesario**
 </dt> <dd>
 
 1
@@ -82,7 +82,7 @@ Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requi
 
 64
 
-El método no se admite cuando la NIC está en modo DHCP.
+Método no admitido cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**Se produjo un error al procesar una instancia devuelta**
+**Error al procesar una instancia que se devolvió**
 </dt> <dd>
 
 67
@@ -114,7 +114,7 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**Se especificaron más de 5 puertas de enlace**
+**Más de 5 puertas de enlace especificadas**
 </dt> <dd>
 
 69
@@ -135,7 +135,7 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**Se produjo un error al obtener acceso al registro para obtener la información solicitada.**
+**Error al acceder al Registro para obtener la información solicitada**
 </dt> <dd>
 
 72
@@ -156,7 +156,7 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**No hay definido ningún servidor WINS principal/secundario**
+**No se ha definido ningún servidor WINS principal o secundario**
 </dt> <dd>
 
 75
@@ -177,7 +177,7 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**No se pudo copiar el archivo**
+**Error de copia de archivos**
 </dt> <dd>
 
 78
@@ -205,14 +205,14 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**No se puede renovar la concesión DHCP**
+**No se puede renovar la concesión dhcp**
 </dt> <dd>
 
 82
 
 </dd> <dt>
 
-**No se puede liberar la concesión DHCP**
+**No se puede liberar la concesión dhcp**
 </dt> <dd>
 
 83
@@ -233,14 +233,14 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**Error de límite de número de trama/red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -261,7 +261,7 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**Parámetro fuera de los límites**
+**Parámetro fuera de límites**
 </dt> <dd>
 
 90
@@ -275,7 +275,7 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**Memoria agotada**
+**No hay memoria suficiente**
 </dt> <dd>
 
 92
@@ -317,14 +317,14 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> <dt>
 
-**No se pudieron liberar o renovar todas las concesiones DHCP**
+**No todas las concesiones DHCP se podrían liberar o renovar**
 </dt> <dd>
 
 98
 
 </dd> <dt>
 
-**DHCP no está habilitado en el adaptador**
+**DHCP no habilitado en el adaptador**
 </dt> <dd>
 
 100
@@ -338,19 +338,19 @@ El método no se admite cuando la NIC está en modo DHCP.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método solo funciona cuando la tarjeta de interfaz de red (NIC) está en modo de dirección IP estática.
+Este método solo funciona cuando la tarjeta de interfaz de red (NIC) está en modo IP estático.
 
-Para borrar la puerta de enlace, establezca la puerta de enlace en la misma dirección IP que usa en [**EnableStatic**](enablestatic-method-in-class-win32-networkadapterconfiguration.md).
+Para borrar la puerta de enlace, establezca la puerta de enlace en la misma dirección IP que usa en [**EnableStatic.**](enablestatic-method-in-class-win32-networkadapterconfiguration.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de VBScript [modificar las puertas de enlace para un adaptador de red](https://Gallery.TechNet.Microsoft.Com/9ea7670b-f68f-4efb-9cd2-7c299a8f657f) se configuran dos puertas de enlace para un adaptador de red.
+El [ejemplo modificar las puertas de enlace de](https://Gallery.TechNet.Microsoft.Com/9ea7670b-f68f-4efb-9cd2-7c299a8f657f) un adaptador de red de VBScript configura dos puertas de enlace para un adaptador de red.
 
-En el ejemplo de la [asignación de una dirección IP estática](https://Gallery.TechNet.Microsoft.Com/8979c752-8288-4a18-b5ed-f3b79f013f4a) de VBScript se establece la dirección IP y la puerta de enlace de un equipo.
+El [ejemplo de VBScript](https://Gallery.TechNet.Microsoft.Com/8979c752-8288-4a18-b5ed-f3b79f013f4a) Asignar una dirección IP estática establece la dirección IP y la puerta de enlace de un equipo.
 
-La [dirección IP estática y, a continuación, unirse a un dominio](https://Gallery.TechNet.Microsoft.Com/Static-IP-and-then-join-to-130d4b8a) de ejemplo de PowerShell ayuda en la reconstrucción de máquinas.
+La [dirección IP estática y, a continuación, unirse a un dominio de](https://Gallery.TechNet.Microsoft.Com/Static-IP-and-then-join-to-130d4b8a) ejemplo de PowerShell ayudan a recompilar las máquinas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -360,8 +360,8 @@ La [dirección IP estática y, a continuación, unirse a un dominio](https://Gal
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -370,16 +370,16 @@ La [dirección IP estática y, a continuación, unirse a un dominio](https://Gal
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
+[**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas de WMI: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas wmi: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tareas de WMI: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Compatibilidad con IPv6 e IPv4 en WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

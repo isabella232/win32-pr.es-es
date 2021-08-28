@@ -1,6 +1,6 @@
 ---
-title: Cambiar los identificadores de información (UIAutomationClient. h)
-description: En este tema se describen las constantes con nombre que se usan para identificar la información de cambio de Microsoft UI Automation.
+title: Identificadores de información de cambio (UIAutomationClient.h)
+description: En este tema se describen las constantes con nombre que se usan para identificar la Automatización de la interfaz de usuario de cambios de Microsoft.
 ms.assetid: 583A1FA3-68E5-419E-8E38-2B239928FF75
 topic_type:
 - apiref
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f3e27951f3b9b348583821ddc62bd3dddd5de58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf9cf397f4f1bc2ea10291b46d21c32b0b32a61609e9f3a33272170f4debdde3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759665"
 ---
-# <a name="change-info-identifiers"></a>Cambiar los identificadores de información
+# <a name="change-info-identifiers"></a>Cambiar identificadores de información
 
-En este tema se describen las constantes con nombre que se usan para identificar la información de cambio de Microsoft UI Automation.
+En este tema se describen las constantes con nombre que se usan para identificar la Automatización de la interfaz de usuario de cambios de Microsoft.
 
 <dl> <dt>
 
@@ -44,9 +44,9 @@ Cadena que describe el significado del cambio desde el punto de vista de la apli
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                            |
-| Encabezado<br/>                   | <dl> <dt>UIAutomationClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                            |
+| Header<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

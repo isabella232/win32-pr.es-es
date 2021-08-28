@@ -1,21 +1,21 @@
 ---
-description: Obtenga información sobre el elemento JobStapleAllDocuments, que describe las características de estampación de la salida del trabajo.
+description: Obtenga información sobre el elemento JobStapleAllDocuments, que describe las características de escalonamiento de la salida del trabajo.
 ms.assetid: a6721c13-a3dc-4273-b40f-2a28184b04a9
 title: JobStapleAllDocuments
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f9598f09181a225bf10d097b8c2aedaf19373a1
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 17a6d87e814665d9e9ff8433cae7734da24b6f5a8bce674fee1bd5fe7e2a7f2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845905"
 ---
 # <a name="jobstaplealldocuments"></a>JobStapleAllDocuments
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe las características de escalonamiento de la salida. Todos los documentos del trabajo se apilen juntos. Las palabras clave JobStapleAllDocuments y DocumentStaple son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
+Describe las características de estapling de la salida. Todos los documentos del trabajo se apilen juntos. Las palabras clave JobStapleAllDocuments y DocumentStaple son mutuamente excluyentes. Es el controlador quien determina el control de restricciones entre estas palabras clave.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -25,7 +25,7 @@ Describe las características de escalonamiento de la salida. Todos los document
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                             |
 | Prefijo de ámbito <br/> | Trabajo<br/>                                                                 |
@@ -67,9 +67,9 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos          | Unidad                       | Valores admitidos                                                                                                                                                                      | Resumen                                                                                                                                               |
 |------------------------------------|--------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/>  | Characters<br/>      | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                                    |
+| \_OptionName\_<br/>          | string<br/>  | Characters<br/>      | Nombre completo válido tal y como lo definen los [espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                                                                                                    |
 | \_IdentityOptionValue\_<br/> | string<br/>  | N/D<br/>             | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>                                                                          |
-| \_AngleValue\_<br/>          | integer<br/> | grados<br/>         | Mayor que 0.<br/>                                                                                                                                                            | Especifica el ángulo de la grapa, en relación con el ancho de PageImageableSize. El ángulo de la grapa se mide en sentido contrario a las agujas del reloj.<br/> |
+| \_AngleValue\_<br/>          | integer<br/> | grados<br/>         | Mayor que 0.<br/>                                                                                                                                                            | Especifica el ángulo de la grapa, en relación con el ancho de PageImageableSize. El ángulo de los ángulos se mide en sentido contrario a las agujas del reloj.<br/> |
 | \_SheetCapacityValue\_<br/>  | integer<br/> | hojas de medios<br/> | Mayor que 0.<br/>                                                                                                                                                            | Especifica el número de hojas admitidas por la opción de stapling para el elemento MediaType seleccionado actualmente.<br/>                                          |
 
 
@@ -78,7 +78,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobStapleAllDocuments">
@@ -179,7 +179,7 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  
