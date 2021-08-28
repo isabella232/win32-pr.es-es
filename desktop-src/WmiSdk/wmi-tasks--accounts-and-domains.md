@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bacf37ebab07ab60e347efa1645c3cf320700fb3
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 86ed2974895b9688ba635dcc174b46ff32589f39
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884696"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630186"
 ---
 # <a name="wmi-tasks-accounts-and-domains"></a>Tareas wmi: cuentas y dominios
 
-Las tareas administrativas de cuenta y dominio obtienen información como el dominio del equipo o el usuario que ha iniciado sesión actualmente. Muchas de estas tareas se realizan mejor con scripts [ADSI.](/windows/desktop/ADSI/active-directory-service-interfaces-adsi) Para obtener más información y otros ejemplos, consulte el repositorio de [scripts de Scriptcenter](https://www.microsoft.com/technet/scriptcenter) de TechNet.
+Las tareas administrativas de cuenta y dominio obtienen información como el dominio del equipo o el usuario que ha iniciado sesión actualmente. Muchas de estas tareas se realizan mejor con scripts [ADSI.](/windows/desktop/ADSI/active-directory-service-interfaces-adsi) Para obtener más información y otros ejemplos, vea El repositorio de scripts de TechNet [ScriptCenter.](https://www.microsoft.com/technet/scriptcenter)
 
 Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
@@ -28,7 +28,7 @@ En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt al archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
 2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
 4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
@@ -112,7 +112,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -250,7 +250,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -324,7 +324,7 @@ foreach($computer in $computers) {
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {

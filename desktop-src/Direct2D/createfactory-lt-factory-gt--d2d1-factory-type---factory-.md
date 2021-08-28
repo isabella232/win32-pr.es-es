@@ -1,9 +1,9 @@
 ---
 title: Función D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory) (D2d1.h)
-description: Crea un objeto de generador que se puede usar para crear recursos de Direct2D. | Función D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory ) (D2d1.h)
+description: Crea un objeto de generador que se puede usar para crear recursos de Direct2D. | Función D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory) (D2d1.h)
 ms.assetid: c1c25d51-15ea-4075-a896-bd6501bf68c1
 keywords:
-- Función Direct2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory)
+- Función D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory) Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af5635a6f996ea6cd3af2c3b3022efa054cd27605430c8230143980e00b9abbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f36a5fd244f0dc814de2414b5642fc4f57ca744a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117826474"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883253"
 ---
-# <a name="d2d1createfactoryfactoryd2d1_factory_typefactory-function"></a>Función D2D1CreateFactory <Factory> (D2D1 \_ FACTORY \_ TYPE,Factory \* \* )
+# <a name="d2d1createfactoryltfactorygtd2d1_factory_typefactory-function"></a>Función D2D1CreateFactory &lt; Factory &gt; (D2D1 \_ FACTORY \_ TYPE,Factory \* \* )
 
 Crea un objeto de generador que se puede usar para crear recursos de Direct2D.
 
@@ -87,10 +87,10 @@ HRESULT DemoApp::CreateDeviceIndependentResources()
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
+| Encabezado<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
 | Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 

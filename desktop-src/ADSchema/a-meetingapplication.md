@@ -26,7 +26,7 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | meetingApplication                          |
 | Ldap-Display-Name | meetingApplication                          |
@@ -35,7 +35,7 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.573                      |
 | System-Id-Guid    | 11b6cc83-48c4-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,14 +52,14 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -73,14 +73,14 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -94,14 +94,14 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -115,14 +115,14 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -136,14 +136,14 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
@@ -157,14 +157,14 @@ Este atributo contiene el nombre de la aplicación que se usará para una reuni�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
 | Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
-| System-Only            | False                                   |
-| Es de un solo valor       | False                                   |
-| Está indexado             | False                                   |
-| En el catálogo global      | False                                   |
+| System-Only            | Falso                                   |
+| Es de un solo valor       | Falso                                   |
+| Está indexado             | Falso                                   |
+| En el catálogo global      | Falso                                   |
 | NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |

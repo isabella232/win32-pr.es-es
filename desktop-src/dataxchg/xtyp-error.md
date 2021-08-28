@@ -1,9 +1,9 @@
 ---
-title: XTYP_ERROR transacción (ddeml. h)
-description: Una función de devolución de llamada de Intercambio dinámico de datos (DDE), DdeCallback, recibe la \_ transacción de error XTYP cuando se produce un error crítico.
+title: XTYP_ERROR transacción (Ddeml.h)
+description: Una datos dinámicos Exchange de devolución de llamada (DDE), DdeCallback, recibe la transacción ERROR de XTYP \_ cuando se produce un error crítico.
 ms.assetid: 710daa04-ed83-42e3-a55e-6ccf891a3d52
 keywords:
-- Intercambio de datos de transacciones XTYP_ERROR
+- XTYP_ERROR datos de transacción Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebbad80cb23a37881e8954dee4a80a87f253e499
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce59800723758201b4857b5a3ae0844675347b2d4fd403c77650b36d9275bfb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755985"
 ---
-# <a name="xtyp_error-transaction"></a>\_Transacción de error XTYP
+# <a name="xtyp_error-transaction"></a>Transacción XTYP \_ ERROR
 
-Una función de devolución de llamada de Intercambio dinámico de datos (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe la transacción de **\_ error XTYP** cuando se produce un error crítico.
+Una datos dinámicos Exchange de devolución de llamada (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe la transacción ERROR de **\_ XTYP** cuando se produce un error crítico.
 
 
 ```C++
@@ -48,48 +48,48 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *hconv* 
 </dt> <dd>
 
-Identificador de la conversación asociada al error. Este parámetro es **null** si el error no está asociado a una conversación.
+Identificador de la conversación asociada al error. Este parámetro es **NULL** si el error no está asociado a una conversación.
 
 </dd> <dt>
 
 *hsz1* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *hsz2* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *hdata* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData1* 
 </dt> <dd>
 
-Código de error en la palabra de orden inferior. Actualmente, solo se admite el siguiente código de error.
+Código de error en la palabra de orden bajo. Actualmente, solo se admite el código de error siguiente.
 
 
 
 | Value                                                                                                                                                                      | Significado                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="DMLERR_LOW_MEMORY"></span><span id="dmlerr_low_memory"></span><dl> <dt>**DMLERR \_ de \_ memoria insuficiente**</dt> </dl> | Memoria insuficiente; es posible que se pierdan los datos de aconsejar, escribir o ejecutar, o bien se puede producir un error en el sistema.<br/> |
+| <span id="DMLERR_LOW_MEMORY"></span><span id="dmlerr_low_memory"></span><dl> <dt>**MEMORIA BAJA DE DMLERR \_ \_**</dt> </dl> | La memoria es baja; es posible que se pierdan datos de asesoramiento, de ejecución o de ejecución, o bien que se pueda producir un error en el sistema.<br/> |
 
 
 
@@ -100,23 +100,23 @@ Código de error en la palabra de orden inferior. Actualmente, solo se admite el
 *dwData2* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación no puede bloquear este tipo de transacción; se omite el código de retorno del **\_ bloque CBR** . La biblioteca de administración de Intercambio dinámico de datos (DDEML) intenta liberar memoria quitando recursos no críticos. Una aplicación que tenga conversaciones bloqueadas debe desbloquearla.
+Una aplicación no puede bloquear este tipo de transacción; Se omite el código de retorno **\_ CBR BLOCK.** La datos dinámicos Exchange management library (DDEML) intenta liberar memoria mediante la eliminación de recursos no críticos. Una aplicación que haya bloqueado las conversaciones debe desbloquearlas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -124,7 +124,7 @@ Una aplicación no puede bloquear este tipo de transacción; se omite el código
 
 <dl> <dt>
 
-[Información general de la biblioteca de administración de Intercambio dinámico de datos](dynamic-data-exchange-management-library.md)
+[datos dinámicos Exchange información general de la biblioteca de administración de recursos](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_THREADSTATS'
-title: Estructura de JET_THREADSTATS
+description: 'Más información sobre: JET_THREADSTATS estructura'
+title: JET_THREADSTATS estructura
 TOCTitle: JET_THREADSTATS Structure
 ms:assetid: 37e86e14-7719-4991-aae8-bcff1baa80df
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269227(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b84de9a4f64db5dda261b8ee177787f62fd01ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f94c9911fb7ab974f87cfed41e92b53ac0a66cb
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706894"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983568"
 ---
-# <a name="jet_threadstats-structure"></a>Estructura de JET_THREADSTATS
+# <a name="jet_threadstats-structure"></a>JET_THREADSTATS estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_threadstats-structure"></a>Estructura de JET_THREADSTATS
+## <a name="jet_threadstats-structure"></a>JET_THREADSTATS estructura
 
-La estructura **JET_THREADSTATS** contiene estadísticas acumuladas sobre el trabajo realizado por el motor de base de datos en el subproceso actual. Esta información se devuelve a través de [JetGetThreadStats](./jetgetthreadstats-function.md).
+La **JET_THREADSTATS** contiene estadísticas acumulativas sobre el trabajo realizado por el motor de base de datos en el subproceso actual. Esta información se devuelve a [través de JetGetThreadStats.](./jetgetthreadstats-function.md)
 
-**Windows Vista:**  La estructura de **JET_THREADSTATS** se introduce en Windows Vista.
+**Windows Vista:**  La **JET_THREADSTATS** estructura se introduce en Windows Vista.
 
 ```cpp
     typedef struct {
@@ -50,9 +50,9 @@ La estructura **JET_THREADSTATS** contiene estadísticas acumuladas sobre el tra
 
 **cbStruct**
 
-Tamaño de la estructura de **JET_THREADSTATS** devuelta, en bytes.
+Tamaño de la estructura **JET_THREADSTATS,** en bytes.
 
-**Nota:**  La estructura de **JET_THREADSTATS** se expandirá en el futuro para que contenga más estadísticas. Las nuevas estadísticas se agregarán al final de la estructura y se pueden recuperar con un mayor tamaño del búfer de salida. La presencia de estadísticas adicionales se puede inferir con un valor de **cbStruct** mayor.
+**Nota**  La **JET_THREADSTATS** se expandirá en el futuro para contener más estadísticas. Se agregarán nuevas estadísticas al final de la estructura y se pueden recuperar con un mayor tamaño de búfer de salida. La presencia de estadísticas adicionales se puede inferir mediante un valor **cbStruct** mayor.
 
 **cPageReferenced**
 
@@ -60,7 +60,7 @@ Número total de páginas de base de datos visitadas por el motor de base de dat
 
 **cPageRead**
 
-Número total de páginas de base de datos capturadas desde el disco por el motor de base de datos en el subproceso actual.
+Número total de páginas de base de datos capturadas del disco por el motor de base de datos en el subproceso actual.
 
 **cPagePreread**
 
@@ -68,42 +68,29 @@ Número total de páginas de base de datos capturadas previamente desde el disco
 
 **cPageDirtied**
 
-El número total de páginas de base de datos, sin cambios no escritos, modificados por el motor de base de datos en el subproceso actual.
+Número total de páginas de base de datos, sin cambios no escritos, que el motor de base de datos ha modificado en el subproceso actual.
 
 **cPageRedirtied**
 
-El número total de páginas de base de datos, con cambios sin escribir, modificados por el motor de base de datos en el subproceso actual.
+Número total de páginas de base de datos, con cambios no escritos, que el motor de base de datos ha modificado en el subproceso actual.
 
 **cLogRecord**
 
-Número total de entradas del registro de transacciones generadas por el motor de base de datos en el subproceso actual.
+Número total de registros de transacciones generados por el motor de base de datos en el subproceso actual.
 
 **cbLogRecord**
 
-Tamaño total en bytes de las entradas del registro de transacciones generadas por el motor de base de datos en el subproceso actual.
+Tamaño total en bytes de registros de transacciones generados por el motor de base de datos en el subproceso actual.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

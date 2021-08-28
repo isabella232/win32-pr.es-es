@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: campos VistaParam'
-title: Campos VistaParam (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: Campos de VistaParam'
+title: Campos vistaParam (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaParam fields
 ms:assetid: Fields.T:Microsoft.Isam.Esent.Interop.Vista.VistaParam
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistaparam_fields(v=EXCHG.10)
 ms:contentKeyID: 55104336
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6e20c4b784b9a4421c447f24d5736d7c6ef67f41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3684f6d50ba0ca107614276776e375bc90b32a0d0e3e0112dded07b6e9e5bcdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104567432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718855"
 ---
 # <a name="vistaparam-fields"></a>Campos de VistaParam
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [VistaParam](./vistaparam-class.md) expone los siguientes miembros.
+El [tipo VistaParam](./vistaparam-class.md) expone los miembros siguientes.
 
 ## <a name="fields"></a>Campos
 
@@ -35,37 +35,37 @@ El tipo [VistaParam](./vistaparam-class.md) expone los siguientes miembros.
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335379(v=exchg.10).md">CachedClosedTables</a></td>
-<td>Este parámetro controla el número de recursos de árbol B + almacenados en memoria caché por la instancia de después de que la aplicación haya cerrado las tablas que representan. Los valores grandes de este parámetro harán que el motor de base de datos use más memoria, pero aumentará la velocidad con la que la aplicación puede abrir aleatoriamente un gran número de tablas. Esto resulta útil para las aplicaciones que tienen un esquema con un gran número de tablas.</td>
+<td>Este parámetro controla el número de recursos de árbol B+ almacenados en caché por la instancia después de que la aplicación haya cerrado las tablas que representan. Los valores grandes para este parámetro harán que el motor de base de datos use más memoria, pero aumentará la velocidad con la que la aplicación puede abrir aleatoriamente un gran número de tablas. Esto es útil para las aplicaciones que tienen un esquema con un número muy grande de tablas.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335289(v=exchg.10).md">Configuración</a></td>
-<td>Este parámetro expone varios conjuntos de valores predeterminados para todo el conjunto de parámetros del sistema. Cuando este parámetro se establece en una configuración específica, se restablecen los valores predeterminados de todos los valores de los parámetros del sistema para esa configuración. Si se establece la configuración para una instancia específica de, los parámetros globales del sistema no se restablecerán a sus valores predeterminados. Configuración pequeña (0): el motor de base de datos está optimizado para el uso de memoria. Configuración heredada (1): el motor de base de datos tiene sus valores predeterminados tradicionales.</td>
+<td>Este parámetro expone varios conjuntos de valores predeterminados para todo el conjunto de parámetros del sistema. Cuando este parámetro se establece en una configuración específica, todos los valores de parámetros del sistema se restablecen a sus valores predeterminados para esa configuración. Si la configuración se establece para una instancia específica, los parámetros globales del sistema no se restablecerán a sus valores predeterminados. Configuración pequeña (0): el motor de base de datos está optimizado para su uso en memoria. Configuración heredada (1): el motor de base de datos tiene sus valores predeterminados tradicionales.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335380(v=exchg.10).md">EnableAdvanced</a></td>
-<td>Este parámetro se usa para controlar el momento en que el motor de base de datos acepta o rechaza los cambios en un subconjunto de los parámetros del sistema. Este parámetro se usa junto con la <a href="dn335289(v=exchg.10).md">configuración</a> para evitar que algunos parámetros del sistema se establezcan fuera de los valores predeterminados de la configuración seleccionada.</td>
+<td>Este parámetro se usa para controlar cuándo el motor de base de datos acepta o rechaza los cambios en un subconjunto de los parámetros del sistema. Este parámetro se usa junto con <a href="dn335289(v=exchg.10).md">Configuration</a> para evitar que algunos parámetros del sistema se establezcan fuera de los valores predeterminados de la configuración seleccionada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335291(v=exchg.10).md">EnableFileCache</a></td>
-<td>Habilita el uso de la caché de archivos del sistema operativo para todos los archivos administrados.</td>
+<td>Habilite el uso de la caché de archivos del sistema operativo para todos los archivos administrados.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335381(v=exchg.10).md">EnableViewCache</a></td>
-<td>Habilitar el uso de e/s de archivos asignados en memoria para los archivos de base de datos.</td>
+<td>Habilite el uso de E/S de archivos asignados a memoria para los archivos de base de datos.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335292(v=exchg.10).md">KeyMost</a></td>
-<td>Este parámetro de solo lectura indica la longitud máxima permitida de la clave de índice que se puede seleccionar para el tamaño de página de la base de datos actual (tal y como se configura mediante <a href="hh596135(v=exchg.10).md">DatabasePageSize</a>).</td>
+<td>Este parámetro de solo lectura indica la longitud máxima de clave de índice permitido que se puede seleccionar para el tamaño de página de la base de datos actual (según lo configurado <a href="hh596135(v=exchg.10).md">por DatabasePageSize</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335384(v=exchg.10).md">LegacyFileNames</a></td>
-<td>Este parámetro proporciona compatibilidad con versiones anteriores de las convenciones de nomenclatura de los archivos de las versiones anteriores del motor de base de datos.</td>
+<td>Este parámetro proporciona compatibilidad con versiones anteriores con las convenciones de nomenclatura de archivos de versiones anteriores del motor de base de datos.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -152,6 +152,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaParam](./vistaparam-class.md)
+[VistaParam (clase)](./vistaparam-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

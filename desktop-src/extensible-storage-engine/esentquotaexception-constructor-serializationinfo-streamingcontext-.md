@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentQuotaException (SerializationInfo, StreamingContext)'
-title: Constructor EsentQuotaException (SerializationInfo, StreamingContext)
+description: 'Más información sobre: Constructor EsentQuotaException (SerializationInfo, StreamingContext)'
+title: EsentQuotaException constructor (SerializationInfo, StreamingContext)
 TOCTitle: EsentQuotaException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentQuotaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentquotaexception.esentquotaexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 36748053b8b9b48041c07ff51c99c0144093a9ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0845602d0c7f7709b05b8260c1458cf0d79f580638651b142028e667187b354d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119478005"
 ---
-# <a name="esentquotaexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentQuotaException (SerializationInfo, StreamingContext)
+# <a name="esentquotaexception-constructor-serializationinfo-streamingcontext"></a>EsentQuotaException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentQuotaException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentQuotaException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ protected EsentQuotaException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
@@ -78,6 +78,6 @@ protected EsentQuotaException(
 
 [Miembros de EsentQuotaException](./esentquotaexception-members.md)
 
-[Sobrecarga EsentQuotaException](./esentquotaexception-constructor.md)
+[Sobrecarga de EsentQuotaException](./esentquotaexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

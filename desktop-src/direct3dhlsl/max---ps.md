@@ -1,6 +1,6 @@
 ---
-title: Max-PS
-description: Calcula el máximo de los orígenes. | Max-PS
+title: max - ps
+description: Calcula el máximo de los orígenes. | max - ps
 ms.assetid: 3d3bef5b-0ff7-441b-8681-a3f4cde0ae4f
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,47 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c6186f0bd57acd4862a62a4c0a30ae92118b75ce
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: da2c6a21b7d3c415d4ae5339349bf929cbe6818795e2ea22de449aa0bbb237f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986385"
 ---
-# <a name="max---ps"></a>Max-PS
+# <a name="max---ps"></a>max - ps
 
 Calcula el máximo de los orígenes.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| Max DST, src0, SRC1 |
+| max dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| max                   |      |      |      |      | x    | x    | x     | x    | x     |
+| máx.                   |      |      |      |      | x    | x    | x     | x    | x     |
 
 
 
  
 
-En el fragmento de código siguiente se muestran las operaciones realizadas.
+El siguiente fragmento de código muestra las operaciones realizadas.
 
 
 ```

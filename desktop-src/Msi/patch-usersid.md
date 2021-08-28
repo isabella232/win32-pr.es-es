@@ -1,7 +1,7 @@
 ---
-description: La propiedad UserSid devuelve el identificador de seguridad (SID) del usuario en el que esta instancia de revisión está disponible.
+description: La propiedad UserSid devuelve el identificador de seguridad de usuario (SID) en el que está disponible esta instancia de revisión.
 ms.assetid: 841d17d2-5962-41b9-b103-ce22c5555e3b
-title: Patch. UserSid (propiedad)
+title: Patch.UserSid, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: ccaf010a30b0a123896dca9078666c16f1a8313b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 759fa70a10c2c9d4de7e1e7a2a436f26fd7e00439651644c80e08c685b47ad1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558424"
 ---
-# <a name="patchusersid-property"></a>Patch. UserSid (propiedad)
+# <a name="patchusersid-property"></a>Patch.UserSid, propiedad
 
-La propiedad **UserSid** devuelve el identificador de seguridad (SID) del usuario en el que esta instancia de revisión está disponible.
+La **propiedad UserSid** devuelve el identificador de seguridad de usuario (SID) en el que está disponible esta instancia de revisión.
 
 Esta propiedad es de solo lectura.
 
@@ -41,11 +41,11 @@ propVal = Patch.UserSid
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IPatch se define como 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
+| IID<br/>     | IID IPatch se define como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
 
 
@@ -53,10 +53,10 @@ propVal = Patch.UserSid
 
 <dl> <dt>
 
-[**Distribución**](patch-object.md)
+[**Parche**](patch-object.md)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

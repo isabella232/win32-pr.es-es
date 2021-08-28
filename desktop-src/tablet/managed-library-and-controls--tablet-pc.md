@@ -4,12 +4,12 @@ ms.assetid: d9c491c9-d341-4189-9a41-45c4d78322fa
 title: Biblioteca y controles administrados (Tablet PC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d031a97226d200b99a6d36b42e3e4c43862f5b6ac52203ee4ca08d1e5714f2c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81b4096ba54d3cd882b3ee50469d94792b4a46ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119031733"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884279"
 ---
 # <a name="managed-library-and-controls-tablet-pc"></a>Biblioteca y controles administrados (Tablet PC)
 
@@ -19,8 +19,8 @@ Para compilar aplicaciones de Tablet PC en C y Visual Basic .NET, el proyecto de
 
 En Windows Vista, los ensamblados de biblioteca administrada de Tablet PC se instalan de forma predeterminada en dos directorios:
 
--   <systemdrive>: archivos \\ de programa common files directorio de Microsoft Shared \\ \\ \\ Ink
--   <systemdrive>: \\ archivos de programa sdk de Microsoft Windows bin \\ \\ \\ v6.0 \\
+-   &lt;&gt;systemdrive: archivos de programa Archivos comunes Directorio de Microsoft Shared \\ \\ \\ \\ Ink
+-   &lt;&gt;systemdrive: archivos de programa SDK de Microsoft Windows bin \\ \\ \\ \\ v6.0 \\
 
 Para agregar una referencia a las bibliotecas administradas de la plataforma tablet PC Microsoft Visual Studio .NET:
 
@@ -37,7 +37,7 @@ Para agregar una referencia a las API de análisis de entrada de lápiz Visual S
 4.  Haga clic **en Seleccionar** y, a continuación, **en Aceptar.**
 
 > [!Note]  
-> Al compilar aplicaciones que usan Microsoft.Ink en Visual Studio 2005, debe seleccionar **Project**, seleccione **Propiedades,** seleccione **Compilar** y establezca Platform target=x86. Esta opción no está disponible en Microsoft Visual Studio Express productos.
+> Al compilar aplicaciones que usan Microsoft.Ink en Visual Studio 2005, debe seleccionar **Project,**  **propiedades,** compilar y establecer destino de plataforma=x86. Esta opción no está disponible en Microsoft Visual Studio Express productos.
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-Query
+title: Atributo ms-WMI-Query
 description: Una sola consulta WQL.
 ms.assetid: 3fb594fc-d160-4807-a019-3dec56d2262b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-WMI-Query
-- 'msWMI: esquema de AD de atributos de consulta'
+- Esquema de AD del atributo ms-WMI-Query
+- Esquema de AD del atributo msWMI-Query
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5bb5376cf957d46894c6fa2c59016564d28dfb9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 20525051f20b57fe3464031ede74d5d8a46a5e87c3a4614c5217fbc1b429ed49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589535"
 ---
-# <a name="ms-wmi-query-attribute"></a>atributo MS-WMI-Query
+# <a name="ms-wmi-query-attribute"></a>Atributo ms-WMI-Query
 
 Una sola consulta WQL.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-consulta                                |
-| Nombre para mostrar de LDAP | msWMI: consulta                                 |
-| Tamaño              | Menos de 250 caracteres.                   |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-Query                                |
+| Ldap-Display-Name | msWMI-Query                                 |
+| Size              | Menos de 250 caracteres.                   |
+| Privilegio actualizar  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1642                     |
-| System-ID-GUID    | 65fff93e-35e3-45a3-85ae-876c6718297f        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 65fff93e-35e3-45a3-85ae-876c6718297f        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,18 +54,18 @@ Una sola consulta WQL.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**MS-WMI-regla**](c-mswmi-rule.md)<br/> |
+| Clases usadas en        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Una sola consulta WQL.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**MS-WMI-regla**](c-mswmi-rule.md)<br/> |
+| Clases usadas en        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Una sola consulta WQL.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**MS-WMI-regla**](c-mswmi-rule.md)<br/> |
+| Clases usadas en        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Una sola consulta WQL.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**MS-WMI-regla**](c-mswmi-rule.md)<br/> |
+| Clases usadas en        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Una sola consulta WQL.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Clases usadas en        | [**MS-WMI-regla**](c-mswmi-rule.md)<br/> |
+| Clases usadas en        | [**ms-WMI-Rule**](c-mswmi-rule.md)<br/> |
 
 
 

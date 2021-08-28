@@ -1,39 +1,39 @@
 ---
-description: Las métricas se utilizan para medir aspectos del rendimiento de la red y del protocolo.
+description: Las métricas se usan para medir aspectos del rendimiento de la red y del protocolo.
 ms.assetid: ee5faaf6-e230-4084-9829-e8cae8759587
 title: Terminología de red (Windows Sockets 2)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b04e84621cdaec2638762d54f67e5aca7e3d55ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3d0c5fc67932b5c756ae52b9a7ffefef0f18c2728f2b2773de3741d0e5b7d41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794775"
 ---
 # <a name="network-terminology-windows-sockets-2"></a>Terminología de red (Windows Sockets 2)
 
-Las métricas se utilizan para medir aspectos del rendimiento de la red y del protocolo. Los valores de estas métricas en varios escenarios indican el nivel de rendimiento de una aplicación de red. En esta sección se definen los términos y las métricas usados en todo el sector para medir el rendimiento de las aplicaciones de red. Estos términos se usan en el resto de esta guía.
+Las métricas se usan para medir aspectos del rendimiento de la red y del protocolo. Los valores de estas métricas en varios escenarios indican el nivel de rendimiento de una aplicación de red. En esta sección se definen los términos y las métricas usados en todo el sector para medir el rendimiento de las aplicaciones de red. Estos términos se usan en el resto de esta guía.
 
 -   Tiempo de ida y vuelta (RTT)
 
-    Tiempo, en milisegundos, que tarda una solicitud en realizar un recorrido desde un equipo de origen a un equipo de destino y viceversa. Los valores menores indican un mejor rendimiento. Los tiempos de rutas de acceso hacia delante y devueltos no son necesariamente iguales.
+    Tiempo, en milisegundos, para que una solicitud realice un viaje desde un equipo de origen a un equipo de destino y vuelva de nuevo. Los valores más bajos indican un mejor rendimiento. Los tiempos de las rutas de acceso de reenvío y de retorno no son necesariamente iguales.
 
-    Los valores de RTT se ven afectados por la infraestructura de red, la distancia entre los nodos, las condiciones de la red y el tamaño de los paquetes. El tamaño de paquete, la congestión y la carga compresión afectan al RTT cuando se mide en vínculos de baja velocidad, como conexiones de acceso telefónico. Otros factores afectan a RTT, incluida la corrección de errores de reenvío y la compresión de datos, que introducen búferes y colas que aumentan el RTT y, por tanto, reducen el rendimiento.
+    Los valores RTT se ven afectados por la infraestructura de red, la distancia entre los nodos, las condiciones de red y el tamaño del paquete. El tamaño de los paquetes, la congestión y la compresión de carga afectan a RTT cuando se mide en vínculos lentos, como las conexiones de acceso telefónico. Otros factores afectan a RTT, incluida la corrección de errores hacia delante y la compresión de datos, que introducen búferes y colas que aumentan RTT y, por tanto, reducen el rendimiento.
 
 -   Goodput
 
-    Medida de datos de aplicación útiles procesados correctamente por el receptor, en bits por segundo. Goodput habilita la medición del rendimiento eficaz o útil e incluye solo los datos de la aplicación; Los encabezados de paquetes, protocolos y medios se consideran una sobrecarga y no forman parte de goodput.
+    Medida de datos útiles de la aplicación procesados correctamente por el receptor, en bits por segundo. Goodput permite medir el rendimiento eficaz o útil e incluye solo los datos de la aplicación. Los encabezados de paquete, protocolo y multimedia se consideran sobrecarga y no forman parte de goodput.
 
--   Sobrecarga de protocolo
+-   Sobrecarga del protocolo
 
-    Bytes que no son de aplicación, incluidos tramas de protocolo y multimedia, divididos por el número total de bytes transmitidos. El valor se expresa como un porcentaje. Los valores más altos indican un rendimiento más bajo.
+    Bytes no de aplicación, incluidos el protocolo y el marco multimedia, divididos por el número total de bytes transmitidos. El valor se expresa como un porcentaje. Los valores más altos indican un rendimiento más bajo.
 
-    La sobrecarga se calcula en ambas direcciones de esta guía, pero se puede calcular para cada dirección por separado.
+    La sobrecarga se calcula para ambas direcciones en esta guía, pero se puede calcular para cada dirección por separado.
 
--   Bandwidth-Delay producto
+-   Bandwidth-Delay product
 
-    Producto del ancho de banda de bits por segundo de la red y el RTT (en segundos). Este valor equivale al número de bits que se tarda en rellenar el ancho de banda de red disponible. Cuando el valor del producto de retraso de ancho de banda es alto, la pila TCP/IP debe administrar grandes cantidades de datos no confirmados para que la canalización esté completa. El producto de retraso de ancho de banda es una métrica de extremo a extremo de la clave para las aplicaciones de streaming.
+    Producto del ancho de banda de bits por segundo de la red y el RTT (en segundos). Este valor equivale al número de bits que se necesitan para rellenar el ancho de banda de red disponible. Cuando el valor del producto de retraso de ancho de banda es alto, la pila TCP/IP debe controlar grandes cantidades de datos no reconocidos para mantener la canalización llena. El producto de retraso de ancho de banda es una métrica de un extremo a otro clave para las aplicaciones de streaming.
 
  
 

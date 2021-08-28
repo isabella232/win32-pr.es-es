@@ -1,19 +1,19 @@
 ---
-description: Controlar un gráfico de captura
+description: Controlar una captura Graph
 ms.assetid: e7afafca-e993-4096-bad4-399ee6c67fe9
-title: Controlar un gráfico de captura
+title: Controlar una captura Graph
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a00573256c1c010e23dfc598ceca5ac62d772711
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: d678e00452fbf90591fbc187039ddbbc37cc4fde446e2e285c77fcaab415e815
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652145"
 ---
-# <a name="controlling-a-capture-graph"></a>Controlar un gráfico de captura
+# <a name="controlling-a-capture-graph"></a>Controlar una captura Graph
 
-La interfaz [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) del Administrador de gráficos de filtro tiene métodos para ejecutar, detener y pausar todo el gráfico. Sin embargo, si el gráfico de filtros tiene secuencias de captura y vista previa, es probable que quiera controlar las dos secuencias de forma independiente. Por ejemplo, es posible que quiera obtener una vista previa del vídeo sin capturarlo. Puede hacerlo mediante el método [**ICaptureGraphBuilder2::ControlStream.**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-controlstream)
+La interfaz [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) Graph Manager del administrador de filtros tiene métodos para ejecutar, detener y pausar todo el gráfico. Sin embargo, si el gráfico de filtros tiene secuencias de captura y vista previa, es probable que quiera controlar las dos secuencias de forma independiente. Por ejemplo, es posible que quiera obtener una vista previa del vídeo sin capturarlo. Puede hacerlo mediante el método [**ICaptureGraphBuilder2::ControlStream.**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-controlstream)
 
 > [!Note]  
 > Este método no funciona al capturar en un archivo de formato de sistemas avanzados (ASF).
@@ -22,7 +22,7 @@ La interfaz [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediaco
 
 Controlar el flujo de captura
 
-El código siguiente establece la secuencia de captura de vídeo para que se ejecute durante cuatro segundos, comenzando un segundo después de que se ejecute el gráfico:
+El código siguiente establece la secuencia de captura de vídeo para que se ejecute durante cuatro segundos, empezando un segundo después de que se ejecute el gráfico:
 
 
 ```C++
@@ -122,7 +122,7 @@ pBuild->ControlStream(&PIN_CATEGORY_PREVIEW, &MEDIATYPE_Video, pCap,
 
 No importa si la secuencia de vista previa procede de un pin de vista previa en el filtro de captura o del filtro Smart Tee. El **método ControlStream** funciona de cualquier manera.
 
-Sin embargo, en el caso de las patillas de puerto de vídeo, se producirá un error en el método. En ese caso, otro enfoque es ocultar la ventana de vídeo. Consulte el gráfico para **IVideoWindow** y use el método [**IVideoWindow::p ut \_ Visible**](/windows/desktop/api/Control/nf-control-ivideowindow-put_visible) para mostrar u ocultar la ventana.
+Sin embargo, en el caso de los pins de puerto de vídeo, se producirá un error en el método . En ese caso, otro enfoque es ocultar la ventana de vídeo. Consulte el gráfico para **IVideoWindow** y use el método [**IVideoWindow::p ut \_ Visible**](/windows/desktop/api/Control/nf-control-ivideowindow-put_visible) para mostrar u ocultar la ventana.
 
 
 ```C++

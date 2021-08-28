@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: dc034b12a6a3375c9881a1fd3709d78be2e79a15
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1a398a1c87baf9824fc7de1d12f64ea4ae90b9bb
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478241"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987088"
 ---
 # <a name="span-idwwan_profile_v4element_compressionspanmbnprofileextcompression-v4"></a><span id="WWAN_profile_v4.element_Compression"></span>MBNProfileExt \/ ... \/ Compresión (v4)
 
@@ -39,7 +39,7 @@ Para obtener más información, vea la documentación del elemento [**Compressio
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Compression\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <Compression>
@@ -72,7 +72,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

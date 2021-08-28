@@ -1,10 +1,10 @@
 ---
-description: Una solicitud asincrónica para obtener si se usó la fase del sombreador de cálculo para el marco y el evento especificados.
+description: Una solicitud asincrónica para obtener si se usó la fase del sombreador de proceso para el marco y el evento especificados.
 MS-HAID: vspixengine.IPipeLineStagesRequest2\_RequestComputeShaderStageAsync\_DWORD\_EventID\_IPipeLineStagesCallback\_ptr\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IPipeLineStagesRequest2:: RequestComputeShaderStageAsync (método)'
+title: Método IPipeLineStagesRequest2::RequestComputeShaderStageAsync
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: EC5695A6-70B5-4F7D-A235-974A0A59A44F
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ec7fe36a35e73ae2d047be11a2d5cf72f65825f8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b4b831ddd75f8daef7fe58ca0c6de434c81097f6
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495269"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623681"
 ---
-# <a name="span-idvspixengineipipelinestagesrequest2_requestcomputeshaderstageasync_dword_eventid_ipipelinestagescallback_ptr_dword_dwordspanipipelinestagesrequest2requestcomputeshaderstageasync-method"></a><span id="vspixengine.ipipelinestagesrequest2_requestcomputeshaderstageasync_dword_eventid_ipipelinestagescallback_ptr_dword_dword"></span>IPipeLineStagesRequest2:: RequestComputeShaderStageAsync (método)
+# <a name="span-idvspixengineipipelinestagesrequest2_requestcomputeshaderstageasync_dword_eventid_ipipelinestagescallback_ptr_dword_dwordspanipipelinestagesrequest2requestcomputeshaderstageasync-method"></a><span id="vspixengine.ipipelinestagesrequest2_requestcomputeshaderstageasync_dword_eventid_ipipelinestagescallback_ptr_dword_dword"></span>Método IPipeLineStagesRequest2::RequestComputeShaderStageAsync
 
-Una solicitud asincrónica para obtener si se usó la fase del sombreador de cálculo para el marco y el evento especificados.
+Una solicitud asincrónica para obtener si se usó la fase del sombreador de proceso para el marco y el evento especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,28 +43,28 @@ HRESULT RequestComputeShaderStageAsync(
 
 ## <a name="parameters"></a>Parámetros
 
-*Númeromarco*   
+*frameNumber*   
 Marco especificado.
 
-*eventID*   
-El evento especificado.
+*Eventid*   
+Evento especificado.
 
 *requestCallback*   
-Dirección de devolución de llamada que se utiliza para notificar al host los resultados.
+Dirección de devolución de llamada utilizada para notificar al host de resultados.
 
 *requestCookie*   
-Cookie que identifica de forma única la solicitud y que se puede usar para indicar que se va a cancelar.
+Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
 No se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

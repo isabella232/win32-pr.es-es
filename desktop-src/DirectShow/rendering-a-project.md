@@ -1,33 +1,33 @@
 ---
-description: Representar un proyecto
+description: Representación de un Project
 ms.assetid: e4751329-3533-47a4-8390-766512021923
-title: Representar un proyecto
+title: Representación de un Project
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 650d023692167ae9e68ffef0b80c55ffb9b6e633
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a4ea28f1937f54ad093c22dd28f9c672379030a04e53380b0ccd72129442f4cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050625"
 ---
-# <a name="rendering-a-project"></a>Representar un proyecto
+# <a name="rendering-a-project"></a>Representación de un Project
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En esta sección se describe cómo representar un proyecto de edición de vídeo en los [servicios de edición de DirectShow](directshow-editing-services.md) (des). Contiene los temas siguientes.
+En esta sección se describe cómo representar un proyecto de edición de vídeo [en DirectShow Editing Services](directshow-editing-services.md) (DES). Contiene los temas siguientes.
 
 -   [Acerca de los motores de representación](about-the-render-engines.md)
--   [Obtener una vista previa de un proyecto](previewing-a-project.md)
--   [Escribir un proyecto en un archivo](writing-a-project-to-a-file.md)
--   [Proporcionar un tamaño de vídeo personalizado](providing-a-custom-video-resizer.md)
--   [Seleccionar un descodificador en servicios de edición de DirectShow](selecting-a-decoder-in-directshow-editing-services.md)
+-   [Vista previa de un Project](previewing-a-project.md)
+-   [Escribir un Project en un archivo](writing-a-project-to-a-file.md)
+-   [Proporcionar un cambio de tamaño de vídeo personalizado](providing-a-custom-video-resizer.md)
+-   [Selección de un descodificador en DirectShow Editing Services](selecting-a-decoder-in-directshow-editing-services.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar servicios de edición de DirectShow](using-directshow-editing-services.md)
+[Uso de DirectShow Editing Services](using-directshow-editing-services.md)
 </dt> </dl>
 
  

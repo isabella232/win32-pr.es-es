@@ -3,7 +3,7 @@ title: Group, elemento
 description: Representa un control Group que funciona como contenedor para un grupo de elementos.
 ms.assetid: b0d3fcda-7165-40f4-9e57-c7ab88b31711
 keywords:
-- Agrupación de elementos de la cinta de opciones de Windows
+- Group, elemento Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1162055491f61ae6feffa385bbc5015e4f1b66f0
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 86d12ddb781ecf7e1effba1cade8eb00e92fe20b
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442876"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631373"
 ---
 # <a name="group-element"></a>Group, elemento
 
@@ -41,16 +41,16 @@ Representa un control [Group](windowsribbon-controls-group.md) que funciona como
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -72,8 +72,8 @@ Representa un control [Group](windowsribbon-controls-group.md) que funciona como
 <td><strong>SizeDefinition</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Cuando se especifica, el valor de <em>SizeDefinition</em> se restringe a una de las plantillas <a href="windowsribbon-templates.md">de diseño</a> definidas por el marco de la cinta de opciones. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cualquier secuencia de cero o más caracteres.<br/> La longitud máxima es sin enlazar.<br/> </dd> </dl></td>
+<td>Cuando se especifica, el valor de <em>SizeDefinition</em> se restringe a una de las plantillas <a href="windowsribbon-templates.md">de</a> diseño definidas por el marco de la cinta de opciones. <br/> <br/>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cualquier secuencia de cero o más caracteres.<br/> La longitud máxima no está desenlazada.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -87,7 +87,7 @@ Representa un control [Group](windowsribbon-controls-group.md) que funciona como
 | Elemento                                                                             | Descripción                                        |
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
-| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
+| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                       | Puede producirse una o varias veces<br/> <br/> |
 | [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>               | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>           | Puede producirse una o varias veces<br/> <br/> |
@@ -109,7 +109,7 @@ Representa un control [Group](windowsribbon-controls-group.md) que funciona como
 
 | Elemento                                             |
 |-----------------------------------------------------|
-| [**pestaña**](windowsribbon-element-tab.md)<br/> |
+| [**Tabulación**](windowsribbon-element-tab.md)<br/> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 3fb4d6ae050772bb6392e1d94c88ef5bfc23d2ba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d663ac34e74baf7b3f6f4476dde207b1ee05e81ff3bd47fe4b219f2f83efafca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592565"
 ---
 # <a name="iwicbitmapdecoder_getthumbnail_proxy-function"></a>Función IWICBitmapDecoder \_ GetThumbnail \_ Proxy
 
@@ -73,8 +73,8 @@ Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
 | Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 

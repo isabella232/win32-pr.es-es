@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 401c490c667cd8f9842a7ab0429e10a510e3b06e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ddf50b5bb5e65ca60677f5578170b84f744016e9
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466402"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985308"
 ---
 # <a name="jet_api_ptr"></a>JET_API_PTR
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_api_ptr"></a>JET_API_PTR
 
-El **JET_API_PTR** tipo de datos contiene un entero o un valor de puntero.
+El **JET_API_PTR** de datos contiene un entero o un valor de puntero.
 
 ```cpp
     #if defined(_WIN64)
@@ -45,9 +45,9 @@ El **JET_API_PTR** tipo de datos contiene un entero o un valor de puntero.
 
 JET_API_PTR
 
-Al igual **que un tipo** de datos **DWORD_PTR,** el tipo de datos JET_API_PTR se define como 4 bytes en un equipo de 32 bits y 8 bytes en un equipo de 64 bits.
+Al igual **que DWORD_PTR** tipo de datos **JET_API_PTR,** el tipo de datos JET_API_PTR se define como 4 bytes en un equipo de 32 bits y 8 bytes en un equipo de 64 bits.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 El **JET_API_PTR** de datos se usa para definir los siguientes tipos de datos:
 
@@ -64,5 +64,9 @@ El **JET_API_PTR** de datos se usa para definir los siguientes tipos de datos:
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 

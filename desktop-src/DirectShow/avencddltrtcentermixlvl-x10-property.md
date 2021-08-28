@@ -1,19 +1,19 @@
 ---
-description: Especifica el cambio de nivel que se aplica al canal central para LT/RT downmixing. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+description: Especifica el desplazamiento de nivel que se aplica al canal central para la remezclación lt/rt. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 ms.assetid: 976e170d-2941-473b-b48d-3c53ff5251b2
-title: Propiedad AVEncDDLtRtCenterMixLvl_x10 (Codecapi. h)
+title: AVEncDDLtRtCenterMixLvl_x10 propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbeb950e77ada2111c395412b43f687bf8ac1c30
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c18f166ed22942acf5211712ca25708c20e61e88474e565aac3e47021f457a71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103485"
 ---
-# <a name="avencddltrtcentermixlvl_x10-property"></a>\_Propiedad AVEncDDLtRtCenterMixLvl x10
+# <a name="avencddltrtcentermixlvl_x10-property"></a>AvEncDDLtRtCenterMixLvl \_ x10, propiedad
 
-Especifica el cambio de nivel que se aplica al canal central para LT/RT downmixing. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+Especifica el desplazamiento de nivel que se aplica al canal central para la remezclación lt/rt. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
 Esta propiedad es de lectura y escritura.
 
@@ -23,13 +23,13 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-guid"></a>GUID de propiedad
 
-**CODECAPI \_ AVEncDDLtRtCenterMixLvl \_ x10**
+**CODECAPI \_ AVEncDLtRtCenterMixLvl \_ x10**
 
 ## <a name="property-value"></a>Valor de propiedad
 
 El valor se especifica como decibelios (dB) x 10.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad es de lectura y escritura.
 
@@ -39,9 +39,9 @@ Esta propiedad es de lectura y escritura.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Esta propiedad es de lectura y escritura.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

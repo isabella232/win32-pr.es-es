@@ -1,8 +1,8 @@
 ---
-description: Informa de Cuándo se quita un evento como resultado del desbordamiento de la cola de entrega.
+description: Notifica cuándo se descarta un evento como resultado del desbordamiento de la cola de entrega.
 ms.assetid: 7cb1ef3b-3b0a-4f72-96de-862022fd6db8
 ms.tgt_platform: multiple
-title: __EventQueueOverflowEvent (clase)
+title: __EventQueueOverflowEvent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 058b03b8a3311aad805f47a04d20e9f1fa8c2477
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6fd31df9f84883c8b677ea4fef0431ed762b4cec2155cb3d600893a40e3e1d9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612635"
 ---
 # <a name="__eventqueueoverflowevent-class"></a>\_\_Clase EventQueueOverflowEvent
 
-La clase del sistema **\_ \_ EventQueueOverflowEvent** informa cuando se quita un evento como resultado del desbordamiento de la cola de entrega.
+La clase del sistema **\_ \_ EventQueueOverflowEvent** notifica cuándo se quita un evento como resultado del desbordamiento de la cola de entrega.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -47,26 +47,26 @@ class __EventQueueOverflowEvent : __EventDroppedEvent
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ EventQueueOverflowEvent** tiene estos tipos de miembros:
+La **\_ \_ clase EventQueueOverflowEvent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ EventQueueOverflowEvent** tiene estas propiedades.
+La **\_ \_ clase EventQueueOverflowEvent** tiene estas propiedades.
 
 <dl> <dt>
 
 **CurrentQueueSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño actual de la cola, en bytes. Esta propiedad tiene como valor predeterminado 10 MB para todas las colas combinadas.
+Tamaño de cola actual, en bytes. Esta propiedad tiene como valor predeterminado 10 MB para todas las colas combinadas.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Evento de interés. Esta propiedad se hereda de [**\_ \_ EventDroppedEvent**](--eventdroppedevent.md).
+Evento de interés. Esta propiedad se hereda de [**\_ \_ EventDroppedEvent.**](--eventdroppedevent.md)
 
 </dd> <dt>
 
@@ -92,14 +92,14 @@ Tipo de datos: **\_ \_ EventConsumer**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia al consumidor previsto. Esta propiedad se hereda de [**\_ \_ EventDroppedEvent**](--eventdroppedevent.md).
+Referencia al consumidor previsto. Esta propiedad se hereda de [**\_ \_ EventDroppedEvent.**](--eventdroppedevent.md)
 
 </dd> <dt>
 
-**descriptor de seguridad \_**
+**DESCRIPTOR \_ DE SEGURIDAD**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -109,32 +109,32 @@ Descriptor utilizado por el proveedor de eventos para determinar qué usuarios p
 
 </dd> <dt>
 
-**HORA de \_ creación**
+**HORA \_ CREADA**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 segundos después del 1 de enero de 1601. La información tiene el formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](--event.md).
+Valor único que indica la hora a la que se generó el evento. Se trata de un valor de 64 bits que representa el número de intervalos de 100 nanosegundos después del 1 de enero de 1601. La información está en formato de hora universal coordinada (UTC). Esta propiedad se hereda del [**\_ \_ evento**](--event.md).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo los usuarios con privilegios de administrador pueden recibir este evento. La clase **\_ \_ EventQueueOverflowEvent** se deriva de [**\_ \_ EventDroppedEvent**](--eventdroppedevent.md).
+Solo los usuarios con privilegios de administrador pueden recibir este evento. La **\_ \_ clase EventQueueOverflowEvent** se deriva de [**\_ \_ EventDroppedEvent**](--eventdroppedevent.md).
 
-Para obtener más información, vea la propiedad [**MaximumQueueSize**](--eventconsumer.md) en la clase [**\_ \_ EventConsumer**](--eventconsumer.md) y la propiedad [**HighThresholdOnEvents**](/windows/desktop/CIMWin32Prov/win32-wmisetting) en la clase **\_ WMISetting de Win32** .
+Para obtener más información, vea la [**propiedad MaximumQueueSize**](--eventconsumer.md) en la clase [**\_ \_ EventConsumer**](--eventconsumer.md) y la [**propiedad HighThresholdOnEvents**](/windows/desktop/CIMWin32Prov/win32-wmisetting) en la **clase \_ WMISetting de Win32.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

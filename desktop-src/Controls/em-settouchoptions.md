@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETTOUCHOPTIONS (RichEdit. h)
-description: Establece las opciones de toque asociadas a un control Rich Edit.
+title: EM_SETTOUCHOPTIONS mensaje (Richedit.h)
+description: Establece las opciones táctiles asociadas a un control de edición enriquecido.
 ms.assetid: C15036D6-B74F-414D-B731-F1587B616644
 keywords:
-- EM_SETTOUCHOPTIONS controles de mensajes de Windows
+- EM_SETTOUCHOPTIONS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7613679a574955ef726da9fa10e8d919c8fe53b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ea2f372d1e59a76ea13667e994534df1088fe1c78c51c30ac54db1b4dfeed2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048019"
 ---
-# <a name="em_settouchoptions-message"></a>\_Mensaje SETTOUCHOPTIONS em
+# <a name="em_settouchoptions-message"></a>Mensaje \_ EM SETTOUCHOPTIONS
 
-Establece las opciones de toque asociadas a un control Rich Edit.
+Establece las opciones táctiles asociadas a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Establece las opciones de toque asociadas a un control Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Opción de toque que se va a establecer. Este parámetro puede ser uno de los valores siguientes.
+Opción táctil que se establece. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                                        | Significado                                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="RTO_SHOWHANDLES"></span><span id="rto_showhandles"></span><dl> <dt>**RTO \_ SHOWHANDLES**</dt> </dl>          | Mostrar u ocultar los controladores de la agarrador táctil, dependiendo del valor de *lParam*.<br/>                                                                                                                                                       |
-| <span id="RTO_DISABLEHANDLES"></span><span id="rto_disablehandles"></span><dl> <dt>**RTO \_ DISABLEHANDLES**</dt> </dl> | Habilitar o deshabilitar los identificadores de la agarración táctil, dependiendo del valor de *lParam*. Cuando se deshabilitan los identificadores, se ocultan si están visibles y permanecen ocultos hasta que un mensaje **\_ SETTOUCHOPTIONS em** cambia su estado. <br/> |
+| <span id="RTO_SHOWHANDLES"></span><span id="rto_showhandles"></span><dl> <dt>**RTO \_ SHOWHANDLES**</dt> </dl>          | Muestre u oculte los identificadores de control táctil, en función del valor *de lParam*.<br/>                                                                                                                                                       |
+| <span id="RTO_DISABLEHANDLES"></span><span id="rto_disablehandles"></span><dl> <dt>**RTO \_ DISABLEHANDLES**</dt> </dl> | Habilite o deshabilite los controladores de control táctil, en función del valor *de lParam*. Cuando los identificadores están deshabilitados, se ocultan si están visibles y permanecen ocultos hasta que un **mensaje \_ SETTOUCHOPTIONS de EM** cambia su estado. <br/> |
 
 
 
@@ -50,7 +50,7 @@ Opción de toque que se va a establecer. Este parámetro puede ser uno de los va
 *lParam* 
 </dt> <dd>
 
-Establézcalo en **true** para mostrar/habilitar los manipuladores de la selección táctil, o en **false** para ocultar o deshabilitar los controladores de selección táctil.
+Establezca en **TRUE para** mostrar o habilitar los identificadores de selección táctil, o **FALSE** para ocultar o deshabilitar los identificadores de selección táctil.
 
 </dd> </dl>
 
@@ -64,9 +64,9 @@ Este mensaje devuelve cero.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Este mensaje devuelve cero.
 
 <dl> <dt>
 
-[**\_GETTOUCHOPTIONS em**](em-settouchoptions.md)
+[**EM \_ GETTOUCHOPTIONS**](em-settouchoptions.md)
 </dt> </dl>
 
  

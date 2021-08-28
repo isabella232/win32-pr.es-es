@@ -1,7 +1,7 @@
 ---
-description: Los dispositivos portátiles de Windows admiten las siguientes propiedades de audio.
+description: Windows Dispositivos portátiles admite las siguientes propiedades de audio.
 ms.assetid: 5d6c6a95-abb7-4191-a961-bcb30ca96bb6
-title: Propiedades de audio (PortableDevice. h)
+title: Propiedades de audio (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,26 +13,26 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 1bdab201fc987d5bc1aff3638fbb57358115fdce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93ddbee0eb078c1b9d5a1e7c64288e95b47e2bdb0363bf8b7b19cb773129d0ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590415"
 ---
 # <a name="audio-properties"></a>Propiedades de audio
 
-Los dispositivos portátiles de Windows admiten las siguientes propiedades de audio.
+Windows Dispositivos portátiles admite las siguientes propiedades de audio.
 
 
 
 | Propiedad                         | VarType     | Descripción                                                                                                                                                                                                        |
 |----------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_profundidad de \_ bits de audio de WPD \_**       | **VT \_ UI4** | La profundidad de bits del audio.                                                                                                                                                                                        |
-| **velocidad de bits de \_ audio WPD \_**          | **VT \_ UI4** | Velocidad de bits del audio, en bits por segundo.                                                                                                                                                                     |
-| **\_alineación del \_ bloque de audio de WPD \_** | **VT \_ UI4** | La alineación de bloque del archivo de audio, en bytes.                                                                                                                                                                   |
-| **recuento de canales de audio de WPD \_ \_ \_**   | **VT \_ R4**  | El número de canales de este archivo de audio, por ejemplo, 1, 2 o 5,1.                                                                                                                                              |
-| **\_código de \_ formato de audio de WPD \_**     | **VT \_ UI4** | Número de código del formato de onda registrado. Para obtener una lista de formatos de onda registrados, consulte el artículo [registro de códigos FourCC y formatos de onda](https://msdn2.microsoft.com/library/ms867195.aspx) en el sitio web de MSDN. |
+| **PROFUNDIDAD DE \_ BITS DE \_ AUDIO \_ WPD**       | **VT \_ UI4** | Profundidad de bits del audio.                                                                                                                                                                                        |
+| **VELOCIDAD DE \_ BITS DE AUDIO \_ WPD**          | **VT \_ UI4** | Velocidad de bits del audio, en bits por segundo.                                                                                                                                                                     |
+| **ALINEACIÓN DE \_ BLOQUES DE AUDIO \_ WPD \_** | **VT \_ UI4** | Alineación de bloques del archivo de audio, en bytes.                                                                                                                                                                   |
+| **RECUENTO DE \_ CANALES DE AUDIO \_ \_ WPD**   | **VT \_ R4**  | El número de canales de este archivo de audio, por ejemplo, 1, 2 o 5.1.                                                                                                                                              |
+| **CÓDIGO DE \_ FORMATO DE AUDIO \_ \_ WPD**     | **VT \_ UI4** | Número de código de formato WAVE registrado. Para obtener una lista de los formatos WAVE registrados, consulte el artículo [Códigos FOURCC](https://msdn2.microsoft.com/library/ms867195.aspx) registrados y formatos WAVE en el sitio web de MSDN. |
 
 
 
@@ -44,7 +44,7 @@ Los dispositivos portátiles de Windows admiten las siguientes propiedades de au
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

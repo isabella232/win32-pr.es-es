@@ -1,17 +1,17 @@
 ---
-title: Crear la tabla de interfaz global
-description: Crear la tabla de interfaz global
+title: Creación de la tabla de interfaz global
+description: Creación de la tabla de interfaz global
 ms.assetid: e8e46642-ef41-4322-97d0-8dd5b7c72992
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f792f9664da554f6522086796f94a00ccdf0dc07
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 836cc5507ac9b8e7cccd6e9dc8fd8c2d71e1a23419945ecc01d35b3978940124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104421485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793775"
 ---
-# <a name="creating-the-global-interface-table"></a>Crear la tabla de interfaz global
+# <a name="creating-the-global-interface-table"></a>Creación de la tabla de interfaz global
 
 Use la siguiente llamada para crear el objeto de tabla de interfaz global y obtener un puntero a [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable):
 
@@ -28,21 +28,21 @@ if (hr != S_OK) {
 ```
 
 > [!Note]  
-> Al crear el objeto de tabla de interfaz global mediante la llamada anterior, es necesario vincularlo a la biblioteca UUID. lib. Esto resolverá los símbolos externos CLSID \_ StdGlobalInterfaceTable y IID \_ IGlobalInterfaceTable.
+> Al crear el objeto de tabla de interfaz global mediante la llamada anterior, es necesario vincular a la biblioteca uuid.lib. Esto resolverá los símbolos externos CLSID \_ StdGlobalInterfaceTable e IID \_ IGlobalInterfaceTable.
 
- 
+ 
 
-Hay una única instancia de la tabla de interfaz global por proceso, por lo que todas las llamadas a esta función en un proceso devuelven la misma instancia.
+Hay una sola instancia de la tabla de interfaz global por proceso, por lo que todas las llamadas a esta función de un proceso devuelven la misma instancia.
 
-Después de la llamada a la función [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) , registre la interfaz desde el apartamento en el que reside con una llamada al método [**RegisterInterfaceInGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-registerinterfaceinglobal) . Este método proporciona una cookie que identifica la interfaz y su ubicación. Un contenedor que busca un puntero a esta interfaz llama entonces al método [**GetInterfaceFromGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-getinterfacefromglobal) con esta cookie y, a continuación, la implementación proporciona un puntero de interfaz al apartamento que realiza la llamada. Para revocar el registro global de la interfaz, cualquier apartamento puede llamar al método [**RevokeInterfaceFromGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-revokeinterfacefromglobal) .
+Después de llamar a la función [**CoCreateInstance,**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) registre la interfaz desde el apartamento en el que reside con una llamada al [**método RegisterInterfaceInGlobal.**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-registerinterfaceinglobal) Este método proporciona una cookie que identifica la interfaz y su ubicación. Un apartamento que busca un puntero a esta interfaz llama al método [**GetInterfaceFromGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-getinterfacefromglobal) con esta cookie y, a continuación, la implementación proporciona un puntero de interfaz al apartamento que realiza la llamada. Para revocar el registro global de la interfaz, cualquier apartamento puede llamar al [**método RevokeInterfaceFromGlobal.**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-revokeinterfacefromglobal)
 
-Un ejemplo sencillo del uso de [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) sería cuando desea pasar un puntero de interfaz a un objeto de un contenedor uniproceso (STA) a un subproceso de trabajo de otro apartamento. En lugar de tener que calcular las referencias en una secuencia y pasar la secuencia al subproceso de trabajo como un parámetro de subproceso, **IGlobalInterfaceTable** permite simplemente pasar una cookie.
+Un ejemplo sencillo de uso de [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) sería cuando se quiere pasar un puntero de interfaz en un objeto en un apartamento de un solo subproceso (STA) a un subproceso de trabajo de otro apartamento. En lugar de tener que serializar en una secuencia y pasar la secuencia al subproceso de trabajo como un parámetro de subproceso, **IGlobalInterfaceTable** permite pasar simplemente una cookie.
 
-Al registrar la interfaz en la tabla de interfaz global, obtiene una cookie que puede usar en lugar de pasar el puntero real (siempre que necesite pasar el puntero), ya sea a un parámetro que no sea de método que vaya a otro apartamento (como parámetro a [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85)) a través de [**CreateThread**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread)) o a la memoria en proceso accesible fuera del apartamento.
+Al registrar la interfaz en la tabla de interfaz global, obtiene una cookie que puede usar en lugar de pasar el puntero real (siempre que necesite pasar el puntero), ya sea a un parámetro no de método que vaya a otro apartamento (como parámetro a [*ThreadProc*](/previous-versions/windows/desktop/legacy/ms686736(v=vs.85)) a través de [**CreateThread)**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread)o a la memoria en proceso accesible fuera de su apartamento.
 
-Se requiere cuidado porque el uso de interfaces globales impone la carga adicional en el programador de la administración de problemas, como condiciones de carrera y exclusión mutua, que están asociados a tener acceso al estado global desde varios subprocesos simultáneamente.
+Es necesario tener cuidado porque el uso de interfaces globales supone una carga adicional para el programador de administrar problemas como condiciones de carrera y exclusión mutua, que están asociados al acceso al estado global desde varios subprocesos simultáneamente.
 
-COM proporciona una implementación estándar de la interfaz [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) . Se recomienda encarecidamente que use esta implementación estándar, ya que proporciona una funcionalidad completa de subprocesos.
+COM proporciona una implementación estándar de la [**interfaz IGlobalInterfaceTable.**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) Se recomienda encarecidamente usar esta implementación estándar porque proporciona una funcionalidad completa segura para subprocesos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -51,6 +51,6 @@ COM proporciona una implementación estándar de la interfaz [**IGlobalInterface
 [Cuándo usar la tabla de interfaz global](when-to-use-the-global-interface-table.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

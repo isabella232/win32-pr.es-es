@@ -1,7 +1,7 @@
 ---
-description: Elimina un recurso compartido DDE del administrador de bases de datos de recursos compartidos DDE (DSDM).
+description: Elimina un recurso compartido DDE del Administrador de bases de datos de recursos compartidos de DDE (DSDM).
 ms.assetid: 3240f4b1-2625-46bc-9bbe-27737c59df81
-title: Función NDdeShareDel (Nddeapi. h)
+title: Función NDdeShareDel (Nddeapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: 2d57307c157c532e124699b6bfb2ed666f374722
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0efd5bb41712e8bee2ee7a5e789d1b006a490c932b48386de27f56a8b1150f6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611105"
 ---
-# <a name="nddesharedel-function"></a>NDdeShareDel función)
+# <a name="nddesharedel-function"></a>Función NDdeShareDel
 
-\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ no \_ implementado.\]
+\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Elimina un recurso compartido DDE del administrador de bases de datos de recursos compartidos DDE (DSDM).
+Elimina un recurso compartido DDE del Administrador de bases de datos de recursos compartidos de DDE (DSDM).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,21 +45,21 @@ UINT NDdeShareDel(
 
 <dl> <dt>
 
-*lpszServer* \[ de\]
+*lpszServer* \[ En\]
 </dt> <dd>
 
 Nombre del servidor cuyo DSDM se va a modificar.
 
 </dd> <dt>
 
-*lpszShareName* \[ de\]
+*lpszShareName* \[ En\]
 </dt> <dd>
 
-Nombre del recurso compartido que se va a eliminar del DSDM. Este parámetro no puede ser **null**.
+Nombre del recurso compartido que se va a eliminar del DSDM. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*wReserved* \[ de\]
+*wReserved* \[ En\]
 </dt> <dd>
 
 Reservado. Este parámetro debe ser cero.
@@ -68,24 +68,24 @@ Reservado. Este parámetro debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es NDDE \_ sin \_ error.
+Si la función se realiza correctamente, el valor devuelto es NDDE \_ NO \_ ERROR.
 
-Si se produce un error en la función, el valor devuelto es un código de error que se puede traducir en un mensaje de error de texto mediante una llamada a [**NDdeGetErrorString**](nddegeterrorstring.md).
+Si se produce un error en la función, el valor devuelto es un código de error que se puede traducir en un mensaje de error de texto llamando a [**NDdeGetErrorString**](nddegeterrorstring.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para eliminar un recurso compartido DDE de DSDM, debe tener el privilegio adecuado. El creador del recurso compartido tiene privilegios de eliminación.
+Para eliminar un recurso compartido de DDE del DSDM, debe tener el privilegio adecuado. El creador del recurso compartido tiene privilegios de eliminación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Nddeapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Nddeapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Nddeapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Nddeapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nddeapi.dll</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **NDdeShareDelW** (Unicode) y **NDdeShareDelA** (ANSI)<br/>                    |
 
@@ -95,7 +95,7 @@ Para eliminar un recurso compartido DDE de DSDM, debe tener el privilegio adecua
 
 <dl> <dt>
 
-[Información general de Intercambio dinámico de datos de red](network-dynamic-data-exchange.md)
+[Información general sobre datos dinámicos Exchange red](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funciones DDE de red](network-dde-functions.md)

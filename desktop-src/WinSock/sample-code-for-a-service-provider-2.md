@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene un ejemplo de código fuente que muestra cómo implementar las funciones de GetXbyY con las nuevas funciones de RNR independientes del protocolo.
+description: Esta sección contiene un ejemplo de código fuente que muestra cómo implementar las funciones GetXbyY mediante las nuevas funciones RNR independientes del protocolo.
 ms.assetid: d6246d47-11c2-4e4b-8a2b-17fd9cb041fc
 title: Código de ejemplo para un proveedor de servicios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74f9eab89667e37d2583f5582e86af6620de71c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 402550a1e4eddfef51c5a30a7838e2bad7b8d96898354a206130ab95073381db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794695"
 ---
 # <a name="sample-code-for-a-service-provider"></a>Código de ejemplo para un proveedor de servicios
 
-Esta sección contiene un ejemplo de código fuente que muestra cómo implementar las funciones de **GetXbyY** con las nuevas funciones de RNR independientes del protocolo. Un desarrollador debe implementar estas funciones como punto de partida. Para cumplir con la especificación de Windows Sockets, se necesitan muchas más funciones.
+Esta sección contiene un ejemplo de código fuente que muestra cómo implementar las funciones **GetXbyY** mediante las nuevas funciones RNR independientes del protocolo. Un desarrollador debe implementar estas funciones como punto de partida. Para cumplir con la especificación Windows Sockets, se necesitan muchas más funciones.
 
 > [!IMPORTANT]
 > No se garantiza que el código siguiente se compile.

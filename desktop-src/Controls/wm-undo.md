@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_UNDO (Winuser. h)
-description: Una aplicación envía un \_ mensaje de deshacer de WM a un control de edición para deshacer la última operación. Cuando este mensaje se envía a un control de edición, se restaura el texto previamente eliminado o se elimina el texto agregado previamente.
+title: WM_UNDO mensaje (Winuser.h)
+description: Una aplicación envía un mensaje \_ WM UNDO a un control de edición para deshacer la última operación. Cuando este mensaje se envía a un control de edición, se restaura el texto eliminado anteriormente o se elimina el texto agregado anteriormente.
 ms.assetid: bb5a3425-bf99-4a08-8747-82c24c5889ad
 keywords:
-- WM_UNDO controles de mensajes de Windows
+- WM_UNDO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c5eb9182b6d8d3fc1360565f6661e989f3b6d0d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b6e4bd0715b7eeb5f99f34f5142ac3198c5c1eae53cf4486c3efce9dace19a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119311345"
 ---
-# <a name="wm_undo-message"></a>\_Mensaje de deshacer de WM
+# <a name="wm_undo-message"></a>Mensaje \_ WM UNDO
 
-Una aplicación envía un mensaje de **\_ Deshacer de WM** a un control de edición para deshacer la última operación. Cuando este mensaje se envía a un control de edición, se restaura el texto previamente eliminado o se elimina el texto agregado previamente.
+Una aplicación envía un **mensaje \_ WM UNDO** a un control de edición para deshacer la última operación. Cuando este mensaje se envía a un control de edición, se restaura el texto eliminado anteriormente o se elimina el texto agregado anteriormente.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,26 +32,26 @@ Una aplicación envía un mensaje de **\_ Deshacer de WM** a un control de edici
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje se realiza correctamente, el valor devuelto es **true**.
+Si el mensaje se realiza correctamente, el valor devuelto es **TRUE.**
 
-Si se produce un error en el mensaje, el valor devuelto es **false**.
+Si se produce un error en el mensaje, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Edición enriquecida:** Se recomienda el uso de la [**\_ función**](em-undo.md) deshacer en lugar de **WM \_ Undo**.
+**Edición enriquecte:** Se recomienda usar [**EM \_ UNDO**](em-undo.md) en lugar de **WM \_ UNDO**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,29 +59,29 @@ Si se produce un error en el mensaje, el valor devuelto es **false**.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Otros recursos**
 </dt> <dt>
 
-[**\_borrado de WM**](/windows/desktop/dataxchg/wm-clear)
+[**WM \_ CLEAR**](/windows/desktop/dataxchg/wm-clear)
 </dt> <dt>
 
-[**copia de WM \_**](/windows/desktop/dataxchg/wm-copy)
+[**WM \_ COPY**](/windows/desktop/dataxchg/wm-copy)
 </dt> <dt>
 
-[**cortar de WM \_**](/windows/desktop/dataxchg/wm-cut)
+[**WM \_ CUT**](/windows/desktop/dataxchg/wm-cut)
 </dt> <dt>
 
-[**pegar de WM \_**](/windows/desktop/dataxchg/wm-paste)
+[**WM \_ PASTE**](/windows/desktop/dataxchg/wm-paste)
 </dt> </dl>
 
  

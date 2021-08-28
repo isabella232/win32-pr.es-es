@@ -1,6 +1,6 @@
 ---
 title: instance
-description: Use este atributo para instanciar un sombreador de geometría.
+description: Use este atributo para crear una instancia de un sombreador de geometría.
 ms.assetid: 0e487e52-53d0-4193-99b2-fd018a061b42
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4749e11db00b38e5e223e11315de86656b2f6488
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 77c19b26107228bb04007d1c2c69ac34b464c7c361966ac9858d9bcdb09b4c4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104077113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986165"
 ---
 # <a name="instance"></a>instance
 
-Use este atributo para instanciar un sombreador de geometría.
+Use este atributo para crear una instancia de un sombreador de geometría.
 
 
 ```
@@ -27,21 +27,21 @@ instance(X)
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-X es un índice entero que indica el número de instancias que se van a ejecutar para cada elemento dibujado (por ejemplo, para cada triángulo). Al utilizar este atributo, use [VP \_ GSInstanceID](sv-gsinstanceid.md) para identificar qué instancia de un sombreador de geometría se está ejecutando.
+X es un índice entero que indica el número de instancias que se ejecutarán para cada elemento dibujado (por ejemplo, para cada triángulo). Al usar este atributo, use [SV \_ GSInstanceID para](sv-gsinstanceid.md) identificar qué instancia de un sombreador de geometría se ejecuta.
 
-Este atributo es compatible con los siguientes tipos de sombreadores:
+Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        | x        |       |         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -53,9 +53,9 @@ Este atributo es compatible con los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

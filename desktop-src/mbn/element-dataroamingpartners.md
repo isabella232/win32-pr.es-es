@@ -16,25 +16,25 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: eb304a89faca2381f8c8c0ede6ba743f740c4d0f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f43f2cba06d75aa08a6419c0b39fa08bf898c111
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468902"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987098"
 ---
 # <a name="span-idwwan_profile_v4element_dataroamingpartnersspandataroamingpartners"></a><span id="WWAN_profile_v4.element_DataRoamingPartners"></span>DataRoamingPartners
 
-Especifica una lista de proveedores de red preferidos en itinerancia.
+Especifica una lista de proveedores de red preferidos al itinerancia.
 
-Para obtener más información, consulte la documentación del elemento [**DataRoamingPartners**](./schema-dataroamingpartners-mbnprofile-element.md) v1.
+Para más información, consulte la documentación del elemento [**DataRoamingPartners**](./schema-dataroamingpartners-mbnprofile-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<DataRoamingPartners>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;DataRoamingPartners&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <DataRoamingPartners>
@@ -60,7 +60,7 @@ Ninguno.
 
 | Elemento secundario | Descripción | 
 |---------------|-------------|
-| <a href="element-provider.md">Proveedor</a> | <p>Especifica un proveedor de red preferido en una lista de proveedores que se usarán durante la itinerancia.</p><p>El valor de este elemento es una instancia del tipo complejo <a href="../mbn/schema-providertype-complextype.md"><strong>providerType</strong></a> v1.</p> | 
+| <a href="element-provider.md">Proveedor</a> | <p>Especifica un proveedor de red preferido en una lista de proveedores que se usarán en itinerancia.</p><p>El valor de este elemento es una instancia del tipo complejo <a href="../mbn/schema-providertype-complextype.md"><strong>providerType</strong></a> v1.</p> | 
 
 
  
@@ -70,7 +70,7 @@ Ninguno.
 
 | Elemento primario | Descripción | 
 |----------------|-------------|
-| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p><p>Puede haber más de un elemento MbnProfileExt en un perfil que describa la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p> | 
+| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p><p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p> | 
 
 
  
@@ -78,7 +78,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

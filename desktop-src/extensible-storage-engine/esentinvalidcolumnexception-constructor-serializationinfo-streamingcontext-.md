@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidColumnException (SerializationInfo, StreamingContext)'
-title: Constructor EsentInvalidColumnException (SerializationInfo, StreamingContext)
+description: 'Más información sobre: Constructor EsentInvalidColumnException (SerializationInfo, StreamingContext)'
+title: EsentInvalidColumnException constructor (SerializationInfo, StreamingContext)
 TOCTitle: EsentInvalidColumnException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidColumnException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidcolumnexception.esentinvalidcolumnexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f439edeb0dad09f4c7f1bdd9521bb2410ca68be6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c042708140a5492e79aaa994226b10d9d2fc78ffddeaf82ce76e0532eabf0a22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723955"
 ---
-# <a name="esentinvalidcolumnexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentInvalidColumnException (SerializationInfo, StreamingContext)
+# <a name="esentinvalidcolumnexception-constructor-serializationinfo-streamingcontext"></a>EsentInvalidColumnException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentInvalidColumnException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentInvalidColumnException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ protected EsentInvalidColumnException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
@@ -78,6 +78,6 @@ protected EsentInvalidColumnException(
 
 [Miembros de EsentInvalidColumnException](./esentinvalidcolumnexception-members.md)
 
-[Sobrecarga EsentInvalidColumnException](./esentinvalidcolumnexception-constructor2.md)
+[Sobrecarga de EsentInvalidColumnException](./esentinvalidcolumnexception-constructor2.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

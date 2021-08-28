@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PGM_FORWARDMOUSE (commctrl. h)
-description: Habilita o deshabilita el reenvío del mouse para el control de paginación. Cuando está habilitado el reenvío del mouse, el control de paginación reenvía \_ los mensajes de WM MOUSEMOVE a la ventana contenida. Puede enviar este mensaje explícitamente o utilizar la macro ForwardMouse de buscapersonas \_ .
+title: PGM_FORWARDMOUSE mensaje (Commctrl.h)
+description: Habilita o deshabilita el reenvío del mouse para el control de paginación. Cuando el reenvío del mouse está habilitado, el control de paginación reenvía los mensajes DE WM \_ MOUSEMOVE a la ventana independiente. Puede enviar este mensaje explícitamente o usar la \_ macro ForwardMouse de Pager.
 ms.assetid: 269972fe-50b3-4c9f-b5ac-65e768b30684
 keywords:
-- PGM_FORWARDMOUSE controles de mensajes de Windows
+- PGM_FORWARDMOUSE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: addc1c6bf762f540e9d7d785a5af2ba3fb7da93c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 705b63ad39faea86e1f38a5b59dc73c6fc12f1e19fc17d0619c9a4b3dd5c6d26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046975"
 ---
-# <a name="pgm_forwardmouse-message"></a>\_Mensaje FORWARDMOUSE PGM
+# <a name="pgm_forwardmouse-message"></a>Mensaje \_ FORWARDMOUSE de PGM
 
-Habilita o deshabilita el reenvío del mouse para el control de paginación. Cuando está habilitado el reenvío del mouse, el control de paginación reenvía los mensajes de [**WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) a la ventana contenida. Puede enviar este mensaje explícitamente o utilizar la macro [**\_ ForwardMouse de buscapersonas**](/windows/desktop/api/Commctrl/nf-commctrl-pager_forwardmouse) .
+Habilita o deshabilita el reenvío del mouse para el control de paginación. Cuando el reenvío del mouse está habilitado, el control de paginación reenvía [**los mensajes DE WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) a la ventana independiente. Puede enviar este mensaje explícitamente o usar la macro [**\_ ForwardMouse de Pager.**](/windows/desktop/api/Commctrl/nf-commctrl-pager_forwardmouse)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Habilita o deshabilita el reenvío del mouse para el control de paginación. Cua
 *wParam* 
 </dt> <dd>
 
-Valor **booleano** que determina si está habilitado o deshabilitado el reenvío del mouse. Si este valor es distinto de cero, se habilita el reenvío del mouse. Si este valor es cero, el reenvío del mouse está deshabilitado.
+**Valor BOOL** que determina si el reenvío del mouse está habilitado o deshabilitado. Si este valor es distinto de cero, se habilita el reenvío del mouse. Si este valor es cero, el reenvío del mouse está deshabilitado.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Valor **booleano** que determina si está habilitado o deshabilitado el reenvío
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ No se utiliza el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionShadowEffect SetGreen (Dcomp. h)
-description: Establece el valor verde para el color de la sombra.
+title: Métodos IDCompositionShadowEffect SetGreen (Dcomp.h)
+description: Establece el valor verde del color de la sombra.
 ms.assetid: 55566eb3-939e-c61f-dae8-5bd8da1c9f5b
 keywords:
 - Métodos de V DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 24f3da34cfdff3ab845079a4993f02c36e2620e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93f03d283715784a22a4a5aed4bd01ccf6b65c567896347aec65e531cb8ffb34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067475"
 ---
-# <a name="idcompositionshadoweffectsetgreen-methods"></a>IDCompositionShadowEffect:: SetGreen (métodos)
+# <a name="idcompositionshadoweffectsetgreen-methods"></a>Métodos IDCompositionShadowEffect::SetGreen
 
-Establece el valor verde para el color de la sombra.
+Establece el valor verde del color de la sombra.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el valor verde para el color de la sombra.
 
 | Método                                                                               | Descripción                                                  |
 |:-------------------------------------------------------------------------------------|:-------------------------------------------------------------|
-| [**SetGreen (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setgreen(idcompositionanimation)) | Establece el valor verde para el color de la sombra.<br/> |
-| [**SetGreen**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setgreen(float))                               | Establece el valor verde para el color de la sombra.<br/> |
+| [**SetGreen (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setgreen(idcompositionanimation)) | Establece el valor verde del color de la sombra.<br/> |
+| [**SetGreen**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setgreen(float))                               | Establece el valor verde del color de la sombra.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Establece el valor verde para el color de la sombra.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

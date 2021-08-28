@@ -1,18 +1,18 @@
-- name: Creación de la primera aplicación de Windows con DirectX
+- name: Creación de la primera aplicación Windows con DirectX
   href: building-your-first-directx-app.md
   items:
-    - name: Requisitos previos para el desarrollo con DirectX
+    - name: Requisitos previos para desarrollar con DirectX
       href: pre-requisites-for-developing-a-tailored-c---with-directx-app.md
     - name: Introducción a DirectX para Windows
       href: getting-started-with-a-directx-game.md
       items:
-        - name: Trabajar con recursos de dispositivos DirectX
+        - name: Trabajar con recursos de dispositivo DirectX
           href: work-with-dxgi.md
-        - name: Descripción de la canalización de representación de Direct3D 11
+        - name: Información sobre la canalización de representación de Direct3D 11
           href: understand-the-directx-11-2-graphics-pipeline.md
-        - name: Trabajar con sombreadores y recursos del sombreador
+        - name: Trabajar con sombreadores y recursos de sombreador
           href: work-with-shaders-and-shader-resources.md
-        - name: Código completo de un marco de DirectX
+        - name: Código completo para un marco De DirectX
           href: complete-code-sample-for-using-a-corewindow-with-directx.md
     - name: Hoja de ruta para aplicaciones DirectX de escritorio
       href: roadmap-for-metro-style-apps-using-directx.md

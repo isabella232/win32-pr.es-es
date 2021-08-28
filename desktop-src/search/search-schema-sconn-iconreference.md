@@ -1,19 +1,19 @@
 ---
-description: El elemento <iconReference> opcional especifica un icono personalizado para esta ubicación. Este elemento no tiene atributos ni elementos secundarios.
+description: El elemento &lt; iconReference &gt; opcional especifica un icono personalizado para esta ubicación. Este elemento no tiene atributos ni elementos secundarios.
 ms.assetid: c2fa5e99-a7fd-423e-9952-5233e8c83619
-title: elemento iconReference (esquema del conector de búsqueda)
+title: elemento iconReference (Esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76391eb7079414abe13c4e45696ee3eacb3b968eb93b342b1b9e67825fac85c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47ff41d6dfd37e5e3fe780171701886b08b195ac
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117862594"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882418"
 ---
-# <a name="iconreference-element-search-connector-schema"></a>elemento iconReference (esquema del conector de búsqueda)
+# <a name="iconreference-element-search-connector-schema"></a>elemento iconReference (Esquema del conector de búsqueda)
 
-El elemento <iconReference> opcional especifica un icono personalizado para esta ubicación. Este elemento no tiene atributos ni elementos secundarios.
+El elemento &lt; iconReference &gt; opcional especifica un icono personalizado para esta ubicación. Este elemento no tiene atributos ni elementos secundarios.
 
 ## <a name="syntax"></a>Syntax
 

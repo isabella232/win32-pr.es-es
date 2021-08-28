@@ -1,6 +1,6 @@
 ---
-title: Esquema baseeapuserpropertiesv1
-description: Obtenga información sobre el esquema baseeapuserpropertiesv1. Este esquema define los elementos de esquema de credencial comunes.
+title: esquema baseeapuserpropertiesv1
+description: Obtenga información sobre el esquema baseeapuserpropertiesv1. Este esquema define elementos de esquema de credenciales comunes.
 ms.assetid: b7ee97e4-88e6-4cb2-b89b-b60f7da51eda
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,19 +9,19 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a8261109117735e00711766c4f187c2dd9256c7e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 04e0d1abe2a634c582771d04506b24d52e11d237a86ad3b65d8d6eddaba4950c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067345"
 ---
-# <a name="baseeapuserpropertiesv1-schema"></a>Esquema baseeapuserpropertiesv1
+# <a name="baseeapuserpropertiesv1-schema"></a>esquema baseeapuserpropertiesv1
 
-El esquema baseeapuserpropertiesv1 define elementos de esquema de credencial comunes.
+El esquema baseeapuserpropertiesv1 define elementos de esquema de credenciales comunes.
 
--   [Elementos de esquema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-elements.md)
--   [Tipos complejos de esquema de baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-complex-types.md)
+-   [baseeapuserpropertiesv1 Schema Elements](baseeapuserpropertiesv1schema-elements.md)
+-   [tipos complejos de esquema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-complex-types.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -30,9 +30,9 @@ El esquema baseeapuserpropertiesv1 define elementos de esquema de credencial com
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

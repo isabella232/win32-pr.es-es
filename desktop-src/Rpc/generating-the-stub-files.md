@@ -1,31 +1,31 @@
 ---
-title: Generar archivos de código auxiliar
-description: Después de definir la interfaz cliente/servidor, normalmente desarrolla los archivos de origen de cliente y servidor.
+title: Generar los archivos de código auxiliar
+description: Después de definir la interfaz de cliente/servidor, normalmente desarrollará los archivos de origen de cliente y servidor.
 ms.assetid: e4d08bee-ab9a-4426-a1af-72a7d763797f
 keywords:
-- RPC llamada a procedimiento remoto, tareas, generar archivos de código auxiliar
+- Llamada a procedimiento remoto RPC, tareas, generación de archivos de código auxiliar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e092663711be60a3a0dc0dd8a4e99c0fa92a3ef
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c03fbffb165e94b89e6801c212d0a8b63cd4e77fab28ad4a4afc4b4243ae0e79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020885"
 ---
-# <a name="generating-the-stub-files"></a>Generar archivos de código auxiliar
+# <a name="generating-the-stub-files"></a>Generar los archivos de código auxiliar
 
-Después de definir la interfaz cliente/servidor, normalmente desarrolla los archivos de origen de cliente y servidor. A continuación, use un solo archivo make para generar el código auxiliar y los archivos de encabezado. Compile y vincule las aplicaciones de cliente y servidor. Sin embargo, si esta es la primera vez que se expone al entorno de computación distribuida, es posible que desee invocar el compilador MIDL ahora para ver qué genera MIDL antes de continuar. El compilador MIDL (Midl.exe) se instala automáticamente al instalar el kit de desarrollo de software (SDK) de la plataforma.
+Después de definir la interfaz de cliente/servidor, normalmente desarrollará los archivos de origen de cliente y servidor. A continuación, use un único archivo Make para generar los archivos de código auxiliar y de encabezado. Compile y vincule las aplicaciones cliente y servidor. Sin embargo, si esta es la primera exposición al entorno informático distribuido, es posible que quiera invocar el compilador midl ahora para ver qué genera MIDL antes de continuar. El compilador midl (Midl.exe) se instala automáticamente al instalar el Kit de desarrollo de software (SDK) de plataforma.
 
-Al compilar estos archivos, asegúrese de que Hello. idl y Hello. ACF están en el mismo directorio. El siguiente comando generará el archivo de encabezado Hello. h y los códigos auxiliares de cliente y servidor, Hello \_ c. c y Hello \_ s.c.
+Al compilar estos archivos, asegúrese de que Hello.idl y Hello.acf se encuentran en el mismo directorio. El comando siguiente generará el archivo de encabezado Hello.h y los códigos auxiliares de cliente y servidor, Hello \_ c.c y Hello \_ s.c.
 
-**Hola. idl de MIDL**
+**midl hello.idl**
 
-Observe que Hello. h contiene prototipos de función para HelloProc y shutdown, así como declaraciones adelantadas para dos funciones de administración de memoria, la **\_ \_ asignación de usuarios de MIDL** y el usuario de **MIDL \_ \_ Free**. Proporcionará estas dos funciones en la aplicación de servidor. Si los datos se transmitieron del servidor al cliente (por medio de un parámetro de \[ **salida** \] ), también deberá proporcionar estas dos funciones de administración de memoria en la aplicación cliente.
+Observe que Hello.h contiene prototipos de función para HelloProc y Shutdown, así como declaraciones de reenvío para dos funciones de administración de memoria, **midl \_ user \_ allocate** y **midl \_ user \_ free**. Proporcionará estas dos funciones en la aplicación de servidor. Si los datos se transmiten desde el servidor al cliente (mediante un parámetro out), también tendría que proporcionar estas dos funciones de administración de memoria \[  \] en la aplicación cliente.
 
-Tenga en cuenta las definiciones de la variable de identificador global, Hello \_ IfHandle y el cliente y el identificador de la interfaz de servidor, Hola \_ v1 \_ 0 \_ c \_ ifspec y Hola \_ v1 \_ 0 \_ s \_ ifspec. Las aplicaciones de cliente y servidor usarán los nombres de identificador de interfaz en las llamadas en tiempo de ejecución.
+Tenga en cuenta las definiciones de la variable de identificador global, hello IfHandle y los nombres de identificador de interfaz de cliente y \_ servidor, hello \_ v1 \_ 0 c ifspec y \_ hello \_ \_ v1 \_ 0 \_ s \_ ifspec. Las aplicaciones cliente y servidor usarán los nombres de identificador de interfaz en llamadas en tiempo de ejecución.
 
-En este momento, no es necesario hacer nada con los archivos de código auxiliar Hola \_ c. c y Hola \_ s.c.
+En este momento, no es necesario hacer nada con los archivos de código auxiliar Hello \_ c.c y hello \_ s.c.
 
 ``` syntax
 /*file: hello.h */
@@ -80,9 +80,9 @@ extern RPC_IF_HANDLE hello_v1_0_s_ifspec;
 #endif
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: 'ByteAddressBuffer:: Getdimensions ((función)'
-description: 'Obtiene la longitud del búfer. | ByteAddressBuffer:: Getdimensions ((función)'
+title: ByteAddressBuffer::GetDimensions (Función)
+description: Obtiene la longitud del búfer. | ByteAddressBuffer::GetDimensions (Función)
 ms.assetid: 32099118-8d8a-440e-96ba-2580d905f068
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1cbb705789e444a6fa54aeb87190912996f65621
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 398b5a6dba995a11dcf4ce8a78fecee9bb185ce98ec285453bdd52c1180a4eb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120067725"
 ---
-# <a name="byteaddressbuffergetdimensions-function"></a>ByteAddressBuffer:: Getdimensions ((función)
+# <a name="byteaddressbuffergetdimensions-function"></a>ByteAddressBuffer::GetDimensions (Función)
 
 Obtiene la longitud del búfer.
 
@@ -36,12 +36,12 @@ void GetDimensions(
 
 <dl> <dt>
 
-*atenuar* \[\]
+*dim* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-La longitud, en bytes, del búfer.
+Longitud, en bytes, del búfer.
 
 </dd> </dl>
 
@@ -49,13 +49,13 @@ La longitud, en bytes, del búfer.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

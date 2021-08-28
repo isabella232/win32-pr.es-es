@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_RPType (clase)
-description: La subclase de MicrosoftDNS \_ ResourceRecord que representa un registro de persona responsable (RP).
+title: MicrosoftDNS_RPType clase
+description: Subclase de ResourceRecord de MicrosoftDNS \_ que representa un registro de persona responsable (RP).
 ms.assetid: 2b1c1bbc-a69f-4480-a7f2-6420240d4ad8
 keywords:
-- DNS de la clase MicrosoftDNS_RPType
-- MicrosoftDNS_RPType de la clase DNS, descrito
+- MicrosoftDNS_RPType DNS de clase
+- MicrosoftDNS_RPType clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9aae8686016d26cb9007b21a06c125d56ed5207f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2088420acc7a8d0e58cfa23ed95458c797dbe9f930651bc02f083fcc81f5342d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655375"
 ---
-# <a name="microsoftdns_rptype-class"></a>MicrosoftDNS ( \_ clase RPType)
+# <a name="microsoftdns_rptype-class"></a>Clase RPType de MicrosoftDNS \_
 
-La subclase de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa un registro de persona responsable (RP).
+Subclase de [**\_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un registro de persona responsable (RP).
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ class MicrosoftDNS_RPType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ RPType** tiene estos tipos de miembros:
+La **clase \_ RPType de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MicrosoftDNS \_ RPType** tiene estos métodos.
+La **clase \_ RPType de MicrosoftDNS** tiene estos métodos.
 
 
 
 | Método                             | Descripción                                                                                                                                                                                                                                                                                                                                                                                         |
 |:-----------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Crea una instancia de un tipo RP de RR basándose en los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el propietario o el nombre de la persona responsable, la clase (valor predeterminado = IN), el valor de período de vida y los nombres de dominio de las ubicaciones de RR de TXT y el buzón de la persona. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/> |
-| **Modify**                         | Este método actualiza el nombre de dominio TTL, el buzón RP y el nombre de dominio TXT a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: implementados<br/>                                  |
+| **CreateInstanceFromPropertyData** | Crea una instancia de un tipo de RP de RR en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre de la persona propietaria o responsable, la clase (valor predeterminado = IN), el valor de período de vida y los nombres de dominio para las ubicaciones RR DE TXT y buzón de la persona. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: Implementado, estático<br/> |
+| **Modificar**                         | Este método actualiza el TTL, el buzón de RP y el nombre de dominio TXT a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/>                                  |
 
 
 
@@ -66,7 +66,7 @@ La clase **MicrosoftDNS \_ RPType** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ RPType** tiene estas propiedades.
+La **clase \_ RPType de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-FQDN que especifica el buzón de correo para la persona responsable.
+FQDN que especifica el buzón para la persona responsable.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ FQDN para el que existen registros de recursos TXT.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -113,13 +113,13 @@ FQDN para el que existen registros de recursos TXT.
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS RPType**](microsoftdns-rptype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase RPType de MicrosoftDNS \_**](microsoftdns-rptype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS RPType**](microsoftdns-rptype-modify.md)
+[**Método Modify de la clase RPType de MicrosoftDNS \_**](microsoftdns-rptype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

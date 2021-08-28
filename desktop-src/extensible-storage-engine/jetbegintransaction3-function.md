@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed7c963da40f72fb7ea54c5614836a1de81a0b3d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ca07ad3957efadfb86ac5df9b1994d5c4525c7a2
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479241"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989048"
 ---
 # <a name="jetbegintransaction3-function"></a>Función JetBeginTransaction3
 
@@ -55,12 +55,12 @@ Identificador opcional proporcionado por el usuario para identificar la transacc
 
 *grbit*
 
-Grupo de bits que especifica cero o más valores de opción de llamada enumerados en la tabla siguiente.
+Grupo de bits que especifica cero o más de los valores de opción de llamada enumerados en la tabla siguiente.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitTransactionReadOnly</p> | <p>La transacción no modificará la base de datos. Si se intenta realizar una actualización, se producirá un error en esa operación JET_errTransReadOnly código de respuesta. Esta opción se omite a menos que se solicite cuando la sesión determinada no está ya en una transacción. Esta opción está disponible en versiones del sistema operativo Windows a partir de Windows XP.</p> | 
+| <p>JET_bitTransactionReadOnly</p> | <p>La transacción no modificará la base de datos. Si se intenta realizar una actualización, se producirá un error en esa operación JET_errTransReadOnly código de respuesta. Esta opción se omite a menos que se solicite cuando la sesión determinada no está ya en una transacción. Esta opción está disponible en las versiones del Windows operativo a partir de Windows XP.</p> | 
 
 
 
@@ -86,14 +86,20 @@ Si se ejecuta correctamente, la sesión proporcionada estará dentro de una tran
 
 En caso de error, el estado transaccional de la sesión permanecerá sin cambios. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre cómo funcionan las transacciones, [vea JetBeginTransaction](./jetbegintransaction-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2012.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2012.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

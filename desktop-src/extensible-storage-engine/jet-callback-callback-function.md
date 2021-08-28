@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 08d992d1e8b6ca7c6a987a57f44b48d6ba291328
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 8a49c63a948cd25abe97dfc58e10a97720eae248
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471180"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986168"
 ---
 # <a name="jet_callback-callback-function"></a>JET_CALLBACK de devolución de llamada
 
@@ -84,11 +84,11 @@ Parámetro que se usa para comunicarse con la aplicación mediante la devolució
 
 La función devuelve uno de los códigos de [error extensibles Storage Engine](./extensible-storage-engine-error-codes.md). Para obtener información sobre cómo devolver estos códigos como HSULT, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md). Si se ejecuta correctamente, la operación que emitió la devolución de llamada puede continuar con normalidad. En algunos casos, la devolución de llamada puede devolver una advertencia que influye en esa operación. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso de estas advertencias por la operación.
 
-En caso de error, la operación que emitió la devolución de llamada puede continuar con normalidad o puede producir un error. Consulte [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso del código de error por la operación.
+En caso de error, la operación que emitió la devolución de llamada puede continuar con normalidad o puede producir un error. Vea [JET_CBTYP](./jet-cbtyp.md) para obtener información sobre el uso del código de error por la operación.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Si la devolución de llamada pasa un cursor a la aplicación, es importante saber que este cursor se limita intencionadamente a un conjunto más pequeño de funcionalidades para evitar la recursión y otras características. Se permiten las siguientes operaciones:
+Si la devolución de llamada pasa un cursor a la aplicación, es importante saber que este cursor se limita intencionadamente a un conjunto más pequeño de funcionalidades para evitar la recursividad y otras características. Se permiten las siguientes operaciones:
 
   - [JetDupCursor](./jetdupcursor-function.md)
 
@@ -133,7 +133,11 @@ Al diseñar la devolución de llamada, tiene en cuenta que, incluso con estas re
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

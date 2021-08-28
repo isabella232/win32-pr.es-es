@@ -4,16 +4,16 @@ description: IAgentCommands GetCommand
 ms.assetid: 0f4a9152-d5dc-4045-b469-8a03f0369e34
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e81043bb8dbe8a6d050f226d09f03b396d0f8f9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 05ae5e8a92ce8d4a8e04ff049569195e5a2baa21ec3bc398f5fa6ba6ef3c1e3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609695"
 ---
 # <a name="iagentcommandsgetcommand"></a>IAgentCommands::GetCommand
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetCommand(
@@ -22,23 +22,23 @@ HRESULT GetCommand(
 );                    
 ```
 
-Recupera un objeto [**Command**](/windows/desktop/lwef/the-command-object) de la colección [**Commands**](/windows/desktop/lwef/the-commands-collection-object) .
+Recupera un objeto [**Command**](/windows/desktop/lwef/the-command-object) de la [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
 <span id="dwCommandID"></span><span id="dwcommandid"></span><span id="DWCOMMANDID"></span>*dwCommandID*
 </dt> <dd>
 
-IDENTIFICADOR de un objeto de [**comando**](/windows/desktop/lwef/the-command-object) en la colección de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .
+Identificador de un [**objeto Command**](/windows/desktop/lwef/the-command-object) de la [**colección Commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> <dt>
 
-<span id="IUnknown"></span><span id="iunknown"></span><span id="IUNKNOWN"></span>*IUnknown*
+<span id="IUnknown"></span><span id="iunknown"></span><span id="IUNKNOWN"></span>*Iunknown*
 </dt> <dd>
 
-Dirección de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) para el objeto de [**comando**](/windows/desktop/lwef/the-command-object) .
+Dirección de la [**interfaz IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) para el [**objeto Command.**](/windows/desktop/lwef/the-command-object)
 
 </dd> </dl>
 
@@ -47,6 +47,6 @@ Dirección de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-i
 [**IAgentCommand**](iagentcommand.md)
 
 
- 
+ 
 
- 
+ 

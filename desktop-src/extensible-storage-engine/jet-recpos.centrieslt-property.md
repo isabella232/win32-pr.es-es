@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RECPOS. centriesLT'
-title: Propiedad JET_RECPOS. centriesLT
+description: 'Más información sobre: JET_RECPOS.centriesLT'
+title: JET_RECPOS.centriesLT, propiedad
 TOCTitle: 'centriesLT property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RECPOS.centriesLT
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recpos.centrieslt(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a130896158e0cf6daba30038a092f4b67f4ef103
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11398d00f02fe50912ba8ec3556630cdbc67f8fb26d4e17c93608aee6fa51c8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719965"
 ---
-# <a name="jet_recposcentrieslt-property"></a>Propiedad JET_RECPOS. centriesLT
+# <a name="jet_recposcentrieslt-property"></a>JET_RECPOS.centriesLT, propiedad
 
-Obtiene o establece el número aproximado de entradas de índice que son menores que la clave.
+Obtiene o establece el número aproximado de entradas de índice menor que la clave.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public long centriesLT { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RECPOS (clase)](./jet-recpos-class.md)
+[JET_RECPOS clase](./jet-recpos-class.md)
 
-[Miembros de JET_RECPOS](./jet-recpos-members.md)
+[JET_RECPOS miembros](./jet-recpos-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

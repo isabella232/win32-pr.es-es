@@ -19,12 +19,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3dd7faf1a28d6cafe7b33e4df49f32c631bb699e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f12fc06b915f5462c9209416cf54436ef3d7239b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477531"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985688"
 ---
 # <a name="jetresizedatabase-function"></a>JetResizeDatabase (Función)
 
@@ -53,7 +53,7 @@ Contexto de sesión de base de datos que se usará para la llamada API.
 
 *Dbid*
 
-Base de datos que se va a extender.
+Base de datos que se extenderá.
 
 *Cpg*
 
@@ -68,7 +68,7 @@ Puntero a un número que recibe el tamaño de la base de datos, en páginas, des
 Grupo de bits que especifica cero o más de los valores enumerados en la tabla siguiente.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitResizeDatabaseOnlyGrow</p> | <p>Aumentar solo la base de datos. Si la llamada de cambio de tamaño reduciría la base de datos, no haga nada.</p> | 
 
@@ -87,7 +87,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los c
 
 
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Si se llama a la función **JetResizeDatabase** antes de insertar grandes cantidades de datos, el archivo de base de datos se crecerá en una sola operación. Esto reducirá la probabilidad de que el archivo de base de datos se fragmente en el nivel del sistema de archivos y también reducirá el número de veces que el archivo de base de datos tiene que crecer. El crecimiento del archivo de base de datos una vez puede ser más rápido que aumentarlo varias veces.
 
@@ -98,7 +98,13 @@ Es posible que el tamaño del archivo no coincida con el número de páginas que
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2012.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2012.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

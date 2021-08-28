@@ -1,21 +1,21 @@
 ---
-description: El <isSearchOnlyItem> elemento booleano especifica si el proveedor de búsquedas admite el modo de exploración además del modo de búsqueda. Este elemento es opcional y no tiene ningún elemento secundario y ningún atributo.
+description: El elemento &lt; booleano isSearchOnlyItem especifica si el proveedor de búsqueda admite el &gt; modo de exploración además del modo de búsqueda. Este elemento es opcional y no tiene elementos secundarios ni atributos.
 ms.assetid: eec1b735-ae78-48ef-8ebf-05b9fd038963
 title: Elemento isSearchOnlyItem (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ded7b62cde5cf813603d5cc87c41fe2c443b42d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 524a69198a650e0cb995d2ff8b4fc942ebfdaddc
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540630"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883417"
 ---
 # <a name="issearchonlyitem-element-search-connector-schema"></a>Elemento isSearchOnlyItem (esquema del conector de búsqueda)
 
-El <isSearchOnlyItem> elemento booleano especifica si el proveedor de búsquedas admite el modo de exploración además del modo de búsqueda. Este elemento es opcional y no tiene ningún elemento secundario y ningún atributo.
+El elemento &lt; booleano isSearchOnlyItem especifica si el proveedor de búsqueda admite el &gt; modo de exploración además del modo de búsqueda. Este elemento es opcional y no tiene elementos secundarios ni atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -44,9 +44,9 @@ El <isSearchOnlyItem> elemento booleano especifica si el proveedor de búsquedas
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor `true` indica que los usuarios no pueden examinar la ubicación del conector de búsqueda. El valor `false` indica que los usuarios pueden examinar la ubicación del conector de búsqueda.
+El valor indica que los usuarios no pueden examinar la ubicación del `true` conector de búsqueda. El valor `false` indica que los usuarios pueden examinar la ubicación del conector de búsqueda.
 
 ## <a name="example"></a>Ejemplo
 
