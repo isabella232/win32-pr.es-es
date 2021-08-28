@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_DWMWINDOWMAXIMIZEDCHANGE (Winuser. h)
-description: Se envía cuando se maximiza una ventana compuesta de Administrador de ventanas de escritorio (DWM).
+title: WM_DWMWINDOWMAXIMIZEDCHANGE mensaje (Winuser.h)
+description: Se envía cuando se maximiza Administrador de ventanas de escritorio ventana compuesta de Administrador de ventanas de escritorio (DWM).
 ms.assetid: db8cd104-388e-4211-9e4e-f169aef9651c
 keywords:
-- WM_DWMWINDOWMAXIMIZEDCHANGE Administrador de ventanas de escritorio de mensaje
+- WM_DWMWINDOWMAXIMIZEDCHANGE mensaje Administrador de ventanas de escritorio
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dc49af267ea826eb9e35a627e14f6fc8b381df0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93cfa4ac380b6ff439fb2bf4805846c0b774a90bcfdcd83673ead2334a3c7094
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117755"
 ---
-# <a name="wm_dwmwindowmaximizedchange-message"></a>Mensaje de DWMWINDOWMAXIMIZEDCHANGE de WM \_
+# <a name="wm_dwmwindowmaximizedchange-message"></a>Mensaje \_ DWMWINDOWMAXIMIZEDCHANGE de WM
 
-Se envía cuando se maximiza una ventana compuesta de Administrador de ventanas de escritorio (DWM).
+Se envía cuando se maximiza Administrador de ventanas de escritorio ventana compuesta de Administrador de ventanas de escritorio (DWM).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Se envía cuando se maximiza una ventana compuesta de Administrador de ventanas 
 *wParam* 
 </dt> <dd>
 
-Establézcalo en true para especificar que la ventana se ha maximizado.
+Establezca en true para especificar que la ventana se ha maximizado.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ No se utiliza.
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

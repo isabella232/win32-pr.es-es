@@ -1,17 +1,17 @@
 ---
-description: Desplazamiento entre el tiempo de presentación y las marcas de tiempo de los orígenes de medios.
+description: Desplazamiento entre el tiempo de presentación y las marcas de tiempo de los orígenes multimedia.
 ms.assetid: 450f3c39-063e-4bf3-838a-0f7c240d6647
-title: MF_EVENT_PRESENTATION_TIME_OFFSET atributo (mfapi. h)
+title: MF_EVENT_PRESENTATION_TIME_OFFSET atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 030d9d10eb5daf4fa1c920ad027397710b937881
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5ff2285bc624d42f17d4662cf93e3f46a65fcbef465e731874ef255c40c076d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013085"
 ---
-# <a name="mf_event_presentation_time_offset-attribute"></a>\_Atributo de \_ desplazamiento de tiempo de presentación de eventos MF \_ \_
+# <a name="mf_event_presentation_time_offset-attribute"></a>Atributo MF \_ EVENT \_ PRESENTATION TIME \_ \_ OFFSET
 
 Desplazamiento entre el tiempo de presentación y las marcas de tiempo del origen del medio.
 
@@ -19,24 +19,24 @@ Desplazamiento entre el tiempo de presentación y las marcas de tiempo del orige
 
 **UINT64**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El desplazamiento se calcula de la siguiente manera: desplazamiento = tiempo de presentación − hora de origen. Este atributo se utiliza con los siguientes eventos:
+El desplazamiento se calcula de la siguiente manera: desplazamiento = tiempo de presentación - hora de origen. Este atributo se usa con los siguientes eventos:
 
 -   [MESessionNotifyPresentationTime](mesessionnotifypresentationtime.md)
 -   [MESessionStarted](mesessionstarted.md)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -44,16 +44,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de eventos](event-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
+[**ATTRIBUTEAttributes::GetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint64)
 </dt> <dt>
 
-[**IMFAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
+[**ATTRIBUTEAttributes::SetUINT64**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint64)
 </dt> </dl>
 
  

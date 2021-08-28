@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase StringColumnValue'
-title: Clase StringColumnValue
+description: 'Más información sobre: Clase StringColumnValue'
+title: StringColumnValue (clase)
 TOCTitle: StringColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.StringColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.stringcolumnvalue(v=EXCHG.10)
@@ -24,27 +24,27 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e780cb0f53adfe7852eae29ae8d8af63bdc65613
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b41465ad5e3bdf2496d67b5cedd5d91d895754012ea7205c0e2343b8d6f8bbca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115555"
 ---
-# <a name="stringcolumnvalue-class"></a>Clase StringColumnValue
+# <a name="stringcolumnvalue-class"></a>StringColumnValue (clase)
 
-Valor de la columna de cadena Unicode.
+Valor de columna de cadena Unicode.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    Microsoft. ISAM. esent. Interop. StringColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    Microsoft.Isam.Esent.Interop.StringColumnValue  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,6 +66,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de StringColumnValue](./stringcolumnvalue-members.md)
+[Miembros StringColumnValue](./stringcolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

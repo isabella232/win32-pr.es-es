@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DNS-NSEC3-usuario-Salt
-description: Atributo que define una cadena de sal de NSEC3 especificada por el usuario que se va a usar al firmar la zona DNS. Si está vacío, se usará el valor Salt aleatorio.
+title: Atributo ms-DNS-NSEC3-User-Salt
+description: Atributo que define una cadena sal NSEC3 especificada por el usuario que se usará al firmar la zona DNS. Si está vacío, se usará sal aleatoria.
 ms.assetid: b9829732-8a79-4f07-8644-9fe4ba05ba8f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DNS-NSEC3-usuario-sal
-- msDN-NSEC3UserSalt atributo AD Schema
+- Esquema de AD del atributo ms-DNS-NSEC3-User-Salt
+- msDNS-NSEC3UserSalt attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d28acb28dec95ef13afc37f9d7f26d713d5cf9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1dbd1725675487ae5a6812dd77c400745b6671de0ef7db360e1c1980dd25b1b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553025"
 ---
-# <a name="ms-dns-nsec3-user-salt-attribute"></a>atributo MS-DNS-NSEC3-usuario-Salt
+# <a name="ms-dns-nsec3-user-salt-attribute"></a>Atributo ms-DNS-NSEC3-User-Salt
 
-Atributo que define una cadena de sal de NSEC3 especificada por el usuario que se va a usar al firmar la zona DNS. Si está vacío, se usará el valor Salt aleatorio.
+Atributo que define una cadena sal NSEC3 especificada por el usuario que se usará al firmar la zona DNS. Si está vacío, se usará sal aleatoria.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DNS-NSEC3-usuario-sal                      |
-| Nombre para mostrar de LDAP | msDN: NSEC3UserSalt                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DNS-NSEC3-User-Salt                      |
+| Ldap-Display-Name | msDNS-NSEC3UserSalt                         |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2148                     |
-| System-ID-GUID    | aff16770-9622-4fbc-a128-3088777605b9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | aff16770-9622-4fbc-a128-3088777605b9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -50,18 +50,18 @@ Atributo que define una cadena de sal de NSEC3 especificada por el usuario que s
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 510                                      |
 | Search-Flags           | 0x00000008                               |
 | System-Flags           | 0x00000010                               |
-| Clases usadas en        | [**Zona DNS**](c-dnszone.md)<br/> |
+| Clases usadas en        | [**Dns-Zone**](c-dnszone.md)<br/> |
 
 
 

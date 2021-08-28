@@ -1,7 +1,7 @@
 ---
 description: Marcas usadas para obtener información de devolución de llamada.
 ms.assetid: e8126ff0-db23-4da6-a999-0efb8c2647da
-title: Enumeración D3DXCALLBACK_SEARCH_FLAGS (D3dx9anim. h)
+title: D3DXCALLBACK_SEARCH_FLAGS enumeración (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: d3302b79734557a5c1f2082ec2a4e95c03790f4a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0a050263934684f766bb9b7d58b83665a31a5edbd099a43ad1947eba74ca25bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676385"
 ---
-# <a name="d3dxcallback_search_flags-enumeration"></a>\_Enumeración de marcas de búsqueda de D3DXCALLBACK \_
+# <a name="d3dxcallback_search_flags-enumeration"></a>D3DXCALLBACK \_ SEARCH \_ FLAGS (enumeración)
 
 Marcas usadas para obtener información de devolución de llamada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,24 +41,24 @@ typedef enum D3DXCALLBACK_SEARCH_FLAGS {
 
 <dl> <dt>
 
-<span id="D3DXCALLBACK_SEARCH_EXCLUDING_INITIAL_POSITION"></span><span id="d3dxcallback_search_excluding_initial_position"></span>**D3DXCALLBACK \_ búsqueda \_ excluyendo la \_ \_ posición inicial**
+<span id="D3DXCALLBACK_SEARCH_EXCLUDING_INITIAL_POSITION"></span><span id="d3dxcallback_search_excluding_initial_position"></span>**D3DXCALLBACK \_ SEARCH \_ EXCLUDING \_ INITIAL \_ POSITION**
 </dt> <dd>
 
 Excluya las devoluciones de llamada ubicadas en la posición inicial de la búsqueda.
 
 </dd> <dt>
 
-<span id="D3DXCALLBACK_SEARCH_BEHIND_INITIAL_POSITION"></span><span id="d3dxcallback_search_behind_initial_position"></span>**D3DXCALLBACK \_ Buscar \_ detrás de la \_ \_ posición inicial**
+<span id="D3DXCALLBACK_SEARCH_BEHIND_INITIAL_POSITION"></span><span id="d3dxcallback_search_behind_initial_position"></span>**D3DXCALLBACK \_ SEARCH \_ BEHIND \_ INITIAL \_ POSITION**
 </dt> <dd>
 
-Invertir la dirección de búsqueda de devolución de llamada.
+Invierte la dirección de búsqueda de devolución de llamada.
 
 </dd> <dt>
 
-<span id="D3DXCALLBACK_SEARCH_FORCE_DWORD"></span><span id="d3dxcallback_search_force_dword"></span>**D3DXCALLBACK \_ de \_ forzar búsqueda en \_ DWORD**
+<span id="D3DXCALLBACK_SEARCH_FORCE_DWORD"></span><span id="d3dxcallback_search_force_dword"></span>**D3DXCALLBACK \_ SEARCH \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

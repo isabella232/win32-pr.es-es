@@ -1,19 +1,19 @@
 ---
-description: Se envía el mensaje DEVSPECIFICFEATURE de línea de TAPI \_ para notificar a la aplicación los eventos específicos del dispositivo que se producen en una línea, una dirección o una llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
+description: El mensaje TAPI LINE DEVSPECIFICFEATURE se envía para notificar a la aplicación los eventos específicos del dispositivo que se producen en una línea, dirección \_ o llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
 ms.assetid: 5f1a4da2-1a2a-4a18-8a69-82d27ddca9cf
-title: Mensaje de LINE_DEVSPECIFICFEATURE (TAPI. h)
+title: LINE_DEVSPECIFICFEATURE mensaje (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d45f91f4b3d45b52a345827e6535b054e9cf2c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95c1ec56a41d6e57c6e090c9af682cb91c8ffdb891e376fcd9760ff1b51c5d51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012535"
 ---
-# <a name="line_devspecificfeature-message"></a>Mensaje de línea \_ DEVSPECIFICFEATURE
+# <a name="line_devspecificfeature-message"></a>Mensaje \_ LINE DEVSPECIFICFEATURE
 
-Se envía el mensaje **\_ DEVSPECIFICFEATURE de línea** de TAPI para notificar a la aplicación los eventos específicos del dispositivo que se producen en una línea, una dirección o una llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
+El mensaje TAPI **LINE \_ DEVSPECIFICFEATURE** se envía para notificar a la aplicación los eventos específicos del dispositivo que se producen en una línea, dirección o llamada. El significado del mensaje y la interpretación de los parámetros son específicos del dispositivo.
 
 
 ```C++
@@ -29,7 +29,7 @@ Se envía el mensaje **\_ DEVSPECIFICFEATURE de línea** de TAPI para notificar 
 *hDevice* 
 </dt> <dd>
 
-Identificador de un dispositivo de línea o de una llamada a. Esto es específico del dispositivo.
+Un identificador para un dispositivo de línea o una llamada. Esto es específico del dispositivo.
 
 </dd> <dt>
 
@@ -65,9 +65,9 @@ Específico del dispositivo.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un proveedor de servicios usa el mensaje **line \_ DEVSPECIFICFEATURE** junto con la función [**lineDevSpecificFeature**](/windows/desktop/api/Tapi/nf-tapi-linedevspecificfeature) . Su significado es específico del dispositivo.
+Un proveedor de servicios usa el mensaje **LINE \_ DEVSPECIFICFEATURE** junto con la función [**lineDevSpecificFeature.**](/windows/desktop/api/Tapi/nf-tapi-linedevspecificfeature) Su significado es específico del dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Un proveedor de servicios usa el mensaje **line \_ DEVSPECIFICFEATURE** junto co
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

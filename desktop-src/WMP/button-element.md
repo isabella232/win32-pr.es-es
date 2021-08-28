@@ -3,84 +3,84 @@ title: Elemento BUTTON (WMP)
 description: Elemento BUTTON
 ms.assetid: 2818ff6a-4fc5-4150-9ff9-ff143feb9204
 keywords:
-- Aspectos de Windows Media Player, elemento BUTTON
-- aspectos, elemento BUTTON
-- Elemento BUTTON
-- referencia de aspectos, elemento BUTTON
-- elementos, botón
+- Reproductor de Windows Media máscaras,elemento BUTTON
+- máscaras, elemento BUTTON
+- Button, elemento
+- referencia de máscaras,elemento BUTTON
+- elements,BUTTON
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c069207e15be62e06b4d2b18f13c052026932dc
-ms.sourcegitcommit: 6f7576b297d54c0b8f9c79e02c912b83041aa4fb
+ms.openlocfilehash: 13ca4e57dafdc01fc194c4cf4bc534e067297a58fcc2527939e3672f2d705628
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "103785141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736735"
 ---
 # <a name="button-element"></a>Elemento BUTTON
 
-El elemento **Button** proporciona una manera de crear un botón dentro de una máscara. Los atributos siguientes se pueden usar para personalizar el comportamiento de un botón, o bien se puede usar un botón predefinido para mayor comodidad.
+El **elemento BUTTON** proporciona una manera de crear un botón dentro de una máscara. Los atributos siguientes se pueden usar para personalizar el comportamiento de un botón o se puede usar un botón predefinido para mayor comodidad.
 
-El elemento **Button** admite los siguientes atributos.
+El **elemento BUTTON** admite los atributos siguientes.
 
 
 
 | Atributo                                         | Descripción                                                                                                                                      |
 |---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [cursor](button-cursor.md)                       | Especifica o recupera el cursor que aparece cuando se mantiene el puntero del mouse sobre el **botón**.                                                |
-| [disabledImage](button-disabledimage.md)         | Especifica o recupera la imagen que se muestra cuando el **botón** está deshabilitado.                                                                  |
-| [vertical](button-down.md)                           | Especifica o recupera un valor que indica si el **botón** está en la posición arriba o abajo.                                                  |
-| [downImage](button-downimage.md)                 | Especifica o recupera la imagen que representa el estado inactivo del **botón**.                                                                  |
-| [downToolTip](button-downtooltip.md)             | Especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre el **botón** y el **botón** se encuentra en estado desactivado o presionado. |
-| [hoverDownImage](button-hoverdownimage.md)       | Especifica o recupera la imagen que se muestra cuando el **botón** está en estado inactivo y el usuario mantiene el puntero del mouse sobre él.          |
-| [hoverImage](button-hoverimage.md)               | Especifica o recupera la imagen que se muestra cuando el **botón** está en el estado up y el usuario mantiene el puntero del mouse sobre él.            |
-| [image](button-image.md)                         | Especifica o recupera la imagen predeterminada del **botón**.                                                                                      |
-| [rápidas](button-sticky.md)                       | Especifica o recupera un valor que indica si el **botón** es un control de alternancia, es decir, si es un botón de dos Estados o de un solo Estado.         |
-| [en mosaico](button-tiled.md)                         | Especifica o recupera un valor que indica si se va a colocar en mosaico la imagen del **botón** .                                                            |
-| [Property](button-transparencycolor.md) | Especifica o recupera el color que será transparente en la imagen del **botón** .                                                               |
-| [Información sobre herramientas](button-uptooltip.md)                 | Especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre el **botón** y el **botón** está en estado activo.                |
+| [cursor](button-cursor.md)                       | Especifica o recupera el cursor que aparece cuando el puntero del mouse mantiene el puntero sobre **BUTTON**.                                                |
+| [disabledImage](button-disabledimage.md)         | Especifica o recupera la imagen que se muestra cuando **button** está deshabilitado.                                                                  |
+| [down](button-down.md)                           | Especifica o recupera un valor que indica si **button** está en la posición de arriba o abajo.                                                  |
+| [downImage](button-downimage.md)                 | Especifica o recupera la imagen que representa el estado de apagado de **BUTTON.**                                                                  |
+| [downToolTip](button-downtooltip.md)             | Especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre **button** y **button** está en estado de depresión o deprimido. |
+| [hoverDownImage](button-hoverdownimage.md)       | Especifica o recupera la imagen que se muestra cuando **button** está en estado de bajada y el usuario mantiene el mouse sobre ella con el puntero del mouse.          |
+| [hoverImage](button-hoverimage.md)               | Especifica o recupera la imagen que se muestra cuando **button** está en estado up y el usuario mantiene el mouse sobre ella con el puntero del mouse.            |
+| [image](button-image.md)                         | Especifica o recupera la imagen predeterminada de **BUTTON.**                                                                                      |
+| [Pegajoso](button-sticky.md)                       | Especifica o recupera un valor que indica si **BUTTON** es un botón de alternancia, es decir, si es un botón de dos estados o de un solo estado.         |
+| [Baldosas](button-tiled.md)                         | Especifica o recupera un valor que indica si la **imagen BUTTON** se va a aplicar en mosaico.                                                            |
+| [transparencyColor](button-transparencycolor.md) | Especifica o recupera el color que será transparente en la **imagen BUTTON.**                                                               |
+| [upToolTip](button-uptooltip.md)                 | Especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre **button** y **button** está en estado up.                |
 
 
 
- 
+ 
 
-El elemento **Button** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente. Para obtener más información, vea [atributos de ambiente](ambient-attributes.md) y controladores de eventos de [ambiente](ambient-event-handlers.md).
+El **elemento BUTTON** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente. Para obtener más información, vea [Atributos ambientales](ambient-attributes.md) y [controladores de eventos de ambiente.](ambient-event-handlers.md)
 
-Los botones predefinidos son elementos de **botón** normales con varios valores de atributos comunes especificados de forma predeterminada. Están disponibles los siguientes botones predefinidos.
+Los botones predefinidos son **elementos BUTTON** normales con varias configuraciones de atributo comunes especificadas de forma predeterminada. Están disponibles los siguientes botones predefinidos.
 
 
 
 | BOTÓN predefinido                    | Descripción                                                                        |
 |--------------------------------------|------------------------------------------------------------------------------------|
-| [CLOSEBUTTON](closebutton.md)       | Un **botón** que se usa para cerrar el reproductor.                                             |
-| [FFWDBUTTON](ffwdbutton.md)         | Un **botón** con una llamada integrada a **Player. Controls. fastForward** cuando se hace clic en él. |
-| [IMAGEBUTTON](imagebutton.md)       | Un **botón** que se usa para mostrar una imagen.                                             |
-| [MINIMIZEBUTTON](minimizebutton.md) | Un **botón** que se usa para minimizar el reproductor.                                          |
-| [MUTEBUTTON](mutebutton.md)         | Un **botón** que se usa para silenciar y dessilenciar el audio.                                   |
-| [NEXTBUTTON](nextbutton.md)         | Un **botón** con una llamada integrada a **Player. Controls. Next** cuando se hace clic en él.        |
-| [PAUSEBUTTON](pausebutton.md)       | Un **botón** con una llamada integrada a **Player. Controls. PAUSE** cuando se hace clic en él.       |
-| [PLAYBUTTON](playbutton.md)         | Un **botón** con una llamada integrada a **Player. Controls. Play** cuando se hace clic en él.        |
-| [PREVBUTTON](prevbutton.md)         | Un **botón** con una llamada integrada a **Player. Controls. Previous** cuando se hace clic en él.    |
-| [REPEATBUTTON](repeatbutton.md)     | Un **botón** que alterna la opción de repetición.                                       |
-| [RETURNBUTTON](returnbutton.md)     | Un **botón** que devuelve Windows Media Player a Media Center.                |
-| [REWBUTTON](rewbutton.md)           | Un **botón** con una llamada integrada a **Player. Controls. fastReverse** cuando se hace clic en él. |
-| [SHUFFLEBUTTON](shufflebutton.md)   | Un **botón** que alterna la opción de orden aleatorio.                                      |
-| [STOPBUTTON](stopbutton.md)         | Un **botón** con una llamada integrada a **Player. Controls. Stop** cuando se hace clic en él.        |
+| [CLOSEBUTTON](closebutton.md)       | Botón **que** se usa para cerrar el reproductor.                                             |
+| [FFWDBUTTON](ffwdbutton.md)         | Botón **con** una llamada integrada a **player.controls.fastForward** cuando se hace clic en él. |
+| [Imagebutton](imagebutton.md)       | Botón **que** se usa para mostrar una imagen.                                             |
+| [MINIMIZEBUTTON](minimizebutton.md) | Botón **que** se usa para minimizar el reproductor.                                          |
+| [MUTEBUTTON](mutebutton.md)         | Botón **que** se usa para silenciar y desactivar el audio.                                   |
+| [NEXTBUTTON](nextbutton.md)         | Botón **con** una llamada integrada a **player.controls.next cuando** se hace clic en él.        |
+| [PAUSEBUTTON](pausebutton.md)       | Botón **con** una llamada integrada a **player.controls.pause cuando** se hace clic en él.       |
+| [Playbutton](playbutton.md)         | Botón **con** una llamada integrada a **player.controls.play cuando** se hace clic en él.        |
+| [PREVBUTTON](prevbutton.md)         | Botón **con** una llamada integrada a **player.controls.previous cuando** se hace clic en él.    |
+| [REPEATBUTTON](repeatbutton.md)     | Botón **que** alterna la opción Repetir.                                       |
+| [RETURNBUTTON](returnbutton.md)     | Botón **que** devuelve Reproductor de Windows Media al centro multimedia.                |
+| [REWBUTTON](rewbutton.md)           | Botón **con** una llamada integrada a **player.controls.fastReverse cuando** se hace clic en él. |
+| [SHUFFLEBUTTON](shufflebutton.md)   | Botón **que** alterna la opción Orden aleatorio.                                      |
+| [STOPBUTTON](stopbutton.md)         | Botón **con** una llamada integrada a **player.controls.stop cuando** se hace clic en él.        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de programación de máscara**](skin-programming-reference.md)
+[**Referencia de programación de máscaras**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

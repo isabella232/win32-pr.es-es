@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase DurableCommitCallback'
-title: Clase DurableCommitCallback (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: DurableCommitCallback (clase)'
+title: Clase DurableCommitCallback (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: DurableCommitCallback class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallback(v=EXCHG.10)
@@ -24,27 +24,27 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5eba35a12c79178fc69260b79276779e9572d1a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a3188912d27bb5a793721189cfe5f9d1e917a1b8c55a2a43cefb77f6fce5c0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786255"
 ---
-# <a name="durablecommitcallback-class"></a>Clase DurableCommitCallback
+# <a name="durablecommitcallback-class"></a>DurableCommitCallback (clase)
 
-Ajusta la devolución de llamada que trata con confirmaciones duraderas.
+Encapsula la devolución de llamada que trabaja con confirmaciones duraderas.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. EsentResource](./esentresource-class.md)  
-    Microsoft. ISAM. esent. Interop. Windows8. DurableCommitCallback  
+  [Microsoft.Isam.Esent.Interop.EsentResource](./esentresource-class.md)  
+    Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallback  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,6 +66,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de DurableCommitCallback](./durablecommitcallback-members.md)
+[Miembros DurableCommitCallback](./durablecommitcallback-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

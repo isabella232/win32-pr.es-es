@@ -4,26 +4,26 @@ description: Servicios de animación
 ms.assetid: d28bd71e-93ae-406e-b5a6-0806c00ec2d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01865cfbd7cfce393cf8029675f9df8a159c7e60
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cdd20ea7760e37b349a65e81cb7bed5804bf9bf6a64a47d8da79316b206342a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114915"
 ---
 # <a name="animation-services"></a>Servicios de animación
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-Los servicios de animación de Microsoft Agent administran la animación y el movimiento de la imagen de un carácter en su propia ventana en la pantalla. Una animación se define como una secuencia de fotogramas de tiempo y, opcionalmente, bifurcados, que se compone de una o varias imágenes.
+Los servicios de animación de Microsoft Agent administran la animación y el movimiento de la imagen de un carácter en su propia ventana de la pantalla. Una animación se define como una secuencia de fotogramas con tiempo y, opcionalmente, bifurcados, compuestos por una o varias imágenes.
 
 -   [Cargar un carácter](loading-a-character.md)
--   [Cargar el carácter predeterminado](loading-the-default-character.md)
+-   [Carga del carácter predeterminado](loading-the-default-character.md)
 -   [Animar un carácter](animating-a-character.md)
 
- 
+ 
 
- 
+ 
 
 
 

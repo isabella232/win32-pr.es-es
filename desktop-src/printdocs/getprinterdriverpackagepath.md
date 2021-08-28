@@ -1,7 +1,7 @@
 ---
 description: Recupera la ruta de acceso al paquete de controladores de impresora especificado en un servidor de impresión.
 ms.assetid: e88e984b-d2c0-43b4-8f70-b05ec202ab14
-title: Función GetPrinterDriverPackagePath (winspool. h)
+title: Función GetPrinterDriverPackagePath (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: ea355782df6cce7910f92a46af3cde320536106e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5058d57a0275019c5e603673d260c9969cc0b5d5641dea15e09ffe242addff10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600805"
 ---
-# <a name="getprinterdriverpackagepath-function"></a>GetPrinterDriverPackagePath función)
+# <a name="getprinterdriverpackagepath-function"></a>Función GetPrinterDriverPackagePath
 
 Recupera la ruta de acceso al paquete de controladores de impresora especificado en un servidor de impresión.
 
@@ -47,82 +47,82 @@ HRESULT GetPrinterDriverPackagePath(
 
 <dl> <dt>
 
-*pszServer* \[ de\]
+*pszServer* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena constante terminada en null que especifica el nombre del servidor de impresión. Use **null** para el equipo local.
+Puntero a una cadena constante terminada en NULL que especifica el nombre del servidor de impresión. Use **NULL** para el equipo local.
 
 </dd> <dt>
 
-*pszEnvironment* \[ de\]
+*pszEnvironment* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena constante terminada en null que especifica la arquitectura del procesador (por ejemplo, Windows NT x86). Puede ser **null**.
+Puntero a una cadena constante terminada en NULL que especifica la arquitectura del procesador (por ejemplo, Windows NT x86). Puede ser **NULL.**
 
 </dd> <dt>
 
-*pszLanguage* \[ de\]
+*pszLanguage* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena constante terminada en null que especifica el idioma de la [interfaz de usuario multilingüe](/windows/desktop/Intl/mui-resource-management) para el controlador que se va a instalar. Puede ser **null**.
+Puntero a una cadena constante terminada en NULL que especifica el [Interfaz de usuario multilingüe](/windows/desktop/Intl/mui-resource-management) idioma del controlador que se va a instalar. Puede ser **NULL.**
 
 </dd> <dt>
 
-*pszPackageID* \[ de\]
+*pszPackageID* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena constante terminada en null que especifica el identificador del paquete de controladores.
+Puntero a una cadena constante terminada en NULL que especifica el identificador del paquete de controladores.
 
 </dd> <dt>
 
 *pszDriverPackageCab* \[ in, out\]
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica la ruta de acceso al archivo. cab para el paquete de controladores. Puede ser **null**. Vea la sección Comentarios.
+Puntero a una cadena terminada en NULL que especifica la ruta de acceso al archivo de archivador para el paquete de controladores. Puede ser **NULL.** Vea la sección Comentarios.
 
 </dd> <dt>
 
-*cchDriverPackageCab* \[ de\]
+*cchDriverPackageCab* \[ En\]
 </dt> <dd>
 
-Tamaño, en caracteres, del búfer *pszDriverPackageCab* . Puede ser **null**.
+Tamaño, en caracteres, del *búfer pszDriverPackageCab.* Puede ser **NULL.**
 
 </dd> <dt>
 
-*pcchRequiredSize* \[ enuncia\]
+*pcchRequiredSize* \[ out\]
 </dt> <dd>
 
-Puntero al tamaño requerido del búfer de *pszDriverPackageCab* .
+Puntero al tamaño necesario del búfer *pszDriverPackageCab.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la operación se realiza correctamente, el valor devuelto es S \_ OK; de lo contrario, **HRESULT** contendrá un código de error.
+Si la operación se realiza correctamente, el valor devuelto es S OK; de \_ lo **contrario, HRESULT** contendrá un código de error.
 
-Para obtener más información sobre los códigos de error COM, vea [control de errores](../com/error-handling-in-com.md).
+Para obtener más información sobre los códigos de error COM, vea [Control de errores.](../com/error-handling-in-com.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Para obtener un valor para *cchDriverPackageCab*, llame a la función con **null** como el valor de *pszDriverPackageCab*. Use el valor devuelto en *pcchRequiredSize* como el valor de *cchDriverPackageCab* y vuelva a llamar a la función.
+Para obtener un valor para *cchDriverPackageCab*, llame a la función **con NULL** como el valor de *pszDriverPackageCab*. Use el valor devuelto en *pcchRequiredSize* como valor de *cchDriverPackageCab* y llame a la función de nuevo.
 
-El *pszPackageID* se suele obtener de una llamada a [**GetCorePrinterDrivers**](getcoreprinterdrivers.md).
+*PszPackageID* normalmente se obtiene de una llamada a [**GetCorePrinterDrivers.**](getcoreprinterdrivers.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | Archivo DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nombres Unicode y ANSI<br/>   | **GetPrinterDriverPackagePathW** (Unicode) y **GetPrinterDriverPackagePathA** (ANSI)<br/>         |
 

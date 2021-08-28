@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_NCLBUTTONUP (Winuser. h)
-description: Se envía cuando el usuario suelta el botón primario del mouse mientras el cursor se encuentra dentro del área no cliente de una ventana. Este mensaje se envía a la ventana que contiene el cursor. Si una ventana ha capturado el mouse, este mensaje no se publica.
+title: WM_NCLBUTTONUP mensaje (Winuser.h)
+description: Se publica cuando el usuario suelta el botón izquierdo del mouse mientras el cursor está dentro del área no cliente de una ventana. Este mensaje se publica en la ventana que contiene el cursor. Si una ventana ha capturado el mouse, este mensaje no se publica.
 ms.assetid: 0c30dcbd-a4ff-43da-bbd2-fbac1a347c11
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_NCLBUTTONUP
+- WM_NCLBUTTONUP entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15df7beefbfa411d00b5a069b68f4ef8cabdff58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ae3a79d7bd5c8747efc42e25c71527c35e47598d6d1d1c9f88ae3ed929ea68ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451435"
 ---
-# <a name="wm_nclbuttonup-message"></a>Mensaje de NCLBUTTONUP de WM \_
+# <a name="wm_nclbuttonup-message"></a>Mensaje \_ NCLBUTTONUP de WM
 
-Se envía cuando el usuario suelta el botón primario del mouse mientras el cursor se encuentra dentro del área no cliente de una ventana. Este mensaje se envía a la ventana que contiene el cursor. Si una ventana ha capturado el mouse, este mensaje no se publica.
+Se publica cuando el usuario suelta el botón izquierdo del mouse mientras el cursor está dentro del área no cliente de una ventana. Este mensaje se publica en la ventana que contiene el cursor. Si una ventana ha capturado el mouse, este mensaje no se publica.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,14 +41,14 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-El valor de la prueba de posicionamiento devuelto por la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado de procesar el mensaje de [**\_ NCHITTEST de WM**](wm-nchittest.md) . Para obtener una lista de los valores de las pruebas de posicionamiento, consulte **WM \_ NCHITTEST**.
+Valor de prueba de acceso devuelto por la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado del procesamiento del [**mensaje WM \_ NCHITTEST.**](wm-nchittest.md) Para obtener una lista de valores de prueba de acceso, vea **WM \_ NCHITTEST**.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Estructura de [**puntos**](/previous-versions//dd162808(v=vs.85)) que contiene las coordenadas x e y del cursor. Las coordenadas son relativas a la esquina superior izquierda de la pantalla.
+Estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) que contiene las coordenadas x e y del cursor. Las coordenadas son relativas a la esquina superior izquierda de la pantalla.
 
 </dd> </dl>
 
@@ -56,11 +56,11 @@ Estructura de [**puntos**](/previous-versions//dd162808(v=vs.85)) que contiene l
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) comprueba el punto especificado para averiguar la ubicación del cursor y realiza la acción adecuada. Si es necesario, **DefWindowProc** envía el mensaje de [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) a la ventana.
+La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) prueba el punto especificado para averiguar la ubicación del cursor y realiza la acción adecuada. Si procede, **DefWindowProc** envía el [**mensaje \_ SYSCOMMAND de WM**](/windows/desktop/menurc/wm-syscommand) a la ventana.
 
-También puede usar las macros [**Get \_ x \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) y [**Get \_ y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer los valores de las coordenadas x e y de *lParam*.
+También puede usar las macros [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) y [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer los valores de las coordenadas x e y- de *lParam*.
 
 
 ```
@@ -71,11 +71,11 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 > [!IMPORTANT]
-> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
+> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** e **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
-Si es adecuado hacerlo, el sistema envía el mensaje de [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) a la ventana.
+Si es adecuado hacerlo, el sistema envía el [**mensaje \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) de WM a la ventana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Si es adecuado hacerlo, el sistema envía el mensaje de [**WM \_ SYSCOMMAND**](/
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir windowsx. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windowsx.h)</dt> </dl> |
 
 
 
@@ -99,25 +99,25 @@ Si es adecuado hacerlo, el sistema envía el mensaje de [**WM \_ SYSCOMMAND**](/
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**OBTENER \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OBTENER \_ \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
-[**NCHITTEST de WM \_**](wm-nchittest.md)
+[**WM \_ NCHITTEST**](wm-nchittest.md)
 </dt> <dt>
 
-[**NCLBUTTONDBLCLK de WM \_**](wm-nclbuttondblclk.md)
+[**WM \_ NCLBUTTONDBLCLK**](wm-nclbuttondblclk.md)
 </dt> <dt>
 
-[**NCLBUTTONDOWN de WM \_**](wm-nclbuttondown.md)
+[**WM \_ NCLBUTTONDOWN**](wm-nclbuttondown.md)
 </dt> <dt>
 
-[**SYSCOMMAND de WM \_**](/windows/desktop/menurc/wm-syscommand)
+[**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada del mouse](mouse-input.md)
@@ -129,7 +129,7 @@ Si es adecuado hacerlo, el sistema envía el mensaje de [**WM \_ SYSCOMMAND**](/
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**CIMA**](/previous-versions//dd162808(v=vs.85))
+[**Puntos**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

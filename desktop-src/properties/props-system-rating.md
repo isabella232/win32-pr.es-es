@@ -1,19 +1,19 @@
 ---
-description: Un sistema de clasificación que usa valores enteros entre 1 y 99. Este es el sistema de clasificación usado por el shell de Windows Vista.
+description: Sistema de clasificación que usa valores enteros entre 1 y 99. Este es el sistema de clasificación que usa Windows Shell de Vista.
 ms.assetid: a6288d29-1ef3-4da1-bd30-577336ab6817
-title: System. Rating
+title: System.Rating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e411e313f0fa6042a8cbe3a076a7166928020af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9adc62e69ced0f82426f19badb1aebef0453084a9b951b749aed256aa64820a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598135"
 ---
-# <a name="systemrating"></a>System. Rating
+# <a name="systemrating"></a>System.Rating
 
-Un sistema de clasificación que usa valores enteros entre 1 y 99. Este es el sistema de clasificación usado por el shell de Windows Vista.
+Sistema de clasificación que usa valores enteros entre 1 y 99. Este es el sistema de clasificación que usa Windows Shell de Vista.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -137,17 +137,17 @@ propertyDescription
             minValue = 100
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Para obtener compatibilidad con sistemas de clasificación que usan valores entre 1 y 5, vea la propiedad [System. SimpleRating](./props-system-simplerating.md). Tenga en cuenta, sin embargo, que System. SimpleRating no se usa en el shell de Windows Vista.
+Para obtener compatibilidad con sistemas de clasificaciones que usan valores entre 1 y 5, vea la propiedad [System.SimpleRating](./props-system-simplerating.md). Sin embargo, tenga en cuenta que System.SimpleRating no se usa en Windows Shell de Vista.
 
-En la tabla siguiente se describe el sistema de clasificación por estrellas que se usa en la interfaz de usuario de Shell en términos del valor [System. Rating]() .
+En la tabla siguiente se describe lo que significa el sistema de clasificación de estrellas usado en la interfaz de usuario de Shell en términos [del valor System.Rating.]()
 
 
 
-| System. Rating | Clasificación por estrellas |
+| System.Rating | Clasificación por estrellas |
 |---------------|-------------|
 | 1-12          | 1 estrella      |
 | 13-37         | 2 estrellas     |
@@ -159,7 +159,7 @@ En la tabla siguiente se describe el sistema de clasificación por estrellas que
 
  
 
-Cuando un usuario califica un elemento mediante la elección de un valor de clasificación por estrellas en la interfaz de usuario, los valores [System. Rating]() reales se asignan como se muestra en esta tabla:
+Cuando un usuario valora un elemento eligiendo un valor de clasificación de estrella en la interfaz de usuario, los valores [reales de System.Rating]() se asignan como se muestra en esta tabla:
 
 
 
@@ -175,11 +175,11 @@ Cuando un usuario califica un elemento mediante la elección de un valor de clas
 
  
 
-Si el archivo tiene un valor [System. SimpleRating](./props-system-simplerating.md) en lugar de un valor [System. Rating]() , utilice la tabla siguiente para convertir y especificar valores para System. Rating.
+Si el archivo tiene un [valor System.SimpleRating](./props-system-simplerating.md) en lugar de un valor [System.Rating,]() use la tabla siguiente para convertir y especificar valores para System.Rating.
 
 
 
-| System. SimpleRating | System. Rating |
+| System.SimpleRating | System.Rating |
 |---------------------|---------------|
 | 1                   | 1             |
 | 2                   | 25            |
@@ -191,7 +191,7 @@ Si el archivo tiene un valor [System. SimpleRating](./props-system-simplerating.
 
  
 
-Si el archivo tiene valores persistentes [System. Rating]() y [System. SimpleRating](./props-system-simplerating.md) , use siempre el valor System. Rating cuando se solicite directamente, sin hacer referencia a System. SimpleRating.
+Si el archivo tiene los valores persistentes [System.Rating]() y [System.SimpleRating,](./props-system-simplerating.md) use siempre el valor System.Rating cuando se solicite directamente, sin referencia a System.SimpleRating.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -206,7 +206,7 @@ Si el archivo tiene valores persistentes [System. Rating]() y [System. SimpleRat
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -218,7 +218,7 @@ Si el archivo tiene valores persistentes [System. Rating]() y [System. SimpleRat
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -236,7 +236,7 @@ Si el archivo tiene valores persistentes [System. Rating]() y [System. SimpleRat
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: ModemDMConfigProfile \/ ... \/ AccessString (v4)
+description: '\/MódemDMConfigProfile... \/ AccessString (v4)'
 MS-HAID: WWAN\_profile\_v4.element\_1\_AccessString
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5ca8a917dacadd68a2727006471ea1277acc2462
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 536ef31df9bbd60bfbb6a48c3f6de07718c5ce31
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469442"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982158"
 ---
-# <a name="span-idwwan_profile_v4element_1_accessstringspanmodemdmconfigprofileaccessstring-v4"></a><span id="WWAN_profile_v4.element_1_AccessString"></span>ModemDMConfigProfile \/ ... \/ AccessString (v4)
+# <a name="span-idwwan_profile_v4element_1_accessstringspanmodemdmconfigprofileaccessstring-v4"></a><span id="WWAN_profile_v4.element_1_AccessString"></span>MódemDMConfigProfile \/ ... \/ AccessString (v4)
 
 Identifica el APN o la cadena de marcado que se va a usar para establecer una conexión de datos.
 
-Para obtener más información, consulte la documentación del elemento [**AccessString**](./schema-accessstring-contexttype-element.md) v1.
+Para obtener más información, vea la documentación del elemento [**AccessString**](./schema-accessstring-contexttype-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -39,7 +39,7 @@ Para obtener más información, consulte la documentación del elemento [**Acces
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<AccessString\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <AccessString>
@@ -72,7 +72,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

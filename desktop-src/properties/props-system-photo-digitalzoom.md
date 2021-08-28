@@ -1,19 +1,19 @@
 ---
-description: La relación de zoom digital cuando se tomó la imagen.
+description: Proporción de zoom digital cuando se rodó la imagen.
 ms.assetid: 1164e2c9-0864-4520-a3be-0c29a5b70ba4
-title: System. Photo. DigitalZoom
+title: System.Photo.DigitalZoom
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b681b898b8faadcf4366e9d7668975e598d95c24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e47f98b4ff65f541160804c41f0b6bcd0218d04514a079f39374b222e15013cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598321"
 ---
-# <a name="systemphotodigitalzoom"></a>System. Photo. DigitalZoom
+# <a name="systemphotodigitalzoom"></a>System.Photo.DigitalZoom
 
-La relación de zoom digital cuando se tomó la imagen. Lea desde la cámara en la información del archivo de imagen intercambiable (EXIF) del archivo. Esta propiedad se calcula a partir de [System. Photo. DigitalZoomNumerator](./props-system-photo-digitalzoomnumerator.md) y [System. Photo. DigitalZoomDenominator](./props-system-photo-digitalzoomdenominator.md). Si el numerador del valor grabado es 0, no se utilizó un zoom digital.
+Proporción de zoom digital cuando se rodó la imagen. Lee de la cámara en la información de Archivo de imagen intercambiable (EXIF) del archivo. Esta propiedad se calcula a [partir de System.Photo.DigitalZoomNumerator](./props-system-photo-digitalzoomnumerator.md) y [System.Photo.DigitalZoomDenominator.](./props-system-photo-digitalzoomdenominator.md) Si el numerador del valor registrado es 0, no se usó un zoom digital.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,15 +31,15 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Exchangeable Image File Format para las cámaras digitales fijas: versión Exif 2,2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras Digital Still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)
@@ -51,7 +51,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -81,7 +81,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

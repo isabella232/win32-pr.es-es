@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CBEM_GETEXTENDEDSTYLE (commctrl. h)
+title: CBEM_GETEXTENDEDSTYLE mensaje (Commctrl.h)
 description: Obtiene los estilos extendidos que se usan para un control ComboBoxEx.
 ms.assetid: 7c661d9c-fa9a-4284-9bb0-d54708cb6468
 keywords:
-- CBEM_GETEXTENDEDSTYLE controles de mensajes de Windows
+- CBEM_GETEXTENDEDSTYLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d13320813634f393ba3543e028f2d79bca2b537
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8dde66404db390c467004c1ea100fa04761820d73faa226e47f76790631f0c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699295"
 ---
-# <a name="cbem_getextendedstyle-message"></a>CBEM \_ GETEXTENDEDSTYLE
+# <a name="cbem_getextendedstyle-message"></a>Mensaje \_ GETEXTENDEDSTYLE de CBEM
 
 Obtiene los estilos extendidos que se usan para un control ComboBoxEx.
 
@@ -37,17 +37,17 @@ Obtiene los estilos extendidos que se usan para un control ComboBoxEx.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor DWORD que contiene los [estilos extendidos del control ComboBoxEx](comboboxex-control-extended-styles.md) en uso para el control.
+Devuelve un valor DWORD que contiene los estilos extendidos del [control ComboBoxEx](comboboxex-control-extended-styles.md) en uso para el control .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

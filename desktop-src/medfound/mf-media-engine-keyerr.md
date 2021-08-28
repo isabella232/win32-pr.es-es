@@ -1,7 +1,7 @@
 ---
-description: Define códigos de error de clave de medios para el motor multimedia.
+description: Define códigos de error de clave multimedia para el motor de medios.
 ms.assetid: F6E13260-74A2-40D0-A704-4E1CDB16B8D8
-title: Enumeración MF_MEDIA_ENGINE_KEYERR
+title: MF_MEDIA_ENGINE_KEYERR enumeración
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 22dd22a7771f5d1e9466709f0b0da9ee936ef2b9
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5a3573f721f31ffbe3858c7d6fb3c713468bc347f04a1b5d85c5839a1e18511b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104361868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113935"
 ---
-# <a name="mf_media_engine_keyerr-enumeration"></a>\_ \_ Enumeración de KEYERR del motor multimedia MF \_
+# <a name="mf_media_engine_keyerr-enumeration"></a>MF \_ MEDIA \_ ENGINE \_ KEYERR (enumeración)
 
-Define códigos de error de clave de medios para el motor multimedia.
+Define códigos de error de clave multimedia para el motor de medios.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,51 +44,51 @@ typedef enum _MF_MEDIA_ENGINE_KEYERR {
 
 <dl> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_UNKNOWN"></span><span id="mf_mediaengine_keyerr_unknown"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ desconocido**
+<span id="MF_MEDIAENGINE_KEYERR_UNKNOWN"></span><span id="mf_mediaengine_keyerr_unknown"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ UNKNOWN**
 </dt> <dd>
 
 Error desconocido.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_CLIENT"></span><span id="mf_mediaengine_keyerr_client"></span>**\_ \_ cliente KEYERR de MF MEDIAENGINE \_**
+<span id="MF_MEDIAENGINE_KEYERR_CLIENT"></span><span id="mf_mediaengine_keyerr_client"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ CLIENT**
 </dt> <dd>
 
-Se produjo un error con el cliente.
+Error con el cliente.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_SERVICE"></span><span id="mf_mediaengine_keyerr_service"></span>**\_ \_ servicio KEYERR de MF MEDIAENGINE \_**
+<span id="MF_MEDIAENGINE_KEYERR_SERVICE"></span><span id="mf_mediaengine_keyerr_service"></span>**SERVICIO \_ MF MEDIAENGINE \_ \_ KEYERR**
 </dt> <dd>
 
 Se produjo un error con el servicio.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_OUTPUT"></span><span id="mf_mediaengine_keyerr_output"></span>**\_ \_ salida KEYERR MEDIAENGINE \_ MF**
+<span id="MF_MEDIAENGINE_KEYERR_OUTPUT"></span><span id="mf_mediaengine_keyerr_output"></span>**SALIDA \_ DE MF MEDIAENGINE \_ KEYERR \_**
 </dt> <dd>
 
-Se produjo un error con la salida.
+Error con la salida.
 
 </dd> <dt>
 
 <span id="MF_MEDIAENGINE_KEYERR_HARDWARECHANGE_"></span><span id="mf_mediaengine_keyerr_hardwarechange_"></span>**MF \_ MEDIAENGINE \_ KEYERR \_ HARDWARECHANGE** 
 </dt> <dd>
 
-Se produjo un error relacionado con un cambio de hardware.
+Error relacionado con un cambio de hardware.
 
 </dd> <dt>
 
-<span id="MF_MEDIAENGINE_KEYERR_DOMAIN"></span><span id="mf_mediaengine_keyerr_domain"></span>**\_ \_ dominio KEYERR de MF MEDIAENGINE \_**
+<span id="MF_MEDIAENGINE_KEYERR_DOMAIN"></span><span id="mf_mediaengine_keyerr_domain"></span>**DOMINIO \_ \_ KEYERR DE MF MEDIAENGINE \_**
 </dt> <dd>
 
-Se produjo un error con el dominio.
+Error con el dominio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**MF \_ El \_ motor de \_ KEYERR** se usa con el parámetro de *código* de [**IMFMediaKeySessionNotify:: KeyError**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyerror) y el valor de *código* devuelto desde [**IMFMediaKeySession:: GetError**](imfmediakeysession-geterror.md).
+**MF \_ MEDIA \_ ENGINE \_ KEYERR se** usa con el parámetro de código de  [**IMFMediaKeySessionNotify::KeyError**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediakeysessionnotify-keyerror) y el valor de código devuelto de [**IMFMediaKeySession::GetError**](imfmediakeysession-geterror.md). 
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,9 +96,9 @@ Se produjo un error con el dominio.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Se produjo un error con el dominio.
 
 <dl> <dt>
 
-[Enumeraciones de Media Foundation](media-foundation-enumerations.md)
+[Media Foundation enumeraciones](media-foundation-enumerations.md)
 </dt> </dl>
 
  

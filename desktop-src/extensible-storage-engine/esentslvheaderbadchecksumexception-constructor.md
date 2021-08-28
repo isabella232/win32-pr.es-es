@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVHeaderBadChecksumException'
-title: Constructor de EsentSLVHeaderBadChecksumException
+description: 'Más información sobre: Constructor EsentSLVHeaderBadChecksumException'
+title: Constructor EsentSLVHeaderBadChecksumException
 TOCTitle: 'EsentSLVHeaderBadChecksumException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVHeaderBadChecksumException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvheaderbadchecksumexception.esentslvheaderbadchecksumexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3f8a552f291c53332208b79d0b883c8570336f2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0917457e6a43fe2238645def9dca944d885e8793895e0cd3ecee51b2ee9d462e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116805"
 ---
-# <a name="esentslvheaderbadchecksumexception-constructor"></a>Constructor de EsentSLVHeaderBadChecksumException
+# <a name="esentslvheaderbadchecksumexception-constructor"></a>Constructor EsentSLVHeaderBadChecksumException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVHeaderBadChecksumException()
 public EsentSLVHeaderBadChecksumException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVHeaderBadChecksumException()
 
 [Miembros de EsentSLVHeaderBadChecksumException](./esentslvheaderbadchecksumexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

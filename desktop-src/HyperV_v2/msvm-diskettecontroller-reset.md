@@ -1,5 +1,5 @@
 ---
-description: 'Método reset de la Msvm_DisketteController : solicita un restablecimiento.'
+description: 'Método reset de la Msvm_DisketteController clase : solicita un restablecimiento.'
 ms.assetid: 991a911c-30a3-46f9-8a70-62cceb912897
 title: Método Reset de la Msvm_DisketteController clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3bf626c250c454aad12fb53813c0249ca529ba97
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7d30055d5734389300fb227a75694b8fe29334bb2ff7f5ce0773395252a4f57a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681755"
 ---
 # <a name="reset-method-of-the-msvm_diskettecontroller-class"></a>Método Reset de la clase \_ DisketteController de Msvm
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

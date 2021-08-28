@@ -1,7 +1,7 @@
 ---
-description: 'Función de proxy de Windows Imaging Component (WIC) para IEnumString:: RESET.'
+description: Windows Función de proxy del componente de creación de imágenes (WIC) para IEnumString::Reset.
 ms.assetid: 084a3de0-c6de-4ce2-ba78-5d1bacb56cb0
-title: IEnumString_Reset_WIC_Proxy función)
+title: IEnumString_Reset_WIC_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 64057e0f49b105232f980ac3d73014156e2da732
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fc06a00b5e80befe1e6a69f7c2b402597699c97bf866129ca10175e18fe34a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549625"
 ---
-# <a name="ienumstring_reset_wic_proxy-function"></a>IEnumString \_ restablecimiento de la \_ función de \_ proxy WIC
+# <a name="ienumstring_reset_wic_proxy-function"></a>Función IEnumString \_ Reset \_ WIC \_ Proxy
 
-Función de proxy de Windows Imaging Component (WIC) para IEnumString:: RESET.
+Windows Función de proxy del componente de creación de imágenes (WIC) para IEnumString::Reset.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,41 +43,41 @@ HRESULT IEnumString_Reset_WIC_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **IEnumString \** _
+Tipo: **IEnumString \***
 
 PARAMDESC
 
 </dd> <dt>
 
-_celt * \[ en\]
+*celta* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
 </dd> <dt>
 
-*rgelt* \[ enuncia\]
+*rgelt* \[ out\]
 </dt> <dd>
 
-Tipo: **LPOLESTR \** _
+Tipo: **LPOLESTR \***
 
 </dd> <dt>
 
-_pceltFetched * \[ out\]
+*pceltFetched* \[ out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -85,11 +85,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

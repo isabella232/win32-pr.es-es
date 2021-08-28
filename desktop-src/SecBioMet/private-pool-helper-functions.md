@@ -1,29 +1,29 @@
 ---
 title: Funciones auxiliares de grupo privado
-description: Contiene funciones auxiliares para los proyectos de instalación, identificación y consola de inscripción.
+description: Contiene funciones auxiliares para los proyectos de consola de instalación, identificación e inscripción.
 ms.assetid: 90FED859-0DCD-43D5-9940-675127232968
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dab289c5e97c9d19e088b2ec195a83eacb37ef3a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 187079da11436cdb3ab0ab360ca8473563c72fbc1fd1ff40ff4f23e0c579f940
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977035"
 ---
 # <a name="private-pool-helper-functions"></a>Funciones auxiliares de grupo privado
 
-Las secciones siguientes contienen el código necesario para admitir los proyectos de instalación, identificación y consola de inscripción.
+Las secciones siguientes contienen el código necesario para admitir los proyectos de consola de instalación, identificación e inscripción.
 
--   [Targetver. h](#targetverh)
+-   [Targetver.h](#targetverh)
 -   [stdafx.h](#stdafxh)
--   [Bioauxiliar. h](#biohelperh)
--   [Config. cpp](#configcpp)
--   [Mostrar. cpp](#displaycpp)
+-   [BioHelper.h](#biohelperh)
+-   [Config.cpp](#configcpp)
+-   [Display.cpp](#displaycpp)
 
-## <a name="targetverh"></a>Targetver. h
+## <a name="targetverh"></a>Targetver.h
 
-Este ejemplo se creó para Windows 7 y los sistemas operativos posteriores.
+Este ejemplo se creó para Windows 7 y sistemas operativos posteriores.
 
 
 ```C++
@@ -78,7 +78,7 @@ typedef std::string TSTRING;
 
 
 
-## <a name="biohelperh"></a>Bioauxiliar. h
+## <a name="biohelperh"></a>BioHelper.h
 
 
 ```C++
@@ -164,7 +164,7 @@ ConvertRejectDetailToString(
 
 
 
-## <a name="configcpp"></a>Config. cpp
+## <a name="configcpp"></a>Config.cpp
 
 El archivo siguiente contiene rutinas de administración de configuración.
 
@@ -1346,9 +1346,9 @@ ConvertUuidToString(
 
 
 
-## <a name="displaycpp"></a>Mostrar. cpp
+## <a name="displaycpp"></a>Display.cpp
 
-El siguiente archivo contiene rutinas de formato de salida.
+El archivo siguiente contiene rutinas de formato de salida.
 
 
 ```C++
@@ -1521,9 +1521,9 @@ ConvertRejectDetailToString(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

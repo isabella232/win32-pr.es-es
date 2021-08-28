@@ -1,35 +1,35 @@
 ---
-description: Enviado por el IMFMediaSource que encapsula el dispositivo para indicar que el dispositivo se ha quitado.
+description: Enviado por ELSOURCEMediaSource que encapsula el dispositivo para indicar que el dispositivo se ha quitado.
 ms.assetid: 107AFF19-B444-4B62-9217-46A99AC3632C
-title: Evento MEVideoCaptureDeviceRemoved (Mfobjects. h)
+title: Evento MEVideoCaptureDeviceRemoved (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3276f53f86bdce78825b94828577eab9e40954
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f209dc4be6e8f45639b060de1328cb04c932463f6b76355b7538b5649a69634e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013485"
 ---
 # <a name="mevideocapturedeviceremoved-event"></a>Evento MEVideoCaptureDeviceRemoved
 
-Enviado por el [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) que encapsula el dispositivo para indicar que el dispositivo se ha quitado.
+Enviado por [**ELSOURCEMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) que encapsula el dispositivo para indicar que el dispositivo se ha quitado.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) se incluyen los siguientes.
 
 
 
 | VARTYPE               | Descripción                           |
 |-----------------------|---------------------------------------|
-| VT \_ vacío <br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY <br/> | Sin datos del evento.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento lo envía el [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) que encapsula el dispositivo.
+Este evento se envía mediante [**el método IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) que encapsula el dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Este evento lo envía el [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfid
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Este evento lo envía el [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfid
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

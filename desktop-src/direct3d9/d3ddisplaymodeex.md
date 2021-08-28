@@ -1,7 +1,7 @@
 ---
-description: Información acerca de las propiedades de un modo de presentación.
+description: Información sobre las propiedades de un modo de presentación.
 ms.assetid: df9d12b9-7acb-435b-9d54-0b095c871f0e
-title: Estructura D3DDISPLAYMODEEX (D3d9types. h)
+title: Estructura D3DDISPLAYMODEEX (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 5906b6b23cc83e6d2379f0c5923b08b220285708
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1891ec67a1434700c3964f6b23fd42a9137f6e6a73a29751f566f11912c98eaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117911163"
 ---
-# <a name="d3ddisplaymodeex-structure"></a>Estructura D3DDISPLAYMODEEX
+# <a name="d3ddisplaymodeex-structure"></a>D3DDISPLAYMODEEX (estructura)
 
-Información acerca de las propiedades de un modo de presentación.
+Información sobre las propiedades de un modo de presentación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,18 +47,18 @@ typedef struct {
 **Tamaño**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Tamaño de esta estructura. Siempre debe establecerse en sizeof (D3DDISPLAYMODEEX).
+Tamaño de esta estructura. Siempre debe establecerse en sizeof(D3DDISPLAYMODEEX).
 
 </dd> <dt>
 
 **Width**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -69,7 +69,7 @@ Ancho del modo de presentación.
 **Height**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -77,10 +77,10 @@ Alto del modo de presentación.
 
 </dd> <dt>
 
-**Frecuencia**
+**RefreshRate**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -106,13 +106,13 @@ Tipo: **[ **D3DSCANLINEORDERING**](./d3dscanlineordering.md)**
 
 </dd> <dd>
 
-Indica si el orden Scanline es progresivo o entrelazado. Vea [**D3DSCANLINEORDERING**](./d3dscanlineordering.md).
+Indica si el orden de la línea de digitalización es progresiva o entrelazada. Vea [**D3DSCANLINEORDERING.**](./d3dscanlineordering.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa en varios métodos para crear y administrar dispositivos 9Ex de Direct3D ([**IDirect3DDevice9Ex**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9ex)) y intercambio ([**IDirect3DSwapChain9Ex**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dswapchain9ex)).
+Esta estructura se usa en varios métodos para crear y administrar dispositivos Direct3D 9Ex [**(IDirect3DDevice9Ex)**](/windows/desktop/api/d3d9/nn-d3d9-idirect3ddevice9ex)e cadenas de intercambio ([**IDirect3DSwapChain9Ex**](/windows/desktop/api/d3d9/nn-d3d9-idirect3dswapchain9ex)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ Esta estructura se usa en varios métodos para crear y administrar dispositivos 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

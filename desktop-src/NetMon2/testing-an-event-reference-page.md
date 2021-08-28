@@ -1,42 +1,42 @@
 ---
-description: El paso final de la creación de una página de referencia de eventos (ERP) es probarlo.
+description: El último paso para crear una página de referencia de eventos (ERP) es probarlo.
 ms.assetid: 12690317-1cd2-496c-8a0d-ba6caca58b86
 title: Probar una página de referencia de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6afaaec279403922abde578b9e73931e607680f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2aa9fb8697181085a9b74333dba82328e90b502e6590a764fac589efa8e6f90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676645"
 ---
 # <a name="testing-an-event-reference-page"></a>Probar una página de referencia de eventos
 
-El paso final de la creación de una página de referencia de eventos (ERP) es probarlo. Puede probar un ERP viendo el archivo en un explorador HTML, como Microsoft Internet Explorer. O bien, puede instalar el ERP y su archivo DLL de expertos para probarlo para la invocación de eventos y mostrarlo en el Visor de eventos de Monitor de red.
+El último paso para crear una página de referencia de eventos (ERP) es probarlo. Puede probar un ERP viendo el archivo en un explorador HTML como Microsoft Internet Explorer. O bien, puede instalar ERP y su archivo DLL experto para probarlo para la invocación de eventos y mostrarlo en el Monitor de red Visor de eventos.
 
-## <a name="viewing-erps-that-have-no-dll"></a>Ver O ERP e que no tienen DLL
+## <a name="viewing-erps-that-have-no-dll"></a>Ver LOS ARCHIVOS QUE NO TIENEN DLL
 
-Para ver el ERP completado sin un archivo DLL de experto instalado, abra el archivo con un visor HTML que admita los orígenes incrustados. En la ilustración siguiente se muestra el archivo ERP de ejemplo que se describe en [Writing a ERP](writing-an-event-reference-page.md) , tal como se muestra con la versión 4,01 de Microsoft Internet Explorer.
+Para ver el ERP completado sin un archivo DLL experto instalado, abra el archivo con un visor HTML que admita los orígenes incrustados. En la ilustración siguiente se muestra el archivo ERP de ejemplo descrito en Writing an ERP (Escritura de un [ERP)](writing-an-event-reference-page.md) tal como se muestra con Microsoft Internet Explorer versión 4.01.
 
-![archivo ERP de ejemplo](images/ie-erp.png)
+![archivo erp de ejemplo](images/ie-erp.png)
 
-Prueba de O ERP e que tienen un archivo DLL
+Prueba de los ERP que tienen un archivo DLL
 
-Después de crear los archivos ERP y el archivo dll de [**expertos**](experts.md) , puede probar la funcionalidad completa de su o erp e con monitor de red. Se supone que el archivo DLL está depurado y puede generar eventos válidos.
+Una vez creados los [**archivos**](experts.md) ERP y el archivo DLL experto, puede probar la funcionalidad completa de los ERP con Monitor de red. Se supone que el archivo DLL está depurado y puede generar eventos válidos.
 
-**Para probar O ERP e que tienen un archivo DLL**
+**Para probar los ERP que tienen un archivo DLL**
 
-1.  Compruebe que el archivo DLL de experto correcto está instalado en el directorio adecuado. Para obtener más información, consulte [instalación de un experto en Monitor de red 2,1](installing-an-expert-to-network-monitor-2-1.md).
+1.  Compruebe que el archivo DLL experto correcto está instalado en el directorio adecuado. Para obtener más información, vea [Installing an Expert to Monitor de red 2.1](installing-an-expert-to-network-monitor-2-1.md).
 2.  Compruebe el [nombre correcto](naming-an-event-reference-page.md) del archivo ERP.
-3.  Compruebe la [ubicación correcta](installing-existing-erps-to-network-monitor-2-1.md) de o ERP e en el directorio de monitor de red.
-4.  Pruebe Expert O ERP e en la interfaz de usuario de Monitor de red.
-5.  Genere un evento de prueba.
-6.  Compruebe que el ERP aparece en el Visor de eventos de Monitor de red.
+3.  Compruebe la [ubicación correcta de](installing-existing-erps-to-network-monitor-2-1.md) los ERP en el Monitor de red directorio.
+4.  Pruebe los ERPs expertos en la interfaz Monitor de red usuario.
+5.  Generar un evento de prueba.
+6.  Compruebe que erp aparece en la Monitor de red Visor de eventos.
 
-Para obtener más información acerca de la creación de un ERP, consulte:
+Para obtener más información sobre cómo crear un ERP, consulte:
 
--   [Creación de páginas de referencia de eventos Expert y monitor](creating-expert-and-monitor-event-reference-pages.md)
+-   [Crear páginas de referencia de eventos expertos y de supervisión](creating-expert-and-monitor-event-reference-pages.md)
 -   [Escribir una página de referencia de eventos](writing-an-event-reference-page.md)
 -   [Asignar un nombre a una página de referencia de eventos](naming-an-event-reference-page.md)
 

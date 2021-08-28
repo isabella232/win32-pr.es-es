@@ -1,35 +1,35 @@
 ---
-description: A partir de Windows Vista, la tecnología de Tablet PC es compatible con la entrada táctil en Tablet PC con digitalizadores táctiles. Esta compatibilidad incluye una interfaz de usuario mejorada para ayudar a dirigir y a las ventanas de comandos cuando se usa un dedo para la entrada.
+description: A partir Windows Vista, la tecnología de tablet PC admite la entrada táctil en tabletas pc con digitalizadores táctiles. Esta compatibilidad incluye una interfaz de usuario mejorada para ayudar a dirigir y dirigir Windows cuando se usa un dedo para la entrada.
 ms.assetid: 63f1d71f-03d8-4d83-a174-e3dc7c57bad0
-title: Compatibilidad con la entrada táctil en Windows Vista
+title: Compatibilidad con entrada táctil en Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b623630c93c33b846ab1bb491fc56fe46dfe825
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e81b22130a7c731d49556db263d5c1d5565ef51aa103925969b35c98548a32d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119335075"
 ---
-# <a name="touch-input-support-in-windows-vista"></a>Compatibilidad con la entrada táctil en Windows Vista
+# <a name="touch-input-support-in-windows-vista"></a>Compatibilidad con entrada táctil en Windows Vista
 
-A partir de Windows Vista, la tecnología de Tablet PC es compatible con la entrada táctil en Tablet PC con digitalizadores táctiles. Esta compatibilidad incluye una interfaz de usuario mejorada para ayudar a dirigir y a las ventanas de comandos cuando se usa un dedo para la entrada.
+A partir Windows Vista, la tecnología de tablet PC admite la entrada táctil en tabletas pc con digitalizadores táctiles. Esta compatibilidad incluye una interfaz de usuario mejorada para ayudar a dirigir y dirigir Windows cuando se usa un dedo para la entrada.
 
-## <a name="touch-digitizer-support"></a>Compatibilidad con el digitalizador táctil
+## <a name="touch-digitizer-support"></a>Compatibilidad con digitalizador táctil
 
-### <a name="pen-and-touch-input-not-exclusive"></a>Lápiz y entrada táctil no exclusiva
+### <a name="pen-and-touch-input-not-exclusive"></a>Entrada táctil y de lápiz no exclusiva
 
-No asuma que el lápiz y la entrada táctil se excluyen mutuamente en las aplicaciones [**InkCollector**](inkcollector-class.md), [**InkOverlay**](inkoverlay-class.md)y [**RealTimeStylus**](realtimestylus-class.md) .
+No suponga que la entrada táctil y de lápiz son mutuamente excluyentes en las aplicaciones [**InkCollector,**](inkcollector-class.md) [**InkOverlay**](inkoverlay-class.md)y [**RealTimeStylus.**](realtimestylus-class.md)
 
-En Windows Vista, cuando el sistema reconoce un lápiz, omite la entrada táctil. Es decir, el trazo táctil finaliza y comienza el trazo del lápiz. Como esto podría cambiar en el futuro, el código no debe asumir que el lápiz y la entrada táctil se excluyen mutuamente.
+En Windows Vista, cuando el sistema reconoce un lápiz, omite la entrada táctil. Es decir, el trazo táctil finaliza y comienza el trazo del lápiz. Dado que esto podría cambiar en el futuro, el código no debe asumir que la entrada táctil y el lápiz son mutuamente excluyentes.
 
 ### <a name="other-mouse-message-sources"></a>Otros orígenes de mensajes del mouse
 
-Hay otros orígenes de mensajes del mouse incluso cuando el usuario solo está interactuando con el dedo o el lápiz. Los orígenes incluyen touchpad, así como el movimiento diseñado para permitir que una aplicación detrás de una ventana superpuesta tenga en cuenta que el mouse se mueve sobre la aplicación.
+Hay otros orígenes de mensajes del mouse incluso cuando el usuario solo interactúa con el dedo o el lápiz. Los orígenes incluyen los dispositivos táctiles, así como el movimiento destinado a permitir que una aplicación detrás de una ventana en capas tenga en cuenta que el mouse se mueve por encima de la aplicación.
 
-### <a name="enabling-and-disabling-the-touch-input-user-interface"></a>Habilitación y deshabilitación de la interfaz de usuario de entrada táctil
+### <a name="enabling-and-disabling-the-touch-input-user-interface"></a>Habilitación y deshabilitación de la entrada táctil Interfaz de usuario
 
-Puede habilitar o deshabilitar la interfaz de usuario de entrada táctil en función de los requisitos de la aplicación. Para ello, intercepte los mensajes de ventana del sistema operativo en un procedimiento de ventana y modifique el mensaje de Windows. Invalide [WndProc](/dotnet/api/system.windows.forms.control.wndproc?view=netcore-3.1) en la aplicación para interceptar estos mensajes. En el siguiente \# pseudocódigo de C se muestra cómo habilitar y deshabilitar la interfaz de usuario de entrada táctil. El código también muestra cómo usar la misma técnica para deshabilitar el gesto de mantener presionado. Este método también sirve para deshabilitar el lápiz.
+Es posible que desee habilitar o deshabilitar la interfaz de usuario de entrada táctil en función de los requisitos de la aplicación. Para ello, intercepte los mensajes de ventana del sistema operativo en un procedimiento de ventana y modifique Windows mensaje. Invalide [WndProc](/dotnet/api/system.windows.forms.control.wndproc?view=netcore-3.1) en la aplicación para interceptar estos mensajes. El siguiente \# pseudocódigo de C muestra cómo habilitar y deshabilitar la interfaz de usuario de entrada táctil. El código también muestra el uso de la misma técnica para deshabilitar el gesto de mantener presionado. Este método también funciona para deshabilitar el lápiz óptico.
 
 
 ```C++
@@ -78,7 +78,7 @@ protected override void WndProc(ref Message msg)
 
 <dl> <dt>
 
-[Windows Touch](../wintouch/windows-touch-portal.md)
+[Windows Tocar](../wintouch/windows-touch-portal.md)
 </dt> </dl>
 
  

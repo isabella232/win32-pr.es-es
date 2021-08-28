@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI ClientApplicationSetting Association de Win32 relaciona un archivo ejecutable y una aplicación de modelo de objetos componentes (com) que contiene las opciones de configuración com del archivo ejecutable.
+description: La clase WMI de asociación ClientApplicationSetting de Win32 relaciona un archivo ejecutable y una aplicación de Modelo de objetos componentes (COM) que contiene las opciones de configuración COM para \_ el archivo ejecutable.
 ms.assetid: c43d80ee-0f29-4452-b51f-f18543bc1d35
 ms.tgt_platform: multiple
-title: Win32_ClientApplicationSetting (clase)
+title: Win32_ClientApplicationSetting clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: fda1f1305904fa919bb2080fe5de02f0e5850a8a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 359478d7cf6069e17ae02358f4ea48ffc44169f6822f4f8b3e33dad332fab020
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546375"
 ---
-# <a name="win32_clientapplicationsetting-class"></a>\_Clase Win32 ClientApplicationSetting
+# <a name="win32_clientapplicationsetting-class"></a>Clase \_ ClientApplicationSetting de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ ClientApplicationSetting** Association de Win32 relaciona un archivo ejecutable y una aplicación de modelo de objetos componentes (com) que contiene las opciones de configuración com del archivo ejecutable.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación **\_ ClientApplicationSetting de Win32** relaciona un archivo ejecutable y una aplicación de Modelo de objetos componentes (COM) que contiene las opciones de configuración COM para el archivo ejecutable.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -64,40 +64,40 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DCOMApplication")
 </dt> </dl>
 
-Referencia a la instancia de que representa la aplicación COM que contiene las opciones de configuración del archivo ejecutable.
+Referencia a la instancia de que representa la aplicación COM que contiene opciones de configuración del archivo ejecutable.
 
 </dd> <dt>
 
 **Cliente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ archivo** de datos CIM
+Tipo de datos: **Cim \_ DataFile**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| CIM \_ archivo de archivos")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("CIM \| \_ DataFile")
 </dt> </dl>
 
-Referencia a la instancia de que representa el archivo ejecutable que utiliza la configuración COM.
+Referencia a la instancia de que representa el archivo ejecutable que usa la configuración COM.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**Win32 \_ ClientApplicationSetting** no admite la enumeración.
+**Win32 \_ ClientApplicationSetting** no admite la enumeración .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo de restricción de espacio de valor de MS-DS-Claim-is-Value
-description: Para un tipo de demanda, este atributo identifica si un usuario puede escribir valores distintos de los descritos en msDS-ClaimPossibleValues en las aplicaciones.
+title: Atributo ms-DS-Claim-Is-Value-Space-Restricted
+description: Para un tipo de notificación, este atributo identifica si un usuario puede escribir valores distintos de los descritos en msDS-ClaimPossibleValues en las aplicaciones.
 ms.assetid: 6a965b2f-ab3f-4429-8e2d-2fc21eefbb5e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo con restricción de espacio de valor MS-DS-Claim-is-Value
-- Esquema de AD de atributo msDS-ClaimIsValueSpaceRestricted
+- Esquema de AD del atributo ms-DS-Claim-Is-Value-Space-Restricted
+- Esquema de AD del atributo msDS-ClaimIsValueSpaceRestricted
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 953b4ea4e81033d7f4ce889bf7fd593c91f8bb2b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 316adde6a5ab9c13b3a5464f02c3cfb9230b1785e2f1efc5615feb42e9c8e294
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552705"
 ---
-# <a name="ms-ds-claim-is-value-space-restricted-attribute"></a>atributo de restricción de espacio de valor de MS-DS-Claim-is-Value
+# <a name="ms-ds-claim-is-value-space-restricted-attribute"></a>Atributo ms-DS-Claim-Is-Value-Space-Restricted
 
-Para un tipo de demanda, este atributo identifica si un usuario puede escribir valores distintos de los descritos en msDS-ClaimPossibleValues en las aplicaciones.
+Para un tipo de notificación, este atributo identifica si un usuario puede escribir valores distintos de los descritos en msDS-ClaimPossibleValues en las aplicaciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------|
-| CN                | MS-DS-Claim-is-Value-Limit (restringido) |
-| Nombre para mostrar de LDAP | msDS-ClaimIsValueSpaceRestricted      |
-| Tamaño              | \-                                    |
-| Actualizar privilegio  | \-                                    |
+| CN                | ms-DS-Claim-Is-Value-Space-Restricted |
+| Ldap-Display-Name | msDS-ClaimIsValueSpaceRestricted      |
+| Size              | \-                                    |
+| Privilegio actualizar  | \-                                    |
 | Frecuencia de actualización  | \-                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2159               |
-| System-ID-GUID    | 0c2ce4c7-f1c3-4482-8578-c60d4bb74422  |
-| Sintaxis            | [**Booleano**](s-boolean.md)          |
+| System-Id-Guid    | 0c2ce4c7-f1c3-4482-8578-c60d4bb74422  |
+| Syntax            | [**Boolean**](s-boolean.md)          |
 
 
 
@@ -50,18 +50,18 @@ Para un tipo de demanda, este atributo identifica si un usuario puede escribir v
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                              |
+| Id. de vínculo                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
-| System-Only            | True                                                                                                            |
-| Tiene un único valor       | True                                                                                                            |
-| Está indexado             | False                                                                                                           |
-| En el catálogo global      | False                                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                    |
+| System-Only            | Verdadero                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                            |
+| Está indexado             | Falso                                                                                                           |
+| En el catálogo global      | Falso                                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Clases usadas en        | [**Tipo de notificaciones de MS-DS-Claim**](c-msds-claimtype.md)<br/> [**Tipo de valor MS-DS-Value**](c-msds-valuetype.md)<br/> |
+| Clases usadas en        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> [**ms-DS-Value-Type**](c-msds-valuetype.md)<br/> |
 
 
 

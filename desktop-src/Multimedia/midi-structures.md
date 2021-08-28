@@ -1,29 +1,29 @@
 ---
-title: Estructuras MIDI
-description: Estructuras MIDI
+title: Estructuras DE MIDI
+description: Estructuras DE MIDI
 ms.assetid: 48c775df-a7f9-49f7-a2e3-74210cf1af4a
 keywords:
-- audio multimedia, estructuras MIDI
-- audio, estructuras MIDI
-- Interfaz digital de instrumentos musicales (MIDI), estructuras
-- MIDI (interfaz digital de instrumentos musicales), estructuras
-- referencia de MIDI, estructuras
-- Referencia MIDI, estructuras
-- Estructuras MIDI
+- audio multimedia, estructuras de MIDI
+- audio, estructuras DE MIDI
+- Interfaz digital instrumentable (MIDI), estructuras
+- MIDI (Interfaz digital instrumentable), estructuras
+- referencia de MIDI,structures
+- Referencia de MIDI, estructuras
+- Estructuras DE MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d30f5d145aae2c553b18693c2465a8a9ac7b85c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9e418260ae9bdda69d4ba44e4206e470613274715da1593bd24cd4d45c9ff4c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105676371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137537"
 ---
-# <a name="midi-structures"></a>Estructuras MIDI
+# <a name="midi-structures"></a>Estructuras DE MIDI
 
-Las siguientes estructuras se usan con MIDI.
+Las estructuras siguientes se usan con MIDI.
 
--   [**MIDIEVENT**](/windows/win32/api/mmeapi/ns-mmeapi-midievent)
+-   [**EVENTO DE MIDI**](/windows/win32/api/mmeapi/ns-mmeapi-midievent)
 -   [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr)
 -   [**MIDIINCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midiincaps)
 -   [**MIDIOUTCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-midioutcaps)
@@ -38,6 +38,6 @@ Las siguientes estructuras se usan con MIDI.
 [Referencia MIDI](midi-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

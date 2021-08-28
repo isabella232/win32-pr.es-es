@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 90e3699b06eedfe5ec655de8156363c0ec42cd05
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: d705bba75ff1aaf33086d320c2f91db58cc20bff9e046ed2b2901c648b213374
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117904952"
 ---
 # <a name="sv_outputcontrolpointid"></a>SV \_ OutputControlPointID
 
@@ -44,7 +44,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 

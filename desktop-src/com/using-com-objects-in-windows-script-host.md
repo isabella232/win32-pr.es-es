@@ -1,27 +1,27 @@
 ---
-title: Usar objetos COM en Windows Script Host
+title: Uso de objetos COM en Windows host de script
 description: Microsoft Windows Script Host es una utilidad de scripting que puede usar para ejecutar scripts en el sistema operativo base.
 ms.assetid: b13c1bdf-91ce-42a2-b66a-20d68952bb34
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7cb28fc0e388ba69f28c56e780d058d27f9e165
-ms.sourcegitcommit: 70f39ec77d19d3c32c376ee2831753d2cafae41a
+ms.openlocfilehash: abc3ba9a14fa948dea9ed716cfa6f3e082d9fb4f56bb3995f052447787ba949a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117917755"
 ---
-# <a name="using-com-objects-in-windows-script-host"></a>Usar objetos COM en Windows Script Host
+# <a name="using-com-objects-in-windows-script-host"></a>Uso de objetos COM en Windows host de script
 
-Microsoft Windows Script Host es una utilidad de scripting que puede usar para ejecutar scripts en el sistema operativo base. Puede usar Windows Script Host para automatizar las tareas comunes y crear macros eficaces y scripts de inicio de sesión. Windows Script Host incluye los motores de scripting de VBScript y JScript ActiveX. Otras compañías de software proporcionan motores de scripting ActiveX para lenguajes como PerlScript, PScript, Python y otros.
+Microsoft Windows Script Host es una utilidad de scripting que puede usar para ejecutar scripts en el sistema operativo base. Puede usar el host Windows script para automatizar tareas comunes y crear potentes macros y scripts de inicio de sesión. Windows El host de script incluye VBScript JScript ActiveX motores de scripting. Otras empresas de software ActiveX motores de scripting para lenguajes como PerlScript, PScript, Python y otros.
 
-Para usar un objeto COM en un script ejecutado por Windows Script Host, primero debe crear una instancia del objeto. Después de crear un objeto COM, puede usarlo en scripts.
+Para usar un objeto COM en un script ejecutado por Windows host de script, primero debe crear una instancia del objeto . Después de crear un objeto COM, puede usarlo en scripts.
 
-Windows Script Host se compone de dos aplicaciones. Una ejecuta scripts desde el escritorio de Windows ( `WScript.exe` ); el otro ejecuta scripts desde el símbolo del sistema ( `CScript.exe` ).
+Windows El host de script consta de dos aplicaciones. Uno ejecuta scripts desde el Windows escritorio ( `WScript.exe` ); el otro ejecuta scripts desde el símbolo del sistema ( `CScript.exe` ).
 
-Para ejecutar un script desde el escritorio, simplemente haga doble clic en un archivo de script. Los archivos de script son archivos de texto. Por Convención, los archivos de VBScript tienen la extensión `.vbs` y los archivos JScript `.js` .
+Para ejecutar un script desde el escritorio, basta con hacer doble clic en un archivo de script. Los archivos de script son archivos de texto. Por convención, los archivos VBScript tienen la `.vbs` extensión y JScript archivos `.js` .
 
-Para ejecutar un script desde el símbolo del sistema, ejecute la `Cscript.exe` aplicación con una línea de comandos como la siguiente:
+Para ejecutar un script desde el símbolo del sistema, ejecute la aplicación con una línea de `Cscript.exe` comandos como la siguiente:
 
 ```console
 cscript "c:\\sample scripts\\chart.vbs"
@@ -29,13 +29,13 @@ cscript "c:\\sample scripts\\chart.vbs"
 
 donde `c:\\sample scripts\\chart.vbs` es la ruta de acceso al archivo que contiene el script.
 
-Puede imprimir una lista de los parámetros admitidos por Cscript.exe escribiendo la siguiente línea de comandos:
+Puede imprimir una lista de los parámetros admitidos por Cscript.exe especificando la siguiente línea de comandos:
 
 ```console
 call cscript //?
 ```
 
-Para usar un objeto COM en un script ejecutado por Windows Script Host, primero debe crear una instancia del objeto. En VBScript puede hacerlo llamando al `CreateObject()` método. En JScript, puede utilizar el `ActiveXObject` objeto o el `WScript.CreateObject()` método. En el ejemplo siguiente se muestra cómo llamar a `CreateObject()` mediante VBScript:
+Para usar un objeto COM en un script ejecutado por Windows host de script, primero debe crear una instancia del objeto . En VBScript, puede hacerlo llamando al `CreateObject()` método . En JScript se puede usar el `ActiveXObject` objeto o el método `WScript.CreateObject()` . En el ejemplo siguiente se muestra cómo `CreateObject()` llamar a mediante VBScript:
 
 
 ```VB
@@ -46,21 +46,21 @@ Set objXL = CreateObject("Excel.Application")
 
 
 
-En el ejemplo siguiente se muestra cómo crear un `ActiveXObject` objeto mediante JScript:
+En el ejemplo siguiente se muestra cómo crear `ActiveXObject` un objeto mediante JScript:
 
 
 ```JScript
 var objXL = new ActiveXObject("Excel.Application");
  
 ```
-También puede usar el `WScript.CreateObject()` método en JScript:
+También puede usar `WScript.CreateObject()` el método dentro de JScript:
 
 ```JScript
 var objXL = WScript.CreateObject("Excel.Application");
 ```
 
 
-Después de crear una instancia del objeto COM, puede escribir un script que utilice el objeto, por ejemplo:
+Después de crear una instancia del objeto COM, puede escribir un script que use el objeto , por ejemplo:
 
 
 ```VB
