@@ -1,43 +1,43 @@
 ---
-title: Crear grupos locales
-description: Solo se pueden crear grupos locales para los servidores miembro y Windows 2000 Professional.
+title: Creación de grupos locales
+description: Solo se pueden crear grupos locales para servidores miembros y Windows 2000 Professional.
 ms.assetid: 76cbac51-d8ba-4114-9951-060273be52f3
 ms.tgt_platform: multiple
 keywords:
-- Creación de grupos locales AD
+- Creación de grupos locales de AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 705902b0066913fcd6eed56ba7c74e299144595f
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 06410572e6e5897280b2a03c99b387dbf81b3cca
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104358808"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881588"
 ---
-# <a name="creating-local-groups"></a>Crear grupos locales
+# <a name="creating-local-groups"></a>Creación de grupos locales
 
-Solo se pueden crear grupos locales para los servidores miembro y Windows 2000 Professional.
+Solo se pueden crear grupos locales para servidores miembros y Windows 2000 Professional.
 
-**Para crear un grupo local para un servidor miembro o un equipo que ejecute Windows 2000 Professional**
+**Para crear un grupo local para un servidor miembro o equipo que ejecute Windows 2000 Professional**
 
-1.  Enlazar al equipo mediante las siguientes reglas:
-    1.  Use una cuenta con derechos suficientes para tener acceso a ese equipo.
-    2.  Use el siguiente formato de cadena de enlace con el proveedor de WinNT, el nombre del equipo y un parámetro adicional para indicar a ADSI que está enlazando a un equipo: "WinNT:// <computer name> <computer> ".
+1.  Enlace al equipo mediante las siguientes reglas:
+    1.  Use una cuenta con derechos suficientes para acceder a ese equipo.
+    2.  Use el siguiente formato de cadena de enlace con el proveedor winNT, el nombre del equipo y un parámetro adicional para indicar a ADSI que está enlazando a un equipo: "WinNT:// <computer name> , &lt; &gt; equipo".
 
-        El &lt; parámetro "nombre &gt; de equipo" es el nombre de los grupos de equipos a los que se va a obtener acceso.
+        El parámetro " &lt; nombre de equipo " es el nombre de los grupos de equipos a los que se va a &gt; acceder.
 
-        En la cadena de enlace, el &lt; parámetro "equipo &gt; " indica a ADSI que está enlazando a un equipo. ADSI hace que estos datos estén disponibles para el analizador del proveedor de WinNT, de modo que pueda omitir algunas consultas de resolución de ambigüedades para determinar el tipo de objeto al que se está enlazando.
+        En la cadena de enlace, el parámetro " equipo " indica &lt; &gt; a ADSI que está enlazando a un equipo. ADSI pone estos datos a disposición del analizador del proveedor winNT para que pueda omitir algunas consultas de resolución de ambigüedad para determinar a qué tipo de objeto se enlaza.
 
-    3.  Enlazar a la interfaz [**IADsContainer**](/windows/desktop/api/iads/nn-iads-iadscontainer) .
+    3.  Enlace a la [**interfaz IADsContainer.**](/windows/desktop/api/iads/nn-iads-iadscontainer)
 
-2.  Especifique "localGroup" como clase mediante [**IADsContainer. Create**](/windows/desktop/api/iads/nf-iads-iadscontainer-create) para agregar el grupo.
+2.  Especifique "localGroup" como clase mediante [**IADsContainer.Create**](/windows/desktop/api/iads/nf-iads-iadscontainer-create) para agregar el grupo.
     > [!Note]  
-    > Si especifica "Group" como la clase, ADSI utiliza "localGroup". No especifique la clase como "globalGroup". No se pueden crear grupos de la clase "globalGroup" en los servidores miembro o en un equipo que ejecute Windows NT Workstation/Windows 2000 Professional. Si especifica "globalGroup", [**IADsContainer. Create**](/windows/desktop/api/iads/nf-iads-iadscontainer-create) crea el grupo en la caché de propiedades, pero [**IADs. SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) no escribe el grupo en la base de datos de seguridad y no devuelve un error.
+    > Si especifica "group" como clase, ADSI usa "localGroup". No especifique la clase como "globalGroup". No se pueden crear grupos de clase "globalGroup" en servidores miembros o en un equipo que ejecute Windows NT Workstation/Windows 2000 Professional. Si especifica "globalGroup", [**IADsContainer.Create**](/windows/desktop/api/iads/nf-iads-iadscontainer-create) crea el grupo en la caché de propiedades, pero [**IADs.SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) no escribe el grupo en la base de datos de seguridad y no devuelve un error.
 
-     
+     
 
-3.  Escriba el grupo en la base de datos de seguridad del equipo mediante [**IADs. SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo).
+3.  Escriba el grupo en la base de datos de seguridad del equipo [**mediante IADs.SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo).
 
- 
+ 
 
- 
+ 

@@ -4,8 +4,8 @@ description: En este tema se proporciona información sobre microsoft Automatiza
 ms.assetid: c70420d6-d9f3-47c8-a09f-35ed170f815f
 keywords:
 - Automatización de la interfaz de usuario,compatibilidad con el tipo de control HeaderItem
-- Automatización de la interfaz de usuario, tipo de control HeaderItem
-- Automatización de la interfaz de usuario estructura de árbol para el tipo de control HeaderItem
+- Automatización de la interfaz de usuario,Tipo de control HeaderItem
+- Automatización de la interfaz de usuario,tree structure for HeaderItem control type
 - Automatización de la interfaz de usuario,properties para el tipo de control HeaderItem
 - Automatización de la interfaz de usuario,patrones de control para el tipo de control HeaderItem
 - Automatización de la interfaz de usuario,events para el tipo de control HeaderItem
@@ -21,12 +21,12 @@ keywords:
 - tipos de control, HeaderItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6bbcd6d86e7401c3fa98d162e3aa273613dfd3a32705da891fc89d1f4ea003f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b26dcbc293beee3afec8ba0aa9da1359cbbe4c6b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098216"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469132"
 ---
 # <a name="headeritem-control-type"></a>Tipo de control HeaderItem
 
@@ -34,7 +34,7 @@ En este tema se proporciona información sobre microsoft Automatización de la i
 
 El tipo de control **HeaderItem** proporciona una etiqueta visual para una fila o columna de información.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, las propiedades, los patrones de control y los eventos necesarios para el tipo de control **HeaderItem.** Los Automatización de la interfaz de usuario se aplican a todos los controles de elemento de encabezado en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo de control **HeaderItem.** Los Automatización de la interfaz de usuario se aplican a todos los controles de elemento de encabezado en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -46,30 +46,15 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol de Automatización de la interfaz de usuario que pertenece a los controles de elemento de encabezado y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario árbol, [vea información general Automatización de la interfaz de usuario árbol de árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de elemento de encabezado y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el árbol Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Vista de control</th>
-<th>Vista de contenido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>HeaderItem</li>
-</ul></td>
-<td>(No aplicable)</td>
-</tr>
-</tbody>
-</table>
+
+| Vista de control | Vista de contenido | 
+|--------------|--------------|
+| <ul><li>HeaderItem</li></ul> | (No aplicable) | 
+
 
 
 

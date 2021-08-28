@@ -7,12 +7,12 @@ keywords:
 - ADSI de seguimiento de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a59b2db3775c8c578ad361667a2d89c36240caf4b3bbb4bcd5cdd2798011514b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50ff881a408e2f6d7a6b661e7556c8d39366f726
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119023983"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469202"
 ---
 # <a name="event-tracing-in-adsi"></a>Seguimiento de eventos en ADSI
 
@@ -22,7 +22,7 @@ Windows Server 2008 y Windows Vista presentan el seguimiento de [eventos](/windo
 
 La interfaz IADs de ADSI requiere que el esquema LDAP se almacene en caché en el cliente para que los atributos se puedan serializar correctamente (como se describe en el modelo de esquema [ADSI](adsi-schema-model.md)). Para ello, ADSI carga el esquema para cada proceso (y para cada servidor LDAP o dominio) en la memoria desde un archivo de esquema (.sch) que se guarda en el disco local o descargándose desde el servidor LDAP. Los distintos procesos de la misma máquina cliente usan el esquema almacenado en caché en disco si está disponible y es aplicable.
 
-Si el esquema no se puede obtener del disco o del servidor, ADSI usa un esquema predeterminado codificado de forma rígida. Cuando esto sucede, los atributos que no forman parte de este esquema predeterminado no se pueden serializar y ADSI devuelve un error al recuperar estos atributos. Una serie de factores podrían provocar que esto suceda, incluidos problemas al analizar el esquema y privilegios insuficientes para descargar el esquema. A menudo es difícil determinar por qué se usa un determinado esquema predeterminado. El uso del seguimiento de eventos en esta área le ayudará a diagnosticar el problema y corregirlo más rápidamente.
+Si el esquema no se puede obtener del disco o del servidor, ADSI usa un esquema predeterminado codificado de forma rígida. Cuando esto sucede, los atributos que no forman parte de este esquema predeterminado no se pueden serializar y ADSI devuelve un error al recuperar estos atributos. Una serie de factores podrían provocar que esto suceda, incluidos problemas al analizar el esquema y privilegios insuficientes para descargar el esquema. A menudo es difícil determinar por qué se usa un esquema predeterminado determinado. El uso del seguimiento de eventos en esta área le ayudará a diagnosticar el problema y corregirlo más rápidamente.
 
 ## <a name="changing-and-setting-the-password"></a>Cambiar y establecer la contraseña
 
@@ -63,71 +63,9 @@ Estas marcas determinan los métodos [ADSI](active-directory-service-interfaces-
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>DEBUG_SCHEMA</strong><br/></td>
-<td><ul>
-<li>LdapGetSchema</li>
-<li>GetSchemaInfoTime</li>
-<li>LdapReadSchemaInfoFromServer</li>
-<li>ProcessSchemaInfo</li>
-<li>HelperReadLdapSchemaInfo</li>
-<li>ProcessClassInfoArray</li>
-<li>ReadSchemaInfoFromRegistry</li>
-<li>StoreSchemaInfoFromRegistry</li>
-<li>AttributeTypeDescription</li>
-<li>ObjectClassDescription</li>
-<li>DITContentRuleDescription</li>
-<li>DirectoryString</li>
-<li>DirectoryStrings</li>
-<li>DITContentRuleDescription</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DEBUG_CHANGEPWD</strong><br/></td>
-<td><ul>
-<li>CADsUser::ChangePassword</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>DEBUG_SETPWD</strong><br/></td>
-<td><ul>
-<li>CADsUser::SetPassword</li>
-</ul>
-<br/></td>
-</tr>
-<tr class="even">
-<td><strong>DEBUG_BINDCACHE</strong><br/></td>
-<td><ul>
-<li>GetServerBasedObject</li>
-<li>GetServerLessBasedObject</li>
-<li>GetGCDomainName</li>
-<li>GetDefaultDomainName</li>
-<li>GetUserDomainFlatName</li>
-<li>BindCacheLookup</li>
-<li>EquivalentPortNumbers</li>
-<li>CanCredentialsBeReused</li>
-<li>BindCacheAdd</li>
-<li>BindCacheAddRef</li>
-<li>AddReferralLink</li>
-<li>CommonRemoveEntry</li>
-<li>BindCacheDerefHelper</li>
-<li>NotifyNewConnection</li>
-<li>QueryForConnection</li>
-<li>LdapOpenBindWithCredentials</li>
-<li>LdapOpenBindWithDefaultCredentials</li>
-</ul>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| | | <strong>DEBUG_SCHEMA</strong><br /> | <ul><li>LdapGetSchema</li><li>GetSchemaInfoTime</li><li>LdapReadSchemaInfoFromServer</li><li>ProcessSchemaInfo</li><li>HelperReadLdapSchemaInfo</li><li>ProcessClassInfoArray</li><li>ReadSchemaInfoFromRegistry</li><li>StoreSchemaInfoFromRegistry</li><li>AttributeTypeDescription</li><li>ObjectClassDescription</li><li>DITContentRuleDescription</li><li>DirectoryString</li><li>DirectoryStrings</li><li>DITContentRuleDescription</li></ul><br /> | | <strong>DEBUG_CHANGEPWD</strong><br /> | <ul><li>CADsUser::ChangePassword</li></ul><br /> | | <strong>DEBUG_SETPWD</strong><br /> | <ul><li>CADsUser::SetPassword</li></ul><br /> | | <strong>DEBUG_BINDCACHE</strong><br /> | <ul><li>GetServerBasedObject</li><li>GetServerLessBasedObject</li><li>GetGCDomainName</li><li>GetDefaultDomainName</li><li>GetUserDomainFlatName</li><li>BindCacheLookup</li><li>EquivalentPortNumbers</li><li>CanCredentialsBeReused</li><li>BindCacheAdd</li><li>BindCacheAddRef</li><li>AddReferralLink</li><li>CommonRemoveEntry</li><li>BindCacheDerefHelper</li><li>NotifyNewConnection</li><li>QueryForConnection</li><li>LdapOpenBindWithCredentials</li><li>LdapOpenBindWithDefaultCredentials</li></ul><br /> | 
+
 
 
 
@@ -135,7 +73,7 @@ Estas marcas determinan los métodos [ADSI](active-directory-service-interfaces-
 
 Puede combinar marcas combinando los bits adecuados en el *argumento traceFlags.* Por ejemplo, para especificar las marcas **DEBUG \_ SCHEMA** y **DEBUG \_ BINDCACHE,** se usaría el valor *traceFlags* 0x00000009.
 
-Por último, *la marca traceLevel* debe ser uno de los siguientes valores:
+Por último, *la marca traceLevel* debe ser uno de los valores siguientes:
 
 
 
@@ -158,11 +96,11 @@ En el ejemplo anterior, *sessionname* es el mismo nombre que el que se proporcio
 
 ## <a name="remarks"></a>Comentarios
 
-Es más eficaz hacer un seguimiento solo de procesos específicos especificando un PID determinado que hacer un seguimiento de todos los procesos de un equipo. Si necesita realizar un seguimiento de varias aplicaciones en el mismo equipo, puede haber un impacto en el rendimiento. hay una salida de depuración considerable en secciones orientadas al rendimiento del código. Además, los administradores deben tener cuidado de establecer correctamente los permisos de los archivos de registro al realizar el seguimiento de varios procesos. De lo contrario, cualquier usuario podría leer los registros de seguimiento y otros usuarios podrán realizar un seguimiento de los procesos que contienen información segura.
+Es más eficaz hacer un seguimiento solo de procesos específicos especificando un PID determinado que hacer un seguimiento de todos los procesos de un equipo. Si necesita realizar un seguimiento de varias aplicaciones en la misma máquina, puede haber un impacto en el rendimiento. hay una salida de depuración sustancial en las secciones orientadas al rendimiento del código. Además, los administradores deben tener cuidado de establecer correctamente los permisos de los archivos de registro al realizar el seguimiento de varios procesos. De lo contrario, cualquier usuario podría leer los registros de seguimiento y otros usuarios podrán realizar un seguimiento de los procesos que contienen información segura.
 
-Por ejemplo, supone que el administrador configura el seguimiento de una aplicación "Test.exe" y no especifica un PID en el registro para realizar el seguimiento de varias instancias del proceso. Ahora, otro usuario desea hacer un seguimiento de la aplicación "Secure.exe". Si los archivos de registro de seguimiento no están correctamente restringidos, lo único que debe hacer el usuario es cambiar el nombre de "Secure.exe" a "Test.exe" y se realizará el seguimiento. En general, es mejor realizar un seguimiento solo de procesos específicos durante la solución de problemas y quitar la clave del Registro de seguimiento en cuanto se realiza la solución de problemas.
+Por ejemplo, supone que el administrador configura el seguimiento de una aplicación "Test.exe" y no especifica un PID en el registro para realizar el seguimiento de varias instancias del proceso. Ahora, otro usuario quiere hacer un seguimiento de la aplicación "Secure.exe". Si los archivos de registro de seguimiento no están correctamente restringidos, lo único que debe hacer el usuario es cambiar el nombre de "Secure.exe" a "Test.exe" y se realizará el seguimiento. En general, es mejor realizar un seguimiento solo de procesos específicos durante la solución de problemas y quitar la clave del Registro de seguimiento en cuanto se realiza la solución de problemas.
 
-Puesto que la habilitación del seguimiento de eventos producirá archivos de registro adicionales, los administradores deben supervisar cuidadosamente los tamaños de los archivos de registro. la falta de espacio en disco en el equipo local puede provocar una denegación de servicio.
+Dado que la habilitación del seguimiento de eventos producirá archivos de registro adicionales, los administradores deben supervisar cuidadosamente los tamaños de los archivos de registro. la falta de espacio en disco en el equipo local puede provocar una denegación de servicio.
 
 ## <a name="example-scenarios"></a>Escenarios de ejemplo
 
@@ -170,9 +108,9 @@ Escenario 1: el administrador ve un error inesperado en una aplicación que esta
 
 1.  Escribir un script que reproduzca el problema y crear la clave del Registro
 
-    **HKEY \_ Sistema \_ DE MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
+    **HKEY \_ Sistema \_ LOCAL MACHINE** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
 
-2.  Inicie una sesión de seguimiento, estableciendo *traceFlags* en 0x2 (**DEBUG \_ CHANGEPASSWD**) y *traceLevel* en 0x4 (**TRACE LEVEL \_ \_ INFORMATION**), mediante el siguiente comando:
+2.  Inicie una sesión de seguimiento, estableciendo *traceFlags* en 0x2 (**DEBUG \_ CHANGEPASSWD**) y *traceLevel* en 0x4 (**TRACE LEVEL \_ \_ INFORMATION**), mediante el comando siguiente:
 
     **tracelog.exe -start scripttrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ adsi.etl -flag 0x2 -level 0x4**
 
@@ -182,17 +120,17 @@ Escenario 1: el administrador ve un error inesperado en una aplicación que esta
 
 4.  Eliminación de la clave del Registro
 
-    **HKEY \_ Sistema \_ DE MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
+    **HKEY \_ Sistema \_ LOCAL MACHINE** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **cscript.exe**
 
-5.  Ejecute la herramienta ETW Tracerpt.exe para analizar la información de seguimiento del registro:
+5.  Ejecute la herramienta ETW Tracerpt.exe analizar la información de seguimiento del registro:
 
     **tracelog.exe -start scripttrace -guid \# 7288c9f8-d63c-4932-a345-89d6b060174d -f . \\ adsi.etl -flag 0x2 -level 0x4**
 
-Escenario 2: el administrador desea realizar un seguimiento de las operaciones de análisis y descarga de esquemas en una aplicación [ASP](https://msdn.microsoft.com/asp.net/default.aspx) denominada w3wp.exe que ya se está ejecutando. Para ello, el administrador realizaría los pasos siguientes:
+Escenario 2: el administrador quiere realizar un seguimiento de las operaciones de análisis y descarga de esquemas en una aplicación [ASP](https://msdn.microsoft.com/asp.net/default.aspx) denominada w3wp.exe que ya se está ejecutando. Para ello, el administrador realizaría los pasos siguientes:
 
 1.  Creación de la clave del Registro
 
-    **HKEY \_ Sistema \_ DE MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**
+    **HKEY \_ Sistema \_ LOCAL MACHINE** \\  \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**
 
     y dentro de esa clave, cree un valor de tipo DWORD denominado PID y esta establezca en el identificador de proceso de la instancia de w3wp.exe que se ejecuta actualmente en el equipo local.
 
@@ -206,7 +144,7 @@ Escenario 2: el administrador desea realizar un seguimiento de las operaciones d
     **tracelog.exe -stop w3wptrace**
 
 5.  Elimine la clave del Registro **HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **adsi** \\ **Tracing** \\ **w3wp.exe**.
-6.  Ejecute la herramienta ETW tracerpt.exe para analizar la información de seguimiento del registro:
+6.  Ejecute la herramienta ETW tracerpt.exe analizar la información de seguimiento del registro:
 
     **tracerpt.exe . \\ w3wp.etl -o -report**
 

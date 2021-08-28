@@ -1,7 +1,7 @@
 ---
 description: Estas constantes definen valores que especifican el tipo de objetos IContextNode.
 ms.assetid: 333db79e-f503-4545-84fd-7c1a39a96728
-title: Tipos de nodo de contexto (Iaguid. h)
+title: Tipos de nodos de contexto (Iaguid.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,127 +24,55 @@ api_type:
 - HeaderDef
 api_location:
 - iaguid.h
-ms.openlocfilehash: 918b7cf818ebcedc98f45bff7c41ee66ad4d1592
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bb2064cc72b398d290fa78606b31bd37208535e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153595"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473891"
 ---
 # <a name="context-node-types"></a>Tipos de nodo de contexto
 
-Estas constantes definen valores que especifican el tipo de objetos [**IContextNode**](icontextnode.md) .
+Estas constantes definen valores que especifican el tipo de [**objetos IContextNode.**](icontextnode.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constante o valor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span id="GUID_CNT_ANALYSISHINT"></span><span id="guid_cnt_analysishint"></span><dl> <dt><strong>GUID_CNT_ANALYSISHINT</strong></dt> <dt>(ANALYSISHINT)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo que contiene información de contexto adicional para una región que utiliza el <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a> para mejorar su análisis.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="GUID_CNT_CUSTOMRECOGNIZER"></span><span id="guid_cnt_customrecognizer"></span><dl> <dt><strong>GUID_CNT_CUSTOMRECOGNIZER</strong></dt> <dt>(CUSTOMRECOGNIZER)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo que se usa para una única operación de reconocimiento.<br/> Todos los trazos y nodos que se encuentran dentro de un nodo de reconocedor personalizado se reconocen mediante una operación de reconocimiento independiente y no se analizan mediante el <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a>.<br/> Un nodo de reconocedor personalizado debe ser el elemento secundario directo del nodo raíz del analizador de tinta.<br/> Un nodo de reconocedor personalizado puede contener los siguientes tipos de elementos secundarios:<br/>
-<ul>
-<li>Cualquier número de nodos UnclassifiedInk.</li>
-<li>Cualquier número de nodos de objeto.</li>
-<li>Cualquier número de nodos de línea.</li>
-<li>Cualquier número de nodos InkWord.</li>
-<li>Cualquier número de nodos con un valor GUID desconocido.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="GUID_CNT_IMAGE"></span><span id="guid_cnt_image"></span><dl> <dt><strong>GUID_CNT_IMAGE</strong></dt> <dt>(imagen)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para una región bidimensional en la que puede haber cualquier imagen que no sea de tinta en el documento.<br/> <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a> no crea nodos de imagen. Use <a href="icontextnode-createsubnode.md"><strong>IContextNode:: CreateSubNode</strong></a> para agregar un nodo de imagen al árbol de nodos de contexto. A continuación, el <strong>IInkAnalyzer</strong> usa las regiones definidas por el nodo de la imagen para determinar si alguna tinta anota la imagen que no es de tinta.<br/> Un nodo de imagen no puede tener elementos secundarios.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="GUID_CNT_INKBULLET"></span><span id="guid_cnt_inkbullet"></span><dl> <dt><strong>GUID_CNT_INKBULLET</strong></dt> <dt>(INKBULLET)</dt> </dl></td>
-<td style="text-align: left;">InkBullet ContextNodeType representa una colección de trazos que forman una viñeta en una lista con viñetas.<br/> Un ContextNode de tipo InkBullet no puede tener elementos secundarios. Solo puede ser un elemento secundario de un párrafo ContextNode. Solo puede aparecer un InkBullet en un único párrafo ContextNode.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="GUID_CNT_INKDRAWING"></span><span id="guid_cnt_inkdrawing"></span><dl> <dt><strong>GUID_CNT_INKDRAWING</strong></dt> <dt>(INKDRAWING)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para una colección de trazos que constituye un dibujo.<br/> Los dibujos son trazos que se determinan como formas o bocetos abstractos. Por lo general, los trazos no se clasifican como trazos de escritura.<br/> Un nodo de dibujo de tinta no puede tener elementos secundarios.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="GUID_CNT_INKWORD"></span><span id="guid_cnt_inkword"></span><dl> <dt><strong>GUID_CNT_INKWORD</strong></dt> <dt>(INKWORD)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para una colección de trazos que constituye una agrupación lógica para formar una palabra reconocible.<br/> Un nodo de palabra de tinta no puede contener elementos secundarios.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="GUID_CNT_LINE"></span><span id="guid_cnt_line"></span><dl> <dt><strong>GUID_CNT_LINE</strong></dt> <dt>(línea)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para una línea de palabras.<br/> Un nodo de línea puede contener los siguientes tipos de elementos secundarios:<br/>
-<ul>
-<li>Cualquier número de nodos de palabra de tinta.</li>
-<li>Cualquier número de nodos de palabra de texto.</li>
-<li>Cualquier número de nodos con un valor <strong>GUID</strong> desconocido.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="GUID_CNT_OBJECT"></span><span id="guid_cnt_object"></span><dl> <dt><strong>GUID_CNT_OBJECT</strong></dt> <dt>(objeto)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo de un objeto devuelto por un &quot; &quot; reconocedor personalizado de objeto.<br/> Un nodo de objeto no puede contener elementos secundarios.<br/> Solo los nodos de reconocedor personalizados pueden contener nodos de objeto.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="GUID_CNT_PARAGRAPH"></span><span id="guid_cnt_paragraph"></span><dl> <dt><strong>GUID_CNT_PARAGRAPH</strong></dt> <dt>(párrafo)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para una colección de nodos que constituye una agrupación lógica de líneas.<br/> Los motores de análisis determinan la definición exacta de un párrafo. En general, un párrafo contiene grupos de líneas que se retransmiten conjuntamente si se cambia el tamaño del cuadro que contiene las líneas.<br/> Un nodo de párrafo puede contener los siguientes tipos de elementos secundarios:<br/>
-<ul>
-<li>Cualquier número de nodos de viñeta de tinta.</li>
-<li>Cualquier número de nodos de línea.</li>
-<li>Cualquier número de nodos con un valor <strong>GUID</strong> desconocido.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="GUID_CNT_ROOT"></span><span id="guid_cnt_root"></span><dl> <dt><strong>GUID_CNT_ROOT</strong></dt> <dt>(raíz)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para el nodo superior de un árbol de nodos que describen los resultados del análisis de tinta.<br/> Los nodos raíz generalmente se obtienen del método <a href="iinkanalyzer-getrootnode.md"><strong>IInkAnalyzer:: GetRootNode Method</strong></a> .<br/> Un nodo raíz puede contener los siguientes tipos de elementos secundarios:<br/>
-<ul>
-<li>Cualquier número de nodos de sugerencia de análisis.</li>
-<li>Cualquier número de nodos de reconocedor personalizados.</li>
-<li>Cualquier número de nodos de imagen.</li>
-<li>Cualquier número de nodos de dibujo de tinta.</li>
-<li>Cualquier número de nodos de la región de escritura.</li>
-<li>Cualquier número de nodos de entrada de lápiz sin clasificar.</li>
-<li>Cualquier número de nodos con un valor <strong>GUID</strong> desconocido.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="GUID_CNT_TEXTWORD"></span><span id="guid_cnt_textword"></span><dl> <dt><strong>GUID_CNT_TEXTWORD</strong></dt> <dt>(TEXTWORD)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para la región bidimensional en la que puede haber cualquier texto que no sea de tinta en el documento.<br/> El <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a> no crea nodos de texto de Word. Use <a href="icontextnode-createsubnode.md"><strong>IContextNode:: CreateSubNode</strong></a> para agregar un nodo de texto de Word al árbol de nodo de contexto. A continuación, el <strong>IInkAnalyzer</strong> usa las regiones definidas por el nodo Text Word para determinar si alguna tinta anota el texto que no es de tinta.<br/> Los reconocedores futuros pueden usar la región definida por un nodo de palabra de texto para determinar si alguna tinta anota la palabra que no es de tinta.<br/> Un nodo Text Word no puede tener elementos secundarios<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="GUID_CNT_UNCLASSIFIEDINKNODE"></span><span id="guid_cnt_unclassifiedinknode"></span><dl> <dt><strong>GUID_CNT_UNCLASSIFIEDINKNODE</strong></dt> <dt>(UnclassifiedInk)</dt> </dl></td>
-<td style="text-align: left;">Representa un nodo para los trazos que todavía no se han clasificado o reconocido.<br/> Un nodo de tinta sin clasificar no puede tener elementos secundarios.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constante o valor | Descripción | 
+|----------------|-------------|
+| <span id="GUID_CNT_ANALYSISHINT"></span><span id="guid_cnt_analysishint"></span><dl><dt><strong>GUID_CNT_ANALYSISHINT</strong></dt><dt>(AnalysisHint)</dt></dl> | Representa un nodo que contiene información de contexto adicional para una región que <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a> usa para mejorar su análisis.<br /> | 
+| <span id="GUID_CNT_CUSTOMRECOGNIZER"></span><span id="guid_cnt_customrecognizer"></span><dl><dt><strong>GUID_CNT_CUSTOMRECOGNIZER</strong></dt><dt>(CustomRecognizer)</dt></dl> | Representa un nodo utilizado para una única operación de reconocimiento.<br /> Todos los trazos y nodos que se encuentran dentro de un nodo de reconocedor personalizado se reconocen mediante una operación de reconocimiento independiente y no se analizan mediante <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a>.<br /> Un nodo de reconocedor personalizado debe ser el elemento secundario directo del nodo raíz del analizador de entrada de lápiz.<br /> Un nodo de reconocedor personalizado puede contener los siguientes tipos de elementos secundarios:<br /><ul><li>Cualquier número de nodos UnclassifiedInk.</li><li>Cualquier número de nodos de objeto.</li><li>Cualquier número de nodos de línea.</li><li>Cualquier número de nodos InkWord.</li><li>Cualquier número de nodos con un valor GUID desconocido.</li></ul> | 
+| <span id="GUID_CNT_IMAGE"></span><span id="guid_cnt_image"></span><dl><dt><strong>GUID_CNT_IMAGE</strong></dt><dt>(imagen)</dt></dl> | Representa un nodo para una región bidimensional donde pueden existir imágenes que no son de entrada manuscrita en el documento.<br /> <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a> no genera nodos de imagen. Use <a href="icontextnode-createsubnode.md"><strong>IContextNode::CreateSubNode para</strong></a> agregar un nodo de imagen al árbol de nodos de contexto. A <strong>continuación, IInkAnalyzer</strong> usa las regiones definidas por el nodo de imagen para determinar si alguna entrada de lápiz anota la imagen que no es de entrada manuscrita.<br /> Un nodo de imagen no puede tener ningún elemento secundario.<br /> | 
+| <span id="GUID_CNT_INKBULLET"></span><span id="guid_cnt_inkbullet"></span><dl><dt><strong>GUID_CNT_INKBULLET</strong></dt><dt>(Ink Yaet)</dt></dl> | Ink Holoet ContextNodeType representa una colección de trazos que constituye una viñeta en una lista con viñetas.<br /> Un ContextNode de tipo InkNode no puede tener elementos secundarios. Solo puede ser un elemento secundario de un ContextNode de párrafo. Solo puede aparecer un Ink InkEt en un único contextNode de párrafo.<br /> | 
+| <span id="GUID_CNT_INKDRAWING"></span><span id="guid_cnt_inkdrawing"></span><dl><dt><strong>GUID_CNT_INKDRAWING</strong></dt><dt>(InkDrawing)</dt></dl> | Representa un nodo para una colección de trazos que constituye un dibujo.<br /> Los dibujos son trazos que se determinan como formas o bocetos abstractos. Por lo general, son trazos que no se clasifican como trazos de escritura.<br /> Un nodo de dibujo de entrada de lápiz no puede tener ningún elemento secundario.<br /> | 
+| <span id="GUID_CNT_INKWORD"></span><span id="guid_cnt_inkword"></span><dl><dt><strong>GUID_CNT_INKWORD</strong></dt><dt>(InkWord)</dt></dl> | Representa un nodo para una colección de trazos que constituye una agrupación lógica para formar una palabra reconocible.<br /> Un nodo de palabra de entrada de lápiz no puede contener ningún elemento secundario.<br /> | 
+| <span id="GUID_CNT_LINE"></span><span id="guid_cnt_line"></span><dl><dt><strong>GUID_CNT_LINE</strong></dt><dt>(línea)</dt></dl> | Representa un nodo para una línea de palabras.<br /> Un nodo de línea puede contener los siguientes tipos de elementos secundarios:<br /><ul><li>Cualquier número de nodos de palabras manuscrita.</li><li>Cualquier número de nodos de palabras de texto.</li><li>Cualquier número de nodos con un <strong>valor GUID</strong> desconocido.</li></ul> | 
+| <span id="GUID_CNT_OBJECT"></span><span id="guid_cnt_object"></span><dl><dt><strong>GUID_CNT_OBJECT</strong></dt><dt>(objeto)</dt></dl> | Representa un nodo para un objeto que se devuelve desde un reconocedor personalizado de "objeto".<br /> Un nodo de objeto no puede contener ningún elemento secundario.<br /> Solo los nodos de reconocedor personalizados pueden contener nodos de objeto.<br /> | 
+| <span id="GUID_CNT_PARAGRAPH"></span><span id="guid_cnt_paragraph"></span><dl><dt><strong>GUID_CNT_PARAGRAPH</strong></dt><dt>(párrafo)</dt></dl> | Representa un nodo para una colección de nodos que constituye una agrupación lógica de líneas.<br /> La definición exacta de un párrafo viene determinada por los motores de análisis. En general, un párrafo contiene grupos de líneas que se cambiarían de tamaño si se cambiase el tamaño del cuadro que contiene las líneas.<br /> Un nodo de párrafo puede contener los siguientes tipos de elementos secundarios:<br /><ul><li>Cualquier número de nodos de viñeta de lápiz.</li><li>Cualquier número de nodos de línea.</li><li>Cualquier número de nodos con un <strong>valor GUID</strong> desconocido.</li></ul> | 
+| <span id="GUID_CNT_ROOT"></span><span id="guid_cnt_root"></span><dl><dt><strong>GUID_CNT_ROOT</strong></dt><dt>(raíz)</dt></dl> | Representa un nodo para el nodo superior de un árbol de nodos que describen los resultados del análisis de entrada de lápiz.<br /> Por lo general, los nodos raíz se obtienen del <a href="iinkanalyzer-getrootnode.md"><strong>método IInkAnalyzer::GetRootNode.</strong></a><br /> Un nodo raíz puede contener los siguientes tipos de elementos secundarios:<br /><ul><li>Cualquier número de nodos de sugerencia de análisis.</li><li>Cualquier número de nodos de reconocedor personalizados.</li><li>Cualquier número de nodos de imagen.</li><li>Cualquier número de nodos de dibujo de lápiz.</li><li>Cualquier número de nodos de región de escritura.</li><li>Cualquier número de nodos de entrada de lápiz sin clasificar.</li><li>Cualquier número de nodos con un <strong>valor GUID</strong> desconocido.</li></ul> | 
+| <span id="GUID_CNT_TEXTWORD"></span><span id="guid_cnt_textword"></span><dl><dt><strong>GUID_CNT_TEXTWORD</strong></dt><dt>(TextWord)</dt></dl> | Representa un nodo para la región bidimensional donde puede existir cualquier texto que no sea de entrada manuscrita en el documento.<br /> <a href="iinkanalyzer.md"><strong>IInkAnalyzer</strong></a> no genera nodos de palabras de texto. Use <a href="icontextnode-createsubnode.md"><strong>IContextNode::CreateSubNode para</strong></a> agregar un nodo de palabra de texto al árbol de nodos de contexto. A <strong>continuación, IInkAnalyzer</strong> usa las regiones definidas por el nodo de palabra de texto para determinar si alguna entrada de lápiz anota el texto que no es de entrada manuscrita.<br /> Los reconocedores futuros pueden usar la región definida por un nodo de palabra de texto para determinar si alguna entrada de lápiz anota la palabra que no es de entrada manuscrita.<br /> Un nodo de palabra de texto no puede tener ningún elemento secundario<br /> | 
+| <span id="GUID_CNT_UNCLASSIFIEDINKNODE"></span><span id="guid_cnt_unclassifiedinknode"></span><dl><dt><strong>GUID_CNT_UNCLASSIFIEDINKNODE</strong></dt><dt>(UnclassifiedInk)</dt></dl> | Representa un nodo para los trazos que aún no se han clasificado o reconocido.<br /> Un nodo de entrada de lápiz sin clasificar no puede tener ningún elemento secundario.<br /> | 
 
 
 
-## <a name="remarks"></a>Observaciones
 
-Para obtener más información sobre los distintos tipos de nodo de contexto, consulte [información general del análisis de tinta](ink-analysis-overview.md).
+## <a name="remarks"></a>Comentarios
+
+Para obtener más información sobre los distintos tipos de nodos de contexto, vea [Ink Analysis Overview](ink-analysis-overview.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Iaguid. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Iaguid.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -154,25 +82,25 @@ Para obtener más información sobre los distintos tipos de nodo de contexto, co
 [**IContextNode::CreateSubNode**](icontextnode-createsubnode.md)
 </dt> <dt>
 
-[**IContextNode:: GetType**](icontextnode-gettype.md)
+[**IContextNode::GetType**](icontextnode-gettype.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: CreateAnalysisHint (método)**](iinkanalyzer-createanalysishint.md)
+[**IInkAnalyzer::CreateAnalysisHint (Método)**](iinkanalyzer-createanalysishint.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: CreateCustomRecognizer (método)**](iinkanalyzer-createcustomrecognizer.md)
+[**IInkAnalyzer::CreateCustomRecognizer (Método)**](iinkanalyzer-createcustomrecognizer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfType (método)**](iinkanalyzer-findnodesoftype.md)
+[**IInkAnalyzer::FindNodesOfType (Método)**](iinkanalyzer-findnodesoftype.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfTypeForStrokes (método)**](iinkanalyzer-findnodesoftypeforstrokes.md)
+[**IInkAnalyzer::FindNodesOfTypeForStrokes (Método)**](iinkanalyzer-findnodesoftypeforstrokes.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: FindNodesOfTypeInSubTree (método)**](iinkanalyzer-findnodesoftypeinsubtree.md)
+[**IInkAnalyzer::FindNodesOfTypeInSubTree (Método)**](iinkanalyzer-findnodesoftypeinsubtree.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

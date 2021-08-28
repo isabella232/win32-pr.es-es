@@ -65,12 +65,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 04cf87a40b48e5f0fc505fe5bc921229ce208fe910d9418431ddae3187b2c5d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b1950431f79c8b41cc8fc29d14b66580f5fface
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950704"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886965"
 ---
 # <a name="msvm_serialcontroller-class"></a>Clase SerialController de Msvm \_
 
@@ -81,7 +81,7 @@ Representa las funcionalidades y la administración del controlador serie. Los c
 
  
 
-La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código MOF e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -157,7 +157,7 @@ La **clase \_ SerialController de Msvm** tiene estos métodos.
 | **OnlineDevice**                                                       | No se admite este método.<br/> |
 | **QuiesceDevice**                                                      | No se admite este método.<br/> |
 | [**RequestStateChange**](msvm-serialcontroller-requeststatechange.md) | Solicita un cambio de estado.<br/>      |
-| [**Restablecer**](msvm-serialcontroller-reset.md)                           | Restablece el dispositivo.<br/>            |
+| [**Reset**](msvm-serialcontroller-reset.md)                           | Restablece el dispositivo.<br/>            |
 | **RestoreProperties**                                                  | No se admite este método.<br/> |
 | **SaveProperties**                                                     | No se admite este método.<br/> |
 | **SetPowerState**                                                      | No se admite este método.<br/> |
@@ -185,10 +185,10 @@ Cualquier disponibilidad y estado adicionales del dispositivo. Esta propiedad se
 
 
 
-| Value                                                                            | Significado                   |
+| Valor                                                                            | Significado                   |
 |----------------------------------------------------------------------------------|---------------------------|
 | <dl> <dt>{ 6 }</dt> </dl> |                           |
-| <dl> <dt>6</dt> </dl>     | No es aplicable<br/> |
+| <dl> <dt>6</dt> </dl>     | No aplicable<br/> |
 
 
 
@@ -209,9 +209,9 @@ Disponibilidad principal y estado del dispositivo. Esta propiedad se hereda de [
 
 
 
-| Value                                                                        | Significado                   |
+| Valor                                                                        | Significado                   |
 |------------------------------------------------------------------------------|---------------------------|
-| <dl> <dt>6</dt> </dl> | No es aplicable<br/> |
+| <dl> <dt>6</dt> </dl> | No aplicable<br/> |
 
 
 
@@ -302,7 +302,7 @@ Indica la capacidad de la instrumentación para comunicarse con el elemento admi
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Reservado por** el proveedor (0x8000. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Reservado por** el proveedor (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -342,7 +342,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Complementa la **propiedad PrimaryStatus con** detalles de estado adicionales. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Complementa la propiedad **PrimaryStatus con** detalles de estado adicionales. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -361,13 +361,13 @@ Complementa la **propiedad PrimaryStatus con** detalles de estado adicionales. U
 <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Error no recuperable** (4)
 </dt> <dt>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidad de compatibilidad con error** (5)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidad de soporte en error** (5)
 </dt> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Reservado por** el proveedor (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -381,7 +381,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y siempre se establece en "Microsoft: *<GUID>* ".
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y siempre se establece en "Microsoft:*&lt; &gt; GUID".*
 
 </dd> <dt>
 
@@ -407,11 +407,11 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 
 
-| Value                                                                        | Significado            |
+| Valor                                                                        | Significado            |
 |------------------------------------------------------------------------------|--------------------|
 | <dl> <dt>2</dt> </dl> | habilitado<br/> |
 
@@ -430,13 +430,13 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados habilitados y deshabilitados de un elemento. También puede indicar las transiciones entre estos estados solicitados. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Estados habilitados y deshabilitados de un elemento. También puede indicar las transiciones entre estos estados solicitados. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 
 
-| Value                                                                        | Significado                   |
+| Valor                                                                        | Significado                   |
 |------------------------------------------------------------------------------|---------------------------|
-| <dl> <dt>5</dt> </dl> | No es aplicable<br/> |
+| <dl> <dt>5</dt> </dl> | No aplicable<br/> |
 
 
 
@@ -453,7 +453,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el error notificado en la **propiedad LastErrorCode** ahora está borrado. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Indica si el error notificado en la **propiedad LastErrorCode** ahora está desactivado. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -466,7 +466,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que proporciona más información sobre el error registrado en la **propiedad LastErrorCode** e información sobre las acciones correctivas que se pueden realizar. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Cadena que proporciona más información sobre el error registrado en la **propiedad LastErrorCode** e información sobre las acciones correctivas que se pueden realizar. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -492,7 +492,7 @@ Tipo de datos: **matriz de** cadenas
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de cadenas de forma libre que proporcionan explicaciones y detalles detrás de las entradas de la matriz de **propiedades OtherIdentifyingInfo.** Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y siempre se establece en **Null.**
+Matriz de cadenas de forma libre que proporcionan explicaciones y detalles detrás de las entradas de la matriz de **propiedades OtherIdentifyingInfo.** Esta propiedad se hereda de [**\_ CIM LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -534,7 +534,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último código de error notificado por el dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Último código de error notificado por el dispositivo lógico. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -547,7 +547,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Velocidad en baudios máxima, en bits por segundo, que admite el controlador serie. Esta propiedad se hereda de [**CIM \_ SerialController.**](/windows/desktop/CIMWin32Prov/cim-serialcontroller)
+Velocidad en baudios máxima, en bits por segundo, que es compatible con el controlador serie. Esta propiedad se hereda de [**CIM \_ SerialController.**](/windows/desktop/CIMWin32Prov/cim-serialcontroller)
 
 </dd> <dt>
 
@@ -560,7 +560,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número máximo de entidades direccionables directamente admitidas por este controlador. Se debe usar un valor de 0 si el número es desconocido o ilimitado. Protocolo utilizado por el controlador para acceder a dispositivos controlados. Esta propiedad se hereda del [**controlador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-controller)
+Número máximo de entidades direccionables directamente compatibles con este controlador. Se debe usar un valor de 0 si el número es desconocido o ilimitado. Protocolo utilizado por el controlador para acceder a dispositivos controlados. Esta propiedad se hereda del [**controlador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-controller)
 
 </dd> <dt>
 
@@ -573,7 +573,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad está en desuso. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Esta propiedad está en desuso. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -657,7 +657,7 @@ Proporciona información de estado actual para la condición operativa del eleme
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000. )
 </dt> </dl>
 
 </dd> <dt>
@@ -710,7 +710,7 @@ Tipo de datos: **matriz uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Las funcionalidades de administración de energía del dispositivo. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Funcionalidades de administración de energía del dispositivo. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -768,7 +768,7 @@ Proporciona información de estado de alto nivel. Esta propiedad debe usarse jun
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000. )
 </dt> </dl>
 
 </dd> <dt>
@@ -799,7 +799,7 @@ Protocolo utilizado por el controlador para acceder a dispositivos controlados. 
 
 
 
-| Value                                                                         | Significado             |
+| Valor                                                                         | Significado             |
 |-------------------------------------------------------------------------------|---------------------|
 | <dl> <dt>26</dt> </dl> | IEEE-488<br/> |
 
@@ -822,9 +822,9 @@ Tipo de acceso: solo lectura
 
 
 
-| Value                                                                         | Significado                   |
+| Valor                                                                         | Significado                   |
 |-------------------------------------------------------------------------------|---------------------------|
-| <dl> <dt>12</dt> </dl> | No es aplicable<br/> |
+| <dl> <dt>12</dt> </dl> | No aplicable<br/> |
 
 
 
@@ -845,9 +845,9 @@ Seguridad operativa del controlador. Esta propiedad se hereda de [**CIM \_ Seria
 
 
 
-| Value                                                                        | Significado         |
+| Valor                                                                        | Significado         |
 |------------------------------------------------------------------------------|-----------------|
-| <dl> <dt>3</dt> </dl> | Ninguno<br/> |
+| <dl> <dt>3</dt> </dl> | None<br/> |
 
 
 
@@ -980,7 +980,7 @@ El acceso a **la clase \_ SerialController de Msvm** podría estar restringido p
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |

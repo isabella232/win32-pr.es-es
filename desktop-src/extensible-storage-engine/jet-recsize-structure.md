@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_RECSIZE'
-title: Estructura de JET_RECSIZE
+description: 'Más información sobre: JET_RECSIZE estructura'
+title: JET_RECSIZE estructura
 TOCTitle: JET_RECSIZE Structure
 ms:assetid: bb2a63bb-7956-46c2-9791-0d0678a6c366
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294072(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e4e6b2f313a5411ba5bfeea73db3b01afe007612
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7ea4520a75e83c77a6403a583e9131a15df337b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808540"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988237"
 ---
-# <a name="jet_recsize-structure"></a>Estructura de JET_RECSIZE
+# <a name="jet_recsize-structure"></a>JET_RECSIZE estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_recsize-structure"></a>Estructura de JET_RECSIZE
+## <a name="jet_recsize-structure"></a>JET_RECSIZE estructura
 
-[JetGetRecordSize](./jetgetrecordsize-function.md) utiliza la estructura de **JET_RECSIZE** para devolver información sobre los requisitos de uso de un registro en el espacio de datos del usuario, el número de columnas establecidas, el número de valores y el espacio de sobrecarga de la estructura de los registros de ese.
+[JetGetRecordSize](./jetgetrecordsize-function.md) usa la estructura de JET_RECSIZE para devolver información sobre los requisitos de uso de un registro en el espacio de datos del usuario, el número de columnas de conjunto, el número de valores y el espacio de sobrecarga de la estructura de registros ESE. 
 
-**Windows Vista:** La estructura de **JET_RECSIZE** se introduce en Windows Vista.
+**Windows Vista:** La **JET_RECSIZE** se introduce en Windows Vista.
 
 ```cpp
     typedef struct {
@@ -52,23 +52,23 @@ _**Se aplica a:** Windows | Windows Server_
 
 Conjunto de datos de usuario en el registro.
 
-**Nota:**  El tamaño de la clave no se incluye en este.
+**Nota**  El tamaño de clave no se incluye en esto.
 
 **cbLongValueData**
 
 Datos de usuario asociados al registro pero almacenados en el árbol de valores largos.
 
-**Nota:**  Esto no cuenta los valores largos intrínsecos.
+**Nota**  Esto no cuenta valores long intrínsecos.
 
 **cbOverhead**
 
-Sobrecarga de la estructura de registros de ESE para este registro. Esto incluye el tamaño de la clave del registro.
+Sobrecarga de la estructura de registros ese para este registro. Esto incluye el tamaño de clave del registro.
 
 **cbLongValueOverhead**
 
 Sobrecarga de los datos de valor largo.
 
-**Nota:**  Esto no cuenta los valores largos intrínsecos.
+**Nota**  Esto no cuenta valores long intrínsecos.
 
 **cNonTaggedColumns**
 
@@ -80,13 +80,13 @@ Número total de columnas etiquetadas establecidas en este registro.
 
 **cLongValues**
 
-Número total de valores Long almacenados en el árbol de valor largo para este registro.
+Número total de valores largos almacenados en el árbol de valores largos para este registro.
 
-**Nota:**  Esto no cuenta los valores largos intrínsecos.
+**Nota**  Esto no cuenta valores long intrínsecos.
 
 **cMultiValues**
 
-La acumulación del número total de valores más allá de la primera para todas las columnas del registro.
+Acumulación del número total de valores más allá de la primera para todas las columnas del registro.
 
 ### <a name="remarks"></a>Observaciones
 
@@ -94,26 +94,13 @@ El número total de valores del registro sería **cMultiValues**  +  **cNonTagge
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

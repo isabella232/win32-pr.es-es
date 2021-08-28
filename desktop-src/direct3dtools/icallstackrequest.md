@@ -17,20 +17,20 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 86abba7eeda4dc16e371dedd0ab01b4d94a9aabd
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: ff3910750608fdb1f9ee40eb00d8d9e938de48a9
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631933"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787361"
 ---
 # <a name="span-idvspixengineicallstackrequestspanicallstackrequest-interface"></a><span id="vspixengine.icallstackrequest"></span>Interfaz ICallStackRequest
 
 Solicitud de datos de pila de llamadas.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz ICallStackRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ICallStackRequest** también tiene estos tipos de miembros:
+La **interfaz ICallStackRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ICallStackRequest también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -38,7 +38,7 @@ La **interfaz ICallStackRequest** hereda de la [**interfaz IUnknown.**](/windows
 
 La **interfaz ICallStackRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/icallstackrequest-requestasync-eventid-icallstackcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Una solicitud asincrónica para obtener los ADA de la pila de llamadas (direcciones virtuales relativas) del evento especificado.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/icallstackrequest-requestasync-eventid-icallstackcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Una solicitud asincrónica para obtener la pila de llamadas DEA (direcciones virtuales relativas) del evento especificado.</p></td></tr></tbody></table>
 
  
 

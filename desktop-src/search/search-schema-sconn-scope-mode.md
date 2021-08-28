@@ -1,19 +1,19 @@
 ---
-description: El elemento especifica si la dirección URL debe incluirse o <mode> excluirse del ámbito del conector de búsqueda. Los valores permitidos son Include y Exclude. Este elemento no tiene elementos secundarios ni atributos.
+description: El &lt; elemento mode especifica si la dirección URL debe incluirse o &gt; excluirse del ámbito del conector de búsqueda. Los valores permitidos son Include y Exclude. Este elemento no tiene elementos secundarios ni atributos.
 ms.assetid: 7654c04a-31c4-4260-a51c-0600804e62a9
 title: elemento mode (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32a210abf5c9c2bbc4cd5d53978866a729d834928cf39e54bfb6e6fcc9c42c7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8e096bb21d634da6107359c014b82f1b367aba1
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119944325"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886745"
 ---
 # <a name="mode-element-search-connector-schema"></a>elemento mode (esquema del conector de búsqueda)
 
-El elemento especifica si la dirección URL debe incluirse o <mode> excluirse del ámbito del conector de búsqueda. Los valores permitidos son `Include` y `Exclude`. Este elemento no tiene elementos secundarios ni atributos.
+El &lt; elemento mode especifica si la dirección URL debe incluirse o &gt; excluirse del ámbito del conector de búsqueda. Los valores permitidos son `Include` y `Exclude`. Este elemento no tiene elementos secundarios ni atributos.
 
 ## <a name="syntax"></a>Syntax
 

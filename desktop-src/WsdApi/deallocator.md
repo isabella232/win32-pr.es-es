@@ -4,12 +4,12 @@ ms.assetid: 58228dfd-1d4b-41e5-b423-a54525021c22
 title: deallocator, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e9a27f768d0c9d854d13bd58c0c797234a0526c4abb95a0c5f4fb553466a6ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba2617ce92dcd0c2763f77b0bc6f0fb5c1beea1c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991755"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881055"
 ---
 # <a name="deallocator-element"></a>deallocator, elemento
 
@@ -35,13 +35,13 @@ No hay elementos secundarios.
 
 | Elemento                                               | Descripción                                                                                   |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementaciones para funciones de código auxiliar para operaciones de tipo de puerto.<br/> <br/> |
+| [**stubDefinitions**](stubdefinitions.md)<br/> | Genera implementaciones para las funciones de código auxiliar para las operaciones de tipo de puerto.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentarios
 
-El tipo de desasignador debe incluirse en un par de <deallocator></deallocator> etiquetas. Las cadenas siguientes son valores de desasignador válidos:
+El tipo deallocator debe incluirse en un par de etiquetas &lt; de desasignador. &gt; </deallocator> Las cadenas siguientes son valores de desasignador válidos:
 
 -   ninguno
 -   WSDFreeLinkedMemory
@@ -55,7 +55,7 @@ El tipo de desasignador debe incluirse en un par de <deallocator></deallocator> 
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

@@ -1,19 +1,19 @@
 ---
-description: Advanced Query Syntax (AQS) es la sintaxis de consulta predeterminada que usa Windows Search para consultar el índice y para restringir y restringir los parámetros de búsqueda.
+description: La sintaxis de consulta avanzada (AQS) es la sintaxis de consulta predeterminada que usa Windows Search para consultar el índice y para refinar y restringir los parámetros de búsqueda.
 ms.assetid: 76e33903-d063-48c0-9afe-912c3daa8237
 title: Uso de la sintaxis de consulta avanzada mediante programación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ebde3119199d84f67315c2db73343d5dffc58ad
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 24e480866120289605a7465af96d8aaa8dc2beda
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880696"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627240"
 ---
 # <a name="using-advanced-query-syntax-programmatically"></a>Uso de la sintaxis de consulta avanzada mediante programación
 
-Advanced Query Syntax (AQS) es la sintaxis de consulta predeterminada que usa Windows Search para consultar el índice y para restringir y restringir los parámetros de búsqueda. Los desarrolladores emplean AQS para compilar consultas mediante programación (y para que los usuarios limiten sus parámetros de búsqueda). AQS canónico se introdujo en Windows 7 y debe usarse en Windows 7 y versiones posteriores para generar consultas de AQS mediante programación.
+La sintaxis de consulta avanzada (AQS) es la sintaxis de consulta predeterminada que usa Windows Search para consultar el índice y para refinar y restringir los parámetros de búsqueda. Los desarrolladores emplean AQS para compilar consultas mediante programación (y para que los usuarios limiten sus parámetros de búsqueda). AQS canónico se introdujo en Windows 7 y debe usarse en Windows 7 y versiones posteriores para generar consultas de AQS mediante programación.
 
 Este tema se organiza de la siguiente manera:
 
@@ -50,7 +50,7 @@ Una consulta consta de consultas básicas conectadas con AND, OR y NOT, como se 
 
 Si una consulta tiene dos o más usos de AND u OR, se enlazarán de izquierda a derecha, independientemente de si es AND o OR. Es decir, la consulta "manzana Y manzana O cirón" se interpretará como si se hubiera escrito como "(manzana Y manzana) OR manzana", y la consulta, "manzana O manzana Y manzana", se interpretará como si se hubiera escrito como "(manzana O manzana) Y manzana". Por lo tanto, si un documento contiene la palabra cirón, pero ni manzana, ni pie, la primera consulta lo devolverá, pero la segunda consulta no. Por lo tanto, se recomienda usar paréntesis explícitos para cualquier consulta que combine AND y OR para evitar errores o interpretaciones erróneas.
 
-Una consulta básica busca elementos que cumplan una restricción sobre una propiedad. La única parte necesaria de una consulta básica es la restricción o el valor de búsqueda. Si no especifica una propiedad, Windows Buscar busca en todas las propiedades. &lt;restr &gt; representa la restricción de búsqueda.
+Una consulta básica busca elementos que cumplan una restricción sobre una propiedad. La única parte necesaria de una consulta básica es la restricción o el valor de búsqueda. Si no especifica una propiedad, Windows Search busca en todas las propiedades. <restr> representa la restricción de búsqueda.
 
 Los siguientes formularios para una consulta básica son válidos:
 
@@ -92,7 +92,7 @@ Una restricción es un valor de búsqueda, como un valor numérico o un valor de
 
 Si no especifica un operador, Windows Search elige el operador más adecuado para la consulta:
 
--   Para una propiedad de cadena, se supone que el operador \_ COP WORD \_ STARTSWITH $< .
+-   Para una propiedad de cadena, se supone que el operador \_ COP WORD STARTSWITH $< \_ .
 -   Para todas las demás propiedades, se supone que el \_ operador COP EQUAL = .
 
 Para el uso mediante programación de AQS, se recomienda tener siempre un operador explícito. El formulario válido para buscar un valor simple o un intervalo de valores es el siguiente:
@@ -138,7 +138,7 @@ System.Size:>1kb
 
 ### <a name="properties"></a>Propiedades
 
-Una palabra clave hace referencia a las propiedades, que puede ser un nombre de propiedad canónico en Windows 7 y versiones posteriores. AQS en la interfaz Windows usuario puede usar la etiqueta en lugar del nombre de propiedad canónica, como author en lugar de [System.Author](../properties/props-system-author.md). En Windows Vista y versiones anteriores era posible usar etiquetas en inglés independientemente del idioma de la interfaz de usuario. En Windows 7 y versiones posteriores, Windows Search reconoce palabras clave solo en el lenguaje de interfaz de usuario predeterminado actual.
+Una palabra clave hace referencia a las propiedades, que puede ser un nombre de propiedad canónico en Windows 7 y versiones posteriores. AQS en la interfaz Windows usuario puede usar la etiqueta en lugar del nombre de propiedad canónica, como author en lugar de [System.Author.](../properties/props-system-author.md) En Windows Vista y versiones anteriores era posible usar etiquetas en inglés independientemente del idioma de la interfaz de usuario. En Windows 7 y versiones posteriores, Windows Search reconoce palabras clave solo en el lenguaje de interfaz de usuario predeterminado actual.
 
 ### <a name="support-for-custom-properties"></a>Compatibilidad con propiedades personalizadas
 
@@ -146,7 +146,7 @@ En Windows Vista y versiones anteriores, las propiedades personalizadas no estab
 
 ### <a name="datetime-properties-in-windows-8"></a>Propiedades DateTime en Windows 8
 
-A partir Windows 8, las propiedades DateTime (como [System.DateModified)](../properties/props-system-datemodified.md)admiten el formato de fecha y hora canónico especificado por [ISO-8601,](https://www.w3.org/TR/NOTE-datetime)incluyendo opcionalmente la zona horaria UTC.
+A partir de Windows 8, las propiedades DateTime (como [System.DateModified)](../properties/props-system-datemodified.md)admiten el formato de fecha y hora canónico especificado por [ISO-8601,](https://www.w3.org/TR/NOTE-datetime)incluyendo opcionalmente la zona horaria UTC.
 
 -   **Windows 8 y anteriores, fecha y** hora sin zona horaria UTC: *YYYY* - *MM* - *DDThh*:*mm*:*ss*
 
@@ -158,10 +158,10 @@ A partir Windows 8, las propiedades DateTime (como [System.DateModified)](../pro
 
 ## <a name="keyword-use-in-local-languages"></a>Uso de palabras clave en idiomas locales
 
-En Windows 7 y versiones posteriores, las palabras clave mnemónicas solo funcionan en el idioma del sistema, como las palabras clave alemanas solo en un sistema operativo alemán y las palabras clave en inglés solo en un sistema operativo en inglés. [System.Author es](../properties/props-system-author.md) una palabra clave canónica y el valor mnemotécnico de la propiedad System.Author es Author, por ejemplo. La introducción de palabras clave canónicas compensa el hecho de que las palabras clave mnemotécnicas en inglés ya no se reconocen universalmente en todos los sistemas operativos independientemente del idioma, como era el caso en Windows Vista y versiones anteriores.
+En Windows 7 y versiones posteriores, las palabras clave mnemónicas solo funcionan en el idioma del sistema, como las palabras clave alemanas solo en un sistema operativo alemán y las palabras clave en inglés solo en un sistema operativo inglés. [System.Author es](../properties/props-system-author.md) una palabra clave canónica y el valor mnemotécnico de la propiedad System.Author es Author, por ejemplo. La introducción de palabras clave canónicas compensa el hecho de que las palabras clave mnemotécnicas en inglés ya no se reconocen universalmente en todos los sistemas operativos independientemente del idioma, como era el caso en Windows Vista y versiones anteriores.
 
 > [!Note]  
-> En Windows 7 y versiones posteriores, Windows Search reconoce palabras clave solo en el idioma predeterminado actual y no en inglés a menos que el inglés sea el valor predeterminado actual. Se recomienda que los desarrolladores siempre usen la sintaxis canónica para que su aplicación no tenga problemas de lenguaje con las palabras clave.
+> En Windows 7 y versiones posteriores, Windows Search reconoce palabras clave solo en el idioma predeterminado actual y no en inglés, a menos que el inglés sea el valor predeterminado actual. Se recomienda que los desarrolladores siempre usen la sintaxis canónica para que su aplicación no tenga problemas de lenguaje con las palabras clave.
 
  
 
@@ -173,10 +173,10 @@ Las convenciones para la sintaxis de palabras clave canónicas son las siguiente
 
 -   La sintaxis canónica de una propiedad es su nombre canónico, como `System.Photo.LightSource` . Los nombres canónicos no distinguen mayúsculas de minúsculas.
 -   La sintaxis canónica de los operadores booleanos consta de las palabras clave AND, OR y NOT, en mayúsculas.
--   Los operadores <, >, =, etc., no se localizan y, por tanto, también forman parte de la sintaxis canónica.
--   Si una propiedad ha enumerado valores o `P` intervalos denominados N₁ a través de Nk, la sintaxis canónica del valor o intervalo I es el nombre canónico de P, seguido del carácter , seguido de N I , como se muestra en el \# ejemplo siguiente:<sub></sub>
+-   Los operadores <, >, =, etc., no están localizados y, por tanto, también forman parte de la sintaxis canónica.
+-   Si una propiedad ha enumerado valores o `P` intervalos denominados N₁ a través de Vez, la sintaxis canónica del valor o intervalo I es el nombre canónico de P, seguido del carácter , seguido de N I , como se muestra en el \# ejemplo siguiente:<sub></sub>
     -   `System.Photo.LightSource#Daylight`, `System.Photo.LightSource#StandardA` , etc.
--   En el caso de un tipo semántico definido T con valores o intervalos denominados N₁ a través de Vez, la sintaxis canónica del valor o intervalo I es el nombre canónico de T, seguido del carácter , seguido de N I , como se muestra en \# el ejemplo siguiente:<sub></sub>
+-   Para un tipo semántico definido T con valores o intervalos denominados N₁ a través de Vez, la sintaxis canónica para el valor o intervalo I es el nombre canónico de T, seguido del carácter , seguido de N I , como se muestra \# en el ejemplo siguiente:<sub></sub>
     -   `System.Devices.LaunchDeviceStageFromExplorer:=System.StructuredQueryType.Boolean#True`
 -   Para los valores literales, como palabras o frases, la sintaxis canónica es la misma que la sintaxis normal. Algunos ejemplos de consultas con valores literales en sintaxis canónica son:
     -   `System.Author:sanjay`
@@ -184,7 +184,7 @@ Las convenciones para la sintaxis de palabras clave canónicas son las siguiente
     -   `System.FileCount:>100`
 
 > [!Note]  
-> No hay ninguna sintaxis canónica para los números de Windows 7 y versiones posteriores. Dado que los formatos de punto flotante varían entre configuraciones regionales, no se admite el uso de una consulta canónica que implique una constante de punto flotante. Las constantes de enteros, en cambio, solo se pueden escribir con dígitos (sin separadores para miles) y se pueden usar de forma segura en consultas canónicas en Windows 7 y versiones posteriores.
+> No hay ninguna sintaxis canónica para los números en Windows 7 y versiones posteriores. Dado que los formatos de punto flotante varían entre configuraciones regionales, no se admite el uso de una consulta canónica que implique una constante de punto flotante. Las constantes de enteros, en cambio, solo se pueden escribir con dígitos (sin separadores para miles) y se pueden usar de forma segura en consultas canónicas en Windows 7 y versiones posteriores.
 
  
 
@@ -194,12 +194,12 @@ En la tabla siguiente se muestran algunos ejemplos de propiedades canónicas y l
 
 
 
-| Tipo de propiedad canónica | Ejemplo                                                                                     | Syntax                                                                                                                                                                                                                                                  |
+| Tipo de propiedad canónica | Ejemplo                                                                                     | Sintaxis                                                                                                                                                                                                                                                  |
 |----------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Valor de cadena               | [System.Author](../properties/props-system-author.md)<br/>    | Se busca el valor de cadena en la propiedad author: <br/>`System.Author:Jacobs`                                                                                                                                                              |
 | Intervalo de enumeración          | [System.Priority](../properties/props-system-priority.md)             | La propiedad priority puede tener un intervalo de valores numéricos:<br/>`System.Priority:System.Priority#High`                                                                                                                                                |
 | Boolean                    | [System.IsDeleted](../properties/props-system-isdeleted.md)<br/> | Los valores booleanos se pueden usar con cualquier propiedad booleana:<br/>`System.IsDeleted:System.StructuredQueryType.Boolean#True`Y `System.IsDeleted:System.StructuredQueryType.Boolean#False`                                                             |
-| Numérico                  | [System.Size](../properties/props-system-size.md)<br/>      | No es posible escribir de forma segura una consulta canónica que implique una constante de punto flotante, ya que los formatos de punto flotante varían entre configuraciones regionales. Los enteros deben escribirse sin separadores para miles. Por ejemplo:<br/>`System.Size:<12345` |
+| Numérico                  | [System.Size](../properties/props-system-size.md)<br/>      | No es posible escribir de forma segura una consulta canónica que implique una constante de punto flotante, porque los formatos de punto flotante varían entre configuraciones regionales. Los enteros deben escribirse sin separadores para miles. Por ejemplo:<br/>`System.Size:<12345` |
 
 
 
@@ -209,9 +209,9 @@ Para obtener más información sobre las propiedades canónicas y el sistema de 
 
 ### <a name="query-operators"></a>Operadores de consulta
 
-Si una propiedad, p, tiene varios valores para algún elemento, una consulta de AQS para p: restr devuelve el elemento si restr es true para al menos uno &lt; &gt; de los &lt; &gt; valores.  ( &lt; restr &gt; representa una restricción).
+Si una propiedad, p, tiene varios valores para algún elemento, una consulta de AQS para p: devuelve el elemento si es true para al menos uno <restr> <restr> de los valores.  ( <restr> representa una restricción).
 
-La sintaxis enumerada en la tabla siguiente consta de un operador, un símbolo de operador, un ejemplo y una descripción de ejemplo. El operador y el símbolo se pueden usar en cualquier idioma e incluirse en cualquier consulta. No use los operadores \_ COP IMPLICIT o COP APPLICATION \_ \_ SPECIFIC. Algunos de los operadores tienen símbolos intercambiables.
+La sintaxis enumerada en la tabla siguiente consta de un operador, un símbolo de operador, un ejemplo y una descripción de ejemplo. El operador y el símbolo se pueden usar en cualquier idioma e incluirse en cualquier consulta. No use los operadores COP \_ IMPLICIT o COP APPLICATION \_ \_ SPECIFIC. Algunos de los operadores tienen símbolos intercambiables.
 
 
 
@@ -241,7 +241,7 @@ La sintaxis enumerada en la tabla siguiente consta de un operador, un símbolo d
 <td>COP_NOTEQUAL</td>
 <td>≠<br/> -<br/> &lt;&gt;<br/> NOT<br/> - -<br/></td>
 <td>System.Kind:≠picture<br/> System.Photo.DateTaken:-[]¹<br/> System.Kind: &lt; &gt; imagen<br/> System.Kind:NOT picture<br/> System.Kind:- -picture<br/></td>
-<td>La <a href="/windows/desktop/properties/props-system-kind">propiedad System.Kind</a> no es una imagen.<br/> La <a href="/windows/desktop/properties/props-system-photo-datetaken">propiedad System.Photo.DateTaken</a> tiene un valor.<br/> La <a href="/windows/desktop/properties/props-system-kind">propiedad System.Kind</a> no es una imagen. <br/> La <a href="/windows/desktop/properties/props-system-kind">propiedad System.Kind</a> no es una imagen. <br/> Los operadores Double NOT aplicados a la misma propiedad no se cancelan. Por lo tanto, System.Kind:- -picture equivale a System.Kind:-picture y System.Kind:NOT picture.<br/></td>
+<td>La <a href="/windows/desktop/properties/props-system-kind">propiedad System.Kind</a> no es una imagen.<br/> La <a href="/windows/desktop/properties/props-system-photo-datetaken">propiedad System.Photo.DateTaken</a> tiene un valor .<br/> La <a href="/windows/desktop/properties/props-system-kind">propiedad System.Kind</a> no es una imagen. <br/> La <a href="/windows/desktop/properties/props-system-kind">propiedad System.Kind</a> no es una imagen. <br/> Los operadores DOUBLE NOT aplicados a la misma propiedad no se cancelan. Por lo tanto, System.Kind:- -picture es equivalente a System.Kind:-picture y System.Kind:NOT picture.<br/></td>
 </tr>
 <tr class="odd">
 <td>COP_LESSTHAN</td>
@@ -277,13 +277,13 @@ La sintaxis enumerada en la tabla siguiente consta de un operador, un símbolo d
 <td>COP_VALUE_ENDSWITH</td>
 <td>~&gt;<br/></td>
 <td>System.Photo.CameraModel:~ &gt; non<br/></td>
-<td>Busca los elementos en los que el valor de propiedad termina con los caracteres <em>distintos de</em>.<br/></td>
+<td>Busca elementos en los que el valor de propiedad termina con los caracteres <em>que no son</em>.<br/></td>
 </tr>
 <tr class="odd">
 <td>COP_VALUE_CONTAINS</td>
 <td>~=<br/> ~~<br/></td>
 <td>System.Subject.~=round <br/> System.Search.Autosummary:~~round<br/></td>
-<td>Busca un mensaje que tiene esta cadena en el asunto y que coincidirá con las reglas de &quot; <em>redondeo</em> &quot; g, por ejemplo.<br/> Busca todos los elementos con un resumen automático que contiene los caracteres <em>redondeados.</em><br/></td>
+<td>Busca un mensaje que tiene esta cadena en el asunto y que coincidirá con &quot; las reglas de<em>redondeo</em> &quot; g, por ejemplo.<br/> Busca todos los elementos con un resumen automático que contiene los caracteres <em>redondeados.</em><br/></td>
 </tr>
 <tr class="even">
 <td>COP_VALUE_NOTCONTAINS</td>
@@ -304,14 +304,14 @@ La sintaxis enumerada en la tabla siguiente consta de un operador, un símbolo d
 <tr class="even">
 <td>COP_WORD_EQUAL</td>
 <td>$=<br/> $$<br/></td>
-<td>System.StructuredQuery.Virtual.From:$= &quot; SanjayMentes&quot;<br/></td>
-<td>Para Windows 7 y versiones posteriores. Busca la frase &quot; <em>SanjayRías en</em> &quot; todas las propiedades From. La palabra <em>Sanjay</em> debe ir seguida de la <em>palabra Necesidad.</em><br/></td>
+<td>System.StructuredQuery.Virtual.From:$= &quot; SanjayRías&quot;<br/></td>
+<td>Para Windows 7 y versiones posteriores. Busca la frase &quot; <em>SanjayRías en</em> &quot; todas las propiedades From. La palabra <em>Sanjay</em> debe ir seguida de la <em>palabraRías</em>.<br/></td>
 </tr>
 <tr class="odd">
 <td>COP_WORD_STARTSWITH</td>
 <td>$<<br/></td>
 <td>System.Author:$<&quot;San&quot; System.Filename:$<&quot;Micro Exe&quot;<br/></td>
-<td>Para Windows 7 y versiones posteriores. Busca cualquier elemento en el que Author contenga una palabra que empiece por los caracteres &quot; <em>San</em> &quot; .<br/> Busca cualquier archivo en el que el nombre de archivo contenga una palabra que empiece por <em>micro</em>, seguida de una palabra que empiece por <em>exe</em>.<br/></td>
+<td>Para Windows 7 y versiones posteriores. Busca cualquier elemento en el que Author contenga una palabra a partir de los caracteres &quot; <em>San</em> &quot; .<br/> Busca cualquier archivo en el que el nombre de archivo contenga una palabra a partir de <em>micro</em>, seguido de una palabra que empieza por <em>exe.</em><br/></td>
 </tr>
 </tbody>
 </table>
@@ -320,7 +320,7 @@ La sintaxis enumerada en la tabla siguiente consta de un operador, un símbolo d
 
  
 
-¹ Los corchetes vacíos ( \[ \] ) denotan "sin valor".
+Ntes cuadrados vacíos ( \[ \] ) denotan "sin valor".
 
 Para las propiedades de cadena, la operación predeterminada es COP \_ WORD STARTS WITH o COP WORD \_ \_ \_ \_ EQUAL.
 
@@ -338,7 +338,7 @@ En la tabla siguiente se muestran ejemplos útiles de cómo se pueden restringir
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor o símbolo</th>
+<th>Valor/símbolo</th>
 <th>Ejemplos</th>
 <th>Descripción</th>
 </tr>
@@ -347,7 +347,7 @@ En la tabla siguiente se muestran ejemplos útiles de cómo se pueden restringir
 <tr class="odd">
 <td>String</td>
 <td>auto<br/></td>
-<td>Cualquier secuencia de caracteres que se puedan buscar. La cadena no debe contener espacios en blanco ni combinaciones de caracteres que forman parte de la sintaxis. En este ejemplo se busca una palabra que comienza por <em>auto</em>.<br/></td>
+<td>Cualquier secuencia de caracteres que se puedan buscar. La cadena no debe contener espacios en blanco ni combinaciones de caracteres que forman parte de la sintaxis. En este ejemplo se busca una palabra que empieza por <em>auto</em>.<br/></td>
 </tr>
 <tr class="even">
 <td>Cadena entre comillas &quot;&quot;</td>
@@ -377,10 +377,10 @@ En la tabla siguiente se muestran ejemplos útiles de cómo se pueden restringir
 <tr class="odd">
 <td>Fechas absolutas</td>
 <td>System.ItemDate:26/1/2010<br/> SystemDateModified 10/15/2002 19:00<br/></td>
-<td>Busca elementos con una fecha del 26 de enero de 2010.<br/> Busca los elementos que se modificaron el 15 de octubre de 2002 entre las 19:00:00 y las 19:00:59. <br/>
+<td>Busca elementos con una fecha del 26 de enero de 2010.<br/> Busca los elementos que se modificaron el 15 de octubre de 2002 entre las horas 19:00:00 y 19:00:59. <br/>
 <blockquote>
 [!Note]<br />
-Dado que los formatos de fecha (como los formatos de punto flotante) varían entre configuraciones regionales, no se admite el uso de sintaxis canónica con fechas absolutas y no es seguro para la localización.
+Dado que los formatos de fecha (como los formatos de punto flotante) varían entre configuraciones regionales, no se admite el uso de sintaxis canónica con fechas absolutas y no es seguro la localización.
 </blockquote>
 <br/></td>
 </tr>
@@ -390,14 +390,14 @@ Dado que los formatos de fecha (como los formatos de punto flotante) varían ent
 <td>Busca elementos con la fecha de hoy.<br/> Busca elementos con una fecha en el mes siguiente.<br/> Busca elementos con una fecha del último año.<br/>
 <blockquote>
 [!Note]<br />
-Además de buscar fechas e intervalos de fechas específicos, AQS reconoce los valores de fecha <em></em> relativos (como <em>hoy</em>, <em>mañana</em> <em>,</em>próxima semana <em>,</em>próximo mes) y día (como martes o <em>lunes). Miércoles</em>) y mes (<em>febrero</em>).
+Además de buscar fechas e intervalos de fechas específicos, AQS reconoce valores de fecha relativos <em></em> (como <em>hoy</em> <em>,</em>mañana <em>,</em>próxima semana , próximo <em>mes</em>) y día (como martes o <em>lunes). Miércoles</em>) y mes (<em>febrero</em>).
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td>..</td>
 <td>System.ItemDate:11/05/04..11/10/04 System.Size:5kb.. 10 kb<br/></td>
-<td>Los puntos dobles indican un intervalo de valores. Busca elementos con una fecha entre el 11/05/04 y el 11/10/04, ambos inclusive.<br/> Busca elementos de entre 5 y 10 kb de tamaño.<br/></td>
+<td>Los puntos dobles indican un intervalo de valores. Busca elementos con una fecha entre el 04/11/05 y el 10/11/04, ambos inclusive.<br/> Busca elementos de entre 5 y 10 kb de tamaño.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -426,8 +426,8 @@ Los usuarios pueden limitar el ámbito de sus búsquedas a ubicaciones de carpet
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
--   En Windows 7 y versiones posteriores, puede haber una opción de menú contextual disponible en función de si se cumple una condición de AQS. Para obtener más información, vea "Getting Dynamic Behavior for Static Verbs by Using Advanced Query Syntax" (Obtener comportamiento dinámico para verbos estáticos mediante la sintaxis de consulta avanzada) en [Creating Context Menu Handlers](../shell/context-menu-handlers.md).
--   Las consultas de AQS se pueden limitar a tipos específicos de archivos, que se conocen como tipos de archivo. Para obtener más información, vea [Tipos de archivo y asociaciones](../shell/fa-intro.md). Para obtener documentación de referencia de propiedades, [vea System.Kind](../properties/props-system-kind.md)y [System.KindText](../properties/props-system-kindtext.md).
+-   En Windows 7 y versiones posteriores, una opción de menú contextual puede estar disponible en función de si se cumple una condición de AQS. Para obtener más información, vea "Getting Dynamic Behavior for Static Verbs by Using Advanced Query Syntax" (Obtener comportamiento dinámico para verbos estáticos mediante la sintaxis de consulta avanzada) en [Creating Context Menu Handlers](../shell/context-menu-handlers.md).
+-   Las consultas de AQS se pueden limitar a tipos específicos de archivos, que se conocen como tipos de archivo. Para obtener más información, vea [Tipos de archivo y asociaciones](../shell/fa-intro.md). Para obtener documentación de referencia de propiedades, [vea System.Kind](../properties/props-system-kind.md)y [System.KindText.](../properties/props-system-kindtext.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

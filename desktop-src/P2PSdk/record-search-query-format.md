@@ -4,12 +4,12 @@ ms.assetid: 2c5ab425-6959-418a-8d9a-c8155257fc7e
 title: Formato de consulta de búsqueda de registros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23457cfde6955927b3efdcce5ae2dff94480c7cf56849b418547fe2503a36830
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f26a130d937177d4f903bfe52b121b2d67f8720d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119517965"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887004"
 ---
 # <a name="record-search-query-format"></a>Formato de consulta de búsqueda de registros
 
@@ -84,9 +84,9 @@ Una llamada a la [**función PeerGroupSearchRecords**](/windows/desktop/api/P2P/
 
 El elemento principal de una búsqueda de registros es **peersearch**, que contiene el identificador uniforme de recursos (URI) del esquema asociado en el **atributo xmlns.** Cuando **peersearch** se usa como elemento secundario, puede usar **y**, **cláusula** y **o como** elementos secundarios.
 
--   **y** : el **elemento y** realiza una operación AND lógica en una o varias cláusulas contenidas entre las etiquetas de apertura y cierre. Otras **etiquetas** **y y** o pueden ser elementos secundarios, y los resultados recursivos de sus cláusulas secundarias se incluyen en la operación.
+-   **y** : el **elemento y** realiza una operación AND lógica en una o varias cláusulas contenidas entre las etiquetas de apertura y cierre. Otras **etiquetas** **y o** pueden ser elementos secundarios, y los resultados recursivos de sus cláusulas secundarias se incluyen en la operación.
 
-    Por ejemplo, si desea obtener un registro que contenga un nombre igual a James Peters y una última actualización mayor que 2/28/2003 o una fecha de creación menor que 1/31/2003, use la siguiente cadena de consulta XML:
+    Por ejemplo, si desea obtener un registro que contenga un nombre igual a James Peters y una última actualización mayor que 2/28/2003, o una fecha de creación menor que 1/31/2003, use la siguiente cadena de consulta XML:
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8" ?> 
@@ -103,7 +103,7 @@ El elemento principal de una búsqueda de registros es **peersearch**, que conti
 
 <!-- -->
 
--   **clause:** el **elemento de** cláusula especifica una regla comparativa básica que compara el valor de un atributo de registro específico con el valor contenido entre las etiquetas de apertura y cierre. La **comparación** entre **el tipo** y los atributos de comparación indica la operación de comparación que se va a realizar.  Por ejemplo, una búsqueda simple que indica que todos los registros coincidentes deben tener un valor **peercreatorid** igual a James Peters aparece en la cadena de consulta XML como se indica a continuación:
+-   **clause:** el **elemento clause** especifica una regla comparativa básica que compara el valor de un atributo de registro específico con el valor contenido entre las etiquetas de apertura y cierre. El **tipo** y **los atributos de** comparación que se deben proporcionar **comparan** indica la operación de comparación que se va a realizar. Por ejemplo, una búsqueda simple que indica que todos los registros coincidentes deben tener un valor **peercreatorid** igual a James Peters aparece en la cadena de consulta XML de la siguiente manera:
 
     ``` syntax
     <?xml version="1.0" encoding="utf-8" ?> 
@@ -118,7 +118,7 @@ El elemento principal de una búsqueda de registros es **peersearch**, que conti
 
 <!-- -->
 
--   **o** : el **elemento o** realiza una operación OR lógica en una o varias cláusulas contenidas entre las etiquetas de apertura y cierre. Otros **elementos** o **y pueden** ser elementos secundarios, y los resultados recursivos de las cláusulas secundarias se incluyen en la operación. Por ejemplo, si desea obtener un registro que contenga un nombre igual a James Peters o una última actualización que esté entre 1/31/2003 y 2/28/2003, use la siguiente cadena de consulta XML:
+-   **o** : el **elemento o** realiza una operación LÓGICA OR en una o varias cláusulas contenidas entre las etiquetas de apertura y cierre. Otros **elementos** o **y pueden** ser elementos secundarios, y los resultados recursivos de las cláusulas secundarias se incluyen en la operación. Por ejemplo, si desea obtener un registro que contenga un nombre igual a James Peters, o una última actualización que esté entre 31/1/2003 y 2/28/2003, use la siguiente cadena de consulta XML:
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -135,7 +135,7 @@ El elemento principal de una búsqueda de registros es **peersearch**, que conti
 
 ## <a name="more-information-about-a-record-search"></a>Más información sobre una búsqueda de registros
 
-El primer nivel de nodos después de **peersearch** solo puede tener un elemento. Sin embargo, los elementos secundarios posteriores de ese elemento pueden tener muchos elementos en el mismo nivel.
+El primer nivel de nodos después **de peersearch** solo puede tener un elemento. Sin embargo, los elementos secundarios posteriores de ese elemento pueden tener muchos elementos en el mismo nivel.
 
 La siguiente consulta de búsqueda es incorrecta:
 
@@ -150,9 +150,9 @@ La siguiente consulta de búsqueda es incorrecta:
 </peersearch>
 ```
 
-Se produce un error en la consulta porque se devuelven dos valores para la coincidencia sin resolverse en un valor true/false, lo que significa que una cláusula es una consulta para el nombre de un registro que es igual a James Peters, y la operación AND coincide con las dos cláusulas de componente. El resultado son dos valores lógicos true/false que son contradictorios.
+Se produce un error en la consulta porque se devuelven dos valores para la coincidencia sin resolverse en un valor true/false, lo que significa que una cláusula es una consulta para el nombre de un registro que es igual a James Peters, y la operación AND coincide con las dos cláusulas de componente. El resultado son dos valores true/false lógicos que son contradictorios.
 
-Para obtener todos los registros que contienen un nombre igual a James Peters y una última actualización que esté entre 1/31/2003 y 2/28/2003, coloque la cláusula y las etiquetas que están en el mismo nivel entre apertura **y** cierre y etiquetas.   En el ejemplo siguiente se muestra la consulta correcta:
+Para obtener todos los registros que contienen un nombre igual a James Peters y una última actualización que esté entre el 31/1/2003 y el 2/28/2003, coloque la cláusula y las etiquetas y que están en el mismo nivel entre apertura **y** cierre y etiquetas.   En el ejemplo siguiente se muestra la consulta correcta:
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -167,15 +167,15 @@ Para obtener todos los registros que contienen un nombre igual a James Peters y 
 </peersearch>
 ```
 
-En la lista siguiente se identifica otra información específica que debe saber para escribir una consulta correcta:
+En la lista siguiente se identifica otra información específica que debe conocer para escribir una consulta correcta:
 
--   Las  etiquetas y y o no  se pueden encontrar entre las etiquetas de cláusula de apertura y cierre porque, en esa configuración, se interpretan como parte del valor con el que se va a coincidir, lo que produce un error o una coincidencia con errores. 
--   Cada par de **etiquetas** **de** apertura y cierre o y debe incluir al menos uno o varios nodos secundarios.
+-   Las  etiquetas y y o no  se pueden encontrar entre las etiquetas de la cláusula de apertura y cierre porque, en esa configuración, se interpretan como parte del valor con el que se debe coincidir, lo que produce un error o una coincidencia con errores. 
+-   Cada par de **etiquetas de** **apertura** y o de apertura y cierre debe incluir al menos uno o varios nodos secundarios.
 -   No se permite un conjunto cero de elementos en este esquema.
 
 ## <a name="record-attributes"></a>Atributos de registro
 
-Mediante el esquema [de atributo de registro](record-attribute-schema.md), un usuario puede crear atributos de registro que el atributo XML **attrib** de un elemento de cláusula especifica. Los atributos de un nuevo registro se agregan estableciendo el miembro **pszAttributes** de [**PEER \_ RECORD**](/windows/desktop/api/P2P/ns-p2p-peer_record) en una cadena XML con el formato especificado en el esquema.
+Mediante el esquema [de atributo de registro](record-attribute-schema.md), un usuario puede crear atributos de registro que especifica el atributo XML **attrib** en un elemento de cláusula. Los atributos de un nuevo registro se agregan estableciendo el miembro **pszAttributes** de [**PEER \_ RECORD**](/windows/desktop/api/P2P/ns-p2p-peer_record) en una cadena XML con el formato especificado en el esquema.
 
 La infraestructura del mismo nivel reserva los siguientes nombres de atributo:
 
@@ -189,13 +189,13 @@ La infraestructura del mismo nivel reserva los siguientes nombres de atributo:
 
 ## <a name="special-characters"></a>Caracteres especiales
 
-Determinados caracteres se pueden usar para expresar patrones de coincidencia o para escapar otros caracteres especiales. Estos caracteres se describen en la tabla siguiente. 
+Ciertos caracteres se pueden usar para expresar patrones de coincidencia o para escapar otros caracteres especiales. Estos caracteres se describen en la tabla siguiente. 
 
 | Patrón de caracteres | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \*                | Carácter comodín. Cuando este carácter se encuentra en un valor de cláusula, coincide con 0-n caracteres de cualquier valor, incluidos los caracteres no alfanuméricos y de espacio en blanco. Por ejemplo:<br/> "<clause attrib="peercreatorid" type="string" compare="equal">James \* P</clause>"<br/> Esta cláusula coincide con **todos los valores peercreatorid** con un nombre de "James" y un apellido a partir de "P".<br/> |
+| \*                | Carácter comodín. Cuando este carácter se encuentra en un valor de cláusula, coincide con 0-n caracteres de cualquier valor, incluidos los espacios en blanco y los caracteres no alfanuméricos. Por ejemplo:<br/> " <clause attrib="peercreatorid" type="string" compare="equal"> James P \* &lt; /clause &gt; "<br/> Esta cláusula coincide con **todos los valores peercreatorid** con un nombre de "James" y un apellido que empieza por "P".<br/> |
 | \\\*              | Asterisco de escape. Esta secuencia coincide con un carácter de asterisco.                                                                                                                                                                                                                                                                                                                                                                       |
-| ?                 | Carácter comodín de un solo carácter. Cuando este carácter se encuentra en un valor de cláusula, coincide con cualquier carácter individual, incluidos los caracteres no alfanuméricos y de espacio en blanco. Por ejemplo:<br/> "<clause attrib="filename" type="string" compare="equal">data-0?.xml</clause>"<br/> Esta cláusula coincide con **valores de** nombre de archivo como "data-01.xml" y "data-0B.xml".<br/>                              |
+| ?                 | Carácter comodín de un solo carácter. Cuando este carácter se encuentra en un valor de cláusula, coincide con cualquier carácter individual, incluidos los espacios en blanco y los caracteres no alfanuméricos. Por ejemplo:<br/> " <clause attrib="filename" type="string" compare="equal"> data-0?.xml&lt; /clause &gt; "<br/> Esta cláusula coincide **con valores de** nombre de archivo como "data-01.xml" y "data-0B.xml".<br/>                              |
 | \\?               | Signo de interrogación con escape. Esta secuencia coincide con un carácter de signo de interrogación.                                                                                                                                                                                                                                                                                                                                                              |
 | \\\\              | Barra diagonal inversa con escape. Esta secuencia coincide con un único carácter de barra diagonal inversa.                                                                                                                                                                                                                                                                                                                                                               |
 
@@ -203,7 +203,7 @@ Determinados caracteres se pueden usar para expresar patrones de coincidencia o 
 
  
 
-Si la secuencia de caracteres no es válida, la [**función PeerGroupSearchRecords**](/windows/desktop/api/P2P/nf-p2p-peergroupsearchrecords) devuelve el error **E \_ INVALIDARG**. Una secuencia no válida es cualquier secuencia que contiene un carácter " " (barra diagonal inversa) no inmediatamente seguido de un \\ carácter " \* " (asterisco), un "?" (signo de interrogación) u otro carácter \\ " " (barra diagonal inversa).
+Si la secuencia de caracteres no es válida, la [**función PeerGroupSearchRecords**](/windows/desktop/api/P2P/nf-p2p-peergroupsearchrecords) devuelve el error **E \_ INVALIDARG**. Una secuencia no válida es cualquier secuencia que contiene un carácter " " (barra diagonal inversa) no seguido inmediatamente de un \\ carácter " \* " (asterisco), un "?" (signo de interrogación) u otro carácter \\ " " (barra diagonal inversa).
 
  
 

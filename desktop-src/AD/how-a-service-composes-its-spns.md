@@ -7,12 +7,12 @@ keywords:
 - nombre de entidad de seguridad de servicio ad , cómo se compone un servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdd4c0ac9c871c76e9e8771a688d203898674e477426ebd788ee34fe894011a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35fb659eec3bb2d0f50fd109b39f356df1429535
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118188649"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881400"
 ---
 # <a name="how-a-service-composes-its-spns"></a>Cómo un servicio crea sus SPN
 
@@ -20,7 +20,7 @@ Un servicio puede usar dos funciones para componer sus SPN: [**DsGetSpn**](/wind
 
 Normalmente, un instalador de servicio usa la función [**DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna) para crear SPN, que luego registra en la cuenta de inicio de sesión del servicio mediante la función [**DsWriteAccountSpn.**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dswriteaccountspna) **DsGetSpn** puede realizar las siguientes funciones.
 
--   Cree un SPN simple con el <service class> / <host> formato "" para un servicio basado en host.
+-   Cree un SPN simple con el formato <service class> / &lt; &gt; "host" para un servicio basado en host.
 -   Cree un SPN complejo que incluya el componente "nombre de servicio" que usan los servicios replicables o el componente "puerto" que distingue varias instancias de un servicio en &lt; &gt; un único &lt; &gt; host.
 -   Cree un único SPN con el componente " host " establecido en el nombre de un host especificado o en el nombre &lt; del equipo local de forma &gt; predeterminada.
 -   Cree una matriz de SPN para varias instancias de servicio que se ejecutarán en varios hosts en todo el bosque. Cada SPN especifica el nombre del host para una instancia de servicio.

@@ -6,12 +6,12 @@ keywords:
 - functions, DirectX 11 D3DX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6b4c98dda5f85f03af1add120d22b95fa620d4a45e8e4db80d3b607f2c3e70e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afc9525a580fe3df135cd1a2a4a859a4a64ea395
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119126059"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475091"
 ---
 # <a name="d3dx-functions-direct3d-11-graphics"></a>Funciones D3DX (gráficos de Direct3D 11)
 
@@ -27,402 +27,41 @@ Esta sección contiene información sobre las funciones D3DX 11.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tema</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="d3dx11compilefromfile.md"><strong>D3DX11CompileFromFile</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como <a href="/windows/desktop/direct3dhlsl/d3dcompilefromfile"><strong>D3DCompileFromFile</strong></a> API.
-</blockquote>
-<br/> Compile un sombreador o un efecto a partir de un archivo.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11compilefrommemory.md"><strong>D3DX11CompileFromMemory</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como <a href="/windows/desktop/direct3dhlsl/d3dcompile"><strong>D3DCompile</strong></a> API.
-</blockquote>
-<br/> Compile un sombreador o un efecto que se cargue en memoria.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11compilefromresource.md"><strong>D3DX11CompileFromResource</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar funciones de recursos y, a continuación, compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API <a href="/windows/desktop/direct3dhlsl/d3dcompile"><strong>D3DCompile.</strong></a> <a href="/windows/desktop/menurc/resources-functions"></a>
-</blockquote>
-<br/> Compile un sombreador o un efecto a partir de un recurso.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11computenormalmap.md"><strong>D3DX11ComputeNormalMap</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>ComputeNormalMap</strong>.
-</blockquote>
-<br/> Convierte un mapa de alto en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createasynccompilerprocessor.md"><strong>D3DX11CreateAsyncCompilerProcessor</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un procesador de datos asincrónicos para un sombreador.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11createasyncfileloader.md"><strong>D3DX11CreateAsyncFileLoader</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un cargador de archivos asincrónico.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createasyncmemoryloader.md"><strong>D3DX11CreateAsyncMemoryLoader</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un cargador de memoria asincrónica.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11createasyncresourceloader.md"><strong>D3DX11CreateAsyncResourceLoader</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un cargador de recursos asincrónicos.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createasyncshaderpreprocessprocessor.md"><strong>D3DX11CreateAsyncShaderPreprocessProcessor</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un procesador de datos para un sombreador de forma asincrónica.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11createasynctextureinfoprocessor.md"><strong>D3DX11CreateAsyncTextureInfoProcessor</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un procesador de datos que se usará con una bomba <a href="id3dx11threadpump.md"><strong>de subprocesos</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createasynctextureprocessor.md"><strong>D3DX11CreateAsyncTextureProcessor</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un procesador de datos que se usará con una bomba <a href="id3dx11threadpump.md"><strong>de subprocesos</strong></a>.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11createasyncshaderresourceviewprocessor.md"><strong>D3DX11CreateAsyncShaderResourceViewProcessor</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree un procesador de datos que cargará un recurso y, a continuación, cree una vista de recurso de sombreador para él. Los procesadores de datos son un componente de la característica de carga de datos asincrónica de D3DX11 que usa las <a href="id3dx11threadpump.md"><strong>bomba de subprocesos</strong></a>.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createshaderresourceviewfromfile.md"><strong>D3DX11CreateShaderResourceViewFromFile</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-<p>[!Note]<br />
-En lugar de usar esta función, se recomienda usar estos:</p>
-<ul>
-<li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromFile</strong> (donde XXX es DDS o WIC)</li>
-<li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateShaderResourceView</strong></li>
-</ul>
-</blockquote>
-<br/> Cree una vista de recursos de sombreador a partir de un archivo.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11createshaderresourceviewfrommemory.md"><strong>D3DX11CreateShaderResourceViewFromMemory</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-<p>[!Note]<br />
-En lugar de usar esta función, se recomienda usar estos:</p>
-<ul>
-<li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li>
-<li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateShaderResourceView</strong></li>
-</ul>
-</blockquote>
-<br/> Cree una vista de recursos de sombreador a partir de un archivo en memoria.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createshaderresourceviewfromresource.md"><strong>D3DX11CreateShaderResourceViewFromResource</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-<p>[!Note]<br />
-En lugar de usar esta función, se recomienda usar las funciones <a href="/windows/desktop/menurc/resources-functions">de recursos</a>y, a continuación, estas:</p>
-<ul>
-<li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li>
-<li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateShaderResourceView</strong></li>
-</ul>
-</blockquote>
-<br/> Cree una vista de sombreador y recurso a partir de un recurso.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11createtexturefromfile.md"><strong>D3DX11CreateTextureFromFile</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-<p>[!Note]<br />
-En lugar de usar esta función, se recomienda usar estos:</p>
-<ul>
-<li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromFile</strong> (donde XXX es DDS o WIC)</li>
-<li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a <strong>continuación, CreateTexture</strong></li>
-</ul>
-</blockquote>
-<br/> Cree un recurso de textura a partir de un archivo.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createtexturefrommemory.md"><strong>D3DX11CreateTextureFromMemory</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-<p>[!Note]<br />
-En lugar de usar esta función, se recomienda usar estos:</p>
-<ul>
-<li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li>
-<li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a <strong>continuación, CreateTexture</strong></li>
-</ul>
-</blockquote>
-<br/> Cree un recurso de textura a partir de un archivo que resida en la memoria del sistema.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11createtexturefromresource.md"><strong>D3DX11CreateTextureFromResource</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-<p>[!Note]<br />
-En lugar de usar esta función, se recomienda usar las funciones <a href="/windows/desktop/menurc/resources-functions">de recursos</a>y, a continuación, estas:</p>
-<ul>
-<li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li>
-<li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a <strong>continuación, CreateTexture</strong></li>
-</ul>
-</blockquote>
-<br/> Cree una textura a partir de otro recurso.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11createthreadpump.md"><strong>D3DX11CreateThreadPump</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
-</blockquote>
-<br/> Cree una bomba de subprocesos.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11filtertexture.md"><strong>D3DX11FilterTexture</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>GenerateMipMaps</strong> y <strong>GenerateMipMaps3D</strong>.
-</blockquote>
-<br/> Genera la cadena mipmap mediante un filtro de textura determinado.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11getimageinfofromfile.md"><strong>D3DX11GetImageInfoFromFile</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>GetMetadataFromXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).
-</blockquote>
-<br/> Recupera información sobre un archivo de imagen determinado.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11getimageinfofrommemory.md"><strong>D3DX11GetImageInfoFromMemory</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>GetMetadataFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).
-</blockquote>
-<br/> Obtenga información sobre una imagen ya cargada en la memoria.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11getimageinfofromresource.md"><strong>D3DX11GetImageInfoFromResource</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar funciones de recursos <a href="/windows/desktop/menurc/resources-functions">y,</a>a continuación, usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).
-</blockquote>
-<br/> Recupera información sobre una imagen determinada en un recurso.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11loadtexturefromtexture.md"><strong>D3DX11LoadTextureFromTexture</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>Resize</strong>, <strong>Convert</strong>, <strong>Compress</strong>, <strong>Decompress</strong>o <strong>CopyRectangle</strong>.
-</blockquote>
-<br/> Cargar una textura desde una textura.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11preprocessshaderfromfile.md"><strong>D3DX11PreprocessShaderFromFile</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la API <a href="/windows/desktop/direct3dhlsl/d3dpreprocess"><strong>D3DPreprocess.</strong></a>
-</blockquote>
-<br/> Cree un sombreador a partir de un archivo sin compilarlo.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11preprocessshaderfrommemory.md"><strong>D3DX11PreprocessShaderFromMemory</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la API <a href="/windows/desktop/direct3dhlsl/d3dpreprocess"><strong>D3DPreprocess.</strong></a>
-</blockquote>
-<br/> Cree un sombreador a partir de la memoria sin compilarlo.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11preprocessshaderfromresource.md"><strong>D3DX11PreprocessShaderFromResource</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la API <a href="/windows/desktop/direct3dhlsl/d3dpreprocess"><strong>D3DPreprocess.</strong></a>
-</blockquote>
-<br/> Cree un sombreador a partir de un recurso sin compilarlo.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11savetexturetofile.md"><strong>D3DX11SaveTextureToFile</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>CaptureTexture</strong> y <strong>SaveToXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos). Para el escenario simplificado de creación de una captura de pantalla a partir de una textura de destino de representación, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTK">DirectXTK,</a> <strong>SaveDDSTextureToFile</strong> o <strong>SaveWICTextureToFile</strong>.
-</blockquote>
-<br/> Guarde una textura en un archivo.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11savetexturetomemory.md"><strong>D3DX11SaveTextureToMemory</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>CaptureTexture</strong> y <strong>SaveToXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).
-</blockquote>
-<br/> Guarde una textura en la memoria.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="d3dx11shprojectcubemap.md"><strong>D3DX11SHProjectCubeMap</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar la biblioteca matemática Descifraciones <a href="https://github.com/Microsoft/DirectXMath/tree/master/SHMath">esféricas,</a> <strong>SHProjectCubeMap</strong>.
-</blockquote>
-<br/> Proyecta una función representada en un mapa de cubo en armónicas esféricas.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="d3dx11unsetalldeviceobjects.md"><strong>D3DX11UnsetAllDeviceObjects</strong></a><br/></td>
-<td><blockquote>
-[!Note]<br />
-La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
-</blockquote>
-<br/>
-<blockquote>
-[!Note]<br />
-En lugar de usar esta función, se recomienda usar el <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-clearstate"><strong>método ID3D11DeviceContext::ClearState.</strong></a>
-</blockquote>
-<br/> Quita todos los recursos del dispositivo estableciendo sus punteros en <strong>NULL.</strong> Se debe llamar a este método durante el cierre de la aplicación. Ayuda a garantizar que, cuando se liberan todos sus recursos, ninguno de ellos está enlazado al dispositivo.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Tema | Descripción | 
+|-------|-------------|
+| <a href="d3dx11compilefromfile.md"><strong>D3DX11CompileFromFile</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API <a href="/windows/desktop/direct3dhlsl/d3dcompilefromfile"><strong>D3DCompileFromFile.</strong></a></blockquote><br /> Compile un sombreador o un efecto a partir de un archivo.<br /> | 
+| <a href="d3dx11compilefrommemory.md"><strong>D3DX11CompileFromMemory</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como <a href="/windows/desktop/direct3dhlsl/d3dcompile"><strong>D3DCompile</strong></a> API.</blockquote><br /> Compile un sombreador o un efecto que se cargue en memoria.<br /> | 
+| <a href="d3dx11compilefromresource.md"><strong>D3DX11CompileFromResource</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar funciones de recursos y, a continuación, compilar sin conexión mediante el compilador de línea de comandos de Fxc.exe o usar una de las API de compilación HLSL, como la API <a href="/windows/desktop/direct3dhlsl/d3dcompile"><strong>D3DCompile.</strong></a> <a href="/windows/desktop/menurc/resources-functions"></a></blockquote><br /> Compile un sombreador o un efecto a partir de un recurso.<br /> | 
+| <a href="d3dx11computenormalmap.md"><strong>D3DX11ComputeNormalMap</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>ComputeNormalMap</strong>.</blockquote><br /> Convierte un mapa de alto en un mapa normal. Los componentes (x, y,z) de cada normal se asignan a los canales (r, g, b) de la textura de salida.<br /> | 
+| <a href="d3dx11createasynccompilerprocessor.md"><strong>D3DX11CreateAsyncCompilerProcessor</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un procesador de datos asincrónicos para un sombreador.<br /> | 
+| <a href="d3dx11createasyncfileloader.md"><strong>D3DX11CreateAsyncFileLoader</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un cargador de archivos asincrónico.<br /> | 
+| <a href="d3dx11createasyncmemoryloader.md"><strong>D3DX11CreateAsyncMemoryLoader</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un cargador de memoria asincrónica.<br /> | 
+| <a href="d3dx11createasyncresourceloader.md"><strong>D3DX11CreateAsyncResourceLoader</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un cargador de recursos asincrónicos.<br /> | 
+| <a href="d3dx11createasyncshaderpreprocessprocessor.md"><strong>D3DX11CreateAsyncShaderPreprocessProcessor</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un procesador de datos para un sombreador de forma asincrónica.<br /> | 
+| <a href="d3dx11createasynctextureinfoprocessor.md"><strong>D3DX11CreateAsyncTextureInfoProcessor</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un procesador de datos que se usará con una bomba <a href="id3dx11threadpump.md"><strong>de subprocesos</strong></a>.<br /> | 
+| <a href="d3dx11createasynctextureprocessor.md"><strong>D3DX11CreateAsyncTextureProcessor</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un procesador de datos que se usará con una bomba <a href="id3dx11threadpump.md"><strong>de subprocesos</strong></a>.<br /> | 
+| <a href="d3dx11createasyncshaderresourceviewprocessor.md"><strong>D3DX11CreateAsyncShaderResourceViewProcessor</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree un procesador de datos que cargará un recurso y, a continuación, cree una vista de sombreador y recurso para él. Los procesadores de datos son un componente de la característica de carga de datos asincrónica de D3DX11 que usa las <a href="id3dx11threadpump.md"><strong>bomba de subprocesos</strong></a>.<br /> | 
+| <a href="d3dx11createshaderresourceviewfromfile.md"><strong>D3DX11CreateShaderResourceViewFromFile</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote><p>[!Note]<br />En lugar de usar esta función, se recomienda usar estos:</p><ul><li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromFile</strong> (donde XXX es DDS o WIC)</li><li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateShaderResourceView</strong></li></ul></blockquote><br /> Cree una vista de recursos de sombreador a partir de un archivo.<br /> | 
+| <a href="d3dx11createshaderresourceviewfrommemory.md"><strong>D3DX11CreateShaderResourceViewFromMemory</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote><p>[!Note]<br />En lugar de usar esta función, se recomienda usar estos:</p><ul><li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li><li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateShaderResourceView</strong></li></ul></blockquote><br /> Cree una vista de recursos de sombreador a partir de un archivo en memoria.<br /> | 
+| <a href="d3dx11createshaderresourceviewfromresource.md"><strong>D3DX11CreateShaderResourceViewFromResource</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote><p>[!Note]<br />En lugar de usar esta función, se recomienda usar las <a href="/windows/desktop/menurc/resources-functions">funciones de recursos</a>y, a continuación, estas:</p><ul><li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li><li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateShaderResourceView</strong></li></ul></blockquote><br /> Cree una vista de sombreador y recurso a partir de un recurso.<br /> | 
+| <a href="d3dx11createtexturefromfile.md"><strong>D3DX11CreateTextureFromFile</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote><p>[!Note]<br />En lugar de usar esta función, se recomienda usar estos:</p><ul><li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromFile</strong> (donde XXX es DDS o WIC)</li><li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateTexture</strong></li></ul></blockquote><br /> Cree un recurso de textura a partir de un archivo.<br /> | 
+| <a href="d3dx11createtexturefrommemory.md"><strong>D3DX11CreateTextureFromMemory</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote><p>[!Note]<br />En lugar de usar esta función, se recomienda usar estos:</p><ul><li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li><li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateTexture</strong></li></ul></blockquote><br /> Cree un recurso de textura a partir de un archivo que resida en la memoria del sistema.<br /> | 
+| <a href="d3dx11createtexturefromresource.md"><strong>D3DX11CreateTextureFromResource</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote><p>[!Note]<br />En lugar de usar esta función, se recomienda usar las <a href="/windows/desktop/menurc/resources-functions">funciones de recursos</a>y, a continuación, estas:</p><ul><li><a href="https://github.com/Microsoft/DirectXTK">Biblioteca DirectXTK</a> (runtime), <strong>CreateXXXTextureFromMemory</strong> (donde XXX es DDS o WIC)</li><li><a href="https://github.com/Microsoft/DirectXTex">Biblioteca DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a continuación, <strong>CreateTexture</strong></li></ul></blockquote><br /> Cree una textura a partir de otro recurso.<br /> | 
+| <a href="d3dx11createthreadpump.md"><strong>D3DX11CreateThreadPump</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.</blockquote><br /> Cree una bomba de subprocesos.<br /> | 
+| <a href="d3dx11filtertexture.md"><strong>D3DX11FilterTexture</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>GenerateMipMaps</strong> y <strong>GenerateMipMaps3D</strong>.</blockquote><br /> Genera la cadena mipmap mediante un filtro de textura determinado.<br /> | 
+| <a href="d3dx11getimageinfofromfile.md"><strong>D3DX11GetImageInfoFromFile</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>GetMetadataFromXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).</blockquote><br /> Recupera información sobre un archivo de imagen determinado.<br /> | 
+| <a href="d3dx11getimageinfofrommemory.md"><strong>D3DX11GetImageInfoFromMemory</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>GetMetadataFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).</blockquote><br /> Obtenga información sobre una imagen ya cargada en la memoria.<br /> | 
+| <a href="d3dx11getimageinfofromresource.md"><strong>D3DX11GetImageInfoFromResource</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar funciones de recursos <a href="/windows/desktop/menurc/resources-functions">y,</a>a continuación, usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a> (herramientas), <strong>LoadFromXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).</blockquote><br /> Recupera información sobre una imagen determinada en un recurso.<br /> | 
+| <a href="d3dx11loadtexturefromtexture.md"><strong>D3DX11LoadTextureFromTexture</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>Resize</strong>, <strong>Convert</strong>, <strong>Compress</strong>, <strong>Decompress</strong>o <strong>CopyRectangle</strong>.</blockquote><br /> Cargar una textura desde una textura.<br /> | 
+| <a href="d3dx11preprocessshaderfromfile.md"><strong>D3DX11PreprocessShaderFromFile</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la API <a href="/windows/desktop/direct3dhlsl/d3dpreprocess"><strong>D3DPreprocess.</strong></a></blockquote><br /> Cree un sombreador a partir de un archivo sin compilarlo.<br /> | 
+| <a href="d3dx11preprocessshaderfrommemory.md"><strong>D3DX11PreprocessShaderFromMemory</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la API <a href="/windows/desktop/direct3dhlsl/d3dpreprocess"><strong>D3DPreprocess.</strong></a></blockquote><br /> Cree un sombreador a partir de la memoria sin compilarlo.<br /> | 
+| <a href="d3dx11preprocessshaderfromresource.md"><strong>D3DX11PreprocessShaderFromResource</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la API <a href="/windows/desktop/direct3dhlsl/d3dpreprocess"><strong>D3DPreprocess.</strong></a></blockquote><br /> Cree un sombreador a partir de un recurso sin compilarlo.<br /> | 
+| <a href="d3dx11savetexturetofile.md"><strong>D3DX11SaveTextureToFile</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>CaptureTexture</strong> y <strong>SaveToXXXFile</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos). Para el escenario simplificado de creación de una captura de pantalla a partir de una textura de destino de representación, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTK">DirectXTK,</a> <strong>SaveDDSTextureToFile</strong> o <strong>SaveWICTextureToFile</strong>.</blockquote><br /> Guarde una textura en un archivo.<br /> | 
+| <a href="d3dx11savetexturetomemory.md"><strong>D3DX11SaveTextureToMemory</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca <a href="https://github.com/Microsoft/DirectXTex">DirectXTex,</a> <strong>CaptureTexture</strong> y <strong>SaveToXXXMemory</strong> (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos).</blockquote><br /> Guarde una textura en la memoria.<br /> | 
+| <a href="d3dx11shprojectcubemap.md"><strong>D3DX11SHProjectCubeMap</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar la biblioteca matemática Descifraciones <a href="https://github.com/Microsoft/DirectXMath/tree/master/SHMath">esféricas,</a> <strong>SHProjectCubeMap</strong>.</blockquote><br /> Proyecta una función representada en un mapa de cubo en armónicos esféricos.<br /> | 
+| <a href="d3dx11unsetalldeviceobjects.md"><strong>D3DX11UnsetAllDeviceObjects</strong></a><br /> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /><blockquote>[!Note]<br />En lugar de usar esta función, se recomienda usar el <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-clearstate"><strong>método ID3D11DeviceContext::ClearState.</strong></a></blockquote><br /> Quita todos los recursos del dispositivo estableciendo sus punteros en <strong>NULL.</strong> Se debe llamar a este método durante el cierre de la aplicación. Ayuda a garantizar que, cuando se liberan todos sus recursos, ninguno de ellos está enlazado al dispositivo.<br /> | 
+
 
 
 

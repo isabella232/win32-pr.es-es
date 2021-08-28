@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. keywords.
+description: Directiva de metadatos de fotos para la propiedad System.Keywords.
 ms.assetid: bc9de56f-444c-45a2-9822-fba2fe618d38
-title: Directiva de metadatos de la foto System. keywords
+title: Directiva de metadatos de fotos System.Keywords
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5d25e7f1919527d474395397d6df62863f7b78
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2aa5387bfb8cca7fffe83f7615a979d8e23ae890
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278636"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886650"
 ---
-# <a name="systemkeywords-photo-metadata-policy"></a>Directiva de metadatos de la foto System. keywords
+# <a name="systemkeywords-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Keywords
 
-La Directiva de metadatos de la fotografía para la propiedad [System. keywords](../properties/props-system-keywords.md) .
+Directiva de metadatos de fotos para la [propiedad System.Keywords.](../properties/props-system-keywords.md)
 
 ### <a name="pkey"></a>PKEY
 
-\_Palabras clave de PKEY
+Palabras \_ clave PKEY
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,17 +27,17 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ Vector \| VT \_ LPWStr
+VT \_ VECTOR \| VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-\_ \| Se prefiere VT vector VT \_ LPWStr. \_También se acepta un VT LPWStr que contenga una cadena delimitada por punto y coma.
+Se \_ prefiere VT VECTOR VT \| \_ LPWSTR. También se acepta una VT LPWSTR que contiene una cadena delimitada por punto \_ y coma.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se combinan los valores de los distintos esquemas.
+Los valores de esquemas diferentes se combinan.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,29 +45,29 @@ Se combinan los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                              | Formato de disco    |
+| Pedido de | Ruta de acceso                              | Formato de disco    |
 |-------|-----------------------------------|----------------|
-| 1     | /XMP/ <xmpbag> DC: asunto     | unicode        |
+| 1     | /xmp/ &lt; xmpbag &gt; dc:subject     | unicode        |
 | 2     | /app13/irb/8bimiptc/iptc/keywords |                |
-| 3     | /app1/IFD/{ushort = 18247}          | \_bytes Unicode |
-| 4     | /app1/IFD/{ushort = 40094}          | \_bytes Unicode |
+| 3     | /app1/ifd/{ushort=18247}          | bytes \_ unicode |
+| 4     | /app1/ifd/{ushort=40094}          | bytes \_ unicode |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                              | Formato de disco    |
+| Pedido de | Ruta de acceso                                              | Formato de disco    |
 |-------|---------------------------------------------------|----------------|
-| 1     | /XMP/ <xmpbag> DC: asunto                     | unicode        |
+| 1     | /xmp/ &lt; xmpbag &gt; dc:subject                     | unicode        |
 | 2     | /app13/irb/8bimiptc/iptc/keywords                 |                |
-| 3     | /app1/IFD/{ushort = 18247}                          | \_bytes Unicode |
-| 4     | /app1/IFD/{ushort = 40094}                          | \_bytes Unicode |
-| 5     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP  | unicode        |
-| 6     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC | unicode        |
+| 3     | /app1/ifd/{ushort=18247}                          | bytes \_ unicode |
+| 4     | /app1/ifd/{ushort=40094}                          | bytes \_ unicode |
+| 5     | /xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordXMP  | unicode        |
+| 6     | /xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC | unicode        |
 
 
 
@@ -77,14 +77,14 @@ Se combinan los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                              |
+| Pedido de | Ruta de acceso                                              |
 |-------|---------------------------------------------------|
-| 1     | /XMP/DC: asunto                                   |
+| 1     | /xmp/dc:subject                                   |
 | 2     | /app13/irb/8bimiptc/iptc/keywords                 |
-| 3     | /app1/IFD/{ushort = 18247}                          |
-| 4     | /app1/IFD/{ushort = 40094}                          |
-| 5     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP  |
-| 6     | /XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC |
+| 3     | /app1/ifd/{ushort=18247}                          |
+| 4     | /app1/ifd/{ushort=40094}                          |
+| 5     | /xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordXMP  |
+| 6     | /xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC |
 
 
 
@@ -96,32 +96,32 @@ Se combinan los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                              | Formato de disco    |
+| Pedido de | Ruta de acceso                              | Formato de disco    |
 |-------|-----------------------------------|----------------|
-| 1     | /IFD/XMP/ <xmpbag> DC: asunto | unicode        |
+| 1     | /ifd/xmp/ &lt; xmpbag &gt; dc:subject | unicode        |
 | 2     | /ifd/iptc/keywords                |                |
-| 3     | /IFD/{ushort = 18247}               | \_bytes Unicode |
-| 4     | /IFD/{ushort = 40094}               | \_bytes Unicode |
+| 3     | /ifd/{ushort=18247}               | bytes \_ unicode |
+| 4     | /ifd/{ushort=40094}               | bytes \_ unicode |
 | 5     | /ifd/irb/8bimiptc/iptc/keywords   |                |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                                             | Formato de disco    |
+| Pedido de | Ruta de acceso                                                             | Formato de disco    |
 |-------|------------------------------------------------------------------|----------------|
-| 1     | /IFD/XMP/ <xmpbag> DC: asunto                                | unicode        |
+| 1     | /ifd/xmp/ &lt; xmpbag &gt; dc:subject                                | unicode        |
 | 2     | /ifd/iptc/keywords                                               |                |
 | 3     | /ifd/irb/8bimiptc/iptc/keywords                                  |                |
-| 4     | /IFD/{ushort = 18247}                                              | \_bytes Unicode |
-| 5     | /IFD/{ushort = 40094}                                              | \_bytes Unicode |
-| 6     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP             | unicode        |
-| 7     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC            | unicode        |
-| 8     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC \_ TIFF \_ IRB | unicode        |
+| 4     | /ifd/{ushort=18247}                                              | bytes \_ unicode |
+| 5     | /ifd/{ushort=40094}                                              | bytes \_ unicode |
+| 6     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordXMP             | unicode        |
+| 7     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC            | unicode        |
+| 8     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC \_ TIFF \_ IRB | unicode        |
 
 
 
@@ -131,22 +131,22 @@ Se combinan los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                                             |
+| Pedido de | Ruta de acceso                                                             |
 |-------|------------------------------------------------------------------|
-| 1     | /IFD/XMP/DC: asunto                                              |
+| 1     | /ifd/xmp/dc:subject                                              |
 | 2     | /ifd/iptc/keywords                                               |
 | 3     | /ifd/irb/8bimiptc/iptc/keywords                                  |
-| 4     | /IFD/{ushort = 18247}                                              |
-| 5     | /IFD/{ushort = 40094}                                              |
-| 6     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordXMP             |
-| 7     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC            |
-| 8     | /IFD/XMP/ <xmpbag> MicrosoftPhoto: LastKeywordIPTC \_ TIFF \_ IRB |
+| 4     | /ifd/{ushort=18247}                                              |
+| 5     | /ifd/{ushort=40094}                                              |
+| 6     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordXMP             |
+| 7     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC            |
+| 8     | /ifd/xmp/ &lt; xmpbag &gt; MicrosoftPhoto:LastKeywordIPTC \_ TIFF \_ IRB |
 
 
 
  
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

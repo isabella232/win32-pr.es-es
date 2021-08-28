@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b40893843f92c7906ced1930b9744a58eb49e4d8
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 67cd6827e99450211b5a4b63d9c87912bfd9fedb
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624931"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787371"
 ---
 # <a name="span-idvspixengineicallstackcallbackspanicallstackcallback-interface"></a><span id="vspixengine.icallstackcallback"></span>ICallStackCallback (interfaz)
 
 Devolución de llamada para devolver los datos de la pila de llamadas.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ICallStackCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ICallStackCallback** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz ICallStackCallback** hereda de la [**interfaz IUnknown.**](/window
 
 La **interfaz ICallStackCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/icallstackcallback-resultcallback-dword-callstackframe-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host la información de la pila de llamadas.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/icallstackcallback-resultcallback-dword-callstackframe-arr"><strong>ResultCallback</strong></a></td><td ><p>Función de devolución de llamada que se usa para notificar al host la información de la pila de llamadas.</p></td></tr></tbody></table>
 
  
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JetOSSnapshotFreeze (función)'
+description: 'Más información sobre: JetOSSnapshotFreeze (Función)'
 title: Función JetOSSnapshotFreeze
 TOCTitle: JetOSSnapshotFreeze Function
 ms:assetid: 8dfbff20-199e-4d89-a33c-ae8e39b11ec1
@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cb6ea9a4a3145c0c4b3c3caeb3214b299ea1be85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 854e38f91b894b1f7cc486a15afcfe857aaa31d6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278041"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473971"
 ---
 # <a name="jetossnapshotfreeze-function"></a>Función JetOSSnapshotFreeze
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetossnapshotfreeze-function"></a>Función JetOSSnapshotFreeze
 
-La función **JetOSSnapshotFreeze** inicia una instantánea. Mientras la instantánea está en curso, no se puede llevar a cabo ninguna actividad de escritura en disco por parte del motor.
+La **función JetOSSnapshotFreeze** inicia una instantánea. Mientras la instantánea está en curso, el motor no puede realizar ninguna actividad de escritura en disco.
 
-**Windows XP:**  **JetOSSnapshotFreeze** se presentó en Windows XP.
+**Windows XP:****JetOSSnapshotFreeze** se introduce en Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotFreeze(
@@ -55,112 +55,52 @@ Identificador de la sesión de instantánea.
 
 *pcInstanceInfo*
 
-El número de instancias que se están ejecutando actualmente en el motor que forman parte de la sesión de instantáneas.
+Número de instancias que se ejecutan actualmente en el motor que forman parte de la sesión de instantáneas.
 
 *paInstanceInfo*
 
-Matriz de estructuras, una para cada instancia en ejecución que forma parte de la sesión de instantáneas, que describe la instancia y las bases de datos que forman parte de ella.
+Matriz de estructuras, una para cada instancia en ejecución que forma parte de la sesión de instantánea, que describe la instancia y las bases de datos que forman parte de ella.
 
 *grbit*
 
-Opciones de esta llamada. Este parámetro está reservado para uso futuro y el único valor válido admitido es 0.
+Opciones para esta llamada. Este parámetro está reservado para uso futuro y el único valor válido admitido es 0.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Los punteros proporcionados para los parámetros de salida son NULL, la sesión de instantáneas no es válida o el parámetro <em>grbit</em> no es válido.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSequence</p></td>
-<td><p>La sesión de instantáneas no está en el estado adecuado para iniciar una inmovilización (por ejemplo, una inmovilización anterior produjo un error en esta sesión antes).</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOSSnapshotNotAllowed</p></td>
-<td><p>El motor no está en un estado en el que se pueda realizar una instantánea. Ya hay una o más copias de seguridad de streaming en curso, o una o varias instancias están pasando por pasos de recuperación o finalizando.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOSSnapshotInvalidSnapId</p></td>
-<td><p>El identificador de la sesión de instantáneas no es válido.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>Error de la función debido a una condición de memoria insuficiente.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOutOfThreads</p></td>
-<td><p>Error de la función porque no se pudo iniciar un nuevo subproceso que realiza la inmovilización.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-Si esta función se ejecuta correctamente, no habrá ningún IOs de escritura emitido para los archivos de base de datos o para los archivos de registro que forman parte de las instancias que están inmovilizadas. Además, la información de la instancia se rellena correctamente y se debe liberar más adelante llamando a [JetFreeBuffer](./jetfreebuffer-function.md) con el puntero a la matriz de información de instancia que se devolvió.
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Los punteros proporcionados para los parámetros de salida son NULL, la sesión de instantánea no es válida o el <em>parámetro grbit</em> no es válido.</p> | 
+| <p>JET_errOSSnapshotInvalidSequence</p> | <p>La sesión de instantánea no está en el estado adecuado para iniciar una inmovilización (por ejemplo, una inmovilización anterior no se pudo realizar en esta sesión antes).</p> | 
+| <p>JET_errOSSnapshotNotAllowed</p> | <p>El motor no está en un estado en el que se puede realizar una instantánea. Una o varias copias de seguridad de streaming ya están en curso o una o varias instancias están pasando por pasos de recuperación o terminando.</p> | 
+| <p>JET_errOSSnapshotInvalidSnapId</p> | <p>El identificador de la sesión de instantánea no es válido.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>Error en la función debido a una condición de memoria fuera de memoria.</p> | 
+| <p>JET_errOutOfThreads</p> | <p>Error en la función porque no se pudo iniciar un nuevo subproceso que estaba realizando la inmovilización.</p> | 
 
-Si se produce un error en esta función, el motor seguirá ejecutándose de forma habitual con la e/s que se produce como de costumbre. No es necesario llamar a [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) si se produce un error en la inmovilización. Además, la información de la instancia no se rellenará, por lo que no es necesario liberar este recurso.
 
-#### <a name="remarks"></a>Observaciones
 
-Durante el período de inmovilización, no habrá ninguna e/s de escritura emitida a las bases de datos adjuntas ni a los registros de transacciones, aunque es posible que se emitan e/s de escritura para las bases de datos temporales o los archivos de streaming.
+Si esta función se realiza correctamente, no habrá ninguna E/S de escritura emitida para los archivos de base de datos ni para los archivos de registro que forman parte de instancias inmovilizadas. Además, la información de la instancia se rellenará correctamente y se debe liberar más adelante mediante una llamada a [JetFreeBuffer](./jetfreebuffer-function.md) con el puntero a la matriz de información de instancia que se devolvió.
 
-El estado en el que las bases de datos y los archivos de registro estarán durante la inmovilización (el estado en el que los archivos se encontrarían en una imagen de instantánea de volumen) serán de tal modo que se pueda realizar una recuperación normal si esos archivos se restauran más adelante.
+Si se produce un error en esta función, el motor seguirá ejecutándose con normalidad con las E/S que se producen como de costumbre. No es necesario llamar a [JetOSSnapshotThaw si](./jetossnapshotthaw-function.md) se produce un error en la inmovilización. Además, la información de la instancia no se rellenará, por lo que no es necesario liberar este recurso.
 
-Dado que no hay operaciones de escritura durante el período de inmovilización, es posible que las llamadas de API normales en el motor se detengan durante ese intervalo. La aplicación cliente debe ser capaz de controlar las llamadas API que podrían tardar más tiempo si se produce una inmovilización.
+#### <a name="remarks"></a>Comentarios
 
-Debido a los posibles efectos descritos anteriormente, hay un tiempo de espera interno después del cual la sesión de instantáneas detendrá la fase de inmovilización aunque no se llame a las API que realizan la reanudación o anulación. El valor del tiempo de espera se puede cambiar mediante el parámetro del sistema [JET_paramOSSnapshotTimeout](./backup-and-restore-parameters.md) . Tenga en cuenta que el intervalo de inmovilización típico está en el intervalo de 10 segundos con el tiempo de espera predeterminado en unos 60 segundos.
+Durante el período de inmovilización, no habrá ninguna E/S de escritura emitida en las bases de datos adjuntas ni en los registros de transacciones, aunque es posible que haya E/S de escritura emitidas en las bases de datos temporales o los archivos de streaming.
+
+El estado en el que estarán las bases de datos y los archivos de registro durante la inmovilización (el estado en el que los archivos estarían en una imagen de instantánea de volumen) será tal que será posible una recuperación normal si esos archivos se restauran más adelante.
+
+Dado que no hay ninguna operación de escritura durante el período de inmovilización, es posible que las llamadas API normales al motor se detendrán durante ese intervalo. La aplicación cliente debe ser capaz de controlar las llamadas API que podrían tardar más tiempo en normalizarse si se produce una inmovilización.
+
+Debido a los posibles efectos descritos anteriormente, hay un tiempo de espera interno después del cual la sesión de instantáneas detendrá la fase de inmovilización incluso si no se llamó a las API que realizaron la anulación o la anulación. El valor del tiempo de espera se puede cambiar mediante el [JET_paramOSSnapshotTimeout](./backup-and-restore-parameters.md) del sistema. Tenga en cuenta que el intervalo de inmovilización típico está en el intervalo de 10 segundos con el tiempo de espera predeterminado en algún lugar alrededor de 60 segundos.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JetOSSnapshotFreezeW</strong> (Unicode) y <strong>JetOSSnapshotFreezeA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOSSnapshotFreezeW</strong> (Unicode) y <strong>JetOSSnapshotFreezeA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

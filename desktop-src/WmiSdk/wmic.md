@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: wmic
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0248ea4ac6a584816da20e8feb8d278d7feab0a018739fa4328c3023179d4b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bee63220bec5cae1c41480187c78211f46ed020
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117921005"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881077"
 ---
 # <a name="wmic"></a>wmic
 
@@ -18,9 +18,9 @@ La utilidad de línea de comandos WMI (WMIC) proporciona una interfaz de línea 
 
 ## <a name="alias"></a>Alias
 
-Un alias es un nombre descriptivo de una clase, propiedad o método que facilita el uso y la lectura de WMI. Puede determinar qué alias están disponibles para WMIC a través de **/?** . También puede determinar los alias de una clase específica mediante **<className> /?** . Para obtener más información, vea [Alias de WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc736307(v=ws.10)).
+Un alias es un nombre descriptivo de una clase, propiedad o método que facilita el uso y la lectura de WMI. Puede determinar qué alias están disponibles para WMIC a través de **/?** . También puede determinar los alias de una clase específica mediante **&lt; className &gt; /?** . Para obtener más información, vea [Alias de WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc736307(v=ws.10)).
 
-## <a name="switch"></a>Switch
+## <a name="switch"></a>Conmutador
 
 Un modificador es una opción de WMIC que se puede establecer global u opcionalmente. Para obtener una lista de los modificadores disponibles, vea [WMIC Switches](/previous-versions/windows/it-pro/windows-server-2003/cc787035(v=ws.10)).
 
@@ -32,7 +32,7 @@ La mayoría de los alias admiten los verbos siguientes.
 
 <dl> <dt>
 
-<span id="ASSOC"></span><span id="assoc"></span>Assoc
+<span id="ASSOC"></span><span id="assoc"></span>ASSOC
 </dt> <dd>
 
 Devuelve el resultado de la consulta donde<objeto wmi>es la ruta de acceso de los objetos devueltos por los comandos `Associators of (<wmi_object>)` **PATH** **o CLASS.** *\_* Los resultados son instancias asociadas al objeto . Cuando se usa ASSOC con un alias, se devuelven las clases con la clase subyacente al alias. De forma predeterminada, la salida se devuelve en formato HTML.
@@ -43,9 +43,9 @@ El verbo ASSOC tiene los modificadores siguientes.
 
 | Switch                         | Descripción                                                                                                       |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| /RESULTCLASS:<classname> | Los puntos de conexión devueltos asociados al objeto de origen deben pertenecer a o derivarse de la clase especificada.      |
-| /RESULTROLE:<rolename>   | Los puntos de conexión devueltos deben desempeñar un rol específico en las asociaciones con el objeto de origen.                              |
-| /ASSOCCLASS:<assocclass> | Los puntos de conexión devueltos deben estar asociados al origen a través de la clase especificada o de una de sus clases derivadas. |
+| /RESULTCLASS: &lt; classname&gt; | Los puntos de conexión devueltos asociados al objeto de origen deben pertenecer a o derivarse de la clase especificada.      |
+| /RESULTROLE: &lt; rolename&gt;   | Los puntos de conexión devueltos deben desempeñar un rol específico en las asociaciones con el objeto de origen.                              |
+| /ASSOCCLASS: &lt; assocclass&gt; | Los puntos de conexión devueltos deben estar asociados al origen a través de la clase especificada o de una de sus clases derivadas. |
 
 
 
@@ -55,7 +55,7 @@ Ejemplo: **ASSOC del sistema operativo**
 
 </dd> <dt>
 
-<span id="CALL"></span><span id="call"></span>Llamar
+<span id="CALL"></span><span id="call"></span>LLAMAR
 </dt> <dd>
 
 Ejecuta un método .
@@ -69,7 +69,7 @@ Ejemplo: **SERVICE WHERE CAPTION='TELNET' CALL STARTSERVICE**
 
 </dd> <dt>
 
-<span id="CREATE"></span><span id="create"></span>Crear
+<span id="CREATE"></span><span id="create"></span>CREAR
 </dt> <dd>
 
 Crea una nueva instancia de y establece los valores de propiedad. CREATE no se puede usar para crear una nueva clase.
@@ -78,7 +78,7 @@ Ejemplo: **ENVIRONMENT CREATE NAME="TEMP"; VARIABLEVALUE="NEW"**
 
 </dd> <dt>
 
-<span id="DELETE"></span><span id="delete"></span>Eliminar
+<span id="DELETE"></span><span id="delete"></span>ELIMINAR
 </dt> <dd>
 
 Elimina la instancia actual o el conjunto de instancias. DELETE se puede usar para eliminar una clase.
@@ -87,7 +87,7 @@ Ejemplo: **PROCESS WHERE NAME="CALC.EXE" DELETE**
 
 </dd> <dt>
 
-<span id="GET"></span><span id="get"></span>Obtener
+<span id="GET"></span><span id="get"></span>OBTENER
 </dt> <dd>
 
 Recuperar valores de propiedad específicos.
@@ -101,7 +101,7 @@ GET tiene los modificadores siguientes.
 | /VALUE                               | La salida tiene formato con cada valor enumerado en una línea independiente y con el nombre de la propiedad.                                           |
 | /ALL                                 | La salida tiene formato de tabla.                                                                                                            |
 | /TRANSLATE:<translation table> | Traduzca la salida mediante la tabla de traducción denominada por el comando . Las tablas de traducción BasicXml y NoComma se incluyen con WMIC. |
-| /EVERY:<interval>              | Repita el comando cada <interval> segundos.                                                                                         |
+| /EVERY: &lt; interval&gt;              | Repita el comando cada &lt; intervalo de &gt; segundos.                                                                                         |
 | /FORMAT:<format specifier>     | Especifica una palabra clave o un nombre de archivo XSL para dar formato a los datos.                                                                                  |
 
 
@@ -112,7 +112,7 @@ Ejemplo: **PROCESS GET NAME**
 
 </dd> <dt>
 
-<span id="LIST"></span><span id="list"></span>Lista
+<span id="LIST"></span><span id="list"></span>LISTA
 </dt> <dd>
 
 Muestra los datos. LIST es el verbo predeterminado.
@@ -140,7 +140,7 @@ LIST tiene los modificadores siguientes.
 | Switch                               | Descripción                                                                                                                                |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | /TRANSLATE:<translation table> | Traduzca la salida mediante la tabla de traducción denominada por el comando . Las tablas de traducción BasicXml y NoComma se incluyen con WMIC. |
-| /EVERY:<interval>              | Repita el comando cada <interval> segundos.                                                                                         |
+| /EVERY: &lt; interval&gt;              | Repita el comando cada &lt; intervalo de &gt; segundos.                                                                                         |
 | /FORMAT:<format specifier>     | Especifica una palabra clave o un nombre de archivo XSL para dar formato a los datos.                                                                                  |
 
 
@@ -151,14 +151,14 @@ Ejemplo: **PROCESS LIST BRIEF**
 
 </dd> <dt>
 
-<span id="SET"></span><span id="set"></span>Establecer
+<span id="SET"></span><span id="set"></span>ESTABLECER
 </dt> <dd>
 
 Asigna valores a las propiedades. Ejemplo: **ENVIRONMENT SET NAME="TEMP"**, **VARIABLEVALUE="NEW"**
 
 </dd> </dl>
 
-## <a name="switches"></a>Modificadores
+## <a name="switches"></a>Conmutadores
 
 Los modificadores globales se usan para establecer valores predeterminados para el entorno WMIC. Para ver el valor actual de las condiciones establecidas por estos modificadores, escriba el **comando CONTEXT.**
 
@@ -266,7 +266,7 @@ Ejemplo: "/FAILFAST:ON" o "/FAILFAST:OFF"
 <span id="_USER"></span><span id="_user"></span>/USER
 </dt> <dd>
 
-Nombre de usuario utilizado por WMIC al acceder a los equipos /NODE o a los equipos especificados en los alias. Se le pedirá la contraseña. No se puede usar un nombre de usuario con el equipo local.
+Nombre de usuario utilizado por WMIC al acceder a los equipos o equipos /NODE especificados en los alias. Se le pedirá la contraseña. No se puede usar un nombre de usuario con el equipo local.
 
 Ejemplo: **/USER:**_JSMITH_
 
@@ -302,7 +302,7 @@ Ejemplo: **/APPEND:CLIPBOARD**
 <span id="_AGGREGATE"></span><span id="_aggregate"></span>/AGGREGATE
 </dt> <dd>
 
-Se usa con **los modificadores LIST** **y GET /EVERY.** Si AGGREGATE es ON, LIST y GET muestran sus resultados cuando todos los equipos de /NODE han respondido o se ha producido un tiempo de espera. Si AGGREGATE es OFF, LIST y GET muestran sus resultados en cuanto se reciben.
+Se usa con **los** **modificadores LIST y GET /EVERY.** Si AGGREGATE es ON, LIST y GET muestran sus resultados cuando todos los equipos de /NODE han respondido o se ha producido un tiempo de espera. Si AGGREGATE es OFF, LIST y GET muestran sus resultados en cuanto se reciben.
 
 Ejemplo: **/AGGREGATE:OFF** o **/AGGREGATE:ON**
 
@@ -314,7 +314,7 @@ Los siguientes comandos WMIC están disponibles en todo momento. Para obtener m�
 
 <dl> <dt>
 
-<span id="CLASS"></span><span id="class"></span>Clase
+<span id="CLASS"></span><span id="class"></span>CLASE
 </dt> <dd>
 
 Escape del modo de alias predeterminado de WMIC para acceder directamente a las clases del esquema WMI. Para obtener más información sobre las clases WMI disponibles, vea [Clases WMI](wmi-classes.md).
@@ -323,7 +323,7 @@ Ejemplo: **WMIC /OUTPUT:c: \\ClassOutput.htm CLASS Win32 \_ SoundDevice**
 
 </dd> <dt>
 
-<span id="PATH"></span><span id="path"></span>Camino
+<span id="PATH"></span><span id="path"></span>CAMINO
 </dt> <dd>
 
 Escape del modo de alias predeterminado de WMIC para acceder directamente a las instancias del esquema WMI.
@@ -332,7 +332,7 @@ Ejemplo: **WMIC /OUTPUT:c: \\PathOutput.txt PATH Win32 \_ SoundDevice GET /VALUE
 
 </dd> <dt>
 
-<span id="CONTEXT"></span><span id="context"></span>Contexto
+<span id="CONTEXT"></span><span id="context"></span>CONTEXTO
 </dt> <dd>
 
 Muestra los valores actuales de todos los modificadores globales.
@@ -341,7 +341,7 @@ Ejemplo: **CONTEXTO WMIC**
 
 </dd> <dt>
 
-<span id="QUIT"></span><span id="quit"></span>Dejar
+<span id="QUIT"></span><span id="quit"></span>DEJAR
 </dt> <dd>
 
 Salga de WMIC.
@@ -350,7 +350,7 @@ Ejemplo: **WMIC QUIT**
 
 </dd> <dt>
 
-<span id="EXIT"></span><span id="exit"></span>Salida
+<span id="EXIT"></span><span id="exit"></span>SALIDA
 </dt> <dd>
 
 Salga de WMIC.

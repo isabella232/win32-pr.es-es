@@ -7,12 +7,12 @@ MSHAttr:
 title: OemConnectionId
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40379b07fc23f0db360ab3d8e383262e356aa5ae
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 656bf3b1c1c4335ead842b9fe496d93f06de7eca
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882913"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469362"
 ---
 # <a name="span-idwwan_profile_v4element_oemconnectionidspanoemconnectionid"></a><span id="WWAN_profile_v4.element_OemConnectionId"></span>OemConnectionId
 
@@ -20,8 +20,8 @@ Identificador de conexión de OEM para la configuración de DM del módem.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[&lt;ModemDMConfigProfile&gt;](element-modemdmconfigprofile.md)  
-**&lt;OemConnectionId&gt;**
+[<ModemDMConfigProfile>](element-modemdmconfigprofile.md)  
+**<OemConnectionId>**
 
 ## <a name="syntax"></a>Syntax
 

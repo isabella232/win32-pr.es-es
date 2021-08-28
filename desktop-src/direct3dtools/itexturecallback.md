@@ -17,20 +17,20 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4e0d058a9851c4c9c3df3f5757b4ae3f6eb4356e
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 95ed0d8ab4a08d5522b866cbef4e30b28308df1e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786091"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629069"
 ---
 # <a name="span-idvspixengineitexturecallbackspanitexturecallback-interface"></a><span id="vspixengine.itexturecallback"></span>ITextureCallback (interfaz)
 
 Devolución de llamada para escribir una textura como un archivo DDS.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
-La **interfaz ITextureCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITextureCallback también** tiene estos tipos de miembros:
+La **interfaz ITextureCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITextureCallback** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -38,7 +38,7 @@ La **interfaz ITextureCallback** hereda de la [**interfaz IUnknown.**](/windows/
 
 La **interfaz ITextureCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/itexturecallback-resultcallback"><strong>ResultCallback</strong></a></td><td ><p>Devolución de llamada que notifica al host que . El archivo DDS (DirectDraw Surface) que contiene los resultados de la solicitud asociada está listo.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/itexturecallback-resultcallback"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host que . El archivo DDS (DirectDraw Surface) que contiene los resultados de la solicitud asociada está listo.</p></td></tr></tbody></table>
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: El elemento especifica si el ámbito del conector de búsqueda <depth> debe incluir direcciones URL secundarias. Los valores permitidos son Deep y Shallow. Este elemento no tiene elementos secundarios ni atributos.
+description: El elemento depth especifica si el ámbito del conector de búsqueda &lt; debe incluir direcciones URL &gt; secundarias. Los valores permitidos son Deep y Shallow. Este elemento no tiene elementos secundarios ni atributos.
 ms.assetid: 859decab-cbe3-4cec-b37c-6d0e7c353876
-title: elemento depth (Esquema del conector de búsqueda)
+title: elemento depth (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 245156088cd68fcf67103c18b987a9b459b0b760b3a04a1ced817badd25aada8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 430ad3d047331a4bb3ffc58bd134d2364aaa0838
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117862530"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886768"
 ---
-# <a name="depth-element-search-connector-schema"></a>elemento depth (Esquema del conector de búsqueda)
+# <a name="depth-element-search-connector-schema"></a>elemento depth (esquema del conector de búsqueda)
 
-El elemento especifica si el ámbito del conector de búsqueda <depth> debe incluir direcciones URL secundarias. Los valores permitidos son `Deep` y `Shallow`. Este elemento no tiene elementos secundarios ni atributos.
+El elemento depth especifica si el ámbito del conector de búsqueda &lt; debe incluir direcciones URL &gt; secundarias. Los valores permitidos son `Deep` y `Shallow`. Este elemento no tiene elementos secundarios ni atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -68,7 +68,7 @@ El elemento especifica si el ámbito del conector de búsqueda <depth> debe incl
 
 ## <a name="remarks"></a>Comentarios
 
-Si la profundidad es profunda, los usuarios pueden examinar o buscar elementos en el nivel de dirección URL de scopeItem o dentro de cualquier dirección URL secundaria.
+Si la profundidad es profunda, los usuarios pueden examinar o buscar elementos en el nivel de dirección URL de scopeItem o en cualquier dirección URL secundaria.
 
 ## <a name="example"></a>Ejemplo
 

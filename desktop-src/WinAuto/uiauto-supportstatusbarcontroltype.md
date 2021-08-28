@@ -3,9 +3,9 @@ title: Tipo de control StatusBar
 description: En este tema se proporciona información sobre microsoft Automatización de la interfaz de usuario compatibilidad con el tipo de control StatusBar.
 ms.assetid: a28df0a1-95a8-4941-a00d-1f5570589626
 keywords:
-- Automatización de la interfaz de usuario,compatibilidad con el tipo de control StatusBar
+- Automatización de la interfaz de usuario, compatibilidad con el tipo de control StatusBar
 - Automatización de la interfaz de usuario, tipo de control StatusBar
-- Automatización de la interfaz de usuario estructura de árbol para el tipo de control StatusBar
+- Automatización de la interfaz de usuario,estructura de árbol para el tipo de control StatusBar
 - Automatización de la interfaz de usuario,properties para el tipo de control StatusBar
 - Automatización de la interfaz de usuario,patrones de control para el tipo de control StatusBar
 - Automatización de la interfaz de usuario,events para el tipo de control StatusBar
@@ -13,7 +13,7 @@ keywords:
 - properties,Tipo de control StatusBar
 - patrones de control, tipo de control StatusBar
 - events,Tipo de control StatusBar
-- Compatibilidad con el tipo de control StatusBar
+- compatibilidad con el tipo de control StatusBar
 - StatusBar (tipo de control)
 - tipos de control, estructura de árbol para el tipo de control StatusBar
 - tipos de control, patrones de control para el tipo de control StatusBar
@@ -21,12 +21,12 @@ keywords:
 - tipos de control, StatusBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f52f3f04db86a8c8ff0e9cad9a3938a17e996e8210960912c3abc5039468e178
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 032c0122bc472a8b2deace8cc48d41926778a11b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119614255"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473701"
 ---
 # <a name="statusbar-control-type"></a>Tipo de control StatusBar
 
@@ -47,44 +47,15 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de barra de estado y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario árbol, [vea información general Automatización de la interfaz de usuario árbol de árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenece a los controles de la barra de estado y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Vista de control</th>
-<th>Vista de contenido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>StatusBar
-<ul>
-<li>Edición (0 o más)</li>
-<li>ProgressBar (0 o muchos)</li>
-<li>Imagen (0 o muchos)</li>
-<li>Botón (0 o muchos)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>StatusBar
-<ul>
-<li>Edición (0 o más)</li>
-<li>ProgressBar (0 o muchos)</li>
-<li>Imagen (0 o muchos)</li>
-<li>Botón (0 o muchos)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Vista de control | Vista de contenido | 
+|--------------|--------------|
+| <ul><li>StatusBar<ul><li>Edición (0 o más)</li><li>ProgressBar (0 o muchos)</li><li>Imagen (0 o muchos)</li><li>Botón (0 o muchos)</li></ul></li></ul> | <ul><li>StatusBar<ul><li>Edición (0 o más)</li><li>ProgressBar (0 o muchos)</li><li>Imagen (0 o muchos)</li><li>Botón (0 o muchos)</li></ul></li></ul> | 
+
 
 
 
@@ -92,15 +63,15 @@ En la tabla siguiente se muestra un control y una vista de contenido típicos de
 
 ## <a name="relevant-properties"></a>Propiedades pertinentes
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles de la barra de estado. Para obtener más información sobre Automatización de la interfaz de usuario, vea [Retrieving Properties from Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles de la barra de estado. Para obtener más información sobre Automatización de la interfaz de usuario propiedades, vea [Recuperar propiedades de Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Value         | Notas                                                                                                                                                                                                               |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Valor         | Notas                                                                                                                                                                                                               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.    | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                                        |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.    | El rectángulo delimitador de una barra de estado debe abarcar todos los controles que incluye.                                                                                                                      |
-| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.    | Se admite si hay un rectángulo delimitador. Si hay áreas dentro del rectángulo delimitador que no se pueden hacer clic y el elemento realiza pruebas de acceso especializadas, invalide esta opción y proporcione un punto en el que se pueda hacer clic. |
+| [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.    | Se admite si hay un rectángulo delimitador. Si hay áreas dentro del rectángulo delimitador que no se pueden hacer clic y el elemento realiza pruebas de acceso especializadas, invalide esto y proporcione un punto en el que se pueda hacer clic. |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **StatusBar** |                                                                                                                                                                                                                     |
 | [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE          | El control de barra de estado siempre se incluye en la vista de contenido del Automatización de la interfaz de usuario estado.                                                                                                                            |
 | [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE          | El control de barra de estado siempre se incluye en la vista de control del Automatización de la interfaz de usuario estado.                                                                                                                            |
@@ -117,13 +88,13 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 ## <a name="required-control-patterns"></a>Patrones de control necesarios
 
-En la tabla siguiente se enumeran los Automatización de la interfaz de usuario de control necesarios para ser compatibles con los controles de barra de estado. Para más información sobre los patrones de control, vea [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
+En la tabla siguiente se enumeran los Automatización de la interfaz de usuario de control necesarios para ser compatibles con los controles de la barra de estado. Para más información sobre los patrones de control, vea [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 
 
 | Patrón de control                               | Soporte técnico  | Notas                                                                                                                                                                        |
 |-----------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) | Opcionales | Los controles de barra de estado deben admitir [el patrón de](uiauto-implementinggrid.md) control Grid para que se puedan supervisar partes individuales y hacer referencia a estas fácilmente para obtener información. |
+| [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) | Opcionales | Los controles de barra de estado deben admitir [el patrón de](uiauto-implementinggrid.md) control Grid para que se puedan supervisar y hacer referencia fácilmente a partes individuales para obtener información. |
 
 
 
@@ -131,7 +102,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 ## <a name="required-events"></a>Eventos necesarios
 
-En la tabla siguiente se enumeran los Automatización de la interfaz de usuario que los controles de la barra de estado son necesarios para admitir. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario eventos que los controles de la barra de estado son necesarios para admitir. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 

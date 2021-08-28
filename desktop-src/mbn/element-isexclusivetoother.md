@@ -7,12 +7,12 @@ MSHAttr:
 title: IsExclusiveToOther
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f51cb5ebdeb4e27d74cb1a8562be15cecd63f98
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 57f53a270849dd2bcde7c394dddfe7cf9abe793c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480321"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879896"
 ---
 # <a name="span-idwwan_profile_v4element_isexclusivetootherspanisexclusivetoother"></a><span id="WWAN_profile_v4.element_IsExclusiveToOther"></span>IsExclusiveToOther
 
@@ -20,8 +20,8 @@ Especifica que este perfil es exclusivo de otros perfiles de los mismos conjunto
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<IsExclusiveToOther>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;IsExclusiveToOther&gt;**
 
 ## <a name="syntax"></a>Syntax
 

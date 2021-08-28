@@ -1,31 +1,31 @@
 ---
-title: Cambio de la contraseña en la cuenta de usuario de un servicio
-description: En el caso de una instancia de servicio que inicia sesión con una cuenta de usuario, en lugar de la cuenta LocalSystem, el administrador de control de servicios (SCM) del equipo host almacena la contraseña de la cuenta, que usa para iniciar sesión en el servicio cuando se inicia el servicio.
+title: Cambiar la contraseña en la cuenta de usuario de un servicio
+description: Para una instancia de servicio que inicia sesión con una cuenta de usuario, en lugar de con la cuenta LocalSystem, el Administrador de control de servicios (SCM) del equipo host almacena la contraseña de la cuenta, que usa para iniciar sesión en el servicio cuando se inicia el servicio.
 ms.assetid: d9cef772-bd85-4103-901e-3cf786b29163
 ms.tgt_platform: multiple
 keywords:
-- Cambio de la contraseña en la cuenta de usuario del servicio AD
+- Cambio de la contraseña en la cuenta de usuario de un servicio AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bf16b018796979d3710825472a5f9abab72cd24
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: e66f0d7b4dc668697b7a0a8d5b120735f3a445cf
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487499"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881626"
 ---
-# <a name="changing-the-password-on-a-services-user-account"></a>Cambio de la contraseña en la cuenta de usuario de un servicio
+# <a name="changing-the-password-on-a-services-user-account"></a>Cambiar la contraseña en la cuenta de usuario de un servicio
 
-En el caso de una instancia de servicio que inicia sesión con una cuenta de usuario, en lugar de la cuenta LocalSystem, el administrador de control de servicios (SCM) del equipo host almacena la contraseña de la cuenta, que usa para iniciar sesión en el servicio cuando se inicia el servicio. Como con cualquier cuenta de usuario, debe cambiar la contraseña periódicamente para mantener la seguridad. Cuando cambie la contraseña en una cuenta de servicio, actualice la contraseña almacenada por el SCM. En el ejemplo de código siguiente se muestra cómo realizar ambas operaciones.
+Para una instancia de servicio que inicia sesión con una cuenta de usuario, en lugar de con la cuenta LocalSystem, el Administrador de control de servicios (SCM) del equipo host almacena la contraseña de la cuenta, que usa para iniciar sesión en el servicio cuando se inicia el servicio. Al igual que con cualquier cuenta de usuario, debe cambiar la contraseña periódicamente para mantener la seguridad. Al cambiar la contraseña en una cuenta de servicio, actualice la contraseña almacenada por el SCM. En el ejemplo de código siguiente se muestra cómo realizar ambas acciones.
 
-En los ejemplos de código se usa [**IADsUser. SetPassword**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) para establecer la contraseña de la cuenta. Este método usa el nombre distintivo de la cuenta. A continuación, el ejemplo abre un identificador para el servicio instalado en el equipo host especificado y usa la función [**ChangeServiceConfig**](/windows/desktop/api/winsvc/nf-winsvc-changeserviceconfiga) para actualizar la contraseña almacenada en caché por el SCM. Esta función usa el nombre Sam (" <domain> \\ <username> ") de la cuenta.
+En los ejemplos de código [**se usa IADsUser.SetPassword**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) para establecer la contraseña de la cuenta. Este método usa el nombre distintivo de la cuenta. A continuación, el ejemplo abre un identificador para el servicio instalado en el equipo host especificado y usa la función [**ChangeServiceConfig**](/windows/desktop/api/winsvc/nf-winsvc-changeserviceconfiga) para actualizar la contraseña almacenada en caché por el SCM. Esta función usa el nombre SAM (" &lt; nombre de usuario de dominio ") de la &gt; \\ &lt; &gt; cuenta.
 
 > [!Note]  
-> Este código debe ser ejecutado por un administrador de dominio.
+> Un administrador de dominio debe ejecutar este código.
 
- 
+ 
 
-En el caso de un servicio replicable en el que cada réplica use una cuenta de inicio de sesión diferente, puede actualizar las contraseñas de todas las réplicas mediante la enumeración de las instancias de servicio. Para obtener más información y un ejemplo de código, consulte [enumeración de las réplicas de un servicio](enumerating-the-replicas-of-a-service.md).
+Para un servicio replicable en el que cada réplica usa una cuenta de inicio de sesión diferente, puede actualizar las contraseñas de todas las réplicas enumerando las instancias de servicio. Para obtener más información y un ejemplo de código, [vea Enumerar las réplicas de un servicio](enumerating-the-replicas-of-a-service.md).
 
 
 ```C++
@@ -153,6 +153,6 @@ return dwStatus;
 
 
 
- 
+ 
 
- 
+ 
