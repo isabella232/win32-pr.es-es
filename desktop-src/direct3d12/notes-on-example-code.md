@@ -1,29 +1,29 @@
 ---
-title: Código de ejemplo en la referencia de D3D12
+title: Código de ejemplo en la referencia D3D12
 description: Explica el uso de código de ejemplo en la documentación de Direct3D 12.
 ms.assetid: C2323482-D06D-43B7-9BDE-BFB9A6A6B70D
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d65dd8db64dd829a7a318717e44a64ea189c7a3
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: 6a789ba8fa913b6852d8f7528183a71da31095d69539a79b2351e5b9ab7d3462
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104549077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119525"
 ---
-# <a name="example-code-in-the-d3d12-reference"></a>Código de ejemplo en la referencia de D3D12
+# <a name="example-code-in-the-d3d12-reference"></a>Código de ejemplo en la referencia D3D12
 
 Explica el uso de código de ejemplo en la documentación de Direct3D 12.
 
--   [Código de fragmento de ejemplo](#example-snippet-code)
+-   [Código de fragmento de código de ejemplo](#example-snippet-code)
 -   [Temas relacionados](#related-topics)
 
-## <a name="example-snippet-code"></a>Código de fragmento de ejemplo
+## <a name="example-snippet-code"></a>Código de fragmento de código de ejemplo
 
-El código de ejemplo que se muestra en la referencia de Direct3D 12 no es un código compilable o de ejecución; es simplemente un fragmento de código que muestra un ejemplo de cómo se llama a la API. Algunos ejemplos muestran las variables globales y los miembros de clase utilizados por las llamadas, por ejemplo:
+El código de ejemplo que se muestra en la referencia de Direct3D 12 no es compilable ni puede ejecutar código, sino simplemente un fragmento de código que proporciona un ejemplo de cómo se llama a la API. Algunos ejemplos muestran las variables globales y los miembros de clase utilizados por las llamadas, por ejemplo:
 
-Objetos de canalización globales.
+Objetos de canalización global.
 
 
 ```C++
@@ -43,7 +43,7 @@ UINT m_rtvDescriptorSize;
 
 
 
-Rellenando listas de comandos.
+Rellenar listas de comandos.
 
 
 ```C++
@@ -91,7 +91,7 @@ ThrowIfFailed(m_commandList->Close());
 [Crear un componente básico de Direct3D 12](creating-a-basic-direct3d-12-component.md)
 </dt> <dt>
 
-[Referencia de Direct3D 12](direct3d-12-reference.md)
+[Referencia de Direct3D 12](direct3d-12-reference.md)
 </dt> <dt>
 
 [Tutoriales de código D3D12](d3d12-code-walk-throughs.md)

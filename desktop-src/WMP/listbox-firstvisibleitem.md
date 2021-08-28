@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. firstVisibleItem
+title: LISTBOX.firstVisibleItem
 description: El atributo firstVisibleItem especifica o recupera el índice de la primera línea visible en el control de cuadro de lista.
 ms.assetid: 20209f55-2895-4c71-9169-0441e7c5c026
 keywords:
-- LISTBOX. firstVisibleItem Windows Media Player
+- LISTBOX.firstVisibleItem Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76f7ee51848b6bd60e306f70a2f5a90006d1bf6b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 768eb489224dfb2cf15e9107a1b6e6b98459f21b4fd4c497e2a85e79be304a8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123465"
 ---
-# <a name="listboxfirstvisibleitem"></a>LISTBOX. firstVisibleItem
+# <a name="listboxfirstvisibleitem"></a>LISTBOX.firstVisibleItem
 
-El atributo **firstVisibleItem** especifica o recupera el índice de la primera línea visible en el control de cuadro de lista.
+El **atributo firstVisibleItem** especifica o recupera el índice de la primera línea visible en el control de cuadro de lista.
 
 ``` syntax
         elementID.firstVisibleItem
@@ -29,9 +29,9 @@ El atributo **firstVisibleItem** especifica o recupera el índice de la primera 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**).
+Este atributo es un número de lectura y **escritura** **(long).**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo es útil para determinar la primera línea visible cuando se desplaza el cuadro de lista.
 
@@ -41,7 +41,7 @@ Este atributo es útil para determinar la primera línea visible cuando se despl
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

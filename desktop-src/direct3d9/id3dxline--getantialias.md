@@ -1,7 +1,7 @@
 ---
-description: Obtiene el estado de suavizado de línea.
+description: Obtiene el estado de suavizado de contorno de línea.
 ms.assetid: 5a38cb74-37e6-4fa0-aa37-f10beceda49e
-title: 'ID3DXLine:: GetAntialias (método) (D3dx9core. h)'
+title: Método ID3DXLine::GetAntialias (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b5227e49b600ec2f7b4c837134e6e23d73a0a2c8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 623c928ac27536f041c927aa6343c73c474e3d3e79cc5192e0ddd69da09d1608
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095915"
 ---
-# <a name="id3dxlinegetantialias-method"></a>ID3DXLine:: GetAntialias (método)
+# <a name="id3dxlinegetantialias-method"></a>Método ID3DXLine::GetAntialias
 
-Obtiene el estado de suavizado de línea.
+Obtiene el estado de suavizado de contorno de línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Devuelve el valor del modificador de suavizado de contorno. **True** significa que el suavizado de contorno está activado y **false** significa que el suavizado de contorno está desactivado.
+Devuelve el valor del modificador de suavizado de contorno. **TRUE** significa que el suavizado de contorno está en on y **FALSE** significa que el suavizado de contorno está desactivado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve el valor del modificador de suavizado de contorno. **True** significa q
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

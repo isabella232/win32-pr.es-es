@@ -1,7 +1,7 @@
 ---
-description: Un elemento lógico que representa una unidad de trabajo que se va a ejecutar, como un script o un trabajo de impresión. Un trabajo es distinto de un proceso porque un trabajo se puede programar o poner en cola, y su ejecución no se limita a un solo sistema.
+description: Elemento lógico que representa una unidad de trabajo que se debe ejecutar, como un script o un trabajo de impresión. Un trabajo es distinto de un proceso porque un trabajo se puede programar o poner en cola, y su ejecución no se limita a un único sistema.
 ms.assetid: 35e35c3f-617b-429b-b68f-fa0c0c330e92
-title: CIM_Job (clase, administración de Hyper-V)
+title: CIM_Job (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -34,16 +34,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6b59a162d36ee677ad00c8cc574282f970bc1d80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8eb8f63ec9d2cdd881a2ba0946f83a40fb8be866
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002490"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474591"
 ---
-# <a name="cim_job-class-hyper-v-management"></a>CIM_Job (clase, administración de Hyper-V)
+# <a name="cim_job-class-hyper-v-management"></a>CIM_Job (administración de Hyper-V)
 
-Un elemento lógico que representa una unidad de trabajo que se va a ejecutar, como un script o un trabajo de impresión. Un trabajo es distinto de un proceso porque un trabajo se puede programar o poner en cola, y su ejecución no se limita a un solo sistema.
+Elemento lógico que representa una unidad de trabajo que se debe ejecutar, como un script o un trabajo de impresión. Un trabajo es distinto de un proceso porque un trabajo se puede programar o poner en cola, y su ejecución no se limita a un único sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,40 +77,22 @@ class CIM_Job : CIM_LogicalElement
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ trabajo CIM** tiene estos tipos de miembros:
+La **clase de \_ trabajo CIM** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase de **\_ trabajo CIM** tiene estos métodos.
+La **clase de \_ trabajo CIM** tiene estos métodos.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Método</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="cim-job-killjob.md"><strong>KillJob</strong></a></td>
-<td style="text-align: left;">Este método es desusado. En su lugar, use el método <strong>RequestStateChange</strong> .<br/>
-<blockquote>
-[!Note]<br />
-Descripción desusada: cierra un trabajo.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Método | Descripción | 
+|--------|-------------|
+| <a href="cim-job-killjob.md"><strong>KillJob</strong></a> | Este método es desusado. En su lugar, use <strong>el método RequestStateChange.</strong><br /><blockquote>[!Note]<br />Descripción en desuso: cierra un trabajo.</blockquote><br /> | 
+
 
 
 
@@ -118,7 +100,7 @@ Descripción desusada: cierra un trabajo.
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ trabajo CIM** tiene estas propiedades.
+La **clase de \_ trabajo CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -128,13 +110,13 @@ La clase de **\_ trabajo CIM** tiene estas propiedades.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**True** para eliminar el trabajo tras su finalización; en caso contrario, **false**.
+**True** para eliminar el trabajo tras la finalización; de lo contrario, **false**.
 
 > [!Note]  
-> Esta propiedad no eliminará los trabajos que se completen antes de que esta propiedad se establezca en **true**.
+> Esta propiedad no eliminará los trabajos que se completen antes de que esta propiedad se establezca en **True.**
 
  
 
@@ -143,29 +125,29 @@ Tipo de acceso: lectura/escritura
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La duración de la ejecución del trabajo.
+La duración durante la que se ha ejecutado el trabajo.
 
 </dd> <dt>
 
 **ErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**ErrorDescription**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**ErrorDescription**")
 </dt> </dl>
 
-Código de error específico del proveedor que captura la información de procesamiento de los trabajos periódicos. El valor debe establecerse en cero si el trabajo se completó sin errores.
+Código de error específico del proveedor que captura la información de procesamiento de trabajos periódicos. El valor debe establecerse en cero si el trabajo se completó sin errores.
 
 </dd> <dt>
 
@@ -178,23 +160,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**ErrorCode**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**ErrorCode**")
 </dt> </dl>
 
-Una cadena de forma libre que contiene una descripción del código de error correspondiente en la propiedad **ErrorCode** .
+Cadena de forma libre que contiene una descripción del código de error correspondiente en la **propiedad ErrorCode.**
 
 </dd> <dt>
 
 **JobRunTimes**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Número de veces que se va a ejecutar el trabajo.
+Número de veces que se ejecuta el trabajo.
 
 </dd> <dt>
 
@@ -207,7 +189,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**el \_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).**OperationalStatus**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).**OperationalStatus**")
 </dt> </dl>
 
 Cadena de forma libre que representa el estado del trabajo.
@@ -217,13 +199,13 @@ Cadena de forma libre que representa el estado del trabajo.
 **LocalOrUtcTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si las horas de las propiedades **RunStartInterval** y **UntilTime** representan horas locales o horas UTC.
+Indica si las horas de las propiedades **RunStartInterval** y **UntilTime** representan horas locales o UTC.
 
 <dt>
 
@@ -249,10 +231,10 @@ Indica si las horas de las propiedades **RunStartInterval** y **UntilTime** repr
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El usuario al que se notificará cuando un trabajo se complete o se produzca un error.
+El usuario al que se notificará cuando se complete o se produce un error en un trabajo.
 
 </dd> <dt>
 
@@ -265,10 +247,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**RecoveryAction**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**RecoveryAction**")
 </dt> </dl>
 
-Una cadena que describe la acción de recuperación cuando la propiedad **RecoveryAction** es **otra** ("1").
+Cadena que describe la acción de recuperación cuando la **propiedad RecoveryAction** es **Other** ("1").
 
 </dd> <dt>
 
@@ -284,20 +266,20 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OwningJobElement**](cim-owningjobelement.md).")
 </dt> </dl>
 
-El usuario que envió el trabajo, o el nombre de servicio o método que solicitó el trabajo.
+El usuario que envió el trabajo o el nombre del servicio o método que solicitó el trabajo.
 
 </dd> <dt>
 
 **PercentComplete**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percent"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (101), **punitivo** ("Percent")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Percent"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (101), **PUnit** ("percent")
 </dt> </dl>
 
 Porcentaje del trabajo que se ha completado.
@@ -312,10 +294,10 @@ Porcentaje del trabajo que se ha completado.
 **Prioridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Importancia del trabajo. Cuanto menor sea el número, mayor será la prioridad.
@@ -325,16 +307,16 @@ Importancia del trabajo. Cuanto menor sea el número, mayor será la prioridad.
 **RecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**OtherRecoveryAction**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**OtherRecoveryAction**")
 </dt> </dl>
 
-Describe la acción de recuperación que se realizará cuando se produzca un error en un trabajo de ejecución.
+Describe la acción de recuperación que se debe realizar cuando se produce un error en un trabajo de ejecución.
 
 <dt>
 
@@ -345,18 +327,18 @@ Describe la acción de recuperación que se realizará cuando se produzca un err
 
 </dt> <dd>
 
-Se desconoce el modo en que se realiza la acción de recuperación.
+No se sabe qué acción de recuperación realizar.
 
 </dd> <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd>
 
-La acción de recuperación se especificará en la propiedad **OtherRecoveryAction** .
+La acción de recuperación se especificará en la **propiedad OtherRecoveryAction.**
 
 </dd> <dt>
 
@@ -367,18 +349,18 @@ La acción de recuperación se especificará en la propiedad **OtherRecoveryActi
 
 </dt> <dd>
 
-Detenga la ejecución del trabajo y actualice su estado correctamente.
+Detenga la ejecución del trabajo y actualice correctamente su estado.
 
 </dd> <dt>
 
 <span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>
 
-<span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continuar con el trabajo siguiente** (3)
+<span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continuar con el siguiente trabajo** (3)
 
 
 </dt> <dd>
 
-Continúe con el siguiente trabajo de la cola.
+Continúe con el siguiente trabajo en la cola.
 
 </dd> <dt>
 
@@ -389,7 +371,7 @@ Continúe con el siguiente trabajo de la cola.
 
 </dt> <dd>
 
-Se debe volver a ejecutar el trabajo.
+El trabajo debe volver a ejecutarse.
 
 </dd> <dt>
 
@@ -400,7 +382,7 @@ Se debe volver a ejecutar el trabajo.
 
 </dt> <dd>
 
-Ejecute el trabajo asociado mediante la relación **RecoveryJob** . Tenga en cuenta que el trabajo de recuperación debe estar ya en la cola desde la que se ejecutará.
+Ejecute el trabajo asociado mediante la **relación RecoveryJob.** Tenga en cuenta que el trabajo de recuperación ya debe estar en la cola desde la que se ejecutará.
 
 </dd> </dl>
 
@@ -412,13 +394,13 @@ Ejecute el trabajo asociado mediante la relación **RecoveryJob** . Tenga en cue
 Tipo de datos: **sint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (-31), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (31), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**RunMonth**","**\_ trabajo de CIM**.**RunDayOfWeek**","**\_ trabajo de CIM**.**RunStartInterval**")
+Calificadores: [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (-31), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (31), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**RunMonth**", "**Cim \_ Job**.**RunDayOfWeek**", "**Cim \_ Job**.**RunStartInterval**")
 </dt> </dl>
 
-Entero que se usa junto con la propiedad **RunDayOfWeek** para indicar el día en el que se procesa el trabajo; o bien, si **RunDayOfWeek** se establece en cero, **RunDay** indica el día del mes en el que se procesa el trabajo. Si **RunDay** es un entero negativo, especifica un día relativo al final del mes, o bien, si **RunDay** es un entero positivo, especifica un día relativo al comienzo del mes.
+Entero que se usa junto con la **propiedad RunDayOfWeek** para indicar el día en que se procesa el trabajo; o bien, **si RunDayOfWeek** se establece en cero, **RunDay** indica el día del mes en que se procesa el trabajo. Si **RunDay** es un entero negativo, especifica un día con respecto al final del mes, o si **RunDay** es un entero positivo, especifica un día con respecto al principio del mes.
 
 </dd> <dt>
 
@@ -428,33 +410,33 @@ Entero que se usa junto con la propiedad **RunDayOfWeek** para indicar el día e
 Tipo de datos: **sint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**RunMonth**","**\_ trabajo de CIM**.**RunDay**","**\_ trabajo de CIM**.**RunStartInterval**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**RunMonth**", "**Cim \_ Job**.**RunDay**", "**Cim \_ Job**.**RunStartInterval**")
 </dt> </dl>
 
-Entero que se usa junto con la propiedad **RunDay** para indicar el día en el que se procesa el trabajo; o bien, si **RunDayOfWeek** se establece en cero, **RunDay** indica el día del mes en el que se procesa el trabajo.
+Entero que se usa junto con la **propiedad RunDay** para indicar el día en que se procesa el trabajo; o bien, **si RunDayOfWeek** se establece en cero, **RunDay** indica el día del mes en que se procesa el trabajo.
 
 <dt>
 
 <span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>
 
-**-Sábado** (-7)
+**-Saturday** (-7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>
 
-**-Viernes** (-6)
+**-Friday** (-6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>
 
-**-Jueves** (-5)
+**-Thursday** (-5)
 
 
 </dt> <dd></dd> <dt>
@@ -468,14 +450,14 @@ Entero que se usa junto con la propiedad **RunDay** para indicar el día en el q
 
 <span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>
 
-**-Martes** (-3)
+**-Tuesday** (-3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>
 
-**-Lunes** (-2)
+**-Monday** (-2)
 
 
 </dt> <dd></dd> <dt>
@@ -548,13 +530,13 @@ Entero que se usa junto con la propiedad **RunDay** para indicar el día en el q
 **RunMonth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**RunDay**","**\_ trabajo de CIM**.**RunDayOfWeek**","**\_ trabajo de CIM**.**RunStartInterval**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**RunDay**", "**Cim \_ Job**.**RunDayOfWeek**", "**Cim \_ Job**.**RunStartInterval**")
 </dt> </dl>
 
 Mes en el que se procesa el trabajo.
@@ -650,79 +632,79 @@ Mes en el que se procesa el trabajo.
 **RunStartInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**RunMonth**","**\_ trabajo de CIM**.**RunDay**","**\_ trabajo de CIM**.**RunDayOfWeek**","**\_ trabajo de CIM**.**RunStartInterval**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**RunMonth**", "**Cim \_ Job**.**RunDay**", "**Cim \_ Job**.**RunDayOfWeek**", "**Cim \_ Job**.**RunStartInterval**")
 </dt> </dl>
 
-El intervalo de tiempo después de medianoche cuando se procesa el trabajo. Por ejemplo, "00000000020000.000000:000" indica que el trabajo se ejecuta en la hora local o después de dos horas, o la hora UTC (UTC se especifica con la propiedad **LocalOrUtcTime** ).
+Intervalo de tiempo después de medianoche en el que se procesa el trabajo. Por ejemplo, "00000000020000.000000:000" indica que el trabajo se ejecuta en o después de las dos de la hora local, o la hora UTC (UTC se especifica con la **propiedad LocalOrUtcTime).**
 
 </dd> <dt>
 
 **ScheduledStartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) (**" \_ trabajo de CIM**.**RunMonth**","**\_ trabajo de CIM**.**RunDay**","**\_ trabajo de CIM**.**RunDayOfWeek**","**\_ trabajo de CIM**.**RunStartInterval**")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("**Trabajo \_ CIM**.**RunMonth**", "**Cim \_ Job**.**RunDay**", "**Cim \_ Job**.**RunDayOfWeek**", "**Cim \_ Job**.**RunStartInterval**")
 </dt> </dl>
 
 > [!Note]  
-> Esta propiedad está desusada. En su lugar, se recomienda usar las propiedades **RunMonth**, **RunDay**, **RunDayOfWeek** y **RunStartInterval** .
+> Esta propiedad está desusada. En su lugar, se recomienda usar las propiedades **RunMonth**, **RunDay**, **RunDayOfWeek** y **RunStartInterval.**
 
  
 
-La hora a la que se programa el inicio del trabajo actual. Esta vez se puede representar mediante una fecha y hora, o un intervalo relativo a la hora a la que se solicita la propiedad. Un valor de ceros indica que el trabajo ya se está ejecutando.
+Hora a la que se programa el inicio del trabajo actual. Esta hora se puede representar mediante una fecha y hora, o un intervalo relativo a la hora en que se solicita la propiedad. Un valor de todos los ceros indica que el trabajo ya se está ejecutando.
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La hora a la que se inició el trabajo. Esta vez se puede representar mediante una fecha y hora, o por un intervalo relativo a la hora a la que se solicita la propiedad.
+Hora a la que se inició el trabajo. Esta hora se puede representar mediante una fecha y hora, o mediante un intervalo relativo a la hora en que se solicita la propiedad.
 
 </dd> <dt>
 
 **TimeSubmitted**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La hora a la que se envió el trabajo. Un valor de ceros indica que el elemento primario no es capaz de notificar una fecha y hora.
+Hora a la que se envió el trabajo. Un valor de todos los ceros indica que el elemento primario no es capaz de notificar una fecha y hora.
 
 </dd> <dt>
 
 **UntilTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ trabajo de CIM**.**LocalOrUtcTime**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Job**.**LocalOrUtcTime**")
 </dt> </dl>
 
-Hora a partir de la cual el trabajo deja de ser válido o debe detenerse. La hora se puede representar mediante una fecha y una hora, o por un intervalo relativo a la hora a la que se solicita esta propiedad. Un valor de los nueves indica que el trabajo puede ejecutarse indefinidamente.
+La hora después de la cual el trabajo deja de ser válido o debe detenerse. La hora se puede representar mediante una fecha y hora, o mediante un intervalo relativo a la hora en que se solicita esta propiedad. Un valor de los nueves indica que el trabajo se puede ejecutar indefinidamente.
 
 </dd> </dl>
 
@@ -730,21 +712,21 @@ Hora a partir de la cual el trabajo deja de ser válido o debe detenerse. La hor
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> </dl>
 
  

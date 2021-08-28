@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 0df8c451f5f2f293d09a73b77740c72078f908a8
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: faa9e58fa3ef86fbcf6fde94c64ea6421853b999
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623531"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787301"
 ---
 # <a name="span-idvspixengineirunactioncallbackspanirunactioncallback-interface"></a><span id="vspixengine.irunactioncallback"></span>IRunActionCallback (interfaz)
 
 No se utiliza. Anteriormente, una devolución de llamada para responder al evento de "fotograma de captura".
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IRunActionCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRunActionCallback** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IRunActionCallback** hereda de la [**interfaz IUnknown.**](/window
 
 La **interfaz IRunActionCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunactioncallback-requestresult-iunknown-ptr"><strong>RequestResult</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host los resultados de una acción (por ejemplo, capturar un fotograma) que solicitó.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/irunactioncallback-requestresult-iunknown-ptr"><strong>RequestResult</strong></a></td><td ><p>Función de devolución de llamada que se usa para notificar al host los resultados de una acción (por ejemplo, capturar un fotograma) que solicitó.</p></td></tr></tbody></table>
 
  
 

@@ -1,10 +1,10 @@
 ---
-title: Interfaz ID3DX11DataProcessor (D3DX11core. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Objeto de procesamiento de datos utilizado por la interfaz ID3DX11ThreadPump para cargar datos de forma asincrónica.
+title: Interfaz ID3DX11DataProcessor (D3DX11core.h)
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Objeto de procesamiento de datos utilizado por la interfaz ID3DX11ThreadPump para cargar datos de forma asincrónica.
 ms.assetid: ab893879-416f-4b17-9035-a7f03a62b753
 keywords:
 - Interfaz ID3DX11DataProcessor Direct3D 11
-- Interfaz ID3DX11DataProcessor Direct3D 11, descrita
+- Interfaz ID3DX11DataProcessor direct3D 11 , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,99 +16,68 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e421a6e840665220311e5a27c0692cd7f347e7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 808c7d1bf1bdef1223e5b57e40ea5e6a90878101
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104984147"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122469352"
 ---
 # <a name="id3dx11dataprocessor-interface"></a>Interfaz ID3DX11DataProcessor
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
-Objeto de procesamiento de datos utilizado por la [**interfaz ID3DX11ThreadPump**](id3dx11threadpump.md) para cargar datos de forma asincrónica.
+Objeto de procesamiento de datos utilizado [**por la interfaz ID3DX11ThreadPump para**](id3dx11threadpump.md) cargar datos de forma asincrónica.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ID3DX11DataProcessor** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ID3DX11DataProcessor** también tiene estos tipos de miembros:
+La **interfaz ID3DX11DataProcessor** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ID3DX11DataProcessor** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ID3DX11DataProcessor** tiene estos métodos.
+La **interfaz ID3DX11DataProcessor** tiene estos métodos.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Método</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="id3dx11dataprocessor-createdeviceobject.md"><strong>CreateDeviceObject</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
-</blockquote>
-<br/> Crea un objeto de dispositivo.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="id3dx11dataprocessor-destroy.md"><strong>Borrar</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
-</blockquote>
-<br/> Destruye el procesador una vez completado un elemento de trabajo.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="id3dx11dataprocessor-process.md"><strong>Proceso</strong></a></td>
-<td style="text-align: left;"><blockquote>
-[!Note]<br />
-La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
-</blockquote>
-<br/> Procesa los datos.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Método | Descripción | 
+|--------|-------------|
+| <a href="id3dx11dataprocessor-createdeviceobject.md"><strong>CreateDeviceObject</strong></a> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /> Crea un objeto de dispositivo.<br /> | 
+| <a href="id3dx11dataprocessor-destroy.md"><strong>Destruir</strong></a> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /> Destruye el procesador una vez completado un elemento de trabajo.<br /> | 
+| <a href="id3dx11dataprocessor-process.md"><strong>Proceso</strong></a> | <blockquote>[!Note]<br />La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.</blockquote><br /> Procesa los datos.<br /> | 
+
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este objeto se puede heredar y sus miembros se pueden redefinir para procesar formatos de archivo personalizados.
+Este objeto se puede heredar y sus miembros se pueden volver a definir para procesar formatos de archivo personalizados.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                 |
+| Encabezado<br/>                   | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Interfaces de D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

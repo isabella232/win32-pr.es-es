@@ -1,9 +1,9 @@
 ---
-title: Elemento AUTHOR
-description: El elemento AUTHOR contiene el nombre del autor de un metarchivo de Windows Media o de un clip multimedia.
+title: ELEMENTO AUTHOR
+description: El elemento AUTHOR contiene el nombre del autor de un metarchivo Windows multimedia o clip multimedia.
 ms.assetid: d80aad3d-4471-4310-8d43-2733ed83103c
 keywords:
-- Elemento de autor de Windows Media Player
+- Elemento AUTHOR Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d20498ebd7c8a56edc2e32bc2e76422c9b22242
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 058753d73049debe01e442f49bf12476642111549ad890e931100026badaeb3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098895"
 ---
-# <a name="author-element"></a>Elemento AUTHOR
+# <a name="author-element"></a>ELEMENTO AUTHOR
 
-El elemento **Author** contiene el nombre del autor de un metarchivo de Windows Media o de un clip multimedia.
+El **elemento AUTHOR** contiene el nombre del autor de un metarchivo Windows multimedia o clip multimedia.
 
 ``` syntax
 <AUTHOR>   
@@ -40,7 +40,7 @@ Este elemento no tiene atributos.
 
 | Hierarchy       | Elemento            |
 |-----------------|--------------------|
-| Elementos primarios | **ASX**, **entrada** |
+| Elementos primarios | **ASX**, **ENTRY** |
 | Elementos secundarios  | Ninguno               |
 
 
@@ -49,13 +49,13 @@ Este elemento no tiene atributos.
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento contiene una cadena de texto que representa el nombre del autor de un metarchivo de Windows Media o un clip multimedia. Puede usar el elemento **Author** dentro del elemento **ASX** y dentro de los elementos de **entrada** .
+Este elemento contiene una cadena de texto que representa el nombre del autor de un archivo Windows multimedia o clip multimedia. Puede usar el elemento **AUTHOR dentro** del elemento **ASX** y dentro de **los elementos ENTRY.**
 
-Si este elemento aparece en el elemento **ASX** , el texto se muestra como **Mostrar** información.
+Si este elemento aparece en el **elemento ASX,** el texto se muestra como **Mostrar** información.
 
-Si este elemento aparece en un elemento de **entrada** , el texto se muestra como autor del clip.
+Si este elemento aparece en un **elemento ENTRY,** el texto se muestra como el autor del clip.
 
-Cada elemento **ASX** y **entry** primarios debe contener como máximo un elemento secundario **Author** . Varios elementos **Author** después del primero se omitirán y no se mostrarán.
+Cada elemento **ASX y** **ENTRY** primario debe contener como máximo un elemento **AUTHOR** secundario. Varios **elementos AUTHOR** después de la primera se omitirán y no se mostrarán.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -79,7 +79,7 @@ Cada elemento **ASX** y **entry** primarios debe contener como máximo un elemen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -87,10 +87,10 @@ Cada elemento **ASX** y **entry** primarios debe contener como máximo un elemen
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

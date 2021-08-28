@@ -4,20 +4,20 @@ ms.assetid: 7c38bc15-be86-4260-b2e4-13afc90de6d7
 title: stringFormat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e76c72865c3a0f327657d3d97cda55d57ebae1023793dabcad03db513319c004
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6eb40ec92ed7b31486062b5cca027eb5257e07af
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117867461"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631912"
 ---
 # <a name="stringformat"></a>stringFormat
 
 Especifica cómo [**IPropertyDescription::FormatForDisplay**](/windows/win32/api/propsys/nf-propsys-ipropertydescription-formatfordisplay) debe dar formato al valor de la propiedad como una cadena. Esto solo es aplicable si <displayInfo displayType="String"> . Solo debe haber un [elemento stringFormat]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [stringFormat,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
+Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [stringFormat,]() la configuración predeterminada del atributo se aplica a la descripción de la propiedad.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -46,7 +46,7 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 | Elemento primario                                   | Elementos secundarios |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | Ninguno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | None           |
 
 
 
@@ -58,8 +58,8 @@ Si hay varios elementos, se usa el último. Si no se proporciona ningún element
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -1,7 +1,7 @@
 ---
 description: Convierte los radianes en grados.
 ms.assetid: 1b19af39-ca23-4364-9121-f532d7fed099
-title: D3DXToDegree (D3dx9math. h)
+title: D3DXToDegree (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: ad77ea661f4d67318566079aa7c1072fe0f86c91
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 284e59d8bb0a5b6f866286d67aa8c743716e333333d6c865077ce2cfd51778a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105689882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119015"
 ---
 # <a name="d3dxtodegree"></a>D3DXToDegree
 
@@ -34,7 +34,7 @@ Convierte los radianes en grados.
 
 | Parámetro                                                           | Descripción                                              |
 |---------------------------------------------------------------------|----------------------------------------------------------|
-| <span id="radian"></span><span id="RADIAN"></span>en radianes<br/> | Valor, en radianes, que se va a convertir en grados.<br/> |
+| <span id="radian"></span><span id="RADIAN"></span>Radián<br/> | Valor, en radianes, que se convierte en grados.<br/> |
 
 
 
@@ -42,7 +42,7 @@ Convierte los radianes en grados.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La macro devuelve el valor de radianes en grados.
+La macro devuelve el valor de base en grados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ La macro devuelve el valor de radianes en grados.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

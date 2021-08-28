@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 41e84b62c077da03806a5e781498c05ee3c8ee67
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 75484f0b54aa32549f0e7e7554e3d76ceab83cbf7fcb482e4f0df7645e993d1f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119935"
 ---
 # <a name="id3dxmatrixstacktranslate-method-d3dx10h"></a>Método ID3DXMATRIXStack::Translate (D3DX10.h)
 
@@ -77,7 +77,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método multiplica a la derecha la matriz actual por la matriz de traducción calculada (la transformación trata sobre el origen del mundo actual).
+Este método multiplica a la derecha la matriz actual con la matriz de traducción calculada (la transformación trata sobre el origen del mundo actual).
 
 
 ```
@@ -99,7 +99,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

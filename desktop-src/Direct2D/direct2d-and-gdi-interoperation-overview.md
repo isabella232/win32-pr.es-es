@@ -13,12 +13,12 @@ keywords:
 - Interoperación de Direct3D,Direct2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a1f3be132aba742eb1df4b8a893dad245f851a0
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 0cf75f68278bdead5f3806eefd1cda251bfbea4a
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631567"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787401"
 ---
 # <a name="direct2d-and-gdi-interoperability-overview"></a>Introducción a la interoperabilidad de Direct2D y GDI
 
@@ -85,7 +85,7 @@ GetClientRect(m_hwnd, &rc);
 
 
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -250,7 +250,7 @@ En algunos casos, es posible que no sea obvio que GDI está realizando un proces
 
 En función del tipo de contenido que se represente, es posible que desee evitar la inversión. Si el contenido de Direct2D incluye texto ClearType, esta inversión degradará la calidad del texto.
 
-Puede controlar el comportamiento de representación de RTL mediante la [**función SetLayout**](/windows/desktop/api/wingdi/nf-wingdi-setlayout) GDI. Para evitar la creación de reflejo, llame a la función **SetLayout** GDI y especifique **LAYOUT \_ BITMAPORIENTATIONPRESERVED como** el único valor para el segundo parámetro (no lo combine con LAYOUT **\_ RTL),** como se muestra en el ejemplo siguiente:
+Puede controlar el comportamiento de representación de RTL mediante la [**función SetLayout**](/windows/desktop/api/wingdi/nf-wingdi-setlayout) GDI. Para evitar la creación de reflejo, llame a la función **GDI SetLayout** y especifique **LAYOUT \_ BITMAPORIENTATIONPRESERVED como** único valor para el segundo parámetro (no lo combine con LAYOUT **\_ RTL),** como se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -288,7 +288,7 @@ Para representar contenido GDI en un destino de representación compatible con G
 
 En el código anterior, *m \_ pD2DFactory* es un puntero a [**id2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory)y *m \_ pGDIRT* es un puntero a [**id2D1GdiInteropRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1gdiinteroprendertarget).
 
-Observe que se especifica la marca [**\_ COMPATIBLE con \_ \_ \_ GDI \_ RENDER TARGET USAGE de D2D1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_usage) al crear el destino de representación compatible con Hwnd GDI. Si se requiere un formato de píxel, use [DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format). Si se requiere un modo alfa, use [**D2D1 \_ ALPHA \_ MODE \_ PREMULTIPLIED**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode) o **D2D1 \_ ALPHA MODE \_ \_ IGNORE**.
+Tenga en cuenta que se especifica la marca [**\_ COMPATIBLE con \_ \_ \_ GDI \_ RENDER TARGET USAGE de D2D1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_render_target_usage) al crear el destino de representación compatible con Hwnd GDI. Si se requiere un formato de píxel, use [DXGI \_ FORMAT \_ B8G8R8A8 \_ UNORM](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format). Si se requiere un modo alfa, use [**D2D1 \_ ALPHA \_ MODE \_ PREMULTIPLIED**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode) o **D2D1 \_ ALPHA MODE \_ \_ IGNORE**.
 
 Tenga en cuenta que [**el método QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) siempre se realiza correctamente. Para probar si los métodos de la interfaz [**ID2D1GdiInteropRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1gdiinteroprendertarget) funcionarán para un destino de representación determinado, cree una clase [**RENDER TARGET \_ \_ \_ PROPERTIES de D2D1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_render_target_properties) que especifique la compatibilidad con GDI y el formato de píxel adecuado y, a continuación, llame al método [**IsSupported**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-issupported(constd2d1_render_target_properties)) del destino de representación para ver si el destino de representación es compatible con GDI.
 
@@ -347,7 +347,7 @@ En el ejemplo siguiente se muestra cómo dibujar un gráfico circular (contenido
 
 
 
-El código genera gráficos como se muestra en la siguiente ilustración con llamadas para resaltar la diferencia de calidad de la representación. El gráfico circular derecho (contenido GDI) tiene una calidad de representación inferior a la del gráfico circular izquierdo (contenido de Direct2D). Esto se debe a que Direct2D es capaz de representarse con suavizado de contorno
+El código genera gráficos como se muestra en la ilustración siguiente con llamadas para resaltar la diferencia de calidad de la representación. El gráfico circular derecho (contenido GDI) tiene una calidad de representación inferior a la del gráfico circular izquierdo (contenido de Direct2D). Esto se debe a que Direct2D es capaz de representarse con suavizado de contorno
 
 ![ilustración de dos gráficos circulares representados en un destino de representación compatible con gdi de Direct2d](images/gdicontentind2d.png)
 
@@ -364,7 +364,7 @@ El código genera gráficos como se muestra en la siguiente ilustración con lla
 [**ID2D1GdiInteropRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1gdiinteroprendertarget)
 </dt> <dt>
 
-[**PROPIEDADES DE DESTINO DE REPRESENTACIÓN DE D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_render_target_properties)
+[**PROPIEDADES DE DESTINO DE REPRESENTACIÓN D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_render_target_properties)
 </dt> <dt>
 
 [Contextos de dispositivo GDI](/windows/desktop/gdi/device-contexts)

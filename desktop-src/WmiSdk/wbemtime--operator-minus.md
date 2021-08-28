@@ -1,35 +1,35 @@
 ---
-description: 'Operador de resta de clase WBEMTime (&\# 8211;) se ha sobrecargado a:'
+description: 'Operador de resta de clase WBEMTime (&\# 8211;) se ha sobrecargado para:'
 audience: developer
 ms.assetid: 0fa51aab-7ea2-4af7-bb12-1646388b0405
 ms.tgt_platform: multiple
-title: 'Operadores WBEMTime:: Operator-(WbemTime. h)'
+title: Operadores WBEMTime::operator- (WbemTime.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 39256ba9d922ea9d3eef8e442115e840b963ca71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7748020c1dcf1e332384c3a29c18b37da53e020f42d6cb608d9bf3233608aaaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120120755"
 ---
-# <a name="wbemtimeoperator--operators"></a>Operadores WBEMTime:: Operator-
+# <a name="wbemtimeoperator--operators"></a>Operadores WBEMTime::operator-
 
-\[La clase [**WBEMTime**](wbemtime.md) forma parte del marco de trabajo del proveedor WMI, que ahora se considera en el estado final, y no habrá más desarrollo, mejoras o actualizaciones para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
+\[La [**clase WBEMTime**](wbemtime.md) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
 
-El operador de resta de clase [**WBEMTime**](wbemtime.md) () se ha sobrecargado a:
+El operador de resta de clase [**WBEMTime**](wbemtime.md) ( ) se ha sobrecargado para:
 
--   Resta un intervalo de tiempo de la hora de un objeto para generar un nuevo objeto Time que contiene la hora resultante.
--   Reste una hora del tiempo del objeto para generar un nuevo objeto de intervalo de tiempo que contiene la diferencia entre las dos horas.
+-   Resta un intervalo de tiempo del tiempo de un objeto para generar un nuevo objeto de hora que contenga la hora resultante.
+-   Resta un tiempo del tiempo del objeto para generar un nuevo objeto de intervalo de tiempo que contenga la diferencia entre las dos veces.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
 
 
-| Operator                                                                         | Descripción                                                                      |
+| Operador                                                                         | Descripción                                                                      |
 |:---------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|
-| [**operador-(WBEMTime&)**](/windows/win32/api/rrascfg/nf-rrascfg-ieapproviderconfig-initialize)         | Resta un **WBEMTime** de un **WBEMTime**.<br/>                         |
-| [**operador-(WBEMTimeSpan&)**](/windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-sub(constwbemtimespan_)) | Resta un [**WBEMTimeSpan**](/windows/win32/api/wbemtime/nl-wbemtime-wbemtimespan) de un **WBEMTime**.<br/> |
+| [**operator-(WBEMTime&)**](/windows/win32/api/rrascfg/nf-rrascfg-ieapproviderconfig-initialize)         | Resta **un WBEMTime** de **un WBEMTime**.<br/>                         |
+| [**operator-(WBEMTimeSpan&)**](/windows/win32/api/wbemtime/nf-wbemtime-wbemtime-operator-sub(constwbemtimespan_)) | Resta un [**WBEMTimeSpan**](/windows/win32/api/wbemtime/nl-wbemtime-wbemtimespan) de **un WBEMTime**.<br/> |
 
 
 
@@ -41,7 +41,7 @@ El operador de resta de clase [**WBEMTime**](wbemtime.md) () se ha sobrecargado 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                                                                                |
-| Encabezado<br/>                   | <dl> <dt>WbemTime. h</dt> </dl>                                                                         |
+| Header<br/>                   | <dl> <dt>WbemTime.h</dt> </dl>                                                                         |
 | Archivo DLL<br/>                      | <dl> <dt>FrameDynOS.dll; </dt> <dt>FrameDyn.dll</dt> </dl> |
 
 

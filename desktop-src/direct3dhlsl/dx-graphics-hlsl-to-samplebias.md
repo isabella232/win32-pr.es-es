@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 01087ab36bdbe90ff73643899229c7ec6ccfbdbe
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: a279a92db9d38c8f0a8e80edbd87ec667d580d05
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826800"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624531"
 ---
 # <a name="samplebias-directx-hlsl-texture-object"></a>SampleBias (objeto de textura HLSL de DirectX)
 
@@ -32,8 +32,8 @@ Muestrea una textura después de aplicar el sesgo de entrada al nivel de mapa mi
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -83,7 +83,7 @@ Muestrea una textura después de aplicar el sesgo de entrada al nivel de mapa mi
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="Bias"></span><span id="bias"></span><span id="BIAS"></span><em>predisposición</em></p></td>
+<td><p><span id="Bias"></span><span id="bias"></span><span id="BIAS"></span><em>Predisposición</em></p></td>
 <td><p>[in] El valor de sesgo, que es un número de punto flotante entre -16,0 y 15,99, se aplica a un nivel de mip antes del muestreo.</p></td>
 </tr>
 <tr class="odd">

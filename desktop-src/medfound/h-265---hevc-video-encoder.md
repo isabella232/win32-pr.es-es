@@ -1,113 +1,73 @@
 ---
-description: El codificador de vídeo H. 265 Media Foundation es una transformación de Media Foundation que admite la codificación de contenido en el formato H. 265/HEVC.
+description: El Media Foundation de vídeo H.265 es una transformación de Media Foundation que admite la codificación de contenido en el formato H.265/HEVC.
 ms.assetid: 790CFB39-6FC0-432D-A434-5262C30EABF4
-title: H. 265/HEVC de vídeo codificador
+title: Codificador de vídeo H.265/HEVC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 015295792a72f3250c47389192586dbc00566858
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b95eee96d3313df2604919883cf631b0aef999f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001407"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467492"
 ---
-# <a name="h265--hevc-video-encoder"></a>H. 265/HEVC de vídeo codificador
+# <a name="h265--hevc-video-encoder"></a>Codificador de vídeo H.265/HEVC
 
-El codificador de vídeo H. 265 Media Foundation es una [transformación de Media Foundation](media-foundation-transforms.md) que admite la codificación de contenido en el formato H. 265/HEVC. El codificador admite los siguientes perfiles:
+El Media Foundation de vídeo H.265 es un Media Foundation [Transform](media-foundation-transforms.md) que admite la codificación de contenido en el formato H.265/HEVC. El codificador admite los perfiles siguientes:
 
 -   Perfil Main
 
-El codificador de vídeo H. 265 expone las siguientes interfaces:
+El codificador de vídeo H.265 expone las interfaces siguientes:
 
 -   [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi)
 -   [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
 ## <a name="input-types"></a>Tipos de entrada
 
-El tipo de medio de entrada debe tener uno de los siguientes subtipos:
+El tipo de medio de entrada debe tener uno de los subtipos siguientes:
 
 -   **MFVideoFormat \_ IYUV**
 -   **MFVideoFormat \_ NV12**
 -   **MFVideoFormat \_ YUY2**
 -   **MFVideoFormat \_ YV12**
 
-Para obtener más información sobre estos subtipos, consulte [GUID de subtipo de vídeo](video-subtype-guids.md).
+Para obtener más información sobre estos subtipos, vea [GUID de subtipo de vídeo](video-subtype-guids.md).
 
-El tipo de salida debe establecerse antes que el tipo de entrada. Hasta que se establezca el tipo de salida, el método [**IMFTransform:: SetInputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setinputtype) del codificador devuelve el **tipo de \_ transformación MF E \_ \_ \_ no \_ establecido**.
+El tipo de salida debe establecerse antes que el tipo de entrada. Hasta que se establece el tipo de salida, el método [**MFTransform::SetInputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setinputtype) del codificador devuelve **MF E TRANSFORM TYPE NOT \_ \_ \_ \_ \_ SET**.
 
 ## <a name="output-types"></a>Tipos de salida
 
-El codificador admite un solo subtipo de salida:
+El codificador admite un único subtipo de salida:
 
 -   **MFVideoFormat \_ H265**
 
-Establezca los siguientes atributos en el tipo de medio de salida.
+Establezca los atributos siguientes en el tipo de medio de salida.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mf-mt-major-type-attribute.md"><strong>MF_MT_MAJOR_TYPE</strong></a></td>
-<td>Tipo principal. Debe ser <strong>MFMediaType_Video</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-subtype-attribute.md"><strong>MF_MT_SUBTYPE</strong></a></td>
-<td>Subtipo de vídeo. Debe ser <strong>MFVideoFormat_HEVC</strong>.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-avg-bitrate-attribute.md"><strong>MF_MT_AVG_BITRATE</strong></a></td>
-<td>Velocidad media de bits codificada, en bits por segundo. Debe ser mayor que cero.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-frame-rate-attribute.md"><strong>MF_MT_FRAME_RATE</strong></a></td>
-<td>Velocidad de fotogramas.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-frame-size-attribute.md"><strong>MF_MT_FRAME_SIZE</strong></a></td>
-<td>Tamaño del marco.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-interlace-mode-attribute.md"><strong>MF_MT_INTERLACE_MODE</strong></a></td>
-<td>Modo entrelazado.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-video-profile.md">MF_MT_VIDEO_PROFILE</a></td>
-<td>Perfil de codificación H. 265.<br/> Los valores admitidos son: <br/>
-<ul>
-<li><strong>eAVEncH265VProfile_Main_420_8</strong></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-mpeg2-level-attribute.md"><strong>MF_MT_MPEG2_LEVEL</strong></a></td>
-<td>Especifica el nivel del vídeo codificado. Para obtener más información acerca de las restricciones de perfil y de nivel, consulte el anexo a de ITU-T H. 265.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-pixel-aspect-ratio-attribute.md"><strong>MF_MT_PIXEL_ASPECT_RATIO</strong></a></td>
-<td>Opcional. Especifica la relación de aspecto de píxeles. El valor predeterminado es 1:1.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | 
+|-----------|-------------|
+| <a href="mf-mt-major-type-attribute.md"><strong>MF_MT_MAJOR_TYPE</strong></a> | Tipo principal. Debe ser <strong>MFMediaType_Video</strong>. | 
+| <a href="mf-mt-subtype-attribute.md"><strong>MF_MT_SUBTYPE</strong></a> | Subtipo de vídeo. Debe ser <strong>MFVideoFormat_HEVC</strong>. | 
+| <a href="mf-mt-avg-bitrate-attribute.md"><strong>MF_MT_AVG_BITRATE</strong></a> | Velocidad de bits codificada media, en bits por segundo. Debe ser mayor que cero. | 
+| <a href="mf-mt-frame-rate-attribute.md"><strong>MF_MT_FRAME_RATE</strong></a> | Velocidad de fotogramas. | 
+| <a href="mf-mt-frame-size-attribute.md"><strong>MF_MT_FRAME_SIZE</strong></a> | Tamaño del marco. | 
+| <a href="mf-mt-interlace-mode-attribute.md"><strong>MF_MT_INTERLACE_MODE</strong></a> | Modo de interlace. | 
+| <a href="mf-mt-video-profile.md">MF_MT_VIDEO_PROFILE</a> | Perfil de codificación H.265.<br /> Los valores admitidos son: <br /><ul><li><strong>eAVEncH265VProfile_Main_420_8</strong></li></ul> | 
+| <a href="mf-mt-mpeg2-level-attribute.md"><strong>MF_MT_MPEG2_LEVEL</strong></a> | Especifica el nivel del vídeo codificado. Para obtener más información sobre las restricciones de perfil y nivel, consulte el anexo A de ITU-T H.265.<br /> | 
+| <a href="mf-mt-pixel-aspect-ratio-attribute.md"><strong>MF_MT_PIXEL_ASPECT_RATIO</strong></a> | Opcional. Especifica la relación de aspecto de píxeles. El valor predeterminado es 1:1. | 
+
 
 
 
  
 
-Una vez establecido el tipo de salida, el codificador de vídeo actualiza el tipo agregando el atributo de [**\_ encabezado de secuencia MF MT \_ MPEG \_ \_**](mf-mt-mpeg-sequence-header-attribute.md) . Este atributo contiene el encabezado de secuencia.
+Una vez establecido el tipo de salida, el codificador de vídeo actualiza el tipo agregando el atributo [**MF MT MPEG SEQUENCE \_ \_ \_ \_ HEADER.**](mf-mt-mpeg-sequence-header-attribute.md) Este atributo contiene el encabezado de secuencia.
 
-## <a name="supported-imftransform-methods"></a>Métodos de IMFTransform admitidos
+## <a name="supported-imftransform-methods"></a>Métodos DETRANSFORM admitidos
 
-Los siguientes métodos de la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) son compatibles con el codificador H. 265/HEVC:
+Los siguientes métodos de la [**interfaz DETRANSFORM son**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) compatibles con el codificador H.265/HEVC:
 
 -   [**GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes)
 -   [**GetInputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputavailabletype)
@@ -128,11 +88,11 @@ Los siguientes métodos de la interfaz [**IMFTransform**](/windows/desktop/api/m
 -   [**SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype)
 -   [**SetOutputBounds**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputbounds)
 
-Todos los demás métodos de [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) devolverán el error E \_ NOTIMPL.
+Todos los [**demás métodos DETRANSFORMTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) devolverán el error E \_ NOTIMPL.
 
-## <a name="supported-icodecapi-methods"></a>Métodos de ICodecAPI admitidos
+## <a name="supported-icodecapi-methods"></a>Métodos ICodecAPI admitidos
 
-Los siguientes métodos de la interfaz [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) son compatibles con el codificador H. 265/HEVC:
+Se admiten los métodos siguientes de la interfaz [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) para el codificador H.265/HEVC:
 
 -   [**IsSupported**](/windows/win32/api/strmif/nf-strmif-icodecapi-issupported)
 -   [**SetValue**](/windows/win32/api/strmif/nf-strmif-icodecapi-setvalue)
@@ -140,93 +100,33 @@ Los siguientes métodos de la interfaz [**ICodecAPI**](/windows/win32/api/strmif
 -   [**GetParameterRange**](/windows/win32/api/strmif/nf-strmif-icodecapi-getparameterrange)
 -   [**GetParameterValues**](/windows/win32/api/strmif/nf-strmif-icodecapi-getparametervalues)
 
-Todos los demás métodos de [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) devolverán el error E \_ NOTIMPL.
+Todos los demás [**métodos ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) devolverán el error E \_ NOTIMPL.
 
-## <a name="codec-properties"></a>Propiedades de códec
+## <a name="codec-properties"></a>Propiedades del códec
 
-El codificador H. 265 implementa la interfaz [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) para establecer los parámetros de codificación. Admite las siguientes propiedades.
+El codificador H.265 implementa la interfaz [**ICodecAPI**](/windows/win32/api/strmif/nn-strmif-icodecapi) para establecer parámetros de codificación. Admite las siguientes propiedades.
 
-Para conocer los requisitos de códec para la certificación del codificador de HCK, consulte la sección sobre el **codificador de hardware certificado** a continuación.
+Para ver los requisitos de códec para la certificación del codificador HCK, consulte la **sección Codificador de hardware certificado a** continuación.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Propiedad</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/avenccommonratecontrolmode-property"><strong>CODECAPI_AVEncCommonRateControlMode</strong></a></td>
-<td>Establece el modo de control de velocidad. Los modos admitidos son:<br/>
-<ul>
-<li><strong>eAVEncCommonRateControlMode_CBR</strong></li>
-<li><strong>eAVEncCommonRateControlMode_Quality</strong></li>
-</ul>
-Si se especifican otros modos, se usará el control de velocidad de <strong>eAVEncCommonRateControlMode_CBR</strong> .<br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/DirectShow/avenccommonmeanbitrate-property">CODECAPI_AVEncCommonMeanBitRate</a></td>
-<td>Establece la velocidad de bits promedio para el flujo de bits codificado, en bits por segundo. <br/> El intervalo válido es [1... 2 ³ ² – 1]. <br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/avenccommonbuffersize-property">CODECAPI_AVEncCommonBufferSize</a></td>
-<td>Establece el tamaño del búfer, en bytes, para la codificación de velocidad de bits constante (CBR).<br/> El intervalo válido es [1... 2 ³ ² – 1]. <br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/DirectShow/avenccommonmaxbitrate-property">CODECAPI_AVEncCommonMaxBitRate</a></td>
-<td>Establece la velocidad de bits máxima para los modos de control de velocidad que permiten una velocidad de bits máxima. <br/> El intervalo válido es [1... 2 ³ ² – 1]. <br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/avencmpvgopsize-property">CODECAPI_AVEncMPVGOPSize</a></td>
-<td>Establece el número de imágenes desde un encabezado GOP hasta el siguiente, incluido el delimitador inicial, pero no el siguiente. <br/> El intervalo válido es [0... 2 ³ ² – 1]. Si el valor es cero, el codificador selecciona el tamaño de GOP. El valor predeterminado es cero. <br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="codecapi-avlowlatencymode.md">CODECAPI_AVLowLatencyMode</a></td>
-<td>Habilita o deshabilita el modo de baja latencia. <br/> Se trata de un valor de VT_BOOL.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/DirectShow/avenccommonqualityvsspeed-property">CODECAPI_AVEncCommonQualityVsSpeed</a></td>
-<td>Establece el equilibrio de calidad/velocidad. Este valor afecta al modo en que el codificador realiza varias operaciones de codificación, como la compensación de movimiento. En los niveles de complejidad más altos, el codificador se ejecuta más lentamente, pero genera una mejor calidad a la misma velocidad de bits. <br/> El intervalo válido es de 0 a 100. Internamente, este valor se asigna a un conjunto más pequeño de niveles de calidad/velocidad que admite el codificador.<br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="codecapi-avencvideoforcekeyframe.md">CODECAPI_AVEncVideoForceKeyFrame</a></td>
-<td>Obliga al codificador a codificar el siguiente fotograma como un fotograma clave.<br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="codecapi-avencvideoencodeqp.md">CODECAPI_AVEncVideoEncodeQP</a></td>
-<td>Cuando se establece esta propiedad, el codificador usará el QP especificado para codificar el fotograma siguiente y todos los fotogramas posteriores hasta que se especifique un nuevo QP. <br/> Intervalo válido: 0 – 51, ambos incluidos <br/></td>
-</tr>
-<tr class="even">
-<td><a href="codecapi-avencvideominqp.md">CODECAPI_AVEncVideoMinQP</a></td>
-<td>Esta propiedad establecerá un límite en el valor de QP mínimo que el codificador puede utilizar durante RateControl CBR.<br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="codecapi-avencvideomaxqp.md">CODECAPI_AVEncVideoMaxQP</a></td>
-<td>Esta propiedad establecerá un límite en el valor de QP máximo que el codificador puede utilizar durante RateControl CBR.<br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="even">
-<td><a href="codecapi-videoencoderdisplaycontenttype.md">CODECAPI_VideoEncoderDisplayContentType</a></td>
-<td>Establece si el contenido está en pantalla completa, en lugar de en el contenido de pantalla que podría tener una ventana de vídeo más pequeña o no tener ningún vídeo.<br/> Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-<tr class="odd">
-<td><a href="codecapi-avencnumworkerthreads.md">CODECAPI_AVEncNumWorkerThreads</a></td>
-<td>Establece el número de subprocesos utilizados para realizar la operación de compresión. El codificador dividirá el marco en mosaicos de forma que el número de subprocesos sea igual al número de mosaicos.<br/>
-<ul>
-<li>El número de procesadores lógicos. El número de subprocesos debe ser menor o igual que el número de procesadores lógicos.</li>
-<li>Tamaño del marco. El tamaño de un icono debe ser mayor o igual que 265x64 píxeles.</li>
-<li>Paridad. El número de subprocesos debe ser un valor par. Si el valor especificado es impar, se utilizará el siguiente valor par inferior.</li>
-</ul>
-Se trata de un valor de VT_UI4.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Propiedad | Descripción | 
+|----------|-------------|
+| <a href="/windows/desktop/DirectShow/avenccommonratecontrolmode-property"><strong>CODECAPI_AVEncCommonRateControlMode</strong></a> | Establece el modo de control de velocidad. Los modos admitidos son:<br /><ul><li><strong>eAVEncCommonRateControlMode_CBR</strong></li><li><strong>eAVEncCommonRateControlMode_Quality</strong></li></ul>Si se especifican otros modos, <strong>se usará eAVEncCommonRateControlMode_CBR</strong> de velocidad.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="/windows/desktop/DirectShow/avenccommonmeanbitrate-property">CODECAPI_AVEncCommonMeanBitRate</a> | Establece la velocidad de bits media de la secuencia de bits codificada, en bits por segundo. <br /> El intervalo válido es [1 ... 2):1]. <br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="/windows/desktop/DirectShow/avenccommonbuffersize-property">CODECAPI_AVEncCommonBufferSize</a> | Establece el tamaño del búfer, en bytes, para la codificación de velocidad de bits constante (CBR).<br /> El intervalo válido es [1 ... 2):1]. <br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="/windows/desktop/DirectShow/avenccommonmaxbitrate-property">CODECAPI_AVEncCommonMaxBitRate</a> | Establece la velocidad de bits máxima para los modos de control de velocidad que permiten una velocidad de bits máxima. <br /> El intervalo válido es [1 ... 2):1]. <br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="/windows/desktop/DirectShow/avencmpvgopsize-property">CODECAPI_AVEncMPVGOPSize</a> | Establece el número de imágenes de un encabezado GOP al siguiente, incluido el delimitador inicial, pero no el siguiente. <br /> El intervalo válido es [0 ... 2):1]. Si es cero, el codificador selecciona el tamaño de GOP. El valor predeterminado es cero. <br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avlowlatencymode.md">CODECAPI_AVLowLatencyMode</a> | Habilita o deshabilita el modo de baja latencia. <br /> Se trata de un VT_BOOL valor.<br /> | 
+| <a href="/windows/desktop/DirectShow/avenccommonqualityvsspeed-property">CODECAPI_AVEncCommonQualityVsSpeed</a> | Establece la diferencia entre calidad y velocidad. Este valor afecta a la forma en que el codificador realiza varias operaciones de codificación, como la compensación de movimiento. En niveles de complejidad más altos, el codificador se ejecuta más lentamente, pero genera una mejor calidad a la misma velocidad de bits. <br /> El intervalo válido es de 0 a 100. Internamente, este valor se asigna a un conjunto más pequeño de niveles de calidad y velocidad admitidos por el codificador.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avencvideoforcekeyframe.md">CODECAPI_AVEncVideoForceKeyFrame</a> | Fuerza al codificador a codificar el fotograma siguiente como fotograma clave.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avencvideoencodeqp.md">CODECAPI_AVEncVideoEncodeQP</a> | Cuando se establece esta propiedad, el codificador usará el QP especificado para codificar el fotograma siguiente y todos los fotogramas posteriores hasta que se especifique un nuevo QP. <br /> Intervalo válido: 0–51, ambos inclusive <br /> | 
+| <a href="codecapi-avencvideominqp.md">CODECAPI_AVEncVideoMinQP</a> | Esta propiedad establecerá un límite en el QP mínimo que el codificador puede usar durante el control de velocidad CBR.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avencvideomaxqp.md">CODECAPI_AVEncVideoMaxQP</a> | Esta propiedad establecerá un límite en el QP máximo que el codificador puede usar durante el control de velocidad CBR.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-videoencoderdisplaycontenttype.md">CODECAPI_VideoEncoderDisplayContentType</a> | Establece si el contenido es vídeo de pantalla completa, en lugar de contenido de pantalla que podría tener una ventana de vídeo más pequeña o no tener ningún vídeo.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avencnumworkerthreads.md">CODECAPI_AVEncNumWorkerThreads</a> | Establece el número de subprocesos usados para realizar la operación de compresión. El codificador dividirá el marco en mosaicos de forma que el número de subprocesos sea igual al número de iconos.<br /><ul><li>Número de procesadores lógicos. El número de subprocesos debe ser menor o igual que el número de procesadores lógicos.</li><li>Tamaño del marco. El tamaño de un icono debe ser mayor o igual que 265 x 64 píxeles.</li><li>Paridad. El número de subprocesos debe ser un valor par. Si el valor especificado es impar, se usará el siguiente valor par inferior.</li></ul>Se trata de VT_UI4 valor.<br /> | 
+
 
 
 
@@ -234,9 +134,9 @@ Se trata de un valor de VT_UI4.<br/></td>
 
 ## <a name="certified-hardware-encoder"></a>Codificador de hardware certificado
 
-Si hay un codificador de hardware certificado, se usará generalmente en lugar del codificador del sistema de bandeja de entrada para Media Foundation escenarios relacionados. Los codificadores certificados son necesarios para admitir un conjunto determinado de propiedades de **ICodecAPI** y, opcionalmente, admiten otro conjunto de propiedades. El proceso de certificación debe garantizar que las propiedades necesarias se admiten correctamente y, si se admite una propiedad opcional, que también se admite correctamente.
+Si hay un codificador de hardware certificado, generalmente se usará en lugar del codificador del sistema de bandeja de entrada para Media Foundation escenarios relacionados. Los codificadores certificados son necesarios para admitir un determinado conjunto de propiedades **ICodecAPI** y, opcionalmente, pueden admitir otro conjunto de propiedades. El proceso de certificación debe garantizar que las propiedades necesarias se admiten correctamente y, si se admite una propiedad opcional, que también se admite correctamente.
 
-El siguiente es el conjunto de propiedades **ICodecAPI** necesarias y opcionales para los codificadores para pasar la certificación del codificador HCK.
+A continuación se muestra el conjunto de propiedades **ICodecAPI** obligatorias y opcionales para que los codificadores pasen la certificación del codificador HCK.
 
 -   [CODECAPI \_ AVEncCommonRateControlMode](../directshow/avenccommonratecontrolmode-property.md)
 -   [CODECAPI \_ AVEncCommonQuality](../directshow/avenccommonquality-property.md)
@@ -250,19 +150,19 @@ El siguiente es el conjunto de propiedades **ICodecAPI** necesarias y opcionales
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                              |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Archivo DLL<br/>                      | <dl> <dt>Mfh265enc.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Objetos Codec](codecobjects.md)
+[Objetos de códec](codecobjects.md)
 </dt> </dl>
 
  
