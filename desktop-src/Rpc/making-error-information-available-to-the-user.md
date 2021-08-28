@@ -1,19 +1,19 @@
 ---
 title: Hacer que la información de error esté disponible para el usuario
-description: Cuando un autor de llamada recibe un error y debe notificar al usuario sobre el error, se debe comprobar la presencia de información de error extendida y, si se encuentra, el llamador debe poner la información resultante a disposición del usuario.
+description: Cuando un llamador recibe un error y necesita notificar al usuario del error, se debe comprobar la presencia de información de error extendida y, si se encuentra, el autor de la llamada debe hacer que la información resultante esté disponible para el usuario.
 ms.assetid: 18689280-7124-46e4-9341-ad8d0c1705db
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18386dbebd443aced4f5680922549c0ecb0eba55
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c334b0d5b5044a13b507945cfa9d8ac97b67eb120f496f83c080d2b79b857f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928580"
 ---
 # <a name="making-error-information-available-to-the-user"></a>Hacer que la información de error esté disponible para el usuario
 
-Cuando un autor de llamada recibe un error y debe notificar al usuario sobre el error, se debe comprobar la presencia de información de error extendida y, si se encuentra, el llamador debe poner la información resultante a disposición del usuario. El siguiente fragmento de código es un ejemplo de cómo hacer que esta información esté disponible para el usuario:
+Cuando un llamador recibe un error y necesita notificar al usuario del error, se debe comprobar la presencia de información de error extendida y, si se encuentra, el autor de la llamada debe hacer que la información resultante esté disponible para el usuario. El fragmento de código siguiente es un ejemplo de cómo hacer que esta información esté disponible para el usuario:
 
 
 ```C++
@@ -163,11 +163,11 @@ if (status)
 
 
 
-En este ejemplo, la información de error extendida se vuelca en la consola, pero el componente puede ponerla a disposición del usuario de cualquier otra manera. Si el componente decide guardar la información en el almacenamiento persistente y mostrarla más adelante, a menudo es más fácil usar el formato binario disponible mediante las llamadas a la función [**RpcErrorSaveErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorsaveerrorinfo) y [**RpcErrorLoadErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorloaderrorinfo) .
+En este ejemplo, la información de error extendida se vuelca en la consola, pero el componente puede hacer que esté disponible para el usuario de cualquier otra manera. Si el componente decide guardar la información en el almacenamiento persistente y mostrarla más adelante, suele ser más fácil usar el formato binario que las llamadas de función [**RpcErrorSaveErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorsaveerrorinfo) y [**RpcErrorLoadErrorInfo**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcerrorloaderrorinfo) están disponibles.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI AutochkSetting de Win32 representa la configuración de la operación de comprobación de un disco.
+description: La clase \_ WMI Win32 AutochkSetting representa la configuración de la operación de comprobación automática de un disco.
 ms.assetid: 637f4d5d-f2f0-4fe0-bbde-7804156979b7
 ms.tgt_platform: multiple
-title: Win32_AutochkSetting (clase)
+title: Win32_AutochkSetting clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ea3da60cd4075aa2e36285d30950d3a105d59354
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6cccf1877d8812e1fee4816e80189b8404d4090a1ef15f45e840fdd6e58d8ae7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020333"
 ---
-# <a name="win32_autochksetting-class"></a>\_Clase Win32 AutochkSetting
+# <a name="win32_autochksetting-class"></a>Clase \_ AutochkSetting de Win32
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ AutochkSetting de Win32** representa la configuración de la operación de comprobación de un disco.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ Win32 AutochkSetting representa** la configuración de la operación de comprobación automática de un disco.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -52,7 +52,7 @@ La **clase \_ AutochkSetting de Win32** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ AutochkSetting de Win32** tiene estas propiedades.
+La **clase \_ Win32 AutochkSetting** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de [**la \_ configuración de CIM**](cim-setting.md).
+Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
 
 </dd> <dt>
 
@@ -98,32 +98,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("SettingId"), [**clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("SettingId"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-IDENTIFICADOR que se usa como parte de una clave para el objeto actual.
+Identificador que se usa como parte de una clave para el objeto actual.
 
 </dd> <dt>
 
 **UserInputDelay**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKLM \\ \\ CurrentControlSet \\ \\ control \\ \\ Session Manager \| AutoChkTimeOut"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("seconds")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HKLM \\ \\ CurrentControlSet \\ \\ Control Session Manager \\ \\ \| AutoChkTimeOut"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("segundos")
 </dt> </dl>
 
-Retraso de entrada del usuario para la comprobación.
+Retraso de entrada del usuario para la comprobación automática.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ AutochkSetting de Win32** se deriva de la [**\_ configuración de CIM**](cim-setting.md).
+La **clase \_ AutochkSetting de Win32** se deriva de [**cim \_ setting**](cim-setting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -133,8 +133,8 @@ La **clase \_ AutochkSetting de Win32** se deriva de la [**\_ configuración de 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -146,7 +146,7 @@ La **clase \_ AutochkSetting de Win32** se deriva de la [**\_ configuración de 
 [**Configuración de CIM \_**](cim-setting.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Destruye el subárbol de fotogramas bajo la raíz, incluida la raíz.
 ms.assetid: 0bbb529f-01d8-430b-a72b-4af5f7a71253
-title: Función D3DXFrameDestroy (D3dx9anim. h)
+title: Función D3DXFrameDestroy (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f1c0809ff61abec6f55564ca17a116ad4c826bca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4e20e878b402ad0b8c4d0a9b721cd9300154305b2a06426564d1639ceddd7a92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988485"
 ---
-# <a name="d3dxframedestroy-function"></a>D3DXFrameDestroy función)
+# <a name="d3dxframedestroy-function"></a>Función D3DXFrameDestroy
 
 Destruye el subárbol de fotogramas bajo la raíz, incluida la raíz.
 
@@ -41,7 +41,7 @@ HRESULT D3DXFrameDestroy(
 
 <dl> <dt>
 
-*pFrameRoot* \[ de\]
+*pFrameRoot* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)**
@@ -50,12 +50,12 @@ Puntero al nodo raíz.
 
 </dd> <dt>
 
-*pAlloc* \[ de\]
+*pAlloc* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXALLOCATEHIERARCHY**](id3dxallocatehierarchy.md)**
 
-Interfaz de asignación usada para desasignar nodos de la jerarquía de fotogramas.
+Interfaz de asignación que se usa para desasignar nodos de la jerarquía de fotogramas.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Interfaz de asignación usada para desasignar nodos de la jerarquía de fotogram
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

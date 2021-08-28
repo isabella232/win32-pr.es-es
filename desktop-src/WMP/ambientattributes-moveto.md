@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. moveTo
-description: El método moveTo mueve el control a una nueva ubicación en una velocidad lineal.
+title: AmbientAttributes.moveTo
+description: El método moveTo mueve el control a una nueva ubicación a una velocidad lineal.
 ms.assetid: 8670aa7b-a5c1-4d93-9f48-452bc53e65e6
 keywords:
-- AmbientAttributes. moveTo Windows Media Player
+- AmbientAttributes.moveTo Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af481526c0923c527bb14aa4700a6c6fe5ea3613
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf05beedad4fe4abb839e957519384b58102253cd0ab6a292d629df23a7bef98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055053"
 ---
-# <a name="ambientattributesmoveto"></a>AmbientAttributes. moveTo
+# <a name="ambientattributesmoveto"></a>AmbientAttributes.moveTo
 
-El método **moveTo** mueve el control a una nueva ubicación en una velocidad lineal.
+El **método moveTo** mueve el control a una nueva ubicación a una velocidad lineal.
 
 ``` syntax
         elementID.moveTo(newLeft, newTop, time)
@@ -34,21 +34,21 @@ El método **moveTo** mueve el control a una nueva ubicación en una velocidad l
 <span id="newLeft"></span><span id="newleft"></span><span id="NEWLEFT"></span>*newLeft*
 </dt> <dd>
 
-**Número** (**largo**) que especifica el nuevo valor para el atributo **izquierdo** del control.
+**Number** (**long**) que especifica el nuevo valor para el **atributo** izquierdo del control.
 
 </dd> <dt>
 
 <span id="newTop"></span><span id="newtop"></span><span id="NEWTOP"></span>*newTop*
 </dt> <dd>
 
-**Número** (**largo**) que especifica el nuevo valor para el atributo **superior** del control.
+**Number** (**long**) que especifica el nuevo valor para el **atributo** superior del control.
 
 </dd> <dt>
 
-<span id="time"></span><span id="TIME"></span>*tiempo*
+<span id="time"></span><span id="TIME"></span>*hora*
 </dt> <dd>
 
-**Número** (**largo**) que especifica el tiempo, en milisegundos, que tarda el control en moverse a su nueva ubicación.
+**Number** (**long**) que especifica el tiempo, en milisegundos, que tarda el control en moverse a su nueva ubicación.
 
 </dd> </dl>
 
@@ -56,19 +56,19 @@ El método **moveTo** mueve el control a una nueva ubicación en una velocidad l
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método es útil para los elementos de la **subvista** animada (por ejemplo, si el usuario hace clic en una bandeja y los controles se deslizan hacia abajo).
+Este método es útil para elementos **ANIMADOS SUBVIEW** (por ejemplo, si el usuario hace clic en una bandeja y los controles se deslizan hacia abajo).
 
-Este método crea un movimiento lineal al mover el control. Esto difiere de **Slider**, que crea un movimiento no lineal.
+Este método crea un movimiento lineal al mover el control. Esto difiere de **slideTo**, que crea un movimiento no lineal.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -76,13 +76,13 @@ Este método crea un movimiento lineal al mover el control. Esto difiere de **Sl
 
 <dl> <dt>
 
-[**Atributos de ambiente**](ambient-attributes.md)
+[**Atributos ambientales**](ambient-attributes.md)
 </dt> <dt>
 
-[**AmbientAttributes. Left**](ambientattributes-left.md)
+[**AmbientAttributes.left**](ambientattributes-left.md)
 </dt> <dt>
 
-[**AmbientAttributes. slideto**](ambientattributes-slideto.md)
+[**AmbientAttributes.slideTo**](ambientattributes-slideto.md)
 </dt> <dt>
 
 [**AmbientAttributes.top**](ambientattributes-top.md)

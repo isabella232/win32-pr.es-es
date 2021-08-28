@@ -1,7 +1,7 @@
 ---
-description: Registre los datos del fotograma clave de escala, rotación y traducción (SRT) de una animación.
+description: Registre los datos de fotogramas clave de escala, rotación y traducción (SRT) de una animación.
 ms.assetid: 10e5b391-1529-4952-abbb-ef560a35d667
-title: 'ID3DXKeyframedAnimationSet:: RegisterAnimationSRTKeys (método) (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::RegisterAnimationSRTKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3098c8e779834daf273d5e85469e3f45b01cb039
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 07ec4db0bb02eb0a177375fc37af67264f1368b2ab952c0b170580112e4dbf40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987375"
 ---
-# <a name="id3dxkeyframedanimationsetregisteranimationsrtkeys-method"></a>ID3DXKeyframedAnimationSet:: RegisterAnimationSRTKeys (método)
+# <a name="id3dxkeyframedanimationsetregisteranimationsrtkeys-method"></a>Método ID3DXKeyframedAnimationSet::RegisterAnimationSRTKeys
 
-Registre los datos del fotograma clave de escala, rotación y traducción (SRT) de una animación.
+Registre los datos de fotogramas clave de escala, rotación y traducción (SRT) de una animación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,70 +47,70 @@ HRESULT RegisterAnimationSRTKeys(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero al nombre de la animación.
+Puntero al nombre de animación.
 
 </dd> <dt>
 
-*NumScaleKeys* \[ de\]
+*NumScaleKeys* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de claves de escala.
+Número de claves de escalado.
 
 </dd> <dt>
 
-*NumRotationKeys* \[ de\]
+*NumRotationKeys* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de claves de rotación.
 
 </dd> <dt>
 
-*NumTranslationKeys* \[ de\]
+*NumTranslationKeys* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de claves de traducción.
 
 </dd> <dt>
 
-*pScaleKeys* \[ de\]
+*pScaleKeys* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) \***
 
-Dirección de un puntero a una matriz asignada por el usuario de vectores de [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) que el método rellena con datos de escala.
+Dirección de un puntero a una matriz asignada por el usuario de vectores [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) que el método rellena con datos de escala.
 
 </dd> <dt>
 
-*pRotationKeys* \[ de\]
+*pRotationKeys* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**LPD3DXKEY \_ cuaternión**](d3dxkey-quaternion.md) \***
+Tipo: **const [**LPD3DXKEY \_ QUATERNION**](d3dxkey-quaternion.md) \***
 
-Dirección de un puntero a una matriz asignada por el usuario de los cuaterniones [**D3DXKEY \_ cuaternión**](d3dxkey-quaternion.md) que el método rellena con datos de rotación.
+Dirección de un puntero a una matriz asignada por el usuario de [**\_ cuaterniones D3DXKEY QUATERNION**](d3dxkey-quaternion.md) que el método rellena con datos de rotación.
 
 </dd> <dt>
 
-*pTranslationKeys* \[ de\]
+*pTranslationKeys* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) \***
 
-Dirección de un puntero a una matriz asignada por el usuario de vectores de [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) que el método rellena con datos de traducción.
+Dirección de un puntero a una matriz asignada por el usuario de vectores [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md) que el método rellena con datos de traducción.
 
 </dd> <dt>
 
-*pAnimationIndex* \[ enuncia\]
+*pAnimationIndex* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
@@ -123,7 +123,7 @@ Devuelve el índice de animación.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL
 
 ## <a name="requirements"></a>Requisitos
 
@@ -131,8 +131,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

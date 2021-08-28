@@ -1,11 +1,11 @@
 ---
-title: GPC-File-sys-Path (atributo)
+title: Atributo GPC-File-Sys-Path
 description: True si el objeto está habilitado.
 ms.assetid: 815d8191-d282-4f53-9109-c18d7a9b0a34
 ms.tgt_platform: multiple
 keywords:
-- GPC-archivo-sys-path atributo AD Schema
-- gPCFileSysPath esquema de AD de atributos
+- Esquema de AD del atributo GPC-File-Sys-Path
+- Esquema de AD del atributo gPCFileSysPath
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b56d03d072dfbe1472dc88835d581975f992c0f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 24f4835bd4840c6566c9e93dfcadc78ae79b6ff29c961ed057955d5058827118
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961354"
 ---
-# <a name="gpc-file-sys-path-attribute"></a>GPC-File-sys-Path (atributo)
+# <a name="gpc-file-sys-path-attribute"></a>Atributo GPC-File-Sys-Path
 
 **True** si el objeto está habilitado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | GPC-File-sys-path                           |
-| Nombre para mostrar de LDAP | gPCFileSysPath                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | GPC-File-Sys-Path                           |
+| Ldap-Display-Name | gPCFileSysPath                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.894                      |
-| System-ID-GUID    | f30e3bc1-9ff0-11d1-b603-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f30e3bc1-9ff0-11d1-b603-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,20 +53,20 @@ ms.locfileid: "104536088"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ ms.locfileid: "104536088"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ ms.locfileid: "104536088"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ ms.locfileid: "104536088"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ ms.locfileid: "104536088"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ ms.locfileid: "104536088"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Clases usadas en        | [**Contenedor de directivas de grupo**](c-grouppolicycontainer.md)<br/> |
+| Clases usadas en        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 

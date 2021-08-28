@@ -4,45 +4,45 @@ ms.assetid: ee55364e-8ffe-4a78-a49a-250756561770
 title: Valores devueltos de administración de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd2c67b79d03896960f7eb9a8631e1cd268284e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf20090ed4bbdfbeebb8fd77eafa8b9430df5aa816463ee32adb25116c7c3bd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894273"
 ---
 # <a name="security-management-return-values"></a>Valores devueltos de administración de seguridad
 
 Los valores devueltos de administración de seguridad incluyen los siguientes:
 
--   [Valores devueltos adjuntos](#attachment-return-values)
+-   [Valores devueltos de datos adjuntos](#attachment-return-values)
 -   [Valores devueltos de la función de directiva LSA](#lsa-policy-function-return-values)
 
-## <a name="attachment-return-values"></a>Valores devueltos adjuntos
+## <a name="attachment-return-values"></a>Valores devueltos de datos adjuntos
 
-El conjunto de herramientas de configuración de seguridad admite los siguientes códigos de retorno de **SCESTATUS** . Estos valores son devueltos por las funciones de soporte de datos adjuntos y las funciones implementadas al escribir un motor de datos adjuntos o un complemento.
+El conjunto de herramientas configuración de seguridad admite los siguientes códigos **de retorno SCESTATUS.** Estos valores los devuelven las funciones de compatibilidad de datos adjuntos y las funciones implementadas al escribir un motor de datos adjuntos o un complemento.
 
 
 
-| Value                            | Descripción                                                                                      |
+| Valor                            | Descripción                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------|
-| SCESTATUS \_ correcto               | La función se ha realizado correctamente.                                                                          |
-| SCESTATUS \_ parámetro no válido \_    | Uno de los parámetros pasados a la función no era válido.                                      |
-| \_ \_ no \_ se encontró el registro SCESTATUS    | No se encontró el registro especificado en la base de datos de seguridad.                                     |
-| SCESTATUS \_ datos no válidos \_         | Error de la función porque algunos datos no eran válidos.                                             |
-| \_existe el objeto SCESTATUS \_        | El objeto ya existe.                                                                       |
-| búfer de SCESTATUS \_ \_ demasiado \_ pequeño    | El búfer que se pasa a la función para recibir datos no es lo suficientemente grande como para recibir todos los datos. |
-| \_ \_ no \_ se encontró el perfil SCESTATUS   | No se encontró el perfil especificado.                                                             |
-| SCESTATUS \_ \_ formato incorrecto           | El formato no es válido.                                                                         |
-| \_no \_ hay \_ recursos suficientes para SCESTATUS | Memoria insuficiente.                                                                    |
-| SCESTATUS \_ acceso \_ denegado        | El autor de la llamada no tiene privilegios suficientes para completar esta acción.                          |
-| SCESTATUS no se pudo \_ \_ eliminar          | La función no puede eliminar el elemento especificado.                                                   |
-| \_desbordamiento de prefijo SCESTATUS \_      | Se produjo un desbordamiento de prefijo.                                                                      |
-| SCESTATUS \_ otro \_ error          | Error no especificado.                                                               |
-| SCESTATUS \_ ya se está \_ ejecutando      | El servicio ya se está ejecutando.                                                                  |
-| el \_ servicio SCESTATUS \_ no es \_ compatible | No se admite el servicio especificado.                                                          |
-| SCESTATUS \_ mod \_ no \_ encontrado       | No se puede encontrar o cargar una DLL del motor de datos adjuntos en el registro.      |
-| \_excepción \_ de SCESTATUS en el \_ servidor | Se produjo una excepción en el servidor.                                                             |
+| SCESTATUS \_ SUCCESS               | La función se ha realizado correctamente.                                                                          |
+| PARÁMETRO SCESTATUS \_ INVALID \_    | Uno de los parámetros pasados a la función no era válido.                                      |
+| REGISTRO SCESTATUS \_ \_ NO \_ ENCONTRADO    | No se encontró el registro especificado en la base de datos de seguridad.                                     |
+| DATOS NO \_ VÁLIDOS DE SCESTATUS \_         | Error en la función porque algunos datos no son válidos.                                             |
+| EXISTE EL OBJETO SCESTATUS \_ \_        | El objeto ya existe.                                                                       |
+| BÚFER SCESTATUS \_ \_ DEMASIADO \_ PEQUEÑO    | El búfer pasado a la función para recibir datos no es lo suficientemente grande como para recibir todos los datos. |
+| PERFIL DE SCESTATUS \_ \_ NO \_ ENCONTRADO   | No se encontró el perfil especificado.                                                             |
+| FORMATO NO CORRECTO DE SCESTATUS \_ \_           | El formato no es válido.                                                                         |
+| SCESTATUS \_ NO ES SUFICIENTE \_ \_ RECURSO | No hay memoria suficiente.                                                                    |
+| ACCESO DENEGADO DE SCESTATUS \_ \_        | El autor de la llamada no tiene privilegios suficientes para completar esta acción.                          |
+| SCESTATUS \_ CANT \_ DELETE          | La función no puede eliminar el elemento especificado.                                                   |
+| DESBORDAMIENTO DE PREFIJO SCESTATUS \_ \_      | Se produjo un desbordamiento de prefijo.                                                                      |
+| SCESTATUS \_ OTHER \_ ERROR          | Error no especificado.                                                               |
+| SCESTATUS \_ YA EN \_ EJECUCIÓN      | El servicio ya se está ejecutando.                                                                  |
+| NO SE ADMITE EL SERVICIO SCESTATUS \_ \_ \_ | No se admite el servicio especificado.                                                          |
+| SCESTATUS \_ MOD \_ NO \_ ENCONTRADO       | No se encuentra o no se puede cargar un archivo DLL del motor de datos adjuntos que aparece en el registro.      |
+| EXCEPCIÓN SCESTATUS \_ \_ EN EL \_ SERVIDOR | Se produjo una excepción en el servidor.                                                             |
 
 
 
@@ -50,26 +50,26 @@ El conjunto de herramientas de configuración de seguridad admite los siguientes
 
 ## <a name="lsa-policy-function-return-values"></a>Valores devueltos de la función de directiva LSA
 
-La mayoría de las funciones de directiva de [*autoridad de seguridad local*](/windows/desktop/SecGloss/l-gly) (LSA) devuelven un valor de NTSTATUS para indicar si se ha realizado correctamente o no. Los distintos valores de NTSTATUS se definen en NTSTATUS. h, que se distribuye con el kit de desarrollo de controladores (DDK) de Microsoft Windows.
+La [*mayoría de las funciones*](/windows/desktop/SecGloss/l-gly) de directiva de autoridad de seguridad local (LSA) devuelven un valor NTSTATUS para indicar que la operación se ha hecho correctamente o no. Los distintos valores NTSTATUS se definen en Ntstatus.h, que se distribuye con microsoft Windows Driver Development Kit (DDK).
 
-Para convertir un valor de devolución de NTSTATUS en un código de error de Windows, utilice la función [**LsaNtStatusToWinError**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsantstatustowinerror) .
+Para convertir un valor devuelto NTSTATUS en un Windows de error, use la función [**LsaNtStatusToWinError.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsantstatustowinerror)
 
-En la tabla siguiente se enumeran los valores de NTSTATUS que podrían ser devueltos por cualquier función de LSA. (Las secciones de valores devueltos de algunas de las funciones de LSA muestran códigos de error adicionales que la función puede devolver). En esta tabla también se muestra el código de error de Windows que corresponde a cada valor de NTSTATUS.
+En la tabla siguiente se enumeran los valores NTSTATUS que puede devolver cualquier función LSA. (Las secciones de valor devuelto para algunas de las funciones LSA enumera códigos de error adicionales que la función podría devolver). En esta tabla también se muestra Windows código de error que corresponde a cada valor NTSTATUS.
 
 
 
-| Código NTSTATUS (código de error de Windows)                                        | Significado                                                                                                                                 |
+| Código NTSTATUS (Windows de error)                                        | Significado                                                                                                                                 |
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| ESTADO \_ correcto (error \_ correcto)<br/>                               | La función se realizó correctamente.                                                                                                            |
-| ESTADO \_ acceso \_ denegado (error de \_ acceso \_ denegado)<br/>                 | El autor de la llamada no tiene el acceso adecuado para completar la operación.                                                                  |
-| Estado de \_ recursos insuficientes \_ (error \_ sin \_ recursos del sistema \_ )<br/> | No hay suficientes recursos del sistema (como la memoria para asignar búferes) para completar la llamada.                                        |
-| ESTADO \_ error interno de la \_ base de BD (error interno de la \_ base de \_ \_ BD \_ )<br/>       | La base de datos LSA contiene una incoherencia interna.                                                                                    |
-| ESTADO \_ de \_ identificador no válido (error de \_ identificador no válido \_ )<br/>               | Indica que un objeto o un identificador de RPC no es válido en el [*contexto*](/windows/desktop/SecGloss/c-gly) utilizado.     |
-| estado \_ estado \_ del servidor no válido \_ (error de \_ Estado de servidor no válido \_ \_ )<br/> | Indica que el servidor LSA está deshabilitado actualmente.                                                                                         |
-| ESTADO \_ parámetro no válido \_ (error de \_ parámetro no válido \_ )<br/>         | Uno de los parámetros no es válido.                                                                                                     |
-| \_no tiene \_ este \_ privilegio de estado ( \_ no hay ningún \_ privilegio de este tipo \_ )<br/>       | Indica que un privilegio especificado no existe.                                                                                         |
-| \_ \_ no se encontró el nombre de objeto de estado \_ \_ (archivo de error \_ \_ no \_ encontrado)<br/>     | No se encontró un objeto en la base de datos de directivas de LSA. Es posible que el objeto se haya especificado por SID o por nombre, en función de su tipo. |
-| ESTADO \_ incorrecto (error de generación de error \_ \_ )<br/>                     | Error genérico, como un error de conexión RPC.                                                                                        |
+| ESTADO \_ CORRECTO (ERROR \_ CORRECTO)<br/>                               | La función se ha realizado correctamente.                                                                                                            |
+| ACCESO DE \_ ESTADO \_ DENEGADO (ACCESO DE ERROR \_ \_ DENEGADO)<br/>                 | El autor de la llamada no tiene el acceso adecuado para completar la operación.                                                                  |
+| RECURSOS \_ \_ INSUFICIENTES DE ESTADO (ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA)<br/> | No hay suficientes recursos del sistema (como memoria para asignar búferes) para completar la llamada.                                        |
+| ERROR DE BASE DE DATOS INTERNA DE ESTADO \_ \_ \_ (ERROR \_ INTERNO DE BASE \_ DE \_ DATOS)<br/>       | La base de datos LSA contiene una incoherencia interna.                                                                                    |
+| IDENTIFICADOR \_ DE ESTADO NO VÁLIDO \_ (IDENTIFICADOR NO VÁLIDO DE \_ \_ ERROR)<br/>               | Indica que un objeto o identificador RPC no es válido en el [*contexto utilizado.*](/windows/desktop/SecGloss/c-gly)     |
+| ESTADO \_ ESTADO DE SERVIDOR NO VÁLIDO \_ \_ (ERROR ESTADO DE SERVIDOR NO \_ \_ \_ VÁLIDO)<br/> | Indica que el servidor LSA está deshabilitado actualmente.                                                                                         |
+| PARÁMETRO \_ STATUS INVALID \_ (ERROR INVALID \_ \_ PARAMETER)<br/>         | Uno de los parámetros no es válido.                                                                                                     |
+| STATUS \_ NO \_ SUCH \_ PRIVILEGE (ERROR \_ NO \_ SUCH \_ PRIVILEGE)<br/>       | Indica que no existe un privilegio especificado.                                                                                         |
+| NO \_ SE ENCONTRÓ EL NOMBRE DEL OBJETO DE ESTADO \_ \_ \_ (NO SE ENCONTRÓ EL ARCHIVO DE \_ \_ \_ ERROR)<br/>     | No se encontró un objeto en la base de datos de directivas LSA. El objeto se puede haber especificado por SID o por nombre, dependiendo de su tipo. |
+| ESTADO \_ NO CORRECTO (ERROR DE \_ \_ GENERACIÓN DE ERRORES)<br/>                     | Error genérico, como un error de conexión RPC.                                                                                        |
 
 
 

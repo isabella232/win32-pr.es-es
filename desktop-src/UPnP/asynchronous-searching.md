@@ -1,41 +1,41 @@
 ---
 title: Búsqueda asincrónica
-description: El objeto de buscador de dispositivos habilita las búsquedas sincrónicas y asincrónicas. Las búsquedas asincrónicas devuelven el control a la aplicación que realiza la llamada inmediatamente.
+description: El objeto Device Finder permite búsquedas sincrónicas y asincrónicas. Las búsquedas asincrónicas devuelven el control a la aplicación que realiza la llamada inmediatamente.
 ms.assetid: 809cfb65-9d08-427b-90d9-b8a836176341
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a57377eb8ae5a49fc9bafe81f90b9ee7c602ae4f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fe3482e041798db929d1719e1a404823f161f9bf5b0e499f4eca1694df24b38a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058143"
 ---
 # <a name="asynchronous-searching"></a>Búsqueda asincrónica
 
-El objeto de buscador de dispositivos habilita las búsquedas sincrónicas y asincrónicas. Las búsquedas asincrónicas devuelven el control a la aplicación que realiza la llamada inmediatamente. A continuación, se notifica a la aplicación sobre cada dispositivo individual a medida que se encuentra, mediante una interfaz de devolución de llamada que la aplicación ha registrado.
+El objeto Device Finder permite búsquedas sincrónicas y asincrónicas. Las búsquedas asincrónicas devuelven el control a la aplicación que realiza la llamada inmediatamente. A continuación, se notifica a la aplicación cada dispositivo individual cuando se encuentra, mediante una interfaz de devolución de llamada que la aplicación ha registrado.
 
-La búsqueda asincrónica es mejor para las interfaces de usuario gráficas y para las aplicaciones que realizan la supervisión continua.
+La búsqueda asincrónica es mejor para las interfaces gráficas de usuario y las aplicaciones que realizan la supervisión continua.
 
 La estructura general de una búsqueda asincrónica es:
 
-1.  Crear un objeto de búsqueda
+1.  Creación de un objeto de búsqueda
 2.  Inicio de la búsqueda
-3.  Reciba notificaciones de devolución de llamada y realice los pasos de procesamiento adecuados.
+3.  Reciba notificaciones de devolución de llamada y siga los pasos de procesamiento adecuados.
 4.  Cuando la búsqueda ya no sea necesaria, cancele la búsqueda y libere los objetos asociados.
 
 > [!Note]  
-> En el código de devolución de llamada, una aplicación no puede liberar el objeto del que recibe notificaciones, como un nuevo dispositivo, ni puede cancelar la búsqueda.
+> En el código de devolución de llamada, una aplicación no puede liberar el objeto sobre el que recibe la notificación, como un nuevo dispositivo, ni puede cancelar la búsqueda.
 
- 
+ 
 
 ## <a name="c-example"></a>Ejemplo de C++
 
-Las aplicaciones de C++ deben implementar un objeto de devolución de llamada para pasarlo a la búsqueda. Vea [Buscar de forma asincrónica en C++](searching-asynchronously-in-c-.md) para ver el código de ejemplo que muestra esta acción.
+Las aplicaciones de C++ deben implementar un objeto de devolución de llamada para pasar a la búsqueda. Vea [Búsqueda asincrónica en C++ para obtener](searching-asynchronously-in-c-.md) código de ejemplo que ilustra esta acción.
 
 ## <a name="vbscript-example"></a>Ejemplo de VBScript
 
-El código de VBScript debe pasar la dirección de la función de devolución de llamada.
+El código VBScript debe pasar la dirección de la función de devolución de llamada.
 
 
 ```VB
@@ -77,9 +77,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

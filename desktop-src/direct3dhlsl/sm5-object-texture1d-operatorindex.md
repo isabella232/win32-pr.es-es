@@ -1,6 +1,6 @@
 ---
-title: 'Texture1D:: Operator (función)'
-description: Devuelve una variable de recurso de solo lectura para un Texture1D.
+title: Función Texture1D::Operator
+description: Devuelve una variable de recurso de solo lectura para texture1D.
 ms.assetid: df54097d-4d1b-496a-a17d-6e9a10cfb996
 keywords:
 - Función de operador HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 44e5b502c7ae8b766363956920d7922858b4d771
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: d2c11ef313531adb9b129ffb99103ea6c7778462eddf8c1c76f4b235c92951c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104149811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985915"
 ---
-# <a name="texture1doperator--function"></a>Texture1D:: Operator (función)
+# <a name="texture1doperator--function"></a>Función Texture1D::Operator
 
-Devuelve una variable de recurso de solo lectura para un [**Texture1D**](sm5-object-texture1d.md).
+Devuelve una variable de recurso de solo lectura para [**texture1D.**](sm5-object-texture1d.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Posición de índice. Contiene la coordenada x.
+Posición del índice. Contiene la coordenada x.
 
 </dd> </dl>
 
@@ -51,15 +51,15 @@ Tipo: **R**
 
 Variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método siempre tiene acceso al primer nivel de MIP. Para especificar otros niveles de MIP, utilice en su lugar el [**\[ \] \[ \] operador MIP.**](sm5-object-texture1d-mipsoperatorindex.md)
+Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use [**el operador \[ \] \[ \] mip.operator en**](sm5-object-texture1d-mipsoperatorindex.md) su lugar.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

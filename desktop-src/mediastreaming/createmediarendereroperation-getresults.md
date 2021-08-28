@@ -1,11 +1,11 @@
 ---
-title: CreateMediaRendererOperation GetResults (método)
+title: Método CreateMediaRendererOperation GetResults
 description: Obtiene los resultados de la operación asincrónica.
 ms.assetid: 02C5DCB9-5C0F-4C0C-9443-B97168B5CEBB
 keywords:
-- Método GetResults API de streaming de multimedia
-- Método GetResults API de streaming multimedia, interfaz CreateMediaRendererOperation
-- CreateMediaRendererOperation interface media streaming API, GetResults (método)
+- Método GetResults de Media Streaming API
+- Método GetResults de Media Streaming API, interfaz CreateMediaRendererOperation
+- Interfaz CreateMediaRendererOperation de Media Streaming API, método GetResults
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b8c3da874b2259eccbb2c56271400d05c69da71c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 73e068eeebbd85a1f792875dc11d2d0445b5a715be5bf94996e05e32cf9e5a9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103784151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100837"
 ---
-# <a name="createmediarendereroperationgetresults-method"></a>CreateMediaRendererOperation:: GetResults (método)
+# <a name="createmediarendereroperationgetresults-method"></a>Método CreateMediaRendererOperation::GetResults
 
 Obtiene los resultados de la operación asincrónica.
 
@@ -41,18 +41,18 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Resultados de la operación. Puntero al objeto [**MediaRenderer**](mediarenderer.md) recién creado.
+Resultados de la operación. Puntero al objeto [**MediaRenderer recién**](mediarenderer.md) creado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**CreateMediaRendererOperation**](createmediarendereroperation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

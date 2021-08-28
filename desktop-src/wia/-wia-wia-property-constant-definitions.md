@@ -1,7 +1,7 @@
 ---
-description: A continuación se muestra una lista de nombres descriptivos de las propiedades de adquisición de imágenes de Windows (WIA) e identificadores numéricos. Se presentan como definiciones de constantes de Microsoft Visual Basic, para facilitar la inclusión en aplicaciones o scripts.
+description: A continuación se muestra una lista Windows nombres descriptivos de propiedades de adquisición de imágenes (WIA) e identificaciónes numéricas. Se presentan como definiciones Visual Basic constantes de Microsoft, para su inclusión cómoda en aplicaciones o scripts.
 ms.assetid: 6cacb7ce-1f41-4d24-adcb-c7aa9049f846
-title: Definiciones de constantes de propiedades de WIA
+title: Definiciones de constantes de propiedad WIA
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0fec89e2e10b019b7186482609d3ab4089ede692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6539e14daf6a1fc124c177713f3056b981fd6c00ac9a41392ed03ae8759319cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965454"
 ---
-# <a name="wia-property-constant-definitions"></a>Definiciones de constantes de propiedades de WIA
+# <a name="wia-property-constant-definitions"></a>Definiciones de constantes de propiedad WIA
 
-A continuación se muestra una lista de nombres descriptivos de las propiedades de adquisición de imágenes de Windows (WIA) e identificadores numéricos. Se presentan como definiciones de constantes de Microsoft Visual Basic, para facilitar la inclusión en aplicaciones o scripts.
+A continuación se muestra una lista Windows nombres descriptivos de propiedades de adquisición de imágenes (WIA) e identificaciónes numéricas. Se presentan como definiciones Visual Basic constantes de Microsoft, para su inclusión cómoda en aplicaciones o scripts.
 
-En el caso de las aplicaciones Visual Basic, agregue una referencia a "biblioteca de tipos 1,01 de adquisición de imágenes de Microsoft Windows", donde estas constantes se proporcionan como tipos de enumeración.
+Para Visual Basic aplicaciones, agregue una referencia a "Microsoft Windows Image Acquisition 1.01 Type Library", donde estas constantes se proporcionan como tipos de enumeración.
 
 
 ```

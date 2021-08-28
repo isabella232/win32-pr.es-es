@@ -1,9 +1,9 @@
 ---
-title: Elemento message (DebugDataType)
+title: Elemento Message (DebugDataType)
 description: Cadena del mensaje. El XML contiene este elemento si el evento WPP especificó el campo FormattedString.
 ms.assetid: 9a18f576-a9c0-43f3-b7eb-71a78a67bb0c
 keywords:
-- EventLog del elemento de mensaje
+- Elemento de mensaje EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f8c3ead8609125530c2f202f0b6e68209d0233b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 137a78b8f3efdfe78a679284daa09fe1269d44a645121fa992bbc5e991591208
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055743"
 ---
-# <a name="message-debugdatatype-element"></a>Elemento message (DebugDataType)
+# <a name="message-debugdatatype-element"></a>Elemento Message (DebugDataType)
 
 Cadena del mensaje. El XML contiene este elemento si el evento WPP especificó el campo FormattedString.
 
@@ -30,16 +30,16 @@ Cadena del mensaje. El XML contiene este elemento si el evento WPP especificó e
  />
 ```
 
-El tipo complejo [**DebugDataType**](eventschema-debugdatatype-complextype.md) define el elemento de **mensaje** .
+El tipo complejo [**DebugDataType**](eventschema-debugdatatype-complextype.md) define el elemento **Message.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

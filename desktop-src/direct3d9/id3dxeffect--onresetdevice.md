@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: a10d9d0a9092bf7a0fdd345cde8220675503acd0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9c48d93bc5ebf6aa10816f384090da871188220c8b7d0ed17b1f042f292e9024
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121518"
 ---
 # <a name="id3dxeffectonresetdevice-method"></a>Método ID3DXEffect::OnResetDevice
 
@@ -59,7 +59,7 @@ Se debe llamar a **ID3DXEffect::OnResetDevice** cada vez que se restablezca el d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

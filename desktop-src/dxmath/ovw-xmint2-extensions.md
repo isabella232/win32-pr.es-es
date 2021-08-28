@@ -1,22 +1,22 @@
 ---
 description: XMINT2 describe un vector 2D que consta de dos valores enteros.
 ms.assetid: de42c75b-fd8d-4888-9673-370930d98fb5
-title: Extensiones de XMINT2
+title: Extensiones XMINT2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cca272563d973c6fba87184faaf297bd19918d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07a9715ab89e22d936300cd86a33beb7c9fcad575e7bab20369d29c2e064cafb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984925"
 ---
-# <a name="xmint2-extensions"></a>Extensiones de XMINT2
+# <a name="xmint2-extensions"></a>Extensiones XMINT2
 
 [**XMINT2**](/windows/win32/api/directxmath/ns-directxmath-xmint2) describe un vector 2D que consta de dos valores enteros.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

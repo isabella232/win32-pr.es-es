@@ -1,21 +1,21 @@
 ---
-description: Un programa de configuración de servicio utiliza la función OpenService para obtener un identificador con acceso a la configuración de la \_ consulta de servicio a \_ un objeto de servicio instalado.
+description: Un programa de configuración de servicio usa la función OpenService para obtener un identificador con acceso DE CONFIGURACIÓN DE SERVICE \_ QUERY a un objeto de servicio \_ instalado.
 ms.assetid: e6633dc9-c9b6-457d-8adc-e751ec9cf71d
-title: Consultar una configuración de servicios
+title: Consulta de una configuración de servicios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0efddea6ca590aa07b0c523588295d5f87ffefa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8eb8abd0792107c4c10757db22d2d96253837623138c9c5d6d000c25d4d39eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118889321"
 ---
-# <a name="querying-a-services-configuration"></a>Consultar la configuración de un servicio
+# <a name="querying-a-services-configuration"></a>Consulta de la configuración de un servicio
 
-Un [programa de configuración de servicio](service-configuration-programs.md) utiliza la función [**OpenService**](/windows/desktop/api/Winsvc/nf-winsvc-openservicea) para obtener un identificador con acceso a la configuración de la consulta de servicio a \_ \_ un objeto de servicio instalado. A continuación, el programa puede usar el identificador de objeto de servicio en las funciones [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) y [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) para recuperar la configuración actual del servicio.
+Un [programa de configuración de](service-configuration-programs.md) servicio usa la función [**OpenService**](/windows/desktop/api/Winsvc/nf-winsvc-openservicea) para obtener un identificador con acceso DE CONFIGURACIÓN DE CONSULTA DE SERVICIO a un objeto de servicio \_ \_ instalado. A continuación, el programa puede usar el identificador de objeto de servicio en las funciones [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) y [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) para recuperar la configuración actual del servicio.
 
-En el ejemplo siguiente, la función DoQuerySvc usa [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) y [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) para recuperar la información de configuración y, después, escribe la información seleccionada en la consola. La variable szSvcName es una variable global que contiene el nombre del servicio. Para obtener el ejemplo completo en el que se establece esta variable, vea [SvcConfig. cpp](svcconfig-cpp.md).
+En el ejemplo siguiente, la función DoQuerySvc usa [**QueryServiceConfig**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfiga) y [**QueryServiceConfig2**](/windows/desktop/api/Winsvc/nf-winsvc-queryserviceconfig2a) para recuperar información de configuración y, a continuación, escribe la información seleccionada en la consola. La variable szSvcName es una variable global que contiene el nombre del servicio. Para obtener el ejemplo completo que establece esta variable, [vea SvcConfig.cpp](svcconfig-cpp.md).
 
 
 ```C++
@@ -162,7 +162,7 @@ cleanup:
 [Configuración de servicio](service-configuration.md)
 </dt> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

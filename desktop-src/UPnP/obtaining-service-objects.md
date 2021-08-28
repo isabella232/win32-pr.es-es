@@ -1,23 +1,23 @@
 ---
 title: Obtener objetos de servicio
-description: Los objetos de dispositivo exponen una propiedad denominada servicios que devuelve una colección de objetos de servicio que contiene un objeto de servicio para cada servicio exportado por el dispositivo.
+description: Los objetos de dispositivo exponen una propiedad denominada Servicios que devuelve una colección de objetos de servicio que contiene un objeto de servicio para cada servicio exportado por el dispositivo.
 ms.assetid: 8ef12b6e-cb9b-4406-95be-002117b8fc3f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bf951c9c620c23c2d4919dc4a8bcf082159fa7a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8b7fca24bfc79a9458cfb964af28edba813a90ef17924a68fd0d1689e047884c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999575"
 ---
 # <a name="obtaining-service-objects"></a>Obtener objetos de servicio
 
-Los objetos de dispositivo exponen una propiedad denominada [**servicios**](/windows/win32/api/upnp/nf-upnp-iupnpdevice-get_services) que devuelve una colección de objetos de servicio que contiene un objeto de servicio para cada servicio exportado por el dispositivo. Las aplicaciones pueden atravesar esta colección secuencialmente o solicitar un servicio determinado mediante su identificador de servicio.
+Los objetos de dispositivo exponen una propiedad denominada [**Servicios**](/windows/win32/api/upnp/nf-upnp-iupnpdevice-get_services) que devuelve una colección de objetos de servicio que contiene un objeto de servicio para cada servicio exportado por el dispositivo. Las aplicaciones pueden recorrer esta colección secuencialmente o solicitar un servicio determinado mediante su identificador de servicio.
 
 ## <a name="vbscript-example"></a>Ejemplo de VBScript
 
-El ejemplo siguiente es código VBScript que extrae objetos de servicio para dos de los servicios exportados por un dispositivo.
+El ejemplo siguiente es código VBScript que extrae objetos service para dos de los servicios exportados por un dispositivo.
 
 
 ```VB
@@ -30,11 +30,11 @@ Set xportService = services( "urn:upnp-org:serviceId:AVTransport" )
 
 
 
-La primera línea extrae la colección de servicios del objeto de dispositivo consultando la propiedad [**servicios**](/windows/win32/api/upnp/nf-upnp-iupnpdevice-get_services) . Las dos líneas siguientes obtienen los dos objetos de servicio deseados de la colección mediante la especificación de sus identificadores de servicio. La colección de servicios también se puede recorrer secuencialmente mediante el uso **de un para cada... siguiente** bucle.
+La primera línea extrae la colección de servicios del objeto Device consultando la [**propiedad**](/windows/win32/api/upnp/nf-upnp-iupnpdevice-get_services) Services. Las dos líneas siguientes obtienen los dos objetos service deseados de la colección especificando sus propios valores de servicio. La colección de servicios también se puede recorrer secuencialmente mediante un **para cada ... bucle** next.
 
 ## <a name="c-example"></a>Ejemplo de C++
 
-En el ejemplo siguiente se muestra el código de C++ necesario para obtener objetos de servicio de un dispositivo. En primer lugar, el código de ejemplo consulta la propiedad [**IUPnPDevice:: Services**](/windows/win32/api/upnp/nf-upnp-iupnpdevice-get_services) en la interfaz que se pasó a la función. Esto devuelve una colección de servicios mediante la interfaz [**IUPnPServices**](/windows/desktop/api/Upnp/nn-upnp-iupnpservices) . Para obtener objetos de servicio individuales, use el método [**Item**](/windows/win32/api/upnp/nf-upnp-iupnpservices-get_item) y especifique los identificadores de servicio solicitados. Para atravesar la colección secuencialmente, use los métodos [**IEnumVARIANT:: RESET**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-reset), [**IEnumVARIANT:: Next**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-next)y [**IEnumVARIANT:: Skip**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-skip) . Este ejemplo es similar al ejemplo usado para atravesar la colección [**IUPnPDevices**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices) .
+En el ejemplo siguiente se muestra el código de C++ necesario para obtener objetos service de un dispositivo. En primer lugar, el código de ejemplo consulta la propiedad [**IUPnPDevice::Services**](/windows/win32/api/upnp/nf-upnp-iupnpdevice-get_services) en la interfaz que se pasó a la función. Esto devuelve una colección de servicios mediante la [**interfaz IUPnPServices.**](/windows/desktop/api/Upnp/nn-upnp-iupnpservices) Para obtener objetos de servicio individuales, use el [**método Item**](/windows/win32/api/upnp/nf-upnp-iupnpservices-get_item) y especifique los iDs de servicio solicitados. Para recorrer la colección secuencialmente, use los métodos [**IEnumVARIANT::Reset**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-reset), [**IEnumVARIANT::Next**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-next)e [**IEnumVARIANT::Skip.**](/windows/win32/api/oaidl/nf-oaidl-ienumvariant-skip) Este ejemplo es similar al ejemplo que se usa para recorrer la [**colección IUPnPDevices.**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices)
 
 
 ```C++
@@ -74,6 +74,6 @@ HRESULT ExtractServices(IUPnPDevice * pDevice)
 
 
 
- 
+ 
 
- 
+ 

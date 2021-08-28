@@ -1,20 +1,20 @@
 ---
 title: Cargas de la vista de acceso sin ordenar (UAV) con tipo
-description: Obtenga información sobre la carga con tipo de vista de acceso desordenado (UAV) en Direct3D 12. La carga con tipo UAV es la capacidad de que un sombreador lea desde un UAV con un DXGI_FORMAT.
+description: Obtenga información sobre la carga con tipo de vista de acceso desordenado (UAV) en Direct3D 12. La carga con tipo UAV es la capacidad de un sombreador de leer desde un UAV con un DXGI_FORMAT.
 ms.assetid: 6106D15E-EAF6-4583-B4F2-7CC7EE30DE15
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96128354132a58e0b8648fba2b4e1e6babb95535
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: e3bd45c1b2c14aa85ec9b9ab65cd6d6a9f33cb5e0995ac20b779b84aa7bed640
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123482"
 ---
 # <a name="typed-unordered-access-view-uav-loads"></a>Cargas de la vista de acceso sin ordenar (UAV) con tipo
 
-La carga con tipo de vista de acceso no ordenado (UAV) es la capacidad de que un sombreador lea desde un UAV con un [**FORMATO DXGI \_ específico.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+La carga con tipo de vista de acceso no ordenado (UAV) es la capacidad de un sombreador de leer desde un UAV con un [**FORMATO DXGI \_ específico.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 -   [Información general](#overview)
 -   [Formatos admitidos y llamadas API](#supported-formats-and-api-calls)
@@ -30,7 +30,7 @@ D3D12 (y D3D11.3) se expande en la lista de formatos que se pueden usar con carg
 
 ## <a name="supported-formats-and-api-calls"></a>Formatos admitidos y llamadas API
 
-Anteriormente, los tres formatos siguientes admiten cargas UAV con tipo y eran necesarios para el hardware D3D11.0. Se admiten para todo el hardware D3D11.3 y D3D12.
+Anteriormente, los tres formatos siguientes eran compatibles con cargas UAV con tipo y eran necesarios para el hardware D3D11.0. Se admiten para todo el hardware D3D11.3 y D3D12.
 
 -   R32 \_ FLOAT
 -   R32 \_ UINT
@@ -54,7 +54,7 @@ Los siguientes formatos se admiten como un conjunto en hardware D3D12 o D3D11.3,
 -   R8 \_ UINT
 -   R8 \_ SINT
 
-Los siguientes formatos se admiten opcionalmente e individualmente en hardware D3D12 y D3D11.3, por lo que se tendría que realizar una consulta única en cada formato para probar la compatibilidad.
+Los siguientes formatos se admiten opcionalmente e individualmente en hardware D3D12 y D3D11.3, por lo que se tendría que realizar una única consulta en cada formato para probar la compatibilidad.
 
 -   R16G16B16A16 \_ UNORM
 -   R16G16B16A16 \_ SNORM
@@ -107,7 +107,7 @@ if (SUCCEEDED(hr))
 
 ## <a name="using-typed-uav-loads-from-hlsl"></a>Uso de cargas UAV con tipo desde HLSL
 
-Para los UAV con tipo, la marca HLSL es D3D SHADER REQUIRES TYPED UAV LOAD ADDITIONAL FORMATS (SOMBREADOR D3D REQUIERE FORMATOS \_ \_ \_ \_ ADICIONALES DE CARGA DE UAV \_ CON \_ \_ TIPO).
+Para los UAV con tipo, la marca HLSL es D3D SHADER REQUIERE FORMATOS \_ \_ \_ \_ ADICIONALES DE CARGA DE UAV \_ CON \_ \_ TIPO.
 
 Este es un ejemplo de código de sombreador para procesar una carga de UAV con tipo:
 
@@ -122,7 +122,7 @@ float4 main() : SV_Target
 
 ## <a name="using-unorm-and-snorm-typed-uav-loads-from-hlsl"></a>Uso de cargas UAV con tipo UNORM y SNORM desde HLSL
 
-Al usar cargas UAV con tipo para leer desde un recurso UNORM o SNORM, debe declarar correctamente el tipo de elemento del objeto HLSL como `unorm` o `snorm` . Se especifica como comportamiento indefinido para no coincide el tipo de elemento declarado en HLSL con el tipo de datos de recurso subyacente. Por ejemplo, si usa cargas UAV con tipo en un recurso de búfer con datos \_ R8 UNORM, debe declarar el tipo de elemento como `unorm float` :
+Al usar cargas UAV con tipo para leer desde un recurso UNORM o SNORM, debe declarar correctamente el tipo de elemento del objeto HLSL como `unorm` o `snorm` . Se especifica como un comportamiento indefinido para no coincide el tipo de elemento declarado en HLSL con el tipo de datos de recurso subyacente. Por ejemplo, si usa cargas UAV con tipo en un recurso de búfer con datos unorm R8, debe declarar el tipo de \_ elemento como `unorm float` :
 
 ``` syntax
 RWBuffer<unorm float> uav;
@@ -141,7 +141,7 @@ RWBuffer<unorm float> uav;
 [Enlace de recursos en HLSL](resource-binding-in-hlsl.md)
 </dt> <dt>
 
-[Shader Model 5.1](/windows/desktop/direct3dhlsl/shader-model-5-1)
+[Modelo de sombreador 5.1](/windows/desktop/direct3dhlsl/shader-model-5-1)
 </dt> <dt>
 
 [Especificación de firmas de raíz en HLSL](specifying-root-signatures-in-hlsl.md)

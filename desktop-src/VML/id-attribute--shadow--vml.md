@@ -1,24 +1,24 @@
 ---
-title: ID (atributo, sombra) (VML)
-description: ID (atributo, sombra) (VML)
+title: Atributo ID (Shadow)(VML)
+description: Atributo ID (Shadow)(VML)
 ms.assetid: ca20b6b9-a41c-4073-9178-77eb0f918327
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d51a5917f9ef71e3c4acea7ec1ed2e5cf90aef8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f44cc307bcdd381247a105cc447e920819d3e8877bf66a81088bc8eabc8fa87b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057923"
 ---
-# <a name="id-attribute-shadowvml"></a>ID (atributo, sombra) (VML)
+# <a name="id-attribute-shadowvml"></a>Atributo ID (Shadow)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Especifica un nombre que proporciona un identificador único para una sombra. Lectura/escritura **Cadena**.
 
@@ -28,23 +28,23 @@ Especifica un nombre que proporciona un identificador único para una sombra. Le
 
 **Sintaxis de etiquetas**
 
-<v: ID. de *elemento* = " *expresión* " >
+<v: *element* id=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . ID = "*expresión*"
+*element* .id="*expression*"
 
-*expresión* = de identificador de *elemento*
+*expresión* = *elemento*.id
 
 **Comentarios:**
 
-Use el **identificador** para hacer referencia a una sombra específica. Una vez que haya creado una sombra y dado un identificador, puede utilizar el nombre de identificador cuando desee manipular la sombra.
+Use **id.** para hacer referencia a una sombra específica. Una vez que haya creado una sombra y le haya dado un identificador, puede usar el nombre del identificador cuando desee manipular la sombra.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-La forma tiene un ID. de sombra denominado "prevaleci".
+La forma tiene un identificador de sombra llamado "myshadow".
 
 
 ```HTML
@@ -59,6 +59,6 @@ La forma tiene un ID. de sombra denominado "prevaleci".
 
 
 
- 
+ 
 
- 
+ 

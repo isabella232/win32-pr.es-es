@@ -4,12 +4,12 @@ ms.assetid: 105800d3-a191-c78f-316a-bf2daf7b27a6
 title: Novedades (DirectXMath)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1df1e7f25789ca6f58205ce9f45482e0a49540d1
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 7e94d4ba2433501fb5389b82dab4f5c3de4b8ed80904ed4629729537bbf264a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984715"
 ---
 # <a name="whats-new-directxmath"></a>Novedades (DirectXMath)
 
@@ -29,13 +29,13 @@ La biblioteca DirectXMath se basa en la versión [2.04](https://walbourn.github.
   <td>Windows 10 SDK de actualización de mayo de 2020</td><td>DirectXMath 3.14</td>
  </tr>
  <tr>
-  <td>ACTUALIZACIÓN DE OCTUBRE DE 2018 DE WINDOWS 10 SDK</td><td>DirectXMath 3.13</td>
+  <td>Actualización de octubre de 2018 de Windows 10 Sdk</td><td>DirectXMath 3.13</td>
  </tr>
  <tr>
-  <td>ACTUALIZACIÓN DE ABRIL DE 2018 DE WINDOWS 10 SDK<br />Windows 10 Fall Creators Update SDK</td><td>DirectXMath 3.11</td>
+  <td>Windows 10 SDK de actualización de abril de 2018<br />Windows 10 Fall Creators Update Sdk</td><td>DirectXMath 3.11</td>
  </tr>
  <tr>
-  <td>Windows 10 Creators Update SDK</td><td>DirectXMath 3.10</td>
+  <td>Windows 10 Creators Update Sdk</td><td>DirectXMath 3.10</td>
  </tr>
  <tr>
   <td>SDK de Windows 10 Anniversary</td><td>DirectXMath 3.09</td>
@@ -62,11 +62,11 @@ Este es el modo en que la biblioteca DirectXMath difiere principalmente de la bi
 
 -   DirectXMath es solo C++ (espacios de nombres, sobrecargas, nuevas plantillas, entre otros).
 -   Requiere compatibilidad con la biblioteca estándar de C++11 (es decir, stdint.h, y así sucesivamente).
--   Compatibilidad intrínseca de ARM-NEON con la plataforma Windows RT sistema.
+-   Compatibilidad intrínseca de ARM-NEON con la Windows RT plataforma.
 -   Nueva funcionalidad de color (conversiones de espacio de color, constantes de color de .NET).
 -   Límite de tipos de volumen (una versión de la que se encontraba anteriormente en el encabezado XNACollision en el ejemplo de colisión del SDK de DirectX).
 -   No hay Xbox 360 versión disponible. El Xbox 360 XDK continúa con el envío de XNAMath v2.x; eliminación de Xbox 360 tipos de datos y variantes de función específicos.
--   [**XMVectorPermute**](/windows/win32/api/directxmath/nf-directxmath-xmvectorpermute) se ha reelatrado para mejorar la optimización de los intrínsecos SSE y ARM-NEON.
+-   [**XMVectorPermute se ha reelatrado**](/windows/win32/api/directxmath/nf-directxmath-xmvectorpermute) para mejorar la optimización de los intrínsecos SSE y ARM-NEON.
 -   El [**tipo XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) es totalmente opaco. Para acceder a elementos individuales **de XMMATRIX,** use otros tipos como [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4).
 
 ## <a name="related-topics"></a>Temas relacionados

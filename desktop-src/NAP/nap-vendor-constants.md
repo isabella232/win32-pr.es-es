@@ -1,6 +1,6 @@
 ---
-title: Constantes de proveedor de NAP (NapMicrosoftVendorIds. h)
-description: Los siguientes identificadores de componentes NAP internos de Microsoft se definen en NapMicrosoftVendorIds. h.
+title: Constantes de proveedor de NAP (NapMicrosoftVendorIds.h)
+description: Los siguientes id. de componente interno de Nap de Microsoft se definen en NapMicrosoftVendorIds.h.
 ms.assetid: 16d87399-3d96-47c7-b865-c56cfacdeff8
 topic_type:
 - apiref
@@ -24,21 +24,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a5f748ab45b51ce69393c0719fac9a712201f19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 23820190cf476cdc0d27f0e4641752dc135cab0f808d37f60adc95b919429671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939123"
 ---
-# <a name="nap-vendor-constants"></a>Constantes de proveedor de NAP
+# <a name="nap-vendor-constants"></a>Constantes de proveedor nap
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-Los siguientes identificadores de componentes NAP internos de Microsoft se definen en NapMicrosoftVendorIds. h. Al implementar un SHA o SHV, no use estos valores de identificador que ya están asignados a los componentes internos de mantenimiento del sistema de Microsoft.
+Los siguientes id. de componente interno de Nap de Microsoft se definen en NapMicrosoftVendorIds.h. Al implementar un SHA o SHV, no use estos valores de identificador que ya están asignados a los componentes de mantenimiento internos del sistema de Microsoft.
 
 <dl> <dt>
 
@@ -165,9 +165,9 @@ Los siguientes identificadores de componentes NAP internos de Microsoft se defin
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                               |
-| Encabezado<br/>                   | <dl> <dt>NapMicrosoftVendorIds. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
+| Header<br/>                   | <dl> <dt>NapMicrosoftVendorIds.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Semáforo que se señala cuando una muestra está disponible.
 ms.assetid: 1861bc3a-b071-4876-a69c-84bf249260bd
-title: 'Miembro CBaseAllocator:: m_hSem (Amfilter. h)'
+title: CBaseAllocator::m_hSem miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4c97227809be462d6b68cde0281ab0cd4cf1f96e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c78d5dbcdba6551ef27299ea78bad217f17f68777499f15846c33c0496cb8fbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017473"
 ---
-# <a name="cbaseallocatorm_hsem-member"></a>Miembro hSem CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_hsem-member"></a>CBaseAllocator::m \_ miembro hSem
 
 Semáforo que se señala cuando una muestra está disponible.
 
@@ -42,8 +42,8 @@ HANDLE m_hSem;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ HANDLE m_hSem;
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

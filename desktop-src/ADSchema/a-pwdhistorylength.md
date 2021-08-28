@@ -1,11 +1,11 @@
 ---
-title: Pwd-History-length (atributo)
-description: Número de contraseñas antiguas que se van a guardar.
+title: Atributo Pwd-History-Length
+description: Número de contraseñas antiguas que se guardarán.
 ms.assetid: 6440620d-9e77-411a-ab96-f8e979262bec
 ms.tgt_platform: multiple
 keywords:
-- Pwd-History-length atributo de AD Schema
-- pwdHistoryLength esquema de AD de atributos
+- Esquema de AD del atributo Pwd-History-Length
+- Esquema de AD del atributo pwdHistoryLength
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899c486914db31dcd8a07b18c6cb6b5842e0ab00
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c9c2c5011b2c497e8b6ed69015dd7dd16fbd2bf979d199674dd6ccbb2a67b81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960104"
 ---
-# <a name="pwd-history-length-attribute"></a>Pwd-History-length (atributo)
+# <a name="pwd-history-length-attribute"></a>Atributo Pwd-History-Length
 
-Número de contraseñas antiguas que se van a guardar.
+Número de contraseñas antiguas que se guardarán.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------|
-| CN                | Pwd-History-longitud                       |
-| Nombre para mostrar de LDAP | pwdHistoryLength                         |
-| Tamaño              | 4 bytes                                  |
-| Actualizar privilegio  | Administrador de dominio                     |
-| Frecuencia de actualización  | Cuándo debe cambiar la Directiva de cuentas. |
+| CN                | Pwd-History-Length                       |
+| Ldap-Display-Name | pwdHistoryLength                         |
+| Size              | 4 bytes                                  |
+| Actualizar privilegios  | Administrador de dominio                     |
+| Frecuencia de actualización  | Cuando es necesario cambiar la directiva de cuenta. |
 | Attribute-Id      | 1.2.840.113556.1.4.95                    |
-| System-ID-GUID    | bf967a09-0de6-11d0-a285-00aa003049e2     |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)     |
+| System-Id-Guid    | bf967a09-0de6-11d0-a285-00aa003049e2     |
+| Syntax            | [**Enumeración**](s-enumeration.md)     |
 
 
 
@@ -53,20 +53,20 @@ Número de contraseñas antiguas que se van a guardar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Número de contraseñas antiguas que se van a guardar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Número de contraseñas antiguas que se van a guardar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Número de contraseñas antiguas que se van a guardar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Número de contraseñas antiguas que se van a guardar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Número de contraseñas antiguas que se van a guardar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | 0                                                                                                                                                     |
 | Range-Upper            | 65535                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

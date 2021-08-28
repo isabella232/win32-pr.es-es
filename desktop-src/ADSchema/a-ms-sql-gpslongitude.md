@@ -4,8 +4,8 @@ description: El atributo MS-SQL-GPSLongitude no se usa actualmente.
 ms.assetid: 70dfe2f1-f222-47f8-981f-0f2ca1718c72
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-GPSLongitude
-- Esquema de AD de atributos de mS-SQL-GPSLongitude
+- Esquema de AD del atributo MS-SQL-GPSLongitude
+- mS-SQL-GPSLongitude attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb9642f7a5c856d6beeffc2cf20dcd1d9bde4d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9e317888b92192f0df9d371f73e211ebcfb07ccbfed81318e2188579f7954d7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961134"
 ---
 # <a name="ms-sql-gpslongitude-attribute"></a>Atributo MS-SQL-GPSLongitude
 
-El atributo **MS-SQL-GPSLongitude** no se usa actualmente.
+El **atributo MS-SQL-GPSLongitude** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-GPSLongitude                         |
-| Nombre para mostrar de LDAP | mS-SQL-GPSLongitude                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | mS-SQL-GPSLongitude                         |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1386                     |
-| System-ID-GUID    | b7577c94-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | b7577c94-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ El atributo **MS-SQL-GPSLongitude** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -74,15 +74,15 @@ El atributo **MS-SQL-GPSLongitude** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -95,15 +95,15 @@ El atributo **MS-SQL-GPSLongitude** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -116,15 +116,15 @@ El atributo **MS-SQL-GPSLongitude** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -137,15 +137,15 @@ El atributo **MS-SQL-GPSLongitude** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -158,15 +158,15 @@ El atributo **MS-SQL-GPSLongitude** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

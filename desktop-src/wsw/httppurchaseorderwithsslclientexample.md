@@ -1,29 +1,29 @@
 ---
 title: HttpPurchaseOrderWithSslClientExample
-description: En este ejemplo se muestra cómo usar el proxy de servicio para comunicarse con un servicio PurchaseOrder, con seguridad de transporte SSL.
+description: En este ejemplo se muestra cómo usar el proxy de servicio para hablar con un servicio PurchaseOrder, con seguridad de transporte SSL.
 ms.assetid: afa73250-5f1c-4151-a2e0-4a5ccc91b63f
 keywords:
 - HttpPurchaseOrderWithSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1ef11cc6309213dd9f5548c51496f9dfa560a66
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cb5ec730c524873688f1a1a4fddb9c38f84767230a3d35bb3a2ad3ef8edfb3f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963154"
 ---
 # <a name="httppurchaseorderwithsslclientexample"></a>HttpPurchaseOrderWithSslClientExample
 
-En este ejemplo se muestra cómo usar el proxy de servicio para comunicarse con un servicio PurchaseOrder, con seguridad de transporte SSL.
+En este ejemplo se muestra cómo usar el proxy de servicio para hablar con un servicio PurchaseOrder, con seguridad de transporte SSL.
 
--   [HttpPurchaseOrderClientWithSsl. cpp](#httppurchaseorderclientwithsslcpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [HttpPurchaseOrderClientWithSsl.cpp](#httppurchaseorderclientwithsslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="httppurchaseorderclientwithsslcpp"></a>HttpPurchaseOrderClientWithSsl. cpp
+## <a name="httppurchaseorderclientwithsslcpp"></a>HttpPurchaseOrderClientWithSsl.cpp
 
 
 ```C++
@@ -317,7 +317,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -456,9 +456,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

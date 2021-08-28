@@ -4,18 +4,18 @@ ms.assetid: effb469a-020e-4c70-aad6-12a91bd36f68
 title: SvcConfig.cpp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69baf6e2c0757f394f09338c65af488db9efd664
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f400849dcd28073e17faacd2bc33cea06ed1a5837a72fb2beecd52714911cc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888417"
 ---
 # <a name="svcconfigcpp"></a>SvcConfig.cpp
 
-A continuación se muestra un [programa de configuración de servicio](service-configuration-programs.md)de ejemplo.
+A continuación se muestra un programa [de configuración de servicio de ejemplo](service-configuration-programs.md).
 
-Al compilar el ejemplo, asegúrese de vincular a Kernel32. lib y advapi32. lib.
+Al compilar el ejemplo, asegúrese de vincular con Kernel32.lib y Advapi32.lib.
 
 
 ```C++
@@ -477,7 +477,7 @@ VOID __stdcall DoDeleteSvc()
 
 <dl> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

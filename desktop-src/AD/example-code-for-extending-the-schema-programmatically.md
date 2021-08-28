@@ -1,23 +1,23 @@
 ---
 title: Código de ejemplo para extender el esquema mediante programación
-description: En este tema se incluye un ejemplo de código de C++ que extiende mediante programación el esquema de Active Directory.
+description: En este tema se incluye un ejemplo de código de C++ que amplía mediante programación el Active Directory esquema.
 ms.assetid: e84678c5-ac12-424b-ba6c-c6cba23e4ff6
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para extender el esquema mediante programación AD
-- Ampliar el esquema mediante programación AD, código de ejemplo para
+- Código de ejemplo para extender el esquema mediante programación de AD
+- Extensión del esquema mediante programación de AD , código de ejemplo para
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c76264267c4ea97e4cf7998c19442a28483b4758
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b1ee2331fa31946691d0906eb9abd4942c037044b2d9f7891182ed8e2f890abb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962334"
 ---
 # <a name="example-code-for-extending-the-schema-programmatically"></a>Código de ejemplo para extender el esquema mediante programación
 
-En este tema se incluye un ejemplo de código de C++ que extiende mediante programación el esquema de Active Directory.
+En este tema se incluye un ejemplo de código de C++ que amplía mediante programación el Active Directory esquema.
 
 
 ```C++
@@ -863,9 +863,9 @@ void ReportErrorW(LPCWSTR pwszDefaultMsg, DWORD dwErr)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

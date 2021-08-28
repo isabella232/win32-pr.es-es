@@ -1,19 +1,19 @@
 ---
-description: Este atributo, cuando se establece en un flujo, marca el flujo como oculto desde el cliente.
+description: Este atributo, cuando se establece en una secuencia, marca la secuencia como oculta al cliente.
 ms.assetid: E1C3A4B6-7D51-4D29-AF06-0A7FBDDB9A9E
-title: MF_DEVICESTREAM_FRAMESERVER_HIDDEN atributo (Mfidl. h)
+title: MF_DEVICESTREAM_FRAMESERVER_HIDDEN atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 981df1670bec3cff7bad2e241b1f47d3d340dcdd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab49a9fcf0876e8708460e9e7cf36d68eb630aea4499b358a542f759cc4dfcd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104981"
 ---
-# <a name="mf_devicestream_frameserver_hidden-attribute"></a>MF \_ DEVICESTREAM \_ FRAMESERVER \_ atributo oculto
+# <a name="mf_devicestream_frameserver_hidden-attribute"></a>Atributo \_ MF DEVICESTREAM \_ FRAMESERVER \_ HIDDEN
 
-Este atributo, cuando se establece en un flujo, marca el flujo como oculto desde el cliente.
+Este atributo, cuando se establece en una secuencia, marca la secuencia como oculta al cliente.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -23,11 +23,11 @@ Este atributo, cuando se establece en un flujo, marca el flujo como oculto desde
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

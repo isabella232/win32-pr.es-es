@@ -1,21 +1,21 @@
 ---
-description: El \_ método get EnumerationIf obtiene un puntero a una interfaz de enumeración multimedia.
+description: El método get \_ EnumerationIf obtiene un puntero a una interfaz de enumeración de medios.
 ms.assetid: d5f1e10f-e5ad-45e6-a5ec-024905603012
-title: 'Método ITMediaCollection:: get_EnumerationIf (Sdpblb. h)'
+title: Método ITMediaCollection::get_EnumerationIf (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a7e7d85c1f7a433a31360fabc8b5dac71e68ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfe14475e216b5143b599aab50d12d1d0c548b5f64dd8e44edd2e6aab249905c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060863"
 ---
-# <a name="itmediacollectionget_enumerationif-method"></a>ITMediaCollection:: get \_ EnumerationIf (método)
+# <a name="itmediacollectionget_enumerationif-method"></a>ItMediaCollection::get \_ EnumerationIf (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ EnumerationIf** obtiene un puntero a una interfaz de enumeración multimedia.
+El **método get \_ EnumerationIf** obtiene un puntero a una interfaz de enumeración de medios.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT get_EnumerationIf(
 
 <dl> <dt>
 
-*pval* \[ enuncia\]
+*pVal* \[ out\]
 </dt> <dd>
 
-Puntero a la interfaz [**IEnumMedia**](ienummedia.md) para el elemento deseado.
+Puntero a la [**interfaz IEnumMedia**](ienummedia.md) del elemento deseado.
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Value                                                                                         | Significado                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *pval* no es un puntero válido.<br/>         |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro pVal* no es un puntero válido.<br/>         |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -57,21 +57,21 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método es intercambiable con [**Get \_ \_ NewEnum**](itmediacollection-get--newenum.md) , salvo que devuelve [**IEnumMedia**](ienummedia.md) en lugar de **IUnknown**.
+Este método es intercambiable con [**get \_ \_ NewEnum,**](itmediacollection-get--newenum.md) salvo que devuelve [**IEnumMedia**](ienummedia.md) en lugar de **IUnknown.**
 
-TAPI llama al método **AddRef** en la interfaz [**IEnumMedia**](ienummedia.md) devuelta por **ITMediaCollection:: get \_ Enumerationlf**. La aplicación debe llamar a **Release** en la interfaz **IEnumMedia** para liberar recursos asociados a ella.
+TAPI llama al **método AddRef** en la [**interfaz IEnumMedia**](ienummedia.md) devuelta por **ITMediaCollection::get \_ Enumerationlf**. La aplicación debe llamar **a Release** en la **interfaz IEnumMedia** para liberar recursos asociados a ella.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

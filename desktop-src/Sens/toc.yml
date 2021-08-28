@@ -12,7 +12,7 @@
           href: notifications.md
         - name: Arquitectura de SENS
           href: sens-architecture.md
-    - name: Referencia SENS
+    - name: Referencia de SENS
       href: sens-reference.md
       items:
         - name: IsDestinationReachable
@@ -22,45 +22,45 @@
               href: /windows/win32/api/Sensapi/ns-sensapi-qocinfo
         - name: IsNetworkAlive
           href: /windows/desktop/api/Sensapi/nf-sensapi-isnetworkalive
-        - name: SENS (objeto)
+        - name: Sens (objeto)
           href: sens-object.md
           items:
             - name: ISensLogon
               href: /windows/desktop/api/Sensevts/nn-sensevts-isenslogon
               items:
-                - name: Método DisplayLock
+                - name: DisplayLock (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-displaylock
-                - name: Método DisplayUnLock
+                - name: DisplayUnLock (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-displayunlock
                 - name: Logoff (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-logoff
-                - name: Logon (método)
+                - name: Método Logon
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-logon
                 - name: Método StartScreenSaver
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-startscreensaver
                 - name: Método StartShell
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-startshell
-                - name: Método StopScreenSaver
+                - name: StopScreenSaver (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon-stopscreensaver
             - name: ISensLogon2
               href: /windows/desktop/api/Sensevts/nn-sensevts-isenslogon2
               items:
                 - name: Logoff (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-logoff
-                - name: Logon (método)
+                - name: Método Logon
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-logon
-                - name: Método SessionDisconnect
+                - name: SessionDisconnect (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-sessiondisconnect
-                - name: Método SessionReconnect
+                - name: SessionReconnect (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-sessionreconnect
-                - name: Método postshell
+                - name: Método PostShell
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isenslogon2-postshell
             - name: ISensNetwork
               href: /windows/desktop/api/Sensevts/nn-sensevts-isensnetwork
               items:
-                - name: Método ConnectionLost
+                - name: ConnectionLost (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensnetwork-connectionlost
-                - name: Método ConnectionMade
+                - name: ConnectionMade (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensnetwork-connectionmade
                 - name: Método ConnectionMadeNoQOCInfo
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensnetwork-connectionmadenoqocinfo
@@ -71,7 +71,7 @@
               items:
                 - name: Método BatteryLow
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensonnow-batterylow
-                - name: Método OnACPower
+                - name: OnACPower (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensonnow-onacpower
-                - name: Método OnBatteryPower
+                - name: OnBatteryPower (método)
                   href: /windows/desktop/api/Sensevts/nf-sensevts-isensonnow-onbatterypower

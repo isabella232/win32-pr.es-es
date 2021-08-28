@@ -1,17 +1,17 @@
 ---
 description: GUID del adaptador de red en el que se va a buscar un servicio.
 ms.assetid: b3ab616b-c5fe-4822-9207-f17bf8b19f8e
-title: System. Devices. dnssd. NetworkAdapterId
+title: System.Devices.Dnssd.NetworkAdapterId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd647db251dd0daffe9bc711635c0e3bb46a7dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c3e96d80138a0a50061b8f717c3ccb4a9edfe9962758c4eafefe0bd42e221cb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119097629"
 ---
-# <a name="systemdevicesdnssdnetworkadapterid"></a>System. Devices. dnssd. NetworkAdapterId
+# <a name="systemdevicesdnssdnetworkadapterid"></a>System.Devices.Dnssd.NetworkAdapterId
 
 GUID del adaptador de red en el que se va a buscar un servicio.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

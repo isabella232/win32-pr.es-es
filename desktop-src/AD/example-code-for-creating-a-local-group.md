@@ -4,19 +4,19 @@ description: Código de ejemplo para crear un grupo local
 ms.assetid: e204ea67-52c0-430a-bb22-a53f4c084e4f
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, crear un grupo local
+- Active Directory ejemplos Active Directory , crear un grupo local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19ac9439d22613920b07ad24b2c4e79f66eff05e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 99ecb6de577c185b1e73244a609ad9e58af9d0fa2979b8ffd1e41f282c933100
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962424"
 ---
 # <a name="example-code-for-creating-a-local-group"></a>Código de ejemplo para crear un grupo local
 
-En el siguiente ejemplo de código de C++ se crea un grupo local en un servidor miembro o en un equipo que se ejecuta en Windows NT Workstation o Windows 2000 Professional.
+En el siguiente ejemplo de código de C++ se crea un grupo Windows local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o en Windows 2000 Professional.
 
 
 ```C++
@@ -145,7 +145,7 @@ HRESULT CreateMachineLocalGroup(
 
 
 
-En el siguiente ejemplo de código Visual Basic se crea un grupo local en un servidor miembro o en un equipo que se ejecuta en Windows NT Workstation o Windows 2000 Professional.
+En el ejemplo Visual Basic código siguiente se crea un grupo Windows local en un servidor miembro o en un equipo que se ejecuta en una estación de trabajo nt o en Windows 2000 Professional.
 
 
 ```VB
@@ -178,9 +178,9 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 
 
 
 

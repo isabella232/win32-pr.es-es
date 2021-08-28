@@ -7,25 +7,25 @@
       href: direct2d-overview.md
     - name: Inicio rápido de Direct2D para Windows 8
       href: direct2d-quickstart-with-device-context.md
-    - name: Introducción con Direct2D
+    - name: Tareas iniciales con Direct2D
       href: getting-started-with-direct2d-nav.md
       items:
-        - name: Inicio rápido de Direct2D
+        - name: Guía de inicio rápido de Direct2D
           href: getting-started-with-direct2d.md
-        - name: Crear una aplicación de Direct2D simple
+        - name: Creación de una aplicación direct2D simple
           href: direct2d-quickstart.md
     - name: Guía de programación
       href: programming-guide.md
       items:
         - name: Introducción a la API de Direct2D
           href: the-direct2d-api.md
-        - name: Direct2D y High-PPP
+        - name: Direct2D y valores altos de PPP
           href: direct2d-and-high-dpi.md
         - name: Directivas de control de errores de Direct2D
           href: direct2d-error-handling-policies.md
         - name: Dispositivos y contextos de dispositivo
           href: devices-and-device-contexts.md
-        - name: Mejorar el rendimiento de las aplicaciones de Direct2D
+        - name: Mejora del rendimiento de las aplicaciones de Direct2D
           href: improving-direct2d-performance.md
         - name: Información general sobre capas
           href: direct2d-layers-overview.md
@@ -33,7 +33,7 @@
           href: printing-and-command-lists.md
         - name: Aplicaciones Direct2D multiproceso
           href: multi-threaded-direct2d-apps.md
-        - name: Generar perfiles de aplicaciones de DirectX
+        - name: Generación de perfiles de aplicaciones DirectX
           href: profiling-directx-applications.md
         - name: Compresión de bloques
           href: block-compression.md
@@ -44,13 +44,13 @@
               href: effect-shader-linking.md
             - name: Efectos personalizados
               href: custom-effects.md
-            - name: Cómo cargar una imagen en los efectos de Direct2D mediante FilePicker
+            - name: Carga de una imagen en efectos de Direct2D mediante FilePicker
               href: load-a-id2d1image-using-the-filepicker.md
             - name: Cómo guardar el contenido de Direct2D en un archivo de imagen
               href: save-direct2d-content-to-an-image-file.md
-            - name: Cómo aplicar efectos a primitivos
+            - name: Cómo aplicar efectos a primitivas
               href: how-to-apply-effects-to-primitives.md
-            - name: Recorte numérico y de precisión en gráficos de efectos
+            - name: Precisión y recorte numérico en gráficos de efecto
               href: precision-and-clipping-in-effect-graphs.md
         - name: Pinceles
           href: brushes.md
@@ -71,9 +71,9 @@
         - name: Geometrías
           href: geometries.md
           items:
-            - name: Información general sobre las geometrías
+            - name: Introducción a las geometrías
               href: direct2d-geometries-overview.md
-            - name: Información general sobre las geometrías de ruta
+            - name: Introducción a las geometrías de ruta de acceso
               href: path-geometries-overview.md
             - name: Información general sobre las realizaciones de geometría
               href: geometry-realizations-overview.md
@@ -93,9 +93,9 @@
           items:
             - name: Información general sobre interoperabilidad
               href: interoperability-overview.md
-            - name: Información general sobre interoperabilidad de Direct2D y GDI
+            - name: Introducción a la interoperabilidad de Direct2D y GDI
               href: direct2d-and-gdi-interoperation-overview.md
-            - name: Comparar la aceleración de hardware de Direct2D y GDI
+            - name: Comparación de la aceleración de hardware de Direct2D y GDI
               href: comparing-direct2d-and-gdi.md
             - name: Introducción a la interoperabilidad de Direct2D y Direct3D
               href: direct2d-and-direct3d-interoperation-overview.md
@@ -104,7 +104,7 @@
           items:
             - name: Información general sobre transformaciones
               href: direct2d-transforms-overview.md
-            - name: Temas de procedimientos de transformaciones
+            - name: Temas de cómo transformar
               href: transforms-how-to-topics.md
               items:
                 - name: Cómo girar un objeto
@@ -113,7 +113,7 @@
                   href: how-to-scale.md
                 - name: Cómo sesgar un objeto
                   href: how-to-skew.md
-                - name: Cómo trasladar un objeto
+                - name: Cómo traducir un objeto
                   href: how-to-translate.md
                 - name: Cómo aplicar varias transformaciones a un objeto
                   href: how-to-apply-multiple-transforms.md
@@ -122,17 +122,17 @@
           items:
             - name: Cómo recortar a una máscara geométrica
               href: how-to-clip-with-layers.md
-            - name: Cómo recortar con rectángulos alineados del eje
+            - name: Cómo recortar con rects alineados en el eje
               href: how-to-clip-with-axis-aligned-rects.md
-            - name: Cómo dibujar un mapa de bits
+            - name: Dibujar un mapa de bits
               href: how-to-draw-a-bitmap.md
-            - name: Cómo dibujar y rellenar una forma básica
+            - name: Dibujar y rellenar una forma básica
               href: how-to-draw-an-ellipse.md
-            - name: Cómo dibujar y rellenar una forma compleja
+            - name: Dibujar y rellenar una forma compleja
               href: how-to-draw-and-fill-a-complex-shape.md
-            - name: Cómo dibujar texto
+            - name: Dibujar texto
               href: how-to--draw-text.md
-            - name: Mostrar correctamente en una pantalla de PPP alta
+            - name: Mostrar correctamente en una pantalla con valores altos de PPP
               href: how-to--size-a-window-properly-for-high-dpi-displays.md
             - name: Cómo cargar un mapa de bits desde un archivo
               href: how-to-load-a-direct2d-bitmap-from-a-file.md
@@ -144,15 +144,15 @@
           href: direct2d-and-directwrite.md
         - name: Información general sobre las máscaras de opacidad
           href: opacity-masks-overview.md
-        - name: Información general sobre recursos
+        - name: Introducción a los recursos
           href: resources-and-resource-domains.md
         - name: Formatos de píxel admitidos y modos alfa
           href: supported-pixel-formats-and-alpha-modes.md
-        - name: Usar Direct2D para la representación de Server-Side
+        - name: Uso de Direct2D para Server-Side Rendering
           href: server-side-rendering-overview.md
-        - name: Información general de destinos de representación
+        - name: Información general sobre los destinos de representación
           href: render-targets-overview.md
-        - name: Información general de destinos de representación A8 compatibles
+        - name: Información general sobre destinos de representación A8 compatibles
           href: compatible-a8-rendertargets.md
     - name: Referencia de Direct2D
       href: reference.md
@@ -166,22 +166,22 @@
                 - name: ColorF
                   href: /windows/desktop/api/d2d1helper/nl-d2d1helper-colorf
                   items:
-                    - name: 'Constructor ColorF (knownColor, FLOAT)'
+                    - name: 'ColorF constructor (knownColor, FLOAT)'
                       href: /previous-versions/windows/desktop/legacy/dd370909(v=vs.85)
-                    - name: 'Constructor ColorF (FLOAT, FLOAT, FLOAT, FLOAT)'
+                    - name: 'ColorF constructor (FLOAT, FLOAT, FLOAT, FLOAT)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-colorf-colorf(float_float_float_float)
-                    - name: 'Constructor ColorF (UINT32, FLOAT)'
+                    - name: 'ColorF constructor (UINT32, FLOAT)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-colorf-colorf(uint32_float)
                 - name: Matrix3x2F
                   href: /windows/desktop/api/d2d1helper/nl-d2d1helper-matrix3x2f
                   items:
                     - name: Constructor Matrix3x2F ()
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-matrix3x2f~r2
-                    - name: 'Constructor Matrix3x2F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)'
+                    - name: 'Constructor Matrix3x2F (FLOAT,FLOAT,FLOAT,FLOAT,FLOAT,FLOAT)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-matrix3x2f(float_float_float_float_float_float)
                     - name: Método determinante
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-determinant
-                    - name: Identity (método)
+                    - name: Método de identidad
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-identity
                     - name: Método Invert
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-invert
@@ -189,57 +189,57 @@
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-isidentity
                     - name: Método IsInvertible
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-isinvertible
-                    - name: Operator * (método)
+                    - name: operator* (método)
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-operator-mult
-                    - name: Método ReinterpretBaseType (const * D2D1_MATRIX_3X2_F)
+                    - name: Método ReinterpretBaseType (const *D2D1_MATRIX_3X2_F)
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-reinterpretbasetype(constd2d1_matrix_3x2_f)
-                    - name: Método ReinterpretBaseType (* D2D1_MATRIX_3X2_F)
+                    - name: Método ReinterpretBaseType (*D2D1_MATRIX_3X2_F)
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-reinterpretbasetype(d2d1_matrix_3x2_f)
-                    - name: Método Rotation
+                    - name: Método de rotación
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-rotation
-                    - name: 'Método Scale (D2D1_SIZE_F, D2D1_POINT_2F)'
+                    - name: 'Método Scale (D2D1_SIZE_F,D2D1_POINT_2F)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-scale(d2d1_size_f_d2d1_point_2f)
-                    - name: 'Método Scale (FLOAT, FLOAT, D2D1_POINT_2F)'
+                    - name: 'Método Scale (FLOAT,FLOAT,D2D1_POINT_2F)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-scale(float_float_d2d1_point_2f)
                     - name: Método SetProduct
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-setproduct
-                    - name: Skew (método)
+                    - name: Método Skew
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-skew
                     - name: Método TransformPoint
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-transformpoint
                     - name: Método Translation (D2D1_SIZE_F)
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-translation(d2d1_size_f)
-                    - name: 'Método Translation (FLOAT, FLOAT)'
+                    - name: 'Método Translation (FLOAT,FLOAT)'
                       href: /windows/desktop/api/d2d1helper/nf-d2d1helper-matrix3x2f-translation(float_float)
                 - name: Matrix4x3F
                   href: matrix4x3f.md
                   items:
-                    - name: Constructor Matrix4x3F ()
+                    - name: Constructor Matrix4x3F()
                       href: matrix4x3f-matrix4x3f--.md
-                    - name: 'Constructor de Matrix4x3F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)'
+                    - name: 'Constructor Matrix4x3F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)'
                       href: matrix4x3f-matrix4x3f-floats-.md
                 - name: Matrix4x4F
                   href: /windows/desktop/api/d2d1_1helper/nl-d2d1_1helper-matrix4x4f
                   items:
-                    - name: Operator * (método)
+                    - name: operator* (método)
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-operator-mult
                     - name: Método ReinterpretBaseType
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-reinterpretbasetype(d2d1_matrix_4x4_f)
-                    - name: Método ReinterpretBaseType (const D2D1_MATRIX_4X4_F * pMatrix)
+                    - name: Método ReinterpretBaseType(const D2D1_MATRIX_4X4_F *pMatrix)
                       href: /previous-versions/windows/desktop/legacy/hh848012(v=vs.85)
-                    - name: Scale (método)
+                    - name: Método scale
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-scale
                     - name: Método RotationX
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationx
-                    - name: RotationY (método)
+                    - name: Método RotationY
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationy
-                    - name: RotationZ (método)
+                    - name: Método RotationZ
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationz
                     - name: Método RotationArbitraryAxis
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-rotationarbitraryaxis
                     - name: Método SkewX
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-skewx
-                    - name: Skew (método)
+                    - name: Método SkewY
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-skewy
                     - name: Método PerspectiveProjection
                       href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-matrix4x4f-perspectiveprojection
@@ -256,11 +256,11 @@
                 - name: Matrix5x4F
                   href: matrix5x4f.md
                   items:
-                    - name: Constructor Matrix5x4F ()
+                    - name: Constructor Matrix5x4F()
                       href: matrix5x4f-matrix5x4f--.md
-                    - name: 'Constructor Matrix5x4F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, Float, float)'
+                    - name: 'Constructor Matrix5x4F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)'
                       href: matrix5x4f-matrix5x4f-floats-.md
-            - name: Functions
+            - name: Funciones
               href: d2d1functions.md
               items:
                 - name: ArcSegment
@@ -321,11 +321,11 @@
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-layerparameters1
                 - name: LinearGradientBrushProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-lineargradientbrushproperties
-                - name: 'operador * (D2D1_POINT_2F&, D2D1_MATRIX_F&)'
+                - name: 'operator* (D2D1_POINT_2F&,D2D1_MATRIX_F&)'
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-operator-mult
                 - name: PixelFormat
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-pixelformat
-                - name: Point2 (tipo)
+                - name: Point2(Type)
                   href: point2-type-.md
                 - name: Point2F
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-point2f
@@ -341,11 +341,11 @@
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-radialgradientbrushproperties
                 - name: RenderTargetProperties
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-rendertargetproperties
-                - name: Rect (tipo)
+                - name: Rect(Type)
                   href: rect-type-.md
                 - name: RectF
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-rectf
-                - name: RecTL
+                - name: RectL
                   href: /windows/desktop/api/d2d1_1helper/nf-d2d1_1helper-rectl
                 - name: RectU
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-rectu
@@ -355,7 +355,7 @@
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-roundedrect
                 - name: SetDpiCompensatedEffectInput
                   href: /windows/desktop/api/D2d1_1helper/nf-d2d1_1helper-setdpicompensatedeffectinput
-                - name: Tamaño (tipo)
+                - name: Size(Type)
                   href: size-type-.md
                 - name: SizeF
                   href: /windows/desktop/api/d2d1helper/nf-d2d1helper-sizef
@@ -374,12 +374,12 @@
             - name: Estructuras
               href: d2d1structures.md
               items:
-                - name: TypeTraits (tipo)
+                - name: TypeTraits(Type)
                   href: /windows/desktop/api/d2d1helper/ns-d2d1helper-typetraits
-        - name: Tipos de tipo y constantes de Direct2D
+        - name: Constantes y tipos de datos de Direct2D
           href: datatypes-and-constants.md
           items:
-            - name: D2D1_TAG DataType
+            - name: D2D1_TAG Datatype
               href: d2d1-tag.md
             - name: Constantes de Direct2D
               href: direct2d-constants.md
@@ -745,9 +745,9 @@
               href: /windows/desktop/api/d2d1_1/nf-d2d1_1-d2d1createdevice
             - name: D2D1CreateDeviceContext
               href: /windows/desktop/api/d2d1_1/nf-d2d1_1-d2d1createdevicecontext
-            - name: 'D2D1CreateFactory (D2D1_FACTORY_TYPE, REFIID, void * *)'
+            - name: 'D2D1CreateFactory(D2D1_FACTORY_TYPE,REFIID,void**)'
               href: /windows/win32/api/d2d1/nf-d2d1-d2d1createfactory-r1
-            - name: 'D2D1CreateFactory (D2D1_FACTORY_TYPE, REFIID, D2D1_FACTORY_OPTIONS *, void * *)'
+            - name: 'D2D1CreateFactory(D2D1_FACTORY_TYPE,REFIID,D2D1_FACTORY_OPTIONS*,void**)'
               href: /windows/desktop/api/d2d1/nf-d2d1-d2d1createfactory
             - name: D2D1GetGradientMeshInteriorPointsFromCoonsPatch
               href: /windows/desktop/api/d2d1_3/nf-d2d1_3-d2d1getgradientmeshinteriorpointsfromcoonspatch
@@ -759,7 +759,7 @@
               href: /windows/desktop/api/d2d1/nf-d2d1-d2d1makerotatematrix
             - name: D2D1MakeSkewMatrix
               href: /windows/desktop/api/d2d1/nf-d2d1-d2d1makeskewmatrix
-            - name: 'operador * (const D2D1_MATRIX_3X2_F&, const D2D1_MATRIX_3X2_F&)'
+            - name: 'operator* (const D2D1_MATRIX_3X2_F&,const D2D1_MATRIX_3X2_F&)'
               href: /windows/desktop/api/d2d1helper/nf-d2d1helper-operator
             - name: BlobGetter
               href: blobgetter.md
@@ -833,9 +833,9 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getoptions
                 - name: Método GetSurface
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-getsurface
-                - name: Map (método)
+                - name: Método Map
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-map
-                - name: Unasignar método
+                - name: Método Unmap
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1bitmap1-unmap
                 - name: Método GetSourceStream
                   href: /previous-versions/windows/desktop/legacy/hh404353(v=vs.85)
@@ -875,7 +875,7 @@
               items:
                 - name: Método SetDescription
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1blendtransform-setdescription
-                - name: GetDescription (método)
+                - name: Método GetDescription
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1blendtransform-getdescription
             - name: ID2D1BorderTransform
               href: /windows/desktop/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1bordertransform
@@ -902,14 +902,14 @@
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-getopacity
                 - name: Método GetTransform
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-gettransform
-                - name: SetOpacity (método)
+                - name: Método SetOpacity
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-setopacity
-                - name: Método sobrecargado SetTransform
+                - name: Método SetTransform Overloaded
                   href: id2d1brush-settransform.md
                   items:
                     - name: Método SetTransform (D2D1_MATRIX_3X2_F&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f_)
-                    - name: Método SetTransform (D2D1_MATRIX_3X2_F *)
+                    - name: Método SetTransform (D2D1_MATRIX_3X2_F*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1brush-settransform(constd2d1_matrix_3x2_f)
             - name: ID2D1ColorContext
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1colorcontext
@@ -934,12 +934,12 @@
               items:
                 - name: Método Close
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandlist-close
-                - name: Stream
+                - name: STREAM
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandlist-stream
             - name: ID2D1CommandSink
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1commandsink
               items:
-                - name: BeginDraw (método)
+                - name: Método BeginDraw
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-begindraw
                 - name: Método EndDraw
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-enddraw
@@ -963,13 +963,13 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-drawbitmap
                 - name: Método DrawGlyphRun
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-drawglyphrun
-                - name: DrawLine (método)
+                - name: Método DrawLine
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-drawline
                 - name: Método DrawGeometry
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-drawgeometry
                 - name: Método DrawGdiMetafile
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-drawgdimetafile
-                - name: DrawRectangle (método)
+                - name: Método DrawRectangle
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-drawrectangle
                 - name: DrawImage (método)
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-drawimage
@@ -979,7 +979,7 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-fillopacitymask
                 - name: Método FillGeometry
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-fillgeometry
-                - name: FillRectangle (método)
+                - name: Método FillRectangle
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-fillrectangle
                 - name: Método PushAxisAlignedClip
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1commandsink-pushaxisalignedclip
@@ -1056,9 +1056,9 @@
                 - name: Métodos CreatePrintControl
                   href: id2d1device-createprintcontrol.md
                   items:
-                    - name: 'Método CreatePrintControl (IWICImagingFactory *, IPrintDocumentPackageTarget*, D2D1_PRINT_CONTROL_PROPERTIES *, ID2D1PrintControl * *)'
+                    - name: 'Método CreatePrintControl (IWICImagingFactory,*IPrintDocumentPackageTarget*, D2D1_PRINT_CONTROL_PROPERTIES*, ID2D1PrintControl**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1device-createprintcontrol(iwicimagingfactory_iprintdocumentpackagetarget_constd2d1_print_control_properties_id2d1printcontrol)
-                    - name: 'Método CreatePrintControl (IWICImagingFactory *, IPrintDocumentPackageTarget*, D2D1_PRINT_CONTROL_PROPERTIES&, ID2D1PrintControl * *)'
+                    - name: 'Método CreatePrintControl (IWICImagingFactory,*IPrintDocumentPackageTarget*, D2D1_PRINT_CONTROL_PROPERTIES&, ID2D1PrintControl**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1device-createprintcontrol(iwicimagingfactory_iprintdocumentpackagetarget_constd2d1_print_control_properties__id2d1printcontrol)
                 - name: Método GetMaximumTextureMemory
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1device-getmaximumtexturememory
@@ -1110,36 +1110,36 @@
                 - name: Métodos CreateBitmap
                   href: id2d1devicecontext-createbitmap-overload.md
                   items:
-                    - name: 'Método CreateBitmap (D2D1_SIZE_U, void *, UINT32, D2D1_BITMAP_PROPERTIES1*, ID2D1Bitmap1 * *)'
+                    - name: 'Método CreateBitmap (D2D1_SIZE_U,*void, UINT32, D2D1_BITMAP_PROPERTIES1*, ID2D1Bitmap1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmap(d2d1_size_u_constvoid_uint32_constd2d1_bitmap_properties1_id2d1bitmap1)
-                    - name: 'Método CreateBitmap (D2D1_SIZE_U, void *, UINT32, D2D1_BITMAP_PROPERTIES1, ID2D1Bitmap1 * *)'
+                    - name: 'Método CreateBitmap (D2D1_SIZE_U, void*, UINT32, D2D1_BITMAP_PROPERTIES1, ID2D1Bitmap1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmap(d2d1_size_u_constvoid_uint32_constd2d1_bitmap_properties1_id2d1bitmap1)
                 - name: Métodos CreateBitmapBrush
                   href: id2d1devicecontext-createbitmapbrush2.md
                   items:
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES1*, D2D1_BRUSH_PROPERTIES *, ID2D1BitmapBrush1 * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap,*D2D1_BITMAP_BRUSH_PROPERTIES1*, D2D1_BRUSH_PROPERTIES*, ID2D1BitmapBrush1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties1__constd2d1_brush_properties__id2d1bitmapbrush1)
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, ID2D1BitmapBrush1 * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap*, ID2D1BitmapBrush1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapbrush(id2d1bitmap_id2d1bitmapbrush1)
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES1*, ID2D1BitmapBrush1 * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES1*, ID2D1BitmapBrush1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties1__id2d1bitmapbrush1)
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES1, D2D1_BRUSH_PROPERTIES*, ID2D1BitmapBrush1 * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap,*D2D1_BITMAP_BRUSH_PROPERTIES1, D2D1_BRUSH_PROPERTIES*, ID2D1BitmapBrush1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties1__constd2d1_brush_properties__id2d1bitmapbrush1)
                 - name: Métodos CreateBitmapFromDxgiSurface
                   href: id2d1devicecontext-createbitmapfromdxgisurface-overload.md
                   items:
-                    - name: 'Método CreateBitmapFromDxgiSurface (IDXGISurface *, D2D1_BITMAP_PROPERTIES1*, ID2D1Bitmap1 * *)'
+                    - name: 'Método CreateBitmapFromDxgiSurface (IDXGISurface *, D2D1_BITMAP_PROPERTIES1*, ID2D1Bitmap1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1__id2d1bitmap1)
-                    - name: 'Método CreateBitmapFromDxgiSurface (IDXGISurface *, D2D1_BITMAP_PROPERTIES1, ID2D1Bitmap1 * *)'
+                    - name: 'Método CreateBitmapFromDxgiSurface (IDXGISurface*, D2D1_BITMAP_PROPERTIES1, ID2D1Bitmap1**)'
                       href: /windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1__id2d1bitmap1)
                 - name: Métodos CreateBitmapFromWicBitmap
                   href: id2d1devicecontext-createbitmapfromwicbitmap-overload.md
                   items:
-                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, D2D1_BITMAP_PROPERTIES1*, ID2D1Bitmap1 * *)'
+                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, D2D1_BITMAP_PROPERTIES1*, ID2D1Bitmap1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1__id2d1bitmap1)
-                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, D2D1_BITMAP_PROPERTIES1&, ID2D1Bitmap1 * *)'
+                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource*, D2D1_BITMAP_PROPERTIES1&, ID2D1Bitmap1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1__id2d1bitmap1)
-                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, ID2D1Bitmap1 * *)'
+                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource*, ID2D1Bitmap1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_id2d1bitmap1)
                 - name: Método CreateColorContext
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createcolorcontext
@@ -1156,59 +1156,59 @@
                 - name: Métodos CreateImageBrush
                   href: id2d1devicecontext-createimagebrush-overload.md
                   items:
-                    - name: 'Método CreateImageBrush (ID2D1Image *, D2D1_IMAGE_BRUSH_PROPERTIES*, D2D1_BRUSH_PROPERTIES *, ID2D1ImageBrush * *)'
+                    - name: 'Método CreateImageBrush (ID2D1Image *, D2D1_IMAGE_BRUSH_PROPERTIES*, D2D1_BRUSH_PROPERTIES*, ID2D1ImageBrush**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createimagebrush(id2d1image_constd2d1_image_brush_properties__constd2d1_brush_properties__id2d1imagebrush)
-                    - name: 'Método CreateImageBrush (ID2D1Image *, D2D1_IMAGE_BRUSH_PROPERTIES&, D2D1_BRUSH_PROPERTIES&, ID2D1ImageBrush * *)'
+                    - name: 'Método CreateImageBrush (ID2D1Image*, D2D1_IMAGE_BRUSH_PROPERTIES&, D2D1_BRUSH_PROPERTIES&, ID2D1ImageBrush**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createimagebrush(id2d1image_constd2d1_image_brush_properties__constd2d1_brush_properties__id2d1imagebrush)
-                    - name: 'Método CreateImageBrush (ID2D1Image *, D2D1_IMAGE_BRUSH_PROPERTIES&, ID2D1ImageBrush * *)'
+                    - name: 'Método CreateImageBrush (ID2D1Image*, D2D1_IMAGE_BRUSH_PROPERTIES&, ID2D1ImageBrush**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createimagebrush(id2d1image_constd2d1_image_brush_properties__id2d1imagebrush)
                 - name: Métodos DrawBitmap
                   href: id2d1devicecontext-drawbitmap-overload.md
                   items:
                     - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F*, FLOAT, D2D1_INTERPOLATION_MODE, D2D1_RECT_F *, D2D1_MATRIX_4X4_F*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawbitmap(id2d1bitmap_constd2d1_rect_f_float_d2d1_interpolation_mode_constd2d1_rect_f_constd2d1_matrix_4x4_f)
-                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F&, Float, D2D1_INTERPOLATION_MODE, D2D1_RECT_F*, D2D1_MATRIX_4X4_F *)'
+                    - name: 'Método DrawBitmap (ID2D1Bitmap,*D2D1_RECT_F&, FLOAT, D2D1_INTERPOLATION_MODE, D2D1_RECT_F*, D2D1_MATRIX_4X4_F*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawbitmap(id2d1bitmap_constd2d1_rect_f__float_d2d1_interpolation_mode_constd2d1_rect_f_constd2d1_matrix_4x4_f)
-                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F, Float, D2D1_INTERPOLATION_MODE, D2D1_RECT_F, D2D1_MATRIX_4X4_F*)'
+                    - name: 'Método DrawBitmap (ID2D1Bitmap,*D2D1_RECT_F, FLOAT, D2D1_INTERPOLATION_MODE, D2D1_RECT_F, D2D1_MATRIX_4X4_F*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawbitmap(id2d1bitmap_constd2d1_rect_f__float_d2d1_interpolation_mode_constd2d1_rect_f__constd2d1_matrix_4x4_f)
-                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F&, FLOAT, D2D1_INTERPOLATION_MODE, D2D1_RECT_F&, D2D1_MATRIX_4X4_F&)'
+                    - name: 'Método DrawBitmap (ID2D1Bitmap*, D2D1_RECT_F&, FLOAT, D2D1_INTERPOLATION_MODE, D2D1_RECT_F&, D2D1_MATRIX_4X4_F&)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawbitmap(id2d1bitmap_constd2d1_rect_f__float_d2d1_interpolation_mode_constd2d1_rect_f__constd2d1_matrix_4x4_f_)
                 - name: Métodos DrawGdiMetafile
                   href: id2d1devicecontext-drawgdimetafile-overload.md
                   items:
                     - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile *, D2D1_POINT_2F*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawgdimetafile(id2d1gdimetafile_d2d1_point_2f)
-                    - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile *, D2D1_POINT_2F)'
+                    - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile*, D2D1_POINT_2F)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawgdimetafile(id2d1gdimetafile_d2d1_point_2f)
                 - name: Método DrawGlyphRun
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawglyphrun
                 - name: Métodos DrawImage
                   href: id2d1devicecontext-drawimage-overload.md
                   items:
-                    - name: 'Método DrawImage (ID2D1Image *, D2D1_POINT_2F *, D2D1_RECT_F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Image*, D2D1_POINT_2F *, D2D1_RECT_F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1effect_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)
-                    - name: 'Método DrawImage (ID2D1Effect *, D2D1_POINT_2F *, D2D1_RECT_F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Effect*, D2D1_POINT_2F *, D2D1_RECT_F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1effect_constd2d1_point_2f_constd2d1_rect_f_d2d1_interpolation_mode_d2d1_composite_mode)
-                    - name: 'Método DrawImage (ID2D1Image *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Image*, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_d2d1_interpolation_mode_d2d1_composite_mode)
-                    - name: 'Método DrawImage (ID2D1Effect *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Effect*, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1effect_d2d1_interpolation_mode_d2d1_composite_mode)
-                    - name: 'Método DrawImage (ID2D1Image *, D2D1_POINT_2F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Image*, D2D1_POINT_2F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_d2d1_point_2f_d2d1_interpolation_mode_d2d1_composite_mode)
-                    - name: 'Método DrawImage (ID2D1Effect *, D2D1_POINT_2F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Effect*, D2D1_POINT_2F *, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1effect_d2d1_point_2f_d2d1_interpolation_mode_d2d1_composite_mode)
-                    - name: 'Método DrawImage (ID2D1Image *, D2D1_POINT_2F *, D2D1_RECT_F &, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Image*, D2D1_POINT_2F *, D2D1_RECT_F &, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1image_d2d1_point_2f_constd2d1_rect_f__d2d1_interpolation_mode_d2d1_composite_mode)
-                    - name: 'Método DrawImage (ID2D1Effect *, D2D1_POINT_2F, D2D1_RECT_F&, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
+                    - name: 'Método DrawImage (ID2D1Effect*, D2D1_POINT_2F, D2D1_RECT_F&, D2D1_INTERPOLATION_MODE, D2D1_COMPOSITE_MODE)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-drawimage(id2d1effect_d2d1_point_2f_constd2d1_rect_f__d2d1_interpolation_mode_d2d1_composite_mode)
                 - name: Métodos FillOpacityMask
                   href: id2d1devicecontext-fillopacitymask-overload.md
                   items:
-                    - name: 'Método FillOpacityMask (ID2D1Bitmap *, ID2D1Brush*, D2D1_RECT_F *, D2D1_RECT_F*)        '
+                    - name: 'Método FillOpacityMask (ID2D1Bitmap,*ID2D1Brush*, D2D1_RECT_F *, D2D1_RECT_F*)        '
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f__constd2d1_rect_f)
-                    - name: 'Método FillOpacityMask (ID2D1Bitmap *, ID2D1Brush*,& D2D1_RECT_F, D2D1_RECT_F *)        '
+                    - name: 'Método FillOpacityMask (ID2D1Bitmap,*ID2D1Brush,* D2D1_RECT_F&, D2D1_RECT_F*)        '
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f__constd2d1_rect_f)
-                    - name: 'Método FillOpacityMask (ID2D1Bitmap *, ID2D1Brush*,& D2D1_RECT_F, D2D1_RECT_F&)'
+                    - name: 'Método FillOpacityMask (ID2D1Bitmap,*ID2D1Brush,* D2D1_RECT_F&, D2D1_RECT_F&)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-fillopacitymask(id2d1bitmap_id2d1brush_constd2d1_rect_f__constd2d1_rect_f_)
                 - name: Método GetDevice
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-getdevice
@@ -1267,25 +1267,25 @@
                 - name: Métodos CreateImageSourceFromWic
                   href: id2d1devicecontext2-createimagesourcefromwic-overload.md
                   items:
-                    - name: 'CreateImageSourceFromWic (IWICBitmapSource *, D2D1_IMAGE_SOURCE_LOADING_OPTIONS, D2D1_ALPHA_MODE, ID2D1ImageSourceFromWic * *)'
+                    - name: 'Método CreateImageSourceFromWic (IWICBitmapSource*, D2D1_IMAGE_SOURCE_LOADING_OPTIONS, D2D1_ALPHA_MODE, ID2D1ImageSourceFromWic**)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createimagesourcefromwic(iwicbitmapsource_d2d1_image_source_loading_options_id2d1imagesourcefromwic)
-                    - name: 'Método CreateImageSourceFromWic (IWICBitmapSource *, D2D1_IMAGE_SOURCE_LOADING_OPTIONS, ID2D1ImageSourceFromWic * *)'
+                    - name: 'Método CreateImageSourceFromWic (IWICBitmapSource*, D2D1_IMAGE_SOURCE_LOADING_OPTIONS, ID2D1ImageSourceFromWic**)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createimagesourcefromwic(iwicbitmapsource_d2d1_image_source_loading_options_id2d1imagesourcefromwic)
-                    - name: 'Método CreateImageSourceFromWic (IWICBitmapSource *, ID2D1ImageSourceFromWic * *)'
+                    - name: 'Método CreateImageSourceFromWic (IWICBitmapSource*, ID2D1ImageSourceFromWic**)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createimagesourcefromwic(iwicbitmapsource_id2d1imagesourcefromwic)
                 - name: Métodos CreateInk
                   href: id2d1devicecontext2-createink-overload.md
                   items:
-                    - name: 'Método CreateInk (D2D1_INK_POINT&, ID2D1Ink * *)'
+                    - name: 'Método CreateInk (D2D1_INK_POINT&, ID2D1Ink**)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createink(constd2d1_ink_point_id2d1ink)
-                    - name: 'Método CreateInk (D2D1_INK_POINT *, ID2D1Ink * *)'
+                    - name: 'Método CreateInk (D2D1_INK_POINT*, ID2D1Ink**)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createink(constd2d1_ink_point_id2d1ink)
                 - name: Métodos CreateInkStyle
                   href: id2d1devicecontext2-createinkstyle-overload.md
                   items:
-                    - name: 'Método CreateInkStyle (D2D1_INK_STYLE_PROPERTIES&, ID2D1InkStyle * *)'
+                    - name: 'Método CreateInkStyle (D2D1_INK_STYLE_PROPERTIES&, ID2D1InkStyle **)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createinkstyle(constd2d1_ink_style_properties__id2d1inkstyle)
-                    - name: 'Método CreateInkStyle (D2D1_INK_STYLE_PROPERTIES *, ID2D1InkStyle * *)'
+                    - name: 'Método CreateInkStyle (D2D1_INK_STYLE_PROPERTIES*, ID2D1InkStyle **)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createinkstyle(constd2d1_ink_style_properties_id2d1inkstyle)
                 - name: Método CreateLookupTable3D
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-createlookuptable3d
@@ -1294,9 +1294,9 @@
                 - name: Métodos DrawGdiMetafile
                   href: id2d1devicecontext2-drawgdimetafile-overload.md
                   items:
-                    - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile *, D2D1_RECT_F&, D2D1_RECT_F&)'
+                    - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile*, D2D1_RECT_F&, D2D1_RECT_F&)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-drawgdimetafile(id2d1gdimetafile_constd2d1_rect_f__constd2d1_rect_f)
-                    - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile *, D2D1_RECT_F*, D2D1_RECT_F *)'
+                    - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile *, D2D1_RECT_F*, D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-drawgdimetafile(id2d1gdimetafile_constd2d1_rect_f__constd2d1_rect_f)
                     - name: 'Método DrawGdiMetafile (ID2D1GdiMetafile *, D2D1_RECT_F&, D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext2-drawgdimetafile(id2d1gdimetafile_constd2d1_rect_f__constd2d1_rect_f)
@@ -1311,12 +1311,12 @@
               items:
                 - name: Método CreateSpriteBatch
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext3-createspritebatch
-                - name: Métodos DrawSpriteBatch
+                - name: Métodos drawSpriteBatch
                   href: id2d1devicecontext3-drawspritebatch-overloaded.md
                   items:
-                    - name: 'Método DrawSpriteBatch (ID2D1SpriteBatch *, UInt32, UInt32, ID2D1Bitmap*, D2D1_BITMAP_INTERPOLATION_MODE, D2D1_SPRITE_OPTIONS)'
+                    - name: 'Método DrawSpriteBatch(ID2D1SpriteBatch,*UINT32, UINT32, ID2D1Bitmap*, D2D1_BITMAP_INTERPOLATION_MODE, D2D1_SPRITE_OPTIONS)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext3-drawspritebatch(id2d1spritebatch_id2d1bitmap_d2d1_bitmap_interpolation_mode_d2d1_sprite_options)
-                    - name: 'Método DrawSpriteBatch (ID2D1SpriteBatch *, ID2D1Bitmap*, D2D1_BITMAP_INTERPOLATION_MODE, D2D1_SPRITE_OPTIONS)'
+                    - name: 'Método DrawSpriteBatch(ID2D1SpriteBatch *, ID2D1Bitmap*, D2D1_BITMAP_INTERPOLATION_MODE, D2D1_SPRITE_OPTIONS)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext3-drawspritebatch(id2d1spritebatch_id2d1bitmap_d2d1_bitmap_interpolation_mode_d2d1_sprite_options)
             - name: ID2D1DeviceContext4
               href: /windows/desktop/api/d2d1_3/nn-d2d1_3-id2d1devicecontext4
@@ -1330,9 +1330,9 @@
                 - name: Métodos DrawText
                   href: id2d1devicecontext4-drawtext-overload.md
                   items:
-                    - name: 'DrawText (WCHAR *, UInt32, IDWriteTextFormat*, D2D1_RECT_F *, ID2D1Brush*, ID2D1SvgGlyphStyle *, UINT32, D2D1_DRAW_TEXT_OPTIONS, DWRITE_MEASURING_MODE)'
+                    - name: 'Método DrawText(WCHAR,*UINT32, IDWriteTextFormat*, D2D1_RECT_F *, ID2D1Brush*, ID2D1SvgglyphStyle*, UINT32, D2D1_DRAW_TEXT_OPTIONS, DWRITE_MEASURING_MODE)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f_id2d1brush_id2d1svgglyphstyle_uint32_d2d1_draw_text_options_dwrite_measuring_mode)
-                    - name: 'DrawText (WCHAR *, UINT32, IDWriteTextFormat*, D2D1_RECT_F&, ID2D1Brush *, ID2D1SvgGlyphStyle*, UINT32, D2D1_DRAW_TEXT_OPTIONS, DWRITE_MEASURING_MODE)'
+                    - name: 'Método DrawText(WCHAR,*UINT32, IDWriteTextFormat*, D2D1_RECT_F&, ID2D1Brush *, ID2D1SvgGlyphStyle,* UINT32, D2D1_DRAW_TEXT_OPTIONS, DWRITE_MEASURING_MODE)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f_id2d1brush_id2d1svgglyphstyle_uint32_d2d1_draw_text_options_dwrite_measuring_mode)
                 - name: Método DrawTextLayout
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext4-drawtextlayout
@@ -1348,9 +1348,9 @@
                 - name: Métodos CreateColorContextFromSimpleColorProfile
                   href: id2d1devicecontext5-createcolorcontextfromsimplecolorprofile-overload.md
                   items:
-                    - name: 'Método CreateColorContextFromSimpleColorProfile (D2D1_SIMPLE_COLOR_PROFILE *, ID2D1ColorContext1 * *)'
+                    - name: 'Método CreateColorContextFromSimpleColorProfile(D2D1_SIMPLE_COLOR_PROFILE *, ID2D1ColorContext1 **)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext5-createcolorcontextfromsimplecolorprofile(constd2d1_simple_color_profile_id2d1colorcontext1)
-                    - name: 'Método CreateColorContextFromSimpleColorProfile (D2D1_SIMPLE_COLOR_PROFILE &, ID2D1ColorContext1 * *)'
+                    - name: 'Método CreateColorContextFromSimpleColorProfile(D2D1_SIMPLE_COLOR_PROFILE &, ID2D1ColorContext1 **)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext5-createcolorcontextfromsimplecolorprofile(constd2d1_simple_color_profile__id2d1colorcontext1)
                 - name: Método CreateSvgDocument
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext5-createsvgdocument
@@ -1377,23 +1377,23 @@
             - name: ID2D1DrawingStateBlock
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1drawingstateblock
               items:
-                - name: GetDescription (método)
+                - name: Método GetDescription
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1drawingstateblock-getdescription
                 - name: Método GetTextRenderingParams
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1drawingstateblock-gettextrenderingparams
-                - name: Método sobrecargado SetDescription
+                - name: Método SetDescription Overloaded
                   href: id2d1drawingstateblock-setdescription.md
                   items:
-                    - name: Método SetDescription (D2D1_DRAWING_STATE_DESCRIPTION *)
+                    - name: Método SetDescription (D2D1_DRAWING_STATE_DESCRIPTION*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1drawingstateblock-setdescription(constd2d1_drawing_state_description)
-                    - name: Método SetDescription (D2D1_DRAWING_STATE_DESCRIPTION&)
+                    - name: Método SetDescription(D2D1_DRAWING_STATE_DESCRIPTION&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1drawingstateblock-setdescription(constd2d1_drawing_state_description_)
                 - name: Método SetTextRenderingParams
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1drawingstateblock-settextrenderingparams
             - name: ID2D1DrawingStateBlock1
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1drawingstateblock1
               items:
-                - name: GetDescription (método)
+                - name: Método GetDescription
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1drawingstateblock1-getdescription
                 - name: Método SetDescription
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1drawingstateblock1-setdescription
@@ -1476,81 +1476,81 @@
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-setgraph
                 - name: Método PrepareForRender
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender
-            - name: ID2D1EllipseGeometry
+            - name: ID2D1VelopseGeometry
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1ellipsegeometry
               items:
-                - name: Método GetEllipse
+                - name: Método GetVelopse
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1ellipsegeometry-getellipse
             - name: ID2D1Factory
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1factory
               items:
                 - name: Método CreateDCRenderTarget
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdcrendertarget
-                - name: Método sobrecargado CreateDrawingStateBlock
+                - name: Método Sobrecargado CreateDrawingStateBlock
                   href: id2d1factory-createdrawingstateblock.md
                   items:
-                    - name: 'Método CreateDrawingStateBlock (D2D1_DRAWING_STATE_DESCRIPTION *, IDWriteRenderingParams*, ID2D1DrawingStateBlock * *)'
+                    - name: 'Método CreateDrawingStateBlock (D2D1_DRAWING_STATE_DESCRIPTION *,IDWriteRenderingParams*,ID2D1DrawingStateBlock**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdrawingstateblock(constd2d1_drawing_state_description__id2d1drawingstateblock)
-                    - name: 'Método CreateDrawingStateBlock (& de D2D1_DRAWING_STATE_DESCRIPTION, ID2D1DrawingStateBlock * *)'
+                    - name: 'Método CreateDrawingStateBlock (D2D1_DRAWING_STATE_DESCRIPTION&,ID2D1DrawingStateBlock**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdrawingstateblock(constd2d1_drawing_state_description__id2d1drawingstateblock)
-                    - name: Método CreateDrawingStateBlock (ID2D1DrawingStateBlock * *)
+                    - name: Método CreateDrawingStateBlock (ID2D1DrawingStateBlock**)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdrawingstateblock(id2d1drawingstateblock)
-                - name: 'CreateDxgiSurfaceRenderTarget (IDXGISurface *, D2D1_RENDER_TARGET_PROPERTIES const&, ID2D1RenderTarget * *)'
+                - name: 'CreateDxgiSurfaceRenderTarget(IDXGISurface*,D2D1_RENDER_TARGET_PROPERTIES const&,ID2D1RenderTarget**)'
                   href: /windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)
-                - name: 'CreateDxgiSurfaceRenderTarget (IDXGISurface *, D2D1_RENDER_TARGET_PROPERTIES const*, ID2D1RenderTarget * *)'
+                - name: 'CreateDxgiSurfaceRenderTarget(IDXGISurface *,D2D1_RENDER_TARGET_PROPERTIES const*,ID2D1RenderTarget**)'
                   href: /windows/win32/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties_id2d1rendertarget)
-                - name: Método sobrecargado CreateEllipseGeometry
+                - name: Método CreateOxipseGeometry Overloaded
                   href: id2d1factory-createellipsegeometry.md
                   items:
-                    - name: 'Método CreateEllipseGeometry (& de D2D1_ELLIPSE, ID2D1EllipseGeometry * *)'
+                    - name: 'Método CreateVelopseGeometry (D2D1_ELLIPSE&,ID2D1OxipseGeometry**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry)
-                    - name: 'Método CreateEllipseGeometry (D2D1_ELLIPSE *, ID2D1EllipseGeometry * *)'
+                    - name: 'Método CreateVelopseGeometry (D2D1_ELLIPSE*,ID2D1EnsametríaGeometry**)'
                       href: /previous-versions/windows/desktop/legacy/dd371265(v=vs.85)
                 - name: Método CreateGeometryGroup
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-creategeometrygroup
-                - name: Método sobrecargado CreateHwndRenderTarget
+                - name: Método Sobrecargado CreateHwndRenderTarget
                   href: id2d1factory-createhwndrendertarget.md
                   items:
-                    - name: 'Método CreateHwndRenderTarget (D2D1_RENDER_TARGET_PROPERTIES *, D2D1_HWND_RENDER_TARGET_PROPERTIES*, ID2D1HwndRenderTarget * *)'
+                    - name: 'Método CreateHwndRenderTarget (D2D1_RENDER_TARGET_PROPERTIES *,D2D1_HWND_RENDER_TARGET_PROPERTIES*,ID2D1HwndRenderTarget**)'
                       href: /previous-versions/windows/desktop/legacy/dd371275(v=vs.85)
-                    - name: 'Método CreateHwndRenderTarget (D2D1_RENDER_TARGET_PROPERTIES&, D2D1_HWND_RENDER_TARGET_PROPERTIES&, ID2D1HwndRenderTarget * *)'
+                    - name: 'Método CreateHwndRenderTarget (D2D1_RENDER_TARGET_PROPERTIES&,D2D1_HWND_RENDER_TARGET_PROPERTIES&,ID2D1HwndRenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createhwndrendertarget(constd2d1_render_target_properties__constd2d1_hwnd_render_target_properties__id2d1hwndrendertarget)
                 - name: Método CreatePathGeometry
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry
-                - name: Método sobrecargado CreateRectangleGeometry
+                - name: Método CreateRectangleGeometry Overloaded
                   href: id2d1factory-createrectanglegeometry.md
                   items:
-                    - name: 'Método CreateRectangleGeometry (D2D1_RECT_F *, ID2D1RectangleGeometry * *)'
+                    - name: 'Método CreateRectangleGeometry (D2D1_RECT_F*,ID2D1RectangleGeometry**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f_id2d1rectanglegeometry)
-                    - name: 'Método CreateRectangleGeometry (& de D2D1_RECT_F, ID2D1RectangleGeometry * *)'
+                    - name: 'Método CreateRectangleGeometry (D2D1_RECT_F&,ID2D1RectangleGeometry**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createrectanglegeometry(constd2d1_rect_f__id2d1rectanglegeometry)
-                - name: Método sobrecargado CreateRoundedRectangleGeometry
+                - name: CreateRoundedRectangleGeometry Overloaded (método)
                   href: id2d1factory-createroundedrectanglegeometry.md
                   items:
-                    - name: 'Método CreateRoundedRectangleGeometry (& de D2D1_ROUNDED_RECT, ID2D1RoundedRectangleGeometry * *)'
+                    - name: 'Método CreateRoundedRectangleGeometry (D2D1_ROUNDED_RECT&,ID2D1RoundedRectangleGeometry**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createroundedrectanglegeometry(constd2d1_rounded_rect__id2d1roundedrectanglegeometry)
-                    - name: 'Método CreateRoundedRectangleGeometry (D2D1_ROUNDED_RECT *, ID2D1RoundedRectangleGeometry * *)'
+                    - name: 'Método CreateRoundedRectangleGeometry (D2D1_ROUNDED_RECT*,ID2D1RoundedRectangleGeometry**)'
                       href: /previous-versions/windows/desktop/legacy/dd371292(v=vs.85)
-                - name: Método sobrecargado CreateStrokeStyle
+                - name: Método CreateStrokeStyle Overloaded
                   href: id2d1factory-createstrokestyle.md
                   items:
-                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES&, FLOAT *, ID2D1StrokeStyle * *)'
+                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES&,FLOAT*,ID2D1StrokeStyle**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties__constfloat_uint32_id2d1strokestyle)
-                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES *, Float*, ID2D1StrokeStyle * *)'
+                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES *,FLOAT*,ID2D1StrokeStyle**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties__constfloat_uint32_id2d1strokestyle)
-                - name: Método sobrecargado CreateTransformedGeometry
+                - name: Método CreateTransformedGeometry Overloaded
                   href: id2d1factory-createtransformedgeometry.md
                   items:
-                    - name: 'Método CreateTransformedGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F*, ID2D1TransformedGeometry * *)'
+                    - name: 'Método CreateTransformedGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F*,ID2D1TransformedGeometry**)'
                       href: /previous-versions/windows/desktop/legacy/dd371304(v=vs.85)
-                    - name: 'Método CreateTransformedGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F&, ID2D1TransformedGeometry * *)'
+                    - name: 'Método CreateTransformedGeometry (ID2D1Geometry*,D2D1_MATRIX_3X2_F&,ID2D1TransformedGeometry**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createtransformedgeometry(id2d1geometry_constd2d1_matrix_3x2_f__id2d1transformedgeometry)
-                - name: Método sobrecargado CreateWicBitmapRenderTarget
+                - name: Método Sobrecargado CreateWicBitmapRenderTarget
                   href: id2d1factory-createwicbitmaprendertarget.md
                   items:
-                    - name: 'Método CreateWicBitmapRenderTarget (IWICBitmap *, D2D1_RENDER_TARGET_PROPERTIES*, ID2D1RenderTarget * *)'
+                    - name: 'Método CreateWicBitmapRenderTarget (IWICBitmap *, D2D1_RENDER_TARGET_PROPERTIES*,ID2D1RenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createwicbitmaprendertarget(iwicbitmap_constd2d1_render_target_properties__id2d1rendertarget)
-                    - name: 'Método CreateWicBitmapRenderTarget (IWICBitmap *, D2D1_RENDER_TARGET_PROPERTIES&, ID2D1RenderTarget * *)'
+                    - name: 'Método CreateWicBitmapRenderTarget (IWICBitmap*,D2D1_RENDER_TARGET_PROPERTIES&,ID2D1RenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createwicbitmaprendertarget(iwicbitmap_constd2d1_render_target_properties__id2d1rendertarget)
                 - name: Método GetDesktopDpi
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi
@@ -1566,11 +1566,11 @@
                 - name: Métodos CreateDrawingStateBlock
                   href: id2d1factory1-createdrawingstateblock-overload.md
                   items:
-                    - name: 'Método CreateDrawingStateBlock (D2D1_DRAWING_STATE_DESCRIPTION1 *, IDWriteRenderingParams*, ID2D1DrawingStateBlock1 * *)'
+                    - name: 'Método CreateDrawingStateBlock (D2D1_DRAWING_STATE_DESCRIPTION1 *, IDWriteRenderingParams*, ID2D1DrawingStateBlock1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1factory1-createdrawingstateblock(constd2d1_drawing_state_description1__id2d1drawingstateblock1)
-                    - name: 'Método CreateDrawingStateBlock (& de D2D1_DRAWING_STATE_DESCRIPTION1, ID2D1DrawingStateBlock1 * *)'
+                    - name: 'Método CreateDrawingStateBlock (D2D1_DRAWING_STATE_DESCRIPTION1&, ID2D1DrawingStateBlock1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1factory1-createdrawingstateblock(constd2d1_drawing_state_description1__id2d1drawingstateblock1)
-                    - name: Método CreateDrawingStateBlock (ID2D1DrawingStateBlock1 * *)
+                    - name: Método CreateDrawingStateBlock (ID2D1DrawingStateBlock1**)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1factory1-createdrawingstateblock(id2d1drawingstateblock1)
                 - name: Método CreateDevice
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1factory1-createdevice
@@ -1585,9 +1585,9 @@
                 - name: Métodos CreateStrokeStyle
                   href: id2d1factory1-createstrokestyle-overload.md
                   items:
-                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES1 *, FLOAT *, UINT32, ID2D1StrokeStyle1 * *)'
+                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES1*, FLOAT *, UINT32, ID2D1StrokeStyle1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1factory1-createstrokestyle(constd2d1_stroke_style_properties1_constfloat_uint32_id2d1strokestyle1)
-                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES1&, FLOAT *, UINT32, ID2D1StrokeStyle1 * *)'
+                    - name: 'Método CreateStrokeStyle (D2D1_STROKE_STYLE_PROPERTIES1&, FLOAT *, UINT32, ID2D1StrokeStyle1**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1factory1-createstrokestyle(constd2d1_stroke_style_properties1__constfloat_uint32_id2d1strokestyle1)
                 - name: Método CreatePathGeometry
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1factory1-createpathgeometry
@@ -1631,9 +1631,9 @@
             - name: ID2D1GdiMetafile
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1gdimetafile
               items:
-                - name: GetBounds (método)
+                - name: Método GetBounds
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1gdimetafile-getbounds
-                - name: Stream (método)
+                - name: Método Stream
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1gdimetafile-stream
             - name: ID2D1GdiMetafile1
               href: /windows/desktop/api/d2d1_3/nn-d2d1_3-id2d1gdimetafile1
@@ -1645,154 +1645,154 @@
             - name: ID2D1GdiMetafileSink
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1gdimetafilesink
               items:
-                - name: ProcessRecord (método)
+                - name: Método ProcessRecord
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1gdimetafilesink-processrecord
             - name: ID2D1GdiMetafileSink1
               href: /windows/desktop/api/d2d1_3/nn-d2d1_3-id2d1gdimetafilesink1
               items:
-                - name: ProcessRecord (método)
+                - name: Método ProcessRecord
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1gdimetafilesink1-processrecord
             - name: ID2D1Geometry
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1geometry
               items:
-                - name: Método sobrecargado CombineWithGeometry
+                - name: Método CombineWithGeometry Overloaded
                   href: id2d1geometry-combinewithgeometry.md
                   items:
-                    - name: 'Método CombineWithGeometry (ID2D1Geometry *, D2D1_COMBINE_MODE,& D2D1_MATRIX_3X2_F, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método CombineWithGeometry (ID2D1Geometry *,D2D1_COMBINE_MODE,D2D1_MATRIX_3X2_F&,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-combinewithgeometry(id2d1geometry_d2d1_combine_mode_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
-                    - name: 'Método CombineWithGeometry (ID2D1Geometry *, D2D1_COMBINE_MODE, D2D1_MATRIX_3X2_F&, Float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método CombineWithGeometry (ID2D1Geometry *,D2D1_COMBINE_MODE,D2D1_MATRIX_3X2_F&,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-combinewithgeometry(id2d1geometry_d2d1_combine_mode_constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
-                    - name: 'Método CombineWithGeometry (ID2D1Geometry *, D2D1_COMBINE_MODE, D2D1_MATRIX_3X2_F*, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método CombineWithGeometry (ID2D1Geometry *,D2D1_COMBINE_MODE,D2D1_MATRIX_3X2_F*,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-combinewithgeometry(id2d1geometry_d2d1_combine_mode_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método CombineWithGeometry (ID2D1Geometry *, D2D1_COMBINE_MODE, D2D1_MATRIX_3X2_F*, Float, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método CombineWithGeometry (ID2D1Geometry *,D2D1_COMBINE_MODE,D2D1_MATRIX_3X2_F*,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-combinewithgeometry(id2d1geometry_d2d1_combine_mode_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                - name: Método sobrecargado CompareWithGeometry
+                - name: CompareWithGeometry Overloaded (método)
                   href: id2d1geometry-comparewithgeometry.md
                   items:
-                    - name: 'Método CompareWithGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F&, Float, D2D1_GEOMETRY_RELATION*)'
+                    - name: 'Método CompareWithGeometry (ID2D1Geometry *,D2D1_MATRIX_3X2_F&,FLOAT,D2D1_GEOMETRY_RELATION*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-comparewithgeometry(id2d1geometry_constd2d1_matrix_3x2_f__float_d2d1_geometry_relation)
-                    - name: 'Método CompareWithGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F&, D2D1_GEOMETRY_RELATION*)'
+                    - name: 'Método CompareWithGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F&,D2D1_GEOMETRY_RELATION*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-comparewithgeometry(id2d1geometry_constd2d1_matrix_3x2_f__d2d1_geometry_relation)
-                    - name: 'Método CompareWithGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F*, D2D1_GEOMETRY_RELATION *)'
+                    - name: 'Método CompareWithGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F*,D2D1_GEOMETRY_RELATION*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-comparewithgeometry(id2d1geometry_constd2d1_matrix_3x2_f_d2d1_geometry_relation)
-                    - name: 'Método CompareWithGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F*, FLOAT, D2D1_GEOMETRY_RELATION *)'
+                    - name: 'Método CompareWithGeometry (ID2D1Geometry *, D2D1_MATRIX_3X2_F*,FLOAT,D2D1_GEOMETRY_RELATION*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-comparewithgeometry(id2d1geometry_constd2d1_matrix_3x2_f_d2d1_geometry_relation)
-                - name: Método sobrecargado ComputeArea
+                - name: Método ComputeArea Overloaded
                   href: id2d1geometry-computearea.md
                   items:
-                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F&, FLOAT *)'
+                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F&,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f__float)
-                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F&, FLOAT, FLOAT *)'
+                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F&,FLOAT,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f__float_float)
-                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F *, Float*)'
+                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F *,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f_float)
-                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F *, Float, Float*)'
+                    - name: 'Método ComputeArea (D2D1_MATRIX_3X2_F *,FLOAT,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computearea(constd2d1_matrix_3x2_f_float)
-                - name: Método sobrecargado ComputeLength
+                - name: Método ComputeLength Overloaded
                   href: id2d1geometry-computelength.md
                   items:
-                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F&, FLOAT *)'
+                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F&,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float)
-                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F&, FLOAT, FLOAT *)'
+                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F&,FLOAT,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f__float_float)
-                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F *, Float*)'
+                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F *,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float)
-                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F *, Float, Float*)'
+                    - name: 'Método ComputeLength (D2D1_MATRIX_3X2_F *,FLOAT,FLOAT*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computelength(constd2d1_matrix_3x2_f_float)
-                - name: Método sobrecargado ComputePointAtLength
+                - name: Método ComputePointAtLength Overloaded
                   href: id2d1geometry-computepointatlength.md
                   items:
-                    - name: 'Método ComputePointAtLength (FLOAT, D2D1_MATRIX_3X2_F&, D2D1_POINT_2F *, D2D1_POINT_2F*)'
+                    - name: 'Método ComputePointAtLength (FLOAT,D2D1_MATRIX_3X2_F&,D2D1_POINT_2F *,D2D1_POINT_2F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f__d2d1_point_2f_d2d1_point_2f)
-                    - name: 'Método ComputePointAtLength (FLOAT, D2D1_MATRIX_3X2_F&, FLOAT, D2D1_POINT_2F *, D2D1_POINT_2F*)'
+                    - name: 'Método ComputePointAtLength (FLOAT,D2D1_MATRIX_3X2_F&,FLOAT,D2D1_POINT_2F *,D2D1_POINT_2F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f__float_d2d1_point_2f_d2d1_point_2f)
-                    - name: 'Método ComputePointAtLength (FLOAT, D2D1_MATRIX_3X2_F *, D2D1_POINT_2F*, D2D1_POINT_2F *)'
+                    - name: 'Método ComputePointAtLength (FLOAT,D2D1_MATRIX_3X2_F *,D2D1_POINT_2F*,D2D1_POINT_2F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f_d2d1_point_2f_d2d1_point_2f)
-                    - name: 'Método ComputePointAtLength (FLOAT, D2D1_MATRIX_3X2_F *, Float, D2D1_POINT_2F*, D2D1_POINT_2F *)'
+                    - name: 'Método ComputePointAtLength (FLOAT,D2D1_MATRIX_3X2_F *,FLOAT,D2D1_POINT_2F*,D2D1_POINT_2F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f_float_d2d1_point_2f_d2d1_point_2f)
-                - name: Método sobrecargado FillContainsPoint
+                - name: Método FillContainsPoint Overloaded
                   href: id2d1geometry-fillcontainspoint.md
                   items:
-                    - name: 'Método FillContainsPoint (D2D1_POINT_2F, D2D1_MATRIX_3X2_F&, BOOL *)'
+                    - name: 'Método FillContainsPoint (D2D1_POINT_2F,D2D1_MATRIX_3X2_F&,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f__bool)
-                    - name: 'Método FillContainsPoint (D2D1_POINT_2F, D2D1_MATRIX_3X2_F&, FLOAT, BOOL *)'
+                    - name: 'Método FillContainsPoint (D2D1_POINT_2F,D2D1_MATRIX_3X2_F&,FLOAT,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f__float_bool)
-                    - name: 'Método FillContainsPoint (D2D1_POINT_2F, D2D1_MATRIX_3X2_F *, bool*)'
+                    - name: 'Método FillContainsPoint (D2D1_POINT_2F,D2D1_MATRIX_3X2_F *,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_bool)
-                    - name: 'Método FillContainsPoint (D2D1_POINT_2F, D2D1_MATRIX_3X2_F *, Float, bool*)'
+                    - name: 'Método FillContainsPoint (D2D1_POINT_2F,D2D1_MATRIX_3X2_F *,FLOAT,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-fillcontainspoint(d2d1_point_2f_constd2d1_matrix_3x2_f_bool)
-                - name: GetBounds (método sobrecargado)
+                - name: Método GetBounds Overloaded
                   href: id2d1geometry-getbounds.md
                   items:
                     - name: 'Método GetBounds (D2D1_MATRIX_3X2_F *, D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f_d2d1_rect_f)
-                    - name: 'Método GetBounds (D2D1_MATRIX_3X2_F&, D2D1_RECT_F *)'
+                    - name: 'Método GetBounds (D2D1_MATRIX_3X2_F&,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f__d2d1_rect_f)
-                - name: Método sobrecargado GetWidenedBounds
+                - name: Método GetWidenedBounds Overloaded
                   href: id2d1geometry-getwidenedbounds.md
                   items:
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, D2D1_RECT_F*)'
+                    - name: 'Método GetWidenedBounds (FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F&,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__d2d1_rect_f)
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, Float, D2D1_RECT_F*)'
+                    - name: 'Método GetWidenedBounds (FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F&,FLOAT,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_d2d1_rect_f)
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F*, D2D1_RECT_F *)'
+                    - name: 'Método GetWidenedBounds (FLOAT,ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F*,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_d2d1_rect_f)
-                    - name: 'Método GetWidenedBounds (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F*, FLOAT, D2D1_RECT_F *)'
+                    - name: 'Método GetWidenedBounds (FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F*,FLOAT,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_d2d1_rect_f)
-                - name: Outline (método sobrecargado)
+                - name: Método Sobrecargado de esquema
                   href: id2d1geometry-outline.md
                   items:
-                    - name: 'Método Outline (D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F&,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
-                    - name: 'Método Outline (D2D1_MATRIX_3X2_F&, FLOAT, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F&,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
-                    - name: 'Método Outline (D2D1_MATRIX_3X2_F *, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F *,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método Outline (D2D1_MATRIX_3X2_F *, Float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Outline (D2D1_MATRIX_3X2_F *,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-outline(constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                - name: Método sobrecargado StrokeContainsPoint
+                - name: Método StrokeContainsPoint Overloaded
                   href: id2d1geometry-strokecontainspoint.md
                   items:
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *, D2D_MATRIX_3X2_F*, bool *)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT,ID2D1StrokeStyle *,D2D_MATRIX_3X2_F*,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool)
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *, D2D_MATRIX_3X2_F*, Float, bool *)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT,ID2D1StrokeStyle *,D2D_MATRIX_3X2_F*,FLOAT,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_bool)
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *,& D2D1_MATRIX_3X2_F, bool*)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F&,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool)
-                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F, FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, Float, bool*)'
+                    - name: 'Método StrokeContainsPoint (D2D1_POINT_2F,FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F&,FLOAT,BOOL*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_bool)
-                - name: Simplifique el método sobrecargado
+                - name: Simplificar el método sobrecargado
                   href: id2d1geometry-simplify.md
                   items:
-                    - name: 'Método simplificado (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F *, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Simplify (D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F *,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método simplificado (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F *, Float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Simplify (D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F *,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink)
-                    - name: 'Método simplificado (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Simplificar método (D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F&,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
-                    - name: 'Método simplificado (D2D1_GEOMETRY_SIMPLIFICATION_OPTION, D2D1_MATRIX_3X2_F&, FLOAT, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Simplify (D2D1_GEOMETRY_SIMPLIFICATION_OPTION,D2D1_MATRIX_3X2_F&,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-simplify(d2d1_geometry_simplification_option_constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
-                - name: Método sobrecargado dividirlas
+                - name: Método Sobrecargado de Tessellate
                   href: id2d1geometry-tessellate.md
                   items:
-                    - name: 'Método dividirlas (D2D1_MATRIX_3X2_F *, ID2D1TessellationSink*)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F *,ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink)
-                    - name: 'Método dividirlas (D2D1_MATRIX_3X2_F *, Float, ID2D1TessellationSink*)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F *,FLOAT,ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)
-                    - name: 'Método dividirlas (& de D2D1_MATRIX_3X2_F, ID2D1TessellationSink *)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F&,ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink)
-                    - name: 'Método dividirlas (D2D1_MATRIX_3X2_F&, FLOAT, ID2D1TessellationSink *)'
+                    - name: 'Método Tessellate (D2D1_MATRIX_3X2_F&,FLOAT,ID2D1TessellationSink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink)
-                - name: Widening (método sobrecargado)
+                - name: Método Widen Overloaded
                   href: id2d1geometry-widen.md
                   items:
-                    - name: 'Método Wide (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F*, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Widen (FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F*,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método Wide (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F*, Float, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método Widen (FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F*,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink)
-                    - name: 'Método Wide (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Widen (FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F&,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
-                    - name: 'Método Wide (FLOAT, ID2D1StrokeStyle *, D2D1_MATRIX_3X2_F&, Float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método Widen (FLOAT,ID2D1StrokeStyle *,D2D1_MATRIX_3X2_F&,FLOAT,ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometry-widen(float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
             - name: ID2D1GeometryGroup
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1geometrygroup
@@ -1808,28 +1808,28 @@
             - name: ID2D1GeometrySink
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1geometrysink
               items:
-                - name: Método sobrecargado AddArc
+                - name: Método Add Ya sobrecargado
                   href: id2d1geometrysink-addarc.md
                   items:
-                    - name: Método AddArc (D2D1_ARC_SEGMENT&)
+                    - name: Método Add Ya (D2D1_ARC_SEGMENT&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_)
-                    - name: Método AddArc (D2D1_ARC_SEGMENT *)
+                    - name: Método Add Ya (D2D1_ARC_SEGMENT*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addarc(constd2d1_arc_segment_)
-                - name: Método sobrecargado AddBezier
+                - name: Método AddBezier Overloaded
                   href: id2d1geometrysink-addbezier.md
                   items:
                     - name: Método AddBezier (D2D1_BEZIER_SEGMENT&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment_)
-                    - name: Método AddBezier (D2D1_BEZIER_SEGMENT *)
+                    - name: Método AddBezier (D2D1_BEZIER_SEGMENT*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addbezier(constd2d1_bezier_segment)
-                - name: AddLine (método)
+                - name: Método AddLine
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addline
-                - name: Método sobrecargado AddQuadraticBezier
+                - name: Método AddQuadraticBezier Overloaded
                   href: id2d1geometrysink-addquadraticbezier.md
                   items:
                     - name: Método AddQuadraticBezier (D2D1_QUADRATIC_BEZIER_SEGMENT&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_)
-                    - name: Método AddQuadraticBezier (D2D1_QUADRATIC_BEZIER_SEGMENT *)
+                    - name: Método AddQuadraticBezier (D2D1_QUADRATIC_BEZIER_SEGMENT*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbezier(constd2d1_quadratic_bezier_segment_)
                 - name: Método AddQuadraticBeziers
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1geometrysink-addquadraticbeziers
@@ -1871,12 +1871,12 @@
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-checkwindowstate
                 - name: Método GetHwnd
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-gethwnd
-                - name: Cambiar el tamaño del método sobrecargado
+                - name: Cambio de tamaño del método Sobrecargado
                   href: id2d1hwndrendertarget-resize.md
                   items:
-                    - name: Método Resize (D2D1_SIZE_U&)
+                    - name: Resize (método) (D2D1_SIZE_U&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-resize(constd2d1_size_u_)
-                    - name: Método Resize (D2D1_SIZE_U *)
+                    - name: Método Resize (D2D1_SIZE_U*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1hwndrendertarget-resize(constd2d1_size_u)
             - name: ID2D1Image
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1image
@@ -1887,7 +1887,7 @@
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getextendmodex
                 - name: Método GetExtendModeY
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getextendmodey
-                - name: GetImage (método)
+                - name: Método GetImage
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getimage
                 - name: Método GetInterpolationMode
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1imagebrush-getinterpolationmode
@@ -1921,16 +1921,16 @@
                 - name: Métodos EnsureCached
                   href: id2d1imagesourcefromwic-ensurecached-overload.md
                   items:
-                    - name: Método EnsureCached (D2D1_RECT_U *)
+                    - name: Método EnsureCached (D2D1_RECT_U*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u)
                     - name: Método EnsureCached (D2D1_RECT_U&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-ensurecached(constd2d1_rect_u_)
-                - name: GetSource (método)
+                - name: Método GetSource
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-getsource
                 - name: Método TrimCache
                   href: id2d1imagesourcefromwic-trimcache-overload.md
                   items:
-                    - name: Método TrimCache (D2D1_RECT_U *)
+                    - name: Método TrimCache (D2D1_RECT_U*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)
                     - name: Método TrimCache (D2D1_RECT_U&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1imagesourcefromwic-trimcache(constd2d1_rect_u_)
@@ -1939,7 +1939,7 @@
               items:
                 - name: Método AddSegments
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-addsegments
-                - name: GetBounds (método)
+                - name: Método GetBounds
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-getbounds
                 - name: Método GetSegmentCount
                   href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-getsegmentcount
@@ -1952,7 +1952,7 @@
                 - name: Métodos SetSegmentAtEnd
                   href: id2d1ink-setsegmentatend-overload.md
                   items:
-                    - name: Método SetSegmentAtEnd (D2D1_INK_BEZIER_SEGMENT *)
+                    - name: Método SetSegmentAtEnd (D2D1_INK_BEZIER_SEGMENT*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setsegmentatend(constd2d1_ink_bezier_segment_)
                     - name: Método SetSegmentAtEnd (D2D1_INK_BEZIER_SEGMENT&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setsegmentatend(constd2d1_ink_bezier_segment_)
@@ -1961,18 +1961,18 @@
                 - name: Métodos SetStartPoint
                   href: id2d1ink-setstartpoint-overload.md
                   items:
-                    - name: Método SetStartPoint (D2D1_INK_POINT *)
+                    - name: Método SetStartPoint (D2D1_INK_POINT*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point)
                     - name: Método SetStartPoint (D2D1_INK_POINT&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-setstartpoint(constd2d1_ink_point_)
                 - name: Métodos StreamAsGeometry
                   href: id2d1ink-streamasgeometry-overload.md
                   items:
-                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F*, Float, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F*, FLOAT, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
-                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F&, Float, ID2D1SimplifiedGeometrySink*)'
+                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F&, FLOAT, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f__float_id2d1simplifiedgeometrysink)
-                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F*, ID2D1SimplifiedGeometrySink *)'
+                    - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F*, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f_id2d1simplifiedgeometrysink)
                     - name: 'Método StreamAsGeometry (ID2D1InkStyle *, D2D1_MATRIX_3X2_F&, ID2D1SimplifiedGeometrySink*)'
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1ink-streamasgeometry(id2d1inkstyle_constd2d1_matrix_3x2_f__id2d1simplifiedgeometrysink)
@@ -1988,7 +1988,7 @@
                 - name: Método SetNibTransform
                   href: id2d1inkstyle-setnibtransform-overload.md
                   items:
-                    - name: Método SetNibTransform (D2D1_MATRIX_3X2_F *)
+                    - name: Método SetNibTransform (D2D1_MATRIX_3X2_F*)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f)
                     - name: Método SetNibTransform (D2D1_MATRIX_3X2_F&)
                       href: /windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1inkstyle-setnibtransform(constd2d1_matrix_3x2_f_)
@@ -2017,9 +2017,9 @@
               items:
                 - name: Método GetMultithreadProtected
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1multithread-getmultithreadprotected
-                - name: Enter (método)
+                - name: Método Enter
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1multithread-enter
-                - name: Leave (método)
+                - name: Método Leave
                   href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1multithread-leave
             - name: ID2D1OffsetTransform
               href: /windows/desktop/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1offsettransform
@@ -2045,13 +2045,13 @@
                 - name: Métodos ComputePointAndSegmentAtLength
                   href: id2d1pathgeometry1-computepointandsegmentatlength-overload.md
                   items:
-                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F *, Float, D2D1_POINT_DESCRIPTION*)'
+                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F *, FLOAT, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_d2d1_point_description)
-                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, FLOAT, D2D1_POINT_DESCRIPTION *)'
+                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, FLOAT, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__float_d2d1_point_description)
                     - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F *, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f_d2d1_point_description)
-                    - name: 'ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, D2D1_POINT_DESCRIPTION *) (método)'
+                    - name: 'Método ComputePointAndSegmentAtLength (FLOAT, UINT, D2D1_MATRIX_3X2_F&, D2D1_POINT_DESCRIPTION*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1pathgeometry1-computepointandsegmentatlength(float_uint32_constd2d1_matrix_3x2_f__d2d1_point_description)
             - name: ID2D1PrintControl
               href: /windows/desktop/api/d2d1_1/nn-d2d1_1-id2d1printcontrol
@@ -2070,81 +2070,81 @@
                 - name: Métodos GetPropertyName
                   href: id2d1properties-getpropertyname-overload.md
                   items:
-                    - name: 'GetPropertyName (UINT32, PWSTR, UINT32) (método)'
+                    - name: 'Método GetPropertyName(UINT32, PWSTR, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertyname(uint32_pwstr_uint32)
-                    - name: 'GetPropertyName (U, PWSTR, UINT32) (método)'
+                    - name: 'Método GetPropertyName(U, PWSTR, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertyname(u_pwstr_uint32)
                 - name: Métodos GetPropertyNameLength
                   href: id2d1properties-getpropertynamelength-overload.md
                   items:
-                    - name: GetPropertyNameLength (UINT32) (método)
+                    - name: Método GetPropertyNameLength(UINT32)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(uint32)
-                    - name: GetPropertyNameLength (U) (método)
+                    - name: Método GetPropertyNameLength(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getpropertynamelength(u)
                 - name: Métodos GetSubProperties
                   href: id2d1properties-getsubproperties-overload.md
                   items:
-                    - name: 'Método GetSubProperties (UINT32, ID2D1Properties * *)'
+                    - name: 'Método GetSubProperties(UINT32, ID2D1Properties**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getsubproperties(uint32_id2d1properties)
-                    - name: 'Método GetSubProperties (U, ID2D1Properties * *)'
+                    - name: 'Método GetSubProperties(U, ID2D1Properties**)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getsubproperties(u_id2d1properties)
-                - name: GetType (métodos)
+                - name: Métodos GetType
                   href: id2d1properties-gettype-overload.md
                   items:
-                    - name: GetType (UINT32) (método)
+                    - name: Método GetType(UINT32)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-gettype(uint32)
-                    - name: GetType (U) (método)
+                    - name: Método GetType(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-gettype(u)
-                - name: GetValue (métodos)
+                - name: Métodos GetValue
                   href: id2d1properties-getvalue-overload.md
                   items:
-                    - name: 'GetValue (UINT32, D2D1_PROPERTY_TYPE, BYTE *, UINT32) (método)'
+                    - name: 'Método GetValue(UINT32, D2D1_PROPERTY_TYPE, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_d2d1_property_type_byte_uint32)
-                    - name: 'GetValue (UINT32, BYTE *, UINT32) (método)'
+                    - name: 'Método GetValue(UINT32, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(uint32_byte_uint32)
-                    - name: 'GetValue (método U, BYTE *, UINT32)'
+                    - name: 'Método GetValue(U, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_byte_uint32)
-                    - name: 'GetValue (U, T *) (método)'
+                    - name: 'Método GetValue(U, T*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u_t)
-                    - name: GetValue (U) (método)
+                    - name: Método GetValue(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvalue(u)
                 - name: Métodos GetValueByName
                   href: id2d1properties-getvaluebyname-overload.md
                   items:
-                    - name: 'GetValueByName (PCWSTR, D2D1_PROPERTY_TYPE, BYTE *, UINT32) (método)'
+                    - name: 'Método GetValueByName(PCWSTR, D2D1_PROPERTY_TYPE, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr_d2d1_property_type_byte_uint32)
-                    - name: 'GetValueByName (PCWSTR, BYTE *, UINT32) (método)'
+                    - name: 'Método GetValueByName(PCWSTR, BYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr_byte_uint32)
-                    - name: 'GetValueByName (PCWSTR, T *) (método)'
+                    - name: 'Método GetValueByName(PCWSTR, T*)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr_t)
-                    - name: Método GetValueByName (PCWSTR)
+                    - name: Método GetValueByName(PCWSTR)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluebyname(pcwstr)
                 - name: Métodos GetValueSize
                   href: id2d1properties-getvaluesize-overload.md
                   items:
-                    - name: GetValueSize (UINT32) (método)
+                    - name: Método GetValueSize(UINT32)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)
-                    - name: GetValueSize (U) (método)
+                    - name: Método GetValueSize(U)
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u)
-                - name: SetValue (métodos)
+                - name: Métodos SetValue
                   href: id2d1properties-setvalue-overload.md
                   items:
-                    - name: 'Método SetValue (UINT32, D2D1_PROPERTY_TYPE, constBYTE *, UINT32)'
+                    - name: 'Método SetValue(UINT32, D2D1_PROPERTY_TYPE, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_d2d1_property_type_constbyte_uint32)
-                    - name: 'SetValue (UINT32, constBYTE *, UINT32) (método)'
+                    - name: 'Método SetValue(UINT32, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(uint32_constbyte_uint32)
-                    - name: 'SetValue (U, constt&) (método)'
+                    - name: 'Método SetValue(U, constT&)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(u_constt_)
-                    - name: 'SetValue (U, constBYTE *, UINT32) (método)'
+                    - name: 'Método SetValue(U, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvalue(u_constbyte_uint32)
                 - name: Métodos SetValueByName
                   href: id2d1properties-setvaluebyname-overload.md
                   items:
-                    - name: 'Método SetValueByName (PCWSTR, D2D1_PROPERTY_TYPE, constBYTE *, UINT32)'
+                    - name: 'Método SetValueByName(PCWSTR, D2D1_PROPERTY_TYPE, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_d2d1_property_type_constbyte_uint32)
-                    - name: 'Método SetValueByName (PCWSTR, constBYTE *, UINT32)'
+                    - name: 'Método SetValueByName (PCWSTR, constBYTE*, UINT32)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_constbyte_uint32)
-                    - name: 'Método SetValueByName (PCWSTR, const&)'
+                    - name: 'Método SetValueByName(PCWSTR, constT&)'
                       href: /windows/desktop/api/d2d1_1/nf-d2d1_1-id2d1properties-setvaluebyname(pcwstr_constt_)
             - name: ID2D1RadialGradientBrush
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1radialgradientbrush
@@ -2186,184 +2186,184 @@
             - name: ID2D1RenderTarget
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1rendertarget
               items:
-                - name: BeginDraw (método)
+                - name: Método BeginDraw
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw
-                - name: Clear (método sobrecargado)
+                - name: Método Clear Overloaded
                   href: id2d1rendertarget-clear.md
                   items:
-                    - name: Método Clear (D2D1_COLOR_F *)
+                    - name: Método Clear (D2D1_COLOR_F*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f)
                     - name: Método Clear (D2D1_COLOR_F&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-clear(constd2d1_color_f_)
-                - name: Método sobrecargado CreateBitmap
+                - name: Método CreateBitmap Overloaded
                   href: id2d1rendertarget-createbitmap.md
                   items:
-                    - name: 'Método CreateBitmap (D2D1_SIZE_U, D2D1_BITMAP_PROPERTIES&, ID2D1Bitmap * *)'
+                    - name: 'Método CreateBitmap (D2D1_SIZE_U,D2D1_BITMAP_PROPERTIES&,ID2D1Bitmap**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmap(d2d1_size_u_constd2d1_bitmap_properties__id2d1bitmap)
-                    - name: 'Método CreateBitmap (D2D1_SIZE_U, void *, UINT32, D2D1_BITMAP_PROPERTIES*, ID2D1Bitmap * *)'
+                    - name: 'Método CreateBitmap (D2D1_SIZE_U,void *,UINT32,D2D1_BITMAP_PROPERTIES*,ID2D1Bitmap**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmap(d2d1_size_u_constd2d1_bitmap_properties__id2d1bitmap)
-                    - name: 'Método CreateBitmap (D2D1_SIZE_U, void *, UINT32, D2D1_BITMAP_PROPERTIES&, ID2D1Bitmap * *)'
+                    - name: 'Método CreateBitmap (D2D1_SIZE_U,void*,UINT32,D2D1_BITMAP_PROPERTIES&,ID2D1Bitmap**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmap(d2d1_size_u_constvoid_uint32_constd2d1_bitmap_properties__id2d1bitmap)
-                - name: Método sobrecargado CreateBitmapBrush
+                - name: CreateBitmapBrush Overloaded (método)
                   href: id2d1rendertarget-createbitmapbrush.md
                   items:
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES&, D2D1_BRUSH_PROPERTIES&, ID2D1BitmapBrush * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap*,D2D1_BITMAP_BRUSH_PROPERTIES&,D2D1_BRUSH_PROPERTIES&,ID2D1BitmapBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmap(d2d1_size_u_constvoid_uint32_constd2d1_bitmap_properties_id2d1bitmap)
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES&, ID2D1BitmapBrush * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap*,D2D1_BITMAP_BRUSH_PROPERTIES&,ID2D1BitmapBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties__id2d1bitmapbrush)
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, ID2D1BitmapBrush * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap*,ID2D1BitmapBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_id2d1bitmapbrush)
-                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES*, D2D1_BRUSH_PROPERTIES *, ID2D1BitmapBrush * *)'
+                    - name: 'Método CreateBitmapBrush (ID2D1Bitmap *, D2D1_BITMAP_BRUSH_PROPERTIES*,D2D1_BRUSH_PROPERTIES*,ID2D1BitmapBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties__constd2d1_brush_properties__id2d1bitmapbrush)
-                - name: Método sobrecargado CreateBitmapFromWicBitmap
+                - name: CreateBitmapFromWicBitmap Overloaded (método)
                   href: id2d1rendertarget-createbitmapfromwicbitmap.md
                   items:
-                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, ID2D1Bitmap * *)'
+                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource*,ID2D1Bitmap**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_id2d1bitmap)
-                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, D2D1_BITMAP_PROPERTIES&, ID2D1Bitmap * *)'
+                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource*,D2D1_BITMAP_PROPERTIES&,ID2D1Bitmap**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties__id2d1bitmap)
-                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, D2D1_BITMAP_PROPERTIES*, ID2D1Bitmap * *)'
+                    - name: 'Método CreateBitmapFromWicBitmap (IWICBitmapSource *, D2D1_BITMAP_PROPERTIES*,ID2D1Bitmap**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties_id2d1bitmap)
-                - name: Método sobrecargado CreateCompatibleRenderTarget
+                - name: CreateCompatibleRenderTarget Overloaded (método)
                   href: id2d1rendertarget-createcompatiblerendertarget.md
                   items:
-                    - name: Método CreateCompatibleRenderTarget (ID2D1BitmapRenderTarget * *)
+                    - name: Método CreateCompatibleRenderTarget (ID2D1BitmapRenderTarget**)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget)
-                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F *, D2D1_SIZE_U*, D2D1_PIXEL_FORMAT *, D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS, ID2D1BitmapRenderTarget * *)'
+                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F *,D2D1_SIZE_U*,D2D1_PIXEL_FORMAT*,D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS,ID2D1BitmapRenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget)
-                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F, ID2D1BitmapRenderTarget * *)'
+                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F,ID2D1BitmapRenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_id2d1bitmaprendertarget)
-                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F, D2D1_SIZE_U, ID2D1BitmapRenderTarget * *)'
+                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F,D2D1_SIZE_U,ID2D1BitmapRenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_id2d1bitmaprendertarget)
-                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F, D2D1_SIZE_U, D2D1_PIXEL_FORMAT, ID2D1BitmapRenderTarget * *)'
+                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F,D2D1_SIZE_U,D2D1_PIXEL_FORMAT,ID2D1BitmapRenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_id2d1bitmaprendertarget)
-                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F, D2D1_SIZE_U, D2D1_PIXEL_FORMAT, D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS, ID2D1BitmapRenderTarget * *)'
+                    - name: 'Método CreateCompatibleRenderTarget (D2D1_SIZE_F,D2D1_SIZE_U,D2D1_PIXEL_FORMAT,D2D1_COMPATIBLE_RENDER_TARGET_OPTIONS,ID2D1BitmapRenderTarget**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(d2d1_size_f_d2d1_size_u_d2d1_pixel_format_d2d1_compatible_render_target_options_id2d1bitmaprendertarget)
-                - name: Método sobrecargado CreateGradientStopCollection
+                - name: Método Overloaded CreateGradientStopCollection
                   href: id2d1rendertarget-creategradientstopcollection.md
                   items:
-                    - name: 'Método CreateGradientStopCollection (D2D1_GRADIENT_STOP *, ID2D1GradientStopCollection * *)'
+                    - name: 'Método CreateGradientStopCollection (D2D1_GRADIENT_STOP*,ID2D1GradientStopCollection**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_id2d1gradientstopcollection)
-                    - name: 'Método CreateGradientStopCollection (D2D1_GRADIENT_STOP *, D2D1_GAMMA, D2D1_EXTEND_MODE, ID2D1GradientStopCollection * *)'
+                    - name: 'Método CreateGradientStopCollection (D2D1_GRADIENT_STOP*,D2D1_GAMMA,D2D1_EXTEND_MODE,ID2D1GradientStopCollection**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_id2d1gradientstopcollection)
-                - name: Método sobrecargado CreateLayer
+                - name: Método CreateLayer Overloaded
                   href: id2d1rendertarget-createlayer.md
                   items:
-                    - name: Método CreateLayer (ID2D1Layer * *)
+                    - name: Método CreateLayer (ID2D1Layer**)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)
-                    - name: 'Método CreateLayer (D2D1_SIZE_F *, ID2D1Layer * *)'
+                    - name: 'Método CreateLayer (D2D1_SIZE_F*,ID2D1Layer**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(d2d1_size_f_id2d1layer)
-                    - name: 'Método CreateLayer (D2D1_SIZE_F, ID2D1Layer * *)'
+                    - name: 'Método CreateLayer (D2D1_SIZE_F,ID2D1Layer**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(d2d1_size_f_id2d1layer)
-                - name: Método sobrecargado CreateLinearGradientBrush
+                - name: CreateLinearGradientBrush Overloaded (método)
                   href: id2d1rendertarget-createlineargradientbrush.md
                   items:
-                    - name: 'Método CreateLinearGradientBrush (D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES&, D2D1_BRUSH_PROPERTIES&, ID2D1GradientStopCollection *, ID2D1LinearGradientBrush * *)'
+                    - name: 'Método CreateLinearGradientBrush (D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES&,D2D1_BRUSH_PROPERTIES&,ID2D1GradientStopCollection*,ID2D1LinearGradientBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush)
-                    - name: 'Método CreateLinearGradientBrush (D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES&, ID2D1GradientStopCollection *, ID2D1LinearGradientBrush * *)'
+                    - name: 'Método CreateLinearGradientBrush (D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES&,ID2D1GradientStopCollection*,ID2D1LinearGradientBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush)
-                    - name: 'Método CreateLinearGradientBrush (D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES *, D2D1_BRUSH_PROPERTIES*, ID2D1GradientStopCollection *, ID2D1LinearGradientBrush * *)'
+                    - name: 'Método CreateLinearGradientBrush (D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES *,D2D1_BRUSH_PROPERTIES*,ID2D1GradientStopCollection*,ID2D1LinearGradientBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlineargradientbrush(constd2d1_linear_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1lineargradientbrush)
                 - name: Método CreateMesh
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createmesh
-                - name: Método sobrecargado CreateRadialGradientBrush
+                - name: CreateRadialGradientBrush Overloaded (método)
                   href: id2d1rendertarget-createradialgradientbrush.md
                   items:
-                    - name: 'Método CreateRadialGradientBrush (D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES&, D2D1_BRUSH_PROPERTIES&, ID2D1GradientStopCollection *, ID2D1RadialGradientBrush * *)'
+                    - name: 'Método CreateRadialGradientBrush (D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES&,D2D1_BRUSH_PROPERTIES&,ID2D1GradientStopCollection*,ID2D1RadialGradientBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)
-                    - name: 'Método CreateRadialGradientBrush (D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES&, ID2D1GradientStopCollection *, ID2D1RadialGradientBrush * *)'
+                    - name: 'Método CreateRadialGradientBrush (D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES&,ID2D1GradientStopCollection*,ID2D1RadialGradientBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)
-                    - name: 'Método CreateRadialGradientBrush (D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES *, D2D1_BRUSH_PROPERTIES*, ID2D1GradientStopCollection *, ID2D1RadialGradientBrush * *)'
+                    - name: 'Método CreateRadialGradientBrush (D2D1_RADIAL_GRADIENT_BRUSH_PROPERTIES *,D2D1_BRUSH_PROPERTIES*,ID2D1GradientStopCollection*,ID2D1RadialGradientBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)
                 - name: Método CreateSharedBitmap
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createsharedbitmap
-                - name: Método sobrecargado CreateSolidColorBrush
+                - name: CreateSolidColorBrush Overloaded (método)
                   href: id2d1rendertarget-createsolidcolorbrush.md
                   items:
-                    - name: 'Método CreateSolidColorBrush (& de D2D1_COLOR_F, ID2D1SolidColorBrush * *)'
+                    - name: 'Método CreateSolidColorBrush (D2D1_COLOR_F&,ID2D1SolidColorBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__id2d1solidcolorbrush)
-                    - name: 'Método CreateSolidColorBrush (D2D1_COLOR_F&, D2D1_BRUSH_PROPERTIES&, ID2D1SolidColorBrush * *)'
+                    - name: 'Método CreateSolidColorBrush (D2D1_COLOR_F&,D2D1_BRUSH_PROPERTIES&,ID2D1SolidColorBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)
-                    - name: 'Método CreateSolidColorBrush (D2D1_COLOR_F *, D2D1_BRUSH_PROPERTIES*, ID2D1SolidColorBrush * *)'
+                    - name: 'Método CreateSolidColorBrush (D2D1_COLOR_F *,D2D1_BRUSH_PROPERTIES*,ID2D1SolidColorBrush**)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__constd2d1_brush_properties__id2d1solidcolorbrush)
-                - name: Método sobrecargado DrawBitmap
+                - name: Método DrawBitmap Overloaded
                   href: id2d1rendertarget-drawbitmap.md
                   items:
-                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F&, FLOAT, D2D1_BITMAP_INTERPOLATION_MODE, D2D1_RECT_F&)'
+                    - name: 'Método DrawBitmap (ID2D1Bitmap*,D2D1_RECT_F&,FLOAT,D2D1_BITMAP_INTERPOLATION_MODE,D2D1_RECT_F&)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawbitmap(id2d1bitmap_constd2d1_rect_f__float_d2d1_bitmap_interpolation_mode_constd2d1_rect_f_)
-                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F&, Float, D2D1_BITMAP_INTERPOLATION_MODE, D2D1_RECT_F*)'
+                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F&,FLOAT,D2D1_BITMAP_INTERPOLATION_MODE,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawbitmap(id2d1bitmap_constd2d1_rect_f__float_d2d1_bitmap_interpolation_mode_constd2d1_rect_f)
-                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F*, FLOAT, D2D1_BITMAP_INTERPOLATION_MODE, D2D1_RECT_F *)'
+                    - name: 'Método DrawBitmap (ID2D1Bitmap *, D2D1_RECT_F*,FLOAT,D2D1_BITMAP_INTERPOLATION_MODE,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawbitmap(id2d1bitmap_constd2d1_rect_f__float_d2d1_bitmap_interpolation_mode_constd2d1_rect_f)
-                - name: Método sobrecargado de DrawEllipse
+                - name: DrawVelopse Overloaded (método)
                   href: id2d1rendertarget-drawellipse.md
                   items:
-                    - name: 'Método DrawEllipse (D2D1_ELLIPSE&, ID2D1Brush *, Float, ID2D1StrokeStyle*)'
+                    - name: 'Método DrawVelopse (D2D1_ELLIPSE&,ID2D1Brush *,FLOAT,ID2D1StrokeStyle*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawellipse(constd2d1_ellipse__id2d1brush_float_id2d1strokestyle)
-                    - name: 'Método DrawEllipse (D2D1_ELLIPSE *, ID2D1Brush*, Float, ID2D1StrokeStyle *)'
+                    - name: 'Método DrawVelopse (D2D1_ELLIPSE *,ID2D1Brush*,FLOAT,ID2D1StrokeStyle*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawellipse(constd2d1_ellipse__id2d1brush_float_id2d1strokestyle)
                 - name: Método DrawGeometry
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry
                 - name: Método DrawGlyphRun
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun
-                - name: DrawLine (método)
+                - name: Método DrawLine
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawline
-                - name: DrawRectangle (método sobrecargado)
+                - name: Método DrawRectangle Overloaded
                   href: id2d1rendertarget-drawrectangle.md
                   items:
-                    - name: 'Método DrawRectangle (D2D1_RECT_F&, ID2D1Brush *, Float, ID2D1StrokeStyle*)'
+                    - name: 'Método DrawRectangle (D2D1_RECT_F&,ID2D1Brush *,FLOAT,ID2D1StrokeStyle*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)
-                    - name: 'Método DrawRectangle (D2D1_RECT_F,*ID2D1Brush*, Float, ID2D1StrokeStyle *)'
+                    - name: 'Método DrawRectangle (D2D1_RECT_F *,ID2D1Brush*,FLOAT,ID2D1StrokeStyle*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)
-                - name: Método sobrecargado DrawRoundedRectangle
+                - name: Método DrawRoundedRectangle Overloaded
                   href: id2d1rendertarget-drawroundedrectangle.md
                   items:
-                    - name: 'Método DrawRoundedRectangle (D2D1_ROUNDED_RECT&, ID2D1Brush *, Float, ID2D1StrokeStyle*)'
+                    - name: 'Método DrawRoundedRectangle (D2D1_ROUNDED_RECT&,ID2D1Brush *,FLOAT,ID2D1StrokeStyle*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)
-                    - name: 'Método DrawRoundedRectangle (D2D1_ROUNDED_RECT *, ID2D1Brush*, Float, ID2D1StrokeStyle *)'
+                    - name: 'Método DrawRoundedRectangle (D2D1_ROUNDED_RECT *,ID2D1Brush*,FLOAT,ID2D1StrokeStyle*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawroundedrectangle(constd2d1_rounded_rect__id2d1brush_float_id2d1strokestyle)
-                - name: Método sobrecargado DrawText
+                - name: Método DrawText Overloaded
                   href: id2d1rendertarget-drawtext.md
                   items:
-                    - name: 'Método DrawText (WCHAR *, IDWriteTextFormat*, D2D1_RECT_F&, ID2D1Brush *, D2D1_DRAW_TEXT_OPTIONS, DWRITE_MEASURING_MODE)'
+                    - name: 'Método DrawText (WCHAR *,IDWriteTextFormat*,D2D1_RECT_F&,ID2D1Brush*,D2D1_DRAW_TEXT_OPTIONS,DWRITE_MEASURING_MODE)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)
-                    - name: 'Método DrawText (WCHAR *, IDWriteTextFormat*, D2D1_RECT_F *, ID2D1Brush*, D2D1_DRAW_TEXT_OPTIONS, DWRITE_MEASURING_MODE)'
+                    - name: 'Método DrawText (WCHAR *, IDWriteTextFormat*, D2D1_RECT_F *,ID2D1Brush*,D2D1_DRAW_TEXT_OPTIONS,DWRITE_MEASURING_MODE)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)
                 - name: Método DrawTextLayout
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout
                 - name: Método EndDraw
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw
-                - name: FillEllipse (método sobrecargado)
+                - name: Método FillVelopse Overloaded
                   href: id2d1rendertarget-fillellipse.md
                   items:
-                    - name: 'Método FillEllipse (D2D1_ELLIPSE&, ID2D1Brush *)'
+                    - name: 'Método FillVelopse (D2D1_ELLIPSE&,ID2D1Brush*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillellipse(constd2d1_ellipse__id2d1brush)
-                    - name: 'Método FillEllipse (D2D1_ELLIPSE *, ID2D1Brush*)'
+                    - name: 'Método FillVelopse (D2D1_ELLIPSE *,ID2D1Brush*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillellipse(constd2d1_ellipse__id2d1brush)
                 - name: Método FillGeometry
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry
                 - name: Método FillMesh
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillmesh
-                - name: Método sobrecargado FillOpacityMask
+                - name: FillOpacityMask Overloaded (método)
                   href: id2d1rendertarget-fillopacitymask.md
                   items:
-                    - name: 'Método FillOpacityMask (ID2D1Bitmap *, ID2D1Brush*, D2D1_OPACITY_MASK_CONTENT, D2D1_RECT_F&)'
+                    - name: 'Método FillOpacityMask (ID2D1Bitmap *,ID2D1Brush*,D2D1_OPACITY_MASK_CONTENT,D2D1_RECT_F&)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillopacitymask(id2d1bitmap_id2d1brush_d2d1_opacity_mask_content_constd2d1_rect_f__constd2d1_rect_f_)
-                    - name: 'Método FillOpacityMask (ID2D1Bitmap *, ID2D1Brush*, D2D1_OPACITY_MASK_CONTENT, D2D1_RECT_F *)'
+                    - name: 'Método FillOpacityMask (ID2D1Bitmap *,ID2D1Brush*,D2D1_OPACITY_MASK_CONTENT,D2D1_RECT_F*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillopacitymask(id2d1bitmap_id2d1brush_d2d1_opacity_mask_content_constd2d1_rect_f__constd2d1_rect_f_)
-                - name: FillRectangle (método sobrecargado)
+                - name: Método FillRectangle Overloaded
                   href: id2d1rendertarget-fillrectangle.md
                   items:
-                    - name: 'Método FillRectangle (D2D1_RECT_F&, ID2D1Brush *)'
+                    - name: 'Método FillRectangle (D2D1_RECT_F&,ID2D1Brush*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush)
-                    - name: 'Método FillRectangle (D2D1_RECT_F *, ID2D1Brush*)'
+                    - name: 'Método FillRectangle (D2D1_RECT_F *,ID2D1Brush*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush)
-                - name: Método sobrecargado FillRoundedRectangle
+                - name: Método FillRoundedRectangle Overloaded
                   href: id2d1rendertarget-fillroundedrectangle.md
                   items:
-                    - name: 'Método FillRoundedRectangle (& de D2D1_ROUNDED_RECT, ID2D1Brush *)'
+                    - name: 'Método FillRoundedRectangle (D2D1_ROUNDED_RECT&,ID2D1Brush*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect__id2d1brush)
-                    - name: 'Método FillRoundedRectangle (D2D1_ROUNDED_RECT *, ID2D1Brush*)'
+                    - name: 'Método FillRoundedRectangle (D2D1_ROUNDED_RECT *,ID2D1Brush*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-fillroundedrectangle(constd2d1_rounded_rect__id2d1brush)
                 - name: Método Flush
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-flush
@@ -2396,16 +2396,16 @@
                 - name: Método sobrecargado PushAxisAlignedClip
                   href: id2d1rendertarget-pushaxisalignedclip.md
                   items:
-                    - name: 'Método PushAxisAlignedClip (& de D2D1_RECT_F, D2D1_ANTIALIAS_MODE)'
+                    - name: 'Método PushAxisAlignedClip (D2D1_RECT_F&,D2D1_ANTIALIAS_MODE)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)
-                    - name: 'Método PushAxisAlignedClip (D2D1_RECT_F *, D2D1_ANTIALIAS_MODE)'
+                    - name: 'Método PushAxisAlignedClip (D2D1_RECT_F*, D2D1_ANTIALIAS_MODE)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)
-                - name: Método sobrecargado PushLayer
+                - name: Método PushLayer Overloaded
                   href: id2d1rendertarget-push-layer.md
                   items:
-                    - name: 'Método PushLayer (& de D2D1_LAYER_PARAMETERS, ID2D1Layer *)'
+                    - name: 'Método PushLayer (D2D1_LAYER_PARAMETERS&,ID2D1Layer*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)
-                    - name: 'Método PushLayer (D2D1_LAYER_PARAMETERS *, ID2D1Layer*)'
+                    - name: 'Método PushLayer (D2D1_LAYER_PARAMETERS *,ID2D1Layer*)'
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)
                 - name: Método RestoreDrawingState
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-restoredrawingstate
@@ -2421,12 +2421,12 @@
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-settextantialiasmode
                 - name: Método SetTextRenderingParams
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-settextrenderingparams
-                - name: Método sobrecargado SetTransform
+                - name: Método SetTransform Overloaded
                   href: id2d1rendertarget-settransform.md
                   items:
                     - name: Método SetTransform (D2D1_MATRIX_3X2_F&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-settransform(constd2d1_matrix_3x2_f_)
-                    - name: Método SetTransform (D2D1_MATRIX_3X2_F *)
+                    - name: Método SetTransform (D2D1_MATRIX_3X2_F*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-settransform(constd2d1_matrix_3x2_f_)
             - name: ID2D1Resource
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1resource
@@ -2465,12 +2465,12 @@
               items:
                 - name: GetColor (método)
                   href: /windows/desktop/api/d2d1/nf-d2d1-id2d1solidcolorbrush-getcolor
-                - name: Método sobrecargado de SetColor
+                - name: Método SetColor Overloaded
                   href: id2d1solidcolorbrush-setcolor.md
                   items:
                     - name: Método SetColor (D2D1_COLOR_F&)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1solidcolorbrush-setcolor(constd2d1_color_f_)
-                    - name: Método SetColor (D2D1_COLOR_F *)
+                    - name: Método SetColor (D2D1_COLOR_F*)
                       href: /windows/desktop/api/d2d1/nf-d2d1-id2d1solidcolorbrush-setcolor(constd2d1_color_f)
             - name: ID2D1SourceTransform
               href: /windows/desktop/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1sourcetransform
@@ -2531,9 +2531,9 @@
                 - name: Métodos CreatePaint
                   href: id2d1svgdocument-createpaint-overload.md
                   items:
-                    - name: 'Método CreatePaint (D2D1_SVG_PAINT_TYPE, D2D1_COLOR_F *, PCWSTR, ID2D1SvgPaint * *)'
+                    - name: 'Método CreatePaint(D2D1_SVG_PAINT_TYPE, D2D1_COLOR_F *, PCWSTR, ID2D1SvgPaint **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgdocument-createpaint(d2d1_svg_paint_type_constd2d1_color_f_pcwstr_id2d1svgpaint)
-                    - name: 'Método CreatePaint (D2D1_SVG_PAINT_TYPE, D2D1_COLOR_F &, PCWSTR, ID2D1SvgPaint * *)'
+                    - name: 'Método CreatePaint(D2D1_SVG_PAINT_TYPE, D2D1_COLOR_F &, PCWSTR, ID2D1SvgPaint **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgdocument-createpaint(d2d1_svg_paint_type_constd2d1_color_f__pcwstr_id2d1svgpaint)
                 - name: Método CreatePathData
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgdocument-createpathdata
@@ -2558,58 +2558,58 @@
             - name: ID2D1SvgElement
               href: /windows/desktop/api/d2d1svg/nn-d2d1svg-id2d1svgelement
               items:
-                - name: AppendChild (método)
+                - name: Método AppendChild
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-appendchild
                 - name: Método CreateChild
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-createchild
                 - name: Métodos GetAttributeValue
                   href: id2d1svgelement-getattributevalue-overload.md
                   items:
-                    - name: 'GetAttributeValue (PCWSTR, D2D1_SVG_ATTRIBUTE_STRING_TYPE, PWSTR, UINT32) (método)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_ATTRIBUTE_STRING_TYPE, PWSTR, UINT32)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_color_f)
-                    - name: 'GetAttributeValue (PCWSTR, D2D1_SVG_ATTRIBUTE_POD_TYPE, void *, UINT32) (método)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_ATTRIBUTE_POD_TYPE, void *, UINT32)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_attribute_pod_type_void_uint32)
-                    - name: 'Método GetAttributeValue (PCWSTR, REFIID, void * *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, REFIID, void **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_refiid_void)
-                    - name: 'GetAttributeValue (PCWSTR, FLOAT *) (método)'
+                    - name: 'Método GetAttributeValue(PCWSTR, FLOAT *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_float)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_COLOR_F *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_COLOR_F *)'
                       href: /windows/desktop/api//rrascfg/nn-rrascfg-ieapproviderconfig
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_FILL_MODE *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_FILL_MODE *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_fill_mode)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_DISPLAY *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_DISPLAY *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_display)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_OVERFLOW *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_OVERFLOW *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_overflow)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_LINE_JOIN *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_LINE_JOIN *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_line_join)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_LINE_CAP *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_LINE_CAP *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_line_cap)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_VISIBILITY *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_VISIBILITY *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_visibility)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_MATRIX_3X2_F *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_MATRIX_3X2_F *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_matrix_3x2_f)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_UNIT_TYPE *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_UNIT_TYPE *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_unit_type)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_EXTEND_MODE *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_EXTEND_MODE *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_extend_mode)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_PRESERVE_ASPECT_RATIO *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_PRESERVE_ASPECT_RATIO *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_preserve_aspect_ratio)
-                    - name: 'Método GetAttributeValue (PCWSTR, D2D1_SVG_LENGTH *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, D2D1_SVG_LENGTH *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_d2d1_svg_length)
-                    - name: 'Método GetAttributeValue (PCWSTR, ID2D1SvgAttribute * *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, ID2D1SvgAttribute **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_id2d1svgattribute)
-                    - name: 'Método GetAttributeValue (PCWSTR, ID2D1SvgPaint * *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, ID2D1SvgPaint **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_id2d1svgpaint)
-                    - name: 'Método GetAttributeValue (PCWSTR, ID2D1SvgStrokeDashArray * *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, ID2D1SvgStrokeDashArray **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_id2d1svgstrokedasharray)
-                    - name: 'Método GetAttributeValue (PCWSTR, ID2D1SvgPointCollection * *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, ID2D1SvgPointCollection **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_id2d1svgpointcollection)
-                    - name: 'Método GetAttributeValue (PCWSTR, ID2D1SvgPathData * *)'
+                    - name: 'Método GetAttributeValue(PCWSTR, ID2D1SvgPathData **)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevalue(pcwstr_id2d1svgpathdata)
                 - name: Método GetAttributeValueLength
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getattributevaluelength
-                - name: GetDocument (método)
+                - name: Método GetDocument
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getdocument
                 - name: Método GetFirstChild
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getfirstchild
@@ -2617,7 +2617,7 @@
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getlastchild
                 - name: Método GetNextChild
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getnextchild
-                - name: GetParent (método)
+                - name: Método GetParent
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getparent
                 - name: Método GetPreviousChild
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-getpreviouschild
@@ -2652,37 +2652,37 @@
                 - name: Métodos SetAttributeValue
                   href: id2d1svgelement-setattributevalue-overload.md
                   items:
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_ATTRIBUTE_STRING_TYPE, PCWSTR)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_ATTRIBUTE_STRING_TYPE, PCWSTR)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_color_f_)
-                    - name: 'SetAttributeValue (PCWSTR, D2D1_SVG_ATTRIBUTE_POD_TYPE, void *, UINT32) (método)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_ATTRIBUTE_POD_TYPE , void *, UINT32)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_attribute_pod_type_constvoid_uint32)
-                    - name: 'SetAttributeValue (PCWSTR, ID2D1SvgAttribute *) (método)'
+                    - name: 'Método SetAttributeValue(PCWSTR, ID2D1SvgAttribute *)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_id2d1svgattribute)
-                    - name: 'SetAttributeValue (PCWSTR, FLOAT) (método)'
+                    - name: 'Método SetAttributeValue(PCWSTR, FLOAT)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_float)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_COLOR_F &)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_COLOR_F &)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_color_f_)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_FILL_MODE)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_FILL_MODE)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_fill_mode)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_DISPLAY)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_DISPLAY)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_display)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_OVERFLOW)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_OVERFLOW)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_overflow)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_LINE_JOIN)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_LINE_JOIN)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_line_join)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_LINE_CAP)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_LINE_CAP)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_line_cap)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_VISIBILITY)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_VISIBILITY)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_visibility)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_MATRIX_3X2_F &)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_MATRIX_3X2_F &)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_matrix_3x2_f_)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_UNIT_TYPE)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_UNIT_TYPE)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_svg_unit_type)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_EXTEND_MODE)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_EXTEND_MODE)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_d2d1_extend_mode)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_PRESERVE_ASPECT_RATIO &)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_PRESERVE_ASPECT_RATIO &)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_svg_preserve_aspect_ratio_)
-                    - name: 'Método SetAttributeValue (PCWSTR, D2D1_SVG_LENGTH &)'
+                    - name: 'Método SetAttributeValue(PCWSTR, D2D1_SVG_LENGTH &)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-setattributevalue(pcwstr_constd2d1_svg_length_)
                 - name: Método SetTextValue
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgelement-settextvalue
@@ -2710,14 +2710,14 @@
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-getidlength
                 - name: Método GetPaintType
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-getpainttype
-                - name: Métodos de SetColor
+                - name: Métodos SetColor
                   href: id2d1svgpaint-setcolor-overload.md
                   items:
-                    - name: SetColor (D2D1_COLOR_F *) (método)
+                    - name: Método SetColor(D2D1_COLOR_F *)
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setcolor(constd2d1_color_f)
-                    - name: Método SetColor (D2D1_COLOR_F &)
+                    - name: Método SetColor(D2D1_COLOR_F &)
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setcolor(constd2d1_color_f_)
-                - name: SetId (método)
+                - name: Método SetId
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setid
                 - name: Método SetPaintType
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setpainttype
@@ -2759,9 +2759,9 @@
                 - name: Métodos GetDashes
                   href: id2d1svgstrokedasharray-getdashes-overload.md
                   items:
-                    - name: 'GetDashes (FLOAT *, UINT32, UINT32) (método)'
+                    - name: 'Método GetDashes(FLOAT *, UINT32, UINT32)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-getdashes(d2d1_svg_length_uint32_uint32)
-                    - name: 'Método GetDashes (D2D1_SVG_LENGTH *, UINT32, UINT32)'
+                    - name: 'Método GetDashes(D2D1_SVG_LENGTH *, UINT32, UINT32)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-getdashes(d2d1_svg_length_uint32_uint32)
                 - name: Método GetDashesCount
                   href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-getdashescount
@@ -2770,9 +2770,9 @@
                 - name: Métodos UpdateDashes
                   href: id2d1svgstrokedasharray-updatedashes-overload.md
                   items:
-                    - name: 'UpdateDashes (FLOAT *, UINT32, UINT32) (método)'
+                    - name: 'Método UpdateDashes(FLOAT *, UINT32, UINT32)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-updatedashes(constd2d1_svg_length_uint32_uint32)
-                    - name: 'Método UpdateDashes (D2D1_SVG_LENGTH *, UINT32, UINT32)'
+                    - name: 'Método UpdateDashes(D2D1_SVG_LENGTH *, UINT32, UINT32)'
                       href: /windows/desktop/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-updatedashes(constfloat_uint32_uint32)
             - name: ID2D1TessellationSink
               href: /windows/desktop/api/d2d1/nn-d2d1-id2d1tessellationsink
@@ -2811,7 +2811,7 @@
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-getinputcount
                 - name: Método SetSingleTransformNode
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-setsingletransformnode
-                - name: AddNode (método)
+                - name: Método AddNode
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-addnode
                 - name: Método RemoveNode
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-removenode
@@ -2833,9 +2833,9 @@
             - name: ID2D1VertexBuffer
               href: /windows/desktop/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1vertexbuffer
               items:
-                - name: Map (método)
+                - name: Método Map
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1vertexbuffer-map
-                - name: Unasignar método
+                - name: Método Unmap
                   href: /windows/desktop/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1vertexbuffer-unmap
         - name: Estructuras de Direct2D
           href: structures.md
@@ -3015,7 +3015,7 @@
           items:
             - name: Efecto de transformación afín 2D
               href: 2d-affine-transform.md
-            - name: efecto de tabla de búsqueda 3D
+            - name: Efecto de tabla de búsqueda 3D
               href: 3d-lookup-table-effect.md
             - name: Efecto de transformación de perspectiva 3D
               href: 3d-perspective-transform.md
@@ -3025,7 +3025,7 @@
               href: alpha-mask-effect.md
             - name: Efecto compuesto aritmético
               href: arithmetic-composite.md
-            - name: Efecto de Atlas
+            - name: Efecto Atlas
               href: atlas.md
             - name: Efecto de origen de mapa de bits
               href: bitmap-source.md
@@ -3035,7 +3035,7 @@
               href: border.md
             - name: Efecto de brillo
               href: brightness.md
-            - name: Efecto de clave de croma
+            - name: Efecto de clave de sonido
               href: chromakey-effect.md
             - name: Efecto de administración del color
               href: color-management.md
@@ -3051,9 +3051,9 @@
               href: crop.md
             - name: Efecto de atenuación cruzada
               href: cross-fade-effect.md
-            - name: Efecto de Desenfoque direccional
+            - name: Efecto de desenfoque direccional
               href: directional-blur.md
-            - name: Efecto de transferencia discreto
+            - name: Efecto de transferencia discreta
               href: discrete-transfer.md
             - name: Efecto de mapa de desplazamiento
               href: displacement-map.md
@@ -3069,33 +3069,33 @@
               href: emboss-effect.md
             - name: Efecto de exposición
               href: exposure-effect.md
-            - name: Efecto de saturación
+            - name: Efecto de desbordamiento
               href: flood.md
             - name: Efecto de transferencia gamma
               href: gamma-transfer.md
-            - name: Efecto Desenfoque gaussiano
+            - name: Efecto de desenfoque gaussiano
               href: gaussian-blur.md
             - name: Efecto de escala de grises
               href: grayscale-effect.md
             - name: Efecto de mapa de tono HDR
               href: hdr-tone-map-effect.md
-            - name: Efecto resaltado y sombras
+            - name: Efecto de resaltado y sombras
               href: highlights-and-shadows-effect.md
-            - name: Efecto de histograma
+            - name: Efecto histograma
               href: histogram.md
-            - name: Matiz girar efecto
+            - name: Efecto de giro de matiz
               href: hue-rotate.md
             - name: Efecto de matiz a RGB
               href: hue-to-rgb-effect.md
-            - name: Invertir efecto
+            - name: Invert effect
               href: invert-effect.md
             - name: Efecto de transferencia lineal
               href: linear-transfer.md
-            - name: Luminancia a efecto alfa
+            - name: Efecto de luminosidad a alfa
               href: luminance-to-alpha.md
-            - name: Efecto de morfología
+            - name: Efecto de la morfología
               href: morphology.md
-            - name: Efecto opacidad
+            - name: Efecto de opacidad
               href: opacity-effect.md
             - name: Efecto de metadatos de opacidad
               href: opacity-metadata-effect.md
@@ -3103,47 +3103,47 @@
               href: point-specular.md
             - name: Efecto de iluminación difusa puntual
               href: point-diffuse-lighting.md
-            - name: Efecto de posterización
+            - name: Efecto de pósterización
               href: posterize-effect.md
-            - name: Premultiplicar efecto
+            - name: Efecto premultiplicado
               href: premultiply.md
-            - name: Efecto de RGB a matiz
+            - name: Efecto RGB a Hue
               href: rgb-to-hue-effect.md
             - name: Efecto de saturación
               href: saturation.md
             - name: Efecto de escala
               href: high-quality-scale.md
-            - name: Efecto sepia
+            - name: Efecto Sepia
               href: sepia-effect.md
             - name: Efecto de sombra
               href: drop-shadow.md
-            - name: Nitidez del efecto
+            - name: Efecto de ajuste
               href: sharpen-effect.md
             - name: Efecto de iluminación especular puntual
               href: specular-lighting.md
             - name: Efecto de iluminación difusa puntual
               href: diffuse-lighting.md
-            - name: Enderezar efecto
+            - name: Efecto de enderez
               href: straighten-effect.md
             - name: Efecto de transferencia de tabla
               href: table-transfer.md
-            - name: Efecto de temperatura y matiz
+            - name: Temperatura y efecto de tono
               href: temperature-and-tint-effect.md
             - name: Efecto de mosaico
               href: tile.md
-            - name: Efecto de matiz
+            - name: Efecto de tono
               href: tint-effect.md
-            - name: Efecto de turbulencia
+            - name: Efecto de la lebulencia
               href: turbulence.md
-            - name: Efecto Unpremultiply
+            - name: Efecto sin multiplicar
               href: unpremultiply.md
-            - name: Efecto de viñetas
+            - name: Efecto de la viñeta
               href: vignette-effect.md
-            - name: Efecto de ajuste de nivel de blanco
+            - name: Efecto de ajuste de nivel blanco
               href: white-level-adjustment-effect.md
-            - name: YCbCr (efecto)
+            - name: Efecto YCbCr
               href: ycbcr-effect.md
-        - name: Aplicaciones auxiliares de HLSL
+        - name: Asistentes hlsl
           href: hlsl-helpers.md
           items:
             - name: D2DGetInput
@@ -3168,322 +3168,322 @@
         - name: Capa de depuración de Direct2D
           href: direct2ddebuglayer-portal.md
           items:
-            - name: Instalar la capa de depuración de Direct2D
+            - name: Instalación de la capa de depuración de Direct2D
               href: installing-the-direct2d-debug-layer.md
             - name: Introducción a la capa de depuración de Direct2D
               href: direct2ddebuglayer-overview.md
             - name: Depurar mensajes
               href: direct2ddebuglayer-debugmessages.md
               items:
-                - name: 'D1009: error de creación de hardware inesperado'
+                - name: 'D1009: Error inesperado de creación de hardware'
                   href: d1009-unexpected-hardware-creation-error.md
-                - name: 'D1100: identificador ya cerrado'
+                - name: 'D1100: Identificador ya cerrado'
                   href: d1100-handle-already-closed.md
-                - name: 'D1101: identificador desconocido'
+                - name: 'D1101: Identificador desconocido'
                   href: d1101-unknown-handle.md
-                - name: 'D1102: demasiados identificadores abiertos'
+                - name: 'D1102: Demasiados identificadores abiertos'
                   href: d1102-too-many-opened-handles.md
-                - name: 'D1103: identificador perdido'
+                - name: 'D1103: Identificador filtrado'
                   href: d1103-leaked-handle.md
-                - name: 'D1104: posible fuga'
+                - name: 'D1104: posible pérdida'
                   href: d1104-possible-leak.md
-                - name: 'D1105: infracción de subprocesos'
+                - name: 'D1105: Infracción de subprocesos'
                   href: d1105-threading-violation.md
-                - name: 'D1106: el tipo de recurso es incorrecto'
+                - name: 'D1106: El tipo de recurso es incorrecto'
                   href: d1106-resource-is-wrong-type.md
-                - name: 'D1107: error interno'
+                - name: 'D1107: Error interno'
                   href: d1107-internal-error.md
-                - name: 'D1108: generador incorrecto'
+                - name: 'D1108: Fábrica incorrecta'
                   href: d1108-wrong-factory.md
-                - name: 'D1109: error de dibujo'
+                - name: 'D1109: Error de dibujo'
                   href: d1109-draw-failure.md
-                - name: 'D1110: error de vaciado'
+                - name: 'D1110: Error de vaciado'
                   href: d1110-flush-failure.md
-                - name: 'D1111: uso de la capa cuando el clip es suficiente'
+                - name: 'D1111: Usar la capa cuando el clip es suficiente'
                   href: d1111-using-layer-when-clip-is-sufficient.md
-                - name: 'D1112: el dispositivo debe ser DX11'
+                - name: 'D1112: El dispositivo debe ser DX11'
                   href: d1112-device-must-be-dx10-1.md
-                - name: 'D1113: el dispositivo necesita la marca BGRA'
+                - name: 'D1113: El dispositivo necesita la marca BGRA'
                   href: d1113-device-needs-bgra-flag.md
-                - name: 'D1114: puntero nulo no opcional'
+                - name: 'D1114: puntero no opcional NULL'
                   href: d1114-non-optional-pointer-null.md
-                - name: 'D1115: el valor de enumeración no es válido'
+                - name: 'D1115: El valor de enumeración no es válido'
                   href: d1115-enumeration-value-not-valid.md
-                - name: 'D1116: error de creación de hardware inesperado'
+                - name: 'D1116: Error inesperado de creación de hardware'
                   href: d1116.md
-                - name: 'D1117: el mapa de bits no es un destino'
+                - name: 'D1117: El mapa de bits no es un destino'
                   href: d1117.md
-                - name: 'D1118: el destino no es un mapa de bits'
+                - name: 'D1118: Destino no un mapa de bits'
                   href: d1118.md
-                - name: 'D1119: mapa de bits enlazado como destino'
+                - name: 'D1119: Mapa de bits enlazado como destino'
                   href: d1119.md
-                - name: 'D1120: intento no válido de dibujar un mapa de bits'
+                - name: 'D1120: Intento no válido de dibujar mapa de bits'
                   href: d1120.md
-                - name: 'D1121: dominio de recursos incorrecto'
+                - name: 'D1121: Dominio de recursos incorrecto'
                   href: d1121.md
-                - name: 'D1123: no se permite el formato de DXGI desconocido'
+                - name: 'D1123: Formato DXGI desconocido no permitido'
                   href: d1123.md
-                - name: 'D1124: formato de DXGI desconocido con mapa de bits de destino nulo'
+                - name: 'D1124: Formato DXGI desconocido con mapa de bits de destino null'
                   href: d1124.md
-                - name: 'D1125: no coincide el formato de DXGI'
+                - name: 'D1125: Error de coincidencia del formato DXGI'
                   href: d1125.md
-                - name: 'D1126: no se permite el modo alfa desconocido'
+                - name: 'D1126: No se permite el modo alfa desconocido'
                   href: d1126.md
-                - name: 'D1127: no coincide el modo alfa'
+                - name: 'D1127: Error de coincidencia del modo alfa'
                   href: d1127.md
-                - name: 'D1128: el formato de DXGI no se admite en ninguna API'
+                - name: 'D1128: El formato DXGI no se admite en ninguna API'
                   href: d1128.md
-                - name: 'D1129: el formato de DXGI no es compatible con el modo alfa'
+                - name: 'D1129: Formato DXGI incompatible con el modo alfa'
                   href: d1129.md
-                - name: 'D1130: formato de DXGI no permitido por Cap'
+                - name: 'D1130: Formato DXGI no permitido por límites'
                   href: d1130.md
-                - name: 'D1131: formato de DXGI no compatible con GDI'
+                - name: 'D1131: Formato DXGI no compatible con GDI'
                   href: d1131.md
-                - name: 'D1132: formato de DXGI no HWND o compatible con DC'
+                - name: 'D1132: Formato DXGI no compatible con HWND o DC'
                   href: d1132.md
-                - name: 'D1133: no se permite la precisión de búfer desconocida'
+                - name: 'D1133: No se permite la precisión del búfer desconocida'
                   href: d1133.md
-                - name: 'D1134: precisión de búfer no permitida por Cap'
+                - name: 'D1134: Precisión del búfer no permitido por los límites'
                   href: d1134.md
-                - name: 'D1135: la opción Bitmap debe ser de subconjunto'
+                - name: 'D1135: La opción de mapa de bits debe ser subconjunto'
                   href: d1135.md
-                - name: 'D1136: conflicto del modo de representación de texto'
+                - name: 'D1136: Conflicto del modo de representación de texto'
                   href: d1136.md
-                - name: 'D1137: lista de comandos sin cerrar'
+                - name: 'D1137: Lista de comandos sin cerrar'
                   href: d1137.md
-                - name: 'D1138: lista de comandos no válida'
+                - name: 'D1138: Lista de comandos no válidos'
                   href: d1138.md
-                - name: 'D1139: ancho de trazo sin usar'
+                - name: 'D1139: Ancho de trazo sin usar'
                   href: d1139.md
-                - name: 'D1140: el tipo de transformación de trazo usa PPP predeterminado'
+                - name: 'D1140: El tipo de transformación trazo usa PPP predeterminado'
                   href: d1140.md
-                - name: 'D1141: Print requiere el espacio de color sRGB'
+                - name: 'D1141: La impresión requiere espacio de color sRGB'
                   href: d1141.md
-                - name: 'D1144: el efecto no es un destino'
+                - name: 'D1144: El efecto no es un destino'
                   href: d1144.md
-                - name: 'D1145: PPP del control de impresión incorrecto'
+                - name: 'D1145: PPP de control de impresión incorrecto'
                   href: d1145.md
-                - name: 'D1146: controles de representación no válidos'
+                - name: 'D1146: Controles de representación no válidos'
                   href: d1146.md
-                - name: 'D1147: control de impresión cerrado sin AddPage'
+                - name: 'D1147: Control de impresión cerrado sin AddPage'
                   href: d1147.md
-                - name: 'D1148: operación no válida en el control de impresión cerrado'
+                - name: 'D1148: Operación no válida en el control de impresión cerrada'
                   href: d1148.md
-                - name: 'D1149: Print detectó un carácter Unicode no válido'
+                - name: 'D1149: La impresión detectó un carácter Unicode no válido'
                   href: d1149.md
-                - name: 'D1150: selección de nivel de MIP no admitida'
+                - name: 'D1150: Selección de nivel de mip no admitida'
                   href: d1150.md
-                - name: 'D1151: selección de matriz no admitida'
+                - name: 'D1151: Selección de matriz no admitida'
                   href: d1151.md
-                - name: 'D1152: la lista de comandos se cerró dos veces'
+                - name: 'D1152: Lista de comandos cerrada dos veces'
                   href: d1152.md
-                - name: 'D1153: las listas de comandos cerradas no se pueden establecer como destinos'
+                - name: 'D1153: Las listas de comandos cerradas no se pueden establecer como destinos'
                   href: d1153.md
-                - name: 'D1154: formato de entrada de mapa de bits no válido'
+                - name: 'D1154: Formato de entrada de mapa de bits no válido'
                   href: d1154.md
-                - name: 'D1155: FillOpacityMask requiere la representación con alias'
+                - name: 'D1155: FillOpacityMask requiere representación con alias'
                   href: d1155.md
-                - name: 'D1158: modo de unidad de píxeles no compatible con Print'
+                - name: 'D1158: Modo de unidad de píxeles no compatible con la impresión'
                   href: d1158.md
-                - name: 'D1159: topología Commandlist no válida'
+                - name: 'D1159: Topología de lista de comandos no válida'
                   href: d1159.md
-                - name: 'D1160: ciclo en el gráfico'
+                - name: 'D1160: Ciclo en Graph'
                   href: d1160.md
-                - name: 'D1161: CopyFromMemory requiere un mapa de bits legible de la CPU'
+                - name: 'D1161: CopyFromMemory requiere mapa de bits legible de CPU'
                   href: d1161.md
-                - name: 'D1162: FillMesh requiere la representación con alias'
+                - name: 'D1162: FillMesh requiere representación con alias'
                   href: d1162.md
-                - name: 'D1163: imprimir mapa de bits demasiado grande'
+                - name: 'D1163: Mapa de bits de impresión demasiado grande'
                   href: d1163.md
-                - name: 'D1164: opción de asignación no válida'
+                - name: 'D1164: Opción de mapa no válida'
                   href: d1164.md
-                - name: 'D1165: las opciones de mapa de lectura y descartado no son compatibles'
+                - name: 'D1165: Las opciones leer y descartar mapa no son compatibles'
                   href: d1165.md
-                - name: 'D1166: la opción de asignación descartar requiere la opción de asignación de escritura'
+                - name: 'D1166: La opción Descartar mapa requiere la opción Escribir mapa'
                   href: d1166.md
-                - name: 'D1167: la opción de asignación de lectura requiere un mapa de bits legible de la CPU'
+                - name: 'D1167: La opción Leer mapa requiere mapa de bits legible de CPU'
                   href: d1167.md
-                - name: 'D1168: la opción de asignación de escritura requiere un mapa de bits grabable de CPU'
+                - name: 'D1168: La opción Escribir mapa requiere mapa de bits grabable de CPU'
                   href: d1168.md
-                - name: 'D1169: la opción de asignación descartada requiere textura dinámica'
+                - name: 'D1169: La opción Descartar mapa requiere textura dinámica'
                   href: d1169.md
-                - name: 'D1170: marcas no válidas con mapa de bits de textura dinámica'
+                - name: 'D1170: Marcas no válidas con mapa de bits de textura dinámica'
                   href: d1170.md
-                - name: 'D1171: llamada redundante para asignar mapa de bits'
+                - name: 'D1171: Llamada redundante al mapa de bits de mapa de bits'
                   href: d1171.md
-                - name: 'D1172: no se pudo desasignar el mapa de bits no asignado'
+                - name: 'D1172: No válido para desa asignación de mapa de bits no reasignado'
                   href: d1172.md
-                - name: 'D1173: interoperabilidad de cubos de textura no admitida'
+                - name: 'D1173: Interoperabilidad del cubo de textura no admitida'
                   href: d1173.md
-                - name: 'D1174: PushLayer a la lista de comandos omitirá el objeto de capa'
+                - name: 'D1174: PushLayer to Command List omitirá el objeto de capa'
                   href: d1174.md
-                - name: 'D1175: el destino de DXGI no debe usar la marca de software'
+                - name: 'D1175: El destino DXGI no debe usar la marca de software'
                   href: d1175.md
                 - name: 'D1176: PPP negativo'
                   href: d1176.md
-                - name: 'D1177: formato de píxel WIC no admitido'
+                - name: 'D1177: Formato de píxel wic no admitido'
                   href: d1177.md
-                - name: 'D1178: el estilo de guión personalizado requiere una matriz de guiones'
+                - name: 'D1178: El estilo de guión personalizado requiere una matriz dash'
                   href: d1178.md
-                - name: 'D1179: puntos cero de la colección de delimitadores de degradado'
+                - name: 'D1179: Detenciones cero de la colección de detenciones de degradado'
                   href: d1179.md
-                - name: 'D1180: estado incorrecto de BeginDraw'
+                - name: 'D1180: Estado incorrecto de BeginDraw'
                   href: d1180.md
-                - name: 'D1181: EndDraw estado incorrecto'
+                - name: 'D1181: Estado incorrecto de EndDraw'
                   href: d1181.md
-                - name: 'D1182: operación en geometría de ruta de acceso sin cerrar'
+                - name: 'D1182: Operación en geometría de ruta de acceso sin cerrar'
                   href: d1182.md
-                - name: 'D1183: CreateWicBitmapRenderTarget con el nivel de característica incompatible'
+                - name: 'D1183: CreateWicBitmapRenderTarget con nivel de característica incompatible'
                   href: d1183.md
-                - name: 'D1184: CreateWicBitmapRenderTarget incompatible con el tipo de destino de HW'
+                - name: 'D1184: CreateWicBitmapRenderTarget incompatible con el tipo de destino HW'
                   href: d1184.md
-                - name: 'D1185: FillGeometry restricción de pincel de máscara de opacidad'
+                - name: 'D1185: Restricción de pincel de máscara de opacidad FillGeometry'
                   href: d1185.md
-                - name: 'D1186: el destino de representación de DC requiere BindDC'
+                - name: 'D1186: El destino de representación del controlador de dominio requiere BindDC'
                   href: d1186.md
-                - name: 'D1187: SetTarget se llama en el controlador de dominio pendiente'
+                - name: 'D1187: SetTarget llamado en el controlador de dominio pendiente'
                   href: d1187.md
-                - name: 'D1188: las opciones de mapa de bits de destino y lectura de CPU son incompatibles'
+                - name: 'D1188: Las opciones lectura de CPU y mapa de bits de destino no son compatibles'
                   href: d1188.md
-                - name: 'D1189: se usó incorrectamente la opción de mapa de bits de lectura de CPU'
+                - name: 'D1189: La opción de mapa de bits de lectura de CPU se usó incorrectamente'
                   href: d1189.md
-                - name: 'D1190: la marca de mapa de bits CannotDraw se usó incorrectamente'
+                - name: 'D1190: No se ha usado correctamente la marca de mapa de bits CannotDraw'
                   href: d1190.md
-                - name: 'D1191: se usó incorrectamente la opción de mapa de bits compatible con GDI'
+                - name: 'D1191: La opción de mapa de bits compatible con GDI se usó incorrectamente'
                   href: d1191.md
-                - name: 'D1192: se omitió el subconjunto de fuentes de impresión'
+                - name: 'D1192: Subconjunto de fuentes de impresión omitido'
                   href: d1192.md
-                - name: 'D1193: error de CreateFontPackage para la fuente TTC'
+                - name: 'D1193: Error de CreateFontPackage para la fuente TTC'
                   href: d1193.md
-                - name: 'D1194: vaciado del DC pendiente'
+                - name: 'D1194: Vaciado del controlador de dominio pendiente'
                   href: d1194.md
-                - name: 'D1195: solo win8'
+                - name: 'D1195: Solo Win8'
                   href: d1195.md
-                - name: 'D1196: mapa de bits compartido A8'
+                - name: 'D1196: Mapa de bits compartido A8'
                   href: d1196.md
-                - name: 'D1197: dispositivo D3D equivocado'
+                - name: 'D1197: Dispositivo D3D incorrecto'
                   href: d1197.md
-                - name: 'D1198: copiar en Read-Only mapa de bits'
+                - name: 'D1198: Copiar a Read-Only mapa de bits'
                   href: d1198.md
-                - name: 'D1199: recurso de lista de comandos cambiado'
+                - name: 'D1199: Se ha cambiado el recurso de la lista de comandos'
                   href: d1199.md
-                - name: 'D1200: PushLayer con destino multimuestreado'
+                - name: 'D1200: PushLayer con destino multimuestreo'
                   href: d1200.md
-                - name: 'D1201: PushAxisAlignedClip con un destino de muestreo multialias'
+                - name: 'D1201: PushAxisAlignedClip con destino multimuestreo suavizado de contorno'
                   href: d1201.md
-                - name: 'D1202: CopyfromRenderTarget con origen multimuestreado'
+                - name: 'D1202: CopyfromRenderTarget con origen multimuestreo'
                   href: d1202.md
-                - name: 'D1203: CopyFromBitmap con origen multimuestreado'
+                - name: 'D1203: CopyFromBitmap con origen multimuestreo'
                   href: d1203.md
-                - name: 'D1204: la perspectiva de alta calidad cúbica'
+                - name: 'D1204: Perspectiva cúbica de alta calidad'
                   href: d1204.md
-                - name: 'D1205: envío de pop desequilibrado'
+                - name: 'D1205: Insertar pop desequilibrado'
                   href: d1205.md
-                - name: 'D1206: la llamada de pop no coincidía con la de envío'
+                - name: 'D1206: La llamada pop no coincide con la inserción'
                   href: d1206.md
-                - name: 'D1207: recuento de canales de perfil no admitidos'
+                - name: 'D1207: Recuento de canales de perfil no admitidos'
                   href: d1207.md
-                - name: 'D1208: omitir traducción de color'
+                - name: 'D1208: Omitir traducción de colores'
                   href: d1208.md
-                - name: 'D1209: se ha asumido un valor de PPP predeterminado debido a un error de GetResolution'
+                - name: 'D1209: Ppp predeterminado asumido debido a un error de GetResolution'
                   href: d1209.md
-                - name: 'D1210: se supone un valor de PPP predeterminado debido a un valor de PPP de entrada no válido'
+                - name: 'D1210: PPP predeterminado asumido debido a UN PPP de entrada no válido'
                   href: d1210.md
-                - name: 'D1211: contexto de color creado para el espacio de colores EXIF'
+                - name: 'D1211: Contexto de color creado para el espacio de color Exif'
                   href: d1211.md
-                - name: 'D1212: error al recuperar el tamaño del perfil del contexto'
+                - name: 'D1212: Error al recuperar el tamaño del perfil del contexto'
                   href: d1212.md
-                - name: 'D1213: error al recuperar los bytes del perfil del contexto'
+                - name: 'D1213: Error al recuperar bytes de perfil del contexto'
                   href: d1213.md
-                - name: 'D1214: tipo de contexto de color admitido'
+                - name: 'D1214: Tipo de contexto de color admitido'
                   href: d1214.md
-                - name: 'D1215: el intervalo del vértice debe ser nulo'
+                - name: 'D1215: El intervalo de vértices debe ser NULL'
                   href: d1215.md
-                - name: 'D1216: las opciones de vértice deben ser None'
+                - name: 'D1216: Las opciones de vértice deben ser Ninguna'
                   href: d1216.md
-                - name: 'D1217: la descripción de Blend debe ser null'
+                - name: 'D1217: La descripción de Blend debe ser NULL'
                   href: d1217.md
-                - name: 'No se puede usar D1218: no Clear'
+                - name: 'D1218: No borrar no se puede usar'
                   href: d1218.md
-                - name: 'D1219: no se puede usar ninguna superposición con el búfer de profundidad'
+                - name: 'D1219: No se puede usar ninguna superposición con el búfer de profundidad'
                   href: d1219.md
-                - name: 'D1220: recuento de vértices no válidos'
+                - name: 'D1220: Recuento de vértices no válidos'
                   href: d1220.md
                 - name: 'D1221: Perfil de color de origen no válido'
                   href: d1221.md
-                - name: 'D1222: Perfil de color de destino no válido'
+                - name: 'D1222: Perfil de color no válido'
                   href: d1222.md
-                - name: 'D1223: supera los canales admitidos'
+                - name: 'D1223: Superación de los canales admitidos'
                   href: d1223.md
-                - name: 'D1224: Curveset supera los canales admitidos'
+                - name: 'D1224: El conjunto de curvas supera los canales admitidos'
                   href: d1224.md
-                - name: 'D1225: mosaico demasiado pequeño'
+                - name: 'D1225: icono demasiado pequeño'
                   href: d1225.md
-                - name: 'D1226: comportamiento incoherente de MapOutputRectToInputRects'
+                - name: 'D1226: Comportamiento incoherente de MapOutputRectToInputRects'
                   href: d1226.md
-                - name: 'D1227: evento de rasterización de impresión'
+                - name: 'D1227: Evento de rasterización de impresión'
                   href: d1227.md
-                - name: 'D1228: no destino original'
+                - name: 'D1228: Destino no original'
                   href: d1228.md
-                - name: 'D1229: D1229: llamada envolvente a GetDesktopDpi'
+                - name: 'D1229: D1229: Llamada inmersiva a GetDesktopdpi'
                   href: d1229.md
-                - name: 'D1230: compatibilidad de precisión de búfer desconocida'
+                - name: 'D1230: Compatibilidad con precisión de búfer desconocida'
                   href: d1230.md
-                - name: 'D1231: compatibilidad con formatos de DXGI desconocidos'
+                - name: 'D1231: Compatibilidad con formato DXGI desconocido'
                   href: d1231.md
-                - name: 'D1232:32 bpp RGBA causa la conversión'
+                - name: 'D1232: 32bpp RGBA provoca la conversión'
                   href: d1232.md
-                - name: 'D1233: BeginDraw no válido del error anterior'
+                - name: 'D1233: BeginDraw no válido a partir del error anterior'
                   href: d1233.md
-                - name: 'D1234: pincel de recursos null'
+                - name: 'D1234: Pincel de recursos null'
                   href: d1234.md
-                - name: 'D1235: el destino se representa desde varios DC'
+                - name: 'D1235: destino representado en desde varios DCs'
                   href: d1235.md
-                - name: 'D1236: EndDraw con inserciones pendientes'
+                - name: 'D1236: EndDraw con inserción pendiente'
                   href: d1236.md
-                - name: 'D1237: el destino no puede ser nulo'
+                - name: 'D1237: El destino no puede ser NULL'
                   href: d1237.md
-                - name: 'D1238: transformación de origen SRGB de canal único'
+                - name: 'D1238: SRGB de canal único de transformación de origen'
                   href: d1238.md
-                - name: 'D1239: llamada no válida de mapa de bits de transformación de origen'
+                - name: 'D1239: Llamada no válida al mapa de bits de transformación de origen'
                   href: d1239.md
-                - name: 'D1240: transformación de origen todavía asignado'
+                - name: 'D1240: Tranform de origen todavía asignado'
                   href: d1240.md
-                - name: 'D1241: cerrar con inserciones pendientes'
+                - name: 'D1241: Cerrar con inserción pendiente'
                   href: d1241.md
-                - name: 'D1242: falta BeginDraw'
+                - name: 'D1242: Falta BeginDraw'
                   href: d1242.md
-                - name: 'D1243: GetDC Render'
+                - name: 'D1243: Representación de GetDC'
                   href: d1243.md
-                - name: 'D1244: restablecimiento de pila desencadenada por error'
+                - name: 'D1244: Restablecimiento de pila desencadenado por error'
                   href: d1244.md
-                - name: 'D1245: error de invalidación de Commandlist desencadenada'
+                - name: 'D1245: Invalidación de la lista de comandos desencadenada por error'
                   href: d1245.md
-                - name: 'D1246: DC destruido durante el dibujo'
+                - name: 'D1246: DC Destroyed While Drawing'
                   href: d1246.md
-                - name: 'D1247: copia dinámica de la memoria'
+                - name: 'D1247: Copia dinámica desde la memoria'
                   href: d1247.md
-                - name: 'D1248: el mejor modo de funcionalidad es insuficiente'
+                - name: 'D1248: Modo de mejor funcionalidad insuficiente'
                   href: d1248.md
                 - name: 'D1249: destino inaccesible'
                   href: d1249.md
-                - name: 'D1250: origen inaccesible'
+                - name: 'D1250: Origen inaccesible'
                   href: d1250.md
-                - name: 'D1251: problema de estado de D3D'
+                - name: 'D1251: Problema de estado D3D'
                   href: d1251.md
-                - name: 'D1252: ejecución de glifo no válida'
+                - name: 'D1252: Ejecución de glifo no válida'
                   href: d1252.md
-                - name: 'D1253: dejar no coincidente'
+                - name: 'D1253: Licencia no coincidente'
                   href: d1253.md
-                - name: 'D1254: operación en un dominio de subproceso único'
+                - name: 'D1254: Operación en un dominio de subproceso único'
                   href: d1254.md
-                - name: 'D1255: conflicto de metadatos de opacidad de mosaico'
+                - name: 'D1255: Conflicto de metadatos de opacidad de mosaico'
                   href: d1255.md
-                - name: 'D1256: uso de efecto de análisis no válido'
+                - name: 'D1256: Uso de efectos de análisis no válidos'
                   href: d1256.md
-                - name: 'D1257: sombreador no cargado'
+                - name: 'D1257: Sombreador no cargado'
                   href: d1257.md
-                - name: 'D1258: sombreador de cálculo no establecido'
+                - name: 'D1258: Sombreador de proceso no establecido'
                   href: d1258.md
     - name: Ejemplos
       href: d2d-samples.md

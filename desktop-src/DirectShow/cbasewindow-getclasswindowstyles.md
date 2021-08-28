@@ -1,7 +1,7 @@
 ---
-description: El método GetClassWindowStyles recupera los estilos de clase y los estilos de ventana de la ventana.
+description: El método GetClassWindowStyles recupera los estilos de clase y de ventana de la ventana.
 ms.assetid: 6eec7912-c654-4e4f-b6f1-ec94c7284575
-title: Método CBaseWindow. GetClassWindowStyles (Winutil. h)
+title: Método CBaseWindow.GetClassWindowStyles (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a34332f84a91ee88d61ee5f29f0b6a0b0cc44714
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba7042069d4f1190a88b25ea4cc349e8230c149dd61d2d06fc91fa3439a9e55f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074639"
 ---
-# <a name="cbasewindowgetclasswindowstyles-method"></a>CBaseWindow. GetClassWindowStyles, método
+# <a name="cbasewindowgetclasswindowstyles-method"></a>Método CBaseWindow.GetClassWindowStyles
 
-El `GetClassWindowStyles` método recupera los estilos de clase y los estilos de ventana de la ventana.
+El método recupera los estilos de clase y de ventana de `GetClassWindowStyles` la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Puntero a una variable que recibe los estilos de ventana.
 *pWindowStylesEx* 
 </dt> <dd>
 
-Puntero a una variable que recibe los estilos extendidos de ventana.
+Puntero a una variable que recibe los estilos de ventana extendidos.
 
 </dd> </dl>
 
@@ -69,9 +69,9 @@ Puntero a una variable que recibe los estilos extendidos de ventana.
 
 Devuelve una cadena de texto estático que contiene el nombre de clase.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBaseWindow::P reparewindow**](cbasewindow-preparewindow.md) llama a este método para recuperar los estilos de clase y los estilos de ventana de la ventana.
+El [**método CBaseWindow::P repareWindow**](cbasewindow-preparewindow.md) llama a este método para recuperar los estilos de clase y de ventana de la ventana.
 
 Este método es virtual puro; la clase derivada debe implementarla. En el ejemplo siguiente se muestra una posible implementación:
 
@@ -90,7 +90,7 @@ LPTSTR CMyWindowClass::GetClassWindowStyles(DWORD *pClassStyles,
 
 
 
-El objeto usa el estilo de clase para el miembro **lpszClassName** de una estructura WNDCLASS, que pasa a la función **RegisterClass** . El objeto usa los estilos de ventana para los parámetros *dwExStyle* y *dwStyle* de la función **CreateWindowEx** . Para obtener más información, vea el SDK de la plataforma.
+El objeto usa el estilo de clase para el **miembro lpszClassName** de una estructura WNDCLASS, que pasa a la **función RegisterClass.** El objeto usa los estilos de ventana para los *parámetros dwExStyle* y *dwStyle* de la **función CreateWindowEx.** Para obtener más información, consulte el SDK de plataforma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,8 +98,8 @@ El objeto usa el estilo de clase para el miembro **lpszClassName** de una estruc
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ El objeto usa el estilo de clase para el miembro **lpszClassName** de una estruc
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

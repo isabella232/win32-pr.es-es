@@ -1,7 +1,7 @@
 ---
-description: Habilitar o deshabilitar los mensajes de depuración.
+description: Habilite o deshabilite los mensajes de depuración.
 ms.assetid: 5c2aa3cf-ee6a-40fd-b300-67cb6ce691b6
-title: Función D3DX10DebugMute (D3DX10Core. h)
+title: Función D3DX10DebugMute (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 6f331e3f074a4b77a1f1a7f1a8117cf660940f7d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f4cd6a7ade60bc59cb1e6cbd9d3a447fac5cb7364db1ca85dcf704acedaa645c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128387"
 ---
-# <a name="d3dx10debugmute-function"></a>D3DX10DebugMute función)
+# <a name="d3dx10debugmute-function"></a>Función D3DX10DebugMute
 
-Habilitar o deshabilitar los mensajes de depuración.
+Habilite o deshabilite los mensajes de depuración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT D3DX10DebugMute(
 
 <dl> <dt>
 
-*Silenciar* \[ de\]
+*Exclusión mutua* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Establézcalo en **true** para habilitar los mensajes de depuración; establézcalo en **false** para deshabilitar los mensajes de depuración.
+Establezca en **TRUE para** habilitar los mensajes de depuración; establezca en **FALSE para** deshabilitar los mensajes de depuración.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Establézcalo en **true** para habilitar los mensajes de depuración; establézc
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use esta función para deshabilitar los mensajes de error de las API de D3DX10 durante la depuración. el uso de esta función debe protegerse mediante el \_ modificador del compilador de depuración D3D10.
+Use esta función para deshabilitar los mensajes de error de las API D3DX10 durante la depuración. El uso de esta función debe protegerse mediante el modificador del compilador DEBUG D3D10. \_
 
 
 ```
@@ -68,7 +68,7 @@ Use esta función para deshabilitar los mensajes de error de las API de D3DX10 d
 
 
 
-El estado predeterminado es **true** para una compilación de depuración.
+El estado predeterminado es **TRUE para** una compilación de depuración.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ El estado predeterminado es **true** para una compilación de depuración.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
@@ -85,7 +85,7 @@ El estado predeterminado es **true** para una compilación de depuración.
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

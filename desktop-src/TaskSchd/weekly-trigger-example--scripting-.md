@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de desencadenador semanal (scripting)
-description: En este ejemplo de scripting se muestra cómo crear una tarea que ejecute el Bloc de notas a las 8 00 A.M. del lunes de cada semana.
+description: En este ejemplo de scripting se muestra cómo crear una tarea que Bloc de notas a las 8:00 a. m. los lunes de cada semana.
 ms.assetid: 68ef73b0-3780-480e-90fe-940b6e8a5340
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,40 +9,40 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4d9cf627591250c341008ba3a5129c4cc10cad6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6500dae3c0444bc41b982acc06b0e331e63aa4fb821385b416dd0d3e079671d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001773"
 ---
 # <a name="weekly-trigger-example-scripting"></a>Ejemplo de desencadenador semanal (scripting)
 
-En este ejemplo de scripting se muestra cómo crear una tarea que ejecute el Bloc de notas a las 8:00 A.M. del lunes de cada semana. La tarea contiene un desencadenador diario que especifica cuándo se ejecuta la tarea y una acción ejecutable que ejecuta el Bloc de notas.
+En este ejemplo de scripting se muestra cómo crear una tarea que Bloc de notas a las 8:00 a. m. el lunes de cada semana. La tarea contiene un desencadenador diario que especifica cuándo se ejecuta la tarea y una acción ejecutable que se ejecuta Bloc de notas.
 
-En el procedimiento siguiente se describe cómo programar una tarea para que inicie un ejecutable a las 8:00 A.M. del lunes de cada semana.
+En el procedimiento siguiente se describe cómo programar una tarea para iniciar un archivo ejecutable a las 8:00 a. m. el lunes de cada semana.
 
-**Para programar el inicio del Bloc de notas a las 8:00 A.M. del lunes de cada semana**
+**Para programar Bloc de notas que comience a las 8:00 a. m. el lunes de cada semana**
 
-1.  Cree un objeto [**TaskService**](taskservice.md) . Este objeto permite crear la tarea en una carpeta especificada.
-2.  Obtener una carpeta de tareas y crear una tarea. Use el método [**TaskService. GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService. newtask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
-3.  Defina la información sobre la tarea mediante el objeto [**TaskDefinition**](taskdefinition.md) . Use la propiedad [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir la configuración que determina cómo el servicio de programador de tareas realiza la tarea y la propiedad [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
-4.  Cree un desencadenador semanal mediante la propiedad [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Esta propiedad proporciona acceso al objeto [**TriggerCollection**](triggercollection.md) que se usa para crear el desencadenador.
+1.  Cree un [**objeto TaskService.**](taskservice.md) Este objeto permite crear la tarea en una carpeta especificada.
+2.  Obtenga una carpeta de tareas y cree una tarea. Use el [**método TaskService.GetFolder**](taskservice-getfolder.md) para obtener la carpeta donde se almacena la tarea y el método [**TaskService.NewTask**](taskservice-newtask.md) para crear el objeto [**TaskDefinition**](taskdefinition.md) que representa la tarea.
+3.  Defina información sobre la tarea mediante el [**objeto TaskDefinition.**](taskdefinition.md) Use la [**propiedad TaskDefinition.Configuración**](taskdefinition-settings.md) para definir la configuración que determina cómo realiza la tarea el servicio Programador de tareas y la propiedad [**TaskDefinition.RegistrationInfo**](taskdefinition-registrationinfo.md) para definir la información que describe la tarea.
+4.  Cree un desencadenador semanal mediante la [**propiedad TaskDefinition.Triggers.**](taskdefinition-triggers.md) Esta propiedad proporciona acceso al [**objeto TriggerCollection**](triggercollection.md) que se usa para crear el desencadenador.
 
-    Use el método [**TriggerCollection. Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador semanal.
+    Use el [**método TriggerCollection.Create**](triggercollection-create.md) (especificando el tipo de desencadenador que desea crear) para crear un desencadenador semanal.
 
-    Establezca la propiedad [**WeeklyTrigger. StartBoundary**](trigger-startboundary.md) para especificar Cuándo se activa el desencadenador y la hora del día en que se ejecuta la tarea. En este ejemplo, el desencadenador se activa el 1 de enero de 2005 y la tarea se ejecuta a las 8:00 A.M.
+    Establezca la [**propiedad WeeklyTrigger.StartBoundary**](trigger-startboundary.md) para especificar cuándo se activa el desencadenador y la hora del día en que se ejecuta la tarea. En este ejemplo, el desencadenador se activa el 1 de enero de 2005 y la tarea se ejecuta a las 8:00 a. m.
 
-    Establezca la propiedad [**WeeklyTrigger. EndBoundary**](trigger-endboundary.md)para especificar Cuándo se desactiva el desencadenador. En este ejemplo, el desencadenador se desactiva el 1 de enero de 2015.
+    Establezca la [**propiedad WeeklyTrigger.EndBoundary**](trigger-endboundary.md)para especificar cuándo se desactiva el desencadenador. En este ejemplo, el desencadenador se desactiva el 1 de enero de 2015.
 
-    Establezca la propiedad [**WeeklyTrigger. DaysOfWeek**](weeklytrigger-daysofweek.md) para especificar los días de la semana en los que se ejecuta la tarea. En este ejemplo, la tarea se ejecuta el lunes.
+    Establezca la [**propiedad WeeklyTrigger.DaysOfWeek**](weeklytrigger-daysofweek.md) para especificar los días de la semana en los que se ejecuta la tarea. En este ejemplo, la tarea se ejecuta el lunes.
 
-    Establezca la propiedad [**WeeklyTrigger. WeeksInterval**](weeklytrigger-weeksinterval.md)para especificar el intervalo entre las semanas de la programación. En este ejemplo, la tarea se ejecuta cada semana.
+    Establezca la [**propiedad WeeklyTrigger.WeeksInterval**](weeklytrigger-weeksinterval.md)para especificar el intervalo entre las semanas de la programación. En este ejemplo, la tarea se ejecuta cada semana.
 
-5.  Cree una acción para que la tarea se ejecute mediante la propiedad [**TaskDefinition. Actions**](taskdefinition-actions.md) . Esta propiedad proporciona acceso al objeto [**ActionCollection**](actioncollection.md) que se usa para crear la acción. Use el método [**ActionCollection. Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**ExecAction**](execaction.md) , que representa una acción que ejecuta una operación de línea de comandos.
-6.  Registre la tarea mediante el método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . En este ejemplo, la tarea iniciará el Bloc de notas a las 8:00 A.M. del lunes de cada semana.
+5.  Cree una acción para que la tarea se ejecute mediante la [**propiedad TaskDefinition.Actions.**](taskdefinition-actions.md) Esta propiedad proporciona acceso al [**objeto ActionCollection**](actioncollection.md) usado para crear la acción. Use el [**método ActionCollection.Create**](actioncollection-create.md) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto ExecAction,**](execaction.md) que representa una acción que ejecuta una operación de línea de comandos.
+6.  Registre la tarea mediante el [**método TaskFolder.RegisterTaskDefinition.**](taskfolder-registertaskdefinition.md) En este ejemplo, la tarea se iniciará Bloc de notas a las 8:00 a. m. el lunes de cada semana.
 
-En el siguiente ejemplo de VBScript se muestra cómo programar una tarea para ejecutar el Bloc de notas todos los días a las 8:00 A.M.
+En el ejemplo de VBScript siguiente se muestra cómo programar una tarea para ejecutar Bloc de notas cada día a las 8:00 a. m.
 
 
 ```VB
@@ -145,12 +145,12 @@ WScript.Echo "Task submitted."
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso de la Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

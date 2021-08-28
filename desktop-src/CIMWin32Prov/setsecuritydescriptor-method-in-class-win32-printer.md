@@ -2,7 +2,7 @@
 description: Escribe una versión actualizada del descriptor de seguridad que controla el acceso a la impresora.
 ms.assetid: 6a709043-473e-4b24-8b52-6c68b670ebcf
 ms.tgt_platform: multiple
-title: Método SetSecurityDescriptor de la clase Win32_Printer
+title: Método SetSecurityDescriptor de la Win32_Printer clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1572919d0ac0b5c18a6fc5084636c52b9b3ea1c6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b8621c1977c4553f610299695c2c68a72f5a9d6f2ecfcbe6df46b8646c379c2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958963"
 ---
-# <a name="setsecuritydescriptor-method-of-the-win32_printer-class"></a>Método SetSecurityDescriptor de la \_ clase Printer de Win32
+# <a name="setsecuritydescriptor-method-of-the-win32_printer-class"></a>Método SetSecurityDescriptor de la clase Printer de Win32 \_
 
-El método **SetSecurityDescriptor** escribe una versión actualizada del descriptor de seguridad que controla el acceso a la impresora. El descriptor de seguridad es una instancia de la clase [**\_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) . Para obtener más información, consulte [cambiar la seguridad de acceso en objetos protegibles](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
+El **método SetSecurityDescriptor** escribe una versión actualizada del descriptor de seguridad que controla el acceso a la impresora. El descriptor de seguridad es una instancia de la [**clase \_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Para obtener más información, vea [Cambiar la seguridad de acceso en objetos protegibles.](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 SetSecurityDescriptor(
 
 <dl> <dt>
 
-*Descriptor* \[ de\]
+*Descriptor* \[ En\]
 </dt> <dd>
 
 Descriptor de seguridad asociado a la impresora.
@@ -51,7 +51,7 @@ Descriptor de seguridad asociado a la impresora.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para obtener códigos de error adicionales, [**vea Constantes de error WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Error desconocido.
 **9**
 </dt> <dd>
 
-El usuario no tiene los privilegios adecuados para ejecutar el método.
+El usuario no tiene los privilegios adecuados para ejecutar el método .
 
 </dd> <dt>
 
@@ -90,33 +90,33 @@ Un parámetro especificado en la llamada al método no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La instancia de [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos de [**\_ \_ control de descriptor de seguridad**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una [*lista de control de acceso discrecional*](/windows/desktop/SecGloss/d-gly) (DACL) y una [*lista de control de acceso de sistema*](/windows/desktop/SecGloss/s-gly) (SACL). Para obtener más información, vea [listas de Access Control](/windows/desktop/SecAuthZ/access-control-lists).
+La [**instancia \_ de SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos [**SECURITY DESCRIPTOR \_ \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una lista de [*control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) y una lista de [*control*](/windows/desktop/SecGloss/s-gly) de acceso del sistema (SACL). Para obtener más información, [vea Access Control enumeraciones](/windows/desktop/SecAuthZ/access-control-lists).
 
-Si no se concede o habilita **SeSecurityPrivilege** cuando se obtiene un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants) y [ejecutar operaciones con privilegios](/windows/desktop/WmiSdk/executing-privileged-operations).
+Si no se concede o se habilita **SeSecurityPrivilege** al obtener un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**Constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants) y [Ejecución de operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
-Puede actualizar la DACL y la SACL en la instancia de [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) al llamar a este método, pero también puede actualizar solo la DACL o la SACL.
+Puede actualizar la DACL y la SACL en la instancia [**\_ de SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) al llamar a este método, pero también puede actualizar solo la DACL o solo la SACL.
 
-Los valores siguientes en [**el \_ \_ control de descriptor de seguridad**](/windows/desktop/SecAuthZ/security-descriptor-control) determinan si se actualiza la DACL, la SACL o ambas.
+Los valores siguientes de [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) determinan si se actualizan dacl, sacl o ambos.
 
--   **DACL de SE \_ \_ presente**
+-   **\_SE DACL \_ PRESENT**
 
     Indica que se debe actualizar la DACL. Si no se establece, WMI conserva el valor original de la DACL.
 
--   **la \_ SACL de se \_ presente**
+-   **\_SE SACL \_ PRESENT**
 
-    Indica que se debe actualizar la SACL. Si no se establece, WMI conserva el valor original de la SACL. Para actualizar la SACL, la cuenta debe tener habilitado el privilegio **SeSecurityPrivilege** . En el caso de scripting, el nombre del privilegio es **SeSecurityPrivilege**. Para obtener más información, vea [**constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants).
+    Indica que se debe actualizar la SACL. Si no se establece, WMI conserva el valor original de sacl. Para actualizar la SACL, la cuenta debe tener habilitado el privilegio **SeSecurityPrivilege.** Para el scripting, el nombre de privilegio **es SeSecurityPrivilege.** Para obtener más información, vea [**Constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants).
 
-Si el administrador de confianza del grupo y las propiedades del administrador del propietario no son **nulos**, se actualizan. De lo contrario, WMI conserva los valores originales. Para obtener más información, vea [objetos de descriptor de seguridad de WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects).
+Si las propiedades de administrador de grupo y administrador de propietarios no son **NULL,** se actualizan. De lo contrario, WMI conserva los valores originales. Para obtener más información, vea [Objetos de descriptor de seguridad WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects).
 
-Cuando una nueva SACL es **null** en una llamada a este método, la SACL del descriptor de seguridad del objeto protegible de destino permanece sin cambios.
+Cuando una sacl nueva es **NULL en** una llamada a este método, el descriptor de seguridad SACL del objeto protegible de destino se deja sin modificar.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de PowerShell [Copy-ACLToPrinter](https://Gallery.TechNet.Microsoft.Com/Copy-ACLToPrinter-2d66ce19) reemplaza los permisos (ACL) de una impresora a otra.
+En [el ejemplo copy-ACLToPrinter](https://Gallery.TechNet.Microsoft.Com/Copy-ACLToPrinter-2d66ce19) de PowerShell, reemplace los permisos (ACL) de una impresora a otra.
 
-En el ejemplo de código de PowerShell siguiente se describe cómo establecer el descriptor de seguridad para una impresora.
+En el siguiente ejemplo de código de PowerShell se describe cómo establecer el descriptor de seguridad para una impresora.
 
 
 ```PowerShell
@@ -182,8 +182,8 @@ $Printer.SetSecurityDescriptor($SD)
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -192,10 +192,10 @@ $Printer.SetSecurityDescriptor($SD)
 
 <dl> <dt>
 
-[**\_Impresora Win32**](win32-printer.md)
+[**Impresora \_ Win32**](win32-printer.md)
 </dt> <dt>
 
-[**Constantes de privilegio**](/windows/desktop/WmiSdk/privilege-constants)
+[**Constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants)
 </dt> <dt>
 
 [Objetos de descriptor de seguridad WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)

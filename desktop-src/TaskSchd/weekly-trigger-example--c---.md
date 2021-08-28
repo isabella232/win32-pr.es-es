@@ -1,48 +1,48 @@
 ---
 title: Ejemplo de desencadenador semanal (C++)
-description: En este ejemplo de C++ se muestra cómo crear una tarea programada para ejecutar el Bloc de notas semanalmente.
+description: En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutar Bloc de notas semanalmente.
 ms.assetid: 7c70b743-aff2-4ef5-b65b-ef0b5fdacade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7583384a44224b3642f717d00c8792bcbc163e62
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 530ba3226668b8e743fe4ce1701e4b178f27fa5bee03b9518c23c2378ea0b5e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001883"
 ---
 # <a name="weekly-trigger-example-c"></a>Ejemplo de desencadenador semanal (C++)
 
-En este ejemplo de C++ se muestra cómo crear una tarea programada para ejecutar el Bloc de notas semanalmente. La tarea contiene un desencadenador semanal que especifica un límite de inicio, un intervalo de semanas y un día de la semana en el que se iniciará la tarea. La tarea también contiene una acción que especifica la tarea para ejecutar el Bloc de notas.
+En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutar Bloc de notas semanalmente. La tarea contiene un desencadenador semanal que especifica un límite de inicio, un intervalo de semanas y un día de la semana en el que se iniciará la tarea. La tarea también contiene una acción que especifica la tarea que se ejecutará Bloc de notas.
 
 En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable semanalmente.
 
-**Para programar el inicio del Bloc de notas cada semana**
+**Para programar Bloc de notas iniciar semanalmente**
 
 1.  Inicialice COM y establezca la seguridad COM general.
-2.  Cree el objeto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+2.  Cree el [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Este objeto permite crear tareas en una carpeta especificada.
 
-3.  Obtenga una carpeta de tareas para crear una tarea en.
+3.  Obtenga una carpeta de tareas en la que crear una tarea.
 
-    Use el método [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService:: newtask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Use el [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el [**objeto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Defina la información sobre la tarea mediante el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como la información de registro de la tarea.
+4.  Defina información sobre la tarea mediante el [**objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como la información de registro de la tarea.
 
-    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la interfaz [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
+    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la [**interfaz ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
 
-5.  Cree un desencadenador semanal mediante la [**propiedad triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para tener acceso a la interfaz [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea.
+5.  Cree un desencadenador semanal mediante la [**propiedad Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acceder a la [**interfaz ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea.
 
-    Use el método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador semanal. Puede establecer el límite inicial, el intervalo de semanas y el día de la semana del desencadenador [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger) para que las acciones de la tarea se programen para que se ejecuten a una hora especificada en un determinado día de la semana.
+    Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador semanal. Puede establecer el límite de inicio, el intervalo de semanas y el día de la semana del desencadenador [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger) para que las acciones de la tarea se programen para ejecutarse a una hora especificada en un determinado día de la semana.
 
-6.  Cree una acción para que la tarea se ejecute mediante la [**propiedad Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la interfaz [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
+6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la [**interfaz IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
 
-    Use el método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa una acción que ejecuta una operación de línea de comandos.
+    Use el [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa una acción que ejecuta una operación de línea de comandos.
 
-7.  Registre la tarea mediante el método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registre la tarea mediante el [**método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-En el siguiente ejemplo de C++ se muestra cómo programar una tarea para ejecutar el Bloc de notas semanalmente.
+En el siguiente ejemplo de C++ se muestra cómo programar una tarea para ejecutar Bloc de notas semanalmente.
 
 
 ```C++
@@ -403,12 +403,12 @@ void main(void)
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: TriggerCollection. Count (propiedad)
-description: En el caso de scripting, obtiene el número de desencadenadores de la colección.
+title: Propiedad TriggerCollection.Count
+description: Para el scripting, obtiene el número de desencadenadores de la colección.
 ms.assetid: c4d6555b-3d21-4dd9-ae98-baf731f0f8e9
 keywords:
-- Propiedad Count Programador de tareas
-- Propiedad Count Programador de tareas, objeto TriggerCollection
-- Programador de tareas de objeto TriggerCollection, propiedad Count
+- Recuento de propiedades Programador de tareas
+- Count, propiedad Programador de tareas , objeto TriggerCollection
+- Objeto TriggerCollection Programador de tareas , propiedad Count
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53957f4d829780cc09e3b0818266903614c343a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4526f7b2e1fd40c19935662665b61eee669b1bc9c5b09fffbbbb79bdb735da5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002003"
 ---
-# <a name="triggercollectioncount-property"></a>TriggerCollection. Count (propiedad)
+# <a name="triggercollectioncount-property"></a>Propiedad TriggerCollection.Count
 
-En el caso de scripting, obtiene el número de desencadenadores de la colección.
+Para el scripting, obtiene el número de desencadenadores de la colección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -46,9 +46,9 @@ Número de desencadenadores de la colección.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

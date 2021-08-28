@@ -1,26 +1,26 @@
 ---
-title: Configurar el servicio de nombres para Windows 95
-description: Windows 95 no usa el localizador de Microsoft.
+title: Configuración del servicio de nombres para Windows 95
+description: Windows 95 no usa Microsoft Locator.
 ms.assetid: 0903681c-9cbf-4c5c-8637-be7f6501cd14
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0910a2cdc2d7a0543e07591ff37523169c311a3e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7d50f1dc3d54c3b1890b2f0b4cfc1f7285044fd895bbfb692cba1db909a2bd26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931522"
 ---
-# <a name="configuring-the-name-service-for-windows-95"></a>Configurar el servicio de nombres para Windows 95
+# <a name="configuring-the-name-service-for-windows-95"></a>Configuración del servicio de nombres para Windows 95
 
-Windows 95 no usa el localizador de Microsoft. Para usar un servicio de nombres en una aplicación de Windows 95, el equipo con Windows 95 debe:
+Windows 95 no usa Microsoft Locator. Para usar un servicio de nombres en una aplicación Windows 95, el equipo con Windows 95 debe:
 
--   Formar parte de un grupo de trabajo o dominio que incluya un equipo que ejecute Windows 2000 o Windows NT para que sirva como proveedor de servicios de nombres de proxy.
--   Estar conectado a un equipo host que ejecute el demonio NSI (NSID), que sirve de puerta de enlace al Servicio de directorio de celdas de DCE de Digital Equipment Corporation.
+-   Formar parte de un grupo de trabajo o dominio que incluya un equipo que ejecute Windows 2000 o Windows NT para que sirva como proveedor de servicios de nombre de proxy.
+-   Estar conectado a un equipo host que ejecuta el demonio NSI (nsid), que actúa como puerta de enlace a la instancia de Digital Equipment Corporation DCE Servicio de directorio de celdas.
 
- 
+ 
 
- 
+ 
 
 
 

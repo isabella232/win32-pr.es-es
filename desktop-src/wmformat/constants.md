@@ -1,32 +1,32 @@
 ---
-title: Windows Media Format constantes del SDK
-description: En estos artículos se describen las constantes usadas por los objetos de las API extendidas del cliente DRM de Windows Media.
+title: Windows Constantes del SDK de formato multimedia
+description: En estos artículos se describen las constantes utilizadas por los objetos de las API extendidas de Windows DRM multimedia.
 ms.assetid: 4a481813-c876-4603-85e3-7652e3e20c02
 keywords:
-- Windows Media Format SDK,constants
-- administración de derechos digitales (DRM),constantes
+- Windows SDK de formato multimedia, constantes
+- administración de derechos digitales (DRM), constantes
 - DRM (administración de derechos digitales), constantes
 - API extendidas de cliente DRM, constantes
 - API extendidas de cliente, constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79e246665761d8d85afef03641d1f9f0c20b1f69
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1f18ea308afd33be67fa19d30ee60b629bf12192b6cc53fc26cc6569d52f8dd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964154"
 ---
-# <a name="windows-media-format-sdk-constants"></a>Windows Media Format constantes del SDK
+# <a name="windows-media-format-sdk-constants"></a>Windows Constantes del SDK de formato multimedia
 
-En esta sección se describen las constantes usadas por los objetos de las API extendidas del cliente DRM de Windows Media. Incluye los temas enumerados en la tabla siguiente.
+En esta sección se describen las constantes utilizadas por los objetos de las API extendidas de Windows DRM multimedia. Incluye los temas enumerados en la tabla siguiente.
 
 
 
 | Tema                                                          | Descripción                                                                                |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [Constantes de derechos](rights-constants.md)                       | Enumera las constantes de derechos que usan varios métodos en las interfaces DRM. |
-| [Identificadores de tipo de revocación](revocation-type-identifiers.md) | Enumera las constantes definidas para los GUID de tipo de revocación.                                     |
+| [Identificadores de tipo de revocación](revocation-type-identifiers.md) | Enumera las constantes definidas para GUID de tipo de revocación.                                     |
 
 
 

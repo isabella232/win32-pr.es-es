@@ -1,11 +1,11 @@
 ---
-title: Propiedad BasicDevice. CanWakeDevices
-description: Obtiene un valor que indica si el dispositivo se puede reactivar.
+title: BasicDevice.CanWakeDevices, propiedad
+description: Obtiene un valor que indica si el dispositivo puede reactivar.
 ms.assetid: 0BF0B2CD-E09E-4A0B-9D48-A980CBFE4233
 keywords:
-- Propiedad CanWakeDevices API de streaming de multimedia
-- Propiedad CanWakeDevices API de streaming de multimedia, interfaz BasicDevice
-- Interfaz BasicDevice API de streaming de multimedia, propiedad CanWakeDevices
+- Api de streaming multimedia de la propiedad CanWakeDevices
+- Propiedad CanWakeDevices de Media Streaming API, interfaz BasicDevice
+- BasicDevice interface Media Streaming API , Propiedad CanWakeDevices
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 63fc4ed8c387c7fbe083e64311442b9e12176e5d
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 37aba33168993df0e6e2853ea5bbc5f618863c3f025b28ab8ab98b81025486bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104149213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100907"
 ---
-# <a name="basicdevicecanwakedevices-property"></a>Propiedad BasicDevice. CanWakeDevices
+# <a name="basicdevicecanwakedevices-property"></a>BasicDevice.CanWakeDevices, propiedad
 
-Obtiene un valor que indica si el dispositivo se puede reactivar.
+Obtiene un valor que indica si el dispositivo puede reactivar.
 
 Esta propiedad es de solo lectura.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_CanWakeDevices(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -41,15 +41,15 @@ HRESULT get_CanWakeDevices(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a un valor booleano que es **true** si el dispositivo se puede reactivar.
+Puntero a un valor booleano que es **True** si el dispositivo puede reactivar.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 
