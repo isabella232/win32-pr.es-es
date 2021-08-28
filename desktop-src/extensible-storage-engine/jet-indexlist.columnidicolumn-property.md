@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INDEXLIST. columnidiColumn'
-title: Propiedad JET_INDEXLIST. columnidiColumn
+description: 'Más información sobre: JET_INDEXLIST.columnidiColumn'
+title: JET_INDEXLIST.columnidiColumn, propiedad
 TOCTitle: 'columnidiColumn property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.columnidiColumn
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.columnidicolumn(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2759c04b60c15d5786306ec536c7eddb89b02172
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53759b725d5915cd2e008be19acc3c0065e7d4dc7209b270e5398807ca2f7481
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038903"
 ---
-# <a name="jet_indexlistcolumnidicolumn-property"></a>Propiedad JET_INDEXLIST. columnidiColumn
+# <a name="jet_indexlistcolumnidicolumn-property"></a>JET_INDEXLIST.columnidiColumn, propiedad
 
-Obtiene el columnid de la columna de la tabla temporal que almacena el índice de de esta columna en la clave de índice. La columna es de tipo [Long](./jet-coltyp-enumeration.md).
+Obtiene el columnid de la columna de la tabla temporal que almacena el índice de esta columna en la clave de índice. La columna es de tipo [Long.](./jet-coltyp-enumeration.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidiColumn { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXLIST (clase)](./jet-indexlist-class.md)
+[JET_INDEXLIST clase](./jet-indexlist-class.md)
 
-[Miembros de JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST miembros](./jet-indexlist-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,25 +1,25 @@
 ---
-description: En este tema se describe cómo crear un descodificador de mapa de bits mediante un flujo.
+description: En este tema se describe cómo crear un descodificador de mapa de bits mediante una secuencia.
 ms.assetid: 982d2110-ff2f-43e0-a931-cb2b8146ad0a
-title: Cómo crear un descodificador mediante un flujo
+title: Cómo crear un descodificador mediante una secuencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b0a76badec0e2587f9136cfa6bc3ff041b76592
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a10e7da05e860f3ad17ca1e780ff25ba4ffd991c761b9d22492163b44fb1048a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668223"
 ---
-# <a name="how-to-create-a-decoder-using-a-stream"></a>Cómo crear un descodificador mediante un flujo
+# <a name="how-to-create-a-decoder-using-a-stream"></a>Cómo crear un descodificador mediante una secuencia
 
-En este tema se describe cómo crear un descodificador de mapa de bits mediante un flujo.
+En este tema se describe cómo crear un descodificador de mapa de bits mediante una secuencia.
 
-Para crear un descodificador de mapa de bits mediante un flujo
+Para crear un descodificador de mapa de bits mediante una secuencia
 
-1.  Cargar un archivo de imagen en una secuencia. En este ejemplo, se crea un flujo para un recurso de aplicación.
+1.  Cargue un archivo de imagen en una secuencia. En este ejemplo, se crea una secuencia para un recurso de aplicación.
 
-    En el archivo de definición de recursos de la aplicación (. RC), defina el recurso. En el ejemplo siguiente se define un `Image` recurso denominado `IDR_SAMPLE_IMAGE` .
+    En el archivo de definición de recursos de aplicación (.rc), defina el recurso. En el ejemplo siguiente se define un `Image` recurso denominado `IDR_SAMPLE_IMAGE` .
 
     ```C++
     IDR_SAMPLE_IMAGE IMAGE "turtle.jpg"
@@ -27,9 +27,9 @@ Para crear un descodificador de mapa de bits mediante un flujo
 
     
 
-    El recurso se agregará a los recursos de la aplicación cuando se compile la aplicación.
+    El recurso se agregará a los recursos de la aplicación cuando se haya creado la aplicación.
 
-2.  Cargue el recurso de la aplicación.
+2.  Cargue el recurso desde la aplicación.
 
     ```C++
     HRESULT hr = S_OK;
@@ -82,7 +82,7 @@ Para crear un descodificador de mapa de bits mediante un flujo
 
     
 
-4.  Cree un [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para crear objetos de Windows Imaging Component (WIC).
+4.  Cree una [**IWICImagingFactory para**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) crear objetos Windows Imaging Component (WIC).
 
     ```C++
     // Create WIC factory
@@ -96,7 +96,7 @@ Para crear un descodificador de mapa de bits mediante un flujo
 
     
 
-5.  Use el método [**CreateStream (**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createstream) para crear un objeto [**IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) e inicializarlo con el puntero de memoria de imagen.
+5.  Use el [**método CreateStream**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createstream) para crear un [**objeto IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream) e inicializarlo mediante el puntero de memoria de imagen.
 
     ```C++
     // Create a WIC stream to map onto the memory.
@@ -114,7 +114,7 @@ Para crear un descodificador de mapa de bits mediante un flujo
 
     
 
-6.  Cree una [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) desde el nuevo objeto de secuencia mediante el método [**CreateDecoderFromStream**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromstream) .
+6.  Cree un [**IWICBitmapDecoder a partir**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) del nuevo objeto de secuencia mediante el [**método CreateDecoderFromStream.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromstream)
 
     ```C++
     // Create a decoder for the stream.
@@ -129,7 +129,7 @@ Para crear un descodificador de mapa de bits mediante un flujo
 
     
 
-7.  Obtiene el primer [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) de la imagen.
+7.  Obtenga el [**primer IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) de la imagen.
 
     ```C++
     // Retrieve the first bitmap frame.
@@ -141,9 +141,9 @@ Para crear un descodificador de mapa de bits mediante un flujo
 
     
 
-    El formato de archivo JPEG solo admite un único fotograma. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para obtener información sobre los formatos de imagen que tienen varios fotogramas, consulte [recuperación de los marcos de una imagen](-wic-bitmapsources-howto-retrieveimageframes.md) para tener acceso a cada fotograma de la imagen.
+    El formato de archivo JPEG solo admite un único marco. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para ver los formatos de imagen que tienen varios fotogramas, consulte Cómo recuperar los fotogramas [de una imagen](-wic-bitmapsources-howto-retrieveimageframes.md) para acceder a cada fotograma de la imagen.
 
-8.  Procesa el marco de imagen. Para obtener más información sobre los objetos de [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) , vea la [información general sobre orígenes de mapas de bits](-wic-bitmapsources.md).
+8.  Procese el marco de imagen. Para obtener información adicional sobre [**los objetos IWICBitmapSource,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) vea Información general sobre orígenes [de mapa de bits.](-wic-bitmapsources.md)
 
 ## <a name="see-also"></a>Consulte también
 

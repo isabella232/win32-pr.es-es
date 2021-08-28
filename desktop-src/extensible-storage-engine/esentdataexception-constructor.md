@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: constructor EsentDataException'
+description: 'Más información sobre: Constructor de EsentDataException'
 title: Constructor de EsentDataException
 TOCTitle: 'EsentDataException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentDataException.#ctor
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 77798cda30ea7d67cd346f2444b9d6ca54011d9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19dd7c0da21befad17b7f07e437aa02555ff382cbcc351ee7e2bfa5bc84b22da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104553646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735545"
 ---
 # <a name="esentdataexception-constructor"></a>Constructor de EsentDataException
 
@@ -39,12 +39,12 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn274149(v=exchg.10).md">EsentDataException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentDataException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn274149(v=exchg.10).md">EsentDataException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentDataException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn274233(v=exchg.10).md">EsentDataException (cadena, JET_err)</a></td>
+<td><a href="dn274233(v=exchg.10).md">EsentDataException(String, JET_err)</a></td>
 <td>Inicializa una nueva instancia de la clase EsentDataException.</td>
 </tr>
 </tbody>
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentDataException](./esentdataexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

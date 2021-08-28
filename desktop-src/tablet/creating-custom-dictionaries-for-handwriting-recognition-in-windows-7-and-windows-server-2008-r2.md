@@ -4,12 +4,12 @@ ms.assetid: 83abf534-740c-44a3-bbd4-babb54f2930e
 title: Creación de diccionarios personalizados para el reconocimiento de escritura a mano en Windows 7 y Windows Server 2008 R2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c7b27fbb03897b406609590420bd8b69b7ceee
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 8fe391125b21bfe35a9e1a69be6258e1643b424e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631200"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883891"
 ---
 # <a name="creating-custom-dictionaries-for-handwriting-recognition-in-windows-7-and-windows-server-2008-r2"></a>Creación de diccionarios personalizados para el reconocimiento de escritura a mano en Windows 7 y Windows Server 2008 R2
 
@@ -60,12 +60,12 @@ Usage: hwrcomp       [-lang <localename>] [-type <type>]
 </thead>
 <tbody>
 <tr class="odd">
-<td>-lang <localename></td>
-<td>Nombre de configuración regional especificado asignado al archivo de diccionario personalizado compilado. El argumento <localename> tiene el formato language-REGION. Un ejemplo de esto es en-US, que significa el idioma inglés en Estados Unidos región. Para obtener ejemplos de este formulario, vea [Language Identifier Constants and Strings](/windows/desktop/Intl/language-identifier-constants-and-strings). Esta característica admite los siguientes idiomas para Windows 7 y Windows Server 2008 R2: en-US, en-GB, en-CA, en-AU, de-DE, de-CH, fr-FR, es-ES, es-MX, es-AR, it-IT, nl-NL, nl-BE, pt-BR, pt-PT, da-DK, sv-SE, nb-NO, nn-NO, fi-FI, pl-PL, cs-NB, ru-RU, ro-RO, sr-Latn-CS, sr-Cyrl-CS, ca-ES y hr-HR.<br/></td>
+<td>-lang &lt; localename&gt;</td>
+<td>Nombre de configuración regional especificado asignado al archivo de diccionario personalizado compilado. El argumento &lt; localename &gt; tiene el formato language-REGION. Un ejemplo de esto es en-US, que significa el idioma inglés en Estados Unidos región. Para obtener ejemplos de este formulario, vea [Language Identifier Constants and Strings](/windows/desktop/Intl/language-identifier-constants-and-strings). Esta característica admite los siguientes idiomas para Windows 7 y Windows Server 2008 R2: en-US, en-GB, en-CA, en-AU, de-DE, de-CH, fr-FR, es-ES, es-MX, es-AR, it-IT, nl-NL, nl-BE, pt-BR, pt-PT, da-DK, sv-SE, nb-NO, nn-NO, fi-FI, pl-PL, cs-NB, ru-RU, ro-RO, sr-Latn-CS, sr-Cyrl-CS, ca-ES y hr-HR.<br/></td>
 </tr>
 <tr class="even">
-<td>-type <type></td>
-<td>El argumento de opción es una concatenación de una sola cadena del uso del recurso como la lista de palabras principales (PRIMARY) o como complemento de la lista de palabras principales (SECONDARY) seguida del nombre real de la lista de palabras a la que se aplica el recurso <type> (por ejemplo, DICTIONARY o SURNAME). Estos son los valores posibles:
+<td>-type &lt; type&gt;</td>
+<td>El tipo de argumento de opción es una concatenación de una sola cadena del uso del recurso como la lista de palabras principales (PRIMARY) o como complemento de la lista de palabras principales (SECONDARY) seguida del nombre real de la lista de palabras al que se aplica el recurso &lt; &gt; (por ejemplo, DICTIONARY o SURNAME). Estos son los valores posibles:
 <ul>
 <li>PRIMARY-CITYNAME-LIST</li>
 <li>PRIMARY-COUNTRYNAME-LIST</li>
@@ -154,8 +154,8 @@ Usage: hwrreg        [-check]
 | Parámetro                | Descripción                                                                                                                                                                                                                                                                                                                                                                        |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | -check                   | El archivo de diccionario se comprueba sin instalarse. La opción check muestra el comentario del archivo, además de la información de registro que se usaría para instalar el archivo. Esta opción es útil para comprobar la información de registro antes de realizar la instalación. <br/> Si falta esta opción, HwrReg.exe el diccionario personalizado.<br/>  |
-|  lang <localename> | El archivo de diccionario se comprueba sin instalarse. La opción check muestra el comentario del archivo, además de la información de registro que se usaría para instalar el archivo. Esta opción es útil para comprobar la información de registro antes de realizar la instalación. <br/> Si falta esta opción, HwrReg.exe el diccionario personalizado. <br/> |
-|  scope {all \| me}         | El diccionario personalizado se instala para todos los usuarios (ámbito de todos) o solo para el usuario actual (ámbito me). La instalación con ámbito requiere que el comando se ejecute en un símbolo del sistema con privilegios elevados. De lo contrario, se devolverá un código de error. <br/> Si falta esta opción, el ámbito de la instalación es solo el usuario actual.<br/>                          |
+|  lang &lt; localename&gt; | El archivo de diccionario se comprueba sin instalarse. La opción check muestra el comentario del archivo, además de la información de registro que se usaría para instalar el archivo. Esta opción es útil para comprobar la información de registro antes de realizar la instalación. <br/> Si falta esta opción, HwrReg.exe el diccionario personalizado. <br/> |
+|  scope {all \| me}         | El diccionario personalizado se instala para todos los usuarios (ámbito all) o solo para el usuario actual (scope me). La instalación con ámbito requiere que el comando se ejecute en un símbolo del sistema con privilegios elevados. De lo contrario, se devolverá un código de error. <br/> Si falta esta opción, el ámbito de la instalación es solo el usuario actual.<br/>                          |
 |  noprompt                | HwrReg.exe no solicita confirmación. Esto puede ser útil al ejecutar hwrReg.exe desde un script. <br/>                                                                                                                                                                                                                                                                 |
 
 
@@ -185,9 +185,9 @@ Usage: hwrreg        [-lang <localename>]
 
 | Parámetro                | Descripción                                                                                                                                                                                                                                                                                                                                                                    |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  lang <localename> | Los diccionarios registrados solo para este nombre de configuración regional se muestran o quitan. El argumento <localename> tiene el lenguaje de formulario REGION. Para obtener ejemplos de este formulario, vea [Language Identifier Constants and Strings](/windows/desktop/Intl/language-identifier-constants-and-strings). <br/> Si falta esta opción, se muestran o quitan diccionarios para todos los idiomas.<br/> |
+|  lang &lt; localename&gt; | Los diccionarios registrados solo para este nombre de configuración regional se enumeran o quitan. El argumento &lt; localename &gt; tiene el idioma del formulario REGION. Para obtener ejemplos de este formulario, vea [Language Identifier Constants and Strings](/windows/desktop/Intl/language-identifier-constants-and-strings). <br/> Si falta esta opción, se muestran o quitan diccionarios para todos los idiomas.<br/> |
 |  scope {all \| me}         | El diccionario personalizado se instala para todos los usuarios (ámbito all) o solo para el usuario actual (scope me). La instalación con ámbito requiere que el comando se ejecute en un símbolo del sistema con privilegios elevados. De lo contrario, se devolverá un código de error. <br/> Si falta esta opción, el ámbito de la instalación es solo el usuario actual.<br/>                      |
-|  Tipo <type>       | Enumera o quita solo los diccionarios registrados con el tipo especificado.<br/> Si falta esta opción, se enumeran o quitan todos los tipos de diccionario. La instalación o eliminación de un diccionario personalizado de otro tipo (como PRIMARY-COUNTRYNAME-LIST) puede afectar al reconocimiento de escritura a mano en otros contextos. <br/>                                              |
+|  tipo &lt; de tipo&gt;       | Enumera o quita solo los diccionarios registrados con el tipo especificado.<br/> Si falta esta opción, se enumeran o quitan todos los tipos de diccionario. La instalación o eliminación de un diccionario personalizado de otro tipo (como PRIMARY-COUNTRYNAME-LIST) puede afectar al reconocimiento de escritura a mano en otros contextos. <br/>                                              |
 |  list                    | Enumera todos los diccionarios instalados que coinciden con las demás opciones.<br/> Si falta esta opción, se debe especificar la opción remove.<br/>                                                                                                                                                                                                                          |
 |  remove                  | Solicita la eliminación de cualquier diccionario que coincida con las demás opciones.<br/> Si falta esta opción, se debe especificar la lista de opciones.<br/>                                                                                                                                                                                                                     |
 

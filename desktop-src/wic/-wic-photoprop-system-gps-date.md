@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. Date.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.Date.
 ms.assetid: 75047658-b6f3-454e-961a-89016c244bf6
-title: Directiva de metadatos de la foto System. GPS. Date
+title: Directiva de metadatos de fotos System.GPS.Date
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c736c79cd76d2d070d727dc024925717b386cac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c082ec60e230f0ada26902c51b4c369b514d8d7b9996538087919c3279d4022a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033085"
 ---
-# <a name="systemgpsdate-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. Date
+# <a name="systemgpsdate-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.Date
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. Date](../properties/props-system-gps-date.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.Date.](../properties/props-system-gps-date.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-Fecha de PKEY \_ GPS \_
+PKEY \_ GPS \_ Date
 
 ### <a name="containers"></a>Contenedores
 
@@ -33,30 +33,30 @@ String.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 29} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=29} | ascii       |
 | 2     | /xmp/exif:GPSTimeStamp    | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 29} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=29} | ascii       |
 | 2     | /xmp/exif:GPSTimeStamp    | unicode     |
 
 
@@ -67,9 +67,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 29} |
+| 1     | /app1/ifd/gps/{ushort=29} |
 | 2     | /xmp/exif:GPSTimeStamp    |
 
 
@@ -78,26 +78,26 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 29}       | ascii       |
+| 1     | /ifd/gps/{ushort=29}       | ascii       |
 | 2     | /ifd/xmp/exif:GPSTimeStamp | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 29}       | ascii       |
+| 1     | /ifd/gps/{ushort=29}       | ascii       |
 | 2     | /ifd/xmp/exif:GPSTimeStamp | unicode     |
 
 
@@ -108,22 +108,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                       |
+| Pedido | Ruta de acceso                       |
 |-------|----------------------------|
-| 1     | /IFD/GPS/{ushort = 29}       |
+| 1     | /ifd/gps/{ushort=29}       |
 | 2     | /ifd/xmp/exif:GPSTimeStamp |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. Date](../properties/props-system-gps-date.md)
+[System.GPS.Date](../properties/props-system-gps-date.md)
 </dt> </dl>
 
  

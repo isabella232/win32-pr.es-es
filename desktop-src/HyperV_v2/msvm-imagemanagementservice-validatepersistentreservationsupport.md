@@ -1,7 +1,7 @@
 ---
 description: Valida si un sistema de archivos puede admitir un disco duro virtual con reservas persistentes habilitadas.
 ms.assetid: c5fed9d5-0fa6-4b96-ae6e-84468b011e2a
-title: Método ValidatePersistentReservationSupport de la clase Msvm_ImageManagementService
+title: Método ValidatePersistentReservationSupport de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 596e5cf840ee65dc0b3ad5315462db4666c8b262
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36f1384ca9b56c24a40925a08fb87595fd57acef3e50c1d5d09593d9cfd7f545
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147727"
 ---
-# <a name="validatepersistentreservationsupport-method-of-the-msvm_imagemanagementservice-class"></a>Método ValidatePersistentReservationSupport de la \_ clase ImageManagementService de MSVM
+# <a name="validatepersistentreservationsupport-method-of-the-msvm_imagemanagementservice-class"></a>Método ValidatePersistentReservationSupport de la clase \_ Msvm ImageManagementService
 
 Valida si un sistema de archivos puede admitir un disco duro virtual con reservas persistentes habilitadas.
 
@@ -40,17 +40,17 @@ uint32 ValidatePersistentReservationSupport(
 
 <dl> <dt>
 
-*Ruta de acceso* \[ de\]
+*Ruta de acceso* \[ En\]
 </dt> <dd>
 
-Ruta de acceso completa que especifica la ubicación de un archivo de imagen de disco o un directorio en el que se puede colocar un archivo de imagen de disco.
+Ruta de acceso completa que especifica la ubicación de un archivo de imagen de disco o un directorio en el que se podría colocar un archivo de imagen de disco.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser null si la tarea se ha completado correctamente).
+Referencia al trabajo (puede ser NULL si la tarea se completa correctamente).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -75,16 +75,16 @@ Este método devuelve uno de los siguientes valores:
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,13 +93,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -109,9 +109,9 @@ El **sistema no está disponible** (32777)
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -120,7 +120,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: La función GetForm recupera información sobre un formulario especificado.
 ms.assetid: 10b25748-6d7c-46ab-bd2c-9b6126a1d7d1
-title: Función GetForm (winspool. h)
+title: Función GetForm (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 6b6ea9753e1b335936778e17562f6f26467b3083
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf5263d0de24d86053f8293f2fc9f6c410519ddef568cec9f4692223166e6ab1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971444"
 ---
-# <a name="getform-function"></a>GetForm función)
+# <a name="getform-function"></a>Función GetForm
 
-La función **GetForm** recupera información sobre un formulario especificado.
+La **función GetForm** recupera información sobre un formulario especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,62 +46,62 @@ BOOL GetForm(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora. Use la función [**OpenPrinter**](openprinter.md) o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora. Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*pFormName* \[ de\]
+*pFormName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del formulario. Para obtener los nombres de los formatos admitidos por la impresora, llame a la función [**EnumForms**](enumforms.md) .
+Puntero a una cadena terminada en NULL que especifica el nombre del formulario. Para obtener los nombres de los formularios admitidos por la impresora, llame a la [**función EnumForms.**](enumforms.md)
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
-Versión de la estructura a la que apunta *pForm* . Este valor debe ser 1 o 2.
+Versión de la estructura a la que *apunta pForm.* Este valor debe ser 1 o 2.
 
 </dd> <dt>
 
-*pForm* \[ enuncia\]
+*pForm* \[ out\]
 </dt> <dd>
 
-Puntero a una matriz de bytes que recibe la estructura de la [**información de formulario inicializada \_ \_ 1**](form-info-1.md) o la estructura de [**Form \_ info \_ 2**](form-info-2.md) .
+Puntero a una matriz de bytes que recibe la estructura [**FORM \_ INFO \_ 1**](form-info-1.md) o [**FORM INFO \_ \_ 2 inicializada.**](form-info-2.md)
 
 </dd> <dt>
 
-*cbBuf* \[ de\]
+*cbBuf* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, de la matriz *pForm* .
+Tamaño, en bytes, de la *matriz pForm.*
 
 </dd> <dt>
 
-*pcbNeeded* \[ enuncia\]
+*pwNeeded* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor que especifica el número de bytes copiados si la función se ejecuta correctamente o el número de bytes necesarios si *cbBuf* es demasiado pequeño.
+Puntero a un valor que especifica el número de bytes copiados si la función se realiza correctamente o el número de bytes necesarios si *cbBuf* es demasiado pequeño.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Si el autor de la llamada es remoto y el *nivel* es 2, el valor de **StringType** de [**la \_ información \_ de formato**](form-info-2.md) devuelto será siempre la cadena \_ LANGPAIR.
+Si el autor de la llamada es remoto y *level* es 2, el valor **StringType** del [**FORMULARIO INFO \_ \_ 2**](form-info-2.md) devuelto siempre será STRING \_ LANGPAIR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,9 +111,9 @@ Si el autor de la llamada es remoto y el *nivel* es 2, el valor de **StringType*
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **GetFormW** (Unicode) y **GetFormA** (ANSI)<br/>                                                 |
 
 

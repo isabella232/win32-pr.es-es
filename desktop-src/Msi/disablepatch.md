@@ -1,27 +1,27 @@
 ---
-description: Si esta Directiva del sistema por equipo está establecida en &\# 0034; 1&\# 0034;, el instalador no aplica revisiones. Esta Directiva se puede usar para proporcionar seguridad en entornos en los que se debe restringir la revisión.
+description: Si esta directiva de sistema por máquina se establece en \# &0034;1&0034;, el instalador no aplica \# revisiones. Esta directiva se puede usar para proporcionar seguridad en entornos donde se debe restringir la aplicación de revisiones.
 ms.assetid: 2719aaa5-bdcb-4326-8767-7e890bb5df0e
 title: DisablePatch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4df2a74f6212ffc5de71bd2de0b03fb7e910bd1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f3a4232ba5d41e4c72f4a171a747521af7d8a4aca5f54eb1e9097806bd2ab54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143126"
 ---
 # <a name="disablepatch"></a>DisablePatch
 
-Si esta [Directiva del sistema](system-policy.md) por equipo se establece en "1", el instalador no aplica revisiones. Esta Directiva se puede usar para proporcionar seguridad en entornos en los que se debe restringir la revisión.
+Si esta directiva del sistema [por máquina](system-policy.md) se establece en "1", el instalador no aplica revisiones. Esta directiva se puede usar para proporcionar seguridad en entornos donde se debe restringir la aplicación de revisiones.
 
 ## <a name="registry-key"></a>Clave del Registro
 
-**HKEY \_ \_** Directivas de software de equipo local \\  \\  \\ **Microsoft** \\ **Windows** \\ **Installer**
+**HKEY \_ Local \_ MACHINE** \\ **Software** \\ **Policies** \\ **Microsoft** \\ **Windows** \\ **Installer**
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_valor DWORD reg**
+**REG \_ DWORD**
 
  
 

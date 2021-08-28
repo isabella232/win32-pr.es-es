@@ -1,7 +1,7 @@
 ---
-description: Marcas de propiedades de ejemplo. Combinación bit a bit de las marcas de la \_ propiedad de ejemplo AM \_ marca de \_ tipo enumerado.
+description: Marcas de propiedad de ejemplo. Combinación bit a bit de marcas del tipo \_ enumerado AM SAMPLE PROPERTY \_ \_ FLAGS.
 ms.assetid: ad609ecf-38e2-4181-99a6-eb0dc70d69b4
-title: 'Miembro CMediaSample:: m_dwFlags (Amfilter. h)'
+title: CMediaSample::m_dwFlags miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8fa926a11b8b836487612c28e0135496bb4e91b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d14f2e85085886ff36edec0091da13aaa85a50a55bbaa6b998a977a3390403e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954554"
 ---
-# <a name="cmediasamplem_dwflags-member"></a>Miembro CMediaSample:: m \_ dwFlags
+# <a name="cmediasamplem_dwflags-member"></a>Miembro CMediaSample::m \_ dwFlags
 
-Marcas de propiedades de ejemplo. Combinación bit a bit de las marcas de la [**\_ propiedad de ejemplo AM \_ \_ marca**](/windows/win32/api/strmif/ne-strmif-tagam_sample_property_flags) de tipo enumerado.
+Marcas de propiedad de ejemplo. Combinación bit a bit de marcas del tipo [**enumerado AM SAMPLE PROPERTY \_ \_ \_ FLAGS.**](/windows/win32/api/strmif/ne-strmif-tagam_sample_property_flags)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ DWORD m_dwFlags;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ DWORD m_dwFlags;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

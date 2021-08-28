@@ -28,7 +28,7 @@ Esta directiva compila Stub.idl, pero conserva todos los archivos de preprocesad
 
  
 
-En el caso de una compilación DCOM, se suelen generar varios archivos de preprocesador, aunque MIDL los procese como un flujo de entrada contiguo virtual. En un entorno Windows de programación, los archivos temporales se pueden encontrar en el directorio Temp como nombres de archivo como MID \* .tmp. Si se conserva la salida del preprocesador, es una buena práctica observar los archivos recientes en el directorio Temp para identificar qué archivos están asociados con qué preprocesador se ejecutan.
+En el caso de una compilación DCOM, se suelen generar varios archivos de preprocesador, aunque MIDL los procese como un flujo de entrada contiguo virtual. En un entorno Windows programación, los archivos temporales se pueden encontrar en el directorio Temp como nombres de archivo como MID \* .tmp. Si se conserva la salida del preprocesador, es una buena práctica observar los archivos recientes en el directorio Temp para identificar qué archivos están asociados con qué preprocesador se ejecutan.
 
 En casos simples, como cuando el archivo IDL compilado no importa otros archivos directa o indirectamente, o al examinar el archivo de nivel superior, el preprocesador se puede invocar directamente. Ejecutar directamente el preprocesador de C/C++ puede revelar errores enmascarados o confusos por MIDL. Por ejemplo, se pueden usar las dos líneas de comandos de preprocesador siguientes para la línea MIDL entrecomillada anteriormente:
 

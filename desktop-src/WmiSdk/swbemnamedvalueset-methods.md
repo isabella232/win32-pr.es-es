@@ -5,24 +5,24 @@ ms.tgt_platform: multiple
 title: Métodos SWbemNamedValueSet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e49db4b0ae0589ce67ba8a315d8417e7dabf399
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 775fab07e8cb9904b4d4c6cb7e4b726a9bc7a86f052c11ebc40f44cfc779a61b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640115"
 ---
 # <a name="swbemnamedvalueset-methods"></a>Métodos SWbemNamedValueSet
 
-El objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) expone los métodos siguientes.
+El [**objeto SWbemNamedValueSet**](swbemnamedvalueset.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Add (método)**](swbemnamedvalueset-add.md)
--   [**Clone (método)**](swbemnamedvalueset-clone.md)
--   [**DeleteAll (método)**](swbemnamedvalueset-deleteall.md)
--   [**Item (método)**](swbemnamedvalueset-item.md)
--   [**Remove (método)**](swbemnamedvalueset-remove.md)
+-   [**Agregar método**](swbemnamedvalueset-add.md)
+-   [**Clone method (Método de clonación)**](swbemnamedvalueset-clone.md)
+-   [**Método DeleteAll**](swbemnamedvalueset-deleteall.md)
+-   [**Método Item**](swbemnamedvalueset-item.md)
+-   [**Método Remove**](swbemnamedvalueset-remove.md)
 
  
 

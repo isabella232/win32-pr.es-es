@@ -1,7 +1,7 @@
 ---
-description: El método OnRenderEnd se llama después de que se represente un ejemplo.
+description: Se llama al método OnRenderEnd después de representar un ejemplo.
 ms.assetid: c9b3a3b2-a5c0-4a08-9e55-53c27a4d1032
-title: Método CBaseRenderer. OnRenderEnd (Renbase. h)
+title: Método CBaseRenderer.OnRenderEnd (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5859cf81a5fd0306f3470ee0fc6d54476e99833d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5fe720ecaa6cc72a0efae3fceda3bb307573077caee6de5ac4309207883c994d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526545"
 ---
-# <a name="cbaserendereronrenderend-method"></a>CBaseRenderer. OnRenderEnd, método
+# <a name="cbaserendereronrenderend-method"></a>Método CBaseRenderer.OnRenderEnd
 
-`OnRenderEnd`Se llama al método después de que se represente un ejemplo.
+Se `OnRenderEnd` llama al método después de representar un ejemplo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ virtual void OnRenderEnd(
 *pMediaSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
+Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) ejemplo.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-i
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBaseRenderer:: Render**](cbaserenderer-render.md) llama a este método. No realiza ninguna acción en la clase base, pero la clase derivada puede invalidarla. por ejemplo, para recopilar datos de control de calidad.
+El [**método CBaseRenderer::Render**](cbaserenderer-render.md) llama a este método. No hace nada en la clase base, pero la clase derivada puede invalidarla. por ejemplo, para recopilar datos de control de calidad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ El método [**CBaseRenderer:: Render**](cbaserenderer-render.md) llama a este m�
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ El método [**CBaseRenderer:: Render**](cbaserenderer-render.md) llama a este m�
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

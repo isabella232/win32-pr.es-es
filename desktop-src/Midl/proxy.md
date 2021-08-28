@@ -1,9 +1,9 @@
 ---
 title: atributo proxy
-description: El atributo \ proxy\ impide que Automation se registre como controlador de proxy/stub para una interfaz dual.
+description: El atributo \ proxy\ impide que Automation se registre como controlador de proxy o stub para una interfaz dual.
 ms.assetid: 88e59938-83c9-436a-931c-f4396fdcf653
 keywords:
-- atributo de proxy MIDL
+- ATRIBUTO DE PROXY MIDL
 topic_type:
 - apiref
 api_name:
@@ -67,7 +67,7 @@ Especifica el nombre de una interfaz de la que esta interfaz derivada hereda fun
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El uso del \[ **atributo de proxy** para una interfaz dual impide que el \] TLB se haga cargo de los códigos auxiliares generados. Si se especifica este atributo, no se debe anular el registro del proxy de la lista de tipos cuando se anula el registro de la lista de tipos.
 
@@ -82,7 +82,7 @@ Las interfaces se pueden marcar con la marca TYPEFLAG PROXY para indicar que usa
 
 </dd> </dl>
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

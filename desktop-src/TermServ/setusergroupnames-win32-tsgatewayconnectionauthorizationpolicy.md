@@ -1,12 +1,12 @@
 ---
-title: Método SetUserGroupNames de la clase Win32_TSGatewayConnectionAuthorizationPolicy
-description: Establece la propiedad UserGroupNames para esta Escritorio remoto Directiva de autorización de conexión (RD \ 160; CAP).
+title: Método SetUserGroupNames de la Win32_TSGatewayConnectionAuthorizationPolicy clase
+description: Establece la propiedad UserGroupNames para esta directiva Escritorio remoto autorización de conexión (Rd \ 160; CAP).
 ms.assetid: 03c9b2c5-8769-46f2-941f-302d798dd3a1
 ms.tgt_platform: multiple
 keywords:
 - Método SetUserGroupNames Servicios de Escritorio remoto
-- Método SetUserGroupNames Servicios de Escritorio remoto, clase Win32_TSGatewayConnectionAuthorizationPolicy
-- Win32_TSGatewayConnectionAuthorizationPolicy de clase Servicios de Escritorio remoto, método SetUserGroupNames
+- Método SetUserGroupNames Servicios de Escritorio remoto , Win32_TSGatewayConnectionAuthorizationPolicy clase
+- Win32_TSGatewayConnectionAuthorizationPolicy clase Servicios de Escritorio remoto método , SetUserGroupNames
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b3ca948b63cd106e7284b00c2c5f9e54c6dfa86
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24caed72bfd8118575480a754e5b889005d37511d2c4242b449afbe4e7589747
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850969"
 ---
-# <a name="setusergroupnames-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetUserGroupNames de la \_ clase TSGatewayConnectionAuthorizationPolicy de Win32
+# <a name="setusergroupnames-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método SetUserGroupNames de la clase \_ TSGatewayConnectionAuthorizationPolicy de Win32
 
-Establece la propiedad **UserGroupNames** para esta escritorio remoto Directiva de autorización de conexión (Cap de RD).
+Establece la **propiedad UserGroupNames para** esta directiva Escritorio remoto de autorización de conexión (CAP de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ uint32 SetUserGroupNames(
 
 <dl> <dt>
 
-*UserGroupNames* \[ de\]
+*UserGroupNames* \[ En\]
 </dt> <dd>
 
-Lista de nombres de grupos de usuarios separados por punto y coma. Los nombres tienen el formato *dominio \\ UserGroupName*. Si el usuario pertenece a alguno de estos grupos de usuarios, se le permitirá el acceso al servidor de puerta de enlace de escritorio remoto.
+Lista de nombres de grupos de usuarios separados por punto y coma. Los nombres tienen el formato *Dominio \\ UserGroupName*. Si el usuario pertenece a cualquiera de estos grupos de usuarios, se le permitirá el acceso al servidor de puerta de enlace de Escritorio remoto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si hay varios nombres de grupos de usuarios en el parámetro *UserGroupNames* y uno de los nombres no se puede procesar, no se procesará ninguno de los nombres.
+Si hay varios nombres de grupo de usuarios en el parámetro *UserGroupNames* y no se puede procesar uno de los nombres, no se procesará ninguno de los nombres.
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

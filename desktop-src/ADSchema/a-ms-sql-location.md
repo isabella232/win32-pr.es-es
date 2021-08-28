@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-Location
-description: Cadena definida por el usuario. El valor predeterminado se establece en Location.
+description: Cadena definida por el usuario. El valor predeterminado se establece en Ubicación.
 ms.assetid: e0d8a83f-a979-49a8-a92d-842c18c8f9fd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-SQL-Location
-- Esquema de AD de atributo mS-SQL-Location
+- Esquema de AD del atributo MS-SQL-Location
+- Esquema de AD del atributo mS-SQL-Location
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ffa71a40e7deff12385e0e45eb16d8dcc998269
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 003da9f90c77d3ee79a77c8132ab8afa4a6e1431018405cc07f67bbf607f41ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705275"
 ---
 # <a name="ms-sql-location-attribute"></a>Atributo MS-SQL-Location
 
-Cadena definida por el usuario. El valor predeterminado se establece en Location.
+Cadena definida por el usuario. El valor predeterminado se establece en Ubicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Ubicación de MS-SQL                             |
-| Nombre para mostrar de LDAP | Ubicación de mS-SQL                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
-| Frecuencia de actualización  | En el programa de instalación del sistema.                            |
+| CN                | MS-SQL-Location                             |
+| Ldap-Display-Name | mS-SQL-Location                             |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de dominio                        |
+| Frecuencia de actualización  | En la instalación del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1366                     |
-| System-ID-GUID    | 561c9644-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 561c9644-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Cadena definida por el usuario. El valor predeterminado se establece en Location
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -76,13 +76,13 @@ Cadena definida por el usuario. El valor predeterminado se establece en Location
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -97,13 +97,13 @@ Cadena definida por el usuario. El valor predeterminado se establece en Location
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -116,15 +116,15 @@ Cadena definida por el usuario. El valor predeterminado se establece en Location
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -139,13 +139,13 @@ Cadena definida por el usuario. El valor predeterminado se establece en Location
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -160,13 +160,13 @@ Cadena definida por el usuario. El valor predeterminado se establece en Location
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

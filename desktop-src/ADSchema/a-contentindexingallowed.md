@@ -1,11 +1,11 @@
 ---
-title: Content-indexación-atributo permitido
-description: Indica si se puede indizar el contenido del objeto de volumen.
+title: Atributo Content-Indexing-Allowed
+description: Indica si el objeto Volume puede indexar el contenido.
 ms.assetid: 65e3cc3a-be16-4dd1-8ff1-1a8ad0943291
 ms.tgt_platform: multiple
 keywords:
-- Indexación de contenido-esquema de AD de atributos permitidos
-- contentIndexingAllowed esquema de AD de atributos
+- Esquema de AD de atributo Content-Indexing-Allowed
+- contentIndexingAllowed attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e608e7bd8e26675be85f3daaee288b2585a4f2c9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 65340aa030edb90938547e8e5c02a6118bf1e4ae260ba8bf7664592bb9f35566
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961764"
 ---
-# <a name="content-indexing-allowed-attribute"></a>Content-indexación-atributo permitido
+# <a name="content-indexing-allowed-attribute"></a>Atributo Content-Indexing-Allowed
 
-Indica si se puede indizar el contenido del objeto de volumen.
+Indica si el objeto Volume puede indexar el contenido.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Indexación de contenido: permitido             |
-| Nombre para mostrar de LDAP | contentIndexingAllowed               |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Indexación de contenido permitida             |
+| Ldap-Display-Name | contentIndexingAllowed               |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.24                |
-| System-ID-GUID    | bf967943-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | bf967943-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -53,15 +53,15 @@ Indica si se puede indizar el contenido del objeto de volumen.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -74,15 +74,15 @@ Indica si se puede indizar el contenido del objeto de volumen.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -95,15 +95,15 @@ Indica si se puede indizar el contenido del objeto de volumen.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -116,15 +116,15 @@ Indica si se puede indizar el contenido del objeto de volumen.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -137,15 +137,15 @@ Indica si se puede indizar el contenido del objeto de volumen.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -158,15 +158,15 @@ Indica si se puede indizar el contenido del objeto de volumen.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
-| System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
-| Está indexado             | False                                 |
-| En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| System-Only            | Falso                                 |
+| Es de un solo valor       | Verdadero                                  |
+| Está indexado             | Falso                                 |
+| En el catálogo global      | Falso                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

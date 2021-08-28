@@ -1,45 +1,45 @@
 ---
 title: Cómo insertar controles que no son de botón en las barras de herramientas
-description: Las barras de herramientas solo admiten botones; por lo tanto, si la aplicación requiere un tipo de control diferente, debe crear una ventana secundaria. En la ilustración siguiente se muestra una barra de herramientas con un control de edición incrustado.
+description: Las barras de herramientas solo admiten botones; Por lo tanto, si la aplicación requiere otro tipo de control, debe crear una ventana secundaria. En la ilustración siguiente se muestra una barra de herramientas con un control de edición incrustado.
 ms.assetid: 7B4DACEF-96BB-447E-AE8F-F55401C665E9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb8ae2189350b9ea2f4aaa0c3ea0b49727bd3415
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 6be124fd0759005344bab3338465b3e86f1b8afbded62755171be87a5a01682c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103904452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697424"
 ---
 # <a name="how-to-embed-nonbutton-controls-in-toolbars"></a>Cómo insertar controles que no son de botón en las barras de herramientas
 
-Las barras de herramientas solo admiten botones; por lo tanto, si la aplicación requiere un tipo de control diferente, debe crear una ventana secundaria. En la ilustración siguiente se muestra una barra de herramientas con un control de edición incrustado.
+Las barras de herramientas solo admiten botones; Por lo tanto, si la aplicación requiere otro tipo de control, debe crear una ventana secundaria. En la ilustración siguiente se muestra una barra de herramientas con un control de edición incrustado.
 
-![captura de pantalla de un cuadro de diálogo con un control de edición en la barra de herramientas, que precede a tres iconos de barra de herramientas](images/tb-withedit.png)
+![captura de pantalla de un cuadro de diálogo con un control de edición en la barra de herramientas, antes de tres iconos de barra de herramientas](images/tb-withedit.png)
 
 > [!Note]  
-> Considere la posibilidad de utilizar [controles rebar](rebar-controls.md) en lugar de colocar controles en las barras de herramientas.
+> Considere la posibilidad [de usar controles Rebar en](rebar-controls.md) lugar de colocar controles en las barras de herramientas.
 
- 
+ 
 
-Cualquier tipo de ventana se puede colocar en una barra de herramientas. En el ejemplo de código siguiente se agrega un control de edición como elemento secundario de la ventana de control de barra de herramientas. Dado que la barra de herramientas se crea y, a continuación, se agrega el control de edición, debe proporcionar espacio para el control de edición. Una manera de hacerlo es agregar un separador como un marcador de posición en la barra de herramientas, estableciendo el ancho del separador en el número de píxeles que desea reservar.
+Cualquier tipo de ventana se puede colocar en una barra de herramientas. El código de ejemplo siguiente agrega un control de edición como elemento secundario de la ventana de control de la barra de herramientas. Dado que se crea la barra de herramientas y, a continuación, se agrega el control de edición, debe proporcionar espacio para el control de edición. Una manera de hacerlo es agregar un separador como marcador de posición en la barra de herramientas, estableciendo el ancho del separador en el número de píxeles que desea reservar.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="embed-a-nonbutton-control-in-a-toolbar"></a>Insertar un control no botón en una barra de herramientas
+### <a name="embed-a-nonbutton-control-in-a-toolbar"></a>Insertar un control nonbutton en una barra de herramientas
 
-En el fragmento de código siguiente se crea la barra de herramientas en la ilustración anterior.
+El siguiente fragmento de código crea la barra de herramientas en la ilustración anterior.
 
 
 ```C++
@@ -112,9 +112,9 @@ HWND CreateToolbarWithEdit(HWND hWndParent)
 
 
 
-En este ejemplo se codifican de forma rígida las dimensiones de la ventana secundaria; sin embargo, para crear una aplicación más sólida, determine el tamaño de la barra de herramientas y haga que la ventana Editar control se ajuste.
+En este ejemplo se codifican de forma hard las dimensiones de la ventana secundaria; sin embargo, para crear una aplicación más sólida, determine el tamaño de la barra de herramientas y haga que la ventana de control de edición quepa.
 
-Es posible que desee que las notificaciones de control de edición se desplazan a otra ventana, como el elemento primario de la barra de herramientas. Para ello, cree el control de edición como un elemento secundario de la ventana primaria de la barra de herramientas. A continuación, cambie el elemento primario del control de edición a la barra de herramientas como se indica a continuación.
+Es posible que quiera que las notificaciones de control de edición vayan a otra ventana, como el elemento primario de la barra de herramientas. Para ello, cree el control de edición como elemento secundario de la ventana primaria de la barra de herramientas. A continuación, cambie el elemento primario del control de edición a la barra de herramientas como se muestra a continuación.
 
 
 ```
@@ -123,21 +123,21 @@ SetParent (hWndEdit, hWndToolbar);
 
 
 
-Las notificaciones se dirigen al elemento primario original. Por lo tanto, los mensajes del control de edición van al elemento primario de la barra de herramientas aunque la ventana de edición resida en la ventana de la barra de herramientas.
+Las notificaciones van al elemento primario original. Por lo tanto, los mensajes de control de edición van al elemento primario de la barra de herramientas aunque la ventana de edición resida en la ventana de la barra de herramientas.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar controles Toolbar](using-toolbar-controls.md)
+[Usar controles de barra de herramientas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
