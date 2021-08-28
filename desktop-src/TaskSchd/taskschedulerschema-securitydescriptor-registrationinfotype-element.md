@@ -1,5 +1,5 @@
 ---
-title: SecurityDescriptor (registrationInfoType), elemento
+title: Elemento SecurityDescriptor (registrationInfoType)
 description: Especifica el descriptor de seguridad de la tarea.
 ms.assetid: 79821b20-226a-4e7e-8ca1-6c9cf9f1b56e
 keywords:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 20f352e20f1017029558a0de0a99186a978edbf0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83742ebbbc6b8fb653610bf8e20c00094a3c8a3984123765adf6e953935c9011
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099865"
 ---
-# <a name="securitydescriptor-registrationinfotype-element"></a>SecurityDescriptor (registrationInfoType), elemento
+# <a name="securitydescriptor-registrationinfotype-element"></a>Elemento SecurityDescriptor (registrationInfoType)
 
 Especifica el descriptor de seguridad de la tarea.
 
@@ -30,7 +30,7 @@ Especifica el descriptor de seguridad de la tarea.
  />
 ```
 
-El elemento **SecurityDescriptor** se define mediante el tipo complejo [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) .
+El tipo complejo [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) define el elemento **SecurityDescriptor.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,15 +38,15 @@ El elemento **SecurityDescriptor** se define mediante el tipo complejo [**regist
 
 | Elemento                                                                           | Derivado de                                                                         | Descripción                                                                                                                         |
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica la información administrativa de la tarea, como el autor de la tarea y la fecha en que se registra la tarea.<br/> |
+| [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) | [**registrationInfoType**](taskschedulerschema-registrationinfotype-complextype.md) | Especifica información administrativa sobre la tarea, como el autor de la tarea y la fecha en que se registra la tarea.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripting, el descriptor de seguridad de una tarea se especifica mediante la propiedad [**RegistrationInfo. SecurityDescriptor**](registrationinfo-securitydescriptor.md) .
+Para el desarrollo de scripting, el descriptor de seguridad de una tarea se especifica mediante la [**propiedad RegistrationInfo.SecurityDescriptor.**](registrationinfo-securitydescriptor.md)
 
-En el desarrollo de C++, el descriptor de seguridad de una tarea se especifica mediante la propiedad [**IRegistrationInfo:: SecurityDescriptor**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_securitydescriptor) .
+Para el desarrollo de C++, el descriptor de seguridad de una tarea se especifica mediante la [**propiedad IRegistrationInfo::SecurityDescriptor.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationinfo-get_securitydescriptor)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ En el desarrollo de C++, el descriptor de seguridad de una tarea se especifica m
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -63,7 +63,7 @@ En el desarrollo de C++, el descriptor de seguridad de una tarea se especifica m
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

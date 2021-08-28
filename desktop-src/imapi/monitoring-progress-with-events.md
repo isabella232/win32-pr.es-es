@@ -1,21 +1,21 @@
 ---
-title: Supervisar el progreso con eventos
+title: Supervisión del progreso con eventos
 description: Varias interfaces permiten implementar un controlador de eventos para recibir información de progreso. Por ejemplo, se puede adjuntar un objeto de evento al escritor de datos para recibir el estado de la operación de escritura.
 ms.assetid: 1f15a5fe-f5d7-4e09-805f-2d0380bf2bb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ae3b425fc096234abf59d3a082fbe8a06f3f554
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a871120ca872a3258d32290273dda11360f1d5abb356d1ec48f6130d87e45648
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849015"
 ---
-# <a name="monitoring-progress-with-events"></a>Supervisar el progreso con eventos
+# <a name="monitoring-progress-with-events"></a>Supervisión del progreso con eventos
 
 Varias interfaces permiten implementar un controlador de eventos para recibir información de progreso. Por ejemplo, se puede adjuntar un objeto de evento al escritor de datos para recibir el estado de la operación de escritura.
 
-Un controlador de eventos se implementa como una subrutina en un script. En el ejemplo siguiente se muestra cómo definir la subrutina y usar el método **Wscript. ConnectObject** para conectar el controlador de eventos al objeto.
+Un controlador de eventos se implementa como una subrutina en un script. En el ejemplo siguiente se muestra cómo definir la subrutina y usar el **método WScript.ConnectObject** para conectar el controlador de eventos al objeto .
 
 
 ```VB
@@ -38,9 +38,9 @@ END SUB
 
 
 
-El nombre especificado para el nombre del controlador de eventos debe contener el sufijo de subrayado (" \_ "). Para formar el nombre de la subrutina, concatene el nombre del método al nombre del controlador de eventos. Por ejemplo, si usa "dataWriterEvent \_ " como nombre del controlador de eventos y el nombre del método es "Update", el nombre de la subrutina sería dataWriterEvent \_ Update.
+El nombre especificado para el nombre del controlador de eventos debe contener el sufijo de subrayado (" \_ "). Para formar el nombre de la subrutina, concatene el nombre del método al nombre del controlador de eventos. Por ejemplo, si usa "dataWriterEvent " como nombre del controlador de eventos y el nombre del método es "Update", el nombre de la \_ subrutina sería dataWriterEvent \_ Update.
 
-En el ejemplo siguiente se muestra un enfoque alternativo para conectar el controlador de eventos al objeto.
+En el ejemplo siguiente se muestra un enfoque alternativo para conectar el controlador de eventos al objeto .
 
 
 ```VB
@@ -59,7 +59,7 @@ END SUB
 
 Si un sistema contiene un segundo dispositivo de grabación para supervisar, deberá crear otro objeto **MsftDiscFormat2Data** y un controlador de eventos.
 
-El ejemplo siguiente se basa en el ejemplo de [grabación de una imagen de disco](burning-a-disc.md) . En el ejemplo se escribe una imagen ISO en un disco en blanco y se utiliza un controlador de eventos para proporcionar actualizaciones de progreso.
+El ejemplo siguiente se basa en el ejemplo [de grabación de una imagen de disco.](burning-a-disc.md) En el ejemplo se escribe una imagen ISO en un disco en blanco y se usa un controlador de eventos para proporcionar actualizaciones de progreso.
 
 
 ```VB
@@ -190,10 +190,10 @@ END SUB
 
 <dl> <dt>
 
-[Usar IMAPi](using-imapi.md)
+[Uso de IMAPI](using-imapi.md)
 </dt> <dt>
 
-[**IStream**](/windows/desktop/api/objidl/nn-objidl-istream)
+[**Istream**](/windows/desktop/api/objidl/nn-objidl-istream)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)
@@ -205,6 +205,6 @@ END SUB
 [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

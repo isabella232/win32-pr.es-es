@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Winshfhc.dll
 ms.assetid: 33a5589a-201b-4d94-afbf-5965a39e2748
-ms.openlocfilehash: 2def6cb5bc2ed59a98e9e513aba1b5b578cd8681
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8cf7514be0d784085acd74536036c159c9f8e9217287e86bea2f75defbb94801
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120090615"
 ---
 # <a name="estimatefilerisklevel-function"></a>Función EstimateFileRiskLevel
 
-\[Esta función está disponible en Windows XP con Service Pack 2 (SP2) a través de Windows Vista. Podría modificarse o no estar disponible en versiones posteriores de Windows. En su lugar, las aplicaciones cliente deben usar [**IAttachmentExecute para**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) presentar un entorno de usuario que proporciona descarga e intercambio seguro de archivos a través de correo electrónico y datos adjuntos de mensajería.\]
+\[Esta función está disponible en Windows XP con Service Pack 2 (SP2) a Windows Vista. Podría modificarse o no estar disponible en versiones posteriores de Windows. En su lugar, las aplicaciones cliente deben usar [**IAttachmentExecute**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) para presentar un entorno de usuario que proporciona descarga e intercambio seguro de archivos a través de correo electrónico y datos adjuntos de mensajería.\]
 
 Calcula el riesgo de ejecutar código desconocido cuando se llama a un controlador en un archivo determinado. Este riesgo se basa en una comprensión del controlador y del contenido de código del archivo.
 
@@ -141,7 +141,7 @@ Tipo: **HRESULT**
 
 Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función no se declara en un encabezado público ni se incluye en un archivo de biblioteca. Para usarlo, debe cargarlo directamente desde Winshfhc.dll ordinal 101.
 
@@ -149,10 +149,10 @@ Esta función no se declara en un encabezado público ni se incluye en un archiv
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio sp2 \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                           |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                           |
 | Archivo DLL<br/>                      | <dl> <dt>Winshfhc.dll (versión 5.1 o posterior)</dt> </dl> |
 
 

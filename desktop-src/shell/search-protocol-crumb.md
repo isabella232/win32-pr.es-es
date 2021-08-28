@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b93764f8014a5d9446811ef622f7c5afc20acbc6193d938c98642afaae5392fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3309f18cbd5a7e2769b264e516b019d9f3ed3b06
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452881"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885441"
 ---
 # <a name="crumb-argument-the-windows-shell"></a>Argumento CRUMB (el shell Windows)
 
@@ -40,7 +40,7 @@ crumb=<column>:<value>[,<label>][,<column>:<value>[,<label>]]&
 
 
 
-La <column> parte es cualquier propiedad del sistema de propiedades y <value> portion es un valor válido para esa propiedad. La <label> parte es un alias opcional para la propiedad que se muestra como una sugerencia de interfaz de usuario.
+La parte de la columna es cualquier propiedad del sistema de propiedades y la parte del valor &lt; es un valor válido para esa &gt; &lt; &gt; propiedad. La <label> parte es un alias opcional para la propiedad que se muestra como una sugerencia de interfaz de usuario.
 
 ### <a name="general-examples"></a>Ejemplos generales
 
@@ -66,7 +66,7 @@ Al especificar una `location` propiedad, se admiten dos parámetros adicionales 
 | Parámetro | Valores                  | Descripción                                                                                                                                                                       |
 |-----------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Inserción | include, exclude        | Especifica si la consulta debe incluir o excluir elementos de esa ruta de acceso. "Include" es el valor predeterminado. Windows Vista no admite exclusiones sin inclusiones. (Vea el ejemplo) |
-| recursión | recursiva, no recursiva | Especifica si la búsqueda debe repetir todas las subcarpetas a partir del valor definido en la ubicación:<value>. "Recursive" es el valor predeterminado.                             |
+| recursión | recursiva, no recursiva | Especifica si la búsqueda debe repetir todas las subcarpetas a partir del valor definido en la ubicación: &lt; valor &gt; . "Recursive" es el valor predeterminado.                             |
 
 
 
@@ -76,7 +76,7 @@ Para el ámbito de una búsqueda mediante el protocolo **search:** , tiene difer
 
 Carpeta en una máquina local:
 
--   Usar AQS (crumb=folder:<ruta de acceso con codificación URL>)
+-   Uso de AQS (crumb=folder:<ruta de acceso codificada con dirección URL>)
 -   Uso del argumento location (crumb=location:<ruta de acceso con codificación URL>)
 
 Carpeta en una máquina o red remota:
@@ -101,7 +101,7 @@ search:crumb=location:c%3a%5cDocuments&crumb=kind:pics&
 
 
 
-En el primer ejemplo se ejecuta una búsqueda de "vacaciones" a partir de la ubicación (un acceso directo especial a la carpeta Mis documentos del usuario), incluida esa carpeta y todas las `shell://Personal` subcarpetas.  Consulte la tabla siguiente.
+En el primer ejemplo se ejecuta una búsqueda de "vacaciones" a partir de la ubicación (un acceso directo especial a la carpeta Mis documentos del usuario), incluida esa carpeta y todas `shell://Personal` las subcarpetas.  Consulte la tabla siguiente.
 
 En el segundo ejemplo se ejecuta una búsqueda en C: \\ Imágenes, pero no en C: \\ Imágenes \\ duplicadas.
 
@@ -109,7 +109,7 @@ En el tercer ejemplo se ejecuta una búsqueda en C: Documentos, limitado a archi
 
 ### <a name="constants-for-common-folders"></a>Constantes para carpetas comunes
 
-Windows Vista permite el uso de valores CSIDL que proporcionan una manera única independiente del sistema de identificar las carpetas especiales usadas con frecuencia por las aplicaciones, pero que pueden no tener el mismo nombre o ubicación en ningún sistema determinado. Por ejemplo, la carpeta del sistema puede ser "C: Windows" en un sistema y \\ "C: \\ Winnt" en otro.
+Windows Vista permite el uso de valores CSIDL que proporcionan una manera única independiente del sistema de identificar las carpetas especiales usadas con frecuencia por las aplicaciones, pero que pueden no tener el mismo nombre o ubicación en un sistema determinado. Por ejemplo, la carpeta del sistema puede ser "C: Windows" en un sistema y \\ "C: \\ Winnt" en otro.
 
 Use estas ubicaciones con esta sintaxis:
 
@@ -135,46 +135,46 @@ En la tabla siguiente se enumeran los valores de CSIDL. Consulte [**ShellSpecial
 | ESCRITORIO COMÚN              | ESCRITORIO COMÚN                  | Microsoft Windows Desktop para todos los usuarios. Carpeta virtual que es la raíz del espacio de nombres.                                                                                        |
 | DOCUMENTOS COMUNES            | COMMON%20DOCUMENTS              | Documentos para todos los usuarios. Una ruta de acceso típica es C: \\ Documentos y Configuración Todos los \\ \\ Mis documentos.                                                                                        |
 | PROGRAMAS COMUNES             | COMMON%20PROGRAMS               | Grupos de programas comunes a todos los usuarios. Una ruta de acceso típica es C: \\ Documentos y Configuración programas del menú Inicio de todos los \\ \\ \\ usuarios.                                                                     |
-| MENÚ INICIO COMÚN           | COMMON%20START%20MENU           | menú Inicio elementos comunes a todos los usuarios. Una ruta de acceso típica es C: \\ Documentos y Configuración Menú Inicio de todos los \\ \\ usuarios.                                                                             |
+| MENÚ INICIO COMÚN           | COMMON%20START%20MENU           | menú Inicio elementos comunes a todos los usuarios. Una ruta de acceso típica es C: \\ Documentos y Configuración menú Inicio todos los \\ \\ usuarios.                                                                             |
 | INICIO COMÚN              | COMMON%20STARTUP                | Grupo de programas de inicio común a todos los usuarios.                                                                                                                                             |
 | PLANTILLAS COMUNES            | COMMON%20TEMPLATES              | Plantillas de documento comunes a todos los usuarios.                                                                                                                                                |
 | COMMONMUSIC                 | MY%20 RESALTE                      | Mis Música carpetas comunes a todos los usuarios.                                                                                                                                         |
 | COMMONPICTURES              | MY%20PICTURES                   | Plantillas de carpeta Mis imágenes comunes a todos los usuarios.                                                                                                                                      |
-| COMMONVIDEO                 | MY%20VIDEO                      | Las plantillas de carpeta My Video son comunes a todos los usuarios.                                                                                                                                         |
+| COMMONVIDEO                 | MY%20VIDEO                      | Las plantillas de carpeta Mi vídeo son comunes a todos los usuarios.                                                                                                                                         |
 | CONNECTIONSFOLDER           | CONNECTIONSFOLDER               | carpeta que contiene los datos de conexión.                                                                                                                                                     |
 | CARPETA DEL PANEL DE CONTROL        | CONTROLPANELFOLDER              | Carpeta virtual que contiene iconos para las Panel de control virtuales.                                                                                                                    |
-| Galletas                     | Galletas                         | Directorio del sistema de archivos que actúa como repositorio común para las cookies de Internet. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ Cookies.                                        |
+| GALLETAS                     | GALLETAS                         | Directorio del sistema de archivos que actúa como repositorio común para las cookies de Internet. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ Cookies.                                        |
 | ESCRITORIO                     | ESCRITORIO                         | Microsoft Windows Desktop. Carpeta virtual que es la raíz del espacio de nombres.                                                                                                           |
 | FAVORITOS                   | FAVORITOS                       | Directorio del sistema de archivos que actúa como repositorio común para los elementos favoritos del usuario. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ Favoritos.                             |
-| Fuentes                       | Fuentes                           | Carpeta virtual que contiene las fuentes instaladas. Una ruta de acceso típica es C: \\ Fuentes \\ windows.                                                                                                       |
+| FUENTES                       | FUENTES                           | Carpeta virtual que contiene fuentes instaladas. Una ruta de acceso típica es C: \\ Fuentes \\ WINDOWS.                                                                                                       |
 | HISTORIAL                     | HISTORIAL                         | Directorio del sistema de archivos que actúa como repositorio común para los elementos del historial de Internet.                                                                                                   |
 | INTERNETFOLDER              | INTERNETFOLDER                  | Carpeta que contiene datos de Internet.                                                                                                                                                    |
-| LOCAL APPDATA               | LOCAL%20APPDATA                 | Directorio del sistema de archivos que actúa como repositorio de datos para aplicaciones locales (no móviles). Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario local Configuración datos de la \\ \\ \\ aplicación. |
+| LOCAL APPDATA               | LOCAL%20APPDATA                 | Directorio del sistema de archivos que actúa como repositorio de datos para aplicaciones locales (no móviles). Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario Local Configuración Application \\ \\ \\ Data. |
 | LOCALIZEDRESOURCEDIR        | LOCALIZEDRESOURCEDIR            | Directorio de recursos localizado.                                                                                                                                                          |
 | MYCOMPUTERFOLDER            | MYCOMPUTERFOLDER                | Mi PC. Carpeta virtual que contiene todo el contenido del equipo local: dispositivos de almacenamiento, impresoras y Panel de control. Esta carpeta también puede contener unidades de red asignadas.             |
-| MI MÚSICA                    | MY%20 RESALTE                      | Mi Música carpeta. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre Mis documentos Mi \\ \\ \\ Música.                                                                                       |
+| MI MÚSICA                    | MY%20 RESALTE                      | Mi Música carpeta. Una ruta de acceso típica es C: \\ Documents and Configuración username Mis documentos My \\ \\ \\ Música.                                                                                       |
 | MIS IMÁGENES                 | MY%20PICTURES                   | Carpeta Mis imágenes. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre Mis documentos Mis \\ \\ \\ imágenes.                                                                                 |
-| MI VÍDEO                    | MY%20VIDEO                      | Carpeta Mi vídeo. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre Mis documentos Mi \\ \\ \\ vídeo.                                                                                       |
-| NET ESTADESTE                     | NET ESTADESTE                         | Carpeta virtual que representa la raíz de la jerarquía de espacios de nombres de red.                                                                                                               |
+| MI VÍDEO                    | MY%20VIDEO                      | Carpeta Mi vídeo. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario Mis documentos Mi \\ \\ \\ vídeo.                                                                                       |
+| NET ESTANDO EN LA RED                     | NET ESTANDO EN LA RED                         | Carpeta virtual que representa la raíz de la jerarquía de espacios de nombres de red.                                                                                                               |
 | CARPETA NETWORK PLACES       | NETWORKDPLACESFOLDER            | Carpeta del sistema de archivos que contiene los objetos de vínculo que pueden existir en la carpeta virtual Mis lugares de red. No es lo mismo que NET NAMESPACE, que representa la raíz del espacio de nombres de red.   |
 | VÍNCULOS DE OEM                   | OEM%20LINKS                     | Carpeta que contiene vínculos a sitios de OEM.                                                                                                                                                  |
 | PERSONAL                    | PERSONAL                        | Directorio del sistema de archivos que actúa como repositorio común para los documentos de un usuario. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre \\ \\ Mis documentos.                                 |
 | CARPETA IMPRESORAS             | CARPETA IMPRESORAS                 | Carpeta virtual que contiene impresoras instaladas.                                                                                                                                          |
-| PRINT RESALTE                   | PRINT RESALTE                       | Directorio del sistema de archivos que contiene los objetos de vínculo que pueden existir en la carpeta virtual Impresoras. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario Print \\ \\ Reuso.                 |
-| PROGRAMAS                    | PROGRAMAS                        | Directorio del sistema de archivos que contiene los grupos de programas del usuario (que también son directorios del sistema de archivos). Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario Programas del menú \\ \\ \\ Inicio.  |
+| PRINT RESALTE                   | PRINT RESALTE                       | Directorio del sistema de archivos que contiene los objetos de vínculo que pueden existir en la carpeta virtual Impresoras. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ PrintHood.                 |
+| PROGRAMAS                    | PROGRAMAS                        | Directorio del sistema de archivos que contiene los grupos de programas del usuario (que también son directorios del sistema de archivos). Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario Programas de menú \\ \\ \\ Inicio.  |
 | PROFILE                     | PROFILE                         | Carpeta de perfil del usuario.                                                                                                                                                                 |
 | ARCHIVOS DE PROGRAMA               | PROGRAM%20FILES                 | Carpeta Archivos de programa. Una ruta de acceso típica es C: \\ Archivos de programa.                                                                                                                             |
 | ARCHIVOS DE PROGRAMA COMUNES        | PROGRAMFILESCOMMON              | Carpeta Archivos de programa común a todos los usuarios.                                                                                                                                              |
-| ARCHIVOS DE PROGRAMA X86 COMUNES    | PROGRAMFILESCOMMONX86           | Carpeta Archivos de programa común a todos los usuarios en máquinas x86.                                                                                                                              |
+| ARCHIVOS DE PROGRAMA COMUNES X86    | PROGRAMFILESCOMMONX86           | Carpeta Archivos de programa común a todos los usuarios de máquinas x86.                                                                                                                              |
 | ARCHIVOS DE PROGRAMAX86            | PROGRAMFILESx86                 | Carpeta Archivos de programa en máquinas x86.                                                                                                                                                  |
-| Reciente                      | Reciente                          | Directorio del sistema de archivos que contiene los documentos usados más recientemente del usuario. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ Reciente.                                           |
-| CARPETA PAPELERA DE RECICLAJE          | RECYCLEBINFOLDER                | Carpeta virtual que contiene los objetos de la carpeta del usuario papelera de reciclaje.                                                                                                                       |
+| RECIENTE                      | RECIENTE                          | Directorio del sistema de archivos que contiene los documentos usados más recientemente del usuario. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ Reciente.                                           |
+| CARPETA PAPELERA DE RECICLAJE          | RECYCLEBINFOLDER                | Carpeta virtual que contiene los objetos de la cuenta del papelera de reciclaje.                                                                                                                       |
 | RESOURCEDIR                 | RESOURCEDIR                     | Directorio de recursos.                                                                                                                                                                |
-| Sendto                      | Sendto                          | Directorio del sistema de archivos que contiene elementos de menú Enviar a. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ SendTo.                                                                |
-| MENÚ INICIO                  | START%20MENU                    | Directorio del sistema de archivos que contiene menú Inicio elementos. Una ruta de acceso típica es C: \\ Documentos y Configuración de inicio de nombre de \\ \\ usuario.                                                                 |
-| Inicio                     | Inicio                         | Directorio del sistema de archivos que corresponde al grupo de programas De inicio del usuario.                                                                                                            |
+| SENDTO                      | SENDTO                          | Directorio del sistema de archivos que contiene elementos de menú Enviar a. Una ruta de acceso típica es C: \\ Documentos y Configuración nombre de usuario \\ \\ SendTo.                                                                |
+| MENÚ INICIO                  | START%20MENU                    | Directorio del sistema de archivos que menú Inicio elementos. Una ruta de acceso típica es C: \\ Documentos y Configuración menú Inicio del nombre de \\ \\ usuario.                                                                 |
+| INICIO                     | INICIO                         | Directorio del sistema de archivos que corresponde al grupo de programas De inicio del usuario.                                                                                                            |
 | SYSTEMx86                   | SYSTEMx86                       | Carpeta del sistema en máquinas x86.                                                                                                                                                         |
-| PLANTILLAS                   | PLANTILLAS                       | Directorio del sistema de archivos que actúa como repositorio común para plantillas de documento.                                                                                                       |
+| PLANTILLAS                   | PLANTILLAS                       | Directorio del sistema de archivos que actúa como repositorio común para las plantillas de documento.                                                                                                       |
 | SYSTEM                      | SYSTEM                          | Carpeta del sistema. Una ruta de acceso típica es C: \\ Windows \\ System.                                                                                                                                  |
 | WINDOWS                     | WINDOWS                         | Windows directorio o SYSROOT.                                                                                                                                                          |
 

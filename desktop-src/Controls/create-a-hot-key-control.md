@@ -1,39 +1,39 @@
 ---
-title: Cómo crear un control de tecla de acceso rápido
-description: En este tema se muestra cómo crear un control de tecla de acceso rápido. Puede crear un control de tecla de acceso rápido mediante la función CreateWindowEx, especificando la \_ clase de ventana de clase Hotkey.
+title: Cómo crear un control de tecla de acceso
+description: En este tema se muestra cómo crear un control de tecla de acceso remoto. Para crear un control de tecla de acceso rápido, use la función CreateWindowEx y especifique la clase de ventana HOTKEY \_ CLASS.
 ms.assetid: A6723D4E-B8F6-4365-8FCD-99B73D2C0470
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 498005efcdfbbf001283551bbeea4906ebc854cf
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 081db39f07e8d80fcbb5a437bc8cbe83473b4299282c8b2437d95acda02b2db9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103904914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119577054"
 ---
-# <a name="how-to-create-a-hot-key-control"></a>Cómo crear un control de tecla de acceso rápido
+# <a name="how-to-create-a-hot-key-control"></a>Cómo crear un control de tecla de acceso
 
-En este tema se muestra cómo crear un control de tecla de acceso rápido. Puede crear un control de tecla de acceso rápido mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando la \_ clase de ventana de clase Hotkey.
+En este tema se muestra cómo crear un control de tecla de acceso remoto. Para crear un control de tecla de acceso rápido, use [**la función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique la clase de ventana HOTKEY \_ CLASS.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Antes de crear el control de tecla de acceso rápido, asegúrese de que se carga el archivo DLL de controles comunes.
+Antes de crear el control de tecla de acceso frecuente, asegúrese de que se carga el archivo DLL de controles comunes.
 
-En el siguiente ejemplo de código de C++, la función definida por la aplicación llama a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) para cargar el archivo dll de control común. A continuación, llama a la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando la clase de ventana de **\_ clase Hotkey** , para crear un control de tecla de acceso rápido. Usa los mensajes [**HKM \_ SETRULES**](hkm-setrules.md) y [**HKM \_ SETHOTKEY**](hkm-sethotkey.md) para inicializar el control y devuelve un identificador al control.
+En el siguiente ejemplo de código de C++, la función definida por la aplicación llama a la [**función InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) para cargar el archivo DLL de control común. A continuación, llama a [**la función CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) especificando la **clase de ventana HOTKEY \_ CLASS,** para crear un control de tecla de acceso rápido. Usa los [**mensajes HKM \_ SETRULES**](hkm-setrules.md) y [**HKM \_ SETHOTKEY**](hkm-sethotkey.md) para inicializar el control y devuelve un identificador al control.
 
-Este control de teclas de acceso rápido no permite al usuario elegir una tecla de acceso rápido que sea una sola clave no modificada, ni permite al usuario elegir solo el desplazamiento y una tecla. Estas reglas impiden de forma eficaz que el usuario elija una tecla de acceso rápido que se puede escribir accidentalmente mientras escribe texto.
+Este control de tecla de acceso no permite al usuario elegir una tecla de acceso que sea una sola clave sin modificar, ni permite que el usuario elija solo MAYÚS y una clave. Estas reglas impiden de forma eficaz que el usuario elija una tecla de acceso rápido que podría escribirse accidentalmente al escribir texto.
 
 
 
@@ -99,13 +99,13 @@ HWND WINAPI InitializeHotkey(HWND hwndDlg)
 
 <dl> <dt>
 
-[Referencia de control de teclas de acceso rápido](bumper-hot-key-hot-key-control-reference.md)
+[Referencia de control de clave rápida](bumper-hot-key-hot-key-control-reference.md)
 </dt> <dt>
 
-[Acerca de los controles de tecla de acceso rápido](hot-key-controls.md)
+[Acerca de los controles de tecla de acceso](hot-key-controls.md)
 </dt> <dt>
 
-[Usar controles de tecla de acceso rápido](using-hot-key-controls.md)
+[Usar controles de tecla de acceso](using-hot-key-controls.md)
 </dt> </dl>
 
  

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d9be4bcff435fe30186b3b7585c79e3066987cc5
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 445fa1d2370f13ae39615d4228b245899173ad8d
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479061"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986688"
 ---
 # <a name="jetossnapshotthaw-function"></a>JetOSSnapshotThaw (Función)
 
@@ -34,7 +34,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 La **función JetOSSnapshotThaw** notifica al motor que puede reanudar las operaciones normales de E/S después de un período de inmovilización y una instantánea correcta.
 
-**Windows XP:****JetOSSnapshotThaw** se presenta en Windows XP.  
+**Windows XP:****JetOSSnapshotThaw** se introdujo en Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotThaw(
@@ -61,24 +61,30 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>La sesión de instantánea no es válida o <em>el parámetro grbit</em> no es válido.</p> | 
-| <p>JET_errOSSnapshotTimeOut</p> | <p>La sesión de instantánea tenía un tiempo de espera interno antes de que se produjese esta llamada. Por lo tanto, las operaciones de E/S han vuelto a la normalidad antes de realizar esta llamada.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>La sesión de instantánea no es válida o el <em>parámetro grbit</em> no es válido.</p> | 
+| <p>JET_errOSSnapshotTimeOut</p> | <p>La sesión de instantánea tenía un tiempo de espera interno antes de que se produjese esta llamada. Por lo tanto, las operaciones de E/S regresaron a la normalidad antes de que se realizara esta llamada.</p> | 
 | <p>JET_errOSSnapshotInvalidSnapId</p> | <p>El identificador de la sesión de instantánea no es válido.</p> | 
 
 
 
-Si esta función se realiza correctamente, finaliza una sesión de instantánea y se reanuda el comportamiento normal del motor. Más adelante se puede iniciar una nueva sesión de instantáneas.
+Si esta función se realiza correctamente, finaliza una sesión de instantáneas y se reanuda el comportamiento normal del motor. Más adelante se puede iniciar una nueva sesión de instantáneas.
 
 Si se produce un error en esta función, finaliza la sesión de instantánea actual, pero la inmovilización de las E/S durante el período de instantánea no se respeta internamente.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Las entradas del registro de eventos se generarán para los distintos pasos de la instantánea.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

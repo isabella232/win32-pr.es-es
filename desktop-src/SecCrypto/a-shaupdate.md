@@ -1,7 +1,7 @@
 ---
 description: Agrega datos a un objeto hash especificado.
 ms.assetid: 8E32BBC4-C2DD-4174-9FF1-9001E4A7D87B
-title: Función A_SHAUpdate (Sha. h)
+title: A_SHAUpdate función (Sha.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - ntdll.dll
-ms.openlocfilehash: a0f8ac49d8221538a168ade536e55766e209d3d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 103438e3ef0747aa6170848398621b0246bd15366be4d1171ce5735942011007
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101075"
 ---
 # <a name="a_shaupdate-function"></a>Una \_ función SHAUpdate
 
@@ -41,14 +41,14 @@ void RSA32API A_SHAUpdate(
 
 <dl> <dt>
 
-*Contexto* \[ de in, out\]
+*Contexto* \[ in, out\]
 </dt> <dd>
 
 Contexto SHA.
 
 </dd> <dt>
 
-*Búfer* \[ de enuncia\]
+*Búfer* \[ out\]
 </dt> <dd>
 
 Tabla hash.
@@ -66,11 +66,11 @@ Tamaño del búfer.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede llamar a esta función varias veces para calcular el hash en flujos de datos largos o en flujos de datos descontinuos. Se debe llamar a la función [**\_ SHAFinal**](a-shafinal.md) antes de recuperar el valor hash.
+Se puede llamar a esta función varias veces para calcular el hash en flujos de datos largos o flujos de datos discontinuos. Se debe llamar a la función [**\_ SHAFinal**](a-shafinal.md) antes de recuperar el valor hash.
 
-Esta función es muy similar a SHAUpdate, pero se llama directamente desde la biblioteca, en lugar de enrutarse a través de la infraestructura de criptografía. Para obtener más información, consulte [proveedores de Windows NTCryptographic](/previous-versions/tn-archive/cc723484(v=technet.10)).
+Esta función es muy similar a SHAUpdate, pero se llama directamente desde la biblioteca, en lugar de enrutar a través de la infraestructura de criptografía. Para obtener más información, [vea Windows NTCryptographic Providers](/previous-versions/tn-archive/cc723484(v=technet.10)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ Esta función es muy similar a SHAUpdate, pero se llama directamente desde la bi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Sha. h</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>Sha.h</dt> </dl>     |
 | Biblioteca<br/> | <dl> <dt>Ntdll.dll</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Ntdll.dll</dt> </dl> |
 

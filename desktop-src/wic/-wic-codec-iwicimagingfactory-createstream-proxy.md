@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para el método CreateStream (.
+description: Función de proxy para el método CreateStream.
 ms.assetid: c827e1aa-13ae-459e-a1dc-5ff8c31a54bc
-title: IWICImagingFactory_CreateStream_Proxy función)
+title: IWICImagingFactory_CreateStream_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 61670dbe3c1689a3d5b8030585a2b13d281efd19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec69a5cb9fe03fe6ebb1e9c31ac27fe2a81ab8df69ed5595c877ba5064e17953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088227"
 ---
-# <a name="iwicimagingfactory_createstream_proxy-function"></a>IWICImagingFactory \_ CreateStream ( \_ función proxy
+# <a name="iwicimagingfactory_createstream_proxy-function"></a>Función de proxy CreateStream de IWICImagingFactory \_ \_
 
-Función de proxy para el método [**CreateStream (**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createstream) .
+Función de proxy para el [**método CreateStream.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createstream)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,19 +41,19 @@ HRESULT IWICImagingFactory_CreateStream_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ de\]
+*pFactory* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_ppIWICStream * \[ out\]
+*ppIWICStream* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream)\*\***
 
-Puntero que recibe un puntero a un nuevo [**IWICStream**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream).
+Puntero que recibe un puntero a un [**nuevo IWICStream.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicstream)
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Puntero que recibe un puntero a un nuevo [**IWICStream**](/windows/desktop/api/W
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -69,11 +69,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

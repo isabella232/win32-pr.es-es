@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre las consideraciones de implementación para el enrutamiento de flujos. Las API implementan el enrutamiento de flujos controlando el cambio de secuencia a un nuevo punto de conexión de audio predeterminado.
+description: Obtenga información sobre las consideraciones de implementación para el enrutamiento de flujos. Las API implementan el enrutamiento de flujos controlando el cambio de flujo a un nuevo punto de conexión de audio predeterminado.
 ms.assetid: ecda0b5b-6583-43b4-a9b4-f12a95f09452
 title: Consideraciones sobre la implementación del enrutamiento de flujos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62bd753fe027c92ffac9f5a41cea589b600d7f26
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: e440fed0035838eff18c3a93bca7271fcc484a8ce37a11ad4afd3931f357f76a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088255"
 ---
 # <a name="stream-routing-implementation-considerations"></a>Consideraciones sobre la implementación del enrutamiento de flujos
 
-En Windows 7, las API de plataforma de alto nivel que usan las API de audio principal, como las API de Media Foundation, Direct Sound y Wave, implementan la característica de enrutamiento de flujos controlando el cambio de flujo de un dispositivo existente a un nuevo punto de conexión de audio predeterminado. Las aplicaciones multimedia que usan estas API usan el comportamiento de enrutamiento de flujos sin modificaciones en el origen. Los clientes WASAPI directos pueden usar las notificaciones enviadas por los componentes de Core Audio e implementar la característica de enrutamiento de secuencias.
+En Windows 7, las API de plataforma de alto nivel que usan api de audio principal, como las API de Media Foundation, Direct Sound y Wave, implementan la característica de enrutamiento de flujos controlando el cambio de flujo de un dispositivo existente a un nuevo punto de conexión de audio predeterminado. Las aplicaciones multimedia que usan estas API usan el comportamiento de enrutamiento de flujos sin modificaciones en el origen. Los clientes WASAPI directos pueden usar las notificaciones enviadas por los componentes de Core Audio e implementar la característica de enrutamiento de secuencias.
 
 Los clientes WASAPI directos (aplicaciones multimedia que usan WASAPI directamente) reciben nuevas notificaciones de sesión de audio y dispositivo enviadas por los componentes de Audio principal. El comportamiento de la característica de enrutamiento de flujos se define mediante la forma en que la aplicación controla estas notificaciones.
 
@@ -48,7 +48,7 @@ Para que la operación de conmutación de flujo parezca perfecta, debe realizars
 
 ## <a name="position-mapping-considerations"></a>Consideraciones sobre la asignación de posiciones
 
-Cuando la aplicación obtiene [**notificaciones IMMNotificationClient**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immnotificationclient) [**e IAudioSessionEvents,**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) puede enrutar las secuencias existentes al nuevo dispositivo predeterminado. Cuando una secuencia de audio existente se interrumpe y se abre en el nuevo dispositivo, la representación en el nuevo dispositivo debe comenzar en la posición en la que se detuvo la secuencia en el dispositivo antiguo. Para ello, la aplicación debe tener la última posición conocida del dispositivo para calcular la posición inicial en el nuevo dispositivo. Por ejemplo, esta posición se puede usar como desplazamiento delta para la asignación de posición posterior. Cuando la secuencia comienza a representarse, la nueva posición del dispositivo se puede volver a colocar en la posición del dispositivo almacenado en caché.
+Cuando la aplicación obtiene [**notificaciones IMMNotificationClient**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immnotificationclient) [**e IAudioSessionEvents,**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) puede enrutar las secuencias existentes al nuevo dispositivo predeterminado. Cuando una secuencia de audio existente se interrumpe y se abre en el nuevo dispositivo, la representación en el nuevo dispositivo debe comenzar en la posición en la que se detuvo la secuencia en el dispositivo antiguo. Para ello, la aplicación debe tener la última posición conocida del dispositivo para calcular la posición inicial en el nuevo dispositivo. Por ejemplo, esta posición se puede usar como desplazamiento diferencial para la asignación de posición posterior. Cuando la secuencia comienza a representarse, la nueva posición del dispositivo se puede volver a colocar en la posición del dispositivo almacenado en caché.
 
 En los pasos siguientes se resume el proceso de realizar una transición de flujo sin problemas.
 

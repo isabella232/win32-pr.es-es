@@ -4,19 +4,19 @@ ms.assetid: 23693eb7-cc8d-4757-bca7-394114d9a3c9
 title: Gráficos y juegos de DirectX
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85230fc6c2d875cd4849e6b68ec45038bf49791777fb81028b8ce4420537cf2f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3329a2f375db273992ae846d0ede34a7369c9424
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119787485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121813244"
 ---
 # <a name="directx-graphics-and-gaming"></a>Gráficos y juegos de DirectX
 
-Este contenido se centra en el uso de DirectX en una aplicación Win32. Para obtener información sobre el uso de DirectX en una aplicación para UWP, consulta Windows 10 guía de desarrollo de [juegos (UWP).](/windows/uwp/gaming/e2e)
+Este contenido se centra en el uso de DirectX en una aplicación Win32. Para obtener información sobre el uso de DirectX en una aplicación para UWP, consulta Windows 10 guía de desarrollo [de juegos (UWP).](/windows/uwp/gaming/e2e)
 
 > [!TIP]
-> Para obtener descripciones y vínculos a componentes de DirectX en el desarrollo activo, vea la entrada de blog Página de [aterrizaje de DirectX](https://devblogs.microsoft.com/directx/landing-page/).
+> Para obtener descripciones y vínculos a componentes de DirectX en desarrollo activo, vea la entrada de blog Página de [aterrizaje de DirectX](https://devblogs.microsoft.com/directx/landing-page/).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -35,7 +35,7 @@ Este contenido se centra en el uso de DirectX en una aplicación Win32. Para obt
 | [Herramientas para gráficos DirectX](./direct3dtools/dx-graphics-tools.md) | Describe las herramientas para gráficos DirectX. |
 | [Artículos sobre gráficos de DirectX](./direct3darticles/directx-graphics-articles-portal.md) | Contiene artículos técnicos para gráficos DirectX. |
 | [API de XAudio2](./xaudio2/xaudio2-apis-portal.md) | Proporciona una base de procesamiento y combinación de señales para juegos. XAudio2 reemplaza a [Direct Sound.](/previous-versions/windows/desktop/ee416960(v=vs.85)) |
-| [API del controlador de juegos XInput](./xinput/xinput-game-controller-apis-portal.md) | Describe cómo usar la API XInput para interactuar con el Mando Xbox 360 cuando se conecta a un Windows remoto. XInput reemplaza a [DirectInput.](/previous-versions/windows/desktop/ee416842(v=vs.85)) |
+| [API del controlador de juegos XInput](./xinput/xinput-game-controller-apis-portal.md) | Describe cómo usar la API XInput para interactuar con el Mando Xbox 360 cuando está conectado a un Windows remoto. XInput reemplaza a [DirectInput.](/previous-versions/windows/desktop/ee416842(v=vs.85)) |
 
 ## <a name="related-topics"></a>Temas relacionados
 

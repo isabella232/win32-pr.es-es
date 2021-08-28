@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TTN_GETDISPINFO (commctrl. h)
-description: Lo envía un control ToolTip para recuperar la información necesaria para mostrar una ventana de información sobre herramientas. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TTN_GETDISPINFO de notificación (Commctrl.h)
+description: Enviado por un control de información sobre herramientas para recuperar la información necesaria para mostrar una ventana de información sobre herramientas. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: af9ecc27-2004-4c45-9f1d-9ee0b2b50ff6
 keywords:
-- TTN_GETDISPINFO controles de código de notificación de Windows
+- TTN_GETDISPINFO código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc1fe07d12331e523fed9e1ff46b9e265487bc31
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 29df1da7643384233b25af6a6efd99930d5b49d0b47b5ffead335b2307bd3de3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967815"
 ---
-# <a name="ttn_getdispinfo-notification-code"></a>Código de notificación de GETDISPINFO de TTN \_
+# <a name="ttn_getdispinfo-notification-code"></a>Código de notificación \_ GETDISPINFO de TTN
 
-Lo envía un control ToolTip para recuperar la información necesaria para mostrar una ventana de información sobre herramientas. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de información sobre herramientas para recuperar la información necesaria para mostrar una ventana de información sobre herramientas. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,17 +43,17 @@ TTN_GETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) que identifica la herramienta que necesita texto y recibe la información solicitada.
+Puntero a una [**estructura NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) que identifica la herramienta que necesita texto y recibe la información solicitada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para esta notificación.
+No se usa el valor devuelto para esta notificación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Rellene los miembros adecuados de la estructura para devolver la información solicitada al control ToolTip. Si el controlador de mensajes establece el miembro **uFlags** de la estructura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) en ttf \_ di \_ SETITEM, el control ToolTip almacena la información y no la volverá a solicitar.
+Rellene los miembros adecuados de la estructura para devolver la información solicitada al control de información sobre herramientas. Si el controlador de mensajes establece el miembro **uFlags** de la estructura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) en TTF DI SETITEM, el control de información sobre herramientas almacena la información y no la \_ \_ volverá a solicitar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Rellene los miembros adecuados de la estructura para devolver la información so
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TTN \_ GETDISPINFOW** (Unicode) y **TTN \_ GETDISPINFOA** (ANSI)<br/>           |
 
 

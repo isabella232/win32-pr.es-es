@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-host-Service-Account-BL
-description: Vínculo hacia atrás de cuentas de servicio para vincular equipos asociados a la cuenta de servicio.
+title: Atributo ms-DS-Host-Service-Account-BL
+description: Vínculo a versiones anteriores de cuentas de servicio para vincular equipos asociados a la cuenta de servicio.
 ms.assetid: 4f32221c-3561-4f38-b82b-637114029b2d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-host-Service-Account-BL
-- Esquema de AD de atributo msDS-HostServiceAccountBL
+- Esquema de AD del atributo ms-DS-Host-Service-Account-BL
+- Esquema de AD del atributo msDS-HostServiceAccountBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 244df74fbd4b0008e562f4c75f2af8e7df886ca9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 258c7d94ba016528ce141d2bd292eba0c832976de6f03bb2e367d6d458fd123f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426526"
 ---
-# <a name="ms-ds-host-service-account-bl-attribute"></a>atributo MS-DS-host-Service-Account-BL
+# <a name="ms-ds-host-service-account-bl-attribute"></a>Atributo ms-DS-Host-Service-Account-BL
 
-Vínculo hacia atrás de cuentas de servicio para vincular equipos asociados a la cuenta de servicio.
+Vínculo a versiones anteriores de cuentas de servicio para vincular equipos asociados a la cuenta de servicio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-host-Service-Account-BL           |
-| Nombre para mostrar de LDAP | msDS-HostServiceAccountBL               |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Host-Service-Account-BL           |
+| Ldap-Display-Name | msDS-HostServiceAccountBL               |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2057                 |
-| System-ID-GUID    | 79abe4eb-88f3-48e7-89d6-f4bc7e98c331    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 79eb4eb-88f3-48e7-89d6-f4bc7e98c331    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -51,13 +51,13 @@ Vínculo hacia atrás de cuentas de servicio para vincular equipos asociados a l
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2167                            |
+| Id. de vínculo                | 2167                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -72,13 +72,13 @@ Vínculo hacia atrás de cuentas de servicio para vincular equipos asociados a l
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2167                            |
+| Id. de vínculo                | 2167                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

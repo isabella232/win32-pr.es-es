@@ -1,9 +1,9 @@
 ---
-title: Computer (SystemPropertiesType), elemento
+title: Elemento Computer (SystemPropertiesType)
 description: nombre del equipo en el que se produjo el evento.
 ms.assetid: 87967597-23b1-4d6f-993b-3744c6471ed0
 keywords:
-- EventLog del elemento de equipo
+- Elemento De equipo EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cde997a05a9b7ba7f6fea53a8433186b07399b91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d165f3ce930712ea505a49f4e1db1a18c60174f9e56deb662e02f5611fb95e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904985"
 ---
-# <a name="computer-systempropertiestype-element"></a>Computer (SystemPropertiesType), elemento
+# <a name="computer-systempropertiestype-element"></a>Elemento Computer (SystemPropertiesType)
 
 nombre del equipo en el que se produjo el evento.
 
@@ -30,7 +30,7 @@ nombre del equipo en el que se produjo el evento.
  />
 ```
 
-El elemento **Computer** se define mediante el tipo complejo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+El **tipo complejo SystemPropertiesType** define el elemento [**Computer.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Computer** se define mediante el tipo complejo [**SystemProperties
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **Computer** se define mediante el tipo complejo [**SystemProperties
 **Elemento primario**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

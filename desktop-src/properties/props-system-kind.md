@@ -1,19 +1,19 @@
 ---
-description: Asigna extensiones a varios. Carpetas de búsqueda.
+description: Mapas extensiones a varios . Buscar carpetas.
 ms.assetid: 6db93108-7d08-4493-b99a-cd4e5d4cbfbd
-title: System. Kind
+title: System.Kind
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a229fd3c2b14b6d8d39c5135853552e349ed2a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d33d32d825de5e5fafd59311902e26c65409b47321d2aaf129165aeacbefc25a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091055"
 ---
-# <a name="systemkind"></a>System. Kind
+# <a name="systemkind"></a>System.Kind
 
-Asigna extensiones a varios. Carpetas de búsqueda.
+Mapas extensiones a varios . Buscar carpetas.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -588,11 +588,11 @@ propertyDescription
             mnemonics = history|webpage|webpages
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
-Las extensiones se asignan a valores de tipo en el registro en:
+Las extensiones se asignan a valores kind en el Registro en:
 
 ```
 HKEY_LOCAL_MACHINE
@@ -604,7 +604,7 @@ HKEY_LOCAL_MACHINE
                   KindMap
 ```
 
-La lista de valores de tipo no es extensible.
+La lista de valores Kind no es extensible.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -619,7 +619,7 @@ La lista de valores de tipo no es extensible.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -631,7 +631,7 @@ La lista de valores de tipo no es extensible.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -649,7 +649,7 @@ La lista de valores de tipo no es extensible.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

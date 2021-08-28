@@ -1,13 +1,13 @@
-- name: Proveedores de WMI de CIMWin32
+- name: Proveedores WMI CIMWin32
   href: cimwin32-wmi-providers.md
   items:
-    - name: Proveedor WMI de CIM
+    - name: Proveedor WMI cim
       href: cim-wmi-provider.md
       items:
         - name: CIM_Action
           href: cim-action.md
           items:
-            - name: Métodos CIM_Action
+            - name: CIM_Action métodos
               href: cim-action-methods.md
               items:
                 - name: Invoke (método)
@@ -21,36 +21,36 @@
         - name: CIM_AggregatePExtent
           href: cim-aggregatepextent.md
           items:
-            - name: Métodos CIM_AggregatePExtent
+            - name: CIM_AggregatePExtent métodos
               href: cim-aggregatepextent-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-aggregatepextent.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-aggregatepextent.md
         - name: CIM_AggregatePSExtent
           href: cim-aggregatepsextent.md
           items:
-            - name: Métodos CIM_AggregatePSExtent
+            - name: CIM_AggregatePSExtent métodos
               href: cim-aggregatepsextent-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-aggregatepsextent.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-aggregatepsextent.md
         - name: CIM_AggregateRedundancyComponent
           href: cim-aggregateredundancycomponent.md
         - name: CIM_AlarmDevice
           href: cim-alarmdevice.md
           items:
-            - name: Métodos CIM_AlarmDevice
+            - name: CIM_AlarmDevice métodos
               href: cim-alarmdevice-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-alarmdevice.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-alarmdevice.md
-                - name: Método SetUrgency
+                - name: Método SetEncy
                   href: seturgency-method-in-class-cim-alarmdevice.md
         - name: CIM_AllocatedResource
           href: cim-allocatedresource.md
@@ -79,22 +79,22 @@
         - name: CIM_Battery
           href: cim-battery.md
           items:
-            - name: Métodos CIM_Battery
+            - name: CIM_Battery métodos
               href: cim-battery-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-battery.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-battery.md
         - name: CIM_BinarySensor
           href: cim-binarysensor.md
           items:
-            - name: Métodos CIM_BinarySensor
+            - name: CIM_BinarySensor métodos
               href: cim-binarysensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-binarysensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-binarysensor.md
         - name: CIM_BIOSElement
           href: cim-bioselement.md
@@ -111,7 +111,7 @@
         - name: CIM_BootService
           href: cim-bootservice.md
           items:
-            - name: Métodos CIM_BootService
+            - name: CIM_BootService métodos
               href: cim-bootservice-methods.md
               items:
                 - name: 'StartService, método'
@@ -123,17 +123,17 @@
         - name: CIM_CacheMemory
           href: cim-cachememory.md
           items:
-            - name: Métodos CIM_CacheMemory
+            - name: CIM_CacheMemory métodos
               href: cim-cachememory-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-cachememory.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-cachememory.md
         - name: CIM_Card
           href: cim-card.md
           items:
-            - name: Métodos CIM_Card
+            - name: CIM_Card métodos
               href: cim-card-methods.md
               items:
                 - name: Método IsCompatible
@@ -145,17 +145,17 @@
         - name: CIM_CDROMDrive
           href: cim-cdromdrive.md
           items:
-            - name: Métodos CIM_CDROMDrive
+            - name: CIM_CDROMDrive métodos
               href: cim-cdromdrive-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-cdromdrive.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-cdromdrive.md
         - name: CIM_Chassis
           href: cim-chassis.md
           items:
-            - name: Métodos CIM_Chassis
+            - name: CIM_Chassis métodos
               href: cim-chassis-methods.md
               items:
                 - name: Método IsCompatible
@@ -165,7 +165,7 @@
         - name: CIM_Check
           href: cim-check.md
           items:
-            - name: Métodos CIM_Check
+            - name: CIM_Check métodos
               href: cim-check-methods.md
               items:
                 - name: Invoke (método)
@@ -177,10 +177,10 @@
         - name: CIM_ClusteringService
           href: cim-clusteringservice.md
           items:
-            - name: Métodos CIM_ClusteringService
+            - name: CIM_ClusteringService métodos
               href: cim-clusteringservice-methods.md
               items:
-                - name: AddNode (método)
+                - name: Método AddNode
                   href: addnode-method-in-class-cim-clusteringservice.md
                 - name: Método EvictNode
                   href: evictnode-method-in-class-cim-clusteringservice.md
@@ -229,27 +229,27 @@
         - name: CIM_Controller
           href: cim-controller.md
           items:
-            - name: Métodos CIM_Controller
+            - name: CIM_Controller métodos
               href: cim-controller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-controller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-controller.md
         - name: CIM_CoolingDevice
           href: cim-coolingdevice.md
           items:
-            - name: Métodos CIM_CoolingDevice
+            - name: CIM_CoolingDevice métodos
               href: cim-coolingdevice-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-coolingdevice.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-coolingdevice.md
         - name: CIM_CopyFileAction
           href: cim-copyfileaction.md
           items:
-            - name: Métodos CIM_CopyFileAction
+            - name: CIM_CopyFileAction métodos
               href: cim-copyfileaction-methods.md
               items:
                 - name: Invoke (método)
@@ -257,7 +257,7 @@
         - name: CIM_CreateDirectoryAction
           href: cim-createdirectoryaction.md
           items:
-            - name: Métodos CIM_CreateDirectoryAction
+            - name: CIM_CreateDirectoryAction métodos
               href: cim-createdirectoryaction-methods.md
               items:
                 - name: Invoke (método)
@@ -265,24 +265,24 @@
         - name: CIM_CurrentSensor
           href: cim-currentsensor.md
           items:
-            - name: Métodos CIM_CurrentSensor
+            - name: CIM_CurrentSensor métodos
               href: cim-currentsensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-currentsensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-currentsensor.md
         - name: CIM_DataFile
           href: cim-datafile.md
           items:
-            - name: Métodos CIM_DataFile
+            - name: CIM_DataFile métodos
               href: cim-datafile-methods.md
               items:
                 - name: Método ChangeSecurityPermissions
                   href: changesecuritypermissions-method-in-class-cim-datafile.md
                 - name: Método ChangeSecurityPermissionsEx
                   href: changesecuritypermissionsex-method-in-class-cim-datafile.md
-                - name: Compress (método)
+                - name: Método Compress
                   href: compress-method-in-class-cim-datafile.md
                 - name: Método CompressEx
                   href: compressex-method-in-class-cim-datafile.md
@@ -302,7 +302,7 @@
                   href: takeownership-method-in-class-cim-datafile.md
                 - name: Método TakeOwnerShipEx
                   href: takeownershipex-method-in-class-cim-datafile.md
-                - name: UNCOMPRESS (método)
+                - name: Descomprimir método
                   href: uncompress-method-in-class-cim-datafile.md
                 - name: Método UncompressEx
                   href: uncompressex-method-in-class-cim-datafile.md
@@ -313,12 +313,12 @@
         - name: CIM_DesktopMonitor
           href: cim-desktopmonitor.md
           items:
-            - name: Métodos CIM_DesktopMonitor
+            - name: CIM_DesktopMonitor métodos
               href: cim-desktopmonitor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-desktopmonitor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-desktopmonitor.md
         - name: CIM_DeviceAccessedByFile
           href: cim-deviceaccessedbyfile.md
@@ -327,7 +327,7 @@
         - name: CIM_DeviceErrorCounts
           href: cim-deviceerrorcounts.md
           items:
-            - name: Métodos CIM_DeviceErrorCounts
+            - name: CIM_DeviceErrorCounts métodos
               href: cim-deviceerrorcounts-methods.md
               items:
                 - name: Método ResetCounter
@@ -335,14 +335,14 @@
         - name: CIM_DeviceFile
           href: cim-devicefile.md
           items:
-            - name: Métodos CIM_DeviceFile
+            - name: CIM_DeviceFile métodos
               href: cim-devicefile-methods.md
               items:
                 - name: Método ChangeSecurityPermissions
                   href: changesecuritypermissions-method-in-class-cim-devicefile.md
                 - name: Método ChangeSecurityPermissionsEx
                   href: changesecuritypermissionsex-method-in-class-cim-devicefile.md
-                - name: Compress (método)
+                - name: Método Compress
                   href: compress-method-in-class-cim-devicefile.md
                 - name: Método CompressEx
                   href: compressex-method-in-class-cim-devicefile.md
@@ -362,7 +362,7 @@
                   href: takeownership-method-in-class-cim-devicefile.md
                 - name: Método TakeOwnerShipEx
                   href: takeownershipex-method-in-class-cim-devicefile.md
-                - name: UNCOMPRESS (método)
+                - name: Descomprimir método
                   href: uncompress-method-in-class-cim-devicefile.md
                 - name: Método UncompressEx
                   href: uncompressex-method-in-class-cim-devicefile.md
@@ -375,14 +375,14 @@
         - name: CIM_Directory
           href: cim-directory.md
           items:
-            - name: Métodos CIM_Directory
+            - name: CIM_Directory métodos
               href: cim-directory-methods.md
               items:
                 - name: Método ChangeSecurityPermissions
                   href: changesecuritypermissions-method-in-class-cim-directory.md
                 - name: Método ChangeSecurityPermissionsEx
                   href: changesecuritypermissionsex-method-in-class-cim-directory.md
-                - name: Compress (método)
+                - name: Método Compress
                   href: compress-method-in-class-cim-directory.md
                 - name: Método CompressEx
                   href: compressex-method-in-class-cim-directory.md
@@ -402,14 +402,14 @@
                   href: takeownership-method-in-class-cim-directory.md
                 - name: Método TakeOwnerShipEx
                   href: takeownershipex-method-in-class-cim-directory.md
-                - name: UNCOMPRESS (método)
+                - name: Descomprimir método
                   href: uncompress-method-in-class-cim-directory.md
                 - name: Método UncompressEx
                   href: uncompressex-method-in-class-cim-directory.md
         - name: CIM_DirectoryAction
           href: cim-directoryaction.md
           items:
-            - name: Métodos CIM_DirectoryAction
+            - name: CIM_DirectoryAction métodos
               href: cim-directoryaction-methods.md
               items:
                 - name: Invoke (método)
@@ -419,7 +419,7 @@
         - name: CIM_DirectorySpecification
           href: cim-directoryspecification.md
           items:
-            - name: Métodos CIM_DirectorySpecification
+            - name: CIM_DirectorySpecification métodos
               href: cim-directoryspecification-methods.md
               items:
                 - name: Invoke (método)
@@ -429,47 +429,47 @@
         - name: CIM_DiscreteSensor
           href: cim-discretesensor.md
           items:
-            - name: Métodos CIM_DiscreteSensor
+            - name: CIM_DiscreteSensor métodos
               href: cim-discretesensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-discretesensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-discretesensor.md
         - name: CIM_DiskDrive
           href: cim-diskdrive.md
           items:
-            - name: Métodos CIM_DiskDrive
+            - name: CIM_DiskDrive métodos
               href: cim-diskdrive-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-diskdrive.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-diskdrive.md
         - name: CIM_DisketteDrive
           href: cim-diskettedrive.md
           items:
-            - name: Métodos CIM_DisketteDrive
+            - name: CIM_DisketteDrive métodos
               href: cim-diskettedrive-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-diskettedrive.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-diskettedrive.md
         - name: CIM_DiskPartition
           href: cim-diskpartition.md
           items:
-            - name: Métodos CIM_DiskPartition
+            - name: CIM_DiskPartition métodos
               href: cim-diskpartition-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-diskpartition.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-diskpartition.md
         - name: CIM_DiskSpaceCheck
           href: cim-diskspacecheck.md
           items:
-            - name: Métodos CIM_DiskSpaceCheck
+            - name: CIM_DiskSpaceCheck métodos
               href: cim-diskspacecheck-methods.md
               items:
                 - name: Invoke (método)
@@ -477,12 +477,12 @@
         - name: CIM_Display
           href: cim-display.md
           items:
-            - name: Métodos CIM_Display
+            - name: CIM_Display métodos
               href: cim-display-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-display.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-display.md
         - name: CIM_DMA
           href: cim-dma.md
@@ -501,7 +501,7 @@
         - name: CIM_ExecuteProgram
           href: cim-executeprogram.md
           items:
-            - name: Métodos CIM_ExecuteProgram
+            - name: CIM_ExecuteProgram métodos
               href: cim-executeprogram-methods.md
               items:
                 - name: Invoke (método)
@@ -513,19 +513,19 @@
         - name: CIM_Fan
           href: cim-fan.md
           items:
-            - name: Métodos CIM_Fan
+            - name: CIM_Fan métodos
               href: cim-fan-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-fan.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-fan.md
                 - name: Método SetSpeed
                   href: setspeed-method-in-class-cim-fan.md
         - name: CIM_FileAction
           href: cim-fileaction.md
           items:
-            - name: Métodos CIM_FileAction
+            - name: CIM_FileAction métodos
               href: cim-fileaction-methods.md
               items:
                 - name: Invoke (método)
@@ -533,7 +533,7 @@
         - name: CIM_FileSpecification
           href: cim-filespecification.md
           items:
-            - name: Métodos CIM_FileSpecification
+            - name: CIM_FileSpecification métodos
               href: cim-filespecification-methods.md
               items:
                 - name: Invoke (método)
@@ -545,12 +545,12 @@
         - name: CIM_FlatPanel
           href: cim-flatpanel.md
           items:
-            - name: Métodos CIM_FlatPanel
+            - name: CIM_FlatPanel métodos
               href: cim-flatpanel-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-flatpanel.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-flatpanel.md
         - name: CIM_FromDirectoryAction
           href: cim-fromdirectoryaction.md
@@ -565,12 +565,12 @@
         - name: CIM_HeatPipe
           href: cim-heatpipe.md
           items:
-            - name: Métodos CIM_HeatPipe
+            - name: CIM_HeatPipe métodos
               href: cim-heatpipe-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-heatpipe.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-heatpipe.md
         - name: CIM_HostedAccessPoint
           href: cim-hostedaccesspoint.md
@@ -587,12 +587,12 @@
         - name: CIM_InfraredController
           href: cim-infraredcontroller.md
           items:
-            - name: Métodos CIM_InfraredController
+            - name: CIM_InfraredController métodos
               href: cim-infraredcontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-infraredcontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-infraredcontroller.md
         - name: CIM_InstalledOS
           href: cim-installedos.md
@@ -609,12 +609,12 @@
         - name: CIM_Keyboard
           href: cim-keyboard.md
           items:
-            - name: Métodos CIM_Keyboard
+            - name: CIM_Keyboard métodos
               href: cim-keyboard-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-keyboard.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-keyboard.md
         - name: CIM_LinkHasConnector
           href: cim-linkhasconnector.md
@@ -625,22 +625,22 @@
         - name: CIM_LogicalDevice
           href: cim-logicaldevice.md
           items:
-            - name: Métodos CIM_LogicalDevice
+            - name: CIM_LogicalDevice métodos
               href: cim-logicaldevice-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-logicaldevice.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-logicaldevice.md
         - name: CIM_LogicalDisk
           href: cim-logicaldisk.md
           items:
-            - name: Métodos CIM_LogicalDisk
+            - name: CIM_LogicalDisk métodos
               href: cim-logicaldisk-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-logicaldisk.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-logicaldisk.md
         - name: CIM_LogicalDiskBasedOnPartition
           href: cim-logicaldiskbasedonpartition.md
@@ -651,14 +651,14 @@
         - name: CIM_LogicalFile
           href: cim-logicalfile.md
           items:
-            - name: Métodos CIM_LogicalFile
+            - name: CIM_LogicalFile métodos
               href: cim-logicalfile-methods.md
               items:
                 - name: Método ChangeSecurityPermissions
                   href: changesecuritypermissions-method-in-class-cim-logicalfile.md
                 - name: Método ChangeSecurityPermissionsEx
                   href: changesecuritypermissionsex-method-in-class-cim-logicalfile.md
-                - name: Compress (método)
+                - name: Método Compress
                   href: compress-method-in-class-cim-logicalfile.md
                 - name: Método CompressEx
                   href: compressex-method-in-class-cim-logicalfile.md
@@ -678,7 +678,7 @@
                   href: takeownership-method-in-class-cim-logicalfile.md
                 - name: Método TakeOwnerShipEx
                   href: takeownershipex-method-in-class-cim-logicalfile.md
-                - name: UNCOMPRESS (método)
+                - name: Descomprimir método
                   href: uncompress-method-in-class-cim-logicalfile.md
                 - name: Método UncompressEx
                   href: uncompressex-method-in-class-cim-logicalfile.md
@@ -687,53 +687,53 @@
         - name: CIM_MagnetoOpticalDrive
           href: cim-magnetoopticaldrive.md
           items:
-            - name: Métodos CIM_MagnetoOpticalDrive
+            - name: CIM_MagnetoOpticalDrive métodos
               href: cim-magnetoopticaldrive-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-magnetoopticaldrive.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-magnetoopticaldrive.md
         - name: CIM_ManagedSystemElement
           href: cim-managedsystemelement.md
         - name: CIM_ManagementController
           href: cim-managementcontroller.md
           items:
-            - name: Métodos CIM_ManagementController
+            - name: CIM_ManagementController métodos
               href: cim-managementcontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-managementcontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-managementcontroller.md
         - name: CIM_MediaAccessDevice
           href: cim-mediaaccessdevice.md
           items:
-            - name: Métodos CIM_MediaAccessDevice
+            - name: CIM_MediaAccessDevice métodos
               href: cim-mediaaccessdevice-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-mediaaccessdevice.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-mediaaccessdevice.md
         - name: CIM_MediaPresent
           href: cim-mediapresent.md
         - name: CIM_Memory
           href: cim-memory.md
           items:
-            - name: Métodos CIM_Memory
+            - name: CIM_Memory métodos
               href: cim-memory-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-memory.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-memory.md
         - name: CIM_MemoryCapacity
           href: cim-memorycapacity.md
         - name: CIM_MemoryCheck
           href: cim-memorycheck.md
           items:
-            - name: Métodos CIM_MemoryCheck
+            - name: CIM_MemoryCheck métodos
               href: cim-memorycheck-methods.md
               items:
                 - name: Invoke (método)
@@ -747,7 +747,7 @@
         - name: CIM_ModifySettingAction
           href: cim-modifysettingaction.md
           items:
-            - name: Métodos CIM_ModifySettingAction
+            - name: CIM_ModifySettingAction métodos
               href: cim-modifysettingaction-methods.md
               items:
                 - name: Invoke (método)
@@ -761,52 +761,52 @@
         - name: CIM_MultiStateSensor
           href: cim-multistatesensor.md
           items:
-            - name: Métodos CIM_MultiStateSensor
+            - name: CIM_MultiStateSensor métodos
               href: cim-multistatesensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-multistatesensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-multistatesensor.md
         - name: CIM_NetworkAdapter
           href: cim-networkadapter.md
           items:
-            - name: Métodos CIM_NetworkAdapter
+            - name: CIM_NetworkAdapter métodos
               href: cim-networkadapter-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-networkadapter.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-networkadapter.md
         - name: CIM_NFS
           href: cim-nfs.md
         - name: CIM_NonVolatileStorage
           href: cim-nonvolatilestorage.md
           items:
-            - name: Métodos CIM_NonVolatileStorage
+            - name: CIM_NonVolatileStorage métodos
               href: cim-nonvolatilestorage-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-nonvolatilestorage.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-nonvolatilestorage.md
         - name: CIM_NumericSensor
           href: cim-numericsensor.md
           items:
-            - name: Métodos CIM_NumericSensor
+            - name: CIM_NumericSensor métodos
               href: cim-numericsensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-numericsensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-numericsensor.md
         - name: CIM_OperatingSystem
           href: cim-operatingsystem.md
           items:
-            - name: Métodos CIM_OperatingSystem
+            - name: CIM_OperatingSystem métodos
               href: cim-operatingsystem-methods.md
               items:
-                - name: Método de reinicio
+                - name: Método reboot
                   href: reboot-method-in-class-cim-operatingsystem.md
                 - name: Shutdown (método)
                   href: shutdown-method-in-class-cim-operatingsystem.md
@@ -817,7 +817,7 @@
         - name: CIM_OSVersionCheck
           href: cim-osversioncheck.md
           items:
-            - name: Métodos CIM_OSVersionCheck
+            - name: CIM_OSVersionCheck métodos
               href: cim-osversioncheck-methods.md
               items:
                 - name: Invoke (método)
@@ -837,44 +837,44 @@
         - name: CIM_ParallelController
           href: cim-parallelcontroller.md
           items:
-            - name: Métodos CIM_ParallelController
+            - name: CIM_ParallelController métodos
               href: cim-parallelcontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-parallelcontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-parallelcontroller.md
         - name: CIM_ParticipatesInSet
           href: cim-participatesinset.md
         - name: CIM_PCIController
           href: cim-pcicontroller.md
           items:
-            - name: Métodos CIM_PCIController
+            - name: CIM_PCIController métodos
               href: cim-pcicontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-pcicontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-pcicontroller.md
         - name: CIM_PCMCIAController
           href: cim-pcmciacontroller.md
           items:
-            - name: Métodos CIM_PCMCIAController
+            - name: CIM_PCMCIAController métodos
               href: cim-pcmciacontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-pcmciacontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-pcmciacontroller.md
         - name: CIM_PCVideoController
           href: cim-pcvideocontroller.md
           items:
-            - name: Métodos CIM_PCVideoController
+            - name: CIM_PCVideoController métodos
               href: cim-pcvideocontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-pcvideocontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-pcvideocontroller.md
         - name: CIM_PExtentRedundancyComponent
           href: cim-pextentredundancycomponent.md
@@ -891,17 +891,17 @@
         - name: CIM_PhysicalExtent
           href: cim-physicalextent.md
           items:
-            - name: Métodos CIM_PhysicalExtent
+            - name: CIM_PhysicalExtent métodos
               href: cim-physicalextent-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-physicalextent.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-physicalextent.md
         - name: CIM_PhysicalFrame
           href: cim-physicalframe.md
           items:
-            - name: Métodos CIM_PhysicalFrame
+            - name: CIM_PhysicalFrame métodos
               href: cim-physicalframe-methods.md
               items:
                 - name: Método IsCompatible
@@ -915,7 +915,7 @@
         - name: CIM_PhysicalPackage
           href: cim-physicalpackage.md
           items:
-            - name: Métodos CIM_PhysicalPackage
+            - name: CIM_PhysicalPackage métodos
               href: cim-physicalpackage-methods.md
               items:
                 - name: Método IsCompatible
@@ -923,42 +923,42 @@
         - name: CIM_PointingDevice
           href: cim-pointingdevice.md
           items:
-            - name: Métodos CIM_PointingDevice
+            - name: CIM_PointingDevice métodos
               href: cim-pointingdevice-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-pointingdevice.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-pointingdevice.md
         - name: CIM_POTSModem
           href: cim-potsmodem.md
           items:
-            - name: Métodos CIM_POTSModem
+            - name: CIM_POTSModem métodos
               href: cim-potsmodem-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-potsmodem.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-potsmodem.md
         - name: CIM_PowerSupply
           href: cim-powersupply.md
           items:
-            - name: Métodos CIM_PowerSupply
+            - name: CIM_PowerSupply métodos
               href: cim-powersupply-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-powersupply.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-powersupply.md
         - name: CIM_Printer
           href: cim-printer.md
           items:
-            - name: Métodos CIM_Printer
+            - name: CIM_Printer métodos
               href: cim-printer-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-printer.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-printer.md
         - name: CIM_Process
           href: cim-process.md
@@ -967,12 +967,12 @@
         - name: CIM_Processor
           href: cim-processor.md
           items:
-            - name: Métodos CIM_Processor
+            - name: CIM_Processor métodos
               href: cim-processor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-processor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-processor.md
         - name: CIM_ProcessThread
           href: cim-processthread.md
@@ -993,19 +993,19 @@
         - name: CIM_ProtectedSpaceExtent
           href: cim-protectedspaceextent.md
           items:
-            - name: Métodos CIM_ProtectedSpaceExtent
+            - name: CIM_ProtectedSpaceExtent métodos
               href: cim-protectedspaceextent-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-protectedspaceextent.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-protectedspaceextent.md
         - name: CIM_PSExtentBasedOnPExtent
           href: cim-psextentbasedonpextent.md
         - name: CIM_Rack
           href: cim-rack.md
           items:
-            - name: Métodos CIM_Rack
+            - name: CIM_Rack métodos
               href: cim-rack-methods.md
               items:
                 - name: Método IsCompatible
@@ -1021,7 +1021,7 @@
         - name: CIM_RebootAction
           href: cim-rebootaction.md
           items:
-            - name: Métodos CIM_RebootAction
+            - name: CIM_RebootAction métodos
               href: cim-rebootaction-methods.md
               items:
                 - name: Invoke (método)
@@ -1033,12 +1033,12 @@
         - name: CIM_Refrigeration
           href: cim-refrigeration.md
           items:
-            - name: Métodos CIM_Refrigeration
+            - name: CIM_Refrigeration métodos
               href: cim-refrigeration-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-refrigeration.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-refrigeration.md
         - name: CIM_RelatedStatistics
           href: cim-relatedstatistics.md
@@ -1047,7 +1047,7 @@
         - name: CIM_RemoveDirectoryAction
           href: cim-removedirectoryaction.md
           items:
-            - name: Métodos CIM_RemoveDirectoryAction
+            - name: CIM_RemoveDirectoryAction métodos
               href: cim-removedirectoryaction-methods.md
               items:
                 - name: Invoke (método)
@@ -1055,7 +1055,7 @@
         - name: CIM_RemoveFileAction
           href: cim-removefileaction.md
           items:
-            - name: Métodos CIM_RemoveFileAction
+            - name: CIM_RemoveFileAction métodos
               href: cim-removefileaction-methods.md
               items:
                 - name: Invoke (método)
@@ -1071,51 +1071,51 @@
         - name: CIM_Scanner
           href: cim-scanner.md
           items:
-            - name: Métodos CIM_Scanner
+            - name: CIM_Scanner métodos
               href: cim-scanner-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-scanner.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-scanner.md
         - name: CIM_SCSIController
           href: cim-scsicontroller.md
           items:
-            - name: Métodos CIM_SCSIController
+            - name: CIM_SCSIController métodos
               href: cim-scsicontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-scsicontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-scsicontroller.md
         - name: CIM_SCSIInterface
           href: cim-scsiinterface.md
         - name: CIM_Sensor
           href: cim-sensor.md
           items:
-            - name: Métodos CIM_Sensor
+            - name: CIM_Sensor métodos
               href: cim-sensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-sensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-sensor.md
         - name: CIM_SerialController
           href: cim-serialcontroller.md
           items:
-            - name: Métodos CIM_SerialController
+            - name: CIM_SerialController métodos
               href: cim-serialcontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-serialcontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-serialcontroller.md
         - name: CIM_SerialInterface
           href: cim-serialinterface.md
         - name: CIM_Service
           href: cim-service.md
           items:
-            - name: Métodos CIM_Service
+            - name: CIM_Service métodos
               href: cim-service-methods.md
               items:
                 - name: 'StartService, método'
@@ -1135,7 +1135,7 @@
         - name: CIM_SettingCheck
           href: cim-settingcheck.md
           items:
-            - name: Métodos CIM_SettingCheck
+            - name: CIM_SettingCheck métodos
               href: cim-settingcheck-methods.md
               items:
                 - name: Invoke (método)
@@ -1155,7 +1155,7 @@
         - name: CIM_SoftwareElementVersionCheck
           href: cim-softwareelementversioncheck.md
           items:
-            - name: Métodos CIM_SoftwareElementVersionCheck
+            - name: CIM_SoftwareElementVersionCheck métodos
               href: cim-softwareelementversioncheck-methods.md
               items:
                 - name: Invoke (método)
@@ -1181,12 +1181,12 @@
         - name: CIM_StorageExtent
           href: cim-storageextent.md
           items:
-            - name: Métodos CIM_StorageExtent
+            - name: CIM_StorageExtent métodos
               href: cim-storageextent-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-storageextent.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-storageextent.md
         - name: CIM_StorageRedundancyGroup
           href: cim-storageredundancygroup.md
@@ -1195,12 +1195,12 @@
         - name: CIM_SwapSpaceCheck
           href: cim-swapspacecheck.md
           items:
-            - name: Métodos CIM_SwapSpaceCheck
+            - name: CIM_SwapSpaceCheck métodos
               href: cim-swapspacecheck-methods.md
               items:
                 - name: Invoke (método)
                   href: invoke-method-in-class-cim-swapspacecheck.md
-        - name: CIM_System
+        - name: Cim_system
           href: cim-system.md
         - name: CIM_SystemComponent
           href: cim-systemcomponent.md
@@ -1211,32 +1211,32 @@
         - name: CIM_Tachometer
           href: cim-tachometer.md
           items:
-            - name: Métodos CIM_Tachometer
+            - name: CIM_Tachometer métodos
               href: cim-tachometer-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-tachometer.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-tachometer.md
         - name: CIM_TapeDrive
           href: cim-tapedrive.md
           items:
-            - name: Métodos CIM_TapeDrive
+            - name: CIM_TapeDrive métodos
               href: cim-tapedrive-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-tapedrive.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-tapedrive.md
         - name: CIM_TemperatureSensor
           href: cim-temperaturesensor.md
           items:
-            - name: Métodos CIM_TemperatureSensor
+            - name: CIM_TemperatureSensor métodos
               href: cim-temperaturesensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-temperaturesensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-temperaturesensor.md
         - name: CIM_Thread
           href: cim-thread.md
@@ -1247,71 +1247,71 @@
         - name: CIM_UninterruptiblePowerSupply
           href: cim-uninterruptiblepowersupply.md
           items:
-            - name: Métodos CIM_UninterruptiblePowerSupply
+            - name: CIM_UninterruptiblePowerSupply métodos
               href: cim-uninterruptiblepowersupply-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-uninterruptiblepowersupply.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-uninterruptiblepowersupply.md
         - name: CIM_UnitaryComputerSystem
           href: cim-unitarycomputersystem.md
           items:
-            - name: Métodos CIM_UnitaryComputerSystem
+            - name: CIM_UnitaryComputerSystem métodos
               href: cim-unitarycomputersystem-methods.md
               items:
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-unitarycomputersystem.md
         - name: CIM_USBController
           href: cim-usbcontroller.md
           items:
-            - name: Métodos CIM_USBController
+            - name: CIM_USBController métodos
               href: cim-usbcontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-usbcontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-usbcontroller.md
         - name: CIM_USBControllerHasHub
           href: cim-usbcontrollerhashub.md
         - name: CIM_USBDevice
           href: cim-usbdevice.md
           items:
-            - name: Métodos CIM_USBDevice
+            - name: CIM_USBDevice métodos
               href: cim-usbdevice-methods.md
               items:
                 - name: Método GetDescriptor
                   href: getdescriptor-method-in-class-cim-usbdevice.md
                 - name: Reset (método)
                   href: reset-method-in-class-cim-usbdevice.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-usbdevice.md
         - name: CIM_USBHub
           href: cim-usbhub.md
           items:
-            - name: Métodos CIM_USBHub
+            - name: CIM_USBHub métodos
               href: cim-usbhub-methods.md
               items:
                 - name: Método GetDescriptor
                   href: getdescriptor-method-in-class-cim-usbhub.md
                 - name: Reset (método)
                   href: reset-method-in-class-cim-usbhub.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-usbhub.md
         - name: CIM_UserDevice
           href: cim-userdevice.md
           items:
-            - name: Métodos CIM_UserDevice
+            - name: CIM_UserDevice métodos
               href: cim-userdevice-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-userdevice.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-userdevice.md
         - name: CIM_VersionCompatibilityCheck
           href: cim-versioncompatibilitycheck.md
           items:
-            - name: Métodos CIM_VersionCompatibilityCheck
+            - name: CIM_VersionCompatibilityCheck métodos
               href: cim-versioncompatibilitycheck-methods.md
               items:
                 - name: Invoke (método)
@@ -1325,12 +1325,12 @@
         - name: CIM_VideoController
           href: cim-videocontroller.md
           items:
-            - name: Métodos CIM_VideoController
+            - name: CIM_VideoController métodos
               href: cim-videocontroller-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-videocontroller.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-videocontroller.md
         - name: CIM_VideoControllerResolution
           href: cim-videocontrollerresolution.md
@@ -1339,52 +1339,52 @@
         - name: CIM_VolatileStorage
           href: cim-volatilestorage.md
           items:
-            - name: Métodos CIM_VolatileStorage
+            - name: CIM_VolatileStorage métodos
               href: cim-volatilestorage-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-volatilestorage.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-volatilestorage.md
         - name: CIM_VoltageSensor
           href: cim-voltagesensor.md
           items:
-            - name: Métodos CIM_VoltageSensor
+            - name: CIM_VoltageSensor métodos
               href: cim-voltagesensor-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-voltagesensor.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-voltagesensor.md
         - name: CIM_VolumeSet
           href: cim-volumeset.md
           items:
-            - name: Métodos CIM_VolumeSet
+            - name: CIM_VolumeSet métodos
               href: cim-volumeset-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-volumeset.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-volumeset.md
         - name: CIM_WORMDrive
           href: cim-wormdrive.md
           items:
-            - name: Métodos CIM_WORMDrive
+            - name: CIM_WORMDrive métodos
               href: cim-wormdrive-methods.md
               items:
                 - name: Reset (método)
                   href: reset-method-in-class-cim-wormdrive.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: setpowerstate-method-in-class-cim-wormdrive.md
-    - name: Proveedor de eventos de administración de energía
+    - name: Proveedor de eventos de Administración de energía
       href: power-management-event-provider.md
       items:
         - name: Win32_PowerManagementEvent
           href: win32-powermanagementevent.md
-    - name: Proveedor Win32
+    - name: Proveedor win32
       href: win32-provider.md
       items:
-        - name: Clases de hardware de sistema del equipo
+        - name: Clases de hardware del sistema de equipo
           href: computer-system-hardware-classes.md
           items:
             - name: Win32_1394Controller
@@ -1421,7 +1421,7 @@
               href: win32-computersystemprocessor.md
             - name: Win32_CurrentProbe
               href: win32-currentprobe.md
-            - name: Win32_DesktopMonitor
+            - name: Win32_desktopmonitor
               href: win32-desktopmonitor.md
             - name: Win32_DeviceBus
               href: win32-devicebus.md
@@ -1440,7 +1440,7 @@
               items:
                 - name: Reset (método)
                   href: win32-diskpartition-reset.md
-                - name: SetPowerState (método)
+                - name: Método SetPowerState
                   href: win32-diskpartition-setpowerstate.md
             - name: Win32_DisplayControllerConfiguration
               href: win32-displaycontrollerconfiguration.md
@@ -1465,10 +1465,10 @@
             - name: Win32_LogicalDisk
               href: win32-logicaldisk.md
               items:
-                - name: Métodos Win32_LogicalDisk
+                - name: Win32_LogicalDisk métodos
                   href: win32-logicaldisk-methods.md
                   items:
-                    - name: CHKDSK (método)
+                    - name: Método Chkdsk
                       href: chkdsk-method-in-class-win32-logicaldisk.md
                     - name: Método ExcludeFromAutochk
                       href: excludefromautochk-method-in-class-win32-logicaldisk.md
@@ -1503,7 +1503,7 @@
             - name: Win32_NetworkAdapter
               href: win32-networkadapter.md
               items:
-                - name: Métodos Win32_NetworkAdapter
+                - name: Win32_NetworkAdapter métodos
                   href: win32-networkadapter-methods.md
                   items:
                     - name: Método Enable
@@ -1513,14 +1513,14 @@
             - name: Win32_NetworkAdapterConfiguration
               href: win32-networkadapterconfiguration.md
               items:
-                - name: Métodos Win32_NetworkAdapterConfiguration
+                - name: Win32_NetworkAdapterConfiguration métodos
                   href: win32-networkadapterconfiguration-methods.md
                   items:
                     - name: Método DisableIPSec
                       href: disableipsec-method-in-class-win32-networkadapterconfiguration.md
-                    - name: EnableDHCP (método)
+                    - name: Método EnableDHCP
                       href: enabledhcp-method-in-class-win32-networkadapterconfiguration.md
-                    - name: EnableDns (método)
+                    - name: Método EnableDNS
                       href: enabledns-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método EnableIPFilterSec
                       href: enableipfiltersec-method-in-class-win32-networkadapterconfiguration.md
@@ -1550,7 +1550,7 @@
                       href: setdefaulttos-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método SetDefaultTTL
                       href: setdefaultttl-method-in-class-win32-networkadapterconfiguration.md
-                    - name: Método método SetDNSDomain
+                    - name: Método SetDNSDomain
                       href: setdnsdomain-method-in-class-win32-networkadapterconfiguration.md
                     - name: Método SetDNSServerSearchOrder
                       href: setdnsserversearchorder-method-in-class-win32-networkadapterconfiguration.md
@@ -1685,7 +1685,7 @@
             - name: Win32_PnPEntity
               href: win32-pnpentity.md
               items:
-                - name: Métodos Win32_PnPEntity
+                - name: Win32_PnPEntity métodos
                   href: win32-pnpentity-methods.md
                   items:
                     - name: Disable (método)
@@ -1709,7 +1709,7 @@
             - name: Win32_Printer
               href: win32-printer.md
               items:
-                - name: Métodos Win32_Printer
+                - name: Win32_Printer métodos
                   href: win32-printer-methods.md
                   items:
                     - name: Método AddPrinterConnection
@@ -1718,7 +1718,7 @@
                       href: cancelalljobs-method-in-class-win32-printer.md
                     - name: Método GetSecurityDescriptor
                       href: getsecuritydescriptor-method-in-class-win32-printer.md
-                    - name: PAUSE (método)
+                    - name: Método Pause
                       href: pause-method-in-class-win32-printer.md
                     - name: Método PrintTestPage
                       href: printtestpage-method-in-class-win32-printer.md
@@ -1737,7 +1737,7 @@
             - name: Win32_PrinterDriver
               href: win32-printerdriver.md
               items:
-                - name: Métodos Win32_PrinterDriver
+                - name: Win32_PrinterDriver métodos
                   href: win32-printerdriver-methods.md
                   items:
                     - name: Método AddPrinterDriver
@@ -1755,10 +1755,10 @@
             - name: Win32_PrintJob
               href: win32-printjob.md
               items:
-                - name: Métodos Win32_PrintJob
+                - name: Win32_PrintJob métodos
                   href: win32-printjob-methods.md
                   items:
-                    - name: PAUSE (método)
+                    - name: Método Pause
                       href: pause-method-in-class-win32-printjob.md
                     - name: Método Resume
                       href: resume-method-in-class-win32-printjob.md
@@ -1786,7 +1786,7 @@
               href: win32-usbcontroller.md
             - name: Win32_USBControllerDevice
               href: win32-usbcontrollerdevice.md
-            - name: Win32_VideoController
+            - name: Win32_videocontroller
               href: win32-videocontroller.md
             - name: Win32_VideoSettings
               href: win32-videosettings.md
@@ -1812,7 +1812,7 @@
             - name: Win32_ClusterShare
               href: win32-clustershare.md
               items:
-                - name: Métodos Win32_ClusterShare
+                - name: Win32_ClusterShare métodos
                   href: win32-clustershare-methods.md
                   items:
                     - name: Método de creación
@@ -1826,7 +1826,7 @@
             - name: Win32_BaseService
               href: win32-baseservice.md
               items:
-                - name: Métodos Win32_BaseService
+                - name: Win32_BaseService métodos
                   href: win32-baseservice-methods.md
                   items:
                     - name: Cambiar método
@@ -1837,7 +1837,7 @@
                       href: create-method-in-class-win32-baseservice.md
                     - name: Delete (método)
                       href: delete-method-in-class-win32-baseservice.md
-                    - name: InterrogateService (método)
+                    - name: Método InterrogateService
                       href: interrogateservice-method-in-class-win32-baseservice.md
                     - name: 'PauseService, método'
                       href: pauseservice-method-in-class-win32-baseservice.md
@@ -1854,14 +1854,14 @@
             - name: Win32_CodecFile
               href: win32-codecfile.md
               items:
-                - name: Métodos Win32_CodecFile
+                - name: Win32_CodecFile métodos
                   href: win32-codecfile-methods.md
                   items:
                     - name: Método ChangeSecurityPermissions
                       href: changesecuritypermissions-method-in-class-win32-codecfile.md
                     - name: Método ChangeSecurityPermissionsEx
                       href: changesecuritypermissionsex-method-in-class-win32-codecfile.md
-                    - name: Compress (método)
+                    - name: Método Compress
                       href: compress-method-in-class-win32-codecfile.md
                     - name: Método CompressEx
                       href: compressex-method-in-class-win32-codecfile.md
@@ -1881,7 +1881,7 @@
                       href: takeownership-method-in-class-win32-codecfile.md
                     - name: Método TakeOwnerShipEx
                       href: takeownershipex-method-in-class-win32-codecfile.md
-                    - name: UNCOMPRESS (método)
+                    - name: Descomprimir método
                       href: uncompress-method-in-class-win32-codecfile.md
                     - name: Método UncompressEx
                       href: uncompressex-method-in-class-win32-codecfile.md
@@ -1904,7 +1904,7 @@
             - name: Win32_ComputerSystem
               href: win32-computersystem.md
               items:
-                - name: Métodos Win32_ComputerSystem
+                - name: Win32_ComputerSystem métodos
                   href: win32-computersystem-methods.md
                   items:
                     - name: Cambio de nombre del método
@@ -1918,7 +1918,7 @@
             - name: Win32_DCOMApplicationSetting
               href: win32-dcomapplicationsetting.md
               items:
-                - name: Métodos Win32_DCOMApplicationSetting
+                - name: Win32_DCOMApplicationSetting métodos
                   href: win32-dcomapplicationsetting-methods.md
                   items:
                     - name: Método GetAccessSecurityDescriptor
@@ -1942,14 +1942,14 @@
             - name: Win32_Directory
               href: win32-directory.md
               items:
-                - name: Métodos Win32_Directory
+                - name: Win32_Directory métodos
                   href: win32-directory-methods.md
                   items:
                     - name: Método ChangeSecurityPermissions
                       href: changesecuritypermissions-method-in-class-win32-directory.md
                     - name: Método ChangeSecurityPermissionsEx
                       href: changesecuritypermissionsex-method-in-class-win32-directory.md
-                    - name: Compress (método)
+                    - name: Método Compress
                       href: compress-method-in-class-win32-directory.md
                     - name: Método CompressEx
                       href: compressex-method-in-class-win32-directory.md
@@ -1969,7 +1969,7 @@
                       href: takeownership-method-in-class-win32-directory.md
                     - name: Método TakeOwnerShipEx
                       href: takeownershipex-method-in-class-win32-directory.md
-                    - name: UNCOMPRESS (método)
+                    - name: Descomprimir método
                       href: uncompress-method-in-class-win32-directory.md
                     - name: Método UncompressEx
                       href: uncompressex-method-in-class-win32-directory.md
@@ -1978,7 +1978,7 @@
             - name: Win32_Group
               href: win32-group.md
               items:
-                - name: Métodos Win32_Group
+                - name: Win32_Group métodos
                   href: win32-group-methods.md
                   items:
                     - name: Cambio de nombre del método
@@ -2002,12 +2002,12 @@
             - name: Win32_OperatingSystem
               href: win32-operatingsystem.md
               items:
-                - name: Métodos Win32_OperatingSystem
+                - name: Win32_OperatingSystem métodos
                   href: win32-operatingsystem-methods.md
                   items:
-                    - name: Método de reinicio
+                    - name: Método reboot
                       href: reboot-method-in-class-win32-operatingsystem.md
-                    - name: SetDateTime (método)
+                    - name: Método SetDateTime
                       href: setdatetime-method-in-class-win32-operatingsystem.md
                     - name: Shutdown (método)
                       href: shutdown-method-in-class-win32-operatingsystem.md
@@ -2026,14 +2026,14 @@
             - name: Win32_PageFile
               href: win32-pagefile.md
               items:
-                - name: Métodos Win32_PageFile
+                - name: Win32_PageFile métodos
                   href: win32-pagefile-methods.md
                   items:
                     - name: Método ChangeSecurityPermissions
                       href: changesecuritypermissions-method-in-class-win32-pagefile.md
                     - name: Método ChangeSecurityPermissionsEx
                       href: changesecuritypermissionsex-method-in-class-win32-pagefile.md
-                    - name: Compress (método)
+                    - name: Método Compress
                       href: compress-method-in-class-win32-pagefile.md
                     - name: Método CompressEx
                       href: compressex-method-in-class-win32-pagefile.md
@@ -2053,7 +2053,7 @@
                       href: takeownership-method-in-class-win32-pagefile.md
                     - name: Método TakeOwnerShipEx
                       href: takeownershipex-method-in-class-win32-pagefile.md
-                    - name: UNCOMPRESS (método)
+                    - name: Descomprimir método
                       href: uncompress-method-in-class-win32-pagefile.md
                     - name: Método UncompressEx
                       href: uncompressex-method-in-class-win32-pagefile.md
@@ -2068,10 +2068,10 @@
             - name: Win32_Process
               href: win32-process.md
               items:
-                - name: Métodos Win32_Process
+                - name: Win32_Process métodos
                   href: win32-process-methods.md
                   items:
-                    - name: Método AttachDebugger
+                    - name: AttachDebugger (método)
                       href: attachdebugger-method-in-class-win32-process.md
                     - name: Método de creación
                       href: create-method-in-class-win32-process.md
@@ -2081,7 +2081,7 @@
                       href: getowner-method-in-class-win32-process.md
                     - name: Método GetOwnerSid
                       href: getownersid-method-in-class-win32-process.md
-                    - name: SetPriority (método)
+                    - name: Método SetPriority
                       href: setpriority-method-in-class-win32-process.md
                     - name: Terminate (método)
                       href: terminate-method-in-class-win32-process.md
@@ -2100,7 +2100,7 @@
             - name: Win32_ScheduledJob
               href: win32-scheduledjob.md
               items:
-                - name: Métodos Win32_ScheduledJob
+                - name: Win32_ScheduledJob métodos
                   href: win32-scheduledjob-methods.md
                   items:
                     - name: Método de creación
@@ -2110,7 +2110,7 @@
             - name: Win32_Service
               href: win32-service.md
               items:
-                - name: Métodos Win32_Service
+                - name: Win32_Service métodos
                   href: win32-service-methods.md
                   items:
                     - name: Cambiar método
@@ -2123,7 +2123,7 @@
                       href: delete-method-in-class-win32-service.md
                     - name: Método GetSecurityDescriptor
                       href: getsecuritydescriptor-method-in-class-win32-service.md
-                    - name: InterrogateService (método)
+                    - name: Método InterrogateService
                       href: interrogateservice-method-in-class-win32-service.md
                     - name: 'PauseService, método'
                       href: pauseservice-method-in-class-win32-service.md
@@ -2146,7 +2146,7 @@
             - name: Win32_Share
               href: win32-share.md
               items:
-                - name: Métodos Win32_Share
+                - name: Win32_Share métodos
                   href: win32-share-methods.md
                   items:
                     - name: Método de creación
@@ -2180,7 +2180,7 @@
             - name: Win32_SystemDriver
               href: win32-systemdriver.md
               items:
-                - name: Métodos Win32_SystemDriver
+                - name: Win32_SystemDriver métodos
                   href: win32-systemdriver-methods.md
                   items:
                     - name: Cambiar método
@@ -2191,7 +2191,7 @@
                       href: create-method-in-class-win32-systemdriver.md
                     - name: Delete (método)
                       href: delete-method-in-class-win32-systemdriver.md
-                    - name: InterrogateService (método)
+                    - name: Método InterrogateService
                       href: interrogateservice-method-in-class-win32-systemdriver.md
                     - name: 'PauseService, método'
                       href: pauseservice-method-in-class-win32-systemdriver.md
@@ -2242,7 +2242,7 @@
             - name: Win32_UserAccount
               href: win32-useraccount.md
               items:
-                - name: Métodos Win32_UserAccount
+                - name: Win32_UserAccount métodos
                   href: win32-useraccount-methods.md
                   items:
                     - name: Cambio de nombre del método
@@ -2256,14 +2256,14 @@
             - name: Win32_ShortcutFile
               href: win32-shortcutfile.md
               items:
-                - name: Métodos Win32_ShortcutFile
+                - name: Win32_ShortcutFile métodos
                   href: win32-shortcutfile-methods.md
                   items:
                     - name: Método ChangeSecurityPermissions
                       href: changesecuritypermissions-method-in-class-win32-shortcutfile.md
                     - name: Método ChangeSecurityPermissionsEx
                       href: changesecuritypermissionsex-method-in-class-win32-shortcutfile.md
-                    - name: Compress (método)
+                    - name: Método Compress
                       href: compress-method-in-class-win32-shortcutfile.md
                     - name: Método CompressEx
                       href: compressex-method-in-class-win32-shortcutfile.md
@@ -2283,11 +2283,11 @@
                       href: takeownership-method-in-class-win32-shortcutfile.md
                     - name: Método TakeOwnerShipEx
                       href: takeownershipex-method-in-class-win32-shortcutfile.md
-                    - name: UNCOMPRESS (método)
+                    - name: Descomprimir método
                       href: uncompress-method-in-class-win32-shortcutfile.md
                     - name: Método UncompressEx
                       href: uncompressex-method-in-class-win32-shortcutfile.md
-        - name: Clases de contador de rendimiento
+        - name: Clases de contadores de rendimiento
           href: performance-counter-classes.md
           items:
             - name: Win32_Perf

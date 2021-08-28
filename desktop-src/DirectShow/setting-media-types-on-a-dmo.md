@@ -1,19 +1,19 @@
 ---
-description: Establecimiento de tipos de medios en DMO
+description: Establecer tipos de medios en un DMO
 ms.assetid: 9ff1542d-6a67-414d-8336-aae80c74d5d0
-title: Establecimiento de tipos de medios en DMO
+title: Establecer tipos de medios en un DMO
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8d657977079a75bf5f1eeccc389da6ad67f63b5
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 85fd437ae54d2e5baec35eb415dd8d04e4d3a3fe5992b8ba73f6d25c77f0475a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904255"
 ---
-# <a name="setting-media-types-on-a-dmo"></a>Establecimiento de tipos de medios en DMO
+# <a name="setting-media-types-on-a-dmo"></a>Establecer tipos de medios en un DMO
 
-Antes de que un DMO pueda procesar los datos, el cliente debe establecer el tipo de medio para cada flujo. (Hay una excepción secundaria a esta regla; consulte [secuencias opcionales](optional-streams.md)). Para encontrar el número de flujos, llame al método [**IMediaObject:: GetStreamCount**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getstreamcount) :
+Para que DMO procesar datos, el cliente debe establecer el tipo de medio para cada secuencia. (Hay una excepción secundaria a esta regla; vea [Opcional Secuencias](optional-streams.md)). Para buscar el número de secuencias, llame al [**método IMediaObject::GetStreamCount:**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getstreamcount)
 
 
 ```C++
@@ -23,11 +23,11 @@ pDMO->GetStreamCount(&cInput, &cOutput);
 
 
 
-Este método devuelve dos valores, el número de entradas y el número de salidas. Estos valores son fijos para la duración de DMO.
+Este método devuelve dos valores, el número de entradas y el número de salidas. Estos valores se fijan para la duración del DMO.
 
 **Tipos preferidos**
 
-Para cada flujo, DMO asigna una lista de posibles tipos de medios, en orden de preferencia. Por ejemplo, los tipos preferidos podrían ser 32-RGB, RGB de 24 bits y RGB de 16 bits, en ese orden. Cuando el cliente establece los tipos de medios, puede usar estas listas como una sugerencia. Para recuperar un tipo preferido para un flujo, llame al método [**IMediaObject:: GetInputType**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getinputtype) o [**IMediaObject:: GetOutputType**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getoutputtype) . Especifique el número de secuencia y un valor de índice para el tipo (empezando desde cero). Por ejemplo, el código siguiente recupera el primer tipo preferido del primer flujo de entrada:
+Para cada secuencia, el DMO asigna una lista de posibles tipos de medios, en orden de preferencia. Por ejemplo, los tipos preferidos podrían ser RGB de 32, RGB de 24 bits y RGB de 16 bits, en ese orden. Cuando el cliente establece los tipos de medios, puede usar estas listas como sugerencia. Para recuperar un tipo preferido para una secuencia, llame al método [**IMediaObject::GetInputType**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getinputtype) o [**al método IMediaObject::GetOutputType.**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-getoutputtype) Especifique el número de secuencia y un valor de índice para el tipo (empezando por cero). Por ejemplo, el código siguiente recupera el primer tipo preferido del primer flujo de entrada:
 
 
 ```C++
@@ -45,7 +45,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para enumerar todos los tipos de medios preferidos en un flujo determinado, use un bucle que incremente el índice de tipo hasta que el método devuelva DMO \_ E \_ ningún \_ \_ elemento más, como se muestra en el ejemplo siguiente:
+Para enumerar todos los tipos de medios preferidos en una secuencia determinada, use un bucle que incremente el índice de tipos hasta que el método devuelva DMO E NO MORE ITEMS, como se muestra en el \_ \_ ejemplo \_ \_ siguiente:
 
 
 ```C++
@@ -64,19 +64,19 @@ while (hr = pDMO->GetInputType(0, dwType, &mt), SUCCEEDED(hr))
 
 
 
-Debe tener en cuenta los siguientes puntos acerca de los tipos preferidos:
+Debe tener en cuenta los siguientes puntos sobre los tipos preferidos:
 
--   DMO podría devolver un tipo que no tiene ningún bloque de formato. Por ejemplo, un DMO podría especificar un tipo de vídeo, como RGB de 24 bits, sin proporcionar el ancho y el alto de la imagen. Sin embargo, al establecer el tipo, debe proporcionar un bloque de formato completo. (Algunos tipos de medios, como MIDI, nunca requieren un bloque de formato, en cuyo caso no se aplica este comentario).
--   No es necesario que DMO admita cada combinación de tipos preferidos que devuelve. Por ejemplo, si una DMO tiene dos flujos y cada flujo tiene cuatro tipos preferidos, hay 16 combinaciones posibles, pero no se garantiza que todos ellos sean válidos.
--   Cuando el cliente establece el tipo de medio para un flujo, DMO podría actualizar los tipos preferidos para que otras secuencias reflejen el nuevo estado. Sin embargo, no es necesario hacerlo.
--   En algunos flujos, DMO podría no ofrecer ningún tipo preferido. Normalmente, un DMO debe proporcionar al menos algunos tipos preferidos en algunas secuencias.
--   No es necesario que DMO ofrezca una lista completa de los tipos de medios que puede aceptar. Puede haber tipos "sin anunciar" que el DMO admita pero no ofrezca como tipos preferidos.
+-   El DMO podría devolver un tipo que no tiene ningún bloque de formato. Por ejemplo, un DMO podría especificar un tipo de vídeo, como RGB de 24 bits, sin proporcionar el ancho y el alto de la imagen. Sin embargo, al establecer el tipo, debe proporcionar un bloque de formato completo. (Algunos tipos de medios, como MIDI, nunca requieren un bloque de formato, en cuyo caso no se aplica este comentario).
+-   El DMO no es necesario para admitir todas las combinaciones de tipos preferidos que devuelve. Por ejemplo, si un DMO tiene dos secuencias y cada secuencia tiene cuatro tipos preferidos, hay 16 combinaciones posibles, pero no se garantiza que todas sean válidas.
+-   Cuando el cliente establece el tipo de medio para una secuencia, el DMO podría actualizar los tipos preferidos de otras secuencias para reflejar el nuevo estado. Sin embargo, no es necesario hacerlo.
+-   Para algunas secuencias, el DMO podría no ofrecer ningún tipo preferido. Normalmente, un DMO debe ofrecer al menos algunos tipos preferidos en algunas secuencias.
+-   El DMO no es necesario para ofrecer una lista completa de los tipos de medios que puede aceptar. Puede haber tipos "sin invertir" que el DMO admite, pero no ofrece como tipos preferidos.
 
-En Resumen, el cliente debe tratar solo los tipos preferidos como instrucciones. La única forma de saber para determinados tipos que se admiten es probarla, como se describe en la sección siguiente.
+En resumen, el cliente debe tratar los tipos preferidos solo como instrucciones. La única manera de saber con certeza qué tipos se admiten es probarlos, como se describe en la sección siguiente.
 
-**Establecer el tipo de medio en una secuencia**
+**Establecimiento del tipo de medio en una secuencia**
 
-Use los métodos [**IMediaObject:: SetInputType**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-setinputtype) y [**IMediaObject:: SetOutputType**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-setoutputtype) para establecer el tipo de cada flujo. Debe proporcionar una estructura **de \_ \_ tipo de medio DMO** que contenga una descripción completa del tipo de medio. En el ejemplo siguiente se establece el tipo de medio en el flujo de entrada 0, mediante audio PCM estéreo de 16 bits 44,1-kHz:
+Use los [**métodos IMediaObject::SetInputType**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-setinputtype) e [**IMediaObject::SetOutputType**](/previous-versions/windows/desktop/api/Mediaobj/nf-mediaobj-imediaobject-setoutputtype) para establecer el tipo de cada secuencia. Debe proporcionar una estructura **DMO \_ MEDIA \_ TYPE** que contenga una descripción completa del tipo de medio. En el ejemplo siguiente se establece el tipo de medio en el flujo de entrada 0, mediante audio PCM estéreo de 16 bits de 44,1 kHz:
 
 
 ```C++
@@ -111,7 +111,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para probar un tipo de medio sin establecerlo, llame a **SetInputType** o **SetOutputType** con la \_ marca DMO set \_ TYPEF \_ Test \_ only. El método devuelve S \_ OK si el tipo es aceptable o S \_ false en caso contrario:
+Para probar un tipo de medio sin establecerlo, llame a **SetInputType** o **SetOutputType** con DMO \_ marca SET \_ TYPEF TEST \_ \_ ONLY. El método devuelve S OK si el tipo es aceptable o S FALSE en caso \_ \_ contrario:
 
 
 ```C++
@@ -123,15 +123,15 @@ if (S_OK == pDMO->SetInputType(0, &mt, DMO_SET_TYPEF_TEST_ONLY)
 
 
 
-Dado que la configuración de una secuencia puede afectar a otra secuencia, puede que tenga que borrar el tipo de archivo multimedia de una secuencia. Para ello, llame a **SetInputType** o **SetOutputType** con la \_ marca DMO set \_ TYPEF \_ Clear.
+Dado que la configuración de una secuencia puede afectar a otra secuencia, es posible que tenga que borrar el tipo de medio de una secuencia. Para ello, llame a **SetInputType** o **SetOutputType** con DMO \_ marca SET \_ TYPEF \_ CLEAR.
 
-Para un descodificador DMO, el cliente normalmente establecería el tipo de entrada primero y, a continuación, elegiría un tipo de salida. Para un codificador DMO, el cliente establecería primero el tipo de salida y, a continuación, el tipo de entrada.
+Para un descodificador DMO, el cliente normalmente establecería primero el tipo de entrada y, a continuación, elegiría un tipo de salida. Para un codificador DMO, el cliente establecería primero el tipo de salida y, a continuación, el tipo de entrada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Hospedar directamente un DMO](directly-hosting-a-dmo.md)
+[Hospedaje directo de un DMO](directly-hosting-a-dmo.md)
 </dt> </dl>
 
  

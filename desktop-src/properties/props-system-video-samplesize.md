@@ -1,19 +1,19 @@
 ---
-description: Indica el tamaño de ejemplo en bits para el flujo de vídeo. &\#0034; Muestrea&\# 0034;.
+description: Indica el tamaño de la muestra en bits para la secuencia de vídeo. &\#0034; SampleSize&\# 0034;.
 ms.assetid: 60c31ee2-5c10-4930-8f5d-a973423ff5a7
-title: System. video. muestreador
+title: System.Video.SampleSize
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5472cab8cae0491ced92578fa3c2fa6e3a207fe1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17bc82722dfae22f3b2316092565f9fad0ebd178e7d941ee1568937c99addd4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095352"
 ---
-# <a name="systemvideosamplesize"></a>System. video. muestreador
+# <a name="systemvideosamplesize"></a>System.Video.SampleSize
 
-Indica el tamaño de ejemplo en bits para el flujo de vídeo. "Muestrea".
+Indica el tamaño de la muestra en bits para la secuencia de vídeo. "SampleSize".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

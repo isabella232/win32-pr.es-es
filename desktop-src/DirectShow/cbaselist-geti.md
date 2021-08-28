@@ -1,7 +1,7 @@
 ---
 description: El método GetI recupera el elemento en la posición especificada.
 ms.assetid: fc775230-491a-49b6-b631-e7d5b8c82d8c
-title: Método CBaseList. GetI (Wxlist. h)
+title: Método CBaseList.GetI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2473401aeaee201456b4eede39ffb492f40ee2b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f543a38c3394943e3ccb1eeb8bb97d29297a4ca230966940245a2f8a8c121b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087445"
 ---
-# <a name="cbaselistgeti-method"></a>CBaseList. GetI, método
+# <a name="cbaselistgeti-method"></a>Método CBaseList.GetI
 
 El `GetI` método recupera el elemento en la posición especificada.
 
@@ -45,7 +45,7 @@ void* GetI(
 *pos* 
 </dt> <dd>
 
-Indicador de posición del elemento que se va a recuperar.
+Indicador de posición del elemento que se recuperará.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Indicador de posición del elemento que se va a recuperar.
 
 Devuelve un puntero al elemento.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *pos* es **null**, el método devuelve **null**.
+Si *pos* es **NULL,** el método devuelve **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si *pos* es **null**, el método devuelve **null**.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si *pos* es **null**, el método devuelve **null**.
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

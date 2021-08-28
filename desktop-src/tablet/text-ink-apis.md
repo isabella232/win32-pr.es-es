@@ -1,21 +1,21 @@
 ---
 description: Además de admitir las interfaces OLE estándar, el objeto de entrada manuscrita de texto (tInk) también admite IInkLineInfo.
 ms.assetid: 60a386e7-b53f-490e-9a4b-2a4507d16a91
-title: Referencia de tinta de texto
+title: Referencia de Entrada manuscrita de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7713a34b4960ecdc560a1a5a3d7d4b7e5b8128c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ef3204b8bf5ffa2a22fd9a1080f67e052c3fd971289454e96a2730ab6bc6537
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119842795"
 ---
-# <a name="text-ink-reference"></a>Referencia de tinta de texto
+# <a name="text-ink-reference"></a>Referencia de Entrada manuscrita de texto
 
-Además de admitir las interfaces OLE estándar, el objeto de entrada manuscrita de texto (tInk) también admite [**IInkLineInfo**](/windows/desktop/api/msinkaut/nn-msinkaut-iinklineinfo).
+Además de admitir las interfaces OLE estándar, el objeto text ink (tInk) también admite [**IInkLineInfo**](/windows/desktop/api/msinkaut/nn-msinkaut-iinklineinfo).
 
-Para obtener información sobre cómo especificar las propiedades de presentación de un objeto de entrada de lápiz, consulte estructura [**INKMETRIC**](/windows/win32/api/msinkaut/ns-msinkaut-inkmetric) .
+Para obtener información sobre cómo especificar propiedades de presentación para un objeto de entrada manuscrita de texto, vea [**ESTRUCTURA INKMETRIC.**](/windows/win32/api/msinkaut/ns-msinkaut-inkmetric)
 
  
 

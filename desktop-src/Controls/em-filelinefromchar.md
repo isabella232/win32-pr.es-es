@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_FILELINEFROMCHAR (CommCtrl. h)
-description: Obtiene el índice de la línea que contiene el índice de carácter especificado en un control de edición multilínea, independientemente de cómo se muestren las líneas en la pantalla.
+title: EM_FILELINEFROMCHAR mensaje (CommCtrl.h)
+description: Obtiene el índice de la línea que contiene el índice de caracteres especificado en un control de edición multilínea, independientemente de cómo se muestren las líneas en la pantalla.
 ms.assetid: e8e9217b-3f0c-478d-b44d-2a51868dbc5a
 keywords:
-- EM_FILELINEFROMCHAR controles de mensajes de Windows
+- EM_FILELINEFROMCHAR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a083d7e12822eacfb1e29a7d4bfd2ea705f2d32
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9d238117a9f2ba18ae838eec32d7dc2fa12ba0833f9cdee54ce2d1a2c998944
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915635"
 ---
-# <a name="em_filelinefromchar-message"></a>\_Mensaje FILELINEFROMCHAR em
+# <a name="em_filelinefromchar-message"></a>Mensaje \_ EM FILELINEFROMCHAR
 
-Obtiene el índice de la línea que contiene el índice de carácter especificado en un control de edición multilínea, independientemente de cómo se muestren las líneas en la pantalla. Un índice de carácter es el índice de base cero del carácter desde el principio del control de edición.
+Obtiene el índice de la línea que contiene el índice de caracteres especificado en un control de edición multilínea, independientemente de cómo se muestren las líneas en la pantalla. Un índice de caracteres es el índice de base cero del carácter desde el principio del control de edición.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Obtiene el índice de la línea que contiene el índice de carácter especificad
 *wParam* 
 </dt> <dd>
 
-Índice de carácter del carácter incluido en la línea cuyo número se va a recuperar. Si este parámetro es-1, **em \_ FILELINEFROMCHAR** recupera el número de línea de la línea actual (la línea que contiene el símbolo de intercalación) o, si hay una selección, el número de línea de la línea que contiene el principio de la selección.
+Índice de caracteres del carácter contenido en la línea cuyo número se va a recuperar. Si este parámetro es -1, **EM \_ FILELINEFROMCHAR** recupera el número de línea de la línea actual (la línea que contiene el centro de referencia) o, si hay una selección, el número de línea de la línea que contiene el principio de la selección.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el número de línea de base cero de la línea que contiene el índice de caracteres especificado por *wParam*, independientemente de cómo se muestren las líneas en la pantalla.
+El valor devuelto es el número de línea de base cero de la línea que contiene el índice de caracteres especificado por *wParam,* independientemente de cómo se muestren las líneas en la pantalla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ El valor devuelto es el número de línea de base cero de la línea que contiene
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 y 1809 \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2019 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio 1809 \[\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ El valor devuelto es el número de línea de base cero de la línea que contiene
 **Referencia**
 </dt> <dt>
 
-[**\_FILELINEINDEX em**](em-filelineindex.md)
+[**EM \_ FILELINEINDEX**](em-filelineindex.md)
 </dt> </dl>
 
  

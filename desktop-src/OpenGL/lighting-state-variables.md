@@ -1,6 +1,6 @@
 ---
-title: Variables de estado de iluminación
-description: Variables de estado de iluminación
+title: Variables de estado de la opción de iluminación
+description: Variables de estado de la opción de iluminación
 ms.assetid: a9fb1e22-5e33-4b46-9c3b-2f64de5dd646
 keywords:
 - Variables de estado de iluminación OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c5a2d029727f4ff4a9eee353230e0843a39f082
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: dfeb867f979a0f5f2da838cdd225c91da2b67913c18cdda89c5d40a3f8ed6b88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034915"
 ---
-# <a name="lighting-state-variables"></a>Variables de estado de iluminación
+# <a name="lighting-state-variables"></a>Variables de estado de la opción de iluminación
 
 <dl> <dt><span id="GL_LIGHTING"></span><span id="gl_lighting"></span>GL \_ LIGHTING</dt> <dd> 
 
@@ -34,7 +34,7 @@ ms.locfileid: "107909862"
 
  
 
-</dd> <dt><span id="GL_COLOR_MATERIAL"></span><span id="gl_color_material"></span>MATERIAL \_ DE COLOR \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_COLOR_MATERIAL"></span><span id="gl_color_material"></span>\_MATERIAL DE COLOR \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|------------------------------------|
@@ -112,7 +112,7 @@ ms.locfileid: "107909862"
 
  
 
-</dd> <dt><span id="GL_EMISSION"></span><span id="gl_emission"></span>GL \_ EMISSION</dt> <dd> 
+</dd> <dt><span id="GL_EMISSION"></span><span id="gl_emission"></span>EMISIÓN DE GL \_</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|------------------------------------------|
@@ -268,7 +268,7 @@ ms.locfileid: "107909862"
 
  
 
-</dd> <dt><span id="GL_SPOT_DIRECTION"></span><span id="gl_spot_direction"></span>DIRECCIÓN DE \_ SPOT \_ DE GL</dt> <dd> 
+</dd> <dt><span id="GL_SPOT_DIRECTION"></span><span id="gl_spot_direction"></span>DIRECCIÓN \_ DE SPOT DE \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|------------------------------------|
@@ -285,7 +285,7 @@ ms.locfileid: "107909862"
 
 | Propiedad | Value |
 |------------------|------------------------------------|
-| Descripción:     | Exponente destacado de light *i*    |
+| Descripción:     | Exponente de spotlight de light *i*    |
 | Grupo de atributos: | iluminación                           |
 | Valor inicial:   | 0,0                                |
 | Comando Get:     | [**glGetLightfv**](glgetlight.md) |

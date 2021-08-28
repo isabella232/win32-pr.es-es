@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4da3dc4c0d211039378b5cc1301a84e35f67ab24
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c1d72fa8b5cda24435cec0f4ec5f0751862bc14c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475801"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986548"
 ---
 # <a name="jetsetsystemparameter-function"></a>JetSetSystemParameter (Función)
 
@@ -83,7 +83,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
-| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p><p><strong>Windows Vista:</strong>  En Windows Vista y versiones posteriores, se puede devolver el valor correcto sin cambiar el valor del parámetro del sistema. Consulte el JET_paramEnableAdvanced del sistema en el tema <a href="gg269346(v=exchg.10).md">Meta Parameters</a> para obtener más información.</p> | 
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p><p><strong>Windows Vista:</strong>  En Windows Vista y versiones posteriores, se puede devolver el valor correcto sin cambiar el valor del parámetro del sistema. Vea el JET_paramEnableAdvanced del sistema en el <a href="gg269346(v=exchg.10).md">tema Meta Parameters</a> para obtener más información.</p> | 
 | <p>JET_errAlreadyInitialized</p> | <p>La instancia se ha inicializado mediante una llamada a <a href="gg294068(v=exchg.10).md">JetInit</a> y esta operación no se puede realizar como resultado. Esto puede ocurrir para <strong>JetSetSystemParameter</strong> cuando se intenta configurar un parámetro del sistema después de que un cambio en su valor no pueda afectar al estado del motor de base de datos.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errIndexTuplesInvalidLimits</p> | <p>Los parámetros de índice de tupla especificados no eran ilegales. <strong>JetSetSystemParameter</strong> solo puede devolver este error al establecer JET_paramIndexTuplesLengthMin <a href="gg294119(v=exchg.10).md">,</a> <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesLengthMax</a>o <a href="gg294119(v=exchg.10).md">JET_paramIndexTuplesToIndexMax</a> en un valor no válido.</p><p><strong>Windows XP y Windows Server 2003:</strong>  Esto solo puede ocurrir en Windows XP y Windows Server 2003.</p> | 
@@ -103,7 +103,7 @@ Si se ejecuta correctamente, la configuración del parámetro del sistema se est
 
 En caso de error, la configuración del parámetro del sistema permanecerá sin cambios.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 **JetSetSystemParameter realiza** un trabajo deficiente al validar la configuración elegida para cada parámetro del sistema. Debe tener cuidado de no confiar en esta validación para aplicar una buena configuración. Preste mucha atención a la descripción de cada parámetro del sistema y siga esas directrices para una buena configuración de parámetros del sistema.
 
@@ -114,7 +114,14 @@ Cada parámetro del sistema tiene un valor predeterminado. Estos valores predete
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetSetSystemParameterW</strong> (Unicode) y <strong>JetSetSystemParameterA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetSetSystemParameterW</strong> (Unicode) y <strong>JetSetSystemParameterA</strong> (ANSI).</p> | 
 
 
 

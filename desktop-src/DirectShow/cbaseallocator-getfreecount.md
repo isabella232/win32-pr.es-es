@@ -1,7 +1,7 @@
 ---
-description: El método GetFreeCount recupera el número de muestras de medios que no están en uso.
+description: El método GetFreeCount recupera el número de muestras multimedia que no están en uso.
 ms.assetid: f4ce4cca-0168-42db-9fe7-858862f033a8
-title: Método CBaseAllocator. GetFreeCount (Amfilter. h)
+title: Método CBaseAllocator.GetFreeCount (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a0538229053b5d47ca1bdc8f30b38a0937e36cb5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c4552829482a604b368a6710c62d0fc0b26a94aa3bb33b67ef386f2785d6c90e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120057515"
 ---
-# <a name="cbaseallocatorgetfreecount-method"></a>CBaseAllocator. GetFreeCount, método
+# <a name="cbaseallocatorgetfreecount-method"></a>CBaseAllocator.GetFreeCount (método)
 
 El `GetFreeCount` método recupera el número de muestras de medios que no están en uso.
 
@@ -51,11 +51,11 @@ Dirección de una variable que recibe el número de muestras que no están en us
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método implementa el método [**IMemAllocatorCallbackTemp:: GetFreeCount**](/windows/desktop/api/Strmif/nf-strmif-imemallocatorcallbacktemp-getfreecount) . El asignador no expone la interfaz IMemAllocatorCallbackTemp a menos que la marca *fEnableReleaseCallback* esté establecida en **true** en el constructor CBaseAllocator.
+Este método implementa el [**método IMemAllocatorCallbackTemp::GetFreeCount.**](/windows/desktop/api/Strmif/nf-strmif-imemallocatorcallbacktemp-getfreecount) El asignador no expone la interfaz IMemAllocatorCallbackTemp a menos que la marca *fEnableReleaseCallback* esté establecida en **TRUE** en el constructor CBaseAllocator.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Este método implementa el método [**IMemAllocatorCallbackTemp:: GetFreeCount**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este método implementa el método [**IMemAllocatorCallbackTemp:: GetFreeCount**
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

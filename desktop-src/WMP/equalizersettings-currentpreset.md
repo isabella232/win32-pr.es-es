@@ -3,7 +3,7 @@ title: EQUALIZERSETTINGS.currentPreset
 description: El atributo currentPreset especifica o recupera el índice del valor preestablecido actual.
 ms.assetid: 0eb97da7-3ca0-4560-8702-2adbd8dcfc1e
 keywords:
-- EQUALIZERSETTINGS. currentPreset Windows Media Player
+- EQUALIZERSETTINGS.currentPreset Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a67e48670f100491f24bd4f0a46462f252603fd4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bb52841174250b66eae28e7b60528fc60b20c17469461cf252b5897835c7d3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901975"
 ---
 # <a name="equalizersettingscurrentpreset"></a>EQUALIZERSETTINGS.currentPreset
 
-El atributo **currentPreset** especifica o recupera el índice del valor preestablecido actual.
+El **atributo currentPreset** especifica o recupera el índice del valor preestablecido actual.
 
 ``` syntax
         elementID.currentPreset
@@ -29,9 +29,9 @@ El atributo **currentPreset** especifica o recupera el índice del valor preesta
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**).
+Este atributo es un número de lectura y **escritura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si no se especifica este atributo, se conservará el valor anterior.
 
@@ -41,7 +41,7 @@ Si no se especifica este atributo, se conservará el valor anterior.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

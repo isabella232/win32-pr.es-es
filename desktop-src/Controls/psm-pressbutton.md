@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_PRESSBUTTON (Prsht. h)
-description: Simula la selección de un botón de la hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro PropSheet \_ PressButton.
+title: PSM_PRESSBUTTON mensaje (Prsht.h)
+description: Simula la selección de un botón de hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro \_ PressButton de PropSheet.
 ms.assetid: 82a55a29-d916-47ee-b0a0-f685a3a386d9
 keywords:
-- PSM_PRESSBUTTON controles de mensajes de Windows
+- PSM_PRESSBUTTON controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b54b04dcc7b1263019f49ff8c1de0d2c21a12a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 182a51e6017a6ffcfbba74229e95a9848bede371e7e7e0faa04abed0a60c210e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088675"
 ---
-# <a name="psm_pressbutton-message"></a>Mensaje de PSM \_ PRESSBUTTON
+# <a name="psm_pressbutton-message"></a>Mensaje \_ PRESSBUTTON de PSM
 
-Simula la selección de un botón de la hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ PressButton**](/windows/desktop/api/Prsht/nf-prsht-propsheet_pressbutton) .
+Simula la selección de un botón de hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro [**\_ PressButton de PropSheet.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_pressbutton)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,19 +32,19 @@ Simula la selección de un botón de la hoja de propiedades. Puede enviar este m
 *wParam* 
 </dt> <dd>
 
-Índice del botón que se va a seleccionar. Este parámetro puede ser uno de los valores siguientes.
+Índice del botón que se selecciona. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                            | Significado                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PSBTN_APPLYNOW"></span><span id="psbtn_applynow"></span><dl> <dt>**PSBTN \_ APPLYNOW**</dt> </dl> | Selecciona el botón **aplicar** . Este valor no es válido cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).<br/> |
-| <span id="PSBTN_BACK"></span><span id="psbtn_back"></span><dl> <dt>**PSBTN \_ atrás**</dt> </dl>             | Selecciona el botón **atrás** .<br/>                                                                                                         |
-| <span id="PSBTN_CANCEL"></span><span id="psbtn_cancel"></span><dl> <dt>**\_Cancelar PSBTN**</dt> </dl>       | Selecciona el botón **Cancelar** .<br/>                                                                                                       |
-| <span id="PSBTN_FINISH"></span><span id="psbtn_finish"></span><dl> <dt>**\_Finalizar PSBTN**</dt> </dl>       | Selecciona el botón **Finalizar** .<br/>                                                                                                       |
-| <span id="PSBTN_HELP"></span><span id="psbtn_help"></span><dl> <dt>**ayuda de PSBTN \_**</dt> </dl>             | Selecciona el botón **ayuda** . Este valor no es válido cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).<br/>  |
-| <span id="PSBTN_NEXT"></span><span id="psbtn_next"></span><dl> <dt>**PSBTN \_ siguiente**</dt> </dl>             | Selecciona el botón **siguiente** .<br/>                                                                                                         |
-| <span id="PSBTN_OK"></span><span id="psbtn_ok"></span><dl> <dt>**PSBTN \_ Aceptar**</dt> </dl>                   | Selecciona el botón **Aceptar** . Este valor no es válido cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).<br/>    |
+| <span id="PSBTN_APPLYNOW"></span><span id="psbtn_applynow"></span><dl> <dt>**PSBTN \_ APPLYNOW**</dt> </dl> | Selecciona el **botón** Aplicar. Este valor no es válido cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).<br/> |
+| <span id="PSBTN_BACK"></span><span id="psbtn_back"></span><dl> <dt>**PSBTN \_ BACK**</dt> </dl>             | Selecciona el **botón** Atrás.<br/>                                                                                                         |
+| <span id="PSBTN_CANCEL"></span><span id="psbtn_cancel"></span><dl> <dt>**PSBTN \_ CANCEL**</dt> </dl>       | Selecciona el **botón** Cancelar.<br/>                                                                                                       |
+| <span id="PSBTN_FINISH"></span><span id="psbtn_finish"></span><dl> <dt>**PSBTN \_ FINISH**</dt> </dl>       | Selecciona el **botón** Finalizar.<br/>                                                                                                       |
+| <span id="PSBTN_HELP"></span><span id="psbtn_help"></span><dl> <dt>**AYUDA DE \_ PSBTN**</dt> </dl>             | Selecciona el botón **Ayuda.** Este valor no es válido cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).<br/>  |
+| <span id="PSBTN_NEXT"></span><span id="psbtn_next"></span><dl> <dt>**PSBTN \_ NEXT**</dt> </dl>             | Selecciona el **botón** Siguiente.<br/>                                                                                                         |
+| <span id="PSBTN_OK"></span><span id="psbtn_ok"></span><dl> <dt>**PSBTN \_ OK**</dt> </dl>                   | Selecciona el **botón** Aceptar. Este valor no es válido cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).<br/>    |
 
 
 
@@ -67,11 +67,11 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

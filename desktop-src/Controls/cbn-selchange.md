@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CBN_SELCHANGE (Winuser. h)
+title: CBN_SELCHANGE de notificación (Winuser.h)
 description: Se envía cuando el usuario cambia la selección actual en el cuadro de lista de un cuadro combinado.
 ms.assetid: 2d0d711c-dfc4-485b-97bb-9ccfa7c5864b
 keywords:
-- CBN_SELCHANGE controles de código de notificación de Windows
+- CBN_SELCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e921b7856780763923a448e42de072476cc02f6b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f808438f8592acfdede592fab352bbeb0dd7123b5dc41db86eadb6749ae8b4ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968625"
 ---
-# <a name="cbn_selchange-notification-code"></a>Código de notificación de SELCHANGE de CBN \_
+# <a name="cbn_selchange-notification-code"></a>Código de notificación \_ DE CBN SELCHANGE
 
-Se envía cuando el usuario cambia la selección actual en el cuadro de lista de un cuadro combinado. El usuario puede cambiar la selección haciendo clic en el cuadro de lista o usando las teclas de dirección. La ventana primaria del cuadro combinado recibe este código de notificación en forma de mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Se envía cuando el usuario cambia la selección actual en el cuadro de lista de un cuadro combinado. El usuario puede cambiar la selección haciendo clic en el cuadro de lista o usando las teclas de dirección. La ventana primaria del cuadro combinado recibe este código de notificación en forma de mensaje [**WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_SELCHANGE
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del cuadro combinado. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -53,11 +53,11 @@ Identificador del cuadro combinado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener el índice de la selección actual, envíe el mensaje [**CB \_ GETCURSEL**](cb-getcursel.md) al control.
+Para obtener el índice de la selección actual, envíe el [**mensaje \_ CB GETCURSEL**](cb-getcursel.md) al control .
 
-El \_ código de notificación CBN SELCHANGE no se envía cuando la selección actual se establece mediante el mensaje [**CB \_ SETCURSEL**](cb-setcursel.md) .
+El código de notificación DE CBN SELCHANGE no se envía cuando se establece la selección actual \_ mediante el [**mensaje \_ SETCURSEL de CB.**](cb-setcursel.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ El \_ código de notificación CBN SELCHANGE no se envía cuando la selección a
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -78,10 +78,10 @@ El \_ código de notificación CBN SELCHANGE no se envía cuando la selección a
 **Referencia**
 </dt> <dt>
 
-[CBN \_ primer plano](cbn-closeup.md)
+[CBN \_ CLOSEUP](cbn-closeup.md)
 </dt> <dt>
 
-[CBN \_ DBLCLK](cbn-dblclk.md)
+[\_DBLCLK de CBN](cbn-dblclk.md)
 </dt> <dt>
 
 [**CB \_ GETCURSEL**](cb-getcursel.md)
@@ -99,7 +99,7 @@ El \_ código de notificación CBN SELCHANGE no se envía cuando la selección a
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

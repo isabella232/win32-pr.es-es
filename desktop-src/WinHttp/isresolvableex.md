@@ -1,7 +1,7 @@
 ---
 description: Determina si una cadena de host determinada puede resolverse en una dirección IP.
 ms.assetid: 83e52ca7-2ea0-419d-b09d-9301c1982b98
-title: isResolvableEx función)
+title: Función isResolvableEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1172aaed93a9fc6cede5ae5393c5dd430613a466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 580f5400b59a1142de90843e2be26790aef25a9311f7aa6f732aebeef606c701
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899175"
 ---
-# <a name="isresolvableex-function"></a>isResolvableEx función)
+# <a name="isresolvableex-function"></a>Función isResolvableEx
 
 Determina si una cadena de host determinada puede resolverse en una dirección IP.
 
@@ -36,7 +36,7 @@ Cadena que contiene el host HTTP que se proporciona a FindProxyForUrl.
 
 ## <a name="return-value"></a>Valor devuelto
 
-TRUE si el host se va a resolver en una dirección IPv4 o IPv6; en caso contrario, FALSE.
+TRUE si el host se puede resolver en una dirección IPv4 o IPv6; de lo contrario, FALSE.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -54,10 +54,10 @@ isResolvableEx(host);
 
 <dl> <dt>
 
-[Definiciones de API de aplicación auxiliar de proxy compatible con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definiciones de API del asistente de proxy compatibles con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Extensiones IPv6 para el formato de archivo de configuración automática de navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Extensiones IPv6 para el formato de archivo de configuración automática del navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

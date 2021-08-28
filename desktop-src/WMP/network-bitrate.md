@@ -1,9 +1,9 @@
 ---
-title: Red. velocidad de bits
-description: La propiedad de velocidad de bits recupera la velocidad de bits actual recibida.
+title: Network.bitRate
+description: La propiedad bitRate recupera la velocidad de bits actual que se recibe.
 ms.assetid: e970a43a-1773-4dc0-ac2f-115f698bc1f4
 keywords:
-- Red. velocidad de bits de Windows Media Player
+- Network.bitRate Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4373d667ea41d55b5b0e12f1a47289f15d7b115b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ec142885bdd718903e956f8e86b59c3753cb024ecccc5efb2f8494797ea6a818
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901785"
 ---
-# <a name="networkbitrate"></a>Red. velocidad de bits
+# <a name="networkbitrate"></a>Network.bitRate
 
-La propiedad de **velocidad** de bits recupera la velocidad de bits actual recibida.
+La **propiedad bitRate** recupera la velocidad de bits actual que se recibe.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **velocidad de bits**
+*player*. *red*. **bitRate**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este valor es una combinación de las velocidades de bits de las secuencias de audio y vídeo actuales.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **velocidad** de bits para mostrar la velocidad de bits multimedia actual. La información se muestra en un DIV HTML creado con ID = "BR". El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **bitRate** para mostrar la velocidad de bits del medio actual. La información se muestra en un DIV HTML creado con id. = "BR". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -71,7 +71,7 @@ En el siguiente ejemplo de JScript se usa *Network*. **velocidad** de bits para 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
 title: Propiedad CameraRedirConfigCollection de la interfaz IMsRdpClientNonScriptable7
-description: Obtiene la colección de cámaras (y las configuraciones asociadas) que están disponibles para la redirección.
+description: Obtiene la colección de cámaras (y las configuraciones asociadas) que están disponibles para el redireccionamiento.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad CameraRedirConfigCollection
-- Propiedad CameraRedirConfigCollection Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable7, propiedad CameraRedirConfigCollection
+- Propiedad CameraRedirConfigCollection Servicios de Escritorio remoto
+- Propiedad CameraRedirConfigCollection Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable7
+- Interfaz IMsRdpClientNonScriptable7 Servicios de Escritorio remoto , propiedad CameraRedirConfigCollection
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 817d3d73b4abbf8aa8b4126fd99ed7d11c3fff51
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: ea90c06403c1ba44e129867f2d739990a37ee178ebe5d0b8f4afd684b17eb09e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104359878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033175"
 ---
-# <a name="imsrdpclientnonscriptable7cameraredirconfigcollection-property"></a>IMsRdpClientNonScriptable7:: CameraRedirConfigCollection (propiedad)
+# <a name="imsrdpclientnonscriptable7cameraredirconfigcollection-property"></a>Propiedad IMsRdpClientNonScriptable7::CameraRedirConfigCollection
 
-Obtiene la colección de cámaras (y las configuraciones asociadas) que están disponibles para la redirección.
+Obtiene la colección de cámaras (y las configuraciones asociadas) que están disponibles para el redireccionamiento.
 
 Esta propiedad es de solo lectura.
 
@@ -41,7 +41,7 @@ HRESULT get_CameraRedirConfigCollection(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un [IMsRdpCameraRedirConfigCollection](imsrdpcameraredirconfigcollection.md) que representa la colección de cámaras (y las configuraciones asociadas) que están disponibles para la redirección.
+[IMsRdpCameraRedirConfigCollection que](imsrdpcameraredirconfigcollection.md) representa la colección de cámaras (y las configuraciones asociadas) que están disponibles para el redireccionamiento.
 
 ## <a name="requirements"></a>Requisitos
 

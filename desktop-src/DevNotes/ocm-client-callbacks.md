@@ -1,7 +1,7 @@
 ---
-description: Especifica las funciones de devolución de llamada que va a usar el administrador de componentes opcionales.
+description: Especifica las funciones de devolución de llamada que usará el administrador de componentes opcional.
 ms.assetid: 454cc07e-4a00-4c53-9759-47563a8ed62f
-title: Estructura de OCM_CLIENT_CALLBACKS
+title: OCM_CLIENT_CALLBACKS estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cc2c1d95e2b05de1ad7285e065e9742a24e0e5a5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 453eeaa49a7211793503f39f0b050904bcf7de41a83e2b06dce647fb4177e41e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058875"
 ---
-# <a name="ocm_client_callbacks-structure"></a>OCM \_ ( \_ estructura de devoluciones de llamada de cliente)
+# <a name="ocm_client_callbacks-structure"></a>Estructura OCM \_ CLIENT \_ CALLBACKS
 
-Especifica las funciones de devolución de llamada que va a usar el administrador de componentes opcionales.
+Especifica las funciones de devolución de llamada que usará el administrador de componentes opcional.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ typedef struct _OCM_CLIENT_CALLBACKS {
 **FillInSetupDataA**
 </dt> <dd>
 
-La función de devolución de llamada para rellenar la estructura de datos de configuración que proporciona información sobre el entorno en el que se ejecuta el administrador de OC.
+Función de devolución de llamada que se va a rellenar en la estructura de datos de configuración que proporciona información sobre el entorno en el que se ejecuta el administrador de OC.
 
 </dd> <dt>
 
 **LogError**
 </dt> <dd>
 
-La función de devolución de llamada que registra los errores.
+Función de devolución de llamada que registra los errores.
 
 </dd> <dt>
 
@@ -68,14 +68,14 @@ Función de devolución de llamada que indica la necesidad de reiniciar.
 **ShowHideWizardPage**
 </dt> <dd>
 
-Función de devolución de llamada que indica si se debe mostrar u ocultar el asistente. Esto solo tiene efecto si se muestra la cartelera.
+Función de devolución de llamada que indica si se debe mostrar u ocultar el asistente. Esto solo tiene efecto si se muestra el cuadro.
 
 </dd> <dt>
 
-**BillboardProgressCallback**
+**CallbackProgressCallback**
 </dt> <dd>
 
-Función de devolución de llamada que llama a la información de progreso de la cartelera.
+La función de devolución de llamada que llama a los comentarios de progreso a la ciudad.
 
 </dd> <dt>
 
@@ -93,9 +93,9 @@ Función de devolución de llamada que establece los datos de rendimiento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las funciones de devolución de llamada se declaran como se indica a continuación.
+Las funciones de devolución de llamada se declaran como se muestra a continuación.
 
 ``` syntax
 typedef

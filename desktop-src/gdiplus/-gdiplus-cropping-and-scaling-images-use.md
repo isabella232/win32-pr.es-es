@@ -15,7 +15,7 @@ ms.locfileid: "118067555"
 
 La [**clase Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) proporciona varios métodos **DrawImage,** algunos de los cuales tienen parámetros de rectángulo de origen y destino que puede usar para recortar y escalar imágenes.
 
-En el ejemplo siguiente se construye un [**objeto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) a partir del archivo Apple.gif. El código dibuja toda la imagen de apple en su tamaño original. A continuación, el código llama al **método DrawImage** de un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para dibujar una parte de la imagen de apple en un rectángulo de destino mayor que la imagen de apple original.
+En el ejemplo siguiente se crea un [**objeto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) a partir del archivo Apple.gif. El código dibuja toda la imagen de apple en su tamaño original. A continuación, el código llama al **método DrawImage** de un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para dibujar una parte de la imagen de apple en un rectángulo de destino mayor que la imagen de apple original.
 
 El **método DrawImage** determina qué parte de la manzana se va a dibujar observando el rectángulo de origen, especificado por los argumentos tercero, cuarto, quinto y sexto. En este caso, la manzana se recorta al 75 por ciento de su ancho y al 75 por ciento de su alto.
 

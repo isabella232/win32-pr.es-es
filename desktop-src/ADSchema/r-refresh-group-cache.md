@@ -1,10 +1,10 @@
 ---
-title: Actualizar grupo-almacenar en caché derecho extendido
-description: Se trata de un inicio de sesión sin GC. Ningún inicio de sesión de GC se basa en el almacenamiento en caché de las pertenencias a grupos y este derecho de acceso de control se usa para conceder derechos de permisos a los administradores y operadores para producir una actualización inmediata de la memoria caché, poniéndose en contacto con un GC disponible.
+title: Actualizar grupo-caché extendida a la derecha
+description: Esto es para ningún inicio de sesión de GC. Ningún inicio de sesión de GC se basa en la pertenencia a grupos de almacenamiento en caché y este derecho de acceso de control se usa para conceder a los administradores y operadores derechos de permiso para provocar una actualización inmediata de la memoria caché, ponerse en contacto con una GC disponible.
 ms.assetid: 1db49a92-ccf8-4087-ac79-f4c1bcea6aa4
 ms.tgt_platform: multiple
 keywords:
-- Actualizar grupo-almacenar en caché el esquema de AD derecho extendido
+- Refresh-Group-Cache extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddb576b5ef2310bceedb632a3b1ab8453b4d435e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b3a65ef0b8b9dde4735d8b2eacffb3aa381e55c2330b9b5776a3dc22c3a7570
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531385"
 ---
-# <a name="refresh-group-cache-extended-right"></a>Actualizar grupo-almacenar en caché derecho extendido
+# <a name="refresh-group-cache-extended-right"></a>Actualizar grupo-caché extendida a la derecha
 
-Se trata de un inicio de sesión sin GC. Ningún inicio de sesión de GC se basa en el almacenamiento en caché de las pertenencias a grupos y este derecho de acceso de control se usa para conceder derechos de permisos a los administradores y operadores para producir una actualización inmediata de la memoria caché, poniéndose en contacto con un GC disponible.
+Esto es para ningún inicio de sesión de GC. Ningún inicio de sesión de GC se basa en la pertenencia a grupos de almacenamiento en caché y este derecho de acceso de control se usa para conceder a los administradores y operadores derechos de permiso para provocar una actualización inmediata de la memoria caché, ponerse en contacto con una GC disponible.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Actualizar grupo-caché                  |
+| CN           | Refresh-Group-Cache                  |
 | Display-Name | Actualizar caché de grupo para inicios de sesión       |
 | Rights-GUID  | 9432c620-033c-4db7-8b58-14ef6d0bf477 |
 
@@ -46,10 +46,10 @@ Se trata de un inicio de sesión sin GC. Ningún inicio de sesión de GC se basa
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -60,7 +60,7 @@ Se trata de un inicio de sesión sin GC. Ningún inicio de sesión de GC se basa
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -68,10 +68,10 @@ Se trata de un inicio de sesión sin GC. Ningún inicio de sesión de GC se basa
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -82,7 +82,7 @@ Se trata de un inicio de sesión sin GC. Ningún inicio de sesión de GC se basa
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 
@@ -93,7 +93,7 @@ Se trata de un inicio de sesión sin GC. Ningún inicio de sesión de GC se basa
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 56                                       |
+| Localization-Display-ID | 56                                       |
 
 
 

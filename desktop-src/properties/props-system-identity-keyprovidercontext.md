@@ -1,17 +1,17 @@
 ---
 description: Contexto del proveedor de claves de identidad.
 ms.assetid: 20863a07-2c3f-46d9-8be5-5f264c2d6c92
-title: System. Identity. KeyProviderContext
+title: System.Identity.KeyProviderContext
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c704928c8e3c2a7d7af139f44e3cdf0e57aa4227
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2888489ac4ffc550315851fdb12a3b6e367964bbe86e592b9f4c876b700876ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091115"
 ---
-# <a name="systemidentitykeyprovidercontext"></a>System. Identity. KeyProviderContext
+# <a name="systemidentitykeyprovidercontext"></a>System.Identity.KeyProviderContext
 
 Contexto del proveedor de claves de identidad
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

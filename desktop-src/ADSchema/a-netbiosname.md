@@ -1,11 +1,11 @@
 ---
-title: NETBIOS-Name atributo)
-description: Nombre del objeto que se va a usar sobre NetBIOS.
+title: NETBIOS-Name atributo
+description: Nombre del objeto que se va a usar en NetBIOS.
 ms.assetid: 03cbfa61-b747-4f3e-9bf5-17fd6da2e7be
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de NETBIOS-Name
-- nETBIOSName esquema de AD de atributos
+- NETBIOS-Name esquema de AD de atributo
+- Esquema de AD del atributo nETBIOSName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4063b842200bf99910a3652b8f3bea9419c2728f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b5e5b7b28237facd30fb6fbfbcfc8f20f93699a8e8ab548889150250b38be4f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424096"
 ---
-# <a name="netbios-name-attribute"></a>NETBIOS-Name atributo)
+# <a name="netbios-name-attribute"></a>NETBIOS-Name atributo
 
-Nombre del objeto que se va a usar sobre NetBIOS.
+Nombre del objeto que se va a usar en NetBIOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | NETBIOS-Name                                |
-| Nombre para mostrar de LDAP | nETBIOSName                                 |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| Ldap-Display-Name | nETBIOSName                                 |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.87                       |
-| System-ID-GUID    | bf9679d8-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf9679d8-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre del objeto que se va a usar sobre NetBIOS.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Nombre del objeto que se va a usar sobre NetBIOS.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | 1                                                                                       |
 | Range-Upper            | 16                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Nombre del objeto que se va a usar sobre NetBIOS.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | 1                                                                                       |
 | Range-Upper            | 16                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                               |
+| Id. de vínculo                | \-                                                                               |
 | MAPI-Id                | \-                                                                               |
-| System-Only            | False                                                                            |
-| Tiene un único valor       | True                                                                             |
-| Está indexado             | True                                                                             |
-| En el catálogo global      | False                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                     |
+| System-Only            | Falso                                                                            |
+| Es de un solo valor       | Verdadero                                                                             |
+| Está indexado             | Verdadero                                                                             |
+| En el catálogo global      | Falso                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                     |
 | Range-Lower            | 1                                                                                |
 | Range-Upper            | 16                                                                               |
 | Search-Flags           | 0x00000001                                                                       |
 | System-Flags           | 0x00000010                                                                       |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Nombre del objeto que se va a usar sobre NetBIOS.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | 1                                                                                       |
 | Range-Upper            | 16                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Nombre del objeto que se va a usar sobre NetBIOS.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | 1                                                                                       |
 | Range-Upper            | 16                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -159,20 +159,20 @@ Nombre del objeto que se va a usar sobre NetBIOS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | 1                                                                                       |
 | Range-Upper            | 16                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ Nombre del objeto que se va a usar sobre NetBIOS.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                      |
+| Id. de vínculo                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
-| System-Only            | False                                                                                   |
-| Tiene un único valor       | True                                                                                    |
-| Está indexado             | True                                                                                    |
-| En el catálogo global      | False                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                            |
+| System-Only            | Falso                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                    |
+| Está indexado             | Verdadero                                                                                    |
+| En el catálogo global      | Falso                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | 1                                                                                       |
 | Range-Upper            | 16                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Referencia cruzada**](c-crossref.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

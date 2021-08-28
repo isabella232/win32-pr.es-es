@@ -4,12 +4,12 @@ ms.assetid: 9efaae3f-1fb8-41ab-b7a9-889cc3cc39c3
 title: Propiedad CurrentAudioStream
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b8b67d81eeec21aec164f3ca865ee3f2de4cd3f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fd814d5b560ed55ea312fbebb8678c67b1422b0cf3d47917fbf772f56a0d3afd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105659273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075975"
 ---
 # <a name="currentaudiostream-property"></a>Propiedad CurrentAudioStream
 
@@ -28,9 +28,9 @@ La `CurrentAudioStream` propiedad establece o recupera el número de la secuenci
 
 Devuelve un valor entero comprendido entre 0 y 7 que indica la secuencia de audio actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de lectura/escritura y no tiene ningún valor predeterminado. Antes de intentar establecer una nueva secuencia de audio, llame a [**IsAudioStreamEnabled**](isaudiostreamenabled-method.md) para comprobar que la secuencia está disponible.
+Esta propiedad es de lectura y escritura sin ningún valor predeterminado. Antes de intentar establecer una nueva secuencia de audio, llame a [**IsAudioStreamEnabled**](isaudiostreamenabled-method.md) para comprobar que la secuencia está disponible.
 
 ## <a name="see-also"></a>Vea también
 

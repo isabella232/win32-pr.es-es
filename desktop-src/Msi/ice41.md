@@ -1,34 +1,34 @@
 ---
-description: ICE41 valida que las entradas de las tablas de clase y extensión hacen referencia a las entradas de la tabla de componentes que implementan el objeto de clase o la extensión del componente.
+description: ICE41 valida que las entradas de las tablas Class y Extension hacen referencia a las entradas de la tabla Component que implementan el objeto de clase o la extensión del componente.
 ms.assetid: 43572322-ba23-4f99-be34-e572d4c6e3eb
 title: ICE41
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4bc6c0a8bb634706750810484963e56b6d6e0ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c220e43cf8a275e520f5babe1ca609a1cee2194b4c08f8dcdafabe6d73bdca4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581115"
 ---
 # <a name="ice41"></a>ICE41
 
-ICE41 valida que las entradas de las tablas de [clase](class-table.md) y [extensión](extension-table.md) hacen referencia a las entradas de la [tabla de componentes](component-table.md) que implementan el objeto de clase o la extensión del componente.
+ICE41 valida que las entradas de las tablas [Class](class-table.md) y [Extension](extension-table.md) hacen referencia a las entradas de la tabla [Component](component-table.md) que implementan el objeto de clase o la extensión del componente.
 
 ## <a name="result"></a>Resultado
 
-ICE41 publica un error si hay una característica que no contiene el componente que implementa la extensión o el objeto de clase.
+ICE41 publica un error si hay una característica que no contiene el componente que implementa el objeto de clase o la extensión.
 
 ## <a name="example"></a>Ejemplo
 
-ICE41 notifica los siguientes errores para el ejemplo que se muestra.
+ICE41 notifica los siguientes errores para el ejemplo mostrado.
 
 
 
 | Error ICE41                                                                                                                                                                                    | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| {00000000-0000-0000-0000-0000000000000}La clase hace referencia a la característica característica2 y al componente Component1, pero el componente no está asociado a esa característica en la tabla FeatureComponents. | Hay una característica que no contiene el componente que implementa el objeto de clase. Esto significa que el instalador no instala el componente con la característica y que el anuncio puede no funcionar según lo esperado. Para corregir este error, cambie la entrada en la \_ columna característica de la entrada de la [tabla de clases](class-table.md) para que haga referencia a una característica que instala el componente enumerado en la columna componente \_ o cambie la característica y el componente asociados en la [tabla FeatureComponents](featurecomponents-table.md).<br/>          |
-| Extension. Yip hace referencia a la característica Feature1 y al componente Component2, pero el componente no está asociado a esa característica en la tabla FeatureComponents.                                | Hay una característica que no contiene el componente que implementa la extensión. Esto significa que el instalador no instala el componente con la característica y que el anuncio puede no funcionar según lo esperado. Para corregir este error, cambie la entrada en la \_ columna característica de la entrada de la [tabla de extensión](extension-table.md) para que haga referencia a una característica que instala el componente enumerado en la \_ columna componente o cambie la característica y el componente asociados en la [tabla FeatureComponents](featurecomponents-table.md).<br/> |
+| La clase hace referencia a las características Feature2 y Component1, pero ese componente no está asociado a {00000000-0000-0000-0000-0000000000000} esa característica en la tabla FeatureComponents. | Hay una característica que no contiene el componente que implementa el objeto de clase. Esto significa que el instalador no instala el componente con la característica y que es posible que la publicidad no funcione según lo previsto. Para corregir este error, cambie la entrada de la columna Característica de la entrada de tabla Clase para hacer referencia a una característica que instala el componente que aparece en la columna Componente o cambie la característica y el componente asociados en la tabla \_ [](class-table.md) \_ [FeatureComponents](featurecomponents-table.md).<br/>          |
+| La extensión .yip hace referencia a las características Feature1 y component Component2, pero ese componente no está asociado a esa característica en la tabla FeatureComponents.                                | Hay una característica que no contiene el componente que implementa la extensión. Esto significa que el instalador no instala el componente con la característica y que es posible que la publicidad no funcione según lo previsto. Para corregir este error, cambie la entrada de la columna Característica de la entrada de tabla Extensión para hacer referencia a una característica que instale el componente que aparece en la columna Componente o cambie la característica y el componente asociados en la \_ [](extension-table.md) \_ tabla [FeatureComponents](featurecomponents-table.md).<br/> |
 
 
 
@@ -40,8 +40,8 @@ ICE41 notifica los siguientes errores para el ejemplo que se muestra.
 
 | Característica\_ |
 |-----------|
-| Feature1  |
-| Característica2  |
+| Característica 1  |
+| Característica 2  |
 
 
 
@@ -53,7 +53,7 @@ ICE41 notifica los siguientes errores para el ejemplo que se muestra.
 
 | CLSID                                  | Componente\_ | Característica\_ |
 |----------------------------------------|-------------|-----------|
-| {00000000-0000-0000-0000-000000000000} | Component1  | Característica2  |
+| {00000000-0000-0000-0000-000000000000} | Componente1  | Característica 2  |
 
 
 
@@ -65,7 +65,7 @@ ICE41 notifica los siguientes errores para el ejemplo que se muestra.
 
 | Extensión | Componente\_ | Característica\_ |
 |-----------|-------------|-----------|
-| .yip      | Component2  | Feature1  |
+| .yip      | Componente 2  | Característica 1  |
 
 
 

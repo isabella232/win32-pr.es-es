@@ -4,12 +4,12 @@ ms.assetid: 875df611-a6ae-4a73-b00b-799249a39ff3
 title: Tipos de medios BDA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e746b8ddfdbaf638a4d239a549b058471cfdaa6b
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 670c9d82ac673c46f4c391b1f2b941f4b3bb49e15af2195d9fc7adbd51309622
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103365"
 ---
 # <a name="bda-media-types"></a>Tipos de medios BDA
 
@@ -17,7 +17,7 @@ En las tablas siguientes se describen los tipos de medios usados para los filtro
 
 ## <a name="antenna"></a>Antena
 
-Este tipo de medio se usa para la conexión de anclar entre el filtro proveedor de red y el filtro de tuner.
+Este tipo de medio se usa para la conexión de pin entre el filtro proveedor de red y el filtro de tuner.
 
 
 
@@ -33,7 +33,7 @@ Este tipo de medio se usa para la conexión de anclar entre el filtro proveedor 
 
 ## <a name="intermediate-frequency-if-signal"></a>Señal de frecuencia intermedia (IF)
 
-Este tipo de medio representa la señal IF que se envía desde el afinador al demodulador.
+Este tipo de medio representa la señal IF que se envía desde el tuner al demodulador.
 
 
 

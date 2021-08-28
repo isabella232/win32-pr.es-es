@@ -10,7 +10,7 @@
           href: http-version-2-0-features.md
         - name: Novedades de Windows Server 2003 SP1
           href: what-s-new-for-windows-server-2003-sp1.md
-        - name: Novedades de la API http server version 2.0
+        - name: Novedades de la API de servidor HTTP versión 2.0
           href: what-s-new-for-http-version-2-0-api.md
     - name: Uso de LA API del servidor HTTP
       href: using-http-server-api.md
@@ -58,7 +58,7 @@
                   href: iis-logging.md
                 - name: Registro binario centralizado
                   href: centralized-binary-logging.md
-            - name: Authentication
+            - name: Autenticación
               href: authentication-in-http-version-2-0.md
               items:
                 - name: Configuración de autenticación dinámica
@@ -97,11 +97,11 @@
           href: configuration-apis.md
         - name: HttpCfg.exe
           href: httpcfg-exe.md
-        - name: Lista de escuchas de IP
+        - name: Lista de escucha de IP
           href: ip-listen-list.md
         - name: Certificados SSL
           href: ssl-certificates.md
-        - name: MODO KERNEL SSL
+        - name: Modo kernel SSL
           href: kernel-mode-ssl.md
         - name: Analizar excepciones
           href: parsing-exceptions.md
@@ -116,7 +116,7 @@
               href: format-of-the-http-server-api-error-logs.md
             - name: Tipos de errores registrados por la API del servidor HTTP
               href: types-of-errors-logged-by-the-http-server-api.md
-            - name: Registro de errores en Windows Server 2003 SP1
+            - name: Error al iniciar sesión Windows Server 2003 SP1
               href: error-logging-in-windows-server-2003-sp1.md
         - name: 'Reservas, registros y enrutamiento de espacios de nombres'
           href: namespace-reservations-registrations-and-routing.md
@@ -140,9 +140,9 @@
             - name: HTTP.sys escenarios de capacidad de administración
               href: http-sys-manageability-scenarios.md
               items:
-                - name: 'Escenario 1: Ejemplo de tiempo de espera HTTP mediante el seguimiento etw y comandos Netsh'
+                - name: 'Escenario 1: Ejemplo de tiempo de espera http mediante el seguimiento etw y comandos Netsh'
                   href: scenario-1--http-timeout-example-using-etw-tracing-and-netsh-commands.md
-                - name: 'Escenario 2: Ejemplo de analizador que usa el seguimiento etw'
+                - name: 'Escenario 2: Ejemplo de analizador mediante el seguimiento etw'
                   href: scenario-2--parser-example-using-etw-tracing.md
                 - name: 'Escenario 3: Contadores de rendimiento'
                   href: scenario-3--performance-counters.md
@@ -191,7 +191,7 @@
           items:
             - name: Tipos de datos de LA API del servidor HTTP versión 1.0
               href: http-server-api-version-1-0-data-types.md
-            - name: Funciones de LA API del servidor HTTP versión 1.0
+            - name: Funciones de la API de servidor HTTP versión 1.0
               href: http-server-api-version-1-0-functions.md
               items:
                 - name: HttpAddFragmentToCache
@@ -232,7 +232,7 @@
                   href: /windows/desktop/api/http/nf-http-httpupdateserviceconfiguration
                 - name: HttpWaitForDisconnect
                   href: /windows/win32/api/http/nf-http-httpwaitfordisconnect
-            - name: Estructuras de LA API del servidor HTTP versión 1.0
+            - name: Estructuras de API de servidor HTTP versión 1.0
               href: http-server-api-version-1-0-structures.md
               items:
                 - name: HTTPAPI_VERSION
@@ -297,7 +297,7 @@
                   href: /windows/win32/api/http/ns-http-http_unknown_header
                 - name: HTTP_VERSION
                   href: /windows/win32/api/http/ns-http-http_version
-            - name: Macros de LA API del servidor HTTP versión 1.0
+            - name: Macros de API de servidor HTTP versión 1.0
               href: http-server-api-version-1-0-macros.md
               items:
                 - name: HTTPAPI_EQUAL_VERSION
@@ -337,7 +337,7 @@
                   href: /windows/win32/api/http/ne-http-http_service_config_query_type
                 - name: HTTP_VERB
                   href: /windows/win32/api/http/ne-http-http_verb
-        - name: Referencia de LA API del servidor HTTP versión 2.0
+        - name: Referencia de api de servidor HTTP versión 2.0
           href: http-server-api-version-2-0-reference.md
           items:
             - name: Tipos de datos de LA API del servidor HTTP versión 2.0
@@ -391,7 +391,7 @@
                   href: /windows/win32/api/http/nf-http-httpwaitfordemandstart
                 - name: HttpWaitForDisconnectEx
                   href: /windows/win32/api/http/nf-http-httpwaitfordisconnectex
-            - name: Estructuras de LA API del servidor HTTP versión 2.0
+            - name: Estructuras de API de servidor HTTP versión 2.0
               href: http-server-api-version-2-0-structures.md
               items:
                 - name: HTTP_BANDWIDTH_LIMIT_INFO

@@ -6,44 +6,44 @@
     - name: Acerca de la administración de energía
       href: about-power-management.md
       items:
-        - name: Administración de energía de Windows
+        - name: Windows Administración de energía
           href: windows-power-management.md
-        - name: Estado de la alimentación del sistema
+        - name: Estado de energía del sistema
           href: system-power-status.md
         - name: Estados de energía del sistema
           href: system-power-states.md
         - name: Eventos de administración de energía del sistema
           href: system-power-management-events.md
-        - name: Mensajes de WM_POWERBROADCAST
+        - name: WM_POWERBROADCAST mensajes
           href: wm-powerbroadcast-messages.md
           items:
-            - name: Registro de eventos de energía
+            - name: Registro de eventos de Power
               href: registering-for-power-events.md
         - name: Criterios de suspensión del sistema
           href: system-sleep-criteria.md
         - name: Eventos de reactivación del sistema
           href: system-wake-up-events.md
-        - name: Información de la batería
+        - name: Información de batería
           href: battery-information.md
         - name: Interfaz de control de retroiluminación
           href: backlight-control-interface.md
-        - name: Planes de energía
+        - name: Esquemas de energía
           href: power-schemes.md
           items:
-            - name: Configuración de la Directiva de energía
+            - name: Power Policy Configuración
               href: power-policy-settings.md
-            - name: Administración de combinaciones de energía
+            - name: Administración de esquemas de energía
               href: managing-power-schemes.md
             - name: Invalidaciones de administrador
               href: administrator-overrides.md
         - name: Administración de energía de dispositivos
           href: device-power-management.md
-    - name: Uso de la administración de energía
+    - name: Uso de Administración de energía
       href: using-power-management.md
       items:
-        - name: Enumerar dispositivos de batería
+        - name: Enumeración de dispositivos de batería
           href: enumerating-battery-devices.md
-        - name: Uso de Power API de dispositivo
+        - name: Uso de Device Power API
           href: using-the-device-power-api.md
     - name: Referencia de administración de energía
       href: power-management-reference.md
@@ -51,11 +51,11 @@
         - name: Constantes de administración de energía
           href: power-management-constants.md
           items:
-            - name: Constantes de la Directiva de descarga
+            - name: Constantes de directiva de descarga
               href: discharge-policy-constants.md
             - name: Constantes de marcas globales
               href: global-flags-constants.md
-            - name: Constantes de directiva de control de rendimiento de procesador
+            - name: Constantes de directiva de control de rendimiento del procesador
               href: processor-performance-control-policy-constants.md
             - name: GUID de configuración de energía
               href: power-setting-guids.md
@@ -76,7 +76,7 @@
               href: ioctl-video-query-supported-brightness.md
             - name: IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS
               href: ioctl-video-set-display-brightness.md
-        - name: Tipos de enumeración de administración de energía
+        - name: Tipos de enumeración de Administración de energía
           href: power-management-enumeration-types.md
           items:
             - name: EFFECTIVE_POWER_MODE

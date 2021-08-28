@@ -1,24 +1,24 @@
 ---
-description: El acceso a las claves desde las cuentas LocalService o NetworkService se puede obtener mediante programación con la función CryptSetProvParam para modificar el \_ parámetro DESC del conjunto de claves de PP \_ \_ .
+description: El acceso a las claves de las cuentas LocalService o NetworkService se puede obtener mediante programación mediante la función CryptSetProvParam para modificar el parámetro \_ DESCR PP KEYSET \_ \_ SEC.
 ms.assetid: 22e8a153-c218-426a-bd81-7bdbb504c96f
-title: Modificar el acceso al contenedor de claves
+title: Modificación del acceso al contenedor de claves
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f76c5b7202400064931e8014cf852ed49bf633b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c34e5c34d562d3a72b4343a2f18da65ae9c5a89689e89ef35b459aa4dec80397
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797145"
 ---
-# <a name="modifying-key-container-access"></a>Modificar el acceso al contenedor de claves
+# <a name="modifying-key-container-access"></a>Modificación del acceso al contenedor de claves
 
-El contenedor de claves predeterminado que se crea mediante CryptoAPI no permite el acceso a las claves desde las cuentas LocalService o NetworkService. Esto se puede corregir mediante programación usando la función [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) para modificar el parámetro **DESC del conjunto de claves de PP \_ \_ sec \_** .
+El contenedor de claves predeterminado creado por CryptoAPI no permite el acceso a las claves desde las cuentas LocalService o NetworkService. Esto se puede corregir mediante programación mediante la función [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) para modificar el parámetro **\_ \_ \_ DESCR PP KEYSET SEC.**
 
-En el ejemplo siguiente se muestra cómo usar la función [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) para modificar **el \_ \_ \_ Descr del conjunto de claves de PP** para permitir el acceso a un contenedor de claves a las cuentas LocalService o NetworkService.
+En el ejemplo siguiente se muestra cómo usar la función [**CryptSetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetprovparam) para modificar el **\_ \_ \_ DESCR** de PP KEYSET SEC para permitir el acceso a un contenedor de claves a las cuentas LocalService o NetworkService.
 
 > [!Note]  
-> El código siguiente se proporciona como una herramienta y solo se debe usar si es absolutamente necesario. Solo debe ejecutar este código una vez en cada equipo para permitir el acceso a las claves.
+> El código siguiente se ofrece como una herramienta y solo se debe usar si es absolutamente necesario. Solo debe ejecutar este código una vez en cada equipo para permitir el acceso a las claves.
 
  
 

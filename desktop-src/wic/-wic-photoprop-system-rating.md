@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. Rating.
+description: Directiva de metadatos de fotos para la propiedad System.Rating.
 ms.assetid: e4d2c12e-617a-431e-9062-62acf6ef21c8
-title: Directiva de metadatos de la foto System. Rating
+title: Directiva de metadatos de fotos System.Rating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47c4f7d89b1ff1ea8326c2d26fba0d331db1eab1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25278ad7d881a0acadc5199fd07227bb650aaae4da2b6342070a64d69fd75240
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086988"
 ---
-# <a name="systemrating-photo-metadata-policy"></a>Directiva de metadatos de la foto System. Rating
+# <a name="systemrating-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Rating
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Rating](../properties/props-system-rating.md) .
+Directiva de metadatos de fotos para la [propiedad System.Rating.](../properties/props-system-rating.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Clasificación PKEY
+PKEY \_ Rating
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,41 +27,41 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI4
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
 Puede ser VT \_ UI1, VT \_ UI2 o VT \_ UI4. El valor puede oscilar entre 0 y 99.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 18249}   | ushort      |
-| 2     | /xmp/MicrosoftPhoto: clasificación | unicode     |
+| 1     | /app1/ifd/{ushort=18249}   | ushort      |
+| 2     | /xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /app1/IFD/{ushort = 18249}   | ushort      |
-| 2     | /xmp/MicrosoftPhoto: clasificación | unicode     |
+| 1     | /app1/ifd/{ushort=18249}   | ushort      |
+| 2     | /xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
@@ -71,10 +71,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                       |
+| Pedido | Ruta de acceso                       |
 |-------|----------------------------|
-| 1     | /app1/IFD/{ushort = 18249}   |
-| 2     | /XMP/microsoftphoto: clasificación |
+| 1     | /app1/ifd/{ushort=18249}   |
+| 2     | /xmp/microsoftphoto:rating |
 
 
 
@@ -82,27 +82,27 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                           | Formato de disco |
+| Pedido | Ruta de acceso                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/{ushort = 18249}            | ushort      |
-| 2     | /ifd/xmp/MicrosoftPhoto: clasificación | unicode     |
+| 1     | /ifd/{ushort=18249}            | ushort      |
+| 2     | /ifd/xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                           | Formato de disco |
+| Pedido | Ruta de acceso                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/{ushort = 18249}            | ushort      |
-| 2     | /ifd/xmp/MicrosoftPhoto: clasificación | unicode     |
+| 1     | /ifd/{ushort=18249}            | ushort      |
+| 2     | /ifd/xmp/MicrosoftPhoto:Rating | unicode     |
 
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                           |
+| Pedido | Ruta de acceso                           |
 |-------|--------------------------------|
-| 1     | /IFD/{ushort = 18249}            |
-| 2     | /IFD/XMP/microsoftphoto: clasificación |
+| 1     | /ifd/{ushort=18249}            |
+| 2     | /ifd/xmp/microsoftphoto:rating |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Rating](../properties/props-system-rating.md)
+[System.Rating](../properties/props-system-rating.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETITEMSPACING (commctrl. h)
-description: Determina el espaciado entre los elementos de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la \_ macro GetItemSpacing de ListView.
+title: LVM_GETITEMSPACING mensaje (Commctrl.h)
+description: Determina el espaciado entre los elementos de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetItemSpacing.
 ms.assetid: 4e43fb43-468c-4b8a-9e3b-1694e90ffef8
 keywords:
-- LVM_GETITEMSPACING controles de mensajes de Windows
+- LVM_GETITEMSPACING controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ea08a7fc1004ffb46d710da6d1c2a8b0fb18e57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 687a1aa75d71b96cebe855bb97ea57f0a9c628ed49b1ef7a51a7557b23b5ce41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088895"
 ---
-# <a name="lvm_getitemspacing-message"></a>\_Mensaje GETITEMSPACING LVM
+# <a name="lvm_getitemspacing-message"></a>Mensaje \_ LVM GETITEMSPACING
 
-Determina el espaciado entre los elementos de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetItemSpacing de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitemspacing) .
+Determina el espaciado entre los elementos de un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetItemSpacing.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getitemspacing)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Determina el espaciado entre los elementos de un control de vista de lista. Pued
 *wParam* 
 </dt> <dd>
 
-Vista para la que se va a recuperar el espaciado del elemento. Este parámetro es **true** para la vista de iconos pequeños o **false** para la vista de iconos.
+Vista para la que se va a recuperar el espaciado de elementos. Este parámetro es **TRUE para** la vista de iconos pequeño o **FALSE para** la vista de iconos.
 
 </dd> <dt>
 
@@ -41,17 +41,17 @@ Vista para la que se va a recuperar el espaciado del elemento. Este parámetro e
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la cantidad de espaciado entre los elementos. El espaciado horizontal está contenido en el [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) y el espaciado vertical está incluido en el [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)).
+Devuelve la cantidad de espaciado entre los elementos. El espaciado horizontal se encuentra en [**loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) y el espaciado vertical se encuentra en [**hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

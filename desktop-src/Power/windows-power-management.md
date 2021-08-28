@@ -1,31 +1,31 @@
 ---
-description: La administración de energía de Windows hace que los equipos estén accesibles al instante a los usuarios al tocar un botón o una tecla.
+description: Windows administración de energía permite que los usuarios puedan acceder al instante a los equipos con solo tocar un botón o una tecla.
 ms.assetid: 388dadb9-b722-43f8-ab2b-a9bbd96600a3
-title: Administración de energía de Windows
+title: Windows Administración de energía
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8abb3a040f8da8e2deb242a2aa607a9448d31c09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7335b521b22b762468d2b542ea3c4fdbfcacb798860d4997f4a512d8135bcf46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032725"
 ---
-# <a name="windows-power-management"></a>Administración de energía de Windows
+# <a name="windows-power-management"></a>Windows Administración de energía
 
-La administración de energía de Windows hace que los equipos estén accesibles al instante a los usuarios al tocar un botón o una tecla. También garantiza que todos los elementos del sistema (aplicaciones, dispositivos e interfaz de usuario) pueden aprovechar las grandes mejoras en la tecnología de administración de energía y las capacidades.
+Windows administración de energía permite que los usuarios puedan acceder al instante a los equipos con solo tocar un botón o una tecla. También garantiza que todos los elementos del sistema (aplicaciones, dispositivos e interfaz de usuario) puedan aprovechar las enormes mejoras en las funcionalidades y la tecnología de administración de energía.
 
-El sistema operativo Windows usa hardware de administración de energía para poner el equipo en un estado de *suspensión* de bajo consumo en lugar de cerrarse completamente, de modo que el sistema pueda reanudar rápidamente el trabajo. El sistema operativo entrará automáticamente en estado de suspensión cuando el equipo esté inactivo o cuando el usuario presione un botón para indicar que la sesión de trabajo actual ha superado. Para el usuario, el sistema parece estar desactivado. En el estado de suspensión, el procesador del equipo no está ejecutando código y no se realiza ningún trabajo para el usuario. Sin embargo, los eventos del sistema de los dispositivos de hardware y del reloj en tiempo real pueden estar habilitados para que el sistema salga del estado de suspensión (es decir, "reactivación") y vuelva rápidamente al estado de funcionamiento.
+El Windows operativo usa hardware de administración de energía para poner  el equipo en estado de suspensión de bajo consumo en lugar de apagarse completamente, de modo que el sistema pueda reanudar rápidamente el trabajo. El sistema operativo entrará automáticamente en estado de suspensión cuando el equipo esté inactivo o cuando el usuario presione un botón para indicar que la sesión de trabajo actual ha terminado. Para el usuario, el sistema parece estar desactivado. Mientras está en estado de suspensión, el procesador del equipo no está ejecutando código y no se está realizando ningún trabajo para el usuario. Sin embargo, los eventos del sistema de los dispositivos de hardware y el reloj en tiempo real se pueden habilitar para que el sistema salga del estado de suspensión (es decir, "reactivación") y vuelva rápidamente al estado de funcionamiento.
 
-Cuando el equipo se encuentra en estado de suspensión, el hardware del equipo, el sistema y las aplicaciones que se ejecutan en el equipo deben ser capaces de responder inmediatamente al conmutador de energía, los eventos de comunicaciones y otras acciones. Si todas las aplicaciones controlan las transiciones de estado de energía correctamente, el usuario percibirá un sistema más elegante e integrado. Se puede producir un error en las aplicaciones que no controlan estas transiciones cuando la alimentación está apagada y después en, debido a la pérdida de datos o a una dependencia en un dispositivo que puede haberse quitado.
+Cuando el equipo está en estado de suspensión, el hardware del equipo, el sistema y las aplicaciones que se ejecutan en el equipo deben ser capaces de responder inmediatamente al conmutador de alimentación, los eventos de comunicaciones y otras acciones. Si todas las aplicaciones controlan correctamente las transiciones de estado de energía, el usuario percibirá un sistema más elegante e integrado. Las aplicaciones que no controlan estas transiciones pueden producir un error cuando la alimentación está apagada y, a continuación, activada, debido a la pérdida de datos o a una dependencia de un dispositivo que se haya quitado.
 
-A continuación se muestran las ventajas de la administración de energía de Windows:
+Estas son las ventajas de la administración Windows energía:
 
--   Elimina los retrasos de inicio y cierre. No es necesario que el equipo realice un arranque completo del sistema al salir del estado de suspensión o un cierre completo del sistema cuando el usuario inicia el estado de suspensión.
--   Permite que las tareas automatizadas se ejecuten mientras el equipo está en estado de suspensión. La Programador de tareas permite al usuario programar aplicaciones para que se ejecuten. los eventos programados se pueden ejecutar incluso cuando el sistema se encuentra en estado de suspensión. El Programador de tareas utiliza [temporizadores que esperan](/windows/desktop/Sync/waitable-timer-objects) para asegurarse de que el sistema está listo cuando la aplicación está programada para ejecutarse. Para obtener más información, vea el archivo de ayuda incluido en el Programador de tareas.
--   Habilita la administración de energía de cada dispositivo. Los dispositivos que no están en uso pueden ahorrar energía si entran en estado de suspensión.
--   Mejora la eficacia de la energía. La eficiencia energética es especialmente importante en los equipos portátiles. Reducir el consumo de energía del sistema se traduce directamente en costos energéticos más bajos y una mayor duración de la batería.
--   Permite a los usuarios crear [planes de energía](power-schemes.md), establecer alarmas y especificar opciones de batería a través de la aplicación opciones de energía del panel de control. El sistema operativo coordina todas las actividades de administración de energía en función de la configuración de la Directiva de energía. Para obtener más información, vea el archivo de ayuda que se incluye con la aplicación Power Options.
+-   Elimina los retrasos de inicio y apagado. El equipo no necesita realizar un arranque completo del sistema al salir del estado de suspensión o un apagado completo del sistema cuando el usuario inicia el estado de suspensión.
+-   Permite que las tareas automatizadas se ejecuten mientras el equipo está en estado de suspensión. El Programador de tareas permite al usuario programar la ejecución de aplicaciones; los eventos programados se pueden ejecutar incluso cuando el sistema está en estado de suspensión. El Programador de tareas usa [temporizadores que se](/windows/desktop/Sync/waitable-timer-objects) pueden esperar para asegurarse de que el sistema está listo cuando la aplicación está programada para ejecutarse. Para obtener más información, vea el archivo de ayuda incluido con el Programador de tareas.
+-   Habilita la administración de energía por dispositivo. Los dispositivos que no están en uso pueden ahorrar energía si entran en estado de suspensión.
+-   Mejora la eficacia de la energía. La eficiencia energética es especialmente importante en los equipos portátiles. La reducción del consumo de energía del sistema se traduce directamente en menores costos de energía y una mayor duración de la batería.
+-   Permite a los usuarios [crear esquemas de energía,](power-schemes.md)establecer alarmas y especificar opciones de batería a través de Opciones de energía aplicación en Panel de control. El sistema operativo coordina todas las actividades de administración de energía, en función de la configuración de la directiva de energía. Para obtener más información, vea el archivo de ayuda incluido con la Opciones de energía aplicación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

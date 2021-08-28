@@ -3,7 +3,7 @@ title: Elemento HeaderFields (sendEmailType)
 description: Especifica los campos de encabezado y sus valores utilizados en el encabezado del mensaje de correo electrónico.
 ms.assetid: 6261f32e-3012-4ce7-b407-699374596333
 keywords:
-- Programador de tareas del elemento HeaderFields
+- Elemento HeaderFields Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d108f1c31b8253046ccdbf09312df4f54c7335d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2af801385c74fa26221556b713faf8db915037ef4cf7439d71a2e2d4004193d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100035"
 ---
 # <a name="headerfields-sendemailtype-element"></a>Elemento HeaderFields (sendEmailType)
 
@@ -30,7 +30,7 @@ Especifica los campos de encabezado y sus valores utilizados en el encabezado de
  />
 ```
 
-El elemento **HeaderFields** se define mediante el tipo complejo de [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **HeaderFields.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -52,11 +52,11 @@ El elemento **HeaderFields** se define mediante el tipo complejo de [**sendEmail
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, consulte la [**propiedad HeaderFields de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_headerfields).
+Para el desarrollo de C++, [**vea Propiedad HeaderFields de IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_headerfields)
 
-Para el desarrollo de scripts, vea [**EmailAction. HeaderFields**](emailaction-headerfields.md).
+Para el desarrollo de scripts, [**vea EmailAction.HeaderFields.**](emailaction-headerfields.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ Para el desarrollo de scripts, vea [**EmailAction. HeaderFields**](emailaction-h
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

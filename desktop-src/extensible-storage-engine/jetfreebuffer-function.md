@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c7d7b56c38bde931cfe0c1a2e95579a515cf3538
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 52ff674cdd256c8a9a983a5ba3a49d6abeb8cc6b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476441"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987418"
 ---
 # <a name="jetfreebuffer-function"></a>JetFreeBuffer (Función)
 
@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetfreebuffer-function"></a>JetFreeBuffer (Función)
 
-La **función JetFreeBuffer** libera la memoria asignada por una llamada al motor de base de datos.
+La **función JetFreeBuffer** libera memoria asignada por una llamada al motor de base de datos.
 
 **Windows XP: JetFreeBuffer** se introdujo en Windows XP.
 
@@ -46,7 +46,7 @@ La **función JetFreeBuffer** libera la memoria asignada por una llamada al moto
 
 *pbBuf*
 
-Puntero a una región de memoria asignada previamente por una llamada al motor de base de datos. **NULL** es aceptable y se omitirá.
+Puntero a una región de memoria que previamente se asignó mediante una llamada al motor de base de datos. **NULL** es aceptable y se omitirá.
 
 ### <a name="return-value"></a>Valor devuelto
 
@@ -59,14 +59,20 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Es un comportamiento indefinido pasar memoria no asignada por el motor de base de datos en *a pbBuf*.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

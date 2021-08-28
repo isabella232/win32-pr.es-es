@@ -1,23 +1,23 @@
 ---
-description: Una interfaz de usuario personalizada se puede incrustar en el paquete de Windows Installer.
+description: Se puede incrustar una interfaz de usuario personalizada en el paquete Windows Installer.
 ms.assetid: d037cd8d-9c88-4851-a9da-b2179f53cee6
-title: Usar una interfaz de usuario incrustada
+title: Uso de una interfaz de usuario insertadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f187e50461cfe88adc9c2cabbf8dd8b88ca97a5a
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 3153e0cb3ba79bd9c5cb6f1ee9b801c12ae828bb7d4dd332d04832bcd5200ea4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104083613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527305"
 ---
-# <a name="using-an-embedded-ui"></a>Usar una interfaz de usuario incrustada
+# <a name="using-an-embedded-ui"></a>Uso de una interfaz de usuario insertadas
 
-Una interfaz de usuario personalizada se puede incrustar en el paquete de Windows Installer.
+Se puede incrustar una interfaz de usuario personalizada en el paquete Windows Installer.
 
-El archivo DLL que contiene la interfaz de usuario personalizada y los archivos de recursos usados por la interfaz de usuario personalizada deben aparecer en la tabla [MsiEmbeddedUI](msiembeddedui-table.md) . Por ejemplo, esta tabla MsiEmbeddedUI contiene una fila para el archivo DLL que contiene la interfaz de usuario incrustada y una fila para un archivo de mapa de bits que utiliza la interfaz de usuario.
+El archivo DLL que contiene la interfaz de usuario personalizada y los archivos de recursos usados por la interfaz de usuario personalizada deben aparecer en la [tabla MsiEmbeddedUI.](msiembeddedui-table.md) Por ejemplo, esta tabla MsiEmbeddedUI contiene una fila para el archivo DLL que contiene la interfaz de usuario insertada y una fila para un archivo de mapa de bits utilizado por la interfaz de usuario.
 
-| MsiEmbeddedUI | FileName    | Atributos | MessageFilter | Datos            |
+| MsiEmbeddedUI | FileName    | Atributos | MessageFilter | data            |
 |---------------|-------------|------------|---------------|-----------------|
 | EmbeddedUI    | embedui.dll | 3          | 201359327     | \[Binary Data\] |
 | CustomBitmap  | custom.bmp  | 0          |               | \[Binary Data\] |
@@ -26,7 +26,7 @@ El archivo DLL que contiene la interfaz de usuario personalizada y los archivos 
 
  
 
-El archivo DLL de la interfaz de usuario personalizada, en este ejemplo embedui.dll, debe exportar las funciones *InitializeEmbeddedUI*, *EmbeddedUIHandler* y *ShutdownEmbeddedUI* definidas por el usuario. En el código de ejemplo siguiente se muestran estas funciones.
+El archivo DLL de interfaz de usuario personalizado, en este ejemplo embedui.dll, debe exportar las funciones *InitializeEmbeddedUI,* *EmbeddedUIHandler* y *ShutdownEmbeddedUI* definidas por el usuario. En el código de ejemplo siguiente se muestran estas funciones.
 
 
 ```C++

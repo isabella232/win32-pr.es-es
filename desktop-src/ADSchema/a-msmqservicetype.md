@@ -1,11 +1,11 @@
 ---
-title: Atributo de tipo de servicio de MSMQ
-description: El tipo de servicio proporcionado por MSMQ instalado en este equipo.
+title: Atributo MSMQ-Service-Type
+description: Tipo de servicio proporcionado por MSMQ instalado en este equipo.
 ms.assetid: 7366d400-5a8f-4aba-ab8c-22dee2f07e9f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de tipo de servicio de MSMQ
-- mSMQServiceType esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Service-Type
+- Esquema de AD del atributo mSMQServiceType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e20b19ac03f98e67022a509cd7ce10ead3959cf0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fc926ba290637b0b045c399a5bc93010e21f41990b0d2e9e14fb591d8e821490
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582305"
 ---
-# <a name="msmq-service-type-attribute"></a>Atributo de tipo de servicio de MSMQ
+# <a name="msmq-service-type-attribute"></a>Atributo MSMQ-Service-Type
 
-El tipo de servicio proporcionado por MSMQ instalado en este equipo.
+Tipo de servicio proporcionado por MSMQ instalado en este equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Tipo de servicio de MSMQ                    |
-| Nombre para mostrar de LDAP | mSMQServiceType                      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | MSMQ-Service-Type                    |
+| Ldap-Display-Name | mSMQServiceType                      |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.930               |
-| System-ID-GUID    | 9a0dc32d-c100-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 9a0dc32d-c100-11d1-gni5-0080c76670c0 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ El tipo de servicio proporcionado por MSMQ instalado en este equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El tipo de servicio proporcionado por MSMQ instalado en este equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El tipo de servicio proporcionado por MSMQ instalado en este equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El tipo de servicio proporcionado por MSMQ instalado en este equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El tipo de servicio proporcionado por MSMQ instalado en este equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El tipo de servicio proporcionado por MSMQ instalado en este equipo.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Clases usadas en        | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

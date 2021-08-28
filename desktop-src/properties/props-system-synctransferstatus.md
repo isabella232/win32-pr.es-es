@@ -4,12 +4,12 @@ ms.assetid: d82b93b3-2d33-4f89-8144-1f1b040a4d8b
 title: System.SyncTransferStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 053c0df5c0331158bc2fbde5109be400254c132b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e0e91d785ce9e4afd023d75d433bdc5cbad4d2e9d5b8b589b0894d3fe5e2a998
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095452"
 ---
 # <a name="systemsynctransferstatus"></a>System.SyncTransferStatus
 

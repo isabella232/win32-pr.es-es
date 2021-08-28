@@ -1,11 +1,11 @@
 ---
 title: Propiedad BySymbolicLink de la interfaz IMsRdpCameraRedirConfigCollection
-description: Devuelve un objeto IMsRdpCameraRedirConfig de la colección que corresponde al vínculo simbólico especificado de la interfaz **KSCATEGORY_VIDEO_CAMERA** de la cámara.
+description: Devuelve un objeto IMsRdpCameraRedirConfig de la colección que corresponde al vínculo simbólico dado de la **interfaz** KSCATEGORY_VIDEO_CAMERA para la cámara.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad BySymbolicLink
-- Propiedad BySymbolicLink Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfigCollection
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfigCollection, propiedad BySymbolicLink
+- BySymbolicLink, propiedad Servicios de Escritorio remoto
+- Propiedad BySymbolicLink Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfigCollection
+- Interfaz IMsRdpCameraRedirConfigCollection Servicios de Escritorio remoto , propiedad BySymbolicLink
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: d4888c7e468e0522240d8ef922563ab28eb33e77
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: a46cd3daf8cc4270473433bb0c4c20dee0616dba3619b056d33136e0d4dd8f5e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105720242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033635"
 ---
-# <a name="imsrdpcameraredirconfigcollectionbysymboliclink-property"></a>IMsRdpCameraRedirConfigCollection::. Propiedad BySymbolicLink
+# <a name="imsrdpcameraredirconfigcollectionbysymboliclink-property"></a>IMsRdpCameraRedirConfigCollection::. BySymbolicLink, propiedad
 
-Devuelve un objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) de la colección que corresponde al vínculo simbólico especificado de la interfaz **KSCATEGORY_VIDEO_CAMERA** de la cámara.
+Devuelve un [objeto IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) de la colección que corresponde al vínculo simbólico dado de la **interfaz** KSCATEGORY_VIDEO_CAMERA para la cámara.
 
 Esta propiedad es de solo lectura.
 
@@ -41,7 +41,7 @@ HRESULT get_BySymbolicLink(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) que corresponde al vínculo simbólico especificado.
+Objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) que corresponde al vínculo simbólico especificado.
 
 ## <a name="requirements"></a>Requisitos
 

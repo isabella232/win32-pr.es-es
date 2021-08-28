@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. DateTaken.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.DateTaken.
 ms.assetid: 800aa01b-6064-45df-a40e-6537819df4d7
-title: Directiva de metadatos de la foto de System. Photo. DateTaken
+title: Directiva de metadatos de fotos System.Photo.DateTaken
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc1d3fb50a9a94e4bb13b35a0a5726572d78429f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 691476c704d3fdbc4ff5e01467031f2b41884ccb16be537904484a9d01c8fa18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087081"
 ---
-# <a name="systemphotodatetaken-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Photo. DateTaken
+# <a name="systemphotodatetaken-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.DateTaken
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. DateTaken](../properties/props-system-photo-datetaken.md) .
+Directiva de metadatos de fotos para [la propiedad System.Photo.DateTaken.](../properties/props-system-photo-datetaken.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ DateTaken
 
@@ -27,7 +27,7 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ FILETIME
 
@@ -37,7 +37,7 @@ DateTime
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,29 +45,29 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                  | Formato de disco |
+| Pedido | Ruta de acceso                                  | Formato de disco |
 |-------|---------------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 36867}         | ascii       |
-| 2     | /app13/IRB/8bimiptc/IPTC/Date creado | unicode     |
-| 3     | /XMP/XMP: CreateDate                   | unicode     |
-| 4     | /app1/IFD/Exif/{ushort = 36868}         | ascii       |
-| 5     | /app13/IRB/8bimiptc/IPTC/Date creado | unicode     |
+| 1     | /app1/ifd/exif/{ushort=36867}         | ascii       |
+| 2     | /app13/irb/8bimiptc/iptc/date created | unicode     |
+| 3     | /xmp/xmp:CreateDate                   | unicode     |
+| 4     | /app1/ifd/exif/{ushort=36868}         | ascii       |
+| 5     | /app13/irb/8bimiptc/iptc/date created | unicode     |
 | 6     | /xmp/exif:DateTimeOriginal            | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                  | Formato de disco |
+| Pedido | Ruta de acceso                                  | Formato de disco |
 |-------|---------------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 36867}         | ascii       |
-| 2     | /app13/IRB/8bimiptc/IPTC/Date creado | unicode     |
-| 3     | /XMP/XMP: CreateDate                   | unicode     |
-| 4     | /app1/IFD/Exif/{ushort = 36868}         | ascii       |
+| 1     | /app1/ifd/exif/{ushort=36867}         | ascii       |
+| 2     | /app13/irb/8bimiptc/iptc/date created | unicode     |
+| 3     | /xmp/xmp:CreateDate                   | unicode     |
+| 4     | /app1/ifd/exif/{ushort=36868}         | ascii       |
 | 5     | /xmp/exif:DateTimeOriginal            | unicode     |
 
 
@@ -78,16 +78,16 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                  |
+| Pedido | Ruta de acceso                                  |
 |-------|---------------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 36867}         |
-| 2     | /app1/IFD/Exif/{ushort = 37521}         |
-| 3     | /app1/IFD/Exif/{ushort = 36868}         |
-| 4     | /app1/IFD/Exif/{ushort = 37522}         |
+| 1     | /app1/ifd/exif/{ushort=36867}         |
+| 2     | /app1/ifd/exif/{ushort=37521}         |
+| 3     | /app1/ifd/exif/{ushort=36868}         |
+| 4     | /app1/ifd/exif/{ushort=37522}         |
 | 5     | /xmp/exif:DateTimeOriginal            |
-| 6     | /XMP/XMP: CreateDate                   |
-| 7     | /app13/IRB/8bimiptc/IPTC/Date creado |
-| 8     | /app13/IRB/8bimiptc/IPTC/Time creado |
+| 6     | /xmp/xmp:CreateDate                   |
+| 7     | /app13/irb/8bimiptc/iptc/date created |
+| 8     | /app13/irb/8bimiptc/iptc/time creado |
 
 
 
@@ -99,31 +99,31 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                | Formato de disco |
+| Pedido | Ruta de acceso                                | Formato de disco |
 |-------|-------------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 36867}            | ascii       |
-| 2     | /IFD/IPTC/Date creado              | unicode     |
-| 3     | /IFD/XMP/XMP: CreateDate             | unicode     |
-| 4     | /IFD/Exif/{ushort = 36868}            | ascii       |
-| 5     | /IFD/IPTC/Date creado              | unicode     |
-| 6     | /IFD/IRB/8bimiptc/IPTC/Date creado | unicode     |
+| 1     | /ifd/exif/{ushort=36867}            | ascii       |
+| 2     | /ifd/iptc/date created              | unicode     |
+| 3     | /ifd/xmp/xmp:CreateDate             | unicode     |
+| 4     | /ifd/exif/{ushort=36868}            | ascii       |
+| 5     | /ifd/iptc/date created              | unicode     |
+| 6     | /ifd/irb/8bimiptc/iptc/date created | unicode     |
 | 7     | /ifd/xmp/exif:DateTimeOriginal      | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                | Formato de disco |
+| Pedido | Ruta de acceso                                | Formato de disco |
 |-------|-------------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 36867}            | ascii       |
-| 2     | /IFD/IPTC/Date creado              | unicode     |
-| 3     | /IFD/XMP/XMP: CreateDate             | unicode     |
-| 4     | /IFD/Exif/{ushort = 36868}            | ascii       |
-| 5     | /IFD/IRB/8bimiptc/IPTC/Date creado | unicode     |
+| 1     | /ifd/exif/{ushort=36867}            | ascii       |
+| 2     | /ifd/iptc/date created              | unicode     |
+| 3     | /ifd/xmp/xmp:CreateDate             | unicode     |
+| 4     | /ifd/exif/{ushort=36868}            | ascii       |
+| 5     | /ifd/irb/8bimiptc/iptc/date created | unicode     |
 | 6     | /ifd/xmp/exif:DateTimeOriginal      | unicode     |
 
 
@@ -134,18 +134,18 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                |
+| Pedido | Ruta de acceso                                |
 |-------|-------------------------------------|
-| 1     | /IFD/Exif/{ushort = 36867}            |
-| 2     | /IFD/Exif/{ushort = 37521}            |
-| 3     | /IFD/Exif/{ushort = 36868}            |
-| 4     | /IFD/Exif/{ushort = 37522}            |
+| 1     | /ifd/exif/{ushort=36867}            |
+| 2     | /ifd/exif/{ushort=37521}            |
+| 3     | /ifd/exif/{ushort=36868}            |
+| 4     | /ifd/exif/{ushort=37522}            |
 | 5     | /ifd/xmp/exif:DateTimeOriginal      |
-| 6     | /IFD/XMP/XMP: CreateDate             |
-| 7     | /IFD/IPTC/Date creado              |
-| 8     | /IFD/IPTC/Time creado              |
-| 9     | /IFD/IRB/8bimiptc/IPTC/Date creado |
-| 10    | /IFD/IRB/8bimiptc/IPTC/Time creado |
+| 6     | /ifd/xmp/xmp:CreateDate             |
+| 7     | /ifd/iptc/date created              |
+| 8     | /ifd/iptc/time creado              |
+| 9     | /ifd/irb/8bimiptc/iptc/date created |
+| 10    | /ifd/irb/8bimiptc/iptc/time creado |
 
 
 
@@ -157,21 +157,21 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /\[\*\]Hora de creación y texto | ascii       |
+| 1     | /\[\*\]tEXt/Hora de creación | ascii       |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 2     | /\[\*\]Hora de creación y texto | ascii       |
+| 2     | /\[\*\]tEXt/Hora de creación | ascii       |
 
 
 
@@ -181,21 +181,21 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
-| 3     | /\[\*\]Hora de creación y texto |
+| 3     | /\[\*\]tEXt/Hora de creación |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. DateTaken](../properties/props-system-photo-datetaken.md)
+[System.Photo.DateTaken](../properties/props-system-photo-datetaken.md)
 </dt> </dl>
 
  

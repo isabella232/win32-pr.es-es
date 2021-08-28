@@ -1,17 +1,17 @@
 ---
 description: Número de teléfono principal del contacto.
 ms.assetid: ba4b812f-11f2-4039-958b-1a9e54432748
-title: System. contact. PrimaryTelephone
+title: System.Contact.PrimaryTelephone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55d2655ab57a1f416a094e0fa18b3bcab8ae03ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65dd9015c33a82dd6527bdea23859816297b52e1603c7ceaeb61282cb477f3bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120091535"
 ---
-# <a name="systemcontactprimarytelephone"></a>System. contact. PrimaryTelephone
+# <a name="systemcontactprimarytelephone"></a>System.Contact.PrimaryTelephone
 
 Número de teléfono principal del contacto.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

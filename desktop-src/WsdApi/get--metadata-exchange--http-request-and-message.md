@@ -1,28 +1,28 @@
 ---
-description: Mensaje WS-Transfer que se usa para solicitar metadatos.
+description: Mensaje WS-Transfer se usa para solicitar metadatos.
 ms.assetid: 18bf27aa-6ae5-4419-ae68-6df9eda10cd4
 title: Obtener (metadatos Exchange) solicitud HTTP y mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 994e02b990dc87cf8551e215bc7eae94dbcf7852
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 1c9cf6241b38f7fa81cc5d9a7c21a0f5e1a406aa
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122632073"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885253"
 ---
 # <a name="get-metadata-exchange-http-request-and-message"></a>Obtener (metadatos Exchange) solicitud HTTP y mensaje
 
 Un mensaje Get es un WS-Transfer que se usa para solicitar metadatos. Para obtener más información sobre Obtener mensajes, vea la sección 3.1 de la [especificación de WS-Transfer](https://specs.xmlsoap.org/ws/2004/09/transfer/WS-Transfer.pdf). Dado que el intercambio de metadatos se realiza a través de HTTP, un mensaje Get es la carga de una solicitud HTTP.
 
-Los clientes de DPWS envían mensajes Get. Los clientes de detección de funciones, los clientes de WSDAPI que llaman a [**WSDCreateDeviceProxy**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxy)y los clientes de WSDAPI que llaman a [**WSDCreateDeviceProxyAdvanced**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxyadvanced) envían este mensaje.
+Los clientes de DPWS envían mensajes Get. Los clientes de detección de funciones, los clientes WSDAPI que llaman a [**WSDCreateDeviceProxy**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxy)y los clientes WSDAPI que llaman a [**WSDCreateDeviceProxyAdvanced**](/windows/desktop/api/WsdClient/nf-wsdclient-wsdcreatedeviceproxyadvanced) envían este mensaje.
 
 > [!Note]  
-> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la herramienta de interoperabilidad básica de [WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la [herramienta de interoperabilidad básica WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
-En el ejemplo siguiente se muestra una solicitud GET HTTP de ejemplo.
+En el ejemplo siguiente se muestra una solicitud HTTP Get de ejemplo.
 
 ``` syntax
 POST /37f86d35-e6ac-4241-964f-1d9ae46fb366
@@ -62,7 +62,7 @@ Una solicitud Get HTTP tiene los siguientes puntos de enfoque.
 <tr class="even">
 <td>Host y puerto</td>
 <td><pre class="syntax" data-space="preserve"><code>Host: 192.168.0.2:5357</code></pre></td>
-<td>Host y puerto donde se ha dirigido la solicitud Get HTTP.</td>
+<td>El host y el puerto donde se ha dirigido la solicitud GET HTTP.</td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ Una solicitud Get HTTP tiene los siguientes puntos de enfoque.
 
  
 
-El siguiente mensaje SOAP muestra un ejemplo de get message.
+El siguiente mensaje SOAP muestra un mensaje Get de ejemplo.
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8" ?>
@@ -123,17 +123,17 @@ Un mensaje Get tiene los siguientes puntos de enfoque.
 <tbody>
 <tr class="odd">
 <td>En</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:To>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:To&gt;
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
-</wsa:To></code></pre></td>
+&lt;/wsa:To&gt;</code></pre></td>
 <td>Identificador del dispositivo al que se solicitan metadatos.</td>
 </tr>
 <tr class="even">
 <td>Obtener</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2004/09/transfer/Get
 </wsa:Action</code></pre></td>
-<td>La acción Obtener SOAP identifica el mensaje como obtener mensaje.</td>
+<td>La acción Obtener SOAP identifica el mensaje como un mensaje Get.</td>
 </tr>
 <tr class="odd">
 <td>MessageID</td>

@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de QueryListType
-description: Define una lista de consultas que pueden contener un conjunto de selectores e supresors que se usan para incluir eventos en el conjunto de resultados o para excluir eventos del mismo.
+title: Tipo complejo QueryListType
+description: Define una lista de consultas que pueden contener un conjunto de selectores y supresores que se usan para incluir eventos en o excluir eventos del conjunto de resultados.
 ms.assetid: 3b9944e8-5913-4a77-a8fd-7efa43f3063f
 keywords:
-- QueryListType tipo complejo EventLog
+- QueryListType de tipo complejo EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 58cc6e83fb681f6244288088ea217097dd109c23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e1692427538dcd500cd4190839ffcc148c7358e0aee7f5a27b4906192a0810b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904165"
 ---
-# <a name="querylisttype-complex-type"></a>Tipo complejo de QueryListType
+# <a name="querylisttype-complex-type"></a>Tipo complejo QueryListType
 
-Define una lista de consultas que pueden contener un conjunto de selectores e supresors que se usan para incluir eventos en el conjunto de resultados o para excluir eventos del mismo.
+Define una lista de consultas que pueden contener un conjunto de selectores y supresores que se usan para incluir eventos en o excluir eventos del conjunto de resultados.
 
 ``` syntax
 <xs:complexType name="QueryListType">
@@ -42,7 +42,7 @@ Define una lista de consultas que pueden contener un conjunto de selectores e su
 
 | Elemento                                                  | Tipo                                                   | Descripción                                                                                                                     |
 |----------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [**Consulta**](queryschema-query-querylisttype-element.md) | [**QueryType**](queryschema-querytype-complextype.md) | Define un conjunto de selectores y suprimidores que se usan para incluir eventos en o excluir eventos del conjunto de resultados.<br/> |
+| [**Consulta**](queryschema-query-querylisttype-element.md) | [**Querytype**](queryschema-querytype-complextype.md) | Define un conjunto de selectores y supresores que se usan para incluir eventos en o excluir eventos del conjunto de resultados.<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define una lista de consultas que pueden contener un conjunto de selectores e su
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

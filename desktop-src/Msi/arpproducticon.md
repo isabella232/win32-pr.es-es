@@ -1,27 +1,27 @@
 ---
-description: La propiedad ARPPRODUCTICON especifica la clave externa para la tabla de iconos, que es el icono principal del paquete de Windows Installer.
+description: La propiedad ARPPRODUCTICON especifica la clave externa de la tabla Icon, que es el icono principal del paquete Windows Installer.
 ms.assetid: 4f495029-232c-4aa2-aecf-b400de2e8c4c
 title: Propiedad ARPPRODUCTICON
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f816cfa96003f17c96f9daaef0be79a43f20312
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 50ad34f6192e70617693f780a39c9ce2a024fee0d44e110bbaa92f4249b5dc72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581805"
 ---
 # <a name="arpproducticon-property"></a>Propiedad ARPPRODUCTICON
 
-La propiedad **ARPPRODUCTICON** especifica la clave externa para la [tabla de iconos](icon-table.md), que es el icono principal del paquete de Windows Installer.
+La **propiedad ARPPRODUCTICON** especifica la clave externa de la tabla [Icon](icon-table.md), que es el icono principal del paquete Windows Installer.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 
