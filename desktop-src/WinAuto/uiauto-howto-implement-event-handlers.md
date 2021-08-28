@@ -1,29 +1,29 @@
 ---
 title: Cómo implementar controladores de eventos
-description: Este tema contiene código de ejemplo que muestra cómo implementar interfaces que permiten a los clientes recibir y controlar eventos de automatización de la interfaz de usuario de Microsoft.
+description: Este tema contiene código de ejemplo que muestra cómo implementar interfaces que permiten a los clientes recibir y controlar eventos de microsoft Automatización de la interfaz de usuario eventos.
 ms.assetid: 6b6549b8-795b-45a8-8fef-59842cc990e4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 159e95e739ae73f1c37d99ae065032fd680f0720
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 09448bd9088b8338e9de14079b2ee446bf43f4e2c41e15ce17114eda958ed210
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098385"
 ---
 # <a name="how-to-implement-event-handlers"></a>Cómo implementar controladores de eventos
 
-Este tema contiene código de ejemplo que muestra cómo implementar interfaces que permiten a los clientes recibir y controlar eventos de automatización de la interfaz de usuario de Microsoft. Se tratan los temas siguientes:
+Este tema contiene código de ejemplo que muestra cómo implementar interfaces que permiten a los clientes recibir y controlar eventos de microsoft Automatización de la interfaz de usuario eventos. Describe los temas siguientes:
 
--   [Controlar eventos generales de automatización de la interfaz de usuario](#handling-general-ui-automation-events)
--   [Controlar eventos de Focus-Changed](#handling-focus-changed-events)
--   [Controlar eventos de Property-Changed](#handling-property-changed-events)
--   [Controlar eventos de Structure-Changed](#handling-structure-changed-events)
+-   [Control de eventos de Automatización de la interfaz de usuario generales](#handling-general-ui-automation-events)
+-   [Control de Focus-Changed eventos](#handling-focus-changed-events)
+-   [Control de Property-Changed eventos](#handling-property-changed-events)
+-   [Control de Structure-Changed eventos](#handling-structure-changed-events)
 -   [Temas relacionados](#related-topics)
 
-## <a name="handling-general-ui-automation-events"></a>Controlar eventos generales de automatización de la interfaz de usuario
+## <a name="handling-general-ui-automation-events"></a>Control de eventos Automatización de la interfaz de usuario general
 
-El ejemplo de código siguiente es una aplicación de consola de Microsoft Windows que implementa un controlador de eventos de automatización de la interfaz de usuario para eventos generales de automatización de la interfaz de usuario. Este ejemplo controla los eventos de creación y destrucción de la información sobre herramientas y otras ventanas.
+El ejemplo de código siguiente es una aplicación Windows consola de Microsoft que implementa un controlador de eventos Automatización de la interfaz de usuario para eventos Automatización de la interfaz de usuario general. En este ejemplo se administran los eventos de creación y destrucción de información sobre herramientas y otras ventanas.
 
 
 ```C++
@@ -190,9 +190,9 @@ cleanup:
 
 
 
-## <a name="handling-focus-changed-events"></a>Controlar eventos de Focus-Changed
+## <a name="handling-focus-changed-events"></a>Control de Focus-Changed eventos
 
-El ejemplo de código siguiente es una aplicación de consola de Windows que implementa un controlador para los eventos de cambio de foco.
+El ejemplo de código siguiente es una Windows de consola que implementa un controlador para eventos con cambio de foco.
 
 
 ```C++
@@ -314,9 +314,9 @@ cleanup:
 
 
 
-## <a name="handling-property-changed-events"></a>Controlar eventos de Property-Changed
+## <a name="handling-property-changed-events"></a>Control de Property-Changed eventos
 
-El ejemplo de código siguiente es una aplicación de consola de Windows que implementa un controlador para los eventos de cambio de propiedad.
+El ejemplo de código siguiente es una Windows de consola que implementa un controlador para eventos de cambio de propiedad.
 
 
 ```C++
@@ -469,9 +469,9 @@ cleanup:
 
 
 
-## <a name="handling-structure-changed-events"></a>Controlar eventos de Structure-Changed
+## <a name="handling-structure-changed-events"></a>Control de Structure-Changed eventos
 
-El ejemplo de código siguiente es una aplicación de consola de Windows que implementa un controlador para los eventos de cambio de estructura.
+El ejemplo de código siguiente es una Windows de consola que implementa un controlador para eventos modificados por la estructura.
 
 
 ```C++
@@ -637,18 +637,18 @@ cleanup:
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Suscribirse a eventos de UI Automation](uiauto-eventsforclients.md)
+[Suscribirse a eventos Automatización de la interfaz de usuario eventos](uiauto-eventsforclients.md)
 </dt> <dt>
 
-[Temas de procedimientos para clientes de automatización de la interfaz de usuario](uiauto-howto-topics-for-uiautomation-clients.md)
+[Temas de ayuda para Automatización de la interfaz de usuario clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

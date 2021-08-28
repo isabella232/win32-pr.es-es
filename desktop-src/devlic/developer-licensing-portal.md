@@ -4,12 +4,12 @@ description: Licencias para desarrolladores
 ms.assetid: ca2cca08-5af3-4a96-8963-0d118a137652
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f14b7cb022fca83090a6dc3da48aa7745debcd05
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d051a2b2305c00b9f44f8e1c09e3c6622daaf3263169f6d44cdc0cc8997e1d0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119677825"
 ---
 # <a name="developer-licensing"></a>Licencias para desarrolladores
 

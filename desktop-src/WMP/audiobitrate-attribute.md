@@ -1,9 +1,9 @@
 ---
 title: Atributo AudioBitrate
-description: El atributo AudioBitrate es la velocidad de bits para la secuencia de audio dentro de un archivo de vídeo, en bits por segundo.
+description: El atributo AudioBitrate es la velocidad de bits de la secuencia de audio dentro de un archivo de vídeo, en bits por segundo.
 ms.assetid: 28272aa2-49ac-4c13-aa3e-6e733cc49514
 keywords:
-- AudioBitrate Media Player de Windows
+- Atributo AudioBitrate Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49dcbcd85d986bb9dd2d7ced329e5142a13eaa8c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86dbeb4f9b5fb728b759d8208df5cb8f5c14c85cb87552251eff5876c0dba3fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098905"
 ---
 # <a name="audiobitrate-attribute"></a>Atributo AudioBitrate
 
-El atributo **AudioBitrate** es la velocidad de bits para la secuencia de audio dentro de un archivo de vídeo, en bits por segundo.
+El **atributo AudioBitrate** es la velocidad de bits de la secuencia de audio dentro de un archivo de vídeo, en bits por segundo.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca y en el archivo de vídeo.
+Este atributo se almacena tanto en la biblioteca como en el archivo de vídeo.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
 
 
@@ -47,7 +47,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Mostrar atributo en la libreta de direcciones
-description: Este atributo se utiliza para indicar en qué libretas de direcciones MAPI aparecerá un objeto.
+title: Atributo Show-In-Address-Book
+description: Este atributo se usa para indicar en qué libretas de direcciones de MAPI aparecerá un objeto.
 ms.assetid: de00da4d-7c04-4d1d-b375-ce3b5eb2f50f
 ms.tgt_platform: multiple
 keywords:
-- Mostrar el esquema de AD del atributo de libreta de direcciones
-- showInAddressBook atributo AD Schema
+- Esquema de AD del atributo Show-In-Address-Book
+- ShowInAddressBook attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f44632604c539278c67e9dd46537d8e797e2d70d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 610e310297d3401548cc65adb53c77760893ba3a0c5777a9d440432d12dff77a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836275"
 ---
-# <a name="show-in-address-book-attribute"></a>Mostrar atributo en la libreta de direcciones
+# <a name="show-in-address-book-attribute"></a>Atributo Show-In-Address-Book
 
-Este atributo se utiliza para indicar en qué libretas de direcciones MAPI aparecerá un objeto. Normalmente se mantiene mediante el servicio de actualización de destinatarios de Exchange.
+Este atributo se usa para indicar en qué libretas de direcciones de MAPI aparecerá un objeto. Normalmente lo mantiene el Exchange Servicio de actualización de destinatarios.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | Mostrar en la libreta de direcciones                    |
-| Nombre para mostrar de LDAP | showInAddressBook                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Lo utiliza el sistema.             |
+| Ldap-Display-Name | showInAddressBook                       |
+| Size              | \-                                      |
+| Actualizar privilegios  | El sistema lo usa.             |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.644                  |
-| System-ID-GUID    | 3e74f60e-3e73-11d1-a9c0-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 3e74f60e-3e73-11d1-a9c0-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Este atributo se utiliza para indicar en qué libretas de direcciones MAPI apare
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
@@ -76,13 +76,13 @@ Este atributo se utiliza para indicar en qué libretas de direcciones MAPI apare
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
@@ -97,13 +97,13 @@ Este atributo se utiliza para indicar en qué libretas de direcciones MAPI apare
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
@@ -118,13 +118,13 @@ Este atributo se utiliza para indicar en qué libretas de direcciones MAPI apare
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
@@ -139,13 +139,13 @@ Este atributo se utiliza para indicar en qué libretas de direcciones MAPI apare
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |
@@ -160,13 +160,13 @@ Este atributo se utiliza para indicar en qué libretas de direcciones MAPI apare
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000010                                           |

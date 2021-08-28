@@ -1,25 +1,25 @@
 ---
-description: Se llevan a cabo los pasos siguientes para realizar la grabación de secuencias simple.
+description: Se realizan los pasos siguientes para realizar una grabación de secuencia simple.
 ms.assetid: fde8a6cf-1080-4575-a923-ea1590d1e2a1
 title: Registro simple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39fa13d224acb8e85926a07239bd95e738b294c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac10fef71b64517d3a186dfa9590e50331ee9748be7d47fe886f8ac3f17a7b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118862155"
 ---
 # <a name="simple-record"></a>Registro simple
 
-Para realizar grabaciones simples de secuencias, haga lo siguiente:
+Para realizar una grabación simple de secuencias, haga lo siguiente:
 
--   Seleccionar el terminal de registro de archivo en el nivel de llamada
--   Cree el terminal del registro de archivos.
--   Establecer propiedades: el nombre de archivo y el tipo de almacenamiento.
--   Seleccione el terminal de registro de archivo en la llamada.
--   Llame al método [**Start**](/windows/desktop/api/tapi3if/nf-tapi3if-itmediacontrol-start) en el terminal del registro de archivos para iniciar la grabación de secuencias.
+-   Selección del terminal de registro de archivos en el nivel de llamada
+-   Cree el Terminal de registro de archivos.
+-   Establecer propiedades: nombre de archivo y tipo de almacenamiento.
+-   Seleccione el Terminal de registro de archivos en la llamada.
+-   Llame al [**método Start**](/windows/desktop/api/tapi3if/nf-tapi3if-itmediacontrol-start) en el Terminal de registro de archivos para iniciar la grabación de secuencias.
 
  
 

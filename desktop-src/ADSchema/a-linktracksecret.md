@@ -1,11 +1,11 @@
 ---
-title: Atributo de seguimiento de vínculo-secreto
-description: Este atributo almacena un vínculo a una clave secreta que permite traducir un archivo cifrado a texto sin formato.
+title: Atributo Link-Track-Secret
+description: Este atributo almacena un vínculo a una clave secreta que permite que un archivo cifrado se traduzca en texto no cifrado.
 ms.assetid: e476f4af-71a8-4bd9-a81d-f825bfbf267b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de seguimiento de vínculo-secreto
-- linkTrackSecret esquema de AD de atributos
+- Esquema de AD del atributo Link-Track-Secret
+- LinkTrackSecret attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eb172ec0985acc7c93c62796881c369c7ad0b82
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c90fd71ed399c8a2881f16c13942f7210b152d20ebf5a284f071e8af85b40bf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302005"
 ---
-# <a name="link-track-secret-attribute"></a>Atributo de seguimiento de vínculo-secreto
+# <a name="link-track-secret-attribute"></a>Atributo Link-Track-Secret
 
-Este atributo almacena un vínculo a una clave secreta que permite traducir un archivo cifrado a texto sin formato.
+Este atributo almacena un vínculo a una clave secreta que permite que un archivo cifrado se traduzca en texto no cifrado.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | Vínculo-seguimiento-secreto                                     |
-| Nombre para mostrar de LDAP | linkTrackSecret                                       |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Link-Track-Secret                                     |
+| Ldap-Display-Name | linkTrackSecret                                       |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.269                                |
-| System-ID-GUID    | 2ae80fe2-47b4-11d0-a1a4-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 2ae80fe2-47b4-11d0-a1a4-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Este atributo almacena un vínculo a una clave secreta que permite traducir un a
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo almacena un vínculo a una clave secreta que permite traducir un a
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo almacena un vínculo a una clave secreta que permite traducir un a
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Este atributo almacena un vínculo a una clave secreta que permite traducir un a
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo almacena un vínculo a una clave secreta que permite traducir un a
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo almacena un vínculo a una clave secreta que permite traducir un a
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
+| Es de un solo valor       | True                                                           |
 | Está indexado             | False                                                          |
 | En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

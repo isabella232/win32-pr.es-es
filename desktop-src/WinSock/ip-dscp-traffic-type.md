@@ -1,5 +1,5 @@
 ---
-description: En la tabla siguiente se \_ describen \_ las opciones de socket de tipo de tráfico de DSCP IP \_ .
+description: En la tabla siguiente se describen las opciones \_ de socket de TIPO DE TRÁFICO \_ DSCP de \_ IP.
 ms.assetid: 0042B53F-B84E-453A-8E18-87052280DAD5
 title: IP_DSCP_TRAFFIC_TYPE
 ms.topic: reference
@@ -13,22 +13,22 @@ api_type:
 - HeaderDef
 api_location:
 - N/A
-ms.openlocfilehash: 80cbe41e58cf36cd366015d83af380f5952630ce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87915dc214b0ba306b4f38dbd833b27199277564fa8c2815b9147e0d82253589
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097855"
 ---
-# <a name="ip_dscp_traffic_type"></a>\_tipo de \_ tráfico IP DSCP \_
+# <a name="ip_dscp_traffic_type"></a>TIPO \_ DE TRÁFICO DSCP DE \_ \_ IP
 
-En la tabla siguiente se \_ describen \_ las opciones de socket de tipo de tráfico de DSCP IP \_ .
+En la tabla siguiente se describen las opciones \_ de socket de TIPO DE TRÁFICO \_ DSCP de \_ IP.
 
-<dl> <dt><span id="IP_DSCP_TRAFFIC_TYPE"></span><span id="ip_dscp_traffic_type"></span>**\_tipo de \_ tráfico IP DSCP \_**</dt> <dd> <dl> <dt> 
+<dl> <dt><span id="IP_DSCP_TRAFFIC_TYPE"></span><span id="ip_dscp_traffic_type"></span>**TIPO \_ DE TRÁFICO DSCP DE \_ \_ IP**</dt> <dd> <dl> <dt> 
 
-| Opción              | Obtener | Set | Tipo Optval | Descripción                                                                                                                                                                                                                                                                                                                                      |
+| Opción              | Obtener | Set | Tipo optval | Descripción                                                                                                                                                                                                                                                                                                                                      |
 |---------------------|-----|-----|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_tipo de tráfico de DSCP \_ | Sí | Sí | DWORD       | Al establecer este valor en los valores definidos en el **\_ \_ tipo de tráfico de DSCP**, una aplicación podrá solicitar que los paquetes de red se traten según el tipo de servicio que se solicita. De forma similar, se pueden utilizar llamadas a [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) para obtener la configuración actual del tipo de tráfico solicitado en el socket dado. |
+| TIPO DE TRÁFICO \_ \_ DSCP | Sí | Sí | DWORD       | Al establecer este valor en valores definidos en **DSCP \_ TRAFFIC \_ TYPE**, una aplicación podrá pedir a sus paquetes de red que se traten según el tipo de servicio que se solicita. De forma similar, se pueden usar llamadas a [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) para obtener la configuración actual del tipo de tráfico solicitado en el socket especificado. |
 
 
 
@@ -45,7 +45,7 @@ En la tabla siguiente se \_ describen \_ las opciones de socket de tipo de tráf
 |----------------------------------|--------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows 10<br/>                                                          |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2016<br/>                                                 |
-| Encabezado<br/>                | <dl> <dt>N/D</dt> </dl> |
+| Header<br/>                | <dl> <dt>N/D</dt> </dl> |
 
 
 

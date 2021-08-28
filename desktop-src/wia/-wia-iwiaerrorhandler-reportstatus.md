@@ -1,7 +1,7 @@
 ---
-description: Controla el estado y los mensajes de error durante las transferencias de datos de imagen y los muestra al usuario.
+description: Controla los mensajes de estado y error durante las transferencias de datos de imagen y los muestra al usuario.
 ms.assetid: 23e85c63-80b9-4510-854d-289c8d23be2d
-title: 'IWiaErrorHandler:: ReportStatus (método) (WIA. h)'
+title: Método IWiaErrorHandler::ReportStatus (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 30a082502d4c7bc5b789fd1ec19fdb76f63d8fab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6604dc8dbf0cad5f31449ff3cc30945c1e6059727d513fa98dbf436eb199f70f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659755"
 ---
-# <a name="iwiaerrorhandlerreportstatus-method"></a>IWiaErrorHandler:: ReportStatus (método)
+# <a name="iwiaerrorhandlerreportstatus-method"></a>IWiaErrorHandler::ReportStatus (método)
 
-Controla el estado y los mensajes de error durante las transferencias de datos de imagen y los muestra al usuario.
+Controla los mensajes de estado y error durante las transferencias de datos de imagen y los muestra al usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,48 +44,48 @@ HRESULT ReportStatus(
 
 <dl> <dt>
 
-*hwndParent* \[ de\]
+*hwndParent* \[ En\]
 </dt> <dd>
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
-**HWnd** que es la ventana primaria de la ventana de mensaje.
+**HWND** que es la ventana primaria de la ventana de mensajes.
 
 </dd> <dt>
 
-*punkItem* \[ de\]
+*itemitem* \[ En\]
 </dt> <dd>
 
-Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) \** _
+Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
 
-Puntero a la interfaz [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) del elemento que se va a transferir. Este objeto implementa mínimamente [_ *IWiaItem2* *](-wia-iwiaitem2.md) y [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
+Puntero a la [interfaz IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) del elemento que se va a transferir. Este objeto implementa mínimamente [**IWiaItem2**](-wia-iwiaitem2.md) e [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer).
 
 </dd> <dt>
 
-*hrStatus* \[ de\]
+*hrStatus* \[ En\]
 </dt> <dd>
 
 Tipo: **HRESULT**
 
-**HRESULT** que es el código de estado recibido por [**BandedDataCallback**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
+**HRESULT** que es el código de estado recibido por [**BandedDataCallback.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback)
 
 </dd> <dt>
 
-*cbResLength* \[ de\]
+*cbResLength* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-**Long** que es el tamaño de los datos a los que hace referencia *pbData*.
+**LONG** que es el tamaño de los datos a los que hace referencia *pbData.*
 
 </dd> <dt>
 
-*pbData* \[ de\]
+*pbData* \[ En\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
-Puntero al búfer de datos tal y como lo recibe [_ *BandedDataCallback* *](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
+Puntero al búfer de datos recibido por [**BandedDataCallback.**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback)
 
 </dd> </dl>
 
@@ -93,39 +93,39 @@ Puntero al búfer de datos tal y como lo recibe [_ *BandedDataCallback* *](/wind
 
 Tipo: **HRESULT**
 
-Devuelve *hrStatus* si el error no se puede recuperar de. De lo contrario, devuelve uno de los valores siguientes.
+Devuelve *hrStatus si* no se puede recuperar el error. De lo contrario, devuelve uno de los siguientes valores.
 
 
 
 | Código devuelto                                                                             | Descripción                                                                                      |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | Se realizó la acción adecuada para corregir el error y la transferencia puede continuar. <br/> |
-| <dl> <dt>**S \_ false**</dt> </dl> | No se realizó ninguna acción para controlar el estado del error o del informe al usuario. <br/>                |
-| <dl> <dt>**E \_ anular**</dt> </dl> | El usuario decidió anular la transferencia en respuesta al cuadro de diálogo que se muestra. <br/>        |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | Se ha realizado la acción adecuada para corregir el error y la transferencia puede continuar. <br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | No se ha realizado ninguna acción para controlar el error o el estado del informe al usuario. <br/>                |
+| <dl> <dt>**E \_ ABORT**</dt> </dl> | El usuario eligió anular la transferencia en respuesta al cuadro de diálogo mostrado. <br/>        |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La adquisición de imágenes de Windows (WIA) 2,0 llama a **IWiaErrorHandler:: ReportStatus** cuando el controlador envía un mensaje de [](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback) **\_ \_ \_ Estado de dispositivo MSG de ti** a BandedDataCallback. Este método controla el mensaje y muestra información al usuario sobre el estado o el error. Si el mensaje es un error, el método permite al usuario elegir, si es posible, si intenta recuperar el error y continuar con la transferencia o anular la operación.
+Windows Adquisición de imágenes (WIA) 2.0 llama a **IWiaErrorHandler::ReportStatus** cuando el controlador envía un mensaje DE ESTADO DEL DISPOSITIVO DE MENSAJES DE TI a [**BandedDataCallback**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback). **\_ \_ \_** Este método controla el mensaje y muestra información al usuario sobre el estado o el error. Si el mensaje trata de un error, el método permite al usuario elegir, si es posible, si desea intentar recuperarse del error y continuar con la transferencia o anular.
 
-*hrStatus* se establece en \_ la transferencia de estado de WIA \_ \_ Inicio para informar al controlador de que se ha iniciado una transferencia. Se establece en fin de \_ la transferencia de estado de WIA \_ \_ cuando se completa la transferencia.
+*hrStatus se* establece en WIA \_ STATUS TRANSFER BEGIN para informar al controlador de que se ha iniciado una \_ \_ transferencia. Se establece en WIA \_ STATUS TRANSFER END cuando se completa la \_ \_ transferencia.
 
-Si *hrStatus* es el éxito de la gravedad \_ , se debe permitir que el usuario cancele la transferencia.
+Si *hrStatus* es SEVERITY SUCCESS, se debe permitir al usuario \_ cancelar la transferencia.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>       |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Wiaguid. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 
 

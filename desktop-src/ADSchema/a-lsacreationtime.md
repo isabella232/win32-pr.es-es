@@ -1,11 +1,11 @@
 ---
-title: Atributo de hora de creación de LSA
-description: El atributo LSA-Creation-time se usa para admitir la replicación en dominios de Windows NT 4,0.
+title: Atributo LSA-Creation-Time
+description: El atributo LSA-Creation-Time se usa para admitir la replicación Windows dominios NT 4.0.
 ms.assetid: a5446cbf-aa35-4ea6-a2e0-9d0ea58edaf1
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de hora de creación de LSA
-- lSACreationTime esquema de AD de atributos
+- Esquema de AD del atributo LSA-Creation-Time
+- Esquema de AD del atributo lSACreationTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f32092e7d71d02807f4700d381da0ce099ccaf7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa3e93b7df9c44e9277b9e49a87b056a74e31814f1c69787b2ccb7d3aed5fa3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301545"
 ---
-# <a name="lsa-creation-time-attribute"></a>Atributo de hora de creación de LSA
+# <a name="lsa-creation-time-attribute"></a>Atributo LSA-Creation-Time
 
-El atributo **LSA-Creation-time** se usa para admitir la replicación en dominios de Windows NT 4,0.
+El **atributo LSA-Creation-Time** se usa para admitir la replicación Windows dominios NT 4.0.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | En tiempo de creación de LSA                    |
-| Nombre para mostrar de LDAP | lSACreationTime                      |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | LSA-Creation-Time                    |
+| Ldap-Display-Name | lSACreationTime                      |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.66                |
-| System-ID-GUID    | bf9679ad-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679ad-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ El atributo **LSA-Creation-time** se usa para admitir la replicación en dominio
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El atributo **LSA-Creation-time** se usa para admitir la replicación en dominio
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El atributo **LSA-Creation-time** se usa para admitir la replicación en dominio
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El atributo **LSA-Creation-time** se usa para admitir la replicación en dominio
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El atributo **LSA-Creation-time** se usa para admitir la replicación en dominio
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El atributo **LSA-Creation-time** se usa para admitir la replicación en dominio
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
+| Es de un solo valor       | True                                         |
 | Está indexado             | False                                        |
 | En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

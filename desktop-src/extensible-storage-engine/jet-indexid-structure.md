@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 89af1b81b5221ab1cdebc0c91d5340acc62dd330
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 61e51e85fe990cfeee8a5c1ee048a77179d49766
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983978"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475961"
 ---
 # <a name="jet_indexid-structure"></a>JET_INDEXID estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_indexid-structure"></a>JET_INDEXID estructura
 
-La **JET_INDEXID** contiene un identificador de índice. Un identificador de índice es una sugerencia que se usa para acelerar la selección del índice actual [mediante JetSetCurrentIndex](./jetsetcurrentindex-function.md). Es muy útil cuando hay un número muy grande de índices en una tabla. El identificador de índice se puede recuperar [mediante JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
+La **JET_INDEXID** estructura contiene un identificador de índice. Un identificador de índice es una sugerencia que se usa para acelerar la selección del índice actual mediante [JetSetCurrentIndex](./jetsetcurrentindex-function.md). Resulta muy útil cuando hay un número muy grande de índices en una tabla. El identificador de índice se puede recuperar [mediante JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
 
 ```cpp
     typedef struct tagJET_INDEXID {
@@ -55,11 +55,7 @@ No intente interpretar el BLOB de información. No es un tamaño establecido.
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

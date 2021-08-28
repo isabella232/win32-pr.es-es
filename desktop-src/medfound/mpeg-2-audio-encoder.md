@@ -1,19 +1,19 @@
 ---
-description: El codificador de audio Microsoft Media Foundation MPEG-2 es una transformación de Media Foundation que codifica audio mono o estéreo en audio MPEG-1 (ISO/IEC 11172-3) o audio MPEG-2 (ISO/IEC 13818-3).
+description: El codificador de audio Microsoft Media Foundation MPEG-2 es una transformación Media Foundation que codifica audio mono o estéreo en audio MPEG-1 (ISO/IEC 11172-3) o audio MPEG-2 (ISO/IEC 13818-3).
 ms.assetid: EBEFED1F-D0B8-4C7E-B1FB-CDE3BDFD99AA
 title: Codificador de audio MPEG-2
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 935b6438c79e9bf78a230f707f8930f859c3fa491dab0326208d5cf79b53f474
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c75956f55dfa22034b27465082ced0888fbe03b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118240014"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475541"
 ---
 # <a name="mpeg-2-audio-encoder"></a>Codificador de audio MPEG-2
 
-El codificador de audio Microsoft Media Foundation MPEG-2 es una transformación de [Media Foundation](media-foundation-transforms.md) que codifica audio mono o estéreo en audio MPEG-1 (ISO/IEC 11172-3) o audio MPEG-2 (ISO/IEC 13818-3).
+El codificador de audio Microsoft Media Foundation MPEG-2 es una transformación [de Media Foundation](media-foundation-transforms.md) que codifica audio mono o estéreo en audio MPEG-1 (ISO/IEC 11172-3) o audio MPEG-2 (ISO/IEC 13818-3).
 
 El codificador admite audio de capa 1 y de capa 2. No admite audio MPEG-Layer 3 (MP3). Para MPEG-2, el codificador admite la parte Frecuencias de muestreo baja (LSF) del audio MPEG-2. No admite las extensiones multicanal. El MFT genera una secuencia elemental MPEG. No puede generar secuencias elementales en paquetes, secuencias de programa o secuencias de transporte.
 
@@ -27,69 +27,16 @@ El tipo de salida debe establecerse primero, antes del tipo de entrada. En la ta
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-<th>Observaciones</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a></td>
-<td>Tipo principal.</td>
-<td>Obligatorio. Debe ser <strong>MFMediaType_Audio</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a></td>
-<td>Subtipo de audio.</td>
-<td>Obligatorio. Debe ser <strong>MFAudioFormat_MPEG</strong>. Este subtipo se usa para el audio MPEG-1 y MPEG-2.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a></td>
-<td>Ejemplos por segundo.</td>
-<td>Obligatorio. Se admiten los siguientes valores para MPEG-1 y MPEG-2:
-<ul>
-<li>32000</li>
-<li>44100</li>
-<li>48000</li>
-</ul>
-Además, se admiten los siguientes valores para MPEG-2 LSF: <br/>
-<ul>
-<li>16000</li>
-<li>22050</li>
-<li>24000</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a></td>
-<td>Número de canales.</td>
-<td>Obligatorio. Debe ser 1 (mono) o 2 (estéreo).</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a></td>
-<td>Especifica la asignación de canales de audio a las posiciones del hablante.</td>
-<td>Opcional. Si se establece, el valor debe ser 0x3 para estéreo (canales front-left y right) o 0x4 para mono (canal front-center).</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a></td>
-<td>Velocidad de bits de la secuencia MPEG codificada, en bytes por segundo.</td>
-<td>Opcional.<br/> Las especificaciones ISO/IEC 11172-3 e ISO/IEC 13818-3 (LSF) definen varias velocidades de bits, en función de la frecuencia de muestreo, el número de canales y la capa de audio (1 o 2). <br/> El codificador tiene como valor predeterminado audio de capa 2. Si no <a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a> atributo, el codificador usa las siguientes velocidades de bits predeterminadas:<br/>
-<ul>
-<li>MPEG-1 estéreo: 224 000 bits por segundo (bps) = 28 000 bytes por segundo.</li>
-<li>MPEG-1 mono: 192 000 bps = 24 000 bytes por segundo.</li>
-<li>MPEG-2 LSF, mono o estéreo: 160 000 bps = 20 000 bytes por segundo.</li>
-</ul>
-Este atributo se puede establecer en otros valores. Si el valor no es válido según las especificaciones mpeg, MFT rechazará el tipo de medio.<br/> También puede establecer la velocidad de bits mediante la <a href="/windows/desktop/api/strmif/nn-strmif-icodecapi"><strong>interfaz ICodecAPI.</strong></a> Vea Comentarios para obtener más información.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | Observaciones | 
+|-----------|-------------|---------|
+| <a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a> | Tipo principal. | Necesario. Debe ser <strong>MFMediaType_Audio</strong>. | 
+| <a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a> | Subtipo de audio. | Necesario. Debe ser <strong>MFAudioFormat_MPEG</strong>. Este subtipo se usa para el audio MPEG-1 y MPEG-2. | 
+| <a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a> | Ejemplos por segundo. | Necesario. Se admiten los siguientes valores para MPEG-1 y MPEG-2:<ul><li>32000</li><li>44100</li><li>48000</li></ul>Además, se admiten los siguientes valores para MPEG-2 LSF: <br /><ul><li>16000</li><li>22050</li><li>24000</li></ul> | 
+| <a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a> | Número de canales. | Necesario. Debe ser 1 (mono) o 2 (estéreo). | 
+| <a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a> | Especifica la asignación de canales de audio a las posiciones del hablante. | Opcional. Si se establece, el valor debe ser 0x3 para estéreo (canales front-left y right) o 0x4 para mono (canal front-center). | 
+| <a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a> | Velocidad de bits de la secuencia MPEG codificada, en bytes por segundo. | Opcional.<br /> Las especificaciones ISO/IEC 11172-3 e ISO/IEC 13818-3 (LSF) definen varias velocidades de bits, en función de la frecuencia de muestreo, el número de canales y la capa de audio (1 o 2). <br /> El codificador tiene como valor predeterminado audio de capa 2. Si el <a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a> no está establecido, el codificador usa las siguientes velocidades de bits predeterminadas:<br /><ul><li>MPEG-1 estéreo: 224 000 bits por segundo (bps) = 28 000 bytes por segundo.</li><li>MPEG-1 mono: 192 000 bps = 24 000 bytes por segundo.</li><li>MPEG-2 LSF, mono o estéreo: 160 000 bps = 20 000 bytes por segundo.</li></ul>Este atributo se puede establecer en otros valores. Si el valor no es válido según las especificaciones mpeg, MFT rechazará el tipo de medio.<br /> También puede establecer la velocidad de bits mediante la <a href="/windows/desktop/api/strmif/nn-strmif-icodecapi"><strong>interfaz ICodecAPI.</strong></a> Vea Comentarios para obtener más información.<br /> | 
+
 
 
 
@@ -103,71 +50,19 @@ En la tabla siguiente se enumeran los atributos obligatorios y opcionales para e
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-<th>Observaciones</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a></td>
-<td>Tipo principal.</td>
-<td>Obligatorio. Debe ser <strong>MFMediaType_Audio</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a></td>
-<td>Subtipo de audio.</td>
-<td>Obligatorio. Debe ser <strong>MFAudioFormat_PCM</strong> o <strong>MFAudioFormat_Float</strong>.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-bits-per-sample-attribute.md">MF_MT_AUDIO_BITS_PER_SAMPLE</a></td>
-<td>Número de bits por muestra de audio.</td>
-<td>Obligatorio. El valor debe ser 16 si el subtipo es <strong>MFAudioFormat_PCM</strong>o 32 si el subtipo es <strong>MFAudioFormat_Float</strong>.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a></td>
-<td>Ejemplos por segundo.</td>
-<td>Obligatorio. Debe coincidir con el tipo de salida.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a></td>
-<td>Número de canales.</td>
-<td>Obligatorio. Debe coincidir con el tipo de salida.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-block-alignment-attribute.md">MF_MT_AUDIO_BLOCK_ALIGNMENT</a></td>
-<td>Alineación de bloques, en bytes.</td>
-<td>Obligatorio. Calcule el valor de la siguiente manera:
-<ul>
-<li><strong>MFAudioFormat_PCM:</strong>número de canales × 2.</li>
-<li><strong>MFAudioFormat_Float:</strong>número de canales × 4.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a></td>
-<td>Velocidad de bits de la secuencia AC3 codificada, en bytes por segundo.</td>
-<td>Obligatorio. Debe ser igual a la alineación × muestras por segundo.</td>
-</tr>
-<tr class="even">
-<td><a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a></td>
-<td>Especifica la asignación de canales de audio a las posiciones del hablante.</td>
-<td>Opcional. Si se establece, el valor debe coincidir con el tipo de salida.</td>
-</tr>
-<tr class="odd">
-<td><a href="mf-mt-audio-valid-bits-per-sample-attribute.md">MF_MT_AUDIO_VALID_BITS_PER_SAMPLE</a></td>
-<td>Número de bits válidos de datos de audio en cada muestra de audio.</td>
-<td>Opcional. Si se establece, el valor debe ser idéntico <a href="mf-mt-audio-bits-per-sample-attribute.md">al MF_MT_AUDIO_BITS_PER_SAMPLE</a>.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | Observaciones | 
+|-----------|-------------|---------|
+| <a href="mf-mt-major-type-attribute.md">MF_MT_MAJOR_TYPE</a> | Tipo principal. | Necesario. Debe ser <strong>MFMediaType_Audio</strong>. | 
+| <a href="mf-mt-subtype-attribute.md">MF_MT_SUBTYPE</a> | Subtipo de audio. | Necesario. Debe ser <strong>MFAudioFormat_PCM</strong> o <strong>MFAudioFormat_Float</strong>. | 
+| <a href="mf-mt-audio-bits-per-sample-attribute.md">MF_MT_AUDIO_BITS_PER_SAMPLE</a> | Número de bits por muestra de audio. | Necesario. El valor debe ser 16 si el subtipo es <strong>MFAudioFormat_PCM</strong>o 32 si el subtipo es <strong>MFAudioFormat_Float</strong>. | 
+| <a href="mf-mt-audio-samples-per-second-attribute.md">MF_MT_AUDIO_SAMPLES_PER_SECOND</a> | Ejemplos por segundo. | Necesario. Debe coincidir con el tipo de salida. | 
+| <a href="mf-mt-audio-num-channels-attribute.md">MF_MT_AUDIO_NUM_CHANNELS</a> | Número de canales. | Necesario. Debe coincidir con el tipo de salida. | 
+| <a href="mf-mt-audio-block-alignment-attribute.md">MF_MT_AUDIO_BLOCK_ALIGNMENT</a> | Alineación de bloques, en bytes. | Necesario. Calcule el valor de la siguiente manera:<ul><li><strong>MFAudioFormat_PCM:</strong>número de canales × 2.</li><li><strong>MFAudioFormat_Float:</strong>número de canales × 4.</li></ul> | 
+| <a href="mf-mt-audio-avg-bytes-per-second-attribute.md">MF_MT_AUDIO_AVG_BYTES_PER_SECOND</a> | Velocidad de bits de la secuencia AC3 codificada, en bytes por segundo. | Necesario. Debe ser igual a la alineación × muestras por segundo. | 
+| <a href="mf-mt-audio-channel-mask-attribute.md">MF_MT_AUDIO_CHANNEL_MASK</a> | Especifica la asignación de canales de audio a las posiciones del hablante. | Opcional. Si se establece, el valor debe coincidir con el tipo de salida. | 
+| <a href="mf-mt-audio-valid-bits-per-sample-attribute.md">MF_MT_AUDIO_VALID_BITS_PER_SAMPLE</a> | Número de bits válidos de datos de audio en cada muestra de audio. | Opcional. Si se establece, el valor debe ser idéntico a <a href="mf-mt-audio-bits-per-sample-attribute.md">MF_MT_AUDIO_BITS_PER_SAMPLE</a>. | 
+
 
 
 
@@ -186,7 +81,7 @@ El codificador admite las siguientes propiedades a través de la [**interfaz ICo
 | [CODECAPI \_ AVEncCommonMeanBitRate](../directshow/avenccommonmeanbitrate-property.md)               | Especifica la velocidad de bits codificada media, en bits por segundo.                                      | Como se describe para el atributo [MF MT AUDIO AVG BYTES PER \_ \_ \_ \_ \_ \_ SECOND](mf-mt-audio-avg-bytes-per-second-attribute.md) en el tipo de medio de salida.                      |
 | [CODECAPI \_ AVEncMPACodingMode](../directshow/avencmpacodingmode-property.md)                       | Especifica el modo de codificación de audio MPEG.                                                          | Estéreo para audio de 2 canales o canal único para audio de 1 canal.<br/> En el caso del audio de 2 canales, el codificador también admite doble canal y estéreo conjunto.<br/> |
 | [CODECAPI \_ AVEncMPACopyright](../directshow/avencmpacopyright-property.md)                         | Especifica si se debe establecer el bit de copyright en la secuencia de audio MPEG.                             | Sin copyright.                                                                                                                                                          |
-| [CODECAPI \_ AVEncMPAEmphasisType](../directshow/avencmpaemphasistype-property.md)                   | Especifica el tipo de filtro de des-énfasis que se debe usar cuando se descodifica la secuencia codificada. | No se especifica ningún énfasis.                                                                                                                                                 |
+| [CODECAPI \_ AVEncMPAEmphasisType](../directshow/avencmpaemphasistype-property.md)                   | Especifica el tipo de filtro de des-énfasis que se debe usar cuando se descodifica la secuencia codificada. | No se ha especificado ningún énfasis.                                                                                                                                                 |
 | [AVEncMPAEnableRedundancyProtection](../directshow/avencmpaenableredundancyprotection-property.md) | Especifica si se va a agregar una comprobación de redundancia cíclica (CRC) al encabezado del marco.                    | Se escribe una suma de comprobación CRC en la secuencia de bits.                                                                                                                           |
 | [CODECAPI \_ AVEncMPALayer](../directshow/avencmpalayer-property.md)                                 | Especifica la capa de audio MPEG.                                                                  | Audio de capa 2.                                                                                                                                                         |
 | [CODECAPI \_ AVEncMPAOriginalBitstream](../directshow/avencmpaoriginalbitstream-property.md)         | Especifica si se debe establecer para el bit original en la secuencia de audio MPEG.                          | El bit "Original" está desactivado.                                                                                                                                                 |
@@ -211,7 +106,7 @@ Todos los demás [**métodos ICodecAPI**](/windows/win32/api/strmif/nn-strmif-ic
 
 ## <a name="remarks"></a>Comentarios
 
-Cada fotograma de audio MPEG contiene 384 (capa 1) o 1152 (capa 2) muestras de audio por canal. Sin embargo, cada búfer de entrada del codificador puede contener cualquier número de muestras de PCM. El tamaño de cada búfer de entrada debe ser un múltiplo de la alineación del bloque. El codificador almacena en caché los ejemplos de entrada hasta que tiene suficiente para un fotograma de audio MPEG.
+Cada fotograma de audio MPEG contiene 384 (capa 1) o 1152 (capa 2) muestras de audio por canal. Sin embargo, cada búfer de entrada al codificador puede contener cualquier número de muestras de PCM. El tamaño de cada búfer de entrada debe ser un múltiplo de la alineación del bloque. El codificador almacena en caché los ejemplos de entrada hasta que tiene suficiente para un fotograma de audio MPEG.
 
 Cada búfer de salida contiene un marco MPEG sin formato. El tamaño de cada búfer de salida depende de la velocidad de bits y la frecuencia de muestreo.
 
@@ -383,10 +278,10 @@ Tipo de medio de salida:
 
 | Atributo                                                                           | Valor                   |
 |-------------------------------------------------------------------------------------|-------------------------|
-| [TIPO \_ PRINCIPAL DE MF MT \_ \_](mf-mt-major-type-attribute.md)                               | **MFMediaType \_ Audio**  |
-| [SUBTIPO \_ MT DE MF \_](mf-mt-subtype-attribute.md)                                      | **MFAudioFormat \_ MPEG** |
+| [TIPO \_ PRINCIPAL DE MT \_ DE \_ MF](mf-mt-major-type-attribute.md)                               | **MFMediaType \_ Audio**  |
+| [\_SUBTIPO DE MT DE MF \_](mf-mt-subtype-attribute.md)                                      | **MFAudioFormat \_ MPEG** |
 | [MUESTRAS \_ DE AUDIO MF MT POR \_ \_ \_ \_ SEGUNDO](mf-mt-audio-samples-per-second-attribute.md) | 48000                   |
-| [CANALES \_ NUM \_ DE AUDIO \_ MF MT \_](mf-mt-audio-num-channels-attribute.md)              | 2                       |
+| [CANALES \_ NUM DE AUDIO MF \_ \_ \_ MT](mf-mt-audio-num-channels-attribute.md)              | 2                       |
 
 
 
@@ -396,13 +291,13 @@ Tipo de medio de entrada:
 
 | Atributo                                                                                | Valor                  |
 |------------------------------------------------------------------------------------------|------------------------|
-| [TIPO \_ PRINCIPAL DE MF MT \_ \_](mf-mt-major-type-attribute.md)                                    | **MFMediaType \_ Audio** |
-| [SUBTIPO \_ MT DE MF \_](mf-mt-subtype-attribute.md)                                           | **MFAudioFormat \_ PCM** |
-| [BITS \_ DE AUDIO MF MT POR \_ \_ \_ \_ EJEMPLO](mf-mt-audio-bits-per-sample-attribute.md)            | 16                     |
+| [TIPO \_ PRINCIPAL DE MT \_ DE \_ MF](mf-mt-major-type-attribute.md)                                    | **MFMediaType \_ Audio** |
+| [\_SUBTIPO DE MT DE MF \_](mf-mt-subtype-attribute.md)                                           | **MFAudioFormat \_ PCM** |
+| [BITS \_ DE AUDIO MF MT POR \_ \_ \_ \_ MUESTRA](mf-mt-audio-bits-per-sample-attribute.md)            | 16                     |
 | [MUESTRAS \_ DE AUDIO MF MT POR \_ \_ \_ \_ SEGUNDO](mf-mt-audio-samples-per-second-attribute.md)      | 48000                  |
-| [CANALES \_ NUM \_ DE AUDIO \_ MF MT \_](mf-mt-audio-num-channels-attribute.md)                   | 2                      |
-| [ALINEACIÓN \_ DE \_ BLOQUES DE AUDIO \_ \_ MF MT](mf-mt-audio-block-alignment-attribute.md)             | 4                      |
-| [PROMEDIO \_ DE BYTES PROMEDIO DE AUDIO MF MT POR \_ \_ \_ \_ \_ SEGUNDO](mf-mt-audio-avg-bytes-per-second-attribute.md) | 192000                 |
+| [CANALES \_ NUM DE AUDIO MF \_ \_ \_ MT](mf-mt-audio-num-channels-attribute.md)                   | 2                      |
+| [ALINEACIÓN \_ DE \_ BLOQUES DE AUDIO MF MT \_ \_](mf-mt-audio-block-alignment-attribute.md)             | 4                      |
+| [PROMEDIO DE BYTES PROMEDIO DE AUDIO DE MF \_ MT \_ POR \_ \_ \_ \_ SEGUNDO](mf-mt-audio-avg-bytes-per-second-attribute.md) | 192000                 |
 
 
 

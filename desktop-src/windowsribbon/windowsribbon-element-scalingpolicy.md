@@ -3,7 +3,7 @@ title: Elemento ScalingPolicy
 description: Representa un contenedor para las especificaciones de escalado.
 ms.assetid: 133e7994-9901-43e8-82b0-3d910cf8758e
 keywords:
-- Cinta de opciones de Windows del elemento ScalingPolicy
+- Cinta de opciones del Windows ScalingPolicy
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 812256b0ff329073eb516c6ab2eb7501db8de40d
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 202112a24a74c9b20d429910fd0ee9447002ce7f2cb95133165fb968eaaf4f69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007475"
 ---
 # <a name="scalingpolicy-element"></a>Elemento ScalingPolicy
 
@@ -59,24 +59,24 @@ No hay atributos.
 
 ## <a name="remarks"></a>Comentarios
 
-Necesario.
+Obligatorio.
 
 Debe producirse una vez para [**cada Tab.ScalingPolicy**](windowsribbon-element-tab-scalingpolicy.md).
 
-El **elemento ScalingPolicy** contiene un manifiesto de declaraciones [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) y [**Scale**](windowsribbon-element-scale.md) que especifican preferencias de diseño adaptable para uno o varios elementos [**Group**](windowsribbon-element-group.md) cuando se cambia el tamaño de la cinta.
+El **elemento ScalingPolicy** contiene un manifiesto de declaraciones [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) y [**Scale**](windowsribbon-element-scale.md) que especifican preferencias de diseño adaptable para uno o varios elementos [**Group**](windowsribbon-element-group.md) cuando se cambia el tamaño de la cinta de opciones.
 
 La lista de [**declaraciones de**](windowsribbon-element-scale.md) escala debe estar en orden descendente de tamaños válidos (grande, mediano, pequeño, emergente) para el [**elemento SizeDefinition**](windowsribbon-element-sizedefinition.md) asociado al [**elemento Group.**](windowsribbon-element-group.md)
 
 > [!Note]  
-> Se recomienda encarecidamente que se especifiquen los detalles adecuados de la directiva de escalado para que una cinta de opciones pueda representarse sin barras de desplazamiento al cambiar el tamaño a un ancho de 300 píxeles a 96 puntos por pulgada (ppp).
+> Se recomienda encarecidamente especificar los detalles adecuados de la directiva de escalado para que una cinta de opciones pueda representarse sin barras de desplazamiento cuando se cambie el tamaño a un ancho de 300 píxeles a 96 puntos por pulgada (ppp).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo se puede personalizar la apariencia de los controles de un grupo [**a**](windowsribbon-element-group.md) través de la funcionalidad de diseño adaptable de las plantillas [**SizeDefinition de**](windowsribbon-element-sizedefinition.md) la cinta de opciones.
+En el ejemplo siguiente se muestra cómo se puede personalizar la apariencia de los controles de un grupo [**mediante**](windowsribbon-element-group.md) la funcionalidad de diseño adaptable de las plantillas [**SizeDefinition de**](windowsribbon-element-sizedefinition.md) la cinta de opciones.
 
-El **manifiesto ScalingPolicy** de este ejemplo especifica una preferencia [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de los cuatro grupos de controles de una **pestaña** Inicio. Además, los [**elementos Scale**](windowsribbon-element-scale.md) se especifican para influir en el comportamiento de conserción, en orden descendente de tamaño, de cada grupo.
+El **manifiesto ScalingPolicy** de este ejemplo especifica una preferencia [**ScalingPolicy.IdealSizes**](windowsribbon-element-scalingpolicy-idealsizes.md) [**SizeDefinition**](windowsribbon-element-sizedefinition.md) para cada uno de los cuatro grupos de controles de una **pestaña** Inicio. Además, se [**especifican elementos Scale**](windowsribbon-element-scale.md) para influir en el comportamiento de conserción, en orden descendente, de cada grupo.
 
 
 ```XML
@@ -153,7 +153,7 @@ El **manifiesto ScalingPolicy** de este ejemplo especifica una preferencia [**Sc
 
 <dl> <dt>
 
-[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

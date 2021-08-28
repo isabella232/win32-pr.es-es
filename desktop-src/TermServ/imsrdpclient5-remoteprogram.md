@@ -4,19 +4,19 @@ description: Recupera un objeto que admite la interfaz ITSRemoteProgram.
 ms.assetid: 013f613b-af7b-4cc5-be1f-d45833806e3b
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RemoteProgram
-- Propiedad RemoteProgram Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad RemoteProgram
-- Propiedad RemoteProgram Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad RemoteProgram
-- Propiedad RemoteProgram Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad RemoteProgram
-- Propiedad RemoteProgram Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad RemoteProgram
-- Propiedad RemoteProgram Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad RemoteProgram
-- Propiedad RemoteProgram Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad RemoteProgram
+- Propiedad RemoteProgram Servicios de Escritorio remoto
+- Propiedad RemoteProgram Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad RemoteProgram
+- Propiedad RemoteProgram Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad RemoteProgram
+- Propiedad RemoteProgram Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad RemoteProgram
+- Propiedad RemoteProgram Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad RemoteProgram
+- Propiedad RemoteProgram Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad RemoteProgram
+- Propiedad RemoteProgram Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad RemoteProgram
 topic_type:
 - apiref
 api_name:
@@ -38,16 +38,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 267e367af090a7fd70e9482406104fd0403d63f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03da8fba499a45ded2d28a5d40cc391c4a137e987eda0c32edd442861d67abc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099485"
 ---
-# <a name="imsrdpclient5remoteprogram-property"></a>IMsRdpClient5:: RemoteProgram (propiedad)
+# <a name="imsrdpclient5remoteprogram-property"></a>IMsRdpClient5::RemoteProgram, propiedad
 
-Recupera un objeto que admite la interfaz [**ITSRemoteProgram**](itsremoteprogram.md) .
+Recupera un objeto que admite la [**interfaz ITSRemoteProgram.**](itsremoteprogram.md)
 
 Esta propiedad es de solo lectura.
 
@@ -64,7 +64,7 @@ HRESULT get_RemoteProgram(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero a la interfaz [**ITSRemoteProgram**](itsremoteprogram.md) .
+Puntero [**de interfaz ITSRemoteProgram.**](itsremoteprogram.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Puntero a la interfaz [**ITSRemoteProgram**](itsremoteprogram.md) .
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient5 se define como 4eb5335b-6429-477d-B922-e06a28ecd8bf<br/>       |
+| IID<br/>                      | IID IMsRdpClient5 se define como \_ 4eb5335b-6429-477d-b922-e06a28ecd8bf<br/>       |
 
 
 

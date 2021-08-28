@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_SETITEMDATA (Winuser. h)
+title: LB_SETITEMDATA mensaje (Winuser.h)
 description: Establece un valor asociado al elemento especificado en un cuadro de lista.
 ms.assetid: df974fa2-114a-43ef-b0ac-0451c31d95cd
 keywords:
-- LB_SETITEMDATA controles de mensajes de Windows
+- LB_SETITEMDATA controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02d9f9cc952ea3bf2d83358ce3b15ce6c3a2546b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd9a705014ef770edba5b540a7acbd2512b685d5ebf8ca913df8fa329dc6058a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085335"
 ---
-# <a name="lb_setitemdata-message"></a>\_Mensaje lb SETITEMDATA
+# <a name="lb_setitemdata-message"></a>Mensaje \_ LB SETITEMDATA
 
 Establece un valor asociado al elemento especificado en un cuadro de lista.
 
@@ -32,9 +32,9 @@ Establece un valor asociado al elemento especificado en un cuadro de lista.
 *wParam* 
 </dt> <dd>
 
-Especifica el índice de base cero del elemento. Si este valor es-1, el valor *lParam* se aplica a todos los elementos del cuadro de lista.
+Especifica el índice de base cero del elemento. Si este valor es -1, el *valor lParam* se aplica a todos los elementos del cuadro de lista.
 
-Windows 95, Windows 98 o Windows Millennium Edition (Windows me): el parámetro *wParam* está limitado a valores de 16 bits. Esto significa que los cuadros de lista no pueden contener más de 32.767 elementos. Aunque el número de elementos está restringido, el tamaño total en bytes de los elementos de un cuadro de lista está limitado únicamente por la memoria disponible.
+Windows 95/Windows 98/Windows Edition (Windows Me): el parámetro *wParam* está limitado a valores de 16 bits. Esto significa que los cuadros de lista no pueden contener más de 32 767 elementos. Aunque el número de elementos está restringido, el tamaño total en bytes de los elementos de un cuadro de lista solo está limitado por la memoria disponible.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Especifica el valor que se va a asociar al elemento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se produce un error, el valor devuelto es LB \_ Err.
+Si se produce un error, el valor devuelto es LB \_ ERR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el elemento está en un cuadro de lista dibujado por el propietario creado sin el estilo [**lb \_ HASSTRINGS**](list-box-styles.md) , este mensaje reemplaza el valor contenido en el parámetro *lParam* del mensaje [**lb \_ ADDSTRING**](lb-addstring.md) o [**lb \_ INSERTSTRING**](lb-insertstring.md) que agregó el elemento al cuadro de lista.
+Si el elemento está en un cuadro de lista dibujado por el propietario creado sin el estilo [**\_ HASSTRINGS**](list-box-styles.md) de LBS, este mensaje reemplaza el valor contenido en el parámetro *lParam* del mensaje [**LB \_ ADDSTRING**](lb-addstring.md) o [**LB \_ INSERTSTRING**](lb-insertstring.md) que agregó el elemento al cuadro de lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Si el elemento está en un cuadro de lista dibujado por el propietario creado si
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

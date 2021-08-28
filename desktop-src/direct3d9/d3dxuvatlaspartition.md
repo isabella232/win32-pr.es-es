@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 63df6bbcc1b811b9617796bc6e7e51af2dfdca56
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e34c5b9fe69129cb60c604cbde1fc6bcb4df8e442b7ea29bc55cec44911505e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096135"
 ---
 # <a name="d3dxuvatlaspartition-function"></a>Función D3DXUVAtlasPartition
 
@@ -97,7 +97,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de datos de adyacencia con 3 DWORD por cara, que indica qué triángulos son adyacentes entre sí (vea [**ID3DXBaseMesh::GenerateAdjacency).**](id3dxbasemesh--generateadjacency.md)
+Puntero a una matriz de datos de adyacencia con 3 DWORD por cara, que indica qué triángulos son adyacentes entre sí (vea [**ID3DXBaseMesh::GenerateAdjacency**](id3dxbasemesh--generateadjacency.md)).
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Puntero a una matriz de datos de adyacencia con 3 DWORD por cara, que indica qu�
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Matriz con 3 DWORDS por cara. Cada cara indica si un borde es false o no. Un borde no falso se indica mediante -1, un borde falso se indica mediante cualquier otro valor. Esto permite parametrizar una malla de quads en la que no se cortarán los bordes del centro de cada quad.
+Matriz con 3 DWORDS por cara. Cada cara indica si un borde es falso o no. Un borde no falso se indica mediante -1, un borde falso se indica mediante cualquier otro valor. Esto permite la parametrización de una malla de quads donde no se cortarán los bordes del centro de cada cuatro.
 
 </dd> <dt>
 
@@ -122,9 +122,9 @@ Puntero a una matriz de tensores de métricas integrados que describe cómo exte
 *pCallback* \[ En\]
 </dt> <dd>
 
-Tipo: **[LPD3DVATVATLASCB](lpd3dxuvatlascb.md)**
+Tipo: **[LPD3DRVVATLASCB](lpd3dxuvatlascb.md)**
 
-Puntero a una función de devolución de llamada [(vea LPD3D MOUSEVATLASCB)](lpd3dxuvatlascb.md)que resulta útil para supervisar el progreso.
+Puntero a una función de devolución de llamada [(vea LPD3DPLACELASCB)](lpd3dxuvatlascb.md)que resulta útil para supervisar el progreso.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ Puntero a una matriz de vértices recortados. Cada elemento de matriz identifica
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una [**interfaz ID3DXBuffer.**](id3dxbuffer.md) Este búfer contendrá una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara en la malla de salida. Este parámetro no debe ser **NULL,** porque la llamada posterior a D3DXUVAtlasPack() lo requiere.
+Dirección de un puntero a una [**interfaz ID3DXBuffer.**](id3dxbuffer.md) Este búfer contendrá una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla de salida. Este parámetro no debe ser **NULL** porque la llamada subsiguiente a D3DXUVAtlasPack() lo requiere.
 
 </dd> <dt>
 
@@ -230,14 +230,14 @@ D3DXUVAtlasPartition es similar a [**D3DXUVAtlasCreate,**](d3dxuvatlascreate.md)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Funciones UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
+[Funciones DE UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md)
 </dt> <dt>
 
-[Herramienta de Command-Line UV Atlas (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
+[Uv Atlas Command-Line Tool (uvatlas.exe)](https://msdn.microsoft.com/library/Ee419017(v=VS.85).aspx)
 </dt> </dl>
 
  

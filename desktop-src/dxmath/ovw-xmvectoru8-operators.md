@@ -1,22 +1,22 @@
 ---
-description: La estructura XMVECTORU8 expone los siguientes operadores.
+description: La estructura XMVECTORU8 expone los operadores siguientes.
 ms.assetid: caa72465-c146-4bdc-a66f-325cf4487866
 title: Operadores XMVECTORU8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e42fa97b407714ca88b3ea9a0da769726db7dd6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce443ff1aea35d4e2e03c11587848093408a9dc13e05854a566a02fa9c540141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841355"
 ---
 # <a name="xmvectoru8-operators"></a>Operadores XMVECTORU8
 
-La estructura [**XMVECTORU8**](xmvectoru8-data-type.md) expone los siguientes operadores.
+La estructura [**XMVECTORU8**](xmvectoru8-data-type.md) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ La estructura [**XMVECTORU8**](xmvectoru8-data-type.md) expone los siguientes op
 
 | Métodos                                                              | Descripción                                                                                                                                                                                                                                                                                             |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**operador \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421373(v=vs.85))<br/> | Devuelve el objeto que implementa la instancia actual de [**XMVECTORU8**](xmvectoru8-data-type.md) convertido en una instancia de [ \_ \_ m128i](/cpp/cpp/m128i) de \[ sistemas de Windows que solo admite [SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100)) .\]<br/> |
+| [**operador \_ \_ m128i**](/previous-versions/windows/desktop/legacy/ee421373(v=vs.85))<br/> | Devuelve el objeto que implementa la instancia actual de [**XMVECTORU8**](xmvectoru8-data-type.md) que se convierte en una instancia [ \_ \_ m128i](/cpp/cpp/m128i) de Windows sistemas que solo \[ [admiten SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100))\]<br/> |
 | [**operador XMVECTOR**](/previous-versions/windows/desktop/legacy/ee421374(v=vs.85))<br/> | Devuelve la instancia de `XMVECTOR` que implementa la instancia actual de `XMVECTORU8` .<br/>                                                                                                                                                                                                        |
 
 
@@ -37,13 +37,13 @@ La estructura [**XMVECTORU8**](xmvectoru8-data-type.md) expone los siguientes op
 
 <dl> <dt>
 
-[Extensiones de XMVECTORU8](ovw-xmvectoru8-extensions.md)
+[Extensiones XMVECTORU8](ovw-xmvectoru8-extensions.md)
 </dt> <dt>
 
 **Tipos**
 </dt> <dt>
 
-[**XMVECTORU8, tipo de datos**](xmvectoru8-data-type.md)
+[**Tipo de datos XMVECTORU8**](xmvectoru8-data-type.md)
 </dt> </dl>
 
  

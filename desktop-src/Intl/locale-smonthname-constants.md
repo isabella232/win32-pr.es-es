@@ -1,93 +1,39 @@
 ---
-description: Constantes de SMONTHNAME de configuración regional \_ \*
+description: Constantes \_ SMONTHNAME de LOCALE \*
 ms.assetid: 81269282-bea8-4a5d-929d-c68af34bd1ac
-title: Constantes de LOCALE_SMONTHNAME *
+title: LOCALE_SMONTHNAME* Constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ef4b45a84ea31d7d8c3d5de6e2f3f3a452c7a1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d229032722b3d0f97061d3e5d9c955e6ad8da5a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810753"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467052"
 ---
-# <a name="locale_smonthname-constants"></a>Constantes de SMONTHNAME de configuración regional \_ \*
+# <a name="locale_smonthname-constants"></a>Constantes \_ SMONTHNAME de LOCALE \*
 
-En este tema se definen las constantes de SMONTHNAME de configuración regional \_ \* utilizadas por NLS.
+En este tema se definen las constantes \_ SMONTHNAME de LOCALE \* usadas por NLS.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>LOCALE_SMONTHNAME1</td>
-<td>Nombre largo nativo de enero. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación.
-<blockquote>
-[!Note]<br />
-La llamada a la función <a href="/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa"><strong>GetLocaleInfo</strong></a> o <a href="/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex"><strong>GetLocaleInfoEx</strong></a> con una constante LOCALE_SMONTHNAME * devuelve la forma independiente, o nominativa, del nombre del mes. Para obtener el formulario genitivo del nombre del mes, la aplicación llama a <a href="/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformata">GetDateFormat</a> o <a href="/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformatex">GetDateFormatEx</a> con una fecha de la imagen de ddMMMM y quita los dos dígitos del principio de la cadena recuperada.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>LOCALE_SMONTHNAME2</td>
-<td>Nombre largo nativo para febrero. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="odd">
-<td>LOCALE_SMONTHNAME3</td>
-<td>Nombre largo nativo para marzo. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="even">
-<td>LOCALE_SMONTHNAME4</td>
-<td>Nombre largo nativo de abril. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="odd">
-<td>LOCALE_SMONTHNAME5</td>
-<td>Nombre largo nativo para mayo. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="even">
-<td>LOCALE_SMONTHNAME6</td>
-<td>Nombre largo nativo de junio. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="odd">
-<td>LOCALE_SMONTHNAME7</td>
-<td>Nombre largo nativo de julio. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="even">
-<td>LOCALE_SMONTHNAME8</td>
-<td>Nombre largo nativo de agosto. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="odd">
-<td>LOCALE_SMONTHNAME9</td>
-<td>Nombre largo nativo de septiembre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="even">
-<td>LOCALE_SMONTHNAME10</td>
-<td>Nombre largo nativo para octubre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="odd">
-<td>LOCALE_SMONTHNAME11</td>
-<td>Nombre largo nativo para noviembre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="even">
-<td>LOCALE_SMONTHNAME12</td>
-<td>Nombre largo nativo de diciembre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-<tr class="odd">
-<td>LOCALE_SMONTHNAME13</td>
-<td>Nombre nativo de un decimotercer mes, si existe. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Vea la nota para obtener LOCALE_SMONTHNAME1.</td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | 
+|-------|---------|
+| LOCALE_SMONTHNAME1 | Nombre largo nativo para enero. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación.<blockquote>[!Note]<br />Al llamar a <a href="/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa"><strong>la función GetLocaleInfo</strong></a> o <a href="/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex"><strong>GetLocaleInfoEx</strong></a> con una constante LOCALE_SMONTHNAME* se devuelve el formato independiente o nominativo del nombre del mes. Para obtener el formato tivetive del nombre del mes, la aplicación llama a <a href="/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformata">GetDateFormat</a> u <a href="/windows/desktop/api/datetimeapi/nf-datetimeapi-getdateformatex">GetDateFormatEx</a> con una imagen de fecha de ddMMMM y quita los dos dígitos del principio de la cadena recuperada.</blockquote><br /> | 
+| LOCALE_SMONTHNAME2 | Nombre largo nativo para febrero. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME3 | Nombre largo nativo para marzo. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME4 | Nombre largo nativo para abril. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME5 | Nombre largo nativo para mayo. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME6 | Nombre largo nativo para junio. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME7 | Nombre largo nativo para julio. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME8 | Nombre largo nativo para agosto. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME9 | Nombre largo nativo para septiembre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME10 | Nombre largo nativo para octubre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME11 | Nombre largo nativo para noviembre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME12 | Nombre largo nativo para diciembre. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+| LOCALE_SMONTHNAME13 | Nombre nativo de un mes 13, si existe. El número máximo de caracteres permitido para esta cadena es 80, incluido un carácter nulo de terminación. Consulte la nota para LOCALE_SMONTHNAME1. | 
+
 
 
 

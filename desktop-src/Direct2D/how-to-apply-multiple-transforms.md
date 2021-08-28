@@ -1,23 +1,23 @@
 ---
 title: Cómo aplicar varias transformaciones a un objeto
-description: Muestra cómo aplicar varias transformaciones a un objeto.
+description: Muestra cómo aplicar varias transformaciones a un objeto .
 ms.assetid: a3875072-bb73-4698-944e-102ab5539d80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e031a46545c59513767ed4d260be9dc677b3fb77
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7d63db7899b79dd07a6a4a14a4efbbfaeefc5723ad09c71a3462ba5d2fd0c042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259695"
 ---
 # <a name="how-to-apply-multiple-transforms-to-an-object"></a>Cómo aplicar varias transformaciones a un objeto
 
-Para realizar varias transformaciones en un objeto significa combinar varias transformaciones en una. Es decir, se toma la salida de cada matriz de transformación y se usa como entrada para el siguiente, con lo que se obtienen los efectos acumulativos de todas las transformaciones de matriz.
+Realizar varias transformaciones en un objeto significa combinar varias transformaciones en una. Es decir, tomar la salida de cada matriz de transformación y usarlo como entrada para la siguiente, obteniendo así los efectos acumulativos de todas las transformaciones de matriz.
 
-Supongamos que se multiplican dos matrices de transformación, rotación y traslación. El resultado es una nueva matriz que realiza las funciones de giro y traslación. Dado que la multiplicación de matrices no es conmutativa, una transformación de giro multiplicada por una transformación de traslación es diferente de la transformación de traslación multiplicada por la transformación de giro.
+Supongamos que dos matrices de transformación, rotación y traducción, se multiplican juntas. El resultado es una nueva matriz que realiza las funciones de rotación y traducción. Dado que la multiplicación de matrices no es conmutativa, una transformación de rotación multiplicada por una transformación de traducción es diferente de la transformación de traducción multiplicada por la transformación de rotación.
 
-En los siguientes ejemplos de código se muestra cómo aplicar la rotación seguido de la traducción y, a continuación, la traslación seguido de la rotación. Observe que los resultados de la representación son diferentes.
+En los ejemplos de código siguientes se muestra cómo aplicar la rotación seguida de la traducción y, a continuación, la traducción seguida de la rotación. Observe que los resultados de la representación son diferentes.
 
 
 ```C++
@@ -85,9 +85,9 @@ m_pRenderTarget->DrawRectangle(rectangle, m_pTransformedShapeBrush);
 
 
 
-El código genera el resultado que se muestra en la siguiente ilustración.
+El código genera la salida que se muestra en la ilustración siguiente.
 
-![Ilustración de un rectángulo que se ha traducido y girado, y un rectángulo que se ha girado y convertido](images/multipletransforms.png)
+![ilustración de un rectángulo que se ha traducido y luego girado y un rectángulo que se ha girado y, a continuación, se ha traducido](images/multipletransforms.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -96,12 +96,12 @@ El código genera el resultado que se muestra en la siguiente ilustración.
 [Referencia de Direct2D](reference.md)
 </dt> <dt>
 
-[Información general sobre transformaciones de Direct2D](direct2d-transforms-overview.md)
+[Introducción a las transformaciones de Direct2D](direct2d-transforms-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

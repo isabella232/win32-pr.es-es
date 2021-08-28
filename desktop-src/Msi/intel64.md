@@ -4,16 +4,16 @@ ms.assetid: 827036dd-3b42-40dc-9fa5-8b3a72a2e5b1
 title: Propiedad Intel64
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c2a4b71550a07fec38daac271b4a1263b2de8bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d16f3d92c8b9054e221562a24d8413017b7836870e989a2b2f54687fdc4fc643
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119996475"
 ---
 # <a name="intel64-property"></a>Propiedad Intel64
 
-La propiedad **Intel64** solo se define cuando se ejecuta en un procesador Itanium. El valor se establece mediante el Windows Installer en el nivel de procesador numérico. Esta propiedad no se establece cuando se ejecuta en un procesador extendido de 64 bits. Para obtener más información, consulte la propiedad [**Intel**](intel.md) .
+La **propiedad Intel64** solo se define cuando se ejecuta en un procesador Itanium. El valor lo establece el instalador Windows en el nivel de procesador numérico. Esta propiedad no se establece cuando se ejecuta en un procesador extendido de 64 bits. Para obtener más información, vea [**Intel**](intel.md) Property.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ La propiedad **Intel64** solo se define cuando se ejecuta en un procesador Itani
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 

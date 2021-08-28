@@ -1,46 +1,46 @@
 ---
-description: Antes de implementar el proveedor, primero debe registrar el proveedor con WMI. Al registrar el proveedor se define el tipo del proveedor y las clases que admite el proveedor. WMI solo puede tener acceso a proveedores registrados.
+description: Antes de implementar el proveedor, primero debe registrar el proveedor con WMI. El registro del proveedor define el tipo del proveedor y las clases que admite el proveedor. WMI solo puede acceder a proveedores registrados.
 ms.assetid: b0a1a11c-a8e8-4bc1-b286-fb9243667976
 ms.tgt_platform: multiple
-title: Registrar un proveedor
+title: Registro de un proveedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53592ecb452de1b6071cbb8f59cfaaef42b57f1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 265d3a9f8617c68793fc30c0dc23fd3e9f0106ee98a9e3c757754e2fe589dda8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119995925"
 ---
-# <a name="registering-a-provider"></a>Registrar un proveedor
+# <a name="registering-a-provider"></a>Registro de un proveedor
 
-Antes de implementar el proveedor, primero debe registrar el proveedor con WMI. Al registrar el proveedor se define el tipo del proveedor y las clases que admite el proveedor. WMI solo puede tener acceso a proveedores registrados.
+Antes de implementar el proveedor, primero debe registrar el proveedor con WMI. El registro del proveedor define el tipo del proveedor y las clases que admite el proveedor. WMI solo puede acceder a proveedores registrados.
 
 > [!Note]  
-> Para obtener más información sobre cómo registrar un proveedor de MI, consulte [Cómo: registrar un proveedor de mi](/previous-versions/windows/desktop/wmi_v2/how-to-register-an-mi-provider).
+> Para obtener más información sobre cómo registrar un proveedor de MI, [vea Cómo: Registrar un proveedor de MI.](/previous-versions/windows/desktop/wmi_v2/how-to-register-an-mi-provider)
 
  
 
-Puede escribir el código del proveedor antes de registrar el proveedor. Sin embargo, es muy difícil depurar un proveedor que no está registrado con WMI. La determinación de las interfaces del proveedor también ayuda a describir el propósito y la estructura de un proveedor. Por lo tanto, el registro del proveedor le ayudará a diseñar el proveedor.
+Puede escribir el código del proveedor antes de registrar el proveedor. Sin embargo, es muy difícil depurar un proveedor que no está registrado con WMI. Determinar las interfaces del proveedor también ayuda a describir el propósito y la estructura de un proveedor. Por lo tanto, el registro del proveedor le ayuda a diseñar el proveedor.
 
 Solo los administradores pueden registrar o eliminar un proveedor.
 
-Un proveedor debe estar registrado para todos los distintos tipos de funciones de proveedor que realiza. Casi todos los proveedores proporcionan instancias de las clases que definen, pero también pueden proporcionar datos de propiedades, métodos, eventos o clases. El proveedor también puede registrarse como proveedor de consumidor de eventos o como proveedor de contadores de rendimiento. Se recomienda combinar toda la funcionalidad del proveedor en un proveedor, en lugar de tener muchos proveedores independientes para cada tipo. Un ejemplo es el [proveedor del registro del sistema](/previous-versions/windows/desktop/regprov/system-registry-provider), que proporciona métodos e instancias, y el [proveedor de cuota de disco](/previous-versions/windows/desktop/wmipdskq/disk-quota-provider), que proporciona instancias, métodos y eventos.
+Un proveedor debe estar registrado para todos los distintos tipos de funciones de proveedor que realiza. Casi todos los proveedores proporcionan instancias de clases que definen, pero también pueden proporcionar datos de propiedad, métodos, eventos o clases. El proveedor también se puede registrar como proveedor de consumidores de eventos o como proveedor de contadores de rendimiento. Se recomienda combinar toda la funcionalidad del proveedor en un proveedor en lugar de tener muchos proveedores independientes para cada tipo. Un ejemplo es el proveedor [del Registro](/previous-versions/windows/desktop/regprov/system-registry-provider)del sistema , que proporciona métodos e instancias, y el proveedor [de](/previous-versions/windows/desktop/wmipdskq/disk-quota-provider)cuota de disco , que proporciona instancias, métodos y eventos.
 
-Un proveedor debe estar registrado para todos los distintos tipos de funciones de proveedor que realiza. Casi todos los proveedores proporcionan instancias de las clases que definen, pero también pueden proporcionar datos de propiedades, métodos, eventos o clases. El proveedor también puede registrarse como proveedor de consumidor de eventos o como proveedor de contadores de rendimiento.
+Un proveedor debe estar registrado para todos los distintos tipos de funciones de proveedor que realiza. Casi todos los proveedores proporcionan instancias de clases que definen, pero también pueden proporcionar datos de propiedad, métodos, eventos o clases. El proveedor también se puede registrar como proveedor de consumidores de eventos o como proveedor de contadores de rendimiento.
 
-Se usa la misma instancia de [**\_ \_ Win32Provider**](--win32provider.md) para cada tipo de registro:
+Se usa la misma [**\_ \_ instancia de Win32Provider**](--win32provider.md) para cada tipo de registro:
 
--   [Registrar un proveedor de instancias](registering-an-instance-provider.md)
--   [Registrar un proveedor de clases](registering-a-class-provider.md)
+-   [Registro de un proveedor de instancias](registering-an-instance-provider.md)
+-   [Registro de un proveedor de clases](registering-a-class-provider.md)
 -   [Registrar un proveedor de métodos](registering-a-method-provider.md)
--   [Registrar un proveedor de eventos](registering-an-event-provider.md)
--   [Registrar un proveedor de consumidor de eventos](registering-an-event-consumer-provider.md)
--   [Crear un proveedor de instancias en un proveedor de High-Performance](making-an-instance-provider-into-a-high-performance-provider.md)
+-   [Registro de un proveedor de eventos](registering-an-event-provider.md)
+-   [Registro de un proveedor de consumidores de eventos](registering-an-event-consumer-provider.md)
+-   [Convertir un proveedor de instancias en un High-Performance de recursos](making-an-instance-provider-into-a-high-performance-provider.md)
 
-## <a name="example-creating-and-registering-an-instance-of-a-provider"></a>Ejemplo: crear y registrar una instancia de un proveedor
+## <a name="example-creating-and-registering-an-instance-of-a-provider"></a>Ejemplo: Crear y registrar una instancia de un proveedor
 
-En el ejemplo siguiente se muestra un archivo MOF que crea y registra una instancia del [proveedor del registro del sistema](/previous-versions/windows/desktop/regprov/system-registry-provider) en el \\ espacio de nombres root cimv2. Asigna el alias $Reg al proveedor para evitar la ruta de la longitud necesaria en los registros de instancias y métodos. Para obtener más información, vea [crear un alias](creating-an-alias.md).
+En el ejemplo siguiente se muestra un archivo MOF que crea y registra una instancia del proveedor del Registro del sistema en el espacio de nombres [](/previous-versions/windows/desktop/regprov/system-registry-provider) \\ cimv2 raíz. Asigna el alias $Reg al proveedor para evitar el nombre de ruta de acceso largo necesario en los registros de instancia y método. Para obtener más información, vea [Crear un alias](creating-an-alias.md).
 
 ``` syntax
 // Place the Registry provider in the root\cimv2 namespace
@@ -155,7 +155,7 @@ class StdRegProv
 };
 ```
 
-## <a name="example-registering-a-provider"></a>Ejemplo: registrar un proveedor
+## <a name="example-registering-a-provider"></a>Ejemplo: Registro de un proveedor
 
 En el procedimiento siguiente se describe cómo registrar un proveedor.
 
@@ -163,13 +163,13 @@ En el procedimiento siguiente se describe cómo registrar un proveedor.
 
 1.  Registre el proveedor como un servidor COM.
 
-    Si es necesario, puede que tenga que crear entradas del registro. Este proceso se aplica a todos los servidores COM y no está relacionado con WMI. Para obtener más información, vea la sección COM en la documentación del kit de desarrollo de software (SDK) de Microsoft Windows.
+    Si es necesario, es posible que tenga que crear entradas del Registro. Este proceso se aplica a todos los servidores COM y no está relacionado con WMI. Para más información, consulte la sección COM de la documentación de Microsoft Windows Software Development Kit (SDK).
 
-2.  Cree un archivo MOF que contenga instancias de [**\_ \_ Win32Provider**](--win32provider.md) y una instancia de una clase derivada directa o indirectamente de [**\_ \_ ProviderRegistration**](--providerregistration.md), como [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md). Solo los administradores pueden registrar o eliminar un proveedor mediante la creación de instancias de clases derivadas de **\_ \_ Win32Provider** o [**\_ \_ ProviderRegistration**](--providerregistration.md).
-3.  Establezca [**HostingModel**](--win32provider.md) en la instancia de **\_ \_ Win32Provider** según los valores de los [modelos de hospedaje](provider-hosting-and-security.md).
+2.  Cree un archivo MOF que contenga instancias de [**\_ \_ Win32Provider**](--win32provider.md) y una instancia de una clase derivada directa o indirectamente de [**\_ \_ ProviderRegistration,**](--providerregistration.md)como [**\_ \_ InstanceProviderRegistration.**](--instanceproviderregistration.md) Solo los administradores pueden registrar o eliminar un proveedor mediante la creación de instancias de clases derivadas de **\_ \_ Win32Provider** o [**\_ \_ ProviderRegistration**](--providerregistration.md).
+3.  Establezca [**HostingModel en**](--win32provider.md) la instancia de **\_ \_ Win32Provider** según los valores de [Modelos de hospedaje.](provider-hosting-and-security.md)
 
     > [!Note]  
-    > A menos que el proveedor requiera los privilegios elevados de la cuenta LocalSystem, la propiedad [**\_ \_ Win32Provider. HostingModel**](--win32provider.md) debe establecerse en "NetworkServiceHost". Para obtener más información, vea [hospedaje y seguridad de proveedores](provider-hosting-and-security.md).
+    > A menos que el proveedor requiera los privilegios elevados de la cuenta LocalSystem, la propiedad [**\_ \_ Win32Provider.HostingModel**](--win32provider.md) debe establecerse en "NetworkServiceHost". Para obtener más información, vea [Provider Hosting and Security](provider-hosting-and-security.md).
 
      
 
@@ -186,17 +186,17 @@ En el procedimiento siguiente se describe cómo registrar un proveedor.
 
     
 
-4.  Instancia de una clase derivada directa o indirectamente de [**\_ \_ ProviderRegistration**](--providerregistration.md), para describir la implementación lógica del proveedor. Un proveedor se puede registrar para varios tipos diferentes de funcionalidad. En el ejemplo anterior se registra RegProv como proveedor de instancias y métodos. Pero si RegProv admite la funcionalidad, también podría registrarse como proveedor de propiedades o eventos. En la tabla siguiente se enumeran las clases que registran la funcionalidad del proveedor.
+4.  Instancia de una clase derivada directa o indirectamente de [**\_ \_ ProviderRegistration**](--providerregistration.md)para describir la implementación lógica del proveedor. Un proveedor se puede registrar para varios tipos diferentes de funcionalidad. En el ejemplo anterior se registra RegProv como proveedor de instancias y métodos. Pero si RegProv admite la funcionalidad, también se podría registrar como una propiedad o un proveedor de eventos. En la tabla siguiente se enumeran las clases que registran la funcionalidad del proveedor.
 
     
 
     | Clases de registro de proveedor                                                        | Descripción                                                                         |
     |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-    | [**\_\_InstanceProviderRegistration**](--instanceproviderregistration.md)           | Registra un [proveedor de instancias](registering-an-instance-provider.md).             |
-    | [**\_\_EventProviderRegistration**](--eventproviderregistration.md)                 | Registra un [proveedor de eventos](registering-an-event-provider.md).                   |
-    | [**\_\_EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) | Registra un [proveedor de consumidor de eventos](registering-an-event-consumer-provider.md). |
-    | [**\_\_MethodProviderRegistration**](--methodproviderregistration.md)               | Registra un [proveedor de métodos](registering-an-event-consumer-provider.md).          |
-    | [**\_\_PropertyProviderRegistration**](--propertyproviderregistration.md)           | Registra un [proveedor de propiedades](registering-a-property-provider.md).               |
+    | [**\_\_InstanceProviderRegistration**](--instanceproviderregistration.md)           | Registra un proveedor [de instancias](registering-an-instance-provider.md).             |
+    | [**\_\_EventProviderRegistration**](--eventproviderregistration.md)                 | Registra un proveedor [de eventos](registering-an-event-provider.md).                   |
+    | [**\_\_EventConsumerProviderRegistration**](--eventconsumerproviderregistration.md) | Registra un proveedor [de consumidores de eventos](registering-an-event-consumer-provider.md). |
+    | [**\_\_MethodProviderRegistration**](--methodproviderregistration.md)               | Registra un proveedor [de métodos](registering-an-event-consumer-provider.md).          |
+    | [**\_\_PropertyProviderRegistration**](--propertyproviderregistration.md)           | Registra un proveedor [de propiedades](registering-a-property-provider.md).               |
 
     
 
@@ -206,11 +206,11 @@ En el procedimiento siguiente se describe cómo registrar un proveedor.
 
     Normalmente, debe colocar el archivo en el directorio de instalación del proveedor.
 
-6.  Compile el archivo MOF mediante [MOFCOMP](mofcomp.md) o la interfaz [**IMofCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) .
+6.  Compile el archivo MOF mediante [mofcomp](mofcomp.md) o la [**interfaz IMofCompiler.**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler)
 
-    Para obtener más información, vea [compilar archivos MOF](compiling-mof-files.md).
+    Para obtener más información, [vea Compilar archivos MOF](compiling-mof-files.md).
 
-    **Windows 8 y Windows Server 2012:** Al instalar proveedores, tanto [**MOFCOMP**](mofcomp.md) como la interfaz [**IMofCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) tratan los \[ \] calificadores de clave y \[ estáticos \] como true si están presentes, independientemente de sus valores reales. Otros calificadores se tratan como false si están presentes pero no se establecen explícitamente en true.
+    **Windows 8 y Windows Server 2012:** Al instalar proveedores, [**tanto mofcomp**](mofcomp.md) como la interfaz [**IMofCompiler**](/windows/desktop/api/Wbemcli/nn-wbemcli-imofcompiler) tratan los calificadores Key y Static como true si están \[ \] \[ presentes, independientemente de sus \] valores reales. Otros calificadores se tratan como false si están presentes, pero no se establecen explícitamente en true.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -219,7 +219,7 @@ En el procedimiento siguiente se describe cómo registrar un proveedor.
 [Desarrollar un proveedor WMI](developing-a-wmi-provider.md)
 </dt> <dt>
 
-[Configuración de descriptores de seguridad de espacio](setting-namespace-security-descriptors.md)
+[Establecer descriptores de seguridad namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
 [Protección del proveedor](securing-your-provider.md)

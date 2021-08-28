@@ -1,8 +1,8 @@
 ---
-description: La \_ Asociación FromDirectorySpecification de CIM identifica el directorio de origen para la acción de archivo.
+description: La \_ asociación FromDirectorySpecification de CIM identifica el directorio de origen para la acción de archivo.
 ms.assetid: 031ff95f-aa68-4b05-92a6-97a5e0d8956f
 ms.tgt_platform: multiple
-title: CIM_FromDirectorySpecification (clase)
+title: CIM_FromDirectorySpecification clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7690514b46d89bdf1aa926438456c49598034700
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bcb08f58e744e9926a3c4734ac1b8ad4fb75e3288b96ae0c0a7622c5e4109b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320915"
 ---
-# <a name="cim_fromdirectoryspecification-class"></a>\_Clase FromDirectorySpecification de CIM
+# <a name="cim_fromdirectoryspecification-class"></a>Cim \_ FromDirectorySpecification (clase)
 
-La **Asociación \_ FromDirectorySpecification de CIM** identifica el directorio de origen para la acción de archivo. Cuando se usa esta asociación, se supone que el directorio de origen ya existe. Esta asociación no puede existir con una asociación [**\_ FromDirectoryAction de CIM**](cim-fromdirectoryaction.md) ; una acción de archivo solo puede incluir un único directorio de origen.
+La **\_ asociación FromDirectorySpecification** de CIM identifica el directorio de origen para la acción de archivo. Cuando se usa esta asociación, se supone que el directorio de origen ya existe. Esta asociación no puede existir con una [**asociación \_ FromDirectoryAction de CIM;**](cim-fromdirectoryaction.md) una acción de archivo solo puede implicar un único directorio de origen.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,26 +47,26 @@ class CIM_FromDirectorySpecification
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ FromDirectorySpecification** tiene estos tipos de miembros:
+La **clase \_ FromDirectorySpecification** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ FromDirectorySpecification** tiene estas propiedades.
+La **clase \_ FromDirectorySpecification** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **FileName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ FileAction**
+Tipo de datos: **\_ CIM FileAction**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**mín**](/windows/desktop/WmiSdk/standard-qualifiers) . (0)
+Calificadores: [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia al nombre de archivo.
@@ -76,35 +76,35 @@ Referencia al nombre de archivo.
 **SourceDirectory**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ DirectorySpecification**
+Tipo de datos: **Cim \_ DirectorySpecification**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**Máximo**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Mínimo**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Referencia al directorio de origen.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

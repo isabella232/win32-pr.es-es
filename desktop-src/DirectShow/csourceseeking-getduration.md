@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3d5b961ad62d65c1f728af71e82de1373ea20b1f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d8520b39ca62d70152b544e8ae2f146a237c388d93e4786bb13371ad223fa73f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084045"
 ---
 # <a name="csourceseekinggetduration-method"></a>Método CSourceSeeking.GetDuration
 
@@ -57,7 +57,7 @@ Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 
 | Código devuelto                                                                               | Descripción                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>      | Correcto<br/>                |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Success<br/>                |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl> | **Valor de** puntero NULL<br/> |
 
 
@@ -74,12 +74,12 @@ La variable miembro [**CSourceSeeking::m \_ rtDuration**](csourceseeking-m-rtdur
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

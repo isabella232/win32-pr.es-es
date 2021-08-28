@@ -4,12 +4,12 @@ description: Describe los pasos para crear una ventana para la aplicación que s
 ms.assetid: 72a4b076-1cf0-4dc9-bd75-43b5173fc2a0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dd45b4b654556fc251575410cc11f9b66961263
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 45d8ebc6a7621623307d9b2cfd953a5fa3f3387fbacb3faeb345375d925044cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259965"
 ---
 # <a name="displaying-properly-on-a-high-dpi-display"></a>Mostrar correctamente en una pantalla con valores altos de PPP
 
@@ -27,11 +27,11 @@ La [**interfaz ID2D1Factory proporciona**](/windows/win32/api/d2d1/nn-d2d1-id2d1
 
 ... donde *PPP horizontal* es el valor retrived by [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) y *el valor predeterminado de PPP horizontal* es 96. La fórmula es similar para el tamaño vertical:
 
-<*PPP vertical* >  \*  < *height*, en píxeles>/<*ppp vertical predeterminado*>
+<*PPP vertical* >  \*  < *height*, en píxeles> o <*ppp vertical predeterminado*>
 
-... donde *PPP vertical* es el valor recuperado por el método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) y *ppp vertical predeterminado* es 96.
+... donde *PPP vertical* es el valor recuperado por el método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) y *el valor predeterminado de PPP vertical* es 96.
 
-El código siguiente usa el [**método GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) para recuperar el VALOR DE PPP del sistema y, a continuación, crea una ventana 640 × 480, escalada a ppp del sistema.
+El código siguiente usa el método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-getdesktopdpi) para recuperar el VALOR DE PPP del sistema y, a continuación, crea una ventana 640 × 480, escalada a ppp del sistema.
 
 
 ```C++
@@ -64,13 +64,13 @@ El código siguiente usa el [**método GetDesktopDpi**](/windows/win32/api/d2d1/
 
 > [!Note]
 >
-> A partir Windows 8, puede usar la clase [**Windows::Graphics::D isplay::D isplayProperties**](/uwp/api/Windows.Graphics.Display.DisplayProperties) para obtener el valor de PPP del sistema.
+> A partir Windows 8, puede usar la [**clase Windows::Graphics::D isplay::D isplayProperties**](/uwp/api/Windows.Graphics.Display.DisplayProperties) para obtener el valor de PPP del sistema.
 
  
 
 ## <a name="step-2-declare-that-the-application-is-dpi-aware"></a>Paso 2: Declarar que la aplicación está DPI-Aware
 
-Cuando una aplicación se declara compatible con PPP, es una instrucción que especifica que la aplicación se comporta bien en la configuración de PPP de hasta 200 PPP. En Windows Vista y Windows 7, cuando se habilita la virtualización de PPP, las aplicaciones que no tienen reconocimiento de PPP se escalan y las aplicaciones reciben datos virtualizados de las API del sistema, como la [**función GetSystemMetric.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Para declarar que la aplicación es compatible con PPP, complete los pasos siguientes.
+Cuando una aplicación se declara compatible con PPP, es una instrucción que especifica que la aplicación se comporta bien en la configuración de PPP de hasta 200 PPP. En Windows Vista y Windows 7, cuando se habilita la virtualización de PPP, se escalan las aplicaciones que no tienen reconocimiento de PPP y las aplicaciones reciben datos virtualizados de las API del sistema, como la [**función GetSystemMetric.**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Para declarar que la aplicación es compatible con PPP, complete los pasos siguientes.
 
 1.  Cree un archivo denominado DeclareDPIAware.manifest.
 2.  Copie el siguiente xml en el archivo y guárdelo:

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 9223f2d5bb25d7b950dba8fb19c152cf3184af93
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c680aa8a4e4df63286f4ca5e5b73adb5de038324708dff4c0aab386b39d0f65d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316815"
 ---
 # <a name="ec_dvd_vobu_offset"></a>Desplazamiento \_ \_ VOBU de DVD de \_ EC
 

@@ -1,7 +1,7 @@
 ---
 description: Puntero al último nodo de la lista.
 ms.assetid: e72e4dab-da64-472a-b7bd-6af99883f703
-title: 'Miembro CBaseList:: m_pLast (Wxlist. h)'
+title: CBaseList::m_pLast miembro (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3fd3e7cbb2a8f121c21f2e845acadf1462bfa433
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 659dc3ab3f8979a0141b827cb4c66b27d5e241f71c65c9949a7ca611d62ffdfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084515"
 ---
-# <a name="cbaselistm_plast-member"></a>Miembro pLast CBaseList:: m \_
+# <a name="cbaselistm_plast-member"></a>CBaseList::m \_ Miembro pLast
 
 Puntero al último nodo de la lista.
 
@@ -42,8 +42,8 @@ CNode *m_pLast;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CNode *m_pLast;
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

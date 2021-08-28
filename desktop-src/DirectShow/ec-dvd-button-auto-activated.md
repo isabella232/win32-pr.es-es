@@ -1,7 +1,7 @@
 ---
-description: Indica que se ha activado automáticamente un botón de menú de DVD según las instrucciones del disco. Esto se produce cuando se agota el tiempo de espera de un menú y el disco ha especificado un botón para que se active automáticamente.
+description: Indica que un botón de menú DVD se ha activado automáticamente según las instrucciones del disco. Esto se produce cuando se produce un tiempo de espera de un menú y el disco ha especificado un botón para activarse automáticamente.
 ms.assetid: ecd79c2a-1717-473d-b111-2b1db2ca4cc1
-title: EC_DVD_BUTTON_AUTO_ACTIVATED (Dvdevcode. h)
+title: EC_DVD_BUTTON_AUTO_ACTIVATED (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 6a30ddcff32140165d5cb6cb648df84b3360a1b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cc018630d7a994c01b81adea4b4cf567666a76625b4b3b13fbf4118b8e8a1fd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965895"
 ---
-# <a name="ec_dvd_button_auto_activated"></a>botón de DVD de EC \_ \_ \_ \_ activado automáticamente
+# <a name="ec_dvd_button_auto_activated"></a>BOTÓN \_ DE DVD DE EC ACTIVADO \_ \_ \_ AUTOMÁTICAMENTE
 
-Indica que se ha activado automáticamente un botón de menú de DVD según las instrucciones del disco. Esto se produce cuando se agota el tiempo de espera de un menú y el disco ha especificado un botón para que se active automáticamente.
+Indica que un botón de menú DVD se ha activado automáticamente según las instrucciones del disco. Esto se produce cuando se produce un tiempo de espera de un menú y el disco ha especificado un botón para activarse automáticamente.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,7 +31,7 @@ Indica que se ha activado automáticamente un botón de menú de DVD según las 
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor **DWORD** que indica el botón que se activó.
+**Valor DWORD** que indica el botón que se activó.
 
 </dd> <dt>
 
@@ -42,7 +42,7 @@ Cero.
 
 </dd> </dl>
 
-Este evento se desencadena en todos los dominios.
+Este evento se genera en todos los dominios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Este evento se desencadena en todos los dominios.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

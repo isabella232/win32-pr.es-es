@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c4a71aaaffe7ed11429efa67b6065f94ecd154d0
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 38be37d9d11e40f336eab58691d18113664ff49138704ea563efe083800d7c14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096605"
 ---
 # <a name="id3dx10meshbuffermap-method"></a>Método ID3DX10MeshBuffer::Map
 
@@ -88,7 +88,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

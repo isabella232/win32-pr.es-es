@@ -1,10 +1,10 @@
 - name: Administrador de conexiones de Windows
   href: windows-connection-manager-portal.md
   items:
-    - name: Referencia del administrador de conexiones de Windows
+    - name: Windows Connection Manager referencia
       href: windows-connection-manager-reference.md
       items:
-        - name: Tipos enumerados del administrador de conexiones de Windows
+        - name: Windows Connection Manager tipos enumerados
           href: wcm-enumerated-types.md
           items:
             - name: WCM_CONNECTION_COST
@@ -15,7 +15,7 @@
               href: /windows/win32/api/Wcmapi/ne-wcmapi-wcm_media_type
             - name: WCM_PROPERTY
               href: /windows/win32/api/Wcmapi/ne-wcmapi-wcm_property
-        - name: Funciones del administrador de conexiones de Windows
+        - name: Windows Connection Manager Functions
           href: wcm-functions.md
           items:
             - name: WcmFreeMemory
@@ -28,7 +28,7 @@
               href: /windows/desktop/api/Wcmapi/nf-wcmapi-wcmsetprofilelist
             - name: WcmSetProperty
               href: /windows/desktop/api/Wcmapi/nf-wcmapi-wcmsetproperty
-        - name: Estructuras de administrador de conexiones de Windows
+        - name: Windows Connection Manager estructuras
           href: wcm-structures.md
           items:
             - name: WCM_BILLING_CYCLE_INFO

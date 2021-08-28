@@ -1,30 +1,30 @@
 ---
-title: Asignar formatos de entrada
-description: Asignar formatos de entrada
+title: Asignación de formatos de entrada
+description: Asignación de formatos de entrada
 ms.assetid: 44c4ed7e-b35e-4ab5-9975-021f343dab6a
 keywords:
-- Advanced Systems Format (ASF), asignar formatos de entrada
-- ASF (formato de sistemas avanzados), asignar formatos de entrada
-- perfiles, asignar formatos de entrada
-- códecs, asignar formatos de entrada
+- Formato de sistemas avanzados (ASF), asignación de formatos de entrada
+- ASF (formato de sistemas avanzados), asignación de formatos de entrada
+- perfiles, asignación de formatos de entrada
+- códecs, asignación de formatos de entrada
 - Formato de sistemas avanzados (ASF), asignaciones de formato de entrada
 - ASF (formato de sistemas avanzados), asignaciones de formato de entrada
-- perfiles, asignaciones de formato de entrada
+- profiles,input format assignments
 - códecs, asignaciones de formato de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c6ad1bcdf161b335d9367d7de4df84b7eb2e6ea
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: f6f87ec74bc5d3750d65ecc91e2df4640a6ed02c9e9a9425b27897e70f825983
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104532956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840335"
 ---
-# <a name="assigning-input-formats"></a>Asignar formatos de entrada
+# <a name="assigning-input-formats"></a>Asignación de formatos de entrada
 
-Una vez identificado el formato de entrada que coincide con los datos, puede establecerlo para que lo use el escritor llamando a [**IWMWriter:: SetInputProps**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setinputprops).
+Cuando haya identificado el formato de entrada que coincida con los datos, puede establecerlo para que lo use el escritor llamando a [**IWMWriter::SetInputProps**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setinputprops).
 
-En el caso de las secuencias de vídeo, debe establecer el tamaño de los fotogramas en los ejemplos de entrada. En el ejemplo de código siguiente se muestra cómo configurar y establecer una entrada de vídeo. Usa la función **FindInputFormat** definida en la sección [para enumerar los formatos de entrada](to-enumerate-input-formats.md) para obtener el formato de entrada para el vídeo RGB de 24 bits. Para obtener más información sobre el uso de este código, vea [usar los ejemplos de código](using-the-code-examples.md).
+Para las secuencias de vídeo, debe establecer el tamaño de los fotogramas en los ejemplos de entrada. En el código de ejemplo siguiente se muestra cómo configurar y establecer una entrada de vídeo. Usa la función **FindInputFormat** definida en la sección [Para enumerar](to-enumerate-input-formats.md) formatos de entrada para obtener el formato de entrada del vídeo RGB de 24 bits. Para obtener más información sobre el uso de este código, vea [Usar los ejemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -114,9 +114,9 @@ Exit:
 [**Trabajar con entradas**](working-with-inputs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

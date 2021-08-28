@@ -4,12 +4,12 @@ ms.assetid: 7f25c823-61f2-4f26-91d5-580c21beec31
 title: System.Document. Versión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb090e9fe2fc56636ffd3509b060aae46cc1a6b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0e298d25e277086f65cdc6d33d6a145007250bb7bfe74e19c55bc5d4e40b3d9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010575"
 ---
 # <a name="systemdocumentversion"></a>System.Document. Versión
 

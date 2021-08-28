@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da7acc706017c0346e5a701144d60bcbbfd7cf40
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 60920995e72fdc1f45dcc6c083be7bcc1a91b3fa
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983798"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466412"
 ---
 # <a name="jet_sesid"></a>JET_SESID
 
@@ -41,11 +41,11 @@ JET_SESID
 
 Null **o** [JET_sesidNil](./invalid-handle-constants.md) pueden usarse para indicar un identificador de sesión no válido.
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
 Una sesión es el contexto de transacción del motor de base de datos. Se puede usar para iniciar, confirmar o anular transacciones que afectan a la visibilidad y durabilidad de los cambios realizados por esta u otras sesiones.
 
-Se puede iniciar una transacción [mediante JetBeginTransaction.](./jetbegintransaction-function.md) Se puede crear una sesión mediante [JetBeginSession.](./jetbeginsession-function.md) El número máximo de sesiones que se pueden crear en cualquier momento se controla mediante JET_paramMaxSessions [,](./resource-parameters.md)que se puede configurar mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+Se puede iniciar una transacción [mediante JetBeginTransaction](./jetbegintransaction-function.md). Se puede crear una sesión mediante [JetBeginSession.](./jetbeginsession-function.md) El número máximo de sesiones que se pueden crear en cualquier momento se controla mediante JET_paramMaxSessions [,](./resource-parameters.md)que se puede configurar mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
 Una sesión finaliza explícitamente mediante una llamada a [JetEndSession](./jetendsession-function.md) o finaliza implícitamente mediante una llamada a [JetTerm](./jetterm-function.md).
 
@@ -54,11 +54,7 @@ Cada sesión solo puede ser utilizada por un subproceso a la vez. Además, el co
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

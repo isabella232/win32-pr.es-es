@@ -1,29 +1,29 @@
 ---
 description: En el ejemplo siguiente se asocia una función de llamada a procedimiento asincrónico (APC), también conocida como rutina de finalización, con un temporizador que se puede esperar cuando se establece el temporizador.
 ms.assetid: aea3c080-caf2-4c16-adc5-51357a0340b8
-title: Usar temporizadores que esperan con una llamada a procedimiento asincrónica
+title: Usar temporizadores que se pueden esperar con una llamada a procedimiento asincrónico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 628288b1c5e1ce7c83e104cf6daa9e6fdcc3eb9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62436011a3da0ac17525a0ce977e7bcd25382c5c267b62b9c972381e0f28562d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661155"
 ---
-# <a name="using-waitable-timers-with-an-asynchronous-procedure-call"></a>Usar temporizadores que esperan con una llamada a procedimiento asincrónica
+# <a name="using-waitable-timers-with-an-asynchronous-procedure-call"></a>Usar temporizadores que se pueden esperar con una llamada a procedimiento asincrónico
 
-En el ejemplo siguiente se asocia una función de [llamada a procedimiento asincrónico](asynchronous-procedure-calls.md) (APC), también conocida como rutina de finalización, con un temporizador que se puede [esperar](waitable-timer-objects.md) cuando se establece el temporizador. La dirección de la rutina de finalización es el cuarto parámetro de la función [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) . El quinto parámetro es un puntero void que puede usar para pasar argumentos a la rutina de finalización.
+En el ejemplo siguiente se asocia una función [de](asynchronous-procedure-calls.md) llamada a procedimiento asincrónico (APC), también conocida como rutina de finalización, [con](waitable-timer-objects.md) un temporizador que se puede esperar cuando se establece el temporizador. La dirección de la rutina de finalización es el cuarto parámetro de la [**función SetWaitableTimer.**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer) El quinto parámetro es un puntero void que puede usar para pasar argumentos a la rutina de finalización.
 
-La rutina de finalización se ejecutará en el mismo subproceso que llamó a [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer). Este subproceso debe estar en un estado de alerta para ejecutar la rutina de finalización. Para ello, se llama a la función [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) , que es una función de alerta.
+El mismo subproceso que llamó a [**SetWaitableTimer**](/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer)ejecutará la rutina de finalización. Este subproceso debe estar en un estado de alerta para ejecutar la rutina de finalización. Para ello, llama a la [**función SleepEx,**](/windows/win32/api/synchapi/nf-synchapi-sleepex) que es una función que se puede alertar.
 
-Cada subproceso tiene una cola APC. Si hay una entrada en la cola APC del subproceso en el momento en que se llama a una de las funciones de alerta, el subproceso no se pone en suspensión. En su lugar, se quita la entrada de la cola APC y se llama a la rutina de finalización.
+Cada subproceso tiene una cola de APC. Si hay una entrada en la cola de APC del subproceso en el momento en que se llama a una de las funciones que se pueden alertar, el subproceso no se pone en modo de suspensión. En su lugar, la entrada se quita de la cola de APC y se llama a la rutina de finalización.
 
-Si no existe ninguna entrada en la cola APC, el subproceso se suspende hasta que se cumple la espera. La espera se puede satisfacer mediante la adición de una entrada a la cola APC, un tiempo de espera o un controlador que se señaliza. Si una entrada satisface la espera en la cola APC, el subproceso se activa y se llama a la rutina de finalización. En este caso, el valor devuelto de la función es la **\_ \_ finalización de la e/s de espera**.
+Si no existe ninguna entrada en la cola de APC, el subproceso se suspende hasta que se cumple la espera. La espera se puede satisfacer agregando una entrada a la cola de APC, un tiempo de espera o un identificador que se señala. Si una entrada de la cola de APC satisface la espera, el subproceso se despeda y se llama a la rutina de finalización. En este caso, el valor devuelto de la función es **WAIT \_ IO \_ COMPLETION.**
 
-Una vez ejecutada la rutina de finalización, el sistema comprueba si hay otra entrada en la cola APC para procesar. Una función que se debe alertar solo devolverá una vez procesadas todas las entradas APC. Por lo tanto, si las entradas se agregan a la cola APC más rápido de lo que se pueden procesar, es posible que una llamada a una función de alerta nunca devuelva. Esto es especialmente posible con los temporizadores que esperan, si el período es más corto que la cantidad de tiempo necesario para ejecutar la rutina de finalización.
+Después de ejecutar la rutina de finalización, el sistema comprueba si hay otra entrada en la cola de APC que se va a procesar. Una función que admite alertas solo devolverá una vez procesadas todas las entradas de APC. Por lo tanto, si las entradas se agregan a la cola de APC más rápido de lo que se pueden procesar, es posible que nunca se devuelva una llamada a una función que puede alertar. Esto es especialmente posible con los temporizadores que se pueden esperar, si el período es más corto que la cantidad de tiempo necesaria para ejecutar la rutina de finalización.
 
-Cuando se usa un temporizador que se puede esperar con una APC, el subproceso que establece el temporizador no debe esperar en el identificador del temporizador. Al hacerlo, haría que el subproceso se reactivara como resultado de la señalización del temporizador en lugar de como resultado de la adición de una entrada a la cola APC. Como resultado, el subproceso ya no se encuentra en un estado de alerta y no se llama a la rutina de finalización. En el código siguiente, la llamada a [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) pone al subproceso cuando se agrega una entrada a la cola APC del subproceso después de que el temporizador se haya establecido en el estado señalado.
+Cuando se usa un temporizador que se puede esperar con un APC, el subproceso que establece el temporizador no debe esperar en el identificador del temporizador. Al hacerlo, haría que el subproceso se reactivase como resultado de que el temporizador se señalizase en lugar de como resultado de una entrada que se agrega a la cola de APC. Como resultado, el subproceso ya no está en estado de alerta y no se llama a la rutina de finalización. En el código siguiente, la llamada a [**SleepEx**](/windows/win32/api/synchapi/nf-synchapi-sleepex) llama al subproceso cuando se agrega una entrada a la cola de APC del subproceso después de establecer el temporizador en el estado señalado.
 
 
 ```C++
@@ -130,7 +130,7 @@ int main( void )
 
 <dl> <dt>
 
-[Usar objetos de temporizador de espera](using-waitable-timer-objects.md)
+[Usar objetos de temporizador que se pueden esperar](using-waitable-timer-objects.md)
 </dt> </dl>
 
  

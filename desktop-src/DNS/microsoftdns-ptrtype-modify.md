@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_PTRType
+title: Método Modify de la MicrosoftDNS_PTRType clase
 description: El método Modify actualiza un registro de recursos de puntero (PTR).
 ms.assetid: 801a6bc9-e384-4912-a73a-6b04a1655002
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_PTRType clase
-- MicrosoftDNS_PTRType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_PTRType clase
+- MicrosoftDNS_PTRType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 840bf100ea5cdbbb606837e90d8fa9fcebab57fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cbda85610e34fa6208bac5f8b9ba196be1b24fcadf8a53d87cea627718e9bd04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432834"
 ---
-# <a name="modify-method-of-the-microsoftdns_ptrtype-class"></a>Método Modify de la \_ clase MicrosoftDNS PTRType
+# <a name="modify-method-of-the-microsoftdns_ptrtype-class"></a>Método Modify de la clase MicrosoftDNS \_ PTRType
 
-El método **Modify** actualiza un registro de recursos de puntero (PTR).
+El **método Modify** actualiza un registro de recursos de puntero (PTR).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -54,11 +54,11 @@ Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 *PTRDomainName* \[ en, opcional\]
 </dt> <dd>
 
-Dirección del nombre de dominio del registro PTR.
+Dirección de nombre de dominio del registro PTR.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Referencia al objeto modificado.
@@ -71,7 +71,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -93,10 +93,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ PTRType**](microsoftdns-ptrtype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS PTRType**](microsoftdns-ptrtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase MicrosoftDNS \_ PTRType**](microsoftdns-ptrtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

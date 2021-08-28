@@ -1,17 +1,17 @@
 ---
 description: Nombre descriptivo del dispositivo serie.
 ms.assetid: 22bdef67-dc40-4ba9-80f1-8c4477580f1a
-title: System. DeviceInterface. serial. PortName
+title: System.DeviceInterface.Serial.PortName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 547409929543b3ec95de6f101babf7ed5bf464d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70233fd1fbc036725c8d6924aec772cbcf251f3ed74f50dcab789252a24c3823
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010985"
 ---
-# <a name="systemdeviceinterfaceserialportname"></a>System. DeviceInterface. serial. PortName
+# <a name="systemdeviceinterfaceserialportname"></a>System.DeviceInterface.Serial.PortName
 
 Nombre descriptivo del dispositivo serie
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

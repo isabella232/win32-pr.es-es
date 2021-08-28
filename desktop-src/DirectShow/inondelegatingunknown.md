@@ -1,7 +1,7 @@
 ---
-description: La interfaz INonDelegatingUnknown es una versión de IUnknown cuyo nombre se ha cambiado para habilitar la compatibilidad con las interfaces IUnknown no delegar y delegar en el mismo objeto COM.
+description: La interfaz INonDelegatingUnknown es una versión de IUnknown cuyo nombre se ha cambiado para habilitar la compatibilidad con interfaces IUnknown no delegando y delegando en el mismo objeto COM.
 ms.assetid: a2faf9d1-2130-4c6c-8fcd-3e118d592b7f
-title: INonDelegatingUnknown (ComBase. h)
+title: INonDelegatingUnknown (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 13e93d5ba083706ee361addeb4db2157471cbe25
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f733ba28af1b4ecb7fc0a52852b4d8663fddf1df07572c409136a9aa963ba076
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051615"
 ---
 # <a name="inondelegatingunknown"></a>INonDelegatingUnknown
 
-La `INonDelegatingUnknown` interfaz es una versión de **IUnknown** cuyo nombre se ha cambiado para habilitar la compatibilidad con las interfaces **IUnknown** que no se delegan y que delegan en el mismo objeto com.
+La interfaz es una versión de IUnknown cuyo nombre se ha cambiado para habilitar la compatibilidad con las `INonDelegatingUnknown` interfaces **IUnknown** no delegando y delegando en el mismo objeto COM. 
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ interface INonDelegatingUnknown
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar `INonDelegatingUnknown` para herencia múltiple, realice los pasos siguientes.
+Para usar `INonDelegatingUnknown` para la herencia múltiple, realice los pasos siguientes.
 
 1.  Derive la clase de una interfaz, por ejemplo, IMyInterface.
-2.  Incluya [**declare \_ IUNKNOWN**](declare-iunknown.md) en la definición de clase para declarar implementaciones de **QueryInterface**, **AddRef** y **Release** que llamen al desconocido externo.
-3.  Invalide **NonDelegatingQueryInterface** para exponer IMyInterface con código como el siguiente:
+2.  Incluya [**DECLARE \_ IUNKNOWN en**](declare-iunknown.md) la definición de clase para declarar implementaciones de **QueryInterface,** **AddRef** y **Release** que llaman al desconocido externo.
+3.  Invalide **NonDelegatingQueryInterface para** exponer IMyInterface con código como el siguiente:
     ```C++
          if (riid == IID_IMyInterface) {
              return GetInterface((IMyInterface *) this, ppv);
@@ -60,11 +60,11 @@ Para usar `INonDelegatingUnknown` para herencia múltiple, realice los pasos sig
 
 4.  Declare e implemente las funciones miembro de IMyInterface.
 
-Para usar `INonDelegatingUnknown` para las interfaces anidadas, realice los pasos siguientes:
+Para usar `INonDelegatingUnknown` para interfaces anidadas, realice los pasos siguientes:
 
 1.  Declare una clase derivada de [**CUnknown**](cunknown.md).
-2.  Incluya [**declare \_ IUNKNOWN**](declare-iunknown.md) en la definición de clase.
-3.  Invalide **NonDelegatingQueryInterface** para exponer IMyInterface con el código como el siguiente:
+2.  Incluya [**DECLARE \_ IUNKNOWN en**](declare-iunknown.md) la definición de clase.
+3.  Invalide **NonDelegatingQueryInterface para** exponer IMyInterface con el código como el siguiente:
     ```C++
          if (riid == IID_IMyInterface) {
              return GetInterface((IMyInterface *) this, ppv);
@@ -75,10 +75,10 @@ Para usar `INonDelegatingUnknown` para las interfaces anidadas, realice los paso
 
     
 
-4.  Implemente las funciones miembro de IMyInterface. Use [**CUnknown:: GetOwner**](cunknown-getowner.md) para tener acceso a la clase de objeto com.
-5.  En la clase de objeto COM, haga que la clase anidada sea Friend de la clase de objeto COM y declare una instancia de la clase anidada como miembro de la clase de objeto COM.
+4.  Implemente las funciones miembro de IMyInterface. Use [**CUnknown::GetOwner para**](cunknown-getowner.md) tener acceso a la clase de objeto COM.
+5.  En la clase de objeto COM, haga que la clase anidada sea un amigo de la clase de objeto COM y declare una instancia de la clase anidada como miembro de la clase de objeto COM.
 
-Dado que siempre debe pasar el Unknown externo y un **HRESULT** al constructor [**CUnknown**](cunknown.md) , no puede usar un constructor predeterminado. Tiene que convertir la variable miembro en un puntero a la clase y realizar una nueva llamada en el constructor para crearla realmente.
+Dado que siempre debe pasar el elemento desconocido externo y **un HRESULT** al constructor [**CUnknown,**](cunknown.md) no puede usar un constructor predeterminado. Tiene que convertir la variable miembro en un puntero a la clase y realizar una nueva llamada en el constructor para crearla realmente.
 
 Invalide **NonDelegatingQueryInterface** con código como el siguiente:
 
@@ -94,7 +94,7 @@ Invalide **NonDelegatingQueryInterface** con código como el siguiente:
 
 
 
-Puede tener clases mixtas que admitan algunas interfaces mediante herencia múltiple y algunas interfaces a través de clases anidadas.
+Puede tener clases mixtas que admitan algunas interfaces a través de la herencia múltiple y algunas interfaces a través de clases anidadas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ Puede tener clases mixtas que admitan algunas interfaces mediante herencia múlt
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -111,7 +111,7 @@ Puede tener clases mixtas que admitan algunas interfaces mediante herencia múlt
 
 <dl> <dt>
 
-[**Funciones auxiliares de COM**](com-helper-functions.md)
+[**Funciones auxiliares COM**](com-helper-functions.md)
 </dt> </dl>
 
  

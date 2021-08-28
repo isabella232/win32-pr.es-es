@@ -1,19 +1,19 @@
 ---
-title: Funciones de Sistema de archivos distribuido
-description: A continuación se muestran las funciones de Sistema de archivos distribuido (DFS).
+title: Sistema de archivos distribuido Functions
+description: Estas son las funciones Sistema de archivos distribuido (DFS).
 ms.assetid: 8f86b717-fe26-4550-8b71-8f7df5ca6022
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 463c085115f6d3e88f9a3be80a890caa0aacb340
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: da3fd41879293f376dfdb3d769d5152b2e747fc6e387f8f9538854d4d3e06e7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096725"
 ---
-# <a name="distributed-file-system-functions"></a>Funciones de Sistema de archivos distribuido
+# <a name="distributed-file-system-functions"></a>Sistema de archivos distribuido Functions
 
-A continuación se muestran las funciones de Sistema de archivos distribuido (DFS).
+Estas son las funciones Sistema de archivos distribuido (DFS).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,7 +21,7 @@ A continuación se muestran las funciones de Sistema de archivos distribuido (DF
 
 [NetDfsAdd](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsadd)
 </dt> <dd>
-Crea un nuevo vínculo de Sistema de archivos distribuido (DFS) o agrega destinos a un vínculo existente en un espacio de nombres DFS.
+Crea un nuevo vínculo Sistema de archivos distribuido (DFS) o agrega destinos a un vínculo existente en un espacio de nombres DFS.
 
 </dd> <dt>
 
@@ -39,31 +39,31 @@ Crea un espacio de nombres DFS independiente o basado en dominio o agrega un nue
 
 [NetDfsAddStdRoot](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsaddstdroot)
 </dt> <dd>
-Crea un nuevo espacio de nombres de Sistema de archivos distribuido independiente (DFS).
+Crea un nuevo espacio de nombres Sistema de archivos distribuido independiente (DFS).
 
 </dd> <dt>
 
 [NetDfsEnum](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsenum)
 </dt> <dd>
-Enumera los espacios de nombres de Sistema de archivos distribuido (DFS) hospedados en un servidor o vínculos DFS de un espacio de nombres hospedado por un servidor.
+Enumera los espacios de Sistema de archivos distribuido (DFS) hospedados en un servidor o vínculos DFS de un espacio de nombres hospedado por un servidor.
 
 </dd> <dt>
 
 [NetDfsGetClientInfo](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsgetclientinfo)
 </dt> <dd>
-Recupera información acerca de una raíz o un vínculo de Sistema de archivos distribuido (DFS) de la memoria caché mantenida por el cliente DFS.
+Recupera información sobre una raíz Sistema de archivos distribuido dfs (DFS) de la memoria caché mantenida por el cliente DFS.
 
 </dd> <dt>
 
 [NetDfsGetFtContainerSecurity](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsgetftcontainersecurity)
 </dt> <dd>
-Recupera el descriptor de seguridad del objeto contenedor de los espacios de nombres DFS basados en dominio en el dominio de Active Directory especificado.
+Recupera el descriptor de seguridad del objeto contenedor para los espacios de nombres DFS basados en dominio del dominio Active Directory dominio.
 
 </dd> <dt>
 
 [NetDfsGetInfo](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsgetinfo)
 </dt> <dd>
-Recupera información sobre una raíz o un vínculo de Sistema de archivos distribuido (DFS) especificado en un espacio de nombres DFS.
+Recupera información sobre una raíz o vínculo Sistema de archivos distribuido dfs (DFS) especificado en un espacio de nombres DFS.
 
 </dd> <dt>
 
@@ -87,58 +87,58 @@ Determina el número de versión de metadatos admitido.
 
 [NetDfsMove](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsmove)
 </dt> <dd>
-Cambia el nombre de un vínculo DFS o lo mueve.
+Cambia el nombre o mueve un vínculo DFS.
 
 </dd> <dt>
 
 [NetDfsRemove](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsremove)
 </dt> <dd>
-Quita un vínculo de Sistema de archivos distribuido (DFS) o un destino de vínculo específico de un vínculo DFS en un espacio de nombres DFS. Al quitar un destino de vínculo específico, se quita el vínculo en sí si se quita el último destino de vínculo del vínculo.
+Quita un vínculo Sistema de archivos distribuido (DFS) o un destino de vínculo específico de un vínculo DFS en un espacio de nombres DFS. Al quitar un destino de vínculo específico, el propio vínculo se quita si se quita el último destino de vínculo del vínculo.
 
 </dd> <dt>
 
 [NetDfsRemoveFtRoot](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsremoveftroot)
 </dt> <dd>
-Quita el destino de raíz especificado de un espacio de nombres de Sistema de archivos distribuido basado en dominio (DFS). Si se quita el último destino raíz del espacio de nombres DFS, la función también elimina el espacio de nombres DFS. Se puede eliminar un espacio de nombres DFS sin eliminar primero todos los vínculos que contiene.
+Quita el destino raíz especificado de un espacio de nombres Sistema de archivos distribuido dominio (DFS). Si se quita el último destino raíz del espacio de nombres DFS, la función también elimina el espacio de nombres DFS. Un espacio de nombres DFS se puede eliminar sin eliminar primero todos los vínculos que contiene.
 
 </dd> <dt>
 
 [NetDfsRemoveFtRootForced](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsremoveftrootforced)
 </dt> <dd>
-Quita el destino de raíz especificado de un espacio de nombres de Sistema de archivos distribuido basado en dominio (DFS), incluso si el servidor de destino raíz está sin conexión. Si se quita el último destino raíz del espacio de nombres DFS, la función también elimina el espacio de nombres DFS. Se puede eliminar un espacio de nombres DFS sin eliminar primero todos los vínculos que contiene.
+Quita el destino raíz especificado de un espacio de nombres de Sistema de archivos distribuido basado en dominio (DFS), incluso si el servidor de destino raíz está sin conexión. Si se quita el último destino raíz del espacio de nombres DFS, la función también elimina el espacio de nombres DFS. Un espacio de nombres DFS se puede eliminar sin eliminar primero todos los vínculos que contiene.
 
 > [!Note]
-> La función [**NetDfsRemoveFtRootForced**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsremoveftrootforced) no actualiza el registro en el servidor de destino raíz DFS. Para obtener más información, vea la sección Comentarios.
+> La [**función NetDfsRemoveFtRootForced**](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsremoveftrootforced) no actualiza el Registro en el servidor de destino raíz DFS. Para obtener más información, vea la sección Comentarios.
 
 </dd> <dt>
 
 [NetDfsRemoveRootTarget](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsremoveroottarget)
 </dt> <dd>
-Quita un destino de raíz DFS de un espacio de nombres DFS basado en dominio. Si el destino raíz es el último destino raíz en el espacio de nombres DFS, esta función quita el espacio de nombres DFS. Esta función también se puede usar para quitar un espacio de nombres DFS independiente.
+Quita un destino raíz DFS de un espacio de nombres DFS basado en dominio. Si el destino raíz es el último destino raíz del espacio de nombres DFS, esta función quita el espacio de nombres DFS. Esta función también se puede usar para quitar un espacio de nombres DFS independiente.
 
 </dd> <dt>
 
 [NetDfsRemoveStdRoot](/windows/desktop/api/lmdfs/nf-lmdfs-netdfsremovestdroot)
 </dt> <dd>
-Elimina un espacio de nombres de Sistema de archivos distribuido independiente (DFS).
+Elimina un espacio de nombres Sistema de archivos distribuido independiente (DFS).
 
 </dd> <dt>
 
 [NetDfsSetClientInfo](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetclientinfo)
 </dt> <dd>
-Modifica información acerca de una raíz o un vínculo de Sistema de archivos distribuido (DFS) en la caché mantenido por el cliente DFS.
+Modifica la información sobre una raíz Sistema de archivos distribuido (DFS) o un vínculo en la memoria caché mantenida por el cliente DFS.
 
 </dd> <dt>
 
 [NetDfsSetFtContainerSecurity](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetftcontainersecurity)
 </dt> <dd>
-Establece el descriptor de seguridad del objeto contenedor de los espacios de nombres DFS basados en dominio en el dominio de Active Directory especificado.
+Establece el descriptor de seguridad del objeto contenedor para los espacios de nombres DFS basados en dominio en el Active Directory especificado.
 
 </dd> <dt>
 
 [NetDfsSetInfo](/windows/desktop/api/lmdfs/nf-lmdfs-netdfssetinfo)
 </dt> <dd>
-Establece o modifica la información sobre una raíz específica del Sistema de archivos distribuido (DFS), el destino de la raíz, el vínculo o el destino del vínculo.
+Establece o modifica información sobre una raíz de Sistema de archivos distribuido (DFS) específica, el destino raíz, el vínculo o el destino de vínculo.
 
 </dd> <dt>
 
@@ -154,4 +154,4 @@ Establece el descriptor de seguridad para el objeto contenedor del espacio de no
 
 </dd> </dl>
 
-Tenga en cuenta que una aplicación que invoca cualquiera de las funciones puede hacer que el servidor de espacio de nombres DFS local que atiende a la llamada de función realice una sincronización completa de los metadatos de espacio de nombres relacionados desde el maestro de emulador de PDC para ese dominio. Esta sincronización completa puede producirse incluso cuando se configura el modo de escalabilidad de raíz para ese espacio de nombres.
+Tenga en cuenta que una aplicación que invoca cualquiera de las funciones puede provocar indirectamente que el servidor de espacio de nombres DFS local que da servicio a la llamada de función realice una sincronización completa de los metadatos del espacio de nombres relacionado del maestro del emulador de PDC para ese dominio. Esta sincronización completa puede producirse incluso cuando el modo de escalabilidad raíz está configurado para ese espacio de nombres.

@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3TransformCoordArray (D3dx9math.h): transforma una matriz (x, y, z, 1) por una matriz determinada y proyecta el resultado en w = 1.'
+description: 'Función D3DXVec3TransformCoordArray (D3dx9math.h): transforma una matriz (x, y, z, 1) por una matriz determinada y proyecta el resultado de nuevo en w = 1.'
 ms.assetid: f1595861-d8cb-4787-8078-b9ba6f76507e
 title: Función D3DXVec3TransformCoordArray (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c373705307b2529b3d05609fc4b6ffb47d3abcc2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: dc5d1b18ee3beff052d389f12ec652c3cd263415f2db3eff3129ab085bbd006f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607604"
 ---
 # <a name="d3dxvec3transformcoordarray-function-d3dx9mathh"></a>Función D3DXVec3TransformCoordArray (D3dx9math.h)
 
@@ -109,7 +109,7 @@ Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la matriz tran
 
 Esta función transforma la matriz *pV (x,* y, z, 1) mediante el *pM* de matriz, proyectando el resultado de nuevo en w = 1.
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la [**función D3DXVec3TransformCoord**](d3dxvec3transformcoord.md) se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la [**función D3DXVec3TransformCoord**](d3dxvec3transformcoord.md) se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,7 +122,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
