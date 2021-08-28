@@ -4,19 +4,19 @@ ms.assetid: 4d3c3f3c-22d2-4246-afef-aee2a0bd52d6
 title: Ejemplo y herramienta VssSampleProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8263c8c0db811892cf32f3887a862e13156a22934edac44d0b2c7a6922cbd6bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbd84288f6dc878c103f639aa0c015a3e5e95bde
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118842393"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884413"
 ---
 # <a name="vsssampleprovider-tool-and-sample"></a>Ejemplo y herramienta VssSampleProvider
 
 Muestra cómo usar las [interfaces](volume-shadow-copy-api-interfaces.md) de VSS para crear un proveedor de hardware de VSS.
 
 > [!Note]  
-> La herramienta VssSampleProvider y el ejemplo se incluyen en el Kit de desarrollo de software (SDK) de Microsoft Windows. Puede descargar el SDK de Windows desde [Windows Software Development Kit (SDK) para Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk).
+> La herramienta VssSampleProvider y el ejemplo se incluyen en microsoft Windows Software Development Kit (SDK). Puede descargar el SDK Windows sdk de [Windows Software Development Kit (SDK) para Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk).
 
  
 
@@ -99,7 +99,7 @@ El ejemplo VssSampleProvider incluye los siguientes scripts de instalación y de
 
     
 
-    *<drive>* representa la letra de unidad del LUN virtual.
+    *&lt; la &gt;* unidad representa la letra de unidad del LUN virtual.
 
 7.  Para desinstalar el proveedor de ejemplo de VSS, en la ventana del símbolo del sistema, escriba el siguiente comando:
 

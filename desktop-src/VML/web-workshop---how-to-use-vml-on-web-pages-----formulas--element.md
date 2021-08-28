@@ -6,24 +6,24 @@ keywords:
 - Taller web, elemento formulas
 - diseñar páginas web, elemento formulas
 - Lenguaje de marcado de vectores (VML),elemento formulas
-- VML (Lenguaje de marcado de vectores),elemento formulas
+- ELEMENTO VML (Lenguaje de marcado de vectores),formulas
 - vector graphics,formulas element
 - elemento formulas
 - Elementos de VML, fórmulas
 - VmL shapes,formulas element
-- Lenguaje de marcado de vectores (VML), definir rutas de acceso para las formas
-- VML (Lenguaje de marcado de vectores), definir rutas de acceso para las formas
-- gráficos vectoriales, definición de rutas de acceso para formas
+- Lenguaje de marcado de vectores (VML), definir rutas de acceso para formas
+- VML (Lenguaje de marcado de vectores), definir rutas de acceso para formas
+- gráficos vectoriales, definir rutas de acceso para formas
 - Formas de VML, definir rutas de acceso
 - definir rutas de acceso para formas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23810ae6612e18132566c7d546db7f1f3a569871050b7919cbd8512f3d832808
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9db791533190cd2f67e1043e345954fe71de251
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119512809"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885631"
 ---
 # <a name="using-the-formulas-element"></a>Usar el elemento Formulas
 
@@ -34,13 +34,13 @@ En este tema se describe VML, una característica que está en desuso a partir W
 
  
 
-En este tema, se ilustrará cómo usar el sub elemento para definir una ruta `<formulas>` de acceso ajustable para una forma.
+En este tema, se muestra cómo usar el sub elemento para definir una `&lt;formulas&gt;` ruta de acceso ajustable para una forma.
 
-Puede colocar el <formulas> sub elemento dentro de o para definir `<shape>` `<shapetype>` fórmulas que pueden variar el trazado de una forma. Dentro del sub element, un sub element f define una fórmula para que un valor se evalúe `<formulas>` en función de esa fórmula.  Por ejemplo, la fórmula define `<v:f eqn="prod 10 4 5"/>` un valor equivalente a "10 x 4/5".
+Puede colocar el sub element de fórmulas dentro de o para definir &lt; &gt; `<shape>` `<shapetype>` fórmulas que pueden variar el trazado de una forma. Dentro del sub element, un sub element f define una fórmula para que un valor se evalúe `&lt;formulas&gt;` en función de esa fórmula.  Por ejemplo, la fórmula define `<v:f eqn="prod 10 4 5"/>` un valor equivalente a "10 x 4/5".
 
-Puede colocar muchos sub-elementos **f** dentro de `<formulas>` un sub-elemento. Las fórmulas pueden hacer referencia a los valores definidos anteriormente en otras fórmulas dentro del mismo `<formulas>` sub element. El valor que se define en la primera fórmula se puede hacer referencia a como , el valor que se define en la segunda fórmula se puede hacer referencia a como , y @0 @1 así sucesivamente.
+Puede colocar muchos sub-elementos **f** dentro de `&lt;formulas&gt;` un sub-elemento. Las fórmulas pueden hacer referencia a los valores definidos anteriormente en otras fórmulas dentro del mismo `&lt;formulas&gt;` sub-elemento. El valor que se define en la primera fórmula se puede hacer referencia como , el valor que se define en la segunda fórmula se puede hacer referencia a como @0 @1 , y así sucesivamente.
 
-Además, puede especificar el atributo de propiedad **adj** del elemento, como `<shape>` adj="100, 200, 150". Dentro del `<formulas>` elemento , puede hacer referencia a esos valores en la lista **adj.** El primer valor (100) de la lista **adj** se puede denominar 0, el segundo valor (200) se puede hacer referencia a como 1, y así \# \# sucesivamente.
+Además, puede especificar el atributo de propiedad **adj** del elemento, como `<shape>` adj="100, 200, 150". Dentro del `&lt;formulas&gt;` elemento , puede hacer referencia a esos valores en la lista de **ad.** El primer valor (100) de la lista **de ad** se puede denominar 0, el segundo valor (200) se puede denominar 1, y así \# \# sucesivamente.
 
 Por ejemplo, para dibujar una cara sonriente, puede escribir la siguiente representación de VML:
 
@@ -69,12 +69,12 @@ m4960@0c8853@3,12747@3,16640@0nfe">
 
 -   `adj="17520"` define un valor (= 17520). Se puede hacer referencia a este valor como \# 0.
 -   La primera fórmula, `<v:f eqn="sum 33030 0 #0"/>` , define el valor (= 33030 + 0 - \# 0). Se puede hacer referencia a este valor como @0 .
--   La segunda fórmula, `<v:f eqn="prod #0 4 3"/>` , define el valor (= \# 0 \* 4/3). Se puede hacer referencia a este valor como @1 .
+-   La segunda fórmula, `<v:f eqn="prod #0 4 3"/>` , define el valor (= \# 0 \* 4 /3). Se puede hacer referencia a este valor como @1 .
 -   La tercera fórmula, `<v:f eqn="prod @0 1 3"/>` , define el valor (= @0 \* 1 /3). Se puede hacer referencia a este valor como @2 .
 -   La cuarta fórmula, `<v:f eqn="sum @1 0 @2"/>` , define el valor (= + @1 0 -@2 ). Se puede hacer referencia a este valor como @3 .
--   Dentro del elemento , los valores definidos en las fórmulas first ( ) y fourth ( ) se usan para determinar el `<path>` @0 contorno de la @3 forma.
+-   Dentro del elemento , los valores definidos en la primera fórmula ( ) y la cuarta ( ) se usan para determinar el `<path>` @0 contorno de la @3 forma.
 
-Si cambia la **lista de ad,** como , los valores de las fórmulas que hacen referencia a la lista de ad también se cambiarán, lo que afectará a la cara sonriente como se muestra a `adj="20000"` continuación: 
+Si cambia la lista **de ad,** como , también se cambiarán los valores de las fórmulas que hacen referencia a la lista de ad, lo que afecta a la cara sonriente de la `adj="20000"` siguiente manera: 
 
 ![shape2.gif (765 bytes)](images/shape2f.gif)
 
@@ -99,7 +99,7 @@ m4960@0c8853@3,12747@3,16640@0nfe">
 
 
 
-Para obtener más información sobre este elemento, consulte la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858392) .
+Para obtener más información sobre este elemento, vea la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858392) .
 
  
 

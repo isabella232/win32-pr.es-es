@@ -3,10 +3,10 @@ title: Introducción a la API de Direct2D
 description: Proporciona información general sobre el modelo de objetos de Direct2D.
 ms.assetid: b1362ef6-40fc-4fa5-ba5b-22c622c39f04
 keywords:
-- Direct2D, acerca de
+- Direct2D,about
 - Direct2D, archivos de encabezado
 - Direct2D, modelo de objetos
-- Direct2D, interfaces
+- Direct2D,interfaces
 - Interfaz ID2D1Factory
 - Direct2D, destinos de representación
 - destinos de representación, acerca de
@@ -22,15 +22,15 @@ keywords:
 - mapas de bits para Direct2D
 - Direct2D, mapas de bits
 - Primitivas
-- Direct2D, primitivos
+- Direct2D,primitives
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54f318e3542d54ee92817193ef6b749a3ba1cf4678407ca7a12f28c6c187ae86
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f757ea6f1dd2b5db0d0c96297098bc6a8443bf25
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119074999"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882847"
 ---
 # <a name="direct2d-api-overview"></a>Introducción a la API de Direct2D
 
@@ -52,7 +52,7 @@ En este tema se proporciona información general sobre los objetos que integran 
     -   [Representación de recursos de destino](#render-target-resources)
     -   [Comandos de dibujo](#drawing-commands)
     -   [Tratamiento de errores](#error-handling)
--   [Dibujar recursos](#drawing-resources)
+-   [Recursos de dibujo](#drawing-resources)
     -   [Pinceles](#brushes)
     -   [Geometrías](#geometries)
     -   [Mapas de bits](#bitmaps)
@@ -70,9 +70,9 @@ La API de Direct2D se define mediante los siguientes archivos de encabezado.
 | d2d1helper.h        | Define funciones auxiliares, clases y estructuras de C++.                                                                       |
 | d2dbasetypes.h      | Define primitivas de dibujo para Direct2D, como puntos y rectángulos. Este encabezado se incluye con d2d1.h.                 |
 | d2derr.h            | Define los códigos de error de Direct2D. Este encabezado se incluye con d2d1.h.                                                   |
-| d2d1 \_ 1.h           | Define las versiones de C y C++ de la API principal de Direct2D para Windows 8 y versiones posteriores.                                              |
+| d2d1 \_ 1.h           | Define las versiones de C y C++ de la API principal de Direct2D Windows 8 y versiones posteriores.                                              |
 | d2d1 \_ 1helper.h     | Define funciones auxiliares, clases y estructuras de C++ para Windows 8 y versiones posteriores.                                               |
-| d2d1effects.h       | Define las versiones de C y C++ de los efectos de imagen que forman parte de la API de Direct2D para Windows 8 y versiones posteriores.                            |
+| d2d1effects.h       | Define las versiones de C y C++ de la parte de efectos de imagen de la API de Direct2D para Windows 8 y versiones posteriores.                            |
 | d2d1effecthelpers.h | Define funciones auxiliares, clases y estructuras de C++ de la parte de efectos de imagen de la API de Direct2D para Windows 8 y versiones posteriores. |
 
 
@@ -92,11 +92,11 @@ En la raíz de la API de Direct2D se encuentran las interfaces [**ID2D1Factory**
 -   Los recursos independientes del dispositivo no están asociados a un dispositivo de representación determinado y pueden conservarse durante la vida útil de una aplicación.
 -   Los recursos dependientes del dispositivo están asociados a un dispositivo de representación determinado y dejan de funcionar si se quita ese dispositivo.
 
-(Para obtener más información sobre los recursos y el uso compartido de recursos, vea Información [general sobre recursos).](resources-and-resource-domains.md)
+(Para más información sobre los recursos y el uso compartido de recursos, consulte Información [general sobre los recursos).](resources-and-resource-domains.md)
 
 ## <a name="the-id2d1factory-interface"></a>La interfaz ID2D1Factory
 
-La [**interfaz ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) es el punto de partida para usar Direct2D. Se usa **id2D1Factory para** crear instancias de recursos de Direct2D. Para crear una instancia de ID2D1Factory, use uno de los [**métodos CreateFactory.**](/windows/win32/api/d2d1/nf-d2d1-d2d1createfactory)
+La [**interfaz ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) es el punto de partida para usar Direct2D. Se usa una **instancia de ID2D1Factory para** crear instancias de los recursos de Direct2D. Para crear una instancia de ID2D1Factory, use uno de los [**métodos CreateFactory.**](/windows/win32/api/d2d1/nf-d2d1-d2d1createfactory)
 
 Un generador define un conjunto de métodos Create *Resource* que pueden generar los siguientes recursos de dibujo:
 
@@ -104,7 +104,7 @@ Un generador define un conjunto de métodos Create *Resource* que pueden generar
 -   Los bloques de estado de dibujo son objetos que almacenan información de estado de dibujo, como la transformación actual y el modo de suavizado de contorno.
 -   Las geometrías son objetos que representan formas simples y potencialmente complejas.
 
-Uno de los objetos más útiles que puede crear un generador [**es id2D1RenderTarget,**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)que se describe en la sección siguiente.
+Uno de los objetos más útiles que puede crear un generador [**es ID2D1RenderTarget,**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)que se describe en la sección siguiente.
 
 ## <a name="render-targets"></a>Destinos de representación
 
@@ -161,7 +161,7 @@ Un pincel, representado por la interfaz [**ID2D1Brush,**](/windows/win32/api/d2d
 -   [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) pinta un área con un degradado radial que combina dos o más colores alrededor de una elipse.
 -   [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) pinta un área con un mapa de bits.
 
-Para crear un pincel, use uno de los [**métodos ID2D1RenderTarget::**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)Create Brush, como *<Type>* [**CreateRadialGradientBrush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) Los pinceles se pueden usar con los métodos Draw y Fill de destino de representación, ya sea para pintar un trazo o contorno de forma, o como una máscara de opacidad.
+Para crear un pincel, use uno de los métodos [**ID2D1RenderTarget::**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)Create *&lt; Type &gt;* Brush, como [**CreateRadialGradientBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__constd2d1_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)). Los pinceles se pueden usar con los métodos Draw y Fill de destino de representación, ya sea para pintar un trazo o contorno de forma, o como una máscara de opacidad.
 
 Para obtener más información sobre los pinceles, vea Información [general sobre pinceles.](direct2d-brushes-overview.md)
 
@@ -169,11 +169,11 @@ Para obtener más información sobre los pinceles, vea Información [general sob
 
 Además de los primitivos de dibujo básicos, como puntos, rectángulos y elipses, Direct2D proporciona la interfaz [**ID2D1Geometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry) para describir formas simples y complejas. Las interfaces que heredan de **ID2D1Geometry** definen diferentes tipos de formas, como [**ID2D1RectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1rectanglegeometry) para representar rectángulos, [**ID2D1RoundedRectangleGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1roundedrectanglegeometry) para representar rectángulos redondeados e [**ID2D1PxpseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) para representar elipses.
 
-Se pueden crear formas más complejas mediante la interfaz [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) para especificar una serie de figuras compuestas de líneas, curvas y arcos. **Id2D1GeometrySink** se pasa al método Open de [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) para generar una geometría compleja. [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) también se puede usar con la API de DirectWrite para extraer los contornos de ruta de acceso del texto con formato para la representación en desenlazado.
+Se pueden crear formas más complejas mediante la interfaz [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) para especificar una serie de figuras compuestas de líneas, curvas y arcos. **Id2D1GeometrySink** se pasa al método Open de [**id2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) para generar una geometría compleja. [**ID2D1SimplifiedGeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1simplifiedgeometrysink) también se puede usar con la API de DirectWrite para extraer los contornos de ruta de acceso del texto con formato para la representación de la estructura.
 
 Las interfaces de geometría proporcionan métodos para manipular formas ampliando o simplificando geometrías existentes, o generando la intersección o unión de varias geometrías. También proporcionan métodos para determinar si las geometrías se cruzan o se superponen, recuperan información de límites, computan el área o longitud de una geometría e interpolan ubicaciones a lo largo de una geometría. Direct2D también proporciona la capacidad de crear una malla de triángulos que se tesela a partir de una geometría.
 
-Para crear una geometría, use uno de los métodos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory)::Create *<Type>* Geometry, como [**CreatePathGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) Una geometría es un recurso independiente del dispositivo.
+Para crear una geometría, use uno de los métodos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory)::Create *&lt; Type &gt;* Geometry, como [**CreatePathGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) Una geometría es un recurso independiente del dispositivo.
 
 Para representar una geometría, use los métodos [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) y [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) de un destino de representación.
 
@@ -193,7 +193,7 @@ Direct2D se diseñó para trabajar con las operaciones de texto de la nueva API 
 
 [**Id2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) está diseñado para los escenarios más sencillos que implican la representación de una cadena de texto Unicode con formato mínimo. Se proporciona un diseño más complejo y flexibilidad tipográfica a través del método [**ID2D1RenderTarget::D rawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) que usa un objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) para especificar el contenido y el formato que se va a representar. **IDWriteTextLayout permite** especificar formatos individuales para subcadenas de texto y otras opciones avanzadas de tipografía.
 
-En escenarios en los que se requiere un control preciso del diseño de nivel de glifo, el método [**ID2D1RenderTarget::D rawGlyphRun**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun) se puede usar junto con las instalaciones de medida proporcionadas [por DirectWrite](../directwrite/direct-write-portal.md).
+En escenarios en los que se requiere un control preciso del diseño de nivel de glifo, el método [**ID2D1RenderTarget::D rawGlyphRun**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun) se puede usar junto con las instalaciones de medida [proporcionadas por DirectWrite](../directwrite/direct-write-portal.md).
 
 Para usar la API DirectWrite, incluya el encabezado dwrite.h. Al igual que Direct2D, DirectWrite un generador, [**IDWriteFactory,**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) para crear objetos de texto. Use la [**función DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) para crear un generador y, a continuación, use sus métodos Create para crear DirectWrite recursos (como [**IDWriteTextFormat).**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))
 

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa797fac58b0a2663c918e7fef739c6c5ab536dcfa9dc91be13b8196aed5ef43
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b0a2d8551ea0ac47f10cbd189114dde36f72c8b0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119945915"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982958"
 ---
 # <a name="jet_cbtyp"></a>JET_CBTYP
 
@@ -33,221 +33,33 @@ El **JET_CBTYP** de constantes describe todos los puntos posibles de una operaci
 
 **Windows XP:**  El **JET_CBTYP** de constantes se introduce en Windows XP.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Constante o valor</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_cbtypNull<br />
-0x00000000</p></td>
-<td><p>Esta devolución de llamada está reservada y siempre se considera no válida.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypFinalize<br />
-0x00000001</p></td>
-<td><p>Esta devolución de llamada está reservada para su uso futuro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypBeforeInsert<br />
-0x00000002</p></td>
-<td><p>Esta devolución de llamada se producirá justo antes de insertar un nuevo registro en una tabla mediante una llamada a <a href="gg269288(v=exchg.10).md">JetUpdate</a>.</p>
-<p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>la sesión que tiene el registro que se va a insertar.</p></li>
-<li><p><em>dbid:</em>identificador de base de datos de la tabla que contiene el registro que se va a insertar.</p></li>
-<li><p><em>tableid:</em>cursor que ha preparado el nuevo registro que se va a insertar. Es importante tener en cuenta que es posible que el valor de cualquier versión o columnas de incremento automático no sea correcto en este momento.</p></li>
-<li><p><em>pvArg1:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL</strong> Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypAfterInsert<br />
-0x00000004</p></td>
-<td><p>Esta devolución de llamada se producirá justo después de que se haya insertado un nuevo registro en una tabla mediante una llamada a <a href="gg269288(v=exchg.10).md">JetUpdate,</a> pero antes de <a href="gg269288(v=exchg.10).md">que JetUpdate</a> vuelva a su llamador.</p>
-<p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>la sesión que tiene el registro que se acaba de insertar.</p></li>
-<li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se acaba de insertar.</p></li>
-<li><p><em>tableid:</em>cursor de la tabla en la que se inserta el registro que se acaba de insertar. Tenga en cuenta que el cursor sigue estando situado en la misma entrada de índice que en la devolución de llamada de inserción anterior. Tenga en cuenta además que esta entrada de índice puede no estar relacionada de ninguna manera con el registro que se va a insertar.</p></li>
-<li><p><em>pvArg1:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL Si</strong> la devolución de llamada devuelve un error, se omitirá.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypBeforeReplace<br />
-0x00000008</p></td>
-<td><p>Esta devolución de llamada se producirá justo antes de que una llamada a JetUpdate cambie un registro existente en una <a href="gg269288(v=exchg.10).md">tabla.</a></p>
-<p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>la sesión que tiene el registro que se va a cambiar.</p></li>
-<li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se va a cambiar.</p></li>
-<li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se va a cambiar. Es importante tener en cuenta que es posible que el valor de cualquier versión o columnas de incremento automático no sea correcto en este momento.</p></li>
-<li><p><em>pvArg1:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL</strong> Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypAfterReplace<br />
-0x00000010</p></td>
-<td><p>Esta devolución de llamada se producirá justo después de que una llamada a <a href="gg269288(v=exchg.10).md">JetUpdate</a> haya cambiado un registro existente en una tabla, pero antes de que <a href="gg269288(v=exchg.10).md">JetUpdate</a> vuelva a su llamador.</p>
-<p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>la sesión que tiene el registro que se acaba de cambiar.</p></li>
-<li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se acaba de cambiar.</p></li>
-<li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se acaba de cambiar.</p></li>
-<li><p><em>pvArg1:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL Si</strong> la devolución de llamada devuelve un error, se omitirá.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypBeforeDelete<br />
-0x00000020</p></td>
-<td><p>Esta devolución de llamada se producirá justo antes de que se elimine un registro existente en una tabla mediante una llamada a <a href="gg269315(v=exchg.10).md">JetDelete</a>.</p>
-<p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>la sesión que tiene el registro que se va a eliminar.</p></li>
-<li><p><em>dbid:</em>identificador de base de datos de la tabla que contiene el registro que se va a eliminar.</p></li>
-<li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se va a eliminar.</p></li>
-<li><p><em>pvArg1:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL</strong> Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypAfterDelete<br />
-0x00000040</p></td>
-<td><p>Esta devolución de llamada se producirá justo después de que una llamada a <a href="gg269315(v=exchg.10).md">JetDelete</a> haya eliminado un registro existente en una tabla, pero antes de <a href="gg269315(v=exchg.10).md">que JetDelete</a> vuelva a su autor de la llamada.</p>
-<p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>la sesión que tiene el registro que se acaba de eliminar.</p></li>
-<li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se acaba de eliminar.</p></li>
-<li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se acaba de eliminar.</p></li>
-<li><p><em>pvArg1:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em>el puntero de contexto pasado <a href="gg269175(v=exchg.10).md">a JetRegisterCallback</a> o <strong>NULL.</strong></p></li>
-<li><p><em>ulUnused</em>: <strong>NULL</strong></p></li>
-</ul>
-<p>Si la devolución de llamada devuelve un error, se omitirá.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypUserDefinedDefaultValue<br />
-0x00000080</p></td>
-<td><p>Esta devolución de llamada se producirá cuando el motor necesite recuperar el valor predeterminado definido por el usuario de una columna de la aplicación. Esta devolución de llamada es básicamente una implementación limitada de <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a> evaluada por la aplicación. Se puede devolver un máximo de un valor de columna para un valor predeterminado definido por el usuario.</p>
-<p>El puntero de función para esta razón de devolución de llamada se pasa a <a href="gg294122(v=exchg.10).md">JetAddColumn</a> mediante una estructura <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> o se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante una estructura <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> en una estructura <a href="gg269252(v=exchg.10).md">JET_COLUMNCREATE</a> en una <a href="gg294146(v=exchg.10).md">estructura JET_TABLECREATE.</a></p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>la sesión que está computando el valor predeterminado definido por el usuario</p></li>
-<li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el valor predeterminado definido por el usuario</p></li>
-<li><p><em>tableid:</em>cursor situado en el registro para el que se recupera el valor predeterminado definido por el usuario</p></li>
-<li><p><em>pvArg1:</em>búfer de salida para el valor predeterminado definido por el usuario</p></li>
-<li><p><em>pvArg2:</em>en la entrada, este es el tamaño del búfer de salida. En la salida, este es el tamaño real del valor predeterminado definido por el usuario. En cualquier caso, el tamaño es un entero de 32 bits sin signo.</p></li>
-<li><p><em>pvContext:</em>puntero a un búfer que contiene los datos de usuario especificados en la <a href="gg269200(v=exchg.10).md">estructura JET_USERDEFINEDDEFAULT</a> cuando se creó la columna o NULL si no se proporcionó ningún contexto.</p></li>
-<li><p><em>ulUnused:</em>identificador de columna de la columna para la que se recupera el valor predeterminado definido por el usuario.</p></li>
-</ul>
-<p>Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p>
-<p>Si JET_wrnBufferTruncated devuelve la devolución de llamada, la operación continuará, pero el valor completo no se recupera durante la devolución de llamada.</p>
-<p>Si JET_wrnColumnNull devuelve la devolución de llamada, la operación continuará, pero el valor predeterminado definido por el usuario para la columna es NULL.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypOnlineDefragCompleted<br />
-0x00000100</p></td>
-<td><p>Esta devolución de llamada se producirá cuando se haya detenido la desfragmentación en línea de una base de datos iniciada por <a href="gg269317(v=exchg.10).md">JetDefragment</a> debido a que se ha completado el proceso o se ha alcanzado el límite de tiempo.</p>
-<p>El puntero de función para este motivo de devolución de llamada se pasa <a href="gg269317(v=exchg.10).md">a JetDefragment</a>. Para obtener más información, vea <a href="gg269317(v=exchg.10).md">JetDefragment</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid:</em>sesión que se usa para realizar la desfragmentación en línea para la base de datos o JET_sesidNil para un archivo de streaming.</p></li>
-<li><p><em>dbid:</em>el identificador de base de datos de la base de datos que se va a desfragmentar o JET_dbidNil para un archivo de streaming.</p></li>
-<li><p><em>tableid</em>: JET_tableidNil</p></li>
-<li><p><em>pvArg1:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em> <strong>NULL</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL</strong></p></li>
-</ul>
-<p>Si la devolución de llamada devuelve un error, se omitirá.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_cbtypFreeCursorLS<br />
-0x00000200</p></td>
-<td><p>Esta devolución de llamada se producirá cuando la aplicación necesite limpiar el identificador de contexto para el Storage local asociado a un cursor que el motor de base de datos está liberando. Para obtener más información, vea <a href="gg269243(v=exchg.10).md">JetSetLS.</a></p>
-<p>El puntero de función para esta razón de devolución de llamada se configura mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <a href="gg269310(v=exchg.10).md">con JET_paramRuntimeCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid</em>: JET_sesidNil</p></li>
-<li><p><em>dbid</em>: JET_dbidNil</p></li>
-<li><p><em>tableid</em>: JET_tableidNil</p></li>
-<li><p><em>pvArg1:</em>el conjunto de identificadores de contexto mediante <a href="gg269243(v=exchg.10).md">JetSetLS</a></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em> <strong>NULL</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL</strong></p></li>
-</ul>
-<p>Si la devolución de llamada devuelve un error, se omitirá.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_cbtypFreeTableLS<br />
-0x00000400</p></td>
-<td><p>Esta devolución de llamada se producirá como resultado de la necesidad de que la aplicación limpie el identificador de contexto para el Storage local asociado a una tabla que está liberando el motor de base de datos. Para obtener más información, vea <a href="gg269243(v=exchg.10).md">JetSetLS.</a></p>
-<p>El puntero de función para esta razón de devolución de llamada se configura mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <a href="gg269310(v=exchg.10).md">con JET_paramRuntimeCallback</a>.</p>
-<p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p>
-<ul>
-<li><p><em>sesid</em>: JET_sesidNil</p></li>
-<li><p><em>dbid</em>: JET_dbidNil</p></li>
-<li><p><em>tableid</em>: JET_tableidNil</p></li>
-<li><p><em>pvArg1:</em>el identificador de contexto establecido mediante <a href="gg269243(v=exchg.10).md">JetSetLS.</a></p></li>
-<li><p><em>pvArg2:</em> <strong>NULL</strong></p></li>
-<li><p><em>pvContext:</em> <strong>NULL</strong></p></li>
-<li><p><em>ulUnused:</em> <strong>NULL</strong></p></li>
-</ul>
-<p>Si la devolución de llamada devuelve un error, se omitirá.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Constante o valor</p> | <p>Descripción</p> | 
+|-----------------------|--------------------|
+| <p>JET_cbtypNull<br />0x00000000</p> | <p>Esta devolución de llamada está reservada y siempre se considera no válida.</p> | 
+| <p>JET_cbtypFinalize<br />0x00000001</p> | <p>Esta devolución de llamada está reservada para su uso futuro.</p> | 
+| <p>JET_cbtypBeforeInsert<br />0x00000002</p> | <p>Esta devolución de llamada se producirá justo antes de insertar un nuevo registro en una tabla mediante una llamada a <a href="gg269288(v=exchg.10).md">JetUpdate</a>.</p><p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>la sesión que tiene el registro que se va a insertar.</p></li><li><p><em>dbid:</em>identificador de base de datos de la tabla que contiene el registro que se va a insertar.</p></li><li><p><em>tableid:</em>cursor que ha preparado el nuevo registro que se va a insertar. Es importante tener en cuenta que es posible que el valor de cualquier versión o columnas de incremento automático no sea correcto en este momento.</p></li><li><p><em>pvArg1:</em> <strong>NULL</strong></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL</strong> Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p></li></ul> | 
+| <p>JET_cbtypAfterInsert<br />0x00000004</p> | <p>Esta devolución de llamada se producirá justo después de que se haya insertado un nuevo registro en una tabla mediante una llamada a <a href="gg269288(v=exchg.10).md">JetUpdate,</a> pero antes de <a href="gg269288(v=exchg.10).md">que JetUpdate</a> vuelva a su llamador.</p><p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>la sesión que tiene el registro que se acaba de insertar.</p></li><li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se acaba de insertar.</p></li><li><p><em>tableid:</em>cursor de la tabla en la que se inserta el registro que se acaba de insertar. Tenga en cuenta que el cursor sigue estando situado en la misma entrada de índice que en la devolución de llamada de inserción anterior. Tenga en cuenta además que esta entrada de índice puede no estar relacionada de ninguna manera con el registro que se va a insertar.</p></li><li><p><em>pvArg1:</em> <strong>NULL</strong></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL Si</strong> la devolución de llamada devuelve un error, se omitirá.</p></li></ul> | 
+| <p>JET_cbtypBeforeReplace<br />0x00000008</p> | <p>Esta devolución de llamada se producirá justo antes de que una llamada a JetUpdate cambie un registro existente en una <a href="gg269288(v=exchg.10).md">tabla.</a></p><p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>la sesión que tiene el registro que se va a cambiar.</p></li><li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se va a cambiar.</p></li><li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se va a cambiar. Es importante tener en cuenta que es posible que el valor de cualquier versión o columnas de incremento automático no sea correcto en este momento.</p></li><li><p><em>pvArg1:</em> <strong>NULL</strong></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL</strong> Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p></li></ul> | 
+| <p>JET_cbtypAfterReplace<br />0x00000010</p> | <p>Esta devolución de llamada se producirá justo después de que una llamada a <a href="gg269288(v=exchg.10).md">JetUpdate</a> haya cambiado un registro existente en una tabla, pero antes de que <a href="gg269288(v=exchg.10).md">JetUpdate</a> vuelva a su llamador.</p><p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>la sesión que tiene el registro que se acaba de cambiar.</p></li><li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se acaba de cambiar.</p></li><li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se acaba de cambiar.</p></li><li><p><em>pvArg1:</em> <strong>NULL</strong></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL Si</strong> la devolución de llamada devuelve un error, se omitirá.</p></li></ul> | 
+| <p>JET_cbtypBeforeDelete<br />0x00000020</p> | <p>Esta devolución de llamada se producirá justo antes de que se elimine un registro existente en una tabla mediante una llamada a <a href="gg269315(v=exchg.10).md">JetDelete</a>.</p><p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>la sesión que tiene el registro que se va a eliminar.</p></li><li><p><em>dbid:</em>identificador de base de datos de la tabla que contiene el registro que se va a eliminar.</p></li><li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se va a eliminar.</p></li><li><p><em>pvArg1:</em> <strong>NULL</strong></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em>puntero de contexto pasado a <a href="gg269175(v=exchg.10).md">JetRegisterCallback</a> o <strong>NULL.</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL</strong> Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p></li></ul> | 
+| <p>JET_cbtypAfterDelete<br />0x00000040</p> | <p>Esta devolución de llamada se producirá justo después de que una llamada a <a href="gg269315(v=exchg.10).md">JetDelete</a> haya eliminado un registro existente en una tabla, pero antes de <a href="gg269315(v=exchg.10).md">que JetDelete</a> vuelva a su autor de la llamada.</p><p>El puntero de función para este motivo de devolución de llamada se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante <a href="gg294146(v=exchg.10).md">JET_TABLECREATE</a> o se configura en tiempo de ejecución mediante <a href="gg269175(v=exchg.10).md">JetRegisterCallback.</a> Para obtener más información, <a href="gg294146(v=exchg.10).md">vea JET_TABLECREATE</a> <a href="gg269175(v=exchg.10).md">o JetRegisterCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>la sesión que tiene el registro que se acaba de eliminar.</p></li><li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el registro que se acaba de eliminar.</p></li><li><p><em>tableid:</em>cursor situado en una entrada de índice asociada al registro que se acaba de eliminar.</p></li><li><p><em>pvArg1:</em> <strong>NULL</strong></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em>el puntero de contexto pasado <a href="gg269175(v=exchg.10).md">a JetRegisterCallback</a> o <strong>NULL.</strong></p></li><li><p><em>ulUnused</em>: <strong>NULL</strong></p></li></ul><p>Si la devolución de llamada devuelve un error, se omitirá.</p> | 
+| <p>JET_cbtypUserDefinedDefaultValue<br />0x00000080</p> | <p>Esta devolución de llamada se producirá cuando el motor necesite recuperar el valor predeterminado definido por el usuario de una columna de la aplicación. Esta devolución de llamada es básicamente una implementación limitada de <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a> evaluada por la aplicación. Se puede devolver un máximo de un valor de columna para un valor predeterminado definido por el usuario.</p><p>El puntero de función para esta razón de devolución de llamada se pasa a <a href="gg294122(v=exchg.10).md">JetAddColumn</a> mediante una estructura <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> o se pasa a <a href="gg269343(v=exchg.10).md">JetCreateTableColumnIndex</a> mediante una estructura <a href="gg269200(v=exchg.10).md">JET_USERDEFINEDDEFAULT</a> en una estructura <a href="gg269252(v=exchg.10).md">JET_COLUMNCREATE</a> en una <a href="gg294146(v=exchg.10).md">estructura JET_TABLECREATE.</a></p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>la sesión que está computando el valor predeterminado definido por el usuario</p></li><li><p><em>dbid:</em>el identificador de base de datos de la tabla que contiene el valor predeterminado definido por el usuario</p></li><li><p><em>tableid:</em>cursor situado en el registro para el que se recupera el valor predeterminado definido por el usuario</p></li><li><p><em>pvArg1:</em>búfer de salida para el valor predeterminado definido por el usuario</p></li><li><p><em>pvArg2:</em>en la entrada, este es el tamaño del búfer de salida. En la salida, este es el tamaño real del valor predeterminado definido por el usuario. En cualquier caso, el tamaño es un entero de 32 bits sin signo.</p></li><li><p><em>pvContext:</em>puntero a un búfer que contiene los datos de usuario especificados en la <a href="gg269200(v=exchg.10).md">estructura JET_USERDEFINEDDEFAULT</a> cuando se creó la columna o NULL si no se proporcionó ningún contexto.</p></li><li><p><em>ulUnused:</em>identificador de columna de la columna para la que se recupera el valor predeterminado definido por el usuario.</p></li></ul><p>Si la devolución de llamada devuelve un error, se producirá un error en la operación que origina la devolución de llamada.</p><p>Si JET_wrnBufferTruncated devuelve la devolución de llamada, la operación continuará, pero el valor completo no se recupera durante la devolución de llamada.</p><p>Si JET_wrnColumnNull devuelve la devolución de llamada, la operación continuará, pero el valor predeterminado definido por el usuario para la columna es NULL.</p> | 
+| <p>JET_cbtypOnlineDefragCompleted<br />0x00000100</p> | <p>Esta devolución de llamada se producirá cuando se haya detenido la desfragmentación en línea de una base de datos iniciada por <a href="gg269317(v=exchg.10).md">JetDefragment</a> debido a que se ha completado el proceso o se ha alcanzado el límite de tiempo.</p><p>El puntero de función para este motivo de devolución de llamada se pasa <a href="gg269317(v=exchg.10).md">a JetDefragment</a>. Para obtener más información, vea <a href="gg269317(v=exchg.10).md">JetDefragment</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid:</em>sesión que se usa para realizar la desfragmentación en línea para la base de datos o JET_sesidNil para un archivo de streaming.</p></li><li><p><em>dbid:</em>el identificador de base de datos de la base de datos que se va a desfragmentar JET_dbidNil para un archivo de streaming.</p></li><li><p><em>tableid</em>: JET_tableidNil</p></li><li><p><em>pvArg1:</em> <strong>NULL</strong></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em> <strong>NULL</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL</strong></p></li></ul><p>Si la devolución de llamada devuelve un error, se omitirá.</p> | 
+| <p>JET_cbtypFreeCursorLS<br />0x00000200</p> | <p>Esta devolución de llamada se producirá cuando la aplicación necesite limpiar el identificador de contexto de la Storage local asociada a un cursor que el motor de base de datos está liberando. Para obtener más información, vea <a href="gg269243(v=exchg.10).md">JetSetLS.</a></p><p>El puntero de función para esta razón de devolución de llamada se configura mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <a href="gg269310(v=exchg.10).md">con JET_paramRuntimeCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid</em>: JET_sesidNil</p></li><li><p><em>dbid</em>: JET_dbidNil</p></li><li><p><em>tableid</em>: JET_tableidNil</p></li><li><p><em>pvArg1:</em>el conjunto de identificadores de contexto mediante <a href="gg269243(v=exchg.10).md">JetSetLS</a></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em> <strong>NULL</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL</strong></p></li></ul><p>Si la devolución de llamada devuelve un error, se omitirá.</p> | 
+| <p>JET_cbtypFreeTableLS<br />0x00000400</p> | <p>Esta devolución de llamada se producirá como resultado de la necesidad de que la aplicación limpie el identificador de contexto para el Storage local asociado a una tabla que está liberando el motor de base de datos. Para obtener más información, vea <a href="gg269243(v=exchg.10).md">JetSetLS.</a></p><p>El puntero de función para esta razón de devolución de llamada se configura mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> <a href="gg269310(v=exchg.10).md">con JET_paramRuntimeCallback</a>.</p><p>Los parámetros de devolución de llamada tendrán los siguientes valores:</p><ul><li><p><em>sesid</em>: JET_sesidNil</p></li><li><p><em>dbid</em>: JET_dbidNil</p></li><li><p><em>tableid</em>: JET_tableidNil</p></li><li><p><em>pvArg1:</em>el identificador de contexto establecido mediante <a href="gg269243(v=exchg.10).md">JetSetLS.</a></p></li><li><p><em>pvArg2:</em> <strong>NULL</strong></p></li><li><p><em>pvContext:</em> <strong>NULL</strong></p></li><li><p><em>ulUnused:</em> <strong>NULL</strong></p></li></ul><p>Si la devolución de llamada devuelve un error, se omitirá.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

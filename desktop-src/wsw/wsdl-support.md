@@ -5,19 +5,19 @@ ms.assetid: d3c147d6-e370-4e8a-96d8-6660f3a2b996
 keywords:
 - Compatibilidad con WSDL
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 203ee1819a596d2d49a7d0b7c789d5f4e1269b6d8d75f78e2db0913b6a97ec78
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b273bd97d30aca185f35f31d385e6ab5a0bef4e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119880745"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882284"
 ---
 # <a name="wsdl-and-service-contracts"></a>WSDL y contratos de servicio
 
-La [ utilidadWsutil.exe](web-service-compiler-tool.md) genera un código auxiliar del lenguaje C según los metadatos WSDL proporcionados, así como definiciones y descripciones de tipos de datos para los tipos de datos descritos por esquemas XML creados por el usuario.
+La [ utilidadWsutil.exe](web-service-compiler-tool.md) genera un código auxiliar del lenguaje C según los metadatos WSDL proporcionados, así como definiciones de tipos de datos y descripciones para los tipos de datos descritos por esquemas XML creados por el usuario.
 
 
 A continuación se muestra un documento WSDL de ejemplo y un esquema XML que sirve de base para la explicación siguiente:
@@ -84,7 +84,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-En este ejemplo se proporciona un contrato, ISimpleService, con un único método, SimpleMethod. "SimpleMethod" tiene dos parámetros de entrada de tipo **entero**, *a* y *b*, que se envían desde el cliente al servicio. Del mismo modo, SimpleMethod tiene dos parámetros de salida de tipo **entero**, *b* y *c*, que se devuelven al cliente después de completarse correctamente. En la sintaxis de C anotada con SAL, la definición del método aparece de la siguiente manera:
+En este ejemplo se proporciona un contrato, ISimpleService, con un único método, SimpleMethod. "SimpleMethod" tiene dos parámetros de entrada de tipo **entero**, *a* y *b*, que se envían desde el cliente al servicio. Del mismo modo, SimpleMethod tiene dos parámetros de salida de tipo **entero**, *b* y *c*, que se devuelven al cliente después de completarse correctamente. En la sintaxis de C anotada con SAL, la definición del método aparece como sigue:
 
 ``` syntax
 void SimpleMethod(__in int a, __inout int *  b, __out int * c );
@@ -154,7 +154,7 @@ Las estructuras C autogeneradas enumeradas anteriormente se crean en función de
 
 ## <a name="header-for-the-stub"></a>Encabezado del código auxiliar
 
-Para cada operación del contrato de servicio, se genera una rutina de devolución de llamada denominada <operationname> "Devolución de llamada". (Por ejemplo, la operación "SimpleMethod" en el contrato de servicio de ejemplo tiene una devolución de llamada generada denominada "SimpleMethodCallback").
+Para cada operación del contrato de servicio, se genera una rutina de devolución de llamada denominada &lt; "operationname &gt; Callback". (Por ejemplo, la operación "SimpleMethod" en el contrato de servicio de ejemplo tiene una devolución de llamada generada denominada "SimpleMethodCallback").
 
 ``` syntax
 typedef HRESULT (CALLBACK *SimpleMethodCallback) (
@@ -164,7 +164,7 @@ typedef HRESULT (CALLBACK *SimpleMethodCallback) (
   WS_ERROR * error);
 ```
 
-Para cada valor **portType Wsutil.exe** WSDL genera una tabla de funciones que representa **portType**. Cada operación en **portType tiene** un puntero de función correspondiente a la devolución de llamada presente en la tabla de funciones.
+Para cada valor **portType Wsutil.exe** WSDL genera una tabla de funciones que representa **portType**. Cada operación en **portType** tiene un puntero de función correspondiente a la devolución de llamada presente en la tabla de funciones.
 
 ``` syntax
 struct ISimpleServiceMethodTable
@@ -218,7 +218,7 @@ struct _filenameLocalDefinitions
 
 ## <a name="referencing-definitions-from-other-files"></a>Referencia a definiciones de otros archivos
 
-Las definiciones locales pueden hacer referencia a descripciones generadas en otro archivo. Por ejemplo, el mensaje se puede definir en el archivo de código C generado a partir del archivo WSDL, pero el elemento message se puede definir en otro lugar del archivo de código C generado a partir del archivo XSD. En este caso, Wsutil.exe genera una referencia al elemento global desde el archivo que contiene la definición del mensaje, como se muestra a continuación:
+Las definiciones locales pueden hacer referencia a descripciones generadas en otro archivo. Por ejemplo, el mensaje se puede definir en el archivo de código C generado a partir del archivo WSDL, pero el elemento de mensaje se puede definir en otra parte del archivo de código C generado a partir del archivo XSD. En este caso, Wsutil.exe genera una referencia al elemento global desde el archivo que contiene la definición del mensaje, como se muestra a continuación:
 
 ``` syntax
 {  // WS_MESSAGE_DESCRIPTION
@@ -286,7 +286,7 @@ struct { // WSDL
 
 Wsutil.exe genera un campo f que contiene todas las descripciones necesarias para la operación, una matriz signle de punteros a cada una de las descripciones de la operación para cada método y un [**WS \_ CONTRACT \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_contract_description) para el **valor de portType especificado.**
 
-Todas las descripciones necesarias para las operaciones se generan dentro del **campo operationName** en el **valor de portType especificado.** Estos incluyen el [**campo DESCRIPCIÓN DEL ELEMENTO \_ \_ WS,**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) así como la subes structure para los parámetros de entrada y salida s. Del mismo modo, los [**campos WS \_ MESSAGE \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) para el mensaje de entrada y el mensaje de salida opcional se incluyen junto con ; [**WS \_ Campo \_ de lista PARAMETER DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_parameter_description) para todos los parámetros de la operación y el campo [**WS OPERATION \_ \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) para la propia operación. En este ejemplo, la estructura de código para la descripción simpleMethod se genera como se muestra a continuación:
+Todas las descripciones necesarias para las operaciones se generan dentro del **campo operationName** en el **valor de portType especificado.** Estos incluyen el [**campo DESCRIPCIÓN DEL ELEMENTO \_ \_ WS,**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) así como la subes structure para los parámetros de entrada y salida s. Del mismo modo, los [**campos WS \_ MESSAGE \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_message_description) para el mensaje de entrada y el mensaje de salida opcional se incluyen junto con ; [**WS \_ Campo \_ de lista**](/windows/desktop/api/WebServices/ns-webservices-ws_parameter_description) PARAMETER DESCRIPTION para todos los parámetros de la operación y el campo [**WS OPERATION \_ \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) para la propia operación. En este ejemplo, la estructura de código de la descripción simpleMethod se genera como se muestra a continuación:
 
 ``` syntax
 ...
@@ -359,7 +359,7 @@ HRESULT WINAPI bindingName_SimpleMethod(WS_SERVICE_PROXY *serviceProxy,
 }
 ```
 
-El llamador de la operación debe pasar un parámetro *de montón* válido. Los parámetros de salida se asignan mediante el valor heap de WS \_ especificado en el parámetro *del* montón. La función de llamada puede restablecer o liberar el montón para liberar memoria para todos los parámetros de salida. Si se produce un error en la operación, se puede recuperar información de error detallada adicional del objeto de error opcional si está disponible.
+El llamador de la operación debe pasar un parámetro *de montón* válido. Los parámetros de salida se asignan mediante el valor de MONTÓN de WS \_ especificado en el parámetro *del* montón. La función de llamada puede restablecer o liberar el montón para liberar memoria para todos los parámetros de salida. Si se produce un error en la operación, se puede recuperar información de error detallada adicional del objeto de error opcional si está disponible.
 
 Wsutil.exe genera un código auxiliar de servicio para todas las operaciones descritas en enlace.
 
@@ -468,9 +468,9 @@ Cada descripción del mensaje contiene la acción y la descripción del elemento
 
 Wsutil.exe admite operaciones de estilo de documento y de estilo RPC según la especificación WSDL 1.1 Binding Extension for SOAP 1.2 . Las operaciones de estilo RPC y literal se marcan como OPERACIÓN LITERAL RPC de \_ WS. \_ \_ El modelo de servicio omite el nombre del elemento contenedor del cuerpo de respuesta en las operaciones RPC/literales.
 
-Wsutil.exe admite de forma nativa operaciones de estilo de codificación. El parámetro WS XML BUFFER se genera para codificar mensajes y los desarrolladores \_ deben rellenar el búfer \_ opaco directamente.
+Wsutil.exe no admite de forma nativa operaciones de estilo de codificación. El parámetro WS XML BUFFER se genera para codificar mensajes y los desarrolladores \_ deben rellenar el búfer \_ opaco directamente.
 
-## <a name="multiple-message-parts-support"></a>Compatibilidad con varios elementos de mensaje
+## <a name="multiple-message-parts-support"></a>Compatibilidad con varias partes del mensaje
 
 Wsutil.exe admite varias partes del mensaje en un mensaje. Se puede especificar un mensaje de varias partes de la siguiente manera:
 
@@ -488,7 +488,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 
 Wsutil.exe genera un campo [**WS \_ STRUCT \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_type) para el elemento de mensaje si el mensaje contiene varias partes. Si el mensaje se representa mediante el estilo de documento, Wsutil.exe genera un elemento contenedor con el tipo struct. El elemento contenedor no tiene un nombre o un espacio de nombres específico, y la estructura contenedora contiene todos los elementos de todas las partes como campos. El elemento contenedor es solo para uso interno y no se serializará en el cuerpo del mensaje.
 
-Si el mensaje usa una representación de estilo RPC o literal, Wsutil.exe crea un elemento contenedor con el nombre de la operación como nombre del elemento y el espacio de nombres especificado como espacio de nombres de servicio según la especificación de la extensión SOAP de WSDL. La estructura del elemento contiene una matriz de campos que representan los tipos especificados en las partes del mensaje. El elemento contenedor se asigna al elemento superior real en el cuerpo del mensaje, como se indica en la especificación SOAP.
+Si el mensaje usa rpc o representación de estilo literal, Wsutil.exe crea un elemento contenedor con el nombre de la operación como nombre del elemento y el espacio de nombres especificado como espacio de nombres de servicio según la especificación de extensión SOAP de WSDL. La estructura del elemento contiene una matriz de campos que representan los tipos especificados en las partes del mensaje. El elemento contenedor se asigna al elemento superior real en el cuerpo del mensaje, como se indica en la especificación SOAP.
 
 En el lado servidor, cada operación da como resultado una definición de tipo de la operación de servicio de servidor resultante. Esta definición de tipo se usa para hacer referencia a la operación en la tabla de funciones como se describió anteriormente. Cada operación también da como resultado la generación de una función de código auxiliar a la que nfrastructure llama en nombre del delegado al método real.
 
@@ -587,9 +587,9 @@ WS_HTTP_CHANNEL_BINDING,
 
 ## <a name="processing-wsdlservice"></a>Procesar wsdl:service
 
-WsUtil.exe los servicios para buscar binding/porttypes, y genera una estructura de contrato que describe tipos, mensajes, definiciones de tipo de puerto, y así sucesivamente. Las descripciones del contrato son accesibles externamente y se generan como parte de la estructura de definición global especificada a través del encabezado generado.
+WsUtil.exe usa los servicios para buscar binding/porttypes, y genera una estructura de contrato que describe tipos, mensajes, definiciones de tipo de puerto, y así sucesivamente. Las descripciones del contrato son accesibles externamente y se generan como parte de la estructura de definición global especificada a través del encabezado generado.
 
-WsUtil.exe admite extensiones EndpointReference definidas en wsdl:port. La referencia de punto de conexión se define en WS-ADDRESSING como una manera de [describir](endpoint-address.md) la información del punto de conexión de un servicio. El texto de la extensión de referencia de punto de conexión de entrada guardado como [**WS \_ XML \_ STRING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string), junto con la descripción de la dirección de punto de conexión de [**WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address_description) coincidente, se genera en la sección endpointReferences de la estructura global.
+WsUtil.exe admite extensiones EndpointReference definidas en wsdl:port. La referencia de punto de conexión se define en WS-ADDRESSING como una manera de describir la información del [punto](endpoint-address.md) de conexión de un servicio. El texto de la extensión de referencia de punto de conexión de entrada guardado como [**WS \_ XML \_ STRING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string), junto con la descripción de la dirección de punto de conexión de [**WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address_description) coincidente se genera en la sección endpointReferences de la estructura global.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -680,25 +680,25 @@ Wsutil.exe solo admite documentos de esquema XML (XSD) en la especificación wsd
 
 En el modelo de servicio, los mensajes WSDL se asignan a parámetros específicos en un método . Wsutil.exe tiene dos estilos de generación de parámetros: en primer estilo, la operación tiene un parámetro para el mensaje de entrada y un parámetro para el mensaje de salida (si es necesario); en el segundo estilo, Wsutil.exe utiliza una heurística para asignar y expandir los campos de las estructuras de los mensajes de entrada y los mensajes de salida a distintos parámetros de la operación. Los mensajes de entrada y salida deben tener elementos de mensaje de tipo estructura para generar este segundo enfoque.
 
-Wsutil.exe usa las siguientes reglas al generar parámetros de operación a partir de los mensajes de entrada y salida:
+Wsutil.exe las siguientes reglas al generar parámetros de operación a partir de los mensajes de entrada y salida:
 
 -   Para los mensajes de entrada y salida con varias partes del mensaje, cada parte del mensaje es un parámetro independiente en la operación, con el nombre de la parte del mensaje como nombre del parámetro.
 -   Para el mensaje de estilo RPC con una parte del mensaje, la parte del mensaje es un parámetro de la operación, con el nombre de la parte del mensaje como nombre del parámetro.
 -   Para los mensajes de entrada y salida de estilo de documento con una parte del mensaje:
-    -   Si el nombre de una parte del mensaje es "parameters" y el tipo de elemento es una estructura, cada campo de la estructura se trata como un parámetro independiente con el nombre del campo como nombre del parámetro.
+    -   Si el nombre de una parte del mensaje es "parameters" y el tipo de elemento es una estructura, cada campo de la estructura se trata como un parámetro independiente y el nombre del campo es el nombre del parámetro.
     -   Si el nombre de la parte del mensaje no es "parameters", el mensaje es un parámetro de la operación con el nombre del mensaje utilizado como nombre de parámetro correspondiente.
 -   Para el mensaje de entrada y salida de estilo de documento con un elemento nillable, el mensaje se asigna a un parámetro, con el nombre de la parte del mensaje como nombre del parámetro. Se agrega un nivel adicional de direccionamiento indirecto para indicar que el puntero puede ser **NULL.**
 -   Si solo aparece un campo en el elemento de mensaje de entrada, el campo se trata como un \[ parámetro \] in.
 -   Si solo aparece un campo en el elemento de mensaje de salida, el campo se trata como un \[ parámetro \] out.
 -   Si hay un campo con el mismo nombre y el mismo tipo que aparece tanto en el mensaje de entrada como en el mensaje de salida, el campo se trata como un \[ parámetro de entrada y \] salida.
 
-Las siguientes herramientas se usan para determinar la dirección de los parámetros:
+Las herramientas siguientes se usan para determinar la dirección de los parámetros:
 
 -   Si solo aparece un campo en el elemento de mensaje de entrada, el campo se trata como en solo el parámetro .
 -   Si solo aparece un campo en el elemento de mensaje de salida, el campo se trata como un parámetro de solo salida.
 -   Si hay un campo con el mismo nombre y el mismo tipo que aparece tanto en el mensaje de entrada como en el mensaje de salida, el campo se trata como un parámetro de entrada y salida.
 
-Wsutil.exe solo admite elementos secuenciados. Rechaza el orden no válido con respecto a los parámetros de entrada y salida Wsutil.exe no pueden combinar los parámetros in y \[ out en una sola lista de \] parámetros. Los sufijos se pueden agregar a los nombres de parámetro para evitar la colisión de nombres.
+Wsutil.exe solo admite elementos secuenciados. Rechaza la ordenación no válida con respecto a los parámetros de entrada y salida si Wsutil.exe los parámetros in y out en \[ una sola lista de \] parámetros. Se pueden agregar sufijos a los nombres de parámetro para evitar la colisión de nombres.
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Example.org" 
@@ -746,7 +746,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Wsutil.exe expande la lista de parámetros de los campos de la lista anterior y genera la **estructura ParamStruct** en el ejemplo de código siguiente. El modelo de servicio en tiempo de ejecución puede usar esta estructura para pasar argumentos al código auxiliar de cliente y servidor.
+Wsutil.exe expande la lista de parámetros de los campos de la lista anterior y genera la **estructura ParamStruct** en el ejemplo de código siguiente. El modelo de servicio en tiempo de ejecución puede usar esta estructura para pasar argumentos a los códigos auxiliares de cliente y servidor.
 
 ``` syntax
 typedef struct SimpleMethodParamStruct {
@@ -807,7 +807,7 @@ Esta estructura solo se usa para describir el marco de pila en el lado cliente y
   },    // message description for ISimpleService_SimpleMethod_InputMessage
 ```
 
-Como regla general, se agrega un nivel de direccionamiento indirecto para todos los \[ parámetros out \] e \[ \] in-out.
+Como regla general, se agrega un nivel de direccionamiento indirecto para todos los \[ parámetros out \] e \[ \] in,out.
 
 ## <a name="parameterless-operation"></a>Operación sin parámetros
 
@@ -836,7 +836,7 @@ SimpleMethodResponse  * SimpleMethodResponse;
 } ISimpleService_SimpleMethodParamStruct;
 ```
 
-Wsutil.exe genera una firma de versión para la descripción de la operación de forma que el motor del modelo de servicio del lado servidor y WsCall pueda comprobar si la descripción generada es aplicable a la plataforma actual.
+Wsutil.exe genera una firma de versión para la descripción de la operación, de modo que el motor del modelo de servicio del lado servidor y WsCall pueda comprobar si la descripción generada es aplicable a la plataforma actual.
 
 Esta información de versión se genera como parte de la [**estructura WS \_ OPERATION \_ DESCRIPTION.**](/windows/desktop/api/WebServices/ns-webservices-ws_operation_description) El número de versión se puede tratar como un selector de arm de unión para que la estructura sea extensible. Actualmente, **versionID** se establece en 1 sin campos posteriores. Las versiones futuras pueden incrementar el número de versión e incluir más campos según sea necesario. Por ejemplo, Wsutil.exe genera actualmente el código siguiente basado en el identificador de versión:
 

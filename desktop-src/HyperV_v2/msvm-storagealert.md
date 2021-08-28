@@ -25,12 +25,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 478b4617f56c73e425d833842b313767f85c385e9142314a7ca8978b5783f492
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41af5f29f54dc0b5c7e63203c43160539bcaa870
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950234"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886585"
 ---
 # <a name="msvm_storagealert-class"></a>Clase StorageAlert de Msvm \_
 
@@ -83,7 +83,7 @@ Tipo de acceso: solo lectura
 Calificadores: **ModelCorrespondence** ("CIM \_ AlertIndication.AlertingManagedElement", "CIM \_ AlertIndication.OtherAlertingElementFormat")
 </dt> </dl>
 
-Especifica el formato de la **propiedad AlertingManagedElement.** El formato es CIMObjectPath, con el formato *<NamespacePath> : . " <ClassName> <Prop1> = \\ <Value1> \\ ", " <Prop2> = \\ " " <Value2> \\ ,* que especifica una instancia en el esquema CIM.
+Especifica el formato de la **propiedad AlertingManagedElement.** El formato es CIMObjectPath, con el formato *&lt; NamespacePath &gt; : &lt; ClassName &gt; . &lt; Prop1 &gt; = \\ " &lt; Value1 &gt; \\ ", " &lt; Prop2 &gt; = \\ " &lt; Value2 &gt; \\ "*, que especifica una instancia en el esquema CIM.
 
 Esta propiedad se hereda de la **clase \_ AlertIndication de CIM.**
 
@@ -183,7 +183,7 @@ Tipo de acceso: solo lectura
 
 Identifica de forma única, dentro del ámbito de la **propiedad OwningEntity,** el formato de la **propiedad Message.** Los posibles valores para esta propiedad son:
 
-32930 ("Storage de rendimiento insuficiente de QoS del grupo")
+32930 ("Storage de rendimiento insuficiente de QoS del grupo de servidores")
 
 </dd> <dt>
 
@@ -278,14 +278,14 @@ El proveedor WMI de Hyper-V no genera eventos para discos virtuales individuales
 
 Cuando un cliente recibe un evento **\_ StorageAlert de Msvm,** si el valor de la propiedad **ProbableCause** es 50 (problema de capacidad de Storage), el cliente puede detectar qué discos virtuales funcionan fuera de su directiva qoS mediante uno de estos procedimientos:
 
--   Consulte todas las [**instancias de \_ Msvm LogicalDisk**](msvm-logicaldisk.md) que se asignaron desde el grupo de recursos para el que se generó el evento. Estas **instancias de Msvm \_ LogicalDisk** están asociadas al grupo de recursos mediante la asociación [**\_ ElementAllocatedFromPool de Msvm.**](msvm-elementallocatedfrompool.md)
+-   Consulte todas las [**instancias de \_ Msvm LogicalDisk**](msvm-logicaldisk.md) que se asignaron desde el grupo de recursos para el que se generó el evento. Estas **instancias de \_ Msvm LogicalDisk** están asociadas al grupo de recursos a través de la asociación [**\_ ElementAllocatedFromPool de Msvm.**](msvm-elementallocatedfrompool.md)
 -   Filtre la lista de resultados seleccionando instancias cuyo OperationalStatus contiene Rendimiento insuficiente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |

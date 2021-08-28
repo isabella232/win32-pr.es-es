@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 84e52c329fc311e7f99a6564ac51f90574308e31fa1eaa90bfb6d0bcdddc69b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebbfbc1061d8bca03f52dd8cb7583fbe23ebb33a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130877"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885250"
 ---
 # <a name="scripting-api-constants"></a>Constantes de API de scripting
 
 WMI usa varios tipos de constantes en el parámetro *iflags* de las llamadas de método en [scripting API para WMI.](scripting-api-for-wmi.md)
 
-Visual Basic aplicaciones pueden incluir la biblioteca de tipos para la API de scripting, Wbemdisp.tlb. Los scripts no pueden acceder a las constantes de la biblioteca de tipos a menos que usen las etiquetas o del formato de archivo XML del host de <REFERENCE> <OBJECT> script de Windows (WSH), como se describe en Uso de la biblioteca de tipos de [scripting](using-the-wmi-scripting-type-library.md)wmi . De lo contrario, un script debe usar el valor de la constante.
+Visual Basic aplicaciones pueden incluir la biblioteca de tipos para la API de scripting, Wbemdisp.tlb. Los scripts no pueden tener acceso a las constantes de la biblioteca de tipos a menos que usen las etiquetas REFERENCE u OBJECT del formato de archivo XML del host de &lt; &gt; script de Windows &lt; &gt; (WSH), [](using-the-wmi-scripting-type-library.md)como se describe en Uso de la biblioteca de tipos de scripting wmi . De lo contrario, un script debe usar el valor de la constante.
 
 ## <a name="constants"></a>Constantes
 

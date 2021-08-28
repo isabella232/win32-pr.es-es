@@ -4,12 +4,12 @@ ms.assetid: add98d8f-6846-4dd6-b0e2-a4b6e89cbcc5
 title: Compresión de bloques (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edf93a9d475b21b54baa59f9324a7f69b043bb0c21787c0c2892bfdbe2f6c66d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90068e932d94a7b76e871313e60a50260dbaf479
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118101304"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480561"
 ---
 # <a name="block-compression-direct3d-10"></a>Compresión de bloques (Direct3D 10)
 
@@ -83,9 +83,9 @@ Si tiene código de aplicación que usa un puntero de memoria para recorrer la m
 
 ![diagrama de niveles de asignación mipmap sin comprimir y comprimidos](images/d3d10-block-compress-pad.png)
 
-El lado izquierdo del diagrama muestra los tamaños de nivel de mapa mip que se generan para una textura de 60×40 sin comprimir. El tamaño de nivel superior se toma de la llamada API que genera la textura; cada nivel posterior es la mitad del tamaño del nivel anterior. Para una textura sin comprimir, no hay ninguna diferencia entre el tamaño virtual (declarado) y el tamaño físico (real).
+En el lado izquierdo del diagrama se muestran los tamaños de nivel de mapa mip que se generan para una textura de 60×40 sin comprimir. El tamaño de nivel superior se toma de la llamada API que genera la textura; cada nivel posterior es la mitad del tamaño del nivel anterior. Para una textura sin comprimir, no hay ninguna diferencia entre el tamaño virtual (declarado) y el tamaño físico (real).
 
-El lado derecho del diagrama muestra los tamaños de nivel de mapa mip que se generan para la misma textura de 60×40 con compresión. Observe que tanto el segundo como el tercer nivel tienen relleno de memoria para que los factores de tamaño de 4 en cada nivel. Esto es necesario para que los algoritmos puedan funcionar en bloques de 4×4 texel. Esto es evidente si se tienen en cuenta los niveles de mapa mip que son menores que 4×4; El tamaño de estos niveles de mapa mip muy pequeños se redondeará al factor más cercano de 4 cuando se asigne memoria de textura.
+El lado derecho del diagrama muestra los tamaños de nivel de mapa mip que se generan para la misma textura de 60×40 con compresión. Observe que tanto el segundo como el tercer nivel tienen relleno de memoria para que los factores de tamaño de 4 en cada nivel. Esto es necesario para que los algoritmos puedan funcionar en bloques de 4×4 elementos de textura. Esto es evidente si se tienen en cuenta los niveles de mapa mip que son menores que 4×4; El tamaño de estos niveles de mapa mip muy pequeños se redondeará al factor más cercano de 4 cuando se asigne memoria de textura.
 
 El hardware de muestreo usa el tamaño virtual; cuando se muestrea la textura, se omite el relleno de memoria. En el caso de los niveles de mapa mip que son menores que 4×4, solo se usarán los cuatro primeros elementos de textura para un mapa de 2×2 y solo un bloque 1×1 usará el primer texel. Sin embargo, no hay ninguna estructura de API que exponga el tamaño físico (incluido el relleno de memoria).
 
@@ -119,7 +119,7 @@ Direct3D implementa varios esquemas de compresión, cada uno implementa un equil
 
 Use el primer formato de compresión de bloque (BC1) (DXGI FORMAT BC1 TYPELESS, DXGI FORMAT BC1 UNORM o DXGI BC1 UNORM SRGB) para almacenar datos de color de tres componentes mediante un \_ \_ color de \_ \_ \_ \_ \_ \_ \_ 5:6:5 (5 bits rojo, 6 bits verde, 5 bits azul). Esto es así incluso si los datos también contienen alfa de 1 bit. Suponiendo una textura de 4×4 con el formato de datos más grande posible, el formato BC1 reduce la memoria necesaria de 48 bytes (16 colores × 3 componentes/color × 1 byte/componente) a 8 bytes de memoria.
 
-El algoritmo funciona en bloques de 4 ×4 de elementos de textura. En lugar de almacenar 16 colores, el algoritmo guarda 2 colores de referencia (color 0 y color 1) y 16 índices de color de 2 bits \_ (bloques a–p), como se muestra en el \_ diagrama siguiente.
+El algoritmo funciona en 4×4 bloques de texturas. En lugar de almacenar 16 colores, el algoritmo guarda 2 colores de referencia (color 0 y color 1) y 16 índices de color de 2 bits \_ (bloques a–p), como se muestra en el \_ diagrama siguiente.
 
 ![diagrama del diseño para la compresión bc1](images/d3d10-compression-bc1.png)
 
@@ -159,20 +159,9 @@ color_3 = 0;
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferencias entre Direct3D 9 y Direct3D 10:<br/> Este formato existe tanto en Direct3D 9 como en 10.<br/>
-<ul>
-<li>En Direct3D 9, el formato BC1 se denomina D3DFMT_DXT1.</li>
-<li>En Direct3D 10, el formato BC1 se representa mediante DXGI_FORMAT_BC1_UNORM o DXGI_FORMAT_BC1_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferencias entre Direct3D 9 y Direct3D 10:<br /> Este formato existe en Direct3D 9 y 10.<br /><ul><li>En Direct3D 9, el formato BC1 se denomina D3DFMT_DXT1.</li><li>En Direct3D 10, el formato BC1 se representa mediante DXGI_FORMAT_BC1_UNORM o DXGI_FORMAT_BC1_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -180,26 +169,15 @@ color_3 = 0;
 
 ### <a name="bc2"></a>BC2
 
-Use el formato BC2 (DXGI \_ FORMAT \_ BC2 \_ TYPELESS, DXGI \_ FORMAT BC2 UNORM o \_ \_ DXGI \_ BC2 \_ UNORM SRGB) \_ [](#bc3) para almacenar datos que contengan datos de color y alfa con baja coherencia (use BC3 para datos alfa altamente coherentes). El formato BC2 almacena los datos RGB como un color de 5:6:5 (5 bits rojos, 6 bits verdes, 5 bits azules) y alfa como un valor de 4 bits independiente. Suponiendo que una textura de 4×4 usa el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 64 bytes (16 colores × 4 componentes/color × 1 byte/componente) a 16 bytes de memoria.
+Use el formato BC2 (DXGI \_ FORMAT \_ BC2 \_ TYPELESS, DXGI \_ FORMAT BC2 UNORM o \_ \_ DXGI \_ BC2 \_ UNORM SRGB) \_ [](#bc3) para almacenar datos que contengan datos de color y alfa con baja coherencia (use BC3 para datos alfa altamente coherentes). El formato BC2 almacena los datos RGB como un color de 5:6:5 (5 bits rojo, 6 bits verde, 5 bits azul) y alfa como un valor de 4 bits independiente. Suponiendo que una textura de 4×4 usa el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 64 bytes (16 colores × 4 componentes/color × 1 byte/componente) a 16 bytes de memoria.
 
 El formato BC2 almacena colores con el mismo número de bits y diseño de datos que el [formato BC1;](#bc1) sin embargo, BC2 requiere 64 bits de memoria adicionales para almacenar los datos alfa, como se muestra en el diagrama siguiente.
 
 ![diagrama del diseño para la compresión bc2](images/d3d10-compression-bc2.png)
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferencias entre Direct3D 9 y Direct3D 10:<br/> Este formato existe tanto en Direct3D 9 como en 10.<br/>
-<ul>
-<li>En Direct3D 9, el formato BC2 se denomina D3DFMT_DXT2 y D3DFMT_DXT3.</li>
-<li>En Direct3D 10, el formato BC2 se representa mediante DXGI_FORMAT_BC2_UNORM o DXGI_FORMAT_BC2_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferencias entre Direct3D 9 y Direct3D 10:<br /> Este formato existe en Direct3D 9 y 10.<br /><ul><li>En Direct3D 9, el formato BC2 se denomina D3DFMT_DXT2 y D3DFMT_DXT3.</li><li>En Direct3D 10, el formato BC2 se representa mediante DXGI_FORMAT_BC2_UNORM o DXGI_FORMAT_BC2_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -211,7 +189,7 @@ Use el formato BC3 (DXGI \_ FORMAT \_ BC3 \_ TYPELESS, DXGI \_ FORMAT BC3 UNORM 
 
 El formato BC3 almacena colores con el mismo número de bits y diseño de datos que el [formato BC1;](#bc1) sin embargo, BC3 requiere 64 bits de memoria adicionales para almacenar los datos alfa. El formato BC3 controla el alfa almacenando dos valores de referencia e interpolando entre ellos (de forma similar a cómo BC1 almacena el color RGB).
 
-El algoritmo funciona en bloques × 4 de elementos de textura. En lugar de almacenar 16 valores alfa, el algoritmo almacena 2 alfas de referencia (alfa 0 y alfa 1) y 16 índices de color de 3 bits (alfa a a p), como se muestra en el \_ \_ diagrama siguiente.
+El algoritmo funciona en bloques ×4 de elementos de textura. En lugar de almacenar 16 valores alfa, el algoritmo almacena 2 alfas de referencia (alfa 0 y alfa 1) y 16 índices de color de 3 bits (alfa a a p), como se muestra en el \_ \_ diagrama siguiente.
 
 ![diagrama del diseño para la compresión bc3](images/d3d10-compression-bc3.png)
 
@@ -247,20 +225,9 @@ else
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Diferencias entre Direct3D 9 y Direct3D 10:<br/>
-<ul>
-<li>En Direct3D 9, el formato BC3 se denomina D3DFMT_DXT4 y D3DFMT_DXT5.</li>
-<li>En Direct3D 10, el formato BC3 se representa mediante DXGI_FORMAT_BC3_UNORM o DXGI_FORMAT_BC3_UNORM_SRGB.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| | | Diferencias entre Direct3D 9 y Direct3D 10:<br /><ul><li>En Direct3D 9, el formato BC3 se denomina D3DFMT_DXT4 y D3DFMT_DXT5.</li><li>En Direct3D 10, el formato BC3 se representa mediante DXGI_FORMAT_BC3_UNORM o DXGI_FORMAT_BC3_UNORM_SRGB.</li></ul> | 
+
 
 
 
@@ -270,13 +237,13 @@ else
 
 Use el formato BC4 para almacenar datos de color de un componente con 8 bits para cada color. Como resultado de la mayor precisión (en comparación con [BC1), BC4](#bc1)es ideal para almacenar datos de punto flotante en el intervalo de 0 a 1 mediante el formato DXGI FORMAT BC4 UNORM y -1 a +1 con el formato \[ \] \_ \_ \_ \[ \] DXGI \_ FORMAT \_ BC4 \_ SNORM. Suponiendo que una textura de 4×4 usa el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 16 bytes (16 colores × 1 componentes/color × 1 byte/componente) a 8 bytes.
 
-El algoritmo funciona en bloques × 4 de elementos de textura. En lugar de almacenar 16 colores, el algoritmo almacena 2 colores de referencia (rojo 0 y rojo 1) y 16 índices de color de 3 bits (rojo a a rojo p), como se muestra en el \_ \_ diagrama siguiente.
+El algoritmo funciona en bloques ×4 de elementos de textura. En lugar de almacenar 16 colores, el algoritmo almacena 2 colores de referencia (rojo 0 y rojo 1) y 16 índices de color de 3 bits (rojo a a rojo p), como se muestra en el \_ \_ diagrama siguiente.
 
 ![diagrama del diseño para la compresión bc4](images/d3d10-compression-bc4.png)
 
 El algoritmo usa los índices de 3 bits para buscar colores de una tabla de colores que contiene 8 colores. Los dos primeros \_ colores(rojo 0 y \_ rojo 1) son los colores mínimo y máximo. El algoritmo calcula los colores restantes mediante la interpolación lineal.
 
-El algoritmo determina el número de valores de color interpolados examinando los dos valores de referencia. Si rojo 0 es mayor que rojo 1, BC4 interpola 6 valores de color; de lo \_ \_ contrario, interpola 4. Cuando BC4 interpola solo 4 valores de color, establece dos valores de color adicionales (0,0f para totalmente transparente y 1,0f para totalmente opacos). BC4 comprime los valores alfa del área de texel 4×4 almacenando el código de bits correspondiente a los valores alfa interpolados que más se corresponden con el alfa original para un texel determinado.
+El algoritmo determina el número de valores de color interpolados examinando los dos valores de referencia. Si rojo 0 es mayor que rojo 1, BC4 interpola 6 valores de color; de lo \_ \_ contrario, interpola 4. Cuando BC4 interpola solo 4 valores de color, establece dos valores de color adicionales (0,0f para totalmente transparente y 1,0f para totalmente opacos). BC4 comprime los valores alfa del área de textura 4×4 almacenando el código de bits correspondiente a los valores alfa interpolados que más se corresponden con el alfa original para un texel determinado.
 
 -   [BC4 \_ UNORM](/windows)
 -   [BC4 \_ SNORM](/windows)
@@ -351,13 +318,13 @@ A los colores de referencia se les asignan índices de 3 bits (de 000 a 111, ya 
 
 ### <a name="bc5"></a>BC5
 
-Use el formato BC5 para almacenar datos de color de dos componentes con 8 bits para cada color. Como resultado de la mayor precisión (en comparación con [BC1), BC5](#bc1)es ideal para almacenar datos de punto flotante en el intervalo de 0 a 1 mediante el formato DXGI FORMAT BC5 UNORM y -1 a +1 mediante el formato \[ \] \_ \_ \_ \[ \] DXGI \_ FORMAT \_ BC5 \_ SNORM. Suponiendo que una textura de 4×4 usa el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 32 bytes (16 colores × 2 componentes/color × 1 byte/componente) a 16 bytes.
+Use el formato BC5 para almacenar datos de color de dos componentes con 8 bits para cada color. Como resultado de la mayor precisión (en comparación con [BC1), BC5](#bc1)es ideal para almacenar datos de punto flotante en el intervalo de 0 a 1 mediante el formato DXGI FORMAT BC5 UNORM y -1 a +1 con el formato \[ \] \_ \_ \_ \[ \] DXGI \_ FORMAT \_ BC5 \_ SNORM. Suponiendo que una textura de 4×4 usa el formato de datos más grande posible, esta técnica de compresión reduce la memoria necesaria de 32 bytes (16 colores × 2 componentes/color × 1 byte/componente) a 16 bytes.
 
-El algoritmo funciona en bloques × 4 de elementos de textura. En lugar de almacenar 16 colores para ambos componentes, el algoritmo almacena 2 colores de referencia para cada componente (rojo \_ 0, rojo 1, verde 0 y verde \_ \_ 1) y 16 índices de color de 3 bits para cada componente (rojo a a p rojo y verde de a a verde p), como se muestra en el \_ diagrama siguiente.
+El algoritmo funciona en bloques ×4 de elementos de textura. En lugar de almacenar 16 colores para ambos componentes, el algoritmo almacena 2 colores de referencia para cada componente (rojo \_ 0, rojo 1, verde 0 y verde \_ \_ 1) y 16 índices de color de 3 bits para cada componente (rojo a a p rojo y verde de a verde p), como se muestra en el \_ diagrama siguiente.
 
 ![diagrama del diseño para la compresión bc5](images/d3d10-compression-bc5.png)
 
-El algoritmo usa los índices de 3 bits para buscar colores de una tabla de colores que contiene 8 colores. Los dos primeros colores,rojo 0 y \_ rojo \_ 1 (o verde 0 y verde \_ 1) son los colores mínimo \_ y máximo. El algoritmo calcula los colores restantes mediante la interpolación lineal.
+El algoritmo usa los índices de 3 bits para buscar colores de una tabla de colores que contiene 8 colores. Los dos primeros colores(rojo 0 y rojo \_ \_ 1) (o verde 0 y \_ verde 1) son los colores mínimo \_ y máximo. El algoritmo calcula los colores restantes mediante la interpolación lineal.
 
 El algoritmo determina el número de valores de color interpolados examinando los dos valores de referencia. Si rojo 0 es mayor que rojo 1, BC5 interpola 6 valores de color; de lo \_ \_ contrario, interpola 4. Cuando BC5 interpola solo 4 valores de color, establece los dos valores de color restantes en 0,0f y 1,0f.
 
@@ -455,7 +422,7 @@ Para reinterpretar 'f' como el tipo de 'u', use [memcpy](/cpp/c-runtime-library/
 
 
 
-En la reinterpretación anterior, el valor subyacente de los datos no cambia; [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy) reinterpreta float como un entero sin signo.
+En la reinterpretación anterior, el valor subyacente de los datos no cambia; [memcpy](/cpp/c-runtime-library/reference/memcpy-wmemcpy) reinterpreta el valor float como un entero sin signo.
 
 Para realizar el tipo de conversión más típico, use asignación:
 
@@ -472,11 +439,11 @@ En la tabla siguiente se enumeran los formatos de origen y destino permitidos qu
 
 
 
-| Ancho de bits | Recurso sin comprimir                                                                                                                                               | Block-Compressed recurso                                                                                                                                           |
+| Ancho de bits | Recurso sin comprimir                                                                                                                                               | Block-Compressed resource                                                                                                                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 32        | DXGI \_ FORMAT \_ R32 \_ UINT<br/> DXGI \_ FORMAT \_ R32 \_ SINT<br/>                                                                                               | FORMATO DXGI \_ \_ R9G9B9E5 \_ SHAREDEXP                                                                                                                                   |
-| 64        | DXGI \_ FORMAT \_ R16G16B16A16 \_ UINT<br/> DXGI \_ FORMAT \_ R16G16B16A16 \_ SINT<br/> DXGI \_ FORMAT \_ R32G32 \_ UINT<br/> DXGI \_ FORMAT \_ R32G32 \_ SINT<br/> | DXGI \_ FORMAT \_ BC1 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC4 \_ UNORM<br/> DXGI \_ FORMAT \_ BC4 \_ SNORM<br/>                                               |
-| 128       | DXGI \_ FORMAT \_ R32G32B32A32 \_ UINT<br/> DXGI \_ FORMAT \_ R32G32B32A32 \_ SINT<br/>                                                                             | DXGI \_ FORMAT \_ BC2 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC3 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC5 \_ UNORM<br/> DXGI \_ FORMAT \_ BC5 \_ SNORM<br/> |
+| 64        | FORMATO DXGI \_ \_ R16G16B16A16 \_ UINT<br/> FORMATO DXGI \_ \_ R16G16B16A16 \_ SINT<br/> FORMATO DXGI \_ \_ R32G32 \_ UINT<br/> FORMATO DXGI \_ \_ R32G32 \_ SINT<br/> | DXGI \_ FORMAT \_ BC1 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC4 \_ UNORM<br/> DXGI \_ FORMAT \_ BC4 \_ SNORM<br/>                                               |
+| 128       | FORMATO DXGI \_ \_ R32G32B32A32 \_ UINT<br/> FORMATO DXGI \_ \_ R32G32B32A32 \_ SINT<br/>                                                                             | DXGI \_ FORMAT \_ BC2 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC3 \_ UNORM \[ \_ SRGB\]<br/> DXGI \_ FORMAT \_ BC5 \_ UNORM<br/> DXGI \_ FORMAT \_ BC5 \_ SNORM<br/> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetResetTableSequential (función)'
-title: JetResetTableSequential función)
+description: 'Más información sobre: JetResetTableSequential (Función)'
+title: JetResetTableSequential (Función)
 TOCTitle: JetResetTableSequential Function
 ms:assetid: 5fe9daf2-5ef1-46d6-b0c3-ef92fb57d8bb
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269261(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 86de80ac935af81fd2b4e8fdfef8b20dbb8d27d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b57e8f04f69672029963ad1573321a45804ab45f
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706443"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482801"
 ---
-# <a name="jetresettablesequential-function"></a>JetResetTableSequential función)
+# <a name="jetresettablesequential-function"></a>JetResetTableSequential (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetresettablesequential-function"></a>JetResetTableSequential función)
+## <a name="jetresettablesequential-function"></a>JetResetTableSequential (Función)
 
-La función **JetResetTableSequential** notifica al motor de base de datos que la aplicación ya no examina todo el índice actual que contiene un cursor determinado. Esta llamada invierte una notificación enviada por [JetSetTableSequential](./jetsettablesequential-function.md).
+La **función JetResetTableSequential** notifica al motor de base de datos que la aplicación ya no está analizando todo el índice actual que contiene un cursor determinado. Esta llamada invierte una notificación enviada por [JetSetTableSequential.](./jetsettablesequential-function.md)
 
-**Windows XP:**   **JetResetTableSequential** se presentó en Windows XP.
+**Windows XP:****JetResetTableSequential** se introdujo en Windows XP.   
 
 ```cpp
     JET_ERR JET_API JetResetTableSequential(
@@ -50,7 +50,7 @@ La función **JetResetTableSequential** notifica al motor de base de datos que l
 
 Sesión que se va a usar para esta llamada.
 
-*TABLEID*
+*tableid*
 
 Cursor que se va a usar para esta llamada.
 
@@ -60,86 +60,33 @@ Reservado para uso futuro.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No es posible completar la operación porque se ha interrumpido toda la actividad en la instancia asociada a la sesión como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo se devolverá en Windows XP y versiones posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No es posible completar la operación porque todavía no se ha inicializado la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
+
 
 
 Si se ejecuta correctamente, el índice actual del cursor ya no está optimizado para un examen secuencial de todo el índice. No se producirá ningún cambio en el estado de la base de datos.
 
 En caso de error, no se producirá ningún cambio en la configuración del cursor. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Es seguro realizar esta llamada en un cursor que no se haya configurado previamente mediante una llamada a [JetSetTableSequential](./jetsettablesequential-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

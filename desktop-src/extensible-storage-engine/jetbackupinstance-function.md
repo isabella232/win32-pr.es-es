@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 138d95c80070d8e1b1d7c958534cd93965db47aa
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0a32b07ddcbe36a2a986a669592d3e047fc74178
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472671"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983758"
 ---
 # <a name="jetbackupinstance-function"></a>Función JetBackupInstance
 
@@ -62,7 +62,7 @@ Directorio donde se almacena la copia de seguridad. Si la ruta de acceso de copi
 Grupo de bits que especifica cero o más de las opciones siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitBackupAtomic</p> | <p>Crea una copia de seguridad completa de la base de datos. Esto permite conservar una copia de seguridad existente en el mismo directorio si se produce un error en la nueva copia de seguridad.</p> | 
 | <p>JET_bitBackupIncremental</p> | <p>Crea una copia de seguridad incremental en lugar de una copia de seguridad completa. Esto significa que solo se realizará una copia de seguridad de los archivos de registro creados desde la última copia de seguridad completa o incremental.</p> | 
@@ -72,11 +72,11 @@ Grupo de bits que especifica cero o más de las opciones siguientes.
 
 *pfnStatus*
 
-Puntero a la [JET_PFNSTATUS](./jet-pfnstatus-callback-function.md) de devolución de llamada, que proporciona información de notificación sobre el progreso de la operación de copia de seguridad.
+Puntero a [la](./jet-pfnstatus-callback-function.md) JET_PFNSTATUS de devolución de llamada, que proporciona información de notificación sobre el progreso de la operación de copia de seguridad.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -109,7 +109,7 @@ Al mismo tiempo, los encabezados de base de datos se actualizarán con la inform
 
 En caso de error, no habrá ningún archivo en el destino del directorio de copia de seguridad, por lo que no será posible realizar ninguna restauración. Al mismo tiempo, los archivos de registro actuales no se truncarán.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Los distintos pasos de la copia de seguridad tendrán entradas del registro de eventos generadas, incluidos los nombres de archivo, el truncamiento del registro y el resultado final de la copia de seguridad.
 
@@ -117,7 +117,7 @@ La copia de seguridad incremental solo es posible después de realizar una copia
 
 El directorio de copia de seguridad debe existir a menos que se *JET_paramCreatePathIfNotExist* parámetro para la instancia. Para obtener información, vea [Parámetros del sistema](./extensible-storage-engine-system-parameters.md).
 
-La copia de seguridad realizará la comprobación de suma de comprobación en todas las páginas de base de datos usadas y a partir de Windows Server 2003, en los archivos de registro también. Esto ofrece la oportunidad de calcular el estado de la base de datos incluso para las páginas que no se leen durante las operaciones normales. Si se produce algún daño de este tipo, se producirá un error en la copia de seguridad.
+La copia de seguridad realizará la comprobación de suma de comprobación en todas las páginas de base de datos usadas y a partir de Windows Server 2003, también en los archivos de registro. Esto ofrece la oportunidad de calcular el estado de la base de datos incluso para las páginas que no se leen durante las operaciones normales. Si se produce algún daño de este tipo, se producirá un error en la copia de seguridad.
 
 Durante la copia de seguridad, se finalizará el archivo de registro actual e iniciaremos una nueva generación de registros. Esto permitirá copiar los archivos de registro necesarios porque el último necesario ya no estará en uso.
 
@@ -126,7 +126,14 @@ Se recomienda encarecidamente que la copia de seguridad no se utilice para otros
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetBackupInstanceW</strong> (Unicode) y <strong>JetBackupInstanceA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetBackupInstanceW</strong> (Unicode) y <strong>JetBackupInstanceA</strong> (ANSI).</p> | 
 
 
 

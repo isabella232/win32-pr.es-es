@@ -1,19 +1,19 @@
 ---
-description: ICEM08 garantiza que un módulo no excluya otro módulo del que depende.
+description: ICEM08 garantiza que un módulo no excluya otro módulo del que dependa.
 ms.assetid: 56d115b4-7410-4db2-a9af-bc6716f3358d
 title: ICEM08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43f5d0076de382889e5fd3df8a03dddb51c6a73eb5a4f825068f6cd66ad24d07
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6c953c40d29458613b0fc2027dd691adb672eb15
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119811015"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884214"
 ---
 # <a name="icem08"></a>ICEM08
 
-ICEM08 garantiza que un módulo no excluya otro módulo del que depende.
+ICEM08 garantiza que un módulo no excluya otro módulo del que dependa.
 
 ## <a name="result"></a>Resultado
 
@@ -28,13 +28,13 @@ Error: This module requires module ModuleB.<GUID> (1033v1.0) but also
 lists it as an exclusion.
 ```
 
-[ModuleDependency Table](moduledependency-table.md)
+[ModuleDependency (tabla)](moduledependency-table.md)
 
 
 
 | ModuleID             | ModuleLanguage | RequiredID           | RequiredLanguage | RequiredVersion |
 |----------------------|----------------|----------------------|------------------|-----------------|
-| ModuleA.<GUID> | 3082           | ModuleB.<GUID> | 3082             | 1.0             |
+| ModuleA. &lt; GUID&gt; | 3082           | ModuleB. &lt; GUID&gt; | 3082             | 1,0             |
 
 
 
@@ -46,7 +46,7 @@ lists it as an exclusion.
 
 | ModuleID             | ModuleLanguage | ExcludedID           | ExcludedLanguage | ExcludedMinVersion | ExcludedMaxVersion |
 |----------------------|----------------|----------------------|------------------|--------------------|--------------------|
-| ModuleA.<GUID> | 3082           | ModuleB.<GUID> | 3082             |                    | 1.0                |
+| ModuleA. &lt; GUID&gt; | 3082           | ModuleB. &lt; GUID&gt; | 3082             |                    | 1,0                |
 
 
 

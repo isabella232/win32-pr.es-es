@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 57c9265f45412bd31e087a52ab2b923c9c55c430
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0e2e6d6e812b5f56c89eba2e4b19d2730d589548
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467662"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985208"
 ---
 # <a name="jet_dbinfoupgrade-structure"></a>Estructura de JET_DBINFOUPGRADE
 
@@ -53,7 +53,7 @@ La **JET_DBINFOUPGRADE** contiene información sobre el estado de actualización
 
 **cbStruct**
 
-Se establece en el tamaño de la **estructura JET_DBINFOUPGRADE,** en bytes.
+Establezca en el tamaño de la **estructura JET_DBINFOUPGRADE,** en bytes.
 
 **cbFilesizeLow**
 
@@ -69,7 +69,7 @@ DWORD **bajo del** espacio en disco libre estimado necesario para una actualizac
 
 **cbFreeSpaceRequiredHigh**
 
-DWORD **elevado del** espacio en disco libre estimado necesario para una actualización local.
+DWORD **elevado de** espacio libre estimado en disco necesario para una actualización local.
 
 **csecToUpgrade**
 
@@ -87,14 +87,18 @@ La base de datos se puede actualizar.
 
 La base de datos se actualiza al formato de base de datos actual.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-Una **JET_DBINFOUPGRADE** estructura se rellena mediante una llamada a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo.](./jetgetdatabasefileinfo-function.md) Si la función no se realiza correctamente, el contenido de la estructura no está definido.
+Una **JET_DBINFOUPGRADE** estructura se rellena mediante una llamada a [JetGetDatabaseInfo](./jetgetdatabaseinfo-function.md) o [JetGetDatabaseFileInfo](./jetgetdatabasefileinfo-function.md). Si la función no se realiza correctamente, el contenido de la estructura no está definido.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

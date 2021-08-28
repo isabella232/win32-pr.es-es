@@ -1,19 +1,19 @@
 ---
-description: El <scopeItem> elemento representa una sola entrada en la tabla de ámbito de exclusión o inclusión.
+description: El &lt; elemento scopeItem &gt; representa una sola entrada en la tabla de ámbitos de exclusión o inclusión.
 ms.assetid: 18a58b3b-771c-4829-b3d4-253383b4bee8
 title: elemento scopeItem (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67bf8cc7ba9d296503a9703845d8a03287006ed178dca7f51228e89827a0c710
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46a585acd065efcbc58091d4c8bebce733ed2c73
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118051507"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880443"
 ---
 # <a name="scopeitem-element-search-connector-schema"></a>elemento scopeItem (esquema del conector de búsqueda)
 
-El <scopeItem> elemento representa una sola entrada en la tabla de ámbito de exclusión o inclusión. <scopeItem> extiende el tipo shellLinkType estándar agregando tres nuevos elementos que controlan la inclusión y exclusión de carpetas, controlan la profundidad de los resultados y especifican la ubicación del ámbito. Si el <scope> elemento existe, este elemento es obligatorio. Tiene tres elementos secundarios y no tiene atributos.
+El &lt; elemento scopeItem &gt; representa una sola entrada en la tabla de ámbitos de exclusión o inclusión. &lt;scopeItem amplía el tipo shellLinkType estándar agregando tres nuevos elementos que controlan la inclusión y exclusión de carpetas, controlan la profundidad de los resultados y especifican la ubicación &gt; del ámbito. Si el &lt; elemento &gt; de ámbito existe, este elemento es obligatorio. Tiene tres elementos secundarios y no tiene atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -57,9 +57,9 @@ El <scopeItem> elemento representa una sola entrada en la tabla de ámbito de ex
 
 | Elemento primario                                                           | Elementos secundarios                                                                        |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [elemento scope (esquema del conector de búsqueda)](search-schema-sconn-scope.md) | [elemento scope (esquema del conector de búsqueda).](search-schema-sconn-scope-mode.md)        |
-|                                                                          | [elemento scope (esquema del conector de búsqueda).](search-schema-sconn-scope-depth.md)       |
-|                                                                          | [elemento scopeItem url (esquema del conector de búsqueda).](search-schema-sconn-scope-url.md) |
+| [elemento scope (esquema del conector de búsqueda)](search-schema-sconn-scope.md) | [elemento scope (Esquema del conector de búsqueda)](search-schema-sconn-scope-mode.md).        |
+|                                                                          | [elemento scope (Esquema del conector de búsqueda)](search-schema-sconn-scope-depth.md).       |
+|                                                                          | [elemento scopeItem url (Esquema del conector de búsqueda).](search-schema-sconn-scope-url.md) |
 
 
 
@@ -67,7 +67,7 @@ El <scopeItem> elemento representa una sola entrada en la tabla de ámbito de ex
 
 ## <a name="remarks"></a>Comentarios
 
-Use los <scope> elementos y para identificar qué ubicaciones se deben buscar y qué ubicaciones deben <scopeItem> excluirse de la búsqueda.
+Use los elementos scope y scopeItem para identificar qué ubicaciones se deben buscar y qué ubicaciones &lt; se deben excluir de la &gt; &lt; &gt; búsqueda.
 
 ## <a name="example"></a>Ejemplo
 

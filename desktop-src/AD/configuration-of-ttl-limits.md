@@ -1,31 +1,31 @@
 ---
 title: Configuración de límites de TTL
-description: Un cliente puede solicitar un valor de TTL para una entrada comprendida entre 1 y 31557600 (es decir, de 1 segundo a 1 año).
+description: Un cliente puede solicitar un valor TTL para una entrada que oscila entre 1 y 31557600 (es decir, de 1 segundo a 1 año).
 ms.assetid: 4009702c-7992-4e20-9d37-384f8137ba8f
 ms.tgt_platform: multiple
 keywords:
-- Configuración de límites de TTL de AD
+- Configuración de límites de TTL ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2cb3617bd59667f0284c4e383da54752adfbe25
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d2786258d060ef4261dcd9fbfad359c71f2dbaeb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772732"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881603"
 ---
 # <a name="configuration-of-ttl-limits"></a>Configuración de límites de TTL
 
-Un cliente puede solicitar un valor de TTL para una entrada comprendida entre 1 y 31557600 (es decir, de 1 segundo a 1 año). Los valores del atributo **rangeLower** y **rangeUpper** aplicarán este intervalo de valores de atributo en la definición de **attributeSchema** para el atributo **entryTTL** . Según RFC 2589, no es necesario que los servidores de directorio acepten este valor y que devuelvan un valor de TTL diferente al cliente. Los clientes deben poder usar este valor dictado por el servidor como período de actualización del cliente (CRP), que regirá la frecuencia con la que el cliente necesitará realizar la operación de actualización en la entrada dinámica.
+Un cliente puede solicitar un valor TTL para una entrada que oscila entre 1 y 31557600 (es decir, de 1 segundo a 1 año). Los valores de atributo **rangeLower** y **rangeUpper** de la definición **attributeSchema** del **atributo entryTTL** aplicarán este intervalo de valores de atributo. Según RFC 2589, los servidores de directorio no son necesarios para aceptar este valor y podrían devolver un valor TTL diferente al cliente. Los clientes deben poder usar este valor dictado por el servidor como su período de actualización de cliente (CRP), que regulará la frecuencia con la que el cliente necesitará realizar la operación de actualización en la entrada dinámica.
 
-Active Directory Domain Services proporcionar a los administradores la capacidad de configurar los valores predeterminados y mínimos de TTL para un bosque. El valor TTL predeterminado es lo que se asignará a una entrada dinámica recién creada si no se especifica un TTL explícitamente. El TTL mínimo invalidará cualquier valor de TTL especificado por el cliente inferior al mínimo configurado. No se debe proporcionar ningún valor TTL máximo configurable porque el valor del atributo **rangeUpper** del objeto **attributeSchema** impondrá un máximo. Permitir a los administradores configurar estos valores les permitirá establecer valores de TTL que aplicarán un tráfico de poca actualización o, en el otro extremo, proporcionarán un directorio muy actualizado.
+Active Directory Domain Services proporcionar a los administradores la capacidad de configurar los valores de TTL predeterminados y mínimos para un bosque. El valor predeterminado de TTL es lo que se asignará a una entrada dinámica recién creada si no se especifica explícitamente un TTL. El TTL mínimo invalidará cualquier valor de TTL especificado por el cliente que sea inferior al mínimo configurado. No es necesario proporcionar ningún valor TTL máximo configurable porque el valor del atributo **rangeUpper** del objeto **attributeSchema** impondrá un máximo. Permitir a los administradores configurar estos valores les permitirá establecer valores de TTL que aplicarán un tráfico de actualización bajo o, en el otro extremo, proporcionarán un directorio muy actualizado.
 
-Los valores predeterminados para los dos parámetros de TTL configurables serán los siguientes:
+Los valores predeterminados de los dos parámetros TTL configurables serán los siguientes:
 
 -   Valor TTL predeterminado = 86400 segundos (1 día)
--   Valor TTL mínimo = 900 segundos (15 minutos)
+-   Valor mínimo de TTL = 900 segundos (15 minutos)
 
-Los parámetros de TTL que se pueden configurar se almacenarán como entradas de AVA (aserción de valor de atributo) con el formato "<nombre-valor>=<value>"en el atributo **MS-DS-Other-Settings** del objeto NTDS-Service proporcionado por el DN siguiente en la partición de configuración:
+Los parámetros de TTL configurables se almacenarán como entradas AVA (aserción de valor de atributo) con el formato " value-name value " en el atributo &lt; &gt; = &lt; &gt; **ms-DS-Other-Configuración** del objeto NTDS-Service especificado por el DN siguiente en la partición Configuration:
 
 
 ```C++
@@ -34,7 +34,7 @@ CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=...
 
 
 
-La sintaxis exacta de AVA, para los dos parámetros de TTL configurables, es la siguiente, donde NNNN se expresa en segundos:
+La sintaxis exacta de AVA, para los dos parámetros TTL configurables, es la siguiente, donde NNNN se expresa en segundos:
 
 
 ```C++
@@ -50,11 +50,11 @@ DynamicObjectMinTTLSeconds=NNNN
 
 
 
-Los administradores pueden establecer estos valores a través de la utilidad de línea de comandos Ntdsutil.
+Un administrador puede establecer estos valores a través de la utilidad de línea de comandos ntdsutil.
 
- 
+ 
 
- 
+ 
 
 
 

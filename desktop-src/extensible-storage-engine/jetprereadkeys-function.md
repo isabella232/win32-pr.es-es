@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 067fe72e2e00fc01b433dbda819d5e89336fc68c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 24547a7970270943546e5fcfbc026ff24be144b0
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467192"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986648"
 ---
 # <a name="jetprereadkeys-function"></a>JetPrereadKeys (Función)
 
@@ -32,9 +32,9 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetprereadkeys-function"></a>JetPrereadKeys (Función)
 
-La **función JetPrereadKeys** lee los valores clave para mejorar el rendimiento de la limpieza del almacén de versiones.
+La **función JetPrereadKeys** lee los valores de clave para mejorar el rendimiento de la limpieza del almacén de versiones.
 
-**Windows 7: La función PrereadKeys** se introdujo en Windows 7.
+**Windows 7: la función PrereadKeys** se introdujo en Windows 7.
 
 ```cpp
     JET_ERR JET_API JetPrereadKeys(
@@ -60,7 +60,7 @@ Cursor que se va a usar para esta llamada.
 
 *rgpvKeys*
 
-Matriz de punteros a claves. Las claves se pueden realizar [con JetMakeKey](./jetmakekey-function.md) o recuperarse [con JetGetBookmark.](./jetgetbookmark-function.md) Las claves deben ordenarse en orden ascendente o descendente, en función del grbit pasado. Las claves se pueden ordenar con memcmp.
+Matriz de punteros a claves. Las claves se pueden crear [con JetMakeKey](./jetmakekey-function.md) o recuperarse [con JetGetBookmark.](./jetgetbookmark-function.md) Las claves deben ordenarse en orden ascendente o descendente, en función del grbit pasado. Las claves se pueden ordenar con memcmp.
 
 *rgcbKeys*
 
@@ -68,7 +68,7 @@ Matriz de longitudes de clave. rgpvKeys \[ n debe apuntar a una clave de longitu
 
 *ckeys*
 
-Número de claves. rgpvKeys y rgcbKeys deben apuntar cada uno a una matriz con al menos elementos ckeys.
+Número de claves. rgpvKeys y rgcbKeys deben apuntar a una matriz con al menos elementos ckeys.
 
 *pckeysPreread*
 
@@ -80,9 +80,9 @@ Debe ser JET_bitPrereadForward o JET_bitPrereadBackward. Si grbit es JET_bitPrer
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-Se pueden devolver varios errores de E/S junto con estos errores de uso de API:
+Se pueden devolver varios errores de E/S junto con estos errores de uso de api:
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -93,10 +93,16 @@ Se pueden devolver varios errores de E/S junto con estos errores de uso de API:
 
 
 
-**JetPrereadKeys** recorre las páginas internas del árbol b para determinar qué páginas hoja contienen las claves especificadas por rgpvKeys/rgcbKeys. La lista de páginas hoja se ordena y, a continuación, se emiten lecturas previas para los intervalos de páginas. El número de páginas que se pueden leer previamente está limitado, por lo que es posible que no todas las claves se puedan leer previamente. En ese caso, el número de claves que realmente se leen previamente se devuelve en pckeysPreread.
+**JetPrereadKeys** recorre las páginas internas del árbol b para determinar qué páginas hoja contienen las claves especificadas por rgpvKeys/rgcbKeys. La lista de páginas hoja se ordena y, a continuación, se emiten lecturas previas para los intervalos de páginas. El número de páginas que se pueden leer previamente es limitado, por lo que es posible que no todas las claves se puedan leer previamente. En ese caso, el número de claves que realmente se han leído previamente se devuelve en pckeysPreread.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows 7.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 R2.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows 7.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 R2.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 

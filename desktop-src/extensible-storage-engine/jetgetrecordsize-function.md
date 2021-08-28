@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 15a94f14962559a63c19c6dce97b1d6dc5a234fd
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: f42defeefa4d01648d34b971cce994fbebf8f0e8
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982398"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481301"
 ---
 # <a name="jetgetrecordsize-function"></a>JetGetRecordSize (Función)
 
@@ -64,10 +64,10 @@ Puntero a un búfer de salida para la [JET_RECSIZE](./jet-recsize-structure.md) 
 Este es uno o varios de los valores siguientes.
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitRecordSizeInCopyBuffer</p> | <p>Esto recupera el tamaño del registro que se encuentra en el búfer de copia preparado para la actualización. De lo contrario, <em>el tableid</em> o el cursor deben colocarse en un registro y se usará ese registro.</p> | 
-| <p>JET_bitRecordSizeRunningTotal</p> | <p>Cuando se especifica este <a href="gg294072(v=exchg.10).md"></a> bit, el JET_RECSIZE se reduce a cero antes de rellenar el contenido, actuando eficazmente como una acumulación de las estadísticas de varios registros visitados o actualizados.</p> | 
+| <p>JET_bitRecordSizeRunningTotal</p> | <p>Cuando se especifica este <a href="gg294072(v=exchg.10).md"></a> bit, el JET_RECSIZE no se reduce a cero antes de rellenar el contenido, actuando eficazmente como una acumulación de las estadísticas de varios registros visitados o actualizados.</p> | 
 | <p>JET_bitRecordSizeLocal</p> | <p>Esto hace que la API ignore valores long no intrínsecos. Por ejemplo, solo se usará el registro local de la página.</p> | 
 
 
@@ -93,20 +93,14 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 El tamaño de la clave acumulada en el **campo cbOverhead** [de](./jet-recsize-structure.md)JET_RECSIZE , se ve afectado por JET_bitRecordSizeInCopyBuffer. Si se especifica este bit, el tamaño de clave acumulado en el **campo cbOverhead** es el tamaño de clave completo. Si no se usa este bit, el tamaño de clave acumulado no incluirá ningún tamaño guardado debido a la compresión del prefijo de clave.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

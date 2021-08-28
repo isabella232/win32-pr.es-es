@@ -7,12 +7,12 @@ MSHAttr:
 title: MmsConfiguration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 843cb0fc67211bec13295a92e467e8358d407312
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0217dae3aad8afb70997d27db3053a6bac9f41b2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480291"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882939"
 ---
 # <a name="span-idwwan_profile_v4element_mmsconfigurationspanmmsconfiguration"></a><span id="WWAN_profile_v4.element_MmsConfiguration"></span>MmsConfiguration
 
@@ -23,14 +23,14 @@ Además de establecer los elementos de configuración dentro de este elemento, u
 -   Su [**elemento Name**](element-name.md) debe contener un nombre único para todo el sistema.
 -   Su [**ProfileCreationType**](./schema-profilecreationtype-mbnprofile-element.md) debe establecerse en **UserProvisioned.**
 -   Su [**SimIccID**](/windows/win32/api/mbnapi/nf-mbnapi-imbnsubscriberinformation-get_simiccid) debe contener el VALOR DE LA SIM para el que está pensado este perfil.
--   Su [**ConnectionMode**](./schema-connectionmode-mbnprofile-element.md) debe establecerse en **Manual.**
+-   Su [**ConnectionMode debe**](./schema-connectionmode-mbnprofile-element.md) establecerse en **Manual.**
 -   [**PurposeGroupGuid debe**](element-purposegroupguid.md) contener el GUID para el grupo de propósito de MMS.
 -   Su [**IsAdditionalPdpContextProfile**](/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)) debe establecerse en **true.**
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<MmsConfiguration>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;MmsConfiguration&gt;**
 
 ## <a name="syntax"></a>Syntax
 

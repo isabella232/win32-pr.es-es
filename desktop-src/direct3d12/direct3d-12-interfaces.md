@@ -6,12 +6,12 @@ ms.localizationpriority: low
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 0cc8fcecec2e2a0966ed34e23eb65ed9acd37e76
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.openlocfilehash: f204484b3565564f72e815bd21cf8e449ee55e4c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812884"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884300"
 ---
 # <a name="core-interfaces"></a>Interfaces principales
 
@@ -40,7 +40,7 @@ Las interfaces siguientes se declaran en d3d12.h.
 | [**ID3D12DeviceRemovedExtendedData**](/windows/win32/api/d3d12/nn-d3d12-id3d12deviceremovedextendeddata) | Proporciona acceso en tiempo de ejecución a los datos de datos extendidos (DRED) quitados del dispositivo. |
 | [**ID3D12DeviceRemovedExtendedDataSettings**](/windows/win32/api/d3d12/nn-d3d12-id3d12deviceremovedextendeddatasettings) | Esta interfaz controla la configuración de datos extendidos (DRED) quitados del dispositivo. |
 | [**ID3D12Fence**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence) | Representa una barrera, un objeto utilizado para la sincronización de la CPU y una o varias GPU.  |
-| [**ID3D12Fence1**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence1) | Representa una barrera. Esta interfaz amplía [**ID3D12Fence**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence)y admite la recuperación de las marcas usadas para crear la barrera original.  |
+| [**ID3D12Fence1**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence1) | Representa una barrera. Esta interfaz extiende [**ID3D12Fence**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence)y admite la recuperación de las marcas usadas para crear la barrera original.  |
 | [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist) | Encapsula una lista de comandos gráficos para la representación. Incluye API para instrumentar la ejecución de la lista de comandos y para establecer y borrar el estado de la canalización. |
 | [**ID3D12GraphicsCommandList1**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist1) | Encapsula una lista de comandos gráficos para la representación, ampliando el inicial para admitir posiciones de muestra programables, copias atómicas para implementar técnicas de bloqueos en tiempo de ejecución y pruebas opcionales de límites de profundidad. |
 | [**ID3D12GraphicsCommandList2**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist2) | Encapsula una lista de comandos gráficos para la representación, ampliando la interfaz para admitir la escritura de valores inmediatos directamente en un búfer. |
@@ -58,7 +58,8 @@ Las interfaces siguientes se declaran en d3d12.h.
 | [**ID3D12QueryHeap**](/windows/win32/api/d3d12/nn-d3d12-id3d12queryheap) | Administra un montón de consultas. Un montón de consultas contiene una matriz de consultas a las que hacen referencia los índices. |
 | [**ID3D12Resource**](/windows/win32/api/d3d12/nn-d3d12-id3d12resource) | Encapsula una capacidad generalizada de la CPU y la GPU para leer y escribir en memoria física o montones. Contiene abstracciones para organizar y manipular matrices simples de datos, así como datos multidimensionales optimizados para el muestreo del sombreador. |
 | [**ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) | La firma raíz define qué recursos están enlazados a la canalización de gráficos. La aplicación configura una firma raíz y vincula las listas de comandos a los recursos que requieren los sombreadores. Actualmente, hay un gráfico y una firma raíz de proceso por aplicación. |
-| [**ID3D12RootSignatureDeserializer**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) | Contiene un método para devolver la estructura de datos [**D3D12-ROOT-SIGNATURE-DESC deserialización**](/windows/win32/api/d3d12/ns-d3d12-d3d12_root_signature_desc) de una firma raíz serializada versión 1.0.  |
+| [**ID3D12RootSignatureDeserializer**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignaturedeserializer) | Contiene un método para devolver la estructura de datos [**D3D12-ROOT-SIGNATURE-DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_root_signature_desc) deserialización de una firma raíz serializada versión 1.0.  |
+| [**ID3D12SDKConfiguration**](/windows/win32/api/d3d12/nn-d3d12-id3d12sdkconfiguration) | Proporciona métodos de configuración del SDK. |
 | [**ID3D12ShaderCacheSession**](/windows/win32/api/d3d12/nn-d3d12-id3d12shadercachesession) | Representa una sesión de caché de sombreador. |
 | [**ID3D12StateObject**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobject) | Representa una cantidad variable de estado de configuración, incluidos los sombreadores, que una aplicación administra como una sola unidad y que se asigna a un controlador de forma atómica para procesar, como compilar u optimizar.  |
 | [**ID3D12StateObjectProperties**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobjectproperties) | Proporciona métodos para obtener y establecer las propiedades de [**id3D12StateObject.**](/windows/win32/api/d3d12/nn-d3d12-id3d12stateobject)  |

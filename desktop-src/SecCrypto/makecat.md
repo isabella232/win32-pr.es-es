@@ -4,12 +4,12 @@ ms.assetid: 233b3644-f2a5-4166-bac0-30bf2f54e957
 title: MakeCat
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 309a56ef6f591f6d206d700caf2e682cc0e9a3a1dd4488b1ab818a744b598245
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 980c58530c55006d28ecd7589b0313844e9dbe46
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119408375"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886260"
 ---
 # <a name="makecat"></a>MakeCat
 
@@ -75,7 +75,7 @@ La \[ sección CatalogHeader \] define información sobre todo el archivo de cat
 | PublicVersion<br/>  | Esta opción no se admite. <br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Versión del catálogo. Si se deja en blanco, se usa el valor predeterminado, 1.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | CatalogVersion<br/> | Versión del catálogo. Si la versión no está presente o está establecida en 1, se pasa "0x100" al parámetro *dwPublicVersion* de la [**función CryptCATOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen) y se crea un archivo de catálogo de la versión 1. La opción HashAlgorithms debe estar vacía o contener SHA1.<br/> Si la versión se establece en 2, se pasa "0x200" al parámetro *dwPublicVersion* de la función [**CryptCATOpen**](/windows/desktop/api/Mscat/nf-mscat-cryptcatopen) y se crea un archivo de catálogo de la versión 2. La opción HashAlgorithms debe contener SHA256.<br/> Si esta opción está presente pero contiene cualquier valor distinto de 1 o 2, se producirá un error en la herramienta MakeCat.<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Esta opción no se admite.<br/> <br/> |
 | HashAlgorithms<br/> | Nombre del algoritmo hash utilizado. Para obtener más información, vea la opción CatalogVersion.<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Esta opción no se admite.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| PageHashes<br/>     | Especifica si se aplica un algoritmo hash a los archivos enumerados en <HASH> la opción de la sección \[ CatalogFiles. \]<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Esta opción no se admite.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| PageHashes<br/>     | Especifica si se aplica un algoritmo hash a los archivos enumerados en la &lt; opción HASH de la sección &gt; \[ CatalogFiles. \]<br/> **Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Esta opción no se admite.<br/> <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | EncodingType<br/>   | Tipo de codificación de mensajes utilizada. Si se deja en blanco, el valor predeterminado de EncodingType es PKCS \_ 7 \_ ASN \_ ENCODING \| X509 \_ ASN \_ ENCODING, 0x00010001. <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
@@ -88,8 +88,8 @@ La sección CatalogFiles define cada miembro del archivo de catálogo con archiv
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -100,7 +100,7 @@ La sección CatalogFiles define cada miembro del archivo de catálogo con archiv
 <tbody>
 <tr class="odd">
 <td>etiqueta de referencia<br/></td>
-<td>Referencia de texto al archivo. Esto puede incluir cualquier carácter de texto ASCII excepto el signo igual (=). El sistema debe poder reproducir esta etiqueta después de la instalación. <br/> Use <HASH> como prefijo del nombre de archivo. Como resultado, la etiqueta es el hash del archivo en forma de cadena ASCII. <br/></td>
+<td>Referencia de texto al archivo. Esto puede incluir cualquier carácter de texto ASCII excepto el signo igual (=). El sistema debe poder reproducir esta etiqueta después de la instalación. <br/> Use &lt; HASH como prefijo del nombre de &gt; archivo. Como resultado, la etiqueta es el hash del archivo en forma de cadena ASCII. <br/></td>
 </tr>
 <tr class="even">
 <td>ruta de acceso y nombre de archivo<br/></td>
@@ -119,15 +119,15 @@ La sección CatalogFiles define cada miembro del archivo de catálogo con archiv
 <td>Opcional. Atributo o instrucción sobre el archivo o el contenido. Puede haber cualquier número de atributos, incluido ninguno.<br/></td>
 </tr>
 <tr class="even">
-<td>tipo<br/></td>
+<td>type<br/></td>
 <td>Define qué tipo de atributo se agrega en el formato 0x00000000 (texto). Esta opción puede ser una combinación bit a bit-<strong>OR</strong> de cero o más de los valores siguientes:<br/>
 <ul>
 <li>0x10000000 atributo Autenticado (firmado, incluido en el hash).</li>
 <li>0x20000000 atributo No autenticado (sin signo, no incluido en el hash, no verificable).</li>
 <li>0x01000000 attribute no se replicará en las entradas SHA1 de un catálogo CatalogVersion 2.</li>
 <li>0x00010000 Attribute se representa en texto no cifrado. No se realizará ninguna conversión.</li>
-<li>0x00020000 attribute se representa en codificación base 64. Se usa para representar datos binarios.</li>
-<li>0x00000001 attribute es un par nombre-valor. Use la opción oid para el nombre. Este atributo es lento; por lo tanto, use esta opción con moderación.</li>
+<li>0x00020000 atributo se representa en codificación base 64. Se usa para representar datos binarios.</li>
+<li>0x00000001 atributo es un par nombre-valor. Use la opción oid para el nombre. Este atributo es lento; por lo tanto, use esta opción con moderación.</li>
 <li>0x00000002 atributo se hace referencia mediante un <a href="/windows/desktop/SecGloss/o-gly"><em>identificador de objeto</em></a> (OID).</li>
 </ul>
 <br/></td>
@@ -141,7 +141,7 @@ La sección CatalogFiles define cada miembro del archivo de catálogo con archiv
 <td>Representación de texto del valor del atributo. El tipo de representación de texto utilizado depende del valor de la opción de tipo. Los caracteres EOL determinan la longitud.<br/></td>
 </tr>
 <tr class="odd">
-<td><HASH><br/></td>
+<td>&lt;HASH&gt;<br/></td>
 <td>Aplica un algoritmo hash al archivo especificado.<br/></td>
 </tr>
 </tbody>

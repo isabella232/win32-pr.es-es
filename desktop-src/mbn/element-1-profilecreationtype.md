@@ -7,14 +7,14 @@ MSHAttr:
 title: ProfileCreationType (en ModemDMConfigProfile)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29867412bbadc8041bcf864a9575b0fc6001a499
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: dbd0a4a3a634a892f81f4be54093f51638d6c4ca
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479961"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885094"
 ---
-# <a name="span-idwwan_profile_v4element_1_profilecreationtypespanprofilecreationtype-in-modemdmconfigprofile"></a><span id="WWAN_profile_v4.element_1_ProfileCreationType"></span>ProfileCreationType (en ModemDMConfigProfile)
+# <a name="span-idwwan_profile_v4element_1_profilecreationtypespanprofilecreationtype-in-modemdmconfigprofile"></a><span id="WWAN_profile_v4.element_1_ProfileCreationType"></span>ProfileCreationType (en MódemDMConfigProfile)
 
 Especifica cómo se creó este perfil de DM de módem.
 
@@ -22,8 +22,8 @@ Este valor se usa para decidir si un usuario puede eliminar el perfil. Los usuar
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<ModemDMConfigProfile>](element-modemdmconfigprofile.md)  
-**<ProfileCreationType>**
+[&lt;ModemDMConfigProfile&gt;](element-modemdmconfigprofile.md)  
+**&lt;ProfileCreationType&gt;**
 
 ## <a name="syntax"></a>Syntax
 

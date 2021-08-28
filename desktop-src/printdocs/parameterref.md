@@ -4,22 +4,22 @@ ms.assetid: 35e1ccc2-ffc1-47a6-aba8-5a5cb442e8ae
 title: ParameterRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ff3b0e16f53e8399a5bbbb5974a05fd6886cdd2
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: fb3655ab62c8d11b4e9ee777d01a8e6bf5d63a1f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407188"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884113"
 ---
 # <a name="parameterref"></a>ParameterRef
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Un elemento ParameterRef define una referencia a un elemento ParameterInit. Un elemento ScoredProperty que contiene un elemento ParameterRef no tiene un elemento Value establecido explícitamente. En su lugar, el elemento ScoredProperty recibe su valor del elemento ParameterInit al que hace referencia un elemento ParameterRef.
 
 ## <a name="element-tag"></a>Etiqueta de elemento
 
-<ParameterRef>
+&lt;ParameterRef&gt;
 
 ## <a name="xml-attributes"></a>Atributos XML
 
