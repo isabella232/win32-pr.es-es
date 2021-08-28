@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6cc14e24bad22210f08e33fcff3dfaeb4e282ed2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 75a7a0f72482304e4075c713c715d048d17f42a611dbc1b4fbd93678f712a953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789925"
 ---
 # <a name="requeststatechange-method-of-the-msvm_externalfcport-class"></a>Método RequestStateChange de la clase \_ Msvm ExternalFcPort
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la propiedad **RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -128,14 +128,14 @@ El nuevo estado. La información se coloca en la propiedad **RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (**Use Of Timeout Parameter Not Supported**).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene requisitos de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 **(No** se admite el uso del parámetro de tiempo de espera).
 
 </dd> </dl>
 
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

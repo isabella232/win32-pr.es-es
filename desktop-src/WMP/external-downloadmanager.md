@@ -1,9 +1,9 @@
 ---
-title: External. DownloadManager
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad DownloadManager recupera el objeto DownloadManager.
+title: External.DownloadManager
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. La propiedad DownloadManager recupera el objeto DownloadManager.
 ms.assetid: 9fec7175-611e-4e7e-8978-132e6f86329a
 keywords:
-- Media Player de Windows externa. DownloadManager
+- External.DownloadManager Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f55e6371f5c8d1e5dfcb17762340a82e8d921c17
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d828435c43f57406e637312245b2bb3ae3e7c35510c9b2daf478a7fec39b599
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649215"
 ---
-# <a name="externaldownloadmanager"></a>External. DownloadManager
+# <a name="externaldownloadmanager"></a>External.DownloadManager
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-La propiedad **Downloadmanager** recupera el objeto **Downloadmanager** .
+La **propiedad DownloadManager** recupera el **objeto DownloadManager.**
 
 ``` syntax
 window.external.DownloadManager
@@ -37,19 +37,19 @@ window.external.DownloadManager
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto **Downloadmanager** de solo lectura.
+Esta propiedad es un objeto **DownloadManager de** solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En Windows Media Player 10 o versiones posteriores, solo se puede tener acceso a la propiedad y el objeto **Downloadmanager** desde los paneles de tareas servicio de tienda en línea. No se puede usar el **Downloadmanager** de otras características en las que el objeto **externo** está disponible, como HTMLView, la vista del centro de información y la información del álbum.
+En Reproductor de Windows Media 10 o posterior, la propiedad **DownloadManager** y el objeto solo son accesibles desde los paneles de tareas del servicio de la tienda en línea. No se puede usar **DownloadManager desde otras** características en las que el **objeto** Externo está disponible, como HTMLView, vista del centro de información e información del álbum.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -58,7 +58,7 @@ En Windows Media Player 10 o versiones posteriores, solo se puede tener acceso a
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 2**](external-object-for-type-2-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 2**](external-object-for-type-2-online-stores.md)
 </dt> </dl>
 
  

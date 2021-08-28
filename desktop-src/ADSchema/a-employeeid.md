@@ -1,11 +1,11 @@
 ---
-title: Employee-ID (atributo)
-description: IDENTIFICADOR de un empleado.
+title: Atributo Employee-ID
+description: Identificador de un empleado.
 ms.assetid: 5f19773f-ef4c-433a-a9b9-f8499a52b45e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de ID. de empleado
-- atributo employeeID, esquema AD
+- Esquema de AD del atributo Employee-ID
+- Esquema de AD del atributo employeeID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7865ca7949301c5deec169667354bb9dce194135
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f4ef4e7333bd63ad23da496f6e8edb702e019414bcdccc22b5021c2b4b313ada
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828115"
 ---
-# <a name="employee-id-attribute"></a>Employee-ID (atributo)
+# <a name="employee-id-attribute"></a>Atributo Employee-ID
 
-IDENTIFICADOR de un empleado.
+Identificador de un empleado.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | IDENTIFICADOR de empleado                                 |
-| Nombre para mostrar de LDAP | employeeId                                  |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| CN                | Employee-ID                                 |
+| Ldap-Display-Name | employeeId                                  |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.35                       |
-| System-ID-GUID    | bf967962-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967962-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ IDENTIFICADOR de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -76,13 +76,13 @@ IDENTIFICADOR de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -97,13 +97,13 @@ IDENTIFICADOR de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -118,13 +118,13 @@ IDENTIFICADOR de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -139,13 +139,13 @@ IDENTIFICADOR de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -160,13 +160,13 @@ IDENTIFICADOR de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |

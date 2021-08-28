@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3f35afad1120a26a60f670d12410584b2f9db7f1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9a1ed9fa363209cf861d3f11a3c71075cc9558bc7af42f90990bcba383dff6a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790655"
 ---
 # <a name="id3dxbaseeffectsetmatrixtransposepointerarray-method"></a>Método ID3DXBaseEffect::SetMatrixTransposePointerArray
 
-Establece una matriz de punteros en matrices transpuestas.
+Establece una matriz de punteros para matrices transpuestas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,11 +73,11 @@ Número de matrices de la matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentarios
 
-Una matriz transpuesta contiene datos principales de columna; es decir, cada vector se encuentra en una columna.
+Una matriz transpuesta contiene datos principales de columna; es decir, cada vector está contenido en una columna.
 
 Si las matrices de destino son menores que las matrices de origen, se omitirán los componentes adicionales de las matrices de origen.
 
@@ -92,7 +92,7 @@ Si las matrices de destino son menores que las matrices de origen, se omitirán 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

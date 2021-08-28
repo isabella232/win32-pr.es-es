@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de tipo de archivo (registro de eventos de Windows)
+title: Tipo complejo DataType (Windows de eventos)
 description: Define un elemento de datos.
 ms.assetid: f3b7de63-1ac1-429d-9e36-1f13c26c9618
 keywords:
-- EventLog (tipo complejo de tipo de texto)
+- EventLog de tipo complejo DataType
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d3ac6e545cbe8567bbe041568c442f762743ad0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba1fcbf217b16fb675a7a4eca00c8faa201737c07eea35a809f85617e96e9445
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620285"
 ---
 # <a name="datatype-complex-type"></a>Tipo complejo DataType
 
@@ -49,12 +49,12 @@ Define un elemento de datos.
 
 | Nombre | Tipo   | Descripción                                                                                                                                                              |
 |------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre | string | El nombre de un elemento de datos que se definió en la plantilla (vea el tipo complejo de [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) ).<br/> |
-| Tipo | QName  | No se utiliza.<br/>                                                                                                                                                     |
+| Nombre | string | Nombre de un elemento de datos definido en la plantilla (vea el tipo [**complejo TemplateItemType).**](eventmanifestschema-templateitemtype-complextype.md)<br/> |
+| Tipo | QName  | No se usa.<br/>                                                                                                                                                     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El elemento de datos puede ser un elemento de datos de nivel superior o un elemento de datos de una estructura.
 
@@ -64,8 +64,8 @@ El elemento de datos puede ser un elemento de datos de nivel superior o un eleme
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

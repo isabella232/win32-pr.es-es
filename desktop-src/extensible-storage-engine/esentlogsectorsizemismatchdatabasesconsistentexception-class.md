@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentLogSectorSizeMismatchDatabasesConsistentException'
+description: 'Más información sobre: Clase EsentLogSectorSizeMismatchDatabasesConsistentException'
 title: Clase EsentLogSectorSizeMismatchDatabasesConsistentException
 TOCTitle: EsentLogSectorSizeMismatchDatabasesConsistentException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentLogSectorSizeMismatchDatabasesConsistentException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93072cef75aedc4b3466e4b7b36d3ca7cd7a1d9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3696e050383b4d2de7db139b4b81378e2784991a2769c2dff703bbeae424d3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104276939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734545"
 ---
 # <a name="esentlogsectorsizemismatchdatabasesconsistentexception-class"></a>Clase EsentLogSectorSizeMismatchDatabasesConsistentException
 
-Clase base para JET_err. Excepciones LogSectorSizeMismatchDatabasesConsistent.
+Clase base para JET_err. LogSectorSizeMismatchDatabasesConsistent exceptions.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentStateException](./esentstateexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentLogSectorSizeMismatchDatabasesConsistentException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentStateException](./esentstateexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentLogSectorSizeMismatchDatabasesConsistentException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentLogSectorSizeMismatchDatabasesConsistentException](./esentlogsectorsizemismatchdatabasesconsistentexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

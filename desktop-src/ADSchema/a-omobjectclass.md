@@ -1,11 +1,11 @@
 ---
-title: OM-Object-Class (atributo)
-description: El OID único para el atributo o la clase.
+title: Atributo OM-Object-Class
+description: OID único para el atributo o la clase.
 ms.assetid: ce292598-91c8-4879-8cb8-4971b992ed10
 ms.tgt_platform: multiple
 keywords:
-- OM-atributo de clase de objeto esquema de AD
-- oMObjectClass esquema de AD de atributos
+- Esquema de AD del atributo OM-Object-Class
+- Esquema de AD del atributo oMObjectClass
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3b669b20cac66a4cf93587c77d45680870aec00
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2669da810ebd47ba8f19492b2a25ff06bd4b821df53b0ff8af965165ef3182b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704535"
 ---
-# <a name="om-object-class-attribute"></a>OM-Object-Class (atributo)
+# <a name="om-object-class-attribute"></a>Atributo OM-Object-Class
 
-El OID único para el atributo o la clase.
+OID único para el atributo o la clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | OM-Object-Class                                       |
-| Nombre para mostrar de LDAP | oMObjectClass                                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | oMObjectClass                                         |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.218                                |
-| System-ID-GUID    | bf9679ec-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf9679ec-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ El OID único para el atributo o la clase.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ El OID único para el atributo o la clase.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80FD                                                   |
-| System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ El OID único para el atributo o la clase.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80FD                                                   |
-| System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80FD                                                   |
-| System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ El OID único para el atributo o la clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80FD                                                   |
-| System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ El OID único para el atributo o la clase.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80FD                                                   |
-| System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -159,20 +159,20 @@ El OID único para el atributo o la clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80FD                                                   |
-| System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ El OID único para el atributo o la clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80FD                                                   |
-| System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Verdadero                                                     |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 

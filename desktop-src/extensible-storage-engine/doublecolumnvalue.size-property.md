@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: DoubleColumnValue. Size (propiedad)'
-title: DoubleColumnValue. Size (propiedad)
+description: Más información sobre la propiedad DoubleColumnValue.Size
+title: Propiedad DoubleColumnValue.Size
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.DoubleColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.doublecolumnvalue.size(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f3f2951f697c3091fa3f31893e4bf2b5ade8c88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a26ba5c16ef3007cebece98b55c39afde8fb0f0292bd260074c9a7f649f582cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623525"
 ---
-# <a name="doublecolumnvaluesize-property"></a>DoubleColumnValue. Size (propiedad)
+# <a name="doublecolumnvaluesize-property"></a>Propiedad DoubleColumnValue.Size
 
-Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binary y String).
+Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binario y cadena).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,14 +57,14 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase DoubleColumnValue](./doublecolumnvalue-class.md)
+[DoubleColumnValue (clase)](./doublecolumnvalue-class.md)
 
-[Miembros de DoubleColumnValue](./doublecolumnvalue-members.md)
+[Miembros DoubleColumnValue](./doublecolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

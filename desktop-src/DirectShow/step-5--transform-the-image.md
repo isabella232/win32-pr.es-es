@@ -4,12 +4,12 @@ ms.assetid: b7d878ab-523f-4b52-b98d-c9d4fa18ce8a
 title: Paso 5. Transformación de la imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ac9d32e48ba438f8bde2d8d4d9aca3b827ebc0c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ecbb2290b35347ccbc9b9821d423f7b3b26c9878187d09387dec914001df1a67
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650815"
 ---
 # <a name="step-5-transform-the-image"></a>Paso 5. Transformación de la imagen
 
@@ -62,7 +62,7 @@ Otros problemas que debe tener en cuenta son:
 -   Cambios de formato. El filtro ascendente puede cambiar los formatos de la secuencia media adjuntando un tipo de medio al ejemplo. Antes de hacerlo, llama a [**IPin::QueryAccept en**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) el pin de entrada del filtro. En la **clase CTransformFilter,** esto da como resultado una llamada a **CheckInputType** seguida de **CheckTransform**. El filtro de nivel inferior también puede cambiar los tipos de medios con el mismo mecanismo. En su propio filtro, hay dos cosas que debe tener en cuenta:
 
     -   Asegúrese de que **QueryAccept** no devuelve aceptaciones falsas.
-    -   Si el filtro acepta cambios de formato, comprórrelos dentro del **método Transform** llamando a [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). Si ese método devuelve S \_ OK, el filtro debe responder al cambio de formato.
+    -   Si el filtro acepta cambios de formato, comprórrelos dentro del **método Transform** mediante una llamada a [**IMediaSample::GetMediaType**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype). Si ese método devuelve S \_ OK, el filtro debe responder al cambio de formato.
 
     Para obtener más información, vea [Cambios de formato dinámico.](dynamic-format-changes.md)
 
@@ -74,7 +74,7 @@ Siguiente: [Paso 6. Agregue compatibilidad con COM.](step-6--add-support-for-com
 
 <dl> <dt>
 
-[Escribir filtros de DirectShow](writing-directshow-filters.md)
+[Escribir DirectShow filtros](writing-directshow-filters.md)
 </dt> </dl>
 
  

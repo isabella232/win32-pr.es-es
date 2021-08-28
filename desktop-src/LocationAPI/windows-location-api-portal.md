@@ -4,16 +4,16 @@ ms.assetid: 0182461a-df06-46ea-a9c2-7aedbde5033b
 title: API de ubicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3e9dccf5f88da1c608cfbc03898899f171a2627
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 19850dc1f85b227f2a5c9e03d9e0130b70c42d38e7ca0bee6308f9963042c613
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693115"
 ---
 # <a name="location-api"></a>API de ubicación
 
-\[La API de ubicación de Win32 y está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, use la API [**Windows.Devices.Geolocation.**](/uwp/api/Windows.Devices.Geolocation) Para acceder a la ubicación desde un sitio web, use [la API de geolocalización de W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). \]
+\[La API de ubicación de Win32 y está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, use [**el Windows. Devices.Geolocation**](/uwp/api/Windows.Devices.Geolocation) API. Para acceder a la ubicación desde un sitio web, use [la API de geolocalización de W3C](/previous-versions/windows/internet-explorer/ie-developer/samples/gg589513(v=vs.85)). \]
 
 ## <a name="purpose"></a>Propósito
 
@@ -26,11 +26,11 @@ Para crear un programa que tenga en cuenta la ubicación, es posible que tenga q
 -   Se limita a la programación de soluciones de hardware verticales conocidas.
 -   Implementación de lógica para controlar las transiciones entre varios proveedores de ubicación, como receptores GPS, redes conectadas, redes de telefonía móvil, Internet y configuración de usuario.
 
-En esta documentación se describe la interfaz de programación de aplicaciones (API) de ubicación de Windows. Location API ayuda a simplificar la programación con respecto a la ubicación al proporcionar una manera estándar de recuperar datos sobre la ubicación del usuario y estandarizar los formatos de los informes de datos de ubicación. Location API controla automáticamente las transiciones entre los proveedores de datos de ubicación y siempre elige el proveedor más preciso para la situación actual.
+En esta documentación se describe Windows interfaz de programación de aplicaciones (API) de Windows Location. Location API ayuda a simplificar la programación con respecto a la ubicación al proporcionar una manera estándar de recuperar datos sobre la ubicación del usuario y estandarizar los formatos de los informes de datos de ubicación. Location API controla automáticamente las transiciones entre los proveedores de datos de ubicación y siempre elige el proveedor más preciso para la situación actual.
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Location API proporciona su funcionalidad a través de un conjunto de interfaces COM. Los programadores que están familiarizados con el uso de COM a través del lenguaje de programación C++ pueden usar la funcionalidad de la API de ubicación o con el uso de objetos COM en lenguajes de scripting, como Microsoft JScript.
+Location API proporciona su funcionalidad a través de un conjunto de interfaces COM. Los programadores que están familiarizados con el uso de COM a través del lenguaje de programación C++, o con el uso de objetos COM en lenguajes de scripting, como Microsoft JScript.
 
 ## <a name="in-this-section"></a>En esta sección
 

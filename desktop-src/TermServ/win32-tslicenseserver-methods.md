@@ -1,18 +1,18 @@
 ---
-title: Métodos Win32_TSLicenseServer
-description: La \_ clase TSLicenseServer de Win32 expone los métodos siguientes.
+title: Win32_TSLicenseServer métodos
+description: La clase TSLicenseServer de Win32 \_ expone los métodos siguientes.
 ms.assetid: 743582EA-6D2F-48C5-AA69-593261BE5892
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2feacaec639184075a9954a4f2ae4837f9128efd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: edc61d4bd203dd8b8cf3ca771070841a02332a43f9c18cbdd63d4324037d7ba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769555"
 ---
-# <a name="win32_tslicenseserver-methods"></a>\_Métodos TSLicenseServer de Win32
+# <a name="win32_tslicenseserver-methods"></a>Métodos \_ TSLicenseServer de Win32
 
 La [**clase \_ TSLicenseServer de Win32**](win32-tslicenseserver.md) expone los métodos siguientes.
 
@@ -45,9 +45,9 @@ La [**clase \_ TSLicenseServer de Win32**](win32-tslicenseserver.md) expone los 
 -   [**Método RegisterLSToSCP**](win32-tslicenseserver-registerlstoscp.md)
 -   [**Método UnRegisterLSFromSCP**](win32-tslicenseserver-unregisterlsfromscp.md)
 
- 
+ 
 
- 
+ 
 
 
 

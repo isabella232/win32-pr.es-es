@@ -1,46 +1,46 @@
 ---
-description: Un dispositivo de captura de vídeo puede admitir una variedad de velocidades de fotogramas.
+description: Un dispositivo de captura de vídeo podría admitir una variedad de velocidades de fotogramas.
 ms.assetid: 9578e60d-0339-4382-b798-2d31d2ddbe76
 title: Cómo establecer la velocidad de fotogramas de captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44e105965f5449cb7f4cab59f49410ecfb40221c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b0e80c26c5a53a89cbc87ca509f25db1ebccf4571b4dda2e83ea63717c7d91a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827975"
 ---
 # <a name="how-to-set-the-video-capture-frame-rate"></a>Cómo establecer la velocidad de fotogramas de captura de vídeo
 
-Un dispositivo de captura de vídeo puede admitir una variedad de velocidades de fotogramas. Si esta información está disponible, las velocidades de fotogramas mínimo y máximo se almacenan como atributos de tipo de medio:
+Un dispositivo de captura de vídeo podría admitir una variedad de velocidades de fotogramas. Si esta información está disponible, las velocidades de fotogramas mínimas y máximas se almacenan como atributos de tipo multimedia:
 
 
 
 | Atributo                                                         | Descripción         |
 |-------------------------------------------------------------------|---------------------|
-| [\_intervalo de \_ velocidad de fotogramas MF MT \_ \_ \_ máx.](mf-mt-frame-rate-range-max.md) | Velocidad de fotogramas máxima. |
-| [\_intervalo de \_ velocidad de fotogramas MF MT \_ \_ \_ mín.](mf-mt-frame-rate-range-min.md) | Velocidad de fotogramas mínima. |
+| [MF \_ MT \_ FRAME \_ RATE \_ RANGE \_ MAX](mf-mt-frame-rate-range-max.md) | Velocidad máxima de fotogramas. |
+| [MF \_ MT \_ FRAME \_ RATE \_ RANGE \_ MIN](mf-mt-frame-rate-range-min.md) | Velocidad mínima de fotogramas. |
 
 
 
  
 
-El intervalo puede variar en función del formato de captura. Por ejemplo, en tamaños de fotogramas mayores, se podría reducir la velocidad máxima de fotogramas.
+El intervalo puede variar en función del formato de captura. Por ejemplo, en tamaños de fotograma más grandes, se puede reducir la velocidad máxima de fotogramas.
 
 Para establecer la velocidad de fotogramas:
 
-1.  Cree el origen de medios para el dispositivo de captura. Consulte [enumeración de dispositivos de captura de vídeo](enumerating-video-capture-devices.md).
-2.  Llame a [**IMFMediaSource:: CreatePresentationDescriptor**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor) en el origen de medios para obtener el descriptor de presentación.
-3.  Llame a [**IMFPresentationDescriptor:: GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) para obtener el descriptor de flujo para la secuencia de vídeo.
-4.  Llame a [**IMFStreamDescriptor:: GetMediaTypeHandler**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamdescriptor-getmediatypehandler) en el descriptor de flujo.
-5.  Enumerar los formatos de captura, tal y como se describe en [cómo establecer el formato de captura de vídeo](how-to-set-the-video-capture-format.md).
-6.  Seleccione el formato de salida deseado en la lista.
-7.  Consulte el tipo de medio para los atributos de intervalo de velocidad de fotogramas [MF \_ MT \_ \_ \_ \_ Max](mf-mt-frame-rate-range-max.md) y [MF \_ MT \_ \_ \_ \_ min](mf-mt-frame-rate-range-min.md) . Estos valores proporcionan el intervalo de velocidades de fotogramas admitidas. Es posible que el dispositivo admita otras velocidades de fotogramas dentro de este intervalo.
-8.  Establezca el atributo [**MF \_ MT \_ Frame**](mf-mt-frame-rate-attribute.md) en el tipo de medio para especificar la velocidad de fotogramas deseada.
-9.  Llame a [**IMFMediaTypeHandler:: SetCurrentMediaType**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-setcurrentmediatype) con el tipo de medio modificado.
+1.  Cree el origen multimedia para el dispositivo de captura. Consulte [Enumeración de dispositivos de captura de vídeo.](enumerating-video-capture-devices.md)
+2.  Llame [**a IMFMediaSource::CreatePresentationDescriptor en**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-createpresentationdescriptor) el origen multimedia para obtener el descriptor de presentación.
+3.  Llame [**a IMFPresentationDescriptor::GetStreamDescriptorByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationdescriptor-getstreamdescriptorbyindex) para obtener el descriptor de secuencia de la secuencia de vídeo.
+4.  Llame [**a IMFStreamDescriptor::GetMediaTypeHandler en**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamdescriptor-getmediatypehandler) el descriptor de secuencia.
+5.  Enumere los formatos de captura, como se describe [en Cómo establecer el formato de captura de vídeo](how-to-set-the-video-capture-format.md).
+6.  Seleccione el formato de salida deseado de la lista.
+7.  Consulte el tipo de medio para los atributos [MF MT FRAME RATE RANGE \_ \_ \_ \_ \_ MAX](mf-mt-frame-rate-range-max.md) y [MF MT FRAME RATE RANGE \_ \_ \_ \_ \_ MIN.](mf-mt-frame-rate-range-min.md) Estos valores dan al intervalo de velocidades de fotogramas admitidas. El dispositivo podría admitir otras velocidades de fotogramas dentro de este intervalo.
+8.  Establezca el [**atributo MF \_ MT \_ FRAME**](mf-mt-frame-rate-attribute.md) en el tipo de medio para especificar la velocidad de fotogramas deseada.
+9.  Llame [**a IMFMediaTypeHandler::SetCurrentMediaType con**](/windows/desktop/api/mfidl/nf-mfidl-imfmediatypehandler-setcurrentmediatype) el tipo de medio modificado.
 
-En el ejemplo siguiente se establece la velocidad de fotogramas igual a la velocidad de fotogramas máxima que admite el dispositivo:
+En el ejemplo siguiente se establece la velocidad de fotogramas igual a la velocidad máxima de fotogramas que admite el dispositivo:
 
 
 ```C++

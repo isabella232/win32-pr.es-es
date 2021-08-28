@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: f1ab6069890bdffdedbd3e36caed1a93984fc2c2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8de2798672a482ae25fd3d94aefb1859840d6d214848fb965273f009dc22518d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754505"
 ---
 # <a name="d3dxmatrixorthorh-function-d3dx10mathh"></a>Función D3DXMatrixOrthoRH (D3DX10Math.h)
 
@@ -76,7 +76,7 @@ Alto del volumen de vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z mínimo del volumen de vista.
+Valor Z mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Todos los parámetros de la función D3DXMatrixOrthoRH son distancias en el espa
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixOrthoRH se puede usar como parámetro para otra función.
 
-Esta función usa la fórmula siguiente para calcular la matriz devuelta.
+Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 ```
@@ -124,7 +124,7 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

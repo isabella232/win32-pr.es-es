@@ -1,9 +1,9 @@
 ---
-title: maxSize (ChannelLoggingType), elemento
+title: Elemento maxSize (ChannelLoggingType)
 description: Tamaño máximo, en bytes, del archivo de registro.
 ms.assetid: 94b5e4c9-9a7b-4950-8e23-b3b0aa0dd100
 keywords:
-- elemento maxSize EventLog
+- Elemento maxSize EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8a27b2224a64eadf1637f3d2f7f44973f4614536
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 569b69cdfaf43cbb38382529e55565f19f0e398a2a7adb69d4d2860b36839b0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767335"
 ---
-# <a name="maxsize-channelloggingtype-element"></a>maxSize (ChannelLoggingType), elemento
+# <a name="maxsize-channelloggingtype-element"></a>Elemento maxSize (ChannelLoggingType)
 
 Tamaño máximo, en bytes, del archivo de registro.
 
@@ -30,16 +30,16 @@ Tamaño máximo, en bytes, del archivo de registro.
  />
 ```
 
-El elemento **MaxSize** se define mediante el tipo complejo [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md) .
+El **elemento maxSize** se define mediante el tipo complejo [**ChannelLoggingType.**](eventmanifestschema-channelloggingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

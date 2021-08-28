@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de BN_CLICKED (Winuser. h)
-description: Se envía cuando el usuario hace clic en un botón. La ventana primaria del botón recibe este código de notificación a través del \_ mensaje de comando de WM.
+title: BN_CLICKED de notificación (Winuser.h)
+description: Se envía cuando el usuario hace clic en un botón. La ventana primaria del botón recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: 74847549-b92f-4981-a979-d0b2a8a5539a
 keywords:
-- BN_CLICKED controles de código de notificación de Windows
+- BN_CLICKED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 894837c9a930c6a5f6d124b6b9e983465ef3beac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dd18c5a4a83b70150a1372cff1adc20c42c574ebbd009d7518f6cc243a9c87a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827635"
 ---
-# <a name="bn_clicked-notification-code"></a>BN \_ código de notificación en el que se hizo clic
+# <a name="bn_clicked-notification-code"></a>Código de notificación CLICKED de BN \_
 
 Se envía cuando el usuario hace clic en un botón.
 
-La ventana primaria del botón recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+La ventana primaria del botón recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -44,7 +44,7 @@ BN_CLICKED
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del botón. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del botón. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -55,9 +55,9 @@ Identificador del botón.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un botón deshabilitado no envía un \_ código de notificación con el BN clic a su ventana primaria.
+Un botón deshabilitado no envía un código de notificación CLICKED de BN \_ a su ventana primaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Un botón deshabilitado no envía un \_ código de notificación con el BN clic 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Un botón deshabilitado no envía un \_ código de notificación con el BN clic 
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

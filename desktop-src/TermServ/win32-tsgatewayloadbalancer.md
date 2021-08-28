@@ -1,11 +1,11 @@
 ---
-title: Win32_TSGatewayLoadBalancer (clase)
-description: Describe un conjunto de servidores de equilibrio de carga de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto). Se usan para equilibrar la carga de las conexiones de puerta de enlace de escritorio remoto entre varios servidores.
+title: Win32_TSGatewayLoadBalancer clase
+description: Describe un conjunto de servidores de equilibrio de carga Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto). Se usan para equilibrar la carga de las conexiones de puerta de enlace de Escritorio remoto en varios servidores.
 ms.assetid: aa7e7b77-7233-4c6a-8f41-cc332fa509d5
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSGatewayLoadBalancer clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSGatewayLoadBalancer de clase, se describe
+- Win32_TSGatewayLoadBalancer clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4956ed4dc9536ff6f7e3263071a2a477cb0f515
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 584077911faf8593e7c26aadd36ca17a0a11d82b18d1d6ade20be1f1444fedf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769875"
 ---
-# <a name="win32_tsgatewayloadbalancer-class"></a>\_Clase Win32 TSGatewayLoadBalancer
+# <a name="win32_tsgatewayloadbalancer-class"></a>Clase \_ TSGatewayLoadBalancer de Win32
 
-Describe un conjunto de servidores de equilibrio de carga de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto). Se usan para equilibrar la carga de las conexiones de puerta de enlace de escritorio remoto entre varios servidores.
+Describe un conjunto de servidores de equilibrio de carga Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto). Se usan para equilibrar la carga de las conexiones de puerta de enlace de Escritorio remoto en varios servidores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,17 +47,17 @@ La **clase \_ TSGatewayLoadBalancer de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSGatewayLoadBalancer** tiene estos métodos.
+La **clase \_ TSGatewayLoadBalancer de Win32** tiene estos métodos.
 
 
 
 | Método                                                                             | Descripción                                                                                                      |
 |:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**AddServers**](addservers-win32-tsgatewayloadbalancer.md)                       | Agrega servidores a la propiedad **servidores** .<br/>                                                             |
-| [**DeleteAllServers**](deleteallservers-win32-tsgatewayloadbalancer.md)           | Elimina todos los servidores de equilibrio de carga de puerta de enlace de escritorio remoto que participan en la granja de equilibrio de carga.<br/>               |
-| [**DeleteServers**](deleteservers-win32-tsgatewayloadbalancer.md)                 | Elimina los servidores de la propiedad **servidores** .<br/>                                                        |
+| [**AddServers**](addservers-win32-tsgatewayloadbalancer.md)                       | Agrega servidores a la **propiedad Servidores.**<br/>                                                             |
+| [**DeleteAllServers**](deleteallservers-win32-tsgatewayloadbalancer.md)           | Elimina todos los servidores de equilibrio de carga de puerta de enlace de Escritorio remoto que participan en la granja de equilibrio de carga.<br/>               |
+| [**DeleteServers**](deleteservers-win32-tsgatewayloadbalancer.md)                 | Elimina servidores de la **propiedad Servidores.**<br/>                                                        |
 | [**IsLoadBalancingServer**](win32-tsgatewayloadbalancer-isloadbalancingserver.md) | Determina si el servidor puede realizar el equilibrio de carga.<br/>                                             |
-| [**SetServers**](setservers-win32-tsgatewayloadbalancer.md)                       | Establece la propiedad **servidores** con la lista separada por punto y coma de servidores de equilibrio de carga de puerta de enlace de escritorio remoto.<br/> |
+| [**SetServers**](setservers-win32-tsgatewayloadbalancer.md)                       | Establece la **propiedad Servidores** con la lista separada por punto y coma de los servidores de equilibrio de carga de puerta de enlace de Escritorio remoto.<br/> |
 
 
 
@@ -78,18 +78,18 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Lista separada por punto y coma de servidores de equilibrio de carga de puerta de enlace de escritorio remoto. Esta propiedad se puede cambiar con los métodos [**SetServers**](setservers-win32-tsgatewayloadbalancer.md), [**AddServers**](addservers-win32-tsgatewayloadbalancer.md), [**DeleteServers**](deleteservers-win32-tsgatewayloadbalancer.md)y [**DeleteAllServers**](deleteallservers-win32-tsgatewayloadbalancer.md) .
+Lista separada por punto y coma de servidores de equilibrio de carga de puerta de enlace de Escritorio remoto. Esta propiedad se puede cambiar con los [**métodos SetServers**](setservers-win32-tsgatewayloadbalancer.md), [**AddServers,**](addservers-win32-tsgatewayloadbalancer.md) [**DeleteServers**](deleteservers-win32-tsgatewayloadbalancer.md)y [**DeleteAllServers.**](deleteallservers-win32-tsgatewayloadbalancer.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta clase, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para usar esta clase.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,8 +99,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

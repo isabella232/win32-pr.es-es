@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9ca27bcc8024d8d3f0f634f6f8e6b23082b8d075
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 804f76e274a04e4f1eff0b3b8de5b2ca8c3064a8aa9d915c3d2514da64f2eeda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731115"
 ---
 # <a name="jet_convert-structure"></a>JET_CONVERT estructura
 
@@ -61,9 +61,30 @@ Reservado para uso del sistema.
 
 ### <a name="requirements"></a>Requisitos
 
-
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_CONVERT_W</strong> (Unicode) <strong>y JET_CONVERT_A</strong> (ANSI).</p> | 
-
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>Cliente</strong></p></td>
+<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Servidor</strong></p></td>
+<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
+</tr>
+<tr class="odd">
+<td><p><strong>Header</strong></p></td>
+<td><p>Declarado en Esent.h.</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>Unicode</strong></p></td>
+<td><p>Se implementa como <strong>JET_CONVERT_W</strong> (Unicode) <strong>y JET_CONVERT_A</strong> (ANSI).</p></td>
+</tr>
+</tbody>
+</table>
 
 
 ### <a name="see-also"></a>Consulte también

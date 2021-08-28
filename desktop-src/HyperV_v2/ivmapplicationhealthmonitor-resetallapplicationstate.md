@@ -1,7 +1,7 @@
 ---
 description: Restablece el estado de mantenimiento de todas las aplicaciones de una máquina virtual.
 ms.assetid: DB0B2FB3-87EB-44B2-9C4E-849BCE594E89
-title: 'IVmApplicationHealthMonitor:: ResetAllApplicationState (método)'
+title: IVmApplicationHealthMonitor::ResetAllApplicationState (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - VmApplicationHealthMonitor.idl
-ms.openlocfilehash: b13781d26c256e41ea6685b19a3097236ebbdb91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e97d5d16200501d77acf8b0b02cc5562d51706fcc46298421ad7f7e8fc0dfac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694355"
 ---
-# <a name="ivmapplicationhealthmonitorresetallapplicationstate-method"></a>IVmApplicationHealthMonitor:: ResetAllApplicationState (método)
+# <a name="ivmapplicationhealthmonitorresetallapplicationstate-method"></a>IVmApplicationHealthMonitor::ResetAllApplicationState (método)
 
-Restablece el estado de mantenimiento de todas las aplicaciones de una máquina virtual. Si se realiza correctamente, el estado de mantenimiento de todas las aplicaciones supervisadas se establecerá en **ApplicationStateHealthy**.
+Restablece el estado de mantenimiento de todas las aplicaciones de una máquina virtual. Si se realiza correctamente, el estado de mantenimiento de todas las aplicaciones supervisadas se establecerá **en ApplicationStateHealthy.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,22 +39,22 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este elemento de programación, los componentes de integración de Windows 8 deben estar instalados en la máquina virtual en la que se ejecuta la aplicación.
+Para usar este elemento de programación, Windows 8 componentes de integración deben instalarse en la máquina virtual en la que se ejecuta la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                      |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                                |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                      |
 | Versión<br/>                  | Componentes de integración para Windows 8<br/>                                                           |
-| IDL<br/>                      | <dl> <dt>VmApplicationHealthMonitor. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>VmApplicationHealthMonitor.idl</dt> </dl> |
 
 
 

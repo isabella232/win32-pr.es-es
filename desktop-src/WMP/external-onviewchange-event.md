@@ -1,9 +1,9 @@
 ---
-title: Evento external. OnViewChange
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El evento OnViewChange se produce cuando cambia la vista en Windows Media Player.
+title: Evento External.OnViewChange
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El evento OnViewChange se produce cuando la vista cambia en Reproductor de Windows Media.
 ms.assetid: aa1378ad-8b84-4592-85c5-5e284be05ea6
 keywords:
-- Media Player de eventos external. OnViewChange de Windows
+- Evento External.OnViewChange Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c7144e03955fb67ed90cad4a4336bf782ca1566
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c01db02ef1bfd194330483c8dd7e71eba7ed09d9b347aee4b4813f413950c65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648685"
 ---
-# <a name="externalonviewchange-event"></a>Evento external. OnViewChange
+# <a name="externalonviewchange-event"></a>Evento External.OnViewChange
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El evento **OnViewChange** se produce cuando cambia la vista en Windows Media Player.
+El **evento OnViewChange** se produce cuando la vista cambia en Reproductor de Windows Media.
 
 ``` syntax
 window.external.OnViewChange = FunctionName
@@ -36,27 +36,27 @@ window.external.OnViewChange = FunctionName
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta es una propiedad de solo escritura que especifica el nombre de la función en el script que Windows Media Player llama cuando se produce el evento.
+Se trata de una propiedad de solo escritura que especifica el nombre de la función en el script que Reproductor de Windows Media cuando se produce el evento.
 
 ## <a name="parameters"></a>Parámetros
 
 La función que controla este evento no toma ningún parámetro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La vista de Windows Media Player puede cambiar por cualquiera de los siguientes motivos:
+La vista de Reproductor de Windows Media puede cambiar por cualquiera de los siguientes motivos:
 
--   El usuario interactúa con la interfaz de usuario de Media Player de Windows.
--   El usuario interactúa con una página de detección y el script en la página de detección llama a [external. changeView](external-changeview.md).
--   El usuario interactúa con una página de detección y el script en la página de detección llama a [external. changeViewOnlineList](external-changeviewonlinelist.md).
+-   El usuario interactúa con la interfaz Reproductor de Windows Media usuario.
+-   El usuario interactúa con una página de detección y el script de la página de detección llama a [External.changeView](external-changeview.md).
+-   El usuario interactúa con una página de detección y el script de la página de detección llama a [External.changeViewOnlineList](external-changeviewonlinelist.md).
 
-Cuando la vista cambia en Windows Media Player, el reproductor llama a [IWMPContentPartner:: GetTemplate](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-gettemplate) para obtener la dirección URL de la página de detección siguiente que se va a mostrar. Sin embargo, antes de que el reproductor muestre la nueva página de detección, se genera el evento **OnViewChange** . Si el controlador de eventos **OnViewChange** llama a [external. cancelNavigate](external-cancelnavigate.md), Windows Media Player no muestra la nueva página de detección. En su lugar, sigue mostrando la página de detección actual.
+Cuando la vista cambia en Reproductor de Windows Media, el reproductor llama a [IWMPContentPartner::GetTemplate](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-gettemplate) para obtener la dirección URL de la siguiente página de detección que se mostrará. Sin embargo, antes de que player muestre la nueva página de detección, genera el **evento OnViewChange.** Si el controlador de eventos **OnViewChange** llama a [External.cancelNavigate,](external-cancelnavigate.md)Reproductor de Windows Media muestra la nueva página de detección. En su lugar, sigue mostrando la página de detección actual.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/>                                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
@@ -67,13 +67,13 @@ Cuando la vista cambia en Windows Media Player, el reproductor llama a [IWMPCont
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 1**](external-object-for-type-1-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. changeView**](external-changeview.md)
+[**External.changeView**](external-changeview.md)
 </dt> <dt>
 
-[**External. changeViewOnlineList**](external-changeviewonlinelist.md)
+[**External.changeViewOnlineList**](external-changeviewonlinelist.md)
 </dt> </dl>
 
  

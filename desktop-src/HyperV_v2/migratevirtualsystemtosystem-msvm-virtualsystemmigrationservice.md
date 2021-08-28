@@ -1,7 +1,7 @@
 ---
 description: Mueve, migra o reubica un sistema virtual en un sistema de destino.
 ms.assetid: 3a0be791-4514-4ce2-b4e8-3735bd6ea1d7
-title: Método MigrateVirtualSystemToSystem de la clase Msvm_VirtualSystemMigrationService
+title: Método MigrateVirtualSystemToSystem de la Msvm_VirtualSystemMigrationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a346596b094b60456af8e2b63865bec1171d99ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 398c4ae9d9d8ad89f7188ecbfe19e1b687bd694f7e716e88bd5231e79a38a665
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694285"
 ---
-# <a name="migratevirtualsystemtosystem-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método MigrateVirtualSystemToSystem de la \_ clase VirtualSystemMigrationService de MSVM
+# <a name="migratevirtualsystemtosystem-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método MigrateVirtualSystemToSystem de la clase Msvm \_ VirtualSystemMigrationService
 
 Mueve, migra o reubica un sistema virtual en un sistema de destino.
 
@@ -45,52 +45,52 @@ uint32 MigrateVirtualSystemToSystem(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Una referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa el sistema del equipo virtual que se va a migrar.
+Referencia a una instancia de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa el sistema de equipo virtual que se va a migrar.
 
 </dd> <dt>
 
-*DestinationSystem* \[ de\]
+*DestinationSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa el sistema al que se va a migrar.
+Referencia a una instancia de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa el sistema al que se va a migrar.
 
 </dd> <dt>
 
-*MigrationSettingData* \[ de\]
+*MigrationSettingData* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa la configuración de la operación de migración.
+Instancia incrustada de la [**clase Msvm \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa la configuración de la operación de migración.
 
 </dd> <dt>
 
-*NewSystemSettingData* \[ de\]
+*NewSystemSettingData* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa las nuevas propiedades aplicables al sistema virtual después de su migración.
+Instancia insertada de la [**clase Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa nuevas propiedades aplicables al sistema virtual después de migrarla.
 
 </dd> <dt>
 
-*NewResourceSettingData* \[ de\]
+*NewResourceSettingData* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas que contiene una instancia incrustada de la clase [**MSVM \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) que representa las nuevas propiedades aplicables a los recursos virtuales del sistema virtual después de su migración.
+Matriz de cadenas que contiene una instancia incrustada de la clase [**\_ ResourceAllocationSettingData de Msvm**](msvm-resourceallocationsettingdata.md) que representa las nuevas propiedades aplicables a los recursos virtuales del sistema virtual después de migrarlo.
 
 </dd> <dt>
 
-*NewComputerSystem* \[ enuncia\]
+*NewComputerSystem* \[ out\]
 </dt> <dd>
 
-Una referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa el nuevo sistema migrado.
+Referencia a una instancia de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa el nuevo sistema migrado.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -109,7 +109,7 @@ Este método devuelve uno de los valores siguientes.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -127,10 +127,10 @@ Este método devuelve uno de los valores siguientes.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535 )
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -139,10 +139,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -151,7 +151,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

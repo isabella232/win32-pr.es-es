@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de STN_DBLCLK (Winuser. h)
-description: El \_ código de notificación STN DBLCLK se envía cuando el usuario hace doble clic en un control estático que tenga el \_ estilo SS Notify. La ventana primaria del control recibe este código de notificación a través del \_ mensaje de comando de WM.
+title: STN_DBLCLK de notificación (Winuser.h)
+description: El código de notificación DBLCLK de STN se envía cuando el usuario hace doble clic en un control estático que tiene el \_ estilo NOTIFY de \_ SS. La ventana primaria del control recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: e3203309-87ea-46f4-9269-7e68c6fa0e4a
 keywords:
-- STN_DBLCLK controles de código de notificación de Windows
+- STN_DBLCLK código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 853ed5142de99dc85b729b4c4ea208273d4ace1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a353d6ec47179cef43293e5babd2153ae5df27c9c844f7d5c91d78890e47713b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642575"
 ---
-# <a name="stn_dblclk-notification-code"></a>Código de notificación de DBLCLK de STN \_
+# <a name="stn_dblclk-notification-code"></a>Código de notificación \_ DBLCLK de STN
 
-El \_ código de notificación STN DBLCLK se envía cuando el usuario hace doble clic en un control estático que tenga el estilo [**SS \_ Notify**](static-control-styles.md) . La ventana primaria del control recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+El código de notificación DBLCLK de STN se envía cuando el usuario hace doble clic en un control estático que tiene el \_ [**estilo NOTIFY \_ de SS.**](static-control-styles.md) La ventana primaria del control recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ STN_DBLCLK
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador del control estático. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador del control estático. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -57,11 +57,11 @@ Identificador del control estático.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Identificador del control estático.
 **Referencia**
 </dt> <dt>
 
-[STN \_ clic](stn-clicked.md)
+[STN \_ CLICKED](stn-clicked.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Controles estáticos](static-controls.md)
@@ -90,7 +90,7 @@ Identificador del control estático.
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

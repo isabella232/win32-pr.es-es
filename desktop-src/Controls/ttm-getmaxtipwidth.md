@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_GETMAXTIPWIDTH (commctrl. h)
+title: TTM_GETMAXTIPWIDTH mensaje (Commctrl.h)
 description: Recupera el ancho máximo de una ventana de información sobre herramientas.
 ms.assetid: 0f0a5403-fe2e-4e5a-96c2-a435827a5fd7
 keywords:
-- TTM_GETMAXTIPWIDTH controles de mensajes de Windows
+- TTM_GETMAXTIPWIDTH controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f89c56692db9d451eb18db61af262cc0f3a715f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bce561b254645932b214b48879aa0be04deb31b32e8dc591fc3183ec39871273
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751055"
 ---
-# <a name="ttm_getmaxtipwidth-message"></a>TTM \_ GETMAXTIPWIDTH
+# <a name="ttm_getmaxtipwidth-message"></a>Mensaje \_ GETMAXTIPWIDTH de TTM
 
 Recupera el ancho máximo de una ventana de información sobre herramientas.
 
@@ -37,9 +37,9 @@ Recupera el ancho máximo de una ventana de información sobre herramientas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **int** que representa el ancho máximo de la información sobre herramientas, en píxeles. Si no se estableció previamente el ancho máximo, el mensaje devuelve-1.
+Devuelve un **valor INT** que representa el ancho máximo de la información sobre herramientas, en píxeles. Si no se estableció anteriormente ningún ancho máximo, el mensaje devuelve -1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El valor de ancho máximo de la información sobre herramientas no indica el ancho real de una ventana de información sobre herramientas. En su lugar, si una cadena de información sobre herramientas supera el ancho máximo, el control divide el texto en varias líneas, usando espacios para determinar los saltos de línea. Si el texto no se puede segmentar en varias líneas, se mostrará en una sola línea. La longitud de esta línea puede superar el ancho máximo de la información sobre herramientas.
 
@@ -49,9 +49,9 @@ El valor de ancho máximo de la información sobre herramientas no indica el anc
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

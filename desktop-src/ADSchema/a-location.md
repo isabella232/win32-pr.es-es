@@ -5,7 +5,7 @@ ms.assetid: 3ee97a61-6dce-4f41-b03a-a475706f3cbd
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD de atributo de ubicación
-- Esquema de AD de atributo de ubicación
+- esquema de AD de atributo de ubicación
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a37f15e80d470c0662036745f285aea87e79391
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f7e8080ffa24c9b2a147e6e3ec76f586a92fba3456aa1f80d2875c1292940232
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705775"
 ---
-# <a name="location-attribute-ad-schema"></a>Location (atributo) (esquema de AD)
+# <a name="location-attribute-ad-schema"></a>Atributo Location (esquema de AD)
 
 La ubicación del usuario, como el número de oficina.
 
@@ -29,14 +29,14 @@ La ubicación del usuario, como el número de oficina.
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Location                                    |
-| Nombre para mostrar de LDAP | ubicación                                    |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Ubicación                                    |
+| Ldap-Display-Name | ubicación                                    |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.222                      |
-| System-ID-GUID    | 09dcb79f-165f-11d0-a064-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 09dcb79f-165f-11d0-a064-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ La ubicación del usuario, como el número de oficina.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ La ubicación del usuario, como el número de oficina.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                               |
+| Id. de vínculo                | \-                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                               |
-| System-Only            | False                                                                                                                                                            |
-| Tiene un único valor       | True                                                                                                                                                             |
-| Está indexado             | True                                                                                                                                                             |
-| En el catálogo global      | True                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                     |
+| System-Only            | Falso                                                                                                                                                            |
+| Es de un solo valor       | Verdadero                                                                                                                                                             |
+| Está indexado             | Verdadero                                                                                                                                                             |
+| En el catálogo global      | Verdadero                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                     |
 | Range-Lower            | 0                                                                                                                                                                |
 | Range-Upper            | 1024                                                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                                                       |
@@ -77,34 +77,34 @@ La ubicación del usuario, como el número de oficina.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
-| System-Only            | False                                                                                                                                                                                              |
-| Tiene un único valor       | True                                                                                                                                                                                               |
-| Está indexado             | True                                                                                                                                                                                               |
-| En el catálogo global      | True                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                               |
+| Está indexado             | Verdadero                                                                                                                                                                                               |
+| En el catálogo global      | Verdadero                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**misma**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**Habitación**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | True                                                                    |
-| En el catálogo global      | True                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Verdadero                                                                    |
+| En el catálogo global      | Verdadero                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 0                                                                       |
 | Range-Upper            | 1024                                                                    |
 | Search-Flags           | 0x00000001                                                              |
@@ -119,18 +119,18 @@ La ubicación del usuario, como el número de oficina.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
-| System-Only            | False                                                                                                                                                                                              |
-| Tiene un único valor       | True                                                                                                                                                                                               |
-| Está indexado             | True                                                                                                                                                                                               |
-| En el catálogo global      | True                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                               |
+| Está indexado             | Verdadero                                                                                                                                                                                               |
+| En el catálogo global      | Verdadero                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**misma**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**Habitación**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ La ubicación del usuario, como el número de oficina.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
-| System-Only            | False                                                                                                                                                                                              |
-| Tiene un único valor       | True                                                                                                                                                                                               |
-| Está indexado             | True                                                                                                                                                                                               |
-| En el catálogo global      | True                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                               |
+| Está indexado             | Verdadero                                                                                                                                                                                               |
+| En el catálogo global      | Verdadero                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**misma**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**Habitación**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ La ubicación del usuario, como el número de oficina.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
-| System-Only            | False                                                                                                                                                                                              |
-| Tiene un único valor       | True                                                                                                                                                                                               |
-| Está indexado             | True                                                                                                                                                                                               |
-| En el catálogo global      | True                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                               |
+| Está indexado             | Verdadero                                                                                                                                                                                               |
+| En el catálogo global      | Verdadero                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**misma**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**Habitación**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ La ubicación del usuario, como el número de oficina.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                 |
+| Id. de vínculo                | \-                                                                                                                                                                                                 |
 | MAPI-Id                | \-                                                                                                                                                                                                 |
-| System-Only            | False                                                                                                                                                                                              |
-| Tiene un único valor       | True                                                                                                                                                                                               |
-| Está indexado             | True                                                                                                                                                                                               |
-| En el catálogo global      | True                                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                       |
+| System-Only            | Falso                                                                                                                                                                                              |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                               |
+| Está indexado             | Verdadero                                                                                                                                                                                               |
+| En el catálogo global      | Verdadero                                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                       |
 | Range-Lower            | 0                                                                                                                                                                                                  |
 | Range-Upper            | 1024                                                                                                                                                                                               |
 | Search-Flags           | 0x00000001                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                         |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**misma**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subnet**](c-subnet.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**Cola de impresión**](c-printqueue.md)<br/> [**Habitación**](c-room.md)<br/> [**Sitio**](c-site.md)<br/> [**Subred**](c-subnet.md)<br/> |
 
 
 

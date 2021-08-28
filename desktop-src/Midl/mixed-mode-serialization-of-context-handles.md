@@ -1,46 +1,46 @@
 ---
 title: Serialización en modo mixto de identificadores de contexto
-description: En Microsoft Windows XP, una sola interfaz puede alojar identificadores de contexto serializados y no serializados, lo que se denomina serialización en modo mixto.
+description: En Microsoft Windows XP, una sola interfaz puede dar cabida a identificadores de contexto serializados y no serializados, lo que se denomina serialización en modo mixto.
 ms.assetid: b52c1d6f-cdc5-4597-a36e-bb957e4aab01
 keywords:
-- Referencia del lenguaje MIDL (MIDL), serialización en modo mixto de identificadores de contexto
-- identificadores de contexto MIDL
+- MIDL de referencia del lenguaje MIDL, serialización en modo mixto de identificadores de contexto
+- control de contexto MIDL
 - MIDL de serialización en modo mixto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0922b53bfc7ba2e30ad8df0764e3cf9a36f0f723
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0aaa35f02a939a50e2484ace29630783ee219d6313d7538cba54b1f54cd83007
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787435"
 ---
 # <a name="mixed-mode-serialization-of-context-handles"></a>Serialización en modo mixto de identificadores de contexto
 
-A partir de Windows XP, una sola interfaz puede alojar identificadores de contexto serializados y no serializados, lo que permite que un método de una interfaz tenga acceso a un identificador de contexto exclusivamente (serializado), mientras que otros métodos tienen acceso a ese identificador de contexto en modo compartido (no serializado). Para obtener más información sobre los identificadores de contexto, vea los siguientes atributos:
+A partir de Windows XP, una sola interfaz puede dar cabida a identificadores de contexto serializados y no serializados, lo que permite que un método de una interfaz acceda a un identificador de contexto exclusivamente (serializado), mientras que otros métodos acceden a ese identificador de contexto en modo compartido (no serializado). Para obtener más información sobre los identificadores de contexto, vea los atributos siguientes:
 
--   [**identificador de contexto \_**](context-handle.md)
--   [**\_serializar identificador de contexto \_**](context-handle-serialize.md)
--   [**identificador de contexto de \_ \_ noserialización**](context-handle-noserialize.md)
+-   [**identificador de \_ contexto**](context-handle.md)
+-   [**serialización \_ del \_ identificador de contexto**](context-handle-serialize.md)
+-   [**noserialize \_ del \_ identificador de contexto**](context-handle-noserialize.md)
 
-Las capacidades de acceso de modo de uso compartido y en serie son comparables a los mecanismos de bloqueo de lectura y escritura. los métodos que usan un identificador de contexto serializado son usuarios exclusivos (escritores), mientras que los métodos que usan un identificador de contexto no serializado son usuarios compartidos (lectores). Se deben serializar los métodos que destruyen o modifican el estado de un identificador de contexto. Los métodos que no modifican el estado de un identificador de contexto, como los métodos que simplemente leen un identificador de contexto, pueden ser no serializados. El uso de un identificador de contexto en modo mixto puede mejorar considerablemente la escalabilidad de un servidor, especialmente cuando varios subprocesos realizan llamadas simultáneas al mismo identificador de contexto.
+Las funcionalidades de acceso en modo compartido y serializado son comparables a los mecanismos de bloqueo de lectura y escritura. Los métodos que usan un identificador de contexto serializado son usuarios exclusivos (escritores), mientras que los métodos que usan un identificador de contexto no serializado son usuarios compartidos (lectores). Se deben serializar los métodos que destruyen o modifican el estado de un identificador de contexto. Los métodos que no modifican el estado de un identificador de contexto, como los métodos que simplemente leen de un identificador de contexto, pueden no serializarse. El uso de un identificador de contexto en modo mixto puede mejorar considerablemente la escalabilidad de un servidor, especialmente cuando varios subprocesos hacen llamadas simultáneas al mismo identificador de contexto.
 
-RPC no exige "bloqueo de escritura" en los métodos que usan un identificador de contexto en modo compartido, lo que significa que las aplicaciones deben asegurarse de que los identificadores de contexto del modo compartido no se modifiquen. La modificación de un identificador de contexto que se usa en modo compartido puede dar lugar a daños sutiles en el contenido de los identificadores de contexto, que son imposibles de depurar.
+RPC no aplica el "bloqueo de escritura" en los métodos mediante un identificador de contexto en modo compartido, lo que significa que las aplicaciones deben asegurarse de que los identificadores de contexto del modo compartido no se modifican. La modificación de un identificador de contexto usado en modo compartido puede provocar daños sutiles en el contenido del identificador de contexto, que son imposibles de depurar.
 
-El cambio de la lógica de serialización de un identificador de contexto solo afecta al servidor. Además, el cambio de la lógica de serialización de un identificador de contexto no afecta al formato de conexión y, por lo tanto, los cambios en la lógica de serialización en un servidor no afectan a la capacidad de los clientes existentes para interactuar con el servidor.
+Cambiar la lógica de serialización de un identificador de contexto solo afecta al servidor. Además, cambiar la lógica de serialización de un identificador de contexto no afecta al formato de conexión y, por lo tanto, los cambios en la lógica de serialización en un servidor no afectan a la capacidad de los clientes existentes para interactuar con el servidor.
 
 No se recomienda usar solo identificadores de contexto no serializados. Los servidores que usan identificadores no serializados deben cambiar al acceso serializado para el método que cierra el identificador de contexto.
 
-\[ \] Los métodos de creación suelen usar identificadores de contexto que no son de solo uso y no requieren ninguna serialización. Por lo tanto, el atributo de serialización que se aplica a los \[ \] identificadores de contexto de solo salida, como [**\_ \_ serializar identificador**](context-handle-serialize.md) de contexto o [**identificador de contexto \_ \_ noserialización**](context-handle-noserialize.md), lo omite RPC.
+Los identificadores de contexto que están fuera de - solo se usan normalmente en los métodos de creación \[ y no requieren ninguna \] serialización. Por lo tanto, cualquier atributo de serialización aplicado a los identificadores de contexto out -only, como la serialización de identificadores de contexto o el identificador de contexto \[ \] [**\_ \_ noserialize**](context-handle-noserialize.md) [**\_ \_**](context-handle-serialize.md) , se omite mediante RPC.
 
 > [!Note]  
 > Los métodos de creación se serializan implícitamente.
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos
 
-Los dos ejemplos siguientes muestran cómo habilitar la serialización en modo mixto de identificadores de contexto.
+En los dos ejemplos siguientes se muestra cómo habilitar la serialización en modo mixto de identificadores de contexto.
 
 En el primer ejemplo se muestra cómo hacerlo en el archivo IDL:
 
@@ -71,18 +71,18 @@ typedef [context_handle_noserialize] TestContextHandleShared;
 
 <dl> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**identificador de \_ contexto**](context-handle.md)
 </dt> <dt>
 
-[**\_serializar identificador de contexto \_**](context-handle-serialize.md)
+[**serialización \_ del \_ identificador de contexto**](context-handle-serialize.md)
 </dt> <dt>
 
-[**identificador de contexto de \_ \_ noserialización**](context-handle-noserialize.md)
+[**noserialize \_ del \_ identificador de contexto**](context-handle-noserialize.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

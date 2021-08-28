@@ -1,21 +1,21 @@
 ---
-description: Los objetos protegibles utilizan un formato de máscara de acceso en el que los cuatro bits de orden superior especifican derechos de acceso genéricos.
+description: Los objetos protegibles usan un formato de máscara de acceso en el que los cuatro bits de orden superior especifican derechos de acceso genéricos.
 ms.assetid: e18cede9-9bf7-4866-850b-5d7fa43a5b0f
 title: Derechos de acceso genéricos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adff14aa259222bc37096b8a94f30cffb5ab0876
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee90a6866afc294cfef1c8fdad96e239f76ce8f9c251aeabc2d2a907e3e0bbe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672095"
 ---
 # <a name="generic-access-rights"></a>Derechos de acceso genéricos
 
-Los objetos protegibles utilizan un [formato de máscara de acceso](access-mask-format.md) en el que los cuatro bits de orden superior especifican derechos de acceso genéricos. Cada tipo de objeto protegible asigna estos bits a un conjunto de sus derechos de acceso estándar y específicos del objeto. Por ejemplo, un objeto de archivo de Windows asigna el \_ bit de lectura genérico al control de lectura \_ y sincroniza los derechos de acceso estándar, así como los \_ \_ \_ \_ \_ \_ derechos de acceso de archivo lectura de datos, archivo de escritura EA y lectura de archivos. Otros tipos de objetos asignan el \_ bit de lectura genérico a cualquier conjunto de derechos de acceso adecuado para ese tipo de objeto.
+Los objetos protegibles usan un [formato de máscara de acceso](access-mask-format.md) en el que los cuatro bits de orden superior especifican derechos de acceso genéricos. Cada tipo de objeto protegible asigna estos bits a un conjunto de sus derechos de acceso estándar y específicos del objeto. Por ejemplo, un objeto de archivo Windows asigna el bit DE LECTURA GENÉRICA a los derechos de acceso estándar READ CONTROL y SYNCHRONIZE y a los derechos de acceso específicos del objeto FILE READ DATA, FILE READ EA y \_ FILE \_ READ \_ \_ \_ \_ \_ \_ ATTRIBUTES. Otros tipos de objetos asignan el bit GENERIC READ a cualquier conjunto de derechos \_ de acceso adecuado para ese tipo de objeto.
 
-Puede usar derechos de acceso genéricos para especificar el tipo de acceso que necesita al abrir un identificador de un objeto. Normalmente es más sencillo que especificar todos los derechos estándar y específicos correspondientes.
+Puede usar derechos de acceso genéricos para especificar el tipo de acceso que necesita al abrir un identificador para un objeto . Esto suele ser más sencillo que especificar todos los derechos estándar y específicos correspondientes.
 
 En la tabla siguiente se muestran las constantes definidas para los derechos de acceso genéricos.
 
@@ -23,10 +23,10 @@ En la tabla siguiente se muestran las constantes definidas para los derechos de 
 
 | Constante         | Significado genérico            |
 |------------------|----------------------------|
-| todos GENÉRICOs \_     | Todos los derechos de acceso posibles |
-| \_ejecución genérica | Ejecutar acceso             |
-| \_lectura genérica    | acceso de lectura                |
-| \_escritura genérica   | Acceso de escritura               |
+| GENERIC \_ ALL     | Todos los derechos de acceso posibles |
+| GENERIC \_ EXECUTE | Ejecución del acceso             |
+| LECTURA \_ GENÉRICA    | acceso de lectura                |
+| ESCRITURA \_ GENÉRICA   | Acceso de escritura               |
 
 
 

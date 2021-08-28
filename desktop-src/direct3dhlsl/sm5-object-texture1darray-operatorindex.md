@@ -1,6 +1,6 @@
 ---
-title: 'Texture1DArray:: Operator (función)'
-description: 'Devuelve una variable de recurso de solo lectura. | Texture1DArray:: Operator (función)'
+title: Función Texture1DArray::Operator
+description: Devuelve una variable de recurso de solo lectura. | Función Texture1DArray::Operator
 ms.assetid: 05ec9652-b5dd-41cf-8bef-730c507c5ba4
 keywords:
 - Función de operador HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 578d778cd1e0e064c435c19fb094feb66f651e05
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ed214b4c4ccc55dfe6500f70659f4f81b2188de68b8cea7b5ba69c495108d730
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788355"
 ---
-# <a name="texture1darrayoperator--function"></a>Texture1DArray:: Operator (función)
+# <a name="texture1darrayoperator--function"></a>Función Texture1DArray::Operator
 
 Devuelve una variable de recurso de solo lectura.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint2**
 
-Posición de índice. El primer componente contiene la coordenada x. El segundo componente indica el segmento de matriz deseado.
+Posición del índice. El primer componente contiene la coordenada X. El segundo componente indica el segmento de matriz deseado.
 
 </dd> </dl>
 
@@ -51,15 +51,15 @@ Tipo: **R**
 
 Variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método siempre tiene acceso al primer nivel de MIP. Para especificar otros niveles de MIP, utilice en su lugar el método [**MIP. Operator \[ \] \[ \]**](sm5-object-texture1darray-mipsoperatorindex.md) .
+Este método siempre tiene acceso al primer nivel de mip. Para especificar otros niveles de mip, use el [**método \[ \] \[ \] mip.operator**](sm5-object-texture1darray-mipsoperatorindex.md) en su lugar.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

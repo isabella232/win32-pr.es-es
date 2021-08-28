@@ -1,11 +1,11 @@
 ---
-title: Atributo de almacén de nivel siguiente
+title: Atributo Next-Level-Store
 description: Este atributo indica el siguiente almacén de clases que se va a buscar.
 ms.assetid: 6a2416bc-7b93-457b-809c-2a02932376bf
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de almacén de siguiente nivel
-- nextLevelStore esquema de AD de atributos
+- Esquema de AD del atributo Next-Level-Store
+- Esquema de AD del atributo nextLevelStore
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad723aeddbe2223fcde0fa5231a456ade1b99719
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1af9d6476ff4f34625fcea2c2e494e001b99524569b0263284e6d11e90c08b08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703208"
 ---
-# <a name="next-level-store-attribute"></a>Atributo de almacén de nivel siguiente
+# <a name="next-level-store-attribute"></a>Atributo Next-Level-Store
 
 Este atributo indica el siguiente almacén de clases que se va a buscar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Siguiente nivel de almacén                        |
-| Nombre para mostrar de LDAP | nextLevelStore                          |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Almacén de siguiente nivel                        |
+| Ldap-Display-Name | nextLevelStore                          |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.214                  |
-| System-ID-GUID    | bf9679da-0de6-11d0-a285-00aa003049e2    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf9679da-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Este atributo indica el siguiente almacén de clases que se va a buscar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ Este atributo indica el siguiente almacén de clases que se va a buscar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ Este atributo indica el siguiente almacén de clases que se va a buscar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -116,15 +116,15 @@ Este atributo indica el siguiente almacén de clases que se va a buscar.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ Este atributo indica el siguiente almacén de clases que se va a buscar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ Este atributo indica el siguiente almacén de clases que se va a buscar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | False                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | Verdadero                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |

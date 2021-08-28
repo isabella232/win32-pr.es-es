@@ -1,20 +1,20 @@
 ---
-title: Recopilaciones (servidor de directivas de redes)
-description: Los valores de los tipos de enumeración siguientes corresponden a las colecciones SDO.
+title: Recopilaciones (servidor de directivas de red)
+description: Los valores de los siguientes tipos de enumeración corresponden a colecciones de SDO.
 ms.assetid: f529bb20-0e63-424c-8a67-d06f76233d61
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 108fe575eda95c0477a8ec8c474210633ba21bac
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e9186c5b0f7b9bb89385b98192264306bab209850a7267421cca70b87e2ff5c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105685724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683965"
 ---
-# <a name="collections-network-policy-server"></a>Recopilaciones (servidor de directivas de redes)
+# <a name="collections-network-policy-server"></a>Recopilaciones (servidor de directivas de red)
 
-Los valores de los tipos de enumeración siguientes corresponden a las colecciones SDO.
+Los valores de los siguientes tipos de enumeración corresponden a colecciones de SDO.
 
 -   [**DICTIONARYPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-dictionaryproperties)
 -   [**IASCOMPONENTPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iascomponentproperties)
@@ -29,6 +29,6 @@ Los valores de los tipos de enumeración siguientes corresponden a las coleccion
 -   [**REMEDIATIONSERVERPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-remediationserverproperties)
 -   [**SHVTEMPLATEPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-shvtemplateproperties)
 
- 
+ 
 
- 
+ 

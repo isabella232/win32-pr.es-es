@@ -1,19 +1,19 @@
 ---
-description: La \_ notificación SPFILENOTIFY ENDQUEUE se envía a la rutina de devolución de llamada cuando se han completado todas las operaciones en cola.
+description: La notificación SPFILENOTIFY ENDQUEUE se envía a la rutina de devolución de llamada cuando se han completado todas las operaciones \_ en cola.
 ms.assetid: f4540ab6-edea-4f84-b7eb-4ab3f774068b
-title: Mensaje de SPFILENOTIFY_ENDQUEUE (setupapi. h)
+title: SPFILENOTIFY_ENDQUEUE mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f3ed2ca896f91ec09cb49f89731b41c5d099465
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6192ac867b47b3e5cf9d06806bfb6eb42743aee4d97a935035fd7b44ea0e79b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665145"
 ---
-# <a name="spfilenotify_endqueue-message"></a>SPFILENOTIFY \_ ENDQUEUE
+# <a name="spfilenotify_endqueue-message"></a>Mensaje SPFILENOTIFY \_ ENDQUEUE
 
-La notificación **SPFILENOTIFY \_ ENDQUEUE** se envía a la rutina de devolución de llamada cuando se han completado todas las operaciones en cola.
+La **notificación SPFILENOTIFY \_ ENDQUEUE** se envía a la rutina de devolución de llamada cuando se han completado todas las operaciones en cola.
 
 
 ```C++
@@ -29,10 +29,10 @@ SPFILENOTIFY_ENDQUEUE
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-**True** si la cola se procesó correctamente; de lo contrario, **false** .
+**TRUE** si la cola se procesó correctamente; **en caso contrario, FALSE.**
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Se omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: El método IsOwnershipAllowed de la clase de Win32 \_ TPM indica si se permite la capacidad de instalar un propietario para el dispositivo.
+description: El método IsOwnershipAllowed de la clase Tpm de Win32 indica si se permite la capacidad de instalar un \_ propietario para el dispositivo.
 ms.assetid: dfeb5afe-4169-470b-b5e4-cf1e5781271e
-title: Método IsOwnershipAllowed de la clase Win32_Tpm
+title: Método IsOwnershipAllowed de la Win32_Tpm clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: c818d5a4e4eb16ac637372f0c7ed0f2e9211ef88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81363f03280d7805ce965106c7af9f1b288ae75fd9217c4af85dd80f34973a7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739555"
 ---
-# <a name="isownershipallowed-method-of-the-win32_tpm-class"></a>Método IsOwnershipAllowed de la \_ clase Win32 TPM
+# <a name="isownershipallowed-method-of-the-win32_tpm-class"></a>Método IsOwnershipAllowed de la clase Tpm \_ win32
 
-El método **IsOwnershipAllowed** de la clase de [**Win32 \_ TPM**](win32-tpm.md) indica si se permite la capacidad de instalar un propietario para el dispositivo.
+El **método IsOwnershipAllowed** de la clase [**\_ Tpm de Win32**](win32-tpm.md) indica si se permite la capacidad de instalar un propietario para el dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ uint32 IsOwnershipAllowed(
 
 <dl> <dt>
 
-*IsOwnershipAllowed* \[ enuncia\]
+*IsOwnershipAllowed* \[ out\]
 </dt> <dd>
 
 Tipo: **booleano**
 
-Si es **true**, se permite la capacidad de instalar un propietario para el dispositivo. Si **es false**, el método [**TakeOwnerShip**](takeownership-win32-tpm.md) no podrá instalar un propietario para el dispositivo.
+Si **es true**, se permite la capacidad de instalar un propietario para el dispositivo. Si **es false,** el [**método TakeOwnership**](takeownership-win32-tpm.md) no podrá instalar un propietario para el dispositivo.
 
-Este valor se puede cambiar con el método [**SetPhysicalPresenceRequest**](setphysicalpresencerequest-win32-tpm.md) . El valor se restablece en **true** después de ejecutar el método [**Clear**](clear-win32-tpm.md) .
+Este valor se puede cambiar con el [**método SetPhysicalPresenceRequest.**](setphysicalpresencerequest-win32-tpm.md) El valor se restablece a **true después** de ejecutar el método [**Clear.**](clear-win32-tpm.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Se pueden devolver todos los errores de TPM, así como los errores específicos de los servicios base de TPM.
 
@@ -62,15 +62,15 @@ A continuación se enumeran los códigos de retorno comunes.
 
 | Código o valor devuelto                                                                                                                                 | Descripción                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl> | Método realizado correctamente.<br/> |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl> | Método realizado correctamente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,11 +78,11 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                      |
-| Espacio de nombres<br/>                | \\MicrosoftTpm de \\ seguridad de cimv2 raíz \\<br/>                                            |
-| MOF<br/>                      | <dl> <dt>Win32 \_ TPM. mof</dt> </dl> |
-| Archivo DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
@@ -90,7 +90,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**TPM de Win32 \_**](win32-tpm.md)
+[**Tpm de \_ Win32**](win32-tpm.md)
 </dt> </dl>
 
  

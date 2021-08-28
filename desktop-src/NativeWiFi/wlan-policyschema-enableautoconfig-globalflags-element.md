@@ -1,7 +1,7 @@
 ---
-description: Especifica si los equipos usan el servicio de configuración automática (AutoConfig) integrado para administrar las conexiones inalámbricas.
+description: Especifica si las máquinas usan el servicio de configuración automática (AutoConfig) integrado para administrar conexiones inalámbricas.
 ms.assetid: c255e0a0-65ae-44a8-95cb-1a000394109d
-title: Elemento enableAutoConfig (Indicadores_globales) (LAN_policy) para WLAN
+title: Elemento enableAutoConfig (globalFlags) (LAN_policy) para WLAN
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5105b8e634aa5affa8648b763a82bbd60cbaec17
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 77b09bf046cdbadb58c888a3084d14ed14794064bf9f11c110ccecaff105fceb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106188042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684416"
 ---
-# <a name="enableautoconfig-globalflags-element-lan_policy-for-wlan"></a>Elemento enableAutoConfig (Indicadores_globales) (LAN_policy) para WLAN 
+# <a name="enableautoconfig-globalflags-element-lan_policy-for-wlan"></a>Elemento enableAutoConfig (globalFlags) (LAN_policy) para WLAN 
 
-El elemento **enableAutoConfig** (indicadores_globales) especifica si los equipos usan el servicio de configuración automática (AutoConfig) integrado para administrar las conexiones inalámbricas. Cuando **enableAutoConfig** tiene un valor de false, los equipos no deben usar AutoConfig para administrar las conexiones inalámbricas y el servicio de configuración automática solo responde a las solicitudes para habilitar el servicio. Cuando **enableAutoConfig** tiene un valor de true, los equipos pueden usar el servicio de configuración automática.
+El **elemento enableAutoConfig** (globalFlags) especifica si las máquinas usan el servicio de configuración automática integrado (AutoConfig) para administrar las conexiones inalámbricas. Cuando **enableAutoConfig tiene** el valor FALSE, las máquinas no deben usar AutoConfig para administrar conexiones inalámbricas y el servicio AutoConfig solo responde a las solicitudes para habilitar el servicio. Cuando **enableAutoConfig** tiene el valor TRUE, las máquinas pueden usar el servicio AutoConfig.
 
-Este elemento es obligatorio. Cuando el servicio de configuración automática crea un perfil, este elemento tendrá el valor predeterminado TRUE.
+Este elemento es obligatorio. Cuando el servicio AutoConfig crea un perfil, este elemento tendrá el valor predeterminado TRUE.
 
 ``` syntax
 <xs:element name="enableAutoConfig"
@@ -31,33 +31,33 @@ Este elemento es obligatorio. Cuando el servicio de configuración automática c
  />
 ```
 
-El elemento **enableAutoConfig** se define mediante el elemento [**indicadores_globales**](wlan-policyschema-globalflags-wlanpolicy-element.md) .
+El **elemento enableAutoConfig** se define mediante el [**elemento globalFlags.**](wlan-policyschema-globalflags-wlanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Indicadores**](wlan-policyschema-globalflags-wlanpolicy-element.md)
+[**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Indicadores_globales (WLANPolicy)**](wlan-policyschema-globalflags-wlanpolicy-element.md)
+[**globalFlags (WLANPolicy)**](wlan-policyschema-globalflags-wlanpolicy-element.md)
 </dt> </dl>
 
  

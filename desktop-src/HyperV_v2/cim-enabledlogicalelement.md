@@ -1,7 +1,7 @@
 ---
 description: Representa un elemento lógico que se puede habilitar y deshabilitar.
 ms.assetid: 52eed77e-f3f1-4489-8eff-a8ebebd5e1a8
-title: CIM_EnabledLogicalElement (clase)
+title: CIM_EnabledLogicalElement clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,14 +20,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9e2d7043653b219bc0d54ac7bee3393275dab673
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6529270946543d19fe79ea529f4fa88ef1f9055b20f350887061e84901b28139
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695935"
 ---
-# <a name="cim_enabledlogicalelement-class"></a>\_Clase EnabledLogicalElement de CIM
+# <a name="cim_enabledlogicalelement-class"></a>Cim \_ EnabledLogicalElement (clase)
 
 Representa un elemento lógico que se puede habilitar y deshabilitar.
 
@@ -49,14 +49,14 @@ class CIM_EnabledLogicalElement : CIM_LogicalElement
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ EnabledLogicalElement** tiene estos tipos de miembros:
+La **clase CIM \_ EnabledLogicalElement** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **CIM \_ EnabledLogicalElement** tiene estos métodos.
+La **clase CIM \_ EnabledLogicalElement** tiene estos métodos.
 
 
 
@@ -70,25 +70,25 @@ La clase **CIM \_ EnabledLogicalElement** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ EnabledLogicalElement** tiene estas propiedades.
+La **clase CIM \_ EnabledLogicalElement** tiene estas propiedades.
 
 <dl> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElement**.**RequestStateChange**","[**\_ EnabledLogicalElementCapabilities CIM**](cim-enabledlogicalelementcapabilities.md).**RequestedStatesSupported**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElement**.**RequestStateChange**", "[**CIM \_ EnabledLogicalElementCapabilities**](cim-enabledlogicalelementcapabilities.md).**RequestedStatesSupported**")
 </dt> </dl>
 
-Indica los valores posibles para el parámetro *RequestedState* del método [**RequestStateChange**](cim-enabledlogicalelement-requeststatechange.md) .
+Indica los valores posibles para el *parámetro RequestedState* del [**método RequestStateChange.**](cim-enabledlogicalelement-requeststatechange.md)
 
-Los valores de la lista deben ser un subconjunto de los valores contenidos en la propiedad **RequestedStatesSupported** de la instancia de **\_ EnabledLogicalElementCapabilities de CIM** asociada. Esta propiedad es **null** si la implementación no puede determinar el conjunto de valores posibles para el estado actual del elemento.
+Los valores enumerados deben ser un subconjunto de los valores contenidos en la propiedad **RequestedStatesSupported** de la instancia **de CIM \_ EnabledLogicalElementCapabilities** asociada. Esta propiedad es **NULL** si la implementación no puede determinar el conjunto de valores posibles para el estado actual del elemento.
 
 <dt>
 
@@ -115,7 +115,7 @@ Los valores de la lista deben ser un subconjunto de los valores contenidos en la
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (6)
+**Sin** conexión (6)
 
 
 </dt> <dd></dd> <dt>
@@ -129,14 +129,14 @@ Los valores de la lista deben ser un subconjunto de los valores contenidos en la
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Diferir** (8)
+**Aplazar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-Modo **inactivo** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -150,7 +150,7 @@ Modo **inactivo** (9)
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -167,13 +167,13 @@ Modo **inactivo** (9)
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica la configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. El valor predeterminado **está habilitado** (2).
+Indica la configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Valor predeterminado **Habilitado** (2).
 
 <dt>
 
@@ -200,21 +200,21 @@ Indica la configuración predeterminada o de inicio de un administrador para el 
 
 <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span>
 
-**Habilitada pero sin conexión** (6)
+**Habilitado pero sin conexión** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Default"></span><span id="no_default"></span><span id="NO_DEFAULT"></span>
 
-**No tiene valor predeterminado** (7)
+**Sin valor** predeterminado (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-Modo **inactivo** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -228,7 +228,7 @@ Modo **inactivo** (9)
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -238,7 +238,7 @@ Modo **inactivo** (9)
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -247,7 +247,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElement**.**OtherEnabledState**")
 </dt> </dl>
 
-Indica el estado habilitado de un elemento. Entre los valores posibles se incluyen las transiciones entre Estados. Por ejemplo, **apagar** (4) e **iniciar** (10) son Estados transitorios entre **habilitado** y **deshabilitado**.
+Indica el estado habilitado de un elemento. Los valores posibles incluyen las transiciones entre estados. Por ejemplo, **Apagar** (4) e **Iniciar** (10) son estados transitorios entre **Habilitado** y **Deshabilitado.**
 
 <dt>
 
@@ -260,7 +260,7 @@ Indica el estado habilitado de un elemento. Entre los valores posibles se incluy
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -272,7 +272,7 @@ Indica el estado habilitado de un elemento. Entre los valores posibles se incluy
 
 </dt> <dd>
 
-El elemento es o puede ejecutar comandos, procesará cualquier comando en cola y pondrá en cola nuevas solicitudes.
+El elemento es o podría estar ejecutando comandos, procesará los comandos en cola y pondrá en cola nuevas solicitudes.
 
 </dd> <dt>
 
@@ -283,18 +283,18 @@ El elemento es o puede ejecutar comandos, procesará cualquier comando en cola y
 
 </dt> <dd>
 
-el elemento no ejecutará comandos y quitará todas las solicitudes nuevas.
+el elemento no ejecutará comandos y quitará las nuevas solicitudes.
 
 </dd> <dt>
 
 <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>
 
-<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Cerrando** (4)
+<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Apagar** (4)
 
 
 </dt> <dd>
 
-El elemento está en el proceso de pasar a un Estado deshabilitado.
+El elemento está en proceso de pasar a un estado Deshabilitado.
 
 </dd> <dt>
 
@@ -311,18 +311,18 @@ El elemento no admite la habilitación o deshabilitación.
 
 <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span>
 
-<span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span>**Habilitada pero sin conexión** (6)
+<span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span>**Habilitado pero sin conexión** (6)
 
 
 </dt> <dd>
 
-Es posible que el elemento esté completando comandos y quitará todas las solicitudes nuevas.
+El elemento podría estar completando comandos y quitará las nuevas solicitudes.
 
 </dd> <dt>
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En pruebas** (7)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En prueba** (7)
 
 
 </dt> <dd>
@@ -333,47 +333,47 @@ El elemento está en un estado de prueba.
 
 <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>
 
-<span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>**Diferida** (8)
+<span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>**Aplazado** (8)
 
 
 </dt> <dd>
 
-Es posible que el elemento esté completando comandos, pero pondrá en cola todas las solicitudes nuevas.
+El elemento podría estar completando comandos, pero pondrá en cola las nuevas solicitudes.
 
 </dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>Modo **inactivo** (9)
+<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Quiesce** (9)
 
 
 </dt> <dd>
 
-Que el elemento está habilitado pero en modo restringido.
+Que el elemento está habilitado, pero en modo restringido.
 
 </dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Inicio** (10)
+<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**A partir** de (10)
 
 
 </dt> <dd>
 
-El elemento está en proceso de pasar a un estado habilitado. Las nuevas solicitudes se ponen en cola.
+El elemento está en proceso de pasar a un estado Habilitado. Las nuevas solicitudes se ponen en cola.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (11.. 32767)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (11..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Proveedor reservado** (32768... 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -392,14 +392,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElement**.**EnabledState**")
 </dt> </dl>
 
-Describe el estado del elemento cuando el valor de la propiedad **EnabledState** es **otro**. Esta propiedad debe establecerse en **null** cuando **EnabledState** no es **otro**.
+Describe el estado del elemento cuando el valor de la **propiedad EnabledState** es **Other**. Esta propiedad debe establecerse en **NULL cuando** **EnabledState** no es **Other**.
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -408,10 +408,10 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElement**.**EnabledState**")
 </dt> </dl>
 
-Indica el último estado solicitado para el elemento. La propiedad **EnabledState** indica el estado actual. Esta propiedad permite comparar el último estado solicitado y el actual.
+Indica el último estado solicitado para el elemento. El estado actual se indica mediante la **propiedad EnabledState.** Esta propiedad permite comparar los últimos estados solicitados y actuales.
 
 > [!Note]  
-> Cuando el valor de la propiedad **EnabledState** **no es aplicable**, esta propiedad no tiene ningún significado.
+> Cuando el valor de la **propiedad EnabledState** es **No aplicable,** esta propiedad no tiene ningún significado.
 
  
 
@@ -424,7 +424,7 @@ Indica el último estado solicitado para el elemento. La propiedad **EnabledStat
 
 </dt> <dd>
 
-Se desconoce el último estado solicitado para el elemento.
+El último estado solicitado para el elemento es desconocido.
 
 </dd> <dt>
 
@@ -442,7 +442,7 @@ Se desconoce el último estado solicitado para el elemento.
 
 </dt> <dd>
 
-Solicita una deshabilitación inmediata del elemento, de modo que no se ejecute ni acepte ningún comando o procesamiento de solicitudes.
+Solicita una deshabilitación inmediata del elemento, de modo que no ejecute ni acepte comandos ni solicitudes de procesamiento.
 
 </dd> <dt>
 
@@ -453,7 +453,7 @@ Solicita una deshabilitación inmediata del elemento, de modo que no se ejecute 
 
 </dt> <dd>
 
-Solicita una transición ordenada al Estado deshabilitado y puede implicar la eliminación de energía para borrar completamente cualquier estado existente.
+Solicita una transición ordenada al estado Deshabilitado y puede implicar la eliminación de energía para borrar completamente cualquier estado existente.
 
 </dd> <dt>
 
@@ -464,18 +464,18 @@ Solicita una transición ordenada al Estado deshabilitado y puede implicar la el
 
 </dt> <dd>
 
-Desusado en lugar de indicar que el último estado solicitado es "Unknown" (0). Si el último estado solicitado o deseado es desconocido, **RequestedState** debe tener el valor "Unknown" (0), pero puede tener el valor "no Change" (5).
+En desuso en lugar de indicar que el último estado solicitado es "Desconocido" (0). Si se desconoce el último estado solicitado o deseado, **RequestedState** debe tener el valor "Unknown" (0), pero puede tener el valor "No Change" (5).
 
 </dd> <dt>
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-<span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>**Sin conexión** (6)
+<span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>**Sin** conexión (6)
 
 
 </dt> <dd>
 
-Se ha solicitado al elemento la transición a los **EnabledState** habilitado pero sin conexión.
+Se ha solicitado al elemento realizar la transición a Enabled pero Offline **EnabledState**.
 
 </dd> <dt>
 
@@ -488,14 +488,14 @@ Se ha solicitado al elemento la transición a los **EnabledState** habilitado pe
 
 <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>
 
-<span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>**Diferida** (8)
+<span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span>**Aplazado** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>Modo **inactivo** (9)
+<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -507,18 +507,18 @@ Se ha solicitado al elemento la transición a los **EnabledState** habilitado pe
 
 </dt> <dd>
 
-Hace referencia a "apagar" y, a continuación, a un estado "habilitado".
+Hace referencia a realizar un "apagado" y, a continuación, pasar a un estado "Habilitado".
 
 </dd> <dt>
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-<span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Restablecer** (11)
+<span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Restablecimiento** (11)
 
 
 </dt> <dd>
 
-Indica que el elemento está primero "deshabilitado" y, a continuación, "habilitado".
+Indica que el elemento es primero "Disabled" y luego "Enabled".
 
 </dd> <dt>
 
@@ -538,7 +538,7 @@ Indica que el elemento está primero "deshabilitado" y, a continuación, "habili
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Proveedor reservado** (32768... 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -548,31 +548,31 @@ Indica que el elemento está primero "deshabilitado" y, a continuación, "habili
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica que el elemento ha cambiado el estado por última vez. Si el estado del elemento no ha cambiado y se rellena esta propiedad, debe establecerse en un valor de intervalo cero. Si se solicitó un cambio de estado, pero se rechazó o aún no se ha procesado, la propiedad no se debe actualizar.
+Indica cuándo cambió por última vez el estado del elemento. Si el estado del elemento no ha cambiado y esta propiedad se rellena, debe establecerse en un valor de intervalo cero. Si se solicitó un cambio de estado, pero se rechazó o aún no se ha procesado, la propiedad no se debe actualizar.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElement**.**RequestStateChange**","**\_ EnabledLogicalElement CIM**.**RequestedState**","**CIM \_ EnabledLogicalElement**.**EnabledState**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ EnabledLogicalElement**.**RequestStateChange**", "**CIM \_ EnabledLogicalElement**.**RequestedState**", "**CIM \_ EnabledLogicalElement**.**EnabledState**")
 </dt> </dl>
 
-Indica el estado de destino en el que la instancia está cambiando.
+Indica el estado de destino al que cambia la instancia.
 
-Un valor **sin cambios** indica que no hay ninguna transición en curso. Un valor de **no aplicable** indica que la implementación no informa de las transiciones en curso.
+Un valor de **No Change indica** que no hay ninguna transición en curso. Un valor de **No aplicable** indica que la implementación no informa de las transiciones en curso.
 
 <dt>
 
@@ -613,7 +613,7 @@ Un valor **sin cambios** indica que no hay ninguna transición en curso. Un valo
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (6)
+**Sin** conexión (6)
 
 
 </dt> <dd></dd> <dt>
@@ -627,14 +627,14 @@ Un valor **sin cambios** indica que no hay ninguna transición en curso. Un valo
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Diferir** (8)
+**Aplazar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-Modo **inactivo** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -648,7 +648,7 @@ Modo **inactivo** (9)
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -673,12 +673,12 @@ Modo **inactivo** (9)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -687,7 +687,7 @@ Modo **inactivo** (9)
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> </dl>
 
  

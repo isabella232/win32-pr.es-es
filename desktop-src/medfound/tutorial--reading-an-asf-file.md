@@ -1,43 +1,43 @@
 ---
-description: En este tutorial se muestra cómo obtener paquetes de datos de un archivo de formato de sistema avanzado (ASF) mediante el divisor de ASF.
+description: En este tutorial se muestra cómo obtener paquetes de datos de un archivo de formato de sistemas avanzados (ASF) mediante el divisor asf.
 ms.assetid: e3a55275-e8f0-4ab7-98db-a2f2c54d5a51
-title: 'Tutorial: lectura de un archivo ASF mediante objetos WMContainer'
+title: 'Tutorial: Lectura de un archivo ASF mediante objetos WMContainer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0225f434f650f0423771122e6fc345022e69ec1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e456f9e0061be97198623c2422801b5fd9fc196874cd8aa1a467692277319c9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713295"
 ---
-# <a name="tutorial-reading-an-asf-file-by-using-wmcontainer-objects"></a>Tutorial: lectura de un archivo ASF mediante objetos WMContainer
+# <a name="tutorial-reading-an-asf-file-by-using-wmcontainer-objects"></a>Tutorial: Lectura de un archivo ASF mediante objetos WMContainer
 
-En este tutorial se muestra cómo obtener paquetes de datos de un archivo de formato de sistema avanzado (ASF) mediante el [divisor de ASF](asf-splitter.md). En este tutorial, creará una aplicación de consola simple que lee un archivo ASF y genera ejemplos de medios comprimidos para la primera secuencia de vídeo del archivo. La aplicación muestra información sobre los fotogramas clave en el flujo de vídeo.
+En este tutorial se muestra cómo obtener paquetes de datos de un archivo de formato de sistemas avanzados (ASF) mediante el [divisor ASF](asf-splitter.md). En este tutorial, creará una aplicación de consola sencilla que lee un archivo ASF y genera ejemplos de medios comprimidos para la primera secuencia de vídeo del archivo. La aplicación muestra información sobre los fotogramas clave en la secuencia de vídeo.
 
 Este tutorial contiene los siguientes pasos:
 
 -   [Requisitos previos](#prerequisites)
--   [1. configurar el proyecto](#1-set-up-the-project)
--   [2. abrir un archivo ASF](#2-open-an-asf-file)
--   [3. leer el objeto de encabezado ASF](#3-read-the-asf-header-object)
--   [4. crear el divisor de ASF](#4-create-the-asf-splitter)
--   [5. seleccionar una secuencia para el análisis](#5-select-a-stream-for-parsing)
--   [6. generar ejemplos de medios comprimidos](#6-generate-compressed-media-samples)
--   [7. escribir la función Entry-Point](#7-write-the-entry-point-function)
+-   [1. Configurar el Project](#1-set-up-the-project)
+-   [2. Abrir un archivo ASF](#2-open-an-asf-file)
+-   [3. Leer el objeto de encabezado asf](#3-read-the-asf-header-object)
+-   [4. Creación del divisor de ASF](#4-create-the-asf-splitter)
+-   [5. Selección de una secuencia para el análisis](#5-select-a-stream-for-parsing)
+-   [6. Generar ejemplos de medios comprimidos](#6-generate-compressed-media-samples)
+-   [7. Escritura de la Entry-Point función](#7-write-the-entry-point-function)
 -   [Lista de programas](#program-listing)
 -   [Temas relacionados](#related-topics)
 
-En el tutorial no se explica cómo descodificar los datos comprimidos que la aplicación obtiene del divisor de ASF.
+En el tutorial no se explica cómo descodificar los datos comprimidos que la aplicación obtiene del divisor ASF.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se da por hecho lo siguiente:
 
--   Está familiarizado con la estructura de un archivo ASF y los componentes proporcionados por Media Foundation para trabajar con objetos ASF. Estos componentes incluyen el objeto ContentInfo, el divisor, el multiplexor y el perfil. Para obtener más información, consulte [WMCONTAINER ASF Components](wmcontainer-asf-components.md).
--   Está familiarizado con los [búferes multimedia](media-buffers.md) y los flujos de bytes: en concreto, las operaciones de archivo que utilizan un flujo de bytes, la lectura de una secuencia de bytes en un búfer multimedia y la escritura de contenido de un búfer multimedia en una secuencia de bytes.
+-   Está familiarizado con la estructura de un archivo ASF y los componentes proporcionados por Media Foundation para trabajar con objetos de ASF. Estos componentes incluyen el objeto ContentInfo, el divisor, el multiplexador y el perfil. Para obtener más información, vea [COMPONENTES DE ASF de WMContainer.](wmcontainer-asf-components.md)
+-   Está familiarizado [](media-buffers.md) con los búferes multimedia y los flujos de bytes: en concreto, las operaciones de archivo usan una secuencia de bytes, leen desde una secuencia de bytes en un búfer multimedia y escriben el contenido de un búfer multimedia en una secuencia de bytes.
 
-## <a name="1-set-up-the-project"></a>1. configurar el proyecto
+## <a name="1-set-up-the-project"></a>1. Configurar el Project
 
 Incluya los siguientes encabezados en el archivo de código fuente:
 
@@ -54,11 +54,11 @@ Incluya los siguientes encabezados en el archivo de código fuente:
 
 Vínculo a los siguientes archivos de biblioteca:
 
--   mfplat. lib
--   MF. lib
--   mfuuid. lib
+-   mfplat.lib
+-   mf.lib
+-   mfuuid.lib
 
-Declare la función [SafeRelease](saferelease.md) :
+Declare la [función SafeRelease:](saferelease.md)
 
 
 ```C++
@@ -74,11 +74,11 @@ template <class T> void SafeRelease(T **ppT)
 
 
 
-## <a name="2-open-an-asf-file"></a>2. abrir un archivo ASF
+## <a name="2-open-an-asf-file"></a>2. Abrir un archivo ASF
 
-A continuación, abra el archivo especificado mediante una llamada a la función [**MFCreateFile**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatefile) . El método devuelve un puntero al objeto de flujo de bytes que incluye el contenido del archivo. El nombre de archivo lo especifica el usuario a través de los argumentos de línea de comandos de la aplicación.
+A continuación, abra el archivo especificado llamando a [**la función MFCreateFile.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatefile) El método devuelve un puntero al objeto de flujo de bytes que contiene el contenido del archivo. El nombre de archivo lo especifica el usuario a través de los argumentos de la línea de comandos de la aplicación.
 
-El siguiente código de ejemplo toma un nombre de archivo y devuelve un puntero a un objeto de flujo de bytes que se puede usar para leer el archivo.
+El código de ejemplo siguiente toma un nombre de archivo y devuelve un puntero a un objeto de secuencia de bytes que se puede usar para leer el archivo.
 
 
 ```C++
@@ -89,18 +89,18 @@ El siguiente código de ejemplo toma un nombre de archivo y devuelve un puntero 
 
 
 
-## <a name="3-read-the-asf-header-object"></a>3. leer el objeto de encabezado ASF
+## <a name="3-read-the-asf-header-object"></a>3. Leer el objeto de encabezado asf
 
-A continuación, cree el [objeto ASF ContentInfo](asf-contentinfo-object.md) y úselo para analizar el objeto de encabezado ASF del archivo especificado. El objeto ContentInfo almacena información del encabezado ASF, incluidos los atributos de archivo globales e información sobre cada secuencia. Usará el objeto ContentInfo más adelante en el tutorial para inicializar el divisor de ASF y obtener el número de flujo de la secuencia de vídeo.
+A continuación, cree [el objeto ContentInfo](asf-contentinfo-object.md) de ASF y úselo para analizar el objeto de encabezado ASF del archivo especificado. El objeto ContentInfo almacena información del encabezado ASF, incluidos los atributos de archivo globales y la información sobre cada secuencia. Usará el objeto ContentInfo más adelante en el tutorial para inicializar el divisor ASF y obtener el número de secuencia de la secuencia de vídeo.
 
 Para crear el objeto ContentInfo de ASF:
 
-1.  Llame a la función [**MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) para crear un objeto ContentInfo. El método devuelve un puntero a la interfaz [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) .
+1.  Llame a [**la función MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) para crear un objeto ContentInfo. El método devuelve un puntero a la [**interfaz IMFASFContentInfo.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo)
 2.  Lea los primeros 30 bytes de datos del archivo ASF en un búfer multimedia.
-3.  Pase el búfer del medio al método [**IMFASFContentInfo:: GetHeaderSize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getheadersize) . Este método devuelve el tamaño total del objeto de encabezado en el archivo ASF.
-4.  Pase el mismo búfer multimedia al método [**IMFASFContentInfo::P arseheader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) .
+3.  Pase el búfer multimedia al [**método IMFASFContentInfo::GetHeaderSize.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getheadersize) Este método devuelve el tamaño total del objeto de encabezado en el archivo ASF.
+4.  Pase el mismo búfer multimedia al [**método IMFASFContentInfo::P arseHeader.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader)
 5.  Lea el resto del objeto de encabezado en un nuevo búfer multimedia.
-6.  Pase el segundo búfer al método [**ParseHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) . Especifique el desplazamiento de 30 bytes en el parámetro *cbOffsetWithinHeader* de **ParseHeader**. El método **ParseHeader** inicializa el objeto ContentInfo con la información recopilada de los distintos objetos ASF contenidos en el objeto de encabezado.
+6.  Pase el segundo búfer al [**método ParseHeader.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) Especifique el desplazamiento de 30 bytes en el *parámetro cbOffsetWithinHeader* **de ParseHeader**. El **método ParseHeader** inicializa el objeto ContentInfo con la información recopilada de los distintos objetos asf contenidos en el objeto de encabezado.
 
 
 ```C++
@@ -177,7 +177,7 @@ HRESULT CreateContentInfo(IMFByteStream *pStream,
 
 
 
-Esta función usa la `ReadFromByteStream` función para leer de una secuencia de bytes en un búfer multimedia:
+Esta función usa la `ReadFromByteStream` función para leer desde una secuencia de bytes a un búfer multimedia:
 
 
 ```C++
@@ -228,14 +228,14 @@ HRESULT ReadFromByteStream(
 
 
 
-## <a name="4-create-the-asf-splitter"></a>4. crear el divisor de ASF
+## <a name="4-create-the-asf-splitter"></a>4. Creación del divisor de ASF
 
-A continuación, cree el objeto de [divisor de ASF](asf-splitter.md) . Usará el divisor de ASF para analizar el objeto de datos ASF, que contiene datos multimedia de paquetes para el archivo ASF.
+A continuación, cree [el objeto Splitter de ASF.](asf-splitter.md) Usará el divisor ASF para analizar el objeto de datos de ASF, que contiene datos multimedia en paquetes para el archivo ASF.
 
 Para crear un objeto divisor para el archivo ASF:
 
-1.  Llame a la función [**MFCreateASFSplitter**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfsplitter) para crear el divisor de ASF. La función devuelve un puntero a la interfaz [**IMFASFSplitter**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfsplitter) .
-2.  Llame a [**IMFASFSplitter:: Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-initialize) para inicializar el divisor de ASF. Este método toma un puntero al objeto ContentInfo, que se creó en el procedimiento 3.
+1.  Llame a [**la función MFCreateASFSplitter**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfsplitter) para crear el divisor ASF. La función devuelve un puntero a la [**interfaz IMFASFSplitter.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfsplitter)
+2.  Llame [**a IMFASFSplitter::Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-initialize) para inicializar el divisor asf. Este método toma un puntero al objeto ContentInfo, que se creó en el procedimiento 3.
 
 
 ```C++
@@ -267,19 +267,19 @@ HRESULT CreateASFSplitter (IMFASFContentInfo* pContentInfo,
 
 
 
-## <a name="5-select-a-stream-for-parsing"></a>5. seleccionar una secuencia para el análisis
+## <a name="5-select-a-stream-for-parsing"></a>5. Selección de una secuencia para el análisis
 
-A continuación, enumere las secuencias del archivo ASF y seleccione la primera secuencia de vídeo para el análisis. Para enumerar las secuencias, usará un objeto de perfil ASF y buscará secuencias que tengan un tipo de medio de vídeo.
+A continuación, enumere las secuencias en el archivo ASF y seleccione la primera secuencia de vídeo para analizarla. Para enumerar las secuencias, usará un objeto de perfil de ASF y buscará secuencias que tengan un tipo de medio de vídeo.
 
 Para seleccionar la secuencia de vídeo:
 
-1.  Llame a [**IMFASFContentInfo:: GetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getprofile) en el objeto ContentInfo para crear un perfil ASF. Entre otras informaciones, el perfil describe las secuencias del archivo ASF.
-2.  Llame a [**IMFASFProfile:: GetStreamCount**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstreamcount) para obtener el número de secuencias del archivo ASF.
-3.  Llame a [**IMFASFProfile:: GetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstream) en un bucle para enumerar las secuencias. El método devuelve un puntero a la interfaz [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) . También devuelve el identificador del flujo.
-4.  Llame a [**IMFASFStreamConfig:: GetStreamType**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamtype) para obtener el GUID de tipo principal de la secuencia. Si el GUID de tipo principal es MFMediaType \_ video, el flujo contiene vídeo.
-5.  Si encuentra una secuencia de vídeo en el paso 4, llame a [**IMFASFSplitter:: SelectStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-selectstreams) para seleccionar la secuencia. Este método toma una matriz de identificadores de secuencia. En este tutorial, el tamaño de la matriz es 1 porque la aplicación analizará un solo flujo.
+1.  Llame [**a IMFASFContentInfo::GetProfile en**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getprofile) el objeto ContentInfo para crear un perfil de ASF. Entre otra información, el perfil describe las secuencias del archivo ASF.
+2.  Llame [**a IMFASFProfile::GetStreamCount**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstreamcount) para obtener el número de secuencias en el archivo ASF.
+3.  Llame [**a IMFASFProfile::GetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-getstream) en un bucle para enumerar las secuencias. El método devuelve un puntero a la [**interfaz IMFASFStreamConfig.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) También devuelve el identificador de flujo.
+4.  Llame [**a IMFASFStreamConfig::GetStreamType para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-getstreamtype) obtener el GUID de tipo principal de la secuencia. Si el GUID de tipo principal es MFMediaType \_ Video, la secuencia contiene vídeo.
+5.  Si encontró una secuencia de vídeo en el paso 4, llame a [**IMFASFSplitter::SelectStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-selectstreams) para seleccionar la secuencia. Este método toma una matriz de identificadores de flujo. En este tutorial, el tamaño de la matriz es 1 porque la aplicación analizará una sola secuencia.
 
-En el código de ejemplo siguiente se enumeran las secuencias del archivo ASF y se selecciona la primera secuencia de vídeo en el divisor ASF:
+En el código de ejemplo siguiente se enumeran las secuencias del archivo ASF y se selecciona la primera secuencia de vídeo en el divisor asf:
 
 
 ```C++
@@ -348,9 +348,9 @@ HRESULT SelectVideoStream(IMFASFContentInfo *pContentInfo,
 
 
 
-## <a name="6-generate-compressed-media-samples"></a>6. generar ejemplos de medios comprimidos
+## <a name="6-generate-compressed-media-samples"></a>6. Generar ejemplos de medios comprimidos
 
-A continuación, use el divisor de ASF para analizar el objeto de datos ASF y obtener los paquetes de datos de la secuencia de vídeo seleccionada. La aplicación Lee los datos del archivo ASF en bloques de tamaño fijo y pasa los datos al divisor de ASF. El divisor analiza los datos y genera [ejemplos de medios](media-samples.md) que contienen los datos de vídeo comprimidos. La aplicación comprueba si cada ejemplo representa un fotograma clave. Si es así, la aplicación muestra información básica sobre el ejemplo:
+A continuación, use el divisor ASF para analizar el objeto de datos de ASF y obtener los paquetes de datos para la secuencia de vídeo seleccionada. La aplicación lee datos del archivo ASF en bloques de tamaño fijo y los pasa al divisor asf. El divisor analiza los datos y genera ejemplos multimedia [que](media-samples.md) contienen los datos de vídeo comprimidos. La aplicación comprueba si cada ejemplo representa un fotograma clave. Si es así, la aplicación muestra información básica sobre el ejemplo:
 
 -   Número de búferes multimedia
 -   Tamaño total de los datos
@@ -359,15 +359,15 @@ A continuación, use el divisor de ASF para analizar el objeto de datos ASF y ob
 Para generar ejemplos de medios comprimidos:
 
 1.  Asigne un nuevo búfer multimedia.
-2.  Leer datos de la secuencia de bytes en el búfer multimedia.
-3.  Pase el búfer multimedia al método [**IMFASFSplitter::P arsedata**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-parsedata) . El método analiza los datos ASF en el búfer.
-4.  En un bucle, obtenga ejemplos de medios del divisor llamando a [**IMFASFSplitter:: GetNextSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-getnextsample). Si el parámetro *ppISample* recibe un puntero [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) válido, significa que el divisor de ASF ha analizado uno o varios paquetes de datos. Si *ppISample* recibe el valor **null**, interrumpa el bucle y vuelva al paso 1.
+2.  Lee datos de la secuencia de bytes en el búfer multimedia.
+3.  Pase el búfer multimedia al [**método IMFASFSplitter::P arseData.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-parsedata) El método analiza los datos de ASF en el búfer.
+4.  En un bucle, obtenga ejemplos multimedia del divisor mediante una llamada a [**IMFASFSplitter::GetNextSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfsplitter-getnextsample). Si el *parámetro ppISample* recibe un puntero [**VALID DE TIPO IMFSample,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) significa que el divisor ASF ha analizando uno o varios paquetes de datos. Si *ppISample* recibe el valor **NULL,** salga del bucle y vuelva al paso 1.
 5.  Muestra información sobre el ejemplo.
-6.  Interrumpa el bucle en las siguientes condiciones:
-    -   El parámetro *ppISample* recibe el valor **null**.
-    -   El parámetro *pdwStatusFlags* no recibe la marca **ASF \_ STATUSFLAGS \_ incompleta** .
+6.  Interrumpir del bucle en las siguientes condiciones:
+    -   El *parámetro ppISample* recibe el valor **NULL.**
+    -   El *parámetro pdwStatusFlags* no recibe la marca **ASF \_ STATUSFLAGS \_ INCOMPLETE.**
 
-Repita estos pasos hasta que llegue al final del archivo. El siguiente código muestra estos pasos:
+Repita estos pasos hasta llegar al final del archivo. El siguiente código muestra estos pasos:
 
 
 ```C++
@@ -452,7 +452,7 @@ HRESULT DisplayKeyFrames(IMFByteStream *pStream, IMFASFSplitter *pSplitter)
 
 
 
-La función IsKeyFrame comprueba si un ejemplo es un fotograma clave, obteniendo el valor del atributo [**\_ CleanPoint de MFSampleExtension**](mfsampleextension-cleanpoint-attribute.md) .
+La función IsKeyFrame comprueba si un ejemplo es un fotograma clave, obteniendo el valor del atributo [**MFSampleExtension \_ CleanPoint.**](mfsampleextension-cleanpoint-attribute.md)
 
 
 ```C++
@@ -465,7 +465,7 @@ inline BOOL IsRandomAccessPoint(IMFSample *pSample)
 
 
 
-A efectos de Ilustración, en este tutorial se muestra información sobre cada fotograma clave de vídeo llamando a la siguiente función:
+Con fines ilustrativos, en este tutorial se muestra información para cada fotograma clave de vídeo mediante una llamada a la función siguiente:
 
 
 ```C++
@@ -496,11 +496,11 @@ void DisplayKeyFrame(IMFSample *pSample)
 
 
 
-Una aplicación típica usaría los paquetes de datos para la descodificación, remuxing, el envío a través de la red o alguna otra tarea.
+Una aplicación típica usaría los paquetes de datos para la decodación, el remuxing, el envío a través de la red o alguna otra tarea.
 
-## <a name="7-write-the-entry-point-function"></a>7. escribir la función Entry-Point
+## <a name="7-write-the-entry-point-function"></a>7. Escritura de la Entry-Point función
 
-Ahora puede poner los pasos anteriores juntos en una aplicación completa. Antes de usar cualquiera de los objetos Media Foundation, inicialice la plataforma de Media Foundation mediante una llamada a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup). Cuando haya terminado, llame a [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown). Para obtener más información, [inicializar Media Foundation](initializing-media-foundation.md).
+Ahora puede reunir los pasos anteriores en una aplicación completa. Antes de usar cualquiera de los objetos Media Foundation, inicialice la plataforma Media Foundation mediante una llamada [**a MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup). Cuando haya terminado, llame a [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown). Para obtener más información, [inicializar Media Foundation](initializing-media-foundation.md).
 
 
 ```C++
@@ -985,7 +985,7 @@ int wmain(int argc, WCHAR* argv[])
 
 <dl> <dt>
 
-[Componentes de WMContainer ASF](wmcontainer-asf-components.md)
+[Componentes de ASF de WMContainer](wmcontainer-asf-components.md)
 </dt> <dt>
 
 [Compatibilidad con ASF en Media Foundation](asf-support-in-media-foundation.md)

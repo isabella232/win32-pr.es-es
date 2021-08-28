@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentUnicodeLanguageValidationFailureException'
+description: 'Más información sobre: Clase EsentUnicodeLanguageValidationFailureException'
 title: Clase EsentUnicodeLanguageValidationFailureException
 TOCTitle: EsentUnicodeLanguageValidationFailureException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentUnicodeLanguageValidationFailureException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 27ea6fdc14cb8b46edfc7d9983041d44d2361bd9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49d4519ad95003809958dd32739ba2739a86625cfb21f8141af6fa6dc8774fe0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618545"
 ---
 # <a name="esentunicodelanguagevalidationfailureexception-class"></a>Clase EsentUnicodeLanguageValidationFailureException
 
@@ -39,15 +39,15 @@ Clase base para JET_err. Excepciones UnicodeLanguageValidationFailure.
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. esent. Interop. EsentUnicodeLanguageValidationFailureException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentUnicodeLanguageValidationFailureException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -73,4 +73,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentUnicodeLanguageValidationFailureException](./esentunicodelanguagevalidationfailureexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

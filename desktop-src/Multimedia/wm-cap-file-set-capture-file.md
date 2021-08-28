@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_FILE_SET_CAPTURE_FILE (VFW. h)
-description: El \_ mensaje del \_ archivo de captura del \_ conjunto \_ de archivos de Cap de WM \_ nombra el archivo que se utiliza para la captura de vídeo. Puede enviar este mensaje explícitamente o mediante la macro capFileSetCaptureFile.
+title: WM_CAP_FILE_SET_CAPTURE_FILE mensaje (Vfw.h)
+description: El mensaje WM \_ CAP FILE SET CAPTURE FILE \_ \_ \_ \_ nombra el archivo usado para la captura de vídeo. Puede enviar este mensaje explícitamente o mediante la macro capFileSetCaptureFile.
 ms.assetid: d96e498b-6322-4d48-a5d7-156e95f23740
 keywords:
-- Mensaje de WM_CAP_FILE_SET_CAPTURE_FILE de Windows multimedia
+- WM_CAP_FILE_SET_CAPTURE_FILE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12b3f59edfc9bf01f6bd2af3b9028f8e3315e2de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9435a7f0790c8ffe88f6b7ea6228bb2f442b23f5dcb15e2722e59b75c671588
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687025"
 ---
-# <a name="wm_cap_file_set_capture_file-message"></a>\_Mensaje de \_ \_ archivo de captura de conjunto de archivos Cap \_ de WM \_
+# <a name="wm_cap_file_set_capture_file-message"></a>Mensaje \_ WM CAP FILE SET CAPTURE \_ \_ \_ \_ FILE
 
-El mensaje del archivo de captura del conjunto de archivos de Cap de WM nombra el archivo que se utiliza para la captura de vídeo. **\_ \_ \_ \_ \_** Puede enviar este mensaje explícitamente o mediante la macro [**capFileSetCaptureFile**](/windows/desktop/api/Vfw/nf-vfw-capfilesetcapturefile) .
+El **mensaje WM CAP FILE SET CAPTURE \_ \_ \_ \_ \_ FILE** nombra el archivo usado para la captura de vídeo. Puede enviar este mensaje explícitamente o mediante la macro [**capFileSetCaptureFile.**](/windows/desktop/api/Vfw/nf-vfw-capfilesetcapturefile)
 
 
 ```C++
@@ -41,15 +41,15 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 <span id="szName"></span><span id="szname"></span><span id="SZNAME"></span>*szName*
 </dt> <dd>
 
-Puntero a la cadena terminada en null que contiene el nombre del archivo de captura que se va a usar.
+Puntero a la cadena terminada en NULL que contiene el nombre del archivo de captura que se usará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** si el nombre de archivo no es válido o si la captura de streaming o de un solo fotograma está en curso.
+Devuelve **TRUE si** el nombre de archivo es correcto o **FALSE** si el nombre de archivo no es válido, o si la secuencia o la captura de fotograma único están en curso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este mensaje almacena el nombre de archivo en una estructura interna. No crea, asigna ni abre el archivo especificado. El nombre de archivo de captura predeterminado es C: \\CAPTURE.AVI.
 
@@ -61,7 +61,7 @@ Este mensaje almacena el nombre de archivo en una estructura interna. No crea, a
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: netboot-New-Machine-naming-atributo de Directiva
-description: Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo cliente.
+title: atributo netboot-New-Machine-Naming-Policy
+description: Indica el esquema de nomenclatura que usarán las nuevas cuentas de equipo cliente.
 ms.assetid: e8ffc9b1-b2a2-4216-8498-85cb6c8cc7ae
 ms.tgt_platform: multiple
 keywords:
-- netboot-New-Machine-naming-esquema de AD de atributo de Directiva
-- netbootNewMachineNamingPolicy esquema de AD de atributos
+- netboot-New-Machine-Naming-Policy attribute AD Schema
+- NetbootNewMachineNamingPolicy attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6da6cb51ced16da6510f3fb85ec80e4fa641603b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0c6f37020f17a7ddfcfa261bbbda909cda878c3bae72147f8d2b1ff1d52fdef3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703315"
 ---
-# <a name="netboot-new-machine-naming-policy-attribute"></a>netboot-New-Machine-naming-atributo de Directiva
+# <a name="netboot-new-machine-naming-policy-attribute"></a>atributo netboot-New-Machine-Naming-Policy
 
-Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo cliente.
+Indica el esquema de nomenclatura que usarán las nuevas cuentas de equipo cliente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | netboot-New-Machine-naming-Policy           |
-| Nombre para mostrar de LDAP | netbootNewMachineNamingPolicy               |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | netboot-New-Machine-Naming-Policy           |
+| Ldap-Display-Name | netbootNewMachineNamingPolicy               |
+| Size              | \-                                          |
+| Actualizar privilegios  | El sistema establece este valor.            |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.855                      |
-| System-ID-GUID    | 0738307c-91df-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 0738307c-91df-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo c
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo c
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo c
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo c
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo c
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Indica el esquema de nomenclatura que utilizarán las nuevas cuentas de equipo c
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | False                                                      |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Falso                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

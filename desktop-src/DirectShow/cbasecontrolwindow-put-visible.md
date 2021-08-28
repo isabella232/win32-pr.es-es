@@ -1,7 +1,7 @@
 ---
-description: El \_ método visible Put hace que muestre u oculte la ventana.
+description: El método put \_ Visible muestra u oculta la ventana.
 ms.assetid: 77e8d071-f876-4e35-945c-d1daf96ad02b
-title: Método CBaseControlWindow.put_Visible (Ctlutil. h)
+title: CBaseControlWindow.put_Visible método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7bf713b4ccb9932b1201e7ced40fddcd87407ef6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2c8565d14c58d520a91c682e55d3dbc2ba079cf956213bdc61d044834d690c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793296"
 ---
-# <a name="cbasecontrolwindowput_visible-method"></a>CBaseControlWindow. put ( \_ método visible)
+# <a name="cbasecontrolwindowput_visible-method"></a>CBaseControlWindow.put \_ (método Visible)
 
-El `put_Visible` método hace que muestre u oculte la ventana.
+El `put_Visible` método muestra u oculta la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT put_Visible(
 *Visible* 
 </dt> <dd>
 
-Marca booleana de Automation (0 significa que la ventana está oculta; se muestra una ventana de 1).
+Marca booleana de Automation (0 significa que la ventana está oculta, 1 significa que se muestra la ventana).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

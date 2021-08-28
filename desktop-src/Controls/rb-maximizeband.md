@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_MAXIMIZEBAND (commctrl. h)
+title: RB_MAXIMIZEBAND mensaje (Commctrl.h)
 description: Cambia el tamaño de una banda de un control rebar a su tamaño ideal o mayor.
 ms.assetid: 79fff6d0-01f2-4308-b916-38dc06dad894
 keywords:
-- RB_MAXIMIZEBAND controles de mensajes de Windows
+- RB_MAXIMIZEBAND controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 708a8fae7c0dd8e72eea8e5acefe43ab50054592
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13ef02fbe9611c09d1932907c8218ffd169d3e18d10e0b07faa2b63d50058af1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770095"
 ---
-# <a name="rb_maximizeband-message"></a>Mensaje de MAXIMIZEBAND de RB \_
+# <a name="rb_maximizeband-message"></a>Mensaje \_ MAXIMIZEBAND de RB
 
 Cambia el tamaño de una banda de un control rebar a su tamaño ideal o mayor.
 
@@ -39,13 +39,13 @@ Cambia el tamaño de una banda de un control rebar a su tamaño ideal o mayor.
 *lParam* 
 </dt> <dd>
 
-Indica si se debe usar el ancho ideal de la banda cuando la banda está maximizada. Si este valor es distinto de cero, se usará el ancho ideal. Si este valor es cero, la banda se hará lo más grande posible.
+Indica si se debe usar el ancho ideal de la banda cuando se maximiza la banda. Si este valor es distinto de cero, se usará el ancho ideal. Si este valor es cero, la banda se hará lo más grande posible.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ No se utiliza el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ No se utiliza el valor devuelto.
 **Referencia**
 </dt> <dt>
 
-[**\_SETBANDINFO RB**](rb-setbandinfo.md)
+[**RB \_ SETBANDINFO**](rb-setbandinfo.md)
 </dt> </dl>
 
  

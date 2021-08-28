@@ -1,11 +1,11 @@
 ---
-title: netboot-Answer-requests (atributo)
-description: Permite que el servidor de RIS acepte las solicitudes de RIS.
+title: Atributo netboot-Answer-Requests
+description: Permite que el servidor RIS acepte las solicitudes RIS.
 ms.assetid: fb57762f-d7af-45ae-80f2-5dd52b5688a9
 ms.tgt_platform: multiple
 keywords:
-- netboot-Answer-requests (atributo) esquema de AD
-- netbootAnswerRequests esquema de AD de atributos
+- Esquema de AD del atributo netboot-Answer-Requests
+- Esquema de AD del atributo netbootAnswerRequests
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e3552517189635da9c2ed464e286c06bb3c8d19
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8580c3ff7cacda36fc63430f615ad9615c7ff8aa3b0354d725b97a5e9896c61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648705"
 ---
-# <a name="netboot-answer-requests-attribute"></a>netboot-Answer-requests (atributo)
+# <a name="netboot-answer-requests-attribute"></a>Atributo netboot-Answer-Requests
 
-Permite que el servidor de RIS acepte las solicitudes de RIS.
+Permite que el servidor RIS acepte las solicitudes RIS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | netboot-respuesta-solicitudes              |
-| Nombre para mostrar de LDAP | netbootAnswerRequests                |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | netboot-Answer-Requests              |
+| Ldap-Display-Name | netbootAnswerRequests                |
+| Size              | \-                                   |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.853               |
-| System-ID-GUID    | 0738307a-91df-11d1-aebc-0000f80367c1 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 0738307a-91df-11d1-aebc-0000f80367c1 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -55,18 +55,18 @@ Permite que el servidor de RIS acepte las solicitudes de RIS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Permite que el servidor de RIS acepte las solicitudes de RIS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Permite que el servidor de RIS acepte las solicitudes de RIS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Permite que el servidor de RIS acepte las solicitudes de RIS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Permite que el servidor de RIS acepte las solicitudes de RIS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Permite que el servidor de RIS acepte las solicitudes de RIS.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                         |
+| Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Tiene un único valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                               |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Clases usadas en        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Clases usadas en        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DRAW_START (VFW. h)
-description: El mensaje de inicio de Draw de ICM \_ \_ notifica a un controlador de representación que inicie su reloj interno durante el tiempo de dibujo de los marcos. Puede enviar este mensaje explícitamente o mediante la macro ICDrawStart.
+title: ICM_DRAW_START mensaje (Vfw.h)
+description: El ICM DRAW START notifica a un controlador de representación que inicie su reloj interno \_ para el tiempo de dibujar \_ fotogramas. Puede enviar este mensaje explícitamente o mediante la macro ICDrawStart.
 ms.assetid: d49e0d97-5a29-46f7-82d7-e3d4b4f7666f
 keywords:
-- Mensaje de ICM_DRAW_START de Windows multimedia
+- ICM_DRAW_START mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 538659eb9878be819ee6ec1506403fcce314eb0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 720d8c2f919d2b00955892a42ba8fca95b2b426c3cbb396aa4ac71a5cf912307
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690955"
 ---
-# <a name="icm_draw_start-message"></a>Mensaje de inicio de \_ Draw de ICM \_
+# <a name="icm_draw_start-message"></a>\_ICM Draw START message (Draw \_ start)
 
-El mensaje de **\_ \_ Inicio de Draw de ICM** notifica a un controlador de representación que inicie su reloj interno durante el tiempo de dibujo de los marcos. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawStart**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart) .
+El **ICM \_ DRAW \_ START** notifica a un controlador de representación que inicie su reloj interno para el tiempo de dibujar fotogramas. Puede enviar este mensaje explícitamente o mediante la macro [**ICDrawStart.**](/windows/desktop/api/Vfw/nf-vfw-icdrawstart)
 
 
 ```C++
@@ -36,25 +36,25 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje lo usa el hardware que realiza su propia descompresión asincrónica, temporización y dibujo.
+Este mensaje lo usa el hardware que realiza su propia descompresión asincrónica, control de tiempo y dibujo.
 
-Cuando el controlador recibe este mensaje, debe empezar a representar los datos a la velocidad especificada con el mensaje de [**\_ \_ Inicio de Draw de ICM**](icm-draw-begin.md) .
+Cuando el controlador recibe este mensaje, debería empezar a representar los datos a la velocidad especificada con el [**ICM \_ DRAW \_ BEGIN.**](icm-draw-begin.md)
 
-Los mensajes de [**\_ \_ detención**](icm-draw-stop.md) de **\_ \_ Inicio** y de dibujo de ICM de ICM no se anidan. Si el controlador recibe **el \_ \_ Inicio de Draw de ICM** antes de que se detenga la representación con la **\_ \_ detención de Draw ICM**, debe reiniciar la representación con nuevos parámetros.
+Los **ICM \_ DRAW \_ START** [**y ICM DRAW \_ \_ STOP**](icm-draw-stop.md) no anidan. Si el controlador recibe **ICM \_ DRAW \_ START** antes de detener la **representación con ICM DRAW \_ \_ STOP**, debe reiniciar la representación con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

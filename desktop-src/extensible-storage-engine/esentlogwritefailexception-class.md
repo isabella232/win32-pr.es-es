@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentLogWriteFailException'
+description: 'Más información sobre: Clase EsentLogWriteFailException'
 title: Clase EsentLogWriteFailException
 TOCTitle: EsentLogWriteFailException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentLogWriteFailException
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9cd3fe6b541a58b7498ca4117f7ba2af7662d5a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b7fc79f5a4b308500ccdf9c61ef0c2689abb6fbdd22632c5b2b3110c4e354c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734375"
 ---
 # <a name="esentlogwritefailexception-class"></a>Clase EsentLogWriteFailException
 
-Clase base para JET_err. Excepciones LogWriteFail.
+Clase base para JET_err. Excepciones logWriteFail.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentIOException](./esentioexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentLogWriteFailException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentIOException](./esentioexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentLogWriteFailException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentLogWriteFailException](./esentlogwritefailexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

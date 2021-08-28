@@ -1,11 +1,11 @@
 ---
-title: Teléfono-buscapersonas-atributo principal
-description: El número de buscapersonas primario.
+title: Teléfono-Pager-Primary
+description: Número del paginador principal.
 ms.assetid: e5230e09-f76b-4d2a-b56b-d989d315f9bb
 ms.tgt_platform: multiple
 keywords:
-- 'Teléfono: buscapersonas: esquema de AD de atributo principal'
-- Esquema de AD del atributo de buscapersonas
+- Teléfono-Pager-Primary attribute AD Schema
+- Esquema de AD de atributo de paginación
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 883e0d519b0fabc14afbdd78fd8eb93bd29a9824
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b1ebfa52809d53ebf42679b303ebd03fb1f4056f725f08624269c3bdcca8683a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647875"
 ---
-# <a name="phone-pager-primary-attribute"></a>Teléfono-buscapersonas-atributo principal
+# <a name="phone-pager-primary-attribute"></a>Teléfono-Pager-Primary
 
-El número de buscapersonas primario.
+Número del paginador principal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Teléfono: buscapersonas: principal                                                              |
-| Nombre para mostrar de LDAP | pager                                                                            |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                           |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el número de teléfono. |
+| CN                | Teléfono-Pager-Primary                                                              |
+| Ldap-Display-Name | pager                                                                            |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.                                           |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y siempre que sea necesario cambiar el número de teléfono. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.42                                                       |
-| System-ID-GUID    | f0f8ffa6-1191-11d0-a060-00aa006c33ed                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | f0f8ffa6-1191-11d0-a060-00aa006c33ed                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -55,13 +55,13 @@ El número de buscapersonas primario.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A21                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -76,18 +76,18 @@ El número de buscapersonas primario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El número de buscapersonas primario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El número de buscapersonas primario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El número de buscapersonas primario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ El número de buscapersonas primario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A21                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |

@@ -1,7 +1,7 @@
 ---
-description: Tenga en cuenta que, en lugar de usar esta función heredada, se recomienda usar la API de D3DDisassemble. Esta función, que desensambla un efecto compilado en una cadena de texto que contiene las instrucciones de ensamblado y las asignaciones de registro, ha quedado en desuso.
+description: Nota En lugar de usar esta función heredada, se recomienda usar la API D3DDisassemble. Esta función , que desensambla un efecto compilado en una cadena de texto que contiene instrucciones de ensamblado y registra asignaciones, ha quedado en desuso.
 ms.assetid: 218ac120-33ce-44db-84a7-99fef3281f07
-title: Función D3DX10DisassembleEffect (D3DX10Core. h)
+title: Función D3DX10DisassembleEffect (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Core.h
-ms.openlocfilehash: 67fe19365616e779bd17ab689550b34737288317
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 282dcbb91013e5e8bf6def540809fa3afdb3bca40e2a2fd5250c5b3c92877af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753285"
 ---
-# <a name="d3dx10disassembleeffect-function"></a>D3DX10DisassembleEffect función)
+# <a name="d3dx10disassembleeffect-function"></a>Función D3DX10DisassembleEffect
 
 > [!Note]  
-> En lugar de usar esta función heredada, se recomienda usar la API de [**D3DDisassemble**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble) .
+> En lugar de usar esta función heredada, se recomienda usar la API [**D3DDisassemble.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble)
 
  
 
-Esta función, que desensambla un efecto compilado en una cadena de texto que contiene las instrucciones de ensamblado y las asignaciones de registro, ha quedado en desuso. En su lugar, use [**D3DDisassemble10Effect**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble10effect).
+Esta función , que desensambla un efecto compilado en una cadena de texto que contiene instrucciones de ensamblado y registra asignaciones, ha quedado en desuso. En su lugar, [**use D3DDisassemble10Effect**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble10effect).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,30 +46,30 @@ HRESULT D3DX10DisassembleEffect(
 
 <dl> <dt>
 
-*pEffect* \[ de\]
+*pEffect* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Effect**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effect)\***
 
-Un puntero a la interfaz de efecto (vea la [**interfaz ID3D10Effect**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effect)).
+Puntero a la interfaz de efecto (vea [**ID3D10Effect Interface**](/windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effect)).
 
 </dd> <dt>
 
-*EnableColorCode* \[ de\]
+*EnableColorCode* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Incluya etiquetas HTML en la salida para el código de color del resultado.
+Incluya etiquetas HTML en la salida para colorear el resultado.
 
 </dd> <dt>
 
-*ppDisassembly* \[ enuncia\]
+*ppDisassembly* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un búfer (vea la [**interfaz ID3D10Blob**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)) que contiene el efecto desensamblado.
+Dirección de un búfer (vea [**Interfaz ID3D10Blob)**](/windows/desktop/api/D3DCommon/nn-d3dcommon-id3d10blob)que contiene el efecto desensamblado.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Dirección de un búfer (vea la [**interfaz ID3D10Blob**](/windows/desktop/api/D
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 10](d3d10-graphi
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Core. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Core.h</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 10](d3d10-graphi
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

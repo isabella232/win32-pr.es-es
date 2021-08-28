@@ -1,11 +1,11 @@
 ---
-title: Atributo Machine-password-Change-Interval
-description: El atributo Machine-password-Change-Interval no se usa actualmente.
+title: Atributo Machine-Password-Change-Interval
+description: El atributo Machine-Password-Change-Interval no se usa actualmente.
 ms.assetid: e101dc40-3a90-4ce3-9023-2d6077fdcbac
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Machine-password-Change-Interval
-- machinePasswordChangeInterval esquema de AD de atributos
+- Esquema de AD del atributo Machine-Password-Change-Interval
+- Esquema de AD del atributo machinePasswordChangeInterval
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d7a101617fcb56d349795335fb118fe40fca406
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d9a3fa9ff7af57e15f10141b6b63d4e8ecd19169ab6c5448399b586aa7a013fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705675"
 ---
-# <a name="machine-password-change-interval-attribute"></a>Atributo Machine-password-Change-Interval
+# <a name="machine-password-change-interval-attribute"></a>Atributo Machine-Password-Change-Interval
 
-El atributo **Machine-password-Change-Interval** no se usa actualmente.
+El **atributo Machine-Password-Change-Interval** no se usa actualmente.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Equipo-contraseña-cambio-intervalo     |
-| Nombre para mostrar de LDAP | machinePasswordChangeInterval        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Machine-Password-Change-Interval     |
+| Ldap-Display-Name | machinePasswordChangeInterval        |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.520               |
-| System-ID-GUID    | c9b6358e-bb38-11d0-afef-0000f80367c1 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | c9b6358e-bb38-11d0-afef-0000f80367c1 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,13 +55,13 @@ El atributo **Machine-password-Change-Interval** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -76,13 +76,13 @@ El atributo **Machine-password-Change-Interval** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -97,13 +97,13 @@ El atributo **Machine-password-Change-Interval** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -118,13 +118,13 @@ El atributo **Machine-password-Change-Interval** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -139,13 +139,13 @@ El atributo **Machine-password-Change-Interval** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -160,13 +160,13 @@ El atributo **Machine-password-Change-Interval** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

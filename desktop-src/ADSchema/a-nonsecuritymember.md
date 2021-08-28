@@ -1,11 +1,11 @@
 ---
-title: Atributo de miembro no de seguridad
-description: Miembros que no son de seguridad de un grupo. Se usa para listas de distribución de Exchange.
+title: Atributo que no es miembro de seguridad
+description: Miembros que no son de seguridad de un grupo. Se usa para Exchange listas de distribución.
 ms.assetid: 0db135e4-dcba-4afb-a174-3c7b2b40688e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo que no es de seguridad
-- nonSecurityMember esquema de AD de atributos
+- Esquema de AD de atributo que no es miembro de seguridad
+- Esquema de AD del atributo nonSecurityMember
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a04919d9d538ff4da97d73e79d14e9a2706032b8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dba59e37e4d4be5549e9ab5f36747f1cfd0046a9fb01ca91e2a9e79f353f148a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648386"
 ---
-# <a name="non-security-member-attribute"></a>Atributo de miembro no de seguridad
+# <a name="non-security-member-attribute"></a>Atributo que no es miembro de seguridad
 
-Miembros que no son de seguridad de un grupo. Se usa para listas de distribución de Exchange.
+Miembros que no son de seguridad de un grupo. Se usa para Exchange listas de distribución.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------------|
 | CN                | Miembro que no es de seguridad                              |
-| Nombre para mostrar de LDAP | nonSecurityMember                                |
-| Tamaño              | \-                                               |
-| Actualizar privilegio  | Administrador de dominio                             |
-| Frecuencia de actualización  | Siempre que se agrega o se quita un usuario de la DL. |
+| Ldap-Display-Name | nonSecurityMember                                |
+| Size              | \-                                               |
+| Actualizar privilegios  | Administrador de dominio                             |
+| Frecuencia de actualización  | Cada vez que se agrega o quita un usuario de la dl. |
 | Attribute-Id      | 1.2.840.113556.1.4.530                           |
-| System-ID-GUID    | 52458018-ca6a-11d0-AFFF-0000f80367c1             |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md)          |
+| System-Id-Guid    | 52458018-ca6a-11d0-afff-0000f80367c1             |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)          |
 
 
 
@@ -55,13 +55,13 @@ Miembros que no son de seguridad de un grupo. Se usa para listas de distribució
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 50                                  |
+| Id. de vínculo                | 50                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -76,13 +76,13 @@ Miembros que no son de seguridad de un grupo. Se usa para listas de distribució
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 50                                  |
+| Id. de vínculo                | 50                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -95,15 +95,15 @@ Miembros que no son de seguridad de un grupo. Se usa para listas de distribució
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 50                                  |
+| Id. de vínculo                | 50                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -116,15 +116,15 @@ Miembros que no son de seguridad de un grupo. Se usa para listas de distribució
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 50                                  |
+| Id. de vínculo                | 50                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -139,13 +139,13 @@ Miembros que no son de seguridad de un grupo. Se usa para listas de distribució
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 50                                  |
+| Id. de vínculo                | 50                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -160,13 +160,13 @@ Miembros que no son de seguridad de un grupo. Se usa para listas de distribució
 
 | Entrada | Value |
 |------------------------|-------------------------------------|
-| Identificador de vínculo                | 50                                  |
+| Id. de vínculo                | 50                                  |
 | MAPI-Id                | \-                                  |
-| System-Only            | False                               |
-| Tiene un único valor       | False                               |
-| Está indexado             | False                               |
-| En el catálogo global      | False                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                        |
+| System-Only            | Falso                               |
+| Es de un solo valor       | Falso                               |
+| Está indexado             | Falso                               |
+| En el catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |

@@ -1,52 +1,52 @@
 ---
-title: 'IPropertyStorage: implementación independiente'
+title: Implementación independiente de IPropertyStorage
 description: La implementación independiente proporcionada por el sistema de IPropertySetStorage incluye una implementación de IPropertyStorage, la interfaz que lee y escribe propiedades en un almacenamiento de conjunto de propiedades.
 ms.assetid: 8de32538-de11-4e4d-9269-145b2accb099
 keywords:
-- 'IPropertyStorage: implementación independiente'
-- IPropertyStorage Strctd STG, implementaciones, independiente
+- Implementación independiente de IPropertyStorage
+- IPropertyStorage Strctd Stg, implementaciones, independientes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f35965831b0105557044461236030e3543c13217
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 200d7f328670b8945807b7db7f742feabe58ad32847e3c56aa98a34278a71fbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662555"
 ---
-# <a name="ipropertystorage-stand-alone-implementation"></a>IPropertyStorage: implementación independiente
+# <a name="ipropertystorage-stand-alone-implementation"></a>Implementación independiente de IPropertyStorage
 
-La implementación independiente proporcionada por el sistema de [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) incluye una implementación de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage), la interfaz que lee y escribe propiedades en un almacenamiento de conjunto de propiedades. La interfaz **IPropertySetStorage** crea y abre conjuntos de propiedades en un almacenamiento. Las interfaces [**IEnumSTATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg) y [**IEnumSTATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) también se proporcionan en la implementación independiente.
+La implementación independiente proporcionada por el sistema de [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) incluye una implementación de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage), la interfaz que lee y escribe propiedades en un almacenamiento de conjunto de propiedades. La **interfaz IPropertySetStorage** crea y abre conjuntos de propiedades en un almacenamiento. Las [**interfaces IEnumSTATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg) e [**IEnumSTATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) también se proporcionan en la implementación independiente.
 
-Para obtener un puntero a la implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage), llame a la función [**StgCreatePropStg**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatepropstg) para crear un nuevo conjunto de propiedades o [**StgOpenPropStg**](/windows/desktop/api/coml2api/nf-coml2api-stgopenpropstg) para obtener el puntero de interfaz en un conjunto de propiedades existente (o llame a los métodos [**Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) o [**Open**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-open) de la implementación independiente de [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) ).
+Para obtener un puntero a la implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage), llame a la función [**StgCreatePropStg**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatepropstg) para crear un nuevo conjunto de propiedades o [**StgOpenPropStg**](/windows/desktop/api/coml2api/nf-coml2api-stgopenpropstg) para obtener el puntero de interfaz en un conjunto de propiedades existente (o llame a los métodos [**Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) o [**Open**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-open) de la implementación [**independiente de IPropertySetStorage).**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage)
 
-La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) crea conjuntos de propiedades en cualquier almacenamiento o objeto de flujo, no solo en flujos y almacenamientos de archivos compuestos. La implementación independiente no depende de archivos compuestos y se puede usar con cualquier implementación de almacenamiento estructurado. Para obtener más información sobre la implementación de archivos compuestos de esta interfaz, vea [IPropertyStorage-composición de archivos compuestos](ipropertystorage-compound-file-implementation.md).
+La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) crea conjuntos de propiedades en cualquier objeto de almacenamiento o flujo, no solo en flujos y almacenamientos de archivos compuestos. La implementación independiente no depende de archivos compuestos y se puede usar con cualquier implementación de almacenamientos estructurados. Para obtener más información sobre la implementación de archivos compuestos de esta interfaz, vea [IPropertyStorage-Compound File Implementation](ipropertystorage-compound-file-implementation.md).
 
 ## <a name="when-to-use"></a>Cuándo usar
 
-Use [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) para administrar propiedades dentro de un único conjunto de propiedades. Sus métodos permiten leer, escribir y eliminar ambas propiedades y los nombres de cadena opcionales que se pueden asociar a los identificadores de propiedad. Otros métodos admiten las operaciones de almacenamiento estándar commit y Revert. También hay un método que establece las horas asociadas al almacenamiento de propiedades y otro que permite usar la asignación de un CLSID para asociar otro código, como el código de la interfaz de usuario, con la propiedad establecida. El método [**enum**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-enum) proporciona un puntero a la implementación independiente de [**IEnumSTATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg), que enumera las propiedades del conjunto.
+Use [**IPropertyStorage para**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) administrar propiedades dentro de un único conjunto de propiedades. Sus métodos admiten la lectura, escritura y eliminación de propiedades y los nombres de cadena opcionales que se pueden asociar a los IDs de propiedad. Otros métodos admiten las operaciones de confirmación y reversión de almacenamiento estándar. También hay un método que establece las horas asociadas al almacenamiento de propiedades y otro que permite usar la asignación de un CLSID para asociar otro código, como el código de interfaz de usuario, con el conjunto de propiedades. El [**método Enum**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-enum) proporciona un puntero a la implementación independiente de [**IEnumSTATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg), que enumera las propiedades del conjunto.
 
-## <a name="version-0-and-version-1-property-set-formats"></a>Formatos de conjunto de propiedades de las versiones 0 y 1
+## <a name="version-0-and-version-1-property-set-formats"></a>Formatos de conjunto de propiedades de la versión 0 y la versión 1
 
-La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) admite los formatos de serialización de la versión 0 y la versión 1. Para obtener más información, vea [serialización de conjuntos de propiedades](version-0-vs--version-1-property-set-serialization.md). Los conjuntos de propiedades se crean en el formato de la versión 0 y permanecen en ese formato a menos que se soliciten nuevas características. En ese momento, el formato se actualiza a la versión 1.
+La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) admite tanto la versión 0 como los formatos de serialización del conjunto de propiedades de la versión 1. Para obtener más información, vea [Serialización de conjunto de propiedades.](version-0-vs--version-1-property-set-serialization.md) Los conjuntos de propiedades se crean en formato de versión 0 y permanecen en ese formato a menos que se soliciten nuevas características. En ese momento, el formato se actualiza a la versión 1.
 
-Por ejemplo, si se crea un conjunto de propiedades con la \_ marca predeterminada PROPSETFLAG, su formato es la versión 0. Siempre que los tipos de propiedad que se ajustan al formato de la versión 0 se escriben y se leen de ese conjunto de propiedades, el conjunto de propiedades permanece en formato de la versión 0. Si un tipo de propiedad de la versión 1 se escribe en el conjunto de propiedades, el conjunto de propiedades se actualiza automáticamente a la versión 1. Posteriormente, las implementaciones que solo entienden la versión 0 ya no podrán leer ese conjunto de propiedades.
+Por ejemplo, si se crea un conjunto de propiedades con la marca PROPSETFLAG \_ DEFAULT, su formato es la versión 0. Siempre que los tipos de propiedad que se ajusten al formato de la versión 0 se escriban en ese conjunto de propiedades y se lean desde este, el conjunto de propiedades permanece en formato de versión 0. Si se escribe un tipo de propiedad de la versión 1 en el conjunto de propiedades, el conjunto de propiedades se actualiza automáticamente a la versión 1. Posteriormente, las implementaciones que solo entiendan la versión 0 ya no podrán leer ese conjunto de propiedades.
 
-## <a name="ipropertystorage-and-variant-types"></a>Tipos IPropertyStorage y Variant
+## <a name="ipropertystorage-and-variant-types"></a>IPropertyStorage y tipos variant
 
-La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) no admite los tipos Variant VT \_ Unknown o VT \_ Dispatch en el miembro **VT** de la estructura [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) no admite los tipos variantes VT UNKNOWN o VT DISPATCH en el \_ miembro vt de la estructura \_ [**PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) 
 
-Se admiten los siguientes tipos de variante dentro de SafeArray; es decir, estos valores se pueden combinar con \_ la matriz VT en el miembro **VT** de la estructura [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Los siguientes tipos de variantes se admiten dentro de safeArray; Es decir, estos valores se pueden combinar con VT \_ ARRAY en el miembro **vt** de la [**estructura PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
 
 
-Tipos de variante admitidos en SafeArray por implementación de archivo compuesto de [ **IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage)
+Tipos variantes admitidos en SafeArray por la implementación de archivos compuestos [ **de IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage)
 
 VT \_ I1
 
 VT \_ UI1
 
-I2 de VT \_
+VT \_ I2
 
 VT \_ UI2
 
@@ -54,9 +54,9 @@ VT \_ I4
 
 VT \_ UI4
 
-VT \_ int
+VT \_ INT
 
-VT \_ uint
+VT \_ UINT
 
 VT \_ R4
 
@@ -64,49 +64,49 @@ VT \_ R8
 
 VT \_ CY
 
-fecha de VT \_
+FECHA \_ DE VT
 
 VT \_ BSTR
 
-VT \_ bool
+VT \_ BOOL
 
-VT \_ decimal
+VT \_ DECIMAL
 
-ERROR de VT \_
+\_ERROR DE VT
 
-VT ( \_ variante)
+VT \_ VARIANT
 
- 
+ 
 
 
 
- 
+ 
 
-Cuando \_ se combina VT Variant con una \_ matriz de VT, el propio SafeArray contiene estructuras [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) . Sin embargo, los tipos de estos elementos se deben tomar de la lista anterior, no pueden ser de \_ tipo VT y no pueden incluir los indicadores de VT \_ , \_ matriz VT o VT \_ BYREF.
+Cuando VT \_ VARIANT se combina con VT \_ ARRAY, safeArray contiene las [**estructuras PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Sin embargo, los tipos de estos elementos deben tomarse de la lista anterior, no pueden ser VT VARIANT y no pueden incluir los indicadores VT VECTOR, VT ARRAY o \_ \_ VT \_ \_ BYREF.
 
 ## <a name="ipropertystorage-methods"></a>Métodos IPropertyStorage
 
-La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) admite los siguientes métodos:
+La implementación independiente de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) admite los métodos siguientes:
 
 <dl> <dt>
 
 <span id="IPropertyStorage__ReadMultiple"></span><span id="ipropertystorage__readmultiple"></span><span id="IPROPERTYSTORAGE__READMULTIPLE"></span>[**IPropertyStorage::ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple)
 </dt> <dd>
 
-Lee las propiedades especificadas en la matriz *rgpspec* y proporciona los valores de todas las propiedades válidas en la matriz *Rgvar* de elementos [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+Lee las propiedades especificadas en la matriz *rgpspec* y proporciona los valores de todas las propiedades válidas en la *matriz rgvar* de [**elementos PROPVARIANT.**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
-En la implementación independiente y proporcionada por el sistema, los identificadores de propiedad duplicados que hacen referencia a los tipos de almacenamiento o de secuencia producen varias llamadas a [**IStorage:: OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) o [**IStorage:: OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage) y el éxito o el error de [**ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple) depende de la capacidad de la implementación de almacenamiento subyacente para compartir almacenamientos abiertos.
+En la implementación independiente proporcionada por el sistema, los identificadores de propiedad duplicados que hacen referencia a los tipos de flujo o almacenamiento tienen como resultado varias llamadas a [**IStorage::OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream) o [**IStorage::OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage) y el éxito o error de [**ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple) depende de la capacidad de la implementación de almacenamiento subyacente para compartir almacenamientos abiertos.
 
-Además, para asegurarse de que la operación segura para subprocesos se solicita varias veces a través del mismo puntero [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) , el objeto abierto se realizará correctamente o producirá un error en función de si la propiedad ya está abierta o no, y de si el sistema de archivos subyacente controla varias aperturas de una secuencia o almacenamiento. Por lo tanto, la operación [**ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple) en una propiedad de flujo o de valor de almacenamiento siempre da como resultado una llamada a [**IStorage:: OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream)o [**IStorage:: OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage), pasando el acceso (STGM \_ ReadWrite, por ejemplo) y los valores compartidos (STGM \_ recurso compartido \_ exclusivo, por ejemplo) especificados cuando el conjunto de propiedades se abrió o creó originalmente.
+Además, para garantizar una operación segura para subprocesos si la misma propiedad con valores de flujo o almacenamiento se solicita varias veces a través del mismo puntero [**IPropertyStorage,**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) la apertura se realizará correctamente o producirá un error en función de si la propiedad ya está abierta o no y de si el sistema de archivos subyacente controla varias aperturas de una secuencia o almacenamiento. Por lo tanto, la operación [**ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple) en una propiedad con valores de flujo o almacenamiento siempre produce una llamada a [**IStorage::OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream)o [**IStorage::OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage), pasando el acceso (STGM READWRITE, por ejemplo) y los valores de recurso compartido (STGM SHARE EXCLUSIVE, por ejemplo) especificados cuando el conjunto de propiedades se abrió o creó \_ \_ \_ originalmente.
 
-Si se produce un error en el método, los valores escritos en *rgvar* no \[ \] están definidos. Si algunas propiedades de flujo o de valor de almacenamiento se abren correctamente pero se produce un error antes de que se complete la ejecución, estas propiedades deben liberarse antes de que el método vuelva.
+Si se produce un error en el método , los valores escritos en *rgvar* \[ \] no están definidos. Si algunas propiedades con valores de flujo o almacenamiento se abren correctamente pero se produce un error antes de que se complete la ejecución, estas propiedades se deben liberar antes de que el método vuelva.
 
 </dd> <dt>
 
 <span id="IPropertyStorage__WriteMultiple"></span><span id="ipropertystorage__writemultiple"></span><span id="IPROPERTYSTORAGE__WRITEMULTIPLE"></span>[**IPropertyStorage::WriteMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-writemultiple)
 </dt> <dd>
 
-Escribe las propiedades especificadas en la matriz *rgpspec* \[ \] , asignándoles las etiquetas y los valores de [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) especificados en *rgvar* \[ \] . A las propiedades que ya existen se les asignan los valores de **PROPVARIANT** especificados y se crean las propiedades que no existen actualmente.
+Escribe las propiedades especificadas en la matriz *rgpspec* y les asigna las etiquetas PROPVARIANT y los valores \[ \] especificados en *rgvar* [](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) \[ \] . A las propiedades que ya existen se les asignan los valores **PROPVARIANT** especificados y se crean las propiedades que no existen actualmente.
 
 </dd> <dt>
 
@@ -120,67 +120,67 @@ Elimina las propiedades especificadas en *rgpspec* \[ \] .
 <span id="IPropertyStorage__ReadPropertyNames"></span><span id="ipropertystorage__readpropertynames"></span><span id="IPROPERTYSTORAGE__READPROPERTYNAMES"></span>[**IPropertyStorage::ReadPropertyNames**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readpropertynames)
 </dt> <dd>
 
-Lee los nombres de cadena existentes asociados a los identificadores de propiedad especificados en la matriz *rgpropid* \[ \] .
+Lee los nombres de cadena existentes asociados a los IDs de propiedad especificados en *la matriz rgpropid.* \[ \]
 
 </dd> <dt>
 
 <span id="IPropertyStorage__WritePropertyNames"></span><span id="ipropertystorage__writepropertynames"></span><span id="IPROPERTYSTORAGE__WRITEPROPERTYNAMES"></span>[**IPropertyStorage::WritePropertyNames**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-writepropertynames)
 </dt> <dd>
 
-Asigna nombres de cadena especificados en la matriz *rglpwstrName* a los identificadores de propiedad especificados en la matriz *rgpropid* .
+Asigna los nombres de cadena especificados en la *matriz rglpwstrName* a los IDs de propiedad especificados en *la matriz rgpropid.*
 
 </dd> <dt>
 
 <span id="IPropertyStorage__DeletePropertyNames"></span><span id="ipropertystorage__deletepropertynames"></span><span id="IPROPERTYSTORAGE__DELETEPROPERTYNAMES"></span>[**IPropertyStorage::D eletePropertyNames**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-deletepropertynames)
 </dt> <dd>
 
-Elimina los nombres de cadena de los identificadores de propiedad especificados en la matriz *rgpropid* escribiendo **null** en el nombre de la propiedad.
+Elimina los nombres de cadena de los iD de propiedad especificados en la *matriz rgpropid* escribiendo **NULL** en el nombre de propiedad.
 
 </dd> <dt>
 
 <span id="IPropertyStorage__SetClass"></span><span id="ipropertystorage__setclass"></span><span id="IPROPERTYSTORAGE__SETCLASS"></span>[**IPropertyStorage::SetClass**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-setclass)
 </dt> <dd>
 
-Establece el **CLSID** de la secuencia del conjunto de propiedades. En la implementación independiente, al establecer el CLSID en un conjunto de propiedades no simples (uno que puede contener propiedades de almacenamiento o con valores de flujo, tal como se describe en [**IPropertySetStorage:: Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create)) también se establece el CLSID en el subalmacenamiento subyacente para que se pueda obtener a través de una llamada a [**IStorage:: Stat**](/windows/desktop/api/Objidl/nf-objidl-istorage-stat).
+Establece el **CLSID de** la secuencia del conjunto de propiedades. En la implementación independiente, al establecer el CLSID en un conjunto de propiedades no simples (uno que puede contener propiedades con valores de almacenamiento o flujo, como se describe en [**IPropertySetStorage::Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create)), también se establece el CLSID en el subalmacenamiento subyacente para que se pueda obtener a través de una llamada a [**IStorage::Stat**](/windows/desktop/api/Objidl/nf-objidl-istorage-stat).
 
 </dd> <dt>
 
-<span id="IPropertyStorage__Commit"></span><span id="ipropertystorage__commit"></span><span id="IPROPERTYSTORAGE__COMMIT"></span>[**IPropertyStorage:: commit**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-commit)
+<span id="IPropertyStorage__Commit"></span><span id="ipropertystorage__commit"></span><span id="IPROPERTYSTORAGE__COMMIT"></span>[**IPropertyStorage::Commit**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-commit)
 </dt> <dd>
 
-En el caso de conjuntos de propiedades simples y no simples, vacía la imagen de memoria en el subsistema de disco. Además, en el caso de conjuntos de propiedades de modo de transacción no simples, este método llama a [**IStorage:: commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) en el conjunto de propiedades.
+Para conjuntos de propiedades simples y no simples, vacía la imagen de memoria en el subsistema de disco. Además, para los conjuntos de propiedades en modo de transacción no simples, este método llama a [**IStorage::Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) en el conjunto de propiedades.
 
 </dd> <dt>
 
-<span id="IPropertyStorage__Revert"></span><span id="ipropertystorage__revert"></span><span id="IPROPERTYSTORAGE__REVERT"></span>[**IPropertyStorage:: revert**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert)
+<span id="IPropertyStorage__Revert"></span><span id="ipropertystorage__revert"></span><span id="IPROPERTYSTORAGE__REVERT"></span>[**IPropertyStorage::Revert**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert)
 </dt> <dd>
 
-Solo para conjuntos de propiedades no simples, llama al método [**Revert**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert) del almacenamiento subyacente y vuelve a abrir la secuencia ' contents '. En el caso de los conjuntos de propiedades simples, solo devuelve E \_ OK.
+Solo para conjuntos de propiedades no simples, llama al [**método Revert**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert) del almacenamiento subyacente y vuelve a abrir la secuencia "contents". Para conjuntos de propiedades simples, solo devuelve E \_ OK.
 
 </dd> <dt>
 
-<span id="IPropertyStorage__Enum"></span><span id="ipropertystorage__enum"></span><span id="IPROPERTYSTORAGE__ENUM"></span>[**IPropertyStorage:: enum**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-enum)
+<span id="IPropertyStorage__Enum"></span><span id="ipropertystorage__enum"></span><span id="IPROPERTYSTORAGE__ENUM"></span>[**IPropertyStorage::Enum**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-enum)
 </dt> <dd>
 
-Crea un objeto enumerador que implementa [**IEnumSTATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg), los métodos de los que se puede llamar para enumerar las estructuras [**STATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg) que proporcionan información sobre cada una de las propiedades del conjunto.
+Crea un objeto enumerador que implementa [**IEnumSTATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg), cuyos métodos se pueden llamar para enumerar las estructuras [**STATPROPSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg) que proporcionan información sobre cada una de las propiedades del conjunto.
 
-Esta implementación crea una matriz en la que se lee todo el conjunto de propiedades y que se puede compartir cuando se llama a [**IEnumSTATPROPSTG:: Clone**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg) .
+Esta implementación crea una matriz en la que se lee todo el conjunto de propiedades y que se puede compartir cuando se llama a [**IEnumSTATPROPSTG::Clone.**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropstg)
 
 </dd> <dt>
 
-<span id="IPropertyStorage__Stat"></span><span id="ipropertystorage__stat"></span><span id="IPROPERTYSTORAGE__STAT"></span>[**IPropertyStorage:: Stat**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-stat)
+<span id="IPropertyStorage__Stat"></span><span id="ipropertystorage__stat"></span><span id="IPROPERTYSTORAGE__STAT"></span>[**IPropertyStorage::Stat**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-stat)
 </dt> <dd>
 
-Rellena los miembros de una estructura [**STATPROPSETSTG**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) , que contiene información sobre el conjunto de propiedades como un todo. En la devolución, proporciona un puntero a la estructura.
+Rellena los miembros de una [**estructura STATPROPSETSTG,**](/windows/win32/api/propidlbase/nn-propidlbase-ienumstatpropsetstg) que contiene información sobre el conjunto de propiedades en su conjunto. En la devolución, proporciona un puntero a la estructura .
 
-En el caso de los conjuntos de almacenamiento no simples, esta implementación llama a [**IStorage:: Stat**](/windows/desktop/api/Objidl/nf-objidl-istorage-stat) (o [**IStream:: Stat**](/windows/desktop/api/Objidl/nf-objidl-istream-stat)) para obtener la información de la secuencia o el almacenamiento subyacente.
+En el caso de los conjuntos de almacenamiento no simples, esta implementación llama a [**IStorage::Stat**](/windows/desktop/api/Objidl/nf-objidl-istorage-stat) (o [**IStream::Stat)**](/windows/desktop/api/Objidl/nf-objidl-istream-stat)para obtener la información del almacenamiento o flujo subyacentes.
 
 </dd> <dt>
 
 <span id="IPropertyStorage__SetTimes"></span><span id="ipropertystorage__settimes"></span><span id="IPROPERTYSTORAGE__SETTIMES"></span>[**IPropertyStorage::SetTimes**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-settimes)
 </dt> <dd>
 
-Solo para conjuntos de propiedades no simples, establece las horas admitidas por el almacenamiento subyacente. Esta implementación de [**SetTimes**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-settimes) llama al método [**IStorage:: SetElementTimes**](/windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes) del almacenamiento subyacente para modificar las horas. Admite las horas admitidas por el método subyacente, que puede ser la hora de modificación, el tiempo de acceso o la hora de creación.
+Solo para conjuntos de propiedades no simples, establece las horas admitidas por el almacenamiento subyacente. Esta implementación de [**SetTimes**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-settimes) llama al método [**IStorage::SetElementTimes**](/windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes) del almacenamiento subyacente para modificar las horas. Admite las horas admitidas por el método subyacente, que pueden ser la hora de modificación, la hora de acceso o la hora de creación.
 
 </dd> </dl>
 
@@ -188,13 +188,13 @@ Solo para conjuntos de propiedades no simples, establece las horas admitidas por
 
 <dl> <dt>
 
-[IPropertySetStorage: implementación independiente](ipropertysetstorage-stand-alone-implementation.md)
+[Implementación independiente de IPropertySetStorage](ipropertysetstorage-stand-alone-implementation.md)
 </dt> <dt>
 
 [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage)
 </dt> <dt>
 
-[**IStorage:: SetElementTimes**](/windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes)
+[**IStorage::SetElementTimes**](/windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes)
 </dt> <dt>
 
 [**StgOpenPropStg**](/windows/desktop/api/coml2api/nf-coml2api-stgopenpropstg)
@@ -206,6 +206,6 @@ Solo para conjuntos de propiedades no simples, establece las horas admitidas por
 [**StgCreatePropSetStg**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatepropsetstg)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

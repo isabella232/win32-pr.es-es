@@ -1,7 +1,7 @@
 ---
 description: Contiene el tamaño del elemento.
 ms.assetid: 0eda405e-d54f-48d2-a060-a1fdcdb23785
-title: Propiedad carpeta. Size (Shldisp. h)
+title: Propiedad FolderItem.Size (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5d44d1c1ddd9b46f768f218250802562f9a36312
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 576da1ef42768fe8574fab5f965270134cad50d96f4b4e3fe0aaa7234af6d365
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715445"
 ---
-# <a name="folderitemsize-property"></a>Carpeta. Size (propiedad)
+# <a name="folderitemsize-property"></a>Propiedad FolderItem.Size
 
 Contiene el tamaño del elemento.
 
@@ -37,13 +37,13 @@ iSize = FolderItem.Size
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**Entero** que recibe el tamaño del elemento.
+Entero **que** recibe el tamaño del elemento.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **size** para recuperar el tamaño del archivo ejecutable del Bloc de notas. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Size** para recuperar el tamaño del Bloc de notas archivo ejecutable. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -148,11 +148,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
