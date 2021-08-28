@@ -1,5 +1,5 @@
 ---
-description: '\/MódemDMConfigProfile... \/ AuthProtocol (v4)'
+description: ModemDMConfigProfile \/ ... \/ AuthProtocol (v4)
 MS-HAID: WWAN\_profile\_v4.element\_1\_AuthProtocol
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 46840bf958688ff8a1a1da4a796c07bfe21bd89d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 26dff13e189d70ce0c57dbd0ce9642ffd1722283
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469412"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982837"
 ---
-# <a name="span-idwwan_profile_v4element_1_authprotocolspanmodemdmconfigprofileauthprotocol-v4"></a><span id="WWAN_profile_v4.element_1_AuthProtocol"></span>\/MódemDMConfigProfile... \/ AuthProtocol (v4)
+# <a name="span-idwwan_profile_v4element_1_authprotocolspanmodemdmconfigprofileauthprotocol-v4"></a><span id="WWAN_profile_v4.element_1_AuthProtocol"></span>ModemDMConfigProfile \/ ... \/ AuthProtocol (v4)
 
 >Especifica el protocolo de autenticación que se usará para activar un contexto de Protocolo de datos de paquetes (PDP).
 
-Tenga en cuenta que en v4, hay disponible un nuevo valor de enumeración para este elemento. **AutoSelection** significa que un protocolo de autenticación se debe seleccionar mediante capas inferiores.
+Tenga en cuenta que, en la versión v4, hay disponible un nuevo valor de enumeración para este elemento. **AutoSelection** significa que un protocolo de autenticación se debe seleccionar por capas inferiores.
 
 Para más información, consulte la documentación del elemento [**AuthProtocol**](./schema-authprotocol-contexttype-element.md) v1.
 
@@ -41,7 +41,7 @@ Para más información, consulte la documentación del elemento [**AuthProtocol*
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<AuthProtocol\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <AuthProtocol>
@@ -74,7 +74,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

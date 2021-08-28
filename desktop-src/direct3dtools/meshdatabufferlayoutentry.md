@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 44cc67402c69b690ba9070fa51bf8d26f316faa7d10ac991226db2c05b6d6a6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 40360e73f480b4c12dcb24311c26fd9718093705
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118282293"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625361"
 ---
 # <a name="span-idvspixenginemeshdatabufferlayoutentryspanmeshdatabufferlayoutentry-structure"></a><span id="vspixengine.meshdatabufferlayoutentry"></span>MeshDataBufferLayoutEntry (estructura)
 
@@ -41,7 +41,7 @@ Representa información sobre una sola entrada en el diseño del búfer de una m
 Cadena COM que contiene el nombre de la entrada.
 
 **numComponents**  
-Número de componentes homogéneos (valores) que conste de esta entrada.
+El número de componentes homogéneos (valores) que forma esta entrada.
 
 **isPosition**  
 True si la entrada es una posición; de lo contrario, false.
@@ -51,7 +51,7 @@ Formato de datos de la entrada (registro). Para obtener más información, vea l
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

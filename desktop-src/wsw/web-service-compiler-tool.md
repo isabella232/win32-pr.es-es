@@ -5,15 +5,15 @@ ms.assetid: 1c73297d-0d3d-421c-9e19-44a6012a5c65
 keywords:
 - Web Service Compiler Tool Web Services for Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e92e1195cd9d3a8e8d9fa1b7be94421d68f3cbdf2242be6fa0d05be5cc3c743f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6789b9e2b6e38d89e422adc363326656b8f693e2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962844"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880986"
 ---
 # <a name="web-service-compiler-tool"></a>Herramienta del compilador de servicios web
 
@@ -24,7 +24,7 @@ Para admitir la [serialización](serialization.md), el compilador genera encabez
 
 Uso
 
-**WsUtil.exe \[ modificadores de línea de comandos \[ switch-options \] :\]<filename>**
+**WsUtil.exe \[ modificadores de línea de comandos \[ switch-options: \] \] &lt; filename&gt;**
 
 modificadores de línea de comandos
 
@@ -33,16 +33,16 @@ Especifica WsUtil.exe del compilador. Los modificadores pueden aparecer en cualq
 Lista de opciones de línea de comandos
 
 -   @filename Especifica que el archivo de entrada debe tratarse como un archivo de respuesta. Esta opción se puede usar varias veces, en cualquier lugar de la lista de argumentos.
--   /wsdl: :<dirección URL opcional> especifica que el archivo de entrada <filename> \_ debe tratarse como un archivo wsdl. Se permiten varias entradas wsdl y se procesan todos los archivos wsdl especificados. La dirección \_ URL opcional especifica la ubicación desde la que se recuperaron los metadatos. Si no se \_ especifica ninguna dirección URL opcional, Wsutil genera una dirección URL única internamente. Consulte también Compatibilidad [con directivas](policy-support.md).
--   /xsd: <filename> especifica que el nombre de archivo de entrada debe tratarse como un archivo de esquema. Se permiten varias entradas xsd y se procesan todos los archivos de esquema especificados.
--   /wsp: :<dirección URL opcional> especifica que el nombre de archivo de entrada <filename> \_ debe tratarse como metadatos de directiva. Se permiten varias entradas wsp y se procesan todos los archivos de directiva especificados. La dirección \_ URL opcional especifica la ubicación desde la que se recuperaron los metadatos. Si no se \_ especifica ninguna dirección URL opcional, Wsutil genera una dirección URL única internamente. Los archivos de directiva se omiten si se especifica la marca /nopolicy. Consulte también Compatibilidad [con directivas](policy-support.md).
+-   /wsdl: filename :<dirección URL opcional> especifica que el archivo de entrada &lt; &gt; debe \_ tratarse como un archivo wsdl. Se permiten varias entradas wsdl y se procesan todos los archivos wsdl especificados. La dirección \_ URL opcional especifica la ubicación desde la que se recuperaron los metadatos. Si no se \_ especifica ninguna dirección URL opcional, Wsutil genera una dirección URL única internamente. Consulte también Compatibilidad [con directivas](policy-support.md).
+-   /xsd: &lt; filename Especifica que el nombre de archivo de entrada debe &gt; tratarse como un archivo de esquema. Se permiten varias entradas xsd y se procesan todos los archivos de esquema especificados.
+-   /wsp: filename :<dirección URL opcional> especifica que el nombre de archivo de entrada &lt; &gt; debe \_ tratarse como metadatos de directiva. Se permiten varias entradas wsp y se procesan todos los archivos de directiva especificados. La dirección \_ URL opcional especifica la ubicación desde la que se recuperaron los metadatos. Si no se \_ especifica ninguna dirección URL opcional, Wsutil genera una dirección URL única internamente. Los archivos de directiva se omiten si se especifica la marca /nopolicy. Consulte también Compatibilidad [con directivas](policy-support.md).
 -   /nopolicy Deshabilitar el procesamiento de directivas.
--   /out: <dirname> especifica el nombre del directorio para los archivos de salida
+-   /out: &lt; dirname &gt; Especifica el nombre del directorio para los archivos de salida
 -   /noclient No genere el código auxiliar del lado cliente.
 -   /noservice No genere el código auxiliar del servicio.
--   /prefix: <string> anteponer la cadena especificada a todos los identificadores generados.
+-   /prefix: &lt; cadena &gt; Anteponer la cadena especificada a todos los identificadores generados.
 -   /fullname Anteponer el nombre de archivo normalizado a los identificadores generados. De forma predeterminada, solo se usará el nombre especificado en el atributo "name" para generar identificadores para las descripciones relacionadas.
--   /string:<WS \_ STRING>\|<WCHAR> \* De forma predeterminada, wsutil genera WCHAR para el tipo \* xsd:string. La aplicación puede usar esta marca para sobrescribir ese comportamiento y genera WS \_ STRING para xsd:type en su lugar.
+-   /string:<WS \_ STRING>\|<WCHAR> De forma predeterminada, wsutil genera WCHAR para el tipo \* \* xsd:string. La aplicación puede usar esta marca para sobrescribir ese comportamiento y genera WS \_ STRING para xsd:type en su lugar.
 -   /help Mostrar mensaje de ayuda
 -   /? Igual que /help
 -   /W:x Opciones de control de errores. Podría ser W:0-W:4 \| WX
@@ -55,7 +55,7 @@ De forma predeterminada, el compilador genera los siguientes archivos para el ar
 -   Código auxiliar de servicio ({inputfilename}.c)
 -   Archivo de encabezado ({inputfilename}.h)
 
-    La raíz del nombre de archivo generado es el nombre del archivo de entrada. Las extensiones de archivo de entrada originales se conservan para evitar la colisión de nombres de archivo para los archivos generados. De forma predeterminada, los códigos auxiliares de servicio y cliente se generan en el mismo archivo, con código auxiliar de servicio generado después del código proxy.
+    La raíz del nombre de archivo generado es el nombre del archivo de entrada. Las extensiones de archivo de entrada originales se conservan para evitar la colisión de nombres de archivo para los archivos generados. De forma predeterminada, los códigos auxiliares de cliente y servicio se generan en el mismo archivo, con código auxiliar de servicio generado después del código proxy.
 
     De forma predeterminada, el compilador genera los siguientes archivos para un archivo XSD para el esquema devuelto desde el intercambio de metadatos:
 
@@ -64,13 +64,13 @@ De forma predeterminada, el compilador genera los siguientes archivos para el ar
 
     La raíz del nombre de archivo es el nombre del servicio.
 
-Wsutil.exe genera una sección de "marca" al principio de todos los archivos generados, lo que indica la opción del compilador, la versión de la herramienta, la opción de línea de comandos aplicable, etc. Esta sección se puede desactivar mediante la opción /nostamp para evitar ruido con la comparación de los archivos generados.
+Wsutil.exe genera una sección "stamp" al principio de todos los archivos generados, lo que indica la opción del compilador, la versión de la herramienta, la opción de línea de comandos aplicable, etc. Esta sección se puede desactivar mediante la opción /nostamp para evitar ruido con la comparación de los archivos generados.
 
 Wsutil no admite la descarga de metadatos
 
 El compilador de Wsutil solo funciona desde el archivo de metadatos local. La herramienta no admite la descarga de metadatos de la ejecución de servicios web. Los desarrolladores pueden usar otras herramientas de servicio web compatibles, como svcutil, para descargar metadatos en el equipo local, inspeccionar los archivos guardados y pasar esos archivos a wsutil.exe para su compilación.
 
-Compatibilidad con varios archivos de entrada/salida
+Compatibilidad con varios archivos de entrada y salida
 
 El esquema WSDL y XML permite incluir o importar definiciones de otros espacios de nombres especificados en otras ubicación o archivos. Wsutil admite varias entradas de esquema, wsdl o directiva y genera un conjunto de código auxiliar o encabezado para cada archivo de entrada. Wsutil no sigue las instrucciones include e import. En su lugar, la aplicación debe pasar archivos que contengan todos los espacios de nombres necesarios a wsutil para que la herramienta pueda resolver todas las dependencias durante la compilación.
 
@@ -112,7 +112,7 @@ Niveles de advertencia y nivel de error
 De forma similar al compilador de C, WsUtil.exe admite cuatro niveles de advertencia y un nivel de error:
 
 -   WsUtil.exe genera errores con errores irrecuperables, como un archivo wsdl no válido, opciones del compilador no válidas, etc.
--   WsUtil genera advertencias W1 con problemas recuperables graves. El compilador puede seguir, pero el usuario debe tener en cuenta el problema. Por ejemplo, se generará una advertencia W1 si hay atributos no admitidos, como algunas facetas de WSDL, en wsdl que no afectan a la generación de código.
+-   WsUtil genera advertencias W1 con problemas recuperables graves. El compilador puede seguir, pero el usuario debe ser consciente del problema. Por ejemplo, se generará una advertencia W1 si hay atributos no admitidos, como algunas facetas de WSDL, en wsdl que no afectan a la generación de código.
 -   WsUtil genera advertencias W2 con problemas menos graves. No hay ninguna pérdida de funcionalidad, pero es posible que el desarrollador de aplicaciones quiera saberlo. Al igual que los comportamientos que pueden ser diferentes de otras plataformas.
 -   WsUtil genera advertencias W3 con un impacto mínimo en el código generado. Por ejemplo, wsutil.exe genera una advertencia W3 cuando la cadena normalizada es diferente de la cadena original.
 -   La advertencia W4 es más como las advertencias "informativos" y el problema WsUtil W4 en casos como omitir el atributo de documentación en WSDL.
@@ -162,7 +162,7 @@ typedef struct exmaple_xsd_SimpleStruct {
 
 ## <a name="globalization"></a>Globalización
 
-La herramienta es neutra en el idioma y se puede localizar a distintos idiomas. Se pueden localizar todos los mensajes de error o la salida de la consola. Sin embargo, las opciones de línea de comandos permanecen en inglés.
+La herramienta es neutral en el idioma y se puede localizar a distintos idiomas. Se pueden localizar todos los mensajes de error o la salida de la consola. Sin embargo, las opciones de línea de comandos permanecen en inglés.
 
 ## <a name="environment-variable"></a>Variable de entorno
 
@@ -170,9 +170,9 @@ WsUtil.exe no usa ninguna variable de entorno.
 
 ## <a name="platform-independent"></a>Independiente de la plataforma
 
-Los archivos de salida WsUtil.exe son independientes de la plataforma. No hay ningún código dependiente de la arquitectura generado en el código auxiliar; el compilador de C se encarga de todo lo que sea específico de la arquitectura. El código auxiliar se puede usar en todas las plataformas que se admiten.
+Los archivos de salida WsUtil.exe son independientes de la plataforma. No se genera código dependiente de la arquitectura en el código auxiliar; el compilador de C se encarga de todo lo que sea específico de la arquitectura. El código auxiliar se puede usar en todas las plataformas que se admiten.
 
-La descripción de wsutil.exe salida se puede encontrar en compatibilidad [con WSDL y](wsdl-support.md) en la parte compatibilidad [con](schema-support.md) esquemas.
+La descripción de wsutil.exe salida se puede encontrar en compatibilidad [con WSDL y](wsdl-support.md) en la parte compatibilidad con [esquemas.](schema-support.md)
 
  
 

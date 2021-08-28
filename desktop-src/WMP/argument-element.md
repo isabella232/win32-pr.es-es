@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1f5a689b74bd18138361d9377358ddee5cf5979f
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 29b0c234d2410d512e2f034f92cbc4a2d6ad7449
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122630196"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880266"
 ---
 # <a name="argument-element"></a>elemento argument
 
@@ -75,12 +75,12 @@ Cuando el atributo  **name** de un elemento de fragmento es una  característica
 <td>El contenido del elemento <strong>de argumento</strong> es la parte de condición de una cadena de condición. Por ejemplo, en la cadena de condición &quot; Artist Equals Joe &quot; , la parte de la condición es Igual a &quot; &quot; . La parte de condición de una cadena de condición debe ser una de las siguientes: equals, does not equal, contains, does not contain, is less than, is, is, is not, is before, is later than, is more recent than, above, below, ascending, descending, random, is at least, is no more than.</td>
 </tr>
 <tr class="even">
-<td>Value</td>
+<td>Valor</td>
 <td>El contenido del elemento <strong>de argumento</strong> es la parte de valor de una cadena de condición. Por ejemplo, en la cadena de condición &quot; Artist Equals Joe &quot; , la parte del valor es Joe &quot; &quot; . Ejemplo:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Artist&quot;>
-  <argument name = &quot;Condition&quot;>Equals</argument>
-  <argument name = &quot;Value&quot;>Joe</argument>
-</fragment></code></pre></td>
+  <argument name = &quot;Condition&quot;>Equals&lt;/argument&gt;
+  <argument name = &quot;Value&quot;>Joe&lt;/argument&gt;
+&lt;/fragment&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -113,14 +113,14 @@ Cuando el atributo  **name** de un elemento de fragmento es "Limit Total  Size T
 <td>Number</td>
 <td>El contenido del elemento <strong>argument</strong> es un número que limita el tamaño o la duración de la lista de reproducción. Ejemplos:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Total Size To&quot;>
-  <argument name = &quot;Format&quot;>Megabytes</argument>
-  <argument name = &quot;Number&quot;>5</argument>
-</fragment>
+  <argument name = &quot;Format&quot;>Megabytes&lt;/argument&gt;
+  <argument name = &quot;Number&quot;>5&lt;/argument&gt;
+&lt;/fragment&gt;
 
 <fragment name = &quot;Limit Total Duration To&quot;>
-  <argument name = &quot;Format&quot;>Minutes</argument>
-  <argument name = &quot;Number&quot;>20</argument>
-</fragment></code></pre></td>
+  <argument name = &quot;Format&quot;>Minutes&lt;/argument&gt;
+  <argument name = &quot;Number&quot;>20&lt;/argument&gt;
+&lt;/fragment&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -149,8 +149,8 @@ Cuando el atributo **name** de un elemento **de** fragmento es "Limit  Number of
 <td>Number</td>
 <td>El contenido del elemento <strong>argument</strong> es un número que limita el número de elementos de una lista de reproducción. Ejemplo:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Number of Items&quot;>
-  <argument name = &quot;Number&quot;>15</argument>
-</fragment></code></pre></td>
+  <argument name = &quot;Number&quot;>15&lt;/argument&gt;
+&lt;/fragment&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ Cuando el atributo **name** de un elemento **de** fragmento es "Limit  Number of
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 

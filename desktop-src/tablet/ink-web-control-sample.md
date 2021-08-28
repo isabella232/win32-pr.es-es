@@ -4,12 +4,12 @@ ms.assetid: 7a9e304c-57ef-41a3-83be-2b2d31435da8
 title: Ejemplo de control web ink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a2f305f1dcbb412325970510c6eaa5f09732bf10d870c961820ab8d8749eda
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dfe2035028ab622f896489b304ca850db4e25462
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032203"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882050"
 ---
 # <a name="ink-web-control-sample"></a>Ejemplo de control web ink
 
@@ -33,7 +33,7 @@ Este ejemplo consta de una solución que incluye dos proyectos y un archivo HTML
 
 ## <a name="referencing-the-control-in-html"></a>Hacer referencia al control en HTML
 
-La solución incluye un archivo HTML, default.htm. Este archivo es la página a la que navega el explorador para cargar el control. El archivo contiene una <object> etiqueta que hace referencia al control . También incluye un script al que se llama cuando se descarga la página, como se indica en la presencia del atributo onload=" `OnUnload()` " en el <body> . Esta función llama al método en el control para asegurarse de que todos los recursos `DisposeResources` se liberan correctamente al cerrarse.
+La solución incluye un archivo HTML, default.htm. Este archivo es la página a la que navega el explorador para cargar el control. El archivo contiene una &lt; etiqueta de objeto que hace referencia al control &gt; . También incluye un script al que se llama cuando se descarga la página, como indica la presencia del atributo onload=" " en la `OnUnload()` etiqueta &lt; &gt; body. Esta función llama al método en el control para asegurarse de que todos los recursos `DisposeResources` se liberan correctamente al cerrarse.
 
 
 ```C++
@@ -59,7 +59,7 @@ La solución incluye un archivo HTML, default.htm. Este archivo es la página a 
 
 
 
-Observe el formato del valor del atributo classid de la <object> etiqueta. Denomina el ensamblado, seguido de un separador de signos y, a continuación, el espacio de nombres que contiene el control y, a continuación, el nombre \# de clase del control.
+Observe el formato del valor del atributo classid para la &lt; etiqueta de &gt; objeto. Denomina el ensamblado, seguido de un separador de signos y, a continuación, el espacio de nombres que contiene el control y, a continuación, el nombre \# de clase del control.
 
 Un control de usuario real probablemente incluiría métodos adicionales que se usan para conservar o enviar los datos recopilados en la aplicación.
 

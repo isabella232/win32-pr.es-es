@@ -4,12 +4,12 @@ description: Con una vista de lista, los usuarios pueden ver e interactuar con u
 ms.assetid: 62a7bfc8-96a9-450d-9db9-ec9dab6687b7
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8f1440608e5a9aded6acf55d9e6bb3d9ce1bb096
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 8b8a1ce068b03ddf2a7aba40a0044f79914102d3
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472161"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983068"
 ---
 # <a name="list-views"></a>Vistas de lista
 
@@ -78,9 +78,9 @@ El control de vista de lista admite cinco vistas estándar:
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Icono**<br/> cada elemento aparece como un icono medio, con una etiqueta y detalles opcionales a la derecha. <br/>                                                                                                                         | ![captura de pantalla de miniaturas con títulos y detalles ](images/ctrl-list-views-image2.png)<br/> La vista de mosaico muestra iconos medios con etiquetas y detalles opcionales a la derecha.<br/>                                                                                                                                                                |
 | **Icono grande**<br/> cada elemento aparece como un icono extra grande, grande o mediano con una etiqueta debajo.<br/>                                                                                                                      | ![captura de pantalla de la vista de lista de miniaturas grande ](images/ctrl-list-views-image3.png)<br/> La vista Icono grande muestra cada elemento como un icono grande con una etiqueta debajo.<br/>                                                                                                                                                                              |
-| **Icono pequeño**<br/> cada elemento aparece como un icono pequeño con una etiqueta a la derecha.<br/>                                                                                                                                           | ![captura de pantalla de la vista de lista de miniaturas pequeña ](images/ctrl-list-views-image4.png)<br/> La vista icono pequeño muestra cada elemento como un icono pequeño con su etiqueta a la derecha.<br/>                                                                                                                                                                        |
+| **Icono pequeño**<br/> cada elemento aparece como un icono pequeño con una etiqueta a la derecha.<br/>                                                                                                                                           | ![captura de pantalla de la vista de lista de miniaturas pequeña ](images/ctrl-list-views-image4.png)<br/> La vista Icono pequeño muestra cada elemento como un icono pequeño con su etiqueta a la derecha.<br/>                                                                                                                                                                        |
 | **Lista**<br/> cada elemento aparece como un icono pequeño con una etiqueta a la derecha.<br/>                                                                                                                                                 | en modo de lista, esta vista ordena elementos en columnas y usa una barra de desplazamiento horizontal. por el contrario, la vista de iconos ordena los elementos en filas y usa una barra de desplazamiento vertical. <br/> ![captura de pantalla de la vista de lista en modo de lista ](images/ctrl-list-views-image5.png)<br/> El modo de lista muestra cada elemento como un icono pequeño con su etiqueta a la derecha.<br/> |
-| **Detalles**<br/> cada elemento aparece como una fila en un formato tabular. la columna situada más a la izquierda contiene el icono y la etiqueta opcionales del elemento, y las columnas posteriores contienen información adicional, como las propiedades del elemento.<br/> | Además, las columnas se pueden agregar o quitar, y se pueden reordenar y cambiar el tamaño. Las filas se pueden agrupar, ordenar por columna. <br/> ![captura de pantalla de la vista de lista en modo de detalles ](images/ctrl-list-views-image6.png)<br/> La vista de detalles muestra cada elemento como una línea en un formato de tabla.<br/>                                                              |
+| **Detalles**<br/> cada elemento aparece como una fila en formato tabular. la columna situada más a la izquierda contiene el icono y la etiqueta opcionales del elemento, y las columnas posteriores contienen información adicional, como las propiedades del elemento.<br/> | Además, las columnas se pueden agregar o quitar, y se pueden reordenar y cambiar el tamaño. Las filas se pueden agrupar, ordenar por columna. <br/> ![captura de pantalla de la vista de lista en modo de detalles ](images/ctrl-list-views-image6.png)<br/> La vista de detalles muestra cada elemento como una línea en un formato de tabla.<br/>                                                              |
 
 
 
@@ -91,7 +91,11 @@ El control de vista de lista admite cinco vistas estándar:
 
 
 
-| | | <strong>El elegidor de columnas</strong><br /> Las vistas de lista a veces tienen tantas columnas que no resulta práctico mostrarlas todas. En este caso, el mejor enfoque es mostrar las columnas más útiles de forma predeterminada y permitir a los usuarios agregar o quitar columnas según sea necesario. <br /> | <img src="images/ctrl-list-views-image7.png" alt="Screen shot of list view with Column Chooser menu " /><br /> Al hacer clic con el botón derecho en el encabezado de columna se muestra un menú contextual que permite a los usuarios agregar o quitar columnas.<br /><img src="images/ctrl-list-views-image8.png" alt="Screen shot of Choose Details dialog box " /><br /> Al hacer clic en Más en el menú contextual del encabezado de columna se muestra el cuadro de diálogo Elegir columnas, que permite a los usuarios agregar o quitar columnas, así como reordenarlas.<br /> | | <strong>Vista de lista de casillas</strong><br /> Permitir a los usuarios seleccionar varios elementos.<br /> | Las vistas de lista de selección múltiple tienen exactamente la misma apariencia que las vistas de lista de selección única, por lo que no hay ninguna pista visual de que admitan la selección múltiple. Se puede usar una vista de lista de casillas para indicar claramente que es posible realizar varias selecciones. Por lo tanto, este patrón debe usarse para tareas en las que la selección múltiple es esencial o se usa con frecuencia.<br /><img src="images/ctrl-list-views-image9.png" alt="Screen shot of dialog box with several check boxes " /><br /> En este ejemplo, una vista de icono pequeño usa casillas porque la selección múltiple es esencial para la tarea.<br /> | | <strong>Enumeración de vistas con grupos</strong><br /> Organice los datos en grupos.<br /> | Aunque las vistas de detalles suelen admitir la ordenación de los datos por cualquiera de las columnas, las vistas de lista permiten a los usuarios organizar los elementos en grupos. Algunas de las ventajas de la agrupación son:<br /><ul><li>Los grupos funcionan en todas las vistas (excepto en la lista), por lo que, por ejemplo, los usuarios podrían agrupar una vista de iconos muy grandes de álbumes por intérprete.</li><li>Los grupos pueden ser colecciones de alto nivel, que a menudo son más significativas que agrupar directamente los datos. Por ejemplo, Windows explorer agrupa fechas en Today, Last week, Last week, Earlier this year y Hace mucho tiempo.</li></ul><img src="images/ctrl-list-views-image10.png" alt="Screen shot of list view with several data groups " /><br /> En este ejemplo, el Windows Centro de bienvenida muestra los elementos agrupados en una vista de lista.<br /> | 
+| Etiqueta | Value |
+|--------|-------|
+| <strong>Selector de columnas</strong><br /> Las vistas de lista a veces tienen tantas columnas que no resulta práctico mostrarlas todas. En este caso, el mejor enfoque es mostrar las columnas más útiles de forma predeterminada y permitir que los usuarios agreguen o quiten columnas según sea necesario. <br /> | <img src="images/ctrl-list-views-image7.png" alt="Screen shot of list view with Column Chooser menu " /><br /> Al hacer clic con el botón derecho en el encabezado de columna se muestra un menú contextual que permite a los usuarios agregar o quitar columnas.<br /><img src="images/ctrl-list-views-image8.png" alt="Screen shot of Choose Details dialog box " /><br /> Al hacer clic en Más en el menú contextual del encabezado de columna se muestra el cuadro de diálogo Elegir columnas, que permite a los usuarios agregar o quitar columnas, así como reordenarlas.<br /> | 
+| <strong>Vista de lista de casillas</strong><br /> Permitir a los usuarios seleccionar varios elementos.<br /> | Las vistas de lista de selección múltiple tienen exactamente la misma apariencia que las vistas de lista de selección única, por lo que no hay ninguna pista visual de que admitan la selección múltiple. Se puede usar una vista de lista de casillas para indicar claramente que es posible realizar varias selecciones. Por lo tanto, este patrón debe usarse para tareas en las que la selección múltiple es esencial o se usa con frecuencia.<br /><img src="images/ctrl-list-views-image9.png" alt="Screen shot of dialog box with several check boxes " /><br /> En este ejemplo, una vista de icono pequeño usa casillas porque la selección múltiple es esencial para la tarea.<br /> | 
+| <strong>Enumeración de vistas con grupos</strong><br /> Organice los datos en grupos.<br /> | Aunque las vistas de detalles suelen admitir la ordenación de los datos por cualquiera de las columnas, las vistas de lista permiten a los usuarios organizar los elementos en grupos. Algunas de las ventajas de la agrupación son:<br /><ul><li>Los grupos funcionan en todas las vistas (excepto en la lista), por lo que, por ejemplo, los usuarios podrían agrupar una vista de iconos muy grandes de álbumes por intérprete.</li><li>Los grupos pueden ser colecciones de alto nivel, que a menudo son más significativas que agrupar directamente los datos. Por ejemplo, Windows Explorer agrupa fechas en Today, Last week, Last week, Earlier this year y Hace mucho tiempo.</li></ul><img src="images/ctrl-list-views-image10.png" alt="Screen shot of list view with several data groups " /><br /> En este ejemplo, el Windows Centro de bienvenida muestra los elementos agrupados en una vista de lista.<br /> | 
 
 
 
@@ -111,7 +115,7 @@ El control de vista de lista admite cinco vistas estándar:
 
     En este ejemplo, la vista Lista de búsqueda presenta inicialmente instrucciones.
 
--   **Si los usuarios pueden cambiar las vistas, agrupar, ordenar por columnas o cambiar las columnas y sus anchos y orden, haga que esa configuración se conserve para que su aplicación se haga efectiva la próxima vez que se muestre la vista de lista.** Hacer que se conserven en una vista por lista, por usuario.
+-   **Si los usuarios pueden cambiar las vistas, agrupar, ordenar por columnas o cambiar las columnas y sus anchos y orden, haga que esa configuración se conserve para que su efecto se haga la próxima vez que se muestre la vista de lista.** Hacer que se conserven en una vista por lista, por usuario.
 
 ### <a name="interaction"></a>Interacción
 
@@ -157,7 +161,7 @@ El control de vista de lista admite cinco vistas estándar:
     En este ejemplo, el espacio en disco necesario para instalar los componentes es más significativo que el número de componentes seleccionados.
 
 -   Para las vistas de lista de casillas, si hay potencialmente muchos elementos y es probable que se activen o desactiven todos, agregue los botones de comando Seleccionar todo y Borrar todos.
--   **Use casillas de estado mixto para indicar la selección parcial de los elementos de un contenedor.** El estado mixto no se usa como tercer estado para un elemento individual.
+-   **Use las casillas de estado mixto para indicar la selección parcial de los elementos de un contenedor.** El estado mixto no se usa como tercer estado para un elemento individual.
 
 ### <a name="changing-views"></a>Cambiar vistas
 
@@ -262,7 +266,7 @@ Tamaño y espaciado recomendados para las vistas de lista.
 ### <a name="control-labels"></a>Etiquetas de control
 
 -   Todas las vistas de lista necesitan etiquetas. Escriba la etiqueta como una palabra o frase, no como una frase, terminando con dos puntos con texto estático.
--   Asigne una clave [de acceso única](glossary.md) para cada etiqueta. Para obtener instrucciones, vea [Teclado.](inter-keyboard.md)
+-   Asigne una clave [de acceso única](glossary.md) para cada etiqueta. Para obtener instrucciones, vea [Teclado](inter-keyboard.md).
 -   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
 -   Coloque la etiqueta encima del control y alinee la etiqueta con el borde izquierdo del control.
 -   Para las vistas de lista de selección múltiple, escriba la etiqueta que indique claramente que es posible realizar varias selecciones. Las etiquetas de vista de lista de casillas pueden ser menos explícitas.
@@ -326,7 +330,7 @@ Ejemplo: en la **lista Programas y servicios,** seleccione **Compartir archivos 
 
 Al hacer referencia a las casillas de una vista de lista:
 
--   Use el texto exacto de la etiqueta, incluida su inclusión en mayúsculas, e incluya la casilla de palabras. No incluya el carácter de subrayado de la clave de acceso.
+-   Use el texto exacto de la etiqueta, incluida su mayúsculas y las mayúsculas, e incluya la casilla de palabras. No incluya el carácter de subrayado de la clave de acceso.
 -   Para describir la interacción del usuario, use seleccionar y borrar.
 -   Cuando sea posible, formatee la etiqueta con texto en negrita. De lo contrario, coloque la etiqueta entre comillas solo si es necesario para evitar confusiones.
 

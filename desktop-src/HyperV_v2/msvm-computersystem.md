@@ -59,12 +59,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a8a81d5e1503c868865f1f1fae7238be74f024c1bd1c992f5610ce75b5702ab6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e35ebd6000dfae5e99c4b589f4c0a62e84f1e1d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119531794"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880912"
 ---
 # <a name="msvm_computersystem-class"></a>Clase ComputerSystem de Msvm \_
 
@@ -72,7 +72,7 @@ Representa un sistema de equipo físico o una máquina virtual.
 
 Para recuperar información de VMMS, use la [**clase \_ VirtualSystemManagementService de Msvm.**](msvm-virtualsystemmanagementservice.md)
 
-La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código MOF e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -219,10 +219,10 @@ Breve descripción del objeto. Esta propiedad se hereda de la [**clase \_ Manage
 
 
 
-| Value                                                                                                | Significado                                                  |
+| Valor                                                                                                | Significado                                                  |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | <dl> <dt>"Máquina virtual"</dt> </dl>         | La instancia representa una máquina virtual.<br/>    |
-| <dl> <dt>"Sistema de equipo de hospedaje"</dt> </dl> | La instancia de representa el equipo host.<br/> |
+| <dl> <dt>"Sistema de hospedaje del equipo"</dt> </dl> | La instancia de representa el equipo host.<br/> |
 
 
 
@@ -265,7 +265,7 @@ Tipo de datos: **matriz uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el sistema informático es un sistema de propósito especial (dedicado a un uso determinado), en lugar de ser un sistema de uso general. Esta propiedad se hereda de [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)y siempre se establece en 0 (no dedicado).
+Indica si el sistema informático es un sistema de propósito especial (dedicado a un uso determinado), en lugar de ser un sistema de uso general. Esta propiedad se hereda de [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)y siempre se establece en 0 (No dedicado).
 
 </dd> <dt>
 
@@ -278,11 +278,11 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ MANAGEDElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y contendrá uno de los valores siguientes.
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y contendrá uno de los siguientes valores.
 
 
 
-| Value                                                                                                          | Significado                                                  |
+| Valor                                                                                                          | Significado                                                  |
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | <dl> <dt>"Microsoft Virtual Computer System"</dt> </dl> | La instancia representa una máquina virtual.<br/>    |
 | <dl> <dt>"Sistema de equipos de hospedaje de Microsoft"</dt> </dl> | La instancia de representa el equipo host.<br/> |
@@ -364,7 +364,7 @@ Estados habilitados y deshabilitados de un elemento. Esta propiedad también pue
 | <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span><dl> <dt>**Deshabilitado**</dt> <dt>3</dt> </dl>                                             | El elemento está desactivado.<br/>                                                                                                                                                                           |
 | <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Apagar**</dt> <dt>4</dt> </dl>                         | El elemento está en proceso de pasar a un estado Deshabilitado.<br/>                                                                                                                                          |
 | <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span><dl> <dt>**No aplicable**</dt> <dt>5</dt> </dl>                     | El elemento no admite la habilitación o deshabilitación.<br/>                                                                                                                                              |
-| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Habilitado pero sin conexión**</dt> <dt>6</dt> </dl> | El elemento podría estar completando comandos y quitará las nuevas solicitudes.<br/>                                                                                                                         |
+| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Habilitado pero sin conexión**</dt> <dt>6</dt> </dl> | El elemento podría estar completando comandos y quitará las solicitudes nuevas.<br/>                                                                                                                         |
 | <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span><dl> <dt>**En la prueba**</dt> <dt>7</dt> </dl>                                                 | El elemento está en estado de prueba.<br/>                                                                                                                                                                      |
 | <span id="Deferred"></span><span id="deferred"></span><span id="DEFERRED"></span><dl> <dt>**Aplazado**</dt> <dt>8</dt> </dl>                                             | El elemento podría estar completando comandos, pero pondrá en cola las nuevas solicitudes.<br/>                                                                                                                        |
 | <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span><dl> <dt>**Quiesce**</dt> <dt>9</dt> </dl>                                                 | El elemento está habilitado, pero en modo restringido. El comportamiento del elemento es similar al estado Habilitado (2), pero procesa solo un conjunto restringido de comandos. Todas las demás solicitudes se ponen en cola.<br/> |
@@ -385,7 +385,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el estado actual del modo de sesión mejorada en la máquina virtual.
+Especifica el estado actual del modo de sesión mejorado en la máquina virtual.
 
 El proveedor WMI de Hyper-V genera [**\_ \_ un instanceModificationEvent**](/windows/desktop/WmiSdk/--instancemodificationevent) cada vez que **cambia el Elemento EnhancedSessionModeState** de la clase **\_ ComputerSystem de Msvm.** Si una sesión de vmconnection activa recibe **\_ \_ un instanceModificationEvent**, intenta cambiar al modo de sesión mejorada si el usuario ha habilitado esa configuración.
 
@@ -500,7 +500,7 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/
 
 
 
-| Value                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                                                                                                                                                        |
+| Valor                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="OK"></span><span id="ok"></span><dl> <dt>**Ok**</dt> <dt>5</dt> </dl>                                                                               | La máquina virtual es totalmente funcional y funciona con parámetros operativos normales y sin errores.<br/>                                                                                                                                                                                    |
 | <span id="Major_Failure"></span><span id="major_failure"></span><span id="MAJOR_FAILURE"></span><dl> <dt>**Error principal**</dt> <dt>20</dt> </dl>             | La máquina virtual ha sufrido un error importante. Este valor se usa cuando uno o varios discos que contienen los VHD de la máquina virtual tienen poco espacio en disco y la máquina virtual se ha pausado.<br/>                                                                                                   |
@@ -552,19 +552,19 @@ Calificadores: **Clave**
 
 Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
-En Windows 8, hay una única instancia de [**ReplicationSettingData para**](msvm-replicationsettingdata.md) cada sistema informático o máquina virtual. Por Windows 8.1, una máquina virtual de recuperación tiene dos instancias de **ReplicationSettingData**. Este cambio diferencia y asocia los datos de configuración con la relación de replicación.
+En Windows 8, hay una única instancia de [**ReplicationSettingData**](msvm-replicationsettingdata.md) para cada sistema de equipo o máquina virtual. Por Windows 8.1, una máquina virtual de recuperación tiene dos instancias de **ReplicationSettingData**. Este cambio diferencia y asocia los datos de configuración con la relación de replicación.
 
 
 
 | Nombre de propiedad  | Windows 8 valor               | Windows 8.1 valor                          |
 |----------------|-------------------------------|--------------------------------------------|
-| **InstanceID** | Microsoft: <vmguid> \\ HVR | Microsoft: <vmguid> \\ HVR \\<0/1> |
+| **InstanceID** | Microsoft: &lt; vmguid &gt; \\ HVR | Microsoft: &lt; vmguid &gt; \\ HVR \\<0/1> |
 
 
 
  
 
-En el Windows 8.1, 0 indica principal y 1 indica replicación extendida. Para obtener más información sobre la replicación extendida, vea Replicación de [**MsvmRelationship \_**](msvm-replicationrelationship.md).
+En el Windows 8.1, 0 indica principal y 1 indica replicación extendida. Para obtener más información sobre la replicación extendida, [**vea Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).
 
 </dd> <dt>
 
@@ -577,7 +577,7 @@ Tipo de datos: **DateTime**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**LastApplicationConsistentReplicationTime**")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**LastApplicationConsistentReplicationTime**")
 </dt> </dl>
 
 Hora a la que se recibió la última replicación coherente con la aplicación para la máquina virtual.
@@ -598,7 +598,7 @@ Tipo de datos: **DateTime**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**LastReplicationTime**")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**LastReplicationTime**")
 </dt> </dl>
 
 Hora a la que se recibe la última replicación en la recuperación de la máquina virtual.
@@ -619,7 +619,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**LastReplicationType**")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**LastReplicationType**")
 </dt> </dl>
 
 Tipo de la última replicación que se recibió para la máquina virtual.
@@ -685,7 +685,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del sistema [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-system)y siempre se establece en "*GUID*".
+Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del sistema CIM y siempre se establece en "*GUID*". [**\_**](/windows/desktop/CIMWin32Prov/cim-system)
 
 </dd> <dt>
 
@@ -698,7 +698,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que identifica cómo se generó el nombre del sistema mediante la heurística de subclase. Esta propiedad se hereda de [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)y siempre se establece en **Null.**
+Cadena que identifica cómo se generó el nombre del sistema mediante la subclase heurística. Esta propiedad se hereda de [**CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -724,10 +724,10 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("MilliSeconds")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Milegundos")
 </dt> </dl>
 
-En el caso de la máquina virtual, esta propiedad indica el tiempo, en milisegundos, desde la última vez que la máquina se ha activado, restablecido o restaurado. Esta vez excluye la hora en que la máquina virtual estaba en estado en pausa. Para el sistema operativo de administración, esta propiedad se establece en **Null.**
+En el caso de la máquina virtual, esta propiedad indica el tiempo, en milisegundos, desde la última vez que la máquina se ha activado, restablecido o restaurado. Esta hora excluye la hora en que la máquina virtual estaba en estado de pausa. Para el sistema operativo de administración, esta propiedad se establece en **Null.**
 
 </dd> <dt>
 
@@ -753,16 +753,16 @@ Tipo de datos: **matriz uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz que contiene los estados actuales del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement) El valor del índice cero (0) es uno de los valores siguientes.
+Matriz que contiene los estados actuales del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement) El valor del índice cero (0) es uno de los siguientes valores.
 
 
 
-| Value                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                                                                           |
+| Valor                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="OK"></span><span id="ok"></span><dl> <dt>**Ok**</dt> <dt>2</dt> </dl>                                                                                      | La máquina virtual es funcional y funciona con normalidad.<br/>                                                                                                                                                                                              |
 | <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degradado**</dt> <dt>3</dt> </dl>                                         | La máquina virtual solo es parcialmente funcional. Esto indica que no se puede acceder al almacenamiento que contiene la configuración. Una máquina virtual en este estado solo se puede desactivar o eliminar. <br/>                                               |
-| <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span><dl> <dt>**Error predictivo**</dt> <dt>5</dt> </dl> | La máquina virtual es funcional, pero puede producir un error en el futuro. Esto indica que el almacenamiento que contiene el disco duro virtual de la máquina virtual tiene poco espacio libre. La máquina virtual se pausará si no hay más espacio en disco disponible.<br/> |
-| <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span><dl> <dt>**Detenido**</dt> <dt>10</dt> </dl>                                            | Este valor no se admite. Si se detiene la máquina virtual, la **propiedad EnabledState** tendrá un valor de 3 (deshabilitado).<br/>                                                                                                                       |
+| <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span><dl> <dt>**Error predictivo**</dt> <dt>5</dt> </dl> | La máquina virtual es funcional, pero puede producir un error en el futuro. Esto indica que el almacenamiento que contiene el disco duro virtual de la máquina virtual tiene poco espacio libre. La máquina virtual se pausará si no hay más espacio disponible en disco.<br/> |
+| <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span><dl> <dt>**Detenido**</dt> <dt>10</dt> </dl>                                            | Este valor no se admite. Si se detiene la máquina virtual, la **propiedad EnabledState** tendrá un valor de 3 (Deshabilitado).<br/>                                                                                                                       |
 | <span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span><dl> <dt>**En el servicio**</dt> <dt>11</dt> </dl>                                | La máquina virtual está procesando una solicitud.<br/>                                                                                                                                                                                                           |
 | <span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span><dl> <dt>**Inactivo**</dt> <dt>15</dt> </dl>                                            | Este valor no se admite. Si la máquina virtual está suspendida o en pausa, la propiedad **EnabledState** tendrá un valor de 32769 (suspendido) o 32768 (en pausa).<br/>                                                                                    |
 
@@ -770,15 +770,15 @@ Matriz que contiene los estados actuales del objeto. Esta propiedad se hereda de
 
  
 
-El valor del índice uno (1) es opcional y contiene información de estado secundario. Un cliente debe usar el estado principal del índice cero (0) para determinar si se puede emitir una nueva solicitud a la máquina virtual. Si **OperationalStatus** \[ 0 es 2 (correcto), se puede interrumpir la operación indicada por \] **OperationalStatus** \[ 1. \]
+El valor del índice uno (1) es opcional y contiene información de estado secundaria. Un cliente debe usar el estado principal del índice cero (0) para determinar si se puede emitir una nueva solicitud a la máquina virtual. Si **OperationalStatus** \[ 0 es 2 (correcto), se puede interrumpir la operación indicada por \] **OperationalStatus** \[ 1. \]
 
-El valor de **OperationalStatus** \[ 1 \] es uno de los valores siguientes.
+El valor de **OperationalStatus** \[ 1 \] es uno de los siguientes valores.
 
 
 
 | Valor                                                                                                                                                                                                                                                                                                   | Significado                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span id="Creating_Snapshot"></span><span id="creating_snapshot"></span><span id="CREATING_SNAPSHOT"></span><dl> <dt>**Creación de la instantánea**</dt> <dt>32768</dt> </dl>                                 | Una instantánea está en proceso de creación para la máquina virtual.<br/>             |
+| <span id="Creating_Snapshot"></span><span id="creating_snapshot"></span><span id="CREATING_SNAPSHOT"></span><dl> <dt>**Creación de la**</dt> <dt>instantánea 32768</dt> </dl>                                 | Una instantánea está en proceso de creación para la máquina virtual.<br/>             |
 | <span id="Applying_Snapshot"></span><span id="applying_snapshot"></span><span id="APPLYING_SNAPSHOT"></span><dl> <dt>**Aplicación de la instantánea**</dt> <dt>32769</dt> </dl>                                 | Una instantánea está en proceso de aplicarse a la máquina virtual.<br/>              |
 | <span id="Deleting_Snapshot"></span><span id="deleting_snapshot"></span><span id="DELETING_SNAPSHOT"></span><dl> <dt>**Eliminación de la instantánea**</dt> <dt>32770</dt> </dl>                                 | Una instantánea está en proceso de eliminación de la máquina virtual.<br/>            |
 | <span id="Waiting_to_Start"></span><span id="waiting_to_start"></span><span id="WAITING_TO_START"></span><dl> <dt>**Waiting to Start**</dt> <dt>32771</dt> </dl>                                     | La máquina virtual se inicia una vez transcurrido el retraso de inicio automático.<br/> |
@@ -1016,7 +1016,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**ReplicationState**")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("[**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).**ReplicationState**")
 </dt> </dl>
 
 Estado de replicación de la máquina virtual.
@@ -1146,7 +1146,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último estado solicitado o deseado para la máquina virtual tal como se pasa al método [**RequestStateChange,**](requeststatechange-msvm-computersystem.md) o 12 (no aplicable) si no hay ningún cambio de estado en curso. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los últimos estados solicitados y los estados habilitados o deshabilitados actuales. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
+Último estado solicitado o deseado para la máquina virtual tal como se pasa al método [**RequestStateChange,**](requeststatechange-msvm-computersystem.md) o 12 (No aplicable) si no hay ningún cambio de estado en curso. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los últimos estados solicitados y los estados habilitados o deshabilitados actuales. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
@@ -1272,7 +1272,7 @@ Consulte [Consulta de objetos de red.](querying-networking-objects.md)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

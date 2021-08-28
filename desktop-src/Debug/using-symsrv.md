@@ -4,16 +4,16 @@ ms.assetid: d400f222-c50c-4c7b-8f8a-0c3ed3bba3b9
 title: Uso de SymSrv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 197a627e50c6be3a3e8636378890025a6dde091948954e2709935c7dc84fa30c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d1f0abcbd76b710e6a9429baa1ceff6d3a53a0df
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119655035"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886496"
 ---
 # <a name="using-symsrv"></a>Uso de SymSrv
 
-SymSrv entrega archivos de símbolos desde almacenes de símbolos centralizados. Estos almacenes pueden contener cualquier número de archivos de símbolos, correspondientes a cualquier número de programas o sistemas operativos. Los almacenes también pueden contener archivos binarios, que son especialmente útiles al depurar archivos de minivolfón.
+SymSrv entrega archivos de símbolos de almacenes de símbolos centralizados. Estos almacenes pueden contener cualquier número de archivos de símbolos, correspondientes a cualquier número de programas o sistemas operativos. Los almacenes también pueden contener archivos binarios, que son especialmente útiles al depurar archivos de minivolfón.
 
 Los almacenes pueden contener los archivos binarios y de símbolos reales o simplemente punteros a archivos de símbolos. Si el almacén contiene punteros, SymSrv recuperará los archivos reales directamente de sus orígenes.
 
@@ -23,10 +23,10 @@ Por último, SymSrv puede obtener archivos de símbolos de un origen HTTP o HTTP
 
 ## <a name="setting-the-symbol-path"></a>Establecer la ruta de acceso del símbolo
 
-Como se describe en [Rutas](symbol-paths.md)de acceso de símbolos , la ruta de acceso de símbolos (variable de entorno NT SYMBOL PATH) puede estar integrada por varios elementos path separados \_ por punto y \_ \_ coma. Si uno o varios de estos elementos de ruta de acceso comienzan con el texto "srv", el elemento es un servidor de símbolos y usará SymSrv para buscar archivos \* de símbolos.
+Como se describe en [Rutas](symbol-paths.md)de acceso de símbolos , la ruta de acceso de símbolos (variable de entorno NT SYMBOL PATH) puede estar integrada por varios elementos de ruta de acceso separados \_ por punto y \_ \_ coma. Si uno o varios de estos elementos de ruta de acceso comienzan con el texto "srv", el elemento es un servidor de símbolos y usará SymSrv para buscar archivos \* de símbolos.
 
 > [!Note]  
-> Si no se especifica el texto "srv", pero el elemento path real es un almacén de servidores de símbolos, el controlador de símbolos actuará como si se hubiera especificado \* \* "srv". El controlador de símbolos realiza esta determinación buscando la existencia de un archivo denominado "pingme.txt" en el directorio raíz de la ruta de acceso especificada.
+> Si no se especifica el texto "srv", pero el elemento de ruta de acceso real es un almacén de servidores de símbolos, el controlador de símbolos actuará como si se hubiera especificado \* \* "srv". El controlador de símbolos realiza esta determinación buscando la existencia de un archivo denominado "pingme.txt" en el directorio raíz de la ruta de acceso especificada.
 
  
 
@@ -36,7 +36,7 @@ Al igual que las rutas de acceso de símbolos se hacen de elementos de ruta de a
 srv \* *SymbolStore1* \* *SymbolStoreN*  
 </dl>
 
-Si solo se incluye un elemento de almacén de símbolos en la ruta de acceso, SymSrv intentará usar cualquier archivo solicitado directamente desde ese almacén.
+Si solo se incluye un elemento de almacén de símbolos en la ruta de acceso, SymSrv intentará usar el archivo solicitado directamente desde ese almacén.
 
 Si hay dos almacenes de símbolos en la ruta de acceso, SymSrv busca el archivo de símbolos en el almacén de símbolos situado más a la izquierda. Si el archivo está ahí, se usa. Si no está ahí, SymSrv busca en el almacén de símbolos inmediatamente a la derecha. Si el archivo está ahí, se copia en el almacén izquierdo y se abre desde allí.
 
@@ -50,21 +50,21 @@ En la tabla siguiente se muestran ejemplos de los tipos de almacén de símbolos
 
 |  Tipo de almacén de símbolos       |  Descripción |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \\\\recurso \\ compartido de servidor          | Una ruta de acceso UNC completa a un recurso compartido en un servidor remoto.                                                                                                                                                                                                                                                                                                 |
+| \\\\recurso \\ compartido de servidor          | Ruta de acceso UNC completa a un recurso compartido en un servidor remoto.                                                                                                                                                                                                                                                                                                 |
 | c: \\ LocalCache             | Ruta de acceso a un directorio en el equipo cliente.                                                                                                                                                                                                                                                                                                             |
 | https://InternetSite        | Dirección URL de un sitio web que hospeda los símbolos. Debe ser el almacén más a la derecha de la lista y no debe ser el único almacén de la lista.                                                                                                                                                                                                                          |
 | https://SecureInternetSite | Dirección URL de un sitio web seguro que hospeda los símbolos. Esto puede admitir contraseñas, Windows credenciales de inicio de sesión, certificados y tarjetas inteligentes. Debe ser el almacén más a la derecha de la lista y no debe ser el único almacén de la lista.                                                                                                                              |
-| <blank>              | Si no hay texto entre dos asteriscos, esto indica el *almacén de nivel inferior predeterminado.* La ubicación se establece mediante una llamada [**a SymSetHomeDirectory**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsethomedirectory). El valor predeterminado es un directorio denominado "sym" inmediatamente debajo del directorio del programa de la aplicación que realiza la llamada. Esto se conoce a veces como caché *local predeterminada.* |
+| &lt;blank&gt;              | Si no hay texto entre dos asteriscos, esto indica el *almacén de nivel inferior predeterminado.* La ubicación se establece mediante una llamada [**a SymSetHomeDirectory**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsethomedirectory). El valor predeterminado es un directorio denominado "sym" inmediatamente debajo del directorio del programa de la aplicación que realiza la llamada. Esto se conoce a veces como caché *local predeterminada.* |
 
 
 
  
 
-Dado que no se puede escribir en un almacén de símbolos basado en HTTP, debe ser el almacén más a la derecha de la lista. Si un almacén de símbolos basado en HTTP se encontraba en el centro o la izquierda de la lista de tiendas, no sería posible copiar los archivos encontrados en él y la cadena se dividiría. Además, dado que el controlador de símbolos no puede abrir un archivo desde un sitio web, un almacén basado en HTTP no debe ser el almacén más a la izquierda o solo el almacén de la lista. Si SymSrv se presenta alguna vez con esta ruta de acceso de símbolos, intentará recuperarse copiando el archivo en el almacén de bajada predeterminado y ábralo desde allí, independientemente de si el almacén de nivel inferior predeterminado se indica en la ruta de acceso del símbolo o no.
+Dado que no se puede escribir en un almacén de símbolos basado en HTTP, debe ser el almacén situado más a la derecha de la lista. Si un almacén de símbolos basado en HTTP se encuentra en el centro o la izquierda de la lista de tiendas, no sería posible copiar en él los archivos encontrados y la cadena se dividiría. Además, dado que el controlador de símbolos no puede abrir un archivo desde un sitio web, un almacén basado en HTTP no debe ser el almacén más a la izquierda o solo el almacén de la lista. Si SymSrv se presenta alguna vez con esta ruta de acceso de símbolos, intentará recuperarse copiando el archivo en el almacén de nivel inferior predeterminado y ábralo desde allí, independientemente de si el almacén de nivel inferior predeterminado se indica en la ruta de acceso del símbolo o no.
 
 ## <a name="examples"></a>Ejemplos
 
-Para usar SymSrv con un almacén de símbolos en \\ \\ \\ mysymbols de mybuilds, establezca la siguiente ruta de acceso de símbolos:
+Para usar SymSrv con un almacén de símbolos en \\ \\ mybuilds \\ mysymbols, establezca la siguiente ruta de acceso de símbolos:
 
 **set \_ NT \_ SYMBOL \_ PATH= srv \* \\ \\ mybuilds \\ mysymbols**
 
@@ -72,7 +72,7 @@ Para establecer la ruta de acceso de símbolos para que el depurador copie los a
 
 **set \_ NT \_ SYMBOL \_ PATH=srv \* c: \\ localsymbols \* \\ \\ mybuilds \\ mysymbols**
 
-Para establecer la ruta de acceso de símbolos para que el depurador copie los archivos de símbolos de un almacén de símbolos en \\ \\ mybuilds mysymbols en el almacén de nivel inferior predeterminado \\ (normalmente c: \\ depuradores \\ sym), use:
+Para establecer la ruta de acceso de símbolos para que el depurador copie los archivos de símbolos de un almacén de símbolos en \\ mybuilds mysymbols en el almacén de nivel inferior predeterminado \\ \\ (normalmente c: \\ depuradores \\ sym), use:
 
 **set \_ NT \_ SYMBOL \_ PATH=srv \* \* \\ \\ mybuilds \\ mysymbols**
 
@@ -82,17 +82,17 @@ Para usar un almacén en cascada, establezca la siguiente ruta de acceso de sím
 
 En este ejemplo, SymSrv busca primero el archivo en c: \\ localsymbols. Si se encuentra allí, devolverá una ruta de acceso al archivo. De lo contrario, SymSrv busca el archivo en \\ \\ el almacén \\ NearbyServer. Si se encuentra allí, SymSrv copia el archivo en c: localsymbols y devuelve una ruta de acceso al archivo; si no se encuentra, SymSrv busca el archivo en y, si se encuentra allí, SymSrv copia el archivo en el almacén \\ NearbyServer y, a continuación, en https://DistantServer \\ \\ \\ c: \\ localsymbols.
 
-En este último ejemplo se muestra cómo se puede usar el diseño desaconsciente de una ruta de acceso de símbolos para optimizar la descarga de símbolos. Si tiene un sitio de trabajo con un grupo de depuradores y todos necesitan obtener símbolos de una ubicación lejana, puede configurar un servidor común con un almacén de símbolos cerca de todos los depuradores. A continuación, configure cada depurador con la ruta de acceso de símbolos anterior. El primer depurador que requiere una versión determinada de foo.pdb la descargará desde en el almacén NearbyServer y, a continuación, en su propia máquina https://DistantServer \\ \\ \\ en c: \\ localsymbols. El siguiente depurador que requiere el mismo archivo podrá descargarlo desde el almacén NearbyServer porque el depurador anterior ya lo descargó en \\ \\ \\ esa ubicación. Este almacenamiento en caché de varios niveles ahorra mucho tiempo y ancho de banda de red.
+En este último ejemplo se muestra cómo se puede usar un diseño judioso de una ruta de acceso de símbolos para optimizar la descarga de símbolos. Si tiene un sitio de trabajo con un grupo de depuradores y todos ellos necesitan obtener símbolos de una ubicación lejana, puede configurar un servidor común con un almacén de símbolos cerca de todos los depuradores. A continuación, configure cada depurador con la ruta de acceso de símbolos anterior. El primer depurador que requiere una versión determinada de foo.pdb lo descargará desde en el almacén NearbyServer y, a continuación, en su propia máquina https://DistantServer \\ \\ \\ en c: \\ localsymbols. El siguiente depurador que requiere el mismo archivo podrá descargarlo desde el almacén NearbyServer porque el depurador anterior ya lo descargó en \\ \\ \\ esa ubicación. Este almacenamiento en caché de varios niveles ahorra mucho tiempo y ancho de banda de red.
 
 ## <a name="microsoft-symbol-store"></a>Microsoft Symbol Store
 
-Microsoft proporciona acceso a un servidor de símbolos de Internet que contiene archivos de símbolos para las muchas versiones del Windows operativo. No se garantiza que este catálogo de símbolos esté completo, pero es amplio. También se representan otros productos de Microsoft.
+Microsoft proporciona acceso a un servidor de símbolos de Internet que contiene archivos de símbolos para las distintas versiones del Windows operativo. No se garantiza que este catálogo de símbolos esté completo, pero es amplio. También se representan otros productos de Microsoft.
 
-El servidor de símbolos de Internet se rellena con una variedad de símbolos de Windows para los sistemas operativos de Microsoft Windows, incluidas correcciones rápidas, Service Packs, paquetes de paquetes acumulativos de seguridad y versiones comerciales. Los símbolos también están disponibles en el servidor para las versiones beta actuales y los candidatos de lanzamiento para Windows, además de una variedad de otros productos de Microsoft, como Microsoft Internet Explorer.
+El servidor de símbolos de Internet se rellena con una variedad de símbolos de Windows para los sistemas operativos de Microsoft Windows, incluidas correcciones de accesos temporales, Service Packs, paquetes acumulativos de seguridad y versiones comerciales. Los símbolos también están disponibles en el servidor para las versiones beta actuales y los candidatos de lanzamiento para Windows, además de una variedad de otros productos de Microsoft, como Microsoft Internet Explorer.
 
 Si tiene acceso a Internet durante la depuración, puede configurar el depurador para descargar símbolos según sea necesario durante una sesión de depuración, en lugar de descargar archivos de símbolos por separado antes de una sesión de depuración. Los símbolos se descargan en una ubicación de directorio que especifique y, a continuación, el depurador los carga desde allí.
 
-La dirección URL del almacén de símbolos de Microsoft es https://msdl.microsoft.com/download/symbols . En el ejemplo siguiente se muestra cómo establecer la ruta de acceso de símbolos del depurador (sustituya la ruta de acceso del almacén de nivel inferior por *c: \\ DownstreamStore*):
+La dirección URL del almacén de símbolos de Microsoft es https://msdl.microsoft.com/download/symbols . En el ejemplo siguiente se muestra cómo establecer la ruta de acceso del símbolo del depurador (sustituya la ruta de acceso del almacén de nivel inferior por *c: \\ DownstreamStore*):
 
 ``` syntax
 srv*c:\DownstreamStore*https://msdl.microsoft.com/download/symbols
@@ -100,23 +100,23 @@ srv*c:\DownstreamStore*https://msdl.microsoft.com/download/symbols
 
 ## <a name="compressed-files"></a>Archivos comprimidos
 
-SymSrv es compatible con los almacenes de símbolos que contienen archivos comprimidos, siempre que esta compresión se haya creado previamente con la herramienta compress.exe que se distribuyó con el Kit de recursos de Windows Server 2003. Los archivos comprimidos deben tener un carácter de subrayado como último carácter en sus extensiones de archivo (por ejemplo, module1.pd \_ o module2.db). \_ Para más información, consulte [Uso de SymStore.](using-symstore.md)
+SymSrv es compatible con almacenes de símbolos que contienen archivos comprimidos, siempre y cuando esta compresión se haya creado previamente con la herramienta compress.exe que se distribuyó con el Kit de recursos de Windows Server 2003. Los archivos comprimidos deben tener un carácter de subrayado como último carácter en sus extensiones de archivo (por ejemplo, module1.pd \_ o module2.db). \_ Para más información, consulte [Uso de SymStore.](using-symstore.md)
 
-Cuando se encuentran en cascada, los archivos no se descomprimen a menos que el almacén de destino sea el almacén situado más a la izquierda en la ruta de acceso. Si solo hay un almacén en la ruta de acceso y contiene un archivo comprimido, SymSrv copiará el archivo en el almacén de bajada predeterminado y lo abrirá desde allí, aunque el almacén de nivel inferior predeterminado no se indique en la ruta de acceso de símbolos.
+Cuando se encuentran en cascada, los archivos no se comprimen a menos que el almacén de destino sea el almacén situado más a la izquierda en la ruta de acceso. Si solo hay un almacén en la ruta de acceso y contiene un archivo comprimido, SymSrv copiará el archivo en el almacén de nivel inferior predeterminado y lo abrirá desde allí, aunque el almacén de nivel inferior predeterminado no se indique en la ruta de acceso de símbolos.
 
-**DbgHelp 6.1 y versiones anteriores:** Si los archivos del almacén maestro están comprimidos, debe usar un almacén de nivel inferior. SymSrv descomprimirá todos los archivos antes de copiarlos en el almacén de nivel inferior.
+**DbgHelp 6.1 y versiones anteriores:** Si los archivos del almacén maestro están comprimidos, debe usar un almacén de nivel inferior. SymSrv descomprime todos los archivos antes de copiarlos en el almacén de nivel inferior.
 
-## <a name="deleting-the-cache"></a>Eliminación de la caché
+## <a name="deleting-the-cache"></a>Eliminación de la memoria caché
 
 Si usa un almacén de bajada como caché, puede eliminar este directorio en cualquier momento para ahorrar espacio en disco.
 
-Es posible tener un gran almacén de símbolos que incluya archivos de símbolos para muchos programas o versiones Windows diferentes. Si actualiza la versión de Windows en el equipo de destino, todos los archivos de símbolos almacenados en caché coincidirán con la versión anterior. Estos archivos almacenados en caché no serán de ningún uso adicional y, por tanto, podría ser un buen momento para eliminar la memoria caché.
+Es posible tener un amplio almacén de símbolos que incluya archivos de símbolos para muchos programas o versiones Windows diferentes. Si actualiza la versión de Windows en el equipo de destino, todos los archivos de símbolos almacenados en caché coincidirán con la versión anterior. Estos archivos almacenados en caché no serán de ningún uso adicional y, por lo tanto, podría ser un buen momento para eliminar la memoria caché.
 
-Herramientas de depuración para Windows incluye una utilidad denominada agestore.exe que quitará selectivamente los archivos de un árbol de directorios, dejando los archivos usados más recientemente. Esta herramienta está diseñada para la eliminación de archivos no usados de almacenes de servidores de símbolos. Permite controlar muchas opciones, incluidos los algoritmos de fecha de corte y tamaño del directorio.
+Herramientas de depuración para Windows incluye una utilidad denominada agestore.exe que quitará selectivamente los archivos de un árbol de directorios, dejando los archivos usados más recientemente. Esta herramienta está diseñada para la eliminación de archivos no usados de almacenes de servidores de símbolos. Permite controlar muchas opciones, incluidos los algoritmos de fecha límite y tamaño de directorio.
 
 ## <a name="flat-cache-directory"></a>Directorio de caché plana
 
-Es posible declarar el almacén de nivel inferior predeterminado como un directorio plano, en lugar de una estructura de árbol de símbolos estándar. Para ello, llame a la función [**SymSetOptions**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) con **SYMOPT \_ FLAT \_ DIRECTORY** (esto también establece la opción **SSRVOPT \_ FLAT DEFAULT \_ \_ STORE** en SymSrv). Asegúrese de llamar a [**SymSetHomeDirectory antes**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsethomedirectory) de hacerlo; De lo contrario, los archivos de símbolos se pueden escribir en el directorio del programa.
+Es posible declarar el almacén de bajada predeterminado como un directorio plano, en lugar de una estructura de árbol de símbolos estándar. Para ello, llame a la función [**SymSetOptions**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) con **SYMOPT \_ FLAT \_ DIRECTORY** (esto también establece la opción **SSRVOPT \_ FLAT DEFAULT \_ \_ STORE** en SymSrv). Asegúrese de llamar a [**SymSetHomeDirectory antes**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsethomedirectory) de hacerlo; De lo contrario, los archivos de símbolos se pueden escribir en el directorio del programa.
 
 ## <a name="pointer-files"></a>Archivos de puntero
 

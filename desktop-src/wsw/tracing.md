@@ -5,19 +5,19 @@ ms.assetid: b008bae2-9423-4e72-ae03-9cd50f73d812
 keywords:
 - Seguimiento de servicios web para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da2bcd5c07c2c5ebf3a28620e39efe3034d3c2bc024ac487caaec38e3c69fca9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ace571c2639ddd1eb55ed1e4afd70bcef7318b44
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119707265"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882307"
 ---
-# <a name="tracing"></a>Seguimiento
+# <a name="tracing"></a>Traza
 
-El seguimiento usa el seguimiento de eventos Windows (ETW). Para aprovechar las herramientas de seguimiento disponibles con Windows Server 2008 R2, instale el SDK de Microsoft Windows desde el sitio de [descargas de MSDN.](https://www.microsoft.com/download/details.aspx?id=8279)
+El seguimiento usa el seguimiento de eventos Windows (ETW). Para aprovechar las herramientas de seguimiento disponibles con Windows Server 2008 R2, instale el SDK de Microsoft Windows desde el sitio [de descargas de MSDN.](https://www.microsoft.com/download/details.aspx?id=8279)
 
 
 Hay tres niveles de seguimiento admitidos:
@@ -41,7 +41,7 @@ WWSAPI usa los eventos basados en manifiestos en Windows Vista y versiones poste
 
 -   Ejecute eventvwr.msc desde la línea de comandos o el menú ejecutar.
 -   Haga clic en el vínculo de vista en el panel Acciones de la derecha y habilite la opción Mostrar registros analíticos y de depuración.
--   Vaya a Application and Service Logs \\ Microsoft Windows WebServices providers (Registros de aplicaciones y servicios) de \\ Microsoft en el panel \\ izquierdo.
+-   Vaya a Application and Service Logs \\ Microsoft Windows WebServices providers (Registros de aplicaciones y servicios) de Microsoft en \\ \\ el panel izquierdo.
 -   Haga clic con el botón derecho en el proveedor de seguimiento y seleccione Habilitar registro.
 -   Ejecute el escenario.
 -   Al actualizar la página del visor de eventos, debería empezar a ver las entradas de seguimiento de WWSAPI.
@@ -56,13 +56,13 @@ El wstrace.bat por lotes proporciona una manera cómoda de:
 -   Actualización del nivel de seguimiento (info/error/verbose)
 -   Conversión de registros de seguimiento en archivos CSV
 
-El archivo por lotes logman.exe para todos los comandos, a excepción de convertir los registros en un archivo CSV, que requiere una herramienta personalizada (wstracedump.exe).
+El archivo por lotes usa logman.exe para todos los comandos, a excepción de convertir los registros en un archivo CSV, lo que requiere una herramienta personalizada (wstracedump.exe).
 
 ## <a name="using-tracing-commands"></a>Uso de comandos de seguimiento
 
 El comando siguiente crea un registro que usa información, error o nivel detallado. Este comando requiere privilegios elevados.
 
-**wstrace.bat de \[ error de \| información de \| creación\]**
+**wstrace.bat el \[ error de \| información \| detallado\]**
 
 El comando siguiente elimina el registro. Este comando requiere privilegios elevados.
 
@@ -74,7 +74,7 @@ El comando siguiente habilita el seguimiento. Primero debe crear un registro.
 
 El nivel de seguimiento (información, error o detallado) se puede modificar de la siguiente manera:
 
-**wstrace.bat de error \[ de información de actualización \| \| detallado\]**
+**wstrace.bat información \[ de \| actualización detallada \|\]**
 
 Para volcar la salida de seguimiento, use el siguiente comando:
 
@@ -84,7 +84,7 @@ Los eventos se volcarán en el archivo CSV hasta que se presione Ctrl-C o se des
 
 ## <a name="tracing-file-format"></a>Formato de archivo de seguimiento
 
-Los archivos CSV creados por wstrace.bat son archivos de texto simples de variables separadas por comas. Estos archivos se pueden abrir en Excel, Bloc de notas, etc.
+Los archivos CSV creados por wstrace.bat archivos de texto simples de variables separadas por comas. Estos archivos se pueden abrir en Excel, Bloc de notas, etc.
 
 Las columnas del archivo son las siguientes:
 
@@ -100,13 +100,13 @@ Las columnas del archivo son las siguientes:
 
 Habilitación del seguimiento de ETW para WWSAPI
 
-**logman start wstrace -bs 64 -ft 1 -rt -p Microsoft-Windows-WebServices \[ \[ flags level \] \] \[ -o <EtlLogFileName> \] -ets**
+**logman start wstrace -bs 64 -ft 1 -rt -p Microsoft-Windows-WebServices \[ \[ flags level \] \] \[ -o &lt; EtlLogFileName &gt; \] -ets**
 
-para crear e iniciar la sesión de seguimiento de ETW. Logman.exe es una herramienta ETW de serie disponible en todas las plataformas compatibles. Tenga en cuenta que debe usar Microsoft Windows WebServices como nombre del proveedor en \_ \_ XPSP2 y W2K3. Puede ejecutar proveedores de consultas logman para ver la lista de proveedores registrados. El proveedor Microsoft-Windows-WebServices (o Microsoft \_ Windows WebServices) debe aparecer a menos que \_ no esté registrado. El proveedor se registra normalmente durante la instalación. Sin embargo, también se puede registrar manualmente ejecutando wevtutil.exe im (en Windows Vista y versiones posteriores) o <ManifestFileName> mofcomp.exe <MofFileName> (en XPSP2 y W2K3).
+para crear e iniciar la sesión de seguimiento de ETW. Logman.exe es una herramienta ETW de serie disponible en todas las plataformas compatibles. Tenga en cuenta que debe usar Microsoft Windows WebServices como nombre del proveedor en \_ \_ XPSP2 y W2K3. Puede ejecutar proveedores de consultas logman para ver la lista de proveedores registrados. El proveedor Microsoft-Windows-WebServices (o Microsoft \_ Windows WebServices) debe aparecer a menos que \_ no esté registrado. El proveedor se registra normalmente durante la instalación. Sin embargo, también se puede registrar manualmente ejecutando wevtutil.exe im ManifestFileName (en Windows Vista y versiones posteriores) o &lt; &gt; mofcomp.exe &lt; MofFileName &gt; (en XPSP2 y W2K3).
 
 Las marcas se pueden usar para filtrar los seguimientos por su tipo. Puede ser el valor or de los siguientes tipos de seguimiento. Si no se proporciona, se habilitan todos los tipos de seguimiento.
 
--   0x1: seguimientos de entrada y salida de la API.
+-   0x1: seguimientos de entrada y salida de API.
 -   0x2: seguimientos de errores.
 -   0x4: seguimientos de E/S.
 -   0x8: seguimientos de mensajes SOAP.
@@ -128,9 +128,9 @@ Recopilación del archivo de registro de eventos ETW.
 
 **logman stop wstrace -ets**
 
-para detener la sesión de seguimiento de ETW. Es cuando ETW deja de registrar los eventos. El archivo de registro de eventos ETW (especificado en el parámetro EtlLogFileName) está listo para consumirse. Se puede ver localmente (se proporcionan instrucciones a continuación) o enviarse al grupo de productos para su investigación.
+para detener la sesión de seguimiento de ETW. Esto es cuando ETW deja de registrar los eventos. El archivo de registro de eventos ETW (especificado en el parámetro EtlLogFileName) está listo para consumirse. Se puede ver localmente (se proporcionan instrucciones a continuación) o enviarse al grupo de productos para su investigación.
 
-Ejemplo completo mediante herramientas ETW:
+Ejemplo de un extremo a otro mediante las herramientas etw:
 
 **logman start wstrace -bs 64 -ft 1 -rt -p Microsoft-Windows-WebServices -o mytrace.etl -ets**
 
@@ -144,25 +144,25 @@ Ejemplo completo mediante herramientas ETW:
 
 **Eco.. use mytrace.xml y wstrace.xsl en la página abierta.**
 
-## <a name="viewing-wwsapi-etw-trace-file-traces-using-wstracedumpexe-tool-works-on-windows-xp-and-above"></a>Visualización de seguimientos de archivos de seguimiento ETW de WWSAPI wstracedump.exe herramienta (funciona Windows XP y versiones posteriores)
+## <a name="viewing-wwsapi-etw-trace-file-traces-using-wstracedumpexe-tool-works-on-windows-xp-and-above"></a>Visualización de seguimientos de archivos de seguimiento ETW de WWSAPI wstracedump.exe herramienta (funciona en Windows XP y versiones posteriores)
 
-Wstracedump.exe es una herramienta de consumidor ETW desarrollada personalizada que procesa eventos en el archivo de seguimiento ETW WWSAPI y genera resultados legibles por el usuario. Puede generar resultados de todas las plataformas admitidas. Consulte su uso (wstracedump.exe -?) para obtener más información.
+Wstracedump.exe es una herramienta de consumidor ETW desarrollada personalizada que procesa eventos en el archivo de seguimiento ETW de WWSAPI y genera resultados legibles por el usuario. Puede generar resultados de todas las plataformas admitidas. Consulte su uso (wstracedump.exe -?) para obtener más información.
 
-## <a name="viewing-wwsapi-etw-trace-file-traces-using-etw-tools-works-on-windows-vista-and-above"></a>Visualización de seguimientos de archivos de seguimiento ETW de WWSAPI mediante herramientas ETW (funciona Windows Vista y versiones posteriores)
+## <a name="viewing-wwsapi-etw-trace-file-traces-using-etw-tools-works-on-windows-vista-and-above"></a>Visualización de seguimientos de archivos de seguimiento ETW de WWSAPI mediante herramientas ETW (funciona en Windows Vista y versiones posteriores)
 
-Tracerpt.exe es la herramienta para ver el contenido de un archivo de registro de eventos ETW y disponible en todas las plataformas compatibles. Se puede usar para generar archivos de volcado CSV, EVTX o XML a partir de un archivo de registro de eventos ETW. Sin embargo, el archivo de salida generado solo tiene seguimientos legibles en Windows Vista y versiones posteriores. Estas instrucciones describen cómo generar el archivo de volcado XML y usarlo junto con un archivo xsl para mostrar los seguimientos en un formato correcto (el archivo xsl es muy trivial y se puede modificar si se desean formatos diferentes).
+Tracerpt.exe es la herramienta para ver el contenido de un archivo de registro de eventos ETW y disponible en todas las plataformas compatibles. Se puede usar para generar archivos de volcado CSV, EVTX o XML a partir de un archivo de registro de eventos ETW. Sin embargo, el archivo de salida generado tiene seguimientos legibles humanos solo en Windows Vista y versiones posteriores. En estas instrucciones se describe cómo generar el archivo de volcado XML y usarlo junto con un archivo xsl para mostrar los seguimientos en un formato correcto (el archivo xsl es muy trivial y se puede modificar si se desean formatos diferentes).
 
 -   Ejecutar
 
-    **tracerpt <EtlLogFileName> -o <OutputXMLFileName>**
+    **tracerpt &lt; EtlLogFileName &gt; -o &lt; OutputXMLFileName&gt;**
 
     para crear un volcado XML a partir del archivo ETL binario (tracerpt.exe el archivo de salida en formato XML de forma predeterminada. Ejecute tracerpt -? Para ver otros formatos disponibles).
 
--   En este punto, puede ver la información de seguimiento en el archivo XML. Además, puede abrir el archivo wstrace.htm y usar el archivo de volcado xml y el archivo wstrace.xsl para ver los seguimientos en un formato mejor. Tenga en cuenta que los archivos deben estar en el equipo local para poder usar este archivo HTML en IE.
+-   En este momento, puede ver la información de seguimiento en el archivo XML. Además, puede abrir el archivo wstrace.htm y usar el archivo de volcado xml y el archivo wstrace.xsl para ver los seguimientos en un formato mejor. Tenga en cuenta que los archivos deben estar en el equipo local para poder usar este archivo HTML en IE.
 
 ## <a name="security"></a>Seguridad
 
-Al habilitar el seguimiento, los administradores deben tener en cuenta que consume más espacio en disco y capacidad de cálculo. Un cliente o una aplicación malintencionados pueden agotar los recursos del sistema a menos que la configuración de seguimiento esté configurada con límites razonables. Al usar la característica de seguimiento de mensajes, los mensajes que transportan información confidencial, como credenciales, información personal, etc., pueden conservarse en el disco o ser vistos por cualquier persona que tenga acceso al visor de eventos del sistema. Como mitigación de este problema, los usuarios del sistema o administrador pueden habilitar el seguimiento en Windows 2003 y versiones posteriores. El seguimiento de mensajes está deshabilitado Windows XP en el que cualquier usuario puede activar el seguimiento.
+Al habilitar el seguimiento, los administradores deben tener en cuenta que consume espacio en disco adicional y potencia de cálculo. Un cliente o aplicación malintencionados puede agotar los recursos del sistema a menos que la configuración de seguimiento esté configurada con límites razonables. Al usar la característica de seguimiento de mensajes, los mensajes que transportan información confidencial, como credenciales, información personal, etc., pueden conservarse en el disco o ser vistos por cualquier persona que tenga acceso al visor de eventos del sistema. Como mitigación de este problema, los usuarios del sistema o administrador pueden habilitar el seguimiento en Windows 2003 y versiones posteriores. El seguimiento de mensajes está deshabilitado Windows XP en el que cualquier usuario puede activar el seguimiento.
 
 La enumeración siguiente se usa con el seguimiento:
 

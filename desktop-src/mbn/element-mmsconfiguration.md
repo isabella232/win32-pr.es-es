@@ -7,12 +7,12 @@ MSHAttr:
 title: MmsConfiguration
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0217dae3aad8afb70997d27db3053a6bac9f41b2
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: ff6612ce37bfa39b9498b6db4b9ce49cb06a6326
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882939"
+ms.locfileid: "122982138"
 ---
 # <a name="span-idwwan_profile_v4element_mmsconfigurationspanmmsconfiguration"></a><span id="WWAN_profile_v4.element_MmsConfiguration"></span>MmsConfiguration
 
@@ -32,7 +32,7 @@ Además de establecer los elementos de configuración dentro de este elemento, u
 [&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
 **&lt;MmsConfiguration&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <MmsConfiguration>
@@ -80,7 +80,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

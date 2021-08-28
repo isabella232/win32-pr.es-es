@@ -5,12 +5,12 @@ ms.assetid: 76f14e01-7a84-4c94-aea6-91189573eb89
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b5fdcff469ad8f6dfef4f775e0c79da814e9f4c6e05a71a95b6ddf70446d4ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f05b2a0e6628256ca5efd86c142bac09f5fcc2b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120006135"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886238"
 ---
 # <a name="creating-a-collector-initiated-subscription"></a>Crear una suscripción iniciada por el recopilador
 
@@ -25,7 +25,7 @@ En el ejemplo de código siguiente se siguen una serie de pasos para crear una s
 3.  Guarde la suscripción mediante una llamada a [**la función EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
 4.  Cierre la suscripción mediante una llamada a [**la función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-Para obtener más información sobre cómo agregar un origen de eventos, vea Agregar un origen [de eventos a una suscripción del recopilador de eventos.](adding-an-event-source-to-an-event-collector-subscription.md)
+Para obtener más información sobre cómo agregar un origen de eventos, vea [Adding an Event Source to an Event Collector Subscription](adding-an-event-source-to-an-event-collector-subscription.md).
 
 En el siguiente ejemplo de código de C++ se muestra cómo crear una suscripción iniciada por el recopilador:
 
@@ -517,12 +517,12 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
     1.  Ejecute el siguiente comando desde un símbolo del sistema con privilegios elevados para obtener el estado de tiempo de ejecución de la suscripción:
 
-        **wecutil gr***<subscriptionID>*
+        **wecutil gr** *&lt; subscriptionID &gt;*
 
     2.  Compruebe que el origen del evento se ha conectado. Es posible que tenga que esperar hasta que el intervalo de actualización especificado en la directiva haya terminado después de crear la suscripción para que se conecte el origen del evento.
     3.  Ejecute el siguiente comando para obtener la información de la suscripción:
 
-        **wecutil gs***<subscriptionID>*
+        **wecutil gs** *&lt; subscriptionID &gt;*
 
     4.  Obtenga el valor DeliveryMaxItems de la información de la suscripción.
 

@@ -3,7 +3,7 @@ title: Elemento FlowMenuLayout
 description: Representa un diseño horizontal con saltos de línea para los elementos de una galería.
 ms.assetid: 40c3a2e1-e58a-4d34-a237-b1bea116c82e
 keywords:
-- Elemento FlowMenuLayout de la cinta de opciones de Windows
+- FlowMenuLayout, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 31a040fb51ad46feb30147fea97c19210cc16094
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 4d3c5ea50ae50edc3d6be16ad771229ea82801f4
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442886"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625741"
 ---
 # <a name="flowmenulayout-element"></a>Elemento FlowMenuLayout
 
@@ -39,16 +39,16 @@ Representa un diseño horizontal con saltos de línea para los elementos de una 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -64,7 +64,7 @@ Representa un diseño horizontal con saltos de línea para los elementos de una 
 <td><strong>Pinza</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
-<td>Un identificador de tamaño asociado a la lista desplegable de la galería. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restringido a uno de los siguientes valores:<br/> <br/>
+<td>Identificador de tamaño asociado a la lista desplegable de la galería. <br/> <img src="images/controls/gripper.png" alt="Screen shot of a vertical gripper." /><br/> Restringido a uno de los siguientes valores:<br/> <br/>
 <dt><span></span><span></span><strong></strong> (Ninguno)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Vertical)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Esquina)<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
@@ -99,7 +99,7 @@ No hay elementos secundarios.
 
 Necesario.
 
-El [**elemento VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o **FlowMenuLayout** deben producirse una vez para cada [**elemento DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
+El elemento [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o **FlowMenuLayout** deben producirse una vez para cada [**elemento DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md), [**InRibbonGallery.MenuLayout**](windowsribbon-element-inribbongallery-menulayout.md)o [**SplitButtonGallery.MenuLayout.**](windowsribbon-element-splitbuttongallery-menulayout.md)
 
 Los elementos se organizan según las propiedades de salto de línea inherentes a los *atributos de* fila *y* columna. Cuando el contenido supera la longitud de una sola línea, el menú interrumpe las líneas, ajusta las líneas y alinea el contenido correctamente.
 

@@ -4,12 +4,12 @@ ms.assetid: 84f9b74d-8397-4cd5-91a0-7f910ba7b19e
 title: Sintaxis de técnica de efecto (Direct3D 10)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3c0ff0c0f1b5e9c1fac4cdb12aac21e42d89771c0eae89d1cd9538d0281acee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 106abd47e1148ce30127733f113a1b43a0058f60
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117914500"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625131"
 ---
 # <a name="effect-technique-syntax-direct3d-10"></a>Sintaxis de técnica de efecto (Direct3D 10)
 
@@ -50,7 +50,7 @@ Opcional. Cadena ASCII que identifica de forma única el nombre de la técnica d
 <span id="Annotations"></span><span id="annotations"></span><span id="ANNOTATIONS"></span>*Anotaciones*
 </dt> <dd>
 
-\[en \] Opcional. Uno o varios fragmentos de información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para obtener información sobre la [sintaxis, vea Sintaxis de anotación (Direct3D 10).](d3d10-effect-annotation-syntax.md)
+\[en \] Opcional. Uno o varios fragmentos de información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para obtener sintaxis, vea [Sintaxis de anotación (Direct3D 10).](d3d10-effect-annotation-syntax.md)
 
 </dd> <dt>
 
@@ -77,13 +77,13 @@ Palabra clave Required.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>StateGroup</th>
-<th>Syntax</th>
+<th>Sintaxis</th>
 </tr>
 </thead>
 <tbody>
@@ -92,7 +92,7 @@ Palabra clave Required.
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -101,7 +101,7 @@ Palabra clave Required.
 </tbody>
 </table>
 
-<p>Consulte [<strong>OMSetBlendState</strong>](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-omsetblendstate) para obtener la lista de argumentos.</p></td>
+<p>Vea [<strong>OMSetBlendState</strong>](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-omsetblendstate) para obtener la lista de argumentos.</p></td>
 </tr>
 <tr class="even">
 <td>Estado de la galería de símbolos de profundidad</td>
@@ -109,7 +109,7 @@ Palabra clave Required.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -127,7 +127,7 @@ Palabra clave Required.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -145,7 +145,7 @@ Palabra clave Required.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -160,7 +160,7 @@ Palabra clave Required.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -175,7 +175,7 @@ Palabra clave Required.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -243,7 +243,7 @@ technique10
 
 
 
-En este ejemplo se establece el estado del sombreador [(del ejemplo BasicHLSL10](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)); que usa un sombreador de vértices y píxeles.
+En este ejemplo se establece el estado del [sombreador (del ejemplo BasicHLSL10](https://msdn.microsoft.com/library/Ee416395(v=VS.85).aspx)); que usa un sombreador de vértices y píxeles.
 
 
 ```
