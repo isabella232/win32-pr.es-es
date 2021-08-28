@@ -4,12 +4,12 @@ ms.assetid: 14d14662-910a-4f3f-914e-6ccfc602c822
 title: Compresión de mapa de bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dcefec93bb5583ba066e35d5143410d1c249bb09
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.openlocfilehash: 462b41bffe207aecc82deece7e2090cfe6389635
+ms.sourcegitcommit: 8eb9ae480cf2cb3524d83a1e7adcdaa875d625e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812851"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096451"
 ---
 # <a name="bitmap-compression"></a>Compresión de mapa de bits
 
@@ -21,11 +21,11 @@ Cuando el **miembro Compression** de la estructura del encabezado de informació
 
 
 
-| Valor | Significado                                                                                                                                                     |
-|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0     | Final de línea.                                                                                                                                                |
-| 1     | Final del mapa de bits.                                                                                                                                              |
-| 2     | Delta. Los 2 bytes siguientes al escape contienen valores sin signo que indican los desplazamientos horizontal y vertical del píxel siguiente desde la posición actual. |
+| Valor | Significado                                                                                                                                                |
+|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0     | Final de línea.                                                                                                                                           |
+| 1     | Final del mapa de bits.                                                                                                                                         |
+| 2     | Delta. Los 2 bytes siguientes al escape contienen valores sin signo que indican el desplazamiento hacia la derecha y hacia arriba del píxel siguiente desde la posición actual. |
 
 
 
@@ -51,7 +51,7 @@ El mapa de bits se expande de la siguiente manera (los valores de dos dígitos r
 06 06 06 06 06 
 45 56 67 
 78 78 
-move current position 5 right and 1 down 
+move current position 5 right and 1 up 
 78 78 
 end of line 
 1E 1E 1E 1E 1E 1E 1E 1E 1E 
@@ -83,7 +83,7 @@ El mapa de bits se expande de la siguiente manera (los valores de un solo dígit
 0 6 0 6 0 
 4 5 5 6 6 7 
 7 8 7 8 
-move current position 5 right and 1 down 
+move current position 5 right and 1 up 
 7 8 7 8 
 end of line 
 1 E 1 E 1 E 1 E 1 

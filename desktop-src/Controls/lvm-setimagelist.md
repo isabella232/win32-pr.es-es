@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_SETIMAGELIST (commctrl. h)
-description: Asigna una lista de imágenes a un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la \_ macro SetImageList de ListView.
+title: LVM_SETIMAGELIST mensaje (Commctrl.h)
+description: Asigna una lista de imágenes a un control list-view. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView SetImageList.
 ms.assetid: 5241065b-85e4-412e-9868-fd5b15ff7c17
 keywords:
-- LVM_SETIMAGELIST controles de mensajes de Windows
+- LVM_SETIMAGELIST controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 779d31fd781a72dbdfbc4738e091482ca4a08528
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4151f7d6e3736e6fe28faa28bc258fb4f85bfb57622b1ec77c02ed83ea187941
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919965"
 ---
-# <a name="lvm_setimagelist-message"></a>\_Mensaje SETIMAGELIST LVM
+# <a name="lvm_setimagelist-message"></a>Mensaje \_ SETIMAGELIST de LVM
 
-Asigna una lista de imágenes a un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ SetImageList de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist) .
+Asigna una lista de imágenes a un control list-view. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView SetImageList.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setimagelist)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -38,10 +38,10 @@ Tipo de lista de imágenes. Este parámetro puede ser uno de los siguientes valo
 
 | Value                                                                                                                                                                     | Significado                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| <span id="LVSIL_NORMAL"></span><span id="lvsil_normal"></span><dl> <dt>**LVSIL \_ normal**</dt> </dl>                | Lista de imágenes con iconos grandes.<br/>  |
-| <span id="LVSIL_SMALL"></span><span id="lvsil_small"></span><dl> <dt>**LVSIL \_ pequeño**</dt> </dl>                   | Lista de imágenes con iconos pequeños.<br/>  |
-| <span id="LVSIL_STATE"></span><span id="lvsil_state"></span><dl> <dt>**Estado de LVSIL \_**</dt> </dl>                   | Lista de imágenes con imágenes de estado.<br/> |
-| <span id="LVSIL_GROUPHEADER"></span><span id="lvsil_groupheader"></span><dl> <dt>**LVSIL \_ encabezadodelgrupo**</dt> </dl> | Lista de imágenes para el encabezado de grupo.<br/>  |
+| <span id="LVSIL_NORMAL"></span><span id="lvsil_normal"></span><dl> <dt>**LVSIL \_ NORMAL**</dt> </dl>                | Lista de imágenes con iconos grandes.<br/>  |
+| <span id="LVSIL_SMALL"></span><span id="lvsil_small"></span><dl> <dt>**LVSIL \_ SMALL**</dt> </dl>                   | Lista de imágenes con iconos pequeños.<br/>  |
+| <span id="LVSIL_STATE"></span><span id="lvsil_state"></span><dl> <dt>**LVSIL \_ STATE**</dt> </dl>                   | Lista de imágenes con imágenes de estado.<br/> |
+| <span id="LVSIL_GROUPHEADER"></span><span id="lvsil_groupheader"></span><dl> <dt>**LVSIL \_ GROUPHEADER**</dt> </dl> | Lista de imágenes para el encabezado de grupo.<br/>  |
 
 
 
@@ -52,17 +52,17 @@ Tipo de lista de imágenes. Este parámetro puede ser uno de los siguientes valo
 *lParam* 
 </dt> <dd>
 
-Identificador de la lista de imágenes que se va a asignar.
+Identificador de la lista de imágenes que se asignará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de la lista de imágenes asociada previamente al control si se realiza correctamente, o **null** en caso contrario.
+Devuelve el identificador a la lista de imágenes previamente asociada al control si se realiza correctamente o **NULL** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La lista de imágenes actual se destruirá cuando se destruya el control de vista de lista, a menos que se establezca el estilo [**LVS \_ SHAREIMAGELISTS**](list-view-window-styles.md) . Si usa este mensaje para reemplazar una lista de imágenes por otra, la aplicación debe destruir explícitamente todas las listas de imágenes distintas de la actual.
+La lista de imágenes actual se destruirá cuando se destruya el control list-view a menos que se establezca el estilo [**\_ LVS SHAREIMAGELISTS.**](list-view-window-styles.md) Si usa este mensaje para reemplazar una lista de imágenes por otra, la aplicación debe destruir explícitamente todas las listas de imágenes distintas de la actual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ La lista de imágenes actual se destruirá cuando se destruya el control de vist
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

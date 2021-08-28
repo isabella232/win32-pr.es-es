@@ -1,10 +1,10 @@
 ---
-title: atributo msNPSavedCallingStationID
+title: Atributo msNPSavedCallingStationID
 description: El atributo msNPSavedCallingStationID se usa internamente.
 ms.assetid: aa967146-d736-421d-9d03-0be5ebde88e5
 ms.tgt_platform: multiple
 keywords:
-- msNPSavedCallingStationID esquema de AD de atributos
+- Esquema de AD del atributo msNPSavedCallingStationID
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41dc2a00d14903ef5d86f07111a412628ed597a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c63d9a9ed48d969889cc0d93edc9c5ecb23d29305edd8a4a810f1668929c01ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761895"
 ---
-# <a name="msnpsavedcallingstationid-attribute"></a>atributo msNPSavedCallingStationID
+# <a name="msnpsavedcallingstationid-attribute"></a>Atributo msNPSavedCallingStationID
 
-El atributo **msNPSavedCallingStationID** se usa internamente. No modifique este valor directamente.
+El **atributo msNPSavedCallingStationID** se usa internamente. No modifique este valor directamente.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | msNPSavedCallingStationID            |
-| Nombre para mostrar de LDAP | msNPSavedCallingStationID            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | msNPSavedCallingStationID            |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1130              |
-| System-ID-GUID    | db0c908e-c1f2-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | db0c908e-c1f2-11d1-él5-0080c76670c0 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -54,18 +54,18 @@ El atributo **msNPSavedCallingStationID** se usa internamente. No modifique este
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ El atributo **msNPSavedCallingStationID** se usa internamente. No modifique este
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ El atributo **msNPSavedCallingStationID** se usa internamente. No modifique este
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ El atributo **msNPSavedCallingStationID** se usa internamente. No modifique este
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ El atributo **msNPSavedCallingStationID** se usa internamente. No modifique este
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -159,18 +159,18 @@ El atributo **msNPSavedCallingStationID** se usa internamente. No modifique este
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 

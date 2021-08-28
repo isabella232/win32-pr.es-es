@@ -1,5 +1,5 @@
 ---
-title: Métodos IDCompositionLinearTransferEffect SetBlueYIntercept (Dcomp. h)
+title: Métodos IDCompositionLinearTransferEffect SetBlueYIntercept (Dcomp.h)
 description: Establece la intersección Y de la función lineal para el canal azul.
 ms.assetid: 34bff151-4844-73fa-8e7e-9a542373b820
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: baa85682fe37e12df649a503737cf7e9f8423e18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a9e089141f26f16fffcf027922565cc6b5b1d97411a88daf4e23b00fbb0ea7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980025"
 ---
-# <a name="idcompositionlineartransfereffectsetblueyintercept-methods"></a>IDCompositionLinearTransferEffect:: SetBlueYIntercept (métodos)
+# <a name="idcompositionlineartransfereffectsetblueyintercept-methods"></a>Métodos IDCompositionLinearTransferEffect::SetBlueYIntercept
 
 Establece la intersección Y de la función lineal para el canal azul.
 
@@ -40,7 +40,7 @@ Establece la intersección Y de la función lineal para el canal azul.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

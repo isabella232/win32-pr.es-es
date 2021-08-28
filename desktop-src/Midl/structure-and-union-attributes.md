@@ -1,40 +1,40 @@
 ---
-title: Atributos de estructura y de Unión
-description: Use los \_ atributos switch \ para especificar la característica de una Unión en una llamada a procedimiento remoto. Utilice el atributo Ignore para designar determinados miembros de estructura o Unión como locales para la aplicación cliente.
+title: Atributos de estructura y unión
+description: Use el modificador \_ \ atributos para especificar la característica de una unión en una llamada a procedimiento remoto. Use el atributo ignore para designar determinados miembros de estructura o unión como locales para la aplicación cliente.
 ms.assetid: e06e5184-fa92-4446-964b-d56d0e5f2872
 keywords:
-- MIDL, atributos, estructura y Unión IDL
+- IDL MIDL, atributos, estructura y unión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b2a7764d56c8557bd71923021a9f324a118ac81
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cc179632bb7e0d64b777f3c8a08b9de2af7bbf818978d6bb0a7ee2ea8b515542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066675"
 ---
-# <a name="structure-and-union-attributes"></a>Atributos de estructura y de Unión
+# <a name="structure-and-union-attributes"></a>Atributos de estructura y unión
 
-Utilice los **atributos \_ Switch** \* para especificar la característica de una Unión en una llamada a procedimiento remoto. Utilice el atributo [**Ignore**](ignore.md) para designar determinados miembros de estructura o Unión como locales para la aplicación cliente.
+Use los **atributos \_ switch** para especificar la característica de una unión en una llamada a procedimiento \* remoto. Use el [**atributo ignore**](ignore.md) para designar determinados miembros de estructura o unión como locales para la aplicación cliente.
 
 
 
 | Atributo                           | Uso                                                                                                                         |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [**switch**](switch.md)            | Selecciona el discriminante de una Unión encapsulada.                                                                           |
-| [**el modificador \_ es**](switch-is.md)     | Identifica discriminante para una Unión no encapsulada.                                                                      |
-| [**tipo de conmutador \_**](switch-type.md) | Identifica el tipo de discriminante para una Unión no encapsulada.                                                          |
-| [**omitir**](ignore.md)            | Designa que un puntero contenido en una estructura o Unión y el objeto indicado por el puntero no se va a transmitir. |
+| [**Interruptor**](switch.md)            | Selecciona el discriminador de una unión encapsulada.                                                                           |
+| [**switch \_ es**](switch-is.md)     | Identifica el discriminador de una unión nocapsulada.                                                                      |
+| [**tipo \_ de conmutador**](switch-type.md) | Identifica el tipo del discriminador para una unión nocapsulada.                                                          |
+| [**Ignorar**](ignore.md)            | Designa que un puntero contenido en una estructura o unión y el objeto indicado por el puntero no se va a transmitir. |
 
 
 
- 
+ 
 
-También puede usar los [atributos de puntero de matriz y tamaño](array-and-sized-pointer-attributes.md) para especificar características de miembros de estructura o Unión.
+También puede usar la matriz y [los atributos de puntero de tamaño](array-and-sized-pointer-attributes.md) para especificar las características de los miembros de estructura o unión.
 
- 
+ 
 
- 
+ 
 
 
 

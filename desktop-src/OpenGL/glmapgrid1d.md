@@ -1,9 +1,9 @@
 ---
-title: función glMapGrid1d (GL. h)
-description: Define una malla unidimensional. | función glMapGrid1d (GL. h)
+title: Función glMapGrid1d (Gl.h)
+description: Define una malla unidimensional. | Función glMapGrid1d (Gl.h)
 ms.assetid: a0bc822e-dd98-4586-a322-2779e11f38ca
 keywords:
-- glMapGrid1d (función) OpenGL
+- Función glMapGrid1d OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30b1900f5597e8c516100504ca7288137ed99ded
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 71fcf2ac8871ab1008a5f0e31c6264383cc790edaebd3decc29dbc2ca39845fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128265"
 ---
-# <a name="glmapgrid1d-function"></a>glMapGrid1d función)
+# <a name="glmapgrid1d-function"></a>Función glMapGrid1d
 
 Define una malla unidimensional.
 
@@ -45,21 +45,21 @@ void WINAPI glMapGrid1d(
 *un* 
 </dt> <dd>
 
-El número de particiones en el intervalo de intervalo de la cuadrícula \[ U1, U2 \] . Este valor debe ser positivo.
+Número de particiones en el intervalo de intervalo de cuadrícula \[ u1, u2 \] . Este valor debe ser positivo.
 
 </dd> <dt>
 
-*U1* 
+*u1* 
 </dt> <dd>
 
-Valor que se usa como asignación para el valor de dominio de la cuadrícula de enteros i = 0.
+Valor que se usa como asignación para el valor de dominio de cuadrícula de enteros i = 0.
 
 </dd> <dt>
 
-*U2* 
+*u2* 
 </dt> <dd>
 
-Un valor que se usa como asignación para el valor de dominio de la cuadrícula de enteros i = un.
+Valor que se usa como asignación para el valor de dominio de cuadrícula de enteros i = un.
 
 </dd> </dl>
 
@@ -75,37 +75,37 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | *Un* o *vn* no era positivo.<br/>                                                                                      |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | Un *o* *vn no* fueron positivos.<br/>                                                                                      |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use las funciones **glMapGrid** y [glEvalMesh](glevalmesh-functions.md) conjuntamente para generar y evaluar de forma eficaz una serie de valores de dominio de mapa con espaciado uniforme. La función glEvalMesh se recorre a través del dominio entero de una cuadrícula de una o dos dimensiones, cuyo intervalo es el dominio de las asignaciones de evaluación especificadas por [**glMap1**](glmap1.md) y [**glMap2**](glmap2.md).
+Use las **funciones glMapGrid** y [glEvalMesh](glevalmesh-functions.md) juntos para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La función glEvalMesh pasa por el dominio entero de una cuadrícula unidimensional o bidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md)
 
-Las funciones **glMapGrid1** y [**glMapGrid2**](glmapgrid2d.md) especifican las asignaciones de cuadrícula lineal entre las coordenadas de la cuadrícula de los enteros i (o i y j), a las coordenadas de mapa de evaluación de punto flotante u (o y v). Vea [**glMap1**](glmap1.md) y [**glMap2**](glmap2.md) para obtener información detallada sobre cómo se evalúan las coordenadas de y v.
+Las **funciones glMapGrid1** y [**glMapGrid2**](glmapgrid2d.md) especifican las asignaciones de cuadrícula lineal entre las coordenadas de cuadrícula de enteros i (o i y j), a las coordenadas del mapa de evaluación de punto flotante u (o usted y v). Consulte [**glMap1**](glmap1.md) y [**glMap2**](glmap2.md) para obtener más información sobre cómo se evalúan las coordenadas v y usted.
 
-La función **glMapGrid1** especifica una asignación lineal única, de modo que la *coordenada de* la cuadrícula entera 0 se asigna exactamente a U1, y la coordenada de la cuadrícula de enteros es una asignada exactamente a *U2*. Todas las *demás coordenadas de* la cuadrícula de enteros se asignan de manera que:
+La **función glMapGrid1** especifica una asignación lineal única, de modo que la  coordenada de cuadrícula de enteros 0 se asigna exactamente a u1 y la coordenada de cuadrícula de enteros se asigna exactamente a *u2.* Todas las demás coordenadas de cuadrícula *de enteros i* se asignan de forma que:
 
-*u = i (U2 U1)/un + U1*
+*u = i(u2 u1)/un + u1*
 
-La función [**glMapGrid2**](glmapgrid2d.md) especifica dos asignaciones lineales de este tipo. Una cuadrícula de enteros de asignación coordina *i = 0* exactamente a *U1* y las coordenadas de la cuadrícula de enteros *i =* out exactamente a *U2*. La otra coordenada de la cuadrícula de enteros de Maps *j = 0* exactamente a *v1* y la coordenada de la cuadrícula de enteros *j = vn* exactamente a *V2*. Las coordenadas i y j de otras cuadrículas de enteros se asignan de forma que
+La [**función glMapGrid2**](glmapgrid2d.md) especifica dos asignaciones lineales de este tipo. Una asigna la coordenada de cuadrícula *de enteros i = 0* exactamente *a u1* y la coordenada de cuadrícula de *enteros i = un* exactamente a *u2*. El otro asigna la coordenada de cuadrícula de *enteros j = 0* exactamente *a v1* y la coordenada de cuadrícula de *enteros j = vn* exactamente a *v2*. Otras coordenadas de cuadrícula de enteros i y j se asignan de forma que
 
-*u = i (U2 U1)/un + U1*
+*u = i(u2 u1)/un + u1*
 
-*v = j (V2 V1)/VN + v1*
+*v = j (v2 v1)/vn + v1*
 
-Las asignaciones especificadas por **glMapGrid** se usan de forma idéntica en [glEvalMesh](glevalmesh-functions.md) y [**glEvalPoint**](glevalpoint.md).
+[GlEvalMesh](glevalmesh-functions.md) y [**glEvalPoint**](glevalpoint.md)usan de forma idéntica las asignaciones especificadas por **glMapGrid.**
 
-Las siguientes funciones recuperan información relacionada con **glMapGrid**:
+Las funciones siguientes recuperan información relacionada **con glMapGrid**:
 
 <dl>
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAP1 \_ Grid \_ Domain  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAP2 ( \_ Grid \_ Domain  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ MAP1 \_ segmentos de cuadrícula de GL \_  
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ MAP2 ( \_ segmentos de cuadrícula de GL \_  
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ DOMAIN  
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP2 \_ GRID \_ DOMAIN  
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ SEGMENTS  
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP2 \_ GRID \_ SEGMENTS  
 </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -116,8 +116,8 @@ Las siguientes funciones recuperan información relacionada con **glMapGrid**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

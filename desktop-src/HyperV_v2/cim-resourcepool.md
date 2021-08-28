@@ -1,7 +1,7 @@
 ---
-description: Representa un grupo de recursos de servidor, que es una entidad lógica proporcionada por el sistema host para asignar y asignar recursos.
+description: Representa un grupo de recursos, que es una entidad lógica proporcionada por el sistema host para asignar y asignar recursos.
 ms.assetid: c8e0b701-1814-4409-a073-017f8fea841a
-title: CIM_ResourcePool (clase)
+title: CIM_ResourcePool clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 11a073f817da27dbbd45be26a008486a776470cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d87a78d5a8ea43cc8a1a59bbabf5b8091948d153420dbdf91ba7e14fc1616b7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980965"
 ---
-# <a name="cim_resourcepool-class"></a>\_Clase ResourcePool de CIM
+# <a name="cim_resourcepool-class"></a>Clase \_ ResourcePool de CIM
 
-Representa un grupo de recursos de servidor, que es una entidad lógica proporcionada por el sistema host para asignar y asignar recursos.
+Representa un grupo de recursos, que es una entidad lógica proporcionada por el sistema host para asignar y asignar recursos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,13 +59,13 @@ class CIM_ResourcePool : CIM_LogicalElement
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ResourcePool** tiene estos tipos de miembros:
+La **clase \_ ResourcePool de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ResourcePool** tiene estas propiedades.
+La **clase \_ ResourcePool de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -81,20 +81,20 @@ Tipo de acceso: solo lectura
 Calificadores: **IsPUnit**
 </dt> </dl>
 
-Las unidades de asignación utilizadas por las propiedades de **límite** y **reserva** . Por ejemplo, si **resourcetype** está establecido en "procesador", **AllocationUnits** se puede establecer en "hercios \* 10 ^ 6" o "porcentaje". El valor de esta propiedad debe ser un valor válido del calificador de unidades de programación del Apéndice C. 1 de *DSP0004 v 2.4* o posterior.
+Unidades de asignación utilizadas por las **propiedades Reservation** **y Limit.** Por ejemplo, cuando **ResourceType** se establece en "Processor", **AllocationUnits** puede establecerse en "hertz \* 10^6" o "percent". El valor de esta propiedad debe ser un valor legal del calificador Unidades de programación del Apéndice C.1 de *DSP0004 V2.4* o posterior.
 
 </dd> <dt>
 
 **Capacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La cantidad máxima de reservas que el grupo de recursos de servicio puede admitir. La propiedad **AllocationUnits** especifica el tipo de unidad.
+La cantidad máxima de reservas que el grupo de recursos puede admitir. La **propiedad AllocationUnits** especifica el tipo de unidad.
 
 </dd> <dt>
 
@@ -107,17 +107,17 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**MaxConsumableResource**","**\_ ResourcePool CIM**.**CurrentlyConsumedResource**"), **IsPUnit**
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**MaxConsumableResource**", "**CIM \_ ResourcePool**.**CurrentlyConsumedResource**"), **IsPUnit**
 </dt> </dl>
 
-Unidades para las propiedades **MaxConsumable** y **Consumed** .
+Unidades de las **propiedades MaxConsumable** y **Consumed.**
 
 </dd> <dt>
 
 **CurrentlyConsumedResource**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -126,7 +126,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**ConsumedResourceUnits**")
 </dt> </dl>
 
-La cantidad de recursos que el grupo de recursos de recurso presenta actualmente a los consumidores de recursos. Esta propiedad es diferente de la propiedad **reservada** porque describe la vista de consumidores del recurso mientras que la propiedad **reservada** describe la vista de productores del recurso.
+Cantidad de recursos que el grupo de recursos presenta actualmente a los consumidores de recursos. Esta propiedad es diferente de **la propiedad Reserved** porque describe la vista de consumidores del recurso, mientras que la propiedad **Reserved** describe la vista de productores del recurso.
 
 </dd> <dt>
 
@@ -139,20 +139,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
 Identifica de forma única una instancia de esta clase dentro del ámbito del espacio de nombres contenedor.
 
 > [!IMPORTANT]
 >
-> Con el fin de garantizar la unicidad dentro del espacio de nombres, el valor de la propiedad **InstanceID** debe construirse en el patrón siguiente: *OrgID*:*LocalID*
+> Para garantizar la unidad dentro del espacio de nombres, el valor de la propiedad **InstanceID** debe construirse con el siguiente patrón: *OrgID*:*LocalID*
 >
-> -   *OrgID* debe incluir un nombre con copyright, marca registrada o de otro tipo que sea propiedad de la entidad empresarial que define la propiedad **InstanceID** , o bien un identificador registrado asignado por una entidad global reconocida.
-> -   *OrgID* no debe contener un signo de dos puntos. Los primeros dos puntos de **InstanceID** deben estar entre el *OrgID* y *LocalID*.
-> -   La entidad de negocio elige *LocalID* y no se debe volver a usar para identificar distintos elementos del mundo real subyacentes.
-> -   Si no se usa el patrón anterior, la entidad de definición debe asegurarse de que el valor **InstanceID** resultante no se vuelva a usar en las propiedades **InstanceID** producidas por este proveedor u otros proveedores para este espacio de nombres.
-> -   En el caso de las instancias definidas por DMTF, el patrón debe usarse con el valor de *OrgID* establecido en "CIM".
+> -   *OrgID* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que define la propiedad **InstanceID,** o ser un identificador registrado asignado por una autoridad global reconocida.
+> -   *OrgID* no debe contener dos puntos. El primer signo de dos puntos **de InstanceID** debe estar entre *orgID* y *LocalID.*
+> -   La entidad empresarial elige *LocalID* y no se debe volver a usar para identificar los distintos elementos subyacentes del mundo real.
+> -   Si no se usa el patrón anterior, la entidad de definición debe asegurarse de que el valor **instanceID** resultante no se vuelva a usar en ninguna propiedad **InstanceID** producida por este proveedor u otros proveedores para este espacio de nombres.
+> -   Para las instancias definidas por DMTF, el patrón debe usarse con el *OrgID* establecido en "CIM".
 
  
 
@@ -161,7 +161,7 @@ Identifica de forma única una instancia de esta clase dentro del ámbito del es
 **MaxConsumableResource**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -170,7 +170,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**ConsumedResourceUnits**")
 </dt> </dl>
 
-La cantidad máxima de recursos consumibles que el grupo de recursos de recurso puede presentar a los consumidores de recursos. Esta propiedad es diferente de la propiedad **Capacity** porque describe la vista de consumidores del recurso, mientras que la propiedad **Capacity** describe la vista de productores del recurso.
+La cantidad máxima de recursos que el grupo de recursos puede presentar a los consumidores de recursos. Esta propiedad es diferente de la **propiedad Capacity** porque describe la vista de consumidores del recurso, mientras que la propiedad **Capacity** describe la vista de productores del recurso.
 
 </dd> <dt>
 
@@ -186,7 +186,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**ResourceType**")
 </dt> </dl>
 
-El tipo de recurso cuando la propiedad **resourcetype** está establecida en "0" (otro).
+Tipo de recurso cuando la **propiedad ResourceType** se establece en "0" (otro).
 
 </dd> <dt>
 
@@ -202,7 +202,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md).**PoolId**")
 </dt> </dl>
 
-Identificador opaco para el grupo. Esta propiedad se utiliza para proporcionar correlación al guardar y restaurar los datos de configuración en el almacenamiento persistente subyacente.
+Identificador opaco para el grupo. Esta propiedad se usa para proporcionar correlación al guardar y restaurar los datos de configuración en el almacenamiento persistente subyacente.
 
 </dd> <dt>
 
@@ -215,20 +215,20 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**true** si el grupo de recursos es primordial. **false** si el grupo de recursos es un grupo de recursos concreto. Un grupo de recursos primordial es un grupo de recursos que los consumidores del recurso no crean o eliminan. Los servicios de asignación de recursos pueden actualizar un grupo de recursos concreto.
+**True** si el grupo de recursos es primordial. **false** si el grupo de recursos es un grupo de recursos concreto. Un grupo de recursos primordial es un grupo de recursos que los consumidores del recurso no crean ni eliminan. Los servicios de asignación de recursos pueden actualizar un grupo de recursos concreto.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número actual de reservas distribuidas en todas las asignaciones activas de este grupo. En una configuración jerárquica, representa la suma de todas las reservas descendientes actuales. La propiedad **AllocationUnits** especifica el tipo de unidad.
+Número actual de reservas repartidas entre todas las asignaciones activas de este grupo. En una configuración jerárquica, representa la suma de todas las reservas descendientes actuales. La **propiedad AllocationUnits** especifica el tipo de unidad.
 
 </dd> <dt>
 
@@ -244,29 +244,29 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**ResourceType**")
 </dt> </dl>
 
-Subtipo específico de la implementación para el grupo de recursos de sitio. Por ejemplo, se puede usar para distinguir los diferentes modelos del mismo tipo de recurso.
+Subtipo específico de implementación para el grupo de recursos. Por ejemplo, esto se puede usar para distinguir distintos modelos del mismo tipo de recurso.
 
 </dd> <dt>
 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**OtherResourceType**","**\_ ResourcePool CIM**.**Subtipo**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ResourcePool**.**OtherResourceType**", "**CIM \_ ResourcePool**.**ResourceSubType**")
 </dt> </dl>
 
-El tipo de recurso asignado por el grupo de recursos.
+Tipo de recurso asignado por el grupo de recursos.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -294,7 +294,7 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="IDE_Controller"></span><span id="ide_controller"></span><span id="IDE_CONTROLLER"></span>
 
-**Controladora IDE** (5)
+**Controlador IDE** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -308,7 +308,7 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="FC_HBA"></span><span id="fc_hba"></span>
 
-**HBA de FC** (7)
+**FC HBA** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -343,21 +343,21 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>
 
-**Ranura de e/s** (12)
+**Ranura de E/S** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>
 
-**Dispositivo de e/s** (13)
+**Dispositivo de E/S** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Floppy_Drive"></span><span id="floppy_drive"></span><span id="FLOPPY_DRIVE"></span>
 
-**Unidad de disquete** (14)
+**Disquete** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -385,14 +385,14 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="Tape_Drive"></span><span id="tape_drive"></span><span id="TAPE_DRIVE"></span>
 
-**Unidad de cinta** (18)
+**Unidad de** cinta (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extensión de almacenamiento** (19)
+**Storage extensión** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -420,21 +420,21 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="USB_Controller"></span><span id="usb_controller"></span><span id="USB_CONTROLLER"></span>
 
-**Controladora USB** (23)
+**Controlador USB** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>
 
-**Controladora de gráficos** (24)
+**Controlador de gráficos** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_1394_Controller"></span><span id="ieee_1394_controller"></span><span id="IEEE_1394_CONTROLLER"></span>
 
-**Controlador IEEE 1394** (25)
+**IEEE 1394 controlador** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -448,7 +448,7 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="Base_Partitionable_Unit"></span><span id="base_partitionable_unit"></span><span id="BASE_PARTITIONABLE_UNIT"></span>
 
-**Unidad base con particiones** (27)
+**Unidad base particionable** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -462,7 +462,7 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="Cooling_Capacity"></span><span id="cooling_capacity"></span><span id="COOLING_CAPACITY"></span>
 
-**Capacidad de enfriamiento** (29)
+**Capacidad de refrigeración** (29)
 
 
 </dt> <dd></dd> <dt>
@@ -483,7 +483,7 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>
 
-**Volumen de almacenamiento** (32)
+**Storage volumen** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -504,7 +504,7 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (0x8000... 0XFFFF
+**Reservado por** el proveedor (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -519,8 +519,8 @@ El tipo de recurso asignado por el grupo de recursos.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -529,7 +529,7 @@ El tipo de recurso asignado por el grupo de recursos.
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> </dl>
 
  

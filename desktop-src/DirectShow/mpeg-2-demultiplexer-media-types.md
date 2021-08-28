@@ -4,12 +4,12 @@ ms.assetid: 240d1753-df8c-45fe-b5a7-9faa96fc5b18
 title: Tipos de medios de demultiplexador MPEG-2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bef3c7006f13b07394da7d9dc92e9295beda816c
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 99dfba52378813b8b96920a44c593e9c7d4b45a0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982608"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476281"
 ---
 # <a name="mpeg-2-demultiplexer-media-types"></a>Tipos de medios de demultiplexador MPEG-2
 
@@ -23,7 +23,7 @@ El tipo principal es siempre **MEDIATYPE \_ Stream.** El subtipo puede ser cualq
 
 | GUID                                             | Descripción                                                                                                                                                                                               |
 |--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **TRANSPORTE DE \_ \_ BDA \_ MPEG2 DEL SUBTIPO KSDATAFORMAT \_** | Flujo de transporte desde un filtro de dispositivo de arquitectura de controlador de difusión (BDA). El demultiplexador MPEG-2 trata este subtipo de forma idéntica a **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT.**                                |
+| **TRANSPORTE DE \_ \_ BDA \_ MPEG2 DEL SUBTIPO KSDATAFORMAT \_** | Flujo de transporte desde un filtro de dispositivo de arquitectura de controlador de difusión (BDA). El demultiplexador MPEG-2 trata este subtipo de forma idéntica a **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**.                                |
 | **PROGRAMA \_ MPEG2 DE MEDIASUBTYPE \_**                 | Secuencia de programa                                                                                                                                                                                            |
 | **TRANSPORTE DE MEDIASUBTYPE \_ MPEG2 \_**               | Secuencia de transporte (TS), con paquetes de 188 bytes                                                                                                                                                              |
 | **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_ STRIDE**       | Flujo de transporte con paquetes "strided". Este subtipo indica que los paquetes TS se pueden agregar con bytes adicionales. Para obtener más información, [**vea MPEG2 \_ TRANSPORT \_ STRIDE**](mpeg2-transport-stride.md). |
@@ -43,11 +43,7 @@ El demultiplexador MPEG-2 no valida los tipos de salida; El filtro de nivel infe
 
 
 
-| Etiqueta | Value |
-|--------|-------|
-| Tipo principal | <strong>MEDIATYPE_MPEG2_SECTIONS</strong> | 
-| Subtype | Cualquiera de los siguientes:<br /><ul><li><strong>MEDIASUBTYPE_ATSC_SI:</strong>información del servicio ATSC.</li><li><strong>MEDIASUBTYPE_DVB_SI:</strong>información del servicio DE TRAS.</li><li><strong>MEDIASUBTYPE_ISDB_SI:</strong>Información del servicio de difusión digital de servicios integrados (ISDB).</li><li><strong>MEDIASUBTYPE_MPEG2DATA:</strong>datos de la sección MPEG-2.</li></ul> | 
-| Tipo de formato | Ninguno | 
+| | | Tipo principal | <strong>MEDIATYPE_MPEG2_SECTIONS</strong> | | Subtipo | Cualquiera de las siguientes opciones:<br /><ul><li><strong>MEDIASUBTYPE_ATSC_SI:</strong>información del servicio ATSC.</li><li><strong>MEDIASUBTYPE_DVB_SI:</strong>información del servicio DE TRAS.</li><li><strong>MEDIASUBTYPE_ISDB_SI:</strong>Información del servicio de difusión digital de servicios integrados (ISDB).</li><li><strong>MEDIASUBTYPE_MPEG2DATA:</strong>datos de la sección MPEG-2.</li></ul> | | Formato de tipo | Ninguno | 
 
 
 
@@ -58,7 +54,7 @@ El demultiplexador MPEG-2 no valida los tipos de salida; El filtro de nivel infe
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |------------------|------------------------------------------|
 | Tipo principal       | **Vídeo \_ DE MEDIATYPE**                     |
 | Subtype          | **VÍDEO DE MEDIASUBTYPE \_ MPEG2 \_**           |
@@ -73,7 +69,7 @@ El demultiplexador MPEG-2 no valida los tipos de salida; El filtro de nivel infe
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |------------------|--------------------------------------|
 | Tipo principal       | **MEDIATYPE \_ Audio**                 |
 | Subtype          | **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**       |

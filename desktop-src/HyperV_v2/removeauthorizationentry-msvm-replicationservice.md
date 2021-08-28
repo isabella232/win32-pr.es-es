@@ -1,7 +1,7 @@
 ---
 description: Quita una entrada de autorización de un servidor de recuperación.
 ms.assetid: 1647b35d-1c2f-4fb5-84c0-10b357326abf
-title: Método RemoveAuthorizationEntry de la clase Msvm_ReplicationService
+title: Método RemoveAuthorizationEntry de la Msvm_ReplicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d0bb0d24c9cf4936c6e0187e5091b9fac14ee28c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12276ded5e9021fb775ee6f6be4eb2e5a92c4375a5bce9e3debca7972df2ee86
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980075"
 ---
-# <a name="removeauthorizationentry-method-of-the-msvm_replicationservice-class"></a>Método RemoveAuthorizationEntry de la \_ clase ReplicationService de MSVM
+# <a name="removeauthorizationentry-method-of-the-msvm_replicationservice-class"></a>Método RemoveAuthorizationEntry de la clase ReplicationService de Msvm \_
 
 Quita una entrada de autorización de un servidor de recuperación.
 
@@ -40,17 +40,17 @@ uint32 RemoveAuthorizationEntry(
 
 <dl> <dt>
 
-*AllowedPrimaryHostSystem* \[ de\]
+*AllowedPrimaryHostSystem* \[ En\]
 </dt> <dd>
 
-El servidor principal para el que se va a quitar la entrada de autorización del servidor. Es igual que la propiedad **AllowedPrimaryHostSystem** de la clase [**\_ ReplicationAuthorizationSettingData de MSVM**](msvm-replicationauthorizationsettingdata.md) .
+Servidor principal para el que se quitará la entrada de autorización del servidor. Esto es igual que la **propiedad AllowedPrimaryHostSystem** de la clase [**\_ ReplicationAuthorizationSettingData de Msvm.**](msvm-replicationauthorizationsettingdata.md)
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -75,16 +75,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,18 +93,18 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se quita una entrada de autorización, se detendrá la replicación de todas las máquinas virtuales que estén autorizadas con la entrada.
+Al quitar una entrada de autorización, se detendrá la replicación de las máquinas virtuales que estén autorizadas con la entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,10 +112,10 @@ Si se quita una entrada de autorización, se detendrá la replicación de todas 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -133,7 +133,7 @@ Si se quita una entrada de autorización, se detendrá la replicación de todas 
 [**SetAuthorizationEntry**](setauthorizationentry-msvm-replicationservice.md)
 </dt> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  

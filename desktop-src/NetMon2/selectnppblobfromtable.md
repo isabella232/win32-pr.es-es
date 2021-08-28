@@ -1,7 +1,7 @@
 ---
-description: La función SelectNPPBlobFromTable selecciona una NIC de una tabla BLOB de NPP proporcionada.
+description: La función SelectNPPBlobFromTable selecciona una NIC de una tabla blob de NPP proporcionada.
 ms.assetid: 7f8010ed-472a-49b2-8d97-92851b6c14cd
-title: Función SelectNPPBlobFromTable (Netmon. h)
+title: Función SelectNPPBlobFromTable (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: d8f504d76d43b8a398947f435f7bd488678ea394
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14d9ca14d027efc1540f5a5d2ae78e948da68dd59247252989b617d07229bb42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074415"
 ---
-# <a name="selectnppblobfromtable-function"></a>SelectNPPBlobFromTable función)
+# <a name="selectnppblobfromtable-function"></a>Función SelectNPPBlobFromTable
 
-La función **SelectNPPBlobFromTable** selecciona una NIC de una tabla BLOB de NPP proporcionada.
+La **función SelectNPPBlobFromTable** selecciona una NIC de una tabla DE BLOB de NPP proporcionada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,51 +41,51 @@ DWORD SelectNPPBlobFromTable(
 
 <dl> <dt>
 
-*hWnd* \[ de\]
+*hwnd* \[ En\]
 </dt> <dd>
 
-Identificador de la ventana que muestra el cuadro de diálogo **seleccionar una red** .
+Identificador de la ventana que muestra el **cuadro de diálogo Seleccionar** una red.
 
 </dd> <dt>
 
-*pBlobTable* \[ de\]
+*pBlobTable* \[ En\]
 </dt> <dd>
 
-Puntero a la tabla de BLOBs proporcionada. Monitor de red usa esta tabla para rellenar el cuadro de diálogo **seleccionar una red** .
+Puntero a la tabla BLOB proporcionada. Monitor de red esta tabla para rellenar el **cuadro de diálogo Seleccionar** una red.
 
 </dd> <dt>
 
-*hBlob* \[ enuncia\]
+*hBlob* \[ out\]
 </dt> <dd>
 
-Identificador del BLOB que representa la NIC seleccionada.
+Controle el BLOB que representa la NIC seleccionada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente y el usuario selecciona una NIC, el valor devuelto es NMERR \_ Success; el BLOB al que apunta *hBlob* se rellena.
+Si la función se realiza correctamente y el usuario selecciona una NIC, el valor devuelto es NMERR SUCCESS; el BLOB al que \_ *apunta hBlob* se rellena.
 
-Si el usuario no selecciona una NIC, el valor devuelto es NMERR \_ no \_ se \_ selecciona NPP.
+Si el usuario no selecciona una NIC, el valor devuelto es NMERR \_ NO \_ NPP \_ SELECTED.
 
-Si la función no es correcta, el valor devuelto es otro valor de NMERR.
+Si la función no se realiza correctamente, el valor devuelto es otro valor NMERR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se llama, Monitor de red muestra el cuadro de diálogo **seleccionar una red** , que puede usar para seleccionar una NIC. El BLOB NPP que representa la NIC seleccionada vuelve a la aplicación que realiza la llamada.
+Cuando se le llama, Monitor de red **el** cuadro de diálogo Seleccionar una red, que puede usar para seleccionar una NIC. El BLOB de NPP que representa la NIC seleccionada vuelve a la aplicación que realiza la llamada.
 
-Para obtener información sobre las distintas formas en que puede seleccionar NIC, consulte [seleccionar una tarjeta de interfaz de red](selecting-a-network-interface-card.md) .
+Para obtener información sobre las distintas maneras en que puede seleccionar NIC, consulte [Selección de una tarjeta de interfaz de red.](selecting-a-network-interface-card.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
@@ -100,7 +100,7 @@ Para obtener información sobre las distintas formas en que puede seleccionar NI
 [GetNPPBlobTable](getnppblobtable.md)
 </dt> <dt>
 
-[Entradas de BLOB especiales](special-blob-entries.md)
+[Entradas blob especiales](special-blob-entries.md)
 </dt> </dl>
 
  

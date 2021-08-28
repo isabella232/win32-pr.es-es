@@ -1,9 +1,9 @@
 ---
-title: modificador/proxy
-description: El modificador/proxy especifica el nombre del archivo de proxy de interfaz para una interfaz COM.
+title: /proxy switch
+description: El modificador /proxy especifica el nombre del archivo proxy de interfaz para una interfaz COM.
 ms.assetid: 3428f723-81e1-441a-93d5-24034251830c
 keywords:
-- /proxy modificador MIDL
+- /proxy switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,63 +12,63 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27bff2103e22952e456976c6e0a88e7d232e42c3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6dc3483706369837d96d14cf30b2f0c6ee307e376f8c422e11d56e06451a22e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811215"
 ---
-# <a name="proxy-switch"></a>modificador/proxy
+# <a name="proxy-switch"></a>/proxy switch
 
-El modificador **/proxy** especifica el nombre del archivo de proxy de interfaz para una interfaz com.
+El **modificador /proxy** especifica el nombre del archivo proxy de interfaz para una interfaz COM.
 
 ``` syntax
 midl /proxy proxy_file_name
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
-*\_nombre de archivo proxy \_* 
+*nombre \_ de archivo \_ proxy* 
 </dt> <dd>
 
-Especifica un nombre de archivo que invalida el nombre de archivo del proxy de interfaz predeterminado. Los nombres de archivo se pueden entrecomillar explícitamente con comillas dobles (") para evitar que el shell interprete los caracteres especiales.
+Especifica un nombre de archivo que invalida el nombre de archivo proxy de interfaz predeterminado. Los nombres de archivo se pueden entrecomillar explícitamente mediante comillas dobles (") para evitar que el shell interprete los caracteres especiales.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nombre de archivo especificado reemplaza el nombre de archivo predeterminado obtenido agregando \_ P. C al nombre del archivo IDL. El modificador/ [**proxy**](proxy.md) no afecta a las interfaces RPC.
+El nombre de archivo especificado reemplaza el nombre de archivo predeterminado obtenido \_ agregando P.C al nombre del archivo IDL. El modificador [**/proxy**](proxy.md) no afecta a las interfaces RPC.
 
-Si *el \_ \_ nombre de archivo del proxy* no incluye una ruta de acceso explícita, el archivo se escribe en el directorio actual o en el directorio especificado por el modificador [**/out**](-out.md) . Una ruta de acceso explícita en el *\_ \_ nombre de archivo del proxy* invalida la especificación del modificador **/out** .
+Si *el nombre del archivo \_ \_ proxy* no incluye una ruta de acceso explícita, el archivo se escribe en el directorio actual o en el directorio especificado por el [**modificador /out.**](-out.md) Una ruta de acceso explícita en *el nombre del archivo \_ \_ proxy* invalida la especificación del modificador **/out.**
 
-Para obtener una descripción más detallada del archivo de proxy de interfaz y otros archivos generados por el compilador MIDL, vea [Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md).
+Para obtener una descripción más detallada del archivo proxy de interfaz y otros archivos generados por el compilador de MIDL, vea Sintaxis general de la línea de comandos [de MIDL.](general-midl-command-line-syntax.md)
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/proxy My \_ proxy. c nombrearchivo. idl**
+**midl /proxy my \_ proxy.c filename.idl**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/header**](-header.md)
 </dt> <dt>
 
-[**/IID**](-iid.md)
+[**/iid**](-iid.md)
 </dt> <dt>
 
 [**/out**](-out.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

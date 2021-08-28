@@ -1,9 +1,9 @@
 ---
-title: Propiedad DropDownGallery. MenuLayout
-description: Representa un contenedor para los diseños del menú desplegable DropDownGallery.
+title: DropDownGallery.MenuLayout, propiedad
+description: Representa un contenedor para los diseños de menú desplegable DropDownGallery.
 ms.assetid: 7251e889-377d-4d7f-b049-bd81a202774d
 keywords:
-- DropDownGallery. MenuLayout (propiedad) cinta de Windows
+- DropDownGallery.MenuLayout, propiedad Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1b6ad3f07f369dfef90b1e6c52c34793e60520
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b3fa4c0e2cca92aa2f95f73e0c817314bb71a8260db21a89cb40ec78fff7765
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810685"
 ---
-# <a name="dropdowngallerymenulayout-property"></a>Propiedad DropDownGallery. MenuLayout
+# <a name="dropdowngallerymenulayout-property"></a>DropDownGallery.MenuLayout, propiedad
 
-Representa un contenedor para los diseños del menú desplegable [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Representa un contenedor para los diseños de menú desplegable [**DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 ## <a name="usage"></a>Uso
 
@@ -41,8 +41,8 @@ No hay atributos.
 
 | Elemento                                                                           | Descripción                                    |
 |-----------------------------------------------------------------------------------|------------------------------------------------|
-| [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)<br/>         | Debe aparecer exactamente una vez<br/> <br/> |
-| [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md)<br/> | Debe aparecer exactamente una vez<br/> <br/> |
+| [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)<br/>         | Debe producirse exactamente una vez<br/> <br/> |
+| [**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md)<br/> | Debe producirse exactamente una vez<br/> <br/> |
 
 
 
@@ -56,14 +56,14 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede aparecer como máximo una vez por cada elemento [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) .
+Puede producirse como máximo una vez para cada [**elemento DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 > [!Note]  
-> Se permite un máximo de un elemento secundario ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> Se permite un máximo de un elemento secundario [**(VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
@@ -71,7 +71,7 @@ Puede aparecer como máximo una vez por cada elemento [**DropDownGallery**](wind
 
 En el ejemplo siguiente se muestra el marcado básico para [**DropDownGallery**](windowsribbon-element-dropdowngallery.md).
 
-En esta sección de código se muestra la declaración de control **DropDownGallery. MenuLayout** .
+En esta sección de código se muestra la declaración de control **DropDownGallery.MenuLayout.**
 
 
 ```XML
@@ -106,10 +106,10 @@ En esta sección de código se muestra la declaración de control **DropDownGall
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -117,7 +117,7 @@ En esta sección de código se muestra la declaración de control **DropDownGall
 
 <dl> <dt>
 
-[**Control Galería desplegable**](windowsribbon-element-dropdowngallery.md)
+[**Control galería desplegable**](windowsribbon-element-dropdowngallery.md)
 </dt> <dt>
 
 [Trabajar con galerías](ribbon-controls-galleries.md)

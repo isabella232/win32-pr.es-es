@@ -1,24 +1,24 @@
 ---
 title: Actualización de un punto de conexión de servicio
-description: En el ejemplo de código siguiente se muestra cómo actualizar un punto de conexión de servicio. Normalmente, un servicio ejecuta este código cuando se inicia.
+description: En el ejemplo de código siguiente se muestra cómo actualizar un punto de conexión de servicio. Este código lo ejecuta normalmente un servicio cuando se inicia.
 ms.assetid: 315fb2b5-d071-4420-95fb-ab680296b3cf
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77558f9ac10b2c2a908266f1b4e021862af0c629
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: e1b1df142c92ada4afbbe20ce23f4f6c8f9495e401f47406a5d104cda1f926b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103904467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118182816"
 ---
 # <a name="updating-a-service-connection-point"></a>Actualización de un punto de conexión de servicio
 
-En el ejemplo de código siguiente se muestra cómo actualizar un punto de conexión de servicio. Normalmente, un servicio ejecuta este código cuando se inicia.
+En el ejemplo de código siguiente se muestra cómo actualizar un punto de conexión de servicio. Este código lo ejecuta normalmente un servicio cuando se inicia.
 
-En este ejemplo se recupera la cadena de enlace del GUID del SCP que el instalador del servicio almacenó en caché en el registro. Usa esta cadena para enlazar con un puntero [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) en el objeto SCP y, a continuación, llama al método [**IDirectoryObject:: GetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-getobjectattributes) para obtener los atributos **serviceDNSName** y **serviceBindingInformation** del SCP. Tenga en cuenta que es posible que el servicio requiera comprobar y actualizar atributos adicionales.
+En este ejemplo se recupera la cadena de enlace GUID del SCP que el instalador del servicio almacenaba en caché en el Registro. Usa esta cadena para enlazar a un puntero [**IDirectoryObject**](/windows/desktop/api/iads/nn-iads-idirectoryobject) en el objeto SCP y, a continuación, llama al método [**IDirectoryObject::GetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-getobjectattributes) para obtener los atributos **serviceDNSName** y **serviceBindingInformation** del SCP. Tenga en cuenta que el servicio puede requerir comprobar y actualizar atributos adicionales.
 
-El código compara el valor de **serviceDNSName** con el nombre DNS devuelto por la función [**GetComputerNameEx**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getcomputernameexa) . También compara el número de puerto actual del servicio con el número de Puerto almacenado en el atributo **serviceBindingInformation** . Si alguno de estos valores ha cambiado, el código llama al método [**IDirectoryObject:: SetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-setobjectattributes) para actualizar los atributos de SCP.
+El código compara el valor **serviceDNSName** con el nombre DNS devuelto por la [**función GetComputerNameEx.**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getcomputernameexa) También compara el número de puerto actual del servicio con el número de puerto almacenado en el **atributo serviceBindingInformation.** Si alguno de estos valores ha cambiado, el código llama al método [**IDirectoryObject::SetObjectAttributes**](/windows/desktop/api/iads/nf-iads-idirectoryobject-setobjectattributes) para actualizar los atributos de SCP.
 
 
 ```C++
@@ -165,6 +165,6 @@ return dwStat;
 
 
 
- 
+ 
 
- 
+ 

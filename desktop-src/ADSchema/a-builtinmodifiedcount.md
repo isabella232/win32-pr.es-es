@@ -1,11 +1,11 @@
 ---
 title: Atributo Builtin-Modified-Count
-description: El atributo Builtin-Modified-Count se usa para admitir la replicación en los dominios de Windows NT 4,0.
+description: El atributo Builtin-Modified-Count se usa para admitir la replicación Windows dominios NT 4.0.
 ms.assetid: e5a0f299-1e69-4b47-a0b1-e5bcf7bd47eb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Builtin-Modified-Count
-- builtinModifiedCount esquema de AD de atributos
+- Esquema de AD del atributo Builtin-Modified-Count
+- Esquema de AD del atributo builtinModifiedCount
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7731cd27ef5cb5d25dcd4bced4dbc5932225ba5d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e0416f1fe6f75c5b6b8245fa57fe9b277ae2eb2405cbbef7b029bd64d41ad4a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177899"
 ---
 # <a name="builtin-modified-count-attribute"></a>Atributo Builtin-Modified-Count
 
-El atributo **Builtin-Modified-Count** se usa para admitir la replicación en los dominios de Windows NT 4,0.
+El **atributo Builtin-Modified-Count** se usa para admitir la replicación Windows dominios NT 4.0.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Builtin-Modified-Count               |
-| Nombre para mostrar de LDAP | builtinModifiedCount                 |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| Ldap-Display-Name | builtinModifiedCount                 |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.14                |
-| System-ID-GUID    | bf967930-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967930-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ El atributo **Builtin-Modified-Count** se usa para admitir la replicación en lo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El atributo **Builtin-Modified-Count** se usa para admitir la replicación en lo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El atributo **Builtin-Modified-Count** se usa para admitir la replicación en lo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El atributo **Builtin-Modified-Count** se usa para admitir la replicación en lo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El atributo **Builtin-Modified-Count** se usa para admitir la replicación en lo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El atributo **Builtin-Modified-Count** se usa para admitir la replicación en lo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

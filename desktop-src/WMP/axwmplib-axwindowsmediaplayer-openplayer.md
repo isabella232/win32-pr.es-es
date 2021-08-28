@@ -1,11 +1,11 @@
 ---
-title: AxWindowsMediaPlayer. openPlayer, método
-description: El método openPlayer abre Windows Media Player mediante la dirección URL especificada. | AxWindowsMediaPlayer. openPlayer, método
+title: Método AxWindowsMediaPlayer.openPlayer
+description: El método openPlayer se Reproductor de Windows Media con la dirección URL especificada. | Método AxWindowsMediaPlayer.openPlayer
 ms.assetid: 9a9d8200-f427-42ff-b49f-d973cf86014f
 keywords:
-- método openPlayer de Windows Media Player
-- método openPlayer de Windows Media Player, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, método openPlayer
+- Método openPlayer Reproductor de Windows Media
+- Método openPlayer Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media método , openPlayer
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58416a1f20969b0bd223f653f44b5633f19cb096
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c9a2ae5660969e78aeb165c5f9fd9420ea04c79a6aeec9a57c4627cd61d32ef8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764715"
 ---
-# <a name="axwindowsmediaplayeropenplayer-method"></a>AxWindowsMediaPlayer. openPlayer, método
+# <a name="axwindowsmediaplayeropenplayer-method"></a>Método AxWindowsMediaPlayer.openPlayer
 
-El método **openPlayer** abre Windows Media Player mediante la dirección URL especificada.
+El **método openPlayer** se Reproductor de Windows Media mediante la dirección URL especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Public Sub openPlayer( _
 *bstrURL* 
 </dt> <dd>
 
-**System. String** que es la dirección URL del elemento multimedia que se va a reproducir.
+**System.String que** es la dirección URL del elemento multimedia que se va a reproducir.
 
 </dd> </dl>
 
@@ -63,17 +63,17 @@ Public Sub openPlayer( _
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método inicia Windows Media Player con la dirección URL especificada como elemento multimedia actual. Si el reproductor se cerró previamente en modo de máscara, se abrirá con la última máscara elegida por el usuario. De lo contrario, el reproductor se abre en modo completo.
+Este método inicia Reproductor de Windows Media con la dirección URL especificada establecida como elemento multimedia actual. Si el reproductor se cerró previamente en modo de máscara, se abrirá con la última máscara elegida por el usuario. De lo contrario, el reproductor se abre en modo completo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

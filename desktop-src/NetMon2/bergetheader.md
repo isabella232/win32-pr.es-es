@@ -1,7 +1,7 @@
 ---
-description: La función BERGetHeader descodifica un encabezado Choice.
+description: La función BERGetHeader descodifica un encabezado de elección.
 ms.assetid: 2574a9b3-c28e-43d1-904f-d45888617584
-title: Función BERGetHeader (Netmon. h)
+title: Función BERGetHeader (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 5e2213b15b6b4d2cbaa15b3b9aa9de028e20a62d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6dfd50856202e78177d2ad259b16638f466d9bca236a691c65802ce2758c948
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012323"
 ---
-# <a name="bergetheader-function"></a>BERGetHeader función)
+# <a name="bergetheader-function"></a>Función BERGetHeader
 
-La función **BERGetHeader** descodifica un encabezado Choice.
+La **función BERGetHeader** descodifica un encabezado de elección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ BOOL BERGetHeader(
 *pCurrentPointer* 
 </dt> <dd>
 
-Puntero al encabezado Choice.
+Puntero al encabezado de elección.
 
 </dd> <dt>
 
@@ -80,9 +80,9 @@ Puntero al contenido del encabezado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función es correcta (es decir, se encuentra un encabezado de opción BER válido), el valor devuelto es **true**.
+Si la función se realiza correctamente (es decir, se encuentra un encabezado de opción BER válido), el valor devuelto es **TRUE.**
 
-Si la función no se realiza correctamente, el valor devuelto es **false**.
+Si la función no se realiza correctamente, el valor devuelto es **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Si la función no se realiza correctamente, el valor devuelto es **false**.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Analizador. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Parser.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl>  |
 
 

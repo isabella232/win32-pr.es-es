@@ -1,15 +1,15 @@
 ---
-description: El método SelectLeftButton selecciona el botón direccional izquierdo en el menú mostrado.
+description: El método SelectLeftButton selecciona el botón direccional izquierdo en el menú que se muestra.
 ms.assetid: cd1813a0-9eb2-4f7e-8fa4-94f3bfa92ee4
-title: Método SelectLeftButton (Segment. h)
+title: Método SelectLeftButton (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69f51f08e04c1c7466e24314c82d9cf94c3524b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e4d4fa3f7f6ec2d766c5b1bf6283d2bf9abe95b8982ade1c47893ea17f17b74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078915"
 ---
 # <a name="selectleftbutton-method"></a>Método SelectLeftButton
 
@@ -18,7 +18,7 @@ ms.locfileid: "105679208"
 
  
 
-El `SelectLeftButton` método selecciona el botón direccional izquierdo en el menú mostrado.
+El `SelectLeftButton` método selecciona el botón direccional izquierdo en el menú que se muestra.
 
 ``` syntax
 MSWebDVD.SelectLeftButton()
@@ -34,7 +34,7 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ No de devuelve ningún valor.
 [**SelectLowerButton**](selectlowerbutton-method.md)
 </dt> <dt>
 
-[**SelectRightButton**](selectrightbutton-method.md)
+[**SeleccioneRightButton.**](selectrightbutton-method.md)
 </dt> <dt>
 
 [**SelectUpperButton**](selectupperbutton-method.md)

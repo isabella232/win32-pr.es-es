@@ -1,21 +1,21 @@
 ---
-description: Una aplicación puede llamar a las funciones MsiEnumProducts o MsiEnumProductsEx para enumerar los productos que se instalan o se anuncian en el sistema.
+description: Una aplicación puede llamar a las funciones MsiEnumProducts o MsiEnumProductsEx para enumerar los productos instalados o anunciados en el sistema.
 ms.assetid: 162bda20-0c62-4eac-8c1f-fd107e42c528
 title: Determinar el contexto de instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24367e2367f845dfef2e4947a32d9dec84d644cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89c3ea847a410c5d253061e93153da4462e3cdd8ae8da12b4b6b701812d37d89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764265"
 ---
 # <a name="determining-installation-context"></a>Determinar el contexto de instalación
 
-Una aplicación puede llamar a las funciones [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa) o [**MsiEnumProductsEx**](/windows/desktop/api/Msi/nf-msi-msienumproductsexa) para enumerar los productos que se instalan o se anuncian en el sistema. Esta función puede enumerar todos los productos instalados en el [contexto de instalación](installation-context.md)por máquina. Puede enumerar los productos instalados en el contexto por usuario para el usuario actual. La aplicación puede recuperar información sobre el contexto de estos productos llamando a las funciones [**MsiGetProductInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoexa) o [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa) .
+Una aplicación puede llamar a las funciones [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa) o [**MsiEnumProductsEx**](/windows/desktop/api/Msi/nf-msi-msienumproductsexa) para enumerar los productos instalados o anunciados en el sistema. Esta función puede enumerar todos los productos instalados en el contexto de instalación [por equipo.](installation-context.md) Puede enumerar los productos instalados en el contexto por usuario para el usuario actual. La aplicación puede recuperar información sobre el contexto de estos productos llamando a las funciones [**MsiGetProductInfoEx**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoexa) [**o MsiGetProductInfo.**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)
 
-El Windows Installer puede instalar productos para ejecutarse con privilegios elevados (sistema) para usuarios que no son administradores. Esto requiere el permiso de un usuario administrador. Un producto que se instala con privilegios elevados se denomina "administrado". Todos los productos instalados por equipo se administran. Los productos instalados por usuario solo se administran si un agente del sistema local realiza un anuncio durante la suplantación de un usuario. Este es el método que usa la implementación de software a través de [Directiva de grupo](/previous-versions/windows/desktop/Policy/group-policy-start-page). Las aplicaciones por usuario instaladas mientras se establecen las directivas [AlwaysInstallElevated](alwaysinstallelevated.md) no se consideran administradas. Al llamar a [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda), una aplicación puede comprobar si un producto determinado está administrado.
+El Windows puede instalar productos para que se ejecuten con privilegios elevados (sistema) para usuarios que no son administradores. Esto requiere el permiso de un usuario administrador. Un producto que se instala con privilegios elevados se denomina "administrado". Todos los productos instalados por máquina se administran. Los productos instalados por usuario solo se administran si un agente del sistema local realiza un anuncio al suplantar a un usuario. Este es el método que usa la implementación de software a través [directiva de grupo](/previous-versions/windows/desktop/Policy/group-policy-start-page). Las aplicaciones por usuario instaladas mientras se establecen [las directivas AlwaysInstallElevated](alwaysinstallelevated.md) no se consideran administradas. Mediante una [**llamada a MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda), una aplicación puede comprobar si se administra un producto determinado.
 
 En el ejemplo siguiente se muestra cómo una aplicación determina el contexto mediante [**MsiEnumProducts**](/windows/desktop/api/Msi/nf-msi-msienumproductsa), [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)y [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda).
 
@@ -167,10 +167,10 @@ UINT DetermineContextForAllProducts()
 [**MsiIsProductElevated**](/windows/desktop/api/Msi/nf-msi-msiisproductelevateda)
 </dt> <dt>
 
-[Instalación de un paquete con privilegios elevados para un no administrador](installing-a-package-with-elevated-privileges-for-a-non-admin.md)
+[Instalación de un paquete con privilegios elevados para un usuario que no es administrador](installing-a-package-with-elevated-privileges-for-a-non-admin.md)
 </dt> <dt>
 
-[Anunciar una aplicación Per-User que se va a instalar con privilegios elevados](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md)
+[Anuncio de Per-User aplicación que se va a instalar con privilegios elevados](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md)
 </dt> <dt>
 
 [Contexto de instalación](installation-context.md)

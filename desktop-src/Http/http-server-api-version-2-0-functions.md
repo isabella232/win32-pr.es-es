@@ -1,20 +1,20 @@
 ---
-title: Funciones de la API de servidor HTTP versión 2.0
+title: Funciones de LA API del servidor HTTP versión 2.0
 description: La API del servidor HTTP versión 2.0 proporciona las siguientes funciones.
 ms.assetid: 12daffca-b403-4f06-8037-206f90e33252
 keywords:
-- Funciones de la API de servidor HTTP versión 2.0
+- Funciones de LA API del servidor HTTP versión 2.0
 - Functions HTTP, HTTP Server API versión 2.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92e4d5c09c001caa58d43c1e61d800f66b39706b
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 1b832a3f8fb1a97c48c49809d3e2f1975965becdc4c7bbf3942601d577d4702d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981365"
 ---
-# <a name="http-server-api-version-20-functions"></a>Funciones de la API de servidor HTTP versión 2.0
+# <a name="http-server-api-version-20-functions"></a>Funciones de LA API del servidor HTTP versión 2.0
 
 La API del servidor HTTP versión 2.0 proporciona las siguientes funciones.
 
@@ -57,4 +57,4 @@ La API del servidor HTTP versión 2.0 proporciona las siguientes funciones.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Estructuras de LA API del servidor HTTP versión 2.0](http-server-api-version-2-0-structures.md)
+[Estructuras de LA API de servidor HTTP versión 2.0](http-server-api-version-2-0-structures.md)

@@ -1,11 +1,11 @@
 ---
-title: Atributo MSI-script-size
-description: Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para esta aplicación.
+title: Atributo Msi-Script-Size
+description: Tamaño del archivo para el archivo de script de anuncio del instalador de Microsoft para esta aplicación.
 ms.assetid: 7e75c9e8-62b2-4de5-9eee-fd2735c7e740
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos MSI-script-size
-- msiScriptSize esquema de AD de atributos
+- Esquema de AD del atributo Msi-Script-Size
+- Esquema de AD del atributo msiScriptSize
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 236427f06de164eea18f291b6f4430fee31a5197
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cf7e6fd693ffc91c547992571172786ff53a3028e73f66c7e0613847be2699dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763075"
 ---
-# <a name="msi-script-size-attribute"></a>Atributo MSI-script-size
+# <a name="msi-script-size-attribute"></a>Atributo Msi-Script-Size
 
-Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para esta aplicación.
+Tamaño del archivo para el archivo de script de anuncio del instalador de Microsoft para esta aplicación.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MSI: tamaño del script                      |
-| Nombre para mostrar de LDAP | msiScriptSize                        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Msi-Script-Size                      |
+| Ldap-Display-Name | msiScriptSize                        |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.846               |
-| System-ID-GUID    | 96a7dd63-9118-11d1-aebc-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 96a7dd63-9118-11d1-aebc-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Tamaño de archivo del archivo de script de anuncios de Microsoft Installer para
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | True                                                             |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Verdadero                                                             |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 

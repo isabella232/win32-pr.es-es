@@ -1,6 +1,6 @@
 ---
-title: Variables de estado de transformación
-description: Variables de estado de transformación
+title: Variables de estado de la transformación
+description: Variables de estado de la transformación
 ms.assetid: 3a6be5ac-ac7a-4c3e-8b65-0404849ae67c
 keywords:
 - Variables de estado de transformación OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c7b53e0abae08447df86d8968a33a361be08a1e
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3c79b4363419d97a64184dd2408a9f6221ada52adc49adbb28eb3d049a4b2a36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011923"
 ---
-# <a name="transformation-state-variables"></a>Variables de estado de transformación
+# <a name="transformation-state-variables"></a>Variables de estado de la transformación
 
 <dl> <dt><span id="GL_MODELVIEW_MATRIX"></span><span id="gl_modelview_matrix"></span>GL \_ MODELVIEW \_ MATRIX</dt> <dd> 
 
@@ -60,7 +60,7 @@ ms.locfileid: "107908833"
 
  
 
-</dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>VENTANILLA \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_VIEWPORT"></span><span id="gl_viewport"></span>VENTANILLA \_ DE GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|

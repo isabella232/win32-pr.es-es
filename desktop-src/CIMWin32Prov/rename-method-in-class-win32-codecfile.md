@@ -2,7 +2,7 @@
 description: Cambia el nombre del archivo de códec especificado en la ruta de acceso del objeto.
 ms.assetid: fd6ce02c-d513-4643-ac27-313c32732f1e
 ms.tgt_platform: multiple
-title: Cambiar el nombre del método de la clase Win32_CodecFile
+title: Método Rename de la Win32_CodecFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a4eb931a0155518ad9644ebb1cce0b604be80602
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c1054ffe0c016c5e06159a13cbdf68d5cfa7521e96727867a74d25a635888165
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077465"
 ---
-# <a name="rename-method-of-the-win32_codecfile-class"></a>Cambiar el nombre del método de la \_ clase Win32 CodecFile
+# <a name="rename-method-of-the-win32_codecfile-class"></a>Método Rename de la clase \_ CodecFile win32
 
-El método **Rename** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) cambia el nombre del archivo de códec especificado en la ruta de acceso del objeto. No se admite el cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
+El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Rename** cambia el nombre del archivo de códec especificado en la ruta de acceso del objeto. No se admite un cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, vea [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ uint32 Rename(
 *FileName* 
 </dt> <dd>
 
-Nuevo nombre completo del archivo (o directorio). Ejemplo: c: \\ temp \\newfile.txt.
+Nombre nuevo completo del archivo (o directorio). Ejemplo: c: \\ temp \\newfile.txt.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero de 0 (cero) si se cambió el nombre del archivo correctamente, y cualquier otro número para indicar un error.
+Devuelve un valor entero de 0 (cero) si el nombre del archivo se ha cambiado correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -150,12 +150,12 @@ Un parámetro especificado no es válido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -167,7 +167,7 @@ Un parámetro especificado no es válido.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ CodecFile**](win32-codecfile.md)
+[**CodecFile de Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

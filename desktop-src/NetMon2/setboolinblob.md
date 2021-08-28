@@ -1,7 +1,7 @@
 ---
 description: La función SetBoolInBlob establece un valor booleano en una ubicación determinada dentro de un BLOB.
 ms.assetid: 354d22be-b8c4-4068-8356-19b30ac188d0
-title: Función SetBoolInBlob (Netmon. h)
+title: Función SetBoolInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5cfbb9a3410d511ab143f1d77584a0144435c230
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95785714919ad99026c8e179c11f992a79efc4d99d0de4caab20fd00f63cbffc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120128825"
 ---
-# <a name="setboolinblob-function"></a>SetBoolInBlob función)
+# <a name="setboolinblob-function"></a>Función SetBoolInBlob
 
-La función **SetBoolInBlob** establece un valor booleano en una ubicación determinada dentro de un BLOB.
+La **función SetBoolInBlob** establece un valor booleano en una ubicación determinada dentro de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ DWORD SetBoolInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del **propietario** del BLOB.
+Puntero al nombre del **propietario de** BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **categoría** de BLOB.
+Puntero al nombre de **la categoría** BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la **etiqueta** de BLOB.
+Puntero al nombre de **la etiqueta** BLOB.
 
 </dd> <dt>
 
-*Booleano* \[ de\]
+*Bool* \[ En\]
 </dt> <dd>
 
 Valor booleano que se establece en la ubicación especificada.
@@ -80,9 +80,9 @@ Valor booleano que se establece en la ubicación especificada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Si la función no es correcta, el valor devuelto es un valor de NMERR que indica
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
