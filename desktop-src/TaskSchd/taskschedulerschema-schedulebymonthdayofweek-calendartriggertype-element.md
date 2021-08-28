@@ -1,9 +1,9 @@
 ---
 title: Elemento ScheduleByMonthDayOfWeek (calendarTriggerType)
-description: Especifica una programación mensual de día de la semana.
+description: Especifica una programación mensual del día de la semana.
 ms.assetid: 7ff17bea-fa26-40c4-90fa-d94a3690e464
 keywords:
-- Programador de tareas del elemento ScheduleByMonthDayOfWeek
+- Elemento ScheduleByMonthDayOfWeek Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3e92d6ad530466a2238c8239c9e262f85ae361d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 185608ea5a8805511de8430c82e6eecabd9cc5b9622fed85d71e26dd39f20cc4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099885"
 ---
 # <a name="schedulebymonthdayofweek-calendartriggertype-element"></a>Elemento ScheduleByMonthDayOfWeek (calendarTriggerType)
 
-Especifica una programación mensual de día de la semana. Por ejemplo, la tarea se inicia en determinados días de la semana, semanas del mes y meses del año.
+Especifica una programación mensual del día de la semana. Por ejemplo, la tarea se inicia en días específicos de la semana, semanas del mes y meses del año.
 
 ``` syntax
 <xs:element name="ScheduleByMonthDayOfWeek"
@@ -30,7 +30,7 @@ Especifica una programación mensual de día de la semana. Por ejemplo, la tarea
  />
 ```
 
-El elemento **ScheduleByMonthDayOfWeek** se define mediante el tipo complejo de [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+El **elemento ScheduleByMonthDayOfWeek** se define mediante el tipo complejo [**monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,7 +38,7 @@ El elemento **ScheduleByMonthDayOfWeek** se define mediante el tipo complejo de 
 
 | Elemento                                                                             | Derivado de                                                                       | Descripción                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica un desencadenador de día de la semana (DOW) diario, semanal, mensual o mensual.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica un desencadenador diario, semanal, mensual o mensual del día de la semana (DOW).<br/> |
 
 
 
@@ -49,24 +49,24 @@ El elemento **ScheduleByMonthDayOfWeek** se define mediante el tipo complejo de 
 | Elemento                                                                                   | Tipo                                                                     | Descripción                                                             |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | [**DaysOfWeek**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica los días de la semana en los que se ejecuta la tarea.<br/>       |
-| [**Partir**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md)         | [**monthsType**](taskschedulerschema-monthstype-complextype.md)         | Especifica los meses del año en los que se ejecuta la tarea.<br/> |
+| [**Meses**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md)         | [**monthsType**](taskschedulerschema-monthstype-complextype.md)         | Especifica los meses del año durante los que se ejecuta la tarea.<br/> |
 | [**Semanas**](taskschedulerschema-weeks-monthlydayofweekscheduletype-element.md)           | unsignedByte                                                             | Especifica el intervalo entre las semanas de la programación.<br/>    |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La hora del día en que se inicia la tarea se establece mediante el elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
+El elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) establece la hora del día en que se inicia la tarea.
 
-Para el desarrollo de scripting, se especifica un desencadenador de día de la semana mensual mediante el objeto [**MonthlyDOWTrigger**](monthlydowtrigger.md) .
+Para el desarrollo de scripting, se especifica un desencadenador mensual del día de la semana mediante el [**objeto MonthlyDOWTrigger.**](monthlydowtrigger.md)
 
-En el desarrollo de C++, se especifica un desencadenador de día de la semana mensual mediante la interfaz [**IMonthlyDOWTrigger**](/windows/desktop/api/taskschd/nn-taskschd-imonthlydowtrigger) .
+Para el desarrollo de C++, se especifica un desencadenador del día de la semana mensual mediante la [**interfaz IMonthlyDOWTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-imonthlydowtrigger)
 
-Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos de [**monthlyDayOfWeekScheduleType**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md) .
+Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**monthlyDayOfWeekScheduleType.**](taskschedulerschema-monthlydayofweekscheduletype-complextype.md)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un desencadenador de calendario mensual de un día de la semana que inicia una tarea (a las 8:00 A.M.) el lunes de la primera semana para cada mes del año.
+El xml siguiente define un desencadenador de calendario del día de la semana mensual que inicia una tarea ( a las 8:00 a. m.) el lunes de la primera semana para cada mes del año.
 
 
 ```XML
@@ -106,8 +106,8 @@ El siguiente código XML define un desencadenador de calendario mensual de un d�
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -115,7 +115,7 @@ El siguiente código XML define un desencadenador de calendario mensual de un d�
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

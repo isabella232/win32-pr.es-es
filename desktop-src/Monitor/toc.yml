@@ -1,22 +1,22 @@
 - name: Configuración de monitor
   href: monitor-configuration.md
   items:
-    - name: Acerca de la configuración de monitor
+    - name: Acerca de la configuración del monitor
       href: about-monitor-configuration.md
-    - name: Uso de la configuración de monitor
+    - name: Uso de la configuración de Monitor
       href: using-monitor-configuration.md
       items:
-        - name: Uso de las funciones de configuración del monitor de High-Level
+        - name: Uso de las funciones de configuración High-Level Monitor
           href: using-the-high-level-monitor-configuration-functions.md
-        - name: Uso de las funciones de configuración del monitor de Low-Level
+        - name: Uso de las funciones de configuración Low-Level Monitor
           href: using-the-low-level-monitor-configuration-functions.md
-    - name: Referencia de configuración de monitor
+    - name: Referencia de configuración de supervisión
       href: monitor-configuration-reference.md
       items:
         - name: Supervisar funciones de configuración
           href: monitor-configuration-functions.md
           items:
-            - name: CapabilitiesRequestAndCapabilitiesReply función)
+            - name: Función CapabilitiesRequestAndCapabilitiesReply
               href: /windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-capabilitiesrequestandcapabilitiesreply
             - name: DDCCIGetCapabilitiesString
               href: ddccigetcapabilitiesstring.md
@@ -30,97 +30,97 @@
               href: ddccisavecurrentsettings.md
             - name: DDCCISetVCPFeature
               href: ddccisetvcpfeature.md
-            - name: DegaussMonitor función)
+            - name: DegaussMonitor (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-degaussmonitor
-            - name: DestroyPhysicalMonitor función)
+            - name: DestroyPhysicalMonitor (Función)
               href: /windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-destroyphysicalmonitor
             - name: DestroyPhysicalMonitorInternal
               href: destroyphysicalmonitorinternal.md
-            - name: DestroyPhysicalMonitors función)
+            - name: DestroyPhysicalMonitors (Función)
               href: /windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-destroyphysicalmonitors
-            - name: GetCapabilitiesStringLength función)
+            - name: GetCapabilitiesStringLength (Función)
               href: /windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getcapabilitiesstringlength
-            - name: GetMonitorBrightness función)
+            - name: GetMonitorBrightness (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitorbrightness
-            - name: GetMonitorCapabilities función)
+            - name: GetMonitorCapabilities (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitorcapabilities
-            - name: GetMonitorColorTemperature función)
+            - name: GetMonitorColorTemperature (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitorcolortemperature
-            - name: GetMonitorContrast función)
+            - name: GetMonitorContrast (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitorcontrast
-            - name: GetMonitorDisplayAreaPosition función)
+            - name: GetMonitorDisplayAreaPosition (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitordisplayareaposition
-            - name: GetMonitorDisplayAreaSize función)
+            - name: GetMonitorDisplayAreaSize (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitordisplayareasize
-            - name: GetMonitorRedGreenOrBlueDrive función)
+            - name: GetMonitorRedGreenOrBlueDrive (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitorredgreenorbluedrive
-            - name: GetMonitorRedGreenOrBlueGain función)
+            - name: GetMonitorRedGreenOrBlueGain (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitorredgreenorbluegain
-            - name: GetMonitorTechnologyType función)
+            - name: GetMonitorTechnologyType (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-getmonitortechnologytype
             - name: GetNumberOfPhysicalMonitors
               href: getnumberofphysicalmonitors.md
-            - name: GetNumberOfPhysicalMonitorsFromHMONITOR función)
+            - name: GetNumberOfPhysicalMonitorsFromHMONITOR (Función)
               href: /windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getnumberofphysicalmonitorsfromhmonitor
-            - name: GetNumberOfPhysicalMonitorsFromIDirect3DDevice9 función)
+            - name: Función GetNumberOfPhysicalMonitorsFromIDirect3DDevice9
               href: /windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getnumberofphysicalmonitorsfromidirect3ddevice9
             - name: GetPhysicalMonitorDescription
               href: getphysicalmonitordescription.md
             - name: GetPhysicalMonitors
               href: getphysicalmonitors.md
-            - name: GetPhysicalMonitorsFromHMONITOR función)
+            - name: GetPhysicalMonitorsFromHMONITOR (Función)
               href: /windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getphysicalmonitorsfromhmonitor
-            - name: GetPhysicalMonitorsFromIDirect3DDevice9 función)
+            - name: Función GetPhysicalMonitorsFromIDirect3DDevice9
               href: /windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getphysicalmonitorsfromidirect3ddevice9
-            - name: GetTimingReport función)
+            - name: GetTimingReport (Función)
               href: /windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-gettimingreport
-            - name: GetVCPFeatureAndVCPFeatureReply función)
+            - name: GetVCPFeatureAndVCPFeatureReply (Función)
               href: /windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-getvcpfeatureandvcpfeaturereply
-            - name: RestoreMonitorFactoryColorDefaults función)
+            - name: RestoreMonitorFactoryColorDefaults (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-restoremonitorfactorycolordefaults
-            - name: RestoreMonitorFactoryDefaults función)
+            - name: RestoreMonitorFactoryDefaults (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-restoremonitorfactorydefaults
-            - name: SaveCurrentMonitorSettings función)
+            - name: Función SaveCurrentMonitorSettings
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-savecurrentmonitorsettings
-            - name: SaveCurrentSettings función)
+            - name: Función SaveCurrentSettings
               href: /windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-savecurrentsettings
-            - name: SetMonitorBrightness función)
+            - name: SetMonitorBrightness (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-setmonitorbrightness
-            - name: SetMonitorColorTemperature función)
+            - name: SetMonitorColorTemperature (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-setmonitorcolortemperature
-            - name: SetMonitorContrast función)
+            - name: SetMonitorContrast (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-setmonitorcontrast
-            - name: SetMonitorDisplayAreaPosition función)
+            - name: SetMonitorDisplayAreaPosition (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-setmonitordisplayareaposition
-            - name: SetMonitorDisplayAreaSize función)
+            - name: SetMonitorDisplayAreaSize (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-setmonitordisplayareasize
-            - name: SetMonitorRedGreenOrBlueDrive función)
+            - name: Función SetMonitorRedGreenOrBlueDrive
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-setmonitorredgreenorbluedrive
-            - name: SetMonitorRedGreenOrBlueGain función)
+            - name: SetMonitorRedGreenOrBlueGain (Función)
               href: /windows/desktop/api/HighLevelMonitorConfigurationAPI/nf-highlevelmonitorconfigurationapi-setmonitorredgreenorbluegain
-            - name: SetVCPFeature función)
+            - name: SetVCPFeature (Función)
               href: /windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-setvcpfeature
-        - name: Supervisión de estructuras de configuración
+        - name: Supervisar estructuras de configuración
           href: monitor-configuration-structures.md
           items:
-            - name: Estructura de MC_TIMING_REPORT
+            - name: MC_TIMING_REPORT estructura
               href: /windows/win32/api/LowLevelMonitorConfigurationAPI/ns-lowlevelmonitorconfigurationapi-mc_timing_report
-            - name: Estructura de PHYSICAL_MONITOR
+            - name: PHYSICAL_MONITOR estructura
               href: /windows/win32/api/PhysicalMonitorEnumerationAPI/ns-physicalmonitorenumerationapi-physical_monitor
         - name: Supervisar tipos de enumeración de configuración
           href: monitor-configuration-enumeration-types.md
           items:
-            - name: Enumeración MC_COLOR_TEMPERATURE
+            - name: MC_COLOR_TEMPERATURE enumeración
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_color_temperature
-            - name: Enumeración MC_DISPLAY_TECHNOLOGY_TYPE
+            - name: MC_DISPLAY_TECHNOLOGY_TYPE enumeración
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_display_technology_type
-            - name: Enumeración MC_DRIVE_TYPE
+            - name: MC_DRIVE_TYPE enumeración
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_drive_type
-            - name: Enumeración MC_GAIN_TYPE
+            - name: MC_GAIN_TYPE enumeración
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_gain_type
-            - name: Enumeración MC_POSITION_TYPE
+            - name: MC_POSITION_TYPE enumeración
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_position_type
-            - name: Enumeración MC_SIZE_TYPE
+            - name: MC_SIZE_TYPE enumeración
               href: /windows/win32/api/HighLevelMonitorConfigurationAPI/ne-highlevelmonitorconfigurationapi-mc_size_type
-            - name: Enumeración MC_VCP_CODE_TYPE
+            - name: MC_VCP_CODE_TYPE enumeración
               href: /windows/win32/api/LowLevelMonitorConfigurationAPI/ne-lowlevelmonitorconfigurationapi-mc_vcp_code_type

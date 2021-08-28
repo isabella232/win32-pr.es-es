@@ -1,9 +1,9 @@
 ---
-title: Función RtmIsRoute (RTM. h)
-description: La función RtmIsRoute determina si existen una o varias rutas a una red de destino especificada. Si es así, la función devuelve información para la mejor ruta a esa red.
+title: Función RtmIsRoute (Rtm.h)
+description: La función RtmIsRoute determina si existe una o varias rutas a una red de destino especificada. Si es así, la función devuelve información para la mejor ruta a esa red.
 ms.assetid: f9939790-d0a6-487e-9674-a01d436dc962
 keywords:
-- RtmIsRoute función RAS
+- Ras de función RtmIsRoute
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e64621732f2f7a35223421e5f0fc86a309d332c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 312b43a7cf66e17cc6016fe3ad35bd21cd1e7ae19ecd7864a10de4d977a92ac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073815"
 ---
-# <a name="rtmisroute-function"></a>RtmIsRoute función)
+# <a name="rtmisroute-function"></a>Función RtmIsRoute
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La función **RtmIsRoute** determina si existen una o varias rutas a una red de destino especificada. Si es así, la función devuelve información para la mejor ruta a esa red.
+La **función RtmIsRoute** determina si existe una o varias rutas a una red de destino especificada. Si es así, la función devuelve información para la mejor ruta a esa red.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ BOOL RtmIsRoute(
 
 <dl> <dt>
 
-*ProtocolFamily* \[ de\]
+*ProtocolFamily* \[ En\]
 </dt> <dd>
 
-Especifica el tipo de estructura de datos al que apunta el parámetro de *red* , por ejemplo, [**\_ red IP**](ip-network.md), [**\_ red IPX**](ipx-network.md).
+Especifica el tipo de estructura de datos al que apunta el parámetro *Network,* por ejemplo, [**IP \_ NETWORK**](ip-network.md), [**IPX \_ NETWORK**](ipx-network.md).
 
 </dd> <dt>
 
-*Red* \[ de de\]
+*Red* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura que especifica los datos de número de red específicos de la familia de protocolos. Estos datos identifican la red para la que el autor de la llamada busca información de ruta.
+Puntero a una estructura que especifica datos de número de red específicos de la familia de protocolos. Estos datos identifican la red para la que el autor de la llamada busca información de ruta.
 
 </dd> <dt>
 
-*BestRoute* \[ enuncia\]
+*BestRoute* \[ out\]
 </dt> <dd>
 
 Puntero a una estructura específica de la familia de protocolos que recibe la mejor información de ruta actual, si existe.
@@ -67,17 +67,17 @@ Puntero a una estructura específica de la familia de protocolos que recibe la m
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es uno de los siguientes códigos.
+El valor devuelto es uno de los códigos siguientes.
 
 
 
-| Value                                                                                                       | Descripción                                                                                                                                              |
+| Valor                                                                                                       | Descripción                                                                                                                                              |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl>                         | Existe al menos una ruta a la red especificada. La mejor ruta se devuelve en la estructura a la que apunta el parámetro *BestRoute* .<br/>      |
-| <dl> <dt>**ES**</dt> </dl>                        | No hay ninguna ruta a la red especificada o se produjo un error en la operación. Llame a [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener más información:<br/> |
-| <dl> <dt>**SIN \_ errores**</dt> </dl>                    | La operación se realizó correctamente, pero no hay ninguna ruta a la red especificada.<br/>                                                                      |
-| <dl> <dt>**ERROR \_ de \_ parámetro no válido**</dt> </dl>    | El valor del parámetro *ProtocolFamily* no se corresponde con ninguna familia de protocolos instalada.<br/>                                             |
-| <dl> <dt>**ERROR: \_ no hay \_ recursos del sistema \_**</dt> </dl> | No hay suficientes recursos para realizar la operación.<br/>                                                                                  |
+| <dl> <dt>**Verdad**</dt> </dl>                         | Existe al menos una ruta a la red especificada. La mejor ruta se devuelve en la estructura a la que apunta el *parámetro BestRoute.*<br/>      |
+| <dl> <dt>**Falso**</dt> </dl>                        | No hay ninguna ruta a la red especificada o se ha producido un error en la operación. Llame [**a GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obtener más información:<br/> |
+| <dl> <dt>**NO \_ ERROR**</dt> </dl>                    | La operación se ha producido correctamente, pero no hay ninguna ruta a la red especificada.<br/>                                                                      |
+| <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | El valor del *parámetro ProtocolFamily* no corresponde a ninguna familia de protocolos instalada.<br/>                                             |
+| <dl> <dt>**ERROR \_ NO HAY RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/>                                                                                  |
 
 
 
@@ -87,13 +87,13 @@ El valor devuelto es uno de los siguientes códigos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
@@ -102,22 +102,22 @@ El valor devuelto es uno de los siguientes códigos.
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Funciones de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-functions.md)
+[Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)
 </dt> <dt>
 
 [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 </dt> <dt>
 
-[**\_red IP**](ip-network.md)
+[**RED \_ IP**](ip-network.md)
 </dt> <dt>
 
-[**\_red IPX**](ipx-network.md)
+[**RED \_ IPX**](ipx-network.md)
 </dt> <dt>
 
-[Identificadores de la familia del protocolo RTMv1](routing-table-manager-version-1-protocol-family-identifiers.md)
+[Identificadores de familia de protocolo RTMv1](routing-table-manager-version-1-protocol-family-identifiers.md)
 </dt> </dl>
 
  

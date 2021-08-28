@@ -1,35 +1,35 @@
 ---
 title: Cómo crear un control de encabezado
-description: En este tema se muestra cómo crear un control de encabezado y colocarlo en el área de cliente de la ventana primaria.
+description: En este tema se muestra cómo crear un control de encabezado y colocarlo dentro del área de cliente de la ventana primaria.
 ms.assetid: 094AF70C-2761-439E-A1E3-0FD04212FE87
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bce9bf9d7b117f5f61766ca326b91b0d19a2c903
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 6ae5bb3ae9c323d30384f5d058a61393bf6425c2a27dfe67faa9cbedd4b3289e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063205"
 ---
 # <a name="how-to-create-a-header-control"></a>Cómo crear un control de encabezado
 
-En este tema se muestra cómo crear un control de encabezado y colocarlo en el área de cliente de la ventana primaria. Puede crear un control de encabezado mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando la clase de ventana de [**\_ encabezado WC**](common-control-window-classes.md) y los [estilos de control de encabezado](header-control-styles.md)adecuados. Esta clase de ventana se registra cuando se carga el archivo DLL de control común. Para asegurarse de que se carga este archivo DLL, utilice la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) .
+En este tema se muestra cómo crear un control de encabezado y colocarlo dentro del área de cliente de la ventana primaria. Puede crear un control de encabezado mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especificando la clase de ventana [**\_ WC HEADER**](common-control-window-classes.md) y los estilos de control de encabezado [adecuados.](header-control-styles.md) Esta clase de ventana se registra cuando se carga el archivo DLL de control común. Para asegurarse de que se carga este archivo DLL, use la [**función InitCommonControlsEx.**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex)
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-En el siguiente ejemplo de código de C++ se llama primero a la función [**InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) para cargar el archivo dll de control común. A continuación, llama a la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear un control de encabezado. El control está oculto inicialmente. El mensaje de [**\_ diseño HDM**](hdm-layout.md) se usa para calcular el tamaño y la posición del control dentro de la ventana primaria. Después, el control cambia de posición y se hace visible.
+En el siguiente ejemplo de código de C++ se llama primero a [**la función InitCommonControlsEx**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrolsex) para cargar el archivo DLL de control común. A continuación, llama [**a la función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) para crear un control de encabezado. Inicialmente, el control está oculto. El [**mensaje \_ HDM LAYOUT**](hdm-layout.md) se usa para calcular el tamaño y la posición del control dentro de la ventana primaria. A continuación, el control se vuelve a colocar y se hace visible.
 
 
 

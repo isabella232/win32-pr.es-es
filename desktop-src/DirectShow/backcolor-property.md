@@ -1,24 +1,24 @@
 ---
-description: La propiedad BackColor establece o recupera el color de las barras que aparecen alrededor de los bordes del rectángulo del vídeo cuando la relación de aspecto del vídeo nativo no es la misma que la del área de presentación del objeto.
+description: La propiedad BackColor establece o recupera el color de las barras que aparecen alrededor de los bordes del rectángulo de vídeo cuando la relación de aspecto del vídeo nativo no es la misma que la del área de presentación del objeto.
 ms.assetid: 51576836-c648-4268-8475-0312dbd60963
-title: BackColor (propiedad, DirectShow)
+title: Propiedad BackColor (DirectShow)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37adb625080ca284c168c7286982e980f8919f3d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a48f192e3f067b4ae3093c1541702b1bedbf645df5367a254fd2b5866a7e51da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105659293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084565"
 ---
-# <a name="backcolor-property-directshow"></a>BackColor (propiedad, DirectShow)
+# <a name="backcolor-property-directshow"></a>Propiedad BackColor (DirectShow)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
 
  
 
-La `BackColor` propiedad establece o recupera el color de las barras que aparecen alrededor de los bordes del rectángulo del vídeo cuando la relación de aspecto del vídeo nativo no es la misma que la del área de presentación del objeto.
+La propiedad establece o recupera el color de las barras que aparecen alrededor de los bordes del rectángulo de vídeo cuando la relación de aspecto del vídeo nativo no es la misma que la del área de presentación `BackColor` del objeto.
 
 ``` syntax
 [ iBackColor = ] MSWebDVD.BackColor
@@ -28,9 +28,9 @@ La `BackColor` propiedad establece o recupera el color de las barras que aparece
 
 Devuelve un valor entero que representa los valores RGB del color de fondo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de lectura/escritura con un valor predeterminado de OFF-Black (0x100010).
+Esta propiedad es de lectura y escritura con un valor predeterminado de off-black (0x100010).
 
  
 

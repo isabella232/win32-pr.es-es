@@ -4,20 +4,20 @@ ms.assetid: 2febea35-3fea-4a2d-baaf-7a4f935fc81f
 title: Leer y escribir metadatos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e4ea0a8f389f31870b31a0b15480815bdd7cf1f
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: f4b965285e2d8a4666ef86b78cdc5dbb9ed38c55ee7c84b4a93f1dbe80141efa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114935"
 ---
 # <a name="reading-and-writing-metadata"></a>Leer y escribir metadatos
 
-Algunos archivos de imagen contienen metadatos que puede leer para determinar las características de la imagen. Por ejemplo, una fotografía digital puede contener metadatos que puede leer para determinar la marca y el modelo de la cámara que se usa para capturar la imagen. Con Windows GDI+, puede leer los metadatos existentes y también puede escribir nuevos metadatos en archivos de imagen.
+Algunos archivos de imagen contienen metadatos que puede leer para determinar las características de la imagen. Por ejemplo, una fotografía digital podría contener metadatos que puede leer para determinar la marca y el modelo de la cámara que se usa para capturar la imagen. Con Windows GDI+, puede leer los metadatos existentes y también puede escribir nuevos metadatos en archivos de imagen.
 
 GDI+ proporciona una manera uniforme de almacenar y recuperar metadatos de archivos de imagen en varios formatos. En GDI+, un fragmento de metadatos se denomina elemento *de propiedad*. Puede almacenar y recuperar metadatos llamando a los métodos **SetPropertyItem** y **GetPropertyItem** de la clase [**Image,**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) y no tiene que preocuparse por los detalles de cómo un formato de archivo determinado almacena los metadatos.
 
-GDI+ admite actualmente metadatos para los formatos de archivo TIFF, JPEG, Exif y PNG. El formato Exif, que especifica cómo almacenar imágenes capturadas por cámaras digitales, se basa en los formatos TIFF y JPEG. Por ejemplo, usa el formato TIFF para los datos de píxeles sin comprimir y el formato JPEG para los datos de píxeles comprimidos.
+GDI+ actualmente admite metadatos para los formatos de archivo TIFF, JPEG, Exif y PNG. El formato Exif, que especifica cómo almacenar imágenes capturadas por cámaras digitales, se basa en los formatos TIFF y JPEG. Por ejemplo, usa el formato TIFF para los datos de píxeles sin comprimir y el formato JPEG para los datos de píxeles comprimidos.
 
 GDI+ define un conjunto de etiquetas de propiedad que identifican los elementos de propiedad. Ciertas etiquetas son de uso general; Es decir, son compatibles con todos los formatos de archivo mencionados en el párrafo anterior. Otras etiquetas son de uso especial y solo se aplican a determinados formatos. Si intenta guardar un elemento de propiedad en un archivo que no admite ese elemento de propiedad, GDI+ omite la solicitud. Más concretamente, el [**método Image::SetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpropertyitem) devuelve PropertyNotSupported.
 
@@ -54,7 +54,7 @@ INT main()
 
 
 
-El código anterior, junto con un archivo determinado, FakePhoto.jpg generaba la salida siguiente:
+El código anterior, junto con un archivo determinado, FakePhoto.jpg generaba la siguiente salida:
 
 
 ```
@@ -74,14 +74,14 @@ Un [**objeto PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **id**     | Etiqueta que identifica el elemento de metadatos. Los valores que se pueden asignar a **id** (PropertyTagImageTitle, PropertyTagEquipMake, PropertyTagExifExposureTime y otros) se definen en Gdiplusimaging.h.                                                                                           |
 | **length** | Longitud, en bytes, de la matriz de valores a la que apunta el **miembro de** datos value. Tenga en  cuenta que si el miembro de datos de tipo se  establece en PropertyTagTypeASCII, el miembro de datos length es la longitud de una cadena de caracteres terminada en NULL, incluido el terminador NULL.                        |
-| **type**   | Tipo de datos de los valores de la matriz a los que apunta el miembro de datos value. Las constantes (PropertyTagTypeByte, PropertyTagTypeASCII y otros tipos de datos) que representan varios tipos de datos se describen en Constantes de tipo de etiqueta de [**propiedad de imagen**](-gdiplus-constant-image-property-tag-type-constants.md). |
+| **type**   | Tipo de datos de los valores de la matriz a los que apunta el miembro de datos value. Las constantes (PropertyTagTypeByte, PropertyTagTypeASCII y otros) que representan varios tipos de datos se describen en Constantes de tipo de etiqueta de [**propiedad de imagen**](-gdiplus-constant-image-property-tag-type-constants.md). |
 | **value**  | Puntero a una matriz de valores.                                                                                                                                                                                                                                                                       |
 
 
 
  
 
-La siguiente aplicación de consola lee y muestra los siete fragmentos de metadatos en el archivo FakePhoto.jpg. La función main se basa en la función auxiliar PropertyTypeFromWORD, que se muestra después de la función principal.
+La siguiente aplicación de consola lee y muestra los siete fragmentos de metadatos en el archivo FakePhoto.jpg. La función main se basa en la función auxiliar PropertyTypeFromWORD, que se muestra después de la función main.
 
 
 ```
@@ -248,7 +248,7 @@ The exposure time is 1/125.
 
 Para escribir un elemento de metadatos en un objeto [**Image,**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) inicialice un objeto [**PropertyItem**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-propertyitem) y, a continuación, pase la dirección de ese objeto **PropertyItem** al **método SetPropertyItem** del **objeto Image.**
 
-La siguiente aplicación de consola escribe un elemento (el título de la imagen) de los metadatos en un objeto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) y, a continuación, guarda la imagen en el archivo de disco FakePhoto2.jpg. La función principal se basa en la función auxiliar GetEncoderClsid, que se muestra en el tema [Recuperación](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md)del identificador de clase para un codificador .
+La siguiente aplicación de consola escribe un elemento (el título de la imagen) de los metadatos en un objeto [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) y, a continuación, guarda la imagen en el archivo de FakePhoto2.jpg. La función principal se basa en la función auxiliar GetEncoderClsid, que se muestra en el tema [Recuperación](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md)del identificador de clase para un codificador .
 
 
 ```

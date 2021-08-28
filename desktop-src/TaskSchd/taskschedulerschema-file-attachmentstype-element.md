@@ -1,9 +1,9 @@
 ---
 title: Elemento File (attachmentsType)
-description: Contiene la ruta de acceso a un archivo que se envía como datos adjuntos en un mensaje de correo electrónico.
+description: Contiene la ruta de acceso a un archivo enviado como datos adjuntos en un mensaje de correo electrónico.
 ms.assetid: a53f591b-ac59-43b4-8cc2-661e76d307cc
 keywords:
-- Programador de tareas de elemento de archivo
+- Archivo, elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ed07d4b31f9054f6caefcff0585d9683faa90c7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 793b23bc6b9d75ac809c42063fa9c300542705b718cd22253f6f2d3a1a76caa8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125855"
 ---
 # <a name="file-attachmentstype-element"></a>Elemento File (attachmentsType)
 
-Contiene la ruta de acceso a un archivo que se envía como datos adjuntos en un mensaje de correo electrónico.
+Contiene la ruta de acceso a un archivo enviado como datos adjuntos en un mensaje de correo electrónico.
 
 ``` syntax
 <xs:element name="File"
@@ -30,7 +30,7 @@ Contiene la ruta de acceso a un archivo que se envía como datos adjuntos en un 
  />
 ```
 
-El elemento de **archivo** se define mediante el tipo complejo de [**attachmentsType**](taskschedulerschema-attachmentstype-complextype.md) .
+El **elemento File** se define mediante el tipo complejo [**attachmentsType.**](taskschedulerschema-attachmentstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,11 +42,11 @@ El elemento de **archivo** se define mediante el tipo complejo de [**attachments
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea la [**propiedad Attachments de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments).
+Para el desarrollo de C++, vea [**Propiedad Attachments de IEmailAction.**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_attachments)
 
-Para el desarrollo de scripts, vea [**EmailAction. Attachments**](emailaction-attachments.md).
+Para el desarrollo de scripts, [**vea EmailAction.Attachments.**](emailaction-attachments.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para el desarrollo de scripts, vea [**EmailAction. Attachments**](emailaction-at
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

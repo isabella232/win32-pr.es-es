@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a4f38a6897443763f676951f193fab5606ad2a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 593ce39dbba6ccf90838b4847bb0a548b67e4785bb21d3f299882e1eecdf8394
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083915"
 ---
 # <a name="ctransformfilterendflush-method"></a>Método CTransformFilter.EndFlush
 
@@ -46,9 +46,9 @@ Devuelve S \_ OK u otro valor **HRESULT.**
 
 ## <a name="remarks"></a>Comentarios
 
-Al final de una operación de vaciado, el método [**CTransformInputPin::EndFlush**](ctransforminputpin-endflush.md) del pin de entrada llama a este método. Este método pasa la `EndFlush` llamada de bajada.
+Al final de una operación de vaciado, el método [**CTransformInputPin::EndFlush**](ctransforminputpin-endflush.md) del pin de entrada llama a este método. Este método pasa la `EndFlush` llamada de nivel inferior.
 
-Si la clase derivada usa un subproceso de trabajo para entregar ejemplos, debe descartar los datos en cola antes de enviar la `EndFlush` llamada de nivel inferior. Para obtener más información, [vea Data Flow para desarrolladores de filtros.](data-flow-for-filter-developers.md)
+Si la clase derivada usa un subproceso de trabajo para entregar ejemplos, debe descartar los datos en cola antes de enviar la `EndFlush` llamada de nivel inferior. Para obtener más información, vea [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,12 +56,12 @@ Si la clase derivada usa un subproceso de trabajo para entregar ejemplos, debe d
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

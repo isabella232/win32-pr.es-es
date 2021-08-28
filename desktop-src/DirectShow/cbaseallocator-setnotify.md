@@ -1,7 +1,7 @@
 ---
-description: 'El método SetNotify establece o quita una devolución de llamada en el asignador. El asignador llama al método de devolución de llamada cada vez que se llama al método IMemAllocator:: ReleaseBuffer del asignador.'
+description: El método SetNotify establece o quita una devolución de llamada en el asignador. El asignador llama al método de devolución de llamada cada vez que se llama al método IMemAllocator::ReleaseBuffer del asignador.
 ms.assetid: ef9a6c66-d392-4130-b4fc-9eb6aecb6cbf
-title: Método CBaseAllocator. SetNotify (Amfilter. h)
+title: Método CBaseAllocator.SetNotify (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2d8269112325d470cae59cff6e615f04fbdfab91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16e836be1610e8c2399a263120d847f3fada4b638332ee81914031f7a8e3ffb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108655"
 ---
-# <a name="cbaseallocatorsetnotify-method"></a>CBaseAllocator. SetNotify, método
+# <a name="cbaseallocatorsetnotify-method"></a>CBaseAllocator.SetNotify (método)
 
-\[[**SetNotify**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iamwmbufferpass-setnotify) puede modificarse o no estar disponible en versiones posteriores.\]
+\[[**SetNotify puede**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iamwmbufferpass-setnotify) modificarse o no estar disponible en versiones posteriores.\]
 
-El `SetNotify` método establece o quita una devolución de llamada en el asignador. El asignador llama al método de devolución de llamada cada vez que se llama al método [**IMemAllocator:: ReleaseBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer) del asignador.
+El `SetNotify` método establece o quita una devolución de llamada en el asignador. El asignador llama al método de devolución de llamada cada vez que se llama al método [**IMemAllocator::ReleaseBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-releasebuffer) del asignador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,19 +47,19 @@ HRESULT SetNotify(
 *pNotify* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMemAllocatorNotifyCallbackTemp**](/windows/desktop/api/Strmif/nn-strmif-imemallocatornotifycallbacktemp) que se usará para la devolución de llamada. El autor de la llamada debe implementar la interfaz. Use el valor **null** para quitar la devolución de llamada.
+Puntero a la [**interfaz IMemAllocatorNotifyCallbackTemp**](/windows/desktop/api/Strmif/nn-strmif-imemallocatornotifycallbacktemp) que se usará para la devolución de llamada. El autor de la llamada debe implementar la interfaz . Use el valor **NULL para** quitar la devolución de llamada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método implementa el método [**IMemAllocatorCallbackTemp:: SetNotify**](/windows/desktop/api/Strmif/nf-strmif-imemallocatorcallbacktemp-setnotify) . El asignador no expone la interfaz [**IMemAllocatorCallbackTemp**](/windows/desktop/api/Strmif/nn-strmif-imemallocatorcallbacktemp) a menos que la marca *fEnableReleaseCallback* esté establecida en **true** en el constructor [**CBaseAllocator**](cbaseallocator.md) .
+Este método implementa el [**método IMemAllocatorCallbackTemp::SetNotify.**](/windows/desktop/api/Strmif/nf-strmif-imemallocatorcallbacktemp-setnotify) El asignador no expone la interfaz [**IMemAllocatorCallbackTemp**](/windows/desktop/api/Strmif/nn-strmif-imemallocatorcallbacktemp) a menos que la marca *fEnableReleaseCallback* esté establecida en **TRUE** en el constructor [**CBaseAllocator.**](cbaseallocator.md)
 
-Este método establece la variable miembro [**CBaseAllocator:: m \_ pNotify**](cbaseallocator-m-pnotify.md) igual a *pNotify* e incrementa el recuento de referencias en la interfaz. Si *m \_ pNotify* no es **null**, el método **ReleaseBuffer** del asignador llama a [**IMemAllocatorNotifyCallbackTemp:: NotifyRelease**](/windows/desktop/api/Strmif/nf-strmif-imemallocatornotifycallbacktemp-notifyrelease). Vea la sección Comentarios de ese método para obtener información sobre la implementación de la devolución de llamada.
+Este método establece la variable [**miembro CBaseAllocator::m \_ pNotify**](cbaseallocator-m-pnotify.md) igual a *pNotify* e incrementa el recuento de referencias en la interfaz . Si *m \_ pNotify* no es **NULL,** el método **ReleaseBuffer** del asignador llama a [**IMemAllocatorNotifyCallbackTemp::NotifyRelease**](/windows/desktop/api/Strmif/nf-strmif-imemallocatornotifycallbacktemp-notifyrelease). Vea la sección Comentarios de ese método para obtener información sobre cómo implementar la devolución de llamada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Este método establece la variable miembro [**CBaseAllocator:: m \_ pNotify**](c
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Este método establece la variable miembro [**CBaseAllocator:: m \_ pNotify**](c
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

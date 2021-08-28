@@ -1,11 +1,11 @@
 ---
-title: atributo de tipo DHCP
-description: El tipo de servidor DHCP.
+title: atributo dhcp-Type
+description: Tipo de servidor DHCP.
 ms.assetid: 46ab7db7-a752-45aa-a10b-1195b5cf6f80
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de tipo DHCP
-- dhcpType esquema de AD de atributos
+- Esquema de AD del atributo dhcp-Type
+- Esquema de AD del atributo dhcpType
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b5a5a331ff7298854f4ca070799a05e2a3497f2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f4cc64a05db9b88d13a1e7dfb3ce0976391b9d2514388ae9045eb11d97a5b2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049655"
 ---
-# <a name="dhcp-type-attribute"></a>atributo de tipo DHCP
+# <a name="dhcp-type-attribute"></a>atributo dhcp-Type
 
-El tipo de servidor DHCP. Este atributo se establece en todos los objetos de objectClass [**dHCPClass**](c-dhcpclass.md). Su valor define el tipo de objeto:
+Tipo de servidor DHCP. Este atributo se establece en todos los objetos de objectClass [**dHCPClass**](c-dhcpclass.md). Su valor define el tipo de objeto:
 
 ``` syntax
   0 - DHCP Root Object
@@ -34,14 +34,14 @@ El tipo de servidor DHCP. Este atributo se establece en todos los objetos de obj
 
 | Entrada | Value |
 |-------------------|--------------------------------------------------------|
-| CN                | Tipo DHCP                                              |
-| Nombre para mostrar de LDAP | dhcpType                                               |
-| Tamaño              | 4 bytes                                                |
-| Actualizar privilegio  | Administrador de dominio.                                  |
-| Frecuencia de actualización  | Cuando se agrega o se quita un nuevo servidor del bosque. |
+| CN                | dhcp-Type                                              |
+| Ldap-Display-Name | dhcpType                                               |
+| Size              | 4 bytes                                                |
+| Privilegio actualizar  | Administrador de dominio.                                  |
+| Frecuencia de actualización  | Cuando se agrega o quita un nuevo servidor del bosque. |
 | Attribute-Id      | 1.2.840.113556.1.4.699                                 |
-| System-ID-GUID    | 963d273b-48be-11d1-a9c3-0000f80367c1                   |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                   |
+| System-Id-Guid    | 963d273b-48be-11d1-a9c3-0000f80367c1                   |
+| Syntax            | [**Enumeración**](s-enumeration.md)                   |
 
 
 
@@ -60,18 +60,18 @@ El tipo de servidor DHCP. Este atributo se establece en todos los objetos de obj
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | True                                         |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Verdadero                                         |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -81,18 +81,18 @@ El tipo de servidor DHCP. Este atributo se establece en todos los objetos de obj
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | True                                         |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Verdadero                                         |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -102,18 +102,18 @@ El tipo de servidor DHCP. Este atributo se establece en todos los objetos de obj
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | True                                         |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Verdadero                                         |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 
@@ -123,18 +123,18 @@ El tipo de servidor DHCP. Este atributo se establece en todos los objetos de obj
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | True                                         |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Verdadero                                         |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 
@@ -144,18 +144,18 @@ El tipo de servidor DHCP. Este atributo se establece en todos los objetos de obj
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | True                                         |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Verdadero                                         |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 
@@ -165,18 +165,18 @@ El tipo de servidor DHCP. Este atributo se establece en todos los objetos de obj
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | True                                         |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Verdadero                                         |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000001                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 

@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran los métodos de la clase Brush. Para obtener una lista completa de clases, vea Brush (clase).
+description: En este tema se enumeran los métodos de la clase Brush. Para obtener una lista de clases completa, vea Clase Brush.
 ms.assetid: 858fd525-08a3-4ec6-bb2f-2b0fe2727cc3
-title: Métodos Brush
+title: Métodos brush
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c271178a480cf07592613b43c1a7cd93df8a42e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36aeab0adb4325235970cef9e15817ddbf3cba3b2f456bdd30888f1c775b7c64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062075"
 ---
-# <a name="brush-methods"></a>Métodos Brush
+# <a name="brush-methods"></a>Métodos brush
 
-En este tema se enumeran los métodos de la clase [**Brush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-brush) . Para obtener una lista completa de clases, vea **Brush (clase**).
+En este tema se enumeran los métodos de [**la clase Brush.**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-brush) Para obtener una lista de clases completa, vea **Clase Brush**.
 
--   [**Clonar**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-clone)
+-   [**Clon**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-clone)
 -   [**GetLastStatus**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-getlaststatus)
--   [**GetType**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-gettype)
+-   [**Gettype**](/windows/desktop/api/Gdiplusbrush/nf-gdiplusbrush-brush-gettype)
 
  
 

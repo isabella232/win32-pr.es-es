@@ -1,38 +1,38 @@
 ---
-title: Bordes de Media Player de Windows (desusado)
-description: Bordes de Media Player de Windows (desusado)
+title: Bordes para Reproductor de Windows Media (en desuso)
+description: Bordes para Reproductor de Windows Media (en desuso)
 ms.assetid: defa461b-ffa5-4fee-bed4-aba3e733b8c4
 keywords:
-- Media Player de Windows, bordes
-- Aspectos de Windows Media Player, bordes
+- Reproductor de Windows Media,borders
+- Reproductor de Windows Media máscaras, bordes
 - máscaras, bordes
-- bordes, comparación con máscaras
+- bordes, en comparación con máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a48ff3ec17230002e9c6b4a1eb17e3024375a58
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c32e16fa6e334c5c47f24feadc777b82cee1a12477211bc4e613d22e8fdc4521
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123855"
 ---
-# <a name="borders-for-windows-media-player-deprecated"></a>Bordes de Media Player de Windows (desusado)
+# <a name="borders-for-windows-media-player-deprecated"></a>Bordes para Reproductor de Windows Media (en desuso)
 
-En esta página se documenta una característica que puede no estar disponible en versiones futuras de Windows Media Player y el SDK de Windows Media Player.
+En esta página se documenta una característica que puede no estar disponible en versiones futuras de Reproductor de Windows Media y Reproductor de Windows Media SDK.
 
-Un borde es similar a una máscara, pero en lugar de reemplazar la interfaz de usuario para el modo compacto de Windows Media Player, se inserta un borde en el panel reproducción en curso del Media Player de Windows en modo completo.
+Un borde es similar a una máscara, pero en lugar de reemplazar la interfaz de usuario para el modo compacto de Reproductor de Windows Media, se inserta un borde en el panel Reproducción ahora del modo completo Reproductor de Windows Media.
 
-Mediante el uso de un paquete de descarga de Windows Media, puede incluir contenido con un borde, y así llegar a las aplicaciones multimedia.
+Mediante el uso de Windows de descarga multimedia, puede incluir contenido con un borde, lo que allana el camino a las aplicaciones multimedia.
 
-En el directorio de ejemplos de este SDK se incluye un paquete de descarga de Windows Media de ejemplo que incluye un borde y contenido incrustado.
+En el directorio de Windows de ejemplos de este SDK se incluye un paquete de descarga multimedia de ejemplo que incluye un borde y contenido insertado.
 
 ## <a name="creating-a-border"></a>Crear un borde
 
-Un borde se crea de la misma manera que una máscara. La única diferencia es que la máscara está incrustada dentro del panel **reproducción en curso** . Esto significa que no se puede calcular el tamaño de la máscara y que todos los elementos de máscara deben ser relativos. Si el usuario cambia el tamaño de Windows Media Player, se pueden recortar partes del borde y no verse.
+Un borde se crea de la misma manera que una máscara. La única diferencia es que la máscara se incrusta dentro del **panel Reproducción** ahora. Esto significa que no se puede calcular el tamaño de la máscara y que todos los elementos de máscara deben ser relativos. Si el usuario cambia Reproductor de Windows Media, es posible que las partes del borde se recorten y no se vean.
 
-## <a name="loading-a-border"></a>Cargar un borde
+## <a name="loading-a-border"></a>Carga de un borde
 
-Se carga un borde cuando se carga un metarchivo de Windows Media que utiliza el elemento de **máscara** . El atributo **href** del elemento **Skin** debe hacer referencia a una máscara. Un elemento de **máscara** típico tendría el siguiente aspecto:
+Se carga un borde cuando se carga Windows metarchivo multimedia que usa el **elemento SKIN.** El **atributo HREF** del elemento **SKIN** debe hacer referencia a una máscara. Un elemento **SKIN** típico tendría este aspecto:
 
 
 ```C++
@@ -42,21 +42,21 @@ Se carga un borde cuando se carga un metarchivo de Windows Media que utiliza el 
 
 
 
-Para obtener más información, vea [elemento Skin (deprecated)](skin-element--deprecated.md).
+Para obtener más información, vea [Elemento SKIN (en desuso).](skin-element--deprecated.md)
 
 ## <a name="including-content-with-a-border"></a>Incluir contenido con un borde
 
-Puede incluir contenido con un borde mediante un archivo de descarga de Windows Media (con la extensión de nombre de archivo. WMD). Siga estos pasos:
+Puede incluir contenido con un borde mediante un archivo Windows de descarga multimedia (con una extensión de nombre de archivo .wmd). Siga estos pasos:
 
-1.  Cree el borde. Tenga cuidado de crearlo de modo que el cambio de tamaño no dañe la composición del borde. Por ejemplo, no incluya un archivo de fondo; Haga que el fondo sea transparente para que una visualización pueda ejecutarse detrás.
-2.  Comprimir el contenido de la máscara (imágenes, archivos JScript y el archivo de definición de máscara) en un archivo con la extensión de nombre de archivo. WMZ.
-3.  Cree un metarchivo de Windows Media (con una extensión de nombre de archivo. ASX) que haga referencia al archivo de borde comprimido (con una extensión de nombre de archivo. WMZ). El metarchivo puede incluir información de lista de reproducción con metadatos para arte y direcciones URL de contenido específico.
-4.  Ensamble el contenido multimedia digital.
-5.  Comprima el borde, el metarchivo y el contenido en un archivo y asígnele una extensión de nombre de archivo. WMD.
+1.  Cree el borde. Asegúrese de crearla de tal forma que el tamaño no desestrope la composición del borde. Por ejemplo, no incluya un archivo en segundo plano; hacer que el fondo sea transparente para que una visualización pueda ejecutarse detrás de él.
+2.  Comprima el contenido de la máscara (art, JScript y el archivo de definición de máscara) en un archivo con una extensión de nombre de archivo .wmz.
+3.  Cree un metarchivo Windows multimedia (con una extensión de nombre de archivo .asx) que haga referencia al archivo de borde comprimido (con una extensión de nombre de archivo .wmz). El metarchivo puede incluir información de lista de reproducción con metadatos de arte y direcciones URL para contenido específico.
+4.  Ensamblar el contenido multimedia digital.
+5.  Comprima el borde, el metarchivo y el contenido en un archivo y asígónle una extensión de nombre de archivo .wmd.
 
 ## <a name="using-a-border"></a>Usar un borde
 
-Una vez creado el archivo de descarga de Windows Media, lo único que debe hacer el usuario es hacer doble clic en él. El archivo se descargará en el equipo del usuario. Los archivos incluidos en el paquete se desempaquetarán, se agregará la lista de reproducción a las listas de reproducción, el borde aparecerá en el panel **reproducción en curso** del Media Player de Windows en modo completo y el primer elemento de la nueva lista de reproducción comenzará a reproducirse.
+Después de haber creado el Windows de descarga multimedia, todo lo que tiene que hacer el usuario es hacer doble clic en él. El archivo se descargará en el equipo del usuario. Los archivos dentro del paquete se desempaquetarán, la lista de reproducción  se agregará a las listas de reproducción, el borde aparecerá en el panel Reproducción ahora del modo completo Reproductor de Windows Media y el primer elemento de la nueva lista de reproducción comenzará a reproducirse.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -68,12 +68,12 @@ Una vez creado el archivo de descarga de Windows Media, lo único que debe hacer
 [**Ejemplos**](samples.md)
 </dt> <dt>
 
-[**Paquetes de descarga de Windows Media (en desuso)**](windows-media-download-packages--deprecated.md)
+[**Windows Paquetes de descarga de medios (en desuso)**](windows-media-download-packages--deprecated.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

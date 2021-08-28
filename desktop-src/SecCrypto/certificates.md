@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 8efb9221f39b8544eabe8f6c00d21f6cfdf20c14
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4ccd66085f96ac7f3567ca3bf993d7d31c9bc70437199701fe88165adf52d03e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126725"
 ---
 # <a name="certificates-object"></a>Objeto Certificates
 
@@ -35,11 +35,11 @@ El **objeto Certificates** expone las interfaces siguientes:
 
 El **objeto Certificates** se usa para realizar las siguientes tareas:
 
--   Agregue o quite un [**objeto Certificate**](certificate.md) a o desde la colección.
+-   Agregue o quite un [**objeto Certificate**](certificate.md) a o de la colección.
 -   Genere un subconjunto de la colección buscando un conjunto de certificados o mostrando un cuadro de diálogo para seleccionar los certificados.
 -   Borre todos los [**objetos Certificate**](certificate.md) de la colección.
 -   Recupere el número de certificados de la colección.
--   Recupere un objeto [**Certificate**](certificate.md) específico de la colección.
+-   Recupera un objeto [**Certificate**](certificate.md) específico de la colección.
 -   Recorrer en iteración la colección.
 
 ## <a name="members"></a>Miembros
@@ -77,8 +77,8 @@ El **objeto Certificates** tiene estas propiedades.
 | Propiedad                                             | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
 |:-----------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](certificates-newenum.md)<br/> | Solo lectura<br/> | Recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](certificates-count.md)<br/>       | Solo lectura<br/> | Recupera el número de [**objetos Certificate**](certificate.md) de la colección.<br/>                                                                                                                                |
-| [**Elemento**](certificates-item.md)<br/>         | Solo lectura<br/> | Recupera un [**objeto Certificate**](certificate.md) que representa el certificado indexado de la colección. Esta es la propiedad predeterminada.<br/> (Se hereda de **CertificatesICertificates2ICertificates**)          |
+| [**Count**](certificates-count.md)<br/>       | Solo lectura<br/> | Recupera el número de [**objetos Certificate**](certificate.md) de la colección.<br/>                                                                                                                                |
+| [**Elemento**](certificates-item.md)<br/>         | Solo lectura<br/> | Recupera un objeto [**Certificate**](certificate.md) que representa el certificado indexado de la colección. Esta es la propiedad predeterminada.<br/> (Se hereda de **CertificatesICertificates2ICertificates**)          |
 
 
 
@@ -94,7 +94,7 @@ Se puede crear el objeto **Certificates** y es seguro para el scripting. El Prog
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
@@ -103,7 +103,7 @@ Se puede crear el objeto **Certificates** y es seguro para el scripting. El Prog
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. MaxCursors (propiedad)'
-title: Propiedad InstanceParameters. MaxCursors
+description: 'Más información sobre: Propiedad InstanceParameters.MaxCursors'
+title: Propiedad InstanceParameters.MaxCursors
 TOCTitle: 'MaxCursors property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.MaxCursors
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.maxcursors(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 029ff7c41916e668f532be60f018870f30e487ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08418b7f15c538c20e04ce4ce42c2bb2996f37f31c7198ff8ba840c21268f5c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116365"
 ---
-# <a name="instanceparametersmaxcursors-property"></a>Propiedad InstanceParameters. MaxCursors
+# <a name="instanceparametersmaxcursors-property"></a>Propiedad InstanceParameters.MaxCursors
 
-Obtiene o establece el número de recursos de cursor reservados para esta instancia. Un recurso cursor se corresponde directamente con un JET_TABLEID.
+Obtiene o establece el número de recursos de cursor reservados para esta instancia. Un recurso de cursor corresponde directamente a un JET_TABLEID.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int MaxCursors { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros InstanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

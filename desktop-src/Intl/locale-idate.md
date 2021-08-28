@@ -1,25 +1,25 @@
 ---
-description: configuración regional \_ iDate
+description: LOCALE \_ IDATE
 ms.assetid: ac919b9b-2532-49f6-ba7f-a8eb16a178e5
 title: LOCALE_IDATE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81bd3e447d18a67d75b388791ce69bdc916a2cce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63da7b0a4009583936a072bb5cefe71e6f5c46b79897100ff5f263ebbff135b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106825"
 ---
-# <a name="locale_idate"></a>configuración regional \_ iDate
+# <a name="locale_idate"></a>LOCALE \_ IDATE
 
-Formato de fecha corta: especificador de ordenación. El especificador debe ser uno de los valores siguientes. No se permiten valores especificados por el usuario. Se prefiere que la aplicación use la [configuración regional \_ SSHORTDATE](locale-sshortdate.md) en lugar de la configuración regional \_ iDate.
+Especificador de orden de formato de fecha corta. El especificador debe ser uno de los siguientes valores. No se permite ningún valor especificado por el usuario. Es preferible que la aplicación use [LOCALE \_ SSHORTDATE en](locale-sshortdate.md) lugar de LOCALE \_ IDATE.
 
 
 
 | Value | Significado        |
 |-------|----------------|
-| 0     | Mes-día-año |
+| 0     | Month-Day-Year |
 | 1     | Día-mes-año |
 | 2     | Año-mes-día |
 

@@ -1,11 +1,11 @@
 ---
-title: DMD-Name atributo)
-description: Nombre que se usa para identificar la partición del esquema. No se usa en AD.
+title: DMD-Name atributo
+description: Nombre que se usa para identificar la partición de esquema. NO lo usa AD.
 ms.assetid: 0ee35c32-add7-4b20-8d83-59b4b91df6ad
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de DMD-Name
-- dmdName esquema de AD de atributos
+- DMD-Name esquema de AD de atributo
+- Esquema de AD del atributo dmdName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b25684af133748ca73c8ace31b0471a5d1e0a787
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 43650fdf846a605e3751ef16729295574321bacf9e67bc26c5a4c51d2e9a8da7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085975"
 ---
-# <a name="dmd-name-attribute"></a>DMD-Name atributo)
+# <a name="dmd-name-attribute"></a>DMD-Name atributo
 
-Nombre que se usa para identificar la partición del esquema. No se usa en AD.
+Nombre que se usa para identificar la partición de esquema. NO lo usa AD.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | DMD-Name                                    |
-| Nombre para mostrar de LDAP | dmdName                                     |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | dmdName                                     |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.598                      |
-| System-ID-GUID    | 167757b9-47f3-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 167757b9-47f3-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre que se usa para identificar la partición del esquema. No se usa en AD.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Nombre que se usa para identificar la partición del esquema. No se usa en AD.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C56                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Nombre que se usa para identificar la partición del esquema. No se usa en AD.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C56                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C56                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Nombre que se usa para identificar la partición del esquema. No se usa en AD.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C56                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Nombre que se usa para identificar la partición del esquema. No se usa en AD.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C56                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Nombre que se usa para identificar la partición del esquema. No se usa en AD.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C56                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ Nombre que se usa para identificar la partición del esquema. No se usa en AD.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8C56                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 1024                            |
 | Search-Flags           | 0x00000000                      |
 | System-Flags           | 0x00000010                      |
-| Clases usadas en        | [**DMD**](c-dmd.md)<br/> |
+| Clases usadas en        | [**Dmd**](c-dmd.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETPARAFORMAT (RichEdit. h)
-description: Recupera el formato de párrafo de la selección actual en un control Rich Edit.
+title: EM_GETPARAFORMAT mensaje (Richedit.h)
+description: Recupera el formato de párrafo de la selección actual en un control de edición enriquecido.
 ms.assetid: 79a7d34f-5da1-452d-b31f-b2eec913f5cb
 keywords:
-- EM_GETPARAFORMAT controles de mensajes de Windows
+- EM_GETPARAFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49060861a955e85d153fc9041c9b364db109f83a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eda99d1fefc0e2a13cc989726c86588103b7f94d7042b98393709cf4a2cd5f29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048855"
 ---
-# <a name="em_getparaformat-message"></a>\_Mensaje GETPARAFORMAT em
+# <a name="em_getparaformat-message"></a>Mensaje \_ GETPARAFORMAT DE EM
 
-Recupera el formato de párrafo de la selección actual en un control Rich Edit.
+Recupera el formato de párrafo de la selección actual en un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,24 +32,24 @@ Recupera el formato de párrafo de la selección actual en un control Rich Edit.
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se usa; debe ser cero.
+Este parámetro no se utiliza; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura de [**PARAFORMAT**](/windows/desktop/api/Richedit/ns-richedit-paraformat) que recibe los atributos de formato de párrafo de la selección actual.
+Puntero a una [**estructura PARAFORMAT**](/windows/desktop/api/Richedit/ns-richedit-paraformat) que recibe los atributos de formato de párrafo de la selección actual.
 
-Si se selecciona más de un párrafo, la estructura recibe los atributos del primer párrafo y el miembro **dwMask** especifica qué atributos son coherentes en toda la selección.
+Si se selecciona más de un párrafo, la estructura recibe los atributos del primer párrafo y el **miembro dwMask** especifica qué atributos son coherentes en toda la selección.
 
-Microsoft Rich Edit 2,0 y versiones posteriores: este parámetro puede ser un puntero a una estructura [**PARAFORMAT2**](/windows/desktop/api/Richedit/ns-richedit-paraformat2) , que es una extensión de la estructura [**PARAFORMAT**](/windows/desktop/api/Richedit/ns-richedit-paraformat) . Antes de enviar el mensaje **\_ GETPARAFORMAT em** , establezca el miembro **cbSize** de la estructura para indicar la versión de la estructura.
+Microsoft Rich Edit 2.0 y versiones posteriores: este parámetro puede ser un puntero a una estructura [**PARAFORMAT2,**](/windows/desktop/api/Richedit/ns-richedit-paraformat2) que es una extensión de la [**estructura PARAFORMAT.**](/windows/desktop/api/Richedit/ns-richedit-paraformat) Antes de enviar **el mensaje EM \_ GETPARAFORMAT,** establezca el miembro **cbSize** de la estructura para indicar la versión de la estructura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje devuelve el valor del miembro **dwMask** de la estructura [**PARAFORMAT**](/windows/desktop/api/Richedit/ns-richedit-paraformat) .
+Este mensaje devuelve el valor del miembro **dwMask** de la [**estructura PARAFORMAT.**](/windows/desktop/api/Richedit/ns-richedit-paraformat)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Este mensaje devuelve el valor del miembro **dwMask** de la estructura [**PARAFO
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. DbScanIntervalMinSec (propiedad)'
-title: Propiedad InstanceParameters. DbScanIntervalMinSec
+description: 'Más información sobre: Propiedad InstanceParameters.DbScanIntervalMinSec'
+title: Propiedad InstanceParameters.DbScanIntervalMinSec
 TOCTitle: 'DbScanIntervalMinSec property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.DbScanIntervalMinSec
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.dbscanintervalminsec(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6630f106675ac7ae7d5c82039d8321c0a78bee62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6681b891e2e70c0f4e2f335a039819df2a5f109b5baa99e6ea33bf12110a7d97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063785"
 ---
-# <a name="instanceparametersdbscanintervalminsec-property"></a>Propiedad InstanceParameters. DbScanIntervalMinSec
+# <a name="instanceparametersdbscanintervalminsec-property"></a>Propiedad InstanceParameters.DbScanIntervalMinSec
 
-Obtiene o establece el intervalo mínimo para repetir el análisis de base de datos, en segundos.
+Obtiene o establece el intervalo mínimo para repetir el examen de la base de datos, en segundos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int DbScanIntervalMinSec { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

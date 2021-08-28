@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de DTN_USERSTRING (commctrl. h)
-description: Se envía mediante un control de selector de fecha y hora (DTP) cuando un usuario termina de editar una cadena en el control.
+title: DTN_USERSTRING de notificación (Commctrl.h)
+description: Enviado por un control selector de fecha y hora (DTP) cuando un usuario termina de editar una cadena en el control .
 ms.assetid: a5b13582-323b-4804-912c-a988d902547d
 keywords:
-- DTN_USERSTRING controles de código de notificación de Windows
+- DTN_USERSTRING código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4878875d23a0a5fce95aa4cc9ebfedfbdf24cb93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c6eabae4ed5a4fbe9ff0652b77fb7b6fbaf709b9030e3aa982af486ad6b7ed0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062925"
 ---
-# <a name="dtn_userstring-notification-code"></a>DTN \_ código de notificación de USERSTRING
+# <a name="dtn_userstring-notification-code"></a>Código de notificación USERSTRING de DTN \_
 
-Se envía mediante un control de selector de fecha y hora (DTP) cuando un usuario termina de editar una cadena en el control. Este código de notificación solo lo envían los controles de DTP que se establecen en el estilo [**\_ APPCANPARSE de DTS**](date-and-time-picker-control-styles.md) . Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control selector de fecha y hora (DTP) cuando un usuario termina de editar una cadena en el control . Este código de notificación solo se envía mediante controles DTP que están establecidos en el estilo [**\_ APPCANPARSE de DTS.**](date-and-time-picker-control-styles.md) Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ DTN_USERSTRING
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMDATETIMESTRING**](/windows/win32/api/commctrl/ns-commctrl-nmdatetimestringa) que contiene información sobre la instancia del código de notificación.
+Puntero a una [**estructura NMDATETIMESTRING**](/windows/win32/api/commctrl/ns-commctrl-nmdatetimestringa) que contiene información sobre la instancia del código de notificación.
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ Puntero a una estructura [**NMDATETIMESTRING**](/windows/win32/api/commctrl/ns-c
 
 El propietario del control debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El control de este código de notificación permite que el propietario proporcione respuestas personalizadas a las cadenas especificadas por el usuario en el control. El propietario debe estar preparado para analizar la cadena de entrada y tomar medidas si es necesario.
+El control de este código de notificación permite al propietario proporcionar respuestas personalizadas a las cadenas especificadas en el control por el usuario. El propietario debe estar preparado para analizar la cadena de entrada y tomar medidas si es necesario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ El control de este código de notificación permite que el propietario proporcio
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **DTN \_ USERSTRINGW** (Unicode) y **DTN \_ USERSTRINGA** (ANSI)<br/>             |
 
 

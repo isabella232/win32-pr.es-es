@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Server2003Grbits. WaitAllLevel0Commit, campo'
-title: Campo Server2003Grbits. WaitAllLevel0Commit (Microsoft. ISAM. esent. Interop. Server2003)
+description: 'Más información sobre: Campo Server2003Grbits.WaitAllLevel0Commit'
+title: Campo Server2003Grbits.WaitAllLevel0Commit (Microsoft.Isam.Esent.Interop.Server2003)
 TOCTitle: WaitAllLevel0Commit field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Server2003.Server2003Grbits.WaitAllLevel0Commit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.server2003.server2003grbits.waitalllevel0commit(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 16390069adf81ead8e819bc5148a88e30900b508
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c6f3946d12b7614818545abc785d521e46b9c05ddedcffab09750846861782e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093175"
 ---
-# <a name="server2003grbitswaitalllevel0commit-field"></a>Server2003Grbits. WaitAllLevel0Commit, campo
+# <a name="server2003grbitswaitalllevel0commit-field"></a>Campo Server2003Grbits.WaitAllLevel0Commit
 
-Todas las transacciones confirmadas previamente por cualquier sesión que todavía no se hayan vaciado en el archivo de registro de transacciones se vaciarán inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esta opción puede usarse incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.
+Todas las transacciones confirmadas previamente por cualquier sesión que aún no se hayan vaciado en el archivo de registro de transacciones se vaciarán inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esta opción se puede usar incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,8 +57,8 @@ public const CommitTransactionGrbit WaitAllLevel0Commit
 
 #### <a name="reference"></a>Referencia
 
-[Clase Server2003Grbits](./server2003grbits-class.md)
+[Server2003Grbits (clase)](./server2003grbits-class.md)
 
-[Miembros de Server2003Grbits](./server2003grbits-members.md)
+[Miembros server2003Grbits](./server2003grbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)

@@ -1,48 +1,48 @@
 ---
-title: Modificador/backward_compat
-description: El \_ modificador de compatibilidad/backward indica al compilador de MIDL que desactive algunas características avanzadas al generar código auxiliar de RPC/com.
+title: /backward_compat Switch
+description: El modificador /backward compat dirige al compilador midl a desactivar algunas características avanzadas al \_ generar código auxiliar RPC/COM.
 ms.assetid: eec0ade7-30a0-44e4-92e9-fb03ff657723
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69b558d01b33b99f7d1d9279f729b923ff58df0f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd412bdabe4255a9a4538503b29ddf5681265ce5e16c81d3d5fc2484eb6c9675
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120086395"
 ---
-# <a name="backward_compat-switch"></a>/backward ( \_ modificador compatible)
+# <a name="backward_compat-switch"></a>/backward \_ compat Switch
 
-El \_ modificador de compatibilidad/backward indica al compilador de MIDL que desactive algunas características avanzadas al generar código auxiliar de RPC/com.
+El modificador /backward compat dirige al compilador midl a desactivar algunas características avanzadas al \_ generar código auxiliar RPC/COM.
 
 ``` syntax
 midl /backward_compat { maybenull_sizeis | zeroout_alignmentgap | 
      BSTR_byvalue_escaping | string_defaultvalue | signed_wchar_t }
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
-*tamaño de maybenull \_*<dl> Aplica el atributo [ \[ deshabilitar \_ \_ comprobación \] de coherencia](disable-consistence-check.md) a una compilación de MIDL completa.  
+*maybenull \_ sizeis*<dl> Aplica el atributo [ \[ disable consistency \_ \_ check \] ](disable-consistence-check.md) a una compilación MIDL completa.  
 </dl>
 
-*zeroout \_ alignmentgap*<dl> Desactiva el llenado de ceros en el búfer de serialización.  
+*alineación \_ de cerosgap*<dl> Desactiva la puesta a cero de espacios en el búfer serializado.  
 </dl>
 
-*Escape de BSTR \_ byvalue \_*<dl> Indica al compilador de MIDL que respete las secuencias de escape, como â € ̃ \\ nâ™ o â € ̃ \\ tÂ™ en BSTR.  
+*BSTR \_ por escape de \_ valores*<dl> Dirige al compilador MIDL a respetar secuencias de escape, como â€ \\ nâ€™ o â€ â€ \\ tâ€™ en BSTR.  
 </dl>
 
-*cadena \_ DefaultValue*<dl> Obliga al compilador de MIDL a convertir las cadenas de los atributos [**\[ DEFAULTVALUE \]**](defaultvalue.md) en Variant. VT \_ I4 Type antes de forzar el valor en el tipo correcto.  
+*string \_ defaultvalue*<dl> Fuerza al compilador MIDL a convertir cadenas en [**\[ atributos de valor \]**](defaultvalue.md) predeterminado en VARIANT. Tipo \_ VT I4 antes de convertir el valor en el tipo correcto.  
 </dl>
 
-*\_WCHAR firmado \_ t*<dl> Indica a MIDL que trate el \_ tipo WCHAR t como firmado para la compatibilidad con Visual Basic.  
+*signed \_ wchar \_ t*<dl> Dirige a MIDL para tratar el tipo wchar \_ t como firmado por compatibilidad con Visual Basic.  
 </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
--   *\_ tamaño de maybenull*: consulte \[ deshabilitar la \_ comprobación de coherencia \_ \] .
--   *zeroout \_ alignmentgap*: cuando se compilan pero con â € "Target NT60 o una versión posterior, MIDL creará códigos auxiliares que desconectan cualquier hueco de alineación entre miembros o una estructura en el búfer de conexión. El modificador de línea de comandos */backward \_ compat zeroout \_ ALIGNMENTGAP* dirige a MIDL para deshabilitar esta característica.
+-   *maybenull \_ sizeis:* consulte \[ deshabilitar la comprobación de \_ \_ \] coherencia.
+-   *\_ alignmentgap zeroout:* cuando los IDL se compilan con nt60 de destino o superior, MIDL creará códigos auxiliares que ceron las brechas de alineación entre los miembros o una estructura en el búfer de conexión. El modificador de línea de *comandos /backward \_ compat zeroout \_ alignmentgap* dirige MIDL para deshabilitar esta característica.
 
-    En la estructura de ejemplo siguiente, el búfer de conexión contiene un intervalo de alineación de 7 bytes para alinear el miembro de hipertexto con 8 después del miembro de carácter. Con "NT60 de destino" o superior, MIDL dejará sin espacio a menos que se use el modificador.
+    En la estructura de ejemplo siguiente, el búfer de conexión contiene un intervalo de alineación de 7 bytes para alinear el miembro hyper con 8 después del miembro char. Con â€"target NT60 o superior, MIDL pondrá a cero esa brecha a menos que se utilice el modificador.
 
     Archivo IDL:
 
@@ -54,15 +54,15 @@ midl /backward_compat { maybenull_sizeis | zeroout_alignmentgap |
     } structwithgap;
     ```
 
-    Este modificador puede proporcionar una ligera mejora del rendimiento con aumentos potencialmente significativos en el riesgo de divulgación.
+    Este cambio puede proporcionar una ligera mejora del rendimiento con aumentos potencialmente significativos en el riesgo de divulgación.
 
--   *BSTR \_ byvalue \_ Escaping*: de forma predeterminada, el COMpilador de MIDL no procesa secuencias de escape como â € ̃ \\ nÂ €™ o â € ̃ \\ tÂ €™ en constantes de cadena para la automatización OLE al convertir una constante de cadena en tipos VT \_ LPSTR o VT \_ LPWStr. Con esta opción de cambio de compatibilidad con versiones anteriores, se evalúan las secuencias de escape.
--   *String \_ DefaultValue*: obliga al compilador de MIDL a convertir las cadenas numéricas de los atributos [**\[ \] DefaultValue**](defaultvalue.md) en Variant. VT \_ I4 Type antes de forzar el valor en el tipo correcto. Esto puede dar lugar a la pérdida de precisión en algunos casos, por lo que no se recomienda esta opción de modificador.
--   *signed \_ WCHAR \_ t*: indica a MIDL que trate el \_ tipo WCHAR t como firmado para la compatibilidad con Visual Basic.
+-   Escape de BSTR por valor: de forma predeterminada, el compilador MIDL no procesa secuencias de escape como â€ miento nâ€™ o â€ omisión de ™ en constantes de cadena para OLE Automation al convertir una constante de cadena a tipos VT LPSTR o *\_ \_* \\ VT \\ \_ \_ LPWSTR. Con esta opción de modificador de compatibilidad con versiones anteriores, se evalúan las secuencias de escape.
+-   *string \_ defaultvalue:* fuerza al compilador MIDL a convertir cadenas numéricas en [**\[ atributos defaultvalue \]**](defaultvalue.md) en VARIANT. Tipo \_ VT I4 antes de convertir el valor en el tipo correcto. Esto puede provocar la pérdida de precisión en algunos casos, por lo que no se recomienda esta opción de modificador.
+-   *signed \_ wchar \_ t:* hace que MIDL trate el tipo wchar t como firmado por compatibilidad \_ con Visual Basic.
 
- 
+ 
 
- 
+ 
 
 
 
