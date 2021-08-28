@@ -7,18 +7,18 @@ MSHAttr:
 title: IgnorePassword
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceb24eafebac1ab657a4a721031b05e043f3a2f9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e85c41bab92d127a81a8b86a4ac575d448605d0e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465652"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982798"
 ---
 # <a name="span-idwwan_profile_v4element_ignorepasswordspanmbnprofileextignorepassword-v4"></a><span id="WWAN_profile_v4.element_IgnorePassword"></span>MBNProfileExt \/ ... \/ IgnorePassword (v4)
 
 Especifica cómo se controlan las contraseñas al actualizar perfiles.
 
-Si se establece en **TRUE** y existe un perfil con el mismo nombre en el momento de la operación de actualización, la contraseña de ese perfil se toma y almacena en el nuevo perfil.
+Si se establece en **TRUE** y existe un perfil con el mismo nombre en el momento de la operación de actualización, la contraseña de ese perfil se toma y se almacena en el nuevo perfil.
 
 Para más información, consulte la documentación del elemento [**IgnorePassword**](./schema-ignorepassword-userlogoncred-element.md) v1.
 
@@ -34,7 +34,7 @@ Para más información, consulte la documentación del elemento [**IgnorePasswor
 &nbsp;&nbsp;&nbsp;&nbsp;[\<UserLogonCred\>](element-1-userlogoncred.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<IgnorePassword\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <IgnorePassword>
@@ -67,7 +67,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

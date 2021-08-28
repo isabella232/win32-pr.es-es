@@ -1,5 +1,5 @@
 ---
-description: Cim Indication es la clase base abstracta para todas las notificaciones sobre los cambios en los objetos de esquema y los datos de objetos de esquema, eventos detectados por \_ proveedores e instrumentación. Las subclases de indicación CIM \_ representan tipos específicos de notificaciones.
+description: Cim Indication es la clase base abstracta para todas las notificaciones sobre los cambios en los objetos de esquema y los datos de objetos de esquema, los eventos detectados por \_ los proveedores y la instrumentación. Las subclases de indicación CIM \_ representan tipos específicos de notificaciones.
 ms.assetid: 85a70425-7b32-449c-9fc0-1cfbf34d9187
 title: CIM_Indication clase
 ms.topic: reference
@@ -21,12 +21,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 84f6999add608a1b43da2d9272703dd63f52ed2d799f47a0121bd4a50b88e9ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e859e7834a051bad0a5ea402e8bd6c3685b5ad54
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120046829"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883530"
 ---
 # <a name="cim_indication-class"></a>Cim \_ Indication (clase)
 
@@ -91,10 +91,10 @@ Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualif
 
 Identificador del filtro de indicación que procesa la indicación. El servicio de envío establece esta propiedad. Esta propiedad se correlaciona con la **propiedad Name** del **objeto \_ IndicationFilter de CIM.** El valor de **IndicationFilterName** debe usar el formato siguiente:
 
--   *<OrgID>*:*<LocalID>*
--   *<OrgID>* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial propietaria del objeto.
--   *<OrgID>* no debe contener dos puntos (:)
--   *<LocalID>* identificador único elegido por la entidad empresarial propietaria del objeto.
+-   *&lt; OrgID: &gt;**&lt; LocalID &gt;*
+-   *&lt; OrgID &gt;* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial propietaria del objeto.
+-   *&lt; OrgID &gt;* no debe contener dos puntos (:)
+-   *&lt; LocalID &gt;* un identificador único elegido por la entidad empresarial propietaria del objeto.
 
 </dd> <dt>
 
@@ -114,11 +114,11 @@ Identificador de la indicación. Esta propiedad se puede usar como valor de clav
 
 Para asegurarse de **que IndicationIdentifier** es único, debe usar el formato siguiente:
 
--   *<OrgID>*:*<LocalID>*
--   *<OrgID>* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial propietaria del objeto.
--   *<OrgID>* no debe contener dos puntos (:)
--   *<LocalID>* identificador único elegido por la entidad empresarial propietaria del objeto.
--   Para las instancias definidas por DMTF, *<OrgID>* debe establecerse en "CIM".
+-   *&lt; OrgID: &gt;**&lt; LocalID &gt;*
+-   *&lt; OrgID &gt;* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial propietaria del objeto.
+-   *&lt; OrgID &gt;* no debe contener dos puntos (:)
+-   *&lt; LocalID &gt;* un identificador único elegido por la entidad empresarial propietaria del objeto.
+-   Para las instancias definidas por DMTF, *&lt; OrgID &gt;* debe establecerse en "CIM".
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ La información debe usarse al proporcionar una respuesta informativa.
 
 <span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>
 
-<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Degradado o advertencia** (3)
+<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Degradado/Advertencia** (3)
 
 
 </dt> <dd>
@@ -245,7 +245,7 @@ La acción es necesaria AHORA.
 
 </dt> <dd>
 
-Ahora se necesita una acción y el ámbito es amplio (quizás se produciría una interrupción inesperada de un recurso crítico).
+Ahora es necesario tomar medidas y el ámbito es amplio (quizás se produciría una interrupción inesperada en un recurso crítico).
 
 </dd> <dt>
 
@@ -256,7 +256,7 @@ Ahora se necesita una acción y el ámbito es amplio (quizás se produciría una
 
 </dt> <dd>
 
-se produjo un error, pero es demasiado tarde para realizar acciones correctivas.
+se produjo un error, pero es demasiado tarde para tomar medidas correctivas.
 
 </dd> <dt>
 
@@ -293,7 +293,7 @@ Para asegurarse de **que SequenceContext** es único, debe usar el formato sigui
 -   *indication-service-name* \# *cim-service-start-id* \# *listener-destination-creation-time*
 -   *indication-service-name* es el valor de la **propiedad Name** de la instancia de **CIM \_ IndicationService** que entrega la indicación.
 -   *cim-service-start-id es* un identificador que identifica de forma única la operación de inicio de un servicio. Por ejemplo, podría ser una marca de tiempo de la hora de inicio o un contador que aumente para cada inicio o reinicio del servicio.
--   *listener-destination-creation-time* es una marca de tiempo de la hora de creación de la instancia de **Cim \_ ListenerDestination** que representa el destino del agente de escucha. nSince este formato es solo una recomendación, los clientes CIM deben tratar el valor como un identificador opaco para el contexto de secuencia y no deben confiar en este formato.
+-   *listener-destination-creation-time* es una marca de tiempo de la hora de creación de la instancia **de Cim \_ ListenerDestination** que representa el destino del agente de escucha. nSince este formato es solo una recomendación, los clientes CIM deben tratar el valor como un identificador opaco para el contexto de secuencia y no deben confiar en este formato.
 
 </dd> <dt>
 
@@ -329,7 +329,7 @@ El número de secuencia tiene las siguientes características:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |

@@ -1,5 +1,5 @@
 ---
-description: Devolución de llamada para guardar o finalizar el experimento. Indica que se ha guardado el archivo.
+description: Devolución de llamada para guardar o finalizar el experimento. Indica que se ha realizado la guardado del archivo.
 MS-HAID: vspixengine.IFileIOCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ec20781596dbc77a01c9b4609dd4cfa02589379a
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 7169df5f5c9d6ea3744356114fae2cbc0af4356a
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625841"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787121"
 ---
 # <a name="span-idvspixengineifileiocallbackspanifileiocallback-interface"></a><span id="vspixengine.ifileiocallback"></span>IFileIOCallback (interfaz)
 
-Devolución de llamada para guardar o finalizar el experimento. Indica que se ha guardado el archivo.
+Devolución de llamada para guardar o finalizar el experimento. Indica que se ha realizado la guardado del archivo.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IFileIOCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFileIOCallback** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IFileIOCallback** hereda de la [**interfaz IUnknown.**](/windows/d
 
 La **interfaz IFileIOCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ifileiocallback-resultcallback-dword"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host de errores durante la captura o reproducción.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ifileiocallback-resultcallback-dword"><strong>ResultCallback</strong></a></td><td ><p>Función de devolución de llamada que se usa para notificar al host de errores durante la captura o reproducción.</p></td></tr></tbody></table>
 
  
 

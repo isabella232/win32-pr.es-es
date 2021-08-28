@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d7e5c937610b06a58309181a4dad2c95846d287b335c8ab6b2fed9008f338f3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 121342a2c0d47b2041893459d577e09e3b4d73ba
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985485"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627241"
 ---
 # <a name="span-idvspixengineremotingversionspanremotingversion-enumeration"></a><span id="vspixengine.remotingversion"></span>REMOTINGVERSION (enumeración)
 
 Enumeración que se usa para indicar qué versión del protocul de comunicación remota se usa.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -47,7 +47,7 @@ Valor que indica que se usa Visual Studio 2013 protocolo de comunicación remota
 Valor que indica que se está Visual Studio 2013 Update 4 protocolo de comunicación remota.
 
 <span id="REMOTING_DEV14"></span><span id="remoting_dev14"></span>**REMOTING \_ DEV14**  
-Valor que indica que se usa Visual Studio protocolo de comunicación remota rtm de 2015.
+Valor que indica que se usa Visual Studio protocolo de comunicación remota RTM 2015.
 
 <span id="REMOTING_WIN10"></span><span id="remoting_win10"></span>**COMUNICACIÓN REMOTA \_ WIN10**  
 Valor que indica que se usa Windows 10 de comunicación remota (a partir de Windows 10, el diagnóstico de gráficos es un componente del sistema operativo).
@@ -78,7 +78,7 @@ Valor que indica que se usa el protocolo de comunicación remota más reciente.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

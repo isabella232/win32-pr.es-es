@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IGenericBufferDataRequest
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: IGenericBufferDataRequest (interfaz)
+title: Interfaz IGenericBufferDataRequest
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 27FE3E7E-DFE1-4077-92D4-CA91F81C17EB
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 790b34f212b57a2f0a1c6e846af2c2d1e5b755f6
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: c10be9f61434e6d72d5c6a1a7450b08d64ef064a
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626151"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787391"
 ---
-# <a name="span-idvspixengineigenericbufferdatarequestspanigenericbufferdatarequest-interface"></a><span id="vspixengine.igenericbufferdatarequest"></span>IGenericBufferDataRequest (interfaz)
+# <a name="span-idvspixengineigenericbufferdatarequestspanigenericbufferdatarequest-interface"></a><span id="vspixengine.igenericbufferdatarequest"></span>Interfaz IGenericBufferDataRequest
 
 Solicitud del contenido de un objeto en formato XML.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IGenericBufferDataRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IGenericBufferDataRequest** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IGenericBufferDataRequest** hereda de la [**interfaz IUnknown.**](
 
 La **interfaz IGenericBufferDataRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/igenericbufferdatarequest-requestasync-dumpertype-eventid-dword-igenericbufferdatacallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Solicita que se devuelvan datos de objetos genéricos que describen un objeto en el archivo .vsglog para el evento especificado y en el formato especificado.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/igenericbufferdatarequest-requestasync-dumpertype-eventid-dword-igenericbufferdatacallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Solicita que se devuelvan datos de objetos genéricos que describen un objeto en el archivo .vsglog para el evento especificado y en el formato especificado.</p></td></tr></tbody></table>
 
  
 

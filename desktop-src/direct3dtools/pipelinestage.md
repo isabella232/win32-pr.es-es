@@ -1,10 +1,10 @@
 ---
-description: Representa una fase de canalización, incluidos los detalles del sombreador utilizado.
+description: Representa una fase de canalización, incluidos los detalles del sombreador usado.
 MS-HAID: vspixengine.PipeLineStage
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Estructura PipeLineStage
+title: PipeLineStage (estructura)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 616103CB-777E-4AA8-8B70-E19B1A2D667C
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5ddd0cbcf417da7967b135a10227ce6687cb2ea5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 10f1d1780404303109a72fe1a12023bc35b2c0ca
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997799"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625171"
 ---
-# <a name="span-idvspixenginepipelinestagespanpipelinestage-structure"></a><span id="vspixengine.pipelinestage"></span>Estructura PipeLineStage
+# <a name="span-idvspixenginepipelinestagespanpipelinestage-structure"></a><span id="vspixengine.pipelinestage"></span>PipeLineStage (estructura)
 
-Representa una fase de canalización, incluidos los detalles del sombreador utilizado.
+Representa una fase de canalización, incluidos los detalles del sombreador usado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,29 +38,29 @@ Representa una fase de canalización, incluidos los detalles del sombreador util
 ## <a name="members"></a>Miembros
 
 **StageId**  
-IDENTIFICADOR de la fase de canalización.
+Identificador de la fase de canalización.
 
 **Depurable**  
-True si la fase de canalización admite la depuración; en caso contrario, false.
+true si la fase de canalización admite la depuración; de lo contrario, false.
 
 **StageName**  
 Cadena COM que contiene el nombre de la fase de canalización.
 
 **GuaranteedOutput**  
-True si la fase de canalización siempre tiene una salida de canalización; en caso contrario, false.
+True si la fase de canalización siempre tiene salida de canalización; de lo contrario, false.
 
 **DebugEntryPoint**  
-Cadena COM que contiene el nombre del punto de entrada del sombreador, si hay alguno.
+Cadena COM que contiene el nombre del punto de entrada del sombreador, si hay uno.
 
 **ShaderFile**  
-Cadena COM que contiene la ruta de acceso del archivo de origen del sombreador.
+Cadena COM que contiene la ruta de archivo del archivo de origen del sombreador.
 
 **ShaderByteStreamPtr**  
-Un FILEPTR para la secuencia de bytes del sombreador. Esto se devuelve para depurar.
+FILEPTR para la secuencia de bytes del sombreador. Esto se pasa de nuevo para depurar.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

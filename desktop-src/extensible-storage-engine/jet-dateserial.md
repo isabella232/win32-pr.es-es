@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62432356ca490f9f5815b9e5478780bde6ef5e92
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 81b9758932c2374cafd6241e67d3ec37aa883ee1
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466792"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986708"
 ---
 # <a name="jet_dateserial"></a>JET_DATESERIAL
 
@@ -39,12 +39,16 @@ El **JET_DATESERIAL** de datos representa una fecha en fracciones de días desde
 
 JET_DATESERIAL
 
-Contiene un número de punto flotante de precisión doble (8 bytes). Esto es lo mismo que el tipo [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) de C++.
+Contiene un número de punto flotante de precisión doble (8 bytes). Esto es igual que el tipo [DATE](https://msdn.microsoft.com/library/82ab7w69(VS.71).aspx) de C++.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

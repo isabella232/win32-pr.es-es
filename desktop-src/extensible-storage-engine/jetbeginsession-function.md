@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0796d35990a8a53704d64ab8cea6b9503570a124
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3e6263916211e5d21e0032ba6de8d98e46fedfa9
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479291"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989078"
 ---
 # <a name="jetbeginsession-function"></a>Función JetBeginSession
 
@@ -86,7 +86,7 @@ Si se ejecuta correctamente, se inicializa el identificador de sesión y se pued
 
 En caso de error, no hay sesiones disponibles o no se pudo inicializar una nueva sesión.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Se debe prestar mucha atención al usar sesiones en distintos subprocesos. Una sesión realiza un seguimiento del subproceso en el que se usó durante [JetBeginTransaction,](./jetbegintransaction-function.md) [JetCommitTransaction](./jetcommittransaction-function.md)o [JetRollback,](./jetrollback-function.md)y producirá un error si se usa en varios subprocesos con una transacción abierta. [JetResetSessionContext](./jetresetsessioncontext-function.md), [JetSetSessionContext](./jetsetsessioncontext-function.md) puede cambiar este comportamiento. Puesto que la sesión sigue siendo un contexto serializado y no se pueden realizar varias operaciones de base de datos en una sola sesión simultáneamente, solo en serie. Sin embargo, puede usar varias sesiones para lograr el acceso simultáneo a la base de datos. Las sesiones se pueden usar dentro de una transacción entre subprocesos estableciendo y restableciendo los contextos de sesión.
 
@@ -95,7 +95,14 @@ El identificador de sesión debe cerrarse [con JetEndSession](./jetendsession-fu
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetBeginSessionW</strong> (Unicode) y <strong>JetBeginSessionA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetBeginSessionW</strong> (Unicode) y <strong>JetBeginSessionA</strong> (ANSI).</p> | 
 
 
 

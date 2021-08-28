@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3e9575995d80a4c61b5e91be7c5cfc1c802abed892af8cfa653f62c66e602b3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20b54473b282976d2ab871db0f1699c1154070a3
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119430975"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886034"
 ---
 # <a name="n-switch"></a>Modificador /n
 
@@ -38,7 +38,7 @@ Especifica la profundidad del espacio de nombres que se compone en un único arc
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Estos son los formatos de valor posibles que puede especificar con el **modificador /n.**
 
@@ -48,8 +48,8 @@ Estos son los formatos de valor posibles que puede especificar con el **modifica
 |--------------------------------|---------------------------------------------------------------------------------|
 | Int32 > 0                   | Cree todos los tipos en la profundidad del espacio de nombres especificada en el modificador .               |
 | -1                             | Cree todos los tipos en un archivo IDL por espacio de nombres.                              |
-| <namespace>:Int32 > 0 | Cree todos los tipos con el espacio de nombres correspondiente en la profundidad especificada en el modificador. |
-| <namespace>:-1           | Cree todos los tipos con el espacio de nombres correspondiente en un archivo por espacio de nombres.          |
+| &lt;namespace &gt; :Int32 > 0 | Cree todos los tipos con el espacio de nombres correspondiente en la profundidad especificada en el modificador. |
+| &lt;namespace &gt; :-1           | Cree todos los tipos con el espacio de nombres correspondiente en un archivo por espacio de nombres.          |
 
 
 
@@ -58,18 +58,18 @@ Estos son los formatos de valor posibles que puede especificar con el **modifica
 En la tabla siguiente se muestran los resultados de diferentes combinaciones del modificador **/n** que trabaja en estos espacios de nombres.
 
 -   Windows. Foundation.Collections.IIterable
--   Windows. Ui. DirectUI.Controls.Button
--   Windows. Ui. DirectUI.Controls.ListView
--   Windows. Ui. Immersive.Application.PlayTo.Target
+-   Windows. UI. DirectUI.Controls.Button
+-   Windows. UI. DirectUI.Controls.ListView
+-   Windows. UI. Immersive.Application.PlayTo.Target
 -   Windows. Web.Syndication.RSS
 
 
 
-| Modificadores                         | Resultado                                                                                                                                                                                                                                                       | Explicación                                                                                                                                                                                                                                                                                                                        |
+| Conmutadores                         | Resultado                                                                                                                                                                                                                                                       | Explicación                                                                                                                                                                                                                                                                                                                        |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **/n:-1**  / **n:1**               | Windows.winmd                                                                                                                                                                                                                                                | El último modificador /n invalida todos los modificadores –n anteriores.                                                                                                                                                                                                                                                                           |
 | **/n:-1/n:Windows. UI:2**         | <dl> <dt>Windows. Foundation.winmd</dt> <dt>Windows. UI.winmd</dt> <dt>Windows. Web.Syndication.winmd</dt> </dl> | <dl> <dt>**Windows. Foundation** siempre se compone en –n:2.</dt> <dt>**Windows. Los tipos** de interfaz de usuario se agrupan.</dt> <dt>**Windows. Web.Syndication** se compone de n:-1.</dt> </dl>       |
-| **/n:1/n:Windows. Ui. DirectUI:3** | <dl> <dt>Windows. Foundation.winmd</dt> <dt>Windows. Ui. DirectUI.winmd</dt> <dt>Windows.winmd</dt> </dl>       | <dl> <dt>**Windows. Foundation** siempre se compone en –n:2.</dt> <dt>**Windows. Ui. DirectUI** se compone en el nivel 3.</dt> <dt>Todos los demás tipos se componen en el nivel 1.</dt> </dl> |
+| **/n:1/n:Windows. UI. DirectUI:3** | <dl> <dt>Windows. Foundation.winmd</dt> <dt>Windows. UI. DirectUI.winmd</dt> <dt>Windows.winmd</dt> </dl>       | <dl> <dt>**Windows. Foundation** siempre se compone en –n:2.</dt> <dt>**Windows. UI. DirectUI** se compone en el nivel 3.</dt> <dt>Todos los demás tipos se componen en el nivel 1.</dt> </dl> |
 
 
 
@@ -89,9 +89,9 @@ Estas son las reglas para controlar varias instancias del **modificador /n.**
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|--------------------------------|
-| Cliente<br/> | Windows 8<br/>           |
+| Remoto<br/> | Windows 8<br/>           |
 | Server<br/> | Windows Server 2012<br/> |
 
 

@@ -22,12 +22,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5d7237d83c298916045b4bd0443eadc3048c94dc7ad028a1bd7bfa993c4ce764
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 18a85af664a4be8ef96b1882477e2fadec0f0b1a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119391755"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882280"
 ---
 # <a name="win32_environment-class"></a>Clase De entorno de Win32 \_
 
@@ -278,7 +278,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (260), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet Control Session Manager \\ \\ \\ \\ \\ \\ Environment")
 </dt> </dl>
 
-Nombre del propietario de la configuración del entorno. Se establece en para la configuración específica del sistema basado en Windows (en lugar de un usuario específico) y para la <SYSTEM> <DEFAULT> configuración de usuario predeterminada.
+Nombre del propietario de la configuración del entorno. Se establece en SYSTEM para las configuraciones que son específicas del sistema basado en Windows (en lugar de un usuario específico) y DEFAULT para la configuración &lt; &gt; de usuario &lt; &gt; predeterminada.
 
 Ejemplo: "JSmith"
 
@@ -296,7 +296,7 @@ Tipo de acceso: lectura y escritura
 Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| System \\ \\ CurrentControlSet \\ \\ Control Session \\ \\ \\ \\ Manager Environment")
 </dt> </dl>
 
-Variable de marcador de posición de una Windows de entorno basada en el marcador de posición. Información como el directorio del sistema de archivos puede cambiar de equipo a equipo. El sistema operativo sustituye los marcadores de posición por estos.
+Variable de marcador de posición de Windows variable de entorno basada en una base de datos. Información como el directorio del sistema de archivos puede cambiar de equipo a equipo. El sistema operativo sustituye los marcadores de posición por estos.
 
 Ejemplo: "%SystemRoot%"
 
@@ -316,7 +316,7 @@ El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME**
 
 ## <a name="examples"></a>Ejemplos
 
-El [ejemplo Enumerar variables de entorno](https://Gallery.TechNet.Microsoft.Com/79ae998e-2e29-4a6d-b0a6-34ed5b709d49) en un equipo perl usa WMI para devolver información sobre todas las variables de entorno de un equipo.
+En [el ejemplo Enumerar variables](https://Gallery.TechNet.Microsoft.Com/79ae998e-2e29-4a6d-b0a6-34ed5b709d49) de entorno en un equipo Perl se usa WMI para devolver información sobre todas las variables de entorno de un equipo.
 
 En el ejemplo de código de VBScript siguiente se enumeran las variables de entorno en el equipo local.
 
@@ -336,7 +336,7 @@ Next
 
 
 
-En el ejemplo de código de VBScript siguiente se cambia una variable de entorno denominada BUILD \_ TYPE a una entrada de valor por parte del usuario. El script supone que la variable BUILD \_ TYPE ya existe. Si no existe, el script finaliza. El valor de entrada está activado: debe ser "Build1", "Build2" o "Build3" y no se acepta ningún otro valor. La función [UCase de](https://msdn.microsoft.com/library/aa902519.aspx) VBScript hace que la entrada no tenga en cuenta las mayúsculas y minúsculas de entrada. Si lo que se escribe en no es uno de los tres valores aceptables, el script finaliza.
+En el ejemplo de código de VBScript siguiente se cambia una variable de entorno denominada BUILD \_ TYPE a una entrada de valor por parte del usuario. El script supone que la variable BUILD \_ TYPE ya existe. Si no existe, el script finaliza. El valor de entrada está activado: debe ser "Build1", "Build2" o "Build3" y no se acepta ningún otro valor. La función [UCase de](https://msdn.microsoft.com/library/aa902519.aspx) VBScript hace que la entrada no tenga en cuenta mayúsculas de minúsculas. Si lo que se escribe en no es uno de los tres valores aceptables, el script finaliza.
 
 
 ```VB
@@ -380,7 +380,7 @@ End If
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

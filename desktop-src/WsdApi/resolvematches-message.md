@@ -4,23 +4,23 @@ ms.assetid: 0eaa4348-968e-4b45-9509-8b15476edaa1
 title: Mensaje ResolveMatches
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42f2604859d39530377883179ec104dd078e9b6f
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 140d279a5e66835b7754e3f501732263dff430f2
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122627761"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883640"
 ---
 # <a name="resolvematches-message"></a>Mensaje ResolveMatches
 
-Un mensaje ResolveMatches es WS-Discovery mensaje enviado en respuesta al mensaje [Resolve](resolve-message.md) de un cliente por un servicio correspondiente. Para obtener más información sobre los mensajes ResolveMatches, vea la sección 6.2 de la [especificación de WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un mensaje ResolveMatches es WS-Discovery mensaje enviado en respuesta al mensaje [Resolver](resolve-message.md) de un cliente por un servicio correspondiente. Para obtener más información sobre los mensajes ResolveMatches, vea la sección 6.2 de la [especificación de WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-Unidifusión UDP envía un mensaje ResolveMatches al puerto 3702 (el puerto desde el que se envió el mensaje [Resolver](resolve-message.md) del cliente). ResolveMatches debe enviarse en un plazo de 4 segundos a partir del mensaje Resolver. De lo contrario, Windows firewall puede quitar el paquete.
+Unidifusión UDP envía un mensaje ResolveMatches al puerto 3702 (el puerto desde el que se envió el mensaje [Resolver](resolve-message.md) del cliente). ResolveMatches debe enviarse en un plazo de 4 segundos desde el mensaje Resolver; De lo contrario, Windows firewall puede quitar el paquete.
 
-Cualquier aplicación DPWS que envíe [los mensajes Resolver](resolve-message.md) recibirá mensajes ResolveMatches.
+Cualquier aplicación DPWS que envíe [los mensajes resolver](resolve-message.md) recibirá mensajes ResolveMatches.
 
 > [!Note]  
-> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la herramienta de interoperabilidad básica de [WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
+> En este tema se muestra un mensaje DPWS de ejemplo generado por clientes y hosts de WSDAPI. WSDAPI analizará y aceptará otros mensajes compatibles con DPWS que no se ajusten a este ejemplo. No use este ejemplo para comprobar la interoperabilidad de DPWS; use la [herramienta de interoperabilidad básica WSDAPI (WSDBIT) en](https://msdn.microsoft.com/library/cc264250.aspx) su lugar.
 
  
 
@@ -90,39 +90,39 @@ Un mensaje ResolveMatches tiene los siguientes puntos de enfoque.
 <tbody>
 <tr class="odd">
 <td>ResolveMatches</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2005/04/discovery/ResolveMatches
-</wsa:Action></code></pre></td>
+&lt;/wsa:Action&gt;</code></pre></td>
 <td>La acción SOAP ResolveMatches identifica el mensaje como un mensaje ResolveMatches.</td>
 </tr>
 <tr class="even">
 <td>RelatesTo</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:RelatesTo>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:RelatesTo&gt;
     urn:uuid:38d1c3d9-8d73-4424-8861-6b7ee2af24d3
-</wsa:RelatesTo></code></pre></td>
-<td>Identificador del mensaje al que responde el servicio. Este encabezado coincide con el MessageId del <a href="resolve-message.md">mensaje Resolver.</a></td>
+&lt;/wsa:RelatesTo&gt;</code></pre></td>
+<td>Identificador del mensaje al que responde el servicio. Este encabezado coincide con messageId en el <a href="resolve-message.md">mensaje Resolver.</a></td>
 </tr>
 <tr class="odd">
 <td>AppSequence</td>
 <td><pre class="syntax" data-space="preserve"><code><wsd:AppSequence InstanceId=&quot;1&quot;
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;6&quot;>
-</wsd:AppSequence></code></pre></td>
-<td>Contiene información de secuenciación de la aplicación, que ayuda a mantener la secuencia de mensajes incluso si se reciben sin orden. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
+&lt;/wsd:AppSequence&gt;</code></pre></td>
+<td>Contiene información de secuenciación de aplicaciones, que ayuda a mantener la secuencia de mensajes incluso si se reciben sin orden. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
 </tr>
 <tr class="even">
 <td>Dirección</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Address>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Address&gt;
     urn:uuid:37f86d35-e6ac-4241-964f-1d9ae46fb366
-</wsa:Address></code></pre></td>
+&lt;/wsa:Address&gt;</code></pre></td>
 <td>Contiene la dirección del punto de conexión que se va a resolver.</td>
 </tr>
 <tr class="odd">
 <td>XAddrs</td>
-<td><pre class="syntax" data-space="preserve"><code><wsd:XAddrs>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsd:XAddrs&gt;
     https://192.168.0.2:5357/37f86d35-e6ac-4241-964f-1d9ae46fb366
-</wsd:XAddrs></code></pre></td>
-<td>XAddrs son direcciones de transporte que se pueden usar para la comunicación entre el cliente y el servicio. Los adidores se validan como se <a href="xaddr-validation-rules.md">describe en Reglas de validación de XAddr</a>.</td>
+&lt;/wsd:XAddrs&gt;</code></pre></td>
+<td>XAddrs son direcciones de transporte que se pueden usar para la comunicación entre el cliente y el servicio. Los agregarres se validan como se describe en <a href="xaddr-validation-rules.md">Reglas de validación de XAddr</a>.</td>
 </tr>
 </tbody>
 </table>

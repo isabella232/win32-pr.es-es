@@ -7,12 +7,12 @@ MSHAttr:
 title: ModemDMConfigProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58ea408fb35fef5b9b2f89255e6ecb28f59b2370
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 80684cdf2d47d203318afbfd7b5e6bc02de1d3dc
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882905"
+ms.locfileid: "122982748"
 ---
 # <a name="span-idwwan_profile_v4element_modemdmconfigprofilespanmodemdmconfigprofile"></a><span id="WWAN_profile_v4.element_ModemDMConfigProfile"></span>MódemDMConfigProfile
 
@@ -22,7 +22,7 @@ Perfil de configuración de DM de módem.
 
 **&lt;ModemDMConfigProfile&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <ModemDMConfigProfile>
@@ -65,7 +65,7 @@ Ninguno.
 | <a href="element-1-context.md">Contexto</a> | <p>Especifica los parámetros necesarios para establecer una conexión de datos.</p> | 
 | <a href="element-1-name.md">Nombre</a> | <p>Nombre del perfil. Para obtener más información, vea la documentación del elemento <a href="../mbn/schema-name-mbnprofile-element.md"><strong>Name v1.</strong></a></p> | 
 | <a href="element-oemconnectionid.md">OemConnectionId</a> | <p>Identificador de conexión de OEM para la configuración de DM del módem.</p> | 
-| <a href="element-1-profilecreationtype.md">ProfileCreationType (en MódemDMConfigProfile)</a> | <p>Especifica cómo se creó este perfil de DM de módem.</p><p>Este valor se usa para decidir si un usuario puede eliminar el perfil. Los usuarios solo pueden eliminar <strong>perfiles de UserProvisioned.</strong></p> | 
+| <a href="element-1-profilecreationtype.md">ProfileCreationType (en ModemDMConfigProfile)</a> | <p>Especifica cómo se creó este perfil de DM de módem.</p><p>Este valor se usa para decidir si un usuario puede eliminar el perfil. Los usuarios solo pueden eliminar <strong>perfiles de UserProvisioned.</strong></p> | 
 | <a href="element-1-roamapplicability.md">RoamApplicability</a> | <p>Especifica que este perfil está activo solo cuando la condición de itinerancia actual es la especificada. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP). El valor de este elemento debe ser un valor <a href="simpletype-roamapplicabilitytype.md"><strong>roamApplicabilityType</strong></a> válido.</p> | 
 | <a href="element-1-simiccid.md">SimIccID</a> | <p>Número de identificación de SIM para dispositivos GSM. Para más información, consulte la documentación del elemento <a href="../mbn/schema-simiccid-mbnprofile-element.md"><strong>SimIccID</strong></a> v1.</p> | 
 
@@ -79,7 +79,9 @@ Este elemento más externo (documento) no puede estar contenido en ningún otro 
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

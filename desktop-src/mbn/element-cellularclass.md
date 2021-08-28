@@ -7,12 +7,12 @@ MSHAttr:
 title: CellularClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c442208c40dcfa42a7c603bc20fda94422794ef
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 850635853a3545fc82707acb48914ca190cefe7c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988848"
+ms.locfileid: "122883948"
 ---
 # <a name="span-idwwan_profile_v4element_cellularclassspancellularclass"></a><span id="WWAN_profile_v4.element_CellularClass"></span>CellularClass
 
@@ -24,7 +24,7 @@ Especifica que este perfil está activo solo cuando la clase de telefonía móvi
 [&lt;ProfileConditionedOn&gt;](element-profileconditionedon.md)  
 **&lt;CellularClass&gt;**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <CellularClass>
@@ -57,9 +57,7 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

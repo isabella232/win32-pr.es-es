@@ -11,21 +11,21 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e67401329c161728478e7c93a5b3939c0c27746a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7939bb633f75f10d0e7fa8c38b4f44b24fa09b1c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715559"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474161"
 ---
 # <a name="xmubyten4-constructors"></a>Constructores XMUBYTEN4
 
 Constructores expuestos por `XMUBYTEN4` .
 
-Construye instancias de la estructura [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4) .
+Construye instancias de la [**estructura XMUBYTEN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -33,82 +33,24 @@ Construye instancias de la estructura [**XMUBYTEN4**](/windows/win32/api/directx
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constructor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(constfloat)"><strong>XMUBYTEN4 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMUBYTEN4</code><br/> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"> <strong>XMUBYTEN4</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(uint32_t)"><strong>XMUBYTEN4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMUBYTEN4</code> partir de una <code>uint32_t</code> variable que contiene los datos del componente en un formato empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de una <code>uint32_t</code> variable que contiene los datos del componente en un formato empaquetado. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(constfloat)"><strong>XMUBYTEN4 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMUBYTEN4</code> a partir de un argumento de matriz de cuatro elementos <code>float</code> . <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de un argumento de matriz de cuatro elementos <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(constuint8_t)"><strong>XMUBYTEN4 (const uint8_t *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMUBYTE4</code> a partir de un argumento de matriz de cuatro elementos <code>uint8_t</code> .<br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de un argumento de matriz de cuatro elementos <code>uint8_t</code> .<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(float_float_float_float)"><strong>XMUBYTEN4 (float, Float, Float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMUBYTEN4</code> a partir de cuatro <code>float</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de cuatro <code>float</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(uint8_t_uint8_t_uint8_t_uint8_t)"><strong>XMUBYTEN4 (uint8_t, uint8_t, uint8_t, uint8_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMUBYTEN4</code> a partir de cuatro <code>uint8_t</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de cuatro <code>uint8_t</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constructor | Descripción | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(constfloat)"><strong>XMUBYTEN4 ()</strong></a> | Constructor predeterminado para <code>XMUBYTEN4</code><br /> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"> <strong>XMUBYTEN4</strong></a><br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(uint32_t)"><strong>XMUBYTEN4 (uint32_t)</strong></a> | Inicializa una nueva instancia de a <code>XMUBYTEN4</code> partir de una variable que contiene datos de componente en un formato <code>uint32_t</code> empaquetado. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de una variable que contiene datos <code>uint32_t</code> de componente en un formato empaquetado. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(constfloat)"><strong>XMUBYTEN4 (const float*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMUBYTEN4</code> de un argumento de matriz de cuatro <code>float</code> elementos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de un argumento de matriz <code>float</code> de cuatro elementos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(constuint8_t)"><strong>XMUBYTEN4 (const uint8_t*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMUBYTE4</code> de un argumento de matriz de cuatro <code>uint8_t</code> elementos.<br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de un argumento de matriz <code>uint8_t</code> de cuatro elementos.<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(float_float_float_float)"><strong>XMUBYTEN4 (float,float,float,float)</strong></a> | Inicializa una nueva instancia de a <code>XMUBYTEN4</code> partir de <code>float</code> cuatro argumentos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de <code>float</code> cuatro argumentos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmubyten4-xmubyten4(uint8_t_uint8_t_uint8_t_uint8_t)"><strong>XMUBYTEN4 (uint8_t,uint8_t,uint8_t,uint8_t)</strong></a> | Inicializa una nueva instancia de a <code>XMUBYTEN4</code> partir de <code>uint8_t</code> cuatro argumentos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmubyten4"><strong>XMUBYTEN4</strong></a> a partir de cuatro <code>uint8_t</code> argumentos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMUBYTEN4](ovw-xmubyten4-extensions.md)
+[Extensiones XMUBYTEN4](ovw-xmubyten4-extensions.md)
 </dt> <dt>
 
 **Referencia**

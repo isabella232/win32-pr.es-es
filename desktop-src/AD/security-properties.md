@@ -8,12 +8,12 @@ keywords:
 - Atributos de seguridad de usuario ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dfe23252002f2ffbbba3f8e8a8faf5a2d36ce348bdbd7503c0d99a816a81902
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbd5dfdbe84234f15b76ceb1799c69cdc0a5bafb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119024893"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881216"
 ---
 # <a name="user-security-attributes"></a>Atributos de seguridad del usuario
 
@@ -31,9 +31,9 @@ El [**atributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) esp
 <span id="altSecurityIdentities"></span><span id="altsecurityidentities"></span><span id="ALTSECURITYIDENTITIES"></span>[**altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities)
 </dt> <dd>
 
-El [**atributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) es un atributo multivalor que contiene asignaciones de certificados X.509 o cuentas de usuario kerberos externas a este usuario para la autenticación. Varios paquetes de seguridad, incluidos el paquete de autenticación de clave pública y Kerberos, usan estos datos para autenticar a los usuarios cuando presentan la forma alternativa de identificación, como certificado, UNIX vale Kerberos, y así sucesivamente. Compile un token Windows 2000 basado en la cuenta de usuario correspondiente para que pueda acceder a los recursos del sistema.
+El [**atributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) es un atributo multivalor que contiene asignaciones de certificados X.509 o cuentas de usuario kerberos externas a este usuario para la autenticación. Varios paquetes de seguridad, incluidos el paquete de autenticación de clave pública y Kerberos, usan estos datos para autenticar a los usuarios cuando presentan la forma alternativa de identificación, como certificado, UNIX vale kerberos, y así sucesivamente. Compile un token Windows 2000 basado en la cuenta de usuario correspondiente para que pueda acceder a los recursos del sistema.
 
-En el caso de los certificados X.509, los valores deben ser los nombres issuer y Subject en los certificados 509v3, emitidos por una entidad de certificación pública externa, que se asignan a la cuenta de usuario usada para buscar una cuenta para la autenticación. El paquete SSL (Schannel) usa la sintaxis siguiente: X509: <somecertinfotype> somecertinfo. Por ejemplo, el siguiente valor especifica el DN emisor " " con el \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" y el DN sujeto " " con el \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
+En el caso de los certificados X.509, los valores deben ser los nombres issuer y Subject en los certificados 509v3, emitidos por una entidad de certificación pública externa, que se asignan a la cuenta de usuario usada para buscar una cuenta para la autenticación. El paquete SSL (Schannel) usa la siguiente sintaxis: X509: &lt; somecertinfotype &gt; somecertinfo. Por ejemplo, el siguiente valor especifica el DN emisor " " con el \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" y el DN sujeto " " con el \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
 
 
 ```C++
@@ -72,14 +72,14 @@ No replicado. El [**atributo badPwdCount**](/windows/desktop/ADSchema/a-badpwdco
 <span id="codePage"></span><span id="codepage"></span><span id="CODEPAGE"></span>[**Codepage**](/windows/desktop/ADSchema/a-codepage)
 </dt> <dd>
 
-El [**atributo codePage**](/windows/desktop/ADSchema/a-codepage) especifica la página de códigos para el idioma elegido del usuario. Este valor no lo usa Windows 2000.
+El [**atributo codePage**](/windows/desktop/ADSchema/a-codepage) especifica la página de códigos para el idioma elegido del usuario. No usa este valor Windows 2000.
 
 </dd> <dt>
 
 <span id="countryCode"></span><span id="countrycode"></span><span id="COUNTRYCODE"></span>[**countryCode**](/windows/desktop/ADSchema/a-countrycode)
 </dt> <dd>
 
-El [**atributo countryCode**](/windows/desktop/ADSchema/a-countrycode) especifica el código de país o región para el idioma del usuario. Este valor no lo usa Windows 2000.
+El [**atributo countryCode**](/windows/desktop/ADSchema/a-countrycode) especifica el código de país o región para el idioma del usuario. No usa este valor Windows 2000.
 
 </dd> <dt>
 
@@ -242,7 +242,7 @@ El [**atributo scriptPath**](/windows/desktop/ADSchema/a-scriptpath) especifica 
 
 El [**atributo unicodePwd**](/windows/desktop/ADSchema/a-unicodepwd) es la contraseña del usuario.
 
-Para establecer la contraseña de usuario, use el método [**IADsUser.ChangePassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-changepassword) si el script o la aplicación permiten al usuario cambiar su propia contraseña, o bien el método [**IADsUser.SetPassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) si el script o la aplicación permite que un administrador restablezca una contraseña.
+Para establecer la contraseña de usuario, use el método [**IADsUser.ChangePassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-changepassword) si el script o la aplicación permiten al usuario cambiar su propia contraseña, o bien el método [**IADsUser.SetPassword,**](/windows/desktop/api/iads/nf-iads-iadsuser-setpassword) si el script o la aplicación permite a un administrador restablecer una contraseña.
 
 Contraseña del usuario en formato un Windows NT un way (OWF). Windows 2000 usa el Windows NT OWF. Este atributo solo lo usa el sistema operativo. Tenga en cuenta que no puede volver a derivar la contraseña de texto no cifrado del formulario OWF de la contraseña.
 
@@ -257,7 +257,7 @@ Las marcas siguientes se definen en Lmaccess.h.
 
 
 
-| Marca                     | Descripción                                                                                                                                                      |
+| Marcar                     | Descripción                                                                                                                                                      |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SCRIPT DE \_ UF               | Script de inicio de sesión ejecutado. Este valor debe establecerse para LAN Manager 2.0 o Windows NT.                                                                             |
 | UF \_ ACCOUNTDISABLE       | La cuenta de usuario está deshabilitada.                                                                                                                                    |
@@ -275,7 +275,7 @@ Las marcas siguientes describen el tipo de cuenta. Solo se puede establecer un v
 
 
 
-| Marca                            | Descripción                                                                                                                                                                                                                                     |
+| Marcar                            | Descripción                                                                                                                                                                                                                                     |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CUENTA \_ NORMAL DE \_ UF             | Se trata de un tipo de cuenta predeterminado que representa un usuario típico.                                                                                                                                                                                  |
 | CUENTA DUPLICADA \_ TEMPORAL \_ DE UF \_    | Se trata de una cuenta para los usuarios cuya cuenta principal está en otro dominio. Esta cuenta proporciona acceso de usuario a este dominio, pero no a ningún dominio que confíe en este dominio. El Administrador de usuarios hace referencia a este tipo de cuenta como una cuenta de usuario local. |

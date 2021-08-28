@@ -4,12 +4,12 @@ description: Con un cuadro de lista, los usuarios pueden seleccionar entre un co
 ms.assetid: 620e9ff9-b367-446b-9e97-9c9d6d14f4bb
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 8d4f30394e9704ba01832c60e7b41e3453a5c7abe1715678ca84405e73724c7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0476b53590cc6e8dcc691faf95be1a851889936e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118218198"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481751"
 ---
 # <a name="list-boxes"></a>Cuadros de lista
 
@@ -58,7 +58,7 @@ En este ejemplo, los usuarios cambian constantemente el elemento seleccionado en
 **Listas estándar de selección múltiple y listas de casillas**
 
 -   **¿La selección múltiple es esencial para la tarea o se usa normalmente?** Si es así, use una lista de casillas para que la selección múltiple sea obvia, especialmente si los usuarios de destino no están avanzados. Muchos usuarios no se darán cuenta de que una lista de selección múltiple estándar admite varias selecciones. Use una lista de selección múltiple estándar si las casillas llamaran demasiada atención a la selección múltiple o provocara demasiado desorden en la pantalla.
--   **¿Es importante la estabilidad de la selección múltiple?** Si es así, use una lista de casillas, un generador de listas o una lista de agregar o quitar porque al hacer clic solo cambia un elemento a la vez. Con una lista de selección múltiple estándar, es muy fácil borrar todas las selecciones incluso por accidente.
+-   **¿Es importante la estabilidad de la selección múltiple?** Si es así, use una lista de casillas, un generador de listas o una lista de agregar o quitar porque al hacer clic solo cambia un solo elemento a la vez. Con una lista de selección múltiple estándar, es muy fácil borrar todas las selecciones incluso por accidente.
 -   **¿Se usa el control para elegir cero o más elementos de una lista de valores?** Si no es así, usa otro control. Para elegir un elemento, use en su lugar una lista de selección única.
 
 **Listas de vista previa**
@@ -70,7 +70,7 @@ En este ejemplo, los usuarios cambian constantemente el elemento seleccionado en
 -   **¿Se usa el control para elegir cero o más elementos de una lista de valores?** Si no es así, usa otro control. Para elegir un elemento, use en su lugar una lista de selección única.
 -   **¿Importa el orden de los elementos seleccionados?** Si es así, el generador de listas y los patrones de lista de adición o eliminación admiten el orden, mientras que los otros patrones de selección múltiple no lo hacen.
 -   **¿Es importante que los usuarios vean un resumen de todos los elementos seleccionados?** Si es así, el generador de listas y los patrones de lista de adición o eliminación muestran solo los elementos seleccionados, mientras que los otros patrones de selección múltiple no.
--   **¿Las opciones posibles no están entrelazadas?** Si es así, use una lista de agregar o quitar para que los usuarios puedan elegir valores que no están actualmente en la lista.
+-   **¿Las opciones posibles no están restringidas?** Si es así, use una lista de agregar o quitar para que los usuarios puedan elegir valores que no están actualmente en la lista.
 -   **¿La adición de un valor a la lista requiere un cuadro de diálogo especializado para elegir objetos?** Si es así, use una lista agregar o quitar y muestre el cuadro de diálogo cuando los usuarios hacen clic en Agregar.
 -   **¿El espacio de pantalla es premium?** Si es así, use una lista de agregar o quitar en su lugar porque usa menos espacio de pantalla al no mostrar siempre el conjunto de opciones.
 
@@ -84,48 +84,9 @@ Los cuadros de lista tienen varios patrones de uso:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Listas de selección única</strong> Permitir a los usuarios seleccionar un elemento a la vez. <br/></td>
-<td><img src="images/ctrl-list-boxes-image4.png" alt="Screen shot of list box with one item selected " /><br/> En este ejemplo, los usuarios solo pueden seleccionar un elemento para mostrar.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Listas estándar de selección múltiple</strong> Permitir a los usuarios seleccionar cualquier número de elementos, incluido ninguno.<br/></td>
-<td>Las listas de selección múltiple estándar tienen exactamente la misma apariencia que las listas de selección única, por lo que no hay ninguna pista visual de que un cuadro de lista admita varias selecciones. Dado que los usuarios tienen que detectar esta capacidad, este patrón de lista se usa mejor para tareas en las que la selección múltiple no es esencial y rara vez se usa. <br/> Hay dos modos de selección múltiple diferentes: <a href="glossary.md">varios</a> y <a href="glossary.md">extendidos.</a> <strong>El modo</strong> de selección extendida es, con diferencia, el más común, donde la selección se puede extender arrastrando o con Mayús+clic y Ctrl+clic para seleccionar grupos de valores contiguos y no adyacentes, respectivamente. En el <strong>modo de selección múltiple,</strong>al hacer clic en cualquier elemento se alterna su estado de selección independientemente de las teclas Mayús y Ctrl. Dado este comportamiento inusual, el modo de selección múltiple está en desuso y debe usar listas de casillas en su lugar.<br/> <img src="images/ctrl-list-boxes-image5.png" alt="Screen shot of list box with several items selected " /><br/> En este ejemplo, los usuarios pueden seleccionar cualquier número de elementos mediante el modo de selección múltiple.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Listas de casillas</strong> Al igual que las casillas de lista estándar de selección múltiple, las listas de casillas permiten a los usuarios seleccionar cualquier número de elementos, incluido ninguno.<br/></td>
-<td>A diferencia de las listas estándar de selección múltiple, las casillas indican claramente que es posible realizar varias selecciones. Use este patrón de lista para las tareas en las que la selección múltiple es esencial o se usa habitualmente. <br/> <img src="images/ctrl-list-boxes-image6.png" alt="Screen shot of Toolbars check-box list " /><br/> En este ejemplo, los usuarios suelen seleccionar más de un elemento para usar una lista de casillas.<br/> Dada esta indicación clara de varias selecciones, puede suponer que las listas de casillas son preferibles a las listas estándar de selección múltiple. En la práctica, algunas tareas requieren varias selecciones o la usan en gran medida. el uso de una lista de casillas en estos casos llama demasiada atención a la selección. Por lo tanto, <strong>las listas estándar de selección múltiple son mucho más comunes.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><strong>Listas de vista previa</strong> Puede ser una o varias selecciones, pero muestran una vista previa del efecto de la selección en lugar de simplemente texto.<br/></td>
-<td><img src="images/ctrl-list-boxes-image7.png" alt="Screen shot of Window Color options preview " /><br/> En este ejemplo, una vista previa de cada opción muestra claramente el efecto de la opción, que es más eficaz que usar texto por sí solo.<br/></td>
-</tr>
-<tr class="odd">
-<td><strong>Generadores de listas</strong> Permita a los usuarios crear una lista de opciones agregando un elemento a la vez y, opcionalmente, estableciendo el orden de la lista.<br/></td>
-<td>Un generador de listas consta de dos listas de selección única: la lista de la izquierda es un conjunto fijo de opciones y la lista de la derecha es la lista que se está construyendo. Hay dos botones de comando entre las listas: <br/>
-<ul>
-<li>Botón <strong>Agregar</strong> que mueve la opción seleccionada actualmente a la lista que se está construyendo, insertada antes del elemento seleccionado. (Hacer doble clic en un elemento de opción tiene el mismo efecto).</li>
-<li>Botón <strong>Quitar</strong> que quita el elemento seleccionado de la lista de elementos creados y lo devuelve a la lista de opciones. (Hacer doble clic en un elemento de la lista integrada tiene el mismo efecto). La lista integrada puede tener opcionalmente comandos <strong>Subir</strong> <strong>y</strong> Bajar para ordenar los elementos de lista.</li>
-</ul>
-<img src="images/ctrl-list-boxes-image8.png" alt="Screen shot of Toolbar buttons list builder " /><br/> En este ejemplo, se usa un generador de listas para crear una barra de herramientas seleccionando elementos de un conjunto de opciones disponibles y estableciendo su orden.<br/></td>
-</tr>
-<tr class="even">
-<td><strong>Agregar o quitar listas</strong> Permita a los usuarios crear una lista de opciones agregando uno o varios elementos a la vez y, opcionalmente, estableciendo el orden de la lista (como los generadores de listas).<br/></td>
-<td>A diferencia de un generador de listas, <strong>al</strong> hacer clic en Agregar se muestra un cuadro de diálogo para seleccionar los elementos que se agregarán a la lista. El uso de un cuadro de diálogo independiente permite una flexibilidad significativa a la hora de elegir elementos, puede usar un selector de objetos especializado o incluso un diálogo común. En comparación con el generador de listas, esta variación es más compacta, pero requiere un poco más de esfuerzo para agregar elementos. <br/> <img src="images/ctrl-list-boxes-image9.png" alt="Screen shot of Menu contents list " /><br/> En este ejemplo, los usuarios pueden agregar o quitar herramientas de un menú, así como establecer el orden.<br/> Aunque los patrones de generador de listas y agregar o quitar listas son significativamente más pesados que las otras listas de selección múltiple, ofrecen dos ventajas únicas:<br/>
-<ul>
-<li>Los usuarios tienen control sobre el orden de la lista, tanto durante la creación de la lista como después.</li>
-<li>Los usuarios pueden revisar un resumen de los elementos seleccionados, lo que puede ser una ventaja significativa si el número de opciones es grande.</li>
-</ul>
-Sus desventajas son que requieren mucho más espacio en la pantalla y pueden ser difíciles de usar al crear una lista grande de elementos desde cero. Por lo tanto, se usan mejor para crear listas cortas o modificar listas que ya existen.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| | | <strong>Listas de selección única</strong> Permitir a los usuarios seleccionar un elemento a la vez. <br /> | <img src="images/ctrl-list-boxes-image4.png" alt="Screen shot of list box with one item selected " /><br /> En este ejemplo, los usuarios solo pueden seleccionar un elemento para mostrar.<br /> | | <strong>Listas estándar de selección múltiple</strong> Permitir a los usuarios seleccionar cualquier número de elementos, incluido ninguno.<br /> | Las listas de selección múltiple estándar tienen exactamente la misma apariencia que las listas de selección única, por lo que no hay ninguna pista visual de que un cuadro de lista admita la selección múltiple. Dado que los usuarios tienen que detectar esta capacidad, este patrón de lista se usa mejor para tareas en las que la selección múltiple no es esencial y rara vez se usa. <br /> Hay dos modos de selección múltiple diferentes: <a href="glossary.md">varios</a> y <a href="glossary.md">extendidos.</a> <strong>El modo</strong> de selección extendida es, con diferencia, el más común, donde la selección se puede extender arrastrando o con Mayús+clic y Ctrl+clic para seleccionar grupos de valores contiguos y no adyacentes, respectivamente. En el <strong>modo de selección múltiple, al</strong>hacer clic en cualquier elemento se alterna su estado de selección independientemente de las teclas Mayús y Ctrl. Dado este comportamiento inusual, el modo de selección múltiple está en desuso y debe usar listas de casillas en su lugar.<br /><img src="images/ctrl-list-boxes-image5.png" alt="Screen shot of list box with several items selected " /><br /> En este ejemplo, los usuarios pueden seleccionar cualquier número de elementos mediante el modo de selección múltiple.<br /> | | <strong>Listas de casillas</strong> Al igual que las casillas de lista estándar de selección múltiple, las listas de casillas permiten a los usuarios seleccionar cualquier número de elementos, incluido ninguno.<br /> | A diferencia de las listas estándar de selección múltiple, las casillas indican claramente que es posible realizar varias selecciones. Use este patrón de lista para tareas en las que la selección múltiple es esencial o se usa con frecuencia. <br /><img src="images/ctrl-list-boxes-image6.png" alt="Screen shot of Toolbars check-box list " /><br /> En este ejemplo, los usuarios suelen seleccionar más de un elemento para usar una lista de casillas.<br /> Dada esta indicación clara de varias selecciones, puede suponer que las listas de casillas son preferibles a las listas estándar de selección múltiple. En la práctica, algunas tareas requieren una selección múltiple o la usan en gran medida. el uso de una lista de casillas en estos casos llama demasiada atención a la selección. Por lo tanto, <strong>las listas estándar de selección múltiple son mucho más comunes.</strong><br /> | | <strong>Listas de vista previa</strong> Puede ser una o varias selecciones, pero muestran una vista previa del efecto de la selección en lugar de simplemente texto.<br /> | <img src="images/ctrl-list-boxes-image7.png" alt="Screen shot of Window Color options preview " /><br /> En este ejemplo, una vista previa de cada opción muestra claramente el efecto de la opción, que es más eficaz que usar texto por sí solo.<br /> | | <strong>Generadores de listas</strong> Permita a los usuarios crear una lista de opciones agregando un elemento a la vez y, opcionalmente, estableciendo el orden de la lista.<br /> | Un generador de listas consta de dos listas de selección única: la lista de la izquierda es un conjunto fijo de opciones y la lista de la derecha es la lista que se está construyendo. Hay dos botones de comando entre las listas: <br /><ul><li>Botón <strong>Agregar</strong> que mueve la opción seleccionada actualmente a la lista que se está construyendo, insertada antes del elemento seleccionado. (Hacer doble clic en un elemento de opción tiene el mismo efecto).</li><li>Botón <strong>Quitar</strong> que quita el elemento seleccionado de la lista integrada y lo devuelve a la lista de opciones. (Hacer doble clic en un elemento de la lista integrada tiene el mismo efecto). Opcionalmente, la lista integrada <strong></strong> puede <strong>tener</strong> comandos Subir y Bajar para ordenar los elementos de la lista.</li></ul><img src="images/ctrl-list-boxes-image8.png" alt="Screen shot of Toolbar buttons list builder " /><br /> En este ejemplo, se usa un generador de listas para crear una barra de herramientas seleccionando elementos de un conjunto de opciones disponibles y estableciendo su orden.<br /> | | <strong>Agregar o quitar listas</strong> Permita a los usuarios crear una lista de opciones agregando uno o varios elementos a la vez y, opcionalmente, estableciendo el orden de la lista (como los generadores de listas).<br /> | A diferencia de un generador de listas, <strong>al</strong> hacer clic en Agregar se muestra un cuadro de diálogo para seleccionar los elementos que se agregarán a la lista. El uso de un cuadro de diálogo independiente permite una flexibilidad significativa a la hora de elegir elementos, puede usar un selector de objetos especializado o incluso un diálogo común. En comparación con el generador de listas, esta variación es más compacta, pero requiere un poco más de esfuerzo para agregar elementos. <br /><img src="images/ctrl-list-boxes-image9.png" alt="Screen shot of Menu contents list " /><br /> En este ejemplo, los usuarios pueden agregar o quitar herramientas de un menú, así como establecer el orden.<br /> Aunque el generador de listas y los patrones de agregar o quitar listas son significativamente más pesados que las otras listas de selección múltiple, ofrecen dos ventajas únicas:<br /><ul><li>Los usuarios tienen control sobre el orden de la lista, tanto durante la creación de la lista como después.</li><li>Los usuarios pueden revisar un resumen de los elementos seleccionados, lo que puede ser una ventaja significativa si el número de opciones es grande.</li></ul>Sus desventajas son que requieren mucho más espacio en la pantalla y pueden ser difíciles de usar al crear una lista grande de elementos desde cero. Por lo tanto, se usan mejor para crear listas cortas o modificar listas que ya existen.<br /> | 
+
 
 
 
@@ -135,7 +96,7 @@ Sus desventajas son que requieren mucho más espacio en la pantalla y pueden ser
 
 ### <a name="presentation"></a>Presentación
 
--   **Ordenar los elementos de lista en un orden lógico,** como agrupar opciones relacionadas, colocar primero los elementos usados con más frecuencia o usar el orden alfabético. Ordene los nombres en orden alfabético, los números en orden numérico y las fechas en orden cronológico. Las listas con 12 o más elementos deben ordenarse alfabéticamente para facilitar la búsqueda de elementos.
+-   **Ordene los elementos de la** lista en un orden lógico, como agrupar las opciones relacionadas, colocar primero los elementos usados con más frecuencia o usar el orden alfabético. Ordene los nombres en orden alfabético, los números en orden numérico y las fechas en orden cronológico. Las listas con 12 o más elementos deben ordenarse alfabéticamente para facilitar la búsqueda de elementos.
 
 **Correcto:** ![ captura de pantalla de alineación (izquierda, centro, derecha) ](images/ctrl-list-boxes-image10.png)
 
@@ -147,24 +108,24 @@ En este ejemplo, hay tantos elementos de lista que deben ordenarse en orden alfa
 
 **Correcto:** ![ captura de pantalla de la lista alfabética ](images/ctrl-list-boxes-image12.png)
 
-En este ejemplo, los elementos de lista son más fáciles de encontrar porque están ordenados alfabéticamente. Sin embargo, el elemento "Todos Windows productos" está al principio de la lista, independientemente de su criterio de ordenación.
+En este ejemplo, los elementos de lista son más fáciles de encontrar porque están ordenados en orden alfabético. Sin embargo, el elemento "Todos Windows productos" está al principio de la lista, independientemente de su criterio de ordenación.
 
--   **Coloque las opciones que representan Todos o Ninguno al principio de la lista,** independientemente del criterio de ordenación de los elementos restantes.
--   **Incluya las metapórtamos entre paréntesis.**
+-   **Coloque las opciones que representan Todos o Ninguno al principio de la** lista, independientemente del criterio de ordenación de los elementos restantes.
+-   **Incluya las meta-opciones entre paréntesis.**
 
-![captura de pantalla de la lista desplegable sin ninguna seleccionada ](images/ctrl-list-boxes-image13.png)
+![captura de pantalla de la lista desplegable con ninguna seleccionada ](images/ctrl-list-boxes-image13.png)
 
-En este ejemplo, "(none)" es una meta-opción porque no es un valor válido para la opción, sino que indica que la opción en sí no se está utilizando.
+En este ejemplo, "(none)" es una meta-opción porque no es un valor válido para la opción, sino que indica que la propia opción no se está utilizando.
 
--   **En su lugar, no tiene elementos de lista en blanco que usen meta-options.** Los usuarios no saben cómo interpretar los elementos en blanco, mientras que el significado de las meta-opciones es explícito.
+-   **En su lugar, no tiene elementos de lista en blanco que usen metapádes.** Los usuarios no saben cómo interpretar elementos en blanco, mientras que el significado de las meta-opciones es explícito.
 
 **Incorrecto:** ![ captura de pantalla de la lista desplegable con el espacio en blanco seleccionado ](images/ctrl-list-boxes-image14.png)
 
-En este ejemplo, el significado del elemento en blanco no está claro.
+En este ejemplo, el significado del elemento en blanco no es claro.
 
-**Correcto:** ![ captura de pantalla de la lista desplegable sin ninguna seleccionada ](images/ctrl-list-boxes-image13.png)
+**Correcto:** ![ captura de pantalla de la lista desplegable con ninguna seleccionada ](images/ctrl-list-boxes-image13.png)
 
-En este ejemplo, se usa la meta-opción "(none)" en su lugar.
+En este ejemplo, se usa la meta-opción "(none)".
 
 ### <a name="interaction"></a>Interacción
 
@@ -174,7 +135,7 @@ En este ejemplo, se usa la meta-opción "(none)" en su lugar.
 
 **Correcto:** ![ captura de pantalla de la lista de cambios del asistente completada ](images/ctrl-list-boxes-image15.png)
 
-Este cuadro de lista muestra una lista de cambios de solo lectura; no es necesario seleccionarlo.
+Este cuadro de lista muestra una lista de solo lectura de cambios; no es necesario realizar la selección.
 
 -   **Al deshabilitar un cuadro de lista, deshabilite también las etiquetas asociadas y los botones de comando.**
 -   **No use el cambio del elemento seleccionado en un cuadro de lista para:**
@@ -186,7 +147,7 @@ Este cuadro de lista muestra una lista de cambios de solo lectura; no es necesar
 
 En este ejemplo, al cambiar el elemento seleccionado se cambia la descripción.
 
--   **Evite el desplazamiento horizontal.** Las listas de varias columnas se basan en el desplazamiento horizontal, que suele ser más difícil de usar que el desplazamiento vertical. Las listas de varias columnas que requieren desplazamiento horizontal se pueden usar si tiene muchos elementos ordenados alfabéticamente y suficiente espacio de pantalla para un control ancho.
+-   **Evite el desplazamiento horizontal.** Las listas de varias columnas se basan en el desplazamiento horizontal, que suele ser más difícil de usar que el desplazamiento vertical. Las listas de varias columnas que requieren desplazamiento horizontal se pueden usar cuando tiene muchos elementos ordenados alfabéticamente y espacio suficiente para un control ancho.
 
 **Aceptable:** ![ captura de pantalla de la lista de carpetas en el Explorador de Windows ](images/ctrl-list-boxes-image17.png)
 
@@ -194,46 +155,46 @@ En este ejemplo, se usan varias columnas que requieren desplazamiento horizontal
 
 ### <a name="multiple-selection-lists"></a>Listas de selección múltiple
 
--   **Considere la posibilidad de mostrar el número de elementos seleccionados debajo** de la lista, especialmente si es probable que los usuarios seleccionen varios elementos. Esta información no solo proporciona comentarios útiles, sino que también indica claramente que el cuadro de lista admite varias selecciones.
+-   **Considere la posibilidad de mostrar el número de elementos seleccionados debajo** de la lista, especialmente si es probable que los usuarios seleccionen varios elementos. Esta información no solo proporciona comentarios útiles, sino que también indica claramente que el cuadro de lista admite la selección múltiple.
 
 ![captura de pantalla del cuadro de lista con cuatro elementos seleccionados ](images/ctrl-list-boxes-image5.png)
 
 En este ejemplo, el número de elementos seleccionados se muestra debajo de la lista.
 
--   Puede proporcionar otras métricas de selección que puedan ser más significativas, como los recursos necesarios para las selecciones.
+-   Puede proporcionar otras métricas de selección que podrían ser más significativas, como los recursos necesarios para las selecciones.
 
 ![captura de pantalla de la lista de casillas de características de Windows ](images/ctrl-list-boxes-image18.png)
 
 En este ejemplo, el espacio en disco necesario para instalar los componentes es más significativo que el número de elementos seleccionados.
 
--   Si hay potencialmente muchos elementos de lista y es probable que seleccione o desactive todos ellos, agregue los botones de comando Seleccionar todo y Borrar todos.
+-   Si hay potencialmente muchos elementos de lista y es probable que se seleccionen o desactiven todos, agregue los botones Seleccionar todo y Borrar todos los comandos.
 -   En el caso de las listas de selección múltiple estándar, no use el modo de selección múltiple porque este modo de selección está en desuso. Para un comportamiento equivalente, use una lista de casillas en su lugar.
 
 ### <a name="default-values"></a>Valores predeterminados
 
--   **Seleccione la opción más segura (para evitar la pérdida de datos o acceso al sistema) y la opción más segura de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione la opción más probable o conveniente.
+-   **Seleccione la opción más segura (para evitar la pérdida de datos o el acceso del sistema) y la opción más segura de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione la opción más probable o conveniente.
 
 **Excepción:** No seleccione ningún elemento si el control representa una propiedad en un estado mixto [,](glossary.md)lo que sucede cuando se muestra una propiedad para varios objetos que no tienen la misma configuración.
 
 ## <a name="recommended-sizing-and-spacing"></a>Tamaño y espaciado recomendados
 
-![captura de pantalla del tamaño y espaciado del cuadro de lista ](images/ctrl-list-boxes-image19.png)
+![captura de pantalla del espaciado y el tamaño del cuadro de lista ](images/ctrl-list-boxes-image19.png)
 
 Tamaño y espaciado recomendados para los cuadros de lista.
 
--   **Elija un ancho de cuadro de lista adecuado para los datos válidos más largos.** Los cuadros de lista estándar no se pueden desplazar horizontalmente, por lo que los usuarios solo pueden ver lo que está visible en el control.
--   **Incluya un 30** % adicional (hasta un 200 % para el texto más corto) para cualquier texto (pero no números) que se localizará.
+-   **Elija un ancho de cuadro de lista adecuado para los datos válidos más largos.** Los cuadros de lista estándar no se pueden desplazar horizontalmente, por lo que los usuarios solo pueden ver lo que está visible en el control .
+-   **Incluya un 30 %** adicional (hasta un 200 % para texto más corto) para cualquier texto (pero no números) que se localizará.
 -   **Elija un alto del cuadro de lista que muestre un número entero de elementos.** Evite truncar elementos verticalmente.
 -   **Elija un alto del cuadro de lista que elimine el desplazamiento vertical innecesario.** Los cuadros de lista deben mostrar entre 3 y 20 elementos sin necesidad de desplazarse. Considere la posibilidad de hacer que un cuadro de lista sea ligeramente más largo si elimina la barra de desplazamiento vertical. Las listas con potencialmente muchos elementos deben mostrar al menos cinco elementos para facilitar el desplazamiento mostrando más elementos a la vez y facilitando la posición de la barra de desplazamiento.
--   **Si los usuarios se benefician de hacer que el cuadro de lista sea mayor, haga que el cuadro de lista y su ventana primaria se puedan volver a tamaño.** Esto permite a los usuarios ajustar el tamaño del cuadro de lista según sea necesario. Sin embargo, los cuadros de lista de tamaño ajustable no deben mostrar menos de tres elementos.
+-   **Si los usuarios se benefician de hacer que el cuadro de lista sea mayor, haga que el cuadro de lista y su ventana primaria se puedan redimensionar.** Esto permite a los usuarios ajustar el tamaño del cuadro de lista según sea necesario. Sin embargo, los cuadros de lista de tamaño ajustable no deben mostrar menos de tres elementos.
 
 ## <a name="labels"></a>Etiquetas
 
 **Etiquetas de control**
 
--   Todos los cuadros de lista necesitan etiquetas. Escriba la etiqueta como una palabra o frase, no como una frase; use un signo de dos puntos al final de la etiqueta.
+-   Todos los cuadros de lista necesitan etiquetas. Escriba la etiqueta como una palabra o frase, no como una frase; use dos puntos al final de la etiqueta.
 
-**Excepción:** Omita la etiqueta si es simplemente una nueva instrucción de la instrucción principal de un [cuadro de diálogo.](glossary.md) En este caso, la instrucción principal toma los dos puntos (a menos que sea una pregunta) y la clave de acceso.
+**Excepción:** Omita la etiqueta si es simplemente una nueva instrucción de la instrucción principal de [un cuadro de diálogo.](glossary.md) En este caso, la instrucción principal toma los dos puntos (a menos que sea una pregunta) y la clave de acceso.
 
 **Aceptable:** ![ captura de pantalla de la lista con etiqueta redundante ](images/ctrl-list-boxes-image20.png)
 
@@ -243,7 +204,7 @@ En este ejemplo, la etiqueta del cuadro de lista simplemente restablece la instr
 
 En este ejemplo, se quita la etiqueta redundante, por lo que la instrucción principal toma los dos puntos y la clave de acceso.
 
--   Si un cuadro de lista está subordinado a un botón de radio o a una casilla y la etiqueta de ese control lo introduce y termina con dos puntos, no coloque una etiqueta adicional en el control de cuadro de lista.
+-   Si un cuadro de lista está subordinado a un botón de radio o a una casilla y se introduce mediante la etiqueta de ese control que termina con dos puntos, no coloque una etiqueta adicional en el control de cuadro de lista.
 
 ![captura de pantalla de botón y lista con la misma etiqueta ](images/ctrl-list-boxes-image22.png)
 
@@ -289,7 +250,7 @@ En este ejemplo, las casillas indican claramente que es posible realizar una sel
 
 -   Si necesita agregar texto informativo sobre un cuadro de lista, agrégrélo encima de la etiqueta. Use oraciones completas con puntuación final.
 -   Use [mayúsculas de estilo oración.](glossary.md)
--   La información adicional que es útil pero no necesaria debe mantenerse corta. Coloque este texto entre paréntesis entre la etiqueta y los dos puntos, o sin paréntesis debajo del control .
+-   La información adicional que resulta útil, pero no necesaria, debe mantenerse corta. Coloque este texto entre paréntesis entre la etiqueta y los dos puntos, o sin paréntesis debajo del control .
 
 ![captura de pantalla de la lista de casillas y texto descriptivo ](images/ctrl-list-boxes-image30.png)
 

@@ -5,12 +5,12 @@ ms.assetid: fdee4f0a-b39e-4011-af4f-9fe408f6ca6c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0efcbbbce67d9928c9ecda3840f34a1cbf6faae79ca4d9fe72830a5b57881177
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85c0949d13139b132cd7c1a7a96ff6a95cd3b5e4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118692199"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884071"
 ---
 # <a name="common-errors-adsi"></a>Errores comunes (ADSI)
 
@@ -32,7 +32,7 @@ Para obtener una lista completa de los códigos de error ADSI, vea [Códigos de 
 
 ## <a name="com-errors"></a>Errores COM
 
-Dado que ADSI se compone de objetos COM, devolverá códigos de error COM estándar. En la tabla siguiente se enumeran los códigos de error COM más comunes en la programación adsi.
+Puesto que ADSI se compone de objetos COM, devolverá códigos de error COM estándar. En la tabla siguiente se enumeran los códigos de error COM más comunes en la programación ADSI.
 
 
 
@@ -51,9 +51,9 @@ Consulte [Códigos de error COM genéricos](generic-com-error-codes.md) para ver
 
 Cualquier código de error con el formato hexadecimal 8007xxxx es un código de error estándar de Win32. Si convierte los cuatro últimos dígitos de hexadecimal a decimal, puede acceder al error desde la línea de comandos Windows 2000:
 
-**net helpmsg <number>**
+**net helpmsg &lt; number&gt;**
 
-En la línea de comandos anterior, " number " es el número decimal obtenido al convertir los cuatro últimos dígitos del &lt; código de error de &gt; hexadecimal. Esta línea de comandos proporcionará una descripción más útil del error de Win32, que puede ser de gran ayuda para depurar el script.
+En la línea de comandos anterior, " number " es el número decimal obtenido al convertir los últimos cuatro dígitos del &lt; código de error a partir de &gt; hexadecimal. Esta línea de comandos proporcionará una descripción más útil del error de Win32, que puede ser de gran ayuda para depurar el script.
 
  
 

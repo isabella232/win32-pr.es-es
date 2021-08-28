@@ -4,12 +4,12 @@ description: Obtenga información sobre la propiedad Name del Control agente. Es
 ms.assetid: 83d6682c-ac25-4333-8640-7ef468f2de8b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7976611cc5018e8572bc4c398979be1a2d52a80e00c23b78e7c7351fd6d7e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 96e51db1fbd5453ce72cce6ee2f5613bc8b8a0e7
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118475885"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886291"
 ---
 # <a name="name-property-agent-control"></a>Propiedad Name (Control Agente)
 
@@ -33,7 +33,7 @@ Devuelve el nombre usado en el código para identificar el control. Esta propied
 
 ## <a name="remarks"></a>Comentarios
 
-En algunos entornos de programación, como Visual Basic, al agregar el control se genera automáticamente un nombre predeterminado para el control que se puede cambiar en tiempo de diseño. Para los scripts HTML, puede definir el nombre en la <OBJECT> etiqueta . Si define el nombre, siga las convenciones del lenguaje de programación para definir nombres de objeto.
+En algunos entornos de programación, como Visual Basic, al agregar el control se genera automáticamente un nombre predeterminado para el control que se puede cambiar en tiempo de diseño. Para los scripts HTML, puede definir el nombre en la &lt; etiqueta &gt; OBJECT. Si define el nombre, siga las convenciones del lenguaje de programación para definir nombres de objeto.
 
  
 

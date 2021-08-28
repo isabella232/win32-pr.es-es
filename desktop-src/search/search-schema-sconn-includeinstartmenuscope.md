@@ -1,19 +1,19 @@
 ---
-description: El elemento <includeInStartMenuScope> booleano opcional especifica si este conector de búsqueda debe incluirse en el menú Inicio de búsqueda.
+description: El elemento opcional booleano includeInStartMenuScope especifica si este conector de búsqueda debe incluirse en el &lt; &gt; menú Inicio de búsqueda.
 ms.assetid: 934a3834-9ddc-4c15-b738-68ea74adc24c
-title: elemento includeInStartMenuScope (esquema del conector de búsqueda)
+title: Elemento includeInStartMenuScope (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60941ef06f3f7220c7bbbae652f5e8256c6256660ea8e9ece2ddd330858958b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e20696dc6d2bc41b3f693e771a59541204e376e7
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119937955"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882394"
 ---
-# <a name="includeinstartmenuscope-element-search-connector-schema"></a>elemento includeInStartMenuScope (esquema del conector de búsqueda)
+# <a name="includeinstartmenuscope-element-search-connector-schema"></a>Elemento includeInStartMenuScope (esquema del conector de búsqueda)
 
-El elemento <includeInStartMenuScope> booleano opcional especifica si este conector de búsqueda debe incluirse en el menú Inicio de búsqueda. El valor predeterminado es true para los conectores de búsqueda que usan el sistema de archivos como origen de datos y false para los conectores de búsqueda utilizados por los controladores de propiedades. Este elemento no tiene elementos secundarios ni atributos.
+El elemento opcional booleano includeInStartMenuScope especifica si este conector de búsqueda debe incluirse en el &lt; &gt; menú Inicio de búsqueda. El valor predeterminado es true para los conectores de búsqueda que usan el sistema de archivos como origen de datos y false para los conectores de búsqueda utilizados por los controladores de propiedades. Este elemento no tiene elementos secundarios ni atributos.
 
 ## <a name="syntax"></a>Syntax
 

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: da5c999f9fcec38878f339cfb2a927c2be2e5b70
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0986633a450052431dfcef1426488dddc0417d33
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479031"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988448"
 ---
 # <a name="jetossnapshottruncateloginstance-function"></a>JetOSSnapshotTruncateLogInstance (Función)
 
@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetossnapshottruncateloginstance-function"></a>JetOSSnapshotTruncateLogInstance (Función)
 
-La **función JetOSSnapshotTruncateLogInstance** trunca el registro de una instancia especificada durante una sesión de instantáneas.
+La **función JetOSSnapshotTruncateLogInstance** trunca el registro de una instancia especificada durante una sesión de instantánea.
 
 **Windows Vista:****JetOSSnapshotTruncateLogInstance** se introdujo en Windows Vista.  
 
@@ -61,7 +61,7 @@ Opciones de esta llamada. Este parámetro puede tener una combinación de los si
 *grbit* puede ser uno de los siguientes valores:
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitAllDatabasesSnapshot</p> | <p>Todas las bases de datos están conectadas para que el motor de almacenamiento pueda calcular y realizar el truncamiento del registro.</p> | 
 | <p>0 (cero)</p> | <p>No se producirá ningún truncamiento.</p> | 
@@ -83,21 +83,27 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 Si esta función se realiza correctamente, los archivos de registro de una o todas las instancias que forman parte de la sesión de instantáneas se truncarán, si es posible.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Solo se debe llamar a esta función si la instantánea se creó con la JET_bitContinueAfterThaw predeterminada. De lo contrario, la sesión de instantánea finaliza después de la llamada a [JetOSSnapshotThaw](./jetossnapshotthaw-function.md).
+Solo se debe llamar a esta función si la instantánea se creó con la JET_bitContinueAfterThaw predeterminada. De lo contrario, la sesión de instantánea finaliza después de la llamada [a JetOSSnapshotThaw](./jetossnapshotthaw-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte también
 
 [Parámetros de control de errores](./error-handling-parameters.md)  
-[Errores extensibles Storage motor de ejecución](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de instalación](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotEnd](./jetossnapshotend-function.md)  
 [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md)  

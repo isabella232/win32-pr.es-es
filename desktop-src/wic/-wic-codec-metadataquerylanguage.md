@@ -4,12 +4,12 @@ ms.assetid: 5ffa0a69-b53d-4be3-b802-deaaa743e6bd
 title: Información general sobre el lenguaje de consulta de metadatos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c69effefd288f13c72239a41c5ace1a518775337cc496a2defa864d179cd6cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41e141c543cae90ff99d8c0509a0f5802dba1139
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117668242"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885217"
 ---
 # <a name="metadata-query-language-overview"></a>Información general sobre el lenguaje de consulta de metadatos
 
@@ -28,7 +28,7 @@ En este tema se incluyen las siguientes secciones.
 -   [Resumen del lenguaje de consulta de metadatos](#metadata-query-language-summary)
 -   [Temas relacionados](#related-topics)
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 Para comprender este tema, debe estar familiarizado con el sistema de metadatos de WIC tal y como se describe en Información general sobre metadatos de [WIC](-wic-about-metadata.md) y acceso a los metadatos, como se describe en Información general sobre la lectura y escritura de metadatos de [imagen.](-wic-codec-readingwritingmetadata.md)
 
@@ -36,7 +36,7 @@ Para comprender este tema, debe estar familiarizado con el sistema de metadatos 
 
 Interactúa con la plataforma de metadatos principalmente a través de dos componentes del Modelo de objetos componentes (COM): un lector de consultas, representado por la interfaz [**IWICMetadataQueryReader,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) y un escritor de consultas, representado por la interfaz [**IWICMetadataQueryWriter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataquerywriter) Estos componentes permiten leer o escribir metadatos mediante el lenguaje de consulta de metadatos. El lenguaje de consulta describe la sintaxis de una expresión de ruta de acceso y los componentes de consulta usan esta expresión de ruta de acceso para acceder a los metadatos deseados. Esta expresión de ruta de acceso describe la ubicación de un bloque o elemento de metadatos.
 
-Un bloque de metadatos es un grupo con nombre de metadatos en un formato específico. Un bloque de metadatos puede contener elementos de metadatos individuales, como un tiempo de creación o autor, y bloques de metadatos adicionales. El nombre de un bloque de metadatos viene determinado por su formato. Por ejemplo, un bloque de metadatos que contiene metadatos de App1 se denominaría "app1". Los formatos de metadatos comunes incluyen App1, Exif, IFD y XMP.
+Un bloque de metadatos es un grupo con nombre de metadatos en un formato específico. Un bloque de metadatos puede contener elementos de metadatos individuales, como un autor o tiempo de creación, y bloques de metadatos adicionales. El nombre de un bloque de metadatos viene determinado por su formato. Por ejemplo, un bloque de metadatos que contiene metadatos de App1 se denominaría "app1". Los formatos de metadatos comunes incluyen App1, Exif, IFD y XMP.
 
 Un elemento de metadatos es un par nombre-valor que describe características como autor, título y clasificación.
 
@@ -57,11 +57,11 @@ En el diagrama siguiente se muestra la composición de una imagen JPEG de ejempl
 
 Para acceder a los metadatos mediante las API de WIC, se debe usar una expresión de consulta completa en la mayoría de los casos. En este tema se de abordan expresiones completa para acceder a los metadatos. Si necesita información sobre los casos en los que se usan expresiones no completa, consulte la sección Expresión de directiva de metadatos de fotos más adelante en este documento.
 
-¿Qué es una expresión de consulta completa? En WIC, una expresión completa es una cadena que comienza con la barra diagonal de caracteres de ruta de acceso (/), seguida de una ruta de navegación a un bloque de metadatos o a un elemento de metadatos específico. Cada paso dentro de la ruta de navegación está separado por una barra diagonal, formando una expresión para acceder a un bloque de metadatos o a un elemento de metadatos. Por ejemplo, la siguiente es una expresión de consulta completa que accede a la clasificación de fotos de Microsoft en un bloque IFD anidado en un bloque App1:
+¿Qué es una expresión de consulta completa? En WIC, una expresión completa es una cadena que comienza con la barra diagonal de caracteres de ruta de acceso (/), seguida de una ruta de navegación a un bloque de metadatos o a un elemento de metadatos específico. Cada paso dentro de la ruta de navegación está separado por una barra diagonal, formando una expresión para tener acceso a un bloque de metadatos o un elemento de metadatos. Por ejemplo, la siguiente es una expresión de consulta completa que accede a la clasificación de fotos de Microsoft en un bloque IFD anidado en un bloque App1:
 
 -   /app1/ifd/{ushort=18249}
 
-Cuando WIC analiza esta expresión, primero busca el bloque de metadatos App1 dentro de los metadatos de la imagen. Si se encuentra el bloque App1, continúa su búsqueda en busca del bloque de metadatos IFD anidado. Si se encuentra el bloque IFD, busca el elemento de metadatos específico, en este caso la clasificación MicrosoftPhoto bajo la etiqueta 18249, dentro del bloque de metadatos IFD. Si en cualquier momento WIC no encuentra un bloque o elemento de metadatos, anula la consulta.
+Cuando WIC analiza esta expresión, primero busca el bloque de metadatos App1 dentro de los metadatos de la imagen. Si se encuentra el bloque App1, continúa su búsqueda en busca del bloque de metadatos IFD anidado. Si se encuentra el bloque IFD, busca el elemento de metadatos específico, en este caso la clasificación MicrosoftPhoto bajo la etiqueta 18249, dentro del bloque de metadatos IFD. Si en cualquier momento WIC no encuentra un elemento o un bloque de metadatos, anula la consulta.
 
 ### <a name="block-selection"></a>Selección de bloques
 
@@ -90,11 +90,11 @@ La notación de índice es más común cuando se trabaja con fragmentos png de t
 
 ### <a name="item-selection"></a>Selección de elementos
 
-Puede acceder a los elementos de metadatos de un bloque de metadatos mediante la creación de expresiones de selección de bloques. Tenga en cuenta las propiedades de clasificación XMP y Microsoft Photo en el ejemplo JPEG. Estos metadatos existen en dos bloques de metadatos: los bloques App1/IFD y XMP. Por lo tanto, se puede usar más de una expresión para acceder a los mismos datos. La expresión siguiente tiene acceso a la clasificación MicrosoftPhoto en el bloque XMP:
+Puede acceder a los elementos de metadatos de un bloque de metadatos mediante la creación de expresiones de selección de bloques. Considere las propiedades de clasificación XMP y Microsoft Photo en el ejemplo JPEG. Estos metadatos existen en dos bloques de metadatos: los bloques App1/IFD y XMP. Por lo tanto, se puede usar más de una expresión para acceder a los mismos datos. La expresión siguiente tiene acceso a la clasificación MicrosoftPhoto en el bloque XMP:
 
 -   /xmp/xmp:Rating
 
-La parte "xmp:" de la expresión es un identificador descriptivo del esquema. XMP es un estándar extensible y permite a las entidades de terceros publicar sus propios esquemas que definen cómo almacenar determinados elementos de metadatos. Un esquema XMP se identifica completamente mediante una dirección URL, pero WIC proporciona un conjunto de identificadores descriptivos para esquemas conocidos. Para obtener más información, vea el [tema Consultas de metadatos de formato de imagen](-wic-native-image-format-metadata-queries.md) nativa.
+La parte "xmp:" de la expresión es un identificador descriptivo del esquema. XMP es un estándar extensible y permite a las entidades de terceros publicar sus propios esquemas que definen cómo almacenar determinados elementos de metadatos. Un esquema XMP se identifica completamente mediante una dirección URL, pero WIC proporciona un conjunto de identificadores descriptivos para esquemas conocidos. Para obtener más información, vea el tema Consultas de [metadatos de formato de imagen](-wic-native-image-format-metadata-queries.md) nativa.
 
 En el caso de las imágenes JPEG, la información de clasificación también se puede almacenar dentro del bloque IFD anidado app1. Sin embargo, a diferencia del ejemplo de clasificación XMP, el bloque IFD no usa un nombre de esquema para acceder a la información de clasificación. En su lugar, se usa una expresión de datos. La siguiente expresión se usa para acceder a la clasificación MicrosoftPhoto en el bloque IFD anidado app1:
 
@@ -145,7 +145,7 @@ A diferencia del ejemplo de clasificación XMP, no hay ninguna colisión de nomb
 
 El lenguaje de consulta no distingue mayúsculas de minúsculas y trata todos los caracteres en minúsculas. Sin embargo, algunos formatos de metadatos (como XMP) distinguen mayúsculas de minúsculas. Cuando trabaje con un formato de metadatos que distingue mayúsculas de minúsculas, use el carácter de barra diagonal inversa ( ) cuando desee especificar \\ un carácter en mayúsculas.
 
-El analizador de idioma consume el carácter de escape y el siguiente carácter que lo sigue se interpreta directamente. Por ejemplo, la expresión {char= } se resuelve como \\ \\ ' \\ 'y {char= C} se resuelve \\ como una C mayúscula. Sin el carácter de escape, {char= } sería una expresión no válida y {char=C} se interpretaría como una c \\ minúscula. Asegúrese de usar el carácter de escape de barra diagonal inversa antes de todas las letras mayúsculas en formatos de metadatos que distinguen mayúsculas de minúsculas.
+El analizador de idioma consume el carácter de escape y el siguiente carácter que lo sigue se interpreta directamente. Por ejemplo, la expresión {char= } se resuelve como ' ' y \\ \\ \\ {char= C} se resuelve \\ como una C mayúscula. Sin el carácter de escape, {char= } sería una expresión no válida y {char=C} se interpretaría como una c \\ minúscula. Asegúrese de usar el carácter de escape de barra diagonal inversa antes de todas las letras mayúsculas en formatos de metadatos que distinguen mayúsculas de minúsculas.
 
 ### <a name="sample-expressions"></a>Ejemplos de expresiones
 
@@ -155,7 +155,7 @@ En la tabla siguiente se proporcionan algunas expresiones de ejemplo y descripci
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ifd/xmp/exif:Author            | Corresponde a la siguiente ruta de navegación: bloque IFD -> bloque XMP -> propiedad "Author" en el esquema "Exif".                                                                                                                                                                                                                                            |
 | /\[1 \] \[ ifd/0 \] xmp/exif:Author | Igual que el primer elemento de esta tabla, salvo que el prefijo describe qué elemento navegar en caso de colisión \[ \# \] de nombres.                                                                                                                                                                                                                                |
-| /ifd/{ushort=700}/Author       | Igual que el primer elemento de esta tabla, salvo que usa una expresión de datos para hacer referencia al bloque XMP en lugar del nombre de bloque "xmp" (el bloque XMP se incrusta bajo el identificador de etiqueta corta sin signo 700). Además, la propiedad "Author" no especifica un esquema. El analizador de consultas intentará hacer coincidir la propiedad en todos los esquemas y devolverá la primera coincidencia. |
+| /ifd/{ushort=700}/Author       | Igual que el primer elemento de esta tabla, salvo que usa una expresión de datos para hacer referencia al bloque XMP en lugar del nombre de bloque "xmp" (el bloque XMP está incrustado bajo el identificador de etiqueta corta sin signo 700). Además, la propiedad "Author" no especifica un esquema. El analizador de consultas intentará hacer coincidir la propiedad en todos los esquemas y devolverá la primera coincidencia. |
 | /ifd/xmp                       | Proporciona una ruta de navegación a un bloque de metadatos. Si se encuentra el bloque , se devuelve un nuevo lector o escritor de metadatos.                                                                                                                                                                                                                                                 |
 | /\[\*\]tEXt/Keyword            | Obtiene o establece la propiedad Keyword para un fragmento PNG. Dado que la especificación de metadatos PNG permite varios fragmentos de un tipo determinado, la notación obtiene o establece el fragmento PNG de \[ \* \] datos con la propiedad adecuada. Según la especificación PNG, dos fragmentos no pueden tener las mismas propiedades.                                                                |
 
@@ -165,7 +165,7 @@ En la tabla siguiente se proporcionan algunas expresiones de ejemplo y descripci
 
 Cada bloque de metadatos también se identifica de forma única mediante el GUID de metadatos que se puede usar en lugar del nombre descriptivo del bloque. La sintaxis siguiente se puede usar en lugar de proporcionar nombres de bloque: "/{guid=GUID}/ \[ n \] {guid=GUID}/schema:tagidentifier"
 
-En la tabla siguiente se proporcionan algunos ejemplos no válidos y los motivos por los que se rechazarían. 
+En la tabla siguiente se proporcionan algunos ejemplos no válidos y las razones por las que se rechazarían. 
 
 | Expresión no válida         | Descripción del rechazo                                                                                                                                                  |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -179,7 +179,7 @@ En la tabla siguiente se proporcionan algunos ejemplos no válidos y los motivos
 
 ## <a name="photo-metadata-policy-expressions"></a>Expresiones de directiva de metadatos de fotos
 
-Como se indicó anteriormente, una expresión de consulta completa comienza con una barra diagonal (/). Las expresiones que no comienzan con la barra diagonal se evalúan como expresiones de directiva. Una expresión de directiva le permite consultar los metadatos de la foto para obtener información relacionada con Windows [propiedades del shell](https://msdn.microsoft.com/library/ms788673(VS.85).aspx). En la sección Selección de datos anterior de este documento, se usó la expresión "/xmp/xmp:Rating" para acceder a la propiedad de clasificación XMP. Esta propiedad también se puede consultar mediante la siguiente expresión de directiva:
+Como se indicó anteriormente, una expresión de consulta completa comienza con una barra diagonal (/). Las expresiones que no comienzan con la barra diagonal se evalúan como expresiones de directiva. Una expresión de directiva le permite consultar los metadatos de la foto para obtener información relacionada con la imagen Windows [propiedades de Shell](https://msdn.microsoft.com/library/ms788673(VS.85).aspx). En la sección Selección de datos anterior de este documento, se usó la expresión "/xmp/xmp:Rating" para acceder a la propiedad de clasificación XMP. Esta propiedad también se puede consultar mediante la siguiente expresión de directiva:
 
 -   System.SimpleRating
 
@@ -202,7 +202,7 @@ Las expresiones de directiva de metadatos de fotos proporcionan un mayor nivel d
 
 ## <a name="metadata-query-language-summary"></a>Resumen del lenguaje de consulta de metadatos
 
-La tabla siguiente es una definición formal del lenguaje de consulta de metadatos de WIC. Cada símbolo de gramática representa una expresión que se forma con otros símbolos. La expresión puede ser otro símbolo o una secuencia de otros símbolos separados por la barra vertical ( \| ), que indica una opción "o". La expresión completa de la derecha es una posible sustitución del símbolo especificado a la izquierda. 
+La tabla siguiente es una definición formal del lenguaje de consulta de metadatos de WIC. Cada símbolo de gramática representa una expresión que se conste de otros símbolos. La expresión puede ser otro símbolo o una secuencia de otros símbolos separados por la barra vertical ( \| ), que indica una opción "o". La expresión completa de la derecha es una posible sustitución del símbolo especificado a la izquierda. 
 
 | Símbolo                   | Expression                                                                                                                                                                  |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -210,13 +210,13 @@ La tabla siguiente es una definición formal del lenguaje de consulta de metadat
 | \<property path>    | \<metadata item> \| \<property path> '/' \<property path>                                                                                                    |
 | \<metadata item>    | \<index name> \| \<item name> \| \<schema name> ':' \<item name>                                                                                        |
 | \<schema name>      | \<item name>                                                                                                                                                           |
-| \<item name>        | \<metadata item> \| <indexed item><index>                                                                                                                  |
+| \<item name>        | \<metadata item>\| <indexed item>&lt; Índice&gt;                                                                                                                  |
 | \<indexed item>     | \<item> \| \<implied metadata>\<item>                                                                                                                        |
 | \<implied metadata> | '<' \<name> '>'                                                                                                                                                    |
-| \<item>             | \<name> \| \<index> \<data> \| \<data>                                                                                                                  |
+| \<item>             | \<name>\| \& &gt; \<data> lt;index \|\<data>                                                                                                                  |
 | \<data>             | '{' \<data type> '=' \<value> '}'                                                                                                                                 |
-| \<index>            | '\[' \<number> \| \<star> '\]'                                                                                                                                    |
-| \<data type>        | 'char' \| 'uchar' \| \| 'short' 'ushort' \| \| 'long' 'ulong' \| 'int' \| 'uint' \| 'longlong' \| 'ulonglong' \| 'float' \| 'double' \| 'str' \| 'wstr' \| 'guid' \| 'bool' |
+| \&lt;index&gt;            | '\[' \<number> \| \<star> '\]'                                                                                                                                    |
+| \<data type>        | 'char' \| 'uchar' \| 'short' \| 'ushort' \| \| 'long' 'ulong' \| \| 'int' 'uint' \| 'longlong' \| 'ulonglong' \| 'float' \| 'double' \| 'str' \| 'wstr' \| 'guid' \| 'bool' |
 | \<data value>       | \<number> \| \<name> \| \<guid>                                                                                                                              |
 | \<star>             | '\*'                                                                                                                                                                        |
 | \<number>           | number                                                                                                                                                                      |
@@ -240,7 +240,7 @@ La tabla siguiente es una definición formal del lenguaje de consulta de metadat
 [Introducción a los metadatos de WIC](-wic-about-metadata.md)
 </dt> <dt>
 
-[Información general sobre la lectura y escritura de metadatos de imagen](-wic-codec-readingwritingmetadata.md)
+[Información general sobre la lectura y escritura de metadatos de imágenes](-wic-codec-readingwritingmetadata.md)
 </dt> <dt>
 
 [Información general sobre extensibilidad de metadatos](-wic-codec-metadatahandlers.md)

@@ -4,12 +4,12 @@ ms.assetid: 3b5f4360-887a-4a21-8f16-faa84da34328
 title: Tabla UpgradedFilesToIgnore (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f51143fcf7db350d5ee8aa1e43d49984914bcf9f05a2f8f5f787834a69b7e1a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b3af0a4a8c3385c2d028cdb66ad276d3f480ca8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119809555"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884501"
 ---
 # <a name="upgradedfilestoignore-table-patchwizdll"></a>Tabla UpgradedFilesToIgnore (Patchwiz.dll)
 
@@ -21,8 +21,8 @@ La tabla UpgradedFilesToIgnore tiene las siguientes columnas.
 
 | Columna   | Tipo | Clave | Nullable |
 |----------|------|-----|----------|
-| Upgraded | texto | Y   | N        |
-| FTK      | texto | Y   | N        |
+| Upgraded | text | Y   | N        |
+| FTK      | text | Y   | No        |
 
 
 
@@ -42,7 +42,7 @@ Clave externa a la columna Upgraded de [la tabla UpgradedImages (Patchwiz.dll).]
 <span id="FTK"></span><span id="ftk"></span>FTK
 </dt> <dd>
 
-Clave externa en la [tabla Archivo](file-table.md) de la imagen actualizada. Un valor con el formato " " coincide con todas las claves de tabla de archivos de <prefix> \* la tabla File que comienzan con ese prefijo. Ningún texto puede seguir el asterisco.
+Clave externa en la [tabla Archivo](file-table.md) de la imagen actualizada. Un valor con el formato " prefijo " coincide con todas las claves de tabla de archivos de &lt; la tabla File que &gt; \* comienzan por ese prefijo. Ningún texto puede seguir el asterisco.
 
 </dd> </dl>
 

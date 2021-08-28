@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 65bf07a8ff915668c6c059b831bd049d9a25d9a0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 28f85445e6affc006c5c0898df1c85d71693a66d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152214"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122632093"
 ---
 # <a name="span-idvspixenginesymbolserverinfospansymbolserverinfo-structure"></a><span id="vspixengine.symbolserverinfo"></span>Estructura SymbolServerInfo
 
@@ -47,20 +47,20 @@ Cadena COM que contiene el directorio de caché del servidor de símbolos.
 Cadena COM que contiene el nombre público del servidor de símbolos.
 
 **symbolExcludeList**  
-Cadena COM que especifica la lista de símbolos que se van a excluir.
+Cadena COM que especifica la lista de símbolos que se excluirán.
 
 **symbolIncludeList**  
-Cadena COM que especifica la lista de símbolos que se van a incluir.
+Cadena COM que especifica la lista de símbolos que se incluirán.
 
 **useExcludeList**  
-True si se omite la lista de exclusión; en caso contrario, false.
+True si se omite la lista de exclusión; de lo contrario, false.
 
 **useMSSymbolServer**  
-True si se usa el servidor de símbolos de Microsoft; en caso contrario, false.
+true si se usa el servidor de símbolos de Microsoft; de lo contrario, false.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

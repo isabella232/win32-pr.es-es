@@ -1,19 +1,19 @@
 ---
-description: El elemento booleano opcional especifica si la ubicación descrita por el conector de búsqueda se indexa (local o remotamente mediante <isIndexed> Windows Search 4 o superior).
+description: El elemento opcional booleano isIndexed especifica si la ubicación descrita por el conector de búsqueda está indexada (ya sea de forma local o remota mediante Windows Search 4 o &lt; &gt; superior).
 ms.assetid: e72b5614-454c-481f-bc31-897d2dea8042
 title: Elemento isIndexed (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2afcd1a95ec14b3bbea80374d8925a88231feb0110a421c2c850a297672d0c1b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3588d451631ab8d0bb8313092b5b1ee7bb5c9dc4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119711055"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881842"
 ---
 # <a name="isindexed-element-search-connector-schema"></a>Elemento isIndexed (esquema del conector de búsqueda)
 
-El elemento booleano opcional especifica si la ubicación descrita por el conector de búsqueda se indexa (local o remotamente mediante <isIndexed> Windows Search 4 o superior). El valor predeterminado es true para las carpetas locales. Este elemento no tiene elementos secundarios ni atributos.
+El elemento opcional booleano isIndexed especifica si la ubicación descrita por el conector de búsqueda está indexada (ya sea de forma local o remota mediante Windows Search 4 o &lt; &gt; superior). El valor predeterminado es true para las carpetas locales. Este elemento no tiene elementos secundarios ni atributos.
 
 ## <a name="syntax"></a>Syntax
 

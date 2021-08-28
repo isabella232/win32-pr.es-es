@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Creación de clientes WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88f4270d41a28d5426a2a42f30979cf8929e8e0c51212a0c44d0fe0fd5bf3412
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95123d4462408a25591df2babb8b1ddd83942e5e
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119568675"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883069"
 ---
 # <a name="creating-wmi-clients"></a>Creación de clientes WMI
 
@@ -24,8 +24,8 @@ La funcionalidad básica de WMI consiste en recuperar objetos del repositorio WM
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -39,7 +39,7 @@ La funcionalidad básica de WMI consiste en recuperar objetos del repositorio WM
 <td>WMI y PowerShell están estrechamente integrados; por lo tanto, la recuperación de objetos WMI con PowerShell es simplemente una cuestión de llamar al cmdlet Get-WmiObject. Tenga en cuenta que, por coherencia, el primer fragmento de código indica explícitamente muchos de los valores predeterminados; el segundo supone que los valores predeterminados son correctos.<br/> <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -67,7 +67,7 @@ Get-WmiObject Win32_ComputerSystem | Format-Table &quot;Name&quot;</code></pre><
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -95,7 +95,7 @@ Next</code></pre></td>
 <span data-codelanguage="CSharp"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -107,7 +107,7 @@ Next</code></pre></td>
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -126,7 +126,7 @@ foreach (CimInstance cimObj in queryInstance)
 <span data-codelanguage="CSharp"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -138,7 +138,7 @@ foreach (CimInstance cimObj in queryInstance)
 <td><pre><code>using Microsoft.Management.Infrastructure;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
-IEnumerable<CimInstance> queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
+IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
 
 foreach (CimInstance cimObj in queryInstance)
 {
@@ -170,10 +170,10 @@ En la siguiente tabla se enumeran los temas incluidos en esta sección.
 | [Recepción de un evento WMI](receiving-a-wmi-event.md)                                                           | Describe cómo ver eventos WMI.                                                                                                                                                              |
 | [Supervisión de eventos](monitoring-events.md)                                                                   | Describe cómo supervisar eventos WMI.                                                                                                                                                           |
 | [Consulta con WQL](querying-with-wql.md)                                                                   | Presenta el lenguaje de consulta de WMI (WQL).                                                                                                                                                       |
-| [Consultar el estado de las características opcionales](querying-the-status-of-optional-features.md)                     | En Windows 7, WMI implementó la clase [**\_ OptionalFeature de Win32.**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) Esta clase recupera el estado de las características opcionales que están presentes en un equipo. |
+| [Consultar el estado de las características opcionales](querying-the-status-of-optional-features.md)                     | En Windows 7, WMI implementó la [**clase \_ OptionalFeature de Win32.**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) Esta clase recupera el estado de las características opcionales que están presentes en un equipo. |
 | [Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md)                       | Se centra en la sintaxis para describir la ubicación de una entidad administrada de WMI.                                                                                                                     |
-| [Acceso a otras características del sistema operativo con WMI](accessing-other-operating-system-features-with-wmi.md) | Describe cómo escribir clientes WMI que tienen acceso a controladores de dispositivo, Active Directory y dispositivos SNMP.                                                                                             |
-| [Acceso a datos en el espacio de nombres Interop](accessing-data-in-the-interop-namespace.md)                       | Los proveedores de asociaciones permiten Windows de Instrumental de administración de recursos (WMI) para recorrer y recuperar perfiles e instancias de clase asociadas de distintos espacios de nombres.                      |
+| [Acceso a otras características del sistema operativo con WMI](accessing-other-operating-system-features-with-wmi.md) | Describe cómo escribir clientes WMI que acceden a controladores de dispositivo, Active Directory y dispositivos SNMP.                                                                                             |
+| [Acceso a datos en el espacio de nombres Interop](accessing-data-in-the-interop-namespace.md)                       | Los proveedores de asociación permiten Windows de Instrumental de administración de recursos (WMI) recorrer y recuperar perfiles e instancias de clase asociadas de distintos espacios de nombres.                      |
 | [Manipulación de información de clase e instancia](manipulating-class-and-instance-information.md)               | Describe las tareas comunes que deben realizar los clientes WMI.                                                                                                                                      |
 | [Vincular clases juntas](linking-classes-together.md)                                                     | Describe el proveedor de vistas y cómo se puede usar para reunir información de varias clases WMI.                                                                                    |
 | [Modificar el Registro del sistema](modifying-the-system-registry.md)                                           | Describe cómo los clientes WMI pueden usar WMI para administrar la información del Registro del sistema.                                                                                                                   |
