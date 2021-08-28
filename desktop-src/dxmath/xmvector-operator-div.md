@@ -1,7 +1,7 @@
 ---
 description: Operador de división.
 ms.assetid: 2cb92c4f-883f-402f-bde7-2b77a0bca1fc
-title: operador/operadores
+title: operator/operators
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,14 +11,14 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 01ed9e5dc4233ee40038e98ecb6f22a15e850e53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 826544f78df9769fd137cedfb432c5746863d496
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677561"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468402"
 ---
-# <a name="operator--operators"></a>operador/operadores
+# <a name="operator--operators"></a>operator/operators
 
 Operador de división.
 
@@ -26,42 +26,16 @@ Operador de división.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Operator</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421381(v=vs.85)"><strong>XMVECTOR:: Operator/(XMVECTOR, float)</strong></a></td>
-<td style="text-align: left;">Divide una <code>XMVECTOR</code> instancia por un valor de punto flotante y devuelve el resultado a una nueva instancia de <code>XMVECTOR</code> . <br/> <code>operator /</code>Divide cada componente de una instancia de tipo de <a href="xmvector-data-type.md"><strong>datos XMVECTOR</strong></a> por un valor de punto flotante, y devuelve una nueva <code>XMVECTOR</code> instancia de que contiene el resultado. <br/>
-<blockquote>
-[!Note]<br />
-Este operador solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421380(v=vs.85)"><strong>XMVECTOR:: Operator/(XMVECTOR, XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Divide una instancia de <code>XMVECTOR</code> por una segunda instancia, devolviendo el resultado en una tercera instancia. <br/> <code>operator /</code>Divide cada componente de una instancia de tipo de <a href="xmvector-data-type.md"><strong>datos XMVECTOR</strong></a> por el componente correspondiente en una segunda instancia de <code>XMVECTOR</code> , y devuelve una nueva <code>XMVECTOR</code> instancia de que contiene el resultado. <br/>
-<blockquote>
-[!Note]<br />
-Este operador solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Operador | Descripción | 
+|----------|-------------|
+| <a href="/previous-versions/windows/desktop/legacy/ee421381(v=vs.85)"><strong>XMVECTOR::operator / (XMVECTOR,float)</strong></a> | Divide una instancia por un valor de punto flotante y devuelve al <code>XMVECTOR</code> resultado una nueva instancia de <code>XMVECTOR</code> . <br /> divide cada componente de una instancia de tipo de datos XMVECTOR por un valor de punto flotante y devuelve una nueva instancia <code>operator /</code> que contiene el <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> resultado. <br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/ee421380(v=vs.85)"><strong>XMVECTOR::operator / (XMVECTOR,XMVECTOR)</strong></a> | Divide una instancia de <code>XMVECTOR</code> por una segunda instancia y devuelve el resultado en una tercera instancia. <br /> divide cada componente de una instancia de Tipo de datos XMVECTOR por el componente correspondiente en una segunda instancia de , devolviendo una nueva instancia <code>operator /</code> que contiene el <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> <code>XMVECTOR</code> resultado. <br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -71,7 +45,7 @@ Este operador solo está disponible en C++.
 **Referencia**
 </dt> <dt>
 
-[**XMVECTOR, tipo de datos**](xmvector-data-type.md)
+[**Tipo de datos XMVECTOR**](xmvector-data-type.md)
 </dt> </dl>
 
  

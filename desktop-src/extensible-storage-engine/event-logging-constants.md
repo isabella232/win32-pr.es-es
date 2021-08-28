@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa04ffe87ca25be127919c705ea5c7d6c3411485
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 054c1a62d4a5c6b6203110de47efadae3920a90c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987048"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468392"
 ---
 # <a name="event-logging-constants"></a>Constantes de registro de eventos
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="event-logging-constants"></a>Constantes de registro de eventos
 
-Las constantes siguientes indican el nivel de detalle de los mensajes del registro de eventos [para el JET_ParamEventLoggingLevel](./event-log-parameters.md) del sistema.
+Las siguientes constantes indican el nivel de detalle de los mensajes del registro de eventos [para el JET_ParamEventLoggingLevel](./event-log-parameters.md) del sistema.
 
 
 | <p>Constante o valor</p> | <p>Descripción</p> | 
@@ -42,11 +42,7 @@ Las constantes siguientes indican el nivel de detalle de los mensajes del regist
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 32b91557d812888d9bb6e970be37703537bb3d7645c8a0422df19d5d5fe37a5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46584659fbd14bc26981e220798a91c03e960e1f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119401969"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886420"
 ---
 # <a name="startboundary-triggerbasetype-element"></a>Elemento StartBoundary (triggerBaseType)
 
@@ -41,7 +41,7 @@ El tipo complejo [**triggerBaseType**](taskschedulerschema-triggerbasetype-compl
 | [**BootTrigger**](taskschedulerschema-boottrigger-triggergroup-element.md)                 | [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando se arranca el sistema.<br/>                 |
 | [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md)         | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)         | Especifica un desencadenador diario, semanal, mensual o mensual del día de la semana (DOW).<br/>   |
 | [**EventTrigger**](taskschedulerschema-eventtrigger-triggergroup-element.md)               | [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md)               | Especifica un desencadenador que inicia una tarea cuando se produce un evento del sistema.<br/>                |
-| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando el equipo entra en estado inactivo.<br/> |
+| [**IdleTrigger**](taskschedulerschema-idletrigger-triggergroup-element.md)                 | [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando el equipo entra en estado de inactividad.<br/> |
 | [**LogonTrigger**](taskschedulerschema-logontrigger-triggergroup-element.md)               | [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)               | Especifica un desencadenador que inicia una tarea cuando un usuario inicia sesión.<br/>                       |
 | [**RegistrationTrigger**](taskschedulerschema-registrationtrigger-triggergroup-element.md) | [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md) | Especifica un desencadenador que inicia una tarea cuando se registra la tarea.<br/>               |
 | [**TimeTrigger**](taskschedulerschema-timetrigger-triggergroup-element.md)                 | [**timeTriggerType**](taskschedulerschema-timetriggertype-complextype.md)                 | Especifica un desencadenador que inicia una tarea cuando se activa el desencadenador.<br/>             |
@@ -50,7 +50,7 @@ El tipo complejo [**triggerBaseType**](taskschedulerschema-triggerbasetype-compl
 
 ## <a name="remarks"></a>Comentarios
 
-El **<StartBoundary>** elemento es un elemento necesario para los desencadenadores de tiempo y de calendario ( y [**<TimeTrigger>**](taskschedulerschema-timetrigger-triggergroup-element.md) [**<CalendarTrigger>**](taskschedulerschema-calendartrigger-triggergroup-element.md) ).
+El **&lt; elemento &gt; StartBoundary** es un elemento necesario para los desencadenadores time y calendar [**&lt; (TimeTrigger &gt;**](taskschedulerschema-timetrigger-triggergroup-element.md) [**&lt; y CalendarTrigger). &gt;**](taskschedulerschema-calendartrigger-triggergroup-element.md)
 
 Para el desarrollo de scripting, el límite final se especifica mediante la propiedad [**Trigger.StartBoundary**](trigger-startboundary.md) heredada por todos los objetos de desencadenador.
 
@@ -58,7 +58,7 @@ Para el desarrollo de C++, el límite final se especifica mediante la propiedad 
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente XML define un elemento de desencadenador de arranque que define un límite de inicio del 1 de enero de 2005: 8:00 a. m.
+El xml siguiente define un elemento de desencadenador de arranque que define un límite de inicio del 1 de enero de 2005: 8:00 a. m.
 
 
 ```XML

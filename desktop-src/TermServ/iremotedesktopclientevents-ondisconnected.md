@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents método OnDisconnect
+title: Método OnDisconnected de IRemoteDesktopClientEvents
 description: Se llama cuando el control de cliente se ha desconectado de una sesión remota.
 ms.assetid: EA26B530-0AA8-49D6-8E3C-E53179FC5104
 ms.tgt_platform: multiple
 keywords:
-- Método OnDisconnection Servicios de Escritorio remoto
-- Método OnDisconnection Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnDisconnect
+- Método OnDisconnected Servicios de Escritorio remoto
+- Método OnDisconnected Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnDisconnected
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bd59b03fe9cb23309d53773289291c8a791935a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e93ebf7c85e4015539cbbcc15723cdfed9c7d181741925c1a97c93ccc4326eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124905"
 ---
-# <a name="iremotedesktopclienteventsondisconnected-method"></a>IRemoteDesktopClientEvents:: OnDisconnection (método)
+# <a name="iremotedesktopclienteventsondisconnected-method"></a>IRemoteDesktopClientEvents::OnDisconnected (método)
 
 Se llama cuando el control de cliente se ha desconectado de una sesión remota.
 
@@ -45,21 +45,21 @@ void OnDisconnected(
 
 <dl> <dt>
 
-*disconnectReason* \[ de\]
+*disconnectReason* \[ En\]
 </dt> <dd>
 
 Motivo del evento de desconexión.
 
 </dd> <dt>
 
-*ExtendedDisconnectReason* \[ de\]
+*ExtendedDisconnectReason* \[ En\]
 </dt> <dd>
 
-Información extendida para el evento de desconexión.
+Información ampliada para el evento de desconexión.
 
 </dd> <dt>
 
-*disconnectErrorMessage* \[ de\]
+*disconnectErrorMessage* \[ En\]
 </dt> <dd>
 
 Mensaje de error para el evento de desconexión.

@@ -30,12 +30,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d131a2630c0c64e4b4b6bcec371eb901665c989948a1db510b47a41d9159f06d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd99ec5a0a9f3bd4bd07fa88cfc15139c69a442b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118950104"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886580"
 ---
 # <a name="msvm_summaryinformationbase-class"></a>Clase Msvm \_ SummaryInformationBase
 
@@ -201,13 +201,13 @@ InstanceID es una propiedad opcional que se puede usar para identificar de forma
 
 Para garantizar la unidad dentro de NameSpace, el valor de InstanceID debe construirse con el siguiente algoritmo "preferido":
 
-<OrgID>:<LocalID>
+&lt;&gt;OrgID: &lt; LocalID&gt;
 
-Donde y están separados por dos puntos (:) y donde deben incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que crea o define instanceID o que es un identificador registrado asignado a la entidad empresarial por una autoridad <OrgID> <LocalID> global <OrgID> reconocida. (Este requisito es similar al <Schema Name> \_ <Class Name> estructura de los nombres de clase de esquema). Además, para garantizar la unidad, <OrgID> no debe contener dos puntos (:). Cuando se usa este algoritmo, los primeros dos puntos que aparecen en InstanceID deben aparecer entre <OrgID> y <LocalID> .
+Donde OrgID y LocalID están separados por dos puntos (:) y donde OrgID debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que crea o define instanceID o que es un identificador registrado asignado a la entidad empresarial por una autoridad &lt; &gt; global &lt; &gt; &lt; &gt; reconocida. (Este requisito es similar al <Schema Name> \_ <Class Name> estructura de los nombres de clase de esquema). Además, para garantizar la unidad, &lt; OrgID &gt; no debe contener dos puntos (:). Al usar este algoritmo, los primeros dos puntos que aparecen en InstanceID deben aparecer entre &lt; OrgID &gt; y &lt; &gt; LocalID.
 
-<LocalID> la elige la entidad empresarial y no debe reutilizarse para identificar diferentes elementos subyacentes (reales). Si no es NULL y no se usa el algoritmo "preferido" anterior, la entidad de definición debe asegurarse de que el InstanceID resultante no se reutiliza en ningún InstanceID generado por este u otros proveedores para nameSpace de esta instancia.
+&lt;La entidad de negocio elige LocalID y no debe reutilizarse para identificar diferentes &gt; elementos subyacentes (reales). Si no es NULL y no se usa el algoritmo "preferido" anterior, la entidad de definición debe asegurarse de que el InstanceID resultante no se reutiliza en ningún InstanceID generado por este u otros proveedores para nameSpace de esta instancia.
 
-Si no se establece en NULL para las instancias definidas por DMTF, se debe usar el algoritmo "preferido" <OrgID> con el establecido en CIM.
+Si no se establece en NULL para las instancias definidas por DMTF, el algoritmo "preferido" debe usarse con &lt; el OrgID &gt; establecido en CIM.
 
 </dd> <dt>
 
@@ -370,9 +370,9 @@ Subtipo del sistema virtual.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |

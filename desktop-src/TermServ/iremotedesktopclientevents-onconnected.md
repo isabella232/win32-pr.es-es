@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents método de conexión
+title: Método OnConnected de IRemoteDesktopClientEvents
 description: Se llama cuando el control de cliente se ha conectado a una sesión remota.
 ms.assetid: 7A5917F7-61E5-434B-B797-35110CCC73D3
 ms.tgt_platform: multiple
 keywords:
-- Método unconnected Servicios de Escritorio remoto
-- Método unconnected Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método alconnected
+- Método OnConnected Servicios de Escritorio remoto
+- Método OnConnected Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnConnected
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c5aa5239a3071570a5dcf838d36626897ec93f8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df3812f560185d9ae7422d992c3d1d89dc2af48fe7cbcbaf637c66bfd8461439
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124935"
 ---
-# <a name="iremotedesktopclienteventsonconnected-method"></a>IRemoteDesktopClientEvents:: alconnected (método)
+# <a name="iremotedesktopclienteventsonconnected-method"></a>IRemoteDesktopClientEvents::OnConnected (método)
 
 Se llama cuando el control de cliente se ha conectado a una sesión remota.
 

@@ -4,12 +4,12 @@ description: Los menús son listas jerárquicas de comandos u opciones disponibl
 ms.assetid: 3772ff8e-8057-476d-b62b-efbd5e07907f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: e9b2c3559163ff77e8e3f08354b017c1b7cb53c95fd51802ae2565efdf71abcd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ba8c67716e6b30fcc32651c8932363310926e6bf
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119350235"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880374"
 ---
 # <a name="menus-design-basics"></a>Menús (conceptos básicos de diseño)
 
@@ -18,16 +18,16 @@ ms.locfileid: "119350235"
 
 Los menús son listas jerárquicas de comandos u opciones disponibles para los usuarios en el contexto actual.
 
-Los menús desplegables son menús que se muestran a petición al hacer clic con el mouse o mantener el puntero sobre ellos. Normalmente se ocultan de la vista y, por tanto, son un medio eficaz de conservar el espacio de pantalla. Un submenú o un menú en cascada es un menú secundario que se muestra a petición desde dentro de un menú. Se indican mediante una flecha al final de la etiqueta de submenú. Un elemento de menú es un comando o una opción individual dentro de un menú.
+Los menús desplegables son menús que se muestran a petición al hacer clic o mantener el mouse sobre ellos. Normalmente se ocultan de la vista y, por tanto, son un medio eficaz de conservar el espacio de pantalla. Un submenú o un menú en cascada es un menú secundario que se muestra a petición desde dentro de un menú. Se indican mediante una flecha al final de la etiqueta de submenú. Un elemento de menú es un comando u opción individual dentro de un menú.
 
-Los menús se muestran a menudo desde una barra de menús, que es una lista de categorías de menú etiquetadas que normalmente se encuentran cerca de la parte superior de una ventana. Por el contrario, un menú contextual se reduce cuando los usuarios hacen clic con el botón derecho en un objeto o región de ventana que admite un menú contextual.
+Los menús suelen mostrarse desde una barra de menús, que es una lista de categorías de menú etiquetadas que normalmente se encuentran cerca de la parte superior de una ventana. Por el contrario, un menú contextual se reduce cuando los usuarios hacen clic con el botón derecho en un objeto o región de ventana que admite un menú contextual.
 
 ![captura de pantalla de la barra de menús con menú y submenú ](images/cmd-menus-image1.png)
 
 Una barra de menús típica que muestra un menú desplegable y un submenú.
 
 > [!Note]  
-> Las instrucciones relacionadas con [los botones de](ctrl-command-buttons.md)comando, [las barras de herramientas](cmd-toolbars.md)y el [teclado](inter-keyboard.md) se presentan en artículos independientes.
+> Las instrucciones relacionadas con [los botones de](ctrl-command-buttons.md)comandos, las barras de [herramientas](cmd-toolbars.md)y el [teclado](inter-keyboard.md) se presentan en artículos independientes.
 
  
 
@@ -39,12 +39,12 @@ Los menús tienen varios patrones de uso:
 
 | Uso                                                                                                                                                |    Ejemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Barras de menús**<br/> una barra de menús muestra comandos y opciones en los menús desplegables. <br/>                                               | las barras de menús son muy comunes y fáciles de encontrar, así como un uso eficaz del espacio. <br/> ![captura de pantalla de la barra de menús con el menú desplegable ](images/cmd-menus-image2.png)<br/> Barra de menús de Windows Mail.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Menús de la barra de herramientas**<br/> una barra de menús implementada como una barra de herramientas. <br/>                                                                   | Los menús de la barra de herramientas [](ctrl-command-buttons.md) son barras de herramientas que constan principalmente de comandos en botones de menú y botones de división, con solo algunos comandos directos, si los hay. <br/> ![captura de pantalla del menú de la barra de herramientas con el menú desplegable ](images/cmd-menus-image3.png)<br/> Menú de la barra de herramientas Windows Galería de fotos.<br/> Para obtener instrucciones sobre este patrón, vea [Barras de herramientas](cmd-toolbars.md).<br/>                                                                                                                                                                                                             |
-| **Menús de pestañas**<br/> botones dentro de pestañas que muestran un pequeño conjunto de comandos y opciones relacionados con una pestaña en un menú desplegable. <br/> | Las pestañas con menús parecen pestañas normales, salvo que su parte inferior tiene un botón con flecha desplegable. Al hacer clic en el botón se muestra un menú desplegable en lugar de seleccionar la pestaña. <br/> ![captura de pantalla del menú de pestañas con el menú desplegable ](images/cmd-menus-image4.png)<br/> Los menús de tabulación se usan Reproductor de Windows Media.<br/>                                                                                                                                                                                                                                                                                           |
-| **Botones de menú**<br/> botones de comandos que muestran un pequeño conjunto de comandos relacionados en un menú desplegable. <br/>                       | [los botones de](ctrl-command-buttons.md) menú parecen botones de comando normales, salvo que tienen una flecha desplegable dentro de ellos. Al hacer clic en el botón se muestra un menú desplegable en lugar de realizar un comando.<br/> [Los botones de](ctrl-command-buttons.md) división son similares a los botones de menú, salvo que son variaciones de un comando y, al hacer clic en la parte izquierda del botón, se realiza la acción en la etiqueta directamente.<br/> ![captura de pantalla del botón de menú con comandos desplegables ](images/cmd-menus-image5.png)<br/> Botón de menú con un pequeño conjunto de comandos relacionados.<br/> |
-| **Menús contextuales**<br/> menús desplegables que muestran un pequeño conjunto de comandos y opciones relacionados con el contexto actual. <br/>       | menús contextuales desplegables cuando los usuarios hacen clic con el botón derecho en un objeto o región de ventana que admite un menú contextual. <br/> ![captura de pantalla del menú contextual que muestra comandos ](images/cmd-menus-image6.png)<br/> un menú contextual del Explorador de Windows.<br/> Si los menús contextuales son la mejor opción de menú, pero necesita una solución adecuada para todos los usuarios, puede usar un botón de flecha desplegable de menú. <br/> ![captura de pantalla de la foto con el botón de menú desplegable ](images/cmd-menus-image7.png)<br/> Un menú contextual que se hace visible con un botón desplegable de menú.<br/>                                                   |
-| **Menús del panel de tareas**<br/> un pequeño conjunto de comandos relacionados con el objeto o el modo de programa seleccionados. <br/>                              | A diferencia de los menús contextuales, se muestran automáticamente dentro de un panel de ventana, en lugar de a petición. <br/> ![captura de pantalla de la foto con el menú del panel de tareas a la derecha ](images/cmd-menus-image8.png)<br/> Menú del panel de tareas del Windows Galería de fotos tareas.<br/>                                                                                                                                                                                                                                                                                                                                                         |
+| **Barras de menús**<br/> Una barra de menús muestra comandos y opciones en los menús desplegables. <br/>                                               | las barras de menús son muy comunes y fáciles de encontrar, así como un uso eficaz del espacio. <br/> ![captura de pantalla de la barra de menús con menú desplegable ](images/cmd-menus-image2.png)<br/> Una barra de menús de Windows Mail.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Menús de la barra de herramientas**<br/> una barra de menús implementada como barra de herramientas. <br/>                                                                   | Los menús de la barra de herramientas [](ctrl-command-buttons.md) son barras de herramientas que constan principalmente de comandos en botones de menú y botones de división, con solo algunos comandos directos, si los hay. <br/> ![captura de pantalla del menú de la barra de herramientas con el menú desplegable ](images/cmd-menus-image3.png)<br/> Menú de la barra de herramientas Windows Galería de fotos.<br/> Para obtener instrucciones sobre este patrón, vea [Barras de herramientas](cmd-toolbars.md).<br/>                                                                                                                                                                                                             |
+| **Menús de pestañas**<br/> botones dentro de pestañas que muestran un pequeño conjunto de comandos y opciones relacionados con una pestaña en un menú desplegable. <br/> | Las pestañas con menús son como pestañas normales, salvo que su parte inferior tiene un botón con flecha desplegable. Al hacer clic en el botón se muestra un menú desplegable en lugar de seleccionar la pestaña. <br/> ![captura de pantalla del menú de pestañas con el menú desplegable ](images/cmd-menus-image4.png)<br/> Los menús de pestañas se usan Reproductor de Windows Media.<br/>                                                                                                                                                                                                                                                                                           |
+| **Botones de menú**<br/> botones de comando que muestran un pequeño conjunto de comandos relacionados en un menú desplegable. <br/>                       | [los botones de](ctrl-command-buttons.md) menú se parecen a los botones de comandos normales, salvo que tienen una flecha desplegable dentro de ellos. Al hacer clic en el botón se muestra un menú desplegable en lugar de realizar un comando.<br/> [Los botones de](ctrl-command-buttons.md) división son similares a los botones de menú, salvo que son variaciones de un comando y, al hacer clic en la parte izquierda del botón, se realiza la acción en la etiqueta directamente.<br/> ![captura de pantalla del botón de menú con comandos desplegables ](images/cmd-menus-image5.png)<br/> Botón de menú con un pequeño conjunto de comandos relacionados.<br/> |
+| **Menús contextuales**<br/> menús desplegables que muestran un pequeño conjunto de comandos y opciones relacionados con el contexto actual. <br/>       | Menús contextuales desplegables cuando los usuarios hacen clic con el botón derecho en un objeto o región de ventana que admite un menú contextual. <br/> ![captura de pantalla del menú contextual que muestra comandos ](images/cmd-menus-image6.png)<br/> un menú contextual del Explorador de Windows.<br/> Si los menús contextuales son la mejor opción de menú, pero necesita una solución adecuada para todos los usuarios, puede usar un botón de flecha desplegable de menú. <br/> ![captura de pantalla de la foto con el botón de menú desplegable ](images/cmd-menus-image7.png)<br/> Un menú contextual visible con un botón desplegable de menú.<br/>                                                   |
+| **Menús del panel de tareas**<br/> un pequeño conjunto de comandos relacionados con el objeto o modo de programa seleccionados. <br/>                              | A diferencia de los menús contextuales, se muestran automáticamente dentro de un panel de ventana, en lugar de a petición. <br/> ![captura de pantalla de la foto con el menú del panel de tareas a la derecha ](images/cmd-menus-image8.png)<br/> Menú del panel de tareas del Windows Galería de fotos usuario.<br/>                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
@@ -56,11 +56,11 @@ Para decidirte, intenta responder a estas preguntas:
 
 ### <a name="menu-bars"></a>Barras de menús
 
-Se aplican las condiciones siguientes:
+¿Se aplican las condiciones siguientes:
 
 -   ¿La ventana es una ventana principal?
 -   ¿Hay muchos elementos de menú?
--   ¿Hay muchas categorías de menús?
+-   ¿Hay muchas categorías de menú?
 -   ¿La mayoría de los elementos de menú se aplican a todo el programa y a la ventana principal?
 -   ¿El menú debe funcionar para todos los usuarios?
 
@@ -68,18 +68,18 @@ Si es así, considere la posibilidad de usar una barra de menús.
 
 ### <a name="toolbar-menus"></a>Menús de la barra de herramientas
 
-Se aplican las condiciones siguientes:
+¿Se aplican las condiciones siguientes:
 
 -   ¿La ventana es una ventana principal?
 -   ¿La ventana tiene una barra de herramientas?
--   ¿Solo hay algunas categorías de menús?
+-   ¿Solo hay algunas categorías de menú?
 -   ¿El menú debe funcionar para todos los usuarios?
 
-Si es así, considere la posibilidad de usar un menú de barra de herramientas en lugar de o además de una barra de menús.
+Si es así, considere la posibilidad de usar un menú de la barra de herramientas en lugar de o además de una barra de menús.
 
 ### <a name="tab-menus"></a>Menús de pestañas
 
-Se aplican las condiciones siguientes:
+¿Se aplican las condiciones siguientes:
 
 -   ¿La ventana es una ventana principal?
 -   ¿La ventana tiene pestañas, donde cada pestaña se usa para un conjunto dedicado de tareas (en lugar de usar pestañas para mostrar vistas diferentes)?
@@ -90,33 +90,33 @@ Si es así, considere la posibilidad de usar un menú de pestañas en lugar de u
 
 ### <a name="context-menu"></a>Menú contextual
 
-Se aplican las condiciones siguientes:
+¿Se aplican las condiciones siguientes:
 
 -   ¿Hay un pequeño conjunto de comandos contextuales y opciones que se aplican al objeto o la región de ventana seleccionados?
--   ¿Son estos elementos de menú redundantes?
+-   ¿Estos elementos de menú son redundantes?
 -   ¿Los usuarios de destino están familiarizados con los menús contextuales?
 
-Si es así, considere la posibilidad de proporcionar menús contextuales para los objetos y las regiones de ventana que los necesiten.
+Si es así, considere la posibilidad de proporcionar menús contextuales para los objetos y regiones de ventana que los necesiten.
 
 En el caso de los programas basados en explorador, los menús del panel de tareas son una solución más común para los comandos contextuales. Actualmente, los usuarios esperan que los menús contextuales de los programas basados en explorador sean genéricos y poco útiles.
 
 ### <a name="task-pane-menu"></a>Menú del panel de tareas
 
-Se aplican las condiciones siguientes:
+¿Se aplican las condiciones siguientes:
 
 -   ¿La ventana es una ventana principal?
 -   ¿Hay un pequeño conjunto de comandos contextuales y opciones que se aplican al objeto o modo de programa seleccionado?
--   ¿Hay algunas categorías de menús?
+-   ¿Hay algunas categorías de menú?
 -   ¿El menú debe funcionar para todos los usuarios?
 
 Si es así, considere la posibilidad de usar un menú del panel de tareas en lugar de un menú contextual.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
 
-Menús eficaces que promueven una buena experiencia del usuario:
+Menús efectivos que promueven una buena experiencia de usuario:
 
 -   Use una presentación de comandos que coincida con el tipo de programa, los tipos de ventana, el uso de comandos y los usuarios de destino.
--   Están bien organizados, mediante la organización de menús estándar cuando corresponda.
+-   Están bien organizados, usando la organización de menús estándar cuando sea necesario.
 -   Use barras de menús, barras de herramientas y menús contextuales de forma eficaz.
 -   Use iconos de forma eficaz.
 -   Use las teclas de acceso y las teclas de método abreviado de forma eficaz.
@@ -220,12 +220,12 @@ En este ejemplo, el submenú Nuevo reemplaza comandos independientes para Nuevo 
 
 ![captura de pantalla de la foto con el botón de menú desplegable ](images/cmd-menus-image7.png)
 
-En este ejemplo, se usa un botón desplegable de menú para hacer visible un menú contextual.
+En este ejemplo, se usa un botón desplegable de menú para que un menú contextual esté visible.
 
 **Organización y pedido de elementos de menú**
 
 -   **Organice los elementos de menú en grupos de siete o menos elementos fuertemente relacionados.**
--   **Evite el uso de submenús** para mantener los menús contextuales sencillos, directos y eficaces.
+-   **Evite usar submenús para** mantener los menús contextuales simples, directos y eficaces.
 -   **No coloque más de 15 elementos en un menú contextual.**
 -   **Coloque separadores entre los grupos dentro de un menú.** Un separador es una sola línea que abarca el ancho del menú.
 -   **Presente los elementos de menú con el orden siguiente:**
@@ -233,31 +233,34 @@ En este ejemplo, se usa un botón desplegable de menú para hacer visible un men
 <dl> Comandos principales (usados con más frecuencia)<dl> Abrir  
 Ejecutar  
 Reproducir  
-Impresión <separator>  
-</dl> </dd> <dd>Comandos secundarios admitidos por el objeto<dl> <separator>  
-</dl> </dd> Comandos de transferencia<dl> Cortar  
+Impresión  
+&lt;separator&gt;  
+</dl> </dd> <dd>Comandos secundarios admitidos por el objeto<dl> &lt;separator&gt;  
+</dl> </dd> Transferir comandos<dl> Cortar  
 Copiar  
-Pegar <separator>  
-</dl> </dd> <dd>Configuración de objetos<dl> <separator>  
+Pegar  
+&lt;separator&gt;  
+</dl> </dd> <dd>Configuración de objetos<dl> &lt;separator&gt;  
 </dl> </dd> Comandos de objeto<dl> Eliminar  
-Renombrar <separator>  
-Propiedades
+Cambiar nombre  
+&lt;separator&gt;  
+Propiedades  
 </dl> </dd> </dl>
 
 **Presentación**
 
--   **Muestre el comando predeterminado mediante negrita.** Cuando sea práctico, conséndolo también al primer elemento de menú. El comando predeterminado se invoca cuando los usuarios hacen doble clic o seleccionan un objeto y presionan Entrar.
--   **Quite en lugar de deshabilitar los elementos del menú contextual que no se aplican al contexto actual.** Al hacerlo, los menús contextuales son contextuales y eficaces.
+-   **Muestre el comando predeterminado mediante negrita.** Cuando sea práctico, conséctese también por el primer elemento de menú. El comando predeterminado se invoca cuando los usuarios hacen doble clic o seleccionan un objeto y presionan Entrar.
+-   **Quite en lugar de deshabilitar los elementos de menú contextual que no se aplican al contexto actual.** Al hacerlo, los menús contextuales son contextuales y eficaces.
     -   **Excepción:** Deshabilite los elementos de menú que no se aplican si hay una expectativa razonable de que estén disponibles:
         -   Tenga siempre los comandos de menú contextual estándar pertinentes, como Cortar, Copiar, Pegar, Eliminar y Cambiar nombre.
-        -   Tenga siempre los comandos que completan los conjuntos relacionados. Por ejemplo, si hay un back,también debe haber un reenvío. Si hay un corte, siempre tiene una opción Copiar y pegar.
+        -   Tenga siempre los comandos que completan conjuntos relacionados. Por ejemplo, si hay un back, también debe haber un reenvío. Si hay un corte, siempre tiene una opción Copiar y pegar.
 
 ### <a name="bullets-and-checkmarks"></a>Viñetas y marcas de verificación
 
 -   **Los elementos de menú que son opciones pueden usar viñetas y marcas de verificación.** Es posible que los comandos no.
 -   **Use una viñeta para elegir una opción de un pequeño conjunto de opciones mutuamente excluyentes.** Siempre debe haber al menos dos viñetas en un grupo. Para obtener más información, vea [Botones de radio](ctrl-radio-buttons.md).
 -   **Use una marca de verificación para activar o desactivar una configuración independiente.** Si los estados seleccionados y borrados no son opuestos claros e inequívocos, use un conjunto de viñetas en su lugar. Para obtener más información, vea [Casillas](ctrl-check-boxes.md).
--   **Para un estado de marca de verificación mixto, muestre un elemento de menú sin marca de verificación.** El estado mixto se usa para la selección múltiple para indicar que la opción está establecida para algunos objetos, pero no para todos, por lo que cada objeto individual tiene el estado seleccionado o borrado. El estado mixto no se usa como tercer estado para un elemento individual.
+-   **Para un estado de marca de verificación mixta, muestre un elemento de menú sin marca de verificación.** El estado mixto se usa para la selección múltiple para indicar que la opción está establecida para algunos objetos, pero no para todos, por lo que cada objeto individual tiene el estado seleccionado o borrado. El estado mixto no se usa como tercer estado para un elemento individual.
 -   **Coloque separadores entre los conjuntos relacionados de marcas de verificación o viñetas.** Un separador es una sola línea que abarca el ancho del menú.
 
 ### <a name="icons"></a>Iconos
@@ -270,30 +273,30 @@ Propiedades
 
 ![captura de pantalla de elementos de menú con y sin iconos ](images/cmd-menus-image13.png)
 
-En este ejemplo, el menú Organizar solo tiene iconos para los elementos de menú que se usan con más frecuencia.
+En este ejemplo, el menú Organizar solo tiene iconos para los elementos de menú más usados.
 
--   **Asegúrese de que los iconos de menú se ajustan a las directrices de icono de estilo aerórmico.**
+-   **Asegúrese de que los iconos de menú se ajustan a las directrices de icono de estilo Avión.**
 
 Para obtener más información y ejemplos, vea [Iconos](vis-icons.md).
 
 ### <a name="access-keys"></a>Claves de acceso
 
--   **Asigne claves de acceso a todos los elementos de menú.** Sin excepciones.
--   **Siempre que sea posible, asigne claves de acceso para los comandos usados habitualmente según las asignaciones de claves de acceso estándar.** Aunque las asignaciones de claves de acceso coherentes no siempre son posibles, ciertamente se prefieren, especialmente para los comandos que se usan con frecuencia.
--   **Para los elementos de menú dinámicos (como los archivos usados recientemente), asigne claves de acceso numéricamente.**
+-   **Asigne claves de acceso a todos los elementos de menú.** Ninguna excepción.
+-   **Siempre que sea posible, asigne claves de acceso para los comandos usados habitualmente según las asignaciones de claves de acceso estándar.** Aunque las asignaciones de claves de acceso coherentes no siempre son posibles, ciertamente se prefieren, especialmente para los comandos usados con frecuencia.
+-   **Para los elementos de menú dinámicos (por ejemplo, los archivos usados recientemente), asigne claves de acceso numéricamente.**
 
 ![captura de pantalla de elementos de menú con claves de acceso numéricas ](images/cmd-menus-image14.png)
 
-En este ejemplo, el programa Paint en Windows asigna claves de acceso numérico a los archivos usados recientemente.
+En este ejemplo, el programa Paint en Windows asigna claves de acceso numéricas a los archivos usados recientemente.
 
 -   **Asigne claves de acceso únicas dentro de un nivel de menú.** Puede reutilizar las claves de acceso en distintos niveles de menú.
 -   **Facilitar la tarea de encontrar las claves de acceso:**
     -   Para los elementos de menú usados con más frecuencia, elija caracteres al principio de la primera o segunda palabra de la etiqueta, preferiblemente el primer carácter.
-    -   Para los elementos de menú usados con menos frecuencia, elija letras que sean una consonante distintiva o una voto en la etiqueta.
--   **Prefiere caracteres con ancho ancho ancho,** como w, m y letras mayúsculas.
--   **Prefiere una consonante distintiva o una voz,** como "x" en "Exit".
+    -   Para los elementos de menú usados con menos frecuencia, elija letras que sean una consonante distintiva o una voz en la etiqueta.
+-   **Prefiere caracteres con anchos anchos anchos,** como w, m y letras mayúsculas.
+-   **Prefiere una consonante distintiva o una voto,** como "x" en "Exit".
 -   **Evite usar caracteres que hagan que el subrayado** sea difícil de ver, como (de más problemático a menos problemático):
-    -   Letras que solo tienen un píxel de ancho, como i y l.
+    -   Letras que tienen solo un píxel de ancho, como i y l.
     -   Letras con descendientes, como g, j, p, q e y.
     -   Letras junto a una letra con un descendiente.
 
@@ -301,9 +304,9 @@ Para obtener más instrucciones y ejemplos, vea [Teclado](inter-keyboard.md).
 
 ### <a name="shortcut-keys"></a>Teclas de método abreviado
 
--   **Asigne teclas de método abreviado a los elementos de menú usados con más frecuencia.** Los elementos de menú usados con poca frecuencia no necesitan teclas de método abreviado, ya que los usuarios pueden usar claves de acceso en su lugar.
--   **No haga que una tecla de método abreviado sea la única manera de realizar una tarea.** Los usuarios también deben poder usar el mouse o el teclado con las teclas de tabulación, flecha y acceso.
--   **Para teclas de método abreviado conocidas, use las asignaciones estándar.**
+-   **Asigne teclas de método abreviado a los elementos de menú usados con más frecuencia.** Los elementos de menú usados con poca frecuencia no necesitan teclas de método abreviado porque los usuarios pueden usar claves de acceso en su lugar.
+-   **No haga que una tecla de método abreviado sea la única manera de realizar una tarea.** Los usuarios también deben poder usar el mouse o el teclado con teclas de tabulación, flecha y acceso.
+-   **Para las teclas de método abreviado conocidas, use las asignaciones estándar.**
 -   **No asigne significados diferentes a teclas de método abreviado conocidas.** Dado que se memorizan, los significados incoherentes de los accesos directos conocidos son frustrantes y propensos a errores. Consulte Windows teclas de método abreviado de teclado para conocer las teclas de método abreviado conocidas que usan Windows programas.
 -   **No intente asignar teclas de método abreviado de programa para todo el sistema.** Las teclas de método abreviado del programa solo tendrán efecto cuando el programa tenga el foco de entrada.
 -   **Documente todas las teclas de método abreviado.** Esto ayuda a los usuarios a aprender las asignaciones de teclas de método abreviado.
@@ -312,10 +315,10 @@ Para obtener más instrucciones y ejemplos, vea [Teclado](inter-keyboard.md).
     -   **Elija teclas de método abreviado que no tengan asignaciones estándar.** Nunca vuelva a asignar las teclas de método abreviado estándar.
     -   **Use asignaciones de claves no estándar de forma coherente en todo el programa.** No asigne significados diferentes en ventanas diferentes.
     -   **Si es posible, elija asignaciones de claves mnemotécnicas,** especialmente para los comandos usados con frecuencia.
-    -   **Use claves de función para los comandos que tienen un** efecto a pequeña escala, como los comandos que se aplican al objeto seleccionado. Por ejemplo, F2 cambia el nombre del elemento seleccionado.
+    -   **Use claves de función para los comandos que tienen** un efecto a pequeña escala, como los comandos que se aplican al objeto seleccionado. Por ejemplo, F2 cambia el nombre del elemento seleccionado.
     -   **Use combinaciones de teclas Ctrl para los** comandos que tienen un efecto a gran escala, como los comandos que se aplican a todo un documento. Por ejemplo, Ctrl+S guarda el documento actual.
-    -   **Use combinaciones de teclas Mayús para los comandos que amplían o complementan las acciones de la tecla de método abreviado estándar.** Por ejemplo, la tecla de método abreviado Alt+Tab se desplaza a través de ventanas principales abiertas, mientras que Alt+Mayús+Tab se desplaza en orden inverso. De forma similar, F1 muestra Ayuda, mientras que Mayús+F1 muestra ayuda contextual.
-    -   **No use los caracteres siguientes para las teclas de método abreviado:** @ $ {} \[ \] \\  ~  \| ^ ' < >. Estos caracteres requieren combinaciones de teclas diferentes entre idiomas o son específicos de la configuración regional.
+    -   **Use combinaciones de teclas Mayús para los comandos que amplían o complementan las acciones de la tecla de método abreviado estándar.** Por ejemplo, la tecla de método abreviado Alt+Tab se desplaza por ventanas principales abiertas, mientras que Alt+Mayús+Tab se desplaza en orden inverso. De forma similar, F1 muestra Ayuda, mientras que Mayús+F1 muestra ayuda contextual.
+    -   **No use los caracteres siguientes para las teclas de** método abreviado: @ $ {} \[ \] \\  ~  \| ^ " < >. Estos caracteres requieren combinaciones de teclas diferentes entre idiomas o son específicos de la configuración regional.
     -   **No use combinaciones Ctrl+Alt,** ya que Windows interpreta esta combinación en algunas versiones de lenguaje como una tecla AltGR, que genera caracteres alfanuméricos.
 -   **Si el programa asigna muchas teclas de método abreviado, proporcione la capacidad de personalizar las asignaciones.** Esto permite a los usuarios reasignar las teclas de método abreviado en conflicto y migrar desde otros productos. La mayoría de los programas no asignan suficientes teclas de método abreviado para necesitar esta característica.
 
@@ -332,36 +335,49 @@ La estructura de la barra de menús estándar es la siguiente. Esta lista muestr
 
 <dl> Archivo<dl> Nuevo Ctrl+N  
 Abierto... Ctrl+O  
-Cerrar <separator>  
+Cerrar  
+&lt;separator&gt;  
 Guardar Ctrl+S  
-Guardar como... <separator>  
-Enviar a <separator>  
+Guardar como...  
+&lt;separator&gt;  
+Enviar a  
+&lt;separator&gt;  
 Impresión... Ctrl+P  
 Vista previa de impresión  
-Configuración de página <separator>  
-1 <filename> 2 <filename> 3 <filename> ... <separator>  
+Configurar página  
+&lt;separator&gt;  
+1 <filename> 2 <filename> 3 <filename> ...  
+&lt;separator&gt;  
 Salir de Alt+F4 (acceso directo normalmente no dado)
 </dl> </dd> Edit<dl> Deshacer Ctrl+Z  
-Rehacer Ctrl+Y <separator>  
+Rehacer Ctrl+Y  
+&lt;separator&gt;  
 Cortar Ctrl+X  
 Copiar Ctrl+C  
-Pegar Ctrl+V <separator>  
-Seleccionar todas las teclas Ctrl+A <separator>  
-Eliminar Supr (acceso directo normalmente no dado) <separator>  
+Pegar Ctrl+V  
+&lt;separator&gt;  
+Seleccionar todas las teclas Ctrl+A  
+&lt;separator&gt;  
+Eliminar Supr (acceso directo normalmente no dado)  
+&lt;separator&gt;  
 Encontrar... Ctrl+F  
 Buscar el siguiente F3 (el comando normalmente no se ha dado)  
 Reemplazar... Ctrl+H  
 Vete a... Ctrl+G
 </dl> </dd> View<dl> Barras de herramientas  
-Barra de estado <separator>  
+Barra de estado  
+&lt;separator&gt;
 </dl> </dd> Zoom<dl> Acercar Ctrl++  
-Alejar Ctrl+- <separator>  
+Alejar Ctrl+-  
+&lt;separator&gt;  
 Pantalla completa F11  
 Actualizar F5
-</dl> </dd> <dd>Herramientas<dl> ... <separator>  
+</dl> </dd> <dd>Herramientas<dl> ...  
+&lt;separator&gt;  
 Opciones
-</dl> </dd> Ayuda<dl> <program name> ayuda F1 <separator>  
-acerca de <program name>  
+</dl> </dd> Ayuda<dl> <program name> ayuda F1  
+&lt;separator&gt;  
+Acerca de <program name>  
 </dl> </dd> </dl>
 
 **Botones de menú de la barra de herramientas estándar**
@@ -369,54 +385,65 @@ acerca de <program name>
 Los botones de menú de la barra de herramientas estándar son los siguientes. Esta lista muestra la categoría de menú y las etiquetas de elemento, su orden con separadores, sus teclas de método abreviado y sus puntos suspensivos.
 
 <dl> Herramientas<dl> Pantalla completaF11(Reasignar clave de acceso si también se usa Buscar).  
-Barras de herramientas (tenga en cuenta que el comando barra de menús va aquí). <separator>  
+Barras de herramientas (tenga en cuenta que el comando barra de menús va aquí).  
+&lt;separator&gt;  
 Imprimir...  
-Encontrar... <separator>  
+Buscar...  
+&lt;separator&gt;  
 Zoom  
-Tamaño del texto <separator>  
-Opciones
-</dl> </dd> Organize<dl> Nueva carpetaCtrl+N <separator>  
+Tamaño del texto  
+&lt;separator&gt;  
+Opciones  
+</dl> </dd> Organize<dl> Nueva carpetaCtrl+N  
+&lt;separator&gt;  
 CutCtrl+X  
 CopyCtrl+C  
-PasteCtrl+V <separator>  
-Seleccionar todoCtrl+A <separator>  
+PasteCtrl+V  
+&lt;separator&gt;  
+Seleccionar todoCtrl+A  
+&lt;separator&gt;  
 DeleteDel(acceso directo normalmente no dado)  
-Renombrar <separator>  
-Opciones
-</dl> </dd> Page<dl> Nueva ventanaCtrl+N <separator>  
+Cambiar nombre  
+&lt;separator&gt;  
+Opciones  
+</dl> </dd> Page<dl> Nueva ventanaCtrl+N  
+&lt;separator&gt;  
 Zoom  
-Tamaño del texto
+Tamaño del texto  
 </dl> </dd> </dl>
 
 **Menús contextuales estándar**
 
-El contenido del menú contextual estándar es el siguiente. Esta lista muestra las etiquetas de los elementos de menú, su orden con separadores, sus claves de acceso y sus puntos suspensivos. Los menús contextuales no muestran las teclas de método abreviado.
+El contenido del menú contextual estándar es el siguiente. En esta lista se muestran las etiquetas de los elementos de menú, su orden con separadores, sus claves de acceso y sus puntos suspensivos. Los menús contextuales no muestran las teclas de método abreviado.
 
 <dl> Abrir  
 Ejecutar  
 Reproducir  
 Editar  
-Impresión... <separator>  
+Imprimir...  
+&lt;separator&gt;  
 Cortar  
 Copiar  
-Pegar <separator>  
+Pegar  
+&lt;separator&gt;  
 Eliminar  
-Renombrar <separator>  
+Cambiar nombre  
+&lt;separator&gt;  
 Bloquear <object name> (marca de verificación)  
 Propiedades
 </dl>
 
 ### <a name="using-ellipses"></a>Uso de puntos suspensivos
 
-Aunque los comandos de menú se usan para acciones inmediatas, es posible que se necesite más información para realizar la acción. **Indique un comando que necesite información adicional (incluida una confirmación) agregando puntos suspensivos al final de la etiqueta.**
+Aunque los comandos de menú se usan para acciones inmediatas, es posible que se necesite más información para realizar la acción. **Indique un comando que necesita información adicional (incluida una confirmación) agregando puntos suspensivos al final de la etiqueta.**
 
-![captura de pantalla del comando de impresión y del cuadro de diálogo imprimir ](images/cmd-menus-image15.png)
+![captura de pantalla del comando de impresión y el cuadro de diálogo imprimir ](images/cmd-menus-image15.png)
 
 En este ejemplo, imprimir... El comando muestra un cuadro de diálogo Imprimir para recopilar más información.
 
 **El uso adecuado de puntos suspensivos es importante para indicar que los usuarios pueden tomar más decisiones antes de realizar la acción o incluso cancelar la acción por completo.** La indicación visual que ofrece un botón de puntos suspensivos permite a los usuarios explorar el software sin miedo.
 
-**Esto no significa que deba usar** puntos suspensivos cada vez que una acción muestre otra ventana solo cuando se requiera información adicional para realizar la acción. Por ejemplo, los comandos About, Advanced, Help, Options, Properties y Configuración deben mostrar otra ventana al hacer clic en él, pero no requieren información adicional del usuario. Por lo tanto, no necesitan puntos suspensivos.
+**Esto no significa que deba usar** puntos suspensivos cada vez que una acción muestre otra ventana solo cuando se requiera información adicional para realizar la acción. Por ejemplo, los comandos Acerca de, Avanzado, Ayuda, Opciones, Propiedades y Configuración deben mostrar otra ventana cuando se hace clic en ella, pero no requieren información adicional del usuario. Por lo tanto, no necesitan puntos suspensivos.
 
 **En caso de ambigüedad (por ejemplo, la etiqueta de comando no tiene un verbo), decida en función de la acción del usuario más probable.** Si simplemente ver la ventana es una acción común, no use puntos suspensivos.
 
@@ -426,19 +453,19 @@ Más colores...
 
 Información de la versión
 
-En el primer ejemplo, lo más probable es que los usuarios elijan un color, por lo que el uso de puntos suspensivos es correcto. En el segundo ejemplo, lo más probable es que los usuarios puedan ver la información de la versión, lo que hace que los puntos suspensivos sean innecesarios.
+En el primer ejemplo, lo más probable es que los usuarios elijan un color, por lo que el uso de puntos suspensivos es correcto. En el segundo ejemplo, lo más probable es que los usuarios van a ver la información de la versión, lo que hace que los puntos suspensivos sean innecesarios.
 
 > [!Note]  
-> Al determinar si un comando de menú necesita puntos suspensivos, no use la necesidad de elevar los [privilegios](winenv-uac.md) como factor.
+> Al determinar si un comando de menú necesita puntos [suspensivos,](winenv-uac.md) no use la necesidad de elevar los privilegios como un factor.
 
  
 
-La elevación no es la información necesaria para realizar un comando (en su lugar, es para el permiso) y la necesidad de elevar se indica con el escudo de seguridad.
+La elevación no es información necesaria para realizar un comando (en su lugar, es para el permiso) y la necesidad de elevarse se indica con el escudo de seguridad.
 
 ## <a name="labels"></a>Etiquetas
 
 -   **Use mayúsculas de estilo de frase.**
-    -   **Excepción:** En el caso de las aplicaciones heredadas, puede usar mayúsculas y mayúsculas de estilo de título si es necesario para evitar mezclar estilos de mayúsculas y mayúsculas.
+    -   **Excepción:** En el caso de las aplicaciones heredadas, puede usar mayúsculas de estilo de título si es necesario para evitar mezclar estilos de mayúsculas.
 
 ### <a name="menu-category-names"></a>Nombres de categoría de menú
 
@@ -447,7 +474,7 @@ La elevación no es la información necesaria para realizar un comando (en su lu
     -   Tabla
     -   Herramientas
     -   Periodo
--   En el caso de los nombres de categoría no estándar, use una sola palabra específica que describa de forma clara y precisa el **contenido del menú.** Aunque los nombres no tienen que ser tan generales que describan todo el contenido del menú, deben ser lo suficientemente predecibles como para que los usuarios no se despreoprendan por lo que encuentran en el menú.
+-   Para los nombres de categoría no estándar, use una sola palabra específica que describa de forma clara y precisa el **contenido del menú.** Aunque los nombres no tienen que ser tan generales que describan todo en el menú, deben ser lo suficientemente predecibles para que los usuarios no se sorprendan por lo que encuentran en el menú.
 
 ### <a name="menu-item-names"></a>Nombres de elementos de menú
 
@@ -457,15 +484,15 @@ La elevación no es la información necesaria para realizar un comando (en su lu
         -   Acerca de
         -   Avanzado
         -   Pantalla completa
-        -   New
+        -   Nuevo
         -   Opciones
         -   Propiedades
     -   **El verbo es el mismo que el nombre de la categoría de menú para evitar la repetición.** Por ejemplo, en la categoría de menú Insertar, use Texto, Tabla e Imagen en lugar de Insertar texto, Insertar tabla e Insertar imagen.
 -   **Use verbos específicos.** Evite verbos genéricos y poco útiles, como Cambiar y administrar.
--   **Use nombres singulares para los comandos que se aplican a un único objeto**; de lo contrario, use nombres plurales.
+-   **Use nombres singulares para los comandos que se aplican a un solo objeto**; de lo contrario, use nombres plurales.
 -   **Use modificadores según sea necesario para distinguir entre comandos similares.** Ejemplos: Insertar fila anterior, Insertar fila a continuación.
 -   **Para los pares de comandos complementarios, elija nombres claramente complementarios.** Ejemplos: Agregar, Quitar; Mostrar, Ocultar; Insertar, Eliminar.
--   **Elija nombres de elementos de menú en función de los objetivos y las tareas del usuario, no de la tecnología.**
+-   **Elija los nombres de los elementos de menú en función de los objetivos y las tareas del usuario, no de la tecnología.**
 
 **Correcto:**
 
@@ -479,15 +506,15 @@ En el ejemplo incorrecto, el elemento de menú se basa en su tecnología.
 
 -   Use los siguientes nombres de elemento de menú para el propósito indicado:
     -   **Opciones** Para mostrar las opciones del programa.
-    -   **Personalizar** Para mostrar las opciones de programa relacionadas específicamente con la configuración mecánica de la interfaz de usuario.
-    -   **Personalizar** Para mostrar un resumen de la configuración de [personalización que se usa habitualmente.](glossary.md)
+    -   **Personalizar** Para mostrar las opciones del programa relacionadas específicamente con la configuración mecánica de la interfaz de usuario.
+    -   **Personalizar** Para mostrar un resumen de la configuración de [personalización que se usa con](glossary.md) frecuencia.
     -   **Preferencias** No lo use. En su lugar, use Opciones.
     -   **Propiedades** Para mostrar la ventana de propiedades de un objeto.
     -   **Configuración** No use como etiqueta de menú. En su lugar, use Opciones.
 
 ### <a name="submenu-names"></a>Nombres de submenú
 
--   **Los elementos de menú que muestran submenús nunca tienen puntos suspensivos en su etiqueta.** La flecha del submenú indica que se requiere otra selección.
+-   **Los elementos de menú que muestran submenús nunca tienen puntos suspensivos en su etiqueta.** La flecha de submenú indica que se requiere otra selección.
 
 **Incorrecto:**
 
@@ -502,10 +529,10 @@ Al hacer referencia a menús:
 -   En los comandos que muestran u ocultan menús, consulte barras de menús. No haga referencia a ellos como menús clásicos.
 -   Consulte los menús por sus etiquetas. Use el texto exacto de la etiqueta, incluida su inclusión en mayúsculas, pero no incluya el carácter de subrayado ni los puntos suspensivos de la clave de acceso.
 -   Para hacer referencia a las categorías de menú, use "En el <category name> menú". Si la ubicación de un elemento de menú no está clara en el contexto, no es necesario mencionar la categoría de menú.
--   Para describir la interacción del usuario de los elementos de menú, use clic, sin el menú de palabras ni el comando. No use choose, select ni pick. No haga referencia a un elemento de menú como elemento de menú, excepto en la documentación técnica.
+-   Para describir la interacción del usuario de los elementos de menú, use clic, sin el menú de palabras o el comando . No use choose, select ni pick. No haga referencia a un elemento de menú como elemento de menú, excepto en la documentación técnica.
 -   Para describir cómo quitar una marca de verificación de una opción de menú, use haga clic para quitar la marca de verificación. No use clear.
 -   Consulte los menús contextuales como menús contextuales, no como menús contextuales.
--   No use menús en cascada, desplegables, desplegables o emergentes para describir menús, excepto en la documentación de programación.
+-   No use menús en cascada, desplegables, desplegables o emergentes para describir los menús, excepto en la documentación de programación.
 -   Consulte elementos de menú no disponibles como no disponibles, no como atenuados, deshabilitados o atenuados. Use deshabilitado en la documentación de programación.
 -   Cuando sea posible, formatee las etiquetas con texto en negrita. De lo contrario, coloque las etiquetas entre comillas solo si es necesario para evitar confusiones.
 

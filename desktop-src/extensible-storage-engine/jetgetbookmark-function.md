@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7806770d528d83f18d6f3eb061dc3043e15a0e53
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 5b75e40205dc25d467a010499ef0083c7ad87c47
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984848"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477971"
 ---
 # <a name="jetgetbookmark-function"></a>JetGetBookmark (Función)
 
@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetgetbookmark-function"></a>JetGetBookmark (Función)
 
-La **función JetGetBookmark** recupera el marcador del registro asociado a la entrada de índice en la posición actual de un cursor. A continuación, este marcador se puede usar para volver a colocar ese cursor en el mismo registro [mediante JetGoToBookmark](./jetgotobookmark-function.md).
+La **función JetGetBookmark** recupera el marcador del registro asociado a la entrada de índice en la posición actual de un cursor. A continuación, este marcador se puede usar para cambiar la posición del cursor en el mismo registro [mediante JetGoToBookmark](./jetgotobookmark-function.md).
 
 ```cpp
     JET_ERR JET_API JetGetBookmark(
@@ -80,12 +80,12 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errBufferTooSmall</p> | <p>La operación se completó correctamente, pero el búfer de salida era demasiado pequeño para recibir el marcador completo. El búfer de salida se ha rellenado con la mayor parte del marcador que cabría. También se ha devuelto el tamaño real del marcador, si se solicita.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong> Estos valores devueltos se introducen en Windows XP.</p> | 
-| <p>JET_errNoCurrentRecord</p> | <p>El cursor no se coloca en un registro. Esto puede ocurrir por diversos motivos. Por ejemplo, esto ocurrirá si el cursor se coloca después del último registro en el índice actual.</p> | 
-| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong> Estos valores devueltos se introducen en Windows XP.</p> | 
+| <p>JET_errNoCurrentRecord</p> | <p>El cursor no está situado en un registro. Esto puede ocurrir por diversos motivos. Por ejemplo, esto ocurrirá si el cursor se coloca después del último registro en el índice actual.</p> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque aún no se ha inicializado la instancia asociada a la sesión.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p><p><strong>Windows XP:</strong> Este valor devuelto se introduce en Windows XP.</p> | 
-| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia de asociada a la sesión.</p> | 
 
 
 
@@ -93,11 +93,11 @@ Si esta función se realiza correctamente, el marcador del registro asociado a l
 
 Si se produce un error en esta función, el estado del búfer de salida y el tamaño real del marcador serán indefinidos a menos que JET_errBufferTooSmall se devuelva. En caso de JET_errBufferTooSmall, el búfer de salida contendrá la mayor parte del marcador que cabe en el espacio proporcionado y el tamaño real del marcador será preciso. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Normalmente, los marcadores se deben tratar como fragmentos opacos de datos. No se debe intentar aprovechar la estructura interna de estos datos. Sin embargo, se cumplen las condiciones siguientes en todos los marcadores DE ESENT:
+Por lo general, los marcadores se deben tratar como fragmentos opacos de datos. No se debe intentar aprovechar la estructura interna de estos datos. Sin embargo, se cumplen las condiciones siguientes en todos los marcadores de ESENT:
 
-  - Un marcador identifica de forma única un registro de una tabla determinada.
+  - Un marcador identifica de forma única un registro en una tabla determinada.
 
   - El marcador de un registro no cambiará durante la vigencia de ese registro.
 
@@ -105,22 +105,16 @@ Normalmente, los marcadores se deben tratar como fragmentos opacos de datos. No 
 
   - Los marcadores se pueden comparar entre sí mediante la función [memcmp](/previous-versions/visualstudio/visual-studio-6.0/aa246467(v=vs.60)) para establecer su ordenación relativa en el índice principal sobre la tabla de los registros de origen. Si no se define ningún índice principal sobre esa tabla, no es significativo usar la ordenación relativa de los marcadores de esa tabla.
 
-  - No tiene sentido comparar marcadores de registros de tablas diferentes entre sí.
+  - No tiene sentido comparar los marcadores de registros de tablas diferentes entre sí.
 
   - Un marcador siempre es menor o igual que JET_cbBookmarkMost (256) bytes de longitud, antes de Windows Vista.
     
-**Windows Vista:** En Windows Vista y versiones posteriores, los marcadores pueden ser mayores JET_cbBookmarkMost (256) bytes. El tamaño máximo de un marcador es igual al valor actual de JET_paramKeyMost + 1.
+**Windows Vista:** En Windows Vista y versiones posteriores, los marcadores pueden ser mayores que JET_cbBookmarkMost (256) bytes. El tamaño máximo de un marcador es igual al valor actual de JET_paramKeyMost + 1.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

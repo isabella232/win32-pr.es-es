@@ -4,12 +4,12 @@ ms.assetid: 1dfd5557-3f3b-4d59-9df6-e73cb1157619
 title: MFPKEY_COLORCONV_SRCTOP propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4b0eca375fa0f28f26f5b19ad31596678fbfab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ab32b1ae9093c72ef9c5d7fb19505881f6afa78b8bc45e4a86a72d87ee72184
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113485"
 ---
 # <a name="mfpkey_colorconv_srctop-property"></a>Propiedad MFPKEY \_ COLORCONV \_ SRCTOP
 
@@ -31,15 +31,15 @@ VT \_ I4
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

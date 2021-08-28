@@ -1,9 +1,9 @@
 ---
-title: Keywords (MetadataType), elemento
-description: Define una lista de palabras clave que clasifican eventos. | Keywords (MetadataType), elemento
+title: Elemento keywords (MetadataType)
+description: Define una lista de palabras clave que clasifican eventos. | Elemento keywords (MetadataType)
 ms.assetid: 1e32d17d-71be-4c69-9709-ee65d8d578e7
 keywords:
-- elemento Keywords EventLog
+- elemento de palabras clave EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 03145bcaa3c99b3275b983a3f115b7cc85be791b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0e4c19d6281430ac483c390ee313856ca0ef23357c6cde3a3c76e160c4bb6da0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124415"
 ---
-# <a name="keywords-metadatatype-element"></a>Keywords (MetadataType), elemento
+# <a name="keywords-metadatatype-element"></a>Elemento keywords (MetadataType)
 
 Define una lista de palabras clave que clasifican eventos.
 
@@ -30,7 +30,7 @@ Define una lista de palabras clave que clasifican eventos.
  />
 ```
 
-El elemento **Keywords** se define mediante el tipo complejo [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+El **elemento keywords** se define mediante el [**tipo complejo MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Keywords** se define mediante el tipo complejo [**MetadataType**](
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

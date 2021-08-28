@@ -1,19 +1,19 @@
 ---
-description: Especifica el ancho de los rectángulos de origen y de destino, en píxeles.
+description: Especifica el ancho de los rectángulos de origen y destino, en píxeles.
 ms.assetid: 823f5fdf-a42c-47c0-aab4-3f43afd29c2b
-title: Propiedad MFPKEY_COLORCONV_WIDTH (Wmcodecdsp. h)
+title: MFPKEY_COLORCONV_WIDTH propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bba6228b11f5a78493f0762d175b46024e9ae199
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8815acb072077989143615752108162dee40861b43eaf1bcbb5fd656f5021a63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113475"
 ---
-# <a name="mfpkey_colorconv_width-property"></a>\_Propiedad ancho de COLORCONV de MFPKEY \_
+# <a name="mfpkey_colorconv_width-property"></a>Propiedad \_ COLORCONV WIDTH de MFPKEY \_
 
-Especifica el ancho de los rectángulos de origen y de destino, en píxeles.
+Especifica el ancho de los rectángulos de origen y destino, en píxeles.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -25,7 +25,7 @@ VT \_ I4
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [DSP de convertidor de colores](colorconverter.md)
+-   [DSP del convertidor de colores](colorconverter.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ VT \_ I4
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

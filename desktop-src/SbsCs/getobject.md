@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Sxsoa.dll
-ms.openlocfilehash: a102fdae74232fa9a67c4b9455050bcdba32a219d8a66180ae8bc6ce6cb96c8c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b6c47c00f50cdeaa97fd0fafcd8aefa3c4863bc1
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119885285"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886610"
 ---
 # <a name="actctxgetobject-method"></a>Método ActCtx.GetObject
 
-El **método GetObject** obtiene una instancia de un archivo [**Microsoft.Windows. Objeto ActCtx.**](microsoft-windows-actctx-object.md)
+El **método GetObject** obtiene una instancia de un [**archivo Microsoft.Windows. Objeto ActCtx.**](microsoft-windows-actctx-object.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ ActCtx.GetObject(
 *bstrName* 
 </dt> <dd>
 
-Cadena requerida que indica el objeto . El nombre debe estar en el Registro en **HKEY \_ LOCAL \_ MACHINE** \\ **Microsoft** \\ **Visual Studio** \\ **6.0** \\ **<package>** \\ **Automation**.
+Cadena requerida que indica el objeto . El nombre debe estar en el Registro en **HKEY \_ LOCAL \_ MACHINE** \\ **Microsoft** \\ **Visual Studio** \\ **6.0** \\ **&lt; package &gt;** \\ **Automation**.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |

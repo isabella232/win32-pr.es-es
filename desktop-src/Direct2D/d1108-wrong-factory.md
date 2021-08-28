@@ -1,9 +1,9 @@
 ---
-title: D1108 Error de fábrica
+title: Generador incorrecto D1108
 ms.assetid: eb851118-0541-4c9a-a22d-b98f041852bb
 description: La fábrica 1 asignó el recurso y se usó con la fábrica 2.
 keywords:
-- D1108 Wrong Factory Direct2D
+- D1108 Factoría incorrecta Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 20021472467d7861aa2b9cabd5602b5a167f20ab
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 463909abeda1410804fa4b842dbdc829c3a74271
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622161"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786739"
 ---
-# <a name="d1108-wrong-factory"></a>D1108: Fábrica incorrecta
+# <a name="d1108-wrong-factory"></a>D1108: fábrica incorrecta
 
-La fábrica 1 asignó el recurso de recursos \[  \] y se \[  \] usó con la \[ *factoría 2.* \]
+La fábrica \[ *1* asignó el recurso de recursos \] \[  \] y se usó con la \[ *fábrica 2.* \]
 
 ## <a name="placeholders"></a>Marcadores de posición
 
@@ -56,7 +56,7 @@ Dirección del generador con el que se *usó* el recurso.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) habilitados para depuración; A continuación, crea una geometría a partir del primer generador y un pincel de la segunda. Por último, llama a [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), pasando la geometría y el pincel.
+En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) habilitados para depuración; A continuación, crea una geometría a partir del primer generador y un pincel del segundo generador. Por último, llama a [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), pasando la geometría y el pincel.
 
 
 ```C++
@@ -96,7 +96,7 @@ En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows
 
 
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -119,7 +119,7 @@ En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows
 </tbody>
 </table>
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -143,7 +143,7 @@ En el ejemplo siguiente se crean primero dos objetos [**ID2D1Factory**](/windows
 </tbody>
 </table>
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -178,7 +178,7 @@ by factory [002ED698] and used with factory [002ED470].
 
 ## <a name="possible-causes"></a>Causas posibles
 
-Uso de recursos no válido. Un recurso asignado por una factoría se usó con otro generador.
+Uso de recursos no válidos. Un recurso asignado por una factoría se usó con otro generador.
 
  
 

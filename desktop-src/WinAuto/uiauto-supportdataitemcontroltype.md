@@ -5,7 +5,7 @@ ms.assetid: def52fe7-9f05-4cd0-8a46-af4e2e3ba03e
 keywords:
 - Automatización de la interfaz de usuario, compatibilidad con el tipo de control DataItem
 - Automatización de la interfaz de usuario, tipo de control DataItem
-- Automatización de la interfaz de usuario estructura de árbol para el tipo de control DataItem
+- Automatización de la interfaz de usuario,estructura de árbol para el tipo de control DataItem
 - Automatización de la interfaz de usuario,properties para el tipo de control DataItem
 - Automatización de la interfaz de usuario,patrones de control para el tipo de control DataItem
 - Automatización de la interfaz de usuario,events para el tipo de control DataItem
@@ -24,12 +24,12 @@ keywords:
 - tipos de control, DataItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5ec4612b43855578256d52bf6647b105ea666882cfe2f72dcdbf355559a7e5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49840dbe2aeed9200ebf02b80e270cd8fa3e0747
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118826325"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468192"
 ---
 # <a name="dataitem-control-type"></a>Tipo de control DataItem
 
@@ -44,45 +44,22 @@ En este tema se incluyen las siguientes secciones.
 -   [Estructura de árbol típica](#typical-tree-structure)
 -   [Propiedades pertinentes](#relevant-properties)
 -   [Patrones de control necesarios](#required-control-patterns)
--   [Trabajar con dataitems en listas grandes](#working-with-dataitems-in-large-lists)
+-   [Trabajar con DataItems en listas grandes](#working-with-dataitems-in-large-lists)
 -   [Eventos necesarios](#required-events)
 -   [Ejemplo de tipo de control DataItem](#dataitem-control-type-example)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control y una vista de contenido típicos del árbol Automatización de la interfaz de usuario que pertenece a los controles de elementos de datos y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario árbol, vea [información general Automatización de la interfaz de usuario árbol de árbol.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles de elementos de datos y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Vista de control</th>
-<th>Vista de contenido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>DataItem
-<ul>
-<li>Varía (0 o más; se puede estructurar en jerarquía)</li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>DataItem
-<ul>
-<li>Varía (0 o más; se puede estructurar en jerarquía)</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Vista de control | Vista de contenido | 
+|--------------|--------------|
+| <ul><li>DataItem<ul><li>Varía (0 o más; se puede estructurar en jerarquía)</li></ul></li></ul> | <ul><li>DataItem<ul><li>Varía (0 o más; se puede estructurar en jerarquía)</li></ul></li></ul> | 
+
 
 
 
@@ -92,7 +69,7 @@ Un elemento de datos de una cuadrícula de datos puede hospedar diversos objetos
 
 ## <a name="relevant-properties"></a>Propiedades pertinentes
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para el tipo de control DataItem. Para obtener más información sobre Automatización de la interfaz de usuario, vea [Retrieving Properties from Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para el tipo de control DataItem. Para obtener más información sobre Automatización de la interfaz de usuario propiedades, vea [Recuperar propiedades de Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
 
 
 
@@ -102,11 +79,11 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.   | El rectángulo exterior que contiene el control completo.                                                                                                                                             |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.   | Se admite si hay un rectángulo delimitador. Si no se puede hacer clic en todos los puntos del rectángulo delimitador y el elemento realiza pruebas de acceso especializadas, invalide y proporcione un punto en el que se puede hacer clic. |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **DataItem** |                                                                                                                                                                                                      |
-| [**UIA \_ IsContentElementPropertyId**](uiauto-automation-element-propids.md)         | TRUE         | El control de elemento de datos siempre debe ser contenido.                                                                                                                                                        |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE         | El control de elemento de datos siempre debe ser contenido.                                                                                                                                                        |
 | [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE         | El control de elemento de datos siempre debe ser un control.                                                                                                                                                      |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.   | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                            |
 | [**ItemStatusPropertyId de UIA \_**](uiauto-automation-element-propids.md)                     | Vea las notas.   | Si el control contiene el estado que se actualiza dinámicamente, esta propiedad debe ser compatible para que una tecnología de asistencia pueda recibir actualizaciones cuando cambie el estado del elemento.        |
-| [**ItemTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                         | Vea las notas.   | Este es el valor de cadena que transmite al usuario final el objeto subyacente que representa el elemento. Algunos ejemplos son "Archivo multimedia" y "Contacto".                                                   |
+| [**UIA \_ ItemTypePropertyId**](uiauto-automation-element-propids.md)                         | Vea las notas.   | Este es el valor de cadena que transmite al usuario final el objeto subyacente que representa el elemento. Algunos ejemplos son "Archivo multimedia" y "Contacto".                                                   |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Null         | Los controles de elemento de datos no tienen una etiqueta de texto estático.                                                                                                                                                  |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.   | Cadena localizada correspondiente al tipo de control **DataItem.** El valor predeterminado es "elemento de datos" para en-US o inglés (Estados Unidos).                                                              |
 | [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas.   | El control de elemento de datos siempre contiene un elemento de texto principal que el usuario reconocería como identificador del elemento.                                                                           |
@@ -127,7 +104,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 | [**IGridItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider)             | Depende | Los elementos de datos admitirán el patrón de control [GridItem](uiauto-implementinggriditem.md) cuando haya disponible una colección de elementos de datos dentro de un contenedor que se pueda navegar espacialmente de elemento a elemento.                 |
 | [**IScrollItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider)         | Depende | Todos los elementos de datos admiten la capacidad de desplazarse a la vista con el patrón de control [ScrollItem](uiauto-implementingscrollitem.md) cuando su contenedor de datos tiene más elementos de los que caben en la pantalla.             |
 | [**ISelectionItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionitemprovider)   | Depende | La capacidad de seleccionar los elementos de datos depende del contenido.                                                                                                                                                          |
-| [**ITableItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider)           | Depende | Si el elemento de datos está incluido en un tipo de control [DataGrid](uiauto-supportdatagridcontroltype.md) que tiene un elemento de encabezado, debe admitir el patrón de control [TableItem.](uiauto-implementingtableitem.md) |
+| [**ITableItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider)           | Depende | Si el elemento de datos se encuentra dentro de un tipo de control [DataGrid](uiauto-supportdatagridcontroltype.md) que tiene un elemento de encabezado, debe admitir el patrón de control [TableItem.](uiauto-implementingtableitem.md) |
 | [**IToggleProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider)                 | Depende | Si el elemento de datos contiene un estado que se puede recorrer en ciclo, debe admitir el patrón de control [Toggle.](uiauto-implementingtoggle.md)                                                                          |
 | [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)                   | Depende | Si el texto principal del elemento de datos es editable, debe ser compatible con [el patrón](uiauto-implementingvalue.md) de control Valor.                                                                                             |
 
@@ -139,7 +116,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 Dado que las listas grandes a menudo se virtualizan en marcos de interfaz de usuario para ayudar en el rendimiento, un cliente de Automatización de la interfaz de usuario no puede usar la característica de consulta Automatización de la interfaz de usuario para buscar el contenido del árbol completo de la misma manera que en otros contenedores de elementos. Un cliente debe desplazar el elemento a la vista (o expandir el control para mostrar todas las opciones disponibles) antes de acceder al conjunto completo de información desde el elemento de datos.
 
-Al llamar a [**SetFocus**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-setfocus) en el elemento Automatización de la interfaz de usuario para el elemento de datos, Microsoft Windows Explorer devuelve correctamente y hace que el foco se establezca en el control Editar del subárbol del elemento de datos.
+Al llamar a [**SetFocus**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-setfocus) en el elemento Automatización de la interfaz de usuario del elemento de datos, Microsoft Windows Explorer devuelve correctamente y hace que el foco se establezca en el control Editar del subárbol del elemento de datos.
 
 ## <a name="required-events"></a>Eventos necesarios
 
@@ -152,13 +129,13 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario even
 | [**AutomationFocusChangedEventId de UIA \_**](uiauto-event-ids.md)                                                                   |                                                                                                                                  |
 | [**UIA \_ Evento de cambio de propiedad BoundingRectanglePropertyId.**](uiauto-automation-element-propids.md)                              |                                                                                                                                  |
 | [**UIA \_ Evento expandCollapseExpandCollapseStatePropertyId**](uiauto-control-pattern-propids.md) cambiado por la propiedad . | Si el control admite el patrón de control [ExpandCollapse,](uiauto-implementingexpandcollapse.md) debe admitir este evento. |
-| [**Invoke \_ InvokedEventId de UIA \_**](uiauto-event-ids.md)                                                                                  | Si el control admite el patrón de control [Invoke,](uiauto-implementinginvoke.md) debe admitir este evento.                 |
+| [**Invoke \_ InvokeEventId de UIA \_**](uiauto-event-ids.md)                                                                                  | Si el control admite el patrón de control [Invoke,](uiauto-implementinginvoke.md) debe admitir este evento.                 |
 | [**UIA \_ Evento de cambio de propiedad IsEnabledPropertyId.**](uiauto-automation-element-propids.md)                                              | Si el control admite la [**propiedad IsEnabled,**](uiauto-automation-element-propids.md) debe admitir este evento.         |
 | [**UIA \_ Evento de cambio de propiedad IsOffscreenPropertyId.**](uiauto-automation-element-propids.md)                                          | Si el control admite la [**propiedad IsOffscreen,**](uiauto-automation-element-propids.md) debe admitir este evento.       |
 | [**UIA \_ Evento de cambio de propiedad ItemStatusPropertyId.**](uiauto-automation-element-propids.md)                                            | Si el control admite la [**propiedad ItemStatus,**](uiauto-automation-element-propids.md) debe admitir este evento.        |
 | [**UIA \_ Evento de cambio de propiedad NamePropertyId.**](uiauto-automation-element-propids.md)                                                        |                                                                                                                                  |
 | [**Elemento \_ SelectionItem \_ de UIAAddedToSelectionEventId**](uiauto-event-ids.md)                                    | Si el control admite el patrón de control [SelectionItem,](uiauto-implementingselectionitem.md) debe admitir este evento.   |
-| [**Elemento \_ SelectionItem de \_ UIARemovedFromSelectionEventId**](uiauto-event-ids.md)                            | Si el control admite el patrón de control [SelectionItem,](uiauto-implementingselectionitem.md) debe admitir este evento.   |
+| [**Elemento \_ SelectionItem \_ de UIARemovedFromSelectionEventId**](uiauto-event-ids.md)                            | Si el control admite el patrón de control [SelectionItem,](uiauto-implementingselectionitem.md) debe admitir este evento.   |
 | [**Elementos \_ SelectionItem \_ de UIASelectedEventId**](uiauto-event-ids.md)                                                    | Si el control admite el patrón de control [SelectionItem,](uiauto-implementingselectionitem.md) debe admitir este evento.   |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                                               |                                                                                                                                  |
 | [**UIA \_ Evento de cambio de propiedad ToggleToggleStatePropertyId.**](uiauto-control-pattern-propids.md)                                 | Si el control admite el patrón de control [Toggle,](uiauto-implementingtoggle.md) debe admitir este evento.                 |
@@ -178,54 +155,11 @@ A continuación se muestran la vista de control y la vista de contenido del Auto
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Automatización de la interfaz de usuario árbol: Vista de control</th>
-<th>Automatización de la interfaz de usuario árbol de contenido: vista de contenido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Group &quot; Contoso &quot; (Table, Grid)
-<ul>
-<li>DataItem &quot; Accounts Receivable.doc&quot; (TableItem, GridItem, SelectionItem, Invoke)
-<ul>
-<li>Cuentas &quot; de imagen Receivable.doc&quot;</li>
-<li>Editar &quot; nombre &quot; (TableItem, GridItem, Cuentas &quot; de valor Receivable.doc&quot; )</li>
-<li>Editar &quot; fecha de modificación &quot; (TableItem, GridItem, valor &quot; 25/8/2006 3:29 p. &quot; m.)</li>
-<li>Editar &quot; tamaño &quot; (GridItem, TableItem, valor &quot; de 11,0 &quot; KB)</li>
-</ul></li>
-<li>DataItem &quot; Accounts Payable.doc&quot; (TableItem, GridItem, SelectionItem, Invoke)
-<ul>
-<li>...</li>
-</ul></li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li>Group &quot; Contoso &quot; (Table, Grid)
-<ul>
-<li>DataItem &quot; Accounts Receivable.doc&quot; (TableItem, GridItem, SelectionItem, Invoke)
-<ul>
-<li>Cuentas &quot; de imagen Receivable.doc&quot;</li>
-<li>Editar &quot; nombre &quot; (TableItem, GridItem, Cuentas &quot; de valor Receivable.doc&quot; )</li>
-<li>Editar &quot; fecha de modificación &quot; (TableItem, GridItem, valor &quot; 25/8/2006 3:29 p. &quot; m.)</li>
-<li>Editar &quot; tamaño &quot; (GridItem, TableItem, valor &quot; de 11,0 &quot; KB)</li>
-</ul></li>
-<li>DataItem &quot; Accounts Payable.doc&quot; (TableItem, GridItem, SelectionItem, Invoke)
-<ul>
-<li>...</li>
-</ul></li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Automatización de la interfaz de usuario árbol de control: Vista de control | Automatización de la interfaz de usuario árbol de contenido: vista de contenido | 
+|-----------------------------------|-----------------------------------|
+| <ul><li>Group "Contoso" (Table, Grid)<ul><li>DataItem "Accounts Receivable.doc" (TableItem, GridItem, SelectionItem, Invoke)<ul><li>Image "Accounts Receivable.doc"</li><li>Edit "Name" (TableItem, GridItem, Value "Accounts Receivable.doc")</li><li>Edit "Date modified" (TableItem, GridItem, Value "8/25/2006 3:29 PM")</li><li>Edite "Size" (GridItem, TableItem, Value "11.0 KB")</li></ul></li><li>DataItem "Accounts Payable.doc" (TableItem, GridItem, SelectionItem, Invoke)<ul><li>...</li></ul></li></ul></li></ul> | <ul><li>Group "Contoso" (Table, Grid)<ul><li>DataItem "Accounts Receivable.doc" (TableItem, GridItem, SelectionItem, Invoke)<ul><li>Image "Accounts Receivable.doc"</li><li>Edit "Name" (TableItem, GridItem, Value "Accounts Receivable.doc")</li><li>Edit "Date modified" (TableItem, GridItem, Value "8/25/2006 3:29 PM")</li><li>Edite "Size" (GridItem, TableItem, Value "11.0 KB")</li></ul></li><li>DataItem "Accounts Payable.doc" (TableItem, GridItem, SelectionItem, Invoke)<ul><li>...</li></ul></li></ul></li></ul> | 
+
 
 
 

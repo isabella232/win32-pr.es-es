@@ -1,19 +1,19 @@
 ---
-description: El Administrador del ámbito de rastreo (CSM) le permite agregar y quitar raíces de búsqueda de los almacenes de datos hacia y desde el ámbito de rastreo de Windows Search.
+description: El Administrador del ámbito de rastreo (CSM) permite agregar y quitar raíces de búsqueda de los almacenes de datos hacia y desde el ámbito de rastreo de Windows Search.
 ms.assetid: 0f1ff41f-7c4c-4516-bb55-bf09a8f2f3bc
 title: Administración de raíces de búsqueda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 758d3c10a4c69f336202274cd1fb40528848b0ddb431fd58646cf700d2b2d736
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9cbe5fe6184681e6c37cb0b6a7f9a35c677fec53
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119095292"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880201"
 ---
 # <a name="managing-search-roots"></a>Administración de raíces de búsqueda
 
-El Administrador del ámbito de rastreo (CSM) le permite agregar y quitar raíces de búsqueda de los almacenes de datos hacia y desde el ámbito de rastreo de Windows Search.
+El Administrador del ámbito de rastreo (CSM) permite agregar y quitar raíces de búsqueda de los almacenes de datos hacia y desde el ámbito de rastreo de Windows Search.
 
 En esta sección se incluyen los siguientes temas:
 
@@ -40,13 +40,13 @@ or
 
 
 
-El segmento debe ir seguido de dos (2) barras diagonales ('/') a menos que sea el archivo: protocolo, que requiere tres barras <protocol> diagonales (file:///). El segmento representa un almacén de contenido o un identificador de seguridad de usuario si la raíz de búsqueda está pensada para <site or SID> ser específica del usuario. El <path> segmento es un conjunto de contenedores, como directorios o carpetas, y puede incluir el carácter comodín ' \* '. A la clase <item> segment es opcional y también puede incluir el carácter comodín ' \* '. Si no incluye un elemento, asegúrese de finalizar el segmento de ruta de acceso con una barra diagonal o el indexador asumirá que el último subcontenedor es un elemento.
+El segmento de protocolo debe ir seguido de dos &lt; (2) barras diagonales ('/') a menos que sea el archivo: protocolo, que requiere tres barras &gt; diagonales (file:///). El segmento representa un almacén de contenido o un identificador de seguridad de usuario si la raíz de búsqueda está pensada para <site or SID> ser específica del usuario. El &lt; segmento de ruta de acceso es un conjunto de contenedores, como directorios o carpetas, y puede incluir el carácter &gt; comodín ' \* '. El &lt; segmento de elemento es opcional y también puede incluir el carácter &gt; comodín ' \* '. Si no incluye un elemento, asegúrese de finalizar el segmento de ruta de acceso con una barra diagonal o el indexador asumirá que el último subcontenedor es un elemento.
 
 Por ejemplo, supongamos que ha implementado un controlador de protocolo (myPH) para controlar archivos de tipo \* .myext para una aplicación personalizada. Todos estos archivos se ubicarán en la carpeta WorkteamA \\ ProjectFiles en un equipo local. La raíz de búsqueda de que podría tener este aspecto:
 
 -   myPH:///C: \\ WorkteamA \\ ProjectFiles\\
 
-Supongamos que planea incluir todos los archivos .myext, pero nada más de ese contenedor en el índice. La raíz de búsqueda de que podría tener este aspecto:
+Imagine que planea incluir todos los archivos .myext, pero nada más de ese contenedor en el índice. La raíz de búsqueda de que podría tener este aspecto:
 
 -   myPH:///C: \\ WorkteamA \\ ProjectFiles \\ \* .myext.
 
@@ -57,11 +57,11 @@ Los patrones de caracteres comodín definen direcciones URL mediante el carácte
 
 Pero ese patrón no coincidiría con esta dirección URL:
 
--   C: Datos \\ temporales de ProjectA \\ **versión 1 \\** \\\\
+-   C: Datos \\ temporales de ProjectA \\ **versión \\** \\ 1\\
 
-Debe crear nuevas raíces de búsqueda para contenedores que aún no están en el ámbito de rastreo del indexador. Si la ruta de acceso C: ParentScope ya está incluida en el ámbito de rastreo, no es necesario agregar una nueva raíz de búsqueda para \\ C: ParentScope ChildScope a menos que sepa que el ámbito secundario se excluyó \\ \\ anteriormente.
+Debe crear nuevas raíces de búsqueda para contenedores que aún no están en el ámbito de rastreo del indexador. Si la ruta de acceso C: ParentScope ya está incluida en el ámbito de rastreo, no es necesario agregar una nueva raíz de búsqueda para \\ C: ParentScope ChildScope a menos que sepa que el ámbito secundario se excluyó \\ \\ previamente.
 
-La interfaz de usuario para configurar Windows search muestra raíces de búsqueda a los usuarios para que puedan refinar las reglas de ámbito de sus búsquedas. Como parte del proceso de instalación para el controlador de protocolo personalizado, el contenedor o la aplicación, puede definir un ámbito de rastreo predeterminado, con reglas de inclusión y exclusión. Estas reglas se presentan a los usuarios finales como ubicaciones. Los usuarios pueden navegar por los subdirectorios de la raíz de búsqueda predefinida y seleccionar los que quieren incluir en las búsquedas o borrar los que quieren excluir.
+La interfaz de usuario para configurar Windows search muestra raíces de búsqueda a los usuarios para que puedan refinar las reglas de ámbito para sus búsquedas. Como parte del proceso de instalación para el controlador de protocolo personalizado, el contenedor o la aplicación, puede definir un ámbito de rastreo predeterminado, con reglas de inclusión y exclusión. Estas reglas se presentan a los usuarios finales como ubicaciones. Los usuarios pueden navegar por los subdirectorios de la raíz de búsqueda predefinida y seleccionar los que quieren incluir en las búsquedas o borrar los que quieren excluir.
 
  
 
@@ -79,7 +79,7 @@ Después de realizar cambios en el Administrador del ámbito de rastreo (CSM), d
 
 ## <a name="windows-7-new-crawl-scope-manager-api"></a>Windows 7: Nueva API de Administrador del ámbito de rastreo
 
-En **Windows 7 y** versiones posteriores, [**ISearchCrawlScopeManager2**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager2) amplía la funcionalidad de la interfaz [**ISearchCrawlScopeManager.**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) El [**método ISearchCrawlScopeManager2::GetVersion**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager2-getversion) obtiene la versión Administrador del ámbito de rastreo (CSM), que informa a los clientes si el estado del CSM ha cambiado. **ISearchCrawlScopeManager2::GetVersion** no da como resultado una llamada entre procesos. Si la función se realiza correctamente, el puntero que se devuelve sigue siendo válido hasta que el cliente llama a **UnmapViewOfFile** en el puntero y **CloseHandle** en el identificador devuelto.
+En **Windows 7 y** versiones posteriores, [**ISearchCrawlScopeManager2**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager2) amplía la funcionalidad de la [**interfaz ISearchCrawlScopeManager.**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) El [**método ISearchCrawlScopeManager2::GetVersion**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager2-getversion) obtiene la versión Administrador del ámbito de rastreo (CSM), que informa a los clientes si el estado del CSM ha cambiado. **ISearchCrawlScopeManager2::GetVersion** no da como resultado una llamada entre procesos. Si la función se realiza correctamente, el puntero que se devuelve sigue siendo válido hasta que el cliente llama a **UnmapViewOfFile** en el puntero y **CloseHandle** en el identificador devuelto.
 
  
 
@@ -114,7 +114,7 @@ Para agregar las raíces adecuadas para los nuevos usuarios:
 
 ## <a name="removing-roots-from-the-crawl-scope"></a>Quitar raíces del ámbito de rastreo
 
-Puede usar [**ISearchCrawlScopeManager para**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) quitar una raíz del ámbito de rastreo cuando ya no quiera indexar esa dirección URL. Al quitar una raíz también se eliminan todas las reglas de ámbito de esa dirección URL. Por ejemplo, supongamos que quiere desinstalar un almacén de contenido o su controlador de protocolo de un sistema. Puede desinstalar la aplicación, quitar todos los datos y, a continuación, quitar la raíz de búsqueda del ámbito de rastreo, y el Administrador del ámbito de rastreo quitará la raíz y todas las reglas de ámbito asociadas a la raíz.
+Puede usar [**ISearchCrawlScopeManager para**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcrawlscopemanager) quitar una raíz del ámbito de rastreo cuando ya no quiera indexar esa dirección URL. Al quitar una raíz también se eliminan todas las reglas de ámbito de esa dirección URL. Por ejemplo, suponga que desea desinstalar un almacén de contenido o su controlador de protocolo de un sistema. Puede desinstalar la aplicación, quitar todos los datos y, a continuación, quitar la raíz de búsqueda del ámbito de rastreo, y el Administrador del ámbito de rastreo quitará la raíz y todas las reglas de ámbito asociadas a la raíz.
 
 Para quitar una raíz de búsqueda existente, llame a [**ISearchCrawlScopeManager::RemoveRoot**](/windows/desktop/api/Searchapi/nf-searchapi-isearchcrawlscopemanager-removeroot) con la raíz de búsqueda que desea quitar. La dirección URL raíz de búsqueda tiene la misma forma que la raíz de búsqueda descrita anteriormente. Este método devuelve S FALSE si no se encuentra la raíz y un código de error si se produjo un error al quitar una raíz \_ que se encontró.
 

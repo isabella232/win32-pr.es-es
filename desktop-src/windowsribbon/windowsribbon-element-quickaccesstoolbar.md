@@ -1,9 +1,9 @@
 ---
-title: QuickAccessToolbar, elemento
+title: Elemento QuickAccessToolbar
 description: Representa la barra de herramientas de acceso rápido (QAT), una pequeña barra de herramientas que muestra accesos directos a los comandos de la cinta de opciones.
 ms.assetid: 59aa35c3-a844-46b3-b066-c9a321fb0891
 keywords:
-- Cinta de opciones de Windows del elemento QuickAccessToolbar
+- Cinta de opciones del elemento QuickAccessToolbar Windows
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6ae01f620d66298a5f7200d0be947dbfb3750af4
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: fa9d097823d049d145c25d1027bdb5a67d688692
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443306"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624171"
 ---
-# <a name="quickaccesstoolbar-element"></a>QuickAccessToolbar, elemento
+# <a name="quickaccesstoolbar-element"></a>Elemento QuickAccessToolbar
 
 Representa la [barra de herramientas de acceso rápido (QAT),](windowsribbon-controls-quickaccesstoolbar.md)una pequeña barra de herramientas que muestra accesos directos a los comandos de la cinta de opciones.
 
@@ -40,16 +40,16 @@ Representa la [barra de herramientas de acceso rápido (QAT),](windowsribbon-con
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -121,7 +121,7 @@ En esta sección de código se muestra **la declaración QuickAccessToolbar** Co
 
 
 
-En esta sección de código se muestra la declaración de control **QuickAccessToolbar.**
+En esta sección de código se muestra la declaración del control **QuickAccessToolbar.**
 
 
 ```XML

@@ -1,9 +1,9 @@
 ---
 title: Elemento Data (ComplexDataType)
-description: Lista de elementos de datos de la estructura. La lista de elementos está en el mismo orden que se define en la plantilla.
+description: Lista de elementos de datos de la estructura . La lista de elementos está en el mismo orden que se define en la plantilla.
 ms.assetid: f2d7c2e4-0daa-4413-b23b-e1fd70dc4fc1
 keywords:
-- EventLog del elemento de datos
+- Elemento de datos EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34481c7cc784a20cb59a146c5f23cf21d8c51b3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8425b4ec69fc596e510554c589c58247837476389d1b7dbb9ab39de2dfbc7ff8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124245"
 ---
 # <a name="data-complexdatatype-element"></a>Elemento Data (ComplexDataType)
 
-Lista de elementos de datos de la estructura. La lista de elementos está en el mismo orden que se define en la plantilla.
+Lista de elementos de datos de la estructura . La lista de elementos está en el mismo orden que se define en la plantilla.
 
 ``` syntax
 <xs:element name="Data"
@@ -30,7 +30,7 @@ Lista de elementos de datos de la estructura. La lista de elementos está en el 
  />
 ```
 
-El elemento de **datos** se define mediante el tipo complejo de [**ComplexDataType**](eventschema-complexdatatype-complextype.md) .
+El **elemento Data** se define mediante el tipo complejo [**ComplexDataType.**](eventschema-complexdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **datos** se define mediante el tipo complejo de [**ComplexDataTy
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

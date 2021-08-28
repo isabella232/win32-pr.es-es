@@ -7,12 +7,12 @@ MSHAttr:
 title: IPixEngine5::RenderTextureAsync (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41189637fd741d22fc566f913b25ddba1109854ed12a0336ffac899c10fd3147
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 400ade8aa962a73234efbfb710d9ab6b178dfd4e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119405685"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626571"
 ---
 # <a name="span-idvspixengineipixengine5_rendertextureasync_uint_pixenginetexturesliceindex_int_float_arr4_float_arr4_bstr_uint_bstr_arr_float_arr_uint_bstr_arr_bool_arr_bstr_ipixengine5callbacks_ptr_dword_dwordspanipixengine5rendertextureasync-method"></a><span id="vspixengine.ipixengine5_rendertextureasync_uint_pixenginetexturesliceindex_int_float_arr4_float_arr4_bstr_uint_bstr_arr_float_arr_uint_bstr_arr_bool_arr_bstr_ipixengine5callbacks_ptr_dword_dword"></span>IPixEngine5::RenderTextureAsync (método)
 
@@ -48,7 +48,7 @@ HRESULT RenderTextureAsync(
 Identificador de la textura que se representará.
 
 *sliceIndex*   
-Índice del segmento dentro de la textura que se representa.
+Índice del segmento dentro de la textura que se representará.
 
 *formatOverride*   
 Invalidación del formato de color.
@@ -64,13 +64,13 @@ Cadena COM que contiene el nombre de ruta de acceso del archivo de sombreador.
 Número de variables de sombreador de punto flotante
 
 *count6 \_ shaderFloatVarName*   
-Cadenas COM con los nombres de las variables de sombreador de punto flotante.
+Cadenas COM que se une a los nombres de las variables de sombreador de punto flotante.
 
 *count6 \_ shaderFloatVarValue*   
-Variables del sombreador de punto flotante.
+Variables de sombreador de punto flotante.
 
 *numBoolShaderVars*   
-Número de variables booleanas del sombreador.
+Número de variables de sombreador booleanas.
 
 *count9 \_ shaderBoolVarName*   
 Cadenas COM que se une a los nombres de las variables booleanas del sombreador.
@@ -88,7 +88,7 @@ Dirección de un objeto que proporciona la interfaz de devoluciones de llamada I
 Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
-No se usa.
+No se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -96,7 +96,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

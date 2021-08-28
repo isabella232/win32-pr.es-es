@@ -1,21 +1,21 @@
 ---
-description: ¿Por qué el codificador de vídeo rechaza un formato de salida que intento establecer, cuando recupero el formato del mismo objeto?
+description: ¿Por qué el codificador de vídeo rechaza un formato de salida que intento establecer cuando he recuperado el formato del mismo objeto?
 ms.assetid: f0747450-d224-423a-a9f1-04580df8a17e
-title: ¿Por qué el codificador de vídeo rechaza un formato de salida que intento establecer, cuando recupero el formato del mismo objeto?
+title: ¿Por qué el codificador de vídeo rechaza un formato de salida que intento establecer cuando he recuperado el formato del mismo objeto?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 680908ec814fe322585c1ac97d3bb79deddaf034
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec2e744285140df13a9aa251983ab801033c481d1452029c955ee3a39235fcea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112895"
 ---
-# <a name="why-does-the-video-encoder-reject-an-output-format-that-i-try-to-set-when-i-retrieved-the-format-from-the-same-object"></a>¿Por qué el codificador de vídeo rechaza un formato de salida que intento establecer, cuando recupero el formato del mismo objeto?
+# <a name="why-does-the-video-encoder-reject-an-output-format-that-i-try-to-set-when-i-retrieved-the-format-from-the-same-object"></a>¿Por qué el codificador de vídeo rechaza un formato de salida que intento establecer cuando he recuperado el formato del mismo objeto?
 
-A diferencia de los tipos de salida del codificador de audio, las salidas admitidas enumeradas por los codificadores de vídeo no se completan tal y como se entregan. Debe establecer la velocidad de bits de la secuencia en el miembro **dwBitrate** de la estructura **VIDEOINFOHEADER** para que coincida con el valor establecido para la propiedad [MFPKEY \_ RAVG](mfpkey-ravgproperty.md) .
+A diferencia de los tipos de salida del codificador de audio, las salidas admitidas enumeradas por los codificadores de vídeo no se completan como entregados. Debe establecer la velocidad de bits de la secuencia en el **miembro dwBitrate** de la estructura **VIDEOINFOHEADER** para que coincida con el valor establecido para la [propiedad \_ MFPKEYHABG.](mfpkey-ravgproperty.md)
 
-Una vez que todas las opciones estén establecidas de la manera que desee, debe recuperar los datos privados del códec y anexarlos a la estructura **VIDEOINFOHEADER** . Para obtener más información, consulte [uso de datos privados de códecs de vídeo](usingvideocodecprivatedata.md).
+Una vez establecidas todas las opciones de la manera que quiere, debe recuperar los datos privados del códec y anexarlos a la **estructura VIDEOINFOHEADER.** Para más información, consulte [Uso de datos privados de códecs de vídeo.](usingvideocodecprivatedata.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

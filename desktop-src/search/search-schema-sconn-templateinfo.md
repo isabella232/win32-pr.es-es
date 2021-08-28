@@ -1,21 +1,21 @@
 ---
-description: Este <templateInfo> elemento opcional especifica un tipo de carpeta para mostrar los resultados de una consulta sobre este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario obligatorio.
+description: Este elemento &lt; templateInfo opcional especifica un tipo de carpeta para mostrar los &gt; resultados de una consulta a través de este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario obligatorio.
 ms.assetid: fe42f589-5c47-4629-94eb-78dbaffa4112
-title: Elemento templateInfo (esquema del conector de búsqueda)
+title: elemento templateInfo (esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41fd28780689b4d544f251bbaf1542bc379ecdaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72c815d04e23f1e1af9582ad93ba08d118855676
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696258"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880386"
 ---
-# <a name="templateinfo-element-search-connector-schema"></a>Elemento templateInfo (esquema del conector de búsqueda)
+# <a name="templateinfo-element-search-connector-schema"></a>elemento templateInfo (esquema del conector de búsqueda)
 
-Este <templateInfo> elemento opcional especifica un tipo de carpeta para mostrar los resultados de una consulta sobre este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario obligatorio.
+Este elemento &lt; templateInfo opcional especifica un tipo de carpeta para mostrar los &gt; resultados de una consulta a través de este conector de búsqueda. Este elemento no tiene atributos y solo un elemento secundario obligatorio.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -51,9 +51,9 @@ Este <templateInfo> elemento opcional especifica un tipo de carpeta para mostrar
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si no especifica un tipo de carpeta determinado en el <templateInfo> elemento, Windows usa el tipo de carpeta conector de búsqueda general {8FAF9629-1980-46FF-8023-9DCEAB9C3EE3}.
+Si no especifica un tipo de carpeta determinado en el elemento templateInfo, Windows usa el tipo de carpeta del conector de búsqueda &lt; &gt; general {8FAF9629-1980-46FF-8023-9DCEAB9C3EE3}.
 
 ## <a name="example-of-a-templateinfo-element"></a>Ejemplo de un elemento templateInfo
 

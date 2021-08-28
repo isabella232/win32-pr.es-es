@@ -1,9 +1,9 @@
 ---
-title: evento. shiftKey
-description: El atributo shiftKey recupera un valor que indica si la tecla Mayús estaba presionada cuando se produjo el evento.
+title: event.shiftKey
+description: El atributo shiftKey recupera un valor que indica si la tecla MAYÚS estaba fuera de actividad cuando se produjo el evento.
 ms.assetid: 02b70533-936f-4543-8a36-88e7c2d1b2a8
 keywords:
-- evento. shiftKey Windows Media Player
+- event.shiftKey Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256e4e51cb13136dc09f7e86b6805b7e0efd42a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 678e1048e5299446e75cfe16ff09a8f499aec4f0e1e768c80cf23d1ebb6cad3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123605"
 ---
-# <a name="eventshiftkey"></a>evento. shiftKey
+# <a name="eventshiftkey"></a>event.shiftKey
 
-El atributo **shiftKey** recupera un valor que indica si la tecla Mayús estaba presionada cuando se produjo el evento.
+El **atributo shiftKey** recupera un valor que indica si la tecla MAYÚS estaba fuera de actividad cuando se produjo el evento.
 
 ``` syntax
 event.shiftKey
@@ -29,14 +29,14 @@ event.shiftKey
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de solo lectura.
+Este atributo es un booleano de solo **lectura.**
 
 
 
 | Value | Descripción                                       |
 |-------|---------------------------------------------------|
-| true  | Indica que la tecla Mayús estaba en la posición hacia abajo. |
-| false | Indica que la tecla Mayús estaba en la posición inicial.   |
+| true  | Indica que la tecla MAYÚS estaba en la posición de abajo. |
+| false | Indica que la tecla MAYÚS estaba en la posición hacia arriba.   |
 
 
 
@@ -48,7 +48,7 @@ Este atributo es un **valor booleano** de solo lectura.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -56,7 +56,7 @@ Este atributo es un **valor booleano** de solo lectura.
 
 <dl> <dt>
 
-[**Atributos de evento de ambiente**](ambient-event-attributes.md)
+[**Atributos de evento ambiente**](ambient-event-attributes.md)
 </dt> </dl>
 
  

@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: bb7881f233016026c06b48da05bfd368c229d594
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 6016488816b132b1fc133ab1e207cf14cbc5b66d
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623711"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786531"
 ---
 # <a name="span-idvspixengineipipelinestagesrequest3spanipipelinestagesrequest3-interface"></a><span id="vspixengine.ipipelinestagesrequest3"></span>Interfaz IPipeLineStagesRequest3
 
 Solicitud de datos de fases de canalización.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IPipeLineStagesRequest3** hereda de [**la interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPipeLineStagesRequest3** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IPipeLineStagesRequest3** hereda de [**la interfaz IUnknown.**](/w
 
 La **interfaz IPipeLineStagesRequest3** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest3-requestmeshasync-eventid-bstr-ipipelinestagescallback3-ptr-dword-dword"><strong>RequestMeshAsync</strong></a></td><td style="text-align: left;"><p>Solicitud asincrónica para obtener datos de malla del evento especificado.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipipelinestagesrequest3-requestmeshasync-eventid-bstr-ipipelinestagescallback3-ptr-dword-dword"><strong>RequestMeshAsync</strong></a></td><td ><p>Solicitud asincrónica para obtener datos de malla del evento especificado.</p></td></tr></tbody></table>
 
  
 

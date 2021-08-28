@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9f391d711c6d10c50cfdb26314be6ee709ff481bda0ce370faa28d514422444c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 477c84ee0b466fb43ee0bb06ef14a2a1be6dd00e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118487870"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122472191"
 ---
 # <a name="jet_bkinfo-structure"></a>JET_BKINFO estructura
 
@@ -57,7 +57,7 @@ Hora de este evento de copia de seguridad.
 
 Hora de este evento de copia de seguridad, con bits adicionales para indicar una copia de seguridad de instantáneas.
 
-**Windows Vista: bklogtimeMark** se introdujo en Windows Vista.
+**Windows Vista: bklogtimeMark** se presenta en Windows Vista.
 
 **genLow**
 
@@ -73,26 +73,9 @@ Esta estructura se usa dentro de la estructura [JET_DBINFOMISC](./jet-dbinfomisc
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

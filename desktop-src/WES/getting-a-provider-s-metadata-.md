@@ -1,29 +1,29 @@
 ---
 title: Obtener los metadatos de un proveedor
-description: Un proveedor utiliza un manifiesto de instrumentación para identificarse, definir los eventos que escribe y otros componentes como canales, tareas y palabras clave.
+description: Un proveedor usa un manifiesto de instrumentación para identificarse, definir los eventos que escribe y otros componentes, como canales, tareas y palabras clave.
 ms.assetid: c9442dc1-3599-4e81-a144-943c2843a2f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b7c78c4e8b96a8d7b0c7002b54e96eec473811f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 757796bcc80f9130e20c79c2ed05b98cd2fa0866485cb7df1ca17133d5074b6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124215"
 ---
 # <a name="getting-a-providers-metadata"></a>Obtener los metadatos de un proveedor
 
-Un proveedor utiliza un manifiesto de instrumentación para identificarse, definir los eventos que escribe y otros componentes como canales, tareas y palabras clave. Para obtener acceso a esta información en tiempo de ejecución, llame a la función [**EvtOpenPublisherMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtopenpublishermetadata) para obtener un identificador de los metadatos del publicador.
+Un proveedor usa un manifiesto de instrumentación para identificarse, definir los eventos que escribe y otros componentes, como canales, tareas y palabras clave. Para acceder a esta información en tiempo de ejecución, llame a la función [**EvtOpenPublisherMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtopenpublishermetadata) para obtener un identificador de los metadatos del publicador.
 
-Los metadatos se dividen entre los metadatos del publicador y los metadatos del evento. Los metadatos del publicador contienen los metadatos que identifican el publicador y los metadatos que define, como canales, niveles, tareas, códigos de tarea y palabras clave. Para obtener una lista de los metadatos del proveedor que puede recuperar, consulte la enumeración de ID. de [**\_ \_ \_ propiedad \_ de metadatos del publicador**](/windows/desktop/api/WinEvt/ne-winevt-evt_publisher_metadata_property_id) . Para obtener los metadatos, llame a la función [**EvtGetPublisherMetadataProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgetpublishermetadataproperty) . Esta función devuelve los valores de propiedad de las propiedades que identifican el proveedor y los identificadores de los componentes de los canales, niveles, tareas, códigos de acción y palabras clave. Para tener acceso a los metadatos de estos componentes, llame a la función [**EvtGetObjectArrayProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgetobjectarrayproperty) .
+Los metadatos se dividen entre los metadatos del publicador y los metadatos del evento. Los metadatos del publicador contienen los metadatos que identifican al publicador y los metadatos que define, como canales, niveles, tareas, códigos de operación y palabras clave. Para obtener una lista de los metadatos del proveedor que puede recuperar, vea la [**enumeración EVT \_ PUBLISHER METADATA PROPERTY \_ \_ \_ ID**](/windows/desktop/api/WinEvt/ne-winevt-evt_publisher_metadata_property_id) . Para obtener los metadatos, llame a la [**función EvtGetPublisherMetadataProperty.**](/windows/desktop/api/WinEvt/nf-winevt-evtgetpublishermetadataproperty) Esta función devuelve los valores de propiedad de las propiedades que identifican el proveedor y los identificadores de los canales, niveles, tareas, códigos de operación y componentes de palabras clave. Para acceder a los metadatos de estos componentes, llame a la [**función EvtGetObjectArrayProperty.**](/windows/desktop/api/WinEvt/nf-winevt-evtgetobjectarrayproperty)
 
-Para obtener los metadatos del evento, llame a la función [**EvtOpenEventMetadataEnum**](/windows/desktop/api/WinEvt/nf-winevt-evtopeneventmetadataenum) para obtener una lista de los eventos que define el proveedor. A continuación, llame a la función [**EvtNextEventMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtnexteventmetadata) en un bucle para enumerar los eventos. Para obtener una lista de los metadatos que puede obtener para un evento, consulte la enumeración de ID. de [**\_ \_ \_ propiedad \_ de metadatos de evento evt**](/windows/desktop/api/WinEvt/ne-winevt-evt_event_metadata_property_id) . Para obtener los metadatos, llame a la función [**EvtGetEventMetadataProperty**](/windows/desktop/api/WinEvt/nf-winevt-evtgeteventmetadataproperty) . Estas propiedades devuelven un valor entero para cada elemento de la definición de evento. En el caso del identificador de evento y la versión, la visualización del valor entero es correcta, pero para los demás elementos, como el canal y el nivel, la visualización del valor entero no puede tener ningún significado para el usuario. El valor entero de estos elementos es el valor del atributo value. Puede usar el valor entero para asignar en los metadatos del proveedor y obtener la cadena de mensaje o el valor de nombre para el elemento y mostrarlo al usuario en su lugar.
+Para obtener los metadatos del evento, llame a la función [**EvtOpenEventMetadataEnum**](/windows/desktop/api/WinEvt/nf-winevt-evtopeneventmetadataenum) para obtener una lista de los eventos que define el proveedor. A continuación, llame a [**la función EvtNextEventMetadata**](/windows/desktop/api/WinEvt/nf-winevt-evtnexteventmetadata) en un bucle para enumerar los eventos. Para obtener una lista de metadatos que puede obtener para un evento, vea la enumeración [**\_ EVT EVENT \_ METADATA PROPERTY \_ \_ ID**](/windows/desktop/api/WinEvt/ne-winevt-evt_event_metadata_property_id) . Para obtener los metadatos, llame a la [**función EvtGetEventMetadataProperty.**](/windows/desktop/api/WinEvt/nf-winevt-evtgeteventmetadataproperty) Estas propiedades devuelven un valor entero para cada elemento de la definición de evento. Para el identificador de evento y la versión, mostrar el valor entero es adecuado, pero para los demás elementos, como el canal y el nivel, mostrar el valor entero puede no tener ningún significado para el usuario. El valor entero de estos elementos es el valor del atributo value. Puede usar el valor entero para asignarlo a los metadatos del proveedor, obtener la cadena de mensaje o el valor de nombre del elemento y mostrarlo al usuario en su lugar.
 
-Para obtener un ejemplo en el que se muestra cómo enumerar los proveedores registrados en el equipo, vea [enumerar proveedores registrados](#enumerating-registered-providers).
+Para obtener un ejemplo que muestra cómo enumerar los proveedores registrados en el equipo, vea [Enumerar proveedores registrados.](#enumerating-registered-providers)
 
-Para obtener un ejemplo en el que se muestra cómo obtener los metadatos de un proveedor registrado, vea [obtener los metadatos de un proveedor](#getting-a-providers-metadata).
+Para obtener un ejemplo en el que se muestra cómo obtener los metadatos de un proveedor registrado, consulte Obtención de [los metadatos de un proveedor.](#getting-a-providers-metadata)
 
-## <a name="enumerating-registered-providers"></a>Enumerar proveedores registrados
+## <a name="enumerating-registered-providers"></a>Enumeración de proveedores registrados
 
 En el ejemplo siguiente se muestra cómo enumerar los proveedores registrados en el equipo.
 
@@ -107,7 +107,7 @@ cleanup:
 
 
 
-## <a name="getting-the-metadata-for-a-provider"></a>Obtener los metadatos de un proveedor
+## <a name="getting-the-metadata-for-a-provider"></a>Obtención de los metadatos de un proveedor
 
 En el ejemplo siguiente se muestra cómo obtener los metadatos del proveedor y los eventos que define.
 
@@ -1485,9 +1485,9 @@ LPWSTR GetMessageString(EVT_HANDLE hMetadata, DWORD dwMessageId)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

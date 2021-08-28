@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8325f1c4e091a065433fe1790c19a985f7cb5d4c
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 74f18c0abeb17a09f30245da755df5f3d0d527c3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122787150"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623521"
 ---
 # <a name="span-idvspixengineipixengine7spanipixengine7-interface"></a><span id="vspixengine.ipixengine7"></span>Interfaz IPixEngine7
 
 Extensiones de la interfaz IPixEngine6 que contienen adiciones en torno al control de versiones.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IPixEngine7** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPixEngine7 también** tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IPixEngine7** hereda de la [**interfaz IUnknown.**](/windows/deskt
 
 La **interfaz IPixEngine7** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipixengine7-initengineasync-resourcepair-arr-uint-iversioncallback-ptr-dword-dword"><strong>InitEngineAsync</strong></a></td><td ><p>Pasa de forma asincrónica recursos al motor, como cadenas para los mensajes de error.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/ipixengine7-setplaybackendpointasync-bool-bstr-bstr-remotingversion-iversioncallback-ptr-dword-dword"><strong>SetPlaybackEndpointAsync</strong></a></td><td ><p>Establece de forma asincrónica la dirección del punto de conexión utilizada para conectarse a un motor remoto.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixengine7-initengineasync-resourcepair-arr-uint-iversioncallback-ptr-dword-dword"><strong>InitEngineAsync</strong></a></td><td style="text-align: left;"><p>Pasa de forma asincrónica recursos al motor, como cadenas para los mensajes de error.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixengine7-setplaybackendpointasync-bool-bstr-bstr-remotingversion-iversioncallback-ptr-dword-dword"><strong>SetPlaybackEndpointAsync</strong></a></td><td style="text-align: left;"><p>Establece de forma asincrónica la dirección del punto de conexión utilizada para conectarse a un motor remoto.</p></td></tr></tbody></table>
 
  
 

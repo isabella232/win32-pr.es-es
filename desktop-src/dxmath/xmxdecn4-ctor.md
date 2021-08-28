@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3cf8d547b9f7412cec956c19539a2919f9bdb8f62381f2b6643058a8984cdf81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 832a7b56ddfb1baea343c36e4f21d1516363bbce
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119978565"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479661"
 ---
 # <a name="xmxdecn4-constructors"></a>Constructores XMXDECN4
 
@@ -33,60 +33,18 @@ Construye instancias de la [**estructura XMXDECN4.**](/windows/win32/api/directx
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constructor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMXDECN4</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a>. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(uint32_t)"><strong>XMXDECN4 (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMXDECN4</code> partir de una variable que contiene datos de componentes en un formato <code>uint32_t</code> empaquetado. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de una variable que contiene datos <code>uint32_t</code> de componentes en un formato empaquetado. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float*)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMXDECN4</code> de un argumento de matriz de cuatro <code>float</code> elementos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de un argumento de matriz <code>float</code> de cuatro elementos. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float,float,float,float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMXDECN4</code> partir de cuatro argumentos <code>float</code> normalizados. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de cuatro <code>float</code> argumentos normalizados. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constructor | Descripción | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 ()</strong></a> | Constructor predeterminado para <code>XMXDECN4</code> . <br /> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4.</strong></a> <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(uint32_t)"><strong>XMXDECN4 (uint32_t)</strong></a> | Inicializa una nueva instancia de a <code>XMXDECN4</code> partir de una variable que contiene datos de componente en un formato <code>uint32_t</code> empaquetado. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de una variable que contiene datos <code>uint32_t</code> de componente en un formato empaquetado. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(constfloat)"><strong>XMXDECN4 (const float*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMXDECN4</code> de un argumento de matriz de cuatro <code>float</code> elementos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de un argumento de matriz <code>float</code> de cuatro elementos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmxdecn4-xmxdecn4(float_float_float_float)"><strong>XMXDECN4 (float,float,float,float)</strong></a> | Inicializa una nueva instancia de a <code>XMXDECN4</code> partir de cuatro argumentos <code>float</code> normalizados. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmxdecn4"><strong>XMXDECN4</strong></a> a partir de cuatro <code>float</code> argumentos normalizados. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

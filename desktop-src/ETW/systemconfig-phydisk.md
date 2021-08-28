@@ -27,12 +27,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 465fe0bacd23ad99bb744c915b60056b96419761f93a4aefd5f1a3d2fb4c6129
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d39c56dd5c099974c9dac281d1ed4c961b946b56
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119766355"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886391"
 ---
 # <a name="systemconfig_phydisk-class"></a>Clase SystemConfig \_ PhyDisk
 
@@ -88,7 +88,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (14), **Max** (3), **Format("s")**
 </dt> </dl>
 
-Letra de unidad de la unidad de arranque con el formato " <letter> :".
+Letra de unidad de la unidad de arranque con el formato " &lt; letter &gt; :".
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (13)
 </dt> </dl>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
@@ -280,7 +280,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (15), **Max** (2), **Format("s")**
 </dt> </dl>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
@@ -320,7 +320,7 @@ True si la caché de escritura está habilitada.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

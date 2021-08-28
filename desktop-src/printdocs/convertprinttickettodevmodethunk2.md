@@ -1,7 +1,7 @@
 ---
-description: Convierte una solicitud de impresión en una estructura DEVMODE.
+description: Convierte un vale de impresión en una estructura DEVMODE.
 ms.assetid: 3b0a6afd-fa9d-434e-a95f-b051296d4567
-title: ConvertPrintTicketToDevModeThunk2 función)
+title: Función ConvertPrintTicketToDevModeThunk2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: cf05ab6739dad09332ebc6746a05f3c40ef32de6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6325ca61d18d571a3a3b346b18f6191b53e43d2ce96799c34a643477123f20c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112685"
 ---
-# <a name="convertprinttickettodevmodethunk2-function"></a>ConvertPrintTicketToDevModeThunk2 función)
+# <a name="convertprinttickettodevmodethunk2-function"></a>Función ConvertPrintTicketToDevModeThunk2
 
-\[Esta función no se admite y podría deshabilitarse o eliminarse en versiones futuras de Windows. [**PTConvertPrintTicketToDevMode**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode) proporciona una funcionalidad equivalente y se debe usar en su lugar.\]
+\[Esta función no se admite y podría deshabilitarse o eliminarse en versiones futuras de Windows. [**PTConvertPrintTicketToDevMode proporciona**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode) una funcionalidad equivalente y se debe usar en su lugar.\]
 
-Convierte una solicitud de impresión en una estructura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) .
+Convierte un vale de impresión en una [**estructura DEVMODE.**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,49 +48,49 @@ HRESULT ConvertPrintTicketToDevModeThunk2(
 
 <dl> <dt>
 
-*hProvider* \[ de\]
+*hProvider* \[ En\]
 </dt> <dd>
 
-Identificador de un proveedor de entradas de impresión abierto. La función [**BindPTProviderThunk**](bindptproviderthunk.md) devuelve este identificador.
+Identificador de un proveedor de vales de impresión abierto. La función [**BindPTProviderThunk**](bindptproviderthunk.md) devuelve este identificador.
 
 </dd> <dt>
 
-*pPrintTicket* \[ de\]
+*pPrintTicket* \[ En\]
 </dt> <dd>
 
-Búfer que contiene el vale de impresión que se va a convertir.
+Búfer que contiene el vale de impresión que se convertirá.
 
 </dd> <dt>
 
-*cbSize* \[ de\]
+*cbSize* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer pasado en *pPrintTicket*.
+Tamaño, en bytes, del búfer pasado *en pPrintTicket.*
 
 </dd> <dt>
 
-*BaseType* \[ de\]
+*baseType* \[ En\]
 </dt> <dd>
 
-Un valor que indica si el [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) predeterminado del usuario o el **DEVMODE** predeterminado de la cola de impresión se usa para proporcionar valores al **DEVMODE** de salida cuando *pPrintTicket* no especifica cada valor posible para una estructura **DEVMODE**. El valor de este parámetro debe ser un miembro de la enumeración [**EDefaultDevmodeType**](/windows/win32/api/prntvpt/ne-prntvpt-edefaultdevmodetype) , convertido en **int**.
+Valor que indica si el [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) predeterminado del usuario o el **DEVMODE** predeterminado de la cola de impresión se usa para proporcionar valores a **la salida DEVMODE** cuando *pPrintTicket* no especifica todos los valores posibles para **un DEVMODE**. El valor de este parámetro debe ser miembro de la enumeración [**EDefaultDevmodeType,**](/windows/win32/api/prntvpt/ne-prntvpt-edefaultdevmodetype) que se convierte como **int.**
 
 </dd> <dt>
 
-*ámbito* \[ de de\]
+*ámbito* \[ En\]
 </dt> <dd>
 
-Valor que especifica el ámbito de *pPrintTicket*. Este valor puede especificar una sola página, un documento completo o todos los documentos en el trabajo de impresión. El valor de este parámetro debe ser un miembro de la enumeración [**EPrintTicketScope**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) , convertido en **DWORD**.
+Valor que especifica el ámbito de *pPrintTicket.* Este valor puede especificar una sola página, un documento completo o todos los documentos del trabajo de impresión. El valor de este parámetro debe ser miembro de la enumeración [**EPrintTicketScope,**](/windows/desktop/api/prntvpt/ne-prntvpt-eprintticketscope) que se convierte como **DWORD.**
 
 </dd> <dt>
 
-*ppDevmode* \[ enuncia\]
+*ppDevmode* \[ out\]
 </dt> <dd>
 
-Dirección del [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)recién creado. Esta función llama a [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) para asignar este búfer. Cuando el búfer ya no se necesita, el llamador debe liberarlo llamando a [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Dirección del [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)recién creado. Esta función llama [**a CoTaskMemAlloc para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) asignar este búfer. Cuando el búfer ya no es necesario, el autor de la llamada debe liberarlo mediante una [**llamada a CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
 </dd> <dt>
 
-*pcbDevModeLength* \[ enuncia\]
+*devModeLength* \[ out\]
 </dt> <dd>
 
 Tamaño, en bytes, del [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) devuelto en *ppDevmode*.
@@ -100,13 +100,13 @@ Tamaño, en bytes, del [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmode
 *errMsg* \[ out, opcional\]
 </dt> <dd>
 
-Un puntero a una cadena que especifica lo que, si hay alguna, no es válido sobre la solicitud de impresión en *pPrintTicket*. Si es válido, es **null**. Si *errMsg* no es **null** cuando la función devuelve, el llamador debe liberar la cadena con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
+Puntero a una cadena que especifica qué, si hay algo, no es válido sobre el vale de impresión en *pPrintTicket*. Si es válido, es **NULL.** Si *errMsg* no es **NULL cuando** la función vuelve, el autor de la llamada debe liberar la cadena con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, devuelve un código de error **HRESULT** . Para obtener más información sobre los códigos de error COM, vea [control de errores](../com/error-handling-in-com.md).
+Si el método se realiza correctamente, devuelve **S \_ OK;** de lo contrario, devuelve un código de error **HRESULT.** Para obtener más información sobre los códigos de error COM, vea [Control de errores.](../com/error-handling-in-com.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -114,8 +114,8 @@ Si el método se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, d
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -124,7 +124,7 @@ Si el método se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, d
 
 <dl> <dt>
 
-[Imprimir esquema](./printschema.md)
+[Esquema de impresión](./printschema.md)
 </dt> <dt>
 
 [**PTConvertPrintTicketToDevMode**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)

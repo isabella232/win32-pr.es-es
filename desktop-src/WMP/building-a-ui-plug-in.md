@@ -1,42 +1,42 @@
 ---
-title: Compilar un complemento de IU
-description: Compilar un complemento de IU
+title: Creación de un complemento de interfaz de usuario
+description: Creación de un complemento de interfaz de usuario
 ms.assetid: 95a14bd1-8d71-44dd-be1e-f6a218710718
 keywords:
-- Complementos de Windows Media Player, compilar
+- Reproductor de Windows Media complementos, compilar
 - complementos, compilar
-- Complementos de la interfaz de usuario, compilar
-- Complementos de la interfaz de usuario, compilar
-- crear complementos, interfaz de usuario
+- complementos de interfaz de usuario, compilar
+- Complementos de interfaz de usuario, compilar
+- compilar complementos, interfaz de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b967a6e0a72ac115fc97a8b276ab15ce214ecc6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7501d664c469de388a3f52c6c130d89ee160dd5aa4acc99c1342063d3def623
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123835"
 ---
-# <a name="building-a-ui-plug-in"></a>Compilar un complemento de IU
+# <a name="building-a-ui-plug-in"></a>Creación de un complemento de interfaz de usuario
 
-Puede compilar un complemento de la interfaz de usuario mediante Visual Studio y el Asistente para complementos de Media Player de Windows. Para obtener información sobre cómo configurar el asistente y crear un complemento, vea [crear un complemento](building-a-plug-in.md).
+Puede compilar un complemento de interfaz de usuario mediante el Visual Studio y el asistente para Reproductor de Windows Media complemento de interfaz de usuario. Para obtener información sobre cómo configurar el asistente y crear un complemento, vea [Building a Plug-in](building-a-plug-in.md).
 
-Al ejecutar el asistente, se le ofrecerá la posibilidad de elegir entre varios tipos de complementos. Elija complemento de la interfaz de usuario.
+Al ejecutar el asistente, se le dará una opción de varios tipos diferentes de complementos. Elija Ui Plug-in (Complemento de interfaz de usuario).
 
-El asistente crea un complemento de la interfaz de usuario que puede usar como punto de partida. En el tema siguiente se explica cómo personalizar el complemento para sus propios propósitos:
+El asistente crea un complemento de interfaz de usuario que puede usar como punto de partida. En el tema siguiente se explica cómo personalizar el complemento para sus propios fines:
 
--   [Personalizar el complemento de la interfaz de usuario](customizing-the-ui-plug-in.md)
+-   [Personalización del complemento de interfaz de usuario](customizing-the-ui-plug-in.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Acerca de los complementos de la interfaz de usuario**](about-user-interface-plug-ins.md)
+[**Acerca Interfaz de usuario complementos**](about-user-interface-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

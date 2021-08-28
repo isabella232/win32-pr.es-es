@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0852de04f3969e3e30debc7ba7ff4f3aedf7ac4084b17f91feed8984fe4e1467
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0796d35990a8a53704d64ab8cea6b9503570a124
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118251619"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479291"
 ---
 # <a name="jetbeginsession-function"></a>Función JetBeginSession
 
@@ -34,7 +34,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetbeginsession-function"></a>Función JetBeginSession
 
-La **función JetBeginSession** inicia una sesión e inicializa y devuelve un identificador de sesión ese [(JET_SESID](./jet-sesid.md)). Las sesiones controlan todo el acceso a la base de datos y se usan para controlar el ámbito de las transacciones. La sesión se puede usar para iniciar, confirmar o anular transacciones. La sesión también se usa para adjuntar, crear o abrir una base de datos. La sesión se usa como contexto para todas las operaciones DDL y DML. Para aumentar la simultaneidad y el acceso paralelo a la base de datos, se pueden iniciar varias sesiones.
+La **función JetBeginSession** inicia una sesión e inicializa y devuelve un identificador de sesión ese ([JET_SESID](./jet-sesid.md)). Las sesiones controlan todo el acceso a la base de datos y se usan para controlar el ámbito de las transacciones. La sesión se puede usar para iniciar, confirmar o anular transacciones. La sesión también se usa para adjuntar, crear o abrir una base de datos. La sesión se usa como contexto para todas las operaciones DDL y DML. Para aumentar la simultaneidad y el acceso paralelo a la base de datos, se pueden iniciar varias sesiones.
 
 ```cpp
     JET_ERR JET_API JetBeginSession(
@@ -67,57 +67,19 @@ Este parámetro está reservado.
 
 Esta función permite la devolución de cualquier [JET_ERR](./jet-err.md)que se definen en esta API. Para obtener más información sobre los errores de Jet, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p>Este error solo lo devolverán Windows XP y versiones posteriores.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>Error en la operación porque no se pudo asignar memoria.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOutOfSessions</p></td>
-<td><p>El número de sesiones que el motor permitirá que el cliente inicie es limitado. Este valor se puede cambiar mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con la JET_paramMaxSessions constante. El número predeterminado de sesiones es 16. Consulte <a href="gg294139(v=exchg.10).md">Parámetros del sistema</a> para obtener más información sobre JET_paramMaxSessions.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p>Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro.</p> | 
+| <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>Error en la operación porque no se pudo asignar memoria.</p> | 
+| <p>JET_errOutOfSessions</p> | <p>El número de sesiones que el motor permitirá que el cliente inicie es limitado. Este valor se puede cambiar mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con la JET_paramMaxSessions constante. El número predeterminado de sesiones es 16. Consulte <a href="gg294139(v=exchg.10).md">Parámetros del sistema</a> para obtener más información sobre JET_paramMaxSessions.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
+
 
 
 Si se ejecuta correctamente, se inicializa el identificador de sesión y se puede usar para las operaciones de base de datos.
@@ -132,38 +94,9 @@ El identificador de sesión debe cerrarse [con JetEndSession](./jetendsession-fu
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Dll</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JetBeginSessionW</strong> (Unicode) y <strong>JetBeginSessionA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetBeginSessionW</strong> (Unicode) y <strong>JetBeginSessionA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

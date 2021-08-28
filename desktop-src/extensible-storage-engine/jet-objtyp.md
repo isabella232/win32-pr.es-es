@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7da58236104e5fe1a9644f83592896c238e8a5387ea507c9aa68d62d220b2721
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ac3a55ef4043fd7a3dc520d059acbeed9133e5c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118253941"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479371"
 ---
 # <a name="jet_objtyp"></a>JET_OBJTYP
 
@@ -31,52 +31,17 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 El **JET_OBJTYP** de constantes representa el tipo de un objeto de base de datos. Actualmente, solo se admiten tablas.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Constante o valor</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_objtypNil<br />
-0</p></td>
-<td><p>Representa todos los tipos de objetos. Actualmente, solo se admiten tablas.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_objtypTable<br />
-1</p></td>
-<td><p>Representa una tabla.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Constante o valor</p> | <p>Descripción</p> | 
+|-----------------------|--------------------|
+| <p>JET_objtypNil<br />0</p> | <p>Representa todos los tipos de objetos. Actualmente, solo se admiten tablas.</p> | 
+| <p>JET_objtypTable<br />1</p> | <p>Representa una tabla.</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 

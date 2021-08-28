@@ -3,26 +3,26 @@ title: Envío del archivo al dispositivo
 description: Envío del archivo al dispositivo
 ms.assetid: 202185b8-f10e-4108-a950-60658c006cec
 keywords:
-- Windows Media Administrador de dispositivos, enviar archivos a dispositivos
+- Windows Archivos Administrador de dispositivos, envío de archivos a dispositivos
 - Administrador de dispositivos, enviar archivos a dispositivos
-- Guía de programación, enviar archivos a dispositivos
-- aplicaciones de escritorio, enviar archivos a dispositivos
-- crear aplicaciones de Windows Media Administrador de dispositivos, enviar archivos a dispositivos
+- guía de programación, envío de archivos a dispositivos
+- aplicaciones de escritorio, envío de archivos a dispositivos
+- crear Windows aplicaciones Administrador de dispositivos multimedia, enviar archivos a dispositivos
 - escribir archivos en dispositivos, enviar archivos a dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65be0c18a6022538dc5573d936f63392234e9c15
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 974a47de872d03d42701ff6e95516a9ead59f1206729ae9ca70d6dd9e5f1260f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124145"
 ---
 # <a name="sending-the-file-to-the-device"></a>Envío del archivo al dispositivo
 
-Una vez que el archivo se ha transcodificado en caso necesario y se han establecido todos los metadatos que incluyen el formato, la aplicación puede enviar el archivo al dispositivo. Para ello, primero debe obtener una interfaz **IWMDMStorageControl** (o una versión posterior) para una ubicación de destino en el dispositivo. Las marcas de **inserción** especifican si el nuevo almacenamiento debe ser un elemento relacionado o secundario del destino. Una vez que haya obtenido el destino, puede llamar a [**IWMDMStorageControl:: Insert**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-insert), [**IWMDMStorageControl2:: Insert2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol2-insert2)o [**IWMDMStorageControl3:: Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3) para transferir el archivo. La aplicación puede controlar la lectura de los datos de archivo mediante la implementación de [**IWMDMOperation**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation), o puede permitir que el método **Insert** Lea y transfiera el archivo automáticamente si no proporciona un puntero a un **IWMDMOperation** implementado por la aplicación.
+Una vez transcodificado el archivo si es necesario y se han establecido todos los metadatos, incluido el formato, la aplicación puede enviar el archivo al dispositivo. Para ello, primero debe obtener una interfaz **IWMDMStorageControl** (o una versión posterior) para una ubicación de destino en el dispositivo. Las **marcas Insert** especifican si el nuevo almacenamiento debe ser del mismo nivel o secundario del destino. Una vez que haya obtenido el destino, puede llamar a [**IWMDMStorageControl::Insert**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol-insert), [**IWMDMStorageControl2::Insert2**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol2-insert2)o [**IWMDMStorageControl3::Insert3**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstoragecontrol3-insert3) para transferir el archivo. La aplicación puede controlar la lectura de los datos del archivo mediante la implementación de [**IWMDMOperation**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmoperation), o puede permitir que el método **Insert** lea y transfiera el archivo automáticamente al no proporcionar un puntero a una **IWMDMOperation** implementada por la aplicación.
 
-En el código de C++ siguiente se muestra la llamada a **Insert3** para escribir un archivo en un dispositivo. Si el puntero *pOperation* pasado a **Insert3** es **null**, el archivo se enviará en un paso; Si este puntero es un puntero de interfaz válido, Windows Media Administrador de dispositivos llamará al método de devolución de llamada para obtener los datos de los bloques. Para obtener más información sobre cómo implementar **IWMDMOperation**, vea [administrar las transferencias de archivos manualmente](handling-file-transfers-manually.md).
+El siguiente código de C++ muestra cómo llamar a **Insert3** para escribir un archivo en un dispositivo. Si el *puntero pOperation* pasado a **Insert3** es **NULL,** el archivo se enviará en un paso; Si este puntero es un puntero de interfaz válido, Windows media Administrador de dispositivos llamará al método de devolución de llamada para obtener datos en bloques. Para obtener más información sobre cómo implementar **IWMDMOperation**, vea Controlar las [transferencias de archivos manualmente.](handling-file-transfers-manually.md)
 
 
 ```C++
@@ -57,9 +57,9 @@ hr = pStgCtl3->Insert3(
 [**Escribir archivos en el dispositivo**](writing-files-to-the-device.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

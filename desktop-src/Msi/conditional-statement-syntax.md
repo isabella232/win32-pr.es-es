@@ -4,12 +4,12 @@ ms.assetid: 6f1657f9-063b-4d57-ad76-95e3dbe25786
 title: Sintaxis de instrucciones condicionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dfea7ec31cecbe9c72dee9c660b0e6ee9d07cee2f1818941d036a781c104a93
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f131cf9513d4bf19bb84c5777d1fed1411a682ce
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120077965"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886438"
 ---
 # <a name="conditional-statement-syntax"></a>Sintaxis de instrucciones condicionales
 
@@ -17,35 +17,35 @@ En esta sección se describe la sintaxis de las instrucciones condicionales util
 
 ## <a name="summary-of-conditional-statement-syntax"></a>Resumen de la sintaxis de instrucciones condicionales
 
-En esta tabla y en la siguiente lista se resume la sintaxis que se va a usar en expresiones condicionales.
+En esta tabla y en la lista siguiente se resume la sintaxis que se va a usar en expresiones condicionales.
 
 
 
 | Elemento                | Syntax                                                                                                          |
 |---------------------|-----------------------------------------------------------------------------------------------------------------|
 | value               | entero \| literal \| de símbolo                                                                                    |
-| operador comparison | < \| > \| <= \| >= \| = \| <>                                                                 |
+| comparison-operator | < \| > \| <= \| >= \| = \| <>                                                                 |
 | término                | value \| value comparison-operator value \| ( expression )\|                                                    |
 | Factor booleano      | term \| **NOT** term                                                                                            |
 | Término booleano        | Boolean-factor \| Boolean-factor **AND** term                                                                   |
-| expresión          | Boolean-term \| Boolean-term **OR** expression                                                                  |
+| expresión          | Boolean-term \| boolean-term **OR** expression                                                                  |
 | símbolo              | propiedad \| %environment-variable \| $component-action \| ?component-state \| &feature-action \| !feature-state |
 
 
 
  
 
--   Los nombres y valores de símbolos distinguen mayúsculas de minúsculas.
--   Los nombres de las variables de entorno no distinguen mayúsculas de minúsculas.
--   El texto literal debe incluirse entre comillas ("texto").
+-   Los nombres de símbolos y los valores distinguen mayúsculas de minúsculas.
+-   Los nombres de variables de entorno no distinguen mayúsculas de minúsculas.
+-   El texto literal debe ir entre comillas ("texto").
     > [!Note]  
-    > El texto literal que contiene comillas no se puede usar en instrucciones condicionales porque no hay ningún carácter de escape para las comillas dentro del texto literal. Para realizar una comparación con el texto literal que contiene comillas, el texto literal debe colocarse en una propiedad . Por ejemplo, para comprobar que la propiedad SERVERNAME no contiene comillas, defina una propiedad denominada QUOTES en la tabla [Property](property-table.md) con el valor " y cambie la condición a NOT SERVERNAME><QUOTES.
+    > El texto literal que contiene comillas no se puede usar en instrucciones condicionales porque no hay ningún carácter de escape para las comillas dentro del texto literal. Para realizar una comparación con el texto literal que contiene comillas, el texto literal debe colocarse en una propiedad . Por ejemplo, para comprobar que la propiedad SERVERNAME no contiene comillas, defina una propiedad denominada QUOTES en la tabla [Property](property-table.md) con un valor de " y cambie la condición a NOT SERVERNAME><QUOTES.
 
      
 
 -   Los valores de propiedad inexistentes se tratan como cadenas vacías.
 -   No se admiten valores numéricos de punto flotante.
--   Los operadores y la precedencia son los mismos que en los lenguajes BASIC SQL.
+-   Los operadores y la precedencia son los mismos que en los lenguajes BASIC y SQL.
 -   No se admiten operadores aritméticos.
 -   Los paréntesis se pueden usar para invalidar la precedencia del operador.
 -   Los operadores no distinguen mayúsculas de minúsculas.
@@ -54,7 +54,7 @@ En esta tabla y en la siguiente lista se resume la sintaxis que se va a usar en 
 
 ## <a name="access-prefixes"></a>Prefijos de acceso
 
-En la tabla siguiente se muestran los prefijos que se usarán para acceder a la información del sistema y del instalador para su uso en expresiones condicionales.
+En la tabla siguiente se muestran los prefijos que se usarán para tener acceso a la información del sistema y del instalador para su uso en expresiones condicionales.
 
 
 
@@ -82,7 +82,7 @@ En la tabla siguiente se muestran los operadores lógicos en expresiones condici
 | Not      | Operador unario de prefijo; invierte el estado del término siguiente. |
 | And      | TRUE si ambos términos son TRUE.                            |
 | Or       | TRUE si uno o ambos términos son TRUE.                  |
-| Xor      | TRUE si ambos términos son TRUE, pero no ambos.             |
+| Xor      | TRUE si ambos términos son TRUE.             |
 | Eqv      | TRUE si ambos términos son TRUE o ambos términos son FALSE.    |
 | Imp      | TRUE si el término izquierdo es FALSE o el término derecho es TRUE.       |
 
@@ -92,7 +92,7 @@ En la tabla siguiente se muestran los operadores lógicos en expresiones condici
 
 ## <a name="comparative-operators"></a>Operadores comparativos
 
-En la tabla siguiente se muestran los operadores de comparación utilizados en expresiones condicionales. Estos operadores de comparación solo pueden producirse entre dos valores.
+En la tabla siguiente se muestran los operadores de comparación usados en expresiones condicionales. Estos operadores de comparación solo pueden producirse entre dos valores.
 
 
 
@@ -147,7 +147,7 @@ En la tabla siguiente se muestra dónde es válido usar los símbolos de operado
 
 
 
-| Operador <state> | Donde esta sintaxis es válida                                                                                                                                         |
+| Estado del &lt; operador&gt; | Donde esta sintaxis es válida                                                                                                                                         |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | $component acción      | En la [tabla Condición](condition-table.md) y en las tablas [de](using-a-sequence-table.md) secuencia, después de la [acción CostFinalize.](costfinalize-action.md) |
 | &característica-acción        | En la [tabla Condición](condition-table.md) y en las tablas [de](using-a-sequence-table.md) secuencia, después de la [acción CostFinalize.](costfinalize-action.md) |

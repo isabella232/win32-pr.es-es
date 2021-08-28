@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre el parámetro DocumentImpositionColor. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro DocumentImpositionColor. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
 ms.assetid: e1cb7e46-3078-46bf-a8c8-e10f6b9dd222
 title: DocumentImpositionColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b747487c19160d29778f306a91b62cf43d245f65
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 834f5ec9ac613fcd683c22fe77252b99223e320b9fbde43bb3bad5a1bed8958c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112525"
 ---
 # <a name="documentimpositioncolor"></a>DocumentImpositionColor
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 El contenido de la aplicación etiquetado con el color con nombre especificado DEBE aparecer en todas las separaciones de colores.
 
@@ -24,7 +24,7 @@ El contenido de la aplicación etiquetado con el color con nombre especificado D
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefijo de ámbito <br/> | Documento<br/>     |
@@ -67,7 +67,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

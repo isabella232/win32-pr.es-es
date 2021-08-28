@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre el parámetro PageMediaSizeMediaSizeWidth. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageMediaSizeMediaSizeWidth. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 22e4a6e9-4d18-4fff-873c-27ba59a79222
 title: PageMediaSizeMediaSizeWidth
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b3f84e36f689d4b3c5ca060020327d78b12f7d6
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: a6d66be9c63af19aa60ae88b14aaa209af25a8800fc4024cec50c70f21ebf050
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112305"
 ---
 # <a name="pagemediasizemediasizewidth"></a>PageMediaSizeMediaSizeWidth
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica la dirección mediasizewidth de la dimensión para la opción MediaSize personalizada.
 
@@ -24,7 +24,7 @@ Especifica la dirección mediasizewidth de la dimensión para la opción MediaSi
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-----------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                   |
 | Prefijo de ámbito <br/> | Página<br/>                                           |
@@ -71,14 +71,14 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 

@@ -1,12 +1,12 @@
 ---
-title: Propiedad IRemoteDesktopClientTouchPointer habilitada
-description: Si la característica de puntero táctil está habilitada en el control de cliente del contenedor de la aplicación RDP.
+title: Propiedad IRemoteDesktopClientTouchPointer Enabled
+description: Si la característica de puntero táctil está habilitada en el control de cliente del contenedor de aplicaciones RDP.
 ms.assetid: f1e2f2f2-1b96-4c5a-b0dd-fd57627c5ec3
 ms.tgt_platform: multiple
 keywords:
-- Propiedad Enabled Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de propiedad habilitada, interfaz IRemoteDesktopClientTouchPointer
-- Interfaz IRemoteDesktopClientTouchPointer Servicios de Escritorio remoto, propiedad Enabled
+- Propiedades habilitadas Servicios de Escritorio remoto
+- Propiedad habilitada Servicios de Escritorio remoto , interfaz IRemoteDesktopClientTouchPointer
+- Interfaz IRemoteDesktopClientTouchPointer Servicios de Escritorio remoto propiedad , Enabled
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd534a9f8ec77903f196bbdfa10e1823a18dff4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d7ce04e38b41fce462973606f40f0099f010e6f4ab785900039e6771b0a9aaf4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124855"
 ---
-# <a name="iremotedesktopclienttouchpointerenabled-property"></a>IRemoteDesktopClientTouchPointer:: Enabled (propiedad)
+# <a name="iremotedesktopclienttouchpointerenabled-property"></a>IRemoteDesktopClientTouchPointer::Enabled, propiedad
 
-Si la característica de puntero táctil está habilitada en el control de cliente del contenedor de la aplicación RDP.
+Si la característica de puntero táctil está habilitada en el control de cliente del contenedor de aplicaciones RDP.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,7 +49,7 @@ HRESULT get_Enabled(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**true** si está habilitada la característica de puntero táctil; en caso contrario, **false**.
+**True** si la característica de puntero táctil está habilitada; de lo contrario, **false**.
 
 ## <a name="requirements"></a>Requisitos
 
