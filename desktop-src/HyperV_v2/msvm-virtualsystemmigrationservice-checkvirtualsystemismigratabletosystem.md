@@ -1,7 +1,7 @@
 ---
 description: Determina si el sistema virtual especificado se puede migrar a un sistema de destino.
 ms.assetid: 2E340737-DEE9-4853-ACD8-BEE2A8C69D6D
-title: Método CheckVirtualSystemIsMigratableToSystem de la clase Msvm_VirtualSystemMigrationService
+title: Método CheckVirtualSystemIsMigratableToSystem de la Msvm_VirtualSystemMigrationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3e8f294f7e30740e3afab8987c734dbbdbd12acf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5681f308787d9a62dffbad554cfb2215410343daffb07d3f21091f12925a208c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994148"
 ---
-# <a name="checkvirtualsystemismigratabletosystem-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método CheckVirtualSystemIsMigratableToSystem de la \_ clase VirtualSystemMigrationService de MSVM
+# <a name="checkvirtualsystemismigratabletosystem-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método CheckVirtualSystemIsMigratableToSystem de la clase Msvm \_ VirtualSystemMigrationService
 
 Determina si el sistema virtual especificado se puede migrar a un sistema de destino.
 
@@ -44,45 +44,45 @@ uint32 CheckVirtualSystemIsMigratableToSystem(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Una referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa la máquina virtual para probar la capacidad de migración de.
+Referencia a una instancia de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa la máquina virtual de la que se probará la capacidad de migración.
 
 </dd> <dt>
 
-*DestinationSystem* \[ de\]
+*DestinationSystem* \[ En\]
 </dt> <dd>
 
-Una referencia a una instancia de la clase [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que representa la máquina virtual en la que se va a probar la capacidad de migración.
+Referencia a una instancia de la clase [**\_ ComputerSystem de Msvm**](msvm-computersystem.md) que representa la máquina virtual a la que se probará la capacidad de migración.
 
 </dd> <dt>
 
-*MigrationSettingData* \[ de\]
+*MigrationSettingData* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa la configuración de la operación de migración.
+Instancia incrustada de la [**clase Msvm \_ VirtualSystemMigrationSettingData**](msvm-virtualsystemmigrationsettingdata.md) que representa la configuración de la operación de migración.
 
 </dd> <dt>
 
-*NewSystemSettingData* \[ de\]
+*NewSystemSettingData* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa las nuevas propiedades aplicables al sistema virtual después de su migración.
+Instancia insertada de la [**clase \_ Msvm VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que representa nuevas propiedades aplicables al sistema virtual después de migrarla.
 
 </dd> <dt>
 
-*NewResourceSettingData* \[ de\]
+*NewResourceSettingData* \[ En\]
 </dt> <dd>
 
-Matriz de cadenas que contiene una instancia incrustada de la clase [**MSVM \_ ResourceAllocationSettingData**](msvm-resourceallocationsettingdata.md) que representa las nuevas propiedades aplicables a los recursos virtuales del sistema virtual después de su migración.
+Matriz de cadenas que contiene una instancia incrustada de la clase [**\_ ResourceAllocationSettingData de Msvm**](msvm-resourceallocationsettingdata.md) que representa las nuevas propiedades aplicables a los recursos virtuales del sistema virtual después de migrarlo.
 
 </dd> <dt>
 
-*IsMigratable* \[ enuncia\]
+*IsMigratable* \[ out\]
 </dt> <dd>
 
-Recibe el resultado de la comprobación de la migración que indica si el sistema virtual se puede migrar correctamente.
+Recibe el resultado de la comprobación de migración que indica si el sistema virtual se puede migrar correctamente.
 
 </dd> </dl>
 
@@ -101,7 +101,7 @@ Este método devuelve uno de los valores siguientes.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -116,10 +116,10 @@ Este método devuelve uno de los valores siguientes.
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535 )
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -128,10 +128,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -140,7 +140,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
+[**Msvm \_ VirtualSystemMigrationService**](msvm-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

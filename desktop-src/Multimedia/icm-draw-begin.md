@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DRAW_BEGIN (VFW. h)
-description: El mensaje de inicio de Draw de ICM \_ notifica a \_ un controlador de representación que debe prepararse para dibujar los datos.
+title: ICM_DRAW_BEGIN mensaje (Vfw.h)
+description: El ICM \_ DRAW \_ BEGIN notifica a un controlador de representación que se prepare para dibujar datos.
 ms.assetid: e5ecd7dd-376b-422c-bbb8-4e7c41e3cac8
 keywords:
-- Mensaje de ICM_DRAW_BEGIN de Windows multimedia
+- ICM_DRAW_BEGIN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db7b9e20a0b0621038e1c7e092a871a6727566cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 987b10f3820262d24e0da9c42ecd4841b15c47985538af79c4bc2f8e097018c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117987628"
 ---
-# <a name="icm_draw_begin-message"></a>Mensaje de inicio de \_ dibujo ICM \_
+# <a name="icm_draw_begin-message"></a>\_ICM Draw Begin message (Draw \_ Begin)
 
-El mensaje de **\_ \_ Inicio de Draw de ICM** notifica a un controlador de representación que debe prepararse para dibujar los datos.
+El **ICM \_ DRAW \_ BEGIN** notifica a un controlador de representación que se prepare para dibujar datos.
 
 
 ```C++
@@ -41,47 +41,47 @@ lParam = sizeof(ICDRAW);
 <span id="icdrwBgn"></span><span id="icdrwbgn"></span><span id="ICDRWBGN"></span>*icdrwBgn*
 </dt> <dd>
 
-Puntero a una estructura [**ICDRAWBEGIN**](/windows/desktop/api/Vfw/ns-vfw-icdrawbegin) que contiene el formato de entrada.
+Puntero a una [**estructura ICDRAWBEGIN**](/windows/desktop/api/Vfw/ns-vfw-icdrawbegin) que contiene el formato de entrada.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Tamaño, en bytes, de **ICDRAWBEGIN**.
+Tamaño, en bytes, de **ICDRAWBEGIN.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si el controlador permite dibujar los datos en la pantalla de la forma y el formato especificados, o un código de error en caso contrario. Entre los posibles valores de error se incluyen los siguientes.
+Devuelve ICERR OK si el controlador admite dibujar los datos en la pantalla de la manera y el formato especificados, o bien un código de error en caso \_ contrario. Los valores de error posibles incluyen lo siguiente.
 
 
 
-| Value               | Significado                                                                       |
+| Valor               | Significado                                                                       |
 |---------------------|-------------------------------------------------------------------------------|
 | ICERR \_ BADFORMAT    | No se admite el formato de entrada o salida.                                      |
-| ICERR \_ NOTSUPPORTED | El controlador no dibuja directamente en la pantalla o no admite este mensaje. |
+| ICERR \_ NO ADMITIDO | El controlador no dibuja directamente en la pantalla o no admite este mensaje. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si desea que el controlador Descomprima los datos en un búfer, envíe el mensaje de [**\_ \_ Inicio de descompresión ICM**](icm-decompress-begin.md) .
+Si desea que el controlador descomprima los datos en un búfer, envíe el [**ICM \_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
-Los mensajes de **\_ \_ Inicio de dibujo de ICM** y [**\_ \_ fin de dibujo de ICM**](icm-draw-end.md) no se anidan. Si el controlador recibe **el \_ \_ Inicio de Draw de ICM** antes de que se detenga la descompresión con el **\_ \_ extremo de Draw ICM**, debe reiniciar la descompresión con nuevos parámetros.
+Los **ICM \_ DRAW \_ BEGIN** [**y ICM \_ DRAW \_ END**](icm-draw-end.md) no anidan. Si el controlador recibe **ICM \_ DRAW \_ BEGIN** antes de detener la descompresión **con ICM DRAW \_ \_ END**, debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

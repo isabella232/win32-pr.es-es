@@ -1,11 +1,11 @@
 ---
-title: Propiedad lostPackets de IWMPNetwork
+title: IWMPNetwork lostPackets, propiedad
 description: La propiedad lostPackets obtiene el número de paquetes perdidos.
 ms.assetid: 611218d3-c4d3-4d4e-835c-1e7a956b2718
 keywords:
-- propiedades de lostPackets Media Player de Windows
-- propiedad lostPackets de Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad lostPackets
+- lostPackets, propiedad Reproductor de Windows Media
+- Interfaz de la propiedad lostPackets Reproductor de Windows Media , IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad lostPackets
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd1adac5f4aa8b1f58c023a556af04b8eae4bd8e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a60c85920d647f99ed8ba8478da51183c3ba63efa733c0bc627c16b040b70965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745916"
 ---
-# <a name="iwmpnetworklostpackets-property"></a>IWMPNetwork:: lostPackets (propiedad)
+# <a name="iwmpnetworklostpackets-property"></a>IWMPNetwork::lostPackets, propiedad
 
-La propiedad **lostPackets** obtiene el número de paquetes perdidos.
+La **propiedad lostPackets** obtiene el número de paquetes perdidos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public ReadOnly Property lostPackets As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el número de paquetes perdidos.
+**System.Int32 que** es el número de paquetes perdidos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad incluye solo paquetes multimedia de transmisión por secuencias y devolverá cero cuando se use el protocolo HTTP, que es sin pérdida.
+Esta propiedad incluye solo paquetes multimedia de streaming y devolverá cero cuando se use el protocolo HTTP, que no tiene pérdidas.
 
-Los paquetes se pueden perder por una serie de motivos, como el tipo y la calidad de la conexión de red.
+Los paquetes se pueden perder por diversos motivos, como el tipo y la calidad de la conexión de red.
 
-Cada vez que se detiene y se reinicia la reproducción, esta propiedad se restablece en cero. El valor no se restablece si la reproducción está en pausa. Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la propiedad **AxWindowsMediaPlayer. URL** .
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece en cero. El valor no se restablece si la reproducción está en pausa. Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la **propiedad AxWindowsMediaPlayer.URL.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **lostPackets** para mostrar el número total de paquetes perdidos durante la reproducción. La información se muestra en una etiqueta cuando el usuario hace clic en un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa lostPackets para** mostrar el número total de paquetes perdidos durante la reproducción. La información se muestra en una etiqueta cuando el usuario hace clic en un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -88,7 +88,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -101,7 +101,7 @@ End Sub
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
+[**AxWindowsMediaPlayer.URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
 </dt> </dl>
 
  

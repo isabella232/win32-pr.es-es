@@ -3,34 +3,34 @@ title: Implementación de IMediaObject AllocateStreamingResources
 description: Implementación de IMediaObject AllocateStreamingResources
 ms.assetid: 630550fe-2cca-4bfa-a824-a355f7fc5e02
 keywords:
-- Complementos de Windows Media Player, echo ejemplo de recursos de streaming
-- complementos, echo ejemplo de recursos de streaming
-- Complementos de procesamiento de señal digital, echo ejemplo de recursos de streaming
-- Complementos DSP, echo ejemplo de recursos de streaming
+- Reproductor de Windows Media complementos, recursos de streaming de ejemplo de eco
+- complementos, recursos de streaming de ejemplo de eco
+- complementos de procesamiento de señales digitales, recursos de streaming de ejemplo de eco
+- Complementos de DSP, recursos de streaming de ejemplo de eco
 - Ejemplo de complemento DSP de eco, recursos de streaming
 - Ejemplo de complemento DSP de eco, búfer de retraso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f1e347e35eaabbcbcc00a586e4cba0d8ad31cc6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 291b1f9627d9dfb78ae2aff9d34b6fadd47cbf28a5c2f0830f5833d9e83cde21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508965"
 ---
-# <a name="implementing-imediaobjectallocatestreamingresources"></a>Implementación de IMediaObject:: AllocateStreamingResources
+# <a name="implementing-imediaobjectallocatestreamingresources"></a>Implementación de IMediaObject::AllocateStreamingResources
 
-En el ejemplo echo, el método **AllocateStreamingResources** crea el búfer de retraso. Para ello, hace lo siguiente:
+En el ejemplo echo, el **método AllocateStreamingResources** crea el búfer de retraso. Para ello, haga lo siguiente:
 
 1.  Calcular un tamaño para el búfer que corresponde al tiempo de retraso especificado para el tipo de medio especificado.
-2.  Asignando nueva memoria o reasignando el tamaño del búfer si ya existe.
+2.  Asignar nueva memoria o reasignar el tamaño del búfer si ya existe.
 3.  Llamar a un método que rellena el búfer con valores que representan el silencio.
 
-El valor del silencio es diferente en función de la profundidad de bits. En el caso de audio de 8 bits, el silencio se representa mediante el valor hexadecimal 80; en el caso de audio de 16 bits, el silencio se representa con cero.
+El valor de silencio es diferente en función de la profundidad de bits. Para el audio de 8 bits, el silencio se representa mediante el valor hexadecimal 80; para el audio de 16 bits, el silencio se representa mediante cero.
 
 ## <a name="calculating-the-delay-buffer-size"></a>Calcular el tamaño del búfer de retraso
 
-Para calcular el tamaño necesario para el búfer de retraso, primero debe recuperar una estructura **WAVEFORMATEX** que contenga información sobre los datos de audio. En el ejemplo siguiente se recupera un puntero a esta estructura a partir de la estructura de **\_ \_ tipo de medio DMO** de entrada:
+Para calcular el tamaño necesario para el búfer de retraso, primero debe recuperar una estructura **DESENLAZATEX** que contenga información sobre los datos de audio. En el ejemplo siguiente se recupera un puntero a esta estructura de la entrada DMO **\_ estructura MEDIA \_ TYPE:**
 
 
 ```
@@ -44,7 +44,7 @@ if (NULL == pWave)
 
 
 
-Una vez que haya almacenado un puntero a la estructura **WAVEFORMATEX** adecuada, puede inspeccionar sus miembros y usarlos para calcular el tamaño de búfer necesario. En el ejemplo de código siguiente se muestra esto:
+Una vez que haya almacenado un puntero a la estructura **DEDATOX** adecuada, puede inspeccionar sus miembros y usarlos para calcular el tamaño de búfer necesario. En el ejemplo de código siguiente se muestra esto:
 
 
 ```
@@ -54,11 +54,11 @@ m_cbDelayBuffer = (m_dwDelayTime * pWave->nSamplesPerSec * pWave->nBlockAlign) /
 
 
 
-Este algoritmo calcula el tamaño del búfer multiplicando el tiempo de retraso, en milisegundos, por el número de muestras por milisegundo, multiplicando el resultado por el número de canales y multiplicando el resultado por el número de bytes por muestra. El número de canales y el número de bytes por muestra no son obvios; se codifican en el miembro nBlockAlign. La división por 1000 reduce el valor de nSamplesPerSec a muestras por milisegundo; el milisegundo es la unidad deseada porque el tiempo de retardo se expresa en milisegundos.
+Este algoritmo calcula el tamaño del búfer multiplicando el tiempo de retraso, en milisegundos, por el número de muestras por milisegundo, multiplicando el resultado por el número de canales y multiplicando el resultado por el número de bytes por muestra. El número de canales y el número de bytes por muestra no son obvios; se codifican en el miembro nBlockAlign. La división por 1000 reduce el valor nSamplesPerSec a muestras por milisegundo; el milisegundo es la unidad deseada porque el tiempo de retraso se expresa en milisegundos.
 
-## <a name="allocating-the-delay-buffer-memory"></a>Asignación de memoria de búfer de retraso
+## <a name="allocating-the-delay-buffer-memory"></a>Asignación de la memoria de búfer de retraso
 
-Una vez que haya calculado los requisitos de memoria, puede asignar el búfer. Es posible que sea necesario eliminar el búfer si existe, como cuando el usuario invoca la página de propiedades para cambiar el valor de tiempo de retraso. En el código siguiente se muestra la asignación del búfer de retraso:
+Una vez que haya calculado los requisitos de memoria, puede asignar el búfer. Es posible que sea necesario eliminar el búfer si existe, por ejemplo, cuando el usuario invoca la página de propiedades para cambiar el valor de tiempo de retraso. En el código siguiente se muestra cómo asignar el búfer de retraso:
 
 
 ```
@@ -80,7 +80,7 @@ if (!m_pbDelayBuffer)
 
 
 
-Si el búfer se asigna correctamente, debe mover el puntero movible al encabezado del búfer, tal y como se muestra en el ejemplo siguiente:
+Si el búfer se asigna correctamente, debe mover el puntero móvil al jefe del búfer, como se muestra en el ejemplo siguiente:
 
 
 ```
@@ -90,9 +90,9 @@ m_pbDelayPointer = m_pbDelayBuffer;
 
 
 
-## <a name="filling-the-delay-buffer-with-silence"></a>Llenado del búfer de retraso con silencio
+## <a name="filling-the-delay-buffer-with-silence"></a>Rellenar el búfer de retraso con silencio
 
-Es conveniente escribir un método para rellenar el búfer de retraso con valores que representan el silencio. El método debe recibir el puntero a la estructura WAVEFORMATEX válida y, a continuación, inspeccionar el miembro wBitsPerSample para determinar si el audio es de 8 bits o superior. En el ejemplo siguiente se rellena el búfer de retraso con el valor correcto para el silencio:
+Es conveniente escribir un método para rellenar el búfer de retraso con valores que representan el silencio. El método debe recibir el puntero a la estructura DEDATOATEX válida y, a continuación, inspeccionar el miembro wBitsPerSample para determinar si el audio es de 8 bits o superior. En el ejemplo siguiente se rellena el búfer de retraso con el valor correcto para el silencio:
 
 
 ```
@@ -109,7 +109,7 @@ void CEcho::FillBufferWithSilence(WAVEFORMATEX *pWfex)
 
 
 
-No olvide agregar la declaración adelantada de la función al archivo de encabezado echo. h en la sección privada:
+Recuerde agregar la declaración de reenvío de la función al archivo de encabezado Echo.h en la sección privada:
 
 
 ```
@@ -118,7 +118,7 @@ void FillBufferWithSilence(WAVEFORMATEX *pWfex);
 
 
 
-Debe agregar código al final de AllocateStreamingResources para llamar a este método cada vez que se crea o se cambia el tamaño del búfer de retraso. En el código de ejemplo siguiente se pasa el puntero WAVEFORMATEX denominado pWave al nuevo método:
+Debe agregar código al final de AllocateStreamingResources para llamar a este método cada vez que se crea o cambia el tamaño del búfer de retraso. En el código de ejemplo siguiente se pasa el punteroWAVEATEX denominado pWave al nuevo método:
 
 
 ```
@@ -128,9 +128,9 @@ FillBufferWithSilence(pWave);
 
 
 
-## <a name="reallocating-the-delay-buffer-memory"></a>Reasignar la memoria del búfer de retraso
+## <a name="reallocating-the-delay-buffer-memory"></a>Reasignación de la memoria de búfer de retraso
 
-Cuando el usuario cambia el tiempo de retraso mediante la página de propiedades, el tamaño del búfer de retraso también debe cambiar. Ya ha agregado el código a AllocateStreamingResources para cambiar el tamaño del búfer, pero debe agregar una línea de código a CEcho::p \_ retraso de UT para llamar al método de asignación de recursos cada vez que cambie el valor de la propiedad. Este es el código:
+Cuando el usuario cambia el tiempo de retraso mediante la página de propiedades, el tamaño del búfer de retraso también debe cambiar. Ya ha agregado el código a AllocateStreamingResources para cambiar el tamaño del búfer, pero debe agregar una línea de código a CEcho::p ut delay para llamar al método de asignación de recursos cada vez que cambia el valor de \_ propiedad. Este es el código:
 
 
 ```
@@ -147,9 +147,9 @@ AllocateStreamingResources();
 [**Trabajar con recursos de streaming**](working-with-streaming-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

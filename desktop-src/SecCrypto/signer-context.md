@@ -1,7 +1,7 @@
 ---
 description: Contiene un BLOB firmado.
 ms.assetid: c12d9007-c779-4363-8e28-6387a665a0d6
-title: Estructura de SIGNER_CONTEXT
+title: SIGNER_CONTEXT estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4ebc7d5380438fc6cd28a43136273387c1919713
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1c67733886aa44a9a4f2179b16fee36a95f4462876ebe5d873b5e9b0ff2d2a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117973588"
 ---
-# <a name="signer_context-structure"></a>Estructura de \_ contexto del firmante
+# <a name="signer_context-structure"></a>SIGNER \_ CONTEXT (estructura)
 
-La estructura de **\_ contexto del firmante** contiene un [*BLOB*](../secgloss/b-gly.md)firmado.
+La **estructura SIGNER \_ CONTEXT** contiene un [*BLOB firmado.*](../secgloss/b-gly.md)
 
 > [!Note]  
-> Esta estructura no está definida en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo tal como se muestra en este tema.
+> Esta estructura no se define en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo como se muestra en este tema.
 
  
 
@@ -48,14 +48,14 @@ typedef struct _SIGNER_CONTEXT {
 **cbSize**
 </dt> <dd>
 
-Tamaño de la estructura, en bytes.
+Tamaño, en bytes, de la estructura .
 
 </dd> <dt>
 
 **cbBlob**
 </dt> <dd>
 
-Tamaño, en bytes, del miembro **pbBlob** .
+Tamaño, en bytes, del **miembro pbBlob.**
 
 </dd> <dt>
 
@@ -72,8 +72,8 @@ Puntero al BLOB firmado.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 

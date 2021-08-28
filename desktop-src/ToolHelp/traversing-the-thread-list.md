@@ -1,19 +1,19 @@
 ---
-title: Atravesar la lista de subprocesos
+title: Recorrer la lista de subprocesos
 description: En la función de ejemplo siguiente se enumeran los subprocesos en ejecución para un proceso especificado.
 ms.assetid: 67194627-8239-46d2-93e7-eb8e5f6c56e6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 300b162af296b0c556cce3d3d62e59bd4278b1d1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e66ebd58ebb50a2a7d96fa41c9f9449dbe5d85744c0ba09405ef0ffaf5fcedd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513835"
 ---
-# <a name="traversing-the-thread-list"></a>Atravesar la lista de subprocesos
+# <a name="traversing-the-thread-list"></a>Recorrer la lista de subprocesos
 
-En la función de ejemplo siguiente se enumeran los subprocesos en ejecución para un proceso especificado. En primer lugar, la `ListProcessThreads` función toma una instantánea de los subprocesos que se están ejecutando actualmente en el sistema mediante [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot)y, a continuación, se recorre la lista registrada en la instantánea con las funciones [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) y [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) . El parámetro de `ListProcessThreads` es el identificador de proceso del proceso cuyos subprocesos se van a mostrar.
+En la función de ejemplo siguiente se enumeran los subprocesos en ejecución para un proceso especificado. En primer lugar, la función toma una instantánea de los subprocesos que se están ejecutando actualmente en el sistema mediante `ListProcessThreads` [**CreateToolhelp32Snapshot**](/windows/desktop/api/TlHelp32/nf-tlhelp32-createtoolhelp32snapshot)y, a continuación, recorre la lista registrada en la instantánea mediante las funciones [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first) y [**Thread32Next.**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next) El parámetro de `ListProcessThreads` es el identificador de proceso del proceso cuyos subprocesos se van a enumerar.
 
 
 ```C++
@@ -106,9 +106,9 @@ void printError( TCHAR* msg )
 [Recorrido de subprocesos](thread-walking.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

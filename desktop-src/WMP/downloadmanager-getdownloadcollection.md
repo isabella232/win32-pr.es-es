@@ -1,11 +1,11 @@
 ---
-title: DownloadManager. getDownloadCollection, método
-description: Tenga en cuenta que en esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método getDownloadCollection recupera la colección de descarga especificada.
+title: DownloadManager.getDownloadCollection (método)
+description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método getDownloadCollection recupera la colección de descarga especificada.
 ms.assetid: 743d6bcf-2d5b-4a30-a4ef-4538cf7c901e
 keywords:
-- método getDownloadCollection de Windows Media Player
-- método getDownloadCollection de Windows Media Player, clase DownloadManager
-- Clase DownloadManager Windows Media Player, método getDownloadCollection
+- Método getDownloadCollection Reproductor de Windows Media
+- Método getDownloadCollection Reproductor de Windows Media , clase DownloadManager
+- DownloadManager class Reproductor de Windows Media , getDownloadCollection (método)
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e879d82c3f49db08d75b8aec37271e8d966019e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 57fc729296f15b39e603683cab38e3d0d878733ab0990d9876e32b4001a15cf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749625"
 ---
-# <a name="downloadmanagergetdownloadcollection-method"></a>DownloadManager. getDownloadCollection, método
+# <a name="downloadmanagergetdownloadcollection-method"></a>DownloadManager.getDownloadCollection (método)
 
 > [!Note]  
-> En esta sección se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **getDownloadCollection** recupera la colección de descarga especificada.
+El **método getDownloadCollection** recupera la colección de descarga especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,22 +47,22 @@ retVal = DownloadManager.getDownloadCollection(
 
 <dl> <dt>
 
-*collectionId* \[ de\]
+*collectionId* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que especifica el identificador de la colección de descarga que se va a recuperar.
+**Número** (**long**) que especifica el identificador de la colección de descarga que se recuperará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un objeto **DownloadCollection** .
+Este método devuelve un **objeto DownloadCollection.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Primero debe llamar a *Downloadmanager*. **createDownloadCollection** para crear una nueva colección y recuperar su valor de identificador.
+Primero debe llamar a *DownloadManager.* **createDownloadCollection** para crear una nueva colección y recuperar su valor de identificador.
 
-Una colección de descargas existente puede contener elementos marcados como cancelados.
+Una colección de descarga existente puede contener elementos que se han marcado como cancelados.
 
 Los elementos de descarga en tiempo real no completados en una sesión anterior no se recuperan como parte de la colección. Las descargas en segundo plano que se completaron antes de la sesión actual permanecen en la colección de descargas hasta que se quitan.
 
@@ -72,7 +72,7 @@ Los elementos de descarga en tiempo real no completados en una sesión anterior 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/>                                  |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -81,13 +81,13 @@ Los elementos de descarga en tiempo real no completados en una sesión anterior 
 
 <dl> <dt>
 
-[**Objeto DownloadManager**](downloadmanager-object.md)
+[**DownloadManager (objeto)**](downloadmanager-object.md)
 </dt> <dt>
 
 [**DownloadManager. createDownloadCollection**](downloadmanager-createdownloadcollection.md)
 </dt> <dt>
 
-[**Objeto DownloadCollection**](downloadcollection-object.md)
+[**DownloadCollection (objeto)**](downloadcollection-object.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Destruye una instantánea existente de la colección de sistemas virtuales. Este método puede ser un efecto secundario de destruir otras instantáneas que dependen de la instantánea afectada.
+description: Destruye una instantánea existente de la colección del sistema virtual. Este método puede destruir como efecto secundario otras instantáneas que dependen de la instantánea afectada.
 ms.assetid: 79a529d5-35bb-4e63-a1b7-8943de9580e8
-title: Método DestroySnapshot de la clase Msvm_CollectionSnapshotService
+title: Método DestroySnapshot de la Msvm_CollectionSnapshotService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 399737a95db7725718b2e0ec620d2b6b7a7ae93e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bacdb760580057516b6663bf53f5cd02a83f76148fa782ab875ca7385c053cb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431505"
 ---
-# <a name="destroysnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Método DestroySnapshot de la \_ clase CollectionSnapshotService de MSVM
+# <a name="destroysnapshot-method-of-the-msvm_collectionsnapshotservice-class"></a>Método DestroySnapshot de la clase \_ CollectionSnapshotService de Msvm
 
-Destruye una instantánea existente de la colección de sistemas virtuales. Este método puede ser un efecto secundario de destruir otras instantáneas que dependen de la instantánea afectada.
+Destruye una instantánea existente de la colección del sistema virtual. Este método puede destruir como efecto secundario otras instantáneas que dependen de la instantánea afectada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 DestroySnapshot(
 
 <dl> <dt>
 
-*AffectedSnapshotCollection* \[ de\]
+*AffectedSnapshotCollection* \[ En\]
 </dt> <dd>
 
-Referencia a una [**\_ colección CIM**](cim-collection.md) que describe la colección de instantáneas de sistema virtual afectada.
+Referencia a una [**colección CIM \_ que**](cim-collection.md) describe la colección de instantáneas del sistema virtual afectada.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia opcional que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta a una instancia de [**CIM \_ ConcreteJob**](cim-concretejob.md) se puede usar para supervisar el progreso y obtener el resultado del método.
+Referencia opcional que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta a una instancia de [**\_ CIM ConcreteJob**](cim-concretejob.md) se puede usar para supervisar el progreso y obtener el resultado del método .
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -78,7 +78,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no válido** (6)
+**Tipo no** válido (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
@@ -87,10 +87,10 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,10 +99,10 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 
 <dl> <dt>
 
-[**MSVM \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
+[**Msvm \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
 </dt> </dl>
 
  

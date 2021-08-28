@@ -1,9 +1,9 @@
 ---
-title: Elemento config (EapHostConfig)
-description: Se usa cuando la configuración del método está en formato de texto XML en lugar de un BLOB binario.
+title: Elemento Config (EapHostConfig)
+description: Se usa cuando la configuración del método está en formato de texto XML en lugar de blob binario.
 ms.assetid: f47bec23-745f-47db-84db-2556beb6a9e9
 keywords:
-- Elemento de configuración EAPHost
+- Elemento DE CONFIGURACIÓN EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a81c90063a57a9d55d8ab6d9c18486315c187f0e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba798afaa418e5de49c48abdc8dac242a300a7228ffe27a76241f4cbabed5833
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739085"
 ---
-# <a name="config-eaphostconfig-element"></a>Elemento config (EapHostConfig)
+# <a name="config-eaphostconfig-element"></a>Elemento Config (EapHostConfig)
 
-El elemento de **configuración (EapHostConfig)** se usa cuando la configuración del método está en formato de texto XML en lugar de un BLOB binario.
+El **elemento Config (EapHostConfig)** se usa cuando la configuración del método está en formato de texto XML en lugar de un blob binario.
 
 ``` syntax
 <xs:element name="Config"
@@ -31,11 +31,11 @@ El elemento de **configuración (EapHostConfig)** se usa cuando la configuració
  />
 ```
 
-El elemento de **configuración** se define mediante el elemento [**EapHostConfig**](eaphostconfigschema-eaphostconfig-element.md) .
+El **elemento Config** se define mediante el elemento [**EapHostConfig.**](eaphostconfigschema-eaphostconfig-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los elementos **config** y [**ConfigBlob**](eaphostconfigschema-configblob-eaphostconfig-element.md) no se pueden usar simultáneamente.
+Los **elementos Config** y [**ConfigBlob**](eaphostconfigschema-configblob-eaphostconfig-element.md) no se pueden usar simultáneamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ Los elementos **config** y [**ConfigBlob**](eaphostconfigschema-configblob-eapho
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

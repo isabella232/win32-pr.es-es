@@ -1,36 +1,36 @@
 ---
 title: Cómo crear barras de herramientas verticales
-description: La clave para crear una barra de herramientas vertical consiste en incluir CCS \_ Vert en el estilo de ventana y establecer el \_ estilo de ajuste de TBSTATE para cada botón.
+description: La clave para crear una barra de herramientas vertical es incluir CCS VERT en el estilo de ventana y establecer el estilo \_ TBSTATE \_ WRAP para cada botón.
 ms.assetid: C2EAB160-0D8D-4BB9-AD41-D5175FBE81AB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd32609e81196a94f4298197c33a4cc6e21d117
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: ea66c22461c3616a6b90fdb9fed65fc65fec751055c27d15170aab30e3531e96
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103995042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504045"
 ---
 # <a name="how-to-create-vertical-toolbars"></a>Cómo crear barras de herramientas verticales
 
-La clave para crear una barra de herramientas vertical consiste en incluir [**CCS \_ Vert**](common-control-styles.md) en el estilo de ventana y establecer el estilo de [**\_ ajuste de TBSTATE**](toolbar-button-states.md) para cada botón.
+La clave para crear una barra de herramientas vertical es incluir [**\_ CCS VERT**](common-control-styles.md) en el estilo de ventana y establecer el estilo [**TBSTATE \_ WRAP**](toolbar-button-states.md) para cada botón.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="create-a-vertical-toolbar"></a>Crear una barra de herramientas vertical
 
-En el código de ejemplo siguiente se crea la barra de herramientas vertical que se muestra en la siguiente ilustración.
+En el código de ejemplo siguiente se crea la barra de herramientas vertical que se muestra en la ilustración siguiente.
 
 ![captura de pantalla que muestra un cuadro de diálogo con tres elementos de la barra de herramientas organizados verticalmente, cada uno de los cuales solo tiene un icono](images/tb-vertical.png)
 
@@ -80,15 +80,15 @@ HWND CreateVerticalToolbar(HWND hWndParent)
 
 <dl> <dt>
 
-[Usar controles Toolbar](using-toolbar-controls.md)
+[Usar controles de barra de herramientas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: La notificación de DELETEERROR de SPFILENOTIFY \_ se envía a la rutina de devolución de llamada si se produce un error durante una operación de eliminación de archivo.
+description: La notificación SPFILENOTIFY DELETEERROR se envía a la rutina de devolución de llamada si \_ se produce un error durante una operación de eliminación de archivos.
 ms.assetid: b98b62f0-0b59-430e-966d-c1447026b696
-title: Mensaje de SPFILENOTIFY_DELETEERROR (setupapi. h)
+title: SPFILENOTIFY_DELETEERROR mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 035b61120bd1343b43c9b6f6d74246eab33cb430
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e0670f2edc116934442204c36513a3f08744aa3f307c7814de55abe2acc7370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964628"
 ---
-# <a name="spfilenotify_deleteerror-message"></a>SPFILENOTIFY \_ DELETEERROR
+# <a name="spfilenotify_deleteerror-message"></a>SpFILENOTIFY \_ DELETEERROR message
 
-La notificación de **\_ DELETEERROR de SPFILENOTIFY** se envía a la rutina de devolución de llamada si se produce un error durante una operación de eliminación de archivo.
+La **notificación SPFILENOTIFY \_ DELETEERROR** se envía a la rutina de devolución de llamada si se produce un error durante una operación de eliminación de archivos.
 
 
 ```C++
@@ -29,10 +29,10 @@ SPFILENOTIFY_DELETEERROR
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Puntero a una estructura [**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) .
+Puntero a una [**estructura FILEPATHS.**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 
 </dd> <dt>
 
@@ -51,9 +51,9 @@ La rutina de devolución de llamada debe devolver uno de los valores siguientes.
 
 | Código devuelto                                                                                  | Descripción                                                                                                                                                                                                                                                                   |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_anulación de FILEOP**</dt> </dl> | Se debe cancelar el procesamiento de la cola. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve información de ERROR extendida como error \_ cancelado (si el usuario canceló) o error \_ no \_ hay suficiente \_ memoria.<br/> |
-| <dl> <dt>**FILEOP \_ reintentar**</dt> </dl> | El usuario está intentando de nuevo la operación de eliminación.<br/>                                                                                                                                                                                                                 |
-| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>  | El usuario está omitiendo la operación de eliminación de archivo.<br/>                                                                                                                                                                                                                    |
+| <dl> <dt>**FILEOP \_ ABORT**</dt> </dl> | Se debe cancelar el procesamiento de la cola. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve información de error extendida, como ERROR CANCELLED (si el usuario canceló) o \_ ERROR NOT ENOUGH \_ \_ \_ MEMORY.<br/> |
+| <dl> <dt>**REINTENTO \_ DE FILEOP**</dt> </dl> | El usuario está intentando de nuevo la operación de eliminación.<br/>                                                                                                                                                                                                                 |
+| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>  | El usuario omite la operación de eliminación de archivos.<br/>                                                                                                                                                                                                                    |
 
 
 
@@ -63,11 +63,11 @@ La rutina de devolución de llamada debe devolver uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

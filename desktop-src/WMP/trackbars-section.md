@@ -1,26 +1,26 @@
 ---
-title: Sección Trackbars
-description: Sección Trackbars
+title: Sección Barras de seguimiento
+description: Sección Barras de seguimiento
 ms.assetid: cc6d1286-413b-4c4b-bcbd-6dd12811d24e
 keywords:
-- Aspectos de Windows Media Player Mobile, trackbars
-- máscaras, trackbars
+- Reproductor de Windows Media Máscaras móviles, barras de seguimiento
+- máscaras, barras de seguimiento
 - crear máscaras, sección Trackbars
-- escribir código para máscaras, sección Trackbars
-- trackbars en máscaras, sección Trackbars
+- escribir código para máscaras, sección Barras de seguimiento
+- barras de seguimiento en máscaras, sección Trackbars
 - archivos de definición de máscara, sección Trackbars
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ed10e576e38c3fdc694fd6bef67c513b2983f05
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7ac92278a2c565e3f98e039ca06192ef3f64eb6edddae9bd3b1795330ce5fc1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507225"
 ---
-# <a name="trackbars-section"></a>Sección Trackbars
+# <a name="trackbars-section"></a>Sección Barras de seguimiento
 
-La sección Trackbars contiene información sobre cualquier Trackbars que quiera incluir:
+La sección Barras de seguimiento contiene información sobre las barras de seguimiento que desea incluir:
 
 
 ```C++
@@ -34,7 +34,7 @@ La sección Trackbars contiene información sobre cualquier Trackbars que quiera
 
 
 
-Aquí solo se define la barra de superpuestos del volumen. Para obtener más información sobre la sección TrackBar del archivo de definición de máscara, vea [Trackbars](trackbars.md) en la referencia de máscara.
+Aquí solo se define la barra de seguimiento del volumen. Para obtener más información sobre la sección Trackbar del archivo de definición de máscara, vea [Barras de seguimiento en](trackbars.md) la referencia de máscara.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -43,9 +43,9 @@ Aquí solo se define la barra de superpuestos del volumen. Para obtener más inf
 [**Escritura del código**](writing-the-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

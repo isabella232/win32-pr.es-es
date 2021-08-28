@@ -1,17 +1,17 @@
 ---
 description: Especifica si el origen de red almacena en caché el contenido.
 ms.assetid: f9a36315-083c-4ebb-9d36-d55fc1f21621
-title: Propiedad MFNETSOURCE_CACHEENABLED (Mfidl. h)
+title: MFNETSOURCE_CACHEENABLED propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad6f38398e44eaa25da7a5b1f88a76edb8e40924
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6954359ed91fe402d785fec9e63f470c31abc85432e519b2e06bcb1d679933dc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113635"
 ---
-# <a name="mfnetsource_cacheenabled-property"></a>\_Propiedad CACHEENABLED de MFNETSOURCE
+# <a name="mfnetsource_cacheenabled-property"></a>Propiedad MFNETSOURCE \_ CACHEENABLED
 
 Especifica si el origen de red almacena en caché el contenido.
 
@@ -19,11 +19,11 @@ Especifica si el origen de red almacena en caché el contenido.
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-Booleano (**Long**)
+Booleano (**LONG**)
 
 VT \_ I4
 
@@ -31,13 +31,13 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante **MFNETSOURCE \_ CACHEENABLED** define el GUID para esta clave de propiedad. El identificador de propiedad (PID) es cero.
+La constante **MFNETSOURCE \_ CACHEENABLED** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
-Las aplicaciones pueden utilizar esta propiedad para configurar el origen de red. Para establecer la propiedad, pase un puntero **IPropertyStore** a la resolución de origen. Para obtener más información, consulte [configuración de un origen de medios](configuring-a-media-source.md).
+Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Para establecer la propiedad , pase un **puntero IPropertyStore** al solucionador de origen. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
-El valor predeterminado de esta propiedad es **true**.
+El valor predeterminado de esta propiedad es **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ El valor predeterminado de esta propiedad es **true**.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -55,10 +55,10 @@ El valor predeterminado de esta propiedad es **true**.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> </dl>
 
  

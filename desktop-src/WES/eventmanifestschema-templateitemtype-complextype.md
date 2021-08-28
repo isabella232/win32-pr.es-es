@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de TemplateItemType
-description: Plantilla que define los datos que se van a incluir con un evento. | Tipo complejo de TemplateItemType
+title: Tipo complejo TemplateItemType
+description: Plantilla que define los datos que se incluirán con un evento . | Tipo complejo TemplateItemType
 ms.assetid: 1681af7d-03ef-47bc-bc02-ce1a9903fb44
 keywords:
-- TemplateItemType tipo complejo EventLog
+- Tipo complejo TemplateItemType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 94ae108ceed3285fe7e57461611d94b1147d94e7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 147cd54f1503630cd3ea7467a7fd70162f1d2b3ab9db46178960587f164856a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117936920"
 ---
-# <a name="templateitemtype-complex-type"></a>Tipo complejo de TemplateItemType
+# <a name="templateitemtype-complex-type"></a>Tipo complejo TemplateItemType
 
-Plantilla que define los datos que se van a incluir con un evento.
+Plantilla que define los datos que se incluirán con un evento .
 
 ``` syntax
 <xs:complexType name="TemplateItemType">
@@ -72,10 +72,10 @@ Plantilla que define los datos que se van a incluir con un evento.
 
 | Elemento                                                                   | Tipo                                                                                 | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**binario**](eventmanifestschema-binary-templateitemtype-element.md)     |                                                                                      | Reservado para uso interno.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [**datos**](eventmanifestschema-data-templateitemtype-element.md)         | [**DataDefinitionType**](eventmanifestschema-datadefinitiontype-complextype.md)     | Define un elemento de datos que desea incluir con el evento.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [**Destructor**](eventmanifestschema-struct-templateitemtype-element.md)     | [**StructDefinitionType**](eventmanifestschema-structdefinitiontype-complextype.md) | Define una estructura que incluye uno o más elementos de datos que desea incluir con el evento. Los proveedores escriben la estructura como un BLOB y no como miembros individuales de la estructura.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [**UserData**](eventmanifestschema-userdata-templateitemtype-element.md) | [**XmlType**](eventmanifestschema-xmltype-complextype.md)                           | Fragmento XML que se utiliza para representar los datos de evento. Si no incluye el fragmento, los datos de evento se representan en el orden en que los elementos de datos se definen en la plantilla. El contenido de este elemento es cualquier fragmento XML válido. El fragmento debe contener solo un nodo de nivel superior y el nodo de nivel superior debe especificar su propio espacio de nombres. <br/> Para hacer referencia a un elemento de datos del fragmento, establezca el cuerpo del texto de un nodo del fragmento en%*n*, donde *n* es el índice basado en uno de los elementos de datos de nivel superior de la lista de elementos de datos (no se puede hacer referencia a los miembros de una estructura). El valor de índice que especifique no debe ser mayor que el número de elementos de datos de nivel superior de la plantilla.<br/> Este elemento sigue a todos los **datos** y elementos de **estructura** . <br/> |
+| [**binary**](eventmanifestschema-binary-templateitemtype-element.md)     |                                                                                      | Reservado para uso interno.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [**Datos**](eventmanifestschema-data-templateitemtype-element.md)         | [**DataDefinitionType**](eventmanifestschema-datadefinitiontype-complextype.md)     | Define un elemento de datos que desea incluir con el evento .<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [**Estructura**](eventmanifestschema-struct-templateitemtype-element.md)     | [**StructDefinitionType**](eventmanifestschema-structdefinitiontype-complextype.md) | Define una estructura que incluye uno o varios elementos de datos que desea incluir con el evento . Los proveedores escriben la estructura como un blob y no como miembros individuales de la estructura.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [**UserData**](eventmanifestschema-userdata-templateitemtype-element.md) | [**XmlType**](eventmanifestschema-xmltype-complextype.md)                           | Fragmento XML que se usa para representar los datos del evento. Si no incluye el fragmento, los datos del evento se representan en el orden en que los elementos de datos se definen en la plantilla. El contenido de este elemento es cualquier fragmento XML válido. El fragmento solo debe contener un nodo de nivel superior y el nodo de nivel superior debe especificar su propio espacio de nombres. <br/> Para hacer referencia a un elemento de datos del fragmento, establezca el cuerpo del texto de un nodo del fragmento en %*n*, donde *n* es el índice basado en uno de los elementos de datos de nivel superior de la lista de elementos de datos (no se puede hacer referencia a miembros de una estructura). El valor de índice que especifique no debe ser mayor que el número de elementos de datos de nivel superior de la plantilla.<br/> Este elemento sigue a todos **los datos y** elementos **struct.** <br/> |
 
 
 
@@ -87,13 +87,13 @@ Plantilla que define los datos que se van a incluir con un evento.
 |------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name | string | Reservado para uso interno.<br/>                                                                                                                                                            |
 | name | string | Nombre de la plantilla.<br/>                                                                                                                                                                  |
-| tid  | token  | Identificador que identifica de forma única la plantilla en la lista de plantillas que define el proveedor. Use este nombre para hacer referencia a la plantilla al definir la definición del evento.<br/> |
+| tid  | token  | Identificador que identifica de forma única la plantilla dentro de la lista de plantillas que define el proveedor. Use este nombre para hacer referencia a la plantilla al definir la definición de evento.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La definición de plantilla debe tener al menos un elemento secundario de datos o struct. El proveedor debe escribir los datos de evento en el orden de los elementos de datos definidos en la plantilla.
+La definición de plantilla debe tener al menos un elemento secundario data o struct. El proveedor debe escribir los datos del evento en el orden de los elementos de datos definidos en la plantilla.
 
 El tamaño de todos los elementos de datos de la plantilla debe ser inferior a 64 KB.
 
@@ -122,10 +122,10 @@ En el ejemplo siguiente se muestra cómo crear una definición de plantilla.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

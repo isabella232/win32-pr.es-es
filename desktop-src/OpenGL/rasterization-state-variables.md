@@ -1,6 +1,6 @@
 ---
-title: Variables de estado de rasterización
-description: Variables de estado de rasterización
+title: Variables de estado de la rasterización
+description: Variables de estado de la rasterización
 ms.assetid: 57ce3dc0-3983-449a-bbe1-153232727ff8
 keywords:
 - Variables de estado de rasterización OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6210f93c23dc52f19f3e01ea01ebe8fc9d631c8c
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 1586861eee26f93bca85b8c0f03e9f746e983046bbda755b67a792d65d660b53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776895"
 ---
-# <a name="rasterization-state-variables"></a>Variables de estado de rasterización
+# <a name="rasterization-state-variables"></a>Variables de estado de la rasterización
 
 <dl> <dt><span id="GL_POINT_SIZE"></span><span id="gl_point_size"></span>TAMAÑO \_ DE PUNTO DE \_ GL</dt> <dd> 
 
@@ -73,7 +73,7 @@ ms.locfileid: "107909843"
 
  
 
-</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>PATRÓN \_ DE \_ STIPPLE DE LÍNEA \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_LINE_STIPPLE_PATTERN"></span><span id="gl_line_stipple_pattern"></span>PATRÓN \_ GL LINE \_ \_ STIPPLE</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
@@ -142,7 +142,7 @@ ms.locfileid: "107909843"
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Indicador cw/CCW de la cara frontal del polígono                                              |
+| Descripción:     | Indicador front-face CW/CCW de polígono                                              |
 | Grupo de atributos: | polygon                                                                          |
 | Valor inicial:   | GL \_ CCW                                                                          |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -164,11 +164,11 @@ ms.locfileid: "107909843"
 
  
 
-</dd> <dt><span id="GL_POLYGON_MODE"></span><span id="gl_polygon_mode"></span>MODO \_ DE POLÍGONO DE \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_POLYGON_MODE"></span><span id="gl_polygon_mode"></span>MODO \_ DE POLÍGONO \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Modo de rasterización de polígono (delante y atrás)                                      |
+| Descripción:     | Modo de rasterización de polígonos (delante y atrás)                                      |
 | Grupo de atributos: | polygon                                                                          |
 | Valor inicial:   | GL \_ FILL                                                                         |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

@@ -1,22 +1,22 @@
 ---
-description: En el ejemplo siguiente se usa la interfaz IWiaVideo para crear una versión preliminar de streaming video y obtener una imagen fija de ese vídeo de streaming. En el ejemplo se supone que tiene un identificador válido para una ventana (HWND).
+description: En el ejemplo siguiente se usa la interfaz IWiaVideo para crear una vista previa de vídeo de streaming y obtener una imagen fija de ese vídeo de streaming. En el ejemplo se supone que tiene un identificador válido para una ventana (HWND).
 ms.assetid: bca00825-32a7-40b2-9ca9-23475e3218a8
-title: Capturar una imagen de un vídeo de streaming
+title: Captura de una imagen fija a partir de streaming de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf43acdb1bd472a9d5a5dca2344b2f4ad37f474a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7af209ec0261418ab18d01414d040c9015a2436e055675a94608b1089f66fa58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772875"
 ---
-# <a name="capturing-a-still-image-from-streaming-video"></a>Capturar una imagen de un vídeo de streaming
+# <a name="capturing-a-still-image-from-streaming-video"></a>Captura de una imagen fija a partir de streaming de vídeo
 
-En el ejemplo siguiente se usa la interfaz [**IWiaVideo**](/windows/desktop/api/Wiavideo/nn-wiavideo-iwiavideo) para crear una versión preliminar de streaming video y obtener una imagen fija de ese vídeo de streaming. En el ejemplo se supone que tiene un identificador válido para una ventana (HWND).
+En el ejemplo siguiente se usa la [**interfaz IWiaVideo**](/windows/desktop/api/Wiavideo/nn-wiavideo-iwiavideo) para crear una vista previa de vídeo de streaming y obtener una imagen fija de ese vídeo de streaming. En el ejemplo se supone que tiene un identificador válido para una ventana (HWND).
 
 > [!Note]  
-> La adquisición de imágenes de Windows (WIA) no es compatible con dispositivos de vídeo en Windows Server 2003, Windows Vista o posterior. En el caso de las versiones de Windows, use [DirectShow](/previous-versions//ms783323(v=vs.85)) para adquirir imágenes del vídeo.
+> Windows Adquisición de imágenes (WIA) no admite dispositivos de vídeo en Windows Server 2003, Windows Vista o versiones posteriores. Para esas versiones de la Windows, use [DirectShow](/previous-versions//ms783323(v=vs.85)) para adquirir imágenes a partir de vídeo.
 
  
 

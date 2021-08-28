@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración ConditionalColumnGrbit'
-title: Enumeración ConditionalColumnGrbit
+description: 'Más información sobre: Enumeración ConditionalColumnGrbit'
+title: ConditionalColumnGrbit (enumeración)
 TOCTitle: ConditionalColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ConditionalColumnGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.conditionalcolumngrbit(v=EXCHG.10)
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 82828df5d5a25dac08a2a8ab560225456f075a34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b838728ca956b104b850cac4cf1741398c3015b03df7ed427f71c1f109b0c038
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737945"
 ---
-# <a name="conditionalcolumngrbit-enumeration"></a>Enumeración ConditionalColumnGrbit
+# <a name="conditionalcolumngrbit-enumeration"></a>ConditionalColumnGrbit (enumeración)
 
-Opciones de la estructura de JET_CONDITIONALCOLUMN.
+Opciones para la estructura JET_CONDITIONALCOLUMN datos.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,7 +78,7 @@ public enum ConditionalColumnGrbit
 <tr class="even">
 <td></td>
 <td>ColumnMustBeNonNull</td>
-<td>La columna no debe ser null para que una entrada de índice aparezca en el índice.</td>
+<td>La columna debe ser no NULL para que una entrada de índice aparezca en el índice.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum ConditionalColumnGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

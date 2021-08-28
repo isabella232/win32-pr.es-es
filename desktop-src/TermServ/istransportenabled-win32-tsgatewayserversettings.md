@@ -1,12 +1,12 @@
 ---
-title: Método IsTransportEnabled de la clase Win32_TSGatewayServerSettings
+title: Método IsTransportEnabled de la Win32_TSGatewayServerSettings clase
 description: Determina si el transporte especificado está habilitado.
 ms.assetid: 3f08a206-5800-4088-a113-bb3f0cc826f2
 ms.tgt_platform: multiple
 keywords:
 - Método IsTransportEnabled Servicios de Escritorio remoto
-- Método IsTransportEnabled Servicios de Escritorio remoto, clase Win32_TSGatewayServerSettings
-- Win32_TSGatewayServerSettings de clase Servicios de Escritorio remoto, método IsTransportEnabled
+- Método IsTransportEnabled Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , método IsTransportEnabled
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da152499138f6c1aba1ff6477c719aa0e787deee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7960748228e11f3749cd86daa2a323ca32ab9b05e1c17f98261ad4ae62b0fc9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515085"
 ---
-# <a name="istransportenabled-method-of-the-win32_tsgatewayserversettings-class"></a>Método IsTransportEnabled de la \_ clase TSGatewayServerSettings de Win32
+# <a name="istransportenabled-method-of-the-win32_tsgatewayserversettings-class"></a>Método IsTransportEnabled de la clase \_ TSGatewayServerSettings de Win32
 
 Determina si el transporte especificado está habilitado.
 
@@ -44,17 +44,17 @@ uint32 IsTransportEnabled(
 
 <dl> <dt>
 
-*TransportType* \[ de\]
+*TransportType* \[ En\]
 </dt> <dd>
 
-Especifica el tipo de transporte. Debe ser uno de los valores siguientes.
+Especifica el tipo de transporte. Debe ser uno de los siguientes valores.
 
 <dt>
 
 0
 </dt> <dd>
 
-Transporte RPC a través de HTTP.
+RPC a través del transporte HTTP.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Transporte UDP.
 
 </dd> </dl> </dd> <dt>
 
-*Habilitado* \[ enuncia\]
+*Habilitado* \[ out\]
 </dt> <dd>
 
 Valor **booleano** que indica si el transporte está habilitado.
@@ -81,7 +81,7 @@ Valor **booleano** que indica si el transporte está habilitado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ Si el método se ejecuta correctamente, devuelve cero. Si el método no se reali
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

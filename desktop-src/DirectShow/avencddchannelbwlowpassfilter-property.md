@@ -1,25 +1,25 @@
 ---
-description: Especifica si se aplica un filtro de paso bajo a los canales de entrada principales en una secuencia de audio Dolby digital. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+description: Especifica si se aplica un filtro de paso bajo a los canales de entrada principales de una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 ms.assetid: 534869f6-bde5-4767-a332-26a05e07c56a
-title: Propiedad AVEncDDChannelBWLowPassFilter (Codecapi. h)
+title: Propiedad AVEncDDChannelBWLowPassFilter (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dc45abf04a62609988c0da87016d21e8858b7ef
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3ad926d3e269a4a4100cbf62771524d634c7c1febeddbc43866d9fbbb574b7a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108695"
 ---
 # <a name="avencddchannelbwlowpassfilter-property"></a>Propiedad AVEncDDChannelBWLowPassFilter
 
-Especifica si se aplica un filtro de paso bajo a los canales de entrada principales en una secuencia de audio Dolby digital. Esta propiedad se aplica a los codificadores de audio Dolby digital.
+Especifica si se aplica un filtro de paso bajo a los canales de entrada principales de una secuencia de audio Dolby Digital. Esta propiedad se aplica a los codificadores de audio Dolby Digital.
 
 Esta propiedad es de lectura y escritura.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -31,9 +31,9 @@ Esta propiedad es de lectura y escritura.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Esta propiedad es de lectura y escritura.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

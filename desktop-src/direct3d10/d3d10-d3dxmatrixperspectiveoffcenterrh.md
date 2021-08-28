@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3f80c32953dbc591d5d8bc7a95fc707e93fe384c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 883ddb49684d4e5f5ca7cfb3585a26653a7f0ef4960b59e3c74aafecdd7e2f93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498035"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterrh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveOffCenterRH (D3DX10Math.h)
 
@@ -73,7 +73,7 @@ Valor x máximo del volumen de vista.
 
 </dd> <dt>
 
-*b* \[ en\]
+*b* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -96,7 +96,7 @@ Valor Y máximo del volumen de vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z mínimo del volumen de vista.
+Valor z mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -113,15 +113,15 @@ Valor z máximo del volumen de vista.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva personalizada y con la mano derecha.
+Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva personalizada y con la derecha.
 
 ## <a name="remarks"></a>Comentarios
 
 Todos los parámetros de la función D3DXMatrixPerspectiveOffCenterRH son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixPerspectiveOffCenterRH se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixPerspectiveOffCenterRH se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```
@@ -144,7 +144,7 @@ Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

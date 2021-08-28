@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_ROOT_CONSTANTS estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ estructura de constantes raíz D3D12 \_ .
+title: CD3DX12_ROOT_CONSTANTS estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura \_ \_ CONSTANTS RAÍZ D3D12.
 ms.assetid: 2F517DCE-BC0C-4678-9C25-D826036F99A8
 keywords:
-- Estructura de CD3DX12_ROOT_CONSTANTS
+- CD3DX12_ROOT_CONSTANTS estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7a1f81a429b083400adad60f316cc90c4ede1d9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8ece9dade9bd1e833657c26d84d426d04a63ebce786280b3d76f21e10bc07b3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118098478"
 ---
-# <a name="cd3dx12_root_constants-structure"></a>CD3DX12 \_ \_ estructura de constantes raíz
+# <a name="cd3dx12_root_constants-structure"></a>Estructura DE CONSTANTES \_ RAÍZ CD3DX12 \_
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ \_ constantes raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants) .
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ \_ CONSTANTS RAÍZ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,58 +45,58 @@ struct CD3DX12_ROOT_CONSTANTS  : public D3D12_ROOT_CONSTANTS{
 
 <dl> <dt>
 
-**\_Constantes raíz CD3DX12 \_ ()**
+**CD3DX12 \_ ROOT \_ CONSTANTS()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de una \_ constante raíz CD3DX12 \_ .
+Crea una nueva instancia sin inicializar de una CONSTANTE RAÍZ CD3DX12. \_ \_
 
 </dd> <dt>
 
-**constantes de raíz CD3DX12 explícitas \_ \_ (constantes de raíz const D3D12 \_ \_ &o)**
+**EXPLICIT CD3DX12 \_ ROOT \_ CONSTANTS(const D3D12 \_ ROOT \_ CONSTANTS &o)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ constante raíz CD3DX12 \_ , inicializada con el contenido de otra estructura [**de \_ \_ constantes raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants) .
+Crea una nueva instancia de CD3DX12 ROOT CONSTANTS, inicializada con el contenido de otra estructura \_ \_ [**D3D12 \_ ROOT \_ CONSTANTS.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants)
 
 </dd> <dt>
 
-**\_Constantes raíz CD3DX12 \_ (uint NUM32BITVALUES, uint SHADERREGISTER, uint registerSpace = 0)**
+**CD3DX12 \_ ROOT \_ CONSTANTS(UINT num32BitValues, sombreador UINTRegister, UINT registerSpace = 0)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ constante CD3DX12 raíz \_ , inicializando los parámetros siguientes:
+Crea una nueva instancia de CD3DX12 \_ ROOT \_ CONSTANTS, inicializando los parámetros siguientes:
 
 UINT num32BitValues
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> <dt>
 
-**Init en línea (UINT num32BitValues, UINT shaderRegister, UINT registerSpace = 0)**
+**inline Init(UINT num32BitValues, sombreador UINTRegister, UINT registerSpace = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
 UINT num32BitValues
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> <dt>
 
-**Init inline init (D3D12 \_ root \_ constants &ROOTCONSTANTS, uint NUM32BITVALUES, uint SHADERREGISTER, uint registerSpace = 0)**
+**static inline Init(D3D12 \_ ROOT \_ CONSTANTS &rootConstants, UINT num32BitValues, UINT shaderRegister, UINT registerSpace = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-[**D3D12 \_ \_Constantes raíz**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants) &rootConstants
+[**D3D12 \_ ROOT \_ CONSTANTS**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants) &rootConstants
 
 UINT num32BitValues
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> </dl>
 
@@ -106,7 +106,7 @@ rechace UINT registerSpace = 0
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ rechace UINT registerSpace = 0
 
 <dl> <dt>
 
-[**\_Constantes raíz \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants)
+[**CONSTANTES RAÍZ D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_constants)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

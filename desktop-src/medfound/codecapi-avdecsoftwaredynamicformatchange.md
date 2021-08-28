@@ -1,23 +1,23 @@
 ---
-description: Establece si se debe usar el cambio de formato dinámico de software para cambiar el tamaño interno.
+description: Establece si se debe usar el cambio de formato dinámico de software para el cambio de tamaño interno.
 ms.assetid: 09C8FB13-D08E-480A-AD77-B281553E3CAF
-title: Propiedad CODECAPI_AVDecSoftwareDynamicFormatChange (Codecapi. h)
+title: CODECAPI_AVDecSoftwareDynamicFormatChange propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4e1ce0499e361770344e30a02f30777555fed8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cce27a9932097d8899a4fba9716ccb09edbf6214affe5569cade5b9c5c1d1fc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118064983"
 ---
-# <a name="codecapi_avdecsoftwaredynamicformatchange-property"></a>\_Propiedad AVDecSoftwareDynamicFormatChange de CODECAPI
+# <a name="codecapi_avdecsoftwaredynamicformatchange-property"></a>Propiedad CODECAPI \_ AVDecSoftwareDynamicFormatChange
 
-Establece si se debe usar el cambio de formato dinámico de software para cambiar el tamaño interno.
+Establece si se debe usar el cambio de formato dinámico de software para el cambio de tamaño interno.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**BOOLEANO**
+**Bool**
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -25,17 +25,17 @@ Establece si se debe usar el cambio de formato dinámico de software para cambia
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si se establece en **true**, el cambio de formato dinámico de software se utiliza para cambiar el tamaño interno.
+Si se establece en **TRUE,** el cambio de formato dinámico de software se usa para el cambio de tamaño interno.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Si se establece en **true**, el cambio de formato dinámico de software se utili
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

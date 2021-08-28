@@ -1,9 +1,9 @@
 ---
-title: Propiedad ContextPopup. MiniToolbars
+title: Propiedad ContextPopup.MiniToolbars
 description: Representa un contenedor para los elementos MiniToolbar.
 ms.assetid: 5c17e070-0520-44e6-a066-476107691205
 keywords:
-- ContextPopup. MiniToolbars (propiedad) cinta de Windows
+- ContextPopup.MiniToolbars, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee1e85e6b170b4b7408a17687bd26725e9183161
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18f4a083d894f798d83bd153fe74b9fb0560e2fbdb8132ec7874db0a2e533824
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772135"
 ---
-# <a name="contextpopupminitoolbars-property"></a>Propiedad ContextPopup. MiniToolbars
+# <a name="contextpopupminitoolbars-property"></a>Propiedad ContextPopup.MiniToolbars
 
-Representa un contenedor para los elementos [**MiniToolbar**](windowsribbon-element-minitoolbar.md) .
+Representa un contenedor para [**los elementos MiniToolbar.**](windowsribbon-element-minitoolbar.md)
 
 ## <a name="usage"></a>Uso
 
@@ -55,19 +55,19 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**ContextPopup**](windowsribbon-element-contextpopup.md).
+Puede producirse como máximo una vez para [**cada ContextPopup**](windowsribbon-element-contextpopup.md).
 
-Dado que los controles de [**MiniToolbar**](windowsribbon-element-minitoolbar.md) no son accesibles desde el teclado, los comandos que exponen deben estar disponibles en cualquier parte de la interfaz de usuario de la cinta.
+Dado que los controles de [**MiniToolbar**](windowsribbon-element-minitoolbar.md) no son accesibles mediante el teclado, los comandos que exponen deben estar disponibles en otra parte de la interfaz de usuario de la cinta de opciones.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico de una vista [**ContextPopup**](windowsribbon-element-contextpopup.md) .
+En el ejemplo siguiente se muestra el marcado básico para una [**vista ContextPopup.**](windowsribbon-element-contextpopup.md)
 
-En esta sección de código se muestra la declaración de control **ContextPopup. MiniToolbars** .
+En esta sección de código se muestra la declaración de control **ContextPopup.MiniToolbars.**
 
 
 ```XML
@@ -160,8 +160,8 @@ En esta sección de código se muestra la declaración de control **ContextPopup
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -169,7 +169,7 @@ En esta sección de código se muestra la declaración de control **ContextPopup
 
 <dl> <dt>
 
-[Control popup de contexto](windowsribbon-controls-contextpopup.md)
+[Control Popup de contexto](windowsribbon-controls-contextpopup.md)
 </dt> </dl>
 
  

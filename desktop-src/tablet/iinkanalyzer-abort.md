@@ -1,7 +1,7 @@
 ---
 description: Cancela la operación de análisis actual.
 ms.assetid: 909bfa66-b6df-4730-95b7-809fc2170e85
-title: 'IInkAnalyzer:: ABORT (método) (IACom. h)'
+title: Método IInkAnalyzer::Abort (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: eac96809bfbe41e7d6a070782da3ffd0f6407c60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f52b2037210e39533d1247cb338bb22a7785f354dbca6b615c6ada67eff3bb5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773605"
 ---
-# <a name="iinkanalyzerabort-method"></a>IInkAnalyzer:: ABORT (método)
+# <a name="iinkanalyzerabort-method"></a>IInkAnalyzer::Abort (método)
 
 Cancela la operación de análisis actual.
 
@@ -39,40 +39,40 @@ HRESULT Abort(
 
 <dl> <dt>
 
-*ppAbortedRegion* \[ enuncia\]
+*ppAbortedRegion* \[ out\]
 </dt> <dd>
 
-Un puntero a un [**IAnalysisRegion**](ianalysisregion.md) que representa la región desfasada (vea [**IInkAnalyzer:: GetDirtyRegion Method**](iinkanalyzer-getdirtyregion.md)) de la operación de análisis actual.
+Puntero a una [**región IAnalysisRegion**](ianalysisregion.md) que representa la región desdumbre (vea [**IInkAnalyzer::GetDirtyRegion (método)**](iinkanalyzer-getdirtyregion.md)de la operación de análisis actual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppAbortedRegion* cuando ya no necesite usar el objeto.
+Llame [**a IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppAbortedRegion* cuando ya no necesite usar el objeto .
 
 Este método cancela la operación de análisis actual.
 
-Cuando *ppAbortedRegion* es **null**, este método realiza la anulación como normal, porque esto indica que el autor de la llamada no tiene ningún interés en el valor devuelto.
+Cuando *ppAbortedRegion* es **NULL,** este método realiza la anulación de la forma normal, ya que esto indica que el autor de la llamada no tiene interés en el valor devuelto.
 
-**IInkAnalyzer:: ABORT (método** ) silencia los eventos [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) y [**\_ IAnalysisEvents:: Activity**](-ianalysisevents-activity.md) para la operación de análisis actual.
+**El método IInkAnalyzer::Abort** silencia los eventos [**\_ IAnalysisEvents::Results**](-ianalysisevents-results.md) e [**\_ IAnalysisEvents::Activity**](-ianalysisevents-activity.md) para la operación de análisis actual.
 
-**IInkAnalyzer:: ABORT el método** se ejecuta de forma asincrónica hasta que se cancela la operación de análisis en segundo plano actual. Dado que el proceso de cancelación es asincrónico, la aplicación puede realizar otras tareas mientras se cancela el opertions de análisis actual.
+**El método IInkAnalyzer::Abort se** ejecuta de forma asincrónica hasta que se cancela la operación de análisis en segundo plano actual. Dado que el proceso de cancelación es asincrónico, la aplicación puede realizar otras tareas mientras se cancelan las operaciones de análisis actuales.
 
-Si no hay operaciones de análisis en curso, este método devuelve una región de análisis vacía.
+Si no hay ninguna operación de análisis en curso, este método devuelve una región de análisis vacía.
 
-Si una operación de análisis está en curso, este método cancela la operación.
+Si hay una operación de análisis en curso, este método cancela la operación.
 
 Si hay operaciones de análisis sincrónicas y asincrónicas en curso, este método cancela la operación sincrónica.
 
-Si se llama a este método más de una vez para la misma operación de análisis, la primera llamada devuelve la región desfasada de la operación y las llamadas subsiguientes devuelven una región vacía.
+Si se llama a este método más de una vez para la misma operación de análisis, la primera llamada devuelve la región desa prueba para la operación y las llamadas posteriores devuelven una región vacía.
 
-Si la aplicación mantiene su propia estructura de datos que está sincronizada con la del [**IInkAnalyzer**](iinkanalyzer.md), la llamada al **método IInkAnalyzer:: ABORT** puede dejar el documento con resultados parciales. Para evitar esto, no llame al **método IInkAnalyzer:: ABORT** entre el momento en que **IInkAnalyzer** recibe el evento [**\_ IAnalysisProxyEvents:: InkAnalyzerStateChanging**](-ianalysisproxyevents-inkanalyzerstatechanging.md) y la hora en que el **IInkAnalyzer** recibe el evento [**\_ IAnalysisEvents:: IntermediateResults**](-ianalysisevents-intermediateresults.md) o [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) .
+Si la aplicación mantiene su propia estructura de datos que está sincronizada con la de [**IInkAnalyzer,**](iinkanalyzer.md)llamar al método **IInkAnalyzer::Abort** puede dejar el documento con resultados parciales. Para evitarlo, no llame al método **IInkAnalyzer::Abort** entre el momento en que **IInkAnalyzer** recibe el evento [**\_ IAnalysisProxyEvents::InkAnalyzerStateChanging**](-ianalysisproxyevents-inkanalyzerstatechanging.md) y el momento en que **IInkAnalyzer** recibe el evento [**\_ IAnalysisEvents::IntermediateResults**](-ianalysisevents-intermediateresults.md) o [**\_ IAnalysisEvents::Results.**](-ianalysisevents-results.md)
 
-Para obtener más información acerca de cómo sincronizar los datos de aplicación con el analizador de tinta, consulte [Data proxy with Ink Analysis](data-proxy-with-ink-analysis.md).
+Para obtener más información sobre cómo sincronizar los datos de la aplicación con el analizador de entrada de lápiz, vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,9 +80,9 @@ Para obtener más información acerca de cómo sincronizar los datos de aplicaci
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -94,19 +94,19 @@ Para obtener más información acerca de cómo sincronizar los datos de aplicaci
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: Analyze (método)**](iinkanalyzer-analyze.md)
+[**IInkAnalyzer::Analyze (Método)**](iinkanalyzer-analyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: BackgroundAnalyze (método)**](iinkanalyzer-backgroundanalyze.md)
+[**IInkAnalyzer::BackgroundAnalyze (Método)**](iinkanalyzer-backgroundanalyze.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: GetDirtyRegion (método)**](iinkanalyzer-getdirtyregion.md)
+[**IInkAnalyzer::GetDirtyRegion (Método)**](iinkanalyzer-getdirtyregion.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: SetDirtyRegion (método)**](iinkanalyzer-setdirtyregion.md)
+[**IInkAnalyzer::SetDirtyRegion (Método)**](iinkanalyzer-setdirtyregion.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

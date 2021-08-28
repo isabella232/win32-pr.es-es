@@ -1,46 +1,46 @@
 ---
 title: LegacySecureReferences
-description: Determina si las invocaciones de AddRef/Release están protegidas para las aplicaciones que no llaman a CoInitializeSecurity.
+description: Determina si las invocaciones AddRef/Release están protegidas para las aplicaciones que no llaman a CoInitializeSecurity.
 ms.assetid: 955b599b-1858-475a-95c4-a55038a28e69
 keywords:
-- Valor del registro LegacySecureReferences COM
+- Valor del Registro COM de LegacySecureReferences
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2776bf3661013f1e622bbc2e1c553f2551c62808
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ef3a4ab964d73fa4b194c734f28c23ff068239370088c090051464129b6caf14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736552"
 ---
 # <a name="legacysecurereferences"></a>LegacySecureReferences
 
-Determina si  / las invocaciones de **liberación** de AddRef están protegidas para las aplicaciones que no llaman a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
+Determina si las **invocaciones addRef** Release están protegidas /  para las aplicaciones que no llaman [**a CoInitializeSecurity.**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
-   LegacySecureReferences = value
+   LegacySecureReferences = value
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este es un valor de **reg \_ SZ** . Un valor de ' Y ' o ' y ' indica que **AddRef** y **Release** están protegidos. Si este valor del registro no está presente o está establecido en un valor distinto de ' Y ' o ' y ', **AddRef** y **Release** no se protegen. Al habilitar las referencias seguras, se ralentizan las llamadas remotas.
+Se trata de **un valor \_ SZ reg.** Un valor de "Y" o "y" indica que **AddRef** **y Release están** protegidos. Si este valor del Registro no está presente o se establece en un valor distinto de "Y" o "y", **AddRef** y **Release** no están protegidos. La habilitación de referencias seguras ralentiza las llamadas remotas.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Registrar servidores COM](registering-com-servers.md)
+[Registro de servidores COM](registering-com-servers.md)
 </dt> <dt>
 
-[Establecer la seguridad de todo el proceso](setting-processwide-security.md)
+[Establecer la seguridad en todo el proceso](setting-processwide-security.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

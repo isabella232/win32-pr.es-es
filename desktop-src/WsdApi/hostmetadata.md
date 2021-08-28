@@ -4,12 +4,12 @@ ms.assetid: ca7bc5ea-8ab2-4233-86d2-5b793021b8ee
 title: hostMetadata, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9cf6fa139a2723ed90dfe281fc7b054016386fa
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f8f1ec89725255e59fe7c0ba504bc96ae1a0b7753e2df1a63a8bedb5d5bca27e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118106655"
 ---
 # <a name="hostmetadata-element"></a>hostMetadata, elemento
 

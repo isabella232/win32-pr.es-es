@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DRV_REMOVE (mmsystem. h)
-description: Notifica al controlador que está a punto de quitarse del sistema. Cuando un controlador recibe este mensaje, debe quitar todas las secciones creadas en el registro.
+title: DRV_REMOVE mensaje (Mmsystem.h)
+description: Notifica al controlador que está a punto de quitarse del sistema. Cuando un controlador recibe este mensaje, debe quitar las secciones que creó en el Registro.
 ms.assetid: e4f6ce7c-29e5-4256-b08a-13571256207c
 keywords:
-- Mensaje de DRV_REMOVE de Windows multimedia
+- DRV_REMOVE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccfc94d648f83e618a20323ed7bbe3694616bc06
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c08302d69e934ec77908b247f3c8f6368de8de4eab36809b6102b74858adde5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496425"
 ---
-# <a name="drv_remove-message"></a>DRV \_ quitar mensaje
+# <a name="drv_remove-message"></a>Mensaje REMOVE de DRV \_
 
-Notifica al controlador que está a punto de quitarse del sistema. Cuando un controlador recibe este mensaje, debe quitar todas las secciones creadas en el registro.
+Notifica al controlador que está a punto de quitarse del sistema. Cuando un controlador recibe este mensaje, debe quitar las secciones que creó en el Registro.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Notifica al controlador que está a punto de quitarse del sistema. Cuando un con
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificador del controlador instalable. Este es el mismo valor que el controlador devolvió previamente desde el mensaje [**\_ abierto DRV**](drv-open.md) .
+Identificador del controlador instalable. Este es el mismo valor devuelto anteriormente por el controlador del [**mensaje DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
@@ -47,9 +47,9 @@ Identificador de la instancia del controlador instalable.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se usan los parámetros *lParam1* y *lParam2* .
+No se usan los parámetros *lParam1* y *lParam2.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ No se usan los parámetros *lParam1* y *lParam2* .
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

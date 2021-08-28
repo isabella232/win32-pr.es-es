@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. itemMedia
-description: El atributo itemMedia recupera el objeto multimedia correspondiente al índice especificado en el elemento de lista de reproducción.
+title: PLAYLIST.itemMedia
+description: El atributo itemMedia recupera el objeto Media correspondiente al índice especificado en el elemento PLAYLIST.
 ms.assetid: 38085798-7986-432f-8c88-de886bfc2ac5
 keywords:
-- Windows Media Player de lista de reproducción. itemMedia
+- PLAYLIST.itemMedia Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 269e9011ade69ee61d99c29c1fa5bd1b9fa3deeb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52b3061ef83ec246878d51528e88a12b4f10dcb3085f584a2266dc64a163b866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117746880"
 ---
-# <a name="playlistitemmedia"></a>Lista de reproducción. itemMedia
+# <a name="playlistitemmedia"></a>PLAYLIST.itemMedia
 
-El atributo **itemMedia** recupera el objeto **multimedia** correspondiente al índice especificado en el elemento de **lista de reproducción** .
+El **atributo itemMedia** recupera el objeto **Media** correspondiente al índice especificado en el elemento **PLAYLIST.**
 
 ``` syntax
         elementID.itemMedia(index)
@@ -29,22 +29,22 @@ El atributo **itemMedia** recupera el objeto **multimedia** correspondiente al �
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un objeto **multimedia** de solo lectura.
+Este atributo es un objeto **Multimedia de solo** lectura.
 
 ## <a name="parameters"></a>Parámetros
 
 <dl> <dt>
 
-<span id="index"></span><span id="INDEX"></span>*ajustar*
+<span id="index"></span><span id="INDEX"></span>*Índice*
 </dt> <dd>
 
-**Número**(**largo**) que contiene el índice de un elemento de lista de reproducción.
+**Number**(**long**) que contiene el índice de un elemento de lista de reproducción.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La propiedad **itemMedia** devolverá los objetos multimedia que se expanden en el elemento de **lista de reproducción** . Por ejemplo, si hay una lista de reproducción que contiene tres clips multimedia que no se expanden en el elemento de **lista de reproducción** , **itemMedia**(0) devolverá la lista de reproducción como el objeto multimedia. Si se expande la lista de reproducción, **itemMedia**(0) devolverá el primer clip multimedia en la lista de reproducción.
+La **propiedad itemMedia** devolverá objetos multimedia que se expanden en el elemento **PLAYLIST.** Por ejemplo, si hay una lista de reproducción que contiene tres clips multimedia que no se expanden en el elemento **PLAYLIST,** **itemMedia**(0) devolverá la lista de reproducción como el objeto multimedia. Si la lista de reproducción está expandida, **itemMedia**(0) devolverá el primer clip multimedia de la lista de reproducción.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ La propiedad **itemMedia** devolverá los objetos multimedia que se expanden en 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -63,7 +63,7 @@ La propiedad **itemMedia** devolverá los objetos multimedia que se expanden en 
 [**Objeto multimedia**](media-object.md)
 </dt> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

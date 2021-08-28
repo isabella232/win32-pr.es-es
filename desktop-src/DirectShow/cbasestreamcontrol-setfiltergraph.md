@@ -1,7 +1,7 @@
 ---
 description: El método SetFilterGraph especifica el receptor de eventos para los eventos de control de flujo.
 ms.assetid: a4c3dca6-6c80-4eca-87d6-875e746e9ed3
-title: Método CBaseStreamControl. SetFilterGraph (Strmctl. h)
+title: Método CBaseStreamControl.SetFilterGraph (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1cf8b571ee5d017acd056e00a06af54cd90b943a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 304ec081ce7087d822ce3382bf4784c05cbc8782fadb3cdfee887f6bd8f0acfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502645"
 ---
-# <a name="cbasestreamcontrolsetfiltergraph-method"></a>CBaseStreamControl. SetFilterGraph, método
+# <a name="cbasestreamcontrolsetfiltergraph-method"></a>Método CBaseStreamControl.SetFilterGraph
 
 El `SetFilterGraph` método especifica el receptor de eventos para los eventos de control de flujo.
 
@@ -45,7 +45,7 @@ void SetFilterGraph(
 *pSink* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) del administrador de gráficos de filtro, o **null** cuando el filtro deja el gráfico de filtro.
+Puntero a la interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) del Administrador de gráficos de filtros o **NULL** cuando el filtro sale del gráfico de filtros.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Puntero a la interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmi
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a este método desde dentro del método [**IBaseFilter:: JoinFilterGraph**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph) del filtro. La clase **CBaseStreamControl** usa la interfaz **IMediaEventSink** para enviar eventos de detención de control de [**flujo de EC \_ \_ \_ iniciado**](ec-stream-control-started.md) y de [**\_ \_ control \_ de flujo de EC**](ec-stream-control-stopped.md) .
+Llame a este método desde dentro del método [**IBaseFilter::JoinFilterGraph del**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-joinfiltergraph) filtro. La **clase CBaseStreamControl usa** la interfaz **IMediaEventSink** para enviar eventos [**EC STREAM CONTROL \_ \_ \_ STARTED**](ec-stream-control-started.md) y [**EC STREAM CONTROL \_ \_ \_ STOPPED.**](ec-stream-control-stopped.md)
 
-Si el filtro se deriva de **CBaseFilter**, llame primero al método [**CBaseFilter:: JoinFilterGraph**](cbasefilter-joinfiltergraph.md) , que establece la variable miembro [**CBaseFilter:: m \_ pSink**](cbasefilter-m-psink.md) . Después, pase **m \_ pSink** al `SetFilterGraph` método. Tenga en cuenta que **m \_ PSink** es **null** cuando el filtro sale del gráfico, que es correcto.
+Si el filtro deriva de **CBaseFilter,** llame primero al método [**CBaseFilter::JoinFilterGraph,**](cbasefilter-joinfiltergraph.md) que establece la variable miembro [**CBaseFilter::m \_ pSink.**](cbasefilter-m-psink.md) A continuación, **\_ pase m pSink** al `SetFilterGraph` método . Tenga en **cuenta que m \_ pSink** es **NULL** cuando el filtro sale del gráfico, lo que es correcto.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -84,8 +84,8 @@ STDMETHODIMP CMyFilter::JoinFilterGraph(IFilterGraph * pGraph, LPCWSTR pName)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Strmctl. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ STDMETHODIMP CMyFilter::JoinFilterGraph(IFilterGraph * pGraph, LPCWSTR pName)
 
 <dl> <dt>
 
-[**Clase CBaseStreamControl**](cbasestreamcontrol.md)
+[**CBaseStreamControl (clase)**](cbasestreamcontrol.md)
 </dt> </dl>
 
  

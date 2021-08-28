@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_CAN_EJECT (VFW. h)
-description: El \_ mensaje MCIWNDM puede \_ expulsar determina si un dispositivo MCI puede expulsar el contenido multimedia. Puede enviar este mensaje explícitamente o mediante la macro MCIWndCanEject.
+title: MCIWNDM_CAN_EJECT mensaje (Vfw.h)
+description: El mensaje MCIWNDM \_ CAN EJECT determina si un dispositivo \_ MCI puede expulsar sus medios. Puede enviar este mensaje explícitamente o mediante la macro MCIWndCanEject.
 ms.assetid: e9bd33c4-0ad8-4c0a-8b75-52011b58904d
 keywords:
-- Mensaje de MCIWNDM_CAN_EJECT de Windows multimedia
+- MCIWNDM_CAN_EJECT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00ba54c9263e23fdd9830be892e4559ae3755c07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fde4c9fec3972fe0e22b0a562454e1ef680e9ccae3851c272d28468fc2c91f74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429675"
 ---
-# <a name="mciwndm_can_eject-message"></a>MCIWNDM \_ puede \_ expulsar el mensaje
+# <a name="mciwndm_can_eject-message"></a>Mensaje MCIWNDM \_ CAN \_ EJECT
 
-El mensaje **MCIWNDM \_ puede \_ expulsar** determina si un dispositivo MCI puede expulsar el contenido multimedia. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndCanEject**](/windows/desktop/api/Vfw/nf-vfw-mciwndcaneject) .
+El **mensaje MCIWNDM \_ CAN \_ EJECT** determina si un dispositivo MCI puede expulsar sus medios. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndCanEject.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcaneject)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el dispositivo puede expulsar su medio o **false** en caso contrario.
+Devuelve **TRUE** si el dispositivo puede expulsar sus medios o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Devuelve **true** si el dispositivo puede expulsar su medio o **false** en caso 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

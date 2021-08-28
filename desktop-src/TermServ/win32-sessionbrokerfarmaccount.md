@@ -1,11 +1,11 @@
 ---
-title: Win32_SessionBrokerFarmAccount (clase)
-description: La \_ clase Win32 SessionBrokerFarmAccount ya no está disponible para su uso a partir de Windows Server 2012. | Win32_SessionBrokerFarmAccount (clase)
+title: Win32_SessionBrokerFarmAccount clase
+description: La clase SessionBrokerFarmAccount de Win32 ya no está disponible para su uso \_ a Windows Server 2012. | Win32_SessionBrokerFarmAccount clase
 ms.assetid: a76ade0f-cd94-438c-bc07-30dc4b4ee6c8
 ms.tgt_platform: multiple
 keywords:
 - Win32_SessionBrokerFarmAccount clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_SessionBrokerFarmAccount de clase, se describe
+- Win32_SessionBrokerFarmAccount clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a31f076ddc6f9361be12a57dc60ada24ed75e4bb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b8b7d55f973dc19c03182a4199b64f91f9de5a0774cc8c8f9d77d67eeb715c24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422495"
 ---
-# <a name="win32_sessionbrokerfarmaccount-class"></a>\_Clase Win32 SessionBrokerFarmAccount
+# <a name="win32_sessionbrokerfarmaccount-class"></a>Clase \_ SessionBrokerFarmAccount de Win32
 
-\[La clase **Win32 \_ SessionBrokerFarmAccount** ya no está disponible para su uso a partir de Windows Server 2012.\]
+\[La **clase \_ SessionBrokerFarmAccount de Win32** ya no está disponible para su uso a Windows Server 2012.\]
 
-Define una cuenta de granja de agentes de sesiones.
+Define una cuenta de granja de agentes de sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -65,13 +65,13 @@ La **clase \_ SessionBrokerFarmAccount de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ SessionBrokerFarmAccount** tiene estos métodos.
+La **clase \_ SessionBrokerFarmAccount de Win32** tiene estos métodos.
 
 
 
 | Método                                                      | Descripción                          |
 |:------------------------------------------------------------|:-------------------------------------|
-| [**DeleteEx**](deleteex-win32-sessionbrokerfarmaccount.md) | Elimina la cuenta de la granja.<br/> |
+| [**DeleteEx**](deleteex-win32-sessionbrokerfarmaccount.md) | Elimina la cuenta de granja.<br/> |
 
 
 
@@ -89,10 +89,10 @@ La **clase \_ SessionBrokerFarmAccount de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Nombre del dominio al que pertenece la cuenta de la granja de servidores.
+Nombre del dominio al que pertenece la cuenta de granja.
 
 </dd> <dt>
 
@@ -102,10 +102,10 @@ Nombre del dominio al que pertenece la cuenta de la granja de servidores.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-El nombre de la cuenta de la granja.
+Nombre de la cuenta de granja.
 
 </dd> <dt>
 
@@ -115,10 +115,10 @@ El nombre de la cuenta de la granja.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La contraseña de la cuenta de la granja.
+Contraseña de la cuenta de granja.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Primer nombre de entidad de seguridad de servicio (SPN) asociado a la cuenta de la granja.
+El primer nombre de entidad de seguridad de servicio (SPN) asociado a la cuenta de granja.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El segundo SPN asociado a la cuenta de la granja.
+Segundo SPN asociado a la cuenta de granja.
 
 </dd> <dt>
 
@@ -154,10 +154,10 @@ El segundo SPN asociado a la cuenta de la granja.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Nombre DNS del equipo asociado a la cuenta de la granja.
+Nombre DNS del equipo asociado a la cuenta de granja.
 
 </dd> <dt>
 
@@ -170,10 +170,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El nombre de la granja de agentes de sesiones.
+Nombre de la granja de agentes de sesión.
 
 </dd> <dt>
 
@@ -183,10 +183,10 @@ El nombre de la granja de agentes de sesiones.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si la contraseña de la cuenta se ha actualizado manualmente.
+Indica si la contraseña de la cuenta se actualiza manualmente.
 
 </dd> </dl>
 
@@ -200,8 +200,8 @@ Indica si la contraseña de la cuenta se ha actualizado manualmente.
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
 | Fin de compatibilidad de cliente<br/>    | No se admite ninguno<br/>                                                              |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2008 R2<br/>                                                      |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

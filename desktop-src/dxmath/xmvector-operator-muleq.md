@@ -11,14 +11,14 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 69937ab8625e4abbde835929391b1f5e8ee6ccbc2143543a8d8e25760df8d254
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13280fd5da109012ac90ff55a778f8f5cd6a5b95
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117855"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627749"
 ---
-# <a name="operator--operators"></a>operator \* = operadores
+# <a name="operator--operators"></a>operador \* = operadores
 
 Operadores de asignación de multiplicación
 
@@ -28,19 +28,19 @@ Operadores de asignación de multiplicación
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operador</th>
-<th style="text-align: left;">Descripción</th>
+<th >Operador</th>
+<th >Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ff729806(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,float)</strong></a></td>
-<td style="text-align: left;">Multiplica una instancia <code>XMVECTOR</code> por un valor de punto flotante y devuelve una referencia a la instancia actualizada. <br/> multiplica cada componente de la instancia actual del tipo de datos XMVECTOR por un valor de punto flotante especificado y devuelve una referencia <code>operator *=</code> a la instancia actual actualizada. <a href="xmvector-data-type.md"><strong></strong></a> <br/>
+<td ><a href="/previous-versions/windows/desktop/legacy/ff729806(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,float)</strong></a></td>
+<td >Multiplica una instancia <code>XMVECTOR</code> por un valor de punto flotante y devuelve una referencia a la instancia actualizada. <br/> multiplica cada componente de la instancia actual del tipo de datos XMVECTOR por un valor de punto flotante especificado y devuelve una referencia <code>operator *=</code> a la instancia actual actualizada. <a href="xmvector-data-type.md"><strong></strong></a> <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.
@@ -48,8 +48,8 @@ Este operador solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421388(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Multiplica una instancia por una segunda instancia <code>XMVECTOR</code> y devuelve una referencia a la instancia inicial actualizada. <br/> multiplica cada componente de la instancia actual del tipo de datos XMVECTOR por el componente correspondiente en una segunda instancia especificada de , devolviendo una referencia a la instancia <code>operator *=</code> inicial <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> actualizada. <br/>
+<td ><a href="/previous-versions/windows/desktop/legacy/ee421388(v=vs.85)"><strong>XMVECTOR::operator *= (XMVECTOR&,XMVECTOR)</strong></a></td>
+<td >Multiplica una instancia por una segunda instancia <code>XMVECTOR</code> y devuelve una referencia a la instancia inicial actualizada. <br/> multiplica cada componente de la instancia actual del tipo de datos XMVECTOR por el componente correspondiente en una segunda instancia especificada de , devolviendo una referencia a la instancia <code>operator *=</code> inicial <a href="xmvector-data-type.md"><strong></strong></a> <code>XMVECTOR</code> actualizada. <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.
@@ -61,7 +61,7 @@ Este operador solo está disponible en C++.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: Determina si un rayo forma una intersección con una malla.
 ms.assetid: 325f5b40-80ba-4400-a143-bae41146ab07
-title: Función D3DXIntersect (D3DX9Mesh. h)
+title: Función D3DXIntersect (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc877fb1301e01b05184625ba2e92a2c680cfa9f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a90f96a3689e86c4e7d0cee28e9d1138f64d89fde78ab7f7392edd445ccf817b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096023"
 ---
-# <a name="d3dxintersect-function"></a>D3DXIntersect función)
+# <a name="d3dxintersect-function"></a>Función D3DXIntersect
 
 Determina si un rayo forma una intersección con una malla.
 
@@ -49,93 +49,93 @@ HRESULT D3DXIntersect(
 
 <dl> <dt>
 
-*pmesh* \[ de\]
+*pMesh* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBASEMESH**](id3dxbasemesh.md)**
 
-Puntero a una interfaz [**ID3DXBaseMesh**](id3dxbasemesh.md) que representa la malla que se va a probar.
+Puntero a una [**interfaz ID3DXBaseMesh,**](id3dxbasemesh.md) que representa la malla que se va a probar.
 
 </dd> <dt>
 
-*pRayPos* \[ de\]
+*pRayPos* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que especifica el punto en el que comienza el rayo.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) especificando el punto donde comienza el rayo.
 
 </dd> <dt>
 
-*pRayDir* \[ de\]
+*pRayDir* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) , que especifica la dirección del rayo.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) especificando la dirección del rayo.
 
 </dd> <dt>
 
-*pHit* \[ enuncia\]
+*pHit* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)\***
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)\***
 
-Puntero a un BOOLEANO. Si el rayo cruza una esfera triangular en la malla, este valor se establecerá en **true**. De lo contrario, este valor se establece en **false**.
+Puntero a un bool. Si el rayo forma una intersección con una cara triangular en la malla, este valor se establecerá en **TRUE.** De lo contrario, este valor se establece en **FALSE.**
 
 </dd> <dt>
 
-*pFaceIndex* \[ enuncia\]
+*pFaceIndex* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero a un valor de índice de la superficie más cercana al origen del rayo, si pHit es **true**.
+Puntero a un valor de índice de la cara más cercana al origen del rayo, si pHit es **TRUE.**
 
 </dd> <dt>
 
-*PU* \[ enuncia\]
+*pU* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a una coordenada de posicionamiento de Barycentric, U.
+Puntero a una coordenada de posición centrada en barras, U.
 
 </dd> <dt>
 
-*PV* \[ enuncia\]
+*pV* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a una coordenada de posicionamiento de Barycentric, V.
+Puntero a una coordenada de posición centrada en barras, V.
 
 </dd> <dt>
 
-*pDist* \[ enuncia\]
+*pDist* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a una distancia del parámetro de intersección de rayo.
+Puntero a una distancia de parámetro de intersección de rayo.
 
 </dd> <dt>
 
-*ppAllHits* \[ enuncia\]
+*ppAllHits* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntero a un objeto [**ID3DXBuffer**](id3dxbuffer.md) que contiene una matriz de estructuras [**D3DXINTERSECTINFO**](d3dxintersectinfo.md) .
+Puntero a un [**objeto ID3DXBuffer,**](id3dxbuffer.md) que contiene una matriz de estructuras [**D3DXINTERSECTINFO.**](d3dxintersectinfo.md)
 
 </dd> <dt>
 
-*pCountOfHits* \[ enuncia\]
+*pCountOfHits* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero a un valor DWORD que contiene el número de entradas de la matriz ppAllHits.
+Puntero a un DWORD que contiene el número de entradas de la matriz ppAllHits.
 
 </dd> </dl>
 
@@ -143,17 +143,17 @@ Puntero a un valor DWORD que contiene el número de entradas de la matriz ppAllH
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser: E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser: E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **D3DXIntersect** proporciona una manera de comprender los puntos en y alrededor de un triángulo, independientemente de dónde se encuentre realmente el triángulo. Esta función devuelve el punto resultante mediante la siguiente ecuación: v1 + U (V2-V1) + V (V3-V1).
+La **función D3DXIntersect** proporciona una manera de comprender los puntos dentro y alrededor de un triángulo, independientemente de dónde se encuentra realmente el triángulo. Esta función devuelve el punto resultante mediante la siguiente ecuación: V1 + U(V2 - V1) + V(V3 - V1).
 
-Cualquier punto del V1V2V3 de plano se puede representar mediante la coordenada Barycentric (U, V). El parámetro U controla la cantidad de v2 que se pondera en el resultado, y el parámetro V controla la cantidad de V3 que se pondera en el resultado. Por último, el valor de \[ 1-(U + V) \] controla la cantidad de V1 que se pondera en el resultado.
+Cualquier punto del plano V1V2V3 se puede representar mediante la coordenada centrada en barras (U,V). El parámetro U controla la cantidad de V2 que se pondera en el resultado y el parámetro V controla la cantidad de V3 que se pondera en el resultado. Por último, el valor de 1 - (U + V) controla la cantidad de V1 que se \[ pondera en el \] resultado.
 
-Las coordenadas de Barycentric son una forma de coordenadas generales. En este contexto, el uso de coordenadas Barycentric representa un cambio en los sistemas de coordenadas. Lo que sucede para las coordenadas cartesianas es true para las coordenadas Barycentric.
+Las coordenadas centradas en barras son una forma de coordenadas generales. En este contexto, el uso de coordenadas centradas en barras representa un cambio en los sistemas de coordenadas. Lo que es cierto para las coordenadas cartesianas es true para las coordenadas barídricas.
 
-Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas de Barycentric, consulte Descripción de las [coordenadas del Barycentric de Wolfram](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -161,8 +161,8 @@ Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

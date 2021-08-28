@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection2 getStringCollectionByQuery, método
-description: El método getStringCollectionByQuery devuelve una interfaz IWMPStringCollection que proporciona acceso al conjunto de todos los valores de cadena para un atributo especificado que coincide con las condiciones de la consulta.
+title: IWMPMediaCollection2 getStringCollectionByQuery (método)
+description: El método getStringCollectionByQuery devuelve una interfaz IWMPStringCollection que proporciona acceso al conjunto de todos los valores de cadena para un atributo especificado que coincide con las condiciones de consulta.
 ms.assetid: 2d3b29af-0b6c-4405-8334-9a47a30ff6de
 keywords:
-- método getStringCollectionByQuery de Windows Media Player
-- método getStringCollectionByQuery Windows Media Player, interfaz IWMPMediaCollection2
-- Interfaz IWMPMediaCollection2 Windows Media Player, método getStringCollectionByQuery
+- Método getStringCollectionByQuery Reproductor de Windows Media
+- Método getStringCollectionByQuery Reproductor de Windows Media , interfaz IWMPMediaCollection2
+- Interfaz IWMPMediaCollection2 Reproductor de Windows Media método , getStringCollectionByQuery
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 322781bc9ddec3e6f8d74d7229f16ce38e519f05
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 054dd5b76cb6dcf3e6cb29ba624cd1f5c0f281d69c4b2b5e5125f5de9b4e7b04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117745973"
 ---
-# <a name="iwmpmediacollection2getstringcollectionbyquery-method"></a>IWMPMediaCollection2:: getStringCollectionByQuery (método)
+# <a name="iwmpmediacollection2getstringcollectionbyquery-method"></a>IWMPMediaCollection2::getStringCollectionByQuery (método)
 
-El `getStringCollectionByQuery` método devuelve una interfaz **IWMPStringCollection** que proporciona acceso al conjunto de todos los valores de cadena para un atributo especificado que coincide con las condiciones de la consulta.
+El `getStringCollectionByQuery` método devuelve una interfaz **IWMPStringCollection** que proporciona acceso al conjunto de todos los valores de cadena para un atributo especificado que coincide con las condiciones de consulta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,50 +61,50 @@ Implements IWMPMediaCollection2.getStringCollectionByQuery
 
 <dl> <dt>
 
-*bstrAttribute* \[ de\]
+*bstrAttribute* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del atributo.
+**System.String que** es el nombre del atributo.
 
 </dd> <dt>
 
-*pQuery* \[ de\]
+*pQuery* \[ En\]
 </dt> <dd>
 
-La interfaz **WMPLib. IWMPQuery** que es la consulta que define las condiciones que se usan para recuperar la colección de cadenas.
+Interfaz **WMPLib.IWMPQuery** que es la consulta que define las condiciones usadas para recuperar la colección de cadenas.
 
 </dd> <dt>
 
-*bstrMediaType* \[ de\]
+*bstrMediaType* \[ En\]
 </dt> <dd>
 
-**System. String** que es el tipo de medio. Debe contener uno de los siguientes valores: "audio", "vídeo", "foto", "lista de reproducción" u "otro".
+**System.String que** es el tipo de medio. Debe contener uno de los siguientes valores: "audio", "vídeo", "foto", "lista de reproducción" u "otro".
 
 </dd> <dt>
 
-*bstrSortAttribute* \[ de\]
+*bstrSortAttribute* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del atributo utilizado para la ordenación. Una cadena de longitud cero ("") significa que no se aplica ninguna ordenación.
+**System.String que** es el nombre de atributo utilizado para la ordenación. Una cadena de longitud cero ("") significa que no se aplica ninguna ordenación.
 
 </dd> <dt>
 
-*fSortAscending* \[ de\]
+*fSortAscending* \[ En\]
 </dt> <dd>
 
-El valor **System. Boolean** que indica si el conjunto de valores de cadena se debe ordenar en orden ascendente.
+Valor **System.Boolean** que indica si el conjunto de valores de cadena debe ordenarse en orden ascendente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz **WMPLib. IWMPStringCollection** para el conjunto recuperado de valores de cadena.
+Interfaz **WMPLib.IWMPStringCollection** para el conjunto recuperado de valores de cadena.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las consultas compuestas que usan **IWMPQuery** no distinguen mayúsculas de minúsculas.
+Las consultas compuestas **que usan IWMPQuery** no distinguen mayúsculas de minúsculas.
 
-Cuando la consulta compuesta especificada por el parámetro *pQuery* contiene una condición generada en el atributo **mediatype** , se omite esa condición. Siempre se usa el valor del parámetro *bstrMediaType* . Por ejemplo, si la consulta compuesta contiene la condición "MediaType Equals audio" y el valor del parámetro *bstrMediaType* es "video", la lista de reproducción resultante solo contendrá elementos de vídeo.
+Cuando la consulta compuesta especificada por el *parámetro pQuery* contiene una condición creada en el **atributo MediaType,** esa condición se omite. Siempre se usa el valor del *parámetro bstrMediaType.* Por ejemplo, si la consulta compuesta contiene la condición "MediaType Equals audio" y el valor del parámetro *bstrMediaType* es "video", la lista de reproducción resultante solo contendrá elementos de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,7 +112,7 @@ Cuando la consulta compuesta especificada por el parámetro *pQuery* contiene un
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -131,7 +131,7 @@ Cuando la consulta compuesta especificada por el parámetro *pQuery* contiene un
 [**Interfaz IWMPStringCollection (VB y C#)**](iwmpstringcollection--vb-and-c.md)
 </dt> <dt>
 
-[**MediaType (atributo)**](mediatype-attribute.md)
+[**Atributo MediaType**](mediatype-attribute.md)
 </dt> </dl>
 
  

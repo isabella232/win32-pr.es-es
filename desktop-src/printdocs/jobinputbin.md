@@ -4,28 +4,28 @@ ms.assetid: 9192ceb1-90c4-480e-9247-68d457976f42
 title: JobInputBin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 929df4cb4871e5a8d2ebacfe533b5da3ad9babf3
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cf0226979ed714380a85bb803cfcfba6703e2ba74770dc4ac725aae4408ed208
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112465"
 ---
 # <a name="jobinputbin"></a>JobInputBin
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la ubicación de entrada instalada en un dispositivo o la lista completa de ubicaciones admitidas para un dispositivo. Permite la especificación de la ubicación de entrada por trabajo. Las palabras clave JobInputBin, DocumentInputBin y PageInputBin son mutuamente excluyentes. Ambos no se deben especificar simultáneamente en un documento PrintTicket o Capacidades de impresión.
+Describe la ubicación de entrada instalada en un dispositivo o la lista completa de ubicaciones admitidas para un dispositivo. Permite la especificación de la ubicación de entrada por trabajo. Las palabras clave JobInputBin, DocumentInputBin y PageInputBin son mutuamente excluyentes. Ambos no deben especificarse simultáneamente en un documento PrintTicket o Capacidades de impresión.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
+-   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Característica<br/> |
 | Prefijo de ámbito <br/> | Trabajo<br/>     |
@@ -95,12 +95,12 @@ En la tabla siguiente se describen las características de las variables definid
 | \_IdentityOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>        |
 | \_EnvelopeOptionValue\_<br/>     | string<br/>  | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/>        |
 | \_BinTypeValue\_<br/>            | string<br/>  | N/D<br/>        | ContinuousFeed, SheetFeed.<br/>                                                                                                                                                 | Especifica el tipo de la ubicación.<br/>                                           |
-| \_FeedTypeValue\_<br/>           | string<br/>  | N/D<br/>        | Automático, Manual.<br/>                                                                                                                                                         | Especifica el mecanismo de fuente de la ubicación.<br/>                                 |
+| \_FeedTypeValue\_<br/>           | string<br/>  | N/D<br/>        | Automático, Manual.<br/>                                                                                                                                                         | Especifica el mecanismo de fuente del contenedor.<br/>                                 |
 | \_MediaCapacityValue\_<br/>      | string<br/>  | N/D<br/>        | Alto, Estándar.<br/>                                                                                                                                                            | Especifica si el cubo es un cubo de alta capacidad (cualitativo).<br/>          |
 | \_MediaSizeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática del tamaño del medio del dispositivo.<br/>                |
 | \_MediaTypeAutoSenseValue\_<br/> | string<br/>  | N/D<br/>        | Compatible, Ninguno.<br/>                                                                                                                                                           | Especifica la funcionalidad de detección automática del tipo de medio del dispositivo.<br/>                |
 | \_MediaSheetCapacityValue\_<br/> | integer<br/> | Hojas<br/>     | Restricción de entero máxima permitida por el dispositivo.<br/>                                                                                                                              | Especifica la capacidad multimedia en número de páginas (nivel completo) de la ubicación.<br/> |
-| \_MediaPathValue\_<br/>          | string<br/>  | N/D<br/>        | Recta, Tieneine.<br/>                                                                                                                                                      | Especifica las características de la ruta de acceso multimedia.<br/>                         |
+| \_MediaPathValue\_<br/>          | string<br/>  | N/D<br/>        | Recta, Defina.<br/>                                                                                                                                                      | Especifica las características de la ruta de acceso multimedia.<br/>                         |
 | \_FeedFaceValue\_<br/>           | string<br/>  | N/D<br/>        | FaceUp, FaceDown<br/>                                                                                                                                                           | Especifica si los medios se imprimirán de cara hacia arriba o hacia abajo.<br/>           |
 | \_FeedDirectionValue\_<br/>      | string<br/>  | N/D<br/>        | LongEdgeFirst, ShortEdgeFirst<br/>                                                                                                                                              | Especifica si los medios se alimentan primero con un borde largo o con un borde corto.<br/>      |
 
@@ -108,7 +108,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
+## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 

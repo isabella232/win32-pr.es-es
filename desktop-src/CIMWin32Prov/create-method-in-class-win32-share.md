@@ -1,8 +1,8 @@
 ---
-description: Inicia el uso compartido para un recurso de servidor.
+description: Inicia el uso compartido de un recurso de servidor.
 ms.assetid: 36530e1b-9109-4a6c-bba9-d9358101f5e2
 ms.tgt_platform: multiple
-title: Método Create de la clase Win32_Share
+title: Método Create de la Win32_Share clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d7a74838d9f6c532d3433240a5b8a70846b63776
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 582e255223b6eb971fd447c7884ff730662a1b344c107791b1a57a074c2c1354
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504775"
 ---
-# <a name="create-method-of-the-win32_share-class"></a>Método Create de la \_ clase de recurso compartido Win32
+# <a name="create-method-of-the-win32_share-class"></a>Método Create de la clase Win32 \_ Share
 
-El método **crear**   [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) inicia el uso compartido para un recurso de servidor.
+El **método Crear** clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) inicia el uso compartido de un recurso de servidor.   
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,28 +48,28 @@ uint32 Create(
 
 <dl> <dt>
 
-*Ruta de acceso* \[ de\]
+*Ruta de acceso* \[ En\]
 </dt> <dd>
 
-Ruta de acceso local del recurso compartido de Windows.
+Ruta de acceso local del recurso Windows compartido.
 
-Ejemplo, "C: \\ archivos de programa".
+Ejemplo, "C: \\ Archivos de programa".
 
 </dd> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
-Pasa el alias a una ruta de acceso configurada como un recurso compartido en un equipo con Windows.
+Pasa el alias a una ruta de acceso configurada como recurso compartido en un sistema informático que ejecuta Windows.
 
-Ejemplo, "Public".
+Ejemplo, "public".
 
 </dd> <dt>
 
-*Tipo* \[ de de\]
+*Tipo* \[ En\]
 </dt> <dd>
 
-Pasa el tipo de recurso que se comparte. Entre los tipos se incluyen las unidades de disco, las colas de impresión, las comunicaciones entre procesos (IPC) y los dispositivos generales. Puede ser uno de los valores siguientes.
+Pasa el tipo de recurso que se comparte. Los tipos incluyen unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales. Puede ser uno de los siguientes valores.
 
 <dt>
 
@@ -103,14 +103,14 @@ Pasa el tipo de recurso que se comparte. Entre los tipos se incluyen las unidade
 
 <span id="Disk_Drive_Admin"></span><span id="disk_drive_admin"></span><span id="DISK_DRIVE_ADMIN"></span>
 
-**Administrador de unidad de disco** (2147483648)
+**Administrador de unidad de** disco (2147483648)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Print_Queue_Admin"></span><span id="print_queue_admin"></span><span id="PRINT_QUEUE_ADMIN"></span>
 
-**Administrador** de la cola de impresión (2147483649)
+**Administrador de cola de** impresión (2147483649)
 
 
 </dt> <dd></dd> <dt>
@@ -124,44 +124,44 @@ Pasa el tipo de recurso que se comparte. Entre los tipos se incluyen las unidade
 
 <span id="IPC_Admin"></span><span id="ipc_admin"></span><span id="IPC_ADMIN"></span>
 
-**Administración de IPC** (2147483651)
+**Administrador de IPC** (2147483651)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*MaximumAllowed* \[ en, opcional\]
+*MaximumAllowed* \[ in, opcional\]
 </dt> <dd>
 
-Límite en el número máximo de usuarios a los que se permite usar este recurso simultáneamente.
+Limite el número máximo de usuarios que pueden usar simultáneamente este recurso.
 
 Ejemplo: 10. Este parámetro es opcional.
 
 </dd> <dt>
 
-*Descripción* \[ de en, opcional\]
+*Descripción* \[ in, opcional\]
 </dt> <dd>
 
-Comentario opcional para describir el recurso que se está compartiendo. Este parámetro es opcional.
+Comentario opcional para describir el recurso que se comparte. Este parámetro es opcional.
 
 </dd> <dt>
 
-*Contraseña* \[ de en, opcional\]
+*Contraseña* \[ in, opcional\]
 </dt> <dd>
 
-Contraseña (cuando el servidor se ejecuta con seguridad de nivel de recurso compartido) para el recurso compartido. Si el servidor se ejecuta con seguridad de nivel de usuario, este parámetro se omite. Este parámetro es opcional.
+Contraseña (cuando el servidor se ejecuta con seguridad de nivel de recurso compartido) para el recurso compartido. Si el servidor se ejecuta con seguridad de nivel de usuario, se omite este parámetro. Este parámetro es opcional.
 
 </dd> <dt>
 
-*Acceso a* \[ en, opcional\]
+*Acceso* \[ in, opcional\]
 </dt> <dd>
 
-Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre los permisos, el propietario y las capacidades de acceso del recurso. Si no se proporciona este parámetro o es **null**, todos tienen acceso de lectura al recurso compartido. Para obtener más información, [**vea \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) y [cambiar la seguridad de acceso en objetos protegibles](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
+Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre los permisos, el propietario y las funcionalidades de acceso del recurso. Si no se proporciona este parámetro o es **NULL,** todos tienen acceso de lectura al recurso compartido. Para obtener más información, [**vea Seguridad de Win32Descriptor \_ y**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Cambio de la seguridad [de acceso en objetos protegibles.](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -189,24 +189,24 @@ Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro va
 **Ruta de acceso redirigida** (23)
 </dt> <dt>
 
-**Dispositivo o directorio desconocido** (24)
+**Dispositivo o directorio desconocidos** (24)
 </dt> <dt>
 
-**No se encontró el nombre de red** (25)
+**Nombre de red no encontrado** (25)
 </dt> <dt>
 
-**Otro** (26 4294967295)
+**Otros** (26 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 **Create** es un método estático.
 
-Solo los miembros del grupo local Administradores o operadores de cuenta, o los que tengan la pertenencia a un grupo de operador de servidor o de comunicación pueden ejecutar **Create** correctamente. El operador Print solo puede Agregar colas de impresión. El operador de comunicación solo puede Agregar colas de dispositivos de comunicación.
+Solo los miembros del grupo local Administradores u Operadores de cuenta o aquellos con pertenencia a grupos de operadores de comunicación, impresión o servidor pueden ejecutar **correctamente Crear**. El operador Print solo puede agregar colas de impresora. El operador Communication solo puede agregar colas de dispositivos de comunicación.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de PowerShell [Export e import recursos compartidos](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) exporta e importa recursos compartidos de archivos y establece permisos de recurso compartido. Del mismo modo, el ejemplo de [creación de un recurso compartido y set permissions](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) también crea un nuevo recurso compartido y establece los permisos del recurso compartido.
+El [ejemplo exportar e importar archivos compartidos](https://Gallery.TechNet.Microsoft.Com/Export-and-Import-84d4fce1) de PowerShell exporta e importa recursos compartidos de archivos y establece permisos de recurso compartido. De forma similar, el [ejemplo Crear un recurso compartido](https://gallery.technet.microsoft.com/scriptcenter/Create-a-Share-and-Set-eb177a79) y Establecer permisos también crea un nuevo recurso compartido y establece los permisos de recurso compartido.
 
 El siguiente código de PowerShell crea un recurso compartido.
 
@@ -269,7 +269,7 @@ Path        : C:\Share
 Description : 
 ```
 
-El siguiente \# ejemplo de código C describe cómo llamar al método Create.
+En el siguiente ejemplo de código de C \# se describe cómo llamar al método create.
 
 
 ```CSharp
@@ -310,12 +310,12 @@ catch (SystemException e)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -327,7 +327,7 @@ catch (SystemException e)
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Recurso compartido de Win32**](win32-share.md)
+[**Recurso compartido de \_ Win32**](win32-share.md)
 </dt> </dl>
 
  

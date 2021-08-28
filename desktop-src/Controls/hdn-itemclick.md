@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de HDN_ITEMCLICK (commctrl. h)
-description: Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el control. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: HDN_ITEMCLICK de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 25ed0070-5891-4f36-9ae0-fc04e064401f
 keywords:
-- HDN_ITEMCLICK controles de código de notificación de Windows
+- HDN_ITEMCLICK código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca49cd4fd77425f202c5d8ee06cb0b3d7712e610
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe6bf01ed46d0294f654c21dc854933f0be04695f7edeee7a6849e23b01b027f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118006192"
 ---
-# <a name="hdn_itemclick-notification-code"></a>Código de notificación de ITEMCLICK de HDN \_
+# <a name="hdn_itemclick-notification-code"></a>Código de notificación ITEMCLICK de HDN \_
 
-Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el control. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de encabezado que el usuario hizo clic en el control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ HDN_ITEMCLICK
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que identifica el control de encabezado y especifica el índice del elemento de encabezado en el que se hizo clic y el botón del mouse que se usa para hacer clic en el elemento. El miembro **pItem** se establece en **null**.
+Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que identifica el control de encabezado y especifica el índice del elemento de encabezado en el que se hizo clic y el botón del mouse utilizado para hacer clic en el elemento. El **miembro pItem** se establece en **NULL.**
 
 </dd> </dl>
 
@@ -51,19 +51,19 @@ Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un control de encabezado envía este código de notificación cuando el usuario suelta el botón primario del mouse.
+Un control de encabezado envía este código de notificación después de que el usuario suelte el botón izquierdo del mouse.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDN \_ ITEMCLICKW** (Unicode) y **HDN \_ ITEMCLICKA** (ANSI)<br/>               |
 
 

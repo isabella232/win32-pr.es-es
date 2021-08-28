@@ -1,7 +1,7 @@
 ---
 description: Solicita que el estado del servicio invitado cambie al valor especificado.
 ms.assetid: F2853BB3-4074-431C-9E10-26AA0757FE99
-title: 'Msvm_GuestService:: RequestStateChange (método)'
+title: Msvm_GuestService::RequestStateChange (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1360c36b58c96b7e621e5f339bd503ce4f1390b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7685ec7c1740f869b251124920233ed9d6d8a97060c097f138493f371ee4fc2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501105"
 ---
-# <a name="msvm_guestservicerequeststatechange-method"></a>MSVM \_ GuestService:: RequestStateChange (método)
+# <a name="msvm_guestservicerequeststatechange-method"></a>Método Msvm \_ GuestService::RequestStateChange
 
 Solicita que el estado del servicio invitado cambie al valor especificado.
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ de\]
+*RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la propiedad **RequestedState** de la instancia de si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los valores siguientes.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -71,7 +71,7 @@ El nuevo estado. La información se coloca en la propiedad **RequestedState** de
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (6)
+**Sin** conexión (6)
 
 
 </dt> <dd></dd> <dt>
@@ -85,14 +85,14 @@ El nuevo estado. La información se coloca en la propiedad **RequestedState** de
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Diferir** (8)
+**Aplazar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-Modo **inactivo** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -106,7 +106,7 @@ Modo **inactivo** (9)
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -120,22 +120,22 @@ Modo **inactivo** (9)
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia opcional a un objeto [**\_ ConcreteJob de CIM**](cim-concretejob.md) que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta se puede usar para supervisar el progreso y obtener el resultado del método.
+Referencia opcional a un [**objeto \_ ConcreteJob cim**](cim-concretejob.md) que se devuelve si la operación se ejecuta de forma asincrónica. Si está presente, la referencia devuelta se puede usar para supervisar el progreso y obtener el resultado del método .
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Un período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se realice la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **null** y la implementación no admite este parámetro, se debe devolver un código de retorno de 4098 (**no se admite el uso del parámetro timeout**).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (**Use Of Timeout Parameter Not Supported**).
 
 </dd> </dl>
 
@@ -148,11 +148,11 @@ Este método devuelve uno de los valores siguientes.
 | Código o valor devuelto                                                                                                                                                                       | Descripción                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <dl> <dt>**Completado sin error**</dt> <dt>0</dt> </dl>                           | Correcto.<br/>                                                                |
-| <dl> <dt>**No compatible**</dt> <dt>1</dt> </dl>                                     |                                                                                    |
-| <dl> <dt>**Parámetros de método con comprobación activada: transición iniciada**</dt> <dt>4096</dt> </dl> | La transición es asincrónica.<br/>                                         |
-| <dl> <dt>**No se admite el uso del parámetro Timeout**</dt> <dt>4098</dt> </dl>         |                                                                                    |
-| <dl> <dt>**Acceso Denegado**</dt> <dt>32769</dt> </dl>                                 | Acceso denegado.<br/>                                                          |
-| <dl> <dt>**Estado no válido para esta operación**</dt> <dt>32775</dt> </dl>              | No se admite el valor especificado en el parámetro *RequestedState* .<br/> |
+| <dl> <dt>**No compatible**</dt> <dt>con 1</dt> </dl>                                     |                                                                                    |
+| <dl> <dt>**Parámetros de método activados: transición iniciada**</dt> <dt>4096</dt> </dl> | La transición es asincrónica.<br/>                                         |
+| <dl> <dt>**No se admite el uso del parámetro timeout**</dt> <dt>4098</dt> </dl>         |                                                                                    |
+| <dl> <dt>**Acceso denegado**</dt> <dt>32769</dt> </dl>                                 | Acceso denegado:<br/>                                                          |
+| <dl> <dt>**Estado no válido para esta operación**</dt> <dt>32775</dt> </dl>              | No se admite el valor especificado *en el parámetro RequestedState.*<br/> |
 
 
 
@@ -162,12 +162,12 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\\\\\Virtualización de raíz \\ V2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | \\\\Root \\ Virtualization \\ V2<br/>                                                                 |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -176,7 +176,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ GuestService**](msvm-guestservice.md)
+[**Msvm \_ GuestService**](msvm-guestservice.md)
 </dt> </dl>
 
  
