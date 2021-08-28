@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: de8a4b73c2808347ec7cb15d9e2b3f9c213bc1d0
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 0a5171972c407848193239fb2b356e9451a57d2f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786561"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627141"
 ---
 # <a name="span-idvspixengineiofflineanalysisrequestspaniofflineanalysisrequest-interface"></a><span id="vspixengine.iofflineanalysisrequest"></span>IOfflineAnalysisRequest (interfaz)
 
 Solicitud de datos de análisis sin conexión.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IOfflineAnalysisRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IOfflineAnalysisRequest** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IOfflineAnalysisRequest** hereda de la [**interfaz IUnknown.**](/w
 
 La **interfaz IOfflineAnalysisRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iofflineanalysisrequest-cancelofflineanalysisasync-dword"><strong>CancelOfflineAnalysisAsync</strong></a></td><td ><p>Solicitudes para cancelar el análisis sin conexión en una solicitud de análisis sin conexión.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/iofflineanalysisrequest-requestofflineanalysisasync-enumofflineanalysissource-bstr-bstr-dword-bstr-dword-bstr-iofflineanalysiscallback-ptr"><strong>RequestOfflineAnalysisAsync</strong></a></td><td ><p>Solicita ejecutar el análisis sin conexión con el origen, el manifiesto, los parámetros y el marco especificados.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iofflineanalysisrequest-cancelofflineanalysisasync-dword"><strong>CancelOfflineAnalysisAsync</strong></a></td><td style="text-align: left;"><p>Solicitudes para cancelar el análisis sin conexión en una solicitud de análisis sin conexión.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iofflineanalysisrequest-requestofflineanalysisasync-enumofflineanalysissource-bstr-bstr-dword-bstr-dword-bstr-iofflineanalysiscallback-ptr"><strong>RequestOfflineAnalysisAsync</strong></a></td><td style="text-align: left;"><p>Solicita ejecutar el análisis sin conexión con el origen, el manifiesto, los parámetros y el marco especificados.</p></td></tr></tbody></table>
 
  
 

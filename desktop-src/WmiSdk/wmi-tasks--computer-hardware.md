@@ -1,8 +1,8 @@
 ---
-description: Tareas de WMI para el hardware del equipo obtenga información sobre la presencia, el estado o las propiedades de los componentes de hardware.
+description: Las tareas WMI del hardware del equipo obtienen información sobre la presencia, el estado o las propiedades de los componentes de hardware.
 ms.assetid: eb4c2c38-4853-4486-b889-93a843d88edb
 ms.tgt_platform: multiple
-title: 'Tareas WMI: hardware del equipo'
+title: 'Tareas wmi: hardware del equipo'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,41 +10,41 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d5589c634a5a7bf11b95bc2d90ebeab038eb8af0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8dcbf9437cf7f3ede54f8d1e72ae678fdc5cb3de
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715823"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624571"
 ---
-# <a name="wmi-tasks-computer-hardware"></a>Tareas WMI: hardware del equipo
+# <a name="wmi-tasks-computer-hardware"></a>Tareas wmi: hardware del equipo
 
-Tareas de WMI para el hardware del equipo obtenga información sobre la presencia, el estado o las propiedades de los componentes de hardware. Por ejemplo, puede determinar si un equipo es un equipo de escritorio o portátil. Para ver otros ejemplos, vea el ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Las tareas WMI del hardware del equipo obtienen información sobre la presencia, el estado o las propiedades de los componentes de hardware. Por ejemplo, puede determinar si un equipo es de escritorio o portátil. Para ver otros ejemplos, consulte ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Los ejemplos de scripts que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información acerca de cómo usar el script para obtener datos de equipos remotos, consulte [conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 ## <a name="to-run-a-script"></a>Para ejecutar un script
 
 En el procedimiento siguiente se describe cómo ejecutar un script.
 
-1.  Copie el código y guárdelo en un archivo con la extensión. vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una extensión. txt al archivo.
-2.  Abra una ventana del símbolo del sistema y navegue hasta el directorio en el que guardó el archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega .txt extensión al archivo.
+2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede obtener acceso a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts de WMI pueden generar grandes cantidades de resultados, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script de *filename.vbs* a *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para obtener distintos tipos de datos del equipo local.
+En la tabla siguiente se muestran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -54,11 +54,11 @@ En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para ob
 </thead>
 <tbody>
 <tr class="odd">
-<td>... determinar la cantidad de memoria libre que tiene un equipo</td>
-<td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> de clase y la propiedad <strong>FreePhysicalMemory</strong> .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... determinar cuánta memoria libre tiene un equipo?</td>
+<td>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-operatingsystem"><strong>Win32_OperatingSystem</strong></a> y <strong>la propiedad FreePhysicalMemory.</strong><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -79,7 +79,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -97,13 +97,13 @@ Next</code></pre></td>
 </td>
 </tr>
 <tr class="even">
-<td>... determinar si un equipo tiene una unidad de DVD</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-cdromdrive"><strong>Win32_CDROMDrive</strong></a> y busque el acrónimo DVD en la propiedad <strong>Name</strong> o <strong>DeviceID</strong> .</p>
+<td>... determinar si un equipo tiene una unidad de DVD?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-cdromdrive"><strong>Win32_CDROMDrive</strong></a> y compruebe el DVD del acrónimo en la <strong>propiedad Name</strong> <strong>o DeviceID.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -126,7 +126,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -144,13 +144,13 @@ $drives | Format-Table DeviceID, Description, Name -autosize</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿determinar cuánta RAM está instalada en un equipo?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y compruebe el valor de la propiedad <strong>TotalPhysicalMemory</strong> .</p>
+<td>... determinar la cantidad de RAM instalada en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> clase y compruebe el valor de la <strong>propiedad TotalPhysicalMemory.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -172,7 +172,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -189,13 +189,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinar si un equipo tiene más de un procesador</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y la propiedad <strong>NumberOfProcessors</strong>.</p>
+<td>... determinar si un equipo tiene más de un procesador?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> clase y la <strong>propiedad NumberOfProcessors</strong>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -217,7 +217,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -235,13 +235,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... determinar si un equipo tiene una ranura PCMCIA</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-pcmciacontroller"><strong>Win32_PCMCIAController</strong></a> y compruebe el valor de la propiedad <strong>Count</strong> . Si el valor de <strong>Count</strong> es 0, el equipo no tiene ninguna ranura PCMCIA.</p>
+<td>... determinar si un equipo tiene una ranura PCMCIA?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-pcmciacontroller"><strong>Win32_PCMCIAController</strong></a> clase y compruebe el valor de la <strong>propiedad Count.</strong> Si <strong>Count</strong> es 0, el equipo no tiene ranuras PCMCIA.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -260,7 +260,7 @@ Wscript.Echo &quot;Number of PCMCIA slots: &quot; & colItems.Count</code></pre><
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -283,13 +283,13 @@ if (!$pcmcia.count) {
 </div></td>
 </tr>
 <tr class="even">
-<td>... identificar los dispositivos que no funcionan (los marcados con un icono de signo de exclamación en <strong>Administrador de dispositivos</strong>)?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-pnpentity"><strong>Win32_PnPEntity</strong></a> y use la siguiente cláusula en la consulta <a href="querying-with-wql.md">WQL</a> . <strong>Donde ConfigManagerErrorCode <> 0</strong> Tenga en cuenta que es posible que este código no detecte los dispositivos USB que faltan.</p>
+<td>... identificar los dispositivos que no funcionan (los marcados con un icono de signo de exclamación <strong>Administrador de dispositivos</strong>)?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-pnpentity"><strong>Win32_PnPEntity</strong></a> clase y use la cláusula siguiente en la <a href="querying-with-wql.md">consulta WQL.</a> <strong>WHERE ConfigManagerErrorCode <> 0</strong> Tenga en cuenta que es posible que este código no detecte dispositivos USB a los que faltan controladores.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -316,7 +316,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -344,13 +344,13 @@ foreach ($device in $baddevices) {
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿determinar las propiedades del mouse que se usan en el equipo?</td>
-<td><p>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/win32-pointingdevice"><strong>Win32_PointingDevice</strong></a> . Esto devuelve las propiedades de todos los dispositivos señaladores, no solo de los dispositivos de mouse.</p>
+<td>... determinar las propiedades del mouse que se usa en el equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-pointingdevice"><strong>Win32_PointingDevice</strong></a> clase . Esto devuelve las propiedades de todos los dispositivos que apuntan, no solo los dispositivos del mouse.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -387,7 +387,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -472,13 +472,13 @@ param ($value)
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿determinar la velocidad de un procesador instalado en un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-processor"><strong>Win32_Processor</strong></a> y compruebe el valor de la propiedad <strong>MaxClockSpeed</strong> .</p>
+<td>... determinar la velocidad de un procesador instalado en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-processor"><strong>Win32_Processor</strong></a> clase y compruebe el valor de la <strong>propiedad MaxClockSpeed.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -501,13 +501,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... determinar si un equipo es una torre, una minitorre, un portátil, etc.</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-systemenclosure"><strong>Win32_SystemEnclosure</strong></a> y compruebe el valor de la propiedad <strong>ChassisType</strong> .</p>
+<td>... determinar si un equipo es una torre, una mini-torre, un portátil, y así sucesivamente?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-systemenclosure"><strong>Win32_SystemEnclosure</strong></a> clase y compruebe el valor de la <strong>propiedad ChassisType.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -530,7 +530,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -552,13 +552,13 @@ foreach ($proc in $processors)
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿obtener el número de serie y la etiqueta de activo de un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-systemenclosure"><strong>Win32_SystemEnclosure</strong></a> y las propiedades <strong>SerialNumber</strong> y <strong>SMBIOSAssetTag</strong>.</p>
+<td>... obtener el número de serie y la etiqueta de recurso de un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-systemenclosure"><strong>Win32_SystemEnclosure</strong></a> y las propiedades <strong>SerialNumber</strong> y <strong>SMBIOSAssetTag</strong>.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -581,7 +581,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -605,13 +605,13 @@ foreach ($objSMBIOS in $colSMBIOS)
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿determinar qué tipo de dispositivo está conectado a un puerto USB?</td>
-<td><p>Use la clase <a href="/previous-versions/windows/desktop/cimwin32a/win32-usbhub"><strong>Win32_USBHub</strong></a> y Compruebe la propiedad <strong>Description</strong> . Esta propiedad puede tener un valor como &quot; dispositivo de almacenamiento masivo &quot; o &quot; soporte de impresión &quot; .</p>
+<td>... determinar qué tipo de dispositivo está conectado a un puerto USB?</td>
+<td><p>Use la <a href="/previous-versions/windows/desktop/cimwin32a/win32-usbhub"><strong>Win32_USBHub</strong></a> clase y compruebe la <strong>propiedad</strong> Description. Esta propiedad puede tener un valor como &quot; Mass Storage Device o Printing Support &quot; &quot; &quot; .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -635,7 +635,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -659,13 +659,13 @@ foreach ($objItem in $colItems)
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿determinar cuántas unidades de cinta hay instaladas en un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-tapedrive"><strong>Win32_TapeDrive</strong></a> clase y, a continuación, use el método <a href="swbemobjectset-count.md"><strong>SWbemObjectSet. Count</strong></a> . Si Count = 0, no hay unidades de cinta instaladas en el equipo.</p>
+<td>... determinar cuántas unidades de cinta están instaladas en un equipo?</td>
+<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-tapedrive"><strong>Win32_TapeDrive</strong></a> clase y, a continuación, use el <a href="swbemobjectset-count.md"><strong>método SWbemObjectSet.Count.</strong></a> Si Count = 0, no hay unidades de cinta instaladas en el equipo.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -684,7 +684,7 @@ Wscript.Echo &quot;Number of tape drives: &quot; & colItems.Count</code></pre></
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -714,22 +714,22 @@ foreach ($objItem in $colItems)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente [código de ejemplo](https://Gallery.TechNet.Microsoft.Com/scriptcenter/List-for-several-machines-1baf6df0) de la galería de TechNet se describe cómo mostrar el espacio libre de todas las unidades de varias máquinas.
+En el siguiente código de ejemplo [de](https://Gallery.TechNet.Microsoft.Com/scriptcenter/List-for-several-machines-1baf6df0) la Galería de TechNet se describe cómo enumerar el espacio libre de todas las unidades para varias máquinas.
 
-En el ejemplo de PowerShell [Get-ComputerInfo-Query Computer info from local/Remote Computers-(WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) en la galería de TechNet, se usan varias llamadas a hardware y software para mostrar información acerca de un sistema local o remoto.
+El ejemplo de PowerShell [Get-ComputerInfo - Query Computer Info From Local/Remote Computers - (WMI)](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) en la Galería de TechNet usa una serie de llamadas a hardware y software para mostrar información sobre un sistema local o remoto.
 
-El ejemplo de [recopilación de recursos del sistema multiproceso con](https://Gallery.TechNet.Microsoft.Com/Multithreaded-System-Asset-856a8f7c) PowerShell de PowerShell en TechNetGallery recopila una gran cantidad de información útil del sistema a través de WMI y multithreading con PowerShell.
+El ejemplo de recopilación de recursos del sistema multiproceso con [PowerShell](https://Gallery.TechNet.Microsoft.Com/Multithreaded-System-Asset-856a8f7c) de PowerShell en TechNetGallery recopila una gran cantidad de información útil del sistema a través de WMI y multithreading con PowerShell.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Tareas de WMI para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
+[Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones de C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicación C++ de WMI](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter de TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 

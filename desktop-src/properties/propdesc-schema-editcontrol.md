@@ -4,22 +4,22 @@ ms.assetid: cef6d76f-664a-4808-a224-e82a5adb2d70
 title: editControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bdb47a3866c156ff10dba8eed4584f814793b863e8f615ae5e1a10b8d687ed4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 213d6fba3f03f90e0d5a2702226dd8596462b289
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118055995"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626821"
 ---
 # <a name="editcontrol"></a>editControl
 
 Especifica qué control se va a usar al editar la propiedad. Solo debe haber un [elemento editControl]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [editControl,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
+Si hay varios elementos, se usa el último. Si no [se proporciona ningún elemento editControl,]() la configuración predeterminada del atributo se aplica a la descripción de la propiedad.
 
 Si es , este elemento se omite porque no se puede editar una <typeInfo isInnate="true"> propiedad innate.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -53,7 +53,7 @@ Si es , este elemento se omite porque no se puede editar una <typeInfo isInnate=
 
 | Elemento primario                                   | Elementos secundarios |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | Ninguno           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | None           |
 
 
 
@@ -65,8 +65,8 @@ Si es , este elemento se omite porque no se puede editar una <typeInfo isInnate=
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -77,11 +77,11 @@ Si es , este elemento se omite porque no se puede editar una <typeInfo isInnate=
 <tbody>
 <tr class="odd">
 <td>control</td>
-<td>Público. Opcional. El valor predeterminado &quot; es &quot; Default. Estos son los valores válidos. 
+<td>Público. Opcional. El valor predeterminado &quot; es Default &quot; . Estos son los valores válidos. 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -91,7 +91,7 @@ Si es , este elemento se omite porque no se puede editar una <typeInfo isInnate=
 </thead>
 <tbody>
 <tr class="odd">
-<td>Valor predeterminado</td>
+<td>Predeterminado</td>
 <td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; &quot; control Texto. 
 <table>
 <thead>

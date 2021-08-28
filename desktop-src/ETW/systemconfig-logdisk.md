@@ -28,12 +28,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c24ce209c51e0ac2d6167ae76d3f8289d73aa0fffa9ce607e51c8566cbb37c36
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 326509ea080b052c0ff435e0a6e573bf54ac298c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119582235"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880761"
 ---
 # <a name="systemconfig_logdisk-class"></a>Clase SystemConfig \_ LogDisk
 
@@ -122,7 +122,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (6), **Max** (4), **Format("s")**
 </dt> </dl>
 
-Letra de unidad del disco con el formato " <letter> :".
+Letra de unidad del disco con el formato " &lt; letter &gt; :".
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Tipo de unidad de disco. Los valores posibles son:
 
 | Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partición<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volumen<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partición extendida en varios discos<br/> |
 
@@ -198,11 +198,11 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (7)
 </dt> </dl>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
-**Panel2**
+**Pad2**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -214,11 +214,11 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (11)
 </dt> </dl>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
-**Panel3**
+**Pad3**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -230,7 +230,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (16)
 </dt> </dl>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 

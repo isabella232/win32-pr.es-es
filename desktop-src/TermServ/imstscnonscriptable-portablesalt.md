@@ -1,24 +1,24 @@
 ---
-title: Propiedad PortableSalt de IMsTscNonScriptable
+title: Propiedad PortableSalt IMsTscNonScriptable
 description: Este propiedad ya no se admite.
 ms.assetid: 1f123ec8-27b6-4637-9c57-fe32a224be8a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PortableSalt
-- Propiedad PortableSalt Servicios de Escritorio remoto, interfaz IMsTscNonScriptable
-- Servicios de Escritorio remoto de la interfaz IMsTscNonScriptable, propiedad PortableSalt
-- Servicios de Escritorio remoto de la propiedad PortableSalt, objeto MsTscAx
-- Servicios de Escritorio remoto de objeto MsTscAx, propiedad PortableSalt
-- Propiedad PortableSalt Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable, propiedad PortableSalt
-- Propiedad PortableSalt Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable2, propiedad PortableSalt
-- Propiedad PortableSalt Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, propiedad PortableSalt
-- Propiedad PortableSalt Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad PortableSalt
-- Propiedad PortableSalt Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad PortableSalt
+- Propiedad PortableSalt Servicios de Escritorio remoto
+- Propiedad PortableSalt Servicios de Escritorio remoto interfaz IMsTscNonScriptable
+- Interfaz IMsTscNonScriptable Servicios de Escritorio remoto , propiedad PortableSalt
+- Propiedad PortableSalt Servicios de Escritorio remoto , objeto MsTscAx
+- Objeto MsTscAx Servicios de Escritorio remoto , propiedad PortableSalt
+- Propiedad PortableSalt Servicios de Escritorio remoto interfaz IMsRdpClientNonScriptable
+- Interfaz IMsRdpClientNonScriptable Servicios de Escritorio remoto , propiedad PortableSalt
+- Propiedad PortableSalt Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable2
+- Interfaz IMsRdpClientNonScriptable2 Servicios de Escritorio remoto , propiedad PortableSalt
+- Propiedad PortableSalt Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , propiedad PortableSalt
+- Propiedad PortableSalt Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad PortableSalt
+- Propiedad PortableSalt Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad PortableSalt
 topic_type:
 - apiref
 api_name:
@@ -47,20 +47,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0162073b8361cc89f7ab2e33f60406c0db935bdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 724f9b394d6e70354b39036df90386a823da2e5874f9ecb0fc0b81f130e3571e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125045"
 ---
-# <a name="imstscnonscriptableportablesalt-property"></a>IMsTscNonScriptable::P propiedad ortableSalt
+# <a name="imstscnonscriptableportablesalt-property"></a>Propiedad IMsTscNonScriptable::P ortableSalt
 
 Este propiedad ya no se admite.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -77,7 +77,7 @@ HRESULT get_PortableSalt(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La nueva parte de sal portátil para una contraseña codificada portátil.
+Nueva parte sal portátil para una contraseña codificada portátil.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -95,7 +95,7 @@ Devuelve **E \_ NOTIMPL**.
 | Fin de compatibilidad de servidor<br/>    | No se admite ninguno<br/>                                                              |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscNonScriptable se define como c1e6743a-41c1-4a74-832A-0dd06c1c7a0e<br/> |
+| IID<br/>                      | IID \_ IMsTscNonScriptable se define como c1e6743a-41c1-4a74-832a-0dd06c1c7a0e<br/> |
 
 
 

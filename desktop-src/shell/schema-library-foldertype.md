@@ -1,5 +1,5 @@
 ---
-description: El <folderType> elemento especifica un GUID para el tipo de carpeta. Este elemento es necesario si el <templateInfo> elemento existe; de lo contrario, es opcional. Este elemento no tiene atributos ni elementos secundarios.
+description: El &lt; elemento folderType &gt; especifica un GUID para el tipo de carpeta. Este elemento es necesario si existe el &lt; elemento &gt; templateInfo; de lo contrario, es opcional. Este elemento no tiene atributos ni elementos secundarios.
 title: Elemento folderType (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 8d35f09a10cc88ae3873a507b6fa7000812503890240ce0b808ffecc84f23fd8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ba9d0163a00ab525fb0a52267c1226b6a48230a4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119883955"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880871"
 ---
 # <a name="foldertype-element-library-schema"></a>Elemento folderType (esquema de biblioteca)
 
-El <folderType> elemento especifica un GUID para el tipo de carpeta. Este elemento es necesario si el <templateInfo> elemento existe; de lo contrario, es opcional. Este elemento no tiene atributos ni elementos secundarios.
+El &lt; elemento folderType &gt; especifica un GUID para el tipo de carpeta. Este elemento es necesario si existe el &lt; elemento &gt; templateInfo; de lo contrario, es opcional. Este elemento no tiene atributos ni elementos secundarios.
 
 ## <a name="syntax"></a>Syntax
 

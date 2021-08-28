@@ -11,21 +11,21 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3edd09872171b080dfc2c75bdb8e78d3b10b3856
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0e9bf0fe18d17ac2099bd3b7e2b20f23db6cb6d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705936"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468732"
 ---
 # <a name="xmshort4-constructors"></a>Constructores XMSHORT4
 
 Constructores expuestos por `XMSHORT4` .
 
-Construye instancias de la estructura [**XMSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4) .
+Construye instancias de la estructura [**XMSHORT4.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -33,73 +33,23 @@ Construye instancias de la estructura [**XMSHORT4**](/windows/desktop/api/Direct
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constructor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMSHORT4</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a>. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMSHORT4</code> a partir de un argumento de matriz de cuatro elementos <code>float</code> . <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de un argumento de matriz de cuatro elementos <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const int16_t *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMSHORT4</code> a partir de un argumento de matriz de cuatro elementos <code>int16_t</code> . <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de un argumento de matriz de cuatro elementos <code>int16_t</code> . <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(float_float_float_float)"><strong>XMSHORT4 (float, Float, Float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMSHORT4</code> a partir de cuatro <code>float</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de cuatro <code>float</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(int16_t_int16_t_int16_t_int16_t)"><strong>XMSHORT4 (int16_t, int16_t, int16_t, int16_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMSHORT4</code> a partir de cuatro <code>int16_t</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de cuatro <code>int16_t</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constructor | Descripción | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 ()</strong></a> | Constructor predeterminado para <code>XMSHORT4</code> . <br /> Constructor predeterminado para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4.</strong></a> <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const float*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMSHORT4</code> de un argumento de matriz de cuatro <code>float</code> elementos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de un argumento de matriz <code>float</code> de cuatro elementos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(constfloat)"><strong>XMSHORT4 (const int16_t*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMSHORT4</code> de un argumento de matriz de cuatro <code>int16_t</code> elementos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de un argumento de matriz <code>int16_t</code> de cuatro elementos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(float_float_float_float)"><strong>XMSHORT4 (float,float,float,float)</strong></a> | Inicializa una nueva instancia de a <code>XMSHORT4</code> partir de <code>float</code> cuatro argumentos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de <code>float</code> cuatro argumentos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmshort4-xmshort4(int16_t_int16_t_int16_t_int16_t)"><strong>XMSHORT4 (int16_t,int16_t,int16_t,int16_t)</strong></a> | Inicializa una nueva instancia de a <code>XMSHORT4</code> partir de <code>int16_t</code> cuatro argumentos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshort4"><strong>XMSHORT4</strong></a> a partir de <code>int16_t</code> cuatro argumentos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMSHORT4](ovw-xmshort4-extensions.md)
+[Extensiones XMSHORT4](ovw-xmshort4-extensions.md)
 </dt> <dt>
 
 **Referencia**

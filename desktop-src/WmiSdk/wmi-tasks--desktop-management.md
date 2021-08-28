@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e1bb50e58b4db01b01b2122fd55c14bf73be0eb8601d732fa658752b33c35fcd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25d5af34a252243610a639bc89ed2a7a522775fa
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738979"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623361"
 ---
 # <a name="wmi-tasks-desktop-management"></a>Tareas de WMI: Administración de escritorio 
 
-Las tareas WMI para la administración de escritorio pueden ejercer control y obtener datos de un escritorio remoto o un equipo local. Por ejemplo, puede determinar si el protector de pantalla de un equipo local requiere una contraseña. WMI también ofrece la capacidad de apagar un equipo remoto. Para ver otros ejemplos, consulte ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+Las tareas WMI para la administración de escritorio pueden ejercer control y obtener datos de un escritorio remoto o un equipo local. Por ejemplo, puede determinar si el protector de pantalla de un equipo local requiere una contraseña. WMI también ofrece la posibilidad de apagar un equipo remoto. Para obtener otros ejemplos, vea ScriptCenter de TechNet en [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
 Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
@@ -28,24 +28,24 @@ En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
 2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del *script* filename.vbsa *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
-En la tabla siguiente se muestran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
+En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -56,10 +56,10 @@ En la tabla siguiente se muestran ejemplos de script que se pueden usar para obt
 <tbody>
 <tr class="odd">
 <td>... determinar si un equipo remoto ha arrancado en el modo Caja fuerte con el estado Redes?</td>
-<td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> clase y compruebe el valor de la <strong>propiedad PrimaryOwnerName.</strong><br/> <span data-codelanguage="VisualBasic"></span>
+<td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-computersystem"><strong>Win32_ComputerSystem</strong></a> y compruebe el valor de la <strong>propiedad PrimaryOwnerName.</strong><br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -81,7 +81,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -103,12 +103,12 @@ foreach ($objComputer in $colSettings)
 </tr>
 <tr class="even">
 <td>... determinar si un protector de pantalla del equipo requiere una contraseña?</td>
-<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-desktop"><strong>Win32_Desktop</strong></a> clase y compruebe el valor de la <strong>propiedad ScreenSaverSecure.</strong></p>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-desktop"><strong>Win32_Desktop</strong></a> y compruebe el valor de la <strong>propiedad ScreenSaverSecure.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -129,7 +129,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -160,7 +160,7 @@ foreach ($desktop in $desktops) {
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -183,7 +183,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -213,7 +213,7 @@ foreach ($desktop en $desktops) { &quot; Desktop {0} : {1} &quot; -f $i++, $Desk
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -244,7 +244,7 @@ End Function</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -281,7 +281,7 @@ foreach ($system in $computers) {
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -302,7 +302,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -330,7 +330,7 @@ foreach ($objOperatingSystem in $colOperatingSystem)
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -359,7 +359,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -399,7 +399,7 @@ foreach ($objStartupCommand in $colItems)
 [Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicación C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicaciones wmi de C++](wmi-c---application-examples.md)
 </dt> <dt>
 
 [TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)

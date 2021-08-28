@@ -1,10 +1,10 @@
 ---
-description: Función de devolución de llamada que se usa para notificar al host de información sobre eventos en la lista de eventos.
+description: Función de devolución de llamada que se usa para notificar al host información sobre los eventos de la lista de eventos.
 MS-HAID: vspixengine.IFrameEventsCallback\_ResultCallback\_DWORD\_DWORD\_DWORD\_DWORD\_VARIANT\_arr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IFrameEventsCallback:: ResultCallback (método)'
+title: IFrameEventsCallback::ResultCallback (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 5AB67A11-00C1-47AF-8C8C-8B2FDD095BCF
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e746c54f2a82adb5042cd479e4ca04299c1b7402
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1b6cf33869fce9dc51df8dcd58f98b0cc17a5f44
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104274725"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623971"
 ---
-# <a name="span-idvspixengineiframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arrspaniframeeventscallbackresultcallback-method"></a><span id="vspixengine.iframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arr"></span>IFrameEventsCallback:: ResultCallback (método)
+# <a name="span-idvspixengineiframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arrspaniframeeventscallbackresultcallback-method"></a><span id="vspixengine.iframeeventscallback_resultcallback_dword_dword_dword_dword_variant_arr"></span>IFrameEventsCallback::ResultCallback (Método)
 
-Función de devolución de llamada que se usa para notificar al host de información sobre eventos en la lista de eventos.
+Función de devolución de llamada que se usa para notificar al host información sobre los eventos de la lista de eventos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,28 +43,28 @@ HRESULT ResultCallback(
 
 ## <a name="parameters"></a>Parámetros
 
-*Númeromarco*   
-Número de marco asociado a los eventos.
+*frameNumber*   
+Número de fotograma asociado a los eventos.
 
 *numElements*   
-El número total de campos en todas las columnas de todos los eventos.
+Número total de campos de todas las columnas de todos los eventos.
 
 *numRows*   
 Número de eventos del resultado.
 
 *numColumns*   
-El número de columnas (campos) de cada fila.
+Número de columnas (campos) de cada fila.
 
 *count1 \_ pRowData*   
 Información sobre los eventos; un elemento para cada campo de cada evento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

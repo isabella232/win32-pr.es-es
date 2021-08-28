@@ -1,16 +1,16 @@
 ---
-title: Propiedad RemoteProgramMode de ITSRemoteProgram
-description: Modo RemoteApp de Windows Server 2008 R2.
+title: Propiedad ITSRemoteProgram RemoteProgramMode
+description: Modo remoteApp Windows Server 2008 R2.
 ms.assetid: 9ebdf966-db9c-4a14-8469-f8b153c6ea78
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RemoteProgramMode
-- Propiedad RemoteProgramMode Servicios de Escritorio remoto, interfaz ITSRemoteProgram
-- Servicios de Escritorio remoto de la interfaz ITSRemoteProgram, propiedad RemoteProgramMode
-- Propiedad RemoteProgramMode Servicios de Escritorio remoto, interfaz ITSRemoteProgram2
-- Servicios de Escritorio remoto de la interfaz ITSRemoteProgram2, propiedad RemoteProgramMode
-- Propiedad RemoteProgramMode Servicios de Escritorio remoto, interfaz ITSRemoteProgram3
-- Servicios de Escritorio remoto de la interfaz ITSRemoteProgram3, propiedad RemoteProgramMode
+- Propiedad RemoteProgramMode Servicios de Escritorio remoto
+- Propiedad RemoteProgramMode Servicios de Escritorio remoto , interfaz ITSRemoteProgram
+- Interfaz ITSRemoteProgram Servicios de Escritorio remoto , propiedad RemoteProgramMode
+- Propiedad RemoteProgramMode Servicios de Escritorio remoto , interfaz ITSRemoteProgram2
+- Interfaz ITSRemoteProgram2 Servicios de Escritorio remoto , propiedad RemoteProgramMode
+- Propiedad RemoteProgramMode Servicios de Escritorio remoto , interfaz ITSRemoteProgram3
+- Interfaz ITSRemoteProgram3 Servicios de Escritorio remoto , propiedad RemoteProgramMode
 topic_type:
 - apiref
 api_name:
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8582824e2f6349e37b125ffd974847b602ad6fa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c36f450e6cbfec3922a56a42bc2f1f61466774eeff46c0987b6fad4ca9dc9731
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124825"
 ---
-# <a name="itsremoteprogramremoteprogrammode-property"></a>ITSRemoteProgram:: RemoteProgramMode (propiedad)
+# <a name="itsremoteprogramremoteprogrammode-property"></a>Propiedad ITSRemoteProgram::RemoteProgramMode
 
-Modo RemoteApp de Windows Server 2008 R2.
+Modo remoteApp Windows Server 2008 R2.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,11 +59,11 @@ HRESULT get_RemoteProgramMode(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Modo RemoteApp. Si se establece en **Variant \_ true**, el modo RemoteApp está habilitado y la sesión remota hospedará los programas de RemoteApp. Si se establece en **Variant \_ false** (el valor predeterminado), el modo RemoteApp no está habilitado. La sesión remota hospedará un escritorio remoto.
+El modo RemoteApp. Si se establece en **VARIANT \_ TRUE,** el modo RemoteApp está habilitado y la sesión remota hospedará programas remoteApp. Si se establece en **VARIANT \_ FALSE** (valor predeterminado), el modo RemoteApp no está habilitado. La sesión remota hospedará un escritorio remoto.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Devuelve **S \_ correcto** si se realiza correctamente.
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ITSRemoteProgram se define como FDD029F9-467A-4c49-8529-64B521DBD1B4<br/>    |
+| IID<br/>                      | IID ITSRemoteProgram se define como \_ FDD029F9-467A-4c49-8529-64B521DBD1B4<br/>    |
 
 
 

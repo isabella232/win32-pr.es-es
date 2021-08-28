@@ -3,7 +3,7 @@ title: Command, elemento
 description: Representa una definición de comando.
 ms.assetid: f332423d-d258-488d-9233-71687288b462
 keywords:
-- Elemento command de la cinta de opciones de Windows
+- Elemento Command Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1e1df5b62c7b2d7c55345ba8d6da366d04697054
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 0c29539c9c76342b8b88603ea3dd2926554228ac
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443486"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626951"
 ---
 # <a name="command-element"></a>Command, elemento
 
@@ -47,22 +47,22 @@ Representa una definición de comando.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Comentario</strong><br/></td>
+<td><strong>Comment</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Se usa para anotar el elemento de comando.<br/> <br/>
@@ -73,7 +73,7 @@ Representa una definición de comando.
 <td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
 <td>Identificador de recurso único. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, ambos incluidos, 0x2 y 0xea5f en formato hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Keytip</strong><br/></td>
@@ -167,9 +167,9 @@ Puede producirse una o varias veces para cada [**elemento Application.Commands.*
 
 Los elementos secundarios del **elemento Command** pueden producirse en cualquier orden.
 
-Normalmente, los recursos de comando se declaran en el marcado de la cinta de opciones, pero también se pueden establecer en tiempo de ejecución con una llamada a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). Por ejemplo, es posible establecer la propiedad [ \_ ui PKEY \_ Keytip](windowsribbon-reference-properties-uipkey-keytip.md) para un comando en lugar de declarar un valor en el marcado con el [**elemento Command.Keytip.**](windowsribbon-element-command-keytip.md)
+Normalmente, los recursos de comando se declaran en el marcado de la cinta de opciones, pero también se pueden establecer en tiempo de ejecución con una llamada a [**SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty). Por ejemplo, es posible establecer la propiedad [ \_ PKEY \_ Keytip](windowsribbon-reference-properties-uipkey-keytip.md) de la interfaz de usuario para un comando en lugar de declarar un valor en el marcado con el [**elemento Command.Keytip.**](windowsribbon-element-command-keytip.md)
 
-En los casos en los que las propiedades de comando, como las etiquetas y las imágenes, no se pueden establecer con [**SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) se pueden invalidar con una llamada a [**InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand). Después de la invalidación, el marco consulta a la aplicación host los detalles del recurso.
+En los casos en los que las propiedades command, como etiquetas e imágenes, no se pueden establecer con [**SetUICommandProperty,**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) se pueden invalidar con una llamada a [**InvalidateUICommand**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand). Después de la invalidación, el marco consulta la aplicación host para obtener los detalles del recurso.
 
 > [!Note]  
 > No se puede restablecer un recurso de la tabla de recursos de marcado después de que se haya invalidado.
@@ -178,11 +178,11 @@ En los casos en los que las propiedades de comando, como las etiquetas y las im�
 
 Se agrega una definición de comando al archivo de encabezado de marcado de la cinta de opciones para cada **comando** declarado en el marcado.
 
-El valor de *Keytip actúa* como acelerador de teclado para un comando a menos que ese comando se exponga a través de un elemento de menú. En este caso, el marco omite el valor *keytip* y, en su lugar, usa un carácter precedido por una y comercial como se especifica *en LabelTitle* o ui [ \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md). Si *labelTitle* o ui PKEY Label no especifican ninguna yand, no se expone ninguna tecla o acelerador \_ \_ de teclado.
+El valor de *Keytip actúa como* acelerador de teclado para un comando a menos que ese comando se exponga a través de un elemento de menú. En este caso, el marco omite el valor *keytip* y, en su lugar, usa un carácter precedido por una y comercial, tal como se especifica en *LabelTitle* o [UI \_ PKEY \_ Label](windowsribbon-reference-properties-uipkey-label.md). Si no se especifica ninguna yandida mediante *LabelTitle* o ui PKEY Label, no se expone ninguna tecla o acelerador \_ \_ de teclado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un manifiesto de **elementos Command** para una **pestaña Inicio.**
+En el ejemplo siguiente se muestra un manifiesto de **elementos Command** para una **pestaña** Inicio.
 
 
 ```XML

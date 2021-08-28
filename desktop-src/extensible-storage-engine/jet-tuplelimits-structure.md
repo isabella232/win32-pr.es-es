@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c4e2c118b7b42dce82ec0a95c53853ec501a7152c08ad088bbddde251edadf3e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc5a71328681e1ce415b1a34e9c8f718b460e7f0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119472695"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471781"
 ---
 # <a name="jet_tuplelimits-structure"></a>JET_TUPLELIMITS estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_tuplelimits-structure"></a>JET_TUPLELIMITS estructura
 
-La **JET_TUPLELIMITS** estructura permite la personalización de las características del índice de tupla por índice, en lugar de por instancia, mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+La **JET_TUPLELIMITS** permite la personalización de las características del índice de tupla por índice, en lugar de por instancia, mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
 **Windows Server 2003:** La **JET_TUPLELIMITS** se introduce en Windows Server 2003.
 
@@ -61,13 +61,13 @@ Longitud máxima de una cadena que se indexa. Por ejemplo, si una columna tiene 
 
 Esto permite configurar el paso por índice.
 
-**Windows Vista:** El **miembro cchIncrement** se introdujo en Windows Vista. Antes de Windows Vista, la cantidad para desplazar la ventana (el "paso") siempre era 1, como se muestra en el ejemplo en la sección de comentarios.
+**Windows Vista:** El **miembro cchIncrement** se introduce en Windows Vista. Antes de Windows Vista, la cantidad para desplazar la ventana (el "stride") siempre era 1, como se muestra en el ejemplo en la sección comentarios.
 
 **ichStart**
 
 Desplazamiento en el valor para empezar a recuperar tuplas del valor.
 
-**Windows Vista:** El **miembro ichStart** se introdujo en Windows Vista.
+**Windows Vista:** El **miembro ichStart** se presenta en Windows Vista.
 
 ### <a name="remarks"></a>Comentarios
 
@@ -75,10 +75,10 @@ Un índice de tupla recorre una cadena e indexa todas sus subcadenas posibles de
 
 Se puede usar un índice de tupla para buscar cadenas con caracteres comodín iniciales y finales.
 
-Suponiendo una fila con un campo de texto de "RAIN IN SPAIN", si se crea un índice de tupla con los parámetros \! **chLengthMin**=2 y **chLengthMax**=3, se crean las siguientes entradas en el índice:
+Suponiendo una fila con un campo de texto de "RAIN IN SPAIN", si se crea un índice de tupla con los parámetros \! **chLengthMin**=2 y **chLengthMax**=3, se crean las entradas siguientes en el índice:
 
 "RAI"  
-"SUDA"  
+"LUGAR"  
 "IN"  
 "N I"  
 "IN"  
@@ -87,36 +87,19 @@ Suponiendo una fila con un campo de texto de "RAIN IN SPAIN", si se crea un índ
 "SP"  
 "SPA"  
 "HAN"  
-"SUDA"  
+"LUGAR"  
 \!"IN"  
 \!"N"
 
-Tenga en cuenta que "IN" se produce dos veces y que la última entrada ("N ") es menor \! que 3 (**chLengthMax**). Tenga en cuenta también que el algoritmo de división no es consciente de los espacios o palabras y trata todos los caracteres de forma idéntica.
+Tenga en cuenta que "IN" se produce dos veces y que la última entrada ("N") es más corta \! que 3 (**chLengthMax**). Tenga en cuenta también que el algoritmo de división no es consciente de los espacios o palabras, y trata todos los caracteres de forma idéntica.
 
 **Windows XP:** Windows XP admite índices de tupla, pero no **tiene JET_TUPLELIMITS**. El motor de base de datos usará los valores predeterminados (**chLengthMin**=3, **chLengthMax**=10, **chToIndexMax**=32767). Todavía es posible cambiar estos valores, pero se establecen por instancia mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md) con [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)y [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

@@ -4,12 +4,12 @@ ms.assetid: 240d1753-df8c-45fe-b5a7-9faa96fc5b18
 title: Tipos de medios de demultiplexador MPEG-2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9b5276b975771ba62118976c8e63b4d5faa53d
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: bef3c7006f13b07394da7d9dc92e9295beda816c
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910003"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982608"
 ---
 # <a name="mpeg-2-demultiplexer-media-types"></a>Tipos de medios de demultiplexador MPEG-2
 
@@ -36,50 +36,31 @@ Para los paquetes de transporte strided **(MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT \_
 
 ### <a name="output-types"></a>Tipos de salida
 
-Demultiplexer MPEG-2 no valida los tipos de salida; El filtro de nivel inferior es responsable de analizar los datos que recibe del demultiplexor. Sin embargo, los siguientes tipos se aceptan normalmente mediante filtros de bajada como salida del demultiplexor.
+El demultiplexador MPEG-2 no valida los tipos de salida; El filtro de nivel inferior es responsable de analizar los datos que recibe del demultiplexor. Sin embargo, los siguientes tipos se aceptan normalmente mediante filtros de nivel inferior como salida del demultiplexor.
 
 ### <a name="mpeg-2-sections"></a>Secciones mpeg-2
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Tipo principal</td>
-<td><strong>MEDIATYPE_MPEG2_SECTIONS</strong></td>
-</tr>
-<tr class="even">
-<td>Subtype</td>
-<td>Cualquiera de los siguientes:<br/>
-<ul>
-<li><strong>MEDIASUBTYPE_ATSC_SI:</strong>información del servicio ATSC.</li>
-<li><strong>MEDIASUBTYPE_DVB_SI:</strong>información del servicio DE VEZ.</li>
-<li><strong>MEDIASUBTYPE_ISDB_SI:</strong>Información del servicio de difusión digital de servicios integrados (ISDB).</li>
-<li><strong>MEDIASUBTYPE_MPEG2DATA:</strong>datos de sección MPEG-2.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Tipo de formato</td>
-<td>None</td>
-</tr>
-</tbody>
-</table>
+
+| Etiqueta | Value |
+|--------|-------|
+| Tipo principal | <strong>MEDIATYPE_MPEG2_SECTIONS</strong> | 
+| Subtype | Cualquiera de los siguientes:<br /><ul><li><strong>MEDIASUBTYPE_ATSC_SI:</strong>información del servicio ATSC.</li><li><strong>MEDIASUBTYPE_DVB_SI:</strong>información del servicio DE TRAS.</li><li><strong>MEDIASUBTYPE_ISDB_SI:</strong>Información del servicio de difusión digital de servicios integrados (ISDB).</li><li><strong>MEDIASUBTYPE_MPEG2DATA:</strong>datos de la sección MPEG-2.</li></ul> | 
+| Tipo de formato | Ninguno | 
+
 
 
 
  
 
-### <a name="mpeg-2-video"></a>VÍDEO MPEG-2
+### <a name="mpeg-2-video"></a>Vídeo MPEG-2
 
 
 
 | Etiqueta | Value |
 |------------------|------------------------------------------|
-| Tipo principal       | **VÍDEO \_ MEDIATYPE**                     |
+| Tipo principal       | **Vídeo \_ DE MEDIATYPE**                     |
 | Subtype          | **VÍDEO DE MEDIASUBTYPE \_ MPEG2 \_**           |
 | Tipo de formato      | **FORMAT \_ MPEG2Video**                   |
 | Estructura de formato | [**MPEG2VIDEOINFO**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) |

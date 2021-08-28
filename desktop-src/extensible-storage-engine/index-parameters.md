@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: parámetros de índice'
+description: 'Más información sobre: Parámetros de índice'
 title: Parámetros de índice
 TOCTitle: Index Parameters
 ms:assetid: df3dfbc7-71fb-4ae2-a94a-b00eaa1572ec
@@ -15,415 +15,101 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2901887233ff8b25114334c97e6a731072a69ce1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f53430a6b624b6b65a5d02727dc16d7f1fba669d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083410"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122470901"
 ---
 # <a name="index-parameters"></a>Parámetros de índice
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="index-parameters"></a>Parámetros de índice
 
-Este tema contiene los parámetros que se utilizan para el índice.
+Este tema contiene parámetros que se usan para el índice.
 
 *JET_paramIndexTupleIncrement*  
 132  
 
-Este parámetro especifica el valor predeterminado para el incremento de desplazamiento usado para recorrer el valor de la columna de origen mientras se genera cada tupla. Para obtener más información, vea la estructura [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) .
+Este parámetro especifica el valor predeterminado para el incremento de desplazamiento utilizado para desplazarse paso a paso por el valor de la columna de origen al generar cada tupla. Para obtener más información, vea la [estructura JET_TUPLELIMITS](./jet-tuplelimits-structure.md) datos.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 - 32767</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows Vista y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>1</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 - 32767</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Windows Vista y versiones posteriores</p> | 
+
 
 
 *JET_paramIndexTupleStart*  
 133  
 
-Este parámetro especifica el valor predeterminado para el desplazamiento en el valor de la columna de origen en el que se iniciará la generación de tupla. Para obtener más información, vea la estructura [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) .
+Este parámetro especifica el valor predeterminado para el desplazamiento en el valor de columna de origen en el que se iniciará la generación de tupla. Para obtener más información, vea la [estructura JET_TUPLELIMITS](./jet-tuplelimits-structure.md) datos.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>0 - 32767</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows Vista y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>0</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 - 32767</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Windows Vista y versiones posteriores</p> | 
+
 
 
 *JET_paramIndexTuplesLengthMax*  
 111  
 
-Este parámetro especifica el valor predeterminado para la longitud máxima de tupla en un índice de tupla. Para obtener más información, vea la estructura [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) .
+Este parámetro especifica el valor predeterminado para la longitud máxima de tupla en un índice de tupla. Para obtener más información, vea la [estructura JET_TUPLELIMITS](./jet-tuplelimits-structure.md) datos.
 
-**Windows Vista:**  Antes de Windows Vista, si se establece este parámetro en cero, se volverá a establecer en su valor predeterminado. Para Windows Vista, ya no se admite.
+**Windows Vista:**  Antes de Windows Vista, establecer este parámetro en cero lo establecería de nuevo en su valor predeterminado. Para Windows Vista, ya no se admite.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>10</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000, Windows XP y Windows Server 2003: </strong>  0, 2-255</p>
-<p><strong>Windows Vista:</strong>  2-255</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>10</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong> 0, 2-255</p><p><strong>Windows Vista:</strong> 2-255</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 *JET_paramIndexTuplesLengthMin*  
 110  
 
-Este parámetro especifica el valor predeterminado para la longitud de tupla mínima en un índice de tupla. Consulte [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) para obtener más información.
+Este parámetro especifica el valor predeterminado para la longitud mínima de tupla en un índice de tupla. Consulte [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) para obtener más información.
 
-**Windows Vista:**  Antes de Windows Vista, si se establece este parámetro en cero, se volverá a establecer en su valor predeterminado. Para Windows Vista, ya no se admite.
+**Windows Vista:**  Antes de Windows Vista, establecer este parámetro en cero lo establecería de nuevo en su valor predeterminado. Para Windows Vista, ya no se admite.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>3</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000, Windows XP y Windows Server 2003: </strong>  0, 2-255</p>
-<p><strong>Windows Vista:</strong>  2-255</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>3</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong> 0, 2-255</p><p><strong>Windows Vista:</strong> 2-255</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 *JET_paramIndexTuplesToIndexMax*  
 112  
 
-Este parámetro especifica el valor predeterminado para la longitud máxima de una cadena de origen que se va a dividir en tuplas para un índice de tupla. Consulte [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) para obtener más información.
+Este parámetro especifica el valor predeterminado para la longitud máxima de una cadena de origen que se interrumpirá en tuplas para un índice de tupla. Consulte [JET_TUPLELIMITS](./jet-tuplelimits-structure.md) para obtener más información.
 
-**Windows Vista:**  Antes de Windows Vista, si se establece este parámetro en cero, se volverá a establecer en su valor predeterminado. Para Windows Vista, ya no se admite.
+**Windows Vista:**  Antes de Windows Vista, al establecer este parámetro en cero, se vuelve a establecer en su valor predeterminado. Por Windows Vista, ya no se admite.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>32767</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong>  0 – 32767</p>
-<p><strong>Windows Vista:</strong>  1 – 32767</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>32767</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong> 0 – 32767</p><p><strong>Windows Vista:</strong> 1 – 32767</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 *JET_paramUnicodeIndexDefault*  
 72  
 
-Este parámetro controla los parámetros Unicode predeterminados usados por cualquier índice en una columna de clave Unicode. El tipo de este parámetro es [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) y, en realidad, se pasa mediante un puntero de búfer almacenado en el parámetro de entero de [JetGetSystemParameter](./jetgetsystemparameter-function.md) y [JetSetSystemParameter](./jetsetsystemparameter-function.md). El tamaño del búfer debe ser igual al tamaño de [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) y se debe pasar a [JetGetSystemParameter](./jetgetsystemparameter-function.md) mediante el parámetro de tamaño de búfer de cadena. Esto es claramente incoherente, pero es el comportamiento de este parámetro.
+Este parámetro controla los parámetros Unicode predeterminados utilizados por cualquier índice sobre una columna de clave Unicode. El tipo de este parámetro es [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) se pasa realmente mediante un puntero de búfer almacenado en el parámetro entero [de JetGetSystemParameter](./jetgetsystemparameter-function.md) y [JetSetSystemParameter](./jetsetsystemparameter-function.md). El tamaño del búfer debe ser igual al tamaño de [JET_UNICODEINDEX](./jet-unicodeindex-structure.md) y debe pasarse a [JetGetSystemParameter](./jetgetsystemparameter-function.md) mediante el parámetro de tamaño de búfer de cadena. Esto es claramente incoherente, pero ese es el comportamiento de este parámetro.
 
-El valor predeterminado de este parámetro contiene un LCID para la configuración regional de Inglés de EE. UU. y las siguientes marcas de [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa): LCMAP_SORTKEY, NORM_IGNORECASE, NORM_IGNOREKANATYPE y NORM_IGNOREWIDTH.
+El valor predeterminado de este parámetro contiene un LCID para la configuración regional del inglés de EE. UU. y las siguientes marcas [LCMapStringW:](/windows/win32/api/winnls/nf-winnls-lcmapstringa)LCMAP_SORTKEY, NORM_IGNORECASE, NORM_IGNOREKANATYPE y NORM_IGNOREWIDTH.
 
-**Windows 2000:**  Se omite SORTID en el LCID. Siempre se usa un SORTID de SORT_DEFAULT.
+**Windows 2000:**  El SORTID del LCID se omite. Siempre se usa un SORTID de SORT_DEFAULT de datos.
 
-**Windows 2000:**  Las marcas [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa) deben contener las marcas siguientes: LCMAP_SORTKEY, NORM_IGNORECASE, NORM_IGNOREKANATYPE y NORM_IGNOREWIDTH. Además, las marcas de [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa)pueden contener las marcas siguientes: NORM_IGNORENONSPACE.
+**Windows 2000:**  Las [marcas LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa) deben contener las marcas siguientes: LCMAP_SORTKEY, NORM_IGNORECASE, NORM_IGNOREKANATYPE y NORM_IGNOREWIDTH. Además, las [marcas LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa)pueden contener las marcas siguientes: NORM_IGNORENONSPACE.
 
-**Nota:**  Si su aplicación desea almacenar datos Unicode, se recomienda encarecidamente que no se base en los parámetros Unicode predeterminados para los índices. El uso del Inglés de EE. UU. es equivalente al uso de la configuración regional de todos los idiomas y se sabe que las marcas [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa)predeterminadas interfieren seriamente con algunos lenguajes. Siempre debe especificar su propia configuración para los parámetros Unicode a JetCreateIndex2 con [JET_INDEXCREATE](./jet-indexcreate-structure.md).
+**Nota**  Si la aplicación desea almacenar datos Unicode, se recomienda encarecidamente no confiar en los parámetros Unicode predeterminados para los índices. El uso del inglés de EE. UU. equivale al uso de la configuración regional invariable y se sabe que las marcas [LCMapStringW](/windows/win32/api/winnls/nf-winnls-lcmapstringa)predeterminadas interfieren gravemente con algunos idiomas. Siempre debe especificar su propia configuración para los parámetros Unicode en JetCreateIndex2 mediante [JET_INDEXCREATE](./jet-indexcreate-structure.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>Especial</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>JET_UNICODEINDEX * (JET_UNICODEINDEX)</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>Especial</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>Especial</p> | | <p>Escriba:</p> | <p>JET_UNICODEINDEX* (JET_UNICODEINDEX)</p> | | <p>Intervalo válido:</p> | <p>Especial</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>All</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración StopServiceGrbit'
-title: Enumeración StopServiceGrbit (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Enumeración StopServiceGrbit'
+title: Enumeración StopServiceGrbit (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: StopServiceGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.StopServiceGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.stopservicegrbit(v=EXCHG.10)
@@ -32,21 +32,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 54e54576dfb1023ec4e3bc55ddd198a77f0ddf25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c8280bf4abfbc9eb5818d1aab460a17298db7b0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696608"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477461"
 ---
-# <a name="stopservicegrbit-enumeration"></a>Enumeración StopServiceGrbit
+# <a name="stopservicegrbit-enumeration"></a>StopServiceGrbit (enumeración)
 
-Opciones de [JetStopServiceInstance2 (JET_INSTANCE, StopServiceGrbit)](./windows8api.jetstopserviceinstance2-method.md).
+Opciones para [JetStopServiceInstance2(JET_INSTANCE, StopServiceGrbit).](./windows8api.jetstopserviceinstance2-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,47 +65,18 @@ public enum StopServiceGrbit
 
 ## <a name="members"></a>Miembros
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Nombre del miembro</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>Todo</td>
-<td>Detiene todos los servicios de ESE para la instancia especificada.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>BackgroundUserTasks</td>
-<td>Detiene las tareas de mantenimiento de fondo específico del cliente reiniciables (B + desfragmentación de árbol).</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>QuiesceCaches</td>
-<td>Quiesces todas las cachés desfasadas en el disco. Asincrónica La inactividad se cancela si se llama al bit de reanudación posteriormente.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Reanudar</td>
-<td>Reanuda las operaciones de StopService emitidas previamente, es decir, &quot; reinicia el servicio &quot; . Se puede combinar con los grbits anteriores para reanudar servicios específicos o con 0X0 reanuda todos los servicios detenidos anteriores.
-<p>ADVERTENCIA: este bit solo se puede usar para reanudar JET_bitStopServiceBackground y JET_bitStopServiceQuiesceCaches, si ha realizado una JET_bitStopServiceAll o JET_bitStopServiceAPI, se producirá un error al intentar usar JET_bitStopServiceResume.</p></td>
-</tr>
-</tbody>
-</table>
+
+|  | Nombre del miembro | Descripción | 
+|--|-------------|-------------|
+|  | Todo | Detiene todos los servicios ese para la instancia especificada. | 
+|  | BackgroundUserTasks | Detiene las tareas de mantenimiento en segundo plano específicas del cliente reiniciables (desfragmentación de árbol B+). | 
+|  | QuiesceCaches | Se desasocian todas las cachés desasembladas en el disco. Asincrónica La anulación de la actividad se cancela si se llama al bit Reanudar posteriormente. | 
+|  | Reanudar | Reanuda las operaciones StopService emitidas anteriormente, es decir, "reinicia el servicio". Se puede combinar con los bits grbits anteriores para reanudar servicios específicos o con 0x0 reanuda todos los servicios detenidos anteriores.<p>Advertencia: Este bit solo se puede usar para reanudar JET_bitStopServiceBackground y JET_bitStopServiceQuiesceCaches, si ha hecho una JET_bitStopServiceAll o JET_bitStopServiceAPI, se producirá un error al intentar usar JET_bitStopServiceResume.</p> | 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 2f5772429fa0cd7f2f45009ff1867141a845088b
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: a75adbab65c735a298c6a1599718cc6df5b690dd
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885487"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623331"
 ---
 # <a name="swbemobjectexgettext_-method"></a>Método SWbemObjectEx.GetText \_
 
@@ -49,11 +49,11 @@ strObj = .GetText_( _
 *iTextFormat* \[ En\]
 </dt> <dd>
 
-Obligatorio. Valor de [**WbemObjectTextFormatEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemobjecttextformatenum) que especifica el formato XML resultante.
+Necesario. Valor de [**WbemObjectTextFormatEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemobjecttextformatenum) que especifica el formato XML resultante.
 
 </dd> <dt>
 
-*iFlags* \[ en, opcional\]
+*iFlags* \[ in, opcional\]
 </dt> <dd>
 
 Marcas de operación reservadas. El valor predeterminado es 0 (cero).
@@ -84,7 +84,7 @@ Error no especificado.
 
 </dd> <dt>
 
-**wbemErrNotFound:** 2147749890 (0x80041002)
+**wbemErrNotFound** : 2147749890 (0x80041002)
 </dt> <dd>
 
 No se encontró el formato solicitado.
@@ -107,7 +107,7 @@ Se produjo un error interno, grave e inesperado. Comunique este error al Servici
 
 ## <a name="remarks"></a>Comentarios
 
-Al construir [**SWbemNamedValueSet,**](swbemnamedvalueset.md)solo se permiten los siguientes pares nombre-valor.
+Al construir [**SWbemNamedValueSet**](swbemnamedvalueset.md), solo se permiten los siguientes pares nombre-valor.
 
 
 
@@ -119,13 +119,13 @@ Al construir [**SWbemNamedValueSet,**](swbemnamedvalueset.md)solo se permiten lo
 <thead>
 <tr class="header">
 <th>Nombre</th>
-<th>Valor</th>
+<th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>LocalOnly</td>
-<td><strong>VT_BOOL</strong><br/> Si <strong>es TRUE</strong>, solo las propiedades y los métodos definidos localmente están presentes en el XML resultante. El valor predeterminado es <strong>FALSE.</strong><br/></td>
+<td><strong>VT_BOOL</strong><br/> Si <strong>es TRUE,</strong>solo las propiedades y los métodos definidos localmente están presentes en el XML resultante. El valor predeterminado es <strong>FALSE.</strong><br/></td>
 </tr>
 <tr class="even">
 <td>IncludeQualifiers</td>
@@ -135,9 +135,9 @@ Al construir [**SWbemNamedValueSet,**](swbemnamedvalueset.md)solo se permiten lo
 <td>PathLevel</td>
 <td><strong>VT-I4</strong><br/> El valor predeterminado es 0 (cero). Los valores posibles son:<br/>
 <ul>
-<li>0: se &lt; crea una clase o un elemento en función de si el objeto es una clase o &gt; <INSTANCE> instancia.</li>
+<li>0: se <CLASS> crea un elemento o en función de si el objeto es una clase o <INSTANCE> instancia.</li>
 <li>1: se <VALUE.NAMEDOBJECT> genera un elemento .</li>
-<li>2: se <VALUE.OBJECTWITHLOCALPATH> genera un elemento .</li>
+<li>2: Se <VALUE.OBJECTWITHLOCALPATH> genera un elemento .</li>
 <li>3: Se <VALUE.OBJECTWITHPATH> genera un elemento .</li>
 </ul></td>
 </tr>
@@ -160,7 +160,7 @@ Para obtener más información sobre cómo crear [**un SWbemNamedValueSet**](swb
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente script muestra cómo obtener una representación XML de la definición de [**clase \_ Bios de Win32.**](/windows/desktop/CIMWin32Prov/win32-bios) Al especificar una instancia determinada de **Bios de \_ Win32,** puede obtener los datos de ese objeto en XML.
+El siguiente script muestra cómo obtener una representación XML de la definición de clase Bios de [**Win32. \_**](/windows/desktop/CIMWin32Prov/win32-bios) Al especificar una instancia determinada de **Bios Win32, \_** puede obtener los datos de ese objeto en XML.
 
 
 ```VB
@@ -181,7 +181,7 @@ wscript.echo Text
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
