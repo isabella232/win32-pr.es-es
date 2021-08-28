@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 847806e395998f8bc82c302f4403c5bc2b651323ec6c7089803bc66e5f18dc4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df3ea9c7ff4710837b859003b617c92ed288e261
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118439520"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631663"
 ---
 # <a name="spinner-element"></a>Elemento Spinner
 
@@ -37,10 +37,10 @@ Representa un [control Spinner.](windowsribbon-controls-spinner.md)
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -81,7 +81,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
@@ -89,7 +89,7 @@ Puede producirse una o varias veces para cada [**elemento ControlGroup**](window
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para [spinner.](windowsribbon-controls-spinner.md)
+En el ejemplo siguiente se muestra el marcado básico para [spinner](windowsribbon-controls-spinner.md).
 
 En esta sección de código se muestran las declaraciones De comando de **spinner,** con un elemento [**Group**](windowsribbon-element-group.md) que funciona como contenedor primario para el **elemento Spinner.**
 
@@ -109,7 +109,7 @@ En esta sección de código se muestran las declaraciones De comando de **spinne
 
 
 
-En esta sección de código se muestran las declaraciones del control **Spinner.**
+En esta sección de código se muestran las declaraciones de control **Spinner.**
 
 
 ```XML

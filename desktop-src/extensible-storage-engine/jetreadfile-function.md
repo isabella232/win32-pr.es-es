@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b7f089e87fad910232bae85e14f1d6d2ab6e00b0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 0c670a6ed5cdcbb4b0fa4ead2415a1e55121dfce
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470282"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985858"
 ---
 # <a name="jetreadfile-function"></a>JetReadFile (Función)
 
@@ -70,7 +70,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errBackupAbortByServer</p> | <p>Error en la operación porque una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>anuló la copia de seguridad externa actual. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad en la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. Esto puede ocurrir para <strong>JetReadFile</strong> cuando:</p><ul><li><p>El identificador de instancia especificado no es válido. Windows XP y versiones posteriores.</p></li><li><p>El tamaño del búfer de salida no es un múltiplo del tamaño de página de la base de datos (<a href="gg269337(v=exchg.10).md">JET_paramDatabasePageSize</a>). Windows XP y versiones posteriores.</p></li><li><p>El tamaño del búfer de salida es menor que tres páginas de base de datos<a href="gg269337(v=exchg.10).md">(JET_paramDatabasePageSize</a>) y esta es la primera llamada a <strong>JetReadFile</strong> para el identificador especificado. Windows XP y versiones posteriores.</p></li></ul> | 
 | <p>JET_errNoBackup</p> | <p>Error en la operación porque no hay ninguna copia de seguridad externa en curso.</p> | 
@@ -78,16 +78,16 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errReadVerifyFailure</p> | <p>Error en la operación porque se detectaron daños en los datos no recuperables al leer una página de base de datos desde un archivo de base de datos o un archivo de revisión de base de datos.</p> | 
 | <p>JET_errLogReadVerifyFailure</p> | <p>Error en la operación porque se detectaron daños en los datos no recuperables al leer un archivo de registro de transacciones. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
-| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando en realidad ya existen varias instancias.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando, de hecho, ya existen varias instancias.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
 
 
 
 Si se ejecuta correctamente, el siguiente fragmento de datos del archivo se leerá en el búfer de salida. También se devolverá el número real de bytes recuperados. El desplazamiento del archivo en el que se producirá la siguiente lectura se avanzará en esta cantidad.
 
-En caso de error, el estado del búfer de salida es indefinido. El error dará lugar a la cancelación de todo el proceso de copia de seguridad de la instancia. En Windows XP y versiones posteriores, la copia de seguridad no se cancelará si se produjo un error al leer un archivo de base de datos. Sin embargo, la copia de seguridad de ese archivo de base de datos todavía se cancelará y se cerrará automáticamente el identificador correspondiente.
+En caso de error, el estado del búfer de salida no está definido. El error dará lugar a la cancelación de todo el proceso de copia de seguridad de la instancia. En Windows XP y versiones posteriores, la copia de seguridad no se cancelará si se produjo un error al leer un archivo de base de datos. Sin embargo, la copia de seguridad de ese archivo de base de datos todavía se cancelará y se cerrará automáticamente el identificador correspondiente.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Cualquier llamada a **JetReadFile** mediante un identificador que ya haya devuelto todos los datos del archivo subyacente (por ejemplo, una llamada anterior devuelve menos bytes que el tamaño del búfer de salida) siempre se realizará correctamente, pero devolverá cero bytes de datos.
 
@@ -97,16 +97,22 @@ No se admiten **varias llamadas simultáneas a JetReadFile** con el mismo identi
 
 Si la instancia está configurada de forma que la limpieza de páginas de la base de datos esté habilitada (consulte JET_paramZeroDatabaseDuringBackup en Parámetros del sistema), los datos eliminados se quitarán de la base de datos como efecto secundario de una llamada a **JetReadFile** en el archivo de base de datos.
 
-Es muy importante comprender cómo interactúan la copia de seguridad y los datos dañados. Si el motor de base de datos detecta daños en los datos durante una copia de seguridad, se producirá un error en la copia de seguridad de la base de datos afectada o de toda la instancia. Se trata de una decisión de diseño consciente diseñada para protegerse contra la pérdida de datos. Si el motor de base de datos permitió que una copia de seguridad se realizara correctamente donde había daños en los datos, es posible que se descartara como resultado una copia de seguridad anterior sin corregir. Esto sería desafortunado, ya que sería posible corregir los daños en los datos en la instancia de live mediante la restauración de esa copia de seguridad y la reproducción de todos los archivos de registro de transacciones en esa base de datos. En este escenario de pérdida de datos cero se supone que el registro circular no está habilitado [(consulte](./transaction-log-parameters.md) JET_paramCircularLog en [Parámetros del sistema](./extensible-storage-engine-system-parameters.md)).
+Es muy importante comprender cómo interactúan la copia de seguridad y los datos dañados. Si el motor de base de datos detecta daños en los datos durante una copia de seguridad, se producirá un error en la copia de seguridad de la base de datos afectada o de toda la instancia. Se trata de una decisión de diseño consciente diseñada para protegerse contra la pérdida de datos. Si el motor de base de datos permitió que una copia de seguridad se realizara correctamente donde había daños en los datos, es posible que se descartara como resultado una copia de seguridad anterior sin corregir. Esto sería desafortunado, ya que sería posible corregir los daños en los datos en la instancia de live mediante la restauración de esa copia de seguridad y la reproducción de todos los archivos de registro de transacciones en esa base de datos. En este escenario de pérdida de datos cero se supone que el registro circular no está habilitado [(vea JET_paramCircularLog](./transaction-log-parameters.md) parámetros [del sistema](./extensible-storage-engine-system-parameters.md)).
 
-También es importante comprender que, cuando haya daños en los datos, la copia de seguridad de streaming será el lugar más probable en el que se detectará por primera vez. Este es el caso porque la copia de seguridad de streaming es el único proceso que examina de forma rutinaria cada página del archivo de base de datos. También es probable que la copia de seguridad de streaming sea el primer proceso para detectar los primeros signos de error de hardware, como se manifestó por errores intermitentes de daños en los datos. Esto se debe a la cantidad de datos recuperados por la copia de seguridad, así como a la velocidad a la que se recuperan.
+También es importante comprender que, cuando haya daños en los datos, la copia de seguridad de streaming será el lugar más probable en el que se detectará primero. Este es el caso porque la copia de seguridad de streaming es el único proceso que examina de forma rutinaria cada página del archivo de base de datos. También es probable que la copia de seguridad de streaming sea el primer proceso para detectar los primeros signos de error de hardware, como se manifestó por errores intermitentes de daños en los datos. Esto se debe a la cantidad de datos recuperados por la copia de seguridad, así como a la velocidad a la que se recuperan.
 
 El motor de base de datos detecta daños en los datos mediante el uso de sumas de comprobación de bloques. Estas sumas de comprobación se establecen justo antes de la escritura de una página de base de datos y se comprueban en una página de base de datos leída. Este esquema permite al motor de base de datos determinar que los datos se han dañado en algún momento, pero no permite que el motor de base de datos determine el origen de los daños. Históricamente, se ha descubierto que la causa predominante de estos daños procede de orígenes distintos del propio motor de base de datos.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

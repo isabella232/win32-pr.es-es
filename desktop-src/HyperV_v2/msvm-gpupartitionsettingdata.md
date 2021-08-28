@@ -1,7 +1,7 @@
 ---
-description: Representa el estado configurado de un dispositivo de partición GPU.
+description: Representa el estado configurado de un dispositivo de partición de GPU.
 ms.assetid: 33ec4ea2-4e79-4c84-8abe-da8308ad6702
-title: Msvm_GpuPartitionSettingData (clase)
+title: Msvm_GpuPartitionSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7d8c9809b3a062654eaf0fb7a73b75b0188f7284
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39fe0f5a794875c25cf844c39df2217fae04d1b791a5a5174358fa0ea70150ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014533"
 ---
-# <a name="msvm_gpupartitionsettingdata-class"></a>MSVM \_ GpuPartitionSettingData (clase)
+# <a name="msvm_gpupartitionsettingdata-class"></a>Clase Msvm \_ GpuPartitionSettingData
 
-Representa el estado configurado de un dispositivo de partición GPU.
+Representa el estado configurado de un dispositivo de partición de GPU.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -61,23 +61,23 @@ class Msvm_GpuPartitionSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ GpuPartitionSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ GpuPartitionSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ GpuPartitionSettingData** tiene estas propiedades.
+La **clase Msvm \_ GpuPartitionSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **MaxPartitionCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 La cantidad máxima de motores de proceso que aparecerán en la partición de GPU.
@@ -87,10 +87,10 @@ La cantidad máxima de motores de proceso que aparecerán en la partición de GP
 **MaxPartitionDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 La cantidad máxima de motores de descodificación que aparecerán en la partición de GPU.
@@ -100,10 +100,10 @@ La cantidad máxima de motores de descodificación que aparecerán en la partici
 **MaxPartitionEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 La cantidad máxima de motores de codificación que aparecerán en la partición de GPU.
@@ -113,10 +113,10 @@ La cantidad máxima de motores de codificación que aparecerán en la partición
 **MaxPartitionVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Cantidad máxima de VRAM que aparecerá en la partición de GPU.
@@ -126,62 +126,62 @@ Cantidad máxima de VRAM que aparecerá en la partición de GPU.
 **MinPartitionCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La cantidad mínima de motores de proceso que aparecerán en la partición de GPU.
+Cantidad mínima de motores de proceso que aparecerán en la partición de GPU.
 
 </dd> <dt>
 
 **MinPartitionDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La cantidad mínima de motores de descodificación que aparecerán en la partición de GPU.
+Cantidad mínima de motores de descodificación que aparecerán en la partición de GPU.
 
 </dd> <dt>
 
 **MinPartitionEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La cantidad mínima de motores de codificación que aparecerán en la partición de GPU.
+Cantidad mínima de motores de codificación que aparecerán en la partición de GPU.
 
 </dd> <dt>
 
 **MinPartitionVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-La cantidad mínima de VRAM que aparecerá en la partición de GPU.
+Cantidad mínima de VRAM que aparecerá en la partición de GPU.
 
 </dd> <dt>
 
 **OptimalPartitionCompute**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 La cantidad óptima de motores de proceso que aparecerán en la partición de GPU.
@@ -191,10 +191,10 @@ La cantidad óptima de motores de proceso que aparecerán en la partición de GP
 **OptimalPartitionDecode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 La cantidad óptima de motores de descodificación que aparecerán en la partición de GPU.
@@ -204,10 +204,10 @@ La cantidad óptima de motores de descodificación que aparecerán en la partici
 **OptimalPartitionEncode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 La cantidad óptima de motores de codificación que aparecerán en la partición de GPU.
@@ -217,13 +217,13 @@ La cantidad óptima de motores de codificación que aparecerán en la partición
 **OptimalPartitionVRAM**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Cantidad óptima de VRAM que aparecerá en la partición de GPU.
+La cantidad óptima de VRAM que aparecerá en la partición de GPU.
 
 </dd> </dl>
 
@@ -233,10 +233,10 @@ Cantidad óptima de VRAM que aparecerá en la partición de GPU.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -245,7 +245,7 @@ Cantidad óptima de VRAM que aparecerá en la partición de GPU.
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> </dl>
 
  

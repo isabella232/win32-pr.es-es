@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: WQL (SQL para WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c9a1a3b0db3f383bd8ba44aeb1e433b5aab02b4e9b4773ea221e1a0254ae037
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72e2c80473874390851e81a5f2acebcd6d7e1497
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738824"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626761"
 ---
 # <a name="wql-sql-for-wmi"></a>WQL (SQL para WMI)
 
@@ -20,8 +20,8 @@ El lenguaje de consulta de WMI (WQL) es un subconjunto del American National Sta
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -60,7 +60,7 @@ El lenguaje de consulta de WMI (WQL) es un subconjunto del American National Sta
 </tr>
 <tr class="even">
 <td><a href="wql-operators.md">ISA</a></td>
-<td>Operador que aplica una consulta a las subclases de una clase especificada. Para obtener más información, vea <a href="isa-operator-for-event-queries.md">Isa Operator for Event Queries</a>, <a href="isa-operator-for-data-queries.md">ISA Operator for Data Queries</a>y <a href="isa-operator-for-schema-queries.md">ISA Operator for Schema Queries</a>.<br/></td>
+<td>Operador que aplica una consulta a las subclases de una clase especificada. Para obtener más información, vea <a href="isa-operator-for-event-queries.md">ISA Operator for Event Queries</a>, <a href="isa-operator-for-data-queries.md">ISA Operator for Data Queries</a>y <a href="isa-operator-for-schema-queries.md">ISA Operator for Schema Queries</a>.<br/></td>
 </tr>
 <tr class="odd">
 <td>KEYSONLY<br/></td>
@@ -97,14 +97,14 @@ El lenguaje de consulta de WMI (WQL) es un subconjunto del American National Sta
 </tr>
 <tr class="odd">
 <td><a href="where-clause.md">WHERE</a></td>
-<td>Limita el ámbito de una consulta de datos, eventos o esquema.<br/></td>
+<td>Limita el ámbito de una consulta de datos, eventos o esquemas.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="within-clause.md">WITHIN</a></td>
 <td>Especifica un intervalo de sondeo o agrupación.<br/> Use esta cláusula con consultas de eventos.<br/></td>
 </tr>
 <tr class="odd">
-<td>FALSE<br/></td>
+<td>false<br/></td>
 <td>Operador booleano que se evalúa como 0 (cero).</td>
 </tr>
 </tbody>
@@ -129,7 +129,7 @@ El lenguaje de consulta de WMI (WQL) es un subconjunto del American National Sta
 [Formatos de fecha admitidos por WQL](wql-supported-date-formats.md)
 </dt> <dt>
 
-[Formatos de tiempo compatibles con WQL](wql-supported-time-formats.md)
+[Formatos de hora compatibles con WQL](wql-supported-time-formats.md)
 </dt> </dl>
 
  

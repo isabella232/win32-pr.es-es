@@ -1,6 +1,6 @@
 ---
-title: Elemento Instrumentation (instrumentationManifest)
-description: Define los tipos de instrumentación que contiene el manifiesto (por ejemplo, la instrumentación de eventos o de contadores).
+title: elemento instrumentation (instrumentationManifest)
+description: Define los tipos de instrumentación que contiene el manifiesto (por ejemplo, instrumentación de eventos o contadores).
 ms.assetid: a1737af5-2bf2-4841-bd37-450809e59b8e
 keywords:
 - elemento de instrumentación EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 061fbd327bac8fc6512fda90c0176cd8a20c83d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58dd3d5ffdeb0e8d6b028718191165c19271e0fa321ddf2b81c3a3877273b723
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863475"
 ---
-# <a name="instrumentation-instrumentationmanifest-element"></a>Elemento Instrumentation (instrumentationManifest)
+# <a name="instrumentation-instrumentationmanifest-element"></a>elemento instrumentation (instrumentationManifest)
 
-Define los tipos de instrumentación que contiene el manifiesto (por ejemplo, la instrumentación de eventos o de contadores).
+Define los tipos de instrumentación que contiene el manifiesto (por ejemplo, instrumentación de eventos o contadores).
 
 ``` syntax
 <xs:element name="instrumentation"
@@ -30,7 +30,7 @@ Define los tipos de instrumentación que contiene el manifiesto (por ejemplo, la
  />
 ```
 
-El elemento de **instrumentación** se define mediante el elemento [**instrumentationManifest**](eventmanifestschema-instrumentationmanifest-element.md) .
+El **elemento instrumentationManifest** define el elemento [**de**](eventmanifestschema-instrumentationmanifest-element.md) instrumentación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **instrumentación** se define mediante el elemento [**instrument
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

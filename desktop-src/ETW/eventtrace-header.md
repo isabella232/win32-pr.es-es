@@ -1,7 +1,7 @@
 ---
 description: Clase de tipo de evento para el evento de encabezado del archivo de registro. Esta clase contiene información sobre la sesión de seguimiento de eventos.
 ms.assetid: 3d0c4044-da06-4850-95c4-99b4ea28fcd9
-title: EventTrace_Header (clase)
+title: EventTrace_Header clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,18 +33,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: dea803849d6aa15c2a3a14deb850d85ade569116
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5d0515b9d7d720409e0a72aec7aad5dc54561637563976a35d03b3e0dec79f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829995"
 ---
-# <a name="eventtrace_header-class"></a>\_Clase de encabezado eventtracer
+# <a name="eventtrace_header-class"></a>Clase EventTrace \_ Header
 
 Clase de tipo de evento para el evento de encabezado del archivo de registro. Esta clase contiene información sobre la sesión de seguimiento de eventos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,20 +78,20 @@ class EventTrace_Header : EventTraceEvent
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ encabezado eventtracer** tiene estos tipos de miembros:
+La **clase EventTrace \_ Header** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ encabezado eventtracer** tiene estas propiedades.
+La **clase EventTrace \_ Header** tiene estas propiedades.
 
 <dl> <dt>
 
 **BootTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -100,14 +100,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (17)
 </dt> </dl>
 
-Hora a la que se inició el sistema, en intervalos de 100 segundos desde la medianoche del 1 de enero de 1601.
+Hora a la que se inició el sistema, en intervalos de 100 nanosegundos desde la medianoche del 1 de enero de 1601.
 
 </dd> <dt>
 
 **BufferSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -123,7 +123,7 @@ Tamaño de los búferes de la sesión de seguimiento de eventos, en kilobytes.
 **BuffersLost**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -139,7 +139,7 @@ Número total de búferes perdidos.
 **BuffersWritten**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -155,7 +155,7 @@ Número total de búferes escritos por la sesión de seguimiento de eventos.
 **CPUSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -164,16 +164,16 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (13)
 </dt> </dl>
 
-Velocidad de la CPU, en megahercios.
+Velocidad de CPU, en megahercios.
 
-**Windows 2000:** No compatible.
+**Windows 2000:** No se admite.
 
 </dd> <dt>
 
 **EndTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -182,14 +182,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (5)
 </dt> </dl>
 
-Hora a la que se detuvo la sesión de seguimiento de eventos en intervalos de 100 segundos desde la medianoche del 1 de enero de 1601. Este valor puede ser 0 si está consumiendo eventos en tiempo real o desde un archivo de registro en el que el proporcionado todavía está registrando eventos.
+Hora a la que se detuvo la sesión de seguimiento de eventos, en intervalos de 100 nanosegundos desde la medianoche del 1 de enero de 1601. Este valor puede ser 0 si está consumiendo eventos en tiempo real o desde un archivo de registro en el que la proporciona todavía está registrando eventos.
 
 </dd> <dt>
 
 **EventsLost**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -205,29 +205,29 @@ Número de eventos perdidos durante la sesión de seguimiento de eventos.
 **LogFileMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (8), **formato ("x")**
+Calificadores: **WmiDataId** (8), **Format("x")**
 </dt> </dl>
 
-Modo de registro actual para la sesión de seguimiento de eventos. Para obtener una lista de valores, vea constantes del modo de registro.
+Modo de registro actual para la sesión de seguimiento de eventos. Para obtener una lista de valores, vea Constantes de modo de registro.
 
 </dd> <dt>
 
-**NombreDeArchivoDeRegistro**
+**LogFileName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (15), **puntero**
+Calificadores: **WmiDataId** (15), **Pointer**
 </dt> </dl>
 
 Nombre del archivo de registro de seguimiento de eventos que contiene los eventos.
@@ -237,13 +237,13 @@ Nombre del archivo de registro de seguimiento de eventos que contiene los evento
 **LoggerName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (14), **puntero**
+Calificadores: **WmiDataId** (14), **Pointer**
 </dt> </dl>
 
 Nombre de la sesión de seguimiento de eventos.
@@ -253,7 +253,7 @@ Nombre de la sesión de seguimiento de eventos.
 **MaxFileSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -269,7 +269,7 @@ Tamaño máximo del archivo de registro, en megabytes.
 **NumberOfProcessors**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -285,7 +285,7 @@ Número de procesadores del sistema.
 **PerfFreq**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -294,14 +294,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (18)
 </dt> </dl>
 
-Frecuencia del contador de rendimiento de alta resolución, si existe.
+Frecuencia del contador de rendimiento de alta resolución, si existe uno.
 
 </dd> <dt>
 
 **PointerSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -317,7 +317,7 @@ Tamaño de un tipo de datos de puntero, en bytes.
 **ProviderVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -333,7 +333,7 @@ Número de compilación del sistema operativo.
 **ReservedFlags**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -349,7 +349,7 @@ Reservado.
 **StartBuffers**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -365,7 +365,7 @@ Reservado.
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -374,14 +374,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (19)
 </dt> </dl>
 
-Hora a la que se inició la sesión de seguimiento de eventos, en intervalos de 100 segundos desde la medianoche del 1 de enero de 1601.
+Hora a la que se inició la sesión de seguimiento de eventos, en intervalos de 100 nanosegundos desde la medianoche del 1 de enero de 1601.
 
 </dd> <dt>
 
 **TimerResolution**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -397,23 +397,23 @@ Resolución del temporizador de hardware, en unidades de 100 nanosegundos.
 **TimeZoneInformation**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (16), **extensión ("noprint")**, **Max** (176)
+Calificadores: **WmiDataId** (16), **Extension("NoPrint")**, **Max** (176)
 </dt> </dl>
 
-Estructura [**de \_ \_ información de zona horaria**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) que contiene la zona horaria para los miembros **BootTime**, **EndTime** y **startTime** .
+Estructura [**TIME \_ ZONE \_ INFORMATION**](/windows/win32/api/timezoneapi/ns-timezoneapi-time_zone_information) que contiene la zona horaria de los miembros **BootTime**, **EndTime** **y StartTime.**
 
 </dd> <dt>
 
 **Versión**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -422,17 +422,17 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (2)
 </dt> </dl>
 
-Número de versión del sistema operativo. A partir de los bytes de orden inferior, los dos primeros bytes contienen la versión principal, los dos bytes siguientes contienen la versión secundaria, los dos bytes siguientes contienen Service Pack versión principal y los dos últimos bytes contienen Service Pack versión secundaria.
+Número de versión del sistema operativo. A partir de los bytes de orden bajo, los dos primeros bytes contienen la versión principal, los dos bytes siguientes contienen la versión secundaria, los dos bytes siguientes contienen la versión principal del Service Pack y los dos últimos bytes contienen la versión secundaria del Service Pack.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, desea guardar los valores de las siguientes propiedades para su uso posterior al procesar eventos del archivo de registro.
+Normalmente, desea guardar los valores de las siguientes propiedades para usarlos más adelante al procesar eventos desde el archivo de registro.
 
--   **TimerResolution**: se usa con los miembros **KernelTime** y **UserTime** de la estructura de [**encabezado de \_ seguimiento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) para determinar el costo de CPU para un conjunto de instrucciones. Para obtener más información, vea la sección Comentarios del [**\_ \_ encabezado de seguimiento de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header).
--   **PointerSize**: para las propiedades que contienen el calificador de **puntero** , use este valor para determinar el tamaño del puntero. Tenga en cuenta que este valor puede no ser preciso. Por ejemplo, en un equipo de 64 bits, una aplicación de 32 bits registra punteros de 4 bytes; sin embargo, la sesión establecerá **PointerSize** en 8.
--   **LogFileMode**: se usa para determinar si esta sesión es una sesión de registrador privada. Hay algunas propiedades que no contienen datos para las sesiones del registrador privado. Por ejemplo, los miembros **KernelTime** y **UserTime** de la estructura de [**\_ \_ encabezado de seguimiento de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) .
+-   **TimerResolution:** use con los miembros **KernelTime** y **UserTime** de la estructura [**EVENT TRACE \_ \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) para determinar el costo de CPU de un conjunto de instrucciones. Para obtener más información, vea la sección Comentarios de [**EVENT \_ TRACE \_ HEADER**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header).
+-   **PointerSize:** para las propiedades que contienen el calificador **Pointer,** use este valor para determinar el tamaño del puntero. Tenga en cuenta que este valor puede no ser preciso. Por ejemplo, en un equipo de 64 bits, una aplicación de 32 bits registrará punteros de 4 bytes; sin embargo, la sesión establecerá **PointerSize** en 8.
+-   **LogFileMode**: se usa para determinar si esta sesión es una sesión de registrador privado. Hay algunas propiedades que no contienen datos para las sesiones del registrador privado. Por ejemplo, los **miembros KernelTime** y **UserTime** de la [**estructura EVENT TRACE \_ \_ HEADER.**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -452,7 +452,7 @@ Normalmente, desea guardar los valores de las siguientes propiedades para su uso
 [**EventTraceEvent**](eventtraceevent.md)
 </dt> <dt>
 
-[**encabezado de archivo de registro de seguimiento \_ \_**](/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header)
+[**ENCABEZADO \_ LOGFILE \_ DE SEGUIMIENTO**](/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header)
 </dt> </dl>
 
  

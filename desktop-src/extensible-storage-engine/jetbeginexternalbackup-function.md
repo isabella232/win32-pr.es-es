@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetBeginExternalBackup (función)'
-title: JetBeginExternalBackup función)
+description: 'Más información sobre: JetBeginExternalBackup (Función)'
+title: JetBeginExternalBackup (Función)
 TOCTitle: JetBeginExternalBackup Function
 ms:assetid: 702e6cbf-4648-40f2-b2eb-6194759d4cde
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269292(v=EXCHG.10)
@@ -18,25 +18,25 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d410adb592c3d56d2f9880ec809749396318258a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d0e47a117c044899a8b078290be622cfecdae91
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669713"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482911"
 ---
-# <a name="jetbeginexternalbackup-function"></a>JetBeginExternalBackup función)
+# <a name="jetbeginexternalbackup-function"></a>JetBeginExternalBackup (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetbeginexternalbackup-function"></a>JetBeginExternalBackup función)
+## <a name="jetbeginexternalbackup-function"></a>JetBeginExternalBackup (Función)
 
-La función **JetBeginExternalBackup** inicia una copia de seguridad externa mientras el motor y la base de datos están en línea y activos. **JetBeginExternalBackup** es el primero de una serie de funciones a las que se debe llamar para ejecutar una copia de seguridad en línea (no basada en VSS) correcta.
+La **función JetBeginExternalBackup** inicia una copia de seguridad externa mientras el motor y la base de datos están en línea y activos. **JetBeginExternalBackup** es el primero de una serie de funciones a las que se debe llamar para ejecutar una copia de seguridad correcta en línea (no basada en VSS).
 
-Se puede utilizar una copia de seguridad externa para implementar copias de seguridad completas, incrementales o diferenciales.
+Se puede usar una copia de seguridad externa para implementar copias de seguridad completas, incrementales o diferenciales.
 
-La copia de seguridad será aproximada, en la que la copia de seguridad será coherente con un único punto en el tiempo en el historial de transacciones, pero no es posible controlar el punto exacto en el tiempo.
+La copia de seguridad será aproximada, ya que la copia de seguridad será coherente con un único punto en el tiempo en el historial de transacciones, pero no es posible controlar el momento exacto en el tiempo.
 
 ```cpp
     JET_ERR JET_API JetBeginExternalBackup(
@@ -48,171 +48,65 @@ La copia de seguridad será aproximada, en la que la copia de seguridad será co
 
 *grbit*
 
-Grupo de bits que especifica cero o más de las opciones siguientes.
+Grupo de bits que especifican cero o más de las siguientes opciones.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Value</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitBackupAtomic</p></td>
-<td><p>Esta marca está en desuso. El uso de este bit producirá JET_errInvalidgrbit devuelto.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitBackupIncremental</p></td>
-<td><p>Crea una copia de seguridad incremental en lugar de una copia de seguridad completa. Esto significa que solo se realizará una copia de seguridad de los archivos de registro desde la última copia de seguridad completa o incremental.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitBackupSnapshot</p></td>
-<td><p>Reservado para uso futuro. Definido para Windows XP.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitBackupAtomic</p> | <p>Esta marca está en desuso. El uso de este bit dará lugar a la JET_errInvalidgrbit se devolverá.</p> | 
+| <p>JET_bitBackupIncremental</p> | <p>Crea una copia de seguridad incremental en lugar de una copia de seguridad completa. Esto significa que solo se realizará una copia de seguridad de los archivos de registro desde la última copia de seguridad completa o incremental.</p> | 
+| <p>JET_bitBackupSnapshot</p> | <p>Reservado para uso futuro. Se define para Windows XP.</p> | 
+
 
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBackupInProgress</p></td>
-<td><p>Si ya está en curso una copia de seguridad externa o de instantáneas, se devolverá este error hasta que se llame a <strong>JetBeginExternalBackup</strong> (o a una de las variantes de este). ESE solo permite una copia de seguridad en línea a la vez.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errBackupNotAllowedYet</p></td>
-<td><p>La instancia o el motor de base de datos está en recuperación o en una fase de cierre o finalización.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errCheckpointCorrupt</p></td>
-<td><p>En una copia de seguridad completa, no se pudo leer el archivo de punto de comprobación o no se pudo comprobar el archivo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errCheckpointFileNotFound</p></td>
-<td><p>En una copia de seguridad completa, no se encontró el archivo de punto de comprobación.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No se puede completar la operación porque todas las actividades de la instancia que está asociada a la sesión han dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No se puede completar la operación porque la instancia asociada a la sesión ha encontrado un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p><strong>Windows XP:  </strong> Este valor devuelto se introduce en Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidBackup</p></td>
-<td><p>El registro circular está habilitado y el tipo de copia de seguridad especificado es JET_bitBackupIncremental. Consulte <a href="gg269235(v=exchg.10).md">JET_paramCircularLog</a> en los <strong>errores del registro de transacciones</strong> para obtener información sobre cómo controlar el registro circular o no circular.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidgrbit</p></td>
-<td><p>Uno o varios de los miembros de <em>grbit</em> no eran válidos.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errLoggingDisabled</p></td>
-<td><p>La recuperación o el registro están deshabilitados. No se puede realizar una copia de seguridad en línea si el registro está deshabilitado. Para obtener más información sobre el registro y la recuperación, vea <a href="gg269235(v=exchg.10).md">JET_paramRecovery</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errLogWriteFail</p></td>
-<td><p>El motor ha dejado de escribir en la unidad de registro debido a que el registro está lleno o errores de e/s de disco.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errMissingFullBackup</p></td>
-<td><p>Se especificó la copia de seguridad incremental (con JET_bitBackupIncremental) y nunca se realizó una copia de seguridad completa para una de las bases de datos adjuntas del conjunto de registros.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No se puede completar la operación porque la instancia de asociada a la sesión aún no se ha inicializado.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>No se pudo realizar la operación porque no se pudo asignar suficiente memoria para completarla.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No se puede completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>No se pudo realizar la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad de Windows 2000), donde solo se admite una instancia cuando en realidad existen varias instancias.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No se puede completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-Si la función se ejecuta correctamente, se inicia una copia de seguridad externa y se inicializa el motor de estado de copia de seguridad. Ahora se puede llamar a las API subsiguientes para completar la secuencia de copia de seguridad externa y la secuencia o leer el archivo de base de datos, el archivo de revisión de la base de datos (si se admite) y el archivo de registro. Se puede registrar un evento de que se ha iniciado una copia de seguridad externa.
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errBackupInProgress</p> | <p>Si ya hay una copia de seguridad externa o una copia de seguridad de instantáneas en proceso, se devolverá este error hasta que se llame a <strong>JetBeginExternalBackup</strong> (o a una de las variantes de la misma). ESE solo permite una copia de seguridad en línea a la vez.</p> | 
+| <p>JET_errBackupNotAllowedYet</p> | <p>La instancia o el motor de base de datos se encuentra en fase de recuperación o en fase de apagado o finalización.</p> | 
+| <p>JET_errCheckpointCorrupt</p> | <p>En una copia de seguridad completa, no se pudo leer el archivo de punto de comprobación o no se pudo comprobar el archivo.</p> | 
+| <p>JET_errCheckpointFileNotFound</p> | <p>En una copia de seguridad completa, no se encontró el archivo de punto de comprobación.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia asociada a la sesión ha encontrado un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong> Este valor devuelto se introduce en Windows XP.</p> | 
+| <p>JET_errInvalidBackup</p> | <p>El registro circular está habilitado y el tipo de copia de seguridad especificado JET_bitBackupIncremental. Consulte <a href="gg269235(v=exchg.10).md">JET_paramCircularLog</a> los errores del <strong>registro de transacciones</strong> para obtener información sobre cómo controlar el registro circular o no circular.</p> | 
+| <p>JET_errInvalidgrbit</p> | <p>Uno o varios de los <em>miembros grbit</em> no son válidos.</p> | 
+| <p>JET_errLoggingDisabled</p> | <p>La recuperación o el registro están deshabilitados. No puede realizar una copia de seguridad en línea si el registro está deshabilitado. Para obtener más información sobre el registro y la recuperación, <a href="gg269235(v=exchg.10).md">vea JET_paramRecovery</a>.</p> | 
+| <p>JET_errLogWriteFail</p> | <p>El motor ha dejado de escribir en la unidad de registro, debido a que el registro está lleno o a errores de E/S de disco.</p> | 
+| <p>JET_errMissingFullBackup</p> | <p>Se especificó la copia de seguridad incremental (con JET_bitBackupIncremental) y nunca se ha realizado una copia de seguridad completa para una de las bases de datos adjuntas para el conjunto de registro.</p> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errOutOfMemory</p> | <p>Error en la operación porque no se pudo asignar suficiente memoria para completarla.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando en realidad ya existen varias instancias.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p> | 
+
+
+
+Si la función se realiza correctamente, se inicia una copia de seguridad externa y se inicializa el motor de estado de copia de seguridad. Ahora se puede llamar a las API posteriores para completar la secuencia de copia de seguridad externa y transmitir o leer el archivo de base de datos, el archivo de revisión de base de datos (si se admite) y el archivo de registro. Se puede registrar un evento en el que se ha iniciado una copia de seguridad externa.
 
 Si se produce un error en la función, no se iniciará la sesión de copia de seguridad. Si hay otra sesión de copia de seguridad en curso, no se cancelará.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-El proceso de copia de seguridad externo (tal y como lo inició **JetBeginExternalBackup**) está diseñado para permitir una copia de seguridad en línea de transacción aproximada de toda la instancia en un dispositivo de destino como un flujo. La copia de seguridad contendrá todos los archivos de base de datos que están asociados a la instancia de mediante [JetAttachDatabase](./jetattachdatabase-function.md) (para una copia de seguridad completa), seguidos de los archivos de revisión de la base de datos asociados (si se admiten) y, por último, los archivos de registro de transacciones que se generaron durante el proceso de copia de seguridad. El resultado final será un conjunto de archivos que se pueden restaurar a partir de la secuencia, posiblemente combinados con los archivos de registro y de base de datos existentes, y, por último, recuperarse a un estado coherente.
+El proceso de copia de seguridad externo (iniciado por **JetBeginExternalBackup)** está diseñado para permitir una copia de seguridad en línea de transacciones aproximadas de toda la instancia en un dispositivo de destino como una secuencia. La copia de seguridad contendrá todos los archivos de base de datos asociados a la instancia mediante [JetAttachDatabase](./jetattachdatabase-function.md) (para una copia de seguridad completa), seguidos de sus archivos de revisión de base de datos asociados (si se admiten) y, por último, de los archivos de registro de transacciones que se generaron durante el proceso de copia de seguridad. El resultado final será un conjunto de archivos que se pueden restaurar desde la secuencia, posiblemente combinados con los archivos de registro y base de datos existentes y, por último, recuperarse a un estado coherente.
 
-El orden general de las operaciones de una copia de seguridad completa consta de las siguientes llamadas. En primer lugar, se llama a **JetBeginExternalBackup** para iniciar el proceso de copia de seguridad. A continuación, se llama a [JetGetAttachInfo](./jetgetattachinfo-function.md) para obtener la lista de bases de datos que se adjuntan a la instancia de de la que es necesario hacer una copia de seguridad. Para cada una de estas bases de datos, se llama a [JetOpenFile](./jetopenfile-function.md) , seguido de una serie de llamadas a [JetReadFile](./jetreadfile-function.md) y, a continuación, mediante una llamada a [JetCloseFile](./jetclosefile-function.md). A continuación, se llama a [JetGetLogInfo](./jetgetloginfo-function.md) para obtener una lista de los archivos de registro y revisión de la base de datos de los que se va a hacer una copia de seguridad. Para cada uno de estos archivos, se realiza otra secuencia de llamadas a [JetOpenFile](./jetopenfile-function.md), [JetReadFile](./jetreadfile-function.md)y [JetCloseFile](./jetclosefile-function.md) . A continuación, se eliminan los archivos de registro de transacciones no deseados con [JetTruncateLog](./jettruncatelog-function.md). Por último, la copia de seguridad finaliza mediante una llamada a [JetEndExternalBackup](./jetendexternalbackup-function.md).
+El orden general de las operaciones para una copia de seguridad completa consta de las siguientes llamadas. En primer lugar, **se llama a JetBeginExternalBackup** para iniciar el proceso de copia de seguridad. A [continuación, se llama a JetGetAttachInfo](./jetgetattachinfo-function.md) para obtener la lista de bases de datos adjuntas a la instancia de de la que se debe realizar una copia de seguridad. Para cada una de estas bases de datos, se llama a [JetOpenFile,](./jetopenfile-function.md) seguido de varias llamadas a [JetReadFile](./jetreadfile-function.md) y, a continuación, de una llamada a [JetCloseFile.](./jetclosefile-function.md) A continuación, se llama a [JetGetLogInfo](./jetgetloginfo-function.md) para obtener una lista de los archivos de registro y revisión de base de datos de los que se va a realizar una copia de seguridad. Para cada uno de estos archivos, se realiza otra secuencia de [llamadas a JetOpenFile,](./jetopenfile-function.md) [JetReadFile](./jetreadfile-function.md)y [JetCloseFile.](./jetclosefile-function.md) A continuación, los archivos de registro de transacciones no deseados se eliminan [mediante JetTruncateLog](./jettruncatelog-function.md). Por último, la copia de seguridad finaliza mediante una llamada a [JetEndExternalBackup](./jetendexternalbackup-function.md).
 
-También es posible modificar este conjunto de pasos para realizar una copia de seguridad incremental de la instancia. Una copia de seguridad incremental enumera y realiza copias de seguridad de los archivos de registro. Las copias de seguridad incrementales solo son posibles si el registro circular no está habilitado.
+También es posible modificar este conjunto de pasos para realizar una copia de seguridad incremental de la instancia. Una copia de seguridad incremental enumera y hace una copia de seguridad de los archivos de registro. Las copias de seguridad incrementales solo son posibles si el registro circular no está habilitado.
 
-También es posible modificar este conjunto de pasos para permitir que se realicen copias de seguridad diferenciales posteriores de la instancia. Para realizar una copia de seguridad diferencial, no llame a [JetTruncateLog](./jettruncatelog-function.md) en la copia de seguridad completa o incremental anterior. Al no llamar a [JetTruncateLog](./jettruncatelog-function.md), las copias de seguridad posteriores se habilitan para que sean diferenciales con respecto a la última copia de seguridad completa o incremental. Las copias de seguridad diferenciales solo son posibles si el registro circular no está habilitado.
+También es posible modificar este conjunto de pasos para permitir que se realicen copias de seguridad diferenciales posteriores de la instancia. Para realizar una copia de seguridad diferencial, no llame a [JetTruncateLog](./jettruncatelog-function.md) en la copia de seguridad completa o incremental anterior. Al no llamar a [JetTruncateLog,](./jettruncatelog-function.md)permite que las copias de seguridad posteriores sean diferenciales con respecto a la última copia de seguridad completa o incremental. Las copias de seguridad diferenciales solo son posibles si el registro circular no está habilitado.
 
-El archivo de revisión de la base de datos es un archivo auxiliar especial que se usa para almacenar imágenes de páginas de base de datos en determinadas circunstancias durante la copia de seguridad. Este archivo debe estar presente en la misma ubicación que su base de datos asociada durante una operación de restauración. Este archivo solo se utiliza en Windows 2000. Como resultado, todas las aplicaciones escritas para funcionar en Windows 2000 y otras versiones deben admitir archivos de revisión de base de datos, si están presentes, pero tampoco deben generar errores si no están presentes.
+El archivo de revisión de base de datos es un archivo auxiliar especial que se usa para almacenar imágenes de página de base de datos en determinadas circunstancias durante la copia de seguridad. Este archivo debe estar presente en la misma ubicación que la base de datos asociada durante una operación de restauración. Este archivo solo se usa en Windows 2000. Como resultado, cualquier aplicación escrita para funcionar con Windows 2000 y otras versiones debe admitir archivos de revisión de base de datos, si están presentes, pero no debe producirse un error si no están presentes.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

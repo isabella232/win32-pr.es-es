@@ -4,12 +4,12 @@ ms.assetid: dfe44c8c-43ec-461f-952f-b87256b82ee6
 title: Funciones de salida de depuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 252e1020ca99bd5b4f2f46d7f2169fa6835dea83a25d599dba142f370bb794f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ee1bdbc9cce98ce1704b62a8354b81951df33c4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537745"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884234"
 ---
 # <a name="debug-output-functions"></a>Funciones de salida de depuración
 
@@ -29,9 +29,9 @@ Las [DirectShow base proporcionan](directshow-base-classes.md) varias macros par
 | [**Displaytype**](displaytype.md)                     | Envía información sobre un tipo de medio a la ubicación de salida de depuración.                                   |
 | [**DumpGraph**](dumpgraph.md)                         | Envía información sobre un gráfico de filtros a la ubicación de salida de depuración.                                 |
 | [**GuidNames**](guidnames.md)                         | Matriz global que contiene cadenas que representan los GUID definidos en Uuids.h.                        |
-| [**Nombre**](name.md)                                   | Genera una cadena de solo depuración.                                                                       |
-| [**Nota**](note.md)                                   | Envía una cadena a la ubicación de salida de depuración.                                                         |
-| [**Recordar**](remind.md)                               | Genera un recordatorio en tiempo de compilación.                                                                |
+| [**NOMBRE**](name.md)                                   | Genera una cadena de solo depuración.                                                                       |
+| [**NOTA**](note.md)                                   | Envía una cadena a la ubicación de salida de depuración.                                                         |
+| [**RECORDAR**](remind.md)                               | Genera un recordatorio en tiempo de compilación.                                                                |
 
 
 
@@ -51,7 +51,7 @@ En Windows Vista o versiones posteriores, se encuentran en la ruta de acceso sig
 
 En el caso de los filtros de terceros, la ubicación depende de la versión del DirectShow [base que](directshow-base-classes.md) se usó para compilar el filtro. La versión incluida en el SDK Windows para Windows Vista usa la ruta de acceso más reciente. Las versiones anteriores usaban la ruta de acceso anterior.
 
-En los comentarios siguientes, la etiqueta *<DebugRoot>* se usa para indicar estas dos rutas de acceso. Sustituya la ruta de acceso correcta, según la versión de Windows o la versión de las clases base.
+En los comentarios siguientes, se usa la etiqueta *&lt; DebugRoot &gt;* para indicar estas dos rutas de acceso. Sustituya la ruta de acceso correcta, según la versión de Windows o la versión de las clases base.
 
 **Registro de depuración**
 
@@ -59,7 +59,7 @@ DirectShow define varios tipos de mensaje, que se muestran en la tabla siguiente
 
 
 
-| Value                   | Descripción                                             |
+| Valor                   | Descripción                                             |
 |-------------------------|---------------------------------------------------------|
 | ERROR \_ DE REGISTRO              | Notificación de error.                                     |
 | BLOQUEO DE \_ REGISTROS            | Bloqueo y desbloqueo de secciones críticas.             |
@@ -82,7 +82,7 @@ DbgLog((LOG_TRACE, 3, TEXT("This is a debug message")));
 
 Cada módulo puede establecer su propio nivel de depuración para cada tipo de mensaje. (Un *módulo* es un archivo DLL o ejecutable que se puede cargar mediante la **función LoadLibrary).** Los niveles de depuración de un módulo aparecen en el Registro con la siguiente clave:
 
-**HKEY \_ LOCAL \_ MACHINE**\\**<DebugRoot>**\\**<ModuleName>**\\**<MessageType>**
+**HKEY \_ LOCAL \_ MACHINE** \\ **&lt; DebugRoot &gt;** \\ **&lt; ModuleName &gt;** \\ **&lt; MessageType &gt;**
 
 donde *<Message Type>* es el tipo de mensaje menos el inicial "LOG"; por \_ ejemplo, **LOCKING** para los mensajes LOG \_ LOCKING. Cuando se carga un módulo, la biblioteca de depuración encuentra los niveles de registro del módulo en el Registro. Si las claves del Registro no existen, la biblioteca de depuración las crea.
 
@@ -103,7 +103,7 @@ La biblioteca de depuración usa el nivel que sea mayor, el nivel global o el ni
 
 La ubicación de salida de depuración viene determinada por otra clave del Registro:
 
-**HKEY \_ LOCAL \_ MACHINE** \\ **<DebugRoot>** \\ **<Modile Name>** \\ **LogToFile**
+**HKEY \_ LOCAL \_ MACHINE** \\ **&lt; DebugRoot &gt;** \\ **<Modile Name>** \\ **LogToFile**
 
 Si el valor de esta clave es `Console` , la salida va a la ventana de consola. Si el valor es `Deb` , , o una cadena `Debug` `Debugger` vacía, la salida va a la ventana del depurador. De lo contrario, la salida se escribe en un archivo especificado por la clave del Registro.
 

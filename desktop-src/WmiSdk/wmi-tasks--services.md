@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1e96080dfde59ac5ca910082b764700b9ce51149dce82d87e8a716cfdcf73027
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a5de08eccb501288697cee77eaa28a087e07d96
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117738834"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631433"
 ---
 # <a name="wmi-tasks-services"></a>Tareas wmi: servicios
 
@@ -27,7 +27,7 @@ En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, *comofilename.vbs*. Asegúrese de que el editor de texto no agrega .txt extensión al archivo.
 2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
 4.  Si no puede acceder a un registro de eventos, compruebe si se ejecuta desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
@@ -44,8 +44,8 @@ En la tabla siguiente se muestran ejemplos de script que se pueden usar para obt
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -59,7 +59,7 @@ En la tabla siguiente se muestran ejemplos de script que se pueden usar para obt
 <td>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> clase para comprobar el estado de todos los servicios. La propiedad state le permite saber si un servicio está detenido o en ejecución.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -80,7 +80,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -97,12 +97,12 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... ¿Impedir que los usuarios avanzados inicien determinados servicios?</td>
-<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>método ChangeStartMode</strong></a> para establecer la propiedad <strong>StartMode</strong> en Disabled. Los servicios deshabilitados no se pueden iniciar y, de forma predeterminada, los usuarios avanzados no pueden cambiar el modo de inicio de un servicio.</p>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/changestartmode-method-in-class-win32-service"><strong>método ChangeStartMode</strong></a> para establecer la <strong>propiedad StartMode</strong> en Disabled. Los servicios deshabilitados no se pueden iniciar y, de forma predeterminada, los usuarios avanzados no pueden cambiar el modo de inicio de un servicio.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -124,7 +124,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -148,7 +148,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -171,7 +171,7 @@ Next
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -195,7 +195,7 @@ Next
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -225,7 +225,7 @@ Next</code></pre></td>
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -246,7 +246,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -265,12 +265,12 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... ¿Buscar los servicios que deben ejecutarse antes de poder iniciar el servicio DHCP?</td>
-<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE Win32_Service</a> clase denominada DHCP que se encuentran en la clase Win32_DependentService y tienen Dependent en la propiedad <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio DHCP: en este caso, depende de los demás servicios que se están iniciando.</p>
+<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE Win32_Service</a> <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>clase</strong></a> denominada DHCP que se encuentran en la clase Win32_DependentService y tienen &quot; Dependent en la propiedad &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio DHCP: en este caso, depende de los demás servicios que se están iniciando.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -294,7 +294,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -313,12 +313,12 @@ Get-WmiObject -Query $query -Namespace &quot;root\cimv2&quot; | format-list Disp
 </tr>
 <tr class="odd">
 <td>... buscar los servicios que requieren que el servicio WMI (Winmgmt) se esté ejecutando antes de que puedan iniciarse?</td>
-<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE</a> Win32_Service clase denominada DHCP que se encuentran en la clase Win32_DependentService y tienen <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong></strong></a> &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; antecedentes en la propiedad &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio rasman: en este caso, es anterior a debe iniciarse antes que los servicios dependientes.</p>
+<td><p>Consulta de <a href="associators-of-statement.md">ASSOCIATORS DE</a> <a href="/windows/desktop/CIMWin32Prov/win32-service"><strong>Win32_Service</strong></a> clase denominada DHCP que se encuentran en la clase Win32_DependentService y tienen &quot; &quot; <a href="/windows/desktop/CIMWin32Prov/win32-dependentservice"><strong></strong></a> &quot; antecedentes en la propiedad &quot; <strong>Role.</strong> <strong>Rol</strong> significa el rol del servicio rasman: en este caso, es anterior a debe iniciarse antes que los servicios dependientes.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -343,7 +343,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

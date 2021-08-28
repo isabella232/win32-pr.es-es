@@ -1,11 +1,11 @@
 ---
-title: Propiedad MediaRenderer. IsImageSupported
-description: Obtiene un valor que indica si el DMR es capaz de mostrar imágenes.
+title: Propiedad MediaRenderer.IsImageSupported
+description: Obtiene un valor que indica si la DMR es capaz de mostrar imágenes.
 ms.assetid: 3e356ccc-1165-4eaa-9f6e-3332ea84a133
 keywords:
-- Propiedad IsImageSupported API de streaming de multimedia
-- Propiedad IsImageSupported API de streaming de multimedia, interfaz MediaRenderer
-- Interfaz MediaRenderer API de streaming de multimedia, propiedad IsImageSupported
+- Propiedad IsImageSupported de Media Streaming API
+- Propiedad IsImageSupported de Media Streaming API, interfaz de MediaRenderer
+- MediaRenderer interface Media Streaming API , propiedad IsImageSupported
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e7e76f55747ab1ff13c0ba1dcb1c2b08bf3bd50c
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 666dd41c823f91be581528691dc55fc937b6fc66362a8bd3744d3a597c50d8a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104076955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712755"
 ---
-# <a name="mediarendererisimagesupported-property"></a>Propiedad MediaRenderer. IsImageSupported
+# <a name="mediarendererisimagesupported-property"></a>Propiedad MediaRenderer.IsImageSupported
 
-Obtiene un valor que indica si el DMR es capaz de mostrar imágenes.
+Obtiene un valor que indica si la DMR es capaz de mostrar imágenes.
 
 Esta propiedad es de solo lectura.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_IsImageSupported(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_IsImageSupported(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor booleano que es **true** si el DMR es capaz de mostrar imágenes y **false** en caso contrario.
+Valor booleano que es **True si** la DMR es capaz de mostrar imágenes y **False** si no lo es.
 
 ## <a name="see-also"></a>Vea también
 
@@ -50,9 +50,9 @@ Valor booleano que es **true** si el DMR es capaz de mostrar imágenes y **false
 [**MediaRenderer**](mediarenderer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

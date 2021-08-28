@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 7e53f90627c959db0140b01cf3b3d385afcc6e73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4affedabdb7fde7cec93d3cf8eb675f343054635eb0b4a504d74d96dc3eb8d42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118321413"
 ---
 # <a name="wmimonitorbrightnessevent-class"></a>Clase WmiMonitorBrightnessEvent
 
-La clase de eventos **WmiMonitorBrightnessEvent** WMI representa un cambio en el brillo de un monitor.
+La **clase de eventos WMI WmiMonitorBrightnessEvent** representa un cambio en el brillo de un monitor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ class WmiMonitorBrightnessEvent : WMIEvent
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorBrightnessEvent** tiene estos tipos de miembros:
+La **clase WmiMonitorBrightnessEvent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorBrightnessEvent** tiene estas propiedades.
+La **clase WmiMonitorBrightnessEvent** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,13 +66,13 @@ Indica el monitor activo.
 **Luminosidad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Brillo del monitor actual como un porcentaje.
+Brillo del monitor actual como porcentaje.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -96,17 +96,17 @@ Nombre de la instancia de monitor específica.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -116,7 +116,7 @@ Nombre de la instancia de monitor específica.
 [**WmiMonitorBrightness**](wmimonitorbrightness.md)
 </dt> <dt>
 
-[Recibir un evento de WMI](/windows/desktop/WmiSdk/receiving-a-wmi-event)
+[Recepción de un evento WMI](/windows/desktop/WmiSdk/receiving-a-wmi-event)
 </dt> </dl>
 
  

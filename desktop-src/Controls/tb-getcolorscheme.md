@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETCOLORSCHEME (commctrl. h)
-description: Recupera la información de la combinación de colores del control de barra de herramientas.
+title: TB_GETCOLORSCHEME mensaje (Commctrl.h)
+description: Recupera la información de combinación de colores del control de barra de herramientas.
 ms.assetid: af172631-309e-4181-a690-05946cd6e143
 keywords:
-- TB_GETCOLORSCHEME controles de mensajes de Windows
+- TB_GETCOLORSCHEME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61344439ae8bc2b3a9ecd47472174577d652aa96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 22fca3a7a88fd108454c3838d646db311c9be19bf04163b4c8987db67f6c09c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918875"
 ---
-# <a name="tb_getcolorscheme-message"></a>\_Mensaje GETCOLORSCHEME TB
+# <a name="tb_getcolorscheme-message"></a>Mensaje \_ GETCOLORSCHEME de TB
 
-Recupera la información de la combinación de colores del control de barra de herramientas.
+Recupera la información de combinación de colores del control de barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,13 +35,13 @@ Recupera la información de la combinación de colores del control de barra de h
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**COLORSCHEME**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) que recibirá la información de la combinación de colores. Debe establecer el miembro **cbSize** de esta estructura en **sizeof**(COLORSCHEME) antes de enviar este mensaje.
+Puntero a una [**estructura COLORSCHEME**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) que recibirá la información de la combinación de colores. Debe establecer el **miembro cbSize** de esta estructura en **sizeof**(COLORSCHEME) antes de enviar este mensaje.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

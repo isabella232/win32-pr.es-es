@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 86e0e04558c9ca1c10f89e924605c8999a7f7346d2278850d7cd6449968fd13c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb3835e1c0e2cfb5ffbb49523617b9d233810494
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118515544"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627101"
 ---
 # <a name="dcl_sampler-sm4---asm"></a>dcl \_ sampler (sm4 - asm)
 
@@ -33,8 +33,8 @@ Declara un registro de sampler.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -45,7 +45,7 @@ Declara un registro de sampler.
 <tbody>
 <tr class="odd">
 <td><span id="sN"></span><span id="sn"></span><span id="SN"></span>s<em>N</em><br/></td>
-<td>[in] Un registro de muestreador, <em>donde N</em> es un entero que denota el número de registro.<br/></td>
+<td>[in] Registro de muestreador, donde <em>N</em> es un entero que denota el número de registro.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="mode"></span><span id="MODE"></span><em>Modo</em><br/></td>
@@ -60,15 +60,15 @@ Declara un registro de sampler.
 <tbody>
 <tr class="odd">
 <td>default</td>
-<td><em>Filtro</em> (no puede usar los valores _COMPARISON o _TEXT), <em>AddressU/V/W,</em> <em>MinLOD/MaxLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em>, <em>BorderColor[4]</em></td>
+<td><em>Filtro</em> (no puede usar los valores _COMPARISON o _TEXT), <em>AddressU/V/W,</em> <em>MinLOD/MaxLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy,</em> <em>BorderColor[4]</em></td>
 </tr>
 <tr class="even">
 <td>comparación</td>
-<td><em>Filter</em>, <em>ComparisonFunction</em>, <em>AddressU/V/W,</em> <em>MinLOD,MaxLOD</em>, <em>MipLODBias,</em> <em>MaxAnisotropy</em>, <em>BorderColor[4]</em></td>
+<td><em>Filter,</em> <em>ComparisonFunction,</em> <em>AddressU/V/W,</em> <em>MinLOD,MaxLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em>, <em>BorderColor[4]</em></td>
 </tr>
 <tr class="odd">
 <td>mono</td>
-<td><em>Filter</em> (debe ser uno de los valores _TEXT), <em>MonoFilterWidth,</em> <em>MonoFilterHeight</em> (estos dos estados son el estado global del dispositivo), <em>MinLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em></td>
+<td><em>Filtro</em> (debe ser uno de los valores de _TEXT), <em>MonoFilterWidth,</em> <em>MonoFilterHeight</em> (estos dos estados son estado global del dispositivo), <em>MinLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em></td>
 </tr>
 </tbody>
 </table>
@@ -82,13 +82,13 @@ Declara un registro de sampler.
 
  
 
-El modo restringe las instrucciones de ejemplo que se pueden usar; En esta tabla se enumeran los métodos texture-object que se admiten para cada modo.
+El modo restringe las instrucciones de ejemplo que se pueden usar; en esta tabla se enumeran los métodos de objeto de textura que se admiten para cada modo.
 
 
 
-| Un muestreador que funciona en este modo | Puede usar estos Texture-Object métodos                                                                                                           |
+| Un sampler que funciona en este modo | Puede usar estos Texture-Object métodos                                                                                                           |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| default                          | [Sample](dx-graphics-hlsl-to-sample.md), [SampleLevel](dx-graphics-hlsl-to-samplelevel.md), [SampleGrad](dx-graphics-hlsl-to-samplegrad.md) |
+| default                          | [Ejemplo,](dx-graphics-hlsl-to-sample.md) [SampleLevel,](dx-graphics-hlsl-to-samplelevel.md) [SampleGrad](dx-graphics-hlsl-to-samplegrad.md) |
 | comparación                       | [SampleCmp](dx-graphics-hlsl-to-samplecmp.md), [SampleCmpLevelZero](dx-graphics-hlsl-to-samplecmplevelzero.md)                               |
 | mono                             | [SampleLevel](dx-graphics-hlsl-to-samplelevel.md)                                                                                             |
 
@@ -110,7 +110,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 \* - El uso de un muestreador en modo mono solo se admite en un sombreador de píxeles.
 
-Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -131,9 +131,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -146,7 +146,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

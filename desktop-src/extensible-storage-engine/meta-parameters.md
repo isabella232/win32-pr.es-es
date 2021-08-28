@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 455b46465733a906b879dcedc4b5a2f4e6ef1f9e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 2f821d3aea8055f6c1344ed9d5107417adbaf604
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472481"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985518"
 ---
 # <a name="meta-parameters"></a>Meta parámetros
 
@@ -80,14 +80,26 @@ La configuración pequeña cambia los valores predeterminados de los siguientes 
 
 La configuración pequeña también tiene otros efectos en el motor de base de datos, entre los que se incluyen:
 
-  - Todos los recursos administrados por parámetros del sistema se asignan desde el montón según sea necesario
+  - Todos los recursos administrados por parámetros del sistema se asignan desde el montón según sea necesario.
 
   - Otros recursos internos usados por el motor de base de datos se escalan verticalmente en tamaño
 
-  - Varias actividades de mantenimiento se escalan de nuevo para evitar la actividad de subprocesos en segundo plano
+  - Se escalan de nuevo varias actividades de mantenimiento para evitar la actividad de subprocesos en segundo plano
 
 
-| | | <p>Valor predeterminado:</p> | <p>1 (heredado)</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 1</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>Sí</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>A partir de Windows Server 2008 y Windows Vista</p> | 
+| Etiqueta | Value |
+|--------|-------|
+| <p>Valor predeterminado:</p> | <p>1 (heredado)</p> | 
+| <p>Escriba:</p> | <p>Entero</p> | 
+| <p>Intervalo válido:</p> | <p>0 – 1</p> | 
+| <p>Ámbito:</p> | <p>Instancia</p> | 
+| <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | 
+| <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | 
+| <p>Afecta al diseño físico:</p> | <p>No</p> | 
+| <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
+| <p>Afecta al rendimiento:</p> | <p>Sí</p> | 
+| <p>Afecta a los recursos:</p> | <p>Sí</p> | 
+| <p>Disponibilidad:</p> | <p>A partir de Windows Server 2008 y Windows Vista</p> | 
 
 
 
@@ -178,14 +190,30 @@ Los siguientes parámetros del sistema se protegerán de que se establezcan cuan
   - JET_paramCheckpointIOMax
 
 
-| | | <p>Valor predeterminado:</p> | <p>Verdadero</p> | | <p>Escriba:</p> | <p>Boolean</p> | | <p>Intervalo válido:</p> | <p>False, True</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>Sí</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>A partir de Windows Server 2008 y Windows Vista</p> | 
+| Etiqueta | Value |
+|--------|-------|
+| <p>Valor predeterminado:</p> | <p>True</p> | 
+| <p>Escriba:</p> | <p>Boolean</p> | 
+| <p>Intervalo válido:</p> | <p>False, True</p> | 
+| <p>Ámbito:</p> | <p>Instancia</p> | 
+| <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | 
+| <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>Sí</p> | 
+| <p>Afecta al diseño físico:</p> | <p>No</p> | 
+| <p>Afecta a la confiabilidad:</p> | <p>No</p> | 
+| <p>Afecta al rendimiento:</p> | <p>No</p> | 
+| <p>Afecta a los recursos:</p> | <p>No</p> | 
+| <p>Disponibilidad:</p> | <p>A partir de Windows Server 2008 y Windows Vista</p> | 
 
 
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

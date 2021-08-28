@@ -1,52 +1,52 @@
 ---
 title: Registrar el objeto COM de la página de propiedades en un especificador de presentación
-description: En este tema se muestra cómo registrar un archivo DLL de extensión que contiene una Active Directory hoja de propiedades con el registro de Windows y Active Directory.
+description: En este tema se muestra cómo registrar un archivo DLL de extensión que contiene una Active Directory de propiedades con el registro Windows y Active Directory.
 ms.assetid: e2d6142b-c2fe-4435-b4af-83f7cd45218b
 ms.tgt_platform: multiple
 keywords:
-- Registrar el objeto COM de la página de propiedades en un especificador de presentación Active Directory
-- objeto COM de la página de propiedades Active Directory, registrar en un especificador de presentación
-- especificadores de presentación Active Directory, registrando el objeto COM de la página de propiedades en
+- Registrar el objeto COM de la página de propiedades en un especificador de Active Directory
+- objeto COM de la página Active Directory , registrando en un especificador de visualización
+- mostrar especificadores Active Directory , registrando el objeto COM de la página de propiedades en
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c5b08ac0ea6329026a6d367e71064bde917b1a6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 0f6685e406cb1bfdc16f73dd2fddd94a195fe74a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104149167"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122881240"
 ---
 # <a name="registering-the-property-page-com-object-in-a-display-specifier"></a>Registrar el objeto COM de la página de propiedades en un especificador de presentación
 
-Cuando se usa COM para crear un archivo DLL de extensión de hoja de propiedades para Active Directory Domain Services, también se debe registrar la extensión con el registro de Windows y Active Directory Domain Services. El registro de la extensión permite que el Active Directory complementos de MMC administrativos y el shell de Windows reconozcan la extensión.
+Cuando se usa COM para crear un archivo DLL de extensión de hoja de propiedades para Active Directory Domain Services, también debe registrar la extensión con el registro Windows y Active Directory Domain Services. El registro de la extensión permite que Active Directory complementos MMC administrativos y el shell Windows reconocimiento de la extensión.
 
-## <a name="registering-in-the-windows-registry"></a>Registro en el registro de Windows
+## <a name="registering-in-the-windows-registry"></a>Registro en el registro Windows registro
 
-Al igual que todos los servidores COM, se debe registrar una extensión de la hoja de propiedades en el registro de Windows. La extensión se registra con la siguiente clave.
+Al igual que todos los servidores COM, se debe registrar una extensión de hoja de propiedades en Windows registro. La extensión se registra con la clave siguiente.
 
 ```
 HKEY_CLASSES_ROOT
-   CLSID
-      <clsid>
+   CLSID
+      <clsid>
 ```
 
-*<clsid>* es la representación de cadena del CLSID tal y como la produce la función [**StringFromCLSID**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) . En la *<clsid>* clave, hay una clave **InProcServer32** que identifica el objeto como servidor de 32 bits en proceso. En la clave **InProcServer32** , la ubicación del archivo dll se especifica en el valor predeterminado y el modelo de subprocesos se especifica en el valor **ThreadingModel** . Todas las extensiones de la hoja de propiedades deben usar el modelo de subprocesos "Apartamento".
+*&lt; clsid &gt;* es la representación de cadena del CLSID que genera la [**función StringFromCLSID.**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) En la *&lt; clave &gt; clsid,* hay una clave **InProcServer32** que identifica el objeto como un servidor en proceso de 32 bits. En la **clave InProcServer32,** la ubicación del archivo DLL se especifica en el valor predeterminado y el modelo de subprocesos se especifica en el **valor ThreadingModel.** Todas las extensiones de hoja de propiedades deben usar el modelo de subprocesos "Apartment".
 
 ## <a name="registering-with-active-directory-domain-services"></a>Registro con Active Directory Domain Services
 
-El registro de la extensión de la hoja de propiedades es específico de una configuración regional. Si la extensión de la hoja de propiedades se aplica a todas las configuraciones regionales, debe registrarse en el objeto [**displaySpecifier**](/windows/desktop/ADSchema/c-displayspecifier) de la clase de objeto en todos los subcontenedores de la configuración regional en el contenedor de especificadores de presentación. Si la extensión de la hoja de propiedades está localizada para una configuración regional determinada, regístrela en el objeto **displaySpecifier** del subcontenedor de la configuración regional. Para obtener más información sobre el contenedor de especificadores de presentación y configuraciones regionales, vea [especificadores de pantalla](display-specifiers.md) y [contenedor de DisplaySpecifiers](displayspecifiers-container.md).
+El registro de la extensión de la hoja de propiedades es específico de una configuración regional. Si la extensión de hoja de propiedades se aplica a todas las configuraciones regionales, debe registrarse en el objeto [**displaySpecifier**](/windows/desktop/ADSchema/c-displayspecifier) de la clase de objeto en todos los subcontenedores de configuración regional del contenedor Display Specifiers. Si la extensión de hoja de propiedades está localizada para una configuración regional determinada, regístrela en el **objeto displaySpecifier** de ese subcontenedor de configuración regional. Para obtener más información sobre el contenedor display specifiers y las configuraciones regionales, vea [Display Specifiers](display-specifiers.md) and [DisplaySpecifiers Container](displayspecifiers-container.md).
 
-Hay tres atributos de especificador de presentación en los que se puede registrar una extensión de hoja de propiedades. Son [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages), [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)y [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages).
+Hay tres atributos de especificador de presentación en los que se puede registrar una extensión de hoja de propiedades. Estos son [**adminPropertyPages,**](/windows/desktop/ADSchema/a-adminpropertypages) [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)y [**adminMultiselectPropertyPages.**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages)
 
-El atributo [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) identifica las páginas de propiedades administrativas que se mostrarán en Active Directory complementos administrativos. La página de propiedades aparece cuando el usuario ve las propiedades de los objetos de la clase adecuada en una de las Active Directory complementos de MMC administrativos.
+El [**atributo adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) identifica las páginas de propiedades administrativas que se muestran Active Directory complementos administrativos. La página de propiedades aparece cuando el usuario ve las propiedades de los objetos de la clase adecuada en uno de los Active Directory complementos MMC administrativos.
 
-El atributo [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) identifica las páginas de propiedades del usuario final que se van a mostrar en el shell de Windows. La página de propiedades aparece cuando el usuario ve las propiedades de los objetos de la clase adecuada en el explorador de Windows. A partir de los sistemas operativos Windows Server 2003, el shell de Windows ya no muestra los objetos de Active Directory Domain Services.
+El [**atributo shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) identifica las páginas de propiedades del usuario final que se muestran en Windows shell. La página de propiedades aparece cuando el usuario ve las propiedades de los objetos de la clase adecuada en Windows Explorer. A partir de Windows server 2003, el shell de Windows ya no muestra objetos de Active Directory Domain Services.
 
-[**AdminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) solo está disponible en los sistemas operativos Windows Server 2003. La página de propiedades aparece cuando el usuario ve las propiedades de más de un objeto de la clase adecuada en una de las Active Directory complementos administrativos de MMC.
+[**AdminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) solo está disponible en los sistemas operativos Windows Server 2003. La página de propiedades aparece cuando el usuario ve las propiedades de más de un objeto de la clase adecuada en uno de los Active Directory complementos MMC administrativos.
 
 Todos estos atributos tienen varios valores.
 
-Los valores de los atributos [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) y [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) requieren el formato siguiente.
+Los valores de los [**atributos adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages) y [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages) requieren el formato siguiente.
 
 
 ```C++
@@ -55,7 +55,7 @@ Los valores de los atributos [**adminPropertyPages**](/windows/desktop/ADSchema/
 
 
 
-Los valores para el atributo [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) requieren el formato siguiente.
+Los valores del atributo [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) requieren el formato siguiente.
 
 
 ```C++
@@ -64,11 +64,11 @@ Los valores para el atributo [**adminMultiselectPropertyPages**](/windows/deskto
 
 
 
-El " &lt; número de pedido &gt; " es un número sin signo que representa la posición de la página en la hoja. Cuando se muestra una hoja de propiedades, los valores se ordenan mediante una comparación de "número de &lt; pedido" de cada valor &gt; . Si hay más de un valor con el mismo " &lt; número de orden &gt; ", esos objetos com de la página de propiedades se cargan en el orden en que se leen desde el servidor de Active Directory. Si es posible, debe usar un " &lt; número de pedido" no existente &gt; ; es decir, uno no utilizado por otros valores de la propiedad. No hay ninguna posición de inicio prescrita y se permiten huecos en la &lt; secuencia "número de pedido &gt; ".
+" &lt; order number &gt; " es un número sin signo que representa la posición de la página en la hoja. Cuando se muestra una hoja de propiedades, los valores se ordenan mediante una comparación del "número de &lt; pedido" de cada &gt; valor. Si más de un valor tiene el mismo "número de pedido", los objetos COM de la página de propiedades se cargan en el orden en que &lt; &gt; se leen desde Active Directory servidor. Si es posible, debe usar un no existente " número de pedido "; es decir, uno no utilizado por otros &lt; valores de la propiedad &gt; . No hay ninguna posición inicial prescrita y se permiten espacios en la secuencia &lt; "número de &gt; pedido".
 
-" &lt; CLSID &gt; " es la representación de cadena del CLSID tal y como la produce la función [**StringFromCLSID**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid) .
+" clsid " es la representación de cadena del CLSID que genera &lt; &gt; la función [**StringFromCLSID.**](/windows/win32/api/combaseapi/nf-combaseapi-stringfromclsid)
 
-Los " &lt; datos opcionales &gt; " son valores de cadena que no son necesarios. Este valor se puede recuperar mediante el objeto COM de la página de propiedades mediante el puntero [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) pasado a su método [**IShellExtInit:: Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) . El objeto COM de la página de propiedades obtiene estos datos llamando a [**IDataObject:: GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) con el formato del portapapeles de [**CFSTR \_ DSPROPERTYPAGEINFO**](cfstr-dspropertypageinfo.md) . Esto proporciona un **HGLOBAL** que contiene una estructura [**DSPROPERTYPAGEINFO**](/windows/desktop/api/Dsclient/ns-dsclient-dspropertypageinfo) . la estructura **DSPROPERTYPAGEINFO** contiene una cadena Unicode que contiene los " &lt; datos &gt; opcionales". &lt; &gt; No se permite "datos opcionales" con el atributo [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) . En el siguiente ejemplo de código de C/C++ se muestra cómo recuperar los " &lt; datos opcionales &gt; ".
+" &lt; datos &gt; opcionales " es un valor de cadena que no es necesario. El objeto COM de la página de propiedades puede recuperar este valor mediante el puntero [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) pasado a su [**método IShellExtInit::Initialize.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellextinit-initialize) El objeto COM de la página de propiedades obtiene estos datos mediante una llamada [**a IDataObject::GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) con el formato del Portapapeles [**CFSTR \_ DSPROPERTYPAGEINFO.**](cfstr-dspropertypageinfo.md) Esto proporciona un **HGLOBAL** que contiene una estructura [**DSPROPERTYPAGEINFO**](/windows/desktop/api/Dsclient/ns-dsclient-dspropertypageinfo) La estructura **DSPROPERTYPAGEINFO** contiene una cadena Unicode que contiene los " &lt; datos opcionales &gt; ". No &lt; se permiten los &gt; datos opcionales " con el [**atributo adminMultiselectPropertyPages.**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) En el siguiente ejemplo de código de C/C++ se muestra cómo recuperar " &lt; datos &gt; opcionales ".
 
 
 ```C++
@@ -99,9 +99,9 @@ if(SUCCEEDED(hr))
 
 
 
-Una extensión de la hoja de propiedades puede implementar más de una página de propiedades. un uso posible de los " &lt; datos opcionales &gt; " es el nombre de las páginas que se van a mostrar. Esto proporciona la flexibilidad de elegir la implementación de varios objetos COM, uno para cada página o un solo objeto COM para administrar varias páginas.
+Una extensión de hoja de propiedades puede implementar más de una página de propiedades; un posible uso de " &lt; datos opcionales &gt; " es dar nombre a las páginas que se mostrarán. Esto proporciona la flexibilidad de elegir implementar varios objetos COM, uno para cada página o un único objeto COM para controlar varias páginas.
 
-El ejemplo de código siguiente es un valor de ejemplo que se puede usar para los atributos [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages), [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)o [**adminMultiselectPropertyPages**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages) .
+El ejemplo de código siguiente es un valor de ejemplo que se puede usar para los atributos [**adminPropertyPages**](/windows/desktop/ADSchema/a-adminpropertypages), [**shellPropertyPages**](/windows/desktop/ADSchema/a-shellpropertypages)o [**adminMultiselectPropertyPages.**](/windows/desktop/ADSchema/a-adminmultiselectpropertypages)
 
 
 ```C++
@@ -111,25 +111,25 @@ El ejemplo de código siguiente es un valor de ejemplo que se puede usar para lo
 
 
 > [!IMPORTANT]
-> En el shell de Windows, los datos del especificador de presentación se recuperan en el inicio de sesión de usuario y se almacenan en caché para la sesión de usuario. En el caso de los complementos administrativos, los datos del especificador de presentación se recuperan cuando se carga el complemento y se almacenan en memoria caché mientras dure el proceso. En el caso del shell de Windows, esto indica que los cambios en los especificadores de presentación surten efecto después de que un usuario cierre la sesión y vuelva a iniciarla. En el caso de los complementos administrativos, los cambios surten efecto cuando se carga el archivo de consola o el complemento.
+> Para el Windows, los datos del especificador para mostrar se recuperan al iniciar sesión del usuario y se almacenan en caché para la sesión de usuario. En el caso de los complementos administrativos, los datos del especificador de visualización se recuperan cuando se carga el complemento y se almacenan en caché durante la vigencia del proceso. En el Windows shell, esto indica que los cambios para mostrar especificadores tienen efecto después de que un usuario cierra sesión y, a continuación, inicia sesión de nuevo. En el caso de los complementos administrativos, los cambios se llevan a efecto cuando se carga el complemento o el archivo de consola.
 
- 
+ 
 
-## <a name="adding-a-value-to-the-property-sheet-extension-attributes"></a>Agregar un valor a los atributos de extensión de la hoja de propiedades
+## <a name="adding-a-value-to-the-property-sheet-extension-attributes"></a>Agregar un valor a los atributos de extensión de hoja de propiedades
 
-En el procedimiento siguiente se describe cómo registrar una extensión de la hoja de propiedades en uno de los atributos de extensión de la hoja de propiedades.
+En el procedimiento siguiente se describe cómo registrar una extensión de hoja de propiedades en uno de los atributos de extensión de la hoja de propiedades.
 
-**Registrar una extensión de la hoja de propiedades en uno de los atributos de extensión de la hoja de propiedades**
+**Registro de una extensión de hoja de propiedades en uno de los atributos de extensión de la hoja de propiedades**
 
-1.  Asegúrese de que la extensión todavía no existe en los valores de atributo.
-2.  Agregue el nuevo valor al final de la lista de ordenación de páginas de propiedades. Esto establece la parte " &lt; número &gt; de pedido" del valor del atributo en el valor siguiente después del número de pedido existente más alto.
-3.  El método [**IADs::P Utex**](/windows/desktop/api/iads/nf-iads-iads-putex) se utiliza para agregar el nuevo valor al atributo. El parámetro *lnControlCode* debe establecerse en **la \_ propiedad ADS \_ Append** para que el nuevo valor se anexe a los valores existentes y, por lo tanto, sobrescriba los valores existentes. Se debe llamar al método [**IADs:: SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) después para confirmar el cambio en el directorio.
+1.  Asegúrese de que la extensión no existe en los valores de atributo.
+2.  Agregue el nuevo valor al final de la lista de ordenación de páginas de propiedades. Se establece la parte "número de pedido" del valor del atributo en el siguiente &lt; valor después del número de pedido existente más &gt; alto.
+3.  El [**método IADs::P utEx**](/windows/desktop/api/iads/nf-iads-iads-putex) se usa para agregar el nuevo valor al atributo . El *parámetro lnControlCode* debe establecerse en **ADS PROPERTY \_ \_ APPEND** para que el nuevo valor se anexe a los valores existentes y, por tanto, no sobrescriba los valores existentes. Después se debe llamar al método [**IADs::SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) para confirmar el cambio en el directorio.
 
-Tenga en cuenta que se puede registrar la misma extensión de hoja de propiedades para más de una clase de objeto.
+Tenga en cuenta que la misma extensión de hoja de propiedades se puede registrar para más de una clase de objeto.
 
-El método [**IADs::P Utex**](/windows/desktop/api/iads/nf-iads-iads-putex) se utiliza para agregar el nuevo valor al atributo. El parámetro *lnControlCode* debe establecerse en **la \_ propiedad ADS \_ Append** para que el nuevo valor se anexe a los valores existentes y, por lo tanto, sobrescriba los valores existentes. Se debe llamar al método [**IADs:: SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) después de para confirmar el cambio en el directorio.
+El [**método IADs::P utEx**](/windows/desktop/api/iads/nf-iads-iads-putex) se usa para agregar el nuevo valor al atributo . El *parámetro lnControlCode* debe establecerse en **ADS PROPERTY \_ \_ APPEND** para que el nuevo valor se anexe a los valores existentes y, por tanto, no sobrescriba los valores existentes. Se [**debe llamar al método IADs::SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) después de para confirmar el cambio en el directorio.
 
-En el ejemplo de código siguiente se agrega una extensión de la hoja de propiedades a la clase Group de la configuración regional predeterminada del equipo. Tenga en cuenta que la función **AddPropertyPageToDisplaySpecifier** comprueba el CLSID de la extensión de la hoja de propiedades en los valores existentes, obtiene el número de orden más alto y agrega el valor de la página de propiedades mediante [**IADs::P Utex**](/windows/desktop/api/iads/nf-iads-iads-putex) con la **propiedad de ADS \_ \_ anexar** código de control.
+En el ejemplo de código siguiente se agrega una extensión de hoja de propiedades a la clase de grupo en la configuración regional predeterminada del equipo. Tenga en cuenta que la función **AddPropertyPageToDisplaySpecifier** comprueba la extensión de hoja de propiedades CLSID en los valores existentes, obtiene el número de orden más alto y agrega el valor de la página de propiedades mediante [**IADs::P utEx**](/windows/desktop/api/iads/nf-iads-iads-putex) con el código de control **ADS PROPERTY \_ \_ APPEND.**
 
 
 ```C++
@@ -434,6 +434,6 @@ HRESULT GetDisplaySpecifier(IADsContainer *pContainer, LPOLESTR szDispSpec, IADs
 
 
 
- 
+ 
 
- 
+ 

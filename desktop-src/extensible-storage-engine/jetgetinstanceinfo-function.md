@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetGetInstanceInfo (función)'
-title: JetGetInstanceInfo función)
+description: 'Más información sobre: JetGetInstanceInfo (Función)'
+title: JetGetInstanceInfo (Función)
 TOCTitle: JetGetInstanceInfo Function
 ms:assetid: ffccdac0-3631-4753-876a-90ddfdd0252f
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294149(v=EXCHG.10)
@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8c8e9a279f536622cfdfccb8bc8882914aeee64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9dfc8bec0e6cee6e127dc99135d82db3ee3001ab
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911442"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478351"
 ---
-# <a name="jetgetinstanceinfo-function"></a>JetGetInstanceInfo función)
+# <a name="jetgetinstanceinfo-function"></a>JetGetInstanceInfo (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetgetinstanceinfo-function"></a>JetGetInstanceInfo función)
+## <a name="jetgetinstanceinfo-function"></a>JetGetInstanceInfo (Función)
 
-La función **JetGetInstanceInfo** recupera información sobre las instancias de que se están ejecutando.
+La **función JetGetInstanceInfo** recupera información sobre las instancias que se están ejecutando.
 
-**Windows XP: JetGetInstanceInfo** se presentó en Windows XP.
+**Windows XP: JetGetInstanceInfo** se introdujo en Windows XP.
 
 ```cpp
     JET_ERR JET_API JetGetInstanceInfo(
@@ -49,87 +49,36 @@ La función **JetGetInstanceInfo** recupera información sobre las instancias de
 
 *pcInstanceInfo*
 
-Un puntero a un búfer que recibirá el número de elementos almacenados en *paInstanceInfo*.
+Puntero a un búfer que recibirá el número de elementos almacenados en *paInstanceInfo*.
 
 *paInstanceInfo*
 
-Un puntero a un búfer que recibirá la dirección del primer elemento de una matriz de estructuras.
+Puntero a un búfer que recibirá la dirección del primer elemento de una matriz de estructuras.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinó con el valor de otro parámetro. Este error lo devolverá <strong>JetGetInstanceInfo</strong> cuando:</p>
-<ul>
-<li><p><em>pcInstanceInfo</em> o <em>paInstanceInfo</em> son NULL.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errOutOfMemory</p></td>
-<td><p>No hay memoria suficiente para procesar la solicitud.</p></td>
-</tr>
-</tbody>
-</table>
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
-#### <a name="remarks"></a>Observaciones
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. <strong>JetGetInstanceInfo</strong> devolverá este error cuando:</p><ul><li><p><em>pcInstanceInfo</em> o <em>paInstanceInfo</em> son NULL.</p></li></ul> | 
+| <p>JET_errOutOfMemory</p> | <p>No hay memoria suficiente para procesar la solicitud.</p> | 
 
-El motor de base de datos asignará una matriz de estructuras [JET_INSTANCE_INFO](./jet-instance-info-structure.md) . El autor de la llamada es responsable de liberar esta memoria con [JetFreeBuffer](./jetfreebuffer-function.md).
 
-Si no hay ninguna instancia activa, **JetGetInstanceInfo** devolverá JET_errSuccess y *pcInstanceInfo* recibirá un valor de 0.
+
+#### <a name="remarks"></a>Comentarios
+
+El motor de base de datos asignará una matriz [de JET_INSTANCE_INFO](./jet-instance-info-structure.md) estructuras. El autor de la llamada es responsable de liberar esta memoria [con JetFreeBuffer.](./jetfreebuffer-function.md)
+
+Si no hay instancias activas, **JetGetInstanceInfo** devolverá JET_errSuccess y *pcInstanceInfo* recibirá un valor de 0.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista o Windows XP.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008 o Windows Server 2003.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JetGetInstanceInfoW</strong> (Unicode) y <strong>JetGetInstanceInfoA</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetInstanceInfoW</strong> (Unicode) y <strong>JetGetInstanceInfoA</strong> (ANSI).</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

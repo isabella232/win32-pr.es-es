@@ -1,32 +1,32 @@
 ---
 title: Manipulation-Rule
-description: La regla de manipulación que se va a aplicar a los datos especificados por el atributo Manipulation-Target. Para obtener más información, vea procesamiento de dominios y manipulación de atributos.
+description: Regla de manipulación que se aplicará a los datos especificados por el Manipulation-Target atributo . Para obtener más información, vea Procesamiento de dominios y Manipulación de atributos.
 ms.assetid: afe85f68-d905-4c95-9c23-b24a117d0155
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24549165a223dc11bc6780af2efc50c63cfe71bf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 978fab51fe8d74afbba0e1ef0f6c3fec80624aaf3423232f10443ec17fa88245
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778025"
 ---
 # <a name="manipulation-rule"></a>Manipulation-Rule
 
 > [!Note]  
-> Se ha cambiado el nombre del servicio de autenticación de Internet (IAS) a partir de Windows Server 2008.
+> El nombre del Servicio de autenticación de Internet (IAS) se ha cambiado a Servidor de directivas de red (NPS) a partir Windows Server 2008.
 
- 
+ 
 
-La regla de manipulación que se va a aplicar a los datos especificados por el atributo [de destino de manipulación](/windows/desktop/Nps/sdo-manipulation-target) . Para obtener más información, vea [procesamiento de dominios y manipulación de atributos](/windows/desktop/Nps/sdo-realms-processing-and-attribute-manipulation).
+Regla de manipulación que se aplicará a los datos especificados por el [atributo Manipulation-Target.](/windows/desktop/Nps/sdo-manipulation-target) Para obtener más información, vea [Procesamiento de dominios y Manipulación de atributos.](/windows/desktop/Nps/sdo-realms-processing-and-attribute-manipulation)
 
 **Nombre LDAP:** msManipulationRule
 
-**ID:** 4114 = [ **\_ regla de \_ manipulación \_ de atributos de IAS**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)
+**Identificador:** 4114 = REGLA [ **DE MANIPULACIÓN DE \_ ATRIBUTOS \_ \_ IAS**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)
 
-**Sintaxis:** String@
+**Sintaxis:** Cadena
 
- 
+ 
 
- 
+ 

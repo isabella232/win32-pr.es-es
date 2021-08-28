@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 82f24afb4d8e36d95d6e3be480f32358c1c5dba2
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 6f41114c74643d7165bc16363af3d1777828003b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468312"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987688"
 ---
 # <a name="jetgetcurrentindex-function"></a>JetGetCurrentIndex (Función)
 
@@ -34,7 +34,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetgetcurrentindex-function"></a>JetGetCurrentIndex (Función)
 
-La **función JetGetCurrentIndex** determina el nombre del índice actual de un cursor determinado. Este nombre también se usa para volver a seleccionar posteriormente ese índice como índice actual mediante [JetSetCurrentIndex](./jetsetcurrentindex-function.md). También se puede usar para detectar las propiedades de ese índice [mediante JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
+La **función JetGetCurrentIndex** determina el nombre del índice actual de un cursor determinado. Este nombre también se usa para volver a seleccionar posteriormente ese índice como índice actual mediante [JetSetCurrentIndex](./jetsetcurrentindex-function.md). También se puede usar para detectar las propiedades de ese índice mediante [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
 
 ```cpp
     JET_ERR JET_API JetGetCurrentIndex(
@@ -71,8 +71,8 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad en la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
@@ -85,7 +85,7 @@ Si se ejecuta correctamente, el nombre del índice actual del cursor especificad
 
 En caso de error, el estado del búfer de salida será indefinido. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Si no hay ningún índice actual para el cursor, se devolverá una cadena vacía. Esto puede ocurrir cuando el cursor está en el índice clúster de la tabla y no se ha definido ningún índice principal. Este índice se conoce como índice secuencial de la tabla y no tiene ninguna definición. En cualquier caso, al establecer el índice actual en una cadena vacía mediante [JetSetCurrentIndex,](./jetsetcurrentindex-function.md) se seleccionará el índice clúster independientemente de la presencia de una definición de índice principal.
 
@@ -94,7 +94,14 @@ Hay un error importante en esta función que está presente en todas las version
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetGetCurrentIndexW</strong> (Unicode) y <strong>JetGetCurrentIndexA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetCurrentIndexW</strong> (Unicode) y <strong>JetGetCurrentIndexA</strong> (ANSI).</p> | 
 
 
 

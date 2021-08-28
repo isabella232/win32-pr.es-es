@@ -1,7 +1,7 @@
 ---
-description: 'El método GetMediaTimes2 recupera las horas de inicio y detención del medio. Este método es equivalente a IAMTimelineSrc:: GetMediaTimes, pero toma valores REFTIME.'
+description: El método GetMediaTimes2 recupera las horas de inicio y de detenerse de los medios. Este método es equivalente a IAMTimelineSrc::GetMediaTimes, pero toma valores REFTIME.
 ms.assetid: c3961c2c-7198-44bd-8734-7301a7c5b21e
-title: 'IAMTimelineSrc:: GetMediaTimes2 (método) (QEDIT. h)'
+title: Método IAMTimelineSrc::GetMediaTimes2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 779876e542ab51914725b326a0e3b217b893f254
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e3074cb0d416769e8e40f2f77814ac5603536df162e8d8a50fd2e916cfdc8931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052315"
 ---
-# <a name="iamtimelinesrcgetmediatimes2-method"></a>IAMTimelineSrc:: GetMediaTimes2 (método)
+# <a name="iamtimelinesrcgetmediatimes2-method"></a>Método IAMTimelineSrc::GetMediaTimes2
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `GetMediaTimes2` método recupera las horas de inicio y detención del medio. Este método es equivalente a [**IAMTimelineSrc:: GetMediaTimes**](iamtimelinesrc-getmediatimes.md), pero toma valores [**REFTIME**](reftime.md) .
+El `GetMediaTimes2` método recupera las horas de inicio y de detenerse de los medios. Este método es equivalente a [**IAMTimelineSrc::GetMediaTimes**](iamtimelinesrc-getmediatimes.md), pero toma [**valores REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ HRESULT GetMediaTimes2(
 
 <dl> <dt>
 
-*pStart* 
+*Pstart* 
 </dt> <dd>
 
 Recibe la hora de inicio del medio, en segundos.
@@ -56,23 +56,23 @@ Recibe la hora de inicio del medio, en segundos.
 *pStop* 
 </dt> <dd>
 
-Recibe el tiempo de detención del medio, en segundos.
+Recibe el tiempo de detenerse del medio, en segundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,8 +82,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineSrc**](iamtimelinesrc.md)
+[**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
 [Códigos de error y de éxito](error-and-success-codes.md)

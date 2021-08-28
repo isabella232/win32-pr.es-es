@@ -7,20 +7,20 @@ MSHAttr:
 title: DisplayProviderName
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0b342353ba06cf911a3da97d48eea83ecc2faf7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 638f3222d99935dc758adcd4a1df1b1546ddb87a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479941"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885472"
 ---
 # <a name="span-idwwan_profile_v2element_displayprovidernamespandisplayprovidername"></a><span id="WWAN_profile_v2.element_DisplayProviderName"></span>DisplayProviderName
 
-El [**elemento DisplayProviderName**](element-displayprovidername.md) es un [**providerNameType**](./schema-providernametype-simpletype.md) opcional que contiene el nombre de conexión de red que se va a mostrar en el Windows Connection Manager. Este nombre solo se mostrará si el suscriptor está en una red doméstica y no en itinerancia. El nombre de la red móvil se muestra en función de la información del dispositivo de banda ancha móvil.
+El [**elemento DisplayProviderName es**](element-displayprovidername.md) un [**providerNameType**](./schema-providernametype-simpletype.md) opcional que contiene el nombre de conexión de red que se va a mostrar en el Windows Connection Manager. Este nombre solo se mostrará si el suscriptor está en una red doméstica y no en itinerancia. El nombre de la red móvil se muestra en función de la información del dispositivo de banda ancha móvil.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-**<DisplayProviderName>**
+**&lt;DisplayProviderName&gt;**
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,7 +44,7 @@ Ninguno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-Este elemento más externo (documento) no puede estar contenido en ningún otro elemento.
+Este elemento más externo (documento) no puede estar incluido en ningún otro elemento.
 
 ## <a name="requirements"></a>Requisitos
 

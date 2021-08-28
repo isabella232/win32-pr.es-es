@@ -4,12 +4,12 @@ ms.assetid: a6765184-43ce-47b8-9eb1-e15af7e11c93
 title: Filtro del convertidor de espacios de colores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6cadc3f980116f6745d578a06220639b181fe13
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 8c0a519772a6d38971654cb92a895fcd95f5ecc8
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987068"
 ---
 # <a name="color-space-converter-filter"></a>Filtro del convertidor de espacios de colores
 
@@ -18,7 +18,18 @@ Este filtro de transformación convierte de un tipo de color RGB a otro tipo RGB
 
 
 
-| | | Filtrar interfaces | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a> | | Tipos de medios de pin de entrada | MEDIATYPE_Video, FORMAT_VideoInfo.<br /> Los subtipos siguientes son válidos:<br /><ul><li>MEDIASUBTYPE_RGB8</li><li>MEDIASUBTYPE_RGB555</li><li>MEDIASUBTYPE_RGB565</li><li>MEDIASUBTYPE_RGB24</li><li>MEDIASUBTYPE_RGB32</li></ul> | | Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Tipos de medios de anclar salida | MEDIATYPE_Video, FORMAT_VideoInfo.<br /> Los subtipos siguientes son válidos:<br /><ul><li>MEDIASUBTYPE_RGB8</li><li>MEDIASUBTYPE_RGB555</li><li>MEDIASUBTYPE_RGB565</li><li>MEDIASUBTYPE_RGB24</li><li>MEDIASUBTYPE_RGB32</li></ul> | | Interfaces de pin de salida | <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Filtrar clsid | CLSID_Colour | | ClSID de página de propiedades | No hay ninguna página de propiedades. | | Archivos ejecutables | quartz.dll | | <a href="merit.md">Ventajas |</a> MERIT_UNLIKELY | | <a href="filter-categories.md">Categoría de</a> filtro | CLSID_LegacyAmFilterCategory | 
+| Etiqueta | Value |
+|--------|-------|
+| Interfaces de filtro | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a> | 
+| Tipos de medios de pin de entrada | MEDIATYPE_Video, FORMAT_VideoInfo.<br /> Los subtipos siguientes son válidos:<br /><ul><li>MEDIASUBTYPE_RGB8</li><li>MEDIASUBTYPE_RGB555</li><li>MEDIASUBTYPE_RGB565</li><li>MEDIASUBTYPE_RGB24</li><li>MEDIASUBTYPE_RGB32</li></ul> | 
+| Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | 
+| Tipos de medios de pin de salida | MEDIATYPE_Video, FORMAT_VideoInfo.<br /> Los subtipos siguientes son válidos:<br /><ul><li>MEDIASUBTYPE_RGB8</li><li>MEDIASUBTYPE_RGB555</li><li>MEDIASUBTYPE_RGB565</li><li>MEDIASUBTYPE_RGB24</li><li>MEDIASUBTYPE_RGB32</li></ul> | 
+| Interfaces de pin de salida | <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | 
+| Filtrar CLSID | CLSID_Colour | 
+| CLSID de la página de propiedades | No hay ninguna página de propiedades. | 
+| Executable | quartz.dll | 
+| <a href="merit.md">Mérito</a> | MERIT_UNLIKELY | 
+| <a href="filter-categories.md">Categoría de filtro</a> | CLSID_LegacyAmFilterCategory | 
 
 
 

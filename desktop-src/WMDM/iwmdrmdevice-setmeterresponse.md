@@ -1,11 +1,11 @@
 ---
-title: IWMDRMDevice SetMeterResponse, método
+title: Método IWMDRMDevice SetMeterResponse
 description: El método SetMeterResponse establece la respuesta de medición.
 ms.assetid: 3f2e7d7c-6470-4d53-96b0-d3eebdb08329
 keywords:
-- Método SetMeterResponse de Windows Media Administrador de dispositivos
-- Método SetMeterResponse de Windows Media Administrador de dispositivos, interfaz IWMDRMDevice
-- Interfaz IWMDRMDevice de Windows Media Administrador de dispositivos, método SetMeterResponse
+- Método SetMeterResponse windows Media Administrador de dispositivos
+- Método SetMeterResponse windows Media Administrador de dispositivos interfaz , IWMDRMDevice
+- Interfaz IWMDRMDispositivo windows Media Administrador de dispositivos , método SetMeterResponse
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ed70b158215eb831296ad083af8cd2c001cb38f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b05941619d30ea067dc594e05b7b427ec5d825ef3e0c3c441cdfb3c723e94d4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619575"
 ---
-# <a name="iwmdrmdevicesetmeterresponse-method"></a>IWMDRMDevice:: SetMeterResponse (método)
+# <a name="iwmdrmdevicesetmeterresponse-method"></a>IWMDRMDevice::SetMeterResponse (método)
 
-El método **SetMeterResponse** establece la respuesta de medición.
+El **método SetMeterResponse** establece la respuesta de medición.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,31 +45,31 @@ HRESULT SetMeterResponse(
 
 <dl> <dt>
 
-*pbMeterResponse* \[ de\]
+*pbMeterResponse* \[ En\]
 </dt> <dd>
 
 Respuesta de medición que se va a establecer.
 
 </dd> <dt>
 
-*cbMeterResponse* \[ de\]
+*cbMeterResponse* \[ En\]
 </dt> <dd>
 
 Tamaño de la respuesta de medición, en bytes.
 
 </dd> <dt>
 
-*pdwFlags* \[ enuncia\]
+*pdwFlags* \[ out\]
 </dt> <dd>
 
-Marcas de respuesta. Este valor debe ser uno de los siguientes marcadores.
+Marcas de respuesta. Este valor debe ser una de las marcas siguientes.
 
 
 
 | Marca                            | Descripción              |
 |---------------------------------|--------------------------|
-| \_respuesta del medidor de WMDRM \_ \_     | Todas las respuestas de medición.     |
-| respuesta de medidor de WMDRM \_ \_ \_ parcial | Respuestas de medidores parciales. |
+| RESPUESTA DE MEDIDOR WMDRM \_ \_ \_ TODO     | Todas las respuestas de medidor.     |
+| RESPUESTA PARCIAL DEL MEDIDOR WMDRM \_ \_ \_ | Respuestas de medidor parcial. |
 
 
 
@@ -79,13 +79,13 @@ Marcas de respuesta. Este valor debe ser uno de los siguientes marcadores.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -97,8 +97,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice (interfaz)**](iwmdrmdevice.md)
 </dt> </dl>
 
  

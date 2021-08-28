@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 544438541affba1121850d5ad5a7a60d54d398bd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: cb2779c75d525e45e9140d8f70665a09fe202b21
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471391"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988118"
 ---
 # <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX estructura
 
-La **JET_UNICODEINDEX** de datos personaliza cómo se normalizan los datos Unicode cuando se crea un índice sobre una columna Unicode.
+La **JET_UNICODEINDEX** personaliza cómo se normalizan los datos Unicode cuando se crea un índice sobre una columna Unicode.
 
 ```cpp
 typedef struct tagJET_UNICODEINDEX {
@@ -59,7 +59,7 @@ Estas marcas se pasan a [LCMapString](/windows/win32/api/winnls/nf-winnls-lcmaps
 **dwMapFlags** tiene las restricciones siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>LCMAP_SORTKEY</p> | <p>Mandatory.</p> | 
 | <p>LCMAP_BYTEREV</p> | <p>Opcional.</p> | 
@@ -75,7 +75,11 @@ Estas marcas se pasan a [LCMapString](/windows/win32/api/winnls/nf-winnls-lcmaps
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

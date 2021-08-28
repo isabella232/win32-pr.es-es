@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ef90466b736facf5bd9fefee31c0449964d003b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: cdc87805539619ff644afbd295bfa7f1ac76f075
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985808"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482791"
 ---
 # <a name="jetregistercallback-function"></a>Función JetRegisterCallback
 
@@ -61,7 +61,7 @@ Cursor que se va a usar para esta llamada.
 
 Máscara de bits formada por las razones de devolución de llamada por las que la aplicación desea recibir notificaciones.
 
-Para crear esta máscara de bits, simplemente o juntos motivos de devolución de llamada válidos de la [enumeración JET_CBTYP](./jet-cbtyp.md) bits.
+Para crear esta máscara de bits, simplemente o juntos motivos de devolución de llamada válidos de [la enumeración JET_CBTYP](./jet-cbtyp.md) bits.
 
 *pCallback*
 
@@ -97,20 +97,14 @@ Si se ejecuta correctamente, la devolución de llamada especificada se registrar
 
 En caso de error, la devolución de llamada no se registrará. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Este método proporciona un medio para que la aplicación asocie devoluciones de llamada volátiles a una tabla de una base de datos. Si la aplicación desea asociar devoluciones de llamada persistentes a una tabla de la base de datos, debe pasar la devolución de llamada a [JET_TABLECREATE](./jet-tablecreate-structure.md) mediante [JetCreateTableColumnIndex](./jetcreatetablecolumnindex-function.md).
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

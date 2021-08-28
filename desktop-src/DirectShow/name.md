@@ -1,7 +1,7 @@
 ---
 description: La macro NAME genera una cadena de solo depuración.
 ms.assetid: 5cb9f803-dd2b-4055-bdcc-e754ef5fa505
-title: NOMBRE (Wxdebug. h)
+title: NAME (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0b698551789deb0c3775bd4ac722136e1abc9d38
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9fa3d9c7e343dcbc8c6959a1ead025cafb3e4722382d7fd61c085bcff05347ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107694"
 ---
-# <a name="name"></a>NAME
+# <a name="name"></a>NOMBRE
 
-La macro **Name** genera una cadena de solo depuración.
+La **macro NAME** genera una cadena de solo depuración.
 
 ``` syntax
 NAME(strLiteral);
@@ -42,9 +42,9 @@ Cadena de texto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En las compilaciones de depuración, esta macro es equivalente a la macro **Text** . En las compilaciones comerciales, se resuelve como (TCHAR \* ) **null**. Esta macro es útil al declarar el nombre de un objeto que deriva de la clase [**CBaseObject**](cbaseobject.md) .
+En las compilaciones de depuración, esta macro es equivalente a la **macro TEXT.** En las compilaciones comerciales, se resuelve en (TCHAR \* ) **NULL**. Esta macro es útil al declarar el nombre de un objeto que deriva de la [**clase CBaseObject.**](cbaseobject.md)
 
 
 ```C++
@@ -59,8 +59,8 @@ pObject = new CBaseObject(NAME("My Object"));
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

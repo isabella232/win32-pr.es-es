@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 861741de07093be29f84d4e2ae0364d5132251ec
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 36aadb42cdf942c802a65f92b5c450535575793b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471341"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986658"
 ---
 # <a name="jetsetcurrentindex3-function"></a>Función JetSetCurrentIndex3
 
@@ -69,7 +69,7 @@ Si *pindexid* no es NULL, se omitirá el nombre del índice y el índice se sele
 Grupo de bits que contienen las opciones que se usarán para esta llamada, que incluyen cero o más de lo siguiente.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitMoveFirst</p> | <p>Esta opción indica que el cursor debe colocarse en la primera entrada del índice especificado. Si se selecciona el índice clúster (índice principal o secuencial) y el índice actual es un índice secundario, JET_bitMoveFirst se supone. Si se selecciona el índice actual, esta opción se omite y no se realiza ningún cambio en la posición del cursor.</p> | 
 | <p>JET_bitNoMove</p> | <p>Esta opción indica que el cursor debe colocarse en la entrada de índice del nuevo índice que corresponde al registro asociado a la entrada de índice en la posición actual del cursor en el índice antiguo.</p><p>Si la definición del nuevo índice contiene al menos una columna de clave con varios valores, la entrada del índice de destino es ambigua. En este caso, la <em>itagSequence</em> especificada se usa para seleccionar qué valor múltiple de la columna de clave multivalor más importante se usa para colocar el cursor. Solo es necesario pasar una sola <em>itagSequence</em> incluso en el caso de varias columnas de clave multivalor porque el motor solo expande todos los valores de la columna de clave multivalor más importante. Consulte <a href="gg294099(v=exchg.10).md">JetCreateIndex para</a> obtener más detalles.</p><p>Si JET_bitMoveFirst se especifica, se omite esta opción.</p><p>Si se selecciona el índice actual, esta opción se omite y no se realiza ningún cambio en la posición del cursor. Cuando este parámetro no está presente, se supone que su valor JET_bitMoveFirst.</p> | 
@@ -92,7 +92,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errBadItagSequence</p> | <p>Se selecciona un índice secundario con la opción JET_bitNoMove y no hay ningún valor para la primera columna de clave multivalor en la definición del nuevo índice que se corresponde con el número de secuencia especificado.</p> | 
+| <p>JET_errBadItagSequence</p> | <p>Se selecciona un índice secundario con la opción JET_bitNoMove y no hay ningún valor para la primera columna de clave multivalor en la definición del nuevo índice que se corresponda con el número de secuencia especificado.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p>Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errInvalidIndexId</p> | <p>El contenido del identificador de índice no era válido o ha expirado y debe actualizarse. Esto puede ocurrir para <strong>JetSetCurrentIndex3</strong> cuando:</p><ul><li><p>pindexid- cbStruct no tiene el tamaño esperado &gt; (Windows Server 2003 y versiones posteriores).</p></li><li><p>El motor se ha apagado desde que se ha obtenido el identificador de índice.</p></li><li><p>Se han cerrado todos los cursores que hacen referencia a la tabla que contiene el índice correspondiente al identificador de índice y el motor ha expulsado la definición de ese índice de la caché de esquemas.</p></li><li><p>El identificador de índice se usa con un cursor abierto en la tabla incorrecta.</p></li><li><p>El índice se ha eliminado o aún no está visible para la sesión.</p></li></ul> | 
@@ -111,14 +111,21 @@ Si se ejecuta correctamente, el índice actual del cursor se establece en el ín
 
 En caso de error, el índice actual y la posición actual del cursor se encuentran en un estado indefinido. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Si la sugerencia de identificador de índice está obsoleta, la API simplemente produce un error. No hay ninguna reserva en el nombre de texto del índice en este caso como se podría esperar. El autor de la llamada de la API debe realizar manualmente esta reserva.
+Si la sugerencia de identificador de índice está obsoleta, la API simplemente produce un error. En este caso, no hay ninguna reserva en el nombre de texto del índice como se podría esperar. El autor de la llamada de la API debe realizar manualmente esta reserva.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetSetCurrentIndex3W</strong> (Unicode) y <strong>JetSetCurrentIndex3A</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetSetCurrentIndex3W</strong> (Unicode) y <strong>JetSetCurrentIndex3A</strong> (ANSI).</p> | 
 
 
 

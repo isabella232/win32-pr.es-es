@@ -1,12 +1,12 @@
-- name: Inyección táctil
+- name: Inserción táctil
   href: touch-injection-portal.md
   items:
-    - name: Referencia de inyección táctil
+    - name: Referencia de inserción táctil
       href: touch-injection-reference.md
       items:
         - name: Constantes
           href: constants.md
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: InitializeTouchInjection

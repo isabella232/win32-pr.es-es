@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_CANPASTE (RichEdit. h)
-description: Determina si un control Rich Edit puede pegar un formato de Portapapeles especificado.
+title: EM_CANPASTE mensaje (Richedit.h)
+description: Determina si un control de edición enriquecido puede pegar un formato de Portapapeles especificado.
 ms.assetid: 1b858ad8-1312-407b-b12a-c63668ba9f72
 keywords:
-- EM_CANPASTE controles de mensajes de Windows
+- EM_CANPASTE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aad400b610a033b6f67177da99876a892d294ec8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 24f2d831cd3b3d04fcb7859d2b5936b7354fbb6b638558d605c9f8c5a6ee6333
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916065"
 ---
-# <a name="em_canpaste-message"></a>Mensaje de la \_ descanpaste em
+# <a name="em_canpaste-message"></a>Mensaje \_ DE EM CANPASTE
 
-Determina si un control Rich Edit puede pegar un formato de Portapapeles especificado.
+Determina si un control de edición enriquecido puede pegar un formato de Portapapeles especificado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Determina si un control Rich Edit puede pegar un formato de Portapapeles especif
 *wParam* 
 </dt> <dd>
 
-Especifica los [formatos del portapapeles](/windows/desktop/dataxchg/clipboard-formats) que se van a probar. Para probar cualquier formato que esté actualmente en el portapapeles, establezca este parámetro en cero.
+Especifica los formatos [del Portapapeles que](/windows/desktop/dataxchg/clipboard-formats) se probarán. Para probar cualquier formato actualmente en el Portapapeles, establezca este parámetro en cero.
 
 </dd> <dt>
 
@@ -45,9 +45,9 @@ Este parámetro no se usa; debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el formato del portapapeles se puede pegar, el valor devuelto es un valor distinto de cero.
+Si se puede pegar el formato del Portapapeles, el valor devuelto es un valor distinto de cero.
 
-Si no se puede pegar el formato del portapapeles, el valor devuelto es cero.
+Si no se puede pegar el formato del Portapapeles, el valor devuelto es cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Si no se puede pegar el formato del portapapeles, el valor devuelto es cero.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

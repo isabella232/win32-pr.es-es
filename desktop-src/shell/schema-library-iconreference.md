@@ -1,5 +1,5 @@
 ---
-description: El <iconReference> elemento especifica un icono personalizado para esta biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
+description: El &lt; elemento iconReference &gt; especifica un icono personalizado para esta biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
 title: Elemento iconReference (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 84e200fa4969dc376661bd32851296d80c74120939afc995754cb2937ea04be3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db34a387200f3078da08747191242ae7414be410
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119820235"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884271"
 ---
 # <a name="iconreference-element-library-schema"></a>Elemento iconReference (esquema de biblioteca)
 
-El <iconReference> elemento especifica un icono personalizado para esta biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
+El &lt; elemento iconReference &gt; especifica un icono personalizado para esta biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
 
 ## <a name="syntax"></a>Syntax
 

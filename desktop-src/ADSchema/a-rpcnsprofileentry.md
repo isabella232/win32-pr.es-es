@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-Profile-entry
+title: Atributo rpc-Ns-Profile-Entry
 description: Lista de entradas para la prioridad actual.
 ms.assetid: 79e227b8-7da5-4945-b206-7dade73256e9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de entrada de Perfil de RPC-NS-Profile
-- rpcNsProfileEntry esquema de AD de atributos
+- Rpc-Ns-Profile-Entry attribute AD Schema
+- Esquema de AD del atributo rpcNsProfileEntry
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01dc3897a51099088e8e161a64cfff855c381270
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 35a796fdd5372330b3d642c9338200d68c6a61e6c5e1185e73c50aa4e69b26fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646545"
 ---
-# <a name="rpc-ns-profile-entry-attribute"></a>atributo RPC-NS-Profile-entry
+# <a name="rpc-ns-profile-entry-attribute"></a>Atributo rpc-Ns-Profile-Entry
 
 Lista de entradas para la prioridad actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Entrada de Perfil de RPC-NS-                        |
-| Nombre para mostrar de LDAP | rpcNsProfileEntry                           |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | rpc-Ns-Profile-Entry                        |
+| Ldap-Display-Name | rpcNsProfileEntry                           |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.118                      |
-| System-ID-GUID    | bf967a28-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967a28-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Lista de entradas para la prioridad actual.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Lista de entradas para la prioridad actual.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Lista de entradas para la prioridad actual.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Lista de entradas para la prioridad actual.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Lista de entradas para la prioridad actual.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Lista de entradas para la prioridad actual.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**Elemento de Perfil de RPC**](c-rpcprofileelement.md)<br/> |
+| Clases usadas en        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 

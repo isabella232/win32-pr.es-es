@@ -8,18 +8,18 @@ keywords:
 - modelo de objetos, diferencias de versión
 - Reproductor de Windows Media ActiveX control de versiones, diferencias de versión
 - ActiveX control de versiones, diferencias de versión
-- Reproductor de Windows Media Control de ActiveX móviles, diferencias de versión
+- Reproductor de Windows Media Control de ActiveX móvil, diferencias de versión
 - Reproductor de Windows Media Móvil, modelo de objetos
 - guía de migración, diferencias de versión
-- versiones de Reproductor de Windows Media,object model
+- versiones de Reproductor de Windows Media,modelo de objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b5fb048042fcbaa064fd3a322b90b3ce90a676e
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: a6f2e092f7e32b889056841b5802dffa141c0be4
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884771"
 ---
 # <a name="detailed-object-model-comparison"></a>Comparación detallada del modelo de objetos
 
@@ -34,14 +34,14 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </colgroup>
 <thead>
 <tr class="header">
-<th>Reproductor de Windows Media propiedad 6.4</th>
+<th>Reproductor de Windows Media 6.4</th>
 <th>Reproductor de Windows Media 7 o versiones posteriores equivalentes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><em>Player6</em>. <strong>AllowChangeDisplaySize</strong></td>
-<td>La presentación de Reproductor de Windows Media 7 o posterior cambia automáticamente de tamaño para ajustarse al medio. Puede establecer las propiedades de alto y ancho en la <OBJECT> etiqueta o en el script.</td>
+<td>La presentación de Reproductor de Windows Media 7 o posterior cambia automáticamente de tamaño para ajustarse a los medios. Puede establecer las propiedades de alto y ancho en la &lt; etiqueta OBJECT o en el &gt; script.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>AllowScan</strong></td>
@@ -65,19 +65,19 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>AutoRewind</strong></td>
-<td>Use <em>controles</em>. <strong>currentPosition</strong> en el script para especificar o recuperar la posición actual. Como alternativa, use marcadores y el <em>reproductor</em>. <strong>evento markerHit.</strong></td>
+<td>Use <em>controles</em>. <strong>currentPosition</strong> en el script para especificar o recuperar la posición actual. Como alternativa, use marcadores y <em>player</em>. <strong>evento markerHit.</strong></td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>AutoSize</strong></td>
-<td>El ajuste de tamaño automático es el comportamiento predeterminado. Para invalidar el tamaño automático, establezca las propiedades de alto y ancho en <OBJECT> la etiqueta o en el script.</td>
+<td>El ajuste de tamaño automático es el comportamiento predeterminado. Para invalidar el tamaño automático, establezca las propiedades de alto y ancho en la &lt; etiqueta OBJECT o en el &gt; script.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Inicio automático</strong></td>
 <td>Use <em>Configuración</em>. <strong>autoStart</strong>.</td>
 </tr>
 <tr class="even">
-<td><em>Player6</em>. <strong>Saldo</strong></td>
-<td>Use <em>Configuración</em>. <strong>balance</strong>.</td>
+<td><em>Player6</em>. <strong>Equilibrio</strong></td>
+<td>Use <em>Configuración</em>. <strong>equilibra</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Ancho de banda</strong></td>
@@ -100,7 +100,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 <td>Use <em>Red</em>. <strong>bufferingTime</strong>.</td>
 </tr>
 <tr class="even">
-<td><em>Player6</em>. <strong>ButtonsAvailable</strong></td>
+<td><em>Player6</em>. <strong>Botones Disponibles</strong></td>
 <td>No disponible.</td>
 </tr>
 <tr class="odd">
@@ -109,7 +109,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>CanScan</strong></td>
-<td>Use <em>controles</em>. <strong>isAvailable</strong>( &quot; FastForward &quot; ) y <em>Controls</em>.<strong> isAvailable</strong>( &quot; FastReverse &quot; ).</td>
+<td>Use <em>controles</em>. <strong>isAvailable</strong>( &quot; FastForward &quot; ) y <em>controles</em>.<strong> isAvailable</strong>( &quot; FastReverse &quot; ).</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>CanSeek</strong></td>
@@ -117,11 +117,11 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>CanSeekToMarkers</strong></td>
-<td>Use <em>controles</em>. <strong>isAvailable</strong>( &quot; CurrentMarker &quot; ). Use <em>Media</em>. <strong>markerCount</strong> para recuperar el recuento de marcadores en un elemento multimedia determinado. Use <em>controles</em>. <strong>currentMarker para</strong> especificar o recuperar el número de marcador actual.</td>
+<td>Use <em>controles</em>. <strong>isAvailable</strong>( &quot; CurrentMarker &quot; ). Use <em>media</em>. <strong>markerCount</strong> para recuperar el recuento de marcadores en un elemento multimedia determinado. Use <em>controles</em>. <strong>currentMarker para</strong> especificar o recuperar el número de marcador actual.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>CaptioningID</strong></td>
-<td>Use <em>ClosedCaption</em>. <strong>captioningID</strong>.</td>
+<td>Use <em>ClosedCaption.</em> <strong>captioningID</strong>.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>CCActive</strong></td>
@@ -145,7 +145,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>ClientID</strong></td>
-<td>No disponible. Reproductor de Windows Media serie 9 o posterior permite al usuario seleccionar si se transmite un identificador de reproductor único a los proveedores de contenido.<br/> Si el usuario selecciona esta opción, el Reproductor envía un identificador único al servidor Windows Media. El identificador se registra en el archivo de registro del servidor, ubicado en . <em>Carpeta system32\logfiles de</em> forma predeterminada. El nombre del campo de registro &quot; es c-playerid. &quot; El registro del servidor no está habilitado de forma predeterminada en Servicios de Windows Media.<br/> Si el usuario no selecciona esta opción, el servidor genera un identificador de sesión aleatorio, que es único para cada cliente para una sesión determinada.<br/> Para más información, consulte la documentación Servicios de Windows Media serie 9.<br/></td>
+<td>No disponible. Reproductor de Windows Media serie 9 o posterior permite al usuario seleccionar si se transmite un identificador de reproductor único a los proveedores de contenido.<br/> Si el usuario selecciona esta opción, el Reproductor envía un identificador único al Windows Multimedia. El identificador se registra en el archivo de registro del servidor, ubicado en . <em>Carpeta system32\logfiles</em> de forma predeterminada. El nombre del campo de registro &quot; es c-playerid. &quot; El registro del servidor no está habilitado de forma predeterminada en Servicios de Windows Media.<br/> Si el usuario no selecciona esta opción, el servidor genera un identificador de sesión aleatorio, que es único para cada cliente para una sesión determinada.<br/> Para más información, consulte la documentación Servicios de Windows Media serie 9.<br/></td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>CodecCount</strong></td>
@@ -173,7 +173,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>CreationDate</strong></td>
-<td>Use <em>MediaCollection</em>. <strong>getMediaAtom</strong>( &quot; CreationDate &quot; ) para recuperar el índice del atom de fecha de creación. Use <em>Media</em>. <strong>getItemInfoByAtom para</strong> recuperar los metadatos.</td>
+<td>Use <em>MediaCollection</em>. <strong>getMediaAtom</strong>( &quot; CreationDate &quot; ) para recuperar el índice del átomo de fecha de creación. Use <em>media</em>. <strong>getItemInfoByAtom para</strong> recuperar los metadatos.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>CurrentAngle</strong></td>
@@ -193,7 +193,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>CurrentChapter</strong></td>
-<td>Recupere la lista de reproducción actual. Si la lista de reproducción actual no es la misma que la lista de reproducción devuelta por <em>Cdrom</em>. <strong>lista de</strong>reproducción y, a continuación, no hay ningún capítulo actual. De lo contrario, el número de capítulo actual es el índice del medio actual en la lista de reproducción actual.</td>
+<td>Recupere la lista de reproducción actual. Si la lista de reproducción actual no es la misma que la lista de reproducción devuelta por <em>Cdrom</em>. <strong>lista de</strong>reproducción , no hay ningún capítulo actual. De lo contrario, el número de capítulo actual es el índice del medio actual en la lista de reproducción actual.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>CurrentDiscSide</strong></td>
@@ -221,7 +221,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>CurrentTitle</strong></td>
-<td>Recupere la lista de reproducción actual. Si la lista de reproducción actual es la misma que la lista de reproducción devuelta por <em>Cdrom</em>. <strong>lista</strong>de reproducción y, a continuación, el número de título es el índice del medio actual en la lista de reproducción actual.</td>
+<td>Recupere la lista de reproducción actual. Si la lista de reproducción actual es la misma que la lista de reproducción devuelta por <em>Cdrom</em>. <strong>playlist</strong>, a continuación, el número de título es el índice del medio actual en la lista de reproducción actual.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>CurrentVolume</strong></td>
@@ -233,7 +233,8 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>DefaultFrame</strong></td>
-<td>Use <em>Configuración</em>. <strong>defaultFrame</strong>o usar un <PARAM> atributo en el <OBJECT> elemento : <pre data-space="preserve"><code><PARAM NAME=&quot;defaultFrame&quot; VALUE=&quot;right&quot;></code></pre></td>
+<td>Use <em>Configuración</em>. <strong>defaultFrame</strong>o use un <PARAM> atributo en el &lt; elemento &gt; OBJECT:
+<pre data-space="preserve"><code><PARAM NAME=&quot;defaultFrame&quot; VALUE=&quot;right&quot;></code></pre></td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>DisplayBackColor</strong></td>
@@ -249,42 +250,42 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>DisplaySize</strong></td>
-<td>La pantalla predeterminada cambia automáticamente de tamaño para ajustarse al medio. Puede establecer las propiedades de alto y ancho en la <OBJECT> etiqueta o en el script. Use <em>player</em>. <strong>fullScreen</strong> para cambiar al modo de pantalla completa.</td>
+<td>La pantalla predeterminada cambia automáticamente de tamaño para ajustarse al medio. Puede establecer las propiedades de alto y ancho en la &lt; etiqueta OBJECT o en el &gt; script. Use <em>el reproductor</em>. <strong>fullScreen</strong> para cambiar al modo de pantalla completa.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>Duración</strong></td>
-<td>Use <em>media</em>. <strong>duration</strong>.</td>
+<td>Use <em>Media</em>. <strong>duration</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>DVD</strong></td>
-<td>Use <em>player</em>. <strong>DVD</strong>.</td>
+<td>Use <em>el reproductor</em>. <strong>DVD</strong>.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>EnableContextMenu</strong></td>
-<td>Use <em>player</em>. <strong>enableContextMenu</strong>.</td>
+<td>Use <em>el reproductor</em>. <strong>enableContextMenu</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Habilitado</strong></td>
-<td>Use <em>player</em>. <strong>habilitado.</strong></td>
+<td>Use <em>el reproductor</em>. <strong>habilitado.</strong></td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>EnableFullScreenControls</strong></td>
-<td>Al usar Reproductor de Windows Media serie 9 o posterior, los controles de pantalla completa se habilitan automáticamente a menos que <em>player .</em> <strong>uiMode</strong>  =  &quot; none &quot; .</td>
+<td>Al usar Reproductor de Windows Media serie 9 o posterior, los controles de pantalla completa se habilitan automáticamente a menos que el <em>Reproductor de</em>. <strong>uiMode</strong>  =  &quot; &quot;ninguno.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>EnablePositionControls</strong></td>
-<td>No disponible. Puede proporcionar controles personalizados o <em>usar</em>player . <strong>uimode para</strong> elegir una configuración predeterminada.</td>
+<td>No disponible. Puede proporcionar controles personalizados o usar el <em>Reproductor de</em>. <strong>uimode para</strong> elegir una configuración predeterminada.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>EnableTracker</strong></td>
-<td>No disponible. Puede proporcionar un control personalizado o <em>usar</em>player . <strong>uimode para</strong> elegir una configuración predeterminada.</td>
+<td>No disponible. Puede proporcionar un control personalizado o usar el <em>Reproductor de</em>. <strong>uimode para</strong> elegir una configuración predeterminada.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>EntryCount</strong></td>
 <td>Use lista <em>de reproducción</em>. <strong>count</strong></td>
 </tr>
 <tr class="even">
-<td><em>Player6</em>. <strong>ErrorCode</strong></td>
+<td><em>Player6</em>. <strong>Código de error</strong></td>
 <td>Use <em>ErrorItem</em>. <strong>errorCode</strong>.</td>
 </tr>
 <tr class="odd">
@@ -297,7 +298,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>FileName</strong></td>
-<td>Use <em>player</em>. <strong>Dirección URL</strong> o <em>reproductor.</em> <strong>currentMedia</strong>. Use <em>controles</em>. <strong>currentItem cuando</strong> se trabaja dentro de una lista de reproducción.</td>
+<td>Use <em>el reproductor</em>. <strong>Dirección URL</strong> o <em>reproductor</em>. <strong>currentMedia</strong>. Use <em>controles</em>. <strong>currentItem cuando</strong> se trabaja dentro de una lista de reproducción.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>FramesPerSecond</strong></td>
@@ -313,7 +314,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>ImageSourceHeight</strong></td>
-<td>Use <em>media</em>. <strong>imageSourceHeight</strong>.</td>
+<td>Use <em>Media</em>. <strong>imageSourceHeight</strong>.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>ImageSourceWidth</strong></td>
@@ -341,7 +342,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>MarkerCount</strong></td>
-<td>Use <em>media</em>. <strong>markerCount</strong>.</td>
+<td>Use <em>Media</em>. <strong>markerCount</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Exclusión mutua</strong></td>
@@ -349,7 +350,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>OpenState</strong></td>
-<td>Use <em>player</em>. <strong>openState</strong>.</td>
+<td>Use <em>el reproductor</em>. <strong>openState</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>PlayCount</strong></td>
@@ -469,7 +470,7 @@ En la tabla siguiente se comparan las Reproductor de Windows Media del modelo de
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>SourceLink</strong></td>
-<td>Use <em>Media</em>. <strong>sourceURL</strong>.</td>
+<td>Use <em>media</em>. <strong>sourceURL</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>SourceProtocol</strong></td>
@@ -548,7 +549,7 @@ En la tabla siguiente se comparan los Reproductor de Windows Media modelo de obj
 <tbody>
 <tr class="odd">
 <td><em>Player6</em>. <strong>AboutBox</strong></td>
-<td>Use <em>player</em>. <strong>versionInfo</strong> para recuperar la versión de Reproductor de Windows Media.</td>
+<td>Use <em>el reproductor</em>. <strong>versionInfo</strong> para recuperar la versión de Reproductor de Windows Media.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>BackwardScan</strong></td>
@@ -568,9 +569,9 @@ En la tabla siguiente se comparan los Reproductor de Windows Media modelo de obj
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>ChapterPlay</strong></td>
-<td>Si ya está reproduciendo la lista de reproducción de título especificada, recupere el capítulo deseado como un objeto multimedia con la sintaxis siguiente:
+<td>Si ya está reproduciendo la lista de reproducción de título especificada, recupere el capítulo deseado como un objeto multimedia mediante la sintaxis siguiente:
 <pre data-space="preserve"><code>var media = Player.currentPlaylist.item(index);</code></pre>
-A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> el objeto multimedia devuelto.<br/></td>
+A continuación, especifique <em>Player</em>. <strong>currentMedia</strong> mediante el objeto multimedia devuelto.<br/></td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>ChapterPlayAutoStop</strong></td>
@@ -578,9 +579,9 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>ChapterSearch</strong></td>
-<td>Si ya está reproduciendo la lista de reproducción de título especificada, recupere el capítulo deseado como un objeto multimedia con la sintaxis siguiente:
+<td>Si ya está reproduciendo la lista de reproducción de título especificada, recupere el capítulo deseado como un objeto multimedia mediante la sintaxis siguiente:
 <pre data-space="preserve"><code>var media = Player.currentPlaylist.item(index);</code></pre>
-A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> el objeto multimedia devuelto.<br/></td>
+A continuación, especifique <em>Player</em>. <strong>currentMedia</strong> mediante el objeto multimedia devuelto.<br/></td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>FastForward</strong></td>
@@ -620,7 +621,7 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>GetCurrentEntry</strong></td>
-<td>Use el script para recorrer en bucle la lista de reproducción actual. Use <em>media</em>. <strong>isIdentical para</strong> comparar cada entrada de la lista de reproducción con el <em>reproductor</em>. <strong>objeto currentMedia.</strong></td>
+<td>Use el script para recorrer en bucle la lista de reproducción actual. Use <em>Media</em>. <strong>isIdentical para</strong> comparar cada entrada de la lista de reproducción con el <em>reproductor</em>. <strong>objeto currentMedia.</strong></td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>GetMarkerName</strong></td>
@@ -628,7 +629,7 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>GetMarkerTime</strong></td>
-<td>Use <em>media</em>. <strong>getMarkerTime</strong>.</td>
+<td>Use <em>Media</em>. <strong>getMarkerTime</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>GetMediaInfoString</strong></td>
@@ -671,7 +672,7 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 <td>Use <em>DVD</em>. <strong>back</strong>.</td>
 </tr>
 <tr class="odd">
-<td><em>Player6</em>. <strong>IsSoundCardEnabled</strong></td>
+<td><em>Player6</em>. <strong>Is SoundCardEnabled</strong></td>
 <td>No disponible.</td>
 </tr>
 <tr class="even">
@@ -688,19 +689,19 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Siguiente</strong></td>
-<td>Use <em>controles</em>. <strong>siguiente.</strong></td>
+<td>Use <em>controles</em>. <strong>a continuación,</strong>.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>NextPGSearch</strong></td>
-<td>Use <em>controles</em>. <strong>siguiente.</strong></td>
+<td>Use <em>controles</em>. <strong>a continuación,</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Abrir</strong></td>
-<td>Use <em>player</em>. <strong>Dirección URL</strong> o <em>reproductor.</em> <strong>currentMedia</strong>. Los archivos siempre se abren de forma asincrónica.</td>
+<td>Use <em>el reproductor</em>. <strong>Dirección URL</strong> o <em>reproductor</em>. <strong>currentMedia</strong>. Los archivos siempre se abren de forma asincrónica.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>Pausar</strong></td>
-<td>Use <em>controles</em>. <strong>pausar</strong>.</td>
+<td>Use <em>controles</em>. <strong>pause</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Reproducir</strong></td>
@@ -724,7 +725,7 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>SetCurrentEntry</strong></td>
-<td>Recupere un objeto multimedia mediante <em>currentPlaylist.</em> <strong>item</strong>(<em>entryNumber</em>). A continuación, especifique el objeto multimedia recuperado mediante <em>Controles</em>. <strong>currentItem</strong>.</td>
+<td>Recupere un objeto multimedia mediante <em>currentPlaylist</em>. <strong>item</strong>(<em>entryNumber</em>). A continuación, especifique el objeto multimedia recuperado mediante <em>Controles</em>. <strong>currentItem</strong>.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>ShowDialog</strong></td>
@@ -732,7 +733,7 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>StillOff</strong></td>
-<td>Use <em>controles</em>. <strong>reproducir</strong>. Como alternativa, use <em>Controles</em>. <strong>A continuación,</strong> si está actualmente en modo todavía.</td>
+<td>Use <em>controles</em>. <strong>reproducir</strong>. Como alternativa, use <em>Controles</em>. <strong>A continuación,</strong> si actualmente está en modo de mantenimiento.</td>
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>Detener</strong></td>
@@ -744,7 +745,7 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>TimePlay</strong></td>
-<td>En la lista de reproducción raíz, use <em>currentPlaylist</em>. <strong>item</strong>(<em>index</em>) para recuperar un objeto multimedia. A continuación, establezca el objeto multimedia como el actual mediante <em>Controles</em>. <strong>currentItem</strong>. A continuación, especifique <em>Controles</em>. <strong>currentPosition mediante</strong> un valor de tiempo en segundos.</td>
+<td>En la lista de reproducción raíz, use <em>currentPlaylist</em>. <strong>item</strong>(<em>index</em>) para recuperar un objeto multimedia. A continuación, establezca el objeto multimedia como el actual mediante <em>Controles</em>. <strong>currentItem</strong>. A continuación, especifique <em>Controles</em>. <strong>currentPosition</strong> con un valor de tiempo en segundos.</td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>TimeSearch</strong></td>
@@ -752,9 +753,9 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia con</strong> 
 </tr>
 <tr class="odd">
 <td><em>Player6</em>. <strong>TitlePlay</strong></td>
-<td>Si ya está reproduciendo la lista de reproducción de título especificada, recupere el capítulo deseado como un objeto multimedia con la sintaxis siguiente:
+<td>Si ya está reproduciendo la lista de reproducción de título especificada, recupere el capítulo deseado como un objeto multimedia mediante la sintaxis siguiente:
 <pre data-space="preserve"><code>var media = Player.currentPlaylist.item(index);</code></pre>
-A continuación, especifique <em>Player</em>. <strong>currentMedia mediante</strong> el objeto multimedia devuelto.<br/> Como alternativa, use <em>currentPlaylist</em>. <strong>elemento</strong> para recuperar un objeto multimedia y, a continuación, usar el objeto multimedia devuelto para especificar <em>Controles</em>. <strong>currentItem</strong>.<br/></td>
+A continuación, especifique <em>Player</em>. <strong>currentMedia</strong> mediante el objeto multimedia devuelto.<br/> Como alternativa, use <em>currentPlaylist</em>. <strong>elemento</strong> para recuperar un objeto multimedia y, a continuación, usar el objeto multimedia devuelto para especificar <em>Controles</em>. <strong>currentItem</strong>.<br/></td>
 </tr>
 <tr class="even">
 <td><em>Player6</em>. <strong>TopPGSearch</strong></td>
@@ -775,33 +776,33 @@ A continuación, especifique <em>Player</em>. <strong>currentMedia mediante</str
 
  
 
-En la tabla siguiente se comparan los Reproductor de Windows Media del modelo de objetos de la versión 6.4 con Reproductor de Windows Media modelo de objetos 7 o posterior.
+En la tabla siguiente se comparan los eventos Reproductor de Windows Media modelo de objetos de la versión 6.4 con Reproductor de Windows Media modelo de objetos 7 o posterior.
 
 
 
-| Reproductor de Windows Media evento 6.4  | Reproductor de Windows Media 7 o versiones posteriores equivalentes                                                                                                                                                                               |
+| Reproductor de Windows Media evento 6.4  | Reproductor de Windows Media 7 o posterior equivalente                                                                                                                                                                               |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Player6*. **Almacenamiento en búfer**         | Use *player*. **Almacenar en búfer**.                                                                                                                                                                                              |
-| *Player6*. **Haga clic en**             | Use *player*. **Haga clic en**                                                                                                                                                                                                   |
-| *Player6*. **DblClick**          | Use *player*. **DoubleClick**                                                                                                                                                                                             |
+| *Player6*. **Almacenamiento en búfer**         | Use *el reproductor*. **Almacenar en búfer**.                                                                                                                                                                                              |
+| *Player6*. **Haga clic en**             | Use *el reproductor*. **Haga clic en**                                                                                                                                                                                                   |
+| *Player6*. **DblClick**          | Use *el reproductor*. **DoubleClick**                                                                                                                                                                                             |
 | *Player6*. **Desconectar**        | No disponible.                                                                                                                                                                                                           |
 | *Player6*. **DisplayModeChange** | No disponible.                                                                                                                                                                                                           |
 | *Player6*. **DVDNotify**         | *Player*. **DomainChange** y *Player*. **OpenPlaylistSwitch** son eventos específicos de DVD. También se pueden aplicar otros eventos relacionados con listas de reproducción, medios y medios de CD-ROM en función de la aplicación.                        |
-| *Player6*. **EndOfStream**       | Use *player*. **PlayState**.                                                                                                                                                                                              |
-| *Player6*. **Error**             | El evento no cambia. Sin embargo, los errores se ponen en cola. Use el **objeto Error** con el **objeto ErrorItem** para recuperar información de error de la cola. Vea el código de ejemplo de la sección anterior, Control de errores. |
-| *Player6*. **KeyDown**           | Use *player*. **Keydown**                                                                                                                                                                                                 |
-| *Player6*. **KeyPress**          | Use *player*. **KeyPress**                                                                                                                                                                                                |
-| *Player6*. **KeyUp**             | Use *player*. **KeyUp**                                                                                                                                                                                                   |
-| *Player6*. **MarkerHit**         | Use *player*. **MarkerHit**.                                                                                                                                                                                              |
-| *Player6*. **MouseDown**         | Use *player*. **MouseDown**                                                                                                                                                                                               |
-| *Player6*. **MouseMove**         | Use *player*. **MouseMove**                                                                                                                                                                                               |
-| *Player6*. **MouseUp**           | Use *player*. **MouseUp**                                                                                                                                                                                                 |
-| *Player6*. **NewStream**         | Use *player*. **OpenStateChange**                                                                                                                                                                                         |
-| *Player6*. **OpenStateChange**   | Use *player*. **OpenStateChange**.                                                                                                                                                                                        |
-| *Player6*. **PlayStateChange**   | Use *player*. **PlayStateChange**.                                                                                                                                                                                        |
-| *Player6*. **PositionChange**    | Use *player*. **PositionChange**.                                                                                                                                                                                         |
-| *Player6*. **ReadyStateChange**  | Use *player*. **PlayStateChange**.                                                                                                                                                                                        |
-| *Player6*. **ScriptCommand**     | Use *player*. **ScriptCommand**.                                                                                                                                                                                          |
+| *Player6*. **EndOfStream**       | Use *el reproductor*. **PlayState**.                                                                                                                                                                                              |
+| *Player6*. **Error**             | El evento no se modifica. Sin embargo, los errores se ponen en cola. Use el **objeto Error** con el **objeto ErrorItem** para recuperar información de error de la cola. Vea el código de ejemplo de la sección anterior, Control de errores. |
+| *Player6*. **KeyDown**           | Use *el reproductor*. **Keydown**                                                                                                                                                                                                 |
+| *Player6*. **KeyPress**          | Use *el reproductor*. **KeyPress**                                                                                                                                                                                                |
+| *Player6*. **KeyUp**             | Use *el reproductor*. **KeyUp**                                                                                                                                                                                                   |
+| *Player6*. **MarkerHit**         | Use *el reproductor*. **MarkerHit**.                                                                                                                                                                                              |
+| *Player6*. **MouseDown**         | Use *el reproductor*. **MouseDown**                                                                                                                                                                                               |
+| *Player6*. **MouseMove**         | Use *el reproductor*. **MouseMove**                                                                                                                                                                                               |
+| *Player6*. **MouseUp**           | Use *el reproductor*. **MouseUp**                                                                                                                                                                                                 |
+| *Player6*. **NewStream**         | Use *el reproductor*. **OpenStateChange**                                                                                                                                                                                         |
+| *Player6*. **OpenStateChange**   | Use *el reproductor*. **OpenStateChange**.                                                                                                                                                                                        |
+| *Player6*. **PlayStateChange**   | Use *el reproductor*. **PlayStateChange**.                                                                                                                                                                                        |
+| *Player6*. **PositionChange**    | Use *el reproductor*. **PositionChange**.                                                                                                                                                                                         |
+| *Player6*. **ReadyStateChange**  | Use *el reproductor*. **PlayStateChange**.                                                                                                                                                                                        |
+| *Player6*. **ScriptCommand**     | Use *el reproductor*. **ScriptCommand**.                                                                                                                                                                                          |
 | *Player6*. **Advertencia**           | No disponible.                                                                                                                                                                                                           |
 
 
@@ -812,7 +813,7 @@ En la tabla siguiente se comparan los Reproductor de Windows Media del modelo de
 
 <dl> <dt>
 
-[**Guía de migración de modelos de objetos**](object-model-migration-guide.md)
+[**Guía de migración del modelo de objetos**](object-model-migration-guide.md)
 </dt> <dt>
 
 [**Referencia del modelo de objetos para scripting**](object-model-reference-for-scripting.md)

@@ -1,6 +1,6 @@
 ---
 title: Búsquedas sincrónicas y asincrónicas con IDirectorySearch
-description: Al realizar una búsqueda mediante la interfaz IDirectorySearch, el método IDirectorySearch ExecuteSearch no envía la solicitud de búsqueda al servidor.
+description: Cuando se realiza una búsqueda mediante la interfaz IDirectorySearch, el método ExecuteSearch de IDirectorySearch no envía la solicitud de búsqueda al servidor.
 ms.assetid: c4387202-22a0-497a-af0a-20aa8ede905d
 ms.tgt_platform: multiple
 keywords:
@@ -25,7 +25,7 @@ En una búsqueda sincrónica, si la paginación no está habilitada, se devuelve
 
 En una búsqueda asincrónica, si la paginación no está habilitada, se devuelve la primera fila cuando el servidor ha construido la primera fila del conjunto de resultados. Si la paginación está habilitada, se devuelve la primera fila cuando se devuelve la primera página del conjunto de resultados.
 
-El tipo de búsqueda predeterminado es sincrónico. Para especificar una búsqueda asincrónica, establezca una opción de búsqueda **\_ ADS SEARCHPREF \_ ASYNCHRONOUS** con un valor **\_ BOOLEANo ADSTYPE** **de TRUE** en la matriz DE INFORMACIÓN [**\_ SEARCHPREF \_**](/windows/desktop/api/Iads/ns-iads-ads_searchpref_info) de ADS pasada al método [**IDirectorySearch::SetSearchPreference.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) Esta operación se muestra en el ejemplo de código siguiente.
+El tipo de búsqueda predeterminado es sincrónico. Para especificar una búsqueda asincrónica, establezca una opción de búsqueda **ASINCRÓNICA \_ SEARCHPREF \_** de ADS con un valor **\_ BOOLEANo ADSTYPE** **de TRUE** en la matriz [**\_ SEARCHPREF \_ INFO**](/windows/desktop/api/Iads/ns-iads-ads_searchpref_info) de ADS pasada al método [**IDirectorySearch::SetSearchPreference.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) Esta operación se muestra en el ejemplo de código siguiente.
 
 
 ```C++

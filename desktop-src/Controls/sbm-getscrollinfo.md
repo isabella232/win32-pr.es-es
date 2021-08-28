@@ -1,9 +1,9 @@
 ---
-title: Mensaje de SBM_GETSCROLLINFO (Winuser. h)
-description: El \_ mensaje SBM GETSCROLLINFO se envía para recuperar los parámetros de una barra de desplazamiento.
+title: SBM_GETSCROLLINFO mensaje (Winuser.h)
+description: El mensaje \_ SBM GETSCROLLINFO se envía para recuperar los parámetros de una barra de desplazamiento.
 ms.assetid: 3b43430f-b55f-43ec-8558-baf5c953064f
 keywords:
-- SBM_GETSCROLLINFO controles de mensajes de Windows
+- SBM_GETSCROLLINFO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4cb05b05ba2686d755c5fa34adcff0016433346
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5fde18fe30e9d944e547305094e7ea69e6745d4e1e112d8697367cd82833588
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919475"
 ---
-# <a name="sbm_getscrollinfo-message"></a>\_Mensaje GETSCROLLINFO SBM
+# <a name="sbm_getscrollinfo-message"></a>Mensaje SBM \_ GETSCROLLINFO
 
-El mensaje **SBM \_ GETSCROLLINFO** se envía para recuperar los parámetros de una barra de desplazamiento.
+El **mensaje \_ SBM GETSCROLLINFO** se envía para recuperar los parámetros de una barra de desplazamiento.
 
-Las aplicaciones no deben enviar este mensaje directamente. En su lugar, deben utilizar la función [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) . Una ventana recibe este mensaje a través de su función [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Las aplicaciones que implementan un control de barra de desplazamiento personalizado deben responder a estos mensajes para que la función **GetScrollInfo** funcione correctamente.
+Las aplicaciones no deben enviar este mensaje directamente. En su lugar, deben usar la [**función GetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) Una ventana recibe este mensaje a través de su [*función WindowProc.*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) Las aplicaciones que implementan un control de barra de desplazamiento personalizado deben responder a estos mensajes para que **la función GetScrollInfo** funcione correctamente.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,19 +41,19 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) . Antes de llamar a [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo), establezca el miembro **cbSize** de la estructura en **sizeof**(**SCROLLINFO**) y establezca el miembro **fMask** para especificar los parámetros de la barra de desplazamiento que se van a recuperar. Antes de devolver, el mensaje copia los parámetros especificados en los miembros adecuados de la estructura.
+Puntero a una [**estructura SCROLLINFO.**](/windows/win32/api/winuser/ns-winuser-scrollinfo) Antes de llamar [**a GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo), establezca el miembro **cbSize** de la estructura en **sizeof**(**SCROLLINFO**) y establezca el miembro **fMask** para especificar los parámetros de la barra de desplazamiento que se recuperarán. Antes de devolver, el mensaje copia los parámetros especificados en los miembros adecuados de la estructura .
 
-El miembro **fMask** puede ser uno o varios de los valores siguientes.
+El **miembro fMask** puede ser uno o varios de los valores siguientes.
 
 
 
 | Value                                                                                                                                                      | Significado                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <span id="SIF_ALL"></span><span id="sif_all"></span><dl> <dt>**SIF \_ All**</dt> </dl>                | Combinación de la \_ Página SIF, SIF \_ pos, SIF \_ Range y SIF \_ TRACKPOS.<br/>       |
-| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**\_Página SIF**</dt> </dl>             | Copia la página de desplazamiento en el miembro nPage.<br/>                              |
-| <span id="SIF_POS"></span><span id="sif_pos"></span><dl> <dt>**SIF \_ pos**</dt> </dl>                | Copia la posición de desplazamiento en el miembro nPos. <br/>                          |
-| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**intervalo de SIF \_**</dt> </dl>          | Copia el intervalo de desplazamiento en los miembros Nmín. y Nmáx.. <br/>                   |
-| <span id="SIF_TRACKPOS"></span><span id="sif_trackpos"></span><dl> <dt>**SIF \_ TRACKPOS**</dt> </dl> | Copia la posición de seguimiento del cuadro de desplazamiento actual en el miembro nTrackPos.<br/> |
+| <span id="SIF_ALL"></span><span id="sif_all"></span><dl> <dt>**SIF \_ ALL**</dt> </dl>                | Combinación de SIF \_ PAGE, SIF \_ POS, SIF \_ RANGE y SIF \_ TRACKPOS.<br/>       |
+| <span id="SIF_PAGE"></span><span id="sif_page"></span><dl> <dt>**PÁGINA \_ SIF**</dt> </dl>             | Copia la página de desplazamiento en el miembro nPage.<br/>                              |
+| <span id="SIF_POS"></span><span id="sif_pos"></span><dl> <dt>**SIF \_ POS**</dt> </dl>                | Copia la posición de desplazamiento en el miembro nPos. <br/>                          |
+| <span id="SIF_RANGE"></span><span id="sif_range"></span><dl> <dt>**INTERVALO DE \_ SIF**</dt> </dl>          | Copia el intervalo de desplazamiento en los miembros nMin y nMax. <br/>                   |
+| <span id="SIF_TRACKPOS"></span><span id="sif_trackpos"></span><dl> <dt>**SIF \_ TRACKPOS**</dt> </dl> | Copia la posición actual del seguimiento del cuadro de desplazamiento en el miembro nTrackPos.<br/> |
 
 
 
@@ -63,13 +63,13 @@ El miembro **fMask** puede ser uno o varios de los valores siguientes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el mensaje recupera algún valor, el valor devuelto es **true**; de lo contrario, es **false**.
+Si el mensaje recuperó algún valor, el valor devuelto es **TRUE**; de lo contrario, es **FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los mensajes que indican la posición de la barra de desplazamiento, [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md), proporcionan únicamente 16 bits de datos de posición. Sin embargo, la estructura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) usada **por \_ SBM GETSCROLLINFO**, [**SBM \_ SETSCROLLINFO**](sbm-setscrollinfo.md), [**GETSCROLLINFO**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)y [**SETSCROLLINFO**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) proporciona 32 bits de datos de posición de la barra de desplazamiento. Puede usar estos mensajes y funciones al procesar los mensajes de **WM \_ HSCROLL** o **WM \_ VSCROLL** para obtener datos de posición de la barra de desplazamiento de 32 bits.
+Los mensajes que indican la posición de la barra de desplazamiento, [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md), proporcionan solo 16 bits de datos de posición. Sin embargo, la estructura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) usada por **SBM \_ GETSCROLLINFO,** [**SBM \_ SETSCROLLINFO,**](sbm-setscrollinfo.md) [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo)y [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) proporciona 32 bits de datos de posición de la barra de desplazamiento. Puede usar estos mensajes y funciones al procesar los mensajes **WM \_ HSCROLL** o **WM \_ VSCROLL** para obtener datos de posición de la barra de desplazamiento de 32 bits.
 
-Para obtener la posición de 32 bits del cuadro de desplazamiento (Thumb) durante un \_ código de solicitud THUMBTRACK de SB en un mensaje de [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) , envíe **SBM \_ GETSCROLLINFO** con el \_ valor SIF TRACKPOS en el miembro **fMask** de la estructura [**SCROLLINFO**](/windows/win32/api/winuser/ns-winuser-scrollinfo) . El mensaje devuelve la posición de seguimiento del cuadro de desplazamiento en el miembro **nTrackPos** de la estructura **SCROLLINFO** . Esto le permite obtener la posición del cuadro de desplazamiento cuando el usuario lo mueve. Como alternativa, puede usar la función [**GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) para obtener la misma información.
+Para obtener la posición de 32 bits del cuadro de desplazamiento (thumb) durante un código de solicitud SB THUMBTRACK en un mensaje \_ [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL,**](wm-vscroll.md) envíe **SBM \_ GETSCROLLINFO** con el valor TRACKPOS de SIF en el miembro \_ **fMask** de la [**estructura SCROLLINFO.**](/windows/win32/api/winuser/ns-winuser-scrollinfo) El mensaje devuelve la posición de seguimiento del cuadro de desplazamiento en el **miembro nTrackPos** de la **estructura SCROLLINFO.** Esto le permite obtener la posición del cuadro de desplazamiento a medida que el usuario la mueve. Como alternativa, puede usar la [**función GetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-getscrollinfo) para obtener la misma información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,9 +77,9 @@ Para obtener la posición de 32 bits del cuadro de desplazamiento (Thumb) durant
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

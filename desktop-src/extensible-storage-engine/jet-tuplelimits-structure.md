@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dc5a71328681e1ce415b1a34e9c8f718b460e7f0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 7155763f68a74333fc71db1054fb0ecffcca862e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471781"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983768"
 ---
 # <a name="jet_tuplelimits-structure"></a>JET_TUPLELIMITS estructura
 
@@ -61,7 +61,7 @@ Longitud máxima de una cadena que se indexa. Por ejemplo, si una columna tiene 
 
 Esto permite configurar el paso por índice.
 
-**Windows Vista:** El **miembro cchIncrement** se introduce en Windows Vista. Antes de Windows Vista, la cantidad para desplazar la ventana (el "stride") siempre era 1, como se muestra en el ejemplo en la sección comentarios.
+**Windows Vista:** El **miembro cchIncrement** se introduce en Windows Vista. Antes de Windows Vista, la cantidad para desplazar la ventana (el "paso") siempre era 1, como se muestra en el ejemplo en la sección comentarios.
 
 **ichStart**
 
@@ -69,7 +69,7 @@ Desplazamiento en el valor para empezar a recuperar tuplas del valor.
 
 **Windows Vista:** El **miembro ichStart** se presenta en Windows Vista.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Un índice de tupla recorre una cadena e indexa todas sus subcadenas posibles de **chLengthMax.** Al final de la cadena (o en la posición **chToIndexMax,** lo que ocurra primero), se indexarán las subcadenas de al menos **chLengthMin.**
 
@@ -93,12 +93,16 @@ Suponiendo una fila con un campo de texto de "RAIN IN SPAIN", si se crea un índ
 
 Tenga en cuenta que "IN" se produce dos veces y que la última entrada ("N") es más corta \! que 3 (**chLengthMax**). Tenga en cuenta también que el algoritmo de división no es consciente de los espacios o palabras, y trata todos los caracteres de forma idéntica.
 
-**Windows XP:** Windows XP admite índices de tupla, pero no **tiene JET_TUPLELIMITS**. El motor de base de datos usará los valores predeterminados (**chLengthMin**=3, **chLengthMax**=10, **chToIndexMax**=32767). Todavía es posible cambiar estos valores, pero se establecen por instancia mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md) con [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)y [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
+**Windows XP:** Windows XP admite índices de tupla, pero no tiene **JET_TUPLELIMITS**. El motor de base de datos usará los valores predeterminados (**chLengthMin**=3, **chLengthMax**=10, **chToIndexMax**=32767). Todavía es posible cambiar estos valores, pero se establecen por instancia mediante [JetSetSystemParameter](./jetsetsystemparameter-function.md) con [JET_paramIndexTuplesLengthMin](./index-parameters.md), [JET_paramIndexTuplesLengthMax](./index-parameters.md)y [JET_paramIndexTuplesToIndexMax](./index-parameters.md).
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

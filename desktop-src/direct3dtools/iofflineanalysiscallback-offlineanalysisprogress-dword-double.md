@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IOfflineAnalysisCallback\_OfflineAnalysisProgress\_DWORD\_D
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IOfflineAnalysisCallback:: OfflineAnalysisProgress (método)'
+title: IOfflineAnalysisCallback::OfflineAnalysisProgress (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 17847FD7-A10A-4E52-90AD-ADE446D87E73
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4184be5d8d40b0ef46fe5e0029e9e4b1f38cf120
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 445fae5409b966f10aaa75331d55dcdc862a3afd
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104423128"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631733"
 ---
-# <a name="span-idvspixengineiofflineanalysiscallback_offlineanalysisprogress_dword_doublespaniofflineanalysiscallbackofflineanalysisprogress-method"></a><span id="vspixengine.iofflineanalysiscallback_offlineanalysisprogress_dword_double"></span>IOfflineAnalysisCallback:: OfflineAnalysisProgress (método)
+# <a name="span-idvspixengineiofflineanalysiscallback_offlineanalysisprogress_dword_doublespaniofflineanalysiscallbackofflineanalysisprogress-method"></a><span id="vspixengine.iofflineanalysiscallback_offlineanalysisprogress_dword_double"></span>IOfflineAnalysisCallback::OfflineAnalysisProgress (método)
 
 Función de devolución de llamada que se usa para notificar al host el progreso del análisis sin conexión.
 
@@ -41,19 +41,19 @@ HRESULT OfflineAnalysisComplete(
 
 ## <a name="parameters"></a>Parámetros
 
-*ellas*   
-Cookie que identifica de forma única la solicitud y que se puede usar para indicar que se va a cancelar.
+*Galleta*   
+Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
-*progreso*   
+*Progreso*   
 Porcentaje de progreso.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

@@ -1,19 +1,19 @@
 ---
 title: Automatización de la interfaz de usuario especificación
-description: En este tema se proporciona información general sobre la especificación de Automatización de la interfaz de usuario Microsoft, que constituye la base de la Windows implementación de Automatización de la interfaz de usuario.
+description: En este tema se proporciona información general sobre la especificación de Microsoft Automatización de la interfaz de usuario, que constituye la base de la Windows implementación de Automatización de la interfaz de usuario.
 ms.assetid: 45160767-09b0-4fd1-bd73-bc5ac0e6f75e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fc07b70128a401d48813ded68c31dfcfca5bb5a49d2ca46683e9a902af003ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d78298299241545033b25dccc8d79376ec55e1b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118325106"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987648"
 ---
 # <a name="ui-automation-specification"></a>Automatización de la interfaz de usuario especificación
 
-En este tema se proporciona información general sobre la especificación de Automatización de la interfaz de usuario Microsoft, que constituye la base de la Windows implementación de Automatización de la interfaz de usuario. La especificación Automatización de la interfaz de usuario puede ser compatible con otras plataformas que no sean Microsoft Windows. Para obtener más información, vea [Automatización de la interfaz de usuario especificación.](./uiauto-specandcommunitypromise.md)
+En este tema se proporciona información general sobre la especificación de Microsoft Automatización de la interfaz de usuario, que constituye la base de la Windows implementación de Automatización de la interfaz de usuario. La especificación Automatización de la interfaz de usuario se puede admite en plataformas distintas de Microsoft Windows. Para obtener más información, vea [Automatización de la interfaz de usuario especificación](./uiauto-specandcommunitypromise.md)
 
 Este tema contiene las siguientes secciones:
 
@@ -40,7 +40,7 @@ Automatización de la interfaz de usuario es más amplio en el ámbito que solo 
 Automatización de la interfaz de usuario mejora el rendimiento Microsoft Active Accessibility:
 
 -   Habilitación de clientes fuera de proceso eficaces, a la vez que se sigue permitiendo el acceso en proceso.
--   Exponer más información sobre la interfaz de usuario de forma que permita a los clientes estar fuera de proceso.
+-   Exponer más información sobre la interfaz de usuario de una manera que permita a los clientes estar fuera de proceso.
 -   Coexistir con y aprovechar Microsoft Active Accessibility sin heredar sus limitaciones. Para obtener más información, [vea Microsoft Active Accessibility y Automatización de la interfaz de usuario Comparado.](microsoft-active-accessibility-and-ui-automation-compared.md)
 -   Proporcionar una alternativa a [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que sea fácil de implementar.
 
@@ -50,7 +50,7 @@ La implementación de la especificación Automatización de la interfaz de usuar
 
 Automatización de la interfaz de usuario expone cada parte de la interfaz de usuario a las aplicaciones cliente como un *elemento de automatización*. Los proveedores suministran valores de propiedad para cada elemento. Los elementos se exponen como una estructura de árbol, con el escritorio como elemento raíz.
 
-Los elementos de Automation exponen propiedades comunes de los elementos de la interfaz de usuario que representan. Una de estas propiedades es el tipo de control , que describe su apariencia y funcionalidad básicas (por ejemplo, un botón o una casilla).
+Los elementos de Automatización exponen propiedades comunes de los elementos de la interfaz de usuario que representan. Una de estas propiedades es el tipo de control , que describe su apariencia y funcionalidad básicas (por ejemplo, un botón o una casilla).
 
 ## <a name="ui-automation-tree"></a>Automatización de la interfaz de usuario árbol
 
@@ -60,16 +60,16 @@ El Automatización de la interfaz de usuario representa toda la interfaz de usua
 
 Tenga en cuenta que el orden de los elementos del mismo nivel en Automatización de la interfaz de usuario árbol es bastante importante. Los objetos que están juntos visualmente también deben estar juntos entre sí en el Automatización de la interfaz de usuario árbol.
 
-Automatización de la interfaz de usuario para un control determinado admiten la navegación entre los elementos secundarios de ese control. Sin embargo, a los proveedores no les preocupa la navegación entre estos subárquidos de control. Esto se administra mediante el núcleo Automatización de la interfaz de usuario, utilizando la información de los proveedores de ventana predeterminados.
+Automatización de la interfaz de usuario para un control determinado admiten la navegación entre los elementos secundarios de ese control. Sin embargo, a los proveedores no les preocupa la navegación entre estos subárquidos de control. Esto se administra mediante el Automatización de la interfaz de usuario principal, mediante la información de los proveedores de ventana predeterminados.
 
-Para ayudar a los clientes a procesar la información de la interfaz de usuario de forma más eficaz, el marco admite vistas alternativas del árbol de automatización: vista sin formato, vista de control y vista de contenido. Como se muestra en la tabla siguiente, el tipo de filtrado determina las vistas y el cliente define el ámbito de una vista.
+Para ayudar a los clientes a procesar la información de la interfaz de usuario de forma más eficaz, el marco de trabajo admite vistas alternativas del árbol de automatización: vista sin formato, vista de control y vista de contenido. Como se muestra en la tabla siguiente, el tipo de filtrado determina las vistas y el cliente define el ámbito de una vista.
 
 
 
 | Árbol de Automation | Descripción                                                                                                             |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------|
 | Vista sin formato        | Árbol completo de objetos de elementos de automatización para los que el escritorio es la raíz.                                          |
-| Vista de control    | Subconjunto de la vista sin procesar que se asigna estrechamente a la estructura de la interfaz de usuario a medida que el usuario la percibe.                                |
+| Vista de control    | Subconjunto de la vista sin formato que se asigna estrechamente a la estructura de la interfaz de usuario a medida que el usuario la percibe.                                |
 | Vista de contenido    | Subconjunto de la vista de control que contiene el contenido más relevante para el usuario, como los valores de un cuadro combinado desplegable. |
 
 
@@ -90,7 +90,7 @@ Para obtener más información, consulta [UI Automation Properties Overview](uia
 
 Un patrón de control describe un aspecto determinado de la funcionalidad de un elemento de automatización. Por ejemplo, un control simple "con capacidad de clic", como un botón o hipervínculo, debe admitir el patrón de control Invoke para representar la acción de "clic".
 
-Cada patrón de control es una representación canónica de las posibles funciones y características de la interfaz de usuario. La implementación actual de Automatización de la interfaz de usuario define 22 patrones de control. La WINDOWS Automation API también puede admitir patrones de control personalizados. A Microsoft Active Accessibility propiedades de estado o rol, un elemento de automatización puede admitir varios Automatización de la interfaz de usuario de control.
+Cada patrón de control es una representación canónica de las posibles funciones y características de la interfaz de usuario. La implementación actual de Automatización de la interfaz de usuario define 22 patrones de control. La API Windows Automation también puede admitir patrones de control personalizados. A Microsoft Active Accessibility propiedades de estado o rol, un elemento de automatización puede admitir varios Automatización de la interfaz de usuario de control.
 
 Para obtener más información, consulta [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
@@ -100,13 +100,13 @@ Un tipo de control es una propiedad de elemento de automatización que especific
 
 Para poder asignar un tipo de control a un elemento, el elemento debe cumplir ciertas condiciones, incluida una estructura de árbol de automatización determinada, valores de propiedad, patrones de control y eventos. Sin embargo, no se limita a estos. Puede extender un control con patrones y propiedades personalizados, así como con los predefinidos.
 
-El número total de tipos de control predefinidos es significativamente inferior Microsoft Active Accessibility los [roles](object-roles.md)de objeto , ya que los tipos de control de Automatización de la interfaz de usuario se pueden combinar para expresar un conjunto mayor de características, Microsoft Active Accessibility los roles no.
+El número total de tipos de control predefinidos es significativamente inferior Microsoft Active Accessibility los [roles](object-roles.md)de objeto , ya que los patrones de control de Automatización de la interfaz de usuario se pueden combinar para expresar un conjunto mayor de características, Microsoft Active Accessibility los roles no.
 
 Para obtener más información, consulta [UI Automation Control Types Overview](uiauto-controltypesoverview.md).
 
 ## <a name="ui-automation-events"></a>Automatización de la interfaz de usuario eventos
 
-Automatización de la interfaz de usuario eventos notifican a las aplicaciones los cambios en y las acciones realizadas con elementos de automatización. Hay cuatro tipos diferentes de eventos Automatización de la interfaz de usuario y no significan necesariamente que el estado visual de la interfaz de usuario haya cambiado. El Automatización de la interfaz de usuario de eventos de Automatización de la interfaz de usuario es independiente del marco [WinEvent](winevents-infrastructure.md) en Windows, aunque la API de automatización de Windows hace que Automatización de la interfaz de usuario eventos interoperables con el marco Microsoft Active Accessibility.
+Automatización de la interfaz de usuario eventos notifican a las aplicaciones los cambios en y las acciones realizadas con elementos de automatización. Hay cuatro tipos diferentes de eventos Automatización de la interfaz de usuario y no significan necesariamente que el estado visual de la interfaz de usuario haya cambiado. El Automatización de la interfaz de usuario de eventos de Automatización de la interfaz de usuario es independiente del marco [WinEvent](winevents-infrastructure.md) en Windows, aunque la API de automation de Windows hace que los eventos Automatización de la interfaz de usuario interoperables con el marco Microsoft Active Accessibility.
 
 Para obtener más información, consulta [UI Automation Events Overview](uiauto-eventsoverview.md).
 

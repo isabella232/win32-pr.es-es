@@ -3,34 +3,34 @@ title: Recuperación de la interfaz de copia desde CD
 description: Recuperación de la interfaz de copia desde CD
 ms.assetid: 760610eb-e356-4b50-b865-53557ba9b815
 keywords:
-- Windows Media Player, copia desde CD
-- Modelo de objetos de Windows Media Player, copia desde CD
-- modelo de objetos, copia desde CD
-- Control ActiveX de Windows Media Player, copia desde CD
-- Control ActiveX, copiar CD
-- Control ActiveX móvil de Windows Media Player, copia desde CD
-- Windows Media Player Mobile, copia desde CD
-- Copia desde CD, interfaz de IWMPCdromRip
-- copia desde CD, interfaz de IWMPCdromRip
-- Interfaz IWMPCdromRip
+- Reproductor de Windows Media,CD
+- Reproductor de Windows Media modelo de objetos, cds
+- modelo de objetos, cds
+- Reproductor de Windows Media ActiveX control de datos, cds
+- ActiveX control de datos, cds
+- Reproductor de Windows Media Control de ActiveX dispositivos móviles, cd-
+- Reproductor de Windows Media Móvil, cds
+- Interfaz CD estamp, IWMPCdromRip
+- CDs de ette, interfaz IWMPCdromRip
+- IWMPCdromRip (interfaz)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 903fa285404700e35363a94239c79706e7af0e34
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 2179e4f38eee121d7b8fefc028adf232eb724264362396c8cacedfcc55b162d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "103904439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002555"
 ---
 # <a name="retrieving-the-ripping-interface"></a>Recuperación de la interfaz de copia desde CD
 
-Para enumerar las unidades de CD en el equipo del usuario, use la interfaz **IWMPCdromCollection** . Recupere un puntero a esta interfaz llamando a [IWMPCore:: get \_ cdromCollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).
+Para enumerar las unidades de CD en el equipo del usuario, use la **interfaz IWMPCdromCollection.** Recupere un puntero a esta interfaz llamando a [IWMPCore::get \_ cdromCollection](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcore-get_cdromcollection).
 
-Mediante el uso de los métodos [Get \_ Count](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromcollection-get_count) y [Item](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromcollection-item) , puede recorrer en iteración la colección para recuperar una interfaz [IWMPCdrom](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom) para cada unidad de CD en el equipo del usuario.
+Mediante los métodos [get \_ count](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromcollection-get_count) y [item,](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromcollection-item) puede iterar la colección para recuperar una interfaz [IWMPCdrom](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdrom) para cada unidad de CD del equipo del usuario.
 
-La interfaz **IWMPCdrom** representa una unidad de CD individual. Antes de empezar a copiar un CD, primero debe llamar a **QueryInterface** a través de un puntero **IWMPCdrom** para recuperar la interfaz [IWMPCdromRip](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip) .
+La **interfaz IWMPCdrom** representa una unidad de CD individual. Antes de empezar a trabajar con un CD, primero debe llamar a **QueryInterface** a través de un puntero **IWMPCdrom** para recuperar la [interfaz IWMPCdromRip.](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromrip)
 
-En el ejemplo de código siguiente se muestra cómo recuperar una interfaz para copiar desde CD desde una unidad específica:
+En el ejemplo de código siguiente se muestra cómo recuperar una interfaz para extraer un CD de una unidad específica:
 
 
 ```C++
@@ -73,24 +73,24 @@ HRESULT CMainDlg::GetCdromRipInterface (long lIndex)
 
 <dl> <dt>
 
-[**Copia desde CD**](ripping-a-cd.md)
+[**Resalte un CD**](ripping-a-cd.md)
 </dt> <dt>
 
-[**Inicio del proceso RIP**](starting-the-rip-process.md)
+[**Iniciar el proceso de desgarrón**](starting-the-rip-process.md)
 </dt> <dt>
 
-[**Recuperación del estado de RIP**](retrieving-the-rip-status.md)
+[**Recuperación del estado de desgarr**](retrieving-the-rip-status.md)
 </dt> <dt>
 
-[**Seleccionar elementos para copiar desde CD**](selecting-items-for-ripping.md)
+[**Selección de elementos para Resalte**](selecting-items-for-ripping.md)
 </dt> <dt>
 
-[**Interfaz IWMPCdromCollection**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromcollection)
+[**IWMPCdromCollection (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpcdromcollection)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

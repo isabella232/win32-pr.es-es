@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 540A5CFD-1520-4B61-B461-E893EFA27115
-ms.openlocfilehash: de27322324dc8a25bdc679374e625f94a1d1a2ae
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 9e1711b9a2d95e29904db5508b958a32249d38563f996cae68f761123b58948c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969004"
 ---
 # <a name="ishelldispatch6-object"></a>Objeto IShellDispatch6
 
@@ -29,7 +29,7 @@ Extiende el [**objeto IShellDispatch5.**](ishelldispatch5.md) Además de las pro
 
  
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto IShellDispatch6** tiene estos tipos de miembros:
 
@@ -43,7 +43,7 @@ El **objeto IShellDispatch6** tiene estos métodos.
 
 | Método                                                 | Descripción                                                                                                                  |
 |:-------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| [**SearchCommand**](ishelldispatch6-searchcommand.md) | Muestra el panel Búsqueda de aplicaciones, que normalmente aparece cuando se empieza a escribir un término de búsqueda desde el pantalla Inicio.<br/> |
+| [**SearchCommand**](ishelldispatch6-searchcommand.md) | Muestra el panel Búsqueda de aplicaciones, que normalmente aparece al empezar a escribir un término de búsqueda desde el pantalla Inicio.<br/> |
 
 
 
@@ -55,22 +55,22 @@ El **objeto IShellDispatch6** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[**Objeto Shell**](shell.md)
+[**Objeto shell**](shell.md)
 </dt> <dt>
 
 [**IShellDispatch**](ishelldispatch.md)

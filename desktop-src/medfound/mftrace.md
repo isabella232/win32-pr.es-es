@@ -1,53 +1,53 @@
 ---
-description: MFTrace es una herramienta para generar registros de seguimiento para aplicaciones Media Foundation.
+description: MFTrace es una herramienta para generar registros de seguimiento para Media Foundation aplicaciones.
 ms.assetid: 55b421c8-e87c-4dd2-8649-93832c93f999
 title: MFTrace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d4a216f225141ceccf3f1357025dd069afa494d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 542ac9325b33fc8f1a76394d203dbf1d27919bd6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653383"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885226"
 ---
 # <a name="mftrace"></a>MFTrace
 
-MFTrace es una herramienta para generar registros de seguimiento para aplicaciones Media Foundation.
+MFTrace es una herramienta para generar registros de seguimiento para Media Foundation aplicaciones.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Usar MFTrace](using-mftrace.md)
+-   [Uso de MFTrace](using-mftrace.md)
 -   [Palabras clave de MFTrace](mftrace-keywords.md)
--   [Archivo de configuración MFTrace](mftrace-configuration-file.md)
+-   [Archivo de configuración de MFTrace](mftrace-configuration-file.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------------------------------------------|
-| Versión mínima del SDK      | Kit de desarrollo de software (SDK) de Microsoft Windows para Windows 7 y .NET Framework 4,0 |
+| Versión mínima del SDK      | Kit Windows de desarrollo de software (SDK) de Microsoft Windows 7 y .NET Framework 4.0 |
 | Sistema operativo mínimo | Windows Vista                                                                         |
 
 
 
  
 
-MFTrace requiere los siguientes archivos dll, que también se proporcionan en el SDK.
+MFTrace requiere los siguientes archivos DLL, que también se proporcionan en el SDK.
 
 -   detoured.dll
 -   mfdetours.dll
 
-El SDK proporciona versiones de 32 bits y de 64 bits de MFTrace. MFTrace no admite WOW64; para realizar el seguimiento de un proceso de 32 bits que se ejecuta en Windows de 64 bits, use la versión de 32 bits de MFTrace.
+El SDK proporciona versiones de 32 y 64 bits de MFTrace. MFTrace no admite WOW64; para hacer un seguimiento de un proceso de 32 bits que se ejecuta Windows 64 bits, use la versión de 32 bits de MFTrace.
 
-SDK-root en sistemas de 32 bits: \Archivos de Programa\windows Kits\10 SDK-root on 64 bits System: \Archivos de programa (x86) \Windows Kits\10 encontrará mftrace en <SDK-root> \Bin \<sdk-version> \<architecture>\mftrace.exe
+sdk-root en sistemas de 32 bits: \Archivos de programa\Windows Kits\10 sdk-root en un sistema de 64 bits: \Archivos de programa (x86)\Windows Kits\10 Encontrará mftrace en &lt; sdk-root &gt; \bin \<sdk-version> \<architecture>\mftrace.exe
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Herramientas de Media Foundation](media-foundation-tools.md)
+[Media Foundation Tools](media-foundation-tools.md)
 </dt> </dl>
 
  

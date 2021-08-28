@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c0b5d3410ddb7f4210317508739b4f7dd00dd592
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e6c26aa69f1ac51cdd9d70ca93c4fc42df5356ee
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470781"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987668"
 ---
 # <a name="jetgetcursorinfo-function"></a>JetGetCursorInfo (Función)
 
@@ -88,16 +88,22 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 Si se ejecuta correctamente, esta operación no tiene ningún efecto en la ubicación del cursor, pero solo indica que ninguna otra sesión ha actualizado actualmente este registro.
 
-Si se produce un error, si se devuelve un código de error negativo, no hay ningún efecto en el cursor ni en la base de datos.
+En caso de error, si se devuelve un código de error negativo, no hay ningún efecto en el cursor o la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Esta operación no afecta al estado del cursor ni de los datos. Solo devuelve un código de error que describe si se sabe que una actualización del registro actual por parte de la sesión que realiza la llamada da lugar a un JET_errWriteConflict, o si se desconoce si se devuelve JET_errWriteConflict. Si otra sesión ya ha actualizado este registro para usarlo, es seguro que una actualización de este registro por esta sesión dará lugar a un conflicto de escritura. Esto será así hasta que esta sesión confirme o revierte sus transacciones al nivel de transacción 0 (cero). Sin embargo, si **JetGetCursorInfo** devuelve JET_errSuccess, es posible que otra sesión actualice este registro antes de la sesión actual y, por tanto, sigue siendo posible que una actualización del registro actual por parte de esta sesión en su transacción actual proscriba un conflicto de escritura.
+Esta operación no afecta al estado del cursor ni de los datos. Solo devuelve un código de error que describe si se sabe que una actualización del registro actual por parte de la sesión que realiza la llamada da lugar a un JET_errWriteConflict o si se desconoce si se devuelve JET_errWriteConflict. Si otra sesión ya ha actualizado este registro para usarlo, es seguro que una actualización de este registro por esta sesión dará lugar a un conflicto de escritura. Esto será así hasta que esta sesión confirme o revierte sus transacciones al nivel de transacción 0 (cero). Sin embargo, si **JetGetCursorInfo** devuelve JET_errSuccess, es posible que otra sesión actualice este registro antes de la sesión actual y, por tanto, sigue siendo posible que una actualización del registro actual por parte de esta sesión en su transacción actual proscriba un conflicto de escritura.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

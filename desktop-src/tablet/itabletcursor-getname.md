@@ -1,7 +1,7 @@
 ---
-description: Recupera el nombre del lápiz de Tablet PC.
+description: Recupera el nombre del lápiz óptico de tableta.
 ms.assetid: 94955c04-f699-428b-b4bf-53919b61b1ab
-title: 'ITabletCursor:: GetName (método)'
+title: ITabletCursor::GetName (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: b9d984d5eb711c2344ba0f9fb2dbf410a7d49bde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fadbaa2fe170f04d40d46dffe8f16f0cb0fa3050baf30ea455972013c6d3e63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118717316"
 ---
-# <a name="itabletcursorgetname-method"></a>ITabletCursor:: GetName (método)
+# <a name="itabletcursorgetname-method"></a>ITabletCursor::GetName (método)
 
-Recupera el nombre del lápiz de Tablet PC.
+Recupera el nombre del lápiz óptico de tableta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ HRESULT GetName(
 
 <dl> <dt>
 
-*ppwszName* \[ enuncia\]
+*ppwszName* \[ out\]
 </dt> <dd>
 
-Nombre del lápiz de Tablet PC.
+Nombre del lápiz óptico de tableta.
 
 </dd> </dl>
 
@@ -55,37 +55,37 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es responsabilidad del llamador liberar la memoria devuelta desde este método mediante [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Es responsabilidad del autor de la llamada liberar la memoria devuelta de este método mediante [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**ITabletCursor**](itabletcursor.md)
 </dt> <dt>
 
-[**Interfaz ITabletCursorButton**](itabletcursorbutton.md)
+[**ITabletCursorButton (Interfaz)**](itabletcursorbutton.md)
 </dt> </dl>
 
  

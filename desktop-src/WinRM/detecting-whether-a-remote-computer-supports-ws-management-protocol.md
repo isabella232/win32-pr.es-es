@@ -1,22 +1,22 @@
 ---
 title: Detección de si un equipo remoto admite WS-Management protocolo
-description: Puede usar la sesión. Identify o IWSManSession. Identifique los métodos para determinar si el equipo remoto tiene un servicio que admite el protocolo de WS-Management.
+description: Puede usar los métodos Session.Identify o IWSManSession.Identify para determinar si el equipo remoto tiene un servicio que admita el protocolo WS-Management usuario.
 ms.assetid: 4d11ac02-fa8b-45d7-bceb-a18f561bc928
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af82284b38b2a101c767766d44eb975ff7e1dadc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 49a7ebeb25f7f3af69a03c55499dd53a890e540c1a1ed677e7d48e5b11b82b1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643235"
 ---
 # <a name="detecting-whether-a-remote-computer-supports-ws-management-protocol"></a>Detección de si un equipo remoto admite WS-Management protocolo
 
-Puede usar la [**sesión. Identify**](session-identify.md) o [**IWSManSession. Identifique**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-identify) los métodos para determinar si el equipo remoto tiene un servicio que admite el protocolo de WS-Management.
+Puede usar los métodos [**Session.Identify**](session-identify.md) o [**IWSManSession.Identify**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-identify) para determinar si el equipo remoto tiene un servicio que admita el protocolo WS-Management usuario.
 
-Si un servicio de protocolo WS-Management está configurado en el equipo remoto y está escuchando solicitudes, el servicio puede detectar una solicitud de identificación mediante el siguiente XML en el encabezado.
+Si un WS-Management de protocolo está configurado en el equipo remoto y está escuchando solicitudes, el servicio puede detectar una solicitud de identificación mediante el siguiente XML en el encabezado .
 
 
 ```XML
@@ -25,17 +25,17 @@ xmlns:wsmid="https://schemas.dmtf.org/wbem/wsman/identity/1/wsmanidentity"
 
 
 
-El servicio de protocolo WS-Management que recibe la solicitud devuelve la información contenida en la lista siguiente, en el cuerpo del mensaje:
+El WS-Management de protocolo que recibe la solicitud devuelve la información, incluida en la lista siguiente, en el cuerpo del mensaje:
 
--   La versión del protocolo WS-Management. Por ejemplo, "https://schemas.dmtf.org/wbem/wsman/1/wsman".
+-   La WS-Management del protocolo. Por ejemplo, "https://schemas.dmtf.org/wbem/wsman/1/wsman".
 -   El proveedor del producto, por ejemplo, "Microsoft Corporation".
--   Versión del producto. Si la solicitud se envía con **WSManFlagUseNoAuthentication** en el parámetro *Flags* , no se devuelve información de versión del producto. Si la solicitud se envía con la autenticación predeterminada activa o con otro modo de autenticación especificado, se puede devolver la información de versión del producto.
+-   Versión del producto. Si la solicitud se envía con **WSManFlagUseNoAuthentication en** el *parámetro flags,* no se devuelve información de versión del producto. Si la solicitud se envía con la autenticación predeterminada en vigor o con otro modo de autenticación especificado, se puede devolver la información de la versión del producto.
 
-La solicitud para detectar si el equipo remoto tiene un servicio de protocolo configurado y de escucha WS-Management se puede realizar al principio de un script con otras operaciones. Esto comprobará que el equipo o equipos de destino pueden responder a otras solicitudes de protocolo WS-Management. La comprobación también puede realizarse en un script independiente.
+La solicitud para detectar si el equipo remoto tiene configurado un servicio de protocolo WS-Management escucha y se puede realizar al principio de un script con otras operaciones. Esto comprobará que el equipo o los equipos de destino pueden responder a más solicitudes WS-Management protocolo. La comprobación también se puede realizar en un script independiente.
 
-**Para detectar un servicio de protocolo de WS-Management**
+**Para detectar un servicio WS-Management protocolo**
 
-1.  Cree un objeto [**WSMan**](wsman.md) .
+1.  Cree un [**objeto WSMan.**](wsman.md)
 
     ```VB
     Set objWsman = CreateObject("Wsman.Automation")
@@ -43,7 +43,7 @@ La solicitud para detectar si el equipo remoto tiene un servicio de protocolo co
 
     
 
-2.  Determine si la solicitud se debe enviar autenticada o no autenticada y establezca el parámetro *Flags* en consecuencia en la llamada a [**WSMan. createSession**](wsman-createsession.md).
+2.  Determine si la solicitud debe enviarse autenticada o no autenticada y establezca el parámetro *flags* en consecuencia en la llamada a [**WSMan.CreateSession**](wsman-createsession.md).
 
     ```VB
     set objSession = objWsman.CreateSession("Remote1", _
@@ -52,7 +52,7 @@ La solicitud para detectar si el equipo remoto tiene un servicio de protocolo co
 
     
 
-3.  Sesión de llamada [**. Identifique**](session-identify.md).
+3.  Llame [**a Session.Identify.**](session-identify.md)
 
     ```VB
     objSession.Identify
@@ -62,7 +62,7 @@ La solicitud para detectar si el equipo remoto tiene un servicio de protocolo co
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de VBScript envía una solicitud de identificación no autenticada al equipo remoto denominado "Remote1" en el mismo dominio.
+En el ejemplo de código vbscript siguiente se envía una solicitud de identificación no autenticada al equipo remoto denominado "Remote1" en el mismo dominio.
 
 
 ```VB
@@ -74,7 +74,7 @@ WScript.Echo objSession.Identify
 
 
 
-La siguiente respuesta muestra el XML devuelto por el equipo remoto. La versión del protocolo WS-Management (" https://schemas.dmtf.org/wbem/wsman/1/wsman.xsd ") y el proveedor del sistema operativo ("Microsoft Corporation") se especifican en el XML devuelto. Dado que el mensaje se envía sin autenticar, el servicio Administración remota de Windows no devuelve la versión del producto.
+La siguiente respuesta muestra el XML devuelto por el equipo remoto. La WS-Management de protocolo (" ") y el proveedor de sistema operativo https://schemas.dmtf.org/wbem/wsman/1/wsman.xsd ("Microsoft Corporation") se especifican en el XML devuelto. Dado que el mensaje se envía sin autenticar, el servicio de administración remota no devuelve la versión del producto Windows.
 
 
 ```XML
@@ -89,7 +89,7 @@ La siguiente respuesta muestra el XML devuelto por el equipo remoto. La versión
 
 
 
-El siguiente ejemplo de código de VBScript envía una solicitud de identificación autenticada al equipo remoto.
+En el ejemplo de código de VBScript siguiente se envía una solicitud de identificación autenticada al equipo remoto.
 
 
 ```VB
@@ -120,18 +120,18 @@ Dado que la solicitud se envió con autenticación, se devuelve la información 
 
 <dl> <dt>
 
-[Acerca de Administración remota de Windows](about-windows-remote-management.md)
+[Acerca Windows administración remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Usar Administración remota de Windows](using-windows-remote-management.md)
+[Uso de Windows administración remota](using-windows-remote-management.md)
 </dt> <dt>
 
-[Referencia de Administración remota de Windows](windows-remote-management-reference.md)
+[Windows Referencia de administración remota](windows-remote-management-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

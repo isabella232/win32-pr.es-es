@@ -6,30 +6,30 @@ ms.tgt_platform: multiple
 title: Q (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe4039982a95b7377c9f35cd629b80901c361f59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 120e08a72a8a9bfc495a423e19cd11ad7340a33f7534f769a545310424d6a160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118319063"
 ---
 # <a name="q-wmi"></a>Q (WMI)
 
-[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) [F](gloss-f.md) G [H](gloss-h.md) [I](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [o](gloss-o.md) [p](gloss-p.md) Q [R](gloss-r.md) [s](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z
+[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) [F](gloss-f.md) G H [](gloss-h.md) [I](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) M [N](gloss-m.md) [O](gloss-n.md) [](gloss-o.md) [P](gloss-p.md) Q [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z
 
 <dl> <dt>
 
-<span id="wmi.gloss_qualifier"></span><span id="WMI.GLOSS_QUALIFIER"></span>**calificador**
+<span id="wmi.gloss_qualifier"></span><span id="WMI.GLOSS_QUALIFIER"></span>**Calificador**
 </dt> <dd>
 
-Modificador que contiene información que describe una clase, instancia, [*propiedad*](gloss-p.md), método o parámetro.
+Modificador que contiene información que describe una clase, instancia, [*propiedad,*](gloss-p.md)método o parámetro.
 
 </dd> <dt>
 
-<span id="wmi.gloss_qualifier_flavor"></span><span id="WMI.GLOSS_QUALIFIER_FLAVOR"></span>**tipo de calificador**
+<span id="wmi.gloss_qualifier_flavor"></span><span id="WMI.GLOSS_QUALIFIER_FLAVOR"></span>**calificador de flavor**
 </dt> <dd>
 
-Vea [*Flavor*](gloss-f.md).
+Vea [*flavor*](gloss-f.md).
 
 </dd> </dl>
 

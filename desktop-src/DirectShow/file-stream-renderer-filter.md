@@ -1,33 +1,43 @@
 ---
-description: Filtro del representador de secuencias de archivos
+description: Filtro de representador de secuencias de archivos
 ms.assetid: e26462bb-e67f-4522-bec2-88378c4ff442
-title: Filtro del representador de secuencias de archivos
+title: Filtro de representador de secuencias de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3da8651d61559a9b22b722f91563426cb067f7a3
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: d438d77b4f402cefed2e80f2c32d061d1652710f
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470570"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987868"
 ---
-# <a name="file-stream-renderer-filter"></a>Filtro del representador de secuencias de archivos
+# <a name="file-stream-renderer-filter"></a>Filtro de representador de secuencias de archivos
 
-El filtro Representador de secuencias de archivos representa los nombres de archivo que analiza el filtro [Analizador de varios](multi-file-parser-filter.md) archivos. Para obtener más información, consulte la documentación de ese filtro.
+El filtro Representador de secuencias de archivos representa los nombres de archivo que analiza el filtro [Analizador de varios](multi-file-parser-filter.md) archivos. Para más información, consulte la documentación de ese filtro.
 
-El uso de este filtro está en desuso. Para representar varios archivos dentro del mismo gráfico de filtros, la aplicación simplemente debe llamar varias veces a **RenderFile** **o AddSourceFilter.**
-
-
+El uso de este filtro está en desuso. Para representar varios archivos dentro del mismo gráfico de filtro, la aplicación simplemente debe llamar varias veces a **RenderFile** o **AddSourceFilter.**
 
 
-| | | Filtrado de interfaces | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a> | | Tipos de medios de pin de entrada | <ul><li>Tipo principal: MEDIATYPE_File</li><li>Subtipo: GUID_NULL</li><li>Tipo de formato: MEDIATYPE_File</li></ul> | | Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a> | | Tipos de medios de pin de salida | Ninguno | | Interfaces de pin de salida | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-istreambuilder"><strong>IStreamBuilder</strong></a> | | Filtrar clsid | CLSID_FileRend | | Archivos ejecutables | Quartz.dll | | <a href="merit.md">|</a> MERIT_UNLIKELY | | <a href="filter-categories.md">Categoría de</a> filtro | CLSID_LegacyAmFilterCategory | 
+
+
+| Etiqueta | Value |
+|--------|-------|
+| Interfaces de filtro | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a> | 
+| Tipos de medios de pin de entrada | <ul><li>Tipo principal: MEDIATYPE_File</li><li>Subtipo: GUID_NULL</li><li>Tipo de formato: MEDIATYPE_File</li></ul> | 
+| Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a> | 
+| Tipos de medios de pin de salida | Ninguno | 
+| Interfaces de pin de salida | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-istreambuilder"><strong>IStreamBuilder</strong></a> | 
+| Filtrar CLSID | CLSID_FileRend | 
+| Executable | Quartz.dll | 
+| <a href="merit.md">Mérito</a> | MERIT_UNLIKELY | 
+| <a href="filter-categories.md">Categoría de filtro</a> | CLSID_LegacyAmFilterCategory | 
 
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El CLSID del filtro no está definido en Uuids.h. Use esta macro en su propio archivo de encabezado:
 

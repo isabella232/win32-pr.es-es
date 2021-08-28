@@ -17,12 +17,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c92ed1d5d42511971c53e6116574cd8d9a882124
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 335ad13411dbfcc83dce559eb4b77adefcc8a5da
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982578"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477961"
 ---
 # <a name="jetgetdatabaseinfo-function"></a>Función JetGetDatabaseInfo
 
@@ -72,7 +72,7 @@ Tamaño, en bytes, del búfer que se pasó en *pvResult*.
 Si el *búfer pvResult* proporcionado es demasiado pequeño, JET_errInvalidBufferSize o JET_errBufferTooSmall se devolverán en función de *InfoLevel*.
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_DbInfoCollate</p> | <p>Aún no se admite y devuelve los valores predeterminados. No debe usarse.</p> | 
 | <p>JET_DbInfoConnect</p> | <p>Estos <em>InfoLevels están</em> en desuso y no se admiten actualmente. No debe usarse.</p> | 
@@ -82,12 +82,12 @@ Si el *búfer pvResult* proporcionado es demasiado pequeño, JET_errInvalidBuffe
 | <p>JET_DbInfoFilesize</p> | <p><em>pvResult</em> se interpretará como DWORD (4 bytes). Devuelve el tamaño de la base de datos en páginas.</p> | 
 | <p>JET_DbInfoIsam</p> | <p>Estos <em>InfoLevels están</em> en desuso y no se admiten actualmente. No debe usarse.</p> | 
 | <p>JET_DbInfoLCID</p> | <p>(Windows XP y versiones posteriores) Este <em>InfoLevel</em> se especificó originalmente como: JET_DbInfoLangid (Windows 2000)</p><p><em>pvResult</em> se interpretará como un valor long. Esto devuelve el identificador de configuración regional (LCID) asociado a esta base de datos.</p> | 
-| <p>JET_DbInfoMisc</p> | <p><em>pvResult</em> se interpretará como un <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a>. La <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a> estructura se rellenará con información relativa a la base de datos especificada.</p> | 
-| <p>JET_DbInfoOptions</p> | <p><em>pvResult</em> se interpretará como un <a href="gg294066(v=exchg.10).md">JET_GRBIT</a> (DWORD). Esto devuelve si la base de datos se abre en modo exclusivo. Si la base de datos está en modo <a href="gg294066(v=exchg.10).md"></a> JET_bitDbExclusive se establecerá en el JET_GRBIT proporcionado, de lo contrario, se establece cero. Tenga en cuenta que no <em>se devuelven</em> otras opciones de bits grbit de base de datos para <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a> y <a href="gg269299(v=exchg.10).md">JetOpenDatabase.</a></p> | 
-| <p>JET_DbInfoPageSize</p> | <p>Solo está disponible en Windows XP y versiones posteriores. <em>pvResult</em> se interpretará como unsigned long. Esto devolverá el tamaño de página de la base de datos en bytes.</p> | 
+| <p>JET_DbInfoMisc</p> | <p><em>pvResult</em> se interpretará como una <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a>. La <a href="gg294147(v=exchg.10).md">JET_DBINFOMISC</a> estructura se rellenará con información relativa a la base de datos especificada.</p> | 
+| <p>JET_DbInfoOptions</p> | <p><em>pvResult</em> se interpretará como un <a href="gg294066(v=exchg.10).md">JET_GRBIT</a> (DWORD). Esto devuelve si la base de datos se abre en modo exclusivo. Si la base de datos está en modo JET_bitDbExclusive se establecerá en el <a href="gg294066(v=exchg.10).md">JET_GRBIT</a> proporcionado, de lo contrario, se establece cero. Tenga en cuenta que no <em>se devuelven</em> otras opciones de bits grbit de base de datos para <a href="gg294074(v=exchg.10).md">JetAttachDatabase</a> y <a href="gg269299(v=exchg.10).md">JetOpenDatabase.</a></p> | 
+| <p>JET_DbInfoPageSize</p> | <p>Disponible solo en Windows XP y versiones posteriores. <em>pvResult</em> se interpretará como unsigned long. Esto devolverá el tamaño de página de la base de datos en bytes.</p> | 
 | <p>JET_DbInfoSpaceAvailable</p> | <p><em>pvResult</em> se interpretará como DWORD. Esto devuelve el espacio disponible para la base de datos en páginas.</p> | 
 | <p>JET_DbInfoSpaceOwned</p> | <p><em>pvResult</em> se interpretará como DWORD. Esto devuelve el espacio de propiedad de la base de datos en páginas.</p> | 
-| <p>JET_DbInfoTransactions</p> | <p><em>pvResult</em> se interpretará como un valor long. Esto devolverá un valor mayor que el nivel máximo en el que se pueden anidar las transacciones. Si se llama a <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a> (de forma anidada, es decir, en la misma sesión, sin confirmación o reversión) tantas veces como este valor, en la última llamada JET_errTransTooDeep se devolverá <a href="gg294083(v=exchg.10).md">desde JetBeginTransaction</a>. Tenga en cuenta que el Windows 2000, Windows XP y Windows Server 2003 es 7.</p> | 
+| <p>JET_DbInfoTransactions</p> | <p><em>pvResult</em> se interpretará como un valor long. Esto devolverá un valor mayor que el nivel máximo en el que se pueden anidar las transacciones. Si se llama a <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a> (de forma anidada, es decir, en la misma sesión, sin confirmación o reversión) tantas veces como este valor, en la última llamada JET_errTransTooDeep se devolverá desde <a href="gg294083(v=exchg.10).md">JetBeginTransaction</a>. Tenga en cuenta que Windows 2000, Windows XP y Windows Server 2003 es 7.</p> | 
 | <p>JET_DbInfoVersion</p> | <p><em>pvResult</em> se interpretará como un valor long. Esto devuelve la versión principal nativa del motor de base de datos. Este valor se 0x620 para Windows 2000, Windows XP y Windows Server 2003.</p> | 
 
 
@@ -101,7 +101,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errBufferTooSmall</p> | <p>El tamaño del búfer especificado en <em>cbMax</em> era demasiado pequeño (o no correcto) para contener la información deseada.</p> | 
-| <p>JET_errFeatureNotAvailable</p> | <p>Se <em>solicitó InfoLevel</em> JET_DbInfoIsam. Esto no se admite.</p> | 
+| <p>JET_errFeatureNotAvailable</p> | <p>El <em>InfoLevel</em> solicitado se JET_DbInfoIsam. Esto no se admite.</p> | 
 | <p>JET_errInvalidBufferSize</p> | <p>El tamaño del búfer especificado en <em>cbMax</em> era demasiado pequeño (o no correcto) para contener la información deseada.</p> | 
 | <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. <strong>JetGetDatabaseInfo</strong> devolverá este error cuando <a href="gg269248(v=exchg.10).md"></a> el JET_DBID proporcionado no sea una base de datos válida (adjunta). Este error lo <a href="gg269239(v=exchg.10).md">devolverán JetGetDatabaseFileInfo</a> y <strong>JetGetDatabaseInfo</strong> cuando una <em>clase InfoLevel</em> solicitada no sea compatible con esa versión de la función.</p> | 
 
@@ -114,14 +114,7 @@ En caso de error, el búfer de salida estará en un estado indefinido.
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetDatabaseInfoW</strong> (Unicode) y <strong>JetGetDatabaseInfoA</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetDatabaseInfoW</strong> (Unicode) y <strong>JetGetDatabaseInfoA</strong> (ANSI).</p> | 
 
 
 

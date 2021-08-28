@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 618552b01a4702790fca0d234ee40aff0de39f45
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: dba0b8094187f3a59f05f4b1a1fae1b95dbab66e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481371"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989040"
 ---
 # <a name="jetenablemultiinstance-function"></a>JetEnableMultiInstance (Función)
 
@@ -50,7 +50,7 @@ La **función JetEnableMultiInstance** configura el motor de base de datos para 
 
 *psetsysparam*
 
-Matriz de parámetros globales del sistema que se va a establecer si y solo si el motor entra en modo de instancias múltiples como resultado de esta llamada. Si *csetsysparam es* cero, *se omite psetsysparam.*
+Matriz de parámetros del sistema global que se va a establecer si y solo si el motor entra en modo de instancias múltiples como resultado de esta llamada. Si *csetsysparam es* cero, *se omite psetsysparam.*
 
 *csetsysparam*
 
@@ -79,14 +79,21 @@ Si esta función se realiza correctamente, el motor de base de datos se configur
 
 Si se produce un error en esta función, el motor de base de datos permanecerá en el modo actual. Si *pcsetsucceed* es distinto de cero, ese número de parámetros del sistema permanecerá establecido.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Esta función solo debe usarse si la aplicación debe configurar un conjunto determinado de parámetros del sistema de forma atómica al configurar el motor de base de datos para su uso en un escenario de varios usuarios en el mismo proceso. Si hay otro método de sincronización disponible, es preferible llamar a [JetCreateInstance](./jetcreateinstance-function.md) y [JetSetSystemParameter por](./jetsetsystemparameter-function.md) separado.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetEnableMultiInstanceW</strong> (Unicode) y <strong>JetEnableMultiInstanceA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetEnableMultiInstanceW</strong> (Unicode) y <strong>JetEnableMultiInstanceA</strong> (ANSI).</p> | 
 
 
 

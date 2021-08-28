@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 069339aefbac335bf1c7bb4b35efe4466b526225
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 02f896d41c5804fd85a3cb5f31b6c509c3099357
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475941"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983528"
 ---
 # <a name="jetattachdatabase2-function"></a>Función JetAttachDatabase2
 
@@ -66,9 +66,9 @@ Pasar cero significa que el motor de base de datos no exige ningún máximo.
 Un grupo de bits que contienen las opciones que se usarán para esta llamada, que incluyen cero o más de lo siguiente:
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitDbDeleteCorruptIndexes</p> | <p>Si <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a> se ha establecido, se eliminarán todos los índices a través de datos Unicode. Para obtener información más detallada, consulte la sección Comentarios.</p> | 
+| <p>JET_bitDbDeleteCorruptIndexes</p> | <p>Si <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a> se ha establecido, se eliminarán todos los índices de datos Unicode. Para obtener información más detallada, consulte la sección Comentarios.</p> | 
 | <p>JET_bitDbDeleteUnicodeIndexes</p> | <p>Todos los índices sobre datos Unicode se eliminarán, independientemente de la configuración de <a href="gg269337(v=exchg.10).md">JET_paramEnableIndexChecking</a>. Para obtener información más detallada, consulte la sección Comentarios.</p> | 
 | <p>JET_bitDbReadOnly</p> | <p>Impide las modificaciones en la base de datos.</p> | 
 | <p>JET_bitDbUpgrade</p> | <p>Reservado para uso futuro.</p> | 
@@ -86,17 +86,17 @@ La función devuelve uno de [los](./jet-err.md) JET_ERR de error. Los siguientes
 | <p>JET_errBackupInProgress</p> | <p>No se permite adjuntar una base de datos durante una copia de seguridad.</p> | 
 | <p>JET_errDatabaseFileReadOnly</p> | <p>El archivo de base de datos especificado <em>por szFilename</em> debe poder escribirse. El Read-Only no debe establecerse y el proceso en ejecución debe tener privilegios suficientes para escribir en el archivo.</p> | 
 | <p>JET_errDatabaseInUse</p> | <p>Otro proceso ya ha abierto el archivo de base de datos.</p> | 
-| <p>JET_errDatabaseInvalidPath</p> | <p>Se ha especificado una ruta de acceso no válida <em>en szFilename.</em> <em>szFilename debe</em> ser distinto de NULL y hacer referencia a una ruta de acceso válida.</p> | 
+| <p>JET_errDatabaseInvalidPath</p> | <p>Se ha especificado una ruta de acceso no válida <em>en szFilename.</em> <em>szFilename</em> debe ser distinto de NULL y hacer referencia a una ruta de acceso válida.</p> | 
 | <p>JET_errDatabaseSharingViolation</p> | <p>Otra sesión ya ha adjuntado el archivo de base de datos.</p> | 
 | <p>JET_errFileNotFound</p> | <p>El archivo especificado en <em>szFilename</em> no existe.</p> | 
-| <p>JET_errPrimaryIndexCorrupted</p> | <p>Se produce un error con el índice principal. Esto puede deberse a daños físicos (por ejemplo, daños en el disco o la memoria). También se puede devolver al adjuntar una base de datos modificada por última vez en un sistema operativo anterior y el índice principal se encuentra sobre una columna con datos Unicode. Consulte los comentarios para obtener más información sobre los índices sobre datos Unicode.</p> | 
-| <p>JET_errSecondaryIndexCorrupted</p> | <p>Se produce un error con un índice secundario. Esto puede deberse a daños físicos (por ejemplo, daños en el disco o la memoria). También se puede devolver al adjuntar una base de datos modificada por última vez en un sistema operativo anterior y un índice secundario se encuentra sobre una columna con datos Unicode. Consulte los comentarios para obtener más información sobre los índices sobre datos Unicode. Los índices secundarios se recompilan completamente cuando se desfragmenta una base de datos con una utilidad sin conexión mediante el siguiente <strong>comando: esentutl -d</strong>.</p> | 
+| <p>JET_errPrimaryIndexCorrupted</p> | <p>Se produce un error con el índice principal. Esto puede deberse a daños físicos (por ejemplo, daños en el disco o la memoria). También se puede devolver al adjuntar una base de datos modificada por última vez en un sistema operativo anterior y el índice principal se encuentra sobre una columna con datos Unicode. Consulte los comentarios para obtener más información sobre los índices sobre los datos Unicode.</p> | 
+| <p>JET_errSecondaryIndexCorrupted</p> | <p>Se produce un error con un índice secundario. Esto puede deberse a daños físicos (por ejemplo, daños en el disco o la memoria). También se puede devolver al adjuntar una base de datos modificada por última vez en un sistema operativo anterior y un índice secundario se encuentra sobre una columna con datos Unicode. Consulte los comentarios para obtener más información sobre los índices sobre los datos Unicode. Los índices secundarios se recompilan completamente cuando se desfragmenta una base de datos con una utilidad sin conexión mediante el siguiente <strong>comando: esentutl -d</strong>.</p> | 
 | <p>JET_errTooManyAttachedDatabases</p> | <p>Solo se puede adjuntar un número finito de bases de datos por instancia. Actualmente, el límite es de siete bases de datos por instancia.</p> | 
 | <p>JET_wrnDatabaseAttached</p> | <p>Una advertencia no permanente que indica que esta sesión ya ha adjuntado el archivo de base de datos.</p> | 
 
 
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 El archivo de base de datos se [desasocia mediante JetDetachDatabase](./jetdetachdatabase-function.md) o [JetDetachDatabase2](./jetdetachdatabase2-function.md).
 
@@ -105,7 +105,14 @@ Consulte [JetAttachDatabase para](./jetattachdatabase-function.md) obtener comen
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetAttachDatabase2W</strong> (Unicode) y <strong>JetAttachDatabase2A</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetAttachDatabase2W</strong> (Unicode) y <strong>JetAttachDatabase2A</strong> (ANSI).</p> | 
 
 
 

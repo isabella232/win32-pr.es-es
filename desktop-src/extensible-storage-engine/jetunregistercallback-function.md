@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5cb60d8b0d06ff6af9d950c53d8bdf8f4eedb774
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 87c308f4895eb3e78a35338fe39afb3d775da095
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466252"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986498"
 ---
 # <a name="jetunregistercallback-function"></a>JetUnregisterCallback (Función)
 
@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetunregistercallback-function"></a>JetUnregisterCallback (Función)
 
-La **función JetUnregisterCallback permite** a la aplicación configurar el motor de base de datos para detener la emisión de notificaciones a la aplicación como se solicitó anteriormente a través de [JetRegisterCallback](./jetregistercallback-function.md).
+La **función JetUnregisterCallback permite** a la aplicación configurar el motor de base de datos para dejar de emitir notificaciones a la aplicación como se solicitó anteriormente a través de [JetRegisterCallback](./jetregistercallback-function.md).
 
 **Windows XP:****JetUnregisterCallback** se introdujo en Windows XP.  
 
@@ -57,9 +57,9 @@ Cursor que se va a usar para esta llamada.
 
 *cbtyp*
 
-Máscara de bits formada por las razones de devolución de llamada por las que la aplicación ya no desea recibir notificaciones.
+Máscara de bits compuesta por las razones de devolución de llamada por las que la aplicación ya no desea recibir notificaciones.
 
-Para crear esta máscara de bits, simplemente o juntos motivos de devolución de llamada válidos de la [enumeración JET_CBTYP](./jet-cbtyp.md) bits.
+Para crear esta máscara de bits, simplemente o juntos los motivos de devolución de llamada válidos de la [enumeración JET_CBTYP](./jet-cbtyp.md) datos.
 
 *hCallbackId*
 
@@ -67,18 +67,18 @@ Identificador de la devolución de llamada registrada devuelta por [JetRegisterC
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
-| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque aún no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
-| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia de asociada a la sesión.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p> | 
 
 
 
@@ -86,14 +86,20 @@ Si esta función se realiza correctamente, se anulará el registro de la devoluc
 
 Si se produce un error en esta función, la devolución de llamada especificada no se anulará del registro. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-La máscara de bits especificada debe coincidir exactamente con la máscara de bits que se especifica al registrar la devolución de llamada. El motor de base de datos no admite actualmente la eliminación de un subconjunto de estas notificaciones y no devuelve un error cuando se intenta hacerlo.
+La máscara de bits especificada debe coincidir exactamente con la máscara de bits que se especifica al registrar la devolución de llamada. El motor de base de datos no admite actualmente la eliminación de un subconjunto de estas notificaciones y no devuelve un error cuando se intenta.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

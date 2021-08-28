@@ -2,7 +2,7 @@
 description: La propiedad Name del objeto SWbemQualifier define el nombre de este calificador. Esta propiedad es de solo lectura.
 ms.assetid: c0e0b0fb-8c79-4da1-8706-a9b785431e49
 ms.tgt_platform: multiple
-title: Propiedad SWbemQualifier.Name (Wbemdisp. h)
+title: SWbemQualifier.Name propiedad (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: d45aefba55626684a9a211b61c5c9270ebd4062c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50133ddd509cc740bd8f1ad7466e5d5e10f570e9a2a257a4fc98e81f8120da4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118313231"
 ---
-# <a name="swbemqualifiername-property"></a>Propiedad SWbemQualifier.Name
+# <a name="swbemqualifiername-property"></a>SWbemQualifier.Name propiedad
 
-La propiedad **Name** del objeto [**SWbemQualifier**](swbemqualifier.md) define el nombre de este calificador. Esta propiedad es de solo lectura.
+La **propiedad Name** del objeto [**SWbemQualifier**](swbemqualifier.md) define el nombre de este calificador. Esta propiedad es de solo lectura.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de solo lectura.
 
@@ -46,15 +46,15 @@ SWbemQualifier.Name As String
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemQualifier<br/>                                                        |
-| IID<br/>                      | \_ISWBEMQUALIFIER IID<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemQualifier<br/>                                                         |
 
 
 

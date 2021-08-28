@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 4fe37e38-ee71-41f0-b620-35fdc18f9dbb
-ms.openlocfilehash: daec9c922a0bac05154c1108f236ddf336a2e380
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 057ef4082bac8d04c006d951db7d2d251be2f8c62e88af65bc1a69678514af81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969014"
 ---
 # <a name="ishelldispatch4-object"></a>Objeto IShellDispatch4
 
@@ -29,7 +29,7 @@ Extiende el [**objeto IShellDispatch3.**](ishelldispatch3.md) Además de las pro
 
  
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto IShellDispatch4** tiene estos tipos de miembros:
 
@@ -52,9 +52,9 @@ El **objeto IShellDispatch4** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener una explicación de los servicios de Windows, consulte la [documentación de](../services/services.md) Servicios.
+Para obtener una explicación de Windows servicios, consulte la [documentación de](../services/services.md) servicios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,15 +62,15 @@ Para obtener una explicación de los servicios de Windows, consulte la [document
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
