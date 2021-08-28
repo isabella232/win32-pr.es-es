@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a08d4db92dc75f40d0073367dda9a9ea26863418
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f1975c6704faa0fdbf9647b92edff805e7930c0a612fc8e5fb845b8bb26fd4ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069984"
 ---
-# <a name="id3dx10meshintersectsubset-method"></a>ID3DX10Mesh:: IntersectSubset (método)
+# <a name="id3dx10meshintersectsubset-method"></a>Método ID3DX10Mesh::IntersectSubset
 
 Determina si un rayo forma una intersección con un subconjunto de esta malla.
 
@@ -48,84 +48,84 @@ HRESULT IntersectSubset(
 
 <dl> <dt>
 
-*AttribId* \[ de\]
+*AttribId* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-IDENTIFICADOR de atributo que identifica el subconjunto de la malla.
+Identificador de atributo que identifica el subconjunto de la malla.
 
 </dd> <dt>
 
-*pRayPos* \[ de\]
-</dt> <dd>
-
-Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
-
-Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que especifica el punto en el que comienza el rayo.
-
-</dd> <dt>
-
-*pRayDir* \[ de\]
+*pRayPos* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3d10-d3dxvector3.md) , que especifica la dirección del rayo.
+Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) especificando el punto donde comienza el rayo.
 
 </dd> <dt>
 
-*pHitCount* \[ de\]
+*pRayDir* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Número de veces que el rayo intersecó con la malla.
+Puntero a una [**estructura D3DXVECTOR3,**](d3d10-d3dxvector3.md) especificando la dirección del rayo.
 
 </dd> <dt>
 
-*pFaceIndex* \[ de\]
+*pHitCount* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a un valor de índice de la superficie más cercana al origen del rayo, si pHit es **true**.
+Número de veces que el rayo formaba intersección con la malla.
 
 </dd> <dt>
 
-*PU* \[ de\]
+*pFaceIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a una coordenada de posicionamiento de Barycentric, U.
+Puntero a un valor de índice de la cara más cercana al origen del rayo, si pHit es **TRUE.**
 
 </dd> <dt>
 
-*PV* \[ de\]
+*pU* \[ En\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Puntero a una coordenada de posicionamiento de Barycentric, V.
+Puntero a una coordenada de posición centrada en barras, U.
 
 </dd> <dt>
 
-*pDist* \[ de\]
+*pV* \[ En\]
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Puntero a una distancia del parámetro de intersección de rayo.
+Puntero a una coordenada de posición centrada en barras, V.
 
 </dd> <dt>
 
-*ppAllHits* \[ enuncia\]
+*pDist* \[ En\]
+</dt> <dd>
+
+Tipo: **\* float**
+
+Puntero a una distancia de parámetro de intersección de rayo.
+
+</dd> <dt>
+
+*ppAllHits* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Puntero a una [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)que contiene una matriz de estructuras de [**\_ \_ información de intersección D3DX10**](d3dx10-intersect-info.md) . Esta es una lista de todos los aciertos que se produjeron en la prueba de intersección.
+Puntero a una [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)que contiene una matriz de estructuras [**DE INFORMACIÓN \_ INTERSECT \_ de D3DX10.**](d3dx10-intersect-info.md) Esta es una lista de todos los aciertos que se produjeron en la prueba de intersección.
 
 </dd> </dl>
 
@@ -133,17 +133,17 @@ Puntero a una [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommo
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta API proporciona una manera de comprender los puntos en y alrededor de un triángulo, independientemente de dónde se encuentre realmente el triángulo. Esta función devuelve el punto resultante mediante la siguiente ecuación: v1 + U (V2-V1) + V (V3-V1).
+Esta API proporciona una manera de comprender los puntos dentro y alrededor de un triángulo, independientemente de dónde se encuentra realmente el triángulo. Esta función devuelve el punto resultante mediante la siguiente ecuación: V1 + U(V2 - V1) + V(V3 - V1).
 
-Cualquier punto del V1V2V3 de plano se puede representar mediante la coordenada Barycentric (U, V). El parámetro U controla la cantidad de v2 que se pondera en el resultado, y el parámetro V controla la cantidad de V3 que se pondera en el resultado. Por último, el valor de \[ 1-(U + V) \] controla la cantidad de V1 que se pondera en el resultado.
+Cualquier punto del plano V1V2V3 se puede representar mediante la coordenada centrada en barras (U,V). El parámetro U controla la cantidad de V2 que se pondera en el resultado y el parámetro V controla la cantidad de V3 que se pondera en el resultado. Por último, el valor de 1 - (U + V) controla la cantidad de V1 que se \[ pondera en el \] resultado.
 
-Las coordenadas de Barycentric son una forma de coordenadas generales. En este contexto, el uso de coordenadas Barycentric representa un cambio en los sistemas de coordenadas. Lo que sucede para las coordenadas cartesianas es true para las coordenadas Barycentric.
+Las coordenadas centradas en barras son una forma de coordenadas generales. En este contexto, el uso de coordenadas centradas en barras representa un cambio en los sistemas de coordenadas. Lo que es cierto para las coordenadas cartesianas es true para las coordenadas barídricas.
 
-Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas de Barycentric, consulte Descripción de las [coordenadas del Barycentric de Wolfram](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -151,8 +151,8 @@ Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -163,7 +163,7 @@ Las coordenadas Barycentric definen un punto dentro de un triángulo en cuanto a
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

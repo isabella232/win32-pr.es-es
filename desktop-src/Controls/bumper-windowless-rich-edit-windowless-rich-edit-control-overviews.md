@@ -1,19 +1,19 @@
 ---
-title: Información general del control Rich Edit sin ventanas
-description: Información general del control Rich Edit sin ventanas
+title: Información general sobre el control Rich Edit sin ventanas
+description: Información general sobre el control Rich Edit sin ventanas
 ms.assetid: b778d0be-6da8-4b44-b958-bcb76ae27a1b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e608da53d21772402fae09162ce4547874f9812
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c27f33311f7fa39eac5cc3c6fb82ca63f95a5026d0a8a26c20105d006b3c2c20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105653173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132235"
 ---
-# <a name="windowless-rich-edit-control-overview"></a>Información general del control Rich Edit sin ventanas
+# <a name="windowless-rich-edit-control-overview"></a>Información general sobre el control Rich Edit sin ventanas
 
--   [Acerca de los controles de edición enriquecida sin ventanas](about-windowless-rich-edit-controls.md)
+-   [Acerca de los controles Rich Edit sin ventanas](about-windowless-rich-edit-controls.md)
 
  
 

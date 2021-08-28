@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-Build
-description: Versión actual, incluido el número de compilación.
+description: La versión actual, incluido el número de compilación.
 ms.assetid: 230ef785-b5bf-44fa-a166-38050934143a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-SQL-Build
-- Esquema de AD de atributo mS-SQL-Build
+- Esquema de AD del atributo MS-SQL-Build
+- Esquema de AD del atributo mS-SQL-Build
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f70b9c9df99de71712c027d97634800d8a7af0d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 034ed191fa5eeefc44d7778a0504f067e0a3f0379a37c1a69c7624cd37a3715d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118016542"
 ---
 # <a name="ms-sql-build-attribute"></a>Atributo MS-SQL-Build
 
-Versión actual, incluido el número de compilación.
+La versión actual, incluido el número de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-SQL-compilación                         |
-| Nombre para mostrar de LDAP | mS-SQL-compilación                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | MS-SQL-Build                         |
+| Ldap-Display-Name | mS-SQL-Build                         |
+| Size              | \-                                   |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | Al iniciar el sistema.                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1368              |
-| System-ID-GUID    | 603e94c4-ccee-11d2-9993-0000f87a57d4 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 603e94c4-ccee-11d2-9993-0000f87a57d4 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,13 +55,13 @@ Versión actual, incluido el número de compilación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
@@ -76,13 +76,13 @@ Versión actual, incluido el número de compilación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
@@ -97,13 +97,13 @@ Versión actual, incluido el número de compilación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
@@ -116,15 +116,15 @@ Versión actual, incluido el número de compilación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
@@ -139,13 +139,13 @@ Versión actual, incluido el número de compilación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
@@ -160,13 +160,13 @@ Versión actual, incluido el número de compilación.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                                                   |
+| Es de un solo valor       | True                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |

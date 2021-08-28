@@ -37,11 +37,11 @@ Recupera el identificador del control de información sobre herramientas asociad
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador al control de información sobre herramientas si se realiza correctamente o NULL en **caso** contrario.
+Devuelve el identificador al control de información sobre herramientas si se realiza correctamente o **NULL** en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-Un control de pestaña crea un control de información sobre herramientas si tiene el [**estilo DE INFORMACIÓN SOBRE HERRAMIENTAS DE \_ TCS.**](tab-control-styles.md) También puede asignar un control de información sobre herramientas a un control de ficha mediante el mensaje [**\_ SETTOOLTIPS de TCM.**](tcm-settooltips.md)
+Un control de pestaña crea un control de información sobre herramientas si tiene el [**estilo TCS \_ TOOLTIPS.**](tab-control-styles.md) También puede asignar un control de información sobre herramientas a un control de pestaña mediante el [**mensaje \_ SETTOOLTIPS de TCM.**](tcm-settooltips.md)
 
 ## <a name="requirements"></a>Requisitos
 

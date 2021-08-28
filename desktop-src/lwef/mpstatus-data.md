@@ -1,10 +1,10 @@
 ---
-title: MPSTATUS_DATA estructura (MpClient. h)
+title: MPSTATUS_DATA estructura (MpClient.h)
 description: Contiene datos sobre el estado actual de un componente del producto.
 ms.assetid: 6AEF485C-30D1-47DB-92B6-048B8CAA7833
 keywords:
-- MPSTATUS_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPSTATUS_DATA características de entorno heredado de Windows
+- MPSTATUS_DATA estructura heredada de Windows environment
+- PMPSTATUS_DATA puntero de estructura heredado Windows características del entorno de ejecución
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5da4ea9c8c51d8ee74d3242e5020df23f758228
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 78989b055e6de79c3da733ff8bc498a3fb6717c5dec226db73b80c4e5c9d899c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887915"
 ---
-# <a name="mpstatus_data-structure"></a>\_Estructura de datos MPSTATUS
+# <a name="mpstatus_data-structure"></a>Estructura DE DATOS DE MPSTATUS \_
 
 Contiene datos sobre el estado actual de un componente del producto.
 
@@ -58,155 +58,155 @@ typedef struct tagMPSTATUS_DATA {
 **ComponentID**
 </dt> <dd>
 
-Tipo: **[ **\_ ID. de MPCOMPONENT**](mpcomponent-id.md)**
+Tipo: **[ **MPCOMPONENT \_ ID**](mpcomponent-id.md)**
 
 </dd> <dd>
 
-IDENTIFICADOR de componente específico para el que se ha comunicado el estado.
+Identificador de componente específico para el que se notifica el estado.
 
 </dd> <dt>
 
 **fEnable**
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
 </dd> <dd>
 
-Estado solicitado para el componente. **hResult** en los datos de devolución de llamada indica si la solicitud se ha realizado correctamente o no.
+Estado solicitado para el componente. **hResult en** los datos de devolución de llamada significa que la solicitud se ha completado correctamente o no.
 
 </dd> <dt>
 
 **ComponentStatus**
 </dt> <dd>
 
-Datos de estado adicionales en función del valor de **ComponentID**.
+Datos de estado adicionales según el valor de **ComponentID.**
 
 > [!Note]  
-> En la actualidad, da como resultado un puntero a una estructura ficticia para todos los valores posibles de **ComponentID**.
+> Actualmente, da como resultado un puntero a una estructura ficticia para todos los valores posibles de **ComponentID**.
 
  
 
 <dl> <dt>
 
-**P1**
+**p1**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ como \_ Signature**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ AS \_ SIGNATURE**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**P2**
+**p2**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ AV \_ Signature**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ AV \_ SIGNATURE**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**P3**
+**p3**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ \_ monitor en tiempo real**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ REALTIME \_ MONITOR**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**P4**
+**p4**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT la \_ \_ protección de acceso**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ ONACCESS \_ PROTECTION**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**P5**
+**p5**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ IOAV \_ PROTECTION**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ \_ IOAV PROTECTION**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**microarquitectura**
+**p6**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ Behavior \_ monitor**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ BEHAVIOR \_ MONITOR**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**P7**
+**p7**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ se \_ examina automáticamente**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ AUTO \_ SCAN**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**P8**
+**p8**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ \_ SIGUPDATE**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ AUTO \_ SIGUPDATE**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**P9**
+**p9**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ IPC**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ IPC**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**Pennsylvania**
+**Pa**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ NIS**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ NIS**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> <dt>
 
-**PB**
+**pb**
 </dt> <dd>
 
-Tipo: **PMPSTATUS \_ DATAEX \_ no usado**
+Tipo: **PMPSTATUS \_ DATAEX \_ UNUSED**
 
 </dd> <dd>
 
-Cuando **ComponentID**  ==  **MPCOMPONENT \_ Elam**. Consulte [**MPSTATUS \_ DATAEX \_ Unused**](mpstatus-dataex-unused.md).
+Cuando **ComponentID**  ==  **MPCOMPONENT \_ ELAM**. Vea [**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md).
 
 </dd> </dl> </dd> </dl>
 
@@ -216,9 +216,9 @@ Cuando **ComponentID**  ==  **MPCOMPONENT \_ Elam**. Consulte [**MPSTATUS \_ DAT
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -226,10 +226,10 @@ Cuando **ComponentID**  ==  **MPCOMPONENT \_ Elam**. Consulte [**MPSTATUS \_ DAT
 
 <dl> <dt>
 
-[**identificador de MPCOMPONENT \_**](mpcomponent-id.md)
+[**Id. de \_ MPCOMPONENT**](mpcomponent-id.md)
 </dt> <dt>
 
-[**MPSTATUS \_ DATAEX \_ no usado**](mpstatus-dataex-unused.md)
+[**MPSTATUS \_ DATAEX \_ UNUSED**](mpstatus-dataex-unused.md)
 </dt> </dl>
 
  

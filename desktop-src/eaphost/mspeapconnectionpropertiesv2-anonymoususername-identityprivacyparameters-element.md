@@ -1,6 +1,6 @@
 ---
 title: Elemento AnonymousUserName (IdentityPrivacyParameters)
-description: Contiene una identidad anónima que se utiliza en lugar de la verdadera identificación de un usuario. Se envía durante la primera fase de la autenticación PEAP cuando la identidad se envía como texto sin formato.
+description: Contiene una identidad anónima usada en lugar de la identificación verdadera de un usuario. Se envía durante la primera fase de la autenticación PEAP cuando identity se envía como texto sin formato.
 ms.assetid: 74a33a75-cf21-4346-a984-f2f8564c3b57
 keywords:
 - Elemento AnonymousUserName EAPHost
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6bbc973160a8865e246a6cec87ce02ced136d786
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cc0a4937eb0a136570d08fcbe18ba69b256ab9b7333d793f6b512dfd87286f8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117904032"
 ---
 # <a name="anonymoususername-identityprivacyparameters-element"></a>Elemento AnonymousUserName (IdentityPrivacyParameters)
 
-El elemento **AnonymousUserName (IdentityPrivacyParameters)** contiene una identidad anónima que se utiliza en lugar de la verdadera identificación de un usuario. Se envía durante la primera fase de la autenticación PEAP cuando la **identidad** se envía como texto sin formato.
+El **elemento AnonymousUserName (IdentityPrivacyParameters)** contiene una identidad anónima que se usa en lugar de la identificación verdadera de un usuario. Se envía durante la primera fase de la autenticación PEAP cuando **identity** se envía como texto sin formato.
 
-El uso de identidades anónimas viene determinado por el elemento [**EnableIdentityPrivacy**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) .
+El uso de identidades anónimas viene determinado [**por el elemento EnableIdentityPrivacy.**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md)
 
 ``` syntax
 <xs:element name="AnonymousUserName"
@@ -34,20 +34,20 @@ El uso de identidades anónimas viene determinado por el elemento [**EnableIdent
  />
 ```
 
-El elemento **AnonymousUserName** se define mediante [IdentityPrivacyParameters](mspeapconnectionpropertiesv2-identityprivacyparameters-complextype.md) .
+El **elemento AnonymousUserName** se define mediante [IdentityPrivacyParameters.](mspeapconnectionpropertiesv2-identityprivacyparameters-complextype.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **AnonymousUserName** es opcional.
+El **elemento AnonymousUserName** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ El elemento **AnonymousUserName** es opcional.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)
+[Mspeapconnectionpropertiesv2 Schema](mspeapconnectionpropertiesv2schema-schema.md)
 </dt> <dt>
 
 [Elementos de esquema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-elements.md)

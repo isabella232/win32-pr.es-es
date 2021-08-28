@@ -28,7 +28,7 @@
                 - name: Guía de compatibilidad para Windows
                   tocHref: /windows/win32/w8cookbook/
                   topicHref: /windows/win32/w8cookbook/windows-8-and-windows-server-8-compatibility-cookbook-portal
-                - name: Windows guía de calidad de aplicaciones de Windows Server 2008 R2 y 7
+                - name: Windows guía de calidad de aplicaciones de Windows Server 2008 R2
                   tocHref: /windows/win32/win7appqual/
                   topicHref: /windows/win32/win7appqual/windows-7-application-quality-cookbook
                 - name: Windows 7 Developer Guide (Guía para desarrolladores de Windows 7)
@@ -508,10 +508,10 @@
                     - name: Interfaz de examen antimalware (AMSI)
                       tocHref: /windows/win32/amsi/
                       topicHref: /windows/win32/amsi/antimalware-scan-interface-portal
-                    - name: Autenticación
+                    - name: Authentication
                       tocHref: /windows/win32/secauthn/
                       topicHref: /windows/win32/secauthn/authentication-portal
-                    - name: Autorización
+                    - name: Authorization
                       tocHref: /windows/win32/secauthz/
                       topicHref: /windows/win32/secauthz/authorization-portal
                     - name: Procedimientos recomendados para las API de seguridad
@@ -663,7 +663,7 @@
                     - name: Windows Server Update Services
                       topicHref: /windows/win32/srvnodes/windows-server-update-services
                       items:
-                        - name: Windows Server Update Services biblioteca de clases de 2.0
+                        - name: Windows Server Update Services biblioteca de clases 2.0
                           topicHref: /windows/win32/srvnodes/windows-server-update-services-2-0-class-library
                 - name: La virtualización
                   topicHref: /windows/win32/srvnodes/virtualization

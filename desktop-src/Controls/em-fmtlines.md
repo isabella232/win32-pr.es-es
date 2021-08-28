@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_FMTLINES (Winuser. h)
-description: Establece una marca que determina si un control de edición multilínea incluye caracteres de salto de línea automáticos. Un salto de línea flexible se compone de dos retornos de carro y un avance de línea, y se inserta al final de una línea que se rompe debido a aparecen.
+title: EM_FMTLINES mensaje (Winuser.h)
+description: Establece una marca que determina si un control de edición multilínea incluye caracteres de salto de línea flexibles. Un salto de línea suave consta de dos retornos de carro y un avance de línea, y se inserta al final de una línea que se divide debido al encapsulado de palabras.
 ms.assetid: bfc08062-b0a7-4ba7-8858-00cb20895c77
 keywords:
-- EM_FMTLINES controles de mensajes de Windows
+- EM_FMTLINES controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c12a22ee8c30ffa74705f670a16caa3651e9b44
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e0c0c410f13a33f0e387098178b42faaf3269c36d11f75e765eb753fa9d0844
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545105"
 ---
-# <a name="em_fmtlines-message"></a>\_Mensaje FMTLINES em
+# <a name="em_fmtlines-message"></a>Mensaje \_ DE EM FMTLINES
 
-Establece una marca que determina si un control de edición multilínea incluye caracteres de salto de línea automáticos. Un salto de línea flexible se compone de dos retornos de carro y un avance de línea, y se inserta al final de una línea que se rompe debido a aparecen.
+Establece una marca que determina si un control de edición multilínea incluye caracteres de salto de línea flexibles. Un salto de línea suave consta de dos retornos de carro y un avance de línea, y se inserta al final de una línea que se divide debido al encapsulado de palabras.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece una marca que determina si un control de edición multilínea incluye 
 *wParam* 
 </dt> <dd>
 
-Especifica si se van a insertar caracteres de salto de línea. Un valor **true** inserta los caracteres; Si el valor **es false** , se quitan.
+Especifica si se van a insertar caracteres de salto de línea flexibles. Un valor **true inserta** los caracteres; Un valor **de FALSE** los quita.
 
 </dd> <dt>
 
@@ -45,30 +45,30 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es idéntico al parámetro *wParam* .
+El valor devuelto es idéntico al *parámetro wParam.*
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje solo afecta al búfer devuelto por el mensaje de [**\_ GETHANDLE em**](em-gethandle.md) y el texto devuelto por el mensaje de [**\_ GETTEXT de WM**](/windows/desktop/winmsg/wm-gettext) . No tiene ningún efecto en la presentación del texto en el control de edición.
+Este mensaje solo afecta al búfer devuelto por el [**mensaje EM \_ GETHANDLE**](em-gethandle.md) y al texto devuelto por el [**mensaje \_ GETTEXT de WM.**](/windows/desktop/winmsg/wm-gettext) No tiene ningún efecto en la presentación del texto dentro del control de edición.
 
-El **mensaje \_ FMTLINES em** no afecta a una línea que termina con un salto de línea fuerte. Un salto de línea fuerte se compone de un retorno de carro y un avance de línea.
+El **mensaje EM \_ FMTLINES** no afecta a una línea que termina con un salto de línea duro. Un salto de línea duro consta de un retorno de carro y un avance de línea.
 
 > [!Note]  
 > El tamaño del texto cambia cuando se procesa este mensaje.
 
  
 
-**Edición enriquecida:** No se admite el mensaje **\_ FMTLINES em** .
+**Edición enriquecte:** No se admite el mensaje **\_ EM FMTLINES.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -79,13 +79,13 @@ El **mensaje \_ FMTLINES em** no afecta a una línea que termina con un salto de
 **Referencia**
 </dt> <dt>
 
-[**GETHANDLE (EM) \_**](em-gethandle.md)
+[**EM \_ GETHANDLE**](em-gethandle.md)
 </dt> <dt>
 
 **Otros recursos**
 </dt> <dt>
 
-[**GETTEXT de WM \_**](/windows/desktop/winmsg/wm-gettext)
+[**WM \_ GETTEXT**](/windows/desktop/winmsg/wm-gettext)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Convierte los datos de atributos especificados al formato XML.
+description: Convierte los datos de atributo especificados al formato XML.
 ms.assetid: 7a75726d-f1ec-4137-89c1-eccb4a78fc22
-title: SdbFormatAttribute función)
+title: Función SdbFormatAttribute
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: e06bbaa288c7ecb0e85cd8a779100d547c33d687
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 44303a568a9f7775893033edc512e8a916004c43207277e308e1d4826d9f9537
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103906908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161565"
 ---
-# <a name="sdbformatattribute-function"></a>SdbFormatAttribute función)
+# <a name="sdbformatattribute-function"></a>Función SdbFormatAttribute
 
-Convierte los datos de atributos especificados al formato XML.
+Convierte los datos de atributo especificados al formato XML.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ BOOL WINAPI SdbFormatAttribute(
 
 <dl> <dt>
 
-*pAttrInfo* \[ de\]
+*pAttrInfo* \[ En\]
 </dt> <dd>
 
-Estructura [**ATTRINFO**](attrinfo.md) .
+Estructura [**ATTRINFO.**](attrinfo.md)
 
 </dd> <dt>
 
-*pchBuffer* \[ enuncia\]
+*pchBuffer* \[ out\]
 </dt> <dd>
 
 Búfer de salida.
 
 </dd> <dt>
 
-*dwBufferSize* \[ de\]
+*dwBufferSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer de *pchBuffer* , en caracteres.
+Tamaño del búfer *pchBuffer,* en caracteres.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si es correcto o **false** si el búfer es demasiado pequeño o no se encuentra el atributo.
+La función devuelve **TRUE si** se ejecuta **correctamente** o FALSE si el búfer es demasiado pequeño o no se encuentra el atributo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ La función devuelve **true** si es correcto o **false** si el búfer es demasia
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

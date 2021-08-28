@@ -1,7 +1,7 @@
 ---
-description: El método Findi recupera la primera posición que contiene el elemento especificado.
+description: El método FindI recupera la primera posición que contiene el elemento especificado.
 ms.assetid: a95fac19-0f93-4bb4-8e76-0da82745a1d2
-title: Método CBaseList. Findi (Wxlist. h)
+title: Método CBaseList.FindI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2366f8c4c117b8550d91c84bffafb03393801088
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8bdd89de7e28c5645cf8a418a8472d484f891a499f11e238b80af5f7062ff4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635464"
 ---
-# <a name="cbaselistfindi-method"></a>CBaseList. Findi (método)
+# <a name="cbaselistfindi-method"></a>Método CBaseList.FindI
 
 El `FindI` método recupera la primera posición que contiene el elemento especificado.
 
@@ -51,7 +51,7 @@ Puntero al elemento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de posición o **null** si el elemento no está en la lista.
+Devuelve un valor POSITION o **NULL** si el elemento no está en la lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor de posición o **null** si el elemento no está en la lista.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor de posición o **null** si el elemento no está en la lista.
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

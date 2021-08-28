@@ -3,9 +3,9 @@ title: Propiedad ParentInstanceId de la interfaz IMsRdpCameraRedirConfig
 description: Obtiene el identificador de instancia del dispositivo primario de la cámara.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ParentInstanceId
-- Propiedad ParentInstanceId Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfig
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfig, propiedad ParentInstanceId
+- Propiedad ParentInstanceId Servicios de Escritorio remoto
+- Propiedad ParentInstanceId Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfig
+- Interfaz IMsRdpCameraRedirConfig Servicios de Escritorio remoto , propiedad ParentInstanceId
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: e4a399659c33000207930bfe7d17818a2ad8438f
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 149e4f536996376193596db6c4fd4cf659637c05bb92e3afcdb7ee78c480b893
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105720246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574565"
 ---
-# <a name="imsrdpcameraredirconfigparentinstanceid-property"></a>IMsRdpCameraRedirConfig::P propiedad arentInstanceId
+# <a name="imsrdpcameraredirconfigparentinstanceid-property"></a>IMsRdpCameraRedirConfig::P arentInstanceId
 
 Obtiene el identificador de instancia del dispositivo primario de la cámara.
 
@@ -40,7 +40,7 @@ HRESULT get_ParentInstanceId(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-IDENTIFICADOR de instancia del dispositivo primario de la cámara.
+Identificador de instancia del dispositivo primario de la cámara.
 
 ## <a name="requirements"></a>Requisitos
 

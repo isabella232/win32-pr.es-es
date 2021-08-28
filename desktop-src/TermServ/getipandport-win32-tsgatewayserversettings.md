@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método GetIPAndPort Servicios de Escritorio remoto
 - Método GetIPAndPort Servicios de Escritorio remoto , Win32_TSGatewayServerSettings clase
-- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto , método GetIPAndPort
+- Win32_TSGatewayServerSettings clase Servicios de Escritorio remoto método , GetIPAndPort
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Especifica el tipo de transporte. Debe ser uno de los siguientes valores.
 0
 </dt> <dd>
 
-RPC a través del transporte HTTP.
+RPC sobre transporte HTTP.
 
 </dd> <dt>
 
@@ -89,27 +89,27 @@ Especifica el número de puerto de escucha.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Win32 \_ TSGatewayServerSettings**](win32-tsgatewayserversettings.md)
+[**TSGatewayServerSettings de Win32 \_**](win32-tsgatewayserversettings.md)
 </dt> </dl>
 
  

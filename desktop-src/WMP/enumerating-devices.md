@@ -4,13 +4,13 @@ description: Este código de ejemplo muestra una función que enumera los dispos
 ms.assetid: 0236a629-c09a-4687-a8ba-fa05107fab33
 keywords:
 - Reproductor de Windows Media dispositivos portátiles
-- Reproductor de Windows Media de objetos, dispositivos portátiles
+- Reproductor de Windows Media modelo de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
 - Reproductor de Windows Media ActiveX control, dispositivos portátiles
 - ActiveX control, dispositivos portátiles
-- Reproductor de Windows Media Control ActiveX dispositivos móviles, dispositivos portátiles
+- Reproductor de Windows Media Control de ActiveX móviles, dispositivos portátiles
 - Reproductor de Windows Media Dispositivos móviles y portátiles
-- dispositivos portátiles, enumerar
+- dispositivos portátiles, enumeración
 - enumeraciones, dispositivos portátiles
 ms.topic: article
 ms.date: 05/31/2018
@@ -23,11 +23,11 @@ ms.locfileid: "118339863"
 ---
 # <a name="enumerating-devices"></a>Enumeración de dispositivos
 
-Reproductor de Windows Media dispositivos portátiles mediante la **interfaz IWMPSyncDevice.** En el código de ejemplo siguiente se muestra una función que crea una matriz de punteros a **IWMPSyncDevice**. Cada puntero de la matriz representa un dispositivo para el que Reproductor de Windows Media información almacenada. No es necesario que un dispositivo esté conectado al equipo ni que tenga una asociación con la instancia de Reproductor de Windows Media actual.
+Reproductor de Windows Media representa dispositivos portátiles mediante la **interfaz IWMPSyncDevice.** El código de ejemplo siguiente muestra una función que crea una matriz de punteros a **IWMPSyncDevice**. Cada puntero de la matriz representa un dispositivo para el que Reproductor de Windows Media información almacenada. No es necesario que un dispositivo esté conectado al equipo ni que tenga una asociación con la instancia de Reproductor de Windows Media actual.
 
 Debe enumerar los dispositivos cada vez que reciba el **evento DeviceConnect** o **el evento DeviceDisconnect.**
 
-La función siguiente enumera los dispositivos. El *parámetro bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.
+La siguiente función enumera los dispositivos. El *parámetro bConnectedOnly* especifica si se deben enumerar solo los dispositivos conectados actualmente al equipo del usuario.
 
 
 ```C++

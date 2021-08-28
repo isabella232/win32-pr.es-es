@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_Config01_Licensing02 (clase)
-description: La \_ clase MDM Policy \_ Config01 \_ Licensing02 representa las directivas de licencias disponibles.
+title: MDM_Policy_Config01_Licensing02 clase
+description: La clase Mdm \_ Policy \_ Config01 \_ Licensing02 representa las directivas de licencia disponibles.
 ms.assetid: 7ec186e9-626e-4361-88fd-665b947ca23d
 keywords:
-- MDM_Policy_Config01_Licensing02 (clase)
+- MDM_Policy_Config01_Licensing02 clase
 - MDM_Policy_Config01_Licensing02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d654facc7ec3ba08d1f5b0f31497545945cc73d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4bea0f2f552d5e7879b78a0ff4fa4b6247324d230a8b50d7418eb5b91022354e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165298"
 ---
-# <a name="mdm_policy_config01_licensing02-class"></a>\_ \_ Clase Licensing02 de Config01 de directivas MDM \_
+# <a name="mdm_policy_config01_licensing02-class"></a>Clase Mdm \_ Policy \_ Config01 \_ Licensing02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase **MDM \_ Policy \_ Config01 \_ Licensing02** representa las directivas de licencias disponibles.
+La **clase MDM Policy \_ \_ Config01 \_ Licensing02** representa las directivas de licencia disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -47,13 +47,13 @@ class MDM_Policy_Config01_Licensing02
 
 ## <a name="members"></a>Miembros
 
-La clase Config01 de la **\_ Directiva MDM \_ \_ Licensing02** tiene estos tipos de miembros:
+La **clase Mdm Policy \_ \_ Config01 \_ Licensing02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Config01 de \_ Licensing02 de directivas MDM** tiene estas propiedades.
+La **clase \_ \_ Config01 \_ Licensing02** de la directiva MDM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ La **clase \_ \_ Config01 de \_ Licensing02 de directivas MDM** tiene estas prop
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -74,7 +74,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -107,7 +107,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Config".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Config"
 
 </dd> </dl>
 
@@ -115,13 +115,13 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl>       |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl>       |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

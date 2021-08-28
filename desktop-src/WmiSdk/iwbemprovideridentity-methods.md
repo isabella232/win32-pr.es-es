@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos IWbemProviderIdentity
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d9dac2cbb1127220a6e680abac4371e2c8f23d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: baf2139f4dcc316d95a4cb3dabca45ff067f81d240ce1b5125ea6194ca4776d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118818461"
 ---
 # <a name="iwbemprovideridentity-methods"></a>Métodos IWbemProviderIdentity
 
-La interfaz [**IWbemProviderIdentity**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemprovideridentity) expone los métodos siguientes.
+La [**interfaz IWbemProviderIdentity**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemprovideridentity) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

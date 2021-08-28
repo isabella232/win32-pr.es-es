@@ -1,19 +1,19 @@
 ---
-description: El \_ evento compilado de EC lo envía el control de vídeo cuando se ha creado un gráfico completamente. Este evento no se reenvía a las aplicaciones.
+description: El control de vídeo envía el evento EC \_ BUILT cuando se ha creado completamente un gráfico. Este evento no se reenvía a las aplicaciones.
 ms.assetid: 011d81a1-005a-4afc-971a-38a09fd132e3
-title: EC_BUILT (DShow. h)
+title: EC_BUILT (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa5770c69a6a21d66a24792a3707a2bed952b837
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b5c6fc701dd97d07c8aa270afb219322b0cf6b3c892251b5ca99effdc9e82a9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998265"
 ---
-# <a name="ec_built"></a>creado por EC \_
+# <a name="ec_built"></a>EC \_ BUILT
 
-El **evento \_ compilado de EC** lo envía el [control de vídeo](/previous-versions/windows/desktop/mstv/video-control-overview) cuando se ha creado un gráfico completamente. Este evento no se reenvía a las aplicaciones.
+El control de vídeo envía el evento [EC](/previous-versions/windows/desktop/mstv/video-control-overview) **\_ BUILT** cuando se ha creado completamente un gráfico. Este evento no se reenvía a las aplicaciones.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,7 +43,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

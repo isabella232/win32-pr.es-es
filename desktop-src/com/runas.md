@@ -1,63 +1,63 @@
 ---
 title: RunAs
-description: Configura una clase para que se ejecute en una cuenta de usuario específica cuando está activada por un cliente remoto sin escribirse como una aplicación de servicio.
+description: Configura una clase para que se ejecute en una cuenta de usuario específica cuando lo active un cliente remoto sin que se escriba como una aplicación de servicio.
 ms.assetid: 2325a7da-8acd-41f4-a658-36a02532505a
 keywords:
-- Valor del registro runas COM
+- Valor del Registro RunAs COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3139d12864eb92cc153b919dc4b9b9a4059379d
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 14a8a0ab70c48354a44781cbade8299d0a7769e80dc6ca8219898d8f543330ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105705033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117918396"
 ---
 # <a name="runas"></a>RunAs
 
-Configura una clase para que se ejecute en una cuenta de usuario específica cuando está activada por un cliente remoto sin escribirse como una aplicación de servicio.
+Configura una clase para que se ejecute en una cuenta de usuario específica cuando lo active un cliente remoto sin que se escriba como una aplicación de servicio.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID
-   {AppID_GUID}
-      RunAs = value
+   {AppID_GUID}
+      RunAs = value
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor especifica el nombre de usuario y debe tener el formato *nombreDeUsuario*, *dominio ***\\*** nombreDeUsuario* o la cadena "usuario interactivo". También puede especificar las cadenas "NT Authority \\ LocalService" (para el servicio local) y "NT Authority \\ NetworkService" (para el servicio de red). También puede especificar la cadena "NT Authority \\ System" cuando {*AppID \_ GUID*} hace referencia a un servidor com que ya se ha iniciado o que tiene una entrada en la tabla de clases. Sin embargo, no puede usar "NT Authority \\ System" con un servidor com que no se haya iniciado todavía. La contraseña predeterminada para ' NT Authority \\ LocalService ', ' NT Authority \\ NetworkService ' y ' NT Authority \\ System ' es ' ' (cadena vacía).
-
-> [!Note]  
-> A partir de Windows Vista, ya no se necesita una contraseña vacía para configurar las opciones de ejecución de "NT Authority \\ LocalService", "NT Authority \\ NetworkService" y "NT Authority \\ System". 
-
- 
-
-Es posible que las clases configuradas para ejecutarse como un usuario determinado no se registren en ninguna otra identidad, por lo que se producirá un error en las llamadas a [**CoRegisterClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-coregisterclassobject) con este CLSID a menos que com haya iniciado el proceso en nombre de una solicitud de activación real.
-
-El nombre de usuario se toma del valor **runas** de la clave **AppID** de la clase. Si el nombre de usuario es "usuario interactivo", el servidor se ejecuta en la identidad del usuario que ha iniciado sesión actualmente y está conectado al escritorio interactivo.
-
-De lo contrario, la contraseña se recupera de una parte del registro que solo está disponible para los administradores del equipo y del sistema. El nombre de usuario y la contraseña se usan para crear una sesión de inicio de sesión en la que se ejecuta el servidor. Cuando se inicia de esta manera, el usuario se ejecuta con su propio escritorio y estación de ventana, y no comparte los identificadores de ventana, el portapapeles u otros elementos de la interfaz de usuario con el usuario interactivo u otro usuario que se ejecute en otras cuentas de usuario.
-
-Para establecer una contraseña para una clase **runas** , debe usar la herramienta administrativa DCOMCNFG instalada en el directorio del sistema.
-
-Para las identidades de **runas** utilizadas por los servidores DCOM, la cuenta de usuario especificada en el valor debe tener derechos para iniciar sesión como un trabajo por lotes. Este derecho se puede agregar mediante la herramienta administrativa de la Directiva de seguridad local. Vaya a **Directivas locales** y Abra **asignación de derechos de usuario**. Seleccione **iniciar sesión como trabajo por lotes** y agregue la cuenta de usuario.
-
-El valor **runas** no se utiliza para los servidores configurados para ejecutarse como servicios. Los servicios COM que deben ejecutarse con una identidad distinta de LocalSystem deben establecer el nombre de usuario y la contraseña adecuados mediante el applet del panel de control de servicios o las funciones del controlador de servicio. (Para obtener más información acerca de estas funciones, consulte [servicios](/windows/desktop/Services/services)).
+El valor especifica el nombre de usuario y debe tener el formato *UserName*, Domain* UserName o de la cadena ***\\**  "Interactive User". También puede especificar las cadenas "nt authority \\ localservice" (para Servicio local) y "nt authority \\ networkservice" (para Servicio de red). También puede especificar la cadena "nt authority \\ system"* cuando { AppID GUID*} hace referencia a un servidor COM que ya se ha iniciado o que tiene una entrada en la tabla \_ de clases. Sin embargo, no puede usar "nt authority \\ system" con un servidor COM que aún no se haya iniciado. La contraseña predeterminada para "nt authority \\ localservice", "nt authority \\ networkservice" y "nt authority \\ system" es "" (cadena vacía).
 
 > [!Note]  
-> A partir de Microsoft Windows Server 2003, la clase AppID se lee explícitamente desde **\_ \_ las clases de software de máquina local HKEY \\ \\ \\ AppID**, que, a diferencia de la mayoría de las claves del registro, no es intercambiable con **HKEY \_ classes \_ raíz \\ AppID**.
+> A Windows Vista, ya no se necesita una contraseña vacía para configurar las opciones "nt authority \\ localservice", "nt authority \\ networkservice" y "nt authority \\ system" **RunAs.**
 
- 
+ 
+
+Es posible que las clases configuradas para ejecutarse como un usuario determinado no se registren en ninguna otra identidad, por lo que las llamadas a [**CoRegisterClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-coregisterclassobject) con este CLSID producirán un error a menos que COM haya iniciado el proceso en nombre de una solicitud de activación real.
+
+El nombre de usuario se toma del valor **RunAs** bajo la clave **AppID de la** clase. Si el nombre de usuario es "Usuario interactivo", el servidor se ejecuta en la identidad del usuario que ha iniciado sesión actualmente y está conectado al escritorio interactivo.
+
+De lo contrario, la contraseña se recupera de una parte del registro que solo está disponible para los administradores del equipo y para el sistema. A continuación, el nombre de usuario y la contraseña se usan para crear una sesión de inicio de sesión en la que se ejecuta el servidor. Cuando se inicia de esta manera, el usuario se ejecuta con su propia estación de escritorio y ventana y no comparte identificadores de ventana, el Portapapeles u otros elementos de interfaz de usuario con el usuario interactivo u otro usuario que se ejecuta en otras cuentas de usuario.
+
+Para establecer una contraseña para una **clase RunAs,** debe usar la herramienta administrativa DCOMCNFG instalada en el directorio del sistema.
+
+En el caso de las identidades **RunAs** que usan los servidores DCOM, la cuenta de usuario especificada en el valor debe tener los derechos para iniciar sesión como un trabajo por lotes. Este derecho se puede agregar mediante la herramienta administrativa directiva de seguridad local. Vaya a **Directivas locales y** abra **Asignación de derechos de usuario.** Seleccione **Iniciar sesión como un trabajo por lotes** y agregue la cuenta de usuario.
+
+El **valor RunAs** no se usa para los servidores configurados para ejecutarse como servicios. Los servicios COM que necesitan ejecutarse con una identidad que no sea LocalSystem deben establecer el nombre de usuario y la contraseña adecuados mediante el applet del panel de control de servicios o las funciones del controlador de servicio. (Para obtener más información sobre estas funciones, vea [Servicios](/windows/desktop/Services/services)).
+
+> [!Note]  
+> A partir de Microsoft Windows Server 2003, la clase AppID se lee explícitamente de **HKEY \_ LOCAL MACHINE SOFTWARE Classes \_ \\ \\ \\ AppID,** que, a diferencia de la mayoría de las claves del Registro, no es intercambiable con **HKEY CLASSES ROOT \_ \_ \\ AppID**.
+
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Registrar servidores COM](registering-com-servers.md)
+[Registro de servidores COM](registering-com-servers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

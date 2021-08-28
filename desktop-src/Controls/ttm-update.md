@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_UPDATE (commctrl. h)
-description: Obliga a que se vuelva a dibujar la información sobre herramientas actual.
+title: TTM_UPDATE mensaje (Commctrl.h)
+description: Fuerza que se vuelva a dibujar la información sobre herramientas actual.
 ms.assetid: b3879cca-489f-4811-92f1-a2d61e2e09aa
 keywords:
-- TTM_UPDATE controles de mensajes de Windows
+- TTM_UPDATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36943b333691588df5b159d1922719eda1fb0a1f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 571f167b67b41164c451aeadfb55edda61b21b13ef5311d5172cdc49bec4fa32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166128"
 ---
-# <a name="ttm_update-message"></a>Mensaje de actualización de TTM \_
+# <a name="ttm_update-message"></a>Mensaje DE ACTUALIZACIÓN DE TTM \_
 
-Obliga a que se vuelva a dibujar la información sobre herramientas actual.
+Fuerza que se vuelva a dibujar la información sobre herramientas actual.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,17 +37,17 @@ Obliga a que se vuelva a dibujar la información sobre herramientas actual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para este mensaje.
+No se usa el valor devuelto para este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

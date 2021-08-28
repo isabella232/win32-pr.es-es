@@ -15,14 +15,19 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: ca968397441765455e74059201c128be53f50916e5e28212c700078f52124fe8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5738f2a9dbf7da4a2dcddb952891b415af73cb7
+ms.sourcegitcommit: 58ca2495eae63806264bf4594db45aae692c70b8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117868740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122021699"
 ---
 # <a name="addprintprovidor-function"></a>Función AddPrintProvidor
+
+> [!IMPORTANT]
+> El 6 de julio de 2021, [KB5005010](https://support.microsoft.com/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7) introdujo una opción de configuración opcional basada en el Registro para restringir el acceso a esta API solo a los usuarios administradores. Esta opción estaba desactivada como predeterminada.
+>
+> El 10 de agosto de 2021, [KB5005652](https://aka.ms/print_install_kb) cambia el valor predeterminado de esta configuración para requerir derechos de administrador para instalar nuevos controladores de impresora.
 
 La **función AddPrintProvidor** instala un proveedor de impresión local y vincula los archivos de configuración, datos y proveedor.
 
@@ -57,7 +62,7 @@ Nivel de la estructura a la que *apunta pProviderInfo.* Puede ser uno de los sig
 
 
 
-| Valor                                                                                                | Significado                                                                            |
+| Value                                                                                                | Significado                                                                            |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | La función usa una [**estructura \_ PROVIDOR INFO \_ 1.**](providor-info-1.md)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | La función usa una [**estructura \_ PROVIDOR INFO \_ 2.**](providor-info-2.md)<br/> |
@@ -71,7 +76,7 @@ Nivel de la estructura a la que *apunta pProviderInfo.* Puede ser uno de los sig
 *pProviderInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de proveedor de impresión, como se indica en *Level*.
+Puntero a una estructura del proveedor de impresión, como se indica en *Level*.
 
 </dd> </dl>
 
@@ -107,7 +112,7 @@ Se puede quitar un proveedor agregado **por AddPrintProvidor** llamando a [**Del
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

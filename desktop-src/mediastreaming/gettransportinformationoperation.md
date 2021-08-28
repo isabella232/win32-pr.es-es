@@ -1,10 +1,10 @@
 ---
-title: Clase GetTransportInformationOperation
+title: GetTransportInformationOperation (clase)
 description: Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por GetTransportInformationAsync y proporciona un método que devuelve los resultados de la operación.
 ms.assetid: EDB7E338-94E9-47DA-A95E-E49123655505
 keywords:
-- Clase GetTransportInformationOperation API de streaming de multimedia
-- Clase GetTransportInformationOperation API de streaming de multimedia, descrita
+- GetTransportInformationOperation (clase Media Streaming API)
+- Clase GetTransportInformationOperation Media Streaming API , descrita
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 05d1eee0dd415e22fb7caaac2c4fc60e53344ba8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4dc00a24c0bd7d4be4192b3489af524dd7d0af6ac95ce536e5167de6c5d07e22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104533142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972384"
 ---
-# <a name="gettransportinformationoperation-class"></a>Clase GetTransportInformationOperation
+# <a name="gettransportinformationoperation-class"></a>GetTransportInformationOperation (clase)
 
 Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetTransportInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-gettransportinformationasync) y proporciona un método que devuelve los resultados de la operación.
 
@@ -32,13 +32,13 @@ Registra un controlador de eventos que se invoca cuando se completa la operació
 
 ### <a name="methods"></a>Métodos
 
-La clase **GetTransportInformationOperation** tiene estos métodos.
+La **clase GetTransportInformationOperation** tiene estos métodos.
 
 
 
 | Método                                                            | Descripción                                                                                                                                                  |
 |:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetResults**](gettransportinformationoperation-getresults.md) | Devuelve los resultados de la operación asincrónica iniciada por [**GetTransportInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-gettransportinformationasync).<br/> |
+| [**GetResults**](gettransportinformationoperation-getresults.md) | Devuelve los resultados de la operación asincrónica iniciada [**por GetTransportInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-gettransportinformationasync).<br/> |
 
 
 
@@ -46,13 +46,13 @@ La clase **GetTransportInformationOperation** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **GetTransportInformationOperation** tiene estas propiedades.
+La **clase GetTransportInformationOperation** tiene estas propiedades.
 
 
 
 | Propiedad                                                                   | Tipo de acceso           | Descripción                                                                                                                                                                                            |
 |:---------------------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Completed**](gettransportinformationoperation-completed.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetTransportInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-gettransportinformationasync) . <br/> |
+| [**Completed**](gettransportinformationoperation-completed.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetTransportInformationAsync.**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-gettransportinformationasync) <br/> |
 
 
 

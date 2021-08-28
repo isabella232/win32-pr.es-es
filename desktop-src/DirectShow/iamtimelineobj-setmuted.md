@@ -1,7 +1,7 @@
 ---
-description: El método SetMuted establece el estado silenciado del objeto. Un objeto silenciado no se representa, pero permanece en la escala de tiempo.
+description: El método SetMuted establece el estado muted del objeto. Un objeto muted no se representa, pero permanece en la escala de tiempo.
 ms.assetid: 5dcd8533-8e58-4553-ac01-928723485f5d
-title: 'IAMTimelineObj:: SetMuted (método) (QEDIT. h)'
+title: Método IAMTimelineObj::SetMuted (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: ac3f5b798ef56251fa64b55a92ae1e94e2fd61b8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c561dad9435d972b24a899a9dd7aa65207555b3373fc2930438328aa17568fd1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633885"
 ---
-# <a name="iamtimelineobjsetmuted-method"></a>IAMTimelineObj:: SetMuted (método)
+# <a name="iamtimelineobjsetmuted-method"></a>IamTimelineObj::SetMuted (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetMuted` método establece el estado silenciado del objeto. Un objeto silenciado no se representa, pero permanece en la escala de tiempo.
+El `SetMuted` método establece el estado muted del objeto. Un objeto muted no se representa, pero permanece en la escala de tiempo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,25 +48,25 @@ HRESULT SetMuted(
 *newVal* 
 </dt> <dd>
 
-Marca que especifica el estado silenciado. Si **es true**, se silencia el objeto y todos sus elementos secundarios.
+Marca que especifica el estado muted. Si **es TRUE,** el objeto y todos sus secundarios están mutados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Silenciar un objeto también silencia los elementos secundarios contenidos en el objeto. Por ejemplo, si silencia una pista, las transiciones, los orígenes y los efectos de esa pista también se silencian. Una vez que el objeto deja de estar silenciado, sus elementos secundarios se revierten a su estado anterior, lo que podría estar silenciado o desactivado.
+Muting an object also mutes any children contained in the object. Por ejemplo, si se silencia una pista, las transiciones, los orígenes y los efectos de esa pista también se silencian. Una vez que el objeto ya no está mutado, sus secundarios vuelven a su estado anterior, que podría ser muted o unmuted.
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Silenciar un objeto también silencia los elementos secundarios contenidos en el
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ Silenciar un objeto también silencia los elementos secundarios contenidos en el
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineObj**](iamtimelineobj.md)
+[**IamTimelineObj (interfaz)**](iamtimelineobj.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

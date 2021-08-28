@@ -4,12 +4,12 @@ ms.assetid: 21cbde27-a2ca-4298-9197-43bcaf05588d
 title: Agregar información de flujo al receptor de archivos de ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de8202de8da5cb8e17534c334e3d39dddb3c4f99
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d0273f6080293803db7fa7451460e8f8d7700c5e405b9ed09d8d35e384abc8ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975044"
 ---
 # <a name="adding-stream-information-to-the-asf-file-sink"></a>Agregar información de flujo al receptor de archivos de ASF
 
@@ -17,11 +17,11 @@ El receptor de archivos ASF es una implementación de [**IMFMediaSink**](/window
 
 Después de crear una instancia del receptor de archivos, debe configurarse antes de compilar la topología. El receptor del archivo debe conocer los flujos del archivo de salida, la información del modo de codificación y los metadatos. En este tema se describe el proceso de agregar secuencia en el receptor de archivos.
 
--   [Adición de secuencias en el receptor de archivos de ASF](#adding-streams-in-the-asf-file-sink)
+-   [Agregar Secuencias en el receptor de archivos de ASF](#adding-streams-in-the-asf-file-sink)
 -   [Enumeración de receptores de flujo](#enumerating-stream-sinks)
 -   [Temas relacionados](#related-topics)
 
-## <a name="adding-streams-in-the-asf-file-sink"></a>Adición de secuencias en el receptor de archivos de ASF
+## <a name="adding-streams-in-the-asf-file-sink"></a>Agregar Secuencias en el receptor de archivos de ASF
 
 El receptor del archivo debe conocer los flujos de salida y sus propiedades para que pueda generar ejemplos de salida en consecuencia y agregarlos al archivo ASF de salida. Esta configuración se escribe en el objeto de encabezado asf final.
 
@@ -31,20 +31,20 @@ En el procedimiento siguiente se resumen los pasos generales para configurar la 
 
 **Para configurar la información de flujo en el receptor de archivos de ASF**
 
-1.  Cree un objeto de perfil de ASF mediante una llamada [**a MFCreateASFProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfprofile).
-2.  Para cada secuencia del archivo de salida, cree un tipo de medio para la secuencia de destino que se va a agregar en el receptor del archivo. El tipo de medio debe ser compatible con los tipos de salida admitidos por los codificadores de Windows Media.
+1.  Cree un objeto de perfil de ASF llamando [**a MFCreateASFProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfprofile).
+2.  Para cada secuencia del archivo de salida, cree un tipo de medio para la secuencia de destino que se va a agregar en el receptor del archivo. El tipo de medio debe ser compatible con los tipos de salida admitidos por Windows codificadores multimedia.
 
-    Para obtener información sobre cómo agregar secuencias de audio al perfil, vea Crear secuencias de audio para codificación ASF.
+    Para obtener información sobre cómo agregar secuencias de audio al perfil, vea Creating Audio Secuencias for ASF Encoding (Creación de secuencias de audio para codificación ASF).
 
-    Para obtener información sobre cómo agregar secuencias de vídeo al perfil, consulte Creación de secuencias de vídeo para la codificación ASF.
+    Para obtener información sobre cómo agregar secuencias de vídeo al perfil, consulte Creating Video Secuencias for ASF Encoding (Creación de secuencias de vídeo para codificación ASF).
 
 3.  Cree secuencias basadas en los tipos de medios creados en el paso 2 mediante una llamada [**a IMFASFProfile::CreateStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-createstream).
 4.  Asigne un número de secuencia para la secuencia recién creada mediante una llamada al puntero de interfaz [**IMFASFStreamConfig**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig) recibido en el paso 3.
 5.  Opcionalmente, configure la secuencia con la siguiente información:
     -   Parámetros de cubo de pérdida estableciendo los atributos: [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET1**](mf-asfstreamconfig-leakybucket1-attribute.md) o [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET2**](mf-asfstreamconfig-leakybucket2-attribute.md)
-    -   Extensión de carga, exclusión mutua mediante una llamada [**a los métodos DE TIPO IMFASFStreamConfig.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig)
-6.  Opcionalmente, establezca el tamaño del paquete de datos para el perfil estableciendo los atributos [**MF \_ ASFPROFILE \_ MINPACKETSIZE**](mf-asfprofile-minpacketsize-attribute.md) y [**MF \_ ASFPROFILE \_ MAXPACKETSIZE.**](mf-asfprofile-maxpacketsize-attribute.md) El perfil de ASF expone la interfaz [**IMFAttributes,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) a la que una aplicación puede obtener referencia mediante una llamada a **IMFASFProfile::QueryInterface**.
-7.  Establezca la información de codificación de la secuencia en el receptor del archivo. Se describe en [Establecer propiedades en el receptor de archivos](setting-properties-in-the-file-sink.md).
+    -   Extensión de carga útil, exclusión mutua mediante una llamada [**a los métodos DE TIPO IMFASFStreamConfig.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfstreamconfig)
+6.  Opcionalmente, establezca el tamaño del paquete de datos para el perfil estableciendo los atributos [**MF \_ ASFPROFILE \_ MINPACKETSIZE**](mf-asfprofile-minpacketsize-attribute.md) y [**MF \_ ASFPROFILE \_ MAXPACKETSIZE.**](mf-asfprofile-maxpacketsize-attribute.md) El perfil de ASF expone la interfaz [**DEFAttributes,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) a la que una aplicación puede obtener referencia mediante una llamada a **IMFASFProfile::QueryInterface**.
+7.  Establezca la información de codificación para la secuencia en el receptor de archivos. Se describe en [Establecer propiedades en el receptor de archivos](setting-properties-in-the-file-sink.md).
 8.  Agregue la secuencia al perfil mediante una llamada [**a IMFASFProfile::SetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-setstream).
 9.  Asocie el perfil al objeto ContentInfo llamando a [**IMFASFContentInfo::SetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile).
 
@@ -124,7 +124,7 @@ done:
 
 ## <a name="enumerating-stream-sinks"></a>Enumeración de receptores de flujo
 
-Para cada secuencia del perfil de la que el objeto ContentInfo es consciente, el receptor del archivo ASF crea y agrega un receptor de flujo que contiene todas las propiedades de la secuencia codificada. El receptor de archivos asf está diseñado para contener secuencias fijas. Esto significa que no se pueden agregar ni quitar secuencias llamando a [**IMFMediaSink::AddStreamSink**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-addstreamsink) o [**IMFMediaSink::RemoveStreamSink**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-removestreamsink). Estas llamadas en el receptor de archivos producirán un error con el código \_ de error CORREGIDO MF E \_ STREAMSINKS. \_ La adición o eliminación de secuencias en el perfil no agrega ni quita automáticamente los receptores de flujo en el receptor de archivos. Debe descartar la instancia existente del archivo y volver a crearla con nueva información de secuencia si las secuencias del perfil han cambiado.
+Para cada secuencia del perfil de la que el objeto ContentInfo es consciente, el receptor del archivo ASF crea y agrega un receptor de flujo que contiene todas las propiedades de la secuencia codificada. El receptor de archivos asf está diseñado para contener secuencias fijas. Esto significa que no se pueden agregar ni quitar secuencias llamando a [**IMFMediaSink::AddStreamSink**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-addstreamsink) o [**IMFMediaSink::RemoveStreamSink**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-removestreamsink). Estas llamadas en el receptor de archivos producirán un error con el código \_ de error CORREGIDO MF E \_ STREAMSINKS. \_ La adición o eliminación de secuencias en el perfil no agrega ni quita automáticamente los receptores de flujo en el receptor de archivos. Debe descartar la instancia existente del archivo y volver a crearla con información de secuencia nueva si las secuencias del perfil han cambiado.
 
 En el procedimiento siguiente se resumen los pasos generales para enumerar los receptores de flujo en el receptor de archivos de ASF.
 
@@ -137,7 +137,7 @@ En el procedimiento siguiente se resumen los pasos generales para enumerar los r
 
     Llame [**a IMFMediaSink::GetStreamSinkById para**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getstreamsinkbyid) obtener el receptor del flujo especificando el número de secuencia. Cada receptor de flujo se identifica con el número de secuencia que estableció al crear la secuencia en el perfil.
 
-Si va a crear una topología parcial para codificar un archivo multimedia, debe agregar el receptor de archivos a la topología como nodo de topología de salida. Puede hacerlo especificando cada receptor de flujo en el receptor de archivos o estableciendo el objeto de activación del receptor de archivos y los identificadores del receptor del flujo. Para obtener más información y ejemplo de código, vea [Crear nodos de salida.](creating-output-nodes.md)
+Si va a crear una topología parcial para codificar un archivo multimedia, debe agregar el receptor de archivos a la topología como nodo de topología de salida. Puede hacerlo especificando cada receptor de flujo en el receptor de archivos o estableciendo el objeto de activación del receptor de archivos y los identificadores de receptor del flujo. Para obtener más información y ejemplo de código, vea [Crear nodos de salida.](creating-output-nodes.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

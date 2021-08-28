@@ -36,7 +36,7 @@ Formato de caracteres que se aplica al control. Si este parámetro es cero, se e
 
 
 
-| Value                                                                                                                                                                           | Significado                                                                                                                                                                                                                                                                                                   |
+| Valor                                                                                                                                                                           | Significado                                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="SCF_ALL"></span><span id="scf_all"></span><dl> <dt>**SCF \_ ALL**</dt> </dl>                                     | Aplica el formato a todo el texto del control . No es válido con **SCF \_ SELECTION** o **SCF \_ WORD**.<br/>                                                                                                                                                                                         |
 | <span id="SCF_ASSOCIATEFONT"></span><span id="scf_associatefont"></span><dl> <dt>**SCF \_ ASSOCIATEFONT**</dt> </dl>       | **RichEdit 4.1:** Asocia una fuente a un script determinado, cambiando así la fuente predeterminada para ese script. Para especificar la fuente, use los siguientes miembros de [**CHARFORMAT2:**](/windows/desktop/api/Richedit/ns-richedit-charformat2a) **yHeight**, **bCharSet**, **bPitchAndFamily,** **szFaceName** y **lcid**.<br/>                     |
@@ -74,7 +74,7 @@ Si la operación se realiza correctamente, el valor devuelto es un valor distint
 
 Si se produce un error en la operación, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si este mensaje se envía más de una vez con los mismos parámetros, se alterna el efecto en el texto. Es decir, enviar el mensaje una vez produce el efecto, enviar el mensaje dos veces cancela el efecto, etc.
 
@@ -82,7 +82,7 @@ Si este mensaje se envía más de una vez con los mismos parámetros, se alterna
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
@@ -90,7 +90,7 @@ Si este mensaje se envía más de una vez con los mismos parámetros, se alterna
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: 'El método SetProperties establece las propiedades del ejemplo. Este método implementa el método IMediaSample2:: SetProperties.'
+description: El método SetProperties establece las propiedades del ejemplo. Este método implementa el método IMediaSample2::SetProperties.
 ms.assetid: 639aedf5-0c21-4578-b336-91859e40f3be
-title: Método CMediaSample. SetProperties (Amfilter. h)
+title: Método CMediaSample.SetProperties (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c5e6ef3c3839825586bf47259cf44783d167f503
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a4bac378d41e0a9933f0903990e6368979c669c048102665a06b2ce59e4a45c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156537"
 ---
-# <a name="cmediasamplesetproperties-method"></a>CMediaSample. SetProperties (método)
+# <a name="cmediasamplesetproperties-method"></a>Método CMediaSample.SetProperties
 
-El `SetProperties` método establece las propiedades del ejemplo. Este método implementa el método [**IMediaSample2:: SetProperties**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-setproperties) .
+El `SetProperties` método establece las propiedades del ejemplo. Este método implementa el [**método IMediaSample2::SetProperties.**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-setproperties)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ HRESULT SetProperties(
 *cbProperties* 
 </dt> <dd>
 
-Longitud de los datos de propiedad que se van a establecer, en bytes.
+Longitud de los datos de propiedad que se establecerán, en bytes.
 
 </dd> <dt>
 
@@ -59,16 +59,16 @@ Puntero a un búfer de tamaño *cbProperties*.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
+Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                   | Descripción                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Correcto<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Success<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Argumento no válido<br/>          |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>       |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | Argumento de puntero **nulo**<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | **Argumento de** puntero NULL<br/> |
 
 
 
@@ -80,8 +80,8 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Devuelve uno de los valores **HRESULT** que se muestran en la tabla siguiente.
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

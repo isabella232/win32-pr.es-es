@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9b1d16ba2a29d42614c388a6207503ad32dd5e0f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0b686a0e279a16650a976920ee812b23cfe0345409926fd6c02166cdb4572235
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120070065"
 ---
 # <a name="d3dxplanetransform-function-d3dx10mathh"></a>Función D3DXPlaneTransform (D3DX10Math.h)
 
@@ -56,7 +56,7 @@ Puntero al [**D3DXPLANE**](d3d10-d3dxplane.md) que contiene el plano transformad
 
 Tipo: **const [**D3DXPLANE**](../direct3d9/d3dxplane.md) \***
 
-Puntero a la estructura D3DXPLANE de entrada, que contiene el plano que se va a transformar. El vector (a,b,c) que describe el plano debe normalizarse antes de llamar a esta función. Vea el ejemplo.
+Puntero a la estructura D3DXPLANE de entrada, que contiene el plano que se transformará. El vector (a,b,c) que describe el plano debe normalizarse antes de llamar a esta función. Vea el ejemplo.
 
 </dd> <dt>
 
@@ -96,9 +96,9 @@ D3DXPlaneTransform(&planeNew, &plane, &matrix);
 
 
 
-Un plano se describe mediante ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
+Un plano se describe por ax + by + dw + dw = 0. El primer plano se crea con (a,b,c,d) = (0,1,1,0), que es un plano descrito por y + z = 0. Después del escalado, el nuevo plano contiene (a,b,c,d) = (0, 0,353f, 0,235f, 0), que muestra el nuevo plano descrito por 0,353y + 0,235z = 0.
 
-El parámetro pM contiene la transpuesta inversa de la matriz de transformación. Este método requiere la transpuesta inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
+El parámetro pM contiene la transpuesta inversa de la matriz de transformación. Este método requiere la transponer inversa para que el vector normal del plano transformado también se pueda transformar correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ El parámetro pM contiene la transpuesta inversa de la matriz de transformación
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

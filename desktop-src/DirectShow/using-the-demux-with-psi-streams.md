@@ -1,25 +1,25 @@
 ---
-description: Uso de Demux con secuencias de PSI
+description: Uso de Demux con psi Secuencias
 ms.assetid: 355e905e-ff21-4bde-a018-ed9631ef5ed5
-title: Uso de Demux con secuencias de PSI
+title: Uso de Demux con psi Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 659e4a12bfef25f24a5e6cac38d191f86ab80b4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3935e188b6e06d1037f08d4ca7bab98918f87d2c652b8506650a6cf3a280dc04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633145"
 ---
-# <a name="using-the-demux-with-psi-streams"></a>Uso de Demux con secuencias de PSI
+# <a name="using-the-demux-with-psi-streams"></a>Uso de Demux con psi Secuencias
 
-Para obtener información de PSI de una secuencia de transporte MPEG-2 mediante el filtro MPEG-2 Demux, cree un PIN de salida en Demux con el siguiente tipo de medio:
+Para obtener información de PSI de una secuencia de transporte MPEG-2 mediante el filtro de demux MPEG-2, cree un pin de salida en la demux con el siguiente tipo de medio:
 
--   Tipo principal: KSDATAFORMAT \_ tipo \_ MPEG2 \_ secciones
--   Subtipo: MEDIASUBTYPE \_ ninguno
--   Tipo de formato: GUID \_ null
+-   Tipo principal: KSDATAFORMAT \_ TYPE \_ MPEG2 \_ SECTIONS
+-   Subtipo: MEDIASUBTYPE \_ None
+-   Tipo de formato: GUID \_ NULL
 
-Después, llame al método [**IMPEG2PIDMap:: MapPID**](/previous-versions/windows/desktop/api/Bdaiface/nf-bdaiface-impeg2pidmap-mappid) del terminal de salida con el PID deseado y la marca media \_ MPEG2 \_ PSI.
+A continuación, llame al método [**IMPEG2PIDMap::MapPID**](/previous-versions/windows/desktop/api/Bdaiface/nf-bdaiface-impeg2pidmap-mappid) del pin de salida con el PID deseado y la marca MEDIA \_ MPEG2 \_ PSI.
 
 
 ```C++
@@ -57,13 +57,13 @@ if (SUCCEEDED(hr))
 
 
 
-Cada sección de PSI completa se entrega en un ejemplo multimedia. Para recuperar el número de PID asociado a una sección de tabla, llame a [**IMediaSample2:: GetProperties**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-getproperties) en el ejemplo multimedia. El PID se proporciona en los 13 bits inferiores de la marca **dwTypeSpecificFlags** en la estructura de **\_ \_ propiedades AM SAMPLE2** . Esto resulta útil si asigna varios PID de PSI al mismo pin de salida.
+Cada sección completa de PSI se entrega en un ejemplo multimedia. Para recuperar el número de PID asociado a una sección de tabla, llame a [**IMediaSample2::GetProperties**](/windows/desktop/api/Strmif/nf-strmif-imediasample2-getproperties) en el ejemplo multimedia. El PID se proporciona en los 13 bits inferiores de la **marca dwTypeSpecificFlags** en la **estructura PROPERTIES DE AM \_ SAMPLE2. \_** Esto resulta útil si asigna varios PIN de PSI al mismo pin de salida.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar el demultiplexador MPEG-2](using-the-mpeg-2-demultiplexer.md)
+[Uso del demultiplexor MPEG-2](using-the-mpeg-2-demultiplexer.md)
 </dt> </dl>
 
  

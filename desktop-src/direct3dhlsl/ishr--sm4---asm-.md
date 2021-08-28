@@ -1,23 +1,23 @@
 ---
-title: ISHR (SM4-ASM)
-description: Desplazamiento aritmético a la derecha (signo de extensión). | ISHR (SM4-ASM)
+title: ishr (sm4 - asm)
+description: Desplazamiento aritmético a la derecha (extensión de signo). | ishr (sm4 - asm)
 ms.assetid: AFE46BBA-A6B2-4691-A3F4-A4141F1578DB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7516543c5501ed886c5c1fa98d093062e3099a0f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2d2ec191320561b05ba736b7da5630fb50a610e739d0e74f9def3eaa10bb4e17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511140"
 ---
-# <a name="ishr-sm4---asm"></a>ISHR (SM4-ASM)
+# <a name="ishr-sm4---asm"></a>ishr (sm4 - asm)
 
-Desplazamiento aritmético a la derecha (signo de extensión).
+Desplazamiento aritmético a la derecha (extensión de signo).
 
 
 
-| ISHR dest \[ . Mask \] , src0 \[ . swizzle \] , SRC1. Select ( \_ componente) |
+| ishr dest \[ .mask \] , src0 \[ .swzzle \] , src1.select \_ component |
 |--------------------------------------------------------------|
 
 
@@ -28,17 +28,17 @@ Desplazamiento aritmético a la derecha (signo de extensión).
 
 | Elemento                                                            | Descripción                                             |
 |-----------------------------------------------------------------|---------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] contiene el resultado de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] contiene el valor que se va a desplazar.<br/>     |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] contiene la cantidad de desplazamiento.<br/>            |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] Contiene el resultado de la operación.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Contiene el valor que se va a desplazar.<br/>     |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] Contiene la cantidad de desplazamiento.<br/>            |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza un cambio aritmético en forma de componente de cada valor de 32 bits de *src0* a la derecha por un recuento de bits sin signo proporcionado por el LSB 5 bits (intervalo 0-31) del *\_ componente SRC1. Select*, replicando el valor de bit 31. El resultado de 32 bits por componente se coloca en el *destino*. El recuento es un valor escalar que se aplica a todos los componentes.
+Esta instrucción realiza un desplazamiento aritmético por componente de cada valor de 32 bits en *src0* a la derecha mediante un recuento de bits enteros sin signo proporcionado por el LSB de 5 bits (intervalo 0-31) en el componente *\_ src1.select,* replicando el valor del bit 31. El resultado de 32 bits por componente se coloca en *dest*. El recuento es un valor escalar aplicado a todos los componentes.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -52,7 +52,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -60,12 +60,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -75,7 +75,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

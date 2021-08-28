@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Security-Group-de clases adicionales
-description: Los nombres comunes de las clases no estándar que se pueden agregar a un grupo de seguridad a través del complemento usuarios y equipos de Active Directory.
+title: Atributo ms-DS-Security-Group-Extra-Classes
+description: Nombres comunes de las clases no estándar que se pueden agregar a un grupo de seguridad a través del Usuarios y equipos de Active Directory complemento.
 ms.assetid: 3808cb03-3d54-46ca-bad8-23120ed2ca07
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de clases de MS-DS-Security-Group-extra
-- msDS-Security-Group-clases esquema de AD de atributo
+- Esquema de AD del atributo ms-DS-Security-Group-Extra-Classes
+- Esquema de AD del atributo msDS-Security-Group-Extra-Classes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3860cc80c669eaad30262cce63aff6dca3a2a8f3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 15c64746abd1114ebb3e4a97cf912a35ac730d6062721e8a11d67103d1fe82b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544735"
 ---
-# <a name="ms-ds-security-group-extra-classes-attribute"></a>atributo MS-DS-Security-Group-de clases adicionales
+# <a name="ms-ds-security-group-extra-classes-attribute"></a>Atributo ms-DS-Security-Group-Extra-Classes
 
-Los nombres comunes de las clases no estándar que se pueden agregar a un grupo de seguridad a través del complemento usuarios y equipos de Active Directory.
+Nombres comunes de las clases no estándar que se pueden agregar a un grupo de seguridad a través del Usuarios y equipos de Active Directory complemento.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-Security-Group-clases adicionales          |
-| Nombre para mostrar de LDAP | msDS-Security-Group-extra-classes           |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| CN                | ms-DS-Security-Group-Extra-Classes          |
+| Ldap-Display-Name | msDS-Security-Group-Extra-Classes           |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1688                     |
-| System-ID-GUID    | 4f146ae8-a4fe-4801-a731-f51848a4f4e4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 4f146ae8-a4fe-4801-a731-f51848a4f4e4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,18 +54,18 @@ Los nombres comunes de las clases no estándar que se pueden agregar a un grupo 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Los nombres comunes de las clases no estándar que se pueden agregar a un grupo 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Los nombres comunes de las clases no estándar que se pueden agregar a un grupo 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Los nombres comunes de las clases no estándar que se pueden agregar a un grupo 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -138,27 +138,27 @@ Los nombres comunes de las clases no estándar que se pueden agregar a un grupo 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Falso                                               |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la lista siguiente se identifican las clases estándar que se pueden agregar a un grupo a través del complemento usuarios y equipos de Active Directory.
+En la lista siguiente se identifican las clases estándar que se pueden agregar a un grupo a través del Usuarios y equipos de Active Directory complemento.
 
 -   [**Group (Grupo)**](c-group.md)
--   [**User**](c-user.md)
+-   [**Usuario**](c-user.md)
 -   [**inetOrgPerson**](c-inetorgperson.md)
 -   [**Contacto**](c-contact.md)
 -   [**Computer**](c-computer.md)
@@ -167,7 +167,7 @@ En la lista siguiente se identifican las clases estándar que se pueden agregar 
 
 <dl> <dt>
 
-[**MS-DS-non-Security-Group-extra-classes**](a-msds-non-security-group-extra-classes.md)
+[**ms-DS-non-Security-Group-Extra-Classes**](a-msds-non-security-group-extra-classes.md)
 </dt> </dl>
 
  

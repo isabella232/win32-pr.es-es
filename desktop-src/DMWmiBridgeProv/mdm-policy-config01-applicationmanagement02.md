@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_Config01_ApplicationManagement02 (clase)
-description: La \_ clase Config01 de ApplicationManagement02 de directivas MDM \_ \_ representa las directivas de administración de aplicaciones disponibles.
+title: MDM_Policy_Config01_ApplicationManagement02 clase
+description: La clase \_ \_ ApplicationManagement02 de la directiva MDM \_ Config01 representa las directivas de administración de aplicaciones disponibles.
 ms.assetid: f05c4852-e694-4e0d-94e1-07531c879613
 keywords:
-- MDM_Policy_Config01_ApplicationManagement02 (clase)
+- MDM_Policy_Config01_ApplicationManagement02 clase
 - MDM_Policy_Config01_ApplicationManagement02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3588405fa60aeccb74ad4ca11eeb9cb658469d40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1ecff562e5e51c2e998c1708afbd2a3460b77e5315050475327d8165540f953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165737"
 ---
-# <a name="mdm_policy_config01_applicationmanagement02-class"></a>\_ \_ Clase ApplicationManagement02 de Config01 de directivas MDM \_
+# <a name="mdm_policy_config01_applicationmanagement02-class"></a>Directiva MDM \_ \_ Config01 \_ ApplicationManagement02 (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Config01 de \_ ApplicationManagement02 de directivas MDM** representa las directivas de administración de aplicaciones disponibles.
+La **clase \_ \_ \_ ApplicationManagement02 de la directiva MDM Config01** representa las directivas de administración de aplicaciones disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -53,13 +53,13 @@ class MDM_Policy_Config01_ApplicationManagement02
 
 ## <a name="members"></a>Miembros
 
-La clase Config01 de la **\_ Directiva MDM \_ \_ ApplicationManagement02** tiene estos tipos de miembros:
+La **clase \_ \_ \_ ApplicationManagement02 de La directiva de MDM Config01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Config01 de \_ ApplicationManagement02 de directivas MDM** tiene estas propiedades.
+La **clase \_ \_ \_ ApplicationManagement02 de la directiva MDM Config01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ La **clase \_ \_ Config01 de \_ ApplicationManagement02 de directivas MDM** tien
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -80,7 +80,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -91,7 +91,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -102,7 +102,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -113,7 +113,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -124,7 +124,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -157,7 +157,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Config".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Config"
 
 </dd> <dt>
 
@@ -167,7 +167,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -178,7 +178,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -187,12 +187,12 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | DMMap de MDM raíz de \\ CIMv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | DMMap \\ \\ de MDM de CIMv2 \\ raíz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -201,7 +201,7 @@ Tipo de acceso: lectura/escritura
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Indica el principio de cada unidad de objeto de vídeo (VOBU), un segmento de vídeo de 0,4 a 1,0 segundos de longitud.
+description: Señala el principio de cada unidad de objeto de vídeo (VOBU), un segmento de vídeo de entre 0,4 y 1,0 segundos de longitud.
 ms.assetid: 1f2def2f-3a6b-458b-b564-09b6cf74543c
-title: EC_DVD_CURRENT_TIME (Dvdevcode. h)
+title: EC_DVD_CURRENT_TIME (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 0f1bb2f5f31efa881917ac71ea381cc0a82e8744
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f72f49fde761418417b198787ef1b67d654f114f57fcd29bd7aa7edfae4b1e00
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998005"
 ---
-# <a name="ec_dvd_current_time"></a>\_ \_ hora actual del DVD de EC \_
+# <a name="ec_dvd_current_time"></a>HORA \_ ACTUAL DEL DVD DE \_ \_ EC
 
-Indica el principio de cada unidad de objeto de vídeo (VOBU), un segmento de vídeo de 0,4 a 1,0 segundos de longitud.
+Señala el principio de cada unidad de objeto de vídeo (VOBU), un segmento de vídeo de entre 0,4 y 1,0 segundos de longitud.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,22 +31,22 @@ Indica el principio de cada unidad de objeto de vídeo (VOBU), un segmento de v�
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor **DWORD** que indica el código de tiempo de reproducción actual en un formato de horas, minutos, segundos y fotogramas (HH: mm: SS: FF) con código binario. Miembro de la estructura de [**\_ código de tiempo de DVD**](/windows/win32/api/strmif/ns-strmif-dvd_timecode) .
+**Valor DWORD** que indica el código de tiempo de reproducción actual en un formato binario codificado decimal (BCD) horas, minutos, segundos, fotogramas (HH:MM:SS:FF). Miembro de la [**estructura \_ TIMECODE de DVD.**](/windows/win32/api/strmif/ns-strmif-dvd_timecode)
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Valor booleano (**bool**) que indica el código de tiempo. Cero (0) indica 25 fotogramas por segundo, mientras que 1 indica 30 fotogramas por segundo (no quitado). Un valor de 2 indica que no se puede determinar la hora de reproducción.
+Valor **booleano (BOOL)** que indica el código de tiempo. Cero (0) indica 25 fotogramas por segundo, mientras que 1 indica 30 fotogramas por segundo (sin límite). Un valor de 2 indica que no se puede determinar el tiempo de reproducción.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo las películas lineales simples señalan este evento.
 
-Este evento se desencadena en el dominio de título.
+Este evento se genera en el dominio de título.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento se desencadena en el dominio de título.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Solicita que el estado del trabajo de migración se cambie al estado especificado.
+description: Solicita que el estado del trabajo de migración cambie al estado especificado.
 ms.assetid: f0be5ea8-7e21-407e-b84d-8bd4ca5a6a2c
-title: Método RequestStateChange de la clase Msvm_MigrationJob
+title: Método RequestStateChange de la Msvm_MigrationJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 31011de619780ae36f390ee87038300a3b42fef2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7a5934049860e92aa9986a301fe3d75bed8022bda064653ee9e405ad16f6619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014323"
 ---
-# <a name="requeststatechange-method-of-the-msvm_migrationjob-class"></a>Método RequestStateChange de la \_ clase MigrationJob de MSVM
+# <a name="requeststatechange-method-of-the-msvm_migrationjob-class"></a>Método RequestStateChange de la clase \_ MigrationJob de Msvm
 
-Solicita que el estado del trabajo de migración se cambie al estado especificado. Al invocar el método **RequestStateChange** varias veces, se puede provocar que se sobrescriban o se pierdan solicitudes anteriores. Si se devuelve 0, la tarea se completó correctamente. Cualquier otro código de retorno indica una condición de error.
+Solicita que el estado del trabajo de migración cambie al estado especificado. Invocar el método **RequestStateChange** varias veces puede dar lugar a que las solicitudes anteriores se sobrescriban o se pierdan. Si se devuelve 0, la tarea se completó correctamente. Cualquier otro código de retorno indica una condición de error.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ de\]
+*RequestedState* \[ En\]
 </dt> <dd>
 
 Nuevo estado de un trabajo.
@@ -54,7 +54,7 @@ Nuevo estado de un trabajo.
 
 </dt> <dd>
 
-Cambia el estado a "en ejecución".
+Cambia el estado a "En ejecución".
 
 </dd> <dt>
 
@@ -65,18 +65,18 @@ Cambia el estado a "en ejecución".
 
 </dt> <dd>
 
-Detiene el trabajo temporalmente. La intención es reiniciar posteriormente el trabajo con "Start". Es posible que se pueda entrar en el estado "servicio" mientras se suspende. (Esto es específico del trabajo).
+Detiene temporalmente el trabajo. La intención es reiniciar posteriormente el trabajo con "Start". Es posible especificar el estado "Servicio" mientras se suspende. (Esto es específico del trabajo).
 
 </dd> <dt>
 
 <span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>
 
-<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Finalizar** (4)
+<span id="Terminate"></span><span id="terminate"></span><span id="TERMINATE"></span>**Terminate** (4)
 
 
 </dt> <dd>
 
-Detiene el trabajo limpiamente, guarda los datos, conserva el estado y cerrando todos los procesos subyacentes de forma ordenada.
+Detiene el trabajo de forma limpia, guardando datos, conservando el estado y cerrando todos los procesos subyacentes de forma ordenada.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Detiene el trabajo limpiamente, guarda los datos, conserva el estado y cerrando 
 
 </dt> <dd>
 
-Finaliza el trabajo inmediatamente sin necesidad de guardar los datos ni de conservar el estado.
+Finaliza el trabajo inmediatamente sin necesidad de guardar datos o conservar el estado.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Finaliza el trabajo inmediatamente sin necesidad de guardar los datos ni de cons
 
 </dt> <dd>
 
-Coloca el trabajo en un estado de servicio específico del proveedor. Es posible que se pueda reiniciar el trabajo.
+Coloca el trabajo en un estado de servicio específico del proveedor. Es posible reiniciar el trabajo.
 
 </dd> <dt>
 
@@ -124,10 +124,10 @@ Reservado.
 
 </dd> </dl> </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Un período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se realice la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **null** y la implementación no admite este parámetro, se debe devolver un código de retorno de 4098 (no se admite el uso del parámetro timeout).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (No se admite el uso del parámetro de tiempo de espera).
 
 </dd> </dl>
 
@@ -177,10 +177,10 @@ Un período de tiempo de espera que especifica la cantidad máxima de tiempo que
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -189,7 +189,7 @@ Un período de tiempo de espera que especifica la cantidad máxima de tiempo que
 
 <dl> <dt>
 
-[**MSVM \_ MigrationJob**](msvm-migrationjob.md)
+[**Msvm \_ MigrationJob**](msvm-migrationjob.md)
 </dt> </dl>
 
  

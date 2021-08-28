@@ -1,7 +1,7 @@
 ---
-description: Guardar una textura en un archivo.
+description: Guarde una textura en un archivo.
 ms.assetid: c1718903-039a-4132-b128-82e03078ef62
-title: Función D3DX10SaveTextureToFile (D3DX10Tex. h)
+title: Función D3DX10SaveTextureToFile (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: c760876160d8ce1cbc0423639a59218c79716481
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4d1adb4a490b047329277c4092a68563ffc4bf5d4bb1dbfd866bb849d9f561a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634565"
 ---
-# <a name="d3dx10savetexturetofile-function"></a>D3DX10SaveTextureToFile función)
+# <a name="d3dx10savetexturetofile-function"></a>Función D3DX10SaveTextureToFile
 
-Guardar una textura en un archivo.
+Guarde una textura en un archivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT D3DX10SaveTextureToFile(
 
 <dl> <dt>
 
-*pSrcTexture* \[ de\]
+*pSrcTexture* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)\***
 
-Puntero a la textura que se va a guardar. Consulte la [**interfaz ID3D10Resource**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource).
+Puntero a la textura que se va a guardar. Vea [**ID3D10Resource (Interfaz).**](/windows/desktop/api/D3D10/nn-d3d10-id3d10resource)
 
 </dd> <dt>
 
-*DestFormat* \[ de\]
+*DestFormat* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **\_ formato de \_ archivo \_ de imagen D3DX10**](d3dx10-image-file-format.md)**
+Tipo: FORMATO DE ARCHIVO DE **[ **\_ IMAGEN \_ \_ D3DX10**](d3dx10-image-file-format.md)**
 
-El formato con el que se guardará la textura (consulte [**\_ formato de \_ archivo \_ de imagen D3DX10**](d3dx10-image-file-format.md)). D3DX10 \_ IFF \_ es el formato preferido, ya que es la única opción que admite todos los formatos en [**el \_ formato de DXGI**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format).
+El formato de la textura se guardará como (vea [**D3DX10 \_ IMAGE \_ FILE \_ FORMAT**](d3dx10-image-file-format.md)). D3DX10 IFF DDS es el formato preferido, ya que es la única opción que admite todos los formatos \_ \_ en [**DXGI \_ FORMAT**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 </dd> <dt>
 
-*pDestFile* \[ de\]
+*pDestFile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Nombre del archivo de salida de destino en el que se guardará la textura. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
+Nombre del archivo de salida de destino donde se guardará la textura. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Nombre del archivo de salida de destino en el que se guardará la textura. Si la
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md). Use el valor devuelto para ver si se admite *DestFormat* .
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10](d3d10-graphics-reference-returnvalues.md); use el valor devuelto para ver si se *admite DestFormat.*
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**D3DX10SaveTextureToFile** escribe la estructura del [**encabezado DDS adicional \_ \_ DXT10**](../direct3ddds/dds-header-dxt10.md) para la textura de entrada solo si es necesario (por ejemplo, porque la textura de entrada está en formato RGB estándar (sRGB)). Si **D3DX10SaveTextureToFile** escribe la estructura **del \_ encabezado \_ DDS DXT10** , establece el miembro **DwFourCC** de la estructura [**de \_ PIXELFORMAT de DDS**](../direct3ddds/dds-pixelformat.md) para la textura en **contenido DX10** para indicar el prescense del **encabezado \_ DDS \_ DXT10** encabezado extendido.
+**D3DX10SaveTextureToFile** escribe la estructura [**\_ \_ DDS HEADER DXT10**](../direct3ddds/dds-header-dxt10.md) adicional para la textura de entrada solo si es necesario (por ejemplo, porque la textura de entrada está en formato RGB estándar (sRGB). Si **D3DX10SaveTextureToFile** escribe la estructura **\_ \_ DXT10 de DDS HEADER,** establece el miembro **dwFourCC** de la estructura [**\_ PIXELFORMAT de DDS**](../direct3ddds/dds-pixelformat.md) para la textura en **DX10** para indicar la prescense del encabezado extendido **DDS \_ HEADER \_ DXT10.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 
@@ -97,7 +97,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [Funciones de textura en D3DX 10](d3d10-graphics-reference-d3dx10-functions-texturing.md)
 </dt> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

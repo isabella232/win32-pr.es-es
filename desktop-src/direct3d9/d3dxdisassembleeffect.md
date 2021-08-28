@@ -1,7 +1,7 @@
 ---
-description: Desensamblar un efecto.
+description: Desensambla un efecto.
 ms.assetid: d95d6e97-2e79-4cd2-965e-483aa1a1ddbc
-title: Función D3DXDisassembleEffect (D3DX9Effect. h)
+title: Función D3DXDisassembleEffect (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 945c30319d16264a2b7489d1dc0849a4678cbede
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e4fa48418513cd9f4f70bc8356965a45499d1c6d822eaa1c1952d25ebe4b1ac2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119225"
 ---
-# <a name="d3dxdisassembleeffect-function"></a>D3DXDisassembleEffect función)
+# <a name="d3dxdisassembleeffect-function"></a>Función D3DXDisassembleEffect
 
-Desensamblar un efecto.
+Desensambla un efecto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT D3DXDisassembleEffect(
 
 <dl> <dt>
 
-*pEffect* \[ de\]
+*pEffect* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECT**](id3dxeffect.md)**
 
-Puntero a una interfaz [**ID3DXEffect**](id3dxeffect.md) que contiene el efecto.
+Puntero a una [**interfaz ID3DXEffect**](id3dxeffect.md) que contiene el efecto.
 
 </dd> <dt>
 
-*EnableColorCode* \[ de\]
+*EnableColorCode* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 Habilite la codificación de colores para facilitar la lectura del desensamblado.
 
 </dd> <dt>
 
-*ppDisassembly* \[ enuncia\]
+*ppDisassembly* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Devuelve un búfer que contiene el sombreador desensamblado. Vea [**ID3DXBuffer**](id3dxbuffer.md).
+Devuelve un búfer que contiene el sombreador desensamblado. Vea [**ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Devuelve un búfer que contiene el sombreador desensamblado. Vea [**ID3DXBuffer*
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

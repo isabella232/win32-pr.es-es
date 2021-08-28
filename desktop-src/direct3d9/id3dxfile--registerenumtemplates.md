@@ -1,7 +1,7 @@
 ---
 description: Registra plantillas personalizadas, dado un objeto de enumeración ID3DXFileEnumObject.
 ms.assetid: 1b0c71db-639b-4836-8a65-7d0a2ed3ba4f
-title: 'ID3DXFile:: RegisterEnumTemplates (método) (D3DX9Xof. h)'
+title: Método ID3DXFile::RegisterEnumTemplates (D3DX9Xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 89a8b136bdc0e202fc87ba8fd4d7f013203814eb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a7c63ed8c4a2c3a65a80ba18f1b0455111917e99dce2982eb7be1d85314b6541
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630075"
 ---
-# <a name="id3dxfileregisterenumtemplates-method"></a>ID3DXFile:: RegisterEnumTemplates (método)
+# <a name="id3dxfileregisterenumtemplates-method"></a>Método ID3DXFile::RegisterEnumTemplates
 
-Registra plantillas personalizadas, dado un objeto de enumeración [**ID3DXFileEnumObject**](id3dxfileenumobject.md) .
+Registra plantillas personalizadas, dado un [**objeto de enumeración ID3DXFileEnumObject.**](id3dxfileenumobject.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT RegisterEnumTemplates(
 
 <dl> <dt>
 
-*pEnum* \[ de\]
+*pEnum* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DXFileEnumObject**](id3dxfileenumobject.md)\***
 
-Puntero a un objeto de enumeración [**ID3DXFileEnumObject**](id3dxfileenumobject.md) que contiene plantillas.
+Puntero a un [**objeto de enumeración ID3DXFileEnumObject**](id3dxfileenumobject.md) que contiene plantillas.
 
 </dd> </dl>
 
@@ -53,15 +53,15 @@ Puntero a un objeto de enumeración [**ID3DXFileEnumObject**](id3dxfileenumobjec
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK .
 
-Si se produce un error en el método, se devolverá el valor siguiente: D3DXFERR \_ BADVALUE.
+Si se produce un error en el método, se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se llama a este método, copia las plantillas almacenadas con ID3DXFileEnumObject, que representan el archivo, en el almacén de plantillas local del objeto [**ID3DXFile**](id3dxfile.md) .
+Cuando se llama a este método, copia las plantillas almacenadas con id3DXFileEnumObject, que representa el archivo, en el almacén de plantillas local del [**objeto ID3DXFile.**](id3dxfile.md)
 
-Si no está disponible un puntero [**ID3DXFileEnumObject**](id3dxfileenumobject.md) , llame al método [**RegisterTemplates**](id3dxfile--registertemplates.md) en su lugar.
+Si un [**puntero ID3DXFileEnumObject**](id3dxfileenumobject.md) no está disponible, llame al [**método RegisterTemplates**](id3dxfile--registertemplates.md) en su lugar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,8 +69,8 @@ Si no está disponible un puntero [**ID3DXFileEnumObject**](id3dxfileenumobject.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 
