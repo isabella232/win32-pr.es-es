@@ -1,28 +1,28 @@
 ---
-title: Conversión de espacio de colores
-description: Conversión de espacio de colores
+title: Conversión de espacio de color
+description: Conversión de espacio de color
 ms.assetid: f5f1ec99-b3b9-4420-bf64-3872d9bbe650
 keywords:
-- SDK de Windows Media Format, conversión de espacio de colores
-- Advanced Systems Format (ASF), conversión de espacio de colores
-- ASF (formato de sistemas avanzados), conversión de espacio de colores
-- conversión de espacio de colores
+- Windows SDK de formato multimedia, conversión de espacio de color
+- Formato de sistemas avanzados (ASF), conversión de espacio de color
+- ASF (formato de sistemas avanzados), conversión de espacio de color
+- conversión de espacio de color
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cbc284995cbc72aee148e12977dad9f4476b29c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 23b596b7ae8ed32e64cc3ebe8a23f1bc52dafb5304308104aba083675afe6370
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447945"
 ---
-# <a name="color-space-conversion"></a>Conversión de espacio de colores
+# <a name="color-space-conversion"></a>Conversión de espacio de color
 
-A menudo hay una diferencia entre la profundidad de color del formato de vídeo comprimido en el perfil y el formato de entrada. Cuando esto sucede, el vídeo de origen se debe convertir para ajustarse al espacio de colores del destino. El escritor controla este proceso y se comunica con un convertidor de espacio de colores interno.
+A menudo hay una diferencia entre la profundidad de color del formato de vídeo comprimido en el perfil y el formato de entrada. Cuando esto sucede, el vídeo de origen se debe convertir para ajustarse al espacio de color del destino. El escritor controla este proceso, comunicándose con un convertidor de espacio de color interno.
 
-El lector también se comunica con el convertidor de espacio de colores para reconciliar las diferencias entre el formato comprimido y el formato de salida.
+El lector también se comunica con el convertidor de espacio de color para conciliar cualquier diferencia entre el formato comprimido y el formato de salida.
 
-Como con todas las transformaciones realizadas en los datos, la conversión entre profundidades de color puede reducir la calidad del resultado. Cuando sea posible, debe usar los formatos de entrada y salida con la misma profundidad de color que el formato comprimido.
+Al igual que con todas las transformaciones realizadas en los datos, la conversión entre profundidades de color puede reducir la calidad de la salida. Cuando sea posible, debe usar formatos de entrada y salida con la misma profundidad de color que el formato comprimido.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -37,9 +37,9 @@ Como con todas las transformaciones realizadas en los datos, la conversión entr
 [**Trabajar con salidas**](working-with-outputs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

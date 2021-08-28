@@ -1,10 +1,10 @@
 ---
 title: Interfaz IDRMStatusCallback
-description: La interfaz IDRMStatusCallback proporciona un método para recibir el estado de llamadas DRM asincrónicas.
+description: La interfaz IDRMStatusCallback proporciona un método para recibir el estado en llamadas DRM asincrónicas.
 ms.assetid: d036e259-2451-4020-9516-9631f0ff4095
 keywords:
-- Interfaz IDRMStatusCallback formato de Windows Media
-- Interfaz IDRMStatusCallback formato de Windows Media, descrito
+- Formato multimedia de windows de la interfaz IDRMStatusCallback
+- Interfaz IDRMStatusCallback windows Media Format , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,26 +14,26 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 415d04e3934d39ad43787596f4dab16970241b0a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bda2e2de173198ca9ac81f0b5d8b49d1159ae0e2aa4e75139a91f49646513c1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105704961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702859"
 ---
 # <a name="idrmstatuscallback-interface"></a>Interfaz IDRMStatusCallback
 
-La interfaz **IDRMStatusCallback** proporciona un método para recibir el estado de llamadas DRM asincrónicas.
+La **interfaz IDRMStatusCallback proporciona** un método para recibir el estado en llamadas DRM asincrónicas.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IDRMStatusCallback** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IDRMStatusCallback** también tiene estos tipos de miembros:
+La **interfaz IDRMStatusCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDRMStatusCallback** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IDRMStatusCallback** tiene estos métodos.
+La **interfaz IDRMStatusCallback** tiene estos métodos.
 
 
 
@@ -45,7 +45,7 @@ La interfaz **IDRMStatusCallback** tiene estos métodos.
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

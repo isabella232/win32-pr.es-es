@@ -1,7 +1,7 @@
 ---
-description: 'Muestra el cuadro de diálogo Buscar: todos los archivos. Esto es lo mismo que hacer clic en el menú Inicio y seleccionar Buscar.'
+description: 'Muestra el cuadro de diálogo Buscar: Todos los archivos . Esto es lo mismo que hacer clic en menú Inicio y, a continuación, seleccionar Buscar.'
 ms.assetid: 6F588D5E-5B6E-4000-BAD5-B557FB975FCA
-title: Método IShellDispatch. FindFiles (Shldisp. h)
+title: Método IShellDispatch.FindFiles (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9a9ea407d0ceccfe7706ed481aa80bcda9405ec4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6cc390ea0ff4ba328bd0061ed03d973bff9e32054713a793ebe29ef9be2650ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942385"
 ---
-# <a name="ishelldispatchfindfiles-method"></a>IShellDispatch. FindFiles, método
+# <a name="ishelldispatchfindfiles-method"></a>Método IShellDispatch.FindFiles
 
-Muestra el cuadro de diálogo **Buscar: todos los archivos** . Esto es lo mismo que hacer clic en el menú **Inicio** y seleccionar **Buscar**.
+Muestra el **cuadro de diálogo Buscar: Todos los** archivos . Esto es lo mismo que hacer clic en el **menú** Inicio y, a continuación, seleccionar **Buscar.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,15 +55,15 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él a través del método [**Shell. FindFiles**](shell-findfiles.md) .
+Este método se implementa y se accede a través del [**método Shell.FindFiles.**](shell-findfiles.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **FindFiles** en JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso **de FindFiles** en JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,11 +119,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

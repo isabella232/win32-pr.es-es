@@ -1,7 +1,7 @@
 ---
-description: Lo usa una interfaz ID3DX10ThreadPump para cargar datos de un disco.
+description: Usado por una interfaz ID3DX10ThreadPump para cargar datos desde un disco.
 ms.assetid: e2d38ff0-9593-4da4-b179-11938d1e48d6
-title: 'ID3DX10DataLoader:: Load (método) (D3DX10. h)'
+title: Método ID3DX10DataLoader::Load (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 3bdd7fdfb8a8469018564bb9bd094cd61d1af554
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d8ce8290db81d22b9fc14e16ad2b213c25f7de323984faf39fc58d337a691889
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990455"
 ---
-# <a name="id3dx10dataloaderload-method"></a>ID3DX10DataLoader:: Load (método)
+# <a name="id3dx10dataloaderload-method"></a>Método ID3DX10DataLoader::Load
 
-Lo usa una [**interfaz ID3DX10ThreadPump**](id3dx10threadpump.md) para cargar datos de un disco.
+Usado por una [**interfaz ID3DX10ThreadPump**](id3dx10threadpump.md) para cargar datos desde un disco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 [ID3DX10DataLoader](id3dx10dataloader.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

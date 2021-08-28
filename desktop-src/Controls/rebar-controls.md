@@ -1,49 +1,49 @@
 ---
-title: Acerca de los controles rebar
-description: Un control rebar actúa como contenedor de las ventanas secundarias.
+title: Acerca de los controles Rebar
+description: Un control Rebar actúa como contenedor para ventanas secundarias.
 ms.assetid: vs|controls|~\controls\rebar\rebar.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56bc68629db7387f4ba408a769f7d87a64256000
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 55d34f76ca745f0807b849bd7c42c81944f11e4429fe2dc9670fa318cbd575ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434834"
 ---
-# <a name="about-rebar-controls"></a>Acerca de los controles rebar
+# <a name="about-rebar-controls"></a>Acerca de los controles Rebar
 
-Un *control rebar* actúa como contenedor de las ventanas secundarias. Puede contener una o más *bandas*, y cada banda puede tener cualquier combinación de una barra de agarre, un mapa de bits, una etiqueta de texto y una ventana secundaria. Una aplicación asigna una ventana secundaria (normalmente otro control) a una banda de control rebar. A medida que cambia dinámicamente la posición de una banda de control rebar, el control rebar administra el tamaño y la posición de la ventana secundaria asignada a esa banda. Además, una aplicación puede especificar un mapa de bits de fondo para una banda, y el control rebar mostrará la ventana secundaria de la banda sobre el mapa de bits.
+Un *control Rebar* actúa como contenedor para ventanas secundarias. Puede contener una o varias bandas y cada banda puede tener cualquier combinación de una barra de control, un mapa de bits, una etiqueta de texto y una ventana secundaria. Una aplicación asigna una ventana secundaria (normalmente otro control) a una banda de control rebar. A medida que cambia de posición dinámicamente una banda de control de rebar, el control rebar administra el tamaño y la posición de la ventana secundaria asignada a esa banda. Además, una aplicación puede especificar un mapa de bits de fondo para una banda y el control rebar mostrará la ventana secundaria de la banda sobre el mapa de bits.
 
-En la captura de pantalla siguiente se muestra un control rebar que tiene dos bandas. Una contiene una barra de herramientas y la otra contiene un ComboBox. Ambas bandas tienen un agarrador que permite que se muevan y cambien de tamaño.
+En la siguiente captura de pantalla se muestra un control rebar que tiene dos bandas. Una contiene una barra de herramientas y la otra contiene un cuadro combinado. Ambas bandas tienen un controlador que permite moverlas y cambiar su tamaño.
 
 ![captura de pantalla del cuadro de diálogo que muestra un control rebar con una banda que contiene una barra de herramientas y una banda que contiene un cuadro combinado](images/rb-rebar.png)
 
 > [!Note]  
-> El control rebar se implementa en la versión 4,70 y versiones posteriores de Comctl32.dll.
+> El control rebar se implementa en la versión 4.70 y posteriores de Comctl32.dll.
 
- 
+ 
 
-## <a name="rebar-bands-and-child-windows"></a>Bandas rebar y ventanas secundarias
+## <a name="rebar-bands-and-child-windows"></a>Barras de rebar y grupos Windows
 
-Una aplicación define los rasgos de una banda rebar mediante los mensajes [**RB \_ INSERTBAND**](rb-insertband.md) y [**RB \_ SETBANDINFO**](rb-setbandinfo.md) . Estos mensajes aceptan la dirección de una estructura [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) como el parámetro *lParam* . Los miembros de la estructura **REBARBANDINFO** definen los rasgos de una banda determinada. Para establecer los rasgos de una banda, establezca el miembro **cbsize** para indicar el tamaño de la estructura, en bytes. A continuación, establezca el miembro **fMask** para indicar qué miembros de estructura está rellenando la aplicación.
+Una aplicación define los rasgos de una banda de rebar mediante los mensajes [**\_ INSERTBAND**](rb-insertband.md) y [**RB \_ SETBANDINFO**](rb-setbandinfo.md) de RB. Estos mensajes aceptan la dirección de una [**estructura REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) como *parámetro lParam.* Los **miembros de la estructura REBARBANDINFO** definen los rasgos de una banda determinada. Para establecer los rasgos de una banda, establezca el **miembro cbsize** para indicar el tamaño de la estructura, en bytes. A continuación, **establezca el miembro fMask** para indicar qué miembros de estructura está rellenando la aplicación.
 
-Para asignar una ventana secundaria a una banda, incluya la \_ marca secundaria RBBIM en el miembro **fMask** de la estructura [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) y, a continuación, establezca el miembro **hwndChild** en el identificador de la ventana secundaria. Las aplicaciones pueden establecer el ancho y el alto mínimos permitidos de una ventana secundaria en los miembros **cxMinChild** y **cyMinChild** .
+Para asignar una ventana secundaria a una banda, incluya la marca CHILD de RBBIM en el miembro fMask de la estructura \_ [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) y, a continuación, establezca el **miembro hwndChild** en el identificador de la ventana secundaria.  Las aplicaciones pueden establecer el ancho y alto mínimos permitidos de una ventana secundaria en los **miembros cxMinChild** **y cyMinChild.**
 
-Cuando se destruye un control rebar, destruye todas las ventanas secundarias asignadas a las bandas que contiene. Para evitar que el control destruya las ventanas secundarias asignadas a sus bandas, elimine las bandas mediante el envío del mensaje de [**\_ DELETEBAND de RB**](rb-deleteband.md) y, a continuación, [**use el mensaje de este \_**](rb-setparent.md) elemento para restablecer el elemento primario a otra ventana antes de destruir el control rebar.
+Cuando se destruye un control rebar, destruye las ventanas secundarias asignadas a las bandas dentro de él. Para evitar que el control destruya ventanas secundarias asignadas a sus bandas, quite las bandas mediante el envío del mensaje [**\_ DELETEBAND**](rb-deleteband.md) de RB y, a continuación, use el mensaje [**\_ SETPARENT**](rb-setparent.md) de RB para restablecer el elemento primario en otra ventana antes de destruir el control rebar.
 
-## <a name="the-rebar-control-user-interface"></a>Interfaz de usuario del control rebar
+## <a name="the-rebar-control-user-interface"></a>El control Rebar Interfaz de usuario
 
-Se puede cambiar el tamaño de todas las bandas de control rebar, excepto las que usan el \_ estilo RBBS FIXEDSIZE. Para cambiar el tamaño o el orden de las bandas dentro del control, haga clic y arrastre la barra de redimensionamiento de una banda. El control rebar cambia automáticamente el tamaño y la posición de las ventanas secundarias asignadas a sus bandas. Además, puede alternar el tamaño de una banda haciendo clic en el texto de la banda, si existe.
+Se puede cambiar el tamaño de todas las bandas de control rebar, excepto las que usan el estilo \_ FIXEDSIZE de RBBS. Para cambiar el tamaño o el orden de las bandas dentro del control, haga clic y arrastre la barra de control de una banda. El control rebar cambia automáticamente de tamaño y cambia la posición de las ventanas secundarias asignadas a sus bandas. Además, puede alternar el tamaño de una banda haciendo clic en el texto de la banda, si lo hay.
 
-## <a name="the-rebar-controls-image-list"></a>La lista de imágenes del control rebar
+## <a name="the-rebar-controls-image-list"></a>Lista de imágenes del control Rebar
 
-Si una aplicación usa una lista de imágenes con un control rebar, debe enviar el mensaje [**RB \_ SETBARINFO**](rb-setbarinfo.md) antes de agregar bandas al control. Este mensaje acepta la dirección de una estructura [**REBARINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) como el parámetro *lParam* . Antes de enviar el mensaje, prepare la estructura **REBARINFO** estableciendo el miembro **cbSize** en el tamaño de la estructura, en bytes. Después, si el control rebar va a mostrar imágenes en las bandas, establezca el miembro **fMask** en la marca RBIM \_ ImageList y asigne un identificador de lista de imágenes al miembro **himl** . Si el rebar no va a usar imágenes de banda, establezca **fMask** en cero.
+Si una aplicación usa una lista de imágenes con un control rebar, debe enviar el mensaje [**\_ SETBARINFO**](rb-setbarinfo.md) de RB antes de agregar bandas al control. Este mensaje acepta la dirección de una [**estructura REBARINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) como parámetro *lParam.* Antes de enviar el mensaje, prepare la **estructura REBARINFO** estableciendo el **miembro cbSize** en el tamaño de la estructura, en bytes. A continuación, si el control rebar va a mostrar imágenes en las bandas, establezca el miembro **fMask** en la marca IMAGELIST de RBIM y asigne un identificador de lista de imágenes al \_ **miembro himl.** Si la barra de rebar no usará imágenes de banda, **establezca fMask** en cero.
 
-## <a name="rebar-control-message-forwarding"></a>Reenvío de mensajes del control rebar
+## <a name="rebar-control-message-forwarding"></a>Rebar Control Message Forwarding
 
-Un control rebar reenvía todos los mensajes de la ventana de [**\_ notificación de WM**](wm-notify.md) a su ventana primaria. Además, un control rebar reenvía todos los mensajes que se le envíen desde Windows asignados a sus bandas, como [**WM \_ CHARTOITEM**](wm-chartoitem.md), [**\_ comando de WM**](/windows/desktop/menurc/wm-command)y otros.
+Un control rebar reenvía todos los mensajes de la ventana [**WM \_ NOTIFY**](wm-notify.md) a su ventana primaria. Además, un control rebar reenvía los mensajes que se le envían desde ventanas asignadas a sus bandas, como [**WM \_ CHARTOITEM,**](wm-chartoitem.md) [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command)y otros.
 
- 
+ 
 
- 
+ 

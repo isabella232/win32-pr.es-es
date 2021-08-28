@@ -1,7 +1,7 @@
 ---
-description: Proyecta una función representada en un mapa de cubo en armónicos esféricos.
+description: Proyecta una función representada en un mapa de cubo en armónicas esféricas.
 ms.assetid: de8bc4bd-cb29-44ab-8806-33d3ffd10a7b
-title: Función D3DX10SHProjectCubeMap (D3DX10Tex. h)
+title: Función D3DX10SHProjectCubeMap (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: fd991e2207f1ad556d9f9b5e648e296b857e884b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4fa30724bed56e86d16626133ab32e3494d3c71d6ffa839be1520518c97a77fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105689888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990465"
 ---
-# <a name="d3dx10shprojectcubemap-function"></a>D3DX10SHProjectCubeMap función)
+# <a name="d3dx10shprojectcubemap-function"></a>Función D3DX10SHProjectCubeMap
 
-Proyecta una función representada en un mapa de cubo en armónicos esféricos.
+Proyecta una función representada en un mapa de cubo en armónicas esféricas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,9 +47,9 @@ HRESULT D3DX10SHProjectCubeMap(
 *Pedido* 
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH, genera el orden ^ 2 coefs, Degree es el orden 1.
+El orden de la evaluación de SH genera Order^2 coefs, degree es Order-1.
 
 </dd> <dt>
 
@@ -58,34 +58,34 @@ Orden de la evaluación de SH, genera el orden ^ 2 coefs, Degree es el orden 1.
 
 Tipo: **[ **ID3D10Texture2D**](/windows/desktop/api/D3D10/nn-d3d10-id3d10texture2d)\***
 
-Mapa que se va a proyectar en armónicos esféricos. Vea [**ID3D10Texture2D**](/windows/desktop/api/D3D10/nn-d3d10-id3d10texture2d).
+Mapa de cubo que se va a proyectar en armónicos esféricos. Vea [**ID3D10Texture2D.**](/windows/desktop/api/D3D10/nn-d3d10-id3d10texture2d)
 
 </dd> <dt>
 
-*pROut* 
+*Prout* 
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Salida SH vector para rojo.
+Vector SH de salida para rojo.
 
 </dd> <dt>
 
 *pGOut* 
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Salida SH vector para verde.
+Vector SH de salida para verde.
 
 </dd> <dt>
 
 *pBOut* 
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Salida SH vector para azul.
+Vector SH de salida para azul.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Salida SH vector para azul.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D3DX10Tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>  |
 
 
 

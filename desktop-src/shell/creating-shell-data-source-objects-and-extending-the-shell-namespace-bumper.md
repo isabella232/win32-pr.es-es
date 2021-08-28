@@ -1,5 +1,5 @@
 ---
-description: Crear objetos de origen de datos de Shell y extender el espacio de nombres de Shell
+description: Crear objetos de origen de datos de Shell y extender el espacio de nombres del shell
 title: Crear objetos de origen de datos de Shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,19 +9,19 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: a5e9dd26dc031435ee0e784d2614a3567b4e541a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bebbbc19c467e7908caac2eb0fcad7517acbcb7c8e5033175769f912644b7fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943395"
 ---
 # <a name="creating-shell-data-source-objects"></a>Crear objetos de origen de datos de Shell
 
--   [Introducción al espacio de nombres del shell](namespace-intro.md)
+-   [Introducción al espacio de nombres de Shell](namespace-intro.md)
 -   [Descripción de las extensiones de espacio de nombres de Shell](nse-works.md)
 -   [Creación de controladores de extensiones de shell](handlers.md)
--   [Implementar interfaces de objeto de carpeta básicas](nse-implement.md)
+-   [Implementar interfaces básicas de objetos de carpeta](nse-implement.md)
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Especifica el perfil de complejidad del contenido codificado.
 ms.assetid: 2e238d31-98b2-4c79-96b0-9e6949010a73
-title: Propiedad MFPKEY_DECODERCOMPLEXITYPROFILE (Wmcodecdsp. h)
+title: MFPKEY_DECODERCOMPLEXITYPROFILE propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f39544830a0a05e21779a637da61d3bcb310fcd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca206357a3f3a396ac6d07ea16a1b72bc245c641095a5523e46139dfd6af7f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604225"
 ---
-# <a name="mfpkey_decodercomplexityprofile-property"></a>\_Propiedad DECODERCOMPLEXITYPROFILE de MFPKEY
+# <a name="mfpkey_decodercomplexityprofile-property"></a>Propiedad DECODERCOMPLEXITYPROFILE de MFPKEY \_
 
 Especifica el perfil de complejidad del contenido codificado.
 
@@ -23,58 +23,58 @@ g \_ wszWMVCDecoderComplexityProfile
 
 **VT \_ BSTR**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este valor solo se puede leer una vez completada la codificación.
+Solo puede leer este valor una vez completada la codificación.
 
-En el caso de audio, esta propiedad tiene uno de los valores siguientes.
+En el caso del audio, esta propiedad tiene uno de los valores siguientes.
 
 
 
-| Value | Descripción                                                                                    |
+| Valor | Descripción                                                                                    |
 |-------|------------------------------------------------------------------------------------------------|
-| Nivel  | Codificación estándar con una velocidad de muestreo de 44,1 KHz y una velocidad de bits máxima de 161 kbps.         |
-| L2  | Codificación estándar con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 161 kbps.         |
-| Caché  | Codificación estándar con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 385 kbps.         |
-| "M0a" | Codificación profesional con velocidades de muestreo de hasta 48 KHz y velocidades de bits entre 48 y 192 kbps.  |
-| "M0b" | Codificación profesional con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 192 kbps.      |
-| Conector  | Codificación profesional con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 384 Kbps.      |
-| ²  | Codificación profesional con velocidades de muestreo de hasta 96 KHz y una velocidad de bits máxima de 768 kbps.      |
-| M3  | Codificación profesional con velocidades de muestreo de hasta 96 KHz y una velocidad de bits máxima de 1,5 Mbps.      |
-| N1  | Codificación sin pérdida con velocidades de muestreo de hasta 48 KHz y un máximo de 2 canales.                |
-| N2  | Codificación sin pérdida con velocidades de muestreo de hasta 96 KHz y un máximo de 6 canales (5,1 envolvente). |
-| N3  | Codificación sin pérdida con velocidades de muestreo de hasta 96 KHz y un máximo de 8 canales (7,1 envolvente). |
+| "L1"  | Codificación estándar con una frecuencia de muestreo de 44,1 KHz y una velocidad de bits máxima de 161 Kbps.         |
+| "L2"  | Codificación estándar con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 161 Kbps.         |
+| "L3"  | Codificación estándar con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 385 Kbps.         |
+| "M0a" | Professional codificación con velocidades de muestreo de hasta 48 KHz y velocidades de bits entre 48 y 192 Kbps.  |
+| "M0b" | Professional codificación con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 192 Kbps.      |
+| "M1"  | Professional codificación con velocidades de muestreo de hasta 48 KHz y una velocidad de bits máxima de 384 Kbps.      |
+| "M2"  | Professional codificación con velocidades de muestreo de hasta 96 KHz y una velocidad de bits máxima de 768 Kbps.      |
+| "M3"  | Professional codificación con velocidades de muestreo de hasta 96 KHz y una velocidad de bits máxima de 1,5 Mbps.      |
+| "N1"  | Codificación sin pérdida con velocidades de muestreo de hasta 48 KHz y un máximo de 2 canales.                |
+| "N2"  | Codificación sin pérdida con velocidades de muestreo de hasta 96 KHz y un máximo de 6 canales (5,1 envolvente). |
+| "N3"  | Codificación sin pérdida con velocidades de muestreo de hasta 96 KHz y un máximo de 8 canales (7,1 envolvente). |
 
 
 
  
 
-En el caso de vídeo, esta propiedad tiene uno de los siguientes valores:
+Para el vídeo, esta propiedad tiene uno de los siguientes valores:
 
 
 
 | Value | Descripción                                                                       |
 |-------|-----------------------------------------------------------------------------------|
-| AISLAMIENTO  | perfil avanzado (disponible solo en códec de perfil avanzado de Windows Media Video 9) |
-| CP  | ya no se admite                                                               |
-| MP  | Perfil principal                                                                      |
-| DAÑADO  | Perfil simple                                                                    |
+| "AP"  | perfil avanzado (disponible solo en el códec Windows de perfil avanzado de Media Video 9) |
+| "CP"  | ya no se admite                                                               |
+| "MP"  | perfil principal                                                                      |
+| "SP"  | perfil simple                                                                    |
 
 
 
  
 
-Para el contenido de vídeo, puede solicitar un nivel de perfil estableciendo [MFPKEY \_ DECODERCOMPLEXITYREQUESTED](mfpkey-decodercomplexityrequestedproperty.md) antes de comenzar la codificación. El códec intentará codificar dentro de los parámetros del nivel de complejidad solicitado, pero los demás valores de configuración que configure tendrán prioridad. Siempre debe comprobar el valor del perfil de complejidad real después de la codificación en caso de que no se pueda respetar la solicitud.
+Para el contenido de vídeo, puede solicitar un nivel de perfil estableciendo [MFPKEY \_ DECODERCOMPLEXITYREQUESTED antes](mfpkey-decodercomplexityrequestedproperty.md) de comenzar la codificación. El códec intentará codificar dentro de los parámetros del nivel de complejidad solicitado, pero las demás opciones que configure tendrán prioridad. Siempre debe comprobar el valor del perfil de complejidad real después de la codificación en caso de que no se pueda respetar la solicitud.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -82,7 +82,7 @@ Para el contenido de vídeo, puede solicitar un nivel de perfil estableciendo [M
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

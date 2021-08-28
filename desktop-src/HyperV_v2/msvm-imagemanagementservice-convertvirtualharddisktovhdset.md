@@ -1,7 +1,7 @@
 ---
-description: Convierte un archivo de disco duro virtual mediante la creación de un nuevo archivo del conjunto de VHD junto con el disco duro virtual existente.
+description: Convierte un archivo de disco duro virtual mediante la creación de un nuevo archivo de conjunto de VHD junto con el disco duro virtual existente.
 ms.assetid: 04ae723e-e3c5-4640-a0e5-0e1b75bb2e6d
-title: Método ConvertVirtualHardDiskToVHDSet de la clase Msvm_ImageManagementService
+title: Método ConvertVirtualHardDiskToVHDSet de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6113a14f321ff7319f8be15767621db3a7e833de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a54970529f51b3d616cd3c44676c0ffa91d31489f5b07f72a279a2ed8db008d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522785"
 ---
-# <a name="convertvirtualharddisktovhdset-method-of-the-msvm_imagemanagementservice-class"></a>Método ConvertVirtualHardDiskToVHDSet de la \_ clase ImageManagementService de MSVM
+# <a name="convertvirtualharddisktovhdset-method-of-the-msvm_imagemanagementservice-class"></a>Método ConvertVirtualHardDiskToVHDSet de la clase \_ Msvm ImageManagementService
 
-Convierte un archivo de disco duro virtual mediante la creación de un nuevo archivo del conjunto de VHD junto con el disco duro virtual existente.
+Convierte un archivo de disco duro virtual mediante la creación de un nuevo archivo de conjunto de VHD junto con el disco duro virtual existente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 ConvertVirtualHardDiskToVHDSet(
 
 <dl> <dt>
 
-*VirtualHardDiskPath* \[ de\]
+*VirtualHardDiskPath* \[ En\]
 </dt> <dd>
 
-Cadena que contiene la ruta de acceso al archivo de disco duro virtual. El nuevo archivo del conjunto de VHD tendrá el mismo nombre de archivo, pero con. Extensión de VHD.
+Cadena que contiene la ruta de acceso al archivo de disco duro virtual. El nuevo archivo VHD Set tendrá el mismo nombre de archivo, pero con . Extensión VHDS.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser null si se ha completado la tarea).
+Referencia al trabajo (puede ser NULL si se completa la tarea).
 
 </dd> </dl>
 
@@ -75,16 +75,16 @@ Este método devuelve uno de los siguientes valores:
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,13 +93,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -108,10 +108,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -120,7 +120,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
 description: Propiedad con varias categorías de dispositivos.
 ms.assetid: b8cbdb96-b4dd-44c2-b1fe-08b22c0380c2
-title: System. Devices. CategoryPlural
+title: System.Devices.CategoryPlural
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ce03b9896fc409d0749572904ba6de6535e3809
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95d429fa71e861cfdf97c460c0504acf9d79bb637ad2acb229e8d31f448daa8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945826"
 ---
-# <a name="systemdevicescategoryplural"></a>System. Devices. CategoryPlural
+# <a name="systemdevicescategoryplural"></a>System.Devices.CategoryPlural
 
 Propiedad con varias categorías de dispositivos.
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="windows-7"></a>Windows 7
+## <a name="windows-7"></a>Windows 7
 
 ```
 propertyDescription
@@ -47,9 +47,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -64,7 +64,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -76,7 +76,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -94,7 +94,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

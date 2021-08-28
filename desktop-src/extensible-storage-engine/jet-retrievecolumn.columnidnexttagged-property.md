@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RETRIEVECOLUMN. columnidNextTagged'
-title: Propiedad JET_RETRIEVECOLUMN. columnidNextTagged
+description: 'Más información sobre: JET_RETRIEVECOLUMN.columnidNextTagged'
+title: JET_RETRIEVECOLUMN.columnidNextTagged, propiedad
 TOCTitle: 'columnidNextTagged property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.columnidNextTagged
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.columnidnexttagged(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5b900d03e43f0d7b172b09e0928110222e909df3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d0c1eb962a1b0768aeb0c7fea04c418a57d52061aa05d97b4bc796470ab92d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473515"
 ---
-# <a name="jet_retrievecolumncolumnidnexttagged-property"></a>Propiedad JET_RETRIEVECOLUMN. columnidNextTagged
+# <a name="jet_retrievecolumncolumnidnexttagged-property"></a>JET_RETRIEVECOLUMN.columnidNextTagged, propiedad
 
-Obtiene el columnid de la columna etiquetada, con varios valores o dispersas cuando se recuperan todas las columnas etiquetadas pasando 0 como columnid.
+Obtiene el columnid de la columna etiquetada, multivalor o dispersa cuando se recuperan todas las columnas etiquetadas pasando 0 como columnid.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidNextTagged { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETRIEVECOLUMN (clase)](./jet-retrievecolumn-class.md)
+[JET_RETRIEVECOLUMN clase](./jet-retrievecolumn-class.md)
 
-[Miembros de JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN miembros](./jet-retrievecolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

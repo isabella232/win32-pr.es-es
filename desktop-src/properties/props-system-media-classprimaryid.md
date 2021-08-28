@@ -4,12 +4,12 @@ ms.assetid: f7662562-6036-4b3c-9c24-b12afb9255a0
 title: System.Media.ClassPrimaryID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83bc99f3292a5772f2230b1e963f1ba8d383100d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1a5278ab3ca40cdb23a622f004ec96a15783e3411ae8a369bcaa0dfade9261f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118725985"
 ---
 # <a name="systemmediaclassprimaryid"></a>System.Media.ClassPrimaryID
 

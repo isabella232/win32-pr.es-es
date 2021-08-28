@@ -73,15 +73,15 @@ HRESULT put_DefaultContainer(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los proveedores deben proporcionar esta propiedad por usuario. El contenedor predeterminado se establece inmediatamente después de la invocación de **IADsNamespaces::p ut \_ DefaultContainer**. No [**es necesario llamar a IADs.SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) De hecho, el objeto namespaces proporcionado por el sistema devuelve **E \_ NOTIMPL** para el **método IADs.SetInfo** al que se llama en este objeto. Cuando un contenedor es el objeto de espacios de nombres, una operación de enumeración siempre da como resultado una lista de objetos de espacio de nombres específicos del proveedor. Cuando [**se usa IADsContainer.GetObject**](/windows/desktop/api/Iads/nf-iads-iadscontainer-getobject) para obtener un objeto de espacio de nombres, se omite el parámetro *bstrClass.* Esto se debe a que el contenedor, es decir, el objeto namespaces, contiene solo un tipo de objeto, es decir, objetos de espacio de nombres específicos del proveedor.
+Los proveedores deben proporcionar esta propiedad por usuario. El contenedor predeterminado se establece inmediatamente después de la invocación de **IADsNamespaces::p ut \_ DefaultContainer**. No [**es necesario llamar a IADs.SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) De hecho, el objeto namespaces proporcionado por el sistema devuelve **E \_ NOTIMPL** para el **método IADs.SetInfo** al que se llama en este objeto. Cuando un contenedor es el objeto de espacios de nombres, una operación de enumeración siempre da como resultado una lista de objetos de espacio de nombres específicos del proveedor. Cuando [**se usa IADsContainer.GetObject**](/windows/desktop/api/Iads/nf-iads-iadscontainer-getobject) para obtener un objeto de espacio de nombres, se omite el parámetro *bstrClass.* Esto se debe a que el contenedor, es decir, el objeto namespaces, solo contiene un tipo de objeto, es decir, objetos de espacio de nombres específicos del proveedor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -91,7 +91,7 @@ Los proveedores deben proporcionar esta propiedad por usuario. El contenedor pre
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

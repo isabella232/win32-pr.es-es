@@ -1,11 +1,11 @@
 ---
-title: Atributo MAPI-ID
-description: Entero por el que los clientes MAPI identifican este atributo.
+title: Atributo DE IDENTIFICADOR DE LA MARCA DE SEGURIDAD
+description: Entero por el que los clientes DE LA MARCA identifican este atributo.
 ms.assetid: 581989f5-d979-4fe6-95d5-2c0651f40d78
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MAPI-ID
-- mAPIID esquema de AD de atributos
+- Esquema de AD del atributo DE ID de LA MARCA DE SEGURIDAD
+- Esquema de AD del atributo mAPIID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a754d88d048abccd199c6ab20a6a00fcfdc036
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7d2c25e3d44b9e4952a62bab98d16ea3e1987d616a05f18c2e0627e7a50bf0ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301185"
 ---
-# <a name="mapi-id-attribute"></a>Atributo MAPI-ID
+# <a name="mapi-id-attribute"></a>Atributo DE IDENTIFICADOR DE LA MARCA DE SEGURIDAD
 
-Entero por el que los clientes MAPI identifican este atributo.
+Entero por el que los clientes DE LA MARCA identifican este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | IDENTIFICADOR DE MAPI                              |
-| Nombre para mostrar de LDAP | mAPIID                               |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ID. de MAPI                              |
+| Ldap-Display-Name | mAPIID                               |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.2.49                |
-| System-ID-GUID    | bf9679b7-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf9679b7-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,20 +53,20 @@ Entero por el que los clientes MAPI identifican este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
 | System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Entero por el que los clientes MAPI identifican este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
 | System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Entero por el que los clientes MAPI identifican este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
 | System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Entero por el que los clientes MAPI identifican este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
 | System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Entero por el que los clientes MAPI identifican este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
 | System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Entero por el que los clientes MAPI identifican este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x80CE                                                   |
 | System-Only            | True                                                     |
-| Tiene un único valor       | True                                                     |
+| Es de un solo valor       | True                                                     |
 | Está indexado             | False                                                    |
 | En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> |
 
 
 

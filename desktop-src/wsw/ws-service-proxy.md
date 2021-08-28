@@ -1,19 +1,19 @@
 ---
-title: WS_SERVICE_PROXY (webservices. h)
+title: WS_SERVICE_PROXY (WebServices.h)
 description: Tipo opaco que se usa para hacer referencia a un proxy de servicio.
 ms.assetid: 623766ae-fe82-40f9-93c8-e78fe48bc6d1
 keywords:
 - WS_SERVICE_PROXY
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cfe81f45141b2ac6eb64e17895261c3e6fea8db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ba5c17b36d0ca36ce43192fe29a3ef9113cc47530f0fe8e00d67717f42f71bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119880765"
 ---
-# <a name="ws_service_proxy"></a>\_proxy de servicio WS \_
+# <a name="ws_service_proxy"></a>PROXY DEL \_ SERVICIO \_ WS
 
 Tipo opaco que se usa para hacer referencia a un proxy de servicio.
 
@@ -24,9 +24,9 @@ typedef struct _WS_SERVICE_PROXY WS_SERVICE_PROXY;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este objeto es seguro para subprocesos. Para obtener más información, vea [seguridad para subprocesos](thread-safety.md).
+Este objeto es seguro para subprocesos. Para obtener más información, vea [Seguridad para subprocesos.](thread-safety.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,9 +34,9 @@ Este objeto es seguro para subprocesos. Para obtener más información, vea [seg
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Webservices. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
+| Header<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 

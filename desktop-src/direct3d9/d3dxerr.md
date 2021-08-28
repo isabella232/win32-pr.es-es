@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9.h
-ms.openlocfilehash: 1c1dd03500a493b30d7c1d3bfdfdf800b65a6d82
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2fc6f72ab88a3c85eff592e289364a1f67eb9c220a7592397eda14b8bf4aace6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988515"
 ---
 # <a name="d3dxerr-enumeration"></a>Enumeración D3DXERR
 
@@ -65,7 +65,7 @@ La malla no es válida.
 <span id="D3DXERR_CANNOTATTRSORT"></span><span id="d3dxerr_cannotattrsort"></span>**D3DXERR \_ CANNOTATTRSORT**
 </dt> <dd>
 
-La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como una técnica de optimización.
+La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como técnica de optimización.
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ No se puede eliminar el último elemento.
 
 ## <a name="remarks"></a>Comentarios
 
-El código de instalación \_ FACDD se usa para generar códigos de error, como en las macros siguientes.
+El código de la \_ instalación FACDD se usa para generar códigos de error, como en las macros siguientes.
 
 
 ```
@@ -138,7 +138,7 @@ enum _D3DXERR {
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

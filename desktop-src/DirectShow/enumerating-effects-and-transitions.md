@@ -4,29 +4,29 @@ ms.assetid: 364b7bfb-5d6e-4ca6-b0c8-7a0180c3f61a
 title: Enumerar efectos y transiciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e533f36501ac8da6015cc31eea6c2c111bf6a208
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bd94dee9ff6774e9608d6b599986c0b943b60d335df2ab9b27e8c2eb64d7fe42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685815"
 ---
 # <a name="enumerating-effects-and-transitions"></a>Enumerar efectos y transiciones
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-DirectShow proporciona un objeto de [enumerador de dispositivos del sistema](system-device-enumerator.md) para enumerar los dispositivos. Puede usarlo para recuperar monikers para efectos o transiciones instalados en el sistema del usuario.
+DirectShow proporciona un objeto [Enumerador de dispositivos del](system-device-enumerator.md) sistema para enumerar dispositivos. Puede usarlo para recuperar monikers para los efectos o transiciones instalados en el sistema del usuario.
 
-El enumerador de dispositivos del sistema expone la interfaz [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) . Devuelve los enumeradores de categoría para las categorías de dispositivos especificadas. Un enumerador de categoría, a su vez, expone la interfaz [**IEnumMoniker**](/windows/desktop/api/objidl/nn-objidl-ienummoniker) y devuelve monikers para cada dispositivo de la categoría. Para obtener una explicación detallada del uso de **ICreateDevEnum**, consulte [enumeración de dispositivos y filtros](enumerating-devices-and-filters.md). A continuación se encuentra un breve resumen, específico de los servicios de edición de DirectShow.
+El enumerador de dispositivos del sistema expone la [**interfaz ICreateDevEnum.**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) Devuelve enumeradores de categoría para las categorías de dispositivo especificadas. A su vez, un enumerador de categorías expone la interfaz [**IEnumMoniker**](/windows/desktop/api/objidl/nn-objidl-ienummoniker) y devuelve monikers para cada dispositivo de la categoría. Para obtener una explicación detallada del uso de **ICreateDevEnum,** vea [Enumerar dispositivos y filtros.](enumerating-devices-and-filters.md) A continuación se muestra un breve resumen, específico de DirectShow Editing Services.
 
-Para enumerar los efectos o las transiciones, realice los pasos siguientes.
+Para enumerar efectos o transiciones, realice los pasos siguientes.
 
 1.  Cree una instancia del enumerador de dispositivos del sistema.
-2.  Llame al método [**ICreateDevEnum:: CreateClassEnumerator**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) para recuperar un enumerador de categoría. Las categorías se definen por los identificadores de clase (CLSID). Use CLSID \_ VideoEffects1Category para los efectos o CLSID \_ VideoEffects2Category para las transiciones.
-3.  Llame a **IEnumMoniker:: Next** para recuperar cada moniker de la enumeración.
-4.  Para cada moniker, llame a **IMoniker:: BindToStorage** para recuperar el contenedor de propiedades asociado.
+2.  Llame al [**método ICreateDevEnum::CreateClassEnumerator para**](/windows/desktop/api/Strmif/nf-strmif-icreatedevenum-createclassenumerator) recuperar un enumerador de categoría. Las categorías se definen mediante identificadores de clase (CLID). Use CLSID \_ VideoEffects1Category para efectos o CLSID \_ VideoEffects2Category para las transiciones.
+3.  Llame **a IEnumMoniker::Next** para recuperar cada moniker de la enumeración.
+4.  Para cada moniker, llame a **IMoniker::BindToStorage** para recuperar su bolsa de propiedades asociada.
 
-La bolsa de propiedades contiene el nombre descriptivo y el identificador único global (GUID) para el efecto o la transición. Una aplicación puede mostrar una lista de nombres descriptivos y, a continuación, obtener el GUID correspondiente.
+El bolsa de propiedades contiene el nombre descriptivo y el identificador único global (GUID) para el efecto o la transición. Una aplicación puede mostrar una lista de nombres descriptivos y, a continuación, obtener el GUID correspondiente.
 
 En el ejemplo de código siguiente se muestran estos pasos.
 

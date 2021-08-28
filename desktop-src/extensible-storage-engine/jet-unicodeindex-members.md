@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_UNICODEINDEX miembros'
-title: Miembros de JET_UNICODEINDEX
+description: 'Más información sobre: JET_UNICODEINDEX miembros'
+title: JET_UNICODEINDEX miembros
 TOCTitle: JET_UNICODEINDEX members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_unicodeindex_members(v=EXCHG.10)
 ms:contentKeyID: 55104013
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d7d53abb785a932e017c51d7113bda035edadda8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 727e4f332e3bba9b1f5ac6c2a2ec211a40bcf0127113b5532f45e61d9e1fa0d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104568776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945535"
 ---
-# <a name="jet_unicodeindex-members"></a>Miembros de JET_UNICODEINDEX
+# <a name="jet_unicodeindex-members"></a>JET_UNICODEINDEX miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Personaliza cómo se normalizan los datos Unicode cuando se crea un índice en una columna Unicode. Personaliza cómo se normalizan los datos Unicode cuando se crea un índice en una columna Unicode.
+Personaliza cómo se normalizan los datos Unicode cuando se crea un índice sobre una columna Unicode. Personaliza cómo se normalizan los datos Unicode cuando se crea un índice sobre una columna Unicode.
 
-El tipo de [JET_UNICODEINDEX](./jet-unicodeindex-class.md) expone los siguientes miembros.
+El [JET_UNICODEINDEX](./jet-unicodeindex-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -59,17 +59,17 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351121(v=exchg.10).md">dwMapFlags</a></td>
-<td>Obtiene o establece las marcas que se van a usar con LCMapString al normalizar datos Unicode.</td>
+<td>Obtiene o establece las marcas que se usarán con LCMapString al normalizar datos Unicode.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351144(v=exchg.10).md">lcid</a></td>
-<td>Obtiene o establece el LCID que se va a utilizar al normalizar datos Unicode.</td>
+<td>Obtiene o establece el LCID que se va a usar al normalizar los datos Unicode.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351147(v=exchg.10).md">szLocaleName</a></td>
-<td>Obtiene o establece el LocaleName que se va a usar al normalizar datos Unicode.</td>
+<td>Obtiene o establece el valor de LocaleName que se va a usar al normalizar los datos Unicode.</td>
 </tr>
 </tbody>
 </table>
@@ -91,12 +91,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351108(v=exchg.10).md">ContentEquals</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351133(v=exchg.10).md">DeepClone</a></td>
-<td>Devuelve una copia en profundidad del objeto.</td>
+<td>Devuelve una copia en profundidad del objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -105,7 +105,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -120,7 +120,7 @@ Superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
@@ -131,7 +131,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351120(v=exchg.10).md">ToString</a></td>
-<td>Generar una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -143,6 +143,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_UNICODEINDEX (clase)](./jet-unicodeindex-class.md)
+[JET_UNICODEINDEX clase](./jet-unicodeindex-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

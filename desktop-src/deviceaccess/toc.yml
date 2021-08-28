@@ -3,23 +3,23 @@
   items:
     - name: Acerca de la API de acceso a dispositivos
       href: about-the-device-access-api.md
-    - name: Cómo usar la API de acceso a dispositivos
+    - name: Uso de la API de acceso a dispositivos
       href: using-the-device-access-api.md
       items:
         - name: Consideraciones de diseño para dispositivos personalizados
           href: design.md
-        - name: Implementación del objeto de acceso del dispositivo
+        - name: Implementación del objeto device access
           href: create-the-device-access-object.md
         - name: Declarar la funcionalidad del dispositivo
           href: declaring-the-device-capability.md
-        - name: Registro de la interfaz de dispositivo como restringido a las aplicaciones con privilegios
+        - name: Registrar la interfaz de dispositivo como restringida a las aplicaciones con privilegios
           href: register-the-device-interface-class-as-privileged.md
-        - name: Creación de una extensión de Windows Runtime
+        - name: Creación de una extensión Windows runtime
           href: create-a-windows-runtime-extension.md
-    - name: Referencia de programación de C++ de API de acceso a dispositivos
+    - name: API de acceso a dispositivos referencia de programación de C++
       href: device-access-api-c---programming-reference.md
       items:
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: CreateDeviceAccessInstance
@@ -30,7 +30,7 @@
             - name: ICreateDeviceAccessAsync
               href: /windows/win32/api/Deviceaccess/nn-deviceaccess-icreatedeviceaccessasync
               items:
-                - name: CANCEL (método)
+                - name: Cancel (método)
                   href: /windows/win32/api/Deviceaccess/nf-deviceaccess-icreatedeviceaccessasync-cancel
                 - name: Wait (Método)
                   href: /windows/win32/api/Deviceaccess/nf-deviceaccess-icreatedeviceaccessasync-wait
@@ -45,7 +45,7 @@
                   href: /windows/win32/api/Deviceaccess/nf-deviceaccess-ideviceiocontrol-deviceiocontrolsync
                 - name: Método DeviceIoControlAsync
                   href: /windows/win32/api/Deviceaccess/nf-deviceaccess-ideviceiocontrol-deviceiocontrolasync
-                - name: Método CancelOperation
+                - name: CancelOperation (método)
                   href: /windows/win32/api/Deviceaccess/nf-deviceaccess-ideviceiocontrol-canceloperation
             - name: IDeviceRequestCompletionCallback
               href: /windows/win32/api/Deviceaccess/nn-deviceaccess-idevicerequestcompletioncallback

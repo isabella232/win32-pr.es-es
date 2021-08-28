@@ -4,16 +4,16 @@ description: Aclaración y limitación de opciones
 ms.assetid: 4ec3ca01-231b-4a45-aae1-fba5b2ba0033
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 953001d706089244d6366c8dab0cdb580a2d72ca
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: cb9c7c6371009865baa685e3644c2c1e62e1713bd40a0c64a7a8530b849e813d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118480309"
 ---
 # <a name="clarify-and-limit-choices"></a>Aclaración y limitación de opciones
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 El reconocimiento de voz es más correcto cuando el usuario aprende el intervalo de gramática adecuada. También funciona mejor cuando el intervalo de opciones es limitado. Entre menos abierta sea la entrada, mejor podrá analizar el motor de voz la entrada de información acústica.
 
@@ -49,11 +49,11 @@ También puede usar avisos de directiva para evitar la entrada de fin abierto. L
 
  
 
-Esto guía al usuario hacia la emisión de un comando válido. Al sugerir las palabras o frases, es más probable que pueda obtener las palabras esperadas a cambio. Para evitar repeticiones poco naturales, cambie la redacción o acorte el original para su posterior presentación a medida que el usuario se vuelve más experimentado con el estilo de entrada. Los avisos de directiva también se pueden usar en situaciones en las que el usuario no puede emitir un comando dentro de un tiempo prescrito o no puede proporcionar un comando esperado. Los mensajes de directiva se pueden proporcionar mediante la salida de voz, las interfaces de aplicación o ambos. La clave es ayudar al usuario a conocer las opciones adecuadas.
+Esto guía al usuario a emitir un comando válido. Al sugerir las palabras o frases, es más probable que se puedan obtener las palabras esperadas a cambio. Para evitar repeticiones poco naturales, cambie la redacción o acorte el original para su posterior presentación a medida que el usuario se vuelve más experimentado con el estilo de entrada. Los avisos de directiva también se pueden usar en situaciones en las que el usuario no puede emitir un comando dentro de un tiempo prescrito o no puede proporcionar un comando esperado. Los mensajes de directiva se pueden proporcionar mediante la salida de voz, las interfaces de aplicación o ambos. La clave es ayudar al usuario a conocer las opciones adecuadas.
 
-La redacción influye en el éxito de un aviso. Por ejemplo, el mensaje "¿Desea pedir la pizza?" podría generar una respuesta "Sí" o "No", pero también podría generar una solicitud de pedido. Defina avisos que no sean ambiguos o que se preparen para aceptar una mayor variedad de respuestas posibles. Además, tenga en cuenta la tendencia de las personas a imitar palabras y construcciones que escuchan. Esto se puede usar a menudo para ayudar a provocar una respuesta adecuada, como en el ejemplo siguiente:
+La redacción influye en el éxito de un aviso. Por ejemplo, el mensaje "¿Desea pedir la pizza?". podría generar una respuesta "Sí" o "No", pero también podría generar una solicitud de pedido. Defina avisos que no sean ambiguos o que se preparen para aceptar una variedad mayor de respuestas posibles. Además, tenga en cuenta la tendencia de las personas a imitar palabras y construcciones que escuchan. Esto se puede usar a menudo para ayudar a provocar una respuesta adecuada, como en el ejemplo siguiente:
 
-**Usuario:** Muéseme todos los mensajes de Paul.
+**Usuario:** Mostrarme todos los mensajes de Paul.
 
 **Carácter:**
 

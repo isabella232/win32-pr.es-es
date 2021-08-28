@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 5045c26f521da289899c8f8bc0d97b7eaf01826f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 78e403deae28c4f750dbffc5dcb3781f4a48086d292730f461a7c416d7c28046
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790825"
 ---
 # <a name="id3dxbaseeffectsetbool-method"></a>Método ID3DXBaseEffect::SetBool
 
@@ -50,7 +50,7 @@ Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*b* \[ en\]
+*b* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
@@ -63,7 +63,7 @@ Valor booleano.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 3400d98a832819d1edd640cd78586f1cfb06bdee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae4a12964ff900d8a30c0f59d2210c82007995337a2661a6fbd29a6acdfccdf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820525"
 ---
 # <a name="itabletmanager-interface"></a>Interfaz ITabletManager
 
@@ -27,13 +27,13 @@ Proporciona acceso a todas las tabletas conectadas al equipo.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **ITabletManager** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITabletManager** también tiene estos tipos de miembros:
+La **interfaz ITabletManager** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletManager** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **ITabletManager** tiene estos métodos.
+La **interfaz ITabletManager** tiene estos métodos.
 
 
 
@@ -46,11 +46,11 @@ La interfaz **ITabletManager** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los desarrolladores no deben utilizar esta interfaz.
+Los desarrolladores no deben usar esta interfaz.
 
-En el código siguiente se muestra cómo se implementa la interfaz **ITabletManager** .
+El código siguiente muestra cómo se implementa la interfaz **ITabletManager.**
 
 ``` syntax
 [
@@ -82,7 +82,7 @@ interface ITabletManager : IUnknown
         
 ```
 
-Llame a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) con un ID. de clase de CLSID \_ TabletManagerS y, a continuación, llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener un puntero a la **interfaz ITabletManager**. El GUID de TabletManagerS de CLSID \_ se define de la siguiente manera:
+Llame a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) con un identificador de clase de CLSID TabletManagerS y, a continuación, llame a QueryInterface para obtener un puntero a la \_ interfaz **ITabletManager**. [](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) El GUID de \_ CLSID TabletManagerS se define de la siguiente manera:
 
 ``` syntax
 #define CLSID_TabletManagerS uuid(A5B020FD-E04B-4e67-B65A-E7DEED25B2CF)
@@ -94,7 +94,7 @@ Llame a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-coc
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

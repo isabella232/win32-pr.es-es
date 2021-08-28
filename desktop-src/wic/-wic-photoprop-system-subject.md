@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. Subject.
+description: Directiva de metadatos de fotos para la propiedad System.Subject.
 ms.assetid: 5ab7c74b-8a5e-4329-8a49-291470d406cc
-title: Directiva de metadatos de la foto System. Subject
+title: Directiva de metadatos de fotos de System.Subject
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceabbab95a52a1155db949dbc60b4525dd5f9d73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9321e866c34027df3e932f84d532162def959cbaf365bb4020c19647d547adea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881975"
 ---
-# <a name="systemsubject-photo-metadata-policy"></a>Directiva de metadatos de la foto System. Subject
+# <a name="systemsubject-photo-metadata-policy"></a>Directiva de metadatos de fotos de System.Subject
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Subject](../properties/props-system-subject.md) .
+Directiva de metadatos de fotos para la [propiedad System.Subject.](../properties/props-system-subject.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Asunto PKEY
+Asunto \_ PKEY
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,40 +27,40 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-VT \_ LPWStr o VT \_ LPWStr
+VT \_ LPWSTR o VT \_ LPWSTR
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                     | Formato de disco    |
+| Pedido | Ruta de acceso                     | Formato de disco    |
 |-------|--------------------------|----------------|
-| 1     | /app1/IFD/{ushort = 40095} | \_bytes Unicode |
-| 2     | /app1/IFD/{ushort = 270}   | ascii          |
+| 1     | /app1/ifd/{ushort=40095} | bytes \_ unicode |
+| 2     | /app1/ifd/{ushort=270}   | ascii          |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco    |
+| Pedido | Ruta de acceso                     | Formato de disco    |
 |-------|--------------------------|----------------|
-| 1     | /app1/IFD/{ushort = 40095} | \_bytes Unicode |
+| 1     | /app1/ifd/{ushort=40095} | bytes \_ unicode |
 
 
 
@@ -70,10 +70,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
-| 1     | /app1/IFD/{ushort = 40095} |
-| 2     | /app1/IFD/{ushort = 270}   |
+| 1     | /app1/ifd/{ushort=40095} |
+| 2     | /app1/ifd/{ushort=270}   |
 
 
 
@@ -81,26 +81,26 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policy"></a>Directiva TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                | Formato de disco    |
+| Pedido | Ruta de acceso                | Formato de disco    |
 |-------|---------------------|----------------|
-| 1     | /IFD/{ushort = 40095} | \_bytes Unicode |
-| 2     | /IFD/{ushort = 270}   | ascii          |
+| 1     | /ifd/{ushort=40095} | bytes \_ unicode |
+| 2     | /ifd/{ushort=270}   | ascii          |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                | Formato de disco    |
+| Pedido | Ruta de acceso                | Formato de disco    |
 |-------|---------------------|----------------|
-| 1     | /IFD/{ushort = 40095} | \_bytes Unicode |
+| 1     | /ifd/{ushort=40095} | bytes \_ unicode |
 
 
 
@@ -110,22 +110,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                |
+| Pedido | Ruta de acceso                |
 |-------|---------------------|
-| 1     | /IFD/{ushort = 40095} |
-| 2     | /IFD/{ushort = 270}   |
+| 1     | /ifd/{ushort=40095} |
+| 2     | /ifd/{ushort=270}   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Subject](../properties/props-system-subject.md)
+[System.Subject](../properties/props-system-subject.md)
 </dt> </dl>
 
  

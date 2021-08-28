@@ -1,7 +1,7 @@
 ---
-description: El método StreamingThreadUsingOutputPin determina si algún subproceso está realizando una operación de transmisión por secuencias en el código PIN.
+description: El método StreamingThreadUsingOutputPin determina si algún subproceso está realizando una operación de streaming en el pin.
 ms.assetid: b6432a11-4e8b-4eb4-ad8e-aaff9398641b
-title: Método CDynamicOutputPin. StreamingThreadUsingOutputPin (Amfilter. h)
+title: Método CDynamicOutputPin.StreamingThreadUsingOutputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 797dcb94e227861642de2a05e6edf24f675bb4e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4687db225a616adef6d1c756ae9295e2c273c0315f37d119c7bacd0c226233e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539725"
 ---
-# <a name="cdynamicoutputpinstreamingthreadusingoutputpin-method"></a>CDynamicOutputPin. StreamingThreadUsingOutputPin, método
+# <a name="cdynamicoutputpinstreamingthreadusingoutputpin-method"></a>Método CDynamicOutputPin.StreamingThreadUsingOutputPin
 
-El método StreamingThreadUsingOutputPin determina si algún subproceso está realizando una operación de transmisión por secuencias en el código PIN.
+El método StreamingThreadUsingOutputPin determina si algún subproceso está realizando una operación de streaming en el pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si un subproceso está realizando una operación de transmisión por secuencias en el código PIN. De lo contrario, devuelve **false**.
+Devuelve **TRUE** si un subproceso realiza una operación de streaming en el pin. De lo contrario, **devuelve FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si algún subproceso ha devuelto correctamente desde el método [**CDynamicOutputPin:: StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) y no ha realizado una llamada correspondiente al método [**CDynamicOutputPin:: StopUsingOutputPin**](cdynamicoutputpin-stopusingoutputpin.md) , este método devuelve **true**.
+Si algún subproceso ha devuelto correctamente desde el método [**CDynamicOutputPin::StartUsingOutputPin**](cdynamicoutputpin-startusingoutputpin.md) y no ha realizado una llamada correspondiente al método [**CDynamicOutputPin::StopUsingOutputPin,**](cdynamicoutputpin-stopusingoutputpin.md) este método devuelve **TRUE**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Si algún subproceso ha devuelto correctamente desde el método [**CDynamicOutpu
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Si algún subproceso ha devuelto correctamente desde el método [**CDynamicOutpu
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

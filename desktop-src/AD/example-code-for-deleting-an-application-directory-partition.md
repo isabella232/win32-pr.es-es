@@ -1,23 +1,23 @@
 ---
-title: Código de ejemplo para eliminar una partición de directorio de aplicaciones
-description: En este tema se incluyen ejemplos de código que se usan para eliminar una partición de directorio de aplicaciones.
+title: Código de ejemplo para eliminar una partición de directorio de aplicación
+description: En este tema se incluyen ejemplos de código que se usan para eliminar una partición de directorio de aplicación.
 ms.assetid: 74eb46a1-9300-452a-86b6-a19aff58a4f0
 ms.tgt_platform: multiple
 keywords:
-- código de ejemplo para eliminar una partición de directorio de aplicaciones Active Directory
-- particiones de directorio de aplicaciones Active Directory, código de ejemplo para eliminar
+- código de ejemplo para eliminar una partición de directorio de aplicación Active Directory
+- particiones de directorio de Active Directory , código de ejemplo para eliminar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b04be132d9a9ea58b72f732efd5e5fcc9f370b4
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: fa41e98fcc90e9f4af1c9f46ed7c414b723daedc1d600d5899c941f88a393871
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103904497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694084"
 ---
-# <a name="example-code-for-deleting-an-application-directory-partition"></a>Código de ejemplo para eliminar una partición de directorio de aplicaciones
+# <a name="example-code-for-deleting-an-application-directory-partition"></a>Código de ejemplo para eliminar una partición de directorio de aplicación
 
-El siguiente ejemplo de código de C++ se puede usar para eliminar una partición de directorio de aplicaciones mediante ADSI. En este ejemplo se usa una de las funciones de ejemplo **\* GetPartitionsDN** descritas en el [código de ejemplo para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
+El siguiente ejemplo de código de C++ se puede usar para eliminar una partición de directorio de aplicación mediante ADSI. En este ejemplo se usa una de las funciones de ejemplo **GetPartitionsDN \*** descritas en Código de ejemplo [para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
 
 
 ```C++
@@ -218,7 +218,7 @@ HRESULT DeleteAppPartition( LPCWSTR pwszPartitionDN,
 
 
 
-El siguiente ejemplo de código Visual Basic Scripting Edition se puede usar para eliminar una partición de directorio de aplicaciones mediante ADSI. En este ejemplo se usa una de las funciones de ejemplo **\* GetPartitionsDN** descritas en el [código de ejemplo para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
+El siguiente Visual Basic de código de Scripting Edition se puede usar para eliminar una partición de directorio de aplicación mediante ADSI. En este ejemplo se usa una de las funciones de ejemplo **GetPartitionsDN \*** descritas en Código de ejemplo [para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
 
 
 ```VB
@@ -315,7 +315,7 @@ End Sub
 
 
 
-El siguiente ejemplo de código de C# se puede usar para eliminar una partición de directorio de aplicaciones con [System. DirectoryServices](/dotnet/api/system.directoryservices). En este ejemplo se usa una de las funciones de ejemplo **\* GetPartitionsDN** descritas en el [código de ejemplo para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
+El siguiente ejemplo de código de C# se puede usar para eliminar una partición de directorio de aplicación [mediante System.DirectoryServices](/dotnet/api/system.directoryservices). En este ejemplo se usa una de las funciones de ejemplo **GetPartitionsDN \*** descritas en Código de ejemplo [para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
 
 
 ```CSharp
@@ -414,7 +414,7 @@ static void DeleteAppPartition(
 
 
 
-El siguiente ejemplo de código de .NET Visual Basic se puede usar para eliminar una partición de directorio de aplicaciones con [System. DirectoryServices](/dotnet/api/system.directoryservices). En este ejemplo se usa una de las funciones de ejemplo **\* GetPartitionsDN** descritas en el [código de ejemplo para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
+El siguiente Visual Basic de código de .NET se puede usar para eliminar una partición de directorio de aplicación [mediante System.DirectoryServices](/dotnet/api/system.directoryservices). En este ejemplo se usa una de las funciones de ejemplo **GetPartitionsDN \*** descritas en Código de ejemplo [para buscar el contenedor de particiones](example-code-for-locating-the-partitions-container.md).
 
 
 ```VB
@@ -511,6 +511,6 @@ End Sub
 
 
 
- 
+ 
 
- 
+ 

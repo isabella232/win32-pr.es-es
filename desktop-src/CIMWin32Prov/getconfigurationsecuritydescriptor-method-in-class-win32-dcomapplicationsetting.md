@@ -1,8 +1,8 @@
 ---
-description: Obtiene el descriptor de seguridad que controla quién tiene permiso para configurar una aplicación DCOM.
+description: Obtiene el descriptor de seguridad que controla quién puede configurar una aplicación DCOM.
 ms.assetid: 2858a7a0-1e5b-47aa-9967-0f578c3c22c1
 ms.tgt_platform: multiple
-title: Método GetConfigurationSecurityDescriptor de la clase Win32_DCOMApplicationSetting
+title: Método GetConfigurationSecurityDescriptor de la Win32_DCOMApplicationSetting clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 320af05b352641c812c51353c2e7bda0da046bb8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8b4f7a64c597fabfd06c72aba9419dfa01550a4415d195102a84d9b1b2208907
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879065"
 ---
-# <a name="getconfigurationsecuritydescriptor-method-of-the-win32_dcomapplicationsetting-class"></a>Método GetConfigurationSecurityDescriptor de la \_ clase DCOMApplicationSetting de Win32
+# <a name="getconfigurationsecuritydescriptor-method-of-the-win32_dcomapplicationsetting-class"></a>Método GetConfigurationSecurityDescriptor de la clase \_ DCOMApplicationSetting de Win32
 
-El método WMI **GetConfigurationSecurityDescriptor** obtiene el descriptor de seguridad que controla quién tiene permiso para configurar una aplicación DCOM. El descriptor de seguridad es una instancia de la clase [**\_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) . La cuenta que ejecuta el script o la aplicación que llama a este método debe tener los privilegios **SeSecurityPrivilege** y **SeRestorePrivilege** . Para obtener más información, consulte [cambiar la seguridad de acceso en objetos protegibles](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects).
+El **método WMI GetConfigurationSecurityDescriptor** obtiene el descriptor de seguridad que controla quién puede configurar una aplicación DCOM. El descriptor de seguridad es una instancia de la [**clase \_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) La cuenta que ejecuta el script o la aplicación que llama a este método debe tener los privilegios **SeSecurityPrivilege** y **SeRestorePrivilege.** Para obtener más información, vea [Cambiar la seguridad de acceso en objetos protegibles.](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ uint32 GetConfigurationSecurityDescriptor(
 
 <dl> <dt>
 
-*Descriptor* \[ enuncia\]
+*Descriptor* \[ out\]
 </dt> <dd>
 
-Descriptor de seguridad que se va a establecer para la aplicación DCOM.
+Descriptor de seguridad que se establecerá para la aplicación DCOM.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para obtener más información, vea [códigos de retorno de WMI](/windows/desktop/WmiSdk/wmi-return-codes) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
+Devuelve uno de los valores enumerados en la lista siguiente o un valor diferente para indicar un error. Para obtener más información, vea [Códigos de retorno wmi](/windows/desktop/WmiSdk/wmi-return-codes) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 <dl> <dt>
 
@@ -97,11 +97,11 @@ Un parámetro especificado en la llamada al método no es válido
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La instancia de [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos de [**\_ \_ control de descriptor de seguridad**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una [*lista de control de acceso discrecional*](/windows/desktop/SecGloss/d-gly) (DACL) y una [*lista de control de acceso de sistema*](/windows/desktop/SecGloss/s-gly) (SACL). Para obtener más información, vea [listas de Access Control](/windows/desktop/SecAuthZ/access-control-lists).
+La [**instancia \_ de SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa un tipo de datos [**SECURITY DESCRIPTOR \_ \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) y contiene una lista de [*control*](/windows/desktop/SecGloss/d-gly) de acceso discrecional (DACL) y una lista de [*control*](/windows/desktop/SecGloss/s-gly) de acceso del sistema (SACL). Para obtener más información, [vea Access Control .](/windows/desktop/SecAuthZ/access-control-lists)
 
-Si no se concede o habilita **SeSecurityPrivilege** cuando se obtiene un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants) y [ejecutar operaciones con privilegios](/windows/desktop/WmiSdk/executing-privileged-operations).
+Si no se concede o se habilita **SeSecurityPrivilege** al obtener un descriptor de seguridad, solo se devuelve la DACL en el descriptor de seguridad devuelto. Para obtener más información, vea [**Constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants) y [Ejecución de operaciones con privilegios.](/windows/desktop/WmiSdk/executing-privileged-operations)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,8 +111,8 @@ Si no se concede o habilita **SeSecurityPrivilege** cuando se obtiene un descrip
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -124,7 +124,7 @@ Si no se concede o habilita **SeSecurityPrivilege** cuando se obtiene un descrip
 [**Win32 \_ DCOMApplicationSetting**](win32-dcomapplicationsetting.md)
 </dt> <dt>
 
-[**Constantes de privilegio**](/windows/desktop/WmiSdk/privilege-constants)
+[**Constantes de privilegios**](/windows/desktop/WmiSdk/privilege-constants)
 </dt> <dt>
 
 [Objetos de descriptor de seguridad WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)

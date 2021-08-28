@@ -1,23 +1,23 @@
 ---
-description: En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que se envía a una voz de masterización estéreo con el fin de lograr la panorámica entre los altavoces izquierdo y derecho.
+description: En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que genera una voz maestra estéreo para lograr el desplazamiento panorámico entre los hablantes izquierdo y derecho.
 ms.assetid: d87db173-6de0-09eb-7767-df619c88acfd
-title: 'Cómo: desplazar un sonido'
+title: 'Cómo: Desplazar un sonido'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4136d6e30cba1e6b0bc669fef5518d2a56f868f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1e91ff27dfe7c951f95c37fed194a83dac09de8ccec7e37ebc5ad35ca548199
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118696274"
 ---
-# <a name="how-to-pan-a-sound"></a>Cómo: desplazar un sonido
+# <a name="how-to-pan-a-sound"></a>Cómo: Desplazar un sonido
 
-En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que se envía a una voz de masterización estéreo con el fin de lograr la panorámica entre los altavoces izquierdo y derecho.
+En este tema se muestra cómo puede establecer la matriz de salida de una voz de origen mono que genera una voz maestra estéreo para lograr el desplazamiento panorámico entre los hablantes izquierdo y derecho.
 
 ## <a name="to-setup-panning"></a>Para configurar el movimiento panorámico
 
-1.  Recupere la configuración de los altavoces mediante [**IXAudio2MasteringVoice:: GetChannelMask**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2masteringvoice-getchannelmask).
+1.  Recupere la configuración del hablante [**mediante IXAudio2MasteringVoice::GetChannelMask**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2masteringvoice-getchannelmask).
 
     ```
     DWORD dwChannelMask;       
@@ -26,7 +26,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 
     
 
-2.  Cree una matriz que contenga la matriz de salida. El tamaño mínimo de la matriz de salida es el número de canales de la voz de origen que tiene el número de canales de la voz de salida. En este caso, una matriz de ocho elementos controlará una voz mono con cualquier formato de salida hasta 7,1 sonido envolvente.
+2.  Cree una matriz para contener la matriz de salida. El tamaño mínimo de la matriz de salida es el número de canales de la voz de origen multiplicado por el número de canales de la voz de salida. En este caso, una matriz de ocho elementos controlará una salida de voz mono a cualquier formato de salida de hasta 7,1 sonido envolvente.
 
     ```
     float outputMatrix[ 8 ];
@@ -35,7 +35,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 
     
 
-3.  Calcular los niveles de envío en función de la panorámica deseada entre los altavoces izquierdo y derecho. En este ejemplo, los valores de la panorámica oscilarán entre-1 y 1 con-1, lo que indica todo el sonido hasta el altavoz izquierdo y 1, que indica el sonido del altavoz derecho.
+3.  Calcule los niveles de envío en función del movimiento panorámico deseado entre los hablantes izquierdo y derecho. En este ejemplo, los valores de panorámica oscilarán entre -1 y 1 con -1 que indica todo el sonido al altavoz izquierdo y 1 indica todo el sonido al altavoz derecho.
 
     ```
     // pan of -1.0 indicates all left speaker, 
@@ -46,7 +46,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 
     
 
-4.  Establezca los índices de matriz de salida correspondientes a los altavoces izquierdo y derecho con los valores calculados en el paso anterior. Los oradores izquierdo y derecho se determinan examinando la máscara de canal devuelta por [**IXAudio2MasteringVoice:: GetChannelMask**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2masteringvoice-getchannelmask). Puesto que los canales siempre deben estar codificados en el orden especificado en la página de referencia de [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) , es posible determinar el índice de matriz correspondiente a un orador individual.
+4.  Establezca los índices de matriz de salida correspondientes a los altavoces izquierdo y derecho con los valores calculados en el paso anterior. Los altavoces izquierdo y derecho se determinan mediante la búsqueda de la máscara de canal devuelta por [**IXAudio2MasteringVoice::GetChannelMask**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2masteringvoice-getchannelmask). Puesto que los canales siempre se deben codificar en el orden especificado en la página de referencia [**DE LAATEXTENSIBLE,**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) es posible determinar el índice de matriz correspondiente a un orador individual.
 
     ```
     switch (dwChannelMask)
@@ -83,7 +83,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 
     
 
-5.  Aplique la matriz de salida a la voz de origen mediante [**IXAudio2Voice:: SetOutputMatrix**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputmatrix). La voz de origen será una voz de origen o una voz de submezcla que envía a una voz de submezcla o a una voz de la maestra. Puede obtener información sobre las voces de origen y de destino, como su número de canales, mediante [**IXAudio2Voice:: GetVoiceDetails**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-getvoicedetails).
+5.  Aplique la matriz de salida a la voz de origen [**mediante IXAudio2Voice::SetOutputMatrix**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputmatrix). La voz de origen será una voz de origen o una voz de submezcla que se envía a una voz de submezcla o a una voz maestra. Puede obtener información sobre las voces de origen y destino, como su número de canales, mediante [**IXAudio2Voice::GetVoiceDetails**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voice-getvoicedetails).
 
     ```
     // Assuming pVoice sends to pMasteringVoice
@@ -109,7 +109,7 @@ En este tema se muestra cómo puede establecer la matriz de salida de una voz de
 [Cómo: crear un gráfico de procesamiento de audio básico](how-to--build-a-basic-audio-processing-graph.md)
 </dt> <dt>
 
-[Volumen y control de paso de XAudio2](volume-and-pitch-control.md)
+[Control de volumen y tono de XAudio2](volume-and-pitch-control.md)
 </dt> </dl>
 
  

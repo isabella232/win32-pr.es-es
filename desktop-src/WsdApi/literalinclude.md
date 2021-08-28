@@ -4,12 +4,12 @@ ms.assetid: 7a7ffd54-09e9-412d-a637-5dc27597b46e
 title: literalInclude, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1bda6586de7c1bc253a9dd1f348ba644b4f29b7f928335bb0cdd148c0fd1536
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bcfbd72300607dd2c6f3f21e4be3666083b559cb
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757175"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625321"
 ---
 # <a name="literalinclude-element"></a>literalInclude, elemento
 
@@ -29,16 +29,16 @@ Coloca una instrucción include de C o IDL en el código generado.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -48,7 +48,7 @@ Coloca una instrucción include de C o IDL en el código generado.
 <td>cadena de idioma<br/></td>
 <td>No<br/></td>
 <td>Tipo de archivo de encabezado que se va a incluir. <br/> <br/>
-<dt><strong>C</strong></dt> <dd> Incluya un archivo de encabezado de C.<br/> </dd> <dt><strong>Idl</strong></dt> <dd> Incluya un archivo IDL.<br/> </dd> </dl></td>
+<dt><strong>C</strong></dt> <dd> Incluya un archivo de encabezado de C.<br/> </dd> <dt><strong>IDL</strong></dt> <dd> Incluya un archivo IDL.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Local</strong><br/></td>

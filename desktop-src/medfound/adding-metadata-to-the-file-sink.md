@@ -4,20 +4,20 @@ ms.assetid: ecfddf4e-71b4-42c4-8b54-9868cec6ed9b
 title: Agregar metadatos al receptor de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16ea86a09ff9e3d2a25bbf8d00d46691fd803365
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 65e25ddc12b406987de4ec95d3183309e8453696d1bb5b2816054407f1ced4b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606725"
 ---
 # <a name="adding-metadata-to-the-file-sink"></a>Agregar metadatos al receptor de archivos
 
 El receptor de archivos DE ASF es una implementación de [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) proporcionada por Media Foundation que una aplicación puede usar para archivar datos multimedia de ASF en un archivo. Para obtener información sobre el modelo de objetos de los receptores de medios de ASF y el uso general, vea [Receptores multimedia de ASF.](asf-media-sinks.md)
 
-Después [de crear el receptor de archivos ASF,](creating-the-asf-file-sink.md)debe configurarse con información sobre las secuencias y la información de codificación en el archivo de salida. Estos procedimientos se describen [en Adding Stream Information to the ASF File Sink](adding-stream-information-to-the-asf-file-sink.md) y Setting Properties in the File [Sink](setting-properties-in-the-file-sink.md). Además, también puede agregar información de metadatos que incluya pares nombre-valor, como "Autor", Título". En este tema se describe el proceso de agregar información de metadatos al receptor de archivos para que aparezca en el objeto de [encabezado ASF final.](asf-file-structure.md)
+Después [de crear el receptor de archivos ASF,](creating-the-asf-file-sink.md)debe configurarse con información sobre las secuencias y la información de codificación en el archivo de salida. Estos procedimientos se describen [en Adding Stream Information to the ASF File Sink](adding-stream-information-to-the-asf-file-sink.md) y Setting Properties in the File [Sink](setting-properties-in-the-file-sink.md). Además, también puede agregar información de metadatos que incluya pares nombre-valor, como "Author", Title". En este tema se describe el proceso de agregar información de metadatos al receptor de archivos para que aparezca en el objeto de [encabezado ASF final.](asf-file-structure.md)
 
-Puede agregar información de metadatos al receptor de archivos ASF antes de compilar la topología de codificación. El objeto ContentInfo de ASF para el receptor de archivos realiza un seguimiento de las propiedades de los metadatos y se exponen a la aplicación a través de la [**interfaz DESMETADATA.**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) Algunas de estas propiedades, como "IsVBR", que indica si el archivo contiene secuencias de velocidad de bits variable (VBR), las establece automáticamente el receptor de archivos analizando las propiedades de codificación de secuencias establecidas.
+Puede agregar información de metadatos al receptor de archivos ASF antes de compilar la topología de codificación. El objeto ContentInfo de ASF para el receptor de archivos realiza un seguimiento de las propiedades de los metadatos y se exponen a la aplicación a través de la [**interfaz DEDATOMETADATA.**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) Algunas de estas propiedades, como "IsVBR", que indica si el archivo contiene secuencias de velocidad de bits variable (VBR), se establecen automáticamente mediante el receptor de archivos analizando las propiedades de codificación de secuencias establecidas.
 
 Para obtener una lista completa de las propiedades, consulte el tema "Lista de atributos" en la documentación del SDK de formato.
 

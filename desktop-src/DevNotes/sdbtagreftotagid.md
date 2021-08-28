@@ -1,7 +1,7 @@
 ---
-description: Recupera el TAGID y un identificador de la base de datos de Shim para el TAGREF especificado.
+description: Recupera el TAGID y un identificador de la base de datos shim para el TAGREF especificado.
 ms.assetid: 869c6af5-4c10-4358-9d6a-1a354be6f4e9
-title: SdbTagRefToTagID función)
+title: Función SdbTagRefToTagID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: faff00adc25a741342e586adea2f645a62eca36d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: feeb622fd196ed20efb60d866d59b634fdcd9ecd955a97a1d7af0aef1347c8f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815325"
 ---
-# <a name="sdbtagreftotagid-function"></a>SdbTagRefToTagID función)
+# <a name="sdbtagreftotagid-function"></a>Función SdbTagRefToTagID
 
-Recupera el **TAGID** y un identificador de la base de datos de Shim para el [**TAGREF**](tagref.md)especificado.
+Recupera el **TAGID y un** identificador de la base de datos shim para el [**TAGREF especificado.**](tagref.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,37 +42,37 @@ BOOL WINAPI SdbTagRefToTagID(
 
 <dl> <dt>
 
-*hSDB* \[ de\]
+*hSDB* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad (shim) devuelta por la función [**SdbInitDatabase**](sdbinitdatabase.md) .
+Identificador de la base de datos shim devuelta por la [**función SdbInitDatabase.**](sdbinitdatabase.md)
 
 </dd> <dt>
 
-*trWhich* \[ de\]
+*trWhich* \[ En\]
 </dt> <dd>
 
 [**TAGREF**](tagref.md).
 
 </dd> <dt>
 
-*ppdb* \[ enuncia\]
+*ppdb* \[ out\]
 </dt> <dd>
 
-El identificador resultante para la base de datos de Shim.
+Identificador resultante de la base de datos shim.
 
 </dd> <dt>
 
-*ptiWhich* \[ enuncia\]
+*ptiWhich* \[ out\]
 </dt> <dd>
 
-El **TAGID** resultante.
+TagID **resultante.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve **true** si se ejecuta correctamente o **false** en caso de error.
+La función devuelve **TRUE si** se ejecuta correctamente o **FALSE** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ La función devuelve **true** si se ejecuta correctamente o **false** en caso de
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

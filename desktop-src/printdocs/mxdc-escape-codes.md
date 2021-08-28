@@ -1,19 +1,19 @@
 ---
-description: En esta sección se describen las estructuras que se usan con la \_ función de escape MXDC y el convertidor de documentos XPS de Microsoft (MXDC).
+description: En esta sección se describen las estructuras que se usan con la función ESCAPE de MXDC y el Convertidor \_ de documentos XPS de Microsoft (MXDC).
 ms.assetid: 102dc056-7f65-47d4-8bcd-3b11608bdb9c
-title: MXDC estructuras de código de escape
+title: Estructuras de código de escape de MXDC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b35c393d00dab227a91cbbb55eeca62039b41ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b87ef962be9f8fffa1ae0b2d126cecfda4cc157118f4defd21360b030dc9d30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948395"
 ---
-# <a name="mxdc-escape-code-structures"></a>MXDC estructuras de código de escape
+# <a name="mxdc-escape-code-structures"></a>Estructuras de código de escape de MXDC
 
-En esta sección se describen las estructuras que se usan con la función de [**\_ escape MXDC**](mxdc-escape.md) y el convertidor de documentos XPS de Microsoft (MXDC).
+En esta sección se describen las estructuras que se usan con la función [**\_ ESCAPE de MXDC**](mxdc-escape.md) y microsoft XPS Document Converter (MXDC).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,14 +21,14 @@ En esta sección se describen las estructuras que se usan con la función de [**
 
 | Estructura                                                                              | Descripción                                                                                                                                                                                                                                                                          |
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MXDC \_ encabezado de escape \_ \_ T**](mxdcescapeheader.md)<br/>                         | La estructura del [**\_ \_ encabezado \_ de escape MXDC**](/windows/desktop/printdocs/mxdcescapeheader) contiene el código de operación para una llamada a [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) con [**MXDC \_ escape**](mxdc-escape.md) como el parámetro *nEscape* . También proporciona los tamaños de los búferes de entrada y salida.<br/>  |
-| [**MXDC \_ Get \_ filename \_ Data \_ T**](mxdcgetfilenamedata.md)<br/>                 | La estructura [**MXDC \_ Get \_ filename \_ Data \_ T**](/windows/desktop/printdocs/mxdcgetfilenamedata) contiene la ruta de acceso completa y el nombre de archivo de un archivo de salida del convertidor de documentos XPS de Microsoft (MXDC).<br/>                                                                                                     |
-| [**MXDC \_ PRINTTICKET \_ escape \_ T**](mxdcprintticketescape.md)<br/>               | La estructura de [**\_ \_ escape \_ t de MXDC PrintTicket**](mxdcprintticketescape.md) es una estructura de [**encabezado de \_ escape MXDC \_ \_ T**](mxdcescapeheader.md) concatenada con una estructura [**MXDC \_ PRINTTICKET \_ Data \_ t**](mxdcprintticketpassthrough.md) .<br/>                            |
-| [**MXDC \_ datos de PRINTTICKET \_ \_**](mxdcprintticketpassthrough.md)<br/>            | La estructura [**MXDC \_ PRINTTICKET \_ Data \_ T**](/windows/desktop/printdocs/mxdcprintticketpassthrough) contiene un vale de impresión de documentos XPS, que contiene la configuración del trabajo de impresión y la impresora, para pasar al archivo de salida del convertidor de documentos XPS de Microsoft (MXDC) sin ningún procesamiento.<br/>              |
-| [**MXDC \_ S0PAGE \_ Data \_ T**](mxdcs0pagedata.md)<br/>                             | La estructura [**MXDC \_ S0PAGE \_ Data \_ T**](/windows/desktop/printdocs/mxdcs0pagedata) contiene una página de documento XPS que se pasará al archivo de salida del convertidor de documentos XPS de Microsoft (MXDC) sin ningún procesamiento.<br/>                                                                                  |
-| [**MXDC \_ S0PAGE \_ PASSTHROUGH \_ escape \_ T**](mxdcs0pagepassthroughescape.md)<br/> | La estructura [**MXDC \_ S0PAGE \_ PASSTHROUGH \_ escape \_ t**](/windows/desktop/printdocs/mxdcs0pagepassthroughescape) es una estructura de [**\_ \_ encabezado \_ de escape MXDC**](mxdcescapeheader.md) que se concatena con una estructura [**MXDC \_ S0PAGE \_ Data \_ t**](mxdcs0pagedata.md) .<br/>                             |
-| [**MXDC \_ S0PAGE \_ de \_ escape de recurso \_ T**](mxdcs0pageresourceescape.md)<br/>       | La estructura de MXDC de los [**\_ \_ recursos S0PAGE \_ \_**](/windows/desktop/printdocs/mxdcs0pageresourceescape) de la estructura t es una estructura de [**encabezado de escape MXDC que se concatena \_ \_ \_**](mxdcescapeheader.md) con una estructura de [**\_ \_ \_ recurso \_ t de MXDC XPS S0PAGE**](mxdcxpss0pageresource.md) .<br/>                   |
-| [**\_ \_ \_ Recurso T de MXDC XPS S0PAGE \_**](mxdcxpss0pageresource.md)<br/>             | La estructura de [**\_ \_ \_ recursos \_ T de MXDC XPS S0PAGE**](/windows/desktop/printdocs/mxdcxpss0pageresource) contiene información sobre un recurso, como una imagen o fuente, que está asociada a una página de documento XPS y que se va a pasar al archivo de salida del convertidor de documentos XPS de Microsoft (MXDC).<br/> |
+| [**ENCABEZADO DE ESCAPE DE MXDC \_ \_ \_ T**](mxdcescapeheader.md)<br/>                         | La [**estructura MXDC \_ ESCAPE HEADER \_ \_ T**](/windows/desktop/printdocs/mxdcescapeheader) contiene el código de operación de una llamada a [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) con [**MXDC \_ ESCAPE**](mxdc-escape.md) como parámetro *nEscape.* También proporciona los tamaños de los búferes de entrada y salida.<br/>  |
+| [**MXDC \_ GET \_ FILENAME \_ DATA \_ T**](mxdcgetfilenamedata.md)<br/>                 | La [**estructura MXDC \_ GET FILENAME \_ DATA \_ \_ T**](/windows/desktop/printdocs/mxdcgetfilenamedata) contiene la ruta de acceso completa y el nombre de archivo de un archivo de salida del Convertidor de documentos DE Microsoft XPS (MXDC).<br/>                                                                                                     |
+| [**MXDC \_ PRINTTICKET \_ ESCAPE \_ T**](mxdcprintticketescape.md)<br/>               | La [**estructura MXDC \_ PRINTTICKET ESCAPE \_ \_ T**](mxdcprintticketescape.md) es una estructura [**MXDC ESCAPE HEADER \_ \_ \_ T**](mxdcescapeheader.md) concatenada con una estructura [**\_ MXDC PRINTTICKET \_ DATA \_ T.**](mxdcprintticketpassthrough.md)<br/>                            |
+| [**MXDC \_ PRINTTICKET \_ DATA \_ T**](mxdcprintticketpassthrough.md)<br/>            | La estructura [**MXDC \_ PRINTTICKET \_ DATA \_ T**](/windows/desktop/printdocs/mxdcprintticketpassthrough) contiene un vale de impresión de documentos XPS, que contiene la configuración del trabajo de impresión e impresora, para pasar al archivo de salida del Convertidor de documentos XPS de Microsoft (MXDC) sin ningún procesamiento.<br/>              |
+| [**MXDC \_ S0PAGE \_ DATA \_ T**](mxdcs0pagedata.md)<br/>                             | La [**estructura MXDC \_ S0PAGE \_ DATA \_ T**](/windows/desktop/printdocs/mxdcs0pagedata) contiene una página de documento XPS que se pasará al archivo de salida del Convertidor de documentos XPS de Microsoft (MXDC) sin ningún procesamiento.<br/>                                                                                  |
+| [**MXDC \_ S0PAGE \_ PASSTHROUGH \_ ESCAPE \_ T**](mxdcs0pagepassthroughescape.md)<br/> | La [**estructura MXDC \_ S0PAGE \_ PASSTHROUGH ESCAPE \_ \_ T**](/windows/desktop/printdocs/mxdcs0pagepassthroughescape) es una estructura [**MXDC ESCAPE HEADER \_ \_ \_ T**](mxdcescapeheader.md) concatenada con una estructura [**DATA \_ \_ \_ T de MXDC S0PAGE.**](mxdcs0pagedata.md)<br/>                             |
+| [**MXDC \_ S0PAGE \_ RESOURCE \_ ESCAPE \_ T**](mxdcs0pageresourceescape.md)<br/>       | La [**estructura MXDC \_ S0PAGE \_ RESOURCE ESCAPE \_ \_ T**](/windows/desktop/printdocs/mxdcs0pageresourceescape) es una estructura T DE ENCABEZADO DE ESCAPE DE [**MXDC \_ \_ \_**](mxdcescapeheader.md) concatenada con una estructura T de RECURSOS [**\_ \_ S0PAGE \_ \_ de MXDC XPS.**](mxdcxpss0pageresource.md)<br/>                   |
+| [**MXDC \_ XPS \_ S0PAGE \_ RESOURCE \_ T**](mxdcxpss0pageresource.md)<br/>             | La estructura [**MXDC \_ XPS \_ S0PAGE \_ RESOURCE \_ T**](/windows/desktop/printdocs/mxdcxpss0pageresource) contiene información sobre un recurso, como una imagen o fuente, que está asociado a una página de documento XPS y se va a pasar al archivo de salida del Convertidor de documentos XPS de Microsoft (MXDC).<br/> |
 
 
 
@@ -38,7 +38,7 @@ En esta sección se describen las estructuras que se usan con la función de [**
 
 <dl> <dt>
 
-[**\_escape MXDC**](mxdc-escape.md)
+[**MXDC \_ ESCAPE**](mxdc-escape.md)
 </dt> </dl>
 
  

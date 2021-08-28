@@ -3,27 +3,27 @@ title: MetadataExchangeSample
 description: En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de TCP. El servicio también admite WS-MetadataExchange.
 ms.assetid: 8f14e6a8-ccb9-4556-b04f-df08c6c80adf
 keywords:
-- MetadataExchangeSample API de servicios Web de Windows
+- MetadataExchangeSample Windows Web Services API
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a2d04510d664e11a9fd9a812411b4dbd197e364
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7077cf904d358a9697b0993a27c136215787243bdfce9e7d29d659a5e275d09b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119881005"
 ---
 # <a name="metadataexchangesample"></a>MetadataExchangeSample
 
 En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de TCP. El servicio también admite WS-MetadataExchange.
 
--   [MexService. cpp](#mexservicecpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [MexService.cpp](#mexservicecpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="mexservicecpp"></a>MexService. cpp
+## <a name="mexservicecpp"></a>MexService.cpp
 
 
 ```C++
@@ -512,7 +512,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -652,9 +652,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

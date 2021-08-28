@@ -251,7 +251,7 @@ HRESULT get_SiteName(
 **UserName**
 </dt> <dd> <dl>
 
-Recupera el Active Directory nombre distintivo del usuario actual, que es el usuario que ha iniciado sesión o el usuario suplantado por el subproceso que realiza la llamada.
+Recupera el Active Directory nombre distintivo del usuario actual, que es el usuario que inició sesión o el usuario suplantado por el subproceso que realiza la llamada.
 
 <dt>
 
@@ -333,7 +333,7 @@ int main()
 
 
 
-En el ejemplo Visual Basic código siguiente se recupera la Windows del sistema.
+El siguiente Visual Basic de código recupera la información Windows del sistema.
 
 
 ```VB
@@ -346,7 +346,7 @@ Debug.print "PDC Role Owner: " & sys.PDCRoleOwner
 
 
 
-El siguiente ejemplo de código DE VBScript/ASP recupera la Windows del sistema.
+El siguiente ejemplo de código VBScript/ASP recupera la información Windows del sistema.
 
 
 ```VB
@@ -366,7 +366,7 @@ Response.Write "PDC Role Owner: " & sys.PDCRoleOwner
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -376,7 +376,7 @@ Response.Write "PDC Role Owner: " & sys.PDCRoleOwner
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

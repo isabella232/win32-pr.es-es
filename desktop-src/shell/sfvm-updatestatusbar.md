@@ -1,6 +1,6 @@
 ---
-description: 'Notifica al objeto de devolución de llamada que se está actualizando la barra de estado. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensaje de SFVM_UPDATESTATUSBAR (ShlObj. h)
+description: Notifica al objeto de devolución de llamada que la barra de estado se está actualizando. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_UPDATESTATUSBAR mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: f1bac364-1011-4308-8b9b-8ed1800dd30d
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 14045c797d7292099c1c7b2c67f5958609d8d6b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 106782383b90af85dca82e445dfc21f77e0f3def73174da9147aadc988f2694e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883905"
 ---
-# <a name="sfvm_updatestatusbar-message"></a>SFVM \_ UPDATESTATUSBAR
+# <a name="sfvm_updatestatusbar-message"></a>Mensaje \_ UPDATESTATUSBAR de SFVM
 
-Notifica al objeto de devolución de llamada que se está actualizando la barra de estado. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Notifica al objeto de devolución de llamada que la barra de estado se está actualizando. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -39,30 +39,30 @@ SFVM_UPDATESTATUSBAR
 
 <dl> <dt>
 
-*fInitialize* \[ de\]
+*fInitialize* \[ En\]
 </dt> <dd>
 
-Valor **booleano** que se establece en **true** si se está inicializando la barra de estado.
+Valor **BOOL** que se establece en **TRUE si** se inicializa la barra de estado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando reciba esta notificación:
 
--   Vuelva a \_ Aceptar si va a controlar la actualización.
--   Devuelve MAKE \_ HRESULT (Severity \_ Success, 0, 1) para que el objeto de vista de carpeta del sistema establezca el texto de la barra de estado.
--   Devolver E \_ no puede hacer que el objeto de vista de carpeta del sistema controle la barra de estado.
+-   Devuelve S \_ OK si va a controlar la actualización.
+-   Devuelve MAKE \_ HRESULT(SEVERITY SUCCESS,0,1) para que el objeto de vista de carpeta del sistema \_ establezca el texto de la barra de estado.
+-   Devuelve E \_ FAIL para que el objeto de vista de carpeta del sistema controle la barra de estado.
 
-El texto predeterminado de la barra de estado es el siguiente.
+El texto de la barra de estado predeterminado es el siguiente.
 
 
 
 | Estado                      | Texto de la barra de estado                         |
 |-----------------------------|-----------------------------------------|
-| No hay elementos seleccionados           | " \# \# objetos" (en la carpeta)          |
-| Un elemento seleccionado           | El recuadro informativo para el elemento, si está disponible. |
-| Hay más de un elemento seleccionado | " \# \# objetos seleccionados"                 |
+| No hay elementos seleccionados           | " \# \# objects" (en la carpeta )          |
+| Un elemento seleccionado           | Información sobre el elemento, si está disponible. |
+| Más de un elemento seleccionado | " \# \# objetos seleccionados"                 |
 
 
 
@@ -76,7 +76,7 @@ El texto predeterminado de la barra de estado es el siguiente.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

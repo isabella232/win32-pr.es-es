@@ -1,7 +1,7 @@
 ---
 description: 'CTransformInputPin::m_pTransformFilter miembro: puntero al filtro propietario.'
 ms.assetid: 209b1d64-27ae-4f40-83a1-5485a470aef9
-title: CTransformInputPin::m_pTransformFilter miembro (Transfrm.h)
+title: Miembro CTransformInputPin::m_pTransformFilter (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8dc532977c34f897f248cb3011584ffd936e4fb8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 67ece8674f2dd80e35fd51373e563dab408850426ef3f9fa5d625aa8ecccadde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687115"
 ---
 # <a name="ctransforminputpinm_ptransformfilter-member"></a>Miembro CTransformInputPin::m \_ pTransformFilter
 
@@ -42,7 +42,7 @@ CTransformFilter *m_pTransformFilter;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

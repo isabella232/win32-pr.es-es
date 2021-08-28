@@ -1,7 +1,7 @@
 ---
-description: Indica la ubicación en la que se buscará un almacén de certificados Active Directory.
+description: Indica la ubicación en la que se va a buscar un almacén Active Directory certificados.
 ms.assetid: 56b9695e-7ab9-405b-9cae-d78c43071186
-title: Enumeración CAPICOM_ACTIVE_DIRECTORY_SEARCH_LOCATION (CAPICOM. h)
+title: CAPICOM_ACTIVE_DIRECTORY_SEARCH_LOCATION enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: cd630bdc0c09a6bb57a9163ec972451011f3e826
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52f205717f3ba361c2c15dafc6e53f6cef3cd9d41cbbbf2ed243c60a74c2ca62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879445"
 ---
-# <a name="capicom_active_directory_search_location-enumeration"></a>CAPICOM \_ Active \_ Directory \_ Search \_ Location (enumeración)
+# <a name="capicom_active_directory_search_location-enumeration"></a>CAPICOM \_ ACTIVE DIRECTORY SEARCH LOCATION \_ \_ \_ (enumeración)
 
-El tipo de enumeración ubicación de **\_ búsqueda de Active \_ Directory \_ \_ de CAPICOM** indica la ubicación en la que se buscará un almacén de [*certificados*](../secgloss/c-gly.md)Active Directory.
+El **tipo de enumeración CAPICOM \_ ACTIVE DIRECTORY SEARCH \_ \_ \_ LOCATION** indica la ubicación en la que se va a buscar Active Directory [*almacén de certificados*](../secgloss/c-gly.md).
 
 ## <a name="members"></a>Miembros
 
@@ -30,17 +30,17 @@ El tipo de enumeración ubicación de **\_ búsqueda de Active \_ Directory \_ \
 
 | Miembro                               | Descripción                                  | Value |
 |--------------------------------------|----------------------------------------------|-------|
-| **CAPICOM \_ Search \_ any**             | Busca en todas las ubicaciones disponibles.<br/> | 0     |
-| **CAPICOM \_ Buscar en el \_ \_ catálogo global** | Busca solo en el catálogo global.<br/> | 1     |
-| **\_ \_ dominio predeterminado de búsqueda de CAPICOM \_** | Busca solo en el dominio predeterminado.<br/> | 2     |
+| **CAPICOM \_ SEARCH \_ ANY**             | Busca en todas las ubicaciones disponibles.<br/> | 0     |
+| **CATÁLOGO GLOBAL DE CAPICOM \_ SEARCH \_ \_** | Busca solo en el catálogo global.<br/> | 1     |
+| **DOMINIO PREDETERMINADO DE CAPICOM \_ SEARCH \_ \_** | Busca solo el dominio predeterminado.<br/> | 2     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este tipo de enumeración se usa en la siguiente propiedad:
+La propiedad siguiente usa este tipo de enumeración:
 
--   [**Settings. ActiveDirectorySearchLocation**](settings-activedirectorysearchlocation.md)
+-   [**Configuración. ActiveDirectorySearchLocation**](settings-activedirectorysearchlocation.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,8 +48,8 @@ Este tipo de enumeración se usa en la siguiente propiedad:
 
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

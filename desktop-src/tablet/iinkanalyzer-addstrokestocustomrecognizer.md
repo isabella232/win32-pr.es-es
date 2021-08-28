@@ -1,7 +1,7 @@
 ---
 description: Agrega datos de trazo para varios trazos a un nodo de reconocedor personalizado.
 ms.assetid: 77ded896-8573-42de-a41e-4866894dfe2b
-title: 'IInkAnalyzer:: AddStrokesToCustomRecognizer (método) (IACom. h)'
+title: Método IInkAnalyzer::AddStrokesToCustomRecognizer (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 6df1b31957f3b4087b51fbad0e7b527c2ede799c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c50bcd1faa9df94847e3100309fc8598511dd760fa5efd6ccdf84812020fd63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719224"
 ---
-# <a name="iinkanalyzeraddstrokestocustomrecognizer-method"></a>IInkAnalyzer:: AddStrokesToCustomRecognizer (método)
+# <a name="iinkanalyzeraddstrokestocustomrecognizer-method"></a>Método IInkAnalyzer::AddStrokesToCustomRecognizer
 
 Agrega datos de trazo para varios trazos a un nodo de reconocedor personalizado.
 
@@ -46,108 +46,108 @@ HRESULT AddStrokesToCustomRecognizer(
 
 <dl> <dt>
 
-*ulStrokeIdsCount* \[ de\]
+*ulStrokeIdsCount* \[ En\]
 </dt> <dd>
 
-Número de trazos que se van a agregar.
+Número de trazos que se agregarán.
 
 </dd> <dt>
 
-*plStrokeIds* \[ de\]
+*plStrokeIds* \[ En\]
 </dt> <dd>
 
-Una matriz que contiene los identificadores de trazo.
+Matriz que contiene los identificadores de trazo.
 
 </dd> <dt>
 
-*ulStrokePacketDescriptionCount* \[ de\]
+*ulStrokePacketDescriptionCount* \[ En\]
 </dt> <dd>
 
-El número de propiedades de cada paquete.
+Número de propiedades de cada paquete.
 
 </dd> <dt>
 
-*pStrokePacketDescriptionGuids* \[ de\]
+*pStrokePacketDescriptionGuids* \[ En\]
 </dt> <dd>
 
-Una matriz que contiene los identificadores de propiedad de paquete.
+Matriz que contiene los identificadores de propiedad de paquete.
 
 </dd> <dt>
 
-*pulPacketDataCountPerStroke* \[ de\]
+*pulPacketDataCountPerStroke* \[ En\]
 </dt> <dd>
 
-Una matriz que contiene el número de paquetes de cada trazo.
+Matriz que contiene el número de paquetes en cada trazo.
 
 </dd> <dt>
 
-*plStrokePacketData* \[ de\]
+*plStrokePacketData* \[ En\]
 </dt> <dd>
 
-Una matriz que contiene los datos del paquete para los trazos.
+Matriz que contiene los datos del paquete para los trazos.
 
 </dd> <dt>
 
-*pCustomRecognizer* \[ de\]
+*pCustomRecognizer* \[ En\]
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) de tipo **CustomRecognizer** al que se van a agregar los trazos.
+[**IContextNode de**](icontextnode.md) tipo **CustomRecognizer** al que se agregan los trazos.
 
 </dd> <dt>
 
-*ppContextNodeStrokeAddedTo* \[ enuncia\]
+*ppContextNodeStrokeAddedTo* \[ out\]
 </dt> <dd>
 
-[**IContextNode**](icontextnode.md) en el que el analizador de tinta ha agregado los trazos.
+[**IContextNode al**](icontextnode.md) que el analizador de entrada de lápiz agregó los trazos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodeStrokeAddedTo* cuando ya no necesite usar el objeto.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodeStrokeAddedTo* cuando ya no necesite usar el objeto .
 
  
 
-Cuando *ppContextNodeStrokeAddedTo* es **null**, indica que el llamador no está interesado en el valor devuelto del método.
+Cuando *ppContextNodeStrokeAddedTo* es **NULL,** indica que el autor de la llamada no está interesado en el valor devuelto del método .
 
-[**IInkAnalyzer**](iinkanalyzer.md) agrega los trazos a un [**IContextNode**](icontextnode.md) de tipo **CustomRecognizer** (consulte tipos de [nodo de contexto](context-node-types.md)). Este nodo está en la colección de subnodos del nodo raíz (consulte métodos [**IInkAnalyzer:: GetRootNode**](iinkanalyzer-getrootnode.md) y [**IContextNode:: GetSubNodes**](icontextnode-getsubnodes.md) ).
+[**IInkAnalyzer**](iinkanalyzer.md) agrega los trazos a un [**IContextNode**](icontextnode.md) de tipo **CustomRecognizer** (vea [Tipos de nodo de contexto).](context-node-types.md) Este nodo está en la colección de subnodos del nodo raíz (vea Los métodos [**IInkAnalyzer::GetRootNode e**](iinkanalyzer-getrootnode.md) [**IContextNode::GetSubNodes).**](icontextnode-getsubnodes.md)
 
-[**IInkAnalyzer**](iinkanalyzer.md) asigna el identificador de referencia cultural del subproceso de entrada activo a los trazos y agrega los trazos al primer nodo **UnclassifiedInk** bajo el nodo **CustomRecognizer** . Si no existe ningún nodo **UnclassifiedInk** , se crea. Si el [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) asociado con el nodo **CustomRecognizer** no admite el identificador de referencia cultural, el **IInkAnalyzer** continúa analizando y generando una advertencia [**IAnalysisWarning**](ianalysiswarning.md) . Esta advertencia tiene un valor [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) de **AnalysisWarningCode \_ LanguageIdNotRespected**.
+[**IInkAnalyzer**](iinkanalyzer.md) asigna el identificador de referencia cultural del subproceso de entrada activo a los trazos y agrega los trazos al primer nodo **UnclassifiedInk** bajo el **nodo CustomRecognizer.** Si no **existe ningún nodo UnclassifiedInk,** se crea. Si [**el IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) asociado al nodo **CustomRecognizer** no admite el identificador de referencia cultural, **IInkAnalyzer** continúa analizando y genera una advertencia [**IAnalysisWarning.**](ianalysiswarning.md) Esta advertencia tiene el [**valor AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) **de AnalysisWarningCode \_ LanguageIdNotRespected.**
 
-*plStrokePacketData* contiene los datos de paquete de todos los trazos. *pStrokePacketDescriptionGuids* contiene los identificadores únicos globales (GUID) que describen los tipos de datos de paquetes incluidos para cada punto de cada trazo. Para obtener una lista completa de las propiedades de paquete disponibles, consulte [constantes de PacketPropertyGuids](packetpropertyguids-constants.md).
+*plStrokePacketData contiene* datos de paquetes para todos los trazos. *pStrokePacketDescriptionGuids* contiene los identificadores únicos globales (GUID) que describen los tipos de datos de paquetes incluidos para cada punto de cada trazo. Para obtener una lista completa de las propiedades de paquete disponibles, vea [PacketPropertyGuids Constants](packetpropertyguids-constants.md).
 
 > [!Note]  
-> Solo se pueden agregar trazos con las mismas descripciones de paquete en una única llamada al **método IInkAnalyzer:: AddStrokesToCustomRecognizer**.
+> Solo se pueden agregar trazos con las mismas descripciones de paquetes en una sola llamada al método **IInkAnalyzer::AddStrokesToCustomRecognizer**.
 
  
 
-Este método expande la región desfasada a la Unión del valor actual de la región y el rectángulo de selección de los trazos agregados.
+Este método expande la región desusada a la unión del valor actual de la región y el cuadro de límite de los trazos agregados.
 
-[**IInkAnalyzer**](iinkanalyzer.md) devuelve un **valor HRESULT** de **E \_ INVALIDARG** en las siguientes circunstancias.
+[**IInkAnalyzer devuelve**](iinkanalyzer.md) un **valor HRESULT** de **E \_ INVALIDARG en** las siguientes circunstancias.
 
--   El [**IInkAnalyzer**](iinkanalyzer.md) ya contiene un trazo con el mismo identificador que uno de los trazos que se van a agregar.
--   El parámetro *pCustomRecognizer* contiene un nodo de reconocedor personalizado que está asociado a un objeto [**IInkAnalyzer**](iinkanalyzer.md) diferente.
--   El parámetro *pCustomRecognizer* contiene una [**IContextNode**](icontextnode.md) que no es de tipo **CustomRecognizer**.
+-   [**IInkAnalyzer**](iinkanalyzer.md) ya contiene un trazo con el mismo identificador que uno de los trazos que se van a agregar.
+-   El *parámetro pCustomRecognizer* contiene un nodo de reconocedor personalizado que está asociado a un objeto [**IInkAnalyzer**](iinkanalyzer.md) diferente.
+-   El *parámetro pCustomRecognizer* contiene un [**IContextNode**](icontextnode.md) que no es de tipo **CustomRecognizer.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -157,13 +157,13 @@ Este método expande la región desfasada a la Unión del valor actual de la reg
 [Tipos de nodo de contexto](context-node-types.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: AddStrokeToCustomRecognizer (método)**](iinkanalyzer-addstroketocustomrecognizer.md)
+[**IInkAnalyzer::AddStrokeToCustomRecognizer (Método)**](iinkanalyzer-addstroketocustomrecognizer.md)
 </dt> <dt>
 
-[**IInkAnalyzer:: CreateCustomRecognizer (método)**](iinkanalyzer-createcustomrecognizer.md)
+[**IInkAnalyzer::CreateCustomRecognizer (Método)**](iinkanalyzer-createcustomrecognizer.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

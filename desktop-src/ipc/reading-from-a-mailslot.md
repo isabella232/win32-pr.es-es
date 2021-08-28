@@ -1,21 +1,21 @@
 ---
-description: Cómo leer desde un buzón de correo. El proceso que crea un buzón de correo puede leer mensajes de él mediante el uso del identificador de buzón de correo en una llamada a la función ReadFile.
+description: Cómo leer desde un mailslot. El proceso que crea un mailslot puede leer mensajes de él mediante el identificador mailslot en una llamada a la función ReadFile.
 ms.assetid: e193dca9-3b77-4e41-be6d-90992e1a8fe3
-title: Leer de un buzón de correo
+title: Lectura desde mailslot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35458f90ca381689275417e0e525c2d5a31ac9e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fdab5eb032be4015f0b47e8495dfed71451205270c0659b5bdeabfcc8d28689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118481588"
 ---
-# <a name="reading-from-a-mailslot"></a>Leer de un buzón de correo
+# <a name="reading-from-a-mailslot"></a>Lectura desde mailslot
 
-El proceso que crea un buzón de correo puede leer mensajes de él mediante el uso del identificador de buzón de correo en una llamada a la función [**readfile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) . En el ejemplo siguiente se llama a la función [**GetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-getmailslotinfo) para determinar si hay mensajes en el buzón de correo. Si los mensajes están en espera, se muestran cada uno junto con el número de mensajes que quedan para leer.
+El proceso que crea un mailslot puede leer mensajes de él mediante el identificador mailslot en una llamada a la [**función ReadFile.**](/windows/desktop/api/fileapi/nf-fileapi-readfile) En el ejemplo siguiente se llama [**a la función GetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-getmailslotinfo) para determinar si hay mensajes en mailslot. Si los mensajes están esperando, cada uno se muestra junto con el número de mensajes que quedan por leer.
 
-Un buzón de correo existe hasta que se llama a la función [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) para todos los identificadores de servidor abiertos o hasta que todos los procesos de servidor que poseen un identificador de buzón de correo salgan. En ambos casos, los mensajes no leídos se eliminan del buzón de correo, se cierran todos los identificadores de cliente en el buzón de correo y el propio buzón se elimina de la memoria.
+Existe un mailslot hasta que se llama a la función [**CloseHandle**](/windows/desktop/api/handleapi/nf-handleapi-closehandle) para todos los identificadores de servidor abiertos o hasta que todos los procesos de servidor que poseen una salida de identificador mailslot. En ambos casos, los mensajes no leídos se eliminan de mailslot, se cierran todos los identificadores de cliente del mailslot y el propio mailslot se elimina de la memoria.
 
 
 ```C++
@@ -154,7 +154,7 @@ void main()
 
 
 
-El siguiente es el resultado que se muestra cuando se ejecuta este ejemplo con el cliente de buzón de correo que se muestra en [escribir en un buzón de correo](writing-to-a-mailslot.md).
+A continuación se muestra la salida que se muestra cuando se ejecuta este ejemplo con el cliente mailslot que se muestra en [Writing to a Mailslot](writing-to-a-mailslot.md).
 
 ``` syntax
 Waiting for a message...

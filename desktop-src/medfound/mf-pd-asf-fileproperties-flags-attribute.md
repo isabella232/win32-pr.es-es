@@ -1,19 +1,19 @@
 ---
-description: Especifica si se va a difundir o buscar un archivo de formato de sistema avanzado (ASF). Este valor corresponde al campo Flags del objeto de propiedades de archivo, definido en la especificación ASF.
+description: Especifica si un archivo de formato de sistemas avanzados (ASF) se difunde o se puede buscar. Este valor corresponde al campo Flags del objeto Propiedades de archivo, definido en la especificación de ASF.
 ms.assetid: 427f0dca-f945-4c89-a87a-a7c86291b1c5
-title: MF_PD_ASF_FILEPROPERTIES_FLAGS atributo (Wmcontainer. h)
+title: MF_PD_ASF_FILEPROPERTIES_FLAGS atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee294642188a0f2e22143feeca6791fea591cbb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ebc42bac8ae6efd8c28fe93a4114b7e0b2e85f4daaba708a35e06231e62de9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449055"
 ---
-# <a name="mf_pd_asf_fileproperties_flags-attribute"></a>MF \_ PD \_ ASF \_ FILEPROPERTIES \_ atributo Flags
+# <a name="mf_pd_asf_fileproperties_flags-attribute"></a>Atributo \_ MF PD \_ ASF \_ FILEPROPERTIES \_ FLAGS
 
-Especifica si se va a difundir o buscar un archivo de formato de sistema avanzado (ASF). Este valor corresponde al campo Flags del objeto de propiedades de archivo, definido en la especificación ASF.
+Especifica si un archivo de formato de sistemas avanzados (ASF) se difunde o se puede buscar. Este valor corresponde al campo Flags del objeto Propiedades de archivo, definido en la especificación de ASF.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,30 +21,30 @@ Especifica si se va a difundir o buscar un archivo de formato de sistema avanzad
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los descriptores de presentación para el contenido ASF. El valor del atributo es una operación OR bit a bit de las marcas siguientes:
+Este atributo se aplica a los descriptores de presentación para el contenido de ASF. El valor del atributo es un OR bit a bit de las marcas siguientes:
 
 
 
 | Marca | Descripción                                                                                                                                                                                                                                                                                       |
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x01 | Marca de difusión. El archivo está en proceso de creación.                                                                                                                                                                                                                                      |
-| 0x02 | Marca de búsqueda. Se busca en el archivo.<br/> Se hace búsquedas en un archivo si hay una secuencia de audio y el tamaño máximo del paquete de datos es igual al tamaño mínimo de los paquetes de datos. También se puede buscar en si el archivo tiene una secuencia de audio y una secuencia de vídeo con un objeto de índice simple coincidente.<br/> |
+| 0x02 | Marca que se puede buscar. El archivo es buscable.<br/> Se puede buscar un archivo si hay una secuencia de audio y el tamaño máximo del paquete de datos es igual al tamaño mínimo del paquete de datos. También puede ser buscable si el archivo tiene una secuencia de audio y una secuencia de vídeo con un objeto de índice simple correspondiente.<br/> |
 
 
 
  
 
-El método [**IMFASFContentInfo:: GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo a partir de los metadatos ASF.
+El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo a partir de los metadatos de ASF.
 
-Si se establece la marca de difusión, los siguientes atributos del descriptor de presentación no son válidos:
+Si se establece la marca de difusión, los atributos siguientes en el descriptor de presentación no son válidos:
 
--   [**MF \_ PD \_ ASF \_ FILEPROPERTIES \_ \_ ID. de archivo**](mf-pd-asf-fileproperties-file-id-attribute.md)
--   [**MF \_ PD \_ ASF \_ \_ hora de creación FILEPROPERTIES \_**](mf-pd-asf-fileproperties-creation-time-attribute.md)
--   [**\_ \_ \_ paquetes FILEPROPERTIES MF de \_ ASF**](mf-pd-asf-fileproperties-packets-attribute.md)
--   [**MF \_ PD \_ ASF \_ FILEPROPERTIES \_ \_ duración de la reproducción**](mf-pd-asf-fileproperties-play-duration-attribute.md)
--   [**MF \_ PD \_ ASF \_ FILEPROPERTIES \_ duración del envío \_**](mf-pd-asf-fileproperties-send-duration-attribute.md)
+-   [**MF \_ PD \_ ASF \_ FILEPROPERTIES \_ FILE \_ ID**](mf-pd-asf-fileproperties-file-id-attribute.md)
+-   [**MF \_ PD \_ ASF \_ FILEPROPERTIES \_ CREATION \_ TIME**](mf-pd-asf-fileproperties-creation-time-attribute.md)
+-   [**PAQUETES \_ \_ FILEPROPERTIES DE ASF DE MF PD \_ \_**](mf-pd-asf-fileproperties-packets-attribute.md)
+-   [**DURACIÓN \_ DE REPRODUCCIÓN DE FILEPROPERTIES DE MF PD \_ ASF \_ \_ \_**](mf-pd-asf-fileproperties-play-duration-attribute.md)
+-   [**DURACIÓN DEL ENVÍO DE ARCHIVOS ASF DE \_ MF \_ \_ \_ PDPROPIEDADES \_**](mf-pd-asf-fileproperties-send-duration-attribute.md)
 
-Además, el atributo de tamaño de [**paquete de MF \_ PD \_ ASF \_ FILEPROPERTIES \_ \_ \_ Max**](mf-pd-asf-fileproperties-max-packet-size-attribute.md) y los valores de atributo de [**tamaño de \_ paquete de MF PD \_ ASF \_ FILEPROPERTIES \_ \_ \_**](mf-pd-asf-fileproperties-min-packet-size-attribute.md) se establecen en el tamaño de paquete real.
+Además, los valores de atributo [**MF \_ PD \_ ASF \_ FILEPROPERTIES MAX PACKET \_ \_ \_ SIZE**](mf-pd-asf-fileproperties-max-packet-size-attribute.md) y [**MF PD \_ \_ ASF \_ FILEPROPERTIES MIN PACKET \_ \_ \_ SIZE**](mf-pd-asf-fileproperties-min-packet-size-attribute.md) se establecen en el tamaño real del paquete.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Además, el atributo de tamaño de [**paquete de MF \_ PD \_ ASF \_ FILEPROPERTI
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
@@ -62,19 +62,19 @@ Además, el atributo de tamaño de [**paquete de MF \_ PD \_ ASF \_ FILEPROPERTI
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Atributos de descriptor de presentación](presentation-descriptor-attributes.md)
+[Atributos del descriptor de presentación](presentation-descriptor-attributes.md)
 </dt> <dt>
 
 [Objeto de encabezado ASF](asf-file-structure.md)

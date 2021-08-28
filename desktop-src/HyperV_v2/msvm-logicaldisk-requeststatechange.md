@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la clase Msvm_LogicalDisk: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_LogicalDisk clase : solicita un cambio de estado.'
 ms.assetid: ab704257-b7f4-45a0-8287-b7c6cc66402d
 title: Método RequestStateChange de la Msvm_LogicalDisk clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 74a42eb0ae2d72a820874b8127176133fecdcf9e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 11ea6b363e493a659a97ac3dd0c1ef518a667564e6681188f648e2e1c206ffb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521815"
 ---
-# <a name="requeststatechange-method-of-the-msvm_logicaldisk-class"></a>Método RequestStateChange de la clase LogicalDisk de Msvm \_
+# <a name="requeststatechange-method-of-the-msvm_logicaldisk-class"></a>Método RequestStateChange de la clase \_ LogicalDisk de Msvm
 
 Solicita un cambio de estado.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
