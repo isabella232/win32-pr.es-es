@@ -1,7 +1,7 @@
 ---
-description: Marca que especifica si el objeto proporciona ejemplos en lotes exactos.
+description: Marca que especifica si el objeto entrega muestras en lotes exactos.
 ms.assetid: 1a37c78f-4499-4ebb-92b4-b71ba3ff1a02
-title: 'Miembro COutputQueue:: m_bBatchExact (Outputq. h)'
+title: Miembro COutputQueue::m_bBatchExact (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a5f38d8a0e7335025688f52015ff9ed4d4892820
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b5859744c3670ccc789ae5d87a619b3b32c3731580d473ff8cc6d775348771f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087255"
 ---
-# <a name="coutputqueuem_bbatchexact-member"></a>Miembro bBatchExact COutputQueue:: m \_
+# <a name="coutputqueuem_bbatchexact-member"></a>Miembro COutputQueue::m \_ bBatchExact
 
-Marca que especifica si el objeto proporciona ejemplos en lotes exactos.
+Marca que especifica si el objeto entrega muestras en lotes exactos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ const BOOL m_bBatchExact;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el valor es **true**, el objeto espera hasta que tenga un lote completo de ejemplos de medios antes de entregar cualquiera. De lo contrario, proporciona ejemplos a medida que llegan. La variable miembro [**COutputQueue:: m \_ lBatchSize**](coutputqueue-m-lbatchsize.md) define el tamaño del lote.
+Si el valor es **TRUE,** el objeto espera hasta que tenga un lote completo de ejemplos multimedia antes de entregar cualquiera. De lo contrario, entrega muestras a medida que llegan. La variable [**miembro COutputQueue::m \_ lBatchSize**](coutputqueue-m-lbatchsize.md) define el tamaño del lote.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Si el valor es **true**, el objeto espera hasta que tenga un lote completo de ej
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Si el valor es **true**, el objeto espera hasta que tenga un lote completo de ej
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

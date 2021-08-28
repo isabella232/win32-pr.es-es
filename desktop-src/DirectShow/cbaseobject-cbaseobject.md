@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 14fa2d3d38d42fa0feb387b477205cc51e0b6b87
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 35443d212fc244c80da958f2f87d03363c59348be4189393c1c3493521a0439b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076585"
 ---
 # <a name="cbaseobjectcbaseobject-constructor"></a>Constructor CBaseObject.CBaseObject
 
@@ -45,7 +45,7 @@ CBaseObject(
 *pName* 
 </dt> <dd>
 
-Cadena que contiene el nombre del objeto, con fines de depuración.
+Cadena que contiene el nombre del objeto con fines de depuración.
 
 </dd> </dl>
 
@@ -75,12 +75,12 @@ La [**macro NAME**](name.md) se compila en NULL **en** las compilaciones comerci
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

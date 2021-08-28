@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene la tinta que ha sido clasificada por el motor de análisis de diario como un elemento de dibujo (en oposición a un elemento InkWord).
+description: Define el tipo que contiene la entrada de lápiz clasificada por el motor de análisis de diario como un elemento Drawing (en lugar de un elemento InkWord).
 ms.assetid: 9a47c245-a5cf-414c-b5cc-bdb66b47596f
-title: Tipo complejo de DrawingType
+title: Tipo complejo DrawingType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f5a614c2b89cd887aaf40fd7c8f7a34e1196c11b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddee1f2fe357b2a92892eca08f40983d4f2cfb2a7115a6a2f44f9c4503abc53d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110955"
 ---
-# <a name="drawingtype-complex-type"></a>Tipo complejo de DrawingType
+# <a name="drawingtype-complex-type"></a>Tipo complejo DrawingType
 
-Define el tipo que contiene la tinta que ha sido clasificada por el motor de análisis de diario como un [elemento de dibujo](drawing-element.md) (en oposición a un [elemento InkWord](inkword-element.md)).
+Define el tipo que contiene la entrada de lápiz clasificada por el motor de análisis de diario como un elemento [Drawing](drawing-element.md) (en lugar de un [elemento InkWord](inkword-element.md)).
 
 ``` syntax
 <xs:complexType name="DrawingType" />
@@ -33,7 +33,7 @@ Define el tipo que contiene la tinta que ha sido clasificada por el motor de an�
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

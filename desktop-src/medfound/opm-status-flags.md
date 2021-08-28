@@ -1,81 +1,51 @@
 ---
-description: En las marcas de la tabla siguiente se especifica el estado de una sesión de Output Protection Manager (OPM).
+description: Las marcas de la tabla siguiente especifican el estado de una sesión de Output Protection Manager (OPM).
 ms.assetid: d6d85fd4-e735-4610-93e0-bb2b1782f11b
-title: Marcas de estado de OPM (Opmapi. h)
+title: Marcas de estado de OPM (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cbf9d299d6d53a26a61d19372e56e42bd2cdf99
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: edc044d9159ad6e6a6e957c4be0228a8e2531164
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543854"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480201"
 ---
 # <a name="opm-status-flags"></a>Marcas de estado de OPM
 
-En las marcas de la tabla siguiente se especifica el estado de una sesión de Output Protection Manager (OPM).
+Las marcas de la tabla siguiente especifican el estado de una sesión de Output Protection Manager (OPM).
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constante o valor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span id="OPM_STATUS_NORMAL"></span><span id="opm_status_normal"></span><dl> <dt><strong>OPM_STATUS_NORMAL</strong></dt> <dt>0x00</dt> </dl></td>
-<td style="text-align: left;">Estado normal.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="OPM_STATUS_LINK_LOST"></span><span id="opm_status_link_lost"></span><dl> <dt><strong>OPM_STATUS_LINK_LOST</strong></dt> <dt>0x01</dt> </dl></td>
-<td style="text-align: left;">Se ha puesto en peligro la integridad de la conexión. Entre los ejemplos de eventos que hacen que el controlador establezca esta marca se incluyen:<br/>
-<ul>
-<li>El controlador ya no puede aplicar el nivel de protección actual.</li>
-<li>El controlador ha detectado un error de integridad interno.</li>
-<li>Se desconectó el conector entre el equipo y el dispositivo de pantalla.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="OPM_STATUS_RENEGOTIATION_REQUIRED"></span><span id="opm_status_renegotiation_required"></span><dl> <dt><strong>OPM_STATUS_RENEGOTIATION_REQUIRED</strong></dt> <dt>0x02</dt> </dl></td>
-<td style="text-align: left;">La configuración de la conexión ha cambiado. Por ejemplo, el usuario ha cambiado el modo de presentación del escritorio.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="OPM_STATUS_TAMPERING_DETECTED"></span><span id="opm_status_tampering_detected"></span><dl> <dt><strong>OPM_STATUS_TAMPERING_DETECTED</strong></dt> <dt>0x04</dt> </dl></td>
-<td style="text-align: left;">El adaptador de gráficos o el controlador se han alterado.<br/> Esta marca no se usa en el <em>modo de emulación de COPP</em>. En su lugar, la salida de vídeo establecerá la marca de OPM_STATUS_LINK_LOST si detecta alteraciones.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED"></span><span id="opm_status_revoked_hdcp_device_attached"></span><dl> <dt><strong>OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</strong></dt> <dt>0x08</dt> </dl></td>
-<td style="text-align: left;">Un dispositivo High-Bandwidth Digital Content Protection (HDCP) revocado se adjunta a la salida de vídeo.<br/> Esta marca de estado se puede devolver desde una <a href="opm-get-virtual-protection-level.md">OPM_GET_VIRTUAL_PROTECTION_LEVEL</a> o <a href="opm-get-actual-protection-level.md">OPM_GET_ACTUAL_PROTECTION_LEVEL</a> consulta. <br/> El dispositivo revocado puede estar conectado directamente a la salida de vídeo o indirectamente a través de un repetidor de HDCP. Se necesita una salida de vídeo para detectar esta condición mientras se habilita HDCP, pero no.<br/> Esta marca no se usa en el <em>modo de emulación de COPP</em>porque la salida de vídeo no detecta los dispositivos revocados en ese modo.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constante o valor | Descripción | 
+|----------------|-------------|
+| <span id="OPM_STATUS_NORMAL"></span><span id="opm_status_normal"></span><dl><dt><strong>OPM_STATUS_NORMAL</strong></dt><dt>0x00</dt></dl> | Estado normal.<br /> | 
+| <span id="OPM_STATUS_LINK_LOST"></span><span id="opm_status_link_lost"></span><dl><dt><strong>OPM_STATUS_LINK_LOST</strong></dt><dt>0x01</dt></dl> | La integridad de la conexión se ha puesto en peligro. Algunos ejemplos de eventos que hacen que el controlador establezca esta marca son:<br /><ul><li>El controlador ya no puede aplicar el nivel de protección actual.</li><li>El controlador detectó un error de integridad interna.</li><li>El conector entre el equipo y el dispositivo de pantalla estaba desconectado.</li></ul> | 
+| <span id="OPM_STATUS_RENEGOTIATION_REQUIRED"></span><span id="opm_status_renegotiation_required"></span><dl><dt><strong>OPM_STATUS_RENEGOTIATION_REQUIRED</strong></dt><dt>0x02</dt></dl> | La configuración de conexión ha cambiado. Por ejemplo, el usuario ha cambiado el modo de presentación del escritorio.<br /> | 
+| <span id="OPM_STATUS_TAMPERING_DETECTED"></span><span id="opm_status_tampering_detected"></span><dl><dt><strong>OPM_STATUS_TAMPERING_DETECTED</strong></dt><dt>0x04</dt></dl> | El adaptador de gráficos o el controlador se han alterado.<br /> Esta marca no se usa en el <em>modo de emulación copp</em>. En su lugar, la salida de vídeo establecerá la OPM_STATUS_LINK_LOST si detecta la manipulación.<br /> | 
+| <span id="OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED"></span><span id="opm_status_revoked_hdcp_device_attached"></span><dl><dt><strong>OPM_STATUS_REVOKED_HDCP_DEVICE_ATTACHED</strong></dt><dt>0x08</dt></dl> | Se ha revocado High-Bandwidth dispositivo Content Protection digital (HDCP) está conectado a la salida del vídeo.<br /> Esta marca de estado se puede devolver desde una <a href="opm-get-virtual-protection-level.md">OPM_GET_VIRTUAL_PROTECTION_LEVEL</a> o <a href="opm-get-actual-protection-level.md">OPM_GET_ACTUAL_PROTECTION_LEVEL</a> consulta. <br /> El dispositivo revocado podría estar conectado directamente a la salida del vídeo o indirectamente a través de un repetidor HDCP. Se requiere una salida de vídeo para detectar esta condición mientras HDCP está habilitado, pero no de lo contrario.<br /> Esta marca no se usa en el modo <em>de emulación copp</em>, porque la salida de vídeo no detecta dispositivos revocados en ese modo.<br /> | 
 
 
 
-## <a name="remarks"></a>Observaciones
 
-Algunas de estas constantes son equivalentes a los valores de la enumeración **COPP \_ StatusFlags** usada en el protocolo de protección de la salida certificada (COPP).
+## <a name="remarks"></a>Comentarios
+
+Algunas de estas constantes son equivalentes a los valores de la enumeración **COPP \_ StatusFlags** que se usa en el Protocolo de protección de salida certificado (COPP).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Encabezado<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

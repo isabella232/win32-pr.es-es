@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/04/2021
-ms.openlocfilehash: 68b95f15c41fd46bfaeb58943720d3b657a3208d9a0276e9ab65fe7bd6087c42
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd2b396e1305d2cf21cb2121aaa6a186c47d7677
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119037388"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121813096"
 ---
 # <a name="cd3dx12_hit_group_subobject-class"></a>CD3DX12_HIT_GROUP_SUBOBJECT clase
 
@@ -81,7 +81,7 @@ Recupera el tipo del subobjeto, representado por la [D3D12_STATE_SUBOBJECT_TYPE_
 
 `operator const D3D12_STATE_SUBOBJECT&`
 
-Operador de conversión que devuelve una referencia a una [constante D3D12_STATE_SUBOBJECT](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_subobject) objeto que describe el objeto de estado.
+Operador de conversión que devuelve una referencia a una constante [D3D12_STATE_SUBOBJECT](/windows/win32/api/d3d12/ns-d3d12-d3d12_state_subobject) objeto que describe el objeto de estado.
 
 `operator const D3D12_HIT_GROUP_DESC&`
 

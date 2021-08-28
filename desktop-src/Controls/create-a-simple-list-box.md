@@ -4,41 +4,41 @@ description: En este tema se muestra cómo inicializar y recuperar elementos de 
 ms.assetid: 4A717010-A1D3-4FFB-8E4E-D5C4F9D8D952
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ca2230b265d61e9a59a8892e14127d25bf2cfd2
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 83a037bfbdb5232cd30d3e13fbc251c22c18c71a76398a351939602301a745d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063184"
 ---
 # <a name="how-to-create-a-simple-list-box"></a>Cómo crear un cuadro de lista simple
 
 En este tema se muestra cómo inicializar y recuperar elementos de un cuadro de lista simple.
 
-El ejemplo de código de C++ de este tema incluye un procedimiento de cuadro de diálogo que rellena un cuadro de lista con información sobre jugadores en un equipo deportivo. Cuando el usuario selecciona el nombre de un reproductor de la lista, se muestra información sobre el reproductor en el cuadro de diálogo. El estilo de ventana del cuadro de lista incluye la [**\_ ordenación lbs**](list-box-styles.md), lo que da como resultado una lista ordenada de elementos. En la captura de pantalla siguiente se muestra el cuadro de diálogo.
+El ejemplo de código de C++ de este tema incluye un procedimiento de cuadro de diálogo que rellena un cuadro de lista con información sobre los jugadores de un equipo deportivo. Cuando el usuario selecciona el nombre de un jugador de la lista, se muestra información sobre el reproductor en el cuadro de diálogo. El estilo de ventana del cuadro de lista incluye [**LBS \_ SORT**](list-box-styles.md), lo que da como resultado una lista ordenada de elementos. En la siguiente captura de pantalla se muestra el cuadro de diálogo.
 
-![captura de pantalla de un cuadro de diálogo que contiene un cuadro de lista con etiqueta, texto sobre el elemento de cuadro de lista seleccionado y un botón Aceptar](images/lb-roster.png)
+![captura de pantalla de un cuadro de diálogo que contiene un cuadro de lista etiquetado, texto sobre el elemento de cuadro de lista seleccionado y un botón Aceptar](images/lb-roster.png)
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
 La aplicación debe realizar las siguientes tareas relacionadas con el cuadro de lista:
 
--   Inicializar el cuadro de lista
--   Recuperar la selección del usuario del cuadro de lista
+-   Inicialización del cuadro de lista
+-   Recuperación de la selección del usuario desde el cuadro de lista
 
-En el siguiente ejemplo de código de C++, la información acerca de los reproductores se almacena en una matriz de estructuras. Durante la inicialización, el procedimiento de cuadro de diálogo utiliza el mensaje de [**lb en lb \_**](lb-addstring.md) para agregar a la vez los nombres de los miembros del equipo al cuadro de lista (ejemplo de un **\_ control \_ IDC**). También usa el mensaje [**lb \_ SETITEMDATA**](lb-setitemdata.md) para agregar el índice de la matriz del reproductor al cuadro de lista como datos de elemento. Más adelante, cuando el usuario selecciona un reproductor en el cuadro de lista, el procedimiento de cuadro de diálogo utiliza el mensaje [**lb \_ GETITEMDATA**](lb-getitemdata.md) para recuperar el índice de la matriz correspondiente. A continuación, usa el índice de la matriz para recuperar la información del reproductor de la matriz.
+En el siguiente ejemplo de código de C++, la información sobre los reproductores se almacena en una matriz de estructuras. Durante la inicialización, el procedimiento del cuadro de diálogo usa el mensaje [**\_ ADDSTRING**](lb-addstring.md) de LB para agregar los nombres de los miembros del equipo al cuadro de lista (EJEMPLO **DE \_ LISTBOX \_ de IDC)** de uno en uno. También usa el mensaje [**\_ LB SETITEMDATA para**](lb-setitemdata.md) agregar el índice de matriz del reproductor al cuadro de lista como datos de elemento. Más adelante, cuando el usuario selecciona un reproductor del cuadro de lista, el procedimiento del cuadro de diálogo usa el mensaje [**\_ GETITEMDATA de LB**](lb-getitemdata.md) para recuperar el índice de matriz correspondiente. A continuación, usa el índice de la matriz para recuperar información del reproductor de la matriz.
 
 
 
@@ -137,7 +137,7 @@ INT_PTR CALLBACK ListBoxExampleProc(HWND hDlg, UINT message,
 
 <dl> <dt>
 
-[Referencia de control de cuadro de lista](bumper-list-box-list-box-control-reference.md)
+[Referencia del control List Box](bumper-list-box-list-box-control-reference.md)
 </dt> <dt>
 
 [Acerca de los cuadros de lista](about-list-boxes.md)

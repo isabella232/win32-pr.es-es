@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_LIMITTEXT (Winuser. h)
+title: CB_LIMITTEXT mensaje (Winuser.h)
 description: Limita la longitud del texto que el usuario puede escribir en el control de edición de un cuadro combinado.
 ms.assetid: 95b7d07a-594b-4096-afbb-4dab77bdc41d
 keywords:
-- CB_LIMITTEXT controles de mensajes de Windows
+- CB_LIMITTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34ea9ccd63bb1503e73aebdd584a53bc32bcb8fa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e94cdb1bedfb1c0aa3efb401649524782183ced7728304951596c9383efaa0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089085"
 ---
-# <a name="cb_limittext-message"></a>\_Mensaje LIMITTEXT CB
+# <a name="cb_limittext-message"></a>Mensaje \_ LIMITTEXT de CB
 
 Limita la longitud del texto que el usuario puede escribir en el control de edición de un cuadro combinado.
 
@@ -32,7 +32,7 @@ Limita la longitud del texto que el usuario puede escribir en el control de edic
 *wParam* 
 </dt> <dd>
 
-Número máximo de **TCHARs** que puede escribir el usuario, sin incluir el carácter nulo de terminación. Si este parámetro es cero, la longitud del texto se limita a caracteres 0x7FFFFFFE.
+Número máximo de **TCHAR que** el usuario puede especificar, sin incluir el carácter nulo de terminación. Si este parámetro es cero, la longitud del texto se limita a 0x7FFFFFFE caracteres.
 
 </dd> <dt>
 
@@ -45,25 +45,25 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto siempre es **true**.
+El valor devuelto siempre es **TRUE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el cuadro combinado no tiene el estilo [**\_ AUTOHSCROLL de CBS**](combo-box-styles.md) , establecer el límite de texto en un valor mayor que el tamaño del control de edición no tiene ningún efecto.
+Si el cuadro combinado no tiene el estilo [**CBS \_ AUTOHSCROLL,**](combo-box-styles.md) establecer el límite de texto para que sea mayor que el tamaño del control de edición no tiene ningún efecto.
 
-El mensaje **CB \_ LIMITTEXT** limita solo el texto que el usuario puede escribir. No tiene ningún efecto en ningún texto que ya esté en el control de edición cuando se envía el mensaje, ni afecta a la longitud del texto copiado en el control de edición cuando se selecciona una cadena en el cuadro de lista.
+El **mensaje \_ LIMITTEXT de CB** limita solo el texto que el usuario puede escribir. No tiene ningún efecto en ningún texto que ya esté en el control de edición cuando se envía el mensaje, ni afecta a la longitud del texto copiado en el control de edición cuando se selecciona una cadena en el cuadro de lista.
 
-El límite predeterminado para el texto que un usuario puede escribir en el control de edición es 30.000 **TCHARs**.
+El límite predeterminado para el texto que un usuario puede escribir en el control de edición es de 30 000 **TCHAR.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

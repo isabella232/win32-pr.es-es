@@ -4,12 +4,12 @@ description: Funciones de barra de desplazamiento
 ms.assetid: ed40b2c7-da99-4fff-bdb9-df682b3cc860
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f9e60159d65ab301953608fff3775b50c3814fe
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 69c817f89740bd4143fc6d4f881301a0349f39cf29691d02e1ce2b72ae306144
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064115"
 ---
 # <a name="scroll-bar-functions"></a>Funciones de barra de desplazamiento
 

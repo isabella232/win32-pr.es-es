@@ -1,19 +1,19 @@
 ---
-description: El <propertyStore> elemento especifica un conjunto de una o varias propiedades usadas por esta biblioteca. Este elemento es opcional y no tiene atributos.
+description: El &lt; elemento propertyStore &gt; especifica un conjunto de una o varias propiedades usadas por esta biblioteca. Este elemento es opcional y no tiene atributos.
 ms.assetid: 19532C1F-686F-4c14-8BA8-0043E77BE594
 title: elemento propertyStore (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0ff30972a358916e715ff1b374a555c6db24ee6d512d114bcf47f57ac8a1954
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 089e87e6e7bdfa568ffa2e8903f6347cb6dc7b3d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452980"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880431"
 ---
 # <a name="propertystore-element-library-schema"></a>elemento propertyStore (esquema de biblioteca)
 
-El <propertyStore> elemento especifica un conjunto de una o varias propiedades usadas por esta biblioteca. Este elemento es opcional y no tiene atributos.
+El &lt; elemento propertyStore &gt; especifica un conjunto de una o varias propiedades usadas por esta biblioteca. Este elemento es opcional y no tiene atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,7 +43,7 @@ El <propertyStore> elemento especifica un conjunto de una o varias propiedades u
 
 ## <a name="remarks"></a>Comentarios
 
-El <propertyStore> elemento puede tener uno o varios elementos <property> secundarios.
+El &lt; elemento propertyStore &gt; puede tener uno o varios elementos secundarios de &lt; &gt; propiedad.
 
 ## <a name="related-topics"></a>Temas relacionados
 

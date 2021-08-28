@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. URL
+title: Propiedad AxWindowsMediaPlayer.URL
 description: La propiedad URL obtiene o establece el nombre del elemento multimedia que se va a reproducir.
 ms.assetid: 521a3b39-efd6-45a7-895b-a9ae69e0bf39
 keywords:
-- Propiedades de URL Media Player de Windows
-- Propiedad URL Media Player de Windows, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad URL
+- Propiedades de dirección URL Reproductor de Windows Media
+- Propiedad URL Reproductor de Windows Media clase , AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media propiedad , URL
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3ed9e601aa581e988bac1a233f06c4f5c552353
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d953f2d85fc1fd83edcd37a491cb2f7cbabc3e3dfaf61e48feb1cd30e6d01934
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123885"
 ---
-# <a name="axwindowsmediaplayerurl-property"></a>Propiedad AxWindowsMediaPlayer. URL
+# <a name="axwindowsmediaplayerurl-property"></a>Propiedad AxWindowsMediaPlayer.URL
 
 La propiedad URL obtiene o establece el nombre del elemento multimedia que se va a reproducir.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public Property URL As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-System. String que es la dirección URL del elemento multimedia.
+System.String que es la dirección URL del elemento multimedia.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo se puede establecer en una dirección URL en una zona de seguridad que sea igual o menos restrictiva que la zona de seguridad del programa o la página web que realiza la llamada.
+Esta propiedad solo se puede establecer en una dirección URL en una zona de seguridad que sea igual o menos restrictiva que la zona de seguridad del programa o página web de llamada.
 
-Las aplicaciones que abren elementos multimedia de detrás de un firewall tendrán un mejor rendimiento si la dirección se especifica mediante el nombre del servidor de nombres de dominio (DNS) en lugar de la dirección IP.
+Las aplicaciones que abren elementos multimedia desde detrás de un firewall tendrán un mejor rendimiento si la dirección se especifica mediante el nombre del servidor de nombres de dominio (DNS) en lugar de la dirección IP.
 
-No llame a este método desde el código del controlador de eventos. La llamada a la **dirección URL** desde un controlador de eventos puede producir resultados inesperados.
+No llame a este método desde el código del controlador de eventos. La llamada **a la dirección URL** desde un controlador de eventos puede producir resultados inesperados.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se permite al usuario especificar un archivo multimedia escribiendo una ruta de acceso de archivo en un cuadro de texto. Cuando se hace clic en un botón, la propiedad URL se establece en el archivo especificado y se reproduce el archivo. El objeto AxWMPLib. AxWindowsMediaPlayer se representa mediante la variable denominada Player.
+En el ejemplo siguiente se permite al usuario especificar un archivo multimedia especificando una ruta de acceso de archivo en un cuadro de texto. Cuando se hace clic en un botón, la propiedad URL se establece en el archivo especificado y se reproduce el archivo. El objeto AxWMPLib.AxWindowsMediaPlayer se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -96,7 +96,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

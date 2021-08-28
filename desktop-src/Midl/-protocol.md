@@ -1,9 +1,9 @@
 ---
-title: modificador/protocolo
-description: El modificador/protocolo especifica qué protocolo de conexión es compatible con el código auxiliar generado.
+title: Modificador /protocol
+description: El modificador /protocol especifica qué protocolo de conexión es compatible con el código auxiliar generado.
 ms.assetid: b565b30c-72e5-442b-9588-324b9041524b
 keywords:
-- /Protocolo modificador MIDL
+- /protocol switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9770fa94d010e21dcbd2a5574a0cffe29273a23
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 555482677afff83d9f52e06c7b8e445504d222c8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358268"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887381"
 ---
-# <a name="protocol-switch"></a>modificador/protocolo
+# <a name="protocol-switch"></a>Modificador /protocol
 
-El modificador **/Protocolo** especifica qué protocolo de conexión es compatible con el código auxiliar generado.
+El **modificador /protocol** especifica qué protocolo de conexión es compatible con el código auxiliar generado.
 
 ``` syntax
 midl /protocol (dce | ndr64 | all)
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
@@ -38,61 +38,61 @@ midl /protocol (dce | ndr64 | all)
 
 <span id="dce"></span><span id="DCE"></span>
 
-<span id="dce"></span><span id="DCE"></span>DCE * * * *
+<span id="dce"></span><span id="DCE"></span>dce**
 
 
 </dt> <dd>
 
-El código auxiliar generado solo es compatible con el protocolo DCE.
+El código auxiliar generado solo admite el protocolo DCE.
 
 </dd> <dt>
 
 <span id="ndr64"></span><span id="NDR64"></span>
 
-<span id="ndr64"></span><span id="NDR64"></span>ndr64****
+<span id="ndr64"></span><span id="NDR64"></span>dín64**
 
 
 </dt> <dd>
 
-El código auxiliar generado solo es compatible con el protocolo NDR64 de Microsoft.
+El código auxiliar generado solo admite el protocolo Microsoft TLS64.
 
 </dd> <dt>
 
 <span id="all"></span><span id="ALL"></span>
 
-<span id="all"></span><span id="ALL"></span>todo * * * *
+<span id="all"></span><span id="ALL"></span>all**
 
 
 </dt> <dd>
 
-El código auxiliar generado es compatible con todos los protocolos disponibles para un entorno determinado.
+El código auxiliar generado admite todos los protocolos disponibles para un entorno determinado.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-RPC calcula las referencias y las calcula las referencias de los datos de acuerdo con un protocolo de conexión estricto, también denominado sintaxis de transferencia, que define la representación del cable de datos, como el orden en que se calculan las referencias a los miembros de datos, la alineación de los datos en la conexión, la información adicional incluida con los datos, entre otros. Microsoft RPC es compatible con el protocolo NDR (representación de datos de red) de OSF DCE. En la versión de 64 bits de Windows XP, Microsoft presenta una NDR64 de protocolo experimental que está optimizada para transferir datos de 64 bits. NDR64 no es compatible con el protocolo DCE.
+Rpc serializa y desmarúa los datos según un protocolo de conexión estricto, también denominado sintaxis de transferencia, que define la representación de la conexión de datos, como el orden en que se serializan los miembros de datos, la alineación de los datos en la conexión, información adicional incluida con los datos, entre otros. Rpc de Microsoft es compatible con el protocolo OMISIÓN (representación de datos de red) de OSF DCE. En la versión de 64 bits de Windows XP, Microsoft presenta un protocolo experimental CELA64 optimizado para transferir datos de 64 bits. SMTP64 no es compatible con versiones anteriores con el protocolo DCE.
 
-El protocolo **DCE** es compatible con la sintaxis de transferencia de NDR de OSF DCE. Este protocolo está optimizado para transferir datos de 32 bits.
+El **protocolo dce** es compatible con la sintaxis de transferencia OMISIÓN de OSF DCE. Este protocolo está optimizado para transferir datos de 32 bits.
 
-Actualmente, el protocolo **ndr64** solo se admite cuando se usa junto con el modificador [**/Win64**](-win64.md) Si un cliente de ndr64 solo intenta conectarse a un servidor de solo DCE, o viceversa, se rechaza la llamada con \_ \_ Trans S no compatible con RPC \_ \_ .
+El **protocolo facult64** solo se admite actualmente cuando se usa junto con el [**modificador /win64.**](-win64.md) Si un cliente de vice64 solo intenta conectarse a un servidor solo dce, o viceversa, la llamada se rechaza con RPC \_ S \_ \_ UNSUPPORTED TRANS \_ SYN.
 
-La opción **All** crea un código auxiliar que puede usar cualquier protocolo disponible. En el caso de los códigos auxiliares de 32 bits, el único protocolo disponible actualmente es DCE. En el caso de los códigos auxiliares de 64 bits creados mediante el modificador [**/Win64**](-win64.md) , tanto DCE como NDR64 están disponibles.
+La **opción all** crea un código auxiliar que puede usar cualquier protocolo disponible. En el caso de los códigos auxiliares de 32 bits, el único protocolo disponible actualmente es DCE. En el caso de los códigos auxiliares de 64 bits, creados mediante el modificador [**/win64,**](-win64.md) están disponibles DCE y GAS64.
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/protocolo All/Win64 FILENAME. idl**
+**midl /protocol all /win64 filename.idl**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**/<system>**](-system-.md)
+[**/&lt;sistema&gt;**](-system-.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

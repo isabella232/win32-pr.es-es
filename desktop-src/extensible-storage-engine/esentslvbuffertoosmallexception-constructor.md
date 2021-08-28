@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVBufferTooSmallException'
-title: Constructor de EsentSLVBufferTooSmallException
+description: 'Más información sobre: Constructor EsentSLVBufferTooSmallException'
+title: Constructor EsentSLVBufferTooSmallException
 TOCTitle: 'EsentSLVBufferTooSmallException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVBufferTooSmallException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvbuffertoosmallexception.esentslvbuffertoosmallexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 89dc721d6bcc1635b206560411e61714074888e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d85cc6de744a9b3c7c3c77ebc667555f33e35dc08e8e84b9ed26956d48ed2eee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116835"
 ---
-# <a name="esentslvbuffertoosmallexception-constructor"></a>Constructor de EsentSLVBufferTooSmallException
+# <a name="esentslvbuffertoosmallexception-constructor"></a>Constructor EsentSLVBufferTooSmallException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVBufferTooSmallException()
 public EsentSLVBufferTooSmallException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVBufferTooSmallException()
 
 [Miembros de EsentSLVBufferTooSmallException](./esentslvbuffertoosmallexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

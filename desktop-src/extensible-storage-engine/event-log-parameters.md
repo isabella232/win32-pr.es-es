@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: parámetros de registro de eventos'
+description: 'Más información sobre: Parámetros del registro de eventos'
 title: Parámetros del registro de eventos
 TOCTitle: Event Log Parameters
 ms:assetid: c660f555-2627-4d25-8f1c-8c1dc8a3a381
@@ -15,336 +15,74 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 912dc3e1e8588e18ef0d1db8fbf7edccfca7bdeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1c127f538ae80e8bec3dc5a34d5924b838b51ee
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082833"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465882"
 ---
 # <a name="event-log-parameters"></a>Parámetros del registro de eventos
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="event-log-parameters"></a>Parámetros del registro de eventos
 
-Este tema contiene los parámetros que se usan para el registro de eventos.
+Este tema contiene parámetros que se usan para el registro de eventos.
 
 JET_paramEventLogCache  
-Este parámetro controla el tamaño (en bytes) de una caché de mensajes de registro de eventos que contendrá mensajes de registro de eventos emitidos por el motor de base de datos mientras se detiene el servicio EventLog. Estos mensajes almacenados en caché se vaciarán en el registro de eventos cuando el servicio esté operativo. Se quitarán todos los mensajes que desbordan la caché.
+Este parámetro controla el tamaño (en bytes) de una caché de mensajes de registro de eventos que contendrán los mensajes de registro de eventos emitidos por el motor de base de datos mientras se detiene el servicio eventlog. Estos mensajes almacenados en caché se vaciarán en el registro de eventos cuando el servicio entre en funcionamiento. Se descartarán los mensajes que desbordan la memoria caché.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>de 0 a 2147483647</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>0</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>0 – 2147483647</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>No</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>Sí</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 
 *JET_paramEventLoggingLevel*  
   
-Este parámetro configura el nivel de detalle de los mensajes de registro de eventos que el motor de base de datos emite para el registro de eventos. Los números más altos producirán mensajes de registro de eventos más detallados.
+Este parámetro configura el nivel de detalle de los mensajes de registro de eventos que el motor de base de datos emite al registro de eventos. Los números más altos darán como resultado mensajes de registro de eventos más detallados.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>JET_EventLoggingLevelMax</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>JET_EventLoggingDisable – JET_EventLoggingLevelMax</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Windows XP y versiones posteriores</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>JET_EventLoggingLevelMax</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>JET_EventLoggingDisable: JET_EventLoggingLevelMax</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Windows XP y versiones posteriores</p> | 
+
 
 
 *JET_paramEventSource*  
 4  
 
-Este parámetro proporciona una cadena específica de la aplicación que se agregará a los mensajes del registro de eventos emitidos por el motor de base de datos. Esto permite la correlación sencilla de mensajes de registro de eventos con la aplicación de origen. Si se especifica una cadena vacía (como es el valor predeterminado), se utilizará el nombre del archivo ejecutable de la aplicación host.
+Este parámetro proporciona una cadena específica de la aplicación que se agregará a los mensajes del registro de eventos emitidos por el motor de base de datos. Esto permite una correlación sencilla de los mensajes del registro de eventos con la aplicación de origen. Si se especifica una cadena vacía (como es el valor predeterminado), se usará el nombre ejecutable de la aplicación host.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>&quot;&quot;</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>String</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>de 0 a 259 caracteres</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>""</p> | | <p>Escriba:</p> | <p>Cadena</p> | | <p>Intervalo válido:</p> | <p>De 0 a 259 caracteres</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 
 *JET_paramEventSourceKey*  
 49  
 
-Este parámetro se puede utilizar para controlar qué registro de eventos utiliza el motor de base de datos para sus mensajes de registro de eventos. De forma predeterminada, todos los mensajes del registro de eventos Irán al registro de eventos de la aplicación. Si se configura el nombre de la clave del registro para otro registro de eventos, los mensajes del registro de eventos Irán en su lugar.
+Este parámetro se puede usar para controlar qué registro de eventos usa el motor de base de datos para sus mensajes de registro de eventos. De forma predeterminada, todos los mensajes del registro de eventos irán al registro de eventos de la aplicación. Si el nombre de la clave del Registro para otro registro de eventos está configurado, los mensajes del registro de eventos irán allí en su lugar.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>&quot;&quot;</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>String</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>de 0 a 259 caracteres</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>""</p> | | <p>Escriba:</p> | <p>Cadena</p> | | <p>Intervalo válido:</p> | <p>De 0 a 259 caracteres</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 
 *JET_paramNoInformationEvent*  
 50  
 
-Cuando este parámetro es true, se suprimen los mensajes de registro de eventos informativos que normalmente generará el motor de base de datos.
+Cuando este parámetro es true, se suprimirán los mensajes del registro de eventos informativos que normalmente generaría el motor de base de datos.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>False</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Boolean</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>False, True</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Instancia</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establecer después de <a href="gg269354(v=exchg.10).md">JetCreateInstance</a>:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establecer después de <a href="gg294068(v=exchg.10).md">JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>All</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>Falso</p> | | <p>Escriba:</p> | <p>Boolean</p> | | <p>Intervalo válido:</p> | <p>False, True</p> | | <p>Ámbito:</p> | <p>Instancia</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

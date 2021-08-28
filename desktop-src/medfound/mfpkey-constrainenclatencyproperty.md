@@ -1,35 +1,35 @@
 ---
-description: Especifica si el codificador está restringido por un requisito de latencia máximo.
+description: Especifica si el codificador está restringido por un requisito de latencia máxima.
 ms.assetid: 8148ae1e-239e-40fa-a88d-810a1d93d8e9
-title: Propiedad MFPKEY_CONSTRAINENCLATENCY (Wmcodecdsp. h)
+title: MFPKEY_CONSTRAINENCLATENCY propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6f880006bf2aba04196547a79e74f94a7210edd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8172b92b0b4d39602f0535b8bf1ef4456a896972e56c6da10f6585e5221fa7e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113425"
 ---
-# <a name="mfpkey_constrainenclatency-property"></a>\_Propiedad CONSTRAINENCLATENCY de MFPKEY
+# <a name="mfpkey_constrainenclatency-property"></a>Propiedad MFPKEY \_ CONSTRAINENCLATENCY
 
-Especifica si el codificador está restringido por un requisito de latencia máximo.
+Especifica si el codificador está restringido por un requisito de latencia máxima.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
-**VT \_ bool**
+**VT \_ BOOL**
 
 ## <a name="default-value"></a>Valor predeterminado
 
-**VARIANTE \_ false**
+**VARIANT \_ FALSE**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si deja esta propiedad en su valor predeterminado de **Variant \_ false**, el codificador enumera un conjunto predeterminado de modos que tienen aproximadamente 2000 milisegundos de latencia del codificador. Si establece esta propiedad en **Variant \_ true**, también debe especificar una latencia máxima del codificador estableciendo la propiedad [**MFPKEY \_ MAXENCLATENCYMS**](mfpkey-maxenclatencymsproperty.md) . En ese caso, el codificador crea modos que satisfacen el requisito de latencia y enumera solo esos modos. El codificador garantiza un ejemplo de salida en cuanto el codificador ha recibido una entrada para un período de tiempo igual a **MFPKEY \_ MAXENCLATENCYMS**.
+Si deja esta propiedad en su valor predeterminado **de VARIANT \_ FALSE,** el codificador enumera un conjunto predeterminado de modos que tienen aproximadamente 2000 milisegundos de latencia del codificador. Si establece esta propiedad en **VARIANT \_ TRUE**, también debe especificar una latencia máxima del codificador estableciendo la propiedad [**\_ MFPKEY MAXENCLATENCYMS.**](mfpkey-maxenclatencymsproperty.md) En ese caso, el codificador crea modos que satisfacen el requisito de latencia y enumera solo esos modos. El codificador garantiza un ejemplo de salida en cuanto el codificador ha recibido una entrada durante un período de tiempo igual a **MFPKEY \_ MAXENCLATENCYMS**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Si deja esta propiedad en su valor predeterminado de **Variant \_ false**, el co
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Si deja esta propiedad en su valor predeterminado de **Variant \_ false**, el co
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

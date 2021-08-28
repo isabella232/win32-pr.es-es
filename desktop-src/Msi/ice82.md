@@ -4,41 +4,41 @@ ms.assetid: b41a56f9-b57e-4133-ae7d-c51b36bab44f
 title: ICE82
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8aa6ba2e0bd07af06bf90c604c333966b5581ba3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf620bd58ca59315796941c6e8d9d3e4c12cdca9064d2be79058c89201a91bad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120105235"
 ---
 # <a name="ice82"></a>ICE82
 
-ICE82 valida que la acción [RegisterProduct](registerproduct-action.md), la acción [RegisterUser](registeruser-action.md), la [acción PublishProduct](publishproduct-action.md)y la [acción PublishFeatures](publishfeatures-action.md) están presentes en la [tabla InstallExecuteSequence](installexecutesequence-table.md). El paquete se valida si todas las acciones están presentes.
+ICE82 valida que la acción [RegisterProduct,](registerproduct-action.md)la acción [RegisterUser,](registeruser-action.md)la acción [PublishProduct](publishproduct-action.md)y la acción [PublishFeatures](publishfeatures-action.md) están presentes en la tabla [InstallExecuteSequence](installexecutesequence-table.md). El paquete se valida si todas las acciones están presentes.
 
-ICE82 publica una advertencia si hay dos acciones con el mismo número de secuencia enumeradas en las tablas InstallExecuteSequence, InstallUISequence, AdminExecuteSequence, AdminUISequence o AdvtExecuteSequence.
+ICE82 envía una advertencia si hay dos acciones con el mismo número de secuencia enumerado en las tablas InstallExecuteSequence, InstallUISequence, AdminExecuteSequence, AdminUISequence o AdvtExecuteSequence .
 
 ## <a name="result"></a>Resultado
 
-ICE82 expone las siguientes advertencias.
+ICE82 publica las advertencias siguientes.
 
 
 
-| ADVERTENCIA de ICE82                                                                                                                                                                                                                 | Descripción                                                                                                                                                                                                 |
+| Advertencia de ICE82                                                                                                                                                                                                                 | Descripción                                                                                                                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| La tabla InstallExecuteSequence no contiene el conjunto de acciones que se mencionan a continuación: faltan acciones:<br/> Publicar características<br/> Publicar producto<br/> Registrar producto<br/> Registrar usuario<br/> | La acción personalizada ICE82 publica una advertencia si las cuatro acciones están ausentes.                                                                                                                                         |
-| Esta acción \[ 1 \] tiene el número de secuencia 2 duplicado \[ \] en la tabla \[ 3 \] .                                                                                                                                                     | ICE82 publica una advertencia si hay dos acciones con el mismo número de secuencia enumeradas en las tablas InstallExecuteSequence, InstallUISequence, AdminExecuteSequence, AdminUISequence o AdvtExecuteSequence. |
+| La tabla InstallExecuteSequence no contiene el conjunto de acciones que se mencionan a continuación: Acciones que faltan:<br/> Publicar características<br/> Publicar producto<br/> Registrar producto<br/> Registrar usuario<br/> | La acción personalizada ICE82 envía una advertencia si las cuatro acciones no están presentes.                                                                                                                                         |
+| Esta acción \[ 1 \] tiene el número de secuencia duplicado \[ 2 en la tabla \] \[ 3 \] .                                                                                                                                                     | ICE82 envía una advertencia si hay dos acciones con el mismo número de secuencia enumerado en las tablas InstallExecuteSequence, InstallUISequence, AdminExecuteSequence, AdminUISequence o AdvtExecuteSequence. |
 
 
 
  
 
-ICE82 expone los siguientes errores.
+ICE82 publica los siguientes errores.
 
 
 
-| Error ICE82                                                                                                                                                                                                                                        | Descripción                                                                         |
+| Error ice82                                                                                                                                                                                                                                        | Descripción                                                                         |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| InstallExecuteSequence debe contener todas las acciones que se mencionan a continuación o ninguna de ellas.<br/> <List of actions present> <br/> Faltan acciones:<br/> <List of actions missing> <br/> | ICE82 publica un error si algunas de las cuatro acciones están presentes y otras están ausentes. |
+| InstallExecuteSequence debe contener todas las acciones mencionadas a continuación o ninguna de ellas Acciones presentes<br/> <List of actions present> <br/> Acciones que faltan:<br/> <List of actions missing> <br/> | ICE82 publica un error si algunas de las cuatro acciones están presentes y otras están ausentes. |
 
 
 

@@ -1,25 +1,25 @@
 ---
-description: La aplicación puede admitir un conjunto diferente de idiomas de interfaz de usuario de los admitidos por el sistema operativo de destino. En este tema se describe este tipo de compatibilidad con fragmentos de código de ejemplo completos.
+description: La aplicación puede admitir un conjunto diferente de idiomas de interfaz de usuario de los admitidos por el sistema operativo de destino. En este tema se describe este tipo de compatibilidad mediante fragmentos de código de ejemplos completos.
 ms.assetid: cb9f2a5f-3bb8-4287-a542-c71d20b37194
-title: Compatibilidad con la configuración de idioma Application-Specific
+title: Compatibilidad con Application-Specific language Configuración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6bddfe94586751d3b0f4757c670c006317e49b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96c934ea2f01c37eb2f9e846382447a50ccbedcd9b69fe20069216fa46521b02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130065"
 ---
-# <a name="supporting-application-specific-language-settings"></a>Compatibilidad con la configuración de idioma Application-Specific
+# <a name="supporting-application-specific-language-settings"></a>Compatibilidad con Application-Specific language Configuración
 
-La aplicación puede admitir un conjunto diferente de idiomas de interfaz de usuario de los admitidos por el sistema operativo de destino. En este tema se describe este tipo de compatibilidad con fragmentos de código de ejemplo completos.
+La aplicación puede admitir un conjunto diferente de idiomas de interfaz de usuario de los admitidos por el sistema operativo de destino. En este tema se describe este tipo de compatibilidad mediante fragmentos de código de ejemplos completos.
 
-## <a name="interpret-users-language-preference"></a>Interpretar las preferencias de idioma del usuario
+## <a name="interpret-users-language-preference"></a>Interpretación de las preferencias de idioma del usuario
 
-En primer lugar, la aplicación debe determinar qué idioma de la interfaz de usuario se va a mostrar, según las preferencias del usuario. El código puede leer la configuración de un archivo de configuración o de la configuración del registro.
+La aplicación debe determinar primero qué idioma de la interfaz de usuario mostrar, en función de las preferencias del usuario. El código puede leer la configuración de un archivo de configuración o de la configuración del Registro.
 
-En el ejemplo siguiente se definen dos funciones que se usan para interpretar la preferencia de idioma del usuario. La primera función muestra la lectura de una lista delimitada de idiomas de un archivo, representado en el código como "langs.txt". Los delimitadores admitidos en el ejemplo son ",", ";"; "." y "". La segunda función convierte la cadena leída del archivo en un valor de cadena múltiple. Esta operación es necesaria porque las funciones de MUI usadas para establecer idiomas solo aceptan valores de cadena múltiple.
+En el ejemplo siguiente se definen dos funciones que se usan para interpretar la preferencia de idioma del usuario. La primera función muestra la lectura de una lista delimitada de idiomas de un archivo, representada en el código como "langs.txt". Los delimitadores admitidos en el ejemplo son ",",";";"." y " ". La segunda función convierte la cadena leída del archivo en un valor de varias cadenas. Esta operación es necesaria porque las funciones DEA que se usan para establecer idiomas solo aceptan valores de varias cadenas.
 
 
 ```C++
@@ -91,7 +91,7 @@ BOOL ConvertMyLangStrToMultiLangStr(WCHAR * langStr, WCHAR * langMultiStr, DWORD
 
 ## <a name="set-the-application-language"></a>Establecer el idioma de la aplicación
 
-Después de leer la información de preferencias de idioma, el código de aplicación debe usar la configuración recuperada para establecer el idioma de la aplicación. En Windows 7 y versiones posteriores, la aplicación puede establecer el idioma en el nivel de proceso mediante una llamada a la función [**SetProcessPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages) .
+Después de leer la información de preferencias de idioma, el código de aplicación debe usar la configuración recuperada para establecer el idioma de la aplicación. En Windows 7 y versiones posteriores, la aplicación puede establecer el idioma en el nivel de proceso llamando a la [**función SetProcessPreferredUILanguages.**](/windows/desktop/api/Winnls/nf-winnls-setprocesspreferreduilanguages)
 
 
 ```C++
@@ -108,7 +108,7 @@ if(!SetProcessPreferredUILanguages(MUI_LANGUAGE_NAME, userLanguagesMultiString, 
 
 
 
-En Windows Vista y versiones posteriores, el idioma de la aplicación se establece en el nivel de subproceso mediante una llamada a la función [**SetThreadPreferredUILanguages**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages) .
+En Windows Vista y versiones posteriores, el lenguaje de aplicación se establece en el nivel de subproceso mediante una llamada a la [**función SetThreadPreferredUILanguages.**](/windows/desktop/api/Winnls/nf-winnls-setthreadpreferreduilanguages)
 
 
 ```C++
@@ -130,13 +130,13 @@ return 1;
 
 <dl> <dt>
 
-[Configuración de las preferencias de idioma de la aplicación](setting-application-language-preferences.md)
+[Establecer las preferencias de idioma de la aplicación](setting-application-language-preferences.md)
 </dt> <dt>
 
-[MUI: ejemplo de configuración de Application-Specific (Windows Vista)](mui-application-specific-settings-sample-vista.md)
+[MUI: Application-Specific Configuración ejemplo (Windows Vista)](mui-application-specific-settings-sample-vista.md)
 </dt> <dt>
 
-[MUI: ejemplo de configuración de Application-Specific (anterior a Windows Vista)](mui-application-specific-settings-sample-pre-vista.md)
+[MUI: Application-Specific Configuración de datos (Windows Vista)](mui-application-specific-settings-sample-pre-vista.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de IPN_FIELDCHANGED (commctrl. h)
-description: Se envía cuando el usuario cambia un campo en el control o se mueve de un campo a otro. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: IPN_FIELDCHANGED de notificación (Commctrl.h)
+description: Se envía cuando el usuario cambia un campo del control o se mueve de un campo a otro. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: f9ca6435-1715-458e-8d0e-475920ed75bd
 keywords:
-- IPN_FIELDCHANGED controles de código de notificación de Windows
+- IPN_FIELDCHANGED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e283d42d0aba3c237db51fe492a34ec93e8eb73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 467cf7f14f3ff8d62f85d973e9a9d11c4dc6d20488ad5b7e30b4c0787b4b1a6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085555"
 ---
-# <a name="ipn_fieldchanged-notification-code"></a>Código de notificación de FIELDCHANGED de IPN \_
+# <a name="ipn_fieldchanged-notification-code"></a>Código de notificación FIELDCHANGED de IPN \_
 
-Se envía cuando el usuario cambia un campo en el control o se mueve de un campo a otro. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Se envía cuando el usuario cambia un campo del control o se mueve de un campo a otro. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ IPN_FIELDCHANGED
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMIPADDRESS**](/windows/win32/api/commctrl/ns-commctrl-nmipaddress) que contiene información sobre la dirección modificada. El miembro **iValue** de esta estructura contendrá el valor especificado, aunque esté fuera del intervalo del campo. Puede modificar este miembro a cualquier valor que esté dentro del intervalo del campo en respuesta a este código de notificación.
+Puntero a una [**estructura NMIPADDRESS**](/windows/win32/api/commctrl/ns-commctrl-nmipaddress) que contiene información sobre la dirección cambiada. El **miembro iValue** de esta estructura contendrá el valor especificado, incluso si está fuera del intervalo del campo. Puede modificar este miembro a cualquier valor que esté dentro del intervalo del campo en respuesta a este código de notificación.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Puntero a una estructura [**NMIPADDRESS**](/windows/win32/api/commctrl/ns-commct
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este código de notificación no se envía como respuesta a un mensaje [**\_ SETADDRESS de IPM**](ipm-setaddress.md) .
+Este código de notificación no se envía en respuesta a un [**mensaje \_ SETADDRESS de IPM.**](ipm-setaddress.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Este código de notificación no se envía como respuesta a un mensaje [**\_ SET
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

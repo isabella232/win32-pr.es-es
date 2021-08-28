@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_SETGROUPMETRICS (commctrl. h)
+title: LVM_SETGROUPMETRICS mensaje (Commctrl.h)
 description: Establece información sobre la presentación de grupos.
 ms.assetid: 268b478d-da1f-4efe-9ee9-af3f12e089ee
 keywords:
-- LVM_SETGROUPMETRICS controles de mensajes de Windows
+- LVM_SETGROUPMETRICS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8215962e6f84aac83a2151b46f489938b575303c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 32f978c763fd1602d06f921a5da38a895fb1d3c76573341d9ca4f2987a0d3c7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077265"
 ---
-# <a name="lvm_setgroupmetrics-message"></a>\_Mensaje SETGROUPMETRICS LVM
+# <a name="lvm_setgroupmetrics-message"></a>Mensaje \_ SETGROUPMETRICS de LVM
 
 Establece información sobre la presentación de grupos.
 
@@ -30,19 +30,19 @@ Establece información sobre la presentación de grupos.
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Debe ser **null**.</dd> <dt>
+</dt> <dd>Debe ser **NULL.**</dd> <dt>
 
 *lParam* 
-</dt> <dd>Puntero a una estructura <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics">**LVGROUPMETRICS**</a> que contiene las métricas que se van a establecer.</dd> </dl>
+</dt> <dd>Puntero a una <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics">**estructura LVGROUPMETRICS**</a> que contiene las métricas que se establecerán.</dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -50,11 +50,11 @@ No se utiliza el valor devuelto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

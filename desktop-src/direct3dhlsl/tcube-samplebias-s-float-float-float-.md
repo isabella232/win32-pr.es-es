@@ -1,9 +1,9 @@
 ---
-title: 'Función SampleBias:: SampleBias (S, Float, Float, float) para TextureCube'
-description: 'La función SampleBias:: SampleBias (S, Float, Float, float) para TextureCube muestrea una textura, después de aplicar el valor de Bias al nivel de mipmap.'
+title: Función SampleBias::SampleBias(S,float,float,float) para TextureCube
+description: La función SampleBias::SampleBias(S,float,float,float) para TextureCube muestrea una textura, después de aplicar el valor de sesgo al nivel mipmap.
 ms.assetid: BCDDADD9-D8B0-47C9-A312-5E6AF9C3C07B
 keywords:
-- SampleBias de función HLSL
+- Función SampleBias HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 55404f2e32f45e5b19e7b0cd4c109a6d5a8bcc13
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: fe1044b14e2bda6595730a80b2d474aae1e692e8647835a44fe86105963da659
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117985"
 ---
-# <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecube"></a>Función SampleBias:: SampleBias (S, Float, Float, float) para TextureCube
+# <a name="samplebiassamplebiassfloatfloatfloat-function-for-texturecube"></a>Función SampleBias::SampleBias(S,float,float,float) para TextureCube
 
-Muestrea una textura, después de aplicar el valor de diferencia al nivel de mipmap, con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en.
+Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,20 +47,20 @@ DXGI_FORMAT SampleBias(
 
 Tipo: **SamplerState**
 
-Un [Estado de muestra](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efectos que contiene las asignaciones de estado.
+Un [estado sampler](dx-graphics-hlsl-sampler.md). Se trata de un objeto declarado en un archivo de efecto que contiene asignaciones de estado.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de textura.
+Las coordenadas de textura. El tipo de argumento depende del tipo texture-object.
 
 
 
-| Tipo de Texture-Object                    | Tipo de parámetro |
+| Texture-Object de datos                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -73,31 +73,31 @@ Las coordenadas de textura. El tipo de argumento depende del tipo de objeto de t
 
 </dd> <dt>
 
-*Bias* \[ de\]
+*Sesgo* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-El valor de diferencia, que es un número de punto flotante entre 0,0 y 1,0, ambos inclusive, se aplica a un nivel de MIP antes del muestreo.
+El valor de sesgo, que es un número de punto flotante entre 0,0 y 1,0 inclusive, se aplica a un nivel de mip antes del muestreo.
 
 </dd> <dt>
 
-*Abrazadera* \[ de\]
+*Fijación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Un valor opcional en el que se van a fijar los valores LOD de ejemplo. Por ejemplo, si se pasa 2.0 f para el valor Clamp, se asegura de que ningún ejemplo individual tenga acceso a un nivel de MIP inferior a 2.0 f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **\_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-Formato de textura, que es uno de los valores con tipo que aparecen [**en \_ formato de DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+El formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

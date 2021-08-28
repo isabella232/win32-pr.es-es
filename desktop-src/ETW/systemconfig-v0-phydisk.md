@@ -25,12 +25,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1bfa7b994bfe0950ccc7a97b19fbd705838950d7461712b114a16f62e7ad0aec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c18a198934b7234121da02900896d67c39a3ab3c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119754765"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880731"
 ---
 # <a name="systemconfig_v0_phydisk-class"></a>Clase \_ PhyDisk SystemConfig V0 \_
 
@@ -84,7 +84,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (13), **Max** (3)
 </dt> </dl>
 
-Letra de unidad de la unidad de arranque con el formato <letter> ":".
+Letra de unidad de la unidad de arranque con el formato " &lt; letter &gt; :".
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (5)
 </dt> </dl>
 
-Número total de cilindros en la unidad de disco físico. Nota: El valor de esta propiedad se obtiene a través de funciones extendidas de interrupción de BIOS de 13 horas. El valor puede ser inexacto si la unidad usa un esquema de traducción para admitir tamaños de disco de alta capacidad. Consulte al fabricante para obtener especificaciones precisas de la unidad.
+Número total de cilindros en la unidad de disco físico. Nota: El valor de esta propiedad se obtiene a través de funciones extendidas de interrupción del BIOS 13 horas. El valor puede ser inexacto si la unidad usa un esquema de traducción para admitir tamaños de disco de alta capacidad. Consulte al fabricante para obtener especificaciones precisas de la unidad.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (11)
 </dt> </dl>
 
-Número de particiones en esta unidad de disco físico que reconoce el sistema operativo.
+Número de particiones de esta unidad de disco físico reconocidas por el sistema operativo.
 
 </dd> <dt>
 
@@ -260,7 +260,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (4)
 </dt> </dl>
 
-Número de pistas en cada cilindro de la unidad de disco físico. Nota: El valor de esta propiedad se obtiene a través de funciones extendidas de interrupción de BIOS de 13 horas. El valor puede ser inexacto si la unidad usa un esquema de traducción para admitir tamaños de disco de alta capacidad. Consulte al fabricante para obtener especificaciones precisas de la unidad.
+Número de pistas de cada cilindro en la unidad de disco físico. Nota: El valor de esta propiedad se obtiene a través de funciones extendidas de interrupción del BIOS 13 horas. El valor puede ser inexacto si la unidad usa un esquema de traducción para admitir tamaños de disco de alta capacidad. Consulte al fabricante para obtener especificaciones precisas de la unidad.
 
 </dd> <dt>
 
@@ -284,14 +284,14 @@ True si la caché de escritura está habilitada.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

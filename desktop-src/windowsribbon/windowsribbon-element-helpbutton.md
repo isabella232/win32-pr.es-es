@@ -3,7 +3,7 @@ title: Elemento HelpButton
 description: Representa el control Botón de ayuda.
 ms.assetid: 24c709da-539e-4ea0-bd3e-d3fbd72dfb97
 keywords:
-- Elemento HelpButton de la cinta de opciones de Windows
+- Elemento HelpButton Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9f34f04133b7628cce01ac0ce2808923b4f6bbdb
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: f138b615b0ae4a4e7a163364938808d945b60eb5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442846"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623501"
 ---
 # <a name="helpbutton-element"></a>Elemento HelpButton
 
@@ -37,16 +37,16 @@ Representa el [control Botón de](windowsribbon-controls-helpbutton.md) ayuda.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -87,7 +87,7 @@ Inicia un cuadro de diálogo de ayuda de la aplicación cuando se hace clic en �
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico necesario para implementar un control Botón [de ayuda de](windowsribbon-controls-helpbutton.md) la cinta de opciones.
+En el ejemplo siguiente se muestra el marcado básico necesario para implementar un control Botón [de ayuda de la](windowsribbon-controls-helpbutton.md) cinta de opciones.
 
 En esta sección de código se muestra la **declaración HelpButton** Command.
 
@@ -100,7 +100,7 @@ En esta sección de código se muestra la **declaración HelpButton** Command.
 
 
 
-En esta sección de código se muestra la declaración de control **HelpButton.**
+En esta sección de código se muestra la declaración del control **HelpButton.**
 
 
 ```XML

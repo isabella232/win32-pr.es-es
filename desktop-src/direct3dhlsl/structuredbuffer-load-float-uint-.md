@@ -1,6 +1,6 @@
 ---
-title: 'StructuredBuffer:: Load (int, uint) (función)'
-description: 'Lee los datos de búfer y devuelve el estado de la operación. | StructuredBuffer:: Load (int, uint) (función)'
+title: Función StructuredBuffer::Load(int,uint)
+description: Lee los datos del búfer y devuelve el estado de la operación. | Función StructuredBuffer::Load(int,uint)
 ms.assetid: d71c6057-6651-4b70-91cf-892fde6d0188
 keywords:
 - Carga de la función HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 957b85631bbd19742cb7afe52f6bf061de323614
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 76e710a4d43c04f8b00b19522d274c66c7acade03387026388dc1a9c6f37ac67
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094965"
 ---
-# <a name="structuredbufferloadintuint-function"></a>StructuredBuffer:: Load (int, uint) (función)
+# <a name="structuredbufferloadintuint-function"></a>Función StructuredBuffer::Load(int,uint)
 
-Lee los datos de búfer y devuelve el estado de la operación.
+Lee los datos del búfer y devuelve el estado de la operación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ Lee los datos de búfer y devuelve el estado de la operación.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -49,12 +49,12 @@ Ubicación del búfer.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se tomaron valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -62,15 +62,15 @@ Estado de la operación. No se puede tener acceso directamente al estado. en su 
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**StructuredBuffer**](sm5-object-structuredbuffer.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto StructuredBuffer.**](sm5-object-structuredbuffer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -78,11 +78,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Cargar métodos](structuredbuffer-load.md)
+[Métodos de carga](structuredbuffer-load.md)
 </dt> </dl>
 
  

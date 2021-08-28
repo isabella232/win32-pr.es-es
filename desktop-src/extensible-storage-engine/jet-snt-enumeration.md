@@ -34,12 +34,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d25137c9e976d05bd065837fed7753e26e3afdae020499b3388948e11733fd77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d405e33b7d84d3a5a58dc9a13d5c070c47a6536
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118252529"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467222"
 ---
 # <a name="jet_snt-enumeration"></a>JET_SNT enumeración
 
@@ -63,48 +63,15 @@ public enum JET_SNT
 
 ## <a name="members"></a>Miembros
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Nombre del miembro</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td>Comenzar</td>
-<td>Devolución de llamada para el principio de una operación.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Progreso</td>
-<td>Devolución de llamada para el progreso de la operación.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Completo</td>
-<td>Devolución de llamada para la finalización de una operación.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Suspenso</td>
-<td>Devolución de llamada en caso de error durante la operación.</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>RecoveryStep</td>
-<td>Devolución de llamada para el control de recuperación.
-<p>Se usa para el procesamiento interno en versiones del Windows sistema operativo anteriores a Windows 8. Este valor no es aplicable a las versiones de Windows a partir de Windows 8.</p></td>
-</tr>
-</tbody>
-</table>
+
+|  | Nombre del miembro | Descripción | 
+|--|-------------|-------------|
+|  | Comenzar | Devolución de llamada para el principio de una operación. | 
+|  | Progreso | Devolución de llamada para el progreso de la operación. | 
+|  | Completo | Devolución de llamada para la finalización de una operación. | 
+|  | Suspenso | Devolución de llamada en caso de error durante la operación. | 
+|  | RecoveryStep | Devolución de llamada para el control de recuperación.<p>Se usa para el procesamiento interno en versiones del Windows sistema operativo anteriores a Windows 8. Este valor no es aplicable a las versiones de Windows a partir de Windows 8.</p> | 
+
 
 
 ## <a name="see-also"></a>Consulte también

@@ -1,5 +1,5 @@
 ---
-description: Devolución de llamada que notifica al host una solicitud cancelada.
+description: Devolución de llamada que notifica al host de una solicitud cancelada.
 MS-HAID: vspixengine.INewFramesCallback\_CancelUsingCallback\_IUnknown\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6a78f769e443e6870e93de56bbc8fb8b5a669c6108bb78e950e1c12fc160cddc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f5e6ef8a7e2533ce4a78109f2d4d2aa4b5eb845
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119369235"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627750"
 ---
 # <a name="span-idvspixengineinewframescallback_cancelusingcallback_iunknown_ptrspaninewframescallbackcancelusingcallback-method"></a><span id="vspixengine.inewframescallback_cancelusingcallback_iunknown_ptr"></span>INewFramesCallback::CancelUsingCallback (Método)
 
-Devolución de llamada que notifica al host una solicitud cancelada.
+Devolución de llamada que notifica al host de una solicitud cancelada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

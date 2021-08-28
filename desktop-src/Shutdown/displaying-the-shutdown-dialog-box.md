@@ -1,21 +1,21 @@
 ---
 description: En el ejemplo siguiente se reinicia el sistema local mediante la función InitiateSystemShutdown.
 ms.assetid: 928c2d48-daa5-4c27-816b-766adedba7eb
-title: Mostrar el cuadro de diálogo de apagado
+title: Mostrar el cuadro de diálogo Apagar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eedfee9e96fa1e6183cbe1d9322a603b65ae4b86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfae7475d1a0d861c06bf83dfcab95e0c939b44f1837a543584642f15ac43bb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120100625"
 ---
-# <a name="displaying-the-shutdown-dialog-box"></a>Mostrar el cuadro de diálogo de apagado
+# <a name="displaying-the-shutdown-dialog-box"></a>Mostrar el cuadro de diálogo Apagar
 
-En el ejemplo siguiente se reinicia el sistema local mediante la función [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna) . El sistema muestra un cuadro de diálogo con un mensaje personalizado y un mensaje al usuario para cerrar las aplicaciones en el intervalo de tiempo de espera especificado (30 segundos). Una vez transcurrido el intervalo de tiempo de espera, se reinicia el sistema.
+En el ejemplo siguiente se reinicia el sistema local mediante [**la función InitiateSystemShutdown.**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna) El sistema muestra un cuadro de diálogo con un mensaje personalizado y un mensaje al usuario para cerrar las aplicaciones dentro del intervalo de tiempo de espera especificado (30 segundos). Una vez transcurrido el intervalo de tiempo de espera, se reinicia el sistema.
 
-La aplicación debe habilitar el privilegio de nombre de cierre de SE \_ antes de \_ llamar a [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna). Para obtener más información, vea [privilegios](../secauthz/privileges.md).
+La aplicación debe habilitar el SE \_ SHUTDOWN NAME antes de llamar a \_ [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna). Para obtener más información, vea [Privileges](../secauthz/privileges.md).
 
 
 ```C++
@@ -79,7 +79,7 @@ BOOL MySystemShutdown( LPTSTR lpMsg )
 
 
 
-Si la función [**AbortSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-abortsystemshutdowna) se ejecuta en el período de tiempo de espera especificado por [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna), el sistema no se apaga. Por ejemplo, si se llama a PreventSystemShutdown después de MySystemShutdown, el sistema cierra el cuadro de diálogo y no reinicia el sistema.
+Si la [**función AbortSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-abortsystemshutdowna) se ejecuta en el período de tiempo de espera especificado por [**InitiateSystemShutdown**](/windows/desktop/api/Winreg/nf-winreg-initiatesystemshutdowna), el sistema no se cierra. Por ejemplo, si se llama a PreventSystemShutdown después de MySystemShutdown, el sistema cierra el cuadro de diálogo y no reinicia el sistema.
 
 
 ```C++

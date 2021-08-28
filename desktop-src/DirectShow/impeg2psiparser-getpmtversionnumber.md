@@ -1,7 +1,7 @@
 ---
-description: 'Método IMpeg2PsiParser::GetPmtVersionNumber: la implementación de este método se proporciona como código de ejemplo con el SDK de DirectShow. No es una API de DirectShow compatible.'
+description: 'Método IMpeg2PsiParser::GetPmtVersionNumber: la implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No se admite DirectShow API.'
 ms.assetid: 50113d6b-4e10-4dc9-aaef-f67c6918a2de
-title: IMpeg2PsiParser::GetPmtVersionNumber (método)
+title: IMpeg2PsiParser::GetPmtVersionNumber (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6f4fd8d0eba88ba1df54a1cc058bc0a2951b9a19
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fe193e07cb32b1048d6075786c381c03370d3297f9eb771238cd7ae499076e5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107715"
 ---
-# <a name="impeg2psiparsergetpmtversionnumber-method"></a>IMpeg2PsiParser::GetPmtVersionNumber (método)
+# <a name="impeg2psiparsergetpmtversionnumber-method"></a>IMpeg2PsiParser::GetPmtVersionNumber (Método)
 
-La implementación de este método se proporciona como código de ejemplo con el SDK de DirectShow. No es una API de DirectShow compatible.
+La implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No se admite DirectShow API.
 
 El `GetPmtVersionNumber` método recupera el campo de número de versión de un \_ PMT especificado. El número de versión se incrementa cada vez que cambia la definición del programa.
 
@@ -73,7 +73,7 @@ El método devuelve un **valor HRESULT.** Los valores posibles incluyen, entre o
 
 Use el **método GetRecordProgramNumber** para obtener el número de programa.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

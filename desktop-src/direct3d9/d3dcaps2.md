@@ -4,12 +4,12 @@ ms.assetid: 0c0c65fc-f953-4379-a6d0-6ce447a0c183
 title: D3DCAPS2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fc58f0e249a90a325631123ce7b8e43d4149a7244e7b2032c489c0999137ea0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adada1f5e38247482af38cd335c6fd719cf9a603
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989125"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627711"
 ---
 # <a name="d3dcaps2"></a>D3DCAPS2
 
@@ -19,9 +19,9 @@ Marcas de funcionalidad del controlador.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -32,17 +32,17 @@ Marcas de funcionalidad del controlador.
 <tr class="even">
 <td>D3DCAPS2_CANAUTOGENMIPMAP</td>
 <td>0x40000000L</td>
-<td>El controlador es capaz de generar automáticamente mapas MIP. Para obtener más información, <a href="automatic-generation-of-mipmaps.md">vea Generación automática de mapas Mip (Direct3D 9).</a></td>
+<td>El controlador es capaz de generar automáticamente mapas MIP. Para obtener más información, vea Generación automática de <a href="automatic-generation-of-mipmaps.md">mapas Mip (Direct3D 9).</a></td>
 </tr>
 <tr class="odd">
 <td>D3DCAPS2_CANCALIBRATEGAMMA</td>
 <td>0x00100000L</td>
-<td>El sistema tiene instalado un calibrador que puede ajustar automáticamente la rampa gamma para que el resultado sea idéntico en todos los sistemas que tienen un calibrador. Para invocar el calibrador al establecer nuevos niveles gamma, use la marca D3DSGR_CALIBRATE al llamar a <a href="/windows/desktop/api"><strong>SetGammaRamp.</strong></a> La calibración de rampas gamma incurre en cierta sobrecarga de procesamiento y no se debe usar con frecuencia.</td>
+<td>El sistema tiene instalado un calibrador que puede ajustar automáticamente la rampa gamma para que el resultado sea idéntico en todos los sistemas que tienen un calibrador. Para invocar el calibrador al establecer nuevos niveles gamma, use la D3DSGR_CALIBRATE al llamar a <a href="/windows/desktop/api"><strong>SetGammaRamp</strong></a>. La calibración de las rampas gamma incurre en cierta sobrecarga de procesamiento y no se debe usar con frecuencia.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_CANSHARERESOURCE</td>
 <td>0x80000000L</td>
-<td>El dispositivo puede crear recursos compartibles. Los métodos que crean recursos pueden establecer valores distintos de NULL para sus <a href="/windows/desktop/api/dxgi/nf-dxgi-idxgiresource-getsharedhandle"><strong>parámetros pSharedHandle.</strong></a> 
+<td>El dispositivo puede crear recursos que se pueden compartir. Los métodos que crean recursos pueden establecer valores que no son NULL para sus <a href="/windows/desktop/api/dxgi/nf-dxgi-idxgiresource-getsharedhandle"><strong>parámetros pSharedHandle.</strong></a> 
 <table>
 <tbody>
 <tr class="odd">
@@ -56,7 +56,7 @@ Marcas de funcionalidad del controlador.
 <tr class="odd">
 <td>D3DCAPS2_CANMANAGERESOURCE</td>
 <td>0x10000000L</td>
-<td>El controlador es capaz de administrar recursos. En estos controladores, el D3DPOOL_MANAGED administrará los recursos. Para que Direct3D invalide el controlador para que Direct3D administre los recursos, use la marca D3DCREATE_DISABLE_DRIVER_MANAGEMENT al llamar a <a href="/windows/desktop/api"><strong>CreateDevice</strong></a>.</td>
+<td>El controlador es capaz de administrar recursos. En estos controladores, D3DPOOL_MANAGED recursos administrados por el controlador. Para que Direct3D invalide el controlador para que Direct3D administre los recursos, use la marca D3DCREATE_DISABLE_DRIVER_MANAGEMENT al llamar <a href="/windows/desktop/api"><strong>a CreateDevice</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>D3DCAPS2_DYNAMICTEXTURES</td>

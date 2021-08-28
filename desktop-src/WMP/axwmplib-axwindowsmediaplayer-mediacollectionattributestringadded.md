@@ -1,9 +1,9 @@
 ---
-title: Evento MediaCollectionAttributeStringAdded del objeto AxWindowsMediaPlayer
-description: El evento MediaCollectionAttributeStringAdded se produce cuando se agrega un valor de atributo a la biblioteca. | Evento MediaCollectionAttributeStringAdded del objeto AxWindowsMediaPlayer
+title: Evento MediaCollectionAttributeString agregado del objeto AxWindowsMediaPlayer
+description: El evento MediaCollectionAttributeStringAdded tiene lugar cuando se agrega un valor de atributo a la biblioteca. | Evento MediaCollectionAttributeString agregado del objeto AxWindowsMediaPlayer
 ms.assetid: b14db0ce-bd78-4e28-a42c-1a231c29da2b
 keywords:
-- Evento MediaCollectionAttributeStringAdded del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento MediaCollectionAttributeString agregado del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6712b6caa8f014ec75bf2b031e2d3f6db429dbd2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95d0612e18256f81529a8ad703ecf887ba5976ea9913e46598bc5a0fd44a903e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123945"
 ---
-# <a name="mediacollectionattributestringadded-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionAttributeStringAdded del objeto AxWindowsMediaPlayer
+# <a name="mediacollectionattributestringadded-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionAttributeString agregado del objeto AxWindowsMediaPlayer
 
-El evento MediaCollectionAttributeStringAdded se produce cuando se agrega un valor de atributo a la biblioteca.
+El evento MediaCollectionAttributeStringAdded tiene lugar cuando se agrega un valor de atributo a la biblioteca.
 
 ``` syntax
 [C#]
@@ -47,14 +47,14 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad           | Descripción                                                                                                                                                                                  |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **bstrAttribName** | System. StringSpecifies el nombre del atributo. Para obtener información sobre los atributos que admite Windows Media Player, vea la [referencia de atributo](attribute-reference.md).<br/> |
-| bstrAttribVal      | System. StringSpecifies el valor del atributo.<br/>                                                                                                                                |
+| **bstrAttribName** | System.String Especifica el nombre del atributo. Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea referencia [de atributos](attribute-reference.md).<br/> |
+| bstrAttribVal      | System.String Especifica el valor del atributo.<br/>                                                                                                                                |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando se agrega un elemento multimedia a la biblioteca, sus metadatos se agregan a la colección de medios y este evento se desencadena para cada atributo agregado.
 
@@ -64,7 +64,7 @@ Cuando se agrega un elemento multimedia a la biblioteca, sus metadatos se agrega
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -77,7 +77,7 @@ Cuando se agrega un elemento multimedia a la biblioteca, sus metadatos se agrega
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. mediaCollection (VB y C#)**](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md)
+[**AxWindowsMediaPlayer.mediaCollection (VB y C#)**](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPMediaCollection (VB y C#)**](iwmpmediacollection--vb-and-c.md)

@@ -4,12 +4,12 @@ ms.assetid: e33634bb-5db5-4197-889d-82caf2e74191
 title: PageBlackGenerationProcessingGrayComponentReplacementLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8499c8521b974d01657c171a99e86e738c82b4e5
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4c53c4d896f41fe084581555c3706852bfbd905c6e30044b71b848dbc60420e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112315"
 ---
 # <a name="pageblackgenerationprocessinggraycomponentreplacementlevel"></a>PageBlackGenerationProcessingGrayComponentReplacementLevel
 
@@ -24,7 +24,7 @@ Especifica el porcentaje de reemplazo de componentes grises que se realizará.
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefijo de ámbito <br/> | Página<br/>                                            |
@@ -70,13 +70,13 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | 100<br/>             |
 | MinValue<br/>     | integer<br/> | 0<br/>               |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 

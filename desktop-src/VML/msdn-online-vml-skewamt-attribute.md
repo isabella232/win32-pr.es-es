@@ -4,44 +4,44 @@ description: Atributo SkewAmt de VML
 ms.assetid: ea685ea7-0853-4bcf-8ff2-39b714091429
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f75e469492ccc15b0ef3a03beffed05a5b2b1031
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3689969a804c8f27602ce414012e35acd78af8e158c274d1508b807dc1871856
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099005"
 ---
 # <a name="vml-skewamt-attribute"></a>Atributo SkewAmt de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define la cantidad de sesgo de una extrusión. Lectura/escritura **VgPercent**.
+Define la cantidad de sesgo de una extrusión. Lectura/escritura **Dvpercent**.
 
 **Se aplica a**
 
-[Trusión](msdn-online-vml-extrusion-element.md)
+[Extrusión](msdn-online-vml-extrusion-element.md)
 
 **Sintaxis de etiquetas**
 
-<o: *elemento* skewamt = " *expresión* " >
+<o: *element* skewamt=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . skewamt = "*expresión*"
+*element* .skewamt="*expression*"
 
-*expresión* = de *elemento*. skewamt
+*expresión* = *elemento*.skewamt
 
 **Comentarios:**
 
-Solo se aplica a una extrusión si el valor del atributo de [tipo](type-attribute--extrusion--vml.md) de extrusión es *paralelo*. El valor predeterminado es 50%.
+Solo se aplica a una extrusión si el valor del atributo [de tipo](type-attribute--extrusion--vml.md) de extrusión es *paralelo.* El valor predeterminado es 50 %.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

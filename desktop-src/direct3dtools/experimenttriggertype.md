@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 583c387a553f54a4b4a0b20f3958bb71b279edba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a54f9833003fb69e9daf4d265b02941f1ccd6b4e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097433"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623191"
 ---
 # <a name="span-idvspixengineexperimenttriggertypespanexperimenttriggertype-enumeration"></a><span id="vspixengine.experimenttriggertype"></span>Enumeración EXPERIMENTTRIGGERTYPE
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -35,7 +35,7 @@ ms.locfileid: "108097433"
 
 ## <a name="constants"></a>Constantes
 
-<span id="KEY"></span><span id="key"></span>**Clave**  
+<span id="KEY"></span><span id="key"></span>**CLAVE**  
 
 <span id="FRAMENUMBER"></span><span id="framenumber"></span>**FRAMENUMBER**  
 
@@ -43,7 +43,7 @@ ms.locfileid: "108097433"
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -4,12 +4,12 @@ description: En este artículo se describe cómo los desarrolladores de juegos p
 ms.assetid: 1b7cc3c9-b180-14b1-53c8-57f9e545d009
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 939d22b1d8bf381e98c5b6a7222be29b565c3d9e1f0758788aff94b0915b1807
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8db15302eb856aaeb05c68fae4746110dd42cb4a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119340745"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887383"
 ---
 # <a name="gaming-with-least-privileged-user-accounts"></a>Juegos con cuentas Least-Privileged usuario
 
@@ -24,15 +24,15 @@ En este artículo se describe cómo los desarrolladores de juegos pueden crear j
 
 ## <a name="introduction"></a>Introducción
 
-Windows administra sus usuarios con cuentas. En la actualidad, más del 80 % de los usuarios del equipo en casa comparten su equipo con otros miembros de la familia. Cuando varios usuarios comparten un Windows, se crean varias cuentas de usuario y cada usuario inicia sesión con una cuenta individual para acceder al equipo. Con el creciente reconocimiento de la seguridad, más personas operan sus equipos con cuentas de usuario con privilegios mínimos, también conocidas como cuentas de usuario limitado, que no tienen control total sobre el sistema. Las cuentas de administrador suelen tener acceso sin restricciones a todas las partes del equipo. Esto puede afectar a cómo funcionan Windows juegos basados en la nube.
+Windows administra sus usuarios con cuentas. En la actualidad, más del 80 % de los usuarios del equipo en casa comparten su equipo con otros miembros de la familia. Cuando varios usuarios comparten un Windows, se crean varias cuentas de usuario y cada usuario inicia sesión con una cuenta individual para acceder al equipo. Con el creciente conocimiento de la seguridad, más personas operan sus equipos con cuentas de usuario con menos privilegios, también conocidas como cuentas de usuario limitado, que no tienen control total sobre el sistema. Las cuentas de administrador suelen tener acceso sin restricciones a todas las partes del equipo. Esto puede afectar a cómo funcionan Windows juegos basados en la nube.
 
-Hay ventajas adicionales para los desarrolladores de juegos que escriben sus juegos para trabajar con cuentas de usuario con menos privilegios. En Windows Vista y versiones posteriores, se aplican las cuentas de usuario con menos privilegios, lo que significa que todas las cuentas del sistema, a excepción del administrador local, son una cuenta de usuario con menos privilegios. Esto afectará a cómo se ejecutan los juegos que no siguen las instrucciones (aplicaciones heredadas) en Windows Vista y versiones posteriores. Por ejemplo, cuando una aplicación intenta escribir en una carpeta o un valor del Registro para el que no tiene permiso, la escritura de archivo se redirige a un almacén de archivos virtual para el usuario. Este almacén de archivos virtual residirá en una carpeta a la que el usuario tenga acceso de escritura. Este comportamiento puede no parecer tan catastrófico como un error total en el intento de escritura. sin embargo, las aplicaciones que crean archivos virtualizados pueden confundir a los usuarios porque los archivos no se escribirán en la ubicación esperada por los usuarios. Por ejemplo, los juegos que escriben archivos de puntuación alta en la misma carpeta que la carpeta ejecutable escribirán estos archivos en una carpeta virtualizada en su lugar. Por lo tanto, un usuario no puede ver la puntuación alta lograda por otro usuario porque cada usuario tiene un almacén de archivos virtualizado independiente.
+Hay ventajas adicionales para los desarrolladores de juegos que escriben sus juegos para trabajar con cuentas de usuario con menos privilegios. En Windows Vista y versiones posteriores, se aplican las cuentas de usuario con menos privilegios, lo que significa que todas las cuentas del sistema, a excepción del administrador local, son una cuenta de usuario con menos privilegios. Esto afectará a cómo se ejecutan los juegos que no siguen las instrucciones (aplicaciones heredadas) en Windows Vista y versiones posteriores. Por ejemplo, cuando una aplicación intenta escribir en una carpeta o un valor del Registro para el que no tiene permiso, la escritura de archivos se redirige a un almacén de archivos virtual para el usuario. Este almacén de archivos virtual residirá en una carpeta en la que el usuario tenga acceso de escritura. Este comportamiento puede no parecer tan catastrófico como un error total en el intento de escritura. sin embargo, las aplicaciones que crean archivos virtualizados pueden confundir a los usuarios porque los archivos no se escribirán en la ubicación esperada por los usuarios. Por ejemplo, los juegos que escriben archivos de puntuación alta en la misma carpeta que la carpeta ejecutable escribirán estos archivos en una carpeta virtualizada en su lugar. Por lo tanto, un usuario no puede ver la puntuación alta lograda por otro usuario porque cada usuario tiene un almacén de archivos virtualizado independiente.
 
 Los juegos que siguen las directrices de este artículo se ejecutarán con cuentas de usuario con menos privilegios y, por tanto, mantendrán la compatibilidad con Windows Vista y versiones posteriores.
 
 ## <a name="file-access-for-least-privileged-user-accounts"></a>Acceso a archivos para Least-Privileged de usuario
 
-Windows admite dos sistemas de archivos: FAT32 y NTFS. FAT32 es un sistema de archivos heredado que solo se admite por compatibilidad con versiones anteriores. NTFS admite permisos de archivo más eficaces y sólidos. El uso de NTFS se está expandiendo a medida que los distribuidores están enviando nuevos equipos con Windows preinstalado en una unidad de disco duro con particiones NTFS. En un sistema Windows XP basado en NTFS, los usuarios con cuentas de usuario con menos privilegios solo tienen acceso limitado a varias carpetas. Sin embargo, tendrían acceso completo en un sistema basado en FAT32 Windows XP.
+Windows admite dos sistemas de archivos: FAT32 y NTFS. FAT32 es un sistema de archivos heredado que solo se admite por compatibilidad con versiones anteriores; NTFS admite permisos de archivo más eficaces y sólidos. El uso de NTFS se está expandiendo a medida que los distribuidores están enviando nuevos equipos con Windows preinstalado en una unidad de disco duro con particiones NTFS. En un sistema Windows XP basado en NTFS, los usuarios con cuentas de usuario con menos privilegios solo tienen acceso limitado a varias carpetas. Sin embargo, tendrían acceso completo en un sistema basado en FAT32 Windows XP.
 
 En la tabla siguiente se muestra la ubicación predeterminada de estas carpetas y sus permisos.
 
@@ -40,10 +40,10 @@ En la tabla siguiente se muestra la ubicación predeterminada de estas carpetas 
 
 | Ruta de acceso                                               | Contenido de la carpeta              | Lectura | Escritura | Crear/Eliminar |
 |----------------------------------------------------|------------------------------|------|-------|---------------|
-| <Drive>: \\ Windows                            | El Windows operativo | X    |       |               |
-| <Drive>: \\ archivos de programa                      | Archivos de aplicación ejecutables | X    |       |               |
-| <Drive>: Documentos \\ y nombre Configuración \\ usuario\* | Archivos de cada usuario            | X    | X     | X             |
-| <Drive>: \\ documentos y Configuración todos los \\ usuarios  | Todos los archivos de usuario               | X    | X     | X             |
+| &lt;Unidad: &gt; \\ Windows                            | El Windows operativo | X    |       |               |
+| &lt;Unidad: &gt; \\ Archivos de programa                      | Archivos de aplicación ejecutables | X    |       |               |
+| &lt;Unidad: &gt; Documentos y nombre Configuración \\ \\ usuario\* | Archivos de cada usuario            | X    | X     | X             |
+| &lt;Unidad: &gt; Documentos y Configuración Todos los \\ \\ usuarios  | Todos los archivos de usuario               | X    | X     | X             |
 
 
 
@@ -53,7 +53,7 @@ En la tabla siguiente se muestra la ubicación predeterminada de estas carpetas 
 
 En una cuenta de usuario con privilegios mínimos, puede leer, escribir, crear y eliminar archivos en cualquiera de las carpetas: Documentos y Configuración Nombre de usuario o Documentos \\ y Configuración Todos los \\ usuarios.
 
-Esto significa que no debe colocar juegos guardados en archivos de programa, sino que deben ir en una subpágdala \\ \\ en Mis documentos. Además, no debe colocar datos de aplicación temporales en archivos de programa Mis documentos, sino que se deben colocar en la carpeta Datos de aplicación \\ \\ (CSIDL \_ LOCAL \_ APPDATA).
+Esto significa que no debe colocar juegos guardados en archivos de programa, sino que deben ir en una subpágdala \\ \\ en Mis documentos. Además, no debe colocar datos temporales de la aplicación en archivos de programa Mis documentos, sino que se deben colocar en la carpeta Datos de aplicación \\ \\ (CSIDL \_ LOCAL \_ APPDATA).
 
 Más concretamente, hay dos escenarios que cada juego debe controlar:
 
@@ -89,7 +89,7 @@ La diferencia entre las carpetas de datos de aplicación locales y móviles es q
 
 ### <a name="scenario-2-files-that-need-to-be-viewed-or-altered-by-users"></a>Escenario 2: Archivos que los usuarios deben ver o modificar
 
-Un ejemplo típico serían los archivos de juego guardados de un usuario. Almacene los archivos en la carpeta de documentos del usuario para que sean fácilmente visibles para el usuario. Una aplicación obtiene la ruta de acceso de la carpeta del documento del usuario mediante una llamada a [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) con CSIDL PERSONAL, como se muestra \_ en el ejemplo de código siguiente:
+Un ejemplo típico serían los archivos de juego guardados de un usuario. Almacene los archivos en la carpeta de documentos del usuario para que sean fácilmente visibles para el usuario. Una aplicación obtiene la ruta de acceso de la carpeta del documento del usuario mediante una llamada a [**SHGetFolderPath**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha) con CSIDL PERSONAL, como se muestra en el \_ ejemplo de código siguiente:
 
 ``` syntax
 #include <shlobj.h>
@@ -127,7 +127,7 @@ StringCchCatW( wszPath, MAX_PATH, APPNAME );
 
 ## <a name="registry-access-for-least-privileged-user-accounts"></a>Acceso al Registro para Least-Privileged de usuario
 
-Es habitual que las aplicaciones usen el registro Windows para almacenar información. De forma similar al acceso a archivos, las cuentas de administrador y de usuario con menos privilegios no tienen el mismo permiso para el registro. Para las cuentas de usuario con menos privilegios, todo el nodo HKEY \_ LOCAL MACHINE es de solo \_ lectura. Por ejemplo, un juego puede leer la información de configuración predeterminada, pero es posible que no escriba ninguna información nueva en este nodo. Por lo tanto, los juegos que se ejecutan en modo de usuario con privilegios mínimos que necesitan escribir en el Registro tendrán que usar el nodo HKEY CURRENT USER para almacenar información por usuario, como se muestra en el \_ \_ código siguiente.
+Es habitual que las aplicaciones usen el registro Windows para almacenar información. De forma similar al acceso a archivos, las cuentas de administrador y de usuario con menos privilegios no tienen el mismo permiso para el registro. En el caso de las cuentas de usuario con privilegios mínimos, todo el nodo HKEY \_ LOCAL MACHINE es de solo \_ lectura. Por ejemplo, un juego puede leer la información de configuración predeterminada, pero es posible que no escriba ninguna información nueva en este nodo. Por lo tanto, los juegos que se ejecutan en modo de usuario con privilegios mínimos que necesitan escribir en el Registro tendrán que usar el nodo HKEY CURRENT USER para almacenar información por usuario, como se muestra en el \_ \_ código siguiente.
 
 ``` syntax
 #define APP_REGISTRY_KEY_PATH L"Software\\MyCompany\\MyApp"
@@ -157,22 +157,22 @@ Al desinstalar el juego, es necesario realizar un esfuerzo adicional para quitar
 
 ## <a name="patching-with-least-privileged-user-accounts"></a>Aplicación de revisiones con Least-Privileged de usuario
 
-La aplicación de revisiones a un juego implica actualizar los archivos del juego. Por lo tanto, normalmente requiere acceso de escritura a la carpeta del programa del juego. Aplicar revisiones a un juego es un proceso sencillo cuando lo hace un administrador porque tienen acceso sin restricciones a la carpeta del programa del juego. Por el contrario, tradicionalmente ha sido difícil, si no imposible, que un usuario con menos privilegios aplicara revisiones a los juegos debido a la restricción de acceso. Ahora, [Windows instalador se](/windows/desktop/Msi/windows-installer-portal) ha mejorado para que sea posible aplicar revisiones a las cuentas de usuario con menos privilegios. Para aprovechar esta característica, se recomienda que los juegos utilicen Windows Installer para la instalación y aplicación de revisiones.
+La aplicación de revisiones a un juego implica actualizar los archivos del juego. Por lo tanto, normalmente requiere acceso de escritura a la carpeta del programa del juego. Aplicar revisiones a un juego es un proceso sencillo cuando lo hace un administrador porque tienen acceso sin restricciones a la carpeta del programa del juego. Por el contrario, tradicionalmente ha sido difícil, si no imposible, que un usuario con menos privilegios aplicara revisiones a los juegos debido a la restricción de acceso. Ahora, [Windows instalador se](/windows/desktop/Msi/windows-installer-portal) ha mejorado para hacer posible la aplicación de revisiones de cuentas de usuario con privilegios mínimos. Para aprovechar esta característica, se recomienda que los juegos utilicen Windows Installer para la instalación y aplicación de revisiones.
 
-A partir Windows Installer 3.0, los usuarios con privilegios mínimos pueden aplicar revisiones de aplicación cuando se cumplen ciertas condiciones. Estas condiciones son:
+A partir Windows Installer 3.0, los usuarios con menos privilegios pueden aplicar revisiones de aplicación cuando se cumplen ciertas condiciones. Estas condiciones son:
 
 -   La aplicación se instaló mediante Windows Installer 3.0.
 -   La aplicación se instaló originalmente por máquina.
--   La aplicación se instala desde medios extraíbles, como un CD-ROM o un disco de vídeo digital (DVD).
+-   La aplicación se instala desde medios extraíbles, como cd-ROM o disco de vídeo digital (DVD).
 -   Las revisiones están firmadas digitalmente por un certificado identificado por el paquete del instalador original (.msi archivo).
 -   Las revisiones se pueden validar con la firma digital.
 -   El paquete del instalador original no ha deshabilitado la aplicación de revisiones de cuentas de usuario con privilegios mínimos.
 -   El administrador del sistema no ha deshabilitado la aplicación de revisiones de cuentas de usuario con privilegios mínimos a través de la directiva del sistema.
 
-Normalmente, un usuario con menos privilegios no puede modificar los archivos de programa de un juego. Sin embargo, cuando se cumplen las condiciones anteriores y se habilita la aplicación de revisiones de LUA, Windows Installer puede actualizar los archivos del juego para que el usuario reciba la versión más reciente.
+Normalmente, un usuario con menos privilegios no puede modificar los archivos de programa de un juego. Sin embargo, cuando se cumplen las condiciones anteriores y se habilita la aplicación de revisiones de LUA, Windows Installer puede actualizar los archivos del juego para que el usuario tenga la versión más reciente.
 
 > [!Note]  
-> La información contenida en este artículo está relacionada con el producto de software de versión previa, que se puede modificar considerablemente antes de su primera versión comercial. En consecuencia, es posible que la información no describa ni refleje con precisión el producto de software cuando se lanzó por primera vez comercialmente. Este artículo se proporciona solo con fines informativos y Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a este artículo o a la información contenida en él.
+> La información contenida en este artículo está relacionada con el producto de software de versión previa, que puede modificarse considerablemente antes de su primera versión comercial. En consecuencia, es posible que la información no describa o refleje con precisión el producto de software cuando se lanza por primera vez comercialmente. Este artículo se proporciona solo con fines informativos y Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a este artículo o a la información contenida en él.
 
  
 

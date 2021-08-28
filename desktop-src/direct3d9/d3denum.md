@@ -4,12 +4,12 @@ ms.assetid: 78ff4433-f0b5-4bbb-b2c0-bd389fbc31ce
 title: D3DENUM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f186b0d8f8d507192aa0ef6446a31dc5008dff917252ee301343152fe58f84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50cb3ed10a4a12602e8586bbd0e941641287346a
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988935"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628001"
 ---
 # <a name="d3denum"></a>D3DENUM
 
@@ -19,9 +19,9 @@ Marca de funcionalidad del controlador.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">

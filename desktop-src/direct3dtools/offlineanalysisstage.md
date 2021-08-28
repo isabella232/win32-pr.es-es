@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: a431de8d45666bb03f6841da895ceaebecb6ebfa1b8f5ac1b4daa5a11893e11f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da78be36b9999d6c082b3c683dfd7e0e5ae18ef5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119239685"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627991"
 ---
 # <a name="span-idvspixengineofflineanalysisstagespanofflineanalysisstage-enumeration"></a><span id="vspixengine.offlineanalysisstage"></span>OFFLINEANALYSISSTAGE (enumeración)
 
 Enumeración que se usa para indicar las fases de progreso en el análisis de fotogramas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -56,7 +56,7 @@ Inicialización del análisis de fotogramas (carga del analizador).
 Se está ejecutando el análisis de fotogramas.
 
 <span id="OfflineAnalysisStage_AnalysisCompleted"></span><span id="offlineanalysisstage_analysiscompleted"></span><span id="OFFLINEANALYSISSTAGE_ANALYSISCOMPLETED"></span>**OfflineAnalysisStage \_ AnalysisCompleted**  
-Se completó el análisis de fotogramas (se envió el evento "complete").
+Se completó el análisis de fotogramas (evento "complete" enviado).
 
 <span id="OfflineAnalysisStage_AnalysisCompleted_Successful"></span><span id="offlineanalysisstage_analysiscompleted_successful"></span><span id="OFFLINEANALYSISSTAGE_ANALYSISCOMPLETED_SUCCESSFUL"></span>**OfflineAnalysisStage \_ AnalysisCompleted \_ Successful**  
 El análisis de fotogramas se completó correctamente.
@@ -66,7 +66,7 @@ Se completó el análisis de fotogramas y existe el archivo de salida.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

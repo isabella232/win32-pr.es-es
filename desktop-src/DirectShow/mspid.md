@@ -1,24 +1,24 @@
 ---
-description: Tenga en cuenta que esta API está en desuso. Las nuevas aplicaciones no deben utilizarla. El tipo de datos MSPID identifica el propósito de una secuencia de medios.
+description: 'Nota: Esta API está en desuso. Las nuevas aplicaciones no deben usarla. El tipo de datos MSPID identifica el propósito de un flujo multimedia.'
 ms.assetid: 83a84eb7-a72c-4ca7-b152-8cc81a5bfdaf
-title: MSPID (Mmstream. h)
+title: MSPID (Mmstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8464882aa018a373345f15c0a5639107d9beebf9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc9d274fc4131c0aa4494d610cbe1145ad79b848b5f6280d4ad6a10b298a8b7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075755"
 ---
 # <a name="mspid"></a>MSPID
 
 > [!Note]  
-> Esta API está en desuso. Las nuevas aplicaciones no deben utilizarla.
+> Esta API está en desuso. Las nuevas aplicaciones no deben usarla.
 
  
 
-El tipo de datos **MSPID** identifica el propósito de una secuencia de medios.
+El **tipo de datos MSPID** identifica el propósito de un flujo multimedia.
 
 
 ```C++
@@ -28,9 +28,9 @@ typedef REFGUID REFMSPID;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**MSPID** es simplemente una definición de tipo para GUID. Se definen los siguientes MSPIDs.
+**MSPID** es simplemente una definición de tipo para GUID. Se definen los siguientes MSPID.
 
 
 
@@ -43,7 +43,7 @@ typedef REFGUID REFMSPID;
 
  
 
-El tipo **REFMSPID** define una referencia a un **MSPID**.
+El **tipo REFMSPID** define una referencia a **un MSPID**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ El tipo **REFMSPID** define una referencia a un **MSPID**.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mmstream. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mmstream.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ El tipo **REFMSPID** define una referencia a un **MSPID**.
 
 <dl> <dt>
 
-[Tipos de datos de transmisión por secuencias multimedia](multimedia-streaming-data-types.md)
+[Tipos de datos de streaming multimedia](multimedia-streaming-data-types.md)
 </dt> </dl>
 
  

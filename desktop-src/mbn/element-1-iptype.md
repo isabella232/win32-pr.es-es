@@ -7,26 +7,26 @@ MSHAttr:
 title: IPType (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ec57fbe0bbcb4c633ddb8485f048ce4230e0ca5
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: f655d2f8592613fdb4953cbda32841dc9beaec0d
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388810"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479981"
 ---
 # <a name="span-idwwan_profile_v4element_1_iptypespanmodemdmconfigprofileiptype-v4"></a><span id="WWAN_profile_v4.element_1_IPType"></span>ModemDMConfigProfile \/ ... \/ IPType (v4)
 
-Especifica el tipo de IP que se va a usar en esta conexión de datos.
+Especifica el tipo de IP que se usará en esta conexión de datos.
 
-Este elemento es nuevo en V4 del esquema. El elemento puede tener uno de los valores siguientes.
+Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los siguientes valores.
 
 | Valor   | Significado                                       |
 |---------|-----------------------------------------------|
-| Valor predeterminado | El tipo de IP se va a seleccionar por las capas inferiores     |
-| IPv4    | Usar IPv4                                      |
+| Valor predeterminado | El tipo de IP se debe seleccionar por capas inferiores.     |
+| IPv4    | Uso de IPv4                                      |
 | IPv6    | Usar IPv6                                      |
-| IPv4v6  | Usar IPv4 y/o IPv6, como están disponibles.           |
-| XLAT    | Usar 464XLAT para canalizar redes IPv4 a través de IPv6 |
+| IPv4v6  | Use IPv4 o IPv6, según esté disponible.           |
+| XLAT    | Uso de 464XLAT para tunelización de IPv4 a través de redes IPv6 |
 
  
 
@@ -40,7 +40,7 @@ Este elemento es nuevo en V4 del esquema. El elemento puede tener uno de los val
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<IPType\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IPType>
@@ -62,41 +62,19 @@ Ninguno.
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento primario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-1-context.md">Contexto</a></td>
-<td><p>Especifica los parámetros necesarios para establecer una conexión de datos.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento primario | Descripción | 
+|----------------|-------------|
+| <a href="element-1-context.md">Contexto</a> | <p>Especifica los parámetros necesarios para establecer una conexión de datos.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Espacio de nombres</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

@@ -4,16 +4,16 @@ ms.assetid: a7402e02-9bdc-49ec-ba93-8a32f55b9dd8
 title: Mensaje hello
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 526b51576b36f143a932a757c70d0df19ddf9cc5efad3e51c4f7802003e6565e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49562d212bb113bba2c1fca0a352b0f1a81cea76
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118552446"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627591"
 ---
 # <a name="hello-message"></a>Mensaje hello
 
-Un mensaje Hello es un WS-Discovery que se usa para anunciar la presencia de un dispositivo o servicio en la red. Los mensajes Hello también se envían en otros escenarios. Para obtener más información sobre los mensajes Hello, vea la sección 4.1 de [WS-Discovery Specification](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
+Un mensaje Hello es un WS-Discovery que se usa para anunciar la presencia de un dispositivo o servicio en la red. Los mensajes Hello también se envían en otros escenarios. Para obtener más información sobre los mensajes Hello, vea la sección 4.1 de [la especificación WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
 La multidifusión UDP envía un mensaje Hello al puerto 3702. Este mensaje no se ha solicitado.
 
@@ -65,9 +65,9 @@ Un mensaje Hello tiene los siguientes puntos de enfoque.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -90,7 +90,7 @@ Un mensaje Hello tiene los siguientes puntos de enfoque.
     SequenceId=&quot;urn:uuid:369a7d7b-5f87-48a4-aa9a-189edf2a8772&quot;
     MessageNumber=&quot;14&quot;>
 </wsd:AppSequence></code></pre></td>
-<td>Contiene información de secuenciación de aplicaciones, que ayuda a mantener la secuencia de mensajes incluso si se reciben sin orden. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
+<td>Contiene información de secuenciación de aplicaciones, que ayuda a mantener la secuencia de mensajes incluso si se reciben fuera de servicio. AppSequence se valida como se describe en <a href="appsequence-validation-rules.md">Reglas de validación de AppSequence</a>.</td>
 </tr>
 <tr class="odd">
 <td>Dirección</td>

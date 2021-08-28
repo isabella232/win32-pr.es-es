@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d2264107889b5cb9cd46478075cca3ed5943890cbc85dcbea0a934ebeefb5bc6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c8fd3d612a22e249572af0bae13bc7286fad38e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119892495"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623551"
 ---
 # <a name="span-idvspixengineipixcancelablerequestspanipixcancelablerequest-interface"></a><span id="vspixengine.ipixcancelablerequest"></span>Interfaz IPixCancelableRequest
 
@@ -34,7 +34,7 @@ La **interfaz IPixCancelableRequest** hereda de la [**interfaz IUnknown,**](/win
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

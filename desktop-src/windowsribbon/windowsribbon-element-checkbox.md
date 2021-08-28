@@ -3,7 +3,7 @@ title: Elemento CheckBox
 description: Representa un control Casilla.
 ms.assetid: ebb44d6d-91fb-4a59-9b62-4a694fea8a4d
 keywords:
-- Cinta de opciones de Windows del elemento CheckBox
+- Elemento CheckBox Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d9357337e569f43b14c34798c9c6e8da4b7b10b
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 4754269600c779210e7eee786e3a60262dec06d1
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443046"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623981"
 ---
 # <a name="checkbox-element"></a>Elemento CheckBox
 
@@ -38,16 +38,16 @@ Representa un [control Casilla.](windowsribbon-controls-checkbox.md)
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -56,7 +56,7 @@ Representa un [control Casilla.](windowsribbon-controls-checkbox.md)
 <td><strong>ApplicationDefaults.IsChecked</strong><br/></td>
 <td>Boolean<br/></td>
 <td>No<br/></td>
-<td>Este atributo solo es válido cuando el <strong>elemento CheckBox</strong> es un elemento secundario <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>de QuickAccessToolbar.ApplicationDefaults.</strong></a> <br/> Restringido a uno de los siguientes valores:<br/>
+<td>Este atributo solo es válido cuando el <strong>elemento CheckBox</strong> es un elemento secundario de <a href="windowsribbon-element-quickaccesstoolbar-applicationdefaults.md"><strong>QuickAccessToolbar.ApplicationDefaults</strong></a>. <br/> Restringido a uno de los siguientes valores:<br/>
 <blockquote>
 [!Note]<br />
 <strong>CheckBox</strong> no admite un estado terciario o indeterminado.
@@ -99,9 +99,9 @@ No hay elementos secundarios.
 
 ## <a name="remarks"></a>Comentarios
 
-Opcional o obligatorio, en función del elemento primario.
+Opcional o obligatorio, según el elemento primario.
 
-Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults,**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md) [**SplitButton**](windowsribbon-element-splitbutton.md) [**o SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
+Puede producirse una o varias veces para cada [**elemento ControlGroup**](windowsribbon-element-controlgroup.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**Group**](windowsribbon-element-group.md), [**MenuGroup**](windowsribbon-element-menugroup.md), [**QuickAccessToolbar.ApplicationDefaults,**](windowsribbon-element-quickaccesstoolbar-applicationdefaults.md) [**SplitButton**](windowsribbon-element-splitbutton.md)o [**SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -123,7 +123,7 @@ En esta sección de código se muestran las declaraciones del comando **CheckBox
 
 
 
-En esta sección de código se muestran las declaraciones del control **CheckBox.**
+En esta sección de código se muestran las declaraciones de control **CheckBox.**
 
 
 ```XML

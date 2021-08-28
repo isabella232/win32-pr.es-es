@@ -4,12 +4,12 @@ ms.assetid: df24a132-665e-4eb7-992b-d7a6144257f5
 title: D3DXFX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad9077c8c7e3da479dd8963484bc289b84093ac0
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 6858f659b1561a526a284b3ea2dca0e1d9a11a31
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995082"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624091"
 ---
 # <a name="d3dxfx"></a>D3DXFX
 
@@ -21,8 +21,8 @@ Las constantes de la tabla siguiente se definen en d3dx9effect.h.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -54,7 +54,7 @@ Las constantes de la tabla siguiente se definen en d3dx9effect.h.
 <td>Habilita la asignación de un recurso de efecto en el espacio de direcciones iniciales de una máquina. Una limitación importante es que no se pueden usar cadenas y identificadores indistintamente. Por ejemplo, lo siguiente ya no funcionaría. <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -78,15 +78,15 @@ Las constantes de la tabla siguiente no están definidas de forma predeterminada
 
 | Definición del \# preprocesador de efecto | Descripción                                                                                                                                                                                                                          |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| IDENTIFICADOR DE \_ DIRECCIÓN GRANDE DE D3DXFX \_   | Defina este valor antes de incluir d3dx9.h para que la aplicación no se compile al intentar pasar cadenas a los parámetros D3DXHANDLE. Esto le ayudará a asegurarse de que se pasa información válida al tiempo de ejecución. |
+| CONTROLADOR LARGEADDRESS de D3DXFX \_ \_   | Defina este valor antes de incluir d3dx9.h para que la aplicación no se pueda compilar al intentar pasar cadenas a los parámetros D3DXHANDLE. Esto le ayudará a asegurarse de que se pasa información válida al tiempo de ejecución. |
 | Marcas del vinculador de efecto            | Descripción                                                                                                                                                                                                                          |
-| CONSCIENTE \_ DE DIRECCIONES \_ GRANDES          | Al establecer la marca de vinculador LARGE ADDRESS AWARE = 1, la aplicación podrá asignar recursos más allá del límite de \_ \_ direcciones de 2 GB cuando sea necesario.                                                                                      |
+| CONSCIENTE \_ DE DIRECCIONES \_ GRANDES          | Al establecer la marca del vinculador LARGE ADDRESS AWARE = 1, la aplicación podrá asignar recursos más allá del límite de \_ \_ direcciones de 2 GB cuando sea necesario.                                                                                      |
 
 
 
  
 
-El sistema de efectos usa bloques de estado para guardar y restaurar el estado automáticamente. Para obtener más información sobre los bloques de estado, vea State Blocks Save and Restore State (Direct3D 9) ( Guardar y restaurar estado de bloques de [estado [Direct3D 9]).](state-blocks-save-and-restore-state.md)
+El sistema de efectos usa bloques de estado para guardar y restaurar el estado automáticamente. Para obtener más información sobre los bloques de estado, vea State Blocks Save and Restore State (Direct3D 9) (Bloques de estado guardar y restaurar estado [[Direct3D 9]).](state-blocks-save-and-restore-state.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DTM_SETSYSTEMTIME (commctrl. h)
-description: Establece la hora en un control de selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la macro SetSystemtime de fecha y hora \_ .
+title: DTM_SETSYSTEMTIME mensaje (Commctrl.h)
+description: Establece la hora en un control selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la macro DateTime \_ SetSystemtime.
 ms.assetid: aab023ac-22ef-485b-be2f-2aa76dfcf57f
 keywords:
-- DTM_SETSYSTEMTIME controles de mensajes de Windows
+- DTM_SETSYSTEMTIME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b2a3c625ad4ff02bed138a8086ca0da984de35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5acd0c6a09e3fc7bd9d068e27049329f3289a8ba1968ffae4592c7e07db9f2eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120088975"
 ---
-# <a name="dtm_setsystemtime-message"></a>DTM \_ SETSYSTEMTIME
+# <a name="dtm_setsystemtime-message"></a>Mensaje \_ SETSYSTEMTIME de DTM
 
-Establece la hora en un control de selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la [**macro \_ SetSystemtime de fecha y hora**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setsystemtime) .
+Establece la hora en un control selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la macro [**DateTime \_ SetSystemtime.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_setsystemtime)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -36,10 +36,10 @@ Valor que especifica la acción que se debe realizar. Este valor debe establecer
 
 
 
-| Value                                                                                                                                             | Significado                                                                                                                                                                                                                                                             |
+| Valor                                                                                                                                             | Significado                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GDT_VALID"></span><span id="gdt_valid"></span><dl> <dt>**GDT \_ válido**</dt> </dl> | Establezca el control de DTP según los datos de la estructura a la que se dirige *lParam* . <br/>                                                                                                                                                                 |
-| <span id="GDT_NONE"></span><span id="gdt_none"></span><dl> <dt>**GDT \_ ninguno**</dt> </dl>    | Establezca el control de DTP en "sin fecha" y desactive su casilla. Cuando se especifica esta marca, se omite *lParam* . Esta marca solo se aplica a los controles de DTP que se establecen en el estilo [**\_ SHOWNONE de DTS**](date-and-time-picker-control-styles.md) . <br/> |
+| <span id="GDT_VALID"></span><span id="gdt_valid"></span><dl> <dt>**GDT \_ VÁLIDO**</dt> </dl> | Establezca el control DTP según los datos de la estructura a la que *apunta lParam.* <br/>                                                                                                                                                                 |
+| <span id="GDT_NONE"></span><span id="gdt_none"></span><dl> <dt>**GDT \_ NONE**</dt> </dl>    | Establezca el control DTP en "sin fecha" y desactive su casilla. Cuando se especifica esta marca, *se omite lParam.* Esta marca solo se aplica a los controles DTP que están establecidos en el [**estilo \_ DTS SHOWNONE.**](date-and-time-picker-control-styles.md) <br/> |
 
 
 
@@ -50,23 +50,23 @@ Valor que especifica la acción que se debe realizar. Este valor debe establecer
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que contiene la hora del sistema utilizada para establecer el control de DTP.
+Puntero a una [**estructura SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que contiene la hora del sistema utilizada para establecer el control DTP.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -16,21 +16,21 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 860d4a9190ec12d958db12019a51fd5183caedba
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 6f3600f751d0bf93de503494f31d2ae66985828f
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880499"
 ---
 # <a name="span-idwwan_profile_v4element_homeprovidernamespanhomeprovidername"></a><span id="WWAN_profile_v4.element_HomeProviderName"></span>HomeProviderName
 
-Nombre del proveedor de inicio para la SIM o el dispositivo especificados. Para obtener más información, vea la documentación del elemento [**HomeProviderName**](./schema-homeprovidername-mbnprofile-element.md) v1.
+Nombre del proveedor principal para la SIM o el dispositivo especificados. Para obtener más información, vea la documentación del elemento [**HomeProviderName**](./schema-homeprovidername-mbnprofile-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<HomeProviderName>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;HomeProviderName&gt;**
 
 ## <a name="syntax"></a>Syntax
 
@@ -57,7 +57,7 @@ Ninguno.
 
 | Elemento primario | Descripción | 
 |----------------|-------------|
-| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p><p>Puede haber más de un elemento MbnProfileExt en un perfil que describa la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p> | 
+| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p><p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p> | 
 
 
  

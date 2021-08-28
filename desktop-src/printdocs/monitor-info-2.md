@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura supervisar información \_ 2 identifica un monitor.
+description: La estructura \_ MONITOR INFO \_ 2 identifica un monitor.
 ms.assetid: 4dd1ca15-6983-403e-8159-1a6d35a88162
-title: Estructura de MONITOR_INFO_2 (winspool. h)
+title: MONITOR_INFO_2 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 9d3ad70a0728ca6e73c4dbefb248df58e858a996
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c01377740c77ef4cb2be15e785b9ea3e93449944c11f2014ed660d8c3e3245b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112335"
 ---
-# <a name="monitor_info_2-structure"></a>Estructura de supervisión de \_ información \_ 2
+# <a name="monitor_info_2-structure"></a>Estructura \_ de MONITOR INFO \_ 2
 
-La estructura **supervisar \_ información \_ 2** identifica un monitor.
+La **estructura MONITOR INFO \_ \_ 2** identifica un monitor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,21 +46,21 @@ typedef struct _MONITOR_INFO_2 {
 **pName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que es el nombre del monitor.
+Puntero a una cadena terminada en NULL que es el nombre del monitor.
 
 </dd> <dt>
 
 **pEnvironment**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el entorno para el que se escribió el monitor (por ejemplo, Windows NT x86, Windows IA64, Windows x64).
+Puntero a una cadena terminada en NULL que especifica el entorno para el que se escribió el monitor (por ejemplo, Windows NT x86, Windows IA64, Windows x64).
 
 </dd> <dt>
 
 **pDLLName**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que es el nombre del archivo DLL del monitor.
+Puntero a una cadena terminada en NULL que es el nombre del archivo DLL del monitor.
 
 </dd> </dl>
 
@@ -72,8 +72,8 @@ Un puntero a una cadena terminada en null que es el nombre del archivo DLL del m
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Supervisar la \_ información \_ 2W** (Unicode) y la **\_ información de supervisión \_ \_ 2A** (ANSI)<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ MONITOR \_ INFO \_ 2W** (Unicode) y **\_ MONITOR INFO \_ \_ 2A** (ANSI)<br/>                           |
 
 
 
@@ -84,7 +84,7 @@ Un puntero a una cadena terminada en null que es el nombre del archivo DLL del m
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddMonitor**](addmonitor.md)
@@ -93,7 +93,7 @@ Un puntero a una cadena terminada en null que es el nombre del archivo DLL del m
 [**EnumMonitors**](enummonitors.md)
 </dt> <dt>
 
-[**Información de supervisión \_ \_ 1**](monitor-info-1.md)
+[**INFORMACIÓN \_ DE SUPERVISIÓN \_ 1**](monitor-info-1.md)
 </dt> </dl>
 
  

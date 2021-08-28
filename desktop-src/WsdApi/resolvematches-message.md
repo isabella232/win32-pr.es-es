@@ -4,18 +4,18 @@ ms.assetid: 0eaa4348-968e-4b45-9509-8b15476edaa1
 title: Mensaje ResolveMatches
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1daffe985f3956e57ad69fd7c4fc4d199f0b24bd5fdab5677b7ef83765e5fcdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42f2604859d39530377883179ec104dd078e9b6f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119756805"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122627761"
 ---
 # <a name="resolvematches-message"></a>Mensaje ResolveMatches
 
 Un mensaje ResolveMatches es WS-Discovery mensaje enviado en respuesta al mensaje [Resolve](resolve-message.md) de un cliente por un servicio correspondiente. Para obtener más información sobre los mensajes ResolveMatches, vea la sección 6.2 de la [especificación de WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-Unidifusión UDP envía un mensaje ResolveMatches al puerto 3702 (el puerto desde el que se envió el mensaje [Resolver](resolve-message.md) del cliente). ResolveMatches debe enviarse en un plazo de 4 segundos a partir del mensaje Resolver; de lo contrario, Windows Firewall puede quitar el paquete.
+Unidifusión UDP envía un mensaje ResolveMatches al puerto 3702 (el puerto desde el que se envió el mensaje [Resolver](resolve-message.md) del cliente). ResolveMatches debe enviarse en un plazo de 4 segundos a partir del mensaje Resolver. De lo contrario, Windows firewall puede quitar el paquete.
 
 Cualquier aplicación DPWS que envíe [los mensajes Resolver](resolve-message.md) recibirá mensajes ResolveMatches.
 
@@ -76,9 +76,9 @@ Un mensaje ResolveMatches tiene los siguientes puntos de enfoque.
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1324722ed0bd239f4c5b26fbd3340d45f325e53c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: d990e4ded7dc2485bec6b5ecf92d9999aad57ce5
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465824"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981978"
 ---
 # <a name="jetcomputestats-function"></a>JetComputeStats (Función)
 
@@ -73,7 +73,7 @@ Si se ejecuta correctamente, las estadísticas actualizadas se almacenan en los 
 
 En caso de error, no se realiza ninguna actualización de ningún tipo en la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Esta operación puede consumir recursos, ya que cada índice de una tabla se debe seguir en su totalidad. [JetGetRecordPosition](./jetgetrecordposition-function.md) se puede usar para obtener una estimación aproximada del número de entradas de un índice, pero no puede calcular por sí misma el número de valores distintos de un índice.
 
@@ -84,7 +84,13 @@ Las actualizaciones de la base de datos realizadas por **JetComputeStats** se re
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

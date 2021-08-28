@@ -1,24 +1,24 @@
 ---
 description: Constructores expuestos por XMFLOAT3.
 ms.assetid: b85e3896-56e1-4927-b22b-cc8e49ccc056
-title: Constructores XMFLOAT3 (Directxmath. h)
+title: Constructores XMFLOAT3 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: fb206e08bda8d93e288340939cabd51cb8218fe1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2a3dac89dd9df7dfd76186bb932580aaa0acad3
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718929"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466822"
 ---
 # <a name="xmfloat3-constructors"></a>Constructores XMFLOAT3
 
 Constructores expuestos por `XMFLOAT3` .
 
-Construye instancias de la estructura [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) .
+Construye instancias de la [**estructura XMFLOAT3.**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,47 +26,13 @@ Construye instancias de la estructura [**XMFLOAT3**](/windows/win32/api/directxm
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constructor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">[<strong>XMFLOAT3 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat3-xmfloat3(constfloat))</td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMFLOAT3</code> .<br/> Constructor predeterminado para [<strong>XMFLOAT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat3).<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">[<strong>XMFLOAT3 (const float *)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat3a-xmfloat3a(constfloat))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMFLOAT3</code> a partir de un argumento de matriz de tres elementos <code>float</code> .<br/> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat3) a partir de un argumento de matriz de tres elementos <code>float</code> .<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">[<strong>XMFLOAT3 (float, Float, float)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmfloat3-xmfloat3 (float_float_float))</td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMFLOAT3</code> a partir de tres <code>float</code> argumentos.<br/> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT3</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat3) a partir de tres <code>float</code> argumentos.<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constructor | Descripción | 
+|-------------|-------------|
+| [<strong>XMFLOAT3 ()</strong>](/windows/win32/api/directxmath/nf-directxmath-xmfloat3-xmfloat3(constfloat)) | Constructor predeterminado para <code>XMFLOAT3</code> .<br /> Constructor predeterminado para [<strong>XMFLOAT3.</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat3)<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| [<strong>XMFLOAT3 (const float*)</strong>](/windows/win32/api/directxmath/nf-directxmath-xmfloat3a-xmfloat3a(constfloat)) | Inicializa una nueva instancia de a <code>XMFLOAT3</code> partir de un argumento de matriz de tres <code>float</code> elementos.<br /> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) a partir de un argumento de matriz <code>float</code> de tres elementos.<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| [<strong>XMFLOAT3 (float,float,float)</strong>](/windows/win32/api/directxmath/nf-directxmath-xmfloat3-xmfloat3(float_float_float)) | Inicializa una nueva instancia de a <code>XMFLOAT3</code> partir de <code>float</code> tres argumentos.<br /> Este constructor inicializa una nueva instancia de [<strong>XMFLOAT3</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) a partir de tres <code>float</code> argumentos.<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+
 
 
 
@@ -76,15 +42,15 @@ Este constructor solo está disponible en C++.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMFLOAT3](ovw-xmfloat3-extensions.md)
+[Extensiones XMFLOAT3](ovw-xmfloat3-extensions.md)
 </dt> <dt>
 
 **Referencia**

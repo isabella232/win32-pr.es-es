@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de BaseEapMethodUserCredentials
-description: Obtenga información sobre el tipo complejo de BaseEapMethodUserCredentials. Este tipo es un elemento de marcador de posición para los datos de credenciales de método.
+title: Tipo complejo BaseEapMethodUserCredentials
+description: Obtenga información sobre el tipo complejo BaseEapMethodUserCredentials. Este tipo es un elemento de marcador de posición para los datos de credenciales de método.
 ms.assetid: ebbf813d-657a-4ff2-acf2-c18ce694b564
 keywords:
-- Tipo complejo BaseEapMethodUserCredentials EAPHost
+- Tipo complejo EAPHost de BaseEapMethodUserCredentials
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37bc7a91a5d90cde6cba1af12bb0a4784ee21c7f
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8102f095ca7d4b1ada6db3c21fbe55e73a98ed6d06d2d6b99032f1a21a344527
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120094425"
 ---
-# <a name="baseeapmethodusercredentials-complex-type"></a>Tipo complejo de BaseEapMethodUserCredentials
+# <a name="baseeapmethodusercredentials-complex-type"></a>Tipo complejo BaseEapMethodUserCredentials
 
-El tipo complejo de **BaseEapMethodUserCredentials** es un elemento de marcador de posición para los datos de credenciales de método.
+El **tipo complejo BaseEapMethodUserCredentials** es un elemento de marcador de posición para los datos de credenciales de método.
 
 ``` syntax
 <xs:complexType name="BaseEapMethodUserCredentials">
@@ -38,7 +38,7 @@ El tipo complejo de **BaseEapMethodUserCredentials** es un elemento de marcador 
 </xs:complexType>
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El método EAP realiza la validación del esquema en el contenido de **BaseEapMethodUserCredentials**.
 
@@ -46,21 +46,21 @@ El método EAP realiza la validación del esquema en el contenido de **BaseEapMe
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md)
+[baseeapmethodusercredentials Schema](baseeapmethodusercredentialsschema-schema.md)
 </dt> </dl>
 
  
