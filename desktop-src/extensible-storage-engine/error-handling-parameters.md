@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 01e2f8cbdec9defb2e277f20d186937120ff4f50a85110793833fa33a65b4112
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a0556d97a0dda0182ee4fe229599030f523accd
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119365425"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474831"
 ---
 # <a name="error-handling-parameters"></a>Parámetros de control de errores
 
@@ -33,150 +33,33 @@ Este tema contiene parámetros que se usan para el control de errores.
 
 *JET_paramErrorToString* 70  
 
-Este parámetro se puede usar para convertir un [JET_ERR](./jet-err.md) en una cadena. Esto se hace mediante una llamada especial a [JetGetSystemParameter,](./jetgetsystemparameter-function.md) donde el búfer de salida entero contiene el valor [JET_ERR que](./jet-err.md) se va a convertir (como parámetro de entrada) y el búfer de salida de cadena devuelve la cadena de error correspondiente. La cadena tendrá un aspecto parecido a este: "JET_errSuccess, Operación correcta". La cadena se compone del nombre simbólico de la cadena, después una coma y, a continuación, una descripción de texto simple del error. La cadena de descripción puede contener comas. Si no se reconoce el error, la cadena será "Error desconocido,Error desconocido".
+Este parámetro se puede usar para convertir un [JET_ERR](./jet-err.md) en una cadena. Esto se hace mediante una llamada especial a [JetGetSystemParameter,](./jetgetsystemparameter-function.md) donde el búfer de salida entero contiene el valor [JET_ERR que](./jet-err.md) se va a convertir (como parámetro de entrada) y el búfer de salida de cadena devuelve la cadena de error correspondiente. La cadena tendrá un aspecto parecido a este: "JET_errSuccess operación correcta". La cadena se compone del nombre simbólico de la cadena, después una coma y, a continuación, una descripción de texto simple del error. La cadena de descripción puede contener comas. Si no se reconoce el error, la cadena será "Error desconocido,Error desconocido".
 
 **Nota**  Este parámetro es de solo lectura.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>Especial</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Especial</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>Especial</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>Especial</p> | | <p>Escriba:</p> | <p>Especial</p> | | <p>Intervalo válido:</p> | <p>Especial</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>No</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>No</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>No</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 *JET_paramExceptionAction*  
 98  
 
-Este parámetro controla lo que sucede cuando el motor de base de datos o el código a los que llama el motor de base de datos inician una excepción. Cuando se establece en JET_ExceptionMsgBox, se producirá cualquier excepción en el Windows de excepciones no controladas. Esto dará lugar a que la excepción se controle como un error de aplicación. La intención es evitar que el código de la aplicación intente detectar y omitir erróneamente una excepción generada por el motor de base de datos. Esto no se puede permitir porque podría producirse un daño en la base de datos. Si la aplicación desea controlar correctamente estas excepciones, la protección se puede deshabilitar estableciendo este parámetro en JET_ExceptionNone.
+Este parámetro controla lo que sucede cuando el motor de base de datos o el código a los que llama el motor de base de datos inician una excepción. Cuando se establece en JET_ExceptionMsgBox, se producirá cualquier excepción en Windows filtro de excepciones no controladas. Esto dará lugar a que la excepción se controle como un error de aplicación. La intención es evitar que el código de la aplicación intente detectar y omitir erróneamente una excepción generada por el motor de base de datos. Esto no se puede permitir porque podría producirse un daño en la base de datos. Si la aplicación desea controlar correctamente estas excepciones, la protección se puede deshabilitar estableciendo este parámetro en JET_ExceptionNone.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Valor predeterminado:</p></td>
-<td><p>JET_ExceptionMsgBox</p></td>
-</tr>
-<tr class="even">
-<td><p>Escriba:</p></td>
-<td><p>Entero</p></td>
-</tr>
-<tr class="odd">
-<td><p>Intervalo válido:</p></td>
-<td><p>JET_ExceptionMsgBox, JET_ExceptionNone</p></td>
-</tr>
-<tr class="even">
-<td><p>Ámbito:</p></td>
-<td><p>Global</p></td>
-</tr>
-<tr class="odd">
-<td><p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p></td>
-<td><p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong>  No</p>
-<p><strong>Windows Vista:</strong>  Sí</p></td>
-</tr>
-<tr class="even">
-<td><p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p></td>
-<td><p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong>  No</p>
-<p><strong>Windows Vista:</strong>  Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al diseño físico:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a la confiabilidad:</p></td>
-<td><p>Sí</p></td>
-</tr>
-<tr class="odd">
-<td><p>Afecta al rendimiento:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="even">
-<td><p>Afecta a los recursos:</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Disponibilidad:</p></td>
-<td><p>Todo</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Valor predeterminado:</p> | <p>JET_ExceptionMsgBox</p> | | <p>Escriba:</p> | <p>Entero</p> | | <p>Intervalo válido:</p> | <p>JET_ExceptionMsgBox, JET_ExceptionNone</p> | | <p>Ámbito:</p> | <p>Global</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong>  No</p><p><strong>Windows Vista:</strong>  Sí</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p><strong>Windows 2000, Windows XP y Windows Server 2003:</strong>  No</p><p><strong>Windows Vista:</strong>  Sí</p> | | <p>Afecta al diseño físico:</p> | <p>No</p> | | <p>Afecta a la confiabilidad:</p> | <p>Sí</p> | | <p>Afecta al rendimiento:</p> | <p>No</p> | | <p>Afecta a los recursos:</p> | <p>No</p> | | <p>Disponibilidad:</p> | <p>Todo</p> | 
+
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 ### <a name="see-also"></a>Consulte también
 
 [Constantes de control de errores](./error-handling-constants.md)  
-[Códigos de error Storage motor extensible](./extensible-storage-engine-error-codes.md)  
+[Códigos de error Storage motor extensibles](./extensible-storage-engine-error-codes.md)  
 [JetCreateInstance](./jetcreateinstance-function.md)  
 [JET_ERR](./jet-err.md)  
 [JetInit](./jetinit-function.md)

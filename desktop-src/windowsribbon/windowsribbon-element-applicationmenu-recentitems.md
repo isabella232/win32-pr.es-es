@@ -1,9 +1,9 @@
 ---
-title: Propiedad ApplicationMenu. RecentItems
-description: Representa un contenedor para el control de elementos recientes en el menú de la aplicación.
+title: Propiedad ApplicationMenu.RecentItems
+description: Representa un contenedor para el control Elementos recientes en el menú Aplicación.
 ms.assetid: 26ed38b6-17de-423f-a113-ccbaf3780a91
 keywords:
-- ApplicationMenu. RecentItems (propiedad) cinta de Windows
+- ApplicationMenu.RecentItems, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 473ab6436eabd7fcbbbfb533a8ae4afc07098c81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f6cfb5152cd1d9cc4d27abfa3432666f06880d8e
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422348"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630380"
 ---
-# <a name="applicationmenurecentitems-property"></a>Propiedad ApplicationMenu. RecentItems
+# <a name="applicationmenurecentitems-property"></a>Propiedad ApplicationMenu.RecentItems
 
-Representa un contenedor para el control de [elementos recientes](windowsribbon-controls-recentitems.md) en el menú de la [aplicación](windowsribbon-controls-applicationmenu.md).
+Representa un contenedor para el control [Elementos recientes](windowsribbon-controls-recentitems.md) en el menú de [la aplicación](windowsribbon-controls-applicationmenu.md).
 
 ## <a name="usage"></a>Uso
 
@@ -39,10 +39,10 @@ Representa un contenedor para el control de [elementos recientes](windowsribbon-
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -55,10 +55,10 @@ Representa un contenedor para el control de [elementos recientes](windowsribbon-
 <tbody>
 <tr class="odd">
 <td><strong>CommandName</strong><br/></td>
-<td>XS: positiveInteger o XS: String<br/></td>
+<td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Asocia el elemento a un <a href="windowsribbon-element-command.md"><strong>comando</strong></a>.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (XS: positiveInteger o XS: String)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0X2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Una cadena, un valor entero entre 2 y 59999, ambos incluidos, o un valor hexadecimal entre 0x2 y 0xea5f, ambos incluidos. <br/> El valor debe ser único en el documento XML de la cinta de opciones. <br/> Longitud máxima: 100 caracteres. <br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ Representa un contenedor para el control de [elementos recientes](windowsribbon-
 
 | Elemento                                                             | Descripción                                    |
 |---------------------------------------------------------------------|------------------------------------------------|
-| [**RecentItems**](windowsribbon-element-recentitems.md)<br/> | Debe aparecer exactamente una vez<br/> <br/> |
+| [**RecentItems**](windowsribbon-element-recentitems.md)<br/> | Debe producirse exactamente una vez<br/> <br/> |
 
 
 
@@ -85,19 +85,19 @@ Representa un contenedor para el control de [elementos recientes](windowsribbon-
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede aparecer como máximo una vez por cada elemento [**ApplicationMenu**](windowsribbon-element-applicationmenu.md) .
+Puede producirse como máximo una vez para cada [**elemento ApplicationMenu.**](windowsribbon-element-applicationmenu.md)
 
-El control [elementos recientes](windowsribbon-controls-recentitems.md) muestra la lista de elementos usados más recientemente (MRU) de la aplicación de cinta.
+El [control Elementos recientes](windowsribbon-controls-recentitems.md) muestra la lista de elementos usados más recientemente (MRU) de la aplicación de cinta de opciones.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el control de [elementos recientes](windowsribbon-controls-recentitems.md) .
+En el ejemplo siguiente se muestra el marcado básico para el control [Elementos recientes.](windowsribbon-controls-recentitems.md)
 
-En el ejemplo siguiente se muestra una declaración de comando [**RecentItems**](windowsribbon-element-recentitems.md) .
+En el ejemplo siguiente se muestra [**una declaración De comando RecentItems.**](windowsribbon-element-recentitems.md)
 
 
 ```XML
@@ -109,7 +109,7 @@ En el ejemplo siguiente se muestra una declaración de comando [**RecentItems**]
 
 
 
-En el ejemplo siguiente se muestra la declaración de controles asociados **ApplicationMenu. RecentItems** y [**RecentItems**](windowsribbon-element-recentitems.md) .
+En el ejemplo siguiente se muestra la **declaración de controles ApplicationMenu.RecentItems** y [**RecentItems**](windowsribbon-element-recentitems.md) asociada.
 
 
 ```XML
@@ -127,8 +127,8 @@ En el ejemplo siguiente se muestra la declaración de controles asociados **Appl
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -136,10 +136,10 @@ En el ejemplo siguiente se muestra la declaración de controles asociados **Appl
 
 <dl> <dt>
 
-[Control de menú de la aplicación](windowsribbon-controls-applicationmenu.md)
+[Control Menú de la aplicación](windowsribbon-controls-applicationmenu.md)
 </dt> <dt>
 
-[Control de elementos recientes](windowsribbon-controls-recentitems.md)
+[Control Elementos recientes](windowsribbon-controls-recentitems.md)
 </dt> </dl>
 
  

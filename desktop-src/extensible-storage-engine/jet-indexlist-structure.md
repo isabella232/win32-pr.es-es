@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c57fda6eaea161839cdaa758c41f13749d4c5eda
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e21353fb780ed7346c1ff82cbc5057469da25a4b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480051"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987488"
 ---
 # <a name="jet_indexlist-structure"></a>Estructura de JET_INDEXLIST
 
@@ -73,7 +73,7 @@ Número de registros de la tabla temporal que se creó.
 
 Identificador de columna del nombre del índice.
 
-Esta columna es una [JET_coltypText](./jet-coltyp.md).
+Esta columna es un [JET_coltypText](./jet-coltyp.md).
 
 **columnidgrbitIndex**
 
@@ -95,7 +95,7 @@ Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
 **columnidcPage**
 
-Identificador de columna del número de páginas que usa el índice. Esta columna es una [JET_coltypLong](./jet-coltyp.md).
+Identificador de columna del número de páginas que usa el índice. Esta columna es un [JET_coltypLong](./jet-coltyp.md).
 
 **columnidcColumn**
 
@@ -110,7 +110,7 @@ Identificador de columna del número de columnas del índice. Para obtener más 
 Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>cIndexInfoCols<br />15</p> | <p>Especifica que se permiten 15 columnas.</p> | 
 | <p>cColumnInfoCols<br />14</p> | <p>Especifica que se permiten 14 columnas.</p> | 
@@ -130,36 +130,36 @@ Identificador de columna del coltyp de la columna que se indexa. Para obtener m�
 
 Identificador de columna del código de país de la columna indizada. El código de país está en desuso.
 
-Esta columna es un [JET_coltypShort](./jet-coltyp.md).
+Esta columna es una [JET_coltypShort](./jet-coltyp.md).
 
 **columnidLangid**
 
 Identificador de columna del identificador de idioma (LCID) con el que se creó el índice. Para obtener más información, [vea JET_INDEXCREATE](./jet-indexcreate-structure.md).
 
-Esta columna es un [JET_coltypShort](./jet-coltyp.md).
+Esta columna es una [JET_coltypShort](./jet-coltyp.md).
 
 **columnidCp**
 
 Identificador de columna de la página de códigos en la que se creó el índice. Para obtener más información, [vea JET_COLUMNCREATE](./jet-columncreate-structure.md).
 
-Esta columna es un [JET_coltypShort](./jet-coltyp.md).
+Esta columna es una [JET_coltypShort](./jet-coltyp.md).
 
 **columnidCollate**
 
 Identificador de columna de la secuencia de intercalación en la que se creó el índice. La secuencia de intercalación está en desuso.
 
-Esta columna es un [JET_coltypShort](./jet-coltyp.md).
+Esta columna es una [JET_coltypShort](./jet-coltyp.md).
 
 **columnidgrbitColumn**
 
 Identificador de columna de *los bits grbits* que se aplican al orden de la columna en el índice.
 
-Los datos de esta columna se pueden ordenar como JET_bitKeyAscending o JET_bitKeyDescending. Esta columna es una [JET_coltypLong](./jet-coltyp.md). Por ejemplo, un índice definido como "-column1 \\ 0+column2 0" tendrá JET_bitKeyDescending para \\ "column1" y JET_bitKeyAscending para "column2".
+Los datos de esta columna se pueden ordenar como JET_bitKeyAscending o JET_bitKeyDescending. Esta columna es una [JET_coltypLong](./jet-coltyp.md). Por ejemplo, un índice definido como "-column1 \\ 0+column2 0" tendrá JET_bitKeyDescending para "column1" y JET_bitKeyAscending \\ para "column2".
 
 Las siguientes opciones son válidas para este miembro.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitKeyAscending</p> | <p>Segmento de índice en orden ascendente.</p> | 
 | <p>JET_bitKeyDescending</p> | <p>Segmento de índice en orden descendente.</p> | 
@@ -170,7 +170,7 @@ Las siguientes opciones son válidas para este miembro.
 
 Identificador de columna del nombre de la columna.
 
-Esta columna es una [JET_coltypText](./jet-coltyp.md).
+Esta columna es un [JET_coltypText](./jet-coltyp.md).
 
 **columnidLCMapFlags**
 
@@ -178,7 +178,7 @@ Identificador de columna de las marcas que se usan para crear el índice. Para o
 
 Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 Cada fila de la tabla temporal corresponde a una columna de un índice determinado.
 
@@ -199,7 +199,11 @@ El número de claves de un índice determinado corresponde al número de valores
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

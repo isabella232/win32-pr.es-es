@@ -4,12 +4,12 @@ description: Requisitos de firma de características de arranque seguras para co
 ms.assetid: 7FF64BA2-89E3-4E6F-B542-7BC7BF7F4FB2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05146645e01406fed0129c4f31660509e04581ce889213c7addf01731e45e87f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8f6593df6707dc26b36fceca796c436ed45f3f0c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932175"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885068"
 ---
 # <a name="secure-boot-feature-signing-requirements-for-kernel-mode-drivers"></a>Requisitos de firma de características de arranque seguras para controladores en modo kernel
 
@@ -21,11 +21,11 @@ ms.locfileid: "119932175"
 
 ## <a name="description"></a>Descripción
 
-En Windows 8 y Windows Server 2012, incluido WinPE, el kernel se ha bloqueado para evitar que el malware introducido por los kits de arranque o raíz sortee los requisitos de seguridad del sistema operativo Windows para los controladores firmados.
+En Windows 8 y Windows Server 2012, incluido WinPE, el kernel se ha bloqueado para evitar que el malware introducido por los kits de arranque o raíz sortee los requisitos de seguridad del sistema operativo Windows los controladores firmados.
 
 Este cambio afecta a todos los controladores en modo kernel para los dispositivos que admiten el arranque seguro unificado de la interfaz extensible de firmware (UEFI); UeFI Secure Boot es necesario para la Windows 8 para las máquinas cliente y opcional para los servidores. No afecta a los controladores en modo de usuario.
 
-El desarrollo estándar para controladores en modo kernel implica el uso de depuración en modo kernel o la configuración de datos de configuración de <testsigning> arranque (BCD). Ambos se deshabilitan cuando el arranque seguro está habilitado.
+El desarrollo estándar para controladores en modo kernel implica el uso de depuración en modo kernel o la configuración de firma de pruebas de datos de configuración &lt; de arranque (BCD). &gt; Ambos se deshabilitan cuando el arranque seguro está habilitado.
 
 ## <a name="manifestation"></a>Manifestación
 

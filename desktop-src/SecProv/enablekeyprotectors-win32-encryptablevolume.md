@@ -1,7 +1,7 @@
 ---
 description: Habilita o reanuda todos los protectores de clave deshabilitados o suspendidos.
 ms.assetid: 6f5a17a3-84f2-43a0-a85f-1037cd52439a
-title: Método EnableKeyProtectors de la clase Win32_EncryptableVolume
+title: Método EnableKeyProtectors de la Win32_EncryptableVolume clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 78f8502ae141458f1ae46a48d21c110b9434acd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d90e37f800a9c224abefb21253f7e74c2bc08401
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686659"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474931"
 ---
-# <a name="enablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Método EnableKeyProtectors de la \_ clase EncryptableVolume de Win32
+# <a name="enablekeyprotectors-method-of-the-win32_encryptablevolume-class"></a>Método EnableKeyProtectors de la clase EncryptableVolume de Win32 \_
 
-El método **EnableKeyProtectors** de la clase [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) habilita o reanuda todos los protectores de clave deshabilitados o suspendidos. Puede usar este método para volver a habilitar o reanudar la protección de BitLocker en un volumen cifrado. Este método garantiza que la clave de cifrado del volumen no se exponga en el disco duro.
+El **método EnableKeyProtectors** de la clase [**\_ EncryptableVolume de Win32**](win32-encryptablevolume.md) habilita o reanuda todos los protectores de clave deshabilitados o suspendidos. Puede usar este método para volver a habilitar o reanudar la protección de BitLocker en un volumen cifrado. Este método garantiza que la clave de cifrado del volumen no se expone sin cifrar en el disco duro.
 
 > [!Note]  
-> Si el disco es compatible con el cifrado de hardware, el estado de la banda cambia a "desbloqueado" de "siempre desbloqueado".
+> Si el disco admite el cifrado de hardware, el estado de la banda pasa a "desbloqueado" desde "siempre desbloqueado".
 
  
 
@@ -44,78 +44,48 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Este método devuelve uno de los siguientes códigos u otro código de error si se produce un error.
+Este método devuelve uno de los códigos siguientes u otro código de error si se produce un error.
 
 Si los protectores de clave ya están habilitados y no se producen otros errores, este método devuelve cero.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Código o valor devuelto</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>S_OK</strong></dt> <dt>0 (0X0)</dt> </dl></td>
-<td>Método realizado correctamente.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>FVE_E_SECURE_KEY_REQUIRED</strong></dt> <dt>2150694919 (0x80310007)</dt> </dl></td>
-<td>No existe ningún protector de clave en el volumen. Use uno de los métodos siguientes para especificar los protectores de clave para el volumen:<br/>
-<ul>
-<li><a href="protectkeywithcertificatefile-win32-encryptablevolume.md"><strong>ProtectKeyWithCertificateFile</strong></a></li>
-<li><a href="protectkeywithcertificatethumbprint-win32-encryptablevolume.md"><strong>ProtectKeyWithCertificateThumbprint</strong></a></li>
-<li><a href="protectkeywithexternalkey-win32-encryptablevolume.md"><strong>ProtectKeyWithExternalKey</strong></a></li>
-<li><a href="protectkeywithnumericalpassword-win32-encryptablevolume.md"><strong>ProtectKeyWithNumericalPassword</strong></a></li>
-<li><a href="protectkeywithpassphrase-win32-encryptablevolume.md"><strong>ProtectKeyWithPassphrase</strong></a></li>
-<li><a href="protectkeywithtpm-win32-encryptablevolume.md"><strong>ProtectKeyWithTPM</strong></a></li>
-<li><a href="protectkeywithtpmandpin-win32-encryptablevolume.md"><strong>ProtectKeyWithTPMAndPIN</strong></a></li>
-<li><a href="protectkeywithtpmandpinandstartupkey-win32-encryptablevolume.md"><strong>ProtectKeyWithTPMAndPINAndStartupKey</strong></a></li>
-<li><a href="protectkeywithtpmandstartupkey-win32-encryptablevolume.md"><strong>ProtectKeyWithTPMAndStartupKey</strong></a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>FVE_E_NOT_ACTIVATED</strong></dt> <dt>2150694920 (0x80310008)</dt> </dl></td>
-<td>BitLocker no está habilitado en el volumen. Agregue un protector de clave para habilitar BitLocker. <br/></td>
-</tr>
-</tbody>
-</table>
+
+| Código o valor devuelto | Descripción | 
+|-------------------|-------------|
+| <dl><dt><strong>S_OK</strong></dt><dt>0 (0x0)</dt></dl> | Método realizado correctamente.<br /> | 
+| <dl><dt><strong>FVE_E_SECURE_KEY_REQUIRED</strong></dt><dt>2150694919 (0x80310007)</dt></dl> | No existen protectores de clave en el volumen. Use uno de los métodos siguientes para especificar protectores de clave para el volumen:<br /><ul><li><a href="protectkeywithcertificatefile-win32-encryptablevolume.md"><strong>ProtectKeyWithCertificateFile</strong></a></li><li><a href="protectkeywithcertificatethumbprint-win32-encryptablevolume.md"><strong>ProtectKeyWithCertificateThumbprint</strong></a></li><li><a href="protectkeywithexternalkey-win32-encryptablevolume.md"><strong>ProtectKeyWithExternalKey</strong></a></li><li><a href="protectkeywithnumericalpassword-win32-encryptablevolume.md"><strong>ProtectKeyWithNumericalPassword</strong></a></li><li><a href="protectkeywithpassphrase-win32-encryptablevolume.md"><strong>ProtectKeyWithPassphrase</strong></a></li><li><a href="protectkeywithtpm-win32-encryptablevolume.md"><strong>ProtectKeyWithTPM</strong></a></li><li><a href="protectkeywithtpmandpin-win32-encryptablevolume.md"><strong>ProtectKeyWithTPMAndPIN</strong></a></li><li><a href="protectkeywithtpmandpinandstartupkey-win32-encryptablevolume.md"><strong>ProtectKeyWithTPMAndPINAndStartupKey</strong></a></li><li><a href="protectkeywithtpmandstartupkey-win32-encryptablevolume.md"><strong>ProtectKeyWithTPMAndStartupKey</strong></a></li></ul> | 
+| <dl><dt><strong>FVE_E_NOT_ACTIVATED</strong></dt><dt>2150694920 (0x80310008)</dt></dl> | BitLocker no está habilitado en el volumen. Agregue un protector de clave para habilitar BitLocker. <br /> | 
+
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el volumen está totalmente cifrado, la ejecución correcta de este método garantiza que el volumen esté protegido. Si el volumen está parcialmente cifrado, la ejecución correcta de este método implica que el volumen se protegerá cuando se cifre completamente. Para obtener más información, vea el método [**GetProtectionStatus**](getprotectionstatus-win32-encryptablevolume.md) .
+Si el volumen está totalmente cifrado, la ejecución correcta de este método garantiza que el volumen está protegido. Si el volumen está cifrado parcialmente, ejecutar correctamente este método implica que el volumen se protegerá cuando se cifra completamente. Para obtener más información, vea el [**método GetProtectionStatus.**](getprotectionstatus-win32-encryptablevolume.md)
 
-Si existen protectores de clave basados en TPM para el volumen, al ejecutar correctamente este método también se actualizan estos protectores para que el TPM se valide con respecto a los servicios de inicio actuales en la plataforma. En otras palabras, está afirmando que el estado actual del equipo es el correcto que el TPM comprobará en los reinicios futuros del equipo.
+Si existen protectores de clave basados en TPM para el volumen, la ejecución correcta de este método también actualiza estos protectores para que el TPM se valide con los servicios de inicio actuales de la plataforma. En otras palabras, está afirmando que el estado actual del equipo es el correcto que el TPM comprobará en futuros reinicios del equipo.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop\]<br/>                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\MicrosoftVolumeEncryption de \\ seguridad de cimv2 raíz \\<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

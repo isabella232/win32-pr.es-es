@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: beaf97a34a062b3461cf2101cb436fb1ba131d00e8656186fd434045bdef30bc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95b5b5982b5348cef7a2dbaa3b60d639beabaf9d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119393085"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630503"
 ---
 # <a name="columnbreak-element"></a>Elemento ColumnBreak
 
@@ -37,16 +37,16 @@ Representa un separador vertical (visible u oculto) en plantillas [**de diseño 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -85,7 +85,7 @@ Puede producirse una o varias veces para cada [**elemento GroupSizeDefinition.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para un **elemento ColumnBreak** en una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones. **ColumnBreak** solo se especifica para la `Large` plantilla.
+En el ejemplo siguiente se muestra el marcado básico para un **elemento ColumnBreak** en una plantilla de diseño [**SizeDefinition personalizada de cuatro**](windowsribbon-element-sizedefinition.md) botones. **ColumnBreak** solo se especifica para la `Large` plantilla.
 
 
 ```XML
@@ -182,11 +182,11 @@ En el ejemplo siguiente se muestra el marcado básico para un **elemento ColumnB
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

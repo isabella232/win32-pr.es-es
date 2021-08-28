@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: f2095f25128e524b32b8ad8561ee85119537c32be5e61f77d5c72637396a2183
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9383b6d7638df89bebd369a3657283c1fd6b56ac
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118365613"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480151"
 ---
 # <a name="iespconnect-method"></a>IESP::Conectar método
 
@@ -53,7 +53,7 @@ Controle el BLOB que especifica la NIC a la que se conecta el NPP y la informaci
 *StatusCallbackProc* \[ En\]
 </dt> <dd>
 
-Dirección de la función de devolución de llamada del usuario, que recibe actualizaciones de estado como desencadenadores. Si no se usa una función de devolución de llamada, establezca este parámetro y el *parámetro UserContext* en **NULL.**
+Dirección de la función de devolución de llamada del usuario, que recibe actualizaciones de estado, como desencadenadores. Si no se usa una función de devolución de llamada, establezca este parámetro y el *parámetro UserContext* en **NULL.**
 
 </dd> <dt>
 
@@ -79,65 +79,21 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Código devuelto</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_ALREADY_CONNECTED</strong></dt> </dl></td>
-<td>Esta instancia del objeto COM de NPP ya está conectada a la red.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt> </dl></td>
-<td>El BLOB de configuración está dañado. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt> </dl></td>
-<td>El BLOB de entrada especificado por el <em>parámetro hInputBlob</em> carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la <strong>llamada IESP::Conectar</strong> <strong>o IESP::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob</em> para determinar qué entrada no se encontró.<br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt> </dl></td>
-<td>No se ha llamado a la función <strong>CreateBlob.</strong> Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt> </dl></td>
-<td>La cadena no termina en NULL. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt> </dl></td>
-<td>La parte del desencadenador del BLOB de entrada está dañada. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_INVALID_BLOB</strong></dt> </dl></td>
-<td>El objeto especificado en <em>hInputBlob</em> no es un BLOB. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt> </dl></td>
-<td>El directorio de captura predeterminado no se estableció en el Registro. Use la ruta de acceso siguiente para establecer el directorio de captura. <br/>
-<pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_OUT_OF_MEMORY</strong></dt> </dl></td>
-<td>La memoria necesaria para realizar esta operación no está disponible. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-<tr class="even">
-<td><dl> <dt><strong>NMERR_TIMEOUT</strong></dt> </dl></td>
-<td>Se ha producido un tiempo de espera de la solicitud. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-<tr class="odd">
-<td><dl> <dt><strong>NMERR_UPLEVEL_BLOB</strong></dt> </dl></td>
-<td>El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. Este error lo genera la <strong>llamada IESP::Configure.</strong><br/></td>
-</tr>
-</tbody>
-</table>
+
+| Código devuelto | Descripción | 
+|-------------|-------------|
+| <dl><dt><strong>NMERR_ALREADY_CONNECTED</strong></dt></dl> | Esta instancia del objeto COM de NPP ya está conectada a la red.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt></dl> | El BLOB de configuración está dañado. Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt></dl> | El BLOB de entrada especificado por el <em>parámetro hInputBlob</em> carece de una entrada necesaria para realizar esta operación. Este error puede generarse mediante la <strong>llamada IESP::Conectar</strong> <strong>o IESP::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob para</em> determinar qué entrada no se encontró.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt></dl> | No se ha llamado a la función <strong>CreateBlob.</strong> Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt></dl> | La cadena no termina en NULL. Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt></dl> | La parte del desencadenador del BLOB de entrada está dañada. Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_INVALID_BLOB</strong></dt></dl> | El objeto especificado en <em>hInputBlob</em> no es un BLOB. Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt></dl> | El directorio de captura predeterminado no se estableció en el Registro. Use la ruta de acceso siguiente para establecer el directorio de captura. <br /><pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre> | 
+| <dl><dt><strong>NMERR_OUT_OF_MEMORY</strong></dt></dl> | La memoria necesaria para realizar esta operación no está disponible. Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_TIMEOUT</strong></dt></dl> | Se ha producido un tiempo de espera de la solicitud. Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_UPLEVEL_BLOB</strong></dt></dl> | El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. Este error lo genera la <strong>llamada IESP::Configure.</strong><br /> | 
+
 
 
 
@@ -145,7 +101,7 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
 ## <a name="remarks"></a>Comentarios
 
-Cuando se **Conectar** al método Monitor de red, llama automáticamente a **IESP::Configure** mediante el BLOB proporcionado por el *parámetro hInputBlob.* Tenga en cuenta que los códigos de error devueltos por la llamada a **IESP::Configure** se devuelven y devuelve la **llamada ASEP::Conectar** llamada.
+Cuando se **Conectar** al método Monitor de red, llama automáticamente a **IESP::Configure** mediante el BLOB proporcionado por el *parámetro hInputBlob.* Tenga en cuenta que los códigos de error devueltos por la llamada a **IESP::Configure** se devuelven y devuelve la **llamada IESP::Conectar.**
 
 Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que al conectarse a la red mediante este método, debe seguir usando la **interfaz IESP** para capturar fotogramas.
 

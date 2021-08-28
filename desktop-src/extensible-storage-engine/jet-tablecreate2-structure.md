@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 95e4d60ba80317624004fa7c9335005aa16a9300
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: b4d84a21fc9115823eaff0716b90ee37f1ae6655
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476471"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988108"
 ---
 # <a name="jet_tablecreate2-structure"></a>Estructura de JET_TABLECREATE2
 
@@ -62,13 +62,13 @@ Tamaño de esta estructura en bytes (para futuras expansiones). Debe establecers
 
 Nombre de la tabla que se creará.
 
-El nombre debe cumplir las condiciones siguientes:
+El nombre debe usar para cumplir las condiciones siguientes:
 
   - Tenga un valor menor que JET_cbNameMost, sin incluir el valor NULL final.
 
 <!-- end list -->
 
-  - Consta del siguiente conjunto de caracteres: de 0 a 9, de la A a la Z, de la a la z y de todos los demás signos de puntuación excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre ( ), es decir, caracteres ASCII 0x20, 0x22 a través de 0x2d, 0x2f a través de 0x5a, 0x5c y \! 0x5d a \[ \] 0x7f.
+  - Consta del siguiente conjunto de caracteres: de 0 a 9, de la A a la Z, de la a la z y de todos los demás signos de puntuación excepto el signo de exclamación ( ), la coma (,), el corchete de apertura ( ) y el corchete de cierre ( ), es decir, caracteres ASCII 0x20, 0x22 a través de 0x2d, 0x2f a través de 0x5a, 0x5c y 0x5d \! \[ a \] 0x7f.
 
 <!-- end list -->
 
@@ -110,14 +110,14 @@ Número de elementos [JET_INDEXCREATE](./jet-indexcreate-structure.md) en **rgin
 
 Función a la que se llama durante determinados eventos. **cbtyp determina** cuándo se llamará a la función de devolución de llamada.
 
-El formato de **szCallback** debe ser "función de módulo"; por ejemplo, "alpha beta" hace referencia a la función beta en el módulo \! \! denominado "alpha". El prototipo de la función debe coincidir con [JET_CALLBACK](./jet-callback-callback-function.md). Para obtener más información, [vea JET_CALLBACK](./jet-callback-callback-function.md).
+El formato de **szCallback** debe ser "función de módulo"; por ejemplo, "alpha beta" hace referencia a la función beta en el módulo \! \! denominado "alpha". El prototipo de la función debe coincidir [con JET_CALLBACK](./jet-callback-callback-function.md). Para obtener más información, [vea JET_CALLBACK](./jet-callback-callback-function.md).
 
 **cbtyp**
 
 Describe el tipo de función de devolución de llamada designada por **szCallback**. Para obtener más información, [vea JET_CBTYP](./jet-cbtyp.md). Este campo de bits se compone de uno o varios de los bits siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_cbtypFinalize</p> | <p>Se llamará a la función de devolución de llamada cuando una columna que se pueda finalizar haya pasado a cero.</p> | 
 | <p>JET_cbtypBeforeInsert</p> | <p>Se llamará a la función de devolución de llamada antes de la inserción del registro.</p> | 
@@ -138,7 +138,7 @@ Describe el tipo de función de devolución de llamada designada por **szCallbac
 Grupo de bits que contienen las opciones para esta llamada, que incluyen cero o más de los valores siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitTableCreateFixedDDL</p> | <p>Al JET_bitTableCreateFixedDDL se evitan las operaciones DDL en la tabla (por ejemplo, agregar o quitar columnas).</p> | 
 | <p>JET_bitTableCreateTemplateTable</p> | <p>Si JET_bitTableCreateTemplateTable hace que la tabla sea una tabla de plantilla. A continuación, las nuevas tablas pueden especificar el nombre de esta tabla como tabla de plantilla. Establecer JET_bitTableCreateTemplateTable implica JET_bitTableCreateFixedDDL.</p> | 
@@ -159,7 +159,12 @@ El recuento de objetos creados es igual a la suma de columnas, tablas e índices
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_TABLECREATE2_W</strong> (Unicode) <strong>y JET_TABLECREATE2_A</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_TABLECREATE2_W</strong> (Unicode) <strong>y JET_TABLECREATE2_A</strong> (ANSI).</p> | 
 
 
 

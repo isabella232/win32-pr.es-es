@@ -4,12 +4,12 @@ ms.assetid: efeed3a6-de5e-4698-9dc3-d0acb3d13dee
 title: Elemento Title
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52648e3f5783e706c91cf42a041e3a2e01952427ea4f66381405789827aa2eee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05661be8566cf4136194af4e08d8f9774d3413dc
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119589325"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473141"
 ---
 # <a name="title-element"></a>Elemento Title
 
@@ -33,57 +33,13 @@ Contiene información de título sobre la nota de diario.
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Tipo</th>
-<th>Obligatorio</th>
-<th>Descripción</th>
-<th>Valores posibles</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Estilo</strong></td>
-<td><strong>xs:string</strong></td>
-<td>Obligatorio</td>
-<td>Especifica el tipo de borde que rodea el título de la nota.</td>
-<td><ul>
-<li>Ninguno</li>
-<li>SolidSquare</li>
-<li>OutlineSquare</li>
-<li>SolidRoundRect</li>
-<li>OutlineRoundRect</li>
-<li>SolidRoundRectDottedBaseline</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>DateStyle</strong></td>
-<td><strong>xs:string</strong></td>
-<td>Obligatorio</td>
-<td>Define si el título incluye una fecha o no.</td>
-<td><ul>
-<li>Ninguno</li>
-<li>Short</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Color</strong></td>
-<td><a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a></td>
-<td>Opcionales</td>
-<td>Especifica el color del fondo.</td>
-<td>Vea <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a>.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Tipo | Requerido | Descripción | Valores posibles | 
+|-----------|------|----------|-------------|-----------------|
+| <strong>Estilo</strong> | <strong>xs:string</strong> | Requerido | Especifica el tipo de borde que rodea el título de la nota. | <ul><li>Ninguno</li><li>SolidSquare</li><li>OutlineSquare</li><li>SolidRoundRect</li><li>OutlineRoundRect</li><li>SolidRoundRectDottedBaseline</li></ul> | 
+| <strong>DateStyle</strong> | <strong>xs:string</strong> | Requerido | Define si el título incluye una fecha o no. | <ul><li>Ninguno</li><li>Short</li></ul> | 
+| <strong>Color</strong> | <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a> | Opcionales | Especifica el color del fondo. | Vea <a href="colortype-simple-type.md"><strong>ColorType simpleType</strong></a>. | 
+
 
 
 

@@ -4,12 +4,12 @@ description: 'En este tema se describe cómo usar mapas de bits y pinceles para 
 ms.assetid: 869821b0-6ebe-46c2-aab6-93177d8a92c5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2050cccd37012028e2a86fbf77cd071671ce7201
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 513365474ed6b1f6f42d34f9b876226e00ba6e85
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626561"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786381"
 ---
 # <a name="opacity-masks-overview"></a>Información general sobre las máscaras de opacidad
 
@@ -139,7 +139,7 @@ El [**método FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-
 
 -   El primer parámetro, [**ID2D1Geometry,**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometry)define la forma que se pintará.
 -   El segundo parámetro, [**ID2D1Brush**](/windows/win32/api/d2d1/nn-d2d1-id2d1brush), especifica el pincel utilizado para pintar la geometría. Este parámetro debe ser [**id2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) que tenga sus modos de extensión x e y establecidos en [**D2D1 \_ EXTEND MODE \_ \_ CLAMP**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode).
--   El tercer parámetro, [**ID2D1Brush**](/windows/win32/api/d2d1/nn-d2d1-id2d1brush), especifica un pincel que se usará como máscara de opacidad. Este pincel puede ser [**ID2D1LinearGradientBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)o [**ID2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) (Técnicamente, puede usar un [**id2D1SolidColorBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush), pero el uso de un pincel de color sólido como máscara de opacidad no genera resultados interesantes).
+-   El tercer parámetro, [**ID2D1Brush**](/windows/win32/api/d2d1/nn-d2d1-id2d1brush), especifica un pincel que se usará como máscara de opacidad. Este pincel puede ser [**ID2D1LinearGradientBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)o [**ID2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush) (Técnicamente, puede usar [**id2D1SolidColorBrush,**](/windows/win32/api/d2d1/nn-d2d1-id2d1solidcolorbrush)pero el uso de un pincel de color sólido como máscara de opacidad no genera resultados interesantes).
 
 En las secciones siguientes se describe cómo usar [**objetos ID2D1LinearGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush) e [**ID2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) como máscaras de opacidad.
 
@@ -151,7 +151,7 @@ En el diagrama siguiente se muestra el efecto de aplicar un pincel de degradado 
 
 Los pasos siguientes describen cómo volver a crear este efecto.
 
-1.  Defina el contenido que se va a enmascarar. En el ejemplo siguiente se crea [**un objeto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush), *m \_ pLinearFadeFlowersBitmap*. El modo de extensión x- e y- para *m \_ pLinearFadeFlowersBitmap* se establece en [**D2D1 \_ EXTEND MODE \_ \_ CLAMP**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode) para que se pueda usar con una máscara de opacidad mediante el [**método FillGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry)
+1.  Defina el contenido que se va a enmascarar. En el ejemplo siguiente se crea [**un objeto ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush), *m \_ pLinearFadeFlowersBitmap.* El modo de extensión x- e y- para *m \_ pLinearFadeFlowersBitmap* se establece en [**D2D1 \_ EXTEND MODE \_ \_ CLAMP**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode) para que se pueda usar con una máscara de opacidad mediante el [**método FillGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry)
 
     ```cpp
     if (SUCCEEDED(hr))
@@ -176,7 +176,7 @@ Los pasos siguientes describen cómo volver a crear este efecto.
                 );
     ```
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col  />
@@ -200,7 +200,7 @@ Los pasos siguientes describen cómo volver a crear este efecto.
     </tbody>
     </table>
 
-    <span codelanguage="ManagedCPlusPlus"></span>
+    
     <table>
     <colgroup>
     <col  />
@@ -304,7 +304,7 @@ En el primer ejemplo se crea [**un objeto ID2D1BitmapBrush**](/windows/win32/api
 
 
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -329,7 +329,7 @@ En el primer ejemplo se crea [**un objeto ID2D1BitmapBrush**](/windows/win32/api
 </tbody>
 </table>
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 <table>
 <colgroup>
@@ -407,7 +407,7 @@ En este ejemplo se ha omitido el código.
 
 ## <a name="apply-an-opacity-mask-to-a-layer"></a>Aplicar una máscara de opacidad a una capa
 
-Al llamar a [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) para insertar un [**elemento ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) en un destino de representación, puede usar la estructura DE PARÁMETROS DE CAPA [**D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) para aplicar un pincel como máscara de opacidad. En el ejemplo de código siguiente se [**usa id2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) como máscara de opacidad.
+Al llamar a [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) para insertar un [**elemento ID2D1Layer**](/windows/win32/api/d2d1/nn-d2d1-id2d1layer) en un destino de representación, puede usar la estructura [**D2D1 \_ LAYER \_ PARAMETERS**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) para aplicar un pincel como máscara de opacidad. En el ejemplo de código siguiente se [**usa id2D1RadialGradientBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush) como máscara de opacidad.
 
 
 ```C++
@@ -463,7 +463,7 @@ HRESULT DemoApp::RenderWithLayerWithOpacityMask(ID2D1RenderTarget *pRT)
 
 
 
-Para obtener más información sobre el uso de capas, vea [Información general sobre capas.](direct2d-layers-overview.md)
+Para obtener más información sobre el uso de capas, vea Información general [sobre capas.](direct2d-layers-overview.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

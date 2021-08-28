@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetSetSessionParameter (función)'
-title: JetSetSessionParameter función)
+description: 'Más información sobre: JetSetSessionParameter (Función)'
+title: JetSetSessionParameter (Función)
 TOCTitle: JetSetSessionParameter Function
 ms:assetid: 11aecf42-22ef-4bea-a3d7-961a7bdc85aa
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ835038(v=EXCHG.10)
@@ -19,19 +19,19 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 926ae0db2e47ce571f441ab5836c4ddbe6f8bcc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ce9c50908621f005ec69aa75da4afdfa722b8aa
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001007"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988408"
 ---
-# <a name="jetsetsessionparameter-function"></a>JetSetSessionParameter función)
+# <a name="jetsetsessionparameter-function"></a>JetSetSessionParameter (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-La función **JetSetSessionParameter** configura el motor de base de datos.
+La **función JetSetSessionParameter** configura el motor de base de datos.
 
 ``` c++
 JET_ERR JET_API JetSetSessionParameter (
@@ -48,15 +48,15 @@ JET_ERR JET_API JetSetSessionParameter (
 
 Especifica la sesión que se va a usar para esta llamada.
 
-Cuando se especifica, se omite la instancia especificada y se utilizará la instancia asociada a la sesión.
+Cuando se especifica, se omite la instancia especificada y se usa la instancia asociada a la sesión.
 
 *sesparamid*
 
-IDENTIFICADOR del parámetro de sesión que se va a establecer.
+Identificador del parámetro de sesión que se establecerá.
 
 *pvParam*
 
-Los datos que se van a establecer en este parámetro de sesión.
+Datos que se establecerán en este parámetro de sesión.
 
 *cbParam*
 
@@ -64,87 +64,25 @@ Tamaño de los datos proporcionados.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de datos [JET_ERR](./jet-err.md) con uno de los códigos de retorno que se enumeran en la tabla siguiente. Para obtener más información sobre los posibles errores del motor de almacenamiento extensible (ESE), vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los códigos de retorno enumerados en la tabla siguiente. Para obtener más información sobre los posibles errores extensibles Storage Engine (ESE), vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errAlreadyInitialized</p></td>
-<td><p>La instancia se ha inicializado mediante una llamada a la función <a href="gg294068(v=exchg.10).md">JetInit</a> y esta operación no se puede realizar como resultado. Esto puede ocurrir cuando se intenta configurar un parámetro del sistema después de que un cambio en el valor del parámetro ya no afecte al estado del motor de base de datos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>No es posible completar la operación porque se ha interrumpido toda la actividad en la instancia asociada a la sesión como resultado de una llamada a la función <a href="gg269240(v=exchg.10).md">JetStopService</a> .</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errIndexTuplesInvalidLimits</p></td>
-<td><p>Los parámetros de índice de tupla especificados no son válidos. Este error solo se devuelve cuando el parámetro <em>JET_paramIndexTuplesLengthMin</em>, <em>JET_paramIndexTuplesLengthMax</em>o <em>JET_paramIndexTuplesToIndexMax</em> está establecido en un valor no válido. Para obtener información sobre estos parámetros, vea <a href="gg294119(v=exchg.10).md">parámetros de índice</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInitInProgress</p></td>
-<td><p>No es posible completar la operación porque se está inicializando la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irrecuperable que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidParameter</p></td>
-<td><p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinó con el valor de otro parámetro. Esto puede ocurrir cuando se produce lo siguiente:</p>
-<ul>
-<li><p>El ID. de parámetro del sistema especificado no es válido o no es compatible.</p></li>
-<li><p>Se intentó establecer un parámetro del sistema con valores de cadena con una cadena cuya longitud estaba fuera del intervalo permitido para el parámetro.</p></li>
-<li><p>Se intentó establecer un parámetro del sistema con valores de cadena con una ruta de acceso de archivo donde la longitud de la representación de la ruta de acceso absoluta estaba fuera del intervalo permitido para ese parámetro.</p></li>
-<li><p>Se intentó establecer un parámetro del sistema con valores enteros con un entero que estaba fuera del intervalo válido para el parámetro.</p></li>
-<li><p>Se intentó establecer JET_paramUnicodeIndexDefault con un puntero <a href="gg294097(v=exchg.10).md">JET_UNICODEINDEX</a> null, un LCID no válido o un conjunto no admitido de marcas de <strong>LCMapString</strong> .</p></li>
-<li><p>No se puede establecer el parámetro del sistema especificado porque es de solo lectura.</p></li>
-<li><p>Se ha intentado establecer un parámetro del sistema después de llamar a la función <a href="gg294068(v=exchg.10).md">JetInit</a> , el motor de base de datos está en modo de instancia única y no se ha especificado una sesión.</p></li>
-<li><p>El parámetro del sistema especificado solo es global y se ha intentado establecer un valor específico de la instancia para ese parámetro del sistema.</p></li>
-<li><p>El parámetro del sistema especificado solo es por instancia y se intentó establecer el valor global para ese parámetro del sistema.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidPath</p></td>
-<td><p>La ruta de acceso del sistema de archivos especificada no era válida. Este error puede ser devuelto por <strong>JetSetSessionParameter</strong> solo cuando se establecen parámetros del sistema que representan rutas de acceso del sistema de archivos. Por ejemplo, el parámetro <em>JET_paramSystemPath</em> puede devolver este error. Para obtener información acerca de este parámetro, consulte <a href="gg269235(v=exchg.10).md">parámetros del registro de transacciones</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>No es posible completar la operación porque todavía no se ha inicializado la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInvalidSesid</p></td>
-<td><p>El identificador de sesión no es válido o hace referencia a una sesión cerrada.</p>
-<p>Este error no se devuelve en todas las circunstancias. Los identificadores se validan solo en función del mejor esfuerzo.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errInvalidInstance</p></td>
-<td><p>El identificador de instancia no es válido o hace referencia a una instancia de que se ha cerrado.</p>
-<p>Este error no se devuelve en todas las circunstancias. Los identificadores se validan solo en función del mejor esfuerzo.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errAlreadyInitialized</p> | <p>La instancia se ha inicializado mediante una llamada a la función <a href="gg294068(v=exchg.10).md">JetInit</a> y esta operación no se puede realizar como resultado. Esto puede ocurrir cuando se intenta configurar un parámetro del sistema después de que un cambio en el valor del parámetro ya no afecte al estado del motor de base de datos.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a la <a href="gg269240(v=exchg.10).md">función JetStopService.</a></p> | 
+| <p>JET_errIndexTuplesInvalidLimits</p> | <p>Los parámetros de índice de tupla especificados no eran ilegales. Este error solo se devuelve cuando <em>el</em>JET_paramIndexTuplesLengthMin , <em>JET_paramIndexTuplesLengthMax</em>o <em>JET_paramIndexTuplesToIndexMax</em> parámetro está establecido en un valor no válido. Para obtener información sobre estos parámetros, vea <a href="gg294119(v=exchg.10).md">Parámetros de índice</a>.</p> | 
+| <p>JET_errInitInProgress</p> | <p>No es posible completar la operación porque se está inicializando la instancia asociada a la sesión.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. Esto puede ocurrir cuando se produce lo siguiente:</p><ul><li><p>El identificador de parámetro del sistema especificado no es válido o no es compatible.</p></li><li><p>Se intentó establecer un parámetro del sistema con valores de cadena con una cadena cuya longitud estaba fuera del intervalo legal del parámetro.</p></li><li><p>Se intentó establecer un parámetro del sistema con valores de cadena con una ruta de acceso de archivo donde la longitud de su representación de ruta de acceso absoluta estaba fuera del intervalo legal para ese parámetro.</p></li><li><p>Se intentó establecer un parámetro del sistema con valores enteros con un entero que estaba fuera del intervalo legal del parámetro.</p></li><li><p>Se ha intentado establecer JET_paramUnicodeIndexDefault con un <a href="gg294097(v=exchg.10).md"></a> puntero JET_UNICODEINDEX null, un LCID no válido o un conjunto no compatible de <strong>marcas LCMapString.</strong></p></li><li><p>No se puede establecer el parámetro del sistema especificado porque es de solo lectura.</p></li><li><p>Se intentó establecer un parámetro del sistema después de llamar a la función <a href="gg294068(v=exchg.10).md">JetInit,</a> el motor de base de datos está en modo de instancia única y no se especificó una sesión.</p></li><li><p>El parámetro del sistema especificado es solo global y se intentó establecer un valor específico de instancia para ese parámetro del sistema.</p></li><li><p>El parámetro del sistema especificado es solo por instancia y se intentó establecer el valor global para ese parámetro del sistema.</p></li></ul> | 
+| <p>JET_errInvalidPath</p> | <p>La ruta de acceso del sistema de archivos especificada no era válida. <strong>JetSetSessionParameter</strong> solo puede devolver este error al establecer parámetros del sistema que representan rutas de acceso del sistema de archivos. Por ejemplo, el <em>JET_paramSystemPath</em> parámetro puede devolver este error. Para obtener información sobre este parámetro, vea <a href="gg269235(v=exchg.10).md">Parámetros del registro de transacciones</a>.</p> | 
+| <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
+| <p>JET_errInvalidSesid</p> | <p>El identificador de sesión no es válido o hace referencia a una sesión cerrada.</p><p>Este error no se devuelve en todas las circunstancias. Los identificadores solo se validan con el mejor esfuerzo.</p> | 
+| <p>JET_errInvalidInstance</p> | <p>El identificador de instancia no es válido o hace referencia a una instancia que se ha cerrado.</p><p>Este error no se devuelve en todas las circunstancias. Los identificadores solo se validan con el mejor esfuerzo.</p> | 
+
 
 
 Si se ejecuta correctamente, el parámetro del sistema se establecerá en el valor proporcionado.
@@ -153,37 +91,18 @@ En caso de error, el valor del parámetro del sistema permanecerá sin cambios.
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows 8.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2012.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows 8.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2012.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
-#### <a name="see-also"></a>Vea también
+
+#### <a name="see-also"></a>Consulte también
 
 [JET_API_PTR](./jet-api-ptr.md)  
 [JET_ERR](./jet-err.md)  

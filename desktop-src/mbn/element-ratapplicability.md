@@ -1,30 +1,30 @@
 ---
-description: ESCALABILIDADAplicidad
+description: CAPACIDADAplicidad
 MS-HAID: WWAN\_profile\_v4.element\_RATApplicability
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: ESCALABILIDADAplicidad
+title: CAPACIDADAplicidad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdeb94362480b00a4d1a3d0d6a7dedc49d4cf9f7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: df188ec628961aed8aeb5d68e3b9b3f7852e7fdd
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467572"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986858"
 ---
-# <a name="span-idwwan_profile_v4element_ratapplicabilityspanratapplicability"></a><span id="WWAN_profile_v4.element_RATApplicability"></span>ESCALABILIDADAplicidad
+# <a name="span-idwwan_profile_v4element_ratapplicabilityspanratapplicability"></a><span id="WWAN_profile_v4.element_RATApplicability"></span>CAPACIDADAplicidad
 
-Especifica que este perfil solo está activo cuando el tipo DETE ES el especificado. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP).
+Especifica que este perfil está activo solo cuando el tipo DETE es el especificado. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP).
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<ProfileConditionedOn>](element-profileconditionedon.md)  
-**<RATApplicability>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;ProfileConditionedOn&gt;](element-profileconditionedon.md)  
+**&lt;CAPACIDADAplicidad&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <RATApplicability>
@@ -49,7 +49,7 @@ Ninguno.
 
 | Elemento primario | Descripción | 
 |----------------|-------------|
-| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica las condiciones que se deben cumplir para que un perfil sea aplicable.</p><p>Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.</p> | 
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica las condiciones que deben cumplirse para que un perfil sea aplicable.</p><p>Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.</p> | 
 
 
  
@@ -57,7 +57,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

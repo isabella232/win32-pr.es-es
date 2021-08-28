@@ -4,20 +4,20 @@ ms.assetid: e67d0282-9090-43e6-aedf-bb1fc0443221
 title: Enumeración ASSOCF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6920ef874833471d88c4d42a074661337469b11
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3d52de3ce181033358fc20ca3e4f8759b61f72ed
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477941"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786701"
 ---
 # <a name="assocf-enumeration"></a>Enumeración ASSOCF
 
 Proporciona información a los [**métodos de interfaz IQueryAssociations.**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 
 | C++ | 
@@ -67,11 +67,11 @@ Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shl
 
  <span id="ASSOCF_REMAPRUNDLL"></span><span id="assocf_remaprundll"></span>**ASSOCF \_ REMAPRUNDLL** 
 
-Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) que ignoren Rundll.exe y devuelvan información sobre su destino. Normalmente, **los métodos IQueryAssociations** devuelven información sobre la primera .exe o .dll en una cadena de comando. Si un comando usa Rundll.exe, al establecer esta marca se indica al método que ignore Rundll.exe y devuelva información sobre su destino.
+Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) que ignoren Rundll.exe y devuelvan información sobre su destino. Normalmente, **los métodos IQueryAssociations** devuelven información sobre la primera .exe o .dll en una cadena de comandos. Si un comando usa Rundll.exe, al establecer esta marca se indica al método que ignore Rundll.exe y devuelva información sobre su destino.
 
  <span id="ASSOCF_NOFIXUPS"></span><span id="assocf_nofixups"></span>**ASSOCF \_ NOFIXUPS** 
 
-Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) que no corrija errores en el Registro, como el nombre descriptivo de una función que no coincide con el que se encuentra en el archivo .exe datos.
+Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) que no corrija errores en el Registro, como el nombre descriptivo de una función que no coincide con el que se encuentra en el archivo .exe.
 
  <span id="ASSOCF_IGNOREBASECLASS"></span><span id="assocf_ignorebaseclass"></span>**ASSOCF \_ IGNOREBASECLASS** 
 
@@ -83,15 +83,15 @@ Especifica que se debe omitir el valor BaseClass.
 
  <span id="ASSOCF_INIT_FIXED_PROGID"></span><span id="assocf_init_fixed_progid"></span>**PROGID FIJO DE ASSOCF \_ INIT \_ \_** 
 
-**Se introdujo en Windows 8**. Especifica que el ProgID proporcionado debe asignarse utilizando los valores predeterminados del sistema, en lugar de los valores predeterminados del usuario actual.
+**Introducido en Windows 8**. Especifica que el ProgID proporcionado debe asignarse utilizando los valores predeterminados del sistema, en lugar de los valores predeterminados del usuario actual.
 
  <span id="ASSOCF_IS_PROTOCOL"></span><span id="assocf_is_protocol"></span>**ASSOCF \_ IS \_ PROTOCOL** 
 
-**Se introdujo en Windows 8**. Especifica que el valor es un protocolo y se debe asignar mediante los valores predeterminados del usuario actual.
+**Introducido en Windows 8**. Especifica que el valor es un protocolo y debe asignarse mediante los valores predeterminados del usuario actual.
 
  <span id="ASSOCF_INIT_FOR_FILE"></span><span id="assocf_init_for_file"></span>**ASSOCF \_ INIT \_ FOR \_ FILE** 
 
-**Se introdujo en Windows 8.1**. Especifica que el ProgID se corresponde con una asociación basada en la extensión de archivo. Use junto con **ASSOCF \_ INIT \_ FIXED \_ PROGID**.
+**Introducido en Windows 8.1**. Especifica que el ProgID se corresponde con una asociación basada en la extensión de archivo. Use junto con **ASSOCF \_ INIT \_ FIXED \_ PROGID**.
 
  
 
@@ -99,9 +99,9 @@ Especifica que se debe omitir el valor BaseClass.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]               |
+| Cliente mínimo compatible | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]               |
 | Servidor mínimo compatible | \[Solo aplicaciones de escritorio\] de Windows 2000 Server                                 |
 | Encabezado                   |  Shlwapi.h  |
 

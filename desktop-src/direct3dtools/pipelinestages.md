@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: aca41bc6adddde469954f1e0fa3cdcfd03d333682b4ce1cefd5453859628881a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01242e0891732d38f1be4e3a58482bab62584701
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119409"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623901"
 ---
 # <a name="span-idvspixenginepipelinestagesspanpipelinestages-enumeration"></a><span id="vspixengine.pipelinestages"></span>PIPELINESTAGES (enumeración)
 
 Enumeración que se usa para indicar una fase de la canalización de gráficos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -46,8 +46,8 @@ Valor que corresponde a la fase Sombreador de vértices.
 <span id="PipeLineStages_HullShader"></span><span id="pipelinestages_hullshader"></span><span id="PIPELINESTAGES_HULLSHADER"></span>**PipeLineStages \_ HullShader**  
 Valor que corresponde a la fase Sombreador de casco.
 
-<span id="PipeLineStages_Tesselator"></span><span id="pipelinestages_tesselator"></span><span id="PIPELINESTAGES_TESSELATOR"></span>**PipeLineStages \_ Tesselator**  
-Valor que corresponde a la fase Tesselator.
+<span id="PipeLineStages_Tesselator"></span><span id="pipelinestages_tesselator"></span><span id="PIPELINESTAGES_TESSELATOR"></span>**PipeLineStages \_ Teator**  
+Valor que corresponde a la fase Teator.
 
 <span id="PipeLineStages_DomainShader"></span><span id="pipelinestages_domainshader"></span><span id="PIPELINESTAGES_DOMAINSHADER"></span>**PipeLineStages \_ DomainShader**  
 Valor que corresponde a la fase Sombreador de dominio.
@@ -72,7 +72,7 @@ Valor que corresponde a la fase Sombreador de proceso.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -3,7 +3,7 @@ title: Elemento VerticalMenuLayout
 description: Representa un diseño vertical para los elementos de una galería.
 ms.assetid: 4124c639-c078-4eb0-9d36-37d1ffcebac0
 keywords:
-- VerticalMenuLayout, elemento de la cinta de opciones de Windows
+- VerticalMenuLayout, elemento Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5e6f3e4a691c9691b9bc6c8c6d760bb10635d8d8
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 732fff993e4ac4e1caf8637c1f83804636bf6882
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444056"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623301"
 ---
 # <a name="verticalmenulayout-element"></a>Elemento VerticalMenuLayout
 
@@ -39,16 +39,16 @@ Representa un diseño vertical para los elementos de una galería.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -64,7 +64,7 @@ Representa un diseño vertical para los elementos de una galería.
 <td><strong>IsMultipleHighlightingEnabled</strong><br/></td>
 <td>xs:boolean<br/></td>
 <td>No<br/></td>
-<td><strong>Windows 8 y versiones más recientes</strong><br/> Resalta todos los elementos de la lista hasta el elemento actual del mouseover (en lugar de solo el elemento de mouseover). Normalmente se usa para varias <strong>funcionalidades deshacer</strong> <strong>y rehacer.</strong><br/> <br/>
+<td><strong>Windows 8 y versiones más recientes</strong><br/> Resalta todos los elementos de la lista hasta el elemento actual del mouseover (en lugar de solo el elemento de mouseover). Normalmente se usa para varias <strong>funcionalidades</strong> de deshacer <strong>y rehacer.</strong><br/> <br/>
 <dt><span></span><span></span><strong></strong> (true)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (false)<br/> </dt> <dd> Predeterminada. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">

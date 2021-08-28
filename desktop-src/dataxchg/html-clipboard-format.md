@@ -12,15 +12,15 @@ keywords:
 - portapapeles, cortar texto HTML
 - portapapeles, pegar texto HTML
 - CF_HTML formato del Portapapeles
-- clipboard,CF_HTML format
+- clipboard,CF_HTML formato
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cafeb80c790ac511b3ffcd750ea4fbfafceeb7fb919842bb12a696b9655ab6ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18d73b5101d26fc55002d55e0c15144646b80445
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118811662"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884981"
 ---
 # <a name="html-clipboard-format"></a>Formato del Portapapeles HTML
 
@@ -86,7 +86,7 @@ Las palabras clave StartSelection y EndSelection son opcionales y deben omitirse
 
 Más adelante se podría agregar otra información de este tipo, ya que el código HTML se inicia en StartHTMLoffset. Por ejemplo, se podrían agregar varios pares de StartFragment/EndFragment más adelante para admitir la selección no continua de fragmentos.
 
-Para mayor comodidad de los programas que generan los recuentos de bytes, los recuentos de bytes se pueden dejar con ceros. Por ejemplo, los programas que generan los recuentos de bytes podrían afectar arbitrariamente a diez (10) ceros a cada palabra clave (StartHTML: 0000000000) y, después, cuando se conoce el recuento de bytes de StartHTML exacto (por ejemplo, 71), el programa puede reemplazar el número adecuado de ceros por el número de bytes (StartHTML: 0000000071).
+Para mayor comodidad de los programas que generan los recuentos de bytes, los recuentos de bytes se pueden dejar con ceros. Por ejemplo, los programas que generan los recuentos de bytes podrían afectar arbitrariamente a diez (10) ceros a cada palabra clave (StartHTML: 000000000) y, después, cuando se conoce el número exacto de bytes StartHTML (por ejemplo, 71), el programa puede reemplazar el número adecuado de ceros por el número de bytes (StartHTML: 0000000071).
 
 El único juego de caracteres admitido por el Portapapeles es Unicode en su codificación UTF-8. Dado que los primeros caracteres de UTF-8 y ASCII coinciden, la descripción siempre es ASCII, pero los bytes del contexto (a partir de StartHTML) podrían usar cualquier otro carácter codificado en UTF-8.
 
@@ -106,16 +106,16 @@ El contexto es opcional, ya que se incluye suficiente información en el fragmen
 
 ## <a name="scenarios"></a>Escenarios
 
-En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML controla el corte y pegado de HTML; Otras aplicaciones pueden o no seguir estos escenarios. El formato del Portapapeles que se describe aquí está pensado para permitir la flexibilidad de cómo una aplicación elige funcionar. (Estos escenarios muestran solo html bueno, es decir, sin etiquetas superpuestas).
+En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML controla el corte y pegado de HTML; Otras aplicaciones pueden o no seguir estos escenarios. El formato del Portapapeles que se describe aquí está pensado para permitir la flexibilidad de cómo una aplicación elige funcionar. (Estos escenarios solo muestran html bueno, es decir, sin etiquetas superpuestas).
 
 1.  Fragmento simple de HTML.
     -   -   Texto HTML:
 
-            <BODY>This is normal <B>This is bold </B>This is bold italic This is italic (Esto es cursiva en <I> <B> </B>negrita).</I></BODY>
+            &lt;BODY &gt; This is normal This is <B>bold </B>This is <I> <B>bold italic </B>This is italic </I> &lt; /BODY&gt;
 
         -   Aparece como:
 
-            This is normal **This is bold** This is bold italic This is italic (Esto es cursiva en negrita). Esto es *** cursiva*  
+            This is normal **This is bold** This is bold italic This is italic (Esto es cursiva en *** negrita).*  
 
         -   El texto entre se \* \* selecciona y se copia en el Portapapeles:
 
@@ -139,7 +139,7 @@ En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML cont
 
             <!DOCTYPE ...>
 
-            <BODY>
+            &lt;CUERPO&gt;
 
             <!-- StartFragment -->>
 
@@ -147,24 +147,24 @@ En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML cont
 
             <!-- EndFragment -->
 
-            </BODY>
+            &lt;/BODY&gt;
 
-            </HTML>
+            &lt;/HTML&gt;
 
         -   En este escenario, solo la etiqueta BODY y la etiqueta HTML aparecen en el contexto cuando precede al fragmento seleccionado. Tenga en cuenta que las etiquetas de inicio y las etiquetas finales se incluyen en el contexto. La selección, delimitada por StartSelection y EndSelection, se muestra en negrita.
 
 2.  Fragmento de una tabla en HTML.
     -   -   Texto HTML:
 
-            <BODY><TABLE BORDER><TR><TH ROWSPAN=2>Head1</TH><TD>Elemento 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Elemento 4</TD></TR><TR><TD>Elemento 5</TD><TD>Elemento 6</TD><TD>Elemento 7</TD><TD>Elemento 8</TD></TR><TR><TH>Head2</TH><TD>Elemento 9</TD><TD>Elemento 10</TD><TD>Elemento 11</TD><TD>Elemento 12</TD></TR></TABLE></BODY>
+            &lt;CUERPO&gt;<TABLE BORDER><TR><TH ROWSPAN=2>Head1</TH><TD>Elemento 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Elemento 4</TD></TR><TR><TD>Elemento 5</TD><TD>Elemento 6</TD><TD>Elemento 7</TD><TD>Elemento 8</TD></TR><TR><TH>Head2</TH><TD>Elemento 9</TD><TD>Elemento 10</TD><TD>Elemento 11</TD><TD>Elemento 12</TD></TR></TABLE>&lt;/BODY&gt;
 
-        -   Aparece como: ><TABLE BORDER><TR><TH ROWSPAN=2>Head1</TH><TD>Elemento 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Elemento 4</TD></TR><TR><TD>Elemento 5</TD><TD>Elemento 6</TD><TD>Elemento 7</TD><TD>Elemento 8</TD></TR><TR><TH>Head2</TH><TD>Elemento 9</TD><TD>Elemento 10</TD><TD>Elemento 11</TD><TD>Elemento 12</TD></TR></TABLE><! \[ Cdata\[\]\]>
+        -   Aparece como: ><TABLE BORDER><TR><TH ROWSPAN=2>Head1</TH><TD>Elemento 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Elemento 4</TD></TR><TR><TD>Elemento 5</TD><TD>Elemento 6</TD><TD>Elemento 7</TD><TD>Elemento 8</TD></TR><TR><TH>Head2</TH><TD>Elemento 9</TD><TD>Elemento 10</TD><TD>Elemento 11</TD><TD>Elemento 12</TD></TR></TABLE><! \[ CDATA\[\]\]>
         -   Los elementos Item 6, Item7, Item 10 y Item 11 de la tabla se seleccionan como un bloque y se copian en el Portapapeles.
         -   Esto es lo que estará en el Portapapeles (tenga en cuenta que esta es la interpretación de IE4/MSHTML):
 
             <!DOCTYPE ...>
 
-            <HTML><BODY><TABLE BORDER>
+            &lt;CUERPO &gt; &lt; HTML&gt;<TABLE BORDER>
 
             <!--StartFragment-->
 
@@ -174,12 +174,12 @@ En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML cont
 
             </TABLE>
 
-            </BODY></HTML>The selection, as delimited by StartSelection and EndSelection, is shown in bold.
+            &lt;/BODY &gt; &lt; /HTML &gt; La selección, delimitada por StartSelection y EndSelection, se muestra en negrita.
 
 3.  Pegar un fragmento de una lista ordenada en texto sin formato.
     -   -   Texto HTML:
 
-            <BODY><OL TYPE = a><LI>Elemento 1<LI>Item 2<LI>Item 3<LI>Elemento 4<LI>Elemento 5<LI>Elemento 6</OL></BODY>
+            &lt;CUERPO&gt;<OL TYPE = a><LI>Elemento 1<LI>Item 2<LI>Item 3<LI>Elemento 4<LI>Elemento 5<LI>Elemento 6</OL>&lt;/BODY&gt;
 
         -   Aparece como:
             1.  Elemento 1
@@ -190,7 +190,7 @@ En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML cont
             6.  Elemento 6
         -   El usuario selecciona y copia los elementos del 3 al 5 en el Portapapeles. El siguiente código HTML está en el Portapapeles:
 
-            <DOCTYPE...><HTML><BODY><OL TYPE = a>
+            <DOCTYPE...>&lt; CUERPO HTML &gt; &lt;&gt;<OL TYPE = a>
 
             <!-- StartFragment-->
 
@@ -198,38 +198,38 @@ En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML cont
 
             <!-- EndFragment-->
 
-            </OL></BODY></HTML>
+            </OL>&lt;/BODY&gt;&lt;/HTML&gt;
 
             La selección, delimitada por StartSelection y EndSelection, se muestra en negrita.
 
         -   Si este fragmento se pega ahora en un documento vacío, se creará el siguiente código HTML:
 
-            <BODY><OL TYPE = a><LI>Item 3<LI>Elemento 4<LI>Elemento 5</OL></BODY>
+            &lt;CUERPO&gt;<OL TYPE = a><LI>Item 3<LI>Elemento 4<LI>Elemento 5</OL>&lt;/BODY&gt;
 
         -   Aparece como:
             1.  Item 3
             2.  Elemento 4
             3.  Elemento 5
 
-4.  Pegar una región parcialmente seleccionada.
+4.  Pegar una región seleccionada parcialmente.
     -   -   Texto HTML:
 
-            <P> IE4/MSHTML es un editor WYSIWYG que admite :<UL><LI>Cortar<LI>Copiar<LI>Pegar</UL><P>Esta es una herramienta excelente.
+            <P> IE4/MSHTML es un editor DE WYSIWYG que admite :<UL><LI>Cortar<LI>Copiar<LI>Pegar</UL><P>Esta es una excelente herramienta .
 
-        -   Aparece como:IE4/MSHTML es un editor WYSIWYG que admite :
+        -   Aparece como:IE4/MSHTML es un editor DE WYSIWYG que admite :
             -   -   Cortar
                 -   Copiar
                 -   Pegar
 
-        -   El usuario selecciona desde "WYSIWYG" hasta "Cop". El siguiente código HTML está en el Portapapeles:
+        -   El usuario selecciona de "WYSIWYG" hasta "Cop". El siguiente código HTML está en el Portapapeles:
 
-            <DOCTYPE...><HTML><BODY>
+            <DOCTYPE...>&lt; CUERPO HTML &gt; &lt;&gt;
 
             <!-- StartFragment-->
 
             <P>
 
-            **Editor WYSIWYG, que admite**
+            **EDITOR DE WYSIWYG, que admite**
 
             **<UL><LI>Cut <LI> Cop**
 
@@ -237,14 +237,14 @@ En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML cont
 
             <!-- EndFragment-->
 
-            </BODY></HTML>The selection, as delimited by StartSelection and EndSelection, is shown in bold.
+            &lt;/BODY &gt; &lt; /HTML &gt; La selección, delimitada por StartSelection y EndSelection, se muestra en negrita.
 
      
     -   -   El usuario selecciona entre "opy" hasta "Great".
 
             El siguiente código HTML está en el Portapapeles:
 
-            <DOCTYPE...><HTML><BODY>
+            <DOCTYPE...>&lt; CUERPO HTML &gt; &lt;&gt;
 
             <!-- StartFragment-->
 
@@ -256,7 +256,7 @@ En los escenarios siguientes se describe cómo el editor HTML de IE4/MSHTML cont
 
             <!-- EndFragment-->
 
-            </BODY></HTML>
+            &lt;/BODY &gt; &lt; /HTML&gt;
 
             La selección, delimitada por StartSelection y EndSelection, se muestra en negrita.
 

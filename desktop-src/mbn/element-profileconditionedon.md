@@ -7,25 +7,25 @@ MSHAttr:
 title: ProfileConditionedOn
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 729b95872be68ea814b35a593082b2366284f0dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44257377400ec8877b07b6aa29766552b72e28e6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154201"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882898"
 ---
 # <a name="span-idwwan_profile_v4element_profileconditionedonspanprofileconditionedon"></a><span id="WWAN_profile_v4.element_ProfileConditionedOn"></span>ProfileConditionedOn
 
-Especifica las condiciones que deben satisfacerse para que un perfil sea aplicable.
+Especifica las condiciones que deben cumplirse para que un perfil sea aplicable.
 
-Este elemento es nuevo para V4. Permite especificar varios perfiles que se aplican en diferentes condiciones y para que el perfil adecuado se use automáticamente cuando sea aplicable. Este elemento es opcional. Si no se especifica, el perfil siempre es aplicable con respecto a las condiciones indicadas.
+Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<ProfileConditionedOn>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;ProfileConditionedOn&gt;**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <ProfileConditionedOn>
@@ -52,81 +52,33 @@ Ninguno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento secundario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-cellularclass.md">CellularClass</a></td>
-<td><p>Especifica que este perfil solo está activo cuando la clase de teléfono móvil actual es la especificada. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto del Protocolo de datos de paquetes (PDP).</p></td>
-</tr>
-<tr class="even">
-<td><a href="element-imsi.md">IMSI</a></td>
-<td><p>Especifica que este perfil solo está activo cuando el IMSI actual que se usa en ICCID es el especificado. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto del Protocolo de datos de paquetes (PDP).</p></td>
-</tr>
-<tr class="odd">
-<td><a href="element-iwlanapplicability.md">IwlanApplicability</a></td>
-<td><p>Especifica que este perfil solo está activo cuando se conecta a una red de IWLAN. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto del Protocolo de datos de paquetes (PDP). El valor de este elemento debe ser un valor <a href="simpletype-iwlanapplicabilitytype.md"><strong>iwlanApplicabilityType</strong></a> válido.</p></td>
-</tr>
-<tr class="even">
-<td><a href="element-ratapplicability.md">RATApplicability</a></td>
-<td><p>Especifica que este perfil solo está activo cuando el tipo RAT es el especificado. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto del Protocolo de datos de paquetes (PDP).</p></td>
-</tr>
-<tr class="odd">
-<td><a href="element-roamapplicability.md">RoamApplicability</a></td>
-<td><p>Especifica que este perfil solo está activo cuando la condición de itinerancia actual es la especificada. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto del Protocolo de datos de paquetes (PDP). El valor de este elemento debe ser un valor <a href="simpletype-roamapplicabilitytype.md"><strong>roamApplicabilityType</strong></a> válido.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento secundario | Descripción | 
+|---------------|-------------|
+| <a href="element-cellularclass.md">CellularClass</a> | <p>Especifica que este perfil está activo solo cuando la clase de telefonía móvil actual es la especificada. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP).</p> | 
+| <a href="element-imsi.md">IMSI</a> | <p>Especifica que este perfil está activo solo cuando el IMSI actual que se usa en EL IDDEPI es el especificado. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP).</p> | 
+| <a href="element-iwlanapplicability.md">IwlanApplicability</a> | <p>Especifica que este perfil solo está activo cuando se conecta a una red IWLAN. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP). El valor de este elemento debe ser un valor <a href="simpletype-iwlanapplicabilitytype.md"><strong>iwlanApplicabilityType</strong></a> válido.</p> | 
+| <a href="element-ratapplicability.md">CAPACIDADAplicidad</a> | <p>Especifica que este perfil está activo solo cuando el tipo DETE es el especificado. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP).</p> | 
+| <a href="element-roamapplicability.md">RoamApplicability</a> | <p>Especifica que este perfil está activo solo cuando la condición de itinerancia actual es la especificada. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP). El valor de este elemento debe ser un valor <a href="simpletype-roamapplicabilitytype.md"><strong>roamApplicabilityType</strong></a> válido.</p> | 
+
 
  
 
 ### <a name="span-idparent_elementsspanspan-idparent_elementsspanparent-elements"></a><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Elementos primarios
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento primario</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
-<td><p>El elemento <strong>MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el elemento secundario <a href="element-profileconditionedon.md"><strong>ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento primario | Descripción | 
+|----------------|-------------|
+| <a href="element-mbnprofileext.md">MBNProfileExt</a> | <p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p><p>Puede haber más de un elemento MbnProfileExt en un perfil que describa la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p> | 
+
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Espacio de nombres</p></td>
-<td><p>https://www.microsoft.com/networking/WWAN/profile/v4</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+
 
  
 

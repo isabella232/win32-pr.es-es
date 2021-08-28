@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ba7074ee7dff938f215e261a95f0f4b11f257cab0fa0469347a2413643e0bcf5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7806770d528d83f18d6f3eb061dc3043e15a0e53
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119889615"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984848"
 ---
 # <a name="jetgetbookmark-function"></a>JetGetBookmark (Función)
 
@@ -74,65 +74,26 @@ Si el búfer de salida es demasiado pequeño, se devolverá el tamaño real del 
 
 Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código devuelto</p></th>
-<th><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>La operación se ha completado correctamente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errBufferTooSmall</p></td>
-<td><p>La operación se completó correctamente, pero el búfer de salida era demasiado pequeño para recibir el marcador completo. El búfer de salida se ha rellenado con la mayor parte del marcador que cabría. También se ha devuelto el tamaño real del marcador, si se solicita.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errInstanceUnavailable</p></td>
-<td><p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p>
-<p><strong>Windows XP:</strong> Estos valores devueltos se introducen en Windows XP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errNoCurrentRecord</p></td>
-<td><p>El cursor no se coloca en un registro. Esto puede ocurrir por diversos motivos. Por ejemplo, esto ocurrirá si el cursor se coloca después del último registro en el índice actual.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errNotInitialized</p></td>
-<td><p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errRestoreInProgress</p></td>
-<td><p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errSessionSharingViolation</p></td>
-<td><p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p>
-<p><strong>Windows XP:</strong> Este valor devuelto se introduce en Windows XP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errTermInProgress</p></td>
-<td><p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Código devuelto</p> | <p>Descripción</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
+| <p>JET_errBufferTooSmall</p> | <p>La operación se completó correctamente, pero el búfer de salida era demasiado pequeño para recibir el marcador completo. El búfer de salida se ha rellenado con la mayor parte del marcador que cabría. También se ha devuelto el tamaño real del marcador, si se solicita.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong> Estos valores devueltos se introducen en Windows XP.</p> | 
+| <p>JET_errNoCurrentRecord</p> | <p>El cursor no se coloca en un registro. Esto puede ocurrir por diversos motivos. Por ejemplo, esto ocurrirá si el cursor se coloca después del último registro en el índice actual.</p> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
+| <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p><p><strong>Windows XP:</strong> Este valor devuelto se introduce en Windows XP.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p> | 
+
 
 
 Si esta función se realiza correctamente, el marcador del registro asociado a la entrada de índice en la posición actual de un cursor se devolverá en el búfer de salida. No se producirá ningún cambio en el estado de la base de datos.
 
-Si se produce un error en esta función, el estado del búfer de salida y el tamaño real del marcador serán indefinidos a menos que JET_errBufferTooSmall se devuelva. Si se devuelve JET_errBufferTooSmall, el búfer de salida contendrá la mayor parte del marcador que cabe en el espacio proporcionado y el tamaño real del marcador será preciso. No se producirá ningún cambio en el estado de la base de datos.
+Si se produce un error en esta función, el estado del búfer de salida y el tamaño real del marcador serán indefinidos a menos que JET_errBufferTooSmall se devuelva. En caso de JET_errBufferTooSmall, el búfer de salida contendrá la mayor parte del marcador que cabe en el espacio proporcionado y el tamaño real del marcador será preciso. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Normalmente, los marcadores se deben tratar como fragmentos opacos de datos. No se debe intentar aprovechar la estructura interna de estos datos. Sin embargo, se cumplen las condiciones siguientes en todos los marcadores DE ESENT:
 
@@ -152,34 +113,15 @@ Normalmente, los marcadores se deben tratar como fragmentos opacos de datos. No 
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT.lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Dll</strong></p></td>
-<td><p>Requiere ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Consulte también

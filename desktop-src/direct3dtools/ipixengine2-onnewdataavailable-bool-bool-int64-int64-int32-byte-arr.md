@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1b39587dd96d19eaa82a25396cc2ee563f87e5095eb5492025d09d4091dce076
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdfa8bdeb0140e9d8366deabc97b164dff8d4991
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118282844"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628211"
 ---
 # <a name="span-idvspixengineipixengine2_onnewdataavailable_bool_bool_int64_int64_int32_byte_arrspanipixengine2onnewdataavailable-method"></a><span id="vspixengine.ipixengine2_onnewdataavailable_bool_bool_int64_int64_int32_byte_arr"></span>IPixEngine2::OnNewDataAvailable (método)
 
@@ -48,7 +48,7 @@ HRESULT OnNewDataAvailable(
 True si la sesión ha finalizado; de lo contrario, false.
 
 *fUnloadCurFrame*   
-No se usa.
+No se utiliza.
 
 *i64FilePositionStart*   
 Posición del archivo, en bytes, en la que comienzan los nuevos datos.
@@ -68,7 +68,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

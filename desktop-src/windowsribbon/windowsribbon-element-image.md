@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aad95d62be63434653908d54a290c3213fd22bf644150b70fa995e86bf5e39af
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b05f7c93ea1597d2dde4724ff0b24b53769cd9ea
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931455"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631683"
 ---
 # <a name="image-element"></a>Elemento Image
 
@@ -42,16 +42,16 @@ Representa una imagen.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -61,7 +61,7 @@ Representa una imagen.
 <td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
 <td>Identificador de recurso único. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos ceros iniciales opcionales. <br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>MinDPI</strong><br/></td>
@@ -114,7 +114,7 @@ Representa una imagen.
 
 Opcional.
 
-Puede producirse una o varias veces para cada [**elemento Command.SmallImages,**](windowsribbon-element-command-smallimages.md) [**Command.SmallHighContrastImages,**](windowsribbon-element-command-smallhighcontrastimages.md) [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)o [**Command.LargeHighContrastImages.**](windowsribbon-element-command-largehighcontrastimages.md)
+Puede producirse una o varias veces para cada [**elemento Command.SmallImages**](windowsribbon-element-command-smallimages.md), [**Command.SmallHighContrastImages,**](windowsribbon-element-command-smallhighcontrastimages.md) [**Command.LargeImages**](windowsribbon-element-command-largeimages.md)o [**Command.LargeHighContrastImages.**](windowsribbon-element-command-largehighcontrastimages.md)
 
 Cuando se proporciona una colección de recursos de imagen diseñados para admitir valores específicos de puntos de pantalla por  pulgada (ppp) al marco de la cinta de opciones a través de un conjunto de elementos **Image,** el marco usa la imagen con un valor de atributo *MinDPI* que coincide con la configuración de ppp de la pantalla actual.
 

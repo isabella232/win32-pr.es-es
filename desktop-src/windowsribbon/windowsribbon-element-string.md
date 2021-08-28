@@ -3,7 +3,7 @@ title: Elemento String
 description: Representa un recurso de cadena.
 ms.assetid: 83e5bdbb-ef86-4942-af40-2e327360ee67
 keywords:
-- Elemento String Windows Cinta de opciones
+- Cinta de opciones Windows elemento String
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 80558bed1e2152454df46d8a8dc6ab4fc40056f0257a08c91026504ec64f1722
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a34a417b6ad4d57bea83fcae13d810b22114271
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118439413"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630961"
 ---
 # <a name="string-element"></a>Elemento String
 
@@ -41,10 +41,10 @@ Representa un recurso de cadena.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col  />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -66,7 +66,7 @@ Representa un recurso de cadena.
 <td>xs:positiveInteger o xs:string<br/></td>
 <td>No<br/></td>
 <td>Identificador de recurso único. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:positiveInteger o xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos ceros iniciales opcionales. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Símbolo</strong><br/></td>
@@ -106,7 +106,7 @@ Representa un recurso de cadena.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 

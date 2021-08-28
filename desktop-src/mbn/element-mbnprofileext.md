@@ -7,12 +7,12 @@ MSHAttr:
 title: MBNProfileExt
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c47dd7c8b8064d7c9bed24763dfe3ec8fda0ac12
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1cf6b821d36fc69c06fd42fad58efc4102e64f6a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472131"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987918"
 ---
 # <a name="span-idwwan_profile_v4element_mbnprofileextspanmbnprofileext"></a><span id="WWAN_profile_v4.element_MBNProfileExt"></span>MBNProfileExt
 
@@ -22,9 +22,9 @@ Puede haber más de un elemento MbnProfileExt en un perfil que describa la confi
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-**<MBNProfileExt>**
+**&lt;MBNProfileExt&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <MBNProfileExt>
@@ -79,10 +79,10 @@ Ninguno.
 | <a href="element-autoconnectoninternet.md">AutoConnectOnInternet</a> | <p>Especifica si el dispositivo de banda ancha móvil se conectará automáticamente a una red.</p><p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-autoconnectoninternet-mbnprofile-element.md"><strong>AutoConnectOnInternet</strong></a> v1.</p> | 
 | <a href="element-connectionmode.md">ConnectionMode</a> | <p>Especifica la configuración de conexión automática que se va a usar para un dispositivo de banda ancha móvil.</p><p>Para obtener más información, vea la documentación del elemento <a href="../mbn/schema-connectionmode-mbnprofile-element.md"><strong>ConnectionMode</strong></a> v1.</p> | 
 | <a href="element-context.md">Contexto</a> | <p>Especifica los parámetros necesarios para establecer una conexión de datos.</p> | 
-| <a href="element-dataroamingpartners.md">DataRoamingPartners</a> | <p>Especifica una lista de proveedores de red preferidos en itinerancia.</p><p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>DataRoamingPartners</strong></a> v1.</p> | 
+| <a href="element-dataroamingpartners.md">DataRoamingPartners</a> | <p>Especifica una lista de proveedores de red preferidos en itinerancia.</p><p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-dataroamingpartners-mbnprofile-element.md"><strong>DataRoamingPartners</strong></a> v1.</p> | 
 | <a href="element-description.md">Descripción</a> | <p>Descripción del perfil.</p> | 
 | <a href="element-homeprovidername.md">HomeProviderName</a> | <p>Nombre del proveedor de inicio para la SIM o el dispositivo especificados. Para obtener más información, vea la documentación del elemento <a href="../mbn/schema-homeprovidername-mbnprofile-element.md"><strong>HomeProviderName</strong></a> v1.</p> | 
-| <a href="element-iconfilepath.md">ICONFilePath</a> | <p>Ruta de acceso al archivo de icono de la conexión. La interfaz de usuario de conexión de sistema operativo muestra el icono cuando se realiza una conexión mediante este perfil.</p><p>Para obtener más información sobre el uso de este elemento, vea la documentación de v1 para <a href="../mbn/schema-iconfilepath-mbnprofile-element.md"><strong>ICONFilePath.</strong></a></p> | 
+| <a href="element-iconfilepath.md">ICONFilePath</a> | <p>Ruta de acceso al archivo de icono de la conexión. La interfaz de usuario de conexión de sistema operativo muestra el icono cuando se realiza una conexión con este perfil.</p><p>Para obtener más información sobre el uso de este elemento, vea la documentación de v1 para <a href="../mbn/schema-iconfilepath-mbnprofile-element.md"><strong>ICONFilePath.</strong></a></p> | 
 | <a href="element-isdefault.md">IsDefault</a> | <p>Especifica si este perfil es el perfil predeterminado.</p><p>Para más información sobre este elemento, consulte la documentación de la versión v1 de <a href="../mbn/schema-isdefault-mbnprofile-element.md"><strong>IsDefault.</strong></a></p> | 
 | <a href="element-isexclusivetoother.md">IsExclusiveToOther</a> | <p>Especifica que este perfil es exclusivo de otros perfiles de los mismos conjunto de perfiles. Este elemento es nuevo para v4.</p> | 
 | <a href="element-islongstandingadditionalpdpcontextprofile.md">IsLongStandingAdditionalPdpContextProfile</a> | <p>Especifica que este perfil es un perfil de contexto de PDP adicional de larga duración. Si el valor de este elemento es <strong>true,</strong> <a href="/previous-versions/windows/desktop/legacy/mt156987(v=vs.85)"><strong>IsAdditionalPdpContextProfile</strong></a> también debe establecerse en <strong>true.</strong> Se trata de un nuevo elemento para v4.</p> | 
@@ -105,7 +105,9 @@ Este elemento más externo (documento) no puede estar contenido en ningún otro 
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

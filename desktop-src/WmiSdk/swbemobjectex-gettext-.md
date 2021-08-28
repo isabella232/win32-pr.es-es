@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 8feace72eeb51ed0904ad748892ca3c1b3adea9c8ca6c97ac7a76ea11890dd08
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f5772429fa0cd7f2f45009ff1867141a845088b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117922433"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885487"
 ---
 # <a name="swbemobjectexgettext_-method"></a>Método SWbemObjectEx.GetText \_
 
@@ -53,14 +53,14 @@ Obligatorio. Valor de [**WbemObjectTextFormatEnum**](/windows/desktop/api/Wbemdi
 
 </dd> <dt>
 
-*iFlags* \[ in, opcional\]
+*iFlags* \[ en, opcional\]
 </dt> <dd>
 
 Marcas de operación reservadas. El valor predeterminado es 0 (cero).
 
 </dd> <dt>
 
-*objWbemNamedValueSet* \[ in, opcional\]
+*objWbemNamedValueSet* \[ en, opcional\]
 </dt> <dd>
 
 Objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que establece el contexto de la operación. El valor predeterminado es null. Para obtener más información sobre los pares nombre-valor permitidos, vea Comentarios a continuación.
@@ -84,7 +84,7 @@ Error no especificado.
 
 </dd> <dt>
 
-**wbemErrNotFound** : 2147749890 (0x80041002)
+**wbemErrNotFound:** 2147749890 (0x80041002)
 </dt> <dd>
 
 No se encontró el formato solicitado.
@@ -107,19 +107,19 @@ Se produjo un error interno, grave e inesperado. Comunique este error al Servici
 
 ## <a name="remarks"></a>Comentarios
 
-Al construir [**SWbemNamedValueSet**](swbemnamedvalueset.md), solo se permiten los siguientes pares nombre-valor.
+Al construir [**SWbemNamedValueSet,**](swbemnamedvalueset.md)solo se permiten los siguientes pares nombre-valor.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Nombre</th>
-<th>Value</th>
+<th>Valor</th>
 </tr>
 </thead>
 <tbody>
@@ -135,9 +135,9 @@ Al construir [**SWbemNamedValueSet**](swbemnamedvalueset.md), solo se permiten l
 <td>PathLevel</td>
 <td><strong>VT-I4</strong><br/> El valor predeterminado es 0 (cero). Los valores posibles son:<br/>
 <ul>
-<li>0: se <CLASS> crea un elemento o en función de si el objeto es una clase o <INSTANCE> instancia.</li>
+<li>0: se &lt; crea una clase o un elemento en función de si el objeto es una clase o &gt; <INSTANCE> instancia.</li>
 <li>1: se <VALUE.NAMEDOBJECT> genera un elemento .</li>
-<li>2: Se <VALUE.OBJECTWITHLOCALPATH> genera un elemento .</li>
+<li>2: se <VALUE.OBJECTWITHLOCALPATH> genera un elemento .</li>
 <li>3: Se <VALUE.OBJECTWITHPATH> genera un elemento .</li>
 </ul></td>
 </tr>
@@ -160,7 +160,7 @@ Para obtener más información sobre cómo crear [**un SWbemNamedValueSet**](swb
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente script muestra cómo obtener una representación XML de la definición de clase Bios de [**Win32. \_**](/windows/desktop/CIMWin32Prov/win32-bios) Al especificar una instancia determinada de **Bios Win32, \_** puede obtener los datos de ese objeto en XML.
+El siguiente script muestra cómo obtener una representación XML de la definición de [**clase \_ Bios de Win32.**](/windows/desktop/CIMWin32Prov/win32-bios) Al especificar una instancia determinada de **Bios de \_ Win32,** puede obtener los datos de ese objeto en XML.
 
 
 ```VB
@@ -181,11 +181,11 @@ wscript.echo Text
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObjectEx<br/>                                                         |

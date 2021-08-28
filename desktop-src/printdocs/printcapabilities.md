@@ -4,22 +4,22 @@ ms.assetid: f503b62f-02e1-4621-8799-a8b6ad12f489
 title: PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2158fd651849df2e4ea24c640065f1041569741a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8ef035015e8024954b32d17dd87bab929221ac78
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407028"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883931"
 ---
 # <a name="printcapabilities"></a>PrintCapabilities
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Un elemento PrintCapabilities representa la raíz del documento PrintCapabilities. El documento PrintCapabilities contiene toda la información necesaria para describir los atributos de dispositivo admitidos, dada una configuración de dispositivo determinada.
 
 ## <a name="element-tag"></a>Etiqueta de elemento
 
-<PrintCapabilities>
+&lt;PrintCapabilities&gt;
 
 ## <a name="xml-attributes"></a>Atributos XML
 
@@ -35,7 +35,7 @@ En la tabla siguiente se enumeran los atributos XML que pueden pertenecer a este
 
  
 
-Para más información, consulte la [sección Atributos XML.](xml-attributes.md)
+Para obtener más información, vea la [sección Atributos XML.](xml-attributes.md)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -47,7 +47,7 @@ En la tabla siguiente se enumeran los elementos que pueden ser elementos primari
 |----------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Elementos primarios<br/> | Solo raíz del documento.<br/>                                                                                    |
 | Elementos secundarios<br/>  | *Característica* (cero o más)<br/> *ParameterDef* (cero o más)<br/> *Propiedad* (cero o más)<br/> |
-| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten elementos secundarios duplicados relacionados.<br/>                 |
+| Este elemento<br/>    | No se permiten datos de caracteres.<br/> No se permiten elementos secundarios duplicados del mismo nivel.<br/>                 |
 
 
 
@@ -59,13 +59,13 @@ Es posible que el elemento raíz no tenga dependencias de configuración.
 
 ## <a name="example"></a>Ejemplo
 
-Vea [Ejemplo de documento PrintCapabilities](printcapabilities-document-example.md).
+Vea [el ejemplo del documento PrintCapabilities](printcapabilities-document-example.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

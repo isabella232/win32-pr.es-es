@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_HANDLE'
+description: 'Más información sobre: JET_HANDLE'
 title: JET_HANDLE
 TOCTitle: JET_HANDLE
 ms:assetid: 30748d98-f119-47df-92dd-a8ae8c2761c7
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ecb483da26105a0d1f8fbdf0c27561e6d7e8fe26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 303209c2b34f2f9ba44b9240662eddf2d93d7797
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913002"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987508"
 ---
 # <a name="jet_handle"></a>JET_HANDLE
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_handle"></a>JET_HANDLE
 
-El tipo de datos **JET_HANDLE** contiene un identificador genérico.
+El **JET_HANDLE** de datos contiene un identificador genérico.
 
 ```cpp
     typedef JET_API_PTR JET_HANDLE;
@@ -39,28 +39,15 @@ El tipo de datos **JET_HANDLE** contiene un identificador genérico.
 
 JET_HANDLE
 
-Un valor **null** indica un identificador no válido.
+Un valor **NULL indica** un identificador no válido.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 

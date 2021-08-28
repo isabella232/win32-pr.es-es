@@ -4,18 +4,18 @@ ms.assetid: 02a6ac18-ad69-4880-a267-8330d648c0d9
 title: Directiva de metadatos de fotos System.Comment
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45b3511e0a459a2b652b29828060be6f0a92a36639aef63d4fa087e54ec9d80b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2aa1a62fd5afa131a714c365ed2fda2c307bc955
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118205634"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883903"
 ---
 # <a name="systemcomment-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Comment
 
-Directiva de metadatos de fotos para [la propiedad System.Comment.](../properties/props-system-comment.md)
+Directiva de metadatos de fotos para la [propiedad System.Comment.](../properties/props-system-comment.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 Comentario \_ PKEY
 
@@ -41,15 +41,15 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Ruta de acceso                                | Formato de disco    |
+| Pedido de | Ruta de acceso                                | Formato de disco    |
 |-------|-------------------------------------|----------------|
 | 1     | /app1/ifd/{ushort=40092}            | bytes \_ unicode |
 | 2     | /app1/ifd/{ushort=37510}            | unicode        |
-| 3     | /xmp/ <xmpalt> exif:UserComment | unicode        |
+| 3     | /xmp/ &lt; xmpalt &gt; exif:UserComment | unicode        |
 
 
 
@@ -59,7 +59,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                     | Formato de disco    |
+| Pedido de | Ruta de acceso                     | Formato de disco    |
 |-------|--------------------------|----------------|
 | 1     | /app1/ifd/{ushort=40092} | bytes \_ unicode |
 
@@ -71,7 +71,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                          |
+| Pedido de | Ruta de acceso                          |
 |-------|-------------------------------|
 | 1     | /app1/ifd/{ushort=40092}      |
 | 2     | /app1/ifd/exif/{ushort=37510} |
@@ -83,15 +83,15 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="tiff-policy"></a>Directiva TIFF
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Ruta de acceso                                    | Formato de disco    |
+| Pedido de | Ruta de acceso                                    | Formato de disco    |
 |-------|-----------------------------------------|----------------|
 | 1     | /ifd/{ushort=40092}                     | bytes \_ unicode |
 | 2     | /ifd/{ushort=37510}                     | unicode        |
-| 3     | /ifd/xmp/ <xmpalt> exif:UserComment | unicode        |
+| 3     | /ifd/xmp/ &lt; xmpalt &gt; exif:UserComment | unicode        |
 
 
 
@@ -101,7 +101,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                | Formato de disco    |
+| Pedido de | Ruta de acceso                | Formato de disco    |
 |-------|---------------------|----------------|
 | 1     | /ifd/{ushort=40092} | bytes \_ unicode |
 
@@ -113,7 +113,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                      |
+| Pedido de | Ruta de acceso                      |
 |-------|---------------------------|
 | 1     | /ifd/{ushort=40092}       |
 | 2     | /ifd/{ushort=37510}       |

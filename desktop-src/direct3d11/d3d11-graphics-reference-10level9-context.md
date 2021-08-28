@@ -1,19 +1,19 @@
 ---
 title: Métodos 10Level9 ID3D11DeviceContext
-description: En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los métodos \_ \_ \_ \_ ID3D11DeviceContext.
+description: En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los \_ \_ \_ \_ métodos ID3D11DeviceContext.
 ms.assetid: 84478b56-0306-491a-9545-0849b06d8342
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d5cb055e6a290a9500f65ad2d64cdd69b0eaa224e6a81359595688ba1aca657
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e268f45465139e49afe0f81a64eeeb93939734e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990075"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473131"
 ---
 # <a name="10level9-id3d11devicecontext-methods"></a>Métodos 10Level9 ID3D11DeviceContext
 
-En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los métodos \_ \_ \_ \_ [**ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)
+En esta sección se enumeran las diferencias entre cada nivel de característica 10Level9 y el nivel de característica D3D FEATURE LEVEL 11 0 y superior para los \_ \_ \_ \_ [**métodos ID3D11DeviceContext.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11devicecontext)
 
 -   [ID3D11DeviceContext::CopySubresourceRegion](#id3d11devicecontextcopysubresourceregion)
 -   [ID3D11DeviceContext::CopyResource](#id3d11devicecontextcopyresource)
@@ -70,29 +70,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3"> Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br/> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE pueden copiarse de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> No se pueden copiar texturas de volumen mipmapped. <br/> ${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 |  Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br /> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> No se pueden copiar texturas de volumen mipmapped. <br /> ${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -102,29 +86,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3"> Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br/> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE pueden copiarse de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br/> ${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 |  Solo se pueden copiar Texture2D y los búferes en la memoria accesible para GPU.<br /> Texture3D no se puede copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> Los recursos que solo tienen D3D10_BIND_SHADER_RESOURCE se pueden copiar de la memoria accesible desde GPU a la memoria accesible desde la CPU.<br /> ${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -134,29 +102,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -166,29 +118,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -198,29 +134,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -230,29 +150,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Solo se borrará el primer segmento de matriz. Las aplicaciones deben crear una vista de destino de representación para cada segmento de cara o matriz y, a continuación, borrar cada vista individualmente.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Solo se borrará el primer segmento de matriz. Las aplicaciones deben crear una vista de destino de representación para cada segmento de cara o matriz y, a continuación, borrar cada vista individualmente.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -262,29 +166,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -294,29 +182,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -326,29 +198,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -358,29 +214,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -390,29 +230,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -422,29 +246,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -454,29 +262,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -500,29 +292,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -546,38 +322,13 @@ En esta sección se enumeran las diferencias entre cada nivel de característica
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">No se admite${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
-<td>Es posible que el número de primitivas no supere 1048575.<br/> Las texturas no se pueden repetir en una primitiva más de 8192 veces.<br/> Los valores de índice no pueden superar 1048575.<br/>
-<blockquote>
-[!Note]<br />
-Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced"><strong>DrawIndexedInstanced</strong></a> con un sombreador de vértices que está enlazado a la canalización y que no importa ningún dato por instancia, es posible que algún hardware gráfico de Direct3D 9 no dibuje nada. En concreto, si el sombreador de vértices no usa ningún dato por instancia, llamar a <strong>DrawIndexedInstanced</strong> con 1 instancia no equivale a llamar <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw"><strong>a Draw</strong></a>.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No compatible${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | Es posible que el número de primitivas no supere 1048575.<br /> Las texturas no se pueden repetir en una primitiva más de 8192 veces.<br /> Los valores de índice no pueden superar 1048575.<br /><blockquote>[!Note]<br />Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced"><strong>DrawIndexedInstanced</strong></a> con un sombreador de vértices enlazado a la canalización y que no importa ningún dato por instancia, es posible que algún hardware gráfico de Direct3D 9 no dibuje nada. En concreto, si el sombreador de vértices no usa ningún dato por instancia, llamar a <strong>DrawIndexedInstanced</strong> con 1 instancia no equivale a llamar <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-draw"><strong>a Draw</strong></a>.</blockquote><br /> | 
+
 
 
 
@@ -587,37 +338,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -627,29 +356,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -659,37 +372,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -699,37 +390,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -739,37 +408,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -779,37 +426,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -819,37 +444,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -859,29 +462,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -891,29 +478,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -923,29 +494,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -955,29 +510,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -987,37 +526,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1027,37 +544,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1067,37 +562,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1107,37 +580,15 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="5">No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.* o 10.* .${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
+| D3D_FEATURE_LEVEL_10_0 | 
+| D3D_FEATURE_LEVEL_10_1 | 
 
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_10_0</td>
-
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_10_1</td>
-
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1147,29 +598,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td>El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br/> Solo permite búferes de índice con DXGI_FORMAT_R16_UINT formato. <br/></td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
-<td rowspan="2"> El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br/> Permite búferes de índice con los DXGI_FORMAT_R16_UINT y DXGI_FORMAT_R32_UINT como D3D_FEATURE_LEVEL_10_0 y superiores. <br/> ${REMOVE}$<br />
-</td>
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
 
-</tr>
-</tbody>
-</table>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br /> Solo permite búferes de índice con DXGI_FORMAT_R16_UINT formato. <br /> | 
+| D3D_FEATURE_LEVEL_9_2 |  El formato puede ser diferente del especificado en la creación del búfer, pero se incurrirá en una traducción costosa.<br /> Permite búferes de índice con los DXGI_FORMAT_R16_UINT y DXGI_FORMAT_R32_UINT como D3D_FEATURE_LEVEL_10_0 y superiores. <br /> ${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_3 | 
+
 
 
 
@@ -1179,29 +614,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Las topologías primitivas con adyacencia no se admiten${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Las topologías primitivas con adyacencia no se admiten${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1211,29 +630,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">SampleMask no puede ser cero${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | SampleMask no puede ser cero${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1243,29 +646,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">Solo se admite un destino de representación${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
-<td>Solo se admiten cuatro destinos de representación y todos los recursos enlazados deben tener la misma profundidad de bits.</td>
-</tr>
-</tbody>
-</table>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Solo se admite un destino de representación${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | Solo se admiten cuatro destinos de representación y todos los recursos enlazados deben tener la misma profundidad de bits. | 
+
 
 
 
@@ -1275,29 +662,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1307,29 +678,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Vea el nivel de característica 10.0, pero el número total de constantes usadas por el sombreador no puede superar los 32${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Vea el nivel de característica 10.0, pero el número total de constantes usadas por el sombreador no puede superar los 32${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1339,29 +694,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se pueden enlazar más de 16 muestreadores${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se pueden enlazar más de 16 muestreadores${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1371,29 +710,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">Solo ps_4_0_level_9_1${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
-<td>Solo ps_4_0_level_9_3 o ps_4_0_level_9_1</td>
-</tr>
-</tbody>
-</table>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Solo ps_4_0_level_9_1${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | Solo ps_4_0_level_9_3 o ps_4_0_level_9_1 | 
+
 
 
 
@@ -1403,29 +726,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No más de 8 recursos de sombreador enlazados simultáneamente${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No más de 8 recursos de sombreador enlazados simultáneamente${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1435,29 +742,13 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Solo está disponible ${REMOVE}$ la rect de ánima cero.<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Solo está disponible el rect zeroth- desenlazamiento${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1467,35 +758,19 @@ Al llamar al método <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11deviceco
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Solo la ventanilla de cero está disponible${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Solo la ventanilla de cero está disponible${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
  
 
-Aunque especifique valores float para los miembros de la estructura [**\_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) para la matriz *pViewports* en una llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) para los niveles de característica [9](overviews-direct3d-11-devices-downlevel-intro.md) \_ x, **RSSetViewports** usa DWORD internamente. Debido a este comportamiento, cuando se usa una esquina superior izquierda negativa para la ventanilla, se produce un error en la llamada a **RSSetViewports** para los niveles de característica 9 \_ x. Este error se produce porque **RSSetViewports** para 9 x convierte los valores de punto flotante en enteros sin signo sin validación, lo que produce un \_ desbordamiento de enteros.
+Aunque especifique valores float para los miembros de la estructura [**\_ VIEWPORT D3D11**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_viewport) para la matriz *pViewports* en una llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) para los niveles de característica [9](overviews-direct3d-11-devices-downlevel-intro.md) \_ x, **RSSetViewports** usa DWORD internamente. Debido a este comportamiento, cuando se usa una esquina superior izquierda negativa para la ventanilla, se produce un error en la llamada a **RSSetViewports** para los niveles de característica 9 \_ x. Este error se produce porque **RSSetViewports** para 9 x convierte los valores de punto flotante en enteros sin signo sin validación, lo que produce un desbordamiento \_ de enteros.
 
 La llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetviewports) para los niveles de características [10](overviews-direct3d-11-devices-downlevel-intro.md) x y 11 x funciona como se espera incluso cuando se usa una esquina superior izquierda negativa para la \_ \_ ventanilla.
 
@@ -1503,29 +778,13 @@ La llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D1
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1535,29 +794,13 @@ La llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D1
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1567,29 +810,13 @@ La llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D1
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">Vea el nivel de característica 10.0, pero el número total de constantes usadas por el sombreador no puede superar los 255${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Vea el nivel de característica 10.0, pero el número total de constantes usadas por el sombreador no puede superar los 255${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1599,29 +826,13 @@ La llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D1
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 
@@ -1631,29 +842,13 @@ La llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D1
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="2">Solo vs_4_0_level_9_1${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
-<td>Solo vs_4_0_level_9_3 o vs_4_0_level_9_1</td>
-</tr>
-</tbody>
-</table>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | Solo vs_4_0_level_9_1${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | Solo vs_4_0_level_9_3 o vs_4_0_level_9_1 | 
+
 
 
 
@@ -1663,29 +858,13 @@ La llamada a [**ID3D11DeviceContext::RSSetViewports**](/windows/desktop/api/D3D1
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th>Nivel de característica</th>
-<th>Diferencias de comportamiento</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_1</td>
-<td rowspan="3">No se admite en ningún nivel de característica 9.*.${REMOVE}$<br />
-</td>
-</tr>
-<tr class="even">
-<td>D3D_FEATURE_LEVEL_9_2</td>
 
-</tr>
-<tr class="odd">
-<td>D3D_FEATURE_LEVEL_9_3</td>
+| Nivel de característica | Diferencias de comportamiento | 
+|---------------|----------------------|
+| D3D_FEATURE_LEVEL_9_1 | No se admite en ningún nivel de característica 9.*.${REMOVE}$<br /> | 
+| D3D_FEATURE_LEVEL_9_2 | 
+| D3D_FEATURE_LEVEL_9_3 | 
 
-</tr>
-</tbody>
-</table>
 
 
 

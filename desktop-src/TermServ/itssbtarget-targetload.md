@@ -4,7 +4,7 @@ description: Recupera la carga relativa en un destino.
 ms.assetid: 56618dcf-1319-4310-80ba-7ed71b8b02e8
 ms.tgt_platform: multiple
 keywords:
-- Propiedades TargetLoad Servicios de Escritorio remoto
+- Propiedad TargetLoad Servicios de Escritorio remoto
 - Propiedad TargetLoad Servicios de Escritorio remoto , interfaz ITsSbTarget
 - Interfaz ITsSbTarget Servicios de Escritorio remoto , propiedad TargetLoad
 - Propiedad TargetLoad Servicios de Escritorio remoto , interfaz ITsSbTargetEx
@@ -22,12 +22,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c367e9c00caff78bb3e64263c1622de45fa6e640e78d88239e1ed25a6f68558
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec8224106fad6031a18bf061020a259813db639e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989865"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983928"
 ---
 # <a name="itssbtargettargetload-property"></a>Propiedad ITsSbTarget::TargetLoad
 
@@ -50,9 +50,9 @@ HRESULT get_TargetLoad(
 
 Número que representa la carga relativa en un destino.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El peso de una sesión pendiente con respecto a una sesión activa se puede cambiar estableciendo el valor del parámetro *\_ LB ConnectionEstablishmentPenalty* para el Agente de conexión. Este parámetro se encuentra en la clave del Registro **HKLM \\ System \\ CurrentControlSet \\ Services \\ Tssdis \\ Parameters.** El valor predeterminado de 1 especifica que las sesiones pendientes tienen el mismo peso que las sesiones activas.
+El peso de una sesión pendiente en relación con una sesión activa se puede cambiar estableciendo el valor del parámetro *\_ Lb ConnectionEstablishmentPenalty* para el Agente de conexión. Este parámetro se encuentra en la clave del Registro **HKLM \\ System \\ CurrentControlSet \\ Services \\ Tssdis \\ Parameters.** El valor predeterminado de 1 especifica que las sesiones pendientes tienen el mismo peso que las sesiones activas.
 
 Esta propiedad está disponible en Windows Server 2012 R2 con [KB3091411](https://support.microsoft.com/kb/3091411) instalado en la [**interfaz ITsSbTargetEx.**](itssbtargetex.md)
 
@@ -60,38 +60,18 @@ Esta propiedad está disponible en Windows Server 2012 R2 con [KB3091411](https:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Cliente mínimo compatible<br/></td>
-<td>No se admite ninguno<br/></td>
-</tr>
-<tr class="even">
-<td>Servidor mínimo compatible<br/></td>
-<td>Windows Server 2016<br/></td>
-</tr>
-<tr class="odd">
-<td>Idl<br/></td>
-<td><dl> <dt>Sbtsv.idl</dt> </dl></td>
-</tr>
-<tr class="even">
-<td>IID<br/></td>
-<td>IID_ITsSbTarget se define como:
-<ul>
-<li>16616ECC-272D-411D-B324-126893033856</li>
-<li>e85e10ea-db0b-4752-b456-5fd5840901c0 en Windows Server 2008 R2</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Requisito | Value |
+|--------|-------|
+| Cliente mínimo compatible<br /> | No se admite ninguno<br /> | 
+| Servidor mínimo compatible<br /> | Windows Server 2016<br /> | 
+| IDL<br /> | <dl><dt>Sbtsv.idl</dt></dl> | 
+| IID<br /> | IID_ITsSbTarget se define como:<ul><li>16616ECC-272D-411D-B324-126893033856</li><li>e85e10ea-db0b-4752-b456-5fd5840901c0 en Windows Server 2008 R2</li></ul> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Elemento argument
+title: elemento argument
 description: El elemento argument contiene una parte de una cadena de condición.
 ms.assetid: 7e4744ce-e9e2-4a70-a2cc-d33ae1ad2f99
 keywords:
-- Elemento argument de Windows Media Player
+- elemento argument Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1c4adc0b853054d448bc9955f3bd8c64115ac2ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f5a689b74bd18138361d9377358ddee5cf5979f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699801"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630196"
 ---
-# <a name="argument-element"></a>Elemento argument
+# <a name="argument-element"></a>elemento argument
 
-El elemento **argument** contiene una parte de una cadena de condición. Normalmente, una cadena de condición tiene una parte de condición y una parte de valor. Por ejemplo, en la cadena de condición "artista Equals Joe", la parte de la condición es "Equals" y la parte del valor es "Joe".
+El **elemento** argument contiene una parte de una cadena de condición. Normalmente, una cadena de condición tiene una parte de condición y una parte de valor. Por ejemplo, en la cadena de condición "Artist Equals Joe", la parte de la condición es "Equals" y la parte del valor es "Joe".
 
 ``` syntax
 <argument
@@ -35,7 +35,7 @@ El elemento **argument** contiene una parte de una cadena de condición. Normalm
 
 ## <a name="attributes"></a>Atributos
 
-**nombre** (obligatorio)
+**name** (obligatorio)
 
 Nombre de una parte de la cadena de condición.
 
@@ -45,7 +45,7 @@ Nombre de una parte de la cadena de condición.
 
 | Hierarchy | Elementos                         |
 |-----------|----------------------------------|
-| Parent    | [Fragment](fragment-element.md) |
+| Parent    | [Fragmento](fragment-element.md) |
 | Elemento secundario     | None                             |
 
 
@@ -54,14 +54,14 @@ Nombre de una parte de la cadena de condición.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando el atributo **Name** de un elemento **Fragment** es una característica de elemento multimedia como el intérprete del álbum, o el género, el elemento **Fragment** debe contener dos elementos **argument** : uno que especifique una condición y otro que especifique un valor. En la tabla siguiente se muestran dos valores posibles para el atributo **Name** y cómo se usan los elementos **argument** para especificar condiciones y valores.
+Cuando el atributo  **name** de un elemento de fragmento es una  característica de elemento  multimedia como Album Artist o Genre, el elemento fragment debe contener dos elementos de argumento: uno que especifica una condición y otro que especifica un valor. En la tabla siguiente se muestran dos valores posibles para el atributo **name** y **cómo** se usan los elementos de argumento para especificar condiciones y valores.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -72,11 +72,11 @@ Cuando el atributo **Name** de un elemento **Fragment** es una característica d
 <tbody>
 <tr class="odd">
 <td>Condición</td>
-<td>El contenido del elemento <strong>argument</strong> es la parte de la condición de una cadena de condición. Por ejemplo, en el intérprete de la cadena de condición es &quot; igual a Joe &quot; , la parte de la condición es &quot; igual a &quot; . La parte de la condición de una cadena de condición debe ser uno de los siguientes: es igual a, no es igual a, contiene, no contiene, es menor que, es mayor que, es, no es, es anterior, es posterior a, es más reciente que, más abajo, ascendente, descendente, aleatorio, es al menos, no es más que.</td>
+<td>El contenido del elemento <strong>de argumento</strong> es la parte de condición de una cadena de condición. Por ejemplo, en la cadena de condición &quot; Artist Equals Joe &quot; , la parte de la condición es Igual a &quot; &quot; . La parte de condición de una cadena de condición debe ser una de las siguientes: equals, does not equal, contains, does not contain, is less than, is, is, is not, is before, is later than, is more recent than, above, below, ascending, descending, random, is at least, is no more than.</td>
 </tr>
 <tr class="even">
 <td>Value</td>
-<td>El contenido del elemento <strong>argument</strong> es la parte del valor de una cadena de condición. Por ejemplo, en el intérprete de la cadena de condición es &quot; igual a Joe &quot; , la parte del valor es &quot; Joe &quot; . Ejemplo<br/>
+<td>El contenido del elemento <strong>de argumento</strong> es la parte de valor de una cadena de condición. Por ejemplo, en la cadena de condición &quot; Artist Equals Joe &quot; , la parte del valor es Joe &quot; &quot; . Ejemplo:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Artist&quot;>
   <argument name = &quot;Condition&quot;>Equals</argument>
   <argument name = &quot;Value&quot;>Joe</argument>
@@ -89,14 +89,14 @@ Cuando el atributo **Name** de un elemento **Fragment** es una característica d
 
  
 
-Cuando el atributo **Name** de un elemento **Fragment** es "Limit total size to" o "Limit total Duration to", el elemento **Fragment** debe contener dos elementos **argument** : uno que especifique un formato y otro que especifique un número. En la tabla siguiente se muestran dos valores posibles para el atributo **Name** y cómo se usan los elementos **argument** para limitar el tamaño o la duración de una lista de reproducción.
+Cuando el atributo  **name** de un elemento de fragmento es "Limit Total  Size To"  o "Limit Total Duration To", el elemento fragment debe contener dos elementos de argumento: uno que especifica un formato y otro que especifica un número. En la tabla siguiente se muestran dos  valores posibles para el atributo **name** y cómo se usan los elementos de argumento para limitar el tamaño o la duración de una lista de reproducción.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -107,11 +107,11 @@ Cuando el atributo **Name** de un elemento **Fragment** es "Limit total size to"
 <tbody>
 <tr class="odd">
 <td>Formato</td>
-<td>Cuando el atributo <strong>Name</strong> del elemento <strong>Fragment</strong> tiene el &quot; límite de tamaño total en &quot; , el contenido del elemento <strong>argument</strong> debe ser uno de los siguientes: kilobytes, megabytes o gigabytes. cuando el atributo <strong>Name</strong> del elemento <strong>Fragment</strong> es &quot; Limit total Duration to &quot; , el contenido del elemento <strong>argument</strong> debe ser uno de los siguientes: segundos, minutos, horas o días.<br/></td>
+<td>Cuando el atributo <strong></strong> <strong>name</strong> del elemento fragment es Limit Total Size To , el contenido del elemento argument debe ser uno de los &quot; &quot; siguientes: Kilobytes, Megabytes o Gigabytes. <strong></strong> <strong></strong> <strong></strong> Cuando el atributo name del elemento de fragmento es Limit Total Duration To , el contenido del elemento de argumento debe ser uno de los &quot; &quot; siguientes: Segundos, Minutos, Horas o Días. <strong></strong><br/></td>
 </tr>
 <tr class="even">
 <td>Number</td>
-<td>El contenido del elemento <strong>argument</strong> es un número que limita el tamaño o la duración de la lista de reproducción. Example<br/>
+<td>El contenido del elemento <strong>argument</strong> es un número que limita el tamaño o la duración de la lista de reproducción. Ejemplos:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Total Size To&quot;>
   <argument name = &quot;Format&quot;>Megabytes</argument>
   <argument name = &quot;Number&quot;>5</argument>
@@ -129,14 +129,14 @@ Cuando el atributo **Name** de un elemento **Fragment** es "Limit total size to"
 
  
 
-Cuando el atributo **Name** de un elemento **Fragment** es "Limit Number of items", el elemento **Fragment** debe contener un elemento **argument** que especifique el número de elementos. En la tabla siguiente se muestra cómo utilizar el valor numérico del atributo **Name** .
+Cuando el atributo **name** de un elemento **de** fragmento es "Limit  Number of Items", el elemento **fragment** debe contener un elemento de argumento que especifique el número de elementos. En la tabla siguiente se muestra cómo usar el valor Number del **atributo name.**
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -147,7 +147,7 @@ Cuando el atributo **Name** de un elemento **Fragment** es "Limit Number of item
 <tbody>
 <tr class="odd">
 <td>Number</td>
-<td>El contenido del elemento <strong>argument</strong> es un número que limita el número de elementos de una lista de reproducción. Ejemplo<br/>
+<td>El contenido del elemento <strong>argument</strong> es un número que limita el número de elementos de una lista de reproducción. Ejemplo:<br/>
 <pre data-space="preserve"><code><fragment name = &quot;Limit Number of Items&quot;>
   <argument name = &quot;Number&quot;>15</argument>
 </fragment></code></pre></td>
@@ -165,7 +165,7 @@ Cuando el atributo **Name** de un elemento **Fragment** es "Limit Number of item
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 
 
 
@@ -173,10 +173,10 @@ Cuando el atributo **Name** de un elemento **Fragment** es "Limit Number of item
 
 <dl> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**elemento fragment**](fragment-element.md)
 </dt> <dt>
 
-[**Referencia de elementos de lista de reproducción de Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referencia de elementos de lista de reproducción multimedia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

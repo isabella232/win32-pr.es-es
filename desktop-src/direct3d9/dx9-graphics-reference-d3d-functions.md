@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información de referencia para las funciones que se deben usar al trabajar con Direct3D.
+description: Esta sección contiene información de referencia para las funciones que debe usar al trabajar con Direct3D.
 ms.assetid: 258a76f2-2dd6-49cb-bf8c-f437792bba27
 title: Funciones de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c1f3165c757641d83cba4bfdfc350eceac81b4a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cf59e31adc5d9b4e14f038450ece6e48fcdd0b57
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997891"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475581"
 ---
 # <a name="direct3d-functions"></a>Funciones de Direct3D
 
-Esta sección contiene información de referencia para las funciones que se deben usar al trabajar con Direct3D. Se implementan las siguientes funciones:
+Esta sección contiene información de referencia para las funciones que debe usar al trabajar con Direct3D. Se implementan las siguientes funciones:
 
 - [**D3DPERF_BeginEvent**](./d3d9/nf-d3d9-d3dperf_beginevent.md)
 - [**D3DPERF_EndEvent**](./d3d9/nf-d3d9-d3dperf_endevent.md)
@@ -25,19 +25,9 @@ Esta sección contiene información de referencia para las funciones que se debe
 - [**DebugSetMute**](debugsetmute.md)
 - [**Direct3DCreate9**](/windows/win32/api/d3d9/nf-d3d9-direct3dcreate9)
 
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td>Diferencias entre Direct3D 9 y Direct3D 9Ex:<br/> Esta función solo está disponible en Direct3D 9Ex.<br/>
-    <ul>
-    <li><a href="/windows/desktop/api/D3D9/nf-d3d9-direct3dcreate9ex"><strong>Direct3DCreate9Ex</strong></a></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    
+| | | Diferencias entre Direct3D 9 y Direct3D 9Ex:<br /> Esta función solo está disponible en Direct3D 9Ex.<br /><ul><li><a href="/windows/desktop/api/D3D9/nf-d3d9-direct3dcreate9ex"><strong>Direct3DCreate9Ex</strong></a></li></ul> | 
+
 
 - [**Direct3DShaderValidatorCreate9**](direct3dshadervalidatorcreate9.md)
 

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b99f5aa60f90a753a9c5d095e7a63417485b1fd
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c187d57149b7f0589d56439bfacbf7129ab4fe4a
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469842"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987838"
 ---
 # <a name="jet_recsize2-structure"></a>JET_RECSIZE2 estructura
 
@@ -29,9 +29,9 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_recsize2-structure"></a>JET_RECSIZE2 estructura
 
-[JetGetRecordSize2](./jetgetrecordsize2-function.md) usa la estructura de JET_RECSIZE2 para devolver información sobre los requisitos de uso de un registro en el espacio de datos del usuario, el número de columnas establecidas, el número de valores y el espacio de sobrecarga de la estructura de registros ESE. 
+[JetGetRecordSize2](./jetgetrecordsize2-function.md) usa la estructura JET_RECSIZE2 para devolver información sobre los requisitos de uso de un registro en el espacio de datos del usuario, el número de columnas establecidas, el número de valores y el espacio de sobrecarga de la estructura de registro ese. 
 
-**Windows 7:** La **JET_RECSIZE2** se introduce en el sistema operativo Windows 7.
+**Windows 7:** La **JET_RECSIZE2** estructura se introduce en el sistema operativo Windows 7.
 
 ```cpp
     typedef struct {
@@ -61,7 +61,7 @@ Conjunto de datos de usuario en el registro.
 
 Datos de usuario asociados al registro pero almacenados en el árbol de valores largos.
 
-**Nota**  Esto no cuenta valores long intrínsecos.
+**Nota**  Esto no cuenta los valores long intrínsecos.
 
 **cbOverhead**
 
@@ -71,7 +71,7 @@ Sobrecarga de la estructura de registros ese para este registro. Esto incluye el
 
 Sobrecarga de los datos de valor largo.
 
-**Nota**  Esto no cuenta valores long intrínsecos.
+**Nota**  Esto no cuenta los valores long intrínsecos.
 
 **cNonTaggedColumns**
 
@@ -83,9 +83,9 @@ Número total de columnas etiquetadas establecidas en este registro.
 
 **cLongValues**
 
-Número total de valores largos almacenados en el árbol de valores largos para este registro.
+Número total de valores long almacenados en el árbol de valores largos para este registro.
 
-**Nota**  Esto no cuenta valores long intrínsecos.
+**Nota**  Esto no cuenta los valores long intrínsecos.
 
 **cMultiValues**
 
@@ -101,18 +101,22 @@ Tamaño comprimido de los datos de usuario de este registro. Esto es lo mismo qu
 
 **cbLongValueDataCompressed**
 
-Tamaño comprimido de los datos de usuario en el árbol de valores largos. Esto es lo mismo que los datos cbLongValue si no se comprime ningún valor long separado.
+Tamaño comprimido de los datos de usuario en el árbol de valor largo. Esto es lo mismo que los datos cbLongValue si no se comprime ningún valor long separado.
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
 El número total de valores del registro sería **cMultiValues**  +  **cNonTaggedColumns**  +  **cTaggedColumns**.
 
-Los datos lógicos del registro son (cbData+cbLongValueData) y el tamaño físico de los datos es (cbDataCompressed+cbLongValueDataCompressed). Se puede usar para calcular la relación de compresión de los datos almacenados.
+Los datos lógicos del registro son (cbData+cbLongValueData) y el tamaño físico de los datos es (cbDataCompressed+cbLongValueDataCompressed). Se puede usar para calcular la proporción de compresión de los datos almacenados.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows sistema operativo Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows sistema operativo Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows sistema operativo Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows sistema operativo Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 
