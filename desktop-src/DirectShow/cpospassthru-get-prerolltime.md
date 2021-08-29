@@ -1,7 +1,7 @@
 ---
-description: 'El \_ método get PrerollTime recupera la cantidad de datos que se pondrán en cola antes de la posición de inicio. Este método implementa el método IMediaPosition:: get \_ PrerollTime.'
+description: El método \_ get PrerollTime recupera la cantidad de datos que se pondrán en cola antes de la posición inicial. Este método implementa el método IMediaPosition::get \_ PrerollTime.
 ms.assetid: 37c12798-eb0d-4859-8b2e-52d6ae147863
-title: Método CPosPassThru.get_PrerollTime (Ctlutil. h)
+title: CPosPassThru.get_PrerollTime método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 55cb2cc37a18c9ea00b4eb7115590f472b8d467e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e8323849ddc8f6c4777df1d5a73c84c4c99f51c60b6c76cc81631f0869ed629b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073559"
 ---
-# <a name="cpospassthruget_prerolltime-method"></a>CPosPassThru. Get \_ PrerollTime (método)
+# <a name="cpospassthruget_prerolltime-method"></a>Método PrerollTime de CPosPassThru.get \_
 
-El `get_PrerollTime` método recupera la cantidad de datos que se pondrán en cola antes de la posición de inicio. Este método implementa el método [**IMediaPosition:: get \_ PrerollTime**](/windows/desktop/api/Control/nf-control-imediaposition-get_prerolltime) .
+El `get_PrerollTime` método recupera la cantidad de datos que se pondrán en cola antes de la posición inicial. Este método implementa el [**método IMediaPosition::get \_ PrerollTime.**](/windows/desktop/api/Control/nf-control-imediaposition-get_prerolltime)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT get_PrerollTime(
 *pllTime* 
 </dt> <dd>
 
-Puntero a una variable que recibe el tiempo de prelanzamiento, en segundos.
+Puntero a una variable que recibe el tiempo de inscripción previa, en segundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor **HRESULT** del PIN conectado.
+Devuelve el **valor HRESULT** del pin conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el valor **HRESULT** del PIN conectado.
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

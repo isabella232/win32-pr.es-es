@@ -1,11 +1,11 @@
 ---
-title: Text-Country atributo)
+title: Text-Country atributo
 description: El país o la región donde se encuentra el usuario.
 ms.assetid: 6024de35-9ab5-4e03-97dc-0ebf830e5754
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Text-Country
-- atributo de co-esquema de AD
+- Text-Country esquema de AD de atributo
+- Esquema de AD de atributo co
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f208ffe60e968632b6f90b534a5240c85f819587
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cff52e2b23579fc0cf0ae6b53abd8920cc056aaff1c45a5a126122c89451f83e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103805107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081919"
 ---
-# <a name="text-country-attribute"></a>Text-Country atributo)
+# <a name="text-country-attribute"></a>Text-Country atributo
 
 El país o la región donde se encuentra el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Text-Country                                |
-| Nombre para mostrar de LDAP | co                                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | co                                          |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.131                      |
-| System-ID-GUID    | f0f8ffa7-1191-11d0-a060-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f0f8ffa7-1191-11d0-a060-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ El país o la región donde se encuentra el usuario.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ El país o la región donde se encuentra el usuario.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                        |
+| Id. de vínculo                | \-                                                                                                                                                                        |
 | MAPI-Id                | 0x3A26                                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                                     |
-| Tiene un único valor       | True                                                                                                                                                                      |
-| Está indexado             | False                                                                                                                                                                     |
-| En el catálogo global      | False                                                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                              |
+| System-Only            | Falso                                                                                                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                                                                                                      |
+| Está indexado             | Falso                                                                                                                                                                     |
+| En el catálogo global      | Falso                                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                              |
 | Range-Lower            | 1                                                                                                                                                                         |
 | Range-Upper            | 128                                                                                                                                                                       |
 | Search-Flags           | 0x00000010                                                                                                                                                                |
@@ -77,13 +77,13 @@ El país o la región donde se encuentra el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                |
 | MAPI-Id                | 0x3A26                                                                                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                                                                                                                 |
 | Range-Upper            | 128                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                        |
@@ -92,19 +92,19 @@ El país o la región donde se encuentra el usuario.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                     |
+| Id. de vínculo                | \-                                                                                                     |
 | MAPI-Id                | 0x3A26                                                                                                 |
-| System-Only            | False                                                                                                  |
-| Tiene un único valor       | True                                                                                                   |
-| Está indexado             | False                                                                                                  |
-| En el catálogo global      | False                                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                           |
+| System-Only            | Falso                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                   |
+| Está indexado             | Falso                                                                                                  |
+| En el catálogo global      | Falso                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                           |
 | Range-Lower            | 1                                                                                                      |
 | Range-Upper            | 128                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                             |
@@ -117,15 +117,15 @@ El país o la región donde se encuentra el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                |
 | MAPI-Id                | 0x3A26                                                                                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                                                                                                                 |
 | Range-Upper            | 128                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                        |
@@ -140,13 +140,13 @@ El país o la región donde se encuentra el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                |
 | MAPI-Id                | 0x3A26                                                                                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                                                                                                                 |
 | Range-Upper            | 128                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                        |
@@ -161,13 +161,13 @@ El país o la región donde se encuentra el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                |
 | MAPI-Id                | 0x3A26                                                                                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                                                                                                                 |
 | Range-Upper            | 128                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                        |
@@ -180,15 +180,15 @@ El país o la región donde se encuentra el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                |
 | MAPI-Id                | 0x3A26                                                                                                                                                                                                                            |
-| System-Only            | False                                                                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                                                                                                                 |
 | Range-Upper            | 128                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000010                                                                                                                                                                                                                        |
