@@ -1,38 +1,38 @@
 ---
-description: Escritura de un archivo de Windows Media en DES
+description: Escribir un archivo Windows multimedia en DES
 ms.assetid: 741ebcbc-62fb-4c7f-845f-a361f5b63f8c
-title: Escritura de un archivo de Windows Media en DES
+title: Escribir un archivo Windows multimedia en DES
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0626a3ef609dee87d90a6d3c2caa023e9ac9a29a
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: d05b954ae6046bb61027bd3e7f63bcd2fcaafa35020bc0a8a1bed278b99731ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105689668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650495"
 ---
-# <a name="writing-a-windows-media-file-in-des"></a>Escritura de un archivo de Windows Media en DES
+# <a name="writing-a-windows-media-file-in-des"></a>Escribir un archivo Windows multimedia en DES
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En esta sección se describe cómo escribir un archivo de Windows Media mediante los [servicios de edición de DirectShow](directshow-editing-services.md) (des).
+En esta sección se describe cómo escribir un archivo Windows multimedia mediante [DirectShow Editing Services](directshow-editing-services.md) (DES).
 
 > [!IMPORTANT]
-> No utilice el motor de representación inteligente para escribir archivos de Windows Media. Use siempre el motor de representación básico (CLSID \_ RenderEngine).
+> No use el motor de representación inteligente para escribir Windows archivos multimedia. Use siempre el motor de representación básico (CLSID \_ RenderEngine).
 
  
 
-Para escribir un archivo de Windows Media, haga lo siguiente:
+Para escribir un Windows multimedia, haga lo siguiente:
 
-1.  Llame a **SetSite** en el motor de representación con un puntero al proveedor de claves.
-2.  Cree el front-end del gráfico. (Vea [representar un proyecto](rendering-a-project.md)).
-3.  Cree el filtro del [escritor ASF de WM](wm-asf-writer-filter.md) y agréguelo al gráfico.
-4.  Use la interfaz [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) en el filtro de escritor ASF de WM para establecer el nombre de archivo.
-5.  Configure el escritor ASF de WM para que use un perfil de Windows Media. Cada perfil tiene un número predefinido de secuencias. Debe elegir un perfil que coincida con los grupos del proyecto.
+1.  Llame **a SetSite** en el motor de representación, con un puntero al proveedor de claves.
+2.  Cree el front-end del gráfico. (Vea [Representación de un Project](rendering-a-project.md)).
+3.  Cree el [filtro WM ASF Writer](wm-asf-writer-filter.md) y agrégrélo al gráfico.
+4.  Use la [**interfaz IFileSinkFilter en**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) el filtro WM ASF Writer para establecer el nombre de archivo.
+5.  Configure WM ASF Writer para usar un perfil Windows media. Cada perfil tiene un número predefinido de secuencias. Debe elegir un perfil que coincida con los grupos del proyecto.
 
-    La interfaz [**IConfigAsfWriter**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iconfigasfwriter) contiene algunos métodos diferentes para configurar el perfil. Por ejemplo, el método **ConfigureFilterUsingProfileGuid** especifica un perfil de sistema como un GUID. O bien, puede usar los métodos de formato de Windows Media para obtener un puntero **IWMProfile** y, a continuación, llamar a [**IConfigAsfWriter:: ConfigureFilterUsingProfile**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iconfigasfwriter-configurefilterusingprofile). Para obtener más información, consulte [configuración del escritor ASF](configuring-the-asf-writer.md).
+    La [**interfaz IConfigAsfWriter**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iconfigasfwriter) contiene algunos métodos diferentes para establecer el perfil. Por ejemplo, el **método ConfigureFilterUsingProfileGuid** especifica un perfil de sistema como GUID. O bien, puede usar Windows media format para obtener un puntero **IWMProfile** y, a continuación, llamar a [**IConfigAsfWriter::ConfigureFilterUsingProfile**](/previous-versions/windows/desktop/api/Dshowasf/nf-dshowasf-iconfigasfwriter-configurefilterusingprofile). Para obtener más información, [vea Configuring the ASF Writer](configuring-the-asf-writer.md).
 
-6.  Conecte el front-end al escritor ASF. El front-end del gráfico contiene un PIN de salida para cada grupo. Suponiendo que haya especificado un perfil compatible, el escritor ASF debe tener un conjunto coincidente de clavijas de entrada. Conecte cada pin de salida al pin de entrada correspondiente. La forma más fácil de hacerlo es usar el método [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) . En primer lugar, cree una nueva instancia del [generador de gráficos de captura](capture-graph-builder.md) e inicialícela con un puntero al administrador de gráficos de filtro:
+6.  Conectar el front-end a ASF Writer. El front-end del gráfico contiene un pin de salida para cada grupo. Suponiendo que especificó un perfil compatible, ASF Writer debe tener un conjunto de pines de entrada correspondientes. Conectar cada pin de salida al pin de entrada correspondiente. La manera más fácil de hacerlo es usar el [**método ICaptureGraphBuilder2::RenderStream.**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) En primer lugar, cree una nueva instancia de [Capture Graph Builder](capture-graph-builder.md) e inicialíctela con un puntero al Administrador de Graph filtros:
 
     ```C++
     ICaptureGraphBuilder2 *pBuild = 0;
@@ -43,7 +43,7 @@ Para escribir un archivo de Windows Media, haga lo siguiente:
 
     
 
-    A continuación, recupere el PIN de salida para cada grupo mediante una llamada al método [**IRenderEngine:: GetGroupOutputPin**](irenderengine-getgroupoutputpin.md) . Llame a **RenderStream** para conectar el PIN al escritor ASF:
+    A continuación, recupere el pin de salida de cada grupo mediante una llamada [**al método IRenderEngine::GetGroupOutputPin.**](irenderengine-getgroupoutputpin.md) Llame **a RenderStream** para conectar el pin a ASF Writer:
 
     ```C++
     long cGroups = 0;
@@ -67,7 +67,7 @@ Para escribir un archivo de Windows Media, haga lo siguiente:
 
 <dl> <dt>
 
-[Usar Windows Media con los servicios de edición de DirectShow](using-windows-media-with-directshow-editing-services.md)
+[Uso de Windows multimedia con DirectShow Editing Services](using-windows-media-with-directshow-editing-services.md)
 </dt> </dl>
 
  

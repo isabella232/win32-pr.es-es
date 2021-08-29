@@ -1,7 +1,7 @@
 ---
-description: El \_ \_ tipo de enumeración SMS Message Types describe el tipo de contenido de un mensaje de servicio de mensajes cortos (SMS).
+description: El tipo \_ de enumeración SMS MESSAGE \_ TYPES describe el tipo de contenido de un mensaje de servicio de mensajes cortos (SMS).
 ms.assetid: 882886a6-ecce-443f-a7e9-2e4e367ad804
-title: Enumeración SMS_MESSAGE_TYPES (PortableDevice. h)
+title: SMS_MESSAGE_TYPES enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: a2e1ccfd074ff1f5287af22c5a8ebb3c6b3c661d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5b4ba0504f5407a49c04f84dd2ea3e152ee4de7bd78948a69046f257437eb75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006225"
 ---
-# <a name="sms_message_types-enumeration"></a>\_Enumeración de tipos de mensajes SMS \_
+# <a name="sms_message_types-enumeration"></a>Enumeración \_ SMS MESSAGE \_ TYPES
 
-El tipo de enumeración **SMS \_ Message \_** Types describe el tipo de contenido de un mensaje de servicio de mensajes cortos (SMS).
+El **tipo \_ de \_ enumeración SMS MESSAGE TYPES** describe el tipo de contenido de un mensaje de servicio de mensajes cortos (SMS).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -40,23 +40,23 @@ typedef enum SMS_MESSAGE_TYPES {
 
 <dl> <dt>
 
-<span id="SMS_TEXT_MESSAGE"></span><span id="sms_text_message"></span>**\_mensaje de texto SMS \_**
+<span id="SMS_TEXT_MESSAGE"></span><span id="sms_text_message"></span>**MENSAJE \_ DE TEXTO \_ SMS**
 </dt> <dd>
 
-Un mensaje de texto.
+Mensaje de texto.
 
 </dd> <dt>
 
-<span id="SMS_BINARY_MESSAGE"></span><span id="sms_binary_message"></span>**\_mensaje binario de SMS \_**
+<span id="SMS_BINARY_MESSAGE"></span><span id="sms_binary_message"></span>**MENSAJE \_ BINARIO \_ DE SMS**
 </dt> <dd>
 
-Un mensaje binario.
+Mensaje binario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración la usa el comando de [**envío de SMS de comandos de WPD \_ \_ \_**](wpd-command-sms-send-command.md).
+El comando SMS SEND de [**WPD \_ usa esta \_ \_ enumeración.**](wpd-command-sms-send-command.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Esta enumeración la usa el comando de [**envío de SMS de comandos de WPD \_ \_
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

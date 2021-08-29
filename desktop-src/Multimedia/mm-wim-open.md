@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MM_WIM_OPEN (mmsystem. h)
-description: El \_ mensaje de apertura Wim de mm \_ se envía a una ventana cuando se abre un dispositivo de entrada de audio de forma de onda.
+title: MM_WIM_OPEN mensaje (Mmsystem.h)
+description: El mensaje MM WIM OPEN se envía a una ventana cuando se abre un dispositivo de entrada de \_ audio de forma de \_ onda.
 ms.assetid: 4c646f58-c324-467e-871b-8fc36d5b89bc
 keywords:
-- Mensaje de MM_WIM_OPEN de Windows multimedia
+- MM_WIM_OPEN mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64ff028dcd9dc851d94699ef5cb75707429ba149
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4dc5271f4e2a49b762273b241133ea5c5826ebf1861ba9fe5eb4cf7832b164fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065445"
 ---
-# <a name="mm_wim_open-message"></a>\_ \_ Mensaje abierto mm Wim
+# <a name="mm_wim_open-message"></a>Mensaje \_ MM WIM \_ OPEN
 
-El mensaje de **\_ \_ apertura Wim de mm** se envía a una ventana cuando se abre un dispositivo de entrada de audio de forma de onda.
+El **mensaje \_ MM WIM \_ OPEN** se envía a una ventana cuando se abre un dispositivo de entrada de audio de forma de onda.
 
 
 ```C++
@@ -41,30 +41,30 @@ lParam = reserved
 <span id="hInputDev"></span><span id="hinputdev"></span><span id="HINPUTDEV"></span>*hInputDev*
 </dt> <dd>
 
-Identificador del dispositivo que se abrió.
+Controle el dispositivo que se abrió.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Este mensaje no devuelve ningún valor.
 
 <dl> <dt>
 
-[Audio de onda](waveform-audio.md)
+[Audio de forma de onda](waveform-audio.md)
 </dt> <dt>
 
-[Mensajes de onda](waveform-messages.md)
+[Mensajes de forma de onda](waveform-messages.md)
 </dt> </dl>
 
  

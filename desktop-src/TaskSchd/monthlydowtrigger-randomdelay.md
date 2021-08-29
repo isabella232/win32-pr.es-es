@@ -1,6 +1,6 @@
 ---
-title: Propiedad MonthlyDOWTrigger.RandomDelay
-description: Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | Propiedad MonthlyDOWTrigger.RandomDelay
+title: MonthlyDOWTrigger.RandomDelay, propiedad
+description: Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador. | MonthlyDOWTrigger.RandomDelay, propiedad
 ms.assetid: e5cb6c1d-8003-43f4-bf35-da490a6097f0
 keywords:
 - Propiedad RandomDelay Programador de tareas
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e781941e927547a4ea25935fb21299777c34b3ea
-ms.sourcegitcommit: b3a9abea47dea7374eac0f9a95a652ac6977fb2e
+ms.openlocfilehash: f40fd85ca528476d37861a93230e5074ba87f6a3258a140c2616aa98625d4b96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107734130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253835"
 ---
-# <a name="monthlydowtriggerrandomdelay-property"></a>Propiedad MonthlyDOWTrigger.RandomDelay
+# <a name="monthlydowtriggerrandomdelay-property"></a>MonthlyDOWTrigger.RandomDelay, propiedad
 
-Para el scripting, obtiene o establece una hora de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
+Para el scripting, obtiene o establece un tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencadenador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,16 +44,16 @@ Tiempo de retraso que se agrega aleatoriamente a la hora de inicio del desencade
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

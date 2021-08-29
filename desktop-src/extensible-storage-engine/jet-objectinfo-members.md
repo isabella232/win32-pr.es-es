@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_OBJECTINFO miembros'
-title: Miembros de JET_OBJECTINFO
+description: 'Más información sobre: JET_OBJECTINFO miembros'
+title: JET_OBJECTINFO miembros
 TOCTitle: JET_OBJECTINFO members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_OBJECTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectinfo_members(v=EXCHG.10)
 ms:contentKeyID: 55103760
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 4845860c0ea08f6dcdced3b7d6ab34660d2b73d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c826a38b7ce9c91501efecaa2d4d31005ad602e84713ab1e2be70e4f99e0a18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104559760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093775"
 ---
-# <a name="jet_objectinfo-members"></a>Miembros de JET_OBJECTINFO
+# <a name="jet_objectinfo-members"></a>JET_OBJECTINFO miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-La estructura de JET_OBJECTINFO contiene información sobre un objeto. Las tablas son los únicos tipos de objeto que se admiten actualmente.
+La JET_OBJECTINFO contiene información sobre un objeto . Las tablas son los únicos tipos de objeto que se admiten actualmente.
 
-El tipo de [JET_OBJECTINFO](./jet-objectinfo-class.md) expone los siguientes miembros.
+El [JET_OBJECTINFO](./jet-objectinfo-class.md) muestra los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -79,7 +79,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335205(v=exchg.10).md">objtyp</a></td>
-<td>Obtiene el JET_OBJTYP de la tabla. Actualmente solo se devolverán las tablas (es decir, <a href="hh565069(v=exchg.10).md">TABLE</a>).</td>
+<td>Obtiene el JET_OBJTYP de la tabla. Actualmente solo se devolverán tablas (es decir, <a href="hh565069(v=exchg.10).md">Tabla</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -105,7 +105,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -115,7 +115,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -126,7 +126,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335198(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn335219(v=exchg.10).md">JET_OBJECTINFO</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335219(v=exchg.10).md">JET_OBJECTINFO</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -134,10 +134,10 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_OBJECTINFO (clase)](./jet-objectinfo-class.md)
+[JET_OBJECTINFO clase](./jet-objectinfo-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

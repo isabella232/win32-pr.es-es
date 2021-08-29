@@ -1,11 +1,11 @@
 ---
-title: Método INapSystemHealthAgentBinding FlushCache (NapSystemHealthAgent. h)
+title: Método INapSystemHealthAgentBinding FlushCache (NapSystemHealthAgent.h)
 description: Un SHA llama a para vaciar su caché de SoH.
 ms.assetid: a771ce03-1922-4e2d-9490-7ee9f693857c
 keywords:
-- Método FlushCache NAP
-- Método FlushCache NAP, interfaz INapSystemHealthAgentBinding
-- Interfaz INapSystemHealthAgentBinding NAP, método FlushCache
+- Nap del método FlushCache
+- Método NAP de FlushCache, interfaz INapSystemHealthAgentBinding
+- INapSystemHealthAgentBinding interface NAP , FlushCache method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ead6e496d220619439b80fdc5c7601675fdb7ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5ca721f2176b5e600c4afc7d71cd23d0507083d3c112adb4cb36af3b8734da0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037765"
 ---
-# <a name="inapsystemhealthagentbindingflushcache-method"></a>INapSystemHealthAgentBinding:: FlushCache (método)
+# <a name="inapsystemhealthagentbindingflushcache-method"></a>INapSystemHealthAgentBinding::FlushCache (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-Un SHA llama al método **INapSystemHealthAgentBinding:: FlushCache** para vaciar su caché de SOH.
+Sha llama al método **INapSystemHealthAgentBinding::FlushCache** para vaciar su caché de SoH.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,20 +53,20 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                         | Descripción                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>               | Operación realizada correctamente.<br/>                                                                                                |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>               | Operación realizada correctamente.<br/>                                                                                                |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl>     | Error de permisos, acceso denegado.<br/>                                                                                   |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>      | Límite de recursos del sistema, no se pudo realizar la operación.<br/>                                                             |
-| <dl> <dt>**RPC \_ E \_ desconectado**</dt> </dl> | NapAgent se ha detenido. Este objeto se recuperará automáticamente y se volverá a enlazar a NapAgent, una vez que se reinicie.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>      | El límite de recursos del sistema no pudo realizar la operación.<br/>                                                             |
+| <dl> <dt>**RPC \_ E \_ DESCONECTADO**</dt> </dl> | NapAgent se ha detenido. Este objeto se recuperará automáticamente y se volverá a conectar a NapAgent, una vez que se reinicie.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-NapAgent mantiene una memoria caché de SOH recientes proporcionadas por diferentes Sha. Esta caché es útil para optimizar el rendimiento en tiempo de arranque, cuando se puede enlazar Sha o no al sistema.
+NapAgent mantiene una memoria caché de los SOH recientes proporcionados por diferentes SHA. Esta memoria caché es útil para optimizar el rendimiento en tiempo de arranque, cuando es posible que las SHA se puedan enlazar al sistema o no.
 
-SHA debe llamar a [**Initialize**](inapsystemhealthagentbinding-initialize-method.md) antes de llamar a este método o a cualquier otro método de la interfaz [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md) .
+Sha debe llamar a [**Initialize antes**](inapsystemhealthagentbinding-initialize-method.md) de llamar a este método o a cualquier otro método de la [**interfaz INapSystemHealthAgentBinding2.**](inapsystemhealthagentbinding2.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,10 +74,10 @@ SHA debe llamar a [**Initialize**](inapsystemhealthagentbinding-initialize-metho
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
+| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

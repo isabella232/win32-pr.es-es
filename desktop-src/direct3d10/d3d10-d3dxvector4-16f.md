@@ -1,7 +1,7 @@
 ---
 description: Igual que D3DXVECTOR4, pero usa valores de punto flotante de 16 bits para x, y y z.
 ms.assetid: 2db5fb3e-ffe0-4bcf-8894-a8bc7eefaf82
-title: D3DXVECTOR4_16F estructura (D3DX10Math. h)
+title: D3DXVECTOR4_16F estructura (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: d3d46e6bc5423260e550fd026ca52420b1c392ca
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 89543eed4b2b0a5f1f74752949617015e5d6b70a21fa8cfd5c3a8b3264cd7c43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753855"
 ---
-# <a name="d3dxvector4_16f-structure"></a>D3DXVECTOR4 \_ estructura 16F
+# <a name="d3dxvector4_16f-structure"></a>Estructura D3DXVECTOR4 \_ 16F
 
-Igual que [**D3DXVECTOR4**](d3d10-d3dxvector4.md), pero usa valores de punto flotante de 16 bits para x, y y z.
+Igual que [**D3DXVECTOR4,**](d3d10-d3dxvector4.md)pero usa valores de punto flotante de 16 bits para x, y y z.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ typedef struct D3DXVECTOR4_16F {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -56,7 +56,7 @@ Componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -64,10 +64,10 @@ Componente y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -78,19 +78,19 @@ Componente z.
 **w**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Componente w-.
+W-component.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 **D3DXVECTOR4 \_ 16F** tiene las siguientes extensiones de C++.
 
-### <a name="d3dxvector4_16f-extensions"></a>Extensiones de D3DXVECTOR4 \_ 16F
+### <a name="d3dxvector4_16f-extensions"></a>Extensiones D3DXVECTOR4 \_ 16F
 
 
 ```
@@ -127,7 +127,7 @@ public:
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
@@ -135,7 +135,7 @@ public:
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

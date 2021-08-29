@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLogSectorSizeMismatchException'
-title: Constructor de EsentLogSectorSizeMismatchException
+description: 'Más información sobre: Constructor EsentLogSectorSizeMismatchException'
+title: Constructor EsentLogSectorSizeMismatchException
 TOCTitle: 'EsentLogSectorSizeMismatchException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogSectorSizeMismatchException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlogsectorsizemismatchexception.esentlogsectorsizemismatchexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cf8dd61d9bd4e2ca8ff505477d95a7ed8c240b22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e70a3d44713d14254739d3f14861606b89396e63447c24a08e385e2804b47199
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040933"
 ---
-# <a name="esentlogsectorsizemismatchexception-constructor"></a>Constructor de EsentLogSectorSizeMismatchException
+# <a name="esentlogsectorsizemismatchexception-constructor"></a>Constructor EsentLogSectorSizeMismatchException
 
 Inicializa una nueva instancia de la clase EsentLogSectorSizeMismatchException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogSectorSizeMismatchException()
 public EsentLogSectorSizeMismatchException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLogSectorSizeMismatchException()
 
 [Miembros de EsentLogSectorSizeMismatchException](./esentlogsectorsizemismatchexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

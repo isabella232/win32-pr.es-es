@@ -5,22 +5,22 @@ ms.tgt_platform: multiple
 title: Consultar el estado de las características opcionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ecffe6ddbe9b860c6f49fe12d3fed500c169bef
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: a8a8cceccdfeec6f902a56e8903a1d41e504750e
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476711"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786691"
 ---
 # <a name="querying-the-status-of-optional-features"></a>Consultar el estado de las características opcionales
 
-En Windows 7, WMI implementó la [**clase \_ OptionalFeature de Win32.**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) Esta clase recupera el estado de las características opcionales que están presentes en un equipo.
+En Windows 7, WMI implementó la clase [**\_ OptionalFeature de Win32.**](/windows/desktop/CIMWin32Prov/win32-optionalfeature) Esta clase recupera el estado de las características opcionales que están presentes en un equipo.
 
-Puede usar Windows PowerShell cmdlets para consultar el estado de las características opcionales. Todos los ejemplos de este tema usan el cmdlet Get-WmiObject. Para obtener más información, [vea Get-WmiObject](/previous-versions//dd315295(v=technet.10)).
+Puede usar Windows PowerShell cmdlets para consultar el estado de las características opcionales. Todos los ejemplos de este tema usan el cmdlet Get-WmiObject . Para obtener más información, [vea Get-WmiObject](/previous-versions//dd315295(v=technet.10)).
 
 **Para recuperar todas las instancias de características opcionales presentes en un equipo**
 
--   <span codelanguage="PowerShell"></span>
+
     
 | PowerShell | 
 |------------|
@@ -31,7 +31,7 @@ Puede usar Windows PowerShell cmdlets para consultar el estado de las caracterí
 
 **Para consultar una característica opcional especificando el nombre de la característica**
 
--   <span codelanguage="PowerShell"></span>
+
     
 | PowerShell | 
 |------------|
@@ -47,7 +47,7 @@ Puede usar Windows PowerShell cmdlets para consultar el estado de las caracterí
 
 **Para consultar características opcionales especificando el estado de instalación**
 
--   <span codelanguage="PowerShell"></span>
+
     
 | PowerShell | 
 |------------|

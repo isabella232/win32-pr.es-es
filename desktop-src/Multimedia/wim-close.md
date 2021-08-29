@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WIM_CLOSE (mmsystem. h)
-description: El \_ mensaje de cierre Wim se envía a la función de devolución de llamada de audio de forma de onda especificada cuando se cierra un dispositivo de entrada de audio de forma de onda. El identificador de dispositivo ya no es válido después de enviar este mensaje.
+title: WIM_CLOSE mensaje (Mmsystem.h)
+description: El mensaje CLOSE de WIM se envía a la función de devolución de llamada de entrada de audio de forma de onda dada cuando se cierra un dispositivo de entrada de \_ audio de forma de onda. El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 ms.assetid: 3774b8b4-b03b-49e7-b9cd-cf3f194df847
 keywords:
-- Mensaje de WIM_CLOSE de Windows multimedia
+- WIM_CLOSE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6028ac6c45aa013138aab227e79d8d210ad70bb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7488ef0d8a6a0d36852faa93397f853efb4f76f41761b6f38dd544ddcbc398ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803895"
 ---
-# <a name="wim_close-message"></a>\_Mensaje de cierre Wim
+# <a name="wim_close-message"></a>Mensaje \_ DE WIM CLOSE
 
-El mensaje de **\_ cierre Wim** se envía a la función de devolución de llamada de audio de forma de onda especificada cuando se cierra un dispositivo de entrada de audio de forma de onda. El identificador de dispositivo ya no es válido después de enviar este mensaje.
+El **mensaje CLOSE \_ de WIM** se envía a la función de devolución de llamada de entrada de audio de forma de onda dada cuando se cierra un dispositivo de entrada de audio de forma de onda. El identificador del dispositivo ya no es válido después de que se haya enviado este mensaje.
 
 
 ```C++
@@ -41,20 +41,20 @@ dwParam2 = reserved
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Este mensaje no devuelve ningún valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Este mensaje no devuelve ningún valor.
 
 <dl> <dt>
 
-[Audio de onda](waveform-audio.md)
+[Audio de forma de onda](waveform-audio.md)
 </dt> <dt>
 
-[Mensajes de onda](waveform-messages.md)
+[Mensajes de forma de onda](waveform-messages.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-title: Creación de un grupo local y adición de un usuario
+title: Crear un grupo local y agregar un usuario
 description: Para crear un nuevo grupo local, llame a la función NetLocalGroupAdd. Para agregar un usuario a ese grupo, llame a la función NetLocalGroupAddMembers.
 ms.assetid: 28bba4bd-5e6b-4139-8fd0-a00fb6e82902
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08bd2e8180afa9182e7ebdd282cbedaeff0355a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f5c0888b4e788c66fa032ab0b84b33fc434c9ad7349d48ecf58810c39b123c42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912345"
 ---
-# <a name="creating-a-local-group-and-adding-a-user"></a>Creación de un grupo local y adición de un usuario
+# <a name="creating-a-local-group-and-adding-a-user"></a>Crear un grupo local y agregar un usuario
 
-Para crear un nuevo grupo local, llame a la función [**NetLocalGroupAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netlocalgroupadd) . Para agregar un usuario a ese grupo, llame a la función [**NetLocalGroupAddMembers**](/windows/desktop/api/Lmaccess/nf-lmaccess-netlocalgroupaddmembers) .
+Para crear un nuevo grupo local, llame a la [**función NetLocalGroupAdd.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netlocalgroupadd) Para agregar un usuario a ese grupo, llame a la [**función NetLocalGroupAddMembers.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netlocalgroupaddmembers)
 
 El siguiente programa le permite crear un usuario y un grupo local y agregar el usuario al grupo local.
 
@@ -168,9 +168,9 @@ int main()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

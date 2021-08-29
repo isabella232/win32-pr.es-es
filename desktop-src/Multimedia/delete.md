@@ -1,9 +1,9 @@
 ---
-title: eliminar comando
-description: El comando DELETE elimina un segmento de datos de un archivo. Los dispositivos de audio digital y de onda-vídeo reconocen este comando.
+title: comando delete
+description: El comando delete elimina un segmento de datos de un archivo. Los dispositivos de audio y vídeo digital reconocen este comando.
 ms.assetid: 9cf084f6-d64e-4487-9407-b68502b7cec9
 keywords:
-- comando DELETE de Windows multimedia
+- comando delete Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e356d4972384e676f2e521bd2ca102bb21d7ef2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fad34059ec75b0077fdc409cee8cd35a5495699
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905573"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468792"
 ---
-# <a name="delete-command"></a>eliminar comando
+# <a name="delete-command"></a>comando delete
 
-El comando DELETE elimina un segmento de datos de un archivo. Los dispositivos de audio digital y de onda-vídeo reconocen este comando.
+El comando delete elimina un segmento de datos de un archivo. Los dispositivos de audio y vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,59 +49,32 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszPosition"></span><span id="lpszposition"></span><span id="LPSZPOSITION"></span>*lpszPosition*
 </dt> <dd>
 
-Marca que identifica un segmento de datos que se va a eliminar. En la tabla siguiente se enumeran los tipos de dispositivos que reconocen el comando **Delete** y las marcas usadas por cada tipo.
+Marca que identifica un segmento de datos que se eliminará. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el **comando delete** y las marcas usadas por cada tipo.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Significado</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>digitalvideo</td>
-<td><ul>
-<li>en el <em>rectángulo</em></li>
-<li><em>secuencia</em> de flujo de audio</li>
-<li>desde la <em>posición</em></li>
-</ul></td>
-<td><ul>
-<li>para <em>colocar</em></li>
-<li><em>secuencia</em> de flujo de vídeo</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>waveaudio</td>
-<td>desde la <em>posición</em></td>
-<td>para <em>colocar</em></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | Significado | 
+|-------|---------|---------|
+| digitalvideo | <ul><li>en <em>rectángulo</em></li><li>secuencia <em>de</em> audio</li><li>desde <em>la posición</em></li></ul> | <ul><li>para <em>colocar</em></li><li>secuencia de <em>vídeo</em></li></ul> | 
+| waveaudio | desde <em>la posición</em> | para <em>colocar</em> | 
+
 
 
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro *lpszPosition* y su significado.
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el *parámetro lpszPosition* y sus significados.
 
 
 
-| Value                 | Significado                                                                                                                                                                                                                                      |
+| Valor                 | Significado                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en el *rectángulo*        | Especifica la parte de cada fotograma eliminada. Si se omite, el valor predeterminado es todo el marco. Cuando se especifica este elemento, no se eliminan los marcos. En su lugar, el área dentro del rectángulo se vuelve negra.                                          |
-| *secuencia* de flujo de audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando. Si usa esta marca y también desea eliminar vídeo, también debe usar la marca de "secuencia de vídeo". (Si no se especifica ninguna marca, se eliminan todas las secuencias de audio y vídeo). |
-| desde la *posición*       | Especifica la posición en la que comienza la eliminación. Si se omite esta marca, la eliminación comienza en la posición actual.                                                                                                                       |
+| en *rectángulo*        | Especifica la parte de cada fotograma eliminada. Si se omite, el valor predeterminado es todo el marco. Cuando se especifica este elemento, no se eliminan los fotogramas. En su lugar, el área dentro del rectángulo se vuelve negra.                                          |
+| secuencia *de* audio | Especifica la secuencia de audio en el área de trabajo afectada por el comando . Si usa esta marca y también desea eliminar vídeo, también debe usar la marca "secuencia de vídeo". (Si no se especifica ninguna marca, se eliminan todas las secuencias de audio y vídeo). |
+| desde *la posición*       | Especifica la posición en la que comienza la eliminación. Si se omite esta marca, la eliminación comienza en la posición actual.                                                                                                                       |
 | para *colocar*         | Especifica la posición en la que finaliza la eliminación. Si se omite esta marca, la eliminación continúa hasta el final del contenido o del área de trabajo.                                                                                                       |
-| *secuencia* de flujo de vídeo | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando. Si usa esta marca y también desea eliminar audio, también debe usar la marca de "secuencia de audio". (Si no se especifica ninguna marca, se eliminan todas las secuencias de audio y vídeo).     |
+| secuencia de *vídeo* | Especifica la secuencia de vídeo en el área de trabajo afectada por el comando . Si usa esta marca y también desea eliminar audio, también debe usar la marca "secuencia de audio". (Si no se especifica ninguna marca, se eliminan todas las secuencias de audio y vídeo).     |
 
 
 
@@ -112,21 +85,21 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de emitir cualquier comando que use valores de posición, debe establecer el formato de hora deseado mediante el comando [set](set.md) .
+Antes de emitir cualquier comando que use valores de posición, debe establecer el formato de hora deseado mediante el [comando set.](set.md)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando elimina los datos de audio de forma de onda de 1 milisegundo a 900 milisegundos (suponiendo que el formato de hora se establece en milisegundos).
+El siguiente comando elimina los datos de audio de forma de onda de 1 milisegundo a 900 milisegundos (suponiendo que el formato de hora esté establecido en milisegundos).
 
 ``` syntax
 delete mysound from 1 to 900
@@ -136,21 +109,21 @@ delete mysound from 1 to 900
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [MCI](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
 [set](set.md)

@@ -4,12 +4,12 @@ ms.assetid: 1df78a17-1cd4-4e98-aed1-b09d2b357703
 title: Elemento Content [Lector de diario]
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fec59601a91d63b09c703557b7c6cd28fd11620
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: d544aebac1292a81c9a4acd05cb25da80977027e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432157"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478111"
 ---
 # <a name="content-element-journal-reader"></a>Lector del diario \[ de elementos content\]
 
@@ -43,36 +43,11 @@ Contiene el contenido de una página De diario.
 
 
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Tipo</th>
-<th>Requerido</th>
-<th>Descripción</th>
-<th>PossibleValues</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Tipo</strong></td>
-<td><a href="contenttype-complex-type.md"><strong>ContentType complexType</strong></a></td>
-<td>Requerido</td>
-<td>Si el tipo es &quot; Inert &quot; , no se puede modificar el contenido.<br/></td>
-<td><ul>
-<li>Normal</li>
-<li>Inerte</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Tipo | Requerido | Descripción | PossibleValues | 
+|-----------|------|----------|-------------|----------------|
+| <strong>Tipo</strong> | <a href="contenttype-complex-type.md"><strong>ContentType complexType</strong></a> | Requerido | Si el tipo es "Inert", no se puede modificar el contenido.<br /> | <ul><li>Normal</li><li>Inerte</li></ul> | 
+
 
 
 

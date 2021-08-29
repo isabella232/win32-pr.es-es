@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: ec26a3cab15014deabca4e9332c1fbef7a788b17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9e56e25e51a3c6e798242b390f5d8b7341d7306455f1b15eb9e450830d3c9b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064705"
 ---
 # <a name="wlanpolicy-element"></a>Elemento WLANPolicy
 
-El elemento **WLANPolicy** contiene una directiva de LAN inalámbrica. Este elemento es el elemento raíz único para un perfil de directiva inalámbrica.
+El **elemento WLANPolicy** contiene una directiva LAN inalámbrica. Este elemento es el elemento raíz único para un perfil de directiva inalámbrica.
 
-El espacio de nombres de destino para el elemento **WLANPolicy** es `https://www.microsoft.com/networking/WLAN/policy/v1` .
+El espacio de nombres de destino **para el elemento WLANPolicy** es `https://www.microsoft.com/networking/WLAN/policy/v1` .
 
 ``` syntax
 <xs:element name="WLANPolicy">
@@ -145,35 +145,35 @@ El espacio de nombres de destino para el elemento **WLANPolicy** es `https://www
 
 | Elemento                                                                                                                    | Tipo                                                                     | Descripción                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | boolean                                                                  | Especifica si un usuario puede crear un perfil de todos los usuarios. <br/>                                                               |
-| [**Permitidos**](wlan-policyschema-allowlist-networkfilter-element.md)                                                     |                                                                          | La lista de redes LAN inalámbricas a las que se debe permitir que se conecte cualquier equipo. <br/>                                       |
-| [**Bloqueo**](wlan-policyschema-blocklist-networkfilter-element.md)                                                     |                                                                          | La lista de redes LAN inalámbricas a las que una máquina no debe conectarse.<br/>                                                    |
-| [**denyAllESS**](wlan-policyschema-denyalless-networkfilter-element.md)                                                   | boolean                                                                  | Especifica si el acceso a todas las redes de infraestructura está bloqueado. <br/>                                                           |
-| [**denyAllIBSS**](wlan-policyschema-denyallibss-networkfilter-element.md)                                                 | boolean                                                                  | Especifica si el acceso a todas las redes ad hoc está bloqueado. <br/>                                                                   |
-| [**denominación**](wlan-policyschema-description-wlanpolicy-element.md)                                                    | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | La descripción de una directiva de LAN inalámbrica. <br/>                                                                                |
-| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean                                                                  | Especifica si los equipos usan el servicio de configuración automática (AutoConfig) integrado para administrar las conexiones inalámbricas. <br/> |
-| [**Indicadores**](wlan-policyschema-globalflags-wlanpolicy-element.md)                                                    |                                                                          | Contiene la configuración global del módulo de configuración automática (ACM). <br/>                                                    |
-| [**name**](wlan-policyschema-name-wlanpolicy-element.md)                                                                  | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | El nombre de una directiva de LAN inalámbrica. <br/>                                                                                       |
-| [**Storage**](wlan-policyschema-network-allowlist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red permitida. <br/>                                                                                                      |
-| [**Storage**](wlan-policyschema-network-blocklist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red bloqueada. <br/>                                                                                                       |
-| [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md)                                                |                                                                          | La lista de redes permitidas y denegadas.<br/>                                                                                  |
-| [**profileList**](wlan-policyschema-profilelist-wlanpolicy-element.md)                                                    |                                                                          | Contiene una lista de perfiles que se van a aplicar en el nivel de dominio o de equipo. <br/>                                                |
-| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | boolean                                                                  | Especifica si las redes denegadas aparecen en el Asistente para **conectarse a una red** . <br/>                                         |
+| [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | boolean                                                                  | Especifica si un usuario puede crear un perfil de todo el usuario. <br/>                                                               |
+| [**allowList**](wlan-policyschema-allowlist-networkfilter-element.md)                                                     |                                                                          | Lista de redes LAN inalámbricas a las que se debe permitir la conexión de cualquier máquina. <br/>                                       |
+| [**blockList**](wlan-policyschema-blocklist-networkfilter-element.md)                                                     |                                                                          | Lista de redes LAN inalámbricas a las que una máquina no debe conectarse.<br/>                                                    |
+| [**denyAllESS**](wlan-policyschema-denyalless-networkfilter-element.md)                                                   | boolean                                                                  | Especifica si se bloquea el acceso a todas las redes de infraestructura. <br/>                                                           |
+| [**denyAllIBSS**](wlan-policyschema-denyallibss-networkfilter-element.md)                                                 | boolean                                                                  | Especifica si se bloquea el acceso a todas las redes ad hoc. <br/>                                                                   |
+| [**Descripción**](wlan-policyschema-description-wlanpolicy-element.md)                                                    | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | Descripción de una directiva de LAN inalámbrica. <br/>                                                                                |
+| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | boolean                                                                  | Especifica si las máquinas usan el servicio de configuración automática (AutoConfig) integrado para administrar conexiones inalámbricas. <br/> |
+| [**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md)                                                    |                                                                          | Contiene la configuración global del módulo de configuración automática (ACM). <br/>                                                    |
+| [**Nombre**](wlan-policyschema-name-wlanpolicy-element.md)                                                                  | [**nameType**](wlan-policyschema-nametype-simpletype.md)                | Nombre de una directiva de LAN inalámbrica. <br/>                                                                                       |
+| [**Red**](wlan-policyschema-network-allowlist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red permitida. <br/>                                                                                                      |
+| [**Red**](wlan-policyschema-network-blocklist-element.md)                                                             | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Una red bloqueada. <br/>                                                                                                       |
+| [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md)                                                |                                                                          | Lista de redes permitidas y denegadas.<br/>                                                                                  |
+| [**profileList**](wlan-policyschema-profilelist-wlanpolicy-element.md)                                                    |                                                                          | Contiene una lista de perfiles que se aplicarán en el nivel de dominio o equipo. <br/>                                                |
+| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | boolean                                                                  | Especifica si las redes denegadas aparecen en el **Conectar a un Asistente para** redes. <br/>                                         |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para ver la lista de elementos secundarios en una estructura similar a un árbol, [vea \_ elementos de esquema de directiva de WLAN](wlan-policyschema-elements.md).
+Para ver la lista de elementos secundarios en una estructura similar a un árbol, vea [Elementos de esquema de \_ la directiva WLAN](wlan-policyschema-elements.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

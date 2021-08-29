@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentPreset
-description: El atributo currentPreset especifica o recupera el valor predeterminado actual de la visualización actual.
+title: EFFECTS.currentPreset
+description: El atributo currentPreset especifica o recupera el valor preestablecido actual de la visualización actual.
 ms.assetid: 92c405fb-6a0b-4f4d-a8c6-61df89b035df
 keywords:
-- EFFECTs. currentPreset Windows Media Player
+- EFFECTS.currentPreset Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24cab33d732bd8e148a0cdf9cd281db7a39182f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f2a9ce067c2c53245184dcb8ed3cfa7b90b05546a27e5e0b91727599f446b958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996705"
 ---
-# <a name="effectscurrentpreset"></a>EFFECTs. currentPreset
+# <a name="effectscurrentpreset"></a>EFFECTS.currentPreset
 
-El atributo **currentPreset** especifica o recupera el valor predeterminado actual de la visualización actual.
+El **atributo currentPreset** especifica o recupera el valor preestablecido actual de la visualización actual.
 
 ``` syntax
         elementID.currentPreset
@@ -29,7 +29,7 @@ El atributo **currentPreset** especifica o recupera el valor predeterminado actu
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**) que indica el índice del valor preestablecido. Los índices comienzan por cero, que también es el valor predeterminado.
+Este atributo es un número de lectura y **escritura** (**long**) que indica el índice del valor preestablecido. Los índices comienzan por cero, que también es el valor predeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es un **número** de lectura y escritura (**Long**) que indica el 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Este atributo es un **número** de lectura y escritura (**Long**) que indica el 
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**ELEMENTO EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

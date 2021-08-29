@@ -1,23 +1,23 @@
 ---
 description: Filtro divisor avi
 ms.assetid: df3c7d11-7ecc-499a-af36-b74437e21999
-title: Filtro de divisor AVI
+title: Filtro divisor avi
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24335511e9b7b866c85792c2036a4d4b6d089f2a
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 9c090fdf7eda5b785d0d4b05e622e3b31bd0f8a14c15d8bf6df100e5b391aa88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814405"
 ---
-# <a name="avi-splitter-filter"></a>Filtro de divisor AVI
+# <a name="avi-splitter-filter"></a>Filtro divisor avi
 
 El filtro divisor de AVI se usa para la reproducción de archivos AVI. Acepta datos en formato AVI y los divide en sus flujos constituyentes para su posterior procesamiento o representación.
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IAMMediaContent,**](/previous-versions/windows/desktop/api/Qnetwork/nn-qnetwork-iammediacontent) [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) [**IPersistMediaPropertyBag**](/windows/desktop/api/Strmif/nn-strmif-ipersistmediapropertybag)                        |
 | Tipos de medios de pin de entrada                    | MEDIATYPE \_ Stream, MEDIASUBTYPE \_ Avi                                                                                                                                |
@@ -27,7 +27,7 @@ El filtro divisor de AVI se usa para la reproducción de archivos AVI. Acepta da
 | Filtrar CLSID                             | CLSID \_ AviSplitter                                                                                                                                                  |
 | CLSID de la página de propiedades                      | No hay ninguna página de propiedades.                                                                                                                                                   |
 | Executable                               | quartz.dll                                                                                                                                                          |
-| [Mérito](merit.md)                       | PROCEDIMIENTO \_ NORMAL                                                                                                                                                       |
+| [Mérito](merit.md)                       | NORMAL DE LA OPERACIÓN DE \_ NORMALIZACIÓN                                                                                                                                                       |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                                       |
 
 
@@ -36,7 +36,7 @@ El filtro divisor de AVI se usa para la reproducción de archivos AVI. Acepta da
 
 ## <a name="remarks"></a>Comentarios
 
-Este filtro normalmente está conectado al filtro [Async File Source](file-source--async--filter.md) (Origen de archivo asincrónico) en su pin de entrada. Puede conectarse a cualquier filtro cuyo pin de salida admita [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) y ofrece el tipo de medio correcto al pin de entrada del filtro del divisor AVI.
+Este filtro normalmente está conectado al filtro [Async File Source (Origen de archivo asincrónico)](file-source--async--filter.md) en su pin de entrada. Puede conectarse a cualquier filtro cuyo pin de salida admita [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) y ofrece el tipo de medio correcto al pin de entrada del filtro divisor AVI.
 
 Los pines de salida del divisor AVI admiten el método IPropertyBag::Read para leer propiedades de secuencias individuales. Actualmente, se define la siguiente propiedad.
 
@@ -50,7 +50,7 @@ Los pines de salida del divisor AVI admiten el método IPropertyBag::Read para l
 
  
 
-El método IPropertyBag::Write devuelve E \_ FAIL. El [filtro AVI Mux](avi-mux-filter.md) admite IPropertyBag::Write para guardar las propiedades de flujo en un archivo AVI.
+El método IPropertyBag::Write devuelve E \_ FAIL. El [filtro Mux de AVI](avi-mux-filter.md) admite IPropertyBag::Write para guardar las propiedades de flujo en un archivo AVI.
 
 El divisor AVI no permite que los filtros de nivel inferior usen su propio asignador.
 
@@ -58,9 +58,9 @@ La duración de intercalación en el archivo determina la cantidad de memoria qu
 
 ### <a name="seeking"></a>Buscando
 
-Si el archivo contiene una secuencia de vídeo, el divisor AVI admite la búsqueda por número de fotograma. Para habilitar la búsqueda basada en fotogramas, llame a [**IMediaSeeking::SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en el Administrador de [gráficos](filter-graph-manager.md) de filtros con el valor **TIME FORMAT \_ \_ FRAME**.
+Si el archivo contiene una secuencia de vídeo, el divisor AVI admite la búsqueda por número de fotograma. Para habilitar la búsqueda basada en fotogramas, llame a [**IMediaSeeking::SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en filter [Graph Manager](filter-graph-manager.md) con el valor TIME **FORMAT \_ \_ FRAME**.
 
-Si el archivo contiene una secuencia de audio, el divisor AVI admite la búsqueda por número de ejemplo. Para habilitar la búsqueda basada en muestras, llame [**a SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en el Administrador de gráficos de filtros con el valor **TIME FORMAT \_ \_ SAMPLE**.
+Si el archivo contiene una secuencia de audio, el divisor AVI admite la búsqueda por número de ejemplo. Para habilitar la búsqueda basada en muestras, llame a [**SetTimeFormat**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-settimeformat) en el Administrador de filtros Graph con el valor **TIME FORMAT \_ \_ SAMPLE**.
 
 En ambos casos, la patilla de salida de esa secuencia debe estar conectada a un filtro de representador.
 
@@ -68,7 +68,7 @@ En ambos casos, la patilla de salida de esa secuencia debe estar conectada a un 
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
 description: En este ejemplo se crea un grupo de subprocesos personalizado, se crea un elemento de trabajo y un temporizador del grupo de subprocesos y se asocian a un grupo de limpieza. El grupo consta de un subproceso persistente.
 ms.assetid: 3d349c83-8b1a-4a5b-9625-be905d613b92
-title: Usar las funciones de grupo de subprocesos
+title: Uso de las funciones del grupo de subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc4492913af54241c3480f6550af7e943e31495a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 682d6c81f338861660a9b3be7bfb2d40ebd414c65faa040f7bcf3619f6256cf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101895"
 ---
-# <a name="using-the-thread-pool-functions"></a>Usar las funciones de grupo de subprocesos
+# <a name="using-the-thread-pool-functions"></a>Uso de las funciones del grupo de subprocesos
 
-En este ejemplo se crea un grupo de subprocesos personalizado, se crea un elemento de trabajo y un temporizador del grupo de subprocesos y se asocian a un grupo de limpieza. El grupo consta de un subproceso persistente. Muestra el uso de las siguientes funciones de grupo de subprocesos:
+En este ejemplo se crea un grupo de subprocesos personalizado, se crea un elemento de trabajo y un temporizador del grupo de subprocesos y se asocian a un grupo de limpieza. El grupo consta de un subproceso persistente. Muestra el uso de las siguientes funciones del grupo de subprocesos:
 
 -   [**CloseThreadpool**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-closethreadpool)
 -   [**CloseThreadpoolCleanupGroup**](/windows/win32/api/threadpoolapiset/nf-threadpoolapiset-closethreadpoolcleanupgroup)

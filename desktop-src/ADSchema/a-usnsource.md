@@ -1,11 +1,11 @@
 ---
-title: USN-Source atributo)
-description: Valor del atributo USN-Changed del objeto del directorio remoto que ha replicado el cambio en el servidor local.
+title: USN-Source atributo
+description: Valor del atributo USN-Changed del objeto del directorio remoto que replicó el cambio en el servidor local.
 ms.assetid: b307f84a-3ab1-4bfa-afc2-e74055f2a652
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de USN-Source
-- uSNSource esquema de AD de atributos
+- USN-Source esquema de AD del atributo
+- Esquema de AD del atributo uSNSource
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0998ffb73fc02511d77440550c8c669b35a98563
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4dd45927e1cd73eff1c92a1ce55c92b82cbf2ae19d981d04677836c932efdb7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702665"
 ---
-# <a name="usn-source-attribute"></a>USN-Source atributo)
+# <a name="usn-source-attribute"></a>USN-Source atributo
 
-Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio remoto que ha replicado el cambio en el servidor local.
+Valor del [**atributo USN-Changed**](a-usnchanged.md) del objeto del directorio remoto que replicó el cambio en el servidor local.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------------------------------|
 | CN                | USN-Source                                                                                          |
-| Nombre para mostrar de LDAP | uSNSource                                                                                           |
-| Tamaño              | 8 bytes                                                                                             |
-| Actualizar privilegio  | El sistema establece este valor.                                                                    |
-| Frecuencia de actualización  | Cuando el objeto se cambia en un directorio remoto que replica el cambio en el directorio local. |
+| Ldap-Display-Name | uSNSource                                                                                           |
+| Size              | 8 bytes                                                                                             |
+| Privilegio actualizar  | El sistema establece este valor.                                                                    |
+| Frecuencia de actualización  | Cuando se cambia el objeto en un directorio remoto que replicó el cambio en el directorio local. |
 | Attribute-Id      | 1.2.840.113556.1.4.896                                                                              |
-| System-ID-GUID    | 167758ad-47f3-11d1-a9c3-0000f80367c1                                                                |
-| Sintaxis            | [**Interval**](s-interval.md)                                                                      |
+| System-Id-Guid    | 167758ad-47f3-11d1-a9c3-0000f80367c1                                                                |
+| Syntax            | [**Intervalo**](s-interval.md)                                                                      |
 
 
 
@@ -44,7 +44,7 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8157                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8157                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8157                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -117,15 +117,15 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8157                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8157                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8157                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -180,15 +180,15 @@ Valor del atributo [**USN-Changed**](a-usnchanged.md) del objeto del directorio 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | 0x8157                          |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

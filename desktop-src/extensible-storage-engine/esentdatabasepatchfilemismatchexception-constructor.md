@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabasePatchFileMismatchException'
-title: Constructor de EsentDatabasePatchFileMismatchException
+description: 'Más información sobre: Constructor EsentDatabasePatchFileMismatchException'
+title: Constructor EsentDatabasePatchFileMismatchException
 TOCTitle: 'EsentDatabasePatchFileMismatchException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabasePatchFileMismatchException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabasepatchfilemismatchexception.esentdatabasepatchfilemismatchexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1bf1e1888838cff0567a92c535c17c4ffa207e9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42f410ef2de07a5427d7234ff40c179ecbfb1842ad4b150d73b263d71b7a3d3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119116175"
 ---
-# <a name="esentdatabasepatchfilemismatchexception-constructor"></a>Constructor de EsentDatabasePatchFileMismatchException
+# <a name="esentdatabasepatchfilemismatchexception-constructor"></a>Constructor EsentDatabasePatchFileMismatchException
 
 Inicializa una nueva instancia de la clase EsentDatabasePatchFileMismatchException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentDatabasePatchFileMismatchException()
 
 [Miembros de EsentDatabasePatchFileMismatchException](./esentdatabasepatchfilemismatchexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

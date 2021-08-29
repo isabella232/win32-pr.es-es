@@ -1,7 +1,7 @@
 ---
-description: Los elementos de adquisición de imágenes de Windows (WIA) 2,0 se agrupan en categorías que definen cómo se trata o se usa un IWiaItem2.
+description: Windows Los elementos de Adquisición de imágenes (WIA) 2.0 se agrupan en categorías que definen cómo se va a tratar o usar un IWiaItem2.
 ms.assetid: 927f4957-aedf-4eef-8892-91cf9b56e1a2
-title: GUID de categoría de elemento de WIA 2,0 (Wiadef. h)
+title: GUID de la categoría de elementos de WIA 2.0 (Wiadef.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,30 +21,30 @@ api_type:
 - HeaderDef
 api_location:
 - wiadef.h
-ms.openlocfilehash: e2785d7d82e28641ebeefad730f02b3561a537a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3100a4198af94857f6c22212576a446e84bad7439395f13099daa37832bc5ff8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812835"
 ---
-# <a name="wia-20-item-category-guids"></a>GUID de categoría de elemento de WIA 2,0
+# <a name="wia-20-item-category-guids"></a>GUID de la categoría de elementos de WIA 2.0
 
-Los elementos de adquisición de imágenes de Windows (WIA) 2,0 se agrupan en categorías que definen cómo se trata o se usa un [**IWiaItem2**](-wia-iwiaitem2.md) . Por ejemplo, si el elemento representa un alimentador, la aplicación debe esperar que contenga las propiedades necesarias del alimentador de documentos y que funcione como un alimentador de documentos. Si el elemento representa un archivo terminado, una aplicación WIA 2,0 debe tratarlo de este modo, suponiendo que los datos son estáticos y se encuentran en el dispositivo. (Las reglas de cada elemento se definirán en sus documentos de especificación individuales). Cada categoría tiene una constante de tipo GUID.
+Windows Los elementos de Adquisición de imágenes (WIA) 2.0 se agrupan en categorías que definen cómo se va a tratar o usar [**un IWiaItem2.**](-wia-iwiaitem2.md) Por ejemplo, si el elemento representa un feeder, la aplicación debe esperar que contenga las propiedades de fuente de documentos necesarias y funcione como un feeder de documentos. Si el elemento representa un archivo terminado, una aplicación WIA 2.0 debe tratarlo de este modo, suponiendo que los datos son estáticos y se encuentran en el dispositivo. (Las reglas de cada elemento se definirán en sus documentos de especificación individuales). Cada categoría tiene una constante de tipo GUID.
 
 
 
 | Constante                                                                                                                                                                                               | Descripción                                                                                                                                                                    |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="WIA_CATEGORY_AUTO"></span><span id="wia_category_auto"></span><dl> <dt>**Categoría de WIA \_ \_ auto**</dt> </dl>                             | Un elemento que representa la configuración automática para un dispositivo de escáner WIA 2,0 que admite el análisis configurado automáticamente.<br/>                                   |
-| <span id="WIA_CATEGORY_FEEDER"></span><span id="wia_category_feeder"></span><dl> <dt>**\_alimentador de categoría WIA \_**</dt> </dl>                       | Un elemento del alimentador que es un origen de datos programable y sigue las reglas estándar y los conjuntos de propiedades necesarios para admitir los alimentadores de documentos.<br/>                             |
-| <span id="WIA_CATEGORY_FEEDER_BACK"></span><span id="wia_category_feeder_back"></span><dl> <dt>**\_alimentador de categoría WIA \_ \_ atrás**</dt> </dl>       | Origen de datos programable que describe el origen de datos de la parte posterior de un elemento de alimentador de base dúplex.<br/>                                                                       |
-| <span id="WIA_CATEGORY_FEEDER_FRONT"></span><span id="wia_category_feeder_front"></span><dl> <dt>**\_alimentador de categoría WIA \_ \_ delantero**</dt> </dl>    | Origen de datos programable que describe el origen de datos de front-end de un elemento de alimentador de base dúplex.<br/>                                                                      |
-| <span id="WIA_CATEGORY_FILM"></span><span id="wia_category_film"></span><dl> <dt>**\_película de categoría WIA \_**</dt> </dl>                             | Un elemento de película que es un origen de datos programable y sigue las reglas estándar y los conjuntos de propiedades necesarios para admitir las unidades de análisis de películas.<br/>                            |
-| <span id="WIA_CATEGORY_FINISHED_FILE"></span><span id="wia_category_finished_file"></span><dl> <dt>**archivo de categoría de WIA \_ \_ finalizada \_**</dt> </dl> | Un elemento que no es un origen de datos programable, o un elemento que proporciona los datos en un formato de archivo terminado, o un elemento de carpeta que contiene los elementos de formato de archivo finalizados.<br/> |
-| <span id="WIA_CATEGORY_FLATBED"></span><span id="wia_category_flatbed"></span><dl> <dt>**plano de la \_ categoría WIA \_**</dt> </dl>                    | Un elemento plano que es un origen de datos programable y sigue las reglas estándar y los conjuntos de propiedades necesarios para admitir el análisis de placas de plano.<br/>                     |
-| <span id="WIA_CATEGORY_FOLDER"></span><span id="wia_category_folder"></span><dl> <dt>**\_carpeta de categoría WIA \_**</dt> </dl>                       | Elemento de almacenamiento en carpetas (no es un origen de datos programable) que contiene otros elementos de carpeta o archivos finalizados o ambos.<br/>                                                     |
-| <span id="WIA_CATEGORY_ROOT"></span><span id="wia_category_root"></span><dl> <dt>**raíz de la \_ categoría WIA \_**</dt> </dl>                             | Elemento raíz para el dispositivo. <br/>                                                                                                                                      |
+| <span id="WIA_CATEGORY_AUTO"></span><span id="wia_category_auto"></span><dl> <dt>**WIA \_ CATEGORY \_ AUTO**</dt> </dl>                             | Elemento que representa los valores de configuración automática de un dispositivo de escáner WIA 2.0 que admite el examen configurado automáticamente.<br/>                                   |
+| <span id="WIA_CATEGORY_FEEDER"></span><span id="wia_category_feeder"></span><dl> <dt>**FUENTE DE \_ CATEGORÍA DE WIA \_**</dt> </dl>                       | Elemento de fuente que es un origen de datos programable y sigue las reglas estándar y los conjuntos de propiedades necesarios para admitir los fuentes de documentos.<br/>                             |
+| <span id="WIA_CATEGORY_FEEDER_BACK"></span><span id="wia_category_feeder_back"></span><dl> <dt>**FUENTE DE \_ DISTRIBUCIÓN DE \_ CATEGORÍA WIA DE \_ NUEVO**</dt> </dl>       | Origen de datos programable que describe el origen de datos del lado posterior de un elemento de fuente base dúplex.<br/>                                                                       |
+| <span id="WIA_CATEGORY_FEEDER_FRONT"></span><span id="wia_category_feeder_front"></span><dl> <dt>**WIA \_ CATEGORY \_ FEEDER \_ FRONT**</dt> </dl>    | Origen de datos programable que describe el origen de datos del lado frontal de un elemento de fuente base dúplex.<br/>                                                                      |
+| <span id="WIA_CATEGORY_FILM"></span><span id="wia_category_film"></span><dl> <dt>**WIA \_ CATEGORY \_ PELÍCULAS**</dt> </dl>                             | Elemento de película que es un origen de datos programable y sigue las reglas estándar y los conjuntos de propiedades necesarios para admitir unidades de análisis de películas.<br/>                            |
+| <span id="WIA_CATEGORY_FINISHED_FILE"></span><span id="wia_category_finished_file"></span><dl> <dt>**ARCHIVO FINALIZADO \_ DE LA \_ CATEGORÍA \_ WIA**</dt> </dl> | Elemento que no es un origen de datos programable, un elemento que proporciona datos en un formato de archivo finalizado o un elemento de carpeta que contiene elementos de formato de archivo finalizados.<br/> |
+| <span id="WIA_CATEGORY_FLATBED"></span><span id="wia_category_flatbed"></span><dl> <dt>**WIA \_ CATEGORY \_ FLATBED**</dt> </dl>                    | Elemento plano que es un origen de datos programable y sigue las reglas estándar y los conjuntos de propiedades necesarios para admitir el examen de la placa plana.<br/>                     |
+| <span id="WIA_CATEGORY_FOLDER"></span><span id="wia_category_folder"></span><dl> <dt>**CARPETA DE \_ CATEGORÍA DE \_ WIA**</dt> </dl>                       | Un elemento de almacenamiento de carpetas (no un origen de datos programable) que contiene otros elementos de carpeta o archivos terminados o ambos.<br/>                                                     |
+| <span id="WIA_CATEGORY_ROOT"></span><span id="wia_category_root"></span><dl> <dt>**RAÍZ DE CATEGORÍA DE WIA \_ \_**</dt> </dl>                             | Elemento raíz del dispositivo. <br/>                                                                                                                                      |
 
 
 
@@ -52,11 +52,11 @@ Los elementos de adquisición de imágenes de Windows (WIA) 2,0 se agrupan en ca
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 
 
 

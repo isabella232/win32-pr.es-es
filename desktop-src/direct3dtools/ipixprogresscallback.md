@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1af436e03f45c15324ef650f663a3668eedfc42b
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: a922dbb24a1dfa1214fcfe6bfd95cd5be4e01fa5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786101"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122628151"
 ---
 # <a name="span-idvspixengineipixprogresscallbackspanipixprogresscallback-interface"></a><span id="vspixengine.ipixprogresscallback"></span>IPixProgressCallback (interfaz)
 
 Devolución de llamada del motor para devolver el progreso.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IPixProgressCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPixProgressCallback** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IPixProgressCallback** hereda de la [**interfaz IUnknown.**](/wind
 
 La **interfaz IPixProgressCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipixprogresscallback-progress-dword-dword"><strong>Progreso</strong></a></td><td ><p>Devolución de llamada que notifica al host el progreso de una solicitud asociada.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipixprogresscallback-progress-dword-dword"><strong>Progreso</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host el progreso de una solicitud asociada.</p></td></tr></tbody></table>
 
  
 

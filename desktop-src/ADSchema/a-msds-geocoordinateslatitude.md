@@ -1,11 +1,11 @@
 ---
-title: MS-DS-geocoordinations-atributo de latitud
-description: Coordenadas geográficas para servicios de ubicación, específicamente, latitud (en microgrados) de la oficina o sala de conferencias.
+title: Atributo ms-DS-GeoCoordinates-Latitude
+description: Coordenadas geográficas para los servicios de ubicación, específicamente, la latitud (en microdegrees) de la oficina o la sala de conferencias.
 ms.assetid: ec99c5ff-bfa8-442b-bc84-3512e99b965a
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-geocoordinations-esquema de AD de atributo de latitud
-- Esquema de AD de atributo msDS-GeoCoordinatesLatitude
+- ms-DS-GeoCoordinates-Latitude attribute AD Schema
+- msDS-GeoCoordinatesLatitude attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01e9ba93ef81e26713beaa22fdc09002036bd561
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f26a3b122e331e242707f0c2603e4ba4b265751c83425b6204144543239a0c81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552355"
 ---
-# <a name="ms-ds-geocoordinates-latitude-attribute"></a>MS-DS-geocoordinations-atributo de latitud
+# <a name="ms-ds-geocoordinates-latitude-attribute"></a>Atributo ms-DS-GeoCoordinates-Latitude
 
-Coordenadas geográficas para servicios de ubicación, específicamente, latitud (en microgrados) de la oficina o sala de conferencias.
+Coordenadas geográficas para los servicios de ubicación, específicamente, la latitud (en microdegrees) de la oficina o la sala de conferencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-geocoordinations-latitud        |
-| Nombre para mostrar de LDAP | msDS-GeoCoordinatesLatitude          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-GeoCoordinates-Latitude        |
+| Ldap-Display-Name | msDS-GeoCoordinatesLatitude          |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2184              |
-| System-ID-GUID    | dc66d44e-3d43-40f5-85c5-3c12e169927e |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | dc66d44e-3d43-40f5-85c5-3c12e169927e |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -50,13 +50,13 @@ Coordenadas geográficas para servicios de ubicación, específicamente, latitud
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000001                                           |

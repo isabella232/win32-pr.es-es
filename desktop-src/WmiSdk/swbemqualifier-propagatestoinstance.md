@@ -1,8 +1,8 @@
 ---
-description: La propiedad PropagatesToInstance del objeto SWbemQualifier es un valor booleano que indica si se puede propagar este calificador a una instancia de.
+description: La propiedad PropagatesToInstance del objeto SWbemQualifier es un valor booleano que indica si este calificador se puede propagar a una instancia de .
 ms.assetid: 5cab3498-f7ba-4d82-9f07-90a87e15f270
 ms.tgt_platform: multiple
-title: Propiedad SWbemQualifier. PropagatesToInstance (Wbemdisp. h)
+title: Propiedad SWbemQualifier.PropagatesToInstance (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: e5566d24ba1b8f76bfaa3812066f3f8e27f03d9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 506662355091e76abb41dfc5e87ebd07f1c343f6ae3bcf20c59112216dac5d1a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119463715"
 ---
-# <a name="swbemqualifierpropagatestoinstance-property"></a>Propiedad SWbemQualifier. PropagatesToInstance
+# <a name="swbemqualifierpropagatestoinstance-property"></a>Propiedad SWbemQualifier.PropagatesToInstance
 
-La propiedad **PropagatesToInstance** del objeto [**SWbemQualifier**](swbemqualifier.md) es un valor booleano que indica si se puede propagar este calificador a una instancia de.
+La **propiedad PropagatesToInstance** del objeto [**SWbemQualifier**](swbemqualifier.md) es un valor booleano que indica si este calificador se puede propagar a una instancia de .
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de lectura y escritura.
 
@@ -51,11 +51,11 @@ SWbemQualifier.PropagatesToInstance As Boolean
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemQualifier<br/>                                                        |
-| IID<br/>                      | \_ISWBEMQUALIFIER IID<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemQualifier<br/>                                                         |
 
 
 

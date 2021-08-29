@@ -3,23 +3,23 @@ title: Archivo de definición de máscara (móvil)
 description: Archivo de definición de máscara (móvil)
 ms.assetid: 76f5a17c-8126-4310-8cdf-72cdca98708b
 keywords:
-- Máscaras móviles de Windows Media Player, archivos de definición de máscara
+- Reproductor de Windows Media Máscaras móviles, archivos de definición de máscara
 - máscaras, archivos de definición de máscara
 - archivos para máscaras, definición de máscara
 - archivos de definición de máscara, acerca de
-- archivos de definición de máscara, Windows Media Player Mobile
+- archivos de definición de máscara, Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f04fbf35483db3f10fe900982726952fa1ba1895
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 623f084e4ff445d6971ca0efbde8efa53eb1a250d792421ca898d8081a632695
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103800655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507905"
 ---
 # <a name="skin-definition-file-mobile"></a>Archivo de definición de máscara (móvil)
 
-El archivo de definición de máscara es donde se colocan todas las piezas. Defina las imágenes que se van a usar, especifique los elementos de la interfaz de usuario que desea que el usuario vea y escriba las funciones, las coordenadas, los nombres de archivo, etc.
+El archivo de definición de máscara es donde se reúnen todas las piezas. Defina las imágenes que se usarán, especifique los elementos de la interfaz de usuario que desea que el usuario vea y escriba las funciones, las coordenadas, los nombres de archivo, entre otros.
 
 En las secciones siguientes se proporcionan detalles sobre cómo crear el archivo de definición de máscara:
 

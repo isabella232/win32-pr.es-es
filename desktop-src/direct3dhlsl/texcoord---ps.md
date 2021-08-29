@@ -1,5 +1,5 @@
 ---
-title: texcoord-PS
+title: texcoord - ps
 description: Interpreta los datos de coordenadas de textura (UVW1) como datos de color (RGBA).
 ms.assetid: 0f79a62c-1142-4dcd-aa2f-a5bd1c369ffc
 ms.topic: reference
@@ -9,53 +9,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9e871d1f91d89d0eb0ddadee34b5ac215916d0af
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 476f618634ee42e1363a091f79c97410b3e3b765138696c5c12e8d3c3fcb5bdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043113"
 ---
-# <a name="texcoord---ps"></a>texcoord-PS
+# <a name="texcoord---ps"></a>texcoord - ps
 
 Interpreta los datos de coordenadas de textura (UVW1) como datos de color (RGBA).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| texcoord DST |
+| texcoord dst |
 |--------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texcoord              | x    | x    | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
 Esta instrucción interpreta el conjunto de coordenadas de textura (UVW1) correspondiente al número de registro de destino como datos de color (RGBA). Si el conjunto de coordenadas de textura contiene menos de tres componentes, los componentes que faltan se establecen en 0. El cuarto componente siempre se establece en 1. Todos los valores se fijan entre 0 y 1.
 
-La ventaja de texcoord es que proporciona una manera de pasar datos de vértice interpolados a alta precisión directamente en el sombreador de píxeles. Sin embargo, cuando los datos se escriben en el registro de destino, se perderá cierta precisión, dependiendo del número de bits que use el hardware para los registros.
+La ventaja de texcoord es que proporciona una manera de pasar datos de vértice interpolados con alta precisión directamente al sombreador de píxeles. Sin embargo, cuando los datos se escriben en el registro de destino, se perderá cierta precisión, en función del número de bits usados por el hardware para los registros.
 
-Esta instrucción no muestrea ninguna textura. Solo se aplican las coordenadas de textura establecidas en esta fase de textura.
+Esta instrucción muestrea ninguna textura. Solo las coordenadas de textura establecidas en esta fase de textura son relevantes.
 
-Los datos de textura (como la posición, la normal y la dirección de origen de la luz) pueden ser asignados por un sombreador de vértices en una coordenada de textura. Esto se hace asociando una textura con un registro de textura mediante [**SetTexture**](/windows/desktop/direct3d9/id3dxbaseeffect--settexture) y especificando cómo se realiza el muestreo de textura con [**SetTextureStageState**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexturestagestate). Si se usa la canalización de función fija, asegúrese de proporcionar la \_ marca TSS TEXCOORDINDEX.
+Cualquier dato de textura (como la posición, la dirección normal y la dirección del origen de luz) se puede asignar mediante un sombreador de vértices a una coordenada de textura. Esto se hace asociando una textura a un registro de textura mediante [**SetTexture**](/windows/desktop/direct3d9/id3dxbaseeffect--settexture) y especificando cómo se realiza el muestreo de textura mediante [**SetTextureStageState**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexturestagestate). Si se usa la canalización de función fija, asegúrese de proporcionar la marca \_ TSS TEXCOORDINDEX.
 
-Esta instrucción se utiliza como sigue:
+Esta instrucción se usa de la siguiente manera:
 
 
 ```
@@ -64,11 +64,11 @@ texcoord tn
 
 
 
-Un [registro de coordenadas de textura](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md) (TN) contiene cuatro valores de color (RGBA). Los datos también se pueden considerar como datos vectoriales (xyzw). texcoord recuperará tres de estos valores (XYZ) del conjunto de coordenadas de textura x y el cuarto componente (w) se establece en 1. La dirección de la textura se copia desde el conjunto de coordenadas de textura n. El resultado se fija entre 0 y 1.
+Un [registro de coordenadas de textura](dx9-graphics-reference-asm-ps-registers-texture-coordinate.md) (tn) contiene cuatro valores de color (RGBA). Los datos también se pueden pensar como datos vectoriales (xyzw). texcoord recuperará tres de estos valores (xyz) del conjunto de coordenadas de textura x y el cuarto componente (w) se establece en 1. La dirección de textura se copia del conjunto de coordenadas de textura n. El resultado se fija entre 0 y 1.
 
 Este ejemplo solo tiene propósitos ilustrativos. El código de C que acompaña al sombreador no se ha optimizado para el rendimiento.
 
-A continuación se muestra un sombreador de ejemplo que usa texcoord.
+Este es un sombreador de ejemplo que usa texcoord.
 
 
 ```
@@ -80,11 +80,11 @@ mov r0, t0    ; move the color in t0 to output register r0
 
 
 
-En la ilustración siguiente se muestra la salida representada del sombreador de píxeles. Los valores de coordenadas (u, v, w, 1) se asignan a los canales (RGB). El canal alfa está establecido en 1. En las esquinas de la ilustración, la coordenada (0, 0, 0, 1) se interpreta como negro; (1, 0, 0, 1) es rojo; (0, 1, 0, 1) es verde; y (1, 1, 0, 1) contiene verde y rojo, lo que produce amarillo.
+La salida representada del sombreador de píxeles se muestra en la ilustración siguiente. Los valores de coordenadas (u,v,w,1) se asignan a los canales (rgb). El canal alfa se establece en 1. En las esquinas de la ilustración, la coordenada (0,0,0,1) se interpreta como negra; (1,0,0,1) está rojo; (0,1,0,1) es verde; y (1,1,0,1) contienen verde y rojo, lo que genera amarillo.
 
-![Ilustración de la salida representada del sombreador de píxeles de ejemplo](images/pstexcoord.jpg)
+![ilustración de la salida representada del sombreador de píxeles de ejemplo](images/pstexcoord.jpg)
 
-Se requiere código adicional para usar este sombreador y se muestra un escenario de ejemplo a continuación.
+Se requiere código adicional para usar este sombreador y a continuación se muestra un escenario de ejemplo.
 
 
 ```
@@ -126,6 +126,6 @@ static CUSTOMVERTEX g_Vertices[]=
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

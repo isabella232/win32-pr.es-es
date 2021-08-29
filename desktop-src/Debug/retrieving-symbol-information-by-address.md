@@ -4,16 +4,16 @@ ms.assetid: 63dfadea-b0c4-4050-add8-d1f3aef7a495
 title: Recuperar información de símbolos por dirección
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29ad9d2879dbfd5820c4aa6c2e7563a1575ebe1c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6484327117e66826402dc97abb09f58813e528599c69bd97054528f5cfe89aba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076389"
 ---
 # <a name="retrieving-symbol-information-by-address"></a>Recuperar información de símbolos por dirección
 
-En el código siguiente se muestra cómo llamar a la función [**SymFromAddr**](/windows/desktop/api/Dbghelp/nf-dbghelp-symfromaddr) . Esta función rellena una estructura de [**\_ información de símbolos**](/windows/desktop/api/DbgHelp/ns-dbghelp-symbol_info) . Dado que el nombre tiene una longitud variable, debe proporcionar un búfer que sea lo suficientemente grande como para contener el nombre almacenado al final de la estructura de **\_ información de símbolos** . Además, el miembro **MaxNameLen** debe establecerse en el número de bytes reservados para el nombre. En este ejemplo, *dwAddress* es la dirección que se asignará a un símbolo. La función **SymFromAddr** almacenará un desplazamiento al principio del símbolo en la dirección de *dwDisplacement*. En el ejemplo se da por supuesto que ha inicializado el controlador de símbolos mediante el código en la [inicialización del controlador de símbolos](initializing-the-symbol-handler.md).
+En el código siguiente se muestra cómo llamar a [**la función SymFromAddr.**](/windows/desktop/api/Dbghelp/nf-dbghelp-symfromaddr) Esta función rellena una estructura [**SYMBOL \_ INFO.**](/windows/desktop/api/DbgHelp/ns-dbghelp-symbol_info) Dado que el nombre tiene una longitud variable, debe proporcionar un búfer lo suficientemente grande como para contener el nombre almacenado al final de la estructura **SYMBOL \_ INFO.** Además, el **miembro MaxNameLen** debe establecerse en el número de bytes reservados para el nombre. En este ejemplo, *dwAddress* es la dirección que se va a asignar a un símbolo. La **función SymFromAddr** almacenará un desplazamiento hasta el principio del símbolo en la dirección *de dwDisplacement*. En el ejemplo se supone que ha inicializado el controlador de símbolos mediante el código de [Inicialización del controlador de símbolos](initializing-the-symbol-handler.md).
 
 
 ```C++
@@ -40,7 +40,7 @@ else
 
 
 
-Para recuperar el número de línea del código fuente de una dirección especificada, una aplicación puede utilizar [**SymGetLineFromAddr64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetlinefromaddr). Esta función requiere un puntero a una estructura [**IMAGEHLP \_ LINE64**](/windows/desktop/api/DbgHelp/ns-dbghelp-imagehlp_line) para recibir el nombre del archivo de código fuente y el número de línea correspondiente a una dirección de código especificada. Tenga en cuenta que el controlador de símbolos puede recuperar la información de números de línea solo cuando se establece **SYMOPT para \_ cargar \_ líneas** mediante la función [**SymSetOptions**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) . Esta opción debe establecerse antes de cargar el módulo. El parámetro dwAddress contiene la dirección de código para la que se ubicará el nombre del archivo de código fuente y el número de línea.
+Para recuperar el número de línea de código fuente de una dirección especificada, una aplicación puede usar [**SymGetLineFromAddr64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symgetlinefromaddr). Esta función requiere un puntero a una estructura [**IMAGEHLP \_ LINE64**](/windows/desktop/api/DbgHelp/ns-dbghelp-imagehlp_line) para recibir el nombre de archivo de origen y el número de línea correspondientes a una dirección de código especificada. Tenga en cuenta que el controlador de símbolos solo puede recuperar información de número de línea cuando **SYMOPT \_ LOAD \_ LINES** se establece mediante [**la función SymSetOptions.**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) Esta opción debe establecerse antes de cargar el módulo. El parámetro dwAddress contiene la dirección de código para la que se ubicarán el nombre de archivo de origen y el número de línea.
 
 
 ```C++

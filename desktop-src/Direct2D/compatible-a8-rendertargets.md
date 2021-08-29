@@ -1,34 +1,34 @@
 ---
-title: Información general de destinos de representación A8 compatibles
-description: Describe los aspectos básicos de los destinos de representación A8 compatibles y proporciona ejemplos que muestran cómo utilizarlos.
+title: Introducción a los destinos de representación A8 compatibles
+description: Describe los conceptos básicos de los destinos de representación A8 compatibles y proporciona ejemplos que muestran cómo usarlos.
 ms.assetid: 218c0123-8da9-4d73-9882-cbf7f205001f
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 552577283adfa9a440e94b7e04f4056bd6c3ecda
-ms.sourcegitcommit: db89157e3be911fdce2e543e99faa31fb2403bc8
+ms.openlocfilehash: f4f7407a32c7a8447b82695d98d7dc54bcd20b86e09006a8c1a996f6e0495019
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "103995795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824875"
 ---
-# <a name="compatible-a8-render-targets-overview"></a>Información general de destinos de representación A8 compatibles
+# <a name="compatible-a8-render-targets-overview"></a>Introducción a los destinos de representación A8 compatibles
 
-En este tema se describen los aspectos básicos de un destino de representación de A8 compatible y se proporcionan ejemplos de cómo utilizarlos.
+En este tema se describen los conceptos básicos de un destino de representación A8 compatible y se proporcionan ejemplos de cómo usarlo.
 
-Un destino de representación de A8 compatible es un destino de representación compatible ([**ID2D1BitmapRenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmaprendertarget)) que usa un formato de píxel A8 (formato de DXGI \_ \_ a8 \_ UNORM). Puede usar un destino de representación A8 compatible para mejorar el rendimiento de la aplicación y proporcionar transiciones más suaves durante la animación del texto. Un destino de representación A8 compatible es especialmente útil cuando se intenta mejorar lo siguiente:
+Un destino de representación A8 compatible es un destino de representación compatible [**(ID2D1BitmapRenderTarget)**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmaprendertarget)que usa un formato de píxeles A8 (DXGI \_ FORMAT \_ A8 \_ UNORM). Puede usar un destino de representación A8 compatible para mejorar el rendimiento de la aplicación y proporcionar transiciones más fluidas durante la animación de texto. Un destino de representación A8 compatible es especialmente útil cuando se intenta mejorar lo siguiente:
 
--   Velocidad de fotogramas de la aplicación que representa el texto o geometría suavizada que incluye solo animaciones simples, como cambios de traslación, rotación, escala o color.
+-   Velocidad de fotogramas de la aplicación que representa texto o geometría suavizada de alias que incluye solo animaciones simples, como cambios de color, rotación, rotación o escala.
 
--   La continuidad visual de la aplicación que amplía y diminshes el texto durante una animación.
+-   Continuidad visual de la aplicación que extiende y diminuta el texto durante una animación.
 
-Para crear un destino de representación de A8 compatible, use el método [**ID2D1RenderTarget:: CreateCompatibleRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget)) junto con el formato de DXGI de la \_ \_ a8 \_ UNORM píxeles y especifique un destino de representación compatible. Para obtener más información sobre los formatos de píxeles, vea [formatos de píxeles compatibles y modos alfa](./supported-pixel-formats-and-alpha-modes.md).
+Para crear un destino de representación A8 compatible, use el método [**ID2D1RenderTarget::CreateCompatibleRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget)) junto con el formato de \_ píxelES UNORM DXGI FORMAT A8 y especifique un destino de representación \_ \_ compatible devuelto. Para obtener más información sobre los formatos de píxel, vea [Formatos de píxeles admitidos y modos alfa.](./supported-pixel-formats-and-alpha-modes.md)
 
-Por ejemplo, para animar de forma eficaz el texto que se muestra en la siguiente captura de pantalla, use un destino de representación A8 compatible para almacenar en caché el texto como una máscara de opacidad. A continuación, aplique transformaciones a la máscara de opacidad para conseguir resultados de representación rápidos.
+Por ejemplo, para animar eficazmente el texto que se muestra en la siguiente captura de pantalla, use un destino de representación A8 compatible para almacenar en caché el texto como una máscara de opacidad. A continuación, aplique transformaciones a la máscara de opacidad para lograr resultados de representación rápidos.
 
-![captura de pantalla del texto que se va a animar](images/a8rendertarget.png)
+![captura de pantalla de texto para animar](images/a8rendertarget.png)
 
-El código siguiente muestra cómo hacerlo. Crea un destino de representación de A8 compatible, recupera el mapa de bits de él y, a continuación, representa el mapa de bits mediante [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md).
+El código siguiente muestra cómo hacerlo. Crea un destino de representación A8 compatible, recupera el mapa de bits de él y, a continuación, representa el mapa de bits mediante [**FillOpacityMask**](id2d1rendertarget-fillopacitymask.md).
 
 ```cpp
 ID2D1BitmapRenderTarget *m_pOpacityRT;

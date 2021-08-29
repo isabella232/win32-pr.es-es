@@ -4,23 +4,23 @@ ms.assetid: 6F8588DA-425F-4E7D-A3F9-066EB3B161CA
 title: Métodos ICertEncodeBitString
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55cd2ce424c961edec96614e99938088f59fc10b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 912df7ecf69cc5e05c002e8f5f43c2f3b99a586a1efe97f260372883aaa6e00f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005983"
 ---
 # <a name="icertencodebitstring-methods"></a>Métodos ICertEncodeBitString
 
-La interfaz [**ICertEncodeBitString**](/windows/desktop/api/Certenc/nn-certenc-icertencodebitstring) expone los métodos siguientes.
+La [**interfaz ICertEncodeBitString**](/windows/desktop/api/Certenc/nn-certenc-icertencodebitstring) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Decode (método)**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-decode)
--   [**Encode (método)**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-encode)
--   [**Método GetBitCount**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-getbitcount)
--   [**Método GetBitString**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-getbitstring)
+-   [**Método Decode**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-decode)
+-   [**Método Encode**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-encode)
+-   [**GetBitCount (método)**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-getbitcount)
+-   [**GetBitString (método)**](/windows/desktop/api/Certenc/nf-certenc-icertencodebitstring-getbitstring)
 
  
 

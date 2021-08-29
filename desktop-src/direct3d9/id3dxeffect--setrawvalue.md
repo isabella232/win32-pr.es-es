@@ -1,7 +1,7 @@
 ---
 description: Establezca un intervalo contiguo de constantes de sombreador con una copia de memoria.
 ms.assetid: 8a3b5141-c67a-45b9-91c2-1877642164e3
-title: 'ID3DXEffect:: SetRawValue (método) (D3DX9Effect. h)'
+title: Método ID3DXEffect::SetRawValue (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: cc3ce5eb547032ced5d0d79c533cefd1d2daab3a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 10ba7dd5729d67fdd34180d737e835e0a22dc10de2126df3c8b07c2176a78fe1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494055"
 ---
-# <a name="id3dxeffectsetrawvalue-method"></a>ID3DXEffect:: SetRawValue (método)
+# <a name="id3dxeffectsetrawvalue-method"></a>Método ID3DXEffect::SetRawValue
 
 Establezca un intervalo contiguo de constantes de sombreador con una copia de memoria.
 
@@ -43,34 +43,34 @@ HRESULT SetRawValue(
 
 <dl> <dt>
 
-*Identificador* \[ de de\]
+*Identificador* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador del valor que se va a establecer o nombre del valor que se pasa como una cadena. Pasar un identificador es más eficaz. Vea [identificadores (Direct3D 9)](handles.md).
+Controle el valor que se establecerá o el nombre del valor pasado como una cadena. Pasar un identificador es más eficaz. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pdata* \[ de\]
+*pData* \[ En\]
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
-Puntero a un búfer que contiene los datos que se van a establecer. SetRawValue comprueba la memoria válida, pero no realiza ninguna comprobación de datos válidos.
+Puntero a un búfer que contiene los datos que se establecerán. SetRawValue comprueba si hay memoria válida, pero no realiza ninguna comprobación de los datos válidos.
 
 </dd> <dt>
 
-*OffsetInBytes* \[ de\]
+*OffsetInBytes* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de bytes entre el principio de los datos del efecto y el comienzo de las constantes del efecto que se van a establecer.
+Número de bytes entre el principio de los datos del efecto y el principio de las constantes de efecto que se van a establecer.
 
 </dd> <dt>
 
-*Bytes* \[ de\]
+*Bytes* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -83,13 +83,13 @@ Tamaño del búfer que se va a establecer, en bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: E \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: E \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-SetRawValue es una manera muy rápida de establecer constantes de efecto, ya que realiza una copia de memoria sin realizar la validación ni ninguna conversión de datos (como la conversión de una matriz de filas principales en una matriz de columnas principal). Use SetRawValue para establecer una serie de constantes de efectos contiguos. Por ejemplo, puede establecer una matriz de veinte matrices con 20 llamadas a [**ID3DXBaseEffect:: SetMatrix**](id3dxbaseeffect--setmatrix.md) o mediante un solo SetRawValue.
+SetRawValue es una manera muy rápida de establecer constantes de efecto, ya que realiza una copia de memoria sin realizar la validación ni ninguna conversión de datos (como convertir una matriz de filas principales en una matriz principal de columna). Use SetRawValue para establecer una serie de constantes de efecto contiguas. Por ejemplo, podría establecer una matriz de veinte matrices con 20 llamadas a [**ID3DXBaseEffect::SetMatrix**](id3dxbaseeffect--setmatrix.md) o mediante un único valor SetRawValue.
 
-Se espera que todos los valores sean matrix4x4s o float4s y se espera que todas las matrices estén en orden de columna principal. Los valores int o float se convierten en una FLOAT4; por lo tanto, se recomienda encarecidamente que use SetRawValue solo con datos FLOAT4 o matrix4x4.
+Se espera que todos los valores sean matrix4x4s o float4s y se espera que todas las matrices estén en orden de columna principal. Los valores int o float se convierten en float4; Por lo tanto, se recomienda encarecidamente usar SetRawValue solo con datos float4 o matrix4x4.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ Se espera que todos los valores sean matrix4x4s o float4s y se espera que todas 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

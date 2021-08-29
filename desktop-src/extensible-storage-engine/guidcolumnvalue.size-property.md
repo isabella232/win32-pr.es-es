@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: GuidColumnValue. Size (propiedad)'
-title: GuidColumnValue. Size (propiedad)
+description: 'Más información sobre: Propiedad GuidColumnValue.Size'
+title: GuidColumnValue.Size, propiedad
 TOCTitle: 'Size property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.GuidColumnValue.Size
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.guidcolumnvalue.size(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b973638ac8caa4848ed5ecc65468c363ebd2f866
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d9d5aa86f848485c4ce8ee61054e73894992192086a11e2388ed4c7b052295d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039523"
 ---
-# <a name="guidcolumnvaluesize-property"></a>GuidColumnValue. Size (propiedad)
+# <a name="guidcolumnvaluesize-property"></a>GuidColumnValue.Size, propiedad
 
-Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binary y String).
+Obtiene el tamaño del valor de la columna. Esto devuelve 0 para las columnas de tamaño variable (es decir, binario y cadena).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,14 +57,14 @@ protected override int Size { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase GuidColumnValue](./guidcolumnvalue-class.md)
+[GuidColumnValue (clase)](./guidcolumnvalue-class.md)
 
-[Miembros de GuidColumnValue](./guidcolumnvalue-members.md)
+[Miembros GuidColumnValue](./guidcolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

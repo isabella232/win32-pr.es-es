@@ -1,21 +1,21 @@
 ---
-description: En los siguientes ejemplos de C# y Visual Basic Scripting Edition (VBScript) se muestra la exportación de la configuración de una máquina virtual.
+description: Los siguientes ejemplos de C# Visual Basic Scripting Edition (VBScript) muestran cómo exportar la configuración de una máquina virtual.
 ms.assetid: 0B503B85-7EC0-409A-B610-E1C7FFBF3192
 title: Exportación de la configuración de una máquina virtual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e74a9984490c74be907f96ab408c64aa233ed09b
-ms.sourcegitcommit: 3d9eb6638763fee8b87c378657458f814182e36c
+ms.openlocfilehash: 7f2a52c9d4cae1e590749bc1b9b6f0dc4ddcad3542faabe808edd64fb3b2aa2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105689614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532545"
 ---
 # <a name="exporting-the-configuration-of-a-virtual-machine"></a>Exportación de la configuración de una máquina virtual
 
-En los siguientes ejemplos de C# y Visual Basic Scripting Edition (VBScript) se muestra la exportación de la configuración de una máquina virtual. Los ejemplos que muestran la exportación de una máquina virtual se encuentran en los temas [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) y [exportación de una instantánea de una máquina virtual](exporting-virtual-machines.md) .
+Los siguientes ejemplos de C# Visual Basic Scripting Edition (VBScript) muestran cómo exportar la configuración de una máquina virtual. Los ejemplos que muestran la exportación de una máquina virtual se pueden encontrar en los temas [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md) y Exportación de una [instantánea de una máquina virtual.](exporting-virtual-machines.md)
 
-Las utilidades de C# a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+Las utilidades de C# a las que se hace referencia se pueden encontrar en [Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 203daa48e766edd545bf232c4f8d94c4f17b5b2a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d4f660066205a626d6718bf8bd473d54d1d761f9ee499dd0c25a178d9846a0be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753555"
 ---
 # <a name="d3dx10_intersect_info-structure"></a>Estructura INFO de INTERSECT de D3DX10 \_ \_
 
@@ -100,7 +100,7 @@ Las coordenadas barítricas definen un punto dentro de un triángulo en término
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
