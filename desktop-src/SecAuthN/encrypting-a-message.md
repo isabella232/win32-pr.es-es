@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo siguiente se muestra un mensaje que se cifra antes de que se envíe a un equipo remoto a través de la conexión segura.
+description: En el ejemplo siguiente se muestra un mensaje cifrado antes de que se envíe a un equipo remoto a través de la conexión segura.
 ms.assetid: 1788b496-ad19-427e-be07-4aa68543fced
 title: Cifrado de un mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7fcc987e17c37f9b2eb80289f257101b51f5f3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d7f1f0b2aab3f34a3d329e568f9de1fc1956ea7270fe177556363024d32107c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008443"
 ---
 # <a name="encrypting-a-message"></a>Cifrado de un mensaje
 
-En el ejemplo siguiente se muestra un mensaje que se cifra antes de que se envíe a un equipo remoto a través de la conexión segura.
+En el ejemplo siguiente se muestra un mensaje cifrado antes de que se envíe a un equipo remoto a través de la conexión segura.
 
-En el ejemplo se da por supuesto que se inicializa una variable **SecHandle** denominada `phContext` y un **socket** denominado `s` . Para obtener las declaraciones e iniciaciones de estas variables, vea [usar SSPI con un cliente de Windows Sockets](using-sspi-with-a-windows-sockets-client.md) y [usar SSPI con un servidor de Windows Sockets](using-sspi-with-a-windows-sockets-server.md). En este ejemplo se incluyen las llamadas a funciones en SECUR32. lib, que deben incluirse entre las bibliotecas de vínculos.
+En el ejemplo se da por supuesto que se **inicializan** una variable SecHandle denominada y un `phContext` **socket** `s` denominado . Para obtener las declaraciones e iniciaciones de estas variables, vea Using [SSPI with a Windows Sockets Client](using-sspi-with-a-windows-sockets-client.md) y [Using SSPI with a Windows Sockets Server](using-sspi-with-a-windows-sockets-server.md). En este ejemplo se incluyen llamadas a funciones de Secur32.lib, que deben incluirse entre las bibliotecas de vínculos.
 
 
 ```C++

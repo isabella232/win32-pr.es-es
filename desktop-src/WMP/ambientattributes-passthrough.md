@@ -1,9 +1,9 @@
 ---
-title: AmbientAttributes. passThrough
-description: El atributo passThrough especifica o recupera un valor que indica si el control pasará todos los eventos del mouse por el control situado bajo él.
+title: AmbientAttributes.passThrough
+description: El atributo passThrough especifica o recupera un valor que indica si el control pasará todos los eventos del mouse al control bajo él.
 ms.assetid: 907ae233-3421-4e80-84be-64db4a3ab654
 keywords:
-- AmbientAttributes. passThrough Windows Media Player
+- AmbientAttributes.passThrough Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27b786aeefc182caab904c644dfd00ab4e76fec3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b8e71e9f7a56f7aa103e64ce739c34467f64cde2edb213c37d2d452b506dc5e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055021"
 ---
-# <a name="ambientattributespassthrough"></a>AmbientAttributes. passThrough
+# <a name="ambientattributespassthrough"></a>AmbientAttributes.passThrough
 
-El atributo **passThrough** especifica o recupera un valor que indica si el control pasará todos los eventos del mouse por el control situado bajo él.
+El **atributo passThrough** especifica o recupera un valor que indica si el control pasará todos los eventos del mouse al control bajo él.
 
 ``` syntax
         elementID.passThrough
@@ -29,24 +29,24 @@ El atributo **passThrough** especifica o recupera un valor que indica si el cont
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                                            |
+| Valor | Descripción                                            |
 |-------|--------------------------------------------------------|
-| true  | El control pasa los eventos a través del control. |
-| false | Predeterminada. El control no pasa los eventos a través de.         |
+| true  | El control pasa eventos al control bajo él. |
+| false | Predeterminada. El control no pasa eventos a través de .         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo es útil si, por ejemplo, un control de texto se coloca sobre un control de botón solo para proporcionar etiquetas. En este caso, los clics en el control de texto se deben pasar al control de botón.
+Este atributo es útil si, por ejemplo, un control de texto se encuentra encima de un control de botón solo para proporcionar etiquetado. En este caso, los clics en el control de texto se deben pasar al control de botón.
 
-Los elementos de **vista**, **subvista** y **lista de reproducción** no admiten el atributo **passThrough** . No funcionará con el elemento de **vídeo** si se trata de un *vídeo*. **Windowless** está establecido en false, y en el elemento **Effects** si tiene *efectos*. **windowed** está establecido en true.
+Los elementos **VIEW,** **SUBVIEW** y **PLAYLIST** no admiten el atributo **passThrough.** No funcionará con el elemento **VIDEO** si *VIDEO*. **windowless** se establece en false, ni con el **elemento EFFECTS** si *EFFECTS*. **windowed** se establece en true.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Los elementos de **vista**, **subvista** y **lista de reproducción** no admiten
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -62,7 +62,7 @@ Los elementos de **vista**, **subvista** y **lista de reproducción** no admiten
 
 <dl> <dt>
 
-[**Atributos de ambiente**](ambient-attributes.md)
+[**Atributos ambientales**](ambient-attributes.md)
 </dt> </dl>
 
  

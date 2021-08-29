@@ -1,6 +1,6 @@
 ---
-title: Función D2DSampleInputAtOffset (D2d1effecthelpers. h)
-description: Los ejemplos de entrada N tienen un desplazamiento de desplazamiento desde la coordenada de entrada. Solo está disponible para las entradas complejas.
+title: Función D2DSampleInputAtOffset (D2d1effecthelpers.h)
+description: Muestra la entrada N con un desplazamiento de desplazamiento de la coordenada de entrada. Solo está disponible para entradas complejas.
 ms.assetid: 4A01264E-04E3-49BD-9EF8-7834D9B8B0B8
 keywords:
 - Función D2DSampleInputAtOffset Direct2D
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc7718f8f48ddfd316d1312dbdff3a5da1f45dfb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1e316e4daf533f66bba9d34a6ac89c61094db536e19e710d1c5c235edb7d250c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075309"
 ---
-# <a name="d2dsampleinputatoffset-function"></a>D2DSampleInputAtOffset función)
+# <a name="d2dsampleinputatoffset-function"></a>Función D2DSampleInputAtOffset
 
-Los ejemplos de entrada N tienen un desplazamiento de desplazamiento desde la coordenada de entrada. Solo está disponible para las entradas complejas.
+Muestra la entrada N con un desplazamiento de desplazamiento de la coordenada de entrada. Solo está disponible para entradas complejas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,25 +38,25 @@ float4 WINAPI D2DSampleInputAtOffset(
 
 <dl> <dt>
 
-*N* \[ in\]
+*N* \[ en\]
 </dt> <dd>
 
 Número de entrada.
 
 </dd> <dt>
 
-*desplazamiento* \[ de\]
+*desplazamiento* \[ En\]
 </dt> <dd>
 
-Desplazamiento de UV.
+Desplazamiento uv.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve una **FLOAT4**, en el formato TEXCOORDN.
+La función devuelve **float4**, con el formato TEXCOORDN.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En el ejemplo siguiente se muestra la función que se usa como parte de una máscara de degradado de resaltado y sombras.
 
@@ -99,7 +99,7 @@ D2D_PS_ENTRY(HighlightsAndShadowsGradientMask)
 [Vinculación del sombreador de efectos](effect-shader-linking.md)
 </dt> <dt>
 
-[Aplicaciones auxiliares de HLSL](hlsl-helpers.md)
+[Asistentes hlsl](hlsl-helpers.md)
 </dt> </dl>
 
  

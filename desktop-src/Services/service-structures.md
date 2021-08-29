@@ -1,39 +1,39 @@
 ---
-description: 'Las siguientes estructuras se utilizan con servicios:'
+description: 'Las estructuras siguientes se usan con los servicios:'
 ms.assetid: 775ecbeb-3a2a-40dd-b262-b66dea04713d
 title: Estructuras de servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9db173d237558046ea1b6ab7c44e6dcf78326a4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0ddef8cb4613f2c466a9ff5c4300f76bd4a6146d2345bfbb7fe011f5ab9fc300
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888589"
 ---
 # <a name="service-structures"></a>Estructuras de servicio
 
-Las siguientes estructuras se utilizan con servicios:
+Las estructuras siguientes se usan con los servicios:
 
--   [**\_Estado del servicio enum \_**](/windows/desktop/api/Winsvc/ns-winsvc-enum_service_statusa)
--   [**proceso de ENUMERAción de \_ Estado del servicio \_ \_**](/windows/desktop/api/Winsvc/ns-winsvc-enum_service_status_processa)
--   [**\_configuración del servicio de consulta \_**](/windows/desktop/api/Winsvc/ns-winsvc-query_service_configa)
--   [**\_Estado de \_ bloqueo del servicio de consulta \_**](/windows/desktop/api/Winsvc/ns-winsvc-query_service_lock_statusa)
--   [**acción de SC \_**](/windows/desktop/api/Winsvc/ns-winsvc-sc_action)
--   [**\_información de \_ \_ Inicio automático RETRASAda del servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_delayed_auto_start_info)
--   [**Descripción del servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_descriptiona)
--   [**\_acciones de error del servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_failure_actionsa)
--   [**\_marca de \_ acciones de error de servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_failure_actions_flag)
--   [**notificación de servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_notify_2a)
--   [**información de cierre del servicio \_ \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_preshutdown_info)
--   [**\_información de \_ privilegios \_ necesarios del servicio**](/windows/desktop/api/Winsvc/ns-winsvc-service_required_privileges_infoa)
--   [**\_información de SID de servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_sid_info)
--   [**Estado del servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_status)
--   [**\_proceso de estado del servicio \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_status_process)
--   [**entrada de la tabla de servicio \_ \_**](/windows/desktop/api/Winsvc/ns-winsvc-service_table_entrya)
--   [**\_desencadenador de servicio**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger)
--   [**\_información de desencadenador de servicio \_**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger_info)
--   [**\_elemento de \_ \_ datos específico de DESENCADENAdor de servicio \_**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger_specific_data_item)
+-   [**ESTADO DEL SERVICIO ENUM \_ \_**](/windows/desktop/api/Winsvc/ns-winsvc-enum_service_statusa)
+-   [**PROCESO DE ESTADO \_ DEL \_ SERVICIO ENUM \_**](/windows/desktop/api/Winsvc/ns-winsvc-enum_service_status_processa)
+-   [**CONFIGURACIÓN \_ DEL SERVICIO DE \_ CONSULTA**](/windows/desktop/api/Winsvc/ns-winsvc-query_service_configa)
+-   [**ESTADO DE \_ BLOQUEO DEL SERVICIO DE \_ \_ CONSULTA**](/windows/desktop/api/Winsvc/ns-winsvc-query_service_lock_statusa)
+-   [**ACCIÓN \_ DE SC**](/windows/desktop/api/Winsvc/ns-winsvc-sc_action)
+-   [**INFORMACIÓN \_ DE INICIO AUTOMÁTICO \_ \_ DIFERIDO DEL \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_delayed_auto_start_info)
+-   [**DESCRIPCIÓN DEL \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_descriptiona)
+-   [**ACCIONES DE \_ ERROR \_ DE SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_failure_actionsa)
+-   [**MARCA DE \_ ACCIONES DE ERROR DE \_ \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_failure_actions_flag)
+-   [**NOTIFICACIÓN DE \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_notify_2a)
+-   [**INFORMACIÓN \_ DE PRESHUTDOWN DEL \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_preshutdown_info)
+-   [**INFORMACIÓN DE \_ \_ PRIVILEGIOS NECESARIOS DEL \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_required_privileges_infoa)
+-   [**INFORMACIÓN \_ DE SID DE \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_sid_info)
+-   [**ESTADO DEL \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_status)
+-   [**PROCESO DE \_ ESTADO DEL \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_status_process)
+-   [**ENTRADA \_ DE TABLA DE \_ SERVICIO**](/windows/desktop/api/Winsvc/ns-winsvc-service_table_entrya)
+-   [**DESENCADENADOR DE \_ SERVICIO**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger)
+-   [**INFORMACIÓN DEL \_ DESENCADENADOR \_ DE SERVICIO**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger_info)
+-   [**ELEMENTO DE \_ DATOS ESPECÍFICO DEL DESENCADENADOR DE \_ \_ \_ SERVICIO**](/windows/desktop/api/winsvc/ns-winsvc-service_trigger_specific_data_item)
 
  
 

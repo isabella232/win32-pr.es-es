@@ -3,7 +3,7 @@ title: ondblclick
 description: El controlador de eventos ondblclick controla un evento que se produce cuando el usuario hace doble clic en el elemento.
 ms.assetid: 36183f66-79f6-4748-ad2d-af433a5986dd
 keywords:
-- Media Player de Windows ondblclick
+- ondblclick Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 27097937ce1ef5ec1f5c9cac2831099616cd88b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb6245a53efbac9086d1c59410c88844f23b03778e343fb45e927412299374f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054443"
 ---
 # <a name="ondblclick"></a>ondblclick
 
-El controlador de eventos **ondblclick** controla un evento que se produce cuando el usuario hace doble clic en el elemento.
+El **controlador de eventos ondblclick** controla un evento que se produce cuando el usuario hace doble clic en el elemento.
 
 ``` syntax
 ondblclick
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este controlador de eventos no es aplicable al elemento **playlist** , el elemento **popup** , el elemento de **vídeo** cuando se produce un *vídeo*. **Windowless** es false o el elemento **Effects** cuando tiene *efectos*. **windowed** es true.
+Este controlador de eventos no es aplicable al elemento **PLAYLIST,** el **elemento POPUP** y el **elemento VIDEO** cuando *VIDEO*. **windowless** es false o el elemento **EFFECTS** cuando *EFFECTS*. **windowed** es true.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -46,7 +46,7 @@ Este controlador de eventos no es aplicable al elemento **playlist** , el elemen
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

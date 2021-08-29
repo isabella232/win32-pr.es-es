@@ -1,7 +1,7 @@
 ---
 description: El método Reset restablece el objeto para que pueda recibir más datos.
 ms.assetid: 7074ed71-1650-4b21-a9a2-ad74d0e3e882
-title: Método COutputQueue. Reset (Outputq. h)
+title: Método COutputQueue.Reset (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d380ef738af3b684606e86a7c36dc04217c54b7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4129730ae3ce2f3a95db41d8bc65025c3195056cbd4a1afddbfeb83d9bb33ea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073659"
 ---
-# <a name="coutputqueuereset-method"></a>COutputQueue. Reset (método)
+# <a name="coutputqueuereset-method"></a>Método COutputQueue.Reset
 
 El `Reset` método restablece el objeto para que pueda recibir más datos.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método restablece la variable miembro [**COutputQueue:: m \_ HR**](coutputqueue-m-hr.md) a S \_ OK. El objeto puede volver a recibir ejemplos de medios; por ejemplo, después de una operación de vaciado.
+Este método restablece la variable [**miembro COutputQueue::m \_ hr**](coutputqueue-m-hr.md) a S \_ OK. El objeto puede volver a recibir ejemplos multimedia; por ejemplo, después de una operación de vaciado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método restablece la variable miembro [**COutputQueue:: m \_ HR**](coutput
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método restablece la variable miembro [**COutputQueue:: m \_ HR**](coutput
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: función glGetPolygonStipple (GL. h)
-description: La función glGetPolygonStipple devuelve el patrón de los polígonos.
+title: Función glGetPolygonStipple (Gl.h)
+description: La función glGetPolygonStipple devuelve el patrón detippla de polígono.
 ms.assetid: 95c1ebfa-8465-4bc1-b3f5-eed696a83816
 keywords:
-- glGetPolygonStipple (función) OpenGL
+- Función glGetPolygonStipple OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 643d0ea6b7583f26565ab7b9233f7df1dce9aead
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 566a2e112b4e9d64487292adafbd4fda016f3a4ceb695a473d958a374c0add8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144198"
 ---
-# <a name="glgetpolygonstipple-function"></a>glGetPolygonStipple función)
+# <a name="glgetpolygonstipple-function"></a>Función glGetPolygonStipple
 
-La función **glGetPolygonStipple** devuelve el patrón de los polígonos.
+La **función glGetPolygonStipple** devuelve el patrón detippla de polígono.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glGetPolygonStipple(
 *mask* 
 </dt> <dd>
 
-Devuelve el patrón punteado.
+Devuelve el patrón stipple.
 
 </dd> </dl>
 
@@ -53,21 +53,21 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glGetPolygonStipple** devuelve un patrón punteado de 32 polígonos a través del parámetro *Mask* . El patrón se empaqueta en la memoria como si se llamara a [**glReadPixels**](glreadpixels.md) con el *alto* y el *ancho* de 32, el *tipo* de mapa de bits de contabilidad \_ y el *formato* del índice de color de GL \_ \_ y el patrón punteado se almacenó en un búfer interno de índice de color 32x32. A diferencia de **glReadPixels**, sin embargo, las operaciones de transferencia de píxeles (desplazamiento, desplazamiento y mapa de píxeles) no se aplican a la imagen de un devuelto.
+La **función glGetPolygonStipple** devuelve un patrón detippla de polígono de 32 x 32 a través del *parámetro mask.* El patrón se empaqueta en memoria como si  se  llamara [**a glReadPixels**](glreadpixels.md) con un alto y un ancho de 32, el tipo de IMAGEN DE GL y el formato de GL COLOR INDEX, y el patrón detippla se almacenase en un búfer interno de índice de color de  \_  \_ \_ 32 x 32. Sin embargo, a diferencia de **glReadPixels,** las operaciones de transferencia de píxeles (desplazamiento, desplazamiento y mapa de píxeles) no se aplican a la imagen detippla devuelta.
 
-Si se genera un error, no se realiza ningún cambio en el contenido de la *máscara*.
+Si se genera un error, no se realiza ningún cambio en el contenido de *mask*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,8 +77,8 @@ Si se genera un error, no se realiza ningún cambio en el contenido de la *másc
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

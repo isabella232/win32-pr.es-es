@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RETRIEVECOLUMN. cbData'
-title: Propiedad JET_RETRIEVECOLUMN. cbData
+description: 'Más información sobre: JET_RETRIEVECOLUMN.cbData'
+title: JET_RETRIEVECOLUMN.cbData, propiedad
 TOCTitle: 'cbData property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.cbData
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.cbdata(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8b91e78d31e2c82b0825da5e320fef558f790caf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8012a305fef042e27749be233741b2cf85acd0994a9164c553e374e3e966a7c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038693"
 ---
-# <a name="jet_retrievecolumncbdata-property"></a>Propiedad JET_RETRIEVECOLUMN. cbData
+# <a name="jet_retrievecolumncbdata-property"></a>JET_RETRIEVECOLUMN.cbData, propiedad
 
-Obtiene o establece el tamaño del búfer de [pvData](./jet-retrievecolumn.pvdata-property.md) , en bytes. La operación de recuperación de columna no almacenará más datos en pvData que cbData.
+Obtiene o establece el tamaño del búfer [pvData,](./jet-retrievecolumn.pvdata-property.md) en bytes. La operación de recuperación de columna no almacenará más datos en pvData que cbData.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int cbData { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETRIEVECOLUMN (clase)](./jet-retrievecolumn-class.md)
+[JET_RETRIEVECOLUMN clase](./jet-retrievecolumn-class.md)
 
-[Miembros de JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN miembros](./jet-retrievecolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

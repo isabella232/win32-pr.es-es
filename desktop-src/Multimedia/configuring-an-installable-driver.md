@@ -3,22 +3,22 @@ title: Configuración de un controlador instalable
 description: Configuración de un controlador instalable
 ms.assetid: c81f4bcb-38c6-42f1-a50d-1f700c6a3c37
 keywords:
-- Controladores instalables, configurar
+- controladores instalables, configurar
 - configuración de controladores instalables
-- OpenDriver función)
-- SendDriverMessage función)
+- Función OpenDriver
+- Función SendDriverMessage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ad0ad16d719152dba0dc0b2ca6224122831a0ce
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 60942b9814abd8e1f6317adb976198a5359df358a994035a15ccf0c59ab18dd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144938"
 ---
 # <a name="configuring-an-installable-driver"></a>Configuración de un controlador instalable
 
-Para dirigir un controlador instalable para llevar a cabo tareas útiles, debe abrir el controlador mediante la función [OpenDriver](/windows/win32/api/mmiscapi/nf-mmiscapi-opendriver) y enviar mensajes mediante la función [SendDriverMessage](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) . En el ejemplo siguiente se muestra cómo dirigir el controlador para que muestre su cuadro de diálogo de configuración.
+Para dirigir un controlador instalable para llevar a cabo tareas útiles, debe abrir el controlador mediante la función [OpenDriver](/windows/win32/api/mmiscapi/nf-mmiscapi-opendriver) y enviarlo mensajes mediante la [función SendDriverMessage.](/windows/win32/api/mmiscapi/nf-mmiscapi-senddrivermessage) En el ejemplo siguiente se muestra cómo dirigir el controlador para que muestre su cuadro de diálogo de configuración.
 
 
 ```C++
@@ -53,6 +53,6 @@ LONG MyConfigureDriver()
 
 
 
- 
+ 
 
- 
+ 

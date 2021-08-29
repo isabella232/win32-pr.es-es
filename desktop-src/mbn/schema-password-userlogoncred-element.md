@@ -1,7 +1,7 @@
 ---
-description: Especifica la contraseña que se usa para autenticar a un usuario.
+description: Especifica la contraseña usada para autenticar a un usuario.
 ms.assetid: 9c02413b-a4c7-4c1f-a150-e27cc125faf6
-title: Password (UserLogonCred), elemento
+title: Elemento Password (UserLogonCred)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name:
 - Password
 api_type:
 - Schema
-ms.openlocfilehash: b05e34bcbaa91aba5cbfbd14f2bc8534aa91dd37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63ee5386c4bd9eb168e4b4ac663e857590509ebf5ab0183165fdb5e7ab59a7e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035793"
 ---
-# <a name="password-userlogoncred-element"></a>Password (UserLogonCred), elemento
+# <a name="password-userlogoncred-element"></a>Elemento Password (UserLogonCred)
 
-El elemento [**password (UserLogonCred)**](schema-ignorepassword-userlogoncred-element.md) especifica la contraseña que se usa para autenticar a un usuario.
+El [**elemento Password (UserLogonCred)**](schema-ignorepassword-userlogoncred-element.md) especifica la contraseña usada para autenticar a un usuario.
 
 El elemento es una cadena de hasta 255 caracteres.
 
@@ -32,7 +32,7 @@ Este elemento es opcional.
  />
 ```
 
-El elemento de **contraseña** se define mediante el elemento [**UserLogonCred**](schema-userlogoncred-contexttype-element.md) .
+El **elemento Password** se define mediante el elemento [**UserLogonCred.**](schema-userlogoncred-contexttype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ El elemento de **contraseña** se define mediante el elemento [**UserLogonCred**
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

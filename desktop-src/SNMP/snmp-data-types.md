@@ -1,27 +1,27 @@
 ---
-title: Tipos de datos de SNMP (SNMP. h)
-description: La API SNMP define los siguientes tipos de datos.
+title: Tipos de datos SNMP (Snmp.h)
+description: La API DE SNMP define los siguientes tipos de datos.
 ms.assetid: 147c24e2-cc7b-422c-822b-a2892d1ab044
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c50ef59a1c2b2f39f34564610efdd05fe4808478
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 561a6c3e63f1ad38f9552b48ed7ca879e7f82e060796391da127757821e7a299
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008923"
 ---
-# <a name="snmp-data-types"></a>Tipos de datos de SNMP
+# <a name="snmp-data-types"></a>Tipos de datos SNMP
 
-\[SNMP está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, use [administración remota de Windows](/windows/desktop/WinRM/portal), que es la implementación de Microsoft de WS-MAN.\]
+\[SNMP está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, [Windows administración remota](/windows/desktop/WinRM/portal), que es la implementación de Microsoft de WS-Man.\]
 
-La API SNMP define los siguientes tipos de datos.
+La API DE SNMP define los siguientes tipos de datos.
 
 
 
 | Tipo de datos                      | Descripción                                                            |
 |--------------------------------|------------------------------------------------------------------------|
-| **AsnObjectName**<br/>   | Vea [**AsnObjectIdentifier**](/windows/desktop/api/Snmp/ns-snmp-asnobjectidentifier).<br/> |
+| **AsnObjectName**<br/>   | Vea [**AsnObjectIdentifier.**](/windows/desktop/api/Snmp/ns-snmp-asnobjectidentifier)<br/> |
 | **AsnObjectSyntax**<br/> | Vea [**AsnAny**](/windows/desktop/api/Snmp/ns-snmp-asnany).<br/>                           |
 
 
@@ -36,7 +36,7 @@ La API SNMP define los siguientes tipos de datos.
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>SNMP. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Snmp.h</dt> </dl> |
 
 
 

@@ -1,31 +1,31 @@
 ---
-description: Muestra varias maneras de usar la CryptAcquireContext y las funciones de CryptoAPI relacionadas para trabajar con un proveedor de servicios criptográficos (CSP) y un contenedor de claves.
+description: Muestra varias maneras diferentes de usar CryptAcquireContext y las funciones CryptoAPI relacionadas para trabajar con un proveedor de servicios criptográficos (CSP) y un contenedor de claves.
 ms.assetid: e8d2503c-a38f-44f6-a653-ae9c7bf903bd
-title: 'Programa C de ejemplo: uso de CryptAcquireContext'
+title: 'Programa de C de ejemplo: uso de CryptAcquireContext'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 074d1967d8a32001e620b089280c034887b90cd4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5fb042d0b63666db8bcf44045a6e05b3be36742a458a0fe41e9f61a2ef6171f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140818"
 ---
-# <a name="example-c-program-using-cryptacquirecontext"></a>Programa C de ejemplo: uso de CryptAcquireContext
+# <a name="example-c-program-using-cryptacquirecontext"></a>Programa de C de ejemplo: uso de CryptAcquireContext
 
-En el ejemplo siguiente se muestran varias maneras de usar la [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) y las funciones de CryptoAPI relacionadas para trabajar con un [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) y un [*contenedor de claves*](../secgloss/k-gly.md).
+En el ejemplo siguiente se muestran varias maneras diferentes de usar [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) y las funciones cryptoAPI relacionadas para trabajar con un proveedor de servicios criptográficos [*(CSP)*](../secgloss/c-gly.md) y un contenedor de [*claves*](../secgloss/k-gly.md).
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Use la función [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para adquirir un identificador para el CSP predeterminado y el contenedor de claves predeterminado. Si no existe ningún contenedor de claves predeterminado, utilice la función **CryptAcquireContext** para crear el contenedor de claves predeterminado.
--   Utilice la función [**CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam) para recuperar información sobre un CSP y un contenedor de claves.
--   Aumente el [*recuento de referencias*](../secgloss/r-gly.md) en el proveedor mediante la función [**CryptContextAddRef**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcontextaddref) .
--   Libere un CSP mediante la función [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) .
--   Cree un contenedor de claves con nombre mediante la función [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) .
--   Adquirir un identificador para un CSP mediante el contenedor de claves que se acaba de crear.
--   Elimine un contenedor de claves mediante la función [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) .
+-   Use la [**función CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para adquirir un identificador para el CSP predeterminado y el contenedor de claves predeterminado. Si no existe ningún contenedor de claves predeterminado, use **la función CryptAcquireContext** para crear el contenedor de claves predeterminado.
+-   Use la [**función CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam) para recuperar información sobre un CSP y un contenedor de claves.
+-   Aumente el [*recuento de referencias*](../secgloss/r-gly.md) en el proveedor mediante la función [**CryptContextAddRef.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcontextaddref)
+-   Libere un CSP mediante la [**función CryptReleaseContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
+-   Cree un contenedor de claves con nombre mediante la [**función CryptAcquireContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
+-   Adquiera un identificador para un CSP mediante el contenedor de claves recién creado.
+-   Elimine un contenedor de claves mediante la [**función CryptAcquireContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

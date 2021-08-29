@@ -4,12 +4,12 @@ ms.assetid: 533d43d7-0c49-4461-8ba8-368c103feb4f
 title: Campos de la versión 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48e66d66d9c5d92f7c3a0436ae828b60d285edce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f7aed470acfbc3c9a648de46f89a72dc3de361e61eed39cdce4aebbf28e133f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903431"
 ---
 # <a name="version-2-fields"></a>Campos de la versión 2
 
@@ -51,7 +51,7 @@ UniqueIdentifier ::= BITSTRING
 [Extensiones de la versión 3](about-version-3-extensions.md)
 </dt> <dt>
 
-[Certificados de clave pública X. 509](about-x-509-public-key-certificates.md)
+[Certificados de clave pública X.509](about-x-509-public-key-certificates.md)
 </dt> </dl>
 
  

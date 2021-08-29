@@ -1,11 +1,11 @@
 ---
-title: Propiedad de valor de contraitem. Value
+title: CounterItem.Value, propiedad
 description: Recupera el último valor muestreado del contador.
 ms.assetid: c5aeaa00-e185-484d-8a7a-d45a21690e20
 keywords:
-- Propiedad de valor SysMon
-- Propiedad Value SysMon, clase de contraelemento
-- Clase de contraelemento SysMon, propiedad Value
+- Propiedad Value SysMon
+- Propiedad Value SysMon , clase CounterItem
+- Clase CounterItem SysMon , propiedad Value
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62c0d6bd9e1751e34c980bc95f790314017eeb49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7399215d118e86ecfc1c58fab79b17866658a6d057d39b7df26199f86d7568ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883673"
 ---
-# <a name="counteritemvalue-property"></a>Propiedad de valor de contraitem. Value
+# <a name="counteritemvalue-property"></a>CounterItem.Value, propiedad
 
 Recupera el último valor muestreado del contador.
 
@@ -40,32 +40,32 @@ Property Value As Double
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Último valor muestreado del contador. El valor es-1 si se produce un error.
+Último valor muestreado del contador. El valor es -1 si se produce un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta es la propiedad predeterminada del objeto de [**elemento**](counteritem.md) de mismo valor.
+Esta es la propiedad predeterminada del [**objeto CounterItem.**](counteritem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento de**](counteritem.md)
+[**CounterItem**](counteritem.md)
 </dt> <dt>
 
-[**Peritem. GetValue**](counteritem-getvalue.md)
+[**CounterItem.GetValue**](counteritem-getvalue.md)
 </dt> </dl>
 
  

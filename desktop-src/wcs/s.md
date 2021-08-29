@@ -3,59 +3,59 @@ title: S
 description: S
 ms.assetid: b9b7ce12-0779-4f8e-8757-a3b9a6ff0d29
 keywords:
-- Sistema de color de Windows (WCS), Glosario
-- WCS (sistema de color de Windows), Glosario
-- Administración del color de imagen, Glosario
-- Administración del color, Glosario
-- colores, Glosario
-- Sistema de color de Windows (WCS), definiciones
-- WCS (sistema de colores de Windows), definiciones
-- Administración del color de imagen, definiciones
-- Administración del color, definiciones
-- colores, definiciones
-- Sistema de colores de Windows (WCS), términos
-- WCS (sistema de colores de Windows), términos
-- Administración del color de imagen, términos
-- Administración del color, términos
-- colores, términos
-- satura
-- chromo
-- Salta
-- prueba de software
-- espacio de color sRGB
+- Windows Sistema de colores (WCS), glosario
+- WCS (Windows color),glosario
+- administración del color de la imagen, glosario
+- administración de colores, glosario
+- colors,glosario
+- Windows Sistema de colores (WCS), definiciones
+- WCS (Windows color),definiciones
+- administración de colores de imagen, definiciones
+- administración de colores, definiciones
+- colors,definitions
+- Windows Sistema de colores (WCS), términos
+- WCS (Windows Color System),terms
+- administración del color de la imagen, términos
+- administración de colores, términos
+- colors,terms
+- Saturación
+- Chromo
+- Sombra
+- soft proofing
+- espacio de colores sRGB
 - espacios de colores, sRGB
-- colores primarios restados
+- colores primarios de resta
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9952ec941f7bfffff64143beddc79510aedbfa6
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 6f9d143841d6fca74e502eed7c1467b7e3ea6e075ab13b5c471ba0ccdc86efed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105720810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451465"
 ---
 # <a name="s"></a>S
 
-## <a name="saturation-chroma"></a>saturación (croma)
+## <a name="saturation-chroma"></a>saturación (temperatura)
 
-Por lo general, croma es la cantidad de gris que se mezcla en un matiz. El color de intensidad cero produce un sombreado de gris. El croma completo produce un matiz puro.
+Por lo general, el color azulado es la cantidad de gris que se mezcla en un matiz. El color cero produce un tono gris. El tono completo produce un matiz puro.
 
-## <a name="shade"></a>Salta
+## <a name="shade"></a>Sombra
 
 Un tono de un color se realiza agregando negro a su matiz.
 
-## <a name="soft-proofing"></a>prueba de software
+## <a name="soft-proofing"></a>soft proofing
 
 Vista previa o prueba de una imagen en una pantalla de vídeo.
 
 ## <a name="srgb"></a>sRGB
 
-Un espacio de colores RGB estándar internacional propuesto por Microsoft y Hewlett-Packard que es independiente del dispositivo. Este estándar se ha aprobado como estándar internacional formal por los sistemas multimedia y la medida EquipmentColour y ManagementPart 2-1: el color ManagementDefault RGB de color. Está disponible directamente desde el IEC en https://www.iec.ch/ .
+Un espacio de color RGB estándar internacional propuesto por Microsoft y Hewlett-Packard independiente del dispositivo. Este estándar se ha aprobado como un estándar internacional formal por los sistemas multimedia y equipos Medición y administración deColourPart 2-1: Administración de residuosPerfierto de espacios de color RGB predeterminados. Está disponible directamente desde iec en https://www.iec.ch/ .
 
-## <a name="subtractive-primary-colors"></a>colores primarios restados
+## <a name="subtractive-primary-colors"></a>colores primarios de resta
 
-Colores que se pueden restar de blanco para mezclar un nuevo color. Los colores primarios restados son cian, amarillo y magenta.
+Colores que se pueden restar del blanco para mezclar un nuevo color. Los colores primarios resaltes son cian, amarillo y rojo.
 
  
 

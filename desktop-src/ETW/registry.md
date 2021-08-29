@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 23cd59e8d6afeb7578bd65625741caaae8156066
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f3a4aeacf3749e2cf67622f0a16cd645d12606618f9ffec8facaeb12b52bd4e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069765"
 ---
 # <a name="registry-class"></a>Clase del Registro
 
@@ -40,31 +40,31 @@ La **clase Registry** no define ningún miembro.
 
 ## <a name="remarks"></a>Comentarios
 
-Para habilitar eventos del Registro en una sesión de registro del kernel de NT, especifique **EVENT \_ TRACE FLAG \_ \_ REGISTRY** en el **miembro EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea)
+Para habilitar eventos del Registro en una sesión de registro del kernel de NT, especifique **EVENT \_ TRACE FLAG \_ \_ REGISTRY** en el miembro **EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea)
 
-Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos del Registro llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**RegistryGuid**](nt-kernel-logger-constants.md) como *el parámetro pGuid.* Use los siguientes tipos de eventos para identificar el evento del Registro real al consumir eventos.
+Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos del Registro llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y [**especificando RegistryGuid**](nt-kernel-logger-constants.md) como *parámetro pGuid.* Use los siguientes tipos de eventos para identificar el evento del Registro real al consumir eventos.
 
 
 
 | Tipo de evento                                                                       | Descripción                                                                                                                                                                                                           |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **EVENT \_ TRACE \_ TYPE \_ REGCREATE**(el valor del tipo de evento es 10)<br/>             | Crear evento clave. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                            |
-| **EVENT \_ TRACE \_ TYPE \_ REGDELETE**(el valor del tipo de evento es 12)<br/>             | Evento de eliminación de clave. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                            |
-| **EVENT \_ TRACE \_ TYPE \_ REGDELETEVALUE**(el valor del tipo de evento es 15)<br/>        | Evento de eliminación de valor. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                          |
-| **EVENT \_ TRACE \_ TYPE \_ REGENUMERATEKEY**(el valor del tipo de evento es 17)<br/>       | Enumerar evento clave. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                         |
+| **EVENTO \_ TRACE \_ TYPE \_ REGCREATE**(el valor del tipo de evento es 10)<br/>             | Crear evento clave. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                            |
+| **EVENTO \_ TRACE \_ TYPE \_ REGDELETE**(el valor del tipo de evento es 12)<br/>             | Evento de eliminación de clave. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                            |
+| **EVENTO \_ TRACE \_ TYPE \_ REGDELETEVALUE**(el valor del tipo de evento es 15)<br/>        | Evento de eliminación de valor. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                          |
+| **EVENTO \_ TRACE \_ TYPE \_ REGENUMERATEKEY**(el valor del tipo de evento es 17)<br/>       | Enumerar evento clave. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                         |
 | **EVENTO \_ TRACE \_ TYPE \_ REGENUMERATEVALUEKEY**(El valor del tipo de evento es 18)<br/>  | Enumerar evento de clave de valor. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                   |
 | **EVENTO \_ TRACE \_ TYPE \_ REGFLUSH**(el valor del tipo de evento es 21)<br/>              | Evento de clave de vaciado. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                             |
 | **EVENTO \_ TRACE \_ TYPE \_ REGKCBDMP**(el valor del tipo de evento es 22)<br/>             | Crear evento clave. Se genera cuando una operación del Registro usa identificadores en lugar de cadenas para hacer referencia a subclaves. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento. |
 | **EVENTO \_ TRACE \_ TYPE \_ REGOPEN**(el valor del tipo de evento es 11)<br/>               | Evento de clave abierta. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                              |
 | **EVENTO \_ TRACE \_ TYPE \_ REGQUERY**(el valor del tipo de evento es 13)<br/>              | Evento de clave de consulta. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                             |
-| **EVENTO \_ TRACE \_ TYPE \_ REGQUERYMULTIPLEVALUE**(El valor del tipo de evento es 19)<br/> | Consulta de varios eventos de valor. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                  |
-| **EVENT \_ TRACE \_ TYPE \_ REGQUERYVALUE**(el valor del tipo de evento es 16)<br/>         | Evento de valor de consulta. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                           |
-| **EVENT \_ TRACE \_ TYPE \_ REGSETINFORMATION**(el valor del tipo de evento es 20)<br/>     | Establecer evento de información. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                       |
-| **EVENT \_ TRACE \_ TYPE \_ REGSETVALUE**(el valor del tipo de evento es 14)<br/>           | Evento de valor establecido. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                             |
-| Valor de tipo de evento, 23                                                             | evento de eliminación de clave. Se genera cuando una operación del Registro usa identificadores en lugar de cadenas para hacer referencia a subclaves. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento. |
+| **EVENTO \_ TRACE \_ TYPE \_ REGQUERYMULTIPLEVALUE**(el valor del tipo de evento es 19)<br/> | Consulta de un evento de varios valores. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                  |
+| **EVENTO \_ TRACE \_ TYPE \_ REGQUERYVALUE**(el valor del tipo de evento es 16)<br/>         | Evento de valor de consulta. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                           |
+| **EVENTO \_ TRACE \_ TYPE \_ REGSETINFORMATION**(el valor del tipo de evento es 20)<br/>     | Establecer evento de información. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                       |
+| **EVENTO \_ TRACE \_ TYPE \_ REGSETVALUE**(el valor del tipo de evento es 14)<br/>           | Evento de valor establecido. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                             |
+| Valor del tipo de evento, 23                                                             | eliminar evento de clave. Se genera cuando una operación del Registro usa identificadores en lugar de cadenas para hacer referencia a subclaves. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento. |
 | Valor de tipo de evento, 24                                                             | Enumera las claves del Registro abiertas al principio de la sesión. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                           |
 | Valor de tipo de evento, 25                                                             | Enumera las claves del Registro abiertas al final de la sesión. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                  |
-| Valor de tipo de evento, 26                                                             | La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                                              |
+| Valor del tipo de evento, 26                                                             | La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                                              |
 | Valor del tipo de evento, 27                                                             | Evento de clave abierta. La [**clase \_ MOF Registry TypeGroup1**](registry-typegroup1.md) define los datos de evento para este evento.                                                                                              |
 
 
@@ -75,14 +75,14 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

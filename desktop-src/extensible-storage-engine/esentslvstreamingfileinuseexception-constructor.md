@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVStreamingFileInUseException'
-title: Constructor de EsentSLVStreamingFileInUseException
+description: 'Más información sobre: Constructor EsentSLVStreamingFileInUseException'
+title: Constructor EsentSLVStreamingFileInUseException
 TOCTitle: 'EsentSLVStreamingFileInUseException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVStreamingFileInUseException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvstreamingfileinuseexception.esentslvstreamingfileinuseexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 148e59a7b27d5cc25c9b38804cadf9435d32a666
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 382b5785f61c9ba5f3684335893a2b78a04df7719b6e386f7ccf45b6ffc5aaa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039749"
 ---
-# <a name="esentslvstreamingfileinuseexception-constructor"></a>Constructor de EsentSLVStreamingFileInUseException
+# <a name="esentslvstreamingfileinuseexception-constructor"></a>Constructor EsentSLVStreamingFileInUseException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVStreamingFileInUseException()
 public EsentSLVStreamingFileInUseException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVStreamingFileInUseException()
 
 [Miembros de EsentSLVStreamingFileInUseException](./esentslvstreamingfileinuseexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

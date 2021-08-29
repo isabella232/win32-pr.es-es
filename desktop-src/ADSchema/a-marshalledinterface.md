@@ -1,11 +1,11 @@
 ---
-title: Marshalled-Interface atributo)
-description: Puntero de interfaz serializado.
+title: Marshalled-Interface atributo
+description: Puntero de interfaz serializada.
 ms.assetid: bd7bf22b-03ce-4051-8ccc-d16405a5ddae
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Marshalled-Interface
-- marshalledInterface esquema de AD de atributos
+- Marshalled-Interface esquema de AD del atributo
+- Esquema de AD del atributo marshalledInterface
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 018c0b001ee5d692785c393a07ffd2d26e33018d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 865089e0ecb5f110dee63f173bdc2f689ca72ae3e9b1f4e60a8270ce9ab95a33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301175"
 ---
-# <a name="marshalled-interface-attribute"></a>Marshalled-Interface atributo)
+# <a name="marshalled-interface-attribute"></a>Marshalled-Interface atributo
 
-Puntero de interfaz serializado.
+Puntero de interfaz serializada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Marshalled-Interface                                  |
-| Nombre para mostrar de LDAP | marshalledInterface                                   |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | marshalledInterface                                   |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.72                                 |
-| System-ID-GUID    | bf9679b9-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf9679b9-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,20 +53,20 @@ Puntero de interfaz serializado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
+| Es de un solo valor       | False                                                           |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Puntero de interfaz serializado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
+| Es de un solo valor       | False                                                           |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Puntero de interfaz serializado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
+| Es de un solo valor       | False                                                           |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Puntero de interfaz serializado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
+| Es de un solo valor       | False                                                           |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Puntero de interfaz serializado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
+| Es de un solo valor       | False                                                           |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Puntero de interfaz serializado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                              |
+| Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | False                                                           |
-| Tiene un único valor       | False                                                           |
+| Es de un solo valor       | False                                                           |
 | Está indexado             | False                                                           |
 | En el catálogo global      | False                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Clases usadas en        | [**Com: punto de conexión**](c-comconnectionpoint.md)<br/> |
+| Clases usadas en        | [**Punto de conexión com**](c-comconnectionpoint.md)<br/> |
 
 
 

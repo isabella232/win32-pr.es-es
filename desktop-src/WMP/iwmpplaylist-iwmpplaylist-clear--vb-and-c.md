@@ -1,11 +1,11 @@
 ---
-title: IWMPPlaylist Clear (método)
-description: El método Clear está reservado para uso futuro.
+title: Método clear de IWMPPlaylist
+description: El método clear está reservado para su uso futuro.
 ms.assetid: 697e9c19-b27d-4f8e-bef2-485a209dd98e
 keywords:
-- Clear Method Media Player de Windows
-- Clear Method Media Player de Windows, interfaz IWMPPlaylist
-- Interfaz IWMPPlaylist Windows Media Player, Clear (método)
+- clear method Reproductor de Windows Media
+- clear method Reproductor de Windows Media , interfaz IWMPPlaylist
+- Interfaz IWMPPlaylist Reproductor de Windows Media , método clear
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d64a8d404f4f417daf006cc410d70712987e113
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 390223991b25c657b47e3dbdb8354872e1e86332080436a5cb6a220464c1642b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054803"
 ---
-# <a name="iwmpplaylistclear-method"></a>IWMPPlaylist:: CLEAR (método)
+# <a name="iwmpplaylistclear-method"></a>IWMPPlaylist::clear (Método)
 
-El método **Clear** está reservado para uso futuro.
+El **método clear** está reservado para su uso futuro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,9 +59,9 @@ Este método no devuelve ningún valor.
 [**Interfaz IWMPPlaylist (VB y C#)**](iwmpplaylist--vb-and-c.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

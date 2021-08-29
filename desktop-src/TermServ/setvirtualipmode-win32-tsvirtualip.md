@@ -1,12 +1,12 @@
 ---
-title: Método SetVirtualIPMode de la clase Win32_TSVirtualIP
+title: Método SetVirtualIPMode de la Win32_TSVirtualIP clase
 description: Establece el valor de la propiedad VirtualIPMode.
 ms.assetid: d4b39566-ad2a-493b-8022-c006a857043d
 ms.tgt_platform: multiple
 keywords:
 - Método SetVirtualIPMode Servicios de Escritorio remoto
-- Método SetVirtualIPMode Servicios de Escritorio remoto, clase Win32_TSVirtualIP
-- Win32_TSVirtualIP de clase Servicios de Escritorio remoto, método SetVirtualIPMode
+- Método SetVirtualIPMode Servicios de Escritorio remoto , Win32_TSVirtualIP clase
+- Win32_TSVirtualIP clase Servicios de Escritorio remoto , método SetVirtualIPMode
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 250633f5d41f5a4a7cb06a17ba9ae45bb444a018
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 39ec7007a82d274ca3ab6867eb5a4fe503cac4b37422a9ec8c267aa5f66da1db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058433"
 ---
 # <a name="setvirtualipmode-method-of-the-win32_tsvirtualip-class"></a>Método SetVirtualIPMode de la \_ clase TSVirtualIP de Win32
 
-Establece el valor de la propiedad **VirtualIPMode** .
+Establece el **valor de la propiedad VirtualIPMode.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,12 +43,12 @@ uint32 SetVirtualIPMode(
 
 <dl> <dt>
 
-*VirtualIPMode* \[ de\]
+*VirtualIPMode* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Especifica el modo de virtualización de IP que se utiliza en el servidor. Puede ser uno de los valores siguientes.
+Especifica qué modo de virtualización de IP se usa en el servidor. Puede ser uno de los siguientes valores.
 
 <dt>
 
@@ -68,20 +68,20 @@ El modo de virtualización de IP es por usuario.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está en control de directiva de grupo.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está bajo control de directiva de grupo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

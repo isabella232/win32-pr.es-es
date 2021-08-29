@@ -1,11 +1,11 @@
 ---
-title: Propiedad imageSourceHeight de IWMPMedia
+title: IWMPMedia imageSourceHeight, propiedad
 description: La propiedad imageSourceHeight obtiene el alto del elemento multimedia actual en píxeles.
 ms.assetid: d60f1713-7110-4605-9009-45825c380546
 keywords:
-- propiedades de imageSourceHeight Media Player de Windows
-- propiedad imageSourceHeight de Windows Media Player, interfaz IWMPMedia
-- Interfaz IWMPMedia Windows Media Player, propiedad imageSourceHeight
+- ImageSourceHeight, propiedad Reproductor de Windows Media
+- Propiedad imageSourceHeight Reproductor de Windows Media , interfaz IWMPMedia
+- Interfaz IWMPMedia Reproductor de Windows Media , propiedad imageSourceHeight
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b80a702f119ba72220e5ac3ac86b524ce8c11c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2b2e50aecc0efc13db4fe8f2a78cffe4ed95833d55ca9b1de70af31191aec1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861794"
 ---
-# <a name="iwmpmediaimagesourceheight-property"></a>IWMPMedia:: imageSourceHeight (propiedad)
+# <a name="iwmpmediaimagesourceheight-property"></a>Propiedad IWMPMedia::imageSourceHeight
 
-La propiedad **imageSourceHeight** obtiene el alto del elemento multimedia actual en píxeles.
+La **propiedad imageSourceHeight** obtiene el alto del elemento multimedia actual en píxeles.
 
 Esta propiedad es de solo lectura.
 
@@ -49,17 +49,17 @@ Public ReadOnly Property imageSourceHeight As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el alto del elemento multimedia.
+**System.Int32** que es el alto del elemento multimedia.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si el elemento multimedia no es el actual, esta propiedad devuelve cero.
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **imageSourceHeight** para mostrar el tamaño de la imagen, en píxeles, del elemento multimedia actual en un cuadro de texto. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa imageSourceHeight** para mostrar el tamaño de imagen, en píxeles, del elemento multimedia actual en un cuadro de texto. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -125,7 +125,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

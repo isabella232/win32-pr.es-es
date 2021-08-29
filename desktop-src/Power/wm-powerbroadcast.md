@@ -4,12 +4,12 @@ ms.assetid: 46452909-ac0e-4c06-8542-0b94d00e6556
 title: WM_POWERBROADCAST mensaje (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b205a146b731bdf8cf9adc1563621232c24c10b4
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 38b57a6c21aeae03a8b42deb8af10d5ce88e96f92a33b632d71285fa4c0c986a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143168"
 ---
 # <a name="wm_powerbroadcast-message"></a>Mensaje \_ DE WM POWERBROADCAST
 
@@ -43,7 +43,7 @@ Identificador a ventana.
 *uMsg*
 </dt> <dd> 
 
-| Valor                                                                                                                                                                                                                                          | Significado                        |
+| Value                                                                                                                                                                                                                                          | Significado                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>*:WM \_ POWERBROADCAST**</dt> <dt>536 (0x218)</dt> </dl> | Identificador del mensaje.<br/> |
 
@@ -87,11 +87,11 @@ Si el *parámetro wParam* es [PBT \_ POWERSETTINGCHANGE](pbt-powersettingchange.
 
 Una aplicación debe devolver **TRUE** si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El sistema siempre envía un mensaje [ \_ PBT APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) cada vez que se reanuda el sistema. Si el sistema se reanuda en respuesta a la entrada del usuario, como presionar una tecla, el sistema también envía un mensaje **\_ PBT APMRESUMESUSPEND** después de enviar PBT \_ APMRESUMEAUTOMATIC.
 
-**WM \_ Los mensajes POWERBROADCAST** no distinguen entre distintos estados de bajo consumo. Una aplicación solo puede determinar que el sistema entra o se ha reanudado desde un estado de bajo consumo. no puede determinar el estado de energía específico. El sistema registra detalles sobre las transiciones de estado de energía en el registro de eventos del sistema de Windows.
+**WM \_ Los mensajes POWERBROADCAST** no distinguen entre distintos estados de bajo consumo. Una aplicación solo puede determinar que el sistema entra o se ha reanudado desde un estado de bajo consumo. no puede determinar el estado de energía específico. El sistema registra detalles sobre las transiciones de estado de energía en el Windows de eventos del sistema.
 
 Para evitar que el sistema haga la transición a un estado de bajo consumo en Windows Vista, una aplicación debe llamar a [**SetThreadExecutionState**](/windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate) para informar al sistema de que está en uso.
 
@@ -106,11 +106,11 @@ Los mensajes siguientes no se admiten en ninguno de los sistemas operativos espe
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 

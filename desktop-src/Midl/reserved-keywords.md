@@ -2,23 +2,23 @@
 title: Palabras clave reservadas
 description: En este tema se enumeran las palabras clave reservadas en MIDL. No puede usar estas palabras clave en los nombres de las clases y miembros en tiempo de ejecución.
 keywords:
-- Referencia del lenguaje MIDL (MIDL), serialización en modo mixto de identificadores de contexto
-- identificadores de contexto MIDL
+- MIDL de referencia del lenguaje MIDL, serialización en modo mixto de identificadores de contexto
+- control de contexto MIDL
 - MIDL de serialización en modo mixto
 ms.topic: article
 ms.date: 02/05/2021
-ms.openlocfilehash: 90af58bce974b2987500fdf28bc7a87a2e683715
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 1aa5162e898fa8832b0eec3f742384be74f2c725730123ab6871d9f53802451d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104279723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146348"
 ---
 # <a name="reserved-keywords"></a>Palabras clave reservadas
 En este tema se enumeran las palabras clave reservadas en MIDL. No puede usar estas palabras clave en los nombres de las clases y miembros en tiempo de ejecución.
 
 ## <a name="list-of-keywords-that-are-reserved"></a>Lista de palabras clave reservadas
-false
+FALSE
 
 ISO_LATIN_1
 
@@ -134,7 +134,7 @@ byte
 
 mayúsculas y minúsculas
 
-Cdecl
+cdecl
 
 char
 
@@ -158,13 +158,13 @@ enum
 
 extern
 
-cuanto
+Lejos
 
 FLOAT
 
 handle_t
 
-Thread
+hyper
 
 importación
 
@@ -188,9 +188,9 @@ midl_pragma
 
 module
 
-near
+Cerca
 
-nomenclatura
+Pascal
 
 canalizar
 
@@ -228,7 +228,7 @@ void
 
 volatile
 
-## <a name="list-of-keywords-that-are-reserved-within-a---combination"></a>Lista de palabras clave reservadas dentro de una combinación "[]"
+## <a name="list-of-keywords-that-are-reserved-within-a---combination"></a>Lista de palabras clave reservadas dentro de una combinación "[ ]"
 aggregatable
 
 align
@@ -251,7 +251,7 @@ bindable
 
 broadcast
 
-Bstring
+bstring
 
 byte_count
 
@@ -285,7 +285,7 @@ custom
 
 custom_allocator
 
-descodificar
+Decodificar
 
 default_allocator
 
@@ -301,13 +301,13 @@ disable_consistency_check
 
 displaybind
 
-DllName
+Dllname
 
 dual
 
 enable_allocate
 
-codificar
+Codificar
 
 endpoint
 
@@ -395,7 +395,7 @@ ms_union
 
 nocode
 
-nointerpretar
+nointerpret
 
 nonbrowsable
 
@@ -403,7 +403,7 @@ noncreatable
 
 nonextensible
 
-notificar a
+Notificar
 
 notify_flag
 

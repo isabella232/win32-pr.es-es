@@ -1,33 +1,33 @@
 ---
-description: El estado de alimentación del sistema indica si el origen de energía de un equipo es una batería de sistema o corriente alterna. En el caso de los equipos que usan baterías, el estado de alimentación del sistema también indica la duración de la batería y si la batería se está cargando.
+description: El estado de energía del sistema indica si la fuente de alimentación de un equipo es una batería del sistema o una alimentación de CA. En el caso de los equipos que usan baterías, el estado de energía del sistema también indica cuánta duración de la batería permanece y si la batería se está cargando.
 ms.assetid: b9a5e7de-a603-4bd9-b854-1e58572c3b2b
-title: Estado de la alimentación del sistema
+title: Estado de energía del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e221142b5d39a4cb5bc49dbe85271c99837d0a20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bc73f022d54536272b51c58f8fa601e65a2c1b042968d2db8324bfb63449f40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143298"
 ---
-# <a name="system-power-status"></a>Estado de la alimentación del sistema
+# <a name="system-power-status"></a>Estado de energía del sistema
 
-El estado de alimentación del sistema indica si el origen de energía de un equipo es una batería de sistema o corriente alterna. En el caso de los equipos que usan baterías, el estado de alimentación del sistema también indica la duración de la batería y si la batería se está cargando.
+El estado de energía del sistema indica si la fuente de alimentación de un equipo es una batería del sistema o una alimentación de CA. En el caso de los equipos que usan baterías, el estado de energía del sistema también indica cuánta duración de la batería permanece y si la batería se está cargando.
 
-La información de energía se recupera registrando las notificaciones de configuración de energía a través de la función [**RegisterPowerSettingNotification**](/windows/desktop/api/WinUser/nf-winuser-registerpowersettingnotification) . Esta función permite a las aplicaciones registrarse para una configuración de energía específica y recibir una notificación cuando cambien.
+La información de energía se recupera mediante el registro de las notificaciones de configuración de energía a través de [**la función RegisterPowerSettingNotification.**](/windows/desktop/api/WinUser/nf-winuser-registerpowersettingnotification) Esta función permite que las aplicaciones se registren para una configuración de energía específica y se les notifique cuando cambien.
 
 > [!Note]  
 > Para consultar la información de estado de energía sin notificaciones, use [**CallNtPowerInformation**](/windows/desktop/api/Powerbase/nf-powerbase-callntpowerinformation).
 
  
 
-Las aplicaciones y los controladores instalables normalmente usan el estado de alimentación del sistema para determinar si la operación continua es viable. Por ejemplo, antes de que una aplicación realice operaciones en segundo plano, como comprimir o paginar un archivo, debe comprobar si el sistema tiene baterías. Otro ejemplo: una aplicación que inicia una operación larga debe comprobar el estado para determinar si existe suficiente energía de la batería para completar la operación.
+Las aplicaciones y los controladores instalables suelen usar el estado de energía del sistema para determinar si la operación continuada es factible. Por ejemplo, antes de que una aplicación realice operaciones en segundo plano, como comprimir o paginar un archivo, debe comprobar si el sistema está en baterías. Como otro ejemplo, una aplicación que está iniciando una operación larga debe comprobar el estado para determinar si existe suficiente batería para completar la operación.
 
-De forma predeterminada, el sistema no consulta las aplicaciones o los controladores durante las transiciones de suspensión.
+De forma predeterminada, el sistema no consulta las aplicaciones ni los controladores durante las transiciones de suspensión.
 
 > [!Note]  
-> Si la alimentación es baja, una aplicación puede solicitar la intervención del usuario o solicitar que el sistema se suspenda. Puede suspender el funcionamiento del sistema mediante la función [**SetSuspendState**](/windows/desktop/api/PowrProf/nf-powrprof-setsuspendstate) .
+> Si la energía es baja, una aplicación puede solicitar la intervención del usuario o solicitar que el sistema se suspenda. Puede suspender la operación del sistema mediante la [**función SetSuspendState.**](/windows/desktop/api/PowrProf/nf-powrprof-setsuspendstate)
 
  
 

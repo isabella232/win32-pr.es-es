@@ -20,12 +20,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b587a07f33b066cfd7dbeebc44d7277b33c6bee8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4686ed24682f27358b9a7959d7bb91519674b9db295a6d9c2aa10df1d06a87f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069975"
 ---
 # <a name="process_v2_typegroup1-class"></a>Clase \_ \_ TypeGroup1 de Process V2
 
@@ -122,7 +122,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(3), Format("x")
 </dt> </dl>
 
-Identificador único del proceso que crea este proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso durante la vigencia de ese proceso. Es posible que finalice el proceso identificado por ParentProcessId, por lo que ParentProcessId puede no hacer referencia a un proceso en ejecución. También es posible que ParentProcessId se refiere incorrectamente a un proceso que reutiliza un identificador de proceso.
+Identificador único del proceso que crea este proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso para la duración de ese proceso. Es posible que el proceso identificado por ParentProcessId finalice, por lo que ParentProcessId puede no hacer referencia a un proceso en ejecución. También es posible que ParentProcessId se refiere incorrectamente a un proceso que reutiliza un identificador de proceso.
 
 </dd> <dt>
 
@@ -198,14 +198,14 @@ Los tipos de eventos DCStart y DCEnd enumeran el proceso que se está ejecutando
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

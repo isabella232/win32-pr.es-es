@@ -1,15 +1,15 @@
 ---
-description: El método SelectAtPosition selecciona el botón de menú en las coordenadas especificadas del puntero del mouse.
+description: El método SelectAtPosition selecciona el botón de menú en las coordenadas de puntero del mouse especificadas.
 ms.assetid: 005ec550-e04c-4dae-aa5d-d79afefe48ed
 title: Método SelectAtPosition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97bc9feaa4855baac75fca0e776a26a6975b235a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e83cd45bc0d0a532531658a7cd55b6b1fa9a450726f1a00cf358c2db44b3e5f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072659"
 ---
 # <a name="selectatposition-method"></a>Método SelectAtPosition
 
@@ -18,7 +18,7 @@ ms.locfileid: "103805839"
 
  
 
-El `SelectAtPosition` método selecciona el botón de menú en las coordenadas especificadas del puntero del mouse.
+El `SelectAtPosition` método selecciona el botón de menú en las coordenadas de puntero del mouse especificadas.
 
 ``` syntax
 MSWebDVD.SelectAtPosition(xPos, yPos)
@@ -46,11 +46,11 @@ Especifica la coordenada y como un entero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método al implementar el control de mouse personalizado después de establecer [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) en **true**.
+Use este método al implementar el control personalizado del mouse después de establecer [**DisableAutoMouseProcessing en**](disableautomouseprocessing-property.md) **true.**
 
-Al seleccionar solo se resalta el botón. Para enviar el comando asociado a un botón que se ha seleccionado, llame a [**ActivateButton**](activatebutton-method.md).
+Al seleccionar simplemente se resalta el botón. Para enviar el comando asociado a un botón que se ha seleccionado, llame a [**ActivateButton**](activatebutton-method.md).
 
 ## <a name="see-also"></a>Vea también
 

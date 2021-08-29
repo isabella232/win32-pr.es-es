@@ -1,12 +1,12 @@
 ---
-title: Propiedad DeviceText de IMsRdpDeviceV2
+title: IMsRdpDeviceV2 DeviceText, propiedad
 description: Contiene el texto del dispositivo.
 ms.assetid: 2a67e8d4-2af3-4738-ade2-a79800aea4a1
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DeviceText
-- Propiedad DeviceText Servicios de Escritorio remoto, interfaz IMsRdpDeviceV2
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceV2, propiedad DeviceText
+- Propiedad DeviceText Servicios de Escritorio remoto
+- Propiedad DeviceText Servicios de Escritorio remoto interfaz , IMsRdpDeviceV2
+- Interfaz IMsRdpDeviceV2 Servicios de Escritorio remoto , propiedad DeviceText
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fb35142a166db7e7c05fa5c0f00f7fdf2e1219c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ed156a56215c859455cd16cb5d4ae0396eb24a0b62c8b9ae0ee6d5a43bd2ad3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138608"
 ---
-# <a name="imsrdpdevicev2devicetext-property"></a>IMsRdpDeviceV2::D propiedad eviceText
+# <a name="imsrdpdevicev2devicetext-property"></a>IMsRdpDeviceV2::D eviceText
 
 Contiene el texto del dispositivo. Este es el nombre que Windows muestra al usuario.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 878cdd83a04f594da3133eda314486af96ac3d56
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 71ed9b6ebdefe41b466bb790cc4d0226991ce2866aee9fed765c19c87f6085b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495845"
 ---
 # <a name="d3dxcoloradjustsaturation-function-d3dx9mathh"></a>Función D3DXColorAdjustSaturation (D3dx9math.h)
 
@@ -94,7 +94,7 @@ Esta función interpola los componentes de color rojo, verde y azul de una estru
 
 
 
-Si s es mayor que 0 y menor que 1, se reduce la saturación. Si s es mayor que 1, se aumenta la saturación.
+Si s es mayor que 0 y menor que 1, se reduce la saturación. Si s es mayor que 1, aumenta la saturación.
 
 El color de escala de grises se calcula como:
 
@@ -116,7 +116,7 @@ r = g = b = 0.2125*r + 0.7154*g + 0.0721*b
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

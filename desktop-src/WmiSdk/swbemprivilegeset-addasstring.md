@@ -2,7 +2,7 @@
 description: Puede usar el método AddAsString del objeto SWbemPrivilegeSet para agregar un privilegio a una colección SWbemPrivilegeSet mediante una cadena de privilegios.
 ms.assetid: 729ed4e3-2c5c-4bb4-acc6-cf9ad0d5eaf1
 ms.tgt_platform: multiple
-title: Método SWbemPrivilegeSet. AddAsString (Wbemdisp. h)
+title: Método SWbemPrivilegeSet.AddAsString (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b3a740141b14766080a09d01b36b5c0202351eda
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f474f1650cae338a7790ac6d5cb66a248be6c6658d5f2577efcc56870000cc66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860065"
 ---
-# <a name="swbemprivilegesetaddasstring-method"></a>SWbemPrivilegeSet. AddAsString, método
+# <a name="swbemprivilegesetaddasstring-method"></a>Método SWbemPrivilegeSet.AddAsString
 
-Puede usar el método **AddAsString** del objeto [**SWbemPrivilegeSet**](swbemprivilegeset.md) para agregar un privilegio a una colección **SWbemPrivilegeSet** mediante una cadena de privilegios. Use este método para agregar un privilegio o para habilitar un privilegio para objetos [**SWbemSecurity**](swbemsecurity.md) . Vea [ejecutar operaciones con privilegios mediante VBScript](executing-privileged-operations-using-vbscript.md).
+Puede usar el **método AddAsString** del objeto [**SWbemPrivilegeSet**](swbemprivilegeset.md) para agregar un privilegio a una **colección SWbemPrivilegeSet** mediante una cadena de privilegios. Use este método para agregar un privilegio o para habilitar un privilegio para [**objetos SWbemSecurity.**](swbemsecurity.md) Vea [Ejecutar operaciones con privilegios mediante VBScript.](executing-privileged-operations-using-vbscript.md)
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,11 +48,11 @@ objPrivilege = .AddAsString( _
 *strPrivilege* 
 </dt> <dd>
 
-Obligatorio. Una de las cadenas de privilegios. Para obtener una lista completa de estas cadenas y las constantes de WMI asociadas, consulte [**constantes de privilegios**](privilege-constants.md). Cada cadena de privilegios representa un privilegio específico. Por ejemplo, para agregar el privilegio que usa para apagar un equipo, use la cadena **SeShutdownPrivilege** .
+Obligatorio. Una de las cadenas de privilegios. Para obtener una lista completa de estas cadenas y las constantes WMI asociadas, vea [**Constantes de privilegios**](privilege-constants.md). Cada cadena de privilegios representa un privilegio específico. Por ejemplo, para agregar el privilegio que usa para apagar un sistema informático, use la **cadena SeShutdownPrivilege.**
 
 </dd> <dt>
 
-*bIsEnabled* \[ opta\]
+*bIsEnabled* \[ Opcional\]
 </dt> <dd>
 
 Valor booleano que habilita o deshabilita este privilegio. El valor predeterminado es **True**.
@@ -61,15 +61,15 @@ Valor booleano que habilita o deshabilita este privilegio. El valor predetermina
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si es correcto, este método devuelve un objeto [**SWbemPrivilege**](swbemprivilege.md) que representa el nuevo privilegio. De lo contrario, se devuelve un objeto null.
+Si se realiza correctamente, este método devuelve [**un objeto SWbemPrivilege**](swbemprivilege.md) que representa el nuevo privilegio. De lo contrario, se devuelve un objeto NULL.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Una vez finalizado el método **AddAsString** , el objeto **Err** puede contener el código de error de la lista siguiente.
+Tras la finalización del **método AddAsString,** el **objeto Err** puede contener el código de error en la lista siguiente.
 
 <dl> <dt>
 
-**wbemErrFailed** -2147749889 (0x80041001)
+**wbemErrFailed:** 2147749889 (0x80041001)
 </dt> <dd>
 
 Error no especificado.
@@ -78,7 +78,7 @@ Error no especificado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de VBScript se crea un nuevo puerto para un servidor de impresión mediante [**Win32 \_ TCPIPPrinterPort**](/windows/desktop/CIMWin32Prov/win32-tcpipprinterport). La **SeLoadDriverPrivilege** es necesaria para esta operación. Vea [ejecutar operaciones con privilegios](executing-privileged-operations.md).
+En el ejemplo de código de VBScript siguiente se crea un nuevo puerto para un servidor de impresión mediante [**\_ Win32 TCPIPPrinterPort**](/windows/desktop/CIMWin32Prov/win32-tcpipprinterport). **SeLoadDriverPrivilege** es necesario para esta operación. Consulte [Ejecución de operaciones con privilegios.](executing-privileged-operations.md)
 
 
 ```VB
@@ -97,7 +97,7 @@ objNewPort.Put_
 
 
 
-Un ejemplo de código que usa este método también se describe en el tema [**SWbemPrivilegeSet**](swbemprivilegeset.md) .
+También se describe un ejemplo de código con este método en el [**tema SWbemPrivilegeSet.**](swbemprivilegeset.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,11 +107,11 @@ Un ejemplo de código que usa este método también se describe en el tema [**SW
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPrivilegeSet<br/>                                                     |
-| IID<br/>                      | \_ISWBEMPRIVILEGESET IID<br/>                                                      |
+| IID<br/>                      | IID \_ ISWbemPrivilegeSet<br/>                                                      |
 
 
 
@@ -122,22 +122,22 @@ Un ejemplo de código que usa este método también se describe en el tema [**SW
 [**SWbemPrivilegeSet**](swbemprivilegeset.md)
 </dt> <dt>
 
-[**SWbemPrivilegeSet. Add**](swbemprivilegeset-add.md)
+[**SWbemPrivilegeSet.Add**](swbemprivilegeset-add.md)
 </dt> <dt>
 
-[**SWbemPrivilegeSet. Remove**](swbemprivilegeset-remove.md)
+[**SWbemPrivilegeSet.Remove**](swbemprivilegeset-remove.md)
 </dt> <dt>
 
 [**WbemPrivilegeEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemprivilegeenum)
 </dt> <dt>
 
-[**Constantes de privilegio**](privilege-constants.md)
+[**Constantes de privilegios**](privilege-constants.md)
 </dt> <dt>
 
-[Ejecutar operaciones con privilegios](executing-privileged-operations.md)
+[Ejecución de operaciones con privilegios](executing-privileged-operations.md)
 </dt> <dt>
 
-[Ejecutar operaciones con privilegios mediante VBScript](executing-privileged-operations-using-vbscript.md)
+[Ejecución de operaciones con privilegios mediante VBScript](executing-privileged-operations-using-vbscript.md)
 </dt> </dl>
 
  

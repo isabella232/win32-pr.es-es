@@ -1,19 +1,19 @@
 ---
-description: El agente de Windows Update APISDK contiene las descripciones más completas y actuales de la API. Es el origen principal del material de referencia para desarrolladores de WUA.
+description: El Windows UPDATE Agent APISDK contiene las descripciones más completas y actuales de la API. Es la principal fuente de material de referencia para desarrolladores de WUA.
 ms.assetid: 49dd8a24-7f34-4036-8ff2-c3f3052ea066
-title: Otros orígenes de información del agente de Windows Update
+title: Otros orígenes de Windows información del Agente de actualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f18ab20b8f73880ded7150f1b63e3eb5072a358
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 68307091e426c39535f6bde2b129e0c85340cfcfa2b4769de1adcd74ccac6acd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105697908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130407"
 ---
-# <a name="other-sources-of-windows-update-agent-information"></a>Otros orígenes de información del agente de Windows Update
+# <a name="other-sources-of-windows-update-agent-information"></a>Otros orígenes de Windows información del Agente de actualización
 
-El SDK de [API del agente de Windows Update](portal-client.md)contiene las descripciones más completas y actuales de la API. Es el origen principal del material de referencia para desarrolladores de WUA.
+El [sdk Windows UPDATE Agent API](portal-client.md)contiene las descripciones más completas y actuales de la API. Es la principal fuente de material de referencia para desarrolladores de WUA.
 
 ## <a name="software-development-kit-sdk-for-windows-update-agent-wua"></a>Kit de desarrollo de software (SDK) para Windows Update Agent (WUA)
 
@@ -23,27 +23,27 @@ Los siguientes recursos describen cómo implementar y administrar Windows Server
 
     Puede descargar el SDK de Windows Server Update Services y revisar otros documentos que describen cómo instalar, implementar y mantener Windows Update Services.
 
--   [Descarga de MSDN y centro de código](/powerapps/developer/common-data-service/org-service/subscribe-sdk-assembly-updates-using-nuget)
+-   [Descarga y centro de código de MSDN](/powerapps/developer/common-data-service/org-service/subscribe-sdk-assembly-updates-using-nuget)
 
-    Puede descargar las actualizaciones de los ejemplos, los encabezados y las bibliotecas del SDK de WUA. Descargas en la descarga de MSDN y el centro de código se organizan por temas. También puede encontrar descargas en MSDN, en Microsoft Developer Network, mediante la herramienta de búsqueda del [centro de descarga de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=83468) .
+    Puede descargar actualizaciones de los ejemplos, encabezados y bibliotecas del SDK de WUA. Las descargas del Centro de descarga y código de MSDN se organizan por tema. También puede encontrar descargas en MSDN, la Desarrollador de Microsoft Network, mediante la herramienta de búsqueda del Centro de descarga de [Microsoft.](https://go.microsoft.com/fwlink/p/?linkid=83468)
 
-## <a name="windows-update-agent-wua-newsgroups"></a>Grupos de noticias de Windows Update Agent (WUA)
+## <a name="windows-update-agent-wua-newsgroups"></a>Windows Grupos de noticias del Agente de actualización (WUA)
 
-Puede leer y publicar información en un grupo de noticias que describe WUA o buscar publicaciones archivadas de grupos de noticias.
+Puede leer y publicar información en un grupo de noticias que analice WUA o busque publicaciones archivadas del grupo de noticias.
 
 MSDN proporciona acceso a los siguientes grupos de noticias públicos:
 
 -   [Grupos de noticias públicos de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=84395)
 
-    Este grupo de noticias está orientado a profesionales de TI con preguntas acerca de la implementación y personalización.
+    Este grupo de noticias está orientado a los profesionales de TI con preguntas sobre la implementación y personalización.
 
 -   [Grupos de noticias de MSDN](https://go.microsoft.com/fwlink/p/?linkid=83943)
 
     Este grupo de noticias está orientado a desarrolladores con preguntas sobre el desarrollo de aplicaciones e infraestructuras.
 
-## <a name="windows-technical-chats"></a>Chats técnicos de Windows
+## <a name="windows-technical-chats"></a>Windows Chats técnicos
 
-Puede participar en sesiones de chat técnico en directo de MSDN:
+Puede participar en sesiones de chat técnico de MSDN en directo:
 
 -   [Chats técnicos](https://go.microsoft.com/fwlink/p/?linkid=83854)
 
@@ -51,17 +51,17 @@ Puede participar en sesiones de chat técnico en directo de MSDN:
 
 <!-- -->
 
--   [Archivo de chats de Windows de MSDN](https://go.microsoft.com/fwlink/p/?linkid=84300)
+-   [Archivo de chats Windows MSDN](https://go.microsoft.com/fwlink/p/?linkid=84300)
 
     Las transcripciones de chats anteriores se archivan para que las lea.
 
 ## <a name="knowledge-base-articles"></a>Artículos de Knowledge Base
 
-Puede buscar artículos sobre WUA en Microsoft Knowledge Base:
+Puede buscar en el Microsoft Knowledge Base artículos sobre WUA:
 
--   [Buscar en la base de conocimiento](https://go.microsoft.com/fwlink/p/?linkid=83983)
+-   [Buscar en el Knowledge Base](https://go.microsoft.com/fwlink/p/?linkid=83983)
 
-    Busque Windows Update agente.
+    Busque Windows Update Agent.
 
  
 

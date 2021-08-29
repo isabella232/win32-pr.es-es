@@ -1,6 +1,6 @@
 ---
 title: Métodos IDCompositionShadowEffect SetAlpha
-description: Establece el valor alfa del efecto.
+description: Establece el valor alfa para el efecto.
 ms.assetid: c65a6f89-9135-c673-ff05-ad26329da2cb
 keywords:
 - Métodos SetAlpha DirectComposition
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 934c64f7f69305f8b966b0bbc977711251019edb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 411d0abefc077975c134fe76dfac0a1bf6c8447d82031df9fe8e3e2bdd874d3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103793168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088728"
 ---
-# <a name="idcompositionshadoweffectsetalpha-methods"></a>IDCompositionShadowEffect:: SetAlpha (métodos)
+# <a name="idcompositionshadoweffectsetalpha-methods"></a>Métodos IDCompositionShadowEffect::SetAlpha
 
-Establece el valor alfa del efecto.
+Establece el valor alfa para el efecto.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el valor alfa del efecto.
 
 | Método                                                                               | Descripción                                     |
 |:-------------------------------------------------------------------------------------|:------------------------------------------------|
-| [**SetAlpha (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(idcompositionanimation)) | Establece el valor alfa del efecto.<br/> |
-| [**SetAlpha**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(float))                               | Establece el valor alfa del efecto.<br/> |
+| [**SetAlpha (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(idcompositionanimation)) | Establece el valor alfa para el efecto.<br/> |
+| [**SetAlpha**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setalpha(float))                               | Establece el valor alfa para el efecto.<br/> |
 
 
 

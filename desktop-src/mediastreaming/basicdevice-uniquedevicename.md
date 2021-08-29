@@ -1,11 +1,11 @@
 ---
-title: Propiedad BasicDevice. UniqueDeviceName
+title: BasicDevice.UniqueDeviceName, propiedad
 description: Obtiene el nombre de dispositivo único (UDN) del dispositivo.
 ms.assetid: 5669A5BB-6603-45A4-8F98-CDA5D7EB61C5
 keywords:
-- Propiedad UniqueDeviceName API de streaming de multimedia
-- Propiedad UniqueDeviceName API de streaming de multimedia, interfaz BasicDevice
-- Interfaz BasicDevice API de streaming de multimedia, propiedad UniqueDeviceName
+- Api de streaming multimedia de la propiedad UniqueDeviceName
+- Propiedad UniqueDeviceName De Media Streaming API, interfaz BasicDevice
+- Interfaz basicDispositivo Media Streaming API, propiedad UniqueDeviceName
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9e36eb63496a79cb018f446ac77de8036744d75a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f5b4dc8f41adc76cec0b76fe830ae98acf30af18b4cd340a369dfa2f8a796ca1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100847"
 ---
-# <a name="basicdeviceuniquedevicename-property"></a>Propiedad BasicDevice. UniqueDeviceName
+# <a name="basicdeviceuniquedevicename-property"></a>BasicDevice.UniqueDeviceName, propiedad
 
 Obtiene el nombre de dispositivo único (UDN) del dispositivo.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_UniqueDeviceName(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -41,15 +41,15 @@ HRESULT get_UniqueDeviceName(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero al modelo UDN del dispositivo.
+Puntero al UDN del modelo del dispositivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

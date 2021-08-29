@@ -1,27 +1,27 @@
 ---
-title: Negociación de Media-Type
-description: Muchos protocolos de Internet de la capa de aplicación se basan en el intercambio de mensajes en un formato simple y flexible denominado Extensiones multipropósito de correo Internet (MIME).
+title: Media-Type negociación
+description: Muchos protocolos de Internet del nivel de aplicación se basan en el intercambio de mensajes en un formato sencillo y flexible denominado Extensiones multipropósito de correo de Internet (MIME).
 ms.assetid: 7a2c9d8f-639a-4865-a62b-63330175f5f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb145fa3a76da6574172ddd24888f3b5da7ad85e
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: a8d9e2694d7df89eeeef8c0a3e7217a88c3bac27da3e68c38aae2ceae24fa56f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104421471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130197"
 ---
-# <a name="media-type-negotiation"></a>Negociación de Media-Type
+# <a name="media-type-negotiation"></a>Media-Type negociación
 
-Muchos protocolos de Internet de la capa de aplicación se basan en el intercambio de mensajes en un formato simple y flexible denominado Extensiones multipropósito de correo Internet (MIME). Aunque MIME se originó como estándar para intercambiar mensajes de correo electrónico, se usa hoy en una amplia variedad de aplicaciones para especificar formatos de datos comprendidos mutuamente como tipos MIME o multimedia. El proceso se denomina *negociación de tipo de medio*.
+Muchos protocolos de Internet del nivel de aplicación se basan en el intercambio de mensajes en un formato sencillo y flexible denominado Extensiones multipropósito de correo de Internet (MIME). Aunque MIME se originó como un estándar para intercambiar mensajes de correo electrónico, hoy en día lo usan una amplia variedad de aplicaciones para especificar formatos de datos que se entiendan mutuamente como tipos MIME o multimedia. El proceso se denomina *negociación de tipo multimedia*.
 
-Los tipos de medios son cadenas simples que denotan un tipo y un subtipo (como "texto/sin formato" o "texto/HTML"). Se usan para etiquetar datos o calificar una solicitud. Un explorador Web, por ejemplo, como parte de una solicitud HTTP-for-Data o de Request-for-info, especifica que está solicitando tipos de medios "image/gif" o "image/JPEG", a los que un servidor web responde devolviendo el tipo de medio adecuado y, si la llamada era una solicitud de datos, los propios datos en el formato solicitado.
+Los tipos multimedia son cadenas simples que denotan un tipo y un subtipo (como "text/plain" o "text/HTML"). Se usan para etiquetar datos o calificar una solicitud. Un explorador web, por ejemplo, como parte de una solicitud HTTP-for-data o request-for-info, especifica que solicita tipos multimedia "image/gif" o "image/jpeg", a los que un servidor web responde devolviendo el tipo de medio adecuado y, si la llamada era una solicitud de datos, los propios datos en el formato solicitado.
 
-La negociación del tipo de medio suele ser similar a la forma en que las aplicaciones de escritorio existentes negocian con el Portapapeles del sistema para determinar qué formato de datos se debe pegar cuando un usuario elige editar/pegar o consultas para formatos al recibir un puntero [**IDataObject**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject) durante una operación de arrastrar y colocar. La sutil diferencia en la negociación del tipo de medio HTTP es que el cliente no conoce con anterioridad el tiempo que tiene disponible el formato del servidor. Por lo tanto, el cliente especifica los tipos de medios que admite, en orden de mayor fidelidad, y el servidor responde con el mejor formato disponible.
+La negociación de tipo multimedia suele ser similar a la forma en que las aplicaciones de escritorio existentes negocian con el Portapapeles del sistema para determinar qué formato de datos se va a pegar cuando un usuario elige Editar/Pegar o consulta los formatos al recibir un puntero [**IDataObject**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject) durante una operación de arrastrar y colocar. La diferencia sutil en la negociación de tipo de medio HTTP es que el cliente no sabe con antelación qué formatos tiene disponibles el servidor. Por lo tanto, el cliente especifica por adelantado los tipos de medios que admite, en orden de máxima fidelidad, y el servidor responde con el mejor formato disponible.
 
-Los monikers de dirección URL admiten la negociación de tipo de medio para que los clientes y servidores de Internet acepten los formatos que se van a usar al descargar datos en operaciones de [**BindToStorage**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtostorage) . Para admitir la negociación de tipo de medio, un cliente implementa la interfaz [**IEnumFORMATETC**](/windows/desktop/api/ObjIdl/nn-objidl-ienumformatetc) y llama a la función [**RegisterFormatEnumerator**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775116(v=vs.85)) para registrarla con el contexto de enlace. El enumerador de formato muestra los formatos que el cliente puede aceptar. Un moniker de dirección URL traduce estos formatos en tipos de medios al enlazar con direcciones URL HTTP.
+Los monikers de url admiten la negociación de tipo multimedia como una manera de que los clientes y servidores de Internet acepten los formatos que se usarán al descargar datos en operaciones [**BindToStorage.**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtostorage) Para admitir la negociación de tipo multimedia, un cliente implementa la interfaz [**IEnumFORMATETC**](/windows/desktop/api/ObjIdl/nn-objidl-ienumformatetc) y llama a la función [**RegisterFormatEnumerator**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775116(v=vs.85)) para registrarla con el contexto de enlace. El enumerador de formato enumera los formatos que el cliente puede aceptar. Un moniker de dirección URL convierte estos formatos en tipos multimedia al enlazar a direcciones URL HTTP.
 
-Los posibles tipos de medios solicitados por el cliente se representan como moniker de dirección URL a través de las estructuras [**FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) disponibles en el enumerador [**IEnumFORMATETC**](/windows/desktop/api/ObjIdl/nn-objidl-ienumformatetc) registrado por el autor de la llamada en el contexto de enlace: cada **FORMATETC** especifica un formato de Portapapeles que identifica el tipo de medio. Por ejemplo, el fragmento de código siguiente especifica que el tipo de medio es PostScript.
+Los posibles tipos de medios solicitados por el cliente se representan en monikers de dirección URL a través de estructuras [**FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) disponibles en el enumerador [**IEnumFORMATETC**](/windows/desktop/api/ObjIdl/nn-objidl-ienumformatetc) registrado por el autor de la llamada en el contexto de enlace: cada **FORMATETC** especifica un formato de Portapapeles que identifica el tipo de medio. Por ejemplo, el siguiente fragmento de código especifica que el tipo de medio es PostScript.
 
 ``` syntax
 FORMATETC fmtetc;
@@ -29,22 +29,22 @@ fmtetc.cfFormat = RegisterClipboardFormat(CF_MIME_POSTSCRIPT);
 . . .
 ```
 
-Un cliente puede establecer el formato del portapapeles en el tipo de medio especial CF \_ null para indicar que debe recuperarse el tipo de medio predeterminado del recurso al que apunta la dirección URL. Normalmente, este formato es el último en el que el cliente está interesado. Cuando no se registra ningún enumerador con el contexto de enlace, un moniker de dirección URL funciona como si un enumerador que contiene un solo [**FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) con **cfFormat**= CF \_ null está disponible, y descarga automáticamente el tipo de medio predeterminado.
+Un cliente puede establecer el formato del Portapapeles en el tipo de medio especial CF NULL para indicar que se debe recuperar el tipo de medio predeterminado del recurso al que apunta \_ la dirección URL. Este formato suele ser el último en el que el cliente está interesado. Cuando no se registra ningún enumerador con el contexto de enlace, un moniker de dirección URL funciona como si hubiera disponible un enumerador que contiene un [**solo FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) con **cfFormat**=CF NULL, descargando automáticamente el tipo de medio \_ predeterminado.
 
-Sea cual sea el tipo de medio que se va a usar, el cliente recibe una notificación de la opción por medio del argumento *pformatetc* en su método [**IBindStatusCallback:: ondataavailable**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775061(v=vs.85)) . La devolución de llamada se produce en el contexto de la llamada del cliente a [**BindToStorage**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtostorage).
+Sea cual sea el tipo de medio que se va a usar, se notifica al cliente la elección mediante el argumento *pformatetc* en su [**método IBindStatusCallback::OnDataAvailable.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775061(v=vs.85)) La devolución de llamada se produce en el contexto de la llamada del cliente [**a BindToStorage**](/windows/desktop/api/ObjIdl/nf-objidl-imoniker-bindtostorage).
 
 > [!Note]  
-> Si el contenido recibido es de un tipo de medio no reconocido, el cliente llama automáticamente a [**RegisterMediaTypes**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775118(v=vs.85)) para registrar el nuevo tipo.
+> Si el contenido recibido es de un tipo multimedia desconocido, el cliente llama automáticamente a [**RegisterMediaTypes**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775118(v=vs.85)) para registrar el nuevo tipo.
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Monikers de URL](url-monikers.md)
+[URL Monikers](url-monikers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

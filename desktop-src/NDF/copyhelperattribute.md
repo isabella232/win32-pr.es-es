@@ -1,9 +1,9 @@
 ---
-title: Función CopyHelperAttribute (Ndattributils. h)
-description: Crea una copia de una estructura de \_ atributo auxiliar.
+title: Función CopyHelperAttribute (Ndattributils.h)
+description: Crea una copia de una estructura HELPER \_ ATTRIBUTE.
 ms.assetid: ff49be29-4cd8-4730-929f-c66a7325704f
 keywords:
-- CopyHelperAttribute función NDF
+- Función CopyHelperAttribute NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59fac3449ee48659980681c836d24406c4db7e2b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 57226d3497639107db9378926734a8a6d4507c3436aa65a89109d88d15f91d32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685865"
 ---
-# <a name="copyhelperattribute-function"></a>CopyHelperAttribute función)
+# <a name="copyhelperattribute-function"></a>Función CopyHelperAttribute
 
-La función **CopyHelperAttribute** crea una copia de una estructura de [**\_ atributo auxiliar**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute) .
+La **función CopyHelperAttribute** crea una copia de una [**estructura HELPER \_ ATTRIBUTE.**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,27 +41,27 @@ HRESULT CopyHelperAttribute(
 
 <dl> <dt>
 
-*Dest* \[ enuncia\]
+*Dest* \[ out\]
 </dt> <dd>
 
-Tipo: **\* [**\_ atributo auxiliar**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)* _
+Tipo: **[ **ATRIBUTO \_ DEL ASISTENTE**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)\***
 
 Estructura que se va a actualizar.
 
 </dd> <dt>
 
-_Source * \[ en\]
+*Origen* \[ En\]
 </dt> <dd>
 
-Tipo: **\* [**\_ atributo auxiliar**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)const* _
+Tipo: **const [**HELPER \_ ATTRIBUTE**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute) \***
 
-La estructura existente que se va a copiar.
+Estructura existente que se va a copiar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
@@ -69,8 +69,8 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 | Código devuelto                                                                                   | Descripción                                                                 |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | La operación se realizó correctamente.<br/>                                         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | No se ha proporcionado correctamente uno o más parámetros.<br/>          |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | La operación se realizó correctamente.<br/>                                         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Uno o varios parámetros no se han proporcionado correctamente.<br/>          |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay suficiente memoria disponible para completar esta operación.<br/> |
 
 
@@ -83,9 +83,9 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 <dl> <dt>
 
-[**atributo auxiliar \_**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)
+[**ATRIBUTO \_ DEL ASISTENTE**](/windows/win32/api/ndattrib/ns-ndattrib-helper_attribute)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ description: IAgentBalloon GetNumCharsPerLine
 ms.assetid: ae0c7fff-8c58-465e-9b4f-3260f7574b57
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 887167584c46f075bc0696c46b2dde52eb27f8d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 62415c5e51cbf6642b4a348de2060fccb6bac41467dd00b7671888d06b8e71f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119888405"
 ---
 # <a name="iagentballoongetnumcharsperline"></a>IAgentBalloon::GetNumCharsPerLine
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetNumCharsPerLine(
@@ -21,9 +21,9 @@ HRESULT GetNumCharsPerLine(
 );                        // displayed in word balloon
 ```
 
-Recupera el valor para el promedio de caracteres por línea mostrado en un globo de palabras.
+Recupera el valor del número medio de caracteres por línea que se muestra en un globo de palabras.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
@@ -34,16 +34,16 @@ Dirección de una variable que recibe el número de caracteres por línea.
 
 </dd> </dl>
 
-El servidor de Microsoft Agent desplaza automáticamente las líneas que se muestran para la salida de voz en el globo de palabras. El número promedio de caracteres por línea para el globo de palabras de un carácter se define en el editor de caracteres del agente de Microsoft. No se puede cambiar por una aplicación.
+El servidor de Microsoft Agent desplaza automáticamente las líneas mostradas para la salida hablada en el globo de palabras. El número medio de caracteres por línea para el globo de palabras de un carácter se define en el Editor de caracteres de Microsoft Agent. Una aplicación no puede cambiarla.
 
 ## <a name="see-also"></a>Consulte también
 
 [**IAgentBalloon::GetNumLines**](iagentballoon--getnumlines.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: En este tema se enumeran los métodos de la clase Image. Para obtener una lista completa de clases, vea Image (clase).
+description: En este tema se enumeran los métodos de la clase Image. Para obtener una lista de clases completa, consulte Clase image.
 ms.assetid: 70dbe346-790c-47e3-8e85-6154fc340982
 title: Métodos de imagen
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 259bc8b81179b81f7e48b3ab0751a34d5edcfd10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec97ad09a520293f68ddb6d9dc98c269af3679ff8a189c914e8778539a315498
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977625"
 ---
 # <a name="image-methods"></a>Métodos de imagen
 
-En este tema se enumeran los métodos de la clase [**Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) . Para obtener una lista completa de clases, vea **Image (clase**).
+En este tema se enumeran los métodos de [**la clase Image.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) Para obtener una lista de clases completa, vea **Image Class**.
 
--   [**Clonar**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-clone)
+-   [**Clon**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-clone)
 -   [**FindFirstItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-findfirstitem)
 -   [**FindNextItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-findnextitem)
 -   [**FromFile**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-fromfile)
@@ -43,17 +43,17 @@ En este tema se enumeran los métodos de la clase [**Image**](/windows/desktop/a
 -   [**GetPropertySize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getpropertysize)
 -   [**GetRawFormat**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getrawformat)
 -   [**GetThumbnailImage**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getthumbnailimage)
--   [**GetType**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-gettype)
+-   [**Gettype**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-gettype)
 -   [**GetVerticalResolution**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getverticalresolution)
 -   [**GetWidth**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getwidth)
 -   [**RemovePropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-removepropertyitem)
 -   [**RotateFlip**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-rotateflip)
--   [**Guardar (IStream \* , CLSID \* , EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters))
--   [**Guardar (WCHAR \* , CLSID \* , EncoderParameters \* )**](/previous-versions//ms535407(v=vs.85))
--   [**SaveAdd (EncoderParameters \* )**](/previous-versions//ms535408(v=vs.85))
--   [**SaveAdd (imagen \* , EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters))
--   [**SelectActiveFrame**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-selectactiveframe)
--   [**Tabor**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setabort)
+-   [**Save(IStream \* , CLSID \* , EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-save(inistream_inconstclsid_inconstencoderparameters))
+-   [**Save(WCHAR, \* CLSID \* , EncoderParameters \* )**](/previous-versions//ms535407(v=vs.85))
+-   [**SaveAdd(EncoderParameters \* )**](/previous-versions//ms535408(v=vs.85))
+-   [**SaveAdd(Image \* ,EncoderParameters \* )**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-image-saveadd(inimage_inconstencoderparameters))
+-   [**SeleccionarActiveFrame**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-selectactiveframe)
+-   [**SetAbort**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setabort)
 -   [**SetPalette**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpalette)
 -   [**SetPropertyItem**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-setpropertyitem)
 

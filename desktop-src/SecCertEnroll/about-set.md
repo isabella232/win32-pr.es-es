@@ -1,19 +1,19 @@
 ---
-description: Un conjunto contiene una serie desordenada de campos de uno o más tipos.
+description: Set contiene una serie desordenada de campos de uno o varios tipos.
 ms.assetid: 6bbe89da-1177-4cfa-9515-03b271e5ef6b
 title: SET
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 572114d754b5034babe81e3914599f48996867d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95eb2b9df8097f716ef98d55d052d2dbc2ef09b1bfe57de0e793d2b063967710
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903684"
 ---
 # <a name="set"></a>SET
 
-Un **conjunto** contiene una serie desordenada de campos de uno o más tipos. Se codifica en un tripledo TLV que comienza con un byte de **etiqueta** de 0x31. En el ejemplo siguiente, adaptado del tema [ASN codificado de CMC. 1](cmc-encoded-asn-1.md) , se muestra cómo se codifica un atributo **ClientID** en una estructura de datos **establecida** . El atributo se puede especificar mediante la interfaz [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) .
+Set **contiene** una serie desordenada de campos de uno o varios tipos. Se codifica en un triplete TLV que comienza con un byte **tag** de 0x31. En el ejemplo siguiente, adaptado del tema [ASN.1](cmc-encoded-asn-1.md) con codificación CMC, se muestra cómo se codifica un atributo **ClientId** en una estructura de datos **SET.** El atributo se puede especificar mediante la [**interfaz IX509AttributeClientId.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid)
 
 ``` syntax
 31 59                                     ; SET (59 Bytes)
@@ -37,16 +37,16 @@ Un **conjunto** contiene una serie desordenada de campos de uno o más tipos. Se
             0c 07                         ; UTF8_STRING 
 ```
 
-Si el **conjunto** contiene menos de 128 bytes, el campo de **longitud** del tripledo de TLV requiere un solo byte para especificar la longitud del contenido. Si tiene más de 127 bytes, el bit 7 del campo **longitud** se establece en 1 y los bits 6 a 0 especifican el número de bytes adicionales que se usan para identificar la longitud del contenido. Para obtener más información, vea [longitud codificada y bytes de valor](about-encoded-length-and-value-bytes.md).
+Si **set contiene** menos de 128 bytes, el campo **Longitud** del triplete TLV solo requiere un byte para especificar la longitud del contenido. Si tiene más de 127 bytes,  el bit 7 del campo Longitud se establece en 1 y los bits del 6 al 0 especifican el número de bytes adicionales usados para identificar la longitud del contenido. Para obtener más información, vea [Longitud codificada y Bytes de valor](about-encoded-length-and-value-bytes.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Sistema de tipos ASN. 1](about-asn-1-type-system.md)
+[Sistema de tipo ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codificación DER de tipos ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codificación DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

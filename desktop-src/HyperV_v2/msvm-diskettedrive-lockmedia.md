@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5f5f87354aa7c39534e8b32c8985c5d18b55caa9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 31cdddccf5a62c5f26f83351977090fa5c5a33e24476a3de4e88ee5e40938f8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431035"
 ---
 # <a name="lockmedia-method-of-the-msvm_diskettedrive-class"></a>Método LockMedia de la clase \_ DisketteDrive de Msvm
 
@@ -42,13 +42,13 @@ uint32 LockMedia(
 *Bloqueo* \[ En\]
 </dt> <dd>
 
-**true** para bloquear el medio; **false** para liberar el medio.
+**True para** bloquear el medio; **false** para liberar el medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve uno de los valores siguientes:
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve uno de los siguientes valores:
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve uno de los 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -72,11 +72,11 @@ Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve uno de los 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**DisketteDrive de Msvm \_**](msvm-diskettedrive.md)
+[**Msvm \_ DisketteDrive**](msvm-diskettedrive.md)
 </dt> </dl>
 
  

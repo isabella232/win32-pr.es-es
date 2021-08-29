@@ -1,31 +1,31 @@
 ---
-description: En el ejemplo siguiente se crea una clave de sesión aleatoria, se duplica la clave, se establecen algunos parámetros adicionales en la clave original y se destruyen las claves original y duplicada.
+description: En el ejemplo siguiente se crea una clave de sesión aleatoria, se duplica la clave, se establecen algunos parámetros adicionales en la clave original y se destruyen las claves originales y duplicadas.
 ms.assetid: e57274cf-42d3-445b-97f1-dd574010290f
-title: 'Programa C de ejemplo: duplicar una clave de sesión'
+title: 'Programa C de ejemplo: duplicación de una clave de sesión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b38934d399a6a38f14e551e79d4e1f877dbadf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4116a021b358864da27b2eb94d66a0f74f1462232f58441e7af5c2c7b91e114
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007793"
 ---
-# <a name="example-c-program-duplicating-a-session-key"></a>Programa C de ejemplo: duplicar una clave de sesión
+# <a name="example-c-program-duplicating-a-session-key"></a>Programa C de ejemplo: duplicación de una clave de sesión
 
-En el ejemplo siguiente se crea una [*clave de sesión*](../secgloss/s-gly.md)aleatoria, se duplica la clave, se establecen algunos parámetros adicionales en la clave original y se destruyen las claves original y duplicada. En este ejemplo se muestra el uso de [**CryptDuplicateKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptduplicatekey) y las funciones relacionadas.
+En el ejemplo siguiente se crea una clave de sesión [*aleatoria,*](../secgloss/s-gly.md)se duplica la clave, se establecen algunos parámetros adicionales en la clave original y se destruyen las claves originales y duplicadas. En este ejemplo se muestra el uso de [**CryptDuplicateKey y**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptduplicatekey) funciones relacionadas.
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Acceso a un [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) mediante [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
--   Crear una clave de sesión mediante [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey).
--   Duplicar la clave creada mediante [**CryptDuplicateKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptduplicatekey).
--   Usar [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) para modificar el proceso de generación de claves de dos maneras diferentes.
--   Llenar un búfer con bytes aleatorios mediante [**CryptGenRandom**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenrandom).
+-   Acceso a [*un proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) mediante [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Crear una clave de sesión [**mediante CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey).
+-   Duplicación de la clave creada mediante [**CryptDuplicateKey.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptduplicatekey)
+-   Usar [**CryptSetKeyParam para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) modificar el proceso de generación de claves de dos maneras diferentes.
+-   Rellenar un búfer con bytes aleatorios mediante [**CryptGenRandom**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenrandom).
 -   Destruir las claves mediante [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey).
--   Liberación del CSP con [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext).
+-   Publicación del CSP con [**CryptReleaseContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

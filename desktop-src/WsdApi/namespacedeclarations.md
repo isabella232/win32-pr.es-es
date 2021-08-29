@@ -4,12 +4,12 @@ ms.assetid: 21b76829-01c4-4228-a714-6319e5eb1c61
 title: elemento namespaceDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e98d9c0cf1556e21d92fe7ea1ba222e861f00ac
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 76cb403e996dfec949668587740b06ce7ef01beffe9e8dbb77179ce1962da243
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130687"
 ---
 # <a name="namespacedeclarations-element"></a>elemento namespaceDeclarations
 
@@ -35,13 +35,13 @@ No hay elementos secundarios.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentarios
 
-Las tablas de tipo y otro código generado hacen referencia a las tablas de espacio de nombres, por lo que este elemento se usa para generar archivos de incluir.
+Las tablas de tipos y otro código generado hacen referencia a las tablas de espacios de nombres, por lo que este elemento se usa para generar archivos de incluir.
 
 ## <a name="element-information"></a>Información de elemento
 

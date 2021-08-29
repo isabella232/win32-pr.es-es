@@ -1,23 +1,23 @@
 ---
-title: Información del manifiesto del paquete de la aplicación de consulta (C++)
-description: Obtenga información sobre cómo obtener información del manifiesto del paquete de aplicaciones para una aplicación de Windows mediante la API de empaquetado.
+title: Consulta de la información del manifiesto del paquete de aplicación (C++)
+description: Obtenga información sobre cómo obtener información del manifiesto del paquete de aplicación para Windows aplicación mediante la API de empaquetado.
 ms.assetid: A29986F9-C620-48CD-87F8-525DFA076AAB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9940f92a4412be7731db2454d68b4429522b63f6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5407d19577fe917046e9664e9a946b3d9f4acc8c8a15cab1edfab2a934f0d93e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104077574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119994185"
 ---
-# <a name="query-app-package-manifest-info-c"></a>Información del manifiesto del paquete de la aplicación de consulta (C++)
+# <a name="query-app-package-manifest-info-c"></a>Consulta de la información del manifiesto del paquete de aplicación (C++)
 
-Obtenga información sobre cómo obtener información del manifiesto del paquete de aplicaciones para una aplicación de Windows mediante la [API de empaquetado](interfaces.md).
+Obtenga información sobre cómo obtener información del manifiesto del paquete de aplicación para una Windows aplicación mediante la [API de empaquetado](interfaces.md).
 
-### <a name="create-a-package-manifest-reader"></a>Crear un lector de manifiestos de paquete
+### <a name="create-a-package-manifest-reader"></a>Creación de un lector de manifiestos de paquete
 
-Para crear un lector de manifiestos de paquete, llame a [**IAppxFactory:: CreatePackageReader**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagereader) para crear un lector de paquetes. El primer parámetro es un flujo de entrada para el paquete (archivo. appx). El segundo parámetro es un parámetro de salida que recibe un puntero a un puntero [**IAppxPackageReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader) . A continuación, llame a [**IAppxPackageReader:: GetManifest**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getmanifest) para obtener el lector del manifiesto. El parámetro es un parámetro de salida que recibe un puntero a un puntero [**IAppxManifestReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader) .
+Para crear un lector de manifiestos de paquete, llame a [**IAppxFactory::CreatePackageReader**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagereader) para crear un lector de paquetes. El primer parámetro es un flujo de entrada para el paquete (archivo .appx). El segundo parámetro es un parámetro de salida que recibe un puntero a un [**puntero IAppxPackageReader.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader) A continuación, [**llame a IAppxPackageReader::GetManifest para**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagereader-getmanifest) obtener el lector de manifiestos. El parámetro es un parámetro de salida que recibe un puntero a un [**puntero IAppxManifestReader.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader)
 
 
 ```C++
@@ -120,11 +120,11 @@ HRESULT GetPackageReader(
 
 
 
-### <a name="read-package-identity-info"></a>Leer información de identidad del paquete
+### <a name="read-package-identity-info"></a>Leer la información de identidad del paquete
 
-La identificación del paquete se especifica mediante el elemento [**Identity**](/uwp/schemas/appxpackage/appxmanifestschema/element-identity) del manifiesto. Use [**IAppxManifestReader:: GetPackageId**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getpackageid) para obtener un [**IAppxManifestPackageId**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackageid) para leer la información de identidad del paquete, como se muestra aquí.
+La identificación del paquete se especifica mediante el [**elemento Identity**](/uwp/schemas/appxpackage/appxmanifestschema/element-identity) del manifiesto. Use [**IAppxManifestReader::GetPackageId**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getpackageid) para obtener un [**IAppxManifestPackageId**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestpackageid) para leer la información de identidad del paquete, como se muestra aquí.
 
-Este código usa [**IAppxManifestPackageId:: GetPackageFullName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpackagefullname) para obtener el nombre completo del paquete, [**IAppxManifestPackageId:: GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getname) para obtener el nombre del paquete y [**IAppxManifestPackageId:: GetVersion**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getversion) para obtener la versión del paquete.
+Este código usa [**IAppxManifestPackageId::GetPackageFullName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getpackagefullname) para obtener el nombre completo del paquete, [**IAppxManifestPackageId::GetName**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getname) para obtener el nombre del paquete e [**IAppxManifestPackageId::GetVersion**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestpackageid-getversion) para obtener la versión del paquete.
 
 
 ```C++
@@ -190,11 +190,11 @@ HRESULT ReadManifestPackageId(
 
 
 
-### <a name="read-metadata-that-describes-the-package-to-users"></a>Leer metadatos que describen el paquete para los usuarios
+### <a name="read-metadata-that-describes-the-package-to-users"></a>Leer metadatos que describen el paquete a los usuarios
 
-Las propiedades se especifican mediante el elemento [**Properties**](/uwp/schemas/appxpackage/appxmanifestschema/element-properties) en el manifiesto. Use [**IAppxManifestReader:: GetProperties**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getproperties) para obtener un [**IAppxManifestProperties**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestproperties) para leer este nodo, como se muestra aquí.
+Las propiedades se especifican mediante el [**elemento Properties**](/uwp/schemas/appxpackage/appxmanifestschema/element-properties) del manifiesto. Use [**IAppxManifestReader::GetProperties**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getproperties) para obtener [**IAppxManifestProperties**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestproperties) para leer este nodo, como se muestra aquí.
 
-Este código usa [**IAppxManifestProperties:: GetStringValue**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getstringvalue) para obtener el nombre para mostrar del paquete y la descripción del paquete.
+Este código usa [**IAppxManifestProperties::GetStringValue**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestproperties-getstringvalue) para obtener el nombre para mostrar del paquete y la descripción del paquete.
 
 
 ```C++
@@ -245,11 +245,11 @@ HRESULT ReadManifestProperties(
 
 
 
-### <a name="read-metadata-about-the-apps-included-in-the-package"></a>Leer metadatos acerca de las aplicaciones incluidas en el paquete
+### <a name="read-metadata-about-the-apps-included-in-the-package"></a>Leer metadatos sobre las aplicaciones incluidas en el paquete
 
-Las aplicaciones se especifican mediante el elemento [**Applications**](/uwp/schemas/appxpackage/appxmanifestschema/element-applications) en el manifiesto. Use [**IAppxManifestReader:: GetApplications**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getapplications) para obtener un [**IAppxManifestApplicationsEnumerator**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestapplicationsenumerator) para leer este nodo. Use [**IAppxManifestApplicationsEnumerator:: GetCurrent**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-getcurrent) y [**IAppxManifestApplicationsEnumerator:: MoveNext**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-movenext) para obtener un [**IAppxManifestApplication**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestapplication) para cada aplicación del paquete.
+Las aplicaciones se especifican mediante el [**elemento Applications**](/uwp/schemas/appxpackage/appxmanifestschema/element-applications) del manifiesto. Use [**IAppxManifestReader::GetApplications**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestreader-getapplications) para obtener un [**IAppxManifestApplicationsEnumerator**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestapplicationsenumerator) para leer este nodo. Use [**IAppxManifestApplicationsEnumerator::GetCurrent**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-getcurrent) e [**IAppxManifestApplicationsEnumerator::MoveNext**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplicationsenumerator-movenext) para obtener [**IAppxManifestApplication**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestapplication) para cada aplicación del paquete.
 
-Este código usa [**IAppxManifestApplication:: GetStringValue**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplication-getstringvalue) para obtener el nombre para mostrar de cada aplicación.
+Este código usa [**IAppxManifestApplication::GetStringValue**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxmanifestapplication-getstringvalue) para obtener el nombre para mostrar de cada aplicación.
 
 
 ```C++
@@ -316,9 +316,9 @@ HRESULT ReadManifestApplications(
 
 
 
-### <a name="clean-up-the-package-manifest-reader"></a>Limpiar el lector del manifiesto del paquete
+### <a name="clean-up-the-package-manifest-reader"></a>Limpieza del lector de manifiestos de paquete
 
-Antes de volver de la `wmain` función, llame al método [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) para limpiar el lector del manifiesto del paquete y llamar a la función [**CoUninitialize**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) .
+Antes de volver de la función , llame al método Release para limpiar el lector de manifiestos del paquete y llamar a `wmain` la [**función CoUninitialize.**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) [](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)
 
 
 ```C++
@@ -355,6 +355,6 @@ CoUninitialize();
 [**IAppxManifestReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxmanifestreader)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

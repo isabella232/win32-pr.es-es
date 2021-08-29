@@ -1,28 +1,28 @@
 ---
-description: El siguiente procedimiento proporciona una breve introducción al proceso de compilación.
+description: En el procedimiento siguiente se proporciona una breve introducción al proceso de compilación.
 ms.assetid: a369d4d7-bd4b-4b4d-846e-ad85251e9ffb
-title: Compilar un comando de APDU ISO7816-4
+title: Creación de un comando APDU ISO7816-4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63987f27e74dd30b4520e6e09f27ae716d793d40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 411e8c6957269c68f10ed3c62b95104ef893dd02206e22becf6227b59b12e37b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141298"
 ---
-# <a name="building-an-iso7816-4-apdu-command"></a>Compilar un comando de APDU ISO7816-4
+# <a name="building-an-iso7816-4-apdu-command"></a>Creación de un comando APDU ISO7816-4
 
-Para agregar funcionalidad a un proveedor de servicios, debe saber cómo se crea una [*unidad de datos de protocolo de aplicación*](/windows/desktop/SecGloss/a-gly) ISO7816-4 (APDU) dentro de los archivos DLL del proveedor de servicios base. El siguiente procedimiento proporciona una breve introducción al proceso de compilación.
+Para agregar funcionalidad a un proveedor de servicios, debe saber cómo [](/windows/desktop/SecGloss/a-gly) se ha creado una unidad de datos del protocolo de aplicación (APDU) ISO7816-4 dentro de los archivos DLL del proveedor de servicios base. En el procedimiento siguiente se proporciona una breve introducción al proceso de compilación.
 
 > [!Note]  
-> El ejemplo que se incluye aquí no es necesariamente completo; para obtener más información, vea las aplicaciones de ejemplo y los archivos dll.
+> El ejemplo que se incluye aquí no está necesariamente completo; Para obtener más información, vea las aplicaciones de ejemplo y los archivos DLL.
 
  
 
-**Para compilar un comando de APDU ISO7816-4**
+**Para compilar un comando DE APDU ISO7816-4**
 
-1.  Cree un objeto [**ISCardCmd**](iscardcmd.md) y un objeto [**ISCardISO7816**](iscardiso7816.md) .
+1.  Cree un [**objeto ISCardCmd**](iscardcmd.md) y un [**objeto ISCardISO7816.**](iscardiso7816.md)
 
     ```C++
     //  Create an ISCardCmd object.
@@ -41,9 +41,9 @@ Para agregar funcionalidad a un proveedor de servicios, debe saber cómo se crea
 
     
 
-    La interfaz [**ISCardCmd**](iscardcmd.md) contiene dos búferes **IByteBuffer** . Un búfer contiene la cadena de comando APDU real (además de los datos que se van a enviar con el comando). El otro contiene cualquier información de respuesta devuelta por la tarjeta después de la ejecución del comando.
+    La [**interfaz ISCardCmd**](iscardcmd.md) contiene dos búferes **IByteBuffer.** Un búfer contiene la cadena de comando de APDU real (además de los datos que se enviarán con el comando ). El otro contiene cualquier información de respuesta devuelta por la tarjeta después de la ejecución del comando.
 
-2.  Con estos objetos, cree un comando ISO7816-4 válido como se indica a continuación:
+2.  Con estos objetos, cree un comando ISO7816-4 válido como se muestra a continuación:
 
     ```C++
     //  Do challenge.
@@ -53,7 +53,7 @@ Para agregar funcionalidad a un proveedor de servicios, debe saber cómo se crea
 
     
 
-    Este es el código que se usa en el método [**GetChallenge**](iscardiso7816-getchallenge.md) :
+    Este es el código que se usa en [**el método GetChallenge:**](iscardiso7816-getchallenge.md)
 
     ```C++
     #include <windows.h>
@@ -86,7 +86,7 @@ Para agregar funcionalidad a un proveedor de servicios, debe saber cómo se crea
 
     
 
-    El método [**ISCardISO7816:: GetChallenge**](iscardiso7816-getchallenge.md) usa el método [**ISCardCmd:: BuildCmd**](iscardcmd-buildcmd.md) para compilar las APDU solicitadas. Para ello, se escribe la información adecuada en el búfer APDU [**ISCardCmd**](iscardcmd.md) en la siguiente instrucción:
+    El [**método ISCardISO7816::GetChallenge**](iscardiso7816-getchallenge.md) usa el método [**ISCardCmd::BuildCmd**](iscardcmd-buildcmd.md) para compilar la APDU solicitada. Para ello, escriba la información adecuada en el búfer [**DE ISCardCmd**](iscardcmd.md) APDU en la instrucción siguiente:
 
     ```C++
     hr = (*ppCmd)->BuildCmd;
@@ -94,13 +94,13 @@ Para agregar funcionalidad a un proveedor de servicios, debe saber cómo se crea
 
     
 
-3.  Con el objeto [**ISCardCmd**](iscardcmd.md) compilado, realice una transacción con la tarjeta, interprete los resultados y continúe.
+3.  Con el objeto [**ISCardCmd**](iscardcmd.md) creado, realice una transacción con la tarjeta, interprete los resultados y continúe.
 
-## <a name="expanding-beyond-iso7816-4"></a>Expandir más allá de ISO7816-4
+## <a name="expanding-beyond-iso7816-4"></a>Expansión más allá de ISO7816-4
 
-El método recomendado para expandir el proceso de compilación o ejecución del proveedor de servicios descrito anteriormente es crear un nuevo objeto COM. Este objeto COM debe admitir una nueva interfaz que permita la creación de comandos no ISO7816-4 y debe agregar la interfaz [**ISCardISO7816**](iscardiso7816.md) .
+La manera recomendada de expandir el proceso de compilación o ejecución del proveedor de servicios descrito anteriormente es crear un nuevo objeto COM. Este objeto COM debe admitir una nueva interfaz que permita la creación de comandos que no son ISO7816-4 y debe agregar la [**interfaz ISCardISO7816.**](iscardiso7816.md)
 
-## <a name="example-of-building-an-iso7816-4-apdu-command"></a>Ejemplo de creación de un comando de APDU ISO7816-4
+## <a name="example-of-building-an-iso7816-4-apdu-command"></a>Ejemplo de creación de un comando APDU ISO7816-4
 
 En el ejemplo siguiente se muestra el código utilizado en el procedimiento anterior.
 

@@ -1,9 +1,9 @@
 ---
 title: Elemento Channel (RenderingInfoType)
-description: Cadena de mensaje representada del canal especificado en el evento.
+description: Cadena de mensaje representado del canal especificado en el evento.
 ms.assetid: 2bb1b690-bac1-46da-a68a-24683cefe263
 keywords:
-- EventLog del elemento de canal
+- Elemento Channel EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7fc6b64b4122234106ee61fa76574d4cd88d1013
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 355304109bf985abc22c8000f5c253570cd1d427ad1c8f5a75ba09dd752f6451
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055833"
 ---
 # <a name="channel-renderinginfotype-element"></a>Elemento Channel (RenderingInfoType)
 
-Cadena de mensaje representada del canal especificado en el evento.
+Cadena de mensaje representado del canal especificado en el evento.
 
 ``` syntax
 <xs:element name="Channel"
@@ -30,16 +30,16 @@ Cadena de mensaje representada del canal especificado en el evento.
  />
 ```
 
-El elemento de **canal** se define mediante el tipo complejo de [**RenderingInfoType**](eventschema-renderingtype-complextype.md) .
+El **tipo** complejo [**RenderingInfoType**](eventschema-renderingtype-complextype.md) define el elemento Channel.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
