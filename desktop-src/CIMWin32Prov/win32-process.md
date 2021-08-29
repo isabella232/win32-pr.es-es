@@ -60,21 +60,21 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bb8d1d37bd5d4db59942aaab7170119283c5cc7b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e52ae224aee9db09ffa42cf19b3550a5ff6362326b0058d87e4d2a8b2da1851e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759415"
 ---
-# <a name="win32_process-class"></a>\_Clase de proceso Win32
+# <a name="win32_process-class"></a>Win32 \_ Process (clase)
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) de **\_ proceso de Win32** representa un proceso en un sistema operativo.
+La **clase WMI De \_ proceso win32** representa un proceso en un sistema operativo. [](../wmisdk/retrieving-a-class.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 > [!NOTE]
-> Para obtener una explicación general sobre los procesos y subprocesos de Windows, vea el tema [procesos y subprocesos](/ProcThread/processes-and-threads.md).
+> Para obtener una explicación general sobre los procesos y subprocesos Windows, vea el tema [Procesos y subprocesos](/ProcThread/processes-and-threads.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -132,23 +132,23 @@ class Win32_Process : CIM_Process
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ proceso de Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ Process** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase de **\_ proceso de Win32** tiene estos métodos.
+La **clase Win32 \_ Process** tiene estos métodos.
 
 
 
 | Método                                                                   | Descripción                                                                                                                                                                                                                                                                               |
 |:-------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AttachDebugger**](attachdebugger-method-in-class-win32-process.md)   | Inicia el depurador registrado actualmente para un proceso.<br/>                                                                                                                                                                                                                      |
-| [**A**](create-method-in-class-win32-process.md)                   | Crea un nuevo proceso.<br/>                                                                                                                                                                                                                                                         |
-| [**GetAvailableVirtualSize**](getavailablevirtualsize-win32-process.md) | Recupera el tamaño actual, en bytes, del espacio de direcciones virtuales libre disponible para el proceso.<br/> **Windows server 2012, Windows 8, Windows 7, Windows server 2008 y Windows Vista:** Este método no se admite antes de Windows 8.1 y Windows Server 2012 R2.<br/> |
-| [**GetOwner**](getowner-method-in-class-win32-process.md)               | Recupera el nombre de usuario y el nombre de dominio en el que se está ejecutando el proceso.<br/>                                                                                                                                                                                                    |
+| [**Crear**](create-method-in-class-win32-process.md)                   | Crea un nuevo proceso.<br/>                                                                                                                                                                                                                                                         |
+| [**GetAvailableVirtualSize**](getavailablevirtualsize-win32-process.md) | Recupera el tamaño actual, en bytes, del espacio de direcciones virtuales disponible para el proceso.<br/> **Windows Server 2012, Windows 8, Windows 7, Windows Server 2008 y Windows Vista:** Este método no se admite antes de Windows 8.1 y Windows Server 2012 R2.<br/> |
+| [**GetOwner**](getowner-method-in-class-win32-process.md)               | Recupera el nombre de usuario y el nombre de dominio con los que se ejecuta el proceso.<br/>                                                                                                                                                                                                    |
 | [**GetOwnerSid**](getownersid-method-in-class-win32-process.md)         | Recupera el identificador de seguridad (SID) del propietario de un proceso.<br/>                                                                                                                                                                                                            |
 | [**SetPriority**](setpriority-method-in-class-win32-process.md)         | Cambia la prioridad de ejecución de un proceso.<br/>                                                                                                                                                                                                                                   |
 | [**Terminate**](terminate-method-in-class-win32-process.md)             | Finaliza un proceso y todos sus subprocesos.<br/>                                                                                                                                                                                                                                   |
@@ -159,7 +159,7 @@ La clase de **\_ proceso de Win32** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ proceso de Win32** tiene estas propiedades.
+La **clase Win32 \_ Process** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -172,12 +172,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Breve descripción de un objeto: una cadena de una línea.
+Descripción breve de un objeto: una cadena de una línea.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("línea de comandos para iniciar proceso")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Línea de comandos para iniciar el proceso")
 </dt> </dl>
 
 Línea de comandos que se usa para iniciar un proceso específico, si procede.
@@ -206,30 +206,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**displayName**](../wmisdk/standard-qualifiers.md) ("nombre de clase")
+Calificadores: [**\_ Clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre de clase")
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Cuando se usa con otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de la clase y sus subclases se identifiquen de forma única.
+Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
 
 </dd> <dt>
 
 **CreationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**fixed**](../wmisdk/standard-wmi-qualifiers.md), [**displayName**](../wmisdk/standard-qualifiers.md) ("CreationDate")
+Calificadores: [**Fixed**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("CreationDate")
 </dt> </dl>
 
-Fecha en que comienza la ejecución del proceso.
+Fecha en que comienza a ejecutarse el proceso.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
 
 </dd> <dt>
 
@@ -242,12 +242,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**CSCreationClassName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**displayName**](../wmisdk/standard-qualifiers.md) (" Computer System Class name ")
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**CSCreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Computer System Class Name")
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito del equipo.
+Nombre de clase de creación del sistema de equipo de ámbito.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
 
 </dd> <dt>
 
@@ -260,12 +260,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**CSName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**displayName**](../wmisdk/standard-qualifiers.md) (" Computer System Name ")
+Calificadores: [**Propagated**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**CSName**"), [**Clave CIM, \_**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre del sistema del equipo")
 </dt> </dl>
 
-Nombre del sistema de ámbito del equipo.
+Nombre del sistema de equipo de ámbito.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
 
 </dd> <dt>
 
@@ -278,12 +278,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Descripción de un objeto.
+Descripción de un objeto .
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -296,7 +296,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**privileges**](../wmisdk/standard-wmi-qualifiers.md) ("SeDebugPrivilege"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Tool Help Structures \| [**MODULEENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-moduleentry32) \| SzExePath"), [**displayName**](../wmisdk/standard-qualifiers.md) ("ruta de acceso del archivo ejecutable")
+Calificadores: [**Privileges**](../wmisdk/standard-wmi-qualifiers.md) ("SeDebugPrivilege"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Tool Help Structures \| [**MODULEENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-moduleentry32) \| szExePath"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Ruta de acceso ejecutable")
 </dt> </dl>
 
 Ruta de acceso al archivo ejecutable del proceso.
@@ -308,18 +308,18 @@ Ejemplo: "C: \\ Windows \\ System \\Explorer.Exe"
 **ExecutionState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("estado de ejecución")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Estado de ejecución")
 </dt> </dl>
 
 Condición de funcionamiento actual del proceso.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
 
 <dt>
 
@@ -336,7 +336,7 @@ Unknown
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd>
@@ -354,7 +354,7 @@ Otros
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>En **ejecución** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**En** ejecución (3)
 
 
 </dt> <dd></dd> <dt>
@@ -379,14 +379,14 @@ Bloqueado
 
 <span id="Suspended_Ready"></span><span id="suspended_ready"></span><span id="SUSPENDED_READY"></span>
 
-<span id="Suspended_Ready"></span><span id="suspended_ready"></span><span id="SUSPENDED_READY"></span>**Suspendido preparado** (6)
+<span id="Suspended_Ready"></span><span id="suspended_ready"></span><span id="SUSPENDED_READY"></span>**Suspendido listo** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>
 
-<span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>**Terminada** (7)
+<span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span>**Finalizado** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -400,7 +400,7 @@ Bloqueado
 
 <span id="Growing"></span><span id="growing"></span><span id="GROWING"></span>
 
-<span id="Growing"></span><span id="growing"></span><span id="GROWING"></span>En **aumento** (9)
+<span id="Growing"></span><span id="growing"></span><span id="GROWING"></span>**Crecimiento** (9)
 
 
 </dt> <dd></dd> </dl>
@@ -416,80 +416,80 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**displayName**](../wmisdk/standard-qualifiers.md) ("Handle")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Handle")
 </dt> </dl>
 
 Identificador del proceso.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM.**](cim-process.md)
 
 </dd> <dt>
 
 **HandleCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| información de proceso del sistema de estado de proceso inesperados win32api \_ \_ \| HandleCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("número de identificadores")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| HandleCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Handle Count")
 </dt> </dl>
 
-Número total de identificadores abiertos propiedad del proceso. **HandleCount** es la suma de los identificadores abiertos actualmente por cada subproceso de este proceso. Un identificador se utiliza para examinar o modificar los recursos del sistema. Cada controlador tiene una entrada en una tabla que se mantiene internamente. Las entradas contienen las direcciones de los recursos y los datos para identificar el tipo de recurso.
+Número total de identificadores abiertos propiedad del proceso. **HandleCount** es la suma de los identificadores abiertos actualmente por cada subproceso de este proceso. Se usa un identificador para examinar o modificar los recursos del sistema. Cada identificador tiene una entrada en una tabla que se mantiene internamente. Las entradas contienen las direcciones de los recursos y los datos para identificar el tipo de recurso.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
-Fecha en que se instala un objeto. El objeto se puede instalar sin que se escriba un valor en esta propiedad.
+Fecha en que se instala un objeto. El objeto se puede instalar sin escribir un valor en esta propiedad.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **KernelModeTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**unidades**](../wmisdk/standard-qualifiers.md) ("100 nanosegundos")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("KernelModeTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanoseconds")
 </dt> </dl>
 
-Tiempo en modo kernel, en milisegundos. Si esta información no está disponible, utilice un valor de 0 (cero).
+Tiempo en modo kernel, en milisegundos. Si esta información no está disponible, use un valor de 0 (cero).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
 **MaximumWorkingSetSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**privileges**](../wmisdk/standard-wmi-qualifiers.md) ("SeDebugPrivilege"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \| Winnt. H \| \_ límites \| de cuota MaximumWorkingSetSize "), [**displayName**](../wmisdk/standard-qualifiers.md) (" tamaño máximo del espacio de trabajo "), [**unidades**](../wmisdk/standard-qualifiers.md) (" kilobytes ")
+Calificadores: [**Privileges**](../wmisdk/standard-wmi-qualifiers.md) ("SeDebugPrivilege"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \| WINNT. H \| QUOTA \_ LIMITS \| MaximumWorkingSetSize"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tamaño máximo del espacio de trabajo"), [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Tamaño máximo del espacio de trabajo del proceso. El espacio de trabajo de un proceso es el conjunto de páginas de memoria visibles para el proceso en la RAM física. Estas páginas son residentes y están disponibles para que una aplicación las use sin desencadenar un error de página.
+Tamaño máximo del conjunto de trabajo del proceso. El espacio de trabajo de un proceso es el conjunto de páginas de memoria visibles para el proceso en la RAM física. Estas páginas son residentes y están disponibles para que una aplicación las use sin desencadenar un error de página.
 
 Ejemplo: 1413120
 
@@ -498,13 +498,13 @@ Ejemplo: 1413120
 **MinimumWorkingSetSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**privileges**](../wmisdk/standard-wmi-qualifiers.md) ("SeDebugPrivilege"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \| Winnt. H \| \_ límites \| de cuota MinimumWorkingSetSize "), [**displayName**](../wmisdk/standard-qualifiers.md) (" tamaño mínimo del espacio de trabajo "), [**unidades**](../wmisdk/standard-qualifiers.md) (" kilobytes ")
+Calificadores: [**Privileges**](../wmisdk/standard-wmi-qualifiers.md) ("SeDebugPrivilege"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32 \| WINNT. H \| QUOTA \_ LIMITS \| MinimumWorkingSetSize"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tamaño mínimo del espacio de trabajo"), [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
 Tamaño mínimo del espacio de trabajo del proceso. El espacio de trabajo de un proceso es el conjunto de páginas de memoria visibles para el proceso en la RAM física. Estas páginas son residentes y están disponibles para que una aplicación las use sin desencadenar un error de página.
@@ -522,14 +522,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
-Nombre del archivo ejecutable responsable del proceso, equivalente a la propiedad nombre de imagen del administrador de tareas.
+Nombre del archivo ejecutable responsable del proceso, equivalente a la propiedad Image Name de Administrador de tareas.
 
-Cuando se hereda mediante una subclase, la propiedad se puede invalidar para ser una propiedad de clave. El nombre se codifica de forma rígida en la propia aplicación y no se ve afectado por el cambio del nombre de archivo. Por ejemplo, incluso si cambia el nombre de Calc.exe, el nombre Calc.exe seguirá apareciendo en el administrador de tareas y en cualquier script de WMI que recupere el nombre del proceso.
+Cuando se hereda mediante una subclase, la propiedad se puede invalidar para que sea una propiedad de clave. El nombre está codificado de forma hard-code en la propia aplicación y no se ve afectado por el cambio del nombre de archivo. Por ejemplo, incluso si cambia el nombre Calc.exe, el nombre Calc.exe seguirá apareciendo en Administrador de tareas y en cualquier script WMI que recupere el nombre del proceso.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -542,12 +542,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**CreationClassName**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**displayName**](../wmisdk/standard-qualifiers.md) (" nombre de clase del sistema operativo ")
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre de clase de sistema operativo")
 </dt> </dl>
 
-Nombre de la clase de creación del sistema operativo de ámbito.
+Nombre de clase de creación del sistema operativo de ámbito.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM.**](cim-process.md)
 
 </dd> <dt>
 
@@ -560,61 +560,61 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**Nombre**"), [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**displayName**](../wmisdk/standard-qualifiers.md) (" nombre del sistema operativo ")
+Calificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Operating System Name")
 </dt> </dl>
 
 Nombre del sistema operativo de ámbito.
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM.**](cim-process.md)
 
 </dd> <dt>
 
 **OtherOperationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process and Thread Structures \| información de proceso del sistema \_ \_ \| OtherOperationCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("otro recuento de operaciones")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures SYSTEM PROCESS INFORMATION \| \_ \_ \| OtherOperationCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Other Operation Count")
 </dt> </dl>
 
-Número de operaciones de e/s realizadas que no son operaciones de lectura o escritura.
+Número de operaciones de E/S realizadas que no son operaciones de lectura o escritura.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
 **OtherTransferCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process and Thread Structures \| información de proceso del sistema \_ \_ \| OtherTransferCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("otro recuento de transferencias"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures SYSTEM PROCESS INFORMATION \| \_ \_ \| OtherTransferCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Other Transfer Count"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Cantidad de datos transferidos durante las operaciones que no son operaciones de lectura o escritura.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](../wmisdk/creating-a-wmi-script.md)
 
 </dd> <dt>
 
 **PageFaults**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| \_ información de proceso del sistema de estado de proceso inesperados win32api \_ \| PageFaultCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("número de errores de página")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| PageFaultCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Number Of Page Faults")
 </dt> </dl>
 
 Número de errores de página que genera un proceso.
@@ -626,16 +626,16 @@ Ejemplo: 10
 **PageFileUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| información de proceso del sistema de estado de proceso inesperados win32api \_ \_ \| PagefileUsage"), [**displayName**](../wmisdk/standard-qualifiers.md) ("uso del archivo de paginación"), [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| PagefileUsage"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Page File Usage"), [**Units**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Cantidad de espacio del archivo de paginación que un proceso está usando actualmente. Este valor es coherente con el valor de **VMSize** en TaskMgr.exe.
+Cantidad de espacio de archivo de página que un proceso usa actualmente. Este valor es coherente con el **valor VMSize** de TaskMgr.exe.
 
 Ejemplo: 102435
 
@@ -644,32 +644,32 @@ Ejemplo: 102435
 **ParentProcessId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process status Process \| System \_ \_ Information \| InheritedFromUniqueProcessId"), [**displayName**](../wmisdk/standard-qualifiers.md) ("Parent Process ID")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| InheritedFromUniqueProcessId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Parent Process Id")
 </dt> </dl>
 
-Identificador único del proceso que crea un proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso para la duración de ese proceso. Es posible que el proceso identificado por **ParentProcessId** termine, de modo que **ParentProcessId** no puede hacer referencia a un proceso en ejecución. También es posible que **ParentProcessId** haga referencia incorrectamente a un proceso que reutiliza un identificador de proceso. Puede usar la propiedad **CreationDate** para determinar si se ha creado el elemento primario especificado después de que se haya creado el proceso representado por esta instancia de **\_ proceso de Win32** .
+Identificador único del proceso que crea un proceso. Los números de identificador de proceso se reutilizan, por lo que solo identifican un proceso para la duración de ese proceso. Es posible que el proceso identificado por **ParentProcessId** finalice, por lo que **ParentProcessId** puede no hacer referencia a un proceso en ejecución. También es posible que **ParentProcessId hace referencia** incorrectamente a un proceso que reutiliza un identificador de proceso. Puede usar la propiedad **CreationDate** para determinar si el elemento primario especificado se creó después de que se creara el proceso representado por esta instancia del proceso **Win32. \_**
 
 </dd> <dt>
 
 **PeakPageFileUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process status \| \_ Process System \_ Information Information \| PeakPagefileUsage"), [**displayName**](../wmisdk/standard-qualifiers.md) ("uso máximo de archivo de paginación"), [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| PeakPagefileUsage"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Peak Page File Usage"), [**Units**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Cantidad máxima de espacio de archivo de paginación utilizada durante la vida de un proceso.
+Cantidad máxima de espacio de archivo de página utilizado durante la vida de un proceso.
 
 Ejemplo: 102367
 
@@ -678,34 +678,34 @@ Ejemplo: 102367
 **PeakVirtualSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process status \| \_ Process System \_ Information Information \| PeakVirtualSize"), [**displayName**](../wmisdk/standard-qualifiers.md) ("pico de uso de espacio de direcciones de virtual"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| PeakVirtualSize"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Peak Virual Address Space Usage"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Espacio de direcciones virtuales máximo que utiliza un proceso en un momento dado. El uso del espacio de direcciones virtuales no implica necesariamente el uso correspondiente del disco o las páginas de memoria principal. Sin embargo, el espacio virtual es finito y, si se usa demasiado, es posible que el proceso no pueda cargar bibliotecas.
+Espacio máximo de direcciones virtuales que un proceso usa en cualquier momento. El uso de espacio de direcciones virtuales no implica necesariamente el uso correspondiente de páginas de memoria principal o de disco. Sin embargo, el espacio virtual es finito y, al usar demasiado, es posible que el proceso no pueda cargar bibliotecas.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **PeakWorkingSetSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process status \| \_ Process System \_ Information Information \| PeakWorkingSetSize"), [**displayName**](../wmisdk/standard-qualifiers.md) ("tamaño máximo del espacio de trabajo"), [**unidades**](../wmisdk/standard-qualifiers.md) ("kilobytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| PeakWorkingSetSize"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Peak Working Set Size"), [**Units**](../wmisdk/standard-qualifiers.md) ("kilobytes")
 </dt> </dl>
 
-Tamaño máximo del espacio de trabajo de un proceso.
+Tamaño máximo del conjunto de trabajo de un proceso.
 
 Ejemplo: 1413120
 
@@ -714,16 +714,16 @@ Ejemplo: 1413120
 **Prioridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Priority"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process status \| Process System \_ \_ Information \| BasePriority"), [**displayName**](../wmisdk/standard-qualifiers.md) ("Priority")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("Priority"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| BasePriority"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Priority")
 </dt> </dl>
 
-La prioridad de programación de un proceso dentro de un sistema operativo. Cuanto mayor sea el valor, más prioridad recibirá un proceso. Los valores de prioridad pueden oscilar entre 0 (cero), que es la prioridad más baja a 31, que es la prioridad más alta.
+Prioridad de programación de un proceso dentro de un sistema operativo. Cuanto mayor sea el valor, mayor será la prioridad que recibe un proceso. Los valores de prioridad pueden oscilar entre 0 (cero), que es la prioridad más baja a 31, que es la prioridad más alta.
 
 Ejemplo: 7
 
@@ -732,52 +732,52 @@ Ejemplo: 7
 **PrivatePageCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| información de proceso del sistema de estado de proceso inesperados win32api \| \_ \_ \| PrivatePageCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("número de páginas privadas")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| PrivatePageCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Private Page Count")
 </dt> </dl>
 
-Número actual de páginas asignadas que solo son accesibles para el proceso representado por esta instancia de **\_ proceso de Win32** .
+Número actual de páginas asignadas que solo son accesibles para el proceso representado por esta **instancia de Win32 \_ Process.**
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **ProcessId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process and Thread Structures \| [**Process \_ Information**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) \| DwProcessId"), [**displayName**](../wmisdk/standard-qualifiers.md) ("Process ID")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures PROCESS \| [**\_ INFORMATION**](/windows/win32/api/processthreadsapi/ns-processthreadsapi-process_information) \| dwProcessId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Id. de proceso")
 </dt> </dl>
 
-Identificador numérico que se usa para distinguir un proceso de otro. Los ProcessIDs son válidos desde el momento de creación del proceso para la terminación del proceso. Tras la finalización, se puede aplicar el mismo identificador numérico a un nuevo proceso.
+Identificador numérico utilizado para distinguir un proceso de otro. Los processID son válidos desde el momento de creación del proceso hasta la finalización del proceso. Tras la finalización, ese mismo identificador numérico se puede aplicar a un nuevo proceso.
 
-Esto significa que no puede usar ProcessID solo para supervisar un proceso determinado. Por ejemplo, una aplicación podría tener un ProcessID de 7 y, a continuación, producir un error. Cuando se inicia un nuevo proceso, se puede asignar el ID. de proceso 7 al nuevo proceso. Por lo tanto, un script que solo comprobó un ProcessID especificado podría "engañarse" para pensar que la aplicación original todavía se estaba ejecutando.
+Esto significa que no puede usar ProcessID solo para supervisar un proceso determinado. Por ejemplo, una aplicación podría tener un ProcessID de 7 y, a continuación, producir un error. Cuando se inicia un nuevo proceso, se podría asignar el ProcessID 7 al nuevo proceso. Por lo tanto, un script que solo ha comprobado un ProcessID especificado podría estar "desaprobado" al pensar que la aplicación original todavía se estaba ejecutando.
 
 </dd> <dt>
 
 **QuotaNonPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| información de proceso del sistema de estado de proceso inesperados win32api \_ \_ \| QuotaNonPagedPoolUsage"), [**displayName**](../wmisdk/standard-qualifiers.md) ("cuota de uso de bloque no paginado")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| QuotaNonPagedPoolUsage"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Non-Paged Pool Usage Quota")
 </dt> </dl>
 
-Cuota de uso de bloque no paginado para un proceso.
+Cantidad de cuota de uso de grupo sin página para un proceso.
 
 Ejemplo: 15
 
@@ -786,16 +786,16 @@ Ejemplo: 15
 **QuotaPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| información de proceso del sistema de estado de proceso inesperados win32api \_ \_ \| QuotaPagedPoolUsage"), [**displayName**](../wmisdk/standard-qualifiers.md) ("cuota de uso del grupo paginado")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| QuotaPagedPoolUsage"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Paged Pool Usage Quota")
 </dt> </dl>
 
-Cuota de uso del grupo paginado para un proceso.
+Cantidad de cuota de uso de grupo paginado para un proceso.
 
 Ejemplo: 22
 
@@ -804,16 +804,16 @@ Ejemplo: 22
 **QuotaPeakNonPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| información de proceso del sistema de estado de proceso inesperados win32api \_ \_ \| QuotaPeakNonPagedPoolUsage"), [**displayName**](../wmisdk/standard-qualifiers.md) ("cuota máxima de uso de bloque no paginado")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| QuotaPeakNonPagedPoolUsage"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Peak Non-Paged Pool Usage Quota")
 </dt> </dl>
 
-Cantidad máxima de cuota de uso de bloque no paginado para un proceso.
+Cantidad máxima de cuota de uso de grupo sin página para un proceso.
 
 Ejemplo: 31
 
@@ -822,16 +822,16 @@ Ejemplo: 31
 **QuotaPeakPagedPoolUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| información de proceso del sistema de estado de proceso inesperados win32api \_ \_ \| QuotaPeakPagedPoolUsage"), [**displayName**](../wmisdk/standard-qualifiers.md) ("cuota máxima de uso del grupo paginado")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| QuotaPeakPagedPoolUsage"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Peak Paged Pool Usage Quota")
 </dt> </dl>
 
-Cantidad máxima de cuota de uso del grupo paginado para un proceso.
+Cantidad máxima de cuota de uso de grupo paginado para un proceso.
 
 Ejemplo: 31
 
@@ -840,49 +840,49 @@ Ejemplo: 31
 **ReadOperationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| de proceso y estructuras de subprocesos \| información de proceso del sistema \_ \_ \| ReadOperationCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("número de operaciones de lectura")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures SYSTEM PROCESS INFORMATION \| \_ \_ \| ReadOperationCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Read Operation Count")
 </dt> </dl>
 
 Número de operaciones de lectura realizadas.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **ReadTransferCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process and Thread Structures \| información de proceso del sistema \_ \_ \| ReadTransferCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("recuento de transferencias de lectura"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures SYSTEM PROCESS INFORMATION \| \_ \_ \| ReadTransferCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Read Transfer Count"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Cantidad de datos leídos.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **SessionId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process status \| System \_ Process \_ Information \| SessionID"), [**displayName**](../wmisdk/standard-qualifiers.md) ("ID. de sesión")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| SessionId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Id. de sesión")
 </dt> </dl>
 
 Identificador único que genera un sistema operativo cuando se crea una sesión. Una sesión abarca un período de tiempo desde el inicio de sesión hasta el cierre de sesión desde un sistema específico.
@@ -898,12 +898,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Esta propiedad no está implementada y no se rellena para ninguna instancia de esta clase. Siempre es **null**.
+Esta propiedad no se implementa y no se rellena para ninguna instancia de esta clase. Siempre es **NULL.**
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -911,84 +911,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -998,31 +998,31 @@ Con **estrés** ("acentuado")
 **TerminationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("fecha de finalización")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de finalización")
 </dt> </dl>
 
-El proceso se detuvo o finalizó. Para obtener el tiempo de finalización, se debe mantener abierto un identificador del proceso. De lo contrario, esta propiedad devuelve **null**.
+El proceso se detuvo o finalizó. Para obtener el tiempo de finalización, se debe mantener abierto un identificador para el proceso. De lo contrario, esta propiedad devuelve **NULL.**
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
 
 </dd> <dt>
 
 **ThreadCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process status \| \_ Process System \_ Information \| NumberOfThreads"), [**displayName**](../wmisdk/standard-qualifiers.md) ("recuento de subprocesos")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| NumberOfThreads"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Thread Count")
 </dt> </dl>
 
 Número de subprocesos activos en un proceso. Una instrucción es la unidad básica de ejecución en un procesador y un subproceso es el objeto que ejecuta una instrucción. Cada proceso en ejecución tiene al menos un subproceso.
@@ -1032,36 +1032,36 @@ Número de subprocesos activos en un proceso. Una instrucción es la unidad bás
 **UserModeTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](../wmisdk/standard-qualifiers.md) ("UserModeTime"), [**unidades**](../wmisdk/standard-qualifiers.md) ("100 nanosegundos")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("UserModeTime"), [**Units**](../wmisdk/standard-qualifiers.md) ("100 nanoseconds")
 </dt> </dl>
 
-Tiempo en modo de usuario, en unidades de 100 nanosegundos. Si esta información no está disponible, utilice un valor de 0 (cero).
+Tiempo en modo de usuario, en unidades de 100 nanosegundos. Si esta información no está disponible, use un valor de 0 (cero).
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **VirtualSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| \| información de proceso del sistema de estado de proceso inesperados win32api \_ \_ \| VirtualSize"), [**displayName**](../wmisdk/standard-qualifiers.md) ("uso del espacio de direcciones virtuales"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process Status SYSTEM PROCESS INFORMATION \| \_ \_ \| VirtualSize"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Virtual Address Space Usage"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Tamaño actual del espacio de direcciones virtuales que usa un proceso, no de la memoria física o virtual usada realmente por el proceso. El uso del espacio de direcciones virtuales no implica necesariamente el uso correspondiente del disco o las páginas de memoria principal. El espacio virtual es finito y, si se usa demasiado, es posible que el proceso no pueda cargar bibliotecas. Este valor es coherente con lo que se ve en Perfmon.exe.
+Tamaño actual del espacio de direcciones virtuales que usa un proceso, no la memoria física o virtual usada realmente por el proceso. El uso de espacio de direcciones virtuales no implica necesariamente el uso correspondiente de páginas de memoria principal o de disco. El espacio virtual es finito y, al usar demasiado, es posible que el proceso no pueda cargar bibliotecas. Este valor es coherente con lo que se ve en Perfmon.exe.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
@@ -1074,100 +1074,100 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process and Thread Functions \| GetProcessVersion"), [**displayName**](../wmisdk/standard-qualifiers.md) ("Windows version")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Functions \| GetProcessVersion"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Windows Version")
 </dt> </dl>
 
-Versión de Windows en la que se está ejecutando el proceso.
+Versión de Windows en la que se ejecuta el proceso.
 
-Ejemplo: 4,0
+Ejemplo: 4.0
 
 </dd> <dt>
 
 **WorkingSetSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("tamaño del espacio de trabajo"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tamaño del espacio de trabajo"), [**Unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
-Cantidad de memoria en bytes que un proceso necesita ejecutar de forma eficaz — para un sistema operativo que usa la administración de memoria basada en páginas. Si el sistema no tiene suficiente memoria (menos que el tamaño del espacio de trabajo), se produce la paginación excesiva. Si no se conoce el tamaño del espacio de trabajo, utilice **null** o 0 (cero). Si se proporcionan datos del espacio de trabajo, puede supervisar la información para comprender los requisitos de memoria variables de un proceso.
+Cantidad de memoria en bytes que un proceso debe ejecutar de forma eficaz, para un sistema operativo que usa la administración de memoria basada en páginas. Si el sistema no tiene suficiente memoria (menor que el tamaño del espacio de trabajo), se produce la thrashing. Si no se conoce el tamaño del conjunto de trabajo, use **NULL** o 0 (cero). Si se proporcionan datos de espacio de trabajo, puede supervisar la información para comprender los requisitos de memoria cambiantes de un proceso.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
-Esta propiedad se hereda del [**\_ proceso CIM**](cim-process.md).
+Esta propiedad se hereda del proceso [**\_ CIM**](cim-process.md).
 
 </dd> <dt>
 
 **WriteOperationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| de proceso y estructuras de subprocesos \| información de proceso del sistema \_ \_ \| WriteOperationCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("número de operaciones de escritura")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures SYSTEM PROCESS INFORMATION \| \_ \_ \| WriteOperationCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Write Operation Count")
 </dt> </dl>
 
 Número de operaciones de escritura realizadas.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> <dt>
 
 **WriteTransferCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("inesperados win32api \| Process and Thread Structures \| información de proceso del sistema \_ \_ \| WriteTransferCount"), [**displayName**](../wmisdk/standard-qualifiers.md) ("recuento de transferencias de escritura"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bytes")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Process and Thread Structures SYSTEM PROCESS INFORMATION \| \_ \_ \| WriteTransferCount"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Write Transfer Count"), [**Units**](../wmisdk/standard-qualifiers.md) ("bytes")
 </dt> </dl>
 
 Cantidad de datos escritos.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](../wmisdk/creating-a-wmi-script.md).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](../wmisdk/creating-a-wmi-script.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **\_ proceso de Win32** se deriva del [**\_ proceso CIM**](cim-process.md). El proceso de llamada que usa esta clase debe tener el privilegio de **\_ \_ nombre de restauración se** en el equipo en el que reside el registro. Para obtener más información, vea [ejecutar operaciones con privilegios](../wmisdk/executing-privileged-operations.md).
+La **clase Win32 \_ Process** se deriva del [**proceso CIM \_**](cim-process.md). El proceso de llamada que usa esta clase debe tener el **SE \_ restore \_ NAME** en el equipo en el que reside el Registro. Para obtener más información, [vea Ejecutar operaciones con privilegios.](../wmisdk/executing-privileged-operations.md)
 
 ### <a name="overview"></a>Información general
 
-Los procesos subyacen casi todo lo que ocurre en un equipo. De hecho, se puede realizar un seguimiento de la causa principal de la mayoría de los problemas del equipo con los procesos; por ejemplo, se podrían estar ejecutando demasiados procesos en un equipo (y se está consiguiendo un conjunto finito de recursos), o bien un único proceso podría estar usando más de su recurso compartido de recursos. Estos factores hacen que sea importante mantener una observación cercana en los procesos que se ejecutan en un equipo. La supervisión de procesos, la actividad principal en la administración de procesos, permite determinar lo que realmente hace un equipo, qué aplicaciones ejecuta el equipo y cómo se ven afectadas por los cambios en el entorno informático.
+Los procesos subyacen a casi todo lo que sucede en un equipo. De hecho, la causa principal de la mayoría de los problemas del equipo se puede realizar en los procesos. Por ejemplo, es posible que se ejecuten demasiados procesos en un equipo (y que se contenda por un conjunto finito de recursos), o que un único proceso esté usando más de su parte de recursos. Estos factores hacen que sea importante mantener una estrecha atención sobre los procesos que se ejecutan en un equipo. La supervisión de procesos, la actividad principal en la administración de procesos, le permite determinar qué hace realmente un equipo, qué aplicaciones ejecuta el equipo y cómo se ven afectadas esas aplicaciones por los cambios en el entorno informático.
 
 ### <a name="monitoring-a-process"></a>Supervisión de un proceso
 
-La supervisión de procesos de forma periódica le ayuda a garantizar que un equipo se ejecute con una eficacia máxima y que lleve a cabo sus tareas designadas según lo previsto. Por ejemplo, mediante la supervisión de procesos se puede recibir una notificación inmediata de cualquier aplicación que haya dejado de responder y, a continuación, realizar los pasos necesarios para finalizar el proceso. Además, la supervisión de procesos permite identificar problemas antes de que se produzcan. Por ejemplo, al comprobar repetidamente la cantidad de memoria usada por un proceso, puede identificar una fuga de memoria. Después, puede detener el proceso antes de que la aplicación errante utilice toda la memoria disponible y el equipo se detenga.
+La supervisión de los procesos de forma periódica le ayuda a garantizar que un equipo se ejecuta con la máxima eficacia y que lleva a cabo sus tareas designadas según lo previsto. Por ejemplo, mediante la supervisión de procesos, se le puede notificar inmediatamente de cualquier aplicación que haya dejado de responder y, a continuación, realizar los pasos necesarios para finalizar ese proceso. Además, la supervisión de procesos permite identificar problemas antes de que se produzcan. Por ejemplo, al comprobar repetidamente la cantidad de memoria usada por un proceso, puede identificar una pérdida de memoria. A continuación, puede detener el proceso antes de que la aplicación errant use toda la memoria disponible y detenga el equipo.
 
-La supervisión de procesos también ayuda a minimizar las interrupciones causadas por las interrupciones planeadas para las actualizaciones y el mantenimiento. Por ejemplo, al comprobar el estado de una aplicación de base de datos que se ejecuta en los equipos cliente, puede determinar el impacto de dejar la base de datos sin conexión para actualizar el software.
+La supervisión de procesos también ayuda a minimizar las interrupciones causadas por interrupciones planeadas para las actualizaciones y el mantenimiento. Por ejemplo, al comprobar el estado de una aplicación de base de datos que se ejecuta en equipos cliente, puede determinar el impacto de desconectar la base de datos para actualizar el software.
 
-Supervisión de la disponibilidad del proceso. Mide el porcentaje de tiempo que un proceso está disponible. La disponibilidad normalmente se supervisa mediante el uso de un sondeo simple, que indica si el proceso sigue en ejecución. Al realizar un seguimiento de los resultados de cada sondeo, puede calcular la disponibilidad del proceso. Por ejemplo, un proceso que se sondea 100 veces y responde en 95 de esas ocasiones tiene una disponibilidad del 95 por ciento. Este tipo de supervisión normalmente se reserva para las bases de datos, programas de correo y otras aplicaciones que se espera que se ejecuten en todo momento. No es adecuado para programas de procesamiento de texto, hojas de cálculo u otras aplicaciones que se inician de forma rutinaria y se detienen varias veces al día.
+Supervisión de la disponibilidad del proceso. Mide el porcentaje de tiempo que un proceso está disponible. Normalmente, la disponibilidad se supervisa mediante un sondeo simple, que informa de si el proceso todavía se está ejecutando. Al realizar un seguimiento de los resultados de cada sondeo, puede calcular la disponibilidad del proceso. Por ejemplo, un proceso que se sondea 100 veces y responde en 95 de esas ocasiones tiene una disponibilidad del 95 %. Este tipo de supervisión se reserva normalmente para bases de datos, programas de correo y otras aplicaciones que se espera que se ejecuten en todo momento. No es adecuado para programas de procesamiento de texto, hojas de cálculo u otras aplicaciones que se inician y detienen de forma rutinaria varias veces al día.
 
-Puede crear una instancia de la clase [**Win32 \_ ProcessStartup**](win32-processstartup.md) para configurar el proceso.
+Puede crear una instancia de la clase [**\_ ProcessStartup de Win32**](win32-processstartup.md) para configurar el proceso.
 
-Puede supervisar el rendimiento de los procesos con la clase de [**proceso de Win32 \_ PerfFormattedData \_ PerfProc \_**](../wmisdk/retrieving-raw-and-formatted-performance-data.md) y un objeto de actualizador de WMI, como [**SWbemRefresher**](../wmisdk/swbemrefresher.md). Para obtener más información, vea [supervisar datos de rendimiento](../wmisdk/monitoring-performance-data.md).
+Puede supervisar el rendimiento de los procesos con la clase [**\_ PerfFormattedData \_ PerfProc \_ Process de Win32**](../wmisdk/retrieving-raw-and-formatted-performance-data.md) y un objeto de actualizador WMI, [**como SWbemRefresher.**](../wmisdk/swbemrefresher.md) Para obtener más información, vea [Supervisión de datos de rendimiento.](../wmisdk/monitoring-performance-data.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo [de código de PowerShell de las propiedades de las clases WMI](https://Gallery.TechNet.Microsoft.Com/a7918bf3-bc03-4553-990f-aba13cf196b7) de la galería de TechNet se describe la clase de **\_ proceso de Win32** y se muestran los resultados en formato de Excel.
+El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/a7918bf3-bc03-4553-990f-aba13cf196b7) código de PowerShell Enumerar las propiedades de las clases WMI en la Galería de TechNet describe la clase Proceso **\_ win32** y genera los resultados en Excel formato.
 
-El [proceso de finalización en ejecución en varios servidores](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) finaliza un proceso que se ejecuta en uno o varios equipos.
+El [proceso De finalizar en ejecución en varios servidores](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) finaliza un proceso que se ejecuta en uno o varios equipos.
 
-En el tema [ejemplo: llamar a un método de proveedor](../wmisdk/example--calling-a-provider-method.md) , el código usa C++ para llamar al **\_ proceso de Win32** para crear un proceso.
+En el [tema Ejemplo: Llamar a un método de](../wmisdk/example--calling-a-provider-method.md) proveedor, el código usa C++ para llamar a Proceso **win32 \_** para crear un proceso.
 
-La disponibilidad es la forma más sencilla de supervisión de procesos: con este enfoque, solo tiene que asegurarse de que el proceso se está ejecutando. Al supervisar la disponibilidad de los procesos, normalmente se recupera una lista de procesos que se ejecutan en un equipo y, a continuación, se comprueba que un proceso determinado todavía está activo. Si el proceso está activo, se considera que está disponible. Si el proceso no está activo, no está disponible. El siguiente ejemplo de VBScript supervisa la disponibilidad del proceso mediante la comprobación de la lista de procesos que se ejecutan en un equipo y la emisión de una notificación si no se encuentra el proceso de Database.exe.
+La disponibilidad es la forma más sencilla de supervisión de procesos: con este enfoque, simplemente se asegura de que el proceso se está ejecutando. Al supervisar la disponibilidad del proceso, normalmente se recupera una lista de procesos que se ejecutan en un equipo y, a continuación, se comprueba que un proceso determinado sigue activo. Si el proceso está activo, se considera disponible. Si el proceso no está activo, no está disponible. En el ejemplo de VBScript siguiente se supervisa la disponibilidad de los procesos comprobando la lista de procesos que se ejecutan en un equipo y emitiendo una notificación si no se encuentra Database.exe proceso.
 
 
 ```VB
@@ -1183,7 +1183,7 @@ End If
 
 
 
-El siguiente ejemplo de VBScript supervisa la creación de procesos mediante un consumidor de eventos temporal.
+En el ejemplo de VBScript siguiente se supervisa la creación de procesos mediante un consumidor de eventos temporal.
 
 
 ```VB
@@ -1219,7 +1219,7 @@ Next
 
 
 
-En el ejemplo de código de VBScript siguiente se muestra cómo obtener el propietario de cada proceso en un equipo local. Puede usar este script para obtener datos de un equipo remoto, por ejemplo, para determinar qué usuarios tienen procesos que ejecutan Terminal Server, sustituya el nombre del equipo remoto por "." en la primera línea. También debe ser administrador en el equipo remoto.
+En el siguiente ejemplo de código de VBScript se muestra cómo obtener el propietario de cada proceso en un equipo local. Puede usar este script para obtener datos de un equipo remoto, por ejemplo, para determinar qué usuarios tienen procesos que ejecutan terminal server y sustituya el nombre del equipo remoto por "." en la primera línea. También debe ser administrador en el equipo remoto.
 
 
 ```VB
@@ -1239,7 +1239,7 @@ Next
 
 
 
-En el ejemplo de código de VBScript siguiente se muestra cómo obtener la sesión de inicio de sesión asociada a un proceso en ejecución. Un proceso debe estar en ejecución Notepad.exe antes de que se inicie el script. En el ejemplo se buscan las instancias de [**Win32 \_ LogonSession**](win32-logonsession.md) asociadas al **\_ proceso de Win32** que representa Notepad.exe. [**Win32 \_ SessionProcess**](win32-sessionprocess.md) se especifica como la clase Association. Para obtener más información, vea [ASSOCIATORS OF Statement.](../wmisdk/associators-of-statement.md)
+En el siguiente ejemplo de código de VBScript se muestra cómo obtener la sesión de inicio de sesión asociada a un proceso en ejecución. Un proceso debe ejecutarse Notepad.exe antes de que se inicie el script. En el ejemplo se localizan las instancias de [**\_ LogonSession de Win32**](win32-logonsession.md) asociadas al proceso **de Win32 \_** que representa Notepad.exe. [**Win32 \_ SessionProcess**](win32-sessionprocess.md) se especifica como clase de asociación. Para obtener más información, [vea ASSOCIATORS OF (Instrucción).](../wmisdk/associators-of-statement.md)
 
 
 ```VB
@@ -1270,8 +1270,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1280,13 +1280,13 @@ Next
 
 <dl> <dt>
 
-[**\_Proceso CIM**](cim-process.md)
+[**Proceso \_ CIM**](cim-process.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)
 </dt> <dt>
 
-[Tareas de WMI: procesos](../wmisdk/wmi-tasks--processes.md)
+[Tareas wmi: procesos](../wmisdk/wmi-tasks--processes.md)
 </dt> </dl>
 
  

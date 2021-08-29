@@ -1,7 +1,7 @@
 ---
-description: Representa el servicio de comunicación invitado. Se utiliza para la comunicación con el invitado, desde el host de Hyper-V.
+description: Representa el servicio de comunicación de invitado. Se usa para la comunicación con el invitado, desde el host de Hyper-V.
 ms.assetid: 8d1d241f-4702-41bc-ab44-4f0aaa83ad4b
-title: Msvm_GuestCommunicationService (clase)
+title: Msvm_GuestCommunicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d4454dc80f4dda6471c0d3255898c10c0f979aa3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 900e943d6c728768b2f2d1d3f61740942f1da15bc8b1c09e28dcddde2dbe873c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523185"
 ---
-# <a name="msvm_guestcommunicationservice-class"></a>MSVM \_ GuestCommunicationService (clase)
+# <a name="msvm_guestcommunicationservice-class"></a>Clase \_ GuestCommunicationService de Msvm
 
-Representa el servicio de comunicación invitado. Se utiliza para la comunicación con el invitado, desde el host de Hyper-V.
+Representa el servicio de comunicación de invitado. Se usa para la comunicación con el invitado, desde el host de Hyper-V.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -37,7 +37,7 @@ class Msvm_GuestCommunicationService : Msvm_GuestService
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ GuestCommunicationService** no define ningún miembro.
+La **clase \_ GuestCommunicationService de Msvm** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,10 +45,10 @@ La clase **MSVM \_ GuestCommunicationService** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -57,7 +57,7 @@ La clase **MSVM \_ GuestCommunicationService** no define ningún miembro.
 
 <dl> <dt>
 
-[**MSVM \_ GuestService**](msvm-guestservice.md)
+[**Msvm \_ GuestService**](msvm-guestservice.md)
 </dt> </dl>
 
  

@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 60af0090e440cd101211394cff98c9d9a501f4ba
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: daa61cc8358fb0dc59f4b819e27077c68748b995
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422865"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624441"
 ---
 # <a name="span-idvspixengineeventtypespaneventtype-enumeration"></a><span id="vspixengine.eventtype"></span>Enumeración EVENTTYPE
 
@@ -54,53 +54,53 @@ enum EVENTTYPE {
 
 ## <a name="constants"></a>Constantes
 
-<span id="ET_NONE"></span><span id="et_none"></span>**y \_ ninguno**  
-Un valor que corresponde a ningún evento.
+<span id="ET_NONE"></span><span id="et_none"></span>**ET \_ NONE**  
+Valor que corresponde a ningún evento.
 
 <span id="ET_SESSIONSTART"></span><span id="et_sessionstart"></span>**ET \_ SESSIONSTART**  
-Un valor que corresponde a un evento de inicio de sesión.
+Valor que corresponde a un evento de inicio de sesión.
 
 <span id="ET_SESSIONEND"></span><span id="et_sessionend"></span>**ET \_ SESSIONEND**  
-Un valor que corresponde a un evento de fin de sesión.
+Valor que corresponde a un evento de fin de sesión.
 
 <span id="ET_PROCESSSTART"></span><span id="et_processstart"></span>**ET \_ PROCESSSTART**  
-Un valor que corresponde a un evento de inicio del proceso.
+Valor que corresponde a un evento de inicio del proceso.
 
 <span id="ET_PROCESSEND"></span><span id="et_processend"></span>**ET \_ PROCESSEND**  
-Un valor que corresponde a un evento de finalización del proceso.
+Valor que corresponde a un evento de finalización del proceso.
 
 <span id="ET_FRAMEBEGIN"></span><span id="et_framebegin"></span>**ET \_ FRAMEBEGIN**  
-Un valor que corresponde a un evento de inicio del marco.
+Valor que corresponde a un evento de inicio de fotograma.
 
 <span id="ET_FRAMEEND"></span><span id="et_frameend"></span>**ET \_ FRAMEEND**  
-Un valor que corresponde a un evento de fin de marco. No se utiliza.
+Valor que corresponde a un evento de extremo de fotograma. No se utiliza.
 
 <span id="ET_USEREVENTBEGIN"></span><span id="et_usereventbegin"></span>**ET \_ USEREVENTBEGIN**  
-Un valor que corresponde a un evento de inicio de evento de usuario.
+Valor que corresponde a un evento begin de evento de usuario.
 
 <span id="ET_USEREVENTEND"></span><span id="et_usereventend"></span>**ET \_ USEREVENTEND**  
-Un valor que corresponde a un evento de final de evento de usuario. No se utiliza.
+Valor que corresponde a un evento final de evento de usuario. No se utiliza.
 
 <span id="ET_USERMARKER"></span><span id="et_usermarker"></span>**ET \_ USERMARKER**  
-Un valor que corresponde a un evento de marcador de usuario.
+Valor que corresponde a un evento de marcador de usuario.
 
-<span id="ET_CALL"></span><span id="et_call"></span>**\_llamada et**  
-Un valor que corresponde a un evento de llamada.
+<span id="ET_CALL"></span><span id="et_call"></span>**ET \_ CALL**  
+Valor que corresponde a un evento de llamada.
 
 <span id="ET_OBJECTCREATION"></span><span id="et_objectcreation"></span>**ET \_ OBJECTCREATION**  
-Un valor que corresponde a un evento de creación de objeto.
+Valor que corresponde a un evento de creación de objetos.
 
 <span id="ET_OBJECTPOPULATION"></span><span id="et_objectpopulation"></span>**ET \_ OBJECTPOPULATION**  
-Un valor que corresponde a un evento de llenado de objeto.
+Valor que corresponde a un evento de población de objetos.
 
 <span id="ET_CALLSYNC"></span><span id="et_callsync"></span>**ET \_ CALLSYNC**  
 
-<span id="ET_DRAW"></span><span id="et_draw"></span>**\_dibujo et**  
-Un valor que corresponde a un evento de llamada a Draw.
+<span id="ET_DRAW"></span><span id="et_draw"></span>**ET \_ DRAW**  
+Valor que corresponde a un evento de llamada a draw.
 
-<span id="ET_DISPATCH"></span><span id="et_dispatch"></span>**y \_ envío**  
-Un valor que corresponde a un evento de envío.
+<span id="ET_DISPATCH"></span><span id="et_dispatch"></span>**ET \_ DISPATCH**  
+Valor que corresponde a un evento de distribución.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>

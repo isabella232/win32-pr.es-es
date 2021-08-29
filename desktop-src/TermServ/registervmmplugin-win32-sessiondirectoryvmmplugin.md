@@ -1,12 +1,12 @@
 ---
-title: Método RegisterVMMPlugin de la clase Win32_SessionDirectoryVMMPlugin
-description: Registra un nuevo complemento de VMM.
+title: Método RegisterVMMPlugin de la Win32_SessionDirectoryVMMPlugin clase
+description: Registra un nuevo complemento vmm.
 ms.assetid: 8fa6109e-6320-4ad1-b313-f100d8383f85
 ms.tgt_platform: multiple
 keywords:
 - Método RegisterVMMPlugin Servicios de Escritorio remoto
-- Método RegisterVMMPlugin Servicios de Escritorio remoto, clase Win32_SessionDirectoryVMMPlugin
-- Win32_SessionDirectoryVMMPlugin de clase Servicios de Escritorio remoto, método RegisterVMMPlugin
+- Método RegisterVMMPlugin Servicios de Escritorio remoto , Win32_SessionDirectoryVMMPlugin clase
+- Win32_SessionDirectoryVMMPlugin clase Servicios de Escritorio remoto , método RegisterVMMPlugin
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 381be34f9398147b323fa99093479da48adfd480
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 163fc00b63fcc29a1c9d7b2a9388db547509d7b24eada2caccbdfbf70d9a3287
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865995"
 ---
-# <a name="registervmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método RegisterVMMPlugin de la \_ clase SessionDirectoryVMMPlugin de Win32
+# <a name="registervmmplugin-method-of-the-win32_sessiondirectoryvmmplugin-class"></a>Método RegisterVMMPlugin de la clase \_ SessionDirectoryVMMPlugin de Win32
 
-Registra un nuevo complemento de VMM.
+Registra un nuevo complemento vmm.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,51 +48,51 @@ uint32 RegisterVMMPlugin(
 
 <dl> <dt>
 
-*sName* \[ de\]
+*sName* \[ En\]
 </dt> <dd>
 
 Nombre del complemento.
 
 </dd> <dt>
 
-*sProvider* \[ de\]
+*sProvider* \[ En\]
 </dt> <dd>
 
 Nombre del proveedor del complemento.
 
 </dd> <dt>
 
-*sServiceLocation* \[ de\]
+*sServiceLocation* \[ En\]
 </dt> <dd>
 
-La ubicación del servicio en la que debe ponerse en contacto el complemento.
+Ubicación del servicio con la que debe ponerse en contacto el complemento.
 
 </dd> <dt>
 
-*sClassID* \[ de\]
+*sClassID* \[ En\]
 </dt> <dd>
 
 Identificador de clase del complemento.
 
 </dd> <dt>
 
-*Prioridad* \[ de de\]
+*Prioridad* \[ En\]
 </dt> <dd>
 
 Prioridad del complemento. Cuanto mayor sea el valor, mayor será la prioridad del complemento.
 
 </dd> <dt>
 
-*Habilitado* \[ de\]
+*Habilitado* \[ En\]
 </dt> <dd>
 
-Indica si el complemento está habilitado o deshabilitado. **True** si el complemento está habilitado o **false** en caso contrario.
+Indica si el complemento está habilitado o deshabilitado. **True** si el complemento está habilitado o **false** de lo contrario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                      |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

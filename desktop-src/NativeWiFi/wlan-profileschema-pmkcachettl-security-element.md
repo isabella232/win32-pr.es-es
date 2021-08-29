@@ -1,7 +1,7 @@
 ---
-description: Indica el período de tiempo, en minutos, que se conservará una caché PMK.
+description: Indica el período de tiempo, en minutos, que se conservará una caché de PMK.
 ms.assetid: d9e3b839-48f6-490c-ab83-067368cdcca2
-title: Elemento PMKCacheTTL (Security)
+title: Elemento PMKCacheTTL (seguridad)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: bdfe0edb163dc2bc9766ba8562defb026bbe21fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c4f43acfd64c3e6e575b1a41103c65feb2373f205354567aa8e1a023805ca72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799875"
 ---
-# <a name="pmkcachettl-security-element"></a>Elemento PMKCacheTTL (Security)
+# <a name="pmkcachettl-security-element"></a>Elemento PMKCacheTTL (seguridad)
 
-El elemento PMKCacheTTL (Security) indica el período de tiempo, en minutos, que se conservará una caché PMK. Este elemento solo es válido para redes definidas por WPA2 con [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) establecido en "habilitado".
+El elemento PMKCacheTTL (seguridad) indica el tiempo, en minutos, que se conservará una caché de PMK. Este elemento solo es válido para redes definidas por WPA2 con [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) establecido en "enabled".
 
-El almacenamiento en caché PMK se describe en la especificación [802.11 i](https://standards.ieee.org/findstds/standard/802.11i-2004.html) .
+El almacenamiento en caché de PMK se describe en la [especificación 802.11i.](https://standards.ieee.org/findstds/standard/802.11i-2004.html)
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+**Windows XP con SP3 e WIRELESS LAN API para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="PMKCacheTTL"
@@ -46,16 +46,16 @@ El almacenamiento en caché PMK se describe en la especificación [802.11 i](htt
 </xs:element>
 ```
 
-El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema-security-msm-element.md) .
+El elemento se define mediante el [**elemento de**](wlan-profileschema-security-msm-element.md) seguridad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -66,7 +66,7 @@ El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**bursátil**](wlan-profileschema-security-msm-element.md)
+[**Seguridad**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**

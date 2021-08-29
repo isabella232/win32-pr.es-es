@@ -1,9 +1,9 @@
 ---
-title: Union (atributo)
-description: La palabra clave Union aparece en las funciones relacionadas con las uniones discriminadas.
+title: atributo union
+description: La palabra clave union aparece en funciones relacionadas con uniones discriminadas.
 ms.assetid: 135a6581-e03e-4b90-9fd8-15690820dbd0
 keywords:
-- atributo de unión (MIDL)
+- atributo union MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc683472d67775c4a2900695246d5f9ca920ca32
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6ebf9b7d3aa3590417897383f47595fe25baa0d77f0121d64af5242ba0c214d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104532685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013473"
 ---
-# <a name="union-attribute"></a>Union (atributo)
+# <a name="union-attribute"></a>atributo union
 
-La palabra clave **Union** aparece en las funciones relacionadas con las uniones discriminadas.
+La **palabra clave union** aparece en funciones relacionadas con uniones discriminadas.
 
 ``` syntax
 /* Encapsulated union*/
@@ -48,73 +48,73 @@ typedef [switch_type(switch-type) [[ , type-attr-list ]] ] union [[ tag ]]
 
 <dl> <dt>
 
-*lista de atributos de tipo* 
+*type-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos que se aplican al tipo de Unión. Entre los atributos de tipo válidos se incluyen **\[** el [**identificador**](handle.md) **\]** , **\[** [**transmitir \_ como**](transmit-as.md) **\]** ; el atributo de puntero **\[** [**Unique**](unique.md) **\]** , o **\[** [**ptr**](ptr.md) **\]** ; y el identificador de contexto de atributos de uso **\[** [**\_**](context-handle.md) **\]** y **\[** [**omitir**](ignore.md) **\]** . Las uniones encapsuladas también pueden tener el **\[** [](ref.md) **\]** atributo de tipo REF Pointer. Separe varios atributos con comas.
+Especifica cero o más atributos que se aplican al tipo de unión. Los atributos de tipo **\[** [**válidos incluyen el**](handle.md)identificador , transmitir como ; el atributo de puntero **\]** **\[** [**\_**](transmit-as.md) **\]** **\[** [**único**](unique.md) **\]** , o **\[** [**ptr**](ptr.md); **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](ignore.md) **\]** y el identificador de contexto de los atributos de uso y omitir . Las uniones encapsuladas también pueden tener el atributo de tipo de puntero **\[** [**ref.**](ref.md) **\]** Separe varios atributos con comas.
 
 </dd> <dt>
 
-*nombre de struct* 
+*struct-name* 
 </dt> <dd>
 
-Especifica una etiqueta opcional que nombra la estructura generada por el compilador de MIDL.
+Especifica una etiqueta opcional que asigna un nombre a la estructura generada por el compilador MIDL.
 
 </dd> <dt>
 
-*tipo de conmutador* 
+*switch-type* 
 </dt> <dd>
 
-Especifica un tipo [**int**](int.md), [**Char**](char-idl.md), [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
+Especifica un [**tipo int,**](int.md) [**char,**](char-idl.md) [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
 
 </dd> <dt>
 
-*cambiar nombre* 
+*switch-name* 
 </dt> <dd>
 
-Especifica el nombre de la variable de tipo *Switch-Type* que actúa como discriminante de Unión.
+Especifica el nombre de la variable de tipo *switch-type* que actúa como discriminador de unión.
 
 </dd> <dt>
 
-*nombre-Unión* 
+*union-name* 
 </dt> <dd>
 
-Especifica un identificador opcional que nombra la Unión en la estructura, generada por el compilador MIDL, que contiene la Unión y el discriminante.
+Especifica un identificador opcional que asigna un nombre a la unión en la estructura, generada por el compilador MIDL, que contiene la unión y el discriminador.
 
 </dd> <dt>
 
-*Lista de casos de estilo C* 
+*C-style-case-list* 
 </dt> <dd>
 
-Lista de "**Case** *const-expr* :"
+Lista de "**case** *const-expr* :"
 
 </dd> <dt>
 
-*Limited-Expression-List* 
+*limited-expression-list* 
 </dt> <dd>
 
-Especifica una o más expresiones del lenguaje C. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores de incremento y decremento. Las expresiones individuales de la lista deben estar separadas por una coma.
+Especifica una o varias expresiones de lenguaje C. El compilador MIDL admite expresiones condicionales, expresiones lógicas, expresiones relacionales y expresiones aritméticas. MIDL no permite invocaciones de función en expresiones y no permite operadores de incremento y decremento. Las expresiones individuales de la lista deben estar separadas por una coma.
 
 </dd> <dt>
 
-*lista de atributos de campo* 
+*field-attribute-list* 
 </dt> <dd>
 
-Especifica cero o más atributos de campo que se aplican al miembro de Unión. Entre los atributos de campo válidos se incluyen **\[** [**First \_ es**](first-is.md) **\]** , **\[** [**Last \_ es**](last-is.md) **\]** , **\[** [**length \_**](length-is.md)is **\]** , **\[** [**Max \_ is**](max-is.md) **\]** , **\[** [**size \_ es**](size-is.md) **\]** ; los atributos de uso **\[** [**String**](string.md) **\]** , **\[** [**Ignore**](ignore.md) **\]** y **\[** [**\_ Handle context**](context-handle.md), **\]** el atributo de puntero **\[** [**Unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md) **\]** ; y, para los miembros que son uniones no encapsuladas, el **\[** [**\_ tipo de modificador**](switch-type.md)de atributo Union **\]** . Las uniones no encapsuladas también pueden usar el **\[** [](ref.md) **\]** atributo de campo REF Pointer. Separe varios atributos de campo con comas.
+Especifica cero o más atributos de campo que se aplican al miembro de unión. Los atributos de campo válidos incluyen primero , el último es , length es , max es , size es ; la cadena de atributos de uso , ignore y el identificador de contexto ; el atributo de puntero unique o ptr; y, para los miembros que no son uniones **\[** [**\_**](first-is.md) **\]** **\[** [**\_**](last-is.md) **\]** **\[** [**\_**](length-is.md) **\]** **\[** [**\_**](max-is.md) **\]** **\[** [**\_**](size-is.md) **\]** **\[** [](string.md) **\]** **\[** [](ignore.md) **\]** **\[** [**\_**](context-handle.md) **\]** **\[** [](unique.md) **\]** **\[** [](ptr.md) **\]** nocapsuladas, **\[** [**\_**](switch-type.md) **\]** el tipo de modificador de atributo union . Las uniones no superadas también pueden usar el atributo de campo de puntero **\[** [**ref.**](ref.md) **\]** Separe varios atributos de campo con comas.
 
 </dd> <dt>
 
-*Type-Specifier* 
+*type-specifier* 
 </dt> <dd>
 
-Especifica un [tipo base](midl-base-types.md), un [**struct**](struct.md), una **Unión**, un tipo de [**enumeración**](enum.md) o un identificador de tipo. Una especificación de almacenamiento opcional puede preceder *a Type-Specifier*.
+Especifica un tipo [base](midl-base-types.md), [**struct**](struct.md), **union**, [**enum**](enum.md) type o type identifier. Una especificación de almacenamiento opcional puede *preceder al especificador de tipo*.
 
 </dd> <dt>
 
-*lista de declaradores* 
+*declarator-list* 
 </dt> <dd>
 
-Uno o varios declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en las uniones que se transmiten en llamadas a procedimientos remotos. Excepto cuando se usa el modificador de compilador de MIDL [**/OSF**](-osf.md), estos declaradores se permiten en las uniones que no se transmiten.) Separe varios declaradores con comas.
+Uno o varios declaradores estándar de C, como identificadores, declaradores de puntero y declaradores de matriz. (Los declaradores de función y las declaraciones de campo de bits no se permiten en uniones que se transmiten en llamadas a procedimientos remotos. Excepto cuando se usa el modificador del compilador MIDL [**/osf**](-osf.md), estos declaradores se permiten en uniones que no se transmiten). Separe varios declaradores con comas.
 
 </dd> <dt>
 
@@ -125,15 +125,15 @@ Especifica una etiqueta opcional.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-MIDL admite dos tipos de uniones discriminadas: [uniones encapsuladas](encapsulated-unions.md) y [uniones no encapsuladas](nonencapsulated-unions.md). La Unión encapsulada es compatible con las implementaciones anteriores de RPC (NCA versión 1). La Unión no encapsulada elimina algunas de las restricciones de la Unión encapsulada y proporciona un discriminante más visible que la Unión encapsulada.
+MIDL admite dos tipos de uniones discriminadas: [uniones encapsuladas](encapsulated-unions.md) y uniones [nocapsuladas](nonencapsulated-unions.md). La unión encapsulada es compatible con implementaciones anteriores de RPC (versión 1 de NCA). La unión no encapsulada elimina algunas de las restricciones de la unión encapsulada y proporciona un discriminador más visible que la unión encapsulada.
 
-La Unión encapsulada se identifica mediante la palabra clave [**Switch**](switch.md) y la ausencia de otras palabras clave relacionadas con uniones.
+La unión encapsulada se identifica mediante la palabra clave [**switch**](switch.md) y la ausencia de otras palabras clave relacionadas con la unión.
 
-La Unión no encapsulada, también conocida como Unión, se identifica mediante la presencia del **\[** [**modificador \_ is**](switch-is.md) **\]** y las **\[** palabras clave de [**\_ tipo de conmutador**](switch-type.md) **\]** , que identifican el discriminante y su tipo.
+La unión nocapsulada, también conocida como unión, se identifica por la presencia de las palabras clave **\[** [**switch \_ is**](switch-is.md) y **\]** switch **\[** [**\_ type,**](switch-type.md) que identifican el discriminador y **\]** su tipo.
 
-Cuando use **\[** [**in**](in.md), [**out**](out-idl.md) **\]** uniones, tenga en cuenta que el cambio del valor del modificador Union durante la llamada puede hacer que la llamada remota se comporte de forma diferente a una llamada local. En la devolución, el código auxiliar copia el parámetro **\[ in**, **out \]** en la memoria que ya está presente en el cliente. Cuando el procedimiento remoto modifica el valor del modificador Union y, por consiguiente, cambia el tamaño del objeto de datos, el código auxiliar puede sobrescribir la memoria válida con el valor **\[ out \]** . Cuando el modificador Union cambia el objeto de datos de un tipo base a un tipo de puntero, el código auxiliar puede sobrescribir la memoria válida cuando copia el puntero en la ubicación de memoria indicada por el valor **\[ in \]** de un tipo base.
+Cuando use en , las uniones out, tenga en cuenta que cambiar el valor del modificador de unión durante la llamada puede hacer que la llamada remota se comporte de forma diferente a una **\[** [](in.md) [](out-idl.md) **\]** llamada local. En la devolución, los códigos auxiliares copian **\[ el parámetro en**, **out \]** en la memoria que ya está presente en el cliente. Cuando el procedimiento remoto modifica el valor del modificador union y, por tanto, cambia el tamaño del objeto de datos, el código auxiliar puede sobrescribir la memoria válida con el **\[ valor out. \]** Cuando el modificador union cambia el objeto de datos de un tipo base a un tipo de puntero, **\[ \]** los códigos auxiliares pueden sobrescribir la memoria válida cuando copian el referenciador de puntero en la ubicación de memoria indicada por en el valor de un tipo base.
 
 La forma de las uniones debe ser idéntica en todas las plataformas para garantizar la interconectividad.
 
@@ -147,24 +147,24 @@ La forma de las uniones debe ser idéntica en todas las plataformas para garanti
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**de**](in.md)
+[**En**](in.md)
 </dt> <dt>
 
-[Uniones no encapsuladas](nonencapsulated-unions.md)
+[Uniones no superadas](nonencapsulated-unions.md)
 </dt> <dt>
 
-[**enuncia**](out-idl.md)
+[**out**](out-idl.md)
 </dt> <dt>
 
-[**el modificador \_ es**](switch-is.md)
+[**switch \_ es**](switch-is.md)
 </dt> <dt>
 
-[**tipo de conmutador \_**](switch-type.md)
+[**tipo \_ de conmutador**](switch-type.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

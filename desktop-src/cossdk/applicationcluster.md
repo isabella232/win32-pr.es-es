@@ -12,42 +12,42 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 00a54f5c79bcbaf4ef61b130db556fc27f264101
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 852f6f04147489336622a5c13e447bcb4fbfd7e20f580edcb5da8bdfadaa5e7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991955"
 ---
 # <a name="applicationcluster-collection"></a>Colección ApplicationCluster
 
 Contiene una lista de los equipos servidor del clúster de aplicaciones. Contiene un objeto para cada servidor. Se trata de una colección de nivel superior.
 
-El clúster de aplicación se define para los fines del servicio de equilibrio de carga de componentes (CLB). Para que se use la colección de clústeres de aplicación, el servicio CLB debe estar instalado en el equipo.
+El clúster de aplicaciones se define para fines del servicio de equilibrio de carga de componentes (CLB). Para que se utilice la colección de clústeres de aplicaciones, el servicio CLB debe estar instalado en el equipo.
 
-Designe un enrutador en el clúster de aplicaciones con la propiedad IsRouter en el objeto de colección [**LocalComputer**](localcomputer.md) y designe que un componente determinado debe tener equilibrio de carga con la propiedad LoadBalancingSupported en un objeto de colección [**Components**](components.md) .
+Designa un enrutador en el clúster de aplicaciones con la propiedad IsRouter en el objeto de colección [**LocalComputer**](localcomputer.md) y designa que un componente determinado debe equilibrar la carga con la propiedad LoadBalancingSupported en un objeto de colección [**Components.**](components.md)
 
-Esta colección admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Miembros
 
-La colección **ApplicationCluster** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección ApplicationCluster** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
--   [**Raíces**](root.md)
+-   [**Raíz**](root.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [Nombre](#name)
 
@@ -57,7 +57,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre del servidor. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
+| Descripción    | Nombre del servidor. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                            |
 | Tipo           | String                                                                                                                                                                                                                                                               |
 | Predeterminado        | "Nuevo equipo"                                                                                                                                                                                                                                                       |

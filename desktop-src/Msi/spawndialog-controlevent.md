@@ -1,39 +1,39 @@
 ---
-description: SpawnDialog ControlEvent, notifica al instalador que cree un elemento secundario de un cuadro de diálogo modal mientras mantiene el cuadro de diálogo presente en ejecución.
+description: SpawnDialog ControlEvent notifica al instalador que cree un elemento secundario de un cuadro de diálogo modal mientras se mantiene en ejecución el cuadro de diálogo actual.
 ms.assetid: 2a341039-60dd-4e6c-9ef3-bf482ca53917
-title: SpawnDialog ControlEvent,
+title: SpawnDialog ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71aec632332a87d047913b618aa2c39843849e5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2b0dd281e4306fab7c62d218781c2ad932b82f22b335d662181fb65891eeb5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119628035"
 ---
-# <a name="spawndialog-controlevent"></a>SpawnDialog ControlEvent,
+# <a name="spawndialog-controlevent"></a>SpawnDialog ControlEvent
 
-SpawnDialog ControlEvent, notifica al instalador que cree un elemento secundario de un cuadro de diálogo modal mientras mantiene el cuadro de diálogo presente en ejecución.
+SpawnDialog ControlEvent notifica al instalador que cree un elemento secundario de un cuadro de diálogo modal mientras se mantiene en ejecución el cuadro de diálogo actual.
 
-Este evento puede ser publicado por un [control Pushbutton](pushbutton-control.md)o un [control SelectionTree](selectiontree-control.md). Este evento se debe crear en la [tabla ControlEvent,](controlevent-table.md).
+Este evento se puede publicar mediante un [control PushButton o](pushbutton-control.md)un [control SelectionTree](selectiontree-control.md). Este evento debe crearse en la [tabla ControlEvent](controlevent-table.md).
 
-Este ControlEvent, requiere que la interfaz de usuario se ejecute en el nivel de interfaz de usuario [*completo*](f-gly.md) . Este evento no funcionará con una [*interfaz*](r-gly.md) de usuario [*básica*](b-gly.md)o no reducida. Para obtener más información, consulte niveles de la [interfaz de usuario](user-interface-levels.md).
+Este control ControlEvent requiere que la interfaz de usuario se ejecute en el [*nivel completo de la interfaz de*](f-gly.md) usuario. Este evento no funcionará con una interfaz de usuario [*reducida o*](r-gly.md) una interfaz de [*usuario básica.*](b-gly.md) Para obtener información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
 ## <a name="published-by"></a>Publicado por
 
-Este ControlEvent, lo publica el instalador.
+El instalador publica este control ControlEvent.
 
 ## <a name="argument"></a>Argumento
 
 Cadena que es el nombre del nuevo cuadro de diálogo.
 
-## <a name="action-on-subscribers"></a>Acción en los suscriptores
+## <a name="action-on-subscribers"></a>Acción en suscriptores
 
 Ninguno.
 
 ## <a name="typical-use"></a>Uso típico
 
-Un control [Pushbutton](pushbutton-control.md) en un cuadro de diálogo modal está asociado a este evento en la tabla [ControlEvent,](controlevent-table.md) para crear un cuadro de diálogo secundario, como "¿está seguro de que desea cancelar?" .
+Un control [PushButton](pushbutton-control.md) de un cuadro de diálogo modal está asociado a este evento en la [tabla ControlEvent](controlevent-table.md) para crear un diálogo secundario, como "¿Está seguro de que desea cancelar?" .
 
  
 

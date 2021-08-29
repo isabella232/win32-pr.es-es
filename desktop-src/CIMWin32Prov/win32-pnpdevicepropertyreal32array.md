@@ -2,7 +2,7 @@
 description: Representa una propiedad de dispositivo PnP que consta de una matriz de elementos real32.
 ms.assetid: A76B2555-A467-4405-B9FA-A4596860AC5C
 ms.tgt_platform: multiple
-title: Win32_PnPDevicePropertyReal32Array (clase)
+title: Win32_PnPDevicePropertyReal32Array clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 92d6d2f2c0bbe5c028e82ef2bfa03e4255cb5365
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cfe70f8e8e08d47e49dd684e10b2dcc1ac64811bb3c723d7d002583d88533265
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971906"
 ---
-# <a name="win32_pnpdevicepropertyreal32array-class"></a>\_Clase Win32 PnPDevicePropertyReal32Array
+# <a name="win32_pnpdevicepropertyreal32array-class"></a>Clase Win32 \_ PnPDevicePropertyReal32Array
 
-Representa una propiedad de dispositivo PnP que consta de una matriz de elementos **real32** .
+Representa una propiedad de dispositivo PnP que consta de una matriz de **elementos real32.**
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -47,7 +47,7 @@ class Win32_PnPDevicePropertyReal32Array : Win32_PnPDeviceProperty
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ PnPDevicePropertyReal32Array de Win32** tiene estos tipos de miembros:
+La **clase Win32 \_ PnPDevicePropertyReal32Array** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -57,10 +57,10 @@ La **clase \_ PnPDevicePropertyReal32Array de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
-**Data**
+**Datos**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **real32**
+Tipo de datos: **matriz real32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -70,7 +70,7 @@ Valor de propiedad.
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -94,13 +94,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor del par de Name-Value de claves que identifica la propiedad de **datos** .
+Valor del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
 </dd> <dt>
 
-**Clave**
+**Keyname**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -109,7 +109,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del par de Name-Value de claves que identifica la propiedad de **datos** .
+Nombre del par de Name-Value clave que identifica la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -124,7 +124,7 @@ Tipo de datos: **Uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de la propiedad de **datos** .
+Tipo de la **propiedad** Data.
 
 Esta propiedad se hereda de [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md).
 
@@ -225,7 +225,7 @@ Los valores posibles son.
 
 <span id="Guid"></span><span id="guid"></span><span id="GUID"></span>
 
-**GUID** (13)
+**Guid** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -319,7 +319,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>26 –</dd> <dt>
+</dt> <dd>26–4097</dd> <dt>
 
 <span id="SByteArray"></span><span id="sbytearray"></span><span id="SBYTEARRAY"></span>
 
@@ -337,14 +337,14 @@ Los valores posibles son.
 
 <span id="Int16Array"></span><span id="int16array"></span><span id="INT16ARRAY"></span>
 
-**, Int16array** (4100)
+**Int16Array** (4100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UInt16Array"></span><span id="uint16array"></span><span id="UINT16ARRAY"></span>
 
-**, Uint16array** (4101)
+**UInt16Array** (4101)
 
 
 </dt> <dd></dd> <dt>
@@ -477,7 +477,7 @@ Los valores posibles son.
 
 <span id="Unknown_-_check_in_devpropdef.h"></span><span id="unknown_-_check_in_devpropdef.h"></span><span id="UNKNOWN_-_CHECK_IN_DEVPROPDEF.H"></span>
 
-**Unknown-check en devpropdef. h** (4120)
+**Desconocido: check in devpropdef.h** (4120)
 
 
 </dt> <dd></dd> <dt>
@@ -494,7 +494,7 @@ Los valores posibles son.
 **Reserved**
 
 
-</dt> <dd>8218:4294967295</dd> </dl>
+</dt> <dd>8218–4294967295</dd> </dl>
 
 </dd> </dl>
 
@@ -504,10 +504,10 @@ Los valores posibles son.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -516,7 +516,7 @@ Los valores posibles son.
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
 [**Win32 \_ PnPDeviceProperty**](win32-pnpdeviceproperty.md)

@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf2bac3b43cf083d4f2d3588fed41d55380a435cc10c56cdfdb5cae1929d12c3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 39d689d5f5c729e13385fc0d6d5b31baf96b141b
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119292785"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886986"
 ---
-# <a name="sizetype-function"></a>Función <Type> Size
+# <a name="sizelttypegt-function"></a>Función &lt; De tipo de &gt; tamaño
 
 Crea una estructura de tamaño que almacena su ancho y alto con el tipo de datos especificado.
 
@@ -66,12 +66,12 @@ Tamaño que contiene el ancho y alto especificados.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio Windows Vista aplicaciones \[ \| para UWP\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 \[ \| aplicaciones para UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
+| Encabezado<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
 | Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 

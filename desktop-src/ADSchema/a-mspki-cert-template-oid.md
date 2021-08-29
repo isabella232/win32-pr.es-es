@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-CERT-template-OID
-description: Especifica el identificador de objeto para una plantilla de certificado.
+title: Atributo ms-PKI-Cert-Template-OID
+description: Especifica el identificador de objeto de una plantilla de certificado.
 ms.assetid: b239c1cb-35d9-4a98-9591-ea405a1101cd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-PKI-CERT-template-OID
-- Atributo mspki-CERT-template-OID atributo AD Schema
+- ms-PKI-Cert-Template-OID attribute AD Schema
+- msPKI-Cert-Template-OID attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eadf0c2573dbdeac328a6de55fa8de69781bc28c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 83e473c4668f386afd921bc55df22d94da763ae1a3a97f567cd2759425bcb057
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582275"
 ---
-# <a name="ms-pki-cert-template-oid-attribute"></a>atributo MS-PKI-CERT-template-OID
+# <a name="ms-pki-cert-template-oid-attribute"></a>Atributo ms-PKI-Cert-Template-OID
 
-Especifica el identificador de objeto para una plantilla de certificado.
+Especifica el identificador de objeto de una plantilla de certificado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-CERT-template-OID                                                                          |
-| Nombre para mostrar de LDAP | Atributo mspki-CERT-template-OID                                                                           |
-| Tamaño              | 64 bytes                                                                                          |
-| Actualizar privilegio  | Administrador de dominio                                                                              |
-| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto plantilla de certificado (MS-PKI-Certificate-template). |
+| CN                | ms-PKI-Cert-Template-OID                                                                          |
+| Ldap-Display-Name | msPKI-Cert-Template-OID                                                                           |
+| Size              | 64 bytes                                                                                          |
+| Actualizar privilegios  | Administrador de dominio                                                                              |
+| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto de plantilla de certificado (ms-PKI-Certificate-Template). |
 | Attribute-Id      | 1.2.840.113556.1.4.1436                                                                           |
-| System-ID-GUID    | 3164c36a-ba26-468c-8bda-c1e5cc256728                                                              |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                       |
+| System-Id-Guid    | 3164c36a-ba26-468c-8bda-c1e5cc256728                                                              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                       |
 
 
 
@@ -54,18 +54,18 @@ Especifica el identificador de objeto para una plantilla de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Especifica el identificador de objeto para una plantilla de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Especifica el identificador de objeto para una plantilla de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Especifica el identificador de objeto para una plantilla de certificado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | True                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Verdadero                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000001                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Especifica el identificador de objeto para una plantilla de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | True                                                                                                                                       |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Verdadero                                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000001                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

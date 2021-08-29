@@ -1,11 +1,11 @@
 ---
-title: Propiedad de velocidad de bits IWMPNetwork
-description: La propiedad de velocidad de bits obtiene la velocidad de bits actual recibida.
+title: Propiedad bitRate de IWMPNetwork
+description: La propiedad bitRate obtiene la velocidad de bits actual que se recibe.
 ms.assetid: f7dda557-3954-45ed-9eac-6d27109e2dfa
 keywords:
-- propiedades de velocidad de bits Media Player de Windows
-- propiedad de velocidad de bits Media Player Windows, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad de velocidad de bits
+- bitRate, propiedad Reproductor de Windows Media
+- Propiedad bitRate Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad bitRate
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f64039eb960a928f5268643e18d1a01b9034d5d1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b4346a20c5c5b5a5ca68b2a90293afd9d657e472d335b9ee8bf2ad647ff0914
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098745"
 ---
-# <a name="iwmpnetworkbitrate-property"></a>IWMPNetwork:: bitrate (propiedad)
+# <a name="iwmpnetworkbitrate-property"></a>IWMPNetwork::bitRate, propiedad
 
-La propiedad de **velocidad** de bits obtiene la velocidad de bits actual recibida.
+La **propiedad bitRate** obtiene la velocidad de bits actual que se recibe.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public ReadOnly Property bitRate As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es la velocidad de bits.
+**System.Int32 que** es la velocidad de bits.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de esta propiedad es una combinación de las velocidades de bits de las secuencias de vídeo y de audio.
+El valor de esta propiedad es una combinación de las velocidades de bits de las secuencias de vídeo y audio.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **la velocidad de** bits para mostrar la velocidad de bits multimedia actual. La información se muestra en una etiqueta en respuesta al evento **PlayStateChange** . El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa bitRate** para mostrar la velocidad de bits del medio actual. La información se muestra en una etiqueta en respuesta al **evento PlayStateChange.** El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -112,7 +112,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

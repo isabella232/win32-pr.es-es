@@ -1,11 +1,11 @@
 ---
-title: Win32_RDMSPublishedApplication (clase)
+title: Win32_RDMSPublishedApplication clase
 description: Administra una aplicación publicada.
 ms.assetid: 7a529f1d-1aaf-42fb-8469-92d38a7b0ffc
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDMSPublishedApplication clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDMSPublishedApplication de clase, se describe
+- Win32_RDMSPublishedApplication clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -29,14 +29,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb003faf5e51c9da1f46f23c5f8d6b5ae977987c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a9fe777caf6d1308821fc74e4453839624bcf047811bcfe67275861586a85c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868105"
 ---
-# <a name="win32_rdmspublishedapplication-class"></a>\_Clase Win32 RDMSPublishedApplication
+# <a name="win32_rdmspublishedapplication-class"></a>Clase RDMSPublishedApplication de Win32 \_
 
 Administra una aplicación publicada.
 
@@ -82,10 +82,10 @@ La **clase \_ RDMSPublishedApplication de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Obtiene y establece el alias de la aplicación.
@@ -98,7 +98,7 @@ Obtiene y establece el alias de la aplicación.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene y establece la ruta de acceso a la aplicación.
@@ -108,10 +108,10 @@ Obtiene y establece la ruta de acceso a la aplicación.
 **CommandLineSetting**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene y establece la configuración de la línea de comandos para la aplicación.
@@ -127,7 +127,7 @@ Esta propiedad puede definirse en uno de los valores siguientes:
 
 </dt> <dd>
 
-No se permiten argumentos de línea de comandos.
+No permita argumentos de línea de comandos.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ No se permiten argumentos de línea de comandos.
 
 </dt> <dd>
 
-Permitir argumentos de la línea de comandos.
+Permitir argumentos de línea de comandos.
 
 </dd> <dt>
 
@@ -149,7 +149,7 @@ Permitir argumentos de la línea de comandos.
 
 </dt> <dd>
 
-Requerir argumentos de la línea de comandos.
+Requerir argumentos de línea de comandos.
 
 </dd> </dl>
 
@@ -161,7 +161,7 @@ Requerir argumentos de la línea de comandos.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene y establece el nombre para mostrar de la aplicación.
@@ -174,23 +174,23 @@ Obtiene y establece el nombre para mostrar de la aplicación.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene y establece la ruta de acceso a la aplicación.
 
 </dd> <dt>
 
-**IconContents**
+**IconoContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece una matriz que contiene el icono de la aplicación.
+Obtiene y establece una matriz que contiene el icono de aplicación.
 
 </dd> <dt>
 
@@ -200,10 +200,10 @@ Obtiene y establece una matriz que contiene el icono de la aplicación.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece el índice del icono de la aplicación.
+Obtiene y establece el índice del icono de aplicación.
 
 </dd> <dt>
 
@@ -213,23 +213,23 @@ Obtiene y establece el índice del icono de la aplicación.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece la ruta de acceso al icono para esta aplicación.
+Obtiene y establece la ruta de acceso al icono de esta aplicación.
 
 </dd> <dt>
 
-**Nombredegrupo**
+**PoolName**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Obtiene y establece el nombre del grupo de aplicaciones de la aplicación.
@@ -242,10 +242,10 @@ Obtiene y establece el nombre del grupo de aplicaciones de la aplicación.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece los argumentos de la línea de comandos necesarios para la aplicación.
+Obtiene y establece los argumentos de línea de comandos necesarios para la aplicación.
 
 </dd> <dt>
 
@@ -255,7 +255,7 @@ Obtiene y establece los argumentos de la línea de comandos necesarios para la a
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
@@ -271,10 +271,10 @@ Obtiene y establece el descriptor de seguridad que controla el acceso a la aplic
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se va a mostrar la aplicación en Terminal Services Web Access (acceso web de TS). **True** para mostrar la aplicación en acceso web de TS; en caso contrario, **false**.
+Indica si se va a mostrar la aplicación en Terminal Services Web Access (TS Web Access). **TRUE** para mostrar la aplicación en TS Web Access; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -284,7 +284,7 @@ Indica si se va a mostrar la aplicación en Terminal Services Web Access (acceso
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene y establece la ruta de acceso virtual a la aplicación.
@@ -299,8 +299,8 @@ Obtiene y establece la ruta de acceso virtual a la aplicación.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -309,7 +309,7 @@ Obtiene y establece la ruta de acceso virtual a la aplicación.
 
 <dl> <dt>
 
-[Proveedor de servicios de administración de Escritorio remoto](rdms-api-reference.md)
+[Escritorio remoto Management Services Provider](rdms-api-reference.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
 title: Atributo Object-Class-Category
-description: Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
+description: Este atributo contiene el tipo de clase, como abstract, auxiliary o structured.
 ms.assetid: 0698392d-991e-4a3c-b734-54d025a38d50
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de clase de objeto y categoría
-- objectClassCategory esquema de AD de atributos
+- Esquema de AD del atributo Object-Class-Category
+- ObjectClassCategory attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 397bb50e0af0c9dcddcc535d0bcddb1c8d525cfc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 850dab231333ebf98d1b45e1d17d3df0a45fe83649bf01fc1a62d4f38e0db7fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925305"
 ---
 # <a name="object-class-category-attribute"></a>Atributo Object-Class-Category
 
-Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
+Este atributo contiene el tipo de clase, como abstract, auxiliary o structured.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | Objeto-clase-categoría                                                           |
-| Nombre para mostrar de LDAP | objectClassCategory                                                             |
-| Tamaño              | 4 bytes. Estructural 1, abstract 2, auxiliar 3. No se debe usar la clase 88, 0. |
-| Actualizar privilegio  | El diseñador del objeto establecería este valor.                                |
-| Frecuencia de actualización  | Este valor no debe cambiar nunca.                                                 |
+| CN                | Object-Class-Category                                                           |
+| Ldap-Display-Name | objectClassCategory                                                             |
+| Size              | 4 bytes. Estructural 1, abstracto 2, auxiliar 3. No se debe usar la clase 88, 0. |
+| Actualizar privilegios  | El diseñador del objeto establecería este valor.                                |
+| Frecuencia de actualización  | Este valor nunca debe cambiar.                                                 |
 | Attribute-Id      | 1.2.840.113556.1.2.370                                                          |
-| System-ID-GUID    | bf9679e6-0de6-11d0-a285-00aa003049e2                                            |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                                            |
+| System-Id-Guid    | bf9679e6-0de6-11d0-a285-00aa003049e2                                            |
+| Syntax            | [**Enumeración**](s-enumeration.md)                                            |
 
 
 
@@ -44,7 +44,7 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | 0x80F6                                           |
-| System-Only            | True                                             |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Verdadero                                             |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 3                                                |
 | Search-Flags           | 0x00000000                                       |
@@ -77,13 +77,13 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | 0x80F6                                           |
-| System-Only            | True                                             |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Verdadero                                             |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 3                                                |
 | Search-Flags           | 0x00000000                                       |
@@ -92,24 +92,24 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | 0x80F6                                           |
-| System-Only            | True                                             |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Verdadero                                             |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 3                                                |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | 0x80F6                                           |
-| System-Only            | True                                             |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Verdadero                                             |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 3                                                |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | 0x80F6                                           |
-| System-Only            | True                                             |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Verdadero                                             |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 3                                                |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | 0x80F6                                           |
-| System-Only            | True                                             |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Verdadero                                             |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 3                                                |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -182,13 +182,13 @@ Este atributo contiene el tipo de clase, como abstract, auxiliar o estructurado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | 0x80F6                                           |
-| System-Only            | True                                             |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Verdadero                                             |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 3                                                |
 | Search-Flags           | 0x00000000                                       |

@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_ENUMCOLUMNVALUE miembros'
-title: Miembros de JET_ENUMCOLUMNVALUE
+description: 'Más información sobre: JET_ENUMCOLUMNVALUE miembros'
+title: JET_ENUMCOLUMNVALUE miembros
 TOCTitle: JET_ENUMCOLUMNVALUE members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNVALUE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumnvalue_members(v=EXCHG.10)
 ms:contentKeyID: 55103510
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2950caf527af07312f4f27c9464ee4088830fe1e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cba3e1de231806f6f515ea83abc17b7f1328aedb5d4b81f69c6fb5e942c8eee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104563715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110268"
 ---
-# <a name="jet_enumcolumnvalue-members"></a>Miembros de JET_ENUMCOLUMNVALUE
+# <a name="jet_enumcolumnvalue-members"></a>JET_ENUMCOLUMNVALUE miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Enumera los valores de columna de un registro mediante la función JetEnumerateColumns. [JetEnumerateColumns (JET_SESID, JET_TABLEID, Int32, \[ \] , Int32, \[ \] , JET_PFNREALLOC, IntPtr, Int32, EnumerateColumnsGrbit)](./api.jetenumeratecolumns-method.md) devuelve una matriz de estructuras de JET_ENUMCOLUMNVALUE. La matriz se devuelve en memoria que se asignó mediante la devolución de llamada que se proporcionó a esa función.
+Enumera los valores de columna de un registro mediante la función JetEnumerateColumns. [JetEnumerateColumns(JET_SESID, JET_TABLEID, Int32, \[ \] , Int32, \[ \] , JET_PFNREALLOC, IntPtr, Int32, EnumerateColumnsGrbit)](./api.jetenumeratecolumns-method.md) devuelve una matriz de JET_ENUMCOLUMNVALUE estructuras. La matriz se devuelve en memoria que se asignó mediante la devolución de llamada que se proporcionó a esa función.
 
-El tipo de [JET_ENUMCOLUMNVALUE](./jet-enumcolumnvalue-class.md) expone los siguientes miembros.
+El [JET_ENUMCOLUMNVALUE](./jet-enumcolumnvalue-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -59,12 +59,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335097(v=exchg.10).md">cbData</a></td>
-<td>Obtiene el tamaño del valor de columna para la columna.</td>
+<td>Obtiene el tamaño del valor de columna de la columna.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn335144(v=exchg.10).md">ERR</a></td>
-<td>Obtiene el código de estado de la columna resultante de la enumeración del valor de la columna.</td>
+<td><a href="dn335144(v=exchg.10).md">Err</a></td>
+<td>Obtiene el código de estado de columna resultante de la enumeración del valor de columna.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -74,7 +74,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335149(v=exchg.10).md">pvData</a></td>
-<td>Obtiene el valor que se enumeró para la columna.</td>
+<td>Obtiene el valor enumerado para la columna.</td>
 </tr>
 </tbody>
 </table>
@@ -100,7 +100,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -110,7 +110,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -121,7 +121,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335096(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn335142(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335142(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -129,10 +129,10 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMNVALUE (clase)](./jet-enumcolumnvalue-class.md)
+[JET_ENUMCOLUMNVALUE clase](./jet-enumcolumnvalue-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

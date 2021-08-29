@@ -1,23 +1,23 @@
 ---
-description: Trabajar con ejemplos de medios
+description: Trabajar con ejemplos multimedia
 ms.assetid: 10b547b1-6624-4d49-9852-a5fff4eb70e7
-title: Trabajar con ejemplos de medios
+title: Trabajar con ejemplos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a31fa8ff17c2dabcac9d110b530751d22fdf7b0
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: e9f6223db49fd3eab4063f329a5170c76661654cfda732e45491be8f96ef5d5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104003318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602245"
 ---
-# <a name="working-with-media-samples"></a>Trabajar con ejemplos de medios
+# <a name="working-with-media-samples"></a>Trabajar con ejemplos multimedia
 
-En este tema se describe cómo utilizar la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para manipular objetos de ejemplo multimedia. Para obtener información general sobre los ejemplos de medios, consulte [ejemplos de medios](media-samples.md).
+En este tema se describe cómo usar la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) para manipular objetos de ejemplo multimedia. Para obtener información general sobre los ejemplos de medios, vea [Ejemplos de medios](media-samples.md).
 
-Para crear un nuevo ejemplo multimedia, llame a la función [**MFCreateSample**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatesample) . Inicialmente, la lista de búferes del ejemplo está vacía. Para agregar un búfer al final de la lista, llame a [**IMFSample:: AddBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer).
+Para crear un nuevo ejemplo multimedia, llame a [**la función MFCreateSample.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatesample) Inicialmente, la lista de búferes del ejemplo está vacía. Para agregar un búfer al final de la lista, llame [**a IMFSample::AddBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-addbuffer).
 
-En el código siguiente se muestra cómo crear un ejemplo y agregarle un búfer.
+El código siguiente muestra cómo crear un ejemplo y agregarle un búfer.
 
 
 ```C++
@@ -54,11 +54,11 @@ HRESULT CreateMediaSample(DWORD cbData, IMFSample **ppSample)
 
 
 
-La manera recomendada de obtener los búferes del ejemplo es llamar a [**IMFSample:: ConvertToContiguousBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-converttocontiguousbuffer). Este método devuelve un búfer continguous único.
+La manera recomendada de obtener los búferes del ejemplo es llamar [**aSAMPLESample::ConvertToContiguousBuffer**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-converttocontiguousbuffer). Este método devuelve un único búfer continguous.
 
-Para recorrer en iteración los búferes de la lista, empiece por llamar a [**IMFSample:: GetBufferCount**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getbuffercount). Este método devuelve el número de búferes. Después, llame a [**IMFSample:: GetBufferByIndex**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getbufferbyindex) y especifique el índice del búfer que se va a recuperar. Los búferes se indizan desde cero.
+Para recorrer en iteración los búferes de la lista, empiece por llamar a [**IMFSample::GetBufferCount**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getbuffercount). Este método devuelve el número de búferes. A [**continuación, llame aSAMPLESample::GetBufferByIndex**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getbufferbyindex) y especifique el índice del búfer que se recuperará. Los búferes se indexa desde cero.
 
-En el código siguiente se muestra cómo recorrer en iteración los búferes de un ejemplo.
+El código siguiente muestra cómo recorrer en iteración los búferes de un ejemplo.
 
 
 ```C++
@@ -87,9 +87,9 @@ if (SUCCEEDED(hr))
 
 
 
-Los ejemplos tienen una marca de tiempo y una duración. La marca de tiempo indica cuándo se deben representar los datos en el ejemplo, con respecto al reloj de presentación. La duración es el período de tiempo durante el que se deben representar los datos. Normalmente, el componente que genera los datos establece la marca de tiempo y la duración iniciales. Estos valores podrían ser modificados por la sesión multimedia. Para establecer la marca de tiempo, llame a [**IMFSample:: SetSampleTime**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampletime). Para establecer la duración, llame a [**IMFSample:: SetSampleDuration**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleduration).
+Los ejemplos tienen una marca de tiempo y una duración. La marca de tiempo indica cuándo se deben representar los datos del ejemplo, en relación con el reloj de presentación. La duración es el período de tiempo durante el que se deben representar los datos. Normalmente, el componente que genera los datos establece la marca de tiempo inicial y la duración. La sesión multimedia puede modificar estos valores. Para establecer la marca de tiempo, llame [**a IMFSample::SetSampleTime**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampletime). Para establecer la duración, llame [**a IMFSample::SetSampleDuration**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-setsampleduration).
 
-Los ejemplos también pueden tener atributos, que contienen información adicional sobre el ejemplo. Para obtener una lista de los atributos de ejemplo, vea [atributos de ejemplo](sample-attributes.md). Para establecer y recuperar atributos, use la [**interfaz IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes), que hereda [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) .
+Los ejemplos también pueden tener atributos, que contienen información adicional sobre el ejemplo. Para obtener una lista de atributos de ejemplo, vea [Atributos de ejemplo.](sample-attributes.md) Para establecer y recuperar atributos, use la [**interfazATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes), que [**INHERITSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) hereda.
 
 ## <a name="related-topics"></a>Temas relacionados
 

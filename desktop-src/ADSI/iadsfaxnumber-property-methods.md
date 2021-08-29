@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsFaxNumber (iAds. h)
-description: El método Property de la interfaz IADsFaxNumber establece la propiedad que se describe en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsFaxNumber (Iads.h)
+description: El método de propiedad de la interfaz IADsFaxNumber establece la propiedad descrita en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: f4d46b9d-8db2-47b3-b489-9ffc363e6ac6
 ms.tgt_platform: multiple
 keywords:
@@ -21,16 +21,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93e2d982aee794272f80e58385be34098a92a28e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1c1a740488c8f50dd90a0886b48b1c72f0e8e4560e50a741e8283b5a8ceb2360
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082459"
 ---
 # <a name="iadsfaxnumber-property-methods"></a>Métodos de propiedad IADsFaxNumber
 
-El método Property de la interfaz [**IADsFaxNumber**](/windows/desktop/api/Iads/nn-iads-iadsfaxnumber) establece la propiedad que se describe en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+El método de propiedad de [**la interfaz IADsFaxNumber**](/windows/desktop/api/Iads/nn-iads-iadsfaxnumber) establece la propiedad descrita en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -39,14 +39,14 @@ El método Property de la interfaz [**IADsFaxNumber**](/windows/desktop/api/Iads
 **Parámetros**
 </dt> <dd> <dl>
 
-Los parámetros del equipo de fax.
+Parámetros de la máquina de fax.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **variante**
+Tipo de datos de scripting: **VARIANT**
 </dt> <dt>
 
 
@@ -67,11 +67,11 @@ HRESULT put_Parameters(
 **TelephoneNumber**
 </dt> <dd> <dl>
 
-Número de teléfono del equipo de fax.
+Número de teléfono de la máquina de fax.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -98,13 +98,13 @@ HRESULT put_TelephoneNumber(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsFaxNumber se define como A910DEA9-4680-11D1-0A3B-00C04FB950DC<br/>        |
+| IID<br/>                      | IID IADsFaxNumber se define como \_ A910DEA9-4680-11D1-0A3B-00C04FB950DC<br/>        |
 
 
 
@@ -115,7 +115,7 @@ HRESULT put_TelephoneNumber(
 [**IADsFaxNumber**](/windows/desktop/api/Iads/nn-iads-iadsfaxnumber)
 </dt> <dt>
 
-[**\_FAXNUMBER ADS**](/windows/win32/api/iads/ns-iads-ads_faxnumber)
+[**ADS \_ FAXNUMBER**](/windows/win32/api/iads/ns-iads-ads_faxnumber)
 </dt> </dl>
 
  

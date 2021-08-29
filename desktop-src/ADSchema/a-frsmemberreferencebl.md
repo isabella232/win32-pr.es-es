@@ -1,11 +1,11 @@
 ---
 title: Atributo FRS-Member-Reference-BL
-description: Referencia a los objetos de suscriptor para este miembro.
+description: Referencia a objetos de suscriptor para este miembro.
 ms.assetid: d2ea3024-92da-4e7e-8fc9-ddbaa04d689f
 ms.tgt_platform: multiple
 keywords:
-- Subesquema de AD del atributo FRS-Member-Reference-BL
-- fRSMemberReferenceBL esquema de AD de atributos
+- Esquema de AD del atributo FRS-Member-Reference-BL
+- Esquema de AD del atributo fRSMemberReferenceBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f50b3516533a2218eb383e37c2ceec09483414f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 337764e7ba1b916754894fffa5223f80c656cc9d3fe12504f4aee684c0df81de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925595"
 ---
 # <a name="frs-member-reference-bl-attribute"></a>Atributo FRS-Member-Reference-BL
 
-Referencia a los objetos de suscriptor para este miembro.
+Referencia a objetos de suscriptor para este miembro.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | FRS-Member-Reference-BL                 |
-| Nombre para mostrar de LDAP | fRSMemberReferenceBL                    |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | El sistema establece este valor.        |
+| Ldap-Display-Name | fRSMemberReferenceBL                    |
+| Size              | \-                                      |
+| Privilegio actualizar  | El sistema establece este valor.        |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.876                  |
-| System-ID-GUID    | 2a13257f-9373-11d1-aebc-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 2a13257f-9373-11d1-aebc-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Referencia a los objetos de suscriptor para este miembro.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 105                             |
+| Id. de vínculo                | 105                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Referencia a los objetos de suscriptor para este miembro.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 105                             |
+| Id. de vínculo                | 105                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Referencia a los objetos de suscriptor para este miembro.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 105                             |
+| Id. de vínculo                | 105                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -118,13 +118,13 @@ Referencia a los objetos de suscriptor para este miembro.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 105                             |
+| Id. de vínculo                | 105                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Referencia a los objetos de suscriptor para este miembro.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 105                             |
+| Id. de vínculo                | 105                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Referencia a los objetos de suscriptor para este miembro.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 105                             |
+| Id. de vínculo                | 105                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

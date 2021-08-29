@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetRegisterCallback (método)'
-title: Método API. JetRegisterCallback
+description: Más información sobre el método Api.JetRegisterCallback
+title: Método Api.JetRegisterCallback
 TOCTitle: 'JetRegisterCallback method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetRegisterCallback(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_cbtyp,Microsoft.Isam.Esent.Interop.JET_CALLBACK,System.IntPtr,Microsoft.Isam.Esent.Interop.JET_HANDLE@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetregistercallback(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 97ba91d776575285d71e0ad4ec8d94eeb10a743a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11bea64b8873dcf4766c8c8d35ffc458db819e19e6d3ac2b4e24c1f98cc91cc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119977895"
 ---
-# <a name="apijetregistercallback-method"></a>Método API. JetRegisterCallback
+# <a name="apijetregistercallback-method"></a>Método Api.JetRegisterCallback
 
-Permite a la aplicación configurar el motor de base de datos para emitir notificaciones a la aplicación para eventos concretos. Estas notificaciones están asociadas a una tabla específica y permanecen en vigor solo hasta que se cierra la instancia que contiene la tabla mediante [JetTerm (JET_INSTANCE)](./api.jetterm-method.md).
+Permite que la aplicación configure el motor de base de datos para emitir notificaciones a la aplicación para eventos específicos. Estas notificaciones están asociadas a una tabla específica y solo permanecen en vigor hasta que la instancia que contiene la tabla se cierre mediante [JetTerm(JET_INSTANCE).](./api.jetterm-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,44 +75,44 @@ public static void JetRegisterCallback(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Cursor abierto en la tabla en la que se debe registrar la devolución de llamada.
 
 <!-- end list -->
 
   - cbtyp  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_cbtyp](./jet-cbtyp-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_cbtyp](./jet-cbtyp-enumeration.md)  
     
-    Los motivos de devolución de llamada para los que la aplicación desea recibir notificaciones.
+    Los motivos de devolución de llamada por los que la aplicación desea recibir notificaciones.
 
 <!-- end list -->
 
   - devolución de llamada  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_CALLBACK](./jet-callback-delegate.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_CALLBACK](./jet-callback-delegate.md)  
     
     La función de devolución de llamada.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
-    Contexto que se proporcionará a la devolución de llamada.
+    Contexto que se va a dar a la devolución de llamada.
 
 <!-- end list -->
 
   - callbackId  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
     
-    Identificador que se puede usar más adelante para cancelar el registro de la función de devolución de llamada determinada mediante [JetUnregisterCallback (JET_SESID, JET_TABLEID, JET_cbtyp, JET_HANDLE)](./api.jetunregistercallback-method.md).
+    Identificador que se puede usar más adelante para cancelar el registro de la función de devolución de llamada determinada [mediante JetUnregisterCallback(JET_SESID, JET_TABLEID, JET_cbtyp, JET_HANDLE).](./api.jetunregistercallback-method.md)
 
 ## <a name="see-also"></a>Vea también
 
@@ -120,6 +120,6 @@ public static void JetRegisterCallback(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: MSMQ-PEEK-mensajes con problemas de entrega
-description: Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
+title: msmq-Peek-Dead-Letter extendido a la derecha
+description: Permite inspeccionar los mensajes de la cola de mensajes fallidos.
 ms.assetid: c0fc85af-2283-48c7-9308-f4d482cf7014
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-PEEK-no se ha extendido el esquema de AD de la carta de entrega
+- msmq-Peek-Dead-Letter extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e98fc4266154e84ab08adf1de274cee37055e1c8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aadb1d1ae81fae92eb0a89bc76a4095beabcc563d45b448cc6b5ad5c917657eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531614"
 ---
-# <a name="msmq-peek-dead-letter-extended-right"></a>MSMQ-PEEK-mensajes con problemas de entrega
+# <a name="msmq-peek-dead-letter-extended-right"></a>msmq-Peek-Dead-Letter extendido a la derecha
 
-Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
+Permite inspeccionar los mensajes de la cola de mensajes fallidos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | MSMQ-PEEK-mensajes con problemas de entrega                |
-| Display-Name | Inspeccionar la carta de entrega                     |
+| CN           | msmq-Peek-Dead-Letter                |
+| Display-Name | Ver la letra fallecida                     |
 | Rights-GUID  | 4b6e08c1-df3c-11d1-9c86-006008764d0e |
 
 
@@ -47,10 +47,10 @@ Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 39                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 39                                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 39                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 39                                                           |
 
 
 
@@ -71,8 +71,8 @@ Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 39                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 39                                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 39                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 39                                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 39                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 39                                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite inspeccionar mensajes en la cola de mensajes con problemas de entrega.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 39                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 39                                                           |
 
 
 

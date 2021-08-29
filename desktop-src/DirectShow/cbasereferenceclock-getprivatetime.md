@@ -1,7 +1,7 @@
 ---
 description: El método GetPrivateTime recupera la hora real del reloj.
 ms.assetid: ce9832cb-4b5a-49a1-9a69-d2fb90b3ed2e
-title: Método CBaseReferenceClock. GetPrivateTime (Refclock. h)
+title: Método CBaseReferenceClock.GetPrivateTime (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 387df10472e4913d33722492bf07601faf08e3ba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8381f6e6e868fc6a57a65cf3bf124d90c035c854176265b2f9991356874e0ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076505"
 ---
-# <a name="cbasereferenceclockgetprivatetime-method"></a>CBaseReferenceClock. GetPrivateTime, método
+# <a name="cbasereferenceclockgetprivatetime-method"></a>Método CBaseReferenceClock.GetPrivateTime
 
 El `GetPrivateTime` método recupera la hora real del reloj.
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la hora actual del reloj, en unidades de 100-nanosegundos.
+Devuelve la hora del reloj actual, en unidades de 100 nanosegundos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método devuelve el tiempo real indicado por el reloj. Los autores de llamadas externos usan el método [**CBaseReferenceClock:: getTime**](cbasereferenceclock-gettime.md) , que llama a este método. A diferencia del método **getTime** , el reloj interno puede retroceder. Si esto sucede, el método **getTime** continúa devolviendo la última vez que se informaba, hasta que el método se pone al día `GetPrivateTime` .
+Este método devuelve el tiempo real notificado por el reloj. Los llamadores externos usan [**el método CBaseReferenceClock::GetTime,**](cbasereferenceclock-gettime.md) que llama a este método. A diferencia **del método GetTime,** el reloj interno puede retroceder. Si esto sucede, el **método GetTime** sigue devolviendo la última vez que se informó, hasta que `GetPrivateTime` el método se activa.
 
 Este método devuelve la hora del sistema. Invalide este método si el reloj obtiene la hora de otro origen.
 
@@ -56,8 +56,8 @@ Este método devuelve la hora del sistema. Invalide este método si el reloj obt
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Refclock. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Refclock.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Este método devuelve la hora del sistema. Invalide este método si el reloj obt
 
 <dl> <dt>
 
-[**Clase CBaseReferenceClock**](cbasereferenceclock.md)
+[**CBaseReferenceClock (clase)**](cbasereferenceclock.md)
 </dt> </dl>
 
  

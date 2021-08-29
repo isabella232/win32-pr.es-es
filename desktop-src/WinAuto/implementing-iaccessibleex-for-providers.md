@@ -1,36 +1,36 @@
 ---
 title: Implementación de IAccessibleEx para proveedores
-description: En esta sección se explica cómo agregar capacidades del proveedor de automatización de la interfaz de usuario de Microsoft a un servidor de Microsoft Active Accessibility mediante la implementación de la interfaz IAccessibleEx.
+description: En esta sección se explica cómo agregar funcionalidades Automatización de la interfaz de usuario proveedor de Microsoft a un servidor Microsoft Active Accessibility mediante la implementación de la interfaz IAccessibleEx.
 ms.assetid: c03dc552-7919-4a35-8ff2-4cdd822bc0b7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9460ccbd243aef390b7ade0deb41626173c927a0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: af83192ed445494a87ecccb1fd579aa49ac099468482ff9feefacf2357293660
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105714390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098495"
 ---
 # <a name="implementing-iaccessibleex-for-providers"></a>Implementación de IAccessibleEx para proveedores
 
-En esta sección se explica cómo agregar capacidades del proveedor de automatización de la interfaz de usuario de Microsoft a un servidor de Microsoft Active Accessibility mediante la implementación de la interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) .
+En esta sección se explica cómo agregar funcionalidades Automatización de la interfaz de usuario proveedor de Microsoft a un servidor Microsoft Active Accessibility mediante la implementación de la [**interfaz IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex)
 
-Antes de implementar [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex), tenga en cuenta los siguientes requisitos:
+Antes de implementar [**IAccessibleEx,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex)tenga en cuenta los siguientes requisitos:
 
--   La base de referencia de Microsoft Active Accessibility la jerarquía de objetos accesibles debe estar limpia. [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) no puede corregir problemas con jerarquías de objetos accesibles existentes. Cualquier problema con la estructura del modelo de objetos debe corregirse en la implementación de Microsoft Active Accessibility antes de implementar **IAccessibleEx**.
--   La implementación de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) debe cumplir la especificación de Microsoft Active Accessibility y la especificación de automatización de la interfaz de usuario. Hay herramientas disponibles para validar el cumplimiento en ambas especificaciones. Para obtener más información, vea [herramientas de prueba](testing-tools.md) y comprobación de [UI Automation (UIA Verify) marco de automatización de pruebas](https://www.codeplex.com/UIAutomationVerify/).
+-   La línea Microsoft Active Accessibility jerarquía de objetos accesibles debe estar limpia. [**IAccessibleEx no**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) puede corregir problemas con jerarquías de objetos accesibles existentes. Cualquier problema con la estructura del modelo de objetos debe corregirse en la implementación Microsoft Active Accessibility antes de implementar **IAccessibleEx**.
+-   La [**implementación de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) debe cumplir con la especificación Microsoft Active Accessibility y la Automatización de la interfaz de usuario estándar. Las herramientas están disponibles para validar el cumplimiento según ambas especificaciones. Para obtener más información, vea [Herramientas de pruebas](testing-tools.md) y Automatización de la interfaz de usuario Marco de automatización de pruebas de comprobación [de UIA (UIA Verify).](https://www.codeplex.com/UIAutomationVerify/)
 
-La implementación de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) requiere estos pasos principales:
+La implementación [**de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) requiere estos pasos principales:
 
--   Implemente **IServiceProvider** en el objeto accesible para que la interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) se pueda encontrar en este u otro objeto.
+-   Implemente **IServiceProvider en** el objeto accesible para que la [**interfaz IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) se pueda encontrar en este objeto o en otro.
 -   Implemente [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) en el objeto accesible.
--   Cree objetos accesibles para cualquier elemento secundario de Microsoft Active Accessibility, que en Microsoft Active Accessibility se representan mediante la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) en el objeto primario (por ejemplo, elementos de lista). Implemente [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) en estos objetos.
--   Implemente [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) en todos los objetos accesibles.
+-   Cree objetos accesibles para Microsoft Active Accessibility elementos secundarios, que en Microsoft Active Accessibility se representan mediante la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) en el objeto primario (por ejemplo, elementos de lista). Implemente [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) en estos objetos.
+-   Implemente [**IRawElementProviderSimple en**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) todos los objetos accesibles.
 -   Implemente las interfaces de patrón de control adecuadas en los objetos accesibles.
 
-### <a name="implementing-the-iserviceprovider-interface"></a>Implementar la interfaz IServiceProvider
+### <a name="implementing-the-iserviceprovider-interface"></a>Implementación de la interfaz IServiceProvider
 
-Dado que la implementación de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para un control puede residir en un objeto independiente, las aplicaciones cliente no pueden basarse en [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener esta interfaz. En su lugar, se espera que los clientes llamen a **IServiceProvider:: QueryService**. En la siguiente implementación de ejemplo de este método, se supone que **IAccessibleEx** no se implementa en un objeto independiente; por lo tanto, el método simplemente llama a a **QueryInterface**.
+Dado que la implementación de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para un control puede residir en un objeto independiente, las aplicaciones cliente no pueden confiar en [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener esta interfaz. En su lugar, se espera que los clientes **llamen a IServiceProvider::QueryService**. En la siguiente implementación de ejemplo de este método, se supone que **IAccessibleEx** no se implementa en un objeto independiente; por lo tanto, el método simplemente llama a **a QueryInterface**.
 
 
 ```C++
@@ -55,16 +55,16 @@ HRESULT CListboxAccessibleObject::QueryService(REFGUID guidService, REFIID riid,
 
 
 
-### <a name="implementing-the-iaccessibleex-interface"></a>Implementar la interfaz IAccessibleEx
+### <a name="implementing-the-iaccessibleex-interface"></a>Implementación de la interfaz IAccessibleEx
 
-En Microsoft Active Accessibility, un elemento de la interfaz de usuario siempre se identifica mediante una interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y un identificador secundario. Una sola instancia de **IAccessible** puede representar varios elementos de la interfaz de usuario.
+En Microsoft Active Accessibility, un elemento de interfaz de usuario siempre se identifica mediante una [**interfaz IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y un identificador secundario. Una única instancia de **IAccessible** puede representar varios elementos de la interfaz de usuario.
 
-Dado que cada instancia de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) representa solo un único elemento de la interfaz de usuario, cada [**par de identificador**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de elemento de interfaz de usuario y de identificador secundario debe estar asignado a una única instancia de **IAccessibleEx** . **IAccessibleEx** incluye dos métodos para controlar esta asignación:
+Dado que [**cada instancia de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) representa solo un elemento de interfaz de usuario, cada par de identificadores [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y secundarios debe asignarse a una única **instancia de IAccessibleEx.** **IAccessibleEx incluye** dos métodos para controlar esta asignación:
 
--   [**GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild): recupera la interfaz [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para el elemento secundario especificado. Este método devuelve **null** si la implementación de **IAccessibleEx** no reconoce el identificador secundario especificado, no tiene un **IAccessibleEx** para el elemento secundario especificado o representa un elemento secundario.
--   [**GetIAccessiblePair**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair): recupera la interfaz [**IACCESSIBLE**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y el identificador secundario para el elemento [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) . En el caso de las implementaciones de **IAccessible** que no usan un identificador secundario, este método recupera el objeto **IACCESSIBLE** correspondiente y CHILDID \_ Self.
+-   [**GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild): recupera la [**interfaz IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para el elemento secundario especificado. Este método devuelve **NULL si** la implementación de **IAccessibleEx** no reconoce el identificador secundario especificado, no tiene un **valor IAccessibleEx** para el elemento secundario especificado o representa un elemento secundario.
+-   [**GetIAccessiblePair**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair): recupera la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y el identificador secundario del [**elemento IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) En el caso de las implementaciones de **IAccessible** que no usan un identificador secundario, este método recupera el objeto **IAccessible** correspondiente y CHILDID \_ SELF.
 
-En el ejemplo siguiente se muestra la implementación de los métodos [**GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild) y [**GetIAccessiblePair**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair) para un elemento en una vista de lista personalizada. Los métodos habilitan la automatización de la interfaz de usuario para asignar el elemento [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y el par ID. secundario a una instancia de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) correspondiente.
+En el ejemplo siguiente se muestra la implementación de [**los métodos GetObjectForChild**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getobjectforchild) y [**GetIAccessiblePair**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair) para un elemento en una vista de lista personalizada. Los métodos permiten Automatización de la interfaz de usuario asignar el par [**de identificadores IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) y secundario a una [**instancia de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) correspondiente.
 
 
 ```C++
@@ -132,7 +132,7 @@ HRESULT CListItemAccessibleObject::GetIAccessiblePair(
 
 
 
-Si una implementación de objeto accesible no utiliza un identificador secundario, los métodos se pueden implementar tal y como se muestra en el siguiente fragmento de código.
+Si una implementación de objeto accesible no usa un identificador secundario, los métodos todavía se pueden implementar como se muestra en el siguiente fragmento de código.
 
 
 ```C++
@@ -166,19 +166,19 @@ Si una implementación de objeto accesible no utiliza un identificador secundari
 
 
 
-### <a name="implement-the-irawelementprovidersimple-interface"></a>Implementar la interfaz IRawElementProviderSimple
+### <a name="implement-the-irawelementprovidersimple-interface"></a>Implementación de la interfaz IRawElementProviderSimple
 
-Los servidores usan [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para exponer información sobre los patrones de control y las propiedades de automatización de la interfaz de usuario. **IRawElementProviderSimple** incluye los siguientes métodos:
+Los servidores [**usan IRawElementProviderSimple para**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) exponer información sobre Automatización de la interfaz de usuario propiedades y patrones de control. **IRawElementProviderSimple incluye** los métodos siguientes:
 
--   [**GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider): este método se usa para exponer las interfaces de patrón de control. Devuelve un objeto que admite el patrón de control especificado, o **null** si no se admite el patrón de control.
--   [**GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue): este método se usa para exponer los valores de propiedad de automatización de la interfaz de usuario.
--   [**HostRawElementProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-get_hostrawelementprovider): este método no se usa con implementaciones de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) .
--   [**ProviderOptions**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-get_provideroptions): este método no se usa con implementaciones de [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) .
+-   [**GetPatternProvider :**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider)este método se usa para exponer interfaces de patrón de control. Devuelve un objeto que admite el patrón de control especificado o **NULL** si no se admite el patrón de control.
+-   [**GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue): este método se usa para exponer Automatización de la interfaz de usuario valores de propiedad.
+-   [**HostRawElementProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-get_hostrawelementprovider): este método no se usa con implementaciones [**de IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex)
+-   [**ProviderOptions**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-get_provideroptions): este método no se usa con [**implementaciones de IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex)
 
-Un servidor [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) expone patrones de control mediante la implementación de [**IRawElementProviderSimple:: GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider). Este método toma un parámetro de entero que especifica el patrón de control. El servidor devuelve **null** si no se admite el patrón. Si se admite la interfaz de patrón de control, los servidores devuelven [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) y el cliente llama a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener el patrón de control adecuado.
+Un [**servidor IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) expone patrones de control mediante la implementación [**de IRawElementProviderSimple::GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider). Este método toma un parámetro entero que especifica el patrón de control. El servidor devuelve **NULL** si no se admite el patrón. Si se admite la interfaz del patrón de control, los servidores [**devuelven un IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) y el cliente llama a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener el patrón de control adecuado.
 
-Un servidor [**IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) puede admitir las propiedades de automatización de la interfaz de usuario (como LabeledBy y IsRequiredForForm) implementando [**IRawElementProviderSimple:: GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue) y proporcionando un entero PROPERTYID que identifica la propiedad como un parámetro. Esta técnica solo se aplica a las propiedades de automatización de la interfaz de usuario que no están incluidas en una interfaz de patrón de control. Las propiedades asociadas a una interfaz de patrón de control se exponen mediante el método de interfaz de patrón de control. Por ejemplo, la propiedad IsSelected del patrón de control [SelectionItem](uiauto-implementingselectionitem.md) se expondría con [**ISelectionItemProvider:: get \_ IsSelected**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_isselected).
+Un [**servidor IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) puede admitir propiedades de Automatización de la interfaz de usuario (como LabeledBy e IsRequiredForForm) implementando [**IRawElementProviderSimple::GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue) y suministrando un valor ENTERO PROPERTYID que identifica la propiedad como un parámetro. Esta técnica solo se aplica a Automatización de la interfaz de usuario propiedades que no están incluidas en una interfaz de patrón de control. Las propiedades asociadas a una interfaz de patrón de control se exponen a través del método de interfaz de patrón de control. Por ejemplo, la propiedad IsSelected del patrón de control [SelectionItem](uiauto-implementingselectionitem.md) se exponería con [**ISelectionItemProvider::get \_ IsSelected**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionitemprovider-get_isselected).
 
- 
+ 
 
- 
+ 

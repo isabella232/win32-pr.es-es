@@ -1,19 +1,19 @@
 ---
-description: Filtro de analizador de varios archivos
+description: Filtro del analizador de varios archivos
 ms.assetid: 8ef06f49-fda4-49e2-9b07-70453a2e897c
-title: Filtro de analizador de varios archivos
+title: Filtro del analizador de varios archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44fc83a56bb12c307b85be875a3a2e7e73b744d9
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8a91196f9712dc05e64f1d70072d3af9d1c0a39f
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686353"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122986478"
 ---
-# <a name="multi-file-parser-filter"></a>Filtro de analizador de varios archivos
+# <a name="multi-file-parser-filter"></a>Filtro del analizador de varios archivos
 
-El filtro de analizador de varios archivos analiza un formato de archivo simple que permite especificar varios nombres de archivo como si fueran un archivo. Estos archivos tienen el formato que se muestra en el ejemplo siguiente:
+El filtro Analizador de varios archivos analiza un formato de archivo simple que permite especificar varios nombres de archivo como si fueran un archivo. Estos archivos tienen el formato que se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -24,62 +24,23 @@ https://server/share/captions.smi
 
 
 
-El uso de este filtro está en desuso. Para representar varios archivos en el mismo gráfico de filtros, la aplicación simplemente debe llamar a **RenderFile** o **AddSourceFilter** varias veces.
+El uso de este filtro está en desuso. Para representar varios archivos dentro del mismo gráfico de filtros, la aplicación simplemente debe llamar varias veces a **RenderFile** **o AddSourceFilter.**
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Interfaces de filtro</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de medios de anclaje de entrada</td>
-<td><ul>
-<li>Tipo principal: MEDIATYPE_Stream</li>
-<li>Subtipo: CLSID_MultFile</li>
-<li>Tipo de formato: GUID_NULL</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Interfaces de PIN de entrada</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>Tipos de medios de anclaje de salida</td>
-<td><ul>
-<li>Tipo principal: MEDIATYPE_File</li>
-<li>Subtipo: GUID_NULL</li>
-<li>Tipo de formato: MEDIATYPE_File</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Interfaces de clavija de salida</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a></td>
-</tr>
-<tr class="even">
-<td>Identificador CLSID</td>
-<td>CLSID_MultFile</td>
-</tr>
-<tr class="odd">
-<td>Executable</td>
-<td>Quartz.dll</td>
-</tr>
-<tr class="even">
-<td><a href="merit.md">Fundament</a></td>
-<td>MERIT_UNLIKELY</td>
-</tr>
-<tr class="odd">
-<td><a href="filter-categories.md">Categoría de filtro</a></td>
-<td>CLSID_LegacyAmFilterCategory</td>
-</tr>
-</tbody>
-</table>
+
+| Etiqueta | Value |
+|--------|-------|
+| Interfaces de filtro | <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a> | 
+| Tipos de medios de pin de entrada | <ul><li>Tipo principal: MEDIATYPE_Stream</li><li>Subtipo: CLSID_MultFile</li><li>Tipo de formato: GUID_NULL</li></ul> | 
+| Interfaces de pin de entrada | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a> | 
+| Tipos de medios de pin de salida | <ul><li>Tipo principal: MEDIATYPE_File</li><li>Subtipo: GUID_NULL</li><li>Tipo de formato: MEDIATYPE_File</li></ul> | 
+| Interfaces de pin de salida | <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"> <strong>IQualityControl</strong></a> | 
+| Filtrar CLSID | CLSID_MultFile | 
+| Executable | Quartz.dll | 
+| <a href="merit.md">Mérito</a> | MERIT_UNLIKELY | 
+| <a href="filter-categories.md">Categoría de filtro</a> | CLSID_LegacyAmFilterCategory | 
+
 
 
 
@@ -87,9 +48,9 @@ El uso de este filtro está en desuso. Para representar varios archivos en el mi
 
 ## <a name="remarks"></a>Observaciones
 
-El filtro crea un PIN de salida para cada archivo que aparece en el archivo de código fuente. El tipo de salida es el \_ archivo MEDIATYPE y el bloque de formato para el tipo de salida es una cadena de caracteres anchos que contiene el nombre de archivo. Cada pin se conecta a una instancia del filtro de [representador de secuencia de archivos](file-stream-renderer-filter.md) . El filtro de representador de flujo de archivo crea un PIN de salida, que expone la interfaz [**IStreamBuilder**](/windows/desktop/api/Strmif/nn-strmif-istreambuilder) . El PIN de salida representa el archivo especificado. No viajan los datos multimedia entre el analizador de varios archivos y el representador de flujo de archivos.
+El filtro crea un pin de salida para cada archivo enumerado en el archivo de origen. El tipo de salida es MEDIATYPE File y el bloque de formato para el tipo de salida es una cadena de caracteres \_ anchos que contiene el nombre de archivo. Cada pin se conecta a una instancia del filtro [Representador de secuencias de](file-stream-renderer-filter.md) archivos. El filtro Representador de secuencias de archivos crea un pin de salida, que expone la [**interfaz IStreamBuilder.**](/windows/desktop/api/Strmif/nn-strmif-istreambuilder) El pin de salida representa el archivo especificado. Ningún dato multimedia viaja entre el analizador de varios archivos y el representador de secuencias de archivos.
 
-El CLSID del filtro no está definido en UUID. h. Use esta macro en su propio archivo de encabezado:
+El CLSID del filtro no está definido en Uuids.h. Use esta macro en su propio archivo de encabezado:
 
 
 ```C++
@@ -104,7 +65,7 @@ DEFINE_GUID(CLSID_MultFile,
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

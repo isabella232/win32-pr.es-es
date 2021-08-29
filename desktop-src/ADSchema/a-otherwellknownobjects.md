@@ -1,11 +1,11 @@
 ---
-title: Otro atributo de objetos conocidos
-description: Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite recuperar un objeto una vez que se ha desusado usando solo el GUID y el nombre de dominio. Cada vez que se mueve el objeto, el sistema actualiza automáticamente el nombre distintivo.
+title: Atributo Other-Well-Known-Objects
+description: Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite recuperar un objeto después de que se haya movido usando solo el GUID y el nombre de dominio. Cada vez que se mueve el objeto, el sistema actualiza automáticamente el nombre distintivo.
 ms.assetid: 2f33c4ac-235c-47a1-9340-5b90f7edb73b
 ms.tgt_platform: multiple
 keywords:
-- 'Otro: esquema de AD de atributos de objetos conocidos'
-- otherWellKnownObjects esquema de AD de atributos
+- Esquema de AD del atributo Other-Well-Known-Objects
+- Esquema de AD del atributo otherWellKnownObjects
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d38b4f4b86f90368859f9fb966031f539f0399f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c56d8ca4de5928e8109b2503b57d1afce5909df484e607392543e85cfa63118c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923995"
 ---
-# <a name="other-well-known-objects-attribute"></a>Otro atributo de objetos conocidos
+# <a name="other-well-known-objects-attribute"></a>Atributo Other-Well-Known-Objects
 
-Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite recuperar un objeto una vez que se ha desusado usando solo el GUID y el nombre de dominio. Cada vez que se mueve el objeto, el sistema actualiza automáticamente el nombre distintivo.
+Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite recuperar un objeto después de que se haya movido usando solo el GUID y el nombre de dominio. Cada vez que se mueve el objeto, el sistema actualiza automáticamente el nombre distintivo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CN                | Otros objetos conocidos                                                                                                                                                                                      |
-| Nombre para mostrar de LDAP | otherWellKnownObjects                                                                                                                                                                                         |
-| Tamaño              | Ejemplo para recuperar el contenedor de usuarios en el dominio de Microsoft: LDAP://(WKGUID = a9d1ca15768811d1aded00c04fd8d5cd, DC = Microsoft, DC = com). Nota: los corchetes angulares se sustituyen por paréntesis para evitar conflictos XML. |
-| Actualizar privilegio  | Administrador de esquema                                                                                                                                                                                          |
-| Frecuencia de actualización  | Cada vez que se mueve el objeto.                                                                                                                                                                                 |
+| CN                | Otros objetos well-known-objects                                                                                                                                                                                      |
+| Ldap-Display-Name | otherWellKnownObjects                                                                                                                                                                                         |
+| Size              | Ejemplo para recuperar el contenedor Users en el dominio microsoft: LDAP://(WKGUID=a9d1ca15768811d1aded00c04fd8d5cd,dc=microsoft,dc=com). NOTA: Corchetes angulares reemplazados por paréntesis para evitar conflictos XML. |
+| Privilegio actualizar  | Administrador de esquemas                                                                                                                                                                                          |
+| Frecuencia de actualización  | Siempre que se mueve el objeto.                                                                                                                                                                                 |
 | Attribute-Id      | 1.2.840.113556.1.4.1359                                                                                                                                                                                       |
-| System-ID-GUID    | 1ea64e5d-ac0f-11d2-90df-00c04fd91ab1                                                                                                                                                                          |
-| Sintaxis            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                                                                                               |
+| System-Id-Guid    | 1ea64e5d-ac0f-11d2-90df-00c04fd91ab1                                                                                                                                                                          |
+| Syntax            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                                                                                               |
 
 
 
@@ -44,7 +44,7 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,15 +75,15 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000000                      |
@@ -117,15 +117,15 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000000                      |
@@ -138,15 +138,15 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000000                      |
@@ -159,15 +159,15 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000000                      |
@@ -180,15 +180,15 @@ Contiene una lista de contenedores por GUID y nombre distintivo. Esto permite re
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 16                              |
 | Range-Upper            | 16                              |
 | Search-Flags           | 0x00000000                      |

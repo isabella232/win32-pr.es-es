@@ -1,7 +1,7 @@
 ---
 description: El método Find recupera la primera posición que contiene el elemento especificado.
 ms.assetid: 8e2a3e5d-96e6-4f40-8e2a-4dc8c21088cd
-title: Método CGenericList. Find (Wxlist. h)
+title: Método CGenericList.Find (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a21f16e25d8a2ebba4494a850bc456a7b579f2a5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e36ea355fed2099769b375abc23aedd1795d6b54b4db3584296070fbfe496b8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813805"
 ---
-# <a name="cgenericlistfind-method"></a>CGenericList. Find (método)
+# <a name="cgenericlistfind-method"></a>CGenericList.Find (método)
 
 El `Find` método recupera la primera posición que contiene el elemento especificado.
 
@@ -45,13 +45,13 @@ POSITION Find(
 *pObj* 
 </dt> <dd>
 
-Puntero a un objeto de tipo **Object** (el tipo de plantilla).
+Puntero a un objeto de tipo **OBJECT** (tipo de plantilla).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de posición o **null** si el elemento no está en la lista.
+Devuelve un valor POSITION o **NULL si** el elemento no está en la lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor de posición o **null** si el elemento no está en la lista.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor de posición o **null** si el elemento no está en la lista.
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TCN_SELCHANGING (commctrl. h)
-description: Notifica a la ventana primaria de un control de pestaña que está a punto de cambiar la pestaña seleccionada actualmente. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TCN_SELCHANGING de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de pestaña que la pestaña seleccionada actualmente está a punto de cambiar. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: ec7b1bd3-8932-4418-9eed-ecb7c748e4dd
 keywords:
-- TCN_SELCHANGING controles de código de notificación de Windows
+- TCN_SELCHANGING código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6ba7dcf25d243d9b42876425564fba0e01c803f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75fbf92139a43b19d41fce0fd607932531fef7e23556330b9bda376945a21080
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104675"
 ---
-# <a name="tcn_selchanging-notification-code"></a>Código de notificación de SELCHANGING de TCN \_
+# <a name="tcn_selchanging-notification-code"></a>Código de notificación DE TCN \_ SELCHANGING
 
-Notifica a la ventana primaria de un control de pestaña que está a punto de cambiar la pestaña seleccionada actualmente. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de pestaña que la pestaña seleccionada actualmente está a punto de cambiar. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ TCN_SELCHANGING
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** para evitar que la selección cambie o **false** para permitir que la selección cambie.
+Devuelve **TRUE** para evitar que cambie la selección o **FALSE** para permitir que cambie la selección.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar la pestaña actualmente seleccionada, use la macro [**TabCtrl \_ GetCurSel**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel) .
+Para determinar la pestaña seleccionada actualmente, use la [**macro TabCtrl \_ GetCurSel.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getcursel)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Para determinar la pestaña actualmente seleccionada, use la macro [**TabCtrl \_
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

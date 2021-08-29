@@ -1,5 +1,5 @@
 ---
-description: 'Método StartService de la Msvm_MetricService : inicia el servicio.'
+description: 'Método StartService de la Msvm_MetricService clase : inicia el servicio.'
 ms.assetid: 8ac863bc-d8a0-40dc-a4b6-1067045887d8
 title: Método StartService de la Msvm_MetricService clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2eed809d164b916b518e848ab889a7fe00b62b7f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 067a7f990410a33714041421c19bdf59d5f969a6e209c24ea3986cbc1442f22b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521345"
 ---
-# <a name="startservice-method-of-the-msvm_metricservice-class"></a>Método StartService de la clase MetricService de Msvm \_
+# <a name="startservice-method-of-the-msvm_metricservice-class"></a>Método StartService de la clase \_ MetricService de Msvm
 
 inicia el servicio.
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

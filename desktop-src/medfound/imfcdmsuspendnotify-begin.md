@@ -1,7 +1,7 @@
 ---
-description: Indica que se está iniciando el proceso de suspensión y los recursos se deben convertir en un estado coherente.
+description: Indica que se está iniciando el proceso de suspensión y que los recursos se deben poner en un estado coherente.
 ms.assetid: 5cf3d249-3d8b-4596-9d8b-e7b95a270eff
-title: 'IMFCdmSuspendNotify:: Begin (método)'
+title: MÉTODO IMFCdmSuspendNotify::Begin
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 84453a6c846e88a9d6e6c32c5253d97d36e89c7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1665102e336901d634d2ea948ad338842ef3a6d04bf4b7f43ba5297f1df13198
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724567"
 ---
-# <a name="imfcdmsuspendnotifybegin-method"></a>IMFCdmSuspendNotify:: Begin (método)
+# <a name="imfcdmsuspendnotifybegin-method"></a>MÉTODO IMFCdmSuspendNotify::Begin
 
-Indica que se está iniciando el proceso de suspensión y los recursos se deben convertir en un estado coherente.
+Indica que se está iniciando el proceso de suspensión y que los recursos se deben poner en un estado coherente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

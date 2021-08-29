@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMVirtualMachine ConfigID (VPCCOMInterfaces. h)
+title: Propiedad IVMVirtualMachine ConfigID (VPCCOMInterfaces.h)
 description: Recupera el identificador único de la máquina virtual.
 ms.assetid: e1679822-d733-4c7a-a5ad-82cbc24a6329
 keywords:
 - Propiedad ConfigID Virtual PC
-- Propiedad ConfigID Virtual PC, interfaz IVMVirtualMachine
-- Interfaz IVMVirtualMachine Virtual PC, propiedad ConfigID
+- Propiedad ConfigID Virtual PC , interfaz IVMVirtualMachine
+- IVMVirtualMachine interface Virtual PC , propiedad ConfigID
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 291a1faf3012016d35130b21ff4743faae25b794
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea1cb17b63e41259ab721eab3503181402ab33c68a3070ee8e4707c97e24e610
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768065"
 ---
-# <a name="ivmvirtualmachineconfigid-property"></a>IVMVirtualMachine:: ConfigID (propiedad)
+# <a name="ivmvirtualmachineconfigid-property"></a>IVMVirtualMachine::ConfigID, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el identificador único de la máquina virtual.
 
@@ -45,7 +45,7 @@ HRESULT get_ConfigID(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-IDENTIFICADOR único que identifica la máquina virtual.
+Identificador único que identifica la máquina virtual.
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,10 +53,10 @@ IDENTIFICADOR único que identifica la máquina virtual.
 
 | Nombre o valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>        |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl> | La configuración es desconocida.<br/>     |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>        |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | La configuración es desconocida.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
@@ -66,12 +66,12 @@ IDENTIFICADOR único que identifica la máquina virtual.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine se define como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

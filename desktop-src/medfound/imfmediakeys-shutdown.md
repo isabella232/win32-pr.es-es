@@ -1,7 +1,7 @@
 ---
-description: 'Más información sobre: IMFMediaKeys:: Shutdown (método)'
+description: 'Más información sobre: MÉTODO IMFMediaKeys::Shutdown'
 ms.assetid: 464b598c-5fa7-40af-83ba-8619fbd84b04
-title: 'IMFMediaKeys:: Shutdown (método)'
+title: MÉTODO IMFMediaKeys::Shutdown
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 9fcee861b53aaf0c9fda2c6265f50fcee60f674c
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 198eea5af6980828f6a85c9f4680812dbf4dbf0e3dbac2c5181c6347ffbf386e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104361912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120114345"
 ---
-# <a name="imfmediakeysshutdown-method"></a>IMFMediaKeys:: Shutdown (método)
+# <a name="imfmediakeysshutdown-method"></a>MÉTODO IMFMediaKeys::Shutdown
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,11 +37,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe llamar al **cierre** antes de la versión final. En este momento se libera la referencia del módulo de descifrado de contenido (CDM) y cualquier otro recurso. Sin embargo, las sesiones relacionadas no se liberan ni se cierran.
+**La** aplicación debe llamar al apagado antes de la versión final. En este momento se publica la referencia del Módulo de descifrado de contenido (CDM) y cualquier otro recurso. Sin embargo, las sesiones relacionadas no se liberan ni se cierran.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ La aplicación debe llamar al **cierre** antes de la versión final. En este mom
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: WMDRM_IMPORT_CONTENT_KEY estructura (Drmexternals. h)
-description: La \_ estructura de clave de contenido de importación de WMDRM \_ \_ almacena la clave de contenido que se usa en la importación de contenido protegido.
+title: WMDRM_IMPORT_CONTENT_KEY estructura (Drmexternals.h)
+description: La estructura WMDRM IMPORT CONTENT KEY almacena la clave de contenido que se usa \_ \_ para importar contenido \_ protegido.
 ms.assetid: 29a0f98d-96a3-46b2-a67c-dbb23449e927
 keywords:
-- WMDRM_IMPORT_CONTENT_KEY estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- WMDRM_IMPORT_CONTENT_KEY structure windows Media Format
+- Estructura de windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d616cfe856a19f4f8ffa5254254d3946b1544dc6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7f7ced03d841d71e104384fff3f7abdfdd13890746f8052cf43264dacd22c03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083799"
 ---
-# <a name="wmdrm_import_content_key-structure"></a>\_Estructura de \_ clave de contenido de importación de WMDRM \_
+# <a name="wmdrm_import_content_key-structure"></a>Estructura DE CLAVE DE \_ \_ CONTENIDO DE IMPORTACIÓN DE WMDRM \_
 
-La estructura de clave de contenido de importación de WMDRM almacena la clave de contenido que se usa en la importación de contenido protegido. **\_ \_ \_**
+La **estructura WMDRM \_ IMPORT CONTENT \_ \_ KEY** almacena la clave de contenido que se usa para importar contenido protegido.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,7 +78,7 @@ Tamaño de la clave de vector de inicialización en bytes.
 **dwContentKeyType**
 </dt> <dd>
 
-Tipo de clave de contenido. Establezca en el valor de cóctel del KEYTYPE de WMDRM \_ \_ .
+Tipo de clave de contenido. Se establece en WMDRM \_ KEYTYPE \_ WM.
 
 </dd> <dt>
 
@@ -92,24 +92,24 @@ Tamaño de la clave de contenido en bytes.
 **rgbKeyData**
 </dt> <dd>
 
-Dirección de un búfer que contiene la clave de contenido. El tamaño del búfer debe coincidir con el valor de **cbContentKey**. Esta clave debe coincidir con la clave importada del mensaje de licencia de XMR.
+Dirección de un búfer que contiene la clave de contenido. El tamaño del búfer debe coincidir con el valor **de cbContentKey.** Esta clave debe coincidir con la clave importada desde el mensaje de licencia de XMR.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura, incluido el búfer que contiene la clave de sesión, se debe cifrar con la clave de sesión e incluirse en el miembro **pbEncryptedKeyMessage** de la estructura de la estructura de la estructura de [**importación de WMDRM \_ \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmdrm_import_init_struct) .
+Esta estructura, incluido el búfer que contiene la clave de sesión, debe cifrarse con la clave de sesión e incluirse en el **miembro pbEncryptedKeyMessage** de la estructura [**STRUCT DE WMDRM \_ IMPORT \_ INIT. \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmdrm_import_init_struct)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                      |
-| Versión<br/>                  | SDK de Windows Media Format 11<br/>                                                    |
-| Encabezado<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                      |
+| Versión<br/>                  | Windows SDK de formato multimedia 11<br/>                                                    |
+| Header<br/>                   | <dl> <dt>Drmexternals.h</dt> </dl> |
 
 
 

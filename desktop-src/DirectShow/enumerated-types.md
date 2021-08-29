@@ -4,28 +4,28 @@ ms.assetid: b32fab05-1bf0-43e9-8047-2a07231e01f7
 title: Tipos enumerados (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e09889c45b8121d02bd7a5febb090bd051731ef
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a646c4fa7aadf501e38125f4ad22cdd84bc667e649f23b371106011f2d715815
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079095"
 ---
 # <a name="enumerated-types-directshow"></a>Tipos enumerados (DirectShow)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-Los servicios de edición de DirectShow definen los siguientes tipos enumerados.
+DirectShow Servicios de edición define los siguientes tipos enumerados.
 
 
 
 | Enumeración                                                         | Descripción                                                                  |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [**\_marcas de \_ búsqueda de seguimiento de DEXTERF \_**](dexterf-track-search-flags.md) | Especifica las condiciones de límite en una búsqueda de un objeto en la escala de tiempo. |
-| [**\_tipo principal de la escala de tiempo \_**](timeline-major-type.md)                | Especifica el tipo principal de un objeto Timeline.                               |
+| [**MARCADORES DE \_ BÚSQUEDA \_ DE SEGUIMIENTO \_ DE TRACK**](dexterf-track-search-flags.md) | Especifica las condiciones de límite en una búsqueda de un objeto en la escala de tiempo. |
+| [**TIPO \_ PRINCIPAL DE ESCALA DE \_ TIEMPO**](timeline-major-type.md)                | Especifica el tipo principal de un objeto de escala de tiempo.                               |
 
 
 
@@ -35,7 +35,7 @@ Los servicios de edición de DirectShow definen los siguientes tipos enumerados.
 
 <dl> <dt>
 
-[Referencia de C++ de los servicios de edición de DirectShow](directshow-editing-services-c---reference.md)
+[DirectShow Referencia de C++ de Editing Services](directshow-editing-services-c---reference.md)
 </dt> </dl>
 
  

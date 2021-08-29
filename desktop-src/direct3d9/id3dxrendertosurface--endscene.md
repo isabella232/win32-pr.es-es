@@ -1,7 +1,7 @@
 ---
 description: Finaliza una escena.
 ms.assetid: f721593e-6cba-4569-8276-6a4ffc0fc37a
-title: 'ID3DXRenderToSurface:: EndScene (método) (D3dx9core. h)'
+title: Método ID3DXRenderToSurface::EndScene (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d5aa0c1fbccb756ac612b813ad151813a782b122
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a1671b49250dc76b44078a997a89db6daa5b6e3a7586e53559ebc0b7f2646405
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790556"
 ---
-# <a name="id3dxrendertosurfaceendscene-method"></a>ID3DXRenderToSurface:: EndScene (método)
+# <a name="id3dxrendertosurfaceendscene-method"></a>Método ID3DXRenderToSurface::EndScene
 
 Finaliza una escena.
 
@@ -40,12 +40,12 @@ HRESULT EndScene(
 
 <dl> <dt>
 
-*MipFilter* \[ de\]
+*MipFilter* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opciones de filtro, enumeradas en el [ \_ filtro de D3DX](d3dx-filter.md).
+Opciones de filtro, enumeradas en [D3DX \_ FILTER](d3dx-filter.md).
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Opciones de filtro, enumeradas en el [ \_ filtro de D3DX](d3dx-filter.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: MDM_WindowsAdvancedThreatProtection_DeviceTagging01 (clase)
-description: La \_ clase DeviceTagging01 de WindowsAdvancedThreatProtection de MDM \_ se usa para incorporar, determinar el estado de configuración y mantenimiento, y los puntos de conexión de externalización para la protección contra amenazas avanzada de Windows Defender.
+title: MDM_WindowsAdvancedThreatProtection_DeviceTagging01 clase
+description: La clase \_ MDM WindowsAdvancedThreatProtection DeviceTagging01 se usa para incorporar, determinar el estado de configuración y estado de mantenimiento y los puntos de conexión externos para \_ Windows Defender Advanced Threat Protection.
 ms.assetid: b56d5d46-e994-404a-865a-c59bb948f2b3
 keywords:
-- MDM_WindowsAdvancedThreatProtection_DeviceTagging01 (clase)
+- MDM_WindowsAdvancedThreatProtection_DeviceTagging01 clase
 - MDM_WindowsAdvancedThreatProtection_DeviceTagging01 clase, descrita
 ms.topic: reference
 ms.date: 05/31/2018
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - DMWmiBridgeProv.dll
-ms.openlocfilehash: 12cf3863ba67f422b42572a6934807d86abbc0e0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f095c39c78400f5d040ff00ab668f51c7d7abfaac2b0d872ed860f768ea55404
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913415"
 ---
-# <a name="mdm_windowsadvancedthreatprotection_devicetagging01-class"></a>\_Clase DeviceTagging01 WindowsAdvancedThreatProtection de MDM \_
+# <a name="mdm_windowsadvancedthreatprotection_devicetagging01-class"></a>Mdm \_ WindowsAdvancedThreatProtection \_ DeviceTagging01 (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La \_ clase DeviceTagging01 de WindowsAdvancedThreatProtection de MDM \_ se usa para incorporar, determinar el estado de configuración y mantenimiento, y los puntos de conexión de externalización para la protección contra amenazas avanzada de Windows Defender.
+La clase \_ MDM WindowsAdvancedThreatProtection DeviceTagging01 se usa para incorporar, determinar el estado de configuración y estado de mantenimiento y los puntos de conexión externos para \_ Windows Defender Advanced Threat Protection.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -50,13 +50,13 @@ class MDM_WindowsAdvancedThreatProtection_DeviceTagging01
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ DeviceTagging01 de MDM WindowsAdvancedThreatProtection** tiene estos tipos de miembros:
+La **clase \_ MDM WindowsAdvancedThreatProtection \_ DeviceTagging01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ DeviceTagging01 de MDM WindowsAdvancedThreatProtection** tiene estas propiedades.
+La **clase \_ MDM WindowsAdvancedThreatProtection \_ DeviceTagging01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ La **clase \_ \_ DeviceTagging01 de MDM WindowsAdvancedThreatProtection** tiene 
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -77,7 +77,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -88,10 +88,10 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-TBD
+Por determinar
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -118,7 +118,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> </dl>
@@ -129,10 +129,10 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                     |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

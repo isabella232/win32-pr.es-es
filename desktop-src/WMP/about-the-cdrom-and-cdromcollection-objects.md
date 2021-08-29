@@ -1,38 +1,38 @@
 ---
-title: Acerca de los objetos CDROM y CdromCollection
-description: Acerca de los objetos CDROM y CdromCollection
+title: Acerca de los objetos Cdrom y CdromCollection
+description: Acerca de los objetos Cdrom y CdromCollection
 ms.assetid: b764806b-d9e1-4c36-b86b-24613501c926
 keywords:
-- Media Player de Windows, objeto CDROM
-- Modelo de objetos de Windows Media Player, objeto CDROM
-- modelo de objetos, CDROM (objeto)
-- Control ActiveX de Windows Media Player, objeto CDROM
-- Control ActiveX, CDROM (objeto)
-- Control ActiveX móvil de Windows Media Player, objeto CDROM
-- Windows Media Player Mobile, objeto CDROM
-- CDROM (objeto)
-- Media Player de Windows, objeto CdromCollection
-- Modelo de objetos de Media Player de Windows, objeto CdromCollection
-- modelo de objetos, CdromCollection (objeto)
-- Control ActiveX de Windows Media Player, objeto CdromCollection
-- Control ActiveX, objeto CdromCollection
-- Control ActiveX de Windows Media Player Mobile, objeto CdromCollection
-- Windows Media Player Mobile, objeto CdromCollection
-- Objeto CdromCollection
+- Reproductor de Windows Media, objeto Cdrom
+- Reproductor de Windows Media de objetos, objeto Cdrom
+- object model,Cdrom object
+- Reproductor de Windows Media ActiveX control, objeto Cdrom
+- ActiveX control, objeto Cdrom
+- Reproductor de Windows Media Control de ActiveX móvil, objeto Cdrom
+- Reproductor de Windows Media Objeto Mobile,Cdrom
+- Objeto Cdrom
+- Reproductor de Windows Media,CdromCollection, objeto
+- Reproductor de Windows Media objeto object model,CdromCollection
+- object model,CdromCollection object
+- Reproductor de Windows Media ActiveX control, objeto CdromCollection
+- ActiveX control, objeto CdromCollection
+- Reproductor de Windows Media Control ActiveX móvil, objeto CdromCollection
+- Reproductor de Windows Media Objeto Mobile,CdromCollection
+- CdromCollection, objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd8fca9f7097f67226e31173670ca2935969704a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a40601c44b9e4722fe1209bfaa72711c9121782e11d27c45e21d4ed02e2638ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765925"
 ---
-# <a name="about-the-cdrom-and-cdromcollection-objects"></a>Acerca de los objetos CDROM y CdromCollection
+# <a name="about-the-cdrom-and-cdromcollection-objects"></a>Acerca de los objetos Cdrom y CdromCollection
 
-Los objetos **CDROM** y **CdromCollection** rigen la interfaz a las unidades de CD del equipo con el fin de leer y reproducir CDs.
+Los **objetos Cdrom** y **CdromCollection** rigen la interfaz de las unidades de CD del equipo con fines de lectura y reproducción de CD.
 
-Solo se tiene acceso al objeto **CdromCollection** a través de la propiedad **CdromCollection** del objeto **Player** . La propiedad **cdromCollection** devuelve el objeto **cdromCollection** . Solo puede acceder a las propiedades del objeto **CdromCollection** una vez creado. Por ejemplo, para utilizar la propiedad **Count** , debe usar el código siguiente:
+Solo se tiene acceso al objeto **CdromCollection** a través de la **propiedad cdromCollection** del **objeto Player.** La **propiedad cdromCollection** devuelve el **objeto CdromCollection.** Solo puede acceder a las propiedades del **objeto CdromCollection** después de crearlo. Por ejemplo, para usar la **propiedad count,** debe usar el código siguiente:
 
 
 ```C++
@@ -41,7 +41,7 @@ mycount = player.cdromcollection.count;
 
 
 
-Solo puede acceder al objeto **CDROM** a través del objeto **CdromCollection** . Por ejemplo, para expulsar el CD con el método **EJECT** , primero debe crear el objeto de colección y, a continuación, un elemento en el objeto. Para expulsar el CD, use el siguiente código:
+Solo puede acceder al objeto **Cdrom** a través del **objeto CdromCollection.** Por ejemplo, para expulsar el CD mediante el método **De expulsión,** primero debe crear el objeto de colección y, a continuación, un elemento en el objeto . Para expulsar el CD, use el código siguiente:
 
 
 ```C++
@@ -50,24 +50,24 @@ player.cdromcollection.item(0).eject();
 
 
 
-En ambos casos, primero se crea el objeto de colección (**CdromCollection**) y, a continuación, se obtiene un objeto específico de esa colección. El objeto es el primer elemento de la colección, **Item**(0), que corresponde a la primera unidad de CD. A continuación, llame a un método, **EJECT**, en ese elemento.
+En ambos casos, primero va a crear el objeto de colección (**CdromCollection**) y, después, a obtener un objeto específico de esa colección. El objeto es el primer elemento de la colección, **Item**(0), que corresponde a la primera unidad de CD. A continuación, llame a un **método, Expulsión**, en ese elemento.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**CDROM (objeto)**](cdrom-object.md)
+[**Cdrom (objeto)**](cdrom-object.md)
 </dt> <dt>
 
-[**Objeto CdromCollection**](cdromcollection-object.md)
+[**CdromCollection (objeto)**](cdromcollection-object.md)
 </dt> <dt>
 
 [**Modelo de objetos del reproductor para lenguajes de scripting**](player-object-model-for-scripting-languages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

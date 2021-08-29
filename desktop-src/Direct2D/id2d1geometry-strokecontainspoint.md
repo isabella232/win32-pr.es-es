@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 794bcddfe15be687a8360a35ee7c1f49ae457b49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 12c8acdcf591491d8dddee66a794ff795c7251a74530386e096384906b6a7a85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917886"
 ---
-# <a name="id2d1geometrystrokecontainspoint-methods"></a>ID2D1Geometry:: StrokeContainsPoint (métodos)
+# <a name="id2d1geometrystrokecontainspoint-methods"></a>Métodos ID2D1Geometry::StrokeContainsPoint
 
 Determina si el trazo de la geometría contiene el punto especificado.
 
@@ -30,10 +30,10 @@ Determina si el trazo de la geometría contiene el punto especificado.
 
 | Método                                                                                                                                                                                                                     | Descripción                                                                                                                                   |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**StrokeContainsPoint (D2D1 \_ Point \_ 2F, Float, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F \* , bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f__bool))             | Determina si el trazo de la geometría contiene el punto especificado dado el grosor, el estilo y la transformación del trazo especificado. <br/> |
-| [**StrokeContainsPoint (D2D1 \_ Point \_ 2F, Float, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F&, bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool))              | Determina si el trazo de la geometría contiene el punto especificado dado el grosor, el estilo y la transformación del trazo especificado. <br/> |
-| [**StrokeContainsPoint (D2D1 \_ Point \_ 2F, Float, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F \* , Float, bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_bool)) | Determina si el trazo de la geometría contiene el punto especificado dado el grosor, el estilo y la transformación del trazo especificado. <br/> |
-| [**StrokeContainsPoint (D2D1 \_ Point \_ 2F, Float, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F&, Float, bool \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool))  | Determina si el trazo de la geometría contiene el punto especificado dado el grosor, el estilo y la transformación del trazo especificado. <br/> |
+| [**StrokeContainsPoint(D2D1 \_ POINT \_ 2F,FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F , \* BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f__bool))             | Determina si el trazo de la geometría contiene el punto especificado según el grosor, el estilo y la transformación del trazo especificados. <br/> |
+| [**StrokeContainsPoint(D2D1 \_ POINT \_ 2F,FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F&,BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool))              | Determina si el trazo de la geometría contiene el punto especificado según el grosor, el estilo y la transformación del trazo especificados. <br/> |
+| [**StrokeContainsPoint(D2D1 \_ POINT \_ 2F,FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F , \* FLOAT,BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_bool)) | Determina si el trazo de la geometría contiene el punto especificado según el grosor, el estilo y la transformación del trazo especificados. <br/> |
+| [**StrokeContainsPoint(D2D1 \_ POINT \_ 2F,FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,BOOL \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f_bool))  | Determina si el trazo de la geometría contiene el punto especificado según el grosor, el estilo y la transformación del trazo especificados. <br/> |
 
 
 
@@ -43,7 +43,7 @@ Determina si el trazo de la geometría contiene el punto especificado.
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

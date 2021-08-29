@@ -1,9 +1,9 @@
 ---
-title: Función WsDumpMemory (WebServicesDebug. h)
+title: Función WsDumpMemory (WebServicesDebug.h)
 description: Esta función vuelca todas las asignaciones de memoria en la consola.
 ms.assetid: 84a4f1e7-7d62-48c2-a8a3-ee4573bde5e4
 keywords:
-- Servicios Web de la función WsDumpMemory para Windows
+- Servicios web de la función WsDumpMemory para Windows
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70af8d34b3ee04a9db4128ce1063bd31e81306eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b92941603b78c25db06415fec42524d978a90953d0c15eaea191a8874e6b34fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770895"
 ---
-# <a name="wsdumpmemory-function"></a>WsDumpMemory función)
+# <a name="wsdumpmemory-function"></a>Función WsDumpMemory
 
 Esta función vuelca todas las asignaciones de memoria en la consola.
 
 > [!Note]  
-> Esta función es solo para depurar.
+> Esta función es para DEBUG ONLY.
 
  
 
@@ -45,16 +45,16 @@ HRESULT WINAPI  WsDumpMemory(
 
 <dl> <dt>
 
-*error* \[ de en, opcional\]
+*error* \[ in, opcional\]
 </dt> <dd>
 
-Un puntero a un objeto de [ \_ error de WS](ws-error.md) en el que se debe almacenar información adicional sobre el error si se produce un error en la función.
+Puntero a un [objeto ERROR de WS \_ ](ws-error.md) donde se debe almacenar información adicional sobre el error si se produce un error en la función.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,9 +62,9 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                             |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>WebServicesDebug. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                                |
+| Header<br/>                   | <dl> <dt>WebServicesDebug.h</dt> </dl> |
 
 
 

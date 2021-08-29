@@ -1,23 +1,23 @@
 ---
-title: Información general sobre capas XML
-description: La API XML en WWSAPI se basa en los objetos lector XML y escritor XML, que permiten leer o escribir documentos XML en un modo de solo avance. El nivel XML proporciona a la aplicación acceso completo y control sobre el contenido de los mensajes.
+title: Introducción a la capa XML
+description: La API XML de WWSAPI se basa en los objetos Lector XML y Escritor XML, que permiten leer o escribir documentos XML solo de forma adelantada. La capa XML proporciona a la aplicación acceso total y control sobre el contenido de los mensajes.
 ms.assetid: 938ca257-fbb8-4569-b791-2148abb1a5a5
 keywords:
-- Información general de la capa XML servicios web para Windows
+- Servicios web de información general sobre capas XML para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9b5d062754adea7b48bd42a6a501ce17d0e332b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f8572a9b1d56935c6eb1a09455038b5837bca681a4e07d8ebd85bbb61610ce82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082979"
 ---
-# <a name="xml-layer-overview"></a>Información general sobre capas XML
+# <a name="xml-layer-overview"></a>Introducción a la capa XML
 
-La API XML en WWSAPI se basa en los objetos [lector](xml-reader.md) XML y [escritor XML](xml-writer.md) , que permiten leer o escribir documentos XML en un modo de solo avance. El nivel XML proporciona a la aplicación acceso completo y control sobre el contenido de los mensajes.
+La API XML de WWSAPI se basa en los objetos Lector [XML](xml-reader.md) y Escritor [XML,](xml-writer.md) que permiten leer o escribir documentos XML solo de forma adelantada. La capa XML proporciona a la aplicación acceso total y control sobre el contenido de los mensajes.
 
 ## <a name="encoding"></a>Encoding
 
@@ -27,29 +27,29 @@ La API XML admite documentos codificados como:
 -   Binary
 -   MTOM
 
-## <a name="storage"></a>Almacenamiento
+## <a name="storage"></a>Storage
 
 La API XML admite el procesamiento de documentos almacenados como:
 
 -   Búfer en memoria de bytes codificados
--   Un flujo
+-   Una secuencia
 -   Un [búfer XML](xml-buffer.md)
 
-Un [búfer XML](xml-buffer.md) es una representación en memoria estructurada de un documento XML. Se trata de una representación más eficaz que un documento codificado como bytes. Se puede navegar, leer o escribir un documento XML almacenado en un búfer XML.
+Un [búfer XML](xml-buffer.md) es una representación estructurada en memoria de un documento XML. Se trata de una representación más eficaz que un documento codificado como bytes. Un documento XML almacenado en un búfer XML se puede navegar, leer o escribir.
 
 ## <a name="io"></a>E/S
 
-La API XML nunca realizará la e/s a menos que se solicite específicamente. Además, cualquier e/s se puede iniciar de manera asincrónica. Vea [**WsFillReader**](/windows/desktop/api/WebServices/nf-webservices-wsfillreader) y [**WsFlushWriter**](/windows/desktop/api/WebServices/nf-webservices-wsflushwriter) para obtener información detallada sobre el procesamiento asincrónico con la API de XML.
+La API XML nunca realizará E/S a menos que se solicite específicamente. Además, cualquier E/S se puede iniciar de forma asincrónica. Consulte [**WsFillReader**](/windows/desktop/api/WebServices/nf-webservices-wsfillreader) y [**WsFlushWriter para**](/windows/desktop/api/WebServices/nf-webservices-wsflushwriter) obtener más información sobre el procesamiento asincrónico con la API XML.
 
 ## <a name="processing"></a>Processing
 
 La API XML tiene tres niveles distintos en los que se puede procesar el documento.
 
-Un documento se puede procesar en un [**nodo**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node) a la vez. Esto ofrece la administración más específica del contenido XML y proporciona una fidelidad completa de los datos del documento. En este nivel, se utilizarán las funciones [**WsReadNode**](/windows/desktop/api/WebServices/nf-webservices-wsreadnode) y [**WsWriteNode**](/windows/desktop/api/WebServices/nf-webservices-wswritenode) y [**WsCopyNode**](/windows/desktop/api/WebServices/nf-webservices-wscopynode) .
+Un documento se puede procesar en [**un nodo**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_node) a la vez. Esto ofrece el control más específico del contenido XML y proporciona una fidelidad completa de los datos del documento. En este nivel, se usarían [**las funciones WsReadNode**](/windows/desktop/api/WebServices/nf-webservices-wsreadnode) y [**WsWriteNode**](/windows/desktop/api/WebServices/nf-webservices-wswritenode) y [**WsCopyNode.**](/windows/desktop/api/WebServices/nf-webservices-wscopynode)
 
-El siguiente nivel de control son las API como [**WsReadStartElement**](/windows/desktop/api/WebServices/nf-webservices-wsreadstartelement), [**WsReadValue**](/windows/desktop/api/WebServices/nf-webservices-wsreadvalue) y [**WsReadEndElement**](/windows/desktop/api/WebServices/nf-webservices-wsreadendelement). Estas API proporcionan numerosos tipos de validación, omiten el espacio en blanco y los comentarios, y normalizan el texto y CDATA para presentar al consumidor una vista más sencilla del XML.
+El siguiente nivel de control son API como [**WsReadStartElement,**](/windows/desktop/api/WebServices/nf-webservices-wsreadstartelement) [**WsReadValue**](/windows/desktop/api/WebServices/nf-webservices-wsreadvalue) y [**WsReadEndElement.**](/windows/desktop/api/WebServices/nf-webservices-wsreadendelement) Estas API proporcionan numerosos tipos de validación, omiten espacios en blanco y comentarios, y normalizan el texto y CDATA para presentar al consumidor una vista más sencilla del xml.
 
-El nivel más alto de control consiste en usar la API de serialización. Estas API se impulsan de una asignación entre los tipos de datos de C y XML, y pueden leer o escribir una estructura compleja en memoria en XML y volver con una sola función como [**WsWriteElement**](/windows/desktop/api/WebServices/nf-webservices-wswriteelement) y [**WsReadElement**](/windows/desktop/api/WebServices/nf-webservices-wsreadelement).
+El nivel de control más alto es usar la API de serialización. Estas API están controladas por una asignación entre tipos de datos de C y XML, y pueden leer o escribir una estructura compleja en memoria en xml y de vuelta con una sola función como [**WsWriteElement**](/windows/desktop/api/WebServices/nf-webservices-wswriteelement) y [**WsReadElement.**](/windows/desktop/api/WebServices/nf-webservices-wsreadelement)
 
 Las API de canonización XML se pueden usar para generar una forma canónica de XML que, a su vez, se puede usar para generar firmas criptográficas sobre contenido XML.
 
@@ -78,7 +78,7 @@ WsFlushWriter               // Force any buffered data to be written
 WsFreeWriter                // Free the writer
 ```
 
-Para crear y usar un escritor para escribir en un [ \_ \_ búfer de WS XML](ws-xml-buffer.md):
+Para crear y usar un sistema de escritura para escribir en un búfer [XML de WS \_ \_ ](ws-xml-buffer.md):
 
 ``` syntax
 WsCreateXmlBuffer           // Create the buffer to write to
@@ -89,11 +89,11 @@ WsFreeWriter                // Free the writer
 // The buffer has the generated document
 ```
 
-En todos los casos, se puede incluir la propiedad de la propiedad del [**\_ \_ escritor \_ \_ XML de WS XML**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_property_id) para dar formato al XML.
+En todos los casos, se puede incluir la propiedad [**WS \_ XML WRITER PROPERTY \_ \_ \_ INDENT**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_property_id) para dar formato al xml.
 
 ## <a name="writing-elements"></a>Escritura de elementos
 
-Para escribir un elemento en un escritor:
+Para escribir un elemento en un sistema de escritura:
 
 ``` syntax
 WsWriteStartElement          // Write a start element
@@ -110,7 +110,7 @@ WsWriteXmlnsAttribute    // Write an explicit xmlns attribute
 WsWriteEndElement
 ```
 
-También se puede utilizar lo siguiente:
+También se puede usar lo siguiente:
 
 ``` syntax
 WsWriteArray                 // Write an array of primitive values as a series of repeated elements
@@ -118,7 +118,7 @@ WsWriteArray                 // Write an array of primitive values as a series o
 
 ## <a name="writing-content"></a>Escribir contenido
 
-Para escribir contenido en un elemento o atributo, se puede utilizar lo siguiente:
+Para escribir contenido en un elemento o atributo, se puede usar lo siguiente:
 
 ``` syntax
 WsWriteChars                 // Write unicode characters from memory
@@ -131,14 +131,14 @@ WsWriteText                  // Write an WS_XML_TEXT
 WsWriteQualifiedName         // Write a qualified name
 ```
 
-Se puede utilizar lo siguiente para escribir en un documento, pero no se puede usar cuando está dentro de un atributo.
+Se puede usar lo siguiente para escribir en un documento, pero no se puede usar cuando se encuentra dentro de un atributo.
 
 ``` syntax
 WsWriteNode                  // Write a single WS_XML_NODE
 WsCopyNode                   // Copy a single node, or an entire WS_XML_ELEMENT_NODE and children from an WS_XML_READER
 ```
 
-Puede usar lo siguiente para escribir una sección CDATA en un documento de texto:
+Se puede usar lo siguiente para escribir una sección CDATA en un documento de texto:
 
 ``` syntax
 WsWriteStartCData            // Start a CDATA section in a text encoding
@@ -152,7 +152,7 @@ WsWriteEndCData              // End a CDATA section in text encoding
 WsGetPrefixFromNamespace     // Find a prefix bound to a namespace
 ```
 
-## <a name="creating-a-reader"></a>Crear un lector
+## <a name="creating-a-reader"></a>Creación de un lector
 
 Para crear y usar un lector para leer desde un búfer en memoria:
 
@@ -164,7 +164,7 @@ WsSetInput                  // Set the encoding and input of the reader along wi
 WsFreeReader                // Free the reader
 ```
 
-Para crear y usar un lector para el lector de una secuencia:
+Para crear y usar un lector para el lector desde una secuencia:
 
 ``` syntax
 WsCreateReader              // Create an instance of a WS_XML_READER
@@ -175,7 +175,7 @@ WsFillReader                // Populate the reader with data from the underlying
 WsFreeReader                // Free the reader
 ```
 
-Para crear y usar un lector para leer desde un [ \_ \_ búfer de WS XML](ws-xml-buffer.md):
+Para crear y usar un lector para leer desde un [búfer XML de WS \_ \_ ](ws-xml-buffer.md):
 
 ``` syntax
 WsCreateXmlBuffer           // Create the buffer to write to
@@ -206,7 +206,7 @@ WsReadStartElement           // Advance the reader past the current element
 WsWriteEndElement            // Advance the reader past the corresponding end element
 ```
 
-También se puede utilizar lo siguiente:
+También se puede usar lo siguiente:
 
 ``` syntax
 WsReadArray                  // Read an array of primitive values as a series of repeated elements
@@ -214,7 +214,7 @@ WsReadArray                  // Read an array of primitive values as a series of
 
 ## <a name="reading-content"></a>Lectura de contenido
 
-Para leer el contenido de un elemento o atributo, se puede utilizar lo siguiente:
+Para leer contenido de un elemento o atributo, se puede usar lo siguiente:
 
 ``` syntax
 WsReadChars                 // Read characters to memory as unicode
@@ -224,15 +224,15 @@ WsReadValue                 // Read primitive values such as ints and BOOLs
 WsReadQualifiedName         // Read a qualified name
 ```
 
-Se puede utilizar lo siguiente para inspeccionar el nodo actual en el que está situado el lector:
+Se puede usar lo siguiente para inspeccionar el nodo actual en el que se encuentra el lector:
 
 ``` syntax
 WsGetReaderNode             // Get the current node
 ```
 
-## <a name="using-a-buffer"></a>Usar un búfer
+## <a name="using-a-buffer"></a>Uso de un búfer
 
-Al escribir en un [ \_ \_ búfer de WS XML](ws-xml-buffer.md) , se puede utilizar lo siguiente:
+Al escribir en un [búfer \_ XML \_ de WS,](ws-xml-buffer.md) se puede usar lo siguiente:
 
 ``` syntax
 WsGetWriterPosition          // Get the current position of the writer in the document
@@ -241,7 +241,7 @@ WsMoveWriter                 // Move relative to the current position in the doc
 WsRemoveNode                 // Delete an element or text from a document
 ```
 
-Al leer desde un [ \_ \_ búfer de WS XML](ws-xml-buffer.md) , se puede utilizar lo siguiente:
+Al leer desde un [búfer \_ XML \_ de WS,](ws-xml-buffer.md) se puede usar lo siguiente:
 
 ``` syntax
 WsGetReaderPosition          // Get the current position of the reader in the document
@@ -249,7 +249,7 @@ WsSetReaderPosition          // Set the current position of the reader in the do
 WsMoveReader                 // Move relative to the current position in the document
 ```
 
-Se puede utilizar lo siguiente para modificar un [ \_ \_ búfer de WS XML](ws-xml-buffer.md):
+Se puede usar lo siguiente para modificar un búfer [XML de WS \_ \_ ](ws-xml-buffer.md):
 
 ``` syntax
 
@@ -263,9 +263,9 @@ WsGetNamespaceFromPrefix     // Find a namespace bound to a prefix
 WsGetXmlAttribute            // Find an "xml:space" or "xml:lang" attribute in scope
 ```
 
- 
+ 
 
- 
+ 
 
 
 

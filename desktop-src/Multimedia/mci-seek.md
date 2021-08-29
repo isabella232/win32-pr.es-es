@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_SEEK (mmsystem. h)
-description: El \_ comando MCI Seek cambia la posición actual en el contenido lo más rápido posible.
+title: MCI_SEEK comando (Mmsystem.h)
+description: El comando \_ MCI SEEK cambia la posición actual del contenido lo antes posible.
 ms.assetid: 5ffab964-a28d-4dc2-ac04-da501cd34d24
 keywords:
-- Comando de MCI_SEEK de Windows multimedia
+- MCI_SEEK comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0e34f6fa823092968e74515a885e7a40db9f2d7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d901bf92e3495dde9a16e7499dcaae850b5e50eab2b4df1af99ca39f290cc981
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430485"
 ---
-# <a name="mci_seek-command"></a>Comando de búsqueda de MCI \_
+# <a name="mci_seek-command"></a>Comando \_ MCI SEEK
 
-El \_ comando MCI Seek cambia la posición actual en el contenido lo más rápido posible. La salida de vídeo y audio se deshabilitan durante la búsqueda. Una vez finalizada la búsqueda, el dispositivo se detiene. Los dispositivos de audio de CD, digital-video, MIDI Sequencer, VCR, Videodisc y de onda-audio reconocen este comando.
+El comando \_ MCI SEEK cambia la posición actual del contenido lo antes posible. La salida de audio y vídeo se deshabilita durante la búsqueda. Una vez completada la búsqueda, el dispositivo se detiene. Los dispositivos cd audio, digital-video, secuenciador MIDI, VCR, videodisc y audio de forma de onda reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,88 +50,88 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-MCI \_ Notify, espera de MCI \_ o, para dispositivos de vídeo digital y VCR, prueba de MCI \_ . Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpSeek"></span><span id="lpseek"></span><span id="LPSEEK"></span>*lpSeek*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms de búsqueda de MCI**](mci-seek-parms.md) . (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura con una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI SEEK \_ PARMS.**](mci-seek-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Si un tamaño de muestra de datos para un dispositivo es mayor que 1 byte (por ejemplo, con datos estéreo de audio de onda), este comando se desplaza al principio del ejemplo más próximo cuando una posición especificada no coincide con el inicio de un ejemplo.
+Si un tamaño de muestra de datos para un dispositivo es superior a 1 byte (por ejemplo, con datos estéreo de audio de forma de onda), este comando se mueve al principio de la muestra más cercana cuando una posición especificada no coincide con el inicio de una muestra.
 
-Las siguientes marcas adicionales se aplican a todos los dispositivos que admiten MCI \_ Seek:
+Las siguientes marcas adicionales se aplican a todos los dispositivos que admiten MCI \_ SEEK:
 
 <dl> <dt>
 
-<span id="MCI_SEEK_TO_END"></span><span id="mci_seek_to_end"></span>\_búsqueda \_ de MCI hasta el \_ final
+<span id="MCI_SEEK_TO_END"></span><span id="mci_seek_to_end"></span>MCI \_ SEEK \_ TO \_ END
 </dt> <dd>
 
-Busque el final del contenido.
+Busque hasta el final del contenido.
 
 </dd> <dt>
 
-<span id="MCI_SEEK_TO_START"></span><span id="mci_seek_to_start"></span>\_búsqueda \_ de MCI en \_ Start
+<span id="MCI_SEEK_TO_START"></span><span id="mci_seek_to_start"></span>MCI \_ SEEK \_ TO \_ START
 </dt> <dd>
 
-Busque el principio del contenido.
+Busque al principio del contenido.
 
 </dd> <dt>
 
-<span id="MCI_TO"></span><span id="mci_to"></span>MCI \_ a
+<span id="MCI_TO"></span><span id="mci_to"></span>MCI \_ TO
 </dt> <dd>
 
-Se incluye una posición en el miembro **dwTo** de la estructura identificada por *lpSeek*. Las unidades asignadas a los valores de posición se especifican con la \_ \_ \_ marca de formato de tiempo Set MCI del comando [MCI \_ set](mci-set.md) . No use esta marca con MCI \_ Seek \_ to \_ End o MCI \_ Seek \_ to \_ Start.
+Se incluye una posición en el **miembro dwTo** de la estructura identificada *por lpSeek*. Las unidades asignadas a los valores de posición se especifican con la marca MCI \_ SET TIME FORMAT del comando \_ \_ [MCI \_ SET.](mci-set.md) No use esta marca con MCI \_ SEEK TO END o \_ \_ MCI SEEK TO \_ \_ \_ START.
 
 </dd> </dl>
 
-Se usan las siguientes marcas adicionales con el tipo de dispositivo **VCR** :
+Las siguientes marcas adicionales se usan con el tipo **de dispositivo vcr:**
 
 <dl> <dt>
 
-<span id="MCI_VCR_SEEK_AT"></span><span id="mci_vcr_seek_at"></span>\_ \_ búsqueda de VCR \_ de MCI en
+<span id="MCI_VCR_SEEK_AT"></span><span id="mci_vcr_seek_at"></span>MCI \_ VCR \_ SEEK \_ AT
 </dt> <dd>
 
-El miembro **dwAt** de la estructura identificada por *lpSeek* contiene la hora a la que comienza el comando completo.
+El **miembro dwAt** de la estructura identificada por *lpSeek* contiene una hora en la que comienza todo el comando.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SEEK_MARK"></span><span id="mci_vcr_seek_mark"></span>\_marca de \_ búsqueda de VCR MCI \_
+<span id="MCI_VCR_SEEK_MARK"></span><span id="mci_vcr_seek_mark"></span>MCI \_ VCR \_ SEEK \_ MARK
 </dt> <dd>
 
-El miembro **dwMark** de la estructura identificada por *lpSeek* contiene la marca numerada que se va a buscar.
+El **miembro dwMark** de la estructura identificada por *lpSeek* contiene la marca numerada que se debe buscar.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SEEK_REVERSE"></span><span id="mci_vcr_seek_reverse"></span>búsqueda de VCR de MCI \_ \_ \_ inversa
+<span id="MCI_VCR_SEEK_REVERSE"></span><span id="mci_vcr_seek_reverse"></span>MCI \_ VCR \_ SEEK \_ REVERSE
 </dt> <dd>
 
-La dirección de búsqueda es inversa; solo se usa con la marca de \_ búsqueda de vídeo de MCI \_ \_ .
+La dirección de búsqueda es inversa; solo se usa con la marca \_ MCI VCR \_ SEEK \_ MARK.
 
 </dd> </dl>
 
-En el caso de los dispositivos VCR, el parámetro *lpSeek* apunta a una estructura [**parms de búsqueda de VCR de MCI \_ \_ \_**](mci-vcr-seek-parms.md) .
+En el caso de los dispositivos VCR, el *parámetro lpSeek* apunta a una estructura [**\_ MCI VCR \_ SEEK \_ PARMS.**](mci-vcr-seek-parms.md)
 
-La siguiente marca adicional se usa con el tipo de dispositivo de **videodisco** :
+La siguiente marca adicional se usa con el **tipo de dispositivo videodisc:**
 
 <dl> <dt>
 
-<span id="MCI_VD_SEEK_REVERSE"></span><span id="mci_vd_seek_reverse"></span>búsqueda de MCI \_ Vd \_ \_ inverso
+<span id="MCI_VD_SEEK_REVERSE"></span><span id="mci_vd_seek_reverse"></span>MCI \_ VD \_ SEEK \_ REVERSE
 </dt> <dd>
 
-La dirección de búsqueda es inversa.
+La dirección de la búsqueda es inversa.
 
 </dd> </dl>
 
@@ -143,7 +143,7 @@ La dirección de búsqueda es inversa.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -151,10 +151,10 @@ La dirección de búsqueda es inversa.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

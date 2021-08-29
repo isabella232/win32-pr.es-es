@@ -1,16 +1,16 @@
 ---
-title: Propiedad ConnectToAdministerServer de IMsRdpClientAdvancedSettings6
+title: Propiedad IMsRdpClientAdvancedSettings6 ConnectToAdminadminserver
 description: Recupera o especifica si el control ActiveX debe intentar conectarse al servidor con fines administrativos.
 ms.assetid: b98f9b9b-a3e7-4a3c-a7e3-e388ce53c5c9
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ConnectToAdministerServer
-- Propiedad ConnectToAdministerServer Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad ConnectToAdministerServer
-- Propiedad ConnectToAdministerServer Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad ConnectToAdministerServer
-- Propiedad ConnectToAdministerServer Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad ConnectToAdministerServer
+- Propiedad ConnectToAdminadminserver Servicios de Escritorio remoto
+- Propiedad ConnectToAdminadminserver Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad ConnectToAdminadminserver
+- Propiedad ConnectToAdminadminserver Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad ConnectToAdminadminserver
+- Propiedad ConnectToAdminadminserver Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad ConnectToAdminadminserver
 topic_type:
 - apiref
 api_name:
@@ -29,20 +29,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d9cad8d50e2e0a4c1ec18fbd33733dc394101a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a1df4327a263f5bc77fa482e3f84bb971cd5fb047a7c2fed7c1092efdd4d06f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771675"
 ---
-# <a name="imsrdpclientadvancedsettings6connecttoadministerserver-property"></a>IMsRdpClientAdvancedSettings6:: ConnectToAdministerServer (propiedad)
+# <a name="imsrdpclientadvancedsettings6connecttoadministerserver-property"></a>IMsRdpClientAdvancedSettings6::ConnectToAdminadminserver, propiedad
 
 Recupera o especifica si el control ActiveX debe intentar conectarse al servidor con fines administrativos.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -59,24 +59,24 @@ HRESULT get_ConnectToAdministerServer(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**Variante \_ TRUE** para hacer que el control ActiveX intente conectarse al servidor con fines administrativos; de lo contrario, **Variant \_ false**. El valor predeterminado es **Variant \_ false**.
+**VARIANT \_ TRUE** para hacer que el control ActiveX intente conectarse al servidor con fines administrativos; en caso **contrario, VARIANT \_ FALSE**. El valor predeterminado es **VARIANT \_ FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar **ConnectToAdministerServer**, debe ejecutar el cliente conexión A escritorio remoto (RDC) versión 6,1 o posterior.
+Para usar **ConnectToAdminadminserver,** debe ejecutar la versión 6.1 del cliente Conexión a Escritorio remoto (RDC) o posterior.
 
 > [!Note]  
-> La versión de RDC 6,1 (6.0.6001) admite Protocolo de escritorio remoto 6,1. RDC 6,1 se incluye con Windows Server 2008 y Windows Vista con Service Pack 1 (SP1).
+> RDC versión 6.1 (6.0.6001) admite Protocolo de escritorio remoto 6.1. RDC 6.1 se incluye con Windows Server 2008 y Windows Vista con Service Pack 1 (SP1).
 
  
 
-**ConnectToAdministerServer** se conecta a una sesión que se usa con fines administrativos en el servidor remoto. Si el servicio de rol host de sesión de Escritorio remoto (host de sesión de escritorio remoto) está instalado en el servidor remoto, **ConnectToAdministerServer** hace lo siguiente:
+**ConnectToAdminadmin** se conecta a una sesión que se usa con fines administrativos en el servidor remoto. Si el Escritorio remoto de rol host de sesión de Escritorio remoto está instalado en el servidor remoto, **ConnectToAdminadminserver** hace lo siguiente:
 
--   Deshabilita la concesión de licencias de acceso de cliente de Servicios de Escritorio remoto para la sesión.
+-   Deshabilita Servicios de Escritorio remoto licencias de acceso de cliente para la sesión.
 -   Deshabilita el redireccionamiento de zona horaria para la sesión.
--   Deshabilita el redireccionamiento de Conexión a Escritorio remoto Broker (agente de conexión a escritorio remoto) de la sesión.
--   Deshabilita la redirección de dispositivos Plug and Play para la sesión.
--   Cambia el tema de la sesión remota a Windows clásico para la sesión.
+-   Deshabilita la Conexión a Escritorio remoto broker (Agente de conexión a Escritorio remoto) para la sesión.
+-   Deshabilita Plug and Play redireccionamiento de dispositivos para la sesión.
+-   Cambia el tema de sesión remota a Windows clásico para la sesión.
 
 ## <a name="requirements"></a>Requisitos
 

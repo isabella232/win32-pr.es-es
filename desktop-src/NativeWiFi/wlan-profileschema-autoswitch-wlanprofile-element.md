@@ -1,7 +1,7 @@
 ---
-description: Determina el comportamiento de itinerancia de una red conectada automáticamente cuando una red más preferida está dentro del alcance.
+description: Determina el comportamiento de itinerancia de una red conectada automáticamente cuando hay una red más preferida en el intervalo.
 ms.assetid: 095dc797-1249-43aa-a8b7-5fa6eaee2a74
-title: AutoSwitch (WLANProfile) (elemento)
+title: Elemento autoSwitch (WLANProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,28 +12,28 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 7ae05b18f58927e05c952edbbfc1b6a6190cec19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a656667a8c32d4b21793cfc605654f1c80c31ce1d69fd274a7be81078f6cc2c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799935"
 ---
-# <a name="autoswitch-wlanprofile-element"></a>AutoSwitch (WLANProfile) (elemento)
+# <a name="autoswitch-wlanprofile-element"></a>Elemento autoSwitch (WLANProfile)
 
-El elemento AutoSwitch (WLANProfile) determina el comportamiento de itinerancia de una red conectada automáticamente cuando una red más preferida está dentro del alcance. . Este elemento es opcional.
+El elemento autoSwitch (WLANProfile) determina el comportamiento de itinerancia de una red conectada automáticamente cuando hay una red preferida en el intervalo. . Este elemento es opcional.
 
-Si AutoSwitch es "true" y [**connectionMode**](wlan-profileschema-connectionmode-wlanprofile-element.md) se establece en "auto", se debe intentar una conexión a una red preferida cada vez que una red más favorita entra en el intervalo. Una red más preferida es la que se ordena más arriba en la lista de redes inalámbricas preferidas. Este intento de conexión se produce cuando se conecta a otra red.
+Si autoSwitch es "true" y [**connectionMode**](wlan-profileschema-connectionmode-wlanprofile-element.md) se establece en "auto", se debe intentar una conexión a una red más preferida siempre que una red más preferida entre en el intervalo. Una red preferida es aquella que se ordena más arriba en la lista de redes inalámbricas preferidas. Este intento de conexión se produce cuando se conecta a otra red.
 
 Si [**connectionMode**](wlan-profileschema-connectionmode-wlanprofile-element.md) se establece en "auto", este valor puede ser "true" o "false".
 
 Si [**connectionMode**](wlan-profileschema-connectionmode-wlanprofile-element.md) se establece en "manual", este valor debe establecerse en "false". Este elemento no tiene ningún efecto en una red conectada manualmente.
 
-Un valor de AutoSwitch establecido en "true" da como resultado una mayor frecuencia de detección periódica de nuevas redes. Esto puede producir una mayor contaminación de la frecuencia de radio de estos exámenes periódicos y el mayor consumo de energía que usa el adaptador de red inalámbrica.
+Un valor de autoSwitch establecido en "true" da como resultado una mayor frecuencia de examen periódico de nuevas redes. Esto puede provocar una mayor frecuencia de radiofrecuencia de estos exámenes periódicos y un mayor consumo de energía que usa el adaptador de red inalámbrica.
 
-**Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. Estos cambios están diseñados para reducir la contaminación de la radiofrecuencia, el consumo de energía y la interrupción del tráfico en tiempo real a través de redes inalámbricas. La configuración predeterminada de **AutoSwitch** cuando este elemento no está establecida en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado. La configuración predeterminada era "true" en Windows Server 2008 y Windows Vista. Se recomienda que el valor del elemento **AutoSwitch** que usa una aplicación en un perfil de LAN inalámbrica se establezca en "false" para reducir la frecuencia de detección periódica de nuevas redes, a menos que sea absolutamente necesario que una aplicación establezca este valor en "true".
+**Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado:** Los cambios se implementan en Windows 7 y Windows Server 2008 R2 con el servicio LAN inalámbrica instalado para optimizar el rendimiento de las redes inalámbricas. Estos cambios están diseñados para reducir la frecuencia de radiofrecuencia, el consumo de energía y la interrupción del tráfico en tiempo real a través de redes inalámbricas. La configuración predeterminada de **autoSwitch** cuando este elemento no está establecido en un perfil de LAN inalámbrica ha cambiado. La configuración predeterminada se cambia a "false" en Windows 7 y Windows Server 2008 R2 con el servicio laN inalámbrica instalado. El valor predeterminado era "true" en Windows Server 2008 y Windows Vista. Se recomienda establecer el valor del elemento **autoSwitch** usado por una aplicación en un perfil de LAN inalámbrica en "false" para reducir la frecuencia de examen periódico de nuevas redes, a menos que sea absolutamente necesario que una aplicación establezca este valor en "true".
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="autoSwitch"
@@ -41,11 +41,11 @@ Un valor de AutoSwitch establecido en "true" da como resultado una mayor frecuen
  />
 ```
 
-El elemento **AutoSwitch** se define mediante el elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+El **elemento autoSwitch** se define mediante el [**elemento WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **AutoSwitch** , consulte [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan el **elemento autoSwitch,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,8 +53,8 @@ Para ver los perfiles de ejemplo que usan el elemento **AutoSwitch** , consulte 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

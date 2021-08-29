@@ -1,40 +1,40 @@
 ---
-title: Cómo agregar elementos de Tree-View
-description: Un elemento se agrega a un control de vista de árbol mediante el envío del mensaje de la INSERTITEM de TVM \_ al control.
+title: Cómo agregar elementos Tree-View datos
+description: Para agregar un elemento a un control de vista de árbol, envíe el mensaje INSERTITEM de TVM \_ al control.
 ms.assetid: CD6376F4-8B1A-489D-8538-6C1620E98F76
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75a7da0846b57f422de83984b197df0770286882
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 2b769e1b854651363a597e7e13cd27dfc49d582a76032458f593eb5b197d7c01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104420331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922075"
 ---
-# <a name="how-to-add-tree-view-items"></a>Cómo agregar elementos de Tree-View
+# <a name="how-to-add-tree-view-items"></a>Cómo agregar elementos Tree-View datos
 
-Un elemento se agrega a un control de vista de árbol mediante el envío del mensaje de la [**\_ INSERTITEM de TVM**](tvm-insertitem.md) al control. El mensaje incluye la dirección de una estructura [**TVINSERTSTRUCT**](/windows/win32/api/commctrl/ns-commctrl-tvinsertstructa) , especificando el elemento primario, el elemento después del cual se inserta el nuevo elemento y una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que define los atributos del elemento. Los atributos incluyen la etiqueta del elemento, sus imágenes seleccionadas y no seleccionadas y un valor definido por la aplicación de 32 bits.
+Para agregar un elemento a un control de vista de árbol, envíe el [**mensaje \_ INSERTITEM**](tvm-insertitem.md) de TVM al control. El mensaje incluye la dirección de una estructura [**TVINSERTSTRUCT,**](/windows/win32/api/commctrl/ns-commctrl-tvinsertstructa) especificando el elemento primario, el elemento después del cual se inserta el nuevo elemento y una estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) que define los atributos del elemento. Los atributos incluyen la etiqueta del elemento, sus imágenes seleccionadas y no seleccionadas, y un valor definido por la aplicación de 32 bits.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="add-items-to-the-tree-view"></a>Agregar elementos al Tree-View
 
 En el ejemplo de esta sección se muestra cómo crear una tabla de contenido basada en la información de encabezado del documento que se proporciona en una matriz definida por la aplicación. Cada elemento de matriz consta de una cadena de encabezado y un entero que indica el nivel de encabezado. El ejemplo admite tres niveles de encabezado (1, 2 y 3).
 
-En el ejemplo se incluyen dos funciones. La primera función extrae cada encabezado y el nivel de encabezado adjunto y, a continuación, los pasa a la segunda función.
+En el ejemplo se incluyen dos funciones. La primera función extrae cada encabezado y el nivel de encabezado correspondiente y, a continuación, los pasa a la segunda función.
 
-La segunda función agrega un elemento a un control de vista de árbol. Usa el texto del encabezado como etiqueta del elemento y usa el nivel de encabezado para determinar el elemento primario del nuevo elemento. Se agrega un encabezado de nivel uno a la raíz del control de vista de árbol, se agrega un encabezado de nivel dos como elemento secundario del nivel anterior un elemento, y así sucesivamente. La función asigna una imagen a un elemento en función de si tiene elementos secundarios. Si un elemento tiene elementos secundarios, obtiene una imagen que representa una carpeta cerrada. De lo contrario, obtiene una imagen que representa un documento. Un elemento usa la misma imagen tanto para los Estados seleccionados como para los no seleccionados.
+La segunda función agrega un elemento a un control de vista de árbol. Usa el texto del encabezado como etiqueta del elemento y el nivel de encabezado para determinar el elemento primario del nuevo elemento. Se agrega un encabezado de nivel uno a la raíz del control de vista de árbol, se agrega un encabezado de nivel dos como elemento secundario del nivel uno anterior, y así sucesivamente. La función asigna una imagen a un elemento en función de si tiene elementos secundarios. Si un elemento tiene elementos secundarios, obtiene una imagen que representa una carpeta cerrada. De lo contrario, obtiene una imagen que representa un documento. Un elemento usa la misma imagen para los estados seleccionados y no seleccionados.
 
 
 ```C++
@@ -146,15 +146,15 @@ BOOL InitTreeViewItems(HWND hwndTV)
 
 <dl> <dt>
 
-[Usar controles Tree-View](using-treeview.md)
+[Uso de Tree-View controles](using-treeview.md)
 </dt> <dt>
 
-[En el ejemplo CustDTv se muestra el dibujo personalizado en un control Tree-View](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
+[El ejemplo CustDTv muestra el dibujo personalizado en un control Tree-View datos](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

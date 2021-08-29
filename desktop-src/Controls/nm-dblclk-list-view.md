@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_DBLCLK (vista de lista) (commctrl. h)
-description: Lo envía un control de vista de lista cuando el usuario hace doble clic en un elemento con el botón primario del mouse. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_DBLCLK (vista de lista) código de notificación (Commctrl.h)
+description: Enviado por un control de vista de lista cuando el usuario hace doble clic en un elemento con el botón izquierdo del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 28455109-177e-4932-88c5-500a3a91c13a
 keywords:
-- NM_DBLCLK (vista de lista) controles de Windows de código de notificación
+- NM_DBLCLK (vista de lista) de código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: add6af24b4272631be7c2be387a7ffda899469b8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c3590b417954f67c454b6cece979bdd6eac4706fa5dfc97b7dda30be6dde183c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919705"
 ---
-# <a name="nm_dblclk-list-view-notification-code"></a>NM \_ DBLCLK (vista de lista) código de notificación
+# <a name="nm_dblclk-list-view-notification-code"></a>Código de notificación de NM \_ DBLCLK (vista de lista)
 
-Lo envía un control de vista de lista cuando el usuario hace doble clic en un elemento con el botón primario del mouse. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de vista de lista cuando el usuario hace doble clic en un elemento con el botón izquierdo del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ NM_DBLCLK
 *lParam* 
 </dt> <dd>
 
-[Versión 4,71](common-control-versions.md). Puntero a una estructura [**NMITEMACTIVATE**](/windows/win32/api/commctrl/ns-commctrl-nmitemactivate) que contiene información adicional sobre esta notificación. Los miembros **iItem**, **iSubItem** y **ptAction** de esta estructura contienen información sobre el elemento.
+[Versión 4.71.](common-control-versions.md) Puntero a una [**estructura NMITEMACTIVATE**](/windows/win32/api/commctrl/ns-commctrl-nmitemactivate) que contiene información adicional sobre esta notificación. Los **miembros iItem**, **iSubItem** y **ptAction** de esta estructura contienen información sobre el elemento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para esta notificación.
+No se usa el valor devuelto para esta notificación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El miembro **iItem** de *lParam* solo es válido si se hace clic en el icono o la etiqueta de la primera columna. Para determinar qué elemento se selecciona cuando tiene lugar un clic en otro lugar de una fila, envíe un mensaje de [**\_ SUBITEMHITTEST LVM**](lvm-subitemhittest.md) .
+El **miembro iItem** de *lParam* solo es válido si se ha hecho clic en el icono o la etiqueta de primera columna. Para determinar qué elemento se selecciona cuando se hace clic en otra parte de una fila, envíe un mensaje [**LVM \_ SUBITEMHITTEST.**](lvm-subitemhittest.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ El miembro **iItem** de *lParam* solo es válido si se hace clic en el icono o l
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

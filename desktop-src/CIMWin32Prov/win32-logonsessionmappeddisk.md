@@ -1,8 +1,8 @@
 ---
-description: La \_ clase LogonSessionMappedDisk de Win32 representa una asociación entre una sesión de inicio de sesión y los discos lógicos asignados definidos dentro de la sesión.
+description: La clase LogonSessionMappedDisk de Win32 representa una asociación entre una sesión de inicio de sesión y los discos lógicos asignados \_ definidos dentro de la sesión.
 ms.assetid: 013ae55e-6dd1-42fb-bcba-74d6afa1b905
 ms.tgt_platform: multiple
-title: Win32_LogonSessionMappedDisk (clase)
+title: Win32_LogonSessionMappedDisk clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - cimwin32.dll
-ms.openlocfilehash: 203c9dd783dece52fa19905d51ece3bc26584dc6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fc5b0b536c7c5152c65b315d5d9dd61f47b3d01f8991f33792a0eb9fc695bdaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119972995"
 ---
-# <a name="win32_logonsessionmappeddisk-class"></a>\_Clase Win32 LogonSessionMappedDisk
+# <a name="win32_logonsessionmappeddisk-class"></a>Clase LogonSessionMappedDisk de Win32 \_
 
-La \_ clase LogonSessionMappedDisk de Win32 representa una asociación entre una sesión de inicio de sesión y los discos lógicos asignados definidos dentro de la sesión.
+La clase LogonSessionMappedDisk de Win32 representa una asociación entre una sesión de inicio de sesión y los discos lógicos asignados \_ definidos dentro de la sesión.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -61,14 +61,14 @@ Tipo de datos: **Win32 \_ LogonSession**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-La propiedad antecedente hace referencia a una sesión de inicio de sesión.
+La propiedad Antecedente hace referencia a una sesión de inicio de sesión.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Win32 \_ MappedLogicalDisk**
@@ -77,10 +77,10 @@ Tipo de datos: **Win32 \_ MappedLogicalDisk**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-La propiedad dependent hace referencia a un disco lógico asignado definido dentro de la sesión a la que hace referencia la propiedad antecedente.
+La propiedad Dependent hace referencia a un disco lógico asignado definido dentro de la sesión a la que hace referencia la propiedad Antecedent.
 
 </dd> </dl>
 
@@ -92,8 +92,8 @@ La propiedad dependent hace referencia a un disco lógico asignado definido dent
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CimWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CimWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Cimwin32.dll</dt> </dl> |
 
 
@@ -102,7 +102,7 @@ La propiedad dependent hace referencia a un disco lógico asignado definido dent
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

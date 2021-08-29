@@ -1,7 +1,7 @@
 ---
 description: Obtiene el espacio libre en disco.
 ms.assetid: 4b7f4938-9918-4625-b28d-faf22de56976
-title: _GetDiskFreeSpaceEx función)
+title: _GetDiskFreeSpaceEx función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Msmdun80.dll
-ms.openlocfilehash: da4a8eefabf03f6330ac9c1f135482f27dd8aa18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e27dee6aaf1ad2a830882b1a1bef63ee0f10b4fb9810d936e6396881f857afa2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053195"
 ---
-# <a name="_getdiskfreespaceex-function"></a>\_GetDiskFreeSpaceEx (función)
+# <a name="_getdiskfreespaceex-function"></a>\_Función GetDiskFreeSpaceEx
 
-\[Esta función es un contenedor de la función **GetDiskFreeSpaceEx** . Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben llamar a **GetDiskFreeSpaceEx** directamente.\]
+\[Esta función es un contenedor sobre la **función GetDiskFreeSpaceEx.** Esta función puede modificarse o no estar disponible en el futuro. Las aplicaciones deben **llamar directamente a GetDiskFreeSpaceEx.**\]
 
-Obtiene el espacio libre en disco. Vea [**GetDiskFreeSpaceEx**](/windows/win32/api/fileapi/nf-fileapi-getdiskfreespaceexa).
+Obtiene el espacio libre en disco. Consulte [**GetDiskFreeSpaceEx.**](/windows/win32/api/fileapi/nf-fileapi-getdiskfreespaceexa)
 
 ## <a name="syntax"></a>Sintaxis
 

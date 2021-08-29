@@ -1,36 +1,36 @@
 ---
 title: Metadatos de servicio
-description: El host de servicio WWSAPI admite WS-MetadataExchange para sus extremos.
+description: El host de servicio WWSAPI admite WS-MetadataExchange para sus puntos de conexión.
 ms.assetid: 5a6feb34-7fff-4000-b3be-63112b22905a
 keywords:
-- Metadatos de servicio nativos-Web-Services
+- Servicios web nativos de metadatos de servicio
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ebf15614ac9e89a4e08fdd19102492d0121e65d
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: ca22301071b3de8ba386917eefc39029749aef8a60dc8a6dcea7cc31ff0276f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104488567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054525"
 ---
 # <a name="service-metadata"></a>Metadatos de servicio
 
-El host de servicio WWSAPI admite WS-MetadataExchange para sus extremos. Habilite este intercambio de metadatos en el host de servicio con los pasos siguientes:
+El host de servicio WWSAPI admite WS-MetadataExchange para sus puntos de conexión. Habilite este intercambio de metadatos en el host de servicio con los pasos siguientes:
 
--   Especifique los documentos de metadatos en la propiedad de [**\_ \_ metadatos del servicio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata) en el [ \_ \_ host del servicio WS](ws-service-host.md).
--   Especifique el nombre del servicio en la propiedad de [**\_ \_ metadatos del servicio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata) en el [ \_ \_ host del servicio WS](ws-service-host.md).
--   Especifique el puerto para los puntos de conexión individuales mediante la propiedad de [**\_ \_ \_ \_ metadatos de la propiedad de punto de conexión de servicio WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id) en el [**\_ \_ extremo del servicio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
--   Habilite una o varias estructuras de [**\_ \_ extremos de servicio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) para atender las solicitudes de WS-MetadataExchange.
--   Opcionalmente, especifique el sufijo de la **\_ \_ \_ \_ \_ \_ dirección URL de \_ intercambio de metadatos de la propiedad de punto de conexión de WS Service** en la enumeración identificador de la [**\_ \_ \_ propiedad \_ de punto de conexión de servicio WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id) para atender solicitudes Ws-MetadataExchange en una dirección
+-   Especifique los documentos de metadatos [**en la propiedad WS SERVICE \_ \_ METADATA**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata) en [el \_ \_ host de WS SERVICE](ws-service-host.md).
+-   Especifique el nombre del servicio en la [**propiedad WS \_ SERVICE \_ METADATA**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata) en el host de servicio de [WS \_ \_](ws-service-host.md).
+-   Especifique el puerto para los puntos de conexión individuales mediante la propiedad [**WS \_ SERVICE ENDPOINT PROPERTY \_ \_ \_ METADATA**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id) en [**WS SERVICE \_ \_ ENDPOINT**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
+-   Habilite una o varias estructuras de punto de conexión de servicio de [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) para dar servicio a WS-MetadataExchange solicitudes.
+-   Opcionalmente, especifique **WS \_ SERVICE ENDPOINT PROPERTY METADATA EXCHANGE URL \_ \_ \_ \_ \_ \_ SUFFIX** en la enumeración [**WS SERVICE ENDPOINT PROPERTY \_ \_ \_ \_ ID**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id) para atender Ws-MetadataExchange solicitudes en una dirección específica.
 
 
-Especificación de documentos de metadatos/nombre de servicio en el host de servicio
+Especificación de documentos de metadatos o nombre de servicio en el host de servicio
 
-El primer paso es especificar los documentos de metadatos en el host de servicio. Para ello, recopile los documentos individuales como una matriz de las \_ cadenas XML de WS \_ \* . Estas cadenas pueden ser esquemas XML, WSDL o WS-Policy documento. Esto se especifica mediante la [**propiedad \_ \_ \_ metadatos de la propiedad de servicio WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) .
+El primer paso es especificar los documentos de metadatos en el host de servicio. Para ello, resalte los documentos individuales como una matriz de cadenas \_ XML de WS. \_ \* Estas cadenas pueden ser esquema XML, WSDL o WS-Policy documento. Esto se especifica a través de la [**propiedad WS \_ SERVICE PROPERTY \_ \_ METADATA.**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id)
 
-Opcionalmente, una aplicación también puede especificar el nombre del servicio y el espacio de nombres como parte de los [**\_ \_ metadatos del servicio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata). Si el documento de metadatos no especifica el elemento de servicio para el nombre de servicio determinado, el modelo de servicio generará un elemento de servicio con los puertos WSDL correspondientes para el servicio.
+Opcionalmente, una aplicación también puede especificar el nombre del servicio y el espacio de nombres como parte de [**WS \_ SERVICE \_ METADATA**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata). Si el documento de metadatos no especifica el elemento de servicio para el nombre de servicio especificado, el modelo de servicio generará un elemento de servicio con los puertos WSDL correspondientes para el servicio.
 
 ``` syntax
 WS_SERVICE_METADATA_DOCUMENT document = {0};
@@ -53,19 +53,19 @@ serviceProperties[0].value =  &serviceMetadata;
 serviceProperties[0].ValueSize = sizeof(serviceMetadata);
 ```
 
-Tenga en cuenta que no se realizará ninguna comprobación de los documentos de metadatos individuales en los documentos. Es responsabilidad de la aplicación validar el contenido de los documentos y asegurarse de que todas las rutas de acceso de las importaciones se especifican de forma relativa.
+Tenga en cuenta que no se realizará ninguna comprobación de los documentos de metadatos individuales en los documentos. Es responsabilidad de la aplicación validar el contenido de los documentos y asegurarse de que todas las rutas de acceso de importación están relativamente especificadas.
 
-El espacio de nombres especificado se utiliza para buscar el documento en el que el host de servicio agregará el elemento de servicio.
+El espacio de nombres especificado se usa para buscar el documento en el que el host de servicio agregará el elemento de servicio.
 
 Adición del elemento de servicio al documento WSDL
 
-El host de servicio proporciona el recurso para que la aplicación agregue un elemento de servicio en su nombre si aún no se ha especificado ninguno. Para habilitar este comportamiento, una aplicación debe especificar los campos serivceName y servicens en la estructura de [**\_ \_ metadatos del servicio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata) . Si serviceName y servicens son **null** , no se agrega ningún elemento de servicio al documento WSDL. Ambos se usan para identificar el documento en el que se va a agregar el serviceElement.
+El host de servicio proporciona la facilidad para que la aplicación agregue un elemento de servicio en su nombre si aún no se ha especificado uno. Para habilitar este comportamiento, una aplicación debe especificar los campos serivceName y serviceNs en la estructura [**WS \_ SERVICE \_ METADATA.**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata) Si serviceName y serviceNs son **NULL,** no se agrega ningún elemento de servicio al documento WSDL. Ambos se usan para identificar el documento en el que se va a agregar serviceElement.
 
-Si no se especifica la propiedad de [**\_ \_ \_ metadatos de la propiedad de servicio WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) , no se producirá ningún metadato en el host de servicio.
+Si [**no se especifica la propiedad \_ WS SERVICE PROPERTY \_ \_ METADATA,**](/windows/desktop/api/WebServices/ne-webservices-ws_service_property_id) no se llevará a cabo ningún exsalto de metadatos en el host de servicio.
 
-Especificar el puerto en el extremo del \_ servicio \_ WS
+Especificación del puerto en el punto de conexión de servicio de WS \_ \_
 
-Para que [**un \_ punto de \_ conexión de servicio WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) esté disponible como un puerto dentro del elemento de servicio en el documento WSDL, la aplicación debe especificar en él la propiedad de [**\_ \_ \_ \_ metadatos de la propiedad de punto de conexión de servicio WS**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id) .
+Para que un punto de conexión de servicio de [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint) esté disponible como puerto dentro del elemento de servicio en el documento WSDL, la aplicación debe especificar en él la propiedad [**WS \_ SERVICE ENDPOINT \_ PROPERTY \_ \_ METADATA.**](/windows/desktop/api/WebServices/ne-webservices-ws_service_endpoint_property_id)
 
 ``` syntax
 WS_SERVICE_ENDPOINT_METADATA endpointPort = {0}
@@ -79,11 +79,11 @@ serviceProperties[0].value =  &endpointPort;
 serviceProperties[0].valueSize = sizeof(endpointPort);
 ```
 
-Se supone que la referencia al nombre de enlace y espacio de nombres existe en los documentos especificados en el host de servicio como parte de los metadatos de la propiedad de servicio de WS \_ \_ \_ . El tiempo de ejecución no lo comprueba en nombre de la aplicación.
+Se supone que la referencia al nombre de enlace y al espacio de nombres existe en los documentos especificados en el host de servicio como parte de WS \_ SERVICE \_ PROPERTY \_ METADATA. El tiempo de ejecución no lo comprueba en nombre de la aplicación.
 
-Habilitar el servicio de WS-MetadataExchange en el punto de conexión de \_ servicio WS \_
+Habilitación WS-MetadataExchange servicio en el punto de conexión de servicio de WS \_ \_
 
-Para atender las solicitudes de WS-MetadataExchange, el host del servicio debe tener al menos un punto de conexión habilitado para atender las solicitudes de WS-MetadataExchange. Esto se hace estableciendo la versión adecuada para WS-MetadataExchange en el [**extremo del \_ servicio \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
+Para atender las solicitudes WS-MetadataExchange servicio, el host de servicio debe tener al menos un punto de conexión habilitado para atender WS-MetadataExchange solicitudes. Para ello, se establece la versión adecuada para WS-MetadataExchange en el punto de [**conexión de servicio de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
 
 ``` syntax
 WS_METADATA_EXCHANGE_TYPE metadataExchangeType = WS_METADATA_EXCHANGE_TYPE_MEX;
@@ -93,9 +93,9 @@ serviceProperties[0].value =  &metadataExchangeType;
 serviceProperties[0].ValueSize = sizeof(metadataExchangeType);
 ```
 
-Habilitar el servicio GET de HTTP en el punto de conexión de \_ servicio WS \_
+Habilitación del servicio HTTP GET en WS \_ SERVICE \_ ENDPOINT
 
-Para serviceHTTP solicitudes GET, el host del servicio debe tener al menos un punto de conexión habilitado para atender las solicitudes de WS-MetadataExchange. Esto se hace estableciendo la versión adecuada para WS-MetadataExchange en el [**extremo del \_ servicio \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
+Para atender las solicitudes GET HTTP, el host de servicio debe tener al menos un punto de conexión habilitado para atender WS-MetadataExchange solicitudes. Para ello, se establece la versión adecuada para WS-MetadataExchange en el punto de [**conexión de servicio de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint).
 
 ``` syntax
 WS_METADATA_EXCHANGE_TYPE metadataExchangeType = WS_METADATA_EXCHANGE_TYPE_HTTP_GET;
@@ -105,9 +105,9 @@ serviceProperties[0].value =  &metadataExchangeType;
 serviceProperties[0].ValueSize = sizeof(metadataExchangeType);
 ```
 
-Especificar el sufijo de dirección URL para solicitudes de Ws-MetadataExchange
+Especificación del sufijo de dirección URL Ws-MetadataExchange solicitudes
 
-Opcionalmente, una aplicación puede habilitar solo aceptar solicitudes de WS-MetadataExchange en una ruta de acceso específica. Esto se hace especificando un sufijo para el punto de conexión de servicio de WS determinado \_ \_ . Este sufijo se concatena tal cual con la dirección URL real del punto de conexión de servicio de WS \_ \_ . La cadena concatenada se utiliza como la dirección URL correspondiente al encabezado ' to ' recibido.
+Opcionalmente, una aplicación solo puede habilitar la aceptación de solicitudes de WS-MetadataExchange en una ruta de acceso específica. Para ello, especifique un sufijo para el punto de conexión de servicio de WS \_ \_ determinado. Este sufijo se concatena tal como está en la dirección URL real del punto de conexión de servicio \_ de WS. \_ La cadena concatenada se usa como dirección URL correspondiente al encabezado "to" recibido.
 
 ``` syntax
 const WS_STRING suffix = WS_STRING_VALUE(L&quot;mex&quot;);
@@ -117,11 +117,11 @@ serviceProperties[0].value =  &suffix;
 serviceProperties[0].valueSize = sizeof(suffix);
 ```
 
-Los siguientes elementos de la API se relacionan con el servicio basan.
+Los siguientes elementos de API se relacionan con la metada del servicio.
 
 | Enumeración                                                       | Descripción                                                                     |
 |-------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [**\_tipo de intercambio de metadatos de WS \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_metadata_exchange_type) | Habilita o deshabilita WS-MetadataExchange y el servicio GET de HTTP en el punto de conexión. |
+| [**WS \_ METADATA \_ EXCHANGE \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_metadata_exchange_type) | Habilita o deshabilita el WS-MetadataExchange y HTTP GET en el punto de conexión. |
 
 
 
@@ -131,9 +131,9 @@ Los siguientes elementos de la API se relacionan con el servicio basan.
 
 | Estructura                                                               | Descripción                                                           |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**metadatos de \_ punto de conexión de servicio WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_metadata) | Representa el elemento Port para el extremo.                         |
-| [**metadatos del \_ servicio WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata)                    | Especifica la matriz de documentos de metadatos de servicio.                       |
-| [**\_documento de \_ metadatos del servicio WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata_document) | Especifica los documentos individuales que componen los metadatos del servicio. |
+| [**METADATOS DE \_ PUNTO DE CONEXIÓN DE SERVICIO \_ DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_endpoint_metadata) | Representa el elemento port para el punto de conexión.                         |
+| [**METADATOS DEL SERVICIO WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata)                    | Especifica la matriz de documentos de metadatos de servicio.                       |
+| [**DOCUMENTO DE METADATOS \_ \_ DEL SERVICIO WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_service_metadata_document) | Especifica los documentos individuales que son los metadatos del servicio. |
 
 
 

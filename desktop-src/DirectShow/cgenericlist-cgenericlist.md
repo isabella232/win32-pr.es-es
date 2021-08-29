@@ -1,7 +1,7 @@
 ---
-description: Obtenga información sobre el método de constructor para CGenericList. CGenericList (Wxlist. h). Este método usa los parámetros ' pName ' y ' iItems '.
+description: Obtenga información sobre el método de constructor para CGenericList.CGenericList (Wxlist.h). Este método usa los parámetros "pName" e "iItems".
 ms.assetid: 2258ecd6-7594-4ff8-961b-9e5e1ae9ff82
-title: Constructor CGenericList. CGenericList (Wxlist. h)
+title: Constructor CGenericList.CGenericList (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 77a3dd932872b9d96c754ac5b1db184dcf99cf03
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 0885ecc91b35e9845703b7169f45fd6f7aa3d55aa10f57fc7ddc68ef7d42129e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104362839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813995"
 ---
-# <a name="cgenericlistcgenericlist-constructor-wxlisth---pname-iitems-parameters"></a>Constructor CGenericList. CGenericList (Wxlist. h): parámetros pName, iItems
+# <a name="cgenericlistcgenericlist-constructor-wxlisth---pname-iitems-parameters"></a>Constructor CGenericList.CGenericList (Wxlist.h): pName, parámetros iItems
 
-Método de constructor.
+Método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,40 +55,40 @@ Puntero al nombre de la lista.
 *iItems* 
 </dt> <dd>
 
-Tamaño de la memoria caché de nodo.
+Tamaño de la caché del nodo.
 
 </dd> <dt>
 
-*Sin* 
+*Bloquear* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *bAlert* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Por motivos de eficacia, la `CGenericList` clase mantiene una memoria caché de nodos de lista. Si conoce aproximadamente el número de elementos que contendrá la lista, use esta versión del constructor.
+Para mejorar la eficacia, `CGenericList` la clase mantiene una caché de nodos de lista. Si sabe aproximadamente cuántos elementos contendrán la lista, use esta versión del constructor.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Wxlist. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Wxlist.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (clase)**](cgenericlist.md)
 </dt> </dl>
 
  

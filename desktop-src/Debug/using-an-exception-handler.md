@@ -1,23 +1,23 @@
 ---
-description: En los siguientes ejemplos se muestra el uso de un controlador de excepciones.
+description: En los ejemplos siguientes se muestra el uso de un controlador de excepciones.
 ms.assetid: c3b4e696-9f45-4616-ac6b-07ba29750bb2
 title: Usar un controlador de excepciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0dbe7ec23ddd5372cecfe85ae8348092d91cfff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 309f65122c333efa8974087117faa0120e1ac6223d458698dc7f00fe398967e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002425"
 ---
 # <a name="using-an-exception-handler"></a>Usar un controlador de excepciones
 
-En los siguientes ejemplos se muestra el uso de un controlador de excepciones.
+En los ejemplos siguientes se muestra el uso de un controlador de excepciones.
 
 ## <a name="example-1"></a>Ejemplo 1
 
-En el fragmento de código siguiente se usa el control de excepciones estructurado para comprobar si una operación de división en enteros de 2 32 bits producirá un error de división por cero. Si esto ocurre, la función devuelve **false**; de lo contrario, devuelve **true**.
+El fragmento de código siguiente usa el control de excepciones estructurado para comprobar si una operación de división en dos enteros de 32 bits producirá un error de división por cero. Si esto ocurre, la función devuelve **FALSE;** de lo contrario, devuelve **TRUE.**
 
 
 ```C++
@@ -40,11 +40,11 @@ BOOL SafeDiv(INT32 dividend, INT32 divisor, INT32 *pResult)
 
 ## <a name="example-2"></a>Ejemplo 2
 
-La función de ejemplo siguiente llama a la función [**DebugBreak**](/windows/win32/api/debugapi/nf-debugapi-debugbreak) y usa el control de excepciones estructurado para comprobar si hay una excepción de punto de interrupción. Si se produce una, la función devuelve **false**; de lo contrario, devuelve **true**.
+La siguiente función de ejemplo llama a la [**función DebugBreak**](/windows/win32/api/debugapi/nf-debugapi-debugbreak) y usa el control de excepciones estructurado para comprobar si hay una excepción de punto de interrupción. Si se produce una, la función devuelve **FALSE;** de lo contrario, devuelve **TRUE.**
 
-La expresión de filtro en el ejemplo usa la función [**GetExceptionCode**](getexceptioncode.md) para comprobar el tipo de excepción antes de ejecutar el controlador. Esto permite que el sistema siga buscando un controlador adecuado si se produce algún otro tipo de excepción.
+La expresión de filtro del ejemplo usa la [**función GetExceptionCode**](getexceptioncode.md) para comprobar el tipo de excepción antes de ejecutar el controlador. Esto permite al sistema continuar con la búsqueda de un controlador adecuado si se produce algún otro tipo de excepción.
 
-Además, el uso de la instrucción **Return** en el bloque **\_ \_ try** de un controlador de excepciones difiere del uso de **Return** en el bloque **\_ \_ try** de un controlador de finalización, lo que produce una terminación anómala del bloque **\_ \_ try** . Se trata de un uso válido de la instrucción return en un controlador de excepciones.
+Además, el uso de la instrucción **return** en el bloque **\_ \_ try** de un controlador de excepciones difiere del uso de **return** en el bloque **\_ \_ try** de un controlador de terminación, lo que provoca una terminación anómala del **\_ \_ bloque try.** Se trata de un uso válido de la instrucción return en un controlador de excepciones.
 
 
 ```C++
@@ -67,11 +67,11 @@ BOOL CheckForDebugger()
 
 
 
-Devuelva solo \_ \_ el controlador de ejecución de excepciones desde un filtro de excepción cuando se espera el tipo de excepción y se conoce la dirección de error. Debe permitir que el controlador de excepciones predeterminado procese tipos de excepción inesperados y direcciones erróneas.
+Solo devuelve EXCEPTION EXECUTE HANDLER desde un filtro de excepción cuando se espera el tipo de excepción \_ y se conoce la dirección de \_ error. Debe permitir que el controlador de excepciones predeterminado procese tipos de excepción inesperados y direcciones con errores.
 
 ## <a name="example-3"></a>Ejemplo 3
 
-En el ejemplo siguiente se muestra la interacción de los controladores anidados. La función [**RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) produce una excepción en el cuerpo protegido de un controlador de terminación que se encuentra dentro del cuerpo protegido de un controlador de excepciones. La excepción hace que el sistema evalúe la función FilterFunction, cuyo valor devuelto a su vez hace que se invoque el controlador de excepciones. Sin embargo, antes de que se ejecute el bloque de controlador de excepciones, el bloque **\_ \_ Finally** del controlador de terminación se ejecuta porque el flujo de control ha dejado el bloque **\_ \_ try** del controlador de finalización.
+En el ejemplo siguiente se muestra la interacción de controladores anidados. La [**función RaiseException**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception) produce una excepción en el cuerpo guardado de un controlador de terminación que está dentro del cuerpo guardado de un controlador de excepciones. La excepción hace que el sistema evalúe la función FilterFunction, cuyo valor devuelto a su vez hace que se invoque el controlador de excepciones. Sin embargo, antes de ejecutar el bloque de controlador de excepciones, se ejecuta el bloque **\_ \_ finally** del controlador de terminación porque el flujo de control ha dejado el bloque **\_ \_ try** del controlador de terminación.
 
 
 ```C++

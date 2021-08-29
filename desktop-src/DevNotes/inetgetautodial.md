@@ -1,7 +1,7 @@
 ---
-description: La función InetGetAutodial devuelve la configuración de marcado automático del registro.
+description: La función InetGetAutodial devuelve la configuración de autodial del Registro.
 ms.assetid: e36761da-c050-4844-ad94-efdc77702f6f
-title: InetGetAutodial función)
+title: Función InetGetAutodial
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Inetcfg.dll
-ms.openlocfilehash: 15267cd00940f0386c8a5d9c0c54b070f2cff509
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 066a00428993d2a1358740cf69d31094fc18b33192c9accf17ce4550b8473edc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001865"
 ---
-# <a name="inetgetautodial-function"></a>InetGetAutodial función)
+# <a name="inetgetautodial-function"></a>Función InetGetAutodial
 
-\[Esta función no se admite y puede modificarse o no estar disponible en versiones futuras de Windows. \]
+\[Esta función no es compatible y puede modificarse o no estar disponible en versiones futuras de Windows. \]
 
-La función **InetGetAutodial** devuelve la configuración de marcado automático del registro.
+La **función InetGetAutodial** devuelve la configuración de autodial del Registro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,24 +43,24 @@ HRESULT InetGetAutodial(
 
 <dl> <dt>
 
-*lpfEnable* \[ enuncia\]
+*lpfEnable* \[ out\]
 </dt> <dd>
 
-Indica si el marcado automático está habilitado. Un valor de **true** cuando se devuelve indica que el marcado automático está habilitado.
+Indica si autodial está habilitado. Un valor true **tras** la devolución indica que autodial está habilitado.
 
 </dd> <dt>
 
-*lpszEntryName* \[ enuncia\]
+*lpszEntryName* \[ out\]
 </dt> <dd>
 
-En la devolución, contiene el nombre de la entrada de la libreta de teléfonos que se establece para el marcado automático.
+En la devolución, contiene el nombre de la entrada de la libreta de teléfonos que se establece para autodial.
 
 </dd> <dt>
 
-*cbEntryNameSize* \[ de\]
+*cbEntryNameSize* \[ En\]
 </dt> <dd>
 
-Tamaño del búfer asignado por el llamador para el nombre de la entrada de la libreta de teléfonos.
+Tamaño del búfer asignado por el autor de la llamada para el nombre de la entrada de la libreta de teléfonos.
 
 </dd> </dl>
 
@@ -72,18 +72,18 @@ Esta función puede devolver uno de estos valores.
 
 | Código devuelto                                                                                                | Descripción                                                                                                                                               |
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**ERROR \_ correcto**</dt> </dl>              | La llamada se realizó correctamente.<br/>                                                                                                                       |
-| <dl> <dt>**ERROR de \_ argumentos no válidos \_**</dt> </dl>       | *lpfEnable* o *lpszEntryName* contiene un puntero **nulo** o el valor de *cbEntryNameSize* es cero.<br/>                                         |
-| <dl> <dt>**ERROR \_ de \_ memoria insuficiente \_**</dt> </dl>  | Memoria insuficiente para asignar búferes internos.<br/>                                                                                    |
-| <dl> <dt>**ERROR \_ de \_ búfer insuficiente**</dt> </dl> | *cbEntryNameSize* no indica que el búfer señalado por *lpszEntryName* es lo suficientemente grande como para recibir el nombre de la entrada de la libreta de teléfonos.<br/> |
+| <dl> <dt>**ERROR \_ CORRECTO**</dt> </dl>              | La llamada se realizó correctamente.<br/>                                                                                                                       |
+| <dl> <dt>**ARGUMENTOS \_ \_ DE ERROR NO VÁLIDOS**</dt> </dl>       | *lpfEnable* o *lpszEntryName contiene* un puntero **NULL,** o el valor de *cbEntryNameSize* es cero.<br/>                                         |
+| <dl> <dt>**ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**</dt> </dl>  | No había memoria suficiente para asignar búferes internos.<br/>                                                                                    |
+| <dl> <dt>**BÚFER INSUFICIENTE \_ \_ DE ERROR**</dt> </dl> | *cbEntryNameSize* no indica que el búfer al que apunta *lpszEntryName* sea lo suficientemente grande como para recibir el nombre de la entrada de la libreta de teléfonos.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

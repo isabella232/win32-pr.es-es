@@ -2,7 +2,7 @@
 description: Cambia el nombre de un equipo.
 ms.assetid: 9d338ebe-caf0-42c4-995f-fd750e5664df
 ms.tgt_platform: multiple
-title: Cambiar el nombre del método de la clase Win32_ComputerSystem
+title: Método Rename de la Win32_ComputerSystem clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2ca60021c921e47de3c7afd5b8ee0bb2ea5e6d12
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5f2a503cfac8e6cef8b32ee4e84cb8fa78f930d4e1126fcd0af488f3908c540f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077455"
 ---
-# <a name="rename-method-of-the-win32_computersystem-class"></a>Cambiar el nombre del método de la \_ clase Win32 ComputerSystem
+# <a name="rename-method-of-the-win32_computersystem-class"></a>Método Rename de la clase ComputerSystem de Win32 \_
 
-El método **Rename** cambia el nombre de un equipo.
+El **método Rename** cambia el nombre de un equipo.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,52 +44,52 @@ uint32 Rename(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
-Nombre del nuevo equipo. El valor de este parámetro no puede incluir caracteres de control, espacios iniciales o finales ni ninguno de los siguientes caracteres:/ \\ \\ \[ \] .
+Nuevo nombre de equipo. El valor de este parámetro no puede incluir caracteres de control, espacios iniciales o finales, ni ninguno de los caracteres siguientes: / \\ \\ \[ \] .
 
 </dd> <dt>
 
-*Contraseña* \[ de de\]
+*Contraseña* \[ En\]
 </dt> <dd>
 
-Contraseña que se va a usar al conectarse al controlador de dominio si el parámetro *username* especifica un nombre de cuenta. De lo contrario, este parámetro debe ser **null**. Vea la sección Comentarios de este tema para obtener más información sobre los parámetros de *nombre de usuario* y *contraseña* .
+Contraseña que se usará al conectarse al controlador de dominio si el *parámetro UserName* especifica un nombre de cuenta. De lo contrario, este parámetro debe ser **NULL.** Vea la sección Comentarios de este tema para obtener más información sobre los *parámetros Password* *y UserName.*
 
 </dd> <dt>
 
-*Nombre de usuario* \[ de\]
+*UserName* \[ En\]
 </dt> <dd>
 
-Cadena que especifica el nombre de la cuenta que se va a usar al conectarse al controlador de dominio. La cadena debe terminar en **null** y debe especificar un nombre NetBIOS de dominio y una cuenta de usuario, por ejemplo, "domainname \\ username" o " someone@domainname.com ", que es un nombre principal de usuario (UPN). Si el parámetro de **nombre de usuario** es **null**, WMI utiliza el contexto del llamador. Vea la sección Comentarios de este tema para obtener más información sobre los parámetros de *nombre de usuario* y *contraseña* .
+Cadena que especifica el nombre de cuenta que se usará al conectarse al controlador de dominio. La cadena debe terminar en **null** y debe especificar un nombre NetBIOS de dominio y una cuenta de usuario, por ejemplo, "NOMBREDENOMBREDE DOMAIN" o ", que es un nombre principal de usuario \\ someone@domainname.com (UPN). Si el **parámetro UserName** es **NULL,** WMI usa el contexto del autor de la llamada. Vea la sección Comentarios de este tema para obtener más información sobre los *parámetros Password* *y UserName.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 (cero) si se realiza correctamente. Un valor devuelto distinto de cero indica un error. Si se realiza correctamente, es necesario reiniciar. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un 0 (cero) si se realiza correctamente. Un valor devuelto distinto de cero indica un error. Si se realiza correctamente, se requiere un reinicio. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
 **Correcto** (0)
 </dt> <dt>
 
-**Otro** (1 4294967295)
+**Otros** (1 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede usar el método **Rename** para cambiar el nombre de un equipo si es miembro del grupo local de administradores. Sin embargo, no puede usar el método de forma remota para los equipos de dominio.
+Puede usar el método **Rename** para cambiar el nombre de un equipo si es miembro del grupo de administradores local. Sin embargo, no puede usar el método de forma remota para los equipos de dominio.
 
-Si se especifican los parámetros de *nombre de usuario* y *contraseña* , la conexión a WMI debe usar el nivel de autenticación de la **\_ \_ \_ \_ \_ privacidad de nivel de autenticación de RPC C** (**wbemAuthenticationLevelPktPrivacy** para script y Visual Basic (VB)).
+Si se especifican los parámetros *Password* y *UserName,* la conexión a WMI debe usar el nivel de autenticación RPC **C \_ \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY** **(wbemAuthenticationLevelPktPrivacy** para script y Visual Basic (VB)).
 
-Para conectarse a un equipo remoto y especificar las credenciales, use la conexión del objeto localizador, que es IWbemLocator para C++, y SWbemLocator para script y VB. No use la conexión de moniker.
+Para conectarse a un equipo remoto y especificar credenciales, use la conexión de objeto de localizador, que es IWbemLocator para C++, y SWbemLocator para script y VB. No use la conexión de moniker.
 
-Para conectarse a un equipo local, no se puede especificar una contraseña o una entidad de autenticación, como Kerberos. Solo puede especificar la contraseña y la autoridad en conexiones a equipos remotos.
+Para conectarse a un equipo local, no puede especificar una contraseña o una entidad de autenticación, como Kerberos. Solo puede especificar la contraseña y la entidad en las conexiones a equipos remotos.
 
-Si el nivel de autenticación es demasiado bajo cuando se especifica una *contraseña* y un *nombre de usuario* , WMI devuelve el error de **\_ \_ \_ \_ conexión cifrada de WBEM E** para C/C++ y **wbemErrEncryptedConnectionRequired** para script y VB.
+Si el nivel de autenticación es demasiado bajo cuando se especifican Password y *UserName,* WMI devuelve el error **WBEM \_ E ENCRYPTED CONNECTION \_ \_ \_ REQUIRED** para C/C++, **y wbemErrEncryptedConnectionRequired** para script y VB. 
 
-Para obtener más información, vea [**SWbemLocator \_ ConnectServer,**](/windows/desktop/WmiSdk/swbemlocator-connectserver)[**IWbemLocator:: ConnectServer**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemlocator-connectserver)y [construir una cadena de moniker](/windows/desktop/WmiSdk/constructing-a-moniker-string).
+Para obtener más información, [**vea SWbemLocator \_ ConnectServer,**](/windows/desktop/WmiSdk/swbemlocator-connectserver)[**IWbemLocator::ConnectServer**](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemlocator-connectserver)y [Constructing a Moniker String](/windows/desktop/WmiSdk/constructing-a-moniker-string).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -120,7 +120,7 @@ Next
 
 
 
-El siguiente ejemplo de código de C++ cambia el nombre de un equipo.
+El siguiente ejemplo de código de C++ cambia el nombre de un sistema informático.
 
 
 ```C++
@@ -409,12 +409,12 @@ return 0; // Program successfully completed.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -423,10 +423,10 @@ return 0; // Program successfully completed.
 
 <dl> <dt>
 
-[**ComputerSystem de Win32 \_**](win32-computersystem.md)
+[**Equipo \_ Win32System**](win32-computersystem.md)
 </dt> <dt>
 
-[Tareas de WMI: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> </dl>
 
  

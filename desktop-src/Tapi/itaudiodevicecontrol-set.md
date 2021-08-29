@@ -1,21 +1,21 @@
 ---
 description: El método Set establece el valor de una propiedad de dispositivo de audio determinada.
 ms.assetid: 701cdfd4-9241-408c-8497-3983018e7da0
-title: 'ITAudioDeviceControl:: set (método) (Ipmsp. h)'
+title: ItAudioDeviceControl::Set (Método, Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25aa3a6013ce79bdcea5345dcc00f52c96c8a8fb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e6fc99d5f6084ff2d5d2226847a395a21c3dcaeb6156d769c768768f10d186c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775045"
 ---
-# <a name="itaudiodevicecontrolset-method"></a>ITAudioDeviceControl:: set (método)
+# <a name="itaudiodevicecontrolset-method"></a>ITAudioDeviceControl::Set (método)
 
-\[ Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **set** establece el valor de una [**propiedad de dispositivo de audio**](audiodeviceproperty.md)determinada.
+El **método Set** establece el valor de una propiedad de dispositivo de audio [**determinada.**](audiodeviceproperty.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,24 +32,24 @@ HRESULT get_Error(
 
 <dl> <dt>
 
-*Propiedad* \[ de\]
+*Propiedad* \[ En\]
 </dt> <dd>
 
-Miembro de la enumeración [**AudioDeviceProperty**](audiodeviceproperty.md) .
+Miembro de la [**enumeración AudioDeviceProperty.**](audiodeviceproperty.md)
 
 </dd> <dt>
 
-valor *l* \[ de\]
+*lValue* \[ En\]
 </dt> <dd>
 
 Valor deseado para la propiedad.
 
 </dd> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Valor de la enumeración [**TAPIControlFlags**](tapicontrolflags.md) que indica cómo se controlará el valor de la *propiedad* .
+Valor de la [**enumeración TAPIControlFlags**](tapicontrolflags.md) que indica cómo *se* va a controlar el valor property.
 
 </dd> </dl>
 
@@ -61,8 +61,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 
 
 
@@ -74,9 +74,9 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                         |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                         |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

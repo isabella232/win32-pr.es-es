@@ -1,7 +1,7 @@
 ---
 description: La propiedad Count es una propiedad de solo lectura que devuelve el número de elementos del objeto StringList.
 ms.assetid: aa85b8d9-344d-4f31-aa86-9e6497c07751
-title: StringList. Count (propiedad)
+title: Propiedad StringList.Count
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b880b6d6c7c995c2aff1a40e7e4fcc6908eb7c58
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ec60ee57edb7aea7ce65fe07892a57e6fe93706372ade8dc3745b5a2ee3ef42d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627315"
 ---
-# <a name="stringlistcount-property"></a>StringList. Count (propiedad)
+# <a name="stringlistcount-property"></a>Propiedad StringList.Count
 
-La propiedad **Count** es una propiedad de solo lectura que devuelve el número de elementos del [**objeto StringList**](stringlist-object.md).
+La **propiedad Count** es una propiedad de solo lectura que devuelve el número de elementos del objeto [**StringList**](stringlist-object.md).
 
 Esta propiedad es de solo lectura.
 
@@ -37,9 +37,9 @@ propVal = StringList.Count
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cliente debe comprobar que el objeto [**StringList**](stringlist-object.md) existe y no está vacío antes de hacer referencia a la propiedad **Count** .
+El cliente debe comprobar que el [**objeto StringList**](stringlist-object.md) existe y no está vacío antes de hacer referencia a la **propiedad Count.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ El cliente debe comprobar que el objeto [**StringList**](stringlist-object.md) e
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IStringList se define como 000C1095-0000-0000-C000-000000000046<br/>                                                                                                                                                                          |
+| IID<br/>     | IID IStringList se define como \_ 000C1095-0000-0000-C000-00000000046<br/>                                                                                                                                                                          |
 
 
 
