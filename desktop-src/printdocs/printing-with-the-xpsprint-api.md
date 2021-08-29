@@ -1,36 +1,36 @@
 ---
-description: En este tema se describe cómo usar la API de impresión XPS para imprimir desde una aplicación de Windows.
+description: En este tema se describe cómo usar XPS Print API para imprimir desde una Windows aplicación.
 ms.assetid: 3d7ab169-412c-434f-a865-4da4af370eaf
-title: 'Cómo: imprimir con la API de impresión XPS'
+title: 'Cómo: Imprimir con XPS Print API'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b4be5f083fb31eccaf2dc4b555435bd15a7fb45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c4261ab9e30f3413ca61c99590056f386d92f89e0ba5de9d1627f91a9a21062
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824815"
 ---
-# <a name="how-to-print-with-the-xps-print-api"></a>Cómo: imprimir con la API de impresión XPS
+# <a name="how-to-print-with-the-xps-print-api"></a>Cómo: Imprimir con XPS Print API
 
-En este tema se describe cómo usar la [API de impresión XPS](xpsprint-api.md) para imprimir desde una aplicación de Windows.
+En este tema se describe cómo usar [XPS Print API](xpsprint-api.md) para imprimir desde una Windows aplicación.
 
-La [API de impresión XPS](xpsprint-api.md) permite a las aplicaciones Windows nativas imprimir documentos XPS. Una aplicación puede crear un documento XPS mediante la [API de documento XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)). El tema de ayuda [tareas comunes de programación de documentos XPS](/previous-versions/windows/desktop/dd316968(v=vs.85)) describe cómo hacerlo. Una vez creado un documento XPS, la aplicación puede usar la API de impresión XPS para imprimirlo.
+XPS [Print API permite](xpsprint-api.md) que las aplicaciones Windows nativas impriman documentos XPS. Una aplicación puede crear un documento XPS mediante [la API de documento XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)). En [el tema de ayuda Tareas comunes de programación](/previous-versions/windows/desktop/dd316968(v=vs.85)) de documentos XPS se describe cómo hacerlo. Una vez creado un documento XPS, la aplicación puede usar xpS Print API para imprimirlo.
 
-El uso de la [API de impresión XPS](xpsprint-api.md) para imprimir un documento desde una aplicación conlleva los pasos siguientes.
+El uso [de XPS Print API](xpsprint-api.md) para imprimir un documento desde una aplicación implica los pasos siguientes.
 
--   [Inicializar interfaz COM](#initialize-com-interface)
+-   [Inicialización de la interfaz COM](#initialize-com-interface)
 -   [Crear un evento de finalización](#create-a-completion-event)
 -   [Iniciar un trabajo de impresión XPS](#start-an-xps-print-job)
--   [Creación de una interfaz IXpsOMPackageWriter](#create-an-ixpsompackagewriter-interface)
+-   [Crear una interfaz IXpsOMPackageWriter](#create-an-ixpsompackagewriter-interface)
 -   [Cierre la interfaz IXpsOMPackageWriter](#close-the-ixpsompackagewriter-interface)
--   [Cerrar la secuencia de trabajo de impresión](#close-the-print-job-stream)
+-   [Cierre de la secuencia de trabajos de impresión](#close-the-print-job-stream)
 -   [Esperar al evento de finalización](#wait-for-the-completion-event)
 -   [Liberación de recursos](#release-resources)
 
-La [API de impresión XPS](xpsprint-api.md) requiere un documento XPS para imprimir. En el ejemplo siguiente, el documento XPS se crea cuando se envía a la impresora mediante la API de impresión XPS. También es posible crear un documento XPS sin enviarlo a una impresora mediante la [API de documento XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)) y mantenerlo como un OM XPS o guardando el OM XPS como un documento XPS. Para obtener más información sobre el uso de un OM XPS, consulte la API de documentos XPS.
+XpS [Print API requiere](xpsprint-api.md) que se imprima un documento XPS. En el ejemplo siguiente, el documento XPS se crea a medida que se envía a la impresora mediante xpS Print API. También es posible crear un documento XPS sin enviarlo a una impresora mediante la API de documentos [XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)) y mantenerlo como XPS OM o guardando xpS OM como un documento XPS. Para más información sobre el uso de XPS OM, consulte XPS Document API.
 
-### <a name="initialize-com-interface"></a>Inicializar interfaz COM
+### <a name="initialize-com-interface"></a>Inicialización de la interfaz COM
 
 Inicialice la interfaz COM, si la aplicación aún no lo ha hecho.
 
@@ -50,7 +50,7 @@ Inicialice la interfaz COM, si la aplicación aún no lo ha hecho.
 
 ### <a name="create-a-completion-event"></a>Crear un evento de finalización
 
-Crear un evento de finalización, que la [API de impresión XPS](xpsprint-api.md) usa para notificar a la aplicación cuando el administrador de trabajos de impresión ha recibido todo el documento de la aplicación. La API de impresión XPS también admite un evento de progreso para que una aplicación pueda conocer la actividad de la cola de impresión.
+Cree un evento de finalización, que la API de impresión [XPS](xpsprint-api.md) usa para notificar a la aplicación cuando el colador de impresión ha recibido todo el documento de la aplicación. XpS Print API también admite un evento de progreso para que una aplicación pueda conocer otra actividad de cola.
 
 
 ```C++
@@ -68,7 +68,7 @@ Crear un evento de finalización, que la [API de impresión XPS](xpsprint-api.md
 
 ### <a name="start-an-xps-print-job"></a>Iniciar un trabajo de impresión XPS
 
-Inicie un trabajo de impresión XPS llamando a [**StartXpsPrintJob**](/windows/desktop/api/XpsPrint/nf-xpsprint-startxpsprintjob). **StartXpsPrintJob** devuelve un flujo en el que la aplicación enviará el documento que se va a imprimir.
+Inicie un trabajo de impresión XPS mediante una [**llamada a StartXpsPrintJob**](/windows/desktop/api/XpsPrint/nf-xpsprint-startxpsprintjob). **StartXpsPrintJob** devuelve una secuencia en la que la aplicación enviará el documento que se va a imprimir.
 
 
 ```C++
@@ -93,9 +93,9 @@ Inicie un trabajo de impresión XPS llamando a [**StartXpsPrintJob**](/windows/d
 
 
 
-### <a name="create-an-ixpsompackagewriter-interface"></a>Creación de una interfaz IXpsOMPackageWriter
+### <a name="create-an-ixpsompackagewriter-interface"></a>Crear una interfaz IXpsOMPackageWriter
 
-Cree una interfaz [**IXpsOMPackageWriter**](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter) llamando a [**IXpsOMObjectFactory:: CreatePackageWriterOnStream**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagewriteronstream) en la secuencia devuelta por [**StartXpsPrintJob**](/windows/desktop/api/XpsPrint/nf-xpsprint-startxpsprintjob).
+Cree una [**interfaz IXpsOMPackageWriter**](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackagewriter) llamando a [**IXpsOMObjectFactory::CreatePackageWriterOnStream**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagewriteronstream) en la secuencia devuelta por [**StartXpsPrintJob**](/windows/desktop/api/XpsPrint/nf-xpsprint-startxpsprintjob).
 
 
 ```C++
@@ -169,11 +169,11 @@ Cree una interfaz [**IXpsOMPackageWriter**](/windows/win32/api/xpsobjectmodel/nn
 
 
 
-Para cada documento de este trabajo de impresión, inicie un nuevo documento y, a continuación, agregue páginas a ese documento.
+Para cada documento de este trabajo de impresión, inicie un nuevo documento y agregue páginas a ese documento.
 
 ### <a name="start-a-new-document"></a>Iniciar un nuevo documento
 
-Inicie un nuevo documento en el escritor de paquetes mediante una llamada a [**IXpsOMPackageWriter:: StartNewDocument**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument). Si un documento está abierto cuando se llama a este método, se cierra y se abre un nuevo documento.
+Inicie un nuevo documento en el escritor de paquetes mediante una llamada [**a IXpsOMPackageWriter::StartNewDocument**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument). Si un documento está abierto cuando se llama a este método, se cierra y se abre un nuevo documento.
 
 
 ```C++
@@ -233,10 +233,10 @@ Inicie un nuevo documento en el escritor de paquetes mediante una llamada a [**I
 
 ### <a name="add-a-page"></a>Agregar una página
 
-Llame a [**IXpsOMPackageWriter:: AddPage**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addpage) para escribir cada una de las páginas del documento de la aplicación en el nuevo documento del escritor de paquetes.
+Llame [**a IXpsOMPackageWriter::AddPage**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addpage) para escribir cada una de las páginas del documento de la aplicación en el nuevo documento del escritor de paquetes.
 
 > [!Note]  
-> Se supone que la aplicación ha creado la página antes de este paso. Para obtener más información sobre cómo crear páginas de documento y agregar contenido a ellas, vea las [tareas comunes de programación de documentos XPS](/previous-versions/windows/desktop/dd316968(v=vs.85)).
+> Se supone que la aplicación ha creado la página antes de este paso. Para obtener más información sobre cómo crear páginas de documento y agregarles contenido, vea [Tareas comunes de programación de documentos XPS](/previous-versions/windows/desktop/dd316968(v=vs.85)).
 
  
 
@@ -266,7 +266,7 @@ Llame a [**IXpsOMPackageWriter:: AddPage**](/windows/win32/api/xpsobjectmodel/nf
 
 ### <a name="close-the-ixpsompackagewriter-interface"></a>Cierre la interfaz IXpsOMPackageWriter
 
-Una vez escritos todos los documentos para este trabajo de impresión, llame a [**IXpsOMPackageWriter:: Close**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-close) para cerrar el paquete.
+Una vez que se hayan escrito todos los documentos para este trabajo de impresión, llame a [**IXpsOMPackageWriter::Close**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-close) para cerrar el paquete.
 
 
 ```C++
@@ -284,9 +284,9 @@ Una vez escritos todos los documentos para este trabajo de impresión, llame a [
 
 
 
-### <a name="close-the-print-job-stream"></a>Cerrar la secuencia de trabajo de impresión
+### <a name="close-the-print-job-stream"></a>Cierre de la secuencia de trabajos de impresión
 
-Cierre la secuencia de trabajo de impresión mediante una llamada a [**Close**](/windows/desktop/api/XpsPrint/nf-xpsprint-ixpsprintjobstream-close), que indica al administrador de trabajos de impresión que la aplicación ha enviado todo el trabajo de impresión.
+Cierre la secuencia del trabajo de impresión mediante una llamada a [**Cerrar**](/windows/desktop/api/XpsPrint/nf-xpsprint-ixpsprintjobstream-close), que indica al cola de impresión que la aplicación ha enviado todo el trabajo de impresión.
 
 
 ```C++
@@ -316,7 +316,7 @@ Cierre la secuencia de trabajo de impresión mediante una llamada a [**Close**](
 
 ### <a name="wait-for-the-completion-event"></a>Esperar al evento de finalización
 
-Espere a que se complete el evento de finalización del trabajo de impresión.
+Espere el evento de finalización del trabajo de impresión.
 
 
 ```C++
@@ -338,7 +338,7 @@ Espere a que se complete el evento de finalización del trabajo de impresión.
 
 
 
-Una vez señalado el evento de finalización, llame a [**GetJobStatus**](/windows/desktop/api/XpsPrint/nf-xpsprint-ixpsprintjob-getjobstatus) para obtener el estado del trabajo.
+Después de que se señale el evento de finalización, llame [**a GetJobStatus**](/windows/desktop/api/XpsPrint/nf-xpsprint-ixpsprintjob-getjobstatus) para obtener el estado del trabajo.
 
 
 ```C++
@@ -382,7 +382,7 @@ Una vez señalado el evento de finalización, llame a [**GetJobStatus**](/window
 
 ### <a name="release-resources"></a>Liberación de recursos
 
-Una vez que el estado del trabajo indica finalización, libere las interfaces y los recursos usados para este trabajo de impresión.
+Una vez que el estado de un trabajo indique la finalización, libere las interfaces y los recursos que se usan para este trabajo de impresión.
 
 
 ```C++

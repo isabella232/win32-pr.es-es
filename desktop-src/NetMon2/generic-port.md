@@ -1,7 +1,7 @@
 ---
-description: Contiene un número de Puerto usado para los protocolos IP o IPX.
+description: Contiene un número de puerto utilizado para los protocolos IP o IPX.
 ms.assetid: 730f6ee6-7b7d-4e10-91ee-a4ba87aae5aa
-title: GENERIC_PORT Union (Netmon. h)
+title: GENERIC_PORT union (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 3b684ffea65e85854d2928931f492fb247cc0b70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 353faa17a505742f9e5b31feeb1c0108add7895f8039f12905c399d515bb2bb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910875"
 ---
-# <a name="generic_port-union"></a>\_Unión de Puerto genérico
+# <a name="generic_port-union"></a>Unión \_ DE PUERTO GENÉRICO
 
-La estructura de **\_ Puerto genérico** contiene un número de Puerto usado para los protocolos IP o IPX.
+La **estructura \_ GENERIC PORT** contiene un número de puerto que se usa para los protocolos IP o IPX.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Número de puerto IP rellenado.
 **ByteSwappedIPXPort**
 </dt> <dd>
 
-Número de Puerto IPX rellenado.
+Número de puerto IPX rellenado.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Número de Puerto IPX rellenado.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

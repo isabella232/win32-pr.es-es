@@ -1,7 +1,7 @@
 ---
-description: Especifica la lista de redes LAN inalámbricas a las que se debe permitir que se conecte cualquier equipo.
+description: Especifica la lista de redes LAN inalámbricas a las que se debe permitir la conexión de cualquier máquina.
 ms.assetid: e24557d8-dedf-4381-bba0-cdb7ea26083b
-title: Elemento permitidos (networkFilter)
+title: elemento allowList (networkFilter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5488f962a1ba526b34ca2d10144a150d7c1417d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39eb56800b43bce0696bdfd8fe7dea2f6bbcb3c0b82fcffa39e3144af3c93620
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800324"
 ---
-# <a name="allowlist-networkfilter-element"></a>Elemento permitidos (networkFilter)
+# <a name="allowlist-networkfilter-element"></a>elemento allowList (networkFilter)
 
-El elemento permitidos (networkFilter) especifica la lista de redes LAN inalámbricas a las que se debe permitir que se conecte cualquier equipo.
+El elemento allowList (networkFilter) especifica la lista de redes LAN inalámbricas a las que se debe permitir que se conecte cualquier máquina.
 
 ``` syntax
 <xs:element name="allowList">
@@ -42,7 +42,7 @@ El elemento permitidos (networkFilter) especifica la lista de redes LAN inalámb
 </xs:element>
 ```
 
-El elemento **permitidos** se define mediante el elemento [**networkFilter**](wlan-policyschema-networkfilter-wlanpolicy-element.md) .
+El **elemento allowList** se define mediante el [**elemento networkFilter.**](wlan-policyschema-networkfilter-wlanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -50,7 +50,7 @@ El elemento **permitidos** se define mediante el elemento [**networkFilter**](wl
 
 | Elemento                                                        | Tipo                                                                     | Descripción                                              |
 |----------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------|
-| [**Storage**](wlan-policyschema-network-allowlist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | La red a la que se puede conectar la máquina.<br/> |
+| [**Red**](wlan-policyschema-network-allowlist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Red a la que se puede conectar la máquina.<br/> |
 
 
 
@@ -60,8 +60,8 @@ El elemento **permitidos** se define mediante el elemento [**networkFilter**](wl
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

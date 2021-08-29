@@ -1,9 +1,9 @@
 ---
-title: Atributo titleNum
+title: titleNum (Atributo)
 description: El atributo titleNum es el número de título del DVD.
 ms.assetid: 9aa38d1a-0743-4c14-9d05-4f2a2068600e
 keywords:
-- titleNum Media Player de Windows
+- titleNum Attribute Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8510a7c8aad37f54e7da0bd0de48b192ae987430
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 17efa4c39d13add0ae7a24d7a9a23de1f09b257bb713ee7a812d60035901d323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762715"
 ---
-# <a name="titlenum-attribute"></a>Atributo titleNum
+# <a name="titlenum-attribute"></a>titleNum (Atributo)
 
-El atributo **titleNum** es el número de título del DVD.
+El **atributo titleNum** es el número de título del DVD.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

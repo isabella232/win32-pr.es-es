@@ -1,7 +1,7 @@
 ---
-description: Representa una asociación genérica que se usa para establecer las partes de una relación entre los elementos administrados.
+description: Representa una asociación genérica utilizada para establecer las partes de una relación entre los elementos administrados.
 ms.assetid: 9785ea8b-fb76-4ffe-8649-aa2fe1b01d5f
-title: CIM_ConcreteComponent (clase)
+title: CIM_ConcreteComponent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 77ee0f33f540bfd215ec10a24c3c574976189d07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b800237d9af97867b102d23cff004cd84f5e451171781e9eb9e02a9dc509681
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695925"
 ---
-# <a name="cim_concretecomponent-class"></a>\_Clase ConcreteComponent de CIM
+# <a name="cim_concretecomponent-class"></a>Cim \_ ConcreteComponent (clase)
 
-Representa una asociación genérica que se usa para establecer las partes de una relación entre los elementos administrados.
+Representa una asociación genérica utilizada para establecer las partes de una relación entre los elementos administrados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ class CIM_ConcreteComponent : CIM_Component
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ConcreteComponent** tiene estos tipos de miembros:
+La **clase \_ Cim ConcreteComponent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ConcreteComponent** tiene estas propiedades.
+La **clase \_ Cim ConcreteComponent** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -58,7 +58,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
 Elemento primario de la asociación.
@@ -74,7 +74,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
 Elemento secundario de la asociación.
@@ -85,12 +85,12 @@ Elemento secundario de la asociación.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Elemento secundario de la asociación.
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

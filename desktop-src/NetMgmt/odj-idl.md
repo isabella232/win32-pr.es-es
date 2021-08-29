@@ -1,22 +1,22 @@
 ---
-title: Definiciones IDL de unión a dominio sin conexión
-description: Definiciones IDL de unión a dominio sin conexión
+title: Definiciones de IDL de unión a un dominio sin conexión
+description: Definiciones de IDL de unión a un dominio sin conexión
 ms.assetid: d495e2f0-5174-4d05-9297-4b4b0f200f08
 ms.topic: article
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: dec651c721cbe6bbf74123692137a01e528a82e5
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: f5b58287b778aa46de1bce9e99556c8c144f22d00b3699622cc8244cb092d02d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104421565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911625"
 ---
-# <a name="offline-domain-join-idl-definitions"></a>Definiciones IDL de unión a dominio sin conexión
+# <a name="offline-domain-join-idl-definitions"></a>Definiciones de IDL de unión a un dominio sin conexión
 
 ## <a name="description"></a>Descripción
 
-Las estructuras de datos de unión a dominio sin conexión (ODJ) no se definen en un archivo de encabezado de C\C + +.  En su lugar, las estructuras se definen en el formato de lenguaje de definición de interfaz (IDL), que después de la compilación se utiliza para la serialización y deserialización. En la serialización y deserialización de la plataforma Windows, las siguientes API de Win32 controlan automáticamente estas estructuras:
+Las estructuras de datos de unión a un dominio sin conexión (ODJ) no se definen en un archivo de encabezado C\C++.  En su lugar, las estructuras se definen en formato IDL (Lenguaje de definición de interfaz) que, después de la compilación, se usan para la serialización y deserialización. En la Windows la serialización y deserialización de estas estructuras se controla automáticamente mediante las siguientes API de Win32:
 
 <a href="/windows/win32/api/lmjoin/nf-lmjoin-netprovisioncomputeraccount">NetProvisionComputerAccount</a>
 
@@ -26,11 +26,11 @@ Las estructuras de datos de unión a dominio sin conexión (ODJ) no se definen e
 
 <a href="/windows/win32/api/lmjoin/nf-lmjoin-netrequestprovisioningpackageinstall">NetRequestProvisioningPackageInstall</a>
 
-En algunas situaciones, por ejemplo, la interoperabilidad con plataformas que no son de Windows, puede que sea necesario realizar la serialización y deserialización manualmente. Este tema contiene definiciones para todas las estructuras de datos ODJ en una sola unidad de compilación IDL y se incluye para convienence. También se define una definición de archivo de configuración de la aplicación (ACF) coincidente. Este contenido no se proporciona como parte de ningún SDK. Por lo tanto, el contenido que aparece a continuación debe copiarse en el código y compilarse con un compilador IDL. El compilador IDL generará las funciones de código auxiliar de serialization\deserialization necesarias, que luego se vinculan a la aplicación. Vea <a href="/windows/win32/rpc/type-serialization">serialización de tipos</a> para obtener más información sobre cómo escribir la serialización y la deserialización.
+En algunas situaciones, por ejemplo, la interoperabilidad con plataformas no Windows, puede ser necesario realizar la serialización y deserialización manuales. Este tema contiene definiciones para todas las estructuras de datos de ODJ en una sola unidad de compilación de IDL y se incluye para la recopilación. También se define una definición de archivo de configuración de aplicación (ACF) correspondiente. Este contenido no se proporciona como parte de ningún SDK. Por lo tanto, el contenido siguiente debe copiarse en el código y compilarse con un compilador IDL. El compilador de IDL producirá las funciones de código auxiliar de serialización o deserialización necesarias, que luego se vinculan a la aplicación. Consulte <a href="/windows/win32/rpc/type-serialization">Serialización de tipos</a> para obtener más detalles sobre cómo serializar y deserialización de tipos.
 
-Consulte las secciones de la estructura individual para obtener documentación detallada sobre los miembros.
+Consulte las secciones de la estructura individual para obtener documentación detallada de los miembros.
 
-Si usa el compilador de MIDL de Microsoft, debe especificar las marcas siguientes para maximizar la compatibilidad:
+Si usa el compilador MIDL de Microsoft, debe especificar las marcas siguientes para maximizar la compatibilidad:
 
 /char unsigned
 
@@ -207,7 +207,7 @@ interface ODJ
 }
 ```
 
-## <a name="odj-acf-file"></a>Archivo ACF de ODJ
+## <a name="odj-acf-file"></a>Archivo ODJ ACF
 
 ```C++
 [
@@ -232,11 +232,11 @@ interface ODJ
 
 <a href="/windows/win32/midl/midl-start-page">Lenguaje de definición de interfaz de Microsoft</a>
 
-<a href="/windows/win32/midl/midl-command-line-reference">Referencia de Command-Line de MIDL</a>
+<a href="/windows/win32/midl/midl-command-line-reference">Referencia de Command-Line MIDL</a>
 
 <a href="/windows/win32/rpc/serialization-services">Servicios de serialización</a>
 
-<a href="/windows/win32/rpc/type-serialization">Serialización de tipo</a>
+<a href="/windows/win32/rpc/type-serialization">Serialización de tipos</a>
 
 <a href="/windows/win32/api/lmjoin/nf-lmjoin-netprovisioncomputeraccount">NetProvisionComputerAccount</a>
 

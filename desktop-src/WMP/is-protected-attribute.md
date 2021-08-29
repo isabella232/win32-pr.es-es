@@ -1,9 +1,9 @@
 ---
-title: Is_Protected atributo)
-description: El \_ atributo is protected indica si el contenido está protegido mediante administración de derechos digitales (DRM).
+title: Is_Protected atributo
+description: El atributo Is \_ Protected indica si el contenido está protegido mediante administración de derechos digitales (DRM).
 ms.assetid: 049d4116-7ba6-49f5-ad54-82a98b79d6bc
 keywords:
-- Is_Protected Media Player de atributos de Windows
+- Is_Protected atributo Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ba626e72e139a5373973edea581f0f8462eee32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 520631b90e4ff379d3a613008dee2db5d76784a831ef54ef0d3551fbf99a85f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763865"
 ---
-# <a name="is_protected-attribute"></a>\_Atributo protegido
+# <a name="is_protected-attribute"></a>Atributo \_ Protegido
 
-El atributo **is \_ Protected** indica si el contenido está protegido mediante administración de derechos digitales (DRM).
+El **atributo Is \_ Protected** indica si el contenido está protegido mediante administración de derechos digitales (DRM).
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
--   [Archivos de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Archivos multimedia de Windows usados con frecuencia](commonly-used-windows-media-file-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
 **DigitallySecure** es un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMProtected.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMProtected.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -53,7 +53,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

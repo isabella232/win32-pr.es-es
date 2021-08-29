@@ -1,7 +1,7 @@
 ---
 description: Indica el modo de funcionamiento de la red.
 ms.assetid: b71de38a-6373-4d96-90dd-a3ad4a7de074
-title: connectionType (WLANProfile), elemento
+title: Elemento connectionType (WLANProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 1e7b456260c656ebb3d64b6a3732fe97ca3ca488
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 01eec035fdd42504e3c3da0baec537b096d42c63deb7c336d8446bc7a0d95572
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799905"
 ---
-# <a name="connectiontype-wlanprofile-element"></a>connectionType (WLANProfile), elemento
+# <a name="connectiontype-wlanprofile-element"></a>Elemento connectionType (WLANProfile)
 
-El elemento connectionType (WLANProfile) indica el modo operativo de la red.
+El elemento connectionType (WLANProfile) indica el modo de funcionamiento de la red.
 
-Un valor de **ESS** indica una red de infraestructura, mientras que **IBSS** indica una red ad hoc.
+Un valor de **ESS** indica una red de infraestructura, mientras **que IBSS** indica una red ad hoc.
 
 ``` syntax
 <xs:element name="connectionType">
@@ -42,11 +42,11 @@ Un valor de **ESS** indica una red de infraestructura, mientras que **IBSS** ind
 </xs:element>
 ```
 
-El elemento **connectionType** se define mediante el elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+El **elemento connectionType** se define mediante el [**elemento WLANProfile.**](wlan-profileschema-wlanprofile-element.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para ver los perfiles de ejemplo que usan el elemento **connectionType** , consulte [ejemplos de perfiles inalámbricos](wireless-profile-samples.md).
+Para ver los perfiles de ejemplo que usan el **elemento connectionType,** vea [Ejemplos de perfil inalámbrico.](wireless-profile-samples.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para ver los perfiles de ejemplo que usan el elemento **connectionType** , consu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                 |
 
 

@@ -1,7 +1,7 @@
 ---
-description: El método Run indica al subproceso de streaming que se ejecute.
+description: El método Run indica el subproceso de streaming que se ejecutará.
 ms.assetid: 9aef7801-dcfb-4597-bccb-5ba19327b2d5
-title: Método CSourceStream. Run (Source. h)
+title: Método CSourceStream.Run (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 39093654677ab4828f8a1d5a01a8cf7deaf42507
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb7d1d9c86759331127b3db893e05e075d0fffb5988a61935cc28d2e0027ba39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823945"
 ---
-# <a name="csourcestreamrun-method"></a>CSourceStream. Run (método)
+# <a name="csourcestreamrun-method"></a>Método CSourceStream.Run
 
-El `Run` método indica al subproceso de streaming que se ejecute.
+El `Run` método indica el subproceso de streaming que se ejecutará.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto o E \_ inesperados.
+Devuelve S \_ OK o E \_ UNEXPECTED.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la clase base, este método tiene el mismo efecto que la solicitud [**CSourceStream::P ause**](csourcestream-pause.md) , y no se utiliza.
+En la clase base, este método tiene el mismo efecto que la [**solicitud CSourceStream::P ause**](csourcestream-pause.md) y no se usa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ En la clase base, este método tiene el mismo efecto que la solicitud [**CSource
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ En la clase base, este método tiene el mismo efecto que la solicitud [**CSource
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

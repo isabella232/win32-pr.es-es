@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TCM_SETCURFOCUS (commctrl. h)
-description: Establece el foco en una pestaña especificada de un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ SetCurFocus.
+title: TCM_SETCURFOCUS mensaje (Commctrl.h)
+description: Establece el foco en una pestaña especificada en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ SetCurFocus.
 ms.assetid: bcbd5f26-b54e-492b-aff3-357b8ae23969
 keywords:
-- TCM_SETCURFOCUS controles de mensajes de Windows
+- TCM_SETCURFOCUS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abe566d1e1b3cc7d257c4756fe123423fc344a7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac3be7b9b7f62d69a1207e60f58189f152f109531d83e4f7b80b6e13ca6f6da3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876495"
 ---
-# <a name="tcm_setcurfocus-message"></a>\_Mensaje SETCURFOCUS de TCM
+# <a name="tcm_setcurfocus-message"></a>Mensaje \_ SETCURFOCUS de TCM
 
-Establece el foco en una pestaña especificada de un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ SetCurFocus**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_setcurfocus) .
+Establece el foco en una pestaña especificada en un control de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ SetCurFocus.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_setcurfocus)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,11 +43,11 @@ Establece el foco en una pestaña especificada de un control de ficha. Puede env
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el control de pestaña tiene el estilo de [**\_ botones de TCS**](tab-control-styles.md) (modo de botón), la pestaña con el foco puede ser diferente de la pestaña seleccionada. Por ejemplo, cuando se selecciona una pestaña, el usuario puede presionar las teclas de dirección para establecer el foco en una pestaña diferente sin cambiar la pestaña seleccionada. En el modo de botón, **TCM \_ SETCURFOCUS** establece el foco de entrada en el botón asociado a la pestaña especificada, pero no cambia la pestaña seleccionada.
+Si el control de pestaña tiene el [**estilo TCS \_ BUTTONS**](tab-control-styles.md) (modo de botón), la pestaña con el foco puede ser diferente de la pestaña seleccionada. Por ejemplo, cuando se selecciona una pestaña, el usuario puede presionar las teclas de dirección para establecer el foco en otra pestaña sin cambiar la pestaña seleccionada. En el modo de botón, **TCM \_ SETCURFOCUS** establece el foco de entrada en el botón asociado a la pestaña especificada, pero no cambia la pestaña seleccionada.
 
-Si el control de pestañas no tiene el estilo de [**\_ botones de TCS**](tab-control-styles.md) , cambiar el foco también cambia la pestaña seleccionada. En este caso, el control de pestañas envía los códigos de notificación [TCN \_ SELCHANGING](tcn-selchanging.md) y [TCN \_ SELCHANGE](tcn-selchange.md) a su ventana primaria.
+Si el control de pestaña no tiene el estilo [**TCS \_ BUTTONS,**](tab-control-styles.md) cambiar el foco también cambia la pestaña seleccionada. En este caso, el control de pestaña envía los códigos de notificación [TCN \_ SELCHANGING](tcn-selchanging.md) y [TCN \_ SELCHANGE](tcn-selchange.md) a su ventana primaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Si el control de pestañas no tiene el estilo de [**\_ botones de TCS**](tab-con
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Si el control de pestañas no tiene el estilo de [**\_ botones de TCS**](tab-con
 
 <dl> <dt>
 
-[**\_GETCURFOCUS TCM**](tcm-getcurfocus.md)
+[**TCM \_ GETCURFOCUS**](tcm-getcurfocus.md)
 </dt> </dl>
 
  

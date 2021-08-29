@@ -1,21 +1,21 @@
 ---
-description: 'MUI: ejemplo de configuración de Application-Specific (anterior a Windows Vista)'
+description: 'MUI: Application-Specific Configuración de ejemplo (vista previa Windows vista)'
 ms.assetid: 932aa981-ddd9-4a5b-9003-7dafd98e3ae4
-title: 'MUI: ejemplo de configuración de Application-Specific (anterior a Windows Vista)'
+title: 'MUI: Application-Specific Configuración de ejemplo (vista previa Windows vista)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c2623c3d0b757f3266e56266a6e84a4d309ecf6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2a95d616003b2158b2945b77a775884862f54f28a59b3f645139e1a3d40dd8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765035"
 ---
-# <a name="mui-application-specific-settings-sample-pre-windows-vista"></a>MUI: ejemplo de configuración de Application-Specific (anterior a Windows Vista)
+# <a name="mui-application-specific-settings-sample-pre-windows-vista"></a>MUI: Application-Specific Configuración de ejemplo (vista previa Windows vista)
 
-La aplicación de ejemplo que se describe en este tema es similar a la que se muestra en [MUI: Application-Specific Settings sample (Windows Vista)](mui-application-specific-settings-sample-vista.md), salvo que esta aplicación se ejecutará en Windows 2000 y versiones posteriores. La principal diferencia del otro ejemplo es que la reserva de idioma se debe personalizar para ejecutarse en varios sistemas operativos.
+La aplicación de ejemplo descrita en este tema es similar a la que se muestra en [Application-Specific CONFIGURACIÓN Sample (Windows Vista),](mui-application-specific-settings-sample-vista.md)salvo que esta aplicación se ejecutará en Windows 2000 y versiones posteriores. La principal diferencia con respecto al otro ejemplo es que la reserva de idioma debe personalizarse para ejecutarse en varios sistemas operativos.
 
-Esta aplicación analiza primero una lista de idiomas delimitados en un archivo de texto y lo convierte en una lista de idiomas de cadena múltiple para definir las preferencias de idioma específico de la aplicación. Los delimitadores admitidos en el ejemplo son ",", ";", ":" y "". Después de analizar la lista, el código busca y carga los recursos en el idioma identificado. A diferencia del ejemplo de otros valores de configuración específicos de la aplicación, este código carga y libera archivos de recursos mediante llamadas a las funciones de MUI [**LoadMUILibrary**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya) y [**FreeMUILibrary**](/windows/desktop/api/Muiload/nf-muiload-freemuilibrary).
+Esta aplicación analiza primero una lista de idioma delimitado en un archivo de texto y la convierte en una lista de idioma de varias cadenas para definir las preferencias de idioma específicas de la aplicación. Los delimitadores admitidos en el ejemplo son ",", ";", ":", y " ". Después de analizar la lista, el código busca y carga los recursos en el lenguaje identificado. A diferencia del otro ejemplo de configuración específica de la aplicación, este código carga y libera los archivos de recursos mediante llamadas a las funciones DE LAN [**LoadMUILibrary**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya) y [**FreeMUILibrary.**](/windows/desktop/api/Muiload/nf-muiload-freemuilibrary)
 
 
 ```C++

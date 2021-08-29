@@ -1,7 +1,7 @@
 ---
-description: 'El método GetProperties recupera el número de búferes que va a crear el asignador y las propiedades del búfer. Este método implementa el método IMemAllocator:: GetProperties.'
+description: El método GetProperties recupera el número de búferes que creará el asignador y las propiedades del búfer. Este método implementa el método IMemAllocator::GetProperties.
 ms.assetid: ccee4d69-52fc-4e3c-b6a4-787914708be4
-title: Método CBaseAllocator. GetProperties (Amfilter. h)
+title: Método CBaseAllocator.GetProperties (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: abf143b11b6dd67fca6c87f9a31ce69f18951311
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 469eb062113ab2ee87e6462b0e0227eaba11673a239794c844125823c4b8a05f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832755"
 ---
-# <a name="cbaseallocatorgetproperties-method"></a>CBaseAllocator. GetProperties (método)
+# <a name="cbaseallocatorgetproperties-method"></a>Método CBaseAllocator.GetProperties
 
-El `GetProperties` método recupera el número de búferes que va a crear el asignador y las propiedades del búfer. Este método implementa el método [**IMemAllocator:: GetProperties**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getproperties) .
+El método recupera el número de búferes que creará el `GetProperties` asignador y las propiedades del búfer. Este método implementa el [**método IMemAllocator::GetProperties.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getproperties)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT GetProperties(
 *pProps* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ propiedades de asignador**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que recibe las propiedades de asignador.
+Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que recibe las propiedades del asignador.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve S \_ correcto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve S \_ correcto.
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

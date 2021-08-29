@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Session. end (método)'
-title: Session. end (método)
+description: 'Más información sobre: Método Session.End'
+title: Método Session.End
 TOCTitle: 'End method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Session.End
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.session.end(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cbfee95550ebb6dd4c1bd1e3293f7f7e774bbf96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cccbbd0cd3aedcd91e23103acb66903b58118f2e5b7da1e8a1e5d694a7d424c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718825"
 ---
-# <a name="sessionend-method"></a>Session. end (método)
+# <a name="sessionend-method"></a>Método Session.End
 
 Finalice la sesión.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ instance.End()
 public void End()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ public void End()
 
 [Miembros de sesión](./session-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

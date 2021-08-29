@@ -1,11 +1,11 @@
 ---
-title: atributo de cálculo de hora de expiración de MS-DS-User-Password
+title: Atributo ms-DS-User-Password-Expiry-Time-Computed
 description: Contiene la hora de expiración de la contraseña actual del usuario.
 ms.assetid: 623122f5-48eb-47bb-9e30-71c73d2fa2fd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos calculados en tiempo de expiración de MS-DS-usuario-contraseña
-- Esquema de AD de atributo msDS-UserPasswordExpiryTimeComputed
+- Esquema de AD del atributo ms-DS-User-Password-Expiry-Time-Computed
+- Esquema de AD del atributo msDS-UserPasswordExpiryTimeComputed
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 024b34a57823c913d45eb24ebb294fda5c2a8f37
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5f4f6add282622557086379b4812958903f5184fdcb16faa72b6ef8780b3b4b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763195"
 ---
-# <a name="ms-ds-user-password-expiry-time-computed-attribute"></a>atributo de cálculo de hora de expiración de MS-DS-User-Password
+# <a name="ms-ds-user-password-expiry-time-computed-attribute"></a>Atributo ms-DS-User-Password-Expiry-Time-Computed
 
 Contiene la hora de expiración de la contraseña actual del usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------|
-| CN                | MS-DS-usuario-contraseña-fecha de expiración calculada |
-| Nombre para mostrar de LDAP | msDS-UserPasswordExpiryTimeComputed      |
-| Tamaño              | \-                                       |
-| Actualizar privilegio  | \-                                       |
+| CN                | ms-DS-User-Password-Expiry-Time-Computed |
+| Ldap-Display-Name | msDS-UserPasswordExpiryTimeComputed      |
+| Size              | \-                                       |
+| Privilegio actualizar  | \-                                       |
 | Frecuencia de actualización  | \-                                       |
 | Attribute-Id      | 1.2.840.113556.1.4.1996                  |
-| System-ID-GUID    | add5cf10-7b09-4449-9ae6-2534148f8a72     |
-| Sintaxis            | [**Interval**](s-interval.md)           |
+| System-Id-Guid    | add5cf10-7b09-4449-9ae6-2534148f8a72     |
+| Syntax            | [**Intervalo**](s-interval.md)           |
 
 
 
@@ -52,18 +52,18 @@ Contiene la hora de expiración de la contraseña actual del usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000014                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Contiene la hora de expiración de la contraseña actual del usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000014                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Contiene la hora de expiración de la contraseña actual del usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

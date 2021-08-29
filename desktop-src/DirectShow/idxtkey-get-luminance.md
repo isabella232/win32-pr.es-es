@@ -1,7 +1,7 @@
 ---
-description: El \_ método get luminancia recupera el valor de luminancia en el que se va a hacer la tecla. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ luminancia.
+description: El método \_ get Luminance recupera el valor de luminosidad en el que se va a claver. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ LUMINANCE.
 ms.assetid: 92113331-a7b7-4618-81b2-ea02e7bcc923
-title: 'Método IDxtKey:: get_Luminance (QEDIT. h)'
+title: Método IDxtKey::get_Luminance (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 85dcba3720e007d0f3de890c085b0b223e3df350
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4035662f8510fd7caab6b2c540bb3194c218c83fde7ce5505c3f6c974394d2e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119792375"
 ---
-# <a name="idxtkeyget_luminance-method"></a>IDxtKey:: get \_ luminancia (método)
+# <a name="idxtkeyget_luminance-method"></a>Método IDxtKey::get \_ Luminance
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `get_Luminance` método recupera el valor de luminancia en el que se va a hacer la tecla. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ luminancia.
+El `get_Luminance` método recupera el valor de luminosidad en el que se va a claver. Esta propiedad solo se aplica cuando el tipo de clave es DXTKEY \_ LUMINANCE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ HRESULT get_Luminance(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
-Recibe el valor de luminancia en el que se va a hacer la tecla.
+Recibe el valor de luminosidad en el que se va a claver.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,10 +83,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Interfaz IDxtKey**](idxtkey.md)
+[**IDxtKey (interfaz)**](idxtkey.md)
 </dt> <dt>
 
-[**IDxtKey:: get \_ KeyType**](idxtkey-get-keytype.md)
+[**IDxtKey::get \_ KeyType**](idxtkey-get-keytype.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
-title: Información general del marco de cinta de Windows
-description: Los temas contenidos en esta sección exploran los aspectos básicos del marco de la cinta de opciones de Windows.
+title: Windows Información general sobre el marco de opciones
+description: Los temas contenidos en esta sección exploran los aspectos básicos del marco Windows ribbon.
 ms.assetid: b01b3ec0-11a6-47ff-9453-a5c4717dc0cb
 keywords:
-- Cinta de Windows, marco
+- Windows Cinta de opciones, marco
 - Cinta de opciones, marco
-- Cinta de Windows, acerca de
-- Cinta, acerca de
-- Cinta de opciones de Windows, aspectos básicos
-- Cinta, aspectos básicos
+- Windows Cinta de opciones, acerca de
+- Cinta de opciones, acerca de
+- Windows Cinta de opciones, aspectos básicos
+- Cinta de opciones, aspectos básicos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf57b1c68d1510665021b3ce6823dc8f6b232840
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5512e95b2d08a7bf9f3e09577085869718afed09e885288a71510cbcf476b78c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840675"
 ---
-# <a name="windows-ribbon-framework-overviews"></a>Información general del marco de cinta de Windows
+# <a name="windows-ribbon-framework-overviews"></a>Windows Información general sobre el marco de opciones
 
-Los temas contenidos en esta sección exploran los aspectos básicos del marco de la cinta de opciones de Windows.
+Los temas contenidos en esta sección exploran los aspectos básicos del marco Windows ribbon.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -28,8 +28,8 @@ Los temas contenidos en esta sección exploran los aspectos básicos del marco d
 
 | Tema                                                                                     | Descripción                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Introducción al marco de cinta de Windows](windowsribbon-introduction.md)<br/>     | El marco de cinta es un sistema de presentación de comandos enriquecido que proporciona una alternativa moderna a los menús, las barras de herramientas y los paneles de tareas de las aplicaciones Windows tradicionales. <br/> |
-| [Declarar comandos y controles con el marcado de la cinta de opciones](windowsribbon-schema.md)<br/> | El marco de cinta utiliza un lenguaje de marcado basado en lenguaje XAML (XAML) para implementar de forma declarativa la apariencia de una aplicación de cinta. <br/>             |
+| [Presentación del marco de Windows cinta de opciones](windowsribbon-introduction.md)<br/>     | El marco de la cinta de opciones es un completo sistema de presentación de comandos que proporciona una alternativa moderna a los menús en capas, las barras de herramientas y los paneles de tareas de las aplicaciones Windows tradicionales. <br/> |
+| [Declarar comandos y controles con marcado de cinta](windowsribbon-schema.md)<br/> | El marco de la cinta de opciones usa un lenguaje de marcado basado en lenguaje XAML (XAML) para implementar mediante declaración la apariencia de una aplicación de cinta de opciones. <br/>             |
 
 
 

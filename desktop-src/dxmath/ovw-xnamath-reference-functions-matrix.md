@@ -1,17 +1,17 @@
 ---
 description: Enumera las funciones de matriz proporcionadas por DirectXMath.
 ms.assetid: d59d0dcc-deae-3f7e-55c5-0c5ff383343b
-title: Funciones de matriz de la biblioteca DirectXMath
+title: Funciones de matriz de directXMath Library
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a91ecdef8389bf60594d370c2b3de01995bc1169
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 71f560d42e5bf2095c61cde60de1f8b3e5e78d31eb1c72b4a71561548ed89058
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841255"
 ---
-# <a name="directxmath-library-matrix-functions"></a>Funciones de matriz de la biblioteca DirectXMath
+# <a name="directxmath-library-matrix-functions"></a>Funciones de matriz de directXMath Library
 
 Enumera las funciones de matriz proporcionadas por DirectXMath.
 
@@ -55,7 +55,7 @@ Enumera las funciones de matriz proporcionadas por DirectXMath.
 | [**XMMatrixRotationAxis**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationaxis)<br/>                                     | Crea una matriz que gira alrededor de un eje arbitrario.<br/>                                                                      |
 | [**XMMatrixRotationNormal**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationnormal)<br/>                                 | Crea una matriz que gira alrededor de un vector normal arbitrario.<br/>                                                             |
 | [**XMMatrixRotationQuaternion**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationquaternion)<br/>                         | Crea una matriz de rotación a partir de un cuaternión.<br/>                                                                                 |
-| [**XMMatrixRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationrollpitchyaw)<br/>                     | Crea una matriz de rotación basada en un lanzamiento, una guia y un lanzamiento determinados (ángulos de Euler).<br/>                                              |
+| [**XMMatrixRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationrollpitchyaw)<br/>                     | Crea una matriz de rotación basada en un paso, una guia y un giro determinados (ángulos de Euler).<br/>                                              |
 | [**XMMatrixRotationRollPitchYawFromVector**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationrollpitchyawfromvector)<br/> | Crea una matriz de rotación basada en un vector que contiene los ángulos de Euler (inclinación, yaw y roll).<br/>                              |
 | [**XMMatrixRotationX**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationx)<br/>                                           | Crea una matriz que gira alrededor del eje X.<br/>                                                                             |
 | [**XMMatrixRotationY**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationy)<br/>                                           | Crea una matriz que gira alrededor del eje Y.<br/>                                                                             |
@@ -66,10 +66,10 @@ Enumera las funciones de matriz proporcionadas por DirectXMath.
 | [**XMMatrixShadow**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixshadow)<br/>                                                 | Crea una matriz de transformación que aplana la geometría en un plano.<br/>                                                         |
 | [**XMMatrixTransformation**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtransformation)<br/>                                 | Crea una matriz de transformación.<br/>                                                                                             |
 | [**XMMatrixTransformation2D**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtransformation2d)<br/>                             | Crea una matriz de transformación 2D en el plano xy.<br/>                                                                          |
-| [**XMMatrixTranslation**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtranslation)<br/>                                       | Crea una matriz de traducción a partir de los desplazamientos especificados.<br/>                                                                     |
+| [**XMMatrixTranslation**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtranslation)<br/>                                       | Genera una matriz de traducción a partir de los desplazamientos especificados.<br/>                                                                     |
 | [**XMMatrixTranslationFromVector**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtranslationfromvector)<br/>                   | Crea una matriz de traducción a partir de un vector.<br/>                                                                                  |
 | [**XMMatrixTranspose**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtranspose)<br/>                                           | Calcula la transpuesta de una matriz.<br/>                                                                                         |
-| [**XMMatrixVectorTensorProduct**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixvectortensorproduct)<br/>                                           | Calcula el producto de tensor externo de 2 vectores.<br/>                                                                                         |
+| [**XMMatrixVectorTensorProduct**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixvectortensorproduct)<br/>                                           | Calcula el tensor externo producto de 2 vectores.<br/>                                                                                         |
 
 
 
@@ -79,7 +79,7 @@ Enumera las funciones de matriz proporcionadas por DirectXMath.
 
 <dl> <dt>
 
-[Funciones de la biblioteca DirectXMath](ovw-xnamath-reference-functions.md)
+[Funciones de biblioteca de DirectXMath](ovw-xnamath-reference-functions.md)
 </dt> </dl>
 
  

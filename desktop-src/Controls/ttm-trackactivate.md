@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_TRACKACTIVATE (commctrl. h)
+title: TTM_TRACKACTIVATE mensaje (Commctrl.h)
 description: Activa o desactiva una información sobre herramientas de seguimiento.
 ms.assetid: 6cf43377-a772-4749-81c4-a685998092e5
 keywords:
-- TTM_TRACKACTIVATE controles de mensajes de Windows
+- TTM_TRACKACTIVATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eb3d0a6caf110045d694208c63aa81d63c265c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b5860a0e7016080c70682d99209b112dc8ab81100ed4d1115db904832f1b92e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825805"
 ---
-# <a name="ttm_trackactivate-message"></a>TTM \_ TRACKACTIVATE
+# <a name="ttm_trackactivate-message"></a>Mensaje TRACKACTIVATE de TTM \_
 
 Activa o desactiva una información sobre herramientas de seguimiento.
 
@@ -32,14 +32,14 @@ Activa o desactiva una información sobre herramientas de seguimiento.
 *wParam* 
 </dt> <dd>
 
-Valor que especifica si el seguimiento se está activando o desactivando. Este valor puede ser uno de los siguientes:
+Valor que especifica si se está activando o desactivando el seguimiento. Este valor puede ser uno de los siguientes:
 
 
 
 | Value                                                                                                                                | Significado                         |
 |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| <span id="TRUE"></span><span id="true"></span><dl> <dt>**REALES**</dt> </dl>    | Activar seguimiento.<br/>   |
-| <span id="FALSE"></span><span id="false"></span><dl> <dt>**ES**</dt> </dl> | Desactivar seguimiento.<br/> |
+| <span id="TRUE"></span><span id="true"></span><dl> <dt>**Verdad**</dt> </dl>    | Activar seguimiento.<br/>   |
+| <span id="FALSE"></span><span id="false"></span><dl> <dt>**Falso**</dt> </dl> | Desactivación del seguimiento.<br/> |
 
 
 
@@ -50,13 +50,13 @@ Valor que especifica si el seguimiento se está activando o desactivando. Este v
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) que identifica la herramienta a la que se aplica este mensaje. Los miembros **hWnd** y **uId** identifican la herramienta y el miembro **cbSize** especifica el tamaño de la estructura. Se omiten todos los demás miembros.
+Puntero a una [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) que identifica la herramienta a la que se aplica este mensaje. Los **miembros hwnd** **y uId** identifican la herramienta y el **miembro cbSize** especifica el tamaño de la estructura. Se omiten todos los demás miembros.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para este mensaje.
+No se usa el valor devuelto para este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ No se utiliza el valor devuelto para este mensaje.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -80,10 +80,10 @@ No se utiliza el valor devuelto para este mensaje.
 [**TTM \_ TRACKPOSITION**](ttm-trackposition.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Usar controles ToolTip](using-tooltip-contro.md)
+[Usar controles de información sobre herramientas](using-tooltip-contro.md)
 </dt> </dl>
 
  

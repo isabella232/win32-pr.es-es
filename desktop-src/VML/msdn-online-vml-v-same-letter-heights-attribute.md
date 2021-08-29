@@ -1,26 +1,26 @@
 ---
-title: VML V-Same-Letter-alto atributo
-description: VML V-Same-Letter-alto atributo
+title: Atributo V-Same-Letter-Heights de VML
+description: Atributo V-Same-Letter-Heights de VML
 ms.assetid: f06c0a50-1de1-47d8-8b94-01fe0599ed59
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6d155c3c72eb67718edd33ae601d22f8e5d074a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 219d9f06e120ccc86bfa41c1cfff69b7feb64d68b1343732d45f57f26d952b21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103791973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864155"
 ---
-# <a name="vml-v-same-letter-heights-attribute"></a>VML V-Same-Letter-alto atributo
+# <a name="vml-v-same-letter-heights-attribute"></a>Atributo V-Same-Letter-Heights de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si todas las letras serán el mismo alto independientemente del caso inicial. Lectura/escritura **VgTriState**.
+Determina si todas las letras tendrán el mismo alto, independientemente del caso inicial. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Determina si todas las letras serán el mismo alto independientemente del caso i
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "v-Same-Letter-alturas: *expresión* " >
+<v: *element* style="v-same-letter-heights: *expression* ">
 
 **Sintaxis de script**
 
-*Element* . Style. v-Same-Letter-alto = "*expresión*"
+*element* .style.v-same-letter-heights="*expression*"
 
-*expresión* = de *Element*. Style. v-Same-Letter-alto
+*expresión* = *elemento*.style.v-same-letter-heights
 
 **Comentarios:**
 
-Si **es true**, las letras minúsculas se ajustan al alto de las letras mayúsculas. El valor predeterminado es **False**.
+Si **es True**, las letras minúsculas se extienden hasta el alto de las letras mayúsculas. El valor predeterminado es **False**.
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-Todas las letras tendrán el mismo alto, independientemente del uso de mayúsculas o minúsculas.
+Todas las letras tendrán el mismo alto, independientemente de las mayúsculas y minúsculas.
 
 
 ```HTML
@@ -58,6 +58,6 @@ Todas las letras tendrán el mismo alto, independientemente del uso de mayúscul
 
 
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
 description: Obtiene la clave que se usa para cifrar los mensajes salientes que protege el token.
 ms.assetid: 1ADBDFC8-E4D9-440B-B310-913213086283
-title: 'IUpdateEndpointAuthToken:: SigningKey (método) (UpdateEndpointAuth. h)'
+title: Método IUpdateEndpointAuthToken::SigningKey (UpdateEndpointAuth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - UpdateEndpointAuth.dll
-ms.openlocfilehash: ae9847eb698bfcf0402a550ecb54705c4b3f3a52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45e513483db561ad27e9f1c2f7e18457b039d4bd7eaa1aaa61194443c8ccc78e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855745"
 ---
-# <a name="iupdateendpointauthtokensigningkey-method"></a>IUpdateEndpointAuthToken:: SigningKey (método)
+# <a name="iupdateendpointauthtokensigningkey-method"></a>IUpdateEndpointAuthToken::SigningKey (Método)
 
 Obtiene la clave que se usa para cifrar los mensajes salientes que protege el token.
 
@@ -47,28 +47,28 @@ Clave usada para cifrar el mensaje saliente.
 
 </dd> <dt>
 
-*pcbKeySize* \[ in, out\]
+*pwKeySize* \[ in, out\]
 </dt> <dd>
 
-Tamaño de la clave a la que hace referencia el parámetros de *pbkey* .
+Tamaño de la clave a la que hace referencia el *parámetro pbkey.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S \_ correcto** si se realiza correctamente. De lo contrario, devuelve un código de error COM o Windows.
+Devuelve **S \_ OK si** se realiza correctamente. De lo contrario, devuelve un código de error COM Windows.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>                   |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>                |
-| Encabezado<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                   |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>                |
+| Header<br/>                   | <dl> <dt>UpdateEndpointAuth.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UpdateEndpointAuth.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>UpdateEndpointAuth.dll</dt> </dl> |
 
 

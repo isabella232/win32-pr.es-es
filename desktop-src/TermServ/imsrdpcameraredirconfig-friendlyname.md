@@ -3,9 +3,9 @@ title: Propiedad FriendlyName de la interfaz IMsRdpCameraRedirConfig
 description: Obtiene el nombre descriptivo de la cámara.
 ms.tgt_platform: multiple
 keywords:
-- FriendlyName (propiedad) Servicios de Escritorio remoto
-- Propiedad FriendlyName Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfig
-- IMsRdpCameraRedirConfig interface Servicios de Escritorio remoto, FriendlyName (propiedad)
+- Propiedad FriendlyName Servicios de Escritorio remoto
+- Propiedad FriendlyName Servicios de Escritorio remoto interfaz , IMsRdpCameraRedirConfig
+- Interfaz IMsRdpCameraRedirConfig Servicios de Escritorio remoto propiedad , FriendlyName
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 2ffded502f64426392e89c2d18831770133e352d
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 31d6d775310d23cfe8a9cf8ab95ea56e9e2b2d0e418fc9d1a55d3cf26fcce26e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105720250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737415"
 ---
-# <a name="imsrdpcameraredirconfigfriendlyname-property"></a>IMsRdpCameraRedirConfig:: FriendlyName (propiedad)
+# <a name="imsrdpcameraredirconfigfriendlyname-property"></a>IMsRdpCameraRedirConfig::FriendlyName, propiedad
 
 Obtiene el nombre descriptivo de la cámara.
 

@@ -1,11 +1,11 @@
 ---
-title: Método GetDistinguishedName de la clase MicrosoftDNS_Cache
-description: El método GetDistinguishedName recupera el nombre distintivo de la zona. | Método GetDistinguishedName de la clase MicrosoftDNS_Cache
+title: Método GetDistinguishedName de la MicrosoftDNS_Cache clase
+description: El método GetDistinguishedName recupera el nombre distintivo de la zona. | Método GetDistinguishedName de la MicrosoftDNS_Cache clase
 ms.assetid: 976858ec-f376-47e6-90b0-d946a1256c82
 keywords:
-- GetDistinguishedName el método DNS
-- Método GetDistinguishedName DNS, clase MicrosoftDNS_Cache
-- MicrosoftDNS_Cache de clase DNS, método GetDistinguishedName
+- Método DNS GetDistinguishedName
+- Método DNS GetDistinguishedName , MicrosoftDNS_Cache clase
+- MicrosoftDNS_Cache clase DNS , método GetDistinguishedName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b3d1aa4d0edd93ef277b1465e1c75493f95e843
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 97b3a12e32bb061dbd36dcb10b3e4fc96b952772a69a627a6a86cf29368a0c54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833695"
 ---
-# <a name="getdistinguishedname-method-of-the-microsoftdns_cache-class"></a>Método GetDistinguishedName de la \_ clase cache MicrosoftDNS
+# <a name="getdistinguishedname-method-of-the-microsoftdns_cache-class"></a>Método GetDistinguishedName de la clase MicrosoftDNS \_ Cache
 
-El método **GetDistinguishedName** recupera el nombre distintivo de la zona.
+El **método GetDistinguishedName** recupera el nombre distintivo de la zona.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Devuelve el nombre de la zona.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,10 +61,10 @@ Devuelve el nombre de la zona.
 
 <dl> <dt>
 
-[**\_Dominio MicrosoftDNS**](microsoftdns-domain.md)
+[**Dominio de \_ MicrosoftDNS**](microsoftdns-domain.md)
 </dt> <dt>
 
-[**Método ClearCache de la \_ clase cache MicrosoftDNS**](microsoftdns-cache-clearcache.md)
+[**Método ClearCache de la clase de caché MicrosoftDNS \_**](microsoftdns-cache-clearcache.md)
 </dt> </dl>
 
  

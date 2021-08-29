@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_Statistic (clase)
-description: La \_ clase de estadística MicrosoftDNS representa una única estadística de servidor DNS.
+title: MicrosoftDNS_Statistic clase
+description: La clase MicrosoftDNS \_ Statistic representa una única estadística del servidor DNS.
 ms.assetid: 49ee79d6-b93f-4a9b-8054-1ad290d092d6
 keywords:
-- DNS de la clase MicrosoftDNS_Statistic
-- MicrosoftDNS_Statistic de la clase DNS, descrito
+- MicrosoftDNS_Statistic dns de clase
+- MicrosoftDNS_Statistic clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,18 +21,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77e26f1738c046e446fa898c4fdff2f6e8855730
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4a489f8a4d9e3d442d4157243594c187a799d20a1d07b3ccc68135e73ddce288
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815665"
 ---
-# <a name="microsoftdns_statistic-class"></a>\_Clase de estadística MicrosoftDNS
+# <a name="microsoftdns_statistic-class"></a>Clase MicrosoftDNS \_ Statistic
 
-La clase de **\_ estadística MicrosoftDNS** representa una única estadística de servidor DNS.
+La **clase MicrosoftDNS \_ Statistic** representa una única estadística del servidor DNS.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,26 +50,26 @@ class MicrosoftDNS_Statistic
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ estadística MicrosoftDNS** tiene estos tipos de miembros:
+La **clase MicrosoftDNS \_ Statistic** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ estadística MicrosoftDNS** tiene estas propiedades.
+La **clase MicrosoftDNS \_ Statistic** tiene estas propiedades.
 
 <dl> <dt>
 
-**Recopilación**
+**CollectionId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Representación numérica de **CollectionName**.
+Representación numérica de **CollectionName.**
 
 </dd> <dt>
 
@@ -121,14 +121,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Valor de cadena de la estadística, que solo se usa cuando el valor de la estadística no se representa como DWORD.
+Valor de cadena de la estadística, que solo se usa cuando el valor estadístico no se representa como DWORD.
 
 </dd> <dt>
 
 **Valor**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -142,12 +142,12 @@ Valor numérico de la estadística, representado como DWORD.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 

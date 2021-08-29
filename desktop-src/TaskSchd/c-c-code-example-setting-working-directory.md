@@ -1,21 +1,21 @@
 ---
-title: Ejemplo de código de C/C++ configuración del directorio de trabajo
-description: En este ejemplo se establece el directorio de trabajo de una tarea conocida. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Directorio de trabajo de configuración de ejemplo de código de C/C++
+description: En este ejemplo se establece el directorio de trabajo de una tarea conocida. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: bcfcd6af-a3aa-45a8-bde6-0c90aec3e27a
 keywords:
-- configuración de las propiedades de la tarea Programador de tareas, directorio de trabajo
+- establecer propiedades de tarea Programador de tareas , directorio de trabajo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bc60a7af33889d6442d4f95cf2121e77275fd57
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bdb17def1d6a280f1a132bb99dbf82111af709faaad86aabb4a7b54685e6c699
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738365"
 ---
-# <a name="cc-code-example-setting-working-directory"></a>Ejemplo de código de C/C++: establecer el directorio de trabajo
+# <a name="cc-code-example-setting-working-directory"></a>Ejemplo de código de C/C++: configuración del directorio de trabajo
 
-En este ejemplo se establece el directorio de trabajo de una tarea conocida. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se establece el directorio de trabajo de una tarea conocida. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -136,12 +136,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_MAPHTREEITEMTOACCID (commctrl. h)
-description: Asigna un HTREEITEM a un identificador de accesibilidad.
+title: TVM_MAPHTREEITEMTOACCID mensaje (Commctrl.h)
+description: Mapas HTREEITEM a un identificador de accesibilidad.
 ms.assetid: 87ef0785-88c1-49f4-8a05-872577e16fe4
 keywords:
-- TVM_MAPHTREEITEMTOACCID controles de mensajes de Windows
+- TVM_MAPHTREEITEMTOACCID controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,23 +14,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad6267c2040583917283fc444db74ddacbdabd69
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c957f67841d71cfbc3d0737e82774fc0fba4798af7f48a88e018b05ef845704
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119816305"
 ---
-# <a name="tvm_maphtreeitemtoaccid-message"></a>\_Mensaje de MAPHTREEITEMTOACCID TVM
+# <a name="tvm_maphtreeitemtoaccid-message"></a>Mensaje \_ MAPHTREEITEMTOACCID de TVM
 
-Asigna un **HTREEITEM** a un identificador de accesibilidad.
+Mapas **HTREEITEM** a un identificador de accesibilidad.
 
 ## <a name="parameters"></a>Parámetros
 
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>**HTREEITEM** que se asigna a un identificador de accesibilidad.</dd> <dt>
+</dt> <dd>**HTREEITEM que** se asigna a un identificador de accesibilidad.</dd> <dt>
 
 *lParam* 
 </dt> <dd>Debe ser cero.</dd> </dl>
@@ -39,12 +39,12 @@ Asigna un **HTREEITEM** a un identificador de accesibilidad.
 
 Devuelve un identificador de accesibilidad.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al agregar un elemento a un control de vista de árbol, se devuelve un identificador **HTREEITEM** que identifica de forma única el elemento.
+Cuando se agrega un elemento a un control de vista de árbol, se devuelve un **identificador HTREEITEM** que identifica de forma única el elemento.
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -52,11 +52,11 @@ Al agregar un elemento a un control de vista de árbol, se devuelve un identific
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Al agregar un elemento a un control de vista de árbol, se devuelve un identific
 
 <dl> <dt>
 
-[**MapHTREEITEMtoAccID de TreeView \_**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_maphtreeitemtoaccid)
+[**TreeView \_ MapHTREEITEMtoAccID**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_maphtreeitemtoaccid)
 </dt> </dl>
 
  

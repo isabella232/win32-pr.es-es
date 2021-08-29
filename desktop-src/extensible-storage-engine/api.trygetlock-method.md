@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. TryGetLock (método)'
-title: Método API. TryGetLock
+description: 'Más información sobre: Método Api.TryGetLock'
+title: Método Api.TryGetLock
 TOCTitle: 'TryGetLock method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TryGetLock(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.GetLockGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.trygetlock(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9ecd4e0e66226d438b4e5a78b2397f5637154096
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6a8d4ac8b5b81b1238e7847846a1e95122bc53cf8912d591acb221d666d6e24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738585"
 ---
-# <a name="apitrygetlock-method"></a>Método API. TryGetLock
+# <a name="apitrygetlock-method"></a>Método Api.TryGetLock
 
-Reserve explícitamente la capacidad de actualizar una fila, un bloqueo de escritura o impedir explícitamente que una fila se actualice en cualquier otra sesión, bloqueo de lectura. Normalmente, los bloqueos de escritura de filas se adquieren implícitamente como resultado de la actualización de filas. Normalmente, los bloqueos de lectura no son necesarios debido a las versiones de registros. Sin embargo, en algunos casos, una transacción puede desear bloquear explícitamente una fila para aplicar la serialización o asegurarse de que una operación posterior se realizará correctamente.
+Reservar explícitamente la capacidad de actualizar una fila, escribir bloqueo o impedir explícitamente que cualquier otra sesión actualice una fila, el bloqueo de lectura. Normalmente, los bloqueos de escritura de fila se adquieren implícitamente como resultado de la actualización de filas. Normalmente, los bloqueos de lectura no son necesarios debido al control de versiones de los registros. Sin embargo, en algunos casos, es posible que una transacción desee bloquear explícitamente una fila para aplicar la serialización o asegurarse de que una operación posterior se realizará correctamente.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,35 +68,35 @@ public static bool TryGetLock(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a usar. Se adquirirá un bloqueo en el registro actual.
+    Cursor que se usará. Se adquirirá un bloqueo en el registro actual.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. GetLockGrbit](./getlockgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.GetLockGrbit](./getlockgrbit-enumeration.md)  
     
-    Opciones de bloqueo, use esta opción para especificar el tipo de bloqueo que se debe obtener.
+    Opciones de bloqueo, úsese esta opción para especificar qué tipo de bloqueo se va a obtener.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True si se obtuvo el bloqueo; en caso contrario, false. Se produce una excepción si se encuentra un error inesperado.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True si se obtuvo el bloqueo; de lo contrario, false. Se produce una excepción si se encuentra un error inesperado.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

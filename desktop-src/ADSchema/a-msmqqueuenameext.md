@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-Queue-name-ext
-description: Contiene el sufijo del nombre de cola (si hay alguno).
+title: Atributo MSMQ-Queue-Name-Ext
+description: Contiene el sufijo del nombre de la cola (si lo hay).
 ms.assetid: 24194fef-410b-437f-9bef-edb0b2be2e24
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-Queue-name-ext atributo AD Schema
-- mSMQQueueNameExt esquema de AD de atributos
+- Esquema de AD del atributo MSMQ-Queue-Name-Ext
+- Esquema de AD del atributo mSMQQueueNameExt
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77bd0ccfffa00d43d73dd6b2bca94bd25bcde2e1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 060785cfd4188c8b1ecc65b10a31e87d6b3ccbcccba14ffb2d2f0e88dd5737a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762155"
 ---
-# <a name="msmq-queue-name-ext-attribute"></a>Atributo MSMQ-Queue-name-ext
+# <a name="msmq-queue-name-ext-attribute"></a>Atributo MSMQ-Queue-Name-Ext
 
-Contiene el sufijo del nombre de cola (si hay alguno).
+Contiene el sufijo del nombre de la cola (si lo hay).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre de la cola MSMQ: ext                         |
-| Nombre para mostrar de LDAP | mSMQQueueNameExt                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | MSMQ-Queue-Name-Ext                         |
+| Ldap-Display-Name | mSMQQueueNameExt                            |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1243                     |
-| System-ID-GUID    | 2df90d87-009f-11d2-aa4c-00c04fd7d83a        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2df90d87-009f-11d2-aa4c-00c04fd7d83a        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Contiene el sufijo del nombre de cola (si hay alguno).
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 92                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Contiene el sufijo del nombre de cola (si hay alguno).
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 92                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Contiene el sufijo del nombre de cola (si hay alguno).
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 92                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Contiene el sufijo del nombre de cola (si hay alguno).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 92                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Contiene el sufijo del nombre de cola (si hay alguno).
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 92                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Contiene el sufijo del nombre de cola (si hay alguno).
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 92                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 

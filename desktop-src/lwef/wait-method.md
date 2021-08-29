@@ -4,46 +4,46 @@ description: Wait (Método)
 ms.assetid: 968a3f19-6953-473b-ba98-0dc93696e703
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f2e94b0f765a9861c30b254761fbc4dc2e72763
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d81949957146756e989fcb577a1bdd5a0c9a2a6fd60932220e39950327ba3061
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105714351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715715"
 ---
 # <a name="wait-method"></a>Wait (Método)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
 Hace que la cola de animación del carácter especificado espere hasta que se complete la solicitud de animación especificada.
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agente ***. Caracteres ("*** CharacterID ***").*** Solicitud de espera*
+*agent***. Caracteres ("**_CharacterID_*_"). Solicitud de_ * _espera_
 
 
 
 | Parte      | Descripción                                                                     |
 |-----------|---------------------------------------------------------------------------------|
-| *Solicitud* | Objeto de [**solicitud**](/windows/desktop/lwef/the-request-object) que especifica una animación determinada. |
+| *Solicitud* | Objeto [**Request**](/windows/desktop/lwef/the-request-object) que especifica una animación determinada. |
 
 
 
- 
+ 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este método solo cuando admita varios caracteres (simultáneos) y esté intentando secuenciar la interacción de los caracteres. (Para un solo carácter, cada solicitud de animación se reproduce secuencialmente, una vez completada la solicitud anterior). Si tiene dos caracteres y desea que la solicitud de animación de un carácter espere hasta que se complete la animación de otro carácter, establezca el método **Wait** en el objeto de [**solicitud**](/windows/desktop/lwef/the-request-object) de animación del otro carácter. Para especificar el parámetro de solicitud, debe crear una variable y asignar la solicitud de animación que desea interrumpir:
+Use este método solo cuando admita varios caracteres (simultáneos) y esté intentando secuenciar la interacción de caracteres. (Para un solo carácter, cada solicitud de animación se reproduce secuencialmente, una vez completada la solicitud anterior). Si tiene dos caracteres y desea que la solicitud de animación de un carácter espere hasta que se complete la animación del otro carácter, establezca el método **Wait** en el objeto Request de animación del [**otro**](/windows/desktop/lwef/the-request-object) carácter. Para especificar el parámetro de solicitud, debe crear una variable y asignar la solicitud de animación que desea interrumpir:
 
 
 ```
@@ -107,8 +107,8 @@ También puede simplificar el código simplemente llamando a **Wait** directamen
 
 
 
-Esto evita tener que declarar explícitamente un objeto de [**solicitud**](/windows/desktop/lwef/the-request-object) .
+Esto evita tener que declarar explícitamente un [**objeto Request.**](/windows/desktop/lwef/the-request-object)
 
- 
+ 
 
- 
+ 

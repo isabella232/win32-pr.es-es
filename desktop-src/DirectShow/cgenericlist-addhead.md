@@ -1,7 +1,7 @@
 ---
-description: El método AddHead agrega un elemento al principio de la lista.
+description: El método AddHead agrega un elemento al frente de la lista.
 ms.assetid: 8f0012b7-bbc2-407c-ae5a-9843c2f692dc
-title: 'Método CGenericList. AddHead (Wxlist. h): parámetro pObj'
+title: 'Método CGenericList.AddHead (Wxlist.h): parámetro pObj'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62a32eb177c80d10a876a4b163c8a1609104fbea
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 176a31c3acf846c4112e7bcb7bd457872e1e4086b4a8d214ccc7a175e7891feb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104083824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697474"
 ---
-# <a name="cgenericlistaddhead-method-wxlisth---pobj-parameter"></a>Método CGenericList. AddHead (Wxlist. h): parámetro pObj
+# <a name="cgenericlistaddhead-method-wxlisth---pobj-parameter"></a>Método CGenericList.AddHead (Wxlist.h): parámetro pObj
 
-El `AddHead` método agrega un elemento al principio de la lista.
+El `AddHead` método agrega un elemento al frente de la lista.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ POSITION AddHead(
 *pObj* 
 </dt> <dd>
 
-Puntero a un objeto de tipo **Object** (el tipo de plantilla).
+Puntero a un objeto de tipo **OBJECT** (tipo de plantilla).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de posición que indica la nueva posición del encabezado. Si se produce un error en el método, el valor devuelto es **null**.
+Devuelve un valor POSITION que indica la nueva posición de la cabeza. Si se produce un error en el método , el valor devuelto es **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Wxlist. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Wxlist.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (clase)**](cgenericlist.md)
 </dt> </dl>
 
  

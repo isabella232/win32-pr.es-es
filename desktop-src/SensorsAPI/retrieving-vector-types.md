@@ -4,20 +4,20 @@ ms.assetid: 85e3b953-be36-4d60-b04e-4f572d0b9564
 title: Recuperar tipos de vectores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4945b45e4e78b6c4f9f9e0fb4b3848f813549105
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d15579d7067d0eafba0d181d8e8845dfa1bd78b060fb5fba8b08f196d2107d3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739465"
 ---
 # <a name="retrieving-vector-types"></a>Recuperar tipos de vectores
 
-Algunas propiedades y campos de datos contienen matrices de información. Por ejemplo, la propiedad de la \_ curva de respuesta ligera de la propiedad del sensor \_ \_ \_ contiene una matriz de enteros sin signo de 4 bytes. Sin embargo, cuando se reciben estas matrices a través de la API del sensor, siempre se representan como Type VT \_ Vector \| UI1, una matriz de caracteres de un solo byte, independientemente del tipo real de los datos de la matriz. Para estos tipos, debe tener cuidado de convertir variables de matriz al tipo de datos correcto para la propiedad o el campo de datos.
+Algunas propiedades y campos de datos contienen matrices de información. Por ejemplo, la propiedad SENSOR PROPERTY LIGHT RESPONSE CURVE contiene una matriz de \_ \_ \_ \_ enteros de 4 bytes sin signo. Sin embargo, cuando recibe estas matrices a través de sensor API, siempre se representan como tipo VT VECTOR UI1, una matriz de caracteres de un solo byte, independientemente del tipo real de los datos de la \_ \| matriz. Para estos tipos, debe tener cuidado de convertir variables de matriz al tipo de datos correcto para la propiedad o el campo de datos.
 
-Para obtener información sobre las propiedades, los campos de datos y sus tipos, vea [constantes](constants.md).
+Para obtener información sobre las propiedades, los campos de datos y sus tipos, vea [Constantes](constants.md).
 
-En el ejemplo de código siguiente se muestra cómo convertir los datos recuperados en \_ la curva de respuesta de la luz de la propiedad del sensor \_ \_ \_ al tipo correcto.
+En el código de ejemplo siguiente se muestra cómo convertir los datos recuperados en SENSOR \_ PROPERTY LIGHT RESPONSE CURVE al tipo \_ \_ \_ correcto.
 
 
 ```C++

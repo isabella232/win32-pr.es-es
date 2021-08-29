@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - DXGItype.h
-ms.openlocfilehash: b0447d6470401d4136fbfd36f6d9c089e331b14b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2c1ef7bd65645fa68e699b6f70894e72452a707eac29ab0d35e56364a66604bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627425"
 ---
 # <a name="dxgi_rgba-structure"></a>Estructura \_ RGBA de DXGI
 
@@ -72,7 +72,7 @@ Valor de punto flotante que especifica el componente alfa de un color. Este valo
 
 ## <a name="remarks"></a>Comentarios
 
-Puede establecer los miembros de esta estructura en valores fuera del intervalo de 0 a 1 para implementar algunos efectos inusuales. Los valores mayores que 1 producen luces fuertes que tienden a apagar una escena. Los valores negativos generan luces oscuras que realmente quitan la luz de una escena.
+Puede establecer los miembros de esta estructura en valores fuera del intervalo de 0 a 1 para implementar algunos efectos inusuales. Los valores mayores que 1 producen luces fuertes que tienden a apagar una escena. Los valores negativos producen luces oscuras que realmente quitan la luz de una escena.
 
 El tipo de encabezado DXGItype.h define **DXGI \_ RGBA** como un alias [**de D3DCOLORVALUE**](d3dcolorvalue.md), como se indica a continuación:
 
@@ -89,15 +89,15 @@ Puede usar **DXGI \_ RGBA** con [**IDXGISwapChain1::SetBackgroundColor**](/windo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 y actualización de plataforma para aplicaciones de escritorio de Windows 7 \[ \| aplicaciones para UWP\]<br/>                        |
-| Servidor mínimo compatible<br/> | Windows Server 2012 y actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 R2 \[ \| aplicaciones para UWP\]<br/> |
-| Encabezado<br/>                   | <dl> <dt>DXGItype.h</dt> </dl>                      |
+| Cliente mínimo compatible<br/> | Windows 8 y actualización de plataforma para Windows 7 aplicaciones de escritorio \[ \| para UWP\]<br/>                        |
+| Servidor mínimo compatible<br/> | Windows Server 2012 y actualización de plataforma para Windows aplicaciones de escritorio de UWP de Server 2008 R2 \[ \|\]<br/> |
+| Header<br/>                   | <dl> <dt>DXGItype.h</dt> </dl>                      |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

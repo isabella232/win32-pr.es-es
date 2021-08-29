@@ -1,7 +1,7 @@
 ---
-description: Matriz de patillas que pertenecen a este filtro.
+description: Matriz de pines que pertenecen a este filtro.
 ms.assetid: 98d334ce-c161-40bb-a73f-26ae9ba8b90c
-title: 'Miembro CSource:: m_paStreams (Source. h)'
+title: CSource::m_paStreams miembro (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 07b824c9951f2b90a01c87cdf3ee939ad510cd8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 42d3c211ca196d84de507e450057c787825667cd59f7fc90c6cec2d990b1c284
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812905"
 ---
-# <a name="csourcem_pastreams-member"></a>Miembro CSource:: m \_
+# <a name="csourcem_pastreams-member"></a>Miembro paStreams de CSource::m \_
 
-Matriz de patillas que pertenecen a este filtro.
+Matriz de pines que pertenecen a este filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ CSourceStream **m_paStreams;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CSourceStream **m_paStreams;
 
 <dl> <dt>
 
-[**Clase CSource**](csource.md)
+[**CSource (clase)**](csource.md)
 </dt> </dl>
 
  

@@ -1,58 +1,58 @@
 ---
-title: Modelo de objetos de Media Player de Windows
-description: Modelo de objetos de Media Player de Windows
+title: Reproductor de Windows Media Modelo de objetos
+description: Reproductor de Windows Media Modelo de objetos
 ms.assetid: 386ed03a-6c43-4637-ae45-7023a641b487
 keywords:
-- Media Player de Windows, modelo de objetos
-- Modelo de objetos de Windows Media Player, acerca de
+- Reproductor de Windows Media,modelo de objetos
+- Reproductor de Windows Media de objetos, acerca de
 - modelo de objetos, acerca de
-- Control ActiveX de Windows Media Player, modelo de objetos
-- Control ActiveX, modelo de objetos
-- Control ActiveX móvil de Windows Media Player, modelo de objetos
-- Windows Media Player Mobile, modelo de objetos
-- Kit de desarrollo de software (SDK), modelo de objetos de controles ActiveX de Windows Media Player
-- SDK (kit de desarrollo de software), modelo de objetos de controles ActiveX de Windows Media Player
-- documentación, modelo de objetos de controles ActiveX de Windows Media Player
+- Reproductor de Windows Media ActiveX control,modelo de objetos
+- ActiveX control,modelo de objetos
+- Reproductor de Windows Media Control de ActiveX móvil, modelo de objetos
+- Reproductor de Windows Media Móvil, modelo de objetos
+- kit de desarrollo de software (SDK), Reproductor de Windows Media ActiveX de objetos de control
+- SDK (kit de desarrollo de software), Reproductor de Windows Media ActiveX de objetos de control
+- documentation,Reproductor de Windows Media ActiveX de objetos de control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36eddd318f6db7bbe3e7d43d54aea5d35905c057
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aec9e71a8f63815f7e7233bf6c08355050326bb6e056856bbc2d7985ef64ea7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735425"
 ---
-# <a name="windows-media-player-object-model"></a>Modelo de objetos de Media Player de Windows
+# <a name="windows-media-player-object-model"></a>Reproductor de Windows Media Modelo de objetos
 
-El modelo de objetos de control ActiveX de Microsoft Windows Media Player proporciona interfaces que permiten a los desarrolladores agregar funcionalidad de Windows Media Player y Windows Media Player Mobile a páginas web y otros programas. La documentación del modelo de objetos de controles ActiveX de Windows Media Player se presenta en las secciones siguientes.
+El modelo de objetos Reproductor de Windows Media ActiveX control de Microsoft proporciona interfaces que permiten a los desarrolladores agregar Reproductor de Windows Media y Reproductor de Windows Media Mobile a páginas web y otros programas. La Reproductor de Windows Media ActiveX del modelo de objetos de control se presenta en las secciones siguientes.
 
 > [!Note]  
-> El control ActiveX de Windows Media Player Mobile se basa en el control ActiveX de Windows Media Player y, por tanto, emplea el mismo modelo de objetos. Por lo tanto, a menos que se indique lo contrario, cualquier documentación sobre la incrustación del control ActiveX de Windows Media Player en una página web o una aplicación también es aplicable al control ActiveX de Windows Media Player Mobile.
+> El Reproductor de Windows Media mobile ActiveX se basa en el control Reproductor de Windows Media ActiveX y, por tanto, utiliza el mismo modelo de objetos. Por lo tanto, a menos que se indique lo contrario, cualquier documentación sobre la inserción del control Reproductor de Windows Media ActiveX en una página web o una aplicación también es aplicable al control Reproductor de Windows Media Mobile ActiveX.
 
- 
+ 
 
 
 
 | Sección                                                                                        | Descripción                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Acerca del modelo de objetos de Player](about-the-player-object-model.md)                             | Describe la arquitectura del modelo de objetos en términos abstractos.                                                                                                                  |
-| [Guía de control del reproductor](player-control-guide.md)                                               | Proporciona información sobre el uso del control en diversos escenarios de programación, incluido el uso del control en .NET Framework aplicaciones.                                    |
-| [Referencia del modelo de objetos de Windows Media Player](windows-media-player-object-model-reference.md) | Proporciona páginas de referencia para las interfaces de script, C++ y .NET para el control ActiveX de Windows Media Player. También proporciona documentación para los tipos de enumeración y los atributos multimedia. |
+| [Acerca del modelo de objetos del reproductor](about-the-player-object-model.md)                             | Describe la arquitectura del modelo de objetos en términos abstractos.                                                                                                                  |
+| [Guía de control de reproductor](player-control-guide.md)                                               | Proporciona información sobre el uso del control en una variedad de escenarios de programación, incluido el uso del control en .NET Framework aplicaciones.                                    |
+| [Reproductor de Windows Media Referencia del modelo de objetos](windows-media-player-object-model-reference.md) | Proporciona páginas de referencia para las interfaces de script, C++ y .NET al control Reproductor de Windows Media ActiveX. También proporciona documentación para los tipos de enumeración y los atributos multimedia. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**SDK de Media Player de Windows**](windows-media-player-sdk.md)
+[**Reproductor de Windows Media Sdk**](windows-media-player-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

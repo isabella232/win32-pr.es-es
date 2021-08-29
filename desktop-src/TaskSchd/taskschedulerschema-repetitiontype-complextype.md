@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de repetitionType
-description: Define los elementos secundarios y la información de secuencia para el elemento repite (triggerBaseType).
+title: tipo complejo repetitionType
+description: Define los elementos secundarios y la información de secuencia para el elemento Repetition (triggerBaseType).
 ms.assetid: d2b4b840-3a69-4ff8-ac32-6ec76e7e8788
 keywords:
-- tipo complejo de repetitionType Programador de tareas
+- tipo complejo de tipo repetitionType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aa9ee8c08a79f5db053b772c86929f98a72f011c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3d45f83be8ab8b37211224ec9f284a71cdde6bfc06032c5d05df9e5dee8bf4ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772095"
 ---
-# <a name="repetitiontype-complex-type"></a>Tipo complejo de repetitionType
+# <a name="repetitiontype-complex-type"></a>tipo complejo repetitionType
 
-Define los elementos secundarios y la información de secuencia para el elemento [**repite (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md) .
+Define los elementos secundarios y la información de secuencia [**para el elemento Repetition (triggerBaseType).**](taskschedulerschema-repetition-triggerbasetype-element.md)
 
 ``` syntax
 <xs:complexType name="repetitionType">
@@ -70,7 +70,7 @@ Define los elementos secundarios y la información de secuencia para el elemento
 | Elemento                                                                                   | Tipo    | Descripción                                                                                                            |
 |-------------------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------|
 | [**Duration**](taskschedulerschema-duration-repetitiontype-element.md)                   |         | Especifica cuánto tiempo se repite el patrón. Si no se especifica ningún valor, el patrón se repite indefinidamente.<br/> |
-| [**Interval**](taskschedulerschema-interval-repetitiontype-element.md)                   |         | Especifica la cantidad de tiempo entre cada reinicio de la tarea.<br/>                                              |
+| [**Intervalo**](taskschedulerschema-interval-repetitiontype-element.md)                   |         | Especifica la cantidad de tiempo entre cada reinicio de la tarea.<br/>                                              |
 | [**StopAtDurationEnd**](taskschedulerschema-stopatdurationend-repetitiontype-element.md) | boolean | Especifica que una instancia en ejecución de la tarea se detiene al final de la duración del patrón de repetición.<br/>     |
 
 
@@ -81,8 +81,8 @@ Define los elementos secundarios y la información de secuencia para el elemento
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -90,7 +90,7 @@ Define los elementos secundarios y la información de secuencia para el elemento
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

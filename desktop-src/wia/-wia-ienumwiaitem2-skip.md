@@ -1,7 +1,7 @@
 ---
 description: Omite el número especificado de elementos durante una enumeración de objetos IWiaItem2 disponibles.
 ms.assetid: 7a5e9e1c-1e6e-4de0-9499-bf89e35c19aa
-title: 'IEnumWiaItem2:: Skip (método) (WIA. h)'
+title: Método IEnumWiaItem2::Skip (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 7618aad923136a9a32d8b7fb935050fefe07bff1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8676f997ea509bc6a6632a38230b16cf5477ef807f0de25d1505afd462fe834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814255"
 ---
-# <a name="ienumwiaitem2skip-method"></a>IEnumWiaItem2:: Skip (método)
+# <a name="ienumwiaitem2skip-method"></a>IEnumWiaItem2::Skip (método)
 
 Omite el número especificado de elementos durante una enumeración de objetos [**IWiaItem2**](-wia-iwiaitem2.md) disponibles.
 
@@ -39,12 +39,12 @@ HRESULT Skip(
 
 <dl> <dt>
 
-*cElt* \[ de\]
+*cElt* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
-Especifica el número de elementos que se van a omitir.
+Especifica el número de elementos que se omitirán.
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Especifica el número de elementos que se van a omitir.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,10 +60,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

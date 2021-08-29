@@ -1,28 +1,28 @@
 ---
-description: Utilice las siguientes funciones para consumir y proporcionar datos de rendimiento.
+description: Use las siguientes funciones para consumir y proporcionar datos de rendimiento.
 ms.assetid: a2c97b8b-b1b1-4dd8-8f23-edffaa74d028
 title: Funciones de contadores de rendimiento
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 8ef01ac07ae8507f1005839ab838e2528e76d6ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5d93bb23bf6a7b26d9f869e829416aec3d66ac3daa1c8f408e4959b062b187e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119624975"
 ---
 # <a name="performance-counters-functions"></a>Funciones de contadores de rendimiento
 
-Utilice las siguientes funciones para consumir y proporcionar datos de rendimiento.
+Use las siguientes funciones para consumir y proporcionar datos de rendimiento.
 
 ## <a name="consumer-functions"></a>Funciones de consumidor
 
-### <a name="performance-data-helper-pdh-functions"></a>Funciones del ayudante de datos de rendimiento (PDH)
+### <a name="performance-data-helper-pdh-functions"></a>Funciones del asistente de datos de rendimiento (PDH)
 
-Utilice las funciones de la aplicación auxiliar de datos de rendimiento (PDH) para consumir los datos de rendimiento de los proveedores de datos de rendimiento V1 y V2.
+Use las funciones del asistente de datos de rendimiento (PDH) para consumir datos de rendimiento de los proveedores de datos de rendimiento V1 y V2.
 
 > [!Note]
-> Las aplicaciones de Windows OneCore no pueden usar las funciones de PDH. Si está escribiendo aplicaciones de Windows OneCore, use [las funciones de consumidor de Perflib V2](using-the-perflib-functions-to-consume-counter-data.md).
+> Windows OneCore aplicaciones no pueden usar las funciones PDH. Si va a escribir aplicaciones Windows OneCore, use las funciones de consumidor [de PerfLib V2](using-the-perflib-functions-to-consume-counter-data.md).
 
 - [*CounterPathCallBack*](/windows/desktop/api/Pdh/nc-pdh-counterpathcallback)
 - [**PdhAddCounter**](/windows/desktop/api/Pdh/nf-pdh-pdhaddcountera)
@@ -46,8 +46,8 @@ Utilice las funciones de la aplicación auxiliar de datos de rendimiento (PDH) p
 - [**PdhEnumObjects**](/windows/desktop/api/Pdh/nf-pdh-pdhenumobjectsa)
 - [**PdhEnumObjectsH**](/windows/desktop/api/Pdh/nf-pdh-pdhenumobjectsha)
 - [**PdhExpandCounterPath**](/windows/desktop/api/Pdh/nf-pdh-pdhexpandcounterpatha)
-- [**PdhExpandWildCardPath**](/windows/desktop/api/Pdh/nf-pdh-pdhexpandwildcardpatha)
-- [**PdhExpandWildCardPathH**](/windows/desktop/api/Pdh/nf-pdh-pdhexpandwildcardpathha)
+- [**PdhExpand HaddCardPath**](/windows/desktop/api/Pdh/nf-pdh-pdhexpandwildcardpatha)
+- [**PdhExpand HaddCardPathH**](/windows/desktop/api/Pdh/nf-pdh-pdhexpandwildcardpathha)
 - [**PdhFormatFromRawValue**](/windows/desktop/api/Pdh/nf-pdh-pdhformatfromrawvalue)
 - [**PdhGetCounterInfo**](/windows/desktop/api/Pdh/nf-pdh-pdhgetcounterinfoa)
 - [**PdhGetCounterTimeBase**](/windows/desktop/api/Pdh/nf-pdh-pdhgetcountertimebase)
@@ -85,10 +85,10 @@ Utilice las funciones de la aplicación auxiliar de datos de rendimiento (PDH) p
 
 ### <a name="perflib-v2-consumer-functions"></a>Funciones de consumidor de PerfLib V2
 
-Use las funciones de consumidor de PerfLib v2 para consumir datos de rendimiento de los proveedores de datos de rendimiento V2 si no puede utilizar las funciones de la aplicación auxiliar de datos de rendimiento (PDH). Estas funciones se pueden usar al escribir aplicaciones de OneCore para recopilar los valores V2 o cuando es necesario recopilar los valores de V2 específicos con las dependencias y la sobrecarga mínimas.
+Use las funciones perfLib V2 Consumer para consumir datos de rendimiento de proveedores de datos de rendimiento V2 si no puede usar las funciones del Asistente de datos de rendimiento (PDH). Estas funciones se pueden usar al escribir OneCore aplicaciones para recopilar conjuntos de contadores V2 o cuando necesite recopilar conjuntos de contadores V2 específicos con dependencias mínimas y sobrecarga.
 
 > [!TIP]
-> Las funciones de consumidor de PerfLib V2 son más difíciles de usar que las funciones de la aplicación auxiliar de datos de rendimiento (PDH) y solo admiten la recopilación de datos de proveedores de V2. Las funciones PDH deben ser preferibles para la mayoría de las aplicaciones.
+> Las funciones perfLib V2 Consumer son más difíciles de usar que las funciones del asistente de datos de rendimiento (PDH) y solo admiten la recopilación de datos de proveedores V2. Las funciones PDH deben ser preferidas para la mayoría de las aplicaciones.
 
 - [**PerfAddCounters**](/windows/desktop/api/Perflib/nf-perflib-perfaddcounters)
 - [**PerfCloseQueryHandle**](/windows/desktop/api/Perflib/nf-perflib-perfclosequeryhandle)
@@ -102,15 +102,15 @@ Use las funciones de consumidor de PerfLib v2 para consumir datos de rendimiento
 
 ## <a name="provider-functions"></a>Funciones de proveedor
 
-### <a name="perflib-v2-provider-functions"></a>Funciones de proveedor de PerfLib V2
+### <a name="perflib-v2-provider-functions"></a>Funciones del proveedor de PerfLib V2
 
-Los [proveedores de datos de rendimiento V2](providing-counter-data-using-version-2-0.md) usan las siguientes funciones:
+[Los proveedores de datos de rendimiento V2](providing-counter-data-using-version-2-0.md) usan las siguientes funciones:
 
 - [*AllocateMemory*](/windows/desktop/api/Perflib/nc-perflib-perf_mem_alloc)
 - [*ControlCallback*](/windows/desktop/api/Perflib/nc-perflib-perflibrequest)
-- [**Limpieza**](countercleanup.md)
-- [**Contrainicializar**](counterinitialize.md)
-- [*FreeMemory (*](/windows/desktop/api/Perflib/nc-perflib-perf_mem_free)
+- [**CounterCleanup**](countercleanup.md)
+- [**CounterInitialize**](counterinitialize.md)
+- [*FreeMemory*](/windows/desktop/api/Perflib/nc-perflib-perf_mem_free)
 - [**PerfCreateInstance**](/windows/desktop/api/Perflib/nf-perflib-perfcreateinstance)
 - [**PerfDecrementULongCounterValue**](/windows/desktop/api/Perflib/nf-perflib-perfdecrementulongcountervalue)
 - [**PerfDecrementULongLongCounterValue**](/windows/desktop/api/Perflib/nf-perflib-perfdecrementulonglongcountervalue)
@@ -127,20 +127,20 @@ Los [proveedores de datos de rendimiento V2](providing-counter-data-using-versio
 - [**PerfStopProvider**](/windows/desktop/api/Perflib/nf-perflib-perfstopprovider)
 
 > [!Note]
-> Para instalar y desinstalar proveedores de V2, use las herramientas **LODCTR** y **Unlodctr** . Las funciones **LoadPerfCounterTextStrings** y **UnloadPerfCounterTextStrings** no se pueden usar para instalar y desinstalar proveedores de V2.
+> Para instalar y desinstalar proveedores V2, use las herramientas **lodctr** **y unlodctr.** Las **funciones LoadPerfCounterTextStrings** y **UnloadPerfCounterTextStrings** no se pueden usar para instalar y desinstalar proveedores V2.
 
-### <a name="performance-dll-functions"></a>Funciones de DLL de rendimiento
+### <a name="performance-dll-functions"></a>Funciones DLL de rendimiento
 
-[V1 los proveedores de datos de rendimiento](providing-counter-data-using-a-performance-dll.md) implementan un archivo DLL que proporciona las siguientes funciones:
+[Los proveedores de datos de rendimiento V1](providing-counter-data-using-a-performance-dll.md) implementan un archivo DLL que proporciona las siguientes funciones:
 
 - [*ClosePerformanceData*](/windows/win32/api/winperf/nc-winperf-pm_close_proc)
 - [*CollectPerformanceData*](/windows/win32/api/winperf/nc-winperf-pm_collect_proc)
 - [*OpenPerformanceData*](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85))
 
 > [!Note]
-> Debido a problemas de rendimiento y confiabilidad significativos, los proveedores de datos de rendimiento v1 están desusados. Aunque todavía puede usar un archivo DLL de extensión de rendimiento para proporcionar datos de contador, se recomienda [crear un proveedor V2](providing-counter-data-using-version-2-0.md) en su lugar. También se recomienda reemplazar los proveedores de v1 existentes por proveedores de V2.
+> Debido a problemas importantes de rendimiento y confiabilidad, los proveedores de datos de rendimiento V1 están en desuso. Aunque todavía puede usar un archivo DLL de extensión de rendimiento para proporcionar datos de contador, se recomienda crear un [proveedor V2](providing-counter-data-using-version-2-0.md) en su lugar. También se recomienda reemplazar los proveedores V1 existentes por proveedores V2.
 
-Los proveedores v1 se pueden instalar y desinstalar mediante las herramientas **LODCTR** y **Unlodctr** , o mediante una llamada a las siguientes funciones:
+Los proveedores V1 se pueden instalar y desinstalar mediante las herramientas **lodctr** y **unlodctr** o mediante una llamada a las siguientes funciones:
 
 - [**LoadPerfCounterTextStrings**](/windows/desktop/api/Loadperf/nf-loadperf-loadperfcountertextstringsa)
 - [**UnloadPerfCounterTextStrings**](/windows/desktop/api/Loadperf/nf-loadperf-unloadperfcountertextstringsa)

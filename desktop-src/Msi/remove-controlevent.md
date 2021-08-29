@@ -1,43 +1,43 @@
 ---
-description: El instalador recibe una notificación a través de este evento cuando se selecciona una característica o todas las características para su eliminación mientras se mantiene el cuadro de diálogo presente en ejecución.
+description: El instalador se notifica a través de este evento cuando se selecciona una característica o todas las características para su eliminación mientras se mantiene en ejecución el cuadro de diálogo actual.
 ms.assetid: dabe44f7-97dd-4037-80e5-f289bab6d4b3
-title: Quitar ControlEvent,
+title: Quitar ControlEvent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f214330fc16704fd4eef50bc8c75fc10fc2823d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d59a22ab4fc321ceaf661aed1ba37970806beb8afe87e90ee9dbc59fa52e8fae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821385"
 ---
-# <a name="remove-controlevent"></a>Quitar ControlEvent,
+# <a name="remove-controlevent"></a>Quitar ControlEvent
 
-El instalador recibe una notificación a través de este evento cuando se selecciona una característica o todas las características para su eliminación mientras se mantiene el cuadro de diálogo presente en ejecución.
+El instalador se notifica a través de este evento cuando se selecciona una característica o todas las características para su eliminación mientras se mantiene en ejecución el cuadro de diálogo actual.
 
-Este evento puede ser publicado por un [control Pushbutton](pushbutton-control.md), un [control CheckBox](checkbox-control.md)o un [control SelectionTree](selectiontree-control.md). Este evento se debe crear en la [tabla ControlEvent,](controlevent-table.md).
+Este evento se puede publicar mediante un [control PushButton](pushbutton-control.md), un [control CheckBox](checkbox-control.md)o un [control SelectionTree](selectiontree-control.md). Este evento debe crearse en la [tabla ControlEvent](controlevent-table.md).
 
-Este ControlEvent, requiere que la interfaz de usuario se ejecute en el nivel de interfaz de usuario [*completo*](f-gly.md) . Este evento no funcionará con una [*interfaz*](r-gly.md) de usuario [*básica*](b-gly.md)o no reducida. Para obtener más información, consulte niveles de la [interfaz de usuario](user-interface-levels.md).
+Este control ControlEvent requiere que la interfaz de usuario se ejecute en el [*nivel completo de la interfaz de*](f-gly.md) usuario. Este evento no funcionará con una interfaz de usuario [*reducida o*](r-gly.md) una interfaz de [*usuario básica.*](b-gly.md) Para obtener información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
 ## <a name="published-by"></a>Publicado por
 
-Este ControlEvent, lo publica el instalador.
+El instalador publica este control ControlEvent.
 
 ## <a name="argument"></a>Argumento
 
 Cadena que es el nombre de la característica o "ALL".
 
-## <a name="action-on-subscribers"></a>Acción en los suscriptores
+## <a name="action-on-subscribers"></a>Acción en suscriptores
 
-Este ControlEvent, no realiza ninguna acción en los suscriptores.
+Este control ControlEvent no realiza ninguna acción en los suscriptores.
 
-## <a name="action-by-publisher-when-subscriber-activated"></a>Acción por publicador cuando el suscriptor está activado
+## <a name="action-by-publisher-when-subscriber-activated"></a>Acción por Publisher cuando se activa el suscriptor
 
-El instalador mantiene el cuadro de diálogo presente en ejecución y lo notifica al instalador.
+El instalador mantiene el cuadro de diálogo actual en ejecución y notifica al instalador.
 
 ## <a name="typical-use"></a>Uso típico
 
-Control [Pushbutton](pushbutton-control.md) en un cuadro de diálogo modal asociado a este evento.
+Control [PushButton](pushbutton-control.md) en un cuadro de diálogo modal asociado a este evento.
 
  
 

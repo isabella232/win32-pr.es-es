@@ -1,12 +1,12 @@
 ---
 title: Propiedad GatewayPreAuthRequirement de IMsRdpClientTransportSettings2
-description: Especifica o recupera la configuración de si la característica de contraseña de un solo tiempo (OTP) de Escritorio remoto puerta de enlace de escritorio remoto está habilitada.
+description: Especifica o recupera la configuración de si la característica de contraseña de un solo uso (OTP) Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto) está habilitada.
 ms.assetid: cc8f7ebb-16ba-45ed-ba66-de4a339946d0
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayPreAuthRequirement
-- Propiedad GatewayPreAuthRequirement Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings2, propiedad GatewayPreAuthRequirement
+- Propiedad GatewayPreAuthRequirement Servicios de Escritorio remoto
+- Propiedad GatewayPreAuthRequirement Servicios de Escritorio remoto interfaz , IMsRdpClientTransportSettings2
+- Interfaz IMsRdpClientTransportSettings2 Servicios de Escritorio remoto , propiedad GatewayPreAuthRequirement
 topic_type:
 - apiref
 api_name:
@@ -19,22 +19,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 058ca92237a4f9729f526030f5f8a836ce1c739c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 72dd588cd3280128dde654497de359a901182935035213e420831857ab5c9f93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771265"
 ---
-# <a name="imsrdpclienttransportsettings2gatewaypreauthrequirement-property"></a>IMsRdpClientTransportSettings2:: GatewayPreAuthRequirement (propiedad)
+# <a name="imsrdpclienttransportsettings2gatewaypreauthrequirement-property"></a>Propiedad IMsRdpClientTransportSettings2::GatewayPreAuthRequirement
 
-Especifica o recupera la configuración de si la característica de contraseña de un solo tiempo (OTP) de Escritorio remoto puerta de enlace de escritorio remoto está habilitada.
+Especifica o recupera la configuración de si la característica de contraseña de un solo uso (OTP) Escritorio remoto Gateway (Puerta de enlace de Escritorio remoto) está habilitada.
 
-Cuando OTP está habilitado, **GatewayPreAuthRequirement** intenta consultar la cookie de OTP desde el almacén de cookies de Internet mediante la propiedad [**GatewayPreAuthServerAddr**](imsrdpclienttransportsettings2-gatewaypreauthserveraddr.md) . Si se realiza correctamente, **GatewayPreAuthRequirement** envía la cookie de OTP al servidor de Firewall (como Microsoft Internet Security and Acceleration \[ ISA \] Server) para la autenticación previa.
+Cuando OTP está habilitado, **GatewayPreAuthRequirement** intenta consultar la cookie de OTP desde el almacén de cookies de Internet mediante la [**propiedad GatewayPreAuthServerAddr.**](imsrdpclienttransportsettings2-gatewaypreauthserveraddr.md) Si se realiza **correctamente, GatewayPreAuthRequirement** envía la cookie de OTP al servidor de firewall (como el servidor ISA de aceleración y seguridad de Internet de Microsoft) para la \[ \] autenticación previa.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -55,13 +55,13 @@ Si se establece en 1, la característica OTP está habilitada. Si se establece e
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista con SP1<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                    |

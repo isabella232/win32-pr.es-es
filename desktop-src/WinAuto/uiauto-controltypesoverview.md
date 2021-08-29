@@ -1,29 +1,29 @@
 ---
 title: Información general sobre tipos de control de UI Automation
-description: Los tipos de control de automatización de la interfaz de usuario de Microsoft son propiedades que sirven como identificadores conocidos que indican el tipo de control que representa un determinado elemento de la interfaz de usuario, como un cuadro combinado o un botón.
+description: Los Automatización de la interfaz de usuario de control de Microsoft son propiedades que sirven como identificadores conocidos que indican el tipo de control que representa un elemento de interfaz de usuario determinado, como un cuadro combinado o un botón.
 ms.assetid: 61818b64-09cb-4443-acca-4743941c48d3
 keywords:
-- Automatización de la interfaz de usuario, información general sobre tipos de control
-- UI Automation, UIA_LocalizedControlTypePropertyId propiedad
-- tipos de controles, acerca de
+- Automatización de la interfaz de usuario, información general sobre los tipos de control
+- Automatización de la interfaz de usuario,UIA_LocalizedControlTypePropertyId propiedad
+- tipos de control, acerca de
 - tipos de control, requisitos
 - tipos de control, requisitos previos
-- tipos de control, predefinidos
-- tipos de control, propiedad UIA_LocalizedControlTypePropertyId
-- tipos de controles predefinidos
-- Propiedad UIA_LocalizedControlTypePropertyId
+- tipos de control predefinidos
+- tipos de control, UIA_LocalizedControlTypePropertyId propiedad
+- tipos de control predefinidos
+- UIA_LocalizedControlTypePropertyId propiedad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b504de2c8f0ae660a27b3b16fa4537630a468f5c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ef59d46e8f0ad00d2613bcec43ee914c71c9edbc1c8501cd2a714df2b883f63f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104533208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795485"
 ---
 # <a name="ui-automation-control-types-overview"></a>Información general sobre tipos de control de UI Automation
 
-Los tipos de control de automatización de la interfaz de usuario de Microsoft son propiedades que sirven como identificadores conocidos que indican el tipo de control que representa un determinado elemento de la interfaz de usuario, como un cuadro combinado o un botón. Las aplicaciones cliente utilizan el tipo para identificar las capacidades de un control y para determinar cómo interactuar con él.
+Los Automatización de la interfaz de usuario de control de Microsoft son propiedades que sirven como identificadores conocidos que indican el tipo de control que representa un elemento de interfaz de usuario determinado, como un cuadro combinado o un botón. Las aplicaciones cliente usan el tipo para identificar las funcionalidades de un control y determinar cómo interactuar con él.
 
 Este tema contiene las siguientes secciones:
 
@@ -34,65 +34,65 @@ Este tema contiene las siguientes secciones:
 
 ## <a name="ui-automation-control-type-requisites"></a>Requisitos de los tipos de control de la automatización de la interfaz de usuario
 
-Cada tipo de control de automatización de la interfaz de usuario tiene un conjunto de condiciones asociadas a él. Cuando un proveedor asigna un tipo de control a un control, el proveedor debe asegurarse de que el control cumpla todas las condiciones asociadas a ese tipo de control. Entre las condiciones se incluyen las siguientes:
+Cada Automatización de la interfaz de usuario tipo de control tiene un conjunto de condiciones asociadas. Cuando un proveedor asigna un tipo de control a un control, el proveedor debe asegurarse de que el control cumple todas las condiciones asociadas a ese tipo de control. Entre las condiciones se incluyen las siguientes:
 
--   Patrones de control de UI Automation: cada tipo de control tiene un conjunto de patrones de control que el control debe admitir, un conjunto que es opcional y un conjunto que el control no debe admitir.
+-   Automatización de la interfaz de usuario de control: cada tipo de control tiene un conjunto de patrones de control que el control debe admitir, un conjunto que es opcional y un conjunto que el control no debe admitir.
 -   Valores de propiedad de la automatización de la interfaz de usuario: cada tipo de control tiene un conjunto de propiedades que el control debe admitir.
 -   Eventos de automatización de la interfaz de usuario: cada tipo de control tiene un conjunto de eventos que el control debe admitir.
 -   Estructura de árbol de automatización de la interfaz de usuario: cada tipo de control define el modo en que debe aparecer el control en la estructura de árbol de automatización de la interfaz de usuario.
 
-Cuando un control cumple las condiciones de un tipo de control determinado, el valor de la propiedad [**IUIAutomationElement:: CurrentControlType**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentcontroltype) (o [**IUIAutomationElement:: CachedControlType**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedcontroltype)) indicará ese tipo de control.
+Cuando un control cumple las condiciones de un tipo de control determinado, el valor de la propiedad [**IUIAutomationElement::CurrentControlType**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentcontroltype) (o [**IUIAutomationElement::CachedControlType)**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedcontroltype)indicará ese tipo de control.
 
-Si el control no cumple las especificaciones para un tipo de control determinado, use [**UIA \_ CUSTOMCONTROLTYPEID**](uiauto-controltype-ids.md) como identificador de tipo de control y describa por completo el control mediante las propiedades y los patrones de control pertinentes. También puede establecer la propiedad [**\_ LocalizedControlTypePropertyId de UIA**](uiauto-automation-element-propids.md) en una cadena que describa mejor el tipo del control.
+Si el control no cumple las especificaciones de un tipo de control determinado, use [**\_ CustomControlTypeId**](uiauto-controltype-ids.md) de UIA como identificador de tipo de control y describa completamente el control mediante las propiedades y patrones de control pertinentes. También puede establecer la propiedad [**\_ UIA LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) en una cadena que describa mejor el tipo de control.
 
 ## <a name="the-localizedcontroltype-property"></a>La propiedad LocalizedControlType
 
-Si usa un tipo de control predefinido para describir el control, use el valor predeterminado de la [**propiedad \_ LocalizedControlTypePropertyId de UIA**](uiauto-automation-element-propids.md) y permita que la automatización de la interfaz de usuario proporcione una cadena localizada para que los proveedores se expongan correctamente. Si no puede usar un tipo de control predefinido para describir el control, establezca la propiedad **\_ LocalizedControlTypePropertyId de UIA** en una cadena traducida que describa con precisión el tipo de control. La cadena debe ser concisa, pero lo suficiente como para que una tecnología de asistencia, como un lector de pantalla, pueda utilizarla en la interfaz de usuario para informar al usuario del tipo del control.
+Si usa un tipo de control predefinido para describir el control, use el valor predeterminado de la propiedad [**\_ UIA LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) y permita que Automatización de la interfaz de usuario proporcione una cadena localizada para que los proveedores exponan correctamente. Si no puede usar un tipo de control predefinido para describir el control, establezca la propiedad **\_ UIA LocalizedControlTypePropertyId** en una cadena localizada que describa con precisión el tipo del control. La cadena debe ser concisa, pero lo suficientemente precisa como para que una tecnología de asistencia, como un lector de pantalla, pueda usarla en la interfaz de usuario para informar al usuario del tipo del control.
 
 ## <a name="current-ui-automation-control-types"></a>Tipos actuales de control de automatización de la interfaz de usuario
 
-En los temas siguientes se describen los tipos de control de automatización de la interfaz de usuario. Para cada tipo de control, la descripción incluye el conjunto de condiciones que un control del tipo especificado debe admitir:
+En los temas siguientes se describen Automatización de la interfaz de usuario tipos de control. Para cada tipo de control, la descripción incluye el conjunto de condiciones que debe admitir un control del tipo especificado:
 
--   AppBar (tipo de control)
--   [Button (tipo de control)](uiauto-supportbuttoncontroltype.md)
--   [Calendar (tipo de control)](uiauto-supportcalendarcontroltype.md)
--   [CheckBox (tipo de control)](uiauto-supportcheckboxcontroltype.md)
--   [ComboBox (tipo de control)](uiauto-supportcomboboxcontroltype.md)
--   [DataGrid (tipo de control)](uiauto-supportdatagridcontroltype.md)
--   [DataItem (tipo de control)](uiauto-supportdataitemcontroltype.md)
--   [Document (tipo de control)](uiauto-supportdocumentcontroltype.md)
+-   Tipo de control AppBar
+-   [Tipo de control Button](uiauto-supportbuttoncontroltype.md)
+-   [Tipo de control Calendar](uiauto-supportcalendarcontroltype.md)
+-   [Tipo de control CheckBox](uiauto-supportcheckboxcontroltype.md)
+-   [Tipo de control ComboBox](uiauto-supportcomboboxcontroltype.md)
+-   [Tipo de control DataGrid](uiauto-supportdatagridcontroltype.md)
+-   [Tipo de control DataItem](uiauto-supportdataitemcontroltype.md)
+-   [Tipo de control De documento](uiauto-supportdocumentcontroltype.md)
 -   [Editar tipo de control](uiauto-supporteditcontroltype.md)
--   [Group (tipo de control)](uiauto-supportgroupcontroltype.md)
--   [Header (tipo de control)](uiauto-supportheadercontroltype.md)
--   [HeaderItem (tipo de control)](uiauto-supportheaderitemcontroltype.md)
--   [HYPERLINK (tipo de control)](uiauto-supporthyperlinkcontroltype.md)
--   [Image (tipo de control)](uiauto-supportimagecontroltype.md)
--   [List (tipo de control)](uiauto-supportlistcontroltype.md)
--   [ListItem (tipo de control)](uiauto-supportlistitemcontroltype.md)
--   [Menu (tipo de control)](uiauto-supportmenucontroltype.md)
--   [MenuBar (tipo de control)](uiauto-supportmenubarcontroltype.md)
+-   [Tipo de control Group](uiauto-supportgroupcontroltype.md)
+-   [Tipo de control De encabezado](uiauto-supportheadercontroltype.md)
+-   [Tipo de control HeaderItem](uiauto-supportheaderitemcontroltype.md)
+-   [Tipo de control Hyperlink](uiauto-supporthyperlinkcontroltype.md)
+-   [Tipo de control image](uiauto-supportimagecontroltype.md)
+-   [Tipo de control List](uiauto-supportlistcontroltype.md)
+-   [Tipo de control ListItem](uiauto-supportlistitemcontroltype.md)
+-   [Tipo de control menu](uiauto-supportmenucontroltype.md)
+-   [Tipo de control MenuBar](uiauto-supportmenubarcontroltype.md)
 -   [MenuItem (tipo de control)](uiauto-supportmenuitemcontroltype.md)
--   [Pane (tipo de control)](uiauto-supportpanecontroltype.md)
--   [ProgressBar (tipo de control)](uiauto-supportprogressbarcontroltype.md)
--   [RadioButton (tipo de control)](uiauto-supportradiobuttoncontroltype.md)
--   [ScrollBar (tipo de control)](uiauto-supportscrollbarcontroltype.md)
--   [SemanticZoom (tipo de control)](/windows/desktop/WinAuto/uiauto-supportsemanticzoomcontroltype)
--   [Separator (tipo de control)](uiauto-supportseparatorcontroltype.md)
--   [Slide (tipo de control)](uiauto-supportslidercontroltype.md)
--   [Spinner (tipo de control)](uiauto-supportspinnercontroltype.md)
--   [SplitButton (tipo de control)](uiauto-supportsplitbuttoncontroltype.md)
--   [StatusBar (tipo de control)](uiauto-supportstatusbarcontroltype.md)
--   [Tab (tipo de control)](uiauto-supporttabcontroltype.md)
--   [TabItem (tipo de control)](uiauto-supporttabitemcontroltype.md)
--   [Table (tipo de control)](uiauto-supporttablecontroltype.md)
--   [Text (tipo de control)](uiauto-supporttextcontroltype.md)
--   [Thumb (tipo de control)](uiauto-supportthumbcontroltype.md)
--   [TitleBar (tipo de control)](uiauto-supporttitlebarcontroltype.md)
--   [ToolBar (tipo de control)](uiauto-supporttoolbarcontroltype.md)
--   [ToolTip (tipo de control)](uiauto-supporttooltipcontroltype.md)
--   [Tree (tipo de control)](uiauto-supporttreecontroltype.md)
+-   [Tipo de control Panel](uiauto-supportpanecontroltype.md)
+-   [Tipo de control ProgressBar](uiauto-supportprogressbarcontroltype.md)
+-   [Tipo de control RadioButton](uiauto-supportradiobuttoncontroltype.md)
+-   [Tipo de control ScrollBar](uiauto-supportscrollbarcontroltype.md)
+-   [Tipo de control SemanticZoom](/windows/desktop/WinAuto/uiauto-supportsemanticzoomcontroltype)
+-   [Tipo de control Separador](uiauto-supportseparatorcontroltype.md)
+-   [Tipo de control deslizante](uiauto-supportslidercontroltype.md)
+-   [Tipo de control Spinner](uiauto-supportspinnercontroltype.md)
+-   [Tipo de control SplitButton](uiauto-supportsplitbuttoncontroltype.md)
+-   [Tipo de control StatusBar](uiauto-supportstatusbarcontroltype.md)
+-   [Tipo de control Tab](uiauto-supporttabcontroltype.md)
+-   [Tipo de control TabItem](uiauto-supporttabitemcontroltype.md)
+-   [Tipo de control Table](uiauto-supporttablecontroltype.md)
+-   [Tipo de control Text](uiauto-supporttextcontroltype.md)
+-   [Tipo de control Thumb](uiauto-supportthumbcontroltype.md)
+-   [Tipo de control TitleBar](uiauto-supporttitlebarcontroltype.md)
+-   [Tipo de control ToolBar](uiauto-supporttoolbarcontroltype.md)
+-   [Tipo de control ToolTip](uiauto-supporttooltipcontroltype.md)
+-   [Tipo de control Tree](uiauto-supporttreecontroltype.md)
 -   [Tipo de control TreeItem](uiauto-supporttreeitemcontroltype.md)
--   [Window (tipo de control)](uiauto-supportwindowcontroltype.md)
+-   [Tipo de control De ventana](uiauto-supportwindowcontroltype.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -104,10 +104,10 @@ En los temas siguientes se describen los tipos de control de automatización de 
 [Identificadores de tipo de control](uiauto-controltype-ids.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Compatibilidad con tipos de control de UI Automation](uiauto-supportinguiautocontroltypes.md)
+[Compatibilidad con Automatización de la interfaz de usuario de control](uiauto-supportinguiautocontroltypes.md)
 </dt> <dt>
 
 [Compatibilidad de UI Automation con controles estándar](uiauto-controlsupport.md)
@@ -116,6 +116,6 @@ En los temas siguientes se describen los tipos de control de automatización de 
 [Fundamentos de UI Automation](entry-uiautocore-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

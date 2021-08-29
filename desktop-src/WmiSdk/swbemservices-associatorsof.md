@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 95dc8e16939c345b6f885980dd2f1194f180ac5e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4247b04c70cca8da8527d0d9f19ec872c35ec2ee610e3b0e98d88fbffbbfd3d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794405"
 ---
 # <a name="swbemservicesassociatorsof-method"></a>Método SWbemServices.AssociatorsOf
 
@@ -59,7 +59,7 @@ objWbemObjectSet = .AssociatorsOf( _
 *strObjectPath* 
 </dt> <dd>
 
-Necesario. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Obligatorio. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Valor booleano que indica si se debe devolver una lista de nombres de clase en l
 *bSchemaOnly* \[ Opcional\]
 </dt> <dd>
 
-Valor booleano que indica si la consulta se aplica al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE**, el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
+Valor booleano que indica si la consulta se aplica al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE,** el conjunto de puntos de conexión devueltos representa clases que están asociadas adecuadamente a la clase de origen en el esquema.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Entero que especifica marcas adicionales para la operación. El valor predetermi
 
 </dt> <dd>
 
-Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avance suelen ser mucho más rápidos y usan menos memoria que los enumeradores convencionales, pero no permiten llamadas a [**SWbemObject.Clone. \_**](swbemobject-clone-.md)
+Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avance suelen ser mucho más rápidos y usan menos memoria que los enumeradores convencionales, pero no permiten llamadas a [**SWbemObject.Clone \_**](swbemobject-clone-.md).
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ No se encontró el elemento solicitado.
 
 ## <a name="remarks"></a>Comentarios
 
-El método recupera las instancias de recursos administrados que están asociados a un recurso especificado a través de una o varias clases de asociación. Proporcione la ruta de acceso del objeto para el punto de conexión de origen y AssociatorsOf devuelve los recursos administrados en el punto de conexión opuesto. El método AssociatorsOf realiza la misma función que realiza la consulta ASSOCIATORS OF WQL.
+El método recupera las instancias de recursos administrados que están asociados a un recurso especificado a través de una o varias clases de asociación. Proporcione la ruta de acceso del objeto para el punto de conexión de origen y AssociatorsOf devuelve los recursos administrados en el extremo opuesto. El método AssociatorsOf realiza la misma función que la consulta ASSOCIATORS OF WQL.
 
 Para obtener más información sobre la consulta ASSOCIATORS OF WQL, las instancias de origen y los puntos de conexión, vea [la instrucción ASSOCIATORS OF](associators-of-statement.md).
 
@@ -248,11 +248,11 @@ Para obtener más información sobre la consulta ASSOCIATORS OF WQL, las instanc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -260,7 +260,7 @@ Para obtener más información sobre la consulta ASSOCIATORS OF WQL, las instanc
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

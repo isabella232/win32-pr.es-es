@@ -3,7 +3,7 @@ title: TCM_SETUNICODEFORMAT mensaje (Commctrl.h)
 description: 'TCM_SETUNICODEFORMAT mensaje: establece la marca de formato de caracteres Unicode para el control.'
 ms.assetid: 4a9bacfc-d1b7-432a-9b61-b0fe18576679
 keywords:
-- TCM_SETUNICODEFORMAT mensaje Controles de Windows
+- TCM_SETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b84f944be9bd20897d25e4b111f55ced558a43
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9192f6172505b94ad5c5312d021fea1191d376d3c7a8b02254355c33c53abe50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876225"
 ---
 # <a name="tcm_setunicodeformat-message"></a>Mensaje \_ SETUNICODEFORMAT de TCM
 
@@ -51,15 +51,15 @@ Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodefor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
