@@ -1,23 +1,23 @@
 ---
-description: Se envía una vez a una ventana una vez que entra en el bucle modal de movimiento o de ajuste de tamaño.
+description: Se envía una vez a una ventana después de entrar en el bucle modal de movimiento o tamaño.
 ms.assetid: fe09db71-2c79-47f2-b575-516e960915d4
-title: Mensaje de WM_ENTERSIZEMOVE (Winuser. h)
+title: WM_ENTERSIZEMOVE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfaf27c888311991b88278a9d4e69482efd06111
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0ffbd3ac8c65b68998a37e64df2593c183b61adb3f8eba1fa140251174b503d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118436260"
 ---
-# <a name="wm_entersizemove-message"></a>Mensaje de ENTERSIZEMOVE de WM \_
+# <a name="wm_entersizemove-message"></a>Mensaje \_ DE WM ENTERSIZEMOVE
 
-Se envía una vez a una ventana una vez que entra en el bucle modal de movimiento o de ajuste de tamaño. La ventana entra en el bucle modal de movimiento o cambio de tamaño cuando el usuario hace clic en la barra de título o en el borde de tamaño de la ventana, o cuando la ventana pasa el mensaje de [**WM \_ SYSCOMMAND**](../menurc/wm-syscommand.md) a la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) y el parámetro *wParam* del mensaje especifica el valor **SC \_ Move** o **SC \_ size** . La operación se completa cuando [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) devuelve.
+Se envía una vez a una ventana después de entrar en el bucle modal de movimiento o tamaño. La ventana entra en el bucle modal de movimiento o tamaño cuando el usuario hace clic en la barra de título o el borde de tamaño de la ventana, o cuando la ventana pasa el mensaje [**\_ SYSCOMMAND**](../menurc/wm-syscommand.md) de WM a la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) y el parámetro *wParam* del mensaje especifica el valor **SC \_ MOVE** **o SC \_ SIZE.** La operación se completa cuando [**se devuelve DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 
-El sistema envía el mensaje de **WM \_ ENTERSIZEMOVE** independientemente de si está habilitada la opción de arrastrar ventanas completas.
+El sistema envía el **mensaje \_ WM ENTERSIZEMOVE** independientemente de si está habilitado el arrastre de ventanas completa.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -54,15 +54,15 @@ Una aplicación debe devolver cero si procesa este mensaje.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -72,13 +72,13 @@ Una aplicación debe devolver cero si procesa este mensaje.
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**EXITSIZEMOVE de WM \_**](wm-exitsizemove.md)
+[**WM \_ EXITSIZEMOVE**](wm-exitsizemove.md)
 </dt> <dt>
 
-[**SYSCOMMAND de WM \_**](../menurc/wm-syscommand.md)
+[**WM \_ SYSCOMMAND**](../menurc/wm-syscommand.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Windows](windows.md)

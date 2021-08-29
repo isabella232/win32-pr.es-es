@@ -1,6 +1,6 @@
 ---
-title: '\_Constantes de error de certificado EAP (Eaphosterror. h)'
-description: Defina los errores relacionados con los certificados comunes a todas las tecnologías de API de EAPHost.
+title: Constantes de error de CERT de EAP \_ (Eaphosterror.h)
+description: Defina errores relacionados con certificados comunes a todas las tecnologías de API de EAPHost.
 ms.assetid: 12f626e1-520a-4aba-954b-769c3062a38c
 topic_type:
 - apiref
@@ -22,20 +22,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0543636f36d823b5557ad2f5a5f7cb000d93259a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b373b3d28ce3c46cab92fa2a089e49e8158010681da3960e1cc4f0b58c4c2a8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984295"
 ---
-# <a name="eap_cert-error-constants"></a>\_Constantes de error de certificado EAP
+# <a name="eap_cert-error-constants"></a>Constantes \_ de error de EAP CERT
 
-Estas constantes definen errores relacionados con los certificados comunes a todas las tecnologías de API de EAPHost.
+Estas constantes definen errores relacionados con certificados comunes a todas las tecnologías de API de EAPHost.
 
 <dl> <dt>
 
-<span id="_EAP_CERT_FIRST"></span><span id="_eap_cert_first"></span>**\_\_certificado EAP \_ primero**
+<span id="_EAP_CERT_FIRST"></span><span id="_eap_cert_first"></span>**\_EAP \_ CERT \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x0
@@ -43,12 +43,12 @@ Estas constantes definen errores relacionados con los certificados comunes a tod
 
 
 
-Define el límite de los informes de errores; en **\_ \_ \_ último** lugar, se producirá un error de certificado entre el certificado **\_ EAP \_ \_** y el certificado EAP.
+Define el límite de los informes de errores; se producirá cualquier error de certificado entre **\_ EAP CERT \_ \_ FIRST** y **\_ EAP CERT \_ \_ LAST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_LAST"></span><span id="_eap_cert_last"></span>**\_\_último certificado \_ EAP**
+<span id="_EAP_CERT_LAST"></span><span id="_eap_cert_last"></span>**\_EAP \_ CERT \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0xF
@@ -56,12 +56,12 @@ Define el límite de los informes de errores; en **\_ \_ \_ último** lugar, se 
 
 
 
-Define el límite de los informes de errores; en **\_ \_ \_ último** lugar, se producirá un error de certificado entre el certificado **\_ EAP \_ \_** y el certificado EAP.
+Define el límite de los informes de errores; se producirá cualquier error de certificado entre **\_ EAP CERT \_ \_ FIRST** y **\_ EAP CERT \_ \_ LAST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_NOT_FOUND"></span><span id="_eap_cert_not_found"></span>**\_\_ \_ no \_ se encontró el certificado EAP**
+<span id="_EAP_CERT_NOT_FOUND"></span><span id="_eap_cert_not_found"></span>**\_NO SE \_ ENCONTRÓ \_ EL CERTIFICADO \_ DE EAP**
 </dt> <dd> <dl> <dt>
 
 0x1
@@ -74,7 +74,7 @@ No se encontró ningún certificado de usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_INVALID"></span><span id="_eap_cert_invalid"></span>**\_\_certificado EAP \_ no válido**
+<span id="_EAP_CERT_INVALID"></span><span id="_eap_cert_invalid"></span>**\_CERTIFICADO EAP \_ \_ NO VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x2
@@ -87,7 +87,7 @@ El certificado de usuario no es válido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_EXPIRED"></span><span id="_eap_cert_expired"></span>**\_\_certificado EAP \_ expirado**
+<span id="_EAP_CERT_EXPIRED"></span><span id="_eap_cert_expired"></span>**\_CERTIFICADO DE EAP \_ \_ EXPIRADO**
 </dt> <dd> <dl> <dt>
 
 0x3
@@ -100,7 +100,7 @@ El certificado de usuario ha expirado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_REVOKED"></span><span id="_eap_cert_revoked"></span>**\_\_certificado EAP \_ revocado**
+<span id="_EAP_CERT_REVOKED"></span><span id="_eap_cert_revoked"></span>**\_CERTIFICADO \_ EAP \_ REVOCADO**
 </dt> <dd> <dl> <dt>
 
 0x4
@@ -113,20 +113,20 @@ Se revocó el certificado de usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_OTHER_ERROR"></span><span id="_eap_cert_other_error"></span>**\_\_error de \_ otro \_ certificado EAP**
+<span id="_EAP_CERT_OTHER_ERROR"></span><span id="_eap_cert_other_error"></span>**\_EAP \_ CERT \_ OTHER \_ ERROR**
 </dt> <dd> <dl> <dt>
 
-0X5
+0x5
 </dt> <dt>
 
 
 
-Error desconocido relacionado con el certificado.
+Hay un error relacionado con el certificado desconocido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_REJECTED"></span><span id="_eap_cert_rejected"></span>**\_\_certificado EAP \_ rechazado**
+<span id="_EAP_CERT_REJECTED"></span><span id="_eap_cert_rejected"></span>**\_CERTIFICADO \_ EAP \_ RECHAZADO**
 </dt> <dd> <dl> <dt>
 
 0x6
@@ -139,10 +139,10 @@ Se rechazó el certificado de usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_CERT_NAME_REQUIRED"></span><span id="_eap_cert_name_required"></span>**\_se \_ \_ requiere el nombre de certificado EAP \_**
+<span id="_EAP_CERT_NAME_REQUIRED"></span><span id="_eap_cert_name_required"></span>**\_SE REQUIERE \_ EL NOMBRE DEL CERTIFICADO \_ \_ DE EAP**
 </dt> <dd> <dl> <dt>
 
-0X7
+0x7
 </dt> <dt>
 
 
@@ -152,7 +152,7 @@ El certificado de usuario requiere un nombre.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_GENERAL_FIRST"></span><span id="_eap_general_first"></span>**\_EAP \_ General \_ primero**
+<span id="_EAP_GENERAL_FIRST"></span><span id="_eap_general_first"></span>**\_EAP \_ GENERAL \_ FIRST**
 </dt> <dd> <dl> <dt>
 
 0x10
@@ -160,12 +160,12 @@ El certificado de usuario requiere un nombre.
 
 
 
-Define el límite de los informes de errores; cualquier error de EAP general se producirá entre **\_ EAP \_ General \_ primero** y **\_ EAP \_ General en \_ último** lugar.
+Define el límite de los informes de errores; cualquier error general de EAP se producirá entre **\_ EAP GENERAL \_ \_ FIRST** y **\_ EAP GENERAL \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_EAP_GENERAL_LAST"></span><span id="_eap_general_last"></span>**\_\_último EAP general \_**
+<span id="_EAP_GENERAL_LAST"></span><span id="_eap_general_last"></span>**\_EAP \_ GENERAL \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x3F
@@ -173,7 +173,7 @@ Define el límite de los informes de errores; cualquier error de EAP general se 
 
 
 
-Define el límite de los informes de errores; cualquier error de EAP general se producirá entre **\_ EAP \_ General \_ primero** y **\_ EAP \_ General en \_ último** lugar.
+Define el límite de los informes de errores; cualquier error general de EAP se producirá entre **\_ EAP GENERAL \_ \_ FIRST** y **\_ EAP GENERAL \_ \_ LAST**.
 
 
 </dt> </dl> </dd> </dl>
@@ -184,9 +184,9 @@ Define el límite de los informes de errores; cualquier error de EAP general se 
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                      |
-| Encabezado<br/>                   | <dl> <dt>Eaphosterror. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
+| Header<br/>                   | <dl> <dt>Eaphosterror.h</dt> </dl> |
 
 
 
@@ -194,7 +194,7 @@ Define el límite de los informes de errores; cualquier error de EAP general se 
 
 <dl> <dt>
 
-[Constantes de EAPHost comunes](common-eap-host-error-constants.md)
+[Constantes comunes de EAPHost](common-eap-host-error-constants.md)
 </dt> </dl>
 
  

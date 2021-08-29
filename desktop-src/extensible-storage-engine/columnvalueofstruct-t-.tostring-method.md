@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: ColumnValueOfStruct <T> . ToString (método)'
-title: ColumnValueOfStruct (T). ToString (método)
+description: 'Obtenga más información sobre: ColumnValueOfStruct. <T> Método ToString'
+title: ColumnValueOfStruct(T). Método ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnValueOfStruct`1.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn334223(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c5959b446749daccc798ca12cd3fb5897ee1ddca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cca18ccc6b459f86541676199d73536ebba065c34003e06e962e7997dd6f1107
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982615"
 ---
-# <a name="columnvalueofstructttostring-method"></a>ColumnValueOfStruct \<T\> . ToString (método)
+# <a name="columnvalueofstructttostring-method"></a>ColumnValueOfStruct \<T\> . Método ToString
 
-Obtiene una representación de cadena de este objeto.
+Obtiene una representación de cadena de este objeto .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 Representación de cadena de este objeto.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[\<T\>Clase ColumnValueOfStruct](./columnvalueofstruct-t-class.md)
+[ColumnValueOfStruct \<T\> (clase)](./columnvalueofstruct-t-class.md)
 
-[Miembros de ColumnValueOfStruct \<T\>](./columnvalueofstruct-t-members.md)
+[Miembros \<T\> ColumnValueOfStruct](./columnvalueofstruct-t-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionTableTransferEffect SetAlphaTableValue (Dcomp. h)
+title: Métodos IDCompositionTableTransferEffect SetAlphaTableValue (Dcomp.h)
 description: Establece un valor en la tabla alfa.
 ms.assetid: 6f4e04e0-1ec6-a475-264e-d64f68e23fb9
 keywords:
-- Métodos SetAlphaTableValue DirectComposition
+- Métodos SetAlphaTableValue de DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 907491dcfcacbf87f53bf58eb8d0027575a216b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c841817e2d84ff19a0be33570351e2f80962c3b38704fa585e8b912325c18f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043183"
 ---
-# <a name="idcompositiontabletransfereffectsetalphatablevalue-methods"></a>IDCompositionTableTransferEffect:: SetAlphaTableValue (métodos)
+# <a name="idcompositiontabletransfereffectsetalphatablevalue-methods"></a>Métodos IDCompositionTableTransferEffect::SetAlphaTableValue
 
 Establece un valor en la tabla alfa.
 
@@ -40,7 +40,7 @@ Establece un valor en la tabla alfa.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

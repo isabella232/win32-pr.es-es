@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSessionContextAlreadySetException'
-title: Constructor de EsentSessionContextAlreadySetException
+description: 'Más información sobre: Constructor EsentSessionContextAlreadySetException'
+title: Constructor EsentSessionContextAlreadySetException
 TOCTitle: 'EsentSessionContextAlreadySetException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSessionContextAlreadySetException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsessioncontextalreadysetexception.esentsessioncontextalreadysetexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7d5d8ff073e6f13027131ca506d3dd513055e0ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96ac016258950d98630413729fb14cac19dd3c7452f9012495c1c969d2f9c717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981625"
 ---
-# <a name="esentsessioncontextalreadysetexception-constructor"></a>Constructor de EsentSessionContextAlreadySetException
+# <a name="esentsessioncontextalreadysetexception-constructor"></a>Constructor EsentSessionContextAlreadySetException
 
 Inicializa una nueva instancia de la clase EsentSessionContextAlreadySetException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentSessionContextAlreadySetException()
 public EsentSessionContextAlreadySetException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentSessionContextAlreadySetException()
 
 [Miembros de EsentSessionContextAlreadySetException](./esentsessioncontextalreadysetexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

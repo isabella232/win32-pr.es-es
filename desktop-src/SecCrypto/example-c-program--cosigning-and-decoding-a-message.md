@@ -1,23 +1,23 @@
 ---
-description: Puede usar la función CryptSignMessage para firmar un mensaje.
+description: Puede usar la función CryptSignMessage para cosignación de un mensaje.
 ms.assetid: b400436f-a71f-426a-ac8a-7fdcfa6d7575
-title: 'Programa C de ejemplo: firmar y descodificar un mensaje'
+title: 'Programa C de ejemplo: Cosignación y decodización de un mensaje'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 786bf0e44c0d781070d8cde0e1f08b8235b27234
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32f45525354ec1d85853a93677a72d96ea8555a0f7d1adf892ba27e5f0bf55fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874055"
 ---
-# <a name="example-c-program-cosigning-and-decoding-a-message"></a>Programa C de ejemplo: firmar y descodificar un mensaje
+# <a name="example-c-program-cosigning-and-decoding-a-message"></a>Programa C de ejemplo: Cosignación y decodización de un mensaje
 
-Puede usar la función [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) para firmar un mensaje. Para ello, se llama a [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) una vez para firmar el mensaje original y, a continuación, se vuelve a llamar a **CryptSignMessage** para firmar el mensaje firmado.
+Puede usar la [**función CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) para cosignación de un mensaje. Para ello, llame a [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) una vez para firmar el mensaje original y, a continuación, vuelva a llamar a **CryptSignMessage** para cofirmar el mensaje firmado.
 
-Cuando se comprueba la firma de un mensaje cofirmado, se usa la función [**CryptGetMessageSignerCount**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagesignercount) para obtener el número de firmantes del mensaje y, a continuación, se llama a [**CryptVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifymessagesignature) para cada firma. Si se comprueban todas las firmas, sabrá que el mensaje firmado es válido.
+Al comprobar la firma de un mensaje coasignado, se usa la función [**CryptGetMessageSignerCount**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetmessagesignercount) para obtener el número de firmantes del mensaje y, a continuación, llamar a [**CryptVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifymessagesignature) para cada firma. Si se comprueban todas las firmas, sabrá que el mensaje firmado es válido.
 
-En el ejemplo siguiente se muestra cómo firmar un mensaje por más de una persona (firmar el mensaje), comprobar todas las firmas y descodificar el mensaje.
+En el ejemplo siguiente se muestra cómo firmar un mensaje por más de una persona (cosignación del mensaje), comprobar todas las firmas y descodificar el mensaje.
 
 
 ```C++

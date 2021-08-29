@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnInfo. Grbit (propiedad)'
-title: Propiedad ColumnInfo. Grbit
+description: 'Más información sobre: Propiedad ColumnInfo.Grbit'
+title: Propiedad ColumnInfo.Grbit
 TOCTitle: 'Grbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnInfo.Grbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo.grbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eed0441e9d38a5463ec537e4856815e7ac4cd682
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93733b4104f30d2dccf9dd8e36a6a28320260537b237e7959a24c99c7cd5cb67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982735"
 ---
-# <a name="columninfogrbit-property"></a>Propiedad ColumnInfo. Grbit
+# <a name="columninfogrbit-property"></a>Propiedad ColumnInfo.Grbit
 
 Obtiene las opciones de columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public ColumndefGrbit Grbit { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft. ISAM. esent. Interop. ColumndefGrbit](./columndefgrbit-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.ColumndefGrbit](./columndefgrbit-enumeration.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnInfo](./columninfo-class.md)
+[ColumnInfo (clase)](./columninfo-class.md)
 
-[Miembros de ColumnInfo](./columninfo-members.md)
+[Miembros ColumnInfo](./columninfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

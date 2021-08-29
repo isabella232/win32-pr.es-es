@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETVOLUME (VFW. h)
-description: El \_ mensaje MCIWNDM GETVOLUME recupera la configuración del volumen actual de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetVolume.
+title: MCIWNDM_GETVOLUME mensaje (Vfw.h)
+description: El mensaje GETVOLUME de MCIWNDM \_ recupera la configuración de volumen actual de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetVolume.
 ms.assetid: 3f1de023-4da8-4899-accc-409701d6e921
 keywords:
-- Mensaje de MCIWNDM_GETVOLUME de Windows multimedia
+- MCIWNDM_GETVOLUME mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4aa11fb13a56dda7cb83e3d6c98b4b66083e91b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd514edbf0e49f49bc807f69a2bd5322d6f281475e3ed3c94fa483772580f131
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783305"
 ---
-# <a name="mciwndm_getvolume-message"></a>MCIWNDM \_ GETVOLUME
+# <a name="mciwndm_getvolume-message"></a>Mensaje GETVOLUME de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ GETVOLUME** recupera la configuración del volumen actual de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetVolume**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetvolume) .
+El **mensaje \_ GETVOLUME de MCIWNDM** recupera la configuración de volumen actual de un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetVolume.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetvolume)
 
 
 ```C++
@@ -42,11 +42,11 @@ Devuelve la configuración del volumen actual. El valor predeterminado es 1000. 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

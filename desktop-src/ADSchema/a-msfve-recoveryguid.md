@@ -27,7 +27,7 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-FVE-RecoveryGuid                                   |
 | Ldap-Display-Name | msFVE-RecoveryGuid                                    |
@@ -36,7 +36,7 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1965                               |
 | System-Id-Guid    | f76909bc-e678-47a0-b0b3-f86a0044c06d                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,14 +50,14 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Es de un solo valor       | True                                                                         |
-| Está indexado             | True                                                                         |
-| En el catálogo global      | True                                                                         |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Verdadero                                                                         |
+| En el catálogo global      | Verdadero                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
@@ -71,14 +71,14 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Es de un solo valor       | True                                                                         |
-| Está indexado             | True                                                                         |
-| En el catálogo global      | True                                                                         |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Verdadero                                                                         |
+| En el catálogo global      | Verdadero                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
@@ -92,14 +92,14 @@ Contiene el GUID asociado a una contraseña de recuperación de cifrado de volum
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
-| System-Only            | False                                                                        |
-| Es de un solo valor       | True                                                                         |
-| Está indexado             | True                                                                         |
-| En el catálogo global      | True                                                                         |
+| System-Only            | Falso                                                                        |
+| Es de un solo valor       | Verdadero                                                                         |
+| Está indexado             | Verdadero                                                                         |
+| En el catálogo global      | Verdadero                                                                         |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |

@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_MRType (clase)
-description: La subclase de MicrosoftDNS \_ ResourceRecord que representa un registro de cambio de nombre de buzón (MR).
+title: MicrosoftDNS_MRType clase
+description: Subclase de ResourceRecord de MicrosoftDNS que representa un registro de cambio de \_ nombre de buzón (MR).
 ms.assetid: fa5da18f-121b-477b-8876-6e337382e9b8
 keywords:
-- DNS de la clase MicrosoftDNS_MRType
-- MicrosoftDNS_MRType de la clase DNS, descrito
+- MicrosoftDNS_MRType DNS de clase
+- MicrosoftDNS_MRType clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,18 +18,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 732f0e6f51963f5ae810e4730406a94264fdde47
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 041b6a24a58e0d0c7ba8facd08369b37f76e7d3aab4e4e3730b326c306c43bbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119874795"
 ---
-# <a name="microsoftdns_mrtype-class"></a>MicrosoftDNS ( \_ clase MRType)
+# <a name="microsoftdns_mrtype-class"></a>Clase MRType de MicrosoftDNS \_
 
-La subclase de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa un registro de cambio de nombre de buzón (MR).
+Subclase de [**\_ ResourceRecord de MicrosoftDNS que**](microsoftdns-resourcerecord.md) representa un registro de cambio de nombre de buzón (MR).
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,21 +42,21 @@ class MicrosoftDNS_MRType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ MRType** tiene estos tipos de miembros:
+La **clase \_ MRType de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MicrosoftDNS \_ MRType** tiene estos métodos.
+La **clase \_ MRType de MicrosoftDNS** tiene estos métodos.
 
 
 
 | Método                             | Descripción                                                                                                                                                                                                                                                                                                                                                       |
 |:-----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Este método crea una instancia de un tipo ' MR ' de RR basándose en los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario del buzón, la clase (valor predeterminado = IN), el valor de período de vida y el cambio de nombre del buzón. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/> |
-| **Modify**                         | Este método actualiza el TTL y el buzón MR a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: implementados<br/>                 |
+| **CreateInstanceFromPropertyData** | Este método crea instancias de un tipo "MR" de RR en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario del buzón, la clase (valor predeterminado = IN), el valor de período de vida y el nombre del buzón. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: Implementado, estático<br/> |
+| **Modificar**                         | Este método actualiza el TTL y el buzón de MR a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/>                 |
 
 
 
@@ -64,7 +64,7 @@ La clase **MicrosoftDNS \_ MRType** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ MRType** tiene estas propiedades.
+La **clase \_ MRType de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -77,7 +77,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-FQDN que especifica un buzón que es el cambio de nombre adecuado del buzón especificado en el nombre del propietario del registro.
+FQDN que especifica un buzón que es el nombre adecuado del buzón especificado en el nombre de propietario del registro.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ FQDN que especifica un buzón que es el cambio de nombre adecuado del buzón esp
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,13 +98,13 @@ FQDN que especifica un buzón que es el cambio de nombre adecuado del buzón esp
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS MRType**](microsoftdns-mrtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase MRType de MicrosoftDNS \_**](microsoftdns-mrtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS MRType**](microsoftdns-mrtype-modify.md)
+[**Método Modify de la clase MRType de MicrosoftDNS \_**](microsoftdns-mrtype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

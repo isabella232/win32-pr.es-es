@@ -1,25 +1,25 @@
 ---
-description: En el siguiente ejemplo de C# se muestra cómo usar el método MigrateVirtualSystemToHost para realizar una migración simple de una máquina virtual.
+description: En el siguiente ejemplo de C# se muestra cómo usar el método MigrateVirtualSystemToHost para realizar una migración sencilla de una máquina virtual.
 ms.assetid: A3E4AAA2-3AE6-4D7D-8D7B-1ED367D398C0
 title: Migración de máquinas virtuales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4446830b61e2fabb79d0938520d0b503da167c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9be4bb1fee9628bcd5aa5cd1f787372bc8bb32191a42529a56db786a2e836866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118392458"
 ---
 # <a name="migrating-virtual-machines"></a>Migración de máquinas virtuales
 
-En el siguiente ejemplo de C# se muestra cómo usar el método [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md) para realizar una migración simple de una máquina virtual. En este ejemplo se usan grupos de recursos para obtener las rutas de acceso de VHD correctas. Este código se toma del [ejemplo de migración de máquinas virtuales de Hyper-V](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Hyper-V%20virtual%20machine%20migration%20sample).
+En el siguiente ejemplo de C# se muestra cómo usar el método [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md) para realizar una migración sencilla de una máquina virtual. En este ejemplo se usan grupos de recursos para obtener las rutas de acceso de VHD correctas. Este código se toma del ejemplo de migración de [máquinas virtuales de Hyper-V.](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Hyper-V%20virtual%20machine%20migration%20sample)
 
-La sintaxis de línea de comandos para ejecutar este ejemplo es la siguiente:
+La sintaxis de la línea de comandos para ejecutar este ejemplo es:
 
-**MigrationSamples.exe VM-and-Storage-simple** *SourceHost* *DestinationHost* *VmName*
+**MigrationSamples.exe vm-and-storage-simple** *SourceHost* *DestinationHost* *VmName*
 
-los parámetros son los siguientes:
+donde los parámetros son los siguientes:
 
 -   *SourceHost* es el nombre del host actual de la máquina virtual.
 -   *DestinationHost* es el nombre del host de destino.
@@ -93,7 +93,7 @@ VmAndStorageMigrationSimple(
 
 
 
-El siguiente código de C# contiene la implementación de la mayoría de los métodos de utilidad a los que se llama desde el ejemplo anterior.
+El siguiente código de C# contiene la implementación de la mayoría de los métodos de utilidad a los que se llama en el ejemplo anterior.
 
 
 ```CSharp

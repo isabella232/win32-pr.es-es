@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TCM_HIGHLIGHTITEM (commctrl. h)
+title: TCM_HIGHLIGHTITEM mensaje (Commctrl.h)
 description: Establece el estado de resaltado de un elemento de ficha. Puede enviar este mensaje explícitamente o mediante la macro TabCtrl \_ HighlightItem.
 ms.assetid: b0d0850a-62d9-46a1-8846-81f67a886ea8
 keywords:
-- TCM_HIGHLIGHTITEM controles de mensajes de Windows
+- TCM_HIGHLIGHTITEM controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55664aeeeefadfcb5205b9a5bde4fee1aafdfef3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b355b1a0ad4d228fc8f67051497b0327885f7cafc3860af9c74bac0812b344ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876515"
 ---
-# <a name="tcm_highlightitem-message"></a>\_Mensaje HIGHLIGHTITEM de TCM
+# <a name="tcm_highlightitem-message"></a>Mensaje \_ HIGHLIGHTITEM de TCM
 
-Establece el estado de resaltado de un elemento de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ HighlightItem**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_highlightitem) .
+Establece el estado de resaltado de un elemento de ficha. Puede enviar este mensaje explícitamente o mediante la macro [**TabCtrl \_ HighlightItem.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_highlightitem)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,24 +32,24 @@ Establece el estado de resaltado de un elemento de ficha. Puede enviar este mens
 *wParam* 
 </dt> <dd>
 
-Valor **int** que especifica el índice de base cero de un elemento de control de ficha.
+Valor **INT** que especifica el índice de base cero de un elemento de control de ficha.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es un valor **booleano** que especifica el estado de resaltado que se va a establecer. Si este valor es **true**, la pestaña se resalta; Si es **false**, la pestaña se establece en su estado predeterminado. El valor de [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
+[**LOWORD es**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) un **VALOR BOOL** que especifica el estado de resaltado que se va a establecer. Si este valor es **TRUE,** la pestaña está resaltada; si **es FALSE**, la pestaña se establece en su estado predeterminado. HIWORD [**debe**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En Comctl32.dll versión 6,0, este mensaje no tiene ningún efecto visible cuando un tema está activo.
+En Comctl32.dll versión 6.0, este mensaje no tiene ningún efecto visible cuando un tema está activo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ En Comctl32.dll versión 6,0, este mensaje no tiene ningún efecto visible cuand
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

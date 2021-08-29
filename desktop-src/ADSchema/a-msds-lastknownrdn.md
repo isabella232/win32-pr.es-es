@@ -4,7 +4,7 @@ description: Contiene el RDN original de un objeto eliminado.
 ms.assetid: 4d655117-673a-4c43-b8fe-c4aa45061330
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Last-Known-RDN attribute AD Schema
+- Esquema de AD del atributo ms-DS-Last-Known-RDN
 - Esquema de AD del atributo msDS-LastKnownRDN
 topic_type:
 - apiref
@@ -27,16 +27,16 @@ Contiene el RDN original de un objeto eliminado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Last-Known-RDN                        |
 | Ldap-Display-Name | msDS-LastKnownRDN                           |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2067                     |
 | System-Id-Guid    | 8ab15858-683e-466d-877f-d640e1f9a611        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -49,14 +49,14 @@ Contiene el RDN original de un objeto eliminado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
@@ -70,14 +70,14 @@ Contiene el RDN original de un objeto eliminado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Es de un solo valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |

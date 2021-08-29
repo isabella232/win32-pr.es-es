@@ -1,21 +1,21 @@
 ---
-description: La contraseña de inicio de sesión automática debe protegerse mediante la función LsaStorePrivateData.
+description: La contraseña de inicio de sesión automático debe protegerse mediante la función LsaStorePrivateData.
 ms.assetid: 7bd4d725-de17-4801-bd06-8d47a777409d
 title: Protección de la contraseña de inicio de sesión automático
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25508af4de64554e664426db3e786a1eca34579b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b43435afaef5820bdfeb8eda1c092904858e05f11de2f718450f5b5c76058bec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920673"
 ---
 # <a name="protecting-the-automatic-logon-password"></a>Protección de la contraseña de inicio de sesión automático
 
-La contraseña de inicio de sesión automática debe protegerse mediante la función [**LsaStorePrivateData**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata) .
+La contraseña de inicio de sesión automático debe protegerse mediante la [**función LsaStorePrivateData.**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata)
 
-En el ejemplo siguiente se muestra cómo proteger la contraseña de inicio de sesión automático. En el ejemplo se recupera un identificador para el objeto de [**Directiva**](../secmgmt/policy-object.md) mediante una llamada a la función [**LsaOpenPolicy**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaopenpolicy) . Para obtener más información sobre el objeto de **Directiva** y los identificadores de objetos de **Directiva** **, vea objeto de directiva y** [abrir un identificador de objeto de directiva](../secmgmt/opening-a-policy-object-handle.md), respectivamente. A continuación, en el ejemplo se establece la contraseña protegida mediante una llamada a la función [**LsaStorePrivateData**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata) . Tenga en cuenta que si el autor de la llamada pasa **null** para el valor de contraseña protegida, el código borra la contraseña protegida existente. Antes de salir, el código cierra el identificador del objeto de **Directiva** .
+En el ejemplo siguiente se muestra cómo proteger la contraseña de inicio de sesión automático. En el ejemplo se recupera un identificador para el [**objeto Policy**](../secmgmt/policy-object.md) mediante una llamada a la [**función LsaOpenPolicy.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaopenpolicy) Para obtener más información  sobre los **identificadores de** objeto de directiva y de objeto de directiva, vea Objeto **de** directiva y Apertura de un identificador de objeto [de](../secmgmt/opening-a-policy-object-handle.md)directiva , respectivamente. A continuación, el ejemplo establece la contraseña protegida mediante una llamada a [**la función LsaStorePrivateData.**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata) Tenga en cuenta que si el autor de la llamada pasa **NULL para** el valor de contraseña protegida, el código borra la contraseña protegida existente. Antes de salir, el código cierra el identificador al **objeto Policy.**
 
 
 ```C++
@@ -103,11 +103,11 @@ DWORD UpdateDefaultPassword(WCHAR * pwszSecret)
 
 
 
-Tenga en cuenta que si Winlogon no puede encontrar una contraseña almacenada por la función [**LsaStorePrivateData**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata) , usará el valor **DefaultPassword** de la clave Winlogon (si existe) para la contraseña de inicio de sesión automático.
+Tenga en cuenta que si Winlogon no encuentra una contraseña almacenada por la función [**LsaStorePrivateData,**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata) usará el valor **DefaultPassword** de la clave Winlogon (si existe) para la contraseña de inicio de sesión automático.
 
-Para obtener más información sobre el inicio de sesión automático y la clave del registro Winlogon, vea [ características deMSGina.dll](msgina-dll-features.md).
+Para obtener más información sobre el inicio de sesión automático y la clave del Registro Winlogon, [ veaMSGina.dll características](msgina-dll-features.md).
 
-Para obtener más información sobre cómo proteger las contraseñas, consulte [Administrar contraseñas](../secbp/handling-passwords.md).
+Para obtener más información sobre la protección de contraseñas, vea [Control de contraseñas.](../secbp/handling-passwords.md)
 
  
 

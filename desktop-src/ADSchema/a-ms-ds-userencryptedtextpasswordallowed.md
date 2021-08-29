@@ -32,7 +32,7 @@ Indica si Active Directory almacenará la contraseña en el formato de cifrado r
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------|
 | CN                | ms-DS-User-Encrypted-Text-Password-Allowed |
 | Ldap-Display-Name | ms-DS-UserEncryptedTextPasswordAllowed     |
@@ -41,7 +41,7 @@ Indica si Active Directory almacenará la contraseña en el formato de cifrado r
 | Frecuencia de actualización  | \-                                         |
 | Attribute-Id      | 1.2.840.113556.1.4.1856                    |
 | System-Id-Guid    | 5a87c7f2-93c5-454c-a8c5-8cb09613292e       |
-| Sintaxis            | [**Booleana**](s-boolean.md)               |
+| Syntax            | [**Booleana**](s-boolean.md)               |
 
 
 
@@ -53,14 +53,14 @@ Indica si Active Directory almacenará la contraseña en el formato de cifrado r
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | False                                                             |
-| Es de un solo valor       | True                                                              |
-| Está indexado             | False                                                             |
-| En el catálogo global      | False                                                             |
+| System-Only            | Falso                                                             |
+| Es de un solo valor       | Verdadero                                                              |
+| Está indexado             | Falso                                                             |
+| En el catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
@@ -70,7 +70,7 @@ Indica si Active Directory almacenará la contraseña en el formato de cifrado r
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En ADAM, este atributo reemplaza la marca [**ADS \_ UF \_ ENCRYPTED TEXT \_ PASSWORD \_ \_ ALLOWED**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) del [**atributo userAccountControl.**](a-useraccountcontrol.md)
 

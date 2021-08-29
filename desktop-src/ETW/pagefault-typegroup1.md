@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4a69e74a086ecd594d83c932beea4fd7d62724db
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 25e8c066bbaf0c66a23aba19b107c8086fac7de76e0ff2ce4873d129b8586cc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151451"
 ---
 # <a name="pagefault_typegroup1-class"></a>Clase PageFault \_ TypeGroup1
 
@@ -84,20 +84,20 @@ Dirección virtual de la página que produjo el error de la página.
 
 ## <a name="remarks"></a>Comentarios
 
-Un error de página se produce cuando una página buscada en la memoria caché no se encuentra allí y se debe recuperar de otra parte de la memoria (un error temporal) o del disco (un error físico).
+Un error de página se produce cuando una página buscada en la memoria caché no se encuentra allí y se debe recuperar desde otro lugar de la memoria (un error temporal) o desde el disco (un error de disco duro).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

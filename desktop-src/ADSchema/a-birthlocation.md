@@ -1,6 +1,6 @@
 ---
 title: Birth-Location atributo
-description: Ubicación en la que ha sido natural el usuario.
+description: La ubicación en la que ha nazca el usuario.
 ms.assetid: 566bdbf0-a298-465a-9dab-f9b013f3d98b
 ms.tgt_platform: multiple
 keywords:
@@ -23,11 +23,11 @@ ms.locfileid: "118688014"
 ---
 # <a name="birth-location-attribute"></a>Birth-Location atributo
 
-Ubicación en la que ha sido natural el usuario.
+La ubicación en la que ha nazca el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Birth-Location                                        |
 | Ldap-Display-Name | birthLocation                                         |
@@ -36,7 +36,7 @@ Ubicación en la que ha sido natural el usuario.
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.332                                |
 | System-Id-Guid    | 1f0075f9-7e40-11d0-afd6-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,14 +53,14 @@ Ubicación en la que ha sido natural el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
@@ -74,14 +74,14 @@ Ubicación en la que ha sido natural el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
@@ -95,14 +95,14 @@ Ubicación en la que ha sido natural el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
@@ -116,14 +116,14 @@ Ubicación en la que ha sido natural el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
@@ -137,14 +137,14 @@ Ubicación en la que ha sido natural el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
@@ -158,14 +158,14 @@ Ubicación en la que ha sido natural el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Es de un solo valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |

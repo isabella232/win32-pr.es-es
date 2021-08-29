@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsPrintJob (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsPrintJob obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsPrintJob (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsPrintJob obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: 23e7cbf3-09ce-44ce-b618-2c0fa6b34428
 ms.tgt_platform: multiple
 keywords:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d1680484ff16d563ef5bc89de6d5abbfec2ce6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6ac97c5be69c1d6a7b41360693ffb314ba0c7e5514e2211275b259610fbb6fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427772"
 ---
 # <a name="iadsprintjob-property-methods"></a>Métodos de propiedad IADsPrintJob
 
-Los métodos de propiedad de la interfaz [**IADsPrintJob**](/windows/desktop/api/Iads/nn-iads-iadsprintjob) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsPrintJob**](/windows/desktop/api/Iads/nn-iads-iadsprintjob) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -62,11 +62,11 @@ Los métodos de propiedad de la interfaz [**IADsPrintJob**](/windows/desktop/api
 **Descripción**
 </dt> <dd> <dl>
 
-La descripción del trabajo de impresión.
+Descripción del trabajo de impresión.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -119,7 +119,7 @@ El usuario al que se va a notificar cuando se complete el trabajo.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -143,11 +143,11 @@ HRESULT put_Notify(
 **NotifyPath**
 </dt> <dd> <dl>
 
-Cadena ADsPath del objeto de usuario al que se va a notificar cuando se complete el trabajo de impresión.
+Cadena ADsPath del objeto de usuario que se notificará cuando se complete el trabajo de impresión.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -175,10 +175,10 @@ Prioridad del trabajo de impresión.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -206,7 +206,7 @@ Tamaño, en bytes, del trabajo de impresión.
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -224,14 +224,14 @@ HRESULT get_Size(
 **StartTime**
 </dt> <dd> <dl>
 
-Hora más temprana en la que se debe iniciar el trabajo de impresión.
+La primera vez que se debe iniciar el trabajo de impresión.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **fecha**
+Tipo de datos de scripting: **DATE**
 </dt> <dt>
 
 
@@ -252,14 +252,14 @@ HRESULT put_StartTime(
 **TimeSubmitted**
 </dt> <dd> <dl>
 
-La hora a la que se envió el trabajo a la cola.
+Hora a la que se envió el trabajo a la cola.
 
 <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **fecha**
+Tipo de datos de scripting: **DATE**
 </dt> <dt>
 
 
@@ -277,14 +277,14 @@ HRESULT get_TimeSubmitted(
 **TotalPages**
 </dt> <dd> <dl>
 
-Número total de páginas en el trabajo de impresión.
+Número total de páginas del trabajo de impresión.
 
 <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -306,10 +306,10 @@ La hora más reciente en la que se debe iniciar el trabajo de impresión.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **fecha**
+Tipo de datos de scripting: **DATE**
 </dt> <dt>
 
 
@@ -482,13 +482,13 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsPrintJob se define como 32FB6780-1ED0-11cf-A988-00AA006BC149<br/>         |
+| IID<br/>                      | IID \_ IADsPrintJob se define como 32FB6780-1ED0-11CF-A988-00AA006BC149<br/>         |
 
 
 
