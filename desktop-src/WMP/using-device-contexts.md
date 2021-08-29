@@ -1,6 +1,6 @@
 ---
-title: Usar contextos de dispositivo
-description: Usar contextos de dispositivo
+title: Uso de contextos de dispositivo
+description: Uso de contextos de dispositivo
 ms.assetid: 2e8de313-6218-4401-a578-73140e7fdae1
 keywords:
 - visualizaciones, contexto de dispositivo
@@ -10,16 +10,16 @@ keywords:
 - Función de representación, contexto de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08c315d5004565644750f4adcd099fc165e81575
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 35e07247de9496cd0221b6031e65c0f68def0bade8ce1c814c5096daff486098
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507155"
 ---
-# <a name="using-device-contexts"></a>Usar contextos de dispositivo
+# <a name="using-device-contexts"></a>Uso de contextos de dispositivo
 
-El contexto de dispositivo es un identificador estándar de un contexto de dispositivo. Lo necesita para muchas funciones de dibujo para que Microsoft Windows sepa en qué ventana se debe dibujar. Por ejemplo, para dibujar un rectángulo, debe especificar el contexto del dispositivo.
+El contexto del dispositivo es un identificador estándar para un contexto de dispositivo. Necesita esto para muchas funciones de dibujo para que Microsoft Windows la ventana en la que dibujar. Por ejemplo, para dibujar un rectángulo, debe especificar el contexto del dispositivo.
 
 
 ```C++
@@ -30,18 +30,18 @@ HDC hdc;
 
 
 
-Windows Media Player especifica el contexto del dispositivo a través de la función **Render** . Si el complemento se representa mediante una ventana, deberá usar el contexto de dispositivo de esa ventana. Use este contexto de dispositivo para cualquier herramienta de dibujo que requiera un contexto de dispositivo.
+El contexto del dispositivo se especifica mediante Reproductor de Windows Media a través de la **función Render.** Si el complemento se representa mediante una ventana, deberá usar el contexto de dispositivo de esa ventana. Use este contexto de dispositivo para cualquier herramienta de dibujo que requiera un contexto de dispositivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Implementación de render**](implementing-render.md)
+[**Implementación de Render**](implementing-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: ActionCollection propiedad XmlText
-description: En el caso de scripting, obtiene o establece una versión con formato XML de la colección.
+title: Propiedad ActionCollection XmlText
+description: Para el scripting, obtiene o establece una versión con formato XML de la colección.
 ms.assetid: f9404d0c-7034-4387-bb15-ef696386aebd
 keywords:
 - Propiedad XmlText Programador de tareas
-- Propiedad XmlText Programador de tareas, interfaz ActionCollection
-- Programador de tareas de la interfaz ActionCollection, propiedad XmlText
+- Propiedad XmlText Programador de tareas interfaz , ActionCollection
+- Interfaz ActionCollection Programador de tareas , propiedad XmlText
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b2f24806f843cdbec9e44c80fde1ab62c63cd47
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 86f003e44094567064c2f15b852140f695b38fab499e6085bd20b0b88aac83b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072695"
 ---
-# <a name="actioncollectionxmltext-property"></a>ActionCollection:: XmlText (propiedad)
+# <a name="actioncollectionxmltext-property"></a>ActionCollection::XmlText, propiedad
 
-En el caso de scripting, obtiene o establece una versión con formato XML de la colección.
+Para el scripting, obtiene o establece una versión con formato XML de la colección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,17 +38,17 @@ En el caso de scripting, obtiene o establece una versión con formato XML de la 
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Una versión con formato XML de la colección.
+Versión con formato XML de la colección.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

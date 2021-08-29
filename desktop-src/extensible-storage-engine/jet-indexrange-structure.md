@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 48e9da5822f69d4460a1699252112899a990188d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 97a3447ae17d3d34f2df3afcd92c47ec49f7f97b
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470881"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984238"
 ---
 # <a name="jet_indexrange-structure"></a>JET_INDEXRANGE estructura
 
@@ -54,21 +54,25 @@ Cursor que anteriormente tenía un intervalo de índice establecido [con JetSetI
 Máscara de bits compuesta de exactamente una de las siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitRecordInIndex</p> | <p>Especifica que el intervalo de índice se debe tratar con normalidad.</p> | 
 | <p>JET_bitRecordNotInIndex</p> | <p>Reservado para uso futuro. No debe usarse.</p> | 
 
 
 
-### <a name="remarks"></a>Comentarios
+### <a name="remarks"></a>Observaciones
 
-Cada **JET_INDEXRANGE** estructura que se pasa a [JetIntersectIndexes](./jetintersectindexes-function.md) representa un intervalo de índice, que se intersecrá con la llamada API. El cursor que se da en **JET_INDEXRANGE** debe tener un intervalo de índice válido establecido en él, con una llamada correcta a [JetSetIndexRange](./jetsetindexrange-function.md).
+Cada **JET_INDEXRANGE** estructura que se pasa a [JetIntersectIndexes](./jetintersectindexes-function.md) representa un intervalo de índice, que se intersecrá con la llamada API. El cursor que se da en **JET_INDEXRANGE** debe tener un intervalo de índice válido establecido en él ya, con una llamada correcta a [JetSetIndexRange](./jetsetindexrange-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

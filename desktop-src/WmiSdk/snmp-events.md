@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Eventos de SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 925ce6bb5eca0a3c067470255296ba6c9f66c0183b2b74aa6cfa4a25824446d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8efec74902039b9e196844e9d7fadbda01cd6036
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118816651"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625351"
 ---
 # <a name="snmp-events"></a>Eventos de SNMP
 
@@ -35,12 +35,12 @@ Una serie de claves y valores del Registro definen el nivel y el tipo de registr
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Valor</th>
+<th>Value</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -63,7 +63,7 @@ Una serie de claves y valores del Registro definen el nivel y el tipo de registr
 <ul>
 <li>0: Invocaciones del método <a href="/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices"><strong>IWbemServices</strong></a> del proveedor de clases SNMP</li>
 <li>1: Implementación del proveedor de clases SNMP</li>
-<li>2: Invocaciones del método <a href="/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices"><strong>IWbemServices</strong></a> del proveedor de instancias SNMP</li>
+<li>2: Invocaciones del método <a href="/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices"><strong>IWbemServices del</strong></a> proveedor de instancias SNMP</li>
 <li>3: Implementación del proveedor de instancias SNMP</li>
 <li>4: Biblioteca de clases SNMP</li>
 <li>5: SNMP SMIR</li>

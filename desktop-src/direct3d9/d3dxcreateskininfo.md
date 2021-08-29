@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXCreateSkinInfo: crea un objeto de malla de máscara vacía mediante un declarador.'
+description: 'Función D3DXCreateSkinInfo: crea un objeto de malla de máscara vacío mediante un declarador.'
 ms.assetid: c98da2e5-a9eb-4070-8846-b346b5c57fb3
 title: Función D3DXCreateSkinInfo (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: da582d791b27d30c78583972e6f598af8af3eb9e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5d1539e0bf7a552fdb44bb1c2f323af387797a660d4e1bade312000652fb5bbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676145"
 ---
 # <a name="d3dxcreateskininfo-function"></a>Función D3DXCreateSkinInfo
 
-Crea un objeto de malla de máscara vacía mediante un declarador.
+Crea un objeto de malla de máscara vacío mediante un declarador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,11 +57,11 @@ Número de vértices para la malla de máscara.
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matriz de [**elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de la malla devuelta.
+Matriz [**de elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de la malla devuelta.
 
 </dd> <dt>
 
-*Num Num* \[ En\]
+*NumBones* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -100,7 +100,7 @@ Use [**SetIonalInfluence para**](id3dxskininfo--setboneinfluence.md) rellenar el
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

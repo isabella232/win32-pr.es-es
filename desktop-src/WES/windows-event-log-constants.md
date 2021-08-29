@@ -1,6 +1,6 @@
 ---
-title: Constantes del registro de eventos de Windows (WinEvt. h)
-description: 'El registro de eventos de Windows define las constantes siguientes:'
+title: Windows Constantes del registro de eventos (WinEvt.h)
+description: Windows El registro de eventos define las siguientes constantes
 ms.assetid: d3a4a136-ca33-4dad-95ad-af1be6687843
 topic_type:
 - apiref
@@ -17,33 +17,33 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d592cea0eb1738f5ee04ce53faa9a5fa06c0d52a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7fe5ecd134749e3420b43c621e506930ede982a271652083086175cea1549ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620165"
 ---
-# <a name="windows-event-log-constants"></a>Constantes del registro de eventos de Windows
+# <a name="windows-event-log-constants"></a>Windows Constantes del registro de eventos
 
-El registro de eventos de Windows define las constantes siguientes:
+Windows El registro de eventos define las siguientes constantes:
 
 <dl> <dt>
 
-<span id="EVT_VARIANT_TYPE_MASK"></span><span id="evt_variant_type_mask"></span>**EVT \_ variante \_ Type \_ Mask**
+<span id="EVT_VARIANT_TYPE_MASK"></span><span id="evt_variant_type_mask"></span>**EVT \_ VARIANT \_ TYPE \_ MASK**
 </dt> <dd> <dl> <dt>
 
-0x7F
+0x7f
 </dt> <dt>
 
 
 
-Máscara de bits que se usa para enmascarar el bit de la matriz del tipo variante, de modo que pueda determinar el tipo de datos del valor Variant que contiene la estructura de la [**\_ variante evt**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant) .
+Máscara de bits que se usa para enmascarar el bit de matriz del tipo variant, de modo que pueda determinar el tipo de datos del valor de variante que contiene la estructura [**\_ EVT VARIANT.**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EVT_VARIANT_TYPE_ARRAY"></span><span id="evt_variant_type_array"></span>**EVT \_ variante \_ Type \_ array**
+<span id="EVT_VARIANT_TYPE_ARRAY"></span><span id="evt_variant_type_array"></span>**EVT \_ VARIANT \_ TYPE \_ ARRAY**
 </dt> <dd> <dl> <dt>
 
 128
@@ -51,12 +51,12 @@ Máscara de bits que se usa para enmascarar el bit de la matriz del tipo variant
 
 
 
-El miembro de **tipo** de la estructura [**evt \_ Variant**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant) tiene este bit establecido si la variante contiene un puntero a una matriz de valores, en lugar del propio valor.
+El **miembro Type** de la estructura [**EVT \_ VARIANT**](/windows/desktop/api/WinEvt/ns-winevt-evt_variant) tiene este conjunto de bits si la variante contiene un puntero a una matriz de valores, en lugar del propio valor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EVT_READ_ACCESS"></span><span id="evt_read_access"></span>**EVT \_ - \_ acceso de lectura**
+<span id="EVT_READ_ACCESS"></span><span id="evt_read_access"></span>**ACCESO DE \_ LECTURA EVT \_**
 </dt> <dd> <dl> <dt>
 
 0x1
@@ -69,7 +69,7 @@ Permiso de control de acceso de lectura que permite leer información de un regi
 
 </dt> </dl> </dd> <dt>
 
-<span id="EVT_WRITE_ACCESS"></span><span id="evt_write_access"></span>**\_acceso de escritura de EVT \_**
+<span id="EVT_WRITE_ACCESS"></span><span id="evt_write_access"></span>**ACCESO DE ESCRITURA \_ EVT \_**
 </dt> <dd> <dl> <dt>
 
 0x2
@@ -82,7 +82,7 @@ Permiso de control de acceso de escritura que permite escribir información en u
 
 </dt> </dl> </dd> <dt>
 
-<span id="EVT_CLEAR_ACCESS"></span><span id="evt_clear_access"></span>**EVT \_ - \_ acceso sin formato**
+<span id="EVT_CLEAR_ACCESS"></span><span id="evt_clear_access"></span>**EVT \_ CLEAR \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 0x4
@@ -90,15 +90,15 @@ Permiso de control de acceso de escritura que permite escribir información en u
 
 
 
-Permiso Clear Access Control que permite borrar toda la información de un registro de eventos.
+Desactive el permiso de control de acceso que permite borrar toda la información de un registro de eventos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EVT_ALL_ACCESS"></span><span id="evt_all_access"></span>**EVT \_ All \_ Access**
+<span id="EVT_ALL_ACCESS"></span><span id="evt_all_access"></span>**EVT \_ ALL \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
-0X7
+0x7
 </dt> <dt>
 
 
@@ -114,9 +114,9 @@ Todos los permisos de control de acceso (lectura, escritura, borrado y eliminaci
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>WinEvt. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>WinEvt.h</dt> </dl> |
 
 
 

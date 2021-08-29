@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManyMempoolEntriesException'
-title: Constructor de EsentTooManyMempoolEntriesException
+description: 'Más información sobre: Constructor EsentTooManyMempoolEntriesException'
+title: Constructor EsentTooManyMempoolEntriesException
 TOCTitle: 'EsentTooManyMempoolEntriesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyMempoolEntriesException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanymempoolentriesexception.esenttoomanymempoolentriesexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 07286179ee8374fd2a983a9068372ca848727fdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d66e319713d027ea33bf1c87f9ff261e354fff2d7f6e02b5343d9aa7ff3a01da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618845"
 ---
-# <a name="esenttoomanymempoolentriesexception-constructor"></a>Constructor de EsentTooManyMempoolEntriesException
+# <a name="esenttoomanymempoolentriesexception-constructor"></a>Constructor EsentTooManyMempoolEntriesException
 
 Inicializa una nueva instancia de la clase EsentTooManyMempoolEntriesException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTooManyMempoolEntriesException()
 public EsentTooManyMempoolEntriesException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTooManyMempoolEntriesException()
 
 [Miembros de EsentTooManyMempoolEntriesException](./esenttoomanymempoolentriesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

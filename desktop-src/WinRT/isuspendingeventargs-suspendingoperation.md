@@ -1,7 +1,7 @@
 ---
 description: Obtiene la operación de suspensión de la aplicación.
 ms.assetid: 33FCAED5-7568-4483-A643-A536B53F7003
-title: 'Propiedad ISuspendingEventArgs:: SuspendingOperation (Windows. ApplicationModel. h)'
+title: Propiedad ISuspendingEventArgs::SuspendingOperation (Windows. ApplicationModel.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,20 +15,20 @@ api_type:
 - COM
 api_location:
 - Windows.ApplicationModel.h
-ms.openlocfilehash: e12ccbb372d7c712585766bba8d7921fae57a617
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a798f91c0fd9ec20da61685a29120106c0eaaa4804521bb5ec5f931291372c2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121555"
 ---
-# <a name="isuspendingeventargssuspendingoperation-property"></a>ISuspendingEventArgs:: SuspendingOperation (propiedad)
+# <a name="isuspendingeventargssuspendingoperation-property"></a>Propiedad ISuspendingEventArgs::SuspendingOperation
 
 Obtiene la operación de suspensión de la aplicación.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -53,8 +53,8 @@ Operación de suspensión.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Encabezado<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Windows. ApplicationModel. idl</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windows. ApplicationModel.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Windows. ApplicationModel.idl</dt> </dl> |
 
 
 

@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ffe4527390e21e86ed46820125eb2a422367d8ec
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 91eb8ffe90d44435b6318c2456903ce978599c66
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480381"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984488"
 ---
 # <a name="jetopenfile-function"></a>Función JetOpenFile
 
@@ -83,7 +83,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errNoBackup</p> | <p>Error en la operación porque no hay ninguna copia de seguridad externa en curso.</p> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errOutOfMemory</p> | <p>Error en la operación porque no se pudo asignar suficiente memoria para completarla. <strong>JetOpenFile</strong> devolverá JET_errOutOfMemory si se intenta abrir otro archivo antes de que <strong>JetCloseFile</strong> haya cerrado el archivo anterior abierto mediante <a href="gg294127(v=exchg.10).md">JetOpenFile.</a> Actualmente solo se admite un identificador de archivo pendiente.</p> | 
-| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando en realidad ya existen varias instancias.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando, de hecho, ya existen varias instancias.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión. JET_errRestoreInProgress No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 
 
@@ -94,11 +94,11 @@ En caso de error, el estado de los búferes de salida será indefinido. Se puede
 
 **Advertencia**  Por motivos de seguridad, es importante tener en cuenta que **JetOpenFile** no comprueba que la ruta de acceso del archivo solicitado está asociada al conjunto de archivos de los que se debe realizar una copia de seguridad para la instancia. Como resultado, es posible usar esta función para acceder a cualquier archivo que pueda abrir el contexto de seguridad actual del subproceso. Es fundamental que la aplicación restrinja las rutas de acceso que se pasan a esta función a un conjunto conocido de rutas de acceso de archivo correctas o que se pueda hacer posible la divulgación de ataques de información.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Los búferes de salida de tamaño de archivo y identificador deben estar presentes. Si no están presentes, el motor se bloqueará porque no se validan los parámetros del búfer de salida.
 
-En este momento, solo se puede abrir un archivo para la copia de seguridad a la vez.
+En este momento, solo se puede abrir un archivo para la copia de seguridad en cualquier momento.
 
 **JetOpenFile** no declara el privilegio de copia de seguridad antes de abrir el archivo solicitado.
 
@@ -107,7 +107,14 @@ Es posible que el tamaño del archivo que se va a leer como notifica esta funci�
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOpenFileW</strong> (Unicode) y <strong>JetOpenFileA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOpenFileW</strong> (Unicode) y <strong>JetOpenFileA</strong> (ANSI).</p> | 
 
 
 

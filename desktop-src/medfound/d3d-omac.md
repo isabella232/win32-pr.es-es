@@ -1,7 +1,7 @@
 ---
-description: Contiene un código de autentificación de mensajes (MAC) (MAC).
+description: Contiene un código de autenticación de mensajes (MAC).
 ms.assetid: be5515fd-1936-46b8-9fc8-8d1f87048c38
-title: D3D_OMAC estructura (D3d9types. h)
+title: D3D_OMAC estructura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 21c710b21c31147f7208ddd1637426aeafb60234
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05cf39bccc33eb1f993b0e86cfa89fc290832b422129441d99f028f3d826c3fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449554"
 ---
-# <a name="d3d_omac-structure"></a>\_Estructura OMAC de D3D
+# <a name="d3d_omac-structure"></a>Estructura D3D \_ OMAC
 
-Contiene un código de autentificación de mensajes (MAC) (MAC).
+Contiene un código de autenticación de mensajes (MAC).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,9 +52,9 @@ Matriz de bytes que contiene el valor de MAC criptográfico del mensaje.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
+| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

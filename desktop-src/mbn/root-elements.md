@@ -1,10 +1,10 @@
 ---
-description: Elementos del esquema de Perfil de banda ancha móvil V4
+description: Elementos del esquema de perfil de banda ancha móvil v4
 MS-HAID: WWAN\_profile\_v4.root\_elements
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Elementos del esquema de Perfil de banda ancha móvil V4
+title: Elementos del esquema de perfil de banda ancha móvil v4
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: a322bf35-1c63-4c4f-a646-ee862fe83c7a
@@ -13,14 +13,14 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: bf3cf21886797a551ab61e0f259b482c08676933
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3197339b755db93ac36d6d0cd8ba163ee255a67c2473a1ab650c73b1667d0e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449895"
 ---
-# <a name="span-idwwan_profile_v4root_elementsspanmobile-broadband-profile-schema-v4-elements"></a><span id="WWAN_profile_v4.root_elements"></span>Elementos del esquema de Perfil de banda ancha móvil V4
+# <a name="span-idwwan_profile_v4root_elementsspanmobile-broadband-profile-schema-v4-elements"></a><span id="WWAN_profile_v4.root_elements"></span>Elementos del esquema de perfil de banda ancha móvil v4
 
 En la lista siguiente se resumen las jerarquías permitidas para este esquema, empezando por el elemento más externo (documento) en la parte superior.
 
@@ -50,9 +50,9 @@ En la lista siguiente se resumen las jerarquías permitidas para este esquema, e
         -   [PurposeGroupGuid](element-purposegroupguid.md)
     -   [ProfileConditionedOn](element-profileconditionedon.md)
         -   [CellularClass](element-cellularclass.md)
-        -   [RATApplicability](element-ratapplicability.md)
+        -   [ESCALABILIDADAplicidad](element-ratapplicability.md)
         -   [RoamApplicability](element-roamapplicability.md)
-        -   [IMSI](element-imsi.md)
+        -   [Imsi](element-imsi.md)
         -   [IwlanApplicability](element-iwlanapplicability.md)
     -   [IsProvisioningProfile](element-isprovisioningprofile.md)
     -   [ApnID](element-apnid.md)

@@ -1,7 +1,7 @@
 ---
-description: Describe la ubicación del archivo de inclusión.
+description: Describe la ubicación del archivo de incluir.
 ms.assetid: a15d363e-0d82-44a9-816b-edf2f60540b3
-title: Enumeración D3DXINCLUDE_TYPE (D3dx9shader. h)
+title: D3DXINCLUDE_TYPE enumeración (D3dx9shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 51a4ed41203a9f78ee5fef747f088e9def9033c0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db51cf3c973218096682410ff320c7f46e05051f53616f86ab01bf3b42232124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676065"
 ---
-# <a name="d3dxinclude_type-enumeration"></a>\_Enumeración de tipo D3DXINCLUDE
+# <a name="d3dxinclude_type-enumeration"></a>D3DXINCLUDE \_ TYPE (enumeración)
 
-Describe la ubicación del archivo de inclusión.
+Describe la ubicación del archivo de incluir.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,24 +41,24 @@ typedef enum D3DXINCLUDE_TYPE {
 
 <dl> <dt>
 
-<span id="D3DXINC_LOCAL"></span><span id="d3dxinc_local"></span>**D3DXINC \_ local**
+<span id="D3DXINC_LOCAL"></span><span id="d3dxinc_local"></span>**D3DXINC \_ LOCAL**
 </dt> <dd>
 
-Busque en el proyecto local el archivo de inclusión.
+Busque en el proyecto local el archivo de incluir.
 
 </dd> <dt>
 
-<span id="D3DXINC_SYSTEM"></span><span id="d3dxinc_system"></span>**\_Sistema D3DXINC**
+<span id="D3DXINC_SYSTEM"></span><span id="d3dxinc_system"></span>**D3DXINC \_ SYSTEM**
 </dt> <dd>
 
-Busque el archivo de inclusión en la ruta de acceso del sistema.
+Busque en la ruta de acceso del sistema el archivo de incluir.
 
 </dd> <dt>
 
-<span id="D3DXINC_FORCE_DWORD"></span><span id="d3dxinc_force_dword"></span>**D3DXINC \_ forzar \_ DWORD**
+<span id="D3DXINC_FORCE_DWORD"></span><span id="d3dxinc_force_dword"></span>**D3DXINC \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Un dispositivo Direct3D usa los Estados para configurar todo el procesamiento de canalización.
+description: Un dispositivo Direct3D usa estados para configurar todo el procesamiento de la canalización.
 ms.assetid: vs|directx_sdk|~\states.htm
 title: Estados (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 646334654052ebe19d01ed4a20984966712a8b31
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 27a268c442e028d14133131fc691486dccfa84102a6d73be071e8b7d415ece0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119856135"
 ---
 # <a name="states-direct3d-9"></a>Estados (Direct3D 9)
 
-Un dispositivo Direct3D usa los Estados para configurar todo el procesamiento de canalización. Los Estados de muestra controlan la configuración de los muestreadores de texturas mediante la definición de los modos de filtro y direccionamiento de texturas, por ejemplo. Estados de textura configure el mezclador de varias texturas, que controla cómo se combinan las texturas y se mezclan entre sí. Los Estados de representación controlan la mayor parte del estado de la canalización.
+Un dispositivo Direct3D usa estados para configurar todo el procesamiento de la canalización. Los estados del muestreador controlan la configuración de los muestreadores de textura mediante la definición del direccionamiento de textura y los modos de filtro, por ejemplo. Los estados de textura configura la mezcla de varias texturas, que controla cómo se combinan y mezclan las texturas entre sí. Los estados de representación controlan la mayor parte del estado de la canalización.
 
-Los bloques de estado son un mecanismo adecuado para guardar y restaurar el estado. Ver el [Estado de guardado y restauración de los bloques de estado (Direct3D 9)](state-blocks-save-and-restore-state.md)
+Los bloques de estado son un mecanismo cómodo para guardar y restaurar el estado. Consulte [Estado de guardado y restauración de bloques de estado (Direct3D 9)](state-blocks-save-and-restore-state.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

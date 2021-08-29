@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentNullInvalidException'
-title: Constructor de EsentNullInvalidException
+description: 'Más información sobre: Constructor EsentNullInvalidException'
+title: Constructor EsentNullInvalidException
 TOCTitle: 'EsentNullInvalidException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentNullInvalidException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentnullinvalidexception.esentnullinvalidexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4b51d168eb347cbac2afceea4a0312fd783bb3d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da909dfe0c140166b8e3304f315503dabb48cc5d4f5586f47fb82cea87e0d74c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040273"
 ---
-# <a name="esentnullinvalidexception-constructor"></a>Constructor de EsentNullInvalidException
+# <a name="esentnullinvalidexception-constructor"></a>Constructor EsentNullInvalidException
 
 Inicializa una nueva instancia de la clase EsentNullInvalidException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentNullInvalidException()
 public EsentNullInvalidException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentNullInvalidException()
 
 [Miembros de EsentNullInvalidException](./esentnullinvalidexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

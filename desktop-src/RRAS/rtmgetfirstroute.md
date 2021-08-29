@@ -1,9 +1,9 @@
 ---
-title: Función RtmGetFirstRoute (RTM. h)
-description: La función RtmGetFirstRoute devuelve la primera ruta del subconjunto especificado de rutas de la tabla.
+title: Función RtmGetFirstRoute (Rtm.h)
+description: La función RtmGetFirstRoute devuelve la primera ruta del subconjunto de rutas especificado en la tabla.
 ms.assetid: f2071b50-4b06-432f-8dbf-45696f8a5cb1
 keywords:
-- RtmGetFirstRoute función RAS
+- Función RAS de RtmGetFirstRoute
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 32e98a5deb0f925fbf3b27c21302060bbe4869b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a12539e0e04422fca2f759d751c37e7a8d36828afe8017ba9a058bf0d850990d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073835"
 ---
-# <a name="rtmgetfirstroute-function"></a>RtmGetFirstRoute función)
+# <a name="rtmgetfirstroute-function"></a>Función RtmGetFirstRoute
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La función **RtmGetFirstRoute** devuelve la primera ruta del subconjunto especificado de rutas de la tabla.
+La **función RtmGetFirstRoute** devuelve la primera ruta del subconjunto de rutas especificado en la tabla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,71 +44,71 @@ DWORD RtmGetFirstRoute(
 
 <dl> <dt>
 
-*ProtocolFamily* \[ de\]
+*ProtocolFamily* \[ En\]
 </dt> <dd>
 
-Especifica la familia de rutas del protocolo que se va a recuperar, por ejemplo, IP o IPX.
+Especifica la familia de protocolos de rutas que se recuperarán, por ejemplo, IP o IPX.
 
 </dd> <dt>
 
-*EnumerationFlags* \[ de\]
+*EnumerationFlags* \[ En\]
 </dt> <dd>
 
-Especifica que limita el conjunto de rutas eliminadas a un subconjunto definido por estas marcas y los valores de los miembros correspondientes de la estructura a la que apunta el parámetro *CriteriaRoute* . Las marcas son las mismas que las que se usan en [**RtmCreateEnumerationHandle**](rtmcreateenumerationhandle.md).
+Especifica los límites del conjunto de rutas eliminadas a un subconjunto definido por estas marcas y los valores de los miembros correspondientes de la estructura a los que apunta el *parámetro CriteriaRoute.* Las marcas son las mismas que las usadas [**en RtmCreateEnumerationHandle.**](rtmcreateenumerationhandle.md)
 
 </dd> <dt>
 
-*Ruta* \[ de in, out\]
+*Ruta* \[ in, out\]
 </dt> <dd>
 
-En la entrada, la *ruta* apunta a una estructura específica de la familia de protocolos (ruta de [**\_ IP \_ RTM**](rtm-ip-route.md) o [**\_ \_ ruta IPX RTM**](rtm-ipx-route.md)).
+En la entrada, *la ruta* apunta a una estructura específica de la familia de protocolos [**(RTM \_ IP \_ ROUTE**](rtm-ip-route.md) o [**\_ RTM IPX \_ ROUTE).**](rtm-ipx-route.md)
 
-La función de llamada proporciona valores de miembro para esta estructura. Estos valores, junto con el parámetro *EnumerationFlags* , especifican el conjunto del que se van a devolver las rutas.
+La función que realiza la llamada proporciona valores de miembro para esta estructura. Estos valores, junto con el parámetro *EnumerationFlags,* especifican el conjunto desde el que se devolverán las rutas.
 
-Salida, *ruta* apunta a la primera ruta que coincidía con los criterios especificados.
+Salida, *Ruta apunta* a la primera ruta que coincidió con los criterios especificados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto NO es un \_ error.
+Si la función se realiza correctamente, el valor devuelto es NO \_ ERROR.
 
 Si se produce un error en la función, el valor devuelto es uno de los siguientes códigos de error.
 
 
 
-| Value                                                                                                       | Descripción                                                             |
+| Valor                                                                                                       | Descripción                                                             |
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <dl> <dt>**ERROR \_ de \_ parámetro no válido**</dt> </dl>    | Uno de los parámetros no es válido.<br/>                            |
-| <dl> <dt>**ERROR \_ sin \_ rutas**</dt> </dl>            | No hay ninguna ruta que coincida con los criterios especificados.<br/>       |
-| <dl> <dt>**ERROR: \_ no hay \_ recursos del sistema \_**</dt> </dl> | No hay suficientes recursos para realizar la operación.<br/> |
+| <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | Uno de los parámetros no es válido.<br/>                            |
+| <dl> <dt>**ERROR \_ SIN \_ RUTAS**</dt> </dl>            | No hay rutas que coincidan con los criterios especificados.<br/>       |
+| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las rutas se devuelven en el orden siguiente:
 
 1.  Número de red
 2.  Protocolo de enrutamiento
 3.  Identificador de interfaz
-4.  Dirección de próximo salto
+4.  Dirección del próximo salto
 
-Esta función es menos eficaz que la función de identificador de enumeración correspondiente, [**RtmEnumerateGetNextRoute**](rtmenumerategetnextroute.md).
+Esta función es menos eficaz que la función de identificador de enumeración correspondiente, [**RtmEnumerateGetNextRoute.**](rtmenumerategetnextroute.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
@@ -117,10 +117,10 @@ Esta función es menos eficaz que la función de identificador de enumeración c
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Funciones de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-functions.md)
+[Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)
 </dt> <dt>
 
 [**RtmCloseEnumerationHandle**](rtmcloseenumerationhandle.md)

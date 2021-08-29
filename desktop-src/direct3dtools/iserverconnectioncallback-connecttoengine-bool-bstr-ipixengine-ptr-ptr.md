@@ -1,10 +1,10 @@
 ---
-description: Conéctese a otra instancia de un motor remoto en el equipo local.
+description: Conectar a otra instancia de un motor remoto en el equipo local.
 MS-HAID: vspixengine.IServerConnectionCallback\_ConnectToEngine\_BOOL\_BSTR\_IPixEngine\_ptr\_ptr
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'IServerConnectionCallback:: ConnectToEngine (método)'
+title: IServerConnectionCallback::ConnectToEngine (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 56D67449-EA8B-4AD0-94D7-B3CDB7F0ABC8
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1506075066767cba95c7fec768fa27e858bd6a10
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bc599900f7cd4b2b26ea2dcc0341ee0d683b8aa3
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152615"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625541"
 ---
-# <a name="span-idvspixengineiserverconnectioncallback_connecttoengine_bool_bstr_ipixengine_ptr_ptrspaniserverconnectioncallbackconnecttoengine-method"></a><span id="vspixengine.iserverconnectioncallback_connecttoengine_bool_bstr_ipixengine_ptr_ptr"></span>IServerConnectionCallback:: ConnectToEngine (método)
+# <a name="span-idvspixengineiserverconnectioncallback_connecttoengine_bool_bstr_ipixengine_ptr_ptrspaniserverconnectioncallbackconnecttoengine-method"></a><span id="vspixengine.iserverconnectioncallback_connecttoengine_bool_bstr_ipixengine_ptr_ptr"></span>IServerConnectionCallback::ConnectToEngine (método)
 
-Conéctese a otra instancia de un motor remoto en el equipo local.
+Conectar a otra instancia de un motor remoto en el equipo local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,21 +42,21 @@ HRESULT ConnectToEngine(
 ## <a name="parameters"></a>Parámetros
 
 *bLegacyConnection*   
-True si el motor utiliza es heredado; de lo contrario, false.
+True si el motor usa es heredado; de lo contrario, false.
 
 *runAddress*   
-Cadena COM que contiene el nombre del equipo local.
+Cadena COM que contiene el nombre de la máquina local.
 
 *ppEngineCreated*   
 En la devolución, la dirección de la instancia del motor.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

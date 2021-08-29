@@ -1,7 +1,7 @@
 ---
 description: La función SetCCInstPtr captura un puntero de instancia de contexto.
 ms.assetid: 31924608-4aa1-4801-a5de-d8de054e12d9
-title: Función SetCCInstPtr (Netmon. h)
+title: Función SetCCInstPtr (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 323e6334c90358dd8725f3f9092142275cfe491a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a438327a6c1e160ea989434666ae535660d9b5ef26fc9289a3afa9d80d3f63e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074365"
 ---
-# <a name="setccinstptr-function"></a>SetCCInstPtr función)
+# <a name="setccinstptr-function"></a>Función SetCCInstPtr
 
-La función **SetCCInstPtr** captura un puntero de instancia de contexto.
+La **función SetCCInstPtr** captura un puntero de instancia de contexto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,20 +50,20 @@ Puntero a los datos de instancia agregados a la captura.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use esta función para almacenar un puntero a un bloque que se asignó con la función **CCHeapAlloc** . Cada analizador puede establecer una única instancia de datos en una captura.
+Use esta función para almacenar un puntero a un bloque asignado con la **función CCHeapAlloc.** Cada analizador puede establecer una única instancia de datos en una captura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

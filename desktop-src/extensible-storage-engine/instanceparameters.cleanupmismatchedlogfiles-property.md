@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. CleanupMismatchedLogFiles (propiedad)'
-title: Propiedad InstanceParameters. CleanupMismatchedLogFiles
+description: 'Más información sobre: Propiedad InstanceParameters.CleanupMismatchedLogFiles'
+title: Propiedad InstanceParameters.CleanupMismatchedLogFiles
 TOCTitle: 'CleanupMismatchedLogFiles property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.CleanupMismatchedLogFiles
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.cleanupmismatchedlogfiles(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0e80bb8877335e26cb233a09b2fa3ec3a6f12615
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe1b051819042728836f48edcdc46b01e800d34710f2d454480413a0aa19ac3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039443"
 ---
-# <a name="instanceparameterscleanupmismatchedlogfiles-property"></a>Propiedad InstanceParameters. CleanupMismatchedLogFiles
+# <a name="instanceparameterscleanupmismatchedlogfiles-property"></a>Propiedad InstanceParameters.CleanupMismatchedLogFiles
 
-Obtiene o establece un valor que indica si se produce un error en JetInit cuando el motor de base de datos está configurado para empezar a usar archivos de registro de transacciones en un disco con un tamaño diferente del configurado. Normalmente, [JetInit (JET_INSTANCE)](./api.jetinit-method.md) recuperará correctamente las bases de datos, pero producirá un error con [LogFileSizeMismatchDatabasesConsistent](./jet-err-enumeration.md) para indicar que el tamaño del archivo de registro está mal configurado. Sin embargo, cuando este parámetro se establece en true, el motor de base de datos eliminará silenciosamente todos los archivos de registro antiguos, iniciará un nuevo conjunto de archivos de registro de transacciones con el tamaño del archivo de registro configurado. Este parámetro es útil cuando la aplicación desea cambiar de forma transparente el tamaño del archivo de registro de transacciones todavía funciona de forma transparente en los escenarios de actualización y restauración.
+Obtiene o establece un valor que indica si Se produce un error en JetInit cuando el motor de base de datos está configurado para empezar a usar archivos de registro de transacciones en el disco que tienen un tamaño diferente al configurado. Normalmente, [JetInit(JET_INSTANCE)](./api.jetinit-method.md) recuperará correctamente las bases de datos, pero producirá un error [con LogFileSizeMismatchDatabasesConsistent](./jet-err-enumeration.md) para indicar que el tamaño del archivo de registro está mal configurado. Sin embargo, cuando este parámetro se establece en true, el motor de base de datos eliminará silenciosamente todos los archivos de registro antiguos e iniciará un nuevo conjunto de archivos de registro de transacciones con el tamaño de archivo de registro configurado. Este parámetro es útil cuando la aplicación desea cambiar de forma transparente su tamaño de archivo de registro de transacciones, pero sigue funcionando de forma transparente en escenarios de actualización y restauración.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public bool CleanupMismatchedLogFiles { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

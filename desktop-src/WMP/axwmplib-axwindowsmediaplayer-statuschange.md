@@ -1,9 +1,9 @@
 ---
 title: Evento StatusChange del objeto AxWindowsMediaPlayer
-description: El evento StatusChange se produce cuando cambia el valor de la propiedad status. | Evento StatusChange del objeto AxWindowsMediaPlayer
+description: El evento StatusChange tiene lugar cuando la propiedad status cambia de valor. | Evento StatusChange del objeto AxWindowsMediaPlayer
 ms.assetid: 5295fccb-7be0-46d3-85ba-b481e575d393
 keywords:
-- Evento StatusChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento StatusChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3ef3224afadb1f98a3067913a8beb095d4e46e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a2c454948adba5c53fc6d0cfaf7ae922e1466bcce28d4ef583ac241c0877c85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509325"
 ---
 # <a name="statuschange-event-of-the-axwindowsmediaplayer-object"></a>Evento StatusChange del objeto AxWindowsMediaPlayer
 
-El evento **StatusChange** se produce cuando cambia el valor de la propiedad **status** .
+El **evento StatusChange** tiene lugar cuando la **propiedad status** cambia de valor.
 
 ``` syntax
 [C#]
@@ -47,9 +47,9 @@ Este evento no contiene datos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -62,7 +62,7 @@ Este evento no contiene datos.
 [**Objeto AxWindowsMediaPlayer (VB y C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. status (VB y C#)**](axwmplib-axwindowsmediaplayer-status--vb-and-c.md)
+[**AxWindowsMediaPlayer.status (VB y C#)**](axwmplib-axwindowsmediaplayer-status--vb-and-c.md)
 </dt> </dl>
 
  

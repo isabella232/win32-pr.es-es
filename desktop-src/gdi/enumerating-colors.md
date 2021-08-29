@@ -1,19 +1,19 @@
 ---
-description: Puede determinar el número de colores que admite un dispositivo y cuáles son los colores mediante la recuperación del recuento de colores del dispositivo y la enumeración de los colores de los lápices sólidos.
+description: Puede determinar cuántos colores admite un dispositivo y cuáles son recuperando el recuento de colores del dispositivo y enumerando los colores de los lápices sólidos.
 ms.assetid: cbaa3732-e55e-42af-93de-390450d38fc9
 title: Enumerar colores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dca39ec9817ecab07c2c2bc42b08fbee83333f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fe7c180e013c940be194697b53ed4cb3c83fc2f08bface6b9dcd459e93f91bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037993"
 ---
 # <a name="enumerating-colors"></a>Enumerar colores
 
-Puede determinar el número de colores que admite un dispositivo y cuáles son los colores mediante la recuperación del recuento de colores del dispositivo y la enumeración de los colores de los lápices sólidos. Para recuperar el número de colores, utilice la función [**GetDeviceCaps**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) con el valor NUMCOLORS. Para enumerar lápices sólidos, utilice la función [**EnumObjects**](/windows/desktop/api/Wingdi/nf-wingdi-enumobjects) y una función de devolución de llamada correspondiente que reciba información sobre cada lápiz.
+Puede determinar cuántos colores admite un dispositivo y cuáles son recuperando el recuento de colores del dispositivo y enumerando los colores de los lápices sólidos. Para recuperar el número de colores, use la [**función GetDeviceCaps**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) con el valor NUMCOLORS. Para enumerar lápices sólidos, use la [**función EnumObjects**](/windows/desktop/api/Wingdi/nf-wingdi-enumobjects) y una función de devolución de llamada correspondiente que recibe información sobre cada lápiz.
 
 
 ```C++

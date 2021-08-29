@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: miembros de Server2003Grbits'
-title: Miembros de Server2003Grbits (Microsoft. ISAM. esent. Interop. Server2003)
+description: 'Más información sobre: Miembros server2003Grbits'
+title: Miembros Server2003Grbits (Microsoft.Isam.Esent.Interop.Server2003)
 TOCTitle: Server2003Grbits members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Server2003.Server2003Grbits
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.server2003.server2003grbits_members(v=EXCHG.10)
 ms:contentKeyID: 55107767
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 21008153606a6c35c76daf3c2758211f3fcdd42e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57e1dffd37dc54955ca2cb0ed28bc8aca37a35cb7ddc6792f497e7b8ca11513a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093205"
 ---
-# <a name="server2003grbits-members"></a>Miembros de Server2003Grbits
+# <a name="server2003grbits-members"></a>Miembros server2003Grbits
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Grbits que se han agregado a la versión 2003 de Windows Server de ESENT.
+Grbits que se han agregado a la versión Windows Server 2003 de ESENT.
 
-El tipo [Server2003Grbits](./server2003grbits-class.md) expone los siguientes miembros.
+El [tipo Server2003Grbits](./server2003grbits-class.md) expone los miembros siguientes.
 
 ## <a name="fields"></a>Campos
 
@@ -42,12 +42,12 @@ El tipo [Server2003Grbits](./server2003grbits-class.md) expone los siguientes mi
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351284(v=exchg.10).md">ForwardOnly</a></td>
-<td>Esta opción solicita que la tabla temporal se cree solo si el administrador de tablas temporales puede usar la implementación optimizada para los resultados intermedios de la consulta. Si alguna característica de la tabla temporal impidiera el uso de esta optimización, la operación producirá un error con JET_errCannotMaterializeForwardOnlySort. Un efecto secundario de esta opción es permitir que la tabla temporal contenga registros con claves de índice duplicadas. Consulte <a href="hh558517(v=exchg.10).md">Unique</a> para obtener más información.</td>
+<td>Esta opción solicita que la tabla temporal solo se cree si el administrador de tablas temporales puede usar la implementación optimizada para los resultados intermedios de la consulta. Si alguna característica de la tabla temporal impediría el uso de esta optimización, se producirá un error en la operación JET_errCannotMaterializeForwardOnlySort. Un efecto secundario de esta opción es permitir que la tabla temporal contenga registros con claves de índice duplicadas. Consulte <a href="hh558517(v=exchg.10).md">Único</a> para obtener más información.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351209(v=exchg.10).md">WaitAllLevel0Commit</a></td>
-<td>Todas las transacciones confirmadas previamente por cualquier sesión que todavía no se hayan vaciado en el archivo de registro de transacciones se vaciarán inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esta opción puede usarse incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.</td>
+<td>Todas las transacciones confirmadas previamente por cualquier sesión que aún no se hayan vaciado en el archivo de registro de transacciones se vaciarán inmediatamente. Esta API esperará hasta que se hayan vaciado las transacciones antes de volver al autor de la llamada. Esta opción se puede usar incluso si la sesión no está actualmente en una transacción. Esta opción no se puede usar en combinación con ninguna otra opción.</td>
 </tr>
 </tbody>
 </table>
@@ -55,10 +55,10 @@ El tipo [Server2003Grbits](./server2003grbits-class.md) expone los siguientes mi
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase Server2003Grbits](./server2003grbits-class.md)
+[Server2003Grbits (clase)](./server2003grbits-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)
