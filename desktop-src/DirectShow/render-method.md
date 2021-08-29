@@ -1,15 +1,15 @@
 ---
-description: El método Render inicializa el gráfico de filtros de DVD.
+description: El método Render inicializa el gráfico de filtro de DVD.
 ms.assetid: 910f1e3f-b3bb-498b-93da-3a974a3117e8
 title: Método Render
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 677abab1c669642c1e51e0041c98949d923147c7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0f1aa3abc4453478cd9d6399cb984dfd808b24e31168b8d2ab89b085a6070bb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904515"
 ---
 # <a name="render-method"></a>Método Render
 
@@ -18,7 +18,7 @@ ms.locfileid: "105677091"
 
  
 
-El `Render` método inicializa el gráfico de filtros de DVD.
+El `Render` método inicializa el gráfico de filtro de DVD.
 
 ``` syntax
 MSWebDVD.Render(iRender = 0)
@@ -31,14 +31,14 @@ MSWebDVD.Render(iRender = 0)
 <span id="iRender"></span><span id="irender"></span><span id="IRENDER"></span>*iRender*
 </dt> <dd>
 
-Especifica un valor entero que indica si el gráfico de filtro se destruirá y se volverá a generar.
+Especifica un valor entero que indica si el gráfico de filtro se destruirá y volverá a generar.
 
 
 
 | Value | Descripción                                                                                         |
 |-------|-----------------------------------------------------------------------------------------------------|
-| 0     | El gráfico de filtro no se destruirá y se volverá a generar si ya existe. Este es el valor predeterminado. |
-| 1     | El gráfico de filtro se destruirá y se volverá a generar si ya existe.                                |
+| 0     | El gráfico de filtros no se destruirá y volverá a generar si ya existe. Este es el valor predeterminado. |
+| 1     | El gráfico de filtro se destruirá y volverá a generar si ya existe.                                |
 
 
 
@@ -50,9 +50,9 @@ Especifica un valor entero que indica si el gráfico de filtro se destruirá y s
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El `Render` método permite al objeto **MSWebDVD** inicializar por completo el gráfico de filtros de DirectShow subyacente en el inicio. Esto elimina el leve retraso que, de lo contrario, se produce cuando el usuario emite el primer comando para reproducir un disco o para mostrar un menú. No hay ningún caso en el que `Render` sea necesario llamar antes de llamar a cualquier otro método. Por ejemplo, si la aplicación llama a [**PlayTitle**](playtitle-method.md) antes de que se haya inicializado el gráfico de filtros, el objeto **MSWebDVD** llama `Render` automáticamente a antes de intentar reproducir el disco.
+El `Render` método permite que el objeto **MSWebDVD** inicialice completamente el gráfico DirectShow filtro subyacente durante el inicio. Esto elimina el ligero retraso que, de lo contrario, se produce cuando el usuario emite el primer comando para reproducir un disco o mostrar un menú. No hay ningún caso en el que `Render` sea necesario llamar a antes de llamar a cualquier otro método. Por ejemplo, si la aplicación llama a [**PlayTitle**](playtitle-method.md) antes de inicializar el gráfico de filtros, el objeto **MSWebDVD** llama automáticamente antes de intentar reproducir `Render` el disco.
 
  
 

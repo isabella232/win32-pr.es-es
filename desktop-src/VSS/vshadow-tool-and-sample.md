@@ -4,19 +4,19 @@ ms.assetid: 19109f92-b9da-4df7-8628-374e37a3f624
 title: Herramienta VShadow y ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 306d759d10875b03cb0d2e4e2064a85614400ff5240800da3fc4c1ce94add8c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9043c01d68983d14a0a65f93b993bca3cfe61fcb
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118998075"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477321"
 ---
 # <a name="vshadow-tool-and-sample"></a>Herramienta VShadow y ejemplo
 
 VShadow es una herramienta de línea de comandos que puede usar para crear y administrar instantáneas de volumen.
 
 > [!Note]  
-> VShadow se incluye en el Kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista y versiones posteriores. El SDK de VSS 7.2 incluye una versión de VShadow que solo se ejecuta Windows Server 2003. Para obtener información sobre cómo descargar el SDK Windows y el SDK de VSS 7.2, [consulte Servicio de instantáneas de volumen](volume-shadow-copy-service-portal.md).
+> VShadow se incluye en el Kit de desarrollo de software (SDK) de Microsoft Windows para Windows Vista y versiones posteriores. El SDK de VSS 7.2 incluye una versión de VShadow que solo se ejecuta Windows Server 2003. Para obtener información sobre cómo descargar Windows SDK y el SDK de VSS 7.2, [consulte Servicio de instantáneas de volumen](volume-shadow-copy-service-portal.md).
 
  
 
@@ -49,151 +49,29 @@ Este comando crea un nuevo conjunto de instantáneas.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor de marca opcional</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="-ad"></span><span id="-AD"></span><strong>-ad</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas de hardware diferenciales. Esta marca y <strong>la marca -ap</strong> son mutuamente excluyentes.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-ap"></span><span id="-AP"></span><strong>-ap</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas de hardware plex. Esta marca y <strong>la marca -ad</strong> son mutuamente excluyentes.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="_-bc_File.xml"></span><span id="_-bc_file.xml"></span><span id="_-BC_FILE.XML"></span><strong></strong> <strong>-bc=</strong><em>File</em> <strong>.xml</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas no transportables y almacena el documento componentes de copia de seguridad en el archivo especificado. Este archivo se puede usar en una operación de restauración posterior. Esta marca y <strong>la marca -t</strong> son mutuamente excluyentes.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-exec_Command"></span><span id="-exec_command"></span><span id="-EXEC_COMMAND"></span><strong>-exec= (Comando)</strong><em></em><br/></td>
-<td>Esta marca opcional ejecuta un comando o script después de crear las instantáneas, pero antes de que se cierre la herramienta VShadow. <em>El</em> comando puede especificar un comando de shell ejecutable o un archivo CMD. Si especifica un comando de shell, no se puede especificar ningún parámetro de comando.<br/>
-<blockquote>
-[!Note]<br />
-Por motivos de seguridad y para que la implementación sea sencilla, la <strong>marca opcional -exec</strong> no aceptará parámetros que se pasarán al comando o script. Toda la cadena que se pasa a <strong>la marca opcional -exec</strong> se trata como un único archivo CMD o EXE. Para obtener más información sobre esta limitación, vea el código fuente de VShadow.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-forcerevert"></span><span id="-FORCEREVERT"></span><strong>-forcerevert</strong><br/></td>
-<td>Esta marca opcional especifica que la operación de instantánea debe completarse solo si se pueden revertir todas las firmas de disco.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/> <strong>Windows Server 2003:</strong> No se admite.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-mask"></span><span id="-MASK"></span><strong>-mask</strong><br/></td>
-<td>Esta marca opcional especifica que los LUN de instantáneas se deben enmascarar desde el equipo cuando se divide el conjunto de instantáneas.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/> <strong>Windows Server 2003:</strong> No se admite.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-nar"></span><span id="-NAR"></span><strong>-lo</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas sin recuperación automática. Para obtener más información sobre esta opción, vea la documentación de la VSS_VOLSNAP_ATTR_NO_AUTORECOVERY de la <a href="/windows/desktop/api/Vss/ne-vss-vss_volume_snapshot_attributes"><strong>enumeración _VSS_VOLUME_SNAPSHOT_ATTRIBUTES</strong></a> datos.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-norevert"></span><span id="-NOREVERT"></span><strong>-norevert</strong><br/></td>
-<td>Esta marca opcional especifica que no se deben revertir las firmas de disco.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/> <strong>Windows Server 2003:</strong> No se admite.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-nw"></span><span id="-NW"></span><strong>-nw</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas sin que intervendran escritores. Para obtener más información sobre las instantáneas sin participación del escritor, vea <a href="shadow-copy-creation-details.md">Detalles de creación de instantáneas.</a> Esta marca y <strong>las marcas -wi</strong> <strong>y -wx</strong> son mutuamente excluyentes.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-p"></span><span id="-P"></span><strong>-p</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas <a href="vssgloss-p.md"><em>persistentes.</em></a><br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-rw"></span><span id="-RW"></span><strong>-rw</strong><br/></td>
-<td>Esta marca opcional especifica que los LUN de instantáneas deben realizarse de lectura y escritura cuando se divide el conjunto de instantáneas.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/> <strong>Windows Server 2003:</strong> No se admite.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-scsf"></span><span id="-SCSF"></span><strong>-scsf</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas <a href="vssgloss-c.md"><em>accesibles para el cliente.</em></a><br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-script_File.cmd"></span><span id="-script_file.cmd"></span><span id="-SCRIPT_FILE.CMD"></span><strong>-script=</strong><em>Archivo</em><strong>.cmd</strong><br/></td>
-<td>Esta marca opcional genera un archivo CMD que contiene variables de entorno relacionadas con las instantáneas creadas, como los de instantáneas y los de conjunto de instantáneas.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-t_File.xml"></span><span id="-t_file.xml"></span><span id="-T_FILE.XML"></span><strong>-t=</strong><em>File</em> <strong>.xml</strong><br/></td>
-<td>Esta marca opcional especifica instantáneas transportables y almacena el documento de componentes de copia de seguridad en el archivo especificado <em> porFile.xml</em> parámetro . Este archivo se puede usar en una operación de importación o restauración posterior. Esta marca y <strong>la marca -bc</strong> son mutuamente excluyentes.<br/> <strong>Windows Server 2003, Standard Edition y Windows Server 2003, Web Edition:</strong> No se admiten instantáneas transportables. Todas las ediciones de Windows Server 2003 con Service Pack 1 (SP1) admiten instantáneas transportables.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-tr"></span><span id="-TR"></span><strong>-tr</strong><br/></td>
-<td>Esta marca opcional especifica que se debe aplicar la recuperación de TxF durante la creación de instantáneas.<br/>
-<blockquote>
-[!Note]<br />
-Esta marca solo se admite en Windows sistemas operativos de servidor.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-tracing"></span><span id="-TRACING"></span><strong>-tracing</strong><br/></td>
-<td>Esta marca opcional genera una salida detallada que se puede usar para solucionar problemas.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-wait"></span><span id="-WAIT"></span><strong>-wait</strong><br/></td>
-<td>Esta marca opcional hace que la herramienta VShadow espere la confirmación del usuario antes de salir.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-wi_Writer"></span><span id="-wi_writer"></span><span id="-WI_WRITER"></span><strong>-wi=</strong><em>Writer</em><br/></td>
-<td>Esta marca opcional comprueba que el escritor o componente especificado se incluye en la instantánea. <em>Writer</em> puede especificar una ruta de acceso de componente, un nombre de escritor, un identificador de escritor o un identificador de instancia de escritor. Esta marca y <strong>la marca -nw</strong> son mutuamente excluyentes.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="-wx_Writer"></span><span id="-wx_writer"></span><span id="-WX_WRITER"></span><strong>-wx=</strong><em>Writer</em><br/></td>
-<td>Esta marca opcional comprueba que el escritor o componente especificado se excluye de la instantánea. <em>Writer</em> puede especificar una ruta de acceso de componente, un nombre de escritor, un identificador de escritor o un identificador de instancia de escritor. Esta marca y <strong>la marca -nw</strong> son mutuamente excluyentes.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor de marca opcional | Descripción | 
+|---------------------|-------------|
+| <span id="-ad"></span><span id="-AD"></span><strong>-ad</strong><br /> | Esta marca opcional especifica instantáneas de hardware diferenciales. Esta marca y <strong>la marca -ap</strong> son mutuamente excluyentes.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /> | 
+| <span id="-ap"></span><span id="-AP"></span><strong>-ap</strong><br /> | Esta marca opcional especifica instantáneas de hardware plex. Esta marca y <strong>la marca -ad</strong> son mutuamente excluyentes.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /> | 
+| <span id="_-bc_File.xml"></span><span id="_-bc_file.xml"></span><span id="_-BC_FILE.XML"></span><strong></strong><strong>-bc=</strong><em>File</em> <strong>.xml</strong><br /> | Esta marca opcional especifica instantáneas no transportables y almacena el documento componentes de copia de seguridad en el archivo especificado. Este archivo se puede usar en una operación de restauración posterior. Esta marca y <strong>la marca -t</strong> son mutuamente excluyentes.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /> | 
+| <span id="-exec_Command"></span><span id="-exec_command"></span><span id="-EXEC_COMMAND"></span><strong>-exec= (Comando)</strong><em></em><br /> | Esta marca opcional ejecuta un comando o script después de crear las instantáneas, pero antes de que se cierre la herramienta VShadow. <em>El</em> comando puede especificar un comando de shell ejecutable o un archivo CMD. Si especifica un comando de shell, no se puede especificar ningún parámetro de comando.<br /><blockquote>[!Note]<br />Por motivos de seguridad y para que la implementación sea sencilla, la <strong>marca opcional -exec</strong> no aceptará parámetros que se pasarán al comando o script. Toda la cadena que se pasa a <strong>la marca opcional -exec</strong> se trata como un único archivo CMD o EXE. Para obtener más información sobre esta limitación, vea el código fuente de VShadow.</blockquote><br /> | 
+| <span id="-forcerevert"></span><span id="-FORCEREVERT"></span><strong>-forcerevert</strong><br /> | Esta marca opcional especifica que la operación de instantánea debe completarse solo si se pueden revertir todas las firmas de disco.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /><strong>Windows Server 2003:</strong> No se admite.<br /> | 
+| <span id="-mask"></span><span id="-MASK"></span><strong>-mask</strong><br /> | Esta marca opcional especifica que los LUN de instantáneas se deben enmascarar desde el equipo cuando se divide el conjunto de instantáneas.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /><strong>Windows Server 2003:</strong> No se admite.<br /> | 
+| <span id="-nar"></span><span id="-NAR"></span><strong>-lo</strong><br /> | Esta marca opcional especifica instantáneas sin recuperación automática. Para obtener más información sobre esta opción, vea la documentación de la VSS_VOLSNAP_ATTR_NO_AUTORECOVERY de la <a href="/windows/desktop/api/Vss/ne-vss-vss_volume_snapshot_attributes"><strong>enumeración _VSS_VOLUME_SNAPSHOT_ATTRIBUTES</strong></a> datos.<br /> | 
+| <span id="-norevert"></span><span id="-NOREVERT"></span><strong>-norevert</strong><br /> | Esta marca opcional especifica que no se deben revertir las firmas de disco.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /><strong>Windows Server 2003:</strong> No se admite.<br /> | 
+| <span id="-nw"></span><span id="-NW"></span><strong>-nw</strong><br /> | Esta marca opcional especifica instantáneas sin que intervendran escritores. Para obtener más información sobre las instantáneas sin participación del escritor, vea <a href="shadow-copy-creation-details.md">Detalles de creación de instantáneas.</a> Esta marca y <strong>las marcas -wi</strong> <strong>y -wx</strong> son mutuamente excluyentes.<br /> | 
+| <span id="-p"></span><span id="-P"></span><strong>-p</strong><br /> | Esta marca opcional especifica instantáneas <a href="vssgloss-p.md"><em>persistentes.</em></a><br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /> | 
+| <span id="-rw"></span><span id="-RW"></span><strong>-rw</strong><br /> | Esta marca opcional especifica que los LUN de instantáneas deben realizarse de lectura y escritura cuando se divide el conjunto de instantáneas.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /><strong>Windows Server 2003:</strong> No se admite.<br /> | 
+| <span id="-scsf"></span><span id="-SCSF"></span><strong>-scsf</strong><br /> | Esta marca opcional especifica instantáneas <a href="vssgloss-c.md"><em>accesibles para el cliente.</em></a><br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /> | 
+| <span id="-script_File.cmd"></span><span id="-script_file.cmd"></span><span id="-SCRIPT_FILE.CMD"></span><strong>-script=</strong><em>Archivo</em><strong>.cmd</strong><br /> | Esta marca opcional genera un archivo CMD que contiene variables de entorno relacionadas con las instantáneas creadas, como los de instantáneas y los de conjunto de instantáneas.<br /> | 
+| <span id="-t_File.xml"></span><span id="-t_file.xml"></span><span id="-T_FILE.XML"></span><strong>-t=</strong><em>File</em> <strong>.xml</strong><br /> | Esta marca opcional especifica instantáneas transportables y almacena el documento de componentes de copia de seguridad en el archivo especificado <em> porFile.xml</em> parámetro . Este archivo se puede usar en una operación de importación o restauración posterior. Esta marca y <strong>la marca -bc</strong> son mutuamente excluyentes.<br /><strong>Windows Server 2003, Standard Edition y Windows Server 2003, Web Edition:</strong> No se admiten instantáneas transportables. Todas las ediciones de Windows Server 2003 con Service Pack 1 (SP1) admiten instantáneas transportables.<br /> | 
+| <span id="-tr"></span><span id="-TR"></span><strong>-tr</strong><br /> | Esta marca opcional especifica que se debe aplicar la recuperación de TxF durante la creación de instantáneas.<br /><blockquote>[!Note]<br />Esta marca solo se admite en Windows sistemas operativos de servidor.</blockquote><br /> | 
+| <span id="-tracing"></span><span id="-TRACING"></span><strong>-tracing</strong><br /> | Esta marca opcional genera una salida detallada que se puede usar para solucionar problemas.<br /> | 
+| <span id="-wait"></span><span id="-WAIT"></span><strong>-wait</strong><br /> | Esta marca opcional hace que la herramienta VShadow espere la confirmación del usuario antes de salir.<br /> | 
+| <span id="-wi_Writer"></span><span id="-wi_writer"></span><span id="-WI_WRITER"></span><strong>-wi=</strong><em>Writer</em><br /> | Esta marca opcional comprueba que el escritor o componente especificado se incluye en la instantánea. <em>Writer</em> puede especificar una ruta de acceso de componente, un nombre de escritor, un identificador de escritor o un identificador de instancia de escritor. Esta marca y <strong>la marca -nw</strong> son mutuamente excluyentes.<br /> | 
+| <span id="-wx_Writer"></span><span id="-wx_writer"></span><span id="-WX_WRITER"></span><strong>-wx=</strong><em>Writer</em><br /> | Esta marca opcional comprueba que el escritor o componente especificado se excluye de la instantánea. <em>Writer</em> puede especificar una ruta de acceso de componente, un nombre de escritor, un identificador de escritor o un identificador de instancia de escritor. Esta marca y <strong>la marca -nw</strong> son mutuamente excluyentes.<br /> | 
+
 
 
 
@@ -206,13 +84,13 @@ Esta marca solo se admite en Windows sistemas operativos de servidor.
 La opción de línea de comandos **-i** importa un conjunto de instantáneas transportable.
 
 > [!Note]  
-> Esta opción de línea de comandos solo se admite en Windows sistemas operativos de servidor.
+> Esta opción de línea de comandos solo se admite en Windows operativos de servidor.
 
  
 
-El *File.xml* debe ser un archivo de documento de componentes de copia de seguridad para un conjunto de instantáneas transportable que se creó con la marca opcional **-t** **o -bc.**
+El *File.xml* debe ser un archivo de documento de componentes de copia de seguridad para un conjunto de instantáneas transportable que se creó con la **marca opcional -t** o **-bc.**
 
-Un conjunto de instantáneas es [*una instantánea*](vssgloss-p.md) persistente si se creó con la marca **opcional -p.** Si el conjunto de instantáneas transportable no es persistente, aparece durante un breve período de tiempo mientras se ejecuta el comando de creación de instantáneas y se elimina automáticamente cuando vuelve el comando. Solo puede importar instantáneas no persistentes durante la creación de instantáneas; para ello, cree el conjunto de instantáneas mediante la marca opcional **-exec** para ejecutar un archivo CMD que llame a VShadow **-i**.
+Un conjunto de instantáneas es [*una instantánea persistente*](vssgloss-p.md) si se creó con la marca opcional **-p.** Si el conjunto de instantáneas transportable no es persistente, aparece durante un breve período de tiempo mientras se ejecuta el comando de creación de instantáneas y se elimina automáticamente cuando se devuelve el comando. Solo puede importar instantáneas no persistentes durante la creación de instantáneas; para ello, cree el conjunto de instantáneas mediante la marca **opcional -exec** para ejecutar un archivo CMD que llame a VShadow **-i**.
 
 La opción de línea de comandos **-i** no se puede combinar con otras opciones de línea de comandos.
 
@@ -222,7 +100,7 @@ La opción de línea de comandos **-i** no se puede combinar con otras opciones 
 
 | Valor de marca opcional                                                                                                            | Descripción                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="-exec_Command"></span><span id="-exec_command"></span><span id="-EXEC_COMMAND"></span>**-exec= (Comando)**<br/> | Esta marca opcional ejecuta un comando o script después de importar las instantáneas, pero antes de que se cierre la herramienta VShadow. *El* comando puede especificar un comando de shell ejecutable o un archivo CMD. Si especifica un comando de shell, no se puede especificar ningún parámetro de comando.<br/> |
+| <span id="-exec_Command"></span><span id="-exec_command"></span><span id="-EXEC_COMMAND"></span>**-exec=**_(Comando)_<br/> | Esta marca opcional ejecuta un comando o script después de importar las instantáneas, pero antes de que se cierre la herramienta VShadow. *El* comando puede especificar un comando de shell ejecutable o un archivo CMD. Si especifica un comando de shell, no se puede especificar ningún parámetro de comando.<br/> |
 | <span id="-tracing"></span><span id="-TRACING"></span>**-tracing**<br/>                                                  | Esta marca opcional genera una salida detallada que se puede usar para solucionar problemas.<br/>                                                                                                                                                                                 |
 | <span id="-wait"></span><span id="-WAIT"></span>**-wait**<br/>                                                           | Esta marca opcional hace que la herramienta VShadow espere la confirmación del usuario antes de salir.<br/>                                                                                                                                                                          |
 
@@ -242,7 +120,7 @@ La opción de línea de comandos **-q** enumera las propiedades de todas las ins
 
 La opción de línea de comandos **-qx** enumera las propiedades de todas las instantáneas del conjunto de instantáneas cuyo identificador *especifica ShadowCopySetId.*
 
-La opción de línea de comandos **-s** enumera las propiedades de la instantánea cuyo identificador *especifica ShadowCopyId.*
+La opción de línea de comandos **-s** enumera las propiedades de la instantánea cuyo identificador especifica *ShadowCopyId.*
 
 Estas opciones de línea de comandos usan una combinación de [**IVssBackupComponents::Query**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-query) e [**IVssBackupComponents::GetSnapshotProperties**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-getsnapshotproperties) para obtener las propiedades del conjunto especificado de instantáneas.
 
@@ -261,7 +139,7 @@ Las opciones de línea de comandos **-q**, **-qx** y **-s** son mutuamente exclu
 El **comando -da** elimina todas las instantáneas del equipo.
 
 > [!Note]  
-> La opción de línea de comandos **-da** requiere la confirmación del usuario.
+> La opción de línea de comandos **-da** requiere confirmación del usuario.
 
  
 
@@ -271,7 +149,7 @@ La opción de línea de comandos **-dx** elimina todas las instantáneas del con
 
 La opción de línea de comandos **-ds** elimina la instantánea cuyo identificador especifica *ShadowCopyId.*
 
-Estas opciones de línea de comandos solo se pueden usar con [*instantáneas persistentes.*](vssgloss-p.md) No es necesario eliminar explícitamente las instantáneas no persistentes, ya que se eliminan automáticamente cuando se cierra el comando de creación de VShadow.
+Estas opciones de línea de comandos solo se usan con [*instantáneas persistentes.*](vssgloss-p.md) No es necesario eliminar explícitamente las instantáneas no persistentes, ya que se eliminan automáticamente cuando se cierra el comando de creación de VShadow.
 
 Las opciones de línea de comandos **-da**, **-do**, **-dx** y **-ds** son mutuamente excluyentes y no se pueden combinar con otras opciones de línea de comandos.
 
@@ -290,11 +168,11 @@ La opción de línea de comandos **-bw=**_ShadowCopySetId_ convierte cada instan
 
  
 
-Para obtener información sobre cómo dividir un conjunto de instantáneas, vea [Instantáneas de última hora.](breaking-shadow-copies.md)
+Para obtener información sobre cómo dividir un conjunto de instantáneas, vea [Breaking Shadow Copies](breaking-shadow-copies.md).
 
 Una vez roto el conjunto de instantáneas, el conjunto de instantáneas y las instantáneas individuales ya no existen y no se pueden administrar mediante comandos de VSS.
 
-Un conjunto de instantáneas es persistente si se creó con la **marca opcional -p.** Si el conjunto de instantáneas transportable no es persistente, aparece durante un breve período de tiempo mientras se ejecuta el comando de creación de instantáneas y se elimina automáticamente cuando vuelve el comando. Puede interrumpir los conjuntos de instantáneas no persistentes solo durante la creación de instantáneas; para ello, cree el conjunto de instantáneas mediante la marca opcional **-exec** para ejecutar un archivo CMD que llame a **vshadow** **-b** o **vshadow** **-bw**.
+Un conjunto de instantáneas es persistente si se creó con la **marca opcional -p.** Si el conjunto de instantáneas transportable no es persistente, aparece durante un breve período de tiempo mientras se ejecuta el comando de creación de instantáneas y se elimina automáticamente cuando se devuelve el comando. Puede interrumpir los conjuntos de instantáneas no persistentes solo durante la creación de instantáneas; para ello, cree el conjunto de instantáneas mediante la marca **opcional -exec** para ejecutar un archivo CMD que llame a **vshadow** **-b** o **vshadow** **-bw**.
 
 Las opciones de línea de comandos **-b** y **-bw** son mutuamente excluyentes y no se pueden combinar con otras opciones de línea de comandos.
 
@@ -304,7 +182,7 @@ Las opciones de línea de comandos **-b** y **-bw** son mutuamente excluyentes y
 
 La opción de línea de comandos **-bex** interrumpe un conjunto de instantáneas según las opciones especificadas por las marcas **opcionales -mask**, **-rw**, **-forcerevert** y **-norevert.** Esta opción de línea de comandos es similar a las opciones de línea de comandos **-b** y **-bw.** La opción de línea de comandos **-bex** usa el método [**IVssBackupComponentsEx2::BreakSnapshotSetEx,**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-breaksnapshotsetex) mientras que las opciones de línea de comandos **-b** y **-bw** usan el método [**IVssBackupComponents::BreakSnapshotSet.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-breaksnapshotset)
 
-Para obtener información sobre cómo dividir un conjunto de instantáneas, vea [Instantáneas de última hora.](breaking-shadow-copies.md)
+Para obtener información sobre cómo dividir un conjunto de instantáneas, vea [Breaking Shadow Copies](breaking-shadow-copies.md).
 
 > [!Note]  
 > La opción de línea de comandos **-bex** solo se admite en Windows operativos de servidor.
@@ -321,7 +199,7 @@ La **marca -rw** especifica que el LUN de instantáneas se expone al host como u
 
 **vshadow** **-bex** **-forcerevert**
 
-La **marca -forcerevert** especifica que los identificadores de disco de todos los LUN de instantáneas se revertirán al de los LUN originales. Sin embargo, si alguno de los LUN originales están presentes en el sistema, se producirá un error en la operación y no se revertirá ninguno de los identificadores. Esta marca y **la marca -norevert** son mutuamente excluyentes.
+La **marca -forcerevert** especifica que los identificadores de disco de todos los LUN de instantánea se revertirán al de los LUN originales. Sin embargo, si alguno de los LUN originales está presente en el sistema, se producirá un error en la operación y no se revertirá ninguno de los identificadores. Esta marca y **la marca -norevert** son mutuamente excluyentes.
 
 **vshadow** **-bex** **-norevert**
 
@@ -336,13 +214,13 @@ La **marca -norevert** especifica que no se revertirá ninguno de los identifica
 La opción de línea de comandos **-el** asigna una carpeta montada o una letra de unidad a una instantánea persistente. Tenga en cuenta que el contenido del volumen seguirá siendo de solo lectura a menos que llame posteriormente **a vshadow** **-bw** para interrumpir el conjunto de instantáneas.
 
 > [!Note]  
-> Las instantáneas no persistentes y las [*instantáneas*](vssgloss-c.md) accesibles para el cliente no se pueden exponer localmente.
+> Las instantáneas no persistentes y [*las*](vssgloss-c.md) instantáneas accesibles para el cliente no se pueden exponer localmente.
 
  
 
-Por ejemplo, si {edbed95e-7e8d-11d8-9d01-505054503030} es el GUID de una instantánea persistente existente y X: es una letra de unidad sin usar, el siguiente comando expone la instantánea en X:
+Por ejemplo, si {edbed95e-7e8d-11d8-9d01-505054503030} es el GUID de una instantánea persistente existente y X: es una letra de unidad no utilizada, el siguiente comando expone la instantánea en X:
 
-**vshadow** **-el={edbed95e-7e8d-11d8-9d01-505054503030},x:**
+**vshadow** **-el={edbed95e-7e8d-11d8-9d01-505054503030}, x:**
 
 En el ejemplo siguiente se muestra cómo exponer la misma instantánea en la carpeta montada C: \\ ShadowCopies \\ June23:
 
@@ -356,18 +234,18 @@ La opción de línea de comandos **-el** no se puede combinar con otras opciones
 
 **vshadow** **-er=**_ShadowCopyId_*_,_*_UnusedShareName_
 
- **vshadow** **-er=**_ShadowCopyId,_**_UnusedShareName_*_,_*_PathFromRootOnShadow_
+ **vshadow** **-er=**_ShadowCopyId_*_,_*_UnusedShareName_*_,_*_PathFromRootOnShadow_
 
 La opción de línea de comandos **-er** asigna un nombre de recurso compartido de solo lectura al directorio raíz (o un subdirectorio) de la instantánea. Tenga en cuenta que el contenido del recurso compartido seguirá siendo de solo lectura a menos que llame posteriormente **a vshadow** **-bw** para interrumpir el conjunto de instantáneas.
 
 > [!Note]  
-> [*Las instantáneas accesibles para el*](vssgloss-c.md) cliente no se pueden exponer de forma remota.
+> [*Las instantáneas accesibles por el*](vssgloss-c.md) cliente no se pueden exponer de forma remota.
 
  
 
-Por ejemplo, si {edbed95e-7e8d-11d8-9d01-505054503030} es el GUID de una instantánea persistente existente y el recurso compartido 123 es un nombre de recurso compartido sin usar, el siguiente comando expone la instantánea en el recurso compartido \_ \_ 123:
+Por ejemplo, si {edbed95e-7e8d-11d8-9d01-505054503030} es el GUID de una instantánea persistente existente y el recurso compartido 123 es un nombre de recurso compartido sin usar, el siguiente comando expone la instantánea bajo el recurso compartido \_ \_ 123:
 
-**vshadow** **-er={edbed95e-7e8d-11d8-9d01-505054503030},share \_ 123**
+**vshadow** **-er={edbed95e-7e8d-11d8-9d01-505054503030}, share \_ 123**
 
 En el ejemplo siguiente se muestra cómo exponer solo un subárbol (denominado "Carpeta1 Carpeta2") de la misma instantánea \\ en el mismo recurso compartido:
 
@@ -414,7 +292,7 @@ La opción de línea de comandos **-r** realiza una operación de restauración.
 
 La opción de línea de comandos **-rs** realiza una operación de restauración simulada.
 
-El *File.xml* debe ser un archivo de documento de componentes de copia de seguridad para un conjunto de instantáneas que se creó con la **marca opcional -t** o **-bc.**
+El *File.xml* debe ser un archivo de documento componentes de copia de seguridad para un conjunto de instantáneas que se creó con la **marca opcional -t** o **-bc.**
 
 Las opciones de línea de comandos **-r** y **-rs** son mutuamente excluyentes y no se pueden combinar con otras opciones de línea de comandos.
 
@@ -469,38 +347,12 @@ La opción de línea de comandos **-resync** inicia una operación de resincroni
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Valor de marca opcional</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="-revertsig"></span><span id="-REVERTSIG"></span><strong>-revertsig</strong><br/></td>
-<td>Esta marca opcional especifica que una vez completada la operación, la firma de cada LUN de destino debe ser idéntica a la del LUN original que se usó para crear la instantánea, no el LUN del volumen de destino.<br/>
-<blockquote>
-[!Note]<br />
-La <strong>marca -revertsig</strong> solo se admite en Windows operativos de servidor.
-</blockquote>
-<br/> <strong>Windows Server 2008 y Windows Server 2003:</strong> No se admite.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="-novolcheck"></span><span id="-NOVOLCHECK"></span><strong>-novolcheck</strong><br/></td>
-<td>Esta marca opcional especifica que el servicio VSS no debe comprobar si hay volúmenes no seleccionados que se sobrescribirían mediante la operación de resincronización de LUN.<br/>
-<blockquote>
-[!Note]<br />
-La <strong>marca -novolcheck</strong> solo se admite en Windows operativos de servidor.
-</blockquote>
-<br/> <strong>Windows Server 2008 y Windows Server 2003:</strong> No se admite.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor de marca opcional | Descripción | 
+|---------------------|-------------|
+| <span id="-revertsig"></span><span id="-REVERTSIG"></span><strong>-revertsig</strong><br /> | Esta marca opcional especifica que una vez completada la operación, la firma de cada LUN de destino debe ser idéntica a la del LUN original que se usó para crear la instantánea, no el LUN del volumen de destino.<br /><blockquote>[!Note]<br />La <strong>marca -revertsig</strong> solo se admite en Windows operativos de servidor.</blockquote><br /><strong>Windows Server 2008 y Windows Server 2003:</strong> No se admite.<br /> | 
+| <span id="-novolcheck"></span><span id="-NOVOLCHECK"></span><strong>-novolcheck</strong><br /> | Esta marca opcional especifica que el servicio VSS no debe comprobar si hay volúmenes no seleccionados que se sobrescribirían mediante la operación de resincronización de LUN.<br /><blockquote>[!Note]<br />La <strong>marca -novolcheck</strong> solo se admite en Windows operativos de servidor.</blockquote><br /><strong>Windows Server 2008 y Windows Server 2003:</strong> No se admite.<br /> | 
+
 
 
 

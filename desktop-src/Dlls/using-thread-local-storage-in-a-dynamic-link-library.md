@@ -1,37 +1,37 @@
 ---
-description: En esta sección se muestra el uso de una función de punto de entrada de DLL para configurar un índice de almacenamiento local de subprocesos (TLS) para proporcionar almacenamiento privado para cada subproceso de un proceso multiproceso.
+description: En esta sección se muestra el uso de una función de punto de entrada dll para configurar un índice de almacenamiento local de subprocesos (TLS) para proporcionar almacenamiento privado para cada subproceso de un proceso multiproceso.
 ms.assetid: a300f223-b513-4a22-a7a4-5d98cf74d77d
-title: Usar el almacenamiento local para el subproceso en una biblioteca de Dynamic-Link
+title: Uso de subprocesos Storage en una biblioteca Dynamic-Link subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 261ef7482520b4cb6e6c7b630f10ebb456231283
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f44aaf4a4f5314539d788f4558548c110259bd49c40807a07603e432d3f468c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902325"
 ---
-# <a name="using-thread-local-storage-in-a-dynamic-link-library"></a>Usar el almacenamiento local para el subproceso en una biblioteca de Dynamic-Link
+# <a name="using-thread-local-storage-in-a-dynamic-link-library"></a>Uso de subprocesos Storage en una biblioteca Dynamic-Link subprocesos
 
-En esta sección se muestra el uso de una función de punto de entrada de DLL para configurar un índice de almacenamiento local de subprocesos (TLS) para proporcionar almacenamiento privado para cada subproceso de un proceso multiproceso.
+En esta sección se muestra el uso de una función de punto de entrada dll para configurar un índice de almacenamiento local de subprocesos (TLS) para proporcionar almacenamiento privado para cada subproceso de un proceso multiproceso.
 
-El índice TLS se almacena en una variable global y lo pone a disposición de todas las funciones DLL. En este ejemplo se da por supuesto que los datos globales del archivo DLL no están compartidos, ya que el índice TLS no es necesariamente el mismo para cada proceso que carga el archivo DLL.
+El índice TLS se almacena en una variable global, lo que lo hace disponible para todas las funciones DLL. En este ejemplo se da por supuesto que los datos globales del archivo DLL no se comparten, ya que el índice TLS no es necesariamente el mismo para cada proceso que carga el archivo DLL.
 
-La función de punto de entrada utiliza la función [**TlsAlloc**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) para asignar un índice TLS cada vez que un proceso carga el archivo dll. A continuación, cada subproceso puede utilizar este índice para almacenar un puntero a su propio bloque de memoria.
+La función de punto de entrada usa la [**función TlsAlloc**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) para asignar un índice TLS cada vez que un proceso carga el archivo DLL. A continuación, cada subproceso puede usar este índice para almacenar un puntero a su propio bloque de memoria.
 
-Cuando se llama a la función de punto de entrada con el \_ valor Attach del proceso de dll \_ , el código realiza las siguientes acciones:
+Cuando se llama a la función de punto de entrada con el valor DLL PROCESS ATTACH, el código \_ \_ realiza las siguientes acciones:
 
-1.  Utiliza la función [**TlsAlloc**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) para asignar un índice TLS.
-2.  Asigna un bloque de memoria que va a usar exclusivamente el subproceso inicial del proceso.
+1.  Usa la [**función TlsAlloc**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) para asignar un índice TLS.
+2.  Asigna un bloque de memoria que el subproceso inicial del proceso usará exclusivamente.
 3.  Usa el índice TLS en una llamada a la función [**TlsSetValue**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlssetvalue) para almacenar la dirección del bloque de memoria en la ranura TLS asociada al índice.
 
-Cada vez que el proceso crea un nuevo subproceso, se llama a la función de punto de entrada con el \_ valor Attach del subproceso de la dll \_ . A continuación, la función de punto de entrada asigna un bloque de memoria para el nuevo subproceso y almacena un puntero a él mediante el índice de TLS.
+Cada vez que el proceso crea un subproceso, se llama a la función de punto de entrada con el valor \_ ATTACH \_ de DLL THREAD. A continuación, la función de punto de entrada asigna un bloque de memoria para el nuevo subproceso y almacena un puntero a él mediante el índice TLS.
 
-Cuando una función requiere acceso a los datos asociados a un índice TLS, especifique el índice en una llamada a la función [**TlsGetValue**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) . Esto recupera el contenido de la ranura TLS para el subproceso que realiza la llamada, que en este caso es un puntero al bloque de memoria para los datos. Cuando un proceso usa la vinculación en tiempo de carga con este archivo DLL, la función de punto de entrada es suficiente para administrar el almacenamiento local del subproceso. Pueden producirse problemas con un proceso que usa la vinculación en tiempo de ejecución porque no se llama a la función de punto de entrada para los subprocesos que existen antes de que se llame a la función [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) , por lo que no se asigna la memoria TLS para estos subprocesos. Este ejemplo resuelve este problema comprobando el valor devuelto por la función [**TlsGetValue**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) y asignando memoria si el valor indica que no se ha establecido la ranura TLS para este subproceso.
+Cuando una función requiere acceso a los datos asociados a un índice TLS, especifique el índice en una llamada a la [**función TlsGetValue.**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) Esto recupera el contenido de la ranura TLS para el subproceso que realiza la llamada, que en este caso es un puntero al bloque de memoria de los datos. Cuando un proceso usa la vinculación en tiempo de carga con este archivo DLL, la función de punto de entrada es suficiente para administrar el almacenamiento local del subproceso. Pueden producirse problemas con un proceso que usa la vinculación en tiempo de ejecución porque no se llama a la función de punto de entrada para los subprocesos que existen antes de llamar a la función [**LoadLibrary,**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) por lo que no se asigna memoria TLS para estos subprocesos. En este ejemplo se resuelve este problema comprobando el valor devuelto por la función [**TlsGetValue**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) y asignando memoria si el valor indica que no se ha establecido la ranura TLS para este subproceso.
 
-Cuando cada subproceso ya no necesita usar un índice TLS, debe liberar la memoria cuyo puntero se almacena en la ranura TLS. Cuando todos los subprocesos hayan terminado de usar un índice TLS, utilice la función [**TlsFree**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree) para liberar el índice.
+Cuando cada subproceso ya no necesita usar un índice TLS, debe liberar la memoria cuyo puntero se almacena en la ranura TLS. Cuando todos los subprocesos terminen de usar un índice TLS, use la [**función TlsFree**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree) para liberar el índice.
 
-Cuando finaliza un subproceso, se llama a la función de punto de entrada con el \_ valor de separación de subprocesos \_ de dll y se libera la memoria para ese subproceso. Cuando finaliza un proceso, se llama a la función de punto de entrada con el \_ \_ valor de desasociación del proceso de dll y se libera la memoria a la que hace referencia el puntero en el índice de TLS.
+Cuando finaliza un subproceso, se llama a la función de punto de entrada con el valor DLL THREAD DETACH y se libera la \_ \_ memoria de ese subproceso. Cuando finaliza un proceso, se llama a la función de punto de entrada con el valor DETACH DE DLL PROCESS y se libera la memoria a la que hace referencia el puntero en el \_ \_ índice TLS.
 
 
 ```C++
@@ -166,7 +166,7 @@ BOOL WINAPI GetData(DWORD *pdw)
 
 
 
-En el código siguiente se muestra el uso de las funciones DLL definidas en el ejemplo anterior.
+El código siguiente muestra el uso de las funciones DLL definidas en el ejemplo anterior.
 
 
 ```C++
@@ -252,7 +252,7 @@ VOID ErrorExit (LPSTR lpszMessage)
 
 <dl> <dt>
 
-[Datos de biblioteca de vínculos dinámicos](dynamic-link-library-data.md)
+[Datos de la biblioteca de vínculos dinámicos](dynamic-link-library-data.md)
 </dt> <dt>
 
 [Uso del almacenamiento local de subprocesos](/windows/desktop/ProcThread/using-thread-local-storage)

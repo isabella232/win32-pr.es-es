@@ -1,11 +1,11 @@
 ---
-title: Propiedad pictureType de IWMPMetadataPicture
+title: Propiedad IWMPMetadataPicture pictureType
 description: La propiedad pictureType obtiene el tipo de imagen de la imagen representada por el atributo de metadatos.
 ms.assetid: d36bbac5-93b8-4ef4-aa78-191d90942d3d
 keywords:
-- propiedad pictureType Media Player de Windows
-- propiedad pictureType Media Player de Windows, interfaz IWMPMetadataPicture
-- Interfaz IWMPMetadataPicture Windows Media Player, propiedad pictureType
+- propiedad pictureType Reproductor de Windows Media
+- Propiedad pictureType Reproductor de Windows Media , interfaz IWMPMetadataPicture
+- Interfaz IWMPMetadataPicture Reproductor de Windows Media , propiedad pictureType
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34880ec0a59f6456a969755da9f0b5f81b3db2c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 185d1ee79d7001be49116ba9d980552eca57f082e68e650dc66f4f3aa0dbdb97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861173"
 ---
-# <a name="iwmpmetadatapicturepicturetype-property"></a>IWMPMetadataPicture::p propiedad ictureType
+# <a name="iwmpmetadatapicturepicturetype-property"></a>IWMPMetadataPicture::p ictureType
 
 La `pictureType` propiedad obtiene el tipo de imagen de la imagen representada por el atributo de metadatos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,11 +46,11 @@ Public ReadOnly Property pictureType As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. String** que es el tipo de imagen de la imagen.
+**System.String que** es el tipo de imagen de la imagen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

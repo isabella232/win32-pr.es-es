@@ -4,21 +4,21 @@ ms.assetid: 1E4DDEF7-D204-4764-8706-D7CF3CE0305B
 title: Métodos IWPCWebSettings
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8c0847d33b853f78bdf14e1ae48d538c1e57520
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f31a1abafd414b1776e6a7e511018531db8494185147fee1d00ee38a882f4419
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939475"
 ---
 # <a name="iwpcwebsettings-methods"></a>Métodos IWPCWebSettings
 
-La interfaz [**IWPCWebSettings**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwpcwebsettings) expone los métodos siguientes.
+La [**interfaz IWPCWebSettings**](/windows/desktop/api/Wpcapi/nn-wpcapi-iwpcwebsettings) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Método GetSettings**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-getsettings)
--   [**Método RequestURLOverride**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-requesturloverride)
+-   [**GetSettings (método)**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-getsettings)
+-   [**RequestURLOverride (método)**](/windows/desktop/api/Wpcapi/nf-wpcapi-iwpcwebsettings-requesturloverride)
 
  
 

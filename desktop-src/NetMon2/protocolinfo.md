@@ -1,7 +1,7 @@
 ---
 description: La estructura PROTOCOLINFO describe un protocolo.
 ms.assetid: 7f936c93-a942-4591-9abc-59872df0964e
-title: Estructura PROTOCOLINFO (Netmon. h)
+title: Estructura PROTOCOLINFO (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: ed1410148a72c57b860fdfdaee447dcca505d99c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d44bf19f651f9391dcfc872798f709c463a74ce22b328c6942a32ca1a98636a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119889765"
 ---
-# <a name="protocolinfo-structure"></a>Estructura PROTOCOLINFO
+# <a name="protocolinfo-structure"></a>PROTOCOLINFO (estructura)
 
-La estructura **PROTOCOLINFO** describe un protocolo.
+La **estructura PROTOCOLINFO** describe un protocolo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,18 +60,18 @@ Base de datos de propiedades del protocolo especificado.
 **ProtocolName**
 </dt> <dd>
 
-Nombre abreviado de protocolo.
+Nombre abreviado del protocolo.
 
 </dd> <dt>
 
-**HelpFile**
+**Helpfile**
 </dt> <dd>
 
-Nombre de archivo de ayuda opcional asociado al Protocolo.
+Nombre de archivo de Ayuda opcional asociado al protocolo.
 
 </dd> <dt>
 
-**Comentario**
+**Comment**
 </dt> <dd>
 
 Comentario que describe el protocolo.
@@ -86,7 +86,7 @@ Comentario que describe el protocolo.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

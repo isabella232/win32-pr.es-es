@@ -4,16 +4,16 @@ ms.assetid: 64904CDB-7A15-4982-850C-2F1D37236382
 title: Desarrollo con tecnologías de servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44d2656271716f930b7575bdecef451e97278a26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 364177c95508cf9d12c717f135f3cca8ccfe8107338c9455d13a35e052d70f26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944115"
 ---
 # <a name="develop-with-server-technologies"></a>Desarrollo con tecnologías de servidor
 
-* [Servicios de directorio, identidad y acceso](srvnodes/directory--identity--and-access-services.md)
+* [Directorio, identidad y Access Services](srvnodes/directory--identity--and-access-services.md)
 * [Rights Management](srvnodes/rights-management.md)
 * [Administración del sistema](srvnodes/system-administration.md)
 * [Virtualización](srvnodes/virtualization.md)

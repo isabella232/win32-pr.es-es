@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. setSelectedState
+title: PLAYLIST.setSelectedState
 description: El método setSelectedState especifica que el elemento indexado de la lista de reproducción está seleccionado.
 ms.assetid: 61770053-733f-40b5-8b1f-92b6975d3ad3
 keywords:
-- Windows Media Player de lista de reproducción. setSelectedState
+- PLAYLIST.setSelectedState Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 09a7bb545330710ae4fe2c39eae4556207061203
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ba35f2030f4b2fb6e9acfde1a8310e6c9f1dac98b8ba8aa65d56cce206c8e00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862245"
 ---
-# <a name="playlistsetselectedstate"></a>Lista de reproducción. setSelectedState
+# <a name="playlistsetselectedstate"></a>PLAYLIST.setSelectedState
 
-El método **setSelectedState** especifica que el elemento indexado de la lista de reproducción está seleccionado.
+El **método setSelectedState** especifica que el elemento indexado de la lista de reproducción está seleccionado.
 
 ``` syntax
         elementID.setSelectedState(item)
@@ -32,10 +32,10 @@ El método **setSelectedState** especifica que el elemento indexado de la lista 
 
 <dl> <dt>
 
-<span id="item"></span><span id="ITEM"></span>*movs*
+<span id="item"></span><span id="ITEM"></span>*Artículo*
 </dt> <dd>
 
-**Número** (**largo**) que indica el índice de un elemento de la lista de reproducción.
+**Number** (**long**) que indica el índice de un elemento en la lista de reproducción.
 
 </dd> </dl>
 
@@ -43,9 +43,9 @@ El método **setSelectedState** especifica que el elemento indexado de la lista 
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede establecer todos los elementos en el estado seleccionado especificando 1 en el parámetro *Item* .
+Puede establecer todos los elementos en el estado seleccionado especificando 1 en el parámetro *item.*
 
 Este método se ha reemplazado por **setSelectedState2**, que admite listas de reproducción anidadas.
 
@@ -55,7 +55,7 @@ Este método se ha reemplazado por **setSelectedState2**, que admite listas de r
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -66,7 +66,7 @@ Este método se ha reemplazado por **setSelectedState2**, que admite listas de r
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. setSelectedState2**](playlist-setselectedstate2.md)
+[**PLAYLIST.setSelectedState2**](playlist-setselectedstate2.md)
 </dt> </dl>
 
  

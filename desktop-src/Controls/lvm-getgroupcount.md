@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETGROUPCOUNT (commctrl. h)
+title: LVM_GETGROUPCOUNT mensaje (Commctrl.h)
 description: Obtiene el número de grupos.
 ms.assetid: 6d7f2572-41d4-4fff-92a7-3b59cfbecd61
 keywords:
-- LVM_GETGROUPCOUNT controles de mensajes de Windows
+- LVM_GETGROUPCOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e3098ea24326cd5347a26b4bba02478563eb6f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02933e0e78eda7c70420b398232f34d5200012800549679238ea23d374532af5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877425"
 ---
-# <a name="lvm_getgroupcount-message"></a>\_Mensaje GETGROUPCOUNT LVM
+# <a name="lvm_getgroupcount-message"></a>Mensaje \_ GETGROUPCOUNT de LVM
 
 Obtiene el número de grupos.
 
@@ -29,17 +29,17 @@ Obtiene el número de grupos.
 
 <dl> <dt>
 
-*wParam* \[ enuncia\]
+*wParam* \[ out\]
 </dt> <dd>
 
-No se utiliza. Debe ser 0.
+No se usa. Debe ser 0.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza. Debe ser 0.
+No se usa. Debe ser 0.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Devuelve el número de grupos.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

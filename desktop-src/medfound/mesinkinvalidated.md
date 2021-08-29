@@ -1,29 +1,29 @@
 ---
-description: Se genera cuando un receptor de medios deja de ser válido.
+description: Se genera cuando un receptor multimedia deja de ser válido.
 ms.assetid: fa75926e-7cef-44da-9efe-f2f86fd4fd45
-title: Evento MESinkInvalidated (Mfobjects. h)
+title: Evento MESinkInvalidated (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46807a45e907999b34190f9678bd3dc0051680ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b002ffc47f8a47d9c7b2228a9a4d7ad7441b70aa08d12f74ece7590fe5a7088e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941445"
 ---
 # <a name="mesinkinvalidated-event"></a>Evento MESinkInvalidated
 
-Se genera cuando un receptor de medios deja de ser válido.
+Se genera cuando un receptor multimedia deja de ser válido.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
@@ -35,13 +35,13 @@ Para este evento, se definen los atributos siguientes.
 
 | Atributo                                                                    | Descripción                                                              |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [**\_nodo de \_ salida de evento MF \_**](mf-event-output-node-attribute.md)<br/> | Identifica el nodo de la topología para este receptor de medios.<br/> <br/> |
+| [**NODO DE \_ SALIDA \_ DE EVENTOS MF \_**](mf-event-output-node-attribute.md)<br/> | Identifica el nodo de topología para este receptor multimedia.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La sesión multimedia genera este evento si recibe alguno de los siguientes eventos del receptor de medios:
+La sesión multimedia genera este evento si recibe cualquiera de los siguientes eventos del receptor de medios:
 
 -   [MEAudioSessionDeviceRemoved](meaudiosessiondeviceremoved.md)
 
@@ -53,9 +53,9 @@ La sesión multimedia genera este evento si recibe alguno de los siguientes even
 
 -   [MEAudioSessionServerShutdown](meaudiosessionservershutdown.md)
 
-Un receptor de medios también puede generar este evento, en cuyo caso la sesión multimedia establece el atributo de [**\_ nodo de \_ salida \_ de evento MF**](mf-event-output-node-attribute.md) en el evento y reenvía el evento a la aplicación.
+Un receptor multimedia también puede generar este evento, en cuyo caso la sesión multimedia establece el atributo [**MF \_ EVENT OUTPUT \_ \_ NODE**](mf-event-output-node-attribute.md) en el evento y reenvía el evento a la aplicación.
 
-Si la aplicación recibe este evento, debe volver a crear el receptor de medios y poner en cola la topología de nuevo.
+Si la aplicación recibe este evento, debe volver a crear el receptor multimedia y poner en cola la topología de nuevo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Si la aplicación recibe este evento, debe volver a crear el receptor de medios 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Si la aplicación recibe este evento, debe volver a crear el receptor de medios 
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

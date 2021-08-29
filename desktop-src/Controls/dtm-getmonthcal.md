@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DTM_GETMONTHCAL (commctrl. h)
-description: Obtiene el identificador del control de calendario mensual de un selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la macro GetMonthCal de fecha y hora \_ .
+title: DTM_GETMONTHCAL mensaje (Commctrl.h)
+description: Obtiene el identificador del control de calendario del mes secundario del selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la \_ macro DateTime GetMonthCal.
 ms.assetid: 78bbdcc9-2b2b-420b-be9b-6f2f573d60b6
 keywords:
-- DTM_GETMONTHCAL controles de mensajes de Windows
+- DTM_GETMONTHCAL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99609ed3a437990889066da9a3424ef147c3d6b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 62c91538c9a60d0ecc3db43436ef029c9a3fbd9e35ca33bbfa67e586ad137ef7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119878085"
 ---
-# <a name="dtm_getmonthcal-message"></a>DTM \_ GETMONTHCAL
+# <a name="dtm_getmonthcal-message"></a>Mensaje \_ GETMONTHCAL de DTM
 
-Obtiene el identificador del control de calendario mensual de un selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o utilizar la [**macro \_ GetMonthCal de fecha y hora**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getmonthcal) .
+Obtiene el identificador del control de calendario del mes secundario del selector de fecha y hora (DTP). Puede enviar este mensaje explícitamente o usar la macro [**\_ DateTime GetMonthCal.**](/windows/desktop/api/Commctrl/nf-commctrl-datetime_getmonthcal)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,11 +37,11 @@ Obtiene el identificador del control de calendario mensual de un selector de fec
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador del control de calendario mensual del control de DTP si se realiza correctamente, o **null** en caso contrario.
+Devuelve el identificador al control de calendario del mes secundario de un control DTP si se realiza correctamente o **NULL** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los controles de DTP crean un control de calendario mensual secundario cuando el usuario hace clic en la flecha desplegable (notificación de desplegable[DTN \_ ](dtn-dropdown.md) ). Cuando el calendario mensual ya no es necesario, se destruye (se envía una notificación [DTN \_ primer plano](dtn-closeup.md) en la destrucción). Por lo tanto, la aplicación no debe basarse en un identificador estático para el calendario mensual del control de DTP.
+Los controles DTP crean un control de calendario de mes secundario cuando el usuario hace clic en la flecha desplegable[(notificación DTN \_ DROPDOWN).](dtn-dropdown.md) Cuando ya no se necesita el calendario mensual, se destruye (se envía una notificación [ \_ DE CIERRE](dtn-closeup.md) DE DTN al destruirse). Por lo tanto, la aplicación no debe basarse en un identificador estático para el calendario del mes secundario del control DTP.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Los controles de DTP crean un control de calendario mensual secundario cuando el
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -62,10 +62,10 @@ Los controles de DTP crean un control de calendario mensual secundario cuando el
 **Referencia**
 </dt> <dt>
 
-[DTN \_ primer plano](dtn-closeup.md)
+[CIERRE \_ DE DTN](dtn-closeup.md)
 </dt> <dt>
 
-[\_lista desplegable DTN](dtn-dropdown.md)
+[LISTA DESPLEGABLE DE DTN \_](dtn-dropdown.md)
 </dt> </dl>
 
  

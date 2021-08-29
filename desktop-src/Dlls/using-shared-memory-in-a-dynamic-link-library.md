@@ -1,28 +1,28 @@
 ---
-description: En el ejemplo siguiente se muestra cómo la función de punto de entrada de DLL puede utilizar un objeto de asignación de archivos para configurar la memoria que pueden compartir los procesos que cargan el archivo DLL.
+description: En el ejemplo siguiente se muestra cómo la función de punto de entrada dll puede usar un objeto de asignación de archivos para configurar la memoria que pueden compartir los procesos que cargan el archivo DLL.
 ms.assetid: ab751ab1-3b40-4111-b724-9f8676b722a3
-title: Uso de memoria compartida en una biblioteca de Dynamic-Link
+title: Uso de memoria compartida en una biblioteca Dynamic-Link datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 978a6fa77964c6404b3f85e9c9bcec6c3644f2ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a38f4aaf1658894a6f9e4a60beed372630507d4529fc7c2ac065b0430fb7b59d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902355"
 ---
-# <a name="using-shared-memory-in-a-dynamic-link-library"></a>Uso de memoria compartida en una biblioteca de Dynamic-Link
+# <a name="using-shared-memory-in-a-dynamic-link-library"></a>Uso de memoria compartida en una biblioteca Dynamic-Link datos
 
-En el ejemplo siguiente se muestra cómo la función de punto de entrada de DLL puede utilizar un objeto de asignación de archivos para configurar la memoria que pueden compartir los procesos que cargan el archivo DLL. La memoria DLL compartida se conserva solo mientras se carga el archivo DLL. Las aplicaciones pueden usar las funciones SetSharedMem y GetSharedMem para tener acceso a la memoria compartida.
+En el ejemplo siguiente se muestra cómo la función de punto de entrada dll puede usar un objeto de asignación de archivos para configurar la memoria que pueden compartir los procesos que cargan el archivo DLL. La memoria DLL compartida solo se conserva mientras se carga el archivo DLL. Las aplicaciones pueden usar las funciones SetSharedMem y GetSharedMem para acceder a la memoria compartida.
 
 ## <a name="dll-that-implements-the-shared-memory"></a>DLL que implementa la memoria compartida
 
-En el ejemplo se usa la asignación de archivos para asignar un bloque de memoria compartida con nombre en el espacio de direcciones virtuales de cada proceso que carga el archivo DLL. Para ello, la función de punto de entrada debe:
+En el ejemplo se usa la asignación de archivos para asignar un bloque de memoria compartida con nombre al espacio de direcciones virtuales de cada proceso que carga el archivo DLL. Para ello, la función de punto de entrada debe:
 
-1.  Llame a la función [**CreateFileMapping**](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) para obtener un identificador de un objeto de asignación de archivos. El primer proceso que carga el archivo DLL crea el objeto de asignación de archivos. Los procesos posteriores abren un identificador para el objeto existente. Para obtener más información, vea [crear un objeto de File-Mapping](/windows/desktop/Memory/creating-a-file-mapping-object).
-2.  Llame a la función [**MapViewOfFile**](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffile) para asignar una vista en el espacio de direcciones virtuales. Esto permite que el proceso tenga acceso a la memoria compartida. Para obtener más información, consulte [crear una vista de archivo](/windows/desktop/Memory/creating-a-file-view).
+1.  Llame a [**la función CreateFileMapping**](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) para obtener un identificador para un objeto de asignación de archivos. El primer proceso que carga el archivo DLL crea el objeto de asignación de archivos. Los procesos posteriores abren un identificador para el objeto existente. Para obtener más información, [vea Creating a File-Mapping Object](/windows/desktop/Memory/creating-a-file-mapping-object).
+2.  Llame a [**la función MapViewOfFile**](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffile) para asignar una vista al espacio de direcciones virtuales. Esto permite que el proceso acceda a la memoria compartida. Para obtener más información, vea [Crear una vista de archivo.](/windows/desktop/Memory/creating-a-file-view)
 
-Tenga en cuenta que, aunque puede especificar los atributos de seguridad predeterminados pasando un valor NULL para el parámetro *lpAttributes* de [**CreateFileMapping**](/windows/desktop/api/winbase/nf-winbase-createfilemappinga), puede optar por usar una estructura de [**\_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) para proporcionar seguridad adicional.
+Tenga en cuenta que, aunque puede especificar atributos de seguridad predeterminados pasando un valor NULL para el parámetro *lpAttributes* de [**CreateFileMapping,**](/windows/desktop/api/winbase/nf-winbase-createfilemappinga)puede optar por usar una estructura [**ATRIBUTOS \_**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) DE SEGURIDAD para proporcionar seguridad adicional.
 
 
 ```C++
@@ -171,15 +171,15 @@ __declspec(dllexport) VOID __cdecl GetSharedMem(LPWSTR lpszBuf, DWORD cchSize)
 
 
 
-La memoria compartida se puede asignar a una dirección diferente en cada proceso. Por esta razón, cada proceso tiene su propia instancia de lpvMem, que se declara como una variable global para que esté disponible para todas las funciones DLL. En el ejemplo se supone que los datos globales de la DLL no están compartidos, por lo que cada proceso que carga el archivo DLL tiene su propia instancia de lpvMem.
+La memoria compartida se puede asignar a una dirección diferente en cada proceso. Por este motivo, cada proceso tiene su propia instancia de lpvMem, que se declara como una variable global para que esté disponible para todas las funciones DLL. En el ejemplo se supone que los datos globales del archivo DLL no se comparten, por lo que cada proceso que carga el archivo DLL tiene su propia instancia de lpvMem.
 
-Tenga en cuenta que la memoria compartida se libera cuando se cierra el último identificador del objeto de asignación de archivos. Para crear memoria compartida persistente, tendría que asegurarse de que algún proceso tenga siempre un identificador abierto para el objeto de asignación de archivos.
+Tenga en cuenta que la memoria compartida se libera cuando se cierra el último identificador del objeto de asignación de archivos. Para crear memoria compartida persistente, debe asegurarse de que algún proceso siempre tiene un identificador abierto para el objeto de asignación de archivos.
 
 ## <a name="processes-that-use-the-shared-memory"></a>Procesos que usan la memoria compartida
 
-Los siguientes procesos utilizan la memoria compartida proporcionada por el archivo DLL definido anteriormente. El primer proceso llama a SetSharedMem para escribir una cadena mientras que el segundo proceso llama a GetSharedMem para recuperar esta cadena.
+Los procesos siguientes usan la memoria compartida proporcionada por el archivo DLL definido anteriormente. El primer proceso llama a SetSharedMem para escribir una cadena, mientras que el segundo llama a GetSharedMem para recuperar esta cadena.
 
-Este proceso usa la función SetSharedMem implementada por el archivo DLL para escribir la cadena "This is a Test String" en la memoria compartida. También inicia un proceso secundario que leerá la cadena de la memoria compartida.
+Este proceso usa la función SetSharedMem implementada por el archivo DLL para escribir la cadena "This is a test string" (Esta es una cadena de prueba) en la memoria compartida. También inicia un proceso secundario que leerá la cadena de la memoria compartida.
 
 
 ```C++
@@ -261,7 +261,7 @@ int _tmain(int argc, TCHAR *argv[])
 
 
 
-Este proceso usa la función GetSharedMem implementada por el archivo DLL para leer una cadena de la memoria compartida. Lo inicia el proceso primario anterior.
+Este proceso usa la función GetSharedMem implementada por el archivo DLL para leer una cadena de la memoria compartida. Se inicia mediante el proceso primario anterior.
 
 
 ```C++
@@ -291,7 +291,7 @@ int _tmain( void )
 
 <dl> <dt>
 
-[Datos de biblioteca de vínculos dinámicos](dynamic-link-library-data.md)
+[Datos de la biblioteca de vínculos dinámicos](dynamic-link-library-data.md)
 </dt> </dl>
 
  

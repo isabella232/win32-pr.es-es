@@ -1,9 +1,9 @@
 ---
-title: Interfaz _WMPOCXEvents (WMP. h)
-description: La \_ interfaz WMPOCXEvents proporciona los mismos eventos que las interfaces IWMPEvents, IWMPEvents2, IWMPEvents3 y IWMPEvents4, pero hereda de IDispatch en lugar de IUnknown.
+title: _WMPOCXEvents interfaz (Wmp.h)
+description: La interfaz WMPOCXEvents proporciona los mismos eventos que las \_ interfaces IWMPEvents, IWMPEvents2, IWMPEvents3 e IWMPEvents4, pero hereda de IDispatch en lugar de IUnknown.
 ms.assetid: 883d538e-19b6-417b-a32d-622c41c24b9c
 keywords:
-- Media Player de _WMPOCXEvents interfaz de Windows
+- _WMPOCXEvents interfaz Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28ac0407545a63a399e1989ae71a08b4bd40cb5b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 117ad150422d7c9a2ce54cdfd80addaa541d69bc99244212679834f1c22767d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119903765"
 ---
-# <a name="_wmpocxevents-interface"></a>\_Interfaz WMPOCXEvents
+# <a name="_wmpocxevents-interface"></a>\_WMPOCXEvents (interfaz)
 
-La interfaz **\_ WMPOCXEvents** proporciona los mismos eventos que las interfaces **IWMPEvents**, **IWMPEvents2**, **IWMPEvents3** y **IWMPEvents4** , pero hereda de **IDispatch** en lugar de **IUnknown**. Esto le permite recibir notificaciones de eventos de Windows Media Player a través de un receptor de eventos **IDispatch** .
+La interfaz **\_ WMPOCXEvents** proporciona los mismos eventos que las **interfaces IWMPEvents,** **IWMPEvents2,** **IWMPEvents3** e **IWMPEvents4,** pero hereda de **IDispatch en** lugar de **IUnknown**. Esto le permite recibir notificaciones Reproductor de Windows Media eventos a través de un **receptor de eventos IDispatch.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ La interfaz **\_ WMPOCXEvents** proporciona los mismos eventos que las interface
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 
@@ -42,16 +42,16 @@ La interfaz **\_ WMPOCXEvents** proporciona los mismos eventos que las interface
 [**Controlar eventos en C++**](handling-events-in-c.md)
 </dt> <dt>
 
-[**Interfaz IWMPEvents**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents)
+[**IWMPEvents (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents)
 </dt> <dt>
 
-[**Interfaz IWMPEvents2**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents2)
+[**IWMPEvents2 (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents2)
 </dt> <dt>
 
-[**Interfaz IWMPEvents3**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents3)
+[**IWMPEvents3 (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents3)
 </dt> <dt>
 
-[**Interfaz IWMPEvents4**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents4)
+[**IWMPEvents4 (interfaz)**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpevents4)
 </dt> </dl>
 
  

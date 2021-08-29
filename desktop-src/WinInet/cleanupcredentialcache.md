@@ -43,7 +43,7 @@ Esta función no tiene parámetros.
 
 **TRUE** si la función se realiza correctamente; de lo contrario, **FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **función CleanupCredentialCache** se implementa mediante los siguientes SSP:
 
@@ -67,7 +67,7 @@ Al igual que todos los demás aspectos de la API de WinINet, no se puede llamar 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                                 |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                       |

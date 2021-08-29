@@ -4,12 +4,12 @@ ms.assetid: f852494d-4d51-4370-9d73-e0659fb5688e
 title: System.PropGroup.RecordedTV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ded25a5cfa0d666c5d280684f359495d9c88017
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ae2ce0131959c89b9bd9ee8e46e224a7f9cbd4eb222ce739bba7c29b580567dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945035"
 ---
 # <a name="systempropgrouprecordedtv"></a>System.PropGroup.RecordedTV
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 
