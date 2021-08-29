@@ -1,7 +1,7 @@
 ---
-description: El método GetPin recupera un PIN. La clase CEnumPins llama a este método para enumerar los PIN del filtro.
+description: El método GetPin recupera un pin. La clase CEnumPins llama a este método para enumerar los pines en el filtro.
 ms.assetid: e3ec3f11-1e7d-40b6-810e-3759f0511cb2
-title: Método CBaseFilter. GetPin (Amfilter. h)
+title: Método CBaseFilter.GetPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3bb8341bfd86b96a7358fb23036b71844f77d17a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 556d4842772ed6c8055a9024a9a6112b466dc9c2fb804321ab605256ece079ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640565"
 ---
-# <a name="cbasefiltergetpin-method"></a>CBaseFilter. GetPin, método
+# <a name="cbasefiltergetpin-method"></a>Método CBaseFilter.GetPin
 
-El método **GetPin** recupera un PIN. La clase [**CEnumPins**](cenumpins.md) llama a este método para enumerar los PIN del filtro.
+El **método GetPin** recupera un pin. La [**clase CEnumPins**](cenumpins.md) llama a este método para enumerar los pines en el filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ virtual CBasePin* GetPin(
 *n* 
 </dt> <dd>
 
-Índice de base cero del PIN.
+Índice de base cero del pin.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero al objeto [**CBasePin**](cbasepin.md) que implementa el código PIN.
+Devuelve un puntero al [**objeto CBasePin**](cbasepin.md) que implementa el pin.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe implementar este método virtual puro en la clase derivada. Devuelve un puntero al *n* pines en este filtro, indizado desde cero. Puede elegir un orden de indexación arbitrario, siempre que el orden sea fijo. Si el filtro agrega o elimina PIN o la ordenación cambia por algún otro motivo en tiempo de ejecución, llame al método [**CBaseFilter:: IncrementPinVersion**](cbasefilter-incrementpinversion.md) .
+Debe implementar este método virtual puro en la clase derivada. Devuelve un puntero al n.º pin de este filtro, indexado desde cero. Puede elegir un orden de indexación arbitrario, siempre que la ordenación sea fija. Si el filtro agrega o elimina pines, o la ordenación cambia por algún otro motivo en tiempo de ejecución, llame al método [**CBaseFilter::IncrementPinVersion.**](cbasefilter-incrementpinversion.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Debe implementar este método virtual puro en la clase derivada. Devuelve un pun
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Debe implementar este método virtual puro en la clase derivada. Devuelve un pun
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

@@ -1,22 +1,22 @@
 ---
-title: Conceptos de administración de comunicaciones WinSNMP
-description: La API WinSNMP proporciona independencia de transporte de red para las aplicaciones de administración de redes basadas en SNMP que se ejecutan en los sistemas operativos Microsoft Windows 2000 o versiones posteriores.
+title: Conceptos de administración de comunicaciones de WinSNMP
+description: La API de WinSNMP proporciona independencia de transporte de red para las aplicaciones de administración de red basadas en SNMP que se ejecutan en los sistemas operativos de Microsoft Windows 2000 o versiones posteriores.
 ms.assetid: 6d060204-8f97-434e-9449-93b26cd35993
 keywords:
-- Conceptos de administración de comunicaciones WinSNMP SNMP
+- Conceptos de administración de comunicaciones de WinSNMP SNMP
 - Conceptos de administración de comunicaciones SNMP, WinSNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b08d60a82c7c17758326409674842cb17cb757f1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 83a747cf9668d9b1f5b88472babefd7404ae22a70db5d0c1179cd8aff8d13cdc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142948"
 ---
-# <a name="winsnmp-communications-management-concepts"></a>Conceptos de administración de comunicaciones WinSNMP
+# <a name="winsnmp-communications-management-concepts"></a>Conceptos de administración de comunicaciones de WinSNMP
 
-La API WinSNMP proporciona independencia de transporte de red para las aplicaciones de administración de redes basadas en SNMP que se ejecutan en los sistemas operativos Microsoft Windows 2000 o versiones posteriores. La tabla siguiente contiene una lista de conceptos de administración de comunicaciones que se aplican a la programación con WinSNMP.
+La API de WinSNMP proporciona independencia de transporte de red para las aplicaciones de administración de red basadas en SNMP que se ejecutan en los sistemas operativos de Microsoft Windows 2000 o versiones posteriores. La tabla siguiente contiene una lista de conceptos de administración de comunicaciones que se aplican a la programación con WinSNMP.
 
 
 
@@ -28,11 +28,11 @@ La API WinSNMP proporciona independencia de transporte de red para las aplicacio
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

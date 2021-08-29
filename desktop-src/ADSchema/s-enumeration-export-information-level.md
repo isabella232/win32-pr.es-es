@@ -1,10 +1,10 @@
 ---
-title: Sintaxis de enumeración (Export-Information-LEVEL)
-description: Sintaxis de enumeración (Export-Information-LEVEL).
+title: Sintaxis de Enumeration(Export-Information-Level)
+description: Sintaxis de enumeración (nivel de información de exportación).
 ms.assetid: 961aeccd-26ca-430d-90a1-d688d4c405e8
 ms.tgt_platform: multiple
 keywords:
-- Sintaxis de enumeración (Export-Information-LEVEL) Schema AD
+- Esquema de AD de sintaxis enumeration(Export-Information-Level)
 topic_type:
 - apiref
 api_name:
@@ -13,40 +13,40 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8327fbf9488eef3296f6b4f432e9723210b7b503
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: da1650d37f8a657e5f61149707a8acabc18c309e707b29ea5f4265dd3165ed04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119530825"
 ---
-# <a name="enumerationexport-information-level-syntax"></a>Sintaxis de enumeración (Export-Information-LEVEL)
+# <a name="enumerationexport-information-level-syntax"></a>Sintaxis de Enumeration(Export-Information-Level)
 
-Sintaxis de enumeración (Export-Information-LEVEL).
+Sintaxis de enumeración (nivel de información de exportación).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|---------------------------------------------------------------------------|
-| Nombre         | Enumeración (Export-Information-LEVEL)                                     |
-| IDENTIFICADOR de sintaxis    | 2.5.5.9                                                                   |
-| IDENTIFICADOR DE OM        | 10                                                                        |
-| Tipo MAPI    | LONG                                                                      |
-| Tipo ADS     | \_entero ADSTYPE                                                          |
-| Tipo Variant | VT \_ I4                                                                    |
-| Tipo de SDS     | [System. Int32](/dotnet/api/system.int32) |
+| Nombre         | Enumeration(Export-Information-Level)                                     |
+| Identificador de sintaxis    | 2.5.5.9                                                                   |
+| Id. de OM        | 10                                                                        |
+| Tipo DE ARCHIVO    | LONG                                                                      |
+| ADS Type     | ADSTYPE \_ INTEGER                                                          |
+| Tipo de variante | VT \_ I4                                                                    |
+| Tipo de SDS     | [System.Int32](/dotnet/api/system.int32) |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Definido por ITU. Active Directory trata como un entero.
+Definido por la ITU. Active Directory trata esto como un entero.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[System. Int32](/dotnet/api/system.int32)
+[System.Int32](/dotnet/api/system.int32)
 </dt> </dl>
 
  

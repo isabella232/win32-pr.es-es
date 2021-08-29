@@ -1,36 +1,36 @@
 ---
-title: Sintaxis de la técnica de efectos (Direct3D 11)
-description: Una técnica de efecto se declara con la sintaxis descrita en esta sección.
+title: Sintaxis de técnica de efecto (Direct3D 11)
+description: Se declara una técnica de efecto con la sintaxis descrita en esta sección.
 ms.assetid: 54a6ebd1-a6b4-473b-bf53-a3323445de71
 keywords:
-- technique11, efecto Direct3D 11
-- Pass, efecto Direct3D 11
-- CompileShader, efecto Direct3D 11
-- SetStateGroup, efecto Direct3D 11
-- SetBlendState, efecto Direct3D 11
+- technique11, Efecto 11 de Direct3D
+- pass, Efecto 11 de Direct3D
+- CompileShader, efecto 11 de Direct3D
+- SetStateGroup, efecto 11 de Direct3D
+- Efecto SetBlendState, Direct3D 11
 - SetDepthStencilState, efecto Direct3D 11
-- SetRasterizerState, efecto Direct3D 11
-- SetVertexShader, efecto Direct3D 11
-- SetGeometryShader, efecto Direct3D 11
+- SetRasterizerState, efecto 11 de Direct3D
+- Efecto SetVertexShader, Direct3D 11
+- SetGeometryShader, efecto 11 de Direct3D
 - SetPixelShader, efecto Direct3D 11
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73fb668f308869ef9cca5cce99d522f18a287f3c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 5b62876aea57864dfc495410e85ec2a9db24cbe1
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104149007"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625561"
 ---
-# <a name="effect-technique-syntax-direct3d-11"></a>Sintaxis de la técnica de efectos (Direct3D 11)
+# <a name="effect-technique-syntax-direct3d-11"></a>Sintaxis de técnica de efecto (Direct3D 11)
 
-Una técnica de efecto se declara con la sintaxis descrita en esta sección.
+Se declara una técnica de efecto con la sintaxis descrita en esta sección.
 
- \[  < *Anotaciones* de TechniqueVersion TechniqueName > \]
+Anotaciones TechniqueVersion *TechniqueName* \[  <  > \]
 
 {
 
-<dl> pasar  \[  < *anotaciones* de PassName > \]  
+<dl> pass *PassName* \[  < *Annotations* > \]  
 {
 <dl> \[*SetStateGroup*; \] \[ *SetStateGroup*;\]  
 ...  
@@ -46,8 +46,8 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -58,7 +58,7 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 <tbody>
 <tr class="odd">
 <td><span id="TechniqueVersion"></span><span id="techniqueversion"></span><span id="TECHNIQUEVERSION"></span>TechniqueVersion<br/></td>
-<td>Technique10 o technique11. Las técnicas que usan la funcionalidad nueva en Direct3D 11 (sombreadores 5_0, BindInterfaces, etc.) deben usar technique11.<br/></td>
+<td>Técnica10 o técnica11. Las técnicas que usan la funcionalidad nueva de Direct3D 11 (sombreadores 5_0, BindInterfaces, etc.) deben usar technique11.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="TechniqueName"></span><span id="techniquename"></span><span id="TECHNIQUENAME"></span><em>TechniqueName</em><br/></td>
@@ -66,10 +66,10 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 </tr>
 <tr class="odd">
 <td><span id="______________Annotations__"></span><span id="______________annotations__"></span><span id="______________ANNOTATIONS__"></span> <<em>Anotaciones</em> ><br/></td>
-<td>[in] Opcional. Una o más partes de la información proporcionada por el usuario (metadatos) que el sistema de efectos omite. Para ver la sintaxis, vea <a href="d3d11-effect-annotation-syntax.md">Sintaxis de anotación (Direct3D 11)</a>.<br/></td>
+<td>[in] Opcional. Uno o varios fragmentos de información proporcionados por el usuario (metadatos) que el sistema de efectos omite. Para obtener sintaxis, vea <a href="d3d11-effect-annotation-syntax.md">Annotation Syntax (Direct3D 11) (Sintaxis de anotación [Direct3D 11]).</a><br/></td>
 </tr>
 <tr class="even">
-<td><span id="pass"></span><span id="PASS"></span>pasar<br/></td>
+<td><span id="pass"></span><span id="PASS"></span>Pasar<br/></td>
 <td>Palabra clave required.<br/></td>
 </tr>
 <tr class="odd">
@@ -78,25 +78,25 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 </tr>
 <tr class="even">
 <td><span id="SetStateGroup"></span><span id="setstategroup"></span><span id="SETSTATEGROUP"></span><em>SetStateGroup</em><br/></td>
-<td>de Establezca uno o varios grupos de Estados como: <br/> 
+<td>[in] Establezca uno o varios grupos de estado, como: <br/> 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Estado</th>
+<th>StateGroup</th>
 <th>Sintaxis</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Estado de Blend</td>
+<td>Estado de blend</td>
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -105,15 +105,15 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 </tbody>
 </table>
 
-<p>Vea [<strong>ID3D11DeviceContext:: OMSetBlendState</strong>] (/Windows/Desktop/API/D3D11/NF-d3d11-id3d11devicecontext-omsetblendstate) para ver la lista de argumentos.</p></td>
+<p>Vea [<strong>ID3D11DeviceContext::OMSetBlendState</strong>](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetblendstate) para obtener la lista de argumentos.</p></td>
 </tr>
 <tr class="even">
-<td>Profundidad: estado de estarcido</td>
+<td>Estado de la galería de símbolos de profundidad</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -123,7 +123,7 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 </table>
 
 </div>
-<p>Vea <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetdepthstencilstate"><strong>ID3D11DeviceContext:: OMSetDepthStencilState</strong></a> para ver la lista de argumentos.</p></td>
+<p>Vea <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetdepthstencilstate"><strong>ID3D11DeviceContext::OMSetDepthStencilState</strong></a> para obtener la lista de argumentos.</p></td>
 </tr>
 <tr class="odd">
 <td>Estado del rasterizador</td>
@@ -131,7 +131,7 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -141,7 +141,7 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 </table>
 
 </div>
-<p>Vea [<strong>ID3D11DeviceContext:: RSSetState</strong>] (/Windows/Desktop/API/D3D11/NF-d3d11-id3d11devicecontext-rssetstate) para ver la lista de argumentos.</p></td>
+<p>Vea [<strong>ID3D11DeviceContext::RSSetState</strong>](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-rssetstate) para obtener la lista de argumentos.</p></td>
 </tr>
 <tr class="even">
 <td>Estado del sombreador</td>
@@ -149,7 +149,7 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -159,13 +159,13 @@ Una técnica de efecto se declara con la sintaxis descrita en esta sección.
 </table>
 
 </div>
-<p>SetXXXShader es uno de SetVertexShader, SetDomainShader, SetHullShader, SetGeometryShader, SetPixelShader o SetComputeShader (que son similares a los métodos de API <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader"><strong>ID3D11DeviceContext:: VSSetShader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-dssetshader"><strong>ID3D11DeviceContext::D ssetshader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-hssetshader"><strong>ID3D11DeviceContext:: HSSetShader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-gssetshader"><strong>ID3D11DeviceContext:: GSSetShader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-pssetshader"><strong>ID3D11DeviceContext::P ssetshader</strong></a> y <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-cssetshader"><strong>ID3D11DeviceContext:: CSSetShader</strong></a>).</p>
+<p>SetXXXShader es uno de los métodos SetVertexShader, SetDomainShader, SetHullShader, SetGeometryShader, SetPixelShader o SetComputeShader (que son similares a los métodos de API <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-vssetshader"><strong>ID3D11DeviceContext::VSSetShader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-dssetshader"><strong>ID3D11DeviceContext::D SSetShader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-hssetshader"><strong>ID3D11DeviceContext::HSSetShader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-gssetshader"><strong>ID3D11DeviceContext::GSSetShader</strong></a>, <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-pssetshader"><strong>ID3D11DeviceContext::P SSetShader</strong></a> e <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-cssetshader"><strong>ID3D11DeviceContext::CSSetShader</strong></a>).</p>
 <p>Shader es una variable de sombreador, que se puede obtener de muchas maneras:</p>
 <div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -184,13 +184,13 @@ SetGeometryShader( ConstructGSWithSO( Shader, strStream0, strStream1, strStream2
 </div></td>
 </tr>
 <tr class="odd">
-<td>Estado de destino de representación</td>
+<td>Representar estado de destino</td>
 <td>Uno de los valores siguientes:
 <div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -203,7 +203,7 @@ SetRenderTargets( RTV0, RTV1, RTV2, RTV3, RTV4, RTV5, RTV6, RTV7, DSV );</code><
 </table>
 
 </div>
-<p>Similar a <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets"><strong>ID3D11DeviceContext:: OMSetRenderTargets</strong></a>.</p></td>
+<p>Similar a <a href="/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets"><strong>ID3D11DeviceContext::OMSetRenderTargets.</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -219,7 +219,7 @@ SetRenderTargets( RTV0, RTV1, RTV2, RTV3, RTV4, RTV5, RTV6, RTV7, DSV );</code><
 
 ## <a name="examples"></a>Ejemplos
 
-Este ejemplo establece el estado de fusión.
+En este ejemplo se establece el estado de combinación.
 
 
 ```
@@ -242,7 +242,7 @@ technique10
 
 
 
-En este ejemplo se configura el estado de rasterizador para representar un objeto en alambre.
+En este ejemplo se configura el estado del rasterizador para representar un objeto en wireframe.
 
 
 ```
@@ -286,10 +286,10 @@ technique10 RenderSceneWithTexture1Light
 [Formato de efecto](d3d11-effect-format.md)
 </dt> <dt>
 
-[Sintaxis de grupo de efectos (Direct3D 11)](d3d11-effect-group-syntax.md)
+[Sintaxis del grupo de efectos (Direct3D 11)](d3d11-effect-group-syntax.md)
 </dt> <dt>
 
-[Grupos de Estados de efecto](d3d11-effect-states.md)
+[Grupos de estados de efecto](d3d11-effect-states.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Representa un punto 2D con coordenadas de enteros sin signo.
+description: Representa un punto 2D con coordenadas de entero sin signo.
 MS-HAID: vspixengine.Point2D
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1b90944e2d8e4e572438942448dddd688065fcdd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cb9682839e5a4206e3bf722f2589d78c0d7243b8
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104538181"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624131"
 ---
 # <a name="span-idvspixenginepoint2dspanpoint2d-structure"></a><span id="vspixengine.point2d"></span>Estructura Point2D
 
-Representa un punto 2D con coordenadas de enteros sin signo.
+Representa un punto 2D con coordenadas de entero sin signo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Posición del punto en el eje Y.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

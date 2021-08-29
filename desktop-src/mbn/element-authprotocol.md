@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 487c58bda5e3b891b0e14614fa6c91830bc7512e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: ae9876195737506b8e0adc96f29bce0222371623
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122482741"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985478"
 ---
 # <a name="span-idwwan_profile_v4element_authprotocolspanmbnprofileextauthprotocol-v4"></a><span id="WWAN_profile_v4.element_AuthProtocol"></span>MBNProfileExt \/ ... \/ AuthProtocol (v4)
 
 >Especifica el protocolo de autenticación que se usará para activar un contexto de Protocolo de datos de paquetes (PDP).
 
-Tenga en cuenta que en v4, hay disponible un nuevo valor de enumeración para este elemento. **AutoSelection** significa que un protocolo de autenticación se debe seleccionar mediante capas inferiores.
+Tenga en cuenta que en v4, hay un nuevo valor de enumeración disponible para este elemento. **AutoSelection** significa que un protocolo de autenticación se debe seleccionar mediante capas inferiores.
 
 Para más información, consulte la documentación del elemento [**AuthProtocol**](./schema-authprotocol-contexttype-element.md) v1.
 
@@ -41,7 +41,7 @@ Para más información, consulte la documentación del elemento [**AuthProtocol*
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<AuthProtocol\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <AuthProtocol>
@@ -74,7 +74,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

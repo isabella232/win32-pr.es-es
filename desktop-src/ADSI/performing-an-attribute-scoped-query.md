@@ -1,29 +1,29 @@
 ---
-title: Realización de una consulta de ámbito de atributo
-description: La consulta de ámbito de atributo es una preferencia de búsqueda que permite realizar una búsqueda de los atributos con valores de nombre distintivo de un objeto.
+title: Realizar una consulta de ámbito de atributo
+description: La consulta de ámbito de atributo es una preferencia de búsqueda que permite realizar una búsqueda de atributos con valores de nombre distintivo de un objeto.
 ms.assetid: 026fbe17-5df7-4007-9d74-5c0abbe793b1
 ms.tgt_platform: multiple
 keywords:
-- Realización de una consulta de ámbito de atributo ADSI
-- ADSI, búsqueda, IDirectorySearch, otras opciones de búsqueda, consulta de ámbito de atributo
+- Realización de un ADSI de consulta de ámbito de atributo
+- ADSI, Búsqueda, IDirectorySearch, Otras opciones de búsqueda, Consulta de ámbito de atributo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b10f5b666028c5fd46e7394b52a1328370e317bc
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: b40251665f487919ce22b78057c6026324b49e33764545b55c38310265474484
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105656409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637805"
 ---
-# <a name="performing-an-attribute-scope-query"></a>Realización de una consulta de ámbito de atributo
+# <a name="performing-an-attribute-scope-query"></a>Realizar una consulta de ámbito de atributo
 
-La consulta de ámbito de atributo es una preferencia de búsqueda que permite realizar una búsqueda de los atributos con valores de nombre distintivo de un objeto. El atributo que se va a buscar puede ser uno o varios valores, pero debe ser del tipo de **\_ \_ cadena DN de ADS** . Cuando se realice la búsqueda, ADSI enumerará los valores de nombre distintivo del atributo y realizará la búsqueda en los objetos representados por los nombres distintivos. Por ejemplo, si se realiza una búsqueda de ámbito de atributo del atributo de [**miembro**](/windows/desktop/ADSchema/a-member) de un objeto de grupo, ADSI enumerará los nombres distintivos en el atributo de **miembro** y buscará en cada uno de los miembros del grupo los criterios de búsqueda especificados.
+La consulta de ámbito de atributo es una preferencia de búsqueda que permite realizar una búsqueda de atributos con valores de nombre distintivo de un objeto. El atributo que se va a buscar puede ser único o multivalor, pero debe ser del tipo **ADS \_ DN \_ STRING.** Cuando se realiza la búsqueda, ADSI enumerará los valores de nombre distintivo del atributo y realizará la búsqueda en los objetos representados por los nombres distintivos. Por ejemplo, si se realiza una [](/windows/desktop/ADSchema/a-member) búsqueda con ámbito de atributo del atributo miembro de  un objeto de grupo, ADSI enumerará los nombres distintivos en el atributo de miembro y buscará en cada uno de los miembros del grupo los criterios de búsqueda especificados.
 
-Si se realiza una consulta de ámbito de atributo en un atributo que no es del **tipo \_ \_ cadena DN de ADS**, se producirá un error en la búsqueda. La consulta de ámbito de atributo también requiere que la preferencia de **\_ ámbito de \_ búsqueda \_ de ADS SEARCHPREF** esté establecida en la **\_ \_ base del ámbito de ADS**. La preferencia del **\_ ámbito de \_ búsqueda \_ de ADS SEARCHPREF** se establecerá automáticamente en la **\_ \_ base del ámbito de ADS**, pero si la preferencia del **\_ \_ \_ ámbito de búsqueda de ADS SEARCHPREF** está establecida en cualquier otro valor, se producirá un error en [**IDirectorySearch:: SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) con el **\_ parámetro E ADS \_ incorrectos \_**.
+Si se realiza una consulta con ámbito de atributo en un atributo que no es de tipo **ADS \_ DN \_ STRING**, se producirá un error en la búsqueda. La consulta con ámbito de atributo también requiere que la preferencia **\_ SEARCHPREF \_ SEARCH \_ SCOPE de ADS** se establezca en ADS SCOPE **\_ \_ BASE**. La preferencia **\_ ADS SEARCHPREF SEARCH \_ \_ SCOPE** se establecerá automáticamente en **ADS SCOPE \_ \_ BASE,** pero si la preferencia **\_ SEARCHPREF \_ SEARCH SCOPE \_ de ADS** se establece en cualquier otro valor, [**IDirectorySearch::SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) producirá un error **con E ADS BAD \_ \_ \_ PARAMETER**.
 
-Los resultados de una consulta de ámbito de atributo pueden abarcar varios servidores y un servidor puede no devolver todos los datos solicitados para todas las filas devueltas. Si esto ocurre, cuando se recupere la última fila mediante una llamada a [**IDirectorySearch:: GetNextRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) o [**IDirectorySearch:: GetFirstRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow), ADSI devolverá **s \_ ADS \_ ERRORSOCCURRED** en lugar de **s \_ ADS \_ \_**.
+Los resultados de una consulta de ámbito de atributo pueden abarcar varios servidores y es posible que un servidor no devuelva todos los datos solicitados para todas las filas devueltas. Si esto ocurre, cuando se recupera la última fila mediante una llamada a [**IDirectorySearch::GetNextRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) o [**IDirectorySearch::GetFirstRow,**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow)ADSI devolverá **S ADS \_ \_ ERRORSOCCURRED** en lugar de **S ADS \_ \_ NOMORE \_ ROWS**.
 
-Para especificar una consulta de ámbito de atributo, establezca una opción de búsqueda de **\_ consultas de \_ atributos \_ de ADS SEARCHPREF** con un valor de **\_ \_ \_ cadena ignore case de ADSTYPE** en el lDAPDisplayName del atributo que se va a buscar en la matriz de [**\_ \_ información SEARCHPREF de ADS**](/windows/desktop/api/Iads/ns-iads-ads_searchpref_info) pasada al método [**IDirectorySearch:: SetSearchPreference**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) . Esta operación se muestra en el ejemplo de código siguiente.
+Para especificar una consulta de ámbito de atributo, establezca una opción de búsqueda **\_ ADS SEARCHPREF \_ ATTRIBUTE \_ QUERY** con un valor DE CADENA **ADSTYPE CASE \_ \_ IGNORE \_** establecido en el valor lDAPDisplayName del atributo que se buscará en la matriz [**ADS \_ SEARCHPREF \_ INFO**](/windows/desktop/api/Iads/ns-iads-ads_searchpref_info) pasada al método [**IDirectorySearch::SetSearchPreference.**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-setsearchpreference) Esta operación se muestra en el ejemplo de código siguiente.
 
 
 ```C++
@@ -35,7 +35,7 @@ SearchPref.vValue.Boolean = L"member";
 
 
 
-En el ejemplo de código siguiente se muestra cómo usar la opción de búsqueda de **\_ consultas de \_ atributos \_ de ADS SEARCHPREF** .
+En el ejemplo de código siguiente se muestra cómo usar la opción **\_ de búsqueda SEARCHPREF \_ ATTRIBUTE \_ QUERY** de ADS.
 
 
 ```C++
@@ -150,10 +150,10 @@ HRESULT SearchGroupMembers(LPCWSTR pwszGroupDN)
 
 
 
-Cuando se ejecuta esta búsqueda y se enumeran los resultados, se devuelve el **nombre**, el **número de teléfono** y el **número de oficina** de todos los objetos de usuario contenidos en la lista de atributos de **miembro** del grupo.
+Cuando se ejecuta esta búsqueda y se enumeran los resultados, devolvería el nombre **,** el número de teléfono  y el número de oficina de todos los objetos de usuario incluidos en la lista de atributos de miembro del grupo.  
 
-Control de errores: los resultados de una consulta de ámbito de atributo pueden abarcar varios servidores y un servidor puede no devolver todos los datos solicitados para todas las filas devueltas. Si esto ocurre, cuando se recupera la última fila mediante una llamada a [**GetNextRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) o [**GetFirstRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow), ADSI devolverá **s \_ ADS \_ ERRORSOCCURRED**, en lugar de **s \_ ADS \_ \_**.
+Control de errores: los resultados de una consulta de ámbito de atributo pueden abarcar varios servidores y es posible que un servidor no devuelva todos los datos solicitados para todas las filas devueltas. Si esto ocurre, cuando se recupera la última fila mediante una llamada a [**GetNextRow**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getnextrow) o [**GetFirstRow,**](/windows/desktop/api/Iads/nf-iads-idirectorysearch-getfirstrow)ADSI devolverá **S ADS \_ \_ ERRORSOCCURRED**, en lugar de **S ADS \_ \_ NOMORE \_ ROWS**.
 
- 
+ 
 
- 
+ 

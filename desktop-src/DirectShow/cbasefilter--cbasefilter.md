@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CBaseFilter.~CBaseFilter: método destructor.'
+description: 'Destructor CBaseFilter.~CBaseFilter: método Destructor.'
 ms.assetid: 786fb4d0-a482-4887-91ed-ed156c008272
 title: Destructor CBaseFilter.~CBaseFilter (Amfilter.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 89ecaa9abf1ff79b1eb6b0e0c27895af95114452
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 526b9d6ff6e1585a3184e879a9bfbed2fe7b86446e3e7c0c0f742eafe8d1bd88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640875"
 ---
 # <a name="cbasefiltercbasefilter-destructor"></a>Destructor CBaseFilter.~CBaseFilter
 
@@ -46,12 +46,12 @@ Detenga siempre el filtro antes de destruirlo.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

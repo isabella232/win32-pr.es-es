@@ -9,7 +9,7 @@
           items:
             - name: AUTHNEXTSTEP
               href: /windows/desktop/api/davclnt/ne-davclnt-authnextstep
-        - name: Funciones de la API de WebDAV
+        - name: Funciones de API de WebDAV
           href: webdav-api-functions.md
           items:
             - name: DavAddConnection
