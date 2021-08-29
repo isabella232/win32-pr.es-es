@@ -4,21 +4,21 @@ ms.assetid: 9be67cb2-4bf9-4758-af03-7d92dd04feaf
 title: Optimización de la impresión mediante el suministro de un identificador de impresora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a247af3de037e220432c424c408b4055690ff861
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c2284e28e0a32c828af5204d08651c576149e9d2ecfb0980f3c41936bd36cb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612085"
 ---
 # <a name="optimizing-printing-by-providing-a-printer-handle"></a>Optimización de la impresión mediante el suministro de un identificador de impresora
 
-Uno de los constructores de la clase [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) recibe un identificador de contexto de dispositivo y un identificador de impresora. Cuando se envían comandos GDI+ de Windows a determinadas impresoras PostScript, el rendimiento será mejor si se crea el objeto **Graphics** con ese constructor en particular.
+Uno de los constructores de la clase [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) recibe un identificador de contexto de dispositivo y un identificador de impresora. Al enviar comandos Windows GDI+ a determinadas impresoras PostScript, el rendimiento será mejor si crea el objeto **Graphics** con ese constructor concreto.
 
-La siguiente aplicación de consola llama a [GetDefaultPrinter](../printdocs/getdefaultprinter.md) para obtener el nombre de la impresora predeterminada. El código pasa el nombre de la impresora a [CreateDC](/windows/win32/api/wingdi/nf-wingdi-createdcw) para obtener un identificador de contexto de dispositivo para la impresora. El código también pasa el nombre de la impresora a [OpenPrinter](../printdocs/openprinter.md) para obtener un identificador de impresora. Tanto el identificador de contexto del dispositivo como el identificador de la impresora se pasan al constructor de [**gráficos**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . A continuación, se dibujan dos figuras en la impresora.
+La siguiente aplicación de consola llama [a GetDefaultPrinter](../printdocs/getdefaultprinter.md) para obtener el nombre de la impresora predeterminada. El código pasa el nombre de la impresora a [CreateDC para](/windows/win32/api/wingdi/nf-wingdi-createdcw) obtener un identificador de contexto de dispositivo para la impresora. El código también pasa el nombre de la impresora a [OpenPrinter](../printdocs/openprinter.md) para obtener un identificador de impresora. Tanto el identificador de contexto de dispositivo como el identificador de impresora se pasan al constructor [**Gráficos.**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) A continuación, se dibujan dos figuras en la impresora.
 
 > [!Note]  
-> La función [GetDefaultPrinter](../printdocs/getdefaultprinter.md) solo se admite en Windows 2000 y versiones posteriores.
+> La [función GetDefaultPrinter](../printdocs/getdefaultprinter.md) solo se admite en Windows 2000 y versiones posteriores.
 
  
 

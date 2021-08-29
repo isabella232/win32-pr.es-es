@@ -1,21 +1,21 @@
 ---
-description: 'Cómo crear procesadores de buzones. Los procesadores de buzones son compatibles con tres funciones especializadas: CreateMailslot, GetMailslotInfo y SetMailslotInfo. El servidor de buzón de correo utiliza estas funciones.'
+description: 'Cómo crear mailslots. Los mailslots son compatibles con tres funciones especializadas: CreateMailslot, GetMailslotInfo y SetMailslotInfo. El servidor mailslot usa estas funciones.'
 ms.assetid: 7f5a3b36-9583-43fc-a977-321c00a48edb
-title: Creación de un buzón de correo
+title: Crear un mailslot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc4cfbcf990162347d1e45da01c815002f39299e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ebdc255772c8dbe06ff3a1258c5d2176f595d4e6e0a162bfbe662ce15838881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350425"
 ---
-# <a name="creating-a-mailslot"></a>Creación de un buzón de correo
+# <a name="creating-a-mailslot"></a>Crear un mailslot
 
-Los procesadores de buzones son compatibles con tres funciones especializadas: [**CreateMailslot**](/windows/desktop/api/Winbase/nf-winbase-createmailslota), [**GetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-getmailslotinfo)y [**SetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-setmailslotinfo). El servidor de buzón de correo utiliza estas funciones.
+Los mailslots son compatibles con tres funciones [**especializadas: CreateMailslot,**](/windows/desktop/api/Winbase/nf-winbase-createmailslota) [**GetMailslotInfo**](/windows/desktop/api/Winbase/nf-winbase-getmailslotinfo)y [**SetMailslotInfo.**](/windows/desktop/api/Winbase/nf-winbase-setmailslotinfo) El servidor mailslot usa estas funciones.
 
-En el ejemplo de código siguiente se usa la función [**CreateMailslot**](/windows/desktop/api/Winbase/nf-winbase-createmailslota) para recuperar el identificador de un buzón de correo denominado "Sample de \_ buzón de correo". En el ejemplo de código [que se escribe en un buzón de correo](writing-to-a-mailslot.md) se muestra cómo la aplicación cliente puede escribir en este buzón de correo.
+En el ejemplo de código siguiente se usa [**la función CreateMailslot**](/windows/desktop/api/Winbase/nf-winbase-createmailslota) para recuperar el identificador de un mailslot denominado "mailslot \_ de ejemplo". El ejemplo de código de Writing to a Mailslot (Escribir [en mailslot)](writing-to-a-mailslot.md) muestra cómo la aplicación cliente puede escribir en este mailslot.
 
 
 ```C++
@@ -49,7 +49,7 @@ void main()
 
 
 
-Para crear un buzón de correo que pueda ser heredado por procesos secundarios, una aplicación debe cambiar la estructura de [**\_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) pasada como el último parámetro de [**CreateMailslot**](/windows/desktop/api/Winbase/nf-winbase-createmailslota). Para ello, la aplicación establece el miembro **bInheritHandle** de esta estructura en **true** (el valor predeterminado es **false**).
+Para crear un mailslot que puedan heredar los procesos secundarios, una aplicación debe cambiar la estructura [**ATRIBUTOS \_ DE**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) SEGURIDAD pasada como el último parámetro de [**CreateMailslot**](/windows/desktop/api/Winbase/nf-winbase-createmailslota). Para ello, la aplicación establece el miembro **bInheritHandle** de esta estructura en **TRUE** (el valor predeterminado es **FALSE).**
 
  
 

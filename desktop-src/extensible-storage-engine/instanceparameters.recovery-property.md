@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. Recovery (propiedad)'
-title: Propiedad InstanceParameters. Recovery
+description: 'Más información sobre: Propiedad InstanceParameters.Recovery'
+title: Propiedad InstanceParameters.Recovery
 TOCTitle: 'Recovery property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.Recovery
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.recovery(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3849e7629cea54cf13caace0691288d24335f3aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 170659c1a4c1b311d9c2dd60673db623061e9e695f37b0e8363587385531f892
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604295"
 ---
-# <a name="instanceparametersrecovery-property"></a>Propiedad InstanceParameters. Recovery
+# <a name="instanceparametersrecovery-property"></a>Propiedad InstanceParameters.Recovery
 
-Obtiene o establece un valor que indica si la recuperación de bloqueos está activada.
+Obtiene o establece un valor que indica si la recuperación contra bloqueos está en.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public bool Recovery { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-description: La clase CIM SoftwareElement descompone un objeto Cim SoftwareFeature en un conjunto de elementos administrables individualmente o \_ \_ implementables para una plataforma determinada.
+description: La clase CIM SoftwareElement descompone un objeto \_ SoftwareFeature de CIM en un conjunto de elementos que se pueden administrar individualmente o que se pueden implementar \_ para una plataforma determinada.
 ms.assetid: b2418735-b738-411a-a620-acc31662f824
 ms.tgt_platform: multiple
 title: CIM_SoftwareElement clase (proveedores WMI CIMWin32)
@@ -30,21 +30,21 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: be7eca852f8c0d111bbdd977f76406ec690088262be989bea6e45e0afc27e502
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9baf3dea6a5ba68044142aed023006ebfecc2d34
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919265"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884087"
 ---
 # <a name="cim_softwareelement-class-cimwin32-wmi-providers"></a>CIM_SoftwareElement clase (proveedores WMI CIMWin32)
 
-La **\_ clase CIM SoftwareElement** descompone un objeto [**\_ SoftwareFeature**](cim-softwarefeature.md) de CIM en un conjunto de elementos que se pueden administrar individualmente o que se pueden implementar para una plataforma determinada. La plataforma de un elemento de software se identifica de forma única por su arquitectura de hardware y sistema operativo subyacentes.
+La **clase \_ CIM SoftwareElement** descompone un objeto [**Cim \_ SoftwareFeature**](cim-softwarefeature.md) en un conjunto de elementos administrables individualmente o implementables para una plataforma determinada. La plataforma de un elemento de software se identifica de forma única por su arquitectura de hardware y sistema operativo subyacentes.
 
-Por lo tanto, para comprender los detalles de cómo se proporciona la funcionalidad de una característica de software determinada en una plataforma determinada, los objetos **\_ SoftwareElement** cim a los que hacen referencia las asociaciones [**\_ CIM SoftwareFeatureSoftwareElements**](cim-softwarefeaturesoftwareelements.md) se organizan en conjuntos no ordenados basados en la propiedad **TargetOperatingSystem.** Un **objeto \_ SoftwareElement** cim captura los detalles de administración de un elemento o componente en uno de los cuatro estados que caracteriza la **propiedad SoftwareElementState.**
+Por lo tanto, para comprender los detalles de cómo se proporciona la funcionalidad de una característica de software determinada en una plataforma determinada, los objetos **\_ Cim SoftwareElement** a los que hacen referencia las asociaciones [**CIM \_ SoftwareFeatureSoftwareElements**](cim-softwarefeaturesoftwareelements.md) se organizan en conjuntos no unidos basados en la propiedad **TargetOperatingSystem.** Un **objeto \_ SoftwareElement** cim captura los detalles de administración de un elemento o componente en uno de los cuatro estados que caracteriza la **propiedad SoftwareElementState.**
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -397,21 +397,21 @@ Los valores son los siguientes:
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Error de pred** ("error previo")
+**Error de pred** ("error de pred")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Starting** ("Starting")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detención** ("Detención")
+**Detener** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -533,7 +533,7 @@ Att UNIX
 
 </dt> <dd>
 
-Abrir máquinas virtuales
+Apertura de MÁQUINAS VIRTUALES
 
 </dd> <dt>
 
@@ -571,7 +571,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SISTEMA OPERATIVO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -790,7 +790,7 @@ BS2000/OSD
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estorba** (37)
 
 
 </dt> <dd></dd> <dt>
@@ -936,7 +936,7 @@ Mac OS 9
 
 </dt> <dd>
 
-So De remanso
+So de mano
 
 </dd> <dt>
 
@@ -991,26 +991,26 @@ Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/w
 
 Versión de la operación.
 
-La versión de la operación debe tener uno de los formatos siguientes:
+La versión de la operación debe tener uno de los siguientes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-La **clase \_ Cim SoftwareElement** se deriva de [**CIM \_ LogicalElement**](cim-logicalelement.md).
+La **clase \_ Cim SoftwareElement** se deriva de [**\_ LOGICALElement de CIM.**](cim-logicalelement.md)
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ SoftwareElement**, vea [Clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **\_ CIM SoftwareElement**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

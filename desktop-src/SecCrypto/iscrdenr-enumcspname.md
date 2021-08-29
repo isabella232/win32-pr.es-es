@@ -1,7 +1,7 @@
 ---
-description: Enumera el nombre de los proveedores de servicios de cifrado (CSP) disponibles.
+description: Enumera el nombre de los proveedores de servicios criptográficos (CSP) disponibles.
 ms.assetid: d0dc8a8a-afff-4ccc-96e0-2c52913c3322
-title: 'ISCrdEnr:: enumCSPName (método)'
+title: Método ISCrdEnr::enumCSPName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: e7bba587b56300cd02efd81758288d3b77c65a66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24dd78e8e96da6fc0e910a6ba7323c500cb775e747273e3f6d418599c51adc92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119425865"
 ---
-# <a name="iscrdenrenumcspname-method"></a>ISCrdEnr:: enumCSPName (método)
+# <a name="iscrdenrenumcspname-method"></a>Método ISCrdEnr::enumCSPName
 
-El método **enumCSPName** enumera el nombre de los proveedores de [*servicios de cifrado*](../secgloss/c-gly.md) (CSP) disponibles.
+El **método enumCSPName** enumera el nombre de los proveedores de servicios [*criptográficos*](../secgloss/c-gly.md) (CSP) disponibles.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,21 +54,21 @@ SCrdEnr.enumCSPName( _
 
 <dl> <dt>
 
-*dwIndex* \[ de\]
+*dwIndex* \[ En\]
 </dt> <dd>
 
-Índice de base cero de la secuencia de enumeración.
+Índice de base cero para la secuencia de enumeración.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Reservado para uso futuro. Establezca este valor en cero.
 
 </dd> <dt>
 
-*pbstrCSPName* \[ enuncia\]
+*pbstrCSPName* \[ out\]
 </dt> <dd>
 
 Puntero a una cadena que devuelve el nombre del CSP enumerado.
@@ -79,9 +79,9 @@ Puntero a una cadena que devuelve el nombre del CSP enumerado.
 
 ### <a name="c"></a>C++
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
@@ -94,9 +94,9 @@ Cadena que representa el nombre del CSP enumerado.
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

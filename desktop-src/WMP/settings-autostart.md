@@ -1,9 +1,9 @@
 ---
-title: Configuración. Inicio automático
+title: Configuración.autoStart
 description: La propiedad autoStart especifica o recupera un valor que indica si el elemento multimedia actual comienza a reproducirse automáticamente.
 ms.assetid: 553f8534-9e3e-4fdc-bfc1-551939969289
 keywords:
-- Configuración. Inicio automático de Windows Media Player
+- Configuración.autoStart Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,47 +14,47 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d08b8f84f4a0b51225ed5692a25fa41cab809ad
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93a12d8cf63fdf4d9652bf895f9110e233fb3f3665314e81a9d5aa5c6e1516b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123105"
 ---
-# <a name="settingsautostart"></a>Configuración. Inicio automático
+# <a name="settingsautostart"></a>Configuración.autoStart
 
-La propiedad **autoStart** especifica o recupera un valor que indica si el elemento multimedia actual comienza a reproducirse automáticamente.
+La **propiedad autoStart** especifica o recupera un valor que indica si el elemento multimedia actual comienza a reproducirse automáticamente.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-Player. Settings. autoStart
+player.settings.autoStart
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **valor booleano** de lectura/escritura.
+Esta propiedad es un booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                                         |
 |-------|---------------------------------------------------------------------|
-| true  | Predeterminada. El elemento multimedia comienza a reproducirse automáticamente (vea la sección comentarios). |
-| false | El elemento multimedia no empieza a reproducirse automáticamente.                |
+| true  | Predeterminada. El elemento multimedia comienza a reproducirse automáticamente (vea Comentarios). |
+| false | El elemento multimedia no comienza a reproducirse automáticamente.                |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si **autoStart** se establece en true, el elemento multimedia empezará a reproducirse cuando el *reproductor*. **Dirección URL**, *reproductor*. **currentPlaylist** o *Player*. **currentMedia** está establecido. De lo contrario, no empezará a reproducirse hasta que los *controles*. se llama al método **Play** .
+Si **autoStart está** establecido en true, el elemento multimedia comenzará a reproducirse cuando *el reproductor .* **DIRECCIÓN URL,** *Player*. **currentPlaylist** o *Player*. **currentMedia** está establecido. De lo contrario, no se iniciará la reproducción hasta que *se controle*. Se llama al método **play.**
 
-Dado que la propiedad **autoStart** para el modo completo de Windows Media Player se puede establecer globalmente mediante eventos externos (como cargar un CD), no hay ningún valor predeterminado confiable para las máscaras y los controles del reproductor remoto. Esto se debe a que el motor de reproducción del reproductor en modo completo se usa en ambos casos.
+Dado que la **propiedad autoStart** para el modo completo de Reproductor de Windows Media se puede establecer globalmente mediante eventos externos (como cargar un CD), no hay ningún valor predeterminado confiable para máscaras y controles remotos del reproductor. Esto se debe a que el motor de reproducción del reproductor en modo completo se usa en ambos casos.
 
-Debe establecer **autoStart** en false inmediatamente antes de configurar el *reproductor*. **Dirección URL**, *reproductor*. **currentPlaylist** o *Player*. **currentMedia** en máscaras y controles de Windows Media Player remotos si desea asegurarse de que el elemento multimedia no empiece a reproducirse inmediatamente. Además, a menos que establezca **AutoStart** en true inmediatamente antes de especificar un elemento multimedia, no debe confiar en este valor como sustituto para usar los *controles*. método **Play** .
+Debe establecer **autoStart en** false inmediatamente antes de establecer *Player*. **DIRECCIÓN URL,** *Player*. **currentPlaylist** o *Player*. **currentMedia** en máscaras y controles Reproductor de Windows Media remoto si desea asegurarse de que el elemento multimedia no se empieza a reproducir inmediatamente. Además, a menos que establezca **inicio** automático en true inmediatamente antes de especificar un elemento multimedia, no debe confiar en esta configuración como sustituto del uso de *los controles*. **método play.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento CHECKBOX HTML que permite al usuario especificar si el control Player reproduce automáticamente el elemento multimedia actual. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML CHECKBOX que permite al usuario especificar si el control Player reproduce automáticamente el elemento multimedia actual. El **objeto Player** se creó con id. = "Player".
 
 
 ```
@@ -76,7 +76,7 @@ En el ejemplo siguiente se crea un elemento CHECKBOX HTML que permite al usuario
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -85,13 +85,13 @@ En el ejemplo siguiente se crea un elemento CHECKBOX HTML que permite al usuario
 
 <dl> <dt>
 
-[**Player. currentMedia**](player-currentmedia.md)
+[**Player.currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Player. URL**](player-url.md)
+[**Player.URL**](player-url.md)
 </dt> <dt>
 
-[**Objeto de configuración**](settings-object.md)
+[**Configuración Objeto**](settings-object.md)
 </dt> </dl>
 
  

@@ -17,20 +17,20 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1f8a5054b47eeed45929995cd022fa626dba7725
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: bb73aded8967797c1d7b85aa92865f17f23ba84c
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626391"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787461"
 ---
 # <a name="span-idvspixengineidebugliveshaderrequestspanidebugliveshaderrequest-interface"></a><span id="vspixengine.idebugliveshaderrequest"></span>IDebugLiveShaderRequest (interfaz)
 
 Reservado. Solicitud de depuración en vivo de un sombreador.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz IDebugLiveShaderRequest** hereda de [**la interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDebugLiveShaderRequest** también tiene estos tipos de miembros:
+La **interfaz IDebugLiveShaderRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IDebugLiveShaderRequest** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -38,7 +38,7 @@ La **interfaz IDebugLiveShaderRequest** hereda de [**la interfaz IUnknown.**](/w
 
 La **interfaz IDebugLiveShaderRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/idebugliveshaderrequest-begindebugliveshader-debugshaderrequestinfo-ptr"><strong>BeginDebugLiveShader</strong></a></td><td style="text-align: left;"><p>Solicitudes para depurar un sombreador en la GPU (depuración en vivo) frente a la CPU (depuración basada en seguimiento).</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/idebugliveshaderrequest-begindebugliveshader-debugshaderrequestinfo-ptr"><strong>BeginDebugLiveShader</strong></a></td><td ><p>Solicitudes para depurar un sombreador en la GPU (depuración en vivo) frente a la CPU (depuración basada en seguimiento).</p></td></tr></tbody></table>
 
  
 

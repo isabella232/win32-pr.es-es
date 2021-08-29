@@ -3,7 +3,7 @@ title: EM_FINDTEXTW mensaje (Richedit.h)
 description: 'EM_FINDTEXTW mensaje: busca texto Unicode dentro de un control de edición enriquecido.'
 ms.assetid: 0c1579f5-3b37-4e28-86a2-f4e03e195f38
 keywords:
-- EM_FINDTEXTW mensaje Controles de Windows
+- EM_FINDTEXTW controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 325ff948c4c8f03e8051248f15928d8e8c56e52f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 80d7f84f299ad013051dc0f3e183b855f45c4203206d039cec8480a7dcac3bda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697755"
 ---
 # <a name="em_findtextw-message"></a>Mensaje \_ EM FINDTEXTW
 
@@ -70,15 +70,15 @@ Si se encuentra la cadena de destino, el valor devuelto es la posición de base 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

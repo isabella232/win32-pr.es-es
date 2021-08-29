@@ -1,8 +1,8 @@
 ---
-description: La propiedad DisplayName del objeto SWbemObjectPath es una cadena que contiene la ruta de acceso en un formulario que se puede usar como nombre para mostrar del moniker.
+description: La propiedad DisplayName del objeto SWbemObjectPath es una cadena que contiene la ruta de acceso en un formulario que se puede usar como nombre para mostrar de moniker.
 ms.assetid: ebcd2570-f6f5-43fb-819d-0fc54b8072b1
 ms.tgt_platform: multiple
-title: Propiedad SWbemObjectPath. DisplayName (Wbemdisp. h)
+title: Propiedad SWbemObjectPath.DisplayName (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,22 +17,22 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: d79f733f361521c8388bbd1f3311062f6a091076
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30f127c06a3d4482351f4fb2a3f724d72f8e1bb9fff90247b9f774c0baba11a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503945"
 ---
-# <a name="swbemobjectpathdisplayname-property"></a>Propiedad SWbemObjectPath. DisplayName
+# <a name="swbemobjectpathdisplayname-property"></a>Propiedad SWbemObjectPath.DisplayName
 
-La propiedad **displayName** del objeto [**SWbemObjectPath**](swbemobjectpath.md) es una cadena que contiene la ruta de acceso en un formulario que se puede usar como nombre para mostrar del moniker.
+La **propiedad DisplayName** del objeto [**SWbemObjectPath**](swbemobjectpath.md) es una cadena que contiene la ruta de acceso en un formulario que se puede usar como nombre para mostrar de moniker.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -47,15 +47,15 @@ SWbemObjectPath.DisplayName As String
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

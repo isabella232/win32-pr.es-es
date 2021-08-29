@@ -4,33 +4,33 @@ description: Para suscribirse a eventos, llame a la función EvtSubscribe.
 ms.assetid: 1e86deeb-fc59-4658-9353-e4ced7ace89a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0889c4ff440a17696fe6d908ff98d632ff7058ca
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d52f39d17022562329cef791ed5989835a5a6e89733fa45ec82cab653eadfd34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105695640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124185"
 ---
 # <a name="subscribing-to-events"></a>Suscripción a eventos
 
-Para suscribirse a eventos, llame a la función [**EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) . Puede suscribirse a eventos de uno o varios canales operativos o de administrador. El canal puede existir en el equipo local o en un equipo remoto. Para especificar los eventos a los que desea suscribirse, puede utilizar una consulta XPath o una consulta XML de estructura. Para obtener más información sobre cómo escribir la consulta, vea [consumir eventos](consuming-events.md).
+Para suscribirse a eventos, llame a [**la función EvtSubscribe.**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) Puede suscribirse a eventos desde uno o varios canales de administración u operativos. El canal puede existir en el equipo local o en un equipo remoto. Para especificar los eventos a los que desea suscribirse, puede usar una consulta XPath o una consulta XML de estructura. Para obtener más información sobre cómo escribir la consulta, vea [Consumo de eventos](consuming-events.md).
 
-El registro de eventos de Windows proporciona dos modelos para la suscripción a eventos:
+Windows El registro de eventos proporciona dos modelos para la suscripción de eventos:
 
--   El modelo de inserciones envía eventos de forma asincrónica a una devolución de llamada que se implementa.
--   El modelo de extracción utiliza un identificador de eventos que se crea para indicar cuándo hay eventos disponibles que coinciden con los criterios de la consulta. A continuación, se enumeran los eventos en el conjunto de resultados.
+-   El modelo de inserción inserta eventos de forma asincrónica en una devolución de llamada que se implementa.
+-   El modelo de extracción usa un identificador de eventos que se crea para indicarle cuándo hay eventos disponibles que coincidan con los criterios de consulta. A continuación, enumerará los eventos en el conjunto de resultados.
 
-Puede suscribirse a eventos pasados y futuros, solo a eventos futuros o a eventos pasados y futuros que empiecen después del evento marcado.
+Puede suscribirse a eventos pasados y futuros, solo eventos futuros o eventos pasados y futuros que comienzan después del evento marcado.
 
-Para obtener más información sobre cómo suscribirse a eventos, consulte suscripciones de [inserción](#push-subscriptions) o [suscripciones de extracción](#pull-subscriptions).
+Para obtener más información sobre cómo suscribirse a eventos, vea [Suscripciones de inserción](#push-subscriptions) o [Suscripciones de extracción.](#pull-subscriptions)
 
-Para obtener más información sobre cómo representar los eventos, vea [representar eventos](rendering-events.md).
+Para obtener más información sobre cómo representar los eventos, vea [Representación de eventos](rendering-events.md).
 
-Si desea suscribirse a eventos desde donde lo dejó, cree un marcador antes de finalizar la suscripción y úselo la próxima vez que se suscriba a eventos. Para obtener más información, vea [marcar eventos](bookmarking-events.md).
+Si desea suscribirse a eventos desde donde lo dejó, cree un marcador antes de finalizar la suscripción y úselo la próxima vez que se suscriba a eventos. Para obtener más información, [vea Bookmarking Events](bookmarking-events.md).
 
-## <a name="push-subscriptions"></a>Suscripciones de extracción
+## <a name="push-subscriptions"></a>Suscripciones de inserción
 
-En el ejemplo siguiente se muestra cómo suscribirse a eventos, implementar la devolución de llamada de la suscripción y representar los eventos.
+En el ejemplo siguiente se muestra cómo suscribirse a eventos, implementar la devolución de llamada de suscripción y representar los eventos.
 
 
 ```C++
@@ -176,7 +176,7 @@ cleanup:
 
 ## <a name="pull-subscriptions"></a>Suscripciones de extracción
 
-El modelo de suscripción de extracción utiliza un objeto de evento (vea la función [**CreateEventEx**](/windows/desktop/api/synchapi/nf-synchapi-createeventexa) ) para indicar a la aplicación que hay eventos en el conjunto de resultados que coinciden con los criterios de la consulta. Cree una construcción de bucle que espere en el objeto de evento hasta que se señale el evento. A continuación, llame a la función [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) en un bucle para enumerar los eventos del conjunto de resultados. Cuando se produce un error en la función **EvtNext** y se establece el último error en \_ no hay \_ más \_ elementos, restablezca el objeto de evento y espere a que el servicio señale de nuevo el objeto cuando haya eventos en el conjunto de resultados.
+El modelo de suscripción de extracción usa un objeto de evento (vea la función [**CreateEventEx)**](/windows/desktop/api/synchapi/nf-synchapi-createeventexa) para indicar a la aplicación que hay eventos en el conjunto de resultados que coinciden con los criterios de consulta. Cree una construcción de bucle que espere en el objeto de evento hasta que se señale el evento. A continuación, llame a [**la función EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) en un bucle para enumerar los eventos del conjunto de resultados. Cuando se produce un error en la función **EvtNext** y establece el último error en ERROR NO MORE ITEMS, restablezca el objeto de evento y espere a que el servicio señale de nuevo el objeto cuando haya eventos en el conjunto de \_ \_ \_ resultados.
 
 En el ejemplo siguiente se muestra cómo usar el modelo de suscripción de extracción.
 
@@ -398,6 +398,6 @@ BOOL IsKeyEvent(HANDLE hStdIn)
 
 
 
- 
+ 
 
- 
+ 

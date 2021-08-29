@@ -5,9 +5,9 @@ ms.assetid: c89ca087-3e93-4e86-ac79-731e3e7a361d
 keywords:
 - Automatización de la interfaz de usuario, compatibilidad con el tipo de control ScrollBar
 - Automatización de la interfaz de usuario, tipo de control ScrollBar
-- Automatización de la interfaz de usuario,estructura de árbol para el tipo de control ScrollBar
+- Automatización de la interfaz de usuario estructura de árbol para el tipo de control ScrollBar
 - Automatización de la interfaz de usuario,properties para el tipo de control ScrollBar
-- Automatización de la interfaz de usuario, patrones de control para el tipo de control ScrollBar
+- Automatización de la interfaz de usuario,patrones de control para el tipo de control ScrollBar
 - Automatización de la interfaz de usuario,events para el tipo de control ScrollBar
 - estructuras de árbol, tipo de control ScrollBar
 - properties,Tipo de control ScrollBar
@@ -18,15 +18,15 @@ keywords:
 - tipos de control, estructura de árbol para el tipo de control ScrollBar
 - tipos de control, patrones de control para el tipo de control ScrollBar
 - tipos de control, compatibilidad con ScrollBar
-- tipos de control, ScrollBar
+- tipos de control,ScrollBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a25d0398ca8e094e1dbec5e06eb725f3e9d7edbb5c193fdc3699e166b118142
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 51e9da37ec8006eae0c710ed4dcd336caf76cf3a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119413375"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467792"
 ---
 # <a name="scrollbar-control-type"></a>Tipo de control ScrollBar
 
@@ -34,7 +34,7 @@ En este tema se proporciona información sobre microsoft Automatización de la i
 
 Los controles de la barra de desplazamiento permiten a un usuario desplazarse por el contenido dentro de una ventana o contenedor de elementos. El control consta de un conjunto de botones y un control de posición.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo de control **ScrollBar.** Los Automatización de la interfaz de usuario se aplican a todos los controles de barra de desplazamiento en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo de control **ScrollBar.** Los Automatización de la interfaz de usuario se aplican a todos los controles de barra de desplazamiento en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -50,30 +50,11 @@ En la tabla siguiente se muestra un control típico y una vista de contenido del
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Vista de control</th>
-<th>Vista de contenido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>ScrollBar
-<ul>
-<li>Botón (0, 2 o 4)</li>
-<li>Thumb (0 o 1)</li>
-</ul></li>
-</ul></td>
-<td>No es aplicable. (El control de barra de desplazamiento no tiene contenido).</td>
-</tr>
-</tbody>
-</table>
+
+| Vista de control | Vista de contenido | 
+|--------------|--------------|
+| <ul><li>ScrollBar<ul><li>Botón (0, 2 o 4)</li><li>Thumb (0 o 1)</li></ul></li></ul> | No es aplicable. (El control de barra de desplazamiento no tiene contenido). | 
+
 
 
 
@@ -83,21 +64,21 @@ El control de barra de desplazamiento puede tener de cero a cinco secundarios. D
 
 ## <a name="relevant-properties"></a>Propiedades pertinentes
 
-En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles de barra de desplazamiento. Tenga en cuenta que un control de barra de desplazamiento nunca tiene contenido; su funcionalidad se expone a través del patrón de control [Scroll,](uiauto-implementingscroll.md) que se admite en el contenedor que se desplaza.
+En la tabla siguiente se enumeran Automatización de la interfaz de usuario propiedades cuyo valor o definición es especialmente relevante para los controles de barra de desplazamiento. Tenga en cuenta que un control de barra de desplazamiento nunca tiene contenido; su funcionalidad se expone a través del patrón de control [Scroll,](uiauto-implementingscroll.md) que se admite en el contenedor que se va a desplazar.
 
 Para obtener más información sobre Automatización de la interfaz de usuario propiedades, vea [Recuperar propiedades de Automatización de la interfaz de usuario Elements](uiauto-propertiesforclients.md).
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Value         | Notas                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Valor         | Notas                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.    | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                                                                                                                                                                                    |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.    | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                                                                                                                                                                                    |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.    | El rectángulo exterior que contiene el control completo.                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | NaN           | El control de barra de desplazamiento no tiene puntos interactivos.                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Scrollbar** | Este valor es el mismo para todos los marcos de trabajo. Las barras de desplazamiento que funcionan como controles deslizantes deben usar el [tipo de](uiauto-supportslidercontroltype.md) control Slider.                                                                                                                                                                                                                                                                                                                        |
 | [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | FALSE         | El control de barra de desplazamiento nunca es un elemento de contenido. Si la barra de desplazamiento es un control independiente, debe cumplir el tipo de control [Slider](uiauto-supportslidercontroltype.md) y devolver [**UIA \_ SliderControlTypeId**](uiauto-controltype-ids.md) para la propiedad [**IUIAutomationElement::CurrentControlType**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentcontroltype) (o [**CachedControlType).**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedcontroltype) |
 | [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE          | El control de barra de desplazamiento siempre se incluye en la vista de control del Automatización de la interfaz de usuario de desplazamiento.                                                                                                                                                                                                                                                                                                                                                                                        |
-| [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.    | Si el control puede recibir el foco del teclado, debe admitir esta propiedad. Un control de barra de desplazamiento rara vez toma el foco, pero cuando lo hace, el foco debe permanecer en el propio control de barra de desplazamiento, no en los botones secundarios ni en el control thumb. El usuario debe poder realizar todas las acciones de desplazamiento mediante las teclas FLECHA ARRIBA y FLECHA ABAJO (o FLECHA DERECHA y FLECHA IZQUIERDA) o las teclas SUBIR Y BAJAR PÁGINA.                                                                |
+| [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.    | Si el control puede recibir el foco del teclado, debe admitir esta propiedad. Un control de barra de desplazamiento rara vez toma el foco, pero cuando lo hace, el foco debe permanecer en el propio control de barra de desplazamiento, no en los botones secundarios ni en el control thumb. El usuario debe ser capaz de realizar todas las acciones de desplazamiento mediante las teclas FLECHA ARRIBA y FLECHA ABAJO (o FLECHA DERECHA y FLECHA IZQUIERDA), o las teclas PAGE UP y PAGE DOWN.                                                                |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL          | Las barras de desplazamiento no tienen etiquetas.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.    | Cadena localizada correspondiente al tipo de control **ScrollBar.** El valor predeterminado es "barra de desplazamiento" para en-US o inglés (Estados Unidos).                                                                                                                                                                                                                                                                                                                                       |
 | [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | NULL          | El control de barra de desplazamiento no tiene elementos de contenido y no es necesario establecer la propiedad [**\_ NamePropertyId de UIA.**](uiauto-automation-element-propids.md)                                                                                                                                                                                                                                                                                           |
@@ -129,7 +110,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 ## <a name="required-events"></a>Eventos necesarios
 
-En la tabla siguiente se enumeran los Automatización de la interfaz de usuario que se requieren para admitir los controles de barra de desplazamiento. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
+En la tabla siguiente se enumeran los Automatización de la interfaz de usuario que los controles de barra de desplazamiento son necesarios para admitir. Para más información sobre los eventos, vea [UI Automation Events Overview](uiauto-eventsoverview.md).
 
 
 

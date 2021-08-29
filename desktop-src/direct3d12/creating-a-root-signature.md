@@ -5,16 +5,16 @@ ms.assetid: 565B28C1-DBD1-42B6-87F9-70743E4A2E4A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87209dfc324b950a74d2b31e5f1a1f6326792b9f
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: e6bb8deeb1b41f329bcd46795b1c58e2a89ce10f99a916c04ee7ee43a2e001d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751805"
 ---
 # <a name="creating-a-root-signature"></a>Creación de una firma raíz
 
-Las firmas raíz son una estructura de datos compleja que contiene estructuras anidadas. Se pueden definir mediante programación mediante la definición de estructura de datos siguiente (que incluye métodos para ayudar a inicializar miembros). Como alternativa, se pueden crear en lenguaje de sombreado de alto nivel (HLSL), lo que da la ventaja de que el compilador validará pronto que el diseño es compatible con el sombreador.
+Las firmas raíz son una estructura de datos compleja que contiene estructuras anidadas. Se pueden definir mediante programación mediante la definición de estructura de datos siguiente (que incluye métodos para ayudar a inicializar miembros). Como alternativa, se pueden crear en lenguaje de sombreado de alto nivel (HLSL), lo que ofrece la ventaja de que el compilador validará pronto que el diseño es compatible con el sombreador.
 
 La API para crear una firma raíz toma una versión serializada (independiente, sin puntero) de la descripción del diseño que se describe a continuación. Se proporciona un método para generar esta versión serializada a partir de la estructura de datos de C++, pero otra manera de obtener una definición de firma raíz serializada es recuperarla de un sombreador compilado con una firma raíz.
 
@@ -95,7 +95,7 @@ y el sombreador de píxeles también puede declarar:
 Texture2D bar : register(t0);
 ```
 
-Si la aplicación realiza un enlace de firma raíz a t0 VISIBILITY \_ ALL, ambos sombreadores ven la misma textura. Si el sombreador define realmente quiere que cada sombreador vea texturas diferentes, puede definir dos ranuras de firma raíz con VISIBILITY \_ VERTEX y \_ PIXEL. Independientemente de cuál sea la visibilidad en una ranura de firma raíz, siempre tiene el mismo costo (costo solo en función de lo que sea SlotType) hacia un tamaño máximo fijo de firma raíz.
+Si la aplicación realiza un enlace de firma raíz a t0 VISIBILITY \_ ALL, ambos sombreadores verán la misma textura. Si el sombreador define realmente quiere que cada sombreador vea texturas diferentes, puede definir 2 ranuras de firma raíz con VISIBILITY \_ VERTEX y \_ PIXEL. Independientemente de cuál sea la visibilidad en una ranura de firma raíz, siempre tiene el mismo costo (costo solo en función de lo que sea SlotType) hacia un tamaño máximo fijo de firma raíz.
 
 En el hardware D3D11 de bajo nivel, LA VISIBILIDAD DEL SOMBREADOR también se tiene en cuenta al validar los tamaños de las tablas de descriptores en un diseño raíz, ya que algunos hardware D3D11 solo pueden admitir una cantidad máxima de enlaces por \_ fase. Estas restricciones solo se imponen cuando se ejecutan en hardware de bajo nivel y no limitan el hardware más moderno en absoluto.
 
@@ -127,9 +127,9 @@ La API [**ID3D12Device::CreateRootSignature**](/windows/desktop/api/d3d12/nf-d3d
 
 ## <a name="root-signature-in-pipeline-state-objects"></a>Firma raíz en objetos de estado de canalización
 
-Los métodos para crear el estado de canalización ([**ID3D12Device::CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate) e [**ID3D12Device::CreateComputePipelineState)**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcomputepipelinestate) toman una interfaz [**ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) opcional como parámetro de entrada (almacenado en una estructura [**\_ \_ \_ \_ DESC DESC GRAPHICS PIPELINE STATE de D3D12).**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) Esto invalidará cualquier firma raíz que ya se encuentra en los sombreadores.
+Los métodos para crear el estado de canalización ([**ID3D12Device::CreateGraphicsPipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-creategraphicspipelinestate) e [**ID3D12Device::CreateComputePipelineState**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-createcomputepipelinestate) ) toman una interfaz [**OPCIONAL ID3D12RootSignature**](/windows/win32/api/d3d12/nn-d3d12-id3d12rootsignature) como parámetro de entrada (almacenado en una estructura [**\_ \_ \_ \_ DESC DESC GRAPHICS PIPELINE STATE de D3D12).**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) Esto invalidará cualquier firma raíz que ya se encuentra en los sombreadores.
 
-Si se pasa una firma raíz a uno de los métodos de estado de la canalización de creación, esta firma raíz se valida con todos los sombreadores del PSO por compatibilidad y se le da al controlador que se usará con todos los sombreadores. Si alguno de los sombreadores tiene una firma raíz diferente, se reemplaza por la firma raíz que se pasa en la API. Si no se pasa una firma raíz, todos los sombreadores pasados deben tener una firma raíz y deben coincidir; esto se le dará al controlador. Establecer un PSO en una lista o agrupación de comandos no cambia la firma raíz. Esto se logra mediante los [**métodos SetGraphicsRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootsignature) y [**SetComputeRootSignature.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootsignature) En el momento en que se invoca draw(graphics)/dispatch(compute), la aplicación debe asegurarse de que el PSO actual coincide con la firma raíz actual; de lo contrario, el comportamiento es indefinido.
+Si se pasa una firma raíz a uno de los métodos de estado de la canalización de creación, esta firma raíz se valida con todos los sombreadores del PSO por razones de compatibilidad y se le da al controlador que se usará con todos los sombreadores. Si alguno de los sombreadores tiene una firma raíz diferente, se reemplaza por la firma raíz que se pasa en la API. Si no se pasa una firma raíz, todos los sombreadores pasados deben tener una firma raíz y deben coincidir; esto se le dará al controlador. Establecer un PSO en una lista o agrupación de comandos no cambia la firma raíz. Esto se logra mediante los [**métodos SetGraphicsRootSignature**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setgraphicsrootsignature) y [**SetComputeRootSignature.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setcomputerootsignature) En el momento en que se invoca draw(graphics)/dispatch(compute), la aplicación debe asegurarse de que el PSO actual coincide con la firma raíz actual; de lo contrario, el comportamiento es indefinido.
 
 ## <a name="code-for-defining-a-version-11-root-signature"></a>Código para definir una firma raíz de la versión 1.1
 

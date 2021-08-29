@@ -1,7 +1,7 @@
 ---
 description: Representa una asociación entre un puerto o un punto de conexión y un dispositivo.
 ms.assetid: b35e741a-7110-4e48-a132-d436f4fbf038
-title: CIM_PortOnDevice (clase)
+title: CIM_PortOnDevice clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 76d8500daaa5db1746efa347e5dd10eb70a82234
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c58176d918c1faf8319c9953a3476e991c6d04b25629909407759cb01cbe1b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981275"
 ---
-# <a name="cim_portondevice-class"></a>\_Clase PortOnDevice de CIM
+# <a name="cim_portondevice-class"></a>Cim \_ PortOnDevice (clase)
 
 Representa una asociación entre un puerto o un punto de conexión y un dispositivo.
 
@@ -39,33 +39,33 @@ class CIM_PortOnDevice : CIM_HostedDependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ PortOnDevice** tiene estos tipos de miembros:
+La **clase \_ PortOnDevice** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ PortOnDevice** tiene estas propiedades.
+La **clase \_ PortOnDevice** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ LogicalDevice de CIM**
+Tipo de datos: **CIM \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-El dispositivo que incluye el puerto.
+Dispositivo que incluye el puerto.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ LogicalPort**
@@ -74,7 +74,7 @@ Tipo de datos: **CIM \_ LogicalPort**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
 Puerto del dispositivo.
@@ -89,8 +89,8 @@ Puerto del dispositivo.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Puerto del dispositivo.
 
 <dl> <dt>
 
-[**\_HOSTEDDEPENDENCY CIM**](cim-hosteddependency.md)
+[**CIM \_ HostedDependency**](cim-hosteddependency.md)
 </dt> </dl>
 
  

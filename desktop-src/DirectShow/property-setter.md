@@ -1,26 +1,26 @@
 ---
-description: Establecedor de propiedad
+description: Property Setter
 ms.assetid: 625f3774-4f8a-4208-ab30-43559b1fd6ce
-title: Establecedor de propiedad
+title: Property Setter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce5149eb32468913aaefee733a6c1eacd7f76a18
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b1a7ab831e1c9230bd707af647bc0c6ab206e5a1bf9fdc653ef2195100158db0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697325"
 ---
-# <a name="property-setter"></a>Establecedor de propiedad
+# <a name="property-setter"></a>Property Setter
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto establecedor de propiedad establece las propiedades **IDispatch** en un objeto Timeline. Para crear este objeto, llame a **CoCreateInstance**. El identificador de clase es CLSID \_ PropertySetter.
+El objeto Property Setter establece las **propiedades IDispatch** en un objeto de escala de tiempo. Para crear este objeto, llame a **CoCreateInstance**. El identificador de clase es CLSID \_ PropertySetter.
 
-El objeto establecedor de propiedad expone las siguientes interfaces:
+El objeto Property Setter expone las interfaces siguientes:
 
 -   [**IAMSetErrorLog**](iamseterrorlog.md)
 -   [**IPropertySetter**](ipropertysetter.md)

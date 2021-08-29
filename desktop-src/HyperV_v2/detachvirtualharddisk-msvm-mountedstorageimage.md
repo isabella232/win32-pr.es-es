@@ -1,7 +1,7 @@
 ---
-description: Desasocia la imagen de almacenamiento montada que está asociada a esta clase.
+description: Desasoje la imagen de almacenamiento montada asociada a esta clase.
 ms.assetid: C3AB0EEE-71FE-4049-90AB-01F5D77E3B97
-title: Método DetachVirtualHardDisk de la clase Msvm_MountedStorageImage
+title: Método DetachVirtualHardDisk de la Msvm_MountedStorageImage clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0d411134d85fe70163b2e08eebed0ff0d4b88e1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ee19316b5e3cbf5440a243df283379b863ecd026b53471b04dfa01ca6731825
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682565"
 ---
-# <a name="detachvirtualharddisk-method-of-the-msvm_mountedstorageimage-class"></a>Método DetachVirtualHardDisk de la \_ clase MountedStorageImage de MSVM
+# <a name="detachvirtualharddisk-method-of-the-msvm_mountedstorageimage-class"></a>Método DetachVirtualHardDisk de la clase \_ Msvm MountedStorageImage
 
-Desasocia la imagen de almacenamiento montada que está asociada a esta clase.
+Desasoje la imagen de almacenamiento montada asociada a esta clase.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Este método puede devolver uno de los valores siguientes.
 
@@ -51,13 +51,13 @@ Este método puede devolver uno de los valores siguientes.
 **Error** (1)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase [**MSVM \_ MountedStorageImage**](msvm-mountedstorageimage.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ Msvm MountedStorageImage**](msvm-mountedstorageimage.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se muestra cómo desasociar un archivo de disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el siguiente ejemplo de C# se muestra cómo separar un archivo de disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -107,12 +107,12 @@ public static void DetachVirtualHardDisk(string path)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -121,7 +121,7 @@ public static void DetachVirtualHardDisk(string path)
 
 <dl> <dt>
 
-[**MSVM \_ MountedStorageImage**](msvm-mountedstorageimage.md)
+[**Msvm \_ MountedStorageImage**](msvm-mountedstorageimage.md)
 </dt> </dl>
 
  

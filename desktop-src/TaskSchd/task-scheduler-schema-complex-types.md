@@ -1,6 +1,6 @@
 ---
-title: Tipos complejos de esquema Programador de tareas
-description: Esta sección contiene los tipos complejos que se usan para definir los elementos secundarios y los atributos utilizados por otros elementos. Esta información se proporciona a aquellos que desean ampliar el esquema de Programador de tareas.
+title: Programador de tareas tipos complejos de esquema
+description: Esta sección contiene los tipos complejos utilizados para definir los elementos secundarios y los atributos utilizados por otros elementos. Esta información se proporciona para aquellos que desean extender el esquema Programador de tareas datos.
 ms.assetid: 1db9049d-f2c7-4dc1-b7f0-b25bec551bf3
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 32ef8a464b5a702530768a4317d431c5b8e52550
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fb711e66671acb610a916dc74dc2b4ded3f99eed1bad70ac0a0d0d3f9d19b8b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125985"
 ---
-# <a name="task-scheduler-schema-complex-types"></a>Tipos complejos de esquema Programador de tareas
+# <a name="task-scheduler-schema-complex-types"></a>Programador de tareas tipos complejos de esquema
 
-Esta sección contiene los tipos complejos que se usan para definir los elementos secundarios y los atributos utilizados por otros elementos. Esta información se proporciona a aquellos que desean ampliar el esquema de Programador de tareas.
+Esta sección contiene los tipos complejos utilizados para definir los elementos secundarios y los atributos utilizados por otros elementos. Esta información se proporciona para aquellos que desean extender el esquema Programador de tareas datos.
 
-En los temas de esta sección se incluye una descripción de lo que proporciona el tipo complejo a los elementos definidos por el tipo. Cómo se define el tipo complejo en el XSD; los elementos secundarios o atributos que define; y comentarios que cubren circunstancias especiales.
+Los temas de esta sección incluyen una descripción de lo que el tipo complejo proporciona a los elementos definidos por el tipo. cómo se define el tipo complejo en XSD; los elementos o atributos secundarios que define; y comentarios que cubren circunstancias especiales.
 
 -   [**actionBaseType**](taskschedulerschema-actionbasetype-complextype.md)
 -   [**actionsType**](taskschedulerschema-actionstype-complextype.md)
@@ -29,7 +29,7 @@ En los temas de esta sección se incluye una descripción de lo que proporciona 
 -   [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)
 -   [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md)
 -   [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md)
--   [**Tipo**](taskschedulerschema-datatype-complextype.md)
+-   [**Datatype**](taskschedulerschema-datatype-complextype.md)
 -   [**daysOfMonthType**](taskschedulerschema-daysofmonthtype-complextype.md)
 -   [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md)
 -   [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md)
@@ -67,15 +67,15 @@ En los temas de esta sección se incluye una descripción de lo que proporciona 
 
 <dl> <dt>
 
-[Referencia de Programador de tareas](task-scheduler-reference.md)
+[Programador de tareas referencia](task-scheduler-reference.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

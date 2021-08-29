@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_VALIDATEMEDIA (VFW. h)
-description: El \_ mensaje MCIWNDM VALIDATEMEDIA actualiza las ubicaciones inicial y final del contenido, la posición actual en el contenido y el TrackBar según el formato de hora actual.
+title: MCIWNDM_VALIDATEMEDIA mensaje (Vfw.h)
+description: El mensaje VALIDATEMEDIA de MCIWNDM actualiza las ubicaciones inicial y final del contenido, la posición actual en el contenido y la barra de seguimiento según el \_ formato de hora actual.
 ms.assetid: 98ac6227-fc90-4276-8e26-2bd005e35dc6
 keywords:
-- Mensaje de MCIWNDM_VALIDATEMEDIA de Windows multimedia
+- MCIWNDM_VALIDATEMEDIA mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43cb6e6a4a7c320d4eb6472c3c72da2843d0814c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2db79f5714a9f48a2fdd73ff6eedecd0a14172e352e0a40ffbdccdd3aaaf4c2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428535"
 ---
-# <a name="mciwndm_validatemedia-message"></a>MCIWNDM \_ VALIDATEMEDIA
+# <a name="mciwndm_validatemedia-message"></a>Mensaje VALIDATEMEDIA de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ VALIDATEMEDIA** actualiza las ubicaciones inicial y final del contenido, la posición actual en el contenido y el TrackBar según el formato de hora actual. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndValidateMedia**](/windows/desktop/api/Vfw/nf-vfw-mciwndvalidatemedia) .
+El **mensaje \_ VALIDATEMEDIA de MCIWNDM** actualiza las ubicaciones inicial y final del contenido, la posición actual en el contenido y la barra de seguimiento según el formato de hora actual. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndValidateMedia.**](/windows/desktop/api/Vfw/nf-vfw-mciwndvalidatemedia)
 
 
 ```C++
@@ -36,11 +36,11 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Normalmente, no es necesario usar esta macro; sin embargo, si la aplicación cambia el formato de hora de un dispositivo sin usar MCIWnd; las ubicaciones inicial y final del contenido, así como la barra de inicio, siguen usando el formato antiguo. Puede usar esta macro para actualizar estos valores.
+Normalmente, no es necesario usar esta macro; sin embargo, si la aplicación cambia el formato de hora de un dispositivo sin usar MCIWnd; las ubicaciones inicial y final del contenido, así como la barra de seguimiento, siguen usando el formato anterior. Puede usar esta macro para actualizar estos valores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ Normalmente, no es necesario usar esta macro; sin embargo, si la aplicación cam
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

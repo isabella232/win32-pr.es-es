@@ -1,5 +1,5 @@
 ---
-description: Especifica la configuración de conexión automática que se va a usar para un dispositivo de banda ancha móvil.
+description: Especifica la configuración de conexión automática que se usará para un dispositivo de banda ancha móvil.
 ms.assetid: 789016d5-47f1-4506-bcb9-1a4019d236fd
 title: Elemento ConnectionMode (MBNProfile)
 ms.topic: reference
@@ -11,26 +11,26 @@ api_name:
 - ConnectionMode
 api_type:
 - Schema
-ms.openlocfilehash: d9c92227e26bb8858aef28d2f030ac2f84bed06d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0f2290928fba4be65d39129017a171fbd3d1e66e6ebab715f616e4edec9b13e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607145"
 ---
 # <a name="connectionmode-mbnprofile-element"></a>Elemento ConnectionMode (MBNProfile)
 
-El elemento **ConnectionMode (MBNProfile)** especifica la configuración de conexión automática que se va a usar para un dispositivo de banda ancha móvil.
+El **elemento ConnectionMode (MBNProfile)** especifica la configuración de conexión automática que se usará para un dispositivo de banda ancha móvil.
 
-Este elemento puede tener uno de los valores siguientes.
+Este elemento puede tener uno de los siguientes valores.
 
 
 
-| Value       | Significado                                                                |
+| Valor       | Significado                                                                |
 |-------------|------------------------------------------------------------------------|
-| manualmente    | Nunca se conecta automáticamente a la red.                            |
-| automática      | Conéctese siempre automáticamente a la red.                           |
-| "auto-Home" | Conectarse automáticamente a la red excepto cuando se encuentre en una red móvil. |
+| "manual"    | Nunca se conecte automáticamente a la red.                            |
+| "auto"      | Conéctese siempre automáticamente a la red.                           |
+| "inicio automático" | Conéctese automáticamente a la red, excepto cuando se encuentra en una red móvil. |
 
 
 
@@ -60,15 +60,15 @@ Esto es un elemento requerido.
 </xs:element>
 ```
 
-El elemento **ConnectionMode** se define mediante el elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+El **elemento ConnectionMode** se define mediante el [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

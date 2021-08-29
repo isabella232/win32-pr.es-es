@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMSerialPortType (VPCCOMInterfaces. h)
+title: Enumeración VMSerialPortType (VPCCOMInterfaces.h)
 description: Especifica el tipo de puerto serie.
 ms.assetid: 1385292b-ee3c-41f0-805a-df126f33cabb
 keywords:
-- Enumeración de VMSerialPortType Virtual PC
+- VMSerialPortType (enumeración) Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca9b6171053e980f1f5dbdc52ef28deed177edba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0733d09ddeadde0de93407be5d46661b536c6c9cebf0a96cec310aa2684b1509
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124635"
 ---
 # <a name="vmserialporttype-enumeration"></a>Enumeración VMSerialPortType
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Especifica el tipo de puerto serie.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,31 +45,31 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmSerialPort_HostPort"></span><span id="vmserialport_hostport"></span><span id="VMSERIALPORT_HOSTPORT"></span>**vmSerialPort \_ denominaba hostport**
+<span id="vmSerialPort_HostPort"></span><span id="vmserialport_hostport"></span><span id="VMSERIALPORT_HOSTPORT"></span>**vmSerialPort \_ HostPort**
 </dt> <dd>
 
-Un puerto serie del host.
+Un puerto serie de host.
 
 </dd> <dt>
 
 <span id="vmSerialPort_TextFile"></span><span id="vmserialport_textfile"></span><span id="VMSERIALPORT_TEXTFILE"></span>**vmSerialPort \_ TextFile**
 </dt> <dd>
 
-Un archivo de texto de host.
+Un archivo de texto host.
 
 </dd> <dt>
 
 <span id="vmSerialPort_NamedPipe"></span><span id="vmserialport_namedpipe"></span><span id="VMSERIALPORT_NAMEDPIPE"></span>**vmSerialPort \_ NamedPipe**
 </dt> <dd>
 
-Una canalización con nombre.
+Canalización con nombre.
 
 </dd> <dt>
 
-<span id="vmSerialPort_Null"></span><span id="vmserialport_null"></span><span id="VMSERIALPORT_NULL"></span>**vmSerialPort \_ null**
+<span id="vmSerialPort_Null"></span><span id="vmserialport_null"></span><span id="VMSERIALPORT_NULL"></span>**vmSerialPort \_ Null**
 </dt> <dd>
 
-Un puerto serie **nulo** (descarta todos los bits enviados a él).
+Un puerto serie **NULL** (descarta todos los bits que se le envían).
 
 </dd> </dl>
 
@@ -79,11 +79,11 @@ Un puerto serie **nulo** (descarta todos los bits enviados a él).
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

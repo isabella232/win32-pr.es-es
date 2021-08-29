@@ -1,12 +1,12 @@
 ---
-title: Propiedad GatewayEncryptedOtpCookieSize de IMsRdpClientTransportSettings2
-description: Especifica o recupera el tamaño de la cookie de contraseña de un solo tiempo cifrada (OTP).
+title: Propiedad IMsRdpClientTransportSettings2 GatewayEncryptedOtpCookieSize
+description: Especifica o recupera el tamaño de la cookie cifrada de contraseña de un solo uso (OTP).
 ms.assetid: a4fdcd06-59ae-407f-9ac6-dfe4b52fb5d7
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayEncryptedOtpCookieSize
-- Propiedad GatewayEncryptedOtpCookieSize Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings2, propiedad GatewayEncryptedOtpCookieSize
+- Propiedad GatewayEncryptedOtpCookieSize Servicios de Escritorio remoto
+- Propiedad GatewayEncryptedOtpCookieSize Servicios de Escritorio remoto interfaz , IMsRdpClientTransportSettings2
+- Interfaz IMsRdpClientTransportSettings2 Servicios de Escritorio remoto , propiedad GatewayEncryptedOtpCookieSize
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e714b7c03e898b29b1ae02e3b19d65fde8dfcb91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 97346420f709707a239d7558fd871be1e685bb83301b06d37b1910e596515c2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125255"
 ---
-# <a name="imsrdpclienttransportsettings2gatewayencryptedotpcookiesize-property"></a>IMsRdpClientTransportSettings2:: GatewayEncryptedOtpCookieSize (propiedad)
+# <a name="imsrdpclienttransportsettings2gatewayencryptedotpcookiesize-property"></a>IMsRdpClientTransportSettings2::GatewayEncryptedOtpCookieSize, propiedad
 
-Especifica o recupera el tamaño de la cookie de contraseña de un solo tiempo cifrada (OTP).
+Especifica o recupera el tamaño de la cookie cifrada de contraseña de un solo uso (OTP).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,7 +49,7 @@ HRESULT get_GatewayEncryptedOtpCookieSize(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Especifica o recupera el tamaño de la cookie de contraseña de un solo tiempo cifrada (OTP).
+Especifica o recupera el tamaño de la cookie cifrada de contraseña de un solo uso (OTP).
 
 ## <a name="requirements"></a>Requisitos
 

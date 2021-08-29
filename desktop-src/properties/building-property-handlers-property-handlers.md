@@ -4,12 +4,12 @@ ms.assetid: 3b54dd65-b7db-4e6a-bc3d-1008fdabcfa9
 title: Inicialización de controladores de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4482af2a029a91049d421ee49eb0f439c5fd8d0e
-ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+ms.openlocfilehash: c54c7a1a5e28c5a66e28f8b2470c8f1643678af2a15025a925a5ed5e89336c6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113481910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119353535"
 ---
 # <a name="initializing-property-handlers"></a>Inicialización de controladores de propiedades
 
@@ -32,13 +32,13 @@ Este tema se organiza de la siguiente manera:
 
 ## <a name="property-handlers"></a>Controladores de propiedades
 
-Los controladores de propiedades son una parte fundamental del sistema de propiedades. El indexador los invoca en proceso para leer e indexar los valores de propiedad, y también los invoca el Explorador de Windows en proceso para leer y escribir valores de propiedad directamente en los archivos. Estos controladores deben escribirse y probarse cuidadosamente para evitar un rendimiento degradado o la pérdida de datos en los archivos afectados. Para obtener más información sobre las consideraciones específicas del indexador que afectan a la implementación del controlador de propiedades, vea [Developing Property Handlers for Windows Search](../search/-search-3x-wds-extidx-propertyhandlers.md).
+Los controladores de propiedades son una parte fundamental del sistema de propiedades. El indexador los invoca en proceso para leer e indexar los valores de propiedad, y también se invocan mediante el Explorador de Windows en proceso para leer y escribir valores de propiedad directamente en los archivos. Estos controladores deben escribirse y probarse cuidadosamente para evitar un rendimiento degradado o la pérdida de datos en los archivos afectados. Para obtener más información sobre las consideraciones específicas del indexador que afectan a la implementación del controlador de propiedades, vea [Developing Property Handlers for Windows Search](../search/-search-3x-wds-extidx-propertyhandlers.md).
 
 En este tema se describe un formato de archivo basado en XML de ejemplo que describe una receta con una extensión de nombre de archivo .recipe. La extensión de nombre de archivo .recipe se registra como su propio formato de archivo distinto en lugar de basarse en el formato de archivo .xml más genérico, cuyo controlador usa una secuencia secundaria para almacenar propiedades. Se recomienda registrar extensiones de nombre de archivo únicas para los tipos de archivo.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Los controladores de propiedades son objetos COM que crean la abstracción [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para un formato de archivo específico. Leen (analizan) y escriben este formato de archivo de una manera que se ajusta a su especificación. Algunos controladores de propiedades hacen su trabajo en función de las API que abstraen el acceso a un formato de archivo específico. Antes de desarrollar un controlador de propiedades para el formato de archivo, debe comprender cómo almacena las propiedades el formato de archivo y cómo esas propiedades (nombres y valores) se asignan a la abstracción del almacén de propiedades.
+Los controladores de propiedades son objetos COM que crean la abstracción [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) para un formato de archivo específico. Leen (analizan) y escriben este formato de archivo de forma que se ajuste a su especificación. Algunos controladores de propiedades hacen su trabajo en función de las API que abstraen el acceso a un formato de archivo específico. Antes de desarrollar un controlador de propiedades para el formato de archivo, debe comprender cómo almacena las propiedades el formato de archivo y cómo esas propiedades (nombres y valores) se asignan a la abstracción del almacén de propiedades.
 
 Al planear la implementación, recuerde que los controladores de propiedades son componentes de bajo nivel que se cargan en el contexto de procesos como el Explorador de Windows, el indexador de Windows Search y aplicaciones de terceros que usan el modelo de programación de elementos de Shell. Como resultado, los controladores de propiedades no se pueden implementar en código administrado y deben implementarse en C++. Si el controlador usa alguna API o servicio para realizar su trabajo, debe asegurarse de que esos servicios pueden funcionar correctamente en los entornos en los que se carga el controlador de propiedades.
 
@@ -142,7 +142,7 @@ El controlador de propiedades se inicializa solo una vez en su duración. Si se 
 
 Antes de ver la implementación de **\_ LoadProperties,** debe comprender la matriz **PropertyMap** que se usa en el ejemplo para asignar propiedades del documento XML a propiedades existentes en el sistema de propiedades a través de sus valores PKEY.
 
-No debe exponer todos los elementos y atributos del archivo XML como una propiedad. En su lugar, seleccione solo aquellos que cree que serán útiles para los usuarios finales en la organización de sus documentos (en este caso, recetas). Este es un concepto importante que se debe tener en cuenta al desarrollar los controladores de propiedades: la diferencia entre la información que es realmente útil para escenarios organizativos y la información que pertenece a los detalles del archivo y se puede ver abriendo el propio archivo. Las propiedades no están diseñadas para ser una duplicación completa de un archivo XML.
+No debe exponer todos los elementos y atributos del archivo XML como una propiedad. En su lugar, seleccione solo aquellos que cree que serán útiles para los usuarios finales en la organización de sus documentos (en este caso, recetas). Este es un concepto importante que se debe tener en cuenta al desarrollar los controladores de propiedades: la diferencia entre la información que es realmente útil para escenarios organizativos y la información que pertenece a los detalles del archivo y se puede ver abriendo el propio archivo. Las propiedades no pretenden ser una duplicación completa de un archivo XML.
 
 
 ```
@@ -204,7 +204,7 @@ HRESULT CRecipePropertyStore::_LoadProperties()
 
 
 
-El **\_ método LoadProperties** llama a la función auxiliar de Shell [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) para crear un almacén de propiedades en memoria (caché) para las propiedades administradas. Mediante el uso de una memoria caché, se realiza un seguimiento de los cambios por usted. Esto le libera del seguimiento de si se ha cambiado un valor de propiedad en la memoria caché, pero aún no se ha guardado en el almacenamiento persistente. También le libera de conservar valores de propiedad que no han cambiado.
+El **\_ método LoadProperties** llama a la función auxiliar de Shell [**PSCreateMemoryPropertyStore**](/windows/win32/api/propsys/nf-propsys-pscreatememorypropertystore) para crear un almacén de propiedades en memoria (caché) para las propiedades administradas. Mediante el uso de una memoria caché, se realiza un seguimiento de los cambios. Esto le libera del seguimiento de si se ha cambiado un valor de propiedad en la memoria caché, pero aún no se ha guardado en el almacenamiento persistente. También le libera de conservar valores de propiedad que no han cambiado.
 
 El **\_ método LoadProperties** también llama **\_ a LoadProperty** cuya implementación se ilustra en el código siguiente) una vez para cada propiedad asignada. **\_ LoadProperty** obtiene el valor de la propiedad tal como se especifica en el elemento **PropertyMap** del flujo XML y lo asigna a la memoria caché en memoria mediante una llamada a [**IPropertyStoreCache::SetValueAndState**](/windows/win32/api/propsys/nf-propsys-ipropertystorecache-setvalueandstate). La marca PSC NORMAL de la llamada a \_ **IPropertyStoreCache::SetValueAndState** indica que el valor de propiedad no se ha modificado desde el momento en que entró en la memoria caché.
 
@@ -334,7 +334,7 @@ Si no existe un valor en el archivo, no devuelva un error. En su lugar, establez
 
 ## <a name="supporting-open-metadata"></a>Admitir metadatos abiertos
 
-En este ejemplo se usa un formato de archivo basado en XML. Su esquema se puede extender para admitir propiedades que no se han pensado durante developmet, por ejemplo. Este sistema se conoce como metadatos abiertos. En este ejemplo se amplía el sistema de propiedades mediante la creación de un nodo bajo el elemento **Recipe** denominado **ExtendedProperties**, como se muestra en el ejemplo de código siguiente.
+En este ejemplo se usa un formato de archivo basado en XML. Su esquema se puede extender para admitir propiedades que no se pensaron durante el desarrollo, por ejemplo. Este sistema se conoce como metadatos abiertos. En este ejemplo se amplía el sistema de propiedades mediante la creación de un nodo bajo el elemento **Recipe** denominado **ExtendedProperties**, como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -532,19 +532,19 @@ HRESULT CRecipePropertyStore::_LoadSearchContent()
 
 ## <a name="providing-values-for-properties"></a>Proporcionar valores para propiedades
 
-Cuando se usa para leer valores, los controladores de propiedades normalmente se invocan por una de las razones siguientes:
+Cuando se usa para leer valores, normalmente se invocan controladores de propiedades por una de las razones siguientes:
 
 -   Para enumerar todos los valores de propiedad.
 -   Para obtener el valor de una propiedad específica.
 
-En el caso de la enumeración, se pide a un controlador de propiedades que enumere sus propiedades durante la indexación o cuando el cuadro de diálogo de propiedades solicita que las propiedades se muestren en **el grupo** Otros. La indexación continúa constantemente como una operación en segundo plano. Cada vez que cambia un archivo, se notifica al indexador y se vuelve a indexar el archivo solicitando al controlador de propiedades que enumere sus propiedades. Por lo tanto, es fundamental que los controladores de propiedades se implementen de forma eficaz y devuelvan valores de propiedad lo antes posible. Enumera todas las propiedades para las que tiene valores, igual que lo haría para cualquier colección, pero no enumera las propiedades que implican cálculos con un uso intensivo de memoria o solicitudes de red que podrían ralentizar su recuperación.
+En el caso de la enumeración, se pide a un controlador de propiedades que enumere sus propiedades durante la indexación o cuando el cuadro de diálogo de propiedades solicita que las propiedades se muestren en **el grupo** Otros. La indexación continúa constantemente como una operación en segundo plano. Cada vez que cambia un archivo, se notifica al indexador y se vuelve a indexar el archivo solicitando al controlador de propiedades que enumere sus propiedades. Por lo tanto, es fundamental que los controladores de propiedades se implementen de forma eficaz y devuelvan valores de propiedad lo más rápido posible. Enumera todas las propiedades para las que tiene valores, igual que lo haría para cualquier colección, pero no enumera las propiedades que implican cálculos con un uso intensivo de memoria o solicitudes de red que podrían ralentizar su recuperación.
 
 Al escribir un controlador de propiedades, normalmente debe tener en cuenta los dos conjuntos de propiedades siguientes.
 
 -   Propiedades principales: propiedades que el tipo de archivo admite de forma nativa. Por ejemplo, un controlador de propiedades de foto para metadatos de archivo de imagen intercambiable (EXIF) admite de forma nativa `System.Photo.FNumber` .
 -   Propiedades extendidas: propiedades que admite el tipo de archivo como parte de los metadatos abiertos.
 
-Dado que el ejemplo usa la memoria caché en memoria, la implementación de métodos [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) es simplemente una cuestión de delegar a esa caché, como se muestra en el ejemplo de código siguiente.
+Dado que el ejemplo usa la memoria caché en memoria, la implementación de métodos [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) es simplemente una cuestión de delegar en esa memoria caché, como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -564,12 +564,12 @@ Si decide no delegar en la memoria caché en memoria, debe implementar los méto
 
 -   [**IPropertyStore::GetCount:**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85))si no hay ninguna propiedad, este método devuelve **S \_ OK**.
 -   [**IPropertyStore::GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)): si *iProp* es mayor o igual que *cProps*, este método devuelve E INVALIDARG y la estructura a la que apunta el parámetro pkey se rellena con \_ ceros. 
--   [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) [**e IPropertyStore::GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) reflejan el estado actual del controlador de propiedades. Si se agrega o quita [**un PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) del archivo a través de [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), estos dos métodos deben reflejar que cambian la próxima vez que se llamen.
+-   [**IPropertyStore::GetCount**](/previous-versions/windows/desktop/legacy/bb761472(v=vs.85)) [**e IPropertyStore::GetAt**](/previous-versions/windows/desktop/legacy/bb761471(v=vs.85)) reflejan el estado actual del controlador de propiedades. Si se agrega o quita [**un PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) del archivo a través de [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), estos dos métodos deben reflejar ese cambio la próxima vez que se llamen.
 -   [**IPropertyStore::GetValue:**](/previous-versions/windows/desktop/legacy/bb761473(v=vs.85))si se solicita a este método un valor que no existe, devuelve **S \_ OK** con el valor notificado como VT \_ EMPTY.
 
 ## <a name="writing-back-values"></a>Escritura de valores devueltos
 
-Cuando el controlador de propiedades escribe el valor de una propiedad mediante [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), no escribe el valor en el archivo hasta que se llama a [**IPropertyStore::Commit.**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) La memoria caché en memoria puede ser útil para implementar este esquema. En el código de ejemplo, la implementación **de IPropertyStore::SetValue** simplemente establece el nuevo valor en la caché en memoria y establece el estado de esa propiedad en PSC \_ DIRTY.
+Cuando el controlador de propiedades escribe el valor de una propiedad mediante [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)), no escribe el valor en el archivo hasta que se llama a [**IPropertyStore::Commit.**](/previous-versions/windows/desktop/legacy/bb761470(v=vs.85)) La memoria caché en memoria puede ser útil para implementar este esquema. En el código de ejemplo, la implementación **de IPropertyStore::SetValue** simplemente establece el nuevo valor en la memoria caché en memoria y establece el estado de esa propiedad en PSC \_ DIRTY.
 
 
 ```
@@ -598,11 +598,11 @@ En cualquier [**implementación de IPropertyStore,**](/windows/win32/api/propsys
 
 -   Si la propiedad ya existe, se establece el valor de la propiedad .
 -   Si la propiedad no existe, se agrega la nueva propiedad y su valor establecido.
--   Si el valor de propiedad no se puede conservar con la misma precisión que se proporciona (por ejemplo, truncamiento debido a limitaciones de tamaño en el formato de archivo), el valor se establece en la medida de lo posible y se devuelve INPLACE \_ S \_ TRUNCATED.
+-   Si el valor de propiedad no se puede conservar con la misma precisión que se ha especificado (por ejemplo, truncamiento debido a limitaciones de tamaño en el formato de archivo), el valor se establece en la medida de lo posible y se devuelve INPLACE \_ S \_ TRUNCATED.
 -   Si el controlador de propiedades no admite la propiedad, `HRESULT_FROM_WIN32(ERROR_NOT_SUPPORTED)` se devuelve .
 -   Si hay otra razón por la que no se puede establecer el valor de propiedad, como el archivo bloqueado o la falta de derechos para editar mediante listas de control de acceso (ACL), se devuelve STG \_ E \_ ACCESSDENIED.
 
-Una ventaja importante del uso de secuencias, como ejemplo, es la confiabilidad. Los controladores de propiedades siempre deben tener en cuenta que no pueden dejar un archivo en un estado incoherente en caso de error catastrófico. Obviamente, se debe evitar dañar los archivos de un usuario y la mejor manera de hacerlo es con un mecanismo de "copia en escritura". Si el controlador de propiedades usa una secuencia para acceder a un archivo, este comportamiento se obtiene automáticamente. el sistema escribe los cambios en la secuencia, reemplazando el archivo por la nueva copia solo durante la operación de confirmación.
+Una ventaja importante del uso de secuencias, como ejemplo, es la confiabilidad. Los controladores de propiedades siempre deben tener en cuenta que no pueden dejar un archivo en un estado incoherente en caso de error catastrófico. Obviamente, se debe evitar dañar los archivos de un usuario y la mejor manera de hacerlo es mediante un mecanismo de "copia en escritura". Si el controlador de propiedades usa una secuencia para acceder a un archivo, este comportamiento se obtiene automáticamente. el sistema escribe los cambios en la secuencia, reemplazando el archivo por la nueva copia solo durante la operación de confirmación.
 
 Para invalidar este comportamiento y controlar manualmente el proceso de guardado de archivos, puede rechazar el comportamiento de guardado seguro estableciendo el valor ManualSafeSave en la entrada del Registro del controlador, como se muestra aquí.
 
@@ -617,7 +617,7 @@ Cuando un controlador especifica el valor ManualSafeSave, la secuencia con la qu
 
 ManualSafeSave también es la situación predeterminada si no inicializa el controlador con una secuencia. Sin una secuencia original para recibir el contenido de la secuencia temporal, debe usar [**ReplaceFile**](/windows/win32/api/winbase/nf-winbase-replacefilea) para realizar un reemplazo atómico del archivo de origen.
 
-Los formatos de archivo grandes que se usarán de forma que produzcan archivos mayores de 1 MB deben implementar la compatibilidad con la escritura de propiedades en su lugar. de lo contrario, el comportamiento de rendimiento no cumple las expectativas de los clientes del sistema de propiedades. En este escenario, el tiempo necesario para escribir propiedades no debe verse afectado por el tamaño del archivo.
+Los formatos de archivo de gran tamaño que se usarán de forma que produzcan archivos mayores de 1 MB deben implementar la compatibilidad con la escritura de propiedades locales. de lo contrario, el comportamiento de rendimiento no cumple las expectativas de los clientes del sistema de propiedades. En este escenario, el tiempo necesario para escribir propiedades no debe verse afectado por el tamaño del archivo.
 
 Para archivos muy grandes, por ejemplo, un archivo de vídeo de 1 GB o más, se requiere una solución diferente. Si no hay suficiente espacio en el archivo para realizar la escritura local, el controlador puede producir un error en la actualización de la propiedad si se ha agotado la cantidad de espacio reservado para la escritura de propiedades en el lugar. Este error se produce para evitar un rendimiento deficiente derivado de 2 GB de E/S (1 para lectura y 1 para escritura). Debido a este posible error, estos formatos de archivo deben reservar espacio suficiente para la escritura de propiedades en el lugar.
 
@@ -791,7 +791,7 @@ Si una propiedad no está en el mapa, es una nueva propiedad establecida por Win
 
 ## <a name="implementing-ipropertystorecapabilities"></a>Implementación de IPropertyStoreCapabilities
 
-[**IPropertyStoreCapabilities informa a**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) la interfaz de usuario de Shell si se puede editar una propiedad determinada en la interfaz de usuario de Shell. Es importante tener en cuenta que esto solo se relaciona con la capacidad de editar la propiedad en la interfaz de usuario, no si puede llamar correctamente a [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) en la propiedad . Una propiedad que provoca un valor devuelto de S FALSE de \_ [**IPropertyStoreCapabilities::IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) puede seguir siendo capaz de establecerse a través de una aplicación.
+[**IPropertyStoreCapabilities informa**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) a la interfaz de usuario de Shell si se puede editar una propiedad determinada en la interfaz de usuario de Shell. Es importante tener en cuenta que esto solo se relaciona con la capacidad de editar la propiedad en la interfaz de usuario, no si se puede llamar correctamente a [**IPropertyStore::SetValue**](/previous-versions/windows/desktop/legacy/bb761475(v=vs.85)) en la propiedad . Una propiedad que provoca un valor devuelto de S FALSE de \_ [**IPropertyStoreCapabilities::IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) puede seguir siendo capaz de establecerse a través de una aplicación.
 
 
 ```
@@ -803,7 +803,7 @@ interface IPropertyStoreCapabilities : IUnknown
 
 
 
-[**IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) devuelve **S \_ OK** para indicar que los usuarios finales deben tener permiso para editar la propiedad directamente; S \_ FALSE indica que no deben hacerlo. S \_ FALSE puede significar que las aplicaciones son responsables de escribir la propiedad, no de los usuarios. El Shell deshabilita los controles de edición según corresponda en función de los resultados de las llamadas a este método. Se supone que un controlador que no implementa [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) admite metadatos abiertos a través de la compatibilidad con la escritura de cualquier propiedad.
+[**IsPropertyWritable**](/windows/win32/api/propsys/nf-propsys-ipropertystorecapabilities-ispropertywritable) devuelve **S \_ OK** para indicar que los usuarios finales deben tener permiso para editar la propiedad directamente; S \_ FALSE indica que no deben hacerlo. S \_ FALSE puede significar que las aplicaciones son responsables de escribir la propiedad, no de los usuarios. El Shell deshabilita los controles de edición según corresponda en función de los resultados de las llamadas a este método. Se supone que un controlador que no implementa [**IPropertyStoreCapabilities**](/windows/win32/api/propsys/nn-propsys-ipropertystorecapabilities) admite metadatos abiertos mediante la compatibilidad con la escritura de cualquier propiedad.
 
 Si está creando un controlador que controla solo las propiedades de solo lectura, debe implementar el método **Initialize** ([**IInitializeWithStream**](/windows/win32/api/propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem o**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) [**IInitializeWithFile**](/windows/win32/api/propsys/nn-propsys-iinitializewithfile)) para que devuelva STG E ACCESSDENIED cuando se llame con la marca \_ \_ \_ STGM READWRITE.
 

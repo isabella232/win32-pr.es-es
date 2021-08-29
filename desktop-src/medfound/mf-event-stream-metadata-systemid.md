@@ -1,23 +1,23 @@
 ---
-description: Especifica el identificador del sistema para el que se van a usar los datos de clave.
+description: Especifica el identificador del sistema para el que se pretenden los datos de clave.
 ms.assetid: 02B6CA71-103C-4639-8D07-7EAF6A814679
-title: MF_EVENT_STREAM_METADATA_SYSTEMID atributo (mfapi. h)
+title: MF_EVENT_STREAM_METADATA_SYSTEMID atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbefc967ff0a82fd8387e0e6e8baa06f3a77ea27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8b18616aa534042e5d487b47c3931aeddf9b87bdcc2077cd65e40eb8c5d83f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119605895"
 ---
-# <a name="mf_event_stream_metadata_systemid-attribute"></a>\_ \_ \_ Atributo SYSTEMID de metadatos del flujo de eventos MF \_
+# <a name="mf_event_stream_metadata_systemid-attribute"></a>Atributo \_ SYSTEMID DE METADATOS \_ DE FLUJO DE EVENTOS \_ \_ MF
 
-Especifica el identificador del sistema para el que se van a usar los datos de clave.
+Especifica el identificador del sistema para el que se pretenden los datos de clave.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**BLOB**
+**Blob**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,9 +25,9 @@ Especifica el identificador del sistema para el que se van a usar los datos de c
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                     |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                     |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Especifica el identificador del sistema para el que se van a usar los datos de c
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

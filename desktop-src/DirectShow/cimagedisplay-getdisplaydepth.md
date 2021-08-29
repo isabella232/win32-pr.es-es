@@ -1,7 +1,7 @@
 ---
 description: El método GetDisplayDepth recupera la profundidad de bits del modo de presentación actual.
 ms.assetid: 6d4ab847-dead-4d8c-8ce0-a60411c5ae73
-title: Método CImageDisplay. GetDisplayDepth (Winutil. h)
+title: Método CImageDisplay.GetDisplayDepth (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 645389432412166b9131909274e220ba7775f325
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 71f6bd0436453c3d4d2c8ca27ac9b809857bf1c12a2f9fbdd40ccfb0d9f521c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428975"
 ---
-# <a name="cimagedisplaygetdisplaydepth-method"></a>CImageDisplay. GetDisplayDepth, método
+# <a name="cimagedisplaygetdisplaydepth-method"></a>Método CImageDisplay.GetDisplayDepth
 
 El `GetDisplayDepth` método recupera la profundidad de bits del modo de presentación actual.
 
@@ -50,8 +50,8 @@ Devuelve el número de bits por píxel.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el número de bits por píxel.
 
 <dl> <dt>
 
-[**Clase CImageDisplay**](cimagedisplay.md)
+[**CImageDisplay (clase)**](cimagedisplay.md)
 </dt> </dl>
 
  

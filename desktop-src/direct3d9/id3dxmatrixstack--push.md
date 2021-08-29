@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: aeaf40d3164d6bd9d892d30f352fd24467b24ddb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1211469b3b7cf90e9ddae1fd8edb51bb38d35b427f6cdf62684aa84142a77009
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119563945"
 ---
 # <a name="id3dxmatrixstackpush-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::P ush (D3dx9math.h)
 
@@ -59,7 +59,7 @@ Este método incrementa el recuento de elementos en la pila en 1, duplicando la 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

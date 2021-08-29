@@ -1,12 +1,12 @@
 ---
-title: Propiedad de configuración IRemoteDesktopClient
-description: Recupera el objeto de configuración para el cliente del contenedor de la aplicación Protocolo de escritorio remoto (RDP).
+title: Propiedad Configuración IRemoteDesktopClient
+description: Recupera el objeto de configuración para el cliente Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 ms.assetid: 59999489-9ad0-4b85-9643-3b8355b817c2
 ms.tgt_platform: multiple
 keywords:
-- Propiedad de configuración Servicios de Escritorio remoto
-- Propiedad settings Servicios de Escritorio remoto, interfaz IRemoteDesktopClient
-- Servicios de Escritorio remoto de la interfaz IRemoteDesktopClient, propiedad settings
+- Configuración propiedad Servicios de Escritorio remoto
+- Configuración propiedad Servicios de Escritorio remoto , interfaz IRemoteDesktopClient
+- Interfaz IRemoteDesktopClient Servicios de Escritorio remoto , Configuración propiedad
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45e84324eaa12610d7ab898cbcb181e7712bc021
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e6f3369948cb99e67a345348c79073109ff5a9f929a2ff09b1acb510930bb2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125025"
 ---
-# <a name="iremotedesktopclientsettings-property"></a>IRemoteDesktopClient:: Settings (propiedad)
+# <a name="iremotedesktopclientsettings-property"></a>IRemoteDesktopClient::Configuración propiedad
 
-Recupera el objeto de configuración para el cliente del contenedor de la aplicación Protocolo de escritorio remoto (RDP).
+Recupera el objeto de configuración para el cliente Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 
 Esta propiedad es de solo lectura.
 
@@ -44,7 +44,7 @@ HRESULT get_Settings(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El objeto de configuración para el cliente RDP.
+Objeto de configuración para el cliente RDP.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ El objeto de configuración para el cliente RDP.
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>  |
-| IID<br/>                      | IID \_ IRemoteDesktopClient se define como 57D25668-625A-4905-BE4E-304CAA13F89C<br/> |
+| IID<br/>                      | IID IRemoteDesktopClient se define como \_ 57D25668-625A-4905-BE4E-304CAA13F89C<br/> |
 
 
 

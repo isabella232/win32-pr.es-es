@@ -1,9 +1,9 @@
 ---
-title: Mensaje de RB_SETBKCOLOR (commctrl. h)
-description: Establece el color de fondo predeterminado del control rebar.
+title: RB_SETBKCOLOR mensaje (Commctrl.h)
+description: Establece el color de fondo predeterminado de un control rebar.
 ms.assetid: 450a1e16-24f6-4f86-8e46-14009da05efc
 keywords:
-- RB_SETBKCOLOR controles de mensajes de Windows
+- RB_SETBKCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9365de2d790b1f28b1330c038b69d30b208143
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a2fb502558b53603b59cf7f140248a72f1bf3e22366a85a6e8f740066775fb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696605"
 ---
-# <a name="rb_setbkcolor-message"></a>Mensaje de SETBKCOLOR de RB \_
+# <a name="rb_setbkcolor-message"></a>Mensaje \_ SETBKCOLOR de RB
 
-Establece el color de fondo predeterminado del control rebar.
+Establece el color de fondo predeterminado de un control rebar.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,17 +35,17 @@ Establece el color de fondo predeterminado del control rebar.
 *lParam* 
 </dt> <dd>
 
-Valor de [**COLORREF**](/windows/desktop/gdi/colorref) que representa el nuevo color de fondo predeterminado.
+[**Valor COLORREF**](/windows/desktop/gdi/colorref) que representa el nuevo color de fondo predeterminado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de [**COLORREF**](/windows/desktop/gdi/colorref) que representa el color de fondo predeterminado anterior.
+Devuelve un [**valor COLORREF**](/windows/desktop/gdi/colorref) que representa el color de fondo predeterminado anterior.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El color de fondo predeterminado del control rebar se usa para dibujar el fondo en un control rebar y se han enviado todas las bandas que se agregan después de este mensaje. El color de fondo predeterminado para una banda determinada se puede invalidar Cuando se agrega o se modifica una banda mediante la configuración de la \_ marca de colores RBBIM en **fMask** y el establecimiento de **ClrBack** en la estructura [**REBARBANDINFO**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa) .
+El color de fondo predeterminado del control rebar se usa para dibujar el fondo en un control rebar y todas las bandas que se agregan después de enviar este mensaje. El color de fondo predeterminado de una banda determinada se puede invalidar cuando se agrega o modifica una banda estableciendo la marca COLORES DE RBBIM en fMask y estableciendo clrBack en la \_ [**estructura REBARBANDINFO.**](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfoa)  
 
 Cuando los estilos visuales están habilitados, este mensaje no tiene ningún efecto.
 
@@ -53,11 +53,11 @@ Cuando los estilos visuales están habilitados, este mensaje no tiene ningún ef
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Cuando los estilos visuales están habilitados, este mensaje no tiene ningún ef
 
 <dl> <dt>
 
-[**\_GETBKCOLOR RB**](rb-getbkcolor.md)
+[**RB \_ GETBKCOLOR**](rb-getbkcolor.md)
 </dt> </dl>
 
  

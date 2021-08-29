@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase SystemParameters'
+description: 'Más información sobre: Clase SystemParameters'
 title: SystemParameters (clase)
 TOCTitle: SystemParameters class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SystemParameters
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b3551baf0bb415a58aed9a37459165af31c481bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 390e2ae75c138e42d69605024b7f81c105569da51c10ade9cd25609feb09e4db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107235"
 ---
 # <a name="systemparameters-class"></a>SystemParameters (clase)
 
-Constantes de la API de ESENT. Estos no tienen que buscarse a través de los parámetros del sistema. Esta clase proporciona propiedades estáticas para establecer y obtener los parámetros globales del sistema ESENT. Esta clase proporciona propiedades estáticas para establecer y obtener los parámetros globales del sistema ESENT.
+Constantes para la API de ESENT. Estos no tienen que buscarse a través de parámetros del sistema. Esta clase proporciona propiedades estáticas para establecer y obtener parámetros globales del sistema ESENT. Esta clase proporciona propiedades estáticas para establecer y obtener parámetros globales del sistema ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.SystemParameters  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,10 +60,10 @@ public static class SystemParameters
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

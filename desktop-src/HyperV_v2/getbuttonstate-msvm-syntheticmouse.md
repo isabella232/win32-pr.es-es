@@ -1,5 +1,5 @@
 ---
-description: 'Método GetButtonState de la Msvm_SyntheticMouse : recupera el estado actual del botón de dispositivo especificado.'
+description: 'Método GetButtonState de Msvm_SyntheticMouse clase : recupera el estado actual del botón de dispositivo especificado.'
 ms.assetid: 66363AF1-E360-478D-8E62-513DE66EF130
 title: Método GetButtonState de la Msvm_SyntheticMouse clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 26839292cf2fb3099e740629b28c7de0fbe3f60f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7cc6e010f580318464b0f89cdace06050b201f53e84ad6aaea0684105a2ac0f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682465"
 ---
 # <a name="getbuttonstate-method-of-the-msvm_syntheticmouse-class"></a>Método GetButtonState de la clase \_ Msvm SyntheticMouse
 
@@ -54,7 +54,7 @@ Tipo: **uint32**
 
 Tipo: **booleano**
 
-Estado actual hacia abajo del botón. Un **valor True** significa que el botón está apagado.
+Estado de apagado actual del botón. Un **valor True** significa que el botón está apagado.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Estado actual hacia abajo del botón. Un **valor True** significa que el botón 
 
 Tipo: **uint32**
 
-Un valor devuelto de cero indica que se ha correcto. Un valor distinto de cero indica un error de consulta.
+Un valor devuelto de cero indica que el resultado es correcto. Un valor distinto de cero indica un error de consulta.
 
 <dl> <dt>
 
@@ -115,15 +115,15 @@ El acceso a [**la clase \_ Msvm SyntheticMouse**](msvm-syntheticmouse.md) podrí
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 8 solo \[ aplicaciones de escritorio\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
