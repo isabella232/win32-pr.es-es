@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes de marcador de bits PHONESTATE describen varios elementos de estado para un dispositivo telefónico.
+description: Las constantes de marca de bits PHONESTATE \_ describen varios elementos de estado para un dispositivo de teléfono.
 ms.assetid: 5db53dd4-606a-40b9-9159-b67a0ea1e400
-title: Constantes de PHONESTATE_ (TAPI. h)
+title: PHONESTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6346251f6947aebb2a5941389843e2abcec77c4a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 675a68e252e32cba718f9e506e7d45c95210348c1b9951877d79a30dfae8a462
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773885"
 ---
-# <a name="phonestate_-constants"></a>Constantes de PHONESTATE \_
+# <a name="phonestate_-constants"></a>Constantes \_ PHONESTATE
 
-Las constantes de marcador de bits **PHONESTATE \_** describen varios elementos de estado para un dispositivo telefónico.
+Las **constantes \_ de marca** de bits PHONESTATE describen varios elementos de estado para un dispositivo de teléfono.
 
 <dl> <dt>
 
@@ -22,17 +22,17 @@ Las constantes de marcador de bits **PHONESTATE \_** describen varios elementos 
 
 
 
-Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**PHONECAPS**](/windows/desktop/api/Tapi/ns-tapi-phonecaps) han cambiado. La aplicación debe usar [**phoneGetDevCaps**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) para leer la estructura actualizada. Si un proveedor de servicios envía un mensaje de [**\_ Estado de teléfono**](phone-state.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1,4 o posterior de TAPI; las aplicaciones que negocian una versión anterior de API recibirán mensajes de estado de teléfono que \_ especifican PHONESTATE \_ reinit, lo que les obliga a apagar y reinicializar la conexión a TAPI para obtener la información actualizada
+Indica que, debido a los cambios de configuración realizados por el usuario u otras circunstancias, uno o varios de los miembros de la estructura [**PHONECAPS**](/windows/desktop/api/Tapi/ns-tapi-phonecaps) han cambiado. La aplicación debe usar [**phoneGetDevCaps para**](/windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps) leer la estructura actualizada. Si un proveedor de servicios envía un mensaje [**PHONE \_ STATE**](phone-state.md) que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado TAPI versión 1.4 o posterior; las aplicaciones que negocian una versión de API anterior recibirán mensajes PHONE STATE que especifican \_ PHONESTATE REINIT, lo que les obliga a apagar y reinicializar su conexión a TAPI para obtener la información \_ actualizada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_CONNECTED"></span><span id="phonestate_connected"></span>**PHONESTATE \_ conectado**
+<span id="PHONESTATE_CONNECTED"></span><span id="phonestate_connected"></span>**PHONESTATE \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 
 
-Se acaba de realizar la conexión entre el dispositivo telefónico y TAPI. Esto sucede cuando se invoca primero TAPI o cuando el cable que conecta el teléfono al equipo está conectado con TAPI activo.
+La conexión entre el dispositivo de teléfono y TAPI se acaba de realizar. Esto sucede cuando se invoca TAPI por primera vez o cuando la conexión del teléfono al equipo está conectada con TAPI activo.
 
 
 </dt> </dl> </dd> <dt>
@@ -47,17 +47,17 @@ La información específica del dispositivo del teléfono ha cambiado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_DISCONNECTED"></span><span id="phonestate_disconnected"></span>**PHONESTATE \_ DESconectado**
+<span id="PHONESTATE_DISCONNECTED"></span><span id="phonestate_disconnected"></span>**PHONESTATE \_ DESCONECTADO**
 </dt> <dd> <dl> <dt>
 
 
 
-La conexión entre el dispositivo telefónico y TAPI se acaba de interrumpir. Esto sucede cuando el cable que conecta el teléfono al equipo está desconectado mientras TAPI está activo.
+La conexión entre el dispositivo de teléfono y TAPI se ha roto. Esto sucede cuando el cable que conecta el teléfono establecido al equipo se desconecta mientras TAPI está activo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_DISPLAY"></span><span id="phonestate_display"></span>**PHONESTATE \_ Mostrar**
+<span id="PHONESTATE_DISPLAY"></span><span id="phonestate_display"></span>**PHONESTATE \_ DISPLAY**
 </dt> <dd> <dl> <dt>
 
 
@@ -72,7 +72,7 @@ La presentación del teléfono ha cambiado.
 
 
 
-La configuración de ganancia de micrófono del auricular ha cambiado.
+La configuración de la ganancia del micrófono del conjunto de manos ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ La configuración de ganancia de micrófono del auricular ha cambiado.
 
 
 
-El estado de conmutador de auricular ha cambiado.
+El estado del conmutador de enlace del terminal ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -92,7 +92,7 @@ El estado de conmutador de auricular ha cambiado.
 
 
 
-La configuración del volumen de altavoz del auricular ha cambiado.
+La configuración del volumen del altavoz del conjunto de manos ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -102,7 +102,7 @@ La configuración del volumen de altavoz del auricular ha cambiado.
 
 
 
-El estado de conmutador del casco ha cambiado.
+El estado del conmutador de enlace del casco ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -112,7 +112,7 @@ El estado de conmutador del casco ha cambiado.
 
 
 
-La configuración de ganancia de micrófono del casco ha cambiado.
+La configuración de la ganancia del micrófono del casco ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -122,77 +122,77 @@ La configuración de ganancia de micrófono del casco ha cambiado.
 
 
 
-La configuración del volumen de altavoz del casco ha cambiado.
+La configuración del volumen del altavoz del casco ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_LAMP"></span><span id="phonestate_lamp"></span>**\_lámpara PHONESTATE**
+<span id="PHONESTATE_LAMP"></span><span id="phonestate_lamp"></span>**PHONESTATE \_ LAMP**
 </dt> <dd> <dl> <dt>
 
 
 
-Ha cambiado una lámpara del teléfono.
+Ha cambiado una bombilla del teléfono.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_MONITORS"></span><span id="phonestate_monitors"></span>**\_monitores PHONESTATE**
+<span id="PHONESTATE_MONITORS"></span><span id="phonestate_monitors"></span>**MONITORES PHONESTATE \_**
 </dt> <dd> <dl> <dt>
 
 
 
-El número de monitores para el dispositivo telefónico.
+Número de monitores para el dispositivo de teléfono.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_OTHER"></span><span id="phonestate_other"></span>**PHONESTATE \_ otro**
+<span id="PHONESTATE_OTHER"></span><span id="phonestate_other"></span>**PHONESTATE \_ OTHER**
 </dt> <dd> <dl> <dt>
 
 
 
-Los elementos de estado de teléfono distintos de los que se enumeran a continuación han cambiado. La aplicación debe comprobar el estado del teléfono actual para determinar qué elementos han cambiado.
+Teléfono los elementos de estado distintos de los enumerados a continuación han cambiado. La aplicación debe comprobar el estado actual del teléfono para determinar qué elementos han cambiado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_OWNER"></span><span id="phonestate_owner"></span>**propietario de PHONESTATE \_**
+<span id="PHONESTATE_OWNER"></span><span id="phonestate_owner"></span>**PHONESTATE \_ OWNER**
 </dt> <dd> <dl> <dt>
 
 
 
-El número de propietarios del dispositivo telefónico.
+Número de propietarios del dispositivo de teléfono.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_REINIT"></span><span id="phonestate_reinit"></span>**reinicialización de PHONESTATE \_**
+<span id="PHONESTATE_REINIT"></span><span id="phonestate_reinit"></span>**REINICIALIZACIÓN DE PHONESTATE \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Los elementos han cambiado en la configuración de los dispositivos telefónicos. Para tener en cuenta estos cambios (como en el aspecto de los nuevos dispositivos telefónicos), la aplicación debe reinicializar el uso de TAPI.
+Los elementos han cambiado en la configuración de los dispositivos de teléfono. Para tener en cuenta estos cambios (en cuanto a la apariencia de los nuevos dispositivos de teléfono), la aplicación debe reinicializar su uso de TAPI.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_REMOVED"></span><span id="phonestate_removed"></span>**PHONESTATE \_ quitado**
+<span id="PHONESTATE_REMOVED"></span><span id="phonestate_removed"></span>**PHONESTATE \_ QUITADO**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que el proveedor de servicios está quitando el dispositivo del sistema (lo que es más probable a través de la acción del usuario, a través de un panel de control o una utilidad similar). Un mensaje de [**\_ Estado de teléfono**](phone-state.md) con este valor normalmente irá seguido inmediatamente de un mensaje de [**\_ cierre de teléfono**](phone-close.md) en el dispositivo. Los intentos posteriores de obtener acceso al dispositivo antes de que se reinicialice TAPI darán lugar a que se \_ devuelva PHONEERR Device a la aplicación. Si un proveedor de servicios envía un \_ mensaje de estado de teléfono que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1,4 o posterior de TAPI; las aplicaciones que negocian una versión anterior de la API no recibirán ninguna notificación.
+Indica que el proveedor de servicios quita el dispositivo del sistema (lo más probable es que lo haga a través de una acción del usuario, a través de un panel de control o una utilidad similar). Normalmente, [**\_ un mensaje PHONE STATE**](phone-state.md) con este valor estará inmediatamente seguido de un mensaje PHONE [**\_ CLOSE**](phone-close.md) en el dispositivo. Los intentos posteriores de acceder al dispositivo antes de reinicializar TAPI darán lugar a que PHONEERR \_ NODEVICE se devuelva a la aplicación. Si un proveedor de servicios envía un mensaje PHONE STATE que contiene este valor a TAPI, TAPI lo pasará a las aplicaciones que han negociado la versión 1.4 o posterior de TAPI; las aplicaciones que negocian una versión de API anterior no recibirán ninguna \_ notificación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_RESUME"></span><span id="phonestate_resume"></span>**\_reanudación de PHONESTATE**
+<span id="PHONESTATE_RESUME"></span><span id="phonestate_resume"></span>**PHONESTATE \_ RESUME**
 </dt> <dd> <dl> <dt>
 
 
 
-El uso de la aplicación del dispositivo telefónico se reanuda después de haberse suspendido durante algún tiempo.
+El uso del dispositivo de teléfono de la aplicación se reanuda después de haberse suspendido durante algún tiempo.
 
 
 </dt> </dl> </dd> <dt>
@@ -212,7 +212,7 @@ El modo de anillo del teléfono ha cambiado.
 
 
 
-El volumen de timbre del teléfono ha cambiado.
+El volumen de anillo del teléfono ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -222,7 +222,7 @@ El volumen de timbre del teléfono ha cambiado.
 
 
 
-El estado de conmutador del altavoz ha cambiado.
+El estado del conmutador de enlace del altavoz ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -232,7 +232,7 @@ El estado de conmutador del altavoz ha cambiado.
 
 
 
-Ha cambiado el estado de la opción de ganancia de micrófono del altavoz.
+El estado de la configuración de la ganancia del micrófono del altavoz ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
@@ -242,33 +242,33 @@ Ha cambiado el estado de la opción de ganancia de micrófono del altavoz.
 
 
 
-La configuración del volumen de altavoz del altavoz ha cambiado.
+La configuración del volumen del altavoz del altavoz ha cambiado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PHONESTATE_SUSPEND"></span><span id="phonestate_suspend"></span>**suspensión de PHONESTATE \_**
+<span id="PHONESTATE_SUSPEND"></span><span id="phonestate_suspend"></span>**PHONESTATE \_ SUSPEND**
 </dt> <dd> <dl> <dt>
 
 
 
-El uso de la aplicación del teléfono se suspende temporalmente.
+El uso del teléfono de la aplicación se suspende temporalmente.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Sin extensibilidad. Todos los 32 bits están reservados.
+Sin extensibilidad. Los 32 bits están reservados.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -276,10 +276,10 @@ Sin extensibilidad. Todos los 32 bits están reservados.
 
 <dl> <dt>
 
-[**\_cerrar teléfono**](phone-close.md)
+[**PHONE \_ CLOSE**](phone-close.md)
 </dt> <dt>
 
-[**Estado del teléfono \_**](phone-state.md)
+[**ESTADO DEL \_ TELÉFONO**](phone-state.md)
 </dt> <dt>
 
 [**PHONECAPS**](/windows/desktop/api/Tapi/ns-tapi-phonecaps)

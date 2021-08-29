@@ -1,7 +1,7 @@
 ---
 description: Recupera un objeto CMsg en cola que contiene una solicitud.
 ms.assetid: 65b76121-c21c-4525-8dde-138783a4964e
-title: Método CMsgThread. GetThreadMsg (Msgthrd. h)
+title: Método CMsgThread.GetThreadMsg (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1b1851ac36590992aca6fa4413119be1df7427bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5badc43e2bcdebd5d251ce657f2ec61ae90ec9ea53f372634a4edeaf5cfc4db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831865"
 ---
-# <a name="cmsgthreadgetthreadmsg-method"></a>CMsgThread. GetThreadMsg, método
+# <a name="cmsgthreadgetthreadmsg-method"></a>Método CMsgThread.GetThreadMsg
 
-Recupera un objeto [**CMsg**](cmsg.md) en cola que contiene una solicitud.
+Recupera un objeto [**CMsg en**](cmsg.md) cola que contiene una solicitud.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,9 +53,9 @@ Puntero a un objeto [**CMsg**](cmsg.md) asignado.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama a esta función miembro desde la función [**ThreadProc**](camthread-threadproc.md) Private del subproceso de trabajo para recuperar la función miembro siguiente. El parámetro *MSG* debe apuntar a un objeto [**CMsg**](cmsg.md) asignado que se rellenará con los parámetros de la siguiente solicitud de la cola. Si no hay ninguna solicitud en cola, esta función miembro se bloquea hasta que se pone en cola la siguiente solicitud (mediante una llamada a la función miembro [**CMsgThread::P utthreadmsg**](cmsgthread-putthreadmsg.md) ).
+Se llama a esta función miembro desde la función [**ThreadProc**](camthread-threadproc.md) privada del subproceso de trabajo para recuperar la siguiente función miembro. El *parámetro msg* debe apuntar a un objeto [**CMsg**](cmsg.md) asignado que se rellenará con los parámetros para la siguiente solicitud en la cola. Si no hay solicitudes en cola, esta función miembro se bloquea hasta que se pone en cola la siguiente solicitud (mediante una llamada a la función miembro [**CMsgThread::P utThreadMsg).**](cmsgthread-putthreadmsg.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Se llama a esta función miembro desde la función [**ThreadProc**](camthread-th
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Msgthrd. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Msgthrd.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Se llama a esta función miembro desde la función [**ThreadProc**](camthread-th
 
 <dl> <dt>
 
-[**Clase CMsgThread**](cmsgthread.md)
+[**CMsgThread (clase)**](cmsgthread.md)
 </dt> </dl>
 
  

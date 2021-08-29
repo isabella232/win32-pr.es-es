@@ -1,34 +1,34 @@
 ---
-description: En este ejemplo se muestra cómo crear un paquete de Windows Installer simple que instala una aplicación.
+description: En este ejemplo se muestra cómo crear un paquete Windows Installer que instala una aplicación.
 ms.assetid: eee1e3e6-74e9-41d0-b732-1f792a4df423
-title: Un ejemplo de instalación
+title: Ejemplo de instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11eefaab2977bf7cc31e86ac7541b21b345c1aa1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb29f6564517980604b6c98972e5972d07fa438e8030a7e2ee9314034cf4b36f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045855"
 ---
-# <a name="an-installation-example"></a>Un ejemplo de instalación
+# <a name="an-installation-example"></a>Ejemplo de instalación
 
-En este ejemplo se muestra cómo crear un paquete de Windows Installer simple que instala una aplicación. En el ejemplo se instala el Bloc de notas, un editor de texto incluido en Windows y varios archivos de texto que describen eventos y admisiones en el ámbito de estacionamiento rojo imaginario.
+En este ejemplo se muestra cómo crear un paquete Windows Installer que instala una aplicación. El ejemplo instala Bloc de notas, un editor de texto incluido con Windows y varios archivos de texto que describen eventos y admisiones en el imaginario Red Park Arena.
 
 El ejemplo tiene las siguientes especificaciones:
 
--   La aplicación se proporciona a los usuarios como un paquete de Windows Installer de instalación automática que instala todos los archivos necesarios, accesos directos e información del registro.
--   El paquete de instalación puede presentar al usuario un asistente para la interfaz de usuario durante la instalación para recopilar información del usuario.
--   Durante la instalación, los usuarios tienen la opción de seleccionar las características individuales que se instalarán para ejecutarse: localmente, en ejecutar desde el origen o en no instalarse.
+-   La aplicación se proporciona a los usuarios como un paquete Windows Installer que instala todos los archivos necesarios, los accesos directos y la información del Registro.
+-   El paquete de instalación puede presentar un asistente de interfaz de usuario al usuario durante la instalación para recopilar información del usuario.
+-   Durante la instalación, los usuarios tienen la opción de seleccionar características individuales que se instalarán para ejecutarse localmente, para ejecutarse desde el origen o para que no se instalen.
 -   Una de las características se puede presentar a los usuarios como una característica de instalación a petición.
--   El mismo paquete desinstala la aplicación y quita todos los archivos de aplicación y la información del registro del equipo del usuario.
+-   El mismo paquete desinstala la aplicación y quita todos los archivos de aplicación y la información del Registro del equipo del usuario.
 -   El paquete está preparado para recibir una actualización importante que incluye el cambio de su código de producto.
 
-Para reproducir el ejemplo, necesita una herramienta de software capaz de crear y editar una base de datos Windows Installer en blanco. Hay varias herramientas de creación de paquetes disponibles de fabricantes de software independientes. En los [componentes de Windows SDK para Windows Installer desarrolladores](platform-sdk-components-for-windows-installer-developers.md)se proporciona un editor de base de datos de Windows Installer denominado orca.
+Para reproducir el ejemplo, necesita una herramienta de software capaz de crear y editar una base de datos de Windows instalador. Hay varias herramientas de creación de paquetes disponibles de proveedores de software independientes. En Windows [SDK Components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md)se proporciona un editor de base de datos Windows Installer llamado Orca.
 
 Para completar el ejemplo, siga estos pasos:
 
-[Planeación de la instalación](planning-the-installation.md)
+[Planear la instalación](planning-the-installation.md)
 
 [Importar una base de datos en blanco](importing-a-blank-database.md)
 
@@ -42,11 +42,11 @@ Para completar el ejemplo, siga estos pasos:
 
 [Especificar características](specifying-features.md)
 
-[Especificar relaciones Feature-Component](specifying-feature-component-relationships.md)
+[Especificar relaciones Feature-Component datos](specifying-feature-component-relationships.md)
 
-[Agregar información del registro](adding-registry-information.md)
+[Agregar información del Registro](adding-registry-information.md)
 
-[Especificar accesos directos](specifying-shortcuts.md)
+[Especificar métodos abreviados](specifying-shortcuts.md)
 
 [Especificar propiedades](specifying-properties.md)
 
@@ -60,9 +60,9 @@ Para completar el ejemplo, siga estos pasos:
 
 [Importación de AdvtExecuteSequence](importing-the-advtexecutesequence.md)
 
-[Agregar información de Resumen](adding-summary-information.md)
+[Agregar información de resumen](adding-summary-information.md)
 
-[Importación de la interfaz de usuario](importing-the-user-interface.md)
+[Importar el Interfaz de usuario](importing-the-user-interface.md)
 
 [Validar una base de datos de instalación](validating-an-installation-database.md)
 

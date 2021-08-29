@@ -1,30 +1,30 @@
 ---
-description: Para obtener la notificación de redes lógicas invalidadas, use la función WSANSPIoctl para registrar los eventos de cambio de ubicación de red.
+description: Para obtener la notificación de redes lógicas invalidadas, use la función WSANSPIoctl para registrarse para los eventos de cambio de ubicación de red.
 ms.assetid: 531b6269-5f35-44c1-ad0f-c5f103029893
-title: Consultando NLA
+title: Consulta de NLA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ac7a4f57e14bb967b04d3a9fd6fe66717da3878
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f10244eb4d3549db21287f57746a07d5363dc916e70ae141f941a4064e070be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097655"
 ---
-# <a name="querying-nla"></a>Consultando NLA
+# <a name="querying-nla"></a>Consulta de NLA
 
-Para obtener la notificación de redes lógicas invalidadas, use la función [**WSANSPIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsanspioctl) para registrar los eventos de cambio de ubicación de red. Se pueden usar dos métodos para determinar si una ubicación de red válida previamente ha dejado de ser válida: métodos de sondeo o notificación con e/s superpuestas o mensajería de Windows.
+Para obtener la notificación de redes lógicas invalidadas, use la función [**WSANSPIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsanspioctl) para registrarse para los eventos de cambio de ubicación de red. Se pueden usar dos métodos para determinar si una ubicación de red válida previamente ha quedado no válida: métodos de sondeo o notificación mediante E/S superpuesta o Windows mensajes.
 
-Las consultas se crean mediante las funciones [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina), [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) y [**WSALookupServiceEnd**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend) para enumerar todas las redes lógicas disponibles. El uso de cada una de estas funciones se explica individualmente en el resto de esta sección, comenzando por la función **WSALookupServiceBegin** .
+Las consultas se forman mediante las funciones [**WSALookupServiceBegin,**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) y [**WSALookupServiceEnd**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend) para enumerar todas las redes lógicas disponibles. El uso de cada una de estas funciones se explica individualmente a lo largo del resto de esta sección, empezando por la función **WSALookupServiceBegin.**
 
 > [!Note]  
-> NLA requiere el archivo de encabezado mswsock. h, que, de forma predeterminada, no se incluye en el archivo WinSock2. h.
+> NLA requiere el archivo de encabezado Mswsock.h, que de forma predeterminada no se incluye en el archivo Winsock2.h.
 
  
 
-## <a name="step-1-initiate-the-query"></a>Paso 1: iniciar la consulta
+## <a name="step-1-initiate-the-query"></a>Paso 1: Iniciar la consulta
 
-Para una referencia rápida, la función [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) tiene la siguiente sintaxis:
+Como referencia rápida, la [**función WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) tiene la sintaxis siguiente:
 
 ``` syntax
 INT WSALookupServiceBegin(
@@ -34,40 +34,40 @@ INT WSALookupServiceBegin(
 );
 ```
 
-NLA admite las siguientes marcas de búsqueda de *dwControlFlags* :
+NLA admite las siguientes marcas de búsqueda *dwControlFlags:*
 
-<dl> \_nombre devuelto de LUP \_  
-LUP \_ Comentario devuelto \_  
-LUP \_ devolver \_ BLOB  
-LUP \_ devolver \_ todo  
-LUP \_ Deep  
+<dl> NOMBRE DEVUELTO DE LUP \_ \_  
+COMENTARIO DE \_ DEVOLUCIÓN DE LUP \_  
+BLOB DE \_ DEVOLUCIÓN DE LUP \_  
+LUP \_ RETURN \_ ALL  
+LUP \_ DEEP  
 </dl>
 
-Estas marcas restringen los conjuntos de resultados devueltos en las llamadas subsiguientes a [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta), la función a redes que contienen campos del tipo especificado. Por ejemplo, si se especifica LUP \_ Return \_ BLOB en el parámetro *dwControlFlags* de la llamada a la función [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) , se restringen los conjuntos de resultados de las llamadas posteriores a **WSALookupServiceNext** a las redes que contienen información de BLOB. El uso de la \_ marca LUP Return \_ All es equivalente a especificar LUP \_ Return \_ Name, LUP REturn \_ \_ comment y LUP \_ Return \_ BLOB, pero no LUP \_ Deep.
+Estas marcas restringen los conjuntos de resultados devueltos en llamadas posteriores a la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta)a redes que contienen campos del tipo especificado. Por ejemplo, si se especifica LUP RETURN BLOB en el parámetro dwControlFlags de la llamada de función \_ \_ [**WSALookupServiceBegin,**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina)  se restringen los conjuntos de resultados de las llamadas posteriores a **WSALookupServiceNext** a las redes que contienen información de BLOB. El uso de la marca LUP RETURN ALL equivale a especificar \_ \_ LUP RETURN NAME, LUP RETURN COMMENT y LUP RETURN BLOB, pero no \_ \_ \_ \_ \_ \_ LUP \_ DEEP.
 
-Para obtener una explicación de estas marcas de búsqueda, consulte la página de referencia de la función [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) .
+Para obtener una explicación de estas marcas de búsqueda, consulte la página de referencia de la función [**WSALookupServiceBegin.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina)
 
-El identificador de búsqueda devuelto por NLA en el parámetro *lphLookup* es privado a NLA y no debe modificarse. Puesto que el identificador devuelto es privado para NLA, las funciones como [**WSAGetOverlappedResult**](/windows/desktop/api/Winsock2/nf-winsock2-wsagetoverlappedresult) no están disponibles.
+El identificador de búsqueda devuelto por NLA en *el parámetro lphLookup* es privado para NLA y no se debe modificar. Puesto que el identificador devuelto es privado para NLA, funciones como [**WSAGetOverlappedResult**](/windows/desktop/api/Winsock2/nf-winsock2-wsagetoverlappedresult) no están disponibles.
 
-NLA devuelve cero cuando se completa correctamente, tal como se define en la página de referencia de la función [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) . De lo contrario, NLA admite los siguientes códigos de error.
+NLA devuelve cero tras la finalización correcta, tal como se define en la página de referencia de la función [**WSALookupServiceBegin.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) De lo contrario, NLA admite los siguientes códigos de error.
 
 | Error                    | Significado                                                                                                                                                     |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | WSANOTINITIALISED        | No se realizó una llamada correcta a la función [**WSAStartup**](/windows/desktop/api/winsock/nf-winsock-wsastartup) para inicializar NLA.                                                   |
 | WSAEINVAL                | Uno o varios parámetros no eran válidos o los parámetros especificados en la llamada de función se aplican a protocolos distintos de IP.                                         |
-| \_no \_ se encontró WSASERVICE   | El parámetro *lpServiceClassId* de la estructura [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) pasada en el parámetro *lpqsRestrictions* contiene un GUID no válido. |
-| datos de WSANO \_              | La \_ marca de contenedores LUP se especificó en el parámetro *dwControlFlags* .                                                                                       |
-| WSAEFAULT                | Se ha producido una infracción de acceso al intentar obtener acceso a los parámetros proporcionados por el usuario.                                                                            |
+| WSASERVICE \_ NO \_ ENCONTRADO   | El *parámetro lpServiceClassId* de la estructura [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) pasado en el parámetro *lpqsRestrictions* contiene un GUID no válido. |
+| DATOS DE \_ WSANO              | La marca CONTAINERS de LUP \_ se especificó en el *parámetro dwControlFlags.*                                                                                       |
+| WSAEFAULT                | Se produjo una infracción de acceso al intentar acceder a los parámetros proporcionados por el usuario.                                                                            |
 | WSASYSNOTREADY           | El servicio NLA no está disponible para procesar la solicitud.                                                                                                      |
-| WSA \_ no \_ hay suficiente \_ memoria | NLA o el servicio NLA no pudo asignar suficiente memoria para procesar esta solicitud.                                                                        |
+| WSA \_ NO TIENE MEMORIA \_ \_ SUFICIENTE | NLA o el servicio NLA no pudieron asignar suficiente memoria para procesar esta solicitud.                                                                        |
 
 
 
  
 
-## <a name="step-2-perform-the-query"></a>Paso 2: realizar la consulta
+## <a name="step-2-perform-the-query"></a>Paso 2: Realizar la consulta
 
-El siguiente paso para consultar NLA requiere el uso de la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) . Para una referencia rápida, la función **WSALookupServiceNext** tiene la siguiente sintaxis:
+El siguiente paso para consultar NLA requiere el uso de la [**función WSALookupServiceNext.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) Como referencia rápida, la **función WSALookupServiceNext** tiene la sintaxis siguiente:
 
 ``` syntax
 INT WSALookupServiceNext(
@@ -78,50 +78,50 @@ INT WSALookupServiceNext(
 );
 ```
 
-El parámetro *lLookup* es el identificador de búsqueda devuelto de la llamada anterior a la función [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) .
+El *parámetro lLookup* es el identificador de búsqueda devuelto por la llamada anterior a la [**función WSALookupServiceBegin.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina)
 
-El parámetro *dwControlFlags* admite las marcas siguientes:
+El *parámetro dwControlFlags* admite las marcas siguientes:
 
-<dl> \_nombre devuelto de LUP \_  
-LUP \_ Comentario devuelto \_  
-LUP \_ devolver \_ BLOB  
-LUP \_ devolver \_ todo  
+<dl> NOMBRE DEVUELTO DE LUP \_ \_  
+COMENTARIO DE \_ DEVOLUCIÓN DE LUP \_  
+BLOB DE \_ DEVOLUCIÓN DE LUP \_  
+LUP \_ RETURN \_ ALL  
 LUP \_ FLUSHPREVIOUS  
 </dl>
 
-Estas marcas son independientes de las marcas admitidas en la llamada a la función [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) . Tenga en cuenta que las restricciones especificadas en la llamada anterior a la función **WSALookupServiceBegin** restringen la búsqueda; la adición de marcas con la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) en un intento de ampliar la consulta más allá de las restricciones especificadas en la llamada a **WSALookupServiceBegin** se pasa por alto de forma silenciosa. Sin embargo, se permite especificar un conjunto de marcas más restrictivo que el especificado en la llamada **WSALookupServiceBegin** .
+Estas marcas son independientes de las marcas admitidas en la [**llamada de función WSALookupServiceBegin.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) Tenga en cuenta que las restricciones especificadas en la llamada anterior a la función **WSALookupServiceBegin** restringen la búsqueda; Agregar marcas con la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) en un intento de ampliar la consulta más allá de las restricciones especificadas en la llamada **a WSALookupServiceBegin** se omiten en modo silencioso. Sin embargo, se permite especificar un conjunto de marcas más restrictivo que el especificado en la **llamada a WSALookupServiceBegin.**
 
-Si la red detallada en *lpqsResults* es una red activa, se anexa una serie de estructuras de **\_ blobs NLA** tal como se especifica en el miembro **lpBlob** de la estructura [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) devuelta en *lpqsResults*. Estas estructuras de **\_ blobs NLA** se pueden encadenar y se pueden enumerar recorriendo la lista mientras que NLA \_ BLOB. header. nextOffset es distinto de cero. Para obtener los resultados de toda la información de ubicación de red, siga llamando a [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta), función hasta que \_ \_ no \_ se devuelva el error WSA E, tal como se explica en la página de referencia de **WSALookupServiceNext**.
+Si la red detallada en *lpqsResults* es una red activa, se anexa una serie de estructuras **\_ BLOB** de NLA como se especifica en el miembro **lpBlob** de la estructura [**WSAQUERYSET**](/windows/desktop/api/Winsock2/ns-winsock2-wsaquerysetw) devuelta en *lpqsResults*. Estas **estructuras BLOB \_ de NLA** se pueden encadenar y se pueden enumerar recorriendo la lista mientras que NLA \_ BLOB.header.nextOffset es distinto de cero. Para obtener los resultados de toda la información de ubicación de red, siga llamando a la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta)hasta que se devuelva el error WSA E NO MORE, como se explica en la página de referencia de \_ \_ \_ **WSALookupServiceNext.**
 
-La función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) también se utiliza junto con la función [**WSANSPIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsanspioctl) para recibir la notificación de cambios en la red. Vea la [notificación de NLA](notification-from-nla-2.md) para obtener más información.
+La [**función WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) también se usa junto con la función [**WSANSPIoctl**](/windows/desktop/api/Winsock2/nf-winsock2-wsanspioctl) para recibir la notificación de los cambios de red. Consulte [Notificación de NLA](notification-from-nla-2.md) para obtener más información.
 
-NLA devuelve cero tras una finalización correcta. Los clientes de NLA deben seguir llamando a [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta), función hasta \_ que \_ \_ se devuelva WSA E, lo que indica que se ha devuelto toda la información sobre las redes disponibles.
+NLA devuelve cero tras la finalización correcta. Los clientes de NLA deben seguir llamando a la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta)hasta que se devuelva WSA E NO MORE, lo que indica que se ha devuelto toda la información sobre las redes \_ \_ \_ disponibles.
 
-De lo contrario, al llamar a la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta)para NLA, se admiten los siguientes códigos de error.
+De lo contrario, al [**llamar a WSALookupServiceNext,**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta)la función para NLA admite los siguientes códigos de error.
 
 | Error                    | Significado                                                                                                                                                                                                                                                                                                                                                                                                     |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WSANOTINITIALISED        | No se realizó una llamada correcta a la función [**WSAStartup**](/windows/desktop/api/winsock/nf-winsock-wsastartup) que no se ha inicializado NLA.                                                                                                                                                                                                                                                                                                |
-| \_identificador no válido de WSA \_     | El identificador de búsqueda proporcionado en el parámetro *BUSCARH* no era un identificador de SP NLA válido. Los clientes deben llamar primero a la función [**WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) y recibir un identificador de SP NLA válido para obtener los resultados de la consulta.                                                                                                                                                               |
+| WSANOTINITIALISED        | No se realizó una llamada correcta a la función [**WSAStartup**](/windows/desktop/api/winsock/nf-winsock-wsastartup) que inicializó NLA.                                                                                                                                                                                                                                                                                                |
+| IDENTIFICADOR NO VÁLIDO DE WSA \_ \_     | El identificador de búsqueda proporcionado en *el parámetro hLookup* no era un identificador de SP de NLA válido. Los clientes deben llamar primero a [**la función WSALookupServiceBegin**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicebegina) y recibir un identificador de SP de NLA válido para obtener los resultados de la consulta.                                                                                                                                                               |
 | WSAESYSNOTREADY          | El servicio NLA no está disponible para procesar esta solicitud.                                                                                                                                                                                                                                                                                                                                                     |
-| WSAEFAULT                | El tamaño de búfer especificado en el parámetro *lpdwBufferLength* era insuficiente para contener los resultados a los que apunta *lpqsResults*. El búfer necesario se especifica en *lpdwBufferLength*; Si el cliente no puede proporcionar un búfer suficientemente grande, el cliente puede llamar a la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) con *DWCONTROLFLAGS* establecido en LUP \_ FLUSHPREVIOUS para omitir la entrada. |
-| WSA \_ no \_ hay suficiente \_ memoria | NLA no puede obtener información de red del servicio de sistema NLA debido a que no hay memoria suficiente en el proceso de llamada.                                                                                                                                                                                                                                                                                  |
-| WSA \_ E \_ no \_ más         | No hay ninguna red adicional que enumerar para la consulta.                                                                                                                                                                                                                                                                                                                                                |
+| WSAEFAULT                | El tamaño de búfer especificado en el parámetro *lpdwBufferLength* no era suficiente para contener los resultados a los que *apunta lpqsResults*. El búfer necesario se especifica en *lpdwBufferLength*; Si el cliente no puede proporcionar un búfer lo suficientemente grande, el cliente puede llamar a la función [**WSALookupServiceNext**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupservicenexta) con *dwControlFlags* establecido en LUP FLUSHPREVIOUS para omitir la \_ entrada. |
+| WSA \_ NO TIENE MEMORIA \_ \_ SUFICIENTE | NLA no puede obtener información de red del servicio del sistema NLA debido a memoria insuficiente en el proceso de llamada.                                                                                                                                                                                                                                                                                  |
+| WSA \_ E \_ NO \_ MORE         | No hay redes adicionales para enumerar para la consulta.                                                                                                                                                                                                                                                                                                                                                |
 
 
 
  
 
-## <a name="step-3-terminate-the-query"></a>Paso 3: finalizar la consulta
+## <a name="step-3-terminate-the-query"></a>Paso 3: Finalizar la consulta
 
-Cuando se completan todas las consultas a NLA y una aplicación ya no requiere el uso de NLA, se debe realizar una llamada a la función [**WSALookupServiceEnd**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend) . No llame a **WSALookupServiceEnd** si la aplicación va a recibir la notificación de cambios basada en la consulta enviada. Consulte [notificación desde NLA](notification-from-nla-2.md) para obtener más información sobre la recepción de notificaciones. Como la mayoría de los proveedores de servicios de Windows Sockets, NLA mantiene un recuento de referencias para sus clientes. La llamada a la función **WSALookupServiceEnd** cuando se completan las consultas a NLA habilita los recursos del sistema que NLA ya no necesita para liberarlos.
+Cuando se completen todas las consultas a NLA y una aplicación ya no requiera el uso de NLA, se debe realizar una llamada a la función [**WSALookupServiceEnd.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend) No llame a **WSALookupServiceEnd si** la aplicación recibirá una notificación de cambio basada en la consulta enviada. Consulte [Notificación de NLA](notification-from-nla-2.md) para obtener más información sobre la recepción de notificaciones. Al igual Windows proveedores de servicios sockets, NLA mantiene un recuento de referencias para sus clientes. Llamar a **la función WSALookupServiceEnd** cuando se completan las consultas a NLA permite liberar los recursos del sistema que ya no necesita NLA.
 
-NLA admite los siguientes códigos de error para las llamadas a funciones [**WSALookupServiceEnd**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend) .
+NLA admite los siguientes códigos de error para [**las llamadas de función WSALookupServiceEnd.**](/windows/desktop/api/Winsock2/nf-winsock2-wsalookupserviceend)
 
 | Error                | Significado                                                                                                   |
 |----------------------|-----------------------------------------------------------------------------------------------------------|
 | WSANOTINITIALISED    | No se realizó una llamada correcta a la función [**WSAStartup**](/windows/desktop/api/winsock/nf-winsock-wsastartup) para inicializar NLA. |
-| \_identificador no válido de WSA \_ | El identificador proporcionado en el parámetro *BUSCARH* no era un identificador SP de NLA válido.                             |
+| IDENTIFICADOR NO VÁLIDO DE WSA \_ \_ | El identificador proporcionado en el *parámetro hLookup* no era un identificador de SP de NLA válido.                             |
 
 
 

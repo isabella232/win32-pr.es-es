@@ -1,7 +1,7 @@
 ---
-description: Contiene un evento de plataforma corregido (CPE). Esta clase solo está disponible en sistemas Windows de 64 bits.
+description: Contiene un evento de plataforma corregido (CPE). Esta clase solo está disponible en sistemas de 64 Windows bits.
 ms.assetid: b24a390e-293d-4dd4-b747-33c298a5d45f
-title: MSMCAInfo_RawCorrectedPlatformEvent (clase)
+title: MSMCAInfo_RawCorrectedPlatformEvent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 906587ca9ee153eb93542c3e749e8164e6a5ee7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9da5da0cbbde9f7319482e5f8574f62ac311535d277e08f3f7884134b1fa3475
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097415"
 ---
-# <a name="msmcainfo_rawcorrectedplatformevent-class"></a>MSMCAInfo \_ RawCorrectedPlatformEvent (clase)
+# <a name="msmcainfo_rawcorrectedplatformevent-class"></a>Clase RawCorrectedPlatformEvent de MSMCAInfo \_
 
-La clase **MSMCAInfo \_ RawCorrectedPlatformEvent** contiene un evento de plataforma corregido (CPE). Esta clase solo está disponible en sistemas Windows de 64 bits.
+La **clase \_ RawCorrectedPlatformEvent de MSMCAInfo** contiene un evento de plataforma corregido (CPE). Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ class MSMCAInfo_RawCorrectedPlatformEvent : WMIEvent
 
 ## <a name="members"></a>Miembros
 
-La clase **MSMCAInfo \_ RawCorrectedPlatformEvent** tiene estos tipos de miembros:
+La **clase \_ RawCorrectedPlatformEvent de MSMCAInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSMCAInfo \_ RawCorrectedPlatformEvent** tiene estas propiedades.
+La **clase \_ RawCorrectedPlatformEvent de MSMCAInfo** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -61,14 +61,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-TRUE si esta instancia de la clase está activa; en caso contrario, **false**.
+TRUE, si esta instancia de la clase está activa; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
 **Recuento**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -81,19 +81,19 @@ Número de registros de error.
 **Registros**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **\_ entrada MSMCAInfo**
+Tipo de datos: **Matriz de entrada MSMCAInfo \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de registros de error de MCA. La propiedad **Count** especifica el número de registros de error de MCA en la matriz.
+Matriz de registros de errores de MCA. La propiedad Count especifica el número de registros de error de MCA en la **matriz.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **MSMCAInfo \_ RawCorrectedPlatformEvent** se deriva de [**WMIEvent**](wmievent.md).
+La **clase MSMCAInfo \_ RawCorrectedPlatformEvent** se deriva de [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ La clase **MSMCAInfo \_ RawCorrectedPlatformEvent** se deriva de [**WMIEvent**](
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

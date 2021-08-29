@@ -1,7 +1,7 @@
 ---
-description: Establece el nombre del hueso.
+description: Establece el nombre del país.
 ms.assetid: 2eecddb8-4efa-41a3-be83-7404047a9857
-title: 'ID3DXSkinInfo:: SetBoneName (método) (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::SetCoreName (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0c9190c12eac21963d116f60d5a7aa09f97db796
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dad83b21286a82c33b696374741937b017615912ed01d38b56dafd9af2f8d153
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095705"
 ---
-# <a name="id3dxskininfosetbonename-method"></a>ID3DXSkinInfo:: SetBoneName (método)
+# <a name="id3dxskininfosetbonename-method"></a>Método ID3DXSkinInfo::SetNameName
 
-Establece el nombre del hueso.
+Establece el nombre del país.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetBoneName(
 
 <dl> <dt>
 
-*Hueso* \[ de\]
+*Desótola* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de hueso
+Número de ándes
 
 </dd> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Nombre del hueso
+Nombre del nombre del susto
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Nombre del hueso
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-[**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md)devuelve los nombres de los huesos.
+[**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md)devuelve los nombres de los apellidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -87,7 +87,7 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::GetBoneName**](id3dxskininfo--getbonename.md)
+[**ID3DXSkinInfo::GetNameName**](id3dxskininfo--getbonename.md)
 </dt> </dl>
 
  

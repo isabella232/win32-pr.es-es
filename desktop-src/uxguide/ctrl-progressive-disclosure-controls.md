@@ -4,12 +4,12 @@ description: Con un control de divulgación progresiva, los usuarios pueden most
 ms.assetid: 0ca00c49-f897-49a6-926a-cc65f3155c6c
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 1d561ea6e4f937c6e162f9eaa1f452e73d7de20c9f94c41785641062c21cd1a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9daf06722430861a79fb638cbb6211ae50010a0e
+ms.sourcegitcommit: 0ab75073bbeec7ca2899f8051626a8b772073f82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117676314"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122401018"
 ---
 # <a name="progressive-disclosure-controls"></a>Controles de divulgación progresiva
 
@@ -31,11 +31,11 @@ Ejemplos de controles de divulgación progresiva.
 
 Para decidirte, intenta responder a estas preguntas:
 
--   **¿Necesitan los usuarios ver la información en algunos escenarios, pero no en todos, o en algunos, pero no todo el tiempo?** Si es así, mostrar la información mediante la divulgación progresiva simplifica la experiencia de línea base, pero permite a los usuarios acceder a la información fácilmente.
+-   **¿Los usuarios necesitan ver la información en algunos escenarios, pero no en todos, o en otros, pero no todo el tiempo?** Si es así, mostrar la información mediante la divulgación progresiva simplifica la experiencia de línea base, pero permite a los usuarios acceder a la información fácilmente.
 
     ![Captura de pantalla que muestra el estado del centro de seguridad.](images/progressive-disclosure-controls-image2.png)
 
-    En este ejemplo, Security Center el estado de seguridad importante todo el tiempo, pero usa la divulgación progresiva para mostrar detalles a petición.
+    En este ejemplo, Security Center el estado de seguridad importante todo el tiempo, pero usa la divulgación progresiva para mostrar los detalles a petición.
 
 -   **Si la información se muestra de forma predeterminada, ¿es probable que los usuarios decidan ocultarla?** ¿Hay escenarios en los que los usuarios necesitarán más espacio? ¿Están los usuarios suficientemente motivados para personalizar la interfaz de usuario ?? Si no es así, muestre la información sin usar la divulgación progresiva.
 
@@ -65,7 +65,7 @@ Los objetivos de la divulgación progresiva son:
 Ambos objetivos se pueden lograr mediante el uso de controles de divulgación progresiva, donde los usuarios hacen clic para ver más detalles. Sin embargo, puede lograr el segundo objetivo de simplificar la apariencia sin usar controles de divulgación progresiva explícitos mediante:
 
 -   **Muestra detalles contextuales solo en contexto.** Por ejemplo, puede mostrar comandos contextuales o barras de herramientas automáticamente cuando sea pertinente para el objeto o modo seleccionado.
--   **Reducir el peso de las asequibilidades para la interfaz de usuario secundaria.** [Las asequibilidades](glossary.md) son propiedades visuales que sugieren cómo se usan los objetos. La tendencia es tener una interfaz de usuario con la que los usuarios puedan interactuar en su lugar, pero hacer que toda esa interfaz de usuario se desenlace para decir "clic en mí". conduce a demasiado desorden visual. En el caso de la interfaz de usuario secundaria, a menudo es mejor usar asequibilidades sutiles y proporcionar todos los efectos al pasar el mouse sobre él.
+-   **Reducir el peso de las asequibilidades para la interfaz de usuario secundaria.** [Las asequibilidades](glossary.md) son propiedades visuales que sugieren cómo se usan los objetos. La tendencia es tener una interfaz de usuario con la que los usuarios puedan interactuar en su lugar, pero hacer que toda esa interfaz de usuario se desentrase para decir "haga clic en mí". conduce a demasiado desorden visual. En el caso de la interfaz de usuario secundaria, a menudo es mejor usar asequibilidades sutiles y proporcionar todos los efectos al pasar el mouse sobre él.
 
     ![captura de pantalla de iconos de estrella que se usan para calificar las fotos ](images/progressive-disclosure-controls-image5.png)
 
@@ -77,7 +77,7 @@ Ambos objetivos se pueden lograr mediante el uso de controles de divulgación pr
 
     En este ejemplo, la página nombre de usuario y contraseña muestra inicialmente solo los cuadros de nombre de usuario y contraseña opcional. Los cuadros de confirmación y sugerencia se muestran después de que el usuario escriba una contraseña.
 
-Aunque la divulgación progresiva es una excelente manera de simplificar las IA, tiene estos riesgos:
+Aunque la divulgación progresiva es una excelente manera de simplificar las URI, tiene estos riesgos:
 
 -   **Falta de detectabilidad.** Los usuarios pueden suponer que, si no pueden ver algo, no existe. Los usuarios no pueden mantener el puntero o hacer clic si no ven lo que buscan. Siempre existe la posibilidad de que los usuarios no puedan hacer clic en cosas como Más opciones.
 -   **Falta de estabilidad.** La divulgación progresiva debe esperarse o, al menos, ser natural. Si los controles aparecen y desaparecen inesperadamente, la interfaz de usuario resultante puede parecer inestable.
@@ -93,7 +93,7 @@ Normalmente, los controles de divulgación progresiva se muestran sin etiquetas 
 
 Aunque los usuarios pueden determinar lo anterior por prueba y error, debe intentar que esta experimentación sea innecesaria.
 
-Los controles de divulgación progresiva tienen unas asequibilidades bastante débiles, lo que significa que sus propiedades visuales sugieren cómo se usan, aunque débilmente. [](glossary.md) En la tabla siguiente se compara la apariencia de los controles comunes de divulgación progresiva:
+Los controles de divulgación progresiva tienen una [asequibilidad](glossary.md)bastante débil, lo que significa que sus propiedades visuales sugieren cómo se usan, aunque débilmente. En la tabla siguiente se compara la apariencia de los controles comunes de divulgación progresiva:
 
 
 
@@ -114,11 +114,11 @@ Los usuarios deben poder predecir correctamente el comportamiento de un control 
 
 ## <a name="usage-patterns"></a>Patrones de uso
 
-Los controles de divulgación progresiva tienen varios patrones de uso. Algunas de ellas están integradas en controles comunes.
+Los controles de divulgación progresiva tienen varios patrones de uso. Algunos de ellos están integrados en controles comunes.
 
 ### <a name="chevrons"></a>Galones
 
-Los elementos de contenido adicional muestran u ocultan los elementos restantes en contenido completamente o parcialmente oculto. Normalmente, los elementos se muestran en contexto, pero también se pueden mostrar en un menú emergente. Cuando está en su lugar, el elemento permanece expandido hasta que el usuario lo contrae.
+Los elementos de contenido adicional muestran u ocultan los elementos restantes en contenido completamente o parcialmente oculto. Normalmente, los elementos se muestran en su lugar, pero también se pueden mostrar en un menú emergente. Cuando está en su lugar, el elemento permanece expandido hasta que el usuario lo contrae.
 
 Los elementos de contenido adicional se usan de las maneras siguientes:
 
@@ -126,9 +126,9 @@ Los elementos de contenido adicional se usan de las maneras siguientes:
 
 |      Uso                                                                                                                                                          |    Ejemplo                                                                                                                                                                                                                                                                                                             |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Interfaz de usuario local**<br/> El objeto asociado recibe el foco de entrada y el botón de contenido adicional único se activa con la barra espaciadona.<br/>                       | ![captura de pantalla de la pantalla de estado de Security Center ](images/progressive-disclosure-controls-image11.png)<br/> En estos ejemplos, los botónes de contenido adicional individuales en su lugar se sitúan a la derecha de su control asociado.<br/>                                                                            |
-| **Botones de comando con etiquetas externas**<br/> El botón de comando recibe el foco de entrada y el botón de contenido adicional único se activa con la barra espaciadona.<br/> | ![captura de pantalla del botón de contenido adicional con la etiqueta "más opciones" ](images/progressive-disclosure-controls-image12.png)<br/> En este ejemplo, el botón de contenido adicional único se etiqueta y se coloca a la izquierda de la etiqueta. Con este patrón, el botón sería difícil de entender sin su etiqueta.<br/> |
-| **Botones de comando con etiquetas internas**<br/> El botón de comando recibe el foco de entrada y se activa con la barra espaciador.<br/>                    | ![captura de pantalla de los botones de comando "más" y "menos" ](images/progressive-disclosure-controls-image13.png)<br/> En estos ejemplos, los botones de comando normales tienen el botón de contenido adicional doble situado para sugerir su significado.<br/>                                                                          |
+| **Interfaz de usuario local**<br/> El objeto asociado recibe el foco de entrada y el botón de contenido adicional único se activa con la barra espaciador.<br/>                       | ![captura de pantalla de la pantalla de estado del centro de seguridad ](images/progressive-disclosure-controls-image11.png)<br/> En estos ejemplos, los botón de contenido adicional único en su lugar se sitúan a la derecha de su control asociado.<br/>                                                                            |
+| **Botones de comando con etiquetas externas**<br/> el botón de comando recibe el foco de entrada y el botón de contenido adicional único se activa con la barra espaciador.<br/> | ![captura de pantalla del botón de contenido adicional con la etiqueta "más opciones" ](images/progressive-disclosure-controls-image12.png)<br/> En este ejemplo, el botón de contenido adicional único se etiqueta y se coloca a la izquierda de la etiqueta. Con este patrón, el botón sería difícil de entender sin su etiqueta.<br/> |
+| **Botones de comando con etiquetas internas**<br/> el botón de comando recibe el foco de entrada y se activa con la barra espaciador.<br/>                    | ![captura de pantalla de los botones de comandos "más" y "menos" ](images/progressive-disclosure-controls-image13.png)<br/> En estos ejemplos, los botones de comando normales tienen el botón de contenido adicional doble situado para sugerir su significado.<br/>                                                                          |
 
 
 
@@ -138,7 +138,7 @@ Los elementos de contenido adicional se usan de las maneras siguientes:
 
 Las flechas muestran un menú emergente de comandos. El elemento permanece expandido hasta que el usuario realiza una selección o hace clic en cualquier lugar.
 
-Si el botón de flecha es un control independiente, recibe el foco de entrada y se activa con la barra espaciador. Si el botón de flecha tiene un control primario, el elemento primario recibe el foco de entrada y la flecha se activa con alt+flecha abajo y teclas alt+flecha arriba, como con el control de lista desplegable.
+Si el botón de flecha es un control independiente, recibe el foco de entrada y se activa con la barra espaciador. Si el botón de flecha tiene un control primario, el elemento primario recibe el foco de entrada y la flecha se activa con las teclas Alt+flecha abajo y Alt+flecha arriba, como con el control de lista desplegable.
 
 Las flechas se usan de las maneras siguientes:
 
@@ -155,37 +155,37 @@ Las flechas se usan de las maneras siguientes:
 
 ### <a name="plus-and-minus-controls"></a>Controles más y menos
 
-Los controles más y menos se expanden o contraen para mostrar el contenido del contenedor en su lugar al navegar por una jerarquía. El elemento permanece expandido hasta que el usuario lo contrae. Aunque parezcan botones, su comportamiento está en su lugar.
+Los controles más y menos se expanden o contraen para mostrar el contenido del contenedor en su lugar al navegar por una jerarquía. El elemento permanece expandido hasta que el usuario lo contrae. Aunque parecen botones, su comportamiento está en su lugar.
 
 El objeto asociado recibe el foco de entrada. El signo más se activa con la tecla de flecha derecha y el signo menos con la tecla de flecha izquierda.
 
-Los controles más y menos se usan de las maneras siguientes:
+Los controles Más y Menos se usan de las maneras siguientes:
 
 
 
 |       Uso                                                                                         |       Ejemplo                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Árboles contraíbles**<br/> una jerarquía de varios niveles para mostrar el contenido del contenedor.<br/> | ![Captura de pantalla que muestra un Windows carpeta del Explorador de aplicaciones con "Comportamiento" seleccionado.](images/progressive-disclosure-controls-image16.png)<br/> En este ejemplo, los controles más y menos se sitúan a la izquierda del contenedor asociado.<br/>       |
+| **Árboles contraíbles**<br/> una jerarquía de varios niveles para mostrar el contenido del contenedor.<br/> | ![Captura de pantalla que muestra un Windows carpeta del Explorador de aplicaciones con la opción "Comportamiento" seleccionada.](images/progressive-disclosure-controls-image16.png)<br/> En este ejemplo, los controles más y menos se sitúan a la izquierda del contenedor asociado.<br/>       |
 | **Listas contraíbles**<br/> una jerarquía de dos niveles para mostrar el contenido del contenedor.<br/>   | ![captura de pantalla de la lista expandida para mostrar dos niveles ](images/progressive-disclosure-controls-image17.png)<br/> En este ejemplo, los controles más y menos se sitúan a la izquierda del encabezado de lista asociado.<br/> |
 
 
 
  
 
-### <a name="rotating-triangles"></a>Triángulos de rotación
+### <a name="rotating-triangles"></a>Girar triángulos
 
-Los triángulos de rotación muestran u ocultan información adicional en su lugar para un elemento individual. También se usan para expandir contenedores. El elemento permanece expandido hasta que el usuario lo contrae.
+Los triángulos de rotación muestran u ocultan información adicional en su lugar para un elemento individual. También se usan para expandir los contenedores. El elemento permanece expandido hasta que el usuario lo contrae.
 
-El objeto asociado recibe el foco de entrada. El triángulo contraído (apuntando a la derecha) se activa con la tecla de flecha derecha y el triángulo expandido (apuntando hacia abajo) con la tecla de flecha izquierda.
+El objeto asociado recibe el foco de entrada. El triángulo contraído (que apunta a la derecha) se activa con la tecla de flecha derecha y el triángulo expandido (hacia abajo) con la tecla de flecha izquierda.
 
-Los triángulos rotatorios se usan de las maneras siguientes:
+Los triángulos de rotación se usan de las maneras siguientes:
 
 
 
 |     Uso                                                                                                       |    Ejemplo                                                                                                                                                                                                                             |
 |------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Árboles contraíbles**<br/> una jerarquía de varios niveles para mostrar el contenido del contenedor.<br/>             | ![captura de pantalla del árbol de carpetas del Explorador de Windows ](images/progressive-disclosure-controls-image18.png)<br/> En este ejemplo, los triángulos giratorios se sitúan a la izquierda del contenedor asociado.<br/>       |
-| **Listas contraíbles**<br/> una jerarquía de dos niveles para mostrar información adicional en su lugar.<br/> | ![captura de pantalla de la lista que muestra datos adicionales ](images/progressive-disclosure-controls-image19.png)<br/> En este ejemplo, los triángulos giratorios se sitúan a la izquierda de sus elementos de lista asociados.<br/> |
+| **Árboles contraíbles**<br/> una jerarquía de varios niveles para mostrar el contenido del contenedor.<br/>             | ![captura de pantalla del árbol de carpetas del Explorador de Windows ](images/progressive-disclosure-controls-image18.png)<br/> En este ejemplo, los triángulos de rotación se sitúan a la izquierda del contenedor asociado.<br/>       |
+| **Listas contraíbles**<br/> una jerarquía de dos niveles para mostrar información adicional en su lugar.<br/> | ![captura de pantalla de la lista que muestra datos adicionales ](images/progressive-disclosure-controls-image19.png)<br/> En este ejemplo, los triángulos de rotación se sitúan a la izquierda de sus elementos de lista asociados.<br/> |
 
 
 
@@ -193,7 +193,7 @@ Los triángulos rotatorios se usan de las maneras siguientes:
 
 ### <a name="preview-arrows"></a>Flechas de vista previa
 
-Al igual que los elementos de contenido adicional, se muestra u oculta información adicional en su lugar. El elemento permanece expandido hasta que el usuario lo contrae. A diferencia de los elementos de contenido adicional, los glifos tienen una representación gráfica de la acción, normalmente con una flecha que indica lo que ocurrirá.
+Al igual que los elementos de contenido adicional, se muestra u oculta información adicional en su lugar. El elemento permanece expandido hasta que el usuario lo contrae. A diferencia de los botones de contenido adicional, los glifos tienen una representación gráfica de la acción, normalmente con una flecha que indica lo que ocurrirá.
 
 ![captura de pantalla de glifos de flecha que apuntan diagonalmente ](images/progressive-disclosure-controls-image20.png)
 
@@ -206,7 +206,7 @@ Las flechas de vista previa se reservan mejor para situaciones en las que un bot
 ### <a name="general"></a>General
 
 -   **Seleccione el patrón de divulgación progresiva en función de su uso.** Para obtener una descripción de cada patrón de uso, consulte la tabla anterior.
--   **No use vínculos para controles de divulgación progresiva.** Use solo los controles de divulgación progresiva presentados en la sección Patrones de uso. Sin embargo, use vínculos para ir a los [temas de Ayuda](winenv-help.md).
+-   **No use vínculos para controles de divulgación progresiva.** Use solo los controles de divulgación progresiva presentados en la sección Patrones de uso. Sin embargo, use vínculos para ir a temas [de Ayuda.](winenv-help.md)
 
     **Correcto:**
 
@@ -214,20 +214,20 @@ Las flechas de vista previa se reservan mejor para situaciones en las que un bot
 
     **Incorrecto:**
 
-    ![captura de pantalla del texto del vínculo "mostrar mezclador" ](images/progressive-disclosure-controls-image22.png)
+    ![Captura de pantalla del texto del vínculo "mostrar mezclador" ](images/progressive-disclosure-controls-image22.png)
 
-    En el ejemplo incorrecto, se usa un vínculo para mostrar más opciones en su lugar. Este uso sería correcto si el vínculo navegase a otra página o cuadro de diálogo, o mostrara un tema de Ayuda.
+    En el ejemplo incorrecto, se usa un vínculo para mostrar más opciones en su lugar. Este uso sería correcto si el vínculo navega a otra página o cuadro de diálogo, o muestra un tema de Ayuda.
 
 ### <a name="interaction"></a>Interacción
 
--   **Para los botones de contenido adicional y las flechas que no están etiquetados directamente, use información sobre herramientas para describir lo que hacen.**
+-   **En el caso de los botones de contenido adicional y las flechas que no están etiquetados directamente, use información sobre herramientas para describir lo que hacen.**
 
-    ![captura de pantalla de la información sobre herramientas "Expandir el generador de consultas" ](images/progressive-disclosure-controls-image23.png)
+    ![Captura de pantalla de la información sobre herramientas "Expandir el generador de consultas" ](images/progressive-disclosure-controls-image23.png)
 
     En este ejemplo, la información sobre herramientas indica el efecto de un control de contenido adicional sin etiquetar.
 
--   **Si un usuario** expande o contrae un elemento, haga que el estado se conserve para que su efecto se haga efectivo la próxima vez que se muestre la ventana, a menos que sea probable que los usuarios prefieran comenzar en el estado predeterminado. Haga que el estado se conserve por ventana y por usuario.
--   **Asegúrese de que todo el contenido expandido se puede contraer y viceversa, y de que la operación inversa es obvia.** Al hacerlo, se fomenta la exploración y se reduce la frustración. La mejor manera de que la operación inversa sea obvia es mantener el control en la misma ubicación fija. Si necesita mover el control, manténlo en la misma ubicación relativa dentro de un área visualmente distinta.
+-   **Si un usuario expande** o contrae un elemento, haga que el estado se conserve para que se haga efectivo la próxima vez que se muestre la ventana, a menos que sea probable que los usuarios prefieran iniciarse en el estado predeterminado. Haga que el estado se conserve por ventana y por usuario.
+-   **Asegúrese de que todo el contenido expandido se puede contraer y viceversa, y de que la operación inversa es obvia.** Esto fomenta la exploración y reduce la frustración. La mejor manera de que la operación inversa sea obvia es mantener el control en la misma ubicación fija. Si necesita mover el control, mantenga el control en la misma ubicación relativa dentro de un área visualmente distinta.
 
     **Incorrecto:**
 
@@ -235,13 +235,13 @@ Las flechas de vista previa se reservan mejor para situaciones en las que un bot
 
     ![captura de pantalla del botón "Reemplazar" sin botón de contenido adicional ](images/progressive-disclosure-controls-image25.png)
 
-    En este ejemplo, al hacer clic en el botón Reemplazar por el botón de contenido adicional se muestra **el cuadro** de texto Reemplazar por. Una vez hecho esto, el expansor Reemplazar se convierte en el comando Reemplazar, por lo que no hay ninguna manera de restaurar el estado original.
+    En este ejemplo, al hacer clic en el botón Reemplazar con el botón de contenido adicional se muestra **el cuadro de** texto Reemplazar por . Una vez hecho esto, el expansor Reemplazar se convierte en el comando Reemplazar, por lo que no hay ninguna manera de restaurar el estado original.
 
 -   **Use solo las claves de acceso adecuadas para el patrón de divulgación progresiva**, como se muestra en la sección Patrones de uso. No use Entrar para activar la divulgación progresiva.
 
 ### <a name="presentation"></a>Presentación
 
--   **No use puntas de flecha con forma triangular para un propósito distinto de la divulgación progresiva.**
+-   **No use puntas de flecha en forma de triangular para un propósito distinto de la divulgación progresiva.**
 
     **Incorrecto:**
 
@@ -259,31 +259,31 @@ Las flechas de vista previa se reservan mejor para situaciones en las que un bot
 
     **Incorrecto:**
 
-    ![captura de pantalla de un control atenuado "más opciones" ](images/progressive-disclosure-controls-image28.png)
+    ![captura de pantalla de un control "más opciones" atenuado ](images/progressive-disclosure-controls-image28.png)
 
     En este ejemplo, se deshabilita incorrectamente un control de divulgación progresiva que no se aplica.
 
 ### <a name="chevrons"></a>Galones
 
--   **Use botón de contenido adicional único para mostrar u ocultar en su lugar. Use los elementos de contenido adicional dobles para mostrar u ocultar mediante un menú emergente.** Sin embargo, siempre debe usar los botones de contenido adicional dobles para los botones de comando con etiquetas internas.
+-   **Use botón de contenido adicional único para mostrar u ocultar en su lugar. Use los elementos de contenido adicional dobles para mostrar u ocultar mediante un menú emergente.** Sin embargo, siempre debe usar dobles botones de contenido adicional para los botones de comando con etiquetas internas.
 
     **Correcto:**
 
-    ![captura de pantalla del control single-chevron more options ](images/progressive-disclosure-controls-image29.png)
+    ![captura de pantalla del control de opciones de contenido adicional único ](images/progressive-disclosure-controls-image29.png)
 
     **Incorrecto:**
 
-    ![captura de pantalla del control double-chevron more options ](images/progressive-disclosure-controls-image30.png)
+    ![captura de pantalla del control de opciones de doble contenido adicional ](images/progressive-disclosure-controls-image30.png)
 
     En el ejemplo incorrecto, se usa un botón de contenido adicional doble para la divulgación progresiva local.
 
     **Correcto:**
 
-    ![captura de pantalla del botón de comando double-chevron more ](images/progressive-disclosure-controls-image31.png)
+    ![captura de pantalla del botón de comando más de doble botón de contenido adicional ](images/progressive-disclosure-controls-image31.png)
 
     En este ejemplo, se usa un botón de contenido adicional doble para la divulgación progresiva local porque es un botón de comando con una etiqueta interna.
 
--   **Proporcione una relación visual entre el botón de contenido adicional y su control asociado.** Dado que los elementos de contenido adicional locales se colocan a la derecha de la interfaz de usuario asociada y se alinean a la derecha, puede haber una distancia bastante larga entre un botón de contenido adicional y su control asociado.
+-   **Proporcione una relación visual entre el botón de contenido adicional y su control asociado.** Dado que los botónes de contenido adicional en posición se colocan a la derecha de la interfaz de usuario asociada y se alinean a la derecha, puede haber bastante distancia entre un botón de contenido adicional y su control asociado.
 
     **Correcto:**
 
@@ -299,7 +299,7 @@ Las flechas de vista previa se reservan mejor para situaciones en las que un bot
 
 ### <a name="arrows"></a>Flechas
 
--   **No use gráficos de flecha que se puedan confundir con Atrás, Adelante, Ir o Reproducir.** Use puntas de flecha simples con forma triangular (flechas sin lemates) en fondos neutros.
+-   **No use gráficos de flecha que se puedan confundir con Atrás, Adelante, Ir o Reproducir.** Use puntas de flecha simples con forma de triangular (flechas sin lemates) en fondos neutros.
 
     **Correcto:**
 
@@ -313,7 +313,7 @@ Las flechas de vista previa se reservan mejor para situaciones en las que un bot
 
     Estas flechas no parecen controles de divulgación progresiva.
 
-    **Incorrecto (para Atrás, Adelante):**
+    **Incorrecto (para Back, Forward):**
 
     ![captura de pantalla de dos botones con triángulos negros ](images/progressive-disclosure-controls-image36.png)
 
@@ -327,31 +327,31 @@ Tamaño y espaciado recomendados para controles de divulgación progresiva.
 
 ## <a name="labels"></a>Etiquetas
 
--   Para los botones de contenido adicional en un botón de comando con una etiqueta externa:
-    -   Asigne una clave [de acceso única.](glossary.md) Para obtener instrucciones, vea [Teclado](inter-keyboard.md).
-    -   Use [el uso de mayúsculas y mayúsculas de estilo oración.](glossary.md)
+-   Para los botones de contenido adicional de un botón de comando con una etiqueta externa:
+    -   Asigne una clave [de acceso única.](glossary.md) Para obtener instrucciones, vea [Teclado.](inter-keyboard.md)
+    -   Use [mayúsculas de estilo oración.](glossary.md)
     -   Escriba la etiqueta como una frase y no use ningún signo de puntuación final.
-    -   Escriba la etiqueta para que describa el efecto de hacer clic en el botón y cambie la etiqueta cuando cambie el estado.
+    -   Escriba la etiqueta para que describa el efecto de hacer clic en el botón y cambiar la etiqueta cuando cambie el estado.
     -   Si la superficie siempre muestra algunas opciones, comandos o detalles, use los siguientes pares de etiquetas:
         -   **Más o menos opciones.** Use para opciones o una combinación de opciones, comandos y detalles.
         -   **Más o menos comandos.** Use solo para comandos.
         -   **Más o menos detalles.** Use solo para obtener información.
-        -   **Más o menos <object name> .** Se usa para otros tipos de objetos, como carpetas.
+        -   **Más o menos <object name> .** Se usa para otros tipos de objeto, como carpetas.
     -   De lo contrario:
         -   **Mostrar u ocultar opciones.** Use para opciones o una combinación de opciones, comandos y detalles.
         -   **Mostrar u ocultar comandos.** Use solo para comandos.
         -   **Mostrar u ocultar detalles.** Use solo para obtener información.
-        -   **Mostrar u ocultar <object name> .** Se usa para otros tipos de objetos, como carpetas.
--   Para los botones de contenido adicional de un botón de comando con una etiqueta interna, siga las instrucciones del [botón de comando](ctrl-command-buttons.md) estándar.
+        -   **Mostrar u ocultar <object name> .** Se usa para otros tipos de objeto, como carpetas.
+-   Para los botones de contenido adicional de un botón de comando con una etiqueta interna, siga las instrucciones del botón [de comando](ctrl-command-buttons.md) estándar.
 
 ## <a name="documentation"></a>Documentación
 
 Al hacer referencia a controles de divulgación progresiva:
 
--   Si el control tiene una etiqueta fija, haga referencia al control solo por su etiqueta; no intente describir el control. Use el texto exacto de la etiqueta, incluida su inclusión en mayúsculas, pero no incluya el carácter de subrayado de la clave de acceso.
--   Si el control no tiene ninguna etiqueta o no es fijo, consulte el control por su tipo: botón de botón de contenido adicional, flecha, triángulo o más/menos. Si es necesario, describa también la ubicación del control. Si el control aparece dinámicamente, como el [control](glossary.md) de espacio en páginas, inicie la referencia describiendo cómo hacer que aparezca el control.
+-   Si el control tiene una etiqueta fija, haga referencia al control solo por su etiqueta; no intente describir el control. Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado de la clave de acceso.
+-   Si el control no tiene ninguna etiqueta o no es fijo, consulte el control por su tipo: botón de botón de contenido adicional, flecha, triángulo o más/menos. Si es necesario, describa también la ubicación del control. Si el control aparece dinámicamente, como el control [de](glossary.md) espacio de página, inicie la referencia describiendo cómo hacer que aparezca el control.
 
-    **Ejemplo:** Para mostrar los archivos dentro de una carpeta, mueva el puntero al principio del nombre de la carpeta y, a continuación, haga clic en el triángulo situado junto a la carpeta.
+    **Ejemplo:** Para mostrar los archivos dentro de una carpeta, mueva el puntero al inicio del nombre de la carpeta y, a continuación, haga clic en el triángulo situado junto a la carpeta.
 
 -   No haga referencia al control como un botón, a menos que contraste con otros controles de divulgación progresiva que no son botones.
 -   Para describir la interacción del usuario, use click. Si es necesario para mayor claridad, use haga clic en... para expandir o contraer.

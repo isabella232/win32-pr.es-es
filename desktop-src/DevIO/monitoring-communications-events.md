@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo de código siguiente se abre el puerto serie para la e/s superpuesta, se crea una máscara de eventos para supervisar las señales CTS y DSR y, a continuación, se espera a que se produzca un evento.
+description: El código de ejemplo siguiente abre el puerto serie para la E/S superpuesta, crea una máscara de eventos para supervisar las señales CTS y DSR y, a continuación, espera a que se produzca un evento.
 ms.assetid: 23ebcb04-1571-4e93-a549-46ad6b9d4272
-title: Supervisar eventos de comunicaciones
+title: Supervisión de eventos de comunicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5eac453b7f864f4f0b5fc756b1ffc6a730e2769
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7f9e3cb28e251450d5302227cbeaf9fa6aac6c8734ea0646757ac2b4291c8ff3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131645"
 ---
-# <a name="monitoring-communications-events"></a>Supervisar eventos de comunicaciones
+# <a name="monitoring-communications-events"></a>Supervisión de eventos de comunicaciones
 
-En el ejemplo de código siguiente se abre el puerto serie para la e/s superpuesta, se crea una máscara de eventos para supervisar las señales CTS y DSR y, a continuación, se espera a que se produzca un evento. La función [**WaitCommEvent**](/windows/desktop/api/Winbase/nf-winbase-waitcommevent) debe ejecutarse como una operación superpuesta para que los demás subprocesos del proceso puedan realizar operaciones de e/s durante la espera.
+El código de ejemplo siguiente abre el puerto serie para la E/S superpuesta, crea una máscara de eventos para supervisar las señales CTS y DSR y, a continuación, espera a que se produzca un evento. La [**función WaitCommEvent**](/windows/desktop/api/Winbase/nf-winbase-waitcommevent) debe ejecutarse como una operación superpuesta para que los demás subprocesos del proceso puedan realizar operaciones de E/S durante la espera.
 
 
 ```C++

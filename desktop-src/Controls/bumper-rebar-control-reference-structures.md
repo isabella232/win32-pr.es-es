@@ -1,17 +1,17 @@
 ---
-title: Estructuras de control rebar
-description: Estructuras de control rebar
+title: Estructuras de control Rebar
+description: Estructuras de control Rebar
 ms.assetid: bc95d164-ce7b-48d8-ac81-55c8a1b497da
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c442e044f2ce7eae4d29bff7d07b440e7a0a972
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c244e8a300f6796cd5957719e3f9ae965af3da2bb0559afea5044b3bb46ac22f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103914513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970525"
 ---
-# <a name="rebar-control-structures"></a>Estructuras de control rebar
+# <a name="rebar-control-structures"></a>Estructuras de control Rebar
 
 ## <a name="in-this-section"></a>En esta sección
 

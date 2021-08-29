@@ -1,8 +1,8 @@
 ---
-description: Crear&\# 8194; El método de clase WMI crea un nuevo proceso.
+description: La&\# 8194; El método de clase WMI crea un nuevo proceso.
 ms.assetid: be80abec-fab4-4403-bc29-d0d4a38e3c87
 ms.tgt_platform: multiple
-title: Método Create de la clase Win32_Process
+title: Método Create de la Win32_Process clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 42c675f61fc8b42790aeb811ec275554b355a392
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 15fef5786487a0e5dad6aa96f4061a2e7414773e2f269ea9834cc3dd17211e3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003855"
 ---
-# <a name="create-method-of-the-win32_process-class"></a>Método Create de la \_ clase de proceso Win32
+# <a name="create-method-of-the-win32_process-class"></a>Método Create de la clase Process de Win32 \_
 
-El método **crear** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo proceso.
+El **método de** clase Create [WMI](/windows/desktop/WmiSdk/retrieving-a-class) crea un nuevo proceso.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,37 +45,37 @@ uint32 Create(
 
 <dl> <dt>
 
-*Línea de comandos* \[ de\]
+*CommandLine* \[ En\]
 </dt> <dd>
 
-Línea de comandos que se va a ejecutar. El sistema agrega un carácter nulo a la línea de comandos, recortando la cadena si es necesario, para indicar qué archivo se usó realmente.
+Línea de comandos que se ejecutará. El sistema agrega un carácter nulo a la línea de comandos, recortando la cadena si es necesario, para indicar qué archivo se usó realmente.
 
 </dd> <dt>
 
-*CurrentDirectory* \[ de\]
+*CurrentDirectory* \[ En\]
 </dt> <dd>
 
-Unidad y directorio actuales para el proceso secundario. La cadena requiere que el directorio actual se resuelva en una ruta de acceso conocida. Un usuario puede especificar una ruta de acceso absoluta o una ruta de acceso relativa al directorio de trabajo actual. Si este parámetro es **null**, el nuevo proceso tendrá la misma ruta de acceso que el proceso que realiza la llamada. Esta opción se proporciona principalmente para los shells que deben iniciar una aplicación y especificar la unidad inicial y el directorio de trabajo de la aplicación.
+Unidad y directorio actuales del proceso secundario. La cadena requiere que el directorio actual se resuelva en una ruta de acceso conocida. Un usuario puede especificar una ruta de acceso absoluta o una ruta de acceso relativa al directorio de trabajo actual. Si este parámetro es **NULL,** el nuevo proceso tendrá la misma ruta de acceso que el proceso de llamada. Esta opción se proporciona principalmente para los shells que deben iniciar una aplicación y especificar la unidad inicial de la aplicación y el directorio de trabajo.
 
 </dd> <dt>
 
-*ProcessStartupInformation* \[ de\]
+*ProcessStartupInformation* \[ En\]
 </dt> <dd>
 
-La configuración de inicio de un proceso de Windows. Para obtener más información, vea [**Win32 \_ ProcessStartup**](win32-processstartup.md).
+Configuración de inicio de un Windows de inicio. Para obtener más información, [**vea Win32 \_ ProcessStartup**](win32-processstartup.md).
 
 </dd> <dt>
 
-*ProcessId* \[ enuncia\]
+*ProcessId* \[ out\]
 </dt> <dd>
 
-Identificador de proceso global que se puede usar para identificar un proceso. El valor es válido desde el momento en que se crea el proceso hasta la hora de finalización del proceso.
+Identificador de proceso global que se puede usar para identificar un proceso. El valor es válido desde el momento en que se crea el proceso hasta el momento en que finaliza el proceso.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el proceso se ha creado correctamente, y cualquier otro número para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) si el proceso se creó correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -91,24 +91,24 @@ Devuelve un valor de 0 (cero) si el proceso se ha creado correctamente, y cualqu
 **Error desconocido** (8)
 </dt> <dt>
 
-**No se encontró la ruta de acceso** (9)
+**Ruta de acceso no encontrada** (9)
 </dt> <dt>
 
 **Parámetro no válido** (21)
 </dt> <dt>
 
-**Otro** (22 4294967295)
+**Otros** (22 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede crear una instancia de la clase [**Win32 \_ ProcessStartup**](win32-processstartup.md) para configurar el proceso antes de llamar a este método.
+Puede crear una instancia de la clase [**\_ ProcessStartup de Win32**](win32-processstartup.md) para configurar el proceso antes de llamar a este método.
 
-Se debe especificar una ruta de acceso completa en los casos en que el programa que se va a iniciar no está en la ruta de acceso de búsqueda de Winmgmt.exe. Si el proceso recién creado intenta interactuar con objetos en el sistema de destino sin los privilegios de acceso adecuados, se termina sin notificación a este método.
+Se debe especificar una ruta de acceso completa en los casos en los que el programa que se va a iniciar no se encuentra en la ruta de acceso de búsqueda Winmgmt.exe. Si el proceso recién creado intenta interactuar con objetos en el sistema de destino sin los privilegios de acceso adecuados, se termina sin notificación a este método.
 
-Por motivos de seguridad, el método **\_ Process. Create de Win32** no se puede usar para iniciar un proceso interactivo de forma remota.
+Por motivos de seguridad, **el método \_ Process.Create de Win32** no se puede usar para iniciar un proceso interactivo de forma remota.
 
-Los procesos creados con el método **\_ Process. Create de Win32** están limitados por el objeto de trabajo a menos que se especifique la marca **crear \_ separación \_ del \_ trabajo** . Para obtener más información, vea [**Win32 \_ ProcessStartup**](win32-processstartup.md) y [**\_ \_ ProviderHostQuotaConfiguration**](/windows/desktop/WmiSdk/--providerhostquotaconfiguration).
+Los procesos creados con **el método \_ Process.Create de Win32** están limitados por el objeto de trabajo a menos que se especifique la marca CREATE **\_ BREAKAWAY FROM \_ \_ JOB.** Para obtener más información, [**vea Win32 \_ ProcessStartup**](win32-processstartup.md) y [**\_ \_ ProviderHostQuotaConfiguration.**](/windows/desktop/WmiSdk/--providerhostquotaconfiguration)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -173,7 +173,7 @@ else
 
 
 
-En el siguiente ejemplo de código de VBScript se crea un proceso de Bloc de notas en el equipo local. [**Win32 \_ ProcessStartup**](win32-processstartup.md) se usa para configurar las opciones del proceso.
+En el siguiente ejemplo de código vbscript se crea Bloc de notas proceso en el equipo local. [**Win32 \_ ProcessStartup**](win32-processstartup.md) se usa para configurar los valores del proceso.
 
 
 ```VB
@@ -214,8 +214,8 @@ End If
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -227,10 +227,10 @@ End If
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Proceso Win32**](win32-process.md)
+[**Proceso \_ win32**](win32-process.md)
 </dt> <dt>
 
-[Tareas de WMI: procesos](/windows/desktop/WmiSdk/wmi-tasks--processes)
+[Tareas wmi: procesos](/windows/desktop/WmiSdk/wmi-tasks--processes)
 </dt> </dl>
 
  

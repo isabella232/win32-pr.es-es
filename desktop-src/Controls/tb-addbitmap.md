@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_ADDBITMAP (commctrl. h)
-description: Agrega una o más imágenes a la lista de imágenes de botón disponibles para una barra de herramientas.
+title: TB_ADDBITMAP mensaje (Commctrl.h)
+description: Agrega una o varias imágenes a la lista de imágenes de botón disponibles para una barra de herramientas.
 ms.assetid: 9040ab84-a5f3-4e4b-bc90-590b2ceeaa5a
 keywords:
-- TB_ADDBITMAP controles de mensajes de Windows
+- TB_ADDBITMAP controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d83cba4b4dec9b490a3e8f41db9cc7721dd23b08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61b024c224ab305c4a13942c62a2de8d769d2f23b82d21ef295e024bae82f563
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103804129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919235"
 ---
-# <a name="tb_addbitmap-message"></a>\_Mensaje ADDBITMAP TB
+# <a name="tb_addbitmap-message"></a>Mensaje \_ ADDBITMAP de TB
 
-Agrega una o más imágenes a la lista de imágenes de botón disponibles para una barra de herramientas.
+Agrega una o varias imágenes a la lista de imágenes de botón disponibles para una barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,28 +32,28 @@ Agrega una o más imágenes a la lista de imágenes de botón disponibles para u
 *wParam* 
 </dt> <dd>
 
-Número de imágenes de botón en el mapa de bits. Si *lParam* especifica un mapa de bits definido por el sistema, este parámetro se omite.
+Número de imágenes de botón en el mapa de bits. Si *lParam especifica* un mapa de bits definido por el sistema, se omite este parámetro.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TBADDBITMAP**](/windows/win32/api/commctrl/ns-commctrl-tbaddbitmap) que contiene el identificador de un recurso de mapa de bits y el identificador de la instancia de módulo con el archivo ejecutable que contiene el recurso de mapa de bits.
+Puntero a una [**estructura TBADDBITMAP**](/windows/win32/api/commctrl/ns-commctrl-tbaddbitmap) que contiene el identificador de un recurso de mapa de bits y el identificador de la instancia del módulo con el archivo ejecutable que contiene el recurso de mapa de bits.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el índice de la primera imagen nueva si se realiza correctamente, o-1 en caso contrario.
+Devuelve el índice de la primera imagen nueva si se realiza correctamente o -1 en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la barra de herramientas se creó mediante la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , debe enviar el mensaje de [**TB \_ BUTTONSTRUCTSIZE**](tb-buttonstructsize.md) a la barra de herramientas antes de enviar **TB \_ ADDBITMAP**.
+Si la barra de herramientas se creó mediante la función [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) debe enviar el mensaje [**\_ TB BUTTONSTRUCTSIZE**](tb-buttonstructsize.md) a la barra de herramientas antes de **enviar TB \_ ADDBITMAP**.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un mapa de bits a partir de un recurso (IDB \_ BITMAP1), se asigna el color de fondo (negro en este caso) al color de la superficie del botón del sistema y se agrega a la barra de herramientas.
+En el ejemplo siguiente se crea un mapa de bits a partir de un recurso (IDB BITMAP1), se asigna el color de fondo (negro en este caso) al color de la cara del botón del sistema y se agrega a la barra de \_ herramientas.
 
 
 ```C++
@@ -80,9 +80,9 @@ int index = SendMessage (hWndToolbar, TB_ADDBITMAP, 0, (LPARAM)&tb);
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,28 +1,28 @@
 ---
-description: Las \_ constantes TAPIERR proporcionan información sobre los errores de ejecución de la función.
+description: Las constantes TAPIERR \_ proporcionan información sobre los errores de ejecución de la función.
 ms.assetid: 6d1cf18b-efeb-4703-9b8e-fce59b61b63f
-title: Constantes de TAPIERR_ (TAPI. h)
+title: TAPIERR_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e8a60e2a625ff456a4a8aa2730b80000e92ff54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40f84e8f5cbe840ba428575d3ea6aeff40242fdbd2b97440d7538893421eab7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773045"
 ---
-# <a name="tapierr_-constants"></a>Constantes de TAPIERR \_
+# <a name="tapierr_-constants"></a>Constantes \_ TAPIERR
 
-Las **\_ constantes TAPIERR** proporcionan información sobre los errores de ejecución de la función.
+Las **constantes TAPIERR \_ proporcionan** información sobre los errores de ejecución de la función.
 
 <dl> <dt>
 
-<span id="TAPIERR_CONNECTED"></span><span id="tapierr_connected"></span>**TAPIERR \_ conectado**
+<span id="TAPIERR_CONNECTED"></span><span id="tapierr_connected"></span>**TAPIERR \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 
 
-No se puede realizar la operación mientras el estado de la llamada es conectado.
+La operación no se puede realizar mientras el estado de la llamada está conectado.
 
 
 </dt> </dl> </dd> <dt>
@@ -87,12 +87,12 @@ El dispositivo necesario está en uso.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TAPIERR_DROPPED"></span><span id="tapierr_dropped"></span>**TAPIERR \_ quitado**
+<span id="TAPIERR_DROPPED"></span><span id="tapierr_dropped"></span>**TAPIERR \_ DROPPED**
 </dt> <dd> <dl> <dt>
 
 
 
-Se quitó la llamada.
+Se ha eliminado la llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -102,7 +102,7 @@ Se quitó la llamada.
 
 
 
-El puntero a la dirección de destino no es válido, es **null** o la cadena de dirección de destino es demasiado larga.
+El puntero a la dirección de destino no es válido, **es NULL** o la cadena de dirección de destino es demasiado larga.
 
 
 </dt> </dl> </dd> <dt>
@@ -132,7 +132,7 @@ El identificador de clase de dispositivo solicitado no es válido.
 
 
 
-El puntero no hace referencia a una ubicación de memoria válida. Se han especificado uno o varios de los punteros *lpszDestAddress*, *lpszAppName*, *lpszCalledParty* o *lpszComment* , pero no son válidos.
+El puntero no hace referencia a una ubicación de memoria válida. Se han especificado uno o varios de los punteros *lpszDestAddress*, *lpszAppName*, *lpszCalledParty o* *lpszComment,* pero no son válidos.
 
 
 </dt> </dl> </dd> <dt>
@@ -152,7 +152,7 @@ El identificador de ventana no es válido.
 
 
 
-No hay ninguna aplicación de destinatario disponible para controlar la solicitud. El usuario debe iniciar la aplicación de destinatario y volver a intentarlo.
+No hay ninguna aplicación de destinatario disponible para controlar la solicitud. El usuario debe iniciar la aplicación de destinatario e intentarlo de nuevo.
 
 
 </dt> </dl> </dd> <dt>
@@ -182,7 +182,7 @@ Se canceló la solicitud de telefonía asistida.
 
 
 
-Error de solicitud por motivos no especificados.
+Error en la solicitud por motivos no especificados.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,7 +192,7 @@ Error de solicitud por motivos no especificados.
 
 
 
-Una aplicación de destinatario está activa, pero la cola de solicitudes está llena o no hay memoria suficiente para expandir la cola. La aplicación puede intentarlo de nuevo más tarde.
+Una aplicación de destinatario está activa, pero la cola de solicitudes está llena o no hay memoria suficiente para expandir la cola. La aplicación puede volver a intentarlo más adelante.
 
 
 </dt> </dl> </dd> <dt>
@@ -212,14 +212,14 @@ El identificador de solicitud al que se hace referencia no es válido.
 
 
 
-Se hizo referencia a un identificador de ventana desconocido.
+Se hubo una referencia a un identificador de ventana desconocido.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cualquier otro \_ valor de TAPIERR está obsoleto y no debe usarse.
+Cualquier otro valor TAPIERR \_ está obsoleto y no se debe usar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -227,8 +227,8 @@ Cualquier otro \_ valor de TAPIERR está obsoleto y no debe usarse.
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

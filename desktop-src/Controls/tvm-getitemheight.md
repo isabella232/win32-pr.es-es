@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_GETITEMHEIGHT (commctrl. h)
-description: Recupera el alto actual de cada elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro GetItemHeight de TreeView.
+title: TVM_GETITEMHEIGHT mensaje (Commctrl.h)
+description: Recupera el alto actual de cada elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ GetItemHeight.
 ms.assetid: 017476a3-1929-4a31-97a7-0f66175d47ea
 keywords:
-- TVM_GETITEMHEIGHT controles de mensajes de Windows
+- TVM_GETITEMHEIGHT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 789347b7a50f9bb42a7aebb6fecddf24c42c559c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 960e5f8c8651d9a18b40741e7888d325df5f011efacdcc0f629b52c7aab4a6bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120045795"
 ---
-# <a name="tvm_getitemheight-message"></a>\_Mensaje de GETITEMHEIGHT TVM
+# <a name="tvm_getitemheight-message"></a>Mensaje \_ GETITEMHEIGHT de TVM
 
-Recupera el alto actual de cada elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetItemHeight de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitemheight) .
+Recupera el alto actual de cada elemento de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ GetItemHeight.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_getitemheight)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Devuelve el alto de cada elemento, en píxeles.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

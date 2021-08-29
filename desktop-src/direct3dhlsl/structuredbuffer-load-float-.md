@@ -1,6 +1,6 @@
 ---
-title: 'StructuredBuffer:: Load (int) (función)'
-description: 'Lee los datos del búfer. | StructuredBuffer:: Load (int) (función)'
+title: Función StructuredBuffer::Load(int)
+description: Lee los datos del búfer. | Función StructuredBuffer::Load(int)
 ms.assetid: ef08d360-0494-49f7-9481-cb802e14aeee
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 883d483044a27e35848457e70e22888dd5ad6320
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4e68ea973edfbcdf3caa8bae0c5ff92693ac15ffccf5230bbf5dcf30d83a9bae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120095035"
 ---
-# <a name="structuredbufferloadint-function"></a>StructuredBuffer:: Load (int) (función)
+# <a name="structuredbufferloadint-function"></a>Función StructuredBuffer::Load(int)
 
 Lee los datos del búfer.
 
@@ -39,7 +39,7 @@ Lee los datos del búfer.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,15 +52,15 @@ Ubicación del búfer.
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**StructuredBuffer**](sm5-object-structuredbuffer.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto StructuredBuffer.**](sm5-object-structuredbuffer.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -68,11 +68,11 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Cargar métodos](structuredbuffer-load.md)
+[Métodos de carga](structuredbuffer-load.md)
 </dt> </dl>
 
  

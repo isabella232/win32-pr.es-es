@@ -1,7 +1,7 @@
 ---
-description: 'Usa la función ResumeThread de Microsoft Win32 para continuar con la operación del subproceso de trabajo después de una llamada anterior a la función miembro CMsgThread:: SuspendThread.'
+description: Usa la función ResumeThread de Microsoft Win32 para continuar el funcionamiento del subproceso de trabajo después de una llamada anterior a la función miembro CMsgThread::SuspendThread.
 ms.assetid: 5c94a079-5c74-4024-8fb0-71c7ef9c7e73
-title: Método CMsgThread. ResumeThread (Msgthrd. h)
+title: Método CMsgThread.ResumeThread (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3e0a20bb60f4a10a06ef50f58c449496cae8050d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ed9e2ea546f2c14ceea4f3766db68c1d70ce44ab4dda542315bf7dd30a2d715d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915835"
 ---
-# <a name="cmsgthreadresumethread-method"></a>CMsgThread. ResumeThread (método)
+# <a name="cmsgthreadresumethread-method"></a>Método CMsgThread.ResumeThread
 
-Usa la función **ResumeThread** de Microsoft Win32 para continuar con la operación del subproceso de trabajo después de una llamada anterior a la función miembro [**CMsgThread:: SuspendThread**](cmsgthread-suspendthread.md) .
+Usa la función **ResumeThread** de Microsoft Win32 para continuar el funcionamiento del subproceso de trabajo después de una llamada anterior a la función miembro [**CMsgThread::SuspendThread.**](cmsgthread-suspendthread.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función miembro se ejecuta correctamente, el valor devuelto es el recuento de suspensión anterior del subproceso. Si se produce un error en la función miembro, el valor devuelto es 0xFFFFFFFF. Para obtener información de error extendida, llame a la función **GetLastError** de Microsoft Win32.
+Si la función miembro se realiza correctamente, el valor devuelto es el recuento de suspensión anterior del subproceso. Si se produce un error en la función miembro, el valor devuelto es 0xFFFFFFFF. Para obtener información de error extendida, llame a la función **GetLastError** de Microsoft Win32.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Si la función miembro se ejecuta correctamente, el valor devuelto es el recuent
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Msgthrd. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Msgthrd.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Si la función miembro se ejecuta correctamente, el valor devuelto es el recuent
 
 <dl> <dt>
 
-[**Clase CMsgThread**](cmsgthread.md)
+[**CMsgThread (clase)**](cmsgthread.md)
 </dt> </dl>
 
  

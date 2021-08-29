@@ -4,63 +4,63 @@ ms.assetid: baa60cd1-a1f0-4dbe-b934-aeb1a5c6b784
 title: Búferes de índice (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7151fae6deb72a0c569d269c80e5b13bf946f9d0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d5e44ea8752948b3a6dbf9a32b950be1b5de28bc709abbe3dad89959315ace9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846615"
 ---
 # <a name="index-buffers-direct3d-9"></a>Búferes de índice (Direct3D 9)
 
-Los búferes de índice, representados por la interfaz [**IDirect3DIndexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) , son búferes de memoria que contienen datos de índice. Los datos de índice, o índices, son desplazamientos enteros en búferes de vértices y se usan para representar primitivas mediante el método [**IDirect3DDevice9::D rawindexedprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawindexedprimitive) .
+Los búferes de índice, representados por la [**interfaz IDirect3DIndexBuffer9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) son búferes de memoria que contienen datos de índice. Los datos de índice, o índices, son desplazamientos enteros en búferes de vértice y se usan para representar primitivas mediante el método [**IDirect3DDevice9::D rawIndexedPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawindexedprimitive)
 
-Un búfer de vértice contiene vértices; por lo tanto, puede dibujar un búfer de vértices con o sin primitivos indizados. Sin embargo, dado que un búfer de índice contiene índices, no se puede utilizar un búfer de índice sin un búfer de vértices correspondiente. (Como nota al margen, [**IDirect3DDevice9::D rawindexedprimitiveup**](/windows/desktop/api) y [**IDirect3DDevice9::D rawprimitiveup**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitiveup) son los únicos métodos de dibujo que dibujan sin un índice o un búfer de vértice).
+Un búfer de vértices contiene vértices; por lo tanto, puede dibujar un búfer de vértices con o sin primitivas indizadas. Sin embargo, dado que un búfer de índice contiene índices, no se puede usar un búfer de índice sin un búfer de vértices correspondiente. (Como nota lateral, [**IDirect3DDevice9::D rawIndexedPrimitiveUP**](/windows/desktop/api) e [**IDirect3DDevice9::D rawPrimitiveUP**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitiveup) son los únicos métodos de dibujo que se dibujan sin un índice o un búfer de vértices).
 
 ## <a name="index-buffer-description"></a>Descripción del búfer de índice
 
-Un búfer de índice se describe en cuanto a sus capacidades, como dónde existe en la memoria, si admite lectura y escritura, y el tipo y el número de índices que puede contener. Estos rasgos se encuentran en una estructura [**D3DINDEXBUFFER \_ DESC**](d3dindexbuffer-desc.md) .
+Un búfer de índice se describe en términos de sus funcionalidades, como dónde existe en la memoria, si admite lectura y escritura, y el tipo y el número de índices que puede contener. Estos rasgos se mantienen en una [**estructura D3DINDEXBUFFER \_ DESC.**](d3dindexbuffer-desc.md)
 
-Las descripciones del búfer de índice indican a la aplicación cómo se creó un búfer existente. Proporciona una estructura de Descripción vacía para que el sistema rellene con las capacidades de un búfer de índice creado previamente.
+Las descripciones del búfer de índice le dicen a la aplicación cómo se creó un búfer existente. Proporcione una estructura de descripción vacía para que el sistema rellene las funcionalidades de un búfer de índice creado previamente.
 
 -   El miembro Format describe el formato de superficie de los datos del búfer de índice.
 -   El tipo identifica el tipo de recurso del búfer de índice.
--   El miembro de la estructura Usage contiene marcas de capacidad generales. La \_ marca D3DUSAGE SOFTWAREPROCESSING indica que el búfer de índice se va a usar con el procesamiento de vértices de software. La presencia de la \_ marca WRITEONLY de D3DUSAGE en uso indica que la memoria del búfer de índice solo se utiliza para las operaciones de escritura. Esto libera el controlador para colocar los datos de índice en la mejor ubicación de memoria para habilitar el procesamiento y la representación rápidos. Si \_ no se usa la marca WRITEONLY de D3DUSAGE, es menos probable que el controlador Coloque los datos en una ubicación que sea ineficaz para las operaciones de lectura. Esto sacrifica la velocidad de procesamiento y representación. Si no se especifica esta marca, se supone que las aplicaciones realizan operaciones de lectura y escritura en los datos del búfer de índice.
--   Grupo especifica la clase de memoria asignada para el búfer de índice. La \_ marca D3DPOOL SYSTEMMEM indica que el sistema creó el búfer de índice en la memoria del sistema.
--   El miembro size almacena el tamaño, en bytes, de los datos del búfer de vértices.
--   No se usa el último parámetro pSharedHandle. Establézcalo en **null**.
+-   El miembro usage structure contiene marcas de funcionalidad general. La marca D3DUSAGE SOFTWAREPROCESSING indica que el búfer de índice se va a usar con el procesamiento de \_ vértices de software. La presencia de la marca WRITEONLY de D3DUSAGE en Usage indica que la memoria del búfer de índice solo se usa \_ para las operaciones de escritura. Esto libera al controlador para colocar los datos de índice en la mejor ubicación de memoria para permitir un procesamiento y una representación rápidos. Si no se usa la marca WRITEONLY de D3DUSAGE, es menos probable que el controlador coloque los datos en una ubicación ineficaz para las operaciones \_ de lectura. Esto sacrifique algo de velocidad de procesamiento y representación. Si no se especifica esta marca, se supone que las aplicaciones realizan operaciones de lectura y escritura en los datos del búfer de índice.
+-   Pool especifica la clase de memoria asignada para el búfer de índice. La marca SYSTEMMEM de D3DPOOL indica que el sistema creó el \_ búfer de índice en la memoria del sistema.
+-   El miembro Size almacena el tamaño, en bytes, de los datos del búfer de vértices.
+-   No se usa el último parámetro pSharedHandle. Esta establezca esta propiedad **en NULL.**
 
 ## <a name="index-processing-requirements"></a>Requisitos de procesamiento de índices
 
-El rendimiento de las operaciones de procesamiento de índices depende en gran medida de dónde exista el búfer de índice en la memoria y qué tipo de dispositivo de representación se está usando. Las aplicaciones controlan la asignación de memoria para los búferes de índice cuando se crean. Cuando \_ se establece la marca de memoria D3DPOOL SYSTEMMEM, el búfer de índice se crea en la memoria del sistema. Cuando \_ se usa la marca de memoria predeterminada de D3DPOOL, el controlador de dispositivo determina dónde se asigna mejor la memoria para el búfer de índice, que a menudo se conoce como memoria óptima para el controlador. La memoria óptima del controlador puede ser la memoria de vídeo local, la memoria de vídeo no local o la memoria del sistema.
+El rendimiento de las operaciones de procesamiento de índices depende en gran medida de dónde exista el búfer de índice en la memoria y del tipo de dispositivo de representación que se esté utilizando. Las aplicaciones controlan la asignación de memoria para los búferes de índice cuando se crean. Cuando se establece la marca de memoria D3DPOOL \_ SYSTEMMEM, el búfer de índice se crea en la memoria del sistema. Cuando se usa la marca de memoria D3DPOOL DEFAULT, el controlador de dispositivo determina dónde se asigna mejor la memoria para el búfer de índice, a menudo denominada memoria óptima para el \_ controlador. La memoria óptima del controlador puede ser memoria de vídeo local, memoria de vídeo no local o memoria del sistema.
 
-Al establecer la \_ marca de comportamiento D3DUSAGE SOFTWAREPROCESSING cuando se llama al método [**IDirect3DDevice9:: CreateIndexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer) , se especifica que el búfer de índice se va a usar con el procesamiento de vértices de software. Esta marca es necesaria en el procesamiento de vértices en modo mixto (D3DCREATE \_ Mixed \_ VERTEXPROCESSING) cuando se usa el procesamiento de vértices de software.
+Establecer la marca de comportamiento D3DUSAGE SOFTWAREPROCESSING al llamar al método \_ [**IDirect3DDevice9::CreateIndexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer) especifica que el búfer de índice se va a usar con el procesamiento de vértices de software. Esta marca es necesaria en el procesamiento de vértices en modo mixto (D3DCREATE \_ MIXED VERTEXPROCESSING) cuando se usa el procesamiento de \_ vértices de software.
 
-La aplicación puede escribir directamente índices en un búfer de índice asignado en la memoria óptima del controlador. Esta técnica evita una operación de copia redundante más adelante. Esta técnica no funciona bien si la aplicación Lee los datos de un búfer de índice, porque las operaciones de lectura realizadas por el host desde la memoria óptima del controlador pueden ser muy lentas. Por lo tanto, si la aplicación necesita leer durante el procesamiento o escribe datos en el búfer de forma errática, un búfer de índice de la memoria del sistema es una opción mejor.
+La aplicación puede escribir directamente índices en un búfer de índice asignado en la memoria óptima del controlador. Esta técnica evita una operación de copia redundante más adelante. Esta técnica no funciona bien si la aplicación lee datos de nuevo desde un búfer de índice, ya que las operaciones de lectura realizadas por el host desde la memoria óptima del controlador pueden ser muy lentas. Por lo tanto, si la aplicación necesita leer durante el procesamiento o escribe datos en el búfer de forma errática, un búfer de índice de memoria del sistema es una mejor opción.
 
 > [!Note]  
-> Use siempre \_ el valor predeterminado de D3DPOOL, excepto si no desea usar memoria de vídeo o usar grandes cantidades de RAM con bloqueo de página cuando el controlador coloca los búferes de vértice o de índice en la memoria AGP.
+> Use siempre D3DPOOL DEFAULT, excepto cuando no desee usar memoria de vídeo o usar grandes cantidades de RAM bloqueada por página cuando el controlador coloca búferes de vértices o índices en la memoria \_ AGP.
 
  
 
-## <a name="create-an-index-buffer"></a>Crear un búfer de índice
+## <a name="create-an-index-buffer"></a>Creación de un búfer de índice
 
-Cree un objeto de búfer de índice llamando al método [**IDirect3DDevice9:: CreateIndexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer) , que acepta seis parámetros.
+Cree un objeto de búfer de índice llamando al método [**IDirect3DDevice9::CreateIndexBuffer,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer) que acepta seis parámetros.
 
 -   El primer parámetro especifica la longitud del búfer de índice, en bytes.
--   El segundo parámetro es un conjunto de controles de uso. Entre otras cosas, su valor determina si los vértices a los que se hace referencia en los índices pueden contener información de recorte. Para mejorar el rendimiento, especifique D3DUSAGE \_ DONOTCLIP cuando no se recorte.
+-   El segundo parámetro es un conjunto de controles de uso. Entre otras cosas, su valor determina si los vértices a los que hacen referencia los índices pueden contener información de recorte. Para mejorar el rendimiento, especifique D3DUSAGE \_ DONOTCLIP cuando no sea necesario recortar.
 
-    La \_ marca D3DUSAGE SOFTWAREPROCESSING se puede establecer cuando el procesamiento de vértices de modo mixto o software (D3DCREATE \_ mixto \_ VERTEXPROCESSING/D3DCREATE \_ software \_ VERTEXPROCESSING) está habilitado para ese dispositivo. D3DUSAGE \_ SOFTWAREPROCESSING se debe establecer para que los búferes se usen con el procesamiento de vértices de software en modo mixto, pero no se debe establecer para el mejor rendimiento posible al usar el procesamiento de índices de hardware en modo mixto (D3DCREATE de \_ hardware \_ VERTEXPROCESSING). Sin embargo, el establecimiento de D3DUSAGE \_ SOFTWAREPROCESSING es la única opción cuando se usa un solo búfer con el procesamiento de vértices de hardware y software. D3DUSAGE \_ SOFTWAREPROCESSING se permite para dispositivos mixtos y de software.
+    La marca D3DUSAGE SOFTWAREPROCESSING se puede establecer cuando el procesamiento de vértices de software o de modo mixto \_ (D3DCREATE \_ MIXED \_ VERTEXPROCESSING/D3DCREATE \_ SOFTWARE \_ VERTEXPROCESSING) está habilitado para ese dispositivo. D3DUSAGE SOFTWAREPROCESSING debe establecerse para que los búferes se usen con el procesamiento de vértices de software en modo mixto, pero no se debe establecer para obtener el mejor rendimiento posible cuando se usa el procesamiento de índices de hardware en modo mixto \_ (D3DCREATE \_ HARDWARE \_ VERTEXPROCESSING). Sin embargo, establecer D3DUSAGE SOFTWAREPROCESSING es la única opción cuando se usa un solo búfer con el procesamiento de \_ vértices de hardware y software. D3DUSAGE \_ SOFTWAREPROCESSING se permite para dispositivos mixtos y de software.
 
-    Es posible forzar búferes de vértices y de índices en la memoria del sistema mediante \_ la especificación de D3DPOOL SYSTEMMEM, incluso cuando el procesamiento de índices se realiza en el hardware. Se trata de una manera de evitar grandes cantidades excesivas de memoria bloqueada en páginas cuando un controlador coloca estos búferes en la memoria AGP.
+    Es posible forzar los búferes de vértices e índices en la memoria del sistema especificando D3DPOOL SYSTEMMEM, incluso cuando el procesamiento del índice se realiza \_ en hardware. Se trata de una manera de evitar grandes cantidades de memoria bloqueada por páginas cuando un controlador coloca estos búferes en la memoria de AGP.
 
--   El tercer parámetro es el miembro D3DFMT \_ INDEX16 o D3DFMT \_ INDEX32 del tipo enumerado [D3DFORMAT](d3dformat.md) que especifica el tamaño de cada índice.
+-   El tercer parámetro es el miembro D3DFMT INDEX16 o D3DFMT INDEX32 del tipo enumerado \_ \_ [D3DFORMAT](d3dformat.md) que especifica el tamaño de cada índice.
 
--   El cuarto parámetro es un miembro del tipo enumerado [**D3DPOOL**](./d3dpool.md) que indica al sistema dónde colocar el nuevo búfer de índice en la memoria.
+-   El cuarto parámetro es un miembro del tipo enumerado [**D3DPOOL**](./d3dpool.md) que indica al sistema dónde en memoria colocar el nuevo búfer de índice.
 
--   El último parámetro que [**IDirect3DDevice9:: CreateIndexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer) acepta es la dirección de una variable que se rellena con un puntero a la nueva interfaz [**IDirect3DIndexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) del objeto de búfer de vértices, si la llamada se realiza correctamente.
+-   El parámetro final que [**acepta IDirect3DDevice9::CreateIndexBuffer**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createindexbuffer) es la dirección de una variable que se rellena con un puntero a la nueva interfaz [**IDirect3DIndexBuffer9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dindexbuffer9) del objeto de búfer de vértices, si la llamada se realiza correctamente.
 
-En el ejemplo de código de C++ siguiente se muestra cómo la creación de un búfer de índice podría ser similar en el código.
+En el siguiente ejemplo de código de C++ se muestra el aspecto que podría tener la creación de un búfer de índice en el código.
 
 
 ```
@@ -79,13 +79,13 @@ if( FAILED( d3dDevice->CreateIndexBuffer( 16384 *sizeof(WORD),
 
 
 
-## <a name="access-an-index-buffer"></a>Acceder a un búfer de índice
+## <a name="access-an-index-buffer"></a>Acceso a un búfer de índice
 
-Los objetos de búfer de índice permiten a las aplicaciones tener acceso directamente a la memoria asignada para los datos de índice. Puede recuperar un puntero a la memoria del búfer de índice llamando al método [**IDirect3DIndexBuffer9:: Lock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock) y, a continuación, accediendo a la memoria según sea necesario para rellenar el búfer con nuevos datos de índice o para leer los datos que contiene. El método lock acepta cuatro parámetros. El primero, *OffsetToLock*, es el desplazamiento en los datos del índice. El segundo parámetro es el tamaño, medido en bytes, de los datos del índice. El tercer parámetro aceptado por el método **IDirect3DIndexBuffer9:: Lock** , *ppbData*, es la dirección de un puntero de bytes rellenado con un puntero a los datos del índice, si la llamada se realiza correctamente.
+Los objetos de búfer de índice permiten que las aplicaciones accedan directamente a la memoria asignada para los datos de índice. Puede recuperar un puntero a la memoria del búfer de índice llamando al método [**IDirect3DIndexBuffer9::Lock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock) y, a continuación, accediendo a la memoria según sea necesario para rellenar el búfer con nuevos datos de índice o para leer los datos que contiene. El método Lock acepta cuatro parámetros. El primero, *OffsetToLock*, es el desplazamiento en los datos de índice. El segundo parámetro es el tamaño, medido en bytes, de los datos de índice. El tercer parámetro aceptado por el método **IDirect3DIndexBuffer9::Lock,** *ppbData*, es la dirección de un puntero BYTE rellenado con un puntero a los datos del índice, si la llamada se realiza correctamente.
 
-El último parámetro, *Flags*, indica al sistema cómo debe bloquearse la memoria. Puede utilizarlo para indicar el modo en que la aplicación tiene acceso a los datos en el búfer. Especifique las constantes del parámetro *Flags* según la forma en que la aplicación tendrá acceso a los datos del índice. Esto permite que el controlador bloquee la memoria y proporcione el mejor rendimiento según el tipo de acceso solicitado. Use \_ la marca ReadOnly de D3DLOCK si la aplicación solo va a leer desde la memoria del búfer de índice. La inclusión de esta marca permite a Direct3D optimizar sus procedimientos internos para mejorar la eficacia, dado que el acceso a la memoria será de solo lectura.
+El último parámetro, *Flags*, indica al sistema cómo se debe bloquear la memoria. Puede usarlo para indicar cómo la aplicación accede a los datos del búfer. Especifique constantes para el *parámetro Flags* según la forma en que la aplicación tendrá acceso a los datos de índice. Esto permite al controlador bloquear la memoria y proporcionar el mejor rendimiento dado el tipo de acceso solicitado. Use la marca D3DLOCK \_ READONLY si la aplicación solo leerá desde la memoria del búfer de índice. La inclusión de esta marca permite a Direct3D optimizar sus procedimientos internos para mejorar la eficacia, dado que el acceso a la memoria será de solo lectura.
 
-Después de rellenar o leer los datos del índice, llame al método [**IDirect3DIndexBuffer9:: Unlock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-unlock) , tal como se muestra en el ejemplo de código siguiente.
+Después de rellenar o leer los datos del índice, llame al método [**IDirect3DIndexBuffer9::Unlock,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-unlock) como se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -117,15 +117,15 @@ m_pIndexBuffer->Unlock();
 
 > [!Note]
 >
-> Si crea un búfer de índice con la \_ marca WRITEONLY de D3DUSAGE, no use la \_ marca de bloqueo de solo lectura D3DLOCK. Use la \_ marca ReadOnly de D3DLOCK si la aplicación solo va a leer desde la memoria del búfer de índice. La inclusión de esta marca permite a Direct3D optimizar sus procedimientos internos para mejorar la eficacia, dado que el acceso a la memoria será de solo lectura.
+> Si crea un búfer de índice con la marca WRITEONLY D3DUSAGE, no use la marca de bloqueo \_ D3DLOCK \_ READONLY. Use la marca D3DLOCK \_ READONLY si la aplicación solo leerá desde la memoria del búfer de índice. La inclusión de esta marca permite a Direct3D optimizar sus procedimientos internos para mejorar la eficacia, dado que el acceso a la memoria será de solo lectura.
 >
-> Para obtener información sobre el uso de D3DLOCK \_ discard o D3DLOCK \_ NOOVERWRITE para el parámetro *Flags* del método [**IDirect3DIndexBuffer9:: Lock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock) , vea [optimizaciones de rendimiento (Direct3D 9)](performance-optimizations.md).
+> Para obtener información sobre el uso de D3DLOCK DISCARD o D3DLOCK NOOVERWRITE para el parámetro Flags del método \_ \_ [**IDirect3DIndexBuffer9::Lock,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dindexbuffer9-lock) vea Optimizaciones de [rendimiento (Direct3D 9).](performance-optimizations.md) 
 
  
 
-En C++, dado que tiene acceso directo a la memoria asignada para el búfer de índice, asegúrese de que la aplicación tenga acceso correctamente a la memoria asignada. De lo contrario, se arriesga a representar que la memoria no es válida. Use el paso del formato de índice que utiliza la aplicación para pasar de un índice del búfer asignado a otro.
+En C++, dado que accede directamente a la memoria asignada para el búfer de índice, asegúrese de que la aplicación accede correctamente a la memoria asignada. De lo contrario, corre el riesgo de representar esa memoria como no válida. Use el paso del formato de índice que usa la aplicación para pasar de un índice del búfer asignado a otro.
 
-Recupere información sobre un búfer de índice mediante una llamada al método [**IDirect3DIndexBuffer9:: GetDesc**](/windows/desktop/api) . Este método rellena los miembros de la estructura [**D3DINDEXBUFFER \_ DESC**](d3dindexbuffer-desc.md) con información sobre el búfer de índice.
+Recupere información sobre un búfer de índice llamando al [**método IDirect3DIndexBuffer9::GetDesc.**](/windows/desktop/api) Este método rellena los miembros de la estructura [**D3DINDEXBUFFER \_ DESC**](d3dindexbuffer-desc.md) con información sobre el búfer de índice.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -134,7 +134,7 @@ Recupere información sobre un búfer de índice mediante una llamada al método
 [Recursos de Direct3D](direct3d-resources.md)
 </dt> <dt>
 
-[Representación de búferes de vértices y de índices (Direct3D 9)](rendering-from-vertex-and-index-buffers.md)
+[Representación a partir de búferes de vértices e índices (Direct3D 9)](rendering-from-vertex-and-index-buffers.md)
 </dt> <dt>
 
 [Búferes de vértices (Direct3D 9)](vertex-buffers.md)

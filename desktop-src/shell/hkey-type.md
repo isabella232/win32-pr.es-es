@@ -1,6 +1,6 @@
 ---
-description: Estos tipos de datos se pueden utilizar para especificar el tipo de un valor del registro.
-title: Tipos de datos del registro (Winnt. h)
+description: Estos tipos de datos se pueden usar para especificar el tipo de un valor del Registro.
+title: Tipos de datos del Registro (Winnt.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 4185e7af-e1f0-40af-91c7-0ff7e27896ae
@@ -24,33 +24,33 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4de4595b55716d58df04a598dd6ba298f22829d6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 78c5c7537794e3a00e9aa2015956ecc6946830d98b5fffcdf0d7351c878cfe0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104998983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009465"
 ---
-# <a name="registry-data-types"></a>Tipos de datos del registro
+# <a name="registry-data-types"></a>Tipos de datos del Registro
 
-Estos tipos de datos se pueden utilizar para especificar el tipo de un valor del registro.
+Estos tipos de datos se pueden usar para especificar el tipo de un valor del Registro.
 
 
 
 | Constante                                                                                                                                                                                      | Descripción                                                                                                                                                                                                                                                                                                                  |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="REG_BINARY"></span><span id="reg_binary"></span><dl> <dt>**\_binario de reg**</dt> </dl>                                          | Datos binarios en cualquier formato.<br/>                                                                                                                                                                                                                                                                                          |
-| <span id="REG_DWORD"></span><span id="reg_dword"></span><dl> <dt>**\_valor DWORD reg**</dt> </dl>                                             | número de bits 32.<br/>                                                                                                                                                                                                                                                                                                    |
-| <span id="REG_QWORD"></span><span id="reg_qword"></span><dl> <dt>**QWord de REG \_**</dt> </dl>                                             | número de bits 64.<br/>                                                                                                                                                                                                                                                                                                    |
-| <span id="REG_DWORD_LITTLE_ENDIAN"></span><span id="reg_dword_little_endian"></span><dl> <dt>**REG \_ DWORD \_ Little \_ endian**</dt> </dl> | 32: número de bits en formato Little-Endian. Es equivalente a **reg \_ DWORD**.<br/> En el formato Little-endian, se almacena un valor multibyte en la memoria desde el byte más bajo (el "pequeño extremo") hasta el byte más alto. Por ejemplo, el valor 0x12345678 se almacena como (0x78 0x56 0x34 0X12) en formato Little-Endian.<br/> |
-| <span id="REG_QWORD_LITTLE_ENDIAN"></span><span id="reg_qword_little_endian"></span><dl> <dt>**REG \_ QWord \_ Little \_ endian**</dt> </dl> | Número de 64 bits en formato Little-Endian. Esto es equivalente a **reg \_ QWord**. <br/>                                                                                                                                                                                                                                   |
-| <span id="REG_DWORD_BIG_ENDIAN"></span><span id="reg_dword_big_endian"></span><dl> <dt>**REG \_ DWORD \_ Big \_ endian**</dt> </dl>          | 32: número de bits en formato Big-Endian.<br/> En el formato Big-endian, se almacena un valor multibyte en la memoria desde el byte más alto (el "Big end") hasta el byte más bajo. Por ejemplo, el valor 0x12345678 se almacena como (0X12 0x34 0x56 0x78) en formato Big-Endian.<br/>                                                   |
-| <span id="REG_EXPAND_SZ"></span><span id="reg_expand_sz"></span><dl> <dt>**REG \_ expandir \_ SZ**</dt> </dl>                                | Cadena terminada en null que contiene referencias no expandidas a variables de entorno (por ejemplo, "% PATH%"). Será una cadena ANSI o Unicode, en función de si se utilizan las funciones Unicode o ANSI.<br/>                                                                                                     |
-| <span id="REG_LINK"></span><span id="reg_link"></span><dl> <dt>**\_vínculo reg**</dt> </dl>                                                | Vínculo simbólico Unicode.<br/>                                                                                                                                                                                                                                                                                            |
-| <span id="REG_MULTI_SZ"></span><span id="reg_multi_sz"></span><dl> <dt>**REG \_ multi \_ SZ**</dt> </dl>                                   | Matriz de cadenas terminadas en null que finalizan con dos caracteres null.<br/>                                                                                                                                                                                                                                      |
-| <span id="REG_NONE"></span><span id="reg_none"></span><dl> <dt>**REG \_ ninguno**</dt> </dl>                                                | No hay ningún tipo de valor definido.<br/>                                                                                                                                                                                                                                                                                            |
-| <span id="REG_RESOURCE_LIST"></span><span id="reg_resource_list"></span><dl> <dt>**\_lista de recursos del registro \_**</dt> </dl>                    | Lista de recursos de controlador de dispositivo.<br/>                                                                                                                                                                                                                                                                                      |
-| <span id="REG_SZ"></span><span id="reg_sz"></span><dl> <dt>**Registro \_ SZ**</dt> </dl>                                                      | Cadena terminada en un valor nulo. Será una cadena ANSI o Unicode, en función de si se utilizan las funciones Unicode o ANSI.<br/>                                                                                                                                                                                          |
+| <span id="REG_BINARY"></span><span id="reg_binary"></span><dl> <dt>**REG \_ BINARY**</dt> </dl>                                          | Datos binarios en cualquier formato.<br/>                                                                                                                                                                                                                                                                                          |
+| <span id="REG_DWORD"></span><span id="reg_dword"></span><dl> <dt>**REG \_ DWORD**</dt> </dl>                                             | Número de 32 bits.<br/>                                                                                                                                                                                                                                                                                                    |
+| <span id="REG_QWORD"></span><span id="reg_qword"></span><dl> <dt>**REG \_ QWORD**</dt> </dl>                                             | Número de 64 bits.<br/>                                                                                                                                                                                                                                                                                                    |
+| <span id="REG_DWORD_LITTLE_ENDIAN"></span><span id="reg_dword_little_endian"></span><dl> <dt>**REG \_ DWORD \_ LITTLE \_ ENDIAN**</dt> </dl> | Número de 32 bits en formato little-endian. Esto equivale a **REG \_ DWORD.**<br/> En formato little-endian, un valor multibyte se almacena en memoria desde el byte más bajo (el "pequeño extremo") hasta el byte más alto. Por ejemplo, el valor 0x12345678 se almacena como (0x78 0x56 0x34 0x12) en formato little-endian.<br/> |
+| <span id="REG_QWORD_LITTLE_ENDIAN"></span><span id="reg_qword_little_endian"></span><dl> <dt>**REG \_ QWORD \_ LITTLE \_ ENDIAN**</dt> </dl> | Número de 64 bits en formato little-endian. Esto equivale a **REG \_ QWORD.** <br/>                                                                                                                                                                                                                                   |
+| <span id="REG_DWORD_BIG_ENDIAN"></span><span id="reg_dword_big_endian"></span><dl> <dt>**REG \_ DWORD \_ BIG \_ ENDIAN**</dt> </dl>          | Número de 32 bits en formato big-endian.<br/> En formato big-endian, un valor multibyte se almacena en memoria desde el byte más alto (el "big end") hasta el byte más bajo. Por ejemplo, el valor 0x12345678 se almacena como (0x12 0x34 0x56 0x78) en formato big-endian.<br/>                                                   |
+| <span id="REG_EXPAND_SZ"></span><span id="reg_expand_sz"></span><dl> <dt>**REG \_ EXPAND \_ SZ**</dt> </dl>                                | Cadena terminada en NULL que contiene referencias no exploradas a variables de entorno (por ejemplo, "%PATH%"). Será una cadena Unicode o ANSI, dependiendo de si se usan las funciones Unicode o ANSI.<br/>                                                                                                     |
+| <span id="REG_LINK"></span><span id="reg_link"></span><dl> <dt>**REG \_ LINK**</dt> </dl>                                                | Vínculo simbólico Unicode.<br/>                                                                                                                                                                                                                                                                                            |
+| <span id="REG_MULTI_SZ"></span><span id="reg_multi_sz"></span><dl> <dt>**REG \_ MULTI \_ SZ**</dt> </dl>                                   | Matriz de cadenas terminadas en NULL terminadas por dos caracteres NULL.<br/>                                                                                                                                                                                                                                      |
+| <span id="REG_NONE"></span><span id="reg_none"></span><dl> <dt>**REG \_ NONE**</dt> </dl>                                                | No hay ningún tipo de valor definido.<br/>                                                                                                                                                                                                                                                                                            |
+| <span id="REG_RESOURCE_LIST"></span><span id="reg_resource_list"></span><dl> <dt>**REG \_ RESOURCE \_ LIST**</dt> </dl>                    | Lista de recursos del controlador de dispositivo.<br/>                                                                                                                                                                                                                                                                                      |
+| <span id="REG_SZ"></span><span id="reg_sz"></span><dl> <dt>**REG \_ SZ**</dt> </dl>                                                      | Cadena terminada en un valor nulo. Será una cadena Unicode o ANSI, dependiendo de si se usan las funciones Unicode o ANSI.<br/>                                                                                                                                                                                          |
 
 
 
@@ -60,7 +60,7 @@ Estos tipos de datos se pueden utilizar para especificar el tipo de un valor del
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Winnt. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Winnt.h</dt> </dl> |
 
 
 

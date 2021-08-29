@@ -1,69 +1,69 @@
 ---
-title: Grid (patrón de control)
-description: Describe las directrices y convenciones para implementar IGridProvider, incluida información sobre propiedades y métodos. El patrón de control Grid se usa para admitir controles que actúan como contenedores para una colección de elementos secundarios.
+title: Patrón de control de cuadrícula
+description: Describe directrices y convenciones para implementar IGridProvider, incluida información sobre propiedades y métodos. El patrón de control Grid se usa para admitir controles que actúan como contenedores para una colección de elementos secundarios.
 ms.assetid: c50fb6f7-884a-4147-a6b2-c59d787fc04b
 keywords:
-- Automatización de la interfaz de usuario, implementar el patrón de control Grid
-- Automatización de la interfaz de usuario, patrón de control Grid
-- Automatización de la interfaz de usuario, IGridProvider
+- Automatización de la interfaz de usuario, implementación del patrón de control Grid
+- Automatización de la interfaz de usuario,patrón de control grid
+- Automatización de la interfaz de usuario,IGridProvider
 - IGridProvider
-- implementar patrones de control de cuadrícula de UI Automation
+- implementación de Automatización de la interfaz de usuario de control grid
 - Patrones de control de cuadrícula
 - patrones de control, IGridProvider
-- patrones de control, implementar cuadrícula de UI Automation
-- patrones de control, cuadrícula
-- interfaces, IGridProvider
+- patrones de control, implementar Automatización de la interfaz de usuario Grid
+- patrones de control, Grid
+- interfaces,IGridProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 328d8536a367389a6d17422bd6f6476a3e82aa11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: db3e40a99fcc6dc7dd76bd4445aa5a4deb919ec498fa21889c9a54fcbf957e6e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098344"
 ---
-# <a name="grid-control-pattern"></a>Grid (patrón de control)
+# <a name="grid-control-pattern"></a>Patrón de control de cuadrícula
 
-Describe las directrices y convenciones para implementar [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider), incluida información sobre propiedades y métodos. El patrón de control **Grid** se usa para admitir controles que actúan como contenedores para una colección de elementos secundarios.
+Describe directrices y convenciones para implementar [**IGridProvider,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)incluida información sobre propiedades y métodos. El **patrón de** control Grid se usa para admitir controles que actúan como contenedores para una colección de elementos secundarios.
 
-Los elementos secundarios de este elemento deben implementar [**IGridItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider) y organizarse en un sistema de coordenadas lógico bidimensional que se pueda atravesar por fila y columna. Para obtener ejemplos de controles que implementan este patrón de control, vea [tipos de control y sus patrones de control admitidos](uiauto-controlpatternmapping.md).
+Los elementos secundarios de este elemento deben implementar [**IGridItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider) y organizarse en un sistema de coordenadas lógico bidimensional que se puede recorrer por fila y columna. Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y Sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Directrices y convenciones de implementación](#implementation-guidelines-and-conventions)
--   [Miembros requeridos para **IGridProvider**](#required-members-for-igridprovider)
+-   [Miembros necesarios para **IGridProvider**](#required-members-for-igridprovider)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="implementation-guidelines-and-conventions"></a>Directrices y convenciones de implementación
 
-Al implementar el patrón de control **Grid** , tenga en cuenta las siguientes directrices y convenciones:
+Al implementar el patrón de control **Grid,** tenga en cuenta las siguientes directrices y convenciones:
 
--   Las coordenadas de la cuadrícula son de base cero con la parte superior izquierda (o la celda superior derecha, según la configuración regional), con las coordenadas (0,0).
--   Si una celda está vacía, todavía debe devolverse un elemento de automatización de la interfaz de usuario de Microsoft para admitir la propiedad [**IGridItemProvider:: ContainingGrid**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_containinggrid) para esa celda. Esto es posible si el diseño de elementos secundarios de la cuadrícula es similar a una matriz irregular (consulte el ejemplo siguiente).
+-   Las coordenadas de cuadrícula se basan en cero y la celda superior izquierda (o superior derecha, según la configuración regional) tiene coordenadas (0,0).
+-   Si una celda está vacía, se debe devolver un elemento Automatización de la interfaz de usuario microsoft para admitir la propiedad [**IGridItemProvider::ContainingGrid**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_containinggrid) para esa celda. Esto es posible si el diseño de elementos secundarios de la cuadrícula es similar a una matriz irregular (consulte el ejemplo siguiente).
 
-    ![ejemplo de un control Grid con coordenadas vacías](images/grid.png)
+    ![ejemplo de un control de cuadrícula con coordenadas vacías](images/grid.png)
 
--   Todavía se requiere una cuadrícula con un elemento único para implementar [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) si se considera una cuadrícula lógicamente. El número de elementos secundarios de la cuadrícula es irrelevante.
--   Las filas y columnas ocultas, según la implementación del proveedor, se pueden cargar en el árbol de automatización de la interfaz de usuario y, por tanto, se reflejarán en las propiedades [**IGridProvider:: RowCount**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_rowcount) y [**ColumnCount**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_columncount) . Si las filas y columnas ocultas todavía no se han cargado, no deben contarse.
--   [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) no habilita la manipulación activa de una cuadrícula; [**ITransformProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) debe implementarse para habilitar esta funcionalidad.
--   Use un [**IUIAutomationStructureChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationstructurechangedeventhandler) para escuchar cambios estructurales o de diseño en la cuadrícula, como las celdas que se han agregado, quitado o combinado.
--   Use un [**IUIAutomationFocusChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationfocuschangedeventhandler) para realizar un seguimiento del recorrido a través de los elementos o las celdas de una cuadrícula.
+-   Una cuadrícula con un solo elemento sigue siendo necesaria para implementar [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) si se considera lógicamente una cuadrícula. El número de elementos secundarios de la cuadrícula es irrelevante.
+-   Las filas y columnas ocultas, según la implementación del proveedor, se pueden cargar en el árbol Automatización de la interfaz de usuario y, por tanto, se reflejarán en las propiedades [**IGridProvider::RowCount**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_rowcount) y [**ColumnCount.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_columncount) Si las filas y columnas ocultas todavía no se han cargado, no deben contarse.
+-   [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) no habilita la manipulación activa de una cuadrícula; [**ITransformProvider debe**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider) implementarse para habilitar esta funcionalidad.
+-   Use [**IUIAutomationStructureChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationstructurechangedeventhandler) para escuchar los cambios estructurales o de diseño en la cuadrícula, como las celdas que se han agregado, quitado o combinado.
+-   Use [**IUIAutomationFocusChangedEventHandler para**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationfocuschangedeventhandler) realizar un seguimiento del recorrido a través de los elementos o celdas de una cuadrícula.
 
-## <a name="required-members-for-igridprovider"></a>Miembros requeridos para **IGridProvider**
+## <a name="required-members-for-igridprovider"></a>Miembros necesarios para **IGridProvider**
 
-Se requieren las siguientes propiedades y métodos para implementar la interfaz [**IGridProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider) .
+Las siguientes propiedades y métodos son necesarios para implementar la [**interfaz IGridProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igridprovider)
 
 
 
 | Miembros requeridos                                        | Tipo de miembro | Notas |
 |---------------------------------------------------------|-------------|-------|
-| [**Empleado**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_rowcount)       | Propiedad    | None  |
-| [**NúmeroDeColumnas**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_columncount) | Propiedad    | None  |
-| [**GetItem**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-getitem)         | Método      | None  |
+| [**RowCount**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_rowcount)       | Propiedad    | Ninguno  |
+| [**ColumnCount**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-get_columncount) | Propiedad    | Ninguno  |
+| [**GetItem**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igridprovider-getitem)         | Método      | Ninguno  |
 
 
 
- 
+ 
 
 Este patrón de control no tiene eventos asociados.
 
@@ -74,7 +74,7 @@ Este patrón de control no tiene eventos asociados.
 [Tipos de control y sus patrones de control admitidos](uiauto-controlpatternmapping.md)
 </dt> <dt>
 
-[GridItem (patrón de control)](uiauto-implementinggriditem.md)
+[Patrón de control GridItem](uiauto-implementinggriditem.md)
 </dt> <dt>
 
 [Información general acerca de los patrones de control de UI Automation](uiauto-controlpatternsoverview.md)
@@ -83,9 +83,9 @@ Este patrón de control no tiene eventos asociados.
 [Información general sobre el árbol de la UI Automation](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

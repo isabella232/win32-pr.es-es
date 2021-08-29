@@ -1,36 +1,36 @@
 ---
-title: Cómo usar notificaciones de SysLink
-description: Hay dos mensajes de notificación asociados al control SysLink \ 8212; uno para el mouse (NM \_ click (SysLink)) y otro para el teclado ( \_ Return nm).
+title: Uso de notificaciones syslink
+description: Hay dos mensajes de notificación asociados al control SysLink \ 8212; uno para el mouse (NM CLICK (syslink)) y otro para el teclado \_ (NM \_ RETURN).
 ms.assetid: 77E80EB2-180B-4EDD-9FB5-9930E8886CA6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 864a2b8942b1244be51f5c284e6ce07d973ed4db
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 2fb8a3c8f0f589e17e6fe413b8232876e131734aa053b9a091b83e7d94b14b7d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "105656321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132065"
 ---
-# <a name="how-to-use-syslink-notifications"></a>Cómo usar notificaciones de SysLink
+# <a name="how-to-use-syslink-notifications"></a>Uso de notificaciones syslink
 
-Hay dos mensajes de notificación asociados al control SysLink: uno para el mouse ([nm \_ click (SysLink)](nm-click-syslink.md)) y otro para el teclado ([nm \_ Return](nm-return.md)).
+Hay dos mensajes de notificación asociados al control SysLink: uno para el mouse[ \_ (NM CLICK (syslink) )](nm-click-syslink.md)y otro para el teclado[(NM \_ RETURN](nm-return.md)).
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="use-syslink-notifications"></a>Usar notificaciones de SysLink
+### <a name="use-syslink-notifications"></a>Uso de notificaciones syslink
 
-En el ejemplo de código siguiente se muestra cómo procesar las notificaciones de SysLink que se generan cuando el usuario hace clic en cualquiera de los dos vínculos del [ejemplo anterior](create-syslink-controls.md). Cuando el usuario hace clic en la dirección URL de Internet, se abre la página web asociada en el explorador predeterminado. Cuando el usuario hace clic en el hipervínculo definido por la aplicación, se muestra un cuadro de mensaje.
+El código de ejemplo siguiente muestra cómo procesar las notificaciones SysLink que se generan cuando el usuario hace clic en cualquiera de los dos vínculos del [ejemplo anterior.](create-syslink-controls.md) Cuando el usuario hace clic en la dirección URL de Internet, se abre la página web asociada en el explorador predeterminado. Cuando el usuario hace clic en el hipervínculo definido por la aplicación, se muestra un cuadro de mensaje.
 
 
 ```C++
@@ -70,15 +70,15 @@ case WM_NOTIFY:
 
 <dl> <dt>
 
-[Usar controles SysLink](using-syslink-controls.md)
+[Uso de controles SysLink](using-syslink-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

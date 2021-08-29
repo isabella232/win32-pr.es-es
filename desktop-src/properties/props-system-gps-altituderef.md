@@ -1,19 +1,19 @@
 ---
-description: Indica la referencia de la propiedad altitud (por ejemplo, por encima del nivel de mar, debajo del nivel de mar, valor absoluto).
+description: Indica la referencia de la propiedad de altitud (por ejemplo, por encima del nivel del mar, por debajo del nivel del mar, valor absoluto).
 ms.assetid: 42b5a67d-e7e8-4edf-ba5c-c4a8022f926e
-title: System. GPS. AltitudeRef
+title: System.GPS.AltitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c4f0a4cf42d984e1e962b3efbf7978730d2484e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f359142a4870b2004c02e846fc1c21632c18473453095e38f8c618bc6b3e40e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775275"
 ---
-# <a name="systemgpsaltituderef"></a>System. GPS. AltitudeRef
+# <a name="systemgpsaltituderef"></a>System.GPS.AltitudeRef
 
-Indica la referencia de la propiedad altitud (por ejemplo, por encima del nivel de mar, debajo del nivel de mar, valor absoluto).
+Indica la referencia de la propiedad de altitud (por ejemplo, por encima del nivel del mar, por debajo del nivel del mar, valor absoluto).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Byte
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

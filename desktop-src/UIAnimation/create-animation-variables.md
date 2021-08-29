@@ -1,29 +1,29 @@
 ---
 title: Crear variables de animación
-description: Una aplicación debe crear una variable de animación para cada característica de visual que se va a animar mediante la animación de Windows.
+description: Una aplicación debe crear una variable de animación para cada característica visual que se va a animar mediante Windows Animación.
 ms.assetid: 360aa157-cb50-400a-b373-45885410469d
 keywords:
-- variables de animación animación de Windows, crear
+- variables de animación Windows animation ,creating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c059a924e22700bb4abd794435ad708a2775a9c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bb81e2f94f987ad6b9c923083c76565fa75b2cc665753233c8a84b6eb1a1d52a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008235"
 ---
 # <a name="create-animation-variables"></a>Crear variables de animación
 
-Una aplicación debe crear una variable de animación para cada característica de visual que se va a animar mediante la animación de Windows.
+Una aplicación debe crear una variable de animación para cada característica visual que se va a animar mediante Windows Animación.
 
 ## <a name="overview"></a>Información general
 
-Las variables de animación se crean mediante el administrador de animaciones y la aplicación debe conservar una referencia a cada para siempre que sea necesario. Normalmente, la aplicación creará cada variable de animación al mismo tiempo que el objeto visual que anima.
+Las variables de animación se crean mediante el administrador de animaciones y la aplicación debe conservar una referencia a cada una de ellas mientras sea necesario. Por lo general, la aplicación creará cada variable de animación al mismo tiempo que el objeto visual que anima.
 
-Cuando se crea una variable de animación, se debe especificar su valor inicial. Después, su valor solo puede modificarse mediante la programación de guiones gráficos que lo animan.
+Cuando se crea una variable de animación, se debe especificar su valor inicial. A partir de entonces, su valor solo se puede modificar programando guiones gráficos que lo animan.
 
-Las variables de animación se pasan como parámetros cuando se construyen guiones gráficos, por lo que la aplicación no debe liberarlas hasta que no sea necesario animar las características visuales que representan, normalmente cuando los objetos visuales asociados están a punto de ser destruidos.
+Las variables de animación se pasan como parámetros cuando se construyen guiones gráficos, por lo que la aplicación no debe liberarlas hasta que las características visuales que representan ya no necesiten animarse, normalmente cuando los objetos visuales asociados están a punto de destruirse.
 
 ## <a name="example-code"></a>Código de ejemplo
 
@@ -32,7 +32,7 @@ Las variables de animación se pasan como parámetros cuando se construyen guion
 
 ### <a name="animating-colors"></a>Animar colores
 
-El siguiente código de ejemplo se toma de MainWindow. cpp en la animación de Windows ejemplos de animaciones [controladas](application-driven-animation-sample.md) por la aplicación y la [animación controlada por temporizador](timer-driven-animation-sample.md). En el ejemplo, se crean tres variables de animación mediante [**CreateAnimationVariable**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createanimationvariable) para representar los colores de fondo. El código también usa los métodos [**SetLowerBound**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setlowerbound) y [**SetUpperBound**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setupperbound) para controlar el valor de la variable de animación.
+El código de ejemplo siguiente se toma de MainWindow.cpp en los ejemplos Windows Animación controlada por la aplicación y Animación [controlada por temporizador](timer-driven-animation-sample.md). [](application-driven-animation-sample.md) En el ejemplo, se crean tres variables de animación [**mediante CreateAnimationVariable para**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createanimationvariable) representar los colores de fondo. El código también usa los [**métodos SetLowerBound**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setlowerbound) y [**SetUpperBound**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setupperbound) para controlar el valor de la variable de animación.
 
 
 ```
@@ -86,7 +86,7 @@ if (SUCCEEDED(hr))
 
 
 
-Tenga en cuenta las siguientes definiciones de MainWindow. h.
+Tenga en cuenta las siguientes definiciones de MainWindow.h.
 
 
 ```
@@ -112,7 +112,7 @@ private:
 
 ### <a name="animating-x-and-y-coordinates"></a>Animar coordenadas x e y
 
-El siguiente código de ejemplo se toma de thumbnail. cpp en el [ejemplo de diseño de cuadrícula](/windows/desktop/UIAnimation/grid-layout-sample)de animación de Windows. Vea el método CMainWindow:: CreateAnimationVariables. Se crean dos variables de animación para representar las coordenadas X e y de cada objeto.
+El código de ejemplo siguiente se toma de Thumbnail.cpp en el ejemplo Windows diseño de cuadrícula [de animación](/windows/desktop/UIAnimation/grid-layout-sample); vea el método CMainWindow::CreateAnimationVariables. Se crean dos variables de animación para representar las coordenadas X e Y de cada objeto.
 
 
 ```C++
@@ -137,7 +137,7 @@ if (SUCCEEDED(hr))
 
 
 
-Tenga en cuenta las siguientes definiciones de thumbnail. h.
+Tenga en cuenta las siguientes definiciones de Thumbnail.h.
 
 
 ```
@@ -159,7 +159,7 @@ public:
 
 
 
-Las variables de animación son números de punto flotante, pero sus valores también se pueden capturar como enteros. De forma predeterminada, cada valor se redondea al entero más próximo, pero es posible invalidar el modo de redondeo que se usa para una variable. En el ejemplo de código siguiente se usa el método [**SetRoundingMode**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setroundingmode) para especificar que los valores siempre se deben redondear hacia abajo.
+Las variables de animación son números de punto flotante, pero sus valores también se pueden capturar como enteros. De forma predeterminada, cada valor se redondeará al entero más cercano, pero es posible invalidar el modo de redondeo utilizado para una variable. En el código de ejemplo siguiente se [**usa el método SetRoundingMode**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setroundingmode) para especificar que los valores siempre se deben redondear hacia abajo.
 
 
 ```C++
@@ -181,11 +181,11 @@ if (SUCCEEDED(hr))
 
 ## <a name="previous-step"></a>Paso anterior
 
-Antes de comenzar este paso, debe haber completado este paso: [crear los objetos de animación principales](adding-animation-to-an-application.md).
+Antes de iniciar este paso, debería haber completado este paso: [Crear los objetos de animación principales](adding-animation-to-an-application.md).
 
 ## <a name="next-step"></a>siguiente paso
 
-Después de completar este paso, el paso siguiente es [actualizar el administrador de animaciones y dibujar fotogramas](introducing-windows-animation-manager.md).
+Después de completar este paso, el siguiente paso es: Actualizar el Administrador de [animaciones y Dibujar fotogramas](introducing-windows-animation-manager.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -203,9 +203,9 @@ Después de completar este paso, el paso siguiente es [actualizar el administrad
 [**IUIAnimationVariable::SetUpperBound**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-setupperbound)
 </dt> <dt>
 
-[Información general sobre animaciones de Windows](scenic-animation-api-overview.md)
+[Windows Información general sobre animaciones](scenic-animation-api-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

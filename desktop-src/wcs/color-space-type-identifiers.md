@@ -1,6 +1,6 @@
 ---
 title: Identificadores de tipo de espacio de color
-description: Estas constantes especifican el tipo de una matriz de espacio de color PostScript 2. Los valores siguientes son tipos de matriz de espacio de colores válidos.
+description: Estas constantes especifican el tipo de una matriz de espacios de color Postscript 2. Los siguientes valores son tipos de matriz de espacio de colores válidos.
 ms.assetid: dc312db2-3bc5-461f-819c-37ff14cff896
 topic_type:
 - apiref
@@ -20,16 +20,16 @@ ms.topic: article
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 973db6c56dda5bde8614dffa13f461761934fcde
-ms.sourcegitcommit: 9bf844f41bd6451b8508d93e722e88a43e913b56
+ms.openlocfilehash: 199348fc23282a104c66f153b5c1ea43027464e5aa2522db61c6658d3425bdc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "105721161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007695"
 ---
 # <a name="color-space-type-identifiers"></a>Identificadores de tipo de espacio de color
 
-Estas constantes especifican el tipo de una matriz de espacio de color PostScript 2. Los valores siguientes son tipos de matriz de espacio de colores válidos.
+Estas constantes especifican el tipo de una matriz de espacios de color Postscript 2. Los siguientes valores son tipos de matriz de espacio de colores válidos.
 
 <dl> <dt>
 
@@ -38,17 +38,17 @@ Estas constantes especifican el tipo de una matriz de espacio de color PostScrip
 
 
 
-Obtiene una matriz de espacio de colores de CIEBasedA desde el perfil monocromo.
+Obtenga una matriz de espacio de colores CIEBasedA del perfil monocromo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CSA_GRAY"></span><span id="csa_gray"></span>**gris de CSA \_**
+<span id="CSA_GRAY"></span><span id="csa_gray"></span>**GRIS \_ CSA**
 </dt> <dd> <dl> <dt>
 
 
 
-Obtiene una matriz de espacio de colores de CIEBasedA desde el perfil monocromo.
+Obtenga una matriz de espacio de colores CIEBasedA del perfil monocromo.
 
 
 </dt> </dl> </dd> <dt>
@@ -58,37 +58,37 @@ Obtiene una matriz de espacio de colores de CIEBasedA desde el perfil monocromo.
 
 
 
-Obtiene una matriz de espacio de colores de CIEBasedABC desde el perfil RGB o L <sup>\*</sup> a <sup>\*</sup> b.
+Obtenga una matriz de espacios de colores CIEBasedABC del perfil RGB o L <sup>\*</sup> a <sup>\*</sup> b.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CSA_DEF"></span><span id="csa_def"></span>**CSA \_ Def**
+<span id="CSA_DEF"></span><span id="csa_def"></span>**CSA \_ DEF**
 </dt> <dd> <dl> <dt>
 
 
 
-Obtiene una matriz de espacio de colores de CIEBasedDEF desde el perfil RGB o L <sup>\*</sup> a <sup>\*</sup> b.
+Obtenga una matriz de espacios de color CIEBasedDEF del perfil RGB o L <sup>\*</sup> a <sup>\*</sup> b.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CSA_RGB"></span><span id="csa_rgb"></span>**RVA de CSA \_**
+<span id="CSA_RGB"></span><span id="csa_rgb"></span>**CSA \_ RGB**
 </dt> <dd> <dl> <dt>
 
 
 
-Obtiene una matriz de espacio de colores de CIEBasedDEF seguida de una matriz de espacio de colores CIEBasedABC del perfil RGB. En la ejecución, si la impresora no admite los espacios de colores de CIEBasedDEF, la función utiliza la definición de CIEBasedABC.
+Obtenga una matriz de espacios de colores CIEBasedDEF seguida de una matriz de espacios de colores CIEBasedABC del perfil RGB. En la ejecución, si la impresora no admite espacios de colores CIEBasedDEF, la función usa la definición CIEBasedABC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CSA_Lab"></span><span id="csa_lab"></span><span id="CSA_LAB"></span>**Laboratorio de CSA \_**
+<span id="CSA_Lab"></span><span id="csa_lab"></span><span id="CSA_LAB"></span>**Laboratorio de \_ CSA**
 </dt> <dd> <dl> <dt>
 
 
 
-Obtiene una matriz de espacio de colores CIEBasedABC del <sup>\*</sup> perfil L a <sup>\*</sup> b.
+Obtiene una matriz de espacios de colores CIEBasedABC del perfil L <sup>\*</sup> a <sup>\*</sup> b.
 
 
 </dt> </dl> </dd> <dt>
@@ -98,17 +98,17 @@ Obtiene una matriz de espacio de colores CIEBasedABC del <sup>\*</sup> perfil L 
 
 
 
-Obtiene una matriz de espacio de colores de CIEBasedDEFG desde el perfil CMYK.
+Obtenga una matriz de espacios de color CIEBasedDEFG del perfil MULTIDIMENSIONAL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CSA_CMYK"></span><span id="csa_cmyk"></span>**CSA \_ CMYK**
+<span id="CSA_CMYK"></span><span id="csa_cmyk"></span>**CSA \_ GNI**
 </dt> <dd> <dl> <dt>
 
 
 
-Obtiene una matriz de espacio de colores de CIEBasedCMYK desde el perfil CMYK.
+Obtenga una matriz de espacio de colores CIEBasedMULTIDIMENSIONAL del perfil MULTIDIMENSIONAL.
 
 
 </dt> </dl> </dd> </dl>
@@ -117,10 +117,10 @@ Obtiene una matriz de espacio de colores de CIEBasedCMYK desde el perfil CMYK.
 
 <dl> <dt>
 
-[Conceptos básicos de la administración del color](basic-color-management-concepts.md)
+[Conceptos básicos de administración de colores](basic-color-management-concepts.md)
 </dt> <dt>
 
-[Constantes de ICM](wcs-constants.md)
+[ICM constantes](wcs-constants.md)
 </dt> </dl>
 
  

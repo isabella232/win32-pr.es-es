@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM UnitaryComputerSystem representa un equipo de escritorio, móvil, de red, servidor u otro tipo de sistema de un solo nodo.
+description: La clase UnitaryComputerSystem de CIM representa un equipo de escritorio, móvil, equipo de red, servidor u otro tipo de sistema \_ de equipo de nodo único.
 ms.assetid: c696050d-c921-4056-adc7-e4a2e9f4e119
 ms.tgt_platform: multiple
-title: CIM_UnitaryComputerSystem (clase)
+title: CIM_UnitaryComputerSystem clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,23 +30,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e14812fda7971ffe045e8e36752c983cf5350402
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c128cefe67da15f017ae21dfd7293b86c0deedf04eb1da35018475a2ed37d002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918815"
 ---
-# <a name="cim_unitarycomputersystem-class"></a>\_Clase UnitaryComputerSystem de CIM
+# <a name="cim_unitarycomputersystem-class"></a>Cim \_ UnitaryComputerSystem (clase)
 
-La clase **CIM \_ UnitaryComputerSystem** representa un equipo de escritorio, móvil, de red, servidor u otro tipo de sistema de un solo nodo.
+La **clase \_ UnitaryComputerSystem** de CIM representa un equipo de escritorio, móvil, equipo de red, servidor u otro tipo de sistema de equipo de nodo único.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -75,20 +75,20 @@ class CIM_UnitaryComputerSystem : CIM_ComputerSystem
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ UnitaryComputerSystem** tiene estos tipos de miembros:
+La **clase \_ UnitaryComputerSystem de CIM** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **CIM \_ UnitaryComputerSystem** tiene estos métodos.
+La **clase \_ UnitaryComputerSystem de CIM** tiene estos métodos.
 
 
 
 | Método                                                                           | Descripción                                                                                                                              |
 |:---------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**SetPowerState**](setpowerstate-method-in-class-cim-unitarycomputersystem.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo debe colocarse un dispositivo en ese estado. No implementado por WMI.<br/> |
+| [**SetPowerState**](setpowerstate-method-in-class-cim-unitarycomputersystem.md) | Define el estado de energía deseado para un dispositivo lógico y cuándo se debe colocar un dispositivo en ese estado. No implementado por WMI.<br/> |
 
 
 
@@ -96,7 +96,7 @@ La clase **CIM \_ UnitaryComputerSystem** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ UnitaryComputerSystem** tiene estas propiedades.
+La **clase \_ UnitaryComputerSystem de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -109,12 +109,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -127,12 +127,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Cuando se usa con otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de la clase y sus subclases se identifiquen de forma única.
+Nombre de la clase o subclase usada en la creación de una instancia de . Cuando se usa con otras propiedades clave de la clase , esta propiedad permite identificar de forma única todas las instancias de la clase y sus subclases.
 
-Esta propiedad se hereda del [**\_ Sistema CIM**](cim-system.md).
+Esta propiedad se hereda del [**sistema CIM. \_**](cim-system.md)
 
 </dd> <dt>
 
@@ -145,43 +145,43 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descripción")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description")
 </dt> </dl>
 
 Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InitialLoadInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Datos necesarios para buscar el dispositivo de carga inicial (su clave) o el servicio de arranque para solicitar que se inicie el sistema operativo. Además, también se pueden especificar los parámetros de carga (es decir, un nombre de ruta de acceso y parámetros).
+Datos necesarios para encontrar el dispositivo de carga inicial (su clave) o el servicio de arranque para solicitar que se inicie el sistema operativo. Además, también se pueden especificar los parámetros de carga (es decir, un nombre de ruta de acceso y parámetros).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Fecha de instalación")
 </dt> </dl>
 
 Fecha y hora en que se instaló el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -207,12 +207,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -225,9 +225,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El objeto de [**\_ ComputerSystem de CIM**](cim-computersystem.md) y sus derivados son objetos de nivel superior de CIM que proporcionan el ámbito de numerosos componentes y requieren claves de [**\_ Sistema CIM**](cim-system.md) únicas. Se define una heurística para crear el nombre de **\_ ComputerSystem de CIM** en un intento de generar siempre el mismo nombre de sistema, independientemente del Protocolo de detección. Esto evita los problemas de inventario y administración en los que se detecta el mismo recurso o entidad varias veces, pero no se puede resolver en un solo objeto. Esta propiedad identifica cómo se generó el nombre del sistema mediante la heurística de subclases. La heurística se describe en la especificación de modelo común de CIM V2 y da por supuesto que las reglas documentadas se recorren para determinar y asignar un nombre. La lista de valores de **NameFormat** define el orden de prioridad para asignar el nombre del sistema con varias reglas asignadas al mismo valor. Tenga en cuenta que el nombre del equipo **CIM \_** que se calcula con la heurística es el valor de clave del sistema. Se pueden asignar otros nombres y usarse para **el \_ ComputerSystem de CIM** que mejor se adapte a la empresa, mediante alias.
+El [**objeto \_ ComputerSystem**](cim-computersystem.md) de CIM y sus derivados son objetos de nivel superior de CIM que proporcionan el ámbito de numerosos componentes y requieren claves del [**sistema CIM \_ únicas.**](cim-system.md) Se define una heurística para crear el nombre del sistema de equipo **CIM \_** en un intento de generar siempre el mismo nombre del sistema, independientemente del protocolo de detección. Esto evita problemas de inventario y administración en los que el mismo recurso o entidad se detecta varias veces, pero no se puede resolver en un solo objeto. Esta propiedad identifica cómo se generó el nombre del sistema mediante la heurística de subclase. La heurística se describe en la especificación del modelo común CIM V2 y se supone que las reglas documentadas se recorren para determinar y asignar un nombre. La **lista de valores NameFormat** define el orden de precedencia para asignar el nombre del sistema con varias reglas que se asignan al mismo valor. Tenga en cuenta que **el nombre del sistema \_ del** equipo CIM que se calcula mediante la heurística es el valor de clave del sistema. Se pueden asignar y usar otros nombres para el sistema de equipos **CIM \_** que mejor se adapten a la empresa, mediante alias.
 
-Esta propiedad se hereda del [**\_ Sistema CIM**](cim-system.md).
+Esta propiedad se hereda del [**sistema CIM. \_**](cim-system.md)
 
 Los valores son los siguientes:
 
@@ -242,7 +242,7 @@ Los valores son los siguientes:
 
 <span id="Dial"></span><span id="dial"></span><span id="DIAL"></span>
 
-**Dial** ("dial")
+**Dial** ("Dial")
 
 
 </dt> <dd></dd> <dt>
@@ -263,21 +263,21 @@ Los valores son los siguientes:
 
 <span id="HWA"></span><span id="hwa"></span>
 
-**Hwa** ("Hwa")
+**HWA** ("HWA")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="X25"></span><span id="x25"></span>
 
-**X25** ("x25")
+**X25** ("X25")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ISDN"></span><span id="isdn"></span>
 
-**ISDN (RDSI** ) ("ISDN")
+**ISDN** ("ISDN")
 
 
 </dt> <dd></dd> <dt>
@@ -305,7 +305,7 @@ Los valores son los siguientes:
 
 <span id="E.164"></span><span id="e.164"></span>
 
-**E. 164** ("E. 164")
+**E.164** ("E.164")
 
 
 </dt> <dd></dd> <dt>
@@ -326,7 +326,7 @@ Los valores son los siguientes:
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** ("otro")
+**Otros** ("Otros")
 
 
 </dt> <dd></dd> </dl>
@@ -336,18 +336,18 @@ Los valores son los siguientes:
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Controles de alimentación del sistema DMTF \| 001,2 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Power Controls \| 001.2")
 </dt> </dl>
 
-Matriz de las capacidades específicas de energía relacionadas con el dispositivo lógico.
+Matriz de las funcionalidades específicas relacionadas con la energía de un dispositivo lógico.
 
-Esta propiedad se hereda del **\_ LogicalDevice de CIM**.
+Esta propiedad se hereda de **\_ CIM LogicalDevice.**
 
 <dt>
 
@@ -385,7 +385,7 @@ Las características de administración de energía están habilitadas actualmen
 
 <span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>
 
-<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modos de ahorro de energía introducidos automáticamente** (4)
+<span id="Power_Saving_Modes_Entered_Automatically"></span><span id="power_saving_modes_entered_automatically"></span><span id="POWER_SAVING_MODES_ENTERED_AUTOMATICALLY"></span>**Modos de ahorro de energía especificados automáticamente** (4)
 
 
 </dt> <dd>
@@ -396,34 +396,34 @@ El dispositivo puede cambiar su estado de energía en función del uso u otros c
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Estado de energía configurable** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
 
 
 </dt> <dd>
 
-Se admite el método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) . Este método se encuentra en la clase primaria de **\_ LogicalDevice de CIM** y se puede implementar. Para obtener más información, vea [diseñar clases Managed Object Format (MOF)](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Se [**admite el método SetPowerState.**](setpowerstate-method-in-class-cim-controller.md) Este método se encuentra en la clase **\_ logicalDevice** de CIM primaria y se puede implementar. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Ciclo de energía admitido** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling compatible** (6)
 
 
 </dt> <dd>
 
-El método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro *PowerState* establecido en 5 (ciclo de alimentación).
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el *parámetro PowerState* establecido en 5 (Ciclo de energía).
 
 </dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>Se **admite el encendido con tiempo** (7)
+<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Encendido con tiempo de encendido admitido** (7)
 
 
 </dt> <dd>
 
-El método [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro *PowerState* establecido en 5 (ciclo de energía) y la *hora* establecida en una fecha y hora específicas, o intervalo, para el encendido.
+El [**método SetPowerState**](setpowerstate-method-in-class-cim-controller.md) se puede invocar con el parámetro  *PowerState* establecido en 5 (ciclo de energía) y la hora establecida en una fecha y hora específicas, o un intervalo, para la encendido.
 
 </dd> </dl>
 
@@ -438,22 +438,22 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el dispositivo puede administrarse con energía, es decir, ponerse en un estado de ahorro de energía. Si **es false**, el valor entero 1 ("no compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities** .
+Si **es TRUE,** el dispositivo se puede administrar con energía, es decir, poner en un estado de ahorro de energía. Si **es FALSE,** el valor entero 1 ("No compatible") debe ser la única entrada de la matriz **PowerManagementCapabilities.**
 
-Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o si están habilitadas, qué características se admiten. Para obtener más información, vea la matriz **PowerManagementCapabilities** .
+Esta propiedad no indica si las características de administración de energía están habilitadas actualmente o, si están habilitadas, qué características se admiten. Para más información, consulte la matriz **PowerManagementCapabilities.**
 
 </dd> <dt>
 
 **PowerState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado de energía actual del equipo y su sistema operativo asociado.
+Estado de energía actual del sistema informático y su sistema operativo asociado.
 
 <dt>
 
@@ -470,7 +470,7 @@ Desconocido.
 
 <span id="Full_Power"></span><span id="full_power"></span><span id="FULL_POWER"></span>
 
-<span id="Full_Power"></span><span id="full_power"></span><span id="FULL_POWER"></span>**Potencia completa** (1)
+<span id="Full_Power"></span><span id="full_power"></span><span id="FULL_POWER"></span>**Energía completa** (1)
 
 
 </dt> <dd>
@@ -481,40 +481,40 @@ Potencia completa.
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>Ahorro **de energía: modo de baja energía** (2)
+<span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>**Ahorro de energía: modo de bajo consumo** (2)
 
 
 </dt> <dd>
 
-El sistema se encuentra en un estado de ahorro de energía y sigue funcionando, pero puede presentar un rendimiento degradado.
+El sistema está en un estado de ahorro de energía y sigue funcionando, pero puede presentar un rendimiento degradado.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>Ahorro **de energía: en espera** (3)
+<span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>**Ahorro de energía: en espera** (3)
 
 
 </dt> <dd>
 
-El sistema no funciona, pero puede que se ponga a pleno rendimiento rápidamente.
+El sistema no funciona, pero se podría llevar a toda la potencia rápidamente.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>Ahorro **de energía: desconocido** (4)
+<span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>**Ahorro de energía: desconocido** (4)
 
 
 </dt> <dd>
 
-Se sabe que el sistema está en modo de ahorro de energía, pero su estado exacto es desconocido.
+Se sabe que el sistema está en modo de ahorro de energía, pero se desconoce su estado exacto.
 
 </dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de energía** (5)
+<span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>**Ciclo de** energía (5)
 
 
 </dt> <dd>
@@ -525,45 +525,45 @@ Ciclo de energía.
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Desconectar (6** )
+<span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>**Apagado** (6)
 
 
 </dt> <dd>
 
-Desconectar.
+Apagar.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>Ahorro **de energía: ADVERTENCIA** (7)
+<span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>**Ahorro de energía: advertencia** (7)
 
 
 </dt> <dd>
 
-El sistema está en un estado de advertencia y también en un modo de ahorro de energía.
+El sistema está en estado de advertencia y también en modo de ahorro de energía.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Hibernate"></span><span id="power_save_-_hibernate"></span><span id="POWER_SAVE_-_HIBERNATE"></span>
 
-<span id="Power_Save_-_Hibernate"></span><span id="power_save_-_hibernate"></span><span id="POWER_SAVE_-_HIBERNATE"></span>Ahorro **de energía: hibernación** (8)
+<span id="Power_Save_-_Hibernate"></span><span id="power_save_-_hibernate"></span><span id="POWER_SAVE_-_HIBERNATE"></span>**Ahorro de energía: hibernación** (8)
 
 
 </dt> <dd>
 
-Power Save Hibernate.
+Hibernación de ahorro de energía.
 
 </dd> <dt>
 
 <span id="Power_Save_-_Soft_Off"></span><span id="power_save_-_soft_off"></span><span id="POWER_SAVE_-_SOFT_OFF"></span>
 
-<span id="Power_Save_-_Soft_Off"></span><span id="power_save_-_soft_off"></span><span id="POWER_SAVE_-_SOFT_OFF"></span>Ahorro **de energía: Soft off** (9)
+<span id="Power_Save_-_Soft_Off"></span><span id="power_save_-_soft_off"></span><span id="POWER_SAVE_-_SOFT_OFF"></span>**Ahorro de energía: apagado flexible** (9)
 
 
 </dt> <dd>
 
-Ahorro flexible de energía.
+Ahorro de energía desactivado.
 
 </dd> </dl>
 
@@ -578,9 +578,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que proporciona información sobre cómo ponerse en contacto con el propietario del sistema principal (por ejemplo, el número de teléfono, la dirección de correo electrónico, etc.).
+Cadena que proporciona información sobre cómo llegar al propietario del sistema principal (por ejemplo, el número de teléfono, la dirección de correo electrónico, entre otros).
 
-Esta propiedad se hereda del [**\_ Sistema CIM**](cim-system.md).
+Esta propiedad se hereda del [**sistema CIM. \_**](cim-system.md)
 
 </dd> <dt>
 
@@ -598,29 +598,29 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Nombre del propietario del sistema principal.
 
-Esta propiedad se hereda del [**\_ Sistema CIM**](cim-system.md).
+Esta propiedad se hereda del [**sistema CIM. \_**](cim-system.md)
 
 </dd> <dt>
 
 **ResetCapability**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Seguridad de hardware del sistema DMTF \| 001,4 ")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| System Hardware Security \| 001.4")
 </dt> </dl>
 
-Si está habilitada, el sistema del equipo unitario puede restablecerse con hardware (por ejemplo, con los botones de encendido y de restablecimiento). Si está deshabilitado, no se permite el restablecimiento de hardware.
+Si está habilitado, el sistema informático unitario se puede restablecer con hardware (por ejemplo, con los botones de encendido y restablecimiento). Si está deshabilitado, no se permite el restablecimiento de hardware.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -658,15 +658,15 @@ Si está habilitada, el sistema del equipo unitario puede restablecerse con hard
 **Roles**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Roles que el sistema desempeña en el entorno de tecnología de la información. Las subclases del sistema pueden invalidar esta propiedad para definir valores de rol explícitos. Como alternativa, un grupo de trabajo puede describir la heurística, las convenciones y las directrices para especificar los roles. Por ejemplo, para una instancia de un sistema de red, esta propiedad puede contener la cadena "switch" o "Bridge".
+Roles que desempeña el sistema en el entorno de tecnología de la información. Las subclases del sistema pueden invalidar esta propiedad para definir valores de rol explícitos. Como alternativa, un grupo de trabajo puede describir la heurística, las convenciones y las directrices para especificar roles. Por ejemplo, para una instancia de un sistema de red, esta propiedad puede contener la cadena "Switch" o "Bridge".
 
-Esta propiedad se hereda del [**\_ Sistema CIM**](cim-system.md).
+Esta propiedad se hereda del [**sistema CIM. \_**](cim-system.md)
 
 </dd> <dt>
 
@@ -679,10 +679,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**displayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Estado actual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -690,97 +690,97 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ UnitaryComputerSystem** se deriva de la clase [**CIM \_ ComputerSystem**](cim-computersystem.md).
+La **clase \_ UnitaryComputerSystem de CIM** se deriva de CIM [**\_ ComputerSystem**](cim-computersystem.md).
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ UnitaryComputerSystem**, vea [clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ UnitaryComputerSystem**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -790,8 +790,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -800,7 +800,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**ComputerSystem de CIM \_**](cim-computersystem.md)
+[**CIM \_ ComputerSystem**](cim-computersystem.md)
 </dt> </dl>
 
  

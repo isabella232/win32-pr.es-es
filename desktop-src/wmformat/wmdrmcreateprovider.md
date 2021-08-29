@@ -1,9 +1,9 @@
 ---
-title: Función WMDRMCreateProvider (wmdrmsdk. h)
-description: La función WMDRMCreateProvider crea un generador de clases que puede crear los demás objetos de las API extendidas del cliente DRM de Windows Media.
+title: Función WMDRMCreateProvider (Wmdrmsdk.h)
+description: La función WMDRMCreateProvider crea un generador de clases que puede crear los demás objetos de las API extendidas del cliente DRM de Windows media.
 ms.assetid: 25ec2fbf-136a-4f40-b2d3-f35b42178c60
 keywords:
-- Función WMDRMCreateProvider formato de Windows Media
+- Formato multimedia de la función WMDRMCreateProvider
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cdf7a102d969ce916f8a5692d994c183305409a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82de65423d5bc6ad2fbd55e3d8e4c97e8f63f6f7d6b6203e092176a4afc0183c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120006565"
 ---
-# <a name="wmdrmcreateprovider-function"></a>WMDRMCreateProvider función)
+# <a name="wmdrmcreateprovider-function"></a>Función WMDRMCreateProvider
 
-La función **WMDRMCreateProvider** crea un generador de clases que puede crear los demás objetos de las API extendidas del cliente DRM de Windows Media. Esta función no requiere una biblioteca de código auxiliar de Microsoft y crea objetos que no admiten las características DRM protegidas.
+La **función WMDRMCreateProvider** crea un generador de clases que puede crear los demás objetos de las API extendidas de Windows DRM multimedia. Esta función no requiere una biblioteca de código auxiliar de Microsoft y crea objetos que no admiten las características de DRM protegidas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,22 +41,22 @@ HRESULT STDMETHODCALLTYPE WMDRMCreateProvider(
 
 <dl> <dt>
 
-*ppDRMProvider* \[ enuncia\]
+*ppDRMProvider* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a la interfaz [**IWMDRMProvider**](iwmdrmprovider.md) del objeto recién creado.
+Recibe un puntero a [**la interfaz IWMDRMProvider**](iwmdrmprovider.md) del objeto recién creado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -68,8 +68,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Wmdrmsdk.dll</dt> </dl> |
 
 

@@ -1,36 +1,36 @@
 ---
-title: Cómo usar áreas de trabajo de List-View
-description: En este tema se muestra cómo trabajar con áreas de trabajo de la vista de lista. Las áreas de trabajo son áreas virtuales rectangulares que se pueden utilizar para organizar los elementos en un control List-vista.
+title: Uso de áreas List-View trabajo
+description: En este tema se muestra cómo trabajar con áreas de trabajo de vista de lista. Las áreas de trabajo son áreas virtuales rectangulares que se pueden usar para organizar elementos en un control list-vew.
 ms.assetid: 7A803B66-7827-49A3-8D87-6A037C09A19A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8d3ed4142e6933e662f03f268723db145c7eb00
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6898603df0ce86d6b5da5e6e178ceaa85a9e3842925ca77fa90bbda990ba3085
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132081"
 ---
-# <a name="how-to-use-list-view-working-areas"></a>Cómo usar áreas de trabajo de List-View
+# <a name="how-to-use-list-view-working-areas"></a>Uso de áreas List-View trabajo
 
-En este tema se muestra cómo trabajar con áreas de trabajo de la vista de lista. Las áreas de trabajo son áreas virtuales rectangulares que se pueden utilizar para organizar los elementos en un control List-vista. Un área de trabajo no es una ventana y no puede tener un borde visible. De forma predeterminada, el control de vista de lista no tiene áreas de trabajo. Al crear un área de trabajo, puede crear un borde vacío en la parte izquierda, superior o derecha de los elementos, o hacer que se muestre una barra de desplazamiento horizontal cuando normalmente no hubiera ninguno.
+En este tema se muestra cómo trabajar con áreas de trabajo de vista de lista. Las áreas de trabajo son áreas virtuales rectangulares que se pueden usar para organizar elementos en un control list-vew. Un área de trabajo no es una ventana y no puede tener un borde visible. De forma predeterminada, el control list-view no tiene áreas de trabajo. Al crear un área de trabajo, puede crear un borde vacío en la parte izquierda, superior o derecha de los elementos o hacer que se muestre una barra de desplazamiento horizontal cuando normalmente no hubiera uno.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="create-a-working-area"></a>Crear un área de trabajo
+### <a name="create-a-working-area"></a>Creación de un área de trabajo
 
-En el ejemplo de código de C++ siguiente se muestra cómo crear un área de trabajo con un borde vacío de 25 píxeles en los lados superior, izquierdo y derecho.
+En el siguiente ejemplo de código de C++ se muestra cómo crear un área de trabajo con un borde vacío de 25 píxeles en sus lados superior, izquierdo y derecho.
 
 
 ```C++
@@ -54,9 +54,9 @@ void SetWorkAreas1(HWND hWndListView)
 
 
 
-### <a name="create-multiple-working-areas"></a>Crear varias áreas de trabajo
+### <a name="create-multiple-working-areas"></a>Creación de varias áreas de trabajo
 
-En el ejemplo de código de C++ siguiente se muestra cómo crear dos áreas de trabajo en un control. Cada área de trabajo utiliza aproximadamente la mitad del área cliente y está rodeada por un borde vacío de 25 píxeles.
+En el siguiente ejemplo de código de C++ se muestra cómo crear dos áreas de trabajo en un control . Cada área de trabajo usa aproximadamente la mitad del área de cliente y está rodeado por un borde vacío de 25 píxeles.
 
 
 ```C++
@@ -89,13 +89,13 @@ void SetWorkAreas2(HWND hWndListView)
 
 ### <a name="determine-the-working-area-to-which-an-item-belongs"></a>Determinar el área de trabajo a la que pertenece un elemento
 
-Una manera de determinar el área de trabajo a la que pertenece un elemento es hacer lo siguiente:
+Una manera de determinar a qué área de trabajo pertenece un elemento es hacer lo siguiente:
 
--   Recupere la lista de coordenadas de todas las áreas de trabajo en el control de vista de lista.
--   Recupera las coordenadas del elemento.
+-   Recupere la lista de coordenadas de todas las áreas de trabajo del control list-view.
+-   Recupere las coordenadas del elemento.
 -   Determine si las coordenadas del elemento se encuentran dentro de las coordenadas de una de las áreas de trabajo.
 
-La función definida por la aplicación en el siguiente ejemplo de código de C++ devuelve el índice del área de trabajo al que pertenece el elemento. Si se produce un error en la función, devuelve – 1. Si la función se ejecuta correctamente, pero el elemento no está dentro de ninguna de las áreas de trabajo, la función devuelve 0, porque todos los elementos que no están dentro de un área de trabajo se convierten automáticamente en un miembro del área de trabajo cero.
+La función definida por la aplicación en el siguiente ejemplo de código de C++ devuelve el índice del área de trabajo a la que pertenece el elemento. Si se produce un error en la función, devuelve –1. Si la función se realiza correctamente, pero el elemento no está dentro de ninguna de las áreas de trabajo, la función devuelve 0, porque todos los elementos que no están dentro de un área de trabajo se convierten automáticamente en miembros del área de trabajo cero.
 
 
 ```C++
@@ -144,18 +144,18 @@ int GetItemWorkingArea(HWND hWndListView, int iItem)
 
 <dl> <dt>
 
-[Referencia de control de vista de lista](bumper-list-view-list-view-control-reference.md)
+[Referencia del control List-View](bumper-list-view-list-view-control-reference.md)
 </dt> <dt>
 
-[Acerca de los controles List-View](list-view-controls-overview.md)
+[Acerca de List-View controles](list-view-controls-overview.md)
 </dt> <dt>
 
-[Usar controles List-View](using-list-view-controls.md)
+[Usar List-View controles](using-list-view-controls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

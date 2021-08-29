@@ -1,7 +1,7 @@
 ---
 description: Define una lista que contiene hasta cinco atributos de contador.
 ms.assetid: d710c3d2-2886-4f1a-bd27-f11451d2f3c6
-title: Atributo de tipo complejo
+title: counterAttributes (tipo complejo)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6bfcb94b131e1343565d5763ae2ea4d95e53f1eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be740abacc9a10674b98e2c2088f647dfaa26c7cd99c7e55efbfe968731a9a54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775425"
 ---
-# <a name="counterattributes-complex-type"></a>Atributo de tipo complejo
+# <a name="counterattributes-complex-type"></a>counterAttributes (tipo complejo)
 
 Define una lista que contiene hasta cinco atributos de contador.
 
@@ -39,7 +39,7 @@ Define una lista que contiene hasta cinco atributos de contador.
 
 | Elemento              | Tipo                                                                               | Descripción                                                                                                |
 |----------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| **Atributo contraattribute** | [**Man: contraattribute**](performance-counters-counterattribute-complex-type.md) | Un atributo Counter que especifica cómo se muestran los datos de contador en una aplicación de consumidor.<br/> |
+| **counterAttribute** | [**man:counterAttribute**](performance-counters-counterattribute-complex-type.md) | Atributo de contador que especifica cómo se muestran los datos del contador en una aplicación consumidora.<br/> |
 
 
 
@@ -49,8 +49,8 @@ Define una lista que contiene hasta cinco atributos de contador.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

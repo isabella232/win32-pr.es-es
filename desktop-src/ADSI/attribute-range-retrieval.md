@@ -7,12 +7,12 @@ keywords:
 - ADSI de recuperación de intervalos de atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 994b1c4535ebce264386b088a53b730e679147f07b4bef9fe99d3a45a63461fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc140a713feb141890478f830bbd24a95a4e7ef7
+ms.sourcegitcommit: 3fbe7c00125bed49e333b44b2ed733079e4a1cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117840582"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "122208171"
 ---
 # <a name="attribute-range-retrieval"></a>Recuperación del intervalo de atributos
 
@@ -48,9 +48,9 @@ En la tabla siguiente se enumeran ejemplos de especificadores de intervalo.
 
 Hay varias maneras diferentes de recuperar un intervalo de valores de propiedad. El [**método IADs.GetInfoEx**](/windows/desktop/api/Iads/nf-iads-iads-getinfoex) se puede usar en un lenguaje de automatización o en C++. El **método IADs.GetInfoEx** es el método preferido para realizar la recuperación de intervalos. Para obtener más información sobre el uso de **IADs.GetInfoEx** para la recuperación de [intervalos, vea Using IADs::GetInfoEx for Range Retrieval](using-iads--getinfoex-for-range-retrieval.md).
 
-Si se usa un lenguaje de automatización, ActiveX objetos de directorio (ADO) se pueden usar para recuperar un intervalo de valores de propiedad. Para obtener más información sobre el uso de ADO para la recuperación de intervalos, vea [Uso de ADO para la recuperación de intervalos.](using-ado-for-range-retrieval.md)
+Si se usa un lenguaje de automatización, ActiveX Directory Objects (ADO) se puede usar para recuperar un intervalo de valores de propiedad. Para obtener más información sobre el uso de ADO para la recuperación de intervalos, vea [Uso de ADO para la recuperación de intervalos.](using-ado-for-range-retrieval.md)
 
-Si se usa C++, las interfaces [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) e [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) se pueden usar para recuperar un intervalo de valores de propiedad. Para obtener más información sobre el **uso de IDirectorySearch** e **IDirectoryObject** para la recuperación de intervalos, vea Uso de [IDirectorySearch e IDirectoryObject para la recuperación de intervalos.](using-idirectorysearch-and-idirectoryobject-for-range-retrieval.md)
+Si se usa C++, las interfaces [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) e [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) se pueden usar para recuperar un intervalo de valores de propiedad. Para obtener más información sobre el **uso de IDirectorySearch** e **IDirectoryObject** para la recuperación de intervalos, vea Uso de [IDirectorySearch e IDirectoryObject para la recuperación de intervalos.](using-idirectorysearch-and-idirectoryobject-for-range-retrieval.md)  Este tipo de recuperación debe realizarse en consultas con un tipo de ámbito base (ADS_SCOPE_BASE).
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: El método OnDirectRender recopila información de tiempo que controla la sincronización y el control de calidad.
+description: El método OnDirectRender recopila información de control de tiempo que controla la sincronización y el control de calidad.
 ms.assetid: ed617fac-b2c6-4a3a-ac91-77e2d7cce981
-title: Método CBaseVideoRenderer. OnDirectRender (Renbase. h)
+title: Método CBaseVideoRenderer.OnDirectRender (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7c117366590c96b63ff4595d4563e92aec542cfb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb66169828d8649011c93f8daece4f0d389e82bef0f9d424cd59f2cdc9ae3cf6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052175"
 ---
-# <a name="cbasevideorendererondirectrender-method"></a>CBaseVideoRenderer. OnDirectRender, método
+# <a name="cbasevideorendererondirectrender-method"></a>Método CBaseVideoRenderer.OnDirectRender
 
-El método **OnDirectRender** recopila información de tiempo que controla la sincronización y el control de calidad.
+El **método OnDirectRender recopila** información de control de tiempo que controla la sincronización y el control de calidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ virtual HRESULT OnDirectRender(
 *pMediaSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo multimedia.
+Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo multimedia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a este método en lugar de a [**OnRenderStart**](cbasevideorenderer-onrenderstart.md) y [**OnRenderEnd**](cbasevideorenderer-onrenderend.md). El representador de vídeo de DirectDraw usa este método.
+Llame a este método en lugar [**de OnRenderStart**](cbasevideorenderer-onrenderstart.md) [**y OnRenderEnd.**](cbasevideorenderer-onrenderend.md) El representador de vídeo de DirectDraw usa este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Llame a este método en lugar de a [**OnRenderStart**](cbasevideorenderer-onrend
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Llame a este método en lugar de a [**OnRenderStart**](cbasevideorenderer-onrend
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

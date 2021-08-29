@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de TemplateListType
-description: Define una lista de plantillas que especifican los datos que se van a incluir con los eventos. | Tipo complejo de TemplateListType
+title: Tipo complejo TemplateListType
+description: Define una lista de plantillas que especifican los datos que se incluirán con los eventos. | Tipo complejo TemplateListType
 ms.assetid: 7f676746-6773-4ae2-8330-60d432c29e3a
 keywords:
-- TemplateListType tipo complejo EventLog
+- TemplateListType de tipo complejo EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a60b31fd88d05f00229f27a616a29483a29bd49d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8659270ffded1724ce308e2a6c69aeefb34271f2be39f4468d8e7e460b20fd3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005715"
 ---
-# <a name="templatelisttype-complex-type"></a>Tipo complejo de TemplateListType
+# <a name="templatelisttype-complex-type"></a>Tipo complejo TemplateListType
 
-Define una lista de plantillas que especifican los datos que se van a incluir con los eventos.
+Define una lista de plantillas que especifican los datos que se incluirán con los eventos.
 
 ``` syntax
 <xs:complexType name="TemplateListType">
@@ -42,7 +42,7 @@ Define una lista de plantillas que especifican los datos que se van a incluir co
 
 | Elemento                                                                   | Tipo                                                                         | Descripción                                                           |
 |---------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [**plantillas**](eventmanifestschema-template-templatelisttype-element.md) | [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) | Plantilla que define los datos que se van a incluir con un evento.<br/> |
+| [**Plantilla**](eventmanifestschema-template-templatelisttype-element.md) | [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) | Plantilla que define los datos que se incluirán con un evento .<br/> |
 
 
 
@@ -52,8 +52,8 @@ Define una lista de plantillas que especifican los datos que se van a incluir co
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Estructura MrmResourceIndexerMessage (MrmResourceIndexer. h)
-description: Representa un mensaje generado por un indizador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
+title: Estructura MrmResourceIndexerMessage (MrmResourceIndexer.h)
+description: Representa un mensaje generado por un indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
 ms.assetid: E00065E6-A468-4ACD-AF89-434E4F5025A4
 keywords:
-- Menús de la estructura MrmResourceIndexerMessage y otros recursos
-- PMrmResourceIndexerMessage menús de puntero de estructura y otros recursos
+- Menús de estructura MrmResourceIndexerMessage y otros recursos
+- Menús de puntero de estructura PMrmResourceIndexerMessage y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5073c4f74852d341d7f0711a34abe4459dcbaa79
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54751d11816a121ca9a7678a431219f6c12a8bf103c314420f739948d97e8f38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939775"
 ---
 # <a name="mrmresourceindexermessage-structure"></a>Estructura MrmResourceIndexerMessage
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Representa un mensaje generado por un indizador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Representa un mensaje generado por un indexador de recursos. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas [de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,14 +56,14 @@ Valor que indica la gravedad del mensaje.
 
 </dd> <dt>
 
-**id**
+**identificador**
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
 </dd> <dd>
 
-Identificador único del mensaje.
+Identificador único para el mensaje.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Tipo: **PCWSTR**
 
 </dd> <dd>
 
-Texto del mensaje. No libere este puntero; la memoria es propiedad del sistema operativo.
+Texto del mensaje. No liberar este puntero; la memoria es propiedad del sistema operativo.
 
 </dd> </dl>
 
@@ -84,9 +84,9 @@ Texto del mensaje. No libere este puntero; la memoria es propiedad del sistema o
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 
 
 

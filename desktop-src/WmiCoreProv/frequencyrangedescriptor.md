@@ -1,7 +1,7 @@
 ---
-description: Representa un contenedor para las características de un intervalo de frecuencias admitido.
+description: Representa un contenedor para las características de un intervalo de frecuencia admitido.
 ms.assetid: eb07c10b-8d92-40bb-8a93-ebc5db46cfd3
-title: Clase FrequencyRangeDescriptor
+title: FrequencyRangeDescriptor (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,16 +26,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: d18bee8a69fd8663ea54973d6e4e8219f5f74e27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 287da7980da8e2837d44852b4cd2ecf2f098604a6478ab6c534104f82fb1fddf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120097455"
 ---
-# <a name="frequencyrangedescriptor-class"></a>Clase FrequencyRangeDescriptor
+# <a name="frequencyrangedescriptor-class"></a>FrequencyRangeDescriptor (clase)
 
-La clase WMI **FrequencyRangeDescriptor** representa un contenedor para las características de un intervalo de frecuencias admitido. Las instancias de esta clase son elementos de la matriz **MonitorFreqRanges** en [**WmiMonitorListedFrequencyRanges**](wmimonitorlistedfrequencyranges.md).
+La clase WMI **FrequencyRangeDescriptor** representa un contenedor para las características de un intervalo de frecuencia admitido. Las instancias de esta clase son elementos de la **matriz MonitorFreqRanges** [**en WmiMonitorListedFrequencyRanges.**](wmimonitorlistedfrequencyranges.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,20 +60,20 @@ class FrequencyRangeDescriptor
 
 ## <a name="members"></a>Miembros
 
-La clase **FrequencyRangeDescriptor** tiene estos tipos de miembros:
+La **clase FrequencyRangeDescriptor** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **FrequencyRangeDescriptor** tiene estas propiedades.
+La **clase FrequencyRangeDescriptor** tiene estas propiedades.
 
 <dl> <dt>
 
 **ActiveHeight**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -86,7 +86,7 @@ Alto, en píxeles, de la imagen activa.
 **ActiveWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -99,7 +99,7 @@ Ancho, en píxeles, de la imagen activa.
 **ConstraintType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -112,20 +112,20 @@ Tipo de restricción para el intervalo de frecuencia.
 **MaxHSyncDenominator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Denominador de sincronización horizontal máxima.
+Denominador de sincronización horizontal máximo.
 
 </dd> <dt>
 
 **MaxHSyncNumerator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -138,104 +138,104 @@ Numerador de sincronización horizontal máximo en kilohercios (KHz).
 **MaxPixelRate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Velocidad de píxeles máxima en hercios (Hz).
+Velocidad máxima de píxeles en Hertz (Hz).
 
 </dd> <dt>
 
 **MaxVSyncDenominator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Denominador de sincronización vertical máxima.
+Denominador de sincronización vertical máximo.
 
 </dd> <dt>
 
 **MaxVSyncNumerator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Numerador de sincronización vertical máximo, en hercios (Hz).
+Numerador de sincronización vertical máximo, en Hertz (Hz).
 
 </dd> <dt>
 
 **MinHSyncDenominator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Denominador de sincronización horizontal mínima.
+Denominador de sincronización horizontal mínimo.
 
 </dd> <dt>
 
 **MinHSyncNumerator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Numerador de sincronización horizontal mínimo en, kilohercios (KHz).
+Numerador de sincronización horizontal mínimo en kilohercios (KHz).
 
 </dd> <dt>
 
 **MinVSyncDenominator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Denominador de sincronización vertical mínima.
+Denominador de sincronización vertical mínimo.
 
 </dd> <dt>
 
 **MinVSyncNumerator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Numerador de sincronización vertical mínimo, en hercios (Hz).
+Numerador de sincronización vertical mínimo, en Hertz (Hz).
 
 </dd> <dt>
 
 **Origen**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Pescado.
+Origen.
 
 </dd> </dl>
 
@@ -247,8 +247,8 @@ Pescado.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPixProgressCallback\_Progress\_DWORD\_DWORD
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: IPixProgressCallback::P método rogress
+title: IPixProgressCallback::P rogress (método)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: BE74599B-C98F-4BDB-ACDF-641F77A35EEB
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 0379ad6fcb5f97825469c97af38453e55585d005
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fbdc28d4ef248b905f39e03e199a08a30b5f92cf
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104422928"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626820"
 ---
-# <a name="span-idvspixengineipixprogresscallback_progress_dword_dwordspanipixprogresscallbackprogress-method"></a><span id="vspixengine.ipixprogresscallback_progress_dword_dword"></span>IPixProgressCallback::P método rogress
+# <a name="span-idvspixengineipixprogresscallback_progress_dword_dwordspanipixprogresscallbackprogress-method"></a><span id="vspixengine.ipixprogresscallback_progress_dword_dword"></span>IPixProgressCallback::P rogress (método)
 
 Devolución de llamada que notifica al host el progreso de una solicitud asociada.
 
@@ -40,19 +40,19 @@ HRESULT Progress(
 
 ## <a name="parameters"></a>Parámetros
 
-*corrientes*   
-La parte de una solicitud se completó, como un recuento del número de pasos completados.
+*Actual*   
+Parte de una solicitud completada, como recuento del número de pasos completados.
 
-*Tamañomáximo*   
-El número total de pasos para completar la solicitud.
+*Maxsize*   
+Número total de pasos para completar la solicitud.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

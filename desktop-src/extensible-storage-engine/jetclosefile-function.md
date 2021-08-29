@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad8f40f53ec23a5a555efeb270370d384d6dc9a6
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 8e9c8bd5eaa1bc01ba77a48af9f011f366d4c855
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989058"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465092"
 ---
 # <a name="jetclosefile-function"></a>JetCloseFile (Función)
 
@@ -69,20 +69,14 @@ Si se ejecuta correctamente, se cierra el identificador de archivo. Si se cerró
 
 En caso de error, no se produce ningún cambio.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Actualmente, el motor de base de datos solo admite un archivo abierto [a través de JetOpenFile](./jetopenfile-function.md) a la vez. Si se abre un identificador de archivo [mediante JetOpenFile,](./jetopenfile-function.md) debe cerrarse mediante **JetCloseFile** antes de que se pueda abrir otro archivo.
+Actualmente, el motor de base de datos solo admite un archivo abierto a [través de JetOpenFile](./jetopenfile-function.md) a la vez. Si se abre un identificador de archivo [mediante JetOpenFile,](./jetopenfile-function.md) debe cerrarse mediante **JetCloseFile** antes de que se pueda abrir otro archivo.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

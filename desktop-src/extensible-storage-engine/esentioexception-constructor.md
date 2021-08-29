@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentIOException'
-title: Constructor de EsentIOException
+description: 'Más información sobre: Constructor EsentIOException'
+title: Constructor EsentIOException
 TOCTitle: 'EsentIOException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentIOException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentioexception.esentioexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 45fba2a9781b0af9848be934423e5329fb6217ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a43292577f50c2d0a15560147c9e01b246d53dd5f210c00a017984d07ca913b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104553857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971955"
 ---
-# <a name="esentioexception-constructor"></a>Constructor de EsentIOException
+# <a name="esentioexception-constructor"></a>Constructor EsentIOException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,12 +39,12 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn319598(v=exchg.10).md">EsentIOException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentIOException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn319598(v=exchg.10).md">EsentIOException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentIOException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn319596(v=exchg.10).md">EsentIOException (cadena, JET_err)</a></td>
+<td><a href="dn319596(v=exchg.10).md">EsentIOException(String, JET_err)</a></td>
 <td>Inicializa una nueva instancia de la clase EsentIOException.</td>
 </tr>
 </tbody>
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentIOException](./esentioexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

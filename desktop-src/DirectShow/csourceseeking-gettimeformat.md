@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4a56f9a490699d68d7a043e9385ad458562058f5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a7e1bf5765a4d3069d1298e0f39043429299c327d514f747bb6b1e658ac49cab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054275"
 ---
 # <a name="csourceseekinggettimeformat-method"></a>Método CSourceSeeking.GetTimeFormat
 
@@ -45,7 +45,7 @@ HRESULT GetTimeFormat(
 *pFormat* 
 </dt> <dd>
 
-Puntero a una variable que recibe un GUID de formato de hora. Consulte [**GUID de formato de hora.**](time-format-guids.md)
+Puntero a una variable que recibe un GUID de formato de hora. Consulte [**GUID de formato de hora**](time-format-guids.md).
 
 </dd> </dl>
 
@@ -74,12 +74,12 @@ El único formato de hora admitido por la clase base es TIME \_ FORMAT \_ MEDIA 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

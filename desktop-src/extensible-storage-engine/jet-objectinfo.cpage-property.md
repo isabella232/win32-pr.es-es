@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_OBJECTINFO. cPage'
-title: Propiedad JET_OBJECTINFO. cPage
+description: 'Más información sobre: JET_OBJECTINFO.cPage'
+title: JET_OBJECTINFO.cPage, propiedad
 TOCTitle: 'cPage property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_OBJECTINFO.cPage
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectinfo.cpage(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 57785f95d78f6059e7f34f2b8cc97cd7eaa6596e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00d51554f870d0e608ab1997b9ee0f6dd73a1c49d3000b0fdf2173b9f642268c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093585"
 ---
-# <a name="jet_objectinfocpage-property"></a>Propiedad JET_OBJECTINFO. cPage
+# <a name="jet_objectinfocpage-property"></a>JET_OBJECTINFO.cPage, propiedad
 
 Obtiene el número de páginas utilizadas por la tabla.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cPage { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_OBJECTINFO (clase)](./jet-objectinfo-class.md)
+[JET_OBJECTINFO clase](./jet-objectinfo-class.md)
 
-[Miembros de JET_OBJECTINFO](./jet-objectinfo-members.md)
+[JET_OBJECTINFO miembros](./jet-objectinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

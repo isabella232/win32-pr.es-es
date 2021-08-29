@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentStopwatch. IsRunning (propiedad)'
-title: EsentStopwatch. IsRunning (propiedad)
+description: 'Más información sobre: Propiedad EsentStopwatch.IsRunning'
+title: Propiedad EsentStopwatch.IsRunning
 TOCTitle: 'IsRunning property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.EsentStopwatch.IsRunning
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.isrunning(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ebd99a742794dbe7d482db7eb4345b1ff41a46e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b090120ad79fa5f66934d98985401fc2dd9f778ca2d1ee6268560e533e9ceb2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093955"
 ---
-# <a name="esentstopwatchisrunning-property"></a>EsentStopwatch. IsRunning (propiedad)
+# <a name="esentstopwatchisrunning-property"></a>Propiedad EsentStopwatch.IsRunning
 
-Obtiene un valor que indica si el temporizador de EsentStopwatch se está ejecutando.
+Obtiene un valor que indica si se está ejecutando el temporizador de EsentStopwatch.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,9 +60,9 @@ public bool IsRunning { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -70,4 +70,4 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Miembros de EsentStopwatch](./esentstopwatch-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

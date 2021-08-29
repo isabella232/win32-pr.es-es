@@ -1,21 +1,21 @@
 ---
-description: Tablet PC es un equipo personal totalmente funcional con tecnología de Microsoft Windows y diseñado para aplicaciones habilitadas para lápiz, lápiz y voz.
+description: Tablet PC es un equipo personal totalmente funcional con tecnología de Microsoft Windows y diseñado para aplicaciones habilitadas para lápiz, lápiz y habilitadas para voz.
 ms.assetid: 6d1d26b7-34e9-499c-805e-6861362f4ef8
 title: Tareas iniciales (Tablet PC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67d9fc4a76696fccb60d3ca4571b51631764091a
-ms.sourcegitcommit: 4be05a12840be3d2e7c71fe57401b2edee72e354
+ms.openlocfilehash: c0a6c58d7c78842c6f79939dd1b8dec05a3063ad0d7851785503b2c303faf1cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008605"
 ---
 # <a name="getting-started-tablet-pc"></a>Tareas iniciales (Tablet PC)
 
-Tablet PC es un equipo personal totalmente funcional con tecnología de Microsoft Windows y diseñado para aplicaciones habilitadas para lápiz, lápiz y voz. La combinación de software y hardware en una tableta PC permite estos métodos de interacción del usuario, lo que crea una experiencia informática enriquecente, interactiva y productiva para los usuarios.
+Tablet PC es un equipo personal totalmente funcional con tecnología de Microsoft Windows y diseñado para aplicaciones habilitadas para lápiz, lápiz y habilitadas para voz. La combinación de software y hardware en una tableta PC permite estos métodos de interacción del usuario, lo que crea una experiencia informática enriquecente, interactiva y productiva para los usuarios.
 
-La plataforma Tablet PC permite la entrada y salida de datos de escritura a mano y voz en un tablet PC, así como el intercambio de estos datos con otros equipos. Los componentes de la plataforma tablet PC instalados por el SDK de Windows 7 le permiten compilar aplicaciones habilitadas para lápiz y para lápiz para tablet PC.
+La plataforma Tablet PC permite la entrada y salida de datos de escritura a mano y voz en un tablet PC, así como el intercambio de estos datos con otros equipos. Los componentes de la plataforma de Tablet PC instalados por el SDK de Windows 7 le permiten crear aplicaciones habilitadas para lápiz y lápiz para tablet PC.
 
 ## <a name="hardware-and-software-environment"></a>Entorno de hardware y software
 

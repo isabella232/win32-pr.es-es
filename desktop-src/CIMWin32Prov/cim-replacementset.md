@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM ReplacementSet agrega elementos físicos que se deben reemplazar juntos.
+description: La clase CIM \_ ReplacementSet agrega elementos físicos que se deben reemplazar juntos.
 ms.assetid: db55ae2d-49b3-4cc9-95ee-1e757f58a427
 ms.tgt_platform: multiple
-title: CIM_ReplacementSet (clase)
+title: CIM_ReplacementSet clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: defc63628e494465d7a31d8adcea758e538c4c9e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9fc82a4e710eb3b76d526b1efd254596018610280e214b2b13fc00c9c4055916
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920345"
 ---
-# <a name="cim_replacementset-class"></a>\_Clase ReplacementSet de CIM
+# <a name="cim_replacementset-class"></a>Clase \_ ReplacementSet de CIM
 
-La clase **CIM \_ ReplacementSet** agrega elementos físicos que se deben reemplazar juntos. Por ejemplo, al reemplazar una tarjeta de memoria, los chips de memoria de componente también se pueden quitar y reemplazar. O bien, esta asociación se puede usar para reemplazar o actualizar un conjunto de chips de memoria.
+La **clase CIM \_ ReplacementSet** agrega elementos físicos que se deben reemplazar juntos. Por ejemplo, al reemplazar una tarjeta de memoria, también se pueden quitar y reemplazar los chips de memoria del componente. O bien, esta asociación se puede usar para reemplazar o actualizar un conjunto de chips de memoria.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_ReplacementSet
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ReplacementSet** tiene estos tipos de miembros:
+La **clase \_ CIM ReplacementSet** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ReplacementSet** tiene estas propiedades.
+La **clase \_ CIM ReplacementSet** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que especifica información relacionada con esta clase. En esta propiedad se puede incluir el propósito del conjunto o la información relacionada con la forma en que se reemplazan los elementos de componente.
+Cadena de forma libre que especifica información relacionada con esta clase. La finalidad del conjunto, o información relacionada con cómo se reemplazan los elementos del componente, se puede incluir en esta propiedad.
 
 </dd> <dt>
 
@@ -79,18 +79,18 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Cadena de forma libre que define una etiqueta para esta propiedad. Esta propiedad es la clave para el objeto.
+Cadena de forma libre que define una etiqueta para esta propiedad. Esta propiedad es la clave del objeto .
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de LVN_ODSTATECHANGED (commctrl. h)
-description: Lo envía un control de vista de lista cuando el estado de un elemento o un intervalo de elementos ha cambiado. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: LVN_ODSTATECHANGED de notificación (Commctrl.h)
+description: Enviado por un control de vista de lista cuando el estado de un elemento o intervalo de elementos ha cambiado. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: a3aafda5-a3ec-4f84-8153-8d34097e04f1
 keywords:
-- LVN_ODSTATECHANGED controles de código de notificación de Windows
+- LVN_ODSTATECHANGED de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86de2f5e01e15d0a97c49f451914aac5b74b27e0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bdf8712078e3398f775115233c0fd54622943cc2cb7febe0c24d800776418de5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915115"
 ---
-# <a name="lvn_odstatechanged-notification-code"></a>Código de notificación de ODSTATECHANGED de LVN \_
+# <a name="lvn_odstatechanged-notification-code"></a>Código de notificación \_ LVN ODSTATECHANGED
 
-Lo envía un control de vista de lista cuando el estado de un elemento o un intervalo de elementos ha cambiado. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de vista de lista cuando el estado de un elemento o intervalo de elementos ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ LVN_ODSTATECHANGED
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMLVODSTATECHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmlvodstatechange) que contiene información sobre el elemento o los elementos que han cambiado.
+Puntero a una [**estructura NMLVODSTATECHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmlvodstatechange) que contiene información sobre el elemento o los elementos que han cambiado.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ La aplicación que recibe este código de notificación debe devolver cero.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

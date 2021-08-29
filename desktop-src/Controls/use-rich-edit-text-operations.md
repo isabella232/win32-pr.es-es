@@ -1,42 +1,42 @@
 ---
-title: Cómo usar operaciones de edición de texto enriquecidas
-description: Una aplicación puede enviar mensajes para recuperar o buscar texto en un control Rich Edit. Puede recuperar el texto seleccionado o un intervalo de texto especificado.
+title: Cómo usar operaciones de edición de texto enriquecido
+description: Una aplicación puede enviar mensajes para recuperar o buscar texto en un control de edición enriquecido. Puede recuperar el texto seleccionado o un intervalo de texto especificado.
 ms.assetid: 95D88F9A-3DD1-48E4-B6FF-3168F2D25846
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b54619e1ce5952b7c0d06527c6aca2402a4e714
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 91018dfd2c13c589530b9e3d5abe5399a8128bb5904e66c5aceacb692ae0d0ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103995676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120132085"
 ---
-# <a name="how-to-use-rich-edit-text-operations"></a>Cómo usar operaciones de edición de texto enriquecidas
+# <a name="how-to-use-rich-edit-text-operations"></a>Cómo usar operaciones de edición de texto enriquecido
 
-Una aplicación puede enviar mensajes para recuperar o buscar texto en un control Rich Edit. Puede recuperar el texto seleccionado o un intervalo de texto especificado.
+Una aplicación puede enviar mensajes para recuperar o buscar texto en un control de edición enriquecido. Puede recuperar el texto seleccionado o un intervalo de texto especificado.
 
-Para obtener el texto seleccionado en un control Rich Edit, utilice el [**mensaje \_ GETSELTEXT em**](em-getseltext.md) . El texto se copia en la matriz de caracteres especificada. Debe asegurarse de que la matriz es lo suficientemente grande como para contener el texto seleccionado más un carácter nulo de terminación.
+Para obtener el texto seleccionado en un control de edición enriquecido, use el [**mensaje EM \_ GETSELTEXT.**](em-getseltext.md) El texto se copia en la matriz de caracteres especificada. Debe asegurarse de que la matriz es lo suficientemente grande como para contener el texto seleccionado más un carácter nulo de terminación.
 
-Para recuperar un intervalo de texto especificado, use el [**mensaje \_ GETTEXTRANGE em**](em-gettextrange.md) . La estructura [**TEXTRANGE**](/windows/win32/api/richedit/ns-richedit-textrangea) utilizada con este mensaje especifica el intervalo de texto que se va a recuperar y apunta a una matriz de caracteres que recibe el texto. En este caso, la aplicación debe asegurarse de que la matriz es lo suficientemente grande como para el texto especificado y un carácter nulo de terminación.
+Para recuperar un intervalo de texto especificado, use el [**mensaje EM \_ GETTEXTRANGE.**](em-gettextrange.md) La [**estructura TEXTRANGE**](/windows/win32/api/richedit/ns-richedit-textrangea) usada con este mensaje especifica el intervalo de texto que se va a recuperar y apunta a una matriz de caracteres que recibe el texto. De nuevo, la aplicación debe asegurarse de que la matriz sea lo suficientemente grande para el texto especificado más un carácter nulo de terminación.
 
-Puede buscar una cadena en un control Rich Edit mediante los mensajes [**em \_ Textobuscado**](em-findtext.md) o [**em \_ FINDTEXTEX**](em-findtextex.md) , o sus equivalentes de Unicode, [**em \_ FINDTEXTW**](em-findtextw.md) y [**em \_ FINDTEXTEXW**](em-findtextexw.md). La estructura [**FINDTEXT**](/windows/win32/api/richedit/ns-richedit-findtexta) que se usa con las versiones no extendidas especifica el intervalo de texto que se va a buscar y la cadena que se va a buscar. Las versiones extendidas usan una estructura [**FINDTEXTEX**](/windows/desktop/api/Richedit/ns-richedit-findtextexa) , que especifica la misma información y también recibe los puntos inicial y final del intervalo de caracteres del texto encontrado. También puede especificar estas opciones como si la búsqueda distinga mayúsculas de minúsculas.
+Puede buscar una cadena en un control de edición enriquecido mediante los mensajes [**EM \_ FINDTEXT**](em-findtext.md) o [**EM \_ FINDTEXTEX,**](em-findtextex.md) o sus equivalentes Unicode, [**EM \_ FINDTEXTW**](em-findtextw.md) y [**EM \_ FINDTEXTEXW**](em-findtextexw.md). La [**estructura FINDTEXT**](/windows/win32/api/richedit/ns-richedit-findtexta) que se usa con las versiones no siguientes especifica el intervalo de texto que se va a buscar y la cadena que se va a buscar. Las versiones extendidas usan una estructura [**FINDTEXTEX,**](/windows/desktop/api/Richedit/ns-richedit-findtextexa) que especifica la misma información y también recibe los puntos inicial y final del intervalo de caracteres del texto encontrado. También puede especificar opciones como si la búsqueda distingue mayúsculas de minúsculas.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="use-a-rich-edit-text-operation"></a>Usar una operación de edición de texto enriquecida
+### <a name="use-a-rich-edit-text-operation"></a>Usar una operación de edición de texto enriquecido
 
-En la función de ejemplo siguiente se busca el texto especificado en el texto seleccionado en un control Rich Edit que admita Unicode. Si se encuentra el destino, se convierte en la nueva selección.
+La función de ejemplo siguiente busca el texto especificado dentro del texto seleccionado en un control de edición enriquecido que admite Unicode. Si se encuentra el destino, se convierte en la nueva selección.
 
 
 ```C++
@@ -70,20 +70,20 @@ BOOL FindTextInSelection(HWND hRich, WCHAR* target)
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Microsoft Rich Edit 3,0 también es compatible con la función del editor de métodos de entrada (IME) HexToUnicode, que permite a un usuario convertir entre hexadecimales y Unicode mediante el uso de teclas de acceso rápido. Para obtener más información, consulte [HEXTOUNICODE IME](/windows/desktop/Intl/hextounicode-ime).
+Microsoft Rich Edit 3.0 también admite la función Editor de métodos de entrada (IME) HexToUnicode, que permite a un usuario convertir entre hexadecimal y Unicode mediante teclas de acceso rápido. Para obtener más información, [vea HexToUnicode IME](/windows/desktop/Intl/hextounicode-ime).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar controles Rich Edit](using-rich-edit-controls.md)
+[Usar controles rich edit](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

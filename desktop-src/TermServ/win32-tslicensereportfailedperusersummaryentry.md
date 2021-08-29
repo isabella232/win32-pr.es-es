@@ -1,11 +1,11 @@
 ---
-title: Win32_TSLicenseReportFailedPerUserSummaryEntry (clase)
-description: Proporciona detalles de los dominios en los que se produjo un error en la emisión por usuario.
+title: Win32_TSLicenseReportFailedPerUserSummaryEntry clase
+description: Proporciona detalles de los dominios en los que se ha registrado un error en la emisión por usuario.
 ms.assetid: f7265734-ac4d-439f-ae8b-3694e6f81f2a
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLicenseReportFailedPerUserSummaryEntry clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLicenseReportFailedPerUserSummaryEntry de clase, se describe
+- Win32_TSLicenseReportFailedPerUserSummaryEntry clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f086d275c064f5df18ee01a3a38639a40913f3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3eefa2e4547bb42f2888fd1cc466e9a9abbb97f0b381f6fc439244bdb59a065
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008435"
 ---
-# <a name="win32_tslicensereportfailedperusersummaryentry-class"></a>\_Clase Win32 TSLicenseReportFailedPerUserSummaryEntry
+# <a name="win32_tslicensereportfailedperusersummaryentry-class"></a>Clase \_ TSLicenseReportFailedPerUserSummaryEntry de Win32
 
-Proporciona detalles de los dominios en los que se produjo un error en la emisión por usuario.
+Proporciona detalles de los dominios en los que se ha registrado un error en la emisión por usuario.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -63,23 +63,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Especifica el nombre de dominio en el que se produjo el error de emisión de licencias.
+Especifica el nombre de dominio al que se ha podido emitir la licencia.
 
 </dd> <dt>
 
 **FailedIssuanceCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de emisiones erróneas.
+Número de emisión con errores.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ El número de emisiones erróneas.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

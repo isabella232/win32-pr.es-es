@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase IndexInfo'
-title: Clase IndexInfo
+description: 'Más información sobre: IndexInfo (clase)'
+title: IndexInfo (clase)
 TOCTitle: IndexInfo class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.IndexInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d09d105124afe8d89e47297ea7a93647b11e6b10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3565bc6e098cdf184b29f44bae5265a0ba4ba56a799652885a535559fe8e86c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116432"
 ---
-# <a name="indexinfo-class"></a>Clase IndexInfo
+# <a name="indexinfo-class"></a>IndexInfo (clase)
 
-Información sobre un índice esent. Esta no es una clase de interoperabilidad, pero la usan los métodos auxiliares de metadatos.
+Información sobre un índice de esent. No se trata de una clase de interoperabilidad, sino que la usan los métodos auxiliares de metadatos.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. IndexInfo  
+  Microsoft.Isam.Esent.Interop.IndexInfo  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,6 +66,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de IndexInfo](./indexinfo-members.md)
+[Miembros IndexInfo](./indexinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

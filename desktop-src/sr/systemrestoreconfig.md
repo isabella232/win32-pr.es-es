@@ -1,10 +1,10 @@
 ---
-title: Clase SystemRestoreConfig
+title: SystemRestoreConfig (clase)
 description: Proporciona propiedades para controlar la frecuencia de creación de puntos de restauración programados y la cantidad de espacio en disco consumido en cada unidad.
 ms.assetid: ed09e03f-8cc1-4923-8f39-bbe7d9a19b44
 keywords:
-- Restauración del sistema de la clase SystemRestoreConfig
-- SystemRestoreConfig (clase) restauración del sistema, descrito
+- Clase SystemRestoreConfig Restaurar sistema
+- Clase SystemRestoreConfig Restaurar sistema , descrito
 topic_type:
 - apiref
 api_name:
@@ -19,14 +19,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58ded8a17cc4800e1aa2917ba7750c6c69434916
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a007249038bf342bc5516fd66caa32e3a84971dab71512d9d744b3cc9ba1872b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009455"
 ---
-# <a name="systemrestoreconfig-class"></a>Clase SystemRestoreConfig
+# <a name="systemrestoreconfig-class"></a>SystemRestoreConfig (clase)
 
 Proporciona propiedades para controlar la frecuencia de creación de puntos de restauración programados y la cantidad de espacio en disco consumido en cada unidad.
 
@@ -44,81 +44,81 @@ class SystemRestoreConfig
 
 ## <a name="members"></a>Miembros
 
-La clase **SystemRestoreConfig** tiene estos tipos de miembros:
+La **clase SystemRestoreConfig** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **SystemRestoreConfig** tiene estas propiedades.
+La **clase SystemRestoreConfig** tiene estas propiedades.
 
 <dl> <dt>
 
 **DiskPercent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La cantidad máxima de espacio en disco en cada unidad que puede usar Restaurar sistema. Este valor se especifica como un porcentaje del espacio total de la unidad. El valor predeterminado es 12 por ciento.
+Cantidad máxima de espacio en disco en cada unidad que puede usar Restaurar sistema. Este valor se especifica como un porcentaje del espacio total de unidad. El valor predeterminado es 12 por ciento.
 
-**Windows Vista:** Recibe un valor de la Servicio de instantáneas de volumen (VSS). Esta es la cantidad máxima de espacio en disco en cada unidad que puede usar Restaurar sistema. El valor predeterminado es el 15 por ciento del espacio total de la unidad o el 30 por ciento del espacio libre disponible, lo que sea menor.
+**Windows Vista:** Recibe un valor de la Servicio de instantáneas de volumen (VSS). Esta es la cantidad máxima de espacio en disco en cada unidad que puede usar Restaurar sistema. El valor predeterminado es el 15 por ciento del espacio total de unidad o el 30 por ciento del espacio libre disponible, lo que sea menor.
 
 </dd> <dt>
 
 **RPGlobalInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El intervalo de tiempo absoluto en el que se crean los puntos de control del sistema programados, en segundos. El valor predeterminado es 86.400 (24 horas).
+Intervalo de tiempo absoluto en el que se crean los puntos de control programados del sistema, en segundos. El valor predeterminado es 86 400 (24 horas).
 
-**Windows Vista:** Recibe un valor del programador de tareas para restaurar el sistema. Cero si la tarea está deshabilitada.
+**Windows Vista:** Recibe un valor del programador de tareas para Restaurar sistema. Cero si la tarea está deshabilitada.
 
 </dd> <dt>
 
 **RPLifeInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Intervalo de tiempo para el que se conservan los puntos de restauración, en segundos. Cuando un punto de restauración es más antiguo que este intervalo especificado, se elimina. El límite de antigüedad predeterminado es de 90 días.
+Intervalo de tiempo durante el que se conservan los puntos de restauración, en segundos. Cuando un punto de restauración es anterior a este intervalo especificado, se elimina. El límite de edad predeterminado es de 90 días.
 
-**Windows Vista:** Recibe un valor de **UINTMAX**.
+**Windows Vista:** Recibe un valor de **UINTMAX.**
 
 </dd> <dt>
 
 **RPSessionInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El intervalo de tiempo en que se crean los puntos de control del sistema programados durante la sesión, en segundos. El valor predeterminado es cero, lo que indica que la característica está desactivada.
+Intervalo de tiempo en el que se crean puntos de control programados del sistema durante la sesión, en segundos. El valor predeterminado es cero, lo que indica que la característica está desactivada.
 
-**Windows Vista:** Recibe cero si está deshabilitada la restauración del sistema.
+**Windows Vista:** Recibe cero si Restaurar sistema está deshabilitado.
 
 </dd> </dl>
 
 ## <a name="examples"></a>Ejemplos
 
-No se admite el siguiente código de ejemplo. Use la herramienta de línea de comandos Vssadmin.exe para cambiar el tamaño del espacio de la unidad reservada.
+No se admite el código de ejemplo siguiente. Use la herramienta de línea de Vssadmin.exe para cambiar el tamaño del espacio de unidad reservado.
 
-**Windows XP:** Este ejemplo es compatible.
+**Windows XP:** Se admite este ejemplo.
 
 
 ```VB
@@ -182,10 +182,10 @@ End If
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                       |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                         |
 | Espacio de nombres<br/>                | Raíz \\ predeterminada<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>MOF</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 
 

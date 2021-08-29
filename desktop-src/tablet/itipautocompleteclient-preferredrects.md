@@ -1,7 +1,7 @@
 ---
-description: Permite al cliente sugerir dónde colocar la lista de Autocompletar para evitar la superposición del panel de entrada.
+description: Permite al cliente sugerir dónde colocar la lista de autocompletar para evitar que se superponga el Panel de entrada.
 ms.assetid: c82ffecb-f3e6-4c50-80bb-8393b39d3b2a
-title: ITipAutocompleteClient::P método referredRects (TipAutoComplete. h)
+title: Método ITipAutocompleteClient::P referredRects (TipAutoComplete.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 04e935c668e858ae3d22936e8a63f9116ebd6ab2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa1fa4636b0302e058bc0a308e5d87da11d9bec3d12d678b9eb6057521479689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938595"
 ---
-# <a name="itipautocompleteclientpreferredrects-method"></a>ITipAutocompleteClient::P método referredRects
+# <a name="itipautocompleteclientpreferredrects-method"></a>ITipAutocompleteClient::P referredRects (método)
 
-Permite al cliente sugerir dónde colocar la lista de Autocompletar para evitar la superposición del panel de entrada.
+Permite al cliente sugerir dónde colocar la lista de autocompletar para evitar que se superponga el Panel de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ HRESULT PreferredRects(
 
 <dl> <dt>
 
-*prcACList* \[ de\]
+*prcACList* \[ En\]
 </dt> <dd>
 
-Rectángulo, en coordenadas de la pantalla, que indica la ubicación preferida del proveedor y el tamaño de la interfaz de usuario de la lista de autocompletar.
+Rectángulo, en coordenadas de pantalla, que indica la ubicación preferida del proveedor y el tamaño de la interfaz de usuario de la lista de autocompletar.
 
 </dd> <dt>
 
-*prcField* \[ de\]
+*prcField* \[ En\]
 </dt> <dd>
 
-Rectángulo, en coordenadas de la pantalla, que indica la ubicación y el tamaño del campo con foco.
+Rectángulo, en coordenadas de pantalla, que indica la ubicación y el tamaño del campo centrado.
 
 </dd> <dt>
 
-*prcModified* \[ enuncia\]
+*prcModified* \[ out\]
 </dt> <dd>
 
-Un rectángulo basado en el estado actual de la sugerencia y la ubicación y el tamaño de la lista de rellenado automático preferidos especificado por *prcACList*.
+Rectángulo basado en el estado actual de tip y la ubicación de lista de autocompletar preferida y el tamaño especificados por *prcACList*.
 
 </dd> <dt>
 
 *pfShownAboveTip* \[ in, out\]
 </dt> <dd>
 
-**True** si el rectángulo modificado se va a mostrar sobre el área de destino del panel de entrada de texto; en caso contrario, **false**. Este valor se debe inicializar en la orientación preferida del proveedor antes de que se llame al método.
+**TRUE** si el rectángulo modificado se va a mostrar encima del área de destino del panel de entrada de texto; de lo contrario, **FALSE**. Este valor debe inicializarse en la orientación preferida del proveedor antes de llamar al método .
 
 </dd> </dl>
 
@@ -78,19 +78,19 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                  | Descripción                                                                                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Correcto.<br/>                                                                                                                                                                                                                                                            |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Llame al [**método ITipAutocompleteClient:: RequestShowUI**](itipautocompleteclient-requestshowui.md) para establecer la ventana Lista de autocompletar emergente antes de llamar al [**método ITipAutocompleteClient::P referredrects**](itipautocompleteclient-preferredrects.md).<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Correcto.<br/>                                                                                                                                                                                                                                                            |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Llame al [**método ITipAutocompleteClient::RequestShowUI**](itipautocompleteclient-requestshowui.md) para establecer la ventana emergente de lista de autocompletar antes de llamar al método [**ITipAutocompleteClient::P referredRects**](itipautocompleteclient-preferredrects.md).<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>       | Se ha producido un error no especificado.<br/>                                                                                                                                                                                                                                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este es el método al que el proveedor de autocompletar llama cuando está a punto de mostrar la interfaz de usuario de autocompletar. El cliente modifica el rectángulo preferido del proveedor especificado por *prcACList* a través del argumento *prcModified* .
+Este es el método al que llama el proveedor de autocompletar cuando está a punto de mostrar la interfaz de usuario autocompletar. El cliente modifica el rectángulo preferido del proveedor especificado por *prcACList mediante* *el argumento prcModified.*
 
-Llame al [**método ITipAutocompleteClient:: RequestShowUI**](itipautocompleteclient-requestshowui.md) para establecer el identificador de la ventana Lista de rellenado automático emergente antes de llamar a **PreferredRects**. Si no lo hace, se producirá un error de **E \_ INVALIDARG** al llamar a **PreferredRects**.
+Llame al [**método ITipAutocompleteClient::RequestShowUI**](itipautocompleteclient-requestshowui.md) para establecer el identificador de ventana de lista de autocompletar emergente antes de llamar a **PreferredRects**. Si no lo hace, se producirá un error **E \_ INVALIDARG** al llamar a **PreferredRects**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,9 +98,9 @@ Llame al [**método ITipAutocompleteClient:: RequestShowUI**](itipautocompletecl
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Encabezado<br/>                   | <dl> <dt>TipAutoComplete. h (también requiere Peninputpanel \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
@@ -109,10 +109,10 @@ Llame al [**método ITipAutocompleteClient:: RequestShowUI**](itipautocompletecl
 
 <dl> <dt>
 
-[**Interfaz ITipAutocompleteClient**](itipautocompleteclient.md)
+[**ITipAutocompleteClient (interfaz)**](itipautocompleteclient.md)
 </dt> <dt>
 
-[**ITipAutocompleteClient:: RequestShowUI (método)**](itipautocompleteclient-requestshowui.md)
+[**ITipAutocompleteClient::RequestShowUI (Método)**](itipautocompleteclient-requestshowui.md)
 </dt> <dt>
 
 [Referencia del panel de entrada de texto](text-input-panel-reference.md)
