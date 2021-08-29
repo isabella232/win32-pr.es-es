@@ -7,16 +7,16 @@ MSHAttr:
 title: IsAdditionalPdpContextProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 888d199cb4ee76caa3e7fef3eb68c6606d6be560
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 2ae27c3df672750b1c396d6da3b99a7309d3d2fb
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884713"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475151"
 ---
 # <a name="span-idwwan_profile_v3element_isadditionalpdpcontextprofilespanisadditionalpdpcontextprofile"></a><span id="WWAN_profile_v3.element_IsAdditionalPdpContextProfile"></span>IsAdditionalPdpContextProfile
 
-El **elemento IsAdditionalPdpContextProfile** contiene un **valor booleano** que es **true** si se trata de un perfil de "contexto de PDP adicional (Protocolo de datos de paquetes) " y **false**; en caso contrario, . El valor predeterminado es **false**.
+El **elemento IsAdditionalPdpContextProfile** contiene un **valor booleano** que es **true** si se trata de un perfil de "contexto de PDP adicional (Protocolo de datos de paquetes) " y **false**, en caso contrario. El valor predeterminado es **false**.
 
 Un perfil de "contexto de PDP adicional" es un perfil que no se activa a través del puerto predeterminado del adaptador físico y establecer este elemento en true garantiza que este perfil no se muestre de forma inapropiada en la interfaz de usuario.
 
@@ -27,7 +27,7 @@ Tenga en cuenta que si este elemento se establece en true, también debe cumplir
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-**&lt;IsAdditionalPdpContextProfile&gt;**
+**<IsAdditionalPdpContextProfile>**
 
 ## <a name="syntax"></a>Syntax
 
