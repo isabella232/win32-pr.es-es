@@ -8,10 +8,10 @@
           href: eaphost-components.md
         - name: Atributos de EAP
           href: about-eap-attributes.md
-        - name: Secuencia de llamadas eaphost
+        - name: Secuencia de llamadas de EAPHost
           href: about-eaphost-call-sequences.md
           items:
-            - name: Secuencia de llamadas api de suplicación
+            - name: Secuencia de llamadas de API suplicante
               href: supplicant-api-call-sequence.md
             - name: Secuencia de llamadas api del método del mismo nivel
               href: peer-method-api-call-sequence.md
@@ -19,7 +19,7 @@
               href: tunnel-method-api-call-sequence1.md
             - name: Authenticator Secuencia de llamadas api de método
               href: authenticator-method-api-call-sequence.md
-        - name: Suplicantes de EAPHost
+        - name: EAPHost Supplicants
           href: eaphost-supplicants.md
           items:
             - name: Configuración del método EAP Interfaz de usuario
@@ -40,7 +40,7 @@
           items:
             - name: Claves del Registro Authenticator eap
               href: eap-authenticator-method-registry-keys.md
-            - name: Claves del Registro del método del mismo nivel eap
+            - name: Claves del Registro del método del mismo nivel de EAP
               href: eap-peer-method-registry-keys.md
         - name: Habilitación del seguimiento de EAPHost
           href: enabling-tracing.md
@@ -53,7 +53,7 @@
           items:
             - name: Introducción a la API de EAPHost de SSO
               href: sso-eaphost-api-overview.md
-            - name: Introducción al escenario de EAPHost de SSO
+            - name: Introducción al escenario EAPHost de SSO
               href: why-eaphost-sso.md
               items:
                 - name: Comportamiento del almacenamiento en caché de PIN EAP-TLS de SSO
@@ -64,11 +64,11 @@
       href: eaphost-development-frequently-asked-questions.md
       items:
         - name: Preguntas generales más frecuentes
-          href: general-frequently-asked-questions.md
-        - name: Preguntas más frecuentes sobre el suplicante de EAPHost
-          href: eaphost-supplicant-frequently-asked-questions.md
+          href: general-frequently-asked-questions.yml
+        - name: Preguntas más frecuentes de EAPHost Supplicant
+          href: eaphost-supplicant-frequently-asked-questions.yml
         - name: Preguntas más frecuentes sobre el método EAP
-          href: eap-method-frequently-asked-questions.md
+          href: eap-method-frequently-asked-questions.yml
     - name: EapHost y ejemplos de esquemas heredados
       href: eap-host-schemas.md
       items:
@@ -124,7 +124,7 @@
             - name: baseeapconnectionpropertiesv1 Schema
               href: baseeapconnectionpropertiesv1schema-schema.md
               items:
-                - name: baseeapconnectionpropertiesv1 Schema Elements
+                - name: elementos de esquema baseeapconnectionpropertiesv1
                   href: baseeapconnectionpropertiesv1schema-elements.md
                   items:
                     - name: Elemento Eap
@@ -133,7 +133,7 @@
                       href: baseeapconnectionpropertiesv1schema-eaptype-element.md
                     - name: Elemento Type (BaseEapParameters)
                       href: baseeapconnectionpropertiesv1schema-type-baseeapparameters-element.md
-                - name: tipos complejos de esquema baseeapconnectionpropertiesv1
+                - name: Tipos complejos de esquema baseeapconnectionpropertiesv1
                   href: baseeapconnectionpropertiesv1schema-complex-types.md
                   items:
                     - name: Tipo complejo BaseEapParameters
@@ -148,7 +148,7 @@
                   items:
                     - name: Tipo complejo BaseEapMethodConfig
                       href: baseeapmethodconfigschema-baseeapmethodconfig-complextype.md
-            - name: esquema baseeapmethodusercredentials
+            - name: baseeapmethodusercredentials Schema
               href: baseeapmethodusercredentialsschema-schema.md
               items:
                 - name: baseeapmethodusercredentials Tipos complejos de esquema
@@ -156,10 +156,10 @@
                   items:
                     - name: Tipo complejo BaseEapMethodUserCredentials
                       href: baseeapmethodusercredentialsschema-baseeapmethodusercredentials-complextype.md
-            - name: esquema baseeapuserpropertiesv1
+            - name: baseeapuserpropertiesv1 Schema
               href: baseeapuserpropertiesv1schema-schema.md
               items:
-                - name: baseeapuserpropertiesv1 Schema Elements
+                - name: elementos de esquema baseeapuserpropertiesv1
                   href: baseeapuserpropertiesv1schema-elements.md
                   items:
                     - name: Elemento Eap
@@ -170,7 +170,7 @@
                       href: baseeapuserpropertiesv1schema-identity-element.md
                     - name: Elemento Type (BaseEapParameters)
                       href: baseeapuserpropertiesv1schema-type-baseeapparameters-element.md
-                - name: tipos complejos de esquema baseeapuserpropertiesv1
+                - name: Tipos complejos de esquema baseeapuserpropertiesv1
                   href: baseeapuserpropertiesv1schema-complex-types.md
                   items:
                     - name: Tipo complejo BaseEapParameters
@@ -224,7 +224,7 @@
                       href: eaphostconfigschema-eaphostconfig-element.md
                     - name: Elemento EapMethod (EapHostConfig)
                       href: eaphostconfigschema-eapmethod-eaphostconfig-element.md
-            - name: Esquema eaphostusercredentials
+            - name: esquema eaphostusercredentials
               href: eaphostusercredentialsschema-schema.md
               items:
                 - name: elementos de esquema eaphostusercredentials
@@ -241,7 +241,7 @@
             - name: Esquema eaptlsconnectionpropertiesv1
               href: eaptlsconnectionpropertiesv1schema-schema.md
               items:
-                - name: Eaptlsconnectionpropertiesv1 Schema Elements
+                - name: Elementos de esquema eaptlsconnectionpropertiesv1
                   href: eaptlsconnectionpropertiesv1schema-elements.md
                   items:
                     - name: Elemento AcceptServerName (EapType)
@@ -299,12 +299,12 @@
                 - name: Tipos complejos de esquema eaptlsconnectionpropertiesv2
                   href: eaptlsconnectionpropertiesv2schema-complex-types.md
                   items:
-                    - name: TLSExtensionsType Complex Type
+                    - name: TLSExtensionsType (tipo complejo)
                       href: eaptlsconnectionpropertiesv2schema-tlsextensionstype-complextype.md
             - name: Esquema eaptlsuserpropertiesv1
               href: eaptlsuserpropertiesv1schema-schema.md
               items:
-                - name: Eaptlsuserpropertiesv1 Schema Elements
+                - name: Elementos de esquema eaptlsuserpropertiesv1
                   href: eaptlsuserpropertiesv1schema-elements.md
                   items:
                     - name: Elemento EapType
@@ -331,7 +331,7 @@
                       href: mschapv2connectionpropertiesv1schema-eaptype-element.md
                     - name: Elemento UseWinLogonCredentials (EapType)
                       href: mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md
-            - name: mschapv2userpropertiesv1 Schema
+            - name: Esquema mschapv2userpropertiesv1
               href: mschapv2userpropertiesv1schema-schema.md
               items:
                 - name: Elementos de esquema mschapv2userpropertiesv1
@@ -345,7 +345,7 @@
                       href: mschapv2userpropertiesv1schema-password-eaptype-element.md
                     - name: Elemento Username
                       href: mschapv2userpropertiesv1schema-username-element.md
-            - name: Mspeapconnectionpropertiesv1 Schema
+            - name: Esquema mspeapconnectionpropertiesv1
               href: mspeapconnectionpropertiesv1schema-schema.md
               items:
                 - name: Elementos de esquema mspeapconnectionpropertiesv1
@@ -386,7 +386,7 @@
                       href: mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md
                     - name: Tipo complejo ServerValidationParameters
                       href: mspeapconnectionpropertiesv1schema-servervalidationparameters-complextype.md
-            - name: Mspeapconnectionpropertiesv2 Schema
+            - name: Esquema mspeapconnectionpropertiesv2
               href: mspeapconnectionpropertiesv2schema-schema.md
               items:
                 - name: Elementos de esquema mspeapconnectionpropertiesv2
@@ -404,7 +404,7 @@
                       href: mspeapconnectionpropertiesv2-peapextensionsv2-peapextensionstype-element.md
                     - name: Elemento PerformServerValidation (PeapExtensionsType)
                       href: mspeapconnectionpropertiesv2-performservervalidation-peapextensionstype-element.md
-                - name: Mspeapconnectionpropertiesv2 Schema Complex Types
+                - name: Mspeapconnectionpropertiesv2 Schema Complex Types (Tipos complejos de esquema mspeapconnectionpropertiesv2)
                   href: mspeapconnectionpropertiesv2schema-complex-types.md
                   items:
                     - name: Tipo complejo IdentityPrivacyParameters
@@ -679,7 +679,7 @@
                   href: /windows/win32/api/EapAuthenticatorActionDefine/ne-eapauthenticatoractiondefine-eappeermethodresponseaction
                 - name: EapPeerMethodResultReason
                   href: /windows/win32/api/EapAuthenticatorActionDefine/ne-eapauthenticatoractiondefine-eappeermethodresultreason
-            - name: Estructuras de método del mismo nivel de EAPHost
+            - name: Estructuras de métodos del mismo nivel de EAPHost
               href: eap-host-peer-method-structures.md
               items:
                 - name: EapCertificateCredential
@@ -696,7 +696,7 @@
                   href: /windows/win32/api/eaptypes/ns-eaptypes-eapsimcredential
                 - name: EapUsernamePasswordCredential
                   href: /windows/win32/api/eaptypes/ns-eaptypes-eapusernamepasswordcredential
-        - name: API de método Authenticator EAPHost
+        - name: API del método Authenticator EAPHost
           href: eaphost-authenticator-method-apis.md
           items:
             - name: Funciones del método Authenticator EAPHost
@@ -730,7 +730,7 @@
                   href: /windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorshutdown
                 - name: EapMethodAuthenticatorUpdateInnerMethodParams
                   href: /windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorupdateinnermethodparams
-            - name: Enumeraciones de Authenticator eaphost
+            - name: EapHost Authenticator enumeraciones de métodos
               href: eap-host-authenticator-method-enumerations.md
               items:
                 - name: EAP_AUTHENTICATOR_SEND_TIMEOUT

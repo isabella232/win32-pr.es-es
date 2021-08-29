@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Combase.h
-ms.openlocfilehash: f3ea5bc172bc22f7aa9dce1f348bba552520565f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f589404cd2a4bf5ff42b331cdf48a978d97e9a274a5fc01a483c804f5878b3eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501955"
 ---
 # <a name="lpfnnewcomobject-function-pointer"></a>Puntero de función LPFNNewCOMObject
 
@@ -43,7 +43,7 @@ typedef CUnknown* ( CALLBACK *LPFNNewCOMObject)(
 *pUnkOuter* 
 </dt> <dd>
 
-Puntero a **la interfaz IUnknown** del objeto que agrega el nuevo objeto, si lo hay. Este puntero puede ser **NULL.**
+Puntero a la **interfaz IUnknown** del objeto que agrega el nuevo objeto, si lo hay. Este puntero puede ser **NULL.**
 
 </dd> <dt>
 
@@ -64,11 +64,11 @@ Devuelve un puntero a una nueva instancia del objeto .
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Combase.h (incluir Streams.h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

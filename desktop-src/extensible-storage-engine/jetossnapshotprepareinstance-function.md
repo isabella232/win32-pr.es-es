@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JetOSSnapshotPrepareInstance (Función)'
-title: JetOSSnapshotPrepareInstance (Función)
+title: Función JetOSSnapshotPrepareInstance
 TOCTitle: JetOSSnapshotPrepareInstance Function
 ms:assetid: b4f06342-633f-47c6-be32-64ec058920fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg294064(v=EXCHG.10)
@@ -18,19 +18,19 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4997be8f268d676fbd4a164281061b488e948168
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f4140a79428c7db6cb9091627ae1aeb7416e6686
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474391"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988938"
 ---
-# <a name="jetossnapshotprepareinstance-function"></a>JetOSSnapshotPrepareInstance (Función)
+# <a name="jetossnapshotprepareinstance-function"></a>Función JetOSSnapshotPrepareInstance
 
 
 _**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetossnapshotprepareinstance-function"></a>JetOSSnapshotPrepareInstance (Función)
+## <a name="jetossnapshotprepareinstance-function"></a>Función JetOSSnapshotPrepareInstance
 
 La **función JetOSSnapshotPrepareInstance** selecciona una instancia específica para formar parte de la sesión de instantáneas.
 
@@ -56,7 +56,7 @@ Instancia de que se usará para esta llamada.
 
 *grbit*
 
-Opciones para esta llamada. Este parámetro se reserva para uso futuro. El único valor válido es 0 (cero).
+Opciones de esta llamada. Este parámetro se reserva para uso futuro. El único valor válido es 0 (cero).
 
 ### <a name="return-value"></a>Valor devuelto
 
@@ -72,31 +72,37 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 
 
-Si esta función se realiza correctamente, la instancia especificada formará parte de la sesión de instantáneas.
+Si esta función se realiza correctamente, la instancia especificada formará parte de la sesión de instantánea.
 
 Si se produce un error en esta función, no se produce ningún cambio en el estado del motor.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-La llamada de secuencia de API normal es: [JetOSSnapshotPrepare](./jetossnapshotprepare-function.md), seguida opcionalmente de una o varias llamadas a **JetOSSnapshotPrepareInstance** y, a continuación, seguida de [JetOSSnapshotFreeze.](./jetossnapshotfreeze-function.md) Una vez iniciada la inmovilización, se puede finalizar [con JetOSSnapshotThaw](./jetossnapshotthaw-function.md). En cualquier momento después de la preparación, la sesión de instantánea se puede finalizar repentinamente [con JetOSSnapshotAbort.](./jetossnapshotabort-function.md) Las entradas del registro de eventos se generarán para los distintos pasos de la instantánea.
+La llamada de secuencia de API normal es: [JetOSSnapshotPrepare](./jetossnapshotprepare-function.md), seguida opcionalmente de una o varias llamadas a **JetOSSnapshotPrepareInstance** y, a continuación, seguida de [JetOSSnapshotFreeze.](./jetossnapshotfreeze-function.md) Una vez iniciada la inmovilización, se puede finalizar [con JetOSSnapshotThaw](./jetossnapshotthaw-function.md). En cualquier momento después de la preparación, la sesión de instantánea se puede finalizar repentinamente [con JetOSSnapshotAbort](./jetossnapshotabort-function.md). Las entradas del registro de eventos se generarán para los distintos pasos de la instantánea.
 
-Si no se llama a **JetOSSnapshotPrepareInstance** entre el inicio de la sesión [(JetOSSnapshotPrepare)](./jetossnapshotprepare-function.md)y el momento de inmovilización [(JetOSSnapshotFreeze),](./jetossnapshotfreeze-function.md)todas las instancias en ejecución del motor se inmovilizarán y pasarán a formar parte de la sesión de instantáneas. Esto se produce por dos motivos:
+Si no se llama a **JetOSSnapshotPrepareInstance** entre el inicio de la sesión [(JetOSSnapshotPrepare)](./jetossnapshotprepare-function.md)y el momento de inmovilización [(JetOSSnapshotFreeze),](./jetossnapshotfreeze-function.md)todas las instancias en ejecución del motor se inmovilizarán y formarán parte de la sesión de instantáneas. Esto sucede por dos motivos:
 
-  - Simplifica el código para los usuarios que desean todas las instancias.
+  - Simplifica el código para los usuarios que quieren todas las instancias.
 
-  - Permite la compatibilidad con versiones anteriores para los autores de llamadas de las API de instantáneas.
+  - Permite la compatibilidad con versiones anteriores para los llamadores de las API de instantáneas.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte también
 
 [Parámetros de control de errores](./error-handling-parameters.md)  
-[Errores extensibles Storage motor de datos](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de instalación](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotAbort](./jetossnapshotabort-function.md)  
 [JetOSSnapshotEnd](./jetossnapshotend-function.md)  

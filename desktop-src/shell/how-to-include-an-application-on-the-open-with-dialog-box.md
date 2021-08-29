@@ -1,27 +1,27 @@
 ---
-description: Muestra cómo asegurarse de que la aplicación aparece en el menú y el cuadro de diálogo Abrir con para aplicaciones de escritorio, y que está disponible como una aplicación de la tienda Windows predeterminada para los tipos de archivo especificados.
+description: Muestra cómo asegurarse de que la aplicación aparece en el menú Abrir con y en el cuadro de diálogo para las aplicaciones de escritorio, y está disponible como una aplicación predeterminada de Windows Store para los tipos de archivo especificados.
 ms.assetid: DFCC07A6-BED5-41A8-86DC-130082AE665A
 title: Cómo incluir una aplicación en el cuadro de diálogo Abrir con
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 218dcbfe6dc34770208c017f0e13cfda7686430c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ad3d75d0eaf5ed60f2b9b6f4c468225e620c8d0bfbc8e14ed794a28f8f7098f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714985"
 ---
 # <a name="how-to-include-an-application-in-the-open-with-dialog-box"></a>Cómo incluir una aplicación en el cuadro de diálogo Abrir con
 
-Muestra cómo asegurarse de que la aplicación aparece en el menú y el cuadro de diálogo **abrir con** para aplicaciones de escritorio, y que está disponible como una aplicación de la tienda Windows predeterminada para los tipos de archivo especificados.
+Muestra cómo asegurarse de que  la aplicación aparece en el menú Abrir con y en el cuadro de diálogo para las aplicaciones de escritorio, y está disponible como una aplicación predeterminada Windows Store para los tipos de archivo especificados.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="for-each-file-type-add-your-application-to-the-openwithprogids-registry-subkey"></a>Para cada tipo de archivo, agregue la aplicación a la subclave del registro OpenWithProgIds.
+### <a name="for-each-file-type-add-your-application-to-the-openwithprogids-registry-subkey"></a>Para cada tipo de archivo, agregue la aplicación a la subclave del Registro OpenWithProgIds.
 
-Agregue el ProgID como un nombre de valor, con el tipo de valor de REG \_ None o REG \_ SZ y una cadena vacía como valor de datos.
+Agregue progID como nombre de valor, con el tipo de valor REG NONE o REG SZ y una cadena vacía \_ \_ como valor de datos.
 
-Los siguientes ejemplos del registro muestran entradas que asocian InfoPath y Microsoft Visual Studio con el tipo de archivo XML.
+En los ejemplos del Registro siguientes se muestran las entradas que asocian InfoPath y for Microsoft Visual Studio con el tipo de archivo XML.
 
 ```
 HKEY_CLASSES_ROOT
@@ -31,11 +31,11 @@ HKEY_CLASSES_ROOT
          VisualStudio.xml.10.0 REG_SZ
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se prefiere la subclave **OpenWithProgids** a **OpenWithList** para identificar una aplicación. Para obtener más información sobre estas subclaves, vea [configuración de subclaves opcionales y atributos de extensión de tipo de archivo](fa-file-types.md).
+La **subclave OpenWithProgids** es preferible a **OpenWithList** para identificar una aplicación. Para obtener más información sobre estas subclaves, vea [Establecer subclaves opcionales y Atributos de extensión de tipo de archivo](fa-file-types.md).
 
-**OpenWithList** está pensado únicamente para aplicaciones heredadas (debe ser. exe solamente) en sistemas operativos anteriores a Windows XP.
+**OpenWithList** está pensado solo para aplicaciones heredadas (solo .exe) en sistemas operativos anteriores a Windows XP.
 
 ```
 HKEY_CLASSES_ROOT

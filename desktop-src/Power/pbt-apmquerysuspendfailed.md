@@ -1,23 +1,23 @@
 ---
-description: Notifica a las aplicaciones que se ha denegado el permiso para suspender el equipo.
+description: Notifica a las aplicaciones que se denegó el permiso para suspender el equipo.
 ms.assetid: 0f68628f-9d38-45ca-9487-95bf62075e00
-title: Evento PBT_APMQUERYSUSPENDFAILED (WinUser. h)
+title: PBT_APMQUERYSUSPENDFAILED evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1544cd5ed94ae0228c739e2ddb576b0bd77146eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4151829d2c00fc8d4577fb8a7231111df09eb1326985f274d4dcc9e8986b2b86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143368"
 ---
-# <a name="pbt_apmquerysuspendfailed-event"></a>\_Evento PBT APMQUERYSUSPENDFAILED
+# <a name="pbt_apmquerysuspendfailed-event"></a>Evento \_ PBT APMQUERYSUSPENDFAILED
 
-\[PBT \_ APMQUERYSUSPENDFAILED está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. Se ha quitado la compatibilidad con este evento en Windows Vista. Use [**SetThreadExecutionState**](/windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate) en su lugar.\]
+\[PBT APMQUERYSUSPENDFAILED está disponible para su uso en los sistemas operativos especificados \_ en la sección Requisitos. Se quitó la compatibilidad con este evento en Windows Vista. Use [**SetThreadExecutionState en su**](/windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate) lugar.\]
 
-Notifica a las aplicaciones que se ha denegado el permiso para suspender el equipo. Este evento se emite si cualquier aplicación o controlador devolvió una **consulta de difusión \_ \_ Deny** a un evento [PBT \_ APMQUERYSUSPEND](pbt-apmquerysuspend.md) anterior.
+Notifica a las aplicaciones que se denegó el permiso para suspender el equipo. Este evento se difunde si alguna aplicación o controlador devolvió **BROADCAST \_ QUERY \_ DENY** a un evento [anterior de \_ PBT APMQUERYSUSPEND.](pbt-apmquerysuspend.md)
 
-Una ventana recibe este evento a través del mensaje de [**\_ POWERBROADCAST de WM**](wm-powerbroadcast.md) . Los parámetros *wParam* e *lParam* se establecen como se describe a continuación.
+Una ventana recibe este evento a través del [**mensaje \_ WM POWERBROADCAST.**](wm-powerbroadcast.md) Los *parámetros wParam* *y lParam* se establecen como se describe a continuación.
 
 
 ```C++
@@ -35,7 +35,7 @@ WindowProc( HWND   hwnd,    // handle to window
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador de la ventana.
@@ -44,7 +44,7 @@ Identificador de la ventana.
 
 | Value                                                                                                                                                                                                                                                                   | Significado                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador de mensaje.<br/> |
+| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador del mensaje.<br/> |
 
 
 
@@ -54,7 +54,7 @@ Identificador de la ventana.
 
 | Value                                                                                                                                                                                                                                                          | Significado                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| <span id="PBT_APMQUERYSUSPENDFAILED"></span><span id="pbt_apmquerysuspendfailed"></span><dl> <dt>**PBT \_ APMQUERYSUSPENDFAILED**</dt> <dt>2 (0X2)</dt> </dl> | Identificador del evento.<br/> |
+| <span id="PBT_APMQUERYSUSPENDFAILED"></span><span id="pbt_apmquerysuspendfailed"></span><dl> <dt>**PBT \_ APMQUERYSUSPENDFAILED**</dt> <dt>2 (0x2)</dt> </dl> | Identificador de evento.<br/> |
 
 
 
@@ -65,7 +65,7 @@ Identificador de la ventana.
 *lParam* 
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
@@ -73,9 +73,9 @@ Sector debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones normalmente responden a este evento reanudando el funcionamiento normal.
+Normalmente, las aplicaciones responden a este evento reanudando el funcionamiento normal.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,11 +83,11 @@ Las aplicaciones normalmente responden a este evento reanudando el funcionamient
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                                    |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                                           |
-| Encabezado<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ Las aplicaciones normalmente responden a este evento reanudando el funcionamient
 [PBT \_ APMQUERYSUSPEND](pbt-apmquerysuspend.md)
 </dt> <dt>
 
-[**POWERBROADCAST de WM \_**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

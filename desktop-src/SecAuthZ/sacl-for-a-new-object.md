@@ -15,11 +15,11 @@ ms.locfileid: "119413845"
 
 El sistema usa el algoritmo siguiente para crear una SACL para la mayoría de los tipos de nuevos objetos protegibles:
 
-1.  La SACL del objeto es la SACL del descriptor de [*seguridad*](/windows/desktop/SecGloss/s-gly) especificado por el creador del objeto. El sistema combina todas las ACE heredables en la SACL especificada, a menos que el bit SE SACL PROTECTED esté establecido en los bits de \_ control del descriptor de \_ seguridad. Las ACE de ATRIBUTO DE RECURSO DEL SISTEMA y las ACE de IDENTIFICADOR DE DIRECTIVA CON ÁMBITO DE SISTEMA de un objeto primario se combinarán en un nuevo objeto, incluso si se SE el bit \_ \_ PROTEGIDO de \_ \_ \_ \_ \_ \_ \_ SACL.
+1.  La SACL del objeto es la SACL del descriptor de [*seguridad*](/windows/desktop/SecGloss/s-gly) especificado por el creador del objeto. El sistema combina todas las ACE heredables en la SACL especificada, a menos que el bit SE SACL PROTECTED esté establecido en los bits de control del \_ \_ descriptor de seguridad. Las ACE de ATRIBUTO DE RECURSO DEL SISTEMA y las ACE de IDENTIFICADOR DE DIRECTIVA CON ÁMBITO DE SISTEMA de un objeto primario se combinarán en un nuevo objeto incluso si se SE el bit \_ \_ PROTEGIDO de \_ \_ \_ \_ \_ \_ \_ SACL.
 2.  Si el creador no especifica un descriptor de seguridad, el sistema compila la SACL del objeto a partir de ACE heredables.
 3.  Si no hay ninguna SACL especificada o heredada, el objeto no tiene SACL.
 
-Para especificar una SACL para un nuevo objeto, el creador del objeto debe tener habilitado el SE \_ SECURITY \_ NAME. [](privileges.md) Si la SACL especificada para un nuevo objeto solo contiene ACE de ATRIBUTO DE RECURSO DEL SISTEMA, no se requiere el privilegio SE \_ \_ SECURITY \_ \_ \_ NAME. El creador no necesita este privilegio si la SACL del objeto se crea a partir de ACE heredadas.
+Para especificar una SACL para un nuevo objeto, el creador del objeto debe tener el privilegio SE \_ SECURITY \_ NAME habilitado. [](privileges.md) Si la SACL especificada para un nuevo objeto solo contiene ACE de ATRIBUTO DE RECURSO DEL SISTEMA, no se requiere el privilegio SE \_ \_ SECURITY \_ \_ \_ NAME. El creador no necesita este privilegio si la SACL del objeto se crea a partir de ACE heredadas.
 
 El sistema usa un algoritmo diferente para compilar una SACL para un nuevo Active Directory objeto . Para obtener más información, vea [How Security Descriptors are Set on New Directory Objects](/windows/desktop/AD/how-security-descriptors-are-set-on-new-directory-objects).
 

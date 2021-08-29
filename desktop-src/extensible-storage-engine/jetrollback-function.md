@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e23bd408ec88109a0f77635ac53e89003df9a992
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: f7918d1d9568848dfcd77a09ea777dba93bb2ab2
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122985558"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475811"
 ---
 # <a name="jetrollback-function"></a>JetRollback (Función)
 
@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetrollback-function"></a>JetRollback (Función)
 
-La **función JetRollback** deshace los cambios realizados en el estado de la base de datos y vuelve al último punto de retorno. **JetRollback también** cerrará los cursores abiertos durante el punto de retorno. Si se deshizo el punto de guardado más externo, la sesión cerrará la transacción.
+La **función JetRollback** deshace los cambios realizados en el estado de la base de datos y vuelve al último punto de guardado. **JetRollback también** cerrará los cursores abiertos durante el punto de guardado. Si se desecha el punto de guardado más externo, la sesión cerrará la transacción.
 
 ```cpp
     JET_ERR JET_API JetRollback(
@@ -52,9 +52,9 @@ Sesión que se va a usar para esta llamada.
 Un grupo de bits que contienen las opciones que se usarán para esta llamada, que incluyen cero o más de lo siguiente:
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitRollbackAll</p> | <p>Esta opción solicita que se desconteen todos los cambios realizados en el estado de la base de datos durante todos los puntos de guardado. Como resultado, la sesión cerrará la transacción.</p> | 
+| <p>JET_bitRollbackAll</p> | <p>Esta opción solicita que todos los cambios realizados en el estado de la base de datos durante todos los puntos de guardado se desenconsonen. Como resultado, la sesión cerrará la transacción.</p> | 
 
 
 
@@ -67,7 +67,7 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errNotInTransaction</p> | <p>Error en la operación porque la sesión dada no está en una transacción.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
@@ -77,26 +77,20 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 
 
-Si se realiza correctamente, los cambios realizados en la base de datos durante el punto de guardado actual de la sesión dada se deshacerán y ese punto de guardado finalizará. Si se finalizó el último punto de guardado de la sesión, la sesión cerrará la transacción.
+Si se realiza correctamente, los cambios realizados en la base de datos durante el punto de guardado actual de la sesión determinada se deshacerán y ese punto de guardado finalizará. Si se finalizó el último punto de guardado de la sesión, la sesión cerrará la transacción.
 
 En caso de error, el estado transaccional de la sesión permanecerá sin cambios. No se producirá ningún cambio en el estado de la base de datos. Un error durante la reversión se considera un error catastrófico de la base de datos.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Debe haber una llamada a [JetCommitTransaction](./jetcommittransaction-function.md) o **JetRollback** para que coincida con cada llamada a [JetBeginTransaction](./jetbegintransaction-function.md) para una sesión determinada.
 
-Si se ha abierto algún cursor (mediante [JetOpenTable](./jetopentable-function.md), por ejemplo) durante un punto de guardado que se va a revertir, ese cursor se cerrará.
+Si se han abierto cursores (por ejemplo, [con JetOpenTable)](./jetopentable-function.md)durante un punto de guardado que se va a revertir, ese cursor se cerrará.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

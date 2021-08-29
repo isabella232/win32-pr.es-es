@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnMouseInputModeChanged, método
-description: Se le llama cuando cambia el modo de entrada del mouse.
+title: Método IMsTscAxEvents OnMouseInputModeChanged
+description: Se llama cuando cambia el modo de entrada del mouse.
 ms.assetid: d0554c59-967d-4181-98cd-9e88dde32752
 ms.tgt_platform: multiple
 keywords:
 - Método OnMouseInputModeChanged Servicios de Escritorio remoto
-- Método OnMouseInputModeChanged Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnMouseInputModeChanged
+- Método OnMouseInputModeChanged Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnMouseInputModeChanged
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dbfef19aa79ba634a13d92b8d11866b8016e893
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c86ce3ba30dae836077189b79553e5e39b16f53f9846f41216697d110d1dfb20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512255"
 ---
-# <a name="imstscaxeventsonmouseinputmodechanged-method"></a>IMsTscAxEvents:: OnMouseInputModeChanged (método)
+# <a name="imstscaxeventsonmouseinputmodechanged-method"></a>Método IMsTscAxEvents::OnMouseInputModeChanged
 
-Se le llama cuando cambia el modo de entrada del mouse.
+Se llama cuando cambia el modo de entrada del mouse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void OnMouseInputModeChanged(
 
 <dl> <dt>
 
-*fMouseModeRelative* \[ de\]
+*fMouseModeRelative* \[ En\]
 </dt> <dd>
 
 Indica si el mouse está en modo relativo.
@@ -54,7 +54,7 @@ Indica si el mouse está en modo relativo.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Implemente este método en el receptor de eventos para recibir la notificación de que el modo de entrada del mouse ha cambiado.
 
@@ -62,7 +62,7 @@ Implemente este método en el receptor de eventos para recibir la notificación 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

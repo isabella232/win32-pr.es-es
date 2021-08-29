@@ -4,104 +4,62 @@ ms.assetid: 3067d47f-9b1d-2051-fa24-2094418ea272
 title: Trabajo con D3DXMath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d463129a453a2b319dd72790bd4546dd90f63a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 649689d511e7dab3916f34845e19d8b4706a9c12
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908406"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477691"
 ---
 # <a name="working-with-d3dxmath"></a>Trabajo con D3DXMath
 
-D3DXMath es una biblioteca auxiliar matemática para aplicaciones Direct3D. D3DXMath es de larga duración, se incluye en D3DX 9 y D3DX 10, y también vuelve a las versiones anteriores de DirectX.
+D3DXMath es una biblioteca auxiliar matemática para aplicaciones Direct3D. D3DXMath es de larga duración, se incluye en D3DX 9 y D3DX 10 y también se fecha en versiones anteriores de DirectX.
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8, por lo que se recomienda encarecidamente migrar a DirectXMath en lugar de usar D3DXMath.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8, por lo que se recomienda encarecidamente migrar a DirectXMath en lugar de usar D3DXMath.
 
  
 
-DirectXMath comparte gran parte de la misma funcionalidad en D3DXMath y D3DXMath internamente incluye varias optimizaciones específicas del procesador. La diferencia clave es que D3DXMath se hospeda en D3DX9 \* . Dll y D3DX10 \* . Los archivos dll y algunas de las funciones están insertados. La Convención de llamada a la biblioteca de DirectXMath es compatible explícitamente con SIMD, mientras que D3DXMath tiene que realizar conversiones de carga y almacenamiento para implementar la optimización de SIMD.
+DirectXMath comparte gran parte de la misma funcionalidad en D3DXMath e internamente D3DXMath incluye una serie de optimizaciones específicas del procesador. La diferencia clave es que D3DXMath se hospeda en D3DX9. \* Archivos DLL y D3DX10. \* Los archivos DLL y muy pocas de las funciones están enlindadas. La convención de llamada de la biblioteca DirectXMath es explícitamente fácil de usar, mientras que D3DXMath tiene que realizar conversiones de carga y almacenamiento para implementar la optimización de SIMD.
 
-## <a name="mixing-directxmath-and-d3dxmath"></a>Mezclar DirectXMath y D3DXMath
+## <a name="mixing-directxmath-and-d3dxmath"></a>Combinación de DirectXMath y D3DXMath
 
-D3DX11 no contiene D3DXMath y, en general, se recomienda usar DirectXMath en su lugar. Sin embargo, puede seguir vinculando a D3DX9 y/o D3DX10 en la aplicación y, por tanto, puede seguir usando D3DXMath o usar tanto D3DXMath como DirectXMath en la aplicación al mismo tiempo.
+D3DX11 no contiene D3DXMath y, en general, se recomienda usar DirectXMath en su lugar. Sin embargo, puede seguir vinculando a D3DX9 o D3DX10 en la aplicación y, por tanto, puede seguir usando D3DXMath o usar D3DXMath y DirectXMath en la aplicación al mismo tiempo.
 
-En general, es seguro convertir un XMVECTOR \* en una función que toma D3DXVECTOR4 \* o convertir un XMMATRIX \* en una función que toma D3DXMATRIX \* . Sin embargo, el inverso no suele ser seguro porque XMVECTOR y XMMATRIX deben tener una alineación de 16 bytes, mientras que D3DXVECTOR4 y D3DXMATRIX no tienen este requisito. Si no se cumple este requisito, pueden producirse excepciones de alineación no válidas en tiempo de ejecución.
+En general, es seguro convertir un XMVECTOR en una función que toma D3DXVECTOR4 o convertir una XMMATRIX en una función que toma \* \* \* D3DXMATRIX \* . Sin embargo, el inverso no suele ser seguro porque XMVECTOR y XMMATRIX deben estar alineados con 16 bytes, mientras que D3DXVECTOR4 y D3DXMATRIX no tienen este requisito. Si no se cumple este requisito, se pueden producir excepciones de alineación no válidas en tiempo de ejecución.
 
-Es seguro convertir un XMVECTOR \* en una función que toma D3DXVECTOR2 \* o D3DXVECTOR3 \* , pero no viceversa. Tanto los problemas de alineación como el hecho de que D3DXVECTOR2 y D3DXVECTOR3 son estructuras más pequeñas hacen que esta operación no sea segura.
+Es seguro convertir un XMVECTOR en una función que toma \* D3DXVECTOR2 o \* D3DXVECTOR3, pero \* no viceversa. Tanto los problemas de alineación como el hecho de que D3DXVECTOR2 y D3DXVECTOR3 son estructuras más pequeñas hacen que esta operación no sea segura.
 
 > [!Note]  
-> D3DX (y, por lo tanto, D3DXMath) se considera heredado y no está disponible para las aplicaciones de la tienda Windows que se ejecutan en Windows 8 y no se incluye en el SDK de Windows 8 para aplicaciones de escritorio.
+> D3DX (y, por tanto, D3DXMath) se considera heredado y no está disponible para las aplicaciones de la Tienda Windows que se ejecutan en Windows 8 y no se incluye en el SDK de Windows 8 para aplicaciones de escritorio.
 
  
 
-## <a name="using-directxmath-with-direct3d"></a>Usar DirectXMath con Direct3D
+## <a name="using-directxmath-with-direct3d"></a>Uso de DirectXMath con Direct3D
 
-DirectXMath y D3DXMath son opcionales cuando se trabaja con Direct3D. Direct3D 9 definía D3DMATRIX y D3DCOLOR como parte de la API de Direct3D para la compatibilidad de la canalización de función fija (ahora heredada). D3DXMath en D3DX9 extiende estos tipos de Direct3D 9 con operaciones matemáticas de gráficos comunes. Para Direct3D 10. x y Direct3D 11, la API solo usa la canalización programable, por lo que no hay ninguna estructura específica de la API para las matrices o los valores de color. Cuando las API más recientes requieren un valor de color, toman una matriz explícita de valores float o un búfer genérico de datos constantes que interpreta el sombreador HLSL. El propio HLSL puede admitir los formatos de matriz principal o de columna principal de fila, por lo que el diseño depende por completo del usuario (para obtener más información, vea HLSL, [ordenación de matrices](../direct3dhlsl/dx-graphics-hlsl-per-component-math.md); si usa formatos de matriz de columnas principales en los sombreadores, debe transponer los datos de la matriz de DirectXMath a medida que los coloque en las estructuras de búfer de constantes). Aunque es opcional, las bibliotecas de DirectXMath y D3DXMath proporcionan una funcionalidad común relacionada con los gráficos y, por lo tanto, son extremadamente convenientes al realizar la programación de Direct3D.
+Tanto DirectXMath como D3DXMath son opcionales cuando se trabaja con Direct3D. Direct3D 9 definió D3DMATRIX y D3DCOLOR como parte de la API de Direct3D para admitir la canalización de función fija (ahora heredada). D3DXMath en D3DX9 amplía estos tipos de Direct3D 9 con operaciones matemáticas de gráficos comunes. Para Direct3D 10.x y Direct3D 11, la API solo usa la canalización programable para que no haya ninguna estructura específica de la API para matrices o valores de color. Cuando las API más recientes requieren un valor de color, toman una matriz explícita de valores float o un búfer genérico de datos constantes interpretados por el sombreador HLSL. HLSL puede admitir formatos de matriz principal de fila o de columna principal, por lo que el diseño es totalmente su función (para obtener más información, vea HLSL, [Ordenación](../direct3dhlsl/dx-graphics-hlsl-per-component-math.md)de matrices; si usa formatos de matriz de columna principal en los sombreadores, debe transponer los datos de la matriz DirectXMath a medida que los coloca en las estructuras de búfer constante). Aunque son opcionales, las bibliotecas DirectXMath y D3DXMath proporcionan funcionalidad común relacionada con gráficos y, por tanto, son muy prácticas al realizar la programación de Direct3D.
 
-Es seguro convertir un XMVECTOR \* en D3DVECTOR \* o XMMATRIX \* en D3DMATRIX \* porque Direct3D 9 no realiza suposiciones de alineación sobre la estructura de datos de entrada. También es seguro convertir XMCOLOR en D3DCOLOR. Puede convertir una representación de cuatro flotantes de color en XMCOLOR a través de XMStoreColor () para obtener el DWORD de 8:8:8:8 32 bits equivalente a D3DCOLOR.
+Es seguro convertir un XMVECTOR \* en D3DVECTOR o \* XMMATRIX en \* D3DMATRIX, ya que Direct3D 9 no realiza suposiciones de alineación sobre la estructura de datos \* entrantes. También es seguro convertir XMCOLOR a D3DCOLOR. Puede convertir una representación de color de 4 flotantes en XMCOLOR a través de XMStoreColor() para obtener el DWORD de 8:8:8:8 de 32 bits equivalente a D3DCOLOR.
 
-Al trabajar con Direct3D 10. x o Direct3D 11, normalmente usará tipos de DirectXMath para compilar una estructura para cada uno de los búferes de constantes y, en esos casos, depende en gran medida de la capacidad de controlar la alineación para hacerlos eficientes, o bien usar \* las operaciones XMStore () para convertir los datos XMVECTOR y XMMATRIX en los tipos de datos correctos. Al llamar a las API de Direct3D 10. x o Direct3D 11 que requieren una \[ \] matriz de valores de color Float 4, puede convertir un XMVECTOR \* o XMFLOAT4 \* que contenga los datos de color.
+Cuando se trabaja con Direct3D 10.x o Direct3D 11, normalmente se usan tipos DirectXMath para crear una estructura para cada uno de los búferes constantes y, en esos casos, depende en gran medida de la capacidad de controlar la alineación para que estas operaciones son eficaces, o bien usar operaciones XMStore () para convertir datos XMVECTOR y XMMATRIX en los tipos de datos \* correctos. Al llamar a las API de Direct3D 10.x o Direct3D 11 que requieren una matriz float 4 de valores de color, puede convertir una \[ \] XMVECTOR o \* XMFLOAT4 que contenga los datos de \* color.
 
-## <a name="porting-from-d3dxmath"></a>Portabilidad desde D3DXMath
+## <a name="porting-from-d3dxmath"></a>Porte desde D3DXMath
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tipo D3DXMath</th>
-<th>Equivalentes de DirectXMath</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>D3DXFLOAT16</td>
-<td><a href="half-data-type.md"><strong>SEMESTRAL</strong></a></td>
-</tr>
-<tr class="even">
-<td>D3DXMATRIX</td>
-<td><a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x4"><strong>XMFLOAT4X4</strong></a></td>
-</tr>
-<tr class="odd">
-<td>D3DXMATRIXA16</td>
-<td><a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> o <a href="/previous-versions/windows/desktop/legacy/ee419623(v=vs.85)"> <strong>XMFLOAT4X4A</strong></a></td>
-</tr>
-<tr class="even">
-<td>D3DXQUATERNION<br/> D3DXPLANE<br/> D3DXCOLOR<br/></td>
-<td>Se usa <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> en lugar de tener tipos únicos, por lo que probablemente tendrá que usar un <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4"> <strong>XMFLOAT4</strong></a>
-<blockquote>
-[!Note]<br />
-[<strong>D3DXQUATERNION:: Operator *</strong>] (.. /Direct3D9/d3dxquaternion-Extensions.MD) llama a la función <a href="/windows/desktop/direct3d9/d3dxquaternionmultiply"><strong>D3DXQuaternionMultiply</strong></a> , que multiplica dos cuaterniones. Sin embargo, a menos que use explícitamente la función <a href="/windows/desktop/api/directxmath/nf-directxmath-xmquaternionmultiply"><strong>XMQuaternionMultiply</strong></a> , obtendrá una respuesta incorrecta al usar <a href="xmvector-operator-mul.md"><strong>XMVECTOR:: Operator *</strong></a> en un cuaternión.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>D3DXVECTOR2</td>
-<td><a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat2"><strong>XMFLOAT2</strong></a></td>
-</tr>
-<tr class="even">
-<td>D3DXVECTOR2_16F</td>
-<td><a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a></td>
-</tr>
-<tr class="odd">
-<td>D3DXVECTOR3</td>
-<td><a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3"><strong>XMFLOAT3</strong></a></td>
-</tr>
-<tr class="even">
-<td>D3DXVECTOR4</td>
-<td><a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4"><strong>XMFLOAT4</strong></a>(o si puede garantizar que los datos están alineados en 16 bytes, <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> o <a href="/previous-versions/windows/desktop/legacy/ee419609(v=vs.85)"><strong>XMFLOAT4A</strong></a> )<br/></td>
-</tr>
-<tr class="odd">
-<td>D3DXVECTOR4_16F</td>
-<td><a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4"><strong>XMHALF4</strong></a></td>
-</tr>
-</tbody>
-</table>
+
+| D3DXMath (tipo) | Equivalente de DirectXMath | 
+|---------------|------------------------|
+| D3DXFLOAT16 | <a href="half-data-type.md"><strong>MITAD</strong></a> | 
+| D3DXMATRIX | <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x4"><strong>XMFLOAT4X4</strong></a> | 
+| D3DXMATRIXA16 | <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> o <a href="/previous-versions/windows/desktop/legacy/ee419623(v=vs.85)"> <strong>XMFLOAT4X4A</strong></a> | 
+| D3DXQUATERNION<br /> D3DXPLANE<br /> D3DXCOLOR<br /> | <a href="xmvector-data-type.md"><strong>XMVECTOR se</strong></a> usa en lugar de tener tipos únicos, por lo que es probable que deba usar <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4"> <strong>XMFLOAT4.</strong></a><blockquote>[!Note]<br />[<strong>D3DXQUATERNION::operator *</strong>](../direct3d9/d3dxquaternion-extensions.md) llama a la función <a href="/windows/desktop/direct3d9/d3dxquaternionmultiply"><strong>D3DXQuaternionMultiply,</strong></a> que multiplica dos cuaterniones. Pero, a menos que use explícitamente la función <a href="/windows/desktop/api/directxmath/nf-directxmath-xmquaternionmultiply"><strong>XMQuaternionMultiply,</strong></a> se obtiene una respuesta incorrecta cuando se usa <a href="xmvector-operator-mul.md"><strong>XMVECTOR::operator *</strong></a> en un cuaternión.</blockquote><br /> | 
+| D3DXVECTOR2 | <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat2"><strong>XMFLOAT2</strong></a> | 
+| D3DXVECTOR2_16F | <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> | 
+| D3DXVECTOR3 | <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat3"><strong>XMFLOAT3</strong></a> | 
+| D3DXVECTOR4 | <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4"><strong>XMFLOAT4</strong></a>(o si puede garantizar que los datos están alineados con 16 bytes, <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> o <a href="/previous-versions/windows/desktop/legacy/ee419609(v=vs.85)"><strong>XMFLOAT4A)</strong></a><br /> | 
+| D3DXVECTOR4_16F | <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf4"><strong>XMHALF4</strong></a> | 
+
 
 
 
@@ -114,9 +72,9 @@ Al trabajar con Direct3D 10. x o Direct3D 11, normalmente usará tipos de Direct
 
 
 
-| D3DXMath (macro) | Equivalentes de DirectXMath                            |
+| D3DXMath Macro | Equivalente de DirectXMath                            |
 |----------------|---------------------------------------------------|
-| D3DX \_ PI       | [XM \_ PI](ovw-xnamath-reference-constants.md)     |
+| D3DX \_ PI       | [PI de XM \_](ovw-xnamath-reference-constants.md)     |
 | D3DX \_ 1BYPI    | [XM \_ 1DIVPI](ovw-xnamath-reference-constants.md) |
 | D3DXToRadian   | [**XMConvertToRadians**](/windows/desktop/api/DirectXMath/nf-directxmath-xmconverttoradians)  |
 | D3DXToDegree   | [**XMConvertToDegrees**](/windows/desktop/api/DirectXMath/nf-directxmath-xmconverttodegrees)  |
@@ -127,20 +85,20 @@ Al trabajar con Direct3D 10. x o Direct3D 11, normalmente usará tipos de Direct
 
 
 
-| D3DXMath función)                  | Equivalentes de DirectXMath                                                                                                                                                                                                                           |
+| D3DXMath (Función)                  | Equivalente de DirectXMath                                                                                                                                                                                                                           |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| D3DXBoxBoundProbe                  | [**BoundingBox:: Intersects (XMVECTOR, XMVECTOR, Float&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector_fxmvector_float_))                                                                                                                                                          |
-| D3DXComputeBoundingBox             | [**BoundingBox:: CreateFromPoints**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfrompoints)                                                                                                                                                                          |
+| D3DXBoxBoundProbe                  | [**BoundingBox::Intersects(XMVECTOR, XMVECTOR, float&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-intersects(fxmvector_fxmvector_float_))                                                                                                                                                          |
+| D3DXComputeBoundingBox             | [**BoundingBox::CreateFromPoints**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-createfrompoints)                                                                                                                                                                          |
 | D3DXComputeBoundingSphere          | [**BoundingSphere::CreateFromPoints**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-createfrompoints)                                                                                                                                                                      |
-| D3DXSphereBoundProbe               | [**BoundingSphere:: Intersects (XMVECTOR, XMVECTOR, Float&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-intersects(fxmvector_fxmvector_float_))                                                                                                                                                    |
-| D3DXIntersectTriFunction           | [**TriangleTests:: Intersects**](ovw-xnamath-triangletests.md)                                                                                                                                                                                   |
+| D3DXSphereBoundProbe               | [**BoundingSphere::Intersects(XMVECTOR, XMVECTOR, float&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-intersects(fxmvector_fxmvector_float_))                                                                                                                                                    |
+| D3DXIntersectTriFunction           | [**TriangleTests::Intersects**](ovw-xnamath-triangletests.md)                                                                                                                                                                                   |
 | D3DXFloat32To16Array               | [**XMConvertFloatToHalfStream**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmconvertfloattohalfstream)                                                                                                                                                                                 |
 | D3DXFloat16To32Array               | [**XMConvertHalfToFloatStream**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmconverthalftofloatstream)                                                                                                                                                                                 |
 | D3DXVec2Length                     | [**XMVector2Length**](/windows/win32/api/directxmath/nf-directxmath-xmvector2length) o [ **XMVector2LengthEst**](/windows/win32/api/directxmath/nf-directxmath-xmvector2lengthest)                                                                                                                                                   |
 | D3DXVec2LengthSq                   | [**XMVector2LengthSq**](/windows/win32/api/directxmath/nf-directxmath-xmvector2lengthsq)                                                                                                                                                                                                   |
 | D3DXVec2Dot                        | [**XMVector2Dot**](/windows/win32/api/directxmath/nf-directxmath-xmvector2dot)                                                                                                                                                                                                             |
 | D3DXVec2CCW                        | [**XMVector2Cross**](/windows/win32/api/directxmath/nf-directxmath-xmvector2cross)                                                                                                                                                                                                         |
-| D3DXVec2Add                        | [**XMVectorAdd**](/windows/win32/api/directxmath/nf-directxmath-xmvectoradd)                                                                                                                                                                                                               |
+| D3DXVec2Agregue                        | [**XMVectorAdd**](/windows/win32/api/directxmath/nf-directxmath-xmvectoradd)                                                                                                                                                                                                               |
 | D3DXVec2Subtract                   | [**XMVectorSubtract**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsubtract)                                                                                                                                                                                                     |
 | D3DXVec2Minimize                   | [**XMVectorMin**](/windows/win32/api/directxmath/nf-directxmath-xmvectormin)                                                                                                                                                                                                               |
 | D3DXVec2Maximize                   | [**XMVectorMax**](/windows/win32/api/directxmath/nf-directxmath-xmvectormax)                                                                                                                                                                                                               |
@@ -160,7 +118,7 @@ Al trabajar con Direct3D 10. x o Direct3D 11, normalmente usará tipos de Direct
 | D3DXVec3LengthSq                   | [**XMVector3LengthSq**](/windows/win32/api/directxmath/nf-directxmath-xmvector3lengthsq)                                                                                                                                                                                                   |
 | D3DXVec3Dot                        | [**XMVector3Dot**](/windows/win32/api/directxmath/nf-directxmath-xmvector3dot)                                                                                                                                                                                                             |
 | D3DXVec3Cross                      | [**XMVector3Cross**](/windows/win32/api/directxmath/nf-directxmath-xmvector3cross)                                                                                                                                                                                                         |
-| D3DXVec3Add                        | [**XMVectorAdd**](/windows/win32/api/directxmath/nf-directxmath-xmvectoradd)                                                                                                                                                                                                               |
+| D3DXVec3Agregue                        | [**XMVectorAdd**](/windows/win32/api/directxmath/nf-directxmath-xmvectoradd)                                                                                                                                                                                                               |
 | D3DXVec3Subtract                   | [**XMVectorSubtract**](/windows/win32/api/directxmath/nf-directxmath-xmvectorsubtract)                                                                                                                                                                                                     |
 | D3DXVec3Minimize                   | [**XMVectorMin**](/windows/win32/api/directxmath/nf-directxmath-xmvectormin)                                                                                                                                                                                                               |
 | D3DXVec3Maximize                   | [**XMVectorMax**](/windows/win32/api/directxmath/nf-directxmath-xmvectormax)                                                                                                                                                                                                               |
@@ -210,7 +168,7 @@ Al trabajar con Direct3D 10. x o Direct3D 11, normalmente usará tipos de Direct
 | D3DXMatrixRotationZ                | [**XMMatrixRotationZ**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationz)                                                                                                                                                                                                   |
 | D3DXMatrixRotationAxis             | [**XMMatrixRotationAxis**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationaxis)                                                                                                                                                                                             |
 | D3DXMatrixRotationQuaternion       | [**XMMatrixRotationQuaternion**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationquaternion)                                                                                                                                                                                 |
-| D3DXMatrixRotationYawPitchRoll     | [**XMMatrixRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationrollpitchyaw) (tenga en cuenta que el orden de los parámetros es diferente: D3DXMatrixRotationYawPitchRoll toma guiñada, brea, roll, **XMMatrixRotationRollPitchYaw** toma el paso, guiña, roll)                 |
+| D3DXMatrixRotationYawPitchRoll     | [**XMMatrixRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixrotationrollpitchyaw) (Tenga en cuenta que el orden de los parámetros es diferente: D3DXMatrixRotationYawPtrixRoll toma yaw, pitch, roll, **XMMatrixRotationRollPitchYaw** toma pitch, yaw, roll)                 |
 | D3DXMatrixTransformation           | [**XMMatrixTransformation**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtransformation)                                                                                                                                                                                         |
 | D3DXMatrixTransformation2D         | [**XMMatrixTransformation2D**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixtransformation2d)                                                                                                                                                                                     |
 | D3DXMatrixAffineTransformation     | [**XMMatrixAffineTransformation**](/windows/win32/api/directxmath/nf-directxmath-xmmatrixaffinetransformation)                                                                                                                                                                             |
@@ -238,7 +196,7 @@ Al trabajar con Direct3D 10. x o Direct3D 11, normalmente usará tipos de Direct
 | D3DXQuaternionToAxisAngle          | [**XMQuaternionToAxisAngle**](/windows/win32/api/directxmath/nf-directxmath-xmquaterniontoaxisangle)                                                                                                                                                                                       |
 | D3DXQuaternionRotationMatrix       | [**XMQuaternionRotationMatrix**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationmatrix)                                                                                                                                                                                 |
 | D3DXQuaternionRotationAxis         | [**XMQuaternionRotationAxis**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationaxis)                                                                                                                                                                                     |
-| D3DXQuaternionRotationYawPitchRoll | [**XMQuaternionRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationrollpitchyaw) (tenga en cuenta que el orden de los parámetros es diferente: D3DXQuaternionRotationYawPitchRoll toma guiñada, brea, roll, **XMQuaternionRotationRollPitchYaw** toma el paso, guiña, roll) |
+| D3DXQuaternionRotationYawPitchRoll | [**XMQuaternionRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationrollpitchyaw) (Tenga en cuenta que el orden de los parámetros es diferente: D3DXQuaternionRotationYawPitchRoll toma yaw, pitch, roll, **XMQuaternionRotationRollPitchYaw** toma pitch, yaw, roll) |
 | D3DXQuaternionMultiply             | [**XMQuaternionMultiply**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionmultiply)                                                                                                                                                                                             |
 | D3DXQuaternionNormalize            | [**XMQuaternionNormalize**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionnormalize) o [ **XMQuaternionNormalizeEst**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionnormalizeest)                                                                                                                           |
 | D3DXQuaternionInverse              | [**XMQuaternionInverse**](/windows/win32/api/directxmath/nf-directxmath-xmquaternioninverse)                                                                                                                                                                                               |
@@ -273,7 +231,7 @@ Al trabajar con Direct3D 10. x o Direct3D 11, normalmente usará tipos de Direct
  
 
 > [!Note]  
-> Las funciones de [armónicos esféricos](https://github.com/Microsoft/DirectXMath/tree/master/SHMath) para DirectXMath están disponibles por separado. No hay ninguna DirectXMath equivalente a **ID3DXMatrixStack**.
+> [Las funciones de armónicas](https://github.com/Microsoft/DirectXMath/tree/master/SHMath) esféricas para DirectXMath están disponibles por separado. No hay ningún elemento DirectXMath equivalente a **ID3DXMatrixStack.**
 
  
 

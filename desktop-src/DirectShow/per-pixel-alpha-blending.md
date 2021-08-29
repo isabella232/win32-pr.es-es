@@ -4,23 +4,23 @@ ms.assetid: 68661dc5-1423-47b2-a0df-858e5eb7f02b
 title: Per-Pixel combinación alfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df7e67084ae19df4a1aab81474dc8a9b1a313b9d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b8722c0483ab4308d2f9d91da7ab94435efc666af5b4353970ff0af54af70532
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072859"
 ---
 # <a name="per-pixel-alpha-blending"></a>Per-Pixel combinación alfa
 
-Se han definido cuatro subtipos de medios para la combinación alfa por píxel. Estos subtipos solo se admiten cuando el VMR está en modo de mezcla. VMR rechazará la conexión si no está en modo de mezcla cuando un filtro de nivel superior intenta conectarse utilizando uno de estos subtipos. Estos subtipos se definen en UUID. h:
+Se han definido cuatro subtipos multimedia para la combinación alfa por píxel. Estos subtipos solo se admiten cuando vmr está en modo de combinación. El VMR rechazará la conexión si no está en modo de combinación cuando un filtro ascendente intenta conectarse mediante uno de estos subtipos. Estos subtipos se definen en uuids.h:
 
 -   MEDIASUBTYPE \_ ARGB1555
 -   MEDIASUBTYPE \_ ARGB4444
 -   MEDIASUBTYPE \_ ARGB32
 -   MEDIASUBTYPE \_ AYUV
 
-Para obtener más información, vea subtipos de [vídeo RGB sin comprimir](uncompressed-rgb-video-subtypes.md) y [**subtipos de vídeo YUV**](yuv-video-subtypes.md).
+Para obtener más información, [vea Subtipos](uncompressed-rgb-video-subtypes.md) de vídeo RGB sin comprimir y [**Subtipos de vídeo YUV**](yuv-video-subtypes.md).
 
  
 

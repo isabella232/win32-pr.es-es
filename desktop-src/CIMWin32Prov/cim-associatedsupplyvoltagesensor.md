@@ -2,7 +2,7 @@
 description: Asocia una fuente de alimentación a un sensor de voltaje que supervisa su voltaje de entrada.
 ms.assetid: 4164320e-8362-4ce2-9949-f14669278bd8
 ms.tgt_platform: multiple
-title: CIM_AssociatedSupplyVoltageSensor (clase)
+title: CIM_AssociatedSupplyVoltageSensor clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ce597fb9e170b63335c56e30f8f8c4ddb30af66c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 65ed830a1bb0649ac2a1e934a6de958d16706ae5a39f544c42f91369d16c3f48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119218935"
 ---
-# <a name="cim_associatedsupplyvoltagesensor-class"></a>\_Clase AssociatedSupplyVoltageSensor de CIM
+# <a name="cim_associatedsupplyvoltagesensor-class"></a>Cim \_ AssociatedSupplyVoltageSensor (clase)
 
-La **clase \_ AssociatedSupplyVoltageSensor de CIM** asocia una fuente de alimentación con un sensor de voltaje que supervisa su voltaje de entrada.
+La **clase \_ Cim AssociatedSupplyVoltageSensor** asocia una fuente de alimentación a un sensor de voltaje que supervisa su voltaje de entrada.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,13 +49,13 @@ class CIM_AssociatedSupplyVoltageSensor : CIM_AssociatedSensor
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ AssociatedSupplyVoltageSensor** tiene estos tipos de miembros:
+La **clase \_ AssociatedSupplyVoltageSensor de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ AssociatedSupplyVoltageSensor** tiene estas propiedades.
+La **clase \_ AssociatedSupplyVoltageSensor de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -68,33 +68,33 @@ Tipo de datos: **CIM \_ VoltageSensor**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ VoltageSensor de CIM**](cim-voltagesensor.md) que describe el sensor de voltaje.
+Cim [**\_ VoltageSensor que**](cim-voltagesensor.md) describe el sensor de voltaje.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: sistema de sistema **CIM \_**
+Tipo de datos: **CIM \_ PowerSupply**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Una alimentación de [**CIM \_**](cim-powersupply.md) que describe la fuente de alimentación asociada al sensor de voltaje.
+Cim [**\_ PowerSupply**](cim-powersupply.md) que describe la fuente de alimentación asociada al sensor de voltaje.
 
 </dd> <dt>
 
 **MonitoringRange**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -113,7 +113,7 @@ Indica el intervalo de voltaje de entrada de la fuente de alimentación medido p
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -134,24 +134,24 @@ Indica el intervalo de voltaje de entrada de la fuente de alimentación medido p
 
 <span id="Both_Range_1_and_2"></span><span id="both_range_1_and_2"></span><span id="BOTH_RANGE_1_AND_2"></span>
 
-<span id="Both_Range_1_and_2"></span><span id="both_range_1_and_2"></span><span id="BOTH_RANGE_1_AND_2"></span>**Rango 1 y 2** (4)
+<span id="Both_Range_1_and_2"></span><span id="both_range_1_and_2"></span><span id="BOTH_RANGE_1_AND_2"></span>**Intervalo 1 y 2** (4)
 
 
 </dt> <dd>
 
-Rango 1 y 2
+Intervalo 1 y 2
 
 </dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ AssociatedSupplyVoltageSensor** se deriva de [**\_ AssociatedSensor de CIM**](cim-associatedsensor.md).
+La **clase \_ AssociatedSupplyVoltageSensor de CIM** se deriva de CIM [**\_ AssociatedSensor.**](cim-associatedsensor.md)
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -161,8 +161,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -171,7 +171,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_ASSOCIATEDSENSOR CIM**](cim-associatedsensor.md)
+[**CIM \_ AssociatedSensor**](cim-associatedsensor.md)
 </dt> </dl>
 
  

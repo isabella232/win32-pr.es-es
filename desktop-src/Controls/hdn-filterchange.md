@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de HDN_FILTERCHANGE (commctrl. h)
-description: Notifica a la ventana primaria del control de encabezado que los atributos de un filtro de control de encabezado se están modificando o editando. Este código de notificación se envía en forma de mensaje de notificación de WM \_ .
+title: HDN_FILTERCHANGE de notificación (Commctrl.h)
+description: Notifica a la ventana primaria del control de encabezado que los atributos de un filtro de control de encabezado se están cambiando o editando. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 0a46af14-569a-4119-881f-549a130f9b0d
 keywords:
-- HDN_FILTERCHANGE controles de código de notificación de Windows
+- HDN_FILTERCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3d5d31b792e909cd79cdc6aa966bfdce450787b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df9cb23123460e06bd2d8c3a5a38e2465e4382f80d223f978c82a1ea8702dfd8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435525"
 ---
-# <a name="hdn_filterchange-notification-code"></a>Código de notificación de FILTERCHANGE de HDN \_
+# <a name="hdn_filterchange-notification-code"></a>Código de notificación FILTERCHANGE de HDN \_
 
-Notifica a la ventana primaria del control de encabezado que los atributos de un filtro de control de encabezado se están modificando o editando. Este código de notificación se envía en forma de mensaje de [**\_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria del control de encabezado que los atributos de un filtro de control de encabezado se están cambiando o editando. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -55,9 +55,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

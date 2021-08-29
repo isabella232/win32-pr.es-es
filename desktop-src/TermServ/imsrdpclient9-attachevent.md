@@ -1,14 +1,14 @@
 ---
-title: IMsRdpClient9 attachEvent, método
-description: Adjunta un evento.
+title: Método attachEvent de IMsRdpClient9
+description: Asocia un evento.
 ms.assetid: 3a887aeb-a74f-4477-8cf3-8ac43a31fa26
 ms.tgt_platform: multiple
 keywords:
 - Método attachEvent Servicios de Escritorio remoto
-- Método attachEvent Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, Método attachEvent
-- Método attachEvent Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto, Método attachEvent
+- Método attachEvent Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto método , attachEvent
+- Método attachEvent Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto método , attachEvent
 topic_type:
 - apiref
 api_name:
@@ -20,16 +20,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1bd3fd518fba825c209a4170e6b314a7b774a49
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 29c723a34e1d85c6e4a95bee099d73313de14534d373350343c130f37414ac9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871375"
 ---
-# <a name="imsrdpclient9attachevent-method"></a>IMsRdpClient9:: attachEvent (método)
+# <a name="imsrdpclient9attachevent-method"></a>IMsRdpClient9::attachEvent (método)
 
-Adjunta un evento.
+Asocia un evento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ HRESULT attachEvent(
 
 <dl> <dt>
 
-*eventName* \[ de\]
+*eventName* \[ En\]
 </dt> <dd>
 
-Evento que se va a adjuntar.
+Evento que se adjuntará.
 
 </dd> <dt>
 
-*devolución de llamada* \[ de\]
+*devolución de llamada* \[ En\]
 </dt> <dd>
 
 La devolución de llamada.
@@ -63,7 +63,7 @@ La devolución de llamada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,10 +72,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                                                                                                                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                                                                                                                                                                                       |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                                                                                                                                                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                  |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                  |
-| IID<br/>                      | CLSID \_ MsRdpClient9 se define como 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting se define como 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> IID \_ IMsRdpClient9 se define como 28904001-04B6-436C-A55B-0AF1A0883DC9<br/> |
+| IID<br/>                      | CLSID MsRdpClient9 se define como \_ 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting se define como 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> IID IMsRdpClient9 se define como \_ 28904001-04B6-436C-A55B-0AF1A0883DC9<br/> |
 
 
 

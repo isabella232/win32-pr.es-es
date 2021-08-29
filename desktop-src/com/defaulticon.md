@@ -1,36 +1,36 @@
 ---
 title: DefaultIcon
-description: Proporciona información de icono predeterminada para presentaciones con iconos de objetos.
+description: Proporciona información de iconos predeterminada para presentaciones iónicas de objetos.
 ms.assetid: 45a3289b-d9c4-4857-bf48-1fd664ce4430
 keywords:
-- Clave del registro DefaultIcon COM
+- DefaultIcon registry key COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0079fb02f4429c1939f54d643e0a6b08fbc90eb
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 680994bdd4d4cd6ec6a3d192ca737af27f9190f6179571b3c8aaca5d86b55c5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501265"
 ---
 # <a name="defaulticon"></a>DefaultIcon
 
-Proporciona información de icono predeterminada para presentaciones con iconos de objetos.
+Proporciona información de iconos predeterminada para presentaciones iónicas de objetos.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      DefaultIcon = path, resourceID
+   {CLSID}
+      DefaultIcon = path, resourceID
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de un valor de **reg \_ SZ** que especifica la ruta de acceso completa al nombre del archivo ejecutable de la aplicación de objeto y el índice de recursos del icono en el ejecutable.
+Se trata de **un valor \_ SZ reg** que especifica la ruta de acceso completa al nombre ejecutable de la aplicación de objeto y el índice de recursos del icono dentro del ejecutable.
 
-**DefaultIcon** identifica el icono que se va a usar cuando, por ejemplo, un control se minimice a un icono. Esta entrada contiene la ruta de acceso completa al nombre del archivo ejecutable de la aplicación de servidor y el índice de recursos del icono dentro del archivo ejecutable. Las aplicaciones pueden usar la información proporcionada por **DefaultIcon** para obtener un identificador de icono con [**ExtractIcon**](/windows/win32/api/shellapi/nf-shellapi-extracticona).
+**DefaultIcon** identifica el icono que se va a usar cuando, por ejemplo, un control se minimiza en un icono. Esta entrada contiene la ruta de acceso completa al nombre ejecutable de la aplicación de servidor y el índice de recursos del icono dentro del ejecutable. Las aplicaciones pueden usar la información proporcionada por **DefaultIcon** para obtener un identificador de icono [**con ExtractIcon**](/windows/win32/api/shellapi/nf-shellapi-extracticona).
 
- 
+ 
 
- 
+ 

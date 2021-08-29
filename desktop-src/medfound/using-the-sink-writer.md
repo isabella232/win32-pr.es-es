@@ -4,12 +4,12 @@ ms.assetid: BE89E2E0-711F-4BD5-BB86-AA4CCA2D3E7F
 title: Uso del escritor de receptores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa4fa472bd1a5121454b3ffb06def7082508432b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b0585f52276e280d548e5180afc945ef99b046a7b6cd20c044c0e2262da3813b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012245"
 ---
 # <a name="using-the-sink-writer"></a>Uso del escritor de receptores
 
@@ -32,20 +32,20 @@ Los formatos de entrada y salida se pueden comprimir o descomprimir. El escritor
 -   Entrada comprimida con salida idéntica. Use esta combinación para volver a experienciar un archivo sin transcodificación.
 -   Entrada sin comprimir con una salida idéntica. Use esta combinación para escribir audio o vídeo sin comprimir en un contenedor de archivos.
 
-El sistema de escritura del receptor no admite el cambio de tamaño de vídeo, la conversión de la velocidad de fotogramas o el cambio demuestreo de audio, a menos que el codificador proporciona estas funciones. De lo contrario, la aplicación puede usar [procesadores de señal digital](windowsmediadigitalsignalprocessors.md) para convertir los datos de entrada, antes de enviar los datos a
+El sistema de escritura del receptor no admite el cambio de tamaño de vídeo, la conversión de velocidad de fotogramas ni el remuestreo de audio, a menos que el codificador las proporciona. De lo contrario, la aplicación puede usar [procesadores de señal digital](windowsmediadigitalsignalprocessors.md) para convertir los datos de entrada, antes de enviar los datos a
 
 ## <a name="creating-the-sink-writer"></a>Creación del escritor de receptores
 
-Hay dos funciones que crean el sistema de escritura del receptor:
+Hay dos funciones que crean el escritor de receptores:
 
--   [**MFCreateSinkWriterFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) toma la dirección URL de un archivo de salida o un puntero a una secuencia de bytes. Esta función crea el receptor multimedia internamente.
--   [**MFCreateSinkWriterFromMediaSink**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfrommediasink) toma un puntero a un receptor multimedia que la aplicación ya ha creado.
+-   [**MFCreateSinkWriterFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) toma la dirección URL de un archivo de salida o un puntero a una secuencia de bytes. Esta función crea internamente el receptor multimedia.
+-   [**MFCreateSinkWriterFromMediaSink**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfrommediasink) toma un puntero a un receptor multimedia que ya ha creado la aplicación.
 
-Si usa uno de los receptores de medios integrados, es preferible la función [**MFCreateSinkWriterFromURL,**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) ya que el autor de la llamada no necesita configurar el receptor multimedia.
+Si usa uno de los receptores multimedia integrados, es preferible la función [**MFCreateSinkWriterFromURL,**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) ya que el autor de la llamada no necesita configurar el receptor multimedia.
 
 El [**método MFCreateSinkWriterFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl) proporciona varias opciones para especificar el tipo de contenedor de archivos. En el caso más sencillo, la función usa la extensión de nombre de archivo en la dirección URL para seleccionar el contenedor de archivos. Para obtener más información, consulte la página de referencia de función.
 
-Por ejemplo, el código siguiente especifica el nombre de archivo "output.wmv" para la dirección URL. Según la extensión de nombre de archivo, el sistema de escritura del receptor cargará el receptor de medios [de ASF](asf-media-sinks.md) para crear un archivo de formato de sistemas avanzados (ASF).
+Por ejemplo, el código siguiente especifica el nombre de archivo "output.wmv" para la dirección URL. En función de la extensión de nombre de archivo, el escritor de receptores cargará el receptor de medios [de ASF](asf-media-sinks.md) para crear un archivo de formato de sistemas avanzados (ASF).
 
 
 ```C++
@@ -54,7 +54,7 @@ Por ejemplo, el código siguiente especifica el nombre de archivo "output.wmv" p
 
 
 
-En el caso de [**MFCreateSinkWriterFromMediaSink,**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfrommediasink)el tipo de archivo viene determinado por el receptor multimedia.
+En el caso de [**MFCreateSinkWriterFromMediaSink,**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfrommediasink)el tipo de archivo viene determinado por el receptor de medios.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b007eb6824ee3e65cdf8195914bbff3a50c39b2c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8ef791d4d892713c9bd07a693b9aa57651e2e7cf75635a1c8642ceb4a45b0776
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119779205"
 ---
 # <a name="iespgetcontrolstate-method"></a>IESP::GetControlState (método)
 
-El **método GetControlState** recupera el estado de [*la*](c.md)captura , que indica si la captura se está ejecutando o en pausa.
+El **método GetControlState** recupera el estado de [*la*](c.md)captura , lo que indica si la captura se está ejecutando o en pausa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ Indicador de que la captura actual está en pausa.
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es uno de los siguientes códigos de error:
+Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error:
 
 
 
 | Código devuelto                                                                                          | Descripción                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IESP::Connect](iesp-connect.md) para conectar el NPP a la red.<br/> |
-| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>       | El NPP está conectado a la red, pero no con el [método IESP::Connect.](iesp-connect.md)<br/>                     |
+| <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red. Llame [a IESP::Conectar](iesp-connect.md) para conectar el NPP a la red.<br/> |
+| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>       | El NPP está conectado a la red, pero no con el [método IESP::Conectar.](iesp-connect.md)<br/>                     |
 
 
 
@@ -89,14 +89,14 @@ Se puede llamar a este método cada vez que el NPP está conectado a la red. Pue
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP::Connect](iesp-connect.md)
+[IESP::Conectar](iesp-connect.md)
 </dt> <dt>
 
 [IESP::P ause](iesp-pause.md)

@@ -1,19 +1,19 @@
 ---
-description: Nombre de análisis de imagen.
+description: Nombre del análisis de imágenes.
 ms.assetid: 62143bdd-03f4-4b0f-bd63-94e364ea17f5
-title: System. ImageParsingName
+title: System.ImageParsingName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dd3d6e2cb5606f972f2a56840d82985dda7870c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63c676ffc1b686b1fc944d66a017efd9723a4bde65959f85fcd46610c9a040fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010295"
 ---
-# <a name="systemimageparsingname"></a>System. ImageParsingName
+# <a name="systemimageparsingname"></a>System.ImageParsingName
 
-Nombre de análisis de imagen.
+Nombre del análisis de imágenes.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -45,9 +45,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -62,7 +62,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -74,7 +74,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -92,7 +92,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

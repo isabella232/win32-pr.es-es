@@ -1,11 +1,11 @@
 ---
-title: ACS-Aggregate-token-Rate-per-user (atributo)
-description: La tasa máxima de tokens que puede tener cualquier usuario para todos los flujos.
+title: Atributo ACS-Aggregate-Token-Rate-Per-User
+description: La tasa máxima de tokens que cualquier usuario puede tener para todos los flujos.
 ms.assetid: a617dce4-bade-40bb-ad99-6025e85bfac5
 ms.tgt_platform: multiple
 keywords:
-- ACS-Aggregate-token-Rate-per-user atributo AD Schema
-- aCSAggregateTokenRatePerUser esquema de AD de atributos
+- Esquema de AD del atributo ACS-Aggregate-Token-Rate-Per-User
+- Esquema de AD del atributo aCSAggregateTokenRatePerUser
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db1a614e4e2a547d7922bcf47d026337b5e1ba94
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 514805e35ee39ffb66f8230e1539cb98281d3d683b9a4f6d65168c11cfd8a7cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929835"
 ---
-# <a name="acs-aggregate-token-rate-per-user-attribute"></a>ACS-Aggregate-token-Rate-per-user (atributo)
+# <a name="acs-aggregate-token-rate-per-user-attribute"></a>Atributo ACS-Aggregate-Token-Rate-Per-User
 
-La tasa máxima de tokens que puede tener cualquier usuario para todos los flujos.
+La tasa máxima de tokens que cualquier usuario puede tener para todos los flujos.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-Aggregate-token-Rate por usuario    |
-| Nombre para mostrar de LDAP | aCSAggregateTokenRatePerUser         |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-Aggregate-Token-Rate-Per-User    |
+| Ldap-Display-Name | aCSAggregateTokenRatePerUser         |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.760               |
-| System-ID-GUID    | 7f56127d-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 7f56127d-5301-11d1-a9c5-0000f80367c1 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ La tasa máxima de tokens que puede tener cualquier usuario para todos los flujo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La tasa máxima de tokens que puede tener cualquier usuario para todos los flujo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La tasa máxima de tokens que puede tener cualquier usuario para todos los flujo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La tasa máxima de tokens que puede tener cualquier usuario para todos los flujo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La tasa máxima de tokens que puede tener cualquier usuario para todos los flujo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La tasa máxima de tokens que puede tener cualquier usuario para todos los flujo
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> |
+| Clases usadas en        | [**ACS-Policy**](c-acspolicy.md)<br/> |
 
 
 

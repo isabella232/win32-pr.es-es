@@ -1,20 +1,20 @@
 ---
-description: El elemento effect define un objeto de efecto de audio o vídeo. Un efecto se aplica a una sola secuencia (por ejemplo, una composición, una pista o un origen).
+description: El elemento de efecto define un objeto de efecto de audio o vídeo. Un efecto se aplica a una sola secuencia (por ejemplo, una composición, una pista o un origen).
 ms.assetid: aedb4491-f1f0-44b3-ad88-3fac8c90144d
 title: elemento effect (Gdipluseffects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4c925e61578857415bb22248a9ad2b1df27cdac
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a780fbab91cd5071efd1135faa680e4707ca1f7327145cc372a5fe8a231a4e8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823665"
 ---
 # <a name="effect-element"></a>elemento effect
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
@@ -60,7 +60,7 @@ El **atributo clsid** especifica el subobjeto que crea el efecto.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

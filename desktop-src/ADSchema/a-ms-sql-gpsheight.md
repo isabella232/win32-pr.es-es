@@ -4,8 +4,8 @@ description: El atributo MS-SQL-GPSHeight no se usa actualmente.
 ms.assetid: 8a25b88f-47ce-4a1b-86a3-f7f387f46c39
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-GPSHeight
-- Esquema de AD de atributos de mS-SQL-GPSHeight
+- Esquema de AD del atributo MS-SQL-GPSHeight
+- Esquema de AD del atributo mS-SQL-GPSHeight
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a8714a3700b49e9c3b7a5f43cbc144aa996adb9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 04a7b6c432fa89e63e37bac1048ed9b57f22a47a8cbfea31d07c96192305f3d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583395"
 ---
 # <a name="ms-sql-gpsheight-attribute"></a>Atributo MS-SQL-GPSHeight
 
-El atributo **MS-SQL-GPSHeight** no se usa actualmente.
+El **atributo MS-SQL-GPSHeight** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-GPSHeight                            |
-| Nombre para mostrar de LDAP | mS-SQL-GPSHeight                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | mS-SQL-GPSHeight                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1387                     |
-| System-ID-GUID    | bcdd4f0e-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bcdd4f0e-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ El atributo **MS-SQL-GPSHeight** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -76,13 +76,13 @@ El atributo **MS-SQL-GPSHeight** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -97,13 +97,13 @@ El atributo **MS-SQL-GPSHeight** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -116,15 +116,15 @@ El atributo **MS-SQL-GPSHeight** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -139,13 +139,13 @@ El atributo **MS-SQL-GPSHeight** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -160,13 +160,13 @@ El atributo **MS-SQL-GPSHeight** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                        |
+| Id. de vínculo                | \-                                                        |
 | MAPI-Id                | \-                                                        |
-| System-Only            | False                                                     |
-| Tiene un único valor       | True                                                      |
-| Está indexado             | False                                                     |
-| En el catálogo global      | False                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                              |
+| System-Only            | Falso                                                     |
+| Es de un solo valor       | Verdadero                                                      |
+| Está indexado             | Falso                                                     |
+| En el catálogo global      | Falso                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |

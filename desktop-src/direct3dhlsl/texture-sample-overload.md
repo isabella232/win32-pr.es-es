@@ -1,6 +1,6 @@
 ---
 title: Métodos de ejemplo de Texture2D
-description: Muestrea un Texture2D.
+description: Muestrea un objeto Texture2D.
 ms.assetid: 26DC90DA-33C6-49D7-B250-156EA686F5A8
 keywords:
 - Métodos de ejemplo HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 9f87e6ea6e839e90dc8d347b7e14e39daec556b2
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 25fbc27a2fecd07277e93197f61c43ca5b8a94806155deb8b12556b9dff17911
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023065"
 ---
-# <a name="texture2dsample-methods"></a>Texture2D:: sample (métodos)
+# <a name="texture2dsample-methods"></a>Métodos Texture2D::Sample
 
-Muestrea un [**Texture2D**](sm5-object-texture2d.md).
+Muestrea [**un objeto Texture2D.**](sm5-object-texture2d.md)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,13 +29,13 @@ Muestrea un [**Texture2D**](sm5-object-texture2d.md).
 
 | Método                                                              | Descripción                                                                                                                               |
 |:--------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Sample (S, Float, int)**](dx-graphics-hlsl-to-sample.md)           | Muestrea una textura.<br/>                                                                                                             |
-| [**Sample (S, Float, int, float)**](sample-s-float--int-float-.md)     | Muestrea una textura con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en.<br/>                                      |
-| [**Sample (S, Float, int, Float, uint)**](sample-s-float--int-uint-.md) | Muestrea una textura con un valor opcional para Clamp valores de nivel de detalle (LOD) de ejemplo en y devuelve el estado de la operación.<br/> |
+| [**Sample(S,float,int)**](dx-graphics-hlsl-to-sample.md)           | Muestrea una textura.<br/>                                                                                                             |
+| [**Sample(S,float,int,float)**](sample-s-float--int-float-.md)     | Muestrea una textura con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra.<br/>                                      |
+| [**Sample(S,float,int,float,uint)**](sample-s-float--int-uint-.md) | Muestrea una textura con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra y devuelve el estado de la operación.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Consulte [Texture-Object](dx-graphics-hlsl-to-type.md).
 

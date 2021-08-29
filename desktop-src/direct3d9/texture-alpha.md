@@ -1,19 +1,19 @@
 ---
 description: Las texturas también pueden proporcionar valores alfa.
 ms.assetid: b9f53783-d4d8-4339-8cf3-5ad8305ff627
-title: Textura alfa (Direct3D 9)
+title: Alfa de textura (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 694f8a72d3faede36c3e69ce1b6841b8f6450a3e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 248b09fbc6751b9f692153b19a907d0bc0d383e8d613708b2eb87db391380dbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026075"
 ---
-# <a name="texture-alpha-direct3d-9"></a>Textura alfa (Direct3D 9)
+# <a name="texture-alpha-direct3d-9"></a>Alfa de textura (Direct3D 9)
 
-Las texturas también pueden proporcionar valores alfa. En primer lugar, se debe crear la textura. En segundo lugar, los valores alfa se deben agregar a la textura. Para representar con la textura, establezca la textura en una fase de textura y seleccione la operación de fase de textura y los operandos adecuados. Cuando se llama a Draw, el primitivo se representará con transparencia. En este ejemplo se crea un recurso de textura y, a continuación, se carga el canal alfa.
+Las texturas también pueden proporcionar valores alfa. En primer lugar, se debe crear la textura. En segundo lugar, los valores alfa deben agregarse a la textura. Para representar con la textura, establezca la textura en una fase de textura y seleccione los operandos y la operación de fase de textura adecuados. Cuando se llama a draw, la primitiva se representará con transparencia. En este ejemplo se crea un recurso de textura y, a continuación, se carga el canal alfa.
 
 
 ```
@@ -57,7 +57,7 @@ if(SUCCEEDED(pTexture->LockRect(0, &lockedRect, NULL, D3DLOCK_DISCARD )))
 
 
 
-El valor alfa se calcula en función de la posición de x/y relativa del píxel actual dentro del tamaño de la textura. A continuación, asigne la textura a una fase de textura y configure la fase de textura.
+El valor alfa se calcula en función de la posición x/y relativa del píxel actual dentro del tamaño de textura. A continuación, asigne la textura a una fase de textura y configure la fase de textura.
 
 
 ```
@@ -82,7 +82,7 @@ m_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_MODULATE);
 
 
 
-Esto da como resultado un primitivo con un degradado de transparencia. El degradado es transparente, donde x = 0 y opaco, donde x es su valor máximo.
+Esto da como resultado una primitiva con un degradado de transparencia. El degradado es transparente donde x = 0 y opaco, donde x es su valor máximo.
 
 ## <a name="related-topics"></a>Temas relacionados
 

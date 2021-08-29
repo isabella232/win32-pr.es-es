@@ -1,23 +1,23 @@
 ---
-description: Esta sección de la documentación de la infraestructura del mismo nivel describe la API de gráficos del mismo nivel.
+description: En esta sección de la documentación de infraestructura del mismo nivel se describe Peer Graphing API.
 ms.assetid: d590f31a-d036-40cf-a1be-00396b2d6740
-title: API de gráficos
+title: Graphing API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01719e2413f92e5681a36d8b867332f187a3e85d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b3cb6399b6bf2fb3ea8eeb80d9cd4cafa0f9d8cf6ffea058a6af9cefd66d7b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776215"
 ---
-# <a name="graphing-api"></a>API de gráficos
+# <a name="graphing-api"></a>Graphing API
 
-Esta sección de la documentación de la infraestructura del mismo nivel describe la API de gráficos del mismo nivel. La documentación se divide en las tres secciones siguientes:
+En esta sección de la documentación de infraestructura del mismo nivel se describe Peer Graphing API. La documentación se divide en las tres secciones siguientes:
 
--   [Acerca de la API de gráficos](about-the-graphing-api.md)
--   [Uso de la API de gráficos](using-the-graphing-api.md)
--   [Referencia de la API de gráficos](the-graphing-api-reference.md)
+-   [Acerca de Graphing API](about-the-graphing-api.md)
+-   [Uso de Graphing API](using-the-graphing-api.md)
+-   [Referencia de Graphing API](the-graphing-api-reference.md)
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: El método IsCursorHidden recupera el estado actual del \_ miembro de datos m bCursorHidden.
+description: El método IsCursorHidden recupera el estado actual del miembro de datos m \_ bCursorHidden.
 ms.assetid: 4b97b89d-876a-470c-ac41-a88fecb52b2d
-title: Método CBaseControlWindow. IsCursorHidden (Ctlutil. h)
+title: Método CBaseControlWindow.IsCursorHidden (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 90f02c6cac5fb3ef1edeaa8e03f7bc54a03acb49
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f7e64b056715a9f67255b6c16f62c64b65361562489ef47a37dd63548dd6e30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793745"
 ---
-# <a name="cbasecontrolwindowiscursorhidden-method"></a>CBaseControlWindow. IsCursorHidden, método
+# <a name="cbasecontrolwindowiscursorhidden-method"></a>Método CBaseControlWindow.IsCursorHidden
 
-El `IsCursorHidden` método recupera el estado actual del miembro de datos **m \_ bCursorHidden** .
+El método recupera el estado actual del miembro de datos `IsCursorHidden` **m \_ bCursorHidden.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT IsCursorHidden(
 *CursorHidden* 
 </dt> <dd>
 
-Puntero al valor de **m \_ bCursorHidden**.
+Puntero al valor de **m \_ bCursorHidden.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Cuando se llama sin un parámetro, devuelve OATRUE si el cursor está oculto, o OAFALSE si el cursor está visible.
+Cuando se llama sin un parámetro, devuelve OATRUE si el cursor está oculto o OAFALSE si el cursor está visible.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los objetos internos deben llamar a esta función miembro sin el parámetro *CursorHidden* para evitar el bloqueo de la sección crítica. Los objetos externos acceden a esta función miembro con el parámetro *CursorHidden* a través del método [**IVideoWindow:: IsCursorHidden**](/windows/desktop/api/Control/nf-control-ivideowindow-iscursorhidden) .
+Los objetos internos deben llamar a esta función miembro sin el *parámetro CursorHidden* para evitar bloquear la sección crítica. Los objetos externos acceden a esta función miembro con el *parámetro CursorHidden* a través del método [**IVideoWindow::IsCursorHidden.**](/windows/desktop/api/Control/nf-control-ivideowindow-iscursorhidden)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Los objetos internos deben llamar a esta función miembro sin el parámetro *Cur
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Los objetos internos deben llamar a esta función miembro sin el parámetro *Cur
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

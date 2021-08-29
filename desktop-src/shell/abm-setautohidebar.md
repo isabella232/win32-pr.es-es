@@ -1,6 +1,6 @@
 ---
-description: Registra o anula el registro de un Appbar de ocultación para un borde determinado de la pantalla. Si el sistema tiene varios monitores, se utiliza el monitor que contiene la barra de tareas principal.
-title: Mensaje de ABM_SETAUTOHIDEBAR (ShellAPI. h)
+description: Registra o anula el registro de una barra de aplicaciones de mostrar automáticamente para un borde determinado de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
+title: ABM_SETAUTOHIDEBAR mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 0cbd6c9c-e83f-41f8-91ed-81afaa24f524
@@ -13,19 +13,19 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 53ca89008dda1233d12a7f0a9588803776ba1181
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8db0a9cc692054f924aa66e90347c31351c9a29539d6e614af72af52ee627d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884855"
 ---
-# <a name="abm_setautohidebar-message"></a>ABN \_ SETAUTOHIDEBAR
+# <a name="abm_setautohidebar-message"></a>Mensaje \_ SETAUTOHIDEBAR de ABM
 
-Registra o anula el registro de un Appbar de ocultación para un borde determinado de la pantalla. Si el sistema tiene varios monitores, se utiliza el monitor que contiene la barra de tareas principal.
+Registra o anula el registro de una barra de aplicaciones de mostrar automáticamente para un borde determinado de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
 
 > [!Note]  
-> Para registrar o anular el registro de un Appbar de ocultación automáticamente en un monitor específico, use [**ABN \_ SETAUTOHIDEBAREX**](abm-setautohidebarex.md).
+> Para registrar o anular el registro de una barra de aplicaciones de autohide en un monitor específico, use [**ABM \_ SETAUTOHIDEBAREX**](abm-setautohidebarex.md).
 
  
 
@@ -43,17 +43,17 @@ fSuccess = (BOOL) SHAppBarMessage(ABM_SETAUTOHIDEBAR, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntero a una estructura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) . Establezca el miembro **lParam** en **true** para registrar el Appbar o **false** para anular su registro. Debe especificar los miembros **cbSize**, **hWnd**, **uEdge** y **lParam** al enviar este mensaje. se omiten todos los demás miembros.
+Puntero a una [**estructura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) Establezca el **miembro lParam** en **TRUE para** registrar la barra de aplicaciones o **FALSE** para anular el registro. Debe especificar los **miembros cbSize**, **hWnd,** **uEdge** y **lParam** al enviar este mensaje; se omiten todos los demás miembros.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** si se produce un error o si ya se ha registrado un Appbar de ocultación para el borde especificado.
+Devuelve **TRUE** si se realiza correctamente o **FALSE** si se produce un error o si ya se ha registrado una barra de aplicaciones de muestra automática para el borde dado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El sistema solo permite un Appbar de ocultación automáticamente para cada borde de la pantalla. Esto se determina cuando se establece el miembro **uEdge** de la estructura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) .
+El sistema solo permite mostrar automáticamente una barra de aplicaciones para cada borde de la pantalla. Esto se determina cuando se establece **el miembro uEdge** de [**la estructura APPBARDATA.**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ El sistema solo permite un Appbar de ocultación automáticamente para cada bord
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>ShellAPI. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 
 
 
@@ -71,13 +71,13 @@ El sistema solo permite un Appbar de ocultación automáticamente para cada bord
 
 <dl> <dt>
 
-[**ABN \_ SETAUTOHIDEBAR**](abm-getautohidebar.md)
+[**ABM \_ SETAUTOHIDEBAR**](abm-getautohidebar.md)
 </dt> <dt>
 
-[**ABN \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md)
+[**ABM \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md)
 </dt> <dt>
 
-[**ABN \_ SETAUTOHIDEBAREX**](abm-setautohidebarex.md)
+[**ABM \_ SETAUTOHIDEBAREX**](abm-setautohidebarex.md)
 </dt> </dl>
 
  

@@ -4,22 +4,22 @@ ms.assetid: e21ee6fd-6ecf-4cea-808d-3798b13f566c
 title: Interfaces de controlador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2acea727bf1e25f5162b8c3429f401767bb7e20f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3b137e101fe61e7f5c1b1b3ac23a3fa3e62adc04e58a5a70567619e6d0719fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657845"
 ---
 # <a name="driver-interfaces"></a>Interfaces de controlador
 
-Las siguientes interfaces solo las utiliza un controlador de dispositivos portátiles de Windows.
+Las interfaces siguientes solo las usa un controlador Windows dispositivos portátiles.
 
 
 
 | Interfaz                                | Descripción                                                                                                                                            |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IWpdSerializer**](iwpdserializer.md) | Lo utiliza el controlador de dispositivo para serializar las interfaces **IPortableDeviceValues** a y desde los búferes de datos sin procesar utilizados para comunicarse con la aplicación. |
+| [**IWpdSerializer**](iwpdserializer.md) | Usado por el controlador de dispositivo para serializar **interfaces IPortableDeviceValues** hacia y desde los búferes de datos sin procesar usados para comunicarse con la aplicación. |
 
 
 

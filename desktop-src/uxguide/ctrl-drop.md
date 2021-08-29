@@ -4,14 +4,14 @@ description: Con una lista desplegable o un cuadro combinado, los usuarios puede
 ms.assetid: dbe88cf1-7946-4343-bc16-ce12be7ce205
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: e74589da084a9f4c9f950336b3093452988052b57aba42e6a7a8f449f24a254f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79a50f4033223030fd135bb0fcfa247e07f0693d
+ms.sourcegitcommit: 0ab75073bbeec7ca2899f8051626a8b772073f82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966362"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122401008"
 ---
-# <a name="drop-down-lists--combo-boxes"></a>Listas desplegables de & combinados
+# <a name="drop-down-lists--combo-boxes"></a>Lista desplegable Enumera & combinados
 
 > [!NOTE]
 > Esta guía de diseño se creó para Windows 7 y no se ha actualizado para las versiones más recientes de Windows. Gran parte de las instrucciones se siguen aplicando en principio, pero la presentación y los ejemplos no reflejan nuestra [guía de diseño actual.](/windows/uwp/design/)
@@ -51,7 +51,7 @@ Para decidirte, intenta responder a estas preguntas:
 
     En este ejemplo, la calidad de color más alta es la mejor opción para la mayoría de los usuarios, por lo que una lista desplegable es una buena opción para bajar las alternativas.
 
--   **¿Desea llamar la atención sobre la opción?** Si es así, considere los botones de radio, una lista de selección única o un cuadro de lista editable, que tienden a llamar más la atención al tomar más espacio en la pantalla. Dado que las listas desplegables son compactas, son buenas opciones para las opciones que desea reducir el tamaño.
+-   **¿Desea llamar la atención sobre la opción?** Si es así, considere la posibilidad de usar botones de radio, una lista de selección única o un cuadro de lista editable, que tienden a llamar más la atención al tomar más espacio en la pantalla. Dado que las listas desplegables son compactas, son buenas opciones para las opciones que desea reducir el tamaño.
 -   **¿El espacio de pantalla es premium?** Si es así, use una lista desplegable porque el espacio de pantalla utilizado es fijo e independiente del número de opciones.
 -   **¿Hay otras listas desplegables en la ventana?** Si es así, considere la posibilidad de usar una lista desplegable para mantener la coherencia.
 
@@ -61,9 +61,9 @@ Además de los principios que se proporcionan para las listas desplegables, tamb
 
 -   **¿Están restringidas las posibles opciones?** Si es así, use una lista desplegable normal en su lugar. Los cuadros combinados son para la entrada sin restricciones, en la que es posible que los usuarios deban escribir un valor que no esté actualmente en la lista. Dado que la entrada no está entrenada, si los usuarios escriben texto que no es válido, debe controlar el error con un mensaje de error.
 -   **¿Puede enumerar las opciones más probables de antemano?** Si no es así, use un cuadro de texto en su lugar.
--   **¿Se usa la lista desplegable para enumerar la entrada del usuario anterior?** A menos que los usuarios necesiten revisar la lista completa de la entrada anterior, use un cuadro de texto con la opción autocompletar en su lugar.
+-   **¿Se usa la lista desplegable para enumerar la entrada de usuario anterior?** A menos que los usuarios necesiten revisar la lista completa de la entrada anterior, use un cuadro de texto con la opción autocompletar en su lugar.
 
-    ![captura de pantalla del cuadro de diálogo ejecutar con la lista desplegable ](images/ctrl-drop-image3.png)
+    ![captura de pantalla del cuadro de diálogo ejecutar con lista desplegable ](images/ctrl-drop-image3.png)
 
     En este ejemplo, es posible que los usuarios deban revisar su entrada anterior, por lo que una lista desplegable editable es una buena opción.
 
@@ -98,10 +98,10 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
 |   Uso     |    Ejemplo   |
 |-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Lista desplegable una** lista desplegable estándar, con un conjunto fijo de valores predeterminados. <br/>                                 | cuando se cierra, solo está visible el elemento seleccionado. Cuando los usuarios hacen clic en el botón desplegable, todas las opciones se vuelven visibles. Para cambiar el valor, los usuarios abren la lista y hacen clic en otro valor.<br/> ![captura de pantalla de la lista desplegable, opciones ocultas ](images/ctrl-drop-image6.png)<br/> en este ejemplo, la lista está en su estado normal.<br/> ![captura de pantalla de la lista desplegable, se muestran las opciones ](images/ctrl-drop-image7.png)<br/> En este ejemplo, se ha descartado la lista.<br/> |
+| **Lista desplegable una** lista desplegable estándar, con un conjunto fijo de valores predeterminados. <br/>                                 | Cuando se cierra, solo está visible el elemento seleccionado. Cuando los usuarios hacen clic en el botón desplegable, todas las opciones se vuelven visibles. Para cambiar el valor, los usuarios pueden abrir la lista y hacer clic en otro valor.<br/> ![captura de pantalla de la lista desplegable, opciones ocultas ](images/ctrl-drop-image6.png)<br/> En este ejemplo, la lista está en su estado normal.<br/> ![captura de pantalla de la lista desplegable, se muestran las opciones ](images/ctrl-drop-image7.png)<br/> En este ejemplo, se ha descartado la lista.<br/> |
 | **Lista desplegable vista previa:** lista desplegable que muestra una vista previa de los resultados de la selección para ayudar a los usuarios a elegir.<br/>             | ![captura de pantalla de opciones de color y texto ](images/ctrl-drop-image8.png)<br/> En estos ejemplos, la lista desplegable muestra una vista previa de los resultados de la selección.<br/>                                                                                                                                                                                                                                                                                                                                           |
-| **Lista desplegable editable de** un cuadro combinado desplegable, que permite a los usuarios escribir un valor que no está en la lista desplegable.<br/> | ![aa511458.dropdownlists27(en-us,msdn.10).png](images/ctrl-drop-image9.png)![captura de pantalla del cuadro combinado de tamaño de fuente editable ](images/ctrl-drop-image10.png)<br/> Ejemplos de una lista desplegable modificable en los modos de edición y desplegable.<br/> Use este control cuando desee proporcionar la flexibilidad de un cuadro de texto, pero quiere ayudar a los usuarios proporcionando una lista cómoda de opciones probables.<br/>                                                                                                   |
-| **Cuadros de lista** editables: un cuadro combinado normal, que permite a los usuarios escribir un valor que no está en la lista siempre visible. <br/> | ![captura de pantalla de la lista desplegable de opciones de fuente ](images/ctrl-drop-image11.png)<br/> En estos ejemplos, siempre se muestran los cuadros de lista editables.<br/> Este control es una opción mejor que la lista desplegable editable cuando es importante animar a los usuarios a revisar las opciones alternativas o invitar a un cambio.<br/>                                                                                                                                                                      |
+| **Lista desplegable editable:** un cuadro combinado desplegable, que permite a los usuarios escribir un valor que no está en la lista desplegable.<br/> | ![aa511458.dropdownlists27(en-us,msdn.10).png](images/ctrl-drop-image9.png)![captura de pantalla del cuadro combinado de tamaño de fuente editable ](images/ctrl-drop-image10.png)<br/> Ejemplos de una lista desplegable editable en los modos de edición y lista desplegable.<br/> Use este control cuando quiera proporcionar la flexibilidad de un cuadro de texto, pero quiera ayudar a los usuarios proporcionando una lista práctica de opciones probables.<br/>                                                                                                   |
+| **La lista editable incluye** un cuadro combinado normal, que permite a los usuarios escribir un valor que no está en la lista siempre visible. <br/> | ![captura de pantalla de la lista desplegable de opciones de fuente ](images/ctrl-drop-image11.png)<br/> En estos ejemplos, siempre se muestran los cuadros de lista editables.<br/> Este control es una mejor opción que la lista desplegable editable cuando es importante animar a los usuarios a revisar las opciones alternativas o invitar a cambios.<br/>                                                                                                                                                                      |
 
 
 
@@ -111,14 +111,14 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
 ### <a name="general"></a>General
 
--   **No use el cambio de una lista** desplegable o un cuadro combinado a :
+-   **No use el cambio de una lista desplegable o** un cuadro combinado a :
     -   Realice comandos.
     -   Mostrar otras ventanas, como un cuadro de diálogo para recopilar más entradas.
-    -   Mostrar dinámicamente otros controles relacionados con el control seleccionado (los lectores[de](inter-accessibility.md) pantalla no pueden detectar estos eventos).
+    -   Mostrar dinámicamente otros controles relacionados con el control seleccionado[(los](inter-accessibility.md) lectores de pantalla no pueden detectar tales eventos).
 
 ### <a name="presentation"></a>Presentación
 
--   **Ordenar los elementos de la** lista en un orden lógico, como agrupar opciones muy relacionadas, colocar primero las opciones más comunes o usar el orden alfabético. Ordene los nombres en orden alfabético, los números en orden numérico y las fechas en orden cronológico. Las listas con 12 o más elementos deben ordenarse alfabéticamente para facilitar la búsqueda de elementos.
+-   **Ordenar elementos de lista en un orden lógico,** como agrupar opciones muy relacionadas, colocar primero las opciones más comunes o usar el orden alfabético. Ordene los nombres en orden alfabético, los números en orden numérico y las fechas en orden cronológico. Las listas con 12 o más elementos deben ordenarse alfabéticamente para facilitar la búsqueda de elementos.
 
     **Correcto:** ![ captura de pantalla de la lista desplegable lógica ](images/ctrl-drop-image12.png)
 
@@ -130,10 +130,10 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
     **Correcto:** ![ captura de pantalla de la lista desplegable alfabética ](images/ctrl-drop-image14.png)
 
-    En este ejemplo, los elementos de lista se ordenan en orden alfabético, excepto en la opción que representa todos los elementos.
+    En este ejemplo, los elementos de lista se ordenan en orden alfabético, excepto la opción que representa todos los elementos.
 
 -   **Coloque las opciones que representan Todos o Ninguno al principio de la lista, independientemente del criterio de ordenación de los elementos restantes.**
--   **Incluya las metapórtamos entre paréntesis.**
+-   **Incluya las meta-opciones entre paréntesis.**
 
     ![Captura de pantalla que muestra una lista desplegable con la opción "(None)" seleccionada.](images/ctrl-drop-image15.png)
 
@@ -143,14 +143,14 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
 ### <a name="drop-down-lists"></a>Listas desplegables
 
--   Cuando se usa una única lista desplegable para cambiar la vista de un control asociado, cambie la vista inmediatamente después de la selección en lugar de requerir un **botón de comando independiente.** Use un botón de comando independiente solo si la lista tarda una cantidad significativa de tiempo en representarse. Sin embargo, los encabezados de [lista y los](ctrl-command-buttons.md) botones de menú son los controles preferidos para este propósito.
--   **No tiene elementos de lista en blanco que** usen **meta-options en su lugar.** Los usuarios no saben cómo interpretar los elementos en blanco, mientras que el significado de las meta-opciones es explícito.
+-   Cuando se usa una sola lista desplegable para cambiar la vista de un control asociado, cambie la vista inmediatamente después de la selección en lugar de requerir un **botón de comando independiente.** Use un botón de comando independiente solo si la lista tarda una cantidad significativa de tiempo en representarse. Sin embargo, los encabezados de lista [y los botones de](ctrl-command-buttons.md) menú son los controles preferidos para este propósito.
+-   **No tiene elementos de lista en blanco que** usen **metapádes en su lugar.** Los usuarios no saben cómo interpretar elementos en blanco, mientras que el significado de las meta-opciones es explícito.
 
-    **Correcto:** ![ captura de pantalla de la lista desplegable sin ninguna seleccionada ](images/ctrl-drop-image16.png)
+    **Correcto:** ![ captura de pantalla de la lista desplegable con ninguna seleccionada ](images/ctrl-drop-image16.png)
 
     **Incorrecto:** ![ captura de pantalla de la lista desplegable con el espacio en blanco seleccionado ](images/ctrl-drop-image17.png)
 
-    En el ejemplo incorrecto, el significado de la opción en blanco no está claro.
+    En el ejemplo incorrecto, el significado de la opción en blanco no es claro.
 
 ### <a name="preview-drop-down-lists"></a>Listas desplegables de vista previa
 
@@ -158,9 +158,9 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
     ![captura de pantalla de la lista desplegable de fuentes vista previa ](images/ctrl-drop-image18.png)
 
-    En este ejemplo, la versión preliminar explica las opciones mucho mejor que el texto por sí sola.
+    En este ejemplo, la versión preliminar explica las opciones mucho mejor que el texto por sí solo.
 
--   **No use iconos innecesarios y poco útiles en las versiones preliminares**.
+-   **No use iconos innecesarios y poco útiles en las versiones preliminares.**
 
     **Incorrecto:** ![ captura de pantalla de la lista desplegable de etiquetas con iconos ](images/ctrl-drop-image19.png)
 
@@ -177,8 +177,8 @@ Las listas desplegables y los cuadros combinados tienen varios patrones de uso:
 
 ### <a name="default-values"></a>Valores predeterminados
 
--   **Seleccione la opción más segura (para evitar la pérdida de datos o acceso al sistema) y la opción más segura de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione la opción más probable o conveniente.
-    -   **Excepción:** Muestra un valor predeterminado en blanco si el control representa una propiedad en un estado mixto [,](glossary.md)lo que ocurre al mostrar una propiedad para varios objetos que no tienen la misma configuración.
+-   **Seleccione la opción más segura (para evitar la pérdida de datos o el acceso del sistema) y la opción más segura de forma predeterminada.** Si la seguridad y la seguridad no son factores, seleccione la opción más probable o conveniente.
+    -   **Excepción:** Muestra un valor predeterminado en blanco si el control representa una propiedad en un estado mixto [,](glossary.md)lo que sucede cuando se muestra una propiedad para varios objetos que no tienen la misma configuración.
 
 ## <a name="prompts"></a>Mensajes
 
@@ -191,23 +191,23 @@ Un aviso típico.
 Use un símbolo del sistema cuando:
 
 -   El espacio de pantalla es tan premium que no se desea usar una etiqueta o una instrucción, como en una barra de herramientas.
--   El aviso es principalmente para identificar el propósito de la lista de una manera compacta. No debe ser información fundamental que los usuarios necesiten ver al usar el cuadro combinado.
+-   El aviso es principalmente para identificar el propósito de la lista de una manera compacta. No debe ser información fundamental que los usuarios necesiten ver mientras usan el cuadro combinado.
 
-No use mensajes solo para dirigir a los usuarios a seleccionar algo de la lista o para hacer clic en los botones. Por ejemplo, los mensajes como Seleccionar una opción o Escribir un nombre de archivo y, a continuación, haga clic en Enviar no son necesarios.
+No use mensajes solo para dirigir a los usuarios a seleccionar algo de la lista o para hacer clic en los botones. Por ejemplo, no es necesario seleccionar una opción o escribir un nombre de archivo y, a continuación, hacer clic en Enviar.
 
 Al usar avisos:
 
--   Dibuje el texto del símbolo del sistema en gris cursiva y texto real en negro normal. El texto del mensaje no debe confundirse con texto real.
+-   Dibuje el texto del aviso en gris cursiva y texto real en negro normal. El texto del aviso no debe confundirse con el texto real.
 -   Mantenga el texto del aviso conciso. Puede usar fragmentos en lugar de oraciones completa.
--   Use [mayúsculas y mayúsculas de estilo oración.](glossary.md)
+-   Use [mayúsculas de estilo oración.](glossary.md)
 -   No use signos de puntuación finales ni puntos suspensivos.
--   El texto del mensaje no debe ser editable y debe desaparecer una vez que los usuarios hacen clic en el cuadro de texto o se les tabula.
+-   El texto del mensaje no debe ser editable y debe desaparecer una vez que los usuarios hacen clic en el cuadro de texto o se tabulan en él.
     -   **Excepción:** El mensaje se muestra si el cuadro de texto tiene el foco de entrada predeterminado y solo desaparece una vez que el usuario empieza a escribir.
 -   El texto del mensaje se restaura si el cuadro de texto sigue vacío cuando pierde el foco de entrada.
 
 **Incorrecto:** ![ captura de pantalla de seis listas desplegables editables](images/ctrl-drop-image21.png)
 
-En este ejemplo, el espacio de pantalla no es premium; Una vez que se rellena una lista desplegable modificable, es difícil que los usuarios recuerden para qué se trata. y el texto del aviso se puede editar y dibujar de la misma manera que el texto real.
+En este ejemplo, el espacio de la pantalla no es premium; Una vez que se rellena una lista desplegable editable, es difícil que los usuarios recuerden para qué es. y el texto del símbolo del sistema se puede editar y dibujar de la misma manera que el texto real.
 
 ## <a name="recommended-sizing-and-spacing"></a>Tamaño y espaciado recomendados
 
@@ -216,21 +216,21 @@ En este ejemplo, el espacio de pantalla no es premium; Una vez que se rellena un
 Tamaño y espaciado recomendados para listas desplegables y cuadros combinados.
 
 -   **Elija un ancho adecuado para los datos válidos más largos.** Las listas desplegables no se pueden desplazar horizontalmente, por lo que los usuarios solo pueden ver lo que está visible en el control. (Tenga en cuenta, sin embargo, que los cuadros combinados pueden tener habilitada la funcionalidad AutoScroll).
--   **Incluya un 30** % adicional (hasta un 200 % para el texto más corto) para cualquier texto (pero no números) que se localizará.
+-   **Incluya un 30 %** adicional (hasta un 200 % para texto más corto) para cualquier texto (pero no números) que se localizará.
 -   **Elija una longitud de lista que elimine el desplazamiento vertical innecesario.** Dado que las listas desplegables se muestran a petición, sus listas deben mostrar hasta 30 elementos. Los cuadros de lista editables (aquellos que no tienen un botón desplegable) deben mostrar entre 3 y 12 elementos.
 
 ## <a name="labels"></a>Etiquetas
 
 **Etiquetas de control**
 
--   Escriba la etiqueta como una palabra o frase, no como una frase, y conséctela con dos puntos. **Excepciones:**
+-   Escriba la etiqueta como una palabra o frase, no como una frase, y termine con dos puntos. **Excepciones:**
     -   Listas desplegables editables con avisos ubicados donde el espacio es premium.
-    -   Si una lista desplegable o un cuadro combinado están subordinados a un botón de radio o a una casilla y su etiqueta termina con dos puntos, no coloque una etiqueta adicional en el control.
+    -   Si una lista desplegable o un cuadro combinado están subordinados a un botón de radio o a una casilla y su etiqueta termina con dos puntos, no coloque ninguna etiqueta adicional en el control.
 -   Asigne una clave [de acceso única](glossary.md) para cada etiqueta. Para obtener instrucciones, vea [Teclado.](inter-keyboard.md)
--   Use [mayúsculas y mayúsculas de estilo oración.](glossary.md)
+-   Use [mayúsculas de estilo oración.](glossary.md)
 -   Coloque la etiqueta a la izquierda del control o encima del control y alinee la etiqueta con el borde izquierdo del control. Si label está a la izquierda, alinee verticalmente el texto de la etiqueta con el texto del control.
 
-    **Correcto:** ![ captura de pantalla de la alineación de la etiqueta de lista desplegable ](images/ctrl-drop-image23.png)
+    **Correcto:** ![ captura de pantalla de alineación de etiquetas de lista desplegable ](images/ctrl-drop-image23.png)
 
     En este ejemplo, la etiqueta se alinea correctamente con el texto del control.
 
@@ -238,21 +238,21 @@ Tamaño y espaciado recomendados para listas desplegables y cuadros combinados.
 
     En este ejemplo, la etiqueta está alineada incorrectamente con el texto del control.
 
--   Puede especificar unidades (segundos, conexiones, entre paréntesis después de la etiqueta).
--   No haga que el contenido de la lista desplegable o el cuadro combinado (o su etiqueta de unidades) forma parte de una oración, porque esto no es localizable.
+-   Puede especificar unidades (segundos, conexiones, entre paréntesis) después de la etiqueta.
+-   No haga que el contenido de la lista desplegable o el cuadro combinado (o su etiqueta de unidades) sea parte de una oración, porque esto no es localizable.
 
 **Texto de la opción**
 
 -   Asigne un nombre único a cada opción.
--   Use [mayúsculas y mayúsculas de estilo](glossary.md)oración, a menos que un elemento sea un nombre adecuado.
+-   Use [mayúsculas de estilo oración,](glossary.md)a menos que un elemento sea un nombre adecuado.
 -   Escriba la etiqueta como una palabra o frase, no como una frase, y no use ningún signo de puntuación final.
 -   Use expresiones paralelas e intente mantener la longitud aproximadamente igual para todas las opciones.
 
 **Texto informativo**
 
--   Si necesita agregar texto informativo sobre una lista desplegable o un cuadro combinado, agrégrelo encima de la etiqueta. Use oraciones completas con signos de puntuación finales.
--   Use [mayúsculas y mayúsculas de estilo oración.](glossary.md)
--   La información adicional que es útil, pero no necesaria, debe mantenerse corta. Coloque esta información entre paréntesis entre la etiqueta y los dos puntos, o sin paréntesis debajo del control .
+-   Si necesita agregar texto informativo sobre una lista desplegable o un cuadro combinado, agrégrelo encima de la etiqueta. Use oraciones completas con puntuación final.
+-   Use [mayúsculas de estilo oración.](glossary.md)
+-   La información adicional que resulta útil, pero no necesaria, debe mantenerse corta. Coloque esta información entre paréntesis entre la etiqueta y los dos puntos, o sin paréntesis debajo del control .
 
     ![captura de pantalla de la lista desplegable con datos agregados ](images/ctrl-drop-image25.png)
 
@@ -262,8 +262,8 @@ Tamaño y espaciado recomendados para listas desplegables y cuadros combinados.
 
 Al hacer referencia a listas desplegables:
 
--   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado ni los dos puntos de la clave de acceso. incluir lista o cuadro, lo que sea más claro.
--   Para las opciones de lista, use el texto exacto de la opción, incluida su inclusión en mayúsculas.
+-   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado o dos puntos de la clave de acceso; incluir lista o cuadro, lo que sea más claro.
+-   Para las opciones de lista, use el texto exacto de la opción, incluida su mayúscula.
 -   En programación y otra documentación técnica, consulte listas desplegables como listas desplegables. En cualquier otro lugar, use list o box, lo que sea más claro.
 -   Para describir la interacción del usuario, use click.
 -   Cuando sea posible, formatee las opciones de etiqueta y lista mediante texto en negrita. De lo contrario, coloque la etiqueta y las opciones entre comillas solo si es necesario para evitar confusiones.
@@ -272,8 +272,8 @@ Ejemplo: en la **lista Tamaño de** fuente , haga clic en Fuentes **grandes.**
 
 Al hacer referencia a cuadros combinados:
 
--   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado ni los dos puntos de la clave de acceso. incluya el cuadro de palabras.
--   Para las opciones de lista, use el texto exacto de la opción, incluido su uso de mayúsculas y mayúsculas.
+-   Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya el carácter de subrayado o dos puntos de la clave de acceso; incluir el cuadro de palabras.
+-   Para las opciones de lista, use el texto exacto de la opción, incluida su mayúscula.
 -   En programación y otra documentación técnica, consulte cuadros combinados como cuadros combinados. En cualquier otro lugar, use box.
 -   Para describir la interacción del usuario, use Entrar.
 -   Cuando sea posible, formatee las opciones de etiqueta y lista mediante texto en negrita. De lo contrario, coloque la etiqueta y las opciones entre comillas solo si es necesario para evitar confusiones.

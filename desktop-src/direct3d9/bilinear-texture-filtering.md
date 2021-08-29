@@ -1,31 +1,31 @@
 ---
-description: Las texturas siempre se dirigen linealmente desde (0,0, 0,0) en la esquina superior izquierda a (1,0, 1,0) en la esquina inferior derecha, tal como se muestra en la siguiente ilustración.
+description: Las texturas siempre se abordan linealmente desde (0,0, 0,0) en la esquina superior izquierda hasta (1,0, 1,0) en la esquina inferior derecha, como se muestra en la ilustración siguiente.
 ms.assetid: 16fb04b9-4476-4dbe-a24f-51c0813a7917
 title: Filtrado de textura bilineal (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f51213e5187c775963de2fa740847d55084c5be2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1a1a4d6cefe6586511e0483c2afa7b03e94aeda58ef7960c411b90e9c6a7792a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565281"
 ---
 # <a name="bilinear-texture-filtering-direct3d-9"></a>Filtrado de textura bilineal (Direct3D 9)
 
-Las texturas siempre se dirigen linealmente desde (0,0, 0,0) en la esquina superior izquierda a (1,0, 1,0) en la esquina inferior derecha, tal como se muestra en la siguiente ilustración.
+Las texturas siempre se abordan linealmente desde (0,0, 0,0) en la esquina superior izquierda hasta (1,0, 1,0) en la esquina inferior derecha, como se muestra en la ilustración siguiente.
 
-![Ilustración de textura 4x4 con bloques sólidos de color](images/bilinear-fig7a.png)
+![ilustración de textura 4x4 con bloques sólidos de color](images/bilinear-fig7a.png)
 
-Normalmente, las texturas se representan como si estuviesen compuestas de bloques sólidos de color, pero es realmente más correcto pensar en las texturas de la misma manera que debería pensar en la presentación de trama: cada textura se define en el centro exacto de una celda de la cuadrícula, como se muestra en la siguiente ilustración.
+Las texturas normalmente se representan como si estuvieran compuestas de bloques sólidos de color, pero en realidad es más correcto pensar en texturas de la misma manera que debería pensar en la presentación de trama: cada texel se define en el centro exacto de una celda de cuadrícula, como se muestra en la ilustración siguiente.
 
-![Ilustración de textura 4x4 con textura definidos en el centro de las celdas de la cuadrícula](images/bilinear-fig7b.png)
+![ilustración de textura 4x4 con elementos de textura definidos en el centro de las celdas de cuadrícula](images/bilinear-fig7b.png)
 
-Si pide al muestrario de texturas el color de esta textura en coordenadas UV (0,375, 0,375), obtendrá rojo sólido (255, 0,0). Esto resulta perfecto porque el centro exacto de la celda textura roja está en UV (0,375, 0,375). ¿Qué ocurre si pide al muestreador el color de la textura en UV (0,25, 0,25)? Eso no es tan fácil, porque el punto en UV (0,25, 0,25) se encuentra en la esquina exacta de 4 textura.
+Si le pide al muestreador de textura el color de esta textura en coordenadas UV (0,375, 0,375), tendrá un rojo sólido (255, 0, 0). Esto tiene sentido porque el centro exacto de la celda de texel rojo está en UV (0,375, 0,375). ¿Qué ocurre si pide al muestreador el color de la textura en UV (0,25, 0,25)? Esto no es tan fácil, ya que el punto de UV (0,25, 0,25) se encuentra en la esquina exacta de 4 elementos de textura.
 
-El esquema más sencillo es simplemente hacer que la muestra devuelva el color del textura más cercano; Esto se conoce como filtrado de puntos (vea el [muestreo de punto más cercano (Direct3D 9)](nearest-point-sampling.md)) y normalmente no es deseable debido a resultados granulares o bloqueados. Muestreo de puntos nuestra textura en UV (0,25, 0,25) muestra otro problema sutil con filtrado de punto más cercano: hay cuatro textura equidistantes desde el punto de muestreo, por lo que no hay una sola textura más cercana. Una de esas cuatro textura se elegirá como el color devuelto, pero la selección depende de cómo se redondee la coordenada, lo que puede producir artefactos de desgarro (vea el artículo de muestreo de Nearest-Point en el SDK).
+El esquema más sencillo es simplemente hacer que el muestreador devuelva el color del elemento de textura más cercano; esto se denomina Filtrado de puntos (consulte Muestreo de punto más cercano [(Direct3D 9) )](nearest-point-sampling.md)y normalmente no se desea debido a resultados de grano o bloques. El muestreo de punto de nuestra textura en UV (0,25, 0,25) muestra otro problema sutil con el filtrado de punto más cercano: hay cuatro elementos de textura equidistantes desde el punto de muestreo, por lo que no hay ningún único texel más cercano. Uno de esos cuatro elementos de textura se elegirá como color devuelto, pero la selección depende de cómo se redondee la coordenada, lo que puede introducir artefactos de desmontaje (consulte el artículo muestreo de Nearest-Point en el SDK).
 
-Un esquema de filtrado ligeramente más preciso y más común consiste en calcular el promedio ponderado de 4 textura más cercano al punto de muestreo; Esto se denomina filtrado bilineal y el costo computacional adicional suele ser insignificante, ya que esta rutina se implementa en el hardware de gráficos moderno. Estos son los colores que obtenemos en algunos puntos de ejemplo diferentes mediante el filtrado bilineal:
+Un esquema de filtrado ligeramente más preciso y más común es calcular la media ponderada de los 4 elementos de textura más cercanos al punto de muestreo. Esto se denomina filtrado bilineal y el costo de cálculo adicional suele ser insignificante porque esta rutina se implementa en hardware gráfico moderno. Estos son los colores que se obtienen en algunos puntos de ejemplo diferentes mediante el filtrado bilineal:
 
 
 ```
@@ -34,7 +34,7 @@ UV: (0.5, 0.5)
 
 
 
-Este punto se encuentra en el borde exacto entre el textura rojo, verde, azul y blanco. El color que devuelve el muestreador es gris:
+Este punto se encuentra en el borde exacto entre los elementos de textura rojo, verde, azul y blanco. El color que devuelve el muestreador es gris:
 
 
 ```
@@ -55,7 +55,7 @@ UV: (0.5, 0.375)
 
 
 
-Este punto está en el punto medio del borde entre el textura rojo y el verde. El color que devuelve la muestra es amarillo-gris (tenga en cuenta que las contribuciones del textura azul y blanco se escalan a 0):
+Este punto está en el punto medio del borde entre los elementos de textura rojo y verde. El color que devuelve el muestreador es amarillo-gris (tenga en cuenta que las contribuciones de los elementos de textura azul y blanco se escalan a 0):
 
 
 ```
@@ -76,7 +76,7 @@ UV: (0.375, 0.375)
 
 
 
-Se trata de la dirección del textura rojo, que es el color devuelto (el resto de textura en el cálculo de filtrado se pondera en 0):
+Esta es la dirección del texel rojo, que es el color devuelto (todos los demás elementos de textura del cálculo de filtrado se ponderan en 0):
 
 
 ```
@@ -90,15 +90,15 @@ Se trata de la dirección del textura rojo, que es el color devuelto (el resto d
 
 
 
-Compare estos cálculos con la siguiente ilustración, que muestra lo que sucede si se realiza el cálculo de filtrado bilineal en cada dirección de textura a través de la textura 4x4.
+Compare estos cálculos con la ilustración siguiente, que muestra lo que sucede si el cálculo de filtrado bilineal se realiza en cada dirección de textura en la textura 4x4.
 
-![Ilustración de textura 4x4 con filtrado bilineal realizado en cada dirección de textura](images/bilinear-fig7c.jpg)
+![ilustración de textura 4x4 con filtrado bilineal realizado en cada dirección de textura](images/bilinear-fig7c.jpg)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Filtrado de textura](texture-filtering.md)
+[Filtrado de texturas](texture-filtering.md)
 </dt> </dl>
 
  

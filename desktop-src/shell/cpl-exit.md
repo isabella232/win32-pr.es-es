@@ -1,19 +1,19 @@
 ---
-description: Se envía una vez a la función CPlApplet de una aplicación del panel de control antes de que se libere el archivo DLL que contiene la aplicación del panel de control.
+description: Se envía una vez a la función CPlApplet de una Panel de control antes de que se libera el archivo DLL que Panel de control aplicación.
 ms.assetid: 1afcb0d3-41a7-4fd8-9561-d96e1e8f0ddb
-title: Mensaje de CPL_EXIT (CPL. h)
+title: CPL_EXIT mensaje (Cpl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0adea6c4b05ee752829634f7478df2ac651e69f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9007c05de134b32e3c4dfd7b256f2392f547d298b2d654dddc256b6ed711bb9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715607"
 ---
-# <a name="cpl_exit-message"></a>CPL \_ mensaje de salida
+# <a name="cpl_exit-message"></a>Mensaje exit de CPL \_
 
-Se envía una vez a la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) de una aplicación del panel de control antes de que se libere el archivo DLL que contiene la aplicación del panel de control.
+Se envía una vez a [**la función CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) de una Panel de control antes de que se haya publicado el archivo DLL Panel de control aplicación.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -27,13 +27,13 @@ Se envía una vez a la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-ap
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) procesa este mensaje correctamente, debe devolver cero.
+Si la [**función CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) procesa este mensaje correctamente, debe devolver cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje se envía después de enviar el último mensaje de [**\_ detención de CPL**](cpl-stop.md) .
+Este mensaje se envía después de enviar el último mensaje STOP de [**CPL. \_**](cpl-stop.md)
 
-En respuesta a este mensaje, una aplicación del panel de control debe liberar cualquier memoria que haya asignado y realizar la limpieza de nivel global.
+En respuesta a este mensaje, una Panel de control debe liberar toda la memoria que haya asignado y realizar una limpieza de nivel global.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ En respuesta a este mensaje, una aplicación del panel de control debe liberar c
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                      |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                      |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>CPL. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Cpl.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ntdll.dll
 - ntoskrnl.exe
-ms.openlocfilehash: 7972d3d2e6b98f56829680dd77c4c0a97b51679ffb2d9cfef928d4a279f6b7f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af47ecbe69c4c0449cf6e3282e0992e8a513b5a0
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117792919"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480881"
 ---
 # <a name="zwqueryinformationprocess-function"></a>Función ZwQueryInformationProcess
 
@@ -60,48 +60,16 @@ Tipo de información de proceso que se va a recuperar. Este parámetro puede ser
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Significado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="ProcessBasicInformation"></span><span id="processbasicinformation"></span><span id="PROCESSBASICINFORMATION"></span><dl> <dt><strong>ProcessBasicInformation</strong></dt> <dt>0</dt> </dl></td>
-<td>Recupera un puntero a una estructura PEB que se puede usar para determinar si se está depurando el proceso especificado y un valor único utilizado por el sistema para identificar el proceso especificado. <br/> Es mejor usar las <a href="/windows/desktop/api/debugapi/nf-debugapi-checkremotedebuggerpresent"><strong>funciones CheckRemoteDebuggerPresent</strong></a> y <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocessid"><strong>GetProcessId</strong></a> para obtener esta información.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="ProcessDebugPort"></span><span id="processdebugport"></span><span id="PROCESSDEBUGPORT"></span><dl> <dt><strong>ProcessDebugPort</strong></dt> <dt>7</dt> </dl></td>
-<td>Recupera un valor <strong>DWORD_PTR</strong> que es el número de puerto del depurador para el proceso. Un valor distinto de cero indica que el proceso se ejecuta bajo el control de un depurador de anillo 3.<br/> Es mejor usar la <a href="/windows/desktop/api/debugapi/nf-debugapi-checkremotedebuggerpresent"><strong>función CheckRemoteDebuggerPresent</strong></a> <a href="/windows/desktop/api/debugapi/nf-debugapi-isdebuggerpresent"><strong>o IsDebuggerPresent.</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><span id="ProcessWow64Information"></span><span id="processwow64information"></span><span id="PROCESSWOW64INFORMATION"></span><dl> <dt><strong>ProcessWow64Information</strong></dt> <dt>26</dt> </dl></td>
-<td>Determina si el proceso se ejecuta en el entorno WOW64 (WOW64 es el emulador x86 que permite que las aplicaciones basadas en Win32 se ejecuten en aplicaciones de 64 Windows).<br/> Es mejor usar la <a href="/windows/desktop/api/wow64apiset/nf-wow64apiset-iswow64process"><strong>función IsWow64Process</strong></a> para obtener esta información.<br/></td>
-</tr>
-<tr class="even">
-<td><span id="ProcessImageFileName"></span><span id="processimagefilename"></span><span id="PROCESSIMAGEFILENAME"></span><dl> <dt><strong>ProcessImageFileName</strong></dt> <dt>27</dt> </dl></td>
-<td>Recupera un <strong>UNICODE_STRING</strong> que contiene el nombre del archivo de imagen para el proceso.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="ProcessBreakOnTermination"></span><span id="processbreakontermination"></span><span id="PROCESSBREAKONTERMINATION"></span><dl> <dt><strong>ProcessBreakOnTermination</strong></dt> <dt>29</dt> </dl></td>
-<td>Recupera un valor <strong>ULONG</strong> que indica si el proceso se considera crítico.<br/>
-<blockquote>
-[!Note]<br />
-Este valor se puede usar a partir de Windows XP con SP3. A partir Windows 8.1, se debe usar <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-isprocesscritical"><strong>IsProcessCritical</strong></a> en su lugar.
-</blockquote>
-<br/></td>
-</tr><tr class="even">
-<td><span id="ProcessProtectionInformation"></span><span id="processprotectioninformation"></span><span id="PROCESSPROTECTIONINFORMATION"></span><dl> <dt><strong>ProcessProtectionInformation</strong></dt> <dt>61</dt> </dl></td>
-<td>Recupera un valor BYTE que indica el tipo de proceso protegido y el firmante del proceso protegido.<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Valor | Significado | 
+|-------|---------|
+| <span id="ProcessBasicInformation"></span><span id="processbasicinformation"></span><span id="PROCESSBASICINFORMATION"></span><dl><dt><strong>ProcessBasicInformation</strong></dt><dt>0</dt></dl> | Recupera un puntero a una estructura PEB que se puede usar para determinar si se está depurando el proceso especificado y un valor único utilizado por el sistema para identificar el proceso especificado. <br /> Es mejor usar las <a href="/windows/desktop/api/debugapi/nf-debugapi-checkremotedebuggerpresent"><strong>funciones CheckRemoteDebuggerPresent</strong></a> y <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocessid"><strong>GetProcessId</strong></a> para obtener esta información.<br /> | 
+| <span id="ProcessDebugPort"></span><span id="processdebugport"></span><span id="PROCESSDEBUGPORT"></span><dl><dt><strong>ProcessDebugPort</strong></dt><dt>7</dt></dl> | Recupera un <strong>DWORD_PTR</strong> que es el número de puerto del depurador para el proceso. Un valor distinto de cero indica que el proceso se ejecuta bajo el control de un depurador de anillo 3.<br /> Es mejor usar la <a href="/windows/desktop/api/debugapi/nf-debugapi-checkremotedebuggerpresent"><strong>función CheckRemoteDebuggerPresent</strong></a> <a href="/windows/desktop/api/debugapi/nf-debugapi-isdebuggerpresent"><strong>o IsDebuggerPresent.</strong></a><br /> | 
+| <span id="ProcessWow64Information"></span><span id="processwow64information"></span><span id="PROCESSWOW64INFORMATION"></span><dl><dt><strong>ProcessWow64Information</strong></dt><dt>26</dt></dl> | Determina si el proceso se ejecuta en el entorno WOW64 (WOW64 es el emulador x86 que permite que las aplicaciones basadas en Win32 se ejecuten en aplicaciones de 64 Windows).<br /> Es mejor usar la <a href="/windows/desktop/api/wow64apiset/nf-wow64apiset-iswow64process"><strong>función IsWow64Process</strong></a> para obtener esta información.<br /> | 
+| <span id="ProcessImageFileName"></span><span id="processimagefilename"></span><span id="PROCESSIMAGEFILENAME"></span><dl><dt><strong>ProcessImageFileName</strong></dt><dt>27</dt></dl> | Recupera un valor <strong>UNICODE_STRING</strong> que contiene el nombre del archivo de imagen para el proceso.<br /> | 
+| <span id="ProcessBreakOnTermination"></span><span id="processbreakontermination"></span><span id="PROCESSBREAKONTERMINATION"></span><dl><dt><strong>ProcessBreakOnTermination</strong></dt><dt>29</dt></dl> | Recupera un valor <strong>ULONG</strong> que indica si el proceso se considera crítico.<br /><blockquote>[!Note]<br />Este valor se puede usar a partir de Windows XP con SP3. A partir Windows 8.1, se debe usar <a href="/windows/desktop/api/processthreadsapi/nf-processthreadsapi-isprocesscritical"><strong>IsProcessCritical</strong></a> en su lugar.</blockquote><br /> | 
+| <span id="ProcessProtectionInformation"></span><span id="processprotectioninformation"></span><span id="PROCESSPROTECTIONINFORMATION"></span><dl><dt><strong>ProcessProtectionInformation</strong></dt><dt>61</dt></dl> | Recupera un valor BYTE que indica el tipo de proceso protegido y el firmante del proceso protegido.<br /> | 
+
 
 
 
@@ -142,7 +110,7 @@ Los demás miembros de esta estructura están reservados para su uso interno por
 <span id="ULONG_PTR"></span><span id="ulong_ptr"></span>ULONG \_ PTR
 </dt> <dd>
 
-Cuando el *parámetro ProcessInformationClass* es **ProcessWow64Information**, el búfer al que apunta el parámetro *ProcessInformation* debe ser lo suficientemente grande como para contener **un \_ PTR de ULONG.** Si este valor es distinto de cero, el proceso se ejecuta en un entorno WOW64; De lo contrario, si el valor es igual a cero, el proceso no se ejecuta en un entorno WOW64.
+Cuando el *parámetro ProcessInformationClass* es **ProcessWow64Information**, el búfer al que apunta el parámetro *ProcessInformation* debe ser lo suficientemente grande como para contener un **\_ PTR de ULONG.** Si este valor es distinto de cero, el proceso se ejecuta en un entorno WOW64; De lo contrario, si el valor es igual a cero, el proceso no se ejecuta en un entorno WOW64.
 
 Es mejor usar la función [**IsWow64Process**](/windows/win32/api/wow64apiset/nf-wow64apiset-iswow64process) para determinar si un proceso se está ejecutando en el entorno WOW64.
 
@@ -222,13 +190,13 @@ Puntero a una variable en la que la función devuelve el tamaño de la informaci
 
 Devuelve un código ntstatus correcto o de error.
 
-Los formularios y la importancia de los códigos de error NTSTATUS se enumeran en el archivo de encabezado Ntstatus.h disponible en el DDK y se describen en la documentación de DDK en Kernel-Mode Driver Architecture /Design Guide /Driver Programming Techniques/Logging Errors.
+Los formularios y la importancia de los códigos de error NTSTATUS se enumeran en el archivo de encabezado Ntstatus.h disponible en el DDK y se describen en la documentación de DDK en Kernel-Mode Driver Architecture /Design Guide /Driver Programming Techniques/Logging Errors..
 
 ## <a name="remarks"></a>Comentarios
 
 La **función ZwQueryInformationProcess** y las estructuras que devuelve son internas del sistema operativo y están sujetas a cambios de una versión de Windows a otra. Para mantener la compatibilidad de la aplicación, es mejor usar las funciones públicas mencionadas en la descripción del *parámetro ProcessInformationClass* en su lugar.
 
-Si usa **ZwQueryInformationProcess**, acceda a la función a través de la vinculación [dinámica en tiempo de ejecución.](../dlls/using-run-time-dynamic-linking.md) Esto ofrece al código la oportunidad de responder correctamente si la función se ha cambiado o quitado del sistema operativo. Sin embargo, es posible que los cambios de firma no sean detectables.
+Si usa **ZwQueryInformationProcess**, acceda a la función a través de la vinculación [dinámica en tiempo de ejecución.](../dlls/using-run-time-dynamic-linking.md) Esto ofrece al código la oportunidad de responder correctamente si la función se ha cambiado o quitado del sistema operativo. Sin embargo, es posible que los cambios de firma no se puedan detectar.
 
 Esta función no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Ntdll.dll.
 
@@ -236,7 +204,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Debe usar la
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
@@ -244,7 +212,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Debe usar la
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

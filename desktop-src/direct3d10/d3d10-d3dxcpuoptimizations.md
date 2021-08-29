@@ -1,7 +1,7 @@
 ---
-description: Habilita o deshabilita las optimizaciones de la CPU.
+description: Habilita o deshabilita las optimizaciones de CPU.
 ms.assetid: 6f73df12-f2fc-4651-b0f7-f7a55e534d3d
-title: Función D3DXCpuOptimizations (D3DX10Math. h)
+title: Función D3DXCpuOptimizations (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a0ef276e6d3303acd77c9580b55a9aa49dbe2087
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: de2c24667384ad8f163774c77b4f7fea9332e953425cd5ee520cd310fa0733a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853455"
 ---
-# <a name="d3dxcpuoptimizations-function"></a>D3DXCpuOptimizations función)
+# <a name="d3dxcpuoptimizations-function"></a>Función D3DXCpuOptimizations
 
-Habilita o deshabilita las optimizaciones de la CPU.
+Habilita o deshabilita las optimizaciones de CPU.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ D3DX_CPU_OPTIMIZATION D3DXCpuOptimizations(
 
 <dl> <dt>
 
-*Habilitar* \[ de\]
+*Habilitar* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-**True** para habilitar las optimizaciones de la CPU; en caso contrario, **false**.
+**TRUE** para habilitar las optimizaciones de CPU; en caso **contrario, FALSE**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **\_ \_ optimización de CPU de D3DX**](d3dx-cpu-optimization.md)**
+Tipo: **[ **OPTIMIZACIÓN DE \_ CPU \_ D3DX**](d3dx-cpu-optimization.md)**
 
-Devuelve el tipo de CPU detectado y para el que existen optimizaciones (consulte [**la \_ \_ optimización**](d3dx-cpu-optimization.md)de la CPU de D3DX).
+Devuelve el tipo de CPU detectada y para qué optimizaciones existen (vea [**OPTIMIZACIÓN DE \_ CPU \_ D3DX).**](d3dx-cpu-optimization.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Devuelve el tipo de CPU detectado y para el que existen optimizaciones (consulte
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

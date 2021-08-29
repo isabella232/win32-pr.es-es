@@ -1,6 +1,6 @@
 ---
-title: Estilos extendidos del control de edición (CommCtrl. h)
-description: En esta sección se enumeran los estilos extendidos que se usan al crear controles de edición. El valor de los estilos extendidos es una combinación bit a bit de estos estilos.
+title: Editar estilos extendidos de control (CommCtrl.h)
+description: En esta sección se enumeran los estilos extendidos usados al crear controles de edición. El valor de los estilos extendidos es una combinación bit a bit de estos estilos.
 ms.assetid: 44ef7cbf-6d90-4ea0-8e23-cd84aacd5506
 topic_type:
 - apiref
@@ -16,53 +16,28 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 912a13b0e05d7b12e5058435221b821b50eddf2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 74da183ad411db5db65fb4cb9c3f32325310023c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649720"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465612"
 ---
-# <a name="edit-control-extended-styles"></a>Estilos extendidos de control de edición
+# <a name="edit-control-extended-styles"></a>Editar estilos extendidos de control
 
-En esta sección se enumeran los estilos extendidos que se usan al crear controles de edición. El valor de los estilos extendidos es una combinación bit a bit de estos estilos.
+En esta sección se enumeran los estilos extendidos usados al crear controles de edición. El valor de los estilos extendidos es una combinación bit a bit de estos estilos.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constante</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span id="ES_EX_ALLOWEOL_CR"></span><span id="es_ex_alloweol_cr"></span><dl> <dt><strong>ES_EX_ALLOWEOL_CR</strong></dt> </dl></td>
-<td style="text-align: left;">[Windows Vista y versiones posteriores](common-control-versions.md). Habilita la compatibilidad con los caracteres de fin de línea de retorno de carro (CR) para dividir las líneas.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="ES_EX_ALLOWEOL_LF"></span><span id="es_ex_alloweol_lf"></span><dl> <dt><strong>ES_EX_ALLOWEOL_LF</strong></dt> </dl></td>
-<td style="text-align: left;">[Windows Vista y versiones posteriores](common-control-versions.md). Habilita la compatibilidad con los caracteres de fin de línea de avance de línea para romper las líneas.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="ES_EX_ALLOWEOL_ALL"></span><span id="es_ex_alloweol_all"></span><dl> <dt><strong>ES_EX_ALLOWEOL_ALL</strong></dt> </dl></td>
-<td style="text-align: left;">[Windows Vista y versiones posteriores](common-control-versions.md). Habilita la compatibilidad con los caracteres de fin de línea de retorno de carro (CR) y avance de línea (LF) para dividir las líneas.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span id="ES_EX_CONVERT_EOL_ON_PASTE"></span><span id="es_ex_convert_eol_on_paste"></span><dl> <dt><strong>ES_EX_CONVERT_EOL_ON_PASTE</strong></dt> </dl></td>
-<td style="text-align: left;">[Windows Vista y versiones posteriores](common-control-versions.md). Convierte los caracteres de fin de línea habilitados para este control de edición en el contenido pegado para que coincida con el carácter de final de línea utilizado por el documento actual.<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span id="ES_EX_ZOOMABLE"></span><span id="es_ex_zoomable"></span><dl> <dt><strong>ES_EX_ZOOMABLE</strong></dt> </dl></td>
-<td style="text-align: left;">[Windows Vista y versiones posteriores](common-control-versions.md). Habilita el zoom con Ctrl + MouseWheel y los [**mensajes \_ GETZOOM**](em-getzoom.md) / [**em \_ SETZOOM**](em-setzoom.md) .<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constante | Descripción | 
+|----------|-------------|
+| <span id="ES_EX_ALLOWEOL_CR"></span><span id="es_ex_alloweol_cr"></span><dl><dt><strong>ES_EX_ALLOWEOL_CR</strong></dt></dl> | [Windows Vista y versiones posteriores.](common-control-versions.md) Habilita la compatibilidad con los caracteres de fin de línea de retorno de carro (CR) para interrumpir las líneas.<br /> | 
+| <span id="ES_EX_ALLOWEOL_LF"></span><span id="es_ex_alloweol_lf"></span><dl><dt><strong>ES_EX_ALLOWEOL_LF</strong></dt></dl> | [Windows Vista y versiones posteriores.](common-control-versions.md) Habilita la compatibilidad con los caracteres de fin de línea de salto de línea (LF) para interrumpir las líneas.<br /> | 
+| <span id="ES_EX_ALLOWEOL_ALL"></span><span id="es_ex_alloweol_all"></span><dl><dt><strong>ES_EX_ALLOWEOL_ALL</strong></dt></dl> | [Windows Vista y versiones posteriores.](common-control-versions.md) Habilita la compatibilidad con los caracteres de fin de línea de retorno de carro (CR) y de salto de línea (LF) para interrumpir las líneas.<br /> | 
+| <span id="ES_EX_CONVERT_EOL_ON_PASTE"></span><span id="es_ex_convert_eol_on_paste"></span><dl><dt><strong>ES_EX_CONVERT_EOL_ON_PASTE</strong></dt></dl> | [Windows Vista y versiones posteriores.](common-control-versions.md) Convierte los caracteres de fin de línea habilitados para este control de edición en contenido pegado para que coincidan con el carácter de fin de línea utilizado por el documento actual.<br /> | 
+| <span id="ES_EX_ZOOMABLE"></span><span id="es_ex_zoomable"></span><dl><dt><strong>ES_EX_ZOOMABLE</strong></dt></dl> | [Windows Vista y versiones posteriores.](common-control-versions.md) Habilita el zoom mediante Ctrl+MouseWheel y los mensajes [**\_ EM GETZOOM**](em-getzoom.md) / [**EM \_ SETZOOM.**](em-setzoom.md)<br /> | 
+
 
 
 
@@ -72,7 +47,7 @@ En esta sección se enumeran los estilos extendidos que se usan al crear control
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 

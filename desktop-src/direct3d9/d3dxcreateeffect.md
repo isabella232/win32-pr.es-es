@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 6821375dfc672d4937c335cf85dab12ba31b726c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7d6ea6f47d141624d3ce27bcffd8886f6d4a155eb3b450e1739193a2f33a0e55
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119385"
 ---
 # <a name="d3dxcreateeffect-function"></a>Función D3DXCreateEffect
 
@@ -93,7 +93,7 @@ Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -146,7 +146,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

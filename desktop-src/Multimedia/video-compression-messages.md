@@ -3,68 +3,68 @@ title: Mensajes de compresión de vídeo
 description: Mensajes de compresión de vídeo
 ms.assetid: 1639d0c5-db1e-4fd0-8a19-c32aa991eecf
 keywords:
-- Vídeo para Windows (VFW), mensajes VCM
-- VFW (vídeo para Windows), mensajes VCM
+- Vídeo para Windows (VFW), mensajes de VCM
+- VFW (vídeo para Windows),mensajes de VCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b86c94d120031e273789fb8f27e37eed6804b61
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dd02ff74d104f67d67ab2949d28763a603ada73a3f23fba5435a2c83aeaad4d9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804285"
 ---
 # <a name="video-compression-messages"></a>Mensajes de compresión de vídeo
 
-Los mensajes siguientes se usan con la compresión de vídeo.
+Los mensajes siguientes se usan con compresión de vídeo.
 
--   [**\_acerca de**](icm-about.md)
--   [**\_comprimir ICM**](icm-compress.md)
--   [**\_Inicio de compress de ICM \_**](icm-compress-begin.md)
--   [**\_fin de comprimir ICM \_**](icm-compress-end.md)
--   [**\_información de \_ fotogramas de compresión ICM \_**](icm-compress-frames-info.md)
--   [**\_formato de compresión ICM \_ Get \_**](icm-compress-get-format.md)
--   [**\_ \_ obtener tamaño de compresión ICM \_**](icm-compress-get-size.md)
--   [**\_consulta de compresión ICM \_**](icm-compress-query.md)
--   [**configuración de ICM \_**](icm-configure.md)
--   [**descompresión ICM \_**](icm-decompress.md)
--   [**Inicio de la \_ descompresión de ICM \_**](icm-decompress-begin.md)
--   [**\_fin de descomprimir ICM \_**](icm-decompress-end.md)
--   [**\_ \_ obtener formato de DEScompresión ICM \_**](icm-decompress-get-format.md)
--   [**\_paleta de \_ obtención de compresión ICM \_**](icm-decompress-get-palette.md)
--   [**\_consulta de descompresión ICM \_**](icm-decompress-query.md)
--   [**\_paleta set de descompresor ICM \_ \_**](icm-decompress-set-palette.md)
--   [**\_DECOMPRESSEX ICM**](icm-decompressex.md)
--   [**\_Inicio de DECOMPRESSEX de ICM \_**](icm-decompressex-begin.md)
--   [**\_fin de DECOMPRESSEX ICM \_**](icm-decompressex-end.md)
--   [**\_consulta ICM DECOMPRESSEX \_**](icm-decompressex-query.md)
--   [**\_dibujo ICM**](icm-draw.md)
--   [**\_Inicio de Draw de ICM \_**](icm-draw-begin.md)
--   [**\_CHANGEPALETTE ICM Draw \_**](icm-draw-changepalette.md)
--   [**\_final del dibujo ICM \_**](icm-draw-end.md)
--   [**\_vaciado de dibujo de ICM \_**](icm-draw-flush.md)
--   [**\_paleta de \_ obtención de dibujo ICM \_**](icm-draw-get-palette.md)
--   [**\_GETTIME de dibujo ICM \_**](icm-draw-gettime.md)
--   [**\_consulta de Draw ICM \_**](icm-draw-query.md)
--   [**\_realización del dibujo ICM \_**](icm-draw-realize.md)
--   [**\_RENDERBUFFER ICM Draw \_**](icm-draw-renderbuffer.md)
--   [**dibujar seicm \_ \_ SETTIME**](icm-draw-settime.md)
--   [**\_Inicio de dibujo de ICM \_**](icm-draw-start.md)
--   [**\_reproducción de \_ reinicio de Draw de ICM \_**](icm-draw-start-play.md)
--   [**\_detención de Draw ICM \_**](icm-draw-stop.md)
--   [**\_ \_ detener \_ reproducción de ICM**](icm-draw-stop-play.md)
--   [**\_SUGGESTFORMAT ICM Draw \_**](icm-draw-suggestformat.md)
--   [**\_ventana dibujo \_ ICM**](icm-draw-window.md)
--   [**obtención de ICM \_**](icm-get.md)
--   [**\_GETBUFFERSWANTED ICM**](icm-getbufferswanted.md)
--   [**\_GETDEFAULTKEYFRAMERATE ICM**](icm-getdefaultkeyframerate.md)
--   [**\_GETDEFAULTQUALITY ICM**](icm-getdefaultquality.md)
--   [**GetInfo de ICM \_**](icm-getinfo.md)
--   [**\_GETQUALITY ICM**](icm-getquality.md)
--   [**\_GETSTATE ICM**](icm-getstate.md)
--   [**\_proceso de establecimiento de \_ Estado de ICM \_**](icm-set-status-proc.md)
--   [**\_SETQUALITY ICM**](icm-setquality.md)
--   [**ICM \_ SETSTATE**](icm-setstate.md)
+-   [**\_ICM acerca de**](icm-about.md)
+-   [**\_ICM Comprimir**](icm-compress.md)
+-   [**\_ICM COMPRESS \_ BEGIN**](icm-compress-begin.md)
+-   [**\_ICM COMPRESS \_ END**](icm-compress-end.md)
+-   [**\_ICM COMPRIMIR \_ INFORMACIÓN DE \_ FOTOGRAMAS**](icm-compress-frames-info.md)
+-   [**\_ICM COMPRESS \_ GET \_ FORMAT**](icm-compress-get-format.md)
+-   [**\_ICM COMPRIMIR \_ GET \_ SIZE**](icm-compress-get-size.md)
+-   [**\_ICM COMPRESS \_ QUERY**](icm-compress-query.md)
+-   [**\_ICM Configurar**](icm-configure.md)
+-   [**\_ICM Descomprimir**](icm-decompress.md)
+-   [**\_ICM DECOMPRESS \_ BEGIN**](icm-decompress-begin.md)
+-   [**\_ICM DESCOMPRESIÓN \_ FINAL**](icm-decompress-end.md)
+-   [**\_ICM OBTENER FORMATO DE DESCOMPRESIÓN \_ \_**](icm-decompress-get-format.md)
+-   [**\_ICM DESCOMPRESIÓN \_ DE LA PALETA GET \_**](icm-decompress-get-palette.md)
+-   [**\_ICM CONSULTA DE DESCOMPRESIÓN \_**](icm-decompress-query.md)
+-   [**\_ICM PALETA DE CONJUNTO DE DESCOMPRESIÓN \_ \_**](icm-decompress-set-palette.md)
+-   [**\_ICM DECOMPRESSEX**](icm-decompressex.md)
+-   [**\_ICM DECOMPRESSEX \_ BEGIN**](icm-decompressex-begin.md)
+-   [**\_ICM DECOMPRESSEX \_ END**](icm-decompressex-end.md)
+-   [**\_ICM CONSULTA \_ DECOMPRESSEX**](icm-decompressex-query.md)
+-   [**\_ICM Dibujar**](icm-draw.md)
+-   [**\_ICM DRAW \_ BEGIN**](icm-draw-begin.md)
+-   [**\_ICM DRAW \_ CHANGEPALETTE**](icm-draw-changepalette.md)
+-   [**\_ICM DRAW \_ END**](icm-draw-end.md)
+-   [**\_ICM DRAW \_ FLUSH**](icm-draw-flush.md)
+-   [**\_ICM DRAW \_ GET \_ PALETTE**](icm-draw-get-palette.md)
+-   [**\_ICM DRAW \_ GETTIME**](icm-draw-gettime.md)
+-   [**\_ICM DRAW \_ QUERY**](icm-draw-query.md)
+-   [**\_ICM DRAW \_ REALIZE**](icm-draw-realize.md)
+-   [**\_ICM DRAW \_ RENDERBUFFER**](icm-draw-renderbuffer.md)
+-   [**\_ICM DRAW \_ SETTIME**](icm-draw-settime.md)
+-   [**\_ICM DRAW \_ START**](icm-draw-start.md)
+-   [**\_ICM DRAW \_ START \_ PLAY**](icm-draw-start-play.md)
+-   [**\_ICM DRAW \_ STOP**](icm-draw-stop.md)
+-   [**\_ICM DRAW \_ STOP \_ PLAY**](icm-draw-stop-play.md)
+-   [**\_ICM DRAW \_ SUGGESTFORMAT**](icm-draw-suggestformat.md)
+-   [**\_ICM VENTANA \_ DIBUJAR**](icm-draw-window.md)
+-   [**\_ICM Obtener**](icm-get.md)
+-   [**\_ICM GETBUFFERSWANTED**](icm-getbufferswanted.md)
+-   [**\_ICM GETDEFAULTKEYFRAMERATE**](icm-getdefaultkeyframerate.md)
+-   [**\_ICM GETDEFAULTQUALITY**](icm-getdefaultquality.md)
+-   [**\_ICM GETINFO**](icm-getinfo.md)
+-   [**\_ICM GETQUALITY**](icm-getquality.md)
+-   [**\_ICM GETSTATE**](icm-getstate.md)
+-   [**\_ICM SET \_ STATUS \_ PROC**](icm-set-status-proc.md)
+-   [**\_ICM SETQUALITY**](icm-setquality.md)
+-   [**\_ICM SETSTATE**](icm-setstate.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -73,9 +73,9 @@ Los mensajes siguientes se usan con la compresión de vídeo.
 [Referencia del administrador de compresión de vídeo](video-compression-manager-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

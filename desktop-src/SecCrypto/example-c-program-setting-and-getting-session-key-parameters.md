@@ -1,31 +1,31 @@
 ---
-description: En el ejemplo siguiente se crea una clave de sesión aleatoria, se obtienen e imprimen algunos parámetros predeterminados de esa clave, se establecen nuevos parámetros en la clave original y, a continuación, se obtiene e imprime el valor de ese nuevo parámetro.
+description: En el ejemplo siguiente se crea una clave de sesión aleatoria, se obtienen e imprimen algunos parámetros predeterminados de esa clave, se establece un nuevo parámetro en la clave original y, a continuación, se obtiene e imprime el valor de ese nuevo parámetro.
 ms.assetid: 00f93036-05c9-4585-842a-a42a7faea2a5
-title: 'Programa C de ejemplo: establecimiento y obtención de parámetros de clave de sesión'
+title: 'Programa C de ejemplo: configuración y obtención de parámetros de clave de sesión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6be59b8b47c5becd8576a409d659f99d97b7ee3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4047db45cfb9a1d0650b600e914329bcea22662741f0a29e2936eac69c3f0b46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007503"
 ---
-# <a name="example-c-program-setting-and-getting-session-key-parameters"></a>Programa C de ejemplo: establecimiento y obtención de parámetros de clave de sesión
+# <a name="example-c-program-setting-and-getting-session-key-parameters"></a>Programa C de ejemplo: configuración y obtención de parámetros de clave de sesión
 
-En el ejemplo siguiente se crea una clave de sesión aleatoria, se obtienen e imprimen algunos parámetros predeterminados de esa clave, se establecen nuevos parámetros en la clave original y, a continuación, se obtiene e imprime el valor de ese nuevo parámetro. Se limpia destruyendo la clave de sesión y liberando el contexto criptográfico.
+En el ejemplo siguiente se crea una clave de sesión aleatoria, se obtienen e imprimen algunos parámetros predeterminados de esa clave, se establece un nuevo parámetro en la clave original y, a continuación, se obtiene e imprime el valor de ese nuevo parámetro. Limpia mediante la destrucción de la clave de sesión y la liberación del contexto criptográfico.
 
 En este ejemplo se muestra el uso de las siguientes tareas y funciones:
 
 -   Acceso a un CSP mediante [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
--   Archivar un búfer con bytes aleatorios mediante [**CryptGenRandom**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenrandom).
+-   Presentación de un búfer con bytes aleatorios [**mediante CryptGenRandom**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenrandom).
 -   Crear una clave de sesión mediante [**CryptGenKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgenkey).
--   Obtener el valor de los parámetros de clave mediante [**CryptGetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyparam).
--   Uso de [**CryptSetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) para modificar el proceso de generación de claves.
+-   Obtener el valor de los parámetros clave mediante [**CryptGetKeyParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetkeyparam).
+-   Usar [**CryptSetKeyParam para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsetkeyparam) modificar el proceso de generación de claves.
 -   Destruir las claves mediante [**CryptDestroyKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroykey).
--   Liberación del CSP con [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext).
+-   Liberar el CSP con [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext).
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

@@ -1,7 +1,7 @@
 ---
-description: Marcas que se pasan a la función TraceRay para invalidar la transparencia, la selección y el comportamiento de tiempo de espera.
+description: Marcas que se pasan a la función TraceRay para invalidar la transparencia, la selección y el comportamiento de salida anticipada.
 ms.assetid: ''
-title: Enumeración RAY_FLAG
+title: RAY_FLAG enumeración
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,18 +12,18 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: 31d6a002e5f3f4eeb5f86e671be0904d61cb916d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 894847b5d7dd89e42fd06ca58abad6cc3b85b9f5c6131e8b77ca3837c17d86d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952865"
 ---
-# <a name="ray_flag-enumeration"></a>\_Enumeración de marca de rayo
+# <a name="ray_flag-enumeration"></a>Enumeración \_ RAY FLAG
 
-Marcas que se pasan a la función [**TraceRay**](traceray-function.md) para invalidar la transparencia, la selección y el comportamiento de tiempo de espera.
+Marcas que se pasan a la [**función TraceRay**](traceray-function.md) para invalidar la transparencia, la selección y el comportamiento de salida anticipada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -47,97 +47,97 @@ enum RAY_FLAG : uint
 
 <dl> <dt>
 
-<span id="RAY_FLAG_NONE"></span><span id="ray_flag_none"></span>**marca de rayo \_ \_ ninguno**
+<span id="RAY_FLAG_NONE"></span><span id="ray_flag_none"></span>**RAY \_ FLAG \_ NONE**
 </dt> <dd>
 
-No hay opciones seleccionadas.
+Ninguna opción seleccionada.
 
 </dd> <dt>
 
-<span id="RAY_FLAG_FORCE_OPAQUE"></span><span id="ray_flag_force_opaque"></span>**marca de rayo \_ \_ fuerza \_ opaca**
+<span id="RAY_FLAG_FORCE_OPAQUE"></span><span id="ray_flag_force_opaque"></span>**RAY \_ FLAG \_ FORCE \_ OPAQUE**
 </dt> <dd>
 
-Todas las intersecciones de tipo primitivo de rayo encontradas en un raytrace se tratan como opacas.  Por tanto, no se ejecutará ningún sombreador de posicionamiento con independencia de si la geometría de aciertos especifica o no el \_ \_ indicador de geometría D3D12 RAYTRACING \_ \_ opaco y con independencia de las marcas de instancia de la instancia que se ha alcanzado.
+Todas las intersecciones primitivas de rayos encontradas en un raytrace se tratan como opacas.  Por lo tanto, no se ejecutará ningún sombreador de acceso independientemente de si la geometría de acceso especifica D3D12 RAYTRACING GEOMETRY FLAG OPAQUE e independientemente de las marcas de instancia de la instancia que se ha \_ \_ \_ \_ alcanzado.
 
-Esta marca se excluye mutuamente con la fuerza de la marca de rayo \_ \_ \_ no \_ opaca, el \_ marcador \_ de rayo y el \_ culling de marca de rayo \_ \_ \_ no \_ opacos.
-
-
-</dd> <dt>
-
-<span id="RAY_FLAG_FORCE_NON_OPAQUE"></span><span id="ray_flag_force_non_opaque"></span>**fuerza de marcador de rayo \_ \_ \_ no \_ opaca**
-</dt> <dd>
-
-Todas las intersecciones de tipo rayo-primitivo encontradas en un raytrace se tratan como no opacas.  Por lo tanto, cualquier sombreador de posicionamiento, si está presente, se ejecutará independientemente de si la geometría de aciertos especifica o no el \_ \_ indicador de geometría D3D12 RAYTRACING \_ \_ opaco y sin tener en consideración las marcas de instancia en la instancia que se alcanzó.
-Esta marca se excluye mutuamente con la \_ marca de rayo \_ FORCE_ \OPAQUE, el marcador de rayo \_ y el \_ \_ desecho de la marca de rayo \_ \_ \_ no \_ opacos.
+Esta marca es mutuamente excluyente con RAY \_ FLAG \_ FORCE NON \_ \_ OPAQUE, RAY FLAG CULL OPAQUE y RAY \_ FLAG \_ \_ \_ \_ CULL \_ NON \_ OPAQUE.
 
 
 </dd> <dt>
 
-<span id="RAY_FLAG_ACCEPT_FIRST_HIT_AND_END_SEARCH"></span><span id="ray_flag_accept_first_hit_and_end_search"></span>**\_marca \_ de rayo aceptar \_ primer \_ acierto \_ y \_ finalizar \_ búsqueda**
+<span id="RAY_FLAG_FORCE_NON_OPAQUE"></span><span id="ray_flag_force_non_opaque"></span>**RAY \_ FLAG \_ FORCE \_ NON \_ OPAQUE**
 </dt> <dd>
 
-La primera intersección de rayo-primitivo encontrada en un raytrace hace que se llame automáticamente a **AcceptHitAndEndSearch** inmediatamente después de cualquier sombreador de posicionamiento, incluso si no hay ningún sombreador de posicionamiento. 
+Todas las intersecciones primitivas de rayos encontradas en un raytrace se tratan como no opacas.  Por lo tanto, los sombreadores de impacto, si están presentes, se ejecutarán independientemente de si la geometría de acceso especifica D3D12 RAYTRACING GEOMETRY FLAG OPAQUE e independientemente de las marcas de instancia de la instancia que se ha \_ \_ \_ \_ alcanzado.
+Esta marca es mutuamente excluyente con RAY \_ FLAG \_ FORCE_\OPAQUE, RAY FLAG CULL OPAQUE y \_ RAY FLAG \_ \_ \_ \_ CULL NON \_ \_ OPAQUE.
+
+
+</dd> <dt>
+
+<span id="RAY_FLAG_ACCEPT_FIRST_HIT_AND_END_SEARCH"></span><span id="ray_flag_accept_first_hit_and_end_search"></span>**RAY \_ FLAG \_ ACCEPT \_ FIRST \_ HIT \_ AND \_ END \_ SEARCH**
+</dt> <dd>
+
+La primera intersección entre rayos y primitivos encontrada en un raytrace hace que se llame automáticamente a **AcceptHitAndEndSearch** inmediatamente después de cualquier sombreador de llamadas, incluido si no hay ningún sombreador de llamadas. 
  
-La única excepción se produce cuando el anterior cualquier sombreador de posicionamiento llama a **IgnoreHit**, en cuyo caso el rayo continúa inalterado, de modo que el siguiente acierto se convierte en otro candidato como primer acierto.  Para que se aplique esta excepción, se debe ejecutar realmente cualquier sombreador de posicionamiento.  Por lo tanto, si se omite cualquier sombreador de posicionamiento porque el acierto se trata como opaco (por ejemplo, debido a la marca de rayo \_ \_ Force \_ opaco o D3D12 RAYTRACING, el marcador de \_ \_ geometría \_ \_ opaco o D3D12 \_ RAYTRACING \_ \_ \_ se establece en opaca), se llama a **AcceptHitAndEndSearch** .
+La única excepción es cuando el sombreador de llamadas anterior llama a **IgnoreHit**, en cuyo caso el rayo sigue sin ser afectado, de modo que el siguiente impacto se convierte en otro candidato para ser el primer impacto.  Para que se aplique esta excepción, se debe ejecutar realmente cualquier sombreador de pulsaciones.  Por lo tanto, si se omite cualquier sombreador de llamadas porque la operación se trata como opaca (por ejemplo, debido a que se establece RAY FLAG FORCE OPAQUE o \_ \_ \_ D3D12 \_ RAYTRACING GEOMETRY FLAG OPAQUE o \_ \_ \_ D3D12 RAYTRACING INSTANCE FLAG OPAQUE), se llama a \_ \_ \_ \_ **AcceptHitAndEndSearch.**
 
-Si un sombreador de posicionamiento más cercano está presente en el primer acierto, se invoca a menos que la marca de rayo \_ \_ omitir el \_ \_ sombreador de posicionamiento más cercano \_ también esté presente.  El golpe encontrado se considera "más cercano", aunque es posible que no se hayan visitado otros posibles aciertos que podrían estar más cerca del rayo.
+Si hay un sombreador de impacto más cercano en el primer hit, se invoca a menos que RAY \_ FLAG \_ SKIP \_ CLOSEST HIT SHADER también esté \_ \_ presente.  El único acierto que se encontró se considera "más cercano", aunque es posible que no se hayan visitado otros posibles aciertos que podrían estar más cerca del rayo.
 
-Un uso típico de esta marca es para las sombras, donde solo es necesario encontrar un solo acierto.
-
-
-</dd> <dt>
-
-<span id="RAY_FLAG_SKIP_CLOSEST_HIT_SHADER"></span><span id="ray_flag_skip_closest_hit_shader"></span>**marca de rayo \_ \_ omitir el \_ \_ sombreador de posicionamiento más cercano \_**
-</dt> <dd>
-
-Incluso si se ha confirmado al menos una visita y el grupo de aciertos para el acierto más cercano contiene un sombreador de posicionamiento más cercano, omitirá la ejecución de ese sombreador. 
-
-</dd> <dt>
-
-<span id="RAY_FLAG_CULL_BACK_FACING_TRIANGLES"></span><span id="ray_flag_cull_back_facing_triangles"></span>**\_marcador de \_ rayo \_ hacia atrás con \_ \_ triángulos**
-</dt> <dd>
-
-Habilita la selección de triángulos hacia atrás. Consulte **D3D12 \_ RAYTRACING \_ Instance \_ Flags** para seleccionar qué triángulos van a la inversa, por instancia.
-
-En las instancias de que especifican \_ \_ la marca de instancia de D3D12 RAYTRACING \_ \_ \_ \_ deshabilitada, esta marca no tiene ningún efecto.
-
-En los tipos de geometría distintos de los \_ \_ triángulos del tipo de geometría D3D12 RAYTRACING \_ \_ , esta marca no tiene ningún efecto.
-
-Esta marca se excluye mutuamente con \_ \_ \_ \_ triángulos frontales de selección de marca de rayo \_ .
+Un uso típico de esta marca es para las sombras, donde solo es necesario encontrar una sola pulsación.
 
 
 </dd> <dt>
 
-<span id="RAY_FLAG_CULL_FRONT_FACING_TRIANGLES"></span><span id="ray_flag_cull_front_facing_trianglesag_none"></span>**\_ \_ \_ triángulos frontales de selección \_ de marca \_ de rayo**
+<span id="RAY_FLAG_SKIP_CLOSEST_HIT_SHADER"></span><span id="ray_flag_skip_closest_hit_shader"></span>**RAY \_ FLAG \_ SKIP \_ CLOSEST \_ HIT \_ SHADER**
 </dt> <dd>
 
-Habilita la selección de triángulos de cara frontal. Consulte **D3D12 \_ RAYTRACING \_ Instance \_ Flags** para seleccionar qué triángulos van a la inversa, por instancia.
+Incluso si se ha confirmado al menos una pulsación y el grupo de pulsaciones para la pulsación más cercana contiene un sombreador de impacto más cercano, omita la ejecución de ese sombreador. 
 
-En las instancias de que especifican \_ \_ la marca de instancia de D3D12 RAYTRACING \_ \_ \_ \_ deshabilitada, esta marca no tiene ningún efecto.
+</dd> <dt>
 
-En los tipos de geometría distintos de los \_ \_ triángulos del tipo de geometría D3D12 RAYTRACING \_ \_ , esta marca no tiene ningún efecto.
+<span id="RAY_FLAG_CULL_BACK_FACING_TRIANGLES"></span><span id="ray_flag_cull_back_facing_triangles"></span>**TRIÁNGULOS DE CULL DE LA MARCA RAY \_ \_ HACIA \_ \_ \_ ATRÁS**
+</dt> <dd>
 
-Este marcador es mutuamente excluyente con \_ \_ \_ \_ triángulos de selección de marca de rayo \_ .
+Habilita la selección de triángulos orientados hacia atrás. Consulte **D3D12 \_ RAYTRACING \_ INSTANCE \_ FLAGS** (MARCAS DE INSTANCIA DE RAYTRACING) para seleccionar qué triángulos están orientados hacia atrás, por instancia.
+
+En las instancias que especifican D3D12 \_ RAYTRACING \_ INSTANCE FLAG TRIANGLE \_ \_ \_ CULL \_ DISABLE, esta marca no tiene ningún efecto.
+
+En tipos de geometría distintos de D3D12 \_ RAYTRACING \_ GEOMETRY \_ TYPE \_ TRIANGLES, esta marca no tiene ningún efecto.
+
+Esta marca es mutuamente excluyente con RAY \_ FLAG \_ CULL \_ FRONT FACING \_ \_ TRIANGLES.
 
 
 </dd> <dt>
 
-<span id="RAY_FLAG_CULL_OPAQUE"></span><span id="ray_flag_cull_opaque"></span>**marcador de rayo de \_ \_ selección \_ opaca**
+<span id="RAY_FLAG_CULL_FRONT_FACING_TRIANGLES"></span><span id="ray_flag_cull_front_facing_trianglesag_none"></span>**TRIÁNGULOS \_ FRONTALES \_ DE CULL DE LA MARCA \_ \_ \_ RAY**
 </dt> <dd>
 
-Selecciona todos los primitivos que se consideran opacos en función de sus marcas de geometría e instancia.
+Habilita la selección de triángulos frontales. Consulte **D3D12 \_ RAYTRACING \_ INSTANCE \_ FLAGS** (MARCAS DE INSTANCIA DE RAYTRACING) para seleccionar qué triángulos están orientados hacia atrás, por instancia.
 
-Esta marca se excluye mutuamente con la \_ marca de rayo \_ Force \_ opaco, la fuerza de la marca de rayo \_ \_ \_ no \_ opaca y la marca de rayo \_ \_ \_ no \_ opaca.
+En las instancias que especifican D3D12 \_ RAYTRACING \_ INSTANCE FLAG TRIANGLE \_ \_ \_ CULL \_ DISABLE, esta marca no tiene ningún efecto.
+
+En tipos de geometría distintos de D3D12 \_ RAYTRACING \_ GEOMETRY \_ TYPE \_ TRIANGLES, esta marca no tiene ningún efecto.
+
+Esta marca es mutuamente excluyente con RAY \_ FLAG \_ CULL \_ BACK FACING \_ \_ TRIANGLES.
 
 
 </dd> <dt>
 
-<span id="RAY_FLAG_CULL_NON_OPAQUE"></span><span id="ray_flag_cull_non_opaque"></span>**selección de marca de rayo \_ \_ \_ no \_ opaca**
+<span id="RAY_FLAG_CULL_OPAQUE"></span><span id="ray_flag_cull_opaque"></span>**RAY \_ FLAG \_ CULL \_ OPAQUE**
 </dt> <dd>
 
-Selecciona todos los primitivos que se consideran no opacos en función de sus marcas de geometría e instancia.
+Anula todas las primitivas que se consideran opacas en función de sus marcas de geometría e instancia.
 
-Esta marca se excluye mutuamente con la \_ marca de rayo \_ Force \_ opaco, la fuerza de la marca de rayo \_ \_ \_ no \_ opaca y la de marcador de rayo \_ \_ \_ opaca.
+Esta marca es mutuamente excluyente con RAY FLAG FORCE OPAQUE, RAY FLAG FORCE NON OPAQUE y \_ RAY FLAG \_ \_ \_ \_ \_ \_ \_ \_ CULL NON \_ \_ OPAQUE.
+
+
+</dd> <dt>
+
+<span id="RAY_FLAG_CULL_NON_OPAQUE"></span><span id="ray_flag_cull_non_opaque"></span>**RAY \_ FLAG \_ CULL \_ NON \_ OPAQUE**
+</dt> <dd>
+
+Anula todas las primitivas que se consideran no opacas en función de sus marcas de geometría e instancia.
+
+Esta marca es mutuamente excluyente con RAY FLAG FORCE OPAQUE, RAY FLAG FORCE NON OPAQUE y \_ RAY FLAG \_ \_ \_ \_ \_ \_ \_ \_ CULL \_ OPAQUE.
 
 
 </dd>

@@ -4,21 +4,21 @@ ms.assetid: 12bb1288-e764-4bc1-bea5-196e17cf3557
 title: Paso 7. Controlar mensajes de ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0dd1c44dd65a4f9f430b4223f0a5a0e4763af981
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 993f1aa28e891dfce8715984f505d6177c75ba6dc21ed8290c6e2bebee2e8203
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102305"
 ---
 # <a name="step-7-handle-window-messages"></a>Paso 7. Controlar mensajes de ventana
 
-Invalide el método [**CBasePropertyPage:: OnReceiveMessage**](cbasepropertypage-onreceivemessage.md) para actualizar los controles de cuadro de diálogo en respuesta a los datos proporcionados por el usuario. Si no controla un mensaje determinado, llame al método **OnReceiveMessage** en la clase primaria. Siempre que el usuario cambie una propiedad, haga lo siguiente:
+Invalide [**el método CBasePropertyPage::OnReceiveMessage**](cbasepropertypage-onreceivemessage.md) para actualizar los controles de diálogo en respuesta a la entrada del usuario. Si no controla un mensaje determinado, llame al **método OnReceiveMessage** en la clase primaria. Cada vez que el usuario cambie una propiedad, haga lo siguiente:
 
--   Establezca la variable **m \_ bDirty** de la página de propiedades en **true**.
--   Llame al método **IPropertyPageSite:: OnStatusChange** del marco de propiedades con la \_ marca de modificado PROPPAGESTATUS. Esta marca informa al marco de propiedades de que debe habilitar el botón **aplicar** . El miembro [**CBasePropertyPage:: m \_ pPageSite**](cbasepropertypage-m-ppagesite.md) contiene un puntero a la interfaz **IPropertyPageSite** .
+-   Establezca la **variable m \_ bDirty** de la página de propiedades en **TRUE.**
+-   Llame al **método IPropertyPageSite::OnStatusChange** del marco de propiedades con la marca PROPPAGESTATUS \_ DIRTY. Esta marca informa al marco de propiedades de que debe habilitar el **botón** Aplicar. El [**miembro CBasePropertyPage::m \_ pPageSite**](cbasepropertypage-m-ppagesite.md) contiene un puntero a la **interfaz IPropertyPageSite.**
 
-Para simplificar este paso, puede Agregar la siguiente función auxiliar a la página de propiedades:
+Para simplificar este paso, puede agregar la siguiente función auxiliar a la página de propiedades:
 
 
 ```C++
@@ -35,7 +35,7 @@ private:
 
 
 
-Llame a este método privado dentro de **OnReceiveMessage** siempre que una acción del usuario cambie una propiedad, como se muestra en el ejemplo siguiente:
+Llame a este método privado **dentro de OnReceiveMessage** cada vez que una acción del usuario cambie una propiedad, como se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -83,9 +83,9 @@ BOOL CGrayProp::OnReceiveMessage(HWND hwnd,
 
 
 
-La página de propiedades de este ejemplo tiene dos controles, una barra deslizante y un botón **revertir al valor predeterminado** . Si el usuario desplaza la barra deslizante, la página de propiedades establece el valor de saturación en el filtro. Si el usuario hace clic en el botón, la página de propiedades restaura el valor de saturación predeterminado del filtro. En cada caso, m \_ lNewVal contiene el valor actual y m \_ lVal contiene el valor original. El valor de m \_ lVal no se actualiza hasta que el usuario confirma el cambio, lo que sucede cuando el usuario hace clic en el botón **Aceptar** o **aplicar** en el marco de propiedades.
+La página de propiedades de este ejemplo tiene dos controles, una barra deslizante y un **botón Revertir** al valor predeterminado. Si el usuario desplaza la barra deslizante, la página de propiedades establece el valor de saturación en el filtro. Si el usuario hace clic en el botón, la página de propiedades restaura el valor de saturación predeterminado del filtro. En cada caso, m \_ lNewVal contiene el valor actual y m \_ lVal contiene el valor original. El valor de m lVal no se actualiza hasta que el usuario confirma el cambio, lo que sucede cuando el usuario hace clic en el botón Aceptar o Aplicar en el \_ marco de propiedades.  
 
-Siguiente: [paso 8. Aplicar cambios de propiedad](step-8--apply-property-changes.md).
+Siguiente: [Paso 8. Aplicar cambios de propiedad](step-8--apply-property-changes.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

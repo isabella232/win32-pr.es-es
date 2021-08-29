@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se muestra cómo un cliente típico obtendría credenciales Schannel.
+description: En el ejemplo siguiente se muestra cómo un cliente típico obtendría las credenciales de Schannel.
 ms.assetid: 8f912af8-fd64-467a-b154-28c60cb14929
 title: Obtención de credenciales de Schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c2594b808387943cd2fc645a459dfbcd66ebc54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef4e088e0e0e0cb2edbc6a6551669cf4d8c5b8b3d2eb8cad38699e83001e5350
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623185"
 ---
 # <a name="getting-schannel-credentials"></a>Obtención de credenciales de Schannel
 
-En el ejemplo siguiente se muestra cómo un cliente típico obtendría credenciales Schannel. El ejemplo sigue la práctica recomendada de usar los valores predeterminados del sistema para los cifrados y los niveles de cifrado. Esto permite que el paquete Schannel use los algoritmos más seguros posibles para proteger el canal.
+En el ejemplo siguiente se muestra cómo un cliente típico obtendría las credenciales de Schannel. En el ejemplo se sigue la práctica recomendada de usar los valores predeterminados del sistema para los cifrados y los puntos fuertes del cifrado. Esto permite que el paquete Schannel use los algoritmos más seguros posibles para proteger el canal.
 
 
 ```C++
@@ -63,7 +63,7 @@ void getSchannelClientHandle(PCredHandle ppClientCred)
 
 
 
-La principal diferencia entre la solicitud de cliente y el lado servidor para las credenciales es que el servidor debe proporcionar un certificado mediante una estructura de [**\_ contexto de certificado**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) como se indica a continuación:
+La diferencia principal entre la solicitud de credenciales del lado cliente y la del lado servidor es que el servidor debe proporcionar un certificado mediante una [**estructura CERT \_ CONTEXT**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) de la siguiente manera:
 
 
 ```C++
@@ -79,10 +79,10 @@ La principal diferencia entre la solicitud de cliente y el lado servidor para la
 
 
 
-La función de ejemplo *getServerCertificate* es una función de marcador de posición para esta actividad específica de la aplicación. Para ver un ejemplo de implementación de la función *getServerCertificate* , consulte [obtención de un certificado](getting-a-certificate-for-schannel.md).
+La función de *ejemplo getServerCertificate* es una función de marcador de posición para esta actividad específica de la aplicación. Para obtener un ejemplo de implementación de *la función getServerCertificate,* vea [Obtención de un certificado.](getting-a-certificate-for-schannel.md)
 
 > [!Note]  
-> Al solicitar las credenciales que va a usar el servidor, cambie el tercer parámetro (*fCredentialUse*) de la función [**AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) de SECPKG \_ CRED \_ Outbound to SECPKG \_ CRED \_ Inbound.
+> Al solicitar las credenciales que usará el servidor, cambie el tercer parámetro *(fCredentialUse)* de la función [**AcquireCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-acquirecredentialshandlea) de SECPKG CRED OUTBOUND a \_ \_ SECPKG \_ CRED \_ INBOUND.
 
  
 

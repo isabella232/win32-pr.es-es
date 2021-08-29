@@ -1,22 +1,22 @@
 ---
-title: Atributos (Windows Media Format SDK 11)
+title: Atributos (Windows SDK de formato multimedia 11)
 description: Obtenga información sobre los atributos del SDK Windows Media Format 11. Un atributo es un elemento individual de metadatos.
 ms.assetid: 1e9392b4-4fff-41ad-9d80-23c1c7f9e9a4
 keywords:
-- Windows Media Format SDK,attributes
+- Windows SDK de formato multimedia, atributos
 - Formato de sistemas avanzados (ASF), atributos
 - ASF (formato de sistemas avanzados), atributos
 - attributes,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23738e20df2c6360b20b7c3da005cde6b3942d44
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: cf76a8235b3cb81d71a283b5e6c6e992300aaaa21ec840c3a3654e0777a644aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441235"
 ---
-# <a name="attributes-windows-media-format-11-sdk"></a>Atributos (Windows Media Format SDK 11)
+# <a name="attributes-windows-media-format-11-sdk"></a>Atributos (Windows SDK de formato multimedia 11)
 
 Un atributo es un elemento individual de metadatos. La aplicación puede establecer la mayoría de los atributos y se escriben en el encabezado de un archivo ASF.
 

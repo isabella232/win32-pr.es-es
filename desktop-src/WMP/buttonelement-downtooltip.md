@@ -1,9 +1,9 @@
 ---
-title: BUTTONELEMENT. downToolTip
-description: El atributo downToolTip especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre BUTTONELEMENT y BUTTONELEMENT está en estado inactivo.
+title: BUTTONELEMENT.downToolTip
+description: El atributo downToolTip especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre BUTTONELEMENT y buttonelement está en estado de bajada.
 ms.assetid: eddcb0e9-8504-4c06-8ff1-cc5c4c08af46
 keywords:
-- BUTTONELEMENT. downToolTip Windows Media Player
+- ButtonELEMENT.downToolTip Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c9edc9c5c8de697f7ee570bb85bd0d3226d26f3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae152fd5e4f5ac9aa9b46abfed6084adfa0d20bad42bfa7e88afee18c2517755
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764375"
 ---
-# <a name="buttonelementdowntooltip"></a>BUTTONELEMENT. downToolTip
+# <a name="buttonelementdowntooltip"></a>BUTTONELEMENT.downToolTip
 
-El atributo **downToolTip** especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre **BUTTONELEMENT** y **ButtonElement** está en estado inactivo.
+El **atributo downToolTip** especifica o recupera el texto de información sobre herramientas que aparece cuando el mouse está sobre **BUTTONELEMENT** y **buttonelement** está en estado de bajada.
 
 ``` syntax
         elementID.downToolTip
@@ -29,19 +29,19 @@ El atributo **downToolTip** especifica o recupera el texto de información sobre
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de lectura/escritura con un valor predeterminado de "" (cadena vacía) con una longitud máxima de 1024 caracteres.
+Este atributo es una cadena de lectura y escritura con un valor predeterminado de "" (cadena vacía) con una longitud máxima de 1024 caracteres.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna información sobre herramientas.
+Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -49,10 +49,10 @@ Cuando este atributo se establece en "" (cadena vacía), no se muestra ninguna i
 
 <dl> <dt>
 
-[**BUTTONELEMENT (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> <dt>
 
-[**BUTTONELEMENT. Down**](buttonelement-down.md)
+[**BUTTONELEMENT.down**](buttonelement-down.md)
 </dt> </dl>
 
  

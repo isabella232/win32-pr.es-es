@@ -4,12 +4,12 @@ description: Cada cadena de mensaje que especifique en el manifiesto debe hacer 
 ms.assetid: aeae9ef6-6ef7-46f5-a9ab-fabe418549b2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b55b94ea8e8a40de1401cf3aba97488d5531a77b441361e38f1ff98219940afc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb63e1b2b3080a89ef873fb0665d1d92350fe5d7
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118587903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812639"
 ---
 # <a name="localizing-message-strings"></a>Localización de cadenas de mensaje
 
@@ -53,11 +53,11 @@ En el ejemplo siguiente se muestra cómo definir una tabla de cadenas. Debe espe
 ```
 
 
-En lugar de agregar cadenas localizadas al manifiesto, debe crear un archivo de interfaz de usuario multilingüe (MUI) para cada idioma que admita. Use un archivo de texto de mensaje para especificar las cadenas localizadas.
+En lugar de agregar cadenas localizadas al manifiesto, debe crear un archivo de interfaz de usuario multilingüe (IAM) para cada idioma que admita. Use un archivo de texto de mensaje para especificar las cadenas localizadas.
 
 En el procedimiento siguiente se describe cómo crear un archivo CSV para inglés y francés.
 
-**Para crear un archivo MUI para inglés y francés**
+**Para crear un archivo CSV para inglés y francés**
 
 1.  Cree un archivo de texto de mensaje que cree las cadenas de mensaje en francés. Para obtener más información sobre cómo crear un archivo de texto de mensaje, vea [Archivos de texto de mensaje](/windows/desktop/EventLog/message-text-files). Los identificadores de mensaje que especifique en el archivo de texto del mensaje deben coincidir con los identificadores de recursos que el compilador de mensajes generó para las mismas cadenas en el manifiesto. Para determinar los identificadores de recursos usados para las cadenas del manifiesto, vea el archivo .h que el compilador de mensajes generó al compilar el manifiesto.
     ```Text
@@ -81,7 +81,7 @@ En el procedimiento siguiente se describe cómo crear un archivo CSV para inglé
     ```
 
 
-2.  Ejecute los siguientes comandos para crear el archivo DLL de recursos que contiene las cadenas localizadas. El messages.mc es el archivo de texto de mensaje que creó en el paso 1.
+2.  Ejecute los siguientes comandos para crear el archivo DLL de recursos que contiene las cadenas localizadas. El messages.mc es el archivo de texto del mensaje que creó en el paso 1.
     ```cmd
     mc -u -U messages.mc
 
@@ -92,7 +92,7 @@ En el procedimiento siguiente se describe cómo crear un archivo CSV para inglé
 
     
 
-3.  En la carpeta que contiene el proveedor, cree una subcarpeta para cada configuración regional que admita. El nombre de la subcarpeta debe ser el nombre de idioma de esa configuración regional. Por ejemplo, para 0x0409, use en-US como nombre de la carpeta.
+3.  En la carpeta que contiene el proveedor, cree una subcarpeta para cada configuración regional que admita. El nombre de la subcarpeta debe ser el nombre de idioma de esa configuración regional. Por ejemplo, por 0x0409, use en-US como nombre de la carpeta.
 4.  Cree un archivo .rcconfig que indique a la Muirct.exe que desea dividir los recursos de cadena de mensaje del archivo ejecutable y los archivos DLL de recursos. A continuación se muestra un archivo .rcconfig de ejemplo.
     ```XML
     <localization>
@@ -117,7 +117,7 @@ En el procedimiento siguiente se describe cómo crear un archivo CSV para inglé
     ```
  
 
-6.  Ejecute los siguientes Muirct.exe comandos para dividir las cadenas en francés del archivo DLL de recursos. Quite el archivo neutro del idioma (fr-FR \\messages.dll) después de crear el archivo DE LAA.
+6.  Ejecute los siguientes Muirct.exe comandos para dividir las cadenas en francés del archivo DLL de recursos. Quite el archivo neutral del idioma (fr-FR \\messages.dll) después de crear el archivo DE EXTENSIÓN.
     ```cmd
     muirct -q split.rcconfig -v 2 -x 0x040C -g 0x0409 messages.dll fr-FR\messages.dll fr-FR\provider.exe.mui
 

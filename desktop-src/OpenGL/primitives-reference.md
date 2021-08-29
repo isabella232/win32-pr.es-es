@@ -3,17 +3,17 @@ title: Referencia de primitivas
 description: Referencia de primitivas
 ms.assetid: a88d38f1-eeb9-484d-a987-aba545084330
 keywords:
-- Canalización de procesamiento de OpenGL, referencia de primitivas
-- referencia de primitivos OpenGL
+- Canalización de procesamiento openGL, referencia de primitivas
+- primitives reference OpenGL (Referencia primitivas de OpenGL)
 - OpenGL, referencia de primitivas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77c81727995b44afec170c5d3dfe34fe42a4fdc8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d2e637bd4ed7243f13e62fcbf626f1d3ee70a24de7c3666b4fdaec247aefc409
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485365"
 ---
 # <a name="primitives-reference"></a>Referencia de primitivas
 
@@ -42,9 +42,9 @@ ms.locfileid: "104357672"
 -   [**glTexParameter\***](gltexparameter-functions.md)
 -   [**glViewport**](glviewport.md)
 
- 
+ 
 
- 
+ 
 
 
 

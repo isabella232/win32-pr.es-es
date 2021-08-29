@@ -1,9 +1,9 @@
 ---
 title: Atributo MoreInfo
-description: El atributo MoreInfo es un valor de parámetro que se usa en interacciones comerciales.
+description: El atributo MoreInfo es un valor PARAM para su uso en interacciones comerciales.
 ms.assetid: 39158342-f060-4330-942e-5f2f94d30fd1
 keywords:
-- MoreInfo Media Player de Windows
+- Atributo MoreInfo Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d097de69a983f4803e032f9a15ee0de0fed8b0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a2538e7c6df04a373e3774e1730b61b7d20cea29ef302f8ac7257b0d5de295c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054583"
 ---
 # <a name="moreinfo-attribute"></a>Atributo MoreInfo
 
-El atributo **MoreInfo** es un valor de **parámetro** que se usa en interacciones comerciales.
+El **atributo MoreInfo** es un valor **PARAM** para su uso en interacciones comerciales.
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -30,19 +30,19 @@ El atributo **MoreInfo** es un valor de **parámetro** que se usa en interaccion
 -   [Pistas de CD](cd-track-attributes.md)
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo solo se almacena en la base de datos (o caché) de la biblioteca.
+Este atributo solo se almacena en la base de datos de biblioteca (o caché).
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

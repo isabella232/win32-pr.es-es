@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información sobre las constantes que proporciona DXGI.
+description: Esta sección contiene información sobre las constantes proporcionadas por DXGI.
 ms.assetid: f2eb846e-b887-413f-84f3-5bfb8bcfeb78
-title: Constantes de DXGI
+title: Constantes DXGI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76c99cd565036ac3b163c23794daf875d7e2e900
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ad9dbfa99534ea7a44c0add4d55b81fde91fc7e1c447db818543addeb1820e3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025675"
 ---
-# <a name="dxgi-constants"></a>Constantes de DXGI
+# <a name="dxgi-constants"></a>Constantes DXGI
 
-Esta sección contiene información sobre las constantes que proporciona DXGI.
+Esta sección contiene información sobre las constantes proporcionadas por DXGI.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -21,13 +21,13 @@ Esta sección contiene información sobre las constantes que proporciona DXGI.
 
 | Tema                                                                    | Descripción                                                                                                         |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [**\_identificador de depuración de DXGI \_**](dxgi-debug-id.md)<br/>                      | Valores de identificador único global (GUID) que identifican a los productores de mensajes de depuración.<br/>                      |
-| [**\_modos de enumeración de DXGI \_**](dxgi-enum-modes.md)<br/>                  | Opciones para enumerar los modos de presentación.<br/>                                                                   |
-| [**ERROR de DXGI \_**](dxgi-error.md)<br/>                             | Códigos de error que pueden ser devueltos por una función de DXGI.<br/>                                                     |
-| [**DXGI \_ presente**](dxgi-present.md)<br/>                         | Las constantes de [**DXGI \_ presentes**](dxgi-present.md) especifican las opciones para presentar fotogramas a la salida.<br/> |
-| [**\_recurso compartido de DXGI \_ \_ RW**](dxgi-shared-resource-rw.md)<br/> | Constantes de recursos compartidos.<br/>                                                                               |
-| [**Estado de DXGI \_**](dxgi-status.md)<br/>                           | Códigos de estado que pueden ser devueltos por las funciones de DXGI.<br/>                                                     |
-| [**uso de DXGI \_**](dxgi-usage.md)<br/>                             | Marcas para las opciones de creación de recursos y superficie.<br/>                                                         |
+| [**ID. \_ DE DEPURACIÓN DE \_ DXGI**](dxgi-debug-id.md)<br/>                      | Valores de identificador único global (GUID) que identifican los productores de mensajes de depuración.<br/>                      |
+| [**MODOS DE \_ ENUMERACIÓN \_ DXGI**](dxgi-enum-modes.md)<br/>                  | Opciones para enumerar los modos de presentación.<br/>                                                                   |
+| [**ERROR DE DXGI \_**](dxgi-error.md)<br/>                             | Códigos de error que puede devolver una función DXGI.<br/>                                                     |
+| [**DXGI \_ PRESENT**](dxgi-present.md)<br/>                         | Las [**constantes PRESENT \_ de DXGI**](dxgi-present.md) especifican opciones para presentar fotogramas a la salida.<br/> |
+| [**DXGI \_ SHARED \_ RESOURCE \_ RW**](dxgi-shared-resource-rw.md)<br/> | Constantes de recursos compartidos.<br/>                                                                               |
+| [**ESTADO DE \_ DXGI**](dxgi-status.md)<br/>                           | Códigos de estado que pueden devolver las funciones DXGI.<br/>                                                     |
+| [**USO DE \_ DXGI**](dxgi-usage.md)<br/>                             | Marcas para las opciones de creación de recursos y superficies.<br/>                                                         |
 
 
 

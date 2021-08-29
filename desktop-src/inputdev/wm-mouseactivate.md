@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_MOUSEACTIVATE (Winuser. h)
+title: WM_MOUSEACTIVATE mensaje (Winuser.h)
 description: Se envía cuando el cursor está en una ventana inactiva y el usuario presiona un botón del mouse. La ventana primaria recibe este mensaje solo si la ventana secundaria lo pasa a la función DefWindowProc.
 ms.assetid: 335c0819-a655-4dd1-9511-1f148b87271c
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_MOUSEACTIVATE
+- WM_MOUSEACTIVATE entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ba74141f8d519541d1e63327179fff2f27ad403
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15116c36ac9efb3e764564fbe426f8763508fd63759e02bd4bb9160d5815fb11
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451515"
 ---
-# <a name="wm_mouseactivate-message"></a>Mensaje de MOUSEACTIVATE de WM \_
+# <a name="wm_mouseactivate-message"></a>Mensaje \_ DE WM MOUSEACTIVATE
 
-Se envía cuando el cursor está en una ventana inactiva y el usuario presiona un botón del mouse. La ventana primaria recibe este mensaje solo si la ventana secundaria lo pasa a la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) .
+Se envía cuando el cursor está en una ventana inactiva y el usuario presiona un botón del mouse. La ventana primaria recibe este mensaje solo si la ventana secundaria lo pasa a la [**función DefWindowProc.**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,31 +41,31 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Identificador de la ventana primaria de nivel superior de la ventana que se va a activar.
+Identificador de la ventana primaria de nivel superior de la ventana que se está activando.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior especifica el valor de la prueba de posicionamiento devuelto por la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado del procesamiento del mensaje [**\_ NCHITTEST de WM**](wm-nchittest.md) . Para obtener una lista de los valores de las pruebas de posicionamiento, consulte **WM \_ NCHITTEST**.
+La palabra de orden bajo especifica el valor de prueba de acceso devuelto por la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado del procesamiento del [**mensaje WM \_ NCHITTEST.**](wm-nchittest.md) Para obtener una lista de valores de prueba de acceso, vea **WM \_ NCHITTEST**.
 
-La palabra de orden superior especifica el identificador del mensaje de mouse que se genera cuando el usuario presionó un botón del mouse. El mensaje del mouse se descarta o se envía a la ventana, dependiendo del valor devuelto.
+La palabra de orden superior especifica el identificador del mensaje del mouse generado cuando el usuario presiona un botón del mouse. El mensaje del mouse se descarta o se publica en la ventana, según el valor devuelto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto especifica si se debe activar la ventana y si se debe descartar el identificador del mensaje del mouse. Debe ser uno de los valores siguientes.
+El valor devuelto especifica si se debe activar la ventana y si se debe descartar el identificador del mensaje del mouse. Debe ser uno de los siguientes valores.
 
 
 
 | Código o valor devuelto                                                                                                                                          | Descripción                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| <dl> <dt>**MA \_ ACTIVAR**</dt> <dt>1</dt> </dl>         | Activa la ventana y no descarta el mensaje del mouse.<br/>         |
-| <dl> <dt>**MA \_ ACTIVATEANDEAT**</dt> <dt>2</dt> </dl>   | Activa la ventana y descarta el mensaje del mouse.<br/>                 |
-| <dl> <dt>**MA \_ Noactivate**</dt> <dt>3</dt> </dl>       | No activa la ventana y no descarta el mensaje del mouse.<br/> |
-| <dl> <dt>**MA \_ NOACTIVATEANDEAT**</dt> <dt>4</dt> </dl> | No activa la ventana, pero descarta el mensaje del mouse.<br/>         |
+| <dl> <dt>**Ma \_ ACTIVATE**</dt> <dt>1</dt> </dl>         | Activa la ventana y no descarta el mensaje del mouse.<br/>         |
+| <dl> <dt>**Ma \_ ACTIVATEANDEAT**</dt> <dt>2</dt> </dl>   | Activa la ventana y descarta el mensaje del mouse.<br/>                 |
+| <dl> <dt>**Ma \_ NOACTIVATE**</dt> <dt>3</dt> </dl>       | No activa la ventana y no descarta el mensaje del mouse.<br/> |
+| <dl> <dt>**Ma \_ NOACTIVATEANDEAT**</dt> <dt>4</dt> </dl> | No activa la ventana, pero descarta el mensaje del mouse.<br/>         |
 
 
 
@@ -73,7 +73,7 @@ El valor devuelto especifica si se debe activar la ventana y si se debe descarta
 
 ## <a name="remarks"></a>Observaciones
 
-La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) pasa el mensaje a la ventana primaria de una ventana secundaria antes de que se produzca cualquier procesamiento. La ventana primaria determina si se debe activar la ventana secundaria. Si activa la ventana secundaria, la ventana primaria debe devolver **MA \_ noactivate** o **MA \_ NOACTIVATEANDEAT** para evitar que el sistema procese el mensaje más allá.
+La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) pasa el mensaje a la ventana primaria de una ventana secundaria antes de que se produzca cualquier procesamiento. La ventana primaria determina si se debe activar la ventana secundaria. Si activa la ventana secundaria, la ventana primaria debe devolver **MA \_ NOACTIVATE** o **MA \_ NOACTIVATEANDEAT** para evitar que el sistema procese aún más el mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -103,10 +103,10 @@ La función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**NCHITTEST de WM \_**](wm-nchittest.md)
+[**WM \_ NCHITTEST**](wm-nchittest.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada del mouse](mouse-input.md)

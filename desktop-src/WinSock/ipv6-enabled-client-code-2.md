@@ -1,19 +1,19 @@
 ---
-description: El código siguiente es el archivo Client. c independiente de IP, que es una versión habilitada para IPv6 del archivo Simplec. c.
+description: El código siguiente es el archivo Client.c independiente de IP, que es una versión habilitada para IPv6 del archivo Simplec.c.
 ms.assetid: a68439cd-0b27-447b-9766-e661c32eee09
-title: Código de cliente de IPv6-Enabled
+title: IPv6-Enabled de cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97823060c5d98927303259eaddc1d3096c93160d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e20b293e5d327783cd69485fcabaa89ba14ebfe678538a3c19b028d322eb4946
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758015"
 ---
-# <a name="ipv6-enabled-client-code"></a>Código de cliente de IPv6-Enabled
+# <a name="ipv6-enabled-client-code"></a>IPv6-Enabled de cliente
 
-El código siguiente es el archivo Client. c independiente de IP, que es una versión habilitada para IPv6 del archivo Simplec. c.
+El código siguiente es el archivo Client.c independiente de IP, que es una versión habilitada para IPv6 del archivo Simplec.c.
 
 
 ```C++

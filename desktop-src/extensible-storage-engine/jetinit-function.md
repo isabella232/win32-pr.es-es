@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d074e07dec88bf0b33ec56b1391986758fbd388c
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 3fabe14a5667b65d05b71124b7c196c1b4d99945
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984538"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465412"
 ---
 # <a name="jetinit-function"></a>Función JetInit
 
@@ -51,13 +51,13 @@ Para Windows 2000, este parámetro se omite y siempre debe ser NULL.
 Para Windows XP y versiones posteriores, el uso de este parámetro depende del modo de funcionamiento del motor. Si el motor funciona en modo heredado (modo de compatibilidad Windows 2000) donde solo se admite una instancia, este parámetro puede ser NULL o puede establecerse en un búfer de salida válido que devolverá el identificador de instancia global creado como efecto secundario de la inicialización. Este búfer de salida debe establecerse en NULL o JET_instanceNil. A continuación, este identificador de instancia se puede pasar a cualquier otra función que use una instancia de . Si el motor funciona en modo de varias instancias, este parámetro debe establecerse en un búfer de entrada válido que contenga el identificador de instancia devuelto por la instancia de [función JetCreateInstance](./jetcreateinstance-function.md) que se está inicializando.
 
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Una instancia de debe inicializarse con una llamada a **JetInit** antes de que pueda ser utilizada por cualquier otro elemento que no [sea JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
 Una instancia de se destruye mediante una llamada a la función [JetTerm,](./jetterm-function.md) incluso si esa instancia nunca se inicializó **mediante JetInit**. Una instancia de es la unidad de capacidad de recuperación del motor de base de datos. Controla el ciclo de vida de todos los archivos usados para proteger la integridad de los datos en un conjunto de archivos de base de datos. Estos archivos incluyen el archivo de punto de comprobación y los archivos de registro de transacciones.
 
-El número máximo de instancias que se pueden crear en cualquier momento se controla mediante JET_paramMaxInstances [,](./resource-parameters.md)que se puede configurar mediante una llamada a [JetSetSystemParameter](./jetsetsystemparameter-function.md). Cuando el motor de base de datos se inicializa por primera vez, **JetInit** creará un conjunto inicial de archivos para admitir esa instancia. Estos archivos incluyen un archivo de punto de comprobación (denominado \<[JET_paramBaseName](./transaction-log-parameters.md)\> . CHK), un conjunto de archivos de registro de transacciones reservados (denominado RES1. LOG y RES2. LOG), un archivo de registro de transacciones inicial (denominado \<[JET_paramBaseName](./transaction-log-parameters.md)\> . LOG) y un archivo de base de datos temporal (denominado según [JET_paramTempPath](./temporary-database-parameters.md)). Si [JET_paramRecovery](./transaction-log-parameters.md) está establecido en "Desactivado", no se crearán el archivo de punto de comprobación ni los archivos de registro. Si [JET_paramMaxTemporaryTables](./temporary-database-parameters.md) se establece en cero, no se creará el archivo de base de datos temporal. Estos archivos representan la superficie en disco de una instancia y deben administrarse con cuidado. Si estos archivos están dañados individualmente o con respecto a otros, es posible que se pierdan los datos almacenados en las bases de datos asociadas a la instancia.
+El número máximo de instancias que se pueden crear en cualquier momento se controla mediante JET_paramMaxInstances [,](./resource-parameters.md)que se puede configurar mediante una llamada a [JetSetSystemParameter](./jetsetsystemparameter-function.md). Cuando el motor de base de datos se inicializa por primera vez, **JetInit** creará un conjunto inicial de archivos para admitir esa instancia. Estos archivos incluyen un archivo de punto de comprobación (denominado \<[JET_paramBaseName](./transaction-log-parameters.md)\> . CHK), un conjunto de archivos de registro de transacciones reservados (denominado RES1. LOG y RES2. LOG), un archivo de registro de transacciones inicial (denominado \<[JET_paramBaseName](./transaction-log-parameters.md)\> . LOG) y un archivo de base de datos temporal (denominado [según JET_paramTempPath](./temporary-database-parameters.md)). Si [JET_paramRecovery](./transaction-log-parameters.md) está establecido en "Desactivado", no se crearán el archivo de punto de comprobación ni los archivos de registro. Si [JET_paramMaxTemporaryTables](./temporary-database-parameters.md) se establece en cero, no se creará el archivo de base de datos temporal. Estos archivos representan la superficie en disco de una instancia y deben administrarse con cuidado. Si estos archivos están dañados individualmente o con respecto a otros, es posible que se pierdan los datos almacenados en las bases de datos asociadas a la instancia.
 
 Cuando el motor de base de datos se inicializa con un conjunto existente de archivos de registro de transacciones, esos archivos se inspeccionarán para ver si la anterior ejecución de la instancia ha sufrido un bloqueo. Si se detecta un bloqueo, se realizará automáticamente la recuperación de bloqueos. Este proceso reconstruirá las bases de datos adjuntas a la instancia durante la anterior ejecución del motor y guardará los cambios de nuevo en los archivos de base de datos. El resultado serán bases de datos coherentes con las transacciones. Este proceso puede tardar bastante tiempo si el número de archivos de registro de transacciones que se reproducen en las bases de datos es grande.
 
@@ -79,7 +79,7 @@ Estos errores casi siempre se deben a problemas de hardware y, por tanto, no se 
 
   - JET_errInvalidLogSequence
 
-Si la recuperación se ejecuta en un conjunto de registros, para los que no todas las bases de datos están presentes (lo que devolverá el error JET_errAttachedDatabaseMismatch en circunstancias normales) y el cliente desea que la recuperación continúe a pesar de las bases de datos que faltan, se puede usar el bitReplayIgnoreMissingDB de JET_ para continuar con la recuperación de las bases de datos disponibles. La aplicación puede evitar estos errores. La aplicación debe tener cuidado de proteger el repositorio de estos archivos de la manipulación por parte de fuerzas externas, como el usuario u otras aplicaciones. Si la aplicación desea destruir una instancia por completo, se deben eliminar todos los archivos asociados a la instancia. Estos incluyen el archivo de punto de comprobación, los archivos de registro de transacciones y los archivos de base de datos asociados a la instancia.
+Si la recuperación se ejecuta en un conjunto de registros, para los que no todas las bases de datos están presentes (lo que devolverá el error JET_errAttachedDatabaseMismatch en circunstancias normales) y el cliente desea que la recuperación continúe a pesar de las bases de datos que faltan, se puede usar el bitReplayIgnoreMissingDB de JET_ para continuar con la recuperación de las bases de datos disponibles. La aplicación puede evitar estos errores. La aplicación debe tener cuidado de proteger el repositorio de estos archivos frente a la manipulación por parte de fuerzas externas, como el usuario u otras aplicaciones. Si la aplicación desea destruir una instancia por completo, se deben eliminar todos los archivos asociados a la instancia. Estos incluyen el archivo de punto de comprobación, los archivos de registro de transacciones y los archivos de base de datos asociados a la instancia.
 
 La **función JetInit** se comporta de forma diferente, con respecto a los archivos de base de datos asociados a la instancia, entre Windows 2000 y versiones posteriores.
 
@@ -87,18 +87,12 @@ La **función JetInit** se comporta de forma diferente, con respecto a los archi
 
 **Windows XP:**  En Windows XP y versiones posteriores, **JetInit** desasocia automáticamente todas las bases de datos de la instancia de . Esto significa que siempre se debe llamar a [JetAttachDatabase](./jetattachdatabase-function.md) después **de JetInit** en este caso.
 
-Cualquier aplicación escrita para ejecutarse en Windows 2000 y en versiones posteriores siempre debe llamar a [JetAttachDatabase](./jetattachdatabase-function.md) después **de JetInit**. Si la aplicación se ejecuta Windows 2000, debe esperar ver JET_wrnDatabaseAttached en algunos casos. Consulte [JetAttachDatabase para](./jetattachdatabase-function.md) obtener más información.
+Cualquier aplicación escrita para ejecutarse en Windows 2000 y en versiones posteriores siempre debe llamar a [JetAttachDatabase](./jetattachdatabase-function.md) después de **JetInit**. Si la aplicación se ejecuta en Windows 2000, debe esperar ver JET_wrnDatabaseAttached en algunos casos. Consulte [JetAttachDatabase para](./jetattachdatabase-function.md) obtener más información.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DRV_EXITSESSION (mmsystem. h)
+title: DRV_EXITSESSION mensaje (Mmsystem.h)
 description: Notifica al controlador que Windows se está preparando para salir. El controlador debe prepararse para la terminación.
 ms.assetid: 8d200d64-b89b-47f1-ad21-ab86987efa4b
 keywords:
-- Mensaje de DRV_EXITSESSION de Windows multimedia
+- DRV_EXITSESSION mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 236da457541af2d594bc708caf5b5ed07e58cc04
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03b8579c82392bf965474248730c62a520e16341965b7b7d4e91824e40675ff8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691595"
 ---
-# <a name="drv_exitsession-message"></a>\_Mensaje EXITSESSION DRV
+# <a name="drv_exitsession-message"></a>Mensaje \_ EXITSESSION de DRV
 
 Notifica al controlador que Windows se está preparando para salir. El controlador debe prepararse para la terminación.
 
@@ -32,7 +32,7 @@ Notifica al controlador que Windows se está preparando para salir. El controlad
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificador del controlador instalable. Este es el mismo valor que el controlador devolvió previamente desde el mensaje [**\_ abierto DRV**](drv-open.md) .
+Identificador del controlador instalable. Este es el mismo valor devuelto anteriormente por el controlador del [**mensaje DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
@@ -47,9 +47,9 @@ Identificador de la instancia del controlador instalable.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No se usan los parámetros *lParam1* y *lParam2* .
+No se usan los parámetros *lParam1* y *lParam2.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ No se usan los parámetros *lParam1* y *lParam2* .
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

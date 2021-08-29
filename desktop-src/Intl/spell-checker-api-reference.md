@@ -1,22 +1,22 @@
 ---
-description: Referencia de la API de revisión ortográfica
+description: Referencia de spell checking API
 ms.assetid: 87CFC55A-5F55-40F1-96D7-6BD41C59110A
-title: Referencia de la API de revisión ortográfica
+title: Referencia de spell checking API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f38ff2a4f126780e721ee60fbc1b9b4513d173c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95073252ec2ba74f90ec58f1f1391440ec97078fd54eaf5933c4b591e7f4284d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130195"
 ---
-# <a name="spell-checking-api-reference"></a>Referencia de la API de revisión ortográfica
+# <a name="spell-checking-api-reference"></a>Referencia de spell checking API
 
-En los temas siguientes se definen los elementos que forman parte de la API de revisión ortográfica:
+En los temas siguientes se definen los elementos que forman parte de Spell Checking API:
 
--   [Interfaces de revisión ortográfica](spell-checker-interfaces.md)
--   [Enumeraciones de revisión ortográfica](spell-checker-enumerations.md)
+-   [Interfaces de corrector ortográfica](spell-checker-interfaces.md)
+-   [Enumeraciones de corrector ortográfica](spell-checker-enumerations.md)
 
  
 

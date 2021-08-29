@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentConsistentTimeMismatchException'
-title: Constructor de EsentConsistentTimeMismatchException
+description: 'Más información sobre: Constructor EsentConsistentTimeMismatchException'
+title: Constructor EsentConsistentTimeMismatchException
 TOCTitle: 'EsentConsistentTimeMismatchException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentConsistentTimeMismatchException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentconsistenttimemismatchexception.esentconsistenttimemismatchexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a9adc4f2d58cea7b8b4b5ae9653a95716e907a3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95370c67a75ed2e07f827ea33488dcde16d09bd982287443c3f69886ea89d270
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561285"
 ---
-# <a name="esentconsistenttimemismatchexception-constructor"></a>Constructor de EsentConsistentTimeMismatchException
+# <a name="esentconsistenttimemismatchexception-constructor"></a>Constructor EsentConsistentTimeMismatchException
 
 Inicializa una nueva instancia de la clase EsentConsistentTimeMismatchException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentConsistentTimeMismatchException()
 public EsentConsistentTimeMismatchException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentConsistentTimeMismatchException()
 
 [Miembros de EsentConsistentTimeMismatchException](./esentconsistenttimemismatchexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

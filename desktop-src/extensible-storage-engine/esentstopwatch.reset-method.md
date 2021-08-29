@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentStopwatch. Reset (método)'
-title: EsentStopwatch. Reset (método)
+description: 'Más información sobre: Método EsentStopwatch.Reset'
+title: Método EsentStopwatch.Reset
 TOCTitle: 'Reset method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentStopwatch.Reset
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.reset(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b463989ab84af4306d2170f50b27b499631d6609
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d317764d61666fd783de18acd046d48d11e88cf0f59ba6d1181017f76cea21e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063995"
 ---
-# <a name="esentstopwatchreset-method"></a>EsentStopwatch. Reset (método)
+# <a name="esentstopwatchreset-method"></a>Método EsentStopwatch.Reset
 
 Detiene la medición del intervalo de tiempo y restablece las estadísticas del subproceso.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ instance.Reset()
 public void Reset()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ public void Reset()
 
 [Miembros de EsentStopwatch](./esentstopwatch-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

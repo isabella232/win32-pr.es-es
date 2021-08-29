@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TDM_SET_PROGRESS_BAR_POS (commctrl. h)
+title: TDM_SET_PROGRESS_BAR_POS mensaje (Commctrl.h)
 description: Establece la posición de la barra de progreso en un cuadro de diálogo de tarea.
 ms.assetid: 82247d70-8527-4195-87af-5c4e5fd1d1a2
 keywords:
-- TDM_SET_PROGRESS_BAR_POS controles de mensajes de Windows
+- TDM_SET_PROGRESS_BAR_POS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58e12b67c218f21c72f28089a3246d52c6165740
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c68bd3e4bfe8579eb2c6800eb600abc6eb72f704122850982e131ad3109b7517
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104565"
 ---
-# <a name="tdm_set_progress_bar_pos-message"></a>Mensaje de PDV de la \_ \_ barra de progreso establecida \_ en TDM \_
+# <a name="tdm_set_progress_bar_pos-message"></a>Mensaje TDM \_ SET \_ PROGRESS BAR \_ \_ POS
 
 Establece la posición de la barra de progreso en un cuadro de diálogo de tarea.
 
@@ -29,14 +29,14 @@ Establece la posición de la barra de progreso en un cuadro de diálogo de tarea
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-Valor **int** que especifica la nueva posición.
+Un **valor int** que especifica la nueva posición.
 
 </dd> <dt>
 
-*lParam* \[ de\]
+*lParam* \[ En\]
 </dt> <dd>
 
 Debe ser cero.
@@ -53,9 +53,9 @@ Devuelve la posición anterior.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

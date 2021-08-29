@@ -1,19 +1,19 @@
 ---
-description: 'Otras constantes D3DX incluyen lo siguiente:'
+description: 'Otras constantes D3DX incluyen las siguientes:'
 ms.assetid: 4f868a80-ad86-4598-9de3-a026e03aab93
 title: Otras constantes D3DX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1aa75177a96cdf4cecba6063e12dd54a4f47a851
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 6f7134f411322f4d5e0d6eaf4d4bf5cfaf8eb9a2479ea535fa8e5d8f5ec12846
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026185"
 ---
 # <a name="other-d3dx-constants"></a>Otras constantes D3DX
 
-Otras constantes D3DX incluyen lo siguiente:
+Otras constantes D3DX incluyen las siguientes:
 
 ## <a name="16-bit-floating-point-numbers"></a>Números de punto flotante de 16 bits
 
@@ -55,7 +55,7 @@ Estas \# define se declaran en d3dx9.h y d3dx9math.h.
 
  
 
-Estas \# define se declaran en d3dx9math.h. Para obtener más información sobre PRT, vea [Precomputed Radiance Transfer (Direct3D 9) (Transferencia de base precalutada [Direct3D 9]).](precomputed-radiance-transfer.md)
+Estas \# define se declaran en d3dx9math.h. Para obtener más información sobre PRT, vea [Precomputed Radiance Transfer (Direct3D 9)](precomputed-radiance-transfer.md).
 
 ## <a name="texture-constants"></a>Constantes de textura
 

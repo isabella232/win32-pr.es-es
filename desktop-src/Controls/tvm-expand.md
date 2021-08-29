@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_EXPAND (commctrl. h)
-description: El \_ mensaje TVM expand expande o contrae la lista de elementos secundarios asociada al elemento primario especificado, si existe. Puede enviar este mensaje explícitamente o mediante la \_ macro Expand de TreeView.
+title: TVM_EXPAND mensaje (Commctrl.h)
+description: El mensaje EXPAND de TVM expande o contrae la lista de elementos secundarios asociados al \_ elemento primario especificado, si los hay. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ Expand.
 ms.assetid: d6c2e5b2-ce36-4c2b-b527-91c6de56e305
 keywords:
-- TVM_EXPAND controles de mensajes de Windows
+- TVM_EXPAND controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14d5cd7577c6f4581865569c3aefca93f13aa305
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 025527dc86e832cf24a86cf9c973d1e2e5103fa23e597bc14cb35e00dba276a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104425"
 ---
-# <a name="tvm_expand-message"></a>\_Mensaje de expansión TVM
+# <a name="tvm_expand-message"></a>Mensaje \_ DE EXPANSIÓN DE TVM
 
-El mensaje **TVM \_ Expand** expande o contrae la lista de elementos secundarios asociada al elemento primario especificado, si existe. Puede enviar este mensaje explícitamente o mediante la macro [**\_ Expand de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_expand) .
+El **mensaje EXPAND \_ de TVM** expande o contrae la lista de elementos secundarios asociados al elemento primario especificado, si los hay. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ Expand.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_expand)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,17 +32,17 @@ El mensaje **TVM \_ Expand** expande o contrae la lista de elementos secundarios
 *wParam* 
 </dt> <dd>
 
-Marca de acción. Este parámetro puede ser uno o varios de los siguientes valores:
+Marca de acción. Este parámetro puede ser uno o varios de los valores siguientes:
 
 
 
 | Value                                                                                                                                                                     | Significado                                                                                                                                                                                                                                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TVE_COLLAPSE"></span><span id="tve_collapse"></span><dl> <dt>**TVE \_ contraer**</dt> </dl>                | Contrae la lista. <br/>                                                                                                                                                                                                                                                       |
-| <span id="TVE_COLLAPSERESET"></span><span id="tve_collapsereset"></span><dl> <dt>**TVE \_ COLLAPSERESET**</dt> </dl> | Contrae la lista y quita los elementos secundarios. Se restablece la marca de estado [**TVIS \_ EXPANDEDONCE**](tree-view-control-item-states.md) . Esta marca debe usarse con la \_ marca de contraer TVE.<br/>                                                                 |
-| <span id="TVE_EXPAND"></span><span id="tve_expand"></span><dl> <dt>**TVE \_ expandir**</dt> </dl>                      | Expande la lista.<br/>                                                                                                                                                                                                                                                          |
-| <span id="TVE_EXPANDPARTIAL"></span><span id="tve_expandpartial"></span><dl> <dt>**TVE \_ EXPANDPARTIAL**</dt> </dl> | [Versión 4,70](common-control-versions.md). Expande parcialmente la lista. En este estado, los elementos secundarios son visibles y se muestra el signo más (+) del elemento primario, que indica que se puede expandir. Esta marca se debe usar en combinación con la \_ marca de expansión TVE.<br/> |
-| <span id="TVE_TOGGLE"></span><span id="tve_toggle"></span><dl> <dt>**TVE \_ alternar**</dt> </dl>                      | Contrae la lista si está expandida o la expande si está contraída.<br/>                                                                                                                                                                                                     |
+| <span id="TVE_COLLAPSE"></span><span id="tve_collapse"></span><dl> <dt>**TVE \_ COLLAPSE**</dt> </dl>                | Contrae la lista. <br/>                                                                                                                                                                                                                                                       |
+| <span id="TVE_COLLAPSERESET"></span><span id="tve_collapsereset"></span><dl> <dt>**TVE \_ COLLAPSERESET**</dt> </dl> | Contrae la lista y quita los elementos secundarios. Se restablece la marca de estado [**\_ TVIS EXPANDEDONCE.**](tree-view-control-item-states.md) Esta marca debe usarse con la marca \_ COLLAPSE de TVE.<br/>                                                                 |
+| <span id="TVE_EXPAND"></span><span id="tve_expand"></span><dl> <dt>**TVE \_ EXPAND**</dt> </dl>                      | Expande la lista.<br/>                                                                                                                                                                                                                                                          |
+| <span id="TVE_EXPANDPARTIAL"></span><span id="tve_expandpartial"></span><dl> <dt>**TVE \_ EXPANDPARTIAL**</dt> </dl> | [Versión 4.70.](common-control-versions.md) Expande parcialmente la lista. En este estado, los elementos secundarios están visibles y se muestra el signo más (+) del elemento primario, que indica que se puede expandir. Esta marca debe usarse en combinación con la marca \_ EXPAND de TVE.<br/> |
+| <span id="TVE_TOGGLE"></span><span id="tve_toggle"></span><dl> <dt>**ALTERNANCIA DE TVE \_**</dt> </dl>                      | Contrae la lista si se expande o la expande si está contraida.<br/>                                                                                                                                                                                                     |
 
 
 
@@ -53,21 +53,21 @@ Marca de acción. Este parámetro puede ser uno o varios de los siguientes valor
 *lParam* 
 </dt> <dd>
 
-Identificador del elemento primario que se va a expandir o contraer.
+Controlar el elemento primario que se expandirá o contraerá.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si la operación se realizó correctamente o cero en caso contrario.
+Devuelve un valor distinto de cero si la operación se ha realizado correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La expansión de un nodo que ya se ha expandido se considera una operación correcta y [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) devuelve un valor distinto de cero. Al contraer un nodo, se devuelve cero si el nodo ya está contraído; en caso contrario, devuelve un valor distinto de cero. El intento de expandir o contraer un nodo que no tiene elementos secundarios se considera un error y **SendMessage** devuelve cero.
+La expansión de un nodo que ya está expandido se considera una operación correcta y [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) devuelve un valor distinto de cero. Al contraer un nodo, se devuelve cero si el nodo ya está contraído; de lo contrario, devuelve distinto de cero. El intento de expandir o contraer un nodo que no tiene ningún nodo secundario se considera un error y **SendMessage** devuelve cero.
 
-Cuando se expande un elemento por primera vez mediante un mensaje de **\_ expansión TVM** , la acción genera los códigos de notificación [TVN \_ ITEMEXPANDING](tvn-itemexpanding.md) y [TVN \_ ITEMEXPANDED](tvn-itemexpanded.md) y se establece la marca de estado [**TVIS \_**](tree-view-control-item-states.md) EXPANDEDONCE del elemento. Siempre y cuando esta marca de estado permanezca establecida, los mensajes de **\_ expansión TVM** posteriores no generarán \_ notificaciones de TVN ITEMEXPANDING o TVN \_ ITEMEXPANDED. Para restablecer la marca de estado **TVIS \_ EXPANDEDONCE** , debe enviar un mensaje **TVM \_ Expand** con las \_ marcas TVE Collapse y TVE \_ COLLAPSERESET establecidas. Al intentar establecer explícitamente **TVIS \_ EXPANDEDONCE** , se producirá un comportamiento imprevisible.
+Cuando un elemento se expande por primera vez mediante un mensaje EXPAND de **TVM, \_** la acción genera los códigos de notificación [TVN \_ ITEMEXPANDING](tvn-itemexpanding.md) y [TVN \_ ITEMEXPANDED](tvn-itemexpanded.md) y se establece la marca de estado [**TVIS \_ EXPANDEDONCE**](tree-view-control-item-states.md) del elemento. Mientras esta marca de estado permanezca establecida, los mensajes EXPAND de **\_ TVM** subsiguientes no generarán notificaciones \_ ITEMEXPANDING de TVN o \_ ITEMEXPANDED de TVN. Para restablecer la marca de estado **TVIS \_ EXPANDEDONCE,** debe enviar un mensaje **TVM \_ EXPAND** con las marcas TVE COLLAPSE y \_ TVE \_ COLLAPSERESET establecidas. Si se intenta establecer explícitamente **TVIS \_ EXPANDEDONCE,** se provocará un comportamiento impredecible.
 
-Se puede producir un error en la operación de expansión si el propietario del control TreeView deniega la operación en respuesta a una notificación [ \_ ITEMEXPANDING de TVN](tvn-itemexpanding.md) .
+La operación de expansión puede producir un error si el propietario del control treeview deniega la operación en respuesta a una notificación [ \_ ITEMEXPANDING de TVN.](tvn-itemexpanding.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,9 +75,9 @@ Se puede producir un error en la operación de expansión si el propietario del 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

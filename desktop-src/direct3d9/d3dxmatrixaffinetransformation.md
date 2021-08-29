@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7329ffbffe5ffd89ed64e5386246f39699618960
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 91e3a29daebcc41dbb1df022b8423a82810d5a660905474a4c6d5f14d9fc60d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791715"
 ---
 # <a name="d3dxmatrixaffinetransformation-function-d3dx9mathh"></a>Función D3DXMatrixAffineTransformation (D3dx9math.h)
 
@@ -105,7 +105,7 @@ donde:
 
 M <sub>out</sub> = matriz de salida (*pOut*)
 
-Ms = matriz de escalado (*escalado*)
+Ms = matriz de escalado (*Escalado*)
 
 M <sub>rc</sub> = centro de la matriz de rotación (*pRotationCenter*)
 
@@ -115,7 +115,7 @@ Mt = matriz de traducción (*pTranslation*)
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXMatrixAffineTransformation** se puede usar como parámetro para otra función.
 
-Para las transformaciones de afín 2D, use [**D3DXMatrixAffineTransformation2D**](d3dxmatrixaffinetransformation2d.md).
+Para las transformaciones de afín 2D, use [**D3DXMatrixAffineTransformation2D.**](d3dxmatrixaffinetransformation2d.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -128,7 +128,7 @@ Para las transformaciones de afín 2D, use [**D3DXMatrixAffineTransformation2D**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

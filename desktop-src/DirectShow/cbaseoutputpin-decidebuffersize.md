@@ -1,5 +1,5 @@
 ---
-description: 'Método CBaseOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos del búfer.'
+description: 'Método CBaseOutputPin.DecideBufferSize: el método DecideBufferSize establece los requisitos de búfer.'
 ms.assetid: 1f7a3424-18ba-4a10-b09f-947ee8585ffa
 title: Método CBaseOutputPin.DecideBufferSize (Amfilter.h)
 ms.topic: reference
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7a76f058e2f9c07a344453db87046704e26280a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b671b32069f97e498ea9b369ecf8d305055880d4b06bb04ab4eeb6121fef6ee2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793220"
 ---
-# <a name="cbaseoutputpindecidebuffersize-method"></a>CBaseOutputPin.DecideBufferSize (método)
+# <a name="cbaseoutputpindecidebuffersize-method"></a>Método CBaseOutputPin.DecideBufferSize
 
 El `DecideBufferSize` método establece los requisitos del búfer.
 
@@ -71,12 +71,12 @@ Invalide este método en la clase derivada. Llame al [**método IMemAllocator::S
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

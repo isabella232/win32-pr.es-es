@@ -4,12 +4,12 @@ description: Los ejemplos de código de esta sección muestran cómo realizar ta
 ms.assetid: 20c806d8-1630-4527-ac27-325d943605f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e07909d9657e6814d3c6e999003f89c25e8c36
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 28c7789c6ec7bf1fdc3f94eafb61c5113e970636005a1e8fdfbb3c86d9b609ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077859"
 ---
 # <a name="using-combo-boxes"></a>Usar cuadros combinados
 
@@ -21,9 +21,9 @@ Los ejemplos de código de esta sección muestran cómo realizar tareas asociada
 
 | Tema                                                                                    | Descripción                                                                                               |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Cómo crear un cuadro combinado simple](create-a-simple-combo-box.md)<br/>             | En este tema se describe cómo crear, agregar y recuperar elementos de un cuadro combinado simple. <br/> |
-| [Cómo crear un Owner-Drawn cuadro combinado](create-an-owner-drawn-combo-box.md)<br/> | En este tema se muestra cómo usar un cuadro combinado dibujado por el propietario.<br/>                                   |
-| [Cómo subclase de un cuadro combinado](subclass-a-combo-box.md)<br/>                       | En este tema se muestra cómo subclases de los cuadros combinados. <br/>                                          |
+| [Cómo crear un cuadro combinado simple](create-a-simple-combo-box.md)<br/>             | En este tema se describe cómo crear, agregar elementos y recuperar elementos de un cuadro combinado simple. <br/> |
+| [Cómo crear un cuadro Owner-Drawn combinado](create-an-owner-drawn-combo-box.md)<br/> | En este tema se muestra cómo usar un cuadro combinado dibujado por el propietario.<br/>                                   |
+| [Cómo crear subclases de un cuadro combinado](subclass-a-combo-box.md)<br/>                       | En este tema se muestra cómo crear subclases de cuadros combinados. <br/>                                          |
 
 
 

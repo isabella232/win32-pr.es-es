@@ -1,19 +1,19 @@
 ---
-title: Descripción de las funciones de MprInfo y los encabezados de información
-description: Las siguientes funciones requieren que el llamador pase una estructura o un encabezado de información como uno de los parámetros.
+title: Descripción de las funciones mprInfo y los encabezados de información
+description: Las siguientes funciones requieren que el autor de la llamada pase una estructura de información o un encabezado como uno de los parámetros.
 ms.assetid: 389002c9-2d24-4b35-ab5b-801fe2091db9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 001c39bf28500d7261b3eb99abf0266470daf3d2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac170b17b04bf9912636e9565e8fdf225c903fe5d6dcbf8ef02d619e5009d889
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025425"
 ---
-# <a name="understanding-mprinfo-functions-and-information-headers"></a>Descripción de las funciones de MprInfo y los encabezados de información
+# <a name="understanding-mprinfo-functions-and-information-headers"></a>Descripción de las funciones mprInfo y los encabezados de información
 
-Las siguientes funciones requieren que el llamador pase una estructura o un *encabezado* de información como uno de los parámetros.
+Las siguientes funciones requieren que el autor de la llamada pase una estructura de información o *un encabezado* como uno de los parámetros.
 
 
 
@@ -26,9 +26,9 @@ Las siguientes funciones requieren que el llamador pase una estructura o un *enc
 
 
 
- 
+ 
 
-Del mismo modo, las siguientes funciones devuelven encabezados de información.
+De forma similar, las siguientes funciones devuelven encabezados de información.
 
 
 
@@ -39,17 +39,17 @@ Del mismo modo, las siguientes funciones devuelven encabezados de información.
 
 
 
- 
+ 
 
-En el caso de las funciones de transporte, el encabezado de información contiene información global para el transporte. En el caso de las funciones de cliente (InterfaceTransport), el encabezado contiene información específica del cliente (por ejemplo, OSPF) que se administra.
+Para las funciones de transporte, el encabezado de información contiene información global para el transporte. Para las funciones de cliente (InterfaceTransport), el encabezado contiene información específica del cliente (por ejemplo, OSPF) que se administra.
 
-Los encabezados de información y su contenido deben manipularse solo mediante las funciones de [MprInfo](router-information-functions.md) . Los desarrolladores no deben intentar manipular el contenido de los encabezados de información directamente.
+Los encabezados de información y su contenido solo deben manipularse mediante las [funciones MprInfo.](router-information-functions.md) Los desarrolladores no deben intentar manipular directamente el contenido de los encabezados de información.
 
-Las funciones de solo interfaz, como [**MprAdminInterfaceSetInfo**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacesetinfo) , no requieren el uso de las funciones de MprInfo. La información que se pasa y se devuelve con estas funciones siempre tiene el formato de una estructura de [**\_ interfaz de MPR**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_0) .
+Las funciones solo de interfaz, [**como MprAdminInterfaceSetInfo,**](/windows/desktop/api/Mprapi/nf-mprapi-mpradmininterfacesetinfo) no requieren el uso de funciones mprInfo. La información que se pasa y se devuelve con estas funciones siempre tiene el formato de una estructura [**DE \_ INTERFAZ DE MPR.**](/windows/desktop/api/Mprapi/ns-mprapi-mpr_interface_0)
 
- 
+ 
 
- 
+ 
 
 
 

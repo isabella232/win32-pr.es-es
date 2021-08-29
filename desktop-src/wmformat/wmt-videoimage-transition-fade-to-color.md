@@ -1,9 +1,9 @@
 ---
-title: WMT_VIDEOIMAGE_TRANSITION_FADE_TO_COLOR (Wmsdkidl. h)
-description: La transición de fundido a color se resuelve de la imagen en un marco de color sólido.
+title: WMT_VIDEOIMAGE_TRANSITION_FADE_TO_COLOR (Wmsdkidl.h)
+description: La transición de atenuación a color se disuelve de la imagen a un marco de color sólido.
 ms.assetid: 4ec52682-1ca2-436d-b7ce-2a9d407ff50e
 keywords:
-- WMT_VIDEOIMAGE_TRANSITION_FADE_TO_COLOR formato de Windows Media
+- WMT_VIDEOIMAGE_TRANSITION_FADE_TO_COLOR windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a3873a24cee74e8cad3f6cd91d39f20a72ffa8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 315a0d190a65c8f756eabaff6b86dd2efb6d4dbe97e5b5de8e7a3dfe782c880a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120109945"
 ---
-# <a name="wmt_videoimage_transition_fade_to_color"></a>\_ \_ transición de imagen de transmisión de imágenes WMT \_ \_ a \_ color
+# <a name="wmt_videoimage_transition_fade_to_color"></a>TRANSICIÓN DE \_ WMT VIDEOIMAGE \_ A \_ \_ \_ COLOR
 
-La transición de fundido a color se resuelve de la imagen en un marco de color sólido.
+La transición de atenuación a color se disuelve de la imagen a un marco de color sólido.
 
 ## <a name="parameters"></a>Parámetros
 
-En la tabla siguiente se describen los parámetros que se usan en esta transición y se enumeran los miembros de la estructura de [**\_ \_ SAMPLE2 de imágenes WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) en la que se asignan.
+En la tabla siguiente se describen los parámetros usados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que están asignados.
 
 
 
 | Parámetro         | Miembro de estructura | Descripción                                                                                                                                                                                                               |
 |-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rojo               | **fEffectPara0** | Valor rojo del color de fondo. Establezca en un número comprendido entre 0 y 255.                                                                                                                                                     |
-| Verde             | **fEffectPara1** | Valor verde del color de fondo. Establezca en un número comprendido entre 0 y 255.                                                                                                                                                   |
-| Azul              | **fEffectPara2** | Valor azul del color de fondo. Establezca en un número comprendido entre 0 y 255.                                                                                                                                                    |
-| Peso de fondo | **fEffectPara3** | Peso del color de fondo. Este parámetro expresa el porcentaje del color de fondo de la combinación como un decimal. Por ejemplo, para mezclar el color de fondo en un 30%, lo que permite que la imagen del 70% de la combinación se establezca en 0,30. |
+| Rojo               | **fEffectPara0** | Valor rojo del color de fondo. Establezca en un número entre 0 y 255.                                                                                                                                                     |
+| Verde             | **fEffectPara1** | Valor verde del color de fondo. Establezca en un número entre 0 y 255.                                                                                                                                                   |
+| Azul              | **fEffectPara2** | Valor azul del color de fondo. Establezca en un número entre 0 y 255.                                                                                                                                                    |
+| Peso de fondo | **fEffectPara3** | Peso del color de fondo. Este parámetro expresa el porcentaje del color de fondo de la combinación como decimal. Por ejemplo, para combinar el color de fondo al 30 %, haciendo que la imagen se establezca en 0,30 %. |
 
 
 
@@ -48,7 +48,7 @@ En la tabla siguiente se describen los parámetros que se usan en esta transici�
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmsdkidl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmsdkidl.h</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ En la tabla siguiente se describen los parámetros que se usan en esta transici�
 
 <dl> <dt>
 
-[**Transiciones de imagen de vídeo**](video-image-transitions.md)
+[**Transiciones de imágenes de vídeo**](video-image-transitions.md)
 </dt> </dl>
 
  

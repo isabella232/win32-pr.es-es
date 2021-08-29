@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPMedia2 (VB y C) (WMP. h)
+title: Interfaz IWMPMedia2 (VB y C) (Wmp.h)
 description: Proporciona acceso a una propiedad de elemento multimedia adicional.
 ms.assetid: 7d9f8304-ae26-4175-b9d4-9f272861ef87
 keywords:
-- IWMPMedia2 (VB y C) interfaz de Windows Media Player
-- IWMPMedia2 (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPMedia2 (VB y C) Reproductor de Windows Media
+- Interfaz IWMPMedia2 (VB y C) Reproductor de Windows Media , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,38 +15,38 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb1a77322e0e6649d9a286c920ccd9ddc77890f3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b0b12b7fe5c3598ff6b6e7f68dabefa93913881776fda4527fe0c0b31b2a94d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054813"
 ---
 # <a name="iwmpmedia2-vb-and-c-interface"></a>Interfaz IWMPMedia2 (VB y C#)
 
 Proporciona acceso a una propiedad de elemento multimedia adicional.
 
-Además de las propiedades y los métodos heredados de **IWMPMedia**, la interfaz **IWMPMedia2** expone la propiedad siguiente.
+Además de las propiedades y los métodos heredados de **IWMPMedia,** la **interfaz IWMPMedia2** expone la siguiente propiedad.
 
 
 
 | Propiedad                                                 | Descripción                                                                   |
 |----------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Error](wmplibiwmpmedia2-iwmpmedia2-error--vb-and-c.md) | Obtiene una interfaz **IWMPErrorItem** si el elemento multimedia tiene una condición de error. |
+| [Error](wmplibiwmpmedia2-iwmpmedia2-error--vb-and-c.md) | Obtiene una **interfaz IWMPErrorItem** si el elemento multimedia tiene una condición de error. |
 
 
 
  
 
-Obtenga una interfaz **IWMPMedia2** convirtiendo el valor devuelto por una de las siguientes propiedades o métodos a los que se tiene acceso a través del objeto o la interfaz siguientes.
+Obtenga una **interfaz IWMPMedia2** mediante la conversión del valor devuelto por una de las siguientes propiedades o métodos a los que se accede a través del siguiente objeto o interfaz.
 
 
 
 | Objeto o interfaz                                               | Propiedad o método                                                                                                                |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [IWMPControls](iwmpcontrols--vb-and-c.md)                        | [currentItem](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)                                                          |
+| [IWMPControls](iwmpcontrols--vb-and-c.md)                        | [Currentitem](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md)                                                          |
 | [AxWindowsMediaPlayer](axwindowsmediaplayer-object--vb-and-c.md) | [currentMedia](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md) , [newMedia](axwmplib-axwindowsmediaplayer-newmedia.md) |
-| [IWMPPlaylist](iwmpplaylist--vb-and-c.md)                        | [Elemento](iwmpplaylist-item--vb-and-c.md) ( **obtener \_ elemento** en C#)                                                                   |
+| [IWMPPlaylist](iwmpplaylist--vb-and-c.md)                        | [Item](iwmpplaylist-item--vb-and-c.md) ( **get \_ Item** in C#)                                                                   |
 
 
 
@@ -54,7 +54,7 @@ Obtenga una interfaz **IWMPMedia2** convirtiendo el valor devuelto por una de la
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPMedia2 (VB y C#)** no define ningún miembro.
+La **interfaz IWMPMedia2 (VB y C#)** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ La interfaz **IWMPMedia2 (VB y C#)** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 

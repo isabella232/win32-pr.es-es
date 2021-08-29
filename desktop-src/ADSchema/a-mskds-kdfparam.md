@@ -1,11 +1,11 @@
 ---
-title: atributo MS-KDS-KDF-param
-description: Parámetros del algoritmo de derivación de claves.
+title: Atributo ms-Kds-KDF-Param
+description: Parámetros para el algoritmo de derivación de claves.
 ms.assetid: 66f3273d-f963-48e6-b0dc-c8bbebe4d2d3
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-KDS-KDF-param
-- msKds-KDFParam atributo AD Schema
+- Esquema de AD del atributo ms-Kds-KDF-Param
+- Esquema de AD del atributo msKds-KDFParam
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44243f8d89658eab20183f349b195958119291d6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4e23b47224644c2271fcc09070edac47f57afcd398b81ed8193a0f8592d98666
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762975"
 ---
-# <a name="ms-kds-kdf-param-attribute"></a>atributo MS-KDS-KDF-param
+# <a name="ms-kds-kdf-param-attribute"></a>Atributo ms-Kds-KDF-Param
 
-Parámetros del algoritmo de derivación de claves.
+Parámetros para el algoritmo de derivación de claves.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-KDS-KDF-param                                      |
-| Nombre para mostrar de LDAP | msKds-KDFParam                                        |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-Kds-KDF-Param                                      |
+| Ldap-Display-Name | msKds-KDFParam                                        |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2170                               |
-| System-ID-GUID    | 8a800772-f4b8-154f-b41c-2e4271eff7a7                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 8a800772-f4b8-154f-b41c-2e4271eff7a7                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,18 +50,18 @@ Parámetros del algoritmo de derivación de claves.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                  |
-| System-Only            | False                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                |
-| Está indexado             | False                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000280                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Clases usadas en        | [**MS-KDS-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**MS-KDS-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Clases usadas en        | [**ms-Kds-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

@@ -264,7 +264,7 @@
     - name: MDM_RemoteWipe
       href: mdm-remotewipe.md
       items:
-        - name: método doWipeMethod
+        - name: Método doWipeMethod
           href: mdm-remotewipe-dowipemethod.md
     - name: MDM_Reporting_EnterpriseDataProtection01_RetrieveByCount02
       href: mdm-reporting-enterprisedataprotection01-retrievebycount02.md

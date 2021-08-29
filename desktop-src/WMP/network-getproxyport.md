@@ -1,11 +1,11 @@
 ---
-title: Network. getProxyPort (método)
-description: El método getProxyPort recupera el puerto del proxy que se está usando.
+title: Método Network.getProxyPort
+description: El método getProxyPort recupera el puerto proxy que se usa.
 ms.assetid: 76771750-3763-4029-b194-d8567b5f365e
 keywords:
-- método getProxyPort de Windows Media Player
-- método getProxyPort Windows Media Player, clase de red
-- Clase de red Windows Media Player, método getProxyPort
+- Método getProxyPort Reproductor de Windows Media
+- Método getProxyPort Reproductor de Windows Media , clase Network
+- Clase de red Reproductor de Windows Media , método getProxyPort
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3114b2188c0ccb0f6c260df33461fb117e7851e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83937bcb5d8180085ab97bfd71a0cb1653a65e8bca8cead952e4bf24e10ee690
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054593"
 ---
-# <a name="networkgetproxyport-method"></a>Network. getProxyPort (método)
+# <a name="networkgetproxyport-method"></a>Método Network.getProxyPort
 
-El método **getProxyPort** recupera el puerto del proxy que se está usando.
+El **método getProxyPort** recupera el puerto proxy que se usa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,26 +42,26 @@ retVal = Network.getProxyPort(
 
 <dl> <dt>
 
-*Protocolo* \[ de de\]
+*protocolo* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**Cadena** que especifica el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un **número** (**largo**) que contiene el puerto del proxy que se está usando. El valor devuelto solo es significativo cuando **getProxySettings** devuelve un valor de dos (use la configuración manual).
+Este método devuelve un **valor Number** (**long**) que contiene el puerto proxy que se está utilizando. El valor devuelto es significativo solo cuando **getProxySettings** devuelve un valor de dos (use la configuración manual).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **getProxyPort** para mostrar los números de puerto de proxy de Windows Media Player actuales para los protocolos MMS y http. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **getProxyPort para** mostrar los números de puerto Reproductor de Windows Media proxy actuales para los protocolos MMS y HTTP. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -91,9 +91,9 @@ document.write("The current MMS proxy port is: " + proxyPortMMS);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -105,7 +105,7 @@ document.write("The current MMS proxy port is: " + proxyPortMMS);
 [**Objeto de red**](network-object.md)
 </dt> <dt>
 
-[**Network. getProxySettings**](network-getproxysettings.md)
+[**Network.getProxySettings**](network-getproxysettings.md)
 </dt> </dl>
 
  

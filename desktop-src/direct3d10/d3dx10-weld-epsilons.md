@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: 720a10dbe4b22b69910d88d3c03cea9ded768f1b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 072d33a6490f8103604eac899fe96eca8a135a9786c696fdb5fb5cf0f2ce8fa7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119852625"
 ---
-# <a name="d3dx10_weld_epsilons-structure"></a>Estructura D3DX10 \_ HISTOGRAM \_ EPSILONS
+# <a name="d3dx10_weld_epsilons-structure"></a>D3DX10 \_ UNA \_ ESTRUCTURA EPSILONS DE 3DX10
 
 Especifica valores de tolerancia para cada componente de vértice al comparar vértices para determinar si son lo suficientemente similares como para que se puedan unir.
 
@@ -114,7 +114,7 @@ Valor de iluminación difusa
 
 </dd> <dt>
 
-**Texcoord**
+**Texascoord**
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -179,7 +179,7 @@ typedef D3DX_WELD_EPSILONS *LPD3DX_WELD_EPSILONS;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,26 +1,26 @@
 ---
-title: Propiedad DedicatedTerminal de IMsRdpClientAdvancedSettings
-description: Esta propiedad no es compatible. | Propiedad DedicatedTerminal de IMsRdpClientAdvancedSettings
+title: IMsRdpClientAdvancedSettings DedicatedTerminal, propiedad
+description: Esta propiedad no es compatible. | IMsRdpClientAdvancedSettings DedicatedTerminal, propiedad
 ms.assetid: 40d54c88-dcac-4e7d-b389-a65caeb6960e
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad DedicatedTerminal
-- Propiedad DedicatedTerminal Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad DedicatedTerminal
+- Propiedad DedicatedTerminal Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad DedicatedTerminal
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee005439b38e21c5ed05d035545cc5600993cd5c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 88f7ed843598b270d4ddf7b83c011625c0e1f477479b7154a8a93eaa9e1028b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119871175"
 ---
-# <a name="imsrdpclientadvancedsettingsdedicatedterminal-property"></a>IMsRdpClientAdvancedSettings::D propiedad edicatedTerminal
+# <a name="imsrdpclientadvancedsettingsdedicatedterminal-property"></a>IMsRdpClientAdvancedSettings::D edicatedTerminal
 
 Esta propiedad no es compatible.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -88,7 +88,7 @@ Establezca este parámetro en 0 para deshabilitar la característica o un valor 
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ false**.
+Devuelve **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 

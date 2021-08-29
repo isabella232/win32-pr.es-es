@@ -1,9 +1,9 @@
 ---
-title: función gluUnProject (GLU. h)
-description: La función gluUnProject asigna las coordenadas de la ventana a las coordenadas del objeto.
+title: Función gluUnProject (Glu.h)
+description: La función gluUnProject asigna coordenadas de ventana a coordenadas de objeto.
 ms.assetid: 6a719fc2-ad40-4b22-9c99-5753f5dbb8a0
 keywords:
-- gluUnProject (función) OpenGL
+- Función gluUnProject OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f45311171dd3d71c9e699953c049e0813f2df361
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f88c303e6a9471f0de38f891c7b376785d29b5052432ef234fa531861400841e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488405"
 ---
-# <a name="gluunproject-function"></a>gluUnProject función)
+# <a name="gluunproject-function"></a>función gluUnProject
 
-La función **gluUnProject** asigna las coordenadas de la ventana a las coordenadas del objeto.
+La **función gluUnProject** asigna coordenadas de ventana a coordenadas de objeto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,89 +48,89 @@ int WINAPI gluUnProject(
 
 <dl> <dt>
 
-*winx* 
+*Winx* 
 </dt> <dd>
 
-Coordenada x de la ventana que se va a asignar.
+Coordenada de ventana x que se va a asignar.
 
 </dd> <dt>
 
-*winy* 
+*Winy* 
 </dt> <dd>
 
-Coordenada de la ventana y que se va a asignar.
+Coordenada de ventana y que se va a asignar.
 
 </dd> <dt>
 
-*winz* 
+*Winz* 
 </dt> <dd>
 
-Coordenada de la ventana de z que se va a asignar.
+Coordenada de ventana z que se va a asignar.
 
 </dd> <dt>
 
 *modelMatrix* 
 </dt> <dd>
 
-La matriz MODELVIEW (a partir de una llamada a [**glGetDoublev**](glgetdoublev.md) ).
+La matriz modelview (como de una [**llamada a glGetDoublev).**](glgetdoublev.md)
 
 </dd> <dt>
 
 *projMatrix* 
 </dt> <dd>
 
-La matriz de proyección (a partir de una llamada a **glGetDoublev** ).
+Matriz de proyección (a partir de una **llamada a glGetDoublev).**
 
 </dd> <dt>
 
-*encuadre* 
+*Viewport* 
 </dt> <dd>
 
-La ventanilla (a partir de una llamada a [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) ).
+Ventanilla (como desde una [**llamada a glGetIntegerv).**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)
 
 </dd> <dt>
 
 *objx* 
 </dt> <dd>
 
-Coordenada x del objeto calculado.
+Coordenada de objeto x calculada.
 
 </dd> <dt>
 
 *objy* 
 </dt> <dd>
 
-Coordenada y del objeto calculado.
+Coordenada del objeto y calculado.
 
 </dd> <dt>
 
 *objz* 
 </dt> <dd>
 
-Coordenada z calculada del objeto.
+Coordenada de objeto z calculada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es GL \_ true.
+Si la función se realiza correctamente, el valor devuelto es GL \_ TRUE.
 
-Si se produce un error en la función, el valor devuelto es GL \_ false.
+Si se produce un error en la función, el valor devuelto es GL \_ FALSE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluUnProject** asigna las coordenadas de ventana especificadas a coordenadas de objeto mediante *modelMatrix*, *projMatrix* y *viewport*. El resultado se almacena en *objx*, *objy* y *objz*.
+La **función gluUnProject** asigna las coordenadas de ventana especificadas en coordenadas de objeto mediante *modelMatrix*, *projMatrix* y *viewport*. El resultado se almacena en *objx*, *objy* y *objz*.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: Sintaxis de Object (Presentation-Address)
-description: Cadena que contiene las direcciones de presentación de interconexión de sistemas abiertos (OSI).
+title: Sintaxis de objeto (presentation-address)
+description: Cadena que contiene direcciones de presentación de Interconexión de sistemas abiertos (OSI).
 ms.assetid: 52d5927b-42fb-4c5b-8a73-7f004c2033b3
 ms.tgt_platform: multiple
 keywords:
-- Sintaxis de objeto (presentación-dirección) esquema de AD
+- Esquema de AD de sintaxis object(Presentation-Address)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: caf86243cfe1eaacb239eeaf31883f919cd76da9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 71c4499e2804eb32418c39d6bb771fd1309abf19fc57c3a18cf29306c782842b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580235"
 ---
-# <a name="objectpresentation-address-syntax"></a>Sintaxis de Object (Presentation-Address)
+# <a name="objectpresentation-address-syntax"></a>Sintaxis de objeto (presentation-address)
 
-Cadena que contiene las direcciones de presentación de interconexión de sistemas abiertos (OSI).
+Cadena que contiene direcciones de presentación de Interconexión de sistemas abiertos (OSI).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|------------------------------------------------------------------------|
 | Nombre         | Object(Presentation-Address)                                           |
-| IDENTIFICADOR de sintaxis    | 2.5.5.13                                                               |
-| IDENTIFICADOR DE OM        | 127                                                                    |
-| Tipo MAPI    | \-                                                                     |
-| Tipo ADS     | ADSTYPE \_ caso \_ omitir \_ cadena                                          |
-| Tipo Variant | VT \_ BSTR                                                               |
-| Tipo de SDS     | [System.String](/dotnet/api/system.string) |
+| Identificador de sintaxis    | 2.5.5.13                                                               |
+| Id. de OM        | 127                                                                    |
+| Tipo DE MAPI    | \-                                                                     |
+| ADS Type     | ADSTYPE \_ CASE \_ IGNORE \_ STRING                                          |
+| Tipo de variante | VT \_ BSTR                                                               |
+| Tipo sds     | [System.String](/dotnet/api/system.string) |
 
 
 

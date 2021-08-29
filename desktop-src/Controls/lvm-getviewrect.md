@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETVIEWRECT (commctrl. h)
-description: Recupera el rectángulo delimitador de todos los elementos del control de vista de lista. La vista de lista debe estar en el icono o en la vista de iconos pequeños. Puede enviar este mensaje explícitamente o mediante la \_ macro GetViewRect de ListView.
+title: LVM_GETVIEWRECT mensaje (Commctrl.h)
+description: Recupera el rectángulo delimitador de todos los elementos del control de vista de lista. La vista de lista debe estar en la vista de icono o icono pequeño. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetViewRect.
 ms.assetid: 69b96f86-8b7e-42c1-ad73-f9b2732ab9f9
 keywords:
-- LVM_GETVIEWRECT controles de mensajes de Windows
+- LVM_GETVIEWRECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d4c4fdf0e8466d3fb0b2ad164241c3f6a541570
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4de840c68af1abb9fd5a79e93318d984b64b295f5431317330bf03f0e34e44ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062365"
 ---
-# <a name="lvm_getviewrect-message"></a>\_Mensaje GETVIEWRECT LVM
+# <a name="lvm_getviewrect-message"></a>Mensaje \_ GETVIEWRECT de LVM
 
-Recupera el rectángulo delimitador de todos los elementos del control de vista de lista. La vista de lista debe estar en el icono o en la vista de iconos pequeños. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetViewRect de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getviewrect) .
+Recupera el rectángulo delimitador de todos los elementos del control de vista de lista. La vista de lista debe estar en la vista de icono o icono pequeño. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetViewRect.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getviewrect)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,13 +35,13 @@ Recupera el rectángulo delimitador de todos los elementos del control de vista 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) que recibe el rectángulo delimitador. Todas las coordenadas son relativas al área visible del control de vista de lista.
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que recibe el rectángulo delimitador. Todas las coordenadas son relativas al área visible del control list-view.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Devuelve **true** si es correcto, o **false** en caso contrario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

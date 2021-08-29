@@ -1,7 +1,7 @@
 ---
-description: Opciones de soldadura entre vértices.
+description: Opciones para la colaboración entre vértices.
 ms.assetid: e73af63d-ed02-4fbc-8386-e8a40b0465ea
-title: Enumeración D3DXWELDEPSILONSFLAGS (D3dx9mesh. h)
+title: Enumeración D3DXWELDEPSILONSFLAGS (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 9e67c8b0f0bf93c9da181a5bba9a694525bd9819
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c206718cd55a05d67d0a38d90c254238b63e964fa1f26149e75b57e09db359e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044493"
 ---
 # <a name="d3dxweldepsilonsflags-enumeration"></a>Enumeración D3DXWELDEPSILONSFLAGS
 
-Opciones de soldadura entre vértices.
+Opciones para la colaboración entre vértices.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -43,31 +43,31 @@ enum _D3DXWELDEPSILONSFLAGS {
 
 <dl> <dt>
 
-<span id="D3DXWELDEPSILONS_WELDALL"></span><span id="d3dxweldepsilons_weldall"></span>**D3DXWELDEPSILONS \_ WELDALL**
+<span id="D3DXWELDEPSILONS_WELDALL"></span><span id="d3dxweldepsilons_weldall"></span>**D3DXWELDEPSILONSALL \_**
 </dt> <dd>
 
-Soldadura juntas todos los vértices que se encuentran en la misma ubicación. El uso de esta marca evita una comparación de épsilon entre los componentes de vértices.
+Reúne todos los vértices que se encuentran en la misma ubicación. El uso de esta marca evita una comparación de epsilón entre los componentes de vértice.
 
 </dd> <dt>
 
-<span id="D3DXWELDEPSILONS_WELDPARTIALMATCHES"></span><span id="d3dxweldepsilons_weldpartialmatches"></span>**D3DXWELDEPSILONS \_ WELDPARTIALMATCHES**
+<span id="D3DXWELDEPSILONS_WELDPARTIALMATCHES"></span><span id="d3dxweldepsilons_weldpartialmatches"></span>**D3DXWELDEPSILONS \_ HISTOGRAMAPARTIALMATCHES**
 </dt> <dd>
 
-Si un componente de vértice determinado está en épsilon, modifique los vértices parcialmente coincidentes para que ambos componentes sean idénticos. Si todos los componentes son iguales, Quite uno de los vértices.
+Si un componente de vértice determinado está dentro del epsilón, modifique los vértices coincidentes parcialmente para que ambos componentes sean idénticos. Si todos los componentes son iguales, quite uno de los vértices.
 
 </dd> <dt>
 
 <span id="D3DXWELDEPSILONS_DONOTREMOVEVERTICES"></span><span id="d3dxweldepsilons_donotremovevertices"></span>**D3DXWELDEPSILONS \_ DONOTREMOVEVERTICES**
 </dt> <dd>
 
-Indica a la soldadura que solo permita modificaciones en los vértices y no en la eliminación. Esta marca solo es válida si \_ se establece D3DXWELDEPSILONS WELDPARTIALMATCHES. Resulta útil modificar los vértices para que sean iguales, pero no para permitir que se quiten los vértices.
+Indica a la herramienta que permita solo las modificaciones en los vértices y no la eliminación. Esta marca solo es válida si se establece D3DXWELDEPSILONS \_ HISTOGRAMPARTIALMATCHES. Resulta útil modificar los vértices para que sean iguales, pero no para permitir que se quiten los vértices.
 
 </dd> <dt>
 
 <span id="D3DXWELDEPSILONS_DONOTSPLIT"></span><span id="d3dxweldepsilons_donotsplit"></span>**D3DXWELDEPSILONS \_ DONOTSPLIT**
 </dt> <dd>
 
-Indica a la soldadura que no divida los vértices que se encuentran en grupos de atributos independientes. Cuando se llama al método [**ID3DXMesh:: Optimize**](id3dxmesh--optimize.md) con la \_ marca ATTRSORT de D3DXMESHOPT, \_ también se establecerá la marca D3DXMESHOPT DONOTSPLIT. La configuración de esta marca puede ralentizar el procesamiento de vértices de software.
+Indica a la clase que no divida los vértices que están en grupos de atributos independientes. Cuando se llama al método [**ID3DXMesh::Optimize**](id3dxmesh--optimize.md) con la marca D3DXMESHOPT ATTRSORT, también se establecerá la marca \_ D3DXMESHOPT \_ DONOTSPLIT. Establecer esta marca puede ralentizar el procesamiento de vértices de software.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Indica a la soldadura que no divida los vértices que se encuentran en grupos de
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Indica a la soldadura que no divida los vértices que se encuentran en grupos de
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> <dt>
 
 [**D3DXWeldVertices**](d3dxweldvertices.md)

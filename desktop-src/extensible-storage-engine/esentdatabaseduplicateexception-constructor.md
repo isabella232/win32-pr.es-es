@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseDuplicateException'
-title: Constructor de EsentDatabaseDuplicateException
+description: 'Más información sobre: Constructor EsentDatabaseDuplicateException'
+title: Constructor EsentDatabaseDuplicateException
 TOCTitle: 'EsentDatabaseDuplicateException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseDuplicateException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabaseduplicateexception.esentdatabaseduplicateexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 063c375c91003e99ecd288394c1e6d9072235d36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5703660c5e12a934e337bdf0ca11313e696c1f67fe6c86dbee9a6eb3b5a5953b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120117375"
 ---
-# <a name="esentdatabaseduplicateexception-constructor"></a>Constructor de EsentDatabaseDuplicateException
+# <a name="esentdatabaseduplicateexception-constructor"></a>Constructor EsentDatabaseDuplicateException
 
 Inicializa una nueva instancia de la clase EsentDatabaseDuplicateException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDatabaseDuplicateException()
 public EsentDatabaseDuplicateException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentDatabaseDuplicateException()
 
 [Miembros de EsentDatabaseDuplicateException](./esentdatabaseduplicateexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

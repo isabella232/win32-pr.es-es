@@ -19,7 +19,7 @@ El controlador de errores de alineación del sistema está desactivado de forma 
 
 Si el depurador de WinDbg se ha instalado como depurador del sistema, WinDbg se iniciará automáticamente si algún proceso del sistema genera una excepción no controlada. Si no tiene un depurador instalado como depurador del sistema, el sistema muestra un cuadro de diálogo que indica que la aplicación ha encontrado un error y proporciona la oportunidad de notificar el problema a Microsoft.
 
-En los sistemas x64 y ARM64, los errores de alineación se controlan mediante una combinación de hardware y software. Para obtener el mejor rendimiento, todo el acceso a la memoria debe estar alineado correctamente. Además, se debe evitar el acceso a [variables](/windows/desktop/Sync/interlocked-variable-access) no alineadas entrelazados en ARM64, ya que estas operaciones no son seguras atómicamente.
+En los sistemas x64 y ARM64, los errores de alineación se controlan mediante una combinación de hardware y software. Para obtener el mejor rendimiento, todo el acceso a la memoria debe estar alineado correctamente. Además, se debe evitar el acceso a [variables interbloqueadas](/windows/desktop/Sync/interlocked-variable-access) no alineadas en ARM64, ya que estas operaciones no son seguras atómicamente.
 
  
 

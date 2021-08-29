@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_SETINFO. ibLongValue'
-title: Propiedad JET_SETINFO. ibLongValue
+description: 'Más información sobre: JET_SETINFO.ibLongValue'
+title: JET_SETINFO.ibLongValue, propiedad
 TOCTitle: 'ibLongValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SETINFO.ibLongValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setinfo.iblongvalue(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 324b3cd5c45be8f463ff9b2a9cfe11f1dcad4554
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a4696e14b0845ffc121c913a503a6372f90ae59cefd26659327ff42f90e3d54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119890035"
 ---
-# <a name="jet_setinfoiblongvalue-property"></a>Propiedad JET_SETINFO. ibLongValue
+# <a name="jet_setinfoiblongvalue-property"></a>JET_SETINFO.ibLongValue, propiedad
 
-Obtiene o establece el desplazamiento del primer byte que se va a establecer en una columna de tipo [LongBinary](./jet-coltyp-enumeration.md) o [LongText](./jet-coltyp-enumeration.md).
+Obtiene o establece el desplazamiento al primer byte que se va a establecer en una columna de tipo [LongBinary](./jet-coltyp-enumeration.md) [o LongText](./jet-coltyp-enumeration.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public int ibLongValue { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_SETINFO (clase)](./jet-setinfo-class.md)
+[JET_SETINFO clase](./jet-setinfo-class.md)
 
-[Miembros de JET_SETINFO](./jet-setinfo-members.md)
+[JET_SETINFO miembros](./jet-setinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

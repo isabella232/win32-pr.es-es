@@ -4,20 +4,20 @@ ms.assetid: 7a59f707-fb89-4899-891f-4cd556b62b26
 title: Llamar fuera de un ensamblado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ed60536c3daa62957929dd1d3f1a850fd551ae9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c918db12726c78517fee020a3ea9eb8035b851b1820861fd25db7175d2ee559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142418"
 ---
 # <a name="calling-outside-an-assembly"></a>Llamar fuera de un ensamblado
 
-Los componentes hospedados deben asegurarse de que el contexto de activación correcto está activo cuando se llama fuera del componente. Las llamadas a código externo que se encontró llamando a [**CreateActCtx**](/windows/desktop/api/Winbase/nf-winbase-createactctxa) y, a continuación, a [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) o [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance), deben llamarse con el mismo contexto que se usó para encontrarla. Las llamadas al código que se encontró fuera de los contextos de activación o a las llamadas de vuelta a la aplicación de hospedaje deben llamarse con el contexto de activación predeterminado de la aplicación.
+Los componentes hospedados deben asegurarse de que el contexto de activación correcto esté activo al llamar fuera del componente. Las llamadas a código externo que se encontraron mediante una llamada a [**CreateActCtx**](/windows/desktop/api/Winbase/nf-winbase-createactctxa) y, a continuación, [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) o [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance), se deben llamar con el mismo contexto que se usó para encontrarlo. Se debe llamar a las llamadas al código que se encontró fuera de los contextos de activación o a las llamadas a la aplicación de hospedaje con el contexto de activación predeterminado de la aplicación.
 
-La compilación con \_ reconocimiento de aislamiento \_ habilitado puede ser útil cuando se llama a fuera de los componentes hospedados. Sin embargo, esto significa que solo las llamadas a las API de Windows están aisladas en el contexto de activación del componente. Esto es suficiente para la mayoría de los casos, ya que las llamadas a funciones de terceros no tienen un contexto activado antes de llamarse. La compilación con \_ reconocimiento de aislamiento \_ habilitado no ayuda si el componente usa varios contextos de activación con varias API de la plataforma.
+La compilación con ISOLATION \_ AWARE ENABLED definido puede ser útil al llamar fuera de los componentes \_ hospedados. Sin embargo, esto significa que solo las llamadas a Windows API están aisladas en el contexto de activación del componente. Esto es suficiente para la mayoría de los casos porque las llamadas a funciones de terceros no tienen un contexto activado antes de llamarse. Compilar con ISOLATION AWARE ENABLED definido no ayuda si el componente usa varios contextos de \_ activación con varias API de \_ plataforma.
 
-Para implementar esto, use un activador de contexto de activación como el ejemplo presentado en [aislar componentes](isolating-components.md). Aquí externals. manifest es el conjunto de dependencias fuera de las que se compiló el componente; Quizás contiene una lista ampliable de componentes que se van a cargar y usar durante el tiempo de ejecución. El internalcontext. manifest contiene el conjunto de dependencias que el componente está seguro de usar durante su duración y que se debe establecer en todos los entryPoints desde fuera. Observe que este contexto interno está activado en todos los entryPoints, mientras que el activador de contexto se usa con el ámbito de C++ para que se establezca el contexto adecuado al llamar a los distintos códigos externos que usa este componente.
+Para implementar esto, use un activador de contexto de activación como el ejemplo presentado en [Aislar componentes](isolating-components.md). Aquí externals.manifest es el conjunto de dependencias fuera de aquellos con los que se comcreó el componente; quizás contenga una lista extensible de componentes que se van a cargar y usar durante el tiempo de ejecución. Internalcontext.manifest contiene el conjunto de dependencias que el componente está seguro de usar durante su vigencia y que se deben establecer en todos los puntos de entrada desde fuera. Tenga en cuenta que este contexto interno se activa en todos los puntos de entrada, mientras que el activador de contexto se usa con el ámbito de C++ para que se establezca el contexto adecuado al llamar a los distintos códigos externos que usa este componente.
 
 ``` syntax
 CActivationContext s_InternalContext;

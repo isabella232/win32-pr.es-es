@@ -1,11 +1,11 @@
 ---
-title: Enrollment-Providers atributo)
+title: Enrollment-Providers atributo
 description: 'PKI: plantillas de certificado.'
 ms.assetid: 7bfbd69c-7e8e-44b4-96c8-6ffa71d33ff4
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Enrollment-Providers
-- enrollmentProviders esquema de AD de atributos
+- Enrollment-Providers esquema de AD del atributo
+- Esquema de AD del atributo enrollmentProviders
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c16b979e15d2b398e1ae108ddfacb9004b341eca
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d78761953867a4d527af40947ca4d5ada8bb2a978b2eed8f928e83fd2ffad5eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804645"
 ---
-# <a name="enrollment-providers-attribute"></a>Enrollment-Providers atributo)
+# <a name="enrollment-providers-attribute"></a>Enrollment-Providers atributo
 
 PKI: plantillas de certificado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Enrollment-Providers                        |
-| Nombre para mostrar de LDAP | enrollmentProviders                         |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | enrollmentProviders                         |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.825                      |
-| System-ID-GUID    | 2a39c5b3-8960-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2a39c5b3-8960-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ PKI: plantillas de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -76,13 +76,13 @@ PKI: plantillas de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -97,13 +97,13 @@ PKI: plantillas de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -116,15 +116,15 @@ PKI: plantillas de certificado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -139,13 +139,13 @@ PKI: plantillas de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
@@ -160,13 +160,13 @@ PKI: plantillas de certificado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                         |
+| Id. de vínculo                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
-| System-Only            | False                                                                                                                                      |
-| Tiene un único valor       | True                                                                                                                                       |
-| Está indexado             | False                                                                                                                                      |
-| En el catálogo global      | False                                                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                               |
+| System-Only            | Falso                                                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                                                       |
+| Está indexado             | Falso                                                                                                                                      |
+| En el catálogo global      | Falso                                                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |

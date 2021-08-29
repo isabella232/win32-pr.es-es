@@ -1,6 +1,6 @@
 ---
-title: log-vs
-description: ₂ de registro de precisión completa (x). | log-vs
+title: 'log: vs'
+description: 'Registro de precisión completa( x). | log: vs'
 ms.assetid: 53c91825-ec54-4b04-bf08-52d4b1c5122d
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,38 +9,38 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b9e0564ab5b38943017e61bde171d0db3060ca0c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 104f0fcb0121d44c37372cc1b21b50e8ac7f3de0c8549381a5ff32cf3b9a232f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982045"
 ---
-# <a name="log---vs"></a>log-vs
+# <a name="log---vs"></a>log: vs
 
-₂ de registro de precisión completa (x).
+Registro de precisión completa( x).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| DST de registro, src |
+| log dst, src |
 |--------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
--   src es un registro de origen. El registro de origen requiere el uso explícito de replicate swizzle, es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes).
+-   dst es el registro de destino.
+-   src es un registro de origen. El registro de origen requiere el uso explícito de replicar swzzle, es decir, exactamente uno de los componentes .x, .y, .z, .w swzzle (o los componentes .r, .g, .b, .a equivalentes).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | log                    | x    | x    | x    | x     | x    | x     |
 
@@ -48,7 +48,7 @@ ms.locfileid: "104280082"
 
  
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```

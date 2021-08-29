@@ -1,11 +1,11 @@
 ---
-title: Propiedad ActiveBasicDevice IsSearchSupported (PlayToDevice. h)
+title: Propiedad ActiveBasicDevice IsSearchSupported (PlayToDevice.h)
 description: Obtiene un valor que indica si el dispositivo admite la búsqueda.
 ms.assetid: 091D467A-1FF6-4635-BF89-4E62AC9C660A
 keywords:
-- Propiedad IsSearchSupported API de streaming de multimedia
-- Propiedad IsSearchSupported API de streaming de multimedia, interfaz ActiveBasicDevice
-- Interfaz ActiveBasicDevice API de streaming de multimedia, propiedad IsSearchSupported
+- Api de streaming multimedia de la propiedad IsSearchSupported
+- IsSearchSupported, propiedad Media Streaming API, interfaz ActiveBasicDevice
+- ActiveBasicDevice interface Media Streaming API , Propiedad IsSearchSupported
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff97b20697388b1e3079f6993b97b948fa12091e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 37aa2d4ce01c058e899a1c15d5672b6578537604b910ac817376fcff49746e4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011935"
 ---
-# <a name="activebasicdeviceissearchsupported-property"></a>ActiveBasicDevice:: IsSearchSupported (propiedad)
+# <a name="activebasicdeviceissearchsupported-property"></a>Propiedad ActiveBasicDevice::IsSearchSupported
 
 Obtiene un valor que indica si el dispositivo admite la búsqueda.
 
@@ -43,9 +43,9 @@ HRESULT get_IsSearchSupported(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a un **valor booleano** que indica si el dispositivo admite la búsqueda.
+Puntero a un **valor booleano** que indica si el dispositivo admite la búsqueda.
 
-**true** si el dispositivo admite la búsqueda; en caso contrario, **false**.
+**True** si el dispositivo admite la búsqueda; de lo contrario, **false**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,10 +53,10 @@ Un puntero a un **valor booleano** que indica si el dispositivo admite la búsqu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

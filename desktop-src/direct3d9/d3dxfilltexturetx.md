@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 419dc0e7b4266a2fe32557c52ed4323b51a25843
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1a71d6a31e3df645532cc73f836c3645621bb8f94c6115c56018c5eed3839313
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045043"
 ---
 # <a name="d3dxfilltexturetx-function"></a>Función D3DXFillTextureTX
 
-Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada texel de cada nivel de mapa mip de una textura.
+Usa una función de lenguaje de sombreador de alto nivel (HLSL) compilada para rellenar cada elemento texel de cada nivel de mapa mip de una textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -114,7 +114,7 @@ Tenga en cuenta que los parámetros de entrada pueden estar en cualquier orden, 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

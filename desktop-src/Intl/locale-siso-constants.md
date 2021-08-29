@@ -1,28 +1,28 @@
 ---
-description: Constantes de SIOS de configuración regional \_ \*
+description: Constantes \_ SISO de LOCALE \*
 ms.assetid: c830e9e9-b58a-4d31-929a-ed699bc08d9f
-title: Constantes de LOCALE_SISO *
+title: LOCALE_SISO* Constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16a3d7583bc920daa2edc85b641f191b016bbbd5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d384c168bcf48f794c4cbeb9e013e0f513fe3f82e2ccacafbf9d3e5da26f8f4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120106205"
 ---
-# <a name="locale_siso-constants"></a>Constantes de SIOS de configuración regional \_ \*
+# <a name="locale_siso-constants"></a>Constantes \_ SISO de LOCALE \*
 
-En este tema se definen las constantes de SIOS de configuración regional \_ \* utilizadas por NLS.
+En este tema se definen las constantes \_ SISO de LOCALE \* usadas por NLS.
 
 
 
 | Value                     | Significado                                                                                                                                                                                                                                                                                                                                                                              |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configuración regional \_ SISO3166CTRYNAME  | **Windows Me/98, Windows NT 4,0:** Nombre del país o región, basado en el estándar ISO 3166, por ejemplo, "US" para el Estados Unidos. También puede devolver un número, como "029" para el Caribe. El número máximo de caracteres permitido para esta cadena es nueve, incluido un carácter nulo de terminación.                                                                                        |
-| Configuración regional \_ SISO3166CTRYNAME2 | **Windows Vista y versiones posteriores:** Nombre de la región ISO de tres letras (código ISO 3166 3-Letter para el país o región), como "EE. UU." para el Estados Unidos. También puede devolver un número, como "029" para el Caribe. El número máximo de caracteres permitido para esta cadena es nueve, incluido un carácter nulo de terminación.                                                            |
-| Configuración regional \_ SISO639LANGNAME   | **Windows Me/98, Windows NT 4,0:** El nombre abreviado del idioma basado completamente en los valores 639 del estándar ISO, en formato en minúsculas, como "en" para inglés. Puede ser un código de tres letras para los idiomas que no tienen un código de dos letras, como "haw" para la Hawai. El número máximo de caracteres permitido para esta cadena es nueve, incluido un carácter nulo de terminación. |
-| Configuración regional \_ SISO639LANGNAME2  | **Windows Vista y versiones posteriores:** Nombre del idioma ISO de tres letras, en forma de minúscula (código de tres letras ISO 639-2 para el idioma), como "ENG" para inglés. El número máximo de caracteres permitido para esta cadena es nueve, incluido un carácter nulo de terminación.                                                                                                                  |
+| LOCALE \_ SISO3166CTRYNAME  | **Windows Me/98, Windows NT 4.0:** Nombre de país o región, basado en iso estándar 3166, como "EE. UU." para el Estados Unidos. Esto también puede devolver un número, como "029" para el país de América. El número máximo de caracteres permitido para esta cadena es de nueve, incluido un carácter nulo de terminación.                                                                                        |
+| LOCALE \_ SISO3166CTRYNAME2 | **Windows Vista y versiones posteriores:** Nombre de región ISO de tres letras (código iso 3166 de tres letras para el país o región), como "EE. UU." para el Estados Unidos. Esto también puede devolver un número, como "029" para el país de América. El número máximo de caracteres permitido para esta cadena es de nueve, incluido un carácter nulo de terminación.                                                            |
+| LOCALE \_ SISO639LANGNAME   | **Windows Me/98, Windows NT 4.0:** Nombre abreviado del idioma basado completamente en los valores iso estándar 639, en minúsculas, como "en" para inglés. Puede ser un código de 3 letras para idiomas que no tienen un código de 2 letras, como "haw" para Hawan. El número máximo de caracteres permitido para esta cadena es de nueve, incluido un carácter nulo de terminación. |
+| LOCALE \_ SISO639LANGNAME2  | **Windows Vista y versiones posteriores:** Nombre del idioma ISO de tres letras, en minúscula (código iso 639-2 de tres letras para el idioma), como "eng" para inglés. El número máximo de caracteres permitido para esta cadena es de nueve, incluido un carácter nulo de terminación.                                                                                                                  |
 
 
 

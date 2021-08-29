@@ -1,9 +1,9 @@
 ---
-title: DllDebugObjectRPCHook función)
-description: Exportado por DLL COM para habilitar la depuración remota.
+title: Función DllDebugObjectRPCHook
+description: Exportadas por archivos DLL COM para habilitar la depuración remota.
 ms.assetid: a0f8bf12-0889-452d-84d0-255c5c143bc1
 keywords:
-- DllDebugObjectRPCHook función COM
+- Función COM de DllDebugObjectRPCHook
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62fffe6cc2d9ca650442d0a1c3fea2048fc6c84b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aaaa8932a5db6325f9a63afa50cf6a2f4fef88621567f965c3e0a7e611abb696
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119854615"
 ---
-# <a name="dlldebugobjectrpchook-function"></a>DllDebugObjectRPCHook función)
+# <a name="dlldebugobjectrpchook-function"></a>Función DllDebugObjectRPCHook
 
-Exportado por DLL COM para habilitar la depuración remota.
+Exportadas por archivos DLL COM para habilitar la depuración remota.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,31 +47,31 @@ BOOL WINAPI DllDebugObjectRPCHook(
 *fTrace* 
 </dt> <dd>
 
-Si es **true**, se habilita la depuración remota. Si es **false**, la depuración remota no está habilitada.
+Si **es TRUE,** la depuración remota está habilitada. Si **es FALSE,** la depuración remota no está habilitada.
 
 </dd> <dt>
 
 *lpOrpcInitArgs* 
 </dt> <dd>
 
-Puntero a una estructura [**ORPC \_ init \_ args**](orpc-init-args.md) .
+Puntero a una [**estructura ORPC \_ INIT \_ ARGS.**](orpc-init-args.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**True** si es correcto, **false** en caso contrario
+**TRUE si** se realiza correctamente, **FALSE en caso** contrario
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Encabezado<br/>                   | <dl> <dt>N/D</dt> </dl>       |
-| Biblioteca<br/>                  | <dl> <dt>Ole32. lib</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Ole32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ole32.dll</dt> </dl> |
 
 
@@ -80,13 +80,13 @@ Puntero a una estructura [**ORPC \_ init \_ args**](orpc-init-args.md) .
 
 <dl> <dt>
 
-[**ORPC \_ dbg \_ All**](orpc-dbg-all.md)
+[**ORPC \_ DBG \_ ALL**](orpc-dbg-all.md)
 </dt> <dt>
 
-[**\_búfer ORPC dbg \_**](orpc-dbg-buffer.md)
+[**BÚFER \_ DE DBG DE ORPC \_**](orpc-dbg-buffer.md)
 </dt> <dt>
 
-[**ORPC \_ init \_ args**](orpc-init-args.md)
+[**ORPC \_ INIT \_ ARGS**](orpc-init-args.md)
 </dt> <dt>
 
 [**IOrpcDebugNotify**](iorpcdebugnotify.md)

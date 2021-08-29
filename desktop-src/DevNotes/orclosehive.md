@@ -1,7 +1,7 @@
 ---
-description: Cierra el subárbol del registro sin conexión especificado y libera la memoria asignada para el subárbol.
+description: Cierra el subárbol del Registro sin conexión especificado y libera la memoria asignada para el subárbol.
 ms.assetid: e30a92dd-8533-406f-ad63-96306f125d78
-title: Función ORCloseHive (Offreg. h)
+title: Función ORCloseHive (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: a7f018e2ccdb98de14f908224ade52d0cdf7819f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4852112ff1de3d0650c78b07a2ebbba780e89a485a176cf610fd2cf7b1fa234f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824835"
 ---
-# <a name="orclosehive-function"></a>ORCloseHive función)
+# <a name="orclosehive-function"></a>Función ORCloseHive
 
-Cierra el subárbol del registro sin conexión especificado y libera la memoria asignada para el subárbol.
+Cierra el subárbol del Registro sin conexión especificado y libera la memoria asignada para el subárbol.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,24 +39,24 @@ DWORD ORCloseHive(
 
 <dl> <dt>
 
-*Identificador* \[ de de\]
+*Identificador* \[ En\]
 </dt> <dd>
 
-Identificador de la clave raíz del subárbol del registro sin conexión que se va a cerrar.
+Identificador de la clave raíz del subárbol del Registro sin conexión que se va a cerrar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
-Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror. h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la \_ \_ marca de formato mensaje de \_ sistema para obtener una descripción genérica del error.
+Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror.h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la marca FORMAT \_ MESSAGE FROM SYSTEM para obtener una descripción genérica del \_ \_ error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **ORCloseHive** libera toda la memoria asignada por las funciones del registro sin conexión en nombre del subárbol especificado.
+La **función ORCloseHive** libera toda la memoria asignada por las funciones del Registro sin conexión en nombre del subárbol especificado.
 
-Para conservar los cambios en el subárbol, llame a la función [**ORSaveHive**](orsavehive.md) antes de llamar a **ORCloseHive**.
+Para conservar los cambios en el subárbol, llame a la [**función ORSaveHive**](orsavehive.md) antes de llamar a **ORCloseHive**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ Para conservar los cambios en el subárbol, llame a la función [**ORSaveHive**]
 
 | Requisito | Value |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuible<br/> | Windows offline Registry Library versión 1,0 o posterior<br/>                      |
-| Encabezado<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuible<br/> | Windows Biblioteca del Registro sin conexión versión 1.0 o posterior<br/>                      |
+| Header<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | Archivo DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 

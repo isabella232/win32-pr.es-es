@@ -4,12 +4,12 @@ ms.assetid: ba99bf9c-e559-4b0d-bcf4-40d11d0a9cf0
 title: System.Sync.HandlerType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa98ea9a69781cf80f34ce5534e10ff88724bd05
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f9091187dd53bc54f6c54fa1c8be24f50db5821d415ec8c0bfa058c41d8d8459
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822325"
 ---
 # <a name="systemsynchandlertype"></a>System.Sync.HandlerType
 

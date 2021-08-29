@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Operations-for-AZ-role-BL
-description: Vínculo hacia atrás desde Az-Operation a Az-Role objetos que se vinculan a él.
+title: Atributo ms-DS-Operations-For-Az-Role-BL
+description: Vínculo hacia atrás Az-Operation a Az-Role objetos que se vinculan a él.
 ms.assetid: 4723d89e-06e6-4954-8798-feebb3d3140b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Operations-para-AZ-role-BL
-- Esquema de AD de atributo msDS-OperationsForAzRoleBL
+- Esquema de AD del atributo ms-DS-Operations-For-Az-Role-BL
+- Esquema de AD del atributo msDS-OperationsForAzRoleBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e808eaabb820f313d4781c542e3d5ce1b592ec58
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6aebe90c82b120de8ffa38dd2c212f717b3d0bcb38cc3864c1c4710cbfee7ea7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803905"
 ---
-# <a name="ms-ds-operations-for-az-role-bl-attribute"></a>atributo MS-DS-Operations-for-AZ-role-BL
+# <a name="ms-ds-operations-for-az-role-bl-attribute"></a>Atributo ms-DS-Operations-For-Az-Role-BL
 
-Vínculo hacia atrás desde Az-Operation a Az-Role objetos que se vinculan a él.
+Vínculo hacia atrás Az-Operation a Az-Role objetos que se vinculan a él.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-Operations-for-AZ-role-BL         |
-| Nombre para mostrar de LDAP | msDS-OperationsForAzRoleBL              |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-Operations-For-Az-Role-BL         |
+| Ldap-Display-Name | msDS-OperationsForAzRoleBL              |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | El sistema establece este valor.        |
 | Attribute-Id      | 1.2.840.113556.1.4.1813                 |
-| System-ID-GUID    | f85b6228-3734-4525-b6b7-3f3bb220902c    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f85b6228-3734-4525-b6b7-3f3bb220902c    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,13 +54,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Role objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2023                            |
+| Id. de vínculo                | 2023                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -75,13 +75,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Role objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2023                            |
+| Id. de vínculo                | 2023                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -94,15 +94,15 @@ Vínculo hacia atrás desde Az-Operation a Az-Role objetos que se vinculan a él
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2023                            |
+| Id. de vínculo                | 2023                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -115,15 +115,15 @@ Vínculo hacia atrás desde Az-Operation a Az-Role objetos que se vinculan a él
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2023                            |
+| Id. de vínculo                | 2023                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -138,13 +138,13 @@ Vínculo hacia atrás desde Az-Operation a Az-Role objetos que se vinculan a él
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2023                            |
+| Id. de vínculo                | 2023                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

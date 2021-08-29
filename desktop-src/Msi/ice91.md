@@ -1,27 +1,27 @@
 ---
-description: ICE91 publica una advertencia si un archivo, archivo. ini o archivo de acceso directo se instala en un directorio solo por usuario.
+description: ICE91 envía una advertencia si un archivo, .ini o un archivo de acceso directo está instalado en un directorio solo por usuario.
 ms.assetid: 1834d841-b1d9-4646-8057-a41dd88310b6
 title: ICE91
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91f5723369c21894817dacbc1755430a31f17199
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd67c714701baecee50fdeb460323bd25c0a164040bbc751a65cb43a6c99eb44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315255"
 ---
 # <a name="ice91"></a>ICE91
 
-ICE91 publica una advertencia si un archivo, archivo. ini o archivo de acceso directo se instala en un directorio solo por usuario. Estas advertencias son inocuas si el paquete solo se usa para la instalación en el [contexto de instalación](installation-context.md) por usuario y nunca se usa para las instalaciones por máquina.
+ICE91 envía una advertencia si un archivo, .ini o un archivo de acceso directo está instalado en un directorio solo por usuario. Estas advertencias son inofensivas si el paquete [](installation-context.md) solo se usa para la instalación en el contexto de instalación por usuario y nunca se usa para las instalaciones por equipo.
 
-Los archivos, los archivos. ini o los accesos directos de los directorios de solo usuario se instalan en el perfil de un usuario determinado. Incluso si el usuario establece la propiedad [**AllUsers**](allusers.md) para las instalaciones por equipo, los archivos, los archivos. ini o los accesos directos de los directorios de solo usuario no se copian en el perfil "todos los usuarios" y no están disponibles para otros usuarios. Los directorios solo por usuario no varían con la propiedad **AllUsers** . A continuación se muestra una lista de los directorios solo por usuario:
+Los archivos, .ini archivos o accesos directos en directorios solo por usuario se instalan en el perfil de un usuario determinado. Incluso si el usuario establece la propiedad [**ALLUSERS**](allusers.md) para instalaciones por equipo, los archivos, los archivos .ini o los accesos directos de los directorios solo por usuario no se copian en el perfil "Todos los usuarios" y no están disponibles para otros usuarios. Los directorios solo por usuario no varían con la **propiedad ALLUSERS.** A continuación se muestra una lista de los directorios solo por usuario:
 
 -   AppDataFolder
--   FavoritesFolder
--   NetHoodFolder
+-   FavoritosCarpeta
+-   NetFolder
 -   PersonalFolder
--   PrintHoodFolder
+-   PrintFolder
 -   RecentFolder
 -   SendToFolder
 -   MyPicturesFolder
@@ -29,15 +29,15 @@ Los archivos, los archivos. ini o los accesos directos de los directorios de sol
 
 ## <a name="result"></a>Resultado
 
-ICE91 expone las siguientes advertencias.
+ICE91 publica las siguientes advertencias.
 
 
 
-| ADVERTENCIA de ICE91                                                                                                                                                                                                                            | Descripción                                                                                                                                |
+| Advertencia ice91                                                                                                                                                                                                                            | Descripción                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| El archivo ' \[ 1 \] ' se instalará en el directorio por usuario ' \[ 2 \] ', que no varía según el valor de [**AllUsers**](allusers.md) . Este archivo no se copiará en el perfil de cada usuario, incluso si se desea una instalación por máquina.     | El archivo se instala en un directorio solo por usuario. No se instala en el perfil de cada usuario durante una instalación por máquina.      |
-| El IniFile ' \[ 1 \] ' se instalará en el directorio por usuario ' \[ 2 \] ', que no varía según el valor de [**AllUsers**](allusers.md) . Este archivo no se copiará en el perfil de cada usuario, incluso si se desea una instalación por máquina.  | El archivo. ini se instala en un directorio solo por usuario. No se instala en el perfil de cada usuario durante una instalación por máquina. |
-| El acceso directo ' \[ 1 \] ' se instalará en el directorio por usuario ' \[ 2 ', \] que no varía según el valor de [**AllUsers**](allusers.md) . Este archivo no se copiará en el perfil de cada usuario, incluso si se desea una instalación por máquina. | El acceso directo se instala en un directorio solo por usuario. No se instala en el perfil de cada usuario durante una instalación por máquina.  |
+| El archivo ' 1 ' se instalará en el directorio por usuario ' 2 ' que no varía en \[ \] función del valor \[ \] [**ALLUSERS.**](allusers.md) Este archivo no se copiará en el perfil de cada usuario, aunque se desee una instalación por equipo.     | El archivo se instala en un directorio solo por usuario. No se instala en el perfil de cada usuario durante una instalación por equipo.      |
+| IniFile ' 1 ' se instalará en el directorio por usuario ' 2 ' que no varía en \[ \] función del valor \[ \] [**ALLUSERS.**](allusers.md) Este archivo no se copiará en el perfil de cada usuario, aunque se desee una instalación por equipo.  | El .ini se instala en un directorio solo por usuario. No se instala en el perfil de cada usuario durante una instalación por equipo. |
+| El acceso directo ' 1 ' se instalará en el directorio por usuario ' 2 ' que no \[ varía en función del valor \] \[ \] [**ALLUSERS.**](allusers.md) Este archivo no se copiará en el perfil de cada usuario, aunque se desee una instalación por equipo. | El acceso directo se instala en un directorio solo por usuario. No se instala en el perfil de cada usuario durante una instalación por equipo.  |
 
 
 
@@ -67,7 +67,7 @@ The shortcut 'Shortcut1' will be installed to the per user directory 'MyShortcut
 
  
 
-[Tabla de componentes](component-table.md) (parcial) (parcial) (parcial) (parcial)
+[Tabla de](component-table.md) componentes (parcial) (parcial) (parcial) (parcial)
 
 
 
@@ -91,25 +91,25 @@ The shortcut 'Shortcut1' will be installed to the per user directory 'MyShortcut
 
  
 
-[Tabla de acceso directo](shortcut-table.md)
+[Tabla de métodos abreviados](shortcut-table.md)
 
 
 
 | Acceso directo  | Directorio\_   |
 |-----------|---------------|
-| Shortcut1 | MyShortcutDir |
+| Acceso directo1 | MyShortcutDir |
 
 
 
  
 
-[Tabla de directorio](directory-table.md)
+[Tabla de directorios](directory-table.md)
 
 
 
-| Directorio     | Directorio \_ primario  |
+| Directorio     | Elemento primario \_ del directorio  |
 |---------------|--------------------|
-| MyDir         | FavoritesFolder    |
+| MyDir         | FavoritosCarpeta    |
 | MyIniDir      | LocalAppDataFolder |
 | MyShortcutDir | PersonalFolder     |
 

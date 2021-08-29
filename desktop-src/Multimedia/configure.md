@@ -1,9 +1,9 @@
 ---
-title: comando configurar
-description: El comando configurar muestra un cuadro de diálogo que se usa para configurar el dispositivo. Los dispositivos de vídeo digital reconocen este comando.
+title: comando configure
+description: El comando configure muestra un cuadro de diálogo que se usa para configurar el dispositivo. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 17d99992-f432-4b8a-ae98-2a70637c29c3
 keywords:
-- configurar comandos de Windows multimedia
+- configurar comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61f131159d389577e3c717e5630633bb46558d40
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7c11adc5413844d46360e7abf63ec34a340efae470e2e71fef9ba80a89d60e4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144958"
 ---
-# <a name="configure-command"></a>comando configurar
+# <a name="configure-command"></a>comando configure
 
-El comando configurar muestra un cuadro de diálogo que se usa para configurar el dispositivo. Los dispositivos de vídeo digital reconocen este comando.
+El comando configure muestra un cuadro de diálogo que se usa para configurar el dispositivo. Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -48,13 +48,13 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o "Test". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o "test". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,10 +71,10 @@ Devuelve cero si es correcto o un error en caso contrario.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

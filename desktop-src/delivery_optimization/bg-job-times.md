@@ -1,9 +1,9 @@
 ---
-title: BG_JOB_TIMES estructura (Deliveryoptimization. h)
-description: La estructura BG_JOB_TIMES proporciona marcas de tiempo relacionadas con el trabajo.
+title: BG_JOB_TIMES estructura (Deliveryoptimization.h)
+description: La BG_JOB_TIMES proporciona marcas de tiempo relacionadas con el trabajo.
 ms.assetid: 0147478F-C850-4B66-AB15-042C1A81D6B5
 keywords:
-- Estructura de BG_JOB_TIMES
+- BG_JOB_TIMES estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0a2d4e56bb616254537e26fc1ba0fdf5b9e251a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b0fe36c9994bc03a807ff4a575945d203b1f62391b498cca094ed8f264be684
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793414"
 ---
-# <a name="bg_job_times-structure"></a>Estructura de BG_JOB_TIMES
+# <a name="bg_job_times-structure"></a>BG_JOB_TIMES estructura
 
-La estructura **BG_JOB_TIMES** proporciona marcas de tiempo relacionadas con el trabajo.
+La **BG_JOB_TIMES** proporciona marcas de tiempo relacionadas con el trabajo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,21 +46,21 @@ typedef struct _BG_JOB_TIMES {
 **CreationTime**
 </dt> <dd>
 
-Hora en que se creó el trabajo. La hora se especifica como [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime).
+Hora en que se creó el trabajo. La hora se especifica como [FILETIME.](/windows/win32/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
 **ModificationTime**
 </dt> <dd>
 
-Hora en que el trabajo se modificó por última vez o se transfirieron bytes. La adición de archivos o la llamada a cualquiera de los métodos set de las interfaces [ * *IBackgroundCopyJob \** _](/previous-versions//mt811348(v=vs.85)) cambia este valor. Además, los cambios en el estado del trabajo y la llamada a los métodos [_ *Suspend* *](ibackgroundcopyjob-suspend.md), [**resume**](ibackgroundcopyjob-resume.md), [**Cancel**](ibackgroundcopyjob-cancel.md)y [**Complete**](ibackgroundcopyjob-complete.md) cambian este valor. La hora se especifica como [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime).
+Hora en que se modificó por última vez el trabajo o se transfirieron bytes. La adición de archivos o la llamada a cualquiera de los métodos establecidos en las interfaces [ * *IBackgroundCopyJob \** _](/previous-versions//mt811348(v=vs.85)) cambia este valor. Además, los cambios en el estado del trabajo y la llamada a los métodos [_ *Suspend* *](ibackgroundcopyjob-suspend.md), [**Resume,**](ibackgroundcopyjob-resume.md) [**Cancel**](ibackgroundcopyjob-cancel.md) [**y Complete**](ibackgroundcopyjob-complete.md) cambian este valor. La hora se especifica como [FILETIME.](/windows/win32/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
 **TransferCompletionTime**
 </dt> <dd>
 
-Hora en que el trabajo entró en el estado BG_JOB_STATE_TRANSFERRED. La hora se especifica como [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime).
+Hora en que el trabajo entró en BG_JOB_STATE_TRANSFERRED estado. La hora se especifica como [FILETIME.](/windows/win32/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ Hora en que el trabajo entró en el estado BG_JOB_STATE_TRANSFERRED. La hora se 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

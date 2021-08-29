@@ -1,27 +1,27 @@
 ---
-description: Enumera los modos de procesamiento de señal admitidos por el APO de efecto de flujo.
+description: Enumera los modos de procesamiento de señales admitidos por el efecto de secuencia APO.
 ms.assetid: 52A04E91-CE12-40BB-B2EC-DBE069306C4B
-title: Propiedad PKEY_SFX_ProcessingModes_Supported_For_Streaming (Audioenginebaseapo. h)
+title: PKEY_SFX_ProcessingModes_Supported_For_Streaming propiedad (Audioenginebaseapo.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4d3d24b09f0a2e5647b42de63afb6906b193005
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3bb51b6c7035abf3c6df733226f2edeb0a91773f69e80423840b846fd3850da0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103906933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119216525"
 ---
-# <a name="pkey_sfx_processingmodes_supported_for_streaming-property"></a>PKEY \_ SFX \_ ProcessingModes \_ compatible con la \_ \_ propiedad streaming
+# <a name="pkey_sfx_processingmodes_supported_for_streaming-property"></a>Propiedad PKEY \_ SFX \_ ProcessingModes \_ Supported For \_ \_ Streaming
 
-Enumera los modos de procesamiento de señal admitidos por el APO de efecto de flujo.
+Enumera los modos de procesamiento de señales admitidos por el efecto de secuencia APO.
 
-Tipo PROPVARIANT (VT): **VT \_ Vector** \| **VT \_ LPWStr**
+Tipo PROPVARIANT (vt): **VT \_ VECTOR** \| **VT \_ LPWSTR**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta lista solo incluye modos de procesamiento de señal en los que el APO procesa realmente la señal de audio durante el streaming.
+Esta lista solo incluye modos de procesamiento de señales en los que el PUNTO procesa realmente la señal de audio durante el streaming.
 
-Esta lista no incluye ningún modo de procesamiento de la señal compatible con el APO solo con fines de detección.
+Esta lista no incluye ningún modo de procesamiento de señales admitido por el APPO solo con fines de detección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,9 +29,9 @@ Esta lista no incluye ningún modo de procesamiento de la señal compatible con 
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                         |
-| Encabezado<br/>                   | <dl> <dt>Audioenginebaseapo. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                    |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                         |
+| Header<br/>                   | <dl> <dt>Audioenginebaseapo.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Esta lista no incluye ningún modo de procesamiento de la señal compatible con 
 
 <dl> <dt>
 
-[Propiedades de audio principales](core-audio-properties.md)
+[Propiedades de audio principal](core-audio-properties.md)
 </dt> </dl>
 
  

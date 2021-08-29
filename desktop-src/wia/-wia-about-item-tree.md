@@ -4,19 +4,19 @@ ms.assetid: dda87bcc-2315-4f0d-87a0-d5a33d5d929a
 title: Acerca del árbol de elementos IWiaItem2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ae342f5a85e61b6384604dae703881c6888e3e1cf8e61cc8a39a32ac77ad436
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2df2b080b0945ea94a219e83874d82d685bab146
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119264438"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476371"
 ---
 # <a name="about-the-iwiaitem2-item-tree"></a>Acerca del árbol de elementos IWiaItem2
 
 Con Windows Vista, el Windows de elementos de adquisición de imágenes (WIA) ha cambiado significativamente. [**Los elementos IWiaItem2**](-wia-iwiaitem2.md) se usan para representar los atributos de dispositivo y los datos del dispositivo. Las aplicaciones de creación de imágenes ven un dispositivo de adquisición de imágenes de Windows (WIA) 2.0 como un árbol jerárquico de elementos, con el elemento raíz que representa el propio dispositivo y los elementos secundarios que representan elementos como orígenes de datos programables, imágenes o carpetas que contienen imágenes.
 
 -   [Elementos de aplicación](#application-items)
--   [Marcas de elemento](#item-flags)
+-   [Marcas de elementos](#item-flags)
 -   [Categorías de elementos](#item-categories)
 -   [Elemento raíz](#root-item)
 -   [Elemento de datos](#data-item)
@@ -26,15 +26,15 @@ Con Windows Vista, el Windows de elementos de adquisición de imágenes (WIA) ha
 
 El árbol de elementos de WIA 2.0 que puede ver una aplicación es independiente del árbol creado y mantenido por un minidriver de WIA 2.0. Cuando un minidriver crea un árbol, el servicio WIA 2.0 usa este árbol de elementos de WIA 2.0 como guía para crear una copia del árbol que pueden ver las aplicaciones de creación de imágenes. Los elementos del árbol copiado se denominan *elementos de* aplicación. Los elementos del árbol creado por un minidriver se denominan *elementos de* controlador.
 
-Un elemento de WIA puede representar un origen de datos programable para el fuente de documentos de un analizador o los datos almacenados en ese dispositivo. Un dispositivo WIA debe dividirse en elementos individuales que describan los distintos datos generados por ese dispositivo.
+Un elemento de WIA puede representar un origen de datos programable para el fuente de documentos de un analizador o los datos almacenados en ese dispositivo. Un dispositivo WIA debe dividirse en elementos individuales que describen los distintos datos generados por ese dispositivo.
 
-Por ejemplo, un analizador de WIA que admita el examen plano y el de fuente de documentos podría dividirse en dos elementos secundarios. Una representa la funcionalidad de análisis de planos y la otra representa la funcionalidad de examen del feeder de documentos.
+Por ejemplo, un analizador de WIA que admita el examen plano y el de fuente de documentos podría dividirse en dos elementos secundarios. Uno representa la funcionalidad de examen plano y el otro representa la funcionalidad de examen del feeder de documentos.
 
 Varias imágenes colocadas en un escáner plano y examinadas al mismo tiempo se pueden colocar en una carpeta. Con el filtro de segmentación ([**IWiaSegmentationFilter),**](-wia-iwiasegmentationfilter.md)cada imagen o subregión se puede crear como un elemento secundario de la carpeta.
 
 El árbol WIA de un dispositivo de cámara que almacena fotos ("Película") se puede dividir en elementos que representan carpetas, subcarpetas y fotos.
 
-## <a name="item-flags"></a>Marcas de elemento
+## <a name="item-flags"></a>Marcas de elementos
 
 Las marcas de elementos de WIA ayudan a clasificar el contenido o el comportamiento admitido de un elemento de WIA determinado. Las marcas de elementos de WIA se agrupan en dos grupos.
 
@@ -54,7 +54,7 @@ Las categorías definidas por WIA son:
 -   WIA \_ CATEGORY \_ AUTO
 -   FUENTE DE \_ CATEGORÍA \_ WIA
 -   WIA \_ CATEGORY \_ PELÍCULAS
--   ARCHIVO FINALIZADO \_ DE CATEGORÍA \_ \_ WIA
+-   ARCHIVO TERMINADO \_ DE CATEGORÍA \_ \_ WIA
 -   CATEGORÍA WIA \_ \_ PLANA
 
 Por ejemplo, el elemento plano de un analizador puede tener [**WIA \_ IPA \_ ITEM \_ FLAGS**](-wia-wiaitempropcommonitem.md) establecido en [**WiaItemTypeImage,**](-wia-wia-item-type-flags.md) **WiaItemTypeTransfer** y **WiaItemTypeProgrammableDataSource,** y la propiedad **WIA \_ IPA \_ ITEM \_ CATEGORY** establecida en WIA \_ CATEGORY \_ FLATBED.
@@ -63,84 +63,15 @@ En la tabla siguiente se muestra la agrupación de categorías de WIA con marcas
 
 
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Categoría WIA</th>
-<th>Marcas de elementos de WIA válidas</th>
-<th>Conjunto de propiedades de WIA</th>
-<th>Elementos de WIA</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>WIA_CATEGORY_AUTO</td>
-<td><ul>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFile</strong></a></li>
-</ul></td>
-<td>El conjunto de propiedades incluye propiedades del analizador configuradas automáticamente.</td>
-<td>Elemento automático de WIA que representa la configuración de examen configurada automáticamente del analizador.</td>
-</tr>
-<tr class="even">
-<td>WIA_CATEGORY_FEEDER</td>
-<td><ul>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeDocument</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li>
-</ul></td>
-<td>El conjunto de propiedades incluye propiedades de control del analizador de fuentes (normalmente, conjunto de propiedades específicas de imagen y documento).</td>
-<td>Elementos del feeder de WIA, incluidos los elementos secundarios que representan las páginas frontal y posterior de un documento.</td>
-</tr>
-<tr class="odd">
-<td>WIA_CATEGORY_FILM</td>
-<td><ul>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li>
-</ul></td>
-<td>El conjunto de propiedades incluye propiedades de control del escáner de películas (normalmente, conjunto de propiedades específicos de imagen y documento).</td>
-<td>Elementos de WIA Película, incluidos los elementos secundarios que representan los fotogramas de examen individuales.</td>
-</tr>
-<tr class="even">
-<td>WIA_CATEGORY_FINISHED_FILE</td>
-<td><ul>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeAudio</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeVideo</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeDocument</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
-</ul></td>
-<td>La propiedad establecida en este elemento depende del tipo de elemento notificado. Por ejemplo, <a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a> debe incluir algunas propiedades de elemento de imagen, como bits por píxel, etc.</td>
-<td>Elementos de almacenamiento WIA, incluidos los elementos secundarios que representan el contenido del archivo finalizado (archivos de datos como JPEG, HTML, TXT, etc.).</td>
-</tr>
-<tr class="odd">
-<td>WIA_CATEGORY_FLATBED</td>
-<td><ul>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeDocument</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder:</strong></a>puede estar presente si el analizador admite el examen de varios elementos.</li>
-<li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeGenerated:</strong></a>puede estar presente si la aplicación genera un elemento de WIA durante una sesión de examen de varios elementos.</li>
-</ul></td>
-<td>El conjunto de propiedades incluye propiedades de control de escáner planas (normalmente imagen y conjunto de propiedades específico del documento).</td>
-<td>Elementos planas WIA, incluidos los elementos secundarios que representan las regiones que se examinan en la placa plana del analizador.</td>
-</tr>
-</tbody>
-</table>
+
+| Categoría WIA | Marcas de elementos de WIA válidas | Conjunto de propiedades de WIA | Elementos de WIA | 
+|--------------|----------------------|------------------|-----------|
+| WIA_CATEGORY_AUTO | <ul><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFile</strong></a></li></ul> | El conjunto de propiedades incluye propiedades del analizador configuradas automáticamente. | Elemento automático de WIA que representa la configuración de examen configurada automáticamente del analizador. | 
+| WIA_CATEGORY_FEEDER | <ul><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeDocument</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li></ul> | El conjunto de propiedades incluye propiedades de control del analizador de fuentes (normalmente, imágenes y conjunto de propiedades específicos del documento). | Elementos del feeder de WIA, incluidos los elementos secundarios que representan las páginas frontal y posterior de un documento. | 
+| WIA_CATEGORY_FILM | <ul><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li></ul> | El conjunto de propiedades incluye propiedades de control del escáner de películas (normalmente imágenes y conjunto de propiedades específicos del documento). | Elementos de WIA Película, incluidos los elementos secundarios que representan los fotogramas de examen individuales. | 
+| WIA_CATEGORY_FINISHED_FILE | <ul><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeAudio</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeVideo</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeDocument</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li></ul> | La propiedad establecida en este elemento depende del tipo de elemento notificado. Por ejemplo, <a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a> debe incluir algunas propiedades de elemento de imagen, como bits por píxel, etc. | Elementos de almacenamiento de WIA, incluidos los elementos secundarios que representan el contenido del archivo terminado (archivos de datos como JPEG, HTML, TXT, etc.). | 
+| WIA_CATEGORY_FLATBED | <ul><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeProgrammableDataSource</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeImage</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeDocument</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeTransfer</strong></a></li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeFolder:</strong></a>puede estar presente si el analizador admite el examen de varios elementos.</li><li><a href="-wia-wia-item-type-flags.md"><strong>WiaItemTypeGenerated:</strong></a>puede estar presente si la aplicación genera un elemento de WIA durante una sesión de examen de varios elementos.</li></ul> | El conjunto de propiedades incluye propiedades de control de escáner planas (normalmente imagen y conjunto de propiedades específico del documento). | Elementos planas WIA, incluidos los elementos secundarios que representan las regiones que se examinan en la placa plana del analizador. | 
+
 
 
 
@@ -156,21 +87,21 @@ Un elemento raíz de WIA es un elemento de carpeta marcado con marcas [**WiaItem
 
 ## <a name="data-item"></a>Data Item
 
-Cualquier elemento que se pueda usar para transferir datos se considera un elemento de datos. Esto incluye elementos marcados con la [**marca WiaItemTypeProgrammableDataSource.**](-wia-wia-item-type-flags.md)
+Cualquier elemento que se pueda usar para transferir datos se considera un elemento de datos. Esto incluye los elementos marcados con la [**marca WiaItemTypeProgrammableDataSource.**](-wia-wia-item-type-flags.md)
 
 Los elementos de carpeta y los elementos que no son de carpeta pueden exponer la capacidad de transferir datos si se marcan con la [**marca WiaItemTypeTransfer.**](-wia-wia-item-type-flags.md) Cualquier elemento con este conjunto de marcas debe proporcionar las siguientes propiedades de elemento de WIA:
 
--   [**DERECHOS DE \_ ACCESO DE IPA \_ DE WIA \_**](-wia-wiaitempropcommonitem.md)
--   [**TAMAÑO DEL \_ ELEMENTO IPA \_ DE WIA \_**](-wia-wiaitempropcommonitem.md)
+-   [**DERECHOS DE \_ ACCESO DE WIA IPA \_ \_**](-wia-wiaitempropcommonitem.md)
+-   [**TAMAÑO DE \_ ELEMENTO DE IPA \_ DE WIA \_**](-wia-wiaitempropcommonitem.md)
 -   [**TAMAÑO DE BÚFER \_ DE IPA \_ DE WIA \_**](-wia-wiaitempropcommonitem.md)
 -   [**FORMATO \_ IPA DE WIA \_**](-wia-wiaitempropcommonitem.md)
 -   [**FORMATO \_ PREFERIDO DE IPA \_ DE WIA \_**](-wia-wiaitempropcommonitem.md)
 -   [**WIA \_ IPA \_ TYMED**](-wia-wiaitempropcommonitem.md)
 -   [**EXTENSIÓN DE NOMBRE \_ DE ARCHIVO DE IPA \_ DE WIA \_**](-wia-wiaitempropcommonitem.md)
 
-Los elementos de origen de datos programables marcados [**con la marca WiaItemTypeTransfer**](-wia-wia-item-type-flags.md) también deben proporcionar el conjunto de propiedades necesaria del elemento de datos.
+Los elementos de origen de datos programables marcados con la [**marca WiaItemTypeTransfer**](-wia-wia-item-type-flags.md) también deben proporcionar el conjunto de propiedades necesaria del elemento de datos.
 
-Los elementos de datos de WIA pueden tener propiedades adicionales en función de la configuración de marca del elemento. Por ejemplo, los elementos de WIA marcados con la marca [**WiaItemTypeImage**](-wia-wia-item-type-flags.md) deben tener propiedades de información específicas de la imagen, como [**WIA \_ IPA \_ DEPTH**](-wia-wiaitempropcommonitem.md) y **WIA \_ IPA \_ NUMBER OF \_ \_ LINES**.
+Los elementos de datos de WIA pueden tener propiedades adicionales en función de la configuración de la marca del elemento. Por ejemplo, los elementos de WIA marcados con la marca [**WiaItemTypeImage**](-wia-wia-item-type-flags.md) deben tener propiedades de información específicas de la imagen, como [**WIA \_ IPA \_ DEPTH**](-wia-wiaitempropcommonitem.md) y **WIA \_ IPA \_ NUMBER OF \_ \_ LINES**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: 14afdb899d99b7c0278d3042fbc9a108f446c692
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d35c6b1c63265ace547880e6bddf42142e960fd94760547717c7e1e385a3d2ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119370795"
 ---
-# <a name="d3dx10createasyncshaderpreprocessprocessor-function"></a>D3DX10CreateAsyncShaderPreprocessProcessor función)
+# <a name="d3dx10createasyncshaderpreprocessprocessor-function"></a>Función D3DX10CreateAsyncShaderPreprocessProcessor
 
 Cree un procesador de datos para un sombreador de forma asincrónica.
 
@@ -44,7 +44,7 @@ HRESULT D3DX10CreateAsyncShaderPreprocessProcessor(
 
 <dl> <dt>
 
-*pFileName* \[ de\]
+*pFileName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -53,48 +53,48 @@ Cadena que contiene el nombre de archivo del sombreador.
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
-Type: **constante [**de \_ sombreador \_**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \*** de tipo const
+Tipo: **const [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro) \***
 
-Una matriz terminada en NULL de macros de sombreador (consulte la [**\_ \_ macro del sombreador D3D**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)); establezca este valor en **null** para no especificar macros.
+Matriz terminada en NULL de macros de sombreador (vea [**D3D \_ SHADER \_ MACRO**](/windows/win32/api/d3dcommon/ns-d3dcommon-d3d_shader_macro)); establezca esta opción en **NULL** para no especificar macros.
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Un puntero a una interfaz de inclusión (vea la [**interfaz ID3D10Include**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))); Establezca este **valor en NULL** para especificar que no hay ningún archivo de inclusión.
+Puntero a una interfaz include (vea [**ID3D10Include Interface**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))); establezca esta opción **en NULL** para especificar que no hay ningún archivo de incluir.
 
 </dd> <dt>
 
-*ppShaderText* \[ enuncia\]
+*ppShaderText* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un puntero a un búfer que contiene el texto ASCII del sombreador (vea la [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
+Dirección de un puntero a un búfer que contiene el texto ASCII del sombreador (vea [**ID3D10Blob Interface**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
 
 </dd> <dt>
 
-*ppErrorBuffer* \[ enuncia\]
+*ppErrorBuffer* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)\*\***
 
-Dirección de un puntero a un búfer que contiene errores de compilación (vea la [**interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
+Dirección de un puntero a un búfer que contiene errores de compilación (vea [**Interfaz ID3D10Blob**](/windows/win32/api/D3DCommon/nn-d3dcommon-id3d10blob)).
 
 </dd> <dt>
 
-*ppDataProcessor* \[ enuncia\]
+*ppDataProcessor* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataProcessor**](id3dx10dataprocessor.md)\*\***
 
-Dirección de un puntero a un búfer que contiene el procesador de datos creado (vea la [**interfaz ID3DX10DataProcessor**](id3dx10dataprocessor.md)).
+Dirección de un puntero a un búfer que contiene el procesador de datos creado (vea [**ID3DX10DataProcessor Interface**](id3dx10dataprocessor.md)).
 
 </dd> </dl>
 
@@ -102,7 +102,7 @@ Dirección de un puntero a un búfer que contiene el procesador de datos creado 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Async. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Async.h</dt> </dl> |
 
 
 
@@ -118,7 +118,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 <dl> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

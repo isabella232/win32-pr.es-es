@@ -4,12 +4,12 @@ ms.assetid: 8e31526a-639f-481b-91f1-fcd376818cbf
 title: nameSpace, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c3e2735efbb99fbe404f2531336c2e2bd0f89d7
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f90136e684717c13e2500d66384d49431512659b4e5cccd3dc88287229166c60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119954775"
 ---
 # <a name="namespace-element"></a>nameSpace, elemento
 
@@ -28,7 +28,7 @@ Describe un espacio de nombres. Este espacio de nombres se puede usar para la ge
 
 
 
-| Atributo          | Tipo                         | Obligatorio       | Descripción                                             |
+| Atributo          | Tipo                         | Requerido       | Descripción                                             |
 |--------------------|------------------------------|----------------|---------------------------------------------------------|
 | **uri**<br/> | cadena \_ de caracteres<br/> | Sí<br/> | URI único del espacio de nombres.<br/> <br/> |
 
@@ -74,7 +74,7 @@ Este elemento se puede usar para proporcionar al generador de código informaci�
 
 El generador de código analiza automáticamente los espacios de nombres implícitos en la reflexión de tipos o especificados en los archivos WSDL y XSD y no tienen que definirse explícitamente en el script. En algunos casos, este elemento se puede usar para agregar propiedades o nombres adicionales a un espacio de nombres al que se hace referencia mediante reflexión de tipos o WSDL/XSD. El generador de código no lo considera un conflicto.
 
-El siguiente XML muestra un elemento nameSpace (con elementos secundarios omitidos por brevedad).
+El xml siguiente muestra un elemento nameSpace (con elementos secundarios omitidos por brevedad).
 
 ``` syntax
 <nameSpace uri="https://www.example.com/namespace">

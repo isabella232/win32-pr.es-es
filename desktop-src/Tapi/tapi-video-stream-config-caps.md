@@ -1,21 +1,21 @@
 ---
-description: La estructura de los límites de la configuración de la \_ secuencia de vídeo TAPI \_ \_ \_ está contenida en la estructura de la configuración de la secuencia de TAPI \_ \_ \_ Cap cuando el miembro CapsType se establece en el miembro VideoCap de la Unión StreamConfigCapsType.
+description: La estructura TAPI VIDEO STREAM CONFIG CAPS está contenida en la estructura TAPI STREAM CONFIG CAPS cuando el miembro CapsType se establece en el miembro VideoCap de la unión \_ \_ \_ \_ \_ \_ \_ StreamConfigCapsType.
 ms.assetid: 8812755a-50e8-4d8e-ab67-7a3a4b2a4a67
-title: TAPI_VIDEO_STREAM_CONFIG_CAPS estructura (Ipmsp. h)
+title: TAPI_VIDEO_STREAM_CONFIG_CAPS estructura (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 525a35cb7c7332aa4e80fe8d5e2436e75e2d5c08
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d2bc7dc02570b2778f84aaa5f00685e57a54833ddc13c347b62e731e23181c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872905"
 ---
-# <a name="tapi_video_stream_config_caps-structure"></a>Estructura de los límites de la configuración de la \_ secuencia de vídeo TAPI \_ \_ \_
+# <a name="tapi_video_stream_config_caps-structure"></a>Estructura TAPI \_ VIDEO \_ STREAM CONFIG \_ \_ CAPS
 
-\[ Esta estructura no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Esta estructura no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-La estructura de los límites de la configuración de la **\_ secuencia de vídeo \_ \_ \_ TAPI** está contenida en la estructura de la configuración de la [**secuencia de TAPI \_ \_ \_ Cap**](tapi-stream-config-caps.md) cuando el miembro **CapsType** se establece en el miembro **VideoCap** de la Unión [**StreamConfigCapsType**](streamconfigcapstype.md) .
+La **estructura TAPI \_ VIDEO STREAM \_ CONFIG \_ \_ CAPS** está contenida en la estructura [**TAPI STREAM CONFIG \_ \_ \_ CAPS**](tapi-stream-config-caps.md) cuando el **miembro CapsType** se establece en el miembro **VideoCap** de la unión [**StreamConfigCapsType.**](streamconfigcapstype.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,18 +33,18 @@ La estructura de los límites de la configuración de la **\_ secuencia de víde
 **Descripción**
 </dt> <dd>
 
-Descripción detallada del tipo de configuración de la secuencia de audio que se va a mostrar a los usuarios de la aplicación.
+Una descripción sencilla del tipo de configuración de secuencia de audio para mostrar a los usuarios de la aplicación.
 
 </dd> <dt>
 
-**Videoestándar**
+**VideoStandard**
 </dt> <dd>
 
-Estándar de vídeo que se está usando.
+Estándar de vídeo que se usa.
 
 </dd> <dt>
 
-**Inlocate**
+**InputSize**
 </dt> <dd>
 
 Tamaño de entrada del marco.
@@ -68,28 +68,28 @@ Tamaño máximo de recorte.
 **CropGranularityX**
 </dt> <dd>
 
-Granularidad del recorte que se permite a lo largo del eje x.
+Granularidad del recorte permitido a lo largo del eje X.
 
 </dd> <dt>
 
 **CropGranularityY**
 </dt> <dd>
 
-Granularidad del recorte que se permite a lo largo del eje y.
+Granularidad del recorte permitido a lo largo del eje Y.
 
 </dd> <dt>
 
 **CropAlignX**
 </dt> <dd>
 
-Alineación del recorte del eje x.
+Alineación del recorte del eje X.
 
 </dd> <dt>
 
 **CropAlignY**
 </dt> <dd>
 
-Alineación del recorte del eje y.
+Alineación del recorte del eje Y.
 
 </dd> <dt>
 
@@ -110,70 +110,70 @@ Tamaño máximo resultante de la ventana de vídeo.
 **OutputGranularityX**
 </dt> <dd>
 
-Granularidad del tamaño de salida a lo largo del eje x.
+Granularidad del tamaño de salida a lo largo del eje X.
 
 </dd> <dt>
 
 **OutputGranularityY**
 </dt> <dd>
 
-Granularidad del tamaño de salida a lo largo del eje y.
+Granularidad del tamaño de salida a lo largo del eje Y.
 
 </dd> <dt>
 
 **StretchTapsX**
 </dt> <dd>
 
-Estire a lo largo del eje x.
+Se extiende a lo largo del eje X.
 
 </dd> <dt>
 
 **StretchTapsY**
 </dt> <dd>
 
-Ajustar a lo largo del eje y.
+Se extiende a lo largo del eje Y.
 
 </dd> <dt>
 
 **ShrinkTapsX**
 </dt> <dd>
 
-Reducir a lo largo del eje x.
+Reducir a lo largo del eje X.
 
 </dd> <dt>
 
 **ShrinkTapsY**
 </dt> <dd>
 
-Reducir a lo largo del eje y.
+Reducir a lo largo del eje Y.
 
 </dd> <dt>
 
 **MinFrameInterval**
 </dt> <dd>
 
-Intervalo mínimo de trama de vídeo.
+Intervalo mínimo de fotogramas de vídeo.
 
 </dd> <dt>
 
 **MaxFrameInterval**
 </dt> <dd>
 
-Intervalo máximo de trama de vídeo.
+Intervalo máximo de fotogramas de vídeo.
 
 </dd> <dt>
 
 **MinBitsPerSecond**
 </dt> <dd>
 
-Mínimo de bits por segundo.
+Bits mínimos por segundo.
 
 </dd> <dt>
 
 **MaxBitsPerSecond**
 </dt> <dd>
 
-Número máximo de bits por segundo.
+Bits máximos por segundo.
 
 </dd> </dl>
 
@@ -183,8 +183,8 @@ Número máximo de bits por segundo.
 
 | Requisito | Value |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                       |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                       |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -192,7 +192,7 @@ Número máximo de bits por segundo.
 
 <dl> <dt>
 
-[**\_Cap de \_ configuración de secuencia TAPI \_**](tapi-stream-config-caps.md)
+[**TAPI \_ STREAM \_ CONFIG \_ CAPS**](tapi-stream-config-caps.md)
 </dt> </dl>
 
  

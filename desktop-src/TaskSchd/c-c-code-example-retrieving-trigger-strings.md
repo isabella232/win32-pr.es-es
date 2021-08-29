@@ -1,17 +1,17 @@
 ---
-title: Ejemplo de código de C/C++ que recupera cadenas de desencadenador
+title: Ejemplo de código de C/C++ recuperación de cadenas de desencadenador
 description: En este ejemplo se recupera una cadena de desencadenador para todos los desencadenadores asociados a una tarea conocida.
 ms.assetid: cd605c68-efaa-4ce7-9e44-59f516d85627
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8b99f986692c3bfb1297a98e9afdcea65606446
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 207bbec1c7a33bb77ba7ed66729f9ef72e160785e1d454aa5205449ea47ae8ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011715"
 ---
-# <a name="cc-code-example-retrieving-trigger-strings"></a>Ejemplo de código de C/C++: recuperar cadenas de desencadenador
+# <a name="cc-code-example-retrieving-trigger-strings"></a>Ejemplo de código de C/C++: recuperación de cadenas de desencadenador
 
 En este ejemplo se recupera una cadena de desencadenador para todos los desencadenadores asociados a una tarea conocida.
 
@@ -138,12 +138,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Additional-DNS-host-name
-description: El atributo se utiliza para almacenar el nombre de host DNS adicional de un objeto de equipo. Este atributo se usa en el momento en que se cambia el nombre de un controlador de dominio.
+title: Atributo ms-DS-Additional-Dns-Host-Name
+description: El atributo se usa para almacenar el nombre de host DNS adicional de un objeto de equipo. Este atributo se usa en el momento en que se cambia el nombre de un controlador de dominio.
 ms.assetid: ea06f756-d9b6-409d-a008-0e3a1874ad94
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de nombre de host/DNS de MS-DS-Additional
-- Esquema de AD de atributo msDS-AdditionalDnsHostName
+- ms-DS-Additional-Dns-Host-Name attribute AD Schema
+- Esquema de AD del atributo msDS-AdditionalDnsHostName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88dea3212a19bf743e608f356170adf7a03c06d0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 957829d688b1b89af59695a7929ed89d004fe2de9b7bf04c4478ad008f88a57b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804235"
 ---
-# <a name="ms-ds-additional-dns-host-name-attribute"></a>atributo MS-DS-Additional-DNS-host-name
+# <a name="ms-ds-additional-dns-host-name-attribute"></a>Atributo ms-DS-Additional-Dns-Host-Name
 
-El atributo se utiliza para almacenar el nombre de host DNS adicional de un objeto de equipo. Este atributo se utiliza en el momento en que se cambia el nombre de un equipo o los nombres se administran con "netdom computername".
+El atributo se usa para almacenar el nombre de host DNS adicional de un objeto de equipo. Este atributo se usa en el momento en que se cambia el nombre de un equipo o los nombres se administran con "netdom computername".
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------|
-| CN                | MS-DS-Additional-DNS-host-name                                              |
-| Nombre para mostrar de LDAP | msDS-AdditionalDnsHostName                                                  |
-| Tamaño              | Cada valor puede tener 2048 caracteres. El número de valor es el límite de la base de datos de aproximadamente 1200 valores. |
-| Actualizar privilegio  | El sistema establece este valor.                                            |
+| CN                | ms-DS-Additional-Dns-Host-Name                                              |
+| Ldap-Display-Name | msDS-AdditionalDnsHostName                                                  |
+| Size              | Cada valor puede tener 2048 caracteres. El número de valor es el límite de base de datos de aproximadamente 1200 valores. |
+| Actualizar privilegios  | El sistema establece este valor.                                            |
 | Frecuencia de actualización  | Cuando se cambia el nombre de un equipo.                                                 |
 | Attribute-Id      | 1.2.840.113556.1.4.1717                                                     |
-| System-ID-GUID    | 80863791-dbe9-4eb8-837e-7f0ab55d9ac7                                        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                 |
+| System-Id-Guid    | 80863791-dbe9-4eb8-837e-7f0ab55d9ac7                                        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                 |
 
 
 
@@ -54,13 +54,13 @@ El atributo se utiliza para almacenar el nombre de host DNS adicional de un obje
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 2048                                      |
 | Search-Flags           | 0x00000000                                |
@@ -75,13 +75,13 @@ El atributo se utiliza para almacenar el nombre de host DNS adicional de un obje
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 2048                                      |
 | Search-Flags           | 0x00000000                                |
@@ -94,15 +94,15 @@ El atributo se utiliza para almacenar el nombre de host DNS adicional de un obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 2048                                      |
 | Search-Flags           | 0x00000000                                |
@@ -115,15 +115,15 @@ El atributo se utiliza para almacenar el nombre de host DNS adicional de un obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 2048                                      |
 | Search-Flags           | 0x00000000                                |
@@ -136,15 +136,15 @@ El atributo se utiliza para almacenar el nombre de host DNS adicional de un obje
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 2048                                      |
 | Search-Flags           | 0x00000000                                |

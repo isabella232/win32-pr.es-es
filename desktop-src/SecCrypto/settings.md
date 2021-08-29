@@ -1,6 +1,6 @@
 ---
-description: Se utiliza para configurar los componentes de CAPICOM.
-title: Objeto de configuración
+description: Se usa para configurar componentes CAPICOM.
+title: Configuración objeto
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,87 +12,62 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 27042f9602167f3eb0c1272f7c19fa1170abab40
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aaeff4c8b65a68938bfab641aceb68fe4efb6334
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690588"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476731"
 ---
-# <a name="settings-object-cryptography"></a>Objeto de configuración (criptografía)
+# <a name="settings-object-cryptography"></a>Configuración objeto (criptografía)
 
-\[El objeto de **configuración** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos.\]
+\[El **Configuración** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos.\]
 
-El objeto de **configuración** se utiliza para configurar los componentes de CAPICOM.
+El **Configuración** se usa para configurar los componentes capicom.
 
 ## <a name="members"></a>Miembros
 
-El objeto de **configuración** tiene estos tipos de miembros:
+El **Configuración** objeto tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-El objeto de **configuración** tiene estas propiedades.
+El **Configuración** objeto tiene estas propiedades.
 
 
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Propiedad</th>
-<th style="text-align: left;">Tipo de acceso</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="settings-activedirectorysearchlocation.md"><strong>ActiveDirectorySearchLocation</strong></a><br/></td>
-<td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Establece o recupera la ubicación de búsqueda de Active Directory. La ubicación inicial no se especifica de forma predeterminada. Cuando no se especifica la ubicación, se busca en el catálogo global y, a continuación, se busca en el dominio predeterminado. La búsqueda determina si el atributo de certificado de usuario está publicado en esa ubicación.<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="settings-enablepromptforcertificateui.md"><strong>EnablePromptForCertificateUI</strong></a><br/></td>
-<td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Establece o recupera un valor booleano que indica si se pueden usar los mensajes de la interfaz de usuario para el firmante o la identidad de un remitente. <br/>
-<blockquote>
-[!Note]<br />
-Al establecer esta propiedad, no se deshabilitan las advertencias generadas antes de que se realice un uso de clave privada desde una aplicación basada en Web.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Propiedad | Tipo de acceso | Descripción | 
+|----------|-------------|-------------|
+| <a href="settings-activedirectorysearchlocation.md"><strong>ActiveDirectorySearchLocation</strong></a><br /> | Lectura/escritura<br /> | Establece o recupera la Active Directory de búsqueda. La ubicación inicial no está especificada de forma predeterminada. Cuando la ubicación no se especifica, se busca en el catálogo global y, a continuación, se busca en el dominio predeterminado. La búsqueda determina si el atributo de certificado de usuario se publica en esa ubicación.<br /> | 
+| <a href="settings-enablepromptforcertificateui.md"><strong>EnablePromptForCertificateUI</strong></a><br /> | Lectura/escritura<br /> | Establece o recupera un valor booleano que indica si la interfaz de usuario solicita la identidad de un firmante o remitente. <br /><blockquote>[!Note]<br />Al establecer esta propiedad no se deshabilitan las advertencias que se generan antes de que se haga cualquier uso de clave privada desde una aplicación basada en web.</blockquote><br /> | 
+
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede crear el objeto de **configuración** y es seguro para el scripting. El ProgID del objeto de **configuración** es CAPICOM. Configuración. 1.
+El **Configuración** se puede crear y es seguro para el scripting. El ProgID del **objeto Configuración** es CAPICOM. Configuración.1.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Objetos de criptografía**](cryptography-objects.md)
+[**Objetos criptografía**](cryptography-objects.md)
 </dt> </dl>
 
  

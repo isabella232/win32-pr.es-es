@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_GETSELECTEDCOUNT (commctrl. h)
-description: Determina el número de elementos seleccionados en un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la \_ macro GetSelectedCount de ListView.
+title: LVM_GETSELECTEDCOUNT mensaje (Commctrl.h)
+description: Determina el número de elementos seleccionados en un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView GetSelectedCount.
 ms.assetid: 38916227-e6ca-4efa-9821-13f0fdb29834
 keywords:
-- LVM_GETSELECTEDCOUNT controles de mensajes de Windows
+- LVM_GETSELECTEDCOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b23f0e8d1d87e2cc7dd60d32ac3dd4943611a36f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33b85b83e8df1e29eedcfa5c9b5aac38d962d0787a497c03a901de943f5cbc91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062445"
 ---
-# <a name="lvm_getselectedcount-message"></a>\_Mensaje GETSELECTEDCOUNT LVM
+# <a name="lvm_getselectedcount-message"></a>Mensaje DE \_ LVM GETSELECTEDCOUNT
 
-Determina el número de elementos seleccionados en un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetSelectedCount de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getselectedcount) .
+Determina el número de elementos seleccionados en un control de vista de lista. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView GetSelectedCount.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getselectedcount)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Devuelve el número de elementos seleccionados.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

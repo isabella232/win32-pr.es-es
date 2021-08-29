@@ -1,9 +1,9 @@
 ---
 title: Estructura RESDIR
-description: Contiene información sobre un icono o componente de cursor individual de un grupo de recursos. Hay una estructura RESDIR para cada componente de grupo. La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+description: Contiene información sobre un icono individual o un componente de cursor en un grupo de recursos. Hay una estructura RESDIR para cada componente de grupo. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 ms.assetid: vs|winui|~\winui\windowsuserinterface\resources\introductiontoresources\resourcereference\resourcestructures\resdir.htm
 keywords:
-- Menús de la estructura RESDIR y otros recursos
+- Menús de estructura RESDIR y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b854a4af3367131f6a559e1fef5899fae8b81107
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c9033e1f30e8f497b202fa8e3f84d4ecb582bb60c166f396a50ce194c9783075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825585"
 ---
 # <a name="resdir-structure"></a>Estructura RESDIR
 
-Contiene información sobre un icono o componente de cursor individual de un grupo de recursos. Hay una estructura **RESDIR** para cada componente de grupo. La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+Contiene información sobre un icono individual o un componente de cursor en un grupo de recursos. Hay una estructura **RESDIR** para cada componente de grupo. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Tipo: **[ **ICONRESDIR**](iconresdir.md)**
 
 </dd> <dd>
 
-El ancho, el alto y el recuento de color del icono indicado.
+Ancho, alto y recuento de colores del icono indicado.
 
 </dd> <dt>
 
@@ -66,14 +66,14 @@ Ancho y alto del cursor indicado.
 
 </dd> <dt>
 
-**Planos**
+**Aviones**
 </dt> <dd>
 
 Tipo: **[ **CURSORDIR**](cursordir.md)**
 
 </dd> <dd>
 
-Número de planos de color del mapa de bits del icono o del cursor.
+Número de planos de color en el icono o mapa de bits del cursor.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo: **[ **CURSORDIR**](cursordir.md)**
 
 </dd> <dd>
 
-Número de bits por píxel en el mapa de bits del icono o del cursor.
+Número de bits por píxel en el icono o mapa de bits del cursor.
 
 </dd> <dt>
 
@@ -110,9 +110,9 @@ Icono o cursor con un identificador ordinal único.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una o varias estructuras **RESDIR** siguen inmediatamente a la estructura [**NEWHEADER**](newheader.md) del archivo. res. El miembro **ResCount** de la estructura **NEWHEADER** especifica el número de estructuras **RESDIR** . Tenga en cuenta que la estructura **RESDIR** consta de una estructura [**ICONRESDIR**](iconresdir.md) o una estructura [**CURSORDIR**](cursordir.md) seguida de los miembros **aviones**, **BitCount**, **BytesInRes** y **IconCursorId** . Si la estructura **RESDIR** contiene información sobre un cursor, las dos primeras **palabras** que escribe el compilador de recursos en el recurso de [ \_ cursor RT](/windows/desktop/menurc/resource-types) son los miembros **xHotSpot** y **yHotSpot** de la estructura [**LOCALHEADER**](localheader.md) .
+Una o varias **estructuras RESDIR** siguen inmediatamente la [**estructura NEWHEADER**](newheader.md) en el archivo .res. El **miembro ResCount** de la **estructura NEWHEADER** especifica el número de **estructuras RESDIR.** Tenga en cuenta que la estructura **RESDIR** consta de una estructura [**ICONRESDIR**](iconresdir.md) o una estructura [**CURSORDIR**](cursordir.md) seguida de los miembros **Planes**, **BitCount**, **BytesInRes** **e IconCursorId.** Si la estructura **RESDIR** contiene información sobre un cursor, las dos primeras palabras que el compilador de recursos escribe en el recurso [RT \_ CURSOR](/windows/desktop/menurc/resource-types) son los miembros **xHotSpot** **y yHotSpot** de la [**estructura LOCALHEADER.**](localheader.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -144,7 +144,7 @@ Una o varias estructuras **RESDIR** siguen inmediatamente a la estructura [**NEW
 [**NEWHEADER**](newheader.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Recursos](resources.md)

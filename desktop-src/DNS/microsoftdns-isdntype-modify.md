@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_ISDNType
-description: El método Modify actualiza un registro de recursos ISDN.
+title: Método Modify de la MicrosoftDNS_ISDNType clase
+description: El método Modify actualiza un registro de recursos isdn.
 ms.assetid: 09e23853-ca92-43a3-8bd9-7de10eb5eddc
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_ISDNType clase
-- MicrosoftDNS_ISDNType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar método DNS , MicrosoftDNS_ISDNType clase
+- MicrosoftDNS_ISDNType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c369a6650c834ff9f35af6389c346daec86a954
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 932eb1947287ad6c24592f025301bcf42d5ffb4fc1924d1c18f771bc000396c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795575"
 ---
-# <a name="modify-method-of-the-microsoftdns_isdntype-class"></a>Método Modify de la \_ clase MicrosoftDNS ISDNType
+# <a name="modify-method-of-the-microsoftdns_isdntype-class"></a>Método Modify de la clase MicrosoftDNS \_ ISDNType
 
-El método **Modify** actualiza un registro de recursos ISDN.
+El **método Modify** actualiza un registro de recursos isdn.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -59,17 +59,17 @@ Número ISDN y DDI del propietario del registro.
 
 </dd> <dt>
 
-*Subdirección* \[ en, opcional\]
+*SubAddress* \[ en, opcional\]
 </dt> <dd>
 
-Subdirección del propietario, si está definido.
+Subdirección del propietario, si se define.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -77,9 +77,9 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,10 +101,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ ISDNType**](microsoftdns-isdntype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS ISDNType**](microsoftdns-isdntype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase \_ ISDNType de MicrosoftDNS**](microsoftdns-isdntype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

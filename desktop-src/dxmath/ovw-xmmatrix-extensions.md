@@ -1,22 +1,22 @@
 ---
-description: XMMATRIX describe una \* matriz de 4 4 alineada en un límite de 16 bytes que se asigna a cuatro registros de vector de hardware.
+description: XMMATRIX describe una matriz de 4 4 alineada en un límite de 16 bytes que se asigna \* a cuatro registros de vectores de hardware.
 ms.assetid: 651d17f4-7af6-4f20-91ec-903c3602e4b2
-title: Extensiones de XMMATRIX
+title: Extensiones XMMATRIX
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bb5396954726a05fcf134b0eac622603214dbb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb84f947afb76c5c6add6b7ab2de9ab4709581fbfe618143b5d379aeceac04e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118375"
 ---
-# <a name="xmmatrix-extensions"></a>Extensiones de XMMATRIX
+# <a name="xmmatrix-extensions"></a>Extensiones XMMATRIX
 
-[**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) describe una \* matriz de 4 4 alineada en un límite de 16 bytes que se asigna a cuatro registros de vector de hardware.
+[**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) describe una matriz de 4 4 alineada en un límite de 16 bytes que se asigna \* a cuatro registros de vectores de hardware.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles en C++.
+> Las características enumeradas aquí solo están disponibles en C++.
 
  
 
@@ -26,7 +26,7 @@ ms.locfileid: "103908420"
 
 | Tema                                                       | Descripción                                                                     |
 |-------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [**Constructores XMMATRIX**](xmmatrix-ctor.md)<br/>   | Construye instancias de la estructura [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) . <br/> |
+| [**Constructores XMMATRIX**](xmmatrix-ctor.md)<br/>   | Construye instancias de la [**estructura XMMATRIX.**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) <br/> |
 | [Operadores XMMATRIX](ovw-xmmatrix-operators.md)<br/> | Operadores expuestos por `XMMATRIX` .<br/>                                     |
 
 

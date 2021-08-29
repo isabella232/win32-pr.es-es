@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fdb3889ecfa5bdcd49b4054822a2b2d09df58fa6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4fc3e4fef02b5ed2a0d531c48d9503d4703d16e4353f46ff5b233bc12ebab16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526125"
 ---
 # <a name="csourceseekingsettimeformat-method"></a>Método CSourceSeeking.SetTimeFormat
 
@@ -59,7 +59,7 @@ Devuelve uno de los **valores HRESULT** enumerados en la tabla siguiente.
 |----------------------------------------------------------------------------------------------|-----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Correcto.<br/>                           |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | No se admite el formato especificado.<br/> |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | Argumento de puntero **NULL.**<br/>         |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>    | **Argumento de** puntero NULL.<br/>         |
 
 
 
@@ -75,12 +75,12 @@ El único formato de hora admitido por la clase base es TIME \_ FORMAT \_ MEDIA 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: La paleta de vídeo ha cambiado.
+description: La paleta de vídeos ha cambiado.
 ms.assetid: 39f36efa-fe61-4310-b7ec-1ad6ef3f29fb
-title: EC_PALETTE_CHANGED (DShow. h)
+title: EC_PALETTE_CHANGED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b66a97c152e90a6834d779407df8a11bb584b0d5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6daae6af26259032389344fbcf3dd2ecd4c3468bbb32aa82056b49061bd0afe4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316785"
 ---
-# <a name="ec_palette_changed"></a>paleta de EC \_ \_ modificada
+# <a name="ec_palette_changed"></a>EC \_ PALETTE \_ CHANGED
 
-La paleta de vídeo ha cambiado.
+La paleta de vídeos ha cambiado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los representadores de vídeo envían este evento si detectan un cambio de la paleta en la secuencia.
+Los representadores de vídeo envían este evento si detectan un cambio de paleta en la secuencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,11 +47,11 @@ Los representadores de vídeo envían este evento si detectan un cambio de la pa
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

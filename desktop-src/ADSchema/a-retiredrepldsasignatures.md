@@ -1,11 +1,11 @@
 ---
-title: Retiród-REPL-DSA-signaturas (atributo)
-description: Realiza el seguimiento de las identidades de replicación de DS pasadas de un controlador de dominio determinado.
+title: Atributo Retired-Repl-DSA-Signatures
+description: Realiza un seguimiento de las identidades de replicación de DS anteriores de un controlador de dominio determinado.
 ms.assetid: 82e8b222-5635-41ad-b2ab-386c9e6aa280
 ms.tgt_platform: multiple
 keywords:
-- Retiród-REPL-DSA-signaturas atributo AD Schema
-- retiredReplDSASignatures esquema de AD de atributos
+- Esquema de AD del atributo Retired-Repl-DSA-Signatures
+- esquema de AD del atributo retiredReplDSASignatures
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a9a4cb4030a8d3aa24244bc2e7a2702e83686fc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0521644304cef0af7d0b1ba01b582e5b5ae64b1921736925008e7394e4b1a46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646905"
 ---
-# <a name="retired-repl-dsa-signatures-attribute"></a>Retiród-REPL-DSA-signaturas (atributo)
+# <a name="retired-repl-dsa-signatures-attribute"></a>Atributo Retired-Repl-DSA-Signatures
 
-Realiza el seguimiento de las identidades de replicación de DS pasadas de un controlador de dominio determinado.
+Realiza un seguimiento de las identidades de replicación de DS anteriores de un controlador de dominio determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| CN                | Retiradas-REPL-DSA-firmas                                                         |
-| Nombre para mostrar de LDAP | retiredReplDSASignatures                                                            |
-| Tamaño              | La longitud es proporcional al número de veces que se ha restaurado el controlador de dominio desde la copia de seguridad. |
-| Actualizar privilegio  | El sistema establece este valor.                                                    |
+| CN                | Retired-Repl-DSA-Signatures                                                         |
+| Ldap-Display-Name | retiredReplDSASignatures                                                            |
+| Size              | La longitud es proporcional al número de veces que se ha restaurado el controlador de dominio desde la copia de seguridad. |
+| Actualizar privilegios  | El sistema establece este valor.                                                    |
 | Frecuencia de actualización  | \-                                                                                  |
 | Attribute-Id      | 1.2.840.113556.1.4.673                                                              |
-| System-ID-GUID    | 7bfdcb7f-4807-11d1-a9c3-0000f80367c1                                                |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                               |
+| System-Id-Guid    | 7bfdcb7f-4807-11d1-a9c3-0000f80367c1                                                |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)                               |
 
 
 
@@ -44,7 +44,7 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -77,13 +77,13 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -92,19 +92,19 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -117,15 +117,15 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -140,13 +140,13 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -161,13 +161,13 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -180,15 +180,15 @@ Realiza el seguimiento de las identidades de replicación de DS pasadas de un co
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | True                                     |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Verdadero                                     |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

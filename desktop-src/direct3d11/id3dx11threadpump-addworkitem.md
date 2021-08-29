@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX11ThreadPump AddWorkItem (D3DX11core. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Agrega un elemento de trabajo al bombeo de subprocesos.
+title: Método Id3DX11ThreadPump AddWorkItem (D3DX11core.h)
+description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Agrega un elemento de trabajo al bombeo de subprocesos.'
 ms.assetid: 2578506c-6175-457a-bf10-94929bb3c0c4
 keywords:
 - Método AddWorkItem Direct3D 11
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebf249405bd71287f93444ae8d23dab694027360
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bbf0fda0ef2410ea7bd2e08a350d1e56e85c1beb999568ccfa4a653db1e22212
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119665"
 ---
-# <a name="id3dx11threadpumpaddworkitem-method"></a>ID3DX11ThreadPump:: AddWorkItem (método)
+# <a name="id3dx11threadpumpaddworkitem-method"></a>Método ID3DX11ThreadPump::AddWorkItem
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 
  
 
@@ -51,39 +51,39 @@ HRESULT AddWorkItem(
 
 <dl> <dt>
 
-*pDataLoader* \[ de\]
+*pDataLoader* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11DataLoader**](id3dx11dataloader.md)\***
 
-Cargador que el bombeo de subprocesos usará cuando un elemento de trabajo requiera que se carguen los datos.
+Cargador que usará el bombeo de subprocesos cuando un elemento de trabajo requiera que se carguen los datos.
 
 </dd> <dt>
 
-*pDataProcessor* \[ de\]
+*pDataProcessor* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11DataProcessor**](id3dx11dataprocessor.md)\***
 
-Procesador que utilizará el bombeo de subprocesos cuando un elemento de trabajo requiera que se procesen los datos.
+Procesador que usará la bomba de subprocesos cuando un elemento de trabajo requiera que se procese los datos.
 
 </dd> <dt>
 
-*pHResult* \[ de\]
+*pHResult* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Puntero al valor devuelto. Puede ser **null**.
+Puntero al valor devuelto. Puede ser **NULL.**
 
 </dd> <dt>
 
-*ppDeviceObject* \[ enuncia\]
+*ppDeviceObject* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
-El dispositivo que usa el objeto.
+Dispositivo que usa el objeto .
 
 </dd> </dl>
 
@@ -91,7 +91,7 @@ El dispositivo que usa el objeto.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,8 +99,8 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX11core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>   |
 
 
 
@@ -111,7 +111,7 @@ El valor devuelto es uno de los valores que se muestran en [códigos de retorno 
 [ID3DX11ThreadPump](id3dx11threadpump.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

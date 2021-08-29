@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1151572c32efe69cceb89e7a5ea5a045955b5f43
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9ef77a05eefc84975539bdc4e61b534a7ed5ee71d00e029bdf7ef2af8c19e666
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108095403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016243"
 ---
 # <a name="cmemallocatorcmemallocator-constructor"></a>Constructor CMemAllocator.CMemAllocator
 
@@ -61,7 +61,7 @@ Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a
 *Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o el error del método.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método.
 
 </dd> </dl>
 
@@ -71,12 +71,12 @@ Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o el
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Se produce cuando la punta del lápiz se pone en contacto con la superficie de la tableta de la digitalización.
+description: Se produce cuando la punta del lápiz óptico se pone en contacto con la superficie de la tableta de digitalización.
 ms.assetid: 7f4a441d-00d2-4120-8a8d-d3496cdc7e58
-title: 'ITabletEventSink:: CursorDown (método)'
+title: ITabletEventSink::CursorDown (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 1f0ffbe8c300e3c227cd59d8ff391b8990873c56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 242e9ebdf2999c342e6ae7f4711a9f142b38a23e977e7dc9a44b906e0062bc2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820645"
 ---
-# <a name="itableteventsinkcursordown-method"></a>ITabletEventSink:: CursorDown (método)
+# <a name="itableteventsinkcursordown-method"></a>ITabletEventSink::CursorDown (método)
 
-Se produce cuando la punta del lápiz se pone en contacto con la superficie de la tableta de la digitalización.
+Se produce cuando la punta del lápiz óptico se pone en contacto con la superficie de la tableta de digitalización.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,38 +44,38 @@ HRESULT CursorDown(
 
 <dl> <dt>
 
-*TCID* \[ de\]
+*tcid* \[ En\]
 </dt> <dd>
 
-El identificador de la tableta.
+Identificador de la tableta.
 
 </dd> <dt>
 
-*CID* \[ en\]
+*cid* \[ en\]
 </dt> <dd>
 
 Identificador del lápiz óptico.
 
 </dd> <dt>
 
-*nSerialNumber* \[ de\]
+*nSerialNumber* \[ En\]
 </dt> <dd>
 
 Número de serie del lápiz óptico.
 
 </dd> <dt>
 
-*cbPkt* \[ de\]
+*cbPkt* \[ En\]
 </dt> <dd>
 
-El número de bytes de un paquete de datos del lápiz óptico.
+Número de bytes de un paquete de datos de lápiz óptico.
 
 </dd> <dt>
 
-*pbPkt* \[ de\]
+*pbPkt* \[ En\]
 </dt> <dd>
 
-Datos del lápiz óptico que indican la ubicación donde el lápiz toca la tableta.
+Datos del lápiz óptico que indican la ubicación en la que el lápiz tocó la tableta.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -98,9 +98,9 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -110,7 +110,7 @@ Este método puede devolver uno de estos valores.
 
 <dl> <dt>
 
-[**Interfaz ITabletEventSink**](itableteventsink.md)
+[**ITabletEventSink (interfaz)**](itableteventsink.md)
 </dt> </dl>
 
  

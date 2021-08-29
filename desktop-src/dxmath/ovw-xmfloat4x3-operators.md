@@ -1,22 +1,22 @@
 ---
-description: La estructura XMFLOAT4X3 expone los siguientes operadores.
+description: La estructura XMFLOAT4X3 expone los operadores siguientes.
 ms.assetid: bcf2420c-cd66-4a50-9222-d74039867871
 title: Operadores XMFLOAT4X3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07c34539647de8b0971f2af8baf5c0890e618cdb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e3cba1f6e2f1e01c511d11cff150ceae2638558051e1a4c5c43a1a73ad1a310
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022045"
 ---
 # <a name="xmfloat4x3-operators"></a>Operadores XMFLOAT4X3
 
-La estructura [**XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3) expone los siguientes operadores.
+La [**estructura XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3) expone los operadores siguientes.
 
 > [!Note]  
-> Los operadores que se enumeran aquí solo están disponibles en C++.
+> Los operadores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -26,8 +26,8 @@ La estructura [**XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmf
 
 | Métodos                                                      | Descripción                                                                                                              |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxmath/nf-directxmath-xmfloat4x3-operator-assign)<br/>      | Asigna los datos del componente de vector de una instancia de `XMFLOAT4X3` a la instancia actual de `XMFLOAT4X3` . <br/> |
-| [**operador ()**](xmfloat4x3-operator-parens.md)<br/> | Obtiene acceso a elementos de matriz concretos a los que hace referencia la fila y la columna de la instancia actual de `XMFLOAT4X3` . <br/>    |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmfloat4x3-operator-assign)<br/>      | Asigna los datos del componente vectorial de una instancia de `XMFLOAT4X3` a la instancia actual de `XMFLOAT4X3` . <br/> |
+| [**operador ()**](xmfloat4x3-operator-parens.md)<br/> | Accede a elementos de matriz específicos a los que hace referencia la fila y la columna desde la instancia actual de `XMFLOAT4X3` . <br/>    |
 
 
 
@@ -37,7 +37,7 @@ La estructura [**XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmf
 
 <dl> <dt>
 
-[Extensiones de XMFLOAT4X3](ovw-xmfloat4x3-extensions.md)
+[Extensiones XMFLOAT4X3](ovw-xmfloat4x3-extensions.md)
 </dt> <dt>
 
 **Referencia**

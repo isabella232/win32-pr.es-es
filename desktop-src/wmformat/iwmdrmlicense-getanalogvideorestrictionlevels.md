@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicense GetAnalogVideoRestrictionLevels (wmdrmsdk. h)
-description: El método GetAnalogVideoRestrictionLevels recupera todas las restricciones de vídeo analógico establecidas en la licencia actual.
+title: Método IWMDRMLicense GetAnalogVideoRestrictionLevels (Wmdrmsdk.h)
+description: El método GetAnalogVideoRestrictionLevels recupera todas las restricciones de vídeo análogo establecidas en la licencia actual.
 ms.assetid: cf0ac7c0-236d-4d60-8850-81dc6754cf01
 keywords:
-- Método GetAnalogVideoRestrictionLevels formato de Windows Media
-- Método GetAnalogVideoRestrictionLevels formato de Windows Media, interfaz IWMDRMLicense
-- Interfaz IWMDRMLicense formato de Windows Media, método GetAnalogVideoRestrictionLevels
+- Método GetAnalogVideoRestrictionLevels windows Media Format
+- Método GetAnalogVideoRestrictionLevels windows Media Format , interfaz IWMDRMLicense
+- IWMDRMLicense interfaz windows Media Format , Método GetAnalogVideoRestrictionLevels
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a168f25381b807cc8c0cd17f7ba6764c3591513
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1848165729b67a21ae65b506739ccf6d336f51afd51292bae7b66bcd067fdee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119808675"
 ---
-# <a name="iwmdrmlicensegetanalogvideorestrictionlevels-method"></a>IWMDRMLicense:: GetAnalogVideoRestrictionLevels (método)
+# <a name="iwmdrmlicensegetanalogvideorestrictionlevels-method"></a>Método IWMDRMLicense::GetAnalogVideoRestrictionLevels
 
-El método **GetAnalogVideoRestrictionLevels** recupera todas las restricciones de vídeo analógico establecidas en la licencia actual.
+El **método GetAnalogVideoRestrictionLevels** recupera todas las restricciones de vídeo análogo establecidas en la licencia actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,37 +44,37 @@ HRESULT GetAnalogVideoRestrictionLevels(
 
 <dl> <dt>
 
-*\[ rgAnalogVideoRestrictions \]* \[fuera de\]
+*rgAnalogVideoRestrictions \[ \]* \[out\]
 </dt> <dd>
 
-Recibe una matriz de estructuras de [**\_ \_ \_ restricciones de vídeo analógico WMDRM**](wmdrm-analog-video-restrictions.md) . Establezca en **null** para obtener el número de elementos de la matriz en *pcResctrictions*.
+Recibe una matriz de [**estructuras \_ DE WMDRM ANALOG VIDEO \_ \_ RESTRICTIONS.**](wmdrm-analog-video-restrictions.md) Establezca en **NULL** para obtener el número de elementos de la matriz en *pcResctrictions*.
 
 </dd> <dt>
 
 *pcRestrictions* \[ in, out\]
 </dt> <dd>
 
-Número de elementos de la matriz de restricciones. Si *rgAnalogVideoRestrictions* se establece en **null**, este valor se establece en el número de elementos necesarios en la matriz.
+Número de elementos de la matriz de restricciones. Si *rgAnalogVideoRestrictions* se establece en **NULL,** este valor se establece en el número de elementos necesarios en la matriz.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe asignar memoria para la matriz de restricciones. Para ello, llame primero al método con *rgAnalogVideoRestrictions* establecido en **null**, que establecerá el valor de *pcRestrictions* en el número de elementos necesarios.
+Debe asignar memoria para la matriz de restricciones. Para ello, primero llame al método con *rgAnalogVideoRestrictions* establecido en **NULL,** que establecerá el valor en *pcRestrictions* en el número de elementos necesarios.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ Debe asignar memoria para la matriz de restricciones. Para ello, llame primero a
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

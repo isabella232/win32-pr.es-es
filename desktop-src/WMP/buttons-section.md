@@ -1,26 +1,26 @@
 ---
-title: Sección botones
-description: Sección botones
+title: Sección Botones
+description: Sección Botones
 ms.assetid: fa413bb4-e04a-4e3d-9754-cd4c2d82de6e
 keywords:
-- Aspectos de Windows Media Player Mobile, sección de botones
-- aspectos, sección de botones
-- crear máscaras, sección de botones
-- escribir código para máscaras, sección de botones
-- botones en máscaras, sección botones
-- archivos de definición de máscara, sección de botones
+- Reproductor de Windows Media Máscaras móviles, sección Botones
+- máscaras, sección Botones
+- crear máscaras, sección Botones
+- escribir código para máscaras, sección Botones
+- botones en máscaras, sección Botones
+- archivos de definición de máscara, sección Botones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f994225154e3f4cc55070351c32c654d5ad616c1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 96c64c055ee5ef4bc758838b531cf9052548f8673e18219970b750eb092d57fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997744"
 ---
-# <a name="buttons-section"></a>Sección botones
+# <a name="buttons-section"></a>Sección Botones
 
-A continuación, debe definir los botones que se van a usar:
+A continuación, debe definir los botones que va a usar:
 
 
 ```C++
@@ -37,16 +37,16 @@ A continuación, debe definir los botones que se van a usar:
 
 
 
-En esta sección se definen cuatro botones. La página que está viendo puede ajustar estas líneas, pero cuando escribe en el código, no debe ajustar las líneas; es decir, cada línea debe estar completa y terminar con una marca de párrafo.
+Hay cuatro botones definidos en esta sección. La página que está viendo puede encapsular estas líneas, pero cuando escribe en el código, no debe ajustar las líneas; es decir, cada línea debe estar completa y terminar con una marca de párrafo.
 
 > [!Note]  
-> Los tipos de botones están desusados en las máscaras de Windows Media Player 10 Mobile o posterior. En lugar de un tipo de botón declarado en el archivo de máscara, escriba "NA" para cada tipo.
+> Los tipos de botones están en desuso Reproductor de Windows Media 10 máscaras móviles o posteriores. En lugar de un tipo de botón declarado en el archivo de máscara, escriba "NA" para cada tipo.
 
- 
+ 
 
-Para cada botón debe definir la función, el tipo, la ubicación, el origen de la imagen insertada, el origen deshabilitado y el color (para los botones de tipo de acceso). Además, para el botón PlayPause, debe definir los orígenes de imagen normales e insertados para el estado de pausa.
+Para cada botón debe definir la función, el tipo, la ubicación, el origen de la imagen inserda, el origen deshabilitado y el color (para los botones de tipo de llamada). Además, para el botón PlayPause , debe definir los orígenes de imágenes normales e insertadas para el estado en pausa.
 
-Para obtener más información sobre la sección de botones del archivo de definición de máscara, vea [botones](buttons.md) en la referencia de máscara.
+Para obtener más información sobre la sección Botones del archivo de definición de máscara, vea [Botones en](buttons.md) la referencia de máscara.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -55,9 +55,9 @@ Para obtener más información sobre la sección de botones del archivo de defin
 [**Escritura del código**](writing-the-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

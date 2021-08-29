@@ -1,11 +1,11 @@
 ---
-title: FRS-Computer-Reference-BL (atributo)
-description: Referencia a los conjuntos de réplicas a los que pertenece este equipo.
+title: Atributo Frs-Computer-Reference-BL
+description: Referencia a conjuntos de réplicas a los que pertenece este equipo.
 ms.assetid: b6b42ab7-a57a-4151-85a3-5f2373e0458f
 ms.tgt_platform: multiple
 keywords:
-- FRS-Computer-Reference-BL atributo AD Schema
-- frsComputerReferenceBL esquema de AD de atributos
+- Esquema de AD del atributo Frs-Computer-Reference-BL
+- Esquema de AD del atributo frsComputerReferenceBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84d02148a9282137db77768ccca8e687de22c54f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 96fa0ac711516c7436a091b286251ad7b6b08baed5df905ac79dbc92516d9baf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804514"
 ---
-# <a name="frs-computer-reference-bl-attribute"></a>FRS-Computer-Reference-BL (atributo)
+# <a name="frs-computer-reference-bl-attribute"></a>Atributo Frs-Computer-Reference-BL
 
-Referencia a los conjuntos de réplicas a los que pertenece este equipo.
+Referencia a conjuntos de réplicas a los que pertenece este equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | FRS-Computer-Reference-BL               |
-| Nombre para mostrar de LDAP | frsComputerReferenceBL                  |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | El sistema establece este valor.        |
+| CN                | Frs-Computer-Reference-BL               |
+| Ldap-Display-Name | frsComputerReferenceBL                  |
+| Size              | \-                                      |
+| Actualizar privilegios  | El sistema establece este valor.        |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.870                  |
-| System-ID-GUID    | 2a132579-9373-11d1-aebc-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 2a132579-9373-11d1-aebc-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,13 +55,13 @@ Referencia a los conjuntos de réplicas a los que pertenece este equipo.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 103                             |
+| Id. de vínculo                | 103                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -76,13 +76,13 @@ Referencia a los conjuntos de réplicas a los que pertenece este equipo.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 103                             |
+| Id. de vínculo                | 103                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -97,13 +97,13 @@ Referencia a los conjuntos de réplicas a los que pertenece este equipo.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 103                             |
+| Id. de vínculo                | 103                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -116,15 +116,15 @@ Referencia a los conjuntos de réplicas a los que pertenece este equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 103                             |
+| Id. de vínculo                | 103                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -139,13 +139,13 @@ Referencia a los conjuntos de réplicas a los que pertenece este equipo.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 103                             |
+| Id. de vínculo                | 103                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -160,13 +160,13 @@ Referencia a los conjuntos de réplicas a los que pertenece este equipo.
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 103                             |
+| Id. de vínculo                | 103                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

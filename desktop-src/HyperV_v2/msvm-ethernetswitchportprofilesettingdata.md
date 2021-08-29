@@ -1,7 +1,7 @@
 ---
 description: Representa la configuración del perfil de puerto.
 ms.assetid: 43ddb0a3-8621-4993-b0a9-8ddcfb0eaad5
-title: Msvm_EthernetSwitchPortProfileSettingData (clase)
+title: Msvm_EthernetSwitchPortProfileSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -29,18 +29,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 611fd40b14b961369a847d6bb7b7746ceec2bb85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d90106690346b98e466d35028eb09d67386b89e9a04e05642fe130ecac290164
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105689580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789935"
 ---
-# <a name="msvm_ethernetswitchportprofilesettingdata-class"></a>MSVM \_ EthernetSwitchPortProfileSettingData (clase)
+# <a name="msvm_ethernetswitchportprofilesettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortProfileSettingData
 
 Representa la configuración del perfil de puerto.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,13 +69,13 @@ class Msvm_EthernetSwitchPortProfileSettingData : Msvm_EthernetSwitchPortFeature
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortProfileSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortProfileSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortProfileSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortProfileSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -88,23 +88,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de Perfil de puerto de conmutador Ethernet".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Perfil de puerto de conmutador Ethernet Configuración".
 
 </dd> <dt>
 
 **CdnLabelId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (11), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Identificador de la etiqueta de la red CDN.
+Identificador CDN etiqueta.
 
 </dd> <dt>
 
@@ -114,13 +114,13 @@ Identificador de la etiqueta de la red CDN.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (12), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Cadena de la etiqueta de la red CDN.
+Cadena CDN etiqueta.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "representa la configuración del perfil de puerto".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Representa la configuración del perfil de puerto".
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de Perfil de puerto de conmutador Ethernet".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Perfil de puerto de conmutador Ethernet Configuración".
 
 </dd> <dt>
 
@@ -159,10 +159,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -172,23 +172,23 @@ Identifica de forma única una instancia de esta clase. Esta propiedad se hereda
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (38), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Identificador único del dispositivo de la subinterfaz.
+Identificador de dispositivo único de la subinterfaz.
 
 </dd> <dt>
 
 **PciBusNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -201,26 +201,26 @@ Número de bus PCI.
 **PciDeviceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-El número de dispositivo PCI.
+Número de dispositivo PCI.
 
 </dd> <dt>
 
 **PciFunctionNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -233,10 +233,10 @@ Número de función PCI.
 **PciSegmentNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -249,10 +249,10 @@ Número de segmento PCI.
 **ProfileData**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -268,7 +268,7 @@ Datos adicionales para el perfil de puerto.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (38), **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -284,7 +284,7 @@ Identificador del perfil de puerto.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -300,7 +300,7 @@ Nombre del perfil de puerto.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (38), **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -316,7 +316,7 @@ Identificador del proveedor que define el perfil.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -332,10 +332,10 @@ Nombre del proveedor que define el perfil.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

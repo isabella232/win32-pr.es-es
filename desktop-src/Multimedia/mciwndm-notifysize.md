@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_NOTIFYSIZE (VFW. h)
-description: El \_ mensaje MCIWNDM NOTIFYSIZE notifica a la ventana primaria de una aplicación que el tamaño de la ventana ha cambiado.
+title: MCIWNDM_NOTIFYSIZE mensaje (Vfw.h)
+description: El mensaje MCIWNDM NOTIFYSIZE notifica a la ventana primaria de una \_ aplicación que el tamaño de la ventana ha cambiado.
 ms.assetid: 76e1f663-bfc6-4d3c-9486-c8c7f79e4265
 keywords:
-- Mensaje de MCIWNDM_NOTIFYSIZE de Windows multimedia
+- MCIWNDM_NOTIFYSIZE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59db02d69302127937a7203729de9cc8b98a58f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6793aa6d0e0f3001a5c8c76b34ed6bbd1011ba17441fd709ee016d9d161a97b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525385"
 ---
-# <a name="mciwndm_notifysize-message"></a>MCIWNDM \_ NOTIFYSIZE
+# <a name="mciwndm_notifysize-message"></a>Mensaje NOTIFYSIZE de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ NOTIFYSIZE** notifica a la ventana primaria de una aplicación que el tamaño de la ventana ha cambiado.
+El **mensaje MCIWNDM \_ NOTIFYSIZE** notifica a la ventana primaria de una aplicación que el tamaño de la ventana ha cambiado.
 
 
 ```C++
@@ -38,16 +38,16 @@ lParam = 0;
 
 <dl> <dt>
 
-<span id="hwnd"></span><span id="HWND"></span>*identificador*
+<span id="hwnd"></span><span id="HWND"></span>*Hwnd*
 </dt> <dd>
 
-Identificador de la ventana de MCIWnd.
+Identificador de la ventana MCIWnd.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede habilitar la notificación de cambios en el tamaño de una ventana de MCIWnd especificando el estilo de ventana de MCIWNDF \_ NOTIFYSIZE.
+Puede habilitar la notificación de cambios en el tamaño de una ventana de MCIWnd especificando el estilo de ventana MCIWNDF \_ NOTIFYSIZE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Puede habilitar la notificación de cambios en el tamaño de una ventana de MCIW
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -3,27 +3,27 @@ title: Guía de máscara
 description: Guía de máscara
 ms.assetid: e8df7781-772d-4dd3-a6bc-f66ce6bab295
 keywords:
-- Media Player de Windows, máscaras
-- Windows Media Player Mobile Skins, guía de creación
+- Reproductor de Windows Media,máscaras
+- Reproductor de Windows Media Máscaras móviles, guía de creación
 - máscaras, guía de creación
 - crear máscaras, acerca de
-- crear máscaras, Windows Media Player Mobile
+- crear máscaras, Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40b550cf2d8478ea1ef926deb68b42cb51c44257
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ed29580a477e6d0c00b026c2ce239f0028d9b40c71891da19d9db8d43c15a207
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104148755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763555"
 ---
 # <a name="skin-guide"></a>Guía de máscara
 
-En esta sección se describe cómo crear una máscara simple en modo vertical para Windows Media Player 9 series para Windows Mobile 2003 o posterior. Se usarán los siguientes pasos:
+En esta sección se describe cómo crear una máscara de modo vertical simple para Reproductor de Windows Media serie 9 para Windows Mobile 2003 o posterior. Se usarán los pasos siguientes:
 
 -   [Elección de las funciones](choosing-the-functions.md)
--   [Diseñar la interfaz](designing-the-interface.md)
--   [Crear el arte](creating-the-art.md)
+-   [Diseño de la interfaz](designing-the-interface.md)
+-   [Creación del arte](creating-the-art.md)
 -   [Escritura del código](writing-the-code.md)
 -   [Instalación de la máscara](installing-your-skin.md)
 
@@ -31,12 +31,12 @@ En esta sección se describe cómo crear una máscara simple en modo vertical pa
 
 <dl> <dt>
 
-[**Máscaras móviles de Windows Media Player**](windows-media-player-mobile-skins.md)
+[**Reproductor de Windows Media Máscaras móviles**](windows-media-player-mobile-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
