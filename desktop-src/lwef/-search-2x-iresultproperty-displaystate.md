@@ -1,11 +1,11 @@
 ---
-title: Propiedad IResultProperty DisplayState (WdsSharedIDL. h)
-description: Visability de la propiedad.
+title: Propiedad DisplayState IResultProperty (WdsSharedIDL.h)
+description: Visibilidad de la propiedad.
 ms.assetid: 4fdf6cdb-30bd-4582-a573-a1cc9f4052e6
 keywords:
-- Propiedad DisplayState características de entorno heredado de Windows
-- Propiedad DisplayState características de entorno heredado de Windows, interfaz IResultProperty
-- Interfaz IResultProperty características del entorno heredado de Windows, propiedad DisplayState
+- Características heredadas del entorno de Windows displayState
+- Propiedad DisplayState Legacy Windows Environment Features , IResultProperty (Interfaz IResultProperty)
+- IResultProperty interface Legacy Windows Environment Features , DisplayState property
 topic_type:
 - apiref
 api_name:
@@ -17,19 +17,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d85634441a38c2cb2130010c79f8ee3ebcb78a2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6cf4e8e285479f0c1d15d3c846e12786113410198935df5f83056ee89f39792
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118755157"
 ---
-# <a name="iresultpropertydisplaystate-property"></a>IResultProperty::D propiedad isplayState
+# <a name="iresultpropertydisplaystate-property"></a>Propiedad IResultProperty::D isplayState
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
-Visability de la propiedad.
+Visibilidad de la propiedad.
 
 Esta propiedad es de solo lectura.
 
@@ -46,18 +46,18 @@ HRESULT get_DisplayState(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Devuelve un puntero al valor del estado de presentación.
+devuelve un puntero al valor de estado de presentación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

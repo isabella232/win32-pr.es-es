@@ -4,16 +4,16 @@ description: La aplicación WpdServiceApiSample muestra cómo una aplicación pu
 ms.assetid: 7fbd6f65-366a-49ea-a680-be77ca0d64f2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98e57258993d0a81f68042195db2caf338c97c53
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: b56b164980249911ce267050143611dc599520fc841e33157bd6ac84718c1728
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806695"
 ---
 # <a name="retrieving-wpd-object-properties"></a>Recuperación de propiedades de objetos WPD
 
-Los servicios suelen contener objetos secundarios que pertenecen a uno de los formatos que admite cada servicio. Por ejemplo, un servicio Contactos puede admitir varios objetos de contacto con el formato abstracto Contacto. Cada objeto de contacto se describe mediante propiedades relacionadas (nombre de contacto, número de teléfono, dirección de correo electrónico, entre otras).
+Los servicios suelen contener objetos secundarios que pertenecen a uno de los formatos que admite cada servicio. Por ejemplo, un servicio Contactos puede admitir varios objetos de contacto con el formato abstracto Contacto. Cada objeto de contacto se describe mediante propiedades relacionadas (nombre de contacto, número de teléfono, dirección de correo electrónico, entre otros).
 
 La aplicación WpdServiceApiSample incluye código que muestra cómo una aplicación puede recuperar las propiedades content-object admitidas por un servicio Contacts determinado. En este ejemplo se usan las interfaces siguientes.
 

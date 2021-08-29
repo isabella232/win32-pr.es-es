@@ -1,23 +1,23 @@
 ---
-description: La propiedad SEQUENCE especifica una tabla que tiene el mismo esquema que la tabla InstallExecuteSequence, que son las columnas Action, condition y Sequence. La acción de secuencia usa esta propiedad.
+description: La propiedad SEQUENCE especifica una tabla que tiene el mismo esquema que la tabla InstallExecuteSequence, es decir, las columnas Action, Condition y Sequence. Esta propiedad la usa la acción SEQUENCE.
 ms.assetid: bd2dd544-eb1d-4b6c-862b-952c8edc7593
-title: SEQUENCE (propiedad)
+title: Propiedad SEQUENCE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55ba3e95e5ca7008c5654ebeec5e307002eb8582
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a6c938fe556bb8dfd0ff4c1a9c732f68ea28d93e7d01617e1e0bbba582d0bcc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040065"
 ---
-# <a name="sequence-property"></a>SEQUENCE (propiedad)
+# <a name="sequence-property"></a>Propiedad SEQUENCE
 
-La propiedad **Sequence** especifica una tabla que tiene el mismo esquema que la tabla InstallExecuteSequence, que son las columnas Action, condition y Sequence. La [acción de secuencia](sequence-action.md)usa esta propiedad.
+La **propiedad SEQUENCE** especifica una tabla que tiene el mismo esquema que la tabla InstallExecuteSequence, es decir, las columnas Action, Condition y Sequence. Esta propiedad la usa la [acción SEQUENCE](sequence-action.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La acción de secuencia ejecuta las acciones en la tabla en el orden especificado por la columna Sequence de la tabla.
+La acción SEQUENCE ejecuta las acciones de la tabla en el orden especificado por la columna Sequence de la tabla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ La acción de secuencia ejecuta las acciones en la tabla en el orden especificad
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

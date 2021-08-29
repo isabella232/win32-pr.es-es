@@ -1,30 +1,30 @@
 ---
-title: Propiedad ExtendedDisconnectReason de IMsRdpClient
-description: Contiene información extendida sobre el motivo del control para la desconexión.
+title: Propiedad IMsRdpClient ExtendedDisconnectReason
+description: Contiene información extendida sobre el motivo de desconexión del control.
 ms.assetid: 5729992f-6695-44c0-8cf0-0d6b4cbddb62
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad ExtendedDisconnectReason
-- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
+- Propiedad ExtendedDisconnectReason Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad ExtendedDisconnectReason
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b94c2612b231e24aaec855b6ebd1f9a0498b63c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b9fd1b19f977dd0ea2249462461e6e80a06a056ba031fd8c04192dd617544ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120080065"
 ---
-# <a name="imsrdpclientextendeddisconnectreason-property"></a>IMsRdpClient:: ExtendedDisconnectReason (propiedad)
+# <a name="imsrdpclientextendeddisconnectreason-property"></a>Propiedad IMsRdpClient::ExtendedDisconnectReason
 
-Contiene información extendida sobre el motivo del control para la desconexión.
+Contiene información extendida sobre el motivo de desconexión del control.
 
 Esta propiedad es de solo lectura.
 
@@ -80,17 +80,17 @@ HRESULT get_ExtendedDisconnectReason(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero al valor de [**ExtendedDisconnectReasonCode**](extendeddisconnectreasoncode.md) que indica el motivo de la desconexión del cliente.
+Puntero al [**valor ExtendedDisconnectReasonCode**](extendeddisconnectreasoncode.md) que indica el motivo de la desconexión del cliente.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Si el método se ejecuta correctamente, se devuelve **S \_ OK** . Cualquier otro valor **HRESULT** indica que se produjo un error en la llamada.
+Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, se llama a este método en el controlador de eventos [**IMsTscAxEvents:: OnDisconnection**](imstscaxevents-ondisconnected.md) para recuperar información adicional sobre el evento de desconexión.
+Normalmente, se llama a este método en el controlador de eventos [**IMsTscAxEvents::OnDisconnected**](imstscaxevents-ondisconnected.md) para recuperar información adicional sobre el evento de desconexión.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -140,7 +140,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 [**IMsRdpClient10**](imsrdpclient10.md)
 </dt> <dt>
 
-[**IMsTscAxEvents:: OnDisconnection**](imstscaxevents-ondisconnected.md)
+[**IMsTscAxEvents::OnDisconnected**](imstscaxevents-ondisconnected.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Representa el servicio de virtualización presente en un sistema host único.
+description: Representa el servicio de virtualización presente en un único sistema host.
 ms.assetid: 7f4bd9e0-b034-4882-ad01-f7df740939ae
-title: Msvm_VirtualSystemManagementService (clase)
+title: Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -41,18 +41,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7ee79b9690f1eacdf7dc57a2ebfc2133091a1d55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0dab3dc9b530ca565e78ecc1f5a6e50a26bc3f630f5c60491b01c253e09aa97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147998"
 ---
-# <a name="msvm_virtualsystemmanagementservice-class"></a>MSVM \_ VirtualSystemManagementService (clase)
+# <a name="msvm_virtualsystemmanagementservice-class"></a>Clase \_ VirtualSystemManagementService de Msvm
 
-Representa el servicio de virtualización presente en un sistema host único. **MSVM \_ VirtualSystemManagementService** se usa para controlar la definición, la modificación y la eliminación de máquinas virtuales. También tiene métodos para realizar operaciones en máquinas virtuales, como la clonación, la instantánea y la importación o exportación de máquinas virtuales. Para recuperar la información de la máquina virtual, use [**MSVM \_ ComputerSystem**](msvm-computersystem.md).
+Representa el servicio de virtualización presente en un único sistema host. **Msvm \_ VirtualSystemManagementService** se usa para controlar la definición, modificación y eliminación de máquinas virtuales. También tiene métodos para realizar operaciones en máquinas virtuales, como la clonación, la instantánea y la importación o exportación de máquinas virtuales. Para recuperar información por máquina virtual, use [**Msvm \_ ComputerSystem**](msvm-computersystem.md).
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -93,63 +93,63 @@ class Msvm_VirtualSystemManagementService : CIM_VirtualSystemManagementService
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemManagementService** tiene estos tipos de miembros:
+La **clase \_ VirtualSystemManagementService de Msvm** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ VirtualSystemManagementService** tiene estos métodos.
+La **clase Msvm \_ VirtualSystemManagementService** tiene estos métodos.
 
 
 
 | Método                                                                                                                 | Descripción                                                                                                                                                                                                                                        |
 |:-----------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddBootSourceSettings**](msvm-virtualsystemmanagementservice-addbootsourcesettings.md)                             | Agrega orígenes de arranque a una configuración de sistema virtual cuando se aplica a una configuración de sistema virtual "State".<br/>                                                                                                                             |
+| [**AddBootSourceSettings**](msvm-virtualsystemmanagementservice-addbootsourcesettings.md)                             | Agrega orígenes de arranque a una configuración del sistema virtual cuando se aplica a una configuración del sistema virtual de "estado".<br/>                                                                                                                             |
 | [**AddFeatureSettings**](addfeaturesettings-msvm-virtualsystemmanagementservice.md)                                   | Agrega la configuración de características Ethernet a la configuración de una conexión Ethernet de máquina virtual.<br/>                                                                                                                                           |
-| [**AddFibreChannelChap**](addfibrechannelchap-msvm-virtualsystemmanagementservice.md)                                 | Agrega parámetros DH-CHAP a un puerto de Canal de fibra sintético en una máquina virtual.<br/>                                                                                                                                                         |
-| [**AddGuestServiceSettings**](msvm-virtualsystemmanagementservice-addguestservicesettings.md)                         | Agrega la configuración del servicio de invitado a una configuración de sistema virtual.<br/> Cuando se aplica a partes de una configuración de sistema virtual "actual", se puede modificar como un efecto secundario en los servicios invitados del sistema virtual activo.<br/>              |
+| [**AddFibreChannelChap**](addfibrechannelchap-msvm-virtualsystemmanagementservice.md)                                 | Agrega parámetros DH-CHAP a un puerto Canal de fibra sintético en una máquina virtual.<br/>                                                                                                                                                         |
+| [**AddGuestServiceSettings**](msvm-virtualsystemmanagementservice-addguestservicesettings.md)                         | Agrega la configuración del servicio invitado a una configuración del sistema virtual.<br/> Cuando se aplica a partes de una configuración del sistema virtual "actual", como efecto secundario se pueden modificar los servicios invitados del sistema virtual activo.<br/>              |
 | [**AddKvpItems**](addkvpitems-msvm-virtualsystemmanagementservice.md)                                                 | Agrega pares clave-valor a una máquina virtual.<br/>                                                                                                                                                                                              |
 | [**AddResourceSettings**](addresourcesettings-msvm-virtualsystemmanagementservice.md)                                 | Agrega recursos a una configuración de máquina virtual.<br/>                                                                                                                                                                                      |
-| [**AddSystemComponentSettings**](msvm-virtualsystemmanagementservice-addsystemcomponentsettings.md)                   | Agrega la configuración genérica a una configuración de sistema virtual.<br/>                                                                                                                                                                                |
-| [**DefinePlannedSystem**](msvm-virtualsystemmanagementservice-defineplannedsystem.md)                                 | Define un sistema virtual planeado.<br/> La entrada que no se ha especificado completamente puede rellenarse con valores predeterminados.<br/>                                                                                                              |
+| [**AddSystemComponentSettings**](msvm-virtualsystemmanagementservice-addsystemcomponentsettings.md)                   | Agrega valores genéricos a una configuración del sistema virtual.<br/>                                                                                                                                                                                |
+| [**DefinePlannedSystem**](msvm-virtualsystemmanagementservice-defineplannedsystem.md)                                 | Define un sistema virtual planeado.<br/> La entrada que no se especifica completamente se puede rellenar con valores predeterminados.<br/>                                                                                                              |
 | [**DefineSystem**](definesystem-msvm-virtualsystemmanagementservice.md)                                               | Crea una nueva definición de máquina virtual.<br/>                                                                                                                                                                                               |
 | [**DestroySystem**](destroysystem-msvm-virtualsystemmanagementservice.md)                                             | Elimina una definición de máquina virtual existente.<br/>                                                                                                                                                                                         |
-| [**DiagnoseNetworkConnection**](msvm-virtualsystemmanagementservice-diagnosenetworkconnection.md)                     | Diagnostica la conectividad de red de una máquina virtual en un entorno de virtualización de red de Windows.<br/>                                                                                                                                             |
+| [**DiagnoseNetworkConnection**](msvm-virtualsystemmanagementservice-diagnosenetworkconnection.md)                     | Diagnostica la conectividad de red de una máquina virtual en un Windows Network Virtualization Environment.<br/>                                                                                                                                             |
 | [**ExportSystemDefinition**](exportsystemdefinition-msvm-virtualsystemmanagementservice.md)                           | Exporta una máquina virtual, o una instantánea de una máquina virtual, a un archivo.<br/>                                                                                                                                                               |
-| [**FormatError**](formaterror-msvm-virtualsystemmanagementservice.md)                                                 | Devuelve una cadena de mensaje de error con formato para la matriz especificada de instancias de [**\_ error**](msvm-error.md) incrustadas MSVM.<br/>                                                                                                               |
-| [**GenerateWwpn**](generatewwpn-msvm-virtualsystemmanagementservice.md)                                               | Genera un conjunto de nombres de Puerto WWPN (WWPN).<br/>                                                                                                                                                                                       |
-| [**GetCurrentWwpnFromGenerator**](getcurrentwwpnfromgenerator-msvm-virtualsystemmanagementservice.md)                 | Proporciona la capacidad de obtener una vista previa del nombre de Puerto WWPN (WWPN) actual sin reservar el WWPN.<br/>                                                                                                                                |
-| [**GetDefinitionFileSummaryInformation**](getdefinitionfilesummaryinformation-msvm-virtualsystemmanagementservice.md) | Devuelve información de Resumen de la máquina virtual para los archivos de definición de máquina virtual especificados.<br/>                                                                                                                                         |
+| [**FormatError**](formaterror-msvm-virtualsystemmanagementservice.md)                                                 | Devuelve una cadena de mensaje de error con formato para la matriz especificada de instancias de [**\_ error de Msvm**](msvm-error.md) insertadas.<br/>                                                                                                               |
+| [**GenerateWwpn**](generatewwpn-msvm-virtualsystemmanagementservice.md)                                               | Genera un conjunto de nombres de puertos world wide (WWPN).<br/>                                                                                                                                                                                       |
+| [**GetCurrentWwpnFromGenerator**](getcurrentwwpnfromgenerator-msvm-virtualsystemmanagementservice.md)                 | Proporciona la capacidad de obtener una vista previa del nombre de puerto world wide (WWPN) actual sin que el WWPN esté reservado.<br/>                                                                                                                                |
+| [**GetDefinitionFileSummaryInformation**](getdefinitionfilesummaryinformation-msvm-virtualsystemmanagementservice.md) | Devuelve información de resumen de la máquina virtual para los archivos de definición de máquina virtual especificados.<br/>                                                                                                                                         |
 | [**GetSizeOfSystemFiles**](getsizeofsystemfiles-msvm-virtualsystemmanagementservice.md)                               | Recupera el tamaño total de los archivos del sistema de la máquina virtual.<br/>                                                                                                                                                                        |
-| [**GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md)                             | Devuelve información de Resumen de la máquina virtual.<br/>                                                                                                                                                                                            |
+| [**GetSummaryInformation**](getsummaryinformation-msvm-virtualsystemmanagementservice.md)                             | Devuelve información de resumen de la máquina virtual.<br/>                                                                                                                                                                                            |
 | [**GetVirtualSystemThumbnailImage**](getvirtualsystemthumbnailimage-msvm-virtualsystemmanagementservice.md)           | Recupera una imagen en miniatura de una máquina virtual existente.<br/>                                                                                                                                                                             |
-| [**ImportSnapshotDefinitions**](importsnapshotdefinitions-msvm-virtualsystemmanagementservice.md)                     | Busca en la carpeta especificada cualquier archivo de definición de instantánea asociado al sistema de equipo planeado especificado y crea una nueva instantánea en el sistema del equipo planeado para cada archivo de definición asociado en esta ubicación.<br/> |
-| [**ImportSystemDefinition**](importsystemdefinition-msvm-virtualsystemmanagementservice.md)                           | Crea un nuevo sistema de equipo planeado basado en la definición de máquina virtual especificada.<br/>                                                                                                                                                |
-| [**ModifyDiskMergeSettings**](modifydiskmergesettings-msvm-virtualsystemmanagementservice.md)                         | Modifica los datos de configuración de combinación de discos.<br/>                                                                                                                                                                                                   |
-| [**ModifyFeatureSettings**](modifyfeaturesettings-msvm-virtualsystemmanagementservice.md)                             | Modifica la configuración actual de las características de una conexión Ethernet de máquina virtual.<br/>                                                                                                                                                         |
-| [**ModifyGuestServiceSettings**](msvm-virtualsystemmanagementservice-modifyguestservicesettings.md)                   | Modifica la configuración del servicio de invitado.<br/> Cuando se aplica a partes de una configuración de sistema virtual "actual", se puede modificar como un efecto secundario en los servicios invitados del sistema virtual activo.<br/>                                            |
-| [**ModifyKvpItems**](modifykvpitems-msvm-virtualsystemmanagementservice.md)                                           | Modifica los pares de clave y valor existentes en una máquina virtual.<br/>                                                                                                                                                                                 |
+| [**ImportSnapshotDefinitions**](importsnapshotdefinitions-msvm-virtualsystemmanagementservice.md)                     | Busca en la carpeta especificada los archivos de definición de instantánea asociados al sistema de equipo planeado especificado y crea una nueva instantánea en el sistema del equipo planeado para cada archivo de definición asociado en esta ubicación.<br/> |
+| [**ImportSystemDefinition**](importsystemdefinition-msvm-virtualsystemmanagementservice.md)                           | Crea un nuevo sistema informático planeado basado en la definición de máquina virtual especificada.<br/>                                                                                                                                                |
+| [**ModifyDiskMergeSettings**](modifydiskmergesettings-msvm-virtualsystemmanagementservice.md)                         | Modifica los datos de configuración de mezcla de disco.<br/>                                                                                                                                                                                                   |
+| [**ModifyFeatureSettings**](modifyfeaturesettings-msvm-virtualsystemmanagementservice.md)                             | Modifica la configuración de características actual de una conexión Ethernet de máquina virtual.<br/>                                                                                                                                                         |
+| [**ModifyGuestServiceSettings**](msvm-virtualsystemmanagementservice-modifyguestservicesettings.md)                   | Modifica la configuración del servicio de invitado.<br/> Cuando se aplica a partes de una configuración del sistema virtual "actual", como efecto secundario se pueden modificar los servicios invitados del sistema virtual activo.<br/>                                            |
+| [**ModifyKvpItems**](modifykvpitems-msvm-virtualsystemmanagementservice.md)                                           | Modifica los pares clave-valor existentes en una máquina virtual.<br/>                                                                                                                                                                                 |
 | [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md)                           | Modifica la configuración de recursos virtuales.<br/>                                                                                                                                                                                                     |
 | [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmanagementservice.md)                             | Modifica los datos de configuración del servicio.<br/>                                                                                                                                                                                                    |
-| [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md)             | Modifica la configuración genérica del componente del sistema.<br/>                                                                                                                                                                                             |
+| [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md)             | Modifica la configuración de componentes genéricos del sistema.<br/>                                                                                                                                                                                             |
 | [**ModifySystemSettings**](modifysystemsettings-msvm-virtualsystemmanagementservice.md)                               | Modifica la configuración de la máquina virtual.<br/>                                                                                                                                                                                                      |
 | [**RealizePlannedSystem**](realizeplannedsystem-msvm-virtualsystemmanagementservice.md)                               | Valida la configuración de una máquina virtual planeada y la convierte en una máquina virtual realizada.<br/>                                                                                                                                 |
-| [**RemoveBootSourceSettings**](msvm-virtualsystemmanagementservice-removebootsourcesettings.md)                       | Quita la configuración de recursos virtuales de una configuración de sistema virtual.<br/> Cuando se aplica a partes de una configuración de sistema virtual "actual", es posible que se eliminen los recursos secundarios del sistema virtual activo.<br/>            |
+| [**RemoveBootSourceSettings**](msvm-virtualsystemmanagementservice-removebootsourcesettings.md)                       | Quita la configuración de recursos virtuales de una configuración del sistema virtual.<br/> Cuando se aplica a partes de una configuración del sistema virtual "actual", como efecto secundario se pueden quitar los recursos del sistema virtual activo.<br/>            |
 | [**RemoveFeatureSettings**](removefeaturesettings-msvm-virtualsystemmanagementservice.md)                             | Quita la configuración de características de una conexión Ethernet de máquina virtual.<br/>                                                                                                                                                                    |
-| [**RemoveFibreChannelChap**](removefibrechannelchap-msvm-virtualsystemmanagementservice.md)                           | Quita los parámetros DH-CHAP de un puerto de Canal de fibra sintético en una máquina virtual.<br/>                                                                                                                                                    |
-| [**RemoveGuestServiceSettings**](msvm-virtualsystemmanagementservice-removeguestservicesettings.md)                   | Quita la configuración del servicio de invitado de una configuración de sistema virtual.<br/> Cuando se aplica a partes de una configuración de sistema virtual "actual", se puede modificar como un efecto secundario en los servicios invitados del sistema virtual activo.<br/>         |
-| [**RemoveKvpItems**](removekvpitems-msvm-virtualsystemmanagementservice.md)                                           | Quita los pares de clave y valor existentes de una máquina virtual.<br/>                                                                                                                                                                                |
+| [**RemoveFibreChannelChap**](removefibrechannelchap-msvm-virtualsystemmanagementservice.md)                           | Quita los parámetros DH-CHAP de un puerto Canal de fibra sintético en una máquina virtual.<br/>                                                                                                                                                    |
+| [**RemoveGuestServiceSettings**](msvm-virtualsystemmanagementservice-removeguestservicesettings.md)                   | Quita la configuración del servicio invitado de una configuración del sistema virtual.<br/> Cuando se aplica a partes de una configuración del sistema virtual "actual", como efecto secundario se pueden modificar los servicios invitados del sistema virtual activo.<br/>         |
+| [**RemoveKvpItems**](removekvpitems-msvm-virtualsystemmanagementservice.md)                                           | Quita los pares clave-valor existentes de una máquina virtual.<br/>                                                                                                                                                                                |
 | [**RemoveResourceSettings**](removeresourcesettings-msvm-virtualsystemmanagementservice.md)                           | Quita la configuración de recursos virtuales de una configuración de máquina virtual.<br/>                                                                                                                                                                 |
-| [**RemoveSystemComponentSettings**](msvm-virtualsystemmanagementservice-removesystemcomponentsettings.md)             | Quita la configuración de componentes genéricos de una configuración de sistema virtual.<br/>                                                                                                                                                                 |
+| [**RemoveSystemComponentSettings**](msvm-virtualsystemmanagementservice-removesystemcomponentsettings.md)             | Quita la configuración de componentes genéricos de una configuración del sistema virtual.<br/>                                                                                                                                                                 |
 | [**RequestStateChange**](msvm-virtualsystemmanagementservice-requeststatechange.md)                                   | No se admite este método.<br/>                                                                                                                                                                                                           |
-| [**SetGuestNetworkAdapterConfiguration**](setguestnetworkadapterconfiguration-msvm-virtualsystemmanagementservice.md) | Configura los adaptadores de red en el sistema operativo invitado.<br/>                                                                                                                                                                      |
-| [**SetInitialMachineConfigurationData**](msvm-virtualsystemmanagementservice-setinitialmachineconfigurationdata.md)   | Establece los datos de configuración de la máquina inicial de una máquina virtual.<br/>                                                                                                                                                                                         |
+| [**SetGuestNetworkAdapterConfiguration**](setguestnetworkadapterconfiguration-msvm-virtualsystemmanagementservice.md) | Configura los adaptadores de red dentro del sistema operativo invitado.<br/>                                                                                                                                                                      |
+| [**SetInitialMachineConfigurationData**](msvm-virtualsystemmanagementservice-setinitialmachineconfigurationdata.md)   | Establece los datos de configuración iniciales de la máquina virtual.<br/>                                                                                                                                                                                         |
 | [**StartService**](msvm-virtualsystemmanagementservice-startservice.md)                                               | No se admite este método.<br/>                                                                                                                                                                                                           |
 | [**StopService**](msvm-virtualsystemmanagementservice-stopservice.md)                                                 | No se admite este método.<br/>                                                                                                                                                                                                           |
-| [**TestNetworkConnection**](msvm-virtualsystemmanagementservice-testnetworkconnection.md)                             | Prueba la conectividad de red de una máquina virtual en un entorno de virtualización de red de Windows.<br/>                                                                                                                                                 |
-| [**UpgradeSystemVersion**](msvm-virtualsystemmanagementservice-upgradesystemversion.md)                               | Actualiza el sistema virtual.<br/> Cuando se aplica a la configuración del sistema de una configuración de sistema virtual "actual"<br/>                                                                                                                 |
+| [**TestNetworkConnection**](msvm-virtualsystemmanagementservice-testnetworkconnection.md)                             | Prueba la conectividad de red de una máquina virtual en un entorno Windows Virtualización de red.<br/>                                                                                                                                                 |
+| [**UpgradeSystemVersion**](msvm-virtualsystemmanagementservice-upgradesystemversion.md)                               | Actualiza el sistema virtual.<br/> Cuando se aplica a la configuración del sistema de una configuración del sistema virtual "actual".<br/>                                                                                                                 |
 | [**ValidatePlannedSystem**](validateplannedsystem-msvm-virtualsystemmanagementservice.md)                             | Valida el sistema planeado especificado.<br/>                                                                                                                                                                                                 |
 
 
@@ -158,20 +158,20 @@ La clase **MSVM \_ VirtualSystemManagementService** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemManagementService** tiene estas propiedades.
+La **clase \_ VirtualSystemManagementService de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica los valores posibles para el parámetro *RequestedState* del método **RequestStateChange** . Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Indica los valores posibles para el *parámetro RequestedState* del **método RequestStateChange.** Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -184,20 +184,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "servicio de administración del sistema virtual de Hyper-V".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Servicio de administración de sistemas virtuales de Hyper-V".
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica la capacidad de la instrumentación de comunicarse con el elemento administrado subyacente. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la capacidad de la instrumentación para comunicarse con el elemento administrado subyacente. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -219,7 +219,7 @@ Indica la capacidad de la instrumentación de comunicarse con el elemento admini
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -233,10 +233,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "MSVM \_ VirtualSystemManagementService".
+Nombre de la clase o subclase utilizada en la creación de una instancia de . Esta propiedad se hereda del [**servicio CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "Msvm \_ VirtualSystemManagementService".
 
 </dd> <dt>
 
@@ -249,30 +249,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "servicio para crear, manipular y administrar máquinas virtuales".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Servicio para crear, manipular y administrar máquinas virtuales".
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Complementa la propiedad **PrimaryStatus** con detalles de estado adicionales. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa la **propiedad PrimaryStatus con** detalles de estado adicionales. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
 <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span>**No disponible** (0)
 </dt> <dt>
 
-<span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**No hay información adicional** (1)
+<span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**Sin información adicional** (1)
 </dt> <dt>
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>Con **estrés** (2)
+<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Estresado** (2)
 </dt> <dt>
 
 <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Error predictivo** (3)
@@ -281,13 +281,13 @@ Complementa la propiedad **PrimaryStatus** con detalles de estado adicionales. U
 <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Error no recuperable** (4)
 </dt> <dt>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidad auxiliar en error** (5)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidad de compatibilidad con error** (5)
 </dt> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -301,20 +301,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "servicio de administración del sistema virtual de Hyper-V".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Servicio de administración de sistemas virtuales de Hyper-V".
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en 2 (habilitada).
+Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en 2 (Habilitado).
 
 
 
@@ -331,13 +331,13 @@ Configuración predeterminada o de inicio de un administrador para el estado hab
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados habilitado y deshabilitado de un elemento. Esta propiedad también puede indicar las transiciones entre estos Estados solicitados. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en 2 (habilitada).
+Estados habilitados y deshabilitados de un elemento. Esta propiedad también puede indicar las transiciones entre estos estados solicitados. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en 2 (Habilitado).
 
 
 
@@ -354,13 +354,13 @@ Estados habilitado y deshabilitado de un elemento. Esta propiedad también puede
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento no es totalmente funcional. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre está establecida en 5 (Aceptar).
+Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento es completamente no funcional. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre se establece en 5 (correcto).
 
 
 
@@ -377,13 +377,13 @@ Estado actual del elemento. Este atributo expresa el estado de este elemento, pe
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -396,10 +396,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -412,23 +412,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre se establece en "vMMS".
+Etiqueta por la que se conoce el objeto. Esta propiedad se hereda de [**Cim \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre se establece en "vmms".
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información sobre el estado actual de la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la propiedad **EnabledState** . Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado actual para la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la **propiedad EnabledState.** Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -441,10 +441,10 @@ Proporciona información sobre el estado actual de la condición operativa del e
 <span id="Servicing"></span><span id="servicing"></span><span id="SERVICING"></span>**Mantenimiento** (2)
 </dt> <dt>
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Inicio** (3)
+<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**A partir** de (3)
 </dt> <dt>
 
-<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Detención** (4)
+<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Detener** (4)
 </dt> <dt>
 
 <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span>**Detenido** (5)
@@ -462,19 +462,19 @@ Proporciona información sobre el estado actual de la condición operativa del e
 <span id="Migrating"></span><span id="migrating"></span><span id="MIGRATING"></span>**Migración** (9)
 </dt> <dt>
 
-<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrating** (10)
+<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Contrabando** (10)
 </dt> <dt>
 
-<span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Migración** (11)
+<span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Immigrating** (11)
 </dt> <dt>
 
-<span id="Snapshotting"></span><span id="snapshotting"></span><span id="SNAPSHOTTING"></span>**Instantánea** (12)
+<span id="Snapshotting"></span><span id="snapshotting"></span><span id="SNAPSHOTTING"></span>**Instantáneas** (12)
 </dt> <dt>
 
-<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Cerrando** (13)
+<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Apagar** (13)
 </dt> <dt>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En pruebas** (14)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En prueba** (14)
 </dt> <dt>
 
 <span id="Transitioning"></span><span id="transitioning"></span><span id="TRANSITIONING"></span>**Transición** (15)
@@ -486,7 +486,7 @@ Proporciona información sobre el estado actual de la condición operativa del e
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -494,13 +494,13 @@ Proporciona información sobre el estado actual de la condición operativa del e
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados actuales del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de la matriz siempre se establece en 2 (correcto).
+Estados actuales del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de matriz siempre se establece en 2 (correcto).
 
 </dd> <dt>
 
@@ -513,7 +513,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que describe el estado habilitado o deshabilitado del elemento cuando la propiedad **EnabledState** está establecida en 1 ("otro"). Esta propiedad debe establecerse en **null** cuando **EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Cadena que describe el estado habilitado o deshabilitado del elemento cuando la **propiedad EnabledState** está establecida en 1 ("Other"). Esta propiedad debe establecerse en **Null cuando** **EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -526,10 +526,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **MaxLen** (256)
+Calificadores: **MaxLen** ( 256 )
 </dt> </dl>
 
-Cualquier información sobre cómo se puede alcanzar el propietario principal del servicio (por ejemplo, el número de teléfono, la dirección de correo electrónico, etc.). Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Cualquier información sobre cómo se puede acceder al propietario principal del servicio (por ejemplo, el número de teléfono, la dirección de correo electrónico, entre otros). Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -542,23 +542,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **MaxLen** (64)
+Calificadores: **MaxLen** ( 64 )
 </dt> </dl>
 
-Nombre del propietario principal del servicio, si se ha definido uno. El propietario principal es el contacto de soporte inicial para el servicio. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Nombre del propietario principal del servicio, si se define uno. El propietario principal es el contacto inicial de soporte técnico para el servicio. Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse junto con la propiedad **DetailedStatus** para proporcionar el estado de mantenimiento detallado y de alto nivel del elemento y sus subcomponentes. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado de alto nivel. Esta propiedad debe usarse junto con la propiedad **DetailedStatus** para proporcionar un estado de mantenimiento detallado y de alto nivel del elemento y sus subcomponentes. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -577,7 +577,7 @@ Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -585,13 +585,13 @@ Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último estado solicitado o deseado del elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar el último estado solicitado y el actual para un elemento. Una instancia concreta de la [**clase \_ EnabledLogicalElement de CIM**](/previous-versions//cc136818(v=vs.85)) podría no admitir la propiedad **RequestedState** . Si esto ocurre, se usa el valor 12 ("no aplicable"). Esta propiedad se hereda de **\_ EnabledLogicalElement CIM** y siempre está establecida en 12 (no aplicable).
+Último estado solicitado o deseado para el elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los últimos estados solicitados y actuales de un elemento. Es posible que una instancia determinada [**de la clase CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) no admita la **propiedad RequestedState.** Si esto ocurre, se usa el valor 12 ("No aplicable"). Esta propiedad se hereda de **CIM \_ EnabledLogicalElement** y siempre se establece en 12 (no aplicable).
 
 
 
@@ -605,7 +605,7 @@ Tipo de acceso: solo lectura
 
 </dd> <dt>
 
-**Iniciado**
+**Comenzó**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -614,7 +614,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el servicio se está ejecutando actualmente. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **true**.
+Indica si el servicio se está ejecutando actualmente. Esta propiedad se hereda del servicio [**\_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **True.**
 
 </dd> <dt>
 
@@ -627,10 +627,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **MaxLen** (10)
+Calificadores: **MaxLen** ( 10 )
 </dt> </dl>
 
-Un valor de cadena que indica si el servicio se inicia automáticamente por un sistema, un sistema operativo o se inicia solo después de la solicitud. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Valor de cadena que indica si un sistema, un sistema operativo o un sistema operativo inician automáticamente el servicio solo a petición. Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -643,20 +643,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), pero no se usa.
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se usa.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadenas que describen los distintos valores de la matriz **OperationalStatus** . Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de la matriz siempre se establece en "el servicio se está ejecutando normalmente".
+Cadenas que describen los distintos **valores de la matriz OperationalStatus.** Esta propiedad se hereda de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de matriz siempre se establece en "El servicio se ejecuta con normalidad".
 
 </dd> <dt>
 
@@ -669,10 +669,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "MSVM \_ ComputerSystem".
+Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda del servicio [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "Msvm \_ ComputerSystem".
 
 </dd> <dt>
 
@@ -685,42 +685,42 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Nombre NetBIOS del sistema del equipo host. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service).
+Nombre NetBIOS del sistema del equipo host. Esta propiedad se hereda del [**servicio CIM. \_**](/windows/desktop/CIMWin32Prov/cim-service)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha u hora en que se cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Fecha u hora en que cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el estado de destino al que la instancia está cambiando. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Indica el estado de destino al que la instancia está transfiriendo. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ VirtualSystemManagementService** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a la **clase \_ VirtualSystemManagementService de Msvm** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -728,10 +728,10 @@ El acceso a la clase **MSVM \_ VirtualSystemManagementService** puede estar rest
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -740,16 +740,16 @@ El acceso a la clase **MSVM \_ VirtualSystemManagementService** puede estar rest
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**](cim-virtualsystemmanagementservice.md)
+[**CIM \_ VirtualSystemManagementService**](cim-virtualsystemmanagementservice.md)
 </dt> <dt>
 
-[**\_VIRTUALSYSTEMMANAGEMENTSERVICE CIM**](/previous-versions//cc136952(v=vs.85))
+[**CIM \_ VirtualSystemManagementService**](/previous-versions//cc136952(v=vs.85))
 </dt> <dt>
 
-[**MSVM \_ VirtualSystemManagementService (V1)**](/previous-versions/windows/desktop/legacy/cc136940(v=vs.85))
+[**Msvm \_ VirtualSystemManagementService (V1)**](/previous-versions/windows/desktop/legacy/cc136940(v=vs.85))
 </dt> <dt>
 
-[Clases de administración de sistema virtual](virtual-system-management-classes.md)
+[Clases de administración de sistemas virtuales](virtual-system-management-classes.md)
 </dt> </dl>
 
  

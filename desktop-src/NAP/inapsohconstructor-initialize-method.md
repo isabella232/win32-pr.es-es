@@ -1,11 +1,11 @@
 ---
-title: Método Initialize INapSoHConstructor (NapProtocol. h)
+title: Método Initialize de INapSoHConstructor (NapProtocol.h)
 description: Inicializa un paquete de protocolo SoH en el sistema NAP.
 ms.assetid: 1678b677-c8c8-465c-a412-9b929e39bbac
 keywords:
-- Inicializar el método NAP
-- Inicializar método NAP, interfaz INapSoHConstructor
-- Interfaz INapSoHConstructor NAP, método Initialize
+- Inicialización del método NAP
+- Inicializar el método NAP , INapSoHConstructor (interfaz)
+- INapSoHConstructor interface NAP , Initialize (método)
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eab8d6b27547be6e7c7e9abb59f7edb7b49e716e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3d03d821b441aa71f4766fc255f48122fe4f2c432d60d52ab957022d7be50a79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803035"
 ---
-# <a name="inapsohconstructorinitialize-method"></a>INapSoHConstructor:: Initialize (método)
+# <a name="inapsohconstructorinitialize-method"></a>INapSoHConstructor::Initialize (Método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapSoHConstructor:: Initialize** Inicializa un paquete de protocolo SOH en el sistema NAP.
+El **método INapSoHConstructor::Initialize** inicializa un paquete de protocolo SoH en el sistema NAP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ HRESULT Initialize(
 
 <dl> <dt>
 
-*ID.* \[ en\]
+*id* \[ en\]
 </dt> <dd>
 
-Un [SystemHealthEntityId](nap-datatypes.md) único que contiene el identificador del Sha o SHV que está construyendo el paquete.
+[SystemHealthEntityId único que](nap-datatypes.md) contiene el identificador de SHA o SHV que está construyendo el paquete.
 
 </dd> <dt>
 
-*isRequest* \[ de\]
+*isRequest* \[ En\]
 </dt> <dd>
 
-Valor **booleano** que es **true** si el paquete va a ser un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) y **false** si va a ser un **SoHResponse**.
+Valor **BOOL** que es **TRUE** si el paquete va a ser [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) y **FALSE** si va a ser **soHResponse**.
 
 </dd> </dl>
 
@@ -70,30 +70,30 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | Operación correcta.<br/>                                   |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | Operación correcta.<br/>                                   |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se debe llamar a este método exactamente una vez por paquete.
 
-El [SystemHealthEntityId](nap-datatypes.md) especificado en *ID*. es el primer TLV del paquete SOH recién construido y tiene el tipo de atributo [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md).
+[SystemHealthEntityId](nap-datatypes.md) especificado en *el* identificador , es el primer TLV del paquete SOH recién construido y tiene el tipo de atributo [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

@@ -1,11 +1,11 @@
 ---
-title: IWMPControls currentItem (propiedad)
+title: Propiedad currentItem de IWMPControls
 description: La propiedad currentItem obtiene o establece el elemento multimedia actual en una lista de reproducción.
 ms.assetid: 0a331b1f-95bd-48ea-b951-1ca35cc96865
 keywords:
-- propiedad currentItem Media Player de Windows
-- propiedad currentItem Windows Media Player, interfaz IWMPControls
-- Interfaz IWMPControls Windows Media Player, propiedad currentItem
+- propiedad currentItem Reproductor de Windows Media
+- Propiedad currentItem Reproductor de Windows Media interfaz , IWMPControls
+- Interfaz IWMPControls Reproductor de Windows Media , propiedad currentItem
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aae04eb333e2fd347fa6f88b33ec2482a4dd8fd7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8d8193dc349524495e021dc048ac4be3673d38ec7da30aa1bb72d94960a0989f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053665"
 ---
-# <a name="iwmpcontrolscurrentitem-property"></a>IWMPControls:: currentItem (propiedad)
+# <a name="iwmpcontrolscurrentitem-property"></a>Propiedad IWMPControls::currentItem
 
-La propiedad **CurrentItem** obtiene o establece el elemento multimedia actual en una lista de reproducción.
+La **propiedad currentItem** obtiene o establece el elemento multimedia actual en una lista de reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public Property currentItem As IWMPMedia
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Una interfaz **WMPLib. IWMPMedia** que representa el elemento multimedia.
+Interfaz **WMPLib.IWMPMedia** que representa el elemento multimedia.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo funciona con los elementos de la lista de reproducción actual. No se admite el establecimiento de **CurrentItem** en la interfaz de un elemento multimedia guardado.
+Esta propiedad solo funciona con elementos de la lista de reproducción actual. No se admite el establecimiento de **currentItem** en la interfaz de un elemento multimedia guardado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **CurrentItem** para establecer el elemento multimedia actual del reproductor en un elemento seleccionado en un cuadro de lista. El cuadro de lista se ha rellenado con todos los elementos de la lista de reproducción actual. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa currentItem** para establecer el elemento multimedia actual del reproductor en un elemento seleccionado de un cuadro de lista. El cuadro de lista se ha rellenado con todos los elementos de la lista de reproducción actual. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -101,9 +101,9 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -119,7 +119,7 @@ End Sub
 [**IWMPMediaInterface (VB y C#)**](iwmpmedia--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylistCollection. getByName (VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
+[**IWMPPlaylistCollection.getByName(VB y C#)**](wmplibiwmpplaylistcollection-iwmpplaylistcollection-getbyname--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LB_SETSEL (Winuser. h)
+title: LB_SETSEL mensaje (Winuser.h)
 description: Selecciona un elemento en un cuadro de lista de selección múltiple y, si es necesario, desplaza el elemento a la vista.
 ms.assetid: 643783f2-0e00-4b79-b957-47938bb9f8da
 keywords:
-- LB_SETSEL controles de mensajes de Windows
+- LB_SETSEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd50f12c4190ba9ecafad11b167c1ac60adf691d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4830dc83a2b62fa87a222be276cdd9db55720014adeaa03362f4965bc0ecf246
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958534"
 ---
-# <a name="lb_setsel-message"></a>\_Mensaje lb SETSEL
+# <a name="lb_setsel-message"></a>Mensaje \_ DE LB SETSEL
 
 Selecciona un elemento en un cuadro de lista de selección múltiple y, si es necesario, desplaza el elemento a la vista.
 
@@ -32,22 +32,22 @@ Selecciona un elemento en un cuadro de lista de selección múltiple y, si es ne
 *wParam* 
 </dt> <dd>
 
-Especifica cómo establecer la selección. Si este parámetro es **true**, el elemento se selecciona y se resalta; Si es **false**, se quita el resaltado y ya no se selecciona el elemento.
+Especifica cómo establecer la selección. Si este parámetro es **TRUE**, el elemento está seleccionado y resaltado; Si es **FALSE,** se quita el resaltado y el elemento ya no está seleccionado.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Especifica el índice de base cero del elemento que se va a establecer. Si este parámetro es-1, la selección se agrega o se quita de todos los elementos, dependiendo del valor de *wParam*, y no se produce ningún desplazamiento.
+Especifica el índice de base cero del elemento que se debe establecer. Si este parámetro es -1, la selección se agrega o se quita de todos los elementos, en función del valor de *wParam* y no se produce ningún desplazamiento.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se produce un error, el valor devuelto es LB \_ Err.
+Si se produce un error, el valor devuelto es LB \_ ERR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Use este mensaje solo con cuadros de lista de selección múltiple.
 
@@ -55,15 +55,15 @@ Use este mensaje solo con cuadros de lista de selección múltiple.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

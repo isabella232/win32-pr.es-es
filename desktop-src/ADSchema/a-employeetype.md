@@ -1,11 +1,11 @@
 ---
-title: Employee-Type atributo)
-description: La categoría de trabajo de un empleado.
+title: Employee-Type atributo
+description: Categoría de trabajo para un empleado.
 ms.assetid: f4370a11-1ea5-4497-945e-01d343f4149f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Employee-Type
-- employeeType esquema de AD de atributos
+- Employee-Type esquema de AD del atributo
+- Esquema de AD del atributo employeeType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc87acad95eb8555975b7b10601fbce0dac124fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b841b06baec445142dd5e102ac1eb1c90d95c62178bfc6e4454bed0fc78fb19f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828095"
 ---
-# <a name="employee-type-attribute"></a>Employee-Type atributo)
+# <a name="employee-type-attribute"></a>Employee-Type atributo
 
-La categoría de trabajo de un empleado.
+Categoría de trabajo para un empleado.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Employee-Type                               |
-| Nombre para mostrar de LDAP | employeeType                                |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| Ldap-Display-Name | employeeType                                |
+| Size              | \-                                          |
+| Privilegio actualizar  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.613                      |
-| System-ID-GUID    | a8df73f0-c5ea-11d1-bbcb-0080c76670c0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a8df73f0-c5ea-11d1-zosb-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ La categoría de trabajo de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | 0x8C69       |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000010   |
@@ -76,13 +76,13 @@ La categoría de trabajo de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | 0x8C69       |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000010   |
@@ -97,13 +97,13 @@ La categoría de trabajo de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | 0x8C69       |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000010   |
@@ -118,13 +118,13 @@ La categoría de trabajo de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | 0x8C69       |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000010   |
@@ -139,13 +139,13 @@ La categoría de trabajo de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | 0x8C69       |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000010   |
@@ -160,13 +160,13 @@ La categoría de trabajo de un empleado.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | 0x8C69       |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000010   |

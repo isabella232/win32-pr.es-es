@@ -1,8 +1,8 @@
 ---
-description: La \_ propiedad Security del objeto SWbemObjectSet se usa para obtener o establecer la configuración de seguridad de un objeto SWbemObjectSet. Esta propiedad es un objeto SWbemSecurity.
+description: La propiedad Security del objeto SWbemObjectSet se usa para obtener o establecer la configuración de seguridad \_ de un objeto SWbemObjectSet. Esta propiedad es un objeto SWbemSecurity.
 ms.assetid: ee2ad6d5-c0aa-4510-ba1b-4a152d56011f
 ms.tgt_platform: multiple
-title: Propiedad SWbemObjectSet.Security_ (Wbemdisp. h)
+title: SWbemObjectSet.Security_ propiedad (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 690c5c23a40ed3333468beeeab8ccc1f8c9a6ad2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e0725fc6aa35043a3a40220b1fb43a3624cfd6ef5b55775adf5f41d26fafe85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857217"
 ---
-# <a name="swbemobjectsetsecurity_-property"></a>Propiedad SWbemObjectSet. Security \_
+# <a name="swbemobjectsetsecurity_-property"></a>SWbemObjectSet.Security, propiedad \_
 
-La **propiedad \_ Security** del objeto [**SWbemObjectSet**](swbemobjectset.md) se usa para obtener o establecer la configuración de seguridad de un objeto **SWbemObjectSet** . Esta propiedad es un objeto [**SWbemSecurity**](swbemsecurity.md) .
+La **\_ propiedad Security** del [**objeto SWbemObjectSet**](swbemobjectset.md) se usa para obtener o establecer la configuración de seguridad de **un objeto SWbemObjectSet.** Esta propiedad es un [**objeto SWbemSecurity.**](swbemsecurity.md)
 
 > [!Note]  
-> Al establecer la propiedad [**\_ Security**](swbemobject-security-.md) de un objeto [**SWbemObjectSet**](swbemobjectset.md) en **null** , se concede acceso ilimitado a todos los usuarios en todo momento. Para obtener más información sobre las implicaciones de acceso ilimitado, vea [**SWbemSecurity**](swbemsecurity.md).
+> Establecer la [**propiedad Security \_**](swbemobject-security-.md) de un objeto [**SWbemObjectSet**](swbemobjectset.md) en **NULL** concede acceso ilimitado a todos los usuarios en todo momento. Para obtener más información sobre las implicaciones del acceso ilimitado, vea [**SWbemSecurity**](swbemsecurity.md).
 
  
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de solo lectura.
 
@@ -55,11 +55,11 @@ SWbemObjectSet.Security_ As Object
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObjectSet<br/>                                                        |
-| IID<br/>                      | \_ISWBEMOBJECTSET IID<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemObjectSet<br/>                                                         |
 
 
 
@@ -70,10 +70,10 @@ SWbemObjectSet.Security_ As Object
 [**SWbemObjectSet**](swbemobjectset.md)
 </dt> <dt>
 
-[Crear una aplicación o un script WMI](creating-a-wmi-application-or-script.md)
+[Crear una aplicación WMI o un script](creating-a-wmi-application-or-script.md)
 </dt> <dt>
 
-[Protección de los clientes de scripting](securing-scripting-clients.md)
+[Protección de clientes de scripting](securing-scripting-clients.md)
 </dt> </dl>
 
  

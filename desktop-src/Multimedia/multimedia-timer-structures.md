@@ -7,21 +7,21 @@ keywords:
 - multimedia, estructuras de temporizador
 - entrada multimedia, estructuras de temporizador
 - temporizadores multimedia, estructuras
-- temporizadores, estructuras
+- timers,structures
 - referencia para temporizadores, estructuras
-- Referencia del temporizador, estructuras
+- referencia de temporizador, estructuras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d64be4a17545750e06895883338a735a59dbcb55
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2229d3db57fdf56e7f0eb94572b3d67becd959041119ac008d7cdf5edccc133e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104270880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038485"
 ---
 # <a name="multimedia-timer-structures"></a>Estructuras de temporizador multimedia
 
-Las siguientes estructuras se utilizan con temporizadores multimedia.
+Las estructuras siguientes se usan con temporizadores multimedia.
 
 -   [**MMTIME**](/previous-versions//dd757347(v=vs.85))
 -   [**TIMECAPS**](/windows/desktop/api/TimeAPI/ns-timeapi-timecaps)
@@ -33,6 +33,6 @@ Las siguientes estructuras se utilizan con temporizadores multimedia.
 [Referencia del temporizador multimedia](multimedia-timer-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

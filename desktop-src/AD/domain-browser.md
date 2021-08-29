@@ -1,30 +1,30 @@
 ---
 title: Explorador de dominio
-description: Mediante la interfaz IDsBrowseDomainTree, una aplicación puede mostrar un cuadro de diálogo de explorador de dominio y obtener el nombre DNS del dominio seleccionado por el usuario.
+description: Con la interfaz IDsBrowseDomainTree, una aplicación puede mostrar un cuadro de diálogo del explorador de dominio y obtener el nombre DNS del dominio seleccionado por el usuario.
 ms.assetid: 26793c61-469e-4e99-9056-b9fc04336b69
 ms.tgt_platform: multiple
 keywords:
-- AD del explorador de dominios
+- AD del explorador de dominio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b16bb932f14544902ab24e8fc1f50daa327bb705
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b338aeb97df8de880fe3b320fed7fbcb3966e7756dd2fe7a16f58f40ccfb69ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104077525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118018276"
 ---
 # <a name="domain-browser"></a>Explorador de dominio
 
-Mediante la interfaz [**IDsBrowseDomainTree**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) , una aplicación puede mostrar un cuadro de diálogo de explorador de dominio y obtener el nombre DNS del dominio seleccionado por el usuario. Una aplicación también puede utilizar la interfaz **IDsBrowseDomainTree** para obtener datos sobre todos los árboles de dominio y dominios de un bosque.
+Con la [**interfaz IDsBrowseDomainTree,**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) una aplicación puede mostrar un cuadro de diálogo del explorador de dominio y obtener el nombre DNS del dominio seleccionado por el usuario. Una aplicación también puede usar la **interfaz IDsBrowseDomainTree** para obtener datos sobre todos los árboles de dominio y dominios dentro de un bosque.
 
-Una instancia de la interfaz [**IDsBrowseDomainTree**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) se crea llamando a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con el identificador de clase **\_ DsDomainTreeBrowser CLSID** , como se muestra a continuación.
+Se crea una instancia de la interfaz [**IDsBrowseDomainTree**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) llamando a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) con el identificador de clase **CLSID \_ DsDomainTreeBrowser,** como se muestra a continuación.
 
-El método [**IDsBrowseDomainTree:: SetComputer**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-setcomputer) se puede usar para especificar el equipo y las credenciales que se usan como base para recuperar los datos del dominio. Cuando se llama a **SetComputer** en una instancia de [**IDsBrowseDomainTree**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) determinada, se debe llamar a [**IDsBrowseDomainTree:: FlushCachedDomains**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-flushcacheddomains) antes de volver a llamar a **SetComputer** .
+El [**método IDsBrowseDomainTree::SetComputer**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-setcomputer) se puede usar para especificar qué equipo y credenciales se usan como base para recuperar los datos de dominio. Cuando se llama a **SetComputer** en una instancia determinada de [**IDsBrowseDomainTree,**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) se debe llamar a [**IDsBrowseDomainTree::FlushCachedDomains**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-flushcacheddomains) antes de volver a llamar a **SetComputer.**
 
-El método [**IDsBrowseDomainTree:: browseTo**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-browseto) se usa para mostrar el cuadro de diálogo explorador de dominio. Cuando el usuario selecciona un dominio y hace clic en el botón **Aceptar** , **IDsBrowseDomainTree:: browseTo** devuelve **S \_ OK** y el parámetro *ppszTargetPath* contiene el nombre del dominio seleccionado. Cuando la cadena de nombre ya no es necesaria, el llamador debe liberar la cadena mediante una llamada a [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
+El [**método IDsBrowseDomainTree::BrowseTo**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-browseto) se usa para mostrar el cuadro de diálogo del explorador de dominio. Cuando el usuario selecciona un dominio  y hace clic en el botón Aceptar, **IDsBrowseDomainTree::BrowseTo** devuelve **S \_ OK** y el parámetro *ppszTargetPath* contiene el nombre del dominio seleccionado. Cuando la cadena de nombre ya no es necesaria, el autor de la llamada debe liberar la cadena llamando a [**CoTaskMemFree.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
-En el ejemplo de código siguiente se muestra cómo utilizar la interfaz [**IDsBrowseDomainTree**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) para mostrar el cuadro de diálogo explorador de dominio.
+En el ejemplo de código siguiente se muestra cómo usar la interfaz [**IDsBrowseDomainTree**](/windows/win32/api/dsclient/nn-dsclient-idsbrowsedomaintree) para mostrar el cuadro de diálogo del explorador de dominio.
 
 
 ```C++
@@ -73,9 +73,9 @@ void main(void)
 
 
 
-El método [**IDsBrowseDomainTree:: GetDomains**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-getdomains) se usa para obtener los datos del árbol de dominios. Los datos de dominio se proporcionan en una estructura [**DOMAINTREE**](/windows/desktop/api/Dsclient/ns-dsclient-domain_tree) . La estructura **DOMAINTREE** contiene el tamaño de la estructura y el número de elementos de dominio en el árbol. La estructura **DOMAINTREE** también contiene una o varias estructuras [**DOMAINDESC**](/windows/desktop/api/Dsclient/ns-dsclient-domaindesc) . **DOMAINDESC** contiene datos sobre un elemento único en el árbol de dominios, incluidos los datos secundarios y los elementos del mismo nivel. Los elementos del mismo nivel de un dominio se pueden enumerar accediendo al miembro **pdNextSibling** de cada estructura **DOMAINDESC** subsiguiente. Los elementos secundarios del dominio se pueden recuperar de forma similar accediendo al miembro **pdChildList** de cada estructura **DOMAINDESC** subsiguiente.
+El [**método IDsBrowseDomainTree::GetDomains**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-getdomains) se usa para obtener datos del árbol de dominio. Los datos de dominio se proporcionan en una [**estructura DOMAINTREE.**](/windows/desktop/api/Dsclient/ns-dsclient-domain_tree) La **estructura DOMAINTREE** contiene el tamaño de la estructura y el número de elementos de dominio del árbol. La **estructura DOMAINTREE** también contiene una o varias [**estructuras DOMAINDESC.**](/windows/desktop/api/Dsclient/ns-dsclient-domaindesc) **DOMAINDESC contiene** datos sobre un único elemento del árbol de dominio, incluidos los datos secundarios y del mismo nivel. Los elementos del mismo nivel de un dominio se pueden enumerar accediendo al **miembro pdNextSibling** de cada estructura **DOMAINDESC** posterior. Los secundarios del dominio se pueden recuperar de forma similar accediendo al **miembro pdChildList** de cada estructura **DOMAINDESC** posterior.
 
-En el ejemplo de código siguiente se muestra cómo obtener y obtener acceso a los datos del árbol de dominios mediante el método [**IDsBrowseDomainTree:: GetDomains**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-getdomains) .
+En el ejemplo de código siguiente se muestra cómo obtener y acceder a los datos del árbol de dominio mediante el método [**IDsBrowseDomainTree::GetDomains.**](/windows/win32/api/dsclient/nf-dsclient-idsbrowsedomaintree-getdomains)
 
 
 ```C++
@@ -152,6 +152,6 @@ int main(void)
 
 
 
- 
+ 
 
- 
+ 

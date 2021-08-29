@@ -1,19 +1,19 @@
 ---
-title: Comprobando la compatibilidad con la unidad
-description: En el siguiente ejemplo se examinan las características de los dispositivos de disco que son independientes del contenido multimedia insertado en el dispositivo.
+title: Comprobación de la compatibilidad con la unidad
+description: En el ejemplo siguiente se examinan las características del dispositivo de disco que son independientes de los medios insertados en el dispositivo.
 ms.assetid: 2d7e5ff9-7f1b-4bc1-bbc8-5e7eab45cdb0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49173ab8070821a03028106080dedc21925b088c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a584640cba7b67632924e40b4b8e816be7b4625c9a07a520e0d590e03264e55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758813"
 ---
-# <a name="checking-drive-support"></a>Comprobando la compatibilidad con la unidad
+# <a name="checking-drive-support"></a>Comprobación de la compatibilidad con la unidad
 
-En el siguiente ejemplo se examinan las características de los dispositivos de disco que son independientes del contenido multimedia insertado en el dispositivo. Más concretamente, recupera listas de características admitidas, perfiles admitidos y páginas de modo admitidas, así como la configuración actual de las características y el perfil.
+En el ejemplo siguiente se examinan las características del dispositivo de disco que son independientes de los medios insertados en el dispositivo. En concreto, recupera listas de características admitidas, perfiles admitidos y páginas de modo admitido, así como la configuración y el perfil de características actuales.
 
 
 ```VB
@@ -110,7 +110,7 @@ End Function
 
 <dl> <dt>
 
-[Usar IMAPi](using-imapi.md)
+[Uso de IMAPI](using-imapi.md)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)
@@ -119,18 +119,18 @@ End Function
 [**IDiscRecorder2**](/windows/desktop/api/imapi2/nn-imapi2-idiscrecorder2)
 </dt> <dt>
 
-[**tipo de página de la característica IMAPi \_ \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_feature_page_type)
+[**TIPO DE \_ PÁGINA DE \_ CARACTERÍSTICAS \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_feature_page_type)
 </dt> <dt>
 
-[**tipo de \_ página del modo IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_mode_page_type)
+[**TIPO DE PÁGINA \_ MODO \_ \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_mode_page_type)
 </dt> <dt>
 
-[**tipo de Perfil de IMAPi \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_profile_type)
+[**TIPO DE PERFIL \_ \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_profile_type)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

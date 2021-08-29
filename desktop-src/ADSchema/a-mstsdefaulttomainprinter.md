@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-default-to-principal-Printer
-description: Terminal Services predeterminada en impresora principal especifica si se va a imprimir automáticamente en la impresora predeterminada del cliente.
+title: Atributo ms-TS-Default-To-Main-Printer
+description: Terminal Services Default To Main Printer (Impresora principal predeterminada de Terminal Services) especifica si se debe imprimir automáticamente en la impresora predeterminada del cliente.
 ms.assetid: b83c8d14-a218-4529-9ebc-05c0624d46fc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de impresora MS-TS-default-to-Main
-- msTSDefaultToMainPrinter esquema de AD de atributos
+- ms-TS-Default-To-Main-Printer attribute AD Schema
+- Esquema de AD del atributo msTSDefaultToMainPrinter
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bce24afc715ec838ec0e4a5bd559cef4ff3658a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 758d088429549d4e79ba05ff46d4baa81c64e19dbc6bae072c1b08553cdbb5af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802745"
 ---
-# <a name="ms-ts-default-to-main-printer-attribute"></a>atributo MS-TS-default-to-principal-Printer
+# <a name="ms-ts-default-to-main-printer-attribute"></a>Atributo ms-TS-Default-To-Main-Printer
 
-Terminal Services predeterminada en impresora principal especifica si se va a imprimir automáticamente en la impresora predeterminada del cliente.
+Terminal Services Default To Main Printer (Impresora principal predeterminada de Terminal Services) especifica si se debe imprimir automáticamente en la impresora predeterminada del cliente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-default-to-principal-Printer        |
-| Nombre para mostrar de LDAP | msTSDefaultToMainPrinter             |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-TS-Default-To-Main-Printer        |
+| Ldap-Display-Name | msTSDefaultToMainPrinter             |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1988              |
-| System-ID-GUID    | c0ffe2bd-cacf-4dc7-88d5-61e9e95766f6 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | c0ffe2bd-cacf-4dc7-88d5-61e9e95766f6 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -52,18 +52,18 @@ Terminal Services predeterminada en impresora principal especifica si se va a im
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Terminal Services predeterminada en impresora principal especifica si se va a im
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Terminal Services predeterminada en impresora principal especifica si se va a im
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

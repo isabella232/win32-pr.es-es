@@ -1,26 +1,26 @@
 ---
-title: Atributo de trazado VML
-description: Atributo de trazado VML
+title: Atributo con trazo de VML
+description: Atributo con trazo de VML
 ms.assetid: 3a62a04b-8165-4d83-8b6d-d5e9bbde2796
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9578027f305f9c720b42ae50befe8abd7e18a949
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9398452365ee6076309cafa40c0373dcaa12d52a868e71eb77e4b42780badb0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117754450"
 ---
-# <a name="vml-stroked-attribute"></a>Atributo de trazado VML
+# <a name="vml-stroked-attribute"></a>Atributo con trazo de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define si se va a trazar la ruta de acceso. Lectura/escritura [VgTriState](msdn-online-vml-vgtristate.md) .
+Define si la ruta de acceso se va a trazo. Lectura/escritura [DvTriState](msdn-online-vml-vgtristate.md) .
 
 **Se aplica a**
 
@@ -28,23 +28,23 @@ Define si se va a trazar la ruta de acceso. Lectura/escritura [VgTriState](msdn-
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* stroked = " *expresión* " >
+<v: *element* stroked=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . stroked = "*expresión*"
+*expresión* .stroked="*del elemento*"
 
-*expresión* = de *elemento*. stroked
+*expresión* = *elemento*.stroked
 
 **Comentarios:**
 
-El valor se duplica desde el atributo **on** del elemento [Stroke](msdn-online-vml-stroke-element.md) .
+El valor se duplica del atributo **On** del [elemento Stroke.](msdn-online-vml-stroke-element.md)
 
 *Atributo estándar de VML*
 
 **Ejemplo**
 
-La ruta de acceso de la forma se traza.
+El trazado de la forma se acaricia.
 
 
 ```HTML
@@ -58,8 +58,8 @@ La ruta de acceso de la forma se traza.
 
 
 
-[Ejemplo de atributo de trazo](/previous-versions/bb264094(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o posterior).
+[Ejemplo de atributo trazo](/previous-versions/bb264094(v=vs.85)). (Requiere Microsoft Internet Explorer 5 o superior).
 
- 
+ 
 
- 
+ 

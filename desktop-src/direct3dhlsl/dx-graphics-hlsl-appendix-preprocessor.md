@@ -1,6 +1,6 @@
 ---
 title: Directivas de preprocesador (HLSL)
-description: Las directivas de preprocesador, como \ define y \ ifdef, se usan normalmente para que los programas de origen sean fáciles de cambiar y fáciles de compilar en diferentes entornos de ejecución.
+description: Las directivas de preprocesador, como \ define e \ ifdef, se usan normalmente para que los programas de origen sean fáciles de cambiar y fáciles de compilar en diferentes entornos de ejecución.
 ms.assetid: b5164c0e-62ab-4da5-9c22-efb5e6319bd6
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8efdd996ddeb58c09d1c8250f174c21bb939f082
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: a2f26a12cf551e71d390e7e8fd0d4ad44f812ac72595135d777f10b00cbb2fb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118792137"
 ---
 # <a name="preprocessor-directives-hlsl"></a>Directivas de preprocesador (HLSL)
 
@@ -29,15 +29,15 @@ El preprocesador HLSL reconoce las siguientes directivas:
 -   [\#else](dx-graphics-hlsl-appendix-pre-if.md)
 -   [\#endif](dx-graphics-hlsl-appendix-pre-if.md)
 -   [\#Error](dx-graphics-hlsl-appendix-pre-error.md)
--   [\#Si](dx-graphics-hlsl-appendix-pre-if.md)
+-   [\#if](dx-graphics-hlsl-appendix-pre-if.md)
 -   [\#ifdef](dx-graphics-hlsl-appendix-pre-ifdef.md)
 -   [\#ifndef](dx-graphics-hlsl-appendix-pre-ifdef.md)
 -   [\#incluír](dx-graphics-hlsl-appendix-pre-include.md)
--   [\#line](dx-graphics-hlsl-appendix-pre-line.md)
+-   [\#Línea](dx-graphics-hlsl-appendix-pre-line.md)
 -   [\#Pragma](dx-graphics-hlsl-appendix-pre-pragma.md)
 -   [\#undef](dx-graphics-hlsl-appendix-pre-undef.md)
 
-El signo de número ( ) debe ser el primer carácter de espacio no blanco en la línea que contiene la directiva; los caracteres de espacio en blanco pueden aparecer entre el signo de número y la primera letra de \# la directiva. Algunas directivas incluyen argumentos o valores. Cualquier texto que sigue a una directiva (excepto un argumento o valor que forma parte de la directiva) debe ir precedido del delimitador de comentario de una sola línea (//) o incluirse entre delimitadores de comentario (/ \* \* /). Las líneas que contienen directivas de preprocesador se pueden continuar inmediatamente antes del marcador de fin de línea con una barra diagonal inversa ( \\ ).
+El signo de número ( ) debe ser el primer carácter de espacio no blanco en la línea que contiene la directiva; los caracteres de espacio en blanco pueden aparecer entre el signo de número y la primera letra de \# la directiva. Algunas directivas incluyen argumentos o valores. Cualquier texto que sigue a una directiva (excepto un argumento o valor que forma parte de la directiva) debe ir precedido del delimitador de comentario de una sola línea (//) o delimitado por delimitadores de comentarios (/ \* \* /). Las líneas que contienen directivas de preprocesador se pueden continuar inmediatamente antes del marcador de fin de línea con una barra diagonal inversa ( \\ ).
 
 Las directivas de preprocesador pueden aparecer en cualquier lugar de un archivo de código fuente, pero solo se aplican al resto del archivo de código fuente.
 

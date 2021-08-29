@@ -1,10 +1,10 @@
 ---
-title: Mensaje de CQPM_SETDEFAULTPARAMETERS (Cmnquery. h)
+title: CQPM_SETDEFAULTPARAMETERS mensaje (Cmnquery.h)
 description: Se envía a la función de devolución de llamada CQPageProc de una página de extensión de formulario de consulta para establecer parámetros predeterminados alternativos para la página.
 ms.assetid: 4d7f1c03-5c67-4f4c-b381-034a142251fe
 ms.tgt_platform: multiple
 keywords:
-- CQPM_SETDEFAULTPARAMETERS Active Directory de mensaje
+- CQPM_SETDEFAULTPARAMETERS mensaje Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c4df77b9068c23a0eeac30181d131cb8469dc53
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40e8c3120651e2bdd2ffb8fd861563aa45cb4009c7a37bb3236e914e0def7d74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118020956"
 ---
-# <a name="cqpm_setdefaultparameters-message"></a>CQPM \_ SETDEFAULTPARAMETERS
+# <a name="cqpm_setdefaultparameters-message"></a>Mensaje SETDEFAULTPARAMETERS de CQPM \_
 
-El mensaje **CQPM \_ SETDEFAULTPARAMETERS** se envía a la función de devolución de llamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de una página de extensión de formulario de consulta para establecer parámetros predeterminados alternativos para la página.
+El **mensaje CQPM \_ SETDEFAULTPARAMETERS** se envía a la función de devolución de llamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de una página de extensión de formulario de consulta para establecer parámetros predeterminados alternativos para la página.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,14 +33,14 @@ El mensaje **CQPM \_ SETDEFAULTPARAMETERS** se envía a la función de devoluci�
 *wParam* 
 </dt> <dd>
 
-Contiene un valor distinto de cero si la página es la página predeterminada o cero en caso contrario.
+Contiene un valor distinto de cero si la página es la predeterminada o cero en caso contrario.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**OPENQUERYWINDOW**](/windows/desktop/api/Cmnquery/ns-cmnquery-openquerywindow) que contiene datos sobre el cuadro de diálogo consulta de servicio de directorio.
+Puntero a una [**estructura OPENQUERYWINDOW que**](/windows/desktop/api/Cmnquery/ns-cmnquery-openquerywindow) contiene datos sobre el cuadro de diálogo de consulta del servicio de directorio.
 
 </dd> </dl>
 
@@ -52,11 +52,11 @@ Se omite el valor devuelto para este mensaje.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Cmnquery. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Cmnquery.h</dt> </dl> |
 
 
 

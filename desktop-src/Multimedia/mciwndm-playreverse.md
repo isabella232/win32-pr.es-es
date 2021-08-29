@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_PLAYREVERSE (VFW. h)
-description: El \_ mensaje MCIWNDM PLAYREVERSE reproduce el contenido actual en dirección inversa, comenzando en la posición actual y terminando al principio del contenido o hasta que otro comando detenga la reproducción.
+title: MCIWNDM_PLAYREVERSE mensaje (Vfw.h)
+description: El mensaje PLAYREVERSE de MCIWNDM reproduce el contenido actual en la dirección inversa, empezando en la posición actual y finalizando al principio del contenido o hasta que otro comando detiene la \_ reproducción.
 ms.assetid: 93a22454-eca6-453f-abbe-6cf20198dbad
 keywords:
-- Mensaje de MCIWNDM_PLAYREVERSE de Windows multimedia
+- MCIWNDM_PLAYREVERSE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84b0a2e230e3c57e8314e455be5dfbc5cea2c013
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5664ea53f73745648e668a78a6dc5f6da28a9cb27d54b96fced09523f655ed3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037975"
 ---
-# <a name="mciwndm_playreverse-message"></a>MCIWNDM \_ PLAYREVERSE
+# <a name="mciwndm_playreverse-message"></a>Mensaje PLAYREVERSE de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ PLAYREVERSE** reproduce el contenido actual en dirección inversa, comenzando en la posición actual y terminando al principio del contenido o hasta que otro comando detenga la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPlayReverse**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayreverse) .
+El **mensaje \_ PLAYREVERSE de MCIWNDM** reproduce el contenido actual en la dirección inversa, empezando en la posición actual y finalizando al principio del contenido o hasta que otro comando detiene la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPlayReverse.**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayreverse)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Devuelve cero si es correcto o un error en caso contrario.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

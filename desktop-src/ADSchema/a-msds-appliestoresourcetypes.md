@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-appliesTo en los tipos de recurso
-description: En el caso de una propiedad de recurso, este atributo indica a qué tipos de recursos se aplica esta propiedad de recurso.
+title: Atributo ms-DS-Applies-To-Resource-Types
+description: Para una propiedad de recurso, este atributo indica a qué tipos de recursos se aplica esta propiedad de recurso.
 ms.assetid: 51b6b8ed-63d8-46dc-ac73-79b4c0c801cf
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de tipos de recursos MS-DS-appliesTo
-- Esquema de AD de atributo msDS-AppliesToResourceTypes
+- Esquema de AD del atributo ms-DS-Applies-To-Resource-Types
+- Esquema de AD del atributo msDS-AppliesToResourceTypes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1df924371276e13dc9d8cdb96fc685ce8ee6aae2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fb06d78264475123b225bf27d0bb7bec53794db2ef1a9f668a9e13973bcbe60a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960934"
 ---
-# <a name="ms-ds-applies-to-resource-types-attribute"></a>atributo MS-DS-appliesTo en los tipos de recurso
+# <a name="ms-ds-applies-to-resource-types-attribute"></a>Atributo ms-DS-Applies-To-Resource-Types
 
-En el caso de una propiedad de recurso, este atributo indica a qué tipos de recursos se aplica esta propiedad de recurso.
+Para una propiedad de recurso, este atributo indica a qué tipos de recursos se aplica esta propiedad de recurso.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-se aplica a los tipos de recurso             |
-| Nombre para mostrar de LDAP | msDS-AppliesToResourceTypes                 |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Applies-To-Resource-Types             |
+| Ldap-Display-Name | msDS-AppliesToResourceTypes                 |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2195                     |
-| System-ID-GUID    | 693f2006-5764-3d4a-8439-58f04aab4b59        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 693f2006-5764-3d4a-8439-58f04aab4b59        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -48,20 +48,20 @@ En el caso de una propiedad de recurso, este atributo indica a qué tipos de rec
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | False                                                                 |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Falso                                                                 |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Propiedad MS-DS-Resource-**](c-msds-resourceproperty.md)<br/> |
+| Clases usadas en        | [**ms-DS-Resource-Property**](c-msds-resourceproperty.md)<br/> |
 
 
 

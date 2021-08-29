@@ -1,76 +1,76 @@
 ---
-title: Anotación de asignación de valores
-description: Anotación de asignación de valores
+title: Anotación de mapa de valores
+description: Anotación de mapa de valores
 ms.assetid: f7c9304a-0eed-4a73-ab06-56723f3cfa5d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d21b04374344475689989c2570af6975dc97c13
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 32f378742ce01458d930ee510baf4c6317f2e182cdd41642c4d22928d9777fe4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104555605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052248"
 ---
-# <a name="value-map-annotation"></a>Anotación de asignación de valores
+# <a name="value-map-annotation"></a>Anotación de mapa de valores
 
-Con la anotación de asignación de valores, puede utilizar una cadena de asignación para indicar cómo corresponde el índice de imagen de un elemento de una vista de lista o vista de árbol con su rol o estado. Por ejemplo, una cadena de asignación puede indicar que el índice 0 de la imagen de una vista de lista se asigna a un rol de la casilla, mientras que el índice de imagen 1 se asigna a un rol de botón de radio.
+Con la anotación de mapa de valores, puede usar una cadena de asignación para indicar cómo el índice de imagen de un elemento en una vista de lista o vista de árbol corresponde a su rol o estado. Por ejemplo, una cadena de asignación puede indicar que el índice de imagen 0 de una vista de lista se asigna a un rol de , mientras que el índice de imagen 1 se asigna a un rol de botón de radio.
 
-También puede usar la anotación de asignación de valores para especificar cadenas que se asignan a los valores numéricos en un control deslizante.
+También puede usar la anotación de mapa de valores para especificar cadenas que se asignan a los valores numéricos en un control deslizante.
 
 ## <a name="when-to-use-this-technique"></a>Cuándo usar esta técnica
 
-Considere la posibilidad de utilizar la anotación de asignación de valores en las siguientes situaciones.
+Considere la posibilidad de usar anotación de mapa de valores en las situaciones siguientes.
 
--   Cuando una vista de lista o una vista de árbol dibujada por el propietario incorpora el uso de imágenes y desea proporcionar una descripción accesible personalizada (propiedad [**Description**](description-property.md) ) basada en esa imagen. En la siguiente ilustración se muestra un ejemplo.
+-   Cuando una vista de lista o vista de árbol dibujada por el propietario incorpora el uso de imágenes, y desea proporcionar una descripción accesible personalizada [**(propiedad**](description-property.md) Descripción) basada en esa imagen. En la siguiente ilustración se muestra un ejemplo.
 
-    ![Ilustración del menú Inicio, donde los iconos proporcionan pistas visuales al contenido](images/iconlist.gif)
+    ![ilustración del menú Inicio, donde los iconos proporcionan pistas visuales al contenido](images/iconlist.gif)
 
--   Cuando una vista de lista dibujada por el propietario o un control de vista de árbol incorpora el uso de imágenes para que el árbol o los elementos de la lista actúen como controles simples, normalmente las casillas o los botones de radio, y desea asignar la imagen a un rol. En la captura de pantalla siguiente se muestra un ejemplo.
+-   Cuando una vista de lista dibujada por el propietario o un control de vista de árbol incorpora el uso de imágenes para que los elementos de árbol o lista actúen como controles simples, normalmente casillas o botones de radio, y quiere asignar la imagen a un rol. En la siguiente captura de pantalla se muestra un ejemplo.
 
     ![captura de pantalla de las opciones de Internet Explorer para establecer el valor de las casillas y los botones de radio](images/customlist.gif)
 
--   Cuando se usa un control deslizante para seleccionar un valor que se puede describir como algo distinto de un entero simple, como en la siguiente captura de pantalla, donde la configuración de la resolución de pantalla se describe mediante una cadena.
+-   Cuando se usa un control deslizante para seleccionar un valor que se puede describir como algo distinto de un entero simple, como en la siguiente captura de pantalla, donde la configuración de resolución de pantalla se describe mediante una cadena.
 
     ![captura de pantalla de un control deslizante que se usa para establecer la resolución de pantalla](images/slider.gif)
 
-Con la anotación de asignación de valores, una cadena de asignación indica el modo en que el índice de imagen del árbol o de la lista corresponde a su rol o estado. O bien, puede indicar el modo en que el valor numérico de un control deslizante corresponde a una cadena. Por ejemplo, una cadena de asignación puede indicar que el índice 0 de la imagen de una vista de lista se asigna a un rol de casilla y el índice de imagen 1 se asigna a un rol de botón de radio. Use [**IAccPropServices:: SetHwndPropStr ()**](/windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-sethwndpropstr) para adjuntar la cadena de asignación al control.
+Con la anotación de mapa de valores, una cadena de asignación indica cómo el índice de imagen de la lista o árbol corresponde a su rol o estado. O bien, puede indicar cómo se corresponde el valor numérico de un control deslizante a una cadena. Por ejemplo, una cadena de asignación puede indicar que el índice de imagen 0 de una vista de lista se asigna a un rol de casilla e índice de imagen 1 se asigna a un rol de botón de radio. Use [**IAccPropServices::SetHwndPropStr() para**](/windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-sethwndpropstr) adjuntar la cadena de asignación al control.
 
-Dado que se requiere conocimiento específico del control para admitir la asignación de valores, hay un número limitado de controles y propiedades que admiten la anotación de asignación de valores, incluidos los mapas de valores del control deslizante, las vistas de lista y las vistas de árbol.
+Dado que el conocimiento específico del control es necesario para admitir la asignación de valores, hay un número limitado de controles y propiedades que admiten la anotación de mapa de valores, incluidos los mapas de valores de control deslizante, las vistas de lista y las vistas de árbol.
 
-## <a name="slider-value-map&quot;></a>Mapa de valores de control deslizante
+## <a name="slider-value-map"></a>Mapa de valores de control deslizante
 
-**PROPID \_ ACC \_** se incluye en una asignación de las posiciones internas del control deslizante a cadenas legibles para el usuario. Esta propiedad es compatible con el Oleacc.dll el proxy de control deslizante. Si el valor del control deslizante actual se encuentra en el mapa de valores, la cadena correspondiente se expondrá como el valor en lugar de la cadena de porcentaje predeterminada (por ejemplo, &quot;50").
+**PROPID \_ ACC \_ VALUEMAP** contiene una asignación de las posiciones del control deslizante interno a las cadenas legibles por el usuario. Esta propiedad es compatible con el proxy Oleacc.dll control deslizante. Si el valor del control deslizante actual se encuentra en la asignación de valores, la cadena correspondiente se expone como el valor en lugar de la cadena de porcentaje predeterminada (por ejemplo, "50").
 
 ## <a name="list-view-and-tree-view"></a>Vista de lista y vista de árbol
 
-**PROPID \_ ACC \_ ROLEMAP**, **PROPID \_ ACC \_ STATEMAP** y **PROPID \_ ACC \_ DESCRIPTONMAP** proporcionan asignaciones desde los índices de imagen de estado a los valores de rol y estado. Estos mapas permiten asignar esos índices de imagen a los roles adecuados (normalmente, [**CHECKBUTTON \_ del \_ sistema de roles**](object-roles.md) o de [**\_ sistema \_ de roles**](object-roles.md)) y bits de estado adicionales (normalmente, el [**sistema de estado \_ \_ está activado**](object-state-constants.md)).
+**PROPID \_ ACC \_ ROLEMAP,** **PROPID \_ ACC \_ STATEMAP** y **PROPID ACC \_ \_ DESCRIPTONMAP** proporcionan asignaciones de índices de imagen de estado a valores de rol y estado. Estas asignaciones permiten asignar esos índices de imagen a los roles adecuados (normalmente [**ROLE \_ SYSTEM \_ RADIOBUTTON**](object-roles.md) o [**ROLE SYSTEM \_ \_ CHECKBUTTON)**](object-roles.md)y bits de estado adicionales (normalmente [**STATE SYSTEM \_ \_ CHECKED**](object-state-constants.md)).
 
-Para obtener más información sobre la anotación de asignación de valores, vea los temas siguientes:
+Para obtener más información sobre la anotación de mapa de valores, vea los temas siguientes:
 
--   [Usar anotación de asignación de valores](using-value-map-annotation.md)
+-   [Usar anotación de mapa de valores](using-value-map-annotation.md)
 -   [Ejemplo de anotación de mapa de valores](value-map-annotation-sample.md)
 
-## <a name="annotation-map-format"></a>Formato de asignación de anotaciones
+## <a name="annotation-map-format"></a>Formato de mapa de anotaciones
 
-En la tabla siguiente se describen los campos que se incluyen en una asignación de anotación.
+En la tabla siguiente se describen los campos que se incluyen en un mapa de anotaciones.
 
 
 
 | Campo               | Descripción                                                                                                                                                                                                                                                                   |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Un                 | Indica que se utiliza un esquema de codificación determinado. Es posible que se admitan prefijos adicionales para los esquemas de codificación futuros.                                                                                                                                                          |
-| Carácter delimitador | Normalmente dos puntos (:) se usa, pero puede ser otro carácter excepto **null** o un espacio vacío. Dado que este carácter se utilizará como delimitador para los campos restantes, no se puede usar como parte de un valor en el mapa.                                               |
-| 0, 1 o 2          | Valor que indica qué clave se está usando. En las vistas de árbol y de vista de lista y en las asignaciones de estado, esta clave puede ser 0 (índice de imagen), 1 (índice de imagen de estado) o 2 (índice de imagen superpuesta). En el caso de los controles deslizantes y otros controles que no ofrecen una selección de claves, este valor debe ser 0. |
+| 'A'                 | Indica que se usa un esquema de codificación determinado. Es posible que se admiten prefijos adicionales para esquemas de codificación futuros.                                                                                                                                                          |
+| Carácter delimitador | Normalmente, dos puntos (:) se usa, pero puede ser otro carácter excepto **NULL** o un espacio vacío. Dado que este carácter se usará como delimitador para los campos restantes, no se puede usar como parte de un valor en el mapa.                                               |
+| 0, 1 o 2          | Valor que indica qué clave se está utilizando. Para los roles Vista de árbol y Vista de lista y mapas de estado, esta clave puede ser 0 (índice de imagen), 1 (índice de imagen de estado) o 2 (índice de imagen superpuesta). Para los controles deslizantes y otros controles que no ofrecen una opción de claves, este valor debe ser 0. |
 | Carácter delimitador | :                                                                                                                                                                                                                                                                             |
-| Pares clave-valor     | Cada par se compone de una cadena de clave y un carácter delimitador. La cadena de clave es un número y puede estar en formato decimal o hexadecimal (con un prefijo "0x" inicial).                                                                                                            |
-| Cadena de valor        | En el caso de los mapas de valores, se trata de una cadena. En el caso de las asignaciones de roles y Estados, es un número (decimal o hexadecimal).                                                                                                                                                                         |
+| Pares clave-valor     | Cada par consta de una cadena de clave y un carácter delimitador. La cadena de clave es un número y puede estar en formato decimal o hexadecimal (con un prefijo "0x" inicial).                                                                                                            |
+| Cadena de valor        | En el caso de las asignaciones de valores, se trata de una cadena. En el caso de las asignaciones de roles y estados, se trata de un número (decimal o hexadecimal).                                                                                                                                                                         |
 | Carácter delimitador | :                                                                                                                                                                                                                                                                             |
 
 
 
- 
+ 
 
-Por ejemplo, un mapa puede tener un aspecto similar al siguiente:
+Por ejemplo, un mapa puede tener un aspecto parecido al siguiente:
 
 
 ```C++
@@ -79,11 +79,11 @@ A:0:0:Cold:1:Warm:3:Hot:
 
 
 
-Cuando se aplica este mapa de valores a un control deslizante, se expondrá un valor "cálido" cuando el control deslizante esté en la posición 1. Dado que el valor 2 no se incluye en este ejemplo, se expondrá el valor predeterminado de esa posición. Para un control deslizante, el valor predeterminado sería un valor porcentual, como 33.
+Cuando este mapa de valores se aplica a un control deslizante, se expone un valor de "Warm" cuando el control deslizante está en la posición 1. Dado que el valor 2 no se incluye en este ejemplo, se expone el valor predeterminado para esa posición. Para un control deslizante, el valor predeterminado sería un valor de porcentaje, como 33.
 
- 
+ 
 
- 
+ 
 
 
 

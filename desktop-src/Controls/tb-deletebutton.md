@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_DELETEBUTTON (commctrl. h)
+title: TB_DELETEBUTTON mensaje (Commctrl.h)
 description: Elimina un botón de la barra de herramientas.
 ms.assetid: 6ba569f0-c400-4c0d-bc9f-3a82bcef0360
 keywords:
-- TB_DELETEBUTTON controles de mensajes de Windows
+- TB_DELETEBUTTON controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1d9bbbca143351f70005990b5ac97fa4fa35cad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 527bac884c36d8bcbf1ddee245156557e392cf1b4591b03c8af7cfc9cc3c8f77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957904"
 ---
-# <a name="tb_deletebutton-message"></a>\_Mensaje DELETEBUTTON TB
+# <a name="tb_deletebutton-message"></a>Mensaje \_ DELETEBUTTON de TB
 
 Elimina un botón de la barra de herramientas.
 
@@ -32,7 +32,7 @@ Elimina un botón de la barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Índice de base cero del botón que se va a eliminar.
+Índice de base cero del botón que se eliminará.
 
 </dd> <dt>
 
@@ -41,7 +41,7 @@ Elimina un botón de la barra de herramientas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Devuelve **true** si es correcto, o **false** en caso contrario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

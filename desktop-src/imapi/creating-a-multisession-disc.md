@@ -1,46 +1,46 @@
 ---
-title: Creación de un disco de múltiples sesiones
+title: Creación de un disco multisesión
 ms.assetid: 327304c4-fdb9-47c6-9b19-49100b933590
-description: Más información acerca de cómo crear un disco de varias sesiones
+description: 'Más información sobre: Creación de un disco multisesión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2db17b8a16f46797fc0f6de2bf94850e3b3039bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95147cbadedc76487ae64797c342eb256df0967bf99efecb9e9cda443b5d3010
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104497830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758581"
 ---
-# <a name="creating-a-multisession-disc"></a>Creación de un disco de múltiples sesiones
+# <a name="creating-a-multisession-disc"></a>Creación de un disco multisesión
 
-La [API de procesamiento de imágenes](about-imapi.md) (IMAPI) admite la adición y eliminación de archivos a los siguientes tipos de discos de múltiples sesiones:
+[Image Mastering API](about-imapi.md) (IMAPI) admite la adición y eliminación de archivos hacia o desde los siguientes tipos de disco multisesión:
 
 -   CD-R/CD-RW
--   Single-Layer DVD + R/DVD-R
--   DVD + R capa dual
+-   Single-Layer DVD+R/DVD-R
+-   Capa dual de DVD+R
 -   BD-R
--   DVD-RW/DVD + RW (**solo Windows 7**)
+-   DVD-RW/DVD+RW (**Windows 7 Only**)
 -   DVD-RAM (**solo Windows 7**)
 -   BD-RE (**solo Windows 7**)
 
-La creación de un disco de múltiples sesiones con IMAPi consta de los siguientes pasos. Cada uno de estos pasos documentados contiene la parte correspondiente del ejemplo de script completo Visual Basic proporcionado en la sección final.
+La creación de un disco multisesión mediante IMAPI consta de los pasos siguientes. Cada uno de estos pasos documentados contiene la parte pertinente del ejemplo completo Visual Basic script proporcionado en la sección final.
 
-## <a name="initializing-the-disc-recorder"></a>Inicializando la grabadora de discos
+## <a name="initializing-the-disc-recorder"></a>Inicialización de la grabadora de discos
 
-Antes de la inicialización del dispositivo, el objeto **MsftDiscMaster2** proporciona una enumeración de los dispositivos ópticos en el sistema. La interfaz [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2) proporciona acceso a esta enumeración de dispositivos para facilitar la ubicación del dispositivo de grabación adecuado. El objeto **MsftDiscMaster2** también proporciona notificaciones de eventos cuando se agregan o se quitan dispositivos ópticos de un equipo.
+Antes de la inicialización del dispositivo, **el objeto MsftDiscMaster2** proporciona una enumeración de los dispositivos ópticos en el sistema. La [**interfaz IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2) proporciona acceso a esta enumeración de dispositivos para facilitar la ubicación del dispositivo de grabación adecuado. El **objeto MsftDiscMaster2** también proporciona notificaciones de eventos cuando los dispositivos ópticos se agregan o quitan de una máquina.
 
-Después de localizar un grabador óptico y recuperar el identificador asignado a él, cree un nuevo objeto **MsftDiscMaster2** e inicialice la grabadora con el identificador de dispositivo específico.
+Después de localizar una grabadora óptica y recuperar el identificador asignado a ella, cree un nuevo objeto **MsftDiscMaster2** e inicialice la grabadora con el identificador de dispositivo específico.
 
-La interfaz [**IDiscRecorder2**](/windows/desktop/api/imapi2/nn-imapi2-idiscrecorder2) proporciona acceso a información básica del dispositivo, como el identificador del proveedor, el ID. del producto, la revisión del producto, así como los métodos para expulsar el contenido multimedia o cerrar la bandeja.
+La [**interfaz IDiscRecorder2**](/windows/desktop/api/imapi2/nn-imapi2-idiscrecorder2) proporciona acceso a información básica del dispositivo, como el identificador del proveedor, el identificador del producto, la revisión del producto, así como los métodos para expulsar medios o cerrar la bandeja.
 
 > [!Note]  
-> Las constantes y dimensiones adicionales declaradas en el ejemplo siguiente se usan más adelante en el script de ejemplo completo que se encuentra en la sección final de este documento. Estos elementos no son necesarios para la acción de inicializar una grabadora de discos.
+> Las constantes y dimensiones adicionales declaradas en el ejemplo siguiente se usan más adelante en el script de ejemplo completo ubicado en la sección final de este documento. Estos elementos no son necesarios para el acto de inicializar una grabadora de disco.
 
  
 
 
 ```VB
-' **_ CD/DVD disc file system types
+' *** CD/DVD disc file system types
 Const FsiFileSystemISO9660 = 1
 Const FsiFileSystemJoliet  = 2
 Const FsiFileSystemUDF102  = 4
@@ -69,11 +69,11 @@ Function Main
 
 
 
-## <a name="creating-a-data-writer"></a>Crear un escritor de datos
+## <a name="creating-a-data-writer"></a>Creación de un escritor de datos
 
-El objeto _ *MsftDiscFormat2Data** proporciona el método de escritura, sus propiedades, así como las propiedades específicas del medio. La interfaz [**IDiscFormat2Data**](/windows/desktop/api/imapi2/nn-imapi2-idiscformat2data) proporciona acceso a este objeto.
+El **objeto MsftDiscFormat2Data proporciona** el método de escritura, sus propiedades, así como las propiedades específicas del medio. La [**interfaz IDiscFormat2Data**](/windows/desktop/api/imapi2/nn-imapi2-idiscformat2data) proporciona acceso a este objeto .
 
-La grabadora de discos se enlaza al escritor de formato mediante la propiedad de [**\_ grabadora IDiscFormat2Data::p UT**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_recorder) . Después de que la grabadora esté enlazada al escritor de formato, se pueden realizar consultas de propiedades de medios y específicas de escritura antes de escribir la imagen de resultado en el disco mediante el método [**IDiscFormat2Data:: Write**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-write) .
+La grabadora de discos se enlaza al sistema de escritura de formato mediante la [**propiedad IDiscFormat2Data::p ut \_ Recorder.**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-put_recorder) Después de enlazar la grabadora al sistema de escritura de formato, se pueden realizar consultas de medios y de propiedades específicas de escritura antes de escribir la imagen de resultado en el disco mediante el método [**IDiscFormat2Data::Write.**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-write)
 
 > [!Note]  
 > La cadena de nombre de cliente especificada en el código de ejemplo siguiente debe ajustarse según corresponda para la aplicación específica.
@@ -93,7 +93,7 @@ La grabadora de discos se enlaza al escritor de formato mediante la propiedad de
 
 ## <a name="creating-the-file-system-object"></a>Crear el objeto del sistema de archivos
 
-Para registrar una nueva sesión, debe generarse una imagen de grabación en primer lugar. Una imagen de grabación para los formatos de **ISO9660**, **Joliet** y **UDF** se compone de sistemas de archivos de archivos y directorios individuales. El objeto **MsftFileSystemImage** es el objeto del sistema de archivos que contiene los archivos y directorios que se van a colocar en el medio óptico. La interfaz [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage) proporciona acceso al objeto y a la configuración del sistema de archivos.
+Para registrar una nueva sesión, primero se debe generar una imagen de grabación para ella. Una imagen de grabación **para los formatos ISO9660**, **Joliet** y **UDF** consta de sistemas de archivos de archivos y directorios individuales. El **objeto MsftFileSystemImage** es el objeto del sistema de archivos que contiene los archivos y directorios que se colocarán en el medio óptico. La [**interfaz IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage) proporciona acceso al objeto y la configuración del sistema de archivos.
 
 
 ```VB
@@ -106,21 +106,21 @@ Para registrar una nueva sesión, debe generarse una imagen de grabación en pri
 
 ## <a name="importing-a-file-system"></a>Importar un sistema de archivos
 
-Antes de continuar, asegúrese de que el disco no esté en blanco; para ello, Compruebe la propiedad [**IDiscFormat2:: get \_ MediaHeuristicallyBlank**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2-get_mediaheuristicallyblank) .
+Antes de continuar, asegúrese de que el disco no está en blanco comprobando la propiedad [**IDiscFormat2::get \_ MediaHeuristicallyBlank.**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2-get_mediaheuristicallyblank)
 
-Después de crear el objeto **MsftFileSystemImage** , la propiedad [**IFileSystemImage::p UT \_ MultisessionInterfaces**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_multisessioninterfaces) debe inicializarse antes de una llamada al método [**IFileSystemImage:: ImportFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importfilesystem) o [**IFileSystemImage:: ImportSpecificFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importspecificfilesystem) para importar el sistema de archivos desde la última sesión grabada. Estos métodos rellenarán automáticamente el objeto **MsftFileSystemImage** con información que describe los archivos y directorios grabados previamente.
+Después de crear el objeto **MsftFileSystemImage,** se debe inicializar la propiedad [**\_ MultisessionInterfaces de IFileSystemImage::p ut**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_multisessioninterfaces) antes de llamar al método [**IFileSystemImage::ImportFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importfilesystem) o [**IFileSystemImage::ImportSpecificFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importspecificfilesystem) para importar el sistema de archivos desde la última sesión registrada. Estos métodos rellenarán automáticamente el **objeto MsftFileSystemImage** con información que describa los archivos y directorios registrados anteriormente.
 
 > [!Note]  
-> La propiedad [**IFileSystemImage::p UT \_ MultisessionInterfaces**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_multisessioninterfaces) se inicializa normalmente con las interfaces de sesión múltiples que proporciona el escritor de datos a través de la propiedad [**IDiscFormat2Data:: get \_ MultisessionInterfaces**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_multisessioninterfaces) .
+> La propiedad [**IFileSystemImage::p ut \_ MultisessionInterfaces**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-put_multisessioninterfaces) normalmente se inicializa con las interfaces multisesión proporcionadas por el escritor de datos a través de la propiedad [**IDiscFormat2Data::get \_ MultisessionInterfaces.**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_multisessioninterfaces)
 
  
 
-Si se intenta establecer la propiedad **IFileSystemImage::p UT \_ MultisessionInterfaces** , se producirá un error si IMAPI no admite la multisesión para los medios insertados actualmente o si los medios no se pueden anexar por algún otro motivo (por ejemplo, porque está cerrado).
+Los intentos de establecer la propiedad **IFileSystemImage::p ut \_ MultisessionInterfaces** producirán un error si IMAPI no admite multisesión para el medio insertado actualmente o no se puede anexar el medio por algún otro motivo (por ejemplo, porque está cerrado).
 
-Si la sesión de grabación anterior contenía más de un tipo de sistema de archivos, el método [**IFileSystemImage:: ImportFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importfilesystem) importará información del tipo de sistema de archivos más avanzado presente. Por ejemplo, en el ejemplo que se proporciona en este tema, UDF es el sistema de archivos importado. Sin embargo, el uso del método [**IFileSystemImage:: ImportSpecificFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importspecificfilesystem) permite la importación específica del sistema de archivos.
+Si la sesión de grabación anterior contenía más de un tipo de sistema de archivos, el método [**IFileSystemImage::ImportFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importfilesystem) importará información del tipo de sistema de archivos más avanzado presente. Por ejemplo, en el ejemplo proporcionado en este tema, UDF es el sistema de archivos importado. Sin embargo, el uso del [**método IFileSystemImage::ImportSpecificFileSystem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-importspecificfilesystem) permite importar la selección específica del sistema de archivos.
 
 > [!Note]  
-> El método [**IFileSystemImage:: IdentifyFileSystemsOnDisc**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-identifyfilesystemsondisc) se puede usar para determinar los sistemas de archivos que están disponibles en el disco.
+> El [**método IFileSystemImage::IdentifyFileSystemsOnDisc**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-identifyfilesystemsondisc) se puede usar para determinar qué sistemas de archivos están disponibles en el disco.
 
  
 
@@ -149,16 +149,16 @@ Si la sesión de grabación anterior contenía más de un tipo de sistema de arc
 
 
 
-## <a name="adding-or-removing-files-to-the-file-system"></a>Agregar o quitar archivos en el sistema de archivos
+## <a name="adding-or-removing-files-to-the-file-system"></a>Agregar o quitar archivos al sistema de archivos
 
-Después de crear el objeto del sistema de archivos e importar el sistema de archivos de la sesión anterior, llame a los métodos [**IFileSystemImage:: CreateFileItem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createfileitem) y [**IFileSystemImage:: CreateDirectoryItem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createdirectoryitem) para crear nuevos objetos de archivo y directorio, respectivamente. Los objetos de archivo y directorio proporcionan detalles específicos sobre los archivos y directorios. Como alternativa, se puede usar el método [**IFsiDirectoryItem:: AddTree**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-addtree) de un objeto de directorio, representado mediante la interfaz [**IFsiDirectoryItem**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifsidirectoryitem) , para agregar archivos y directorios existentes desde otro dispositivo de almacenamiento (es decir, una unidad de disco duro).
+Después de crear el objeto del sistema de archivos e importar el sistema de archivos de la sesión anterior, llame a los métodos [**IFileSystemImage::CreateFileItem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createfileitem) e [**IFileSystemImage::CreateDirectoryItem**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createdirectoryitem) para crear nuevos objetos de archivo y directorio, respectivamente. Los objetos de archivo y directorio proporcionan detalles específicos sobre los archivos y directorios. Como alternativa, el método [**IFsiDirectoryItem::AddTree**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-addtree) de un objeto de directorio, representado a través de la interfaz [**IFsiDirectoryItem,**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifsidirectoryitem) se puede usar para agregar archivos y directorios existentes desde otro dispositivo de almacenamiento (es decir, una unidad de disco duro).
 
-El método de actualización del controlador de eventos disponible para [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage) identifica el archivo actual que se está agregando a la imagen del sistema de archivos, el número de sectores ya copiados y el número total de sectores que se van a copiar.
+El método de actualización del controlador de eventos disponible para [**IFileSystemImage**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimage) identifica el archivo actual que se agrega a la imagen del sistema de archivos, el número de sectores ya copiados y el número total de sectores que se van a copiar.
 
-Para quitar los archivos y directorios existentes del sistema de archivos, use los métodos [**IFsiDirectoryItem:: Remove**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-remove) y [**IFsiDirectoryItem:: RemoveTree**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-removetree) de los objetos de directorio que se representan a través de la interfaz [**IFsiDirectoryItem**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifsidirectoryitem) . La propiedad [**IFileSystemImage:: get \_ root**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_root) se usa para obtener un puntero al directorio raíz del sistema de archivos y la interfaz **IFsiDirectoryItem** para atravesar el árbol de directorios.
+Para quitar archivos y directorios existentes del sistema de archivos, use los métodos [**IFsiDirectoryItem::Remove**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-remove) e [**IFsiDirectoryItem::RemoveTree**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-removetree) de los objetos de directorio representados a través de la [**interfaz IFsiDirectoryItem.**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifsidirectoryitem) La [**propiedad IFileSystemImage::get \_ Root**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-get_root) se usa para obtener un puntero al directorio raíz del sistema de archivos y la interfaz **IFsiDirectoryItem** para recorrer el árbol de directorios.
 
 > [!Note]  
-> Los archivos y directorios que se quitan mediante los métodos [**IFsiDirectoryItem:: Remove**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-remove) y [**IFsiDirectoryItem:: RemoveTree**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-removetree) no se quitan físicamente del disco y el software avanzado puede recuperar fácilmente la información eliminada.
+> Los archivos y directorios quitados a través de los métodos [**IFsiDirectoryItem::Remove**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-remove) e [**IFsiDirectoryItem::RemoveTree**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifsidirectoryitem-removetree) no se quitan físicamente del disco y el software avanzado puede recuperar fácilmente la información eliminada.
 
  
 
@@ -171,9 +171,9 @@ Para quitar los archivos y directorios existentes del sistema de archivos, use l
 
 
 
-## <a name="constructing-a-file-system-image"></a>Construir una imagen de sistema de archivos
+## <a name="constructing-a-file-system-image"></a>Construir una imagen del sistema de archivos
 
-El paso final consiste en llamar a [**IFileSystemImage:: CreateResultImage**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createresultimage) para crear un flujo de datos para la imagen de grabación y proporcionar acceso a él a través de la interfaz [**IFileSystemImageResult**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimageresult) . Este flujo de datos se puede proporcionar directamente al método [**IDiscFormat2Data:: Write**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-write) o guardarse en un archivo para su uso posterior.
+El paso final consiste en llamar a [**IFileSystemImage::CreateResultImage**](/windows/desktop/api/imapi2fs/nf-imapi2fs-ifilesystemimage-createresultimage) para crear un flujo de datos para la imagen de grabación y proporcionar acceso a ella a través de la [**interfaz IFileSystemImageResult.**](/windows/desktop/api/imapi2fs/nn-imapi2fs-ifilesystemimageresult) Este flujo de datos se puede proporcionar directamente al método [**IDiscFormat2Data::Write**](/windows/desktop/api/imapi2/nf-imapi2-idiscformat2data-write) o guardarse en un archivo para su uso posterior.
 
 
 ```VB
@@ -187,14 +187,14 @@ El paso final consiste en llamar a [**IFileSystemImage:: CreateResultImage**](/w
 
 ## <a name="example-summary"></a>Resumen de ejemplo
 
-En el siguiente ejemplo de script de Visual Basic se muestra cómo usar los objetos de IMAPi para crear discos de múltiples sesiones. En el ejemplo se crea una nueva sesión y se agrega un directorio al disco. Por motivos de simplicidad, el código no realiza una comprobación de errores exhaustiva y presupone lo siguiente:
+En el ejemplo Visual Basic script siguiente se muestra cómo usar objetos IMAPI para crear discos de varias sesiones. En el ejemplo se crea una nueva sesión y se agrega un directorio al disco. Por motivos de simplicidad, el código no realiza una comprobación de errores exhaustiva y asume lo siguiente:
 
 -   Un dispositivo de disco compatible está instalado en el sistema.
 -   El dispositivo de disco es la primera unidad del sistema.
--   Se inserta un disco compatible en el dispositivo de disco.
+-   Se inserta un disco compatible en el dispositivo del disco.
 -   Los archivos que se van a agregar al disco se encuentran en "g: \\ burndir".
 
-Se puede Agregar al script una funcionalidad adicional, como la comprobación de errores, la compatibilidad de dispositivos y medios, la notificación de eventos y el cálculo del espacio libre en el disco.
+Se pueden agregar al script funcionalidades adicionales, como la comprobación de errores extensa, la compatibilidad de dispositivos y medios, la notificación de eventos y el cálculo del espacio libre en el disco.
 
 
 ```VB
@@ -205,7 +205,7 @@ Se puede Agregar al script una funcionalidad adicional, como la comprobación de
 
 Option Explicit
 
-' **_ CD/DVD disc file system types
+' *** CD/DVD disc file system types
 Const FsiFileSystemISO9660 = 1
 Const FsiFileSystemJoliet  = 2
 Const FsiFileSystemUDF102  = 4
@@ -286,10 +286,10 @@ End Function
 
 <dl> <dt>
 
-[Usar IMAPi](using-imapi.md)
+[Uso de IMAPI](using-imapi.md)
 </dt> <dt>
 
-[_ *IStream**](/windows/desktop/api/objidl/nn-objidl-istream)
+[**Istream**](/windows/desktop/api/objidl/nn-objidl-istream)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)

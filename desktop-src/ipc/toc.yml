@@ -1,29 +1,29 @@
 - name: Comunicaciones entre procesos
   href: interprocess-communications.md
   items:
-    - name: Buzo
+    - name: Mailslots
       href: mailslots.md
       items:
-        - name: Acerca de los procesadores
+        - name: Acerca de Mailslots
           href: about-mailslots.md
           items:
-            - name: Nombres de buzón de correo
+            - name: Nombres de Mailslot
               href: mailslot-names.md
-            - name: Operaciones de buzón de correo
+            - name: Operaciones de Mailslot
               href: mailslot-operations.md
-        - name: Uso de buzones de
+        - name: Uso de Mailslots
           href: using-mailslots.md
           items:
-            - name: Creación de un buzón de correo
+            - name: Crear un Mailslot
               href: creating-a-mailslot.md
-            - name: Escribir en un buzón de correo
+            - name: Escribir en mailslot
               href: writing-to-a-mailslot.md
-            - name: Leer de un buzón de correo
+            - name: Lectura desde mailslot
               href: reading-from-a-mailslot.md
-        - name: Referencia de buzón de correo
+        - name: Referencia de Mailslot
           href: mailslot-reference.md
           items:
-            - name: Funciones de buzón de correo
+            - name: Funciones mailslot
               href: mailslot-functions.md
               items:
                 - name: CreateMailslot
@@ -32,7 +32,7 @@
                   href: /windows/desktop/api/Winbase/nf-winbase-getmailslotinfo
                 - name: SetMailslotInfo
                   href: /windows/desktop/api/Winbase/nf-winbase-setmailslotinfo
-    - name: Intercambio dinámico de datos de red
+    - name: Red datos dinámicos Exchange
       href: network-dynamic-data-exchange.md
       items:
         - name: Acerca de DDE de red
@@ -40,13 +40,13 @@
           items:
             - name: Agente DDE de red
               href: network-dde-agent.md
-            - name: Recursos compartidos DDE
+            - name: Recursos compartidos de DDE
               href: dde-shares.md
             - name: Seguridad y recursos compartidos de confianza
               href: trusted-shares-and-security.md
-            - name: Administrar recursos compartidos DDE
+            - name: Administración de recursos compartidos de DDE
               href: managing-dde-shares.md
-        - name: Referencia DDE de red
+        - name: Referencia de DDE de red
           href: network-dde-reference.md
           items:
             - name: Funciones DDE de red
@@ -94,7 +94,7 @@
               items:
                 - name: Operaciones de canalización anónimas
                   href: anonymous-pipe-operations.md
-                - name: Herencia de controladores de canalización
+                - name: Herencia de identificador de canalización
                   href: pipe-handle-inheritance.md
                 - name: Seguridad de canalización anónima y derechos de acceso
                   href: anonymous-pipe-security-and-access-rights.md
@@ -105,26 +105,26 @@
                   href: pipe-names.md
                 - name: Modos de apertura de canalización con nombre
                   href: named-pipe-open-modes.md
-                - name: 'Tipos de canalización con nombre, lectura y modos de espera'
+                - name: 'Modos de tipo de canalización con nombre, lectura y espera'
                   href: named-pipe-type-read-and-wait-modes.md
                 - name: Instancias de canalización con nombre
                   href: named-pipe-instances.md
                 - name: Operaciones de canalización con nombre
                   href: named-pipe-operations.md
-                - name: E/s de canalización sincrónica y superpuesta
+                - name: E/S de canalización sincrónica y superpuesta
                   href: synchronous-and-overlapped-input-and-output.md
-                - name: Seguridad y derechos de acceso de la canalización con nombre
+                - name: Derechos de acceso y seguridad de canalización con nombre
                   href: named-pipe-security-and-access-rights.md
-                - name: Suplantar un cliente de canalización con nombre
+                - name: Suplantación de un cliente de canalización con nombre
                   href: impersonating-a-named-pipe-client.md
-        - name: Usar canalizaciones
+        - name: Uso de canalizaciones
           href: using-pipes.md
           items:
             - name: Servidor de canalización multiproceso
               href: multithreaded-pipe-server.md
-            - name: Servidor de canalización con nombre mediante e/s superpuestas
+            - name: Servidor de canalización con nombre que usa E/S superpuestas
               href: named-pipe-server-using-overlapped-i-o.md
-            - name: Servidor de canalización con nombre mediante rutinas de finalización
+            - name: Servidor de canalización con nombre que usa rutinas de finalización
               href: named-pipe-server-using-completion-routines.md
             - name: Cliente de canalización con nombre
               href: named-pipe-client.md

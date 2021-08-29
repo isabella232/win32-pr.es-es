@@ -3,19 +3,19 @@ title: Reproducir una pista de disco compacto
 description: Reproducir una pista de disco compacto
 ms.assetid: 05f68361-7fec-4c45-b434-a8b654f2d0c3
 keywords:
-- mciSendCommand función)
+- Función mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aba8e54337dc6a47db81fad125222a33e24cca7b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 48764ad0a79921ceb65e89d5adeaf22606d74103c853f7257f937c9919c32a10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038024"
 ---
 # <a name="playing-a-compact-disc-track"></a>Reproducir una pista de disco compacto
 
-En el siguiente ejemplo se abre un dispositivo de audio de CD, se reproduce la pista especificada por el parámetro *bTrack* y se cierra el dispositivo una vez completada la reproducción. Usa la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) .
+En el ejemplo siguiente se abre un dispositivo de audio de CD, se reproduce la pista especificada por el *parámetro bTrack* y se cierra el dispositivo una vez completada la reproducción. Usa la [**función mciSendCommand.**](/previous-versions//dd757160(v=vs.85))
 
 
 ```C++
@@ -77,8 +77,8 @@ DWORD playCDTrack(HWND hWndNotify, BYTE bTrack)
 
 
 
-Para especificar una posición relativa a una pista en un disco compacto, debe usar el formato de hora de pista/minuto/segundo/marco (TMSF).
+Para especificar una posición relativa a una pista en un disco compacto, debe usar el formato de tiempo pista/minuto/segundo/fotograma (TMSF).
 
- 
+ 
 
- 
+ 

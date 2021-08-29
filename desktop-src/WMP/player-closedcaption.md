@@ -1,9 +1,9 @@
 ---
-title: Player. closedCaption
+title: Player.closedCaption
 description: La propiedad closedCaption recupera el objeto ClosedCaption.
 ms.assetid: 09bb0fb0-bb02-43d1-af07-55389ee2b165
 keywords:
-- Media Player de Windows Player. closedCaption
+- Player.closedCaption Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfd3b074bdaf6c6d5617a55d6579a64f08ccb80c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c188ee65af0bd687dd8d64fe3fa6bbd62abac7158d30f595f89723b0df7891b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054413"
 ---
-# <a name="playerclosedcaption"></a>Player. closedCaption
+# <a name="playerclosedcaption"></a>Player.closedCaption
 
-La propiedad **closedCaption** recupera el objeto **closedCaption** .
+La **propiedad closedCaption** recupera el **objeto ClosedCaption.**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor* . **closedCaption**
+*player* . **closedCaption**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un objeto **ClosedCaption** de solo lectura.
+Esta propiedad es un objeto **ClosedCaption de solo** lectura.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -48,7 +48,7 @@ Esta propiedad es un objeto **ClosedCaption** de solo lectura.
 
 <dl> <dt>
 
-[**Objeto ClosedCaption**](closedcaption-object.md)
+[**ClosedCaption (objeto)**](closedcaption-object.md)
 </dt> <dt>
 
 [**Objeto Player**](player-object.md)

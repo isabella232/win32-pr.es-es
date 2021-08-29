@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_ENUMCOLUMN. columnid (propiedad)'
-title: JET_ENUMCOLUMN. columnid (propiedad)
+description: 'Más información sobre: JET_ENUMCOLUMN.columnid'
+title: JET_ENUMCOLUMN.columnid, propiedad
 TOCTitle: 'columnid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN.columnid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_enumcolumn.columnid(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7225cf5dbd9a4cefb7ae12ba417264d4bd5be938
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de8f84b43ae65fdf70a340092fb51234e74b0de92acdedc0014fd36a35560f7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118765994"
 ---
-# <a name="jet_enumcolumncolumnid-property"></a>JET_ENUMCOLUMN. columnid (propiedad)
+# <a name="jet_enumcolumncolumnid-property"></a>JET_ENUMCOLUMN.columnid, propiedad
 
 Obtiene el identificador de columnid que se enumeró.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_COLUMNID columnid { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ENUMCOLUMN (clase)](./jet-enumcolumn-class.md)
+[JET_ENUMCOLUMN clase](./jet-enumcolumn-class.md)
 
-[Miembros de JET_ENUMCOLUMN](./jet-enumcolumn-members.md)
+[JET_ENUMCOLUMN miembros](./jet-enumcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

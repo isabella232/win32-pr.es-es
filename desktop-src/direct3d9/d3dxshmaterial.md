@@ -1,7 +1,7 @@
 ---
-description: Características del material de la transferencia Radiance (PRT) precalculada del armónico (SH).
+description: Características del material de transferencia de radiancia precalutada (PRT) esférica (SH).
 ms.assetid: 2be49f96-ac61-46aa-8d56-d8eee8dca9ed
-title: Estructura D3DXSHMATERIAL (D3dx9mesh. h)
+title: Estructura D3DXSHMATERIAL (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 0600cc0c1ebe086f0d6679182125350b1ee8ca98
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4bfbf00c7d8654ad851ca8c691c9f028c09648219dbe76bb4ef07fe3b830e4d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849725"
 ---
-# <a name="d3dxshmaterial-structure"></a>Estructura D3DXSHMATERIAL
+# <a name="d3dxshmaterial-structure"></a>D3DXSHMATERIAL (estructura)
 
-Características del material de la transferencia Radiance (PRT) precalculada del armónico (SH).
+Características del material de transferencia de radiancia precalutada (PRT) esférica (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,72 +51,72 @@ Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-Difusión albedo de la superficie. Este valor se omite si el objeto es un reflejo.
+Albedo difuso de la superficie. Este valor se omite si el objeto es un reflejo.
 
 </dd> <dt>
 
 **bMirror**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Debe establecerse en **false**.
+Debe establecerse en **FALSE.**
 
 </dd> <dt>
 
-**bSubSurf**
+**bSubSub**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Establézcalo en **true** para habilitar la dispersión de subsuperficies; cualquier objeto que realiza la dispersión de subsuperficies no puede ser un reflejo.
+Establezca en **TRUE para** habilitar la dispersión de subsuelo; cualquier objeto que realiza la dispersión de subsuelo no puede ser un reflejo.
 
 </dd> <dt>
 
 **RelativeIndexOfRefraction**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-El Índice relativo de la refracción es la proporción entre dos índices absolutos de la refracción. Un índice de refracción es la proporción entre el seno del ángulo de la incidencia y el seno del ángulo de la refracción.
+El índice relativo de retracción es la relación entre dos índices absolutos de retracción. Un índice de retracción es la proporción del seno del ángulo de la contención con el seno del ángulo de retracción.
 
 </dd> <dt>
 
-**Absorbe**
+**Absorción**
 </dt> <dd>
 
 Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-El coeficiente de absorción es un parámetro de la ecuación de representación del volumen que se usa para modelar la propagación ligera en un medio participante.
+El coeficiente de absorción es un parámetro de la ecuación de representación del volumen que se usa para modelar la propagación de la luz en un medio participante.
 
 </dd> <dt>
 
-**ReducedScattering**
+**Reducción de la seguridad**
 </dt> <dd>
 
 Tipo: **[ **D3DCOLORVALUE**](d3dcolorvalue.md)**
 
 </dd> <dd>
 
-El coeficiente de dispersión reducido es un parámetro de la ecuación de representación del volumen que se usa para modelar la propagación ligera en un medio participante.
+El coeficiente de dispersión reducido es un parámetro de la ecuación de representación del volumen que se usa para modelar la propagación de la luz en un medio participante.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las escenas no espectrales usan el canal rojo de los materiales en lugar del valor de luminancia.
+Las escenas no espectrales usan el canal rojo de los materiales en lugar del valor de luminosidad.
 
-Para obtener más información acerca de PRT, consulte:
+Para obtener más información sobre PRT, vea:
 
--   Jensen, Henrik Wann, et al. SIGGRAPH: un modelo práctico para el transporte de luz de subsuperficie, 2001.
+-   Seg, Vak Wann, et al. Siggraph Proceedings: A Practical Model for Subsurface Light Transport, 2001.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -124,7 +124,7 @@ Para obtener más información acerca de PRT, consulte:
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -132,7 +132,7 @@ Para obtener más información acerca de PRT, consulte:
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  
