@@ -1,25 +1,25 @@
 ---
-description: 'Más información sobre: métodos JET_INDEXRANGE'
-title: Métodos JET_INDEXRANGE
+description: 'Más información acerca de: JET_INDEXRANGE métodos'
+title: JET_INDEXRANGE métodos
 TOCTitle: JET_INDEXRANGE methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_INDEXRANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexrange_methods(v=EXCHG.10)
 ms:contentKeyID: 55103628
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1c99c08a715888f4e43f8c697c43f1165b09553f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b65397b289930399c0ca5395396d3eff15e5d659beb31220bb635a0b2bc32566
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063405"
 ---
-# <a name="jet_indexrange-methods"></a>Métodos JET_INDEXRANGE
+# <a name="jet_indexrange-methods"></a>JET_INDEXRANGE métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_INDEXRANGE](./jet-indexrange-class.md) expone los siguientes miembros.
+El [JET_INDEXRANGE](./jet-indexrange-class.md) muestra los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,12 +35,12 @@ El tipo de [JET_INDEXRANGE](./jet-indexrange-class.md) expone los siguientes mie
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335178(v=exchg.10).md">ContentEquals</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335148(v=exchg.10).md">DeepClone</a></td>
-<td>Devuelve una copia en profundidad del objeto.</td>
+<td>Devuelve una copia en profundidad del objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -49,7 +49,7 @@ El tipo de [JET_INDEXRANGE](./jet-indexrange-class.md) expone los siguientes mie
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -59,7 +59,7 @@ El tipo de [JET_INDEXRANGE](./jet-indexrange-class.md) expone los siguientes mie
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ El tipo de [JET_INDEXRANGE](./jet-indexrange-class.md) expone los siguientes mie
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335179(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn335175(v=exchg.10).md">JET_INDEXRANGE</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335175(v=exchg.10).md">JET_INDEXRANGE</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +82,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEXRANGE (clase)](./jet-indexrange-class.md)
+[JET_INDEXRANGE clase](./jet-indexrange-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
 description: Representa una asociación entre un servicio y un elemento administrado que podría verse afectado por su ejecución.
 ms.assetid: 2fd9199f-9ab0-4c42-9708-d6cd6911f77a
-title: CIM_ServiceAffectsElement (clase)
+title: CIM_ServiceAffectsElement clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2e4dd4fe00d1ee4a537741ce69240413e78aca85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8d828686a4308d9e0d76c7dd31dabd0644fdd802058fefceeec603d586e9b6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899825"
 ---
-# <a name="cim_serviceaffectselement-class"></a>\_Clase ServiceAffectsElement de CIM
+# <a name="cim_serviceaffectselement-class"></a>Clase \_ Cim ServiceAffectsElement
 
 Representa una asociación entre un servicio y un elemento administrado que podría verse afectado por su ejecución.
 
@@ -43,13 +43,13 @@ class CIM_ServiceAffectsElement
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ServiceAffectsElement** tiene estos tipos de miembros:
+La **clase CIM \_ ServiceAffectsElement** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ServiceAffectsElement** tiene estas propiedades.
+La **clase CIM \_ ServiceAffectsElement** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Elemento administrado que se ve afectado por el servicio.
@@ -72,44 +72,44 @@ Elemento administrado que se ve afectado por el servicio.
 **AffectingElement**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ servicio CIM**
+Tipo de datos: **Servicio CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El servicio que está afectando al elemento administrado.
+Servicio que afecta al elemento administrado.
 
 </dd> <dt>
 
 **ElementEffects**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ServiceAffectsElement**.**OtherElementEffectsDescriptions**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ServiceAffectsElement**.**OtherElementEffectsDescriptions**")
 </dt> </dl>
 
-Efecto en el elemento administrado. Esta matriz corresponde a la matriz **OtherElementEffectsDescriptions** .
+Efecto en el elemento administrado. Esta matriz corresponde a la **matriz OtherElementEffectsDescriptions.**
 
-\- Uso exclusivo (2): ningún otro servicio puede tener esta asociación al elemento.
+\- Uso exclusivo (2): ningún otro servicio puede tener esta asociación con el elemento .
 
-\- Impacto en el rendimiento (3): desusado en favor de "consume", "mejora el rendimiento" o "degrada el rendimiento". La ejecución del servicio puede mejorar o degradar el rendimiento del elemento. Esto puede ser un efecto secundario de la ejecución o como una consecuencia prevista de los métodos proporcionados por el servicio.
+\- Impacto en el rendimiento (3): en desuso en favor de "Consumes", "Mejora el rendimiento" o "Degrada el rendimiento". La ejecución del servicio puede mejorar o degradar el rendimiento del elemento. Esto puede ser como efecto secundario de la ejecución o como consecuencia prevista de los métodos proporcionados por el servicio.
 
-\- Integridad de elemento (4): desusado en favor de "consume", "mejora la integridad" o "degrada la integridad". La ejecución del servicio puede mejorar o degradar la integridad del elemento. Esto puede ser un efecto secundario de la ejecución o como una consecuencia prevista de los métodos proporcionados por el servicio.
+\- Integridad de elementos (4): en desuso en favor de "Consumes", "Enhances Integrity" o "Degrades Integrity". La ejecución del servicio puede mejorar o degradar la integridad del elemento. Esto puede ser como efecto secundario de la ejecución o como consecuencia prevista de los métodos proporcionados por el servicio.
 
-\- Administra (5): el servicio administra el elemento.
+\- Administra (5): el servicio administra el elemento .
 
-\- Consume (6): la ejecución del servicio consume parte o todo el elemento asociado como consecuencia de la ejecución del servicio. Por ejemplo, el servicio puede consumir ciclos de CPU, lo que puede afectar al rendimiento o al almacenamiento, lo que puede afectar al rendimiento y a la integridad. (Por ejemplo, la falta de almacenamiento libre puede degradar la integridad reduciendo la capacidad de guardar el estado. ) "Consumes" se puede usar solo o junto con otros valores, en particular, "degrada el rendimiento" y "degrada la integridad".
+\- Consume (6): la ejecución del servicio consume parte o todo el elemento asociado como consecuencia de ejecutar el servicio. Por ejemplo, el servicio puede consumir ciclos de CPU, lo que puede afectar al rendimiento o Storage que pueden afectar tanto al rendimiento como a la integridad. (Por ejemplo, la falta de almacenamiento libre puede degradar la integridad al reducir la capacidad de guardar el estado. ) "Consumes" se puede usar solo o junto con otros valores, en particular, "Degrada el rendimiento" y "Degrada la integridad".
 
-"Administra" y no "consumes" se debe usar para reflejar los servicios de asignación que puede proporcionar un servicio.
+"Administra" y no "Consume" debe usarse para reflejar los servicios de asignación que puede proporcionar un servicio.
 
 \- Mejora la integridad (7): el servicio puede mejorar la integridad del elemento asociado.
 
@@ -130,7 +130,7 @@ Efecto en el elemento administrado. Esta matriz corresponde a la matriz **OtherE
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -144,7 +144,7 @@ Efecto en el elemento administrado. Esta matriz corresponde a la matriz **OtherE
 
 <span id="Performance_Impact"></span><span id="performance_impact"></span><span id="PERFORMANCE_IMPACT"></span>
 
-**Impacto** en el rendimiento (3)
+**Impacto en el** rendimiento (3)
 
 
 </dt> <dd></dd> <dt>
@@ -207,7 +207,7 @@ Efecto en el elemento administrado. Esta matriz corresponde a la matriz **OtherE
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (0x8000... 0XFFFF
+**Proveedor reservado** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -217,16 +217,16 @@ Efecto en el elemento administrado. Esta matriz corresponde a la matriz **OtherE
 **OtherElementEffectsDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ServiceAffectsElement**.**ElementEffects**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ServiceAffectsElement**.**ElementEffects**")
 </dt> </dl>
 
-Cada elemento de la matriz proporciona información adicional para el elemento correspondiente de la matriz **ElementEffects** . Se necesita una descripción para cualquier elemento de la matriz **ElementEffects** que esté establecido en **other** ("1").
+Cada elemento de la matriz proporciona información adicional para el elemento correspondiente en la **matriz ElementEffects.** Se requiere una descripción para cualquier elemento de la **matriz ElementEffects** que esté establecido en **Other** ("1").
 
 </dd> </dl>
 
@@ -238,8 +238,8 @@ Cada elemento de la matriz proporciona información adicional para el elemento c
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

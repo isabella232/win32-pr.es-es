@@ -1,7 +1,7 @@
 ---
 description: Identificador de clase (CLSID) del filtro.
 ms.assetid: a0bd50ea-54e6-4bdb-9453-f0d45a2a7f8f
-title: 'Miembro CBaseFilter:: m_clsid (Amfilter. h)'
+title: CBaseFilter::m_clsid miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f89200eea32b93dc814c4b1a30532ed1e1148b5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1903ece7cac625e5ac020dc09cb73e464365f4fe59155940411c254ca21b53c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079455"
 ---
-# <a name="cbasefilterm_clsid-member"></a>Miembro CLSID CBaseFilter:: m \_
+# <a name="cbasefilterm_clsid-member"></a>CBaseFilter::m \_ clsid miembro
 
 Identificador de clase (CLSID) del filtro.
 
@@ -42,8 +42,8 @@ CLSID m_clsid;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CLSID m_clsid;
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

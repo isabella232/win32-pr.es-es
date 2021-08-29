@@ -1,9 +1,9 @@
 ---
-title: Estructura NEWHEADER
-description: Contiene el número de componentes de icono o de cursor de un grupo de recursos. La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+title: NEWHEADER (estructura)
+description: Contiene el número de componentes de icono o cursor de un grupo de recursos. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 ms.assetid: 1549579a-b558-42a9-9b3b-5b382334221c
 keywords:
-- Menús de la estructura NEWHEADER y otros recursos
+- Menús de estructura NEWHEADER y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d215bc00ef414d4e626d3da657dcecfd7a8a6c8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8ce5407686d5e0e8ad4c0f17856241e9b47c70b2375f93f3b2b9046210d2faa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011775"
 ---
-# <a name="newheader-structure"></a>Estructura NEWHEADER
+# <a name="newheader-structure"></a>NEWHEADER (estructura)
 
-Contiene el número de componentes de icono o de cursor de un grupo de recursos. La definición de la estructura que se proporciona aquí solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+Contiene el número de componentes de icono o cursor de un grupo de recursos. La definición de estructura que se proporciona aquí es solo para una explicación; no está presente en ningún archivo de encabezado estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,29 +44,29 @@ typedef struct {
 **Reserved**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> <dt>
 
 **ResType**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-El tipo de recurso. Este miembro debe tener uno de los valores siguientes.
+El tipo de recurso. Este miembro debe tener uno de los siguientes valores.
 
 
 
 | Value                                                                                                                                                                                                       | Significado                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="RES_CURSOR"></span><span id="res_cursor"></span><dl> <dt>**Res \_ CURSOR**</dt> <dt>2</dt> </dl> | Tipo de recurso de cursor.<br/> |
-| <span id="RES_ICON"></span><span id="res_icon"></span><dl> <dt>**Res \_ ICONO**</dt> <dt>1</dt> </dl>       | Tipo de recurso de icono.<br/>   |
+| <span id="RES_CURSOR"></span><span id="res_cursor"></span><dl> <dt>**RES \_ CURSOR**</dt> <dt>2</dt> </dl> | Tipo de recurso cursor.<br/> |
+| <span id="RES_ICON"></span><span id="res_icon"></span><dl> <dt>**RES \_ ICONO**</dt> <dt>1</dt> </dl>       | Tipo de recurso de icono.<br/>   |
 
 
 
@@ -77,17 +77,17 @@ El tipo de recurso. Este miembro debe tener uno de los valores siguientes.
 **ResCount**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-El número de componentes de icono o de cursor en el grupo de recursos.
+Número de componentes de icono o cursor del grupo de recursos.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una o varias estructuras [**RESDIR**](resdir.md) siguen inmediatamente a la estructura **NEWHEADER** del archivo. res. El miembro **ResCount** especifica el número de estructuras **RESDIR** .
+Una o varias [**estructuras RESDIR**](resdir.md) siguen inmediatamente la **estructura NEWHEADER** en el archivo .res. El **miembro ResCount** especifica el número de estructuras **RESDIR.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Una o varias estructuras [**RESDIR**](resdir.md) siguen inmediatamente a la estr
 [**RESDIR**](resdir.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Recursos](resources.md)

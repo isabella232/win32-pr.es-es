@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_GETTOOLTIPS (commctrl. h)
-description: Recupera el identificador del control de información sobre herramientas secundario utilizado por un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la \_ macro GetToolTips de TreeView.
+title: TVM_GETTOOLTIPS mensaje (Commctrl.h)
+description: Recupera el identificador del control de información sobre herramientas secundario utilizado por un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro TreeView \_ GetToolTips.
 ms.assetid: 65e8189e-ae3e-4268-b1ed-bb0d88f2cbe3
 keywords:
-- TVM_GETTOOLTIPS controles de mensajes de Windows
+- TVM_GETTOOLTIPS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 305aaa05df5b72ffde709e4cf3b3e06d47c43448
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9f0166402c7605139d3e27fce17b94ad0afdffb66622f40da4adc3044b7023d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060175"
 ---
-# <a name="tvm_gettooltips-message"></a>\_Mensaje de GETTOOLTIPS TVM
+# <a name="tvm_gettooltips-message"></a>Mensaje \_ GETTOOLTIPS de TVM
 
-Recupera el identificador del control de información sobre herramientas secundario utilizado por un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**\_ GetToolTips de TreeView**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_gettooltips) .
+Recupera el identificador del control de información sobre herramientas secundario utilizado por un control de vista de árbol. Puede enviar este mensaje explícitamente o mediante la macro [**TreeView \_ GetToolTips.**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_gettooltips)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,11 +37,11 @@ Recupera el identificador del control de información sobre herramientas secunda
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador del control de información sobre herramientas secundario, o **null** si el control no usa información sobre herramientas.
+Devuelve el identificador al control de información sobre herramientas secundario o **NULL** si el control no usa información sobre herramientas.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se crean, los controles de vista de árbol crean automáticamente un control ToolTip secundario. Para hacer que un control de vista de árbol no use la información sobre herramientas, cree el control con el estilo [**TV \_ notooltips**](tree-view-control-window-styles.md) .
+Cuando se crean, los controles de vista de árbol crean automáticamente un control de información sobre herramientas secundario. Para que un control de vista de árbol no use información sobre herramientas, cree el control con el estilo [**\_ TVS NOTOOLTIPS.**](tree-view-control-window-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Cuando se crean, los controles de vista de árbol crean automáticamente un cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

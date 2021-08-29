@@ -1,7 +1,7 @@
 ---
-description: 'El método SetProperties especifica el número de búferes que se van a asignar y el tamaño de cada búfer. Este método invalida el método CBaseAllocator:: SetProperties.'
+description: El método SetProperties especifica el número de búferes que se asignarán y el tamaño de cada búfer. Este método invalida el método CBaseAllocator::SetProperties.
 ms.assetid: 8d419432-a9a7-44fb-b916-8dacd08eb6ec
-title: Método CImageAllocator. SetProperties (Winutil. h)
+title: Método CImageAllocator.SetProperties (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c04501fe3511d9cdd45f3513c68082d2ffece0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1924db012ece5ad475a26e75315254ab5228c9cd50aa1dac74d39430f976a367
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768215"
 ---
-# <a name="cimageallocatorsetproperties-method"></a>CImageAllocator. SetProperties (método)
+# <a name="cimageallocatorsetproperties-method"></a>Método CImageAllocator.SetProperties
 
-El `SetProperties` método especifica el número de búferes que se van a asignar y el tamaño de cada búfer. Este método invalida el método [**CBaseAllocator:: SetProperties**](cbaseallocator-setproperties.md) .
+El `SetProperties` método especifica el número de búferes que se asignarán y el tamaño de cada búfer. Este método invalida el [**método CBaseAllocator::SetProperties.**](cbaseallocator-setproperties.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ HRESULT SetProperties(
 *pRequest* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ propiedades de asignador**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos de búfer.
+Puntero a una [**estructura ALLOCATOR \_ PROPERTIES**](/windows/win32/api/strmif/ns-strmif-allocator_properties) que contiene los requisitos del búfer.
 
 </dd> <dt>
 
 *pActual* 
 </dt> <dd>
 
-Puntero a una estructura de **\_ propiedades de asignador** que recibe las propiedades de búfer reales.
+Puntero a una **estructura ALLOCATOR \_ PROPERTIES** que recibe las propiedades de búfer reales.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama a [**CImageAllocator:: CheckSizes**](cimageallocator-checksizes.md) para validar el tamaño de búfer solicitado. También llama a la versión de la clase base de `SetProperties` .
+Este método llama [**a CImageAllocator::CheckSizes**](cimageallocator-checksizes.md) para validar el tamaño de búfer solicitado. También llama a la versión de clase base de `SetProperties` .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Este método llama a [**CImageAllocator:: CheckSizes**](cimageallocator-checksiz
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Este método llama a [**CImageAllocator:: CheckSizes**](cimageallocator-checksiz
 
 <dl> <dt>
 
-[**Clase CImageAllocator**](cimageallocator.md)
+[**CImageAllocator (clase)**](cimageallocator.md)
 </dt> </dl>
 
  

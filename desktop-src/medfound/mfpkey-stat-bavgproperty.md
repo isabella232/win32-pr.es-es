@@ -1,17 +1,17 @@
 ---
 description: Especifica la ventana de búfer promedio, en milisegundos, de una secuencia codificada.
 ms.assetid: 96bf43c3-5a62-4157-a7bc-2302fd69c522
-title: Propiedad MFPKEY_STAT_BAVG (Wmcodecdsp. h)
+title: MFPKEY_STAT_BAVG propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 106343b74985c85e962c591234cd319ab899b6be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 58058dbb32fbec2c590f0032a0ec04847bc255c83a8ad732eedf3961bc35928f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113175"
 ---
-# <a name="mfpkey_stat_bavg-property"></a>\_ \_ Propiedad BAVG de MFPKEY STAT
+# <a name="mfpkey_stat_bavg-property"></a>Propiedad MFPKEY \_ STAT \_ BAVG
 
 Especifica la ventana de búfer promedio, en milisegundos, de una secuencia codificada. Solo lectura.
 
@@ -23,7 +23,7 @@ Especifica la ventana de búfer promedio, en milisegundos, de una secuencia codi
 
 **VT \_ I4**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para determinar la ventana de búfer promedio de una secuencia codificada, lea esta propiedad al final de la codificación.
 
@@ -33,8 +33,8 @@ Para determinar la ventana de búfer promedio de una secuencia codificada, lea e
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ Para determinar la ventana de búfer promedio de una secuencia codificada, lea e
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

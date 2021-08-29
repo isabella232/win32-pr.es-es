@@ -1,52 +1,52 @@
 ---
-title: Cómo implementar la información sobre herramientas de seguimiento
-description: La información sobre herramientas de seguimiento permanece visible hasta que la aplicación la cierra explícitamente, y puede cambiar la posición de la pantalla de forma dinámica. Son compatibles con la versión 4,70 y versiones posteriores de los controles comunes.
+title: Cómo implementar información sobre herramientas de seguimiento
+description: La información sobre herramientas de seguimiento permanece visible hasta que la aplicación las cierra explícitamente y puede cambiar la posición en la pantalla dinámicamente. Son compatibles con la versión 4.70 y posteriores de los controles comunes.
 ms.assetid: 4BE1F9E6-92B6-4CA7-B89A-F2162BC86366
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a614fef7ed69cd8c2763f9370ce0011d51eb0c82
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a9b2aaf7475f6a4823e0628ab7010ae32bb8424ef0e90e52396ee20cbc7c7e35
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085604"
 ---
-# <a name="how-to-implement-tracking-tooltips"></a>Cómo implementar la información sobre herramientas de seguimiento
+# <a name="how-to-implement-tracking-tooltips"></a>Cómo implementar información sobre herramientas de seguimiento
 
-La información sobre herramientas de seguimiento permanece visible hasta que la aplicación la cierra explícitamente, y puede cambiar la posición de la pantalla de forma dinámica. Son compatibles con la [versión 4,70](common-control-versions.md) y versiones posteriores de los controles comunes.
+La información sobre herramientas de seguimiento permanece visible hasta que la aplicación las cierra explícitamente y puede cambiar la posición en la pantalla dinámicamente. Son compatibles con la [versión 4.70](common-control-versions.md) y posteriores de los controles comunes.
 
-Para crear una información sobre herramientas de seguimiento, incluya la \_ marca de seguimiento ttf en el miembro **uFlags** de la estructura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) al enviar el mensaje [**TTM \_ ADDTOOL**](ttm-addtool.md) .
+Para crear una información sobre herramientas de seguimiento, incluya la marca TTF TRACK en el \_ **miembro uFlags** de la [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) al enviar el [**mensaje \_ ADDTOOL de TTM.**](ttm-addtool.md)
 
-La aplicación debe activar (Mostrar) y desactivar (ocultar) manualmente la información sobre herramientas de seguimiento mediante el envío de un mensaje de [**TTM \_ TRACKACTIVATE**](ttm-trackactivate.md) . Mientras que la información sobre herramientas de seguimiento está activa, la aplicación debe especificar la ubicación de la información sobre herramientas mediante el envío de mensajes de [**TTM \_ TRACKPOSITION**](ttm-trackposition.md) al control ToolTip. Dado que la aplicación controla tareas como colocar la información sobre herramientas, el seguimiento de la información sobre herramientas no utiliza la marca de **\_ subclase ttf** ni el mensaje [**\_ RELAYEVENT de TTM**](ttm-relayevent.md) .
+La aplicación debe activar (mostrar) y desactivar (ocultar) manualmente una información sobre herramientas de seguimiento mediante el envío de un [**mensaje \_ TRACKACTIVATE de TTM.**](ttm-trackactivate.md) Mientras la información sobre herramientas de seguimiento está activa, la aplicación debe especificar la ubicación de la información sobre herramientas mediante el envío de mensajes [**\_ TRACKPOSITION de TTM**](ttm-trackposition.md) al control de información sobre herramientas. Dado que la aplicación controla tareas como colocar la información sobre herramientas, la información sobre herramientas de seguimiento no usa la marca **\_ SUBCLASS** de TTF ni el mensaje [**\_ RELAYEVENT de TTM.**](ttm-relayevent.md)
 
-El [**mensaje \_ TRACKPOSITION de TTM**](ttm-trackposition.md) hace que el control de información sobre herramientas muestre la ventana con uno de los dos estilos de colocación:
+El [**mensaje \_ TRACKPOSITION de TTM**](ttm-trackposition.md) hace que el control de información sobre herramientas muestre la ventana con uno de los dos estilos de selección de ubicación:
 
--   De forma predeterminada, la información sobre herramientas se muestra junto a la herramienta correspondiente en una posición que el control elige. La ubicación elegida es relativa a las coordenadas que se proporcionan con este mensaje.
--   Si incluye el valor **\_ absoluto de ttf** en el miembro de la estructura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) , la información sobre herramientas se muestra en la ubicación de píxeles especificada en el mensaje. En este caso, el control no intenta cambiar la ubicación de la ventana de información sobre herramientas de las coordenadas proporcionadas.
+-   De forma predeterminada, la información sobre herramientas se muestra junto a la herramienta correspondiente en una posición que elija el control. La ubicación elegida es relativa a las coordenadas que se proporcionan mediante este mensaje.
+-   Si incluye el valor **ABSOLUTO de TTF \_** en el miembro de la estructura [**TOOLINFO,**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) la información sobre herramientas se muestra en la ubicación de píxeles especificada en el mensaje. En este caso, el control no intenta cambiar la ubicación de la ventana de información sobre herramientas de las coordenadas que proporcione.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="implement-in-place-tooltips"></a>Implementar In-Place información sobre herramientas
+### <a name="implement-in-place-tooltips"></a>Implementación de In-Place información sobre herramientas
 
-El miembro **uFlags** de la estructura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) que se usa en el ejemplo incluye la **marca \_ absoluta ttf** . Sin esta marca, el control ToolTip elige dónde Mostrar la información sobre herramientas y su posición relativa al cuadro de diálogo puede cambiar repentinamente cuando se mueve el puntero del mouse.
+El **miembro uFlags** de la [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) que se usa en el ejemplo incluye la **marca TTF \_ ABSOLUTE.** Sin esta marca, el control de información sobre herramientas elige dónde mostrar la información sobre herramientas y su posición con respecto al cuadro de diálogo puede cambiar repentinamente a medida que se mueve el puntero del mouse.
 
 > [!Note]  
 > `g_toolItem` es una estructura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) global.
 
- 
+ 
 
-En el ejemplo siguiente se muestra cómo crear un control de información sobre herramientas de seguimiento. En el ejemplo se especifica el área de cliente completa de la ventana principal como la herramienta.
+En el ejemplo siguiente se muestra cómo crear un control de información sobre herramientas de seguimiento. En el ejemplo se especifica el área de cliente completa de la ventana principal como herramienta.
 
 
 ```C++
@@ -85,13 +85,13 @@ HWND CreateTrackingToolTip(int toolID, HWND hDlg, WCHAR* pText)
 
 
 
-### <a name="window-procedure-implementation"></a>Implementación del procedimiento de ventana
+### <a name="window-procedure-implementation"></a>Implementación de procedimientos de ventana
 
-Cuando el puntero del mouse se encuentra dentro del área cliente, la información sobre herramientas está activa y muestra las coordenadas del cursor, tal como se muestra en la siguiente ilustración.
+Cuando el puntero del mouse está dentro del área de cliente, la información sobre herramientas está activa y muestra las coordenadas del cursor, como se muestra en la ilustración siguiente.
 
-![captura de pantalla de un cuadro de diálogo; la información sobre herramientas muestra las coordenadas x e y del puntero del mouse](images/tt-tracking.png)
+![captura de pantalla de un cuadro de diálogo; una información sobre herramientas muestra las coordenadas x e y del puntero del mouse](images/tt-tracking.png)
 
-El siguiente código de ejemplo se encuentra en el procedimiento de ventana de un cuadro de diálogo que muestra la información sobre herramientas de seguimiento creada en el ejemplo anterior. La variable booleana global *g \_ TrackingMouse* se usa para determinar si es necesario reactivar la información sobre herramientas y restablecer el seguimiento del mouse para que se notifique a la aplicación cuando el puntero del mouse salga del área cliente del cuadro de diálogo.
+El código de ejemplo siguiente es del procedimiento de ventana de un cuadro de diálogo que muestra la información sobre herramientas de seguimiento creada en el ejemplo anterior. La variable booleana global *g \_ TrackingMouse* se usa para determinar si es necesario reactivar la información sobre herramientas y restablecer el seguimiento del mouse para que la aplicación se notifique cuando el puntero del mouse salga del área de cliente del cuadro de diálogo.
 
 
 ```
@@ -162,12 +162,12 @@ case WM_MOUSEMOVE:
 
 <dl> <dt>
 
-[Usar controles ToolTip](using-tooltip-contro.md)
+[Uso de controles de información sobre herramientas](using-tooltip-contro.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

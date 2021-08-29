@@ -11,23 +11,23 @@ api_name:
 - Compression
 api_type:
 - Schema
-ms.openlocfilehash: 0da6665f69c2791669f75b91e847081dbcc351e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9715114bc44cebef9f342795e2c46283b8737c2478d9af9bd983deca50d3114e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959855"
 ---
 # <a name="compression-contexttype-element"></a>Elemento Compression (contextType)
 
-El elemento **Compression (contextType)** especifica si se usará la compresión en el vínculo de datos para el encabezado y la transferencia de datos.
+El **elemento Compression (contextType)** especifica si se usará la compresión en el vínculo de datos para el encabezado y la transferencia de datos.
 
-Este elemento puede ser uno de los valores siguientes.
+Este elemento puede ser uno de los siguientes valores.
 
 | Value     | Significado                       |
 |-----------|-------------------------------|
-| PERMITE  | Se usará la compresión.     |
-| ACTIVA | No se usará la compresión. |
+| "ENABLE"  | Se usará la compresión.     |
+| "DISABLE" | No se usará la compresión. |
 
 
 
@@ -52,7 +52,7 @@ Este elemento es opcional. Si no se especifica este elemento, el sistema de band
 </xs:element>
 ```
 
-El elemento **Compression** se define mediante el tipo complejo de [**contextType**](schema-contexttype-complextype.md) .
+El **elemento Compression** se define mediante el tipo complejo [**contextType.**](schema-contexttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ El elemento **Compression** se define mediante el tipo complejo de [**contextTyp
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 
@@ -78,7 +78,7 @@ El elemento **Compression** se define mediante el tipo complejo de [**contextTyp
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Contexto (MBNProfile)**](schema-context-mbnprofile-element.md)
+[**Context (MBNProfile)**](schema-context-mbnprofile-element.md)
 </dt> </dl>
 
  

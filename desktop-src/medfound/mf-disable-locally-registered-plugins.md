@@ -1,17 +1,17 @@
 ---
 description: Especifica si los complementos registrados localmente están deshabilitados.
 ms.assetid: 67108955-1EDF-4AAB-8B9A-25926F8B5E62
-title: MF_DISABLE_LOCALLY_REGISTERED_PLUGINS atributo (Mfidl. h)
+title: MF_DISABLE_LOCALLY_REGISTERED_PLUGINS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b5884d9e3ef128bbd27e82f2ec4cc96eb48ec6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 802d36d8c342ba6d883f82a5492b67323ca45adedef9e78dc3e2938b487efd01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120013205"
 ---
-# <a name="mf_disable_locally_registered_plugins-attribute"></a>MF \_ deshabilitar el \_ \_ atributo de \_ complementos registrados localmente
+# <a name="mf_disable_locally_registered_plugins-attribute"></a>Atributo MF \_ DISABLE \_ LOCALLY \_ REGISTERED \_ PLUGINS
 
 Especifica si los complementos registrados localmente están deshabilitados.
 
@@ -19,9 +19,9 @@ Especifica si los complementos registrados localmente están deshabilitados.
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Establezca este atributo en **true** para evitar que el cargador de topología MF Inserte transformaciones registradas localmente.
+Establezca este atributo en **TRUE para** evitar que el cargador de topologías MF inserte transformaciones registradas localmente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,9 +29,9 @@ Establezca este atributo en **true** para evitar que el cargador de topología M
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Establezca este atributo en **true** para evitar que el cargador de topología M
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de tipo de medio](media-type-attributes.md)

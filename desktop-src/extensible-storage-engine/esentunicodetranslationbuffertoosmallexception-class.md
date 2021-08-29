@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentUnicodeTranslationBufferTooSmallException'
+description: 'Más información sobre: Clase EsentUnicodeTranslationBufferTooSmallException'
 title: Clase EsentUnicodeTranslationBufferTooSmallException
 TOCTitle: EsentUnicodeTranslationBufferTooSmallException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentUnicodeTranslationBufferTooSmallException
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 980ddc1fcbe67657791b8cc5234b4c2e1ac57110
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aca67981671571dc75b1a9da29c933947856db01ba311ef89dc6e07079a08e6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834705"
 ---
 # <a name="esentunicodetranslationbuffertoosmallexception-class"></a>Clase EsentUnicodeTranslationBufferTooSmallException
 
@@ -39,16 +39,16 @@ Clase base para JET_err. Excepciones UnicodeTranslationBufferTooSmall.
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentObsoleteException](./esentobsoleteexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentUnicodeTranslationBufferTooSmallException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentObsoleteException](./esentobsoleteexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentUnicodeTranslationBufferTooSmallException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -74,4 +74,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentUnicodeTranslationBufferTooSmallException](./esentunicodetranslationbuffertoosmallexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

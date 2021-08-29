@@ -1,9 +1,9 @@
 ---
-title: Mensaje de IPM_CLEARADDRESS (commctrl. h)
-description: Borra el contenido del control de dirección IP.
+title: IPM_CLEARADDRESS mensaje (Commctrl.h)
+description: Borra el contenido del control de direcciones IP.
 ms.assetid: 7ac3ec31-ee34-44af-b012-a7dc4246a847
 keywords:
-- IPM_CLEARADDRESS controles de mensajes de Windows
+- IPM_CLEARADDRESS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dde87ee16d21314e7ca1bad3fd9ee51abc34073
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d0cc04237887d52a4643c8a290d29f0f4cbaac789d33a944f9d7b776140c796
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120085585"
 ---
-# <a name="ipm_clearaddress-message"></a>\_Mensaje CLEARADDRESS de IPM
+# <a name="ipm_clearaddress-message"></a>Mensaje \_ CLEARADDRESS de IPM
 
-Borra el contenido del control de dirección IP.
+Borra el contenido del control de direcciones IP.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Borra el contenido del control de dirección IP.
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ No se utiliza el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

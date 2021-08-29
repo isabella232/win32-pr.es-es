@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RSTINFO. lgposStop'
-title: Propiedad JET_RSTINFO. lgposStop
+description: 'Más información sobre: JET_RSTINFO.lgposStop'
+title: JET_RSTINFO.lgposStop, propiedad
 TOCTitle: 'lgposStop property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RSTINFO.lgposStop
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo.lgposstop(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 08823de30cfe13497a4bd42073688bc739d80acf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d061f3731db5ad5f1bd72d2612cf1ec1002bdf97f25f7e81eec5dd58da9b3b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945475"
 ---
-# <a name="jet_rstinfolgposstop-property"></a>Propiedad JET_RSTINFO. lgposStop
+# <a name="jet_rstinfolgposstop-property"></a>JET_RSTINFO.lgposStop, propiedad
 
 Obtiene o establece la posición del registro en la que se va a detener la recuperación.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_LGPOS lgposStop { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RSTINFO (clase)](./jet-rstinfo-class.md)
+[JET_RSTINFO clase](./jet-rstinfo-class.md)
 
-[Miembros de JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO miembros](./jet-rstinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

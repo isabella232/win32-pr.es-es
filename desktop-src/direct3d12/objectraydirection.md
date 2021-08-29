@@ -1,5 +1,5 @@
 ---
-description: Dirección del espacio de objeto del rayo actual.
+description: Dirección del espacio del objeto para el rayo actual.
 ms.assetid: ''
 title: ObjectRayDirection
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - ObjectRayDirection
 api_type:
 - NA
-ms.openlocfilehash: 1cc291a33f91bf7fc0565596bdd075a86e193246
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 780acd5edcf4b40167048b1d2a52c54b6e581b0e5ce23ee18eead46efdcb1d8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279915"
 ---
 # <a name="objectraydirection"></a>ObjectRayDirection
 
-Dirección del espacio de objeto del rayo actual. El espacio de objeto hace referencia al espacio de la estructura de aceleración de nivel inferior actual.
+Dirección del espacio del objeto para el rayo actual. Espacio de objeto hace referencia al espacio de la estructura de aceleración de nivel inferior actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,9 +32,9 @@ float3 ObjectRayDirection();
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador raytracing:
+Se puede llamar a esta función desde los siguientes tipos de sombreador:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)

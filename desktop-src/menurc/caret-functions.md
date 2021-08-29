@@ -4,12 +4,12 @@ description: Funciones de caret
 ms.assetid: 26d5dfcb-f932-463b-b643-eec780cb4027
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f18f21e931283d19e2df52aea146d71caecc506c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 49405ad8e823dd3a48dacf5f72243ac37bb2e1160ff7cc5f6efb10748e88cd40
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060045"
 ---
 # <a name="caret-functions"></a>Funciones de caret
 

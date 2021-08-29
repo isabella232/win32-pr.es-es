@@ -1,11 +1,11 @@
 ---
-title: ISearchResult Doverb (método)
-description: Reservado. | ISearchResult Doverb (método)
+title: Método ISearchResult DoVerb
+description: Reservado. | Método ISearchResult DoVerb
 ms.assetid: 74a2d4a5-14df-48fa-84f1-8064d509ba2f
 keywords:
-- Método Doverb heredado de las características del entorno de Windows
-- Método Doverb heredado características del entorno de Windows, interfaz ISearchResult
-- Interfaz ISearchResult características del entorno heredado de Windows, método Doverb
+- Características heredadas del entorno de Windows DoVerb
+- Método DoVerb Legacy Windows Environment Features , ISearchResult (Interfaz ISearchResult)
+- ISearchResult interface Legacy Windows Environment Features , DoVerb method
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d0626e6e9db80f77b51f7bcf22d6d2c26a0f85cf
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b6b55f47d2a5872079bfbe9a54bd23275c4f134e0345dd94dd97f945d29adc5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014285"
 ---
-# <a name="isearchresultdoverb-method"></a>ISearchResult::D método oVerb
+# <a name="isearchresultdoverb-method"></a>ISearchResult::D oVerb (método)
 
 Este método no se implementa.
 

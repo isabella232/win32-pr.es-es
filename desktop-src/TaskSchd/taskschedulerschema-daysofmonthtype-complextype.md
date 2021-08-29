@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de daysOfMonthType
+title: tipo complejo daysOfMonthType
 description: Define el elemento secundario y la información de secuenciación para el elemento DaysOfMonth (monthlyScheduleType).
 ms.assetid: 8258c090-c836-497e-8e5b-db4782277822
 keywords:
-- tipo complejo de daysOfMonthType Programador de tareas
+- Tipo complejo daysOfMonthType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f1459528b47bf01a9e336b758b739c3f5751ee1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a32f2d0b3084e5146e53370d1771018a5d27a025f5ea419a61d8c39804d5611a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010855"
 ---
-# <a name="daysofmonthtype-complex-type"></a>Tipo complejo de daysOfMonthType
+# <a name="daysofmonthtype-complex-type"></a>tipo complejo daysOfMonthType
 
-Define el elemento secundario y la información de secuenciación para el elemento [**DaysOfMonth (monthlyScheduleType)**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md) .
+Define el elemento secundario y la información de secuenciación para [**el elemento DaysOfMonth (monthlyScheduleType).**](taskschedulerschema-daysofmonth-monthlyscheduletype-element.md)
 
 ``` syntax
 <xs:complexType name="daysOfMonthType">
@@ -42,7 +42,7 @@ Define el elemento secundario y la información de secuenciación para el elemen
 
 | Elemento                                                        | Tipo                                                                    | Descripción                                                          |
 |----------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [**Diariamente**](taskschedulerschema-day-daysofmonthtype-element.md) | [**dayOfMonthType**](taskschedulerschema-dayofmonthtype-simpletype.md) | Especifica un día del mes durante el que se ejecuta la tarea. <br/> |
+| [**Día**](taskschedulerschema-day-daysofmonthtype-element.md) | [**dayOfMonthType**](taskschedulerschema-dayofmonthtype-simpletype.md) | Especifica un día del mes durante el que se ejecuta la tarea. <br/> |
 
 
 
@@ -52,8 +52,8 @@ Define el elemento secundario y la información de secuenciación para el elemen
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -61,7 +61,7 @@ Define el elemento secundario y la información de secuenciación para el elemen
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

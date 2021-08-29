@@ -1,6 +1,6 @@
 ---
 title: Máscara táctil
-description: Valores que pueden aparecer en el campo touchMask de la estructura POINTER_TOUCH_INFO.
+description: Valores que pueden aparecer en el campo touchMask de la POINTER_TOUCH_INFO estructura.
 ms.assetid: 23AD50C8-C769-48D6-9F27-DB2755C03D5C
 topic_type:
 - apiref
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 5ac389894d9096b389af127685feb9a2d81756ea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3643b30f378e4a6dacae751e9778f57d39a19da9a7fddfdfa48bd2e2acfac464
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015215"
 ---
 # <a name="touch-mask"></a>Máscara táctil
 
-Valores que pueden aparecer en el campo **touchMask** de la estructura [**POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) .
+Valores que pueden aparecer en el **campo touchMask** de la [**POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) estructura.
 
 <dl> <dt>
 
@@ -49,7 +49,7 @@ Predeterminada. Ninguno de los campos opcionales es válido.
 
 
 
-el **rcContact** de la estructura de [**POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) es válido.
+**rcContact** de la [**POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) estructura es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ el **rcContact** de la estructura de [**POINTER_TOUCH_INFO**](/previous-versions
 
 
 
-la **orientación** de la estructura [**POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) es válida.
+**la** orientación de [**la POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) estructura es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -75,7 +75,7 @@ la **orientación** de la estructura [**POINTER_TOUCH_INFO**](/previous-versions
 
 
 
-la **presión** de la estructura [**POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) es válida.
+**la** presión de la [**POINTER_TOUCH_INFO**](/previous-versions/windows/desktop/api) estructura es válida.
 
 
 </dt> </dl> </dd> </dl>
@@ -86,9 +86,9 @@ la **presión** de la estructura [**POINTER_TOUCH_INFO**](/previous-versions/win
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

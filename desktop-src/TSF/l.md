@@ -1,18 +1,18 @@
 ---
-title: L (marco de trabajo de servicios de texto)
+title: L (Text Services Framework)
 description: Página de glosario
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: bff7bd4e-aef3-4865-828d-6a1e0a5ff35a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 590334f5aaea91a557e6a31948d960a83e4f92ae
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 70a335bdce23740a3416c7ffde600ae937b6d438ab914ad9419adf502c6716c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105685836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119406464"
 ---
-# <a name="l-text-services-framework"></a>L (marco de trabajo de servicios de texto)
+# <a name="l-text-services-framework"></a>L (Text Services Framework)
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: La \_ función TSPI lineDropNoOwner está obsoleta. TAPI ya no quita automáticamente una llamada si no se puede identificar ningún propietario inicial, con el fin de acomodar el control distribuido de llamadas entre varios equipos cliente en un entorno cliente/servidor.
+description: La función \_ lineDropNoOwner de TSPI está obsoleta. TAPI ya no quita automáticamente una llamada si no se puede identificar ningún propietario inicial, con el fin de dar cabida al control distribuido de las llamadas en varios equipos cliente en un entorno de cliente/servidor.
 ms.assetid: 43cdb118-c80b-4d52-bd0f-f4ad46e10b85
 title: TSPI_lineDropNoOwner
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1fea496daa65e61c2f15965ee8d93d7bd0e8882
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10aefccee58d28164281fe381abd58362b15b157cc901cb6851512211a9f00ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012155"
 ---
-# <a name="tspi_linedropnoowner"></a>TSPI \_ lineDropNoOwner
+# <a name="tspi_linedropnoowner"></a>Línea \_ TSPIDropNoOwner
 
-La función **TSPI \_ lineDropNoOwner** está obsoleta. TAPI ya no quita automáticamente una llamada si no se puede identificar ningún propietario inicial, con el fin de acomodar el control distribuido de llamadas entre varios equipos cliente en un entorno cliente/servidor.
+La **función \_ lineDropNoOwner de TSPI** está obsoleta. TAPI ya no quita automáticamente una llamada si no se puede identificar ningún propietario inicial, con el fin de dar cabida al control distribuido de las llamadas en varios equipos cliente en un entorno de cliente/servidor.
 
  
 

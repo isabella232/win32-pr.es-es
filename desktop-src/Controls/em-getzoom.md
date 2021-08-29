@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETZOOM (RichEdit. h)
-description: Obtiene la relación de zoom actual. La ración de zoom siempre está entre 1/64 y 64. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+title: EM_GETZOOM mensaje (Richedit.h)
+description: Obtiene la relación de zoom actual. La relación de zoom siempre está entre 1/64 y 64. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 ms.assetid: d4a1daee-4af7-44d1-80d6-0fcaaf3672a8
 keywords:
-- EM_GETZOOM controles de mensajes de Windows
+- EM_GETZOOM controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40a88aa96787e1fda5cdeb8f77f478a4d51635cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 874feba3022571a69f816a94bc5f56cb29a94929c47a2a8d408b1c8fac7b26ef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438115"
 ---
-# <a name="em_getzoom-message"></a>\_Mensaje GETZOOM em
+# <a name="em_getzoom-message"></a>Mensaje \_ EM GETZOOM
 
-Obtiene la relación de zoom actual para un control de edición de varias líneas o un control Rich Edit. La ración de zoom siempre está entre 1/64 y 64.
+Obtiene la relación de zoom actual para un control de edición multilínea o un control de edición enriquecido. La relación de zoom siempre está entre 1/64 y 64.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,7 +33,7 @@ Obtiene la relación de zoom actual para un control de edición de varias línea
 *wParam* 
 </dt> <dd>
 
-Recibe el numerador de la relación de zoom.
+Recibe el numerador de la proporción de zoom.
 
 </dd> <dt>
 
@@ -46,11 +46,11 @@ Recibe el denominador de la relación de zoom.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El mensaje devuelve **true** si se procesa el mensaje, que será si *wParam* e *lParam* no son **null**.
+El mensaje devuelve **TRUE** si se procesa el mensaje, que será si *wParam* y *lParam* no son **NULL.**
 
 ## <a name="remarks"></a>Observaciones
 
-**Editar:** Compatible con Windows 10 1809 y versiones posteriores. El control de edición debe tener el conjunto de estilo extendido **es \_ ex \_** para el que este mensaje tiene un efecto, vea [Edit control Extended Styles](edit-control-window-extended-styles.md). Para obtener información sobre el control de edición, vea [controles de edición](edit-controls.md).
+**Editar:** Compatible con Windows 10 1809 y versiones posteriores. El control de edición debe tener el estilo extendido **ES \_ EX \_ ZOOMABLE** establecido; para que este mensaje suba efecto, vea [Editar estilos extendidos de control](edit-control-window-extended-styles.md). Para obtener información sobre el control de edición, vea [Editar controles](edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,10 +58,10 @@ El mensaje devuelve **true** si se procesa el mensaje, que será si *wParam* e *
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Redistribuible<br/>          | Edición enriquecida 3,0<br/>                                                              |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h/commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Redistribuible<br/>          | Rich Edit 3.0<br/>                                                              |
+| Header<br/>                   | <dl> <dt>Richedit.h/Commctrl.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ El mensaje devuelve **true** si se procesa el mensaje, que será si *wParam* e *
 
 <dl> <dt>
 
-[**\_SETZOOM em**](em-setzoom.md)
+[**EM \_ SETZOOM**](em-setzoom.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 019b2fa7-fbaf-45d6-b5ff-4eefbae2e57a
 title: Documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 885446ff8538ce463aa18ae2d4f3ddd522a82127
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 48de37d72f0d48dfbf04edda1dbe1253101c24519e28ee2f56a84da0f92afed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119946955"
 ---
 # <a name="document"></a>Documento
 

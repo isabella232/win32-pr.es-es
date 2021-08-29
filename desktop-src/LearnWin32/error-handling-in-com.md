@@ -1,17 +1,17 @@
 ---
-title: Control de errores en COM (Introducción a Win32 y C++)
-description: Control de errores en COM (Introducción a Win32 y C++)
+title: Control de errores en COM (Introducción con Win32 y C++)
+description: Control de errores en COM (Introducción con Win32 y C++)
 ms.assetid: 022ca652-59d2-4513-9d73-1c6d8688c478
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b69cf89170087469fa6ef8587fb5377e6374f6a8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bfe85dc381ac35e75a3ee2f2fb1926a6ba6cb60c576c3d8250f457079f8a3bb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119897465"
 ---
-# <a name="error-handling-in-com-get-started-with-win32-and-c"></a>Control de errores en COM (Introducción a Win32 y C++)
+# <a name="error-handling-in-com-get-started-with-win32-and-c"></a>Control de errores en COM (Introducción con Win32 y C++)
 
 COM usa **valores HRESULT** para indicar el éxito o error de una llamada de método o función. Varios encabezados sdk definen varias **constantes HRESULT.** En WinError.h se define un conjunto común de códigos para todo el sistema. En la tabla siguiente se muestran algunos de esos códigos de retorno de todo el sistema.
 
@@ -19,7 +19,7 @@ COM usa **valores HRESULT** para indicar el éxito o error de una llamada de mé
 
 | Constante            | Valor numérico | Descripción                                          |
 |---------------------|---------------|------------------------------------------------------|
-| **E \_ ACCESSDENIED** | 0x80070005    | Acceso denegado.                                       |
+| **E \_ ACCESSDENIED** | 0x80070005    | Acceso denegado:                                       |
 | **E \_ FAIL**         | 0x80004005    | Error no especificado.                                   |
 | **E \_ INVALIDARG**   | 0x80070057    | Valor de parámetro no válido.                             |
 | **E \_ OUTOFMEMORY**  | 0x8007000E    | Memoria insuficiente                                       |
@@ -32,7 +32,7 @@ COM usa **valores HRESULT** para indicar el éxito o error de una llamada de mé
 
  
 
-Todas las constantes con el prefijo \_ "E" son códigos de error. Las constantes **S \_ OK y** S FALSE **\_ son** códigos de éxito. Es probable que el 99 % de los métodos COM **devuelvaN S \_ OK** cuando se realicen correctamente, pero no permita que este hecho le desconfie. Un método puede devolver otros códigos de operación correcta, por lo que siempre debe probar si hay errores mediante la macro [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) o [**FAILED.**](/windows/desktop/api/winerror/nf-winerror-failed) En el código de ejemplo siguiente se muestra la manera incorrecta y la manera correcta de probar el éxito de una llamada de función.
+Todas las constantes con el prefijo \_ "E" son códigos de error. Las constantes **S \_ OK y** S **\_ FALSE** son códigos de éxito. Es probable que el 99 % de los métodos COM **devuelvaN S \_ OK** cuando se realicen correctamente, pero no permita que este hecho le desconfie. Un método puede devolver otros códigos de operación correcta, por lo que siempre debe probar si hay errores mediante la macro [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) [**o FAILED.**](/windows/desktop/api/winerror/nf-winerror-failed) En el código de ejemplo siguiente se muestra la manera incorrecta y la manera correcta de probar el éxito de una llamada de función.
 
 
 ```C++
@@ -53,7 +53,7 @@ if (FAILED(hr))
 
 
 
-El código de éxito **S \_ FALSE** merece mención. Algunos métodos **usan S \_ FALSE** para significar, aproximadamente, una condición negativa que no es un error. También puede indicar un "no-op": el método se ha hecho correctamente, pero no ha tenido ningún efecto. Por ejemplo, la [**función CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) devuelve **S \_ FALSE** si la llama una segunda vez desde el mismo subproceso. Si necesita diferenciar entre **S \_ OK** y **S \_ FALSE** en el código, debe probar el valor directamente, pero seguir utilizando [**FAILED**](/windows/desktop/api/winerror/nf-winerror-failed) o [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) para controlar los casos restantes, como se muestra en el código de ejemplo siguiente.
+El código de éxito **S \_ FALSE** merece mención. Algunos métodos **usan S \_ FALSE** para significar, aproximadamente, una condición negativa que no es un error. También puede indicar un "no-op": el método se ha hecho correctamente, pero no ha tenido ningún efecto. Por ejemplo, la [**función CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) devuelve **S \_ FALSE** si se llama por segunda vez desde el mismo subproceso. Si necesita diferenciar entre **S \_ OK** y **S \_ FALSE** en el código, debe probar el valor directamente, pero seguir utilizando [**FAILED**](/windows/desktop/api/winerror/nf-winerror-failed) o [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) para controlar los casos restantes, como se muestra en el código de ejemplo siguiente.
 
 
 ```C++
@@ -74,7 +74,7 @@ else
 
 
 
-Algunos **valores HRESULT** son específicos de una determinada característica o subsistema de Windows. Por ejemplo, la API de gráficos de Direct2D define el código de error **D2DERR \_ UNSUPPORTED \_ PIXEL \_ FORMAT**, lo que significa que el programa usó un formato de píxel no admitido. La documentación de MSDN a menudo proporciona una lista de códigos de error específicos que un método podría devolver. Sin embargo, no debe considerar estas listas como definitivas. Un método siempre puede devolver un **valor HRESULT** que no aparece en la documentación. De nuevo, use las macros [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) [**y FAILED.**](/windows/desktop/api/winerror/nf-winerror-failed) Si prueba un código de error específico, incluya también un caso predeterminado.
+Algunos **valores HRESULT** son específicos de una característica o subsistema determinados de Windows. Por ejemplo, la API de gráficos de Direct2D define el código de error **D2DERR \_ UNSUPPORTED \_ PIXEL \_ FORMAT**, lo que significa que el programa usó un formato de píxel no admitido. A menudo, la documentación de MSDN proporciona una lista de códigos de error específicos que un método podría devolver. Sin embargo, no debe considerar estas listas como definitivas. Un método siempre puede devolver un **valor HRESULT** que no aparece en la documentación. De nuevo, use las macros [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) [**y FAILED.**](/windows/desktop/api/winerror/nf-winerror-failed) Si prueba un código de error específico, incluya también un caso predeterminado.
 
 
 ```C++
@@ -92,10 +92,10 @@ else if (FAILED(hr))
 
 ## <a name="patterns-for-error-handling"></a>Patrones para el control de errores
 
-En esta sección se examinan algunos patrones para controlar los errores COM de forma estructurada. Cada patrón tiene ventajas y desventajas. Hasta cierto punto, la elección es una cuestión de buen gusto. Si trabaja en un proyecto existente, es posible que ya tenga directrices de codificación que proscriben un estilo determinado. Independientemente del patrón que adopte, el código sólido cumplirá las reglas siguientes.
+En esta sección se examinan algunos patrones para controlar los errores COM de forma estructurada. Cada patrón tiene ventajas y desventajas. Hasta cierto punto, la elección es una cuestión de deguste. Si trabaja en un proyecto existente, es posible que ya tenga directrices de codificación que proscriben un estilo determinado. Independientemente del patrón que adopte, el código sólido cumplirá las reglas siguientes.
 
--   Para cada método o función que devuelve un **valor HRESULT,** compruebe el valor devuelto antes de continuar.
--   Liberar recursos después de su uso.
+-   Para cada método o función que devuelve un **HRESULT,** compruebe el valor devuelto antes de continuar.
+-   Libere los recursos después de que se utilicen.
 -   No intente acceder a recursos no válidos o no inicializados, como punteros **NULL.**
 -   No intente usar un recurso después de liberarlo.
 
@@ -108,7 +108,7 @@ Con estas reglas en mente, estos son cuatro patrones para controlar los errores.
 
 ### <a name="nested-ifs"></a>Ifs anidados
 
-Después de cada llamada que devuelve **un valor HRESULT,** use una **instrucción if** para comprobar si la ejecución se ha hecho correctamente. A continuación, coloque la siguiente llamada al método dentro del ámbito de la **instrucción if.** Más **si las** instrucciones se pueden anidar tan profundamente como sea necesario. Los ejemplos de código anteriores de este módulo han usado este patrón, pero aquí es de nuevo:
+Después de cada llamada que devuelve **un HRESULT**, use una **instrucción if** para comprobar si la ejecución se ha hecho correctamente. A continuación, coloque la siguiente llamada al método dentro del ámbito de la **instrucción if.** Más **si las** instrucciones se pueden anidar tan profundamente como sea necesario. Los ejemplos de código anteriores de este módulo han usado este patrón, pero aquí es de nuevo:
 
 
 ```C++
@@ -152,7 +152,7 @@ Inconvenientes
 
 ### <a name="cascading-ifs"></a>Ifs en cascada
 
-Después de cada llamada al método, use una **instrucción if** para comprobar si la ejecución se ha hecho correctamente. Si el método se realiza correctamente, coloque la siguiente llamada al método dentro del **bloque if.** Pero en lugar de anidar más **instrucciones if,** coloque cada prueba [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) posterior al bloque **if** anterior. Si se produce un error en cualquier método, todas las pruebas **SUCCEEDED** restantes simplemente producirán un error hasta que se alcance la parte inferior de la función.
+Después de cada llamada de método, use una **instrucción if** para comprobar si la ejecución se ha hecho correctamente. Si el método se realiza correctamente, coloque la siguiente llamada al método dentro del **bloque if.** Pero en lugar de anidar más **instrucciones if,** coloque cada prueba [**SUCCEEDED**](/windows/desktop/api/winerror/nf-winerror-succeeded) posterior al bloque **if** anterior. Si se produce un error en cualquier método, todas las pruebas **SUCCEEDED** restantes simplemente producirán un error hasta que se alcance la parte inferior de la función.
 
 
 ```C++
@@ -199,7 +199,7 @@ Ventajas
 Inconvenientes
 
 -   Todas las variables se deben declarar e inicializar en la parte superior de la función.
--   Si se produce un error en una llamada, la función realiza varias comprobaciones de errores innecesarios, en lugar de salir inmediatamente de la función.
+-   Si se produce un error en una llamada, la función realiza varias comprobaciones de errores innecesarios, en lugar de salir de la función inmediatamente.
 -   Dado que el flujo de control continúa a través de la función después de un error, debe tener cuidado en todo el cuerpo de la función para no tener acceso a recursos no válidos.
 -   Los errores dentro de un bucle requieren un caso especial.
 
@@ -257,7 +257,7 @@ Inconvenientes
 -   A algunos programadores no les gusta usar **goto** en su código. (Sin embargo, debe tenerse en cuenta que este uso de **goto** está muy estructurado; el código nunca salta fuera de la llamada de función actual).
 -   **Las instrucciones goto** omiten los inicializadores.
 
-### <a name="throw-on-fail"></a>Iniciar al producir un error
+### <a name="throw-on-fail"></a>Iniciar al producirse un error
 
 En lugar de saltar a una etiqueta, puede producir una excepción cuando se produce un error en un método. Esto puede generar un estilo más idiomático de C++ si se usa para escribir código seguro para excepciones.
 
@@ -297,21 +297,21 @@ void ShowDialog()
 
 
 
-Observe que en este ejemplo se usa **la clase CComPtr** para administrar punteros de interfaz. Por lo general, si el código produce excepciones, debe seguir el patrón RAII (Adquisición de recursos es inicialización). Es decir, cada recurso debe administrarse mediante un objeto cuyo destructor garantiza que el recurso se libera correctamente. Si se produce una excepción, se garantiza que se invocará al destructor. De lo contrario, el programa podría filtrar recursos.
+Observe que en este ejemplo se usa **la clase CComPtr** para administrar punteros de interfaz. Por lo general, si el código produce excepciones, debe seguir el patrón RAII (Adquisición de recursos es inicialización). Es decir, cada recurso debe administrarse mediante un objeto cuyo destructor garantiza que el recurso se libera correctamente. Si se produce una excepción, se garantiza que se invocará el destructor. De lo contrario, el programa podría filtrar recursos.
 
 Ventajas
 
 -   Compatible con el código existente que usa el control de excepciones.
--   Compatible con las bibliotecas de C++ que inician excepciones, como la Biblioteca de plantillas estándar (STL).
+-   Compatible con las bibliotecas de C++ que inician excepciones, como la biblioteca de plantillas estándar (STL).
 
 Inconvenientes
 
--   Requiere objetos de C++ para administrar recursos como identificadores de archivos o memoria.
+-   Requiere objetos de C++ para administrar recursos como identificadores de memoria o archivos.
 -   Requiere una buena comprensión de cómo escribir código seguro para excepciones.
 
 ## <a name="next"></a>Siguientes
 
-[Módulo 3. Gráficos de Windows](module-3---windows-graphics.md)
+[Módulo 3. Windows Gráficos](module-3---windows-graphics.md)
 
  
 

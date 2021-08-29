@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI LogicalDiskToPartition Association de Win32 relaciona una unidad de disco lógico y la partición de disco en la que reside.
+description: La clase WMI de asociación LogicalDiskToPartition de Win32 relaciona una unidad de disco lógico y la partición de disco en \_ la que reside.
 ms.assetid: 41161d57-d392-4acc-a22a-10be75aa14a6
 ms.tgt_platform: multiple
-title: Win32_LogicalDiskToPartition (clase)
+title: Win32_LogicalDiskToPartition clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a32a3ee275c32dde7d9f1484aa99dddeaf97a2e9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 054cb165a7c59f91bf7df31561a8a5c24a25b2a0acda39d4cb5f35791f30ea25
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119973385"
 ---
-# <a name="win32_logicaldisktopartition-class"></a>\_Clase Win32 LogicalDiskToPartition
+# <a name="win32_logicaldisktopartition-class"></a>Clase LogicalDiskToPartition de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ LogicalDiskToPartition** Association de Win32 relaciona una unidad de disco lógico y la partición de disco en la que reside.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **de asociación \_ LogicalDiskToPartition de Win32** relaciona una unidad de disco lógico y la partición de disco en la que reside.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,14 +65,14 @@ Tipo de datos: **Win32 \_ DiskPartition**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DiskPartition")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ DiskPartition")
 </dt> </dl>
 
-Referencia a la instancia de que representa las propiedades de una partición de disco en la que reside el disco lógico.
+Referencia a la instancia de que representa las propiedades de una partición de disco donde reside el disco lógico.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **Win32 \_ LogicalDisk**
@@ -81,7 +81,7 @@ Tipo de datos: **Win32 \_ LogicalDisk**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ LogicalDisk")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ LogicalDisk")
 </dt> </dl>
 
 Referencia a la instancia de que representa las propiedades de un disco lógico que reside en una partición de disco físico.
@@ -91,24 +91,24 @@ Referencia a la instancia de que representa las propiedades de un disco lógico 
 **EndingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el final de la extensión de alto nivel en el almacenamiento de nivel inferior. Esta propiedad es útil cuando se asignan extensiones no contiguas a una agrupación de nivel superior.
+Indica el final de la extensión de alto nivel en el almacenamiento de nivel inferior. Esta propiedad es útil al asignar extensiones no contiguas a una agrupación de nivel superior.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda de [**\_ BasedOn CIM**](cim-basedon.md).
+Esta propiedad se hereda de [**CIM \_ BasedOn.**](cim-basedon.md)
 
 </dd> <dt>
 
 **StartingAddress**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -116,17 +116,17 @@ Tipo de acceso: solo lectura
 
 Indica el principio de la extensión de alto nivel en el almacenamiento de nivel inferior.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
-Esta propiedad se hereda de [**\_ BasedOn CIM**](cim-basedon.md).
+Esta propiedad se hereda de [**CIM \_ BasedOn.**](cim-basedon.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ LogicalDiskToPartition de Win32** se deriva de [**\_ LogicalDiskBasedOnPartition de CIM**](cim-logicaldiskbasedonpartition.md).
+La **clase \_ LogicalDiskToPartition de Win32** se deriva de [**CIM \_ LogicalDiskBasedOnPartition**](cim-logicaldiskbasedonpartition.md).
 
-Para obtener más información sobre la asignación entre una unidad lógica y un disco físico, consulte [¿Cómo puedo poner en correlación unidades lógicas y discos físicos?](https://blogs.technet.com/b/heyscriptingguy/archive/2005/05/23/how-can-i-correlate-logical-drives-and-physical-disks.aspx).
+Para obtener más información sobre la asignación entre una unidad lógica y un disco físico, vea ¿Cómo puedo correlacionar [unidades lógicas y discos físicos?](https://blogs.technet.com/b/heyscriptingguy/archive/2005/05/23/how-can-i-correlate-logical-drives-and-physical-disks.aspx).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -458,8 +458,8 @@ BOOL wmi_close()
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -468,13 +468,13 @@ BOOL wmi_close()
 
 <dl> <dt>
 
-[**\_LOGICALDISKBASEDONPARTITION CIM**](cim-logicaldiskbasedonpartition.md)
+[**CIM \_ LogicalDiskBasedOnPartition**](cim-logicaldiskbasedonpartition.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[Tareas de WMI: discos y sistemas de archivos](/windows/desktop/WmiSdk/wmi-tasks--disks-and-file-systems)
+[Tareas wmi: discos y sistemas de archivos](/windows/desktop/WmiSdk/wmi-tasks--disks-and-file-systems)
 </dt> </dl>
 
  

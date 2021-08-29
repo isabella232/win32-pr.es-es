@@ -1,19 +1,19 @@
 ---
-description: Indica si el archivo está protegido en Rights Management digitales (DRM).
+description: Indica si el archivo está protegido en Digital Rights Management (DRM).
 ms.assetid: 50b3ada0-bdf7-4c61-8cfc-17fbb4a7d1e6
-title: System. DRM. IsProtected
+title: System.DRM.IsProtected
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a1501cf969df9e7244908b1210d92c9de002646
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74cb5d6a4492529612cf5b334ba72cf185dc2c4026a06641fe5b481455043472
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059195"
 ---
-# <a name="systemdrmisprotected"></a>System. DRM. IsProtected
+# <a name="systemdrmisprotected"></a>System.DRM.IsProtected
 
-Indica si el archivo está protegido en Rights Management digitales (DRM).
+Indica si el archivo está protegido en Digital Rights Management (DRM).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

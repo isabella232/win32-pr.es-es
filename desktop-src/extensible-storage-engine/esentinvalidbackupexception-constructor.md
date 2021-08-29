@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInvalidBackupException'
-title: Constructor de EsentInvalidBackupException
+description: 'Más información sobre: Constructor EsentInvalidBackupException'
+title: Constructor EsentInvalidBackupException
 TOCTitle: 'EsentInvalidBackupException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInvalidBackupException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinvalidbackupexception.esentinvalidbackupexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25550bc60e2cc3c7dd18f6cb28509890cb726f36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03371b1fd7fb400ae8929e57493ade4d98cdf10a3444362190d937e33b693c2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837865"
 ---
-# <a name="esentinvalidbackupexception-constructor"></a>Constructor de EsentInvalidBackupException
+# <a name="esentinvalidbackupexception-constructor"></a>Constructor EsentInvalidBackupException
 
 Inicializa una nueva instancia de la clase EsentInvalidBackupException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInvalidBackupException()
 public EsentInvalidBackupException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInvalidBackupException()
 
 [Miembros de EsentInvalidBackupException](./esentinvalidbackupexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

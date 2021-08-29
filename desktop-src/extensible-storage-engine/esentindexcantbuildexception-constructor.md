@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentIndexCantBuildException'
-title: Constructor de EsentIndexCantBuildException
+description: 'Más información sobre: Constructor EsentIndexCantBuildException'
+title: Constructor EsentIndexCantBuildException
 TOCTitle: 'EsentIndexCantBuildException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentIndexCantBuildException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentindexcantbuildexception.esentindexcantbuildexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 31846f7a4a365c5bd8571cf45747046ade4a05c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44f0c896311ad2d2e064d1c7bc18aa941c5af2faf5d596afe8dbc3ad4dc94678
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065255"
 ---
-# <a name="esentindexcantbuildexception-constructor"></a>Constructor de EsentIndexCantBuildException
+# <a name="esentindexcantbuildexception-constructor"></a>Constructor EsentIndexCantBuildException
 
 Inicializa una nueva instancia de la clase EsentIndexCantBuildException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentIndexCantBuildException()
 public EsentIndexCantBuildException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentIndexCantBuildException()
 
 [Miembros de EsentIndexCantBuildException](./esentindexcantbuildexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: El \_ método get OutputStreams recupera el número de secuencias de audio y vídeo contenidas en el origen de medios. Cualquier otro tipo de flujo, como flujos de datos, se omite.
+description: El método \_ get OutputStreams recupera el número de secuencias de audio y vídeo contenidas en el origen multimedia. Cualquier otro tipo de flujo, como los flujos de datos, se omite.
 ms.assetid: 9acd0a1e-c968-4c3b-a71a-b6aa2219a8cd
-title: 'Método IMediaDet:: get_OutputStreams (QEDIT. h)'
+title: Método IMediaDet::get_OutputStreams (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0fa53a5ab5c315c4bedb3804ae7cefa618399590
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 19081afd1c005c61d39fc91cda8c28a93fface2a03b672411ef6449f75fa66fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083755"
 ---
-# <a name="imediadetget_outputstreams-method"></a>IMediaDet:: get \_ OutputStreams (método)
+# <a name="imediadetget_outputstreams-method"></a>Método IMediaDet::get \_ OutputStreams
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `get_OutputStreams` método recupera el número de secuencias de audio y vídeo contenidas en el origen de los medios. Cualquier otro tipo de flujo, como flujos de datos, se omite.
+El `get_OutputStreams` método recupera el número de secuencias de audio y vídeo contenidas en el origen multimedia. Cualquier otro tipo de flujo, como los flujos de datos, se omite.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT get_OutputStreams(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recibe el número de flujos de salida.
@@ -54,19 +54,19 @@ Recibe el número de flujos de salida.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, llame a [**IMediaDet::p \_ nombre**](imediadet-put-filename.md) de archivo UT para establecer el nombre de archivo. Si el detector de medios está en modo de archivo de mapa de bits, este método devuelve E \_ INVALIDARG. Para obtener más información, vea [**IMediaDet:: EnterBitmapGrabMode**](imediadet-enterbitmapgrabmode.md).
+Antes de llamar a este método, llame a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) para establecer el nombre de archivo. Si el detector de medios está en modo de captura de mapa de bits, este método devuelve E \_ INVALIDARG. Para obtener más información, [**vea IMediaDet::EnterBitmapGrabMode**](imediadet-enterbitmapgrabmode.md).
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ Antes de llamar a este método, llame a [**IMediaDet::p \_ nombre**](imediadet-p
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,10 +85,10 @@ Antes de llamar a este método, llame a [**IMediaDet::p \_ nombre**](imediadet-p
 
 <dl> <dt>
 
-[**Interfaz IMediaDet**](imediadet.md)
+[**IMediaDet (interfaz)**](imediadet.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

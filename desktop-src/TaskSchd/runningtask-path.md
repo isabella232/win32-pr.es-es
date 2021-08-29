@@ -1,11 +1,11 @@
 ---
-title: RunningTask. Path (propiedad)
-description: En el caso de scripting, obtiene la ruta de acceso donde se almacena la tarea.
+title: Propiedad RunningTask.Path
+description: Para el scripting, obtiene la ruta de acceso a donde se almacena la tarea.
 ms.assetid: d1ab3a4d-bf16-4795-a929-0bd396694e6f
 keywords:
-- Propiedad path Programador de tareas
-- Propiedad path Programador de tareas, objeto RunningTask
-- Programador de tareas de objeto RunningTask, propiedad path
+- Ruta de acceso Programador de tareas
+- Propiedad Path Programador de tareas , objeto RunningTask
+- Objeto RunningTask Programador de tareas , propiedad Path
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a1cfade6ae6bf443b2bb1cde14bc6ab666cf3d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0c33f619089bb407f4943464be2a086244f7b51aa0979a3aceede8501af03a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119975112"
 ---
-# <a name="runningtaskpath-property"></a>RunningTask. Path (propiedad)
+# <a name="runningtaskpath-property"></a>Propiedad RunningTask.Path
 
-En el caso de scripting, obtiene la ruta de acceso donde se almacena la tarea.
+Para el scripting, obtiene la ruta de acceso a donde se almacena la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,7 +38,7 @@ RunningTask.Path As string
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La ruta de acceso donde se almacena la tarea.
+Ruta de acceso a donde se almacena la tarea.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ La ruta de acceso donde se almacena la tarea.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

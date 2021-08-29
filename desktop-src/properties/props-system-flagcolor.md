@@ -4,12 +4,12 @@ ms.assetid: a0627f2e-9a4f-40d4-9698-281a1cf56673
 title: System.FlagColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8b8d3877659918c63251df7bc3c3eaba2618881
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1f3cd1fa85caea4e695cd8ceccaa3391f30043f0ffc936a992f67a72b69a1671
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822655"
 ---
 # <a name="systemflagcolor"></a>System.FlagColor
 

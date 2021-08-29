@@ -1,28 +1,28 @@
 ---
-description: El atributo Time especifica la hora a la que un parámetro presupone un nuevo valor, en relación con el inicio de la transición o efecto.
+description: El atributo time especifica la hora a la que un parámetro asume un nuevo valor, en relación con el inicio de la transición o el efecto.
 ms.assetid: bb478215-cbd5-4fea-9d88-a1f2b002f3da
-title: Atributo de hora
+title: atributo time
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15a84d40c5e38ed81f8c17cd2d931e3f85e389a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4d4ed72cc76935f68973634643fc5dbdf719b150f096ec43e1ace56881f0c26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083655"
 ---
-# <a name="time-attribute"></a>Atributo de hora
+# <a name="time-attribute"></a>atributo time
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `time` atributo especifica la hora a la que un parámetro presupone un nuevo valor, en relación con el inicio de la transición o efecto.
+El atributo especifica la hora a la que un parámetro asume un nuevo valor, en relación con el `time` inicio de la transición o el efecto.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Debe ser una cadena con el formato *HH: mm: SS. FF* , donde *HH* = hours, *mm* = minutes, *SS* = seconds y *FF* = fracciones de segundo. Ejemplo: 1:04:30.512. Se pueden omitir las unidades iniciales. Por ejemplo, 3:00 (tres minutos) y 45 (45 segundos) son válidos.
+Debe ser una cadena con el formato *hh:mm:ss.ff,* donde *hh* = horas, *mm* = minutos, *ss* = segundos y *ff* = fracciones de segundos. Ejemplo: 1:04:30.512. Se pueden omitir las unidades iniciales. Por ejemplo, 3:00 (tres minutos) y 45 (45 segundos) son válidos.
 
 ## <a name="applies-to"></a>Se aplica a
 

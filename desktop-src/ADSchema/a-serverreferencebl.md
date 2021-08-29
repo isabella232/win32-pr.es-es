@@ -1,11 +1,11 @@
 ---
 title: Atributo Server-Reference-BL
-description: Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un equipo en la carpeta sitios.
+description: Se encuentra en el contexto de nomenclatura de dominio. Nombre distintivo de un equipo en la carpeta sites.
 ms.assetid: b411abc9-d085-4b9b-bbfa-7f46af319c0f
 ms.tgt_platform: multiple
 keywords:
-- Schema-Reference-BL atributo AD Schema
-- serverReferenceBL esquema de AD de atributos
+- Esquema de AD del atributo Server-Reference-BL
+- ServerReferenceBL attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6979464cb5f9c4747ee57bc74e5fbaf418e60e22
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cccc25b6f69831384704a4a37e8d576e5f984086a4435e44ac1983068118f4b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836734"
 ---
 # <a name="server-reference-bl-attribute"></a>Atributo Server-Reference-BL
 
-Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un equipo en la carpeta sitios.
+Se encuentra en el contexto de nomenclatura de dominio. Nombre distintivo de un equipo en la carpeta sites.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | Servidor-referencia-BL                     |
-| Nombre para mostrar de LDAP | serverReferenceBL                       |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | El sistema establece este valor.        |
+| CN                | Server-Reference-BL                     |
+| Ldap-Display-Name | serverReferenceBL                       |
+| Size              | \-                                      |
+| Actualizar privilegios  | El sistema establece este valor.        |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.516                  |
-| System-ID-GUID    | 26d9736e-6070-11d1-a9c6-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 26d9736e-6070-11d1-a9c6-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 95                              |
+| Id. de vínculo                | 95                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,13 +77,13 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 95                              |
+| Id. de vínculo                | 95                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,19 +92,19 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 95                              |
+| Id. de vínculo                | 95                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,13 +119,13 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 95                              |
+| Id. de vínculo                | 95                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,13 +140,13 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 95                              |
+| Id. de vínculo                | 95                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -161,13 +161,13 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 95                              |
+| Id. de vínculo                | 95                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -182,13 +182,13 @@ Se encuentra en el contexto de nomenclatura de dominios. Nombre distintivo de un
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 95                              |
+| Id. de vínculo                | 95                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

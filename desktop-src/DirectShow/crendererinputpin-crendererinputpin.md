@@ -1,7 +1,7 @@
 ---
 description: El método CRendererInputPin es un método de constructor.
 ms.assetid: 272f864e-d6a8-4a9e-b72f-892147db9970
-title: Constructor CRendererInputPin. CRendererInputPin (Renbase. h)
+title: Constructor CRendererInputPin.CRendererInputPin (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f6888b234b87a48fc89f70c0db36122cbf7289ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2b6970b056706e7443cc38793a9c050d4f93c5ebd86556ce58aff23d4e9e83e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079325"
 ---
-# <a name="crendererinputpincrendererinputpin-constructor"></a>Constructor CRendererInputPin. CRendererInputPin
+# <a name="crendererinputpincrendererinputpin-constructor"></a>Constructor CRendererInputPin.CRendererInputPin
 
-El `CRendererInputPin` método es un método de constructor.
+El `CRendererInputPin` método es un método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,17 +51,17 @@ Puntero al objeto [**CBaseRenderer**](cbaserenderer.md) que implementa el filtro
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor **HRESULT** .
+Puntero a una variable que recibe un **valor HRESULT.**
 
 </dd> <dt>
 
 *Nombre* 
 </dt> <dd>
 
-Puntero a una cadena de caracteres anchos que contiene el identificador del PIN.
+Puntero a una cadena de caracteres anchos que contiene el identificador de pin.
 
 </dd> </dl>
 
@@ -71,8 +71,8 @@ Puntero a una cadena de caracteres anchos que contiene el identificador del PIN.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Puntero a una cadena de caracteres anchos que contiene el identificador del PIN.
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

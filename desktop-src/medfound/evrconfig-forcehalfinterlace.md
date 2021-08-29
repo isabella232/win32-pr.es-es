@@ -1,17 +1,17 @@
 ---
 description: Fuerza al representador de vídeo mejorado (EVR) a omitir el segundo campo de cada fotograma entrelazado.
 ms.assetid: b79d9230-b127-4e9b-b73b-685ce27aefa9
-title: EVRConfig_ForceHalfInterlace atributo (UUID. h)
+title: EVRConfig_ForceHalfInterlace atributo (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfeab4bcb3d05e615962fb8acc5f304ba3ea7e6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf3d73eceb1728b8bdc043ba69ee62249783ee109c29ff173a9e563f68505d9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061595"
 ---
-# <a name="evrconfig_forcehalfinterlace-attribute"></a>\_Atributo ForceHalfInterlace de EVRConfig
+# <a name="evrconfig_forcehalfinterlace-attribute"></a>Atributo EVRConfig \_ ForceHalfInterlace
 
 Fuerza al representador de vídeo mejorado (EVR) a omitir el segundo campo de cada fotograma entrelazado.
 
@@ -21,17 +21,17 @@ Fuerza al representador de vídeo mejorado (EVR) a omitir el segundo campo de ca
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se puede establecer en el receptor de medios EVR. Para establecer el atributo, utilice **QueryInterface** para consultar el receptor de medios EVR de la interfaz [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Este atributo se puede establecer en el receptor de medios EVR. Para establecer el atributo, use **QueryInterface para** consultar el receptor de medios EVR para la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-Establecer este atributo tiene el mismo efecto que establecer la marca **MFVideoMixPrefs \_ FORCEHALFINTERLACE** en EVR. Consulte [**MFVideoMixPrefs**](/windows/desktop/api/evr/ne-evr-mfvideomixprefs) para obtener una descripción de esta marca.
+Establecer este atributo tiene el mismo efecto que establecer la marca **MFVideo MixPrefs \_ ForceHalfInterlace** en la EVR. Consulte [**MFVideoMixPrefs para**](/windows/desktop/api/evr/ne-evr-mfvideomixprefs) obtener una descripción de esta marca.
 
-La constante GUID para este atributo se exporta desde strmiids. lib.
+La constante GUID para este atributo se exporta desde strmiids.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ La constante GUID para este atributo se exporta desde strmiids. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>UUID. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -49,10 +49,10 @@ La constante GUID para este atributo se exporta desde strmiids. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos EVR](enhanced-video-renderer-attributes.md)
+[Atributos de EVR](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
 [Administración de calidad de vídeo](video-quality-management.md)

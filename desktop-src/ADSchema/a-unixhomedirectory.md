@@ -1,10 +1,10 @@
 ---
-title: atributo unixHomeDirectory
-description: Contiene la ruta de acceso absoluta al directorio particular.
+title: Atributo unixHomeDirectory
+description: Contiene la ruta de acceso absoluta al directorio principal.
 ms.assetid: ecc72b58-7ad5-49c5-b440-4dbc908d19ad
 ms.tgt_platform: multiple
 keywords:
-- unixHomeDirectory esquema de AD de atributos
+- Esquema de AD del atributo unixHomeDirectory
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58b940a33d27d05fd75b154c6dc59c68b9e456d6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bf7025df1c7916f416b60a2f481cbbfd62ee86ffcebe97031e7212ab53163d32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835435"
 ---
-# <a name="unixhomedirectory-attribute"></a>atributo unixHomeDirectory
+# <a name="unixhomedirectory-attribute"></a>Atributo unixHomeDirectory
 
-Contiene la ruta de acceso absoluta al directorio particular.
+Contiene la ruta de acceso absoluta al directorio principal.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | unixHomeDirectory                    |
-| Nombre para mostrar de LDAP | unixHomeDirectory                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | unixHomeDirectory                    |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.3                      |
-| System-ID-GUID    | bc2dba12-000f-464d-bf1d-0808465d8843 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | bc2dba12-000f-464d-bf1d-0808465d8843 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Contiene la ruta de acceso absoluta al directorio particular.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -73,13 +73,13 @@ Contiene la ruta de acceso absoluta al directorio particular.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -94,13 +94,13 @@ Contiene la ruta de acceso absoluta al directorio particular.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -115,13 +115,13 @@ Contiene la ruta de acceso absoluta al directorio particular.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |

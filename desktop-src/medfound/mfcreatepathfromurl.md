@@ -1,7 +1,7 @@
 ---
 description: Convierte una dirección URL de archivo en una ruta de acceso de Microsoft MS-DOS.
 ms.assetid: c35988ad-6cf8-41ec-bee9-e3bb982310ee
-title: MFCreatePathFromURL función)
+title: Función MFCreatePathFromURL
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - mfplat.dll
-ms.openlocfilehash: c1838a3b09dc5375588d562aa503d555a186e394
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f4a2156bde837ef343aa4ca88a18230050d4af6df07012e46fc518d62d898af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113685"
 ---
-# <a name="mfcreatepathfromurl-function"></a>MFCreatePathFromURL función)
+# <a name="mfcreatepathfromurl-function"></a>Función MFCreatePathFromURL
 
-\[Esta API no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, las aplicaciones deben llamar a [**PathCreateFromUrl**](/windows/win32/api/shlwapi/nf-shlwapi-pathcreatefromurla).\]
+\[Esta API no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, las aplicaciones [**deben llamar a PathCreateFromUrl**](/windows/win32/api/shlwapi/nf-shlwapi-pathcreatefromurla).\]
 
 Convierte una dirección URL de archivo en una ruta de acceso de Microsoft MS-DOS.
 
@@ -45,35 +45,35 @@ HRESULT MFCreatePathFromURL(
 *pwszFileURL* \[ en, opcional\]
 </dt> <dd>
 
-Una cadena terminada en null que contiene la dirección URL. La longitud máxima de la cadena es **longitud máxima de \_ \_ dirección URL \_ de Internet**.
+Cadena terminada en NULL que contiene la dirección URL. La longitud máxima de la cadena es **INTERNET \_ MAX URL \_ \_ LENGTH**.
 
 </dd> <dt>
 
-*ppwszFilePath* \[ enuncia\]
+*ppwszFilePath* \[ out\]
 </dt> <dd>
 
-Recibe una cadena terminada en null que contiene la dirección URL. El autor de la llamada debe liberar la cadena mediante una llamada a [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Recibe una cadena terminada en NULL que contiene la dirección URL. El autor de la llamada debe liberar la cadena llamando [**a CoTaskMemFree.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+La función devuelve un **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                  | Descripción                                                                                                 |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | La función se ha realizado correctamente. <br/>                                                                         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Argumento no válido. La cadena especificada en el parámetro *pwszFileURL* no se puede convertir en una ruta de acceso.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | La función se ha realizado correctamente. <br/>                                                                         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Argumento no válido. La cadena especificada en el *parámetro pwszFileURL* no se puede convertir en una ruta de acceso.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mfplat.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mfplat.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
 | Archivo DLL<br/>                      | <dl> <dt>Mfplat.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 <dl> <dt>
 
-[Funciones de Media Foundation](media-foundation-functions.md)
+[Media Foundation Functions](media-foundation-functions.md)
 </dt> </dl>
 
  
