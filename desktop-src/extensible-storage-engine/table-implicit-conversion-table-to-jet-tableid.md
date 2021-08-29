@@ -1,5 +1,5 @@
 ---
-description: Más información acerca de la conversión implícita de tabla (tabla a JET_TABLEID)
+description: 'Más información sobre: Conversión implícita de tabla (tabla a JET_TABLEID)'
 title: Conversión implícita de tabla (tabla a JET_TABLEID)
 TOCTitle: Implicit conversion (Table to JET_TABLEID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Table.op_Implicit(Microsoft.Isam.Esent.Interop.Table)~Microsoft.Isam.Esent.Interop.JET_TABLEID
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 886f5085ee09020730b36269255279836b31562a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7ea10d0e09492c3f0f27a0d3538ccaf458cb761678c699032fc1b61f43d0eb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780235"
 ---
 # <a name="table-implicit-conversion-table-to-jet_tableid"></a>Conversión implícita de tabla (tabla a JET_TABLEID)
 
 Operador de conversión implícita de una tabla a una JET_TABLEID. Esto permite usar una tabla con las API que esperan un JET_TABLEID.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public static implicit operator JET_TABLEID (
 #### <a name="parameters"></a>Parámetros
 
   - table  
-    Tipo: [Microsoft. ISAM. esent. Interop. Table](./table-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Table](./table-class.md)  
     
-    Tabla que se va a convertir.
+    Tabla que se convertirá.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
-JET_TABLEID de la tabla.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+El JET_TABLEID de la tabla.  
 
 ## <a name="see-also"></a>Vea también
 
@@ -79,4 +79,4 @@ JET_TABLEID de la tabla.
 
 [Miembros de tabla](./table-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

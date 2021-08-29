@@ -1,11 +1,11 @@
 ---
-title: 'DHCP: atributo servers'
+title: atributo dhcp-Servers
 description: Contiene una lista de servidores que están autorizados en la empresa.
 ms.assetid: f712b2d2-ff9c-4ee2-aede-b68023e3e6b6
 ms.tgt_platform: multiple
 keywords:
-- DHCP-atributos de servidor esquema de AD
-- dhcpServers esquema de AD de atributos
+- Esquema de AD del atributo dhcp-Servers
+- Esquema de AD del atributo dhcpServers
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e43018c91e5bb495ee39476f07f40756cfcf097
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2427d9e36406c2483dd59efdfcc65bcdf09017ca0e0e4474bb2e97a236848eef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049925"
 ---
-# <a name="dhcp-servers-attribute"></a>DHCP: atributo servers
+# <a name="dhcp-servers-attribute"></a>atributo dhcp-Servers
 
 Contiene una lista de servidores que están autorizados en la empresa.
 
@@ -29,14 +29,14 @@ Contiene una lista de servidores que están autorizados en la empresa.
 
 | Entrada | Value |
 |-------------------|--------------------------------------------------------|
-| CN                | DHCP-servidores                                           |
-| Nombre para mostrar de LDAP | dhcpServers                                            |
-| Tamaño              | \-                                                     |
-| Actualizar privilegio  | Administrador de dominio.                                  |
-| Frecuencia de actualización  | Cuando se agrega o se quita un nuevo servidor del bosque. |
+| CN                | dhcp-Servers                                           |
+| Ldap-Display-Name | dhcpServers                                            |
+| Size              | \-                                                     |
+| Privilegio actualizar  | Administrador de dominio.                                  |
+| Frecuencia de actualización  | Cuando se agrega o quita un nuevo servidor del bosque. |
 | Attribute-Id      | 1.2.840.113556.1.4.704                                 |
-| System-ID-GUID    | 963d2745-48be-11d1-a9c3-0000f80367c1                   |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)                    |
+| System-Id-Guid    | 963d2745-48be-11d1-a9c3-0000f80367c1                   |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)                    |
 
 
 
@@ -55,18 +55,18 @@ Contiene una lista de servidores que están autorizados en la empresa.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Contiene una lista de servidores que están autorizados en la empresa.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Contiene una lista de servidores que están autorizados en la empresa.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Contiene una lista de servidores que están autorizados en la empresa.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Contiene una lista de servidores que están autorizados en la empresa.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Contiene una lista de servidores que están autorizados en la empresa.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | False                                        |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Falso                                        |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 

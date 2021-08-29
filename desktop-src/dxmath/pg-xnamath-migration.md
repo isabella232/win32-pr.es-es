@@ -4,12 +4,12 @@ ms.assetid: ed8463f8-8a3d-e89e-89e2-8d72a7f45cd6
 title: Migración de código desde la biblioteca matemática de XNA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dc7a48d30711a870c28b677e458a4f72c3b3c40
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: 11afe17e4e8e63ed06b34aed5fe573951b4e5383a78eb3c2c68f5b742c6560a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119740129"
 ---
 # <a name="code-migration-from-the-xna-math-library"></a>Migración de código desde la biblioteca matemática de XNA
 
@@ -21,18 +21,18 @@ La biblioteca DirectXMath usa un nuevo conjunto de encabezados.
 
 Reemplace el `xnamath.h` encabezado por y agregue para los tipos `DirectXMath.h` `DirectXPackedVector.h` *empaquetados de GPU.*
 
-Los tipos de límite del ejemplo de colisión del SDK de DirectX en ahora forman parte `xnacollision.h` de la biblioteca DirectXMath en `DirectXCollision.h` . Se han modificado para usar clases de C++ en lugar de una API de estilo C.
+Los tipos de límite del ejemplo de colisión del SDK de DirectX en ahora forman parte `xnacollision.h` de la biblioteca DirectXMath de `DirectXCollision.h` . Se han modificado para usar clases de C++ en lugar de una API de estilo C.
 
 ## <a name="constant-changes"></a>Cambios constantes
 
-LA VERSIÓN XNXTTH \_ (200, 201, 202, 203, 204, y así sucesivamente) se ha reemplazado por DIRECXTMATH \_ VERSION (300, 301, 302, 303, y así sucesivamente).
+XNXTTH \_ VERSION (200, 201, 202, 203, 204, y así sucesivamente) se ha reemplazado por DIRECXTMATH \_ VERSION (300, 301, 302, 303, y así sucesivamente).
 
 > [!NOTE]  
-> DirectXMath 3.00 y 3.02 se incluye con versiones preliminares del Windows SDK. DirectXMath 3.03 está en la versión final del SDK Windows 8.
+> DirectXMath 3.00 y 3.02 se incluye con versiones preliminares del SDK Windows. DirectXMath 3.03 está en la versión final del SDK de Windows 8.
 
 ## <a name="namespaces"></a>Espacios de nombres
 
-La biblioteca DirectXMath usa espacios de nombres de C++ para organizar los tipos. XNA Math solo usaba el espacio de nombres global. Los tipos de DirectXMath en común con XNA Math se encuentran en el espacio de nombres **DirectX** o **DirectX::P ackedVector.**
+La biblioteca DirectXMath usa espacios de nombres de C++ para organizar los tipos. XNA Math solo usaba el espacio de nombres global. Los tipos de DirectXMath en común con XNA Math están en el espacio de nombres **DirectX** o **DirectX::P ackedVector.**
 
 En los archivos de código fuente de C++, una solución sencilla es agregar `using` instrucciones.
 
@@ -68,16 +68,16 @@ Los siguientes tipos, funciones y constantes de la biblioteca matemática de XNA
 -   g \_ XMMaskHenD3, g \_ XMMaskDHen3, g \_ XMAddUHenD3, g \_ XMAddHenD3, g \_ XMAddDHen, g \_ XMMulHenD3, g \_ XMMulDHen3, g \_ XMXorHenD3, g \_ XMXorDHen3
 -   XMXICON4, XMXICO4, XMICON4, XMICO4, XMUICON4, XMUICO4
 -   XMLoadXIcoN4(), XMLoadXIco4(), XMLoadIcoN4(), XMLoadIco4(), XMLoadUIcoN4(), XMLoadUIco4()
--   XMStoreXIcoN4(), XMStoreXIco4() ,XMStoreIcoN4(), XMStoreIco4(), XMStoreUIcoN4(), XMStoreUIco4()
+-   XMStoreXIcoN4(), XMStoreXIco4() , XMStoreIcoN4(), XMStoreIco4(), XMStoreUIcoN4(), XMStoreUIco4()
 -   g \_ XMMaskIco4, g \_ XMXorXIco4, g \_ XMXorIco4, g \_ XMAddXIco4, g \_ XMAddUIco4, g \_ XMAddIco4, g \_ XMMulIco4
 
-\_\_vector4i está en desuso. Use [**XMVECVEC32**](xmvectori32-data-type.md) o [**XMVECTORU32 en**](xmvectoru32-data-type.md) su lugar.
+\_\_vector4i está en desuso. En [**su lugar, use XMVECVEC32**](xmvectori32-data-type.md) [**o XMVECTORU32.**](xmvectoru32-data-type.md)
 
 Las siguientes funciones y tipos están en desuso porque solo están en Xbox 360: XMLoadDecN4, XMStoreDecN4, XMDECN4, XMLoadDec4, XMStoreDec4, XMDEC4, XMLoadXDec4, XMStoreXDec4, XMXDEC4.
 
 ## <a name="arm-neon-intrinsics"></a>Intrínsecos ARM-NEON
 
-La declaración de una constante vectorial con este código se compilará para XNA Math para SSE y NO-INTRINSICS, pero se producirá un error para DirectXMath mediante ARM-NEON.
+La declaración de una constante vectorial con este código se compilará para XNA Math for SSE y NO-INTRINSICS, pero se producirá un error para DirectXMath mediante ARM-NEON.
 
 ```
 XMVECTOR v = { 1.f, 2.f, 3.f, 4.f }
@@ -100,7 +100,7 @@ Para DirectXMath, **se ha eliminado XMVectorPermuteControl** y XM \_ PERMUTE \_ 
 XMVECTOR XMVectorPermute(FXMVECTOR V1, FXMVECTOR V2, uint32_t PermuteX, uint32_t PermuteY, uint32_t PermuteZ, uint32_t PermuteW);
 ```
 
-En lugar de una palabra de control, esta función toma directamente los 4 índices como parámetros, lo que también hace que sea análoga a la función [**XMVectorSwzzle**](/windows/win32/api/directxmath/nf-directxmath-xmvectorswizzle) mediante el nuevo XM \_ SW STALE \_ X . Constantes SW STREETW de XM \_ \_ definidas como índices simples de 0-3.
+En lugar de una palabra de control, esta función toma directamente los 4 índices como parámetros, lo que también hace que sea análoga a la función [**XMVectorSwzzle**](/windows/win32/api/directxmath/nf-directxmath-xmvectorswizzle) mediante el nuevo XM \_ SWZZLE \_ X . Constantes \_ DE XM SW STALE W \_ definidas como índices simples de 0-3.
 
 ```
 XMVECTOR XMVectorSwizzle(FXMVECTOR V, uint32_t E0, uint32_t E1, uint32_t E2, uint32_t E3);
@@ -116,7 +116,7 @@ template<uint32_t PermuteX, uint32_t PermuteY, uint32_t PermuteZ, uint32_t Permu
 
 ## <a name="template-forms"></a>Formularios de plantilla
 
-En general, el uso de un formulario de plantilla sobre un formulario de función de las funciones siguientes es mucho más eficaz y permite a la biblioteca realizar optimizaciones específicas de la plataforma a través de la especialización de plantilla.
+En general, el uso de un formulario de plantilla sobre un formulario de función de las siguientes funciones es mucho más eficaz y permite a la biblioteca realizar optimizaciones específicas de la plataforma a través de la especialización de plantilla.
 
 ```
 template<uint32_t PermuteX, uint32_t PermuteY, uint32_t PermuteZ, uint32_t PermuteW>

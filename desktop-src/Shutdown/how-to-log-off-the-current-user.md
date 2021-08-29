@@ -4,16 +4,16 @@ ms.assetid: 74be3505-c4bd-4ae2-aaed-700382839006
 title: Cómo cerrar la sesión del usuario actual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e59ce625ae7da8a2a4a901fbb1429ab0f9b638c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 029f7b1a68973f248162871572284a2dd20ffaaf34618a7e986035abf5f78f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664385"
 ---
 # <a name="how-to-log-off-the-current-user"></a>Cómo cerrar la sesión del usuario actual
 
-En el ejemplo siguiente se usa la función [**ExitWindows**](/windows/desktop/api/Winuser/nf-winuser-exitwindows) para cerrar la sesión del usuario actual.
+En el ejemplo siguiente se usa [**la función ExitWindows**](/windows/desktop/api/Winuser/nf-winuser-exitwindows) para cerrar la sesión del usuario actual.
 
 ``` syntax
 // Log off the current user. 
@@ -21,7 +21,7 @@ En el ejemplo siguiente se usa la función [**ExitWindows**](/windows/desktop/ap
 ExitWindows(0, 0);
 ```
 
-En el ejemplo siguiente se usa la función [**ExitWindowsEx**](/windows/desktop/api/Winuser/nf-winuser-exitwindowsex) para cerrar la sesión del usuario actual.
+En el ejemplo siguiente se usa [**la función ExitWindowsEx**](/windows/desktop/api/Winuser/nf-winuser-exitwindowsex) para cerrar la sesión del usuario actual.
 
 ``` syntax
 // Log off the current user. 
@@ -29,7 +29,7 @@ En el ejemplo siguiente se usa la función [**ExitWindowsEx**](/windows/desktop/
 ExitWindowsEx(EWX_LOGOFF, 0);
 ```
 
-La aplicación recibe el mensaje de [**\_ QUERYENDSESSION de WM**](wm-queryendsession.md) y muestra un cuadro de diálogo preguntando si es correcto para finalizar la sesión. Si el usuario hace clic en **sí**, el sistema cierra la sesión del usuario. Si el usuario hace clic en **no**, se cancela el cierre de sesión.
+La aplicación recibe el [**mensaje WM \_ QUERYENDSESSION**](wm-queryendsession.md) y muestra un cuadro de diálogo que pregunta si es correcto finalizar la sesión. Si el usuario hace clic **en Sí**, el sistema cierra la sesión del usuario. Si el usuario hace clic **en No**, se cancela el cierre de sesión.
 
 ``` syntax
 // Process the message in the window procedure. 
@@ -50,7 +50,7 @@ case WM_QUERYENDSESSION:
 
 <dl> <dt>
 
-[Cerrando sesión](logging-off.md)
+[Cerrar sesión](logging-off.md)
 </dt> </dl>
 
  

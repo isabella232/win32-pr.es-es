@@ -1,6 +1,6 @@
 ---
-description: 'Permite que el objeto de devolución de llamada especifique el número de elementos en la vista de carpeta. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensaje de SFVM_DEFITEMCOUNT (ShlObj. h)
+description: Permite que el objeto de devolución de llamada especifique el número de elementos en la vista de carpeta. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_DEFITEMCOUNT mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 62306eaa-e52e-432b-9233-d990519d5739
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4e3f746e422428ab9f925cf4ff3f460ccd578367
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29e92aca1a1f52c0722c890f097ddab33255e814ec35768208644a3a9d814353
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709885"
 ---
-# <a name="sfvm_defitemcount-message"></a>SFVM \_ DEFITEMCOUNT
+# <a name="sfvm_defitemcount-message"></a>Mensaje \_ SFVM DEFITEMCOUNT
 
-Permite que el objeto de devolución de llamada especifique el número de elementos en la vista de carpeta. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Permite que el objeto de devolución de llamada especifique el número de elementos en la vista de carpeta. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -39,7 +39,7 @@ SFVM_DEFITEMCOUNT
 
 <dl> <dt>
 
-*cItems* \[ enuncia\]
+*cItems* \[ out\]
 </dt> <dd>
 
 Número de elementos de la vista de carpeta.
@@ -50,11 +50,11 @@ Número de elementos de la vista de carpeta.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Macro MCI_TMSF_FRAME (Mciapi. h)
-description: La \_ \_ macro de Frame TMSF de MCI recupera el componente de fotogramas de un parámetro que contiene información de pistas empaquetadas/minutos/segundos/marcos (TMSF).
+title: MCI_TMSF_FRAME macro (Mciapi.h)
+description: La macro MCI TMSF FRAME recupera el componente de fotogramas de un parámetro que contiene información empaquetada de \_ \_ pistas, minutos, segundos y fotogramas (TMSF).
 ms.assetid: 1ba78d4f-4537-4955-abcc-842976b6b5b9
 keywords:
-- MCI_TMSF_FRAME de macros de Windows multimedia
+- MCI_TMSF_FRAME macro Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c5a6620137aea397c3f1bc04ff7fe821666d837
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90872f0a9391d30d7ec3af17e85203cebe433a4c24bde35e3a27db9b40ca30aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784235"
 ---
-# <a name="mci_tmsf_frame-macro"></a>\_TMSF de \_ Marcos MCI
+# <a name="mci_tmsf_frame-macro"></a>Macro \_ MCI TMSF \_ FRAME
 
-La macro de **\_ \_ Frame TMSF de MCI** recupera el componente de fotogramas de un parámetro que contiene información de pistas empaquetadas/minutos/segundos/marcos (TMSF).
+La **macro MCI \_ TMSF \_ FRAME** recupera el componente de fotogramas de un parámetro que contiene información empaquetada de pistas, minutos, segundos y fotogramas (TMSF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,13 +49,13 @@ Hora en formato TMSF.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el componente de marcos de la información de TMSF especificada.
+Devuelve el componente de fotogramas de la información de TMSF especificada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La hora en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene los minutos, el siguiente byte menos significativo que contiene los segundos y el byte más significativo que contiene fotogramas.
+La hora en formato TMSF se expresa como un valor **DWORD** con el byte menos significativo que contiene pistas, el siguiente byte menos significativo que contiene minutos, el siguiente byte menos significativo que contiene segundos y el byte más significativo que contiene fotogramas.
 
-La macro **MCI \_ TMSF \_ Frame** se define de la siguiente manera:
+La **macro \_ MCI TMSF \_ FRAME** se define de la siguiente manera:
 
 
 ```C++
@@ -68,11 +68,11 @@ La macro **MCI \_ TMSF \_ Frame** se define de la siguiente manera:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -80,10 +80,10 @@ La macro **MCI \_ TMSF \_ Frame** se define de la siguiente manera:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Macros MCI](mci-macros.md)
+[MCI Macros](mci-macros.md)
 </dt> </dl>
 
  

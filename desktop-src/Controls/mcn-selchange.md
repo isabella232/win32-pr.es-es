@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de MCN_SELCHANGE (commctrl. h)
-description: Se envía por un control de calendario mensual cuando cambia la fecha o el intervalo de fechas seleccionado actualmente. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: MCN_SELCHANGE de notificación (Commctrl.h)
+description: Enviado por un control de calendario mensual cuando cambia la fecha o el intervalo de fechas seleccionados actualmente. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 8923524f-d257-409d-bd3e-021684b88856
 keywords:
-- MCN_SELCHANGE controles de código de notificación de Windows
+- MCN_SELCHANGE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa328ca0173afd3a577f6cf14e0204cd5c0f7d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3aa4c1d1f2d4c99ab9980deae4b64dc25fa7caf0818df31d1f160b2b1645d62f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915025"
 ---
-# <a name="mcn_selchange-notification-code"></a>Código de notificación de SELCHANGE de MCN \_
+# <a name="mcn_selchange-notification-code"></a>Código de notificación \_ DE MCN SELCHANGE
 
-Se envía por un control de calendario mensual cuando cambia la fecha o el intervalo de fechas seleccionado actualmente. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Enviado por un control de calendario mensual cuando cambia la fecha o el intervalo de fechas seleccionados actualmente. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ MCN_SELCHANGE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMSELCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmselchange) que contiene información sobre el intervalo de fechas seleccionado actualmente.
+Puntero a una [**estructura NMSELCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmselchange) que contiene información sobre el intervalo de fechas seleccionado actualmente.
 
 </dd> </dl>
 
@@ -49,11 +49,11 @@ Puntero a una estructura [**NMSELCHANGE**](/windows/win32/api/commctrl/ns-commct
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Por ejemplo, el control envía MCN \_ SELCHANGE cuando el usuario cambia explícitamente la selección en el mes actual o cuando la selección se cambia implícitamente en respuesta a la navegación de mes anterior o siguiente. El sistema también envía este código de notificación a intervalos regulares para que el control pueda responder a los cambios de fecha.
+Por ejemplo, el control envía MCN SELCHANGE cuando el usuario cambia explícitamente la selección dentro del mes actual o cuando la selección cambia implícitamente en respuesta a la navegación del mes siguiente o \_ anterior. El sistema también envía este código de notificación a intervalos regulares para que el control pueda responder a los cambios de fecha.
 
-Este código de notificación es similar a [MCN \_ Select](mcn-select.md), pero se envía como respuesta a cualquier cambio de selección. MCN \_ Select solo se envía para una selección de fecha explícita.
+Este código de notificación es similar a [MCN \_ SELECT,](mcn-select.md)pero se envía en respuesta a cualquier cambio de selección. MCN \_ SELECT solo se envía para una selección de fecha explícita.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ Este código de notificación es similar a [MCN \_ Select](mcn-select.md), pero 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

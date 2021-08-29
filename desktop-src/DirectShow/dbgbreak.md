@@ -1,7 +1,7 @@
 ---
-description: Muestra un cuadro de mensaje con la cadena especificada, el nombre del archivo de código fuente y el número de línea. El usuario puede omitir el mensaje, entrar en el depurador o salir de la aplicación. Se omite en las compilaciones comerciales.
+description: Muestra un cuadro de mensaje con la cadena especificada, el nombre del archivo de origen y el número de línea. El usuario puede omitir el mensaje, escribir el depurador o salir de la aplicación. Se omite en las compilaciones comerciales.
 ms.assetid: ac4da7da-f9d0-44ae-9ad1-9a5908b288fb
-title: Macro DbgBreak (Wxdebug. h)
+title: Macro DbgBreak (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: 099344a295de2657b40218b993ab9c4cb6411353
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb727a573efebc2957d5eaddfb32d077d981503fb7bd8a7c9481e6841dcd901a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120052045"
 ---
-# <a name="dbgbreak-macro"></a>DbgBreak (macro)
+# <a name="dbgbreak-macro"></a>Macro DbgBreak
 
-Muestra un cuadro de mensaje con la cadena especificada, el nombre del archivo de código fuente y el número de línea. El usuario puede omitir el mensaje, entrar en el depurador o salir de la aplicación. Se omite en las compilaciones comerciales.
+Muestra un cuadro de mensaje con la cadena especificada, el nombre del archivo de origen y el número de línea. El usuario puede omitir el mensaje, escribir el depurador o salir de la aplicación. Se omite en las compilaciones comerciales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Cadena de texto.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta macro no devuelve ningún valor.
+Esta macro no devuelve un valor.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -65,7 +65,7 @@ DbgBreak("Unrecoverable error occurred.");
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ DbgBreak("Unrecoverable error occurred.");
 
 <dl> <dt>
 
-[Macros Assert y Breakpoint](assert-and-breakpoint-macros.md)
+[Aserción y macros de punto de interrupción](assert-and-breakpoint-macros.md)
 </dt> </dl>
 
  

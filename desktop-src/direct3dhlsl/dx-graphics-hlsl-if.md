@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: df4a1f049526422f39c3529395481548943c7e84
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 66c04a2ac9c995d3eafa0f93171483c784c72814
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118960"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473101"
 ---
 # <a name="if-statement"></a>if (Instrucción)
 
@@ -41,33 +41,12 @@ Parámetro opcional que controla cómo se compila la instrucción.
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Atributo</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>branch</td>
-<td>Evalúe solo un lado de la instrucción if en función de la condición dada.
-<blockquote>
-[!Note]<br />
-Cuando se usa <a href="dx-graphics-hlsl-sm2.md">Shader Model 2.x</a> o <a href="dx-graphics-hlsl-sm3.md">Shader Model 3.0,</a>cada vez que se usa la bifurcación dinámica se consumen recursos. Por lo tanto, si usa la bifurcación dinámica excesivamente cuando tiene como destino estos perfiles, puede recibir errores de compilación.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>quitar información de estructura jerárquica</td>
-<td>Evalúe ambos lados de la instrucción if y elija entre los dos valores resultantes.</td>
-</tr>
-</tbody>
-</table>
+
+| Atributo | Descripción | 
+|-----------|-------------|
+| branch | Evalúe solo un lado de la instrucción if en función de la condición dada.<blockquote>[!Note]<br />Cuando se usa <a href="dx-graphics-hlsl-sm2.md">Shader Model 2.x</a> o <a href="dx-graphics-hlsl-sm3.md">Shader Model 3.0</a>, cada vez que se usa la bifurcación dinámica se consumen recursos. Por lo tanto, si usa la bifurcación dinámica excesivamente cuando tiene como destino estos perfiles, puede recibir errores de compilación.</blockquote><br /> | 
+| quitar información de estructura jerárquica | Evalúe ambos lados de la instrucción if y elija entre los dos valores resultantes. | 
+
 
 
 
@@ -89,9 +68,9 @@ Una o varias [instrucciones HLSL](dx-graphics-hlsl-statement-blocks.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el compilador usa el método de rama para compilar una instrucción if, generará código que evaluará solo un lado de la instrucción if en función de la condición dada. Por ejemplo, en la instrucción if:
+Cuando el compilador usa el método de rama para compilar una instrucción if, generará código que solo evaluará un lado de la instrucción if en función de la condición dada. Por ejemplo, en la instrucción if:
 
 
 ```
@@ -103,9 +82,9 @@ Cuando el compilador usa el método de rama para compilar una instrucción if, g
 
 
 
-La **instrucción if** tiene un bloque else implícito, que es equivalente a x = x. Dado que hemos indicado al compilador que use el método de rama con el atributo de rama anterior, el código compilado evaluará x y ejecutará solo el lado que se debe ejecutar; si x es cero, ejecutará  el otro lado y, si es distinto de cero, ejecutará el **lado** siguiente.
+La **instrucción if** tiene un bloque else implícito, que es equivalente a x = x. Dado que hemos indicado al compilador que use el método de rama con el atributo de rama anterior, el código compilado evaluará x y ejecutará solo el lado que se debe ejecutar; si x es cero, ejecutará el lado **else** y, si es distinto de cero, ejecutará el **lado** siguiente.
 
-Por el contrario, si se usa el atributo **flatten,** el código compilado evaluará ambos lados de la **instrucción if** y elegirá entre los dos valores resultantes con el valor original de x. Este es un ejemplo de un uso del atributo flatten:
+Por el contrario, si se usa el atributo **flatten,** el código compilado evaluará ambos lados de la **instrucción if** y elegirá entre los dos valores resultantes con el valor original de x. Este es un ejemplo de uso del atributo flatten:
 
 
 ```
@@ -117,7 +96,7 @@ Por el contrario, si se usa el atributo **flatten,** el código compilado evalua
 
 
 
-Hay ciertos casos en los que el uso de la rama o los atributos planos puede generar un error de compilación. El atributo de rama puede producir un error si cualquiera de los lados de la instrucción if contiene una función de degradado, como [**texas2D.**](dx-graphics-hlsl-tex2d.md) El atributo flatten puede producir un error si cualquiera de los lados de la instrucción if contiene una instrucción stream append o cualquier otra instrucción que tenga efectos secundarios.
+Hay ciertos casos en los que el uso de la rama o los atributos aplanado puede generar un error de compilación. El atributo de rama puede producir un error si cualquiera de los lados de la instrucción if contiene una función de degradado, como [**tex2D.**](dx-graphics-hlsl-tex2d.md) El atributo flatten puede producir un error si cualquiera de los lados de la instrucción if contiene una instrucción stream append o cualquier otra instrucción que tenga efectos secundarios.
 
 Una **instrucción if** también puede usar un bloque else opcional. Si la **expresión if** es true, se procesa el código del bloque de instrucciones asociado a la instrucción if. De lo contrario, se procesa el bloque de instrucciones asociado al bloque else opcional.
 
@@ -125,7 +104,7 @@ Una **instrucción if** también puede usar un bloque else opcional. Si la **exp
 
 <dl> <dt>
 
-[Control de flujo](dx-graphics-hlsl-flow-control.md)
+[Flow Control](dx-graphics-hlsl-flow-control.md)
 </dt> </dl>
 
  

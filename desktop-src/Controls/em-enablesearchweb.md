@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_ENABLESEARCHWEB (CommCtrl. h)
+title: EM_ENABLESEARCHWEB mensaje (CommCtrl.h)
 description: Habilita o deshabilita la característica "Buscar en la web" y la entrada del menú contextual.
 ms.assetid: 9393f03e-0719-458b-8122-616df738c417
 keywords:
-- EM_ENABLESEARCHWEB controles de mensajes de Windows
+- EM_ENABLESEARCHWEB controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdb2638476027f0a7fe2bb1a66a3a00a330e28c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33cc76e81db5ea7c5b596e0876cad4cfabecc41b5bae62d4a666be3727b38725
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915865"
 ---
-# <a name="em_enablesearchweb-message"></a>\_Mensaje ENABLESEARCHWEB em
+# <a name="em_enablesearchweb-message"></a>Mensaje \_ EM ENABLESEARCHWEB
 
 Habilita o deshabilita la característica "Buscar en la web" y la entrada del menú contextual.
 
@@ -32,7 +32,7 @@ Habilita o deshabilita la característica "Buscar en la web" y la entrada del me
 *wParam* 
 </dt> <dd>
 
-Un valor de **true** indica que la característica "Buscar en la web" está habilitada y un valor de **false** indica que está deshabilitada.
+Un valor **TRUE indica** que la característica "Buscar en la web" está habilitada y un valor **false** indica que está deshabilitada.
 
 </dd> <dt>
 
@@ -45,11 +45,11 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si deshabilita "Buscar en la web" con este mensaje, el [**mensaje \_ SEARCHWEB em**](em-searchweb.md) no tiene ningún efecto.
+Si deshabilita "Buscar en la web" con este mensaje, el mensaje [**EM \_ SEARCHWEB**](em-searchweb.md) no tiene ningún efecto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Si deshabilita "Buscar en la web" con este mensaje, el [**mensaje \_ SEARCHWEB e
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 y 1809 \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2019 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio 1809 \[\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Si deshabilita "Buscar en la web" con este mensaje, el [**mensaje \_ SEARCHWEB e
 **Referencia**
 </dt> <dt>
 
-[**\_SEARCHWEB em**](em-searchweb.md)
+[**EM \_ SEARCHWEB**](em-searchweb.md)
 </dt> </dl>
 
  

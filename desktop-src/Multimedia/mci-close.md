@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_CLOSE (mmsystem. h)
-description: El \_ comando MCI Close libera el acceso a un dispositivo o archivo. Todos los dispositivos reconocen este comando.
+title: MCI_CLOSE comando (Mmsystem.h)
+description: El comando MCI \_ CLOSE libera el acceso a un dispositivo o archivo. Todos los dispositivos reconocen este comando.
 ms.assetid: 62dadd90-e8fc-4bdd-9f8c-f9ea9ff5550f
 keywords:
-- Comando de MCI_CLOSE de Windows multimedia
+- MCI_CLOSE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 417129595405aeb6c9a2345eb9c3f03f1e2731e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 047bea34aab9130cc609904d56ff95ba593271670b27a5bc3d763180ccf50418
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784635"
 ---
-# <a name="mci_close-command"></a>Comando de cierre de MCI \_
+# <a name="mci_close-command"></a>Comando MCI \_ CLOSE
 
-El \_ comando MCI Close libera el acceso a un dispositivo o archivo. Todos los dispositivos reconocen este comando.
+El comando MCI \_ CLOSE libera el acceso a un dispositivo o archivo. Todos los dispositivos reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,27 +50,27 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificación de MCI o \_ espera de MCI. Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY o MCI \_ WAIT. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpClose"></span><span id="lpclose"></span><span id="LPCLOSE"></span>*lpClose*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms genérica de MCI**](mci-generic-parms.md) . (También puede usar una estructura **\_ \_ parms de cierre de MCI** . Para obtener más información, vea los comentarios de **MCI \_ Generic \_ parms**).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (También puede usar una estructura **MCI \_ CLOSE \_ PARMS.** Para obtener más información, vea los comentarios de **MCI \_ GENERIC \_ PARMS).**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Salir de una aplicación sin cerrar los dispositivos MCI abiertos puede dejar el dispositivo inaccesible. La aplicación debe cerrar explícitamente cada dispositivo o archivo cuando termine de usarlo. MCI descarga el dispositivo cuando se cierran todas las instancias del dispositivo o todos los archivos asociados.
+Salir de una aplicación sin cerrar ningún dispositivo MCI que haya abierto puede dejar el dispositivo inaccesible. La aplicación debe cerrar explícitamente cada dispositivo o archivo cuando haya terminado con él. MCI descarga el dispositivo cuando se cierran todas las instancias del dispositivo o todos los archivos asociados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Salir de una aplicación sin cerrar los dispositivos MCI abiertos puede dejar el
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -88,10 +88,10 @@ Salir de una aplicación sin cerrar los dispositivos MCI abiertos puede dejar el
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

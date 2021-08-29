@@ -3,7 +3,7 @@ title: EM_LIMITTEXT mensaje (Winuser.h)
 description: 'EM_LIMITTEXT mensaje: establece el límite de texto de un control de edición.'
 ms.assetid: 5a605de7-8dc7-4c54-8f18-e0b08c720856
 keywords:
-- EM_LIMITTEXT mensaje Controles de Windows
+- EM_LIMITTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a80ce29d4ee5155f6b3c5c32609366982655a078
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 82797b0a7976296dfb71d217ccb52dd71358cfbcf1e59ed31421924e5a73e5d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120048715"
 ---
 # <a name="em_limittext-message"></a>Mensaje \_ LIMITTEXT DE EM
 
@@ -61,21 +61,21 @@ Antes **de llamar a EM \_ LIMITTEXT,** el límite predeterminado para la cantida
 
 Para los controles de edición de una sola línea, el límite de texto es 0x7FFFFFFE bytes o el valor del parámetro *wParam,* lo que sea menor. Para los controles de edición multilínea, este valor es -1 byte o el valor del parámetro *wParam,* lo que sea menor.
 
-**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Use el mensaje [**EM \_ EXLIMITTEXT para**](em-exlimittext.md) valores de longitud de texto mayores que 64 000. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
+**Edición enriqueceda:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Use el mensaje [**EM \_ EXLIMITTEXT para**](em-exlimittext.md) valores de longitud de texto mayores que 64 000. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

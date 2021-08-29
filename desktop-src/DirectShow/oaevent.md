@@ -1,19 +1,19 @@
 ---
-description: El tipo de datos OAEVENT define un identificador de evento que pueden usar los clientes de automatización OLE, como Microsoft Visual Basic 6,0.
+description: El tipo de datos OAEVENT define un identificador de eventos que pueden usar los clientes de OLE Automation, como Microsoft Visual Basic 6.0.
 ms.assetid: 2c260592-98a9-4f85-accf-282bd5231d5c
-title: OAEVENT (control. h)
+title: OAEVENT (Control.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d24dbc2ed735c899d94e6024e84de189499627cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e38cab927e36c7e7508bf3ec7d21150585763226849380c880566846329cc04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050855"
 ---
 # <a name="oaevent"></a>OAEVENT
 
-El tipo de datos **OAEVENT** define un identificador de evento que pueden usar los clientes de automatización OLE, como Microsoft Visual Basic 6,0.
+El **tipo de datos OAEVENT** define un identificador de eventos que pueden usar los clientes de OLE Automation, como Microsoft Visual Basic 6.0.
 
 
 ```C++
@@ -28,7 +28,7 @@ typedef LONG_PTR OAEVENT;
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Control. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Control.h (incluir Dshow.h)</dt> </dl> |
 
 
 
@@ -36,7 +36,7 @@ typedef LONG_PTR OAEVENT;
 
 <dl> <dt>
 
-[Tipos de datos de DirectShow](directshow-data-types.md)
+[DirectShow Tipos de datos](directshow-data-types.md)
 </dt> <dt>
 
 [**IMediaEvent::GetEventHandle**](/windows/desktop/api/Control/nf-control-imediaevent-geteventhandle)

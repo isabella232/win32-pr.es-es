@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_ESCAPE (mmsystem. h)
-description: El \_ comando MCI escape envía una cadena directamente al dispositivo. Los dispositivos de videodisco reconocen este comando.
+title: MCI_ESCAPE comando (Mmsystem.h)
+description: El comando ESCAPE de MCI \_ envía una cadena directamente al dispositivo. Los dispositivos Videodisc reconocen este comando.
 ms.assetid: 56ebc717-f0f7-4612-8e51-57b13ff9d42b
 keywords:
-- Comando de MCI_ESCAPE de Windows multimedia
+- MCI_ESCAPE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab4bcd55590cb1b2cab5482eeb921118531002c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45a3c00955aa7476534f58c01f55e43d7cec562439741a9952372d19fda29a3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784530"
 ---
-# <a name="mci_escape-command"></a>Comando de escape de MCI \_
+# <a name="mci_escape-command"></a>Comando ESCAPE de MCI \_
 
-El \_ comando MCI escape envía una cadena directamente al dispositivo. Los dispositivos de videodisco reconocen este comando.
+El comando ESCAPE de MCI \_ envía una cadena directamente al dispositivo. Los dispositivos Videodisc reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,36 +50,36 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificación de MCI o \_ espera de MCI. Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY o MCI \_ WAIT. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpEscape"></span><span id="lpescape"></span><span id="LPESCAPE"></span>*lpEscape*
 </dt> <dd>
 
-Puntero a una [**estructura \_ parms de secuencias de \_ escape \_ de MCI Vd**](mci-vd-escape-parms.md) .
+Puntero a una [**estructura MCI \_ VD ESCAPE \_ \_ PARMS.**](mci-vd-escape-parms.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los datos que se envían con el escape de MCI \_ dependen del dispositivo y normalmente se pasan directamente al hardware asociado con el dispositivo.
+Los datos enviados con MCI ESCAPE dependen del dispositivo y normalmente se pasan directamente al \_ hardware asociado al dispositivo.
 
-La marca adicional siguiente se aplica a los dispositivos de videodisco:
+La siguiente marca adicional se aplica a los dispositivos videodisc:
 
 <dl> <dt>
 
-<span id="MCI_VD_ESCAPE_STRING"></span><span id="mci_vd_escape_string"></span>cadena de escape de MCI \_ Vd \_ \_
+<span id="MCI_VD_ESCAPE_STRING"></span><span id="mci_vd_escape_string"></span>CADENA DE \_ ESCAPE VD \_ DE MCI \_
 </dt> <dd>
 
-Una cadena de comandos se especifica en el miembro **lpstrCommand** de la estructura identificada por *lpEscape*. Esta marca es obligatoria.
+Se especifica una cadena de comando en el **miembro lpstrCommand** de la estructura identificada por *lpEscape*. Esta marca es obligatoria.
 
 </dd> </dl>
 
@@ -91,7 +91,7 @@ Una cadena de comandos se especifica en el miembro **lpstrCommand** de la estruc
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -99,10 +99,10 @@ Una cadena de comandos se especifica en el miembro **lpstrCommand** de la estruc
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

@@ -3,36 +3,36 @@ title: Referencia multimedia
 description: Referencia multimedia
 ms.assetid: 71e31f62-6aad-4b39-ba74-285c0a633e41
 keywords:
-- Multimedia de Windows, referencia
+- Windows multimedia,reference
 - multimedia, referencia
 - referencia multimedia, acerca de
-- referencia de multimedia, acerca de
+- referencia para multimedia, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ea0987ca1c9453380ab633821da04a28117a13a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a85521039b1ca229f0baefaf8eac2b97d3cab7110fc82a02af9f8af765dd23d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038695"
 ---
 # <a name="multimedia-reference"></a>Referencia multimedia
 
-Los elementos siguientes están asociados a multimedia:
+Los elementos siguientes están asociados a elementos multimedia:
 
 -   [Funciones multimedia](multimedia-functions.md)
 -   [Estructuras multimedia](multimedia-structures.md)
--   [Macros multimedia](multimedia-macros.md)
+-   [Multimedia Macros](multimedia-macros.md)
 -   [Mensajes multimedia](multimedia-messages.md)
--   [Interfaces multimedia](multimedia-interfaces.md)
+-   [Multimedia Interfaces](multimedia-interfaces.md)
 -   [Comandos multimedia](multimedia-commands.md)
 -   [Cadenas de comandos multimedia](multimedia-command-strings.md)
 -   [Tipos multimedia](multimedia-types.md)
--   [Constantes de multimedia](multimedia-constants.md)
+-   [Constantes multimedia](multimedia-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

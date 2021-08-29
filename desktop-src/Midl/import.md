@@ -1,9 +1,9 @@
 ---
 title: import (atributo)
-description: La Directiva Import especifica otro archivo IDL, ODL o de encabezado que contiene las definiciones a las que desea hacer referencia desde el archivo IDL principal.
+description: La directiva import especifica otro archivo IDL, ODL o de encabezado que contiene las definiciones a las que desea hacer referencia desde el archivo IDL principal.
 ms.assetid: b52fb2c7-ce60-474f-8833-7a821844f747
 keywords:
-- importar el atributo MIDL
+- ATRIBUTO DE IMPORTACIÓN MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64ff13c069c6bba819720a9d1120a42c25af4b51
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cd389d56dff242132c628beedaf9c70d697f1fead0286aa0b59cd492a5a1e882
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040091"
 ---
 # <a name="import-attribute"></a>import (atributo)
 
-La directiva **Import** especifica otro archivo IDL, ODL o de encabezado que contiene las definiciones a las que desea hacer referencia desde el archivo IDL principal.
+La **directiva import** especifica otro archivo IDL, ODL o de encabezado que contiene las definiciones a las que desea hacer referencia desde el archivo IDL principal.
 
 ``` syntax
 import "filename" [[ , ... ]] ;
@@ -34,35 +34,35 @@ import "filename" [[ , ... ]] ;
 *filename* 
 </dt> <dd>
 
-Especifica el nombre del archivo de encabezado, IDL o ODL que se va a importar.
+Especifica el nombre del archivo de encabezado, IDL o ODL que se importará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Con la Directiva de **importación** , todas las instrucciones idl del archivo importado, como definiciones de tipo, declaraciones de constantes y definiciones de interfaz, pasan a estar disponibles para la importación. Archivo IDL.
+Con la **directiva import,** todas las instrucciones IDL del archivo importado, como typedefs, declaraciones constantes y definiciones de interfaz, están disponibles para la importación. Archivo IDL.
 
-El archivo importado se procesa por separado (lo que significa que el preprocesador CPP se invoca de forma independiente) desde el archivo IDL de importación. De esta manera, las directivas de preprocesador, como \# definir, no se exportan desde un archivo IDL o de encabezado importado al archivo IDL de importación.
+El archivo importado se procesa por separado (lo que significa que el preprocesador CPP se invoca de forma independiente) del archivo IDL de importación. De esta manera, las directivas de preprocesador, como define, no se llevan de un encabezado importado o un archivo IDL al archivo \# IDL de importación.
 
-Como la macro de preprocesador de lenguaje C **\# incluye**, la directiva **Import** indica al compilador que incluya los tipos de datos que se definieron en los archivos IDL importados. A diferencia de la directiva **\# include** , la directiva **Import** omite los prototipos de procedimiento, ya que no se genera ningún código auxiliar para nada en el archivo importado.
+Al igual que la macro de preprocesador del lenguaje C, incluye , la directiva **import** indica al compilador que incluya los tipos de datos definidos en los archivos IDL importados. **\#** A diferencia **\# de la directiva include,** la directiva **import** omite los prototipos de procedimiento, ya que no se genera código auxiliar para nada en el archivo importado.
 
-Para obtener información específica sobre cómo usar **importar** para incluir archivos de encabezado en un archivo IDL, vea [importar archivos de encabezado del sistema](importing-system-header-files.md).
+Para obtener información específica sobre el uso **de import** para incluir archivos de encabezado en un archivo IDL, vea [Importing System Header Files](importing-system-header-files.md).
 
-Encabezado del lenguaje C (. H) generado para la interfaz no contiene directamente los tipos importados, sino que genera una directiva **\# include** para el archivo de encabezado correspondiente a la interfaz importada. Por ejemplo, al importar BASE. IDL en el derivado. IDL, derivado del archivo de encabezado generado. H contendrá la directiva **\# include** base. H.
+Encabezado de lenguaje C (. El archivo H) generado para la interfaz no contiene directamente los tipos importados, sino que genera una directiva **\# include** para el archivo de encabezado correspondiente a la interfaz importada. Por ejemplo, al importar BASE. IDL en EL DERIVADO. IDL, el archivo de encabezado generado DERIVADO. H contendrá la directiva **\# include** BASE.H.
 
 Se aplican las reglas siguientes:
 
--   La palabra clave **Import** es opcional y puede aparecer cero o más veces en el archivo IDL.
--   Cada palabra clave de **importación** puede asociarse a más de un nombre de archivo.
+-   La **palabra clave import** es opcional y puede aparecer cero o más veces en el archivo IDL.
+-   Cada **palabra clave** import se puede asociar a más de un nombre de archivo.
 -   Separe varios nombres de archivo con comas.
--   Debe escribir el nombre de archivo entre comillas y finalizar la instrucción de importación con un punto y coma (;).
--   Puede importar una interfaz que no tenga atributos en otro archivo IDL. Sin embargo, la interfaz debe contener solo tipos de contenido; no puede contener ningún procedimiento. Si hay un procedimiento incluido en la interfaz importada, debe especificar un atributo [**local**](local.md) o [**UUID**](uuid.md) .
--   La función de **importación** es idempotentÂ â € "â es decir, la importación de una interfaz más de una vez no tiene ningún efecto adicional.
+-   Debe incluir el nombre de archivo entre comillas y finalizar la instrucción de importación con un punto y coma (;).
+-   Puede importar una interfaz que no tenga atributos en otro archivo IDL. Sin embargo, la interfaz solo debe contener tipos de datos; no puede contener ningún procedimiento. Si incluso hay un procedimiento contenido en la interfaz importada, debe especificar un atributo [**UUID**](uuid.md) [**o local.**](local.md)
+-   La **función** de importación es idempotente, es decir, la importación de una interfaz más de una vez no tiene ningún efecto adicional.
 
 > [!Note]  
-> El comportamiento de la Directiva de **importación** es independiente del modo de compilador de MIDL modificadores [**/MS \_ ext**](-ms-ext.md) (el valor predeterminado), [**/OSF**](-osf.md)y [**/App \_ config**](-app-config.md). Sin embargo, el modo de compilador (**/OSF** o **/MS \_ ext**) puede afectar a la decoración de atributos de puntero en los tipos importados. Para obtener más información, vea [herencia de tipos de atributos de puntero](/windows/desktop/Rpc/pointer-attribute-type-inheritance).
+> El comportamiento de la **directiva de** importación es independiente de los modificadores de modo del compilador MIDL [**/ms \_ ext**](-ms-ext.md) (valor predeterminado), [**/osf**](-osf.md)y [**/app \_ config**](-app-config.md). Sin embargo, el modo del compilador (**/osf** o **/ms \_ ext**) puede afectar a la decoración de atributos de puntero en los tipos importados. Para obtener más información, [vea Herencia de tipos de atributo de puntero.](/windows/desktop/Rpc/pointer-attribute-type-inheritance)
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos
 
@@ -76,7 +76,7 @@ import "part1.idl", "part2.idl", "part3.idl";
 
 <dl> <dt>
 
-[**configuración de/APP \_**](-app-config.md)
+[**/app \_ config**](-app-config.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
@@ -85,7 +85,7 @@ import "part1.idl", "part2.idl", "part3.idl";
 [**importlib**](importlib.md)
 </dt> <dt>
 
-[**inclui**](include.md)
+[**incluír**](include.md)
 </dt> <dt>
 
 [Importación de archivos de encabezado del sistema](importing-system-header-files.md)
@@ -94,12 +94,12 @@ import "part1.idl", "part2.idl", "part3.idl";
 [Importar archivos y bibliotecas de tipos](importing-files-and-type-libraries.md)
 </dt> <dt>
 
-[**\_ext/MS**](-ms-ext.md)
+[**/ms \_ ext**](-ms-ext.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

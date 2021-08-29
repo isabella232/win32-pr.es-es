@@ -1,7 +1,7 @@
 ---
-description: El método CDrawImage es un método de constructor.
+description: El método CDrawImage es un método constructor.
 ms.assetid: 654e0b82-2e4f-42e9-8ab5-dcb438e67332
-title: Constructor CDrawImage. CDrawImage (Winutil. h)
+title: Constructor CDrawImage.CDrawImage (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ab76b747881193d23b14c8cdb8b20e21a68027ce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1a0e8599710e79ee987974ad76534a01487cf7b26ea805122a53ee47fc675c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043695"
 ---
-# <a name="cdrawimagecdrawimage-constructor"></a>Constructor CDrawImage. CDrawImage
+# <a name="cdrawimagecdrawimage-constructor"></a>Constructor CDrawImage.CDrawImage
 
-El `CDrawImage` método es un método de constructor.
+El `CDrawImage` método es un método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,8 +55,8 @@ Puntero al objeto [**CBaseWindow**](cbasewindow.md) propietario.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Puntero al objeto [**CBaseWindow**](cbasewindow.md) propietario.
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> </dl>
 
  

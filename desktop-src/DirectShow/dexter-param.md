@@ -1,7 +1,7 @@
 ---
-description: Especifica el valor que supone una propiedad en un momento dado.
+description: Especifica el valor que una propiedad asume en un momento dado.
 ms.assetid: 117868b7-65e5-4b3b-9e50-4106ee6a65d0
-title: DEXTER_PARAM estructura (QEDIT. h)
+title: DEXTER_PARAM estructura (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 22b0f6ef0a91f9a6d9163a03c17f6e86ee8b5f4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13bd14602b331e334cdec8cd1aedc7250b04c0ae4df2e5e4e9997c67c84d707d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051965"
 ---
-# <a name="dexter_param-structure"></a>Estructura del parámetro DEXTERity \_
+# <a name="dexter_param-structure"></a>ESTRUCTURA DE PARAM DE PARAM DE PARAM DE \_ PARAM
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-Especifica el valor que supone una propiedad en un momento dado.
+Especifica el valor que una propiedad asume en un momento dado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,16 +60,16 @@ Reservado. Establecer en cero.
 
 </dd> <dt>
 
-**Nvalores**
+**nValues**
 </dt> <dd>
 
-Número de valores que asume la propiedad.
+Número de valores que la propiedad asume.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El objeto debe admitir la interfaz **IDispatch** .
+El objeto debe admitir la **interfaz IDispatch.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ El objeto debe admitir la interfaz **IDispatch** .
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>QEDIT. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Qedit.h</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ El objeto debe admitir la interfaz **IDispatch** .
 [**IPropertySetter**](ipropertysetter.md)
 </dt> <dt>
 
-[**valor de DEXTERity \_**](dexter-value.md)
+[**VALUE DE LA \_ PROPIEDAD**](dexter-value.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si el PIN admite la reconexión dinámica.
+description: Marca que indica si el pin admite la reconexión dinámica.
 ms.assetid: c8286dda-0d39-4707-8e5b-d9d84d414408
-title: 'Miembro CBasePin:: m_bCanReconnectWhenActive (Amfilter. h)'
+title: Miembro CBasePin::m_bCanReconnectWhenActive (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 25bfbb38c0db05e3628d0421e1b89102577cdaea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db402c42b130f9a8148c9259dad28d229825125552d36308bbc5877fd8c74999
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087415"
 ---
-# <a name="cbasepinm_bcanreconnectwhenactive-member"></a>Miembro bCanReconnectWhenActive CBasePin:: m \_
+# <a name="cbasepinm_bcanreconnectwhenactive-member"></a>Miembro CBasePin::m \_ bCanReconnectWhenActive
 
-Marca que indica si el PIN admite la reconexión dinámica.
+Marca que indica si el pin admite la reconexión dinámica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ bool m_bCanReconnectWhenActive;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor predeterminado de esta marca **es false**.
+El valor predeterminado de esta **marca es FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ El valor predeterminado de esta marca **es false**.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ El valor predeterminado de esta marca **es false**.
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

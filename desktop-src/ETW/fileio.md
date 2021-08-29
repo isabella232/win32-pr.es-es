@@ -1,5 +1,5 @@
 ---
-description: 'Clase FileIo: esta clase es la clase primaria para los eventos de E/S de archivo. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'Clase FileIo: esta clase es la clase primaria para los eventos de E/S de archivos. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 8e006a63-a061-4b62-8f90-b8c8823bb047
 title: Clase FileIo
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 716528902a115e23eae5b49ef572b87a71d11e25
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: df82479b2bb2f82f93d83a655b4e5cd45003b0d6b211be24086365f139219ad6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041875"
 ---
 # <a name="fileio-class"></a>Clase FileIo
 
@@ -45,7 +45,7 @@ Para habilitar los eventos de E/S de archivo en una sesión de registro del kern
 -   **\_E/S DE ARCHIVO DE MARCA DE SEGUIMIENTO DE \_ \_ \_ EVENTOS**
 -   **EVENT \_ TRACE \_ FLAG \_ FILE \_ IO \_ INIT**
 
-Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos de E/S de archivos llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y [**especificando FileIoGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid.* Use los siguientes tipos de eventos para identificar el evento real al consumir eventos.
+Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos de E/S de archivos llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**FileIoGuid**](nt-kernel-logger-constants.md) como parámetro *pGuid.* Use los siguientes tipos de eventos para identificar el evento real al consumir eventos.
 
 
 
@@ -60,11 +60,11 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 | El valor del tipo de evento es 77 | Evento de notificación de directorio. La [**clase MOF FileIo \_ DirEnum**](fileio-direnum.md) define los datos de evento para este evento.                                                            |
 | El valor del tipo de evento es 69 | Establecer evento de información. La [**clase MOF FileIo \_ Info**](fileio-info.md) define los datos de evento para este evento.                                                                         |
 | El valor del tipo de evento es 70 | Evento de eliminación del archivo. La [**clase MOF FileIo \_ Info**](fileio-info.md) define los datos de evento para este evento.                                                                             |
-| El valor del tipo de evento es 71 | Cambiar el nombre del evento de archivo. La [**clase MOF FileIo \_ Info**](fileio-info.md) define los datos de evento para este evento.                                                                             |
-| El valor del tipo de evento es 74 | Evento de información del archivo de consulta. La [**clase MOF FileIo \_ Info**](fileio-info.md) define los datos de evento para este evento.                                                                  |
+| El valor del tipo de evento es 71 | Evento de cambio de nombre de archivo. La [**clase MOF FileIo \_ Info**](fileio-info.md) define los datos de evento para este evento.                                                                             |
+| El valor del tipo de evento es 74 | Evento de información de archivo de consulta. La [**clase MOF FileIo \_ Info**](fileio-info.md) define los datos de evento para este evento.                                                                  |
 | El valor del tipo de evento es 75 | Evento de control del sistema de archivos. La [**clase MOF FileIo \_ Info**](fileio-info.md) define los datos de evento para este evento.                                                                     |
 | El valor del tipo de evento es 76 | Evento de fin de la operación. La [**clase MOF FileIo \_ OpEnd**](fileio-opend.md) define los datos de evento para este evento.                                                                      |
-| El valor del tipo de evento es 67 | Evento de lectura de archivo. La [**clase MOF FileIo \_ ReadWrite**](fileio-readwrite.md) define los datos de evento para este evento.                                                                     |
+| El valor del tipo de evento es 67 | Evento de lectura de archivos. La [**clase MOF FileIo \_ ReadWrite**](fileio-readwrite.md) define los datos de evento para este evento.                                                                     |
 | El valor del tipo de evento es 68 | Evento de escritura de archivos. La [**clase MOF FileIo \_ ReadWrite**](fileio-readwrite.md) define los datos de evento para este evento.                                                                    |
 | El valor del tipo de evento es 65 | Evento de limpieza. El evento se genera cuando se libera el último identificador del archivo. La [**clase MOF \_ FileIo SimpleOp**](fileio-simpleop.md) define los datos de evento para este evento.   |
 | El valor del tipo de evento es 66 | Cierre el evento. El evento se genera cuando se libera el objeto de archivo. La [**clase MOF \_ FileIo SimpleOp**](fileio-simpleop.md) define los datos de evento para este evento.                     |
@@ -80,14 +80,14 @@ Los eventos de E/S de archivo se registran al principio de la operación.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

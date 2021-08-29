@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TVM_GETLINECOLOR (commctrl. h)
-description: El \_ mensaje TVM GETLINECOLOR obtiene el color de línea actual.
+title: TVM_GETLINECOLOR mensaje (Commctrl.h)
+description: El mensaje GETLINECOLOR de TVM \_ obtiene el color de línea actual.
 ms.assetid: e74441b3-5d4f-4454-b896-2e96ce649419
 keywords:
-- TVM_GETLINECOLOR controles de mensajes de Windows
+- TVM_GETLINECOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fd55149f38fb17238e13135e798ebbe55b15009
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 56ed83649795ccbd9b41270272f5a8984ddf257c3f5881a0c0fb69232081974e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914005"
 ---
-# <a name="tvm_getlinecolor-message"></a>\_Mensaje de GETLINECOLOR TVM
+# <a name="tvm_getlinecolor-message"></a>Mensaje \_ GETLINECOLOR de TVM
 
-El mensaje **TVM \_ GETLINECOLOR** obtiene el color de línea actual.
+El **mensaje \_ GETLINECOLOR de TVM** obtiene el color de línea actual.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,11 +37,11 @@ El mensaje **TVM \_ GETLINECOLOR** obtiene el color de línea actual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el color de línea actual o el valor predeterminado de CLR si no se ha \_ especificado ninguno.
+Devuelve el color de línea actual o el valor DEFAULT de CLR \_ si no se ha especificado ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje solo recupera los colores de línea. Para recuperar los colores de los "+" y "-" dentro de los botones, use el mensaje [**TVM \_ GETTEXTCOLOR**](tvm-gettextcolor.md) .
+Este mensaje solo recupera los colores de línea. Para recuperar los colores de "+" y "-" dentro de los botones, use el mensaje [**\_ GETTEXTCOLOR de TVM.**](tvm-gettextcolor.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Este mensaje solo recupera los colores de línea. Para recuperar los colores de 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
