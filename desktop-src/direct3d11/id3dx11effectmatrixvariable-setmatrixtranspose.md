@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX11EffectMatrixVariable SetMatrixTranspose (D3dx11effect. h)
+title: Método ID3DX11EffectMatrixVariable SetMatrixTranspose (D3dx11effect.h)
 description: Transponer y establecer una matriz de punto flotante.
 ms.assetid: 228546c9-0141-4e17-bc8f-bff7201825d7
 keywords:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5daf77b6e2e9578dcbc6c9cfe80f57b149097c32
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: de86741ba3168276da48756082e2e59f876009523ea940cdb58d070b4e72c3a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104986934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535118"
 ---
-# <a name="id3dx11effectmatrixvariablesetmatrixtranspose-method"></a>ID3DX11EffectMatrixVariable:: SetMatrixTranspose (método)
+# <a name="id3dx11effectmatrixvariablesetmatrixtranspose-method"></a>Método ID3DX11EffectMatrixVariable::SetMatrixTranspose
 
 Transponer y establecer una matriz de punto flotante.
 
@@ -46,7 +46,7 @@ HRESULT SetMatrixTranspose(
 *pData* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
 Puntero al primer elemento de una matriz.
 
@@ -56,14 +56,14 @@ Puntero al primer elemento de una matriz.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Transponer una matriz reorganizará el orden de los datos del orden de las columnas de fila al orden de las filas de columnas (o viceversa).
+La creación de una matriz reorganizará el orden de los datos del orden de las columnas de fila al orden de las filas de columna (o viceversa).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Transponer una matriz reorganizará el orden de los datos del orden de las colum
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

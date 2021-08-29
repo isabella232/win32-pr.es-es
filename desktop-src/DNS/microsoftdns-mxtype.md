@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_MXType (clase)
-description: La subclase de MicrosoftDNS \_ ResourceRecord que representa un RR de intercambio de correo (MR).
+title: MicrosoftDNS_MXType clase
+description: Subclase de ResourceRecord de MicrosoftDNS \_ que representa un RR de Mail Exchanger (MR).
 ms.assetid: 7c147628-5bda-48dd-beb4-e630d1886da8
 keywords:
-- DNS de la clase MicrosoftDNS_MXType
-- MicrosoftDNS_MXType de la clase DNS, descrito
+- MicrosoftDNS_MXType dns de clase
+- MicrosoftDNS_MXType clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 652743178b71b2f9fed296ecfa4427f85b5cf1c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6100534c1f0640b3810c33d89e18fe004beb09cab5ce4169ce6b8f4b6c0ffe28
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642209"
 ---
-# <a name="microsoftdns_mxtype-class"></a>MicrosoftDNS ( \_ clase MXType)
+# <a name="microsoftdns_mxtype-class"></a>Clase MXType de MicrosoftDNS \_
 
-La subclase de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa un RR de intercambio de correo (MR).
+Subclase de [**\_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un RR de Mail Exchanger (MR).
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ class MicrosoftDNS_MXType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ MXType** tiene estos tipos de miembros:
+La **clase \_ MXType de MicrosoftDNS** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MicrosoftDNS \_ MXType** tiene estos métodos.
+La **clase \_ MXType de MicrosoftDNS** tiene estos métodos.
 
 
 
 | Método                             | Descripción                                                                                                                                                                                                                                                                                                                                                                   |
 |:-----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Crea una instancia de un tipo MX de RR basándose en los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario, la clase (valor predeterminado = IN), el valor de período de vida, la preferencia de registro y el nombre de host que desea que sea un intercambio de correo. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/> |
-| **Modify**                         | Actualiza el TTL, la preferencia y el intercambio de correo a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: implementados<br/>                         |
+| **CreateInstanceFromPropertyData** | Crea instancias de un tipo MX de RR en función de los datos de los parámetros de entrada del método: nombre del servidor DNS del registro, nombre de contenedor, nombre de propietario, clase (valor predeterminado = IN), valor de período de vida, preferencia de registro y nombre de host dispuesto a ser un intercambio de correo. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: Implementado, estático<br/> |
+| **Modificar**                         | Actualiza las propiedades TTL, Preference y Mail Exchange los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/>                         |
 
 
 
@@ -66,7 +66,7 @@ La clase **MicrosoftDNS \_ MXType** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ MXType** tiene estas propiedades.
+La **clase \_ MXType de MicrosoftDNS** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -79,20 +79,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-FQDN que especifica un host que desea actuar como intercambio de correo electrónico para el nombre del propietario.
+FQDN que especifica un host dispuesto a actuar como intercambio de correo para el nombre del propietario.
 
 </dd> <dt>
 
-**Justifica**
+**Referencia**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Preferencia asignada a este RR entre otros en el mismo propietario. Se prefieren los valores inferiores.
+Preferencia dada a este RR entre otras personas en el mismo propietario. Se prefieren valores inferiores.
 
 </dd> </dl>
 
@@ -105,7 +105,7 @@ Preferencia asignada a este RR entre otros en el mismo propietario. Se prefieren
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -113,13 +113,13 @@ Preferencia asignada a este RR entre otros en el mismo propietario. Se prefieren
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS MXType**](microsoftdns-mxtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase MXType de MicrosoftDNS \_**](microsoftdns-mxtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS MXType**](microsoftdns-mxtype-modify.md)
+[**Método Modify de la clase MXType de MicrosoftDNS \_**](microsoftdns-mxtype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

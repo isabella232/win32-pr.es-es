@@ -5,25 +5,25 @@ ms.assetid: 0d9b9581-3563-4fce-8790-af7ebb9e8175
 keywords:
 - RequestReplyTcpClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bad7cbbe69ea6c59d00d262017c6f15d12ae2e7a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17d06e87007b15beb5a11052137a53b7f040894d017af323a480870427ab417a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026343"
 ---
 # <a name="requestreplytcpclientexample"></a>RequestReplyTcpClientExample
 
 En este ejemplo se muestra un cliente TCP que envía mensajes de solicitud-respuesta.
 
--   [RequestReplyTcpClient. cpp](#requestreplytcpclientcpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [RequestReplyTcpClient.cpp](#requestreplytcpclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="requestreplytcpclientcpp"></a>RequestReplyTcpClient. cpp
+## <a name="requestreplytcpclientcpp"></a>RequestReplyTcpClient.cpp
 
 
 ```C++
@@ -440,7 +440,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -579,9 +579,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

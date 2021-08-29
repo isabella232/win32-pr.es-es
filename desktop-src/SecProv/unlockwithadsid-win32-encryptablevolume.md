@@ -1,7 +1,7 @@
 ---
-description: Usa la cadena de identificador de seguridad (SID) Active Directory proporcionada para obtener la clave derivada y desbloquear el volumen cifrado.
+description: Usa la cadena Active Directory de seguridad (SID) proporcionada para obtener la clave derivada y desbloquear el volumen cifrado.
 ms.assetid: 89FBC815-859D-415A-8F26-170FB2DB7387
-title: Método UnlockWithAdSid de la clase Win32_EncryptableVolume
+title: Método UnlockWithAdSid de la Win32_EncryptableVolume clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: cbd2a327a2ede322c01009fe32aa0492a7e65610
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14aaa82ff4b17b551ba595d2ea0c33737d651ca0236448d1d089caa82bd5f841
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891390"
 ---
-# <a name="unlockwithadsid-method-of-the-win32_encryptablevolume-class"></a>Método UnlockWithAdSid de la \_ clase EncryptableVolume de Win32
+# <a name="unlockwithadsid-method-of-the-win32_encryptablevolume-class"></a>Método UnlockWithAdSid de la clase EncryptableVolume de Win32 \_
 
-El método **UnlockWithAdSid** de la [**clase \_ EncryptableVolume de Win32**](win32-encryptablevolume.md) usa la cadena de identificador de seguridad (SID) Active Directory proporcionada para obtener la clave derivada y desbloquear el volumen cifrado.
+El **método UnlockWithAdSid** de la clase [**\_ EncryptableVolume de Win32**](win32-encryptablevolume.md) usa la cadena de identificador de seguridad (SID) Active Directory proporcionada para obtener la clave derivada y desbloquear el volumen cifrado.
 
 > [!Note]  
-> Si el disco es compatible con el cifrado de hardware, esta función establece el estado de la banda en "desbloqueado" "
+> Si el disco admite el cifrado de hardware, esta función establece el estado de la banda en "desbloqueado""
 
  
 
@@ -44,7 +44,7 @@ uint32 UnlockWithAdSid(
 
 <dl> <dt>
 
-*SidString* \[ de\]
+*SidString* \[ En\]
 </dt> <dd>
 
 Cadena que contiene el Active Directory SID.
@@ -53,36 +53,36 @@ Cadena que contiene el Active Directory SID.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve uno de los siguientes códigos u otro código de error si se produce un error.
+Este método devuelve uno de los códigos siguientes u otro código de error si se produce un error.
 
 
 
 | Código o valor devuelto                                                                                                                                 | Descripción                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl> | Método realizado correctamente.<br/> |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl> | Método realizado correctamente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones Windows 8 Enterprise, Windows 8 Pro \[ Desktop\]<br/>                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\MicrosoftVolumeEncryption de \\ seguridad de cimv2 raíz \\<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 8 Enterprise, Windows 8 Pro solo aplicaciones \[ de escritorio\]<br/>                                    |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
