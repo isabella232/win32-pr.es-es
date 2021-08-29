@@ -1,17 +1,17 @@
 ---
 description: Denominador de PKEY \_ Photo \_ FNumber.
 ms.assetid: 7b1577c4-ec92-4c14-9bea-2c7d92819ff7
-title: System. Photo. FNumberDenominator
+title: System.Photo.FNumberDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5a7182a89719a7a24e6d384a9c15b9c4969bf8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf477f7fa63275251aa25b160dbca3b41693328fd971c44535695fd627eb71fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095947"
 ---
-# <a name="systemphotofnumberdenominator"></a>System. Photo. FNumberDenominator
+# <a name="systemphotofnumberdenominator"></a>System.Photo.FNumberDenominator
 
 Denominador de PKEY \_ Photo \_ FNumber.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

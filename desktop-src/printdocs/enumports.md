@@ -1,7 +1,7 @@
 ---
-description: La función EnumPorts enumera los puertos que están disponibles para imprimir en un servidor especificado.
+description: La función EnumPorts enumera los puertos disponibles para imprimir en un servidor especificado.
 ms.assetid: 72ea0e35-bf26-4c12-9451-8f6941990d82
-title: Función EnumPorts (winspool. h)
+title: Función EnumPorts (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 2f4cceb6b6915f92139d8919b74f62ba4392381c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1f5abc20e94c53e005ee97727a7de789f172bfef1d66703c72690910f197f95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118056410"
 ---
-# <a name="enumports-function"></a>EnumPorts función)
+# <a name="enumports-function"></a>Función EnumPorts
 
-La función **EnumPorts** enumera los puertos que están disponibles para imprimir en un servidor especificado.
+La **función EnumPorts** enumera los puertos disponibles para imprimir en un servidor especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,78 +46,78 @@ BOOL EnumPorts(
 
 <dl> <dt>
 
-*pName* \[ de\]
+*pName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del servidor cuyos puertos de impresora se desea enumerar.
+Puntero a una cadena terminada en NULL que especifica el nombre del servidor cuyos puertos de impresora desea enumerar.
 
-Si *pName* es **null**, la función enumera los puertos de impresora del equipo local.
+Si *pName* es **NULL,** la función enumera los puertos de impresora de la máquina local.
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
-Tipo de información que se devuelve en el búfer de *pPorts* . Si el *nivel* es 1, *pPorts* recibe una matriz de estructuras de [**información de puerto \_ \_ 1**](port-info-1.md) . Si *LEVEL* es 2, *pPorts* recibe una matriz de estructuras [**Port \_ info \_ 2**](port-info-2.md) .
+Tipo de información devuelta en el *búfer pPorts.* Si *Level* es 1, *pPorts* recibe una matriz de [**estructuras PORT INFO \_ \_ 1.**](port-info-1.md) Si *Level* es 2, *pPorts* recibe una matriz de [**estructuras PORT INFO \_ \_ 2.**](port-info-2.md)
 
 </dd> <dt>
 
-*pPorts* \[ enuncia\]
+*pPorts* \[ out\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe una matriz de estructuras de la [**información de puerto \_ \_ 1**](port-info-1.md) o de la [**información de puerto \_ \_ 2**](port-info-2.md) . Cada estructura contiene datos que describen un puerto de impresora disponible. El búfer debe ser lo suficientemente grande como para almacenar las cadenas a las que apuntan los miembros de la estructura.
+Puntero a un búfer que recibe una matriz de estructuras [**PORT \_ INFO \_ 1**](port-info-1.md) [**o PORT INFO \_ \_ 2.**](port-info-2.md) Cada estructura contiene datos que describen un puerto de impresora disponible. El búfer debe ser lo suficientemente grande como para almacenar las cadenas a las que apuntan los miembros de la estructura.
 
-Para determinar el tamaño de búfer necesario, llame a **EnumPorts** con *cbBuf* establecido en cero. **EnumPorts** produce un error, [**GETLASTERROR**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve un error \_ \_ de búfer insuficiente y el parámetro *pcbNeeded* devuelve el tamaño, en bytes, del búfer necesario para contener la matriz de estructuras y sus datos.
+Para determinar el tamaño de búfer necesario, llame **a EnumPorts** con *cbBuf* establecido en cero. Se produce un error en **EnumPorts,** [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve ERROR INSUFFICIENT BUFFER y el parámetro \_ \_ *byteNeeded* devuelve el tamaño, en bytes, del búfer necesario para contener la matriz de estructuras y sus datos.
 
 </dd> <dt>
 
-*cbBuf* \[ de\]
+*cbBuf* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que apunta *pPorts*.
+Tamaño, en bytes, del búfer al que apunta *pPorts.*
 
 </dd> <dt>
 
-*pcbNeeded* \[ enuncia\]
+*pwNeeded* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número de bytes copiados en el búfer de *pPorts* . Si el búfer es demasiado pequeño, se produce un error en la función y la variable recibe el número de bytes necesarios.
+Puntero a una variable que recibe el número de bytes copiados en el *búfer pPorts.* Si el búfer es demasiado pequeño, se produce un error en la función y la variable recibe el número de bytes necesarios.
 
 </dd> <dt>
 
-*pcReturned* \[ enuncia\]
+*pcReturned* \[ out\]
 </dt> <dd>
 
-Un puntero a una variable que recibe el número de estructuras de [**información de puerto \_ \_ 1**](port-info-1.md) o de la [**información de puerto \_ \_ 2**](port-info-2.md) devueltas en el búfer de *pPorts* . Es el número de puertos de impresora que están disponibles en el servidor especificado.
+Puntero a una variable que recibe el número de estructuras [**\_ PORT INFO \_ 1**](port-info-1.md) o [**PORT INFO \_ \_ 2**](port-info-2.md) devueltas en el *búfer pPorts.* Este es el número de puertos de impresora que están disponibles en el servidor especificado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-La función **EnumPorts** puede tener éxito incluso si el servidor especificado por *pName* no tiene una impresora definida.
+La **función EnumPorts** puede realizarse correctamente incluso si el servidor especificado por *pName* no tiene definida una impresora.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **EnumPortsW** (Unicode) y **EnumPortsA** (ANSI)<br/>                                             |
 
 
@@ -138,10 +138,10 @@ La función **EnumPorts** puede tener éxito incluso si el servidor especificado
 [**DeletePort**](deleteport.md)
 </dt> <dt>
 
-[**Información de puerto \_ \_ 1**](port-info-1.md)
+[**INFORMACIÓN \_ DE PUERTO \_ 1**](port-info-1.md)
 </dt> <dt>
 
-[**INFO. de puerto \_ \_ 2**](port-info-2.md)
+[**INFORMACIÓN \_ DE PUERTO \_ 2**](port-info-2.md)
 </dt> </dl>
 
  

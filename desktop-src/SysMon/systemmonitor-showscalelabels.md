@@ -1,5 +1,5 @@
 ---
-title: Propiedad SystemMonitor. ShowScaleLabels
+title: Propiedad SystemMonitor.ShowScaleLabels
 description: Recupera o establece un valor que determina si las etiquetas de escala se muestran en el eje vertical del gráfico.
 ms.assetid: 655bc6d0-057a-4226-baa7-66d679b62f00
 keywords:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fba35ef52e65549b640ce8e353c89a6f8bae948
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c2c9103a8dd82b20e76ab7622c14d4c7a2f1dcea70a0f3f69dddd7e2620b58f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118881499"
 ---
-# <a name="systemmonitorshowscalelabels-property"></a>Propiedad SystemMonitor. ShowScaleLabels
+# <a name="systemmonitorshowscalelabels-property"></a>Propiedad SystemMonitor.ShowScaleLabels
 
 Recupera o establece un valor que determina si las etiquetas de escala se muestran en el eje vertical del gráfico.
 
@@ -40,7 +40,7 @@ Property ShowScaleLabels As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-True indica que las etiquetas de escala se muestran en el eje vertical del gráfico; en caso contrario, false. El valor predeterminado de esta propiedad es true.
+True indica que las etiquetas de escala se muestran en el eje vertical del gráfico; de lo contrario, false. El valor predeterminado de esta propiedad es true.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,7 +50,7 @@ True indica que las etiquetas de escala se muestran en el eje vertical del gráf
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -58,13 +58,13 @@ True indica que las etiquetas de escala se muestran en el eje vertical del gráf
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> <dt>
 
-[**SystemMonitor. MaximumScale**](systemmonitor-maximumscale.md)
+[**SystemMonitor.MaximumScale**](systemmonitor-maximumscale.md)
 </dt> <dt>
 
-**SystemMonitor. MinimumScale**
+**SystemMonitor.MinimumScale**
 </dt> </dl>
 
  

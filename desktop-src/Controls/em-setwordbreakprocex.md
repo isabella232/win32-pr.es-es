@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETWORDBREAKPROCEX (RichEdit. h)
-description: Establece el procedimiento extendido de separación de palabras para un control Rich Edit.
+title: EM_SETWORDBREAKPROCEX mensaje (Richedit.h)
+description: Establece el procedimiento de salto de palabras extendido para un control de edición enriquecido.
 ms.assetid: 2b45f747-ae15-470b-a786-98d8135289da
 keywords:
-- EM_SETWORDBREAKPROCEX controles de mensajes de Windows
+- EM_SETWORDBREAKPROCEX controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5973836ae173c1a61537b7d3b085fe29c168971f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ecc56e147c52d89b929a4e7065d4daafc184406247d60d522ef2bf4317097faf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062845"
 ---
-# <a name="em_setwordbreakprocex-message"></a>\_Mensaje SETWORDBREAKPROCEX em
+# <a name="em_setwordbreakprocex-message"></a>Mensaje \_ EM SETWORDBREAKPROCEX
 
-Establece el procedimiento extendido de separación de palabras para un control Rich Edit.
+Establece el procedimiento de salto de palabras extendido para un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,13 +39,13 @@ Este parámetro no se usa; debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Puntero a una función [*EditWordBreakProcEx*](/windows/desktop/api/Richedit/nc-richedit-editwordbreakprocex) o **null** para usar el procedimiento predeterminado.
+Puntero a una [*función EditWordBreakProcEx*](/windows/desktop/api/Richedit/nc-richedit-editwordbreakprocex) o **NULL** para usar el procedimiento predeterminado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje devuelve la dirección del procedimiento extendido de separación de palabras anterior.
+Este mensaje devuelve la dirección del procedimiento de salto de palabras extendido anterior.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Este mensaje devuelve la dirección del procedimiento extendido de separación d
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Este mensaje devuelve la dirección del procedimiento extendido de separación d
 [**EditWordBreakProcEx**](/windows/desktop/api/Richedit/nc-richedit-editwordbreakprocex)
 </dt> <dt>
 
-[**\_GETWORDBREAKPROCEX em**](em-getwordbreakprocex.md)
+[**EM \_ GETWORDBREAKPROCEX**](em-getwordbreakprocex.md)
 </dt> </dl>
 
  

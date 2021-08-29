@@ -2,7 +2,7 @@
 description: Representa una entrada de control de acceso (ACE).
 ms.assetid: 47daffd0-b9db-4367-b0b8-654a2da30fed
 ms.tgt_platform: multiple
-title: __ACE (clase)
+title: __ACE clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: ea2a765225145ce3d44e0aff89aeaca0a7563e0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad6713cea39f02e59b49b69e2fa2a8a060cb7a6f78d3b6143bc2c2dbc0de1965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104498070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051113"
 ---
-# <a name="__ace-class"></a>\_\_ACE (clase)
+# <a name="__ace-class"></a>\_\_Ace (clase)
 
-La clase **\_ \_ ACE** Abstract System representa una entrada de control de acceso ([*ACE*](/windows/desktop/SecGloss/a-gly)).
+La **\_ \_ clase abstracta** del sistema ACE representa una entrada de control de acceso [*(ACE).*](/windows/desktop/SecGloss/a-gly)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -51,26 +51,26 @@ class  __ACE : __SecurityRelatedClass
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ ACE** tiene estos tipos de miembros:
+La **\_ \_ clase ACE** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ ACE** tiene estas propiedades.
+La **\_ \_ clase ACE** tiene estas propiedades.
 
 <dl> <dt>
 
-**AccessMask**
+**Máscara de acceso**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: 
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Marcas de bits que representan derechos que se conceden o deniegan al administrador de confianza. Para obtener más información y una descripción de las marcas, consulte propiedad **AccessMask** en la clase [**\_ ACE de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-ace) .
+Marcas de bits que representan derechos concedidos o denegados al administrador de confianza. Para obtener más información y una descripción de las marcas, vea **Propiedad AccessMask** en la [**clase \_ ACE de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 
 </dd> <dt>
 
@@ -80,10 +80,10 @@ Marcas de bits que representan derechos que se conceden o deniegan al administra
 Tipo de datos: 
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Marcas de bits que especifican la herencia de la ACE. Para obtener más información y una descripción de las marcas, consulte la propiedad **AceFlags** en la clase [**\_ ACE de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-ace) .
+Marcas de bits que especifican la herencia de la ACE. Para obtener más información y una descripción de las marcas, vea AceFlags property in the Win32 ACE class **(Propiedad AceFlags** en la [**clase \_ ACE de Win32).**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Marcas de bits que especifican la herencia de la ACE. Para obtener más informac
 Tipo de datos: 
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Tipo de entrada ACE que representa esta instancia.
@@ -106,10 +106,10 @@ Tipo de entrada ACE que representa esta instancia.
 Tipo de datos: 
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-GUID del objeto primario del objeto al que se aplican los derechos de acceso en la propiedad **AccessMask** .
+GUID del elemento primario del objeto al que se aplican los derechos de acceso en la **propiedad AccessMask.**
 
 </dd> <dt>
 
@@ -119,48 +119,48 @@ GUID del objeto primario del objeto al que se aplican los derechos de acceso en 
 Tipo de datos: 
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-GUID que indica el tipo de objeto al que se aplican los derechos de la propiedad **AccessMask** .
+GUID que indica el tipo de objeto al que se aplican los derechos de la propiedad **AccessMask.**
 
 </dd> <dt>
 
-**HORA de \_ creación**
+**HORA \_ CREADA**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La hora, en el formato de [ \_ fecha y](cim-datetime.md) hora de CIM, cuando se creó el descriptor de seguridad.
+Hora, en formato [ \_ CIM DATETIME,](cim-datetime.md) en la que se creó el descriptor de seguridad.
 
 </dd> <dt>
 
-**Confianza**
+**Fideicomisario**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **[ **\_ \_ Administrador de confianza**](--trustee.md)**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Administrador de confianza de la entrada ACE representada por esta instancia de la clase **\_ \_ ACE** .
+Administrador de confianza de la entrada ace representada por esta instancia de la **\_ \_ clase ACE.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta clase proporciona las propiedades que hereda la clase [**\_ ACE de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-ace) , que es miembro de la clase [**\_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) . Para obtener más información, vea [objetos de descriptor de seguridad de WMI](wmi-security-descriptor-objects.md) y cambiar la [seguridad de acceso en objetos protegibles](changing-access-security-on-securable-objects.md). Para obtener más información sobre las ACE, vea [componentes de Access Control](/windows/desktop/SecAuthZ/access-control-components).
+Esta clase proporciona las propiedades heredadas por la clase [**\_ ACE de Win32,**](/previous-versions/windows/desktop/secrcw32prov/win32-ace) que es miembro de la clase [**\_ SecurityDescriptor de Win32.**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) Para obtener más información, vea [Objetos de descriptor de seguridad WMI](wmi-security-descriptor-objects.md) y Cambiar la seguridad de acceso en objetos [protegibles.](changing-access-security-on-securable-objects.md) Para obtener más información sobre las ACE, [vea Access Control Components](/windows/desktop/SecAuthZ/access-control-components).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -178,10 +178,10 @@ Esta clase proporciona las propiedades que hereda la clase [**\_ ACE de Win32**]
 [Clases del sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[**ACE de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
+[**Win32 \_ ACE**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 </dt> <dt>
 
-[Mantenimiento de la seguridad de WMI](maintaining-wmi-security.md)
+[Mantenimiento de la seguridad wmi](maintaining-wmi-security.md)
 </dt> </dl>
 
  

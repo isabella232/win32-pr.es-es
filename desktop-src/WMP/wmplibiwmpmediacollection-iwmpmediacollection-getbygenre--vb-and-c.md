@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection getByGenre, método
-description: El método getByGenre devuelve una interfaz IWMPPlaylist que proporciona acceso a los elementos multimedia del género especificado.
+title: Método IWMPMediaCollection getByGenre
+description: El método getByGenre devuelve una interfaz IWMPPlaylist que proporciona acceso a elementos multimedia del género especificado.
 ms.assetid: 0681e5a2-b56d-4c33-95ce-d9ef3cd5473d
 keywords:
-- método getByGenre de Windows Media Player
-- método getByGenre Windows Media Player, interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Windows Media Player, método getByGenre
+- Método getByGenre Reproductor de Windows Media
+- Método getByGenre Reproductor de Windows Media , interfaz IWMPMediaCollection
+- Interfaz IWMPMediaCollection Reproductor de Windows Media método , getByGenre
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eb6477a4cd212f354f5af3ab7e50fc2a87092cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d72f20182f2bfb3bef0d4de2907165a571009072d234add3b8f89ae2db859c7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053603"
 ---
-# <a name="iwmpmediacollectiongetbygenre-method"></a>IWMPMediaCollection:: getByGenre (método)
+# <a name="iwmpmediacollectiongetbygenre-method"></a>IWMPMediaCollection::getByGenre (método)
 
-El `getByGenre` método devuelve una interfaz **IWMPPlaylist** que proporciona acceso a los elementos multimedia del género especificado.
+El `getByGenre` método devuelve una interfaz **IWMPPlaylist** que proporciona acceso a elementos multimedia del género especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ Implements IWMPMediaCollection.getByGenre
 
 <dl> <dt>
 
-*bstrGenre* \[ de\]
+*bstrGenre* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del género.
+**System.String que** es el nombre del género.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz **WMPLib. IWMPPlaylist** para los elementos multimedia recuperados.
+Interfaz **WMPLib.IWMPPlaylist** para los elementos multimedia recuperados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del `getByGenre` método depende de cuál de esas dos maneras se usa. Si recupera la interfaz llamando a [AxWindowsMediaPlayer. mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el `getByGenre` método devuelve todos los elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz llamando a [IWMPLibrary. mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el `getByGenre` método solo devuelve los elementos de audio de la biblioteca que tienen el atributo y el valor especificados.
+Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del método depende de cuál de esas dos formas `getByGenre` de usar. Si recupera la interfaz mediante una llamada [a AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el método devuelve todos los `getByGenre` elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz mediante una llamada a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el método devuelve solo los elementos de audio de la biblioteca que tienen el atributo y el valor `getByGenre` especificados.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente `getByGenre` se usa para recuperar una lista de reproducción de elementos multimedia cuando el usuario hace clic en un botón. La lista de reproducción contiene elementos con el género especificado por el usuario en un cuadro de texto. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se `getByGenre` usa para recuperar una lista de reproducción de elementos multimedia cuando el usuario hace clic en un botón. La lista de reproducción contiene elementos con el género especificado por el usuario en un cuadro de texto. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -124,9 +124,9 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

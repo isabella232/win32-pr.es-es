@@ -115,7 +115,7 @@ Descripción de la **propiedad NameFormat** cuando **NameFormat** se establece e
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -125,7 +125,7 @@ Descripción de la **propiedad NameFormat** cuando **NameFormat** se establece e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Identifica la propiedad \_ PKEY FontProperties Bold de la \_ interf
 ms.assetid: 9d33142a-bd63-423e-ba77-083c86bce1e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68800d3cfed72382f3576edfc01272c82b46c825
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 4a55b722a7305c9814148cc69d3c34fa8a31eb1fe17f01526a269591a29925ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118031762"
 ---
 # <a name="ui_pkey_fontproperties_bold"></a>UI \_ PKEY \_ FontProperties \_ Bold
 

@@ -58,7 +58,7 @@ Número de objetos.
 *lpHandles* 
 </dt> <dd>
 
-Matriz de identificadores para objetos, de tamaño *nCount*.
+Matriz de identificadores a objetos, de tamaño *nCount*.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Valor booleano que especifica si se debe esperar a todos los objetos. Si **es TR
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

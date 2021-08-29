@@ -91,10 +91,10 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("MilliSeconds"), **PUnit** ("second \* 10^-3")
+Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Milegundos"), **PUnit** ("segundo \* 10^-3")
 </dt> </dl>
 
-Tiempo, en milisegundos, para pasar del punto más físicamente lejano de la cinta al principio.
+Tiempo, en milisegundos, para pasar del punto más lejano físicamente de la cinta al principio.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Número de bytes insertados entre bloques en medios de cinta.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -128,7 +128,7 @@ Número de bytes insertados entre bloques en medios de cinta.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

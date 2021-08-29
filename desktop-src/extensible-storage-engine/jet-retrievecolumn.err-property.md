@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_RETRIEVECOLUMN. err (propiedad)'
-title: JET_RETRIEVECOLUMN. err (propiedad)
+description: 'Más información sobre: JET_RETRIEVECOLUMN.err'
+title: JET_RETRIEVECOLUMN.err
 TOCTitle: 'err property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.err
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.err(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6a4d0a66a93485ba6e5ff70540182ef07588d3aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64e7ef46137bc655f89f827078a32b7bf92dc58194072bfe32335f67a0e057b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063045"
 ---
-# <a name="jet_retrievecolumnerr-property"></a>JET_RETRIEVECOLUMN. err (propiedad)
+# <a name="jet_retrievecolumnerr-property"></a>JET_RETRIEVECOLUMN.err
 
-Obtiene la advertencia devuelta por la recuperación de la columna.
+Obtiene la advertencia devuelta de la recuperación de la columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_wrn err { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETRIEVECOLUMN (clase)](./jet-retrievecolumn-class.md)
+[JET_RETRIEVECOLUMN clase](./jet-retrievecolumn-class.md)
 
-[Miembros de JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN miembros](./jet-retrievecolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

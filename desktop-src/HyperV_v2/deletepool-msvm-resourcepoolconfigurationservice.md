@@ -22,7 +22,7 @@ ms.locfileid: "118645732"
 ---
 # <a name="deletepool-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método DeletePool de la clase ResourcePoolConfigurationService de Msvm \_
 
-Elimina un grupo de recursos. Para eliminar correctamente un grupo de recursos, no puede haber ninguna asignación pendiente o se producirá un error en la eliminación con 32774 (en uso). Si el grupo de recursos es un grupo de recursos raíz, los recursos de host se devuelven al sistema subyacente.
+Elimina un grupo de recursos. Para eliminar correctamente un grupo de recursos, no puede haber ninguna asignación pendiente o se producirá un error en la eliminación con 32774 (en uso). Si el grupo de recursos es un grupo de recursos raíz, los recursos host se devuelven al sistema subyacente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Referencia a una instancia de la clase [**\_ ResourcePool de CIM**](cim-resource
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Este método devuelve uno de los valores siguientes.
 **Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no** válido (32773)
+**Parámetro no válido** (32773)
 </dt> <dt>
 
 **En uso** (32774)
@@ -102,7 +102,7 @@ Este método devuelve uno de los valores siguientes.
 **No disponible** (32777)
 </dt> <dt>
 
-**Memoria no suficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
 **Vendor Reserved** (32779)
@@ -124,7 +124,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
@@ -134,7 +134,7 @@ Este método devuelve uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,66 +1,66 @@
 ---
-description: Compilar aplicaciones de DirectShow
+description: Creación de DirectShow aplicaciones
 ms.assetid: 2fbdbe49-0d4d-4dce-afc3-7049c793ace0
-title: Compilar aplicaciones de DirectShow
+title: Creación de DirectShow aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56c6ab8a0731e93eece734abd4380b092414ff5f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4e6c062c97d64373668ef8bfd7eaf02b5d514bd648c3bc5b67ac6803d1fd804f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105677027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951904"
 ---
-# <a name="building-directshow-applications"></a>Compilar aplicaciones de DirectShow
+# <a name="building-directshow-applications"></a>Creación de DirectShow aplicaciones
 
-En este tema se describen los encabezados y las bibliotecas necesarios para compilar aplicaciones de DirectShow.
+En este tema se describen los encabezados y bibliotecas necesarios para compilar DirectShow aplicaciones.
 
-Los encabezados y las bibliotecas de DirectShow más recientes están disponibles en el [Windows SDK](https://msdn.microsoft.com/windows/aa904949.aspx).
+Los encabezados DirectShow bibliotecas más recientes están disponibles en [el SDK Windows](https://msdn.microsoft.com/windows/aa904949.aspx).
 
 ## <a name="header-files"></a>Archivos de encabezado
 
-Todas las aplicaciones de DirectShow usan el archivo de encabezado que se muestra en la tabla siguiente.
+Todas DirectShow aplicaciones usan el archivo de encabezado que se muestra en la tabla siguiente.
 
 
 
-| Archivo de encabezado | Necesario para                 |
+| Archivo de encabezado | Requerido para                 |
 |-------------|------------------------------|
-| DShow. h     | Todas las aplicaciones de DirectShow. |
+| Dshow.h     | Todas DirectShow aplicaciones. |
 
 
 
  
 
-Algunas interfaces de DirectShow requieren archivos de encabezado adicionales. Estos requisitos se indican en la referencia de la interfaz.
+Algunas DirectShow interfaces requieren archivos de encabezado adicionales. Estos requisitos se anotan en la referencia de interfaz.
 
 ## <a name="library-files"></a>Archivos de biblioteca
 
-DirectShow usa los archivos de biblioteca estáticos que se muestran en la tabla siguiente.
+DirectShow usa los archivos de biblioteca estática que se muestran en la tabla siguiente.
 
 
 
 | Archivo de biblioteca | Descripción                                                                                                                    |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Strmiids. lib | Exporta identificadores de clase (CLSID) e identificadores de interfaz (IID).                                                           |
-| Quartz. lib   | Exporta la función [**AMGetErrorText**](/windows/win32/api/errors/nf-errors-amgeterrortexta) . Si no llama a esta función, esta biblioteca no es obligatoria. |
+| Strmiids.lib | Exporta los identificadores de clase (CLID) y los identificadores de interfaz (IID).                                                           |
+| Estorba.lib   | Exporta la [**función AMGetErrorText.**](/windows/win32/api/errors/nf-errors-amgeterrortexta) Si no llama a esta función, esta biblioteca no es necesaria. |
 
 
 
  
 
-Utilice los mismos archivos. lib para las compilaciones de depuración y lanzamiento.
+Use los mismos archivos .lib para las compilaciones de depuración y versión.
 
 ## <a name="filter-base-classes"></a>Filtrar clases base
 
-El Windows SDK proporciona un conjunto de clases de C++ que se recomiendan si se escribe un filtro DirectShow personalizado. Estas clases se proporcionan como código de ejemplo, que se puede compilar en una biblioteca estática. Para obtener más información, vea [clases base de DirectShow](directshow-base-classes.md).
+El SDK Windows proporciona un conjunto de clases de C++ que se recomiendan si está escribiendo un filtro DirectShow personalizado. Estas clases se proporcionan como código de ejemplo, que puede compilar en una biblioteca estática. Para obtener más información, [vea DirectShow clases base](directshow-base-classes.md).
 
-## <a name="redistributable-dlls"></a>Archivos dll redistribuibles
+## <a name="redistributable-dlls"></a>Archivos DLL redistribuibles
 
-Las aplicaciones de DirectShow escritas para Windows XP con Service Pack 2 (SP2) y versiones posteriores no necesitan redistribuir los archivos dll de DirectShow.
+DirectShow las aplicaciones escritas para Windows XP con Service Pack 2 (SP2) y versiones posteriores no necesitan redistribuir ningún archivo DLL DirectShow datos.
 
-En el caso de Windows XP con Service Pack 1 (SP1) y versiones anteriores, los archivos dll de DirectShow redistribuibles están disponibles en el SDK de Microsoft DirectX. La versión más reciente de estos archivos dll es la versión 9.0 c. No se prevé ningún otro desarrollo de estos archivos dll redistribuibles. Windows XP con Service Pack 2 (SP2) contiene los archivos dll de c de la versión 9.0.
+Para Windows XP con Service Pack 1 (SP1) y versiones anteriores, los archivos DLL DirectShow redistribuibles están disponibles en el SDK de Microsoft DirectX. La versión más reciente de estos archivos DLL es la versión 9.0c. No se planea ningún desarrollo adicional de estos archivos DLL redistribuibles. Windows XP con Service Pack 2 (SP2) contiene los archivos DLL de la versión 9.0c.
 
-Los paquetes de redstributable contienen los siguientes archivos dll:
+Los paquetes reds atribuibles contienen los siguientes archivos DLL:
 
 -   dxnt.cab
     -   amstream.dll
@@ -116,7 +116,7 @@ Los paquetes de redstributable contienen los siguientes archivos dll:
 
 <dl> <dt>
 
-[Compilar filtros de DirectShow](building-directshow-filters.md)
+[Creación de DirectShow filtros](building-directshow-filters.md)
 </dt> </dl>
 
  

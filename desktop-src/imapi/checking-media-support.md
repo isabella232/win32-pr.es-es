@@ -1,19 +1,19 @@
 ---
-title: Comprobando la compatibilidad con medios
-description: En el siguiente script se examinan las características de los medios cargados en el dispositivo de disco.
+title: Comprobación de la compatibilidad con medios
+description: El siguiente script examina las características de los medios cargados en el dispositivo de disco.
 ms.assetid: 05d88612-ff4c-4894-b838-a1d76923430c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f73fca4b11a5e0c1fbe5b001576126a3685149bf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 06d0b9058136dcb73c34eb1acf3f0ad56d77de141be987847f35a8b1c385f820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117884817"
 ---
-# <a name="checking-media-support"></a>Comprobando la compatibilidad con medios
+# <a name="checking-media-support"></a>Comprobación de la compatibilidad con medios
 
-En el siguiente script se examinan las características de los medios cargados en el dispositivo de disco. Más concretamente, comprueba el tipo de medio y el estado actual de los medios, así como la compatibilidad de grabador y multimedia. Este script se puede adaptar para comprobar la compatibilidad y los problemas de estado antes de usar los medios.
+El siguiente script examina las características de los medios cargados en el dispositivo de disco. Más concretamente, comprueba el tipo de medio y el estado actual de los medios, así como la compatibilidad de la grabadora y los medios. Este script se puede adaptar para comprobar la compatibilidad y los problemas de estado antes de usar los medios.
 
 
 ```VB
@@ -185,10 +185,10 @@ End Sub
 
 <dl> <dt>
 
-[Usar IMAPi](using-imapi.md)
+[Uso de IMAPI](using-imapi.md)
 </dt> <dt>
 
-[**\_tipo físico de medios de IMAPI \_ \_**](/windows/desktop/api/imapi2/ne-imapi2-imapi_media_physical_type)
+[**TIPO FÍSICO \_ DE MEDIOS \_ \_ IMAPI**](/windows/desktop/api/imapi2/ne-imapi2-imapi_media_physical_type)
 </dt> <dt>
 
 [**IDiscMaster2**](/windows/desktop/api/imapi2/nn-imapi2-idiscmaster2)
@@ -200,9 +200,9 @@ End Sub
 [**IDiscFormat2Data**](/windows/desktop/api/imapi2/nn-imapi2-idiscformat2data)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-failed-Interactive-Logon-Count
-description: Número total de inicios de sesión interactivos con error desde que se activó esta característica.
+title: Atributo ms-DS-Failed-Interactive-Logon-Count
+description: Número total de inicios de sesión interactivos con errores desde que se ha activado esta característica.
 ms.assetid: 21499df9-7bd0-41ce-9148-ad1031bfbbc7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-failed-Interactive-Logon-Count
-- Esquema de AD de atributo msDS-FailedInteractiveLogonCount
+- Esquema de AD del atributo ms-DS-Failed-Interactive-Logon-Count
+- Esquema de AD del atributo msDS-FailedInteractiveLogonCount
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e35570de80433ed2c6ad52ff1773e34a07fa8f04
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ba0dfa0056393b44fdd6c843b0455113662f09c4045cf35a7bc3f839346810a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103805024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426768"
 ---
-# <a name="ms-ds-failed-interactive-logon-count-attribute"></a>atributo MS-DS-failed-Interactive-Logon-Count
+# <a name="ms-ds-failed-interactive-logon-count-attribute"></a>Atributo ms-DS-Failed-Interactive-Logon-Count
 
-Número total de inicios de sesión interactivos con error desde que se activó esta característica.
+Número total de inicios de sesión interactivos con errores desde que se ha activado esta característica.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-error-Interactive-Logon-Count |
-| Nombre para mostrar de LDAP | msDS-FailedInteractiveLogonCount     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Failed-Interactive-Logon-Count |
+| Ldap-Display-Name | msDS-FailedInteractiveLogonCount     |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1972              |
-| System-ID-GUID    | dc3ca86f-70ad-4960-8425-a4d6313d93dd |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | dc3ca86f-70ad-4960-8425-a4d6313d93dd |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ Número total de inicios de sesión interactivos con error desde que se activó 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Número total de inicios de sesión interactivos con error desde que se activó 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Número total de inicios de sesión interactivos con error desde que se activó 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

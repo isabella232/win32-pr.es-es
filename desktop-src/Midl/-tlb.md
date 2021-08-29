@@ -42,7 +42,7 @@ Especifica el nombre del archivo de biblioteca de tipos de salida (TLB). De form
 
 **midl /tlb newname.tlb**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

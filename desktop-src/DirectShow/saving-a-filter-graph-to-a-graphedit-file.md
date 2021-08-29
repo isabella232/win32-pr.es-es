@@ -1,19 +1,19 @@
 ---
-description: Guardar un gráfico de filtro en un archivo GraphEdit
+description: Guardar un filtro Graph un archivo GraphEdit
 ms.assetid: f7eeae3c-506b-484c-8fe5-ddd391af5a59
-title: Guardar un gráfico de filtro en un archivo GraphEdit
+title: Guardar un filtro Graph un archivo GraphEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe5fb24c40f11dbeb5dad8b542f0f152449f8951
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7b007dfef4a6e00ba4b3d94828da1652a2299b3f21f966cba7717452df57faa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951984"
 ---
-# <a name="saving-a-filter-graph-to-a-graphedit-file"></a>Guardar un gráfico de filtro en un archivo GraphEdit
+# <a name="saving-a-filter-graph-to-a-graphedit-file"></a>Guardar un filtro Graph un archivo GraphEdit
 
-En el ejemplo de código siguiente se muestra cómo guardar un gráfico de filtro en un archivo GraphEdit (. GRF). Esto puede ser útil para depurar las aplicaciones.
+En el ejemplo de código siguiente se muestra cómo guardar un gráfico de filtro en un archivo GraphEdit (.grf). Esto puede ser útil para depurar las aplicaciones.
 
 
 ```C++
@@ -59,7 +59,7 @@ HRESULT SaveGraphFile(IGraphBuilder *pGraph, WCHAR *wszPath)
 
 
 
-Por ejemplo, el código siguiente genera un gráfico de reproducción de archivos y lo guarda en un archivo denominado GRF:
+Por ejemplo, el código siguiente compila un gráfico de reproducción de archivos y lo guarda en un archivo denominado MyGraph.grf:
 
 
 ```C++
@@ -90,7 +90,7 @@ void __cdecl main(void)
 
 <dl> <dt>
 
-[Simular la compilación de gráficos con GraphEdit](simulating-graph-building-with-graphedit.md)
+[Simulación de Graph building con GraphEdit](simulating-graph-building-with-graphedit.md)
 </dt> <dt>
 
 [**StgCreateDocfile**](/windows/win32/api/coml2api/nf-coml2api-stgcreatedocfile)

@@ -1,25 +1,25 @@
 ---
-description: En este tema se describe cómo recuperar datos de un sensor, de forma sincrónica y asincrónica.
+description: En este tema se describe cómo recuperar datos de un sensor de forma sincrónica y asincrónica.
 ms.assetid: 4ae80816-5e53-4ed1-9300-4b38c22d65e2
-title: Recuperación de los valores de datos del sensor
+title: Recuperar valores de datos del sensor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4642f120e549cd77b1b37610037092facf2ead1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e240b9bc14d917db0e0c4280ad957aa139369eb7762abfcd69441d25e66857d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960035"
 ---
-# <a name="retrieving-sensor-data-values"></a>Recuperación de los valores de datos del sensor
+# <a name="retrieving-sensor-data-values"></a>Recuperar valores de datos del sensor
 
-En este tema se describe cómo recuperar datos de un sensor, de forma sincrónica y asincrónica.
+En este tema se describe cómo recuperar datos de un sensor de forma sincrónica y asincrónica.
 
-## <a name="retrieving-data-synchronously"></a>Recuperar datos sincrónicamente
+## <a name="retrieving-data-synchronously"></a>Recuperar datos de forma sincrónica
 
-Puede recuperar los datos del sensor sincrónicamente llamando a [**ISensor:: GetData**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getdata).
+Puede recuperar los datos del sensor sincrónicamente llamando [**a ISensor::GetData**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getdata).
 
-En el código de ejemplo siguiente se recupera un informe de datos de sensor y, a continuación, se recuperan tres valores de campo de datos individuales. El sensor de ejemplo proporciona datos personalizados sobre la hora local actual en los campos de datos hora, minuto y segundo. La variable denominada pSensor contiene un puntero a [**ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor) que representa el sensor que proporciona los datos.
+El código de ejemplo siguiente recupera un informe de datos del sensor y, a continuación, recupera tres valores de campo de datos individuales. El sensor de ejemplo proporciona datos personalizados sobre la hora local actual en campos de datos de hora, minuto y segundo. La variable denominada pSensor contiene un puntero a [**ISensor**](/windows/desktop/api/sensorsapi/nn-sensorsapi-isensor) que representa el sensor que proporciona los datos.
 
 
 ```C++
@@ -85,9 +85,9 @@ if(SUCCEEDED(hr))
 
 ## <a name="retrieving-data-asynchronously"></a>Recuperar datos de forma asincrónica
 
-Puede recibir datos de sensor de forma asincrónica si se registra para recibir el evento [**ISensorEvents:: OnDataUpdated**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) . Para saber cómo recibir devoluciones de llamada de eventos del sensor, consulte uso de eventos de la [API de sensor](using-sensor-api-events.md).
+Puede recibir datos del sensor de forma asincrónica si se registra para recibir el evento [**ISensorEvents::OnDataUpdated.**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) Para entender cómo recibir devoluciones de llamada de eventos de sensor, consulte [Uso de eventos de sensor API.](using-sensor-api-events.md)
 
-En el ejemplo de código siguiente se muestra una implementación de [**ISensorEvents:: OnDataUpdated**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) que recupera los valores de datos del informe de datos proporcionado por el evento. El sensor de ejemplo proporciona datos personalizados sobre la hora local actual en los campos de datos hora, minuto y segundo.
+El código de ejemplo siguiente muestra una implementación de [**ISensorEvents::OnDataUpdated**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensorevents-ondataupdated) que recupera los valores de datos del informe de datos proporcionado por el evento . El sensor de ejemplo proporciona datos personalizados sobre la hora local actual en campos de datos de hora, minuto y segundo.
 
 
 ```C++

@@ -1,52 +1,52 @@
 ---
-title: Acerca de los complementos DSP
-description: Acerca de los complementos DSP
+title: Acerca de los complementos de DSP
+description: Acerca de los complementos de DSP
 ms.assetid: 5439c347-28df-439a-bbaa-7eac3188a268
 keywords:
-- Media Player de Windows, Complementos
-- Media Player de Windows, Complementos DSP
-- Complementos de Windows Media Player, procesamiento de señal digital (DSP)
-- complementos, procesamiento de señal digital (DSP)
-- Complementos de procesamiento de señal digital, acerca de
-- Complementos DSP, acerca de
+- Reproductor de Windows Media,complementos
+- Reproductor de Windows Media,complementos DE DSP
+- Reproductor de Windows Media complementos, procesamiento de señales digitales (DSP)
+- complementos, procesamiento de señales digitales (DSP)
+- complementos de procesamiento de señales digitales, acerca de
+- Complementos de DSP, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1def789e7725c50f977268af9a741a2f4c13fc0d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6f10b9804baf23de40a70bf75cab5e2b9c9f4f8132e4770a7522adef69770173
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956885"
 ---
-# <a name="about-dsp-plug-ins"></a>Acerca de los complementos DSP
+# <a name="about-dsp-plug-ins"></a>Acerca de los complementos de DSP
 
-Microsoft Windows Media Player proporciona una arquitectura para conectar software complementario que realiza funciones de procesamiento de señal digital (DSP) en las secuencias de audio o vídeo durante la reproducción. Estos programas complementarios se denominan complementos DSP.
+Microsoft Reproductor de Windows Media proporciona arquitectura para conectar software de complemento que realiza funciones de procesamiento de señales digitales (DSP) en las secuencias de audio o vídeo durante la reproducción. Estos programas de complemento se conocen como complementos DE DSP.
 
-En las secciones siguientes se proporciona información general conceptual de los complementos DSP de Windows Media Player.
+En las secciones siguientes se proporciona información general conceptual Reproductor de Windows Media complementos DE DSP.
 
 
 
 | Sección                                                              | Descripción                                                                                            |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Información general del usuario del complemento DSP](dsp-plug-in-user-overview.md)           | Describe los complementos de DSP desde la perspectiva del usuario final.                                                |
-| [Introducción al desarrollador de complementos de DSP](dsp-plug-in-developer-overview.md) | Proporciona información general que debe conocer antes de crear un complemento DSP para Windows Media Player. |
-| [Crear un complemento DSP](building-a-dsp-plug-in.md)                 | Explica cómo utilizar el Asistente para complementos de Media Player de Windows para crear un complemento DSP de ejemplo.            |
-| [Implementación del código DSP](implementing-your-dsp-code.md)         | Describe las consideraciones para crear complementos DSP de audio y vídeo personalizados para Windows Media Player.    |
+| [Introducción al usuario del complemento DSP](dsp-plug-in-user-overview.md)           | Describe los complementos de DSP desde la perspectiva del usuario final.                                                |
+| [Introducción al desarrollador del complemento DSP](dsp-plug-in-developer-overview.md) | Proporciona información general que debe conocer antes de crear un complemento DSP para Reproductor de Windows Media. |
+| [Creación de un complemento DSP](building-a-dsp-plug-in.md)                 | Explica cómo usar el asistente Reproductor de Windows Media complemento para crear un complemento DSP de ejemplo.            |
+| [Implementación del código DSP](implementing-your-dsp-code.md)         | Describe las consideraciones para crear complementos DE DSP de audio y vídeo personalizados para Reproductor de Windows Media.    |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Complementos DSP de Windows Media Player**](windows-media-player-dsp-plug-ins.md)
+[**Reproductor de Windows Media Complementos DE DSP**](windows-media-player-dsp-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

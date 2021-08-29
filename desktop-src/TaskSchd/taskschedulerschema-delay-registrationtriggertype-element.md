@@ -46,7 +46,7 @@ El tipo complejo [**registrationTriggerType**](taskschedulerschema-registrationt
 
 Para el desarrollo de scripting, el retraso del desencadenador de registro se especifica mediante la [**propiedad RegistrationTrigger.Delay.**](registrationtrigger-delay.md)
 
-Para el desarrollo de C++, el retraso del desencadenador de registro se especifica mediante la propiedad [**IRegistrationTrigger::D elay.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationtrigger-get_delay)
+Para el desarrollo de C++, el retraso del desencadenador de registro se especifica mediante la [**propiedad IRegistrationTrigger::D elay.**](/windows/desktop/api/taskschd/nf-taskschd-iregistrationtrigger-get_delay)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -77,7 +77,7 @@ El xml siguiente define un retraso del desencadenador de registro que permite un
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

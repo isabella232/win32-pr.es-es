@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118646453"
 ---
-# <a name="requesttpmstatechange-method-of-the-cim_tpm-class"></a>Método RequestTPMStateChange de la clase TPM de CIM \_
+# <a name="requesttpmstatechange-method-of-the-cim_tpm-class"></a>Método RequestTPMStateChange de la clase \_ TPM cim
 
-Solicita que el estado del TPM cambie al valor especificado en el *parámetro RequestedTPMState.* Si la invocación del método se completa correctamente, la **propiedad TPMState** será igual al **parámetro RequestedTPMState.** Invocar el método **RequestTPMStateChange** varias veces podría dar lugar a que las solicitudes anteriores se sobrescriban o se pierdan.
+Solicita que el estado del TPM cambie al valor especificado en el *parámetro RequestedTPMState.* Si la invocación del método se completa correctamente, la **propiedad TPMState** será igual al **parámetro RequestedTPMState.** La invocación del **método RequestTPMStateChange** varias veces podría dar lugar a que las solicitudes anteriores se sobrescriban o se pierdan.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Estados de TPM solicitados.
 
 <span id="S3_Enabled-Inactive-Owned"></span><span id="s3_enabled-inactive-owned"></span><span id="S3_ENABLED-INACTIVE-OWNED"></span>
 
-**Propiedad inactiva habilitada para S3** (4)
+**S3 Enabled-Inactive-Owned** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -79,28 +79,28 @@ Estados de TPM solicitados.
 
 <span id="S5_Enabled-Active-Unowned"></span><span id="s5_enabled-active-unowned"></span><span id="S5_ENABLED-ACTIVE-UNOWNED"></span>
 
-**S5 enabled-active-unwned** (6)
+**S5 enabled-active-unowned** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S6_Disabled-Active-Unowned"></span><span id="s6_disabled-active-unowned"></span><span id="S6_DISABLED-ACTIVE-UNOWNED"></span>
 
-**S6 Disabled-Active-Unwned** (7)
+**S6 Disabled-Active-Unowned** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S7_Enabled-Inactive-Unowned"></span><span id="s7_enabled-inactive-unowned"></span><span id="S7_ENABLED-INACTIVE-UNOWNED"></span>
 
-**S7 Enabled-Inactive-Unwned** (8)
+**S7 Enabled-Inactive-Unowned** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="S8_Disabled-Inactive-Unowned"></span><span id="s8_disabled-inactive-unowned"></span><span id="S8_DISABLED-INACTIVE-UNOWNED"></span>
 
-**S8 Disabled-Inactive-Unwned** (9)
+**S8 Disabled-Inactive-Unowned** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -122,21 +122,21 @@ Estados de TPM solicitados.
 *AuthorizationToken* \[ En\]
 </dt> <dd>
 
-Token de autorización que puede ser necesario para que la acción suba efecto. El *parámetro AuthorizationToken* puede ser necesario para establecer la presencia física o para pasar ownerAuth, la contraseña de autorización de propietario definida por TCG. En el caso de OwnerAuth, es posible que se requiera CIM SharedCredential con un valor distinto de NULL de \_ CIM \_ SharedCredential.Secret. La propiedad SHAREDCredential.Algorithm de CIM también se puede especificar en función de la \_ propiedad CIM \_ TPMCapabilities.SupportedPasswordAlgorithms.
+Token de autorización que puede ser necesario para que la acción suba efecto. El *parámetro AuthorizationToken* puede ser necesario para establecer la presencia física o para pasar ownerAuth, la contraseña de autorización de propietario definida por TCG. En el caso de OwnerAuth, es posible que se requiera la credencial compartida CIM con un valor no NULL de \_ CIM \_ SharedCredential.Secret. La propiedad SHAREDCredential.Algorithm de CIM también se puede especificar en función de la \_ propiedad CIM \_ TPMCapabilities.SupportedPasswordAlgorithms.
 
 </dd> <dt>
 
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar *timeoutPeriod.* Un valor de 0 o un parámetro NULL indica que el cliente no tiene requisitos de tiempo para la transición.
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar *timeoutPeriod.* Un valor de 0 o un parámetro null indica que el cliente no tiene ningún requisito de tiempo para la transición.
 
 </dd> </dl>
 
@@ -192,7 +192,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
@@ -202,7 +202,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

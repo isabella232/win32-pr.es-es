@@ -1,49 +1,49 @@
 ---
-title: Uso de la propiedad invokeURLs en una página web que se muestra en Firefox
-description: Uso de la propiedad invokeURLs en una página web que se muestra en Firefox
+title: Uso de la propiedad invokeURLs en una página web mostrada por Firefox
+description: Uso de la propiedad invokeURLs en una página web mostrada por Firefox
 ms.assetid: cec2ba89-b08f-4c83-bcb2-a4df1ce6f179
 keywords:
-- Windows Media Player, incrustar el control ActiveX
-- Modelo de objetos de Windows Media Player, incrustar el control ActiveX
-- modelo de objetos, incrustar el control ActiveX
-- Windows Media Player Mobile, incrustar el control ActiveX
-- Control ActiveX de Windows Media Player, incrustación
-- Control ActiveX móvil de Windows Media Player, incrustación
-- Control ActiveX de Windows Media Player, páginas web
-- Control ActiveX móvil de Windows Media Player, páginas web
-- Control ActiveX de Windows Media Player, propiedad invokeURLs
-- Control ActiveX móvil de Windows Media Player, propiedad invokeURLs
-- incrustación, páginas web
-- Incrustación de páginas web, propiedad invokeURLs
-- Windows Media Player, Firefox
-- Modelo de objetos de Windows Media Player, Firefox
-- modelo de objetos, Firefox
-- Control ActiveX de Windows Media Player, Firefox
-- Control ActiveX, Firefox
+- Reproductor de Windows Media, insertar ActiveX control
+- Reproductor de Windows Media modelo de objetos, insertar ActiveX control
+- object model,embedding ActiveX control
+- Reproductor de Windows Media Mobile,embedding ActiveX control
+- Reproductor de Windows Media ActiveX control, inserción
+- Reproductor de Windows Media Control de ActiveX móvil, inserción
+- Reproductor de Windows Media ActiveX control,Páginas web
+- Reproductor de Windows Media Control de ActiveX móviles,páginas web
+- Reproductor de Windows Media ActiveX control,invokeURLs, propiedad
+- Reproductor de Windows Media Control de ActiveX móvil, propiedad invokeURLs
+- embedding,Web pages
+- Inserción de páginas web, propiedad invokeURLs
+- Reproductor de Windows Media,Firefox
+- Reproductor de Windows Media modelo de objetos,Firefox
+- object model,Firefox
+- Reproductor de Windows Media ActiveX control,Firefox
+- ActiveX control, Firefox
 - Firefox, propiedad invokeURLs
-- Incrustación de páginas web, Firefox
+- Inserción de páginas web, Firefox
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb0a2eb96e65d8fa6d2758669e3c844b2d13c0bc
-ms.sourcegitcommit: e22adfb0dd3bb989e59455baedb4d905a877a240
+ms.openlocfilehash: 2487ebba1ff5664537dbaf0b0abad02a98acecf3c5985f1c09ffe9f8bbb743c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "105704822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117114"
 ---
-# <a name="using-the-invokeurls-property-in-a-web-page-displayed-by-firefox"></a>Uso de la propiedad invokeURLs en una página web que se muestra en Firefox
+# <a name="using-the-invokeurls-property-in-a-web-page-displayed-by-firefox"></a>Uso de la propiedad invokeURLs en una página web mostrada por Firefox
 
-Algunos archivos multimedia contienen direcciones URL incrustadas en las que Windows Media Player muestra las páginas web en una ventana o un marco del explorador Web a medida que se reproduce el archivo multimedia. En Windows Internet Explorer, puede usar la propiedad [Settings. invokeURLs](settings-invokeurls.md) para especificar si las páginas se muestran para las direcciones URL incrustadas, y puede usar la propiedad [Settings. defaultFrame](settings-defaultframe.md) para especificar un marco para mostrar dichas páginas.
+Algunos archivos multimedia contienen direcciones URL insertadas para las que Reproductor de Windows Media páginas web en una ventana o marco del explorador web a medida que se reproduce el archivo multimedia. En Windows Internet Explorer, puede usar la propiedad [Configuración.invokeURLs](settings-invokeurls.md) para especificar si las páginas se muestran para las direcciones URL insertadas, y puede usar la propiedad [Configuración.defaultFrame](settings-defaultframe.md) para especificar un marco para mostrar dichas páginas.
 
-En Firefox, se necesitan algunas soluciones alternativas para establecer la propiedad **invokeURLs** y especificar un marco para mostrar las páginas de las direcciones URL incrustadas.
+En Firefox, se requieren algunas soluciones alternativas para establecer la propiedad **invokeURLs** y para especificar un marco para mostrar páginas para direcciones URL insertadas.
 
 ## <a name="setting-the-invokeurls-property"></a>Establecimiento de la propiedad invokeURLs
 
-El valor predeterminado de la propiedad **Settings. invokeURLs** es true, por lo que si desea que el valor sea false, debe establecerlo explícitamente. En Internet Explorer, puede establecer **invokeURLs** en false en un elemento Param dentro del elemento de objeto del control Player.
+El valor predeterminado de **la propiedad Configuración.invokeURLs** es true, por lo que si desea que el valor sea false, debe establecerlo explícitamente. En Internet Explorer, puede establecer **invokeURLs** en false en un elemento PARAM dentro del elemento OBJECT del control Player.
 
-El complemento de Firefox no admite el establecimiento de la propiedad **invokeURLs** en un elemento Param.
+El complemento firefox no admite el establecimiento de la **propiedad invokeURLs** en un elemento PARAM.
 
-Para solucionar esta limitación, puede establecer la propiedad **invokeURLs** en el script. En el código siguiente se muestra cómo establecer la propiedad **invokeURLs** en false en una página web que se puede mostrar con Internet Explorer y Firefox.
+Puede evitar esta limitación estableciendo la **propiedad invokeURLs** en el script. En el código siguiente se muestra cómo establecer la propiedad **invokeURLs** en false en una página web que se puede mostrar tanto en Internet Explorer como en Firefox.
 
 
 ```HTML
@@ -87,7 +87,7 @@ Para solucionar esta limitación, puede establecer la propiedad **invokeURLs** e
 
 ## <a name="displaying-webpages-in-a-frame"></a>Mostrar páginas web en un marco
 
-Un archivo multimedia puede contener direcciones URL que muestren páginas web en una ventana o marco del explorador cuando se reproduzca el archivo multimedia. En Internet Explorer, puede usar la propiedad [Settings. defaultFrame](settings-defaultframe.md) para especificar el marco en el que se muestran esas páginas. Si no establece la propiedad **defaultFrame** , las direcciones URL se muestran en una ventana independiente del explorador predeterminado. Sin embargo, el complemento de Firefox no admite la propiedad **Settings. defaultFrame** . Para evitar esta limitación, establezca la propiedad **Settings. invokeURLs** en false y escriba un controlador de eventos [comando](player-player-scriptcommand.md) que establezca la ubicación del marco de destino. En el ejemplo siguiente, que funciona en Internet Explorer y Firefox, se ilustra esta técnica. Supongamos que la página web que se muestra en el ejemplo está en los marcos \[ 0 \] y desea que la página de la dirección URL se muestre en los marcos \[ 1 \] .
+Un archivo multimedia puede contener direcciones URL que muestran páginas web en una ventana o marco del explorador a medida que se reproduce el archivo multimedia. En Internet Explorer, puede usar la [propiedad Configuración.defaultFrame](settings-defaultframe.md) para especificar el marco en el que se muestran esas páginas. Si no establece la propiedad **defaultFrame,** las direcciones URL se muestran en una ventana independiente del explorador predeterminado. Sin embargo, el complemento firefox no admite la **propiedad Configuración.defaultFrame.** Para evitar esta limitación, establezca la propiedad **Configuración.invokeURLs** en false y escriba un controlador de eventos [ScriptCommand](player-player-scriptcommand.md) que establezca la ubicación del marco de destino. En el ejemplo siguiente, que funciona en Internet Explorer y Firefox, se ilustra esta técnica. Suponga que la página web que se muestra en el ejemplo está en fotogramas 0 y desea que la página de la dirección URL se muestre \[ \] en los fotogramas \[ \] 1.
 
 
 ```HTML
@@ -140,12 +140,12 @@ Un archivo multimedia puede contener direcciones URL que muestren páginas web e
 
 <dl> <dt>
 
-[**Uso del control de Media Player de Windows con Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**Uso del Reproductor de Windows Media Control con Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

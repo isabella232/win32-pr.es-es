@@ -1,11 +1,11 @@
 ---
-title: Método ActiveBasicDevice SetCachedSinkProtocolInfo (PlayToDevice. h)
-description: Obtiene la información del protocolo del receptor almacenado en caché para el dispositivo. | Método ActiveBasicDevice SetCachedSinkProtocolInfo (PlayToDevice. h)
+title: Método ActiveBasicDevice SetCachedSinkProtocolInfo (PlayToDevice.h)
+description: Obtiene la información del protocolo de receptor almacenado en caché para el dispositivo. | Método ActiveBasicDevice SetCachedSinkProtocolInfo (PlayToDevice.h)
 ms.assetid: C4856B97-89F9-43EC-B778-9E0CDAAF2C47
 keywords:
-- Método SetCachedSinkProtocolInfo API de streaming de multimedia
-- Método SetCachedSinkProtocolInfo API de streaming de multimedia, interfaz ActiveBasicDevice
-- Interfaz ActiveBasicDevice API de streaming de multimedia, método SetCachedSinkProtocolInfo
+- Método SetCachedSinkProtocolInfo de Media Streaming API
+- Método SetCachedSinkProtocolInfo de Media Streaming API , interfaz ActiveBasicDevice
+- Interfaz ActiveBasicDevice Media Streaming API, método SetCachedSinkProtocolInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9100cb8faeb685a0cc7a8b7b73deb11afca29a3e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4dfcfc780371f339b4fd14620975fc27e8dd08ed6ac9f054cfd2654840dc8022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105707707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119952765"
 ---
-# <a name="activebasicdevicesetcachedsinkprotocolinfo-method"></a>ActiveBasicDevice:: SetCachedSinkProtocolInfo (método)
+# <a name="activebasicdevicesetcachedsinkprotocolinfo-method"></a>Método ActiveBasicDevice::SetCachedSinkProtocolInfo
 
-Obtiene la información del protocolo del receptor almacenado en caché para el dispositivo.
+Obtiene la información del protocolo de receptor almacenado en caché para el dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ HRESULT SetCachedSinkProtocolInfo(
 
 <dl> <dt>
 
-*physicalNetworkInterface* \[ de\]
+*physicalNetworkInterface* \[ En\]
 </dt> <dd>
 
 Especifica la interfaz de red física.
 
 </dd> <dt>
 
-*velocidad de bits* \[ de\]
+*velocidad de bits* \[ En\]
 </dt> <dd>
 
 Valor de velocidad de bits.
@@ -59,7 +59,7 @@ Valor de velocidad de bits.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,10 +67,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

@@ -1,21 +1,21 @@
 ---
-description: El \_ método get MEDIANAME obtiene el nombre del medio. Los elementos multimedia definidos son audio, vídeo, pizarra, texto y datos.
+description: El método get \_ MediaName obtiene el nombre del medio. Los medios definidos son audio, vídeo, pizarra, texto y datos.
 ms.assetid: 4afb24f9-582e-420d-8bda-772a3dc4d96c
-title: 'Método ITMedia:: get_MediaName (Sdpblb. h)'
+title: ItMedia::get_MediaName (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9152994eac98d5e846ac147072a51a3334930da9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43cfa49af8b16138c2e92b2ea6296eb47f44b3d22b542d464e2bb87fc15b71e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060913"
 ---
-# <a name="itmediaget_medianame-method"></a>ITMedia:: get \_ MEDIANAME (método)
+# <a name="itmediaget_medianame-method"></a>ItMedia::get \_ MediaName (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ MEDIANAME** obtiene el nombre del medio. Los elementos multimedia definidos son audio, vídeo, pizarra, texto y datos.
+El **método get \_ MediaName** obtiene el nombre del medio. Los medios definidos son audio, vídeo, pizarra, texto y datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ HRESULT get_MediaName(
 
 <dl> <dt>
 
-*ppMediaName* \[ enuncia\]
+*ppMediaName* \[ out\]
 </dt> <dd>
 
 Puntero a un **BSTR** que contiene el nombre del medio, como audio.
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *ppMediaName* no es un puntero válido.<br/>  |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro ppMediaName* no es un puntero válido.<br/>  |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -57,9 +57,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria asignada para el parámetro *ppMediaName* .
+La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria asignada para el *parámetro ppMediaName.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleau
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleau
 [**ITMedia**](itmedia.md)
 </dt> <dt>
 
-[**ITMedia::p UT \_ MEDIANAME**](itmedia-put-medianame.md)
+[**ITMedia::put \_ MediaName**](itmedia-put-medianame.md)
 </dt> </dl>
 
  

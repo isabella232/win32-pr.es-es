@@ -3,30 +3,30 @@ title: Plantillas de conformidad de dispositivos
 description: Plantillas de conformidad de dispositivos
 ms.assetid: 5172ab39-819a-4d74-8e6e-b275b43f664c
 keywords:
-- SDK de Windows Media Format, plantillas de conformidad de dispositivos
+- Windows SDK de formato multimedia, plantillas de conformidad de dispositivos
 - códecs, plantillas de conformidad de dispositivos
 - plantillas de conformidad de dispositivos, acerca de
-- plantillas, plantillas de conformidad de dispositivos
+- templates,device conformance templates
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eccb88b372f9e0eb463d88db83d70102408a7a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a4eea2bcb923cef2a92519b613f22bab046fbde9a50cbbdf29f22a0921a56fa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655676"
 ---
 # <a name="device-conformance-templates"></a>Plantillas de conformidad de dispositivos
 
-Los códecs de Windows Media 9 Series admiten plantillas de conformidad de dispositivos, que son intervalos definidos de valores de configuración de secuencia y algoritmos de códecs. Cada plantilla define los intervalos de valores adecuados para determinados dispositivos.
+Los códecs Windows serie Media 9 admiten plantillas de conformidad de dispositivos, que son intervalos definidos de valores de configuración de flujo y algoritmos de códec. Cada plantilla define los intervalos de valores adecuados para determinados dispositivos.
 
-En el pasado, los fabricantes de hardware que hacían que los dispositivos capaces de reproducir archivos ASF estaban trabajando con sus propios estándares. Como resultado, la gama de funcionalidades es muy dispares en dispositivos similares que continúan hoy en día.
+En el pasado, los fabricantes de hardware que hacían que los dispositivos fueran capaces de reproducir archivos ASF funcionaban según sus propios estándares. Esto dio lugar a una amplia gama de funcionalidades en dispositivos similares que continúa hoy en día.
 
-Con las plantillas de conformidad de dispositivos, los códecs de Windows Media establecen una base común para dispositivos similares. Los fabricantes de hardware pueden indicar las plantillas a las que se ajustan los dispositivos, lo que permite a los creadores de contenido destinar con mayor seguridad sus archivos a los dispositivos de lectura. También es más fácil que las aplicaciones de reproducción determinen si un archivo no es apropiado para el dispositivo antes de intentar reproducirlo.
+Con las plantillas de conformidad de dispositivos, los códecs Windows media establecen un terreno común para dispositivos similares. Los fabricantes de hardware pueden especificar las plantillas a las que se ajustan sus dispositivos, lo que permite a los creadores de contenido dirigir sus archivos a dispositivos de lectura con mayor confianza. También es más fácil para las aplicaciones de reproductor determinar si un archivo es inadecuado para el dispositivo antes de intentar reproducirlo.
 
-Una plantilla de conformidad de dispositivos se identifica mediante una cadena, que se almacena como un atributo de metadatos asociado con la secuencia a la que se aplica la plantilla. Para obtener una lista de las plantillas y sus cadenas y parámetros, vea parámetros de la [plantilla de conformidad de dispositivos](device-conformance-template-parameters.md).
+Una plantilla de conformidad de dispositivo se identifica mediante una cadena, que se almacena como un atributo de metadatos asociado a la secuencia a la que se aplica la plantilla. Para obtener una lista de las plantillas y sus cadenas y parámetros, consulte [Device Conformance Template Parameters](device-conformance-template-parameters.md).
 
-Las plantillas de conformidad de dispositivos se admiten para todos los códecs de la serie Windows Media 9 y posteriores, excepto el códec de pantalla de Windows Media Video 9 y el códec Windows Media Audio 9 Lossless.
+Las plantillas de conformidad de dispositivos se admiten para todos los códecs de la serie Windows Media 9 y versiones posteriores, excepto el códec de pantalla Windows Media Video 9 y el códec sin pérdida de Windows Media Audio 9.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -35,12 +35,12 @@ Las plantillas de conformidad de dispositivos se admiten para todos los códecs 
 [**Características del códec**](codec-features.md)
 </dt> <dt>
 
-[**Trabajar con plantillas de cumplimiento de dispositivos**](working-with-device-conformance-templates.md)
+[**Trabajar con plantillas de conformidad de dispositivos**](working-with-device-conformance-templates.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

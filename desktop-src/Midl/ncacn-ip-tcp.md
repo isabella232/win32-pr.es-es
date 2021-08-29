@@ -41,13 +41,13 @@ Especifica el nombre o la dirección de Internet del servidor o host del equipo.
 *port-name* 
 </dt> <dd>
 
-Especifica un número opcional de 16 bits. Los valores de menor que 1024 normalmente se reservan. Si no se especifica ningún valor, el servicio de asignación de puntos de conexión selecciona un valor *de nombre de puerto* válido.
+Especifica un número opcional de 16 bits. Normalmente, los valores de menos de 1024 están reservados. Si no se especifica ningún valor, el servicio de asignación de puntos de conexión selecciona un valor de *nombre de puerto* válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La sintaxis de la cadena de puerto de transporte TCP/IP, como todas las cadenas de puerto, se define independientemente de la especificación de IDL. El compilador realiza alguna comprobación de sintaxis, pero no garantiza que la especificación del punto de conexión sea correcta. Algunos errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
+La sintaxis de la cadena de puerto de transporte TCP/IP, como todas las cadenas de puerto, se define independientemente de la especificación de IDL. El compilador realiza alguna comprobación de sintaxis, pero no garantiza que la especificación del extremo sea correcta. Algunos errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
 
 ## <a name="examples"></a>Ejemplos
 

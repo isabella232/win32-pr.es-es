@@ -4,17 +4,17 @@ ms.assetid: d344a29f-5b6d-44a3-b1d7-759442e229f5
 title: elemento transition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60bf6b915a393ab153f0e94862cb5ed72dd3424c
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: e725c5c6282a35f027cad87fd0b8693dbf4885ce7d4c1d5948abc2caa9014301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951484"
 ---
 # <a name="transition-element"></a>elemento transition
 
 > [!Note]  
-> \[En desuso. Esta API puede quitarse de futuras versiones de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 

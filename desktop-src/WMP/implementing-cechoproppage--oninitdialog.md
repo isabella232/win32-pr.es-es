@@ -3,24 +3,24 @@ title: Implementación de CEchoPropPage OnInitDialog
 description: Implementación de CEchoPropPage OnInitDialog
 ms.assetid: 568989b0-bc07-480f-8b5c-41bbada713f8
 keywords:
-- Complementos de Windows Media Player, páginas de propiedades de ejemplo echo
-- complementos, páginas de propiedades de ejemplo echo
-- Complementos de procesamiento de señal digital, páginas de propiedades de ejemplo de eco
-- Complementos DSP, páginas de propiedades de ejemplo echo
-- Ejemplo de complemento de DSP de eco, páginas de propiedades
-- Ejemplo de complemento DSP de eco, CEchoPropPage OnInitDialog (método)
+- Reproductor de Windows Media complementos, páginas de propiedades de ejemplo echo
+- complementos, páginas de propiedades de ejemplo de eco
+- complementos de procesamiento de señales digitales, páginas de propiedades de ejemplo de eco
+- Complementos de DSP, páginas de propiedades de ejemplo de eco
+- Ejemplo de complemento DSP de eco, páginas de propiedades
+- Ejemplo de complemento DSP de eco, método CEchoPropPage OnInitDialog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0874c750914b5caecf86ffa61a0c42d38bb1c02e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: aa7f525ad5279b1215d597a043d0c091d51ddd4bf9fca8546dbcb90317a525f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135608"
 ---
-# <a name="implementing-cechoproppageoninitdialog"></a>Implementar CEchoPropPage:: OnInitDialog
+# <a name="implementing-cechoproppageoninitdialog"></a>Implementación de CEchoPropPage::OnInitDialog
 
-El método **CEchoPropPage:: OnInitDialog** se implementa en EchoPropPage. cpp. Se ejecuta cuando se invoca el cuadro de diálogo de la página de propiedades. El código de este método debe recuperar los valores de propiedad actuales y mostrarlos en el cuadro de edición correcto. El código de ejemplo del Asistente para complementos proporciona una implementación para una sola propiedad. Puede modificar este código para una de las propiedades de ejemplo de eco y, a continuación, agregar código para recuperar el segundo valor de propiedad.
+El **método CEchoPropPage::OnInitDialog** se implementa en EchoPropPage.cpp. Se ejecuta cuando se invoca el cuadro de diálogo de la página de propiedades. El código de este método debe recuperar los valores de propiedad actuales y mostrarlos en el cuadro de edición correcto. El código de ejemplo del asistente para complementos proporciona una implementación para una sola propiedad. Puede modificar este código para una de las propiedades de ejemplo Echo y, a continuación, agregar código para recuperar el segundo valor de propiedad.
 
 ## <a name="declaring-the-oninitdialog-method-variables"></a>Declarar las variables del método OnInitDialog
 
@@ -37,7 +37,7 @@ double fWetmix =  0.50;       // Default wet mix double.
 
 ## <a name="retrieving-the-current-values-from-the-plug-in"></a>Recuperar los valores actuales del complemento
 
-El código debe intentar después recuperar los valores de propiedad actuales del complemento de eco. En el ejemplo siguiente se intenta recuperar cada propiedad:
+A continuación, el código debe intentar recuperar los valores de propiedad actuales del complemento Echo. En el ejemplo siguiente se intenta recuperar cada propiedad:
 
 
 ```
@@ -52,11 +52,11 @@ if (m_spEcho)
 
 
 
-En el cuadro de diálogo se muestra el valor de nivel de efectos para el usuario como un entero, pero el complemento almacena el valor como un número de punto flotante. Por lo tanto, el código convierte el valor de punto flotante en un valor **DWORD** .
+El cuadro de diálogo muestra el valor de nivel de efectos al usuario como un entero, pero el complemento almacena el valor como un número de punto flotante. Por lo tanto, el código convierte el valor de punto flotante en un **valor DWORD.**
 
-## <a name="retrieving-the-current-values-from-the-registry"></a>Recuperación de los valores actuales del registro
+## <a name="retrieving-the-current-values-from-the-registry"></a>Recuperar los valores actuales del Registro
 
-Si la página de propiedades no puede recuperar los valores actuales del complemento, debe intentar leerlos desde el registro. El código siguiente lee cada valor de propiedad:
+Si la página de propiedades no puede recuperar los valores actuales del complemento, debe intentar leerlos desde el Registro. El código siguiente lee cada valor de propiedad:
 
 
 ```
@@ -89,11 +89,11 @@ else // Otherwise, read values from registry
 
 
 
-Observe el uso de las constantes del registro que creó anteriormente.
+Observe el uso de las constantes del Registro que creó anteriormente.
 
 ## <a name="displaying-the-values-to-the-user"></a>Mostrar los valores al usuario
 
-Por último, la página de propiedades debe mostrar los valores en los controles de cuadro de edición correctos. En el código de ejemplo siguiente se muestra esto:
+Por último, la página de propiedades debe mostrar los valores en los controles de cuadro de edición correctos. El código de ejemplo siguiente muestra esto:
 
 
 ```
@@ -114,12 +114,12 @@ SetDlgItemText(IDC_WETMIX, szStr);
 
 <dl> <dt>
 
-[**Modificar la página de propiedades de ejemplo echo**](modifying-the-echo-sample-property-page.md)
+[**Modificar la página de propiedades Echo Sample**](modifying-the-echo-sample-property-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

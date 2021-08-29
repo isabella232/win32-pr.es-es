@@ -1,9 +1,9 @@
 ---
-title: Enumeración COLORTYPE (Softkbdc. h)
-description: Los elementos de la enumeración COLORTYPE se usan para especificar los tipos de colores que están disponibles para un teclado en pantalla.
+title: Enumeración COLORTYPE (Softkbdc.h)
+description: Los elementos de la enumeración COLORTYPE se usan para especificar tipos de colores que están disponibles para un teclado flexible.
 ms.assetid: 63a51f67-d85c-4017-a569-03df164198db
 keywords:
-- Plataforma de servicios de texto de enumeración COLORTYPE
+- Enumeración COLORTYPE Text Services Framework
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc28f3b4111973e9676a34c548db566b1c95ac43
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45e188bae23ebc4c929dc3b82fea6df555bf878d57093bf08685aaae1277e837
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118879852"
 ---
 # <a name="colortype-enumeration"></a>Enumeración COLORTYPE
 
-Los elementos de la enumeración **COLORTYPE** se usan para especificar los tipos de colores que están disponibles para un teclado en pantalla.
+Los elementos de la **enumeración COLORTYPE** se usan para especificar tipos de colores que están disponibles para un teclado flexible.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -76,11 +76,11 @@ Color de primer plano seleccionado.
 <span id="SelTextColor"></span><span id="seltextcolor"></span><span id="SELTEXTCOLOR"></span>**SelTextColor**
 </dt> <dd>
 
-Color del texto seleccionado.
+Color de texto seleccionado.
 
 </dd> <dt>
 
-<span id="Max_color_Type"></span><span id="max_color_type"></span><span id="MAX_COLOR_TYPE"></span>**\_Tipo de color Max \_**
+<span id="Max_color_Type"></span><span id="max_color_type"></span><span id="MAX_COLOR_TYPE"></span>**Tipo \_ de color \_ máximo**
 </dt> <dd>
 
 Tipo de color máximo.
@@ -91,13 +91,13 @@ Tipo de color máximo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                        |
+| Header<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 
 
 

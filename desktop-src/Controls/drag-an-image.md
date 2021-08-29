@@ -1,38 +1,38 @@
 ---
 title: Cómo arrastrar una imagen
-description: En este tema se muestra cómo arrastrar una imagen en la pantalla. Las funciones de arrastre mueven una imagen sin problemas, en color y sin intermitencia del cursor. Se pueden arrastrar imágenes enmascaradas y sin máscara.
+description: En este tema se muestra cómo arrastrar una imagen en la pantalla. Las funciones de arrastre mueven una imagen sin problemas, en color y sin parpadear el cursor. Se pueden arrastrar imágenes enmascaradas y sin máscara.
 ms.assetid: 84AFA770-F495-4312-9631-3335BA8CC799
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da495ef9ee0895c04a856f456fcda3e3125f2957
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 9fdcbc5af1ad148dafc77a775e7ee901ce8c4d07221ab1e55fca251e51241fef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103794151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062945"
 ---
 # <a name="how-to-drag-an-image"></a>Cómo arrastrar una imagen
 
-En este tema se muestra cómo arrastrar una imagen en la pantalla. Las funciones de arrastre mueven una imagen sin problemas, en color y sin intermitencia del cursor. Se pueden arrastrar imágenes enmascaradas y sin máscara.
+En este tema se muestra cómo arrastrar una imagen en la pantalla. Las funciones de arrastre mueven una imagen sin problemas, en color y sin parpadear el cursor. Se pueden arrastrar imágenes enmascaradas y sin máscara.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-begin-the-drag-operation"></a>Paso 1: comenzar la operación de arrastre.
+### <a name="step-1-begin-the-drag-operation"></a>Paso 1: Iniciar la operación de arrastre.
 
-Use la función [**ImageList \_ BeginDrag**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_begindrag) para iniciar una operación de arrastre.
+Use la [**función ImageList \_ BeginDrag**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_begindrag) para iniciar una operación de arrastre.
 
-La función definida por el usuario en el siguiente ejemplo de código de C++ está pensada para llamarse como respuesta a un mensaje de presionar el botón del mouse, como [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown). La función determina si el usuario ha hecho clic en el rectángulo delimitador de la imagen. Si hizo clic en el usuario, la función captura la entrada del mouse, borra la imagen del área cliente y calcula la posición de la zona activa dentro de la imagen. La función establece la zona activa para que coincida con la zona activa del cursor del mouse. A continuación, la función inicia la operación de arrastre llamando a [**ImageList \_ BeginDrag**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_begindrag).
+La función definida por el usuario en el siguiente ejemplo de código de C++ está pensada para llamarse en respuesta a un mensaje de botón del mouse, como [**WM \_ LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown). La función determina si el usuario ha hecho clic en el rectángulo delimitador de la imagen. Si el usuario ha hecho clic, la función captura la entrada del mouse, borra la imagen del área de cliente y calcula la posición de la zona de acceso más reciente dentro de la imagen. La función establece la zona de acceso directo para que coincida con la zona de acceso directo del cursor del mouse. A continuación, la función comienza la operación de arrastre llamando [**a ImageList \_ BeginDrag**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_begindrag).
 
 
 ```C++
@@ -92,11 +92,11 @@ BOOL StartDragging(HWND hwnd, POINT ptCur, HIMAGELIST himl)
 
 
 
-### <a name="step-2-move-the-image"></a>Paso 2: mueva la imagen.
+### <a name="step-2-move-the-image"></a>Paso 2: Mover la imagen.
 
-La función [**ImageList \_ DragMove**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_dragmove) mueve la imagen a una nueva ubicación.
+La [**función ImageList \_ DragMove**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_dragmove) mueve la imagen a una nueva ubicación.
 
-La función definida por el usuario en el siguiente ejemplo de código de C++ está diseñada para ser llamada en respuesta al mensaje de [**\_ MOUSEMOVE de WM**](/windows/desktop/inputdev/wm-mousemove) . Arrastra la imagen a una nueva ubicación.
+La función definida por el usuario en el siguiente ejemplo de código de C++ está pensada para llamarse en respuesta al [**mensaje \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) de WM. Arrastra la imagen a una nueva ubicación.
 
 
 ```C++
@@ -115,9 +115,9 @@ BOOL MoveTheImage(POINT ptCur)
 
 
 
-### <a name="step-3-end-the-drag-operation"></a>Paso 3: finalizar la operación de arrastre.
+### <a name="step-3-end-the-drag-operation"></a>Paso 3: Finalizar la operación de arrastre.
 
-La función definida por el usuario en el siguiente ejemplo de código de C++ llama a la función [**ImageList \_ EndDrag**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_enddrag) para finalizar la operación de arrastre. A continuación, llama a la función [**ImageList \_ DragLeave**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_dragleave) para desbloquear la ventana y ocultar la imagen de arrastre, lo que permite que la ventana se actualice.
+La función definida por el usuario en el siguiente ejemplo de código de C++ llama a la [**función ImageList \_ EndDrag**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_enddrag) para finalizar la operación de arrastre. A continuación, llama a [**la función \_ ImageList DragLeave**](/windows/desktop/api/Commctrl/nf-commctrl-imagelist_dragleave) para desbloquear la ventana y ocultar la imagen de arrastre, lo que permite actualizar la ventana.
 
 
 ```C++
@@ -155,15 +155,15 @@ BOOL StopDragging(HWND hwnd, HIMAGELIST himl, POINT ptCur)
 
 <dl> <dt>
 
-[Referencia de las listas de imágenes](bumper-image-lists-image-lists-reference.md)
+[Referencia de listas de imágenes](bumper-image-lists-image-lists-reference.md)
 </dt> <dt>
 
 [Acerca de las listas de imágenes](image-lists.md)
 </dt> <dt>
 
-[Usar listas de imágenes](using-image-lists.md)
+[Uso de listas de imágenes](using-image-lists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

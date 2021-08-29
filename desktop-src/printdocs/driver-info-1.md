@@ -1,7 +1,7 @@
 ---
-description: La estructura de la información del controlador \_ \_ 1 identifica un controlador de impresora.
+description: La estructura DRIVER \_ INFO \_ 1 identifica un controlador de impresora.
 ms.assetid: 9435192b-3eba-4937-8cd3-bff4e9eb84d3
-title: Estructura de DRIVER_INFO_1 (winspool. h)
+title: DRIVER_INFO_1 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 21301cdab4449d0a48254660d195d4f2507a80e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57fd1fe4eea1585dce36d3d5bd03d2039ad345adbabcfdf1ab4b301f3fc15a69
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092085"
 ---
-# <a name="driver_info_1-structure"></a>Estructura de información de controlador \_ \_ 1
+# <a name="driver_info_1-structure"></a>Estructura \_ DRIVER INFO \_ 1
 
-La estructura de la **información del controlador \_ \_ 1** identifica un controlador de impresora.
+La **estructura DRIVER INFO \_ \_ 1** identifica un controlador de impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _DRIVER_INFO_1 {
 **pName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre de un controlador de impresora.
+Puntero a una cadena terminada en NULL que especifica el nombre de un controlador de impresora.
 
 </dd> </dl>
 
@@ -52,23 +52,23 @@ Puntero a una cadena terminada en null que especifica el nombre de un controlado
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Información del controlador \_ \_ 1W** (Unicode) y la **\_ información del controlador \_ \_ 1A** (ANSI)<br/>                             |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ DRIVER \_ INFO \_ 1W** (Unicode) e **\_ DRIVER INFO \_ \_ 1A** (ANSI)<br/>                             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrinterDrivers**](enumprinterdrivers.md)

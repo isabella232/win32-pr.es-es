@@ -1,7 +1,7 @@
 ---
-description: Los eventos de actualización de la \_ estructura de eventos. Esta estructura se pasa a la aplicación que realiza la llamada a través del procedimiento de devolución de llamada de estado de evento mediante NPP.
+description: La estructura UPDATE \_ EVENT actualiza los eventos. Esta estructura se pasa a la aplicación que realiza la llamada a través del procedimiento de devolución de llamada de estado de evento por parte del NPP.
 ms.assetid: 6896be5a-f986-44ff-a18b-010f7b9858aa
-title: Estructura de UPDATE_EVENT (Netmon. h)
+title: UPDATE_EVENT estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 3da45020a68114182a71b25ff9bba380d3f89eee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51fda96f988a6420acd772182c3259a3de09a10b8a9c2ac8678025e26f5fa15a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962815"
 ---
-# <a name="update_event-structure"></a>ACTUALIZAR la \_ estructura de eventos
+# <a name="update_event-structure"></a>UPDATE \_ EVENT (estructura)
 
-Los eventos de actualización de la estructura de **\_ eventos** . Esta estructura se pasa a la aplicación que realiza la llamada a través del procedimiento de devolución de llamada de estado de evento mediante NPP.
+La **estructura UPDATE \_ EVENT** actualiza los eventos. Esta estructura se pasa a la aplicación que realiza la llamada a través del procedimiento de devolución de llamada de estado de evento por parte del NPP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ Acción realizada.
 **Estado**
 </dt> <dd>
 
-Indicación del estado de la red.
+Indicación de estado de red.
 
 </dd> <dt>
 
@@ -81,38 +81,38 @@ Variable de contador auxiliar.
 
 </dd> <dt>
 
-**Indicaciones**
+**Timestamp**
 </dt> <dd>
 
-Los eventos marcados, en microsegundos.
+Eventos marcados, en microsegundos.
 
 </dd> <dt>
 
 **lpUserContext**
 </dt> <dd>
 
-Contexto de usuario proporcionado por la aplicación.
+Contexto de usuario especificado por la aplicación.
 
 </dd> <dt>
 
 **lpReserved**
 </dt> <dd>
 
-Controlador o uso de NAL.
+Uso del controlador o NAL.
 
 </dd> <dt>
 
 **FramesDropped**
 </dt> <dd>
 
-Fotogramas RTF quitados en el búfer especificado.
+Fotogramas RTF descartados en el búfer especificado.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd>
 
-No se devuelve ningún dato con esta opción de modificador.
+No se recupera ningún dato con esta opción de modificador.
 
 </dd> <dt>
 
@@ -126,25 +126,25 @@ Solo RTF.
 **lpPacketQueue**
 </dt> <dd>
 
-Para las retransmisiones.
+Para las transmisiónes.
 
 </dd> <dt>
 
 **SecurityResponse**
 </dt> <dd>
 
-Respuesta del monitor de seguridad remota.
+Respuesta del monitor de seguridad remoto.
 
 </dd> <dt>
 
 **lpFinalStats**
 </dt> <dd>
 
-Esto solo se rellena en paradas no relacionadas con la seguridad (por ejemplo, desencadenadores).
+Esto solo se rellena en las paradas no relacionadas con la seguridad (por ejemplo, desencadenadores).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los usuarios de C++ deben tener en cuenta que la declaración de esta devolución de llamada debe estar en la parte pública del archivo de encabezado:
 
@@ -152,7 +152,7 @@ Los usuarios de C++ deben tener en cuenta que la declaración de esta devolució
 static WINAPI DWORD NetworkCallback( UPDATE_EVENT events);
 ```
 
-La implementación debe estar en la sección protegida del archivo. cpp:
+La implementación debe estar en la sección protegida del archivo .cpp:
 
 ``` syntax
 DWORD WINAPI ClassName::NetworkCallback( UPDATE_EVENT events) {};
@@ -166,7 +166,7 @@ DWORD WINAPI ClassName::NetworkCallback( UPDATE_EVENT events) {};
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

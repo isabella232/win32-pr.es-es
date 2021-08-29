@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ configuración de comentario de tarea
-description: En este ejemplo se establece el comentario para una tarea conocida. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Comentario de tarea de configuración de ejemplo de código de C/C++
+description: En este ejemplo se establece el comentario de una tarea conocida. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: c91da741-07fe-41fb-94d5-f6a45ef2d89d
 keywords:
-- configuración de Programador de tareas de comentario de tarea
-- establecer las propiedades de los elementos de trabajo Programador de tareas, comentario de tarea
+- configuración del comentario de la tarea Programador de tareas
+- establecer propiedades de elemento de trabajo Programador de tareas , comentario de tarea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9683b80e3760aa242e8a3ee9b6a2c6d6b3247182
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0cb13916b551e4af2d48823b6428acf71770d4ebb163ffa8a06ca0cb9c91b11f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060203"
 ---
-# <a name="cc-code-example-setting-task-comment"></a>Ejemplo de código de C/C++: establecer comentario de tarea
+# <a name="cc-code-example-setting-task-comment"></a>Ejemplo de código de C/C++: Establecer comentario de tarea
 
-En este ejemplo se establece el comentario para una tarea conocida. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se establece el comentario de una tarea conocida. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -137,12 +137,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

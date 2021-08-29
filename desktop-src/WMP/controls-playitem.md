@@ -1,11 +1,11 @@
 ---
-title: Controls. playItem (método)
-description: El método playItem reproduce el elemento multimedia especificado. | Controls. playItem (método)
+title: Método Controls.playItem
+description: El método playItem reproduce el elemento multimedia especificado. | Método Controls.playItem
 ms.assetid: 410e315d-8d5f-4f45-82a7-4249e656c809
 keywords:
-- método playItem de Windows Media Player
-- método playItem Windows Media Player, clase Controls
-- Clase Controls Windows Media Player, método playItem
+- Método playItem Reproductor de Windows Media
+- método playItem Reproductor de Windows Media , clase Controls
+- Controla la clase Reproductor de Windows Media método , playItem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9096e378a328f43147a0a94d97034c8e566b611
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c6ea371b2e2593ccf9b16d555c60a150ddb6229a2fd884b894d7be41eb61830c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135728"
 ---
-# <a name="controlsplayitem-method"></a>Controls. playItem (método)
+# <a name="controlsplayitem-method"></a>Método Controls.playItem
 
-El método **playItem** reproduce el elemento multimedia especificado.
+El **método playItem** reproduce el elemento multimedia especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ Controls.playItem(
 
 <dl> <dt>
 
-*theMediaItem* \[ de\]
+*theMediaItem* \[ En\]
 </dt> <dd>
 
-Objeto **multimedia** que se va a reproducir.
+**Objeto** multimedia que se va a reproducir.
 
 </dd> </dl>
 
@@ -53,17 +53,17 @@ Objeto **multimedia** que se va a reproducir.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento multimedia se cargará y reproducirá automáticamente, independientemente del valor de la *configuración*. propiedad **autoStart** . Para cargar un elemento sin reproducirlo automáticamente, establezca la *configuración*. Inicie **automáticamente** en false y asigne un valor a *Player*. **URL**, después del cual se puede llamar a **Play** para empezar a reproducir el elemento.
+El elemento multimedia se cargará y reproducirá automáticamente, independientemente del valor de la *Configuración*. **propiedad autoStart.** Para cargar un elemento sin reproducirlo automáticamente, *establezca Configuración*. **autoStart** a false y asigna un valor al *reproductor*. **Dirección URL**, después **de** la cual se puede llamar a play para empezar a reproducir el elemento.
 
 Nota
 
-**playItem** solo funciona con elementos de *currentPlaylist*. No se admite la llamada a **playItem** con una referencia a un elemento multimedia guardado.
+**playItem solo** funciona con elementos de *currentPlaylist.* No se admite la llamada a **playItem** con una referencia a un elemento multimedia guardado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa **playItem** para reproducir un elemento multimedia de la lista de reproducción actual. El elemento que se va a reproducir se elige en función de su posición en la lista de reproducción. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se **usa playItem** para reproducir un elemento multimedia de la lista de reproducción actual. El elemento que se va a reproducir se elige en función de su posición en la lista de reproducción. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -87,7 +87,7 @@ Player.controls.playItem(media);
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -96,10 +96,10 @@ Player.controls.playItem(media);
 
 <dl> <dt>
 
-[**Controls (objeto)**](controls-object.md)
+[**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Playlist. Item**](playlist-item.md)
+[**Playlist.item**](playlist-item.md)
 </dt> </dl>
 
  
