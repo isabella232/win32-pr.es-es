@@ -1,7 +1,7 @@
 ---
-description: Define el tipo de notificación que se pasa a la \_ función de devolución de llamada de notificación de receptor de visualización de WFD \_ \_ \_ .
+description: Define el tipo de notificación que se pasa a la función WFD \_ DISPLAY \_ SINK NOTIFICATION \_ \_ CALLBACK.
 ms.assetid: C0AFF80E-A4D2-4FF1-B111-D628AF8755A8
-title: Enumeración WFD_DISPLAY_SINK_NOTIFICATION_TYPE (Wfdsink. h)
+title: WFD_DISPLAY_SINK_NOTIFICATION_TYPE enumeración (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - wfdsink.h
-ms.openlocfilehash: 25361b0f3529da0293f373117c7bf655635de852
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca16197da0137e40c25a75c139773b02674b6bf7c90bcae2b94ae0845d201e71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800615"
 ---
-# <a name="wfd_display_sink_notification_type-enumeration"></a>\_ \_ \_ Enumeración de tipo de notificación de receptor de visualización de WFD \_
+# <a name="wfd_display_sink_notification_type-enumeration"></a>Enumeración \_ WFD DISPLAY \_ SINK NOTIFICATION \_ \_ TYPE
 
-El tipo enumerado tipo de notificación de receptor de visualización de WFD define el tipo de notificación que se pasa a la función de devolución de llamada de [**notificación del receptor de visualización de WFD \_ \_ \_ \_**](wfd-display-sink-notification-callback.md) . **\_ \_ \_ \_**
+El **tipo enumerado \_ WFD DISPLAY SINK NOTIFICATION \_ \_ \_ TYPE** define el tipo de notificación que se pasa a la función [**WFD DISPLAY SINK NOTIFICATION \_ \_ \_ \_ CALLBACK.**](wfd-display-sink-notification-callback.md)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -74,11 +74,11 @@ La notificación es una notificación desconectada.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl> |
 
 
 

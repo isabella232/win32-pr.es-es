@@ -1,11 +1,11 @@
 ---
-title: FRS-Computer-Reference (atributo)
-description: Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
+title: Atributo Frs-Computer-Reference
+description: Referencia al objeto de equipo de un miembro del conjunto de réplicas.
 ms.assetid: 07973ca8-2559-41ee-b074-840c8b523fae
 ms.tgt_platform: multiple
 keywords:
-- FRS-Computer-Reference atributo AD Schema
-- frsComputerReference esquema de AD de atributos
+- Esquema de AD del atributo Frs-Computer-Reference
+- Esquema de AD del atributo frsComputerReference
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 757b1c469a528de3ea02cdccd07f8c6b99304b90
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 310e75063c00876e38fe5d5dce35bebd4778874f5395daa77c2b8e8b29c1cd11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925765"
 ---
-# <a name="frs-computer-reference-attribute"></a>FRS-Computer-Reference (atributo)
+# <a name="frs-computer-reference-attribute"></a>Atributo Frs-Computer-Reference
 
-Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
+Referencia al objeto de equipo de un miembro del conjunto de réplicas.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
-| CN                | FRS-equipo-referencia                  |
-| Nombre para mostrar de LDAP | frsComputerReference                    |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Frs-Computer-Reference                  |
+| Ldap-Display-Name | frsComputerReference                    |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.869                  |
-| System-ID-GUID    | 2a132578-9373-11d1-aebc-0000f80367c1    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 2a132578-9373-11d1-aebc-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -55,18 +55,18 @@ Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | 102                                              |
+| Id. de vínculo                | 102                                              |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000012                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | 102                                              |
+| Id. de vínculo                | 102                                              |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000012                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | 102                                              |
+| Id. de vínculo                | 102                                              |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000012                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | 102                                              |
+| Id. de vínculo                | 102                                              |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000012                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | 102                                              |
+| Id. de vínculo                | 102                                              |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000012                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Referencia a un objeto de equipo de un miembro del conjunto de réplicas.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | 102                                              |
+| Id. de vínculo                | 102                                              |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | True                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Verdadero                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000012                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 

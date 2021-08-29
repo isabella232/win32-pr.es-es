@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Endpoint-Data
-description: Este atributo representa el nombre de la máquina virtual de un equipo en una implementación de TSV.
+title: Atributo ms-TS-Endpoint-Data
+description: Este atributo representa el nombre de máquina virtual de un equipo en una implementación de TSV.
 ms.assetid: 633ab8b6-74e2-43a3-9e7d-bf3c6b88e8b8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de datos de MS-TS-Endpoint
-- msTSEndpointData esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Endpoint-Data
+- Esquema de AD del atributo msTSEndpointData
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5160ff53957e41c87a1d4873ffe0ffe7b0555753
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9f99ac6d28b5f7a96fc512b7e501fe5780ca1ab861833be6d6bf2fd6ec65c868
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960194"
 ---
-# <a name="ms-ts-endpoint-data-attribute"></a>atributo MS-TS-Endpoint-Data
+# <a name="ms-ts-endpoint-data-attribute"></a>Atributo ms-TS-Endpoint-Data
 
-Este atributo representa el nombre de la máquina virtual de un equipo en una implementación de TSV.
+Este atributo representa el nombre de máquina virtual de un equipo en una implementación de TSV.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-TS-Endpoint-Data                         |
-| Nombre para mostrar de LDAP | msTSEndpointData                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-TS-Endpoint-Data                         |
+| Ldap-Display-Name | msTSEndpointData                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2070                     |
-| System-ID-GUID    | 40e1c407-4344-40f3-ab43-3625a34a63a2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 40e1c407-4344-40f3-ab43-3625a34a63a2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -49,15 +49,15 @@ Este atributo representa el nombre de la máquina virtual de un equipo en una im
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 32767                                     |
 | Search-Flags           | 0x00000000                                |
@@ -70,15 +70,15 @@ Este atributo representa el nombre de la máquina virtual de un equipo en una im
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 32767                                     |
 | Search-Flags           | 0x00000000                                |

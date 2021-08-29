@@ -3,29 +3,29 @@ title: Características de datos y lenguaje
 description: El Lenguaje de definición de interfaz de Microsoft (MIDL) proporciona el conjunto de características que amplían el lenguaje de programación C para admitir llamadas a procedimientos remotos.
 ms.assetid: 36bc98dd-0c7c-46fe-9db5-3c70af26cd61
 keywords:
-- RPC (llamada a procedimiento remoto), descripción, características de datos y lenguaje
+- Llamada a procedimiento remoto RPC, características descritas, datos y lenguaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0f481d67d2d5bf69001eebcb2f45bcd266b5e1b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6af9622416b4da4e3bdd1094f3d37c87d97870b1151e6f7fa570e3fd5d8da4e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104487022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931154"
 ---
 # <a name="data-and-language-features"></a>Características de datos y lenguaje
 
-El Lenguaje de definición de interfaz de Microsoft (MIDL) proporciona el conjunto de características que amplían el lenguaje de programación C para admitir llamadas a procedimientos remotos. MIDL no es una variación de C; es un lenguaje formal fuertemente tipado a través del cual se pueden controlar los datos transmitidos a través de una red. MIDL está diseñado para que los desarrolladores familiarizados con C puedan aprender rápidamente.
+El Lenguaje de definición de interfaz de Microsoft (MIDL) proporciona el conjunto de características que amplían el lenguaje de programación C para admitir llamadas a procedimientos remotos. MIDL no es una variación de C; es un lenguaje formal fuertemente con tipo a través del cual puede controlar los datos transmitidos a través de una red. MIDL está diseñado para que los desarrolladores familiarizados con C puedan aprenderlo rápidamente.
 
-En este tema se describen tres características de lenguaje:
+En este tema se de abordan tres características del lenguaje:
 
--   [Establecimiento fuerte de tipos](strong-typing.md)
+-   [Escritura fuerte](strong-typing.md)
 -   [Atributos direccionales (parámetro)](directional-parameter-attributes.md)
 -   [Representación de datos](data-representation.md)
 
- 
+ 
 
- 
+ 
 
 
 

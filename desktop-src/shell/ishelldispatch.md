@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9B429C03-7F80-45db-B8CD-58D19FAD2E61
-ms.openlocfilehash: 322b912ad7332b0862309b0ecc1510adb3aa1a10
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 10c7de442135e46fac9fc7f117f362ec5b40c0ce68449cb3f85df6a66800b81a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122475301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032253"
 ---
 # <a name="ishelldispatch-object"></a>Objeto IShellDispatch
 
@@ -42,31 +42,110 @@ El **objeto IShellDispatch** tiene estos métodos.
 
 
 
-
-| Método | Descripción | 
-|--------|-------------|
-| <a href="ishelldispatch-browseforfolder.md"><strong>BrowseForFolder</strong></a> | Crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto Folder de <a href="folder.md"><strong>la carpeta</strong></a> seleccionada.<br /> | 
-| <a href="ishelldispatch-cascadewindows.md"><strong>CascadeWindows</strong></a> | En cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Ventanas en cascada</strong>.<br /> | 
-| <a href="ishelldispatch-controlpanelitem.md"><strong>ControlPanelItem</strong></a> | Ejecuta la aplicación Panel de control especificada. Si la aplicación ya está abierta, activará la instancia en ejecución. <br /><blockquote><p>[!Note]<br />A Windows Vista, la mayoría Panel de control aplicaciones son elementos de Shell y no se pueden abrir con esta función. Para abrir esas Panel de control, pase el nombre canónico a control.exe. Por ejemplo:</p><pre class="syntax" data-space="preserve"><code>control.exe /name Microsoft.Personalization</code></pre></blockquote><br /> | 
-| <a href="ishelldispatch-ejectpc.md"><strong>DesalojónPC</strong></a> | Expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en el <strong>menú</strong> Inicio y seleccionar <strong>Expulsar PC</strong>si el equipo admite este comando.<br /> | 
-| <a href="ishelldispatch-explore.md"><strong>Explorar</strong></a> | Abre una carpeta especificada en una ventana Windows Explorador.<br /> | 
-| <a href="ishelldispatch-filerun.md"><strong>FileRun</strong></a> | Muestra el <strong>cuadro de</strong> diálogo Ejecutar al usuario.<br /> | 
-| <a href="ishelldispatch-findcomputer.md"><strong>FindComputer</strong></a> | Muestra el cuadro <strong>de diálogo Resultados de la búsqueda:</strong> Equipos . El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado.<br /> | 
-| <a href="ishelldispatch-findfiles.md"><strong>FindFiles</strong></a> | Muestra el <strong>cuadro de diálogo Buscar: Todos los</strong> archivos . Esto es lo mismo que hacer clic en el <strong>menú</strong> Inicio y, a continuación, seleccionar <strong>Buscar.</strong><br /> | 
-| <a href="ishelldispatch-help.md"><strong>Ayuda</strong></a> | Muestra la Windows ayuda y soporte técnico. Este método tiene el mismo efecto que hacer clic en <strong>el menú</strong> Inicio y seleccionar Ayuda y <strong>soporte técnico.</strong><br /> | 
-| <a href="ishelldispatch-minimizeall.md"><strong>MinimizeAll</strong></a> | Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en <strong></strong> la barra de tareas y seleccionar Minimizar todos <strong>los Windows</strong> en sistemas anteriores o hacer clic en el icono Mostrar escritorio de la barra de tareas.<br /> | 
-| <a href="ishelldispatch-namespace.md"><strong>Nombres</strong></a> | Crea y devuelve un <a href="folder.md"><strong>objeto Folder</strong></a> para la carpeta especificada.<br /> | 
-| <a href="ishelldispatch-open.md"><strong>Abierto</strong></a> | Abre la carpeta especificada.<br /> | 
-| <a href="ishelldispatch-refreshmenu.md"><strong>RefreshMenu</strong></a> | Actualiza el contenido del <strong>menú</strong> Inicio. Se usa solo con sistemas anteriores a Windows XP.<br /> | 
-| <a href="ishelldispatch-settime.md"><strong>SetTime</strong></a> | Muestra el <strong>cuadro de diálogo Fecha</strong> y hora . Este método tiene el mismo efecto que hacer clic con el botón derecho en el reloj en el área de estado de la barra de tareas y seleccionar <strong>Ajustar fecha y hora.</strong><br /> | 
-| <a href="ishelldispatch-shutdownwindows.md"><strong>ShutdownWindows</strong></a> | Muestra el <strong>cuadro de diálogo Cerrar Windows</strong> cierre. Esto es lo mismo que hacer clic en <strong>el menú</strong> Inicio y seleccionar <strong>Apagar.</strong><br /> | 
-| <a href="ishelldispatch-suspend.md"><strong>Suspender</strong></a> | Td | 
-| <a href="ishelldispatch-tilehorizontally.md"><strong>TileHorizontally</strong></a> | Iconos de todas las ventanas en el escritorio horizontalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Mostrar ventanas apiladas.</strong><br /> | 
-| <a href="ishelldispatch-tilevertically.md"><strong>TileVertically</strong></a> | Iconos de todas las ventanas en el escritorio verticalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Mostrar ventanas en paralelo.</strong><br /> | 
-| <a href="ishelldispatch-trayproperties.md"><strong>TrayProperties</strong></a> | Muestra el cuadro <strong>de diálogo Propiedades de la barra de tareas y del menú</strong> Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Propiedades</strong>.<br /> | 
-| <a href="ishelldispatch-undominimizeall.md"><strong>UndoMinimizeALL</strong></a> | Restaura todas las ventanas de escritorio al estado en el que estaban antes del último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de <strong></strong> tareas y seleccionar Deshacer minimizar todo <strong>Windows</strong> (en sistemas anteriores) o un segundo clic en el icono Mostrar escritorio de la barra de tareas.<br /> | 
-| <a href="ishelldispatch-windows.md"><strong>Windows</strong></a> | Crea y devuelve un <a href="shellwindows.md"><strong>objeto ShellWindows.</strong></a> Este objeto representa una colección de todas las ventanas abiertas que pertenecen al Shell.<br /> | 
-
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Método</th>
+<th style="text-align: left;">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-browseforfolder.md"><strong>BrowseForFolder</strong></a></td>
+<td style="text-align: left;">Crea un cuadro de diálogo que permite al usuario seleccionar una carpeta y, a continuación, devuelve el objeto Folder de <a href="folder.md"><strong>la carpeta</strong></a> seleccionada.<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-cascadewindows.md"><strong>CascadeWindows</strong></a></td>
+<td style="text-align: left;">En cascada todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Ventanas en cascada</strong>.<br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-controlpanelitem.md"><strong>ControlPanelItem</strong></a></td>
+<td style="text-align: left;">Ejecuta la aplicación Panel de control especificada. Si la aplicación ya está abierta, activará la instancia en ejecución. <br/>
+<blockquote>
+<p>[!Note]<br />
+A Windows Vista, la mayoría Panel de control aplicaciones son elementos de Shell y no se pueden abrir con esta función. Para abrir esas Panel de control, pase el nombre canónico a control.exe. Por ejemplo:</p>
+<pre class="syntax" data-space="preserve"><code>control.exe /name Microsoft.Personalization</code></pre>
+</blockquote>
+<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-ejectpc.md"><strong>DesalojónPC</strong></a></td>
+<td style="text-align: left;">Expulsa el equipo de su estación de acoplamiento. Esto es lo mismo que hacer clic en el <strong>menú</strong> Inicio y seleccionar <strong>Expulsar PC</strong>si el equipo admite este comando.<br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-explore.md"><strong>Explorar</strong></a></td>
+<td style="text-align: left;">Abre una carpeta especificada en una ventana Windows Explorer.<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-filerun.md"><strong>FileRun</strong></a></td>
+<td style="text-align: left;">Muestra el <strong>cuadro de</strong> diálogo Ejecutar al usuario.<br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-findcomputer.md"><strong>FindComputer</strong></a></td>
+<td style="text-align: left;">Muestra el cuadro <strong>de diálogo Resultados de la búsqueda:</strong> Equipos . El cuadro de diálogo muestra el resultado de la búsqueda de un equipo especificado.<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-findfiles.md"><strong>FindFiles</strong></a></td>
+<td style="text-align: left;">Muestra el <strong>cuadro de diálogo Buscar: Todos los</strong> archivos . Esto es lo mismo que hacer clic en el <strong>menú</strong> Inicio y, a continuación, seleccionar <strong>Buscar.</strong><br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-help.md"><strong>Ayuda</strong></a></td>
+<td style="text-align: left;">Muestra la Windows ayuda y soporte técnico. Este método tiene el mismo efecto que hacer clic en <strong>el menú</strong> Inicio y seleccionar Ayuda y <strong>soporte técnico.</strong><br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-minimizeall.md"><strong>MinimizeAll</strong></a></td>
+<td style="text-align: left;">Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en <strong></strong> la barra de tareas y seleccionar Minimizar todos <strong>los Windows</strong> en sistemas anteriores o hacer clic en el icono Mostrar escritorio de la barra de tareas.<br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-namespace.md"><strong>Nombres</strong></a></td>
+<td style="text-align: left;">Crea y devuelve un <a href="folder.md"><strong>objeto Folder</strong></a> para la carpeta especificada.<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-open.md"><strong>Abierto</strong></a></td>
+<td style="text-align: left;">Abre la carpeta especificada.<br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-refreshmenu.md"><strong>RefreshMenu</strong></a></td>
+<td style="text-align: left;">Actualiza el contenido del <strong>menú</strong> Inicio. Se usa solo con sistemas anteriores a Windows XP.<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-settime.md"><strong>SetTime</strong></a></td>
+<td style="text-align: left;">Muestra el <strong>cuadro de diálogo Fecha</strong> y hora . Este método tiene el mismo efecto que hacer clic con el botón derecho en el reloj en el área de estado de la barra de tareas y seleccionar <strong>Ajustar fecha y hora.</strong><br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-shutdownwindows.md"><strong>ShutdownWindows</strong></a></td>
+<td style="text-align: left;">Muestra el <strong>cuadro de diálogo Windows</strong> apagado. Esto es lo mismo que hacer clic en <strong>el menú</strong> Inicio y seleccionar <strong>Apagar.</strong><br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-suspend.md"><strong>Suspender</strong></a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-tilehorizontally.md"><strong>TileHorizontally</strong></a></td>
+<td style="text-align: left;">Iconos de todas las ventanas en el escritorio horizontalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Mostrar ventanas apiladas.</strong><br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-tilevertically.md"><strong>TileVertically</strong></a></td>
+<td style="text-align: left;">Iconos de todas las ventanas en el escritorio verticalmente. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Mostrar ventanas en paralelo.</strong><br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-trayproperties.md"><strong>TrayProperties</strong></a></td>
+<td style="text-align: left;">Muestra el cuadro <strong>de diálogo Propiedades de la barra de tareas y del menú</strong> Inicio . Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar <strong>Propiedades</strong>.<br/></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="ishelldispatch-undominimizeall.md"><strong>UndoMinimizeALL</strong></a></td>
+<td style="text-align: left;">Restaura todas las ventanas de escritorio al estado en el que estaban antes del último <a href="shell-minimizeall.md"><strong>comando MinimizeAll.</strong></a> Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas <strong></strong> y seleccionar Deshacer minimizar todo <strong>Windows</strong> (en sistemas anteriores) o hacer un segundo clic en el icono Mostrar escritorio de la barra de tareas.<br/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="ishelldispatch-windows.md"><strong>Windows</strong></a></td>
+<td style="text-align: left;">Crea y devuelve un <a href="shellwindows.md"><strong>objeto ShellWindows.</strong></a> Este objeto representa una colección de todas las ventanas abiertas que pertenecen al Shell.<br/></td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -96,12 +175,12 @@ El **objeto IShellDispatch** tiene estas propiedades.
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

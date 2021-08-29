@@ -4,12 +4,12 @@ ms.assetid: 3a42fc7a-4c07-4540-99a7-520f99532f33
 title: Funciones de región (Windows GDI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de0f55549f978dd2868f231b9ff042f6f825459d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04e60239eae9f1a4de4d310e3a4288ab74b36d33c117314ee2e5356f4a7c0a5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037663"
 ---
 # <a name="region-functions-windows-gdi"></a>Funciones de región (Windows GDI)
 
@@ -20,15 +20,15 @@ Las siguientes funciones se usan con regiones.
 | Función                                                       | Descripción                                                                                  |
 |----------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | [**CombineRgn**](/windows/desktop/api/Wingdi/nf-wingdi-combinergn)                               | Combina dos regiones y almacena el resultado en una tercera región.                                |
-| [**CreateEllipticRgn**](/windows/desktop/api/Wingdi/nf-wingdi-createellipticrgn)                 | Crea una región elíptica.                                                                |
-| [**CreateEllipticRgnIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createellipticrgnindirect) | Crea una región elíptica.                                                                |
+| [**CreateVelopticRgn**](/windows/desktop/api/Wingdi/nf-wingdi-createellipticrgn)                 | Crea una región elíptica.                                                                |
+| [**CreateVelopticRgnIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createellipticrgnindirect) | Crea una región elíptica.                                                                |
 | [**CreatePolygonRgn**](/windows/desktop/api/Wingdi/nf-wingdi-createpolygonrgn)                   | Crea una región poligonal.                                                                  |
-| [**CreatePolyPolygonRgn**](/windows/desktop/api/Wingdi/nf-wingdi-createpolypolygonrgn)           | Crea una región que se compone de una serie de polígonos.                                         |
+| [**CreatePolyPolygonRgn**](/windows/desktop/api/Wingdi/nf-wingdi-createpolypolygonrgn)           | Crea una región que consta de una serie de polígonos.                                         |
 | [**CreateRectRgn**](/windows/desktop/api/Wingdi/nf-wingdi-createrectrgn)                         | Crea una región rectangular.                                                                |
 | [**CreateRectRgnIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createrectrgnindirect)         | Crea una región rectangular.                                                                |
 | [**CreateRoundRectRgn**](/windows/desktop/api/Wingdi/nf-wingdi-createroundrectrgn)               | Crea una región rectangular con esquinas redondeadas.                                           |
 | [**EqualRgn**](/windows/desktop/api/Wingdi/nf-wingdi-equalrgn)                                   | Comprueba las dos regiones especificadas para determinar si son idénticas.                    |
-| [**ExtCreateRegion**](/windows/desktop/api/Wingdi/nf-wingdi-extcreateregion)                     | Crea una región a partir de los datos de la región y la transformación especificados.                          |
+| [**ExtCreateRegion**](/windows/desktop/api/Wingdi/nf-wingdi-extcreateregion)                     | Crea una región a partir de la región y los datos de transformación especificados.                          |
 | [**FillRgn**](/windows/desktop/api/Wingdi/nf-wingdi-fillrgn)                                     | Rellena una región mediante el pincel especificado.                                                 |
 | [**FrameRgn**](/windows/desktop/api/Wingdi/nf-wingdi-framergn)                                   | Dibuja un borde alrededor de la región especificada mediante el pincel especificado.                     |
 | [**GetPolyFillMode**](/windows/desktop/api/Wingdi/nf-wingdi-getpolyfillmode)                     | Recupera el modo de relleno de polígono actual.                                                     |

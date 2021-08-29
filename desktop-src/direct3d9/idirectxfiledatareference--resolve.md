@@ -1,7 +1,7 @@
 ---
-description: Resuelve referencias de datos. En desuso.
+description: Resuelve las referencias de datos. En desuso.
 ms.assetid: e8cf6e5d-c9b2-4a47-b058-24282dc65e74
-title: 'IDirectXFileDataReference:: Resolve (método) (DXFile. h)'
+title: Método IDirectXFileDataReference::Resolve (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 1b047245e3f89a618cde83e5c18a323f9364f3ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a20612eec88e2370914a93d851b0ce9047823b415951a8f5558cafb6dfaf1eb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985145"
 ---
-# <a name="idirectxfiledatareferenceresolve-method"></a>IDirectXFileDataReference:: Resolve (método)
+# <a name="idirectxfiledatareferenceresolve-method"></a>IDirectXFileDataReference::Resolve (Método)
 
-Resuelve referencias de datos. En desuso.
+Resuelve las referencias de datos. En desuso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT Resolve(
 
 Tipo: **[ **LPDIRECTXFILEDATA**](idirectxfiledata.md)\***
 
-Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.md) que representa el objeto de datos de archivo devuelto.
+Dirección de un puntero a una [**interfaz IDirectXFileData,**](idirectxfiledata.md) que representa el objeto de datos de archivo devuelto.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Dirección de un puntero a una interfaz [**IDirectXFileData**](idirectxfiledata.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es DXFILE \_ OK. Si se
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

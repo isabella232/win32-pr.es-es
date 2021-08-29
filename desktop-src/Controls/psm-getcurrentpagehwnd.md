@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_GETCURRENTPAGEHWND (Prsht. h)
-description: Recupera un identificador de la ventana de la página actual de una hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro PropSheet \_ GetCurrentPageHwnd.
+title: PSM_GETCURRENTPAGEHWND mensaje (Prsht.h)
+description: Recupera un identificador en la ventana de la página actual de una hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro \_ PropSheet GetCurrentPageHwnd.
 ms.assetid: 1f2d0af9-5853-48e7-b827-483be032b6ca
 keywords:
-- PSM_GETCURRENTPAGEHWND controles de mensajes de Windows
+- PSM_GETCURRENTPAGEHWND controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae9ac89e6bc60317f2caf31ea92754d10983e11a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0f12c7ed444cf2135fac8d873c1076c04d49f4c9eab8fdb54a962b3885a8cae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985865"
 ---
-# <a name="psm_getcurrentpagehwnd-message"></a>Mensaje de PSM \_ GETCURRENTPAGEHWND
+# <a name="psm_getcurrentpagehwnd-message"></a>Mensaje \_ GETCURRENTPAGEHWND de PSM
 
-Recupera un identificador de la ventana de la página actual de una hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ GetCurrentPageHwnd**](/windows/desktop/api/Prsht/nf-prsht-propsheet_getcurrentpagehwnd) .
+Recupera un identificador en la ventana de la página actual de una hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro [**\_ PropSheet GetCurrentPageHwnd.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_getcurrentpagehwnd)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,11 +45,11 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un identificador a la ventana de la página de la hoja de propiedades actual.
+Devuelve un identificador a la ventana de la página de hoja de propiedades actual.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use el mensaje **PSM \_ GETCURRENTPAGEHWND** con hojas de propiedades no modales para determinar cuándo se debe destruir el cuadro de diálogo. Cuando el usuario hace clic en el botón **Aceptar** o **Cancelar** , **PSM \_ GETCURRENTPAGEHWND** devuelve **null** y, a continuación, puede usar la función [**DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para destruir el cuadro de diálogo.
+Use el **mensaje PSM \_ GETCURRENTPAGEHWND** con hojas de propiedades modeless para determinar cuándo destruir el cuadro de diálogo. Cuando el usuario  hace  clic en el botón Aceptar o Cancelar, **PSM \_ GETCURRENTPAGEHWND** devuelve **NULL** y, a continuación, puede usar la [**función DestroyWindow**](/windows/desktop/api/winuser/nf-winuser-destroywindow) para destruir el cuadro de diálogo.
 
 > [!Note]  
 > Este mensaje no se admite cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
@@ -62,9 +62,9 @@ Use el mensaje **PSM \_ GETCURRENTPAGEHWND** con hojas de propiedades no modales
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Use el mensaje **PSM \_ GETCURRENTPAGEHWND** con hojas de propiedades no modales
 
 <dl> <dt>
 
-[**Hoja**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta)
+[**PropertySheet**](/windows/desktop/api/Prsht/nf-prsht-propertysheeta)
 </dt> </dl>
 
  

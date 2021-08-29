@@ -4,12 +4,12 @@ ms.assetid: e636c2eb-3c11-45bf-ab0b-a14ec878742c
 title: Datos (formato de archivo X)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efdf799b9f7f155c8d2a0e883c8d5e79f8091156
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 28a520d05571f592243e71799ad21a7da3a8d8bea6a3f5819508a194eaca90ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104151951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986005"
 ---
 # <a name="data-x-file-format-binary-encoding"></a>Datos (formato de archivo X, codificación binaria)
 
@@ -53,7 +53,7 @@ data_reference        : TOKEN_OBRACE name optional_class_id TOKEN_CBRACE
 
 
 
-Tenga en cuenta que en los datos de la lista de números \_ y de flotación \_ en los archivos binarios, \_ no se usan comas de token y \_ punto y coma de token. La coma y el punto y coma se usan en los datos de la lista de cadenas \_ . Tenga en cuenta también que solo puede utilizar la \_ referencia de datos para los miembros de datos opcionales.
+Tenga en cuenta que en los datos de lista de números y de lista flotante en archivos binarios, no se usan TOKEN COMMA ni \_ \_ TOKEN \_ \_ SEMICOLON. La coma y el punto y coma se usan en los datos de \_ la lista de cadenas. Tenga en cuenta también que solo puede usar la referencia de \_ datos para miembros de datos opcionales.
 
 ## <a name="related-topics"></a>Temas relacionados
 

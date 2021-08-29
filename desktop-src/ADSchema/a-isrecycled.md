@@ -1,11 +1,11 @@
 ---
-title: Is-Recycled atributo)
-description: Es el objeto que se ha reciclado. Para su uso con la papelera de reciclaje de AD.
+title: Is-Recycled atributo
+description: Es el objeto reciclado. Para su uso con AD papelera de reciclaje.
 ms.assetid: d7d470ef-0ec6-4baf-a481-ba63efe451d2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Is-Recycled
-- isRecycled esquema de AD de atributos
+- Is-Recycled esquema de AD del atributo
+- Esquema de AD del atributo isRecycled
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b117706603316606acc6cf694288cb4ecbd66cb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 21fba9fe0585dc2647f4322cee35318f570556ac82141dad7af09f9a0e070b2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705915"
 ---
-# <a name="is-recycled-attribute"></a>Is-Recycled atributo)
+# <a name="is-recycled-attribute"></a>Is-Recycled atributo
 
-Es el objeto que se ha reciclado. Para su uso con la papelera de reciclaje de AD.
+Es el objeto reciclado. Para su uso con AD papelera de reciclaje.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Is-Recycled                          |
-| Nombre para mostrar de LDAP | isRecycled                           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | isRecycled                           |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2058              |
-| System-ID-GUID    | 8fb59256-55f1-444b-aacb-f5b482fe3459 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 8fb59256-55f1-444b-aacb-f5b482fe3459 |
+| Syntax            | [**Booleana**](s-boolean.md)         |
 
 
 
@@ -51,13 +51,13 @@ Es el objeto que se ha reciclado. Para su uso con la papelera de reciclaje de AD
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000008                      |
@@ -72,13 +72,13 @@ Es el objeto que se ha reciclado. Para su uso con la papelera de reciclaje de AD
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | True                            |
-| Está indexado             | False                           |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000008                      |

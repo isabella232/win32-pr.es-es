@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetAttachDatabase2 (método)'
-title: Método API. JetAttachDatabase2
+description: Más información sobre el método Api.JetAttachDatabase2
+title: Método Api.JetAttachDatabase2
 TOCTitle: 'JetAttachDatabase2 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetAttachDatabase2(Microsoft.Isam.Esent.Interop.JET_SESID,System.String,System.Int32,Microsoft.Isam.Esent.Interop.AttachDatabaseGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetattachdatabase2(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 33d91f0746b3ebf178bd61de58919ab99d85b1f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 401ce3001b0d12b5c10afbe60d01d8e85f51ccded7aacc07b5da4360570bf994
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983665"
 ---
-# <a name="apijetattachdatabase2-method"></a>Método API. JetAttachDatabase2
+# <a name="apijetattachdatabase2-method"></a>Método Api.JetAttachDatabase2
 
-Adjunta un archivo de base de datos para su uso con una instancia de base de datos. Para usar la base de datos, deberá abrirse posteriormente con [JetOpenDatabase (JET_SESID, String, String, JET_DBID, OpenDatabaseGrbit)](./api.jetopendatabase-method.md).
+Adjunta un archivo de base de datos para usarlo con una instancia de base de datos. Para usar la base de datos, deberá abrirse posteriormente con [JetOpenDatabase(JET_SESID, String, String, JET_DBID, OpenDatabaseGrbit).](./api.jetopendatabase-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,35 +71,35 @@ public static JET_wrn JetAttachDatabase2(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
   - database  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Base de datos que se va a adjuntar.
+    Base de datos que se adjuntará.
 
 <!-- end list -->
 
   - maxPages  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Tamaño máximo, en páginas de base de datos, de la base de datos. Pasar 0 significa que no hay ningún máximo aplicado.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. AttachDatabaseGrbit](./attachdatabasegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.AttachDatabaseGrbit](./attachdatabasegrbit-enumeration.md)  
     
-    Opciones de adjuntar.
+    Opciones de asociación.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-Código de advertencia de ESENT.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Un código de advertencia de ESENT.  
 
 ## <a name="see-also"></a>Vea también
 
@@ -107,6 +107,6 @@ Código de advertencia de ESENT.
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
