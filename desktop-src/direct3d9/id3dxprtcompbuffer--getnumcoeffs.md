@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3ec98f2d3db89418e0d9ec4c494d13b6e3d5dbba
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 54b801acebe4e86281a8f745f83418ae3ac770268919b874fbbdbe30c9a1fc0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747805"
 ---
 # <a name="id3dxprtcompbuffergetnumcoeffs-method"></a>Método ID3DXPRTCompBuffer::GetNumCoeffs
 
-Recupera el número de escalares por canal de color usado en la memoria para almacenar muestras.
+Recupera el número de escalares por canal de color usado en memoria para almacenar muestras.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Devuelve el número de escalares por canal de color usado en memoria para almace
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

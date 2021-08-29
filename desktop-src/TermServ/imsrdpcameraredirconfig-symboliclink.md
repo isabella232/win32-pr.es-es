@@ -1,11 +1,11 @@
 ---
 title: Propiedad SymbolicLink de la interfaz IMsRdpCameraRedirConfig
-description: Obtiene el vínculo simbólico de la interfaz **KSCATEGORY_VIDEO_CAMERA** de la cámara.
+description: Obtiene el vínculo simbólico de la **KSCATEGORY_VIDEO_CAMERA** interfaz de la cámara.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad SymbolicLink
-- Propiedad SymbolicLink Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfig
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfig, propiedad SymbolicLink
+- Propiedad SymbolicLink Servicios de Escritorio remoto
+- Propiedad SymbolicLink Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfig
+- Interfaz IMsRdpCameraRedirConfig Servicios de Escritorio remoto , propiedad SymbolicLink
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 439ead6fa0868887cc5965205b22236abb5aada6
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 718dbade2997d41b6ad177a7fb9fe4f60c29b7149c499565f9c5de372caa8ba3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "103906287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737395"
 ---
-# <a name="imsrdpcameraredirconfigsymboliclink-property"></a>IMsRdpCameraRedirConfig:: SymbolicLink (propiedad)
+# <a name="imsrdpcameraredirconfigsymboliclink-property"></a>Propiedad IMsRdpCameraRedirConfig::SymbolicLink
 
-Obtiene el vínculo simbólico de la interfaz **KSCATEGORY_VIDEO_CAMERA** de la cámara.
+Obtiene el vínculo simbólico de la **KSCATEGORY_VIDEO_CAMERA** interfaz de la cámara.
 
 Esta propiedad es de solo lectura.
 
@@ -40,7 +40,7 @@ HRESULT get_SymbolicLink(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Vínculo simbólico de la interfaz **KSCATEGORY_VIDEO_CAMERA** de la cámara.
+Vínculo simbólico de la **interfaz KSCATEGORY_VIDEO_CAMERA** para la cámara.
 
 ## <a name="requirements"></a>Requisitos
 

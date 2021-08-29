@@ -4,7 +4,7 @@ description: Información de contacto de una reunión.
 ms.assetid: a5a07194-42ee-4cd7-a79a-f35ecdcaf8f9
 ms.tgt_platform: multiple
 keywords:
-- meetingContactInfo esquema de AD de atributos
+- Esquema de AD del atributo meetingContactInfo
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3591d2b4e568cfc62743286faa7124d2491bd8ad
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 59f8ea01f7db1b9b2ed86c1d377a2ac082fa7cd19468035a721708530632284b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300945"
 ---
 # <a name="meetingcontactinfo-attribute"></a>atributo meetingContactInfo
 
@@ -29,13 +29,13 @@ Información de contacto de una reunión.
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | meetingContactInfo                          |
-| Nombre para mostrar de LDAP | meetingContactInfo                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | meetingContactInfo                          |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.578                      |
-| System-ID-GUID    | 11b6cc87-48c4-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 11b6cc87-48c4-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,18 +54,18 @@ Información de contacto de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
+| Es de un solo valor       | True                                    |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Información de contacto de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
+| Es de un solo valor       | True                                    |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Información de contacto de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
+| Es de un solo valor       | True                                    |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -117,18 +117,18 @@ Información de contacto de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
+| Es de un solo valor       | True                                    |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Información de contacto de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
+| Es de un solo valor       | True                                    |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -159,18 +159,18 @@ Información de contacto de una reunión.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | True                                    |
+| Es de un solo valor       | True                                    |
 | Está indexado             | False                                   |
 | En el catálogo global      | False                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

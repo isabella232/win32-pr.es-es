@@ -1,28 +1,28 @@
 ---
-description: En el ejemplo de autocompletar se muestra cómo implementar la función autocompletar de caracteres en japonés mediante las interfaces de programación de aplicaciones (API) de reconocimiento.
+description: En el ejemplo autocompletar se muestra cómo implementar la función Autocompletar de caracteres en japonés mediante las interfaces de programación de aplicaciones (API) de reconocimiento.
 ms.assetid: 237e33bc-3708-4128-8749-d3d031f7237a
-title: Ejemplo de autocompletar caracteres
+title: Ejemplo de autocompletar de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4853cdef72a087aff3b9b726f0c83af9038ef5bc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 485955e1b4254fe6f2dcf4c278aca4be0b4e2b5e41617434c6f2881cfb0b02d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093059"
 ---
-# <a name="character-autocomplete-sample"></a>Ejemplo de autocompletar caracteres
+# <a name="character-autocomplete-sample"></a>Ejemplo de autocompletar de caracteres
 
-En el ejemplo de autocompletar se muestra cómo implementar la función autocompletar de caracteres en japonés mediante las interfaces de programación de aplicaciones (API) de reconocimiento.
+En el ejemplo autocompletar se muestra cómo implementar la función Autocompletar de caracteres en japonés mediante las interfaces de programación de aplicaciones (API) de reconocimiento.
 
 En este ejemplo se usan las siguientes características:
 
--   Usar un *recolector de tinta*
--   Usar un *contexto de reconocedor*
+-   Uso de un *recopilador de entrada de lápiz*
+-   Uso de un *contexto de reconocedor*
 
-## <a name="initializing-the-ink-collector-and-recognizer-context"></a>Inicializar el recopilador de tinta y el contexto del reconocedor
+## <a name="initializing-the-ink-collector-and-recognizer-context"></a>Inicialización del recopilador de lápiz y el contexto del reconocedor
 
-Los objetos [**InkCollector**](inkcollector-class.md) y [**InkRecognizerContext**](inkrecognizercontext-class.md) se declaran como clases que pueden generar eventos.
+Los [**objetos InkCollector**](inkcollector-class.md) y [**InkRecognizerContext**](inkrecognizercontext-class.md) se declaran como clases que pueden generar eventos.
 
 
 ```C++
@@ -32,7 +32,7 @@ Dim WithEvents rc As InkRecognizerContext
 
 
 
-El controlador de eventos de carga del formulario crea un recolector de tinta, asocia el recopilador de tinta al cuadro de imagen y habilita la recopilación de entradas de lápiz. A continuación, el controlador de eventos carga el reconocedor japonés predeterminado e inicializa las propiedades de trazo y guía del contexto del reconocedor.
+El controlador de eventos Load del formulario crea un recopilador de entrada de lápiz, asocia el recopilador de lápiz al cuadro de imagen y habilita la recopilación de lápiz. A continuación, el controlador de eventos carga el reconocedor japonés predeterminado e inicializa las propiedades Guide y Strokes del contexto del reconocedor.
 
 
 ```C++
@@ -76,7 +76,7 @@ End Sub
 
 ## <a name="loading-the-default-japanese-recognizer"></a>Carga del reconocedor japonés predeterminado
 
-Se llama al método [**GetDefaultRecognizer**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizers-getdefaultrecognizer) de [**InkRecognizers**](/previous-versions/windows/desktop/legacy/ms702438(v=vs.85)) para recuperar el reconocedor predeterminado del idioma japonés. A continuación, se comprueba la propiedad [**idiomas**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_languages) del objeto IInkRecognizer para determinar si el reconocedor admite el idioma japonés. Si es así, el método [**CreateRecognizerContext**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-createrecognizercontext) del reconocedor se usa para generar un contexto de reconocedor para el formulario.
+Se [**llama al método GetDefaultRecognizer**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizers-getdefaultrecognizer) de [**InkRecognizers**](/previous-versions/windows/desktop/legacy/ms702438(v=vs.85)) para recuperar el reconocedor predeterminado para el idioma japonés. A continuación, se comprueba la propiedad [**Languages**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-get_languages) del objeto IInkRecognizer para determinar si el reconocedor admite el idioma japonés. Si es así, se usa el método [**CreateRecognizerContext**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer-createrecognizercontext) del reconocedor para generar un contexto de reconocedor para el formulario.
 
 
 ```C++
@@ -114,9 +114,9 @@ End Sub
 
 
 
-## <a name="handling-the-stroke-event"></a>Controlar el evento stroke
+## <a name="handling-the-stroke-event"></a>Controlar el evento de trazo
 
-El controlador de eventos [**Stroke**](inkcollector-stroke.md) detiene primero el reconocimiento en segundo plano en el contexto del reconocedor. A continuación, agrega el nuevo trazo a la propiedad [**Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del contexto del reconocedor. Por último, establece la propiedad [**InkRecognizerCharacterAutoCompletionMode**](/windows/desktop/api/msinkaut/ne-msinkaut-inkrecognizercharacterautocompletionmode) del contexto del reconocedor y llama al método [**BackgroundRecognizeWithAlternates**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognizewithalternates) del contexto del reconocedor para cada uno de los tres modos de autocompletar de caracteres. El parámetro *CustomData* de la llamada al método **BackgroundRecognizeWithAlternates** se usa para identificar los resultados del reconocimiento que se devuelven en el evento [**RecognitionWithAlternates**](inkrecognizercontext-recognitionwithalternates.md) .
+El [**controlador de**](inkcollector-stroke.md) eventos Stroke detiene primero el reconocimiento en segundo plano en el contexto del reconocedor. A continuación, agrega el nuevo trazo a la propiedad [**Strokes del contexto del**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) reconocedor. Por último, establece la propiedad [**InkRecognizerCharacterAutoCompletionMode**](/windows/desktop/api/msinkaut/ne-msinkaut-inkrecognizercharacterautocompletionmode) del contexto del reconocedor y llama al método [**BackgroundRecognizeWithAlternates**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognizewithalternates) del reconocedor para cada uno de los tres modos de autocompletar de tres caracteres. El *parámetro CustomData* de la llamada al método **BackgroundRecognizeWithAlternates** se usa para identificar qué resultados de reconocimiento se devuelven en el [**evento RecognitionWithAlternates.**](inkrecognizercontext-recognitionwithalternates.md)
 
 
 ```C++
@@ -137,7 +137,7 @@ End Sub
 
 ## <a name="handling-the-recognition-with-alternates-event"></a>Controlar el evento de reconocimiento con alternativas
 
-El controlador del evento [**RecognitionWithAlternates**](inkrecognizercontext-recognitionwithalternates.md) comprueba primero el parámetro *RecognitionStatus* . Si hay un error en el reconocimiento, el controlador de eventos omite los resultados del reconocimiento. De lo contrario, el controlador de eventos agrega el parámetro *RecognitionResult* al cuadro de imagen adecuado y guarda la cadena de resultado. El parámetro *CustomData* se establece en la llamada al método [**BackgroundRecognizeWithAlternates**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognizewithalternates) e identifica el modo de autocompletar de caracteres utilizado por el contexto del reconocedor.
+El controlador del evento [**RecognitionWithAlternates**](inkrecognizercontext-recognitionwithalternates.md) comprueba primero el *parámetro RecognitionStatus.* Si se produce un error en el reconocimiento, el controlador de eventos omite los resultados del reconocimiento. De lo contrario, el controlador de eventos agrega el *parámetro RecognitionResult* al cuadro de imagen adecuado y guarda la cadena de resultado. El *parámetro CustomData* se establece en la llamada al método [**BackgroundRecognizeWithAlternates**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-backgroundrecognizewithalternates) e identifica qué carácter usó el contexto del reconocedor.
 
 
 ```C++
@@ -184,13 +184,13 @@ End Sub
 
 
 
-## <a name="painting-the-form"></a>Dibujo del formulario
+## <a name="painting-the-form"></a>Pintar el formulario
 
-El controlador de eventos Paint borra los cuadros de imagen de resultados y agrega los resultados de reconocimiento guardados a ellos.
+El Paint de eventos borra los cuadros de imagen de resultados y les agrega los resultados de reconocimiento guardados.
 
-## <a name="deleting-the-strokes"></a>Eliminar los trazos
+## <a name="deleting-the-strokes"></a>Eliminación de los trazos
 
-El método del formulario `CmdClear_Click` controla el comando CLEAR. Si [**InkCollector**](inkcollector-class.md) está recopilando actualmente la entrada de lápiz, se muestra un cuadro de mensaje y se omite el comando. De lo contrario, el controlador de eventos detiene el reconocimiento en segundo plano, borra la propiedad [**Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del contexto del reconocedor y elimina los trazos del objeto [**InkDisp**](inkdisp-class.md) del formulario. A continuación, el controlador de eventos vuelve a dibujar el cuadro de imagen al que está asociado el recopilador de tinta y borra las cadenas de reconocimiento y los cuadros de imagen.
+El método del formulario `CmdClear_Click` controla el comando Clear. Si [**InkCollector**](inkcollector-class.md) está recopilando actualmente entrada de lápiz, se muestra un cuadro de mensaje y se omite el comando. De lo contrario, el controlador de eventos detiene el reconocimiento en segundo plano, borra la propiedad [**Strokes**](/windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivisionresult-get_strokes) del contexto del reconocedor y elimina los trazos del objeto [**InkDisp del**](inkdisp-class.md) formulario. A continuación, el controlador de eventos vuelve a dibujar el cuadro de imagen al que está asociado el recopilador de lápiz y borra las cadenas de reconocimiento y los cuadros de imagen.
 
 
 ```C++

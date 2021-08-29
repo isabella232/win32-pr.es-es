@@ -1,19 +1,19 @@
 ---
-description: Representa un identificador de una respuesta de OCSP asociada con una cadena de certificados de servidor.
+description: Representa un identificador para una respuesta OCSP asociada a una cadena de certificados de servidor.
 ms.assetid: baf173f1-99dc-49f9-9a17-fee79b393db7
-title: HCERT_SERVER_OCSP_RESPONSE (Wincrypt. h)
+title: HCERT_SERVER_OCSP_RESPONSE (Wincrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ceab319b5d8370dd15ef3dcd288124e4f2adf9ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a694b6165a3fb5f067fd64170b4b0275c3a06dad21d508f616ee63d6b27e4a22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006463"
 ---
-# <a name="hcert_server_ocsp_response"></a>\_respuesta de \_ OCSP del servidor de HCERT \_
+# <a name="hcert_server_ocsp_response"></a>RESPUESTA \_ \_ OCSP DEL SERVIDOR HCERT \_
 
-El tipo de datos de respuesta de OCSP del servidor de HCERT representa un identificador de una respuesta de OCSP asociada con una cadena de certificados de servidor. **\_ \_ \_**
+El **tipo de datos \_ HCERT SERVER \_ OCSP \_ RESPONSE** representa un identificador para una respuesta OCSP asociada a una cadena de certificados de servidor.
 
 Este tipo lo usan las siguientes API.
 
@@ -35,9 +35,9 @@ typedef VOID* HCERT_SERVER_OCSP_RESPONSE;
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Wincrypt. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Wincrypt.h</dt> </dl> |
 
 
 

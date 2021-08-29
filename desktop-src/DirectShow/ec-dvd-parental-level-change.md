@@ -1,7 +1,7 @@
 ---
-description: Indica que el nivel parental del contenido del DVD creado está a punto de cambiar.
+description: Indica que el nivel parental del contenido del DVD escrito está a punto de cambiar.
 ms.assetid: c6817e1a-f860-4ba2-9e0f-e195624230c5
-title: EC_DVD_PARENTAL_LEVEL_CHANGE (Dvdevcode. h)
+title: EC_DVD_PARENTAL_LEVEL_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: f6e1dbcbcb285f33b6ea2b99c59c5c82dae0ae03
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f990e8441cd6585d30a9876204f07099345f22f49895d4d429655405d498ed63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102935"
 ---
-# <a name="ec_dvd_parental_level_change"></a>\_cambio de \_ nivel parental de DVD de \_ EC \_
+# <a name="ec_dvd_parental_level_change"></a>CAMBIO \_ DE NIVEL PARENTAL DE DVD DE \_ \_ \_ EC
 
-Indica que el nivel parental del contenido del DVD creado está a punto de cambiar.
+Indica que el nivel parental del contenido del DVD escrito está a punto de cambiar.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -31,7 +31,7 @@ Indica que el nivel parental del contenido del DVD creado está a punto de cambi
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-Valor largo que representa el nuevo nivel parental establecido en el reproductor.
+Valor LONG que representa el nuevo nivel parental establecido en el reproductor.
 
 </dd> <dt>
 
@@ -42,9 +42,9 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El filtro del [navegador de DVD](dvd-navigator-filter.md) no admite cambios de nivel parental durante el streaming en respuesta a los comandos de SetTmpPML de un disco DVD.
+El [filtro DVD Navigator](dvd-navigator-filter.md) no admite cambios de nivel parental durante el streaming en respuesta a los comandos SetTmpPML en un disco DVD.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ El filtro del [navegador de DVD](dvd-navigator-filter.md) no admite cambios de n
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

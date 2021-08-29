@@ -1,25 +1,25 @@
 ---
-description: ICE77 comprueba que las acciones personalizadas con el conjunto de bits msidbCustomActionTypeInScript se ordenan después de la acción InstallInitialize y antes de la acción InstallFinalize.
+description: ICE77 comprueba que las acciones personalizadas con el conjunto de bits msidbCustomActionTypeInScript se secuencian después de la acción InstallInitialize y antes de la acción InstallFinalize.
 ms.assetid: 291cf731-b7e6-44c2-a8ec-78e0e037d1f5
 title: ICE77
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15e072692b76cfd63bf62c5fd23f612a445e5fd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5910b814a9cee6da87a76594949f2ad3250bbdd55c3666d0f500ea3a64ae3730
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894985"
 ---
 # <a name="ice77"></a>ICE77
 
-ICE77 comprueba que las acciones personalizadas con el conjunto de bits **msidbCustomActionTypeInScript** se ordenan después de la [acción InstallInitialize](installinitialize-action.md) y antes de la [acción InstallFinalize](installfinalize-action.md). ICE77 comprueba la secuencia en la tabla [InstallExecuteSequence](installexecutesequence-table.md) y en la [tabla AdminExecuteSequence](adminexecutesequence-table.md).
+ICE77 comprueba que las acciones personalizadas con el conjunto de bits **msidbCustomActionTypeInScript** se secuencian después de la acción [InstallInitialize](installinitialize-action.md) y antes de [la acción InstallFinalize](installfinalize-action.md). ICE77 comprueba la secuencia en las [tablas InstallExecuteSequence](installexecutesequence-table.md) y [AdminExecuteSequence](adminexecutesequence-table.md).
 
 ## <a name="result"></a>Resultado
 
-ICE77 publica un error si se secuencia una acción personalizada en el script antes de la acción InstallInitialize o después de la acción InstallFinalize.
+ICE77 publica un error si se secuencia una acción personalizada en script antes de la acción InstallInitialize o después de la acción InstallFinalize.
 
-ICE77 publica un error si falta la acción InstallInitialize o la acción InstallFinalize.
+ICE77 publica un error si falta la acción InstallInitialize o installFinalize.
 
 ## <a name="example"></a>Ejemplo
 
@@ -48,7 +48,7 @@ in the AdminExecuteSequence Sequence table.
 
  
 
-[Tabla InstallExecuteSequence](installexecutesequence-table.md) (parcial)
+[InstallExecuteSequence Table](installexecutesequence-table.md) (parcial)
 
 
 
@@ -75,7 +75,7 @@ in the AdminExecuteSequence Sequence table.
 
  
 
-Para corregir los errores, ordene las acciones personalizadas en el script después de la acción InstallInitialize y antes de la acción InstallFinalize. Las acciones InstallInitialize y InstallFinalize deben estar presentes en la tabla InstallExecuteSequence y en la tabla AdminExecuteSequence.
+Para corregir los errores, secuencia las acciones personalizadas en script después de la acción InstallInitialize y antes de la acción InstallFinalize. Las acciones InstallInitialize e InstallFinalize deben estar presentes en la tabla InstallExecuteSequence y en la tabla AdminExecuteSequence.
 
 ## <a name="related-topics"></a>Temas relacionados
 

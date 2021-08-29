@@ -1,5 +1,5 @@
 ---
-description: Describe las estadísticas de intercambio relacionadas con las llamadas a PresentEx.
+description: Describe las estadísticas de cadena de intercambio relacionadas con las llamadas de PresentEx.
 ms.assetid: aa100b83-6fbf-442d-9891-7fc034a5b1d5
 title: Estructura D3DPRESENTSTATS (D3d9types.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: b49a589fa1702f61e5a5daef806a5b36d464d0ec
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 230c750c36b9241f6aa4840daf6a4f3a512d42a5dcd899bc555b44a48cb3ac53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750925"
 ---
-# <a name="d3dpresentstats-structure"></a>Estructura D3DPRESENTSTATS
+# <a name="d3dpresentstats-structure"></a>D3DPRESENTSTATS (estructura)
 
-Describe las estadísticas de intercambio relacionadas con las llamadas a [**PresentEx**](/windows/win32/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex) .
+Describe las estadísticas de cadena de intercambio relacionadas con [**las llamadas de PresentEx.**](/windows/win32/api/d3d9/nf-d3d9-idirect3ddevice9ex-presentex)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,51 +46,51 @@ typedef struct _D3DPRESENTSTATS {
 **PresentCount**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se está ejecutando el recuento de las llamadas presentes correctas realizadas por un dispositivo de pantalla que actualmente se está mostrando en la pantalla. Este parámetro es realmente el identificador actual de la última llamada presente y no es necesariamente el número total de llamadas API presentes realizadas.
+Recuento en ejecución de llamadas present correctas realizadas por un dispositivo de visualización que se está generando actualmente en la pantalla. Este parámetro es realmente el identificador present de la última llamada present y no es necesariamente el número total de llamadas a Present API realizadas.
 
 </dd> <dt>
 
 **PresentRefreshCount**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-El recuento de VBlank en el que se mostró el último presente en la pantalla, el recuento de VBlank se incrementa una vez cada intervalo de VBlank.
+El recuento de vblank en el que se mostró el último presente en la pantalla, el recuento de vblank se incrementa una vez cada intervalo de vblank.
 
 </dd> <dt>
 
 **SyncRefreshCount**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-El recuento de VBlank cuando el programador muestrea por última vez la hora del equipo mediante una llamada a QueryPerformanceCounter.
+El recuento de vblank cuando el programador muestreó por última vez la hora de la máquina mediante una llamada a QueryPerformanceCounter.
 
 </dd> <dt>
 
 **SyncQPCTime**
 </dt> <dd>
 
-Tipo: **[ **\_ entero grande**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)**
+Tipo: **[ **ENTERO \_ GRANDE**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)**
 
 </dd> <dd>
 
-La última hora del equipo muestreada del programador, obtenida llamando a [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
+La última hora de la máquina muestreada del programador, obtenida mediante una llamada a [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
 
 </dd> <dt>
 
 **SyncGPUTime**
 </dt> <dd>
 
-Tipo: **[ **\_ entero grande**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)**
+Tipo: **[ **ENTERO \_ GRANDE**](/windows/win32/api/winnt/ns-winnt-large_integer-r1)**
 
 </dd> <dd>
 
@@ -98,64 +98,64 @@ Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando una aplicación 9Ex adopta el modo de volteo presente (D3DSWAPEFFECT \_ FLIPEX), las aplicaciones pueden detectar la caída de fotogramas llamando a GetPresentStatistics en cualquier momento. En efecto, pueden hacer lo siguiente.
+Cuando una aplicación 9Ex adopta el modo de volteo presente (D3DSWAPEFFECT FLIPEX), las aplicaciones pueden detectar la colocación de fotogramas llamando a \_ GetPresentStatistics en cualquier momento. En efecto, pueden hacer lo siguiente.
 
-1.  Representar en el búfer de reserva
-2.  Llamar a present
-3.  Llamar a GetPresentStats y almacenar la estructura D3DPRESENTSTATS resultante
-4.  Representar el siguiente fotograma en el búfer de reserva
-5.  Llamar a present
-6.  Repita los pasos 4 y 5 1 o más veces
-7.  Llamar a GetPresentStats y almacenar la estructura D3DPRESENTSTATS resultante
-8.  Compare los valores de PresentRefreshCount de las dos estructuras D3DPRESENTSTATS almacenadas. La aplicación puede calcular el PresentRefreshCount correspondiente de un parámetro PresentCount determinado en función de las suposiciones de PresentRefreshCount incremento y PresentCount de la asignación de fotogramas. Si la última muestra de PresentRefreshCount no coincide con el PresentCount (es decir, si el PresentRefreshCount ha aumentado pero PresentCount no, entonces se ha descartado el marco).
+1.  Representación en el búfer de reserva
+2.  Llamar a Present
+3.  Llame a GetPresentStats y almacene la estructura D3DPRESENTSTATS resultante.
+4.  Representación del fotograma siguiente en el búfer de reserva
+5.  Llamar a Present
+6.  Repita los pasos 4 y 5 una o más veces.
+7.  Llame a GetPresentStats y almacene la estructura D3DPRESENTSTATS resultante.
+8.  Compare los valores de PresentRefreshCount de las dos estructuras D3DPRESENTSTATS almacenadas. La aplicación puede calcular el presentRefreshCount correspondiente de un parámetro PresentCount determinado en función de las suposiciones de incremento PresentRefreshCount y asignación presentCount de los objetos frame presentes. Si la última muestra de PresentRefreshCount no coincide con presentCount (es decir, si PresentRefreshCount se ha incrementado pero PresentCount no, se ha producido la colocación de fotogramas).
 
-Las aplicaciones pueden determinar si un fotograma se ha quitado mediante el muestreo de dos instancias de PresentCount y GetPresentStats (llamando a la API GetPresentStats en dos puntos en el tiempo). Por ejemplo, una aplicación multimedia que se presenta a la misma velocidad que la frecuencia de actualización del monitor (por ejemplo, la frecuencia de actualización del monitor es 60 Hz, la aplicación presenta un fotograma cada 1/60 segundos) desea presentar los fotogramas a, B, C, D, E, cada uno correspondiente a los identificadores presentes (PresentCount) 1, 2, 3, 7
+Las aplicaciones pueden determinar si se ha eliminado un fotograma mediante el muestreo de dos instancias de PresentCount y GetPresentStats (mediante una llamada a la API GetPresentStats en dos puntos cualquiera en el tiempo). Por ejemplo, una aplicación multimedia que se presenta a la misma velocidad que la frecuencia de actualización del monitor (por ejemplo, la frecuencia de actualización de supervisión es de 60Hz, la aplicación presenta un fotograma cada 1/60 segundos) quiere presentar fotogramas A, B, C, D, E, cada uno correspondiente a Present IDs (PresentCount) 1, 2, 3, 7, 8.
 
-El código de aplicación tiene un aspecto similar al de la siguiente secuencia.
+El código de la aplicación es similar a la secuencia siguiente.
 
-1.  Representar el marco a en el búfer de reserva
+1.  Representación del marco A en el búfer de reserva
 2.  Call Present, PresentCount = 1
-3.  Llamar a GetPresentStats y almacenar la estructura D3DPRESENTSTATS resultante
+3.  Llame a GetPresentStats y almacene la estructura D3DPRESENTSTATS resultante.
 4.  Representar los 4 fotogramas siguientes, B, C, D, E, respectivamente
-5.  Llamar a present 4 veces, PresentCounts = 2, 3, 7, 8, respectivamente
-6.  Llamar a GetPresentStats y almacenar la estructura D3DPRESENTSTATS resultante
-7.  Compare los valores de PresentRefreshCount de las dos estructuras D3DPRESENTSTATS almacenadas. Si la diferencia es 2, es decir, ha transcurrido 2 intervalos de VBlank entre las dos llamadas a la API de GetPresentStats, el último fotograma presentado debe ser el fotograma C. Dado que la aplicación presenta un intervalo de VBlank (la frecuencia de actualización del monitor), el tiempo transcurrido entre el momento en que se presenta el marco A y el momento en que se presenta el fotograma C debe ser 2 vblanks.
-8.  Compare los valores de PresentCount de las dos estructuras D3DPRESENTSTATS almacenadas. Si el primer PresentCount es 1 (correspondiente al marco a) y el segundo PresentCount es 3 (correspondiente al marco C), no se ha quitado ningún fotograma. Si el segundo PresentCount es 3, que corresponde a Frame D, la aplicación sabe que se ha quitado un fotograma.
+5.  Llamar a Present 4 veces, PresentCounts = 2, 3, 7, 8, respectivamente
+6.  Llame a GetPresentStats y almacene la estructura D3DPRESENTSTATS resultante.
+7.  Compare los valores de PresentRefreshCount de las dos estructuras D3DPRESENTSTATS almacenadas. Si la diferencia es 2, es decir, han transcurrido 2 intervalos de vblank entre las dos llamadas API GetPresentStats, el último fotograma presentado debe ser el fotograma C. Dado que la aplicación presenta un intervalo de vblank (la frecuencia de actualización del monitor), el tiempo transcurrido entre el momento en que se presenta el fotograma A y el momento en que se presenta el fotograma C debe ser de 2 vblanks.
+8.  Compare los valores de PresentCount de las dos estructuras D3DPRESENTSTATS almacenadas. Si el primer PresentCount es 1 (correspondiente al marco A) y el segundo PresentCount es 3 (correspondiente al marco C), no se han descartado fotogramas. Si el segundo PresentCount es 3, que corresponde al marco D, la aplicación sabe que se ha descartado un fotograma.
 
-Tenga en cuenta que GetPresentStatistics se procesará después de llamarse, independientemente del estado de FLIPEX Mode PresentEx calls.
+Tenga en cuenta que GetPresentStatistics se procesará después de llamarla, independientemente del estado de las llamadas PresentEx del modo FLIPEX.
 
-**Windows Vista:** Las llamadas presentes se pondrán en cola y se procesarán antes de que se procese la llamada a GetPresentStats.
+**Windows Vista:** Las llamadas Present se pondrán en cola y, a continuación, se procesarán antes de que se procese la llamada a GetPresentStats.
 
-Cuando una aplicación detecta que la presentación de determinados fotogramas está detrás, puede omitir esos marcos y corregir la presentación para volver a sincronizar con el VBlank. Para ello, una aplicación simplemente no puede representar los fotogramas finales y comenzar la representación con el siguiente marco correcto en la cola. Sin embargo, si una aplicación ya ha iniciado la representación de fotogramas en tiempo de ejecución, puede usar un nuevo parámetro presente en D3D9Ex denominado D3DPRESENT \_ FORCEIMMEDIATE. La marca se pasará en los parámetros de la llamada de API presente e indica al tiempo de ejecución que el marco se procesará inmediatamente dentro del intervalo de VBlank siguiente, de modo que no es visible en la pantalla. Este es el ejemplo de uso de la aplicación después del último paso del ejemplo anterior.
+Cuando una aplicación detecta que la presentación de determinados fotogramas está detrás, puede omitir esos fotogramas y corregir la presentación para volver a sincronizarla con la vblank. Para ello, una aplicación simplemente no puede representar los fotogramas en tiempo de espera y empezar a representar con el siguiente fotograma correcto en la cola. Sin embargo, si una aplicación ya ha iniciado la representación de fotogramas en tiempo de retraso, puede usar un nuevo parámetro Present en D3D9Ex denominado D3DPRESENT \_ FORCEIMMEDIATE. La marca se pasará en los parámetros de la llamada API Present e indica al tiempo de ejecución que el marco se procesará inmediatamente dentro del siguiente intervalo de vblank, no visible en la pantalla en absoluto. Este es el ejemplo de uso de la aplicación después del último paso del ejemplo anterior.
 
-1.  Representar el siguiente fotograma en el búfer de reserva
-2.  Detectar desde PresentRefreshCount que el siguiente fotograma ya está retrasado
-3.  Establecer el intervalo presente en D3DPRESENT \_ FORCEIMMEDIATE
-4.  Llamada presente en el siguiente fotograma
+1.  Representación del fotograma siguiente en el búfer de reserva
+2.  Descubra en PresentRefreshCount que el siguiente fotograma ya es tarde.
+3.  Establezca Present interval en D3DPRESENT \_ FORCEIMMEDIATE
+4.  Llamada a Present en el fotograma siguiente
 
-Las aplicaciones pueden sincronizar secuencias de audio y vídeo de la misma manera porque el comportamiento de GetPresentStatistics no cambia en ese escenario.
+Las aplicaciones pueden sincronizar secuencias de vídeo y audio de la misma manera porque el comportamiento de GetPresentStatistics no cambia en ese escenario.
 
-El modo Flip de D3D9Ex proporciona información de estadísticas de fotogramas para aplicaciones en ventanas y aplicaciones 9Ex de pantalla completa.
+El modo de volteo D3D9Ex proporciona información de estadísticas de fotogramas a las aplicaciones con ventanas y a las aplicaciones de pantalla completa 9Ex.
 
-**Windows Vista:** Usar las API de DWM para recuperar estadísticas presentes.
+**Windows Vista:** Use las API de DWM para recuperar las estadísticas actuales.
 
-Cuando Administrador de ventanas de escritorio está desactivado, las aplicaciones de modo de ventana 9Ex que usan el modo Flip recibirán información de estadísticas presentes de precisión limitada.
+Cuando Administrador de ventanas de escritorio está desactivado, las aplicaciones en modo de ventana 9Ex que usan el modo de volteo recibirán información de estadísticas presentes de precisión limitada.
 
-* * Windows Vista: * *
+**Windows Vista: **
 
-Si una aplicación no es lo suficientemente rápida como para mantenerse al día de la frecuencia de actualización del monitor, probablemente debido a un hardware lento o a la falta de recursos del sistema, puede experimentar un problema con los gráficos. Un problema es una llamada visual interrupción. Si un monitor está configurado para actualizar a 60 Hz y la aplicación solo puede administrar 30 fps, la mitad de los fotogramas tendrá problemas.
+Si una aplicación no es lo suficientemente rápida como para mantenerse al día con la frecuencia de actualización del monitor, posiblemente debido a un hardware lento o a la falta de recursos del sistema, puede experimentar un problema de gráficos. Un problema es un denominado problema visual. Si un monitor está configurado para actualizarse a 60 Hz y la aplicación solo puede administrar 30 fps, la mitad de los fotogramas tendrán problemas.
 
-Las aplicaciones pueden detectar un problema realizando un seguimiento de SynchRefreshCount. Por ejemplo, una aplicación puede realizar la siguiente secuencia de acciones.
+Las aplicaciones pueden detectar un problema si se realiza un seguimiento de SynchRefreshCount. Por ejemplo, una aplicación podría realizar la siguiente secuencia de acciones.
 
-1.  Se representa en el búfer de reserva.
+1.  Representar en el búfer de reserva.
 2.  Llame a Present.
 3.  Llame a GetPresentStats y almacene la estructura D3DPRESENTSTATS resultante.
-4.  Representar el siguiente fotograma en el búfer de reserva.
+4.  Represente el fotograma siguiente en el búfer de reserva.
 5.  Llame a Present.
 6.  Llame a GetPresentStats y almacene la estructura D3DPRESENTSTATS resultante.
-7.  Compare los valores de SyncRefreshCount de las dos estructuras D3DPRESENTSTATS almacenadas. Si la diferencia es mayor que uno, se omitirá un fotograma.
+7.  Compare los valores de SyncRefreshCount de las dos estructuras D3DPRESENTSTATS almacenadas. Si la diferencia es mayor que una, se omitió un marco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -163,7 +163,7 @@ Las aplicaciones pueden detectar un problema realizando un seguimiento de SynchR
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

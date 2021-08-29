@@ -14,12 +14,12 @@ keywords:
 - compilación de Windows marcado de la cinta de opciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cefd64103ceb501e8f4d23e937a242e910b0cad5
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 715c1f99ae98ce220757633f751a09af82fea6ba
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884910"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122626941"
 ---
 # <a name="compiling-ribbon-markup"></a>Compilación del marcado de la cinta de opciones
 
@@ -72,8 +72,8 @@ Los argumentos y las opciones de esta herramienta se describen en la tabla sigui
 </thead>
 <tbody>
 <tr class="odd">
-<td>/header: &lt; headerFile&gt;</td>
-<td>Genere un archivo de encabezado denominado &lt; headerFile &gt; que contenga los símbolos de recursos de identificador de comando de marcado. Si se omite, no se genera un archivo de encabezado.</td>
+<td>/header:<headerFile></td>
+<td>Genere un archivo de encabezado denominado <headerFile> que contiene los símbolos de recursos de identificador de comando de marcado. Si se omite, no se genera un archivo de encabezado.</td>
 </tr>
 <tr class="even">
 <td>/res:<resourceFile></td>

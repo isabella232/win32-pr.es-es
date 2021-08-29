@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_CNAMEType
+title: Método Modify de la MicrosoftDNS_CNAMEType clase
 description: El método Modify actualiza un registro de recursos de nombre canónico (CNAME).
 ms.assetid: 7e550026-d901-44a0-86ac-520682232ccb
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_CNAMEType clase
-- MicrosoftDNS_CNAMEType de clase DNS, Modify (método)
+- Modificación del DNS del método
+- Modify method DNS , MicrosoftDNS_CNAMEType class
+- MicrosoftDNS_CNAMEType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ddbe1e1592c4331be808340c216954cd8d7b14f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac4fe65904c04ae7c7379898943f28b15e19d796e157e50694ef9146e12f372f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104045"
 ---
-# <a name="modify-method-of-the-microsoftdns_cnametype-class"></a>Método Modify de la \_ clase MicrosoftDNS CNAMEType
+# <a name="modify-method-of-the-microsoftdns_cnametype-class"></a>Método Modify de la clase CNAMEType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de nombre canónico (CNAME).
+El **método Modify** actualiza un registro de recursos de nombre canónico (CNAME).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*PrimaryName* \[ en, opcional\]
+*PrimaryName* \[ in, opcional\]
 </dt> <dd>
 
 Cadena que representa el nombre principal del registro CNAME.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
 Referencia al objeto modificado.
@@ -69,9 +69,9 @@ Referencia al objeto modificado.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin cambios en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -93,10 +93,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ CNAMEType**](microsoftdns-cnametype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS CNAMEType**](microsoftdns-cnametype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase CNAMEType de MicrosoftDNS \_**](microsoftdns-cnametype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

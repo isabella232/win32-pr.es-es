@@ -1,26 +1,26 @@
 ---
-title: Propiedad DisplayConnectionBar de IMsRdpClientAdvancedSettings
-description: Especifica si se va a utilizar la barra de conexión. El valor predeterminado es VARIANT \_ true, que habilita la propiedad.
+title: IMsRdpClientAdvancedSettings DisplayConnectionBar, propiedad
+description: Especifica si se debe usar la barra de conexión. El valor predeterminado es VARIANT \_ TRUE, que habilita la propiedad .
 ms.assetid: 251c0322-5589-423d-9694-004f847c173b
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad DisplayConnectionBar
-- Propiedad DisplayConnectionBar Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
+- Propiedad DisplayConnectionBar Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad DisplayConnectionBar
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39dd85d0c8fd578931ed9ca8b85ac7a5ca01981e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0cf7c0002128dd8d47684c5a5aa2269656e915e15c854ac007a0f87016b8829f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475555"
 ---
-# <a name="imsrdpclientadvancedsettingsdisplayconnectionbar-property"></a>IMsRdpClientAdvancedSettings::D propiedad isplayConnectionBar
+# <a name="imsrdpclientadvancedsettingsdisplayconnectionbar-property"></a>IMsRdpClientAdvancedSettings::D isplayConnectionBar
 
-Especifica si se va a utilizar la barra de conexión. El valor predeterminado es **Variant \_ true**, que habilita la propiedad. Al establecer esta propiedad en **Variant \_ false** en un entorno de scripting seguro se devuelve **E \_ FAIL**.
+Especifica si se debe usar la barra de conexión. El valor predeterminado es **VARIANT \_ TRUE,** que habilita la propiedad . Si se establece esta propiedad **en VARIANT \_ FALSE en** un entorno de scripting seguro, se devuelve E **\_ FAIL**.
 
 Esta propiedad es de lectura y escritura.
 
@@ -84,15 +84,15 @@ HRESULT get_DisplayConnectionBar(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **Variant \_ false** para deshabilitar la característica o la **variante \_ true** para habilitar la característica. El valor predeterminado es **Variant \_ true**.
+Establezca este parámetro en **VARIANT \_ FALSE para** deshabilitar la característica o VARIANT **\_ TRUE** para habilitar la característica. El valor predeterminado es **VARIANT \_ TRUE.**
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="remarks"></a>Observaciones
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,18 +4,18 @@ ms.assetid: 9b09dd86-3c22-4565-82a0-106d5ca2e42d
 title: Filtro de analizador SAMI (CC)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b77f0aa2d913b7f0295a078c8174ae483bb1cb62
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: d93cb5f55ebbcd70359f5e2e9b57084752f6a6d8c8325a6d7037d52e5cf3cec4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120102335"
 ---
 # <a name="sami-cc-parser-filter"></a>Filtro de analizador SAMI (CC)
 
-Analiza los datos de subtítulos de archivos de intercambio multimedia accesible sincronizado (SAMI).
+Analiza los datos de subtítulos de archivos de intercambio de medios accesibles sincronizados (SAMI).
 
-SAMI es un formato de texto similar a HTML y se usa para codificar títulos basados en tiempo. Este filtro convierte los datos SAMI en una secuencia de texto. Cada ejemplo de la secuencia contiene una entrada de título, junto con información de formato. Las marcas de tiempo de los ejemplos se generan a partir de la información de hora del archivo SAMI.
+SAMI es un formato de texto similar a HTML y se usa para codificar títulos basados en tiempo. Este filtro convierte los datos SAMI en una secuencia de texto. Cada ejemplo de la secuencia contiene una entrada de título, junto con información de formato. Las marcas de tiempo de los ejemplos se generan a partir de la información de tiempo del archivo SAMI.
 
 Este filtro está diseñado para usarse con el filtro [Representador](internal-script-command-renderer-filter.md) de comandos de script interno. El representador de comandos de script interno recibe los ejemplos de texto y los envía a la aplicación, en forma de notificaciones de eventos. Para obtener más información, vea la sección Comentarios.
 
@@ -26,7 +26,7 @@ Este filtro está diseñado para usarse con el filtro [Representador](internal-s
 | Interfaces de filtro                        | [**IAMStreamSelect**](/windows/desktop/api/Strmif/nn-strmif-iamstreamselect), [ **IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)                           |
 | Tipos de medios de pin de entrada                    | Secuencia \_ MEDIATYPE                                                                                        |
 | Interfaces de pin de entrada                     | [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [ **IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                         |
-| Tipos de medios de pin de salida                   | TEXTO \_ MEDIATYPE, MEDIASUBTYPE \_ NULL                                                                      |
+| Tipos de medios de pin de salida                   | MEDIATYPE \_ Text, MEDIASUBTYPE \_ NULL                                                                      |
 | Interfaces de pin de salida                    | [**IMediaSeeking,**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
 | Filtrar CLSID                             | {33FACFE0-A9BE-11D0-A520-00A0D10129C0}                                                                   |
 | CLSID de la página de propiedades                      | Ninguna página de propiedades                                                                                         |
@@ -74,7 +74,7 @@ A continuación se muestra un archivo SAMI simple:
 
 La **etiqueta STYLE** define dos configuraciones de idioma, inglés (. ENCC) y francés (. FRCC). También define dos estilos, \# NORMAL y \# GREENTEXT. Cada **etiqueta SYNC** define la hora de inicio de un título, en milisegundos. Las **etiquetas P** contienen el texto del título, mientras que el atributo **CLASS** especifica la configuración de idioma a la que se aplica el título.
 
-Para cada idioma y estilo, el filtro crea una secuencia lógica. En cualquier momento, se habilitan exactamente una secuencia de idioma y una secuencia de estilo. Cuando el filtro genera un ejemplo, selecciona el título del idioma actual y aplica el estilo actual. De forma predeterminada, el primer idioma y estilo declarados en el archivo están habilitados. Una aplicación puede usar el [**método IAMStreamSelect::Enable**](/windows/desktop/api/Strmif/nf-strmif-iamstreamselect-enable) para habilitar una secuencia diferente.
+Para cada lenguaje y estilo, el filtro crea una secuencia lógica. En cualquier momento, se habilitan exactamente una secuencia de idioma y una secuencia de estilo. Cuando el filtro genera un ejemplo, selecciona el título del idioma actual y aplica el estilo actual. De forma predeterminada, el primer idioma y estilo declarados en el archivo están habilitados. Una aplicación puede usar el [**método IAMStreamSelect::Enable**](/windows/desktop/api/Strmif/nf-strmif-iamstreamselect-enable) para habilitar una secuencia diferente.
 
 Con la configuración predeterminada, el primer título del archivo de ejemplo genera la siguiente salida:
 
@@ -85,9 +85,9 @@ Con la configuración predeterminada, el primer título del archivo de ejemplo g
 
 
 
-Si la salida va al representador de comandos de script interno, ese filtro envía una notificación [**de eventos OLE EVENT \_ \_ de EC.**](ec-ole-event.md) El segundo parámetro de evento es un BSTR con el texto del título. La aplicación puede recuperar el evento y mostrar el título.
+Si la salida va al representador de comandos de script interno, ese filtro envía una notificación de eventos [**\_ OLE EVENT \_ de EC.**](ec-ole-event.md) El segundo parámetro de evento es un BSTR con el texto del título. La aplicación puede recuperar el evento y mostrar el título.
 
-En el ejemplo siguiente se muestra cómo representar un archivo SAMI, recuperar información de secuencias, habilitar secuencias y mostrar texto de título. En el ejemplo se supone que el archivo SAMI anterior se guarda como C: \\ Sami \_ test \_ file.sami.
+En el ejemplo siguiente se muestra cómo representar un archivo SAMI, recuperar información de secuencia, habilitar secuencias y mostrar texto de título. En el ejemplo se supone que el archivo SAMI anterior se guarda como C: \\ Sami \_ test \_ file.sami.
 
 Por brevedad, en este ejemplo se usaron índices de flujo codificados de forma fuerte cuando llama al **método IAMStreamSelect::Enable.** También realiza una comprobación de errores mínima.
 
@@ -177,7 +177,7 @@ Este filtro usa la [**interfaz IAsyncReader**](/windows/desktop/api/Strmif/nn-st
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

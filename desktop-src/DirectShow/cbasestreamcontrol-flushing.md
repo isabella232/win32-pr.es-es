@@ -1,7 +1,7 @@
 ---
-description: El método de vaciado notifica a la clase base que el PIN se ha iniciado o detenido el vaciado.
+description: El método Flushing notifica a la clase base que el pin se ha iniciado o detenido el vaciado.
 ms.assetid: a3c000e1-18a1-48f7-9e2e-fe63cf13fc5c
-title: CBaseStreamControl. Flush (método) (Strmctl. h)
+title: Método CBaseStreamControl.Flushing (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5d4a3a2375ca799f5dd35def03295f29f61c0583
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da25983f26a89d5b264ec616e887d465f0851e3c901e2f1fac1dbab0c48be5bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103185"
 ---
-# <a name="cbasestreamcontrolflushing-method"></a>CBaseStreamControl. Flush (método)
+# <a name="cbasestreamcontrolflushing-method"></a>CBaseStreamControl.Flushing (método)
 
-El `Flushing` método notifica a la clase base que el PIN se ha iniciado o detenido.
+El método notifica a la clase base que el pin se ha `Flushing` iniciado o detenido el vaciado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void Flushing(
 *bInProgress* 
 </dt> <dd>
 
-Especifica un valor booleano que indica si el PIN se está vaciando. Use el valor **true** cuando el PIN comienza una operación de vaciado y **false** cuando el PIN finaliza una operación de vaciado.
+Especifica un valor booleano que indica si el pin se va a vaciar. Use el valor **TRUE cuando** el pin comienza una operación de vaciado y **FALSE** cuando finaliza una operación de vaciado.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Especifica un valor booleano que indica si el PIN se está vaciando. Use el valo
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El PIN debe llamar a este método desde sus métodos [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) y [**IPin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) . Especifique **true** en **BeginFlush** y **false** en **EndFlush**.
+El pin debe llamar a este método desde sus [**métodos IPin::BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) [**e IPin::EndFlush.**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) Especifique **TRUE** en **BeginFlush** y **FALSE** en **EndFlush.**
 
-Este método hace que el método [**CBaseStreamControl:: CheckStreamState**](cbasestreamcontrol-checkstreamstate.md) deje de esperar. Mientras se está vaciando el PIN, **CheckStreamState** siempre devuelve el \_ descartado de la transmisión.
+Este método hace que [**el método CBaseStreamControl::CheckStreamState**](cbasestreamcontrol-checkstreamstate.md) deje de esperar. Mientras se vacía el pin, **CheckStreamState** siempre devuelve STREAM \_ DISCARDING.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Este método hace que el método [**CBaseStreamControl:: CheckStreamState**](cba
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Strmctl. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Este método hace que el método [**CBaseStreamControl:: CheckStreamState**](cba
 
 <dl> <dt>
 
-[**Clase CBaseStreamControl**](cbasestreamcontrol.md)
+[**CBaseStreamControl (clase)**](cbasestreamcontrol.md)
 </dt> </dl>
 
  

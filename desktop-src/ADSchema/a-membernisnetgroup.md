@@ -1,10 +1,10 @@
 ---
-title: atributo memberNisNetgroup
+title: atributo memberZonNetgroup
 description: Contiene la lista de netgroups que son miembros de este netgroup.
 ms.assetid: e68e224a-fc49-4bef-9c02-811cb647d767
 ms.tgt_platform: multiple
 keywords:
-- memberNisNetgroup esquema de AD de atributos
+- Esquema de AD del atributo memberZonNetgroup
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dc5406ddbc942e240073124621990e9e559309e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 484404f6c598d8e4852a2804aa0672c4244c0276151ed69ca1d011668b2d1ffe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300465"
 ---
-# <a name="membernisnetgroup-attribute"></a>atributo memberNisNetgroup
+# <a name="membernisnetgroup-attribute"></a>atributo memberZonNetgroup
 
 Contiene la lista de netgroups que son miembros de este netgroup.
 
@@ -28,14 +28,14 @@ Contiene la lista de netgroups que son miembros de este netgroup.
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | memberNisNetgroup                    |
-| Nombre para mostrar de LDAP | memberNisNetgroup                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | memberZonNetgroup                    |
+| Ldap-Display-Name | memberZonNetgroup                    |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.13                     |
-| System-ID-GUID    | 0f6a17dc-53e5-4be8-9442-8f3ce2f9012a |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 0f6a17dc-53e5-4be8-9442-8f3ce2f9012a |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Contiene la lista de netgroups que son miembros de este netgroup.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -73,13 +73,13 @@ Contiene la lista de netgroups que son miembros de este netgroup.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -94,13 +94,13 @@ Contiene la lista de netgroups que son miembros de este netgroup.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -115,13 +115,13 @@ Contiene la lista de netgroups que son miembros de este netgroup.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------|
-| Identificador de vínculo                | \-                                              |
+| Id. de vínculo                | \-                                              |
 | MAPI-Id                | \-                                              |
-| System-Only            | False                                           |
-| Tiene un único valor       | False                                           |
-| Está indexado             | False                                           |
-| En el catálogo global      | False                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                    |
+| System-Only            | Falso                                           |
+| Es de un solo valor       | Falso                                           |
+| Está indexado             | Falso                                           |
+| En el catálogo global      | Falso                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TCM_GETUNICODEFORMAT (commctrl. h)
-description: Recupera la marca del formato de caracteres Unicode para el control. Puede enviar este mensaje explícitamente o utilizar la \_ macro TabCtrl GetUnicodeFormat.
+title: TCM_GETUNICODEFORMAT mensaje (Commctrl.h)
+description: Recupera la marca de formato de caracteres Unicode para el control . Puede enviar este mensaje explícitamente o usar la \_ macro TabCtrl GetUnicodeFormat.
 ms.assetid: 720e0325-500b-436c-8713-38ed780735bf
 keywords:
-- TCM_GETUNICODEFORMAT controles de mensajes de Windows
+- TCM_GETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b497f1b2c2b5ac55ee949b498602b50b267fef3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a8545e32fa4cc24e852c250c06c76573994bc897c05f2a1be045a08c5148794
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104825"
 ---
-# <a name="tcm_getunicodeformat-message"></a>\_Mensaje GETUNICODEFORMAT de TCM
+# <a name="tcm_getunicodeformat-message"></a>Mensaje \_ GETUNICODEFORMAT de TCM
 
-Recupera la marca del formato de caracteres Unicode para el control. Puede enviar este mensaje explícitamente o utilizar la macro [**TabCtrl \_ GetUnicodeFormat**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getunicodeformat) .
+Recupera la marca de formato de caracteres Unicode para el control . Puede enviar este mensaje explícitamente o usar la macro [**TabCtrl \_ GetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-tabctrl_getunicodeformat)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,11 +37,11 @@ Recupera la marca del formato de caracteres Unicode para el control. Puede envia
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la marca de formato Unicode para el control. Si este valor es distinto de cero, el control utiliza caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
+Devuelve la marca de formato Unicode para el control. Si este valor es distinto de cero, el control usa caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea la sección Comentarios para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para obtener una descripción de este mensaje.
+Consulte los comentarios de [**CCM \_ GETUNICODEFORMAT para**](ccm-getunicodeformat.md) obtener una explicación de este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Vea la sección Comentarios para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodefor
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Vea la sección Comentarios para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodefor
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT TCM**](tcm-setunicodeformat.md)
+[**TCM \_ SETUNICODEFORMAT**](tcm-setunicodeformat.md)
 </dt> </dl>
 
  

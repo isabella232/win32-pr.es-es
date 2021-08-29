@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Claim-Source-Type
-description: Para un tipo de notificaciones de entidad de seguridad, muestra el tipo de almacén del que procede la declaración emitida.
+title: Atributo ms-DS-Claim-Source-Type
+description: Para un tipo de notificación de entidad de seguridad, enumera el tipo de almacén del que se ha procedente la notificación emitida.
 ms.assetid: e72bf141-90d2-430c-9580-087b9b6f573f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Claim-Source-Type
-- Esquema de AD de atributo msDS-ClaimSourceType
+- Esquema de AD del atributo ms-DS-Claim-Source-Type
+- Esquema de AD del atributo msDS-ClaimSourceType
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 034538eafbfaaf350b83b00d6b14d2da5935bbbb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d7bf9210d769cacaf16b179d629a8ced8f644c7100af53e7924827ac364619a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119296465"
 ---
-# <a name="ms-ds-claim-source-type-attribute"></a>atributo MS-DS-Claim-Source-Type
+# <a name="ms-ds-claim-source-type-attribute"></a>Atributo ms-DS-Claim-Source-Type
 
-Para un tipo de notificaciones de entidad de seguridad, muestra el tipo de almacén del que procede la declaración emitida.
+Para un tipo de notificación de entidad de seguridad, enumera el tipo de almacén del que se ha procedente la notificación emitida.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-Claim-Source-Type                     |
-| Nombre para mostrar de LDAP | msDS-ClaimSourceType                        |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Claim-Source-Type                     |
+| Ldap-Display-Name | msDS-ClaimSourceType                        |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2158                     |
-| System-ID-GUID    | 92f19c05-8dfa-4222-bbd1-2c4f01487754        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 92f19c05-8dfa-4222-bbd1-2c4f01487754        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -48,20 +48,20 @@ Para un tipo de notificaciones de entidad de seguridad, muestra el tipo de almac
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------|
-| Identificador de vínculo                | \-                                                      |
+| Id. de vínculo                | \-                                                      |
 | MAPI-Id                | \-                                                      |
-| System-Only            | False                                                   |
-| Tiene un único valor       | True                                                    |
-| Está indexado             | False                                                   |
-| En el catálogo global      | False                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                            |
+| System-Only            | Falso                                                   |
+| Es de un solo valor       | Verdadero                                                    |
+| Está indexado             | Falso                                                   |
+| En el catálogo global      | Falso                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Clases usadas en        | [**Tipo de notificaciones de MS-DS-Claim**](c-msds-claimtype.md)<br/> |
+| Clases usadas en        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_ENABLEGROUPVIEW (commctrl. h)
+title: LVM_ENABLEGROUPVIEW mensaje (Commctrl.h)
 description: Habilita o deshabilita si los elementos de un control de vista de lista se muestran como un grupo.
 ms.assetid: 783a5e23-d1cb-4523-a6d2-b2cf93fa7f62
 keywords:
-- LVM_ENABLEGROUPVIEW controles de mensajes de Windows
+- LVM_ENABLEGROUPVIEW controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d546e1236fa4f0800c0353810beb5b427ba4fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 848bf348a35ee171f23e499464b65c847b67f920c53175fcf920d56e7e30fb90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119698785"
 ---
-# <a name="lvm_enablegroupview-message"></a>\_Mensaje ENABLEGROUPVIEW LVM
+# <a name="lvm_enablegroupview-message"></a>Mensaje \_ ENABLEGROUPVIEW de LVM
 
 Habilita o deshabilita si los elementos de un control de vista de lista se muestran como un grupo.
 
@@ -30,10 +30,10 @@ Habilita o deshabilita si los elementos de un control de vista de lista se muest
 <dl> <dt>
 
 *wParam* 
-</dt> <dd>Un **booleano** que indica si se va a habilitar un control de vista de lista para agrupar los elementos mostrados. Use **true** para habilitar la agrupación y **false** para deshabilitarla. </dd> <dt>
+</dt> <dd>Un **valor BOOL** que indica si se debe habilitar un control de vista de lista para agrupar los elementos mostrados. Use **TRUE** para habilitar la agrupación, **FALSE** para deshabilitarla. </dd> <dt>
 
 *lParam* 
-</dt> <dd>Debe ser **null**.</dd> </dl>
+</dt> <dd>Debe ser **NULL.**</dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -43,20 +43,20 @@ Devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                       | Descripción                                                                                  |
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <dl> <dt>**0,1**</dt> </dl>  | La capacidad de mostrar los elementos de vista de lista como un grupo ya está habilitada o deshabilitada.<br/> |
-| <dl> <dt>**1**</dt> </dl>  | El estado del control se ha cambiado correctamente.<br/>                                |
+| <dl> <dt>**0**</dt> </dl>  | La capacidad de mostrar elementos de vista de lista como un grupo ya está habilitada o deshabilitada.<br/> |
+| <dl> <dt>**1**</dt> </dl>  | El estado del control ha cambiado correctamente.<br/>                                |
 | <dl> <dt>**-1**</dt> </dl> | Error en la operación.<br/>                                                             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**LVM \_ ENABLEGROUPVIEW** no se admite en el estilo [**LVS \_ OWNERDATA**](list-view-window-styles.md) .
+**LVM \_ ENABLEGROUPVIEW no** se admite en el [**estilo \_ OWNERDATA de LVS.**](list-view-window-styles.md)
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -66,9 +66,9 @@ Devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

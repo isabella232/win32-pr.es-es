@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_SPACEHINTS. cbInitial'
-title: Propiedad JET_SPACEHINTS. cbInitial
+description: 'Más información sobre: JET_SPACEHINTS.cbInitial'
+title: JET_SPACEHINTS.cbInitial, propiedad
 TOCTitle: 'cbInitial property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS.cbInitial
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_spacehints.cbinitial(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ace0cf4955eca91570aaddb5ac069a09bf0ddae4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e2c33e5b04cef5c6cccb4f20462cdc21ebb6bfeadc3d5cf45298b88a6fd1a0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473055"
 ---
-# <a name="jet_spacehintscbinitial-property"></a>Propiedad JET_SPACEHINTS. cbInitial
+# <a name="jet_spacehintscbinitial-property"></a>JET_SPACEHINTS.cbInitial, propiedad
 
 Obtiene o establece el tamaño inicial (en bytes).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public int cbInitial { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_SPACEHINTS (clase)](./jet-spacehints-class.md)
+[JET_SPACEHINTS clase](./jet-spacehints-class.md)
 
-[Miembros de JET_SPACEHINTS](./jet-spacehints-members.md)
+[JET_SPACEHINTS miembros](./jet-spacehints-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

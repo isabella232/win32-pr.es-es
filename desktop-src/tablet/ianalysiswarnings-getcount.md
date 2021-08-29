@@ -1,7 +1,7 @@
 ---
 description: Obtiene el número de objetos IAnalysisWarning contenidos en la colección IAnalysisWarnings.
 ms.assetid: a0ad46d5-fb1b-40f6-bfc1-28ea1bf4eb44
-title: 'IAnalysisWarnings:: GetCount (método) (IACom. h)'
+title: Método IAnalysisWarnings::GetCount (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: bc795d310f4bc532a39e2c1a2b4d2ba68f0401f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51e2cf46f0d21cadacb1c3d133147c36b1bb35afea787001cf3dffce5c755ade
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596785"
 ---
-# <a name="ianalysiswarningsgetcount-method"></a>IAnalysisWarnings:: GetCount (método)
+# <a name="ianalysiswarningsgetcount-method"></a>IAnalysisWarnings::GetCount (método)
 
-Obtiene el número de objetos [**IAnalysisWarning**](ianalysiswarning.md) contenidos en la colección [**IAnalysisWarnings**](ianalysiswarnings.md) .
+Obtiene el número de [**objetos IAnalysisWarning**](ianalysiswarning.md) contenidos en la [**colección IAnalysisWarnings.**](ianalysiswarnings.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,17 +42,17 @@ HRESULT GetCount(
 *pulCount* \[ out, retval\]
 </dt> <dd>
 
-El número de objetos [**IAnalysisWarning**](ianalysiswarning.md) contenidos en la colección [**IAnalysisWarnings**](ianalysiswarnings.md) .
+Número de objetos [**IAnalysisWarning**](ianalysiswarning.md) contenidos en la [**colección IAnalysisWarnings.**](ianalysiswarnings.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el evento [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) . El controlador comprueba [**IAnalysisStatus:: IsSuccessful**](ianalysisstatus-issuccessful.md). Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de objetos [**IAnalysisWarning**](ianalysiswarning.md) .
+En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el [**\_ evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) El controlador comprueba [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de [**objetos IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -137,11 +137,11 @@ STDMETHODIMP CMyClass::Results(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -153,7 +153,7 @@ STDMETHODIMP CMyClass::Results(
 [**IAnalysisWarnings**](ianalysiswarnings.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

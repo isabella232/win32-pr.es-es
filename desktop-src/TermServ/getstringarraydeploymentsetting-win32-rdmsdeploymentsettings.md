@@ -1,12 +1,12 @@
 ---
-title: Método GetStringArrayDeploymentSetting de la clase Win32_RDMSDeploymentSettings
+title: Método GetStringArrayDeploymentSetting de la Win32_RDMSDeploymentSettings clase
 description: Recupera la configuración de implementación de una colección de escritorios virtuales.
 ms.assetid: ab380618-560e-425b-9bf0-a7de6b30d01a
 ms.tgt_platform: multiple
 keywords:
 - Método GetStringArrayDeploymentSetting Servicios de Escritorio remoto
-- Método GetStringArrayDeploymentSetting Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetStringArrayDeploymentSetting
+- Método GetStringArrayDeploymentSetting Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método GetStringArrayDeploymentSetting
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9ac0b82441abef8af1b4f6c8e3bd48b89a8cb6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af3531034c86f72514b6a6f67a2a10b3d71c86009d465d53d2d61df49bd5f19f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119476015"
 ---
-# <a name="getstringarraydeploymentsetting-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetStringArrayDeploymentSetting de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getstringarraydeploymentsetting-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetStringArrayDeploymentSetting de la clase RDMSDeploymentSettings de Win32 \_
 
 Recupera la configuración de implementación de una colección de escritorios virtuales.
 
@@ -44,17 +44,17 @@ uint32 GetStringArrayDeploymentSetting(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-El alias de la colección de escritorios virtuales.
+Alias de la colección de escritorios virtuales.
 
 </dd> <dt>
 
-*Valor* \[ de enuncia\]
+*Valor* \[ out\]
 </dt> <dd>
 
-Recibe una matriz de cadenas que contiene los valores de implementación.
+Recibe una matriz de cadenas que contiene la configuración de implementación.
 
 </dd> </dl>
 
@@ -66,8 +66,8 @@ Recibe una matriz de cadenas que contiene los valores de implementación.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -76,7 +76,7 @@ Recibe una matriz de cadenas que contiene los valores de implementación.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: Las tareas de WMI para archivos y carpetas cambian las propiedades de archivo o carpeta a través de WMI, incluida la creación de un recurso compartido o el cambio de nombre de un archivo.
+description: Las tareas de WMI para archivos y carpetas cambian las propiedades de archivos o carpetas a través de WMI, incluida la creación de un recurso compartido o el cambio de nombre de un archivo.
 ms.assetid: 91281fe1-0461-48da-ac5c-cab7e8e1b285
 ms.tgt_platform: multiple
-title: 'Tareas de WMI: archivos y carpetas'
+title: 'Tareas wmi: archivos y carpetas'
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,44 +10,44 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b24d5f7708b88507cd08b73c0b08a83c94f6bb28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b7ac3b02e0268d9357e00d91e21d878f78bf966
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716983"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122629467"
 ---
-# <a name="wmi-tasks-files-and-folders"></a>Tareas de WMI: archivos y carpetas
+# <a name="wmi-tasks-files-and-folders"></a>Tareas wmi: archivos y carpetas
 
-Las tareas de WMI para archivos y carpetas cambian las propiedades de archivo o carpeta a través de WMI, incluida la creación de un recurso compartido o el cambio de nombre de un archivo. Si desea copiar un archivo o leer y escribir un archivo, la manera más fácil es usar el [FileSystemObject](/previous-versions/visualstudio/visual-basic-6/aa242706(v=vs.60)) de Windows Script Host en lugar de WMI. Para ver otros ejemplos, vea la sección de [archivos y carpetas](/previous-versions/tn-archive/ee176985(v=technet.10)) de [technet ScriptCenter](https://www.microsoft.com/technet/scriptcenter).
+Las tareas de WMI para archivos y carpetas cambian las propiedades de archivos o carpetas a través de WMI, incluida la creación de un recurso compartido o el cambio de nombre de un archivo. Si desea copiar un archivo o leer y escribir un archivo, la manera más fácil es usar el objeto [FileSystemObject](/previous-versions/visualstudio/visual-basic-6/aa242706(v=vs.60)) del host Windows script en lugar de WMI. Para obtener otros ejemplos, vea [la sección Archivos y](/previous-versions/tn-archive/ee176985(v=technet.10)) carpetas de [TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter).
 
-[**CIM \_ El archivo de archivos**](/windows/desktop/CIMWin32Prov/cim-datafile) es una de las [clases CIM](cimclas.md) en WMI que se implementa. Evite la enumeración o consulta de todas las instancias **del \_ archivo** de datos CIM en un equipo, ya que es probable que el volumen de datos afecte al rendimiento o que el equipo deje de responder.
+[**CIM \_ DataFile**](/windows/desktop/CIMWin32Prov/cim-datafile) es una de las pocas clases [CIM](cimclas.md) de WMI que se implementa. Evite enumerar o consultar todas las instancias de **CIM \_ DataFile** en un equipo porque es probable que el volumen de datos afecte al rendimiento o que el equipo deje de responder.
 
-Los ejemplos de scripts que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información acerca de cómo usar el script para obtener datos de equipos remotos, consulte [conexión a WMI en un equipo remoto](connecting-to-wmi-on-a-remote-computer.md).
+Los ejemplos de script que se muestran en este tema obtienen datos solo del equipo local. Para obtener más información sobre cómo usar el script para obtener datos de equipos remotos, vea [Conectarse a WMI en un equipo remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 En el procedimiento siguiente se describe cómo ejecutar un script.
 
 **Para ejecutar un script**
 
-1.  Copie el código y guárdelo en un archivo con la extensión. vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una extensión. txt al archivo.
-2.  Abra una ventana del símbolo del sistema y navegue hasta el directorio en el que guardó el archivo.
+1.  Copie el código y guárdelo en un archivo con una extensión .vbs, como *filename.vbs*. Asegúrese de que el editor de texto no agrega una .txt extensión al archivo.
+2.  Abra una ventana del símbolo del sistema y vaya al directorio donde guardó el archivo.
 3.  Escriba **cscript filename.vbs** en el símbolo del sistema.
-4.  Si no puede obtener acceso a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
+4.  Si no puede acceder a un registro de eventos, compruebe si está ejecutando desde un símbolo del sistema con privilegios elevados. Algunos registros de eventos, como el registro de eventos de seguridad, pueden estar protegidos por controles de acceso de usuario (UAC).
 
 > [!Note]  
-> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts de WMI pueden generar grandes cantidades de resultados, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script de *filename.vbs* a *outfile.txt*.
+> De forma predeterminada, cscript muestra la salida de un script en la ventana del símbolo del sistema. Dado que los scripts WMI pueden generar grandes cantidades de salida, es posible que desee redirigir la salida a un archivo. Escriba **cscript filename.vbs > outfile.txt** en el símbolo del sistema para redirigir la salida del script *filename.vbs* a *outfile.txt*.
 
  
 
-En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para obtener distintos tipos de datos del equipo local.
+En la tabla siguiente se enumeran ejemplos de script que se pueden usar para obtener varios tipos de datos del equipo local.
 
 
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -57,11 +57,11 @@ En la tabla siguiente se enumeran ejemplos de scripts que se pueden usar para ob
 </thead>
 <tbody>
 <tr class="odd">
-<td>... ¿cambiar el nombre de un archivo sin recibir un mensaje de error?</td>
-<td>Utilice la clase <a href="/windows/desktop/CIMWin32Prov/cim-datafile"><strong>CIM_DataFile</strong></a> . Asegúrese de pasar el nombre completo de la ruta de acceso al llamar al método <a href="/windows/desktop/CIMWin32Prov/rename-method-in-class-cim-datafile"><strong>Rename</strong></a> , por ejemplo, &quot;C:\Scripts\Test.txt&quot; en lugar de &quot;Text.txt&quot; . Para PowerShell, el uso de <strong>CIM_DataFile</strong> puede ser ineficaz. Por lo tanto, puede usar simplemente el cmdlet Rename-Item.<br/> <span data-codelanguage="VisualBasic"></span>
+<td>... cambiar el nombre de un archivo sin recibir un mensaje de error</td>
+<td>Use la <a href="/windows/desktop/CIMWin32Prov/cim-datafile"><strong>CIM_DataFile</strong></a> clase . Asegúrese de pasar el nombre completo de la ruta de acceso al llamar al método <a href="/windows/desktop/CIMWin32Prov/rename-method-in-class-cim-datafile"><strong>Rename,</strong></a> por ejemplo, &quot;C:\Scripts\Test.txten lugar deText.txt&quot; &quot; &quot; . Para PowerShell, el <strong>CIM_DataFile</strong> puede ser ineficaz. Por lo tanto, puede usar simplemente el cmdlet Rename-Item.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -82,7 +82,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -98,13 +98,13 @@ Next</code></pre></td>
 </td>
 </tr>
 <tr class="even">
-<td>... Determine si los usuarios tienen. Archivos MP3 almacenados en su equipo</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/cim-datafile"><strong>CIM_DataFile</strong></a> y seleccione archivos con la siguiente cláusula <strong>Where</strong> de <a href="querying-with-wql.md">WQL</a> : Where Extension = &quot; mp3 &quot; .</p>
+<td>... determinar si los usuarios tienen .MP3 archivos almacenados en su equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/cim-datafile"><strong>CIM_DataFile</strong></a> y seleccione los archivos mediante la siguiente cláusula WHERE de <a href="querying-with-wql.md">WQL:</a> <strong></strong> Where Extension = &quot; MP3 &quot; .</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -126,7 +126,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -144,13 +144,13 @@ Next</code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿crear carpetas compartidas en un equipo?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-share"><strong>Win32_Share</strong></a> y el método <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-share"><strong>Create</strong></a> .</p>
+<td>... ¿Crear carpetas compartidas en un equipo?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-share"><strong>Win32_Share</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/create-method-in-class-win32-share"><strong>método Create.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -171,7 +171,7 @@ errReturn = objNewShare.Create(&quot;C:\Finance&quot;, &quot;FinanceShare&quot;,
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -193,13 +193,13 @@ $Shares= [WMICLASS]&quot;Win32_Share&quot;
 </div></td>
 </tr>
 <tr class="even">
-<td>... ¿copiar una carpeta?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-directory"><strong>Win32_Directory</strong></a> y el método <a href="/windows/desktop/CIMWin32Prov/copy-method-in-class-win32-directory"><strong>Copy</strong></a> . Para PowerShell, simplemente puede usar el cmdlet Copy-Item.</p>
+<td>... ¿Copiar una carpeta?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-directory"><strong>Win32_Directory</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/copy-method-in-class-win32-directory"><strong>método Copy.</strong></a> Para PowerShell, simplemente puede usar el cmdlet Copy-Item.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -222,7 +222,7 @@ Next </code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -239,13 +239,13 @@ Next </code></pre></td>
 </div></td>
 </tr>
 <tr class="odd">
-<td>... ¿mueve una carpeta?</td>
-<td><p>Use la clase <a href="/windows/desktop/CIMWin32Prov/win32-directory"><strong>Win32_Directory</strong></a> y el método <a href="/windows/desktop/CIMWin32Prov/rename-method-in-class-win32-directory"><strong>Rename</strong></a> . Para PowerShell, simplemente puede usar el cmdlet Move-Item.</p>
+<td>... ¿Mover una carpeta?</td>
+<td><p>Use la <a href="/windows/desktop/CIMWin32Prov/win32-directory"><strong>clase Win32_Directory</strong></a> y el <a href="/windows/desktop/CIMWin32Prov/rename-method-in-class-win32-directory"><strong>método Rename.</strong></a> Para PowerShell, simplemente puede usar el cmdlet Move-Item.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -270,7 +270,7 @@ Next</code></pre></td>
 <span data-codelanguage="PowerShell"></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -297,13 +297,13 @@ Next</code></pre></td>
 
 <dl> <dt>
 
-[Tareas de WMI para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
+[Tareas wmi para scripts y aplicaciones](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Ejemplos de aplicaciones de C++ de WMI](wmi-c---application-examples.md)
+[Ejemplos de aplicaciones wmi de C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter de TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

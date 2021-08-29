@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ba394fb13fd98793401b29e6343ef4fa9ff0194b7a86f22dda1e58439737b34b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01e8fccbf461befd8016d813098a542a98cdc858
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119869"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887221"
 ---
 # <a name="load-directx-hlsl-texture-object"></a>Cargar (objeto de textura HLSL de DirectX)
 
@@ -124,7 +124,7 @@ Por ejemplo, para acceder a una textura 2D, proporcione coordenadas UV para los 
 
 ## <a name="return-value"></a>Valor devuelto
 
-El tipo de valor devuelto coincide con el tipo de la *declaración object.* Por ejemplo, un objeto Texture2D que se declaró como "Texture2d myTexture;" tiene un valor devuelto de <uint4> tipo **uint4**.
+El tipo de valor devuelto coincide con el tipo de la *declaración object.* Por ejemplo, un objeto Texture2D que se declaró como "Texture2d &lt; uint4 myTexture;" tiene un valor devuelto de &gt; **tipo uint4**.
 
 ## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -140,7 +140,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
--   Shader Model 4.1 está disponible en Direct3D 10.1 o posterior.
+-   El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
 
 ## <a name="example"></a>Ejemplo
 

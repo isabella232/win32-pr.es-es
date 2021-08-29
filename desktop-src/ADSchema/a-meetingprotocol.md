@@ -1,10 +1,10 @@
 ---
-title: atributo meetingProtocol
-description: Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
+title: Atributo meetingProtocol
+description: Los protocolos usados para una reunión, por ejemplo, H.320 o T.120.
 ms.assetid: e2fb50b4-142e-42f9-8c00-fbd65f483e18
 ms.tgt_platform: multiple
 keywords:
-- meetingProtocol esquema de AD de atributos
+- Esquema de AD del atributo meetingProtocol
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cc6c4c1f4bd7eb61ffddaaef0a9e0accec020a5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c8a0d7bdbd1176c290e95d19978f5aaeed19d5eb589a4d8163b5fdc16d6bc637
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300665"
 ---
-# <a name="meetingprotocol-attribute"></a>atributo meetingProtocol
+# <a name="meetingprotocol-attribute"></a>Atributo meetingProtocol
 
-Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
+Los protocolos usados para una reunión, por ejemplo, H.320 o T.120.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | meetingProtocol                             |
-| Nombre para mostrar de LDAP | meetingProtocol                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | meetingProtocol                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.570                      |
-| System-ID-GUID    | 11b6cc81-48c4-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 11b6cc81-48c4-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,20 +52,20 @@ Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | True                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | True                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | True                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | True                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | True                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 
@@ -157,20 +157,20 @@ Los protocolos usados para una reunión, por ejemplo, H. 320 o T. 120.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------|
-| Identificador de vínculo                | \-                                      |
+| Id. de vínculo                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | False                                   |
-| Tiene un único valor       | False                                   |
+| Es de un solo valor       | False                                   |
 | Está indexado             | False                                   |
 | En el catálogo global      | True                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
 | System-Flags           | 0x00000010                              |
-| Clases usadas en        | [**Reunirse**](c-meeting.md)<br/> |
+| Clases usadas en        | [**Reunión**](c-meeting.md)<br/> |
 
 
 

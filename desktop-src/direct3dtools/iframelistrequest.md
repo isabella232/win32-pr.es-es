@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e4c56fea2c458076ff91c5acdca3f22dcdfc830e
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 40d56b27c4c59e1931cf11ce2073c5a907f72398
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631703"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122786141"
 ---
 # <a name="span-idvspixengineiframelistrequestspaniframelistrequest-interface"></a><span id="vspixengine.iframelistrequest"></span>Interfaz IFrameListRequest
 
 Solicitud de la lista de fotogramas con su identificador de evento y número de fotograma.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IFrameListRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFrameListRequest** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IFrameListRequest** hereda de la [**interfaz IUnknown.**](/windows
 
 La **interfaz IFrameListRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframelistrequest-requestasync-iframelistcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Una solicitud asincrónica para obtener los fotogramas de lista capturados en el registro de gráficos.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iframelistrequest-requestasync-iframelistcallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td ><p>Una solicitud asincrónica para obtener los fotogramas de lista capturados en el registro de gráficos.</p></td></tr></tbody></table>
 
  
 

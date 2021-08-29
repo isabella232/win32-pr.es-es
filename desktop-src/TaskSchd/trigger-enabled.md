@@ -1,11 +1,11 @@
 ---
-title: Desencadenador. Enabled (propiedad)
-description: En el caso de scripting, obtiene o establece un valor booleano que indica si el desencadenador está habilitado.
+title: Propiedad Trigger.Enabled
+description: Para el scripting, obtiene o establece un valor booleano que indica si el desencadenador está habilitado.
 ms.assetid: 8fb5a0cc-ddd4-430d-9593-95a4cb311f18
 keywords:
-- Propiedad Enabled Programador de tareas
-- Propiedad habilitada Programador de tareas, objeto desencadenador
-- Objeto desencadenador Programador de tareas, propiedad Enabled
+- Propiedades habilitadas Programador de tareas
+- Propiedad Enabled Programador de tareas , Trigger object
+- Desencadenador de objeto Programador de tareas propiedad , Enabled
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 411bc36dcf03933e2b4cee2f575aaec3b8133846
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2b9fe5439576322807abea6e10089460eaed4440496ed6a9e0f989dd44bc7e20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099705"
 ---
-# <a name="triggerenabled-property"></a>Desencadenador. Enabled (propiedad)
+# <a name="triggerenabled-property"></a>Propiedad Trigger.Enabled
 
-En el caso de scripting, obtiene o establece un valor booleano que indica si el desencadenador está habilitado.
+Para el scripting, obtiene o establece un valor booleano que indica si el desencadenador está habilitado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,11 +38,11 @@ Trigger.Enabled As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-True si el desencadenador está habilitado; en caso contrario, false. El valor predeterminado es true.
+True si el desencadenador está habilitado; de lo contrario, false. El valor predeterminado es true.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, se especifica la propiedad Enabled mediante el elemento [**Enabled**](taskschedulerschema-enabled-triggerbasetype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, la propiedad enabled se especifica mediante el [**elemento Enabled**](taskschedulerschema-enabled-triggerbasetype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Al leer o escribir XML para una tarea, se especifica la propiedad Enabled median
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

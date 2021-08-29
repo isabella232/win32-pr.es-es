@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4fe88913ad374923c11cf058a3dc0aa70580411e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2b9a3ec028b121cfcb76dfe857d4d12b34dca57410ffee177dd45a19e358e29a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341675"
 ---
 # <a name="cbaseinputpinreceive-method"></a>Método CBaseInputPin.Receive
 
@@ -59,7 +59,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                    | Correcto.<br/>                                        |
 | <dl> <dt>**S \_ FALSE**</dt> </dl>                 | El pin se está vacíando actualmente; se rechazó el ejemplo.<br/> |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>               | Argumento de puntero **NULL.**<br/>                      |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>               | **Argumento de** puntero NULL.<br/>                      |
 | <dl> <dt>**VFW \_ E \_ INVALIDMEDIATYPE**</dt> </dl> | Tipo de medio no válido.<br/>                             |
 | <dl> <dt>**ERROR EN TIEMPO DE EJECUCIÓN DE VFW \_ E \_ \_**</dt> </dl>   | Se produjo un error en tiempo de ejecución.<br/>                      |
 | <dl> <dt>**VFW \_ E \_ ESTADO \_ INCORRECTO**</dt> </dl>     | El pin se detiene.<br/>                             |
@@ -70,11 +70,11 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 
 ## <a name="remarks"></a>Comentarios
 
-El pin de salida ascendente llama a este método para entregar un ejemplo al pin de entrada. El pin de entrada debe realizar una de las siguientes acciones:
+El pin de salida ascendente llama a este método para entregar una muestra al pin de entrada. El pin de entrada debe realizar una de las siguientes acciones:
 
--   Procese el ejemplo antes de devolverlo.
+-   Procese el ejemplo antes de volver.
 -   Devuelve y procesa el ejemplo en un subproceso de trabajo.
--   Rechazar el ejemplo.
+-   Rechace el ejemplo.
 
 Si el pin usa un subproceso de trabajo para procesar el ejemplo, agregue un recuento de referencias al ejemplo dentro de este método. Una vez que el método vuelve, el pin ascendente libera el ejemplo. Cuando el recuento de referencias de la muestra alcanza cero, el ejemplo vuelve al asignador para volver a usarlo.
 
@@ -90,10 +90,10 @@ En la clase base, este método realiza los pasos siguientes:
 
 Pruebe un cambio de formato como se muestra a continuación:
 
--   Si el ejemplo admite la [**interfaz IMediaSample2,**](/windows/desktop/api/Strmif/nn-strmif-imediasample2) compruebe el **miembro dwSampleFlags** de la [**estructura PROPIEDADES DE AM \_ SAMPLE2. \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) Si la marca \_ TYPECHANGED de AM SAMPLE \_ está presente, el formato ha cambiado.
+-   Si el ejemplo admite la [**interfaz IMediaSample2,**](/windows/desktop/api/Strmif/nn-strmif-imediasample2) compruebe el **miembro dwSampleFlags** de la [**estructura PROPERTIES de AM \_ SAMPLE2. \_**](/windows/win32/api/strmif/ns-strmif-am_sample2_properties) Si la marca \_ TYPECHANGED DE AM SAMPLE \_ está presente, el formato ha cambiado.
 -   De lo contrario, si el ejemplo no admite **IMediaSample2,** llame al [**método IMediaSample::GetMediaType.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getmediatype) Si el método devuelve un valor distinto de **NULL,** el formato ha cambiado.
 
-En la clase base, este método no procesa el ejemplo. La clase derivada debe invalidar este método para realizar el procesamiento. (Lo que esto implica depende completamente del filtro). La clase derivada debe llamar al método de clase base para comprobar los errores descritos anteriormente.
+En la clase base, este método no procesa el ejemplo. La clase derivada debe invalidar este método para realizar el procesamiento. (Lo que esto conlleva depende completamente del filtro). La clase derivada debe llamar al método de clase base para comprobar los errores descritos anteriormente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,12 +101,12 @@ En la clase base, este método no procesa el ejemplo. La clase derivada debe inv
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

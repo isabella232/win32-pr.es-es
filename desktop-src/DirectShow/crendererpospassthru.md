@@ -1,7 +1,7 @@
 ---
-description: La clase CRendererPosPassThru controla los comandos de búsqueda para los filtros de representador, pasándolos al siguiente filtro.
+description: La clase CRendererPosPassThru controla los comandos de búsqueda para los filtros de representador, pasandolos de nivel superior al filtro siguiente.
 ms.assetid: 7b532177-939c-4cb7-a6fa-c0133f65c768
-title: Clase CRendererPosPassThru (Ctlutil. h)
+title: CRendererPosPassThru (clase, Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,38 +16,38 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7154dde8adefdb3292107e9c33d7b6a2b54f6af0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 68d880a50b66190c64de19f98fd4ac9f06dffa79932d19c7f90654689e51811c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831465"
 ---
-# <a name="crendererpospassthru-class"></a>Clase CRendererPosPassThru
+# <a name="crendererpospassthru-class"></a>CRendererPosPassThru (clase)
 
-![jerarquía de clases crendererpospassthru](images/cutil14.png)
+![crendererpospassthru (jerarquía de clases)](images/cutil14.png)
 
-La `CRendererPosPassThru` clase controla los comandos de búsqueda para los filtros de representador, pasándolos al siguiente filtro.
+La `CRendererPosPassThru` clase controla los comandos de búsqueda para los filtros de representador, pasándolos de nivel superior al filtro siguiente.
 
-Esta clase se deriva de la clase [**CPosPassThru**](cpospassthru.md) . Agrega compatibilidad para el almacenamiento en caché de las marcas de tiempo de los ejemplos a medida que llegan. Utilice esta clase de la misma forma que la clase **CPosPassThru** . Consulte la documentación de **CPosPassThru** para obtener más información.
+Esta clase se deriva de la [**clase CPosPassThru.**](cpospassthru.md) Agrega compatibilidad para almacenar en caché las marcas de tiempo de los ejemplos a medida que llegan. Use esta clase de la misma manera que la **clase CPosPassThru.** Consulte la documentación **de CPosPassThru** para obtener más información.
 
-El filtro de representador debe actualizar las `CRendererPosPassThru` marcas de tiempo almacenadas en caché del objeto, como se indica a continuación:
+El filtro del representador debe actualizar las marcas de tiempo almacenadas en caché `CRendererPosPassThru` del objeto, como se muestra a continuación:
 
--   Para cada ejemplo que recibe el filtro, llame al método [**CRendererPosPassThru:: RegisterMediaTime**](crendererpospassthru-registermediatime.md) .
--   Cuando se detenga el filtro o reciba una llamada **EndFlush** , llame al método [**CRendererPosPassThru:: ResetMediaTime**](crendererpospassthru-resetmediatime.md) .
--   Cuando el filtro recibe una notificación de final de secuencia, llame al método [**CRendererPosPassThru:: EOS**](crendererpospassthru-eos.md) .
+-   Para cada ejemplo que recibe el filtro, llame [**al método CRendererPosPassThru::RegisterMediaTime.**](crendererpospassthru-registermediatime.md)
+-   Cuando se detenga el filtro o reciba una llamada **a EndFlush,** llame al método [**CRendererPosPassThru::ResetMediaTime.**](crendererpospassthru-resetmediatime.md)
+-   Cuando el filtro recibe una notificación de fin de flujo, llame al método [**CRendererPosPassThru::EOS.**](crendererpospassthru-eos.md)
 
-Para obtener un ejemplo de cómo usar esta clase, consulte el código fuente de [**CBaseRenderer**](cbaserenderer.md) .
+Para obtener un ejemplo de cómo usar esta clase, consulte el código fuente [**de CBaseRenderer.**](cbaserenderer.md)
 
 
 
 | Métodos públicos                                                            | Descripción                                                         |
 |---------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [**CRendererPosPassThru**](crendererpospassthru-crendererpospassthru.md) | Método de constructor.                                                 |
-| [**GetMediaTime**](crendererpospassthru-getmediatime.md)                 | Recupera las marcas de tiempo en el ejemplo actual.                    |
-| [**RegisterMediaTime**](crendererpospassthru-registermediatime.md)       | Almacena en memoria caché las marcas de tiempo del ejemplo actual.                     |
-| [**ResetMediaTime**](crendererpospassthru-resetmediatime.md)             | Restablece el valor cero de las marcas de tiempo almacenadas en caché.                              |
-| [**OCASIONA**](crendererpospassthru-eos.md)                                   | Actualiza las marcas de tiempo almacenadas en caché después de una notificación de final de secuencia. |
+| [**CRendererPosPassThru**](crendererpospassthru-crendererpospassthru.md) | Método constructor.                                                 |
+| [**GetMediaTime**](crendererpospassthru-getmediatime.md)                 | Recupera las marcas de tiempo del ejemplo actual.                    |
+| [**RegisterMediaTime**](crendererpospassthru-registermediatime.md)       | Almacena en caché las marcas de tiempo del ejemplo actual.                     |
+| [**ResetMediaTime**](crendererpospassthru-resetmediatime.md)             | Restablece las marcas de tiempo almacenadas en caché en cero.                              |
+| [**Eos**](crendererpospassthru-eos.md)                                   | Actualiza las marcas de tiempo almacenadas en caché después de una notificación de fin de flujo. |
 
 
 
@@ -59,8 +59,8 @@ Para obtener un ejemplo de cómo usar esta clase, consulte el código fuente de 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
