@@ -7,12 +7,12 @@ keywords:
 - Solicitud de comentarios, enrutamiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 307299af9b4819d97ce6781a37ac4df0186a6378
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0cb72d1b70a410d720c4b7f43a303fb25247c6118b4af16a49c206b7cd46e829
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027255"
 ---
 # <a name="routing-request-for-comments"></a>Solicitud de enrutamiento de comentarios
 

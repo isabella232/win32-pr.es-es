@@ -1,11 +1,11 @@
 ---
-title: ACS-allocable-RSVP-atributo de ancho de banda
+title: Atributo ACS-Allocable-RSVP-Bandwidth
 description: Ancho de banda máximo que se puede reservar.
 ms.assetid: 18d9a5c5-e44c-49e9-a8f0-9386a7b1ff97
 ms.tgt_platform: multiple
 keywords:
-- ACS-allocable-RSVP-atributo de ancho de banda esquema de AD
-- aCSAllocableRSVPBandwidth esquema de AD de atributos
+- Esquema de AD del atributo ACS-Allocable-RSVP-Bandwidth
+- aCSAllocableRSVPBandwidth attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c6bfe98d30fb8ef959f2e75d078b3a04b325b6a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4b68a373e13808205f56906d7933a230c086faf9b0333582c52848feddc9f08b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023013"
 ---
-# <a name="acs-allocable-rsvp-bandwidth-attribute"></a>ACS-allocable-RSVP-atributo de ancho de banda
+# <a name="acs-allocable-rsvp-bandwidth-attribute"></a>Atributo ACS-Allocable-RSVP-Bandwidth
 
 Ancho de banda máximo que se puede reservar.
 
@@ -29,14 +29,14 @@ Ancho de banda máximo que se puede reservar.
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-allocable-RSVP-ancho de banda         |
-| Nombre para mostrar de LDAP | aCSAllocableRSVPBandwidth            |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-Allocable-RSVP-Bandwidth         |
+| Ldap-Display-Name | aCSAllocableRSVPBandwidth            |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.766               |
-| System-ID-GUID    | 7f561283-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 7f561283-5301-11d1-a9c5-0000f80367c1 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ Ancho de banda máximo que se puede reservar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Ancho de banda máximo que se puede reservar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Ancho de banda máximo que se puede reservar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Ancho de banda máximo que se puede reservar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Ancho de banda máximo que se puede reservar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Ancho de banda máximo que se puede reservar.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                         |
+| Id. de vínculo                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
-| System-Only            | False                                                                                                      |
-| Tiene un único valor       | True                                                                                                       |
-| Está indexado             | False                                                                                                      |
-| En el catálogo global      | False                                                                                                      |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                               |
+| System-Only            | Falso                                                                                                      |
+| Es de un solo valor       | Verdadero                                                                                                       |
+| Está indexado             | Falso                                                                                                      |
+| En el catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Clases usadas en        | [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

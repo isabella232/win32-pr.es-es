@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETAUTOURLDETECT (RichEdit. h)
-description: Indica si la detección de dirección URL automática está activada en el control Rich Edit.
+title: EM_GETAUTOURLDETECT mensaje (Richedit.h)
+description: Indica si la detección automática de direcciones URL está activada en el control de edición enriquecido.
 ms.assetid: f723f15c-bf8f-41ab-aef0-bd8f2c0b9e5d
 keywords:
-- EM_GETAUTOURLDETECT controles de mensajes de Windows
+- EM_GETAUTOURLDETECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e68e4f2991c5f8780cb587594289674e07ec992
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d60fc8efdc6e554e379a9381239920cf70ef07ffca22240e62cfc6892ca2e636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019954"
 ---
-# <a name="em_getautourldetect-message"></a>\_Mensaje GETAUTOURLDETECT em
+# <a name="em_getautourldetect-message"></a>Mensaje \_ EM GETAUTOURLDETECT
 
-Indica si la detección de dirección URL automática está activada en el control Rich Edit.
+Indica si la detección automática de direcciones URL está activada en el control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,41 +32,41 @@ Indica si la detección de dirección URL automática está activada en el contr
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la detección de dirección URL automática está activa, el valor devuelto es 1.
+Si la detección automática de direcciones URL está activa, el valor devuelto es 1.
 
-Si la detección de dirección URL automática está inactiva, el valor devuelto es 0.
+Si la detección automática de direcciones URL está inactiva, el valor devuelto es 0.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la detección de dirección URL automática está activada, Microsoft Rich Edit comprueba constantemente el texto escrito para obtener una dirección URL válida. Rich Edit reconoce las direcciones URL que comienzan con estos prefijos:
+Cuando la detección automática de direcciones URL está activa, Microsoft Rich Edit comprueba constantemente el texto escrito para una dirección URL válida. Rich Edit reconoce las direcciones URL que comienzan con estos prefijos:
 
 -   http:
 -   file:
 -   mailto:
--   FTP
--   https
--   :/
--   NNTP
--   prospero:
--   habitualmente
--   Reportaje
--   WAIS
--   Outlook
+-   Ftp:
+-   https:
+-   Gopher:
+-   Nntp:
+-   Prospero:
+-   Telnet:
+-   Noticias:
+-   Wais:
+-   Outlook:
 
-La edición enriquecida también reconoce los nombres de ruta de acceso estándar que comienzan por \\ \\ . Cuando Rich Edit localiza una dirección URL, cambia el color del texto de la dirección URL, subraya el texto y notifica al cliente mediante el [ \_ vínculo en](en-link.md).
+Rich Edit también reconoce los nombres de ruta de acceso estándar que comienzan por \\ \\ . Cuando Rich Edit busca una dirección URL, cambia el color del texto de la dirección URL, subraya el texto y notifica al cliente mediante [EN \_ LINK](en-link.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,9 +74,9 @@ La edición enriquecida también reconoce los nombres de ruta de acceso estánda
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ La edición enriquecida también reconoce los nombres de ruta de acceso estánda
 
 <dl> <dt>
 
-[EN \_ vínculo](en-link.md)
+[VÍNCULO \_ DE EN](en-link.md)
 </dt> </dl>
 
  

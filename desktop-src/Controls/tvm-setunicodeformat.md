@@ -3,7 +3,7 @@ title: TVM_SETUNICODEFORMAT mensaje (Commctrl.h)
 description: 'TVM_SETUNICODEFORMAT mensaje: establece la marca de formato de caracteres Unicode para el control.'
 ms.assetid: e4b58ae5-6217-4a2e-80e5-3ba9e578859a
 keywords:
-- TVM_SETUNICODEFORMAT de mensajes controles de Windows
+- TVM_SETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b49fcdd22cff0ac91885ef8f54d49922f9c677e9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: acce73e3b8ab239702969a1565cfacc4db335e7bf7fcdbb8fd39010247b14a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018673"
 ---
 # <a name="tvm_setunicodeformat-message"></a>Mensaje \_ SETUNICODEFORMAT de TVM
 
@@ -51,15 +51,15 @@ Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodefor
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

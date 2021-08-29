@@ -1,5 +1,5 @@
 ---
-title: Constantes de WINBIO_BIR_VERSION (Winbio \_ Types. h)
+title: WINBIO_BIR_VERSION constantes (Winbio \_ types.h)
 description: Especifique la versión.
 ms.assetid: FBB8AE77-0FA2-46DE-B2F4-55D17CB6E7AB
 topic_type:
@@ -13,23 +13,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da1e16c95e2b7dec5448c609a3d3689cc5f1c19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 611be9539d5eac520a3b179d9b9de51a8b41a1ab67e39c29adb1933b38bb049b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480315"
 ---
-# <a name="winbio_bir_version-constants"></a>Constantes de versión de WINBIO \_ Bir \_
+# <a name="winbio_bir_version-constants"></a>Constantes DE \_ VERSIÓN DE WINBIO BIR \_
 
-Los miembros **HeaderVersion** y **PatronHeaderVersion** de la estructura de [**\_ \_ encabezado WINBIO Bir**](winbio-bir-header.md) usan las marcas siguientes para especificar la versión.
+Los miembros **HeaderVersion** **yHeaderVersion** de la estructura [**WINBIO \_ BIR \_ HEADER**](winbio-bir-header.md) usan las marcas siguientes para especificar la versión.
 
 
 
 | Constante o valor                                                                                                                                                                                                                                                         | Descripción                                     |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------|
-| <span id="WINBIO_CBEFF_HEADER_VERSION"></span><span id="winbio_cbeff_header_version"></span><dl> <dt>**WINBIO \_ \_ \_ Versión de encabezado CBEFF**</dt> <dt>0x11</dt> </dl>    | Especifica la versión del encabezado.<br/>        |
-| <span id="WINBIO_PATRON_HEADER_VERSION"></span><span id="winbio_patron_header_version"></span><dl> <dt>**WINBIO \_ \_ \_ Versión de encabezado**</dt> de <dt>0x11</dt> </dl> | Especifica la versión del encabezado de su.<br/> |
+| <span id="WINBIO_CBEFF_HEADER_VERSION"></span><span id="winbio_cbeff_header_version"></span><dl> <dt>**WINBIO \_ VERSIÓN DEL \_ \_ ENCABEZADO CBEFF**</dt> <dt>0x11</dt> </dl>    | Especifica la versión del encabezado.<br/>        |
+| <span id="WINBIO_PATRON_HEADER_VERSION"></span><span id="winbio_patron_header_version"></span><dl> <dt>**WINBIO \_ VERSIÓN \_ DEL \_ ENCABEZADO DE**</dt> <dt>0X11</dt> </dl> | Especifica la versión del encabezado .<br/> |
 
 
 
@@ -39,9 +39,9 @@ Los miembros **HeaderVersion** y **PatronHeaderVersion** de la estructura de [**
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Los miembros **HeaderVersion** y **PatronHeaderVersion** de la estructura de [**
 [Constantes de aplicación cliente](client-application-constants.md)
 </dt> <dt>
 
-[**WINBIO \_ \_ encabezado Bir**](winbio-bir-header.md)
+[**ENCABEZADO WINBIO \_ BIR \_**](winbio-bir-header.md)
 </dt> </dl>
 
  

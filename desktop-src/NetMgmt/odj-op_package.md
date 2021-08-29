@@ -1,20 +1,20 @@
 ---
 title: OP_PACKAGE
-description: Definición de OP_PACKAGE IDL
+description: OP_PACKAGE definición de IDL
 ms.assetid: 065266a6-6db5-4113-bd2b-22ac6063236d
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 6220b3815ad6ff360af7255a91fc34d71125f38c
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 81fdc237b731489f7ac501a4e053e62d744b0fdef77c5b630cd478dede5aeda5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "105720188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119911495"
 ---
-# <a name="op_package-structure"></a>Estructura de OP_PACKAGE
+# <a name="op_package-structure"></a>OP_PACKAGE estructura
 
-Contiene una estructura que contiene un OP_PACKAGE_COLLECTION serializado.
+Contiene una estructura que contiene una estructura OP_PACKAGE_COLLECTION.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,28 +33,28 @@ typedef struct _OP_PACKAGE
 
 ### <a name="encryptiontype"></a>EncryptionType
 
-Reservado para uso futuro y debe establecerse en GUID_NULL.
+Reservado para uso futuro y DEBE establecerse en GUID_NULL.
 
 ### <a name="encryptioncontext"></a>EncryptionContext
 
-Reservado para uso futuro y debe establecerse en ceros.
+Reservado para uso futuro y DEBE establecerse en todos los ceros.
 
 ### <a name="wrappedpartcollection"></a>WrappedPartCollection
 
-OP_BLOB estructura que contiene una estructura de OP_PACKAGE_COLLECTION serializada.
+Estructura OP_BLOB que contiene una estructura OP_PACKAGE_COLLECTION serializada.
 
 ### <a name="cbdecryptedpartcollection"></a>cbDecryptedPartCollection
 
-Reservado para uso futuro y debe establecerse en cero.
+Reservado para uso futuro y DEBE establecerse en cero.
 
 ### <a name="extension"></a>Extensión
 
-Reservado para uso futuro y debe establecerse en ceros.
+Reservado para uso futuro y DEBE establecerse en todos los ceros.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 
-[**BLOB de operaciones \_**](odj-op_blob.md)
+[**BLOB DE \_ OPERACIÓN**](odj-op_blob.md)
 
-[**\_colección de paquetes de OP \_**](odj-op_package_collection.md)
+[**COLECCIÓN DE \_ PAQUETES \_ DE OPERACIÓN**](odj-op_package_collection.md)

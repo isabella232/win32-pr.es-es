@@ -1,7 +1,7 @@
 ---
-description: 'El método CompleteConnect completa una conexión a un PIN de salida. Este método invalida el método CBasePin:: CompleteConnect.'
+description: El método CompleteConnect completa una conexión a un pin de salida. Este método invalida el método CBasePin::CompleteConnect.
 ms.assetid: 32d95815-e018-4724-8cf3-8cd093ede517
-title: Método CRendererInputPin. CompleteConnect (Renbase. h)
+title: Método CRendererInputPin.CompleteConnect (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2e868693308d40fb786f201a9d7f056dd88326ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d8dbdc67bfec4e2f649992520d5dd79e4a396f76e5c8d17df81da1bead07cd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908455"
 ---
-# <a name="crendererinputpincompleteconnect-method"></a>CRendererInputPin. CompleteConnect, método
+# <a name="crendererinputpincompleteconnect-method"></a>Método CRendererInputPin.CompleteConnect
 
-El `CompleteConnect` método completa una conexión a un PIN de salida. Este método invalida el método [**CBasePin:: CompleteConnect**](cbasepin-completeconnect.md) .
+El `CompleteConnect` método completa una conexión a un pin de salida. Este método invalida el [**método CBasePin::CompleteConnect.**](cbasepin-completeconnect.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT CompleteConnect(
 *pReceivePin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN de salida
+Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin de salida
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CRendererInputPin**](crendererinputpin.md)
+[**CRendererInputPin (clase)**](crendererinputpin.md)
 </dt> </dl>
 
  

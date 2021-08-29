@@ -1,21 +1,21 @@
 ---
 title: Uso de System-Generated valores
-description: Los valores generados por el sistema se generan mediante la fase IA (basada en la semántica de entrada proporcionada por el usuario) para permitir ciertas eficiencias en las operaciones del sombreador.
+description: La fase IA genera valores generados por el sistema (en función de la semántica de entrada proporcionada por el usuario) para permitir ciertas eficiencias en las operaciones del sombreador.
 ms.assetid: eed1e377-4b0e-4958-b6d4-945b2a952ad8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccdc723d335fd78277051099ec05b43ed954174d
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 1bbf190ed0c2d5cb4ce38cb3582d64d6d28daddac850e3ae3331254b86714724
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046663"
 ---
 # <a name="using-system-generated-values"></a>Uso de System-Generated valores
 
-Los valores generados por el sistema se generan mediante la fase IA (basada en la semántica de entrada proporcionada por el usuario) para permitir ciertas [eficiencias](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics)en las operaciones del sombreador.
+La fase IA genera valores generados por el sistema (en función de la semántica de entrada proporcionada por el usuario) para permitir [ciertas eficiencias](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-semantics)en las operaciones del sombreador.
 
-Al adjuntar datos, como un identificador de instancia (visible para VS), un identificador de vértice (visible para VS) o un identificador primitivo (visible para GS/PS), una fase posterior del sombreador puede buscar estos valores del sistema para optimizar el procesamiento en esa fase. Por ejemplo, la fase de VS puede buscar el identificador de instancia para obtener datos adicionales por vértice para el sombreador o para realizar otras operaciones; Las fases GS y PS pueden usar el identificador primitivo para obtener datos por primitivo de la misma manera.
+Al adjuntar datos, como un identificador de instancia (visible para VS), un identificador de vértice (visible para VS) o un identificador primitivo (visible para GS/PS), una fase posterior del sombreador puede buscar estos valores del sistema para optimizar el procesamiento en esa fase. Por ejemplo, la fase vs puede buscar el identificador de instancia para obtener datos adicionales por vértice para el sombreador o para realizar otras operaciones; Las fases GS y PS pueden usar el identificador primitivo para obtener datos por primitiva de la misma manera.
 
 -   [VertexID](#vertexid)
 -   [PrimitiveID](#primitiveid)
@@ -25,9 +25,9 @@ Al adjuntar datos, como un identificador de instancia (visible para VS), un iden
 
 ## <a name="vertexid"></a>VertexID
 
-Cada fase del sombreador usa un identificador de vértice para identificar cada vértice. Es un entero de 32 bits sin signo cuyo valor predeterminado es 0. Se asigna a un vértice cuando la fase IA procesa la primitiva. Adjunte la semántica vertex-id a la declaración de entrada del sombreador para informar a la fase IA de que genere un identificador por vértice.
+Cada fase del sombreador usa un identificador de vértice para identificar cada vértice. Es un entero de 32 bits sin signo cuyo valor predeterminado es 0. Se asigna a un vértice cuando la fase IA procesa la primitiva. Adjunte la semántica de identificador de vértice a la declaración de entrada del sombreador para informar a la fase IA de que genere un identificador por vértice.
 
-El IA agregará un identificador de vértice a cada vértice para que lo usen las fases del sombreador. Para cada llamada a draw, el identificador de vértice se incrementa en 1. En las llamadas a draw indexadas, el recuento se restablece al valor inicial. Para [**ID3D11DeviceContext::D rawIndexed**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexed) e [**ID3D11DeviceContext::D rawIndexedInstanced,**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced)el identificador de vértice representa el valor del índice. Si el identificador de vértice se desborda (supera 2- 1), se ajusta a 0.
+El IA agregará un identificador de vértice a cada vértice para que lo usen las fases del sombreador. Para cada llamada a draw, el identificador de vértice se incrementa en 1. En las llamadas a draw indexadas, el recuento vuelve a restablecerse al valor inicial. Para [**ID3D11DeviceContext::D rawIndexed**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexed) e [**ID3D11DeviceContext::D rawIndexedInstanced,**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-drawindexedinstanced)el identificador de vértice representa el valor del índice. Si el identificador de vértice se desborda (es superior a 2- 1), se ajusta a 0.
 
 Para todos los tipos primitivos, los vértices tienen un identificador de vértice asociado a ellos (independientemente de la adyacencia).
 
@@ -53,13 +53,13 @@ En la ilustración siguiente se muestra cómo se asocian los valores del sistema
 
 ![ilustración de valores del sistema para una franja de triángulo de instancia](images/d3d10-ia-example.png)
 
-Estas tablas muestran los valores del sistema generados para ambas instancias de la misma franja de triángulos. La primera instancia (instancia U) se muestra en azul y la segunda instancia (instancia V) en verde. Las líneas sólidas conectan los vértices de los primitivos, las líneas discontinuas conectan los vértices adyacentes.
+Estas tablas muestran los valores del sistema generados para ambas instancias de la misma franja de triángulo. La primera instancia (instancia U) se muestra en azul, la segunda instancia (instancia V) se muestra en verde. Las líneas sólidas conectan los vértices de las primitivas, las líneas discontinuas conectan los vértices adyacentes.
 
 En las tablas siguientes se muestran los valores generados por el sistema para la instancia U.
 
 
 
-| Datos de vértices    | C,U | D,U | E,U | F,U | G,U | H,U | I,U | J,U | K,U | L,U |
+| Datos de vértice    | C,U | D,U | E,U | F,U | G,U | H,U | I,U | J,U | K,U | L,U |
 |----------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | **VertexID**   | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   |
 | **InstanceID** | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   | 0   |
@@ -83,7 +83,7 @@ En las tablas siguientes se muestran los valores generados por el sistema para l
 
 
 
-| Datos de vértices    | C,V | D,V | E,V | F,V | G,V | H,V | I,V | J,V | K,V | L,V |
+| Datos de vértice    | C,V | D,V | E,V | F,V | G,V | H,V | I,V | J,V | K,V | L,V |
 |----------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | **VertexID**   | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   |
 | **InstanceID** | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   | 1   |
@@ -94,7 +94,7 @@ En las tablas siguientes se muestran los valores generados por el sistema para l
 
 
 
-|                 |Valor     | Valor    |  Valor   |
+|                 |Valor     | Valor    |  Value   |
 |-----------------|-----|-----|-----|
 | **PrimitiveID** | 0   | 1   | 2   |
 | **InstanceID**  | 1   | 1   | 1   |

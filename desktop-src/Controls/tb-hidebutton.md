@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_HIDEBUTTON (commctrl. h)
+title: TB_HIDEBUTTON mensaje (Commctrl.h)
 description: Oculta o muestra el botón especificado en una barra de herramientas.
 ms.assetid: 57941a40-279a-426e-baf9-115429c62839
 keywords:
-- TB_HIDEBUTTON controles de mensajes de Windows
+- TB_HIDEBUTTON controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e198a48ae65f13be699b76a20c9f423cdb0da197
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08c5df2f402f1b2de476a3d4748a69a4bb954ff2122855299f49ea1ddba37f7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078279"
 ---
-# <a name="tb_hidebutton-message"></a>\_Mensaje HIDEBUTTON TB
+# <a name="tb_hidebutton-message"></a>Mensaje \_ HIDEBUTTON de TB
 
 Oculta o muestra el botón especificado en una barra de herramientas.
 
@@ -32,32 +32,32 @@ Oculta o muestra el botón especificado en una barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Identificador de comando del botón que se va a ocultar o mostrar.
+Identificador de comando del botón que se ocultará o mostrará.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es un **booleano** que indica si se va a ocultar o mostrar el botón especificado. Si es **true**, el botón está oculto. Si es **false**, se muestra el botón.
+[**LOWORD es**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) un **BOOL** que indica si se debe ocultar o mostrar el botón especificado. Si **es TRUE,** el botón está oculto. Si **es FALSE,** se muestra el botón .
 
-El valor de [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
+HIWORD [**debe**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -7,12 +7,12 @@ MSHAttr:
 title: IPType (v4)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f655d2f8592613fdb4953cbda32841dc9beaec0d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 09ff4fd6c0290c29aa8737efea5d94da2d2025cb
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479981"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987108"
 ---
 # <a name="span-idwwan_profile_v4element_1_iptypespanmodemdmconfigprofileiptype-v4"></a><span id="WWAN_profile_v4.element_1_IPType"></span>ModemDMConfigProfile \/ ... \/ IPType (v4)
 
@@ -20,7 +20,7 @@ Especifica el tipo de IP que se usará en esta conexión de datos.
 
 Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los siguientes valores.
 
-| Valor   | Significado                                       |
+| Value   | Significado                                       |
 |---------|-----------------------------------------------|
 | Valor predeterminado | El tipo de IP se debe seleccionar por capas inferiores.     |
 | IPv4    | Uso de IPv4                                      |
@@ -40,7 +40,7 @@ Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<IPType\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <IPType>
@@ -73,7 +73,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

@@ -1,17 +1,17 @@
 ---
-description: 'Más información sobre: impresión de estructuras de API de paquetes de documentos'
+description: 'Más información sobre: Imprimir estructuras de API de paquetes de documentos'
 ms.assetid: B9E4F9DB-C92E-49B9-999C-AB0AC5841F3B
-title: Estructuras de API del paquete de documentos de impresión
+title: Imprimir estructuras de API de paquetes de documentos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7604187749087765c7e190be1a4711cb9be03c09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f27cb6774b84723f399bf59726819ed05420626576ebfd8973b748ab7b631c32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118469622"
 ---
-# <a name="print-document-package-api-structures"></a>Estructuras de API del paquete de documentos de impresión
+# <a name="print-document-package-api-structures"></a>Imprimir estructuras de API de paquetes de documentos
 
 Esta sección contiene información sobre las estructuras que definen características específicas del paquete de documentos de impresión. Esta es una lista de las estructuras de esta interfaz:
 

@@ -1,21 +1,21 @@
 ---
-description: Esta tabla contiene los archivos de icono. Cada icono de la tabla se copia en un archivo como parte del anuncio del producto que se va a usar para los accesos directos anunciados y los servidores OLE. Vea limitaciones de OLE en secuencias.
+description: Esta tabla contiene los archivos de icono. Cada icono de la tabla se copia en un archivo como parte del anuncio del producto que se usará para los accesos directos anunciados y los servidores OLE. Vea Limitaciones de OLE Secuencias.
 ms.assetid: a59c552a-21c0-4dd4-9146-88a5f9a22962
 title: Tabla de iconos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e8e8e38575dc6f6e6bda10b2c1047f3940f7559
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c00205ede9accf4ae6394a6f00bc6ae6ad54a19c5540159f57498ac5066984ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894195"
 ---
 # <a name="icon-table"></a>Tabla de iconos
 
-Esta tabla contiene los archivos de icono. Cada icono de la tabla se copia en un archivo como parte del anuncio del producto que se va a usar para los accesos directos anunciados y los servidores OLE. Vea [limitaciones de OLE en secuencias](ole-limitations-on-streams.md).
+Esta tabla contiene los archivos de icono. Cada icono de la tabla se copia en un archivo como parte del anuncio del producto que se usará para los accesos directos anunciados y los servidores OLE. Vea [Limitaciones de OLE Secuencias](ole-limitations-on-streams.md).
 
-La tabla de iconos tiene las columnas siguientes.
+La tabla Icon tiene las columnas siguientes.
 
 
 
@@ -32,27 +32,27 @@ La tabla de iconos tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="Name"></span><span id="name"></span><span id="NAME"></span>Name
+<span id="Name"></span><span id="name"></span><span id="NAME"></span>Nombre
 </dt> <dd>
 
 Nombre del archivo de icono.
 
 </dd> <dt>
 
-<span id="Data"></span><span id="data"></span><span id="DATA"></span>Data
+<span id="Data"></span><span id="data"></span><span id="DATA"></span>Datos
 </dt> <dd>
 
-Los datos del icono binario en formato PE (. dll o. exe) o de icono (. ico).
+Los datos del icono binario en formato PE (.dll o .exe) o icono (.ico).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se hace referencia a esta tabla cuando se ejecuta la [acción PublishProduct](publishproduct-action.md) .
+Se hace referencia a esta tabla cuando se ejecuta la [acción PublishProduct.](publishproduct-action.md)
 
-Los iconos para los accesos directos, las extensiones de nombre de archivo y los CLSID deben almacenarse en archivos que sean independientes del propio archivo de destino. Esto es necesario porque el instalador solo debe copiar los archivos de iconos pequeños en el equipo del usuario al anunciar el recurso. Por lo tanto, un desarrollador de un paquete de instalación debe crear archivos independientes que contengan solo los iconos. Estos archivos de icono se almacenan después como datos binarios en la tabla de iconos.
+Los iconos de accesos directos, extensiones de nombre de archivo y CLID deben almacenarse en archivos independientes del propio archivo de destino. Esto es necesario porque el instalador debe copiar solo los archivos de icono pequeños en la máquina del usuario al anunciar el recurso. Por lo tanto, un desarrollador de un paquete de instalación debe crear archivos independientes que contengan solo los iconos. Estos archivos de icono se almacenan como datos binarios en la tabla Icono.
 
-Los archivos de icono que están asociados estrictamente con extensiones de nombre de archivo o CLSID pueden tener cualquier extensión, como. ico. Sin embargo, los archivos de icono que están asociados con accesos directos deben tener el formato binario EXE y deben tener un nombre que coincida con la extensión del destino. El acceso directo no funcionará si no se sigue esta regla. Por ejemplo, si un acceso directo va a apuntar a un recurso que tiene el archivo de clave Red.bar, el archivo de icono también debe tener la extensión. bar. Puede haber varios iconos en el mismo archivo de icono, siempre que todos los archivos de destino tengan la misma extensión.
+Los archivos de icono que están asociados estrictamente a extensiones de nombre de archivo o CLID pueden tener cualquier extensión, como .ico. Sin embargo, los archivos de icono asociados a los accesos directos deben estar en el formato binario EXE y deben tener un nombre para que su extensión coincida con la extensión del destino. El acceso directo no funcionará si no se sigue esta regla. Por ejemplo, si un acceso directo apunta a un recurso que tiene el archivo de clave Red.bar, el archivo de icono también debe tener la extensión .bar. Se pueden agregar varios iconos al mismo archivo de icono, siempre y cuando todos los archivos de destino tengan la misma extensión.
 
 ## <a name="validation"></a>Validación
 

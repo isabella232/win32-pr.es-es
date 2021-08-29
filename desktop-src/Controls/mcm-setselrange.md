@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCM_SETSELRANGE (commctrl. h)
+title: MCM_SETSELRANGE mensaje (Commctrl.h)
 description: Establece la selección de un control de calendario mensual en un intervalo de fechas determinado. Puede enviar este mensaje explícitamente o mediante la macro MonthCal \_ SetSelRange.
 ms.assetid: 750b0c83-6baa-4caa-a738-feae8751a70e
 keywords:
-- MCM_SETSELRANGE controles de mensajes de Windows
+- MCM_SETSELRANGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad28966ab67a5e7c0d27dd8fc9c367ec30e4cd7b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cdf6708aa382abfa92562aa55943c06180d0231cff568b74de380416e48731a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018983"
 ---
-# <a name="mcm_setselrange-message"></a>Mensaje de MCM \_ SETSELRANGE
+# <a name="mcm_setselrange-message"></a>Mensaje \_ SETELRANGE de MCM
 
-Establece la selección de un control de calendario mensual en un intervalo de fechas determinado. Puede enviar este mensaje explícitamente o mediante la macro [**MonthCal \_ SetSelRange**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setselrange) .
+Establece la selección de un control de calendario mensual en un intervalo de fechas determinado. Puede enviar este mensaje explícitamente o mediante la macro [**MonthCal \_ SetSelRange.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setselrange)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,13 +35,13 @@ Establece la selección de un control de calendario mensual en un intervalo de f
 *lParam* 
 </dt> <dd>
 
-Puntero a una matriz de dos elementos de estructuras [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que contienen información de fecha que representa los límites de la selección. La primera fecha seleccionada se debe especificar en *lpSysTimeArray* \[ 0 \] y la última fecha seleccionada debe especificarse en *lpSysTimeArray* \[ 1 \] .
+Puntero a una matriz de dos elementos de [**estructuras SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que contienen información de fecha que representa los límites de selección. La primera fecha seleccionada debe especificarse en *lpSysTimeArray* 0 y la última fecha seleccionada debe especificarse en \[ \] *lpSysTimeArray* \[ \] 1.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario. Se producirá un error en este mensaje si se aplica a un control de calendario mensual que no use el estilo [**MCS \_ MultiSelect**](month-calendar-control-styles.md) .
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario. Este mensaje producirá un error si se aplica a un control de calendario mensual que no usa el estilo [**\_ MULTISELECT de MCS.**](month-calendar-control-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Devuelve un valor distinto de cero si es correcto o cero de lo contrario. Se pro
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un valor distinto de cero si es correcto o cero de lo contrario. Se pro
 
 <dl> <dt>
 
-[Horas en el control de calendario mensual](month-calendar-controls.md)
+[Horas del control Calendario mensual](month-calendar-controls.md)
 </dt> </dl>
 
  

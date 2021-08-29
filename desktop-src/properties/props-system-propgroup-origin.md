@@ -4,12 +4,12 @@ ms.assetid: 4c1e48c1-dbef-4da1-affb-f902b58128ca
 title: System.PropGroup.Origin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e01cc0a7cf801a112736da91d2053dee9209cdb4
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: bfaa3052989a66b5dd12e095e5e72ce09b90fb7c9741dbb70cfe35191412cf09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465686"
 ---
 # <a name="systempropgrouporigin"></a>System.PropGroup.Origin
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

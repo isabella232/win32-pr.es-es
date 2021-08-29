@@ -1,7 +1,7 @@
 ---
 description: La función SetForm establece la información del formulario para la impresora especificada.
 ms.assetid: 05d5d495-952c-4a1d-8694-1004d0c2bcf6
-title: Función SetForm (winspool. h)
+title: Función SetForm (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 93848afa0f36032bb972f8f4a7c6c3d5eb8c42ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b227ee1ca001e23530432eefe3c1ef779090e95ae181c1cbfb5c169810367da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118470148"
 ---
-# <a name="setform-function"></a>SetForm función)
+# <a name="setform-function"></a>Función SetForm
 
-La función **SetForm** establece la información del formulario para la impresora especificada.
+La **función SetForm** establece la información del formulario para la impresora especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,62 +44,62 @@ BOOL SetForm(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora para la que se establece la información del formulario. Use la función [**OpenPrinter**](openprinter.md) o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora para la que se establece la información del formulario. Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*pFormName* \[ de\]
+*pFormName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del formulario para el que se establece la información del formulario.
+Puntero a una cadena terminada en NULL que especifica el nombre del formulario para el que se establece la información del formulario.
 
 </dd> <dt>
 
-*Nivel* \[ de de\]
+*Nivel* \[ En\]
 </dt> <dd>
 
-Versión de la estructura a la que apunta *pForm* . Este valor debe ser 1 o 2.
+Versión de la estructura a la que *apunta pForm.* Este valor debe ser 1 o 2.
 
 </dd> <dt>
 
-*pForm* \[ de\]
+*pForm* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**formulario de \_ información \_ 1**](form-info-1.md) o de [**formulario de \_ información \_ 2**](form-info-2.md) .
+Puntero a una [**estructura FORM \_ INFO \_ 1**](form-info-1.md) [**o FORM INFO \_ \_ 2.**](form-info-2.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es un valor distinto de cero.
+Si la función se realiza correctamente, el valor devuelto es un valor distinto de cero.
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Se puede llamar a **SetForm** varias veces para un [**formulario existente \_ info \_ 2**](form-info-2.md), cada llamada agrega pares adicionales de valores **pDisplayName** y **wLangId** . Todas las versiones de idioma del formulario obtendrán los valores de **tamaño** y **ImageableArea** del **formulario de \_ información \_ 2** en la llamada más reciente a **SetForm**.
+**Se puede llamar** a SetForm varias veces para una instancia de [**FORM INFO \_ \_ 2**](form-info-2.md)existente, cada llamada agrega pares adicionales de **valores pDisplayName** y **wLangId.** Todas las versiones de idioma del formulario obtienen los valores **Size** e **ImageableArea** de **FORM INFO \_ \_ 2** en la llamada más reciente a **SetForm**.
 
-Si el autor de la llamada es remoto y el *nivel* es 2, el valor **StringType** de la [**forma \_ info \_ 2**](form-info-2.md) no puede ser String \_ MUIDLL.
+Si el autor de la llamada es remoto y *el* nivel es 2, el valor **StringType** de [**FORM INFO \_ \_ 2**](form-info-2.md) no puede ser STRING \_ MUIDLL.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **SetFormW** (Unicode) y **SetFormA** (ANSI)<br/>                                                 |
 
 
@@ -120,10 +120,10 @@ Si el autor de la llamada es remoto y el *nivel* es 2, el valor **StringType** d
 [**OpenPrinter**](openprinter.md)
 </dt> <dt>
 
-[**Información de formulario \_ \_ 1**](form-info-1.md)
+[**FORM \_ INFO \_ 1**](form-info-1.md)
 </dt> <dt>
 
-[**Información de formulario \_ \_ 2**](form-info-2.md)
+[**FORM \_ INFO \_ 2**](form-info-2.md)
 </dt> </dl>
 
  

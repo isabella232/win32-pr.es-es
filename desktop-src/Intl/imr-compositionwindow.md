@@ -1,19 +1,19 @@
 ---
-description: Notifica a una aplicación cuando un IME seleccionado necesita información sobre la ventana de composición. La aplicación recibe este comando a través del \_ mensaje de solicitud del IME \_ de WM con los parámetros establecidos como se muestra a continuación.
+description: Notifica a una aplicación cuando un IME seleccionado necesita información sobre la ventana de composición. La aplicación recibe este comando a través del mensaje WM \_ IME \_ REQUEST con parámetros establecidos como se muestra a continuación.
 ms.assetid: 08fd7119-d225-4a78-b2cd-8b58887c9139
-title: Código de notificación de IMR_COMPOSITIONWINDOW (IMM. h)
+title: IMR_COMPOSITIONWINDOW de notificación (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6af0481ccebc59968fe85a489c856388a04dbece
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fc5f1f45652a2f58386a50284e3bf2cfec182c6f4ad89641dcc27a63cf12b78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810058"
 ---
 # <a name="imr_compositionwindow-notification-code"></a>Código de notificación de IMR \_ COMPOSITIONWINDOW
 
-Notifica a una aplicación cuando un IME seleccionado necesita información sobre la ventana de composición. La aplicación recibe este comando a través del mensaje de [**\_ \_ solicitud del IME de WM**](wm-ime-request.md) con los parámetros establecidos como se muestra a continuación.
+Notifica a una aplicación cuando un IME seleccionado necesita información sobre la ventana de composición. La aplicación recibe este comando a través del mensaje [**WM \_ IME \_ REQUEST**](wm-ime-request.md) con parámetros establecidos como se muestra a continuación.
 
 
 ```C++
@@ -26,27 +26,27 @@ LRESULT IMR_COMPOSITIONWINDOW
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Establezca en IMR \_ COMPOSITIONWINDOW.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntero a un búfer que contiene una estructura [**COMPOSITIONFORM**](/windows/win32/api/imm/ns-imm-compositionform) .
+Puntero a un búfer que contiene una [**estructura COMPOSITIONFORM.**](/windows/win32/api/imm/ns-imm-compositionform)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si la aplicación rellena la estructura [**COMPOSITIONFORM**](/windows/win32/api/imm/ns-imm-compositionform) . De lo contrario, el comando devuelve 0.
+Devuelve un valor distinto de cero si la aplicación rellena la [**estructura COMPOSITIONFORM.**](/windows/win32/api/imm/ns-imm-compositionform) De lo contrario, el comando devuelve 0.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El IME puede enviar este comando a una ventana que haya borrado la \_ marca SHOWUICOMPOSITIONWINDOW de ISC en el controlador de mensajes de [**\_ IME IME \_ SETCONTEXT**](wm-ime-setcontext.md) .
+El IME puede enviar este comando a una ventana que ha borrado la marca SHOWUICOMPOSITIONWINDOW de ISC en el controlador de mensajes SETCONTEXT de \_ [**WM \_ IME. \_**](wm-ime-setcontext.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ El IME puede enviar este comando a una ventana que haya borrado la \_ marca SHOW
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -67,16 +67,16 @@ El IME puede enviar este comando a una ventana que haya borrado la \_ marca SHOW
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos del administrador de métodos de entrada](input-method-manager-commands.md)
+[Comandos del Administrador de métodos de entrada](input-method-manager-commands.md)
 </dt> <dt>
 
 [**COMPOSITIONFORM**](/windows/win32/api/imm/ns-imm-compositionform)
 </dt> <dt>
 
-[**\_solicitud de IME de WM \_**](wm-ime-request.md)
+[**SOLICITUD \_ DE WM IME \_**](wm-ime-request.md)
 </dt> <dt>
 
-[**\_SETCONTEXT IME de WM \_**](wm-ime-setcontext.md)
+[**SETCONTEXT \_ de WM IME \_**](wm-ime-setcontext.md)
 </dt> </dl>
 
  

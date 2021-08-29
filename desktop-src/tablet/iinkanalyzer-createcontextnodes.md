@@ -1,7 +1,7 @@
 ---
 description: Crea un objeto IContextNodes.
 ms.assetid: d6d37595-307b-4cbc-9d48-ad10f8b272dd
-title: 'IInkAnalyzer:: CreateContextNodes (método) (IACom. h)'
+title: Método IInkAnalyzer::CreateContextNodes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 07bdfc9a32fd4aec8e716cdd3c788c211c1adaec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4663493e6847ac3904916c93220386c6db13f0ef27fc60b36e048852b6cf0b00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967304"
 ---
-# <a name="iinkanalyzercreatecontextnodes-method"></a>IInkAnalyzer:: CreateContextNodes (método)
+# <a name="iinkanalyzercreatecontextnodes-method"></a>IInkAnalyzer::CreateContextNodes (método)
 
-Crea un objeto [**IContextNodes**](icontextnodes.md) .
+Crea un [**objeto IContextNodes.**](icontextnodes.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,25 +39,25 @@ HRESULT CreateContextNodes(
 
 <dl> <dt>
 
-*ppContextNodes* \[ enuncia\]
+*ppContextNodes* \[ out\]
 </dt> <dd>
 
-Puntero al objeto [**IContextNodes**](icontextnodes.md) .
+Puntero al objeto [**IContextNodes.**](icontextnodes.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodes* cuando ya no necesite usar el objeto.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppContextNodes* cuando ya no necesite usar el objeto .
 
  
 
-Use este método para crear una colección [**IContextNodes**](icontextnodes.md) vacía que esté asociada a [**IInkAnalyzer**](iinkanalyzer.md). La nueva colección **IContextNodes** no forma parte del árbol de contexto del objeto **IInkAnalyzer** .
+Use este método para crear una colección [**IContextNodes**](icontextnodes.md) vacía asociada a [**IInkAnalyzer.**](iinkanalyzer.md) La nueva **colección IContextNodes** no forma parte del árbol de contexto del objeto **IInkAnalyzer.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Use este método para crear una colección [**IContextNodes**](icontextnodes.md)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,7 +82,7 @@ Use este método para crear una colección [**IContextNodes**](icontextnodes.md)
 [**IContextNodes**](icontextnodes.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

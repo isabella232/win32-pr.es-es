@@ -1,9 +1,9 @@
 ---
-title: Elemento maxBuffers (ChannelPublishingType)
-description: Número máximo de búferes que se van a asignar a la sesión.
+title: elemento maxBuffers (ChannelPublishingType)
+description: Número máximo de búferes que se asignarán para la sesión.
 ms.assetid: b23cb6cd-0968-4d9a-ba90-b8000afe2d3f
 keywords:
-- elemento maxBuffers EventLog
+- Elemento maxBuffers EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 042d7d7dad91a141b69d8d728007208ef1c5eff5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 288c82b43eb348410185cfaa22203686bef7eeeafeca40d06d447aed20d255a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120903"
 ---
-# <a name="maxbuffers-channelpublishingtype-element"></a>Elemento maxBuffers (ChannelPublishingType)
+# <a name="maxbuffers-channelpublishingtype-element"></a>elemento maxBuffers (ChannelPublishingType)
 
-Número máximo de búferes que se van a asignar a la sesión.
+Número máximo de búferes que se asignarán para la sesión.
 
 ``` syntax
 <xs:element name="maxBuffers"
@@ -30,16 +30,16 @@ Número máximo de búferes que se van a asignar a la sesión.
  />
 ```
 
-El elemento **maxBuffers** se define mediante el tipo complejo de [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+El tipo complejo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) define el elemento **maxBuffers.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

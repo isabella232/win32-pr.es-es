@@ -3,7 +3,7 @@ title: Atributo Abstract
 description: El atributo Abstract es una breve descripción de la estación de radio.
 ms.assetid: ea3d9f4b-22fe-45b4-8021-d3eb40ef075b
 keywords:
-- Media Player de atributos abstractos de Windows
+- Atributo abstracto Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e29b7910c93cdc8f67a5f7c053604fa3f33cc367
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb6b670d820eb6515338661aee75f17a5a4defd773f0acba742e6ee87e598774
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119956475"
 ---
 # <a name="abstract-attribute"></a>Atributo Abstract
 
-El atributo **abstract** es una breve descripción de la estación de radio.
+El **atributo Abstract** es una breve descripción de la estación de radio.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de radio](radio-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------|
-| Versión<br/> | Solo Windows Media Player 9 series<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 solo<br/> |
 
 
 
@@ -47,7 +47,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

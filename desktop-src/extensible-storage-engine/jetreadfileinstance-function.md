@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 860aa0ab1b11107d4724f86689e2fd999921b027
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: c278426018d4e193046b10fd5986510c8d9b7e87
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477871"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122985828"
 ---
 # <a name="jetreadfileinstance-function"></a>Función JetReadFileInstance
 
@@ -54,7 +54,7 @@ Instancia que se usará para una llamada API determinada.
 
 Tenga en cuenta que Windows 2000, la variante de API que acepta este parámetro no está disponible porque solo se admite una instancia. En este caso, el uso de esta instancia global está implícito.
 
-Para Windows XP y versiones posteriores, puede llamar a la variante de API que no acepta este parámetro solo cuando el motor está en modo heredado (modo de compatibilidad Windows 2000) en casos en los que solo se admite una instancia. De lo contrario, se producirá un error en la operación y se devolverá JET_errRunningInMultiInstanceMode error.
+Para Windows XP y versiones posteriores, puede llamar a la variante de API que no acepta este parámetro solo cuando el motor está en modo heredado (modo de compatibilidad Windows 2000) en los casos en los que solo se admite una instancia. De lo contrario, se producirá un error en la operación y se devolverá JET_errRunningInMultiInstanceMode error.
 
 *archivo de archivos de archivos*
 
@@ -74,7 +74,7 @@ Cantidad real de datos de archivo recuperados.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función facilita la devolución de cualquier tipo [JET_ERR](./jet-err.md) datos definidos en la API Extensible Storage Engine (ESE). Para obtener más información sobre los errores jet, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función facilita la devolución de cualquier tipo [JET_ERR](./jet-err.md) datos definidos en la API Extensible Storage Engine (ESE). Para obtener más información sobre los errores de JET, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código de retorno</p> | <p>Significado</p> | 
@@ -98,7 +98,7 @@ Si se ejecuta correctamente, el siguiente fragmento de datos del archivo se leer
 
 En caso de error, el estado del búfer de salida es indefinido. El error provocará la cancelación de todo el proceso de copia de seguridad para la instancia actual. En Windows XP y versiones Windows posteriores, la copia de seguridad no se cancelará si se produjo un error al leer un archivo de base de datos. Sin embargo, la copia de seguridad de ese archivo de base de datos se seguirá cancelando y el identificador correspondiente se cerrará automáticamente.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Cualquier llamada a la función **JetReadFileInstance** realizada mediante un identificador que ya haya devuelto todos los datos del archivo subyacente (por ejemplo, si una llamada anterior devolvía menos bytes que el tamaño del búfer de salida) siempre se realizará correctamente, pero devolverá cero bytes de datos.
 
@@ -108,7 +108,7 @@ No se admiten varias llamadas simultáneas a **JetReadFileInstance** realizadas 
 
 Si ha configurado una instancia determinada de modo que la limpieza de páginas de la base de datos esté habilitada (consulte el parámetro JET_paramCircularLog en Parámetros del sistema [),](./extensible-storage-engine-system-parameters.md)los datos eliminados se quitarán de la base de datos como efecto secundario de una llamada [a](./transaction-log-parameters.md) **JetReadFileInstance** en el archivo de base de datos.
 
-Es muy importante comprender cómo interactúan la copia de seguridad y los datos dañados. Si el motor de base de datos detecta daños en los datos durante una copia de seguridad, se producirá un error en la copia de seguridad de la base de datos afectada o de toda la instancia. Se trata de una decisión de diseño consciente diseñada para protegerse contra la pérdida de datos. Si el motor de base de datos permitió que una copia de seguridad se realizara correctamente cuando había daños en los datos, es posible que se descartara como resultado una copia de seguridad anterior sin corregir. Esto sería desafortunado porque, a continuación, sería posible corregir los daños en los datos en la instancia en directo mediante la restauración de esa copia de seguridad y la reproducción de todos los archivos de registro de transacciones en esa base de datos. En este escenario de pérdida de datos cero se supone que el registro circular no está habilitado [(consulte JET_paramCircularLog](./transaction-log-parameters.md) en [Parámetros del sistema](./extensible-storage-engine-system-parameters.md)).
+Es muy importante comprender cómo interactúan la copia de seguridad y los datos dañados. Si el motor de base de datos detecta daños en los datos durante una copia de seguridad, se producirá un error en la copia de seguridad de la base de datos afectada o de toda la instancia. Se trata de una decisión de diseño consciente diseñada para protegerse frente a la pérdida de datos. Si el motor de base de datos permitió que una copia de seguridad se realizara correctamente cuando había daños en los datos, es posible que se descartara como resultado una copia de seguridad anterior sin corregir. Esto sería desafortunado porque, a continuación, sería posible corregir los daños en los datos en la instancia en directo mediante la restauración de esa copia de seguridad y la reproducción de todos los archivos de registro de transacciones en esa base de datos. En este escenario de pérdida de datos cero se supone que el registro circular no está habilitado [(consulte JET_paramCircularLog](./transaction-log-parameters.md) en [Parámetros del sistema](./extensible-storage-engine-system-parameters.md)).
 
 También es importante comprender que los casos de daños en los datos se suelen detectar por primera vez durante la copia de seguridad de streaming. Esto se debe a que la copia de seguridad de streaming es el único proceso que examina rutinariamente cada página del archivo de base de datos. También es probable que la copia de seguridad de streaming sea el primer proceso para detectar los primeros signos de error de hardware, como se manifestó por errores intermitentes de daños en los datos, debido a la cantidad de datos recuperados por la copia de seguridad y a la velocidad a la que se recuperan los datos.
 
@@ -117,7 +117,13 @@ El motor de base de datos detecta daños en los datos mediante el uso de sumas d
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p>Remoto</p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p>Servidor</p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p>Encabezado</p> | <p>Se declara en Esent.h.</p> | | <p>Biblioteca</p> | <p>Usa ESENT.lib.</p> | | <p>Archivo DLL</p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Remoto</p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p>Server</p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p>Encabezado</p> | <p>Se declara en Esent.h.</p> | 
+| <p>Biblioteca</p> | <p>Usa ESENT.lib.</p> | 
+| <p>Archivo DLL</p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

@@ -1,28 +1,28 @@
 ---
-title: Uso de la API de administración del enrutador MIB
-description: Esta sección contiene ejemplos que muestran cómo usar la API MIB de administración del enrutador para consultar y establecer variables.
+title: Uso de la API de MIB de administración de enrutadores
+description: Esta sección contiene ejemplos que muestran cómo usar la API de MIB de administración de enrutadores para consultar y establecer variables.
 ms.assetid: cbd826c0-4d5c-4661-b1b2-886fe0f8e680
 keywords:
 - Enrutamiento, base de información de administración, tareas
-- Base de información de administración RRAS, tareas
+- RRAS base de información de administración, tareas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b7d3ae16b8a94070a94d2961d47b5a10361e6d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 34242b28d24ab1ca63e2cea1026c38ac47b656eb017163f5bfc6884b8564a0ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024995"
 ---
-# <a name="using-the-router-management-mib-api"></a>Uso de la API de administración del enrutador MIB
+# <a name="using-the-router-management-mib-api"></a>Uso de la API de MIB de administración de enrutadores
 
-Esta sección contiene ejemplos que muestran cómo usar la API MIB de administración del enrutador para consultar y establecer variables.
+Esta sección contiene ejemplos que muestran cómo usar la API de MIB de administración de enrutadores para consultar y establecer variables.
 
--   [Obtención de la tabla de interfaces MIB II](obtaining-the-mib-ii-interfaces-table.md)
+-   [Obtención de la tabla de interfaces de MIB II](obtaining-the-mib-ii-interfaces-table.md)
 
- 
+ 
 
- 
+ 
 
 
 

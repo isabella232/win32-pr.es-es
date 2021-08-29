@@ -4,18 +4,18 @@ ms.assetid: 3060c167-ea23-4061-b32a-16e750f55e6f
 title: Declaración de la plantilla de fábrica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3168f16b6281417846f13b7a17141282053c4705
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ab71a925df01eee1f6e8c4365de4f00afd32b3449aa6ee07bc949e225713c2cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953194"
 ---
 # <a name="declaring-the-factory-template"></a>Declaración de la plantilla de fábrica
 
-El siguiente paso consiste en declarar la plantilla de generador para el filtro. Una plantilla de generador es una clase de C++ que contiene información para el generador de clases. En el archivo DLL, declare una matriz global de objetos [**CFactoryTemplate**](cfactorytemplate.md) , uno para cada filtro o componente com del archivo dll. La matriz se debe denominar *g \_ templates*. Para obtener más información acerca de las plantillas de fábrica, consulte [How to Create a DirectShow Filter dll](how-to-create-a-dll.md).
+El siguiente paso consiste en declarar la plantilla de generador para el filtro. Una plantilla de generador es una clase de C++ que contiene información para el generador de clases. En el archivo DLL, declare una matriz global de [**objetos CFactoryTemplate,**](cfactorytemplate.md) una para cada filtro o componente COM del archivo DLL. La matriz debe denominarse *g \_ Templates*. Para obtener más información sobre las plantillas de generador, [vea How to Create a DirectShow Filter DLL](how-to-create-a-dll.md).
 
-El miembro de **\_ \_ filtro m pAMovieSetup** de la plantilla de generador es un puntero a la estructura de [**\_ filtros AMOVIESETUP**](amoviesetup-filter.md) descrita anteriormente. En el ejemplo siguiente se muestra una plantilla de generador, usando la estructura proporcionada en el ejemplo anterior:
+El **miembro m \_ pAMovieSetup \_ Filter** de la plantilla de generador es un puntero a la estructura FILTER de [**AMOVIESETUP \_**](amoviesetup-filter.md) descrita anteriormente. En el ejemplo siguiente se muestra una plantilla de generador con la estructura que se ha dado en el ejemplo anterior:
 
 
 ```C++
@@ -33,13 +33,13 @@ int g_cTemplates = sizeof(g_Templates) / sizeof(g_Templates[0]);
 
 
 
-Si no declaras ninguna información de filtro, el **\_ \_ filtro m PAMoveSetup** puede ser **null**.
+Si no ha declarado ninguna información de filtro, **m \_ pAMoveSetup \_ Filter** puede ser **NULL.**
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Cómo registrar filtros de DirectShow](how-to-register-directshow-filters.md)
+[Registro de filtros DirectShow filtros](how-to-register-directshow-filters.md)
 </dt> </dl>
 
  

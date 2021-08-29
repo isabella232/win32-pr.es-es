@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d76aeb00ece18b026d9e5515a74ce830eb14af32
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a240b1cda5e9b25aeea15241b066bfe7cb9a583778043a5aee79faab69b2f75c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069355"
 ---
 # <a name="udpip-class"></a>UdpIp (clase)
 
@@ -51,8 +51,8 @@ Los consumidores de seguimiento de eventos pueden implementar un procesamiento e
 | **EVENT \_ TRACE \_ TYPE \_ RECEIVE**(el valor del tipo de evento es 11)<br/> | Evento de recepción para el protocolo IPv4. La [**clase MOF \_ UdpIp TypeGroup1**](udpip-typegroup1.md) define los datos de evento para este evento. |
 | **EVENT \_ TRACE \_ TYPE \_ SEND**(el valor del tipo de evento es 10)<br/>    | Envío de eventos para el protocolo IPv4. La [**clase MOF \_ UdpIp TypeGroup1**](udpip-typegroup1.md) define los datos de evento para este evento.    |
 | Valor de tipo de evento, 17                                               | Evento de error. La [**clase MOF UdpIp \_ Fail**](udpip-fail.md) define los datos de evento para este evento.                                  |
-| Valor de tipo de evento, 26                                               | Enviar evento para el protocolo IPv6. La [**clase MOF UdpIp \_ TypeGroup2**](udpip-typegroup2.md) define los datos de evento para este evento.    |
-| Valor del tipo de evento, 27                                               | Evento de recepción para el protocolo IPv6. La [**clase MOF UdpIp \_ TypeGroup2**](udpip-typegroup2.md) define los datos de evento para este evento. |
+| Valor de tipo de evento, 26                                               | Evento de envío para el protocolo IPv6. La [**clase MOF UdpIp \_ TypeGroup2**](udpip-typegroup2.md) define los datos de evento para este evento.    |
+| Valor de tipo de evento, 27                                               | Evento de recepción para el protocolo IPv6. La [**clase MOF UdpIp \_ TypeGroup2**](udpip-typegroup2.md) define los datos de evento para este evento. |
 
 
 
@@ -64,14 +64,14 @@ Puede realizar un seguimiento de los eventos de red a un proceso de origen y des
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
 description: El método CheckStreamState determina si se debe entregar o descartar un ejemplo multimedia.
 ms.assetid: 1533f4b9-e13e-458b-9614-96d733cef4ed
-title: Método CBaseStreamControl. CheckStreamState (Strmctl. h)
+title: Método CBaseStreamControl.CheckStreamState (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e469e288e853ca88a0cf15c209882a8114e33509
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 59c74f6933929b54be7e4933220358105f2dbe6d7be5f74db13be7c3092ffe17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537385"
 ---
-# <a name="cbasestreamcontrolcheckstreamstate-method"></a>CBaseStreamControl. CheckStreamState, método
+# <a name="cbasestreamcontrolcheckstreamstate-method"></a>Método CBaseStreamControl.CheckStreamState
 
-El `CheckStreamState` método determina si se debe entregar o descartar un ejemplo multimedia.
+El método determina si se debe entregar o descartar un ejemplo `CheckStreamState` multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ enum CheckStreamState(
 *pSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
+Puntero a la interfaz [**IMediaSample del**](/windows/desktop/api/Strmif/nn-strmif-imediasample) ejemplo.
 
 </dd> </dl>
 
@@ -57,24 +57,24 @@ Devuelve uno de los valores siguientes.
 
 | Código devuelto                                                                                       | Descripción                     |
 |---------------------------------------------------------------------------------------------------|---------------------------------|
-| <dl> <dt>**descartar el flujo \_**</dt> </dl> | Descartar este ejemplo.<br/> |
-| <dl> <dt>**FLUJO \_ de flujos**</dt> </dl>    | Entregue este ejemplo.<br/> |
+| <dl> <dt>**DESCARTE \_ DE SECUENCIAS**</dt> </dl> | Descarte este ejemplo.<br/> |
+| <dl> <dt>**FLUJO \_ DE FLUJO**</dt> </dl>    | Entregue este ejemplo.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a este método cuando el código PIN reciba un ejemplo. Entregue el ejemplo solo si el valor devuelto es flujo de flujo \_ . Si el valor devuelto es \_ DEScartando el flujo, descarte el ejemplo.
+Llame a este método cuando el pin reciba un ejemplo. Entregue el ejemplo solo si el valor devuelto es STREAM \_ FLOWING. Si el valor devuelto es STREAM \_ DISCARDING, descarte el ejemplo.
 
-Si el PIN descarta cualquier ejemplo, debe marcar el siguiente ejemplo que ofrece como discontinuidad, llamando al método [**IMediaSample:: SetDiscontinuity**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setdiscontinuity) .
+Si el pin descarta alguna muestra, debe marcar el ejemplo siguiente que entrega como una discontinuidad, llamando al método [**IMediaSample::SetDiscontinuity.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-setdiscontinuity)
 
-Si el filtro implementa la interfaz [**IAMDroppedFrames**](/windows/desktop/api/Strmif/nn-strmif-iamdroppedframes) para contar el número de fotogramas que quita, no cuente un fotograma descartado como un fotograma quitado.
+Si el filtro implementa la interfaz [**IAMDroppedFrames**](/windows/desktop/api/Strmif/nn-strmif-iamdroppedframes) para contar cuántos fotogramas quita, no cuente un fotograma descartado como un fotograma descartado.
 
-Cuando el valor devuelto está \_ DEScartando el flujo, el método se bloquea hasta que el tiempo de referencia alcanza la hora de inicio del ejemplo. Esto evita que el PIN descartará los ejemplos demasiado rápidamente. Si el filtro está en pausa, el tiempo de espera es infinito, hasta que el filtro se ejecute, detenga o vacíe los datos. (Los cambios de estado de filtro y la transmisión por secuencias se producen en subprocesos independientes, por lo que no produce ningún interbloqueo).
+Cuando el valor devuelto es STREAM DISCARDING, el método se bloquea hasta que la \_ hora de referencia alcanza la hora de inicio del ejemplo. Esto evita que el pin descarte muestras demasiado rápidamente. Si el filtro está en pausa, el tiempo de espera es infinito, hasta que el filtro se ejecuta, detiene o vacía los datos. (Los cambios de estado de filtro y la transmisión por secuencias se hacen en subprocesos independientes, por lo que esto no provoca ningún interbloqueo).
 
-La enumeración **CBaseStreamControl:: StreamControlState** se define de la siguiente manera:
+La **enumeración CBaseStreamControl::StreamControlState** se define de la siguiente manera:
 
 
 ```C++
@@ -88,7 +88,7 @@ enum StreamControlState{
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se da por supuesto que el PIN usa una variable miembro denominada m \_ fLastSampleDiscarded para realizar un seguimiento de las discontinuidades.
+En el ejemplo siguiente se supone que el pin usa una variable miembro denominada m fLastSampleDiscarded para realizar un \_ seguimiento de las discontinuidades.
 
 
 ```C++
@@ -120,8 +120,8 @@ CMyPin::Receive(IMediaSample *pSample)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Strmctl. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -129,7 +129,7 @@ CMyPin::Receive(IMediaSample *pSample)
 
 <dl> <dt>
 
-[**Clase CBaseStreamControl**](cbasestreamcontrol.md)
+[**CBaseStreamControl (clase)**](cbasestreamcontrol.md)
 </dt> </dl>
 
  

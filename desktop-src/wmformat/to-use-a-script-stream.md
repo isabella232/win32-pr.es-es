@@ -3,18 +3,18 @@ title: Para usar una secuencia de scripts
 description: Para usar una secuencia de scripts
 ms.assetid: 502b1f66-213d-41d8-992a-9bef4f6209f9
 keywords:
-- Windows Media Format SDK,secuencias de script
+- Windows SDK de formato multimedia, secuencias de script
 - Formato de sistemas avanzados (ASF), secuencias de script
 - ASF (formato de sistemas avanzados), secuencias de script
 - secuencias de script, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09782855bd3000d711f134c5889733e49e020c44
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: a4d8df991ae97cc6d9eb330f11cb8798f5f2eb2787b5947e1d997b3d276d15f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929215"
 ---
 # <a name="to-use-a-script-stream"></a>Para usar una secuencia de scripts
 

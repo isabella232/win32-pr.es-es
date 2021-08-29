@@ -1,26 +1,26 @@
 ---
-description: Smart Render Engine
+description: Motor de representación inteligente
 ms.assetid: 279be879-9728-4fa1-bdf7-6b48485fc75f
-title: Smart Render Engine
+title: Motor de representación inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fa727397f21aeba754cfe41f2dc4f9c1da1c91b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b3472d096d1c3918a9bf1a45ae788a535fd65bfe4e4084c6b044516db01440d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072559"
 ---
-# <a name="smart-render-engine"></a>Smart Render Engine
+# <a name="smart-render-engine"></a>Motor de representación inteligente
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto Smart Render Engine representa la salida comprimida de una escala de tiempo. Para crear este objeto, llame a **CoCreateInstance**. En el caso de la salida sin comprimir, use el motor de representación básico. El identificador de clase es CLSID \_ SmartRenderEngine.
+El objeto Smart Render Engine representa la salida comprimida de una escala de tiempo. Para crear este objeto, llame a **CoCreateInstance**. Para la salida sin comprimir, use el motor de representación básico. El identificador de clase es CLSID \_ SmartRenderEngine.
 
-El motor de representación inteligente expone las siguientes interfaces:
+El motor de representación inteligente expone las interfaces siguientes:
 
 -   [**IAMSetErrorLog**](iamseterrorlog.md)
 -   **IObjectWithSite**
@@ -32,7 +32,7 @@ El motor de representación inteligente expone las siguientes interfaces:
 
 <dl> <dt>
 
-[Representar un proyecto](rendering-a-project.md)
+[Representación de un Project](rendering-a-project.md)
 </dt> <dt>
 
 [Motor de representación básico](basic-render-engine.md)

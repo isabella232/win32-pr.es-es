@@ -1,30 +1,30 @@
 ---
-description: En texto unidireccional, la posición del símbolo de intercalación no tiene ambigüedad porque el borde inicial de un carácter está en el mismo lugar que el borde final del carácter anterior.
+description: En texto unidireccional, la posición del carácter de cursor no tiene ambigüedad porque el borde inicial de un carácter está en el mismo lugar que el borde final del carácter anterior.
 ms.assetid: 3bebb329-3dd7-4b2e-8ff3-878aaf337a2c
-title: Mostrar el símbolo de intercalación en cadenas bidireccionales
+title: Mostrar el caret en cadenas bidireccionales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c76cce95362aa69564fd245ccad1da4a967dddc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49a2e4c9fa06a45b4c653b76395854ee37e0dfdb6f555926987ab4f1a4decb10
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328805"
 ---
-# <a name="displaying-the-caret-in-bidirectional-strings"></a>Mostrar el símbolo de intercalación en cadenas bidireccionales
+# <a name="displaying-the-caret-in-bidirectional-strings"></a>Mostrar el caret en cadenas bidireccionales
 
-En texto unidireccional, la posición del símbolo de intercalación no tiene ambigüedad porque el borde inicial de un carácter está en el mismo lugar que el borde final del carácter anterior. Sin embargo, en texto bidireccional, la posición del símbolo de intercalación entre ejecuciones de dirección opuesta es ambigua. Por ejemplo, en el párrafo de izquierda a derecha "hellosalaam", la última letra de "Hello" precede inmediatamente a la primera letra de "Salaam". La mejor posición en la que se muestra el símbolo de intercalación depende de si se considera que sigue la "o" de "Hola" o antes de "s" de "Salaam".
+En texto unidireccional, la posición del carácter de cursor no tiene ambigüedad porque el borde inicial de un carácter está en el mismo lugar que el borde final del carácter anterior. Sin embargo, en texto bidireccional, la posición del cursor de cursor entre las ejecuciones de dirección opuesta es ambigua. Por ejemplo, en el párrafo de izquierda a derecha "hellosalaam", la última letra de "hello" precede inmediatamente a la primera letra de "salaam". La mejor posición en la que se debe mostrar el caret depende de si se considera que sigue la "o" de "hello" o que precede a la "s" de "salaam".
 
-Uniscribe utiliza las convenciones de posición del símbolo de intercalación que se muestran en la tabla siguiente.
+Uniscribe usa las convenciones de posicionamiento de los cursores de cursor que se muestran en la tabla siguiente.
 
 
 
-| Situación       | Selección de ubicación del símbolo de intercalación                       |
+| Situación       | Colocación del elemento de inserción visual                       |
 |-----------------|----------------------------------------------|
-| Escritura          | Borde final del último carácter escrito.       |
+| Escritura          | Borde final del último carácter con tipo.       |
 | Pegar         | Borde final del último carácter pegado.      |
-| Avance del símbolo de intercalación | Borde final del último carácter pasado. |
-| Retirado del símbolo de intercalación  | Borde inicial del último carácter pasado.  |
+| Avance del centro de atención | Borde final del último carácter pasado. |
+| Retirada del caret  | Borde inicial del último carácter pasado.  |
 | Página principal            | Borde inicial de la línea.                        |
 | End             | Borde final de la línea.                       |
 
@@ -32,7 +32,7 @@ Uniscribe utiliza las convenciones de posición del símbolo de intercalación q
 
  
 
-El símbolo de intercalación se puede colocar tal y como se muestra en el ejemplo siguiente:
+El cursor de subrayado se puede colocar como se muestra en el ejemplo siguiente:
 
 
 ```C++
@@ -51,7 +51,7 @@ if (fAdvancing) {
 
 
 
-La posición del símbolo de intercalación puede ser más sencilla, como se muestra a continuación, dado un valor *fAdvancing* restringido a **true** o **false**:
+El posicionamiento del cursor de referencia puede ser más sencillo, como se muestra a continuación, dado un valor *fAdvancing* restringido a **TRUE** o **FALSE:**
 
 
 ```C++
@@ -63,13 +63,13 @@ ScriptCPtoX(
 
 
 
-[**ScriptCPtoX**](/windows/desktop/api/Usp10/nf-usp10-scriptcptox) controla las posiciones fuera del intervalo de forma lógica. Devuelve el borde inicial de la ejecución de *iCharPos* <0, y el borde final de la ejecución de *iCharPos* >= length. Para obtener más información, vea [administrar la colocación del símbolo de intercalación y la prueba de posicionamiento](managing-caret-placement-and-hit-testing.md) .
+[**ScriptCPtoX controla**](/windows/desktop/api/Usp10/nf-usp10-scriptcptox) las posiciones fuera del intervalo lógicamente. Devuelve el borde inicial de la ejecución para *iCharPos* <0 y el borde final de la ejecución para *iCharPos* >= length. Para más información, consulte Managing Caret Placement and Hit Testing (Administración [de la selección de ubicación del caret y las pruebas de posicionamiento).](managing-caret-placement-and-hit-testing.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar Uniscribe](using-uniscribe.md)
+[Uso de Uniscribe](using-uniscribe.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Obtiene la información de tipo de un elemento.
 ms.assetid: 9670f184-e8ba-4596-af6d-2967320dfd95
-title: 'IWiaItem2:: GetItemType (método) (WIA. h)'
+title: Método IWiaItem2::GetItemType (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 3bf177ddcc117cdfe21a1b9322a0e457cf899c0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c71e88f951310c734924333ae1eab152f42baf830653c343f7b1af57422c079f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117669697"
 ---
-# <a name="iwiaitem2getitemtype-method"></a>IWiaItem2:: GetItemType (método)
+# <a name="iwiaitem2getitemtype-method"></a>IWiaItem2::GetItemType (método)
 
 Obtiene la información de tipo de un elemento.
 
@@ -39,12 +39,12 @@ HRESULT GetItemType(
 
 <dl> <dt>
 
-*pItemType* \[ enuncia\]
+*pItemType* \[ out\]
 </dt> <dd>
 
-Tipo: **Long \** _
+Tipo: **\* LONG**
 
-Recibe un puntero a un _ *Long** que contiene una combinación de marcas de tipo. Vea [**marcas de tipo de elemento de WIA**](-wia-wia-item-type-flags.md).
+Recibe un puntero a **un long** que contiene una combinación de marcas de tipo. Vea [**MARCAS DE TIPO DE ELEMENTO DE WIA.**](-wia-wia-item-type-flags.md)
 
 </dd> </dl>
 
@@ -52,11 +52,11 @@ Recibe un puntero a un _ *Long** que contiene una combinación de marcas de tipo
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada objeto [**IWiaItem2**](-wia-iwiaitem2.md) del árbol jerárquico de objetos asociados a un dispositivo de hardware de adquisición de imágenes de Windows (WIA) 2,0 tiene un tipo de datos específico. Los objetos de elemento representan carpetas y archivos. Las carpetas contienen objetos de archivo. Los objetos de archivo contienen datos adquiridos por el dispositivo, como imágenes y sonidos. Este método permite a las aplicaciones identificar el tipo de cualquier elemento en un árbol jerárquico de objetos de elemento en un dispositivo.
+Cada [**objeto IWiaItem2**](-wia-iwiaitem2.md) del árbol jerárquico de objetos asociado a un dispositivo de hardware Windows Image Acquisition (WIA) 2.0 tiene un tipo de datos específico. Los objetos de elemento representan carpetas y archivos. Las carpetas contienen objetos de archivo. Los objetos de archivo contienen datos adquiridos por el dispositivo, como imágenes y sonidos. Este método permite a las aplicaciones identificar el tipo de cualquier elemento de un árbol jerárquico de objetos de elemento en un dispositivo.
 
 Un elemento puede tener más de un tipo. Por ejemplo, un elemento que representa un archivo de audio tendrá los atributos de tipo [**WiaItemTypeAudio**](-wia-wia-item-type-flags.md) \| **WiaItemTypeFile**.
 
@@ -64,12 +64,12 @@ Un elemento puede tener más de un tipo. Por ejemplo, un elemento que representa
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

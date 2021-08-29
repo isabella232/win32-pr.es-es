@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 789812b6e94efd40ff71209348f0c9727088c253
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 63a5e1d7dc743062af3e5f912bbdafa71707155973cac0acd6953d7eb526dfd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894085"
 ---
 # <a name="d3dxmatrixrotationyawpitchroll-function-d3dx9mathh"></a>Función D3DXMatrixRotationYawPitchRoll (D3dx9math.h)
 
@@ -91,7 +91,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 El orden de las transformaciones es roll first, then pitch, then yaw. En relación con el eje de coordenadas local del objeto, esto equivale a la rotación alrededor del eje Z, seguida de la rotación alrededor del eje X, seguida de la rotación alrededor del eje Y, como se muestra en la ilustración siguiente.
 
-![ilustración de roll, pitch y yaw como giros alrededor de los tres ejes](images/pitchyawroll.png)
+![ilustración de roll, pitch y yaw como rotaciones alrededor de los tres ejes](images/pitchyawroll.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,7 +104,7 @@ El orden de las transformaciones es roll first, then pitch, then yaw. En relaci�
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

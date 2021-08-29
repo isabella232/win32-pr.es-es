@@ -1,7 +1,7 @@
 ---
 description: Modifica la configuración de la máquina virtual.
 ms.assetid: 3266bd0d-398b-4d3b-9248-e29c069aab11
-title: Método ModifySystemSettings de la clase Msvm_VirtualSystemManagementService
+title: Método ModifySystemSettings de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4e6bf40b3dd206affcdc014e98554bfa8f88b4c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb077b57a6d1508f3c132c09e62b1a69725236d4db3ed480b4c5c1f43261be27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693675"
 ---
-# <a name="modifysystemsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifySystemSettings de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="modifysystemsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifySystemSettings de la clase Msvm \_ VirtualSystemManagementService
 
-Modifica la configuración de la máquina virtual. Cuando se aplica a la configuración del sistema de una configuración de máquina virtual "actual", se puede modificar la instancia de la máquina virtual.
+Modifica la configuración de la máquina virtual. Cuando se aplica a la configuración del sistema de una configuración de máquina virtual "actual", como efecto secundario, se puede modificar la instancia de la máquina virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 ModifySystemSettings(
 
 <dl> <dt>
 
-*Configuración* \[ de\]
+*SystemSettings* \[ En\]
 </dt> <dd>
 
-Instancia insertada de la clase [**MSVM \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que contiene los aspectos modificados de la máquina virtual. La propiedad **InstanceID** identifica la configuración de la máquina virtual que se va a modificar.
+Instancia incrustada de la [**clase Msvm \_ VirtualSystemSettingData**](msvm-virtualsystemsettingdata.md) que contiene los aspectos modificados de la máquina virtual. La **propiedad InstanceID** identifica la configuración de la máquina virtual que se va a modificar.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Este método devuelve uno de los valores siguientes.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -87,10 +87,10 @@ Este método devuelve uno de los valores siguientes.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,10 +99,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -114,7 +114,7 @@ Este método devuelve uno de los valores siguientes.
 [**ModifyVirtualSystem (V1)**](/previous-versions/windows/desktop/virtual/modifyvirtualsystem-msvm-virtualsystemmanagementservice)
 </dt> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

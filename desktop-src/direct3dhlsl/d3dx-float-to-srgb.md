@@ -1,9 +1,9 @@
 ---
-title: D3DX_FLOAT_to_SRGB función)
-description: Convierte un valor FLOAT en una SRGB.
+title: D3DX_FLOAT_to_SRGB función
+description: Convierte un valor FLOAT en un SRGB.
 ms.assetid: 734a0837-98da-45ba-bb0b-1e930ba78a7d
 keywords:
-- D3DX_FLOAT_to_SRGB de la función HLSL
+- D3DX_FLOAT_to_SRGB función HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a71afb0c4e601be70c1ec04bd7bcd5e76c6cc573
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4b1f9fa7bc53f4af510e788b3ccf84f3700bd30e47eb5f18283a51232427d246
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120025015"
 ---
-# <a name="d3dx_float_to_srgb-function"></a>D3DX \_ float \_ to \_ sRGB (función)
+# <a name="d3dx_float_to_srgb-function"></a>Función D3DX \_ FLOAT \_ to \_ SRGB
 
-Convierte un valor FLOAT en una SRGB.
+Convierte un valor FLOAT en un SRGB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ FLOAT D3DX_FLOAT_to_SRGB(
 *Val* 
 </dt> <dd>
 
-Valor FLOAT que se va a convertir.
+Valor FLOAT que se debe convertir.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor SRGB convertido.
+Valor de SRGB convertido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Valor SRGB convertido.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. INL</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Valor SRGB convertido.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: optional (atributo)
-description: El atributo \ Optional \ especifica un parámetro opcional para una función miembro.
+description: El atributo \ optional\ especifica un parámetro opcional para una función miembro.
 ms.assetid: 683e5c9e-5b25-4beb-99ce-cfae4fee4ea6
 keywords:
-- parámetro opcional MIDL
+- atributo opcional MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b446cf2a7a14e5909d2c99d41fd918147d23c6f1
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 179d152aaa16420139036a5dc9705ad7cc7c8f240f5f93e51b0cee9a95dc911f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806683"
 ---
 # <a name="optional-attribute"></a>optional (atributo)
 
-El atributo **\[ opcional \]** especifica un parámetro opcional para una función miembro.
+El **\[ atributo \]** opcional especifica un parámetro opcional para una función miembro.
 
 ``` syntax
 return-type function-name([optional [, other-attributes]] parameter-type parameter-name)
@@ -31,7 +31,7 @@ return-type function-name([optional [, other-attributes]] parameter-type paramet
 
 <dl> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
@@ -41,44 +41,44 @@ Especifica el tipo de valor devuelto de la función.
 *nombre-de-la-función* 
 </dt> <dd>
 
-Especifica el nombre de la función tal y como se define en el archivo IDL.
+Especifica el nombre de la función tal como se define en el archivo IDL.
 
 </dd> <dt>
 
-*otros: atributos* 
+*otros atributos* 
 </dt> <dd>
 
-Cero o más atributos de MIDL opcionales.
+Cero o más atributos MIDL opcionales.
 
 </dd> <dt>
 
-*tipo de parámetro* 
+*parameter-type* 
 </dt> <dd>
 
-El tipo de datos del parámetro opcional.
+Tipo de datos del parámetro opcional.
 
 </dd> <dt>
 
-*nombre de parámetro* 
+*parameter-name* 
 </dt> <dd>
 
 Especifica el nombre del parámetro opcional.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **\[ opcional \]** solo es válido si el parámetro es de tipo **Variant** o **Variant** Â \* .
+El **\[ atributo \]** opcional solo es válido si el parámetro es de tipo **VARIANT** o **VARIANT** Â \* .
 
-El compilador MIDL acepta el siguiente orden de parámetros (de izquierda a derecha):
+El compilador MIDL acepta la siguiente ordenación de parámetros (de izquierda a derecha):
 
-1.  Parámetros obligatorios (parámetros que no tienen los **\[** atributos [**DefaultValue**](defaultvalue.md) **\]** u **\[ opcional \]** ),
-2.  Parámetros opcionales con o sin el **\[** atributo [**DefaultValue**](defaultvalue.md) **\]** ,
-3.  Parámetros con el atributo **\[ opcional \]** y sin el **\[** atributo [**DefaultValue**](defaultvalue.md) **\]** ,
-4.  **\[** parámetro [**LCID**](lcid.md) **\]** , si existe,
-5.  **\[**[**retval**](retval.md) **\]** parámetro
+1.  Parámetros obligatorios (parámetros que no tienen el **\[** [**valor predeterminado**](defaultvalue.md) **\]** u atributos **\[ opcionales), \]**
+2.  Parámetros opcionales con o sin el **\[** [**atributo defaultvalue,**](defaultvalue.md) **\]**
+3.  Parámetros con el **\[ atributo opcional \]** y sin el atributo **\[** [**defaultvalue,**](defaultvalue.md) **\]**
+4.  **\[**[**Parámetro lcid,**](lcid.md) **\]** si hay alguno,
+5.  **\[**[**retval**](retval.md) **\]** Parámetro
 
-No se puede aplicar el atributo **\[ opcional \]** a un parámetro que también tenga los **\[** atributos [**LCID**](lcid.md) **\]** o **\[** [**retval**](retval.md) **\]** .
+No se puede aplicar **\[ el \] atributo** opcional a un parámetro que también tenga los atributos **\[** [**lcid**](lcid.md) o **\]** **\[** [**retval.**](retval.md) **\]**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -91,24 +91,24 @@ HRESULT MyFunc([in, optional] VARIANT Param1,
 
 <dl> <dt>
 
-[**DefaultValue**](defaultvalue.md)
+[**Defaultvalue**](defaultvalue.md)
 </dt> <dt>
 
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**retval**](retval.md)
+[**Retval**](retval.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: La estructura de la sesión contiene información sobre la sesión actual.
+description: La estructura SESSION contiene información sobre la sesión actual.
 ms.assetid: e04571f9-eeb7-4612-8cb2-05aca7b5df06
-title: Estructura de la sesión
+title: Estructura SESSION
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9e1f356020df681e00f43c7a47ac16048764c0ab
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: db283c735e87fb88b489c3ad8367b37ab867c9627fffa7b6052706e0d260b54e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103806902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075955"
 ---
-# <a name="session-structure"></a>Estructura de la sesión
+# <a name="session-structure"></a>Estructura SESSION
 
-\[Esta estructura contiene información necesaria solo cuando se usan las funciones **DeleteExtractedFiles** y **Extract** , que no se admiten. Esta documentación se proporciona solo con fines informativos.\]
+\[Esta estructura contiene información necesaria solo cuando se usan las **funciones DeleteExtractedFiles** y **Extract,** que no se admiten. Esta documentación solo se proporciona con fines informativos.\]
 
-La estructura de la **sesión** contiene información sobre la sesión actual.
+La **estructura SESSION** contiene información sobre la sesión actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,7 +73,7 @@ typedef struct {
 
 <dl> <dt>
 
-**LEDs**
+**act**
 </dt> <dd>
 
 la acción que se va a realizar. Este miembro puede ser uno de los valores del siguiente tipo enumerado.
@@ -91,10 +91,10 @@ typedef enum {
 
 </dd> <dt>
 
-**hflist**
+**list**
 </dt> <dd>
 
-Identificador de una lista de archivos especificados en la línea de comandos. Este tipo de texto se declara de la siguiente manera:
+Identificador de una lista de archivos especificados en la línea de comandos. Este tipo de datos se declara como sigue:
 
 `typedef void *HFILELIST;`
 
@@ -103,49 +103,49 @@ Identificador de una lista de archivos especificados en la línea de comandos. E
 **fAllCabinets**
 </dt> <dd>
 
-Marca que indica si se debe procesar más de un archivo contenedor. Si este valor es **true**, se procesan los archivadores de continuación.
+Marca que indica si se debe procesar más de un archivo de archivador. Si este valor es **TRUE,** se procesan los archivadores de continuación.
 
 </dd> <dt>
 
 **fOverwrite**
 </dt> <dd>
 
-Marca que indica si se deben sobrescribir los archivos existentes. Si este valor es **true**, se sobrescriben los archivos existentes.
+Marca que indica si se deben sobrescribir los archivos existentes. Si este valor es **TRUE,** se sobrescriben los archivos existentes.
 
 </dd> <dt>
 
 **fNoLineFeed**
 </dt> <dd>
 
-Marca que indica si la última `printf` llamada tiene los caracteres de nueva línea ( `\n` ). Si este valor es **true**, la última `printf` llamada no incluía los caracteres de nueva línea.
+Marca que indica si la última `printf` llamada tiene los caracteres de nueva línea ( `\n` ). Si este valor es **TRUE,** la última `printf` llamada no ingregó los caracteres de nueva línea.
 
 </dd> <dt>
 
 **fSelfExtract**
 </dt> <dd>
 
-Marca que indica si un archivo. cab se está autoextraíble. Si este valor es **true**, el archivo. cab se extrae automáticamente.
+Marca que indica si un gabinete se extrae de forma autoextrayendo. Si este valor es **TRUE,** el gabinete se extrae de forma autoextraída.
 
 </dd> <dt>
 
 **cbSelfExtractSize**
 </dt> <dd>
 
-La longitud de la parte ejecutable (. exe) de un archivo. cab autoextraíble.
+Longitud del archivo ejecutable (.exe) de un gabinete autoextraíble.
 
 </dd> <dt>
 
 **cbSelfExtractSize**
 </dt> <dd>
 
-La longitud de la parte del archivo. CAB de un archivo. CAB autoextraíble.
+Longitud de la parte cab de un gabinete autoextrayendo.
 
 </dd> <dt>
 
 **ahfSelf**
 </dt> <dd>
 
-Identificadores de archivos del archivo. cab.
+El archivo controla el archivador.
 
 `#define cMAX_CAB_FILE_OPEN    2 `
 
@@ -154,23 +154,23 @@ Identificadores de archivos del archivo. cab.
 **cErrors**
 </dt> <dd>
 
-Recuento de errores encontrados durante la sesión de extracción.
+Recuento de errores detectados durante la sesión de extracción.
 
 </dd> <dt>
 
-**hfdi**
+**ydi**
 </dt> <dd>
 
-Identificador del contexto FDI. Este tipo de texto se declara de la siguiente manera:
+Identificador del contexto de FDI. Este tipo de datos se declara como sigue:
 
 `typedef void FAR *HFDI; `
 
 </dd> <dt>
 
-**Fun**
+**Erf**
 </dt> <dd>
 
-La estructura de error FDI. Vea [**Fun**](/windows/win32/api/fdi_fci_types/ns-fdi_fci_types-erf).
+Estructura de errores de FDI. Consulte [**ERF**](/windows/win32/api/fdi_fci_types/ns-fdi_fci_types-erf).
 
 </dd> <dt>
 
@@ -195,10 +195,10 @@ El paso a través de FDI.
 
 </dd> <dt>
 
-**x300**
+**se**
 </dt> <dd>
 
-Error de archivo de derrame. Este miembro puede ser uno de los valores del siguiente tipo enumerado.
+Error del archivo de desbordamiento. Este miembro puede ser uno de los valores del siguiente tipo enumerado.
 
 ``` syntax
 typedef enum {
@@ -214,14 +214,14 @@ typedef enum {
 **cbSpill**
 </dt> <dd>
 
-Tamaño del archivo de derrame solicitado.
+Tamaño del archivo de desbordamiento solicitado.
 
 </dd> <dt>
 
 **achSelf**
 </dt> <dd>
 
-Nombre del archivo ejecutable (. exe).
+Nombre del archivo ejecutable (.exe).
 
 `#define cbFILE_NAME_MAX     256`
 
@@ -230,7 +230,7 @@ Nombre del archivo ejecutable (. exe).
 **achMsg**
 </dt> <dd>
 
-Búfer de formato del mensaje.
+Búfer de formato de mensaje.
 
 `#define cbMAX_LINE          256`
 
@@ -267,35 +267,35 @@ Nombre de archivo de destino forzado.
 **achCabPath**
 </dt> <dd>
 
-Ruta de acceso en la que se va a buscar un archivo. cab.
+Ruta de acceso que se debe buscar para un archivo de archivador.
 
 </dd> <dt>
 
 **fContinuationCabinet**
 </dt> <dd>
 
-Marca que indica si el archivo. cab actual es el primero que se procesa. Si se establece en **true**, no se procesa el primer contenedor.
+Marca que indica si el gabinete actual es el primero procesado. Si se establece **en TRUE,** no es el primer gabinete procesado.
 
 </dd> <dt>
 
 **fShowReserveInfo**
 </dt> <dd>
 
-Marca que indica si se debe proporcionar la información de reserva. Si se establece en **true**, la información estará disponible.
+Marca que indica si se debe proporcionar información de reserva. Si se establece **en TRUE,** la información estará disponible.
 
 </dd> <dt>
 
 **fNextCabCalled**
 </dt> <dd>
 
-Este miembro proporciona una manera de determinar cuál de las entradas de **Acab** se va a usar si se procesan todos los archivos de un conjunto de contenedores (**fAllCabinet** se establece en **true**).
+Este miembro proporciona una manera de determinar cuál de las entradas **de acab** usar si se están procesando todos los archivos de un conjunto de archivadores (**fAllCabinet** se establece en **TRUE).**
 
 </dd> <dt>
 
 **acab**
 </dt> <dd>
 
-Las dos últimas entradas del conjunto de contenedores. Esta estructura se define de la siguiente manera:
+Las dos últimas entradas del conjunto de gabinetes. Esta estructura se define de la siguiente manera:
 
 ``` syntax
 typedef struct {
@@ -313,7 +313,7 @@ typedef CABINET *PCABINET;
 **achZap**
 </dt> <dd>
 
-El prefijo que se va a quitar del nombre de archivo.
+Prefijo que se quitará del nombre de archivo.
 
 `#define cbFILE_NAME_MAX     256`
 
@@ -322,7 +322,7 @@ El prefijo que se va a quitar del nombre de archivo.
 **achCabinetFile**
 </dt> <dd>
 
-Archivo. cab actual.
+Archivo de archivador actual.
 
 `#define cbFILE_NAME_MAX     256`
 
@@ -331,28 +331,28 @@ Archivo. cab actual.
 **cArgv**
 </dt> <dd>
 
-Argc predeterminado de extracción automática.
+Argc autoextraía predeterminado.
 
 </dd> <dt>
 
 **pArgv**
 </dt> <dd>
 
-Un puntero a un puntero a los argv de extracción automática predeterminados \[ \] .
+Puntero a un puntero al argumento predeterminado autoextrayendo \[ \] .
 
 </dd> <dt>
 
 **fDestructive**
 </dt> <dd>
 
-Marca que reduce el espacio en disco necesario cuando se establece en **true**.
+Marca que minimiza el espacio en disco necesario cuando se establece en **TRUE.**
 
 </dd> <dt>
 
 **iCurrentFolder**
 </dt> <dd>
 
-Si **fDestructive** está establecido en **true**, extraiga solo la carpeta actual.
+Si **fDestructive** se establece en **TRUE,** extraiga solo la carpeta actual.
 
 </dd> </dl>
 
@@ -363,7 +363,7 @@ Si **fDestructive** está establecido en **true**, extraiga solo la carpeta actu
 [**DeleteExtractedFiles**](deleteextractedfiles.md)
 </dt> <dt>
 
-[**Extracción**](extract.md)
+[**Extracto**](extract.md)
 </dt> </dl>
 
  

@@ -1,36 +1,36 @@
 ---
 title: Cómo usar un duplicado de fuente
-description: En esta sección se explica cómo usar un duplicado de fuente para aplicar varios cambios a un intervalo de texto a la vez.
+description: En esta sección se explica cómo usar una fuente duplicada para aplicar una serie de cambios a un intervalo de texto, todos a la vez.
 ms.assetid: CF0123E5-313F-4583-872F-6FE954F1C9E8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52dce0481b59fe9955b93a00b2c0d703c5c695ef
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 4c5558d4866c888e33ba31ad1a65f6b32a1c675ebe759bc5f24d2904c1ebce0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103995046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696005"
 ---
 # <a name="how-to-use-a-font-duplicate"></a>Cómo usar un duplicado de fuente
 
-En esta sección se explica cómo usar un duplicado de fuente para aplicar varios cambios a un intervalo de texto a la vez.
+En esta sección se explica cómo usar una fuente duplicada para aplicar una serie de cambios a un intervalo de texto, todos a la vez.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 ### <a name="use-a-font-duplicate"></a>Usar un duplicado de fuente
 
-En el ejemplo siguiente se muestra cómo se puede usar un duplicado de fuente para aplicar un número de cambios a un intervalo de una vez.
+En el ejemplo siguiente se muestra cómo se puede usar un duplicado de fuente para aplicar una serie de cambios a un intervalo a la vez.
 
 
 ```C++
@@ -81,15 +81,15 @@ void ChangeFontNameSizeBold(ITextSelection *pSel)
 [Usar el modelo de objetos de texto](using-the-text-object-model.md)
 </dt> <dt>
 
-[Usar controles Rich Edit](using-rich-edit-controls.md)
+[Usar controles rich edit](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: bf8e13cff80ddea4e102c045c174565e7e835274
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 65ec9eb21637268989b181e7a8f7099651d2ae3b4d357aa570dddc9ee4c270ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956584"
 ---
 # <a name="ntgdiddcreatesurface-function"></a>Función NtGdiDdCreateSurface
 
@@ -103,19 +103,19 @@ Puntero a una [**estructura \_ CREATESURFACEDATA de DD**](/windows/win32/api/ddr
 *puhSurface* \[ out\]
 </dt> <dd>
 
-La API de DirectDraw la usa y el controlador no debe rellenarla.
+La API de DirectDraw la usa y el controlador no debe rellenarlo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**NtGdiDdCreateSurface devuelve** uno de los siguientes códigos de devolución de llamada.
+**NtGdiDdCreateSurface** devuelve uno de los siguientes códigos de devolución de llamada.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ correcto, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es correcto para \_ DD, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
 | <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
@@ -126,15 +126,15 @@ La API de DirectDraw la usa y el controlador no debe rellenarla.
 
 Se recomienda que la aplicación llame a [IDirectDraw7::CreateSurface](/windows/win32/api/ddraw/nf-ddraw-idirectdraw7-createsurface) en lugar de usar esta función.
 
-Al crear una cadena de superficies adjuntas, como una cadena de intercambio o cadena o mapas mip, se debe llamar primero a [**NtGdiDdCreateSurfaceObject**](-dxgkernel-ntgdiddcreatesurfaceobject.md) para cada superficie. A continuación, llame a [**NtGdiDdAttachSurface para**](-dxgkernel-ntgdiddattachsurface.md) adjuntarlos. Por último, llame **a NtGdiDdCreateSurface** solo para la primera superficie de la cadena. En este caso, *hSurface sería el* identificador devuelto por **NtGdiDdCreateSurfaceObject** para la primera superficie de la cadena.
+Al crear una cadena de superficies adjuntas, como una cadena de intercambio o cadena o mapas mipmap, se debe llamar primero a [**NtGdiDdCreateSurfaceObject**](-dxgkernel-ntgdiddcreatesurfaceobject.md) para cada superficie. A [**continuación, llame a NtGdiDdAttachSurface**](-dxgkernel-ntgdiddattachsurface.md) para adjuntarlos. Por último, llame **a NtGdiDdCreateSurface** solo para la primera superficie de la cadena. En este caso, *hSurface sería* el identificador devuelto por **NtGdiDdCreateSurfaceObject** para la primera superficie de la cadena.
 
-**Solo se debe llamar a NtGdiDdCreateSurface** para crear superficies en memoria de vídeo local y no local. Nunca se debe llamar a para crear superficies de memoria del sistema. Para crear superficies de memoria del sistema, use [**NtGdiDdCreateSurfaceObject en su**](-dxgkernel-ntgdiddcreatesurfaceobject.md) lugar.
+**Solo se debe llamar a NtGdiDdCreateSurface** para crear superficies en la memoria de vídeo local y no local. Nunca se debe llamar a para crear superficies de memoria del sistema. Para crear superficies de memoria del sistema, use [**NtGdiDdCreateSurfaceObject en su**](-dxgkernel-ntgdiddcreatesurfaceobject.md) lugar.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
@@ -142,7 +142,7 @@ Al crear una cadena de superficies adjuntas, como una cadena de intercambio o ca
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: Indica que el navegador ha terminado de reproducirse el segmento especificado en una llamada a IDvdControl2::P layPeriodInTitleAutoStop.
+description: Indica que el navegador ha terminado de reproducir el segmento especificado en una llamada a IDvdControl2::P layPeriodInTitleAutoStop.
 ms.assetid: 1716eabe-f106-436a-8a6a-ca43cee9341c
-title: EC_DVD_PLAYPERIOD_AUTOSTOP (Dvdevcode. h)
+title: EC_DVD_PLAYPERIOD_AUTOSTOP (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: c2081c8a5b7e5b6bd2165781af9552722ed9ddee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4a44495f40608580268cdc162e26dc47b45ffa452a8017a5faff4d672b388704
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928435"
 ---
-# <a name="ec_dvd_playperiod_autostop"></a>\_detención de \_ PLAYPERIOD de DVD de EC \_
+# <a name="ec_dvd_playperiod_autostop"></a>EC \_ DVD \_ PLAYPERIOD \_ AUTOSTOP
 
-Indica que el navegador ha terminado de reproducirse el segmento especificado en una llamada a [**IDvdControl2::P layperiodintitleautostop**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-playperiodintitleautostop).
+Indica que el navegador ha terminado de reproducir el segmento especificado en una llamada a [**IDvdControl2::P layPeriodInTitleAutoStop**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-playperiodintitleautostop).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -42,11 +42,11 @@ Cero.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento se desencadena en el dominio de título.
+Este evento se genera en el dominio Title.
 
-Este evento también se envía cuando se cancela la reproducción antes de que el navegador finalice la reproducción del segmento especificado.
+Este evento también se envía cuando se cancela la reproducción antes de que el navegador termine de reproducir el segmento especificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este evento también se envía cuando se cancela la reproducción antes de que e
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dvdevcode.h (incluir Dshow.h)</dt> </dl> |
 
 
 

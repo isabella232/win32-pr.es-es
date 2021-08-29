@@ -1,7 +1,7 @@
 ---
-description: El método DisplaySampleTimes dibuja las marcas de tiempo de un ejemplo multimedia en la parte superior de la imagen de vídeo.
+description: El método DisplaySampleTimes dibuja las marcas de tiempo de un ejemplo multimedia encima de la imagen de vídeo.
 ms.assetid: 3741dc74-5311-4cb1-9e6b-4a8bf6113477
-title: Método CDrawImage. DisplaySampleTimes (Winutil. h)
+title: Método CDrawImage.DisplaySampleTimes (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9988aaedf9a1c01c83412cdbe9e00533556c9b15
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b81f8cd1f7e894319b3cd2e48332c9544c6c986f04c2ed87f9014ab331922b41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909965"
 ---
-# <a name="cdrawimagedisplaysampletimes-method"></a>CDrawImage. DisplaySampleTimes, método
+# <a name="cdrawimagedisplaysampletimes-method"></a>Método CDrawImage.DisplaySampleTimes
 
-El `DisplaySampleTimes` método dibuja las marcas de tiempo de un ejemplo multimedia en la parte superior de la imagen de vídeo.
+El `DisplaySampleTimes` método dibuja las marcas de tiempo de un ejemplo multimedia sobre la imagen de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void DisplaySampleTimes(
 *pSample* 
 </dt> <dd>
 
-Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
+Puntero a la [**interfaz IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) del ejemplo.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Puntero a la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-i
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo se llama a este método en las compilaciones de depuración.
 
@@ -63,8 +63,8 @@ Solo se llama a este método en las compilaciones de depuración.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Solo se llama a este método en las compilaciones de depuración.
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> </dl>
 
  

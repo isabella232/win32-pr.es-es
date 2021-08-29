@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SETLISTGAP (commctrl. h)
-description: Establece la distancia entre los botones de la barra de herramientas en una barra de herramientas concreta.
+title: TB_SETLISTGAP mensaje (Commctrl.h)
+description: Establece la distancia entre los botones de la barra de herramientas de una barra de herramientas específica.
 ms.assetid: ca8ba6e4-cf70-41ca-ac61-cd13671d4010
 keywords:
-- TB_SETLISTGAP controles de mensajes de Windows
+- TB_SETLISTGAP controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 224a709b7beefcfdf49ea7838f905977487aca8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6192a002fcc2aec52c6c294b9eaad3fc55af3bfa3d01a092ae44f5c6d4087559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103904984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078179"
 ---
-# <a name="tb_setlistgap-message"></a>\_Mensaje SETLISTGAP TB
+# <a name="tb_setlistgap-message"></a>Mensaje \_ SETLISTGAP de TB
 
-Establece la distancia entre los botones de la barra de herramientas en una barra de herramientas concreta.
+Establece la distancia entre los botones de la barra de herramientas de una barra de herramientas específica.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -47,9 +47,9 @@ ignorado.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El intervalo entre los botones solo se aplica a la ventana de control de la barra de herramientas que recibe este mensaje. La recepción de este mensaje desencadena un reenvío de la barra de herramientas, si la barra de herramientas está visible actualmente.
+La diferencia entre los botones solo se aplica a la ventana de control de la barra de herramientas que recibe este mensaje. La recepción de este mensaje desencadena un repintado de la barra de herramientas, si la barra de herramientas está visible actualmente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ El intervalo entre los botones solo se aplica a la ventana de control de la barr
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

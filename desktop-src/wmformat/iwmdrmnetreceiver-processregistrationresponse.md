@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMNetReceiver ProcessRegistrationResponse (wmdrmsdk. h)
+title: Método IWMDRMNetReceiver ProcessRegistrationResponse (Wmdrmsdk.h)
 description: El método ProcessRegistrationResponse procesa una respuesta de registro enviada por el transmisor en respuesta a un desafío de registro.
 ms.assetid: d0260e93-0a5e-494b-a723-bb62206ed55b
 keywords:
-- Método ProcessRegistrationResponse formato de Windows Media
-- Método ProcessRegistrationResponse formato de Windows Media, interfaz IWMDRMNetReceiver
-- Interfaz IWMDRMNetReceiver formato de Windows Media, método ProcessRegistrationResponse
+- ProcessRegistrationResponse, método windows Media Format
+- Método ProcessRegistrationResponse windows Media Format , interfaz IWMDRMNetReceiver
+- IWMDRMNetReceiver interface windows Media Format , ProcessRegistrationResponse method
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a77b01f443d57825d82b7cf9556d7585745bb99e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4a0461bc19aa1f3de2751516aedc8e76a0201417fe017881fb0fbd8da8156b39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930815"
 ---
-# <a name="iwmdrmnetreceiverprocessregistrationresponse-method"></a>IWMDRMNetReceiver::P método rocessRegistrationResponse
+# <a name="iwmdrmnetreceiverprocessregistrationresponse-method"></a>Método IWMDRMNetReceiver::P rocessRegistrationResponse
 
-El método **ProcessRegistrationResponse** procesa una respuesta de registro enviada por el transmisor en respuesta a un desafío de registro.
+El **método ProcessRegistrationResponse** procesa una respuesta de registro enviada por el transmisor en respuesta a un desafío de registro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,44 +44,44 @@ HRESULT ProcessRegistrationResponse(
 
 <dl> <dt>
 
-*pbRegistrationResponse* \[ de\]
+*pbRegistrationResponse* \[ En\]
 </dt> <dd>
 
 Respuesta de registro recibida del transmisor.
 
 </dd> <dt>
 
-*cbRegistrationResponse* \[ de\]
+*cbRegistrationResponse* \[ En\]
 </dt> <dd>
 
 Tamaño de la respuesta de registro en bytes.
 
 </dd> <dt>
 
-*ppunkCancellationCookie* \[ enuncia\]
+*piqueCancellationCookie* \[ out\]
 </dt> <dd>
 
-Puntero que recibe un puntero a la interfaz **IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al método [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Puntero que recibe un puntero a la **interfaz IUnknown** de un objeto que identifica esta llamada asincrónica. Este puntero de interfaz se puede usar para cancelar la llamada asincrónica llamando al [**método IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se ejecuta de forma asincrónica; una vez completado el procesamiento, el evento MEProximityCompleted se envía a la interfaz **IMFMediaEventGenerator** .
+Este método se ejecuta de forma asincrónica; Una vez completado el procesamiento, el evento MEProximityCompleted se envía a la interfaz **DEERMEDIAEventGenerator.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,7 +89,7 @@ Este método se ejecuta de forma asincrónica; una vez completado el procesamien
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

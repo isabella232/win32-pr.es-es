@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDatabaseInvalidPathException'
-title: Constructor de EsentDatabaseInvalidPathException
+description: 'Más información sobre: Constructor EsentDatabaseInvalidPathException'
+title: Constructor EsentDatabaseInvalidPathException
 TOCTitle: 'EsentDatabaseInvalidPathException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDatabaseInvalidPathException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabaseinvalidpathexception.esentdatabaseinvalidpathexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 92f1f27ec233c53b041425f0e1c6e784cca2e22d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0af9a0a781165a5795d458fcab96a9f0094f70fe06619439973c0ded37c5e3fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118780939"
 ---
-# <a name="esentdatabaseinvalidpathexception-constructor"></a>Constructor de EsentDatabaseInvalidPathException
+# <a name="esentdatabaseinvalidpathexception-constructor"></a>Constructor EsentDatabaseInvalidPathException
 
 Inicializa una nueva instancia de la clase EsentDatabaseInvalidPathException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentDatabaseInvalidPathException()
 
 [Miembros de EsentDatabaseInvalidPathException](./esentdatabaseinvalidpathexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

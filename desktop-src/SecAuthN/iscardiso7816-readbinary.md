@@ -1,7 +1,7 @@
 ---
-description: El método ReadBinary crea un comando de unidad de datos de protocolo de aplicación (APDU) que adquiere un mensaje de respuesta que proporciona la parte del contenido de un archivo elemental estructurado de forma transparente.
+description: El método ReadBinary construye un comando de unidad de datos de protocolo de aplicación (APDU) que adquiere un mensaje de respuesta que proporciona esa parte del contenido de un archivo básico estructurado transparente.
 ms.assetid: 15394c21-1e07-4ea1-8f11-817e07b31f9b
-title: 'ISCardISO7816:: ReadBinary (método) (Scardssp. h)'
+title: Método ISCardISO7816::ReadBinary (Scardssp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: a29093d8725a3390df9837f4e2f395cfcf2eef29
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17c9582ee2a32b90402f0f411331b4f95338a5d4dbcae320b55ff305a631e478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141108"
 ---
-# <a name="iscardiso7816readbinary-method"></a>ISCardISO7816:: ReadBinary (método)
+# <a name="iscardiso7816readbinary-method"></a>Método ISCardISO7816::ReadBinary
 
-\[El método **ReadBinary** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
+\[El **método ReadBinary** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
-El método **ReadBinary** crea un comando de [*unidad de datos de protocolo de aplicación*](../secgloss/a-gly.md) (APDU) que adquiere un mensaje de respuesta que proporciona la parte del contenido de un archivo elemental estructurado de forma transparente.
+El **método ReadBinary** construye un comando de unidad de datos de protocolo de aplicación (APDU) que adquiere un mensaje de respuesta que proporciona esa parte del contenido de un archivo básico estructurado transparente. [](../secgloss/a-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,35 +44,35 @@ HRESULT ReadBinary(
 
 <dl> <dt>
 
-*byP1* \[ de\]
+*byP1* \[ En\]
 </dt> <dd>
 
-El campo P1-P2, desplazado hasta el primer byte que se va a leer desde el principio del archivo. Si B8 = 1 en P1, B7 y B6 de P1 se establecen en cero (RFU bits), B5 en B1 de P1 son un identificador de EF corto y P2 es el desplazamiento del primer byte que se va a leer en las unidades de datos desde el principio del archivo. Si B8 = 0 en P1, P1 \| \| P2 es el desplazamiento del primer byte que se leerá en unidades de datos desde el principio del archivo.
+Campo P1-P2, desplazamiento hasta el primer byte que se va a leer desde el principio del archivo. Si b8=1 en P1, b7 y b6 de P1 se establecen en cero (bits RFU), b5 a b1 de P1 son un identificador ef corto y P2 es el desplazamiento del primer byte que se leerá en las unidades de datos desde el principio del archivo. Si b8=0 en P1, P1 P2 es el desplazamiento del primer byte que se va a leer en unidades de datos desde el principio \| \| del archivo.
 
 </dd> <dt>
 
-*byP2* \[ de\]
+*byP2* \[ En\]
 </dt> <dd>
 
-El campo P1-P2, desplazado hasta el primer byte que se va a leer desde el principio del archivo. Si B8 = 1 en P1, B7 y B6 de P1 se establecen en cero (RFU bits), B5 en B1 de P1 son un identificador de EF corto y P2 es el desplazamiento del primer byte que se va a leer en las unidades de datos desde el principio del archivo. Si B8 = 0 en P1, P1 \| \| P2 es el desplazamiento del primer byte que se leerá en unidades de datos desde el principio del archivo.
+Campo P1-P2, desplazamiento hasta el primer byte que se va a leer desde el principio del archivo. Si b8=1 en P1, b7 y b6 de P1 se establecen en cero (bits RFU), b5 a b1 de P1 son un identificador ef corto y P2 es el desplazamiento del primer byte que se leerá en las unidades de datos desde el principio del archivo. Si b8=0 en P1, P1 P2 es el desplazamiento del primer byte que se va a leer en unidades de datos desde el principio \| \| del archivo.
 
 </dd> <dt>
 
-*lBytesToRead* \[ de\]
+*lBytesToRead* \[ En\]
 </dt> <dd>
 
-Número de bytes que se van a leer del EF transparente.
+Número de bytes que se leerán de ef transparente.
 
-Si el campo le contiene solo ceros, dentro del límite de 256 para la longitud corta o 65536 para la longitud extendida, se deben leer todos los bytes hasta el final del archivo.
+Si el campo Le contiene solo ceros, dentro del límite de 256 para longitud corta o 65536 para longitud extendida, se deben leer todos los bytes hasta el final del archivo.
 
 </dd> <dt>
 
 *ppCmd* \[ in, out\]
 </dt> <dd>
 
-En la entrada, puntero a un objeto de interfaz [**ISCardCmd**](iscardcmd.md) o **null**.
+En la entrada, puntero a un objeto de interfaz [**ISCardCmd**](iscardcmd.md) o **NULL.**
 
-En la devolución, se rellena con el comando APDU construido por esta operación. Si *ppCmd* se ha establecido en **null**, se crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de [*tarjeta inteligente*](../secgloss/s-gly.md) y se devuelve mediante el puntero *ppCmd* .
+En la devolución, se rellena con el comando APDU construido por esta operación. Si *ppCmd se* estableció en **NULL,** [*se*](../secgloss/s-gly.md) crea internamente un objeto [**ISCardCmd**](iscardcmd.md) de tarjeta inteligente y se devuelve mediante el *puntero ppCmd.*
 
 </dd> </dl>
 
@@ -84,26 +84,26 @@ El método devuelve uno de los siguientes valores posibles.
 
 | Código devuelto                                                                                   | Descripción                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | Operación completada correctamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Operación completada correctamente.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parámetro no válido.<br/>                |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | Se pasó un puntero no válido.<br/>      |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido.<br/>      |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>                    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El comando encapsulado solo puede realizarse si el estado de seguridad de la [*tarjeta inteligente*](../secgloss/s-gly.md) cumple los atributos de seguridad del archivo elemental que se está procesando.
+El comando encapsulado solo se puede realizar [](../secgloss/s-gly.md) si el estado de seguridad de la tarjeta inteligente satisface los atributos de seguridad del archivo básico que se está procesando.
 
-Cuando el comando contiene un identificador elemental básico válido, establece el archivo como archivo elemental actual.
+Cuando el comando contiene un identificador básico corto válido, establece el archivo como archivo básico actual.
 
-Los archivos elementales sin una estructura transparente no se pueden borrar. El comando encapsulado se anula si se aplica a un archivo elemental sin una estructura transparente.
+Los archivos elementales sin una estructura transparente no se pueden borrar. El comando encapsulado anula si se aplica a un archivo básico sin una estructura transparente.
 
 Para obtener una lista de todos los métodos proporcionados por esta interfaz, vea [**ISCardISO7816**](iscardiso7816.md).
 
-Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [valores devueltos de tarjeta inteligente](authentication-return-values.md).
+Además de los códigos de error COM enumerados anteriormente, esta interfaz puede devolver un código de error de tarjeta inteligente si se llamó a una función de tarjeta inteligente para completar la solicitud. Para obtener más información, vea [Valores devueltos de tarjeta inteligente.](authentication-return-values.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,12 +111,12 @@ Además de los códigos de error COM enumerados anteriormente, esta interfaz pue
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Scardssp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 se define como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
 

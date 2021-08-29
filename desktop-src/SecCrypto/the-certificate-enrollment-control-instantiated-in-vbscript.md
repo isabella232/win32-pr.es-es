@@ -1,7 +1,7 @@
 ---
-description: Un ejemplo de Visual Basic Scripting Edition (VBScript) que usa la etiqueta de objeto para crear una instancia del objeto de control de inscripción de certificados.
+description: Ejemplo Visual Basic Scripting Edition (VBScript) que usa la etiqueta OBJECT para crear una instancia del objeto Control de inscripción de certificados.
 ms.assetid: 6e2a230e-81c1-4b63-9ad5-3edfc239ad7c
-title: El control de inscripción de certificados del que se ha creado una instancia en VBScript
+title: Control de inscripción de certificados con instancias de VBScript
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4da14c55a3c9005f820be8f8d60026bc31ac4920
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 68de4532e00f95156b0016a55d4ae7b6374936e82ef26ee04cfbf4dc0e4c72c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897316"
 ---
-# <a name="the-certificate-enrollment-control-instantiated-in-vbscript"></a>El control de inscripción de certificados del que se ha creado una instancia en VBScript
+# <a name="the-certificate-enrollment-control-instantiated-in-vbscript"></a>Control de inscripción de certificados con instancias de VBScript
 
-En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se usa la etiqueta de objeto para crear una instancia del objeto de control de inscripción de certificados. El objeto se libera de la memoria cuando sale del ámbito.
+En el Visual Basic ejemplo de Scripting Edition (VBScript) se usa la etiqueta OBJECT para crear una instancia del objeto Control de inscripción de certificados. El objeto se libera de la memoria cuando sale del ámbito.
 
 
 ```VB

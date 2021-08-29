@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInstanceUnavailableDueToFatalLogDiskFullException'
-title: Constructor de EsentInstanceUnavailableDueToFatalLogDiskFullException
+description: 'Más información sobre: Constructor EsentInstanceUnavailableDueToFatalLogDiskFullException'
+title: Constructor EsentInstanceUnavailableDueToFatalLogDiskFullException
 TOCTitle: 'EsentInstanceUnavailableDueToFatalLogDiskFullException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinstanceunavailableduetofatallogdiskfullexception.esentinstanceunavailableduetofatallogdiskfullexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 817e901321dd8f80ec2ca4901e43b573308a9e10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ccfdb6e971d01a574d034baa722ea5b1c42fcd73ef5c463001a65c8761697ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119668775"
 ---
-# <a name="esentinstanceunavailableduetofatallogdiskfullexception-constructor"></a>Constructor de EsentInstanceUnavailableDueToFatalLogDiskFullException
+# <a name="esentinstanceunavailableduetofatallogdiskfullexception-constructor"></a>Constructor EsentInstanceUnavailableDueToFatalLogDiskFullException
 
 Inicializa una nueva instancia de la clase EsentInstanceUnavailableDueToFatalLogDiskFullException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInstanceUnavailableDueToFatalLogDiskFullException()
 public EsentInstanceUnavailableDueToFatalLogDiskFullException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentInstanceUnavailableDueToFatalLogDiskFullException()
 
 [Miembros de EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

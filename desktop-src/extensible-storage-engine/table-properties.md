@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: propiedades de tabla'
+description: 'Más información sobre: Propiedades de tabla'
 title: Propiedades de tabla
 TOCTitle: Table properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.Table
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.tabl
 ms:contentKeyID: 55104150
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5aa437e1cdb9871d3c13e338209fbe05d6880a43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85cb259bad42e655af166030581daa5be1b83d34ac29ff35b66d5f41c4e0297c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120093145"
 ---
 # <a name="table-properties"></a>Propiedades de tabla
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [tabla](./table-class.md) expone los siguientes miembros.
+El [tipo](./table-class.md) Table expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -35,12 +35,12 @@ El tipo de [tabla](./table-class.md) expone los siguientes miembros.
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propiedad protegida" alt="Protected property" /></td>
 <td><a href="dn350578(v=exchg.10).md">HasResource</a></td>
-<td>Obtiene un valor que indica si el recurso subyacente está asignado actualmente. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource</a>).</td>
+<td>Obtiene un valor que indica si el recurso subyacente está asignado actualmente. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351171(v=exchg.10).md">JetTableid</a></td>
-<td>Obtiene el JET_TABLEID que esta tabla contiene.</td>
+<td>Obtiene el JET_TABLEID que contiene esta tabla.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -53,10 +53,10 @@ El tipo de [tabla](./table-class.md) expone los siguientes miembros.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Table (clase)](./table-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

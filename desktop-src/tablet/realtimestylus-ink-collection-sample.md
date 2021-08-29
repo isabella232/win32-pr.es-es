@@ -1,23 +1,23 @@
 ---
-description: Esta aplicación muestra la representación y recopilación de entradas manuscritas cuando se usa la clase RealTimeStylus.
+description: Esta aplicación muestra la colección de entrada de lápiz y la representación cuando se usa la clase RealTimeStylus.
 ms.assetid: f8bce153-cc5d-4087-896f-3f60afc80bc8
-title: Ejemplo de colección de tintas RealTimeStylus
+title: Ejemplo de colección de lápiz De RealTimeStylus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24fe67ed59ea1a69f5d0d9a2656169f2df88a450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11065a40118c83be2451f9b2ac2431e5d7edb6cf31808030861d9f059774bf78
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708398"
 ---
-# <a name="realtimestylus-ink-collection-sample"></a>Ejemplo de colección de tintas RealTimeStylus
+# <a name="realtimestylus-ink-collection-sample"></a>Ejemplo de colección de lápiz De RealTimeStylus
 
-Esta aplicación muestra la representación y recopilación de entradas manuscritas cuando se usa la clase [**RealTimeStylus**](realtimestylus-class.md) .
+Esta aplicación muestra la colección de entrada de lápiz y la representación cuando se usa la [**clase RealTimeStylus.**](realtimestylus-class.md)
 
-## <a name="the-inkcollection-project"></a>El proyecto InkCollection
+## <a name="the-inkcollection-project"></a>El archivo InkCollection Project
 
-Este ejemplo consta de una única solución que contiene un proyecto, InkCollection. La aplicación define el `InkCollection` espacio de nombres que contiene una sola clase, también denominada `InkCollection` . La clase hereda de la clase [Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) e implementa la interfaz [**IStylusAsyncPlugin**](/windows/win32/api/rtscom/nn-rtscom-istylusasyncplugin) .
+Este ejemplo consta de una única solución que contiene un proyecto, InkCollection. La aplicación define el espacio `InkCollection` de nombres que contiene una sola clase, también denominada `InkCollection` . La clase hereda de la [clase Form](/dotnet/api/system.windows.forms.form?view=netcore-3.1) e implementa la [**interfaz IStylusAsyncPlugin.**](/windows/win32/api/rtscom/nn-rtscom-istylusasyncplugin)
 
 
 ```C++
@@ -31,7 +31,7 @@ namespace InkCollection
 
 
 
-La clase InkCollection define un conjunto de constantes privadas que se usan para especificar varios grosores de la tinta. La clase también declara instancias privadas de la clase [**RealTimeStylus**](realtimestylus-class.md) , `myRealTimeStylus` , la clase [**DynamicRenderer**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) , `myDynamicRenderer` y la clase de [representador](/previous-versions/ms828481(v=msdn.10)) `myRenderer` . **DynamicRenderer** representa el [trazo](/previous-versions/ms552692(v=vs.100)) que se está recopilando actualmente. El objeto representador, `myRenderer` , representa los objetos Stroke que ya se han recopilado.
+La clase InkCollection define un conjunto de constantes privadas que se usan para especificar varios grosores de lápiz. La clase también declara instancias privadas de la clase [**RealTimeStylus,**](realtimestylus-class.md) , la `myRealTimeStylus` [**clase DynamicRenderer,**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) `myDynamicRenderer` y la clase [Renderer](/previous-versions/ms828481(v=msdn.10)) `myRenderer` . DynamicRenderer **representa** el trazo [que](/previous-versions/ms552692(v=vs.100)) se está recopilando actualmente. El objeto Representador, `myRenderer` , representa objetos Stroke que ya se han recopilado.
 
 
 ```C++
@@ -47,9 +47,9 @@ private Renderer myRenderer;
 
 
 
-La clase también declara un objeto [Hashtable](/previous-versions/windows/embedded/hh435144(v=msdn.10)) , `myPackets` , que se utiliza para almacenar los datos de paquetes que se están recopilando mediante uno o varios objetos [cursor](/previous-versions/ms552104(v=vs.100)) . Los valores de [identificador](/previous-versions/ms824826(v=msdn.10)) del objeto de [lápiz](/previous-versions/ms824824(v=msdn.10)) se usan como la clave de tabla hash para identificar de forma exclusiva los datos de paquete recopilados para un objeto de cursor determinado.
+La clase también declara un [objeto Hashtable,](/previous-versions/windows/embedded/hh435144(v=msdn.10)) , que se usa para almacenar datos de paquetes recopilados por `myPackets` uno o varios objetos [Cursor.](/previous-versions/ms552104(v=vs.100)) Los [valores id](/previous-versions/ms824824(v=msdn.10)) del objeto [Stylus](/previous-versions/ms824826(v=msdn.10)) se usan como clave de tabla hash para identificar de forma única los datos de paquete recopilados para un objeto Cursor determinado.
 
-Una instancia privada del objeto de [entrada de lápiz](/previous-versions/aa515768(v=msdn.10)) , `myInk` , almacena los objetos de [trazo](/previous-versions/ms552692(v=vs.100)) recopilados por `myRealTimeStylus` .
+Una instancia privada del objeto [Ink,](/previous-versions/aa515768(v=msdn.10)) `myInk` , almacena los objetos [Stroke](/previous-versions/ms552692(v=vs.100)) recopilados por `myRealTimeStylus` .
 
 
 ```C++
@@ -60,9 +60,9 @@ private Ink myInk;
 
 
 
-## <a name="the-form-load-event"></a>El evento de carga de formulario
+## <a name="the-form-load-event"></a>Evento de carga de formulario
 
-En el controlador de eventos [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario, `myDynamicRenderer` se crea una instancia de con el [**DynamicRenderer**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) que toma un control como argumento y `myRenderer` se construye con un constructor sin argumentos.
+En el controlador de eventos [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario, se crea una instancia de mediante dynamicrenderer que toma un control como argumento y se construye con un `myDynamicRenderer` constructor sin [](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) `myRenderer` argumento.
 
 
 ```C++
@@ -75,7 +75,7 @@ private void InkCollection_Load(object sender, System.EventArgs e)
 
 
 
-Preste atención al comentario que sigue a la creación de instancias de los representadores, ya que `myDynamicRenderer` usa los valores predeterminados de [DrawingAttributes](/previous-versions/ms837931(v=msdn.10)) al representar la tinta. Este es el comportamiento estándar. Sin embargo, si desea proporcionar a la entrada de lápiz `myDynamicRenderer` una apariencia diferente a la de la entrada de lápiz representada por `myRenderer` , puede cambiar la propiedad [DrawingAttributes](/previous-versions/ms826347(v=msdn.10)) en `myDynamicRenderer` . Para ello, quite la marca de comentario de las líneas siguientes antes de compilar y ejecutar la aplicación.
+Preste atención al comentario que sigue a la creación de instancias de los representadores, ya que usa los valores predeterminados para `myDynamicRenderer` [DrawingAttributes](/previous-versions/ms837931(v=msdn.10)) al representar la entrada de lápiz. Este es el comportamiento estándar. Sin embargo, si desea proporcionar la entrada de lápiz que representa un aspecto diferente de la entrada de lápiz que representa , puede cambiar la propiedad `myDynamicRenderer` `myRenderer` [DrawingAttributes](/previous-versions/ms826347(v=msdn.10)) en `myDynamicRenderer` . Para ello, descomprima las siguientes líneas antes de compilar y ejecutar la aplicación.
 
 
 ```C++
@@ -86,7 +86,7 @@ Preste atención al comentario que sigue a la creación de instancias de los rep
 
 
 
-A continuación, la aplicación crea el objeto [**RealTimeStylus**](realtimestylus-class.md) que se usa para recibir notificaciones del lápiz y agrega el objeto [**DynamicRenderer**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) a la cola de notificaciones de complementos sincrónicos. Concretamente `myRealTimeStylus` , `myDynamicRenderer` se agrega a la propiedad [SyncPluginCollection](/previous-versions/ms824833(v=msdn.10)) .
+A continuación, la aplicación crea el objeto [**RealTimeStylus**](realtimestylus-class.md) que se usa para recibir notificaciones de lápiz óptico y agrega el objeto [**DynamicRenderer**](/previous-versions/windows/desktop/legacy/ms701168(v=vs.85)) a la cola de notificaciones del complemento sincrónico. En concreto, `myRealTimeStylus` agrega a la propiedad `myDynamicRenderer` [SyncPluginCollection.](/previous-versions/ms824833(v=msdn.10))
 
 
 ```C++
@@ -97,7 +97,7 @@ A continuación, la aplicación crea el objeto [**RealTimeStylus**](realtimestyl
 
 
 
-A continuación, se agrega el formulario a la cola de notificaciones de complementos asincrónica. En concreto, `InkCollection` se agrega a la propiedad [AsyncPluginCollection](/previous-versions/ms824831(v=msdn.10)) . Por último, `myRealTimeStylus` y `myDynamicRenderer` están habilitados, y se crean instancias de los paquetes y myInk.
+A continuación, el formulario se agrega a la cola de notificaciones asincrónicas del complemento. En concreto, `InkCollection` se agrega a la propiedad [AsyncPluginCollection.](/previous-versions/ms824831(v=msdn.10)) Por último, `myRealTimeStylus` y `myDynamicRenderer` están habilitados, y se crea una instancia de myPackets y myInk.
 
 
 ```C++
@@ -113,7 +113,7 @@ A continuación, se agrega el formulario a la cola de notificaciones de compleme
 
 
 
-Además de enlazar los controladores de menú para cambiar el color y el tamaño de la tinta, se requiere un bloque más breve de código antes de implementar la interfaz. El ejemplo debe controlar el evento [Paint](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) del formulario. En el controlador de eventos, la aplicación debe actualizarse `myDynamicRenderer` porque es posible que se esté recopilando un objeto [Stroke](/previous-versions/ms552692(v=vs.100)) en el momento en que se produce el evento Paint. En ese caso, es necesario volver a dibujar la parte del objeto de trazo que ya se ha recopilado. El [representador](/previous-versions/ms828481(v=msdn.10)) estático se usa para volver a dibujar los objetos de trazo que ya se han recopilado. Estos trazos están en el objeto de [entrada manuscrita](/previous-versions/aa515768(v=msdn.10)) porque se colocan allí cuando se dibujan, tal como se muestra en la sección siguiente.
+Además de enlazar los controladores de menú para cambiar el color y el tamaño de la entrada de lápiz, se necesita un bloque de código más breve antes de implementar la interfaz . El ejemplo debe controlar el evento de [Paint](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) formulario. En el controlador de eventos, la aplicación debe actualizarse porque es posible que se repile un objeto Stroke en el momento en `myDynamicRenderer` que se Paint evento. [](/previous-versions/ms552692(v=vs.100)) En ese caso, es necesario volver a dibujar la parte del objeto Stroke que ya se ha recopilado. El [representador estático se](/previous-versions/ms828481(v=msdn.10)) usa para volver a dibujar objetos Stroke que ya se han recopilado. Estos trazos están en el [objeto Ink](/previous-versions/aa515768(v=msdn.10)) porque se colocan allí cuando se dibujan, como se muestra en la sección siguiente.
 
 
 ```C++
@@ -127,9 +127,9 @@ private void InkCollection_Paint(object sender, System.Windows.Forms.PaintEventA
 
 
 
-## <a name="implementing-the-istylusasyncplugin-interface"></a>Implementar la interfaz IStylusAsyncPlugin
+## <a name="implementing-the-istylusasyncplugin-interface"></a>Implementación de la interfaz IStylusAsyncPlugin
 
-La aplicación de ejemplo define los tipos de notificaciones que tiene interés en recibir en la implementación de la propiedad de [interés](/previous-versions/ms824769(v=msdn.10)) . Por lo tanto, la propiedad de tipo de interés define las notificaciones que el objeto [**RealTimeStylus**](realtimestylus-class.md) reenvía al formulario. En este ejemplo, la propiedad Interest define el interés en **StylusDown**, **packets**, **StylusUp** y las notificaciones de **error** a través de la enumeración [DataInterestMask](/previous-versions/ms824787(v=msdn.10)) .
+La aplicación de ejemplo define los tipos de notificaciones que tiene interés en recibir en la implementación de la [propiedad DataInterest.](/previous-versions/ms824769(v=msdn.10)) Por lo tanto, la propiedad DataInterest define qué notificaciones reenvía el objeto [**RealTimeStylus**](realtimestylus-class.md) al formulario. Para este ejemplo, la propiedad DataInterest define el interés en las notificaciones **StylusDown**, **Packets**, **StylusUp** y **Error** a través de la [enumeración DataInterestMask.](/previous-versions/ms824787(v=msdn.10))
 
 
 ```C++
@@ -147,7 +147,7 @@ public DataInterestMask DataInterest
 
 
 
-La notificación [StylusDown](/previous-versions/ms824779(v=msdn.10)) se produce cuando el lápiz toca la superficie del digitalizador. Cuando esto sucede, el ejemplo asigna una matriz que se usa para almacenar los datos de paquete para el objeto de [lápiz](/previous-versions/ms824824(v=msdn.10)) . El [StylusDownData](/previous-versions/ms824107(v=msdn.10)) del método StylusDown se agrega a la matriz y la matriz se inserta en la tabla hash utilizando la propiedad [ID](/previous-versions/ms824826(v=msdn.10)) del objeto Stylus como una clave.
+La [notificación StylusDown](/previous-versions/ms824779(v=msdn.10)) se produce cuando el lápiz toca la superficie del digitalizador. Cuando esto sucede, el ejemplo asigna una matriz que se usa para almacenar los datos de paquetes para el [objeto Stylus.](/previous-versions/ms824824(v=msdn.10)) [StylusDownData](/previous-versions/ms824107(v=msdn.10)) del método StylusDown se agrega a la matriz y la matriz se inserta en la tabla hash mediante la propiedad [Id](/previous-versions/ms824826(v=msdn.10)) del objeto Stylus como clave.
 
 
 ```C++
@@ -163,7 +163,7 @@ public void StylusDown(RealTimeStylus sender, StylusDownData data)
 
 
 
-La notificación de [paquetes](/previous-versions/ms824773(v=msdn.10)) se produce cuando el lápiz se mueve en la superficie del digitalizador. Cuando esto ocurre, la aplicación agrega New [StylusDownData](/previous-versions/ms824107(v=msdn.10)) en la matriz de paquetes para el objeto [Stylus](/previous-versions/ms824824(v=msdn.10)) . Para ello, se usa la propiedad [ID](/previous-versions/ms824826(v=msdn.10)) del objeto Stylus como clave para recuperar la matriz de paquetes del lápiz óptico de la tabla hash. A continuación, se insertan los datos del nuevo paquete en la matriz recuperada.
+La [notificación Paquetes](/previous-versions/ms824773(v=msdn.10)) se produce cuando el lápiz se mueve en la superficie del digitalizador. Cuando esto sucede, la aplicación agrega [el nuevo StylusDownData](/previous-versions/ms824107(v=msdn.10)) a la matriz de paquetes para el [objeto Stylus.](/previous-versions/ms824824(v=msdn.10)) Para ello, usa la propiedad [Id](/previous-versions/ms824826(v=msdn.10)) del objeto Stylus como clave para recuperar la matriz de paquetes para el lápiz óptico de la tabla hash. A continuación, los nuevos datos de paquete se insertan en la matriz recuperada.
 
 
 ```C++
@@ -175,7 +175,7 @@ public void Packets(RealTimeStylus sender, PacketsData data)
 
 
 
-La notificación [StylusUp](/previous-versions/ms824782(v=msdn.10)) se produce cuando el lápiz sale de la superficie del digitalizador. Cuando se produce esta notificación, el ejemplo recupera la matriz de paquetes para este objeto de [lápiz](/previous-versions/ms824824(v=msdn.10)) de la tabla hash y lo quita de la tabla hash, ya que ya no es necesario, agrega los nuevos datos del paquete y usa la matriz de datos de paquetes para crear un nuevo objeto [Stroke](/previous-versions/ms552692(v=vs.100)) , `stroke` .
+La [notificación StylusUp](/previous-versions/ms824782(v=msdn.10)) se produce cuando el lápiz sale de la superficie del digitalizador. Cuando se produce esta notificación, el ejemplo recupera la matriz de paquetes para este objeto [Stylus](/previous-versions/ms824824(v=msdn.10)) de la tabla hash que lo quita de la tabla hash, ya que ya no es necesario, agrega los nuevos datos de paquetes y usa la matriz de datos de paquetes para crear un nuevo objeto [Stroke,](/previous-versions/ms552692(v=vs.100)) `stroke` .
 
 
 ```C++
@@ -201,25 +201,25 @@ public void StylusUp(RealTimeStylus sender, StylusUpData data)
 
 
 
-Para ver un ejemplo en el que se muestra un uso más sólido de la clase [**RealTimeStylus**](realtimestylus-class.md) , incluido el uso de la creación de complementos personalizados, vea [ejemplo de complemento RealTimeStylus](realtimestylus-plug-in-sample.md).
+Para obtener un ejemplo que muestra un uso más sólido de la clase [**RealTimeStylus,**](realtimestylus-class.md) incluido el uso de la creación de complementos personalizados, vea Ejemplo de complemento [RealTimeStylus](realtimestylus-plug-in-sample.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Microsoft. Ink. Renderer](/previous-versions/ms552630(v=vs.100))
+[Microsoft.Ink.Renderer](/previous-versions/ms552630(v=vs.100))
 </dt> <dt>
 
-[Microsoft. StylusInput. DynamicRenderer](/previous-versions/ms826345(v=msdn.10))
+[Microsoft.StylusInput.DynamicRenderer](/previous-versions/ms826345(v=msdn.10))
 </dt> <dt>
 
-[Microsoft. StylusInput. RealTimeStylus](/previous-versions/ms824830(v=msdn.10))
+[Microsoft.StylusInput.RealTimeStylus](/previous-versions/ms824830(v=msdn.10))
 </dt> <dt>
 
-[Microsoft. StylusInput. IStylusAsyncPlugin](/previous-versions/ms824768(v=msdn.10))
+[Microsoft.StylusInput.IStylusAsyncPlugin](/previous-versions/ms824768(v=msdn.10))
 </dt> <dt>
 
-[Acceso y manipulación de la entrada del lápiz óptico](accessing-and-manipulating-stylus-input.md)
+[Acceso y manipulación de la entrada de lápiz óptico](accessing-and-manipulating-stylus-input.md)
 </dt> </dl>
 
  

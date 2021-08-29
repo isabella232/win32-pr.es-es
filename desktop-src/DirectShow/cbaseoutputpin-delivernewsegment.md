@@ -1,7 +1,7 @@
 ---
 description: El método DeliverNewSegment entrega una notificación de nuevo segmento al pin de entrada conectado.
 ms.assetid: 304f0267-88e0-4642-98a2-68ce973bdeab
-title: Método CBaseOutputPin. DeliverNewSegment (Amfilter. h)
+title: Método CBaseOutputPin.DeliverNewSegment (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3eb6d31a50095affdf38d44b69040304674ec6fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f4c89bb14377cf46e5395fc106807133d53cd090c0ba9e0eae8e103b438d69fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910611"
 ---
-# <a name="cbaseoutputpindelivernewsegment-method"></a>CBaseOutputPin. DeliverNewSegment, método
+# <a name="cbaseoutputpindelivernewsegment-method"></a>Método CBaseOutputPin.DeliverNewSegment
 
 El `DeliverNewSegment` método entrega una notificación de nuevo segmento al pin de entrada conectado.
 
@@ -47,42 +47,42 @@ virtual HRESULT DeliverNewSegment(
 *tStart* 
 </dt> <dd>
 
-Posición del medio inicial del segmento, en unidades de 100-nanosegundos.
+Posición del medio inicial del segmento, en unidades de 100 nanosegundos.
 
 </dd> <dt>
 
 *tStop* 
 </dt> <dd>
 
-Fin de la posición del medio del segmento, en unidades de 100-nanosegundos.
+Posición del medio final del segmento, en unidades de 100 nanosegundos.
 
 </dd> <dt>
 
 *dRate* 
 </dt> <dd>
 
-Velocidad a la que se debe procesar este segmento, como porcentaje de la tasa original.
+Velocidad a la que se debe procesar este segmento, como porcentaje de la velocidad original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que aparecen en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                           | Descripción                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                  | Correcto.<br/>              |
-| <dl> <dt>**VFW \_ E \_ no \_ conectada**</dt> </dl> | El PIN no está conectado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Correcto.<br/>              |
+| <dl> <dt>**VFW \_ E \_ NO \_ CONECTADO**</dt> </dl> | El pin no está conectado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método llama al método [**IPin:: NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment) en el PIN de entrada.
+Este método llama al [**método IPin::NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment) en el pin de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,8 +90,8 @@ Este método llama al método [**IPin:: NewSegment**](/windows/desktop/api/Strmi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -99,7 +99,7 @@ Este método llama al método [**IPin:: NewSegment**](/windows/desktop/api/Strmi
 
 <dl> <dt>
 
-[**Clase CBaseOutputPin**](cbaseoutputpin.md)
+[**CBaseOutputPin (clase)**](cbaseoutputpin.md)
 </dt> </dl>
 
  

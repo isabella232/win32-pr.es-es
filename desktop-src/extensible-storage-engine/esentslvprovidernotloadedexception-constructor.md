@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVProviderNotLoadedException'
-title: Constructor de EsentSLVProviderNotLoadedException
+description: 'Más información sobre: Constructor EsentSLVProviderNotLoadedException'
+title: Constructor EsentSLVProviderNotLoadedException
 TOCTitle: 'EsentSLVProviderNotLoadedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVProviderNotLoadedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvprovidernotloadedexception.esentslvprovidernotloadedexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8107c62956c26a60baee00a7cbd77067f5574d80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f556f678ece99376db34cb2c807456b8e5be57ab5839badc0da3f3e9e949237a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835125"
 ---
-# <a name="esentslvprovidernotloadedexception-constructor"></a>Constructor de EsentSLVProviderNotLoadedException
+# <a name="esentslvprovidernotloadedexception-constructor"></a>Constructor EsentSLVProviderNotLoadedException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVProviderNotLoadedException()
 public EsentSLVProviderNotLoadedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVProviderNotLoadedException()
 
 [Miembros de EsentSLVProviderNotLoadedException](./esentslvprovidernotloadedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

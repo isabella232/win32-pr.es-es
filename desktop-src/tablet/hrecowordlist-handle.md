@@ -1,19 +1,19 @@
 ---
-description: Un identificador HRECOWORDLIST se usa para administrar una lista de palabras que se adjunta a un contexto de reconocedor. Use una lista de palabras para mejorar los resultados del reconocimiento.
+description: Un identificador HRECOWORDLIST se usa para administrar una lista de palabras que se asocia a un contexto de reconocedor. Use una lista de palabras para mejorar los resultados del reconocimiento.
 ms.assetid: 7333307b-1857-48a7-bb9f-bdbd8530f093
-title: Identificador de HRECOWORDLIST (Resumen. h)
+title: Identificador HRECOWORDLIST (Recapis.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5e5d33862cacb7040a26edc23d7db04c57206c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7384873f562627f54326cfca78883c9f3a02351dad1df0bf45a23b61b03c167d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967574"
 ---
-# <a name="hrecowordlist-handle"></a>Identificador de HRECOWORDLIST
+# <a name="hrecowordlist-handle"></a>Identificador HRECOWORDLIST
 
-Un identificador **HRECOWORDLIST** se usa para administrar una lista de palabras que se adjunta a un contexto de reconocedor. Use una lista de palabras para mejorar los resultados del reconocimiento.
+Un **identificador HRECOWORDLIST** se usa para administrar una lista de palabras que se asocia a un contexto de reconocedor. Use una lista de palabras para mejorar los resultados del reconocimiento.
 
 
 ```C++
@@ -22,15 +22,15 @@ typedef HANDLE HRECOWORDLIST;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La siguiente función usa un **HRECOWORDLIST**.
+La función siguiente usa **hrecowordlist**.
 
 
 
 | Función                                         | Descripción                                         |
 |--------------------------------------------------|-----------------------------------------------------|
-| [**AddWordsToWordList**](/windows/desktop/api/recapis/nf-recapis-addwordstowordlist) | Agrega una o más palabras a la lista de palabras.<br/> |
+| [**AddWordsToWordList**](/windows/desktop/api/recapis/nf-recapis-addwordstowordlist) | Agrega una o varias palabras a la lista de palabras.<br/> |
 | [**DestroyWordList**](/windows/desktop/api/recapis/nf-recapis-destroywordlist)       | Destruye la lista de palabras actual.<br/>          |
 | [**MakeWordList**](/windows/desktop/api/recapis/nf-recapis-makewordlist)             | Crea una lista de palabras.<br/>                     |
 
@@ -44,9 +44,9 @@ La siguiente función usa un **HRECOWORDLIST**.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                        |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
-| Encabezado<br/>                   | <dl> <dt>Resumen. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Recapis.h</dt> </dl> |
 
 
 
@@ -54,7 +54,7 @@ La siguiente función usa un **HRECOWORDLIST**.
 
 <dl> <dt>
 
-[**SetWordList función)**](/windows/desktop/api/recapis/nf-recapis-setwordlist)
+[**SetWordList (Función)**](/windows/desktop/api/recapis/nf-recapis-setwordlist)
 </dt> </dl>
 
  

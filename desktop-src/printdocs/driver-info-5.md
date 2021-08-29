@@ -1,7 +1,7 @@
 ---
-description: La estructura de la información del controlador \_ \_ 5 contiene información sobre el controlador de impresora.
+description: La estructura DRIVER \_ INFO \_ 5 contiene información del controlador de impresora.
 ms.assetid: 6fb63a9f-5227-46a3-97dc-8de1968e9d63
-title: Estructura de DRIVER_INFO_5 (winspool. h)
+title: DRIVER_INFO_5 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 11281e69b70b2d87d354138a6313c8bca6673944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 450bc401a00c38b1f6782641dc5e869e6f3812abe5fb79f151c0ed3ad52eb939
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472073"
 ---
-# <a name="driver_info_5-structure"></a>Estructura de la información de controlador \_ \_ 5
+# <a name="driver_info_5-structure"></a>Driver \_ INFO \_ 5 (estructura)
 
-La estructura de la **información del controlador \_ \_ 5** contiene información sobre el controlador de impresora.
+La **estructura DRIVER INFO \_ \_ 5** contiene información del controlador de impresora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,63 +52,63 @@ typedef struct _DRIVER_INFO_5 {
 **cVersion**
 </dt> <dd>
 
-Versión del sistema operativo para el que se escribió el controlador. El valor admitido es 3.
+Versión del sistema operativo para la que se escribió el controlador. El valor admitido es 3.
 
 </dd> <dt>
 
 **pName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del controlador (por ejemplo, QMS 810).
+Puntero a una cadena terminada en NULL que especifica el nombre del controlador (por ejemplo, QMS 810).
 
 </dd> <dt>
 
 **pEnvironment**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el entorno para el que se escribió el controlador (por ejemplo, Windows x86, Windows IA64 y Windows x64).
+Puntero a una cadena terminada en NULL que especifica el entorno para el que se escribió el controlador (por ejemplo, Windows x86, Windows IA64 y Windows x64).
 
 </dd> <dt>
 
 **pDriverPath**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene el controlador de dispositivo (por ejemplo, C: \\ DRIVERS \\Pscript.dll).
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene el controlador de dispositivo (por ejemplo, C: \\ CONTROLADORES \\Pscript.dll).
 
 </dd> <dt>
 
 **pDataFile**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene los datos del controlador (por ejemplo, C: \\ drivers \\ Qms810. PPD).
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene los datos del controlador (por ejemplo, C: \\ DRIVERS \\ Qms810.ppd).
 
 </dd> <dt>
 
 **pConfigFile**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para la biblioteca de vínculos dinámicos de configuración del controlador del dispositivo (por ejemplo, C: \\ DRIVERS \\Pscrptui.dll).
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para la biblioteca de vínculos dinámicos de configuración del controlador de dispositivo (por ejemplo, C: \\ CONTROLADORES \\Pscrptui.dll).
 
 </dd> <dt>
 
 **dwDriverAttributes**
 </dt> <dd>
 
-Atributos del controlador, como UMPD/KMPD.
+Atributos de controlador, como UMPD/KMPD.
 
 </dd> <dt>
 
 **dwConfigVersion**
 </dt> <dd>
 
-Número de veces que el archivo de configuración de este controlador se ha actualizado o degradado desde el último reinicio del administrador de trabajos de impresión.
+Número de veces que el archivo de configuración de este controlador se ha actualizado o degradado desde el último reinicio del administrador de trabajos de cola.
 
 </dd> <dt>
 
 **dwDriverVersion**
 </dt> <dd>
 
-Número de veces que el archivo de controlador para este controlador se ha actualizado o degradado desde el último reinicio del administrador de trabajos de impresión.
+Número de veces que el archivo de controlador para este controlador se ha actualizado o degradado desde el último reinicio del administrador de trabajos de cola.
 
 </dd> </dl>
 
@@ -116,23 +116,23 @@ Número de veces que el archivo de controlador para este controlador se ha actua
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Información del controlador \_ \_ 5W** (Unicode) y la **\_ información del controlador \_ \_ 5A** (ANSI)<br/>                             |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ DRIVER \_ INFO \_ 5W** (Unicode) e **\_ DRIVER INFO \_ \_ 5A** (ANSI)<br/>                             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrinterDriver**](addprinterdriver.md)

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0e76bcc5-76c2-4ec0-8ddb-4042cb5ffa7d
-ms.openlocfilehash: efd1777704c775db84c7dabf54b9e06c81535fb4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8c2c2d476281c50f19d73c8af1572e1c2d8430149d8664efe14f0d5042c00542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032653"
 ---
 # <a name="fms_load-structure"></a>Estructura \_ DE FMS LOAD
 
@@ -38,7 +38,7 @@ typedef struct _FMS_LOAD {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ Longitud, en bytes, de la estructura .
 **szMenuName**
 </dt> <dd>
 
-Tipo: **\[ \_ LEN \_ \] DE TEXTO DEL MENÚ TCHAR**
+Tipo: **\[ LEN \_ \_ \] DE TEXTO DEL MENÚ TCHAR**
 
 </dd> <dd>
 
@@ -82,7 +82,7 @@ Tipo: **UINT**
 
 </dd> <dd>
 
-Valor delta del elemento de menú. Para evitar conflictos con sus propios elementos de menú, el Administrador de archivos vuelve a numerar los identificadores de elementos de menú en el menú emergente identificado por el **miembro hMenu** agregando este valor delta a cada identificador. Un archivo DLL de extensión que debe modificar un elemento de menú debe identificar el elemento agregando el valor delta al identificador del elemento de menú. El valor de este miembro puede variar de una sesión a otra.
+Valor delta del elemento de menú. Para evitar conflictos con sus propios elementos de menú, el Administrador de archivos vuelve a numerar los identificadores de elemento de menú en el menú emergente identificado por el **miembro hMenu** agregando este valor diferencial a cada identificador. Un archivo DLL de extensión que debe modificar un elemento de menú debe identificar el elemento agregando el valor delta al identificador del elemento de menú. El valor de este miembro puede variar de una sesión a otra.
 
 </dd> </dl>
 
@@ -98,7 +98,7 @@ Valor delta del elemento de menú. Para evitar conflictos con sus propios elemen
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

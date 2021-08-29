@@ -5,27 +5,27 @@ ms.tgt_platform: multiple
 title: Métodos IWbemPath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f1ae802fd7741e5b1317160991a50bd2a535a9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e808840a3ec9fcd70438bfc7b030cee665001ce16f7e85d5de15e9553e49a9f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992985"
 ---
 # <a name="iwbempath-methods"></a>Métodos IWbemPath
 
-La interfaz [**IWbemPath**](/windows/desktop/api/Wmiutils/nn-wmiutils-iwbempath) expone los métodos siguientes.
+La [**interfaz IWbemPath**](/windows/desktop/api/Wmiutils/nn-wmiutils-iwbempath) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Método CreateClassPart**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-createclasspart)
 -   [**Método DeleteClassPart**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-deleteclasspart)
 -   [**Método GetClassName**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getclassname)
--   [**GetInfo (método)**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getinfo)
+-   [**Método GetInfo**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getinfo)
 -   [**Método GetKeyList**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getkeylist)
 -   [**Método GetNamespaceAt**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getnamespaceat)
 -   [**Método GetNamespaceCount**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getnamespacecount)
--   [**Método Getscope (**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getscope)
+-   [**Método GetScope**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getscope)
 -   [**Método GetScopeAsText**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getscopeastext)
 -   [**Método GetScopeCount**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getscopecount)
 -   [**Método GetServer**](/windows/desktop/api/Wmiutils/nf-wmiutils-iwbempath-getserver)

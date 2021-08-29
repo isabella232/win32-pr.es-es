@@ -1,9 +1,9 @@
 ---
-title: Usar el códec de Windows Media Audio Professional
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Usar el códec de Windows Media Audio Professional
+title: Uso del códec Windows Media Audio Professional
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | Uso del códec Windows Media Audio Professional
 ms.assetid: 9cbd814b-da48-4690-b854-e27461d8f952
 keywords:
-- Usar el formato de Windows Media de códec de Windows Media Audio Professional
+- Usar el formato multimedia Windows media audio Professional códec de windows
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fe9165f3dc4e6d602e70ac31136a8f0cd804d1a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4da209d5af1a7371bd415e3d225bf91eb5609d9c52adc115ae4071416b09a3e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929085"
 ---
-# <a name="using-the-windows-media-audio-professional-codec"></a>Usar el códec de Windows Media Audio Professional
+# <a name="using-the-windows-media-audio-professional-codec"></a>Uso del códec Windows Media Audio Professional
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener documentación actual sobre los códecs Windows multimedia y los procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

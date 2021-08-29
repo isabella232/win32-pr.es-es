@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes LINEAGENTSTATE describen el estado de un agente en una dirección.
+description: Las constantes LINEAGENTSTATE \_ describen el estado de un agente en una dirección.
 ms.assetid: 1dbc33e7-05cc-4cb9-8904-f495b884b8db
-title: Constantes de LINEAGENTSTATE_ (TAPI. h)
+title: LINEAGENTSTATE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90b5afa8f93cfde5529f8f57fd8e48d37ecd415b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 001b760a5b566089814195b11fc39dc356a3444f5c5dc6ee26e71a471e26e338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140118"
 ---
-# <a name="lineagentstate_-constants"></a>Constantes de LINEAGENTSTATE \_
+# <a name="lineagentstate_-constants"></a>Constantes \_ LINEAGENTSTATE
 
-Las **\_ constantes LINEAGENTSTATE** describen el estado de un agente en una dirección.
+Las **constantes LINEAGENTSTATE \_** describen el estado de un agente en una dirección.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las **\_ constantes LINEAGENTSTATE** describen el estado de un agente en una dir
 
 
 
-El agente está ocupado administrando una llamada enrutada desde una cola de ACD.
+El agente está ocupado controlando una llamada enrutada desde una cola de ACD.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ El agente está ocupado administrando una llamada enrutada desde una cola de ACD
 
 
 
-El agente está ocupado administrando una llamada entrante que no se transfirió al agente desde una cola de ACD en la que el agente ha iniciado sesión.
+El agente está ocupado controlando una llamada entrante que no se ha transferido al agente desde una cola de ACD en la que el agente ha iniciado sesión.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ El agente está ocupado administrando una llamada entrante que no se transfirió
 
 
 
-El agente está ocupado administrando otro tipo de llamada, como una llamada personal de salida que no se transfiere al agente mediante un marcador de predicción. Este valor también se puede usar cuando se sabe que el agente está ocupado en una llamada, pero se desconoce el tipo de llamada.
+El agente está ocupado controlando otro tipo de llamada, como una llamada personal saliente no transferida al agente por un marcador predictivo. Este valor también se puede usar cuando se sabe que el agente está ocupado en una llamada, pero se desconoce el tipo de llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ El agente está ocupado administrando otro tipo de llamada, como una llamada per
 
 
 
-El agente está ocupado administrando una llamada saliente, como una enrutada desde una cola de marcado predictivo.
+El agente está ocupado controlando una llamada saliente, como una enrutada desde una cola de marcado predictivo.
 
 
 </dt> </dl> </dd> <dt>
@@ -67,17 +67,17 @@ Ningún agente ha iniciado sesión en la dirección.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATE_NOTREADY"></span><span id="lineagentstate_notready"></span>**LINEAGENTSTATE \_ NOhuellal**
+<span id="LINEAGENTSTATE_NOTREADY"></span><span id="lineagentstate_notready"></span>**LINEAGENTSTATE \_ NOTREADY**
 </dt> <dd> <dl> <dt>
 
 
 
-El agente ha iniciado sesión, pero está ocupado con una tarea que no es atender una llamada (por ejemplo, en un salto). No se deben enrutar llamadas adicionales al agente.
+El agente ha iniciado sesión, pero está ocupado con una tarea que no sea atender una llamada (por ejemplo, en una interrupción). No se debe enrutar ninguna llamada adicional al agente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATE_READY"></span><span id="lineagentstate_ready"></span>**LINEAGENTSTATE \_ listo**
+<span id="LINEAGENTSTATE_READY"></span><span id="lineagentstate_ready"></span>**LINEAGENTSTATE \_ READY**
 </dt> <dd> <dl> <dt>
 
 
@@ -87,22 +87,22 @@ El agente está listo para aceptar llamadas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATE_UNAVAIL"></span><span id="lineagentstate_unavail"></span>**LINEAGENTSTATE no \_ disponible**
+<span id="LINEAGENTSTATE_UNAVAIL"></span><span id="lineagentstate_unavail"></span>**LINEAGENTSTATE \_ UNAVAIL**
 </dt> <dd> <dl> <dt>
 
 
 
-El estado del agente es desconocido y nunca se conocerá. En [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus), esta condición también se puede representar mediante el miembro **dwAgentState** que se establece en 0.
+El estado del agente es desconocido y nunca se conocerá. En [**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus), esta condición también se puede representar mediante el **miembro dwAgentState** que se establece en 0.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEAGENTSTATE_UNKNOWN"></span><span id="lineagentstate_unknown"></span>**LINEAGENTSTATE \_ desconocido**
+<span id="LINEAGENTSTATE_UNKNOWN"></span><span id="lineagentstate_unknown"></span>**LINEAGENTSTATE \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 
 
-El estado del agente es desconocido actualmente, pero puede ser conocido más adelante. Puede ser un estado de transición cuando se abre por primera vez una línea o dirección.
+El estado del agente es desconocido actualmente, pero puede conocerse más adelante. Puede ser un estado transitorio cuando se abre por primera vez una línea o una dirección.
 
 
 </dt> </dl> </dd> <dt>
@@ -112,14 +112,14 @@ El estado del agente es desconocido actualmente, pero puede ser conocido más ad
 
 
 
-El agente ha completado la llamada anterior, pero sigue ocupado con el trabajo relacionado con esa llamada. El agente no debe recibir llamadas adicionales.
+El agente ha completado la llamada anterior, pero sigue ocupado por el trabajo relacionado con esa llamada. El agente no debe recibir llamadas adicionales.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los 16 bits superiores de este conjunto de constantes se reservan para las extensiones específicas del dispositivo.
+Los 16 bits superiores de este conjunto de constantes están reservados para extensiones específicas del dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -127,8 +127,8 @@ Los 16 bits superiores de este conjunto de constantes se reservan para las exten
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

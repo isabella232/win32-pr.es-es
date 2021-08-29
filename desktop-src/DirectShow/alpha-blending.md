@@ -1,42 +1,42 @@
 ---
-description: Combinación alfa
+description: Alpha Blending
 ms.assetid: 56618e74-32cc-48f8-83b6-4fc31ab6fc36
 title: Combinación alfa (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4293448849926cfc6723495619137262e004636e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4ffe2a81affdfb4fec8cd8363330cd0505851eedb96bbf635fe754c50610df82
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537475"
 ---
 # <a name="alpha-blending-directshow"></a>Combinación alfa (DirectShow)
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En este artículo se describe la combinación alfa en los [servicios de edición de DirectShow](directshow-editing-services.md) (des).
+En este artículo se describe la combinación alfa [en DirectShow Editing Services](directshow-editing-services.md) (DES).
 
-Alfa mide la transparencia de un píxel o imagen. En vídeo RGB sin comprimir de 32 bits, cuatro componentes definen cada píxel: un canal alfa (A) y tres componentes de color (RGB). Un píxel con un valor alfa de cero es completamente transparente. Un píxel con un valor alfa de 255 es opaco. Entre estos valores, el píxel tiene varios grados de transparencia.
+Alfa mide la transparencia de un píxel o una imagen. En vídeo RGB de 32 bits sin comprimir, cuatro componentes definen cada píxel: un canal alfa (A) y tres componentes de color (RGB). Un píxel con un valor alfa de cero es completamente transparente. Un píxel con un valor alfa de 255 es opaco. Entre estos valores, el píxel tiene varios grados de transparencia.
 
 DirectShow define dos tipos de medios para vídeo RGB de 32 bits:
 
--   **MEDIASUBTYPE \_ ARGB32**: el vídeo es RGB de 32 bits con un canal alfa válido.
--   **MEDIASUBTYPE \_ RGB32**: los píxeles son de 32 bits, pero el canal alfa no es necesariamente válido.
+-   **MEDIASUBTYPE \_ ARGB32:** el vídeo es RGB de 32 bits con un canal alfa válido.
+-   **MEDIASUBTYPE \_ RGB32:** los píxeles son de 32 bits, pero el canal alfa no es necesariamente válido.
 
-Para realizar la combinación alfa en DES, establezca el tipo de medio sin comprimir del grupo de vídeos en MEDIASUBTYPE \_ ARGB32. En C++, llame al método [**IAMTimelineGroup:: SetMediaType**](iamtimelinegroup-setmediatype.md) . En el formato XTL, al establecer el atributo [**bitdepth**](bitdepth-attribute.md) del elemento [**Group**](group-element.md) en 32 también se consigue esto.
+Para realizar la combinación alfa en DES, establezca el tipo de medio sin comprimir del grupo de vídeo en MEDIASUBTYPE \_ ARGB32. En C++, llame al [**método IAMTimelineGroup::SetMediaType.**](iamtimelinegroup-setmediatype.md) En el formato XTL, establecer el atributo [**bitdepth**](bitdepth-attribute.md) del elemento [**group**](group-element.md) en 32 también lo consigue.
 
 A continuación, necesita datos de vídeo que contengan un canal alfa. Hay varias opciones:
 
--   Puede usar un archivo AVI que ya tiene vídeo RGB de 32 bits con datos alfa. Actualmente, no se admite Alpha para los archivos de código fuente MPEG o Microsoft Windows Media Format (WMF).
--   DES admite archivos de mapa de bits de 32 bits (. bmp) y Targa (. TGA) con datos alfa.
--   Puede escribir un filtro de origen personalizado que cree datos RGB de 32 bits con alfa. El tipo de medio de salida debe ser **MEDIASUBTYPE \_ ARGB32**. Use el filtro como el subobjeto en un objeto de origen de la escala de tiempo.
+-   Puede usar un archivo AVI que ya tenga vídeo RGB de 32 bits con datos alfa. Actualmente, alpha no se admite para archivos de código fuente MPEG o Microsoft Windows Media Format (WMF).
+-   DES admite archivos de mapa de bits de 32 bits (.bmp) y Targa (.tga) con datos alfa.
+-   Puede escribir un filtro de origen personalizado que cree datos RGB de 32 bits con alfa. El tipo de medio de salida debe **ser MEDIASUBTYPE \_ ARGB32.** Use el filtro como subobjeto en un objeto de origen de escala de tiempo.
 
-Si el origen de vídeo no tiene alfa, puede usar un efecto que cree datos alfa. El [efecto](alpha-setter-effect.md) establecedor alfa establece el canal alfa de la imagen completa en un valor constante. Para variar el alfa a lo largo del tiempo, use la interfaz [**IPropertySetter**](ipropertysetter.md) con el efecto del establecedor alfa. El origen original no tiene que ser de 32 bits, siempre que el tipo de medio sin comprimir del grupo sea **MEDIASUBTYPE \_ ARGB32**.
+Si el origen de vídeo no tiene alfa, puede usar un efecto que cree datos alfa. El [efecto de establecedor alfa](alpha-setter-effect.md) establece el canal alfa para toda la imagen en un valor constante. Para variar el alfa a lo largo del tiempo, use la [**interfaz IPropertySetter**](ipropertysetter.md) con el efecto Alfa Setter. El origen original no tiene que ser de 32 bits, siempre y cuando el tipo de medio sin comprimir del grupo sea **MEDIASUBTYPE \_ ARGB32.**
 
-Por último, pase el vídeo a un efecto o transición que realice la combinación alfa. La [transición del compositor](compositor-transition.md) realiza la combinación alfa y la transición de la [clave](key-transition.md) puede clave mediante el valor alfa.
+Por último, pase el vídeo a un efecto o transición que realice la combinación alfa. [La transición compositora](compositor-transition.md) realiza la combinación alfa y [la](key-transition.md) transición de clave puede ser clave por valor alfa.
 
-En el siguiente proyecto de XTL de ejemplo se realiza la combinación alfa:
+El siguiente proyecto XTL de ejemplo realiza la combinación alfa:
 
 
 ```C++
@@ -69,7 +69,7 @@ En el siguiente proyecto de XTL de ejemplo se realiza la combinación alfa:
 
 <dl> <dt>
 
-[Usar servicios de edición de DirectShow](using-directshow-editing-services.md)
+[Uso de DirectShow Editing Services](using-directshow-editing-services.md)
 </dt> </dl>
 
  

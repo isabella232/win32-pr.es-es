@@ -1,9 +1,9 @@
 ---
-title: evento. offsetX
-description: El atributo offsetX recupera la coordenada x del puntero del mouse con respecto al elemento que activa el evento.
+title: event.offsetX
+description: El atributo offsetX recupera la coordenada x del puntero del mouse con respecto al elemento que activará el evento.
 ms.assetid: fce45c94-8b30-4da0-b587-23c4342ddb82
 keywords:
-- evento. offsetX Windows Media Player
+- event.offsetX Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b308c203b82324ce092f2fe8e9febb248a5ce2b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f4328c00e3dcb2bf5b84d59a51263b5a46ba5bbf9c02ce85f1e5a1dfb488f539
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862765"
 ---
-# <a name="eventoffsetx"></a>evento. offsetX
+# <a name="eventoffsetx"></a>event.offsetX
 
-El atributo **offsetX** recupera la coordenada x del puntero del mouse con respecto al elemento que activa el evento.
+El **atributo offsetX** recupera la coordenada x del puntero del mouse con respecto al elemento que activará el evento.
 
 ``` syntax
 event.offsetX
@@ -29,7 +29,7 @@ event.offsetX
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es un **número** de solo lectura (**Long**).
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,10 +45,10 @@ Este atributo es un **número** de solo lectura (**Long**).
 
 <dl> <dt>
 
-[**Atributos de evento de ambiente**](ambient-event-attributes.md)
+[**Atributos de evento ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**evento. DESREF**](event-offsety.md)
+[**event.offsetY**](event-offsety.md)
 </dt> </dl>
 
  

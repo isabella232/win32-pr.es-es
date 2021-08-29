@@ -1,19 +1,19 @@
 ---
-description: Identifica si el mensaje de prueba de correo electrónico no deseado todavía está en curso.
+description: Identifica si la prueba de correo no deseado del mensaje todavía está en curso.
 ms.assetid: 0d2037bb-05eb-4c9f-8394-22f0785ee817
-title: System. Message. ProofInProgress
+title: System.Message.ProofInProgress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6863309d6d88b2237e701fde5378bbca0e35e981
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f738ab8e2e490fbce73e062d41c3e565f6af677815ec9108e2da93b1b9ba3da2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466093"
 ---
-# <a name="systemmessageproofinprogress"></a>System. Message. ProofInProgress
+# <a name="systemmessageproofinprogress"></a>System.Message.ProofInProgress
 
-Identifica si el mensaje de prueba de correo electrónico no deseado todavía está en curso.
+Identifica si la prueba de correo no deseado del mensaje todavía está en curso.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

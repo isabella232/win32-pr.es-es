@@ -1,72 +1,72 @@
 ---
 title: Serialización
-description: La serialización es el proceso de escribir valores en las estructuras de datos de C (Structs, matrices y valores primitivos) como un elemento XML. La deserialización es el proceso inverso.
+description: La serialización es el proceso de escribir valores en estructuras de datos de C (estructuras, matrices y valores primitivos) como un elemento XML. La deserialización es el proceso inverso.
 ms.assetid: aa092156-30ae-4f8a-baa2-450f38a78153
 keywords:
-- Servicios Web de serialización para Windows
+- Servicios web de serialización para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63f986c6cec9a035424aaafe1c51f4dc0d3ee014
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 1ecfa82844a45c6a5c2fcdabbc867c08d5531fd7c9d92a16c5eb8cbd9090af01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104279756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440715"
 ---
 # <a name="serialization"></a>Serialización
 
-La serialización es el proceso de escribir valores en las estructuras de datos de C (Structs, matrices y valores primitivos) como un elemento XML. La deserialización es el proceso inverso.
+La serialización es el proceso de escribir valores en estructuras de datos de C (estructuras, matrices y valores primitivos) como un elemento XML. La deserialización es el proceso inverso.
 
 
-La serialización es el proceso de escribir valores en las estructuras de datos de C (estructuras, matrices y valores primitivos) como un elemento XML. La deserialización es el proceso inverso.
+La serialización es el proceso de escribir valores en estructuras de datos de C (estructuras, matrices y valores primitivos) como un elemento XML. La deserialización es el proceso inverso.
 
-Ambos procesos dependen de una descripción de la asignación entre las estructuras de datos de C y el XML.
+Ambos procesos se basan en una descripción de la asignación entre las estructuras de datos de C y el XML.
 
 ![Diagrama que muestra cómo la serialización y la deserialización se basan en una descripción de la asignación entre las estructuras de datos de C y el XML.](images/xmlmapping.png)
 
-Para serializar un valor, la aplicación llama a [**WsWriteElement**](/windows/desktop/api/WebServices/nf-webservices-wswriteelement), [**WsWriteAttribute**](/windows/desktop/api/WebServices/nf-webservices-wswriteattribute) o [**WsWriteType**](/windows/desktop/api/WebServices/nf-webservices-wswritetype).
+Para serializar un valor, la aplicación llama a [**WsWriteElement,**](/windows/desktop/api/WebServices/nf-webservices-wswriteelement) [**WsWriteAttribute**](/windows/desktop/api/WebServices/nf-webservices-wswriteattribute) o [**WsWriteType.**](/windows/desktop/api/WebServices/nf-webservices-wswritetype)
 
-Para deserializar un valor, la aplicación llama a [**WsReadElement**](/windows/desktop/api/WebServices/nf-webservices-wsreadelement), [**WsReadAttribute**](/windows/desktop/api/WebServices/nf-webservices-wsreadattribute) o [**WsReadType**](/windows/desktop/api/WebServices/nf-webservices-wsreadtype).
+Para deserializar un valor, la aplicación llama [**a WsReadElement,**](/windows/desktop/api/WebServices/nf-webservices-wsreadelement) [**WsReadAttribute**](/windows/desktop/api/WebServices/nf-webservices-wsreadattribute) o [**WsReadType.**](/windows/desktop/api/WebServices/nf-webservices-wsreadtype)
 
 ## <a name="security"></a>Seguridad
 
-El [lector XML](xml-reader.md) se utiliza en el proceso de deserialización. Consulte la sección seguridad en el lector XML para obtener información de seguridad relacionada con XML.
+[El Lector XML](xml-reader.md) se usa en el proceso de deserialización. Consulte la sección de seguridad del Lector XML para información de seguridad relacionada con XML.
 
-El deserializador continúa deserializando los datos hasta que se ha completado la lectura del elemento que se está deserializando. El proceso de deserialización produce un error cuando encuentra algún documento XML que no se ajusta a la descripción de los datos que se están deserializando. En ese momento, el lector XML que se está usando deja de ser válido y se devuelve un error.
+El deserializador continúa deserializar los datos hasta que haya terminado de leer el elemento que se está deserialización. Se produce un error en el proceso de deserialización cuando encuentra cualquier documento XML que no se ajuste a la descripción de los datos que se están deserialización. En ese momento, el lector XML que se usa deja de ser válido y se devuelve un error.
 
-De forma predeterminada, la deserialización es estricta. Entre las condiciones que provocan errores en la deserialización se incluyen, pero no se limita a:
+De forma predeterminada, la deserialización es estricta. Algunas condiciones que hacen que la deserialización no se puedan producir incluyen, entre otras:
 
 -   Faltan elementos esperados
--   Los campos de elemento inesperados aparecen entre los elementos necesarios
--   Contenido de elementos adicionales después de los campos obligatorios, a menos que el **WS_STRUCT_IGNORE_TRAILING_ELEMENT_CONTENT**
--   Atributos inesperados, a menos que se especifique la marca [**WS \_ struct \_ Ignore \_ \_ attributes no controlados**](https://msdn.microsoft.com/library/Dd323454(v=VS.85).aspx)
--   Valor de tipo de datos inesperado fuera del intervalo especificado
--   El recuento del elemento repetido está fuera del intervalo especificado
+-   Aparecen campos de elementos inesperados entre los elementos necesarios
+-   Contenido de elemento adicional después de los campos obligatorios, a menos que **WS_STRUCT_IGNORE_TRAILING_ELEMENT_CONTENT**
+-   Atributos inesperados, a menos que se especifique la marca [**\_ IGNORE \_ \_ UNHANDLED \_ ATTRIBUTES de WS STRUCT**](https://msdn.microsoft.com/library/Dd323454(v=VS.85).aspx)
+-   Valor de tipo de datos inesperado que está fuera del intervalo especificado
+-   El recuento de elementos repetidos está fuera del intervalo especificado
 
-La serialización de una gran cantidad de datos puede provocar una asignación de memoria excesiva y provocar ataques de denegación de servicio. El usuario que está deserializando los datos debe especificar un objeto de montón para asignar los datos y el usuario puede usar el límite de asignación del montón para evitar ataques de asignación de memoria.
+Serializar una gran cantidad de datos puede provocar una asignación excesiva de memoria y puede provocar ataques por denegación de servicio. El usuario que deserializará los datos debe especificar un objeto Montón para asignar los datos y el usuario puede usar el límite de asignación del montón para evitar ataques de asignación de memoria.
 
-La compatibilidad con el intervalo de tipos de datos, incluida la longitud máxima de la cadena, el número máximo de elementos de la matriz, etc. permite al usuario controlar el tamaño máximo de los distintos tipos de datos. El usuario puede especificar el intervalo en la descripción o el esquema de los datos para limitar el tamaño máximo de los diferentes datos.
+La compatibilidad con intervalos para tipos de datos, incluida la longitud máxima de la cadena, el número máximo de elementos en la matriz, etc., permite al usuario controlar el tamaño máximo de los distintos tipos de datos. El usuario puede especificar el intervalo en la descripción o el esquema de los datos para limitar el tamaño máximo de los distintos datos.
 
-Un valor de cadena que contiene un cero incrustado se admite en los formatos de conexión (texto, binario, MTOM). Al deserializar una cadena con un cero incrustado, el usuario debe usar una cadena de cuenta (cadena de WS \_ ) para que el cero no confunda el cálculo de la longitud de la cadena. Si un valor de cadena que contiene un cero incrustado se deserializa en un campo que espera una cadena terminada en cero, se devuelve un error y se produce un error en la deserialización. Si se usa wsutil para generar descripciones de datos, se debe utilizar la opción de cadena/String: WS \_ si se espera una cadena con cero incrustado.
+Un valor de cadena que contiene un cero incrustado se admite en los formatos de conexión (texto, binario, MTOM). Al deserializar una cadena con un cero incrustado, el usuario debe usar una cadena con recuento (WS STRING) para que el cero no confunda el cálculo de la longitud de \_ la cadena. Si un valor de cadena que contiene un cero incrustado se deserializa en un campo que espera una cadena terminada en cero, se devuelve un error y se produce un error de deserialización. Si wsutil se usa para generar descripciones de datos, se debe usar la opción /string:WS STRING si se espera una cadena con \_ cero incrustado.
 
-Las siguientes devoluciones de llamada se utilizan con la serialización:
+Las devoluciones de llamada siguientes se usan con la serialización:
 
--   [**\_devolución de \_ llamada de comparación de WS Duration \_**](/windows/desktop/api/WebServices/nc-webservices-ws_duration_comparison_callback)
--   [**\_devolución de \_ llamada de tipo de lectura de WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_read_type_callback)
--   [**\_devolución de \_ llamada de tipo de escritura de WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_write_type_callback)
+-   [**DEVOLUCIÓN DE LLAMADA \_ DE \_ COMPARACIÓN DE \_ DURACIÓN DE WS**](/windows/desktop/api/WebServices/nc-webservices-ws_duration_comparison_callback)
+-   [**WS \_ READ \_ TYPE \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_read_type_callback)
+-   [**WS \_ WRITE \_ TYPE \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_write_type_callback)
 
-Las enumeraciones siguientes se usan con la serialización:
+Las enumeraciones siguientes se usan con serialización:
 
--   [**\_asignación de campos de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping)
--   [**\_Opciones de campo de WS \_**](/windows/win32/api/webservices/ne-webservices-ws_xml_reader_encoding_type)
--   [**\_opción de lectura de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_read_option)
--   [**tipo de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_type)
--   [**\_asignación de tipo WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_type_mapping)
--   [**\_opción de escritura de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_write_option)
+-   [**ASIGNACIÓN DE \_ CAMPOS WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping)
+-   [**OPCIONES DE \_ CAMPO WS \_**](/windows/win32/api/webservices/ne-webservices-ws_xml_reader_encoding_type)
+-   [**WS \_ READ \_ OPTION**](/windows/desktop/api/WebServices/ne-webservices-ws_read_option)
+-   [**WS \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_type)
+-   [**ASIGNACIÓN DE TIPOS DE WS \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_type_mapping)
+-   [**WS \_ WRITE \_ OPTION**](/windows/desktop/api/WebServices/ne-webservices-ws_write_option)
 
-Las siguientes funciones se usan con la serialización:
+Las funciones siguientes se usan con la serialización:
 
 -   [**WsReadAttribute**](/windows/desktop/api/WebServices/nf-webservices-wsreadattribute)
 -   [**WsReadElement**](/windows/desktop/api/WebServices/nf-webservices-wsreadelement)
@@ -75,47 +75,47 @@ Las siguientes funciones se usan con la serialización:
 -   [**WsWriteElement**](/windows/desktop/api/WebServices/nf-webservices-wswriteelement)
 -   [**WsWriteType**](/windows/desktop/api/WebServices/nf-webservices-wswritetype)
 
-Las siguientes estructuras se usan con la serialización:
+Las estructuras siguientes se usan con serialización:
 
--   [**\_Descripción del atributo WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_attribute_description)
--   [**Descripción de WS \_ bool \_**](/windows/desktop/api/WebServices/ns-webservices-ws_bool_description)
--   [**Descripción de WS \_ bytes \_**](/windows/desktop/api/WebServices/ns-webservices-ws_bytes_description)
--   [**Descripción de la \_ matriz de bytes WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_byte_array_description)
--   [**Descripción de la \_ matriz de caracteres WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_char_array_description)
--   [**\_Descripción de \_ tipo \_ personalizado de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_custom_type_description)
--   [**Descripción de WS \_ DateTime \_**](/windows/desktop/api/WebServices/ns-webservices-ws_datetime_description)
--   [**Descripción de WS \_ decimal \_**](/windows/desktop/api/WebServices/ns-webservices-ws_decimal_description)
--   [**\_valor predeterminado de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_default_value)
--   [**Descripción de WS- \_ Double \_**](/windows/desktop/api/WebServices/ns-webservices-ws_double_description)
--   [**Descripción de la duración de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_duration_description)
--   [**\_Descripción del elemento WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description)
--   [**Descripción de la dirección del punto de conexión de WS \_ \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address_description)
--   [**Descripción de la \_ enumeración WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_enum_description)
--   [**\_valor de enumeración de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_enum_value)
--   [**\_Descripción del error de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_fault_description)
--   [**\_Descripción del campo WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_field_description)
--   [**Descripción de WS \_ float \_**](/windows/desktop/api/WebServices/ns-webservices-ws_float_description)
--   [**\_Descripción del GUID de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_guid_description)
--   [**Descripción de WS \_ INT16 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_int16_description)
--   [**\_Descripción de INT32 de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_int32_description)
--   [**Descripción de WS \_ INT64 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_int64_description)
--   [**Descripción de WS \_ INT8 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_int8_description)
--   [**\_intervalo de elementos de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_item_range)
--   [**Descripción de la \_ cadena WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_string_description)
--   [**Descripción de la \_ estructura WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_struct_description)
--   [**Descripción de WS \_ TIMESPAN \_**](/windows/desktop/api/WebServices/ns-webservices-ws_timespan_description)
--   [**Descripción de WS \_ UINT16 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint16_description)
--   [**Descripción de WS \_ UINT32 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint32_description)
--   [**Descripción de WS \_ UINT64 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint64_description)
--   [**Descripción de WS \_ UINT8 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint8_description)
--   [**Descripción de la Unión de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_union_description)
--   [**\_Descripción del \_ campo de unión de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_union_field_description)
--   [**\_Descripción del \_ identificador \_ único de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_unique_id_description)
--   [**Descripción de la matriz de WS \_ UTF8 \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_utf8_array_description)
--   [**Descripción de WS \_ void \_**](/windows/desktop/api/WebServices/ns-webservices-ws_void_description)
--   [**Descripción de WS \_ WSZ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_wsz_description)
--   [**\_Descripción de \_ QNAME \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_qname_description)
--   [**Descripción de la \_ cadena XML de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string_description)
+-   [**DESCRIPCIÓN DEL ATRIBUTO WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_attribute_description)
+-   [**DESCRIPCIÓN DE WS \_ BOOL \_**](/windows/desktop/api/WebServices/ns-webservices-ws_bool_description)
+-   [**DESCRIPCIÓN DE \_ BYTES WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_bytes_description)
+-   [**DESCRIPCIÓN DE LA \_ MATRIZ \_ DE BYTES WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_byte_array_description)
+-   [**DESCRIPCIÓN DE LA \_ MATRIZ WS CHAR \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_char_array_description)
+-   [**DESCRIPCIÓN DEL \_ TIPO \_ PERSONALIZADO DE \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_custom_type_description)
+-   [**DESCRIPCIÓN \_ DE DATETIME DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_datetime_description)
+-   [**WS \_ DECIMAL \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_decimal_description)
+-   [**VALOR PREDETERMINADO DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_default_value)
+-   [**WS \_ DOUBLE \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_double_description)
+-   [**DESCRIPCIÓN DE LA DURACIÓN DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_duration_description)
+-   [**DESCRIPCIÓN DEL \_ ELEMENTO \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description)
+-   [**DESCRIPCIÓN DE LA \_ DIRECCIÓN DEL PUNTO DE CONEXIÓN \_ \_ DE WS**](/windows/desktop/api/WebServices/ns-webservices-ws_endpoint_address_description)
+-   [**DESCRIPCIÓN DE \_ LA ENUMERACIÓN DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_enum_description)
+-   [**WS \_ ENUM \_ VALUE**](/windows/desktop/api/WebServices/ns-webservices-ws_enum_value)
+-   [**DESCRIPCIÓN DEL ERROR DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_fault_description)
+-   [**DESCRIPCIÓN DEL \_ CAMPO WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_field_description)
+-   [**DESCRIPCIÓN \_ DE WS FLOAT \_**](/windows/desktop/api/WebServices/ns-webservices-ws_float_description)
+-   [**DESCRIPCIÓN DEL GUID de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_guid_description)
+-   [**WS \_ INT16 \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_int16_description)
+-   [**WS \_ INT32 \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_int32_description)
+-   [**WS \_ INT64 \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_int64_description)
+-   [**WS \_ INT8 \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_int8_description)
+-   [**INTERVALO DE ELEMENTOS DE WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_item_range)
+-   [**DESCRIPCIÓN DE LA \_ CADENA WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_string_description)
+-   [**DESCRIPCIÓN DE STRUCT de WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_struct_description)
+-   [**WS \_ TIMESPAN \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_timespan_description)
+-   [**DESCRIPCIÓN DE \_ WS UINT16 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint16_description)
+-   [**DESCRIPCIÓN DE \_ WS UINT32 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint32_description)
+-   [**DESCRIPCIÓN DE \_ WS UINT64 \_**](/windows/desktop/api/WebServices/ns-webservices-ws_uint64_description)
+-   [**DESCRIPCIÓN \_ DE WS \_ UINT8**](/windows/desktop/api/WebServices/ns-webservices-ws_uint8_description)
+-   [**DESCRIPCIÓN DE WS \_ UNION \_**](/windows/desktop/api/WebServices/ns-webservices-ws_union_description)
+-   [**DESCRIPCIÓN DEL \_ CAMPO WS UNION \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_union_field_description)
+-   [**DESCRIPCIÓN DEL IDENTIFICADOR \_ \_ ÚNICO DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_unique_id_description)
+-   [**DESCRIPCIÓN DE LA \_ MATRIZ UTF8 \_ DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_utf8_array_description)
+-   [**DESCRIPCIÓN DE WS \_ VOID \_**](/windows/desktop/api/WebServices/ns-webservices-ws_void_description)
+-   [**DESCRIPCIÓN DE \_ WS \_ WSZ**](/windows/desktop/api/WebServices/ns-webservices-ws_wsz_description)
+-   [**WS \_ XML \_ QNAME \_ DESCRIPTION**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_qname_description)
+-   [**DESCRIPCIÓN DE LA \_ CADENA XML \_ DE WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_string_description)
 
  
 

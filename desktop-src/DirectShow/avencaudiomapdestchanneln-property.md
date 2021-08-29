@@ -1,19 +1,19 @@
 ---
-description: Especifica el canal de audio que se asigna al canal N en la secuencia de audio codificada.
+description: Especifica qué canal de audio se asigna al canal N en la secuencia de audio codificada.
 ms.assetid: 996c97d6-e4c6-4189-89cb-912d28327453
-title: Propiedad AVEncAudioMapDestChannelN (Codecapi. h)
+title: Propiedad AVEncAudioMapDestChannelN (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c16e8ab45c7ed7dca7a81f72596047598a629db7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 600f7fb92d52839768771434b116ec8d54915b20ab2e0c1f42ffbf0a1b8415b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104359999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824415"
 ---
-# <a name="avencaudiomapdestchanneln-property"></a>Propiedad AVEncAudioMapDestChannelN
+# <a name="avencaudiomapdestchanneln-property"></a>AvEncAudioMapDestChannelN, propiedad
 
-Especifica el canal de audio que se asigna al canal *N* en la secuencia de audio codificada.
+Especifica qué canal de audio se asigna al canal *N* en la secuencia de audio codificada.
 
 Esta propiedad es de lectura y escritura.
 
@@ -23,11 +23,11 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-guid"></a>GUID de propiedad
 
-**Vea la sección Comentarios.**
+**Vea Comentarios.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En este tema de referencia se describe un conjunto de propiedades relacionadas. Cada propiedad asigna un canal de entrada a un canal de salida especificado. Se definen las siguientes propiedades.
+En este tema de referencia se describe un conjunto de propiedades relacionadas. Cada propiedad asigna un canal de entrada a un canal de salida especificado. Se definen las propiedades siguientes.
 
 
 
@@ -35,9 +35,9 @@ En este tema de referencia se describe un conjunto de propiedades relacionadas. 
 |------------------------------------------|-------------------------|
 | **CODECAPI \_ AVEncAudioMapDestChannel0**  | Canal de destino 0.  |
 | **CODECAPI \_ AVEncAudioMapDestChannel1**  | Canal de destino 1.  |
-| **CODECAPI \_ AVEncAudioMapDestChannel2**  | Canal 2 de destino.  |
+| **CODECAPI \_ AVEncAudioMapDestChannel2**  | Canal de destino 2.  |
 | **CODECAPI \_ AVEncAudioMapDestChannel3**  | Canal de destino 3.  |
-| **CODECAPI \_ AVEncAudioMapDestChannel4**  | Canal 4 de destino.  |
+| **CODECAPI \_ AVEncAudioMapDestChannel4**  | Canal de destino 4.  |
 | **CODECAPI \_ AVEncAudioMapDestChannel5**  | Canal de destino 5.  |
 | **CODECAPI \_ AVEncAudioMapDestChannel6**  | Canal de destino 6.  |
 | **CODECAPI \_ AVEncAudioMapDestChannel7**  | Canal de destino 7.  |
@@ -60,9 +60,9 @@ En este tema de referencia se describe un conjunto de propiedades relacionadas. 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ En este tema de referencia se describe un conjunto de propiedades relacionadas. 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

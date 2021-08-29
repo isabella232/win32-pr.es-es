@@ -1,9 +1,9 @@
 ---
 title: call_as (atributo)
-description: El atributo \ Call \_ as \ permite asignar una función a la que no se puede llamar de forma remota a una función remota.
+description: El atributo \ call as\ permite asignar una función a la que no se puede llamar de forma \_ remota a una función remota.
 ms.assetid: 4078f37a-9bd7-4316-b228-afbffc4caeab
 keywords:
-- call_as el atributo MIDL
+- call_as atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 519ceabc2714e65bcb87651b74518228245afb5f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: fb1e91fb9bc06eb4644209d87b4a941a68bc6b4d58d4dc31010d284e7b0f959c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105651338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807378"
 ---
-# <a name="call_as-attribute"></a>llamar a \_ como atributo
+# <a name="call_as-attribute"></a>llamada \_ como atributo
 
-El atributo **\[ Call \_ as \]** permite asignar una función a la que no se puede llamar de forma remota a una función remota.
+La **\[ llamada \_ como \]** atributo permite asignar una función a la que no se puede llamar de forma remota a una función remota.
 
 ``` syntax
 [call_as (local-proc), [ , operation-attribute-list ] ] operation-name ;
@@ -31,34 +31,34 @@ El atributo **\[ Call \_ as \]** permite asignar una función a la que no se pue
 
 <dl> <dt>
 
-*procedimiento local* 
+*local-proc* 
 </dt> <dd>
 
 Especifica una rutina definida por la operación.
 
 </dd> <dt>
 
-*operación-atributo-lista* 
+*operation-attribute-list* 
 </dt> <dd>
 
-Especifica uno o más atributos que se aplican a la operación. Separe varios atributos con comas.
+Especifica uno o varios atributos que se aplican a la operación. Separe varios atributos con comas.
 
 </dd> <dt>
 
-*nombre de operación* 
+*operation-name* 
 </dt> <dd>
 
-Especifica la operación con nombre que se presenta a la aplicación.
+Especifica la operación con nombre presentada a la aplicación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La capacidad de asignar una función a la que no se puede llamar de forma remota a una función remota es especialmente útil en las interfaces que tienen numerosos tipos de parámetro que no se pueden transmitir a través de la red. En lugar de usar muchos **\[** [**representan \_ como**](represent-as.md) **\]** y **\[** [**transmitir \_ como**](transmit-as.md) **\]** tipos, puede combinar todas las conversiones mediante las rutinas **\[ Call \_ as \]** . Proporcione las dos **\[ llamadas \_ como \]** rutinas (lado cliente y servidor) para enlazar la rutina entre las llamadas a la aplicación y las llamadas remotas.
+La capacidad de asignar una función a la que no se puede llamar de forma remota a una función remota es especialmente útil en interfaces que tienen numerosos tipos de parámetros que no se pueden transmitir a través de la red. En lugar de usar muchos tipos de representación como y transmisión como , puede combinar todas las conversiones **\[** [**\_**](represent-as.md) mediante **\]** llamadas **\[** [**\_**](transmit-as.md) **\]** **\[ \_ \] como** rutinas. Las dos llamadas se **\[ suministran \_ como \]** rutinas (lado cliente y lado servidor) para enlazar la rutina entre las llamadas de aplicación y las llamadas remotas.
 
-El atributo **\[ Call \_ as \]** se puede usar para las interfaces de objeto. En este caso, la definición de la interfaz se puede usar para las llamadas locales, así como para las llamadas remotas, ya que la **\[ llamada \_ as \]** permite que una interfaz a la que no se puede tener acceso de forma remota se asigne de manera transparente a una interfaz remota. El atributo **\[ Call \_ as \]** no se puede usar con el modo [**/OSF**](-osf.md) .
+La **\[ llamada \_ como \]** atributo se puede usar para interfaces de objeto. En este caso, la definición de interfaz se puede usar para llamadas locales, **\[ \_ \]** así como para llamadas remotas, ya que la llamada a como permite que una interfaz a la que no se pueda acceder de forma remota se asigne de forma transparente a una interfaz remota. La **\[ llamada \_ como \]** atributo no se puede usar con [**el modo /osf.**](-osf.md)
 
-Por ejemplo, supongamos que la rutina **F1** en la interfaz de objeto **IFace** requiere numerosas conversiones entre las llamadas del usuario y lo que realmente se transmite. En los ejemplos siguientes se describen los archivos IDL y ACF de la interfaz **IFace**:
+Por ejemplo, suponga que la **rutina f1** en la interfaz de objeto **IFace** requiere numerosas conversiones entre las llamadas de usuario y lo que realmente se transmite. En los ejemplos siguientes se describen los archivos IDL y ACF para la **interfaz IFace**:
 
 En el archivo IDL de la interfaz **IFace**:
 
@@ -67,15 +67,15 @@ En el archivo IDL de la interfaz **IFace**:
 [call_as( f1 )] long Remf1( <remote parameter list> );
 ```
 
-En ACF para la interfaz **IFace**:
+En la interfaz **IFace** de ACF para :
 
 ``` syntax
 [call_as( f1 )] Remf1();
 ```
 
-Esto hace que el archivo de encabezado generado defina la interfaz utilizando la definición de **F1**, pero también proporciona códigos auxiliares para **Remf1**.
+Esto hace que el archivo de encabezado generado defina la interfaz mediante la definición de **f1,** pero también proporciona código auxiliar para **Remf1.**
 
-El compilador MIDL generará la siguiente tabla vtable en el archivo de encabezado de la interfaz **IFace**:
+El compilador MIDL generará la siguiente Vtable en el archivo de encabezado para la **interfaz IFace**:
 
 ``` syntax
 struct IFace_vtable
@@ -85,7 +85,7 @@ struct IFace_vtable
 };
 ```
 
-Después, el proxy del lado cliente tendría un proxy generado por MIDL típico para **Remf1**, mientras que el código auxiliar del lado servidor para **Remf1** sería el mismo que el código auxiliar típico generado por MIDL:
+El proxy del lado cliente tendría entonces un proxy típico generado por MIDL para **Remf1,** mientras que el código auxiliar del lado servidor para **Remf1** sería el mismo que el código auxiliar típico generado por MIDL:
 
 ``` syntax
 HRESULT IFace_Remf1_Stub ( <parameter list> ) 
@@ -99,7 +99,7 @@ HRESULT IFace_Remf1_Stub ( <parameter list> )
 }
 ```
 
-A continuación, se deben codificar manualmente las dos **\[ llamadas \_ como \]** rutinas de enlace (lado cliente y servidor):
+A continuación, **\[ las dos llamadas \_ como \]** rutinas de enlace (lado cliente y lado servidor) se deben codificar manualmente:
 
 ``` syntax
 HRESULT f1_Proxy ( <users parameter list> ) 
@@ -121,7 +121,7 @@ long IFace_f1_Stub ( <remote parameter list> )
     }
 ```
 
-En el caso de las interfaces de objeto, estos son los prototipos para las rutinas de enlace.
+En el caso de las interfaces de objetos, estos son los prototipos de las rutinas de enlace.
 
 Para el lado cliente:
 
@@ -130,14 +130,14 @@ Para el lado cliente:
     <local_parameter_list> );
 ```
 
-En el lado del servidor:
+Para el lado servidor:
 
 ``` syntax
 <remote_return_type>  <interface>_<local_routine>_stub(
     <remote_parameter_list> );
 ```
 
-En el caso de las interfaces que no son de objeto, estos son los prototipos de las rutinas de Bond.
+En el caso de las interfaces que no son objetos, estos son los prototipos de las rutinas de enlace.
 
 Para el lado cliente:
 
@@ -145,7 +145,7 @@ Para el lado cliente:
 <local_return_type>  <local_routine> ( <local_parameter_list> );
 ```
 
-En el lado del servidor:
+Para el lado servidor:
 
 ``` syntax
 <local_return_type>  <interface>_v<maj>_<min>_<local_routine> ( 
@@ -165,9 +165,9 @@ En el lado del servidor:
 [**transmitir \_ como**](transmit-as.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

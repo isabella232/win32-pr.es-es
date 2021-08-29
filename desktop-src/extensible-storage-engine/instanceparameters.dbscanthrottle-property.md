@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. DbScanThrottle (propiedad)'
-title: Propiedad InstanceParameters. DbScanThrottle
+description: 'Más información sobre: Propiedad InstanceParameters.DbScanThrottle'
+title: Propiedad InstanceParameters.DbScanThrottle
 TOCTitle: 'DbScanThrottle property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.DbScanThrottle
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.dbscanthrottle(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 433f66e4143f3005416f2e9dd119fae77a1191dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b2293df80cdf4d5b19407d2719ba2d3252e87c2673f4ac2e011b66067a0dd7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834415"
 ---
-# <a name="instanceparametersdbscanthrottle-property"></a>Propiedad InstanceParameters. DbScanThrottle
+# <a name="instanceparametersdbscanthrottle-property"></a>Propiedad InstanceParameters.DbScanThrottle
 
-Obtiene o establece la limitación del análisis de base de datos, en milisegundos.
+Obtiene o establece la limitación del examen de la base de datos, en milisegundos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int DbScanThrottle { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

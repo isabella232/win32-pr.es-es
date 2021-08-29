@@ -1,7 +1,7 @@
 ---
 description: Puntero al filtro que contiene este pin.
 ms.assetid: 3f085f21-f692-44f0-813d-6889700849db
-title: 'Miembro CSourceStream:: m_pFilter (Source. h)'
+title: Miembro CSourceStream::m_pFilter (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4d26738811f012e1c7dafcec5881a4265be78651
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fab4735d583187495bd5a580b0750f22cd65ee588b0f3834686c2c5b2a3c6849
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538718"
 ---
-# <a name="csourcestreamm_pfilter-member"></a>Miembro pFilter CSourceStream:: m \_
+# <a name="csourcestreamm_pfilter-member"></a>Miembro PFilter CSourceStream::m \_
 
 Puntero al filtro que contiene este pin.
 
@@ -42,8 +42,8 @@ CSource *m_pFilter;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CSource *m_pFilter;
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

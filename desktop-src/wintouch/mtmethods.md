@@ -1,26 +1,26 @@
 ---
 title: Métodos (IManipulationProcessor)
-description: Esta sección contiene los métodos de la interfaz IManipulationProcessor.
+description: Esta sección contiene los métodos para la interfaz IManipulationProcessor.
 ms.assetid: 33736f79-cb61-449c-80b9-1358db2621e9
 keywords:
-- Windows Touch, interfaz IManipulationProcessor
-- Windows Touch, métodos de interfaz
-- manipulaciones, interfaz IManipulationProcessor
-- Interfaz IManipulationProcessor, métodos
+- Windows Interfaz Touch,IManipulationProcessor
+- Windows Métodos touch,interface
+- manipulations,IManipulationProcessor (interfaz)
+- IManipulationProcessor interface,methods
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 995a848e18b8308d46ceda717bf7eec291953505
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 161ac2fc0d30c70e0f305de55a3f65b2eb827a925615977ce726eaa200615806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104421828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964204"
 ---
 # <a name="methods-imanipulationprocessor"></a>Métodos (IManipulationProcessor)
 
-Esta sección contiene los métodos de la interfaz [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) .
+Esta sección contiene los métodos para la [**interfaz IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor)
 
-La interfaz [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) expone los siguientes métodos.
+La interfaz [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) expone los métodos siguientes.
 
 
 
@@ -31,12 +31,12 @@ La interfaz [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-m
 | [**GetExpansionVelocity**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getexpansionvelocity) | Calcula la velocidad a la que se expande el objeto de destino.                              |
 | [**GetVelocityX**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getvelocityx)                 | Calcula y devuelve la velocidad horizontal del objeto de destino.                    |
 | [**GetVelocityY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getvelocityy)                 | Calcula y devuelve la velocidad vertical.                                            |
-| [**ProcessDown**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processdown)                   | Inserta datos en el procesador de manipulación asociado a un destino.                       |
-| [**ProcessMove**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processmove)                   | Inserta datos en el procesador de manipulación asociado a un destino.                       |
-| [**ProcessUp**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processup)                       | Inserta datos en el procesador de manipulación asociado a un destino.                       |
-| [**ProcessDownWithTime**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processdownwithtime)   | Inserta datos, incluida una marca de tiempo en el procesador de manipulación asociado a un destino. |
-| [**ProcessMoveWithTime**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processmovewithtime)   | Inserta datos, incluida una marca de tiempo en el procesador de manipulación asociado a un destino. |
-| [**ProcessUpWithTime**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processupwithtime)       | Inserta datos, incluida una marca de tiempo en el procesador de manipulación asociado a un destino. |
+| [**ProcessDown**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processdown)                   | Alimenta los datos al procesador de manipulación asociado a un destino.                       |
+| [**ProcessMove**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processmove)                   | Alimenta los datos al procesador de manipulación asociado a un destino.                       |
+| [**ProcessUp**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processup)                       | Alimenta los datos al procesador de manipulación asociado a un destino.                       |
+| [**ProcessDownWithTime**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processdownwithtime)   | Alimenta los datos, incluida una marca de tiempo, al procesador de manipulación asociado a un destino. |
+| [**ProcessMoveWithTime**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processmovewithtime)   | Alimenta los datos, incluida una marca de tiempo, al procesador de manipulación asociado a un destino. |
+| [**ProcessUpWithTime**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processupwithtime)       | Alimenta los datos, incluida una marca de tiempo, al procesador de manipulación asociado a un destino. |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Modificador /target
-description: El modificador/Target permite al compilador MIDL habilitar las optimizaciones disponibles solo en las versiones recientes de Windows. El modificador/Target activa automáticamente modificadores adicionales.
+description: El modificador /target permite al compilador MIDL habilitar las optimizaciones disponibles solo en versiones recientes de Windows. El modificador /target activa automáticamente modificadores adicionales.
 ms.assetid: 8c5aa319-e6a6-4803-99f3-ed8751d565d5
 keywords:
-- modificador/Target MIDL
+- /target switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: 43c17c6bb06eca94a1738ddc71255cd7cd441c5c
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: b1c4292ed3b1fba2d3f3d9bd350c06cee89d2ba569103db1b677bc690be4af15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104083522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895785"
 ---
 # <a name="target-switch"></a>Modificador /target
 
-El modificador **/target** permite al compilador MIDL habilitar las optimizaciones disponibles solo en las versiones recientes de Windows. El modificador **/target** activa automáticamente modificadores adicionales.
+El **modificador /target** permite al compilador MIDL habilitar las optimizaciones disponibles solo en versiones recientes de Windows. El **modificador /target** activa automáticamente modificadores adicionales.
 
 ``` syntax
 midl /target level
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 <dl> <dt>
 
@@ -38,47 +38,47 @@ Especifica el nivel de destino, como NT50, NT51, NT60, NT61, NT62 o NT100.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modificador **/target** activa automáticamente modificadores adicionales, según el sistema operativo, como se especifica en la tabla siguiente:
+El **modificador /target** activa automáticamente modificadores adicionales, en función del sistema operativo, como se especifica en la tabla siguiente:
 
 
 
-| Sistema operativo | nivel/Target | Conmutadores activados                     |
+| Sistema operativo | /target level | Conmutadores activados                     |
 |------------------|---------------|----------------------------------------|
-| Windows 2000     | NT50          | /Oicf/error All/Robust               |
-| Windows XP       | NT51          | /Oicf/error All/Robust/protocolo All |
-| Windows Vista    | NT60          | /Oicf/error All/Robust/protocolo All |
-| Windows 7        | NT61          | /Oicf/error All/Robust/protocolo All |
-| Windows 8        | NT62          | /Oicf/error All/Robust/protocolo All |
-| Windows 10       | NT100         | /Oicf/error All/Robust/protocolo All |
+| Windows 2000     | NT50          | /Oicf /error all /robust               |
+| Windows XP       | NT51          | /Oicf /error all /robust /protocol all |
+| Windows Vista    | NT60          | /Oicf /error all /robust /protocol all |
+| Windows 7        | NT61          | /Oicf /error all /robust /protocol all |
+| Windows 8        | NT62          | /Oicf /error all /robust /protocol all |
+| Windows 10       | NT100         | /Oicf /error all /robust /protocol all |
  
 
-Para asegurarse de que un código auxiliar se ejecute en el sistema especificado por el modificador **/target** , MIDL emite un error cuando una característica disponible solo en una versión más reciente de Windows está presente. En la tabla siguiente se especifica el nivel mínimo de **/target** necesario para habilitar la característica. Los niveles de destino más altos incluyen todas las características de los niveles de destino inferiores.
+Para asegurarse de que un código auxiliar se ejecuta en el sistema especificado por el modificador **/target,** MIDL emite un error cuando una característica disponible solo en una versión más reciente de Windows está presente. En la tabla siguiente se especifica el nivel **mínimo /target** necesario para habilitar la característica. Los niveles de destino más altos incluyen todas las características de los niveles de destino inferiores.
 
 
 
-| Nivel mínimo necesario de/Target | Características                                                                                                                                                                                          |
+| Nivel mínimo requerido /target | Características                                                                                                                                                                                          |
 |--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NT50                           | /Robust<br/> \[message\]<br/> \[async\]<br/> \[\_UUID asincrónico\]<br/> \[notificar \] en modo/Oicf<br/> \[codificar \] o \[ descodificar \] en modo/Oicf<br/>                   |
-| NT51                           | compatibilidad con/protocolo 64 bits<br/> \[\_omitir parcial\]<br/> \[forzar \_ asignación\]<br/>                                                                                                 |
-| NT60                           | Serialización de estructura compleja forzada<br/> Identificadores de contexto en una matriz o estructura<br/> \[\]compatibilidad de intervalo para cadenas no de tamaño<br/> \[escribir \_ el \_ identificador de contexto STRICT \_\]<br/> |
-| NT61                           | Las llamadas directas de código auxiliar COM para interfaces con menos de 32 métodos requieren la vinculación de códigos auxiliares COM con **OLE32.DLL**.<br/>                                                                          |
+| NT50                           | /robust<br/> \[message\]<br/> \[async\]<br/> \[uuid \_ asincrónico\]<br/> \[notificar \] en modo /Oicf<br/> \[codificación \] o \[ descodificación en modo \] /Oicf<br/>                   |
+| NT51                           | Compatibilidad con /protocol de 64 bits<br/> \[partial \_ ignore\]<br/> \[forzar \_ asignación\]<br/>                                                                                                 |
+| NT60                           | Marshalling de estructuras complejas forzadas<br/> Identificadores de contexto en una matriz o estructura<br/> \[Compatibilidad \] con intervalos para cadenas sin formato<br/> \[identificador \_ de contexto estricto de \_ \_ tipo\]<br/> |
+| NT61                           | Las llamadas directas de código auxiliar COM para interfaces con menos de 32 métodos requieren la vinculación de códigos auxiliares COM **OLE32.DLL**.<br/>                                                                          |
 | NT62                           | Compatibilidad con ARM<br/> Compatibilidad con WinRT<br/>                                                                                                                                                   |
-| NT100                          | \[\]compatibilidad con system_handle<br /> |
+| NT100                          | \[system_handle \] compatibilidad<br /> |
 
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/Target NT50**
+**midl /target NT50**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [**/osf**](-osf.md)

@@ -1,11 +1,11 @@
 ---
-title: Schema-Version atributo)
+title: Schema-Version atributo
 description: Número de versión del esquema.
 ms.assetid: b937d704-cd76-41fc-84df-5ea614b1785d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Schema-Version
-- Esquema de AD de atributos de schemaVersion
+- Schema-Version esquema de AD del atributo
+- Esquema de AD del atributo schemaVersion
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d00ca6ad8626933b39a82b2288f89454225ed47f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8172f4b86a212923d890d4f496ceb1e4e09b010488cd6d3eb94d8d1a2161634f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923255"
 ---
-# <a name="schema-version-attribute"></a>Schema-Version atributo)
+# <a name="schema-version-attribute"></a>Schema-Version atributo
 
 Número de versión del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Schema-Version                       |
-| Nombre para mostrar de LDAP | schemaVersion                        |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| Ldap-Display-Name | schemaVersion                        |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | Cada vez que se libera el esquema.    |
 | Attribute-Id      | 1.2.840.113556.1.2.471               |
-| System-ID-GUID    | bf967a2c-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf967a2c-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -44,7 +44,7 @@ Número de versión del esquema.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Número de versión del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | 0x817C                                      |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -75,15 +75,15 @@ Número de versión del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | 0x817C                                      |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -92,19 +92,19 @@ Número de versión del esquema.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | 0x817C                                      |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -117,15 +117,15 @@ Número de versión del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | 0x817C                                      |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -138,15 +138,15 @@ Número de versión del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | 0x817C                                      |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -159,15 +159,15 @@ Número de versión del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | 0x817C                                      |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -180,15 +180,15 @@ Número de versión del esquema.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | 0x817C                                      |
-| System-Only            | False                                       |
-| Tiene un único valor       | False                                       |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Falso                                       |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |

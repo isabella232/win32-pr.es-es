@@ -4,26 +4,26 @@ description: Selección del motor de voz
 ms.assetid: f5afedc6-093f-4247-a5c8-277d6b2d646c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a548f0201ba37c8acb867091cc690a913277ff06
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3998817e5eba041b1fb20eb9df64ee26217da974ff4d91869af05fbf15cc4f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119960965"
 ---
 # <a name="speech-engine-selection"></a>Selección del motor de voz
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-El valor de identificador de idioma de un carácter determina su idioma de entrada de voz predeterminado; El agente de Microsoft solicita a SAPI un motor instalado que coincida con ese idioma. Si una aplicación cliente no especifica una preferencia de idioma, Microsoft Agent intentará encontrar un motor de reconocimiento de voz que coincida con el ID. de idioma predeterminado del usuario (con el identificador de idioma principal y, después, el identificador de idioma secundario). Si no hay ningún motor disponible que coincida con este idioma, la voz se deshabilitará para ese carácter.
+La configuración del identificador de idioma de un carácter determina su idioma de entrada de voz predeterminado; Microsoft Agent solicita SAPI para un motor instalado que coincida con ese idioma. Si una aplicación cliente no especifica una preferencia de idioma, Microsoft Agent intentará encontrar un motor de reconocimiento de voz que coincida con el identificador de idioma predeterminado del usuario (mediante el identificador de idioma principal y, a continuación, el identificador de idioma menor). Si no hay ningún motor disponible que coincida con este idioma, la voz se deshabilita para ese carácter.
 
-También puede solicitar un motor de reconocimiento de voz específico especificando su identificador de modo (mediante la propiedad [**SRModeID**](srmodeid-property.md) de caracteres). Sin embargo, si el identificador de idioma para ese ID. de modo no coincide con la configuración de idioma del cliente, se producirá un error en la llamada (se producirá un error en el control). Después, el motor de reconocimiento de voz seguirá siendo el último que el cliente estableció correctamente el motor, o bien, si no es así, el motor que coincide con el identificador de idioma actual del sistema. Si todavía no hay ninguna coincidencia, la entrada de voz no está disponible para ese cliente.
+También puede solicitar un motor de reconocimiento de voz específico especificando su identificador de modo (mediante la [**propiedad SRModeID del**](srmodeid-property.md) carácter). Sin embargo, si el identificador de idioma de ese identificador de modo no coincide con la configuración de idioma del cliente, se producirá un error en la llamada (se producirá un error en el control ). A continuación, el motor de reconocimiento de voz seguirá siendo el último motor configurado correctamente por el cliente o, si no lo hay, el motor que coincida con el identificador de idioma del sistema actual. Si todavía no hay ninguna coincidencia, la entrada de voz no está disponible para ese cliente.
 
-El agente de Microsoft carga automáticamente un motor de reconocimiento de voz cuando la entrada de voz la inicia un usuario al presionar la tecla de método de escucha o el cliente de entrada-activo llama al método [**Listen**](listen-method.md) . Sin embargo, también se puede cargar un motor cuando se establece o se consulta su identificador de modo, se establece o se consultan las propiedades de la ventana comandos de voz, se consulta [**SRStatus**](srstatus-property.md)o cuando la voz está habilitada y el usuario muestra la página de entrada de voz de las opciones de caracteres avanzadas. Sin embargo, el agente de Microsoft solo mantiene cargados los motores de voz que usan los clientes.
+Microsoft Agent carga automáticamente un motor de reconocimiento de voz cuando un usuario inicia la entrada de voz presionando la tecla de acceso rápido Escucha o el cliente activo de entrada llama al [**método Listen.**](listen-method.md) Sin embargo, también se puede cargar un motor al establecer o consultar su identificador de modo, establecer o consultar las propiedades de la ventana Comandos de voz, consultar [**SRStatus**](srstatus-property.md)o cuando la voz está habilitada y el usuario muestra la página Entrada de voz de opciones avanzadas de caracteres. Sin embargo, Microsoft Agent solo mantiene cargados los motores de voz que usan los clientes.
 
- 
+ 
 
- 
+ 
 
 
 

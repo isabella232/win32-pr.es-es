@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6a91c3ea1cb49c4c501ab847cb63fe8a39d66665
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 87ac53e0fba57ed1e7cfb4e92d1da726e7030466954bf29f2bfb9ff14156eef6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027025"
 ---
 # <a name="d3dxshscale-function-d3dx9mathh"></a>Función D3DXSHScale (D3dx9math.h)
 
@@ -48,7 +48,7 @@ FLOAT* D3DXSHScale(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a coeficientes de salida de armónica esférica (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
+Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación genera coeficientes order-to-order. Vea la sección Comentarios.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Puntero a coeficientes de salida de armónica esférica (SH). La evaluación gen
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -103,14 +103,14 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  
