@@ -4,18 +4,18 @@ ms.assetid: 567d5542-fc7b-4d19-bc3c-b9d6e26e3387
 title: Directiva de metadatos de fotos System.Photo.PeopleNames
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4118cc8242d6dfe8a91d0bcd2b6039095fdf180037f51205d3541b9aefa2cc0d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5540356001cdd33bb7c0d3340534f9c69e230a5d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119087057"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886442"
 ---
 # <a name="systemphotopeoplenames-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.PeopleNames
 
 Directiva de metadatos de fotos para [la propiedad System.Photo.PeopleNames.](../properties/props-system-photo-peoplenames.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ Photo \_ PeopleNames
 
@@ -45,9 +45,9 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Ruta de acceso                                                           | Formato de disco |
+| Pedido de | Ruta de acceso                                                           | Formato de disco |
 |-------|----------------------------------------------------------------|-------------|
-| 1     | /xmp/ <xmpstruct> MP:RegionInfo/ <xmpbag> MPRI:Regions | ushort      |
+| 1     | /xmp/ &lt; xmpstruct &gt; MP:RegionInfo/ &lt; xmpbag &gt; MPRI:Regions | ushort      |
 
 
 
@@ -61,9 +61,9 @@ Esta propiedad no se puede escribir mediante la directiva de metadatos.
 
 
 
-| Pedido | Ruta de acceso                                |
+| Pedido de | Ruta de acceso                                |
 |-------|-------------------------------------|
-| 1     | /xmp/ <xmpstruct> MP:RegionInfo |
+| 1     | /xmp/ &lt; xmpstruct &gt; MP:RegionInfo |
 
 
 
@@ -75,9 +75,9 @@ Esta propiedad no se puede escribir mediante la directiva de metadatos.
 
 
 
-| Pedido | Ruta de acceso                                                               | Formato de disco |
+| Pedido de | Ruta de acceso                                                               | Formato de disco |
 |-------|--------------------------------------------------------------------|-------------|
-| 1     | /ifd/xmp/ <xmpstruct> MP:RegionInfo/ <xmpbag> MPRI:Regions | ushort      |
+| 1     | /ifd/xmp/ &lt; xmpstruct &gt; MP:RegionInfo/ &lt; xmpbag &gt; MPRI:Regions | ushort      |
 
 
 
@@ -91,9 +91,9 @@ Esta propiedad no se puede escribir mediante la directiva de metadatos.
 
 
 
-| Pedido | Ruta de acceso                                    |
+| Pedido de | Ruta de acceso                                    |
 |-------|-----------------------------------------|
-| 1     | /ifd/xmp/ <xmpstruct> MP:RegionInfo |
+| 1     | /ifd/xmp/ &lt; xmpstruct &gt; MP:RegionInfo |
 
 
 

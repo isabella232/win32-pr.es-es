@@ -1,11 +1,11 @@
 ---
-title: Win32_RDMSFileTypeAssociation (clase)
+title: Win32_RDMSFileTypeAssociation clase
 description: Administra una asociación de tipo de archivo para una aplicación publicada.
 ms.assetid: 22c945cb-4c47-431a-bc9b-d33ba15c8ab3
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDMSFileTypeAssociation clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDMSFileTypeAssociation de clase, se describe
+- Win32_RDMSFileTypeAssociation clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -25,14 +25,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21a2e569077bf47a2b0eba63db39ae1e86c39feb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cb76c904164bcf005ccbbb8348c60d2ba91514f420ba1d62fcbb40301c8e71a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868205"
 ---
-# <a name="win32_rdmsfiletypeassociation-class"></a>\_Clase Win32 RDMSFileTypeAssociation
+# <a name="win32_rdmsfiletypeassociation-class"></a>Clase \_ RDMSFileTypeAssociation de Win32
 
 Administra una asociación de tipo de archivo para una aplicación publicada.
 
@@ -74,13 +74,13 @@ La **clase \_ RDMSFileTypeAssociation de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Obtiene y establece el alias de la aplicación que está asociada al tipo de archivo.
+Obtiene y establece el alias de la aplicación asociada al tipo de archivo.
 
 </dd> <dt>
 
@@ -93,20 +93,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Obtiene el nombre de la extensión de archivo.
 
 </dd> <dt>
 
-**IconContents**
+**IconoContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene y establece el contenido del icono para el tipo de archivo.
@@ -119,10 +119,10 @@ Obtiene y establece el contenido del icono para el tipo de archivo.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece el índice del icono para el tipo de archivo.
+Obtiene y establece el índice en el icono del tipo de archivo.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Obtiene y establece el índice del icono para el tipo de archivo.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Obtiene y establece la ruta de acceso al icono para el tipo de archivo.
@@ -145,10 +145,10 @@ Obtiene y establece la ruta de acceso al icono para el tipo de archivo.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si la Asociación de tipo de archivo es para el controlador principal. **True** si la Asociación de tipo de archivo es para el controlador principal; en caso contrario, **false**.
+Obtiene y establece un valor que indica si la asociación de tipo de archivo es para el controlador principal. **TRUE** si la asociación de tipo de archivo es para el controlador principal; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -158,28 +158,28 @@ Obtiene y establece un valor que indica si la Asociación de tipo de archivo es 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si este FTA está publicado.
+Si este FTA está publicado.
 
-Obtiene y establece un valor que indica si se publica la Asociación de tipo de archivo. **True** si se publica la Asociación de tipo de archivo; en caso contrario, **false**.
+Obtiene y establece un valor que indica si se publica la asociación de tipo de archivo. **TRUE** si se publica la asociación de tipo de archivo; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
-**Nombredegrupo**
+**PoolName**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Obtiene y establece el nombre del grupo de aplicaciones para la Asociación de tipo de archivo.
+Obtiene y establece el nombre del grupo de aplicaciones para la asociación de tipo de archivo.
 
 </dd> <dt>
 
@@ -204,8 +204,8 @@ Obtiene una sugerencia para ayudar a los usuarios a abrir la extensión de archi
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -214,7 +214,7 @@ Obtiene una sugerencia para ayudar a los usuarios a abrir la extensión de archi
 
 <dl> <dt>
 
-[Proveedor de servicios de administración de Escritorio remoto](rdms-api-reference.md)
+[Escritorio remoto Management Services Provider](rdms-api-reference.md)
 </dt> </dl>
 
  

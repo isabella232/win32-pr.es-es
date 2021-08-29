@@ -1,11 +1,11 @@
 ---
-title: Win32_RDMSJoinedNode (clase)
+title: Win32_RDMSJoinedNode clase
 description: Representa un nodo de servidor administrado por Escritorio remoto Management Services (RDMS).
 ms.assetid: 8751f3f7-dfb5-45bd-a6b1-758aa22a3569
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDMSJoinedNode clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDMSJoinedNode de clase, se describe
+- Win32_RDMSJoinedNode clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -29,14 +29,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cabf1cf7ff98b698624285b2877412c4323259b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e82a515f556c7193ef376972c5a8786dd0aaaafd7bcec3a56bf43244ea72a739
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868135"
 ---
-# <a name="win32_rdmsjoinednode-class"></a>\_Clase Win32 RDMSJoinedNode
+# <a name="win32_rdmsjoinednode-class"></a>Clase \_ RDMSJoinedNode de Win32
 
 Representa un nodo de servidor administrado por Escritorio remoto Management Services (RDMS).
 
@@ -73,15 +73,15 @@ La **clase \_ RDMSJoinedNode de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ RDMSJoinedNode** tiene estos métodos.
+La **clase \_ RDMSJoinedNode de Win32** tiene estos métodos.
 
 
 
 | Método                                                                | Descripción                                                                                                                                                                                           |
 |:----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetJoinedNodeCount**](win32-rdmsjoinednode-getjoinednodecount.md) | **Windows server 2012 R2 y Windows server 2012:** Este método no está disponible antes de Windows Server 2016.<br/> Obtiene el número de servidores que tienen el rol especificado instalado.<br/> |
+| [**GetJoinedNodeCount**](win32-rdmsjoinednode-getjoinednodecount.md) | **Windows Server 2012 R2 y Windows Server 2012:** Este método no está disponible antes de Windows Server 2016.<br/> Obtiene el número de servidores que tienen instalado el rol especificado.<br/> |
 | [**Combinar**](join-win32-rdmsjoinednode.md)                             | Agrega un nodo a RDMS.<br/>                                                                                                                                                                       |
-| [**Separarse**](unjoin-win32-rdmsjoinednode.md)                         | Quita un nodo de RDMS.<br/>                                                                                                                                                                  |
+| [**Unjoin (Unjoin)**](unjoin-win32-rdmsjoinednode.md)                         | Quita un nodo de RDMS.<br/>                                                                                                                                                                  |
 
 
 
@@ -102,7 +102,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Obtiene el nombre de dominio completo del nodo.
@@ -115,10 +115,10 @@ Obtiene el nombre de dominio completo del nodo.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor tiene un certificado para realizar la autenticación para Escritorio remoto conexiones de puerta de enlace. **True** si el certificado está instalado; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor tiene un certificado para realizar la autenticación para las conexiones de Escritorio remoto puerta de enlace. **TRUE** si el certificado está instalado; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -128,10 +128,10 @@ Obtiene y establece un valor que indica si el servidor tiene un certificado para
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor tiene un certificado para firmar Protocolo de escritorio remoto archivos de publicación. **True** si el certificado está instalado; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor tiene un certificado para firmar Protocolo de escritorio remoto archivos de publicación. **TRUE** si el certificado está instalado; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -141,10 +141,10 @@ Obtiene y establece un valor que indica si el servidor tiene un certificado para
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor está Conexión a Escritorio remoto Broker. **True** si el servidor es un agente de conexión a escritorio remoto; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor está Conexión a Escritorio remoto Broker. **TRUE** si el servidor es un Conexión a Escritorio remoto Broker; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -154,10 +154,10 @@ Obtiene y establece un valor que indica si el servidor está Conexión a Escrito
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor está Escritorio remoto servidor de puerta de enlace. **True** si el servidor es un servidor de puerta de enlace de escritorio remoto; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor está Escritorio remoto de puerta de enlace. **TRUE** si el servidor es un servidor Escritorio remoto puerta de enlace; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -167,10 +167,10 @@ Obtiene y establece un valor que indica si el servidor está Escritorio remoto s
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor está Escritorio remoto servidor de licencias. **True** si el servidor es un servidor de licencias de escritorio remoto; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor está Escritorio remoto servidor de licencias. **TRUE** si el servidor es un Escritorio remoto de licencias; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -180,10 +180,10 @@ Obtiene y establece un valor que indica si el servidor está Escritorio remoto s
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor es Escritorio remoto servidor host de sesión. **True** si el servidor es un servidor host de sesión escritorio remoto; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor está Escritorio remoto servidor host de sesión. **TRUE** si el servidor es un servidor Escritorio remoto host de sesión; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -193,10 +193,10 @@ Obtiene y establece un valor que indica si el servidor es Escritorio remoto serv
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor está Escritorio remoto host de virtualización. **True** si el servidor es un host de virtualización de escritorio remoto; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor está Escritorio remoto host de virtualización. **TRUE** si el servidor es un host de Escritorio remoto virtualización; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -206,10 +206,10 @@ Obtiene y establece un valor que indica si el servidor está Escritorio remoto h
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor está Escritorio remoto servidor de acceso web. **True** si el servidor es un servidor de escritorio remoto Web Access; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor está Escritorio remoto servidor de acceso web. **TRUE** si el servidor es un servidor Escritorio remoto Web Access; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -219,10 +219,10 @@ Obtiene y establece un valor que indica si el servidor está Escritorio remoto s
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor tiene un certificado para realizar la autenticación para Servicios de Escritorio remoto implementación. **True** si el certificado está instalado; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor tiene un certificado para realizar la autenticación Servicios de Escritorio remoto implementación. **TRUE** si el certificado está instalado; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
@@ -232,26 +232,26 @@ Obtiene y establece un valor que indica si el servidor tiene un certificado para
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Obtiene y establece un valor que indica si el servidor tiene un certificado para realizar la autenticación para Escritorio remoto acceso web. **True** si el certificado está instalado; en caso contrario, **false**.
+Obtiene y establece un valor que indica si el servidor tiene un certificado para realizar la autenticación Escritorio remoto Web Access. **TRUE** si el certificado está instalado; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
 **OSVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **cadena**
+Tipo de datos: **String**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Obtiene y establece la versión de los sistemas operativos en el nodo.
+Obtiene y establece la versión de los sistemas operativos del nodo.
 
 </dd> <dt>
 
@@ -279,8 +279,8 @@ Obtiene el identificador de seguridad (SID) del nodo.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -289,7 +289,7 @@ Obtiene el identificador de seguridad (SID) del nodo.
 
 <dl> <dt>
 
-[Proveedor de servicios de administración de Escritorio remoto](rdms-api-reference.md)
+[Escritorio remoto Management Services Provider](rdms-api-reference.md)
 </dt> </dl>
 
  

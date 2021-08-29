@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TS-ManagingLS4
-description: Nombre del emisor de la cuarta CAL por usuario de Terminal Server.
+description: Nombre del emisor del cuarto servidor de terminal server por cal de usuario.
 ms.assetid: f97a4635-b12e-4358-bddc-40498db24080
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TS-ManagingLS4
-- msTSManagingLS4 esquema de AD de atributos
+- Esquema de AD del atributo msTSManagingLS4
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb2319b28b5502f2d84d17c893c20c1eef986a03
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2139f589a1675c7bc33229f8d4bfe078a9e04f60dec74be5951f8e04f9770d92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802675"
 ---
 # <a name="ms-ts-managingls4-attribute"></a>Atributo MS-TS-ManagingLS4
 
-Nombre del emisor de la cuarta CAL por usuario de Terminal Server.
+Nombre del emisor del cuarto servidor de terminal server por cal de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-ManagingLS4                           |
-| Nombre para mostrar de LDAP | msTSManagingLS4                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msTSManagingLS4                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2008                     |
-| System-ID-GUID    | f7a3b6a0-2107-4140-b306-75cb521731e5        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f7a3b6a0-2107-4140-b306-75cb521731e5        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,13 +52,13 @@ Nombre del emisor de la cuarta CAL por usuario de Terminal Server.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -73,13 +73,13 @@ Nombre del emisor de la cuarta CAL por usuario de Terminal Server.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |
@@ -94,13 +94,13 @@ Nombre del emisor de la cuarta CAL por usuario de Terminal Server.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | 0            |
 | Range-Upper            | 255          |
 | Search-Flags           | 0x00000001   |

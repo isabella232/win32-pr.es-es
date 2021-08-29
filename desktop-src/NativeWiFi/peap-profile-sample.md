@@ -1,19 +1,19 @@
 ---
-description: Se usa para conectarse a una red que usa el protocolo de autenticación extensible protegido con el protocolo de autenticación por desafío mutuo de Microsoft versión 2 (PEAP-MSCHAPv2) con el nombre de usuario y la contraseña para la autenticación de 802.1 X.
+description: Se usa para conectarse a una red que usa el protocolo de autenticación extensible protegido con el protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con UserName/Password para la autenticación 802.1X.
 ms.assetid: b5dde0d0-940f-40ec-b24d-95a76325ff1b
-title: Ejemplo de perfil PEAP
+title: Ejemplo de perfil peap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db34a3a99305f3506e3b34fde48f41e5a4c72ac8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a2529efb7db131d03807bc5b09c7599a66a7e49d5938edfdde9b98c07291b3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800685"
 ---
-# <a name="peap-profile-sample"></a>Ejemplo de perfil PEAP
+# <a name="peap-profile-sample"></a>Ejemplo de perfil peap
 
-Este ejemplo de perfil muestra un perfil de red cableada que se usa para conectarse a una red que usa el protocolo de autenticación extensible protegido con el protocolo de autenticación por desafío mutuo de Microsoft versión 2 (PEAP-MSCHAPv2) con la contraseña * UserName * **/**  para la autenticación de 802.1 x. Se solicita al usuario que escriba las credenciales.
+En este ejemplo de perfil se muestra un perfil de red cableada que se usa para conectarse a una red que usa el Protocolo de autenticación extensible protegido con el Protocolo de autenticación de desafío de Microsoft versión 2 (PEAP-MSCHAPv2) con *UserName* Contraseña para la autenticación **/**  802.1X. Se pide al usuario que escriba las credenciales.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>
@@ -67,7 +67,7 @@ Este ejemplo de perfil muestra un perfil de red cableada que se usa para conecta
 
 <dl> <dt>
 
-[Ejemplos de perfil con cable](wired-profile-samples.md)
+[Ejemplos de perfiles cableados](wired-profile-samples.md)
 </dt> </dl>
 
  

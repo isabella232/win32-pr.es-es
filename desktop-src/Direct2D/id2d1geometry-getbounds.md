@@ -1,9 +1,9 @@
 ---
-title: Métodos de ID2D1Geometry GetBounds (D2d1 \_ 1. h)
+title: Métodos ID2D1Geometry GetBounds (D2d1 \_ 1.h)
 description: Recupera los límites de la geometría.
 ms.assetid: 3932189a-7c6b-4144-9d4a-32d2aba70835
 keywords:
-- Métodos de GetBounds Direct2D
+- Métodos GetBounds de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 7ef4c6148ae2dfc12225948890ce332ba2310b25
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9be9fb342f45bc42edff59edad401897f67846363afcf26cc76dbc3e44b1aa8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119214466"
 ---
-# <a name="id2d1geometrygetbounds-methods"></a>ID2D1Geometry:: GetBounds (métodos)
+# <a name="id2d1geometrygetbounds-methods"></a>Métodos ID2D1Geometry::GetBounds
 
 Recupera los límites de la geometría.
 
@@ -29,8 +29,8 @@ Recupera los límites de la geometría.
 
 | Método                                                                                                                   | Descripción                                      |
 |:-------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------|
-| [**GetBounds (D2D1 \_ Matrix \_ 3X2 \_ f&, D2D \_ Rect \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f__d2d1_rect_f))   | Recupera los límites de la geometría.<br/> |
-| [**GetBounds (D2D1 \_ Matrix \_ 3x2 \_ f \* , D2D1 \_ Rect \_ f \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f_d2d1_rect_f)) | Recupera los límites de la geometría.<br/> |
+| [**GetBounds(D2D1 \_ MATRIX \_ 3X2 \_ F&,D2D \_ RECT F \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f__d2d1_rect_f))   | Recupera los límites de la geometría.<br/> |
+| [**GetBounds(D2D1 \_ MATRIX \_ 3X2 \_ F , \* D2D1 \_ RECT F \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getbounds(constd2d1_matrix_3x2_f_d2d1_rect_f)) | Recupera los límites de la geometría.<br/> |
 
 
 
@@ -338,8 +338,8 @@ if (SUCCEEDED(hr))
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D2d1 \_ 1. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl>  |
+| Encabezado<br/>  | <dl> <dt>D2d1 \_ 1.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl>  |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl>  |
 
 
