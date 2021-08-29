@@ -1,11 +1,11 @@
 ---
-title: Lockout-Duration atributo)
-description: La cantidad de tiempo que se bloquea una cuenta debido a que el Lockout-Threshold se supera.
+title: Lockout-Duration atributo
+description: La cantidad de tiempo que una cuenta está bloqueada debido a la Lockout-Threshold se supera.
 ms.assetid: 6a26ef80-86ed-433f-9032-cdd1aaf00388
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Lockout-Duration
-- lockoutDuration esquema de AD de atributos
+- Lockout-Duration esquema de AD de atributo
+- LockoutDuration attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 526fedef47bea20148a591259dbc7ec1702b5a15
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af4657b46e4f6750352cef4c48b550770b21d9b24d6332882f52b03a22c835ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301775"
 ---
-# <a name="lockout-duration-attribute"></a>Lockout-Duration atributo)
+# <a name="lockout-duration-attribute"></a>Lockout-Duration atributo
 
-La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umbral de bloqueo**](a-lockoutthreshold.md) . Este valor se almacena como un entero grande que representa el negativo del número de intervalos de 100 segundos a partir del momento en que se supera el [**umbral de bloqueo y**](a-lockoutthreshold.md) que debe transcurrir antes de que se desbloquee la cuenta.
+La cantidad de tiempo que una cuenta está bloqueada debido a que [**se supera el**](a-lockoutthreshold.md) umbral de bloqueo. Este valor se almacena como un entero grande que representa el negativo del número de intervalos de 100 nanosegundos desde el momento en que se supera [**el**](a-lockoutthreshold.md) umbral de bloqueo que debe transcurrir antes de que se desbloquee la cuenta.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Lockout-Duration                     |
-| Nombre para mostrar de LDAP | lockoutDuration                      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | Administrador de dominio                 |
+| Ldap-Display-Name | lockoutDuration                      |
+| Size              | \-                                   |
+| Actualizar privilegios  | Administrador de dominio                 |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.60                |
-| System-ID-GUID    | bf9679a5-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf9679a5-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umb
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umb
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umb
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umb
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umb
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umb
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                 |
-| Tiene un único valor       | True                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> [**Sam-dominio-base**](c-samdomainbase.md)<br/> |
+| Clases usadas en        | [**Directiva de dominio**](c-domainpolicy.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -179,7 +179,7 @@ La cantidad de tiempo que se bloquea una cuenta debido a que se supera el [**umb
 
 <dl> <dt>
 
-[**Bloqueo: umbral**](a-lockoutthreshold.md)
+[**Umbral de bloqueo**](a-lockoutthreshold.md)
 </dt> </dl>
 
  

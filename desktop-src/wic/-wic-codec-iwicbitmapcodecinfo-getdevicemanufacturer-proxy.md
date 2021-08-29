@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método GetDeviceManufacturer.
 ms.assetid: f4dbf67a-eb67-4138-a77a-7386567b95e6
-title: IWICBitmapCodecInfo_GetDeviceManufacturer_Proxy función)
+title: IWICBitmapCodecInfo_GetDeviceManufacturer_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 3dc10df32325fd0ffc5bb24d1a4c7927b1adc7e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fe41dba0db5aa885817062a9fdc0300655b05f6a1e751c747e09af377076a54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812695"
 ---
-# <a name="iwicbitmapcodecinfo_getdevicemanufacturer_proxy-function"></a>IWICBitmapCodecInfo \_ GetDeviceManufacturer \_ función proxy
+# <a name="iwicbitmapcodecinfo_getdevicemanufacturer_proxy-function"></a>Función IWICBitmapCodecInfo \_ GetDeviceManufacturer \_ Proxy
 
-Función de proxy para el método [**GetDeviceManufacturer**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getdevicemanufacturer) .
+Función de proxy para [**el método GetDeviceManufacturer.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getdevicemanufacturer)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,19 +43,19 @@ HRESULT IWICBitmapCodecInfo_GetDeviceManufacturer_Proxy(
 
 <dl> <dt>
 
-*Este \_ PTR* \[ en\]
+*THIS \_ PTR* \[ en\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) \** _
+Tipo: **[ **IWICBitmapCodecInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo)\***
 
-Puntero a este objeto [_ *IWICBitmapCodecInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo) .
+Puntero a este [**objeto IWICBitmapCodecInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapcodecinfo)
 
 </dd> <dt>
 
-*cchDeviceManufacturer* \[ de\]
+*cchDeviceManufacturer* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Tamaño del nombre del fabricante del dispositivo.
 
@@ -64,16 +64,16 @@ Tamaño del nombre del fabricante del dispositivo.
 *wzDeviceManufacturer* \[ in, out\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Puntero que recibe el nombre del fabricante del dispositivo.
 
 </dd> <dt>
 
-_pcchActual * \[ in, out\]
+*pcchActual* \[ in, out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Tamaño de búfer real necesario para recuperar el nombre del fabricante del dispositivo.
 
@@ -81,9 +81,9 @@ Tamaño de búfer real necesario para recuperar el nombre del fabricante del dis
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -91,11 +91,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica la autoridad de confianza de salida (OTA) de Windows Media Digital Rights Management (WMDRM).
+description: Especifica Windows entidad de confianza de salida (OTA) de Rights Management Digital Digital (WMDRM).
 ms.assetid: 88E73129-3EA9-49F8-BDE7-DB73402400CB
-title: MFPROTECTION_WMDRMOTA atributo (Mfidl. h)
+title: MFPROTECTION_WMDRMOTA atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce049e2709ff88d8c65fe4b4c087f770b9baf5ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 335b05ca7df3d46ecc8ae1e2c2e110f0adcd33447baebb363271618ea2aa3e85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848205"
 ---
-# <a name="mfprotection_wmdrmota-attribute"></a>\_Atributo WMDRMOTA de MFPROTECTION
+# <a name="mfprotection_wmdrmota-attribute"></a>Atributo MFPROTECTION \_ WMDRMOTA
 
-Especifica la autoridad de confianza de salida (OTA) de Windows Media Digital Rights Management (WMDRM).
+Especifica Windows entidad de confianza de salida (OTA) de Rights Management Digital Digital (WMDRM).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -25,9 +25,9 @@ Especifica la autoridad de confianza de salida (OTA) de Windows Media Digital Ri
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Especifica la autoridad de confianza de salida (OTA) de Windows Media Digital Ri
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

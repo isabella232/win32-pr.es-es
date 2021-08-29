@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_WINSType
-description: El método Modify actualiza un registro de recursos del servicio de nombres Internet de Windows (WINS).
+title: Método Modify de la MicrosoftDNS_WINSType clase
+description: El método Modify actualiza un registro Windows de recursos del Servicio de nombres de Internet (WINS).
 ms.assetid: b61c429a-6b01-4b17-9312-bc5b69d1e76a
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_WINSType clase
-- MicrosoftDNS_WINSType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_WINSType clase
+- MicrosoftDNS_WINSType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1469d1a9d50c72cdf3699bdc2ab9b96f51dfce86
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf14bd6801900ea9b697ac7db0efea5970c7d5b06317aef4acdd073fc78b1b13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984635"
 ---
-# <a name="modify-method-of-the-microsoftdns_winstype-class"></a>Método Modify de la \_ clase MicrosoftDNS WINSType
+# <a name="modify-method-of-the-microsoftdns_winstype-class"></a>Método Modify de la clase WINSType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos del servicio de nombres Internet de Windows (WINS).
+El **método Modify** actualiza un Windows de recursos del Servicio de nombres de Internet (WINS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -57,14 +57,14 @@ Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 *MappingFlag* \[ en, opcional\]
 </dt> <dd>
 
-Marca de asignación WINS que especifica si el registro debe incluirse en la replicación de zona. Puede tener solo dos valores: 0x80000000 y 0x00010000 correspondientes a las marcas de replicación y no replicación (registro local), respectivamente. Los valores siguientes son válidos.
+Marca de asignación WINS que especifica si el registro debe incluirse en la replicación de zona. Puede tener solo dos valores: 0x80000000 y 0x00010000 correspondientes a las marcas de replicación y sin replicación (registro local), respectivamente. Los valores siguientes son válidos.
 
 
 
 | Value                                                                                                                                               | Significado                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | <span id="0x80000000"></span><span id="0X80000000"></span><dl> <dt>**0x80000000**</dt> </dl> | Marca de replicación<br/>                   |
-| <span id="0x00010000"></span><span id="0X00010000"></span><dl> <dt>**0x00010000**</dt> </dl> | Marca de no replicación (registro local)<br/> |
+| <span id="0x00010000"></span><span id="0X00010000"></span><dl> <dt>**0x00010000**</dt> </dl> | Marca sin replicación (registro local)<br/> |
 
 
 
@@ -72,31 +72,31 @@ Marca de asignación WINS que especifica si el registro debe incluirse en la rep
 
 </dd> <dt>
 
-*Tiempodeesperadebúsqueda* \[ en, opcional\]
+*LookupTimeout* \[ en, opcional\]
 </dt> <dd>
 
-Tiempo, en segundos, que un servidor DNS intenta resolver mediante la búsqueda de WINS.
+Tiempo, en segundos, que un servidor DNS intenta resolver mediante WINS Look up.
 
 </dd> <dt>
 
 *CacheTimeout* \[ en, opcional\]
 </dt> <dd>
 
-Tiempo, en segundos, que un servidor DNS que usa WINS buscan puede almacenar en caché la respuesta del servidor WINS.
+Tiempo, en segundos, que un servidor DNS que usa WINS Look up puede almacenar en caché la respuesta del servidor WINS.
 
 </dd> <dt>
 
 *WinsServers* \[ en, opcional\]
 </dt> <dd>
 
-Lista de direcciones IP separadas por comas de los servidores WINS utilizados en WINS looks.
+Lista de direcciones IP separadas por comas de servidores WINS que se usan en búsquedas WINS.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -104,9 +104,9 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -117,7 +117,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -128,10 +128,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ WINSType**](microsoftdns-winstype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS WINSType**](microsoftdns-winstype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase WINSType de MicrosoftDNS \_**](microsoftdns-winstype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

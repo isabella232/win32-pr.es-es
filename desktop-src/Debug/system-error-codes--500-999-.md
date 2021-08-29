@@ -1,26 +1,26 @@
 ---
-description: Describe los códigos de error 500-999 definidos en el archivo de encabezado WinError. h y está destinado a los desarrolladores.
+description: Describe los códigos de error 500-999 definidos en el archivo de encabezado WinError.h y está pensado para desarrolladores.
 ms.assetid: 8d8b427b-b761-4023-a834-a6eff96d6ba1
-title: Códigos de error del sistema (500-999) (WinError. h)
+title: Códigos de error del sistema (500-999) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: 02b35374fcb68f9b416948d5e39b2182f573b60f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9430f77c53be29ae0f8b1b4037b3c963b5ac69da446f4755fb19dc40501c69df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539205"
 ---
 # <a name="system-error-codes-500-999"></a>Códigos de error del sistema (500-999)
 
 > [!NOTE]
-> Esta información está destinada a los desarrolladores que depuran errores del sistema. En el caso de otros errores, como los problemas con Windows Update, hay una lista de recursos en la página [códigos de error](system-error-codes.md) .
+> Esta información está pensada para desarrolladores que depuran errores del sistema. Para otros errores, como problemas con Windows update, hay una lista de recursos en la página [Códigos de](system-error-codes.md) error.
 
-En la lista siguiente se describen los [códigos de error del sistema](system-error-codes.md) (errores 500 a 999). La función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve los resultados cuando se produce un error en muchas funciones. Para recuperar el texto de la descripción del error en la aplicación, use la función [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) con **el \_ mensaje format \_ from \_ System** Flag.
+En la lista siguiente se [describen los códigos de error del](system-error-codes.md) sistema (errores 500 a 999). La función [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) los devuelve cuando se producirá un error en muchas funciones. Para recuperar el texto de descripción del error en la aplicación, use la [**función FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) con la **marca FORMAT MESSAGE FROM \_ \_ \_ SYSTEM.**
 
 <dl> <dt>
 
-<span id="ERROR_USER_PROFILE_LOAD"></span><span id="error_user_profile_load"></span>**ERROR \_ al \_ cargar el perfil de usuario \_**
+<span id="ERROR_USER_PROFILE_LOAD"></span><span id="error_user_profile_load"></span>**ERROR \_ DE CARGA DE PERFIL DE \_ \_ USUARIO**
 </dt> <dd> <dl> <dt>
 
 500 (0x1F4)
@@ -33,7 +33,7 @@ No se puede cargar el perfil de usuario.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ARITHMETIC_OVERFLOW"></span><span id="error_arithmetic_overflow"></span>**\_desbordamiento aritmético de errores \_**
+<span id="ERROR_ARITHMETIC_OVERFLOW"></span><span id="error_arithmetic_overflow"></span>**DESBORDAMIENTO \_ \_ ARITMÉTICO DE ERROR**
 </dt> <dd> <dl> <dt>
 
 534 (0x216)
@@ -41,12 +41,12 @@ No se puede cargar el perfil de usuario.
 
 
 
-El resultado aritmético superó 32 bits.
+El resultado aritmético superó los 32 bits.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PIPE_CONNECTED"></span><span id="error_pipe_connected"></span>**\_canalización de errores \_ conectada**
+<span id="ERROR_PIPE_CONNECTED"></span><span id="error_pipe_connected"></span>**CANALIZACIÓN \_ DE ERROR \_ CONECTADA**
 </dt> <dd> <dl> <dt>
 
 535 (0x217)
@@ -59,7 +59,7 @@ Hay un proceso en otro extremo de la canalización.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PIPE_LISTENING"></span><span id="error_pipe_listening"></span>**canalización de errores en \_ \_ escucha**
+<span id="ERROR_PIPE_LISTENING"></span><span id="error_pipe_listening"></span>**ESCUCHA DE \_ CANALIZACIÓN \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 536 (0x218)
@@ -67,12 +67,12 @@ Hay un proceso en otro extremo de la canalización.
 
 
 
-Esperando a que un proceso Abra el otro extremo de la canalización.
+Esperando a que un proceso abra el otro extremo de la canalización.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VERIFIER_STOP"></span><span id="error_verifier_stop"></span>**\_detención del comprobador de errores \_**
+<span id="ERROR_VERIFIER_STOP"></span><span id="error_verifier_stop"></span>**ERROR \_ VERIFIER \_ STOP**
 </dt> <dd> <dl> <dt>
 
 537 (0x219)
@@ -85,7 +85,7 @@ El comprobador de aplicaciones ha encontrado un error en el proceso actual.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ABIOS_ERROR"></span><span id="error_abios_error"></span>**error \_ ABIOS \_**
+<span id="ERROR_ABIOS_ERROR"></span><span id="error_abios_error"></span>**ERROR \_ ABIOS \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 538 (0x21A)
@@ -98,7 +98,7 @@ Error en el subsistema ABIOS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WX86_WARNING"></span><span id="error_wx86_warning"></span>**ERROR \_ WX86 \_ ADVERTENCIA**
+<span id="ERROR_WX86_WARNING"></span><span id="error_wx86_warning"></span>**ERROR \_ WX86 \_ WARNING**
 </dt> <dd> <dl> <dt>
 
 539 (0x21B)
@@ -111,7 +111,7 @@ Se produjo una advertencia en el subsistema WX86.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WX86_ERROR"></span><span id="error_wx86_error"></span>**Error \_ WX86 \_**
+<span id="ERROR_WX86_ERROR"></span><span id="error_wx86_error"></span>**ERROR \_ WX86 \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 540 (0x21C)
@@ -124,7 +124,7 @@ Error en el subsistema WX86.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TIMER_NOT_CANCELED"></span><span id="error_timer_not_canceled"></span>**\_no se \_ canceló el temporizador de errores \_**
+<span id="ERROR_TIMER_NOT_CANCELED"></span><span id="error_timer_not_canceled"></span>**TEMPORIZADOR \_ DE ERROR NO \_ \_ CANCELADO**
 </dt> <dd> <dl> <dt>
 
 541 (0x21D)
@@ -132,12 +132,12 @@ Error en el subsistema WX86.
 
 
 
-Se intentó cancelar o establecer un temporizador que tiene un APC asociado y el subproceso de asunto no es el subproceso que estableció originalmente el temporizador con una rutina APC asociada.
+Se intentó cancelar o establecer un temporizador que tiene un APC asociado y el subproceso del sujeto no es el subproceso que estableció originalmente el temporizador con una rutina de APC asociada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNWIND"></span><span id="error_unwind"></span>**ERROR de \_ DESenredado**
+<span id="ERROR_UNWIND"></span><span id="error_unwind"></span>**\_DESENREDO DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 542 (0x21E)
@@ -145,12 +145,12 @@ Se intentó cancelar o establecer un temporizador que tiene un APC asociado y el
 
 
 
-Código de la excepción de desenredado.
+Código de excepción de desenredo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_STACK"></span><span id="error_bad_stack"></span>**ERROR en la \_ \_ pila incorrecta**
+<span id="ERROR_BAD_STACK"></span><span id="error_bad_stack"></span>**PILA \_ DE ERROR NO ESTÁ \_ BIEN**
 </dt> <dd> <dl> <dt>
 
 543 (0x21F)
@@ -163,7 +163,7 @@ Se encontró una pila no válida o no alineada durante una operación de desenre
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_UNWIND_TARGET"></span><span id="error_invalid_unwind_target"></span>**ERROR \_ de \_ desenredado no válido \_**
+<span id="ERROR_INVALID_UNWIND_TARGET"></span><span id="error_invalid_unwind_target"></span>**ERROR \_ DESTINO DE \_ DESENREDO \_ NO VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 544 (0x220)
@@ -171,12 +171,12 @@ Se encontró una pila no válida o no alineada durante una operación de desenre
 
 
 
-Se encontró un destino de desenredado no válido durante una operación de desenredo.
+Se encontró un destino de desenredo no válido durante una operación de desenredo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PORT_ATTRIBUTES"></span><span id="error_invalid_port_attributes"></span>**ERROR \_ de \_ atributos de puerto no válidos \_**
+<span id="ERROR_INVALID_PORT_ATTRIBUTES"></span><span id="error_invalid_port_attributes"></span>**ERROR \_ ATRIBUTOS DE PUERTO NO \_ \_ VÁLIDOS**
 </dt> <dd> <dl> <dt>
 
 545 (0x221)
@@ -184,12 +184,12 @@ Se encontró un destino de desenredado no válido durante una operación de dese
 
 
 
-Atributos de objeto no válidos especificados para NtCreatePort o atributos de puerto no válidos especificados en NtConnectPort
+Atributos de objeto no válidos especificados en NtCreatePort o atributos de puerto no válidos especificados en NtConnectPort
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PORT_MESSAGE_TOO_LONG"></span><span id="error_port_message_too_long"></span>**mensaje de puerto de ERROR \_ \_ \_ demasiado \_ largo**
+<span id="ERROR_PORT_MESSAGE_TOO_LONG"></span><span id="error_port_message_too_long"></span>**MENSAJE \_ DE PUERTO DE ERROR DEMASIADO \_ \_ \_ LARGO**
 </dt> <dd> <dl> <dt>
 
 546 (0x222)
@@ -202,7 +202,7 @@ La longitud del mensaje pasado a NtRequestPort o NtRequestWaitReplyPort era mayo
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_QUOTA_LOWER"></span><span id="error_invalid_quota_lower"></span>**ERROR \_ de \_ cuota \_ inferior no válida**
+<span id="ERROR_INVALID_QUOTA_LOWER"></span><span id="error_invalid_quota_lower"></span>**ERROR \_ CUOTA INFERIOR NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 547 (0x223)
@@ -215,7 +215,7 @@ Se intentó reducir un límite de cuota por debajo del uso actual.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_ALREADY_ATTACHED"></span><span id="error_device_already_attached"></span>**el \_ dispositivo de error \_ ya está \_ conectado**
+<span id="ERROR_DEVICE_ALREADY_ATTACHED"></span><span id="error_device_already_attached"></span>**ERROR \_ EL DISPOSITIVO YA ESTÁ \_ \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 548 (0x224)
@@ -223,12 +223,12 @@ Se intentó reducir un límite de cuota por debajo del uso actual.
 
 
 
-Se intentó asociar a un dispositivo que ya estaba conectado a otro dispositivo.
+Se intentó conectar a un dispositivo que ya estaba conectado a otro dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSTRUCTION_MISALIGNMENT"></span><span id="error_instruction_misalignment"></span>**ERROR de alineación de la instrucción de ERROR \_ \_**
+<span id="ERROR_INSTRUCTION_MISALIGNMENT"></span><span id="error_instruction_misalignment"></span>**ERROR \_ DE \_ ALINEACIÓN DE INSTRUCCIONES**
 </dt> <dd> <dl> <dt>
 
 549 (0x225)
@@ -241,7 +241,7 @@ Se intentó ejecutar una instrucción en una dirección no alineada y el sistema
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROFILING_NOT_STARTED"></span><span id="error_profiling_not_started"></span>**ERROR de \_ generación de perfiles \_ no \_ iniciada**
+<span id="ERROR_PROFILING_NOT_STARTED"></span><span id="error_profiling_not_started"></span>**NO SE \_ INICIÓ LA \_ GENERACIÓN DE \_ PERFILES DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 550 (0x226)
@@ -249,12 +249,12 @@ Se intentó ejecutar una instrucción en una dirección no alineada y el sistema
 
 
 
-No se ha iniciado la generación de perfiles.
+No se inició la generación de perfiles.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROFILING_NOT_STOPPED"></span><span id="error_profiling_not_stopped"></span>**\_ \_ no se \_ ha detenido la generación de perfiles de errores**
+<span id="ERROR_PROFILING_NOT_STOPPED"></span><span id="error_profiling_not_stopped"></span>**GENERACIÓN \_ DE PERFILES DE \_ ERRORES NO \_ DETENIDA**
 </dt> <dd> <dl> <dt>
 
 551 (0x227)
@@ -262,12 +262,12 @@ No se ha iniciado la generación de perfiles.
 
 
 
-La generación de perfiles no se ha detenido.
+La generación de perfiles no se detiene.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COULD_NOT_INTERPRET"></span><span id="error_could_not_interpret"></span>**ERROR \_ no se pudo \_ \_ interpretar**
+<span id="ERROR_COULD_NOT_INTERPRET"></span><span id="error_could_not_interpret"></span>**ERROR \_ NO SE PUDO \_ \_ INTERPRETAR**
 </dt> <dd> <dl> <dt>
 
 552 (0x228)
@@ -280,7 +280,7 @@ La ACL pasada no contenía la información mínima necesaria.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROFILING_AT_LIMIT"></span><span id="error_profiling_at_limit"></span>**ERROR \_ al generar perfiles \_ en el \_ límite**
+<span id="ERROR_PROFILING_AT_LIMIT"></span><span id="error_profiling_at_limit"></span>**GENERACIÓN \_ DE PERFILES \_ DE ERRORES AL \_ LÍMITE**
 </dt> <dd> <dl> <dt>
 
 553 (0x229)
@@ -288,12 +288,12 @@ La ACL pasada no contenía la información mínima necesaria.
 
 
 
-El número de objetos de generación de perfiles activos es el máximo y no se pueden iniciar más.
+El número de objetos de generación de perfiles activos es máximo y no se puede iniciar más.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_WAIT"></span><span id="error_cant_wait"></span>**ERROR de espera de ERROR \_ \_**
+<span id="ERROR_CANT_WAIT"></span><span id="error_cant_wait"></span>**ERROR \_ CANT \_ WAIT**
 </dt> <dd> <dl> <dt>
 
 554 (0x22A)
@@ -301,12 +301,12 @@ El número de objetos de generación de perfiles activos es el máximo y no se p
 
 
 
-Se utiliza para indicar que una operación no puede continuar sin bloqueos para e/s.
+Se usa para indicar que una operación no puede continuar sin bloquear la E/S.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_TERMINATE_SELF"></span><span id="error_cant_terminate_self"></span>**ERROR no se pudo \_ \_ finalizar por \_ sí mismo**
+<span id="ERROR_CANT_TERMINATE_SELF"></span><span id="error_cant_terminate_self"></span>**ERROR \_ CANT \_ TERMINATE \_ SELF**
 </dt> <dd> <dl> <dt>
 
 555 (0x22B)
@@ -314,12 +314,12 @@ Se utiliza para indicar que una operación no puede continuar sin bloqueos para 
 
 
 
-Indica que un subproceso intentó finalizarse de forma predeterminada (denominada NtTerminateThread con **null**) y era el último subproceso del proceso actual.
+Indica que un subproceso intentó finalizar por sí mismo de forma predeterminada (denominado NtTerminateThread con **NULL)** y que fue el último subproceso del proceso actual.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNEXPECTED_MM_CREATE_ERR"></span><span id="error_unexpected_mm_create_err"></span>**ERROR \_ inesperado \_ mm \_ Create \_ Err**
+<span id="ERROR_UNEXPECTED_MM_CREATE_ERR"></span><span id="error_unexpected_mm_create_err"></span>**ERROR \_ INESPERADO MM CREATE \_ \_ \_ ERR**
 </dt> <dd> <dl> <dt>
 
 556 (0x22C)
@@ -327,12 +327,12 @@ Indica que un subproceso intentó finalizarse de forma predeterminada (denominad
 
 
 
-Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, se convierte en uno de los siguientes errores que se garantiza que está en el filtro. En este caso, la información se pierde; sin embargo, el filtro controla la excepción correctamente.
+Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, se convierte en uno de los siguientes errores que se garantiza que están en el filtro. En este caso, se pierde información, pero el filtro controla correctamente la excepción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNEXPECTED_MM_MAP_ERROR"></span><span id="error_unexpected_mm_map_error"></span>**error \_ inesperado de \_ asignación de mm \_ \_**
+<span id="ERROR_UNEXPECTED_MM_MAP_ERROR"></span><span id="error_unexpected_mm_map_error"></span>**ERROR MM \_ \_ ERROR INESPERADO DE \_ \_ ASIGNACIÓN**
 </dt> <dd> <dl> <dt>
 
 557 (0x22D)
@@ -340,12 +340,12 @@ Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, s
 
 
 
-Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, se convierte en uno de los siguientes errores que se garantiza que está en el filtro. En este caso, la información se pierde; sin embargo, el filtro controla la excepción correctamente.
+Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, se convierte en uno de los siguientes errores que se garantiza que están en el filtro. En este caso, se pierde información, pero el filtro controla correctamente la excepción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNEXPECTED_MM_EXTEND_ERR"></span><span id="error_unexpected_mm_extend_err"></span>**ERROR \_ inesperado \_ mm \_ Extend \_ Err**
+<span id="ERROR_UNEXPECTED_MM_EXTEND_ERR"></span><span id="error_unexpected_mm_extend_err"></span>**ERROR \_ INESPERADO MM EXTEND \_ \_ \_ ERR**
 </dt> <dd> <dl> <dt>
 
 558 (0x22E)
@@ -353,12 +353,12 @@ Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, s
 
 
 
-Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, se convierte en uno de los siguientes errores que se garantiza que está en el filtro. En este caso, la información se pierde; sin embargo, el filtro controla la excepción correctamente.
+Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, se convierte en uno de los siguientes errores que se garantiza que están en el filtro. En este caso, se pierde información, pero el filtro controla correctamente la excepción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_FUNCTION_TABLE"></span><span id="error_bad_function_table"></span>**ERROR en la \_ tabla de funciones erróneas \_ \_**
+<span id="ERROR_BAD_FUNCTION_TABLE"></span><span id="error_bad_function_table"></span>**ERROR \_ TABLA DE FUNCIONES NO \_ \_ CORRECTAS**
 </dt> <dd> <dl> <dt>
 
 559 (0x22F)
@@ -366,12 +366,12 @@ Si se devuelve un error MM que no está definido en el filtro FsRtl estándar, s
 
 
 
-Se encontró una tabla de funciones incorrecta durante una operación de desenredo.
+Se encontró una tabla de funciones con formato correcto durante una operación de desenredo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_GUID_TRANSLATION"></span><span id="error_no_guid_translation"></span>**ERROR \_ sin \_ traducción de GUID \_**
+<span id="ERROR_NO_GUID_TRANSLATION"></span><span id="error_no_guid_translation"></span>**ERROR \_ SIN TRADUCCIÓN DE \_ \_ GUID**
 </dt> <dd> <dl> <dt>
 
 560 (0x230)
@@ -379,12 +379,12 @@ Se encontró una tabla de funciones incorrecta durante una operación de desenre
 
 
 
-Indica que se ha intentado asignar la protección a un archivo o directorio del sistema de archivos y uno de los SID del descriptor de seguridad no se puede traducir en un GUID que el sistema de archivos pudiera almacenar. Esto hace que se produzca un error en el intento de protección, lo que puede provocar un error al intentar crear un archivo.
+Indica que se intentó asignar protección a un directorio o archivo del sistema de archivos y uno de los SID del descriptor de seguridad no se pudo traducir en un GUID que el sistema de archivos pudiera almacenar. Esto hace que se produce un error en el intento de protección, lo que puede provocar un error en un intento de creación de archivos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_LDT_SIZE"></span><span id="error_invalid_ldt_size"></span>**ERROR \_ de \_ tamaño de LDT no válido \_**
+<span id="ERROR_INVALID_LDT_SIZE"></span><span id="error_invalid_ldt_size"></span>**ERROR \_ TAMAÑO \_ DE LDT NO \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 561 (0x231)
@@ -392,12 +392,12 @@ Indica que se ha intentado asignar la protección a un archivo o directorio del 
 
 
 
-Indica que se ha intentado aumentar un LDT estableciendo su tamaño o que el tamaño no era un número par de selectores.
+Indica que se intentó aumentar un LDT estableciendo su tamaño o que el tamaño no era un número par de selectores.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_LDT_OFFSET"></span><span id="error_invalid_ldt_offset"></span>**ERROR en el \_ \_ desplazamiento LDT no válido \_**
+<span id="ERROR_INVALID_LDT_OFFSET"></span><span id="error_invalid_ldt_offset"></span>**ERROR \_ DESPLAZAMIENTO \_ DE LDT NO \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 563 (0x233)
@@ -405,12 +405,12 @@ Indica que se ha intentado aumentar un LDT estableciendo su tamaño o que el tam
 
 
 
-Indica que el valor inicial para la información de LDT no era un múltiplo entero del tamaño del selector.
+Indica que el valor inicial de la información de LDT no era un múltiplo entero del tamaño del selector.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_LDT_DESCRIPTOR"></span><span id="error_invalid_ldt_descriptor"></span>**ERROR \_ de \_ \_ descriptor LDT no válido**
+<span id="ERROR_INVALID_LDT_DESCRIPTOR"></span><span id="error_invalid_ldt_descriptor"></span>**ERROR \_ INVALID \_ LDT \_ DESCRIPTOR**
 </dt> <dd> <dl> <dt>
 
 564 (0x234)
@@ -418,12 +418,12 @@ Indica que el valor inicial para la información de LDT no era un múltiplo ente
 
 
 
-Indica que el usuario proporcionó un descriptor no válido al intentar configurar los descriptores de LDT.
+Indica que el usuario proporcionó un descriptor no válido al intentar configurar descriptores Ldt.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TOO_MANY_THREADS"></span><span id="error_too_many_threads"></span>**ERROR \_ demasiados \_ \_ subprocesos**
+<span id="ERROR_TOO_MANY_THREADS"></span><span id="error_too_many_threads"></span>**ERROR \_ \_ DEMASIADOS \_ SUBPROCESOS**
 </dt> <dd> <dl> <dt>
 
 565 (0x235)
@@ -431,12 +431,12 @@ Indica que el usuario proporcionó un descriptor no válido al intentar configur
 
 
 
-Indica que un proceso tiene demasiados subprocesos para realizar la acción solicitada. Por ejemplo, la asignación de un token principal solo se puede realizar cuando un proceso tiene cero o un subproceso.
+Indica que un proceso tiene demasiados subprocesos para realizar la acción solicitada. Por ejemplo, la asignación de un token principal solo se puede realizar cuando un proceso tiene cero o uno subprocesos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_THREAD_NOT_IN_PROCESS"></span><span id="error_thread_not_in_process"></span>**\_subproceso \_ de error no \_ en \_ proceso**
+<span id="ERROR_THREAD_NOT_IN_PROCESS"></span><span id="error_thread_not_in_process"></span>**SUBPROCESO DE \_ ERROR \_ NO EN \_ \_ PROCESO**
 </dt> <dd> <dl> <dt>
 
 566 (0x236)
@@ -444,12 +444,12 @@ Indica que un proceso tiene demasiados subprocesos para realizar la acción soli
 
 
 
-Se intentó operar en un subproceso en un proceso específico, pero el subproceso especificado no se encuentra en el proceso especificado.
+Se intentó operar en un subproceso dentro de un proceso específico, pero el subproceso especificado no está en el proceso especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PAGEFILE_QUOTA_EXCEEDED"></span><span id="error_pagefile_quota_exceeded"></span>**cuota de archivo de ERROR \_ \_ \_ superada**
+<span id="ERROR_PAGEFILE_QUOTA_EXCEEDED"></span><span id="error_pagefile_quota_exceeded"></span>**ERROR \_ PAGEFILE \_ QUOTA \_ EXCEEDED**
 </dt> <dd> <dl> <dt>
 
 567 (0x237)
@@ -457,12 +457,12 @@ Se intentó operar en un subproceso en un proceso específico, pero el subproces
 
 
 
-Se superó la cuota del archivo de paginación.
+Se superó la cuota de archivos de página.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOGON_SERVER_CONFLICT"></span><span id="error_logon_server_conflict"></span>**conflicto de servidor de inicio de sesión de ERROR \_ \_ \_**
+<span id="ERROR_LOGON_SERVER_CONFLICT"></span><span id="error_logon_server_conflict"></span>**ERROR \_ LOGON \_ SERVER \_ CONFLICT**
 </dt> <dd> <dl> <dt>
 
 568 (0x238)
@@ -470,12 +470,12 @@ Se superó la cuota del archivo de paginación.
 
 
 
-No se puede iniciar el servicio NetLogon porque otro servicio NetLogon que se ejecuta en el dominio está en conflicto con el rol especificado.
+El servicio Netlogon no se puede iniciar porque otro servicio netlogon que se ejecuta en el dominio entra en conflicto con el rol especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYNCHRONIZATION_REQUIRED"></span><span id="error_synchronization_required"></span>**sincronización de errores \_ \_ requerida**
+<span id="ERROR_SYNCHRONIZATION_REQUIRED"></span><span id="error_synchronization_required"></span>**SE REQUIERE \_ SINCRONIZACIÓN DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 569 (0x239)
@@ -483,12 +483,12 @@ No se puede iniciar el servicio NetLogon porque otro servicio NetLogon que se ej
 
 
 
-La base de datos SAM de un servidor de Windows está muy fuera de sincronización con la copia en el controlador de dominio. Se requiere una sincronización completa.
+La base de datos SAM en Windows Server está significativamente fuera de sincronización con la copia en el controlador de dominio. Se requiere una sincronización completa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NET_OPEN_FAILED"></span><span id="error_net_open_failed"></span>**ERROR \_ \_ al abrir net Open \_**
+<span id="ERROR_NET_OPEN_FAILED"></span><span id="error_net_open_failed"></span>**ERROR \_ NET \_ OPEN \_ FAILED**
 </dt> <dd> <dl> <dt>
 
 570 (0x23A)
@@ -496,12 +496,12 @@ La base de datos SAM de un servidor de Windows está muy fuera de sincronizació
 
 
 
-Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicación, sino que es un marcador de posición para que el redirector de Windows LAN Manager lo use en sus rutinas de asignación de errores internas.
+Error en la API NtCreateFile. Este error nunca debe devolverse a una aplicación, es un lugar que el redirector de Windows Lan Manager usará en sus rutinas de asignación de errores internos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IO_PRIVILEGE_FAILED"></span><span id="error_io_privilege_failed"></span>**ERROR de \_ privilegio de e/s \_ \_**
+<span id="ERROR_IO_PRIVILEGE_FAILED"></span><span id="error_io_privilege_failed"></span>**ERROR \_ AL PRIVILEGIO DE \_ \_ E/S**
 </dt> <dd> <dl> <dt>
 
 571 (0x23B)
@@ -509,12 +509,12 @@ Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicaci
 
 
 
-{Error de privilegio} No se pudieron cambiar los permisos de e/s para el proceso.
+{Error de privilegio} No se pudieron cambiar los permisos de E/S para el proceso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONTROL_C_EXIT"></span><span id="error_control_c_exit"></span>**salida de control de errores \_ \_ C \_**
+<span id="ERROR_CONTROL_C_EXIT"></span><span id="error_control_c_exit"></span>**ERROR \_ CONTROL \_ C \_ EXIT**
 </dt> <dd> <dl> <dt>
 
 572 (0x23C)
@@ -522,12 +522,12 @@ Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicaci
 
 
 
-{Cierre de la aplicación con CTRL + C} La aplicación terminó como resultado de CTRL + C.
+{Application Exit by CTRL+C} La aplicación finalizó como resultado de ctrl+C.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MISSING_SYSTEMFILE"></span><span id="error_missing_systemfile"></span>**ERROR: \_ falta \_ SYSTEMFILE**
+<span id="ERROR_MISSING_SYSTEMFILE"></span><span id="error_missing_systemfile"></span>**ERROR \_ FALTA \_ SYSTEMFILE**
 </dt> <dd> <dl> <dt>
 
 573 (0x23D)
@@ -535,12 +535,12 @@ Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicaci
 
 
 
-{Falta el archivo del sistema} Falta el archivo de sistema requerido% HS o no es válido.
+{Missing System File} El archivo del sistema %hs necesario es malo o falta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNHANDLED_EXCEPTION"></span><span id="error_unhandled_exception"></span>**ERROR de \_ excepción no controlada \_**
+<span id="ERROR_UNHANDLED_EXCEPTION"></span><span id="error_unhandled_exception"></span>**EXCEPCIÓN \_ NO CONTROLADA POR \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 574 (0x23E)
@@ -548,12 +548,12 @@ Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicaci
 
 
 
-{Error de aplicación} La excepción% s (0x% 08lX) se produjo en la aplicación en la ubicación 0x% 08lX.
+{Error de aplicación} La excepción %s (0x%08lx) se produjo en la aplicación en la ubicación 0x%08lx.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_APP_INIT_FAILURE"></span><span id="error_app_init_failure"></span>**ERROR \_ de \_ inicialización de la aplicación \_**
+<span id="ERROR_APP_INIT_FAILURE"></span><span id="error_app_init_failure"></span>**ERROR \_ DE \_ INIT DE LA \_ APLICACIÓN**
 </dt> <dd> <dl> <dt>
 
 575 (0x23F)
@@ -561,12 +561,12 @@ Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicaci
 
 
 
-{Error de aplicación} La aplicación no pudo iniciarse correctamente (0x% LX). Haga clic en Aceptar para cerrar la aplicación.
+{Error de aplicación} La aplicación no se pudo iniciar correctamente (0x%lx). Haga clic en Aceptar para cerrar la aplicación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PAGEFILE_CREATE_FAILED"></span><span id="error_pagefile_create_failed"></span>**ERROR \_ \_ al crear el archivo de paginación \_**
+<span id="ERROR_PAGEFILE_CREATE_FAILED"></span><span id="error_pagefile_create_failed"></span>**ERROR \_ PAGEFILE \_ CREATE \_ FAILED**
 </dt> <dd> <dl> <dt>
 
 576 (0x240)
@@ -574,12 +574,12 @@ Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicaci
 
 
 
-{No se puede crear el archivo de paginación} No se pudo crear el archivo de paginación% HS (% LX). El tamaño solicitado era% ld.
+{No se puede crear el archivo de paginación} Error al crear el archivo de paginación %hs (%lx). El tamaño solicitado era %ld.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_IMAGE_HASH"></span><span id="error_invalid_image_hash"></span>**ERROR \_ de \_ valor hash de imagen no válido \_**
+<span id="ERROR_INVALID_IMAGE_HASH"></span><span id="error_invalid_image_hash"></span>**ERROR \_ HASH DE IMAGEN NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 577 (0x241)
@@ -587,12 +587,12 @@ Error de la API de NtCreateFile. Este error nunca debe devolverse a una aplicaci
 
 
 
-Windows no puede comprobar la firma digital de este archivo. Un cambio de hardware o software reciente podría haber instalado un archivo firmado incorrectamente o dañado, o que podría ser software malintencionado de un origen desconocido.
+Windows puede comprobar la firma digital de este archivo. Un cambio reciente de hardware o software podría haber instalado un archivo firmado incorrectamente o dañado, o que podría ser software malintencionado de un origen desconocido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_PAGEFILE"></span><span id="error_no_pagefile"></span>**ERROR \_ sin archivo de \_ paginación**
+<span id="ERROR_NO_PAGEFILE"></span><span id="error_no_pagefile"></span>**ERROR \_ NO \_ PAGEFILE**
 </dt> <dd> <dl> <dt>
 
 578 (0x242)
@@ -605,7 +605,7 @@ Windows no puede comprobar la firma digital de este archivo. Un cambio de hardwa
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ILLEGAL_FLOAT_CONTEXT"></span><span id="error_illegal_float_context"></span>**ERROR \_ de \_ contexto de punto flotante no válido \_**
+<span id="ERROR_ILLEGAL_FLOAT_CONTEXT"></span><span id="error_illegal_float_context"></span>**CONTEXTO FLOAT \_ NO \_ ES DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 579 (0x243)
@@ -613,12 +613,12 @@ Windows no puede comprobar la firma digital de este archivo. Un cambio de hardwa
 
 
 
-EXCEPCIONAL Una aplicación en modo real emitió una instrucción de punto flotante y el hardware de punto flotante no está presente.
+{EXCEPTION} Una aplicación en modo real emitió una instrucción de punto flotante y el hardware de punto flotante no está presente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_EVENT_PAIR"></span><span id="error_no_event_pair"></span>**\_no hay \_ ningún \_ par de eventos de error**
+<span id="ERROR_NO_EVENT_PAIR"></span><span id="error_no_event_pair"></span>**ERROR \_ SIN PAR DE \_ \_ EVENTOS**
 </dt> <dd> <dl> <dt>
 
 580 (0x244)
@@ -626,12 +626,12 @@ EXCEPCIONAL Una aplicación en modo real emitió una instrucción de punto flota
 
 
 
-Se ha realizado una operación de sincronización de un par de eventos mediante el objeto de par de eventos cliente/servidor específico del subproceso, pero no hay ningún objeto de par de eventos asociado al subproceso.
+Se realizó una operación de sincronización de par de eventos mediante el objeto de par de eventos cliente/servidor específico del subproceso, pero no se asoció ningún objeto de par de eventos al subproceso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DOMAIN_CTRLR_CONFIG_ERROR"></span><span id="error_domain_ctrlr_config_error"></span>**error de configuración del dominio de ERROR del \_ \_ control \_ \_**
+<span id="ERROR_DOMAIN_CTRLR_CONFIG_ERROR"></span><span id="error_domain_ctrlr_config_error"></span>**ERROR \_ DOMAIN \_ CTRLR \_ CONFIG \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 581 (0x245)
@@ -639,12 +639,12 @@ Se ha realizado una operación de sincronización de un par de eventos mediante 
 
 
 
-Un servidor de Windows tiene una configuración incorrecta.
+Un Windows Server tiene una configuración incorrecta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ILLEGAL_CHARACTER"></span><span id="error_illegal_character"></span>**ERROR \_ de \_ carácter no válido**
+<span id="ERROR_ILLEGAL_CHARACTER"></span><span id="error_illegal_character"></span>**CARÁCTER NO \_ ES \_ DE ERROR**
 </dt> <dd> <dl> <dt>
 
 582 (0x246)
@@ -652,12 +652,12 @@ Un servidor de Windows tiene una configuración incorrecta.
 
 
 
-Se encontró un carácter no válido. Para un juego de caracteres de varios bytes, esto incluye un byte inicial sin un byte final subsiguiente. En el caso del juego de caracteres Unicode, se incluyen los caracteres 0xFFFF y 0xFFFE.
+Se encontró un carácter no ilegal. Para un juego de caracteres de varios bytes, esto incluye un byte inicial sin un byte final siguiente. Para el juego de caracteres Unicode, esto incluye los caracteres 0xFFFF y 0xFFFE.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNDEFINED_CHARACTER"></span><span id="error_undefined_character"></span>**carácter no definido de ERROR \_ \_**
+<span id="ERROR_UNDEFINED_CHARACTER"></span><span id="error_undefined_character"></span>**CARÁCTER \_ SIN DEFINIR DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 583 (0x247)
@@ -670,7 +670,7 @@ El carácter Unicode no está definido en el juego de caracteres Unicode instala
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FLOPPY_VOLUME"></span><span id="error_floppy_volume"></span>**\_volumen de disquete de error \_**
+<span id="ERROR_FLOPPY_VOLUME"></span><span id="error_floppy_volume"></span>**VOLUMEN \_ DE DISQUETE DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 584 (0x248)
@@ -678,12 +678,12 @@ El carácter Unicode no está definido en el juego de caracteres Unicode instala
 
 
 
-No se puede crear el archivo de paginación en un disquete.
+El archivo de paginación no se puede crear en una disquete.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BIOS_FAILED_TO_CONNECT_INTERRUPT"></span><span id="error_bios_failed_to_connect_interrupt"></span>**ERROR \_ \_ de BIOS \_ al \_ conectar la \_ interrupción**
+<span id="ERROR_BIOS_FAILED_TO_CONNECT_INTERRUPT"></span><span id="error_bios_failed_to_connect_interrupt"></span>**ERROR \_ BIOS \_ FAILED \_ TO \_ CONNECT \_ INTERRUPT**
 </dt> <dd> <dl> <dt>
 
 585 (0x249)
@@ -691,12 +691,12 @@ No se puede crear el archivo de paginación en un disquete.
 
 
 
-El BIOS del sistema no pudo conectar una interrupción del sistema al dispositivo o al bus al que está conectado el dispositivo.
+El BIOS del sistema no pudo conectar una interrupción del sistema al dispositivo o bus al que está conectado el dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BACKUP_CONTROLLER"></span><span id="error_backup_controller"></span>**ERROR de \_ controlador de copia de seguridad \_**
+<span id="ERROR_BACKUP_CONTROLLER"></span><span id="error_backup_controller"></span>**CONTROLADOR DE \_ COPIA DE SEGURIDAD DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 586 (0x24A)
@@ -709,7 +709,7 @@ Esta operación solo se permite para el controlador de dominio principal del dom
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MUTANT_LIMIT_EXCEEDED"></span><span id="error_mutant_limit_exceeded"></span>**\_límite de mutaciones de error \_ \_ superado**
+<span id="ERROR_MUTANT_LIMIT_EXCEEDED"></span><span id="error_mutant_limit_exceeded"></span>**ERROR \_ MUTANT \_ LIMIT \_ EXCEEDED**
 </dt> <dd> <dl> <dt>
 
 587 (0x24B)
@@ -717,12 +717,12 @@ Esta operación solo se permite para el controlador de dominio principal del dom
 
 
 
-Se intentó adquirir un mutante, de modo que se habría superado su recuento máximo.
+Se ha intentado adquirir un objeto para que se superara su recuento máximo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FS_DRIVER_REQUIRED"></span><span id="error_fs_driver_required"></span>**ERROR \_ de \_ controlador de FS \_ requerido**
+<span id="ERROR_FS_DRIVER_REQUIRED"></span><span id="error_fs_driver_required"></span>**ERROR \_ SE REQUIERE EL CONTROLADOR \_ FS \_**
 </dt> <dd> <dl> <dt>
 
 588 (0x24C)
@@ -730,12 +730,12 @@ Se intentó adquirir un mutante, de modo que se habría superado su recuento má
 
 
 
-Se ha tenido acceso a un volumen para el que se requiere un controlador del sistema de archivos que aún no se ha cargado.
+Se ha accedido a un volumen para el que se requiere un controlador del sistema de archivos que aún no se ha cargado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANNOT_LOAD_REGISTRY_FILE"></span><span id="error_cannot_load_registry_file"></span>**ERROR: \_ no se puede \_ cargar el \_ archivo de registro \_**
+<span id="ERROR_CANNOT_LOAD_REGISTRY_FILE"></span><span id="error_cannot_load_registry_file"></span>**ERROR \_ NO SE PUEDE CARGAR EL ARCHIVO DEL \_ \_ \_ REGISTRO**
 </dt> <dd> <dl> <dt>
 
 589 (0x24D)
@@ -743,12 +743,12 @@ Se ha tenido acceso a un volumen para el que se requiere un controlador del sist
 
 
 
-{Error del archivo de registro} El registro no puede cargar el subárbol (archivo):% HS o su registro o alternativo. Está dañado, no existe o no se puede escribir en él.
+{Error de archivo del Registro} El Registro no puede cargar el subárbol (archivo): %hs o su registro o alternativa. Está dañado, ausente o no se puede escribir.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEBUG_ATTACH_FAILED"></span><span id="error_debug_attach_failed"></span>**ERROR \_ \_ al adjuntar error de depuración \_**
+<span id="ERROR_DEBUG_ATTACH_FAILED"></span><span id="error_debug_attach_failed"></span>**ERROR AL \_ ADJUNTAR \_ LA \_ DEPURACIÓN**
 </dt> <dd> <dl> <dt>
 
 590 (0x24E)
@@ -756,12 +756,12 @@ Se ha tenido acceso a un volumen para el que se requiere un controlador del sist
 
 
 
-{Error inesperado en [**DebugActiveProcess**](/windows/win32/api/debugapi/nf-debugapi-debugactiveprocess)} Error inesperado al procesar una solicitud de API **DebugActiveProcess** . Puede elegir aceptar para finalizar el proceso o cancelar para omitir el error.
+{Error inesperado en [**DebugActiveProcess**](/windows/win32/api/debugapi/nf-debugapi-debugactiveprocess)} Error inesperado al procesar una solicitud de API **DebugActiveProcess.** Puede elegir Aceptar para finalizar el proceso o Cancelar para omitir el error.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_PROCESS_TERMINATED"></span><span id="error_system_process_terminated"></span>**ERROR en el \_ proceso del sistema \_ \_**
+<span id="ERROR_SYSTEM_PROCESS_TERMINATED"></span><span id="error_system_process_terminated"></span>**PROCESO \_ DEL SISTEMA DE ERRORES \_ \_ FINALIZADO**
 </dt> <dd> <dl> <dt>
 
 591 (0x24F)
@@ -769,12 +769,12 @@ Se ha tenido acceso a un volumen para el que se requiere un controlador del sist
 
 
 
-{Error irrecuperable del sistema} El proceso del sistema% HS terminó inesperadamente con un estado de 0x% 08x (0x% 08x 0x% 08x). El sistema se ha cerrado.
+{Error irreales del sistema} El proceso del sistema %hs finalizó inesperadamente con un estado de 0x%08x (0x%08x 0x%08x). El sistema se ha apagado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DATA_NOT_ACCEPTED"></span><span id="error_data_not_accepted"></span>**\_no se \_ \_ aceptan datos de error**
+<span id="ERROR_DATA_NOT_ACCEPTED"></span><span id="error_data_not_accepted"></span>**DATOS DE ERROR \_ \_ NO \_ ACEPTADOS**
 </dt> <dd> <dl> <dt>
 
 592 (0x250)
@@ -787,7 +787,7 @@ Se ha tenido acceso a un volumen para el que se requiere un controlador del sist
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VDM_HARD_ERROR"></span><span id="error_vdm_hard_error"></span>**error \_ de \_ VDM \_ error**
+<span id="ERROR_VDM_HARD_ERROR"></span><span id="error_vdm_hard_error"></span>**ERROR: \_ ERROR DE DISCO DURO DE VDM \_ \_**
 </dt> <dd> <dl> <dt>
 
 593 (0x251)
@@ -795,12 +795,12 @@ Se ha tenido acceso a un volumen para el que se requiere un controlador del sist
 
 
 
-NTVDM ha detectado un error de hardware.
+NTVDM encontró un error grave.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DRIVER_CANCEL_TIMEOUT"></span><span id="error_driver_cancel_timeout"></span>**\_tiempo de \_ espera de cancelación del controlador de error \_**
+<span id="ERROR_DRIVER_CANCEL_TIMEOUT"></span><span id="error_driver_cancel_timeout"></span>**TIEMPO DE \_ ESPERA DE \_ CANCELACIÓN DEL CONTROLADOR DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 594 (0x252)
@@ -808,12 +808,12 @@ NTVDM ha detectado un error de hardware.
 
 
 
-{Cancelar tiempo de espera} El controlador% HS no pudo completar una solicitud de e/s cancelada en el tiempo asignado.
+{Cancel Timeout} El controlador %hs no pudo completar una solicitud de E/S cancelada en el tiempo asignado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REPLY_MESSAGE_MISMATCH"></span><span id="error_reply_message_mismatch"></span>**ERROR \_ de \_ coincidencia de mensaje de respuesta \_**
+<span id="ERROR_REPLY_MESSAGE_MISMATCH"></span><span id="error_reply_message_mismatch"></span>**ERROR DE \_ COINCIDENCIA DEL MENSAJE DE \_ \_ RESPUESTA**
 </dt> <dd> <dl> <dt>
 
 595 (0x253)
@@ -821,12 +821,12 @@ NTVDM ha detectado un error de hardware.
 
 
 
-{Error de coincidencia del mensaje de respuesta} Se intentó responder a un mensaje LPC, pero el subproceso especificado por el identificador de cliente en el mensaje no estaba esperando en el mensaje.
+{Error de coincidencia del mensaje de respuesta} Se intentó responder a un mensaje LPC, pero el subproceso especificado por el identificador de cliente en el mensaje no esperaba ese mensaje.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOST_WRITEBEHIND_DATA"></span><span id="error_lost_writebehind_data"></span>**ERROR al \_ perder los \_ datos de WRITEBEHIND \_**
+<span id="ERROR_LOST_WRITEBEHIND_DATA"></span><span id="error_lost_writebehind_data"></span>**ERROR \_ AL PERDER DATOS \_ WRITEBEHIND \_**
 </dt> <dd> <dl> <dt>
 
 596 (0x254)
@@ -834,12 +834,12 @@ NTVDM ha detectado un error de hardware.
 
 
 
-{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo% HS. Se han perdido los datos. Este error puede deberse a un error del hardware del equipo o de la conexión de red. Intente guardar este archivo en otra ubicación.
+{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo %hs. Los datos se han perdido. Este error puede deberse a un error en el hardware del equipo o en la conexión de red. Intente guardar este archivo en otro lugar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CLIENT_SERVER_PARAMETERS_INVALID"></span><span id="error_client_server_parameters_invalid"></span>**ERROR de \_ parámetros de servidor de cliente \_ \_ \_ no válidos**
+<span id="ERROR_CLIENT_SERVER_PARAMETERS_INVALID"></span><span id="error_client_server_parameters_invalid"></span>**ERROR: \_ PARÁMETROS DEL SERVIDOR CLIENTE NO \_ \_ \_ VÁLIDOS**
 </dt> <dd> <dl> <dt>
 
 597 (0x255)
@@ -847,12 +847,12 @@ NTVDM ha detectado un error de hardware.
 
 
 
-Los parámetros pasados al servidor en la ventana memoria compartida de cliente/servidor no eran válidos. Es posible que se hayan colocado demasiados datos en la ventana memoria compartida.
+Los parámetros pasados al servidor en la ventana de memoria compartida cliente/servidor no eran válidos. Es posible que se hayan puesto demasiados datos en la ventana de memoria compartida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_TINY_STREAM"></span><span id="error_not_tiny_stream"></span>**ERROR \_ no es un \_ \_ flujo reducido**
+<span id="ERROR_NOT_TINY_STREAM"></span><span id="error_not_tiny_stream"></span>**ERROR \_ NOT \_ TINY \_ STREAM**
 </dt> <dd> <dl> <dt>
 
 598 (0x256)
@@ -865,7 +865,7 @@ La secuencia no es una secuencia pequeña.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STACK_OVERFLOW_READ"></span><span id="error_stack_overflow_read"></span>**ERROR de \_ desbordamiento de pila de errores \_ \_**
+<span id="ERROR_STACK_OVERFLOW_READ"></span><span id="error_stack_overflow_read"></span>**ERROR \_ STACK \_ OVERFLOW \_ READ**
 </dt> <dd> <dl> <dt>
 
 599 (0x257)
@@ -873,12 +873,12 @@ La secuencia no es una secuencia pequeña.
 
 
 
-La solicitud debe controlarse mediante el código de desbordamiento de pila.
+El código de desbordamiento de pila debe controlar la solicitud.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CONVERT_TO_LARGE"></span><span id="error_convert_to_large"></span>**ERROR \_ \_ al convertir a \_ grande**
+<span id="ERROR_CONVERT_TO_LARGE"></span><span id="error_convert_to_large"></span>**ERROR \_ AL CONVERTIR EN \_ \_ GRANDE**
 </dt> <dd> <dl> <dt>
 
 600 (0x258)
@@ -886,12 +886,12 @@ La solicitud debe controlarse mediante el código de desbordamiento de pila.
 
 
 
-Códigos de estado de OFS internos que indican cómo se controla una operación de asignación. Se reintentará después de que se mueva el onode contenedor o hasta que el flujo de la extensión se convierta en una secuencia grande.
+Códigos de estado internos de OFS que indican cómo se controla una operación de asignación. Se reintente una vez que se mueve el nodo o nodo de extensión que lo contiene o la secuencia de extensión se convierte en una secuencia grande.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FOUND_OUT_OF_SCOPE"></span><span id="error_found_out_of_scope"></span>**ERROR \_ detectado \_ fuera \_ de \_ ámbito**
+<span id="ERROR_FOUND_OUT_OF_SCOPE"></span><span id="error_found_out_of_scope"></span>**ERROR \_ ENCONTRADO FUERA DEL \_ \_ \_ ÁMBITO**
 </dt> <dd> <dl> <dt>
 
 601 (0x259)
@@ -899,12 +899,12 @@ Códigos de estado de OFS internos que indican cómo se controla una operación 
 
 
 
-El intento de buscar el objeto encontró un objeto que coincide con el identificador en el volumen pero está fuera del ámbito del identificador usado para la operación.
+El intento de encontrar el objeto encontró un objeto que coincide por identificador en el volumen, pero está fuera del ámbito del identificador utilizado para la operación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALLOCATE_BUCKET"></span><span id="error_allocate_bucket"></span>**ERROR al \_ asignar el \_ depósito**
+<span id="ERROR_ALLOCATE_BUCKET"></span><span id="error_allocate_bucket"></span>**ERROR \_ AL ASIGNAR \_ CUBO**
 </dt> <dd> <dl> <dt>
 
 602 (0x25A)
@@ -912,12 +912,12 @@ El intento de buscar el objeto encontró un objeto que coincide con el identific
 
 
 
-La matriz de depósitos debe crecer. Vuelva a intentar la transacción después de hacerlo.
+La matriz de cubos debe crecer. Vuelva a intentar la transacción después de hacerlo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MARSHALL_OVERFLOW"></span><span id="error_marshall_overflow"></span>**\_desbordamiento de serialización de error \_**
+<span id="ERROR_MARSHALL_OVERFLOW"></span><span id="error_marshall_overflow"></span>**ERROR \_ MARSHALL \_ OVERFLOW**
 </dt> <dd> <dl> <dt>
 
 603 (0x25B)
@@ -925,12 +925,12 @@ La matriz de depósitos debe crecer. Vuelva a intentar la transacción después 
 
 
 
-Se ha desbordado el búfer de serialización de usuario/kernel.
+Se ha desbordado el búfer de clasificación de usuario/kernel.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_VARIANT"></span><span id="error_invalid_variant"></span>**ERROR \_ de \_ variante no válida**
+<span id="ERROR_INVALID_VARIANT"></span><span id="error_invalid_variant"></span>**ERROR \_ VARIANTE NO \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 604 (0x25C)
@@ -938,12 +938,12 @@ Se ha desbordado el búfer de serialización de usuario/kernel.
 
 
 
-La estructura de variante proporcionada contiene datos no válidos.
+La estructura variante proporcionada contiene datos no válidos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_COMPRESSION_BUFFER"></span><span id="error_bad_compression_buffer"></span>**ERROR \_ de \_ búfer de compresión incorrecto \_**
+<span id="ERROR_BAD_COMPRESSION_BUFFER"></span><span id="error_bad_compression_buffer"></span>**ERROR \_ BÚFER DE COMPRESIÓN NO ESTÁ \_ \_ BIEN**
 </dt> <dd> <dl> <dt>
 
 605 (0x25D)
@@ -951,12 +951,12 @@ La estructura de variante proporcionada contiene datos no válidos.
 
 
 
-El búfer especificado contiene datos con formato incorrecto.
+El búfer especificado contiene datos con formato no correcto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_AUDIT_FAILED"></span><span id="error_audit_failed"></span>**ERROR de auditoría de errores \_ \_**
+<span id="ERROR_AUDIT_FAILED"></span><span id="error_audit_failed"></span>**ERROR DE \_ AUDITORÍA \_**
 </dt> <dd> <dl> <dt>
 
 606 (0x25E)
@@ -964,12 +964,12 @@ El búfer especificado contiene datos con formato incorrecto.
 
 
 
-{Error de auditoría} Error al tratar de generar una auditoría de seguridad.
+{Error de auditoría} Error al intentar generar una auditoría de seguridad.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TIMER_RESOLUTION_NOT_SET"></span><span id="error_timer_resolution_not_set"></span>**\_no se \_ estableció la resolución del temporizador \_ \_**
+<span id="ERROR_TIMER_RESOLUTION_NOT_SET"></span><span id="error_timer_resolution_not_set"></span>**RESOLUCIÓN \_ DEL TEMPORIZADOR DE ERROR NO \_ \_ \_ ESTABLECIDA**
 </dt> <dd> <dl> <dt>
 
 607 (0x25F)
@@ -977,12 +977,12 @@ El búfer especificado contiene datos con formato incorrecto.
 
 
 
-La resolución del temporizador no se estableció previamente en el proceso actual.
+El proceso actual no estableció previamente la resolución del temporizador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSUFFICIENT_LOGON_INFO"></span><span id="error_insufficient_logon_info"></span>**ERROR \_ : \_ información de inicio de sesión insuficiente \_**
+<span id="ERROR_INSUFFICIENT_LOGON_INFO"></span><span id="error_insufficient_logon_info"></span>**ERROR \_ INFORMACIÓN DE INICIO DE SESIÓN \_ \_ INSUFICIENTE**
 </dt> <dd> <dl> <dt>
 
 608 (0x260)
@@ -995,7 +995,7 @@ No hay suficiente información de cuenta para iniciar sesión.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_DLL_ENTRYPOINT"></span><span id="error_bad_dll_entrypoint"></span>**ERROR de punto de entrada de \_ \_ dll incorrecto \_**
+<span id="ERROR_BAD_DLL_ENTRYPOINT"></span><span id="error_bad_dll_entrypoint"></span>**ERROR \_ BAD \_ DLL \_ ENTRYPOINT**
 </dt> <dd> <dl> <dt>
 
 609 (0x261)
@@ -1003,12 +1003,12 @@ No hay suficiente información de cuenta para iniciar sesión.
 
 
 
-{Punto de entrada de DLL no válido} La biblioteca de vínculos dinámicos% HS no se ha escrito correctamente. El puntero de pila se ha dejado en un estado incoherente. El punto de entrada debe declararse como WINAPI o STDCALL. Seleccione Sí para no realizar la carga de la DLL. Seleccione NO para continuar con la ejecución. La selección de NO puede hacer que la aplicación NO funcione correctamente.
+{Punto de entrada dll no válido} La biblioteca de vínculos dinámicos %hs no está escrita correctamente. El puntero de pila se ha dejado en un estado incoherente. El punto de entrada debe declararse como WINAPI o STDCALL. Seleccione SÍ para producir un error en la carga del archivo DLL. Seleccione NO para continuar con la ejecución. La selección de NO puede hacer que la aplicación funcione incorrectamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_SERVICE_ENTRYPOINT"></span><span id="error_bad_service_entrypoint"></span>**ERROR de punto de entrada de \_ \_ servicio incorrecto \_**
+<span id="ERROR_BAD_SERVICE_ENTRYPOINT"></span><span id="error_bad_service_entrypoint"></span>**ERROR \_ BAD \_ SERVICE \_ ENTRYPOINT**
 </dt> <dd> <dl> <dt>
 
 610 (0x262)
@@ -1016,12 +1016,12 @@ No hay suficiente información de cuenta para iniciar sesión.
 
 
 
-{Punto de entrada de devolución de llamada de servicio no válido} El servicio% HS no se ha escrito correctamente. El puntero de pila se ha dejado en un estado incoherente. El punto de entrada de devolución de llamada debe declararse como WINAPI o STDCALL. Si selecciona Aceptar, el servicio continuará la operación. Sin embargo, es posible que el proceso de servicio no funcione correctamente.
+{Punto de entrada de devolución de llamada de servicio no válido} El servicio %hs no está escrito correctamente. El puntero de pila se ha dejado en un estado incoherente. El punto de entrada de devolución de llamada debe declararse como WINAPI o STDCALL. Al seleccionar Aceptar, el servicio continuará funcionando. Sin embargo, el proceso de servicio puede funcionar incorrectamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IP_ADDRESS_CONFLICT1"></span><span id="error_ip_address_conflict1"></span>**ERROR \_ de \_ dirección IP \_ CONFLICT1**
+<span id="ERROR_IP_ADDRESS_CONFLICT1"></span><span id="error_ip_address_conflict1"></span>**ERROR \_ DIRECCIÓN IP \_ \_ CONFLICT1**
 </dt> <dd> <dl> <dt>
 
 611 (0x263)
@@ -1029,12 +1029,12 @@ No hay suficiente información de cuenta para iniciar sesión.
 
 
 
-Hay un conflicto de dirección IP con otro sistema de la red.
+Hay un conflicto de direcciones IP con otro sistema en la red.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IP_ADDRESS_CONFLICT2"></span><span id="error_ip_address_conflict2"></span>**ERROR \_ de \_ dirección IP \_ CONFLICT2**
+<span id="ERROR_IP_ADDRESS_CONFLICT2"></span><span id="error_ip_address_conflict2"></span>**ERROR \_ DIRECCIÓN IP \_ \_ CONFLICT2**
 </dt> <dd> <dl> <dt>
 
 612 (0x264)
@@ -1042,12 +1042,12 @@ Hay un conflicto de dirección IP con otro sistema de la red.
 
 
 
-Hay un conflicto de dirección IP con otro sistema de la red.
+Hay un conflicto de direcciones IP con otro sistema en la red.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REGISTRY_QUOTA_LIMIT"></span><span id="error_registry_quota_limit"></span>**\_límite de \_ cuota del registro de errores \_**
+<span id="ERROR_REGISTRY_QUOTA_LIMIT"></span><span id="error_registry_quota_limit"></span>**LÍMITE DE \_ CUOTA DEL REGISTRO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 613 (0x265)
@@ -1055,12 +1055,12 @@ Hay un conflicto de dirección IP con otro sistema de la red.
 
 
 
-{Espacio insuficiente en el registro} El sistema ha alcanzado el tamaño máximo permitido para la parte del sistema del registro. Se omitirán las solicitudes de almacenamiento adicionales.
+{Espacio bajo en el Registro} El sistema ha alcanzado el tamaño máximo permitido para la parte del sistema del registro. Se omitirán las solicitudes de almacenamiento adicionales.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_CALLBACK_ACTIVE"></span><span id="error_no_callback_active"></span>**ERROR: \_ no hay ninguna \_ devolución de llamada \_ activa**
+<span id="ERROR_NO_CALLBACK_ACTIVE"></span><span id="error_no_callback_active"></span>**ERROR \_ NO \_ HAY DEVOLUCIÓN DE LLAMADA \_ ACTIVA**
 </dt> <dd> <dl> <dt>
 
 614 (0x266)
@@ -1068,12 +1068,12 @@ Hay un conflicto de dirección IP con otro sistema de la red.
 
 
 
-No se puede ejecutar un servicio de sistema de devolución de devolución de llamada cuando no hay ninguna devolución de llamada activa.
+No se puede ejecutar un servicio del sistema de devolución de devolución de llamada cuando no hay ninguna devolución de llamada activa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PWD_TOO_SHORT"></span><span id="error_pwd_too_short"></span>**ERROR \_ pwd \_ demasiado \_ corto**
+<span id="ERROR_PWD_TOO_SHORT"></span><span id="error_pwd_too_short"></span>**ERROR \_ PWD \_ TOO \_ SHORT**
 </dt> <dd> <dl> <dt>
 
 615 (0x267)
@@ -1081,12 +1081,12 @@ No se puede ejecutar un servicio de sistema de devolución de devolución de lla
 
 
 
-La contraseña proporcionada es demasiado corta para cumplir con la Directiva de su cuenta de usuario. Elija una contraseña más larga.
+La contraseña proporcionada es demasiado corta para cumplir la directiva de su cuenta de usuario. Elija una contraseña más larga.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PWD_TOO_RECENT"></span><span id="error_pwd_too_recent"></span>**ERROR \_ pwd \_ demasiado \_ reciente**
+<span id="ERROR_PWD_TOO_RECENT"></span><span id="error_pwd_too_recent"></span>**ERROR \_ PWD \_ TOO \_ RECENT**
 </dt> <dd> <dl> <dt>
 
 616 (0x268)
@@ -1094,12 +1094,12 @@ La contraseña proporcionada es demasiado corta para cumplir con la Directiva de
 
 
 
-La Directiva de su cuenta de usuario no permite cambiar las contraseñas con demasiada frecuencia. Esto se hace para evitar que los usuarios cambien a una contraseña conocida, pero potencialmente detectada. Si cree que la contraseña se ha puesto en peligro, póngase en contacto con el administrador inmediatamente para tener una nueva asignada.
+La directiva de su cuenta de usuario no le permite cambiar contraseñas con demasiada frecuencia. Esto se hace para evitar que los usuarios cambien a una contraseña conocida, pero potencialmente detectada. Si cree que la contraseña se ha puesto en peligro, póngase en contacto con el administrador inmediatamente para asignar una nueva.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PWD_HISTORY_CONFLICT"></span><span id="error_pwd_history_conflict"></span>**conflicto de historial de ERROR \_ pwd \_ \_**
+<span id="ERROR_PWD_HISTORY_CONFLICT"></span><span id="error_pwd_history_conflict"></span>**ERROR \_ PWD \_ HISTORY \_ CONFLICT**
 </dt> <dd> <dl> <dt>
 
 617 (0x269)
@@ -1107,12 +1107,12 @@ La Directiva de su cuenta de usuario no permite cambiar las contraseñas con dem
 
 
 
-Ha intentado cambiar la contraseña por una que ha usado en el pasado. La Directiva de su cuenta de usuario no lo permite. Seleccione una contraseña que no haya usado previamente.
+Ha intentado cambiar la contraseña por una que ha usado en el pasado. La directiva de su cuenta de usuario no lo permite. Seleccione una contraseña que no haya usado anteriormente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNSUPPORTED_COMPRESSION"></span><span id="error_unsupported_compression"></span>**ERROR de \_ compresión no admitida \_**
+<span id="ERROR_UNSUPPORTED_COMPRESSION"></span><span id="error_unsupported_compression"></span>**ERROR \_ COMPRESIÓN NO \_ ADMITIDA**
 </dt> <dd> <dl> <dt>
 
 618 (0x26A)
@@ -1120,12 +1120,12 @@ Ha intentado cambiar la contraseña por una que ha usado en el pasado. La Direct
 
 
 
-El formato de compresión especificado no es compatible.
+No se admite el formato de compresión especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_HW_PROFILE"></span><span id="error_invalid_hw_profile"></span>**ERROR \_ de \_ Perfil de HW no válido \_**
+<span id="ERROR_INVALID_HW_PROFILE"></span><span id="error_invalid_hw_profile"></span>**ERROR \_ PERFIL DE HW NO \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 619 (0x26B)
@@ -1133,12 +1133,12 @@ El formato de compresión especificado no es compatible.
 
 
 
-La configuración de Perfil de hardware especificada no es válida.
+La configuración del perfil de hardware especificado no es válida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_PLUGPLAY_DEVICE_PATH"></span><span id="error_invalid_plugplay_device_path"></span>**ERROR en la \_ \_ ruta de acceso del dispositivo PLUGPLAY no válida \_ \_**
+<span id="ERROR_INVALID_PLUGPLAY_DEVICE_PATH"></span><span id="error_invalid_plugplay_device_path"></span>**ERROR RUTA \_ DE ACCESO DEL DISPOSITIVO \_ PLUGPLAY NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 620 (0x26C)
@@ -1146,12 +1146,12 @@ La configuración de Perfil de hardware especificada no es válida.
 
 
 
-La ruta de acceso del dispositivo del registro de Plug and Play especificada no es válida.
+La ruta de acceso Plug and Play del registro especificada no es válida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_QUOTA_LIST_INCONSISTENT"></span><span id="error_quota_list_inconsistent"></span>**lista de cuotas de ERROR \_ \_ \_ incoherente**
+<span id="ERROR_QUOTA_LIST_INCONSISTENT"></span><span id="error_quota_list_inconsistent"></span>**LISTA DE \_ CUOTAS \_ DE ERRORES \_ INCOHERENTE**
 </dt> <dd> <dl> <dt>
 
 621 (0x26D)
@@ -1164,7 +1164,7 @@ La lista de cuotas especificada es incoherente internamente con su descriptor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVALUATION_EXPIRATION"></span><span id="error_evaluation_expiration"></span>**expiración de la evaluación de errores \_ \_**
+<span id="ERROR_EVALUATION_EXPIRATION"></span><span id="error_evaluation_expiration"></span>**EXPIRACIÓN \_ DE EVALUACIÓN \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 622 (0x26E)
@@ -1172,12 +1172,12 @@ La lista de cuotas especificada es incoherente internamente con su descriptor.
 
 
 
-{Notificación de evaluación de Windows} El período de evaluación de esta instalación de Windows ha expirado. Este sistema se apagará en 1 hora. Para restaurar el acceso a esta instalación de Windows, actualice esta instalación mediante una distribución con licencia de este producto.
+{Windows de evaluación} El período de evaluación para esta instalación de Windows ha expirado. Este sistema se apagará en 1 hora. Para restaurar el acceso a esta instalación de Windows, actualice esta instalación mediante una distribución con licencia de este producto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ILLEGAL_DLL_RELOCATION"></span><span id="error_illegal_dll_relocation"></span>**ERROR \_ de \_ reubicación de dll no válida \_**
+<span id="ERROR_ILLEGAL_DLL_RELOCATION"></span><span id="error_illegal_dll_relocation"></span>**ERROR \_ DE REUBICACIÓN DE \_ DLL NO \_ ES ASÍ**
 </dt> <dd> <dl> <dt>
 
 623 (0x26F)
@@ -1185,12 +1185,12 @@ La lista de cuotas especificada es incoherente internamente con su descriptor.
 
 
 
-{Reubicación de DLL del sistema no válida} La DLL del sistema% HS se reubicaba en la memoria. La aplicación no se ejecutará correctamente. La reubicación se produjo porque el archivo DLL% HS ocupaba un intervalo de direcciones reservado para los archivos DLL del sistema de Windows. Se debe poner en contacto con el proveedor que suministra el archivo DLL para obtener un nuevo archivo DLL.
+{Reubicación de DLL del sistema no válido} El archivo DLL del sistema %hs se ha reubicado en memoria. La aplicación no se ejecutará correctamente. La reubicación se produjo porque el archivo DLL %hs ocupaba un intervalo de direcciones reservado para Windows archivos DLL del sistema. Se debe ponerse en contacto con el proveedor que suministra el archivo DLL para obtener un nuevo archivo DLL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DLL_INIT_FAILED_LOGOFF"></span><span id="error_dll_init_failed_logoff"></span>**ERROR \_ \_ \_ al cerrar la sesión de dll init \_**
+<span id="ERROR_DLL_INIT_FAILED_LOGOFF"></span><span id="error_dll_init_failed_logoff"></span>**ERROR \_ DLL \_ INIT \_ FAILED \_ LOGOFF**
 </dt> <dd> <dl> <dt>
 
 624 (0x270)
@@ -1198,12 +1198,12 @@ La lista de cuotas especificada es incoherente internamente con su descriptor.
 
 
 
-{Error de inicialización de DLL} No se pudo inicializar la aplicación porque la estación de ventana se está cerrando.
+{Error de inicialización de DLL} La aplicación no se pudo inicializar porque la estación de ventana se está cerrando.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VALIDATE_CONTINUE"></span><span id="error_validate_continue"></span>**ERROR al \_ validar la validación \_**
+<span id="ERROR_VALIDATE_CONTINUE"></span><span id="error_validate_continue"></span>**ERROR \_ VALIDATE \_ CONTINUE**
 </dt> <dd> <dl> <dt>
 
 625 (0x271)
@@ -1216,7 +1216,7 @@ El proceso de validación debe continuar con el paso siguiente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_MORE_MATCHES"></span><span id="error_no_more_matches"></span>**ERROR: \_ no hay \_ más \_ coincidencias**
+<span id="ERROR_NO_MORE_MATCHES"></span><span id="error_no_more_matches"></span>**ERROR \_ NO \_ MÁS \_ COINCIDENCIAS**
 </dt> <dd> <dl> <dt>
 
 626 (0x272)
@@ -1229,7 +1229,7 @@ No hay más coincidencias para la enumeración de índice actual.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RANGE_LIST_CONFLICT"></span><span id="error_range_list_conflict"></span>**\_conflicto de \_ lista de intervalos de errores \_**
+<span id="ERROR_RANGE_LIST_CONFLICT"></span><span id="error_range_list_conflict"></span>**CONFLICTO DE \_ LISTA \_ DE INTERVALOS DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 627 (0x273)
@@ -1242,7 +1242,7 @@ No se pudo agregar el intervalo a la lista de intervalos debido a un conflicto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SERVER_SID_MISMATCH"></span><span id="error_server_sid_mismatch"></span>**ERROR \_ de \_ coincidencia de SID de servidor \_**
+<span id="ERROR_SERVER_SID_MISMATCH"></span><span id="error_server_sid_mismatch"></span>**ERROR \_ SERVER \_ SID \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 628 (0x274)
@@ -1250,12 +1250,12 @@ No se pudo agregar el intervalo a la lista de intervalos debido a un conflicto.
 
 
 
-El proceso de servidor se está ejecutando con un SID diferente del que requiere el cliente.
+El proceso de servidor se ejecuta con un SID diferente del requerido por el cliente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANT_ENABLE_DENY_ONLY"></span><span id="error_cant_enable_deny_only"></span>**ERROR no se \_ \_ permite habilitar \_ solo denegar \_**
+<span id="ERROR_CANT_ENABLE_DENY_ONLY"></span><span id="error_cant_enable_deny_only"></span>**ERROR \_ CANT \_ ENABLE \_ DENY \_ ONLY**
 </dt> <dd> <dl> <dt>
 
 629 (0x275)
@@ -1263,12 +1263,12 @@ El proceso de servidor se está ejecutando con un SID diferente del que requiere
 
 
 
-No se puede habilitar un grupo marcado como usar para denegar únicamente.
+Un grupo marcado como uso solo para denegar no se puede habilitar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FLOAT_MULTIPLE_FAULTS"></span><span id="error_float_multiple_faults"></span>**ERROR \_ float \_ varios \_ errores**
+<span id="ERROR_FLOAT_MULTIPLE_FAULTS"></span><span id="error_float_multiple_faults"></span>**ERROR \_ FLOAT \_ MULTIPLE \_ FAULTS**
 </dt> <dd> <dl> <dt>
 
 630 (0x276)
@@ -1276,12 +1276,12 @@ No se puede habilitar un grupo marcado como usar para denegar únicamente.
 
 
 
-EXCEPCIONAL Varios errores de punto flotante.
+{EXCEPTION} Varios errores de punto flotante.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FLOAT_MULTIPLE_TRAPS"></span><span id="error_float_multiple_traps"></span>**ERROR \_ float \_ varias \_ capturas**
+<span id="ERROR_FLOAT_MULTIPLE_TRAPS"></span><span id="error_float_multiple_traps"></span>**ERROR \_ FLOAT \_ MULTIPLE \_ TRAPS**
 </dt> <dd> <dl> <dt>
 
 631 (0x277)
@@ -1289,12 +1289,12 @@ EXCEPCIONAL Varios errores de punto flotante.
 
 
 
-EXCEPCIONAL Varias capturas de punto flotante.
+{EXCEPTION} Varias capturas de punto flotante.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOINTERFACE"></span><span id="error_nointerface"></span>**ERROR \_ NOinterface**
+<span id="ERROR_NOINTERFACE"></span><span id="error_nointerface"></span>**ERROR \_ NOINTERFACE**
 </dt> <dd> <dl> <dt>
 
 632 (0x278)
@@ -1307,7 +1307,7 @@ No se admite la interfaz solicitada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DRIVER_FAILED_SLEEP"></span><span id="error_driver_failed_sleep"></span>**ERROR \_ \_ al \_ suspender el controlador**
+<span id="ERROR_DRIVER_FAILED_SLEEP"></span><span id="error_driver_failed_sleep"></span>**ERROR \_ DRIVER \_ FAILED \_ SLEEP**
 </dt> <dd> <dl> <dt>
 
 633 (0x279)
@@ -1315,12 +1315,12 @@ No se admite la interfaz solicitada.
 
 
 
-{Error de espera del sistema} El controlador% HS no admite el modo de espera. La actualización de este controlador puede permitir que el sistema entre en modo de espera.
+{Error en espera del sistema} El controlador %hs no admite el modo de espera. La actualización de este controlador puede permitir que el sistema vaya al modo de espera.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CORRUPT_SYSTEM_FILE"></span><span id="error_corrupt_system_file"></span>**ERROR \_ de \_ archivo de sistema dañado \_**
+<span id="ERROR_CORRUPT_SYSTEM_FILE"></span><span id="error_corrupt_system_file"></span>**ERROR \_ AL DAÑAR EL ARCHIVO DEL \_ \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 634 (0x27A)
@@ -1328,12 +1328,12 @@ No se admite la interfaz solicitada.
 
 
 
-El archivo de sistema %1 se ha dañado y se ha reemplazado.
+El archivo del sistema %1 se ha dañado y se ha reemplazado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COMMITMENT_MINIMUM"></span><span id="error_commitment_minimum"></span>**compromiso de ERROR \_ \_ mínimo**
+<span id="ERROR_COMMITMENT_MINIMUM"></span><span id="error_commitment_minimum"></span>**COMPROMISO \_ MÍNIMO DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 635 (0x27B)
@@ -1341,12 +1341,12 @@ El archivo de sistema %1 se ha dañado y se ha reemplazado.
 
 
 
-{Memoria virtual mínima demasiado baja} El sistema tiene poca memoria virtual. Windows está aumentando el tamaño del archivo de paginación de la memoria virtual. Durante este proceso, es posible que se denieguen las solicitudes de memoria para algunas aplicaciones. Para obtener más información, vea la ayuda de.
+{Memoria virtual mínima demasiado baja} El sistema tiene poca memoria virtual. Windows aumenta el tamaño del archivo de paginación de memoria virtual. Durante este proceso, se pueden denegar las solicitudes de memoria para algunas aplicaciones. Para obtener más información, vea Ayuda.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PNP_RESTART_ENUMERATION"></span><span id="error_pnp_restart_enumeration"></span>**ERROR \_ de \_ enumeración de reinicio PNP \_**
+<span id="ERROR_PNP_RESTART_ENUMERATION"></span><span id="error_pnp_restart_enumeration"></span>**ERROR \_ PNP \_ RESTART \_ ENUMERATION**
 </dt> <dd> <dl> <dt>
 
 636 (0x27C)
@@ -1354,12 +1354,12 @@ El archivo de sistema %1 se ha dañado y se ha reemplazado.
 
 
 
-Se quitó un dispositivo, por lo que la enumeración debe reiniciarse.
+Se quitó un dispositivo, por lo que se debe reiniciar la enumeración.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_IMAGE_BAD_SIGNATURE"></span><span id="error_system_image_bad_signature"></span>**\_ \_ firma incorrecta de imagen de sistema \_ \_**
+<span id="ERROR_SYSTEM_IMAGE_BAD_SIGNATURE"></span><span id="error_system_image_bad_signature"></span>**ERROR \_ SIGNATURA \_ NO VÁLIDA DE LA IMAGEN DEL \_ \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 637 (0x27D)
@@ -1367,12 +1367,12 @@ Se quitó un dispositivo, por lo que la enumeración debe reiniciarse.
 
 
 
-{Error irrecuperable del sistema} La imagen del sistema% s no está firmada correctamente. El archivo se ha reemplazado por el archivo firmado. El sistema se ha cerrado.
+{Error irreales del sistema} La imagen del sistema %s no está firmada correctamente. El archivo se ha reemplazado por el archivo firmado. El sistema se ha cerrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PNP_REBOOT_REQUIRED"></span><span id="error_pnp_reboot_required"></span>**ERROR \_ se \_ requiere reinicio de PNP \_**
+<span id="ERROR_PNP_REBOOT_REQUIRED"></span><span id="error_pnp_reboot_required"></span>**ERROR \_ NECESARIO PARA REINICIAR \_ \_ PNP**
 </dt> <dd> <dl> <dt>
 
 638 (0x27E)
@@ -1380,12 +1380,12 @@ Se quitó un dispositivo, por lo que la enumeración debe reiniciarse.
 
 
 
-El dispositivo no se iniciará sin necesidad de reiniciar.
+El dispositivo no se iniciará sin un reinicio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSUFFICIENT_POWER"></span><span id="error_insufficient_power"></span>**ERROR \_ de \_ energía insuficiente**
+<span id="ERROR_INSUFFICIENT_POWER"></span><span id="error_insufficient_power"></span>**ERROR \_ POTENCIA \_ INSUFICIENTE**
 </dt> <dd> <dl> <dt>
 
 639 (0x27F)
@@ -1393,12 +1393,12 @@ El dispositivo no se iniciará sin necesidad de reiniciar.
 
 
 
-No hay suficiente capacidad para completar la operación solicitada.
+No hay suficiente potencia para completar la operación solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MULTIPLE_FAULT_VIOLATION"></span><span id="error_multiple_fault_violation"></span>**ERROR \_ de \_ infracción de varios errores \_**
+<span id="ERROR_MULTIPLE_FAULT_VIOLATION"></span><span id="error_multiple_fault_violation"></span>**ERROR \_ DE INFRACCIÓN \_ DE ERROR \_ MÚLTIPLE**
 </dt> <dd> <dl> <dt>
 
 640 (0x280)
@@ -1406,12 +1406,12 @@ No hay suficiente capacidad para completar la operación solicitada.
 
 
 
-ERROR \_ de \_ infracción de varios errores \_
+ERROR \_ DE INFRACCIÓN \_ DE ERROR \_ MÚLTIPLE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_SHUTDOWN"></span><span id="error_system_shutdown"></span>**ERROR \_ de \_ apagado del sistema**
+<span id="ERROR_SYSTEM_SHUTDOWN"></span><span id="error_system_shutdown"></span>**ERROR \_ DE APAGADO DEL \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 641 (0x281)
@@ -1419,12 +1419,12 @@ ERROR \_ de \_ infracción de varios errores \_
 
 
 
-El sistema está en proceso de cierre.
+El sistema está en proceso de apagado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PORT_NOT_SET"></span><span id="error_port_not_set"></span>**\_no se \_ ha \_ establecido el puerto de error**
+<span id="ERROR_PORT_NOT_SET"></span><span id="error_port_not_set"></span>**PUERTO \_ DE ERROR NO \_ \_ ESTABLECIDO**
 </dt> <dd> <dl> <dt>
 
 642 (0x282)
@@ -1432,12 +1432,12 @@ El sistema está en proceso de cierre.
 
 
 
-Se ha intentado quitar un proceso depurado, pero aún no se ha asociado un puerto al proceso.
+Se intentó quitar un proceso DebugPort, pero aún no se ha asociado un puerto al proceso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_VERSION_CHECK_FAILURE"></span><span id="error_ds_version_check_failure"></span>**ERROR \_ de \_ comprobación de versión de DS \_ \_**
+<span id="ERROR_DS_VERSION_CHECK_FAILURE"></span><span id="error_ds_version_check_failure"></span>**ERROR \_ DS \_ VERSION \_ CHECK \_ FAILURE**
 </dt> <dd> <dl> <dt>
 
 643 (0x283)
@@ -1445,12 +1445,12 @@ Se ha intentado quitar un proceso depurado, pero aún no se ha asociado un puert
 
 
 
-Esta versión de Windows no es compatible con la versión de comportamiento del bosque de directorio, el dominio o el controlador de dominio.
+Esta versión de Windows no es compatible con la versión de comportamiento del bosque de directorios, dominio o controlador de dominio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RANGE_NOT_FOUND"></span><span id="error_range_not_found"></span>**\_ \_ no \_ se encontró el intervalo de errores**
+<span id="ERROR_RANGE_NOT_FOUND"></span><span id="error_range_not_found"></span>**NO \_ SE ENCONTRÓ EL INTERVALO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 644 (0x284)
@@ -1458,12 +1458,12 @@ Esta versión de Windows no es compatible con la versión de comportamiento del 
 
 
 
-No se pudo encontrar el intervalo especificado en la lista de intervalos.
+No se encontró el intervalo especificado en la lista de intervalos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_SAFE_MODE_DRIVER"></span><span id="error_not_safe_mode_driver"></span>**ERROR \_ de \_ \_ controlador de modo seguro \_**
+<span id="ERROR_NOT_SAFE_MODE_DRIVER"></span><span id="error_not_safe_mode_driver"></span>**ERROR \_ NOT SAFE MODE DRIVER (CONTROLADOR DE MODO NO \_ \_ \_ SEGURO)**
 </dt> <dd> <dl> <dt>
 
 646 (0x286)
@@ -1471,12 +1471,12 @@ No se pudo encontrar el intervalo especificado en la lista de intervalos.
 
 
 
-No se cargó el controlador porque el sistema se está iniciando en modo seguro.
+El controlador no se cargó porque el sistema arranca en modo seguro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FAILED_DRIVER_ENTRY"></span><span id="error_failed_driver_entry"></span>**ERROR en la \_ \_ entrada del controlador \_**
+<span id="ERROR_FAILED_DRIVER_ENTRY"></span><span id="error_failed_driver_entry"></span>**ERROR \_ AL ENTRAR EN EL \_ \_ CONTROLADOR**
 </dt> <dd> <dl> <dt>
 
 647 (0x287)
@@ -1484,12 +1484,12 @@ No se cargó el controlador porque el sistema se está iniciando en modo seguro.
 
 
 
-No se cargó el controlador porque no se pudo realizar la llamada de inicialización.
+El controlador no se cargó porque no se pudo llamar a la inicialización.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DEVICE_ENUMERATION_ERROR"></span><span id="error_device_enumeration_error"></span>**error \_ de \_ enumeración de dispositivos error \_**
+<span id="ERROR_DEVICE_ENUMERATION_ERROR"></span><span id="error_device_enumeration_error"></span>**ERROR DE \_ \_ ENUMERACIÓN DE \_ DISPOSITIVOS**
 </dt> <dd> <dl> <dt>
 
 648 (0x288)
@@ -1497,12 +1497,12 @@ No se cargó el controlador porque no se pudo realizar la llamada de inicializac
 
 
 
-"% HS" encontró un error al aplicar la energía o leer la configuración del dispositivo. Esto puede deberse a un error del hardware o a una mala conexión.
+"%hs" encontró un error al aplicar energía o leer la configuración del dispositivo. Esto puede deberse a un error del hardware o a una conexión deficiente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MOUNT_POINT_NOT_RESOLVED"></span><span id="error_mount_point_not_resolved"></span>**\_no se \_ \_ ha \_ resuelto el punto de montaje de error**
+<span id="ERROR_MOUNT_POINT_NOT_RESOLVED"></span><span id="error_mount_point_not_resolved"></span>**PUNTO \_ DE MONTAJE DE ERROR NO \_ \_ \_ RESUELTO**
 </dt> <dd> <dl> <dt>
 
 649 (0x289)
@@ -1510,12 +1510,12 @@ No se cargó el controlador porque no se pudo realizar la llamada de inicializac
 
 
 
-No se pudo realizar la operación de creación porque el nombre contenía al menos un punto de montaje que se resuelve en un volumen al que no está asociado el objeto de dispositivo especificado.
+Error en la operación de creación porque el nombre contenía al menos un punto de montaje que se resuelve en un volumen al que no está conectado el objeto de dispositivo especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_DEVICE_OBJECT_PARAMETER"></span><span id="error_invalid_device_object_parameter"></span>**ERROR \_ de \_ \_ parámetro de objeto de dispositivo no válido \_**
+<span id="ERROR_INVALID_DEVICE_OBJECT_PARAMETER"></span><span id="error_invalid_device_object_parameter"></span>**ERROR \_ PARÁMETRO DE OBJETO DE DISPOSITIVO NO \_ \_ \_ VÁLIDO**
 </dt> <dd> <dl> <dt>
 
 650 (0x28A)
@@ -1528,7 +1528,7 @@ El parámetro de objeto de dispositivo no es un objeto de dispositivo válido o 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_OCCURED"></span><span id="error_mca_occured"></span>**ERROR \_ MCA \_**
+<span id="ERROR_MCA_OCCURED"></span><span id="error_mca_occured"></span>**ERROR \_ MCA \_ OCCURED**
 </dt> <dd> <dl> <dt>
 
 651 (0x28B)
@@ -1536,12 +1536,12 @@ El parámetro de objeto de dispositivo no es un objeto de dispositivo válido o 
 
 
 
-Se ha producido un error de comprobación del equipo. Compruebe el registro de eventos del sistema para obtener información adicional.
+Se ha producido un error de comprobación de máquina. Consulte el registro de eventos del sistema para obtener información adicional.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DRIVER_DATABASE_ERROR"></span><span id="error_driver_database_error"></span>**error \_ de \_ base de datos de controlador de error \_**
+<span id="ERROR_DRIVER_DATABASE_ERROR"></span><span id="error_driver_database_error"></span>**ERROR DE \_ BASE DE DATOS DEL CONTROLADOR DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 652 (0x28C)
@@ -1549,12 +1549,12 @@ Se ha producido un error de comprobación del equipo. Compruebe el registro de e
 
 
 
-Error \[ %2 al \] procesar la base de datos del controlador.
+Error \[ %2 al procesar \] la base de datos del controlador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_HIVE_TOO_LARGE"></span><span id="error_system_hive_too_large"></span>**\_subárbol del sistema de errores \_ \_ demasiado \_ grande**
+<span id="ERROR_SYSTEM_HIVE_TOO_LARGE"></span><span id="error_system_hive_too_large"></span>**\_SUBÁRBOL DEL SISTEMA DE ERRORES DEMASIADO \_ \_ \_ GRANDE**
 </dt> <dd> <dl> <dt>
 
 653 (0x28D)
@@ -1562,12 +1562,12 @@ Error \[ %2 al \] procesar la base de datos del controlador.
 
 
 
-El tamaño de Hive del sistema ha superado el límite.
+El tamaño del subárbol del sistema ha superado su límite.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DRIVER_FAILED_PRIOR_UNLOAD"></span><span id="error_driver_failed_prior_unload"></span>**ERROR de la \_ \_ \_ \_ descarga anterior del controlador de errores**
+<span id="ERROR_DRIVER_FAILED_PRIOR_UNLOAD"></span><span id="error_driver_failed_prior_unload"></span>**ERROR DEL \_ CONTROLADOR ANTES DE LA \_ \_ \_ DESCARGA**
 </dt> <dd> <dl> <dt>
 
 654 (0x28E)
@@ -1575,12 +1575,12 @@ El tamaño de Hive del sistema ha superado el límite.
 
 
 
-No se pudo cargar el controlador porque una versión anterior del controlador todavía está en la memoria.
+No se pudo cargar el controlador porque una versión anterior del controlador todavía está en memoria.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLSNAP_PREPARE_HIBERNATE"></span><span id="error_volsnap_prepare_hibernate"></span>**ERROR de \_ VOLSNAP \_ preparar \_ hibernación**
+<span id="ERROR_VOLSNAP_PREPARE_HIBERNATE"></span><span id="error_volsnap_prepare_hibernate"></span>**ERROR \_ VOLSNAP \_ PREPARE \_ HIBERNATE**
 </dt> <dd> <dl> <dt>
 
 655 (0x28F)
@@ -1588,12 +1588,12 @@ No se pudo cargar el controlador porque una versión anterior del controlador to
 
 
 
-{Servicio de instantáneas de volumen} Espere mientras el Servicio de instantáneas de volumen prepara el volumen% HS para la hibernación.
+{Servicio de instantáneas de volumen} Espere mientras el Servicio de instantáneas de volumen prepara el volumen %hs para la hibernación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HIBERNATION_FAILURE"></span><span id="error_hibernation_failure"></span>**ERROR de \_ hibernación de errores \_**
+<span id="ERROR_HIBERNATION_FAILURE"></span><span id="error_hibernation_failure"></span>**ERROR \_ DE \_ HIBERNACIÓN**
 </dt> <dd> <dl> <dt>
 
 656 (0x290)
@@ -1601,12 +1601,12 @@ No se pudo cargar el controlador porque una versión anterior del controlador to
 
 
 
-No se pudo hibernar el sistema (el código de error es% HS). La hibernación se deshabilitará hasta que se reinicie el sistema.
+El sistema no pudo hibernar (el código de error es %hs). La hibernación se deshabilitará hasta que se reinicie el sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PWD_TOO_LONG"></span><span id="error_pwd_too_long"></span>**ERROR \_ pwd \_ demasiado \_ largo**
+<span id="ERROR_PWD_TOO_LONG"></span><span id="error_pwd_too_long"></span>**ERROR \_ PWD \_ TOO \_ LONG**
 </dt> <dd> <dl> <dt>
 
 657 (0x291)
@@ -1614,12 +1614,12 @@ No se pudo hibernar el sistema (el código de error es% HS). La hibernación se 
 
 
 
-La contraseña proporcionada es demasiado larga para cumplir con la Directiva de su cuenta de usuario. Elija una contraseña más corta.
+La contraseña proporcionada es demasiado larga para cumplir la directiva de su cuenta de usuario. Elija una contraseña más corta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_SYSTEM_LIMITATION"></span><span id="error_file_system_limitation"></span>**\_ \_ limitación del sistema de archivos de error \_**
+<span id="ERROR_FILE_SYSTEM_LIMITATION"></span><span id="error_file_system_limitation"></span>**LIMITACIÓN \_ DEL SISTEMA DE ARCHIVOS DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 665 (0x299)
@@ -1632,7 +1632,7 @@ no se pudo completar la operación solicitada por una limitación del sistema de
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ASSERTION_FAILURE"></span><span id="error_assertion_failure"></span>**error de aserción de ERROR \_ \_**
+<span id="ERROR_ASSERTION_FAILURE"></span><span id="error_assertion_failure"></span>**ERROR DE \_ ASERCIÓN \_ DE ERROR**
 </dt> <dd> <dl> <dt>
 
 668 (0x29C)
@@ -1640,12 +1640,12 @@ no se pudo completar la operación solicitada por una limitación del sistema de
 
 
 
-Error de aserción.
+Se ha producido un error de aserción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACPI_ERROR"></span><span id="error_acpi_error"></span>**error \_ ACPI de error \_**
+<span id="ERROR_ACPI_ERROR"></span><span id="error_acpi_error"></span>**ERROR \_ ACPI \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 669 (0x29D)
@@ -1658,7 +1658,7 @@ Error en el subsistema ACPI.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WOW_ASSERTION"></span><span id="error_wow_assertion"></span>**ERROR \_ de \_ aserción wow**
+<span id="ERROR_WOW_ASSERTION"></span><span id="error_wow_assertion"></span>**ASERCIÓN \_ DE WOW \_ DE ERROR**
 </dt> <dd> <dl> <dt>
 
 670 (0x29E)
@@ -1666,12 +1666,12 @@ Error en el subsistema ACPI.
 
 
 
-Error de aserción WOW.
+Error de aserción wow.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PNP_BAD_MPS_TABLE"></span><span id="error_pnp_bad_mps_table"></span>**ERROR en la \_ \_ \_ \_ tabla MPS errónea de PNP**
+<span id="ERROR_PNP_BAD_MPS_TABLE"></span><span id="error_pnp_bad_mps_table"></span>**ERROR \_ PNP \_ BAD \_ MPS \_ TABLE**
 </dt> <dd> <dl> <dt>
 
 671 (0x29F)
@@ -1679,12 +1679,12 @@ Error de aserción WOW.
 
 
 
-Falta un dispositivo en la tabla MPS del BIOS del sistema. Este dispositivo no se usará. Póngase en contacto con el proveedor del sistema para actualizar el BIOS del sistema.
+Falta un dispositivo en la tabla MPS del BIOS del sistema. Este dispositivo no se usará. Póngase en contacto con el proveedor del sistema para obtener información sobre la actualización del BIOS del sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PNP_TRANSLATION_FAILED"></span><span id="error_pnp_translation_failed"></span>**ERROR \_ de \_ traducción de PNP \_**
+<span id="ERROR_PNP_TRANSLATION_FAILED"></span><span id="error_pnp_translation_failed"></span>**ERROR \_ AL TRADUCIR PNP \_ \_**
 </dt> <dd> <dl> <dt>
 
 672 (0x2A0)
@@ -1697,7 +1697,7 @@ Un traductor no pudo traducir los recursos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PNP_IRQ_TRANSLATION_FAILED"></span><span id="error_pnp_irq_translation_failed"></span>**ERROR \_ de \_ conversión de IRQ PNP \_ \_**
+<span id="ERROR_PNP_IRQ_TRANSLATION_FAILED"></span><span id="error_pnp_irq_translation_failed"></span>**ERROR \_ AL TRADUCIR \_ IRQ DE PNP \_ \_**
 </dt> <dd> <dl> <dt>
 
 673 (0x2A1)
@@ -1705,12 +1705,12 @@ Un traductor no pudo traducir los recursos.
 
 
 
-Un traductor de IRQ no pudo traducir los recursos.
+Un traductor de IRQ no pudo traducir recursos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PNP_INVALID_ID"></span><span id="error_pnp_invalid_id"></span>**ERROR \_ de \_ identificador no válido de PNP \_**
+<span id="ERROR_PNP_INVALID_ID"></span><span id="error_pnp_invalid_id"></span>**ERROR \_ PNP \_ INVALID \_ ID**
 </dt> <dd> <dl> <dt>
 
 674 (0x2A2)
@@ -1718,12 +1718,12 @@ Un traductor de IRQ no pudo traducir los recursos.
 
 
 
-El controlador %2 devolvió un ID. no válido para un dispositivo secundario (%3).
+El controlador %2 devolvió un identificador no válido para un dispositivo secundario (%3).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAKE_SYSTEM_DEBUGGER"></span><span id="error_wake_system_debugger"></span>**ERROR de \_ reactivación \_ del sistema del \_ depurador**
+<span id="ERROR_WAKE_SYSTEM_DEBUGGER"></span><span id="error_wake_system_debugger"></span>**DEPURADOR DEL \_ \_ SISTEMA DE REACTIVACIÓN DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 675 (0x2A3)
@@ -1731,12 +1731,12 @@ El controlador %2 devolvió un ID. no válido para un dispositivo secundario (%3
 
 
 
-{Se activó el depurador de kernel} una interrupción activó el depurador del sistema.
+{Kernel Debugger Debugger Debuggered} el depurador del sistema se ha interrumpido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HANDLES_CLOSED"></span><span id="error_handles_closed"></span>**\_identificadores de error \_ cerrados**
+<span id="ERROR_HANDLES_CLOSED"></span><span id="error_handles_closed"></span>**IDENTIFICADORES \_ DE ERROR \_ CERRADOS**
 </dt> <dd> <dl> <dt>
 
 676 (0x2A4)
@@ -1744,12 +1744,12 @@ El controlador %2 devolvió un ID. no válido para un dispositivo secundario (%3
 
 
 
-{Identificadores cerrados} Los identificadores de los objetos se han cerrado automáticamente como resultado de la operación solicitada.
+{Handles Closed} Los identificadores de los objetos se han cerrado automáticamente como resultado de la operación solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EXTRANEOUS_INFORMATION"></span><span id="error_extraneous_information"></span>**\_información extraña de error \_**
+<span id="ERROR_EXTRANEOUS_INFORMATION"></span><span id="error_extraneous_information"></span>**INFORMACIÓN \_ ADICIONAL DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 677 (0x2A5)
@@ -1757,12 +1757,12 @@ El controlador %2 devolvió un ID. no válido para un dispositivo secundario (%3
 
 
 
-{Demasiada información} La lista de control de acceso (ACL) especificada contiene más información de la esperada.
+{Demasiada información} La lista de control de acceso (ACL) especificada contenía más información de la esperada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RXACT_COMMIT_NECESSARY"></span><span id="error_rxact_commit_necessary"></span>**ERROR \_ RXACT la \_ confirmación \_ necesaria**
+<span id="ERROR_RXACT_COMMIT_NECESSARY"></span><span id="error_rxact_commit_necessary"></span>**ERROR \_ RXACT \_ COMMIT \_ NECESSARY**
 </dt> <dd> <dl> <dt>
 
 678 (0x2A6)
@@ -1770,12 +1770,12 @@ El controlador %2 devolvió un ID. no válido para un dispositivo secundario (%3
 
 
 
-Este estado de nivel de advertencia indica que el estado de la transacción ya existe para el subárbol del registro, pero que se anuló previamente una confirmación de transacción. La confirmación no se ha completado, pero no se ha revertido (por lo que se puede seguir confirmando si se desea).
+Este estado de nivel de advertencia indica que el estado de transacción ya existe para el subárquico del Registro, pero que se anuló previamente una confirmación de transacción. La confirmación NO se ha completado, pero tampoco se ha revertido (por lo que puede confirmarse si lo desea).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MEDIA_CHECK"></span><span id="error_media_check"></span>**\_comprobación de medios de error \_**
+<span id="ERROR_MEDIA_CHECK"></span><span id="error_media_check"></span>**COMPROBACIÓN \_ DE MEDIOS DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 679 (0x2A7)
@@ -1783,12 +1783,12 @@ Este estado de nivel de advertencia indica que el estado de la transacción ya e
 
 
 
-{Contenido multimedia cambiado} Es posible que el medio haya cambiado.
+{Media Changed} Es posible que el medio haya cambiado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_GUID_SUBSTITUTION_MADE"></span><span id="error_guid_substitution_made"></span>**sustitución de GUID de ERROR \_ \_ \_ realizada**
+<span id="ERROR_GUID_SUBSTITUTION_MADE"></span><span id="error_guid_substitution_made"></span>**SUSTITUCIÓN \_ DE GUID DE ERROR \_ \_ REALIZADA**
 </dt> <dd> <dl> <dt>
 
 680 (0x2A8)
@@ -1796,12 +1796,12 @@ Este estado de nivel de advertencia indica que el estado de la transacción ya e
 
 
 
-{Sustitución de GUID} Durante la traducción de un identificador global (GUID) a un identificador de seguridad de Windows (SID), no se encontró ningún prefijo GUID definido por el administrador. Se usó un prefijo sustitutivo, lo que no afectará A la seguridad del sistema. Sin embargo, esto puede proporcionar un acceso más restrictivo que el previsto.
+{Sustitución de GUID} Durante la traducción de un identificador global (GUID) a un identificador Windows seguridad (SID), no se encontró ningún prefijo GUID definido administrativamente. Se usó un prefijo de sustitución, lo que no pondrá en peligro la seguridad del sistema. Sin embargo, esto puede proporcionar un acceso más restrictivo de lo previsto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_STOPPED_ON_SYMLINK"></span><span id="error_stopped_on_symlink"></span>**ERROR \_ detenido \_ en \_ SYMLINK**
+<span id="ERROR_STOPPED_ON_SYMLINK"></span><span id="error_stopped_on_symlink"></span>**ERROR \_ DETENIDO \_ EN \_ SYMLINK**
 </dt> <dd> <dl> <dt>
 
 681 (0x2A9)
@@ -1809,7 +1809,7 @@ Este estado de nivel de advertencia indica que el estado de la transacción ya e
 
 
 
-La operación de creación se detuvo después de llegar a un vínculo simbólico.
+La operación de creación se detuvo después de alcanzar un vínculo simbólico.
 
 
 </dt> </dl> </dd> <dt>
@@ -1827,7 +1827,7 @@ Se ha ejecutado un salto largo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PLUGPLAY_QUERY_VETOED"></span><span id="error_plugplay_query_vetoed"></span>**ERROR \_ PLUGPLAY \_ consulta \_ vetada**
+<span id="ERROR_PLUGPLAY_QUERY_VETOED"></span><span id="error_plugplay_query_vetoed"></span>**ERROR \_ PLUGPLAY \_ QUERY \_ VETOED**
 </dt> <dd> <dl> <dt>
 
 683 (0x2AB)
@@ -1835,12 +1835,12 @@ Se ha ejecutado un salto largo.
 
 
 
-La operación de consulta de Plug and Play no se realizó correctamente.
+La Plug and Play operación de consulta no se ha realizado correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_UNWIND_CONSOLIDATE"></span><span id="error_unwind_consolidate"></span>**ERROR al \_ DESenredar la \_ consolidación**
+<span id="ERROR_UNWIND_CONSOLIDATE"></span><span id="error_unwind_consolidate"></span>**CONSOLIDACIÓN \_ DE DESENREDO \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 684 (0x2AC)
@@ -1853,7 +1853,7 @@ Se ha ejecutado una consolidación de fotogramas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REGISTRY_HIVE_RECOVERED"></span><span id="error_registry_hive_recovered"></span>**ERROR \_ de \_ subárbol del registro \_ recuperado**
+<span id="ERROR_REGISTRY_HIVE_RECOVERED"></span><span id="error_registry_hive_recovered"></span>**HIVE \_ DEL REGISTRO DE ERRORES \_ \_ RECUPERADO**
 </dt> <dd> <dl> <dt>
 
 685 (0x2AD)
@@ -1861,12 +1861,12 @@ Se ha ejecutado una consolidación de fotogramas.
 
 
 
-{Subárbol del registro recuperado} El subárbol del registro (archivo):% HS estaba dañado y se ha recuperado. Algunos datos podrían haberse perdido.
+{Registry Hive Recovered} Subárbol del Registro (archivo): %hs está dañado y se ha recuperado. Es posible que se hayan perdido algunos datos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DLL_MIGHT_BE_INSECURE"></span><span id="error_dll_might_be_insecure"></span>**el \_ archivo dll de error \_ puede no \_ ser \_ seguro**
+<span id="ERROR_DLL_MIGHT_BE_INSECURE"></span><span id="error_dll_might_be_insecure"></span>**EL \_ ARCHIVO DLL DE ERROR PODRÍA SER \_ \_ \_ INSEGURO**
 </dt> <dd> <dl> <dt>
 
 686 (0x2AE)
@@ -1874,12 +1874,12 @@ Se ha ejecutado una consolidación de fotogramas.
 
 
 
-La aplicación está intentando ejecutar código ejecutable desde el módulo% HS. Esto puede ser inseguro. Existe una alternativa,% HS, disponible. ¿La aplicación debe usar el módulo seguro% HS?
+La aplicación está intentando ejecutar código ejecutable desde el módulo %hs. Esto puede no ser seguro. Hay disponible una alternativa, %hs. ¿Debe la aplicación usar el módulo seguro %hs?
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DLL_MIGHT_BE_INCOMPATIBLE"></span><span id="error_dll_might_be_incompatible"></span>**\_es posible que la dll de error no \_ \_ sea \_ compatible**
+<span id="ERROR_DLL_MIGHT_BE_INCOMPATIBLE"></span><span id="error_dll_might_be_incompatible"></span>**EL \_ ARCHIVO DLL DE ERROR PODRÍA SER \_ \_ \_ INCOMPATIBLE**
 </dt> <dd> <dl> <dt>
 
 687 (0x2AF)
@@ -1887,12 +1887,12 @@ La aplicación está intentando ejecutar código ejecutable desde el módulo% HS
 
 
 
-La aplicación está cargando código ejecutable del módulo% HS. Esto es seguro, pero puede que no sea compatible con las versiones anteriores del sistema operativo. Existe una alternativa,% HS, disponible. ¿La aplicación debe usar el módulo seguro% HS?
+La aplicación está cargando código ejecutable desde el módulo %hs. Esto es seguro, pero puede ser incompatible con versiones anteriores del sistema operativo. Hay disponible una alternativa, %hs. ¿Debe la aplicación usar el módulo seguro %hs?
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_EXCEPTION_NOT_HANDLED"></span><span id="error_dbg_exception_not_handled"></span>**ERROR \_ dbg \_ \_ no se ha controlado la excepción \_**
+<span id="ERROR_DBG_EXCEPTION_NOT_HANDLED"></span><span id="error_dbg_exception_not_handled"></span>**ERROR \_ EXCEPCIÓN DBG \_ NO \_ \_ CONTROLADA**
 </dt> <dd> <dl> <dt>
 
 688 (0x2B0)
@@ -1905,7 +1905,7 @@ El depurador no controló la excepción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_REPLY_LATER"></span><span id="error_dbg_reply_later"></span>**ERROR \_ dbg: \_ respuesta \_ posterior**
+<span id="ERROR_DBG_REPLY_LATER"></span><span id="error_dbg_reply_later"></span>**ERROR \_ DBG \_ REPLY \_ LATER**
 </dt> <dd> <dl> <dt>
 
 689 (0x2B1)
@@ -1918,7 +1918,7 @@ El depurador responderá más adelante.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_UNABLE_TO_PROVIDE_HANDLE"></span><span id="error_dbg_unable_to_provide_handle"></span>**ERROR \_ dbg \_ no se puede \_ \_ proporcionar el \_ identificador**
+<span id="ERROR_DBG_UNABLE_TO_PROVIDE_HANDLE"></span><span id="error_dbg_unable_to_provide_handle"></span>**ERROR \_ DBG \_ UNABLE \_ TO \_ PROVIDE \_ HANDLE**
 </dt> <dd> <dl> <dt>
 
 690 (0x2B2)
@@ -1926,12 +1926,12 @@ El depurador responderá más adelante.
 
 
 
-El depurador no puede proporcionar el identificador.
+El depurador no puede proporcionar identificador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_TERMINATE_THREAD"></span><span id="error_dbg_terminate_thread"></span>**ERROR \_ dbg: \_ finalizar \_ subproceso**
+<span id="ERROR_DBG_TERMINATE_THREAD"></span><span id="error_dbg_terminate_thread"></span>**ERROR \_ DBG \_ TERMINATE \_ THREAD**
 </dt> <dd> <dl> <dt>
 
 691 (0x2B3)
@@ -1939,12 +1939,12 @@ El depurador no puede proporcionar el identificador.
 
 
 
-El depurador finalizó el subproceso.
+Subproceso terminado del depurador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_TERMINATE_PROCESS"></span><span id="error_dbg_terminate_process"></span>**ERROR \_ dbg: \_ finalizar \_ proceso**
+<span id="ERROR_DBG_TERMINATE_PROCESS"></span><span id="error_dbg_terminate_process"></span>**ERROR \_ DBG \_ TERMINATE \_ PROCESS**
 </dt> <dd> <dl> <dt>
 
 692 (0x2B4)
@@ -1952,12 +1952,12 @@ El depurador finalizó el subproceso.
 
 
 
-El depurador finalizó el proceso.
+Proceso finalizado por el depurador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_CONTROL_C"></span><span id="error_dbg_control_c"></span>**ERROR \_ dbg ( \_ control) \_ C**
+<span id="ERROR_DBG_CONTROL_C"></span><span id="error_dbg_control_c"></span>**ERROR \_ DBG \_ CONTROL \_ C**
 </dt> <dd> <dl> <dt>
 
 693 (0x2B5)
@@ -1970,7 +1970,7 @@ El depurador tiene el control C.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_PRINTEXCEPTION_C"></span><span id="error_dbg_printexception_c"></span>**ERROR \_ dbg \_ PRINTEXCEPTION \_ C**
+<span id="ERROR_DBG_PRINTEXCEPTION_C"></span><span id="error_dbg_printexception_c"></span>**ERROR \_ DBG \_ PRINTEXCEPTION \_ C**
 </dt> <dd> <dl> <dt>
 
 694 (0x2B6)
@@ -1983,7 +1983,7 @@ Excepción impresa del depurador en el control C.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_RIPEXCEPTION"></span><span id="error_dbg_ripexception"></span>**ERROR \_ dbg \_ RIPEXCEPTION**
+<span id="ERROR_DBG_RIPEXCEPTION"></span><span id="error_dbg_ripexception"></span>**ERROR \_ DBG \_ RIPEXCEPTION**
 </dt> <dd> <dl> <dt>
 
 695 (0x2B7)
@@ -1991,12 +1991,12 @@ Excepción impresa del depurador en el control C.
 
 
 
-El depurador recibió una excepción RIP.
+El depurador recibió la excepción RIP.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_CONTROL_BREAK"></span><span id="error_dbg_control_break"></span>**ERROR \_ dbg \_ ( \_ interrupción de control)**
+<span id="ERROR_DBG_CONTROL_BREAK"></span><span id="error_dbg_control_break"></span>**ERROR \_ DBG \_ CONTROL \_ BREAK**
 </dt> <dd> <dl> <dt>
 
 696 (0x2B8)
@@ -2009,7 +2009,7 @@ El depurador recibió un salto de control.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_COMMAND_EXCEPTION"></span><span id="error_dbg_command_exception"></span>**ERROR \_ dbg \_ excepción del comando \_**
+<span id="ERROR_DBG_COMMAND_EXCEPTION"></span><span id="error_dbg_command_exception"></span>**ERROR \_ DBG \_ COMMAND \_ EXCEPTION**
 </dt> <dd> <dl> <dt>
 
 697 (0x2B9)
@@ -2022,7 +2022,7 @@ Excepción de comunicación de comandos del depurador.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OBJECT_NAME_EXISTS"></span><span id="error_object_name_exists"></span>**\_el nombre del objeto de error \_ \_ existe**
+<span id="ERROR_OBJECT_NAME_EXISTS"></span><span id="error_object_name_exists"></span>**ERROR \_ NOMBRE DE OBJETO \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 698 (0x2BA)
@@ -2030,12 +2030,12 @@ Excepción de comunicación de comandos del depurador.
 
 
 
-{Objeto existente} Se intentó crear un objeto y el nombre del objeto ya existía.
+{Object Exists} Se intentó crear un objeto y el nombre del objeto ya existía.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_THREAD_WAS_SUSPENDED"></span><span id="error_thread_was_suspended"></span>**el \_ subproceso de error \_ se \_ suspendió**
+<span id="ERROR_THREAD_WAS_SUSPENDED"></span><span id="error_thread_was_suspended"></span>**SUBPROCESO DE ERROR \_ \_ \_ SUSPENDIDO**
 </dt> <dd> <dl> <dt>
 
 699 (0x2BB)
@@ -2043,12 +2043,12 @@ Excepción de comunicación de comandos del depurador.
 
 
 
-{Subproceso suspendido} Se ha producido una terminación del subproceso mientras se suspendió el subproceso. El subproceso se reanudó y la terminación continuó.
+{Subproceso suspendido} Se produjo una terminación de subproceso mientras se suspendía el subproceso. Se reanudó el subproceso y se presentó la finalización.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IMAGE_NOT_AT_BASE"></span><span id="error_image_not_at_base"></span>**\_imagen \_ de error no \_ en \_ base**
+<span id="ERROR_IMAGE_NOT_AT_BASE"></span><span id="error_image_not_at_base"></span>**IMAGEN \_ DE ERROR NO EN \_ \_ \_ BASE**
 </dt> <dd> <dl> <dt>
 
 700 (0x2BC)
@@ -2056,12 +2056,12 @@ Excepción de comunicación de comandos del depurador.
 
 
 
-{Imagen reubicada} No se pudo asignar un archivo de imagen en la dirección especificada en el archivo de imagen. Las correcciones locales deben realizarse en esta imagen.
+{Imagen reubicada} No se pudo asignar un archivo de imagen en la dirección especificada en el archivo de imagen. Las fijaciones locales deben realizarse en esta imagen.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RXACT_STATE_CREATED"></span><span id="error_rxact_state_created"></span>**ERROR de \_ RXACT de \_ estado \_ creado**
+<span id="ERROR_RXACT_STATE_CREATED"></span><span id="error_rxact_state_created"></span>**ERROR \_ RXACT \_ STATE \_ CREATED**
 </dt> <dd> <dl> <dt>
 
 701 (0x2BD)
@@ -2069,12 +2069,12 @@ Excepción de comunicación de comandos del depurador.
 
 
 
-Este estado de nivel informativo indica que el estado de una transacción de subárbol del registro especificada no existía todavía y se tenía que crear.
+Este estado de nivel informativo indica que un estado de transacción de subárido del Registro especificado aún no existía y tenía que crearse.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SEGMENT_NOTIFICATION"></span><span id="error_segment_notification"></span>**\_notificación de segmento de error \_**
+<span id="ERROR_SEGMENT_NOTIFICATION"></span><span id="error_segment_notification"></span>**NOTIFICACIÓN \_ DE SEGMENTO DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 702 (0x2BE)
@@ -2082,12 +2082,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Carga de segmento} Una máquina DOS virtual (VDM) está cargando, descargando o moviendo una imagen de segmento de programa de MS-DOS o Win16. Se produce una excepción para que un depurador pueda cargar, descargar o realizar un seguimiento de símbolos y puntos de interrupción dentro de estos segmentos de 16 bits.
+{Carga de segmento} Una máquina VIRTUAL DOS (VDM) carga, descarga o mueve una imagen de segmento del programa MS-DOS o Win16. Se produce una excepción para que un depurador pueda cargar, descargar o realizar un seguimiento de símbolos y puntos de interrupción dentro de estos segmentos de 16 bits.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_CURRENT_DIRECTORY"></span><span id="error_bad_current_directory"></span>**ERROR \_ de \_ directorio actual no válido \_**
+<span id="ERROR_BAD_CURRENT_DIRECTORY"></span><span id="error_bad_current_directory"></span>**ERROR \_ BAD \_ CURRENT \_ DIRECTORY**
 </dt> <dd> <dl> <dt>
 
 703 (0x2BF)
@@ -2095,12 +2095,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Directorio actual no válido} El proceso no puede cambiar al directorio actual de inicio% HS. Seleccione Aceptar para establecer el directorio actual en% HS o seleccione Cancelar para salir.
+{Directorio actual no válido} El proceso no puede cambiar al directorio actual de inicio %hs. Seleccione Aceptar para establecer el directorio actual en %hs o seleccione CANCELAR para salir.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FT_READ_RECOVERY_FROM_BACKUP"></span><span id="error_ft_read_recovery_from_backup"></span>**ERROR \_ ft \_ leer \_ recuperación \_ de \_ copia de seguridad**
+<span id="ERROR_FT_READ_RECOVERY_FROM_BACKUP"></span><span id="error_ft_read_recovery_from_backup"></span>**ERROR \_ FT \_ READ \_ RECOVERY \_ FROM \_ BACKUP**
 </dt> <dd> <dl> <dt>
 
 704 (0x2C0)
@@ -2108,12 +2108,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Lectura redundante} Para satisfacer una solicitud de lectura, el sistema de archivos tolerante a errores de NT leyó correctamente los datos solicitados de una copia redundante. Esto se ha hecho porque el sistema de archivos encontró un error en un miembro del volumen tolerante a errores, pero no pudo reasignar el área de error del dispositivo.
+{Lectura redundante} Para satisfacer una solicitud de lectura, el sistema de archivos nt tolerante a errores lee correctamente los datos solicitados de una copia redundante. Esto se hizo porque el sistema de archivos encontró un error en un miembro del volumen tolerante a errores, pero no pudo reasignar el área con errores del dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FT_WRITE_RECOVERY"></span><span id="error_ft_write_recovery"></span>**ERROR en la recuperación de escritura de \_ ft \_ \_**
+<span id="ERROR_FT_WRITE_RECOVERY"></span><span id="error_ft_write_recovery"></span>**ERROR \_ FT \_ WRITE \_ RECOVERY**
 </dt> <dd> <dl> <dt>
 
 705 (0x2C1)
@@ -2121,12 +2121,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Escritura redundante} Para satisfacer una solicitud de escritura, el sistema de archivos tolerante a errores de NT escribió correctamente una copia redundante de la información. Esto se ha hecho porque el sistema de archivos encontró un error en un miembro del volumen tolerante a errores, pero no pudo reasignar el área de error del dispositivo.
+{Escritura redundante} Para satisfacer una solicitud de escritura, el sistema de archivos nt tolerante a errores escribió correctamente una copia redundante de la información. Esto se hizo porque el sistema de archivos encontró un error en un miembro del volumen tolerante a errores, pero no pudo reasignar el área con errores del dispositivo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IMAGE_MACHINE_TYPE_MISMATCH"></span><span id="error_image_machine_type_mismatch"></span>**ERROR \_ de \_ \_ coincidencia de tipo de máquina de imagen \_**
+<span id="ERROR_IMAGE_MACHINE_TYPE_MISMATCH"></span><span id="error_image_machine_type_mismatch"></span>**ERROR \_ IMAGE \_ MACHINE \_ TYPE \_ MISMATCH**
 </dt> <dd> <dl> <dt>
 
 706 (0x2C2)
@@ -2134,12 +2134,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Error de coincidencia de tipo de máquina} El archivo de imagen% HS es válido, pero es para un tipo de máquina distinto del equipo actual. Seleccione Aceptar para continuar o cancelar para que se produzca un error en la carga del archivo DLL.
+{Error de coincidencia de tipo de máquina} El archivo de imagen %hs es válido, pero es para un tipo de máquina distinto de la máquina actual. Seleccione Aceptar para continuar o CANCELAR para producir un error en la carga del archivo DLL.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RECEIVE_PARTIAL"></span><span id="error_receive_partial"></span>**ERROR de \_ recepción \_ parcial**
+<span id="ERROR_RECEIVE_PARTIAL"></span><span id="error_receive_partial"></span>**ERROR \_ RECEIVE \_ PARTIAL**
 </dt> <dd> <dl> <dt>
 
 707 (0x2C3)
@@ -2152,7 +2152,7 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RECEIVE_EXPEDITED"></span><span id="error_receive_expedited"></span>**ERROR de \_ recepción \_ acelerada**
+<span id="ERROR_RECEIVE_EXPEDITED"></span><span id="error_receive_expedited"></span>**ERROR \_ RECEIVE \_ EXPEDITED**
 </dt> <dd> <dl> <dt>
 
 708 (0x2C4)
@@ -2160,12 +2160,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Datos expedidos recibidos} El transporte de red devolvió datos a su cliente que se marcó como expedido por el sistema remoto.
+{Datos rápidos recibidos} El transporte de red devolvió datos a su cliente marcados como acelerados por el sistema remoto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RECEIVE_PARTIAL_EXPEDITED"></span><span id="error_receive_partial_expedited"></span>**ERROR de \_ recepción \_ parcial \_ rápida**
+<span id="ERROR_RECEIVE_PARTIAL_EXPEDITED"></span><span id="error_receive_partial_expedited"></span>**ERROR \_ RECEIVE \_ PARTIAL \_ EXPEDITED**
 </dt> <dd> <dl> <dt>
 
 709 (0x2C5)
@@ -2173,12 +2173,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Se recibieron datos inmediatos parciales} El transporte de red devolvió datos parciales a su cliente y estos datos se marcaron como expedidos por el sistema remoto. Los datos restantes se enviarán más adelante.
+{Partial Expedited Data Received} El transporte de red devolvió datos parciales a su cliente y estos datos se marcaron como acelerados por el sistema remoto. Los datos restantes se enviarán más adelante.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVENT_DONE"></span><span id="error_event_done"></span>**evento de ERROR \_ \_ finalizado**
+<span id="ERROR_EVENT_DONE"></span><span id="error_event_done"></span>**EVENTO \_ DE ERROR \_ REALIZADO**
 </dt> <dd> <dl> <dt>
 
 710 (0x2C6)
@@ -2186,12 +2186,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-{Evento TDI terminado} La indicación TDI se ha completado correctamente.
+{Evento TDI listo} La indicación de TDI se ha completado correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EVENT_PENDING"></span><span id="error_event_pending"></span>**evento de ERROR \_ \_ pendiente**
+<span id="ERROR_EVENT_PENDING"></span><span id="error_event_pending"></span>**EVENTO \_ DE ERROR \_ PENDIENTE**
 </dt> <dd> <dl> <dt>
 
 711 (0x2C7)
@@ -2204,7 +2204,7 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CHECKING_FILE_SYSTEM"></span><span id="error_checking_file_system"></span>**ERROR al \_ comprobar el \_ sistema de archivos \_**
+<span id="ERROR_CHECKING_FILE_SYSTEM"></span><span id="error_checking_file_system"></span>**ERROR \_ AL COMPROBAR EL SISTEMA DE \_ \_ ARCHIVOS**
 </dt> <dd> <dl> <dt>
 
 712 (0x2C8)
@@ -2212,12 +2212,12 @@ Este estado de nivel informativo indica que el estado de una transacción de sub
 
 
 
-Comprobando el sistema de archivos en% wZ.
+Comprobación del sistema de archivos en %wZ.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FATAL_APP_EXIT"></span><span id="error_fatal_app_exit"></span>**ERROR \_ irrecuperable de salida de la \_ aplicación \_**
+<span id="ERROR_FATAL_APP_EXIT"></span><span id="error_fatal_app_exit"></span>**ERROR \_ AL SALIR DE LA \_ \_ APLICACIÓN**
 </dt> <dd> <dl> <dt>
 
 713 (0x2C9)
@@ -2225,12 +2225,12 @@ Comprobando el sistema de archivos en% wZ.
 
 
 
-{Final de aplicación irrecuperable}% HS.
+{Fatal Application Exit} %hs.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PREDEFINED_HANDLE"></span><span id="error_predefined_handle"></span>**\_identificador PREdefinido de error \_**
+<span id="ERROR_PREDEFINED_HANDLE"></span><span id="error_predefined_handle"></span>**IDENTIFICADOR \_ PREDEFINIDO DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 714 (0x2CA)
@@ -2238,12 +2238,12 @@ Comprobando el sistema de archivos en% wZ.
 
 
 
-Un identificador predefinido hace referencia a la clave del registro especificada.
+Un identificador predefinido hace referencia a la clave del Registro especificada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAS_UNLOCKED"></span><span id="error_was_unlocked"></span>**ERROR \_ \_ desbloqueado**
+<span id="ERROR_WAS_UNLOCKED"></span><span id="error_was_unlocked"></span>**ERROR \_ \_ DESBLOQUEADO**
 </dt> <dd> <dl> <dt>
 
 715 (0x2CB)
@@ -2251,12 +2251,12 @@ Un identificador predefinido hace referencia a la clave del registro especificad
 
 
 
-{Página desbloqueada} La protección de página de una página bloqueada se cambió a "sin acceso" y la página se desbloqueó de la memoria y del proceso.
+{Página desbloqueada} La protección de página de una página bloqueada se cambió a "Sin acceso" y la página se desbloqueó de la memoria y del proceso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SERVICE_NOTIFICATION"></span><span id="error_service_notification"></span>**\_notificación del servicio de error \_**
+<span id="ERROR_SERVICE_NOTIFICATION"></span><span id="error_service_notification"></span>**NOTIFICACIÓN \_ DEL SERVICIO DE \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 716 (0x2CC)
@@ -2264,12 +2264,12 @@ Un identificador predefinido hace referencia a la clave del registro especificad
 
 
 
-% HS
+%hs
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAS_LOCKED"></span><span id="error_was_locked"></span>**ERROR \_ \_ bloqueado**
+<span id="ERROR_WAS_LOCKED"></span><span id="error_was_locked"></span>**ERROR \_ BLOQUEADO \_**
 </dt> <dd> <dl> <dt>
 
 717 (0x2CD)
@@ -2277,12 +2277,12 @@ Un identificador predefinido hace referencia a la clave del registro especificad
 
 
 
-{Page Locked} Una de las páginas que se van a bloquear ya estaba bloqueada.
+{Page Locked} Una de las páginas que se bloquearon ya estaba bloqueada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOG_HARD_ERROR"></span><span id="error_log_hard_error"></span>**\_error de registro de errores \_ \_**
+<span id="ERROR_LOG_HARD_ERROR"></span><span id="error_log_hard_error"></span>**ERROR \_ DE DISCO DURO DEL REGISTRO DE \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 718 (0x2CE)
@@ -2290,12 +2290,12 @@ Un identificador predefinido hace referencia a la clave del registro especificad
 
 
 
-Menú emergente de aplicación: %1: %2
+Ventana emergente de la aplicación: %1: %2
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALREADY_WIN32"></span><span id="error_already_win32"></span>**ERROR \_ ya \_ Win32**
+<span id="ERROR_ALREADY_WIN32"></span><span id="error_already_win32"></span>**ERROR \_ YA \_ WIN32**
 </dt> <dd> <dl> <dt>
 
 719 (0x2CF)
@@ -2303,12 +2303,12 @@ Menú emergente de aplicación: %1: %2
 
 
 
-ERROR \_ ya \_ Win32
+ERROR \_ YA \_ WIN32
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IMAGE_MACHINE_TYPE_MISMATCH_EXE"></span><span id="error_image_machine_type_mismatch_exe"></span>**ERROR \_ de \_ falta de \_ coincidencia de tipo de máquina de \_ imagen \_**
+<span id="ERROR_IMAGE_MACHINE_TYPE_MISMATCH_EXE"></span><span id="error_image_machine_type_mismatch_exe"></span>**ERROR \_ IMAGE \_ MACHINE \_ TYPE \_ MISMATCH \_ EXE**
 </dt> <dd> <dl> <dt>
 
 720 (0x2D0)
@@ -2316,12 +2316,12 @@ ERROR \_ ya \_ Win32
 
 
 
-{Error de coincidencia de tipo de máquina} El archivo de imagen% HS es válido, pero es para un tipo de máquina distinto del equipo actual.
+{Error de coincidencia de tipo de máquina} El archivo de imagen %hs es válido, pero es para un tipo de máquina distinto de la máquina actual.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_YIELD_PERFORMED"></span><span id="error_no_yield_performed"></span>**ERROR: no se ha \_ \_ realizado ningún resultado \_**
+<span id="ERROR_NO_YIELD_PERFORMED"></span><span id="error_no_yield_performed"></span>**ERROR \_ NO \_ YIELD \_ PERFORMED**
 </dt> <dd> <dl> <dt>
 
 721 (0x2D1)
@@ -2329,12 +2329,12 @@ ERROR \_ ya \_ Win32
 
 
 
-Se ha realizado una ejecución de Yield y no hay ningún subproceso disponible para ejecutarse.
+Se realizó una ejecución de rendimiento y no había ningún subproceso disponible para ejecutarse.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TIMER_RESUME_IGNORED"></span><span id="error_timer_resume_ignored"></span>**se \_ ha \_ omitido el reanudación del temporizador \_**
+<span id="ERROR_TIMER_RESUME_IGNORED"></span><span id="error_timer_resume_ignored"></span>**REANUDACIÓN \_ DEL TEMPORIZADOR DE ERROR \_ \_ OMITIDO**
 </dt> <dd> <dl> <dt>
 
 722 (0x2D2)
@@ -2342,12 +2342,12 @@ Se ha realizado una ejecución de Yield y no hay ningún subproceso disponible p
 
 
 
-Se omitió la marca reanudable de una API de temporizador.
+Se omitió la marca reanudable a una API de temporizador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ARBITRATION_UNHANDLED"></span><span id="error_arbitration_unhandled"></span>**Arbitraje de ERROR \_ \_ no controlado**
+<span id="ERROR_ARBITRATION_UNHANDLED"></span><span id="error_arbitration_unhandled"></span>**ERROR \_ DE ARBITRAJE NO \_ CONTROLADA**
 </dt> <dd> <dl> <dt>
 
 723 (0x2D3)
@@ -2355,12 +2355,12 @@ Se omitió la marca reanudable de una API de temporizador.
 
 
 
-El árbitro ha diferido el arbitraje de estos recursos a su elemento primario.
+El mediar ha aplazado el arbitraje de estos recursos a su elemento primario.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CARDBUS_NOT_SUPPORTED"></span><span id="error_cardbus_not_supported"></span>**ERROR \_ CardBus \_ no \_ compatible**
+<span id="ERROR_CARDBUS_NOT_SUPPORTED"></span><span id="error_cardbus_not_supported"></span>**ERROR \_ CARDBUS \_ NO \_ COMPATIBLE**
 </dt> <dd> <dl> <dt>
 
 724 (0x2D4)
@@ -2368,12 +2368,12 @@ El árbitro ha diferido el arbitraje de estos recursos a su elemento primario.
 
 
 
-No se puede iniciar el dispositivo CardBus insertado debido a un error de configuración en "% HS".
+No se puede iniciar el dispositivo CardBus insertado debido a un error de configuración en "%hs".
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MP_PROCESSOR_MISMATCH"></span><span id="error_mp_processor_mismatch"></span>**ERROR \_ de \_ incoherencia del procesador MP \_**
+<span id="ERROR_MP_PROCESSOR_MISMATCH"></span><span id="error_mp_processor_mismatch"></span>**ERROR \_ DE COINCIDENCIA DEL PROCESADOR DE \_ \_ MP**
 </dt> <dd> <dl> <dt>
 
 725 (0x2D5)
@@ -2381,12 +2381,12 @@ No se puede iniciar el dispositivo CardBus insertado debido a un error de config
 
 
 
-Las CPU de este sistema multiprocesador no tienen el mismo nivel de revisión. Para usar todos los procesadores, el sistema operativo se restringe a las características del procesador menos capaz en el sistema. En caso de que se produzcan problemas con este sistema, póngase en contacto con el fabricante de la CPU para ver si se admite esta combinación de procesadores.
+Las CPU de este sistema de varios procesadores no tienen el mismo nivel de revisión. Para usar todos los procesadores, el sistema operativo se restringe a las características del procesador menos compatible del sistema. Si se producen problemas con este sistema, póngase en contacto con el fabricante de cpu para ver si se admite esta combinación de procesadores.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_HIBERNATED"></span><span id="error_hibernated"></span>**ERROR \_ hibernado**
+<span id="ERROR_HIBERNATED"></span><span id="error_hibernated"></span>**ERROR \_ HIBERNADO**
 </dt> <dd> <dl> <dt>
 
 726 (0x2D6)
@@ -2394,12 +2394,12 @@ Las CPU de este sistema multiprocesador no tienen el mismo nivel de revisión. P
 
 
 
-El sistema se puso en hibernación.
+El sistema se ha puesto en hibernación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESUME_HIBERNATION"></span><span id="error_resume_hibernation"></span>**ERROR al \_ reanudar la \_ hibernación**
+<span id="ERROR_RESUME_HIBERNATION"></span><span id="error_resume_hibernation"></span>**ERROR \_ AL REANUDAR \_ HIBERNACIÓN**
 </dt> <dd> <dl> <dt>
 
 727 (0x2D7)
@@ -2407,12 +2407,12 @@ El sistema se puso en hibernación.
 
 
 
-El sistema se reanudó de la hibernación.
+El sistema se reanudó desde la hibernación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FIRMWARE_UPDATED"></span><span id="error_firmware_updated"></span>**FIRMWARE de ERROR \_ \_ actualizado**
+<span id="ERROR_FIRMWARE_UPDATED"></span><span id="error_firmware_updated"></span>**FIRMWARE \_ DE ERROR \_ ACTUALIZADO**
 </dt> <dd> <dl> <dt>
 
 728 (0x2D8)
@@ -2420,12 +2420,12 @@ El sistema se reanudó de la hibernación.
 
 
 
-Windows ha detectado que el firmware del sistema (BIOS) se actualizó en la \[ fecha de firmware anterior = %2, fecha de firmware actual %3 \] .
+Windows ha detectado que el firmware del sistema (BIOS) se actualizó antes de la fecha de \[ firmware = %2, fecha de firmware actual %3 \] .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DRIVERS_LEAKING_LOCKED_PAGES"></span><span id="error_drivers_leaking_locked_pages"></span>**ERRORES \_ en \_ \_ las páginas bloqueadas de los controladores de error \_**
+<span id="ERROR_DRIVERS_LEAKING_LOCKED_PAGES"></span><span id="error_drivers_leaking_locked_pages"></span>**CONTROLADORES DE \_ ERROR \_ QUE PIERDEN PÁGINAS \_ \_ BLOQUEADAS**
 </dt> <dd> <dl> <dt>
 
 729 (0x2D9)
@@ -2433,12 +2433,12 @@ Windows ha detectado que el firmware del sistema (BIOS) se actualizó en la \[ f
 
 
 
-Un controlador de dispositivo pierde las páginas de e/s bloqueadas que causan la degradación del sistema. El sistema ha habilitado automáticamente el código de seguimiento para intentar detectar la causa.
+Un controlador de dispositivo está filtrando páginas de E/S bloqueadas que provocan la degradación del sistema. El sistema ha habilitado automáticamente el código de seguimiento para intentar capturar el responsable.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAKE_SYSTEM"></span><span id="error_wake_system"></span>**ERROR de \_ Wake \_ System**
+<span id="ERROR_WAKE_SYSTEM"></span><span id="error_wake_system"></span>**SISTEMA DE \_ REACTIVACIÓN \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 730 (0x2DA)
@@ -2446,12 +2446,12 @@ Un controlador de dispositivo pierde las páginas de e/s bloqueadas que causan l
 
 
 
-El sistema tiene awoken.
+El sistema se ha puesto en marcha.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAIT_1"></span><span id="error_wait_1"></span>**ERROR de \_ espera \_ 1**
+<span id="ERROR_WAIT_1"></span><span id="error_wait_1"></span>**ERROR \_ WAIT \_ 1**
 </dt> <dd> <dl> <dt>
 
 731 (0x2DB)
@@ -2459,12 +2459,12 @@ El sistema tiene awoken.
 
 
 
-ERROR de \_ espera \_ 1
+ERROR \_ WAIT \_ 1
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAIT_2"></span><span id="error_wait_2"></span>**Espera de ERROR \_ \_ 2**
+<span id="ERROR_WAIT_2"></span><span id="error_wait_2"></span>**ERROR \_ WAIT \_ 2**
 </dt> <dd> <dl> <dt>
 
 732 (0x2DC)
@@ -2472,12 +2472,12 @@ ERROR de \_ espera \_ 1
 
 
 
-Espera de ERROR \_ \_ 2
+ERROR \_ WAIT \_ 2
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAIT_3"></span><span id="error_wait_3"></span>**ERROR de \_ espera \_ 3**
+<span id="ERROR_WAIT_3"></span><span id="error_wait_3"></span>**ERROR \_ WAIT \_ 3**
 </dt> <dd> <dl> <dt>
 
 733 (0x2DD)
@@ -2485,12 +2485,12 @@ Espera de ERROR \_ \_ 2
 
 
 
-ERROR de \_ espera \_ 3
+ERROR \_ WAIT \_ 3
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAIT_63"></span><span id="error_wait_63"></span>**ERROR de \_ espera \_ 63**
+<span id="ERROR_WAIT_63"></span><span id="error_wait_63"></span>**ERROR \_ WAIT \_ 63**
 </dt> <dd> <dl> <dt>
 
 734 (0x2DE)
@@ -2498,12 +2498,12 @@ ERROR de \_ espera \_ 3
 
 
 
-ERROR de \_ espera \_ 63
+ERROR \_ WAIT \_ 63
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ABANDONED_WAIT_0"></span><span id="error_abandoned_wait_0"></span>**ERROR \_ abandonada \_ Wait \_ 0**
+<span id="ERROR_ABANDONED_WAIT_0"></span><span id="error_abandoned_wait_0"></span>**ERROR \_ ABANDONED \_ WAIT \_ 0**
 </dt> <dd> <dl> <dt>
 
 735 (0x2DF)
@@ -2511,12 +2511,12 @@ ERROR de \_ espera \_ 63
 
 
 
-ERROR \_ abandonada \_ Wait \_ 0
+ERROR \_ ABANDONED \_ WAIT \_ 0
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ABANDONED_WAIT_63"></span><span id="error_abandoned_wait_63"></span>**ERROR \_ abandonada \_ Wait \_ 63**
+<span id="ERROR_ABANDONED_WAIT_63"></span><span id="error_abandoned_wait_63"></span>**ERROR \_ ABANDONED \_ WAIT \_ 63**
 </dt> <dd> <dl> <dt>
 
 736 (0x2E0)
@@ -2524,12 +2524,12 @@ ERROR \_ abandonada \_ Wait \_ 0
 
 
 
-ERROR \_ abandonada \_ Wait \_ 63
+ERROR \_ ABANDONED \_ WAIT \_ 63
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_USER_APC"></span><span id="error_user_apc"></span>**ERROR de \_ usuario \_ APC**
+<span id="ERROR_USER_APC"></span><span id="error_user_apc"></span>**ERROR \_ USER \_ APC**
 </dt> <dd> <dl> <dt>
 
 737 (0x2E1)
@@ -2537,12 +2537,12 @@ ERROR \_ abandonada \_ Wait \_ 63
 
 
 
-ERROR de \_ usuario \_ APC
+ERROR \_ USER \_ APC
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_KERNEL_APC"></span><span id="error_kernel_apc"></span>**ERROR \_ de \_ APC kernel**
+<span id="ERROR_KERNEL_APC"></span><span id="error_kernel_apc"></span>**ERROR \_ KERNEL \_ APC**
 </dt> <dd> <dl> <dt>
 
 738 (0x2E2)
@@ -2550,12 +2550,12 @@ ERROR de \_ usuario \_ APC
 
 
 
-ERROR \_ de \_ APC kernel
+ERROR \_ KERNEL \_ APC
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ALERTED"></span><span id="error_alerted"></span>**ERROR de \_ alerta**
+<span id="ERROR_ALERTED"></span><span id="error_alerted"></span>**ERROR \_ ALERTADO**
 </dt> <dd> <dl> <dt>
 
 739 (0x2E3)
@@ -2563,12 +2563,12 @@ ERROR \_ de \_ APC kernel
 
 
 
-ERROR de \_ alerta
+ERROR \_ ALERTADO
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ELEVATION_REQUIRED"></span><span id="error_elevation_required"></span>**elevación de errores \_ \_ necesaria**
+<span id="ERROR_ELEVATION_REQUIRED"></span><span id="error_elevation_required"></span>**SE REQUIERE \_ ELEVACIÓN \_ DE ERRORES**
 </dt> <dd> <dl> <dt>
 
 740 (0x2E4)
@@ -2581,7 +2581,7 @@ La operación solicitada requiere elevación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REPARSE"></span><span id="error_reparse"></span>**ERROR al volver a \_ analizar**
+<span id="ERROR_REPARSE"></span><span id="error_reparse"></span>**ERROR \_ REPARSE**
 </dt> <dd> <dl> <dt>
 
 741 (0x2E5)
@@ -2589,12 +2589,12 @@ La operación solicitada requiere elevación.
 
 
 
-El administrador de objetos debe realizar un reanálisis, ya que el nombre del archivo dio como resultado un vínculo simbólico.
+El Administrador de objetos debe realizar un análisis, ya que el nombre del archivo ha dado lugar a un vínculo simbólico.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPLOCK_BREAK_IN_PROGRESS"></span><span id="error_oplock_break_in_progress"></span>**\_ \_ interrupción del error \_ de bloqueo oportunista en \_ curso**
+<span id="ERROR_OPLOCK_BREAK_IN_PROGRESS"></span><span id="error_oplock_break_in_progress"></span>**ERROR \_ OLOCK \_ BREAK IN \_ \_ PROGRESS**
 </dt> <dd> <dl> <dt>
 
 742 (0x2E6)
@@ -2602,12 +2602,12 @@ El administrador de objetos debe realizar un reanálisis, ya que el nombre del a
 
 
 
-Se completó una operación de apertura/creación mientras se está realizando una interrupción de bloqueo oportunista.
+Se ha completado una operación de apertura y creación mientras se está en curso una interrupción del bloqueo operativo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLUME_MOUNTED"></span><span id="error_volume_mounted"></span>**volumen de ERROR \_ \_ montado**
+<span id="ERROR_VOLUME_MOUNTED"></span><span id="error_volume_mounted"></span>**VOLUMEN \_ DE ERROR \_ MONTADO**
 </dt> <dd> <dl> <dt>
 
 743 (0x2E7)
@@ -2620,7 +2620,7 @@ Un sistema de archivos ha montado un nuevo volumen.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RXACT_COMMITTED"></span><span id="error_rxact_committed"></span>**ERROR \_ RXACT \_ confirmado**
+<span id="ERROR_RXACT_COMMITTED"></span><span id="error_rxact_committed"></span>**ERROR \_ RXACT \_ COMMITTED**
 </dt> <dd> <dl> <dt>
 
 744 (0x2E8)
@@ -2628,12 +2628,12 @@ Un sistema de archivos ha montado un nuevo volumen.
 
 
 
-Este estado de nivel de éxito indica que el estado de la transacción ya existe para el subárbol del registro, pero que se anuló previamente una confirmación de transacción. La confirmación se ha completado ahora.
+Este estado de nivel correcto indica que el estado de transacción ya existe para el subárquico del Registro, pero que se anuló previamente una confirmación de transacción. La confirmación ya se ha completado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOTIFY_CLEANUP"></span><span id="error_notify_cleanup"></span>**ERROR de \_ notificación de \_ limpieza**
+<span id="ERROR_NOTIFY_CLEANUP"></span><span id="error_notify_cleanup"></span>**ERROR \_ NOTIFY \_ CLEANUP**
 </dt> <dd> <dl> <dt>
 
 745 (0x2E9)
@@ -2641,12 +2641,12 @@ Este estado de nivel de éxito indica que el estado de la transacción ya existe
 
 
 
-Esto indica que se ha completado una solicitud NOTIFY Change debido al cierre del identificador que realizó la solicitud NOTIFY Change.
+Esto indica que se ha completado una solicitud de cambio de notificación debido al cierre del identificador que realizó la solicitud de cambio de notificación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PRIMARY_TRANSPORT_CONNECT_FAILED"></span><span id="error_primary_transport_connect_failed"></span>**ERROR \_ de \_ conexión de transporte principal \_ \_**
+<span id="ERROR_PRIMARY_TRANSPORT_CONNECT_FAILED"></span><span id="error_primary_transport_connect_failed"></span>**ERROR \_ CONEXIÓN DE TRANSPORTE PRINCIPAL CON \_ \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 746 (0x2EA)
@@ -2654,12 +2654,12 @@ Esto indica que se ha completado una solicitud NOTIFY Change debido al cierre de
 
 
 
-{Error de conexión en el transporte principal} Se intentó conectar con el servidor remoto% HS en el transporte principal, pero se produjo un error en la conexión. El equipo pudo conectarse en un transporte secundario.
+{Conectar error en el transporte principal} Se intentó conectarse al servidor remoto %hs en el transporte principal, pero no se pudo establecer la conexión. El equipo pudo conectarse en un transporte secundario.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PAGE_FAULT_TRANSITION"></span><span id="error_page_fault_transition"></span>**\_transición de \_ errores de página de error \_**
+<span id="ERROR_PAGE_FAULT_TRANSITION"></span><span id="error_page_fault_transition"></span>**TRANSICIÓN DE \_ ERROR DE PÁGINA DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 747 (0x2EB)
@@ -2667,12 +2667,12 @@ Esto indica que se ha completado una solicitud NOTIFY Change debido al cierre de
 
 
 
-El error de página era un error de transición.
+Error de página fue un error de transición.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PAGE_FAULT_DEMAND_ZERO"></span><span id="error_page_fault_demand_zero"></span>**solicitud de ERROR de \_ página \_ \_ \_ cero**
+<span id="ERROR_PAGE_FAULT_DEMAND_ZERO"></span><span id="error_page_fault_demand_zero"></span>**ERROR DE \_ LA PÁGINA DE ERROR \_ \_ PETICIÓN DE ERROR \_ CERO**
 </dt> <dd> <dl> <dt>
 
 748 (0x2EC)
@@ -2680,12 +2680,12 @@ El error de página era un error de transición.
 
 
 
-El error de página era un error de petición cero.
+Error de página era un error de demanda cero.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PAGE_FAULT_COPY_ON_WRITE"></span><span id="error_page_fault_copy_on_write"></span>**ERROR \_ \_ en la \_ copia \_ de errores de página al \_ escribir**
+<span id="ERROR_PAGE_FAULT_COPY_ON_WRITE"></span><span id="error_page_fault_copy_on_write"></span>**COPIA DE \_ ERROR DE LA PÁGINA DE ERROR AL \_ \_ \_ \_ ESCRIBIR**
 </dt> <dd> <dl> <dt>
 
 749 (0x2ED)
@@ -2693,12 +2693,12 @@ El error de página era un error de petición cero.
 
 
 
-El error de página era un error de petición cero.
+Error de página era un error de demanda cero.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PAGE_FAULT_GUARD_PAGE"></span><span id="error_page_fault_guard_page"></span>**Página de ERROR: \_ \_ protección de errores \_ \_**
+<span id="ERROR_PAGE_FAULT_GUARD_PAGE"></span><span id="error_page_fault_guard_page"></span>**PÁGINA DE \_ ERROR DE LA PÁGINA PROTECCIÓN DE \_ \_ \_ ERRORES**
 </dt> <dd> <dl> <dt>
 
 750 (0x2EE)
@@ -2706,12 +2706,12 @@ El error de página era un error de petición cero.
 
 
 
-El error de página era un error de petición cero.
+Error de página era un error de demanda cero.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PAGE_FAULT_PAGING_FILE"></span><span id="error_page_fault_paging_file"></span>**\_archivo de \_ \_ paginación de errores de página \_**
+<span id="ERROR_PAGE_FAULT_PAGING_FILE"></span><span id="error_page_fault_paging_file"></span>**ARCHIVO DE \_ \_ PAGINACIÓN DE \_ ERRORES DE PÁGINA DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 751 (0x2EF)
@@ -2719,12 +2719,12 @@ El error de página era un error de petición cero.
 
 
 
-El error de página se ha satisfecho mediante la lectura de un dispositivo de almacenamiento secundario.
+El error de página se ha satisfecho mediante la lectura desde un dispositivo de almacenamiento secundario.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CACHE_PAGE_LOCKED"></span><span id="error_cache_page_locked"></span>**\_Página caché de errores \_ \_ bloqueada**
+<span id="ERROR_CACHE_PAGE_LOCKED"></span><span id="error_cache_page_locked"></span>**PÁGINA CACHÉ \_ DE \_ ERRORES \_ BLOQUEADA**
 </dt> <dd> <dl> <dt>
 
 752 (0x2F0)
@@ -2732,12 +2732,12 @@ El error de página se ha satisfecho mediante la lectura de un dispositivo de al
 
 
 
-La página en caché se bloqueó durante la operación.
+La página almacenada en caché se bloqueó durante la operación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CRASH_DUMP"></span><span id="error_crash_dump"></span>**volcado de errores \_ \_**
+<span id="ERROR_CRASH_DUMP"></span><span id="error_crash_dump"></span>**ERROR \_ CRASH \_ DUMP**
 </dt> <dd> <dl> <dt>
 
 753 (0x2F1)
@@ -2750,7 +2750,7 @@ El volcado de memoria existe en el archivo de paginación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BUFFER_ALL_ZEROS"></span><span id="error_buffer_all_zeros"></span>**búfer de ERROR: \_ \_ todos \_ ceros**
+<span id="ERROR_BUFFER_ALL_ZEROS"></span><span id="error_buffer_all_zeros"></span>**BÚFER \_ DE ERRORES TODOS LOS \_ \_ CEROS**
 </dt> <dd> <dl> <dt>
 
 754 (0x2F2)
@@ -2758,12 +2758,12 @@ El volcado de memoria existe en el archivo de paginación.
 
 
 
-El búfer especificado contiene ceros.
+El búfer especificado contiene todos los ceros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REPARSE_OBJECT"></span><span id="error_reparse_object"></span>**ERROR al volver a \_ analizar el \_ objeto**
+<span id="ERROR_REPARSE_OBJECT"></span><span id="error_reparse_object"></span>**ERROR \_ REPARSE \_ (OBJETO)**
 </dt> <dd> <dl> <dt>
 
 755 (0x2F3)
@@ -2771,12 +2771,12 @@ El búfer especificado contiene ceros.
 
 
 
-El administrador de objetos debe realizar un reanálisis, ya que el nombre del archivo dio como resultado un vínculo simbólico.
+El Administrador de objetos debe realizar un análisis, ya que el nombre del archivo ha dado lugar a un vínculo simbólico.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_RESOURCE_REQUIREMENTS_CHANGED"></span><span id="error_resource_requirements_changed"></span>**requisitos de recursos de ERROR \_ \_ \_ modificados**
+<span id="ERROR_RESOURCE_REQUIREMENTS_CHANGED"></span><span id="error_resource_requirements_changed"></span>**SE HAN \_ CAMBIADO LOS \_ REQUISITOS DE RECURSOS DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 756 (0x2F4)
@@ -2784,12 +2784,12 @@ El administrador de objetos debe realizar un reanálisis, ya que el nombre del a
 
 
 
-El dispositivo ha finalizado correctamente una detención de consulta y sus requisitos de recursos han cambiado.
+El dispositivo ha hecho correctamente una detención de consulta y sus requisitos de recursos han cambiado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_TRANSLATION_COMPLETE"></span><span id="error_translation_complete"></span>**traducción de errores \_ \_ completada**
+<span id="ERROR_TRANSLATION_COMPLETE"></span><span id="error_translation_complete"></span>**TRADUCCIÓN DE ERRORES \_ \_ COMPLETADA**
 </dt> <dd> <dl> <dt>
 
 757 (0x2F5)
@@ -2802,7 +2802,7 @@ El traductor ha traducido estos recursos al espacio global y no se deben realiza
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOTHING_TO_TERMINATE"></span><span id="error_nothing_to_terminate"></span>**no \_ \_ se pudo \_ Finalizar nada**
+<span id="ERROR_NOTHING_TO_TERMINATE"></span><span id="error_nothing_to_terminate"></span>**ERROR \_ NOTHING \_ TO \_ TERMINATE**
 </dt> <dd> <dl> <dt>
 
 758 (0x2F6)
@@ -2810,12 +2810,12 @@ El traductor ha traducido estos recursos al espacio global y no se deben realiza
 
 
 
-Un proceso terminado no tiene ningún subproceso para finalizar.
+Un proceso que finaliza no tiene subprocesos para finalizar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROCESS_NOT_IN_JOB"></span><span id="error_process_not_in_job"></span>**el \_ proceso \_ de error no está \_ en el \_ trabajo**
+<span id="ERROR_PROCESS_NOT_IN_JOB"></span><span id="error_process_not_in_job"></span>**PROCESO \_ DE ERROR NO EN EL \_ \_ \_ TRABAJO**
 </dt> <dd> <dl> <dt>
 
 759 (0x2F7)
@@ -2828,7 +2828,7 @@ El proceso especificado no forma parte de un trabajo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROCESS_IN_JOB"></span><span id="error_process_in_job"></span>**ERROR \_ \_ de proceso en el \_ trabajo**
+<span id="ERROR_PROCESS_IN_JOB"></span><span id="error_process_in_job"></span>**PROCESO \_ DE ERROR EN EL \_ \_ TRABAJO**
 </dt> <dd> <dl> <dt>
 
 760 (0x2F8)
@@ -2841,7 +2841,7 @@ El proceso especificado forma parte de un trabajo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VOLSNAP_HIBERNATE_READY"></span><span id="error_volsnap_hibernate_ready"></span>**ERROR \_ VOLSNAP \_ \_ preparado para hibernar**
+<span id="ERROR_VOLSNAP_HIBERNATE_READY"></span><span id="error_volsnap_hibernate_ready"></span>**ERROR \_ VOLSNAP \_ HIBERNATE \_ READY**
 </dt> <dd> <dl> <dt>
 
 761 (0x2F9)
@@ -2849,12 +2849,12 @@ El proceso especificado forma parte de un trabajo.
 
 
 
-{Servicio de instantáneas de volumen} El sistema ya está listo para la hibernación.
+{Servicio de instantáneas de volumen} El sistema ya está listo para hibernación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FSFILTER_OP_COMPLETED_SUCCESSFULLY"></span><span id="error_fsfilter_op_completed_successfully"></span>**ERROR \_ FSFILTER \_ operación \_ completada \_ correctamente**
+<span id="ERROR_FSFILTER_OP_COMPLETED_SUCCESSFULLY"></span><span id="error_fsfilter_op_completed_successfully"></span>**ERROR \_ FSFILTER \_ OP \_ COMPLETED \_ SUCCESSFULLY**
 </dt> <dd> <dl> <dt>
 
 762 (0x2FA)
@@ -2862,12 +2862,12 @@ El proceso especificado forma parte de un trabajo.
 
 
 
-Un sistema de archivos o un controlador de filtro del sistema de archivos ha completado correctamente una operación de FsFilter.
+Un sistema de archivos o un controlador de filtro del sistema de archivos ha completado correctamente una operación FsFilter.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERRUPT_VECTOR_ALREADY_CONNECTED"></span><span id="error_interrupt_vector_already_connected"></span>**Vector de interrupción de ERROR \_ \_ \_ ya \_ conectado**
+<span id="ERROR_INTERRUPT_VECTOR_ALREADY_CONNECTED"></span><span id="error_interrupt_vector_already_connected"></span>**VECTOR \_ DE \_ INTERRUPCIÓN DE ERROR YA \_ \_ CONECTADO**
 </dt> <dd> <dl> <dt>
 
 763 (0x2FB)
@@ -2880,7 +2880,7 @@ El vector de interrupción especificado ya estaba conectado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INTERRUPT_STILL_CONNECTED"></span><span id="error_interrupt_still_connected"></span>**interrupción de ERROR \_ \_ todavía \_ conectada**
+<span id="ERROR_INTERRUPT_STILL_CONNECTED"></span><span id="error_interrupt_still_connected"></span>**INTERRUPCIÓN \_ DE ERROR \_ TODAVÍA \_ CONECTADA**
 </dt> <dd> <dl> <dt>
 
 764 (0x2FC)
@@ -2888,12 +2888,12 @@ El vector de interrupción especificado ya estaba conectado.
 
 
 
-El vector de interrupción especificado todavía está conectado.
+El vector de interrupción especificado sigue conectado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_WAIT_FOR_OPLOCK"></span><span id="error_wait_for_oplock"></span>**ERROR \_ \_ de espera de \_ bloqueo oportunista**
+<span id="ERROR_WAIT_FOR_OPLOCK"></span><span id="error_wait_for_oplock"></span>**ERROR \_ WAIT \_ FOR \_ OPLOCK**
 </dt> <dd> <dl> <dt>
 
 765 (0x2FD)
@@ -2901,12 +2901,12 @@ El vector de interrupción especificado todavía está conectado.
 
 
 
-Una operación está bloqueada a la espera de un bloqueo oportunista.
+Una operación se bloquea a la espera de un bloqueo temporal.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_EXCEPTION_HANDLED"></span><span id="error_dbg_exception_handled"></span>**ERROR \_ dbg \_ excepción \_ controlada**
+<span id="ERROR_DBG_EXCEPTION_HANDLED"></span><span id="error_dbg_exception_handled"></span>**ERROR \_ DBG \_ EXCEPTION \_ HANDLED**
 </dt> <dd> <dl> <dt>
 
 766 (0x2FE)
@@ -2919,7 +2919,7 @@ Excepción controlada por el depurador.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DBG_CONTINUE"></span><span id="error_dbg_continue"></span>**ERROR \_ dbg \_ continue**
+<span id="ERROR_DBG_CONTINUE"></span><span id="error_dbg_continue"></span>**ERROR \_ DBG \_ CONTINUE**
 </dt> <dd> <dl> <dt>
 
 767 (0x2FF)
@@ -2927,12 +2927,12 @@ Excepción controlada por el depurador.
 
 
 
-El depurador continuó.
+Depurador continuado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CALLBACK_POP_STACK"></span><span id="error_callback_pop_stack"></span>**\_pila pop de devolución de llamada de error \_ \_**
+<span id="ERROR_CALLBACK_POP_STACK"></span><span id="error_callback_pop_stack"></span>**PILA POP \_ DE DEVOLUCIÓN \_ DE LLAMADA DE \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 768 (0x300)
@@ -2940,12 +2940,12 @@ El depurador continuó.
 
 
 
-Se produjo una excepción en una devolución de llamada del modo de usuario y debe quitarse el marco de devolución de llamada del kernel.
+Se produjo una excepción en una devolución de llamada en modo de usuario y se debe quitar el marco de devolución de llamada del kernel.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_COMPRESSION_DISABLED"></span><span id="error_compression_disabled"></span>**compresión de ERROR \_ \_ deshabilitada**
+<span id="ERROR_COMPRESSION_DISABLED"></span><span id="error_compression_disabled"></span>**COMPRESIÓN DE \_ ERRORES \_ DESHABILITADA**
 </dt> <dd> <dl> <dt>
 
 769 (0x301)
@@ -2966,12 +2966,12 @@ La compresión está deshabilitada para este volumen.
 
 
 
-El proveedor de datos no puede recuperarse hacia atrás a través de un conjunto de resultados.
+El proveedor de datos no puede capturar hacia atrás a través de un conjunto de resultados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANTSCROLLBACKWARDS"></span><span id="error_cantscrollbackwards"></span>**ERROR \_ CANTSCROLLBACKWARDS**
+<span id="ERROR_CANTSCROLLBACKWARDS"></span><span id="error_cantscrollbackwards"></span>**ERROR \_ CAROLROLLBACKWARDS**
 </dt> <dd> <dl> <dt>
 
 771 (0x303)
@@ -2979,12 +2979,12 @@ El proveedor de datos no puede recuperarse hacia atrás a través de un conjunto
 
 
 
-El proveedor de datos no se puede desplazar hacia atrás a través de un conjunto de resultados.
+El proveedor de datos no puede desplazarse hacia atrás a través de un conjunto de resultados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ROWSNOTRELEASED"></span><span id="error_rowsnotreleased"></span>**ERROR \_ ROWSNOTRELEASED**
+<span id="ERROR_ROWSNOTRELEASED"></span><span id="error_rowsnotreleased"></span>**FILAS \_ DE ERRORNOTRELEASED**
 </dt> <dd> <dl> <dt>
 
 772 (0x304)
@@ -2992,12 +2992,12 @@ El proveedor de datos no se puede desplazar hacia atrás a través de un conjunt
 
 
 
-El proveedor de datos requiere que se liberen los datos capturados anteriormente antes de solicitar más datos.
+El proveedor de datos requiere que se liberan los datos previamente obtenidos antes de solicitar más datos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_ACCESSOR_FLAGS"></span><span id="error_bad_accessor_flags"></span>**ERROR \_ de \_ marcas de descriptor de acceso incorrecto \_**
+<span id="ERROR_BAD_ACCESSOR_FLAGS"></span><span id="error_bad_accessor_flags"></span>**MARCAS \_ DE \_ ACCESSOR DE ERROR \_**
 </dt> <dd> <dl> <dt>
 
 773 (0x305)
@@ -3005,12 +3005,12 @@ El proveedor de datos requiere que se liberen los datos capturados anteriormente
 
 
 
-El proveedor de datos no pudo interpretar las marcas establecidas para un enlace de columna en un descriptor de acceso.
+El proveedor de datos no pudo interpretar las marcas establecidas para un enlace de columna en un accessor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ERRORS_ENCOUNTERED"></span><span id="error_errors_encountered"></span>**\_errores \_ encontrados**
+<span id="ERROR_ERRORS_ENCOUNTERED"></span><span id="error_errors_encountered"></span>**ERRORES \_ \_ DETECTADOS**
 </dt> <dd> <dl> <dt>
 
 774 (0x306)
@@ -3018,12 +3018,12 @@ El proveedor de datos no pudo interpretar las marcas establecidas para un enlace
 
 
 
-Se produjeron uno o más errores al procesar la solicitud.
+Se produjeron uno o varios errores al procesar la solicitud.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOT_CAPABLE"></span><span id="error_not_capable"></span>**ERROR \_ no \_ compatible**
+<span id="ERROR_NOT_CAPABLE"></span><span id="error_not_capable"></span>**ERROR \_ NO \_ COMPATIBLE**
 </dt> <dd> <dl> <dt>
 
 775 (0x307)
@@ -3036,7 +3036,7 @@ La implementación no es capaz de realizar la solicitud.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_REQUEST_OUT_OF_SEQUENCE"></span><span id="error_request_out_of_sequence"></span>**\_solicitud \_ de error fuera \_ de \_ secuencia**
+<span id="ERROR_REQUEST_OUT_OF_SEQUENCE"></span><span id="error_request_out_of_sequence"></span>**SOLICITUD \_ DE ERROR FUERA DE \_ \_ \_ SECUENCIA**
 </dt> <dd> <dl> <dt>
 
 776 (0x308)
@@ -3049,7 +3049,7 @@ El cliente de un componente solicitó una operación que no es válida dado el e
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_VERSION_PARSE_ERROR"></span><span id="error_version_parse_error"></span>**error de \_ análisis de versión de error \_ \_**
+<span id="ERROR_VERSION_PARSE_ERROR"></span><span id="error_version_parse_error"></span>**ERROR \_ DE ANÁLISIS DE VERSIÓN DE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 777 (0x309)
@@ -3075,7 +3075,7 @@ La posición inicial del iterador no es válida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MEMORY_HARDWARE"></span><span id="error_memory_hardware"></span>**\_hardware de memoria de error \_**
+<span id="ERROR_MEMORY_HARDWARE"></span><span id="error_memory_hardware"></span>**HARDWARE DE \_ MEMORIA \_ DE ERROR**
 </dt> <dd> <dl> <dt>
 
 779 (0x30B)
@@ -3083,12 +3083,12 @@ La posición inicial del iterador no es válida.
 
 
 
-El hardware ha detectado un error de memoria incorregible.
+El hardware ha notificado un error de memoria incorregible.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_REPAIR_DISABLED"></span><span id="error_disk_repair_disabled"></span>**ERROR \_ al \_ reparar el disco \_ deshabilitado**
+<span id="ERROR_DISK_REPAIR_DISABLED"></span><span id="error_disk_repair_disabled"></span>**ERROR DE \_ REPARACIÓN \_ DE DISCO \_ DESHABILITADA**
 </dt> <dd> <dl> <dt>
 
 780 (0x30C)
@@ -3096,12 +3096,12 @@ El hardware ha detectado un error de memoria incorregible.
 
 
 
-La operación que se ha intentado requiere que se habilite la recuperación automática.
+La operación intentada requería que se habilitara la recuperación automática.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INSUFFICIENT_RESOURCE_FOR_SPECIFIED_SHARED_SECTION_SIZE"></span><span id="error_insufficient_resource_for_specified_shared_section_size"></span>**ERROR \_ \_ de recurso insuficiente \_ para \_ \_ \_ \_ el tamaño de sección compartida especificado**
+<span id="ERROR_INSUFFICIENT_RESOURCE_FOR_SPECIFIED_SHARED_SECTION_SIZE"></span><span id="error_insufficient_resource_for_specified_shared_section_size"></span>**ERROR \_ DE RECURSO INSUFICIENTE PARA EL TAMAÑO DE SECCIÓN COMPARTIDO \_ \_ \_ \_ \_ \_ ESPECIFICADO**
 </dt> <dd> <dl> <dt>
 
 781 (0x30D)
@@ -3109,12 +3109,12 @@ La operación que se ha intentado requiere que se habilite la recuperación auto
 
 
 
-El montón de escritorio encontró un error al asignar memoria de sesión. Hay más información en el registro de eventos del sistema.
+El montón desktop encontró un error al asignar memoria de sesión. Hay más información en el registro de eventos del sistema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_POWERSTATE_TRANSITION"></span><span id="error_system_powerstate_transition"></span>**transición de sistema de errores \_ \_ POWERSTATE \_**
+<span id="ERROR_SYSTEM_POWERSTATE_TRANSITION"></span><span id="error_system_powerstate_transition"></span>**ERROR \_ SYSTEM \_ POWERSTATE \_ TRANSITION**
 </dt> <dd> <dl> <dt>
 
 782 (0x30E)
@@ -3122,12 +3122,12 @@ El montón de escritorio encontró un error al asignar memoria de sesión. Hay m
 
 
 
-El estado de la alimentación del sistema está pasando de %2 a %3.
+El estado de energía del sistema está transfiriendo de %2 a %3.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SYSTEM_POWERSTATE_COMPLEX_TRANSITION"></span><span id="error_system_powerstate_complex_transition"></span>**\_ \_ \_ transición compleja del sistema de errores \_**
+<span id="ERROR_SYSTEM_POWERSTATE_COMPLEX_TRANSITION"></span><span id="error_system_powerstate_complex_transition"></span>**ERROR \_ SYSTEM \_ POWERSTATE \_ COMPLEX \_ TRANSITION**
 </dt> <dd> <dl> <dt>
 
 783 (0x30F)
@@ -3135,12 +3135,12 @@ El estado de la alimentación del sistema está pasando de %2 a %3.
 
 
 
-El estado de la alimentación del sistema está pasando de %2 a %3, pero puede escribir %4.
+El estado de energía del sistema está transfiriendo de %2 a %3, pero podría escribir %4.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_MCA_EXCEPTION"></span><span id="error_mca_exception"></span>**ERROR \_ MCA \_ excepción**
+<span id="ERROR_MCA_EXCEPTION"></span><span id="error_mca_exception"></span>**ERROR \_ EXCEPCIÓN DE MCA \_**
 </dt> <dd> <dl> <dt>
 
 784 (0x310)
@@ -3148,12 +3148,12 @@ El estado de la alimentación del sistema está pasando de %2 a %3, pero puede e
 
 
 
-Un subproceso se envía con excepción de MCA debido a la MCA.
+Un subproceso se envía con excepción de MCA debido a MCA.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACCESS_AUDIT_BY_POLICY"></span><span id="error_access_audit_by_policy"></span>**ERROR \_ \_ de auditoría \_ de acceso por \_ Directiva**
+<span id="ERROR_ACCESS_AUDIT_BY_POLICY"></span><span id="error_access_audit_by_policy"></span>**ERROR \_ ACCESS \_ AUDIT \_ BY \_ POLICY**
 </dt> <dd> <dl> <dt>
 
 785 (0x311)
@@ -3161,12 +3161,12 @@ Un subproceso se envía con excepción de MCA debido a la MCA.
 
 
 
-El acceso a %1 está supervisado por la regla de directiva %2.
+El acceso a %1 se supervisa mediante la regla de directiva %2.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ACCESS_DISABLED_NO_SAFER_UI_BY_POLICY"></span><span id="error_access_disabled_no_safer_ui_by_policy"></span>**ERROR \_ \_ de acceso deshabilitado \_ sin \_ \_ interfaz de usuario más segura \_ por \_ Directiva**
+<span id="ERROR_ACCESS_DISABLED_NO_SAFER_UI_BY_POLICY"></span><span id="error_access_disabled_no_safer_ui_by_policy"></span>**ERROR ACCESS DISABLED NO SAFER UI BY POLICY (ACCESO DE ERROR \_ DESHABILITADO SIN INTERFAZ DE USUARIO MÁS SEGURA POR \_ \_ \_ \_ \_ \_ DIRECTIVA)**
 </dt> <dd> <dl> <dt>
 
 786 (0x312)
@@ -3174,12 +3174,12 @@ El acceso a %1 está supervisado por la regla de directiva %2.
 
 
 
-La regla de directiva %2 ha restringido el acceso a %1.
+El administrador ha restringido el acceso a %1 mediante la regla de directiva %2.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ABANDON_HIBERFILE"></span><span id="error_abandon_hiberfile"></span>**ERROR al \_ abandonar \_ hibernación**
+<span id="ERROR_ABANDON_HIBERFILE"></span><span id="error_abandon_hiberfile"></span>**ERROR \_ ABANDON \_ HIBERFILE**
 </dt> <dd> <dl> <dt>
 
 787 (0x313)
@@ -3187,12 +3187,12 @@ La regla de directiva %2 ha restringido el acceso a %1.
 
 
 
-Se ha invalidado un archivo de hibernación válido y debe abandonarse.
+Se ha invalidado un archivo de hibernación válido y se debe abandonar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOST_WRITEBEHIND_DATA_NETWORK_DISCONNECTED"></span><span id="error_lost_writebehind_data_network_disconnected"></span>**ERROR \_ perdido \_ WRITEBEHIND de \_ red de datos \_ \_ desconectado**
+<span id="ERROR_LOST_WRITEBEHIND_DATA_NETWORK_DISCONNECTED"></span><span id="error_lost_writebehind_data_network_disconnected"></span>**ERROR AL PERDER LA RED DE DATOS \_ \_ \_ WRITEBEHIND \_ \_ DESCONECTADA**
 </dt> <dd> <dl> <dt>
 
 788 (0x314)
@@ -3200,12 +3200,12 @@ Se ha invalidado un archivo de hibernación válido y debe abandonarse.
 
 
 
-{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo% HS; se han perdido los datos. Este error puede deberse a problemas de conectividad de red. Intente guardar este archivo en otra ubicación.
+{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo %hs; los datos se han perdido. Este error puede deberse a problemas de conectividad de red. Intente guardar este archivo en otro lugar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOST_WRITEBEHIND_DATA_NETWORK_SERVER_ERROR"></span><span id="error_lost_writebehind_data_network_server_error"></span>**error \_ perdido \_ WRITEBEHIND \_ de \_ servidor de red de datos \_ \_**
+<span id="ERROR_LOST_WRITEBEHIND_DATA_NETWORK_SERVER_ERROR"></span><span id="error_lost_writebehind_data_network_server_error"></span>**ERROR \_ PERDIDO \_ WRITEBEHIND \_ DATA NETWORK SERVER \_ \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 789 (0x315)
@@ -3213,12 +3213,12 @@ Se ha invalidado un archivo de hibernación válido y debe abandonarse.
 
 
 
-{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo% HS; se han perdido los datos. Este error fue devuelto por el servidor en el que existe el archivo. Intente guardar este archivo en otra ubicación.
+{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo %hs; los datos se han perdido. El servidor en el que existe el archivo devolvió este error. Intente guardar este archivo en otro lugar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_LOST_WRITEBEHIND_DATA_LOCAL_DISK_ERROR"></span><span id="error_lost_writebehind_data_local_disk_error"></span>**error \_ perdido error de \_ \_ \_ disco local de datos WRITEBEHIND \_ \_**
+<span id="ERROR_LOST_WRITEBEHIND_DATA_LOCAL_DISK_ERROR"></span><span id="error_lost_writebehind_data_local_disk_error"></span>**ERROR \_ AL PERDER EL DISCO \_ LOCAL DE DATOS \_ WRITEBEHIND \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 790 (0x316)
@@ -3226,12 +3226,12 @@ Se ha invalidado un archivo de hibernación válido y debe abandonarse.
 
 
 
-{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo% HS; se han perdido los datos. Este error puede deberse a que se ha quitado el dispositivo o a que el medio está protegido contra escritura.
+{Error de escritura retrasada} Windows no pudo guardar todos los datos del archivo %hs; los datos se han perdido. Este error puede deberse a que se ha quitado el dispositivo o si el medio está protegido por escritura.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_BAD_MCFG_TABLE"></span><span id="error_bad_mcfg_table"></span>**ERROR en la \_ \_ tabla MCFG errónea \_**
+<span id="ERROR_BAD_MCFG_TABLE"></span><span id="error_bad_mcfg_table"></span>**ERROR \_ TABLA \_ MCFG \_ INCORRECTA**
 </dt> <dd> <dl> <dt>
 
 791 (0x317)
@@ -3239,12 +3239,12 @@ Se ha invalidado un archivo de hibernación válido y debe abandonarse.
 
 
 
-Los recursos necesarios para este dispositivo entran en conflicto con la tabla MCFG.
+Los recursos necesarios para este dispositivo están en conflicto con la tabla MCFG.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_REPAIR_REDIRECTED"></span><span id="error_disk_repair_redirected"></span>**ERROR \_ al \_ reparar el disco \_ Redirigido**
+<span id="ERROR_DISK_REPAIR_REDIRECTED"></span><span id="error_disk_repair_redirected"></span>**ERROR \_ DE REPARACIÓN DE DISCO \_ \_ REDIRIGIDO**
 </dt> <dd> <dl> <dt>
 
 792 (0x318)
@@ -3252,12 +3252,12 @@ Los recursos necesarios para este dispositivo entran en conflicto con la tabla M
 
 
 
-No se pudo reparar el volumen mientras está en línea. Programe la desconexión del volumen para que se pueda reparar.
+No se pudo realizar la reparación del volumen mientras está en línea. Programe para desconectar el volumen para que se pueda reparar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DISK_REPAIR_UNSUCCESSFUL"></span><span id="error_disk_repair_unsuccessful"></span>**ERROR \_ de \_ reparación de disco \_ incorrecta**
+<span id="ERROR_DISK_REPAIR_UNSUCCESSFUL"></span><span id="error_disk_repair_unsuccessful"></span>**ERROR AL \_ REPARAR EL \_ DISCO \_ INCORRECTAMENTE**
 </dt> <dd> <dl> <dt>
 
 793 (0x319)
@@ -3270,7 +3270,7 @@ La reparación del volumen no se ha realizado correctamente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CORRUPT_LOG_OVERFULL"></span><span id="error_corrupt_log_overfull"></span>**ERROR \_ de \_ Registro \_ dañado**
+<span id="ERROR_CORRUPT_LOG_OVERFULL"></span><span id="error_corrupt_log_overfull"></span>**ERROR \_ AL DAÑAR EL REGISTRO \_ \_ OVERFULL**
 </dt> <dd> <dl> <dt>
 
 794 (0x31A)
@@ -3278,12 +3278,12 @@ La reparación del volumen no se ha realizado correctamente.
 
 
 
-Uno de los registros de daños del volumen está lleno. No se registrarán más daños que puedan detectarse.
+Uno de los registros de daños en el volumen está lleno. No se registrarán más daños que se puedan detectar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CORRUPT_LOG_CORRUPTED"></span><span id="error_corrupt_log_corrupted"></span>**ERROR \_ de \_ Registro \_ dañado dañado**
+<span id="ERROR_CORRUPT_LOG_CORRUPTED"></span><span id="error_corrupt_log_corrupted"></span>**ERROR: \_ REGISTRO \_ DAÑADO \_**
 </dt> <dd> <dl> <dt>
 
 795 (0x31B)
@@ -3291,12 +3291,12 @@ Uno de los registros de daños del volumen está lleno. No se registrarán más 
 
 
 
-Uno de los registros de daños del volumen está dañado internamente y debe volver a crearse. El volumen puede contener daños no detectados y se debe analizar.
+Uno de los registros de daños en el volumen está dañado internamente y debe volver a crearse. El volumen puede contener daños no detectados y debe examinarse.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CORRUPT_LOG_UNAVAILABLE"></span><span id="error_corrupt_log_unavailable"></span>**ERROR \_ de \_ registro dañado \_ no disponible**
+<span id="ERROR_CORRUPT_LOG_UNAVAILABLE"></span><span id="error_corrupt_log_unavailable"></span>**ERROR REGISTRO \_ DAÑADO \_ NO \_ DISPONIBLE**
 </dt> <dd> <dl> <dt>
 
 796 (0x31C)
@@ -3304,12 +3304,12 @@ Uno de los registros de daños del volumen está dañado internamente y debe vol
 
 
 
-Uno de los registros de daños del volumen no está disponible para su funcionamiento.
+Uno de los registros de daños en el volumen no está disponible para su funcionamiento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CORRUPT_LOG_DELETED_FULL"></span><span id="error_corrupt_log_deleted_full"></span>**ERROR \_ de \_ registro dañado \_ eliminado \_ completo**
+<span id="ERROR_CORRUPT_LOG_DELETED_FULL"></span><span id="error_corrupt_log_deleted_full"></span>**ERROR \_ AL ELIMINAR EL REGISTRO \_ \_ COMPLETO \_**
 </dt> <dd> <dl> <dt>
 
 797 (0x31D)
@@ -3317,12 +3317,12 @@ Uno de los registros de daños del volumen no está disponible para su funcionam
 
 
 
-Se eliminó uno de los registros de daños del volumen al seguir teniendo registros dañados en ellos. El volumen contiene daños detectados y debe analizarse.
+Uno de los registros de daños en el volumen se eliminó mientras aún tenía registros de daños. El volumen contiene daños detectados y debe examinarse.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CORRUPT_LOG_CLEARED"></span><span id="error_corrupt_log_cleared"></span>**ERROR \_ de \_ Registro \_ dañado**
+<span id="ERROR_CORRUPT_LOG_CLEARED"></span><span id="error_corrupt_log_cleared"></span>**ERROR \_ AL BORRAR EL REGISTRO \_ DAÑADO \_**
 </dt> <dd> <dl> <dt>
 
 798 (0x31E)
@@ -3330,12 +3330,12 @@ Se eliminó uno de los registros de daños del volumen al seguir teniendo regist
 
 
 
-CHKDSK borró uno de los registros de daños del volumen y ya no contiene daños reales.
+Chkdsk ha borrado uno de los registros de daños en el volumen y ya no contiene daños reales.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_ORPHAN_NAME_EXHAUSTED"></span><span id="error_orphan_name_exhausted"></span>**ERROR \_ de \_ nombre huérfano \_ agotado**
+<span id="ERROR_ORPHAN_NAME_EXHAUSTED"></span><span id="error_orphan_name_exhausted"></span>**ERROR \_ NOMBRE HUÉRFANO \_ \_ AGOTADO**
 </dt> <dd> <dl> <dt>
 
 799 (0x31F)
@@ -3343,12 +3343,12 @@ CHKDSK borró uno de los registros de daños del volumen y ya no contiene daños
 
 
 
-Existen archivos huérfanos en el volumen, pero no se pudieron recuperar porque no se pueden crear más nombres nuevos en el directorio de recuperación. Los archivos deben moverse desde el directorio de recuperación.
+Los archivos huérfanos existen en el volumen, pero no se pudieron recuperar porque no se pudieron crear más nombres nuevos en el directorio de recuperación. Los archivos deben moverse desde el directorio de recuperación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPLOCK_SWITCHED_TO_NEW_HANDLE"></span><span id="error_oplock_switched_to_new_handle"></span>**ERROR \_ de bloqueo oportunista \_ cambiado \_ a \_ nuevo \_ identificador**
+<span id="ERROR_OPLOCK_SWITCHED_TO_NEW_HANDLE"></span><span id="error_oplock_switched_to_new_handle"></span>**ERROR \_ OPLOCK \_ CAMBIADO A NUEVO \_ \_ \_ IDENTIFICADOR**
 </dt> <dd> <dl> <dt>
 
 800 (0x320)
@@ -3356,12 +3356,12 @@ Existen archivos huérfanos en el volumen, pero no se pudieron recuperar porque 
 
 
 
-El bloqueo oportunista asociado a este identificador está asociado ahora a un identificador diferente.
+El bloqueo de operación asociado a este identificador ahora está asociado a un identificador diferente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANNOT_GRANT_REQUESTED_OPLOCK"></span><span id="error_cannot_grant_requested_oplock"></span>**ERROR \_ no se puede \_ conceder el \_ \_ bloqueo oportunista solicitado**
+<span id="ERROR_CANNOT_GRANT_REQUESTED_OPLOCK"></span><span id="error_cannot_grant_requested_oplock"></span>**ERROR \_ NO SE PUEDE CONCEDER \_ \_ \_ OPLOCK SOLICITADO**
 </dt> <dd> <dl> <dt>
 
 801 (0x321)
@@ -3369,12 +3369,12 @@ El bloqueo oportunista asociado a este identificador está asociado ahora a un i
 
 
 
-No se puede conceder un bloqueo oportunista del nivel solicitado. Puede haber disponible un bloqueo oportunista de un nivel inferior.
+No se puede conceder un bloqueo de operación del nivel solicitado. Puede haber disponible un bloqueo de operación de un nivel inferior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_CANNOT_BREAK_OPLOCK"></span><span id="error_cannot_break_oplock"></span>**ERROR \_ no se puede \_ interrumpir el \_ bloqueo oportunista**
+<span id="ERROR_CANNOT_BREAK_OPLOCK"></span><span id="error_cannot_break_oplock"></span>**ERROR \_ NO SE PUEDE INTERRUMPIR \_ \_ OPLOCK**
 </dt> <dd> <dl> <dt>
 
 802 (0x322)
@@ -3382,12 +3382,12 @@ No se puede conceder un bloqueo oportunista del nivel solicitado. Puede haber di
 
 
 
-La operación no se completó correctamente porque haría que se interrumpiera un bloqueo oportunista. El autor de la llamada ha solicitado que bloqueos oportunistas existente no se interrumpa.
+La operación no se ha completado correctamente porque provocaría que se rompa un bloqueo de operación. El autor de la llamada ha solicitado que los bloqueos de operación existentes no se rompa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPLOCK_HANDLE_CLOSED"></span><span id="error_oplock_handle_closed"></span>**\_identificador de bloqueo oportunista de error \_ \_ cerrado**
+<span id="ERROR_OPLOCK_HANDLE_CLOSED"></span><span id="error_oplock_handle_closed"></span>**ERROR \_ OPLOCK \_ HANDLE \_ CLOSED**
 </dt> <dd> <dl> <dt>
 
 803 (0x323)
@@ -3395,12 +3395,12 @@ La operación no se completó correctamente porque haría que se interrumpiera u
 
 
 
-Se ha cerrado el identificador con el que se asoció este bloqueo oportunista. El bloqueo oportunista se ha interrumpido.
+Se ha cerrado el identificador con el que se asoció este bloqueo operativo. El bloqueo de operación ahora se ha roto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_ACE_CONDITION"></span><span id="error_no_ace_condition"></span>**ERROR: \_ no hay ninguna \_ \_ condición ACE**
+<span id="ERROR_NO_ACE_CONDITION"></span><span id="error_no_ace_condition"></span>**ERROR \_ NO \_ ACE \_ CONDITION**
 </dt> <dd> <dl> <dt>
 
 804 (0x324)
@@ -3408,12 +3408,12 @@ Se ha cerrado el identificador con el que se asoció este bloqueo oportunista. E
 
 
 
-La entrada de control de acceso (ACE) especificada no contiene ninguna condición.
+La entrada de control de acceso (ACE) especificada no contiene una condición.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_ACE_CONDITION"></span><span id="error_invalid_ace_condition"></span>**ERROR de la \_ \_ condición ACE no válida \_**
+<span id="ERROR_INVALID_ACE_CONDITION"></span><span id="error_invalid_ace_condition"></span>**ERROR \_ CONDICIÓN ACE NO \_ \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 805 (0x325)
@@ -3426,7 +3426,7 @@ La entrada de control de acceso (ACE) especificada contiene una condición no v�
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_FILE_HANDLE_REVOKED"></span><span id="error_file_handle_revoked"></span>**identificador de archivo de ERROR \_ \_ \_ revocado**
+<span id="ERROR_FILE_HANDLE_REVOKED"></span><span id="error_file_handle_revoked"></span>**IDENTIFICADOR \_ DE ARCHIVO DE ERROR \_ \_ REVOCADO**
 </dt> <dd> <dl> <dt>
 
 806 (0x326)
@@ -3439,7 +3439,7 @@ Se ha revocado el acceso al identificador de archivo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IMAGE_AT_DIFFERENT_BASE"></span><span id="error_image_at_different_base"></span>**\_imagen \_ de error en \_ \_ base diferente**
+<span id="ERROR_IMAGE_AT_DIFFERENT_BASE"></span><span id="error_image_at_different_base"></span>**IMAGEN \_ DE ERROR EN BASE \_ \_ \_ DIFERENTE**
 </dt> <dd> <dl> <dt>
 
 807 (0x327)
@@ -3447,12 +3447,12 @@ Se ha revocado el acceso al identificador de archivo especificado.
 
 
 
-Un archivo de imagen se asignó a una dirección diferente a la especificada en el archivo de imagen, pero las correcciones se seguirán realizando automáticamente en la imagen.
+Un archivo de imagen se asignó en una dirección diferente de la especificada en el archivo de imagen, pero las correcciones se seguirán realizando automáticamente en la imagen.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_EA_ACCESS_DENIED"></span><span id="error_ea_access_denied"></span>**ERROR \_ EA \_ acceso \_ denegado**
+<span id="ERROR_EA_ACCESS_DENIED"></span><span id="error_ea_access_denied"></span>**ERROR \_ ACCESO DE EA \_ \_ DENEGADO**
 </dt> <dd> <dl> <dt>
 
 994 (0x3E2)
@@ -3465,7 +3465,7 @@ Se denegó el acceso al atributo extendido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_OPERATION_ABORTED"></span><span id="error_operation_aborted"></span>**operación de ERROR \_ \_ anulada**
+<span id="ERROR_OPERATION_ABORTED"></span><span id="error_operation_aborted"></span>**OPERACIÓN DE ERROR \_ \_ ANULADA**
 </dt> <dd> <dl> <dt>
 
 995 (0x3E3)
@@ -3473,12 +3473,12 @@ Se denegó el acceso al atributo extendido.
 
 
 
-La operación de e/s se ha anulado debido a una salida de subproceso o una solicitud de aplicación.
+La operación de E/S se ha anulado debido a una salida del subproceso o a una solicitud de aplicación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IO_INCOMPLETE"></span><span id="error_io_incomplete"></span>**\_e/s de error \_ incompleta**
+<span id="ERROR_IO_INCOMPLETE"></span><span id="error_io_incomplete"></span>**ERROR \_ E/S \_ INCOMPLETA**
 </dt> <dd> <dl> <dt>
 
 996 (0x3E4)
@@ -3486,12 +3486,12 @@ La operación de e/s se ha anulado debido a una salida de subproceso o una solic
 
 
 
-El evento de e/s superpuesta no se encuentra en un estado señalado.
+El evento de E/S superpuesta no está en un estado señalado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_IO_PENDING"></span><span id="error_io_pending"></span>**\_e/s de errores \_ pendientes**
+<span id="ERROR_IO_PENDING"></span><span id="error_io_pending"></span>**E/S DE ERROR \_ \_ PENDIENTE**
 </dt> <dd> <dl> <dt>
 
 997 (0x3E5)
@@ -3499,12 +3499,12 @@ El evento de e/s superpuesta no se encuentra en un estado señalado.
 
 
 
-La operación de e/s superpuesta está en curso.
+La operación de E/S superpuesta está en curso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NOACCESS"></span><span id="error_noaccess"></span>**ERROR \_ NOaccess**
+<span id="ERROR_NOACCESS"></span><span id="error_noaccess"></span>**ERROR \_ NOACCESS**
 </dt> <dd> <dl> <dt>
 
 998 (0x3E6)
@@ -3525,7 +3525,7 @@ Acceso no válido a la ubicación de memoria.
 
 
 
-Error al realizar la operación de INPAGE.
+Error al realizar la operación de página.
 
 
 </dt> </dl> </dd> </dl>
@@ -3535,11 +3535,11 @@ Error al realizar la operación de INPAGE.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 

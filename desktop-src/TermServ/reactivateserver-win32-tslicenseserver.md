@@ -1,12 +1,12 @@
 ---
-title: Método ReactivateServer de la clase Win32_TSLicenseServer
-description: Reactiva el servidor de licencias de Escritorio remoto mediante un nuevo identificador que se obtuvo a través del teléfono o Internet.
+title: Método ReactivateServer de la Win32_TSLicenseServer clase
+description: Vuelve a activar el Escritorio remoto de licencias mediante un nuevo identificador que se obtuvo por teléfono o Por Internet.
 ms.assetid: dd9ff938-a683-4f60-b7cc-7580892953b6
 ms.tgt_platform: multiple
 keywords:
-- Método ReactivateServer Servicios de Escritorio remoto
-- Método ReactivateServer Servicios de Escritorio remoto, clase Win32_TSLicenseServer
-- Win32_TSLicenseServer de clase Servicios de Escritorio remoto, método ReactivateServer
+- ReactivateServer method Servicios de Escritorio remoto
+- Método ReactivateServer Servicios de Escritorio remoto , Win32_TSLicenseServer clase
+- Win32_TSLicenseServer clase Servicios de Escritorio remoto , método ReactivateServer
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50e84eb0bed0b52ad463fce50ce334d6c8eb8d80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: af8f9a886e40968cc5393512d29e7a90f3cfc8815725eea780abda8bd7872328
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119988805"
 ---
-# <a name="reactivateserver-method-of-the-win32_tslicenseserver-class"></a>Método ReactivateServer de la \_ clase TSLicenseServer de Win32
+# <a name="reactivateserver-method-of-the-win32_tslicenseserver-class"></a>Método ReactivateServer de la clase TSLicenseServer de Win32 \_
 
-Reactiva el servidor de licencias de Escritorio remoto mediante un nuevo identificador que se obtuvo a través del teléfono o Internet.
+Vuelve a activar el Escritorio remoto de licencias mediante un nuevo identificador que se obtuvo por teléfono o Por Internet.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,50 +44,50 @@ uint32 ReactivateServer(
 
 <dl> <dt>
 
-*sNewLicenseServerId* \[ de\]
+*sNewLicenseServerId* \[ En\]
 </dt> <dd>
 
-Escritorio remoto identificador del servidor de licencias que se obtuvo a través del teléfono o Internet.
+Escritorio remoto de servidor de licencias que se obtuvo por teléfono o Por Internet.
 
 </dd> <dt>
 
-*ActivationStatus* \[ enuncia\]
+*ActivationStatus* \[ out\]
 </dt> <dd>
 
-El estado de activación devuelto puede ser uno de los valores siguientes.
+El estado de activación devuelto puede ser uno de los siguientes valores.
 
 <dt>
 
 0
 </dt> <dd>
 
-Se activa el servidor de licencias de Escritorio remoto.
+El Escritorio remoto de licencias está activado.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-El servidor de licencias de Escritorio remoto no está activado.
+El Escritorio remoto de licencias no está activado.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-Se ha producido un error desconocido. No se sabe si el servidor de licencias de Escritorio remoto está activado.
+Se produjo un error desconocido. No se sabe si el Escritorio remoto de licencias está activado.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,7 +98,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

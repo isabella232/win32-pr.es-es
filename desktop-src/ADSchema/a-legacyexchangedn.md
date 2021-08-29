@@ -1,10 +1,10 @@
 ---
 title: Atributo Legacy-Exchange-DN
-description: Nombre distintivo utilizado anteriormente por Exchange.
+description: Nombre distintivo usado anteriormente por Exchange.
 ms.assetid: 96a3590f-dfe0-4bf8-872e-11c2296a616a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo heredado-Exchange-DN
+- Esquema de AD de atributo Exchange-DN heredado
 - Esquema de AD del atributo legacyExchangeDN
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0a4c936912344335b5fd33590ba487bf7b04d4b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99ddb86a17a1636b04425ce938a3c915dc9bb22c89eab657e3ffdee3235bba00
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302055"
 ---
 # <a name="legacy-exchange-dn-attribute"></a>Atributo Legacy-Exchange-DN
 
-Nombre distintivo utilizado anteriormente por Exchange.
+Nombre distintivo usado anteriormente por Exchange.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Heredado-Exchange-DN                          |
-| Nombre para mostrar de LDAP | legacyExchangeDN                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Legacy-Exchange-DN                          |
+| Ldap-Display-Name | legacyExchangeDN                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.655                      |
-| System-ID-GUID    | 28630ebc-41d5-11d1-a9c1-0000f80367c1        |
-| Sintaxis            | [**String(Teletex)**](s-string-teletex.md) |
+| System-Id-Guid    | 28630ebc-41d5-11d1-a9c1-0000f80367c1        |
+| Syntax            | [**String(Teletex)**](s-string-teletex.md) |
 
 
 
@@ -55,13 +55,13 @@ Nombre distintivo utilizado anteriormente por Exchange.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x0000000D                                           |
@@ -76,13 +76,13 @@ Nombre distintivo utilizado anteriormente por Exchange.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x0000000D                                           |
@@ -97,13 +97,13 @@ Nombre distintivo utilizado anteriormente por Exchange.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x0000000D                                           |
@@ -118,18 +118,18 @@ Nombre distintivo utilizado anteriormente por Exchange.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x0000000D                                           |
 | System-Flags           | 0x00000010                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Nombre distintivo utilizado anteriormente por Exchange.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x0000000D                                           |
 | System-Flags           | 0x00000010                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Nombre distintivo utilizado anteriormente por Exchange.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | True                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Verdadero                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x0000000D                                           |
 | System-Flags           | 0x00000010                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 

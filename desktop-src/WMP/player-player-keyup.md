@@ -1,11 +1,11 @@
 ---
-title: Evento Player. KeyUp
-description: El evento KeyUp se produce cuando se suelta una tecla. | Evento Player. KeyUp
+title: Evento Player.KeyUp
+description: El evento KeyUp tiene lugar cuando se libera una clave. | Evento Player.KeyUp
 ms.assetid: 8b624374-403f-4d41-8481-5e94cee70861
 keywords:
-- Media Player de eventos KeyUp de Windows
-- Evento KeyUp Windows Media Player, clase Player
-- Clase de reproductor Windows Media Player, evento KeyUp
+- Evento KeyUp Reproductor de Windows Media
+- Evento KeyUp Reproductor de Windows Media , clase Player
+- Player class Reproductor de Windows Media , KeyUp event
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f06e9b77871e9f62d46bdfa223bfa40b87feaf06
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46134b675f06e0d9febcfa29ec31f8939aac606028342cd829e92e757465c49a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134797"
 ---
-# <a name="playerkeyup-event"></a>Evento Player. KeyUp
+# <a name="playerkeyup-event"></a>Evento Player.KeyUp
 
-El evento **KeyUp** se produce cuando se suelta una tecla.
+El **evento KeyUp** tiene lugar cuando se libera una clave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ Player.KeyUp(
 *nKeyCode* 
 </dt> <dd>
 
-**Número** (**int**) que especifica qué tecla física se presiona. Para ver los valores posibles, consulte el [evento Player. KeyDown](player-player-keydown.md).
+**Number** (**int**) que especifica la tecla física que se presiona. Para obtener los valores posibles, [vea Player.KeyDown Event](player-player-keydown.md).
 
 </dd> <dt>
 
 *nShiftState* 
 </dt> <dd>
 
-**Número** (**int**) que especifica un campo de bits con los bits menos significativos correspondientes a la tecla Mayús (bit 0), la tecla Ctrl (bit 1) y la tecla Alt (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. El argumento Shift indica el estado de estas claves. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunas, todas o ninguna de las teclas.
+**Number** (**int**) que especifica un campo de bits con los bits menos significativos correspondientes a la tecla MAYÚS (bit 0), la tecla CTRL (bit 1) y la tecla ALT (bit 2). Estos bits corresponden a los valores 1, 2 y 4, respectivamente. El argumento mayús indica el estado de estas claves. Se pueden establecer algunos, todos o ninguno de los bits, lo que indica que se presionan algunas, todas o ninguna de las teclas.
 
 </dd> </dl>
 
@@ -61,11 +61,11 @@ Player.KeyUp(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ El valor de los parámetros de evento lo especifica Windows Media Player y se pu
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

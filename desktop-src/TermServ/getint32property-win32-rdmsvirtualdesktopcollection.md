@@ -1,12 +1,12 @@
 ---
-title: Método GetInt32Property de la clase Win32_RDMSVirtualDesktopCollection (Microsoft. Diagnostics. appanalysis. h)
+title: Método GetInt32Property de la clase Win32_RDMSVirtualDesktopCollection (Microsoft.diagnostics.appanalysis.h)
 description: Recupera una propiedad de entero de una colección de escritorios virtuales.
 ms.assetid: 18ffca65-e7c0-4b17-902f-d74b2a81aba2
 ms.tgt_platform: multiple
 keywords:
 - Método GetInt32Property Servicios de Escritorio remoto
-- Método GetInt32Property Servicios de Escritorio remoto, clase Win32_RDMSVirtualDesktopCollection
-- Win32_RDMSVirtualDesktopCollection de clase Servicios de Escritorio remoto, método GetInt32Property
+- Método GetInt32Property Servicios de Escritorio remoto , Win32_RDMSVirtualDesktopCollection clase
+- Win32_RDMSVirtualDesktopCollection clase Servicios de Escritorio remoto , Método GetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64e8e5518590bece8e8b904ea56bf7572b436b66
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f79a0f2ab2dd5f93a372ddf7ed7309e7e44e134949a407ecde83cc2a25f949a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138988"
 ---
-# <a name="getint32property-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método GetInt32Property de la \_ clase RDMSVirtualDesktopCollection de Win32
+# <a name="getint32property-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método GetInt32Property de la clase \_ RDMSVirtualDesktopCollection de Win32
 
 Recupera una propiedad de entero de una colección de escritorios virtuales.
 
@@ -44,14 +44,14 @@ uint32 GetInt32Property(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Clave que identifica la propiedad que se va a recuperar.
+Clave que identifica la propiedad que se debe recuperar.
 
 </dd> <dt>
 
-*Valor* \[ de enuncia\]
+*Valor* \[ out\]
 </dt> <dd>
 
 Entero que recibe el valor recuperado.
@@ -60,7 +60,7 @@ Entero que recibe el valor recuperado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                                 |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                                   |
-| Encabezado<br/>                   | <dl> <dt>Microsoft. Diagnostics. appanalysis. h</dt> </dl> |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl>                    |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                                   |
+| Header<br/>                   | <dl> <dt>Microsoft.diagnostics.appanalysis.h</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl>                    |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>                            |
 
 
@@ -81,7 +81,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
+[**RDMSVirtualDesktopCollection de Win32 \_**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

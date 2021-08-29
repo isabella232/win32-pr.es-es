@@ -1,10 +1,10 @@
 ---
-title: TLSGetServerCertificate función)
-description: Devuelve el certificado del servidor de licencias de Escritorio remoto.
+title: Función TLSGetServerCertificate
+description: Devuelve el certificado del servidor Escritorio remoto licencias.
 ms.assetid: 7a31e7f9-f6d6-4030-b7db-43be118bb158
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la función TLSGetServerCertificate
+- Función TLSGetServerCertificate Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,19 +15,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3144245863ee4a4316bbce8333f03ca3901cb499
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 42f32b939eff90a5043b1fc29d90534d2d51215522f1f5ff07ba45e817014936
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119986945"
 ---
-# <a name="tlsgetservercertificate-function"></a>TLSGetServerCertificate función)
+# <a name="tlsgetservercertificate-function"></a>Función TLSGetServerCertificate
 
-Devuelve el certificado del servidor de licencias de Escritorio remoto.
+Devuelve el certificado del servidor Escritorio remoto licencias.
 
 > [!Note]  
-> Esta función no tiene asociado ningún archivo de encabezado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
+> Esta función no tiene ningún archivo de encabezado asociado ni biblioteca de importación. Para llamar a esta función, debe crear un archivo de encabezado definido por el usuario y usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mstlsapi.dll.
 
  
 
@@ -50,35 +50,35 @@ DWORD WINAPI TLSGetServerCertificate(
 
 <dl> <dt>
 
-*hHandle* \[ de\]
+*hHandle* \[ En\]
 </dt> <dd>
 
-Identificador de un servidor de licencias de Escritorio remoto abierto por una llamada a la función [**TLSConnectToLsServer**](tlsconnecttolsserver.md) .
+Identificador de un Escritorio remoto de licencias que se abre mediante una llamada a la [**función TLSConnectToLsServer.**](tlsconnecttolsserver.md)
 
 </dd> <dt>
 
-*bSignCert* \[ de\]
+*bSignCert* \[ En\]
 </dt> <dd>
 
-**True** si el certificado de firma es **false** si se trata de un certificado de Exchange.
+**TRUE si** certificado de firma, **FALSE** si certificado de intercambio.
 
 </dd> <dt>
 
-*ppbCertBlob* \[ enuncia\]
+*ppbCertBlob* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe un puntero a un búfer que contiene el certificado.
 
 </dd> <dt>
 
-*lpdwCertBlobLen* \[ enuncia\]
+*lpdwCertBlobLen* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe el tamaño del certificado que se devuelve.
 
 </dd> <dt>
 
-*pdwErrCode* \[ enuncia\]
+*pdwErrCode* \[ out\]
 </dt> <dd>
 
 Puntero a una variable que recibe el código de error.
@@ -87,7 +87,7 @@ Puntero a una variable que recibe el código de error.
 
 <span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>
 
-<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ correcto** (0)
+<span id="LSERVER_S_SUCCESS"></span><span id="lserver_s_success"></span>**LSERVER \_ S \_ SUCCESS** (0)
 
 
 </dt> <dd>
@@ -98,7 +98,7 @@ La llamada se realiza correctamente.
 
 <span id="TLS_W_SELFSIGN_CERTIFICATE"></span><span id="tls_w_selfsign_certificate"></span>
 
-<span id="TLS_W_SELFSIGN_CERTIFICATE"></span><span id="tls_w_selfsign_certificate"></span>**TLS \_ \_ \_ Certificado W SELFSIGN** (4007)
+<span id="TLS_W_SELFSIGN_CERTIFICATE"></span><span id="tls_w_selfsign_certificate"></span>**TLS \_ W \_ SELFSIGN \_ CERTIFICATE** (4007)
 
 
 </dt> <dd>
@@ -109,7 +109,7 @@ El certificado devuelto es un certificado autofirmado.
 
 <span id="TLS_W_TEMP_SELFSIGN_CERT"></span><span id="tls_w_temp_selfsign_cert"></span>
 
-<span id="TLS_W_TEMP_SELFSIGN_CERT"></span><span id="tls_w_temp_selfsign_cert"></span>**TLS \_ W \_ temp \_ SELFSIGN \_ CERT** (4009)
+<span id="TLS_W_TEMP_SELFSIGN_CERT"></span><span id="tls_w_temp_selfsign_cert"></span>**TLS \_ W \_ TEMP \_ SELFSIGN \_ CERT** (4009)
 
 
 </dt> <dd>
@@ -120,18 +120,18 @@ El certificado devuelto es temporal.
 
 <span id="TLS_E_ACCESS_DENIED"></span><span id="tls_e_access_denied"></span>
 
-<span id="TLS_E_ACCESS_DENIED"></span><span id="tls_e_access_denied"></span>**TLS \_ E \_ acceso \_ denegado** (5003)
+<span id="TLS_E_ACCESS_DENIED"></span><span id="tls_e_access_denied"></span>**TLS \_ ACCESO \_ \_ DENEGADO** (5003)
 
 
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
 <span id="TLS_E_ALLOCATE_HANDLE"></span><span id="tls_e_allocate_handle"></span>
 
-<span id="TLS_E_ALLOCATE_HANDLE"></span><span id="tls_e_allocate_handle"></span>**TLS \_ E \_ \_ identificador de asignación** (5007)
+<span id="TLS_E_ALLOCATE_HANDLE"></span><span id="tls_e_allocate_handle"></span>**TLS \_ E \_ ALLOCATE \_ HANDLE** (5007)
 
 
 </dt> <dd>
@@ -142,7 +142,7 @@ El servidor está demasiado ocupado para procesar la solicitud.
 
 <span id="TLS_E_NO_CERTIFICATE"></span><span id="tls_e_no_certificate"></span>
 
-<span id="TLS_E_NO_CERTIFICATE"></span><span id="tls_e_no_certificate"></span>**TLS \_ E \_ sin \_ certificado** (5022)
+<span id="TLS_E_NO_CERTIFICATE"></span><span id="tls_e_no_certificate"></span>**TLS \_ E \_ NO \_ CERTIFICATE** (5022)
 
 
 </dt> <dd>
@@ -153,18 +153,18 @@ No se puede recuperar un certificado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve los siguientes posibles valores devueltos.
+Esta función devuelve los siguientes valores devueltos posibles.
 
 <dl> <dt>
 
-**RPC \_ S \_ correcto**
+**RPC \_ S \_ OK**
 </dt> <dd>
 
-La llamada se realizó correctamente. Compruebe el valor del parámetro *pdwErrCode* para obtener el código de retorno de la llamada.
+La llamada se ha realiza correctamente. Compruebe el valor del *parámetro pdwErrCode* para obtener el código de retorno de la llamada.
 
 </dd> <dt>
 
-**\_ \_ argumento no válido de RPC S \_**
+**ARGUMENTO \_ RPC S NO \_ \_ VÁLIDO**
 </dt> <dd>
 
 El argumento no era válido.

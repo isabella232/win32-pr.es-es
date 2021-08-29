@@ -1,7 +1,7 @@
 ---
 description: Obtiene una descripción de la técnica.
 ms.assetid: 12122858-1e54-446c-8f12-20cc62499d74
-title: 'ID3DXBaseEffect:: GetTechniqueDesc (método) (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetTechniqueDesc (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 6027cf24576a29a1f447e5c20f99634c42adf00d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e7d2d317e49c1f883cf7b509eeeb59d435c6df29fcf213f06d0daf8999382cf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848635"
 ---
-# <a name="id3dxbaseeffectgettechniquedesc-method"></a>ID3DXBaseEffect:: GetTechniqueDesc (método)
+# <a name="id3dxbaseeffectgettechniquedesc-method"></a>Método ID3DXBaseEffect::GetTechniqueDesc
 
 Obtiene una descripción de la técnica.
 
@@ -41,16 +41,16 @@ HRESULT GetTechniqueDesc(
 
 <dl> <dt>
 
-*hTechnique* \[ de\]
+*hTechnique* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador de la técnica. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador de técnica. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pDesc* \[ enuncia\]
+*pDesc* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXTECHNIQUE \_ DESC**](d3dxtechnique-desc.md)\***
@@ -63,7 +63,7 @@ Devuelve una descripción de la técnica. Vea [**D3DXTECHNIQUE \_ DESC**](d3dxte
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

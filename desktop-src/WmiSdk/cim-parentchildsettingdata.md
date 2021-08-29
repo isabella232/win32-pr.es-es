@@ -1,8 +1,8 @@
 ---
-description: Asociación entre una instancia de CIM \_ VirtualSystemSettingData y la instancia de \_ VIRTUALSYSTEMSETTINGDATA de CIM que representa la instantánea más reciente en la que se basa este objeto.
+description: Asociación entre una instancia de CIM VirtualSystemSettingData y la instancia \_ de CIM VirtualSystemSettingData que representa la instantánea más reciente en la que se basa \_ este objeto.
 ms.assetid: f6e93c22-077b-4604-8d0d-9584b1f4dce1
 ms.tgt_platform: multiple
-title: CIM_ParentChildSettingData (clase)
+title: CIM_ParentChildSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,19 +18,19 @@ api_type:
 - Schema
 api_location:
 - Root\CIMV2
-ms.openlocfilehash: 9b2b866c3d5ae15d3f5a97c971e8efec75e9164c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2b6fa9dc11f7d5e17fbc74e24a079a56647bee37b7c0251a281b767797ab801c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244665"
 ---
-# <a name="cim_parentchildsettingdata-class"></a>\_Clase ParentChildSettingData de CIM
+# <a name="cim_parentchildsettingdata-class"></a>\_Cim ParentChildSettingData (clase)
 
-Asociación entre una instancia de [**CIM \_ VirtualSystemSettingData**](/previous-versions/windows/desktop/clushyperv/cim-virtualsystemsettingdata) y la instancia de **\_ VirtualSystemSettingData de CIM** que representa la instantánea más reciente en la que se basa este objeto.
+Asociación entre una instancia de [**CIM \_ VirtualSystemSettingData**](/previous-versions/windows/desktop/clushyperv/cim-virtualsystemsettingdata) y la instancia **de CIM \_ VirtualSystemSettingData** que representa la instantánea más reciente en la que se basa este objeto.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -50,20 +50,20 @@ class CIM_ParentChildSettingData : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ParentChildSettingData** tiene estos tipos de miembros:
+La **clase \_ ParentChildSettingData** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ParentChildSettingData** tiene estas propiedades.
+La **clase \_ ParentChildSettingData** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ManagedSystemElement de CIM**
+Tipo de datos: **CIM \_ ManagedSystemElement**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -71,7 +71,7 @@ Tipo de acceso: solo lectura
 
 Referencia al objeto independiente de esta asociación.
 
-Esta propiedad se hereda de [**la \_ dependencia CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Esta propiedad se hereda de la [**dependencia \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
 
 </dd> <dt>
 
@@ -88,18 +88,18 @@ Los datos de configuración del sistema virtual que representa el elemento secun
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ ManagedSystemElement de CIM**
+Tipo de datos: **CIM \_ ManagedSystemElement**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia al objeto que depende de la propiedad **antecedente** .
+Referencia al objeto que depende de la **propiedad Antecedente.**
 
-Esta propiedad se hereda de [**la \_ dependencia CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
+Esta propiedad se hereda de la [**dependencia \_ CIM**](/windows/desktop/CIMWin32Prov/cim-dependency).
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Tipo de datos: **CIM \_ VirtualSystemSettingData**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los datos de configuración de instantáneas en los que se basan los datos de configuración secundarios.
+Los datos de configuración de instantánea en los que se basan los datos de la configuración secundaria.
 
 </dd> </dl>
 
@@ -122,7 +122,7 @@ Los datos de configuración de instantáneas en los que se basan los datos de co
 
 | Requisito | Value |
 |----------------------|------------------------|
-| Espacio de nombres<br/> | Origen de \\ cimv2<br/> |
+| Espacio de nombres<br/> | \\CIMV2 raíz<br/> |
 
 
 
@@ -130,7 +130,7 @@ Los datos de configuración de instantáneas en los que se basan los datos de co
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](/windows/desktop/CIMWin32Prov/cim-dependency)
+[**Dependencia \_ cim**](/windows/desktop/CIMWin32Prov/cim-dependency)
 </dt> </dl>
 
  

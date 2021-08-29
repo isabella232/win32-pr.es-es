@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 704bdab1d486399b28117cd078f556beb1347f7b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2bc1bc3460f84340d52eeeb9518839e4a8655d0e2eb189af076750ea0011b3ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069295"
 ---
 # <a name="d3dxmatrixorthooffcenterlh-function-d3dx9mathh"></a>Función D3DXMatrixOrthoOffCenterLH (D3dx9math.h)
 
-Crea una matriz de proyección ortográfica personalizada y a la izquierda.
+Crea una matriz de proyección ortográfica a la izquierda personalizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,11 +60,11 @@ Puntero al [**D3DXMATRIX resultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor x mínimo del volumen de vista.
+Valor X mínimo del volumen de vista.
 
 </dd> <dt>
 
-*r* \[ en\]
+*r* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -82,7 +82,7 @@ Valor Y mínimo del volumen de vista.
 
 </dd> <dt>
 
-*t* \[ in\]
+*t* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -96,7 +96,7 @@ Valor Y máximo del volumen de vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z mínimo del volumen de vista.
+Valor Z mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -146,7 +146,7 @@ Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

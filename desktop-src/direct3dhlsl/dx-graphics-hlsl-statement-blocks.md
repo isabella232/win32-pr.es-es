@@ -1,6 +1,6 @@
 ---
 title: Bloques de instrucciones
-description: Un bloque de instrucciones contiene una o más instrucciones; cada instrucción se compone de expresiones y operadores.
+description: Un bloque de instrucciones contiene una o varias instrucciones; cada instrucción se forma de expresiones y operadores.
 ms.assetid: 083240ed-1ced-4b65-a01d-e207c2c3632f
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 46489085aeee72ba3538ddf02d5e22a902b0eb10
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f8ebdf6d0c41e2d7ef87b04d8c7433f91a0218215c192ac61e6dfbccd906dce5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068155"
 ---
 # <a name="statement-blocks"></a>Bloques de instrucciones
 
-Un bloque de instrucciones contiene una o más instrucciones; cada instrucción se compone de [expresiones](dx-graphics-hlsl-expressions.md) y [operadores](dx-graphics-hlsl-operators.md).
+Un bloque de instrucciones contiene una o varias instrucciones; cada instrucción se forma de [expresiones y](dx-graphics-hlsl-expressions.md) [operadores](dx-graphics-hlsl-operators.md).
 
 
 ```
@@ -32,7 +32,7 @@ Un bloque de instrucciones contiene una o más instrucciones; cada instrucción 
 
 
 
-Un bloque de instrucciones también indica subámbito. Las variables declaradas dentro de un bloque de instrucciones solo se reconocen dentro del bloque.
+Un bloque de instrucciones también indica subád ámbito. Las variables declaradas dentro de un bloque de instrucciones solo se reconocen dentro del bloque .
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -41,9 +41,9 @@ Un bloque de instrucciones también indica subámbito. Las variables declaradas 
 [Instrucciones (DirectX HLSL)](dx-graphics-hlsl-statements.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

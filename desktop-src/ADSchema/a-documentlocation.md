@@ -1,10 +1,10 @@
 ---
 title: atributo documentLocation
-description: El tipo de atributo documentLocation especifica la ubicación del documento original.
+description: El tipo de atributo documentLocation especifica la ubicación del original del documento.
 ms.assetid: e7d8e3d2-1238-4f34-9baa-abe41e007a23
 ms.tgt_platform: multiple
 keywords:
-- documentLocation esquema de AD de atributos
+- DocumentLocation attribute AD Schema (Esquema de AD del atributo documentLocation)
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 118bb91771503f2d524ab7f19e98ad0f149e23f5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 23757a72614f0a1d0daa349d4ff3bd72313db8a2ba5fe5e90b139914c244cb0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545095"
 ---
 # <a name="documentlocation-attribute"></a>atributo documentLocation
 
-El tipo de atributo documentLocation especifica la ubicación del documento original.
+El tipo de atributo documentLocation especifica la ubicación del original del documento.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | documentLocation                            |
-| Nombre para mostrar de LDAP | documentLocation                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | documentLocation                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.15                  |
-| System-ID-GUID    | b958b14e-ac6d-4ec4-8892-be70b69f7281        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | b958b14e-ac6d-4ec4-8892-be70b69f7281        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ El tipo de atributo documentLocation especifica la ubicación del documento orig
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ El tipo de atributo documentLocation especifica la ubicación del documento orig
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ El tipo de atributo documentLocation especifica la ubicación del documento orig
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ El tipo de atributo documentLocation especifica la ubicación del documento orig
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 
@@ -137,18 +137,18 @@ El tipo de atributo documentLocation especifica la ubicación del documento orig
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 1                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x00000000                                |
 | System-Flags           | 0x00000000                                |
-| Clases usadas en        | [**Document**](c-document.md)<br/> |
+| Clases usadas en        | [**Documento**](c-document.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad ripProgress de IWMPCdromRip
-description: La propiedad ripProgress obtiene el progreso de la copia de CD como porcentaje completado.
+title: IWMPCdromRip ripProgress, propiedad
+description: La propiedad ripProgress obtiene el progreso de la extracción de CD como porcentaje completado.
 ms.assetid: 00d4f074-a16d-4c5f-930f-4411b90303f1
 keywords:
-- propiedades de ripProgress Media Player de Windows
-- propiedad ripProgress de Windows Media Player, interfaz IWMPCdromRip
-- Interfaz IWMPCdromRip Windows Media Player, propiedad ripProgress
+- propiedad ripProgress Reproductor de Windows Media
+- Propiedad ripProgress Reproductor de Windows Media , interfaz IWMPCdromRip
+- Interfaz IWMPCdromRip Reproductor de Windows Media , propiedad ripProgress
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 113b9fc716698156aa4f7731a7b19888e0edf438
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea0d80a9eeed0246c48c142177bb4611c8666ca8b4f783d51f472dada2bbdbc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246755"
 ---
-# <a name="iwmpcdromripripprogress-property"></a>IWMPCdromRip:: ripProgress (propiedad)
+# <a name="iwmpcdromripripprogress-property"></a>Propiedad IWMPCdromRip::ripProgress
 
-La propiedad **ripProgress** obtiene el progreso de la copia de CD como porcentaje completado.
+La **propiedad ripProgress** obtiene el progreso de la extracción de CD como porcentaje completado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,11 +46,11 @@ Public ReadOnly Property ripProgress As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el valor de progreso. Los valores de progreso oscilan entre 0 y 100.
+**System.Int32 que** es el valor de progreso. Los valores de progreso van de 0 a 100.
 
 ## <a name="remarks"></a>Observaciones
 
-El valor de progreso representa el porcentaje completado de todo el proceso de copia. Para determinar el progreso de una pista concreta, use [IWMPMedia. getItemInfo](wmplibiwmpplaylist-iwmpplaylist-getiteminfo--vb-and-c.md) con **RipProgress** como nombre de atributo. Para obtener el índice de la pista que se está copiando actualmente, llame a IWMPPlaylist. getItemInfo con "CurrentRipTrackIndex" como nombre de atributo.
+El valor de progreso representa el porcentaje completado de todo el proceso de esión. Para determinar el progreso de una pista específica, use [IWMPMedia.getItemInfo](wmplibiwmpplaylist-iwmpplaylist-getiteminfo--vb-and-c.md) con **RipProgress** como nombre del atributo. Para obtener el índice de la pista que se está arrasando actualmente, llame a IWMPPlaylist.getItemInfo con "CurrentRipTrackIndex" como nombre del atributo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ El valor de progreso representa el porcentaje completado de todo el proceso de c
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -71,7 +71,7 @@ El valor de progreso representa el porcentaje completado de todo el proceso de c
 [**Interfaz IWMPCdromRip (VB y C#)**](iwmpcdromrip--vb-and-c.md)
 </dt> <dt>
 
-[**Copia desde CD**](ripping-a-cd.md)
+[**Arrasar un CD**](ripping-a-cd.md)
 </dt> </dl>
 
  

@@ -1,31 +1,31 @@
 ---
-title: Modificar el código generado por el asistente
-description: Modificar el código generado por el asistente
+title: Modificar código generado por el asistente
+description: Modificar código generado por el asistente
 ms.assetid: 391a7773-c3e2-499a-bb63-e5934537d963
 keywords:
-- Windows Media Player Mobile, Complementos
-- Windows Media Player Mobile, Complementos de la interfaz de usuario
-- Complementos móviles de Windows Media Player
+- Reproductor de Windows Media Móvil, complementos
+- Reproductor de Windows Media Dispositivos móviles, complementos de interfaz de usuario
+- Reproductor de Windows Media Complementos móviles
 - complementos, interfaz de usuario
-- complementos, Windows Media Player Mobile
-- Complementos de la interfaz de usuario, Windows Media Player Mobile
-- Complementos de la interfaz de usuario, Windows Media Player Mobile
+- complementos, Reproductor de Windows Media Mobile
+- complementos de interfaz de usuario, Reproductor de Windows Media Mobile
+- Complementos de interfaz de usuario, Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a83bda7cb265d0c2e039ada6d9d827c6da3faf63
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b2270acdf5472d502eba08ce9fe54b2864ddb7525895d6909bf1b3a5e3eba7d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134978"
 ---
-# <a name="modifying-wizard-generated-code"></a>Modificar el código generado por el asistente
+# <a name="modifying-wizard-generated-code"></a>Modificar código generado por el asistente
 
-Hay varios lugares en el código de complemento generado por el asistente que debe modificar antes de que el complemento funcione con Windows Media Player 10 Mobile. El código que debe modificar está en negrita en los ejemplos siguientes.
+Hay varios lugares en el código de complemento generado por el asistente que debe modificar para que el complemento funcione con Reproductor de Windows Media 10 Mobile. El código que debe modificar está en negrita en los ejemplos siguientes.
 
-## <a name="changes-to-wmpplugh"></a>Cambios en wmpplug. h
+## <a name="changes-to-wmpplugh"></a>Cambios en wmpplug.h
 
-Los métodos ANSI no se admiten en los dispositivos que ejecutan Windows CE, por lo que debe modificar el siguiente método ANSI generado por el asistente en wmpplug. h:
+Los métodos ANSI no se admiten en dispositivos que ejecutan Windows CE, por lo que debe modificar el siguiente método ANSI generado por el asistente en wmpplug.h:
 
 
 ```C++
@@ -34,7 +34,7 @@ return( ::PostMessage( HWND_BROADCAST, ::RegisterWindowMessageA( "WMPlayer_Plugi
 
 
 
-Modifíquelo como se muestra a continuación para que se convierta en un método Unicode:
+Puede modificarlo como se muestra a continuación para que se convierta en un método Unicode:
 
 
 ```C++
@@ -43,9 +43,9 @@ return( ::PostMessage( HWND_BROADCAST, ::RegisterWindowMessageW( L"WMPlayer_Plug
 
 
 
-## <a name="changes-to-networkpluginh"></a>Cambios en NetworkPlugin. h
+## <a name="changes-to-networkpluginh"></a>Cambios en NetworkPlugin.h
 
-Busque el siguiente código en NetworkPlugin. h:
+Busque el código siguiente en NetworkPlugin.h:
 
 
 ```C++
@@ -56,7 +56,7 @@ END_COM_MAP()
 
 
 
-Modifique el código para que tenga el aspecto siguiente:
+Modifique el código para que sea similar al siguiente:
 
 
 ```C++
@@ -68,9 +68,9 @@ END_COM_MAP()
 
 
 
-## <a name="changes-to-networkplugindllcpp"></a>Cambios en NetworkPlugindll. cpp
+## <a name="changes-to-networkplugindllcpp"></a>Cambios en NetworkPlugindll.cpp
 
-Busque la función **DllMain** en NetworkPlugindll. cpp:
+Busque la **función DllMain** en NetworkPlugindll.cpp:
 
 
 ```C++
@@ -89,7 +89,7 @@ extern "C" BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID /*lpR
 
 
 
-Modifique el código para que tenga el aspecto siguiente:
+Modifique el código para que sea similar al siguiente:
 
 
 ```C++
@@ -110,9 +110,9 @@ extern "C" BOOL WINAPI DllMain(HANDLE hInstance, DWORD dwReason, LPVOID /*lpRese
 
 
 
-## <a name="changes-to-networkplugincpp"></a>Cambios en NetworkPlugin. cpp
+## <a name="changes-to-networkplugincpp"></a>Cambios en NetworkPlugin.cpp
 
-Busque el siguiente código en NetworkPlugin. cpp:
+Busque el código siguiente en NetworkPlugin.cpp:
 
 
 ```C++
@@ -121,7 +121,7 @@ hr = m_spCore->QueryInterface(&spConnectionContainer);
 
 
 
-Modifique el código para que tenga el aspecto siguiente:
+Modifique el código para que sea similar al siguiente:
 
 
 ```C++
@@ -132,28 +132,28 @@ hr = m_spCore->QueryInterface(__uuidof(IConnectionPointContainer), (void**)&spCo
 
 ## <a name="change-the-threading-model"></a>Cambiar el modelo de subprocesos
 
-A diferencia de ATL para Windows, ATL para Windows CE no es compatible con el modelo de subprocesos de Apartamento porque el modelo de Apartamento requiere más recursos de memoria que los modelos de subprocesamiento único y de subprocesamiento libre. Por lo tanto, debe buscar todas las instancias de subprocesamiento de apartamento en StdAfx. h y NetworkPlugin. RGS y cambiarlas para indicar el subprocesamiento libre.
+A diferencia de ATL para Windows, ATL para Windows CE no admite el modelo de subprocesamiento de apartamento porque el modelo de apartamento requiere más recursos de memoria que los modelos de subprocesamiento único y subprocesamiento libre. Por lo tanto, debe encontrar todas las instancias de subprocesos de contenedor en StdAfx.h y NetworkPlugin.rgs y cambiarlas para indicar el subprocesamiento libre.
 
-Además, solo puede llamar al control de Windows Media Player 10 Mobile desde el subproceso en el que se creó.
+Además, solo puede llamar al control Reproductor de Windows Media 10 Mobile desde el subproceso en el que se creó.
 
-## <a name="build-and-test-the-project"></a>Compilar y probar el proyecto
+## <a name="build-and-test-the-project"></a>Compilar y probar el Project
 
-Después de realizar estos cambios, puede compilar el proyecto para comprobar que se compila antes de agregar cualquier código personalizado.
+Después de realizar estos cambios descritos aquí, puede compilar el proyecto para comprobar que se compila antes de agregar cualquier código personalizado.
 
-1.  Establezca la configuración del proyecto activo en Win32 (WCE ARMV4) debug o Win32 (WCE ARMV4).
+1.  Establezca la configuración del proyecto activo en La versión De depuración de Win32 (WCE ARMV4) o Win32 (WCE ARMV4).
 2.  Establezca la plataforma activa en Pocket PC 2003.
-3.  Haga clic en el elemento de menú **compilar** y, a continuación, seleccione **compilar NetworkPlugin.dll**. Debe compilar, descargar y registrarse en el dispositivo.
+3.  Haga clic en **el elemento** de menú Compilar y, a continuación, seleccione **Compilar NetworkPlugin.dll**. Debe compilar, descargar y registrarse en el dispositivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Crear un complemento de la interfaz de usuario para Windows Media Player 10 Mobile**](creating-a-user-interface-plug-in-for-windows-media-player-10-mobile.md)
+[**Creación de Interfaz de usuario complemento para Reproductor de Windows Media 10 Mobile**](creating-a-user-interface-plug-in-for-windows-media-player-10-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

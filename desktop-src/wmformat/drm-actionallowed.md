@@ -1,9 +1,9 @@
 ---
 title: DRM_ActionAllowed
-description: La \_ propiedad ActionAllowed de DRM es la cadena base para el otro \ 0034; ActionAllowed \ 0034; las constantes de cadena de propiedad, como DRM \_ ActionAllowed \_ CopyToCD, porque la acción \ 0034; permitida \ 0034; no es extensible, esta cadena base no se utiliza para las aplicaciones.
+description: La propiedad \_ ActionAllowed de DRM es la cadena base de la otra \ 0034; ActionAllowed \ 0034; Constantes de cadena de propiedad, como ACCIÓN DRMAllowed CopyToCD, dado que la propiedad \_ \ 0034;action allowed \ 0034; no es extensible, esta cadena base no es de uso para las \_ aplicaciones.
 ms.assetid: 618cbad5-143c-4229-b617-7b06e332fa69
 keywords:
-- DRM_ActionAllowed formato de Windows Media
+- DRM_ActionAllowed windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53e7fe57ac9ce0cd8f95d50caf8d267952076459
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a040e7e6ba1e6288b1d74b49ba96ac26b4343b2f224520a2bbdb021f9a169b91
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705645"
 ---
-# <a name="drm_actionallowed"></a>\_ACTIONALLOWED DRM
+# <a name="drm_actionallowed"></a>Acción \_ drmAllowed
 
-La **propiedad \_ ActionAllowed de DRM** es la cadena base para las demás constantes de cadena de propiedad "ActionAllowed", como DRM \_ ActionAllowed \_ CopyToCD, ya que la propiedad "Action allowed" no es extensible; esta cadena base no es de uso para las aplicaciones.
+La **propiedad \_ ActionAllowed** de DRM es la cadena base de las otras constantes de cadena de propiedad "ActionAllowed", como ACCIÓN DRMAllowed CopyToCD, ya que la propiedad "acción permitida" no es extensible, esta cadena base no es de uso para las \_ \_ aplicaciones.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -31,7 +31,7 @@ g \_ wszWMDRM \_ ActionAllowed
 
 Ningún tipo de datos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las propiedades "ActionAllowed" no son extensibles actualmente.
 
@@ -42,9 +42,9 @@ Las propiedades "ActionAllowed" no son extensibles actualmente.
 [**Propiedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

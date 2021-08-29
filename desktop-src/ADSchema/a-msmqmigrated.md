@@ -1,11 +1,11 @@
 ---
-title: MSMQ-Migrated atributo)
-description: El atributo MSMQ-Migrated contiene información de modo mixto de MSMQ.
+title: MSMQ-Migrated atributo
+description: El MSMQ-Migrated contiene información de modo mixto de MSMQ.
 ms.assetid: a1403cdd-7781-4329-ba49-bdc9ca067143
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de MSMQ-Migrated
-- mSMQMigrated esquema de AD de atributos
+- MSMQ-Migrated esquema de AD del atributo
+- Esquema de AD del atributo mSMQMigrated
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 655e398398b45f625d2ef8a56a5527206b1510fb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8c27599ce4d901b8d8f82332248b897b54f3932cd02497cbe96a42fd10576a68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066541"
 ---
-# <a name="msmq-migrated-attribute"></a>MSMQ-Migrated atributo)
+# <a name="msmq-migrated-attribute"></a>MSMQ-Migrated atributo
 
-El atributo **MSMQ-migrated** contiene información de modo mixto de MSMQ.
+El **atributo MSMQ-Migrated contiene** información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Migrated                        |
-| Nombre para mostrar de LDAP | mSMQMigrated                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | mSMQMigrated                         |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.952               |
-| System-ID-GUID    | 9a0dc33f-c100-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 9a0dc33f-c100-11d1-él5-0080c76670c0 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -53,20 +53,20 @@ El atributo **MSMQ-migrated** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Configuración de MSMQ**](c-msmqsettings.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuración**](c-msmqsettings.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ El atributo **MSMQ-migrated** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Configuración de MSMQ**](c-msmqsettings.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuración**](c-msmqsettings.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ El atributo **MSMQ-migrated** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Configuración de MSMQ**](c-msmqsettings.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuración**](c-msmqsettings.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ El atributo **MSMQ-migrated** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Configuración de MSMQ**](c-msmqsettings.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuración**](c-msmqsettings.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ El atributo **MSMQ-migrated** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Configuración de MSMQ**](c-msmqsettings.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuración**](c-msmqsettings.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ El atributo **MSMQ-migrated** contiene información de modo mixto de MSMQ.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------|
-| Identificador de vínculo                | \-                                                 |
+| Id. de vínculo                | \-                                                 |
 | MAPI-Id                | \-                                                 |
-| System-Only            | False                                              |
-| Tiene un único valor       | True                                               |
-| Está indexado             | False                                              |
-| En el catálogo global      | False                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                       |
+| System-Only            | Falso                                              |
+| Es de un solo valor       | Verdadero                                               |
+| Está indexado             | Falso                                              |
+| En el catálogo global      | Falso                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Clases usadas en        | [**Configuración de MSMQ**](c-msmqsettings.md)<br/> |
+| Clases usadas en        | [**MSMQ-Configuración**](c-msmqsettings.md)<br/> |
 
 
 

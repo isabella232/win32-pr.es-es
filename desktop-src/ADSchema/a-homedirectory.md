@@ -1,11 +1,11 @@
 ---
-title: Home-Directory atributo)
-description: Directorio particular de la cuenta.
+title: Home-Directory atributo
+description: Directorio principal de la cuenta.
 ms.assetid: 7fd431f2-f2e0-476f-82ed-04f776c234eb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Home-Directory
-- homeDirectory esquema de AD de atributos
+- Home-Directory esquema de AD del atributo
+- Esquema de AD del atributo homeDirectory
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 070285336284e6d07b6333d28eff5c85c4dc6c5a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b7ef4ef612bfb2e91184d0e442115f712496f8bd788bb441bba7e7caa388031b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119305235"
 ---
-# <a name="home-directory-attribute"></a>Home-Directory atributo)
+# <a name="home-directory-attribute"></a>Home-Directory atributo
 
-Directorio particular de la cuenta. Si [**HOMEDRIVE**](a-homedrive.md) se establece y especifica una letra de unidad, **HomeDirectory** debe ser una ruta de acceso UNC. De lo contrario, **HomeDirectory** es una ruta de acceso local completa que incluye la letra de unidad (por ejemplo, *letraDeUnidad ***: \\** carpeta del _directorio_* _\\_ * ). Este valor puede ser una cadena nula.
+Directorio principal de la cuenta. Si [**homeDrive**](a-homedrive.md) está establecido y especifica una letra de unidad, **homeDirectory** debe ser una ruta de acceso UNC. De lo contrario, **homeDirectory** es una ruta de acceso local completa que incluye la letra de unidad (por ejemplo, *DriveLetter*:**\\ carpeta**_de_* _\\_ * _directorios)._ Este valor puede ser una cadena null.
 
 
 
 | Entrada | Value |
 |-------------------|------------------------------------------------------------------------------------|
 | CN                | Home-Directory                                                                     |
-| Nombre para mostrar de LDAP | homeDirectory                                                                      |
-| Tamaño              | \-                                                                                 |
-| Actualizar privilegio  | Administrador de dominio                                                               |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el directorio particular. |
+| Ldap-Display-Name | homeDirectory                                                                      |
+| Size              | \-                                                                                 |
+| Privilegio actualizar  | Administrador de dominio                                                               |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el directorio principal. |
 | Attribute-Id      | 1.2.840.113556.1.4.44                                                              |
-| System-ID-GUID    | bf967985-0de6-11d0-a285-00aa003049e2                                               |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                        |
+| System-Id-Guid    | bf967985-0de6-11d0-a285-00aa003049e2                                               |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                        |
 
 
 
@@ -55,18 +55,18 @@ Directorio particular de la cuenta. Si [**HOMEDRIVE**](a-homedrive.md) se establ
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Directorio particular de la cuenta. Si [**HOMEDRIVE**](a-homedrive.md) se establ
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Directorio particular de la cuenta. Si [**HOMEDRIVE**](a-homedrive.md) se establ
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                  |
+| Id. de vínculo                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
-| System-Only            | False                                                                               |
-| Tiene un único valor       | True                                                                                |
-| Está indexado             | False                                                                               |
-| En el catálogo global      | False                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                        |
+| System-Only            | Falso                                                                               |
+| Es de un solo valor       | Verdadero                                                                                |
+| Está indexado             | Falso                                                                               |
+| En el catálogo global      | Falso                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000010                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Clases usadas en        | [**User**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Directorio particular de la cuenta. Si [**HOMEDRIVE**](a-homedrive.md) se establ
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                  |
+| Id. de vínculo                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
-| System-Only            | False                                                                               |
-| Tiene un único valor       | True                                                                                |
-| Está indexado             | False                                                                               |
-| En el catálogo global      | False                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                        |
+| System-Only            | Falso                                                                               |
+| Es de un solo valor       | Verdadero                                                                                |
+| Está indexado             | Falso                                                                               |
+| En el catálogo global      | Falso                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000010                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Clases usadas en        | [**User**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Directorio particular de la cuenta. Si [**HOMEDRIVE**](a-homedrive.md) se establ
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                  |
+| Id. de vínculo                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
-| System-Only            | False                                                                               |
-| Tiene un único valor       | True                                                                                |
-| Está indexado             | False                                                                               |
-| En el catálogo global      | False                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                        |
+| System-Only            | Falso                                                                               |
+| Es de un solo valor       | Verdadero                                                                                |
+| Está indexado             | Falso                                                                               |
+| En el catálogo global      | Falso                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000010                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Clases usadas en        | [**User**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
@@ -160,22 +160,22 @@ Directorio particular de la cuenta. Si [**HOMEDRIVE**](a-homedrive.md) se establ
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                  |
+| Id. de vínculo                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
-| System-Only            | False                                                                               |
-| Tiene un único valor       | True                                                                                |
-| Está indexado             | False                                                                               |
-| En el catálogo global      | False                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                        |
+| System-Only            | Falso                                                                               |
+| Es de un solo valor       | Verdadero                                                                                |
+| Está indexado             | Falso                                                                               |
+| En el catálogo global      | Falso                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000010                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Clases usadas en        | [**User**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> [**posixAccount**](c-posixaccount.md)<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-title: Identificadores de tipo de punto de referencia (UIAutomationClient. h)
-description: En este tema se describen las constantes con nombre que se usan para identificar los tipos de puntos de referencia de Microsoft UI Automation.
+title: Identificadores de tipo de punto de referencia (UIAutomationClient.h)
+description: En este tema se describen las constantes con nombre que se usan para identificar los tipos Automatización de la interfaz de usuario punto de referencia de Microsoft.
 ms.assetid: 73A34568-25DA-4E70-BB2A-725135E6860B
 topic_type:
 - apiref
@@ -16,20 +16,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6e0a926d5a6d894a9657b0ec8bc9f93638f090a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87cc838073588bea54f2eb0838032753f4a007d39557e1c657b2abc0e812eaf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133848"
 ---
-# <a name="landmark-type-identifiers"></a>Identificadores de tipos de puntos de referencia
+# <a name="landmark-type-identifiers"></a>Identificadores de tipo de punto de referencia
 
-En este tema se describen las constantes con nombre que se usan para identificar los tipos de puntos de referencia de Microsoft UI Automation.
+En este tema se describen las constantes con nombre que se usan para identificar los tipos Automatización de la interfaz de usuario punto de referencia de Microsoft.
 
 <dl> <dt>
 
-<span id="UIA_CustomLandmarkTypeId"></span><span id="uia_customlandmarktypeid"></span><span id="UIA_CUSTOMLANDMARKTYPEID"></span>**UIA \_ CustomLandmarkTypeId**
+<span id="UIA_CustomLandmarkTypeId"></span><span id="uia_customlandmarktypeid"></span><span id="UIA_CUSTOMLANDMARKTYPEID"></span>**CustomLandmarkTypeId de UIA \_**
 </dt> <dd> <dl> <dt>
 
 80000
@@ -37,7 +37,7 @@ En este tema se describen las constantes con nombre que se usan para identificar
 
 
 
-Indica que se debe usar una cadena personalizada para describir el punto de referencia usando el valor de [**UIA \_ LocalizedLandmarkTypePropertyId**](uiauto-automation-element-propids.md).
+Indica que se debe usar una cadena personalizada para describir el punto de referencia mediante el valor de [**UIA \_ LocalizedLandmarkTypePropertyId**](uiauto-automation-element-propids.md).
 
 
 </dt> </dl> </dd> <dt>
@@ -50,12 +50,12 @@ Indica que se debe usar una cadena personalizada para describir el punto de refe
 
 
 
-Indica que el punto de referencia está relacionado con los elementos de tipo de formulario que se suelen usar para la entrada de datos.
+Indica que el punto de referencia está relacionado con los elementos de tipo de formulario que se usan normalmente para la entrada de datos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="UIA_MainLandmarkTypeId"></span><span id="uia_mainlandmarktypeid"></span><span id="UIA_MAINLANDMARKTYPEID"></span>**UIA \_ MainLandmarkTypeId**
+<span id="UIA_MainLandmarkTypeId"></span><span id="uia_mainlandmarktypeid"></span><span id="UIA_MAINLANDMARKTYPEID"></span>**MainLandmarkTypeId de UIA \_**
 </dt> <dd> <dl> <dt>
 
 80002
@@ -63,7 +63,7 @@ Indica que el punto de referencia está relacionado con los elementos de tipo de
 
 
 
-Indica que el punto de referencia es para el contenido principal y no es una prioridad menor.
+Indica que el punto de referencia es para el contenido principal y no para el secundario o una prioridad menor.
 
 
 </dt> </dl> </dd> <dt>
@@ -100,9 +100,9 @@ Indica que el punto de referencia está relacionado con los elementos de tipo de
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                            |
-| Encabezado<br/>                   | <dl> <dt>UIAutomationClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                            |
+| Header<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

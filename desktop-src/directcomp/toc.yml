@@ -3,31 +3,31 @@
   items:
     - name: ¿Por qué usar DirectComposition?
       href: why-use-directcomposition-.md
-    - name: Cómo usar DirectComposition
+    - name: Uso de DirectComposition
       href: how-to-use-directcomposition.md
       items:
-        - name: Prácticas recomendadas para DirectComposition
+        - name: Procedimientos recomendados para DirectComposition
           href: best-practices-for-directcomposition.md
-        - name: Cómo inicializar DirectComposition
+        - name: Inicialización de DirectComposition
           href: initialize-directcomposition.md
-        - name: Cómo compilar un árbol visual sencillo
+        - name: Cómo crear un árbol visual simple
           href: how-to--build-a-visual-tree.md
         - name: Cómo recortar con un objeto de recorte de rectángulo
           href: how-to--set-the-clip-rectangle-for-a-visual.md
         - name: Cómo aplicar transformaciones 2D
           href: apply-2d-transforms.md
-        - name: Cómo aplicar efectos
+        - name: Aplicación de efectos
           href: how-to--apply-transforms-and-effects-to-a-visual.md
         - name: Cómo aplicar animaciones
           href: how-to--animate-a-visual.md
-        - name: Cómo animar el mapa de bits de una ventana secundaria superpuesta
+        - name: Cómo animar el mapa de bits de una ventana secundaria en capas
           href: how-to--animate-the-bitmap-of-a-layered-child-window.md
     - name: Conceptos de DirectComposition
       href: directcomposition-concepts.md
       items:
         - name: Conceptos básicos
           href: basic-concepts.md
-        - name: Objetos Bitmap
+        - name: Objetos de mapa de bits
           href: bitmap-surfaces.md
         - name: Superficie de composición
           href: composition-surface.md
@@ -44,7 +44,7 @@
     - name: Referencia de DirectComposition
       href: reference.md
       items:
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: DCompositionAttachMouseDragToHwnd
@@ -234,7 +234,7 @@
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform
                 - name: Método CreateScaleTransform3D
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform3d
-                - name: Método CreateSkewTransform
+                - name: Método CreateTransformwTransform
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createskewtransform
                 - name: Método CreateSurface
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createsurface
@@ -283,7 +283,7 @@
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createscaletransform
                 - name: Método CreateScaleTransform3D
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createscaletransform3d
-                - name: Método CreateSkewTransform
+                - name: Método CreateTransformwTransform
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createskewtransform
                 - name: Método CreateSurface
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createsurface
@@ -339,9 +339,9 @@
             - name: IDCompositionDeviceDebug
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositiondevicedebug
               items:
-                - name: Método DisableDebugCounters
+                - name: DisableDebugCounters (método)
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevicedebug-disabledebugcounters
-                - name: Método EnableDebugCounters
+                - name: EnableDebugCounters (método)
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevicedebug-enabledebugcounters
             - name: IDCompositionEffect
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositioneffect
@@ -351,9 +351,9 @@
                 - name: Métodos SetOpacity
                   href: idcompositioneffectgroup-setopacity-overloaded.md
                   items:
-                    - name: SetOpacity (float) (método)
+                    - name: Método SetOpacity(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositioneffectgroup-setopacity(float)
-                    - name: SetOpacity (IDCompositionAnimation) (método)
+                    - name: Método SetOpacity(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositioneffectgroup-setopacity(idcompositionanimation)
                 - name: Método SetTransform3D
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositioneffectgroup-settransform3d
@@ -466,9 +466,9 @@
                 - name: Métodos SetMatrixElement
                   href: /previous-versions/windows/desktop/legacy/hh437433(v=vs.85)
                   items:
-                    - name: 'Método SetMatrixElement (int, int, float)'
+                    - name: 'Método SetMatrixElement(int, int, float)'
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionmatrixtransform-setmatrixelement(int_int_float)
-                    - name: 'Método SetMatrixElement (int, int, IDCompositionAnimation)'
+                    - name: 'Método SetMatrixElement(int, int, IDCompositionAnimation)'
                       href: idcompositionmatrixtransform-setmatrixelement-idcompositionanimation.md
             - name: IDCompositionMatrixTransform3D
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionmatrixtransform3d
@@ -478,9 +478,9 @@
                 - name: Métodos SetMatrixElement
                   href: /previous-versions/windows/desktop/legacy/hh437429(v=vs.85)
                   items:
-                    - name: 'Método SetMatrixElement (int, int, float)'
+                    - name: 'Método SetMatrixElement(int, int, float)'
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionmatrixtransform3d-setmatrixelement(int_int_float)
-                    - name: 'Método SetMatrixElement (int, int, IDCompositionAnimation)'
+                    - name: 'Método SetMatrixElement(int, int, IDCompositionAnimation)'
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionmatrixtransform3d-setmatrixelement(int_int_idcompositionanimation)
             - name: IDCompositionRectangleClip
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionrectangleclip
@@ -488,86 +488,86 @@
                 - name: Métodos SetBottom
                   href: idcompositionrectangleclip-setbottom-overloaded.md
                   items:
-                    - name: SetBottom (float) (método)
+                    - name: Método SetBottom(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottom(idcompositionanimation)
-                    - name: Método SetBottom (IDCompositionAnimation)
+                    - name: Método SetBottom(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottom(idcompositionanimation)
                 - name: Métodos SetBottomLeftRadiusX
                   href: idcompositionrectangleclip-setbottomleftradiusx.md
                   items:
-                    - name: SetBottomLeftRadiusX (float) (método)
+                    - name: Método SetBottomLeftRadiusX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomleftradiusx(idcompositionanimation)
-                    - name: Método SetBottomLeftRadiusX (IDCompositionAnimation)
+                    - name: Método SetBottomLeftRadiusX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomleftradiusx(idcompositionanimation)
                 - name: Métodos SetBottomLeftRadiusY
                   href: idcompositionrectangleclip-setbottomleftradiusy.md
                   items:
-                    - name: SetBottomLeftRadiusY (float) (método)
+                    - name: Método SetBottomLeftRadiusY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomleftradiusy(idcompositionanimation)
-                    - name: Método SetBottomLeftRadiusY (IDCompositionAnimation)
+                    - name: Método SetBottomLeftRadiusY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomleftradiusy(idcompositionanimation)
                 - name: Métodos SetBottomRightRadiusX
                   href: idcompositionrectangleclip-setbottomrightradiusx.md
                   items:
-                    - name: SetBottomRightRadiusX (float) (método)
+                    - name: Método SetBottomRightRadiusX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusx(idcompositionanimation)
-                    - name: Método SetBottomRightRadiusX (IDCompositionAnimation)
+                    - name: Método SetBottomRightRadiusX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusx(idcompositionanimation)
                 - name: Métodos SetBottomRightRadiusY
                   href: idcompositionrectangleclip-setbottomrightradiusy.md
                   items:
-                    - name: SetBottomRightRadiusY (float) (método)
+                    - name: Método SetBottomRightRadiusY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusy(idcompositionanimation)
-                    - name: Método SetBottomRightRadiusY (IDCompositionAnimation)
+                    - name: Método SetBottomRightRadiusY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setbottomrightradiusy(idcompositionanimation)
                 - name: Métodos SetLeft
                   href: idcompositionrectangleclip-setleft-overloaded.md
                   items:
-                    - name: SetLeft (float) (método)
+                    - name: Método SetLeft(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setleft(float)
-                    - name: Método SetLeft (IDCompositionAnimation)
+                    - name: Método SetLeft(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setleft(idcompositionanimation)
                 - name: Métodos SetRight
                   href: idcompositionrectangleclip-setright-overloaded.md
                   items:
-                    - name: SetRight (float) (método)
+                    - name: Método SetRight(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setright(idcompositionanimation)
-                    - name: Método SetRight (IDCompositionAnimation)
+                    - name: Método SetRight(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-setright(idcompositionanimation)
                 - name: Métodos SetTop
                   href: idcompositionrectangleclip-settop-overloaded.md
                   items:
-                    - name: SetTop (float) (método)
+                    - name: Método SetTop(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settop(idcompositionanimation)
-                    - name: Método SetTop (IDCompositionAnimation)
+                    - name: Método SetTop(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settop(idcompositionanimation)
                 - name: Métodos SetTopLeftRadiusX
                   href: idcompositionrectangleclip-settopleftradiusx.md
                   items:
-                    - name: SetTopLeftRadiusX (float) (método)
+                    - name: Método SetTopLeftRadiusX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusx(idcompositionanimation)
-                    - name: Método SetTopLeftRadiusX (IDCompositionAnimation)
+                    - name: Método SetTopLeftRadiusX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusx(idcompositionanimation)
                 - name: Métodos SetTopLeftRadiusY
                   href: idcompositionrectangleclip-settopleftradiusy.md
                   items:
-                    - name: SetTopLeftRadiusY (float) (método)
+                    - name: Método SetTopLeftRadiusY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusy(idcompositionanimation)
-                    - name: Método SetTopLeftRadiusY (IDCompositionAnimation)
+                    - name: Método SetTopLeftRadiusY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusy(idcompositionanimation)
                 - name: Métodos SetTopRightRadiusX
                   href: idcompositionrectangleclip-settoprightradiusx.md
                   items:
-                    - name: SetTopRightRadiusX (float) (método)
+                    - name: Método SetTopRightRadiusX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settoprightradiusx(idcompositionanimation)
-                    - name: Método SetTopRightRadiusX (IDCompositionAnimation)
+                    - name: Método SetTopRightRadiusX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settoprightradiusx(idcompositionanimation)
                 - name: Métodos SetTopRightRadiusY
                   href: idcompositionrectangleclip-settoprightradiusy.md
                   items:
-                    - name: SetTopRightRadiusY (float) (método)
+                    - name: Método SetTopRightRadiusY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settoprightradiusy(idcompositionanimation)
-                    - name: Método SetTopRightRadiusY (IDCompositionAnimation)
+                    - name: Método SetTopRightRadiusY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrectangleclip-settoprightradiusy(idcompositionanimation)
             - name: IDCompositionRotateTransform
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionrotatetransform
@@ -575,23 +575,23 @@
                 - name: Métodos SetAngle
                   href: /previous-versions/windows/desktop/legacy/hh448976(v=vs.85)
                   items:
-                    - name: SetAngle (float) (método)
+                    - name: Método SetAngle(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setangle(float)
-                    - name: Método SetAngle (IDCompositionAnimation)
+                    - name: Método SetAngle(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setangle(idcompositionanimation)
                 - name: Métodos SetCenterX
                   href: idcompositionskewtransform-setcenterx-overloaded.md
                   items:
-                    - name: SetCenterX (float) (método)
+                    - name: Método SetCenterX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setcenterx(idcompositionanimation)
-                    - name: Método SetCenterX (IDCompositionAnimation)
+                    - name: Método SetCenterX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setcenterx(idcompositionanimation)
                 - name: Métodos SetCenterY
                   href: idcompositionskewtransform-setcentery-overloaded.md
                   items:
-                    - name: SetCenterY (float) (método)
+                    - name: Método SetCenterY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setcentery(idcompositionanimation)
-                    - name: Método SetCenterY (IDCompositionAnimation)
+                    - name: Método SetCenterY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setcentery(idcompositionanimation)
             - name: IDCompositionSaturationEffect
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionsaturationeffect
@@ -611,49 +611,49 @@
                   items:
                     - name: Método SetAngle
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setangle(float)
-                    - name: Método SetAngle (IDCompositionAnimation)
+                    - name: Método SetAngle(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setangle(idcompositionanimation)
                 - name: Métodos SetAxisX
                   href: idcompositionrotatetransform3d-setaxisx-overloaded.md
                   items:
-                    - name: SetAxisX (float) (método)
+                    - name: Método SetAxisX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisx(idcompositionanimation)
-                    - name: Método SetAxisX (IDCompositionAnimation)
+                    - name: Método SetAxisX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisx(idcompositionanimation)
                 - name: Métodos SetAxisY
                   href: idcompositionrotatetransform3d-setaxisy-overloaded.md
                   items:
-                    - name: SetAxisY (float) (método)
+                    - name: Método SetAxisY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisy(idcompositionanimation)
-                    - name: Método SetAxisY (IDCompositionAnimation)
+                    - name: Método SetAxisY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisy(idcompositionanimation)
                 - name: Métodos SetAxisZ
                   href: idcompositionrotatetransform3d-setaxisz-overloaded.md
                   items:
-                    - name: SetAxisZ (float) (método)
+                    - name: Método SetAxisZ(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisz(idcompositionanimation)
-                    - name: Método SetAxisZ (IDCompositionAnimation)
+                    - name: Método SetAxisZ(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisz(idcompositionanimation)
                 - name: Métodos SetCenterX
                   href: idcompositionrotatetransform3d-setcenterx-overloaded.md
                   items:
-                    - name: SetCenterX (float) (método)
+                    - name: Método SetCenterX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterx(idcompositionanimation)
-                    - name: Método SetCenterX (IDCompositionAnimation)
+                    - name: Método SetCenterX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterx(idcompositionanimation)
                 - name: Métodos SetCenterY
                   href: idcompositionrotatetransform3d-setcentery-overloaded.md
                   items:
-                    - name: SetCenterY (float) (método)
+                    - name: Método SetCenterY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(idcompositionanimation)
-                    - name: Método SetCenterY (IDCompositionAnimation)
+                    - name: Método SetCenterY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcentery(idcompositionanimation)
-                - name: Métodos SetCenterZ
+                - name: Métodos setCenterZ
                   href: idcompositionscaletransform3d-setcenterz-overloaded.md
                   items:
-                    - name: SetCenterZ (float) (método)
+                    - name: Método SetCenterZ(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterz(idcompositionanimation)
-                    - name: Método SetCenterZ (IDCompositionAnimation)
+                    - name: Método SetCenterZ(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterz(idcompositionanimation)
             - name: IDCompositionScaleTransform
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionscaletransform
@@ -661,106 +661,106 @@
                 - name: Métodos SetCenterX
                   href: /previous-versions/windows/desktop/legacy/hh449036(v=vs.85)
                   items:
-                    - name: SetCenterX (float) (método)
+                    - name: Método SetCenterX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setcenterx(idcompositionanimation)
-                    - name: Método SetCenterX (IDCompositionAnimation)
+                    - name: Método SetCenterX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setcenterx(idcompositionanimation)
                 - name: Métodos SetCenterY
                   href: /previous-versions/windows/desktop/legacy/hh449042(v=vs.85)
                   items:
-                    - name: SetCenterY (float) (método)
+                    - name: Método SetCenterY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setcentery(idcompositionanimation)
-                    - name: Método SetCenterY (IDCompositionAnimation)
+                    - name: Método SetCenterY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setcentery(idcompositionanimation)
                 - name: Métodos SetScaleX
                   href: idcompositionscaletransform3d-setscalex-overloaded.md
                   items:
-                    - name: SetScaleX (float) (método)
+                    - name: Método SetScaleX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setscalex(float)
-                    - name: Método SetScaleX (IDCompositionAnimation)
+                    - name: Método SetScaleX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setscalex(idcompositionanimation)
                 - name: Métodos SetScaleY
                   href: idcompositionscaletransform3d-setscaley-overloaded.md
                   items:
-                    - name: SetScaleY (float) (método)
+                    - name: Método SetScaleY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setscaley(idcompositionanimation)
-                    - name: Método SetScaleY (IDCompositionAnimation)
+                    - name: Método SetScaleY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform-setscaley(idcompositionanimation)
             - name: IDCompositionScaleTransform3D
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionscaletransform3d
               items:
-                - name: Métodos SetCenterX
+                - name: Métodos setCenterX
                   href: /previous-versions/windows/desktop/legacy/hh448998(v=vs.85)
                   items:
-                    - name: SetCenterX (float) (método)
+                    - name: Método SetCenterX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterx(idcompositionanimation)
-                    - name: Método SetCenterX (IDCompositionAnimation)
+                    - name: Método SetCenterX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterx(idcompositionanimation)
-                - name: Métodos SetCenterY
+                - name: Métodos setCenterY
                   href: /previous-versions/windows/desktop/legacy/hh449006(v=vs.85)
                   items:
-                    - name: SetCenterY (float) (método)
+                    - name: Método SetCenterY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcentery(idcompositionanimation)
-                    - name: Método SetCenterY (IDCompositionAnimation)
+                    - name: Método SetCenterY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcentery(idcompositionanimation)
-                - name: Métodos SetCenterZ
+                - name: Métodos setCenterZ
                   href: /previous-versions/windows/desktop/legacy/hh449012(v=vs.85)
                   items:
-                    - name: SetCenterZ (float) (método)
+                    - name: Método SetCenterZ(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterz(idcompositionanimation)
-                    - name: Método SetCenterZ (IDCompositionAnimation)
+                    - name: Método SetCenterZ(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setcenterz(idcompositionanimation)
                 - name: Métodos SetScaleX
                   href: idcompositionscaletransform3d-setscalex-overloaded.md
                   items:
-                    - name: SetScaleX (float) (método)
+                    - name: Método SetScaleX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalex(float)
-                    - name: Método SetScaleX (IDCompositionAnimation)
+                    - name: Método SetScaleX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalex(idcompositionanimation)
                 - name: Métodos SetScaleY
                   href: idcompositionscaletransform3d-setscaley-overloaded.md
                   items:
-                    - name: SetScaleY (float) (método)
+                    - name: Método SetScaleY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscaley(idcompositionanimation)
-                    - name: Método SetScaleY (IDCompositionAnimation)
+                    - name: Método SetScaleY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscaley(idcompositionanimation)
                 - name: Métodos SetScaleZ
                   href: idcompositionscaletransform3d-setscalez-overloaded.md
                   items:
-                    - name: SetScaleZ (float) (método)
+                    - name: Método SetScaleZ(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalez(idcompositionanimation)
-                    - name: Método SetScaleZ (IDCompositionAnimation)
+                    - name: Método SetScaleZ(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionscaletransform3d-setscalez(idcompositionanimation)
-            - name: IDCompositionSkewTransform
+            - name: IDCompositionTransform
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionskewtransform
               items:
                 - name: Métodos SetAngleX
                   href: idcompositionskewtransform-setanglex-overloaded.md
                   items:
-                    - name: SetAngleX (float) (método)
+                    - name: Método SetAngleX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setanglex(float)
-                    - name: Método SetAngleX (IDCompositionAnimation)
+                    - name: Método SetAngleX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setanglex(idcompositionanimation)
                 - name: Métodos SetAngleY
                   href: idcompositionskewtransform-setangley-overloaded.md
                   items:
-                    - name: SetAngleY (float) (método)
+                    - name: Método SetAngleY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(idcompositionanimation)
-                    - name: Método SetAngleY (IDCompositionAnimation)
+                    - name: Método SetAngleY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setangley(idcompositionanimation)
-                - name: Métodos SetCenterX
+                - name: Métodos setCenterX
                   href: /previous-versions/windows/desktop/legacy/hh449075(v=vs.85)
                   items:
-                    - name: SetCenterX (float) (método)
+                    - name: Método SetCenterX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setcenterx(idcompositionanimation)
-                    - name: Método SetCenterX (IDCompositionAnimation)
+                    - name: Método SetCenterX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setcenterx(idcompositionanimation)
-                - name: Métodos SetCenterY
+                - name: Métodos setCenterY
                   href: /previous-versions/windows/desktop/legacy/hh449081(v=vs.85)
                   items:
-                    - name: SetCenterY (float) (método)
+                    - name: Método SetCenterY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setcentery(idcompositionanimation)
-                    - name: Método SetCenterY (IDCompositionAnimation)
+                    - name: Método SetCenterY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionskewtransform-setcentery(idcompositionanimation)
             - name: IDCompositionShadowEffect
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionshadoweffect
@@ -805,13 +805,13 @@
             - name: IDCompositionSurface
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionsurface
               items:
-                - name: BeginDraw (método)
+                - name: Método BeginDraw
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionsurface-begindraw
                 - name: Método EndDraw
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionsurface-enddraw
                 - name: Método ResumeDraw
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionsurface-resumedraw
-                - name: Scroll (método)
+                - name: Método Scroll
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionsurface-scroll
                 - name: Método SuspendDraw
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionsurface-suspenddraw
@@ -886,16 +886,16 @@
                 - name: Métodos SetOffsetX
                   href: idcompositionvisual-setoffsetx-overloaded.md
                   items:
-                    - name: SetOffsetX (float) (método)
+                    - name: Método SetOffsetX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform-setoffsetx(float)
-                    - name: Método SetOffsetX (IDCompositionAnimation)
+                    - name: Método SetOffsetX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform-setoffsetx(idcompositionanimation)
                 - name: Métodos SetOffsetY
                   href: idcompositionvisual-setoffsety-overloaded.md
                   items:
-                    - name: SetOffsetY (float) (método)
+                    - name: Método SetOffsetY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform-setoffsety(idcompositionanimation)
-                    - name: Método SetOffsetY (IDCompositionAnimation)
+                    - name: Método SetOffsetY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform-setoffsety(idcompositionanimation)
             - name: IDCompositionTurbulenceEffect
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionturbulenceeffect
@@ -910,7 +910,7 @@
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionturbulenceeffect-setoffset
                 - name: Método SetSeed
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionturbulenceeffect-setseed
-                - name: SetSize (método)
+                - name: Método SetSize
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionturbulenceeffect-setsize
                 - name: Método SetStitchable
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionturbulenceeffect-setstitchable
@@ -920,28 +920,28 @@
                 - name: Métodos SetOffsetX
                   href: idcompositionvisual-setoffsetx-overloaded.md
                   items:
-                    - name: SetOffsetX (float) (método)
+                    - name: Método SetOffsetX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetx(float)
-                    - name: Método SetOffsetX (IDCompositionAnimation)
+                    - name: Método SetOffsetX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetx(idcompositionanimation)
                 - name: Métodos SetOffsetY
                   href: idcompositionvisual-setoffsety-overloaded.md
                   items:
-                    - name: SetOffsetY (float) (método)
+                    - name: Método SetOffsetY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsety(idcompositionanimation)
-                    - name: Método SetOffsetY (IDCompositionAnimation)
+                    - name: Método SetOffsetY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsety(idcompositionanimation)
                 - name: Métodos SetOffsetZ
                   href: idcompositionvisual3-setoffsetz-overloaded.md
                   items:
-                    - name: SetOffsetZ (float) (método)
+                    - name: Método SetOffsetZ(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetz(idcompositionanimation)
-                    - name: Método SetOffsetZ (IDCompositionAnimation)
+                    - name: Método SetOffsetZ(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsetz(idcompositionanimation)
             - name: IDCompositionVirtualSurface
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionvirtualsurface
               items:
-                - name: Resize (método)
+                - name: Cambio de tamaño del método
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvirtualsurface-resize
                 - name: Trim (método)
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvirtualsurface-trim
@@ -952,45 +952,45 @@
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-addvisual
                 - name: Método RemoveAllVisuals
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-removeallvisuals
-                - name: Método RemoveVisual
+                - name: RemoveVisual (método)
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-removevisual
                 - name: Método SetBitmapInterpolationMode
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setbitmapinterpolationmode
                 - name: Método SetBorderMode
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setbordermode
-                - name: SetClip (métodos)
+                - name: Métodos SetClip
                   href: idcompositionvisual-setclip-overloaded.md
                   items:
-                    - name: SetClip (D2D_RECT_F) (método)
+                    - name: Método SetClip(D2D_RECT_F)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)
-                    - name: SetClip (IDCompositionClip) (método)
+                    - name: Método SetClip(IDCompositionClip)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)
                 - name: Método SetCompositeMode
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setcompositemode
-                - name: SetContent (método)
+                - name: Método SetContent
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setcontent
-                - name: SetEffect (método)
+                - name: Método SetEffect
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-seteffect
                 - name: Métodos SetOffsetX
                   href: /previous-versions/windows/desktop/legacy/hh449165(v=vs.85)
                   items:
-                    - name: SetOffsetX (float) (método)
+                    - name: Método SetOffsetX(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setoffsetx(float)
-                    - name: Método SetOffsetX (IDCompositionAnimation)
+                    - name: Método SetOffsetX(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setoffsetx(idcompositionanimation)
                 - name: Métodos SetOffsetY
                   href: /previous-versions/windows/desktop/legacy/hh449171(v=vs.85)
                   items:
-                    - name: SetOffsetY (float) (método)
+                    - name: Método SetOffsetY(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setoffsety(idcompositionanimation)
-                    - name: Método SetOffsetY (IDCompositionAnimation)
+                    - name: Método SetOffsetY(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setoffsety(idcompositionanimation)
                 - name: Métodos SetTransform
                   href: idcompositionvisual3-settransform-overloaded.md
                   items:
-                    - name: Método SetTransform (D2D_MATRIX_3X2_F)
+                    - name: Método SetTransform(D2D_MATRIX_3X2_F)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-settransform(idcompositiontransform)
-                    - name: Método SetTransform (IDCompositionTransform)
+                    - name: Método SetTransform(IDCompositionTransform)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-settransform(idcompositiontransform)
                 - name: Método SetTransformParent
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-settransformparent
@@ -1009,36 +1009,36 @@
                 - name: Métodos SetOffsetZ
                   href: /previous-versions/windows/desktop/legacy/mt589907(v=vs.85)
                   items:
-                    - name: SetOffsetZ (float) (método)
+                    - name: Método SetOffsetZ(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual3-setoffsetz(float)
-                    - name: Método SetOffsetZ (IDCompositionAnimation)
+                    - name: Método SetOffsetZ(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual3-setoffsetz(idcompositionanimation)
                 - name: Métodos SetOpacity
                   href: idcompositionvisual3-setopacity-overloaded.md
                   items:
-                    - name: SetOpacity (float) (método)
+                    - name: Método SetOpacity(float)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual3-setopacity(idcompositionanimation)
-                    - name: SetOpacity (IDCompositionAnimation) (método)
+                    - name: Método SetOpacity(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual3-setopacity(idcompositionanimation)
                 - name: Método SetTransformMode
                   href: /previous-versions/windows/desktop/legacy/dn904491(v=vs.85)
                 - name: Método SetTransform
                   href: idcompositionvisual3-settransform-overloaded.md
                   items:
-                    - name: Método SetTransform (D2D_MATRIX_4X4_F&)
+                    - name: Método SetTransform(D2D_MATRIX_4X4_F&)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(idcompositiontransform3d)
-                    - name: Método SetTransform (IDCompositionTransform3D *)
+                    - name: Método SetTransform(IDCompositionTransform3D*)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual3-settransform(idcompositiontransform3d)
                 - name: SetVisible (método)
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual3-setvisible
             - name: IDCompositionVisualDebug
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionvisualdebug
               items:
-                - name: Método DisableHeatMap
+                - name: Método DisableAsyncMap
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisualdebug-disableheatmap
                 - name: Método DisableRedrawRegions
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisualdebug-disableredrawregions
-                - name: Método EnableHeatMap
+                - name: Método EnableAsyncMap
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisualdebug-enableheatmap
                 - name: Método EnableRedrawRegions
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisualdebug-enableredrawregions
@@ -1066,5 +1066,5 @@
           href: directcomposition-error-codes.md
     - name: Ejemplos de DirectComposition
       href: directcomposition-code-samples.md
-    - name: Glosario DirectComposition
+    - name: Glosario de DirectComposition
       href: directcomposition-glossary.md

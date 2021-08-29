@@ -1,24 +1,24 @@
 ---
-title: Atributo AltHRef (ImageData) (VML)
-description: Atributo AltHRef (ImageData) (VML)
+title: Atributo AltHRef (ImageData)(VML)
+description: Atributo AltHRef (ImageData)(VML)
 ms.assetid: c55ede90-3d57-4f27-9940-1fe4751cef71
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 004625d769c12e67de024bf537ee04c377a18c8c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ca832ab684c2f3dd2efaa6b34343df11be75118cc797b16fece671d430f866fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104077938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137068"
 ---
-# <a name="althref-attribute-imagedatavml"></a>Atributo AltHRef (ImageData) (VML)
+# <a name="althref-attribute-imagedatavml"></a>Atributo AltHRef (ImageData)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Especifica una referencia alternativa para una imagen. Lectura/escritura **Cadena**.
 
@@ -28,20 +28,20 @@ Especifica una referencia alternativa para una imagen. Lectura/escritura **Caden
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:althref = " *expresión* " >
+<v: *elemento* o:althref=" *expresión* ">
 
 **Sintaxis de script**
 
-*Element* . althref = "*expresión*"
+*Element* .althref="*expression*"
 
-*expresión* = de *elemento*. althref
+*expresión* = *elemento*.althref
 
 **Comentarios:**
 
-Admite la conservación de datos PICT a través de Roundtripping HTML. En la escritura en HTML, se guarda la representación alternativa (es decir, los datos PICT originales si el archivo se originó en el equipo Macintosh). En una lectura de HTML, **AltHRef** se favorece en **src**.
+Admite la conservación de los datos DE LAN mediante el redondeo HTML. En la escritura HTML, se guarda la representación alternativa (es decir, los datos ORIGINALES si el archivo se originó en Macintosh). En una lectura HTML, **AltHRef** se favorece sobre **Src**.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

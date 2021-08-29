@@ -1,9 +1,9 @@
 ---
 title: Atributo PartOfSet
-description: El atributo PartOfSet es el número de pieza y el número total de partes del conjunto al que pertenece el elemento.
+description: El atributo PartOfSet es el número de elemento y el número total de partes del conjunto al que pertenece el elemento.
 ms.assetid: a77937df-e63e-4d2d-99ee-dd113dc2312b
 keywords:
-- PartOfSet Media Player de Windows
+- Atributo PartOfSet Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eba3f2f376106bd1d40c6d929f491e9c241bb43d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d08b1b3977181969930362d4f19004e7ae04737b4e056ba1d48b6b06926c7f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134898"
 ---
 # <a name="partofset-attribute"></a>Atributo PartOfSet
 
-El atributo **PartOfSet** es el número de pieza y el número total de partes del conjunto al que pertenece el elemento.
+El **atributo PartOfSet** es el número de elemento y el número total de partes del conjunto al que pertenece el elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

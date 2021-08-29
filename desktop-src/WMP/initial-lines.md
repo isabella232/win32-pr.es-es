@@ -3,23 +3,23 @@ title: Líneas iniciales
 description: Líneas iniciales
 ms.assetid: 25a4af3d-9e2d-4a10-a676-f78ae65d827c
 keywords:
-- Aspectos de Windows Media Player Mobile, escribir código
+- Reproductor de Windows Media Máscaras móviles, escribir código
 - máscaras, escribir código
 - crear máscaras, escribir código
 - escribir código para máscaras, número de versión del archivo de máscara
 - archivos de definición de máscara, líneas iniciales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d48c45479a6ea41f646f3e75ed209811d6f56e52
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 729e487eff7b0b8910b07afa8e64e23d4f5f1f94c71578fde6fb8abcef436027
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572645"
 ---
 # <a name="initial-lines"></a>Líneas iniciales
 
-Cada archivo de definición de máscara para Windows Media Player Mobile debe comenzar con una línea que especifique el número de versión del archivo de máscara. La línea siguiente funciona para Windows Media Player 9 series para Windows Mobile 2003 o posterior:
+Cada archivo de definición de máscara Reproductor de Windows Media Mobile debe comenzar con una línea que especifique el número de versión del archivo de máscara. La siguiente línea funciona para Reproductor de Windows Media serie 9 para Windows Mobile 2003 o posterior:
 
 
 ```C++
@@ -36,9 +36,9 @@ Cada archivo de definición de máscara para Windows Media Player Mobile debe co
 [**Escritura del código**](writing-the-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

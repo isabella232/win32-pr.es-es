@@ -20,9 +20,9 @@ El servicio de rol Directorio de sesión de Terminal Services (directorio de ses
 
 En Windows Server 2008, se expandió el servicio de rol Directorio de sesión de TS y se cambió el nombre del Agente de sesión de Terminal Services (TS Session Broker). Además de mantener un directorio de sesiones existentes, TS Session Broker también puede intermediar las conexiones entrantes. Cuando el Agente de sesión de TS recibe una conexión entrante de un usuario, comprueba su base de datos para determinar si el usuario tiene una sesión existente en un servidor terminal. Si es así, el Agente de sesión de TS redirige la conexión a ese mismo servidor de terminal Server. Si no es así, TS Session Broker determina qué servidor de terminal server tiene el menor número de conexiones y redirige la conexión a ese servidor.
 
-A partir de Windows Server 2008, Microsoft también publicó una interfaz de programación de aplicaciones (API) pública para supervisar e interactuar con sesiones en servidores de terminal Server. Esta API se describe en Conexión a Escritorio remoto [referencia del complemento de Broker](/windows/desktop/TermServ/terminal-services-virtualization-api-reference). Con esta API, los desarrolladores pueden crear complementos de directiva personalizados que invalide la lógica de redireccionamiento estándar de TS Session Broker. Los complementos personalizados pueden redirigir las sesiones a los servidores de terminal, así como a máquinas virtuales, escritorios virtuales, servidores de hoja y escritorios físicos.
+A partir de Windows Server 2008, Microsoft también publicó una interfaz de programación de aplicaciones (API) pública para supervisar e interactuar con sesiones en servidores de terminal Server. Esta API se describe en Conexión a Escritorio remoto [referencia del complemento de Broker.](/windows/desktop/TermServ/terminal-services-virtualization-api-reference) Con esta API, los desarrolladores pueden crear complementos de directiva personalizados que invalide la lógica de redireccionamiento estándar de TS Session Broker. Los complementos personalizados pueden redirigir las sesiones a los servidores de terminal, así como a máquinas virtuales, escritorios virtuales, servidores de hoja y escritorios físicos.
 
-En Windows Server 2008 R2, la arquitectura de Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) (anteriormente conocido como Agente de sesión de TS) se expandió para admitir conexiones a máquinas virtuales. La nueva arquitectura admite la administración de sesiones para máquinas virtuales a través de Escritorio remoto Virtualization API. Los desarrolladores pueden usar esta API para personalizar la lógica que usa el Agente de conexión a Escritorio remoto para determinar el mejor destino para una conexión de cliente entrante.
+En Windows Server 2008 R2, la arquitectura de Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto) (anteriormente conocido como Agente de sesión de TS) se expandió para admitir conexiones a máquinas virtuales. La nueva arquitectura admite la administración de sesiones para máquinas virtuales mediante Escritorio remoto Virtualization API. Los desarrolladores pueden usar esta API para personalizar la lógica que usa el Agente de conexión a Escritorio remoto para determinar el mejor destino para una conexión de cliente entrante.
 
 Escritorio remoto Virtualization API ofrece varias ventajas a los desarrolladores:
 
@@ -39,7 +39,7 @@ Escritorio remoto Virtualization API ofrece varias ventajas a los desarrolladore
 [Escritorio remoto de Virtualization API](terminal-services-virtualization-api-reference.md)
 </dt> <dt>
 
-[Conexión a Escritorio remoto broker Plug-in Reference](/windows/desktop/TermServ/terminal-services-virtualization-api-reference)
+[Conexión a Escritorio remoto de complementos de Broker](/windows/desktop/TermServ/terminal-services-virtualization-api-reference)
 </dt> </dl>
 
  

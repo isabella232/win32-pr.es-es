@@ -1,7 +1,7 @@
 ---
-description: El \_ método get scaleX recupera la cantidad por la que se ajusta horizontalmente el borrado.
+description: El método \_ get ScaleX recupera la cantidad por la que el borrado se ajusta horizontalmente.
 ms.assetid: 74c3f60b-68d9-4a8e-a6e5-767ce281a9fb
-title: 'Método IDxtJpeg:: get_ScaleX (QEDIT. h)'
+title: Método IDxtAsynceg::get_ScaleX (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 0532e3c068c0ea9641d1fffbcc3d1327290bae02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e3dac4723d35a0d812b58d28c6b8cc8a3efe407758b8dbc9f267eb0e04d1991b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119982675"
 ---
-# <a name="idxtjpegget_scalex-method"></a>IDxtJpeg:: get \_ scaleX (método)
+# <a name="idxtjpegget_scalex-method"></a>IDxtAsynceg::get \_ ScaleX (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `get_ScaleX` método recupera la cantidad por la que se ajusta horizontalmente el borrado.
+El `get_ScaleX` método recupera la cantidad por la que se extiende horizontalmente el borrado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,26 +45,26 @@ HRESULT get_ScaleX(
 
 <dl> <dt>
 
-*pval* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
-Recibe la cantidad por la que se ajusta horizontalmente el borrado, como un porcentaje de la definición de borrado original. Por ejemplo, el valor 1,0 significa que no hay expansión y 2,0 significa que el 200% se ajusta.
+Recibe la cantidad por la que el borrado se extiende horizontalmente, como un porcentaje de la definición de borrado original. Por ejemplo, el valor 1,0 significa que no hay stretching y 2,0 significa un 200 % de extensión.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Interfaz IDxtJpeg**](idxtjpeg.md)
+[**IDxtEnceeg (interfaz)**](idxtjpeg.md)
 </dt> </dl>
 
  

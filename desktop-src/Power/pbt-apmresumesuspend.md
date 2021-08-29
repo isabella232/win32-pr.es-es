@@ -1,21 +1,21 @@
 ---
-description: Notifica a las aplicaciones que el sistema ha reanudado la operación después de suspenderse.
+description: Notifica a las aplicaciones que el sistema ha reanudado el funcionamiento después de suspenderse.
 ms.assetid: 9058a2ff-9b8e-48e5-accb-4810c8598294
-title: Evento PBT_APMRESUMESUSPEND (WinUser. h)
+title: PBT_APMRESUMESUSPEND evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d26357215853e0989851b6a9e731340a8dc2e6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c065d7997a152555cbd77153752cbaec77786aea5b95486ccf73985cc854ae0b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961714"
 ---
-# <a name="pbt_apmresumesuspend-event"></a>\_Evento PBT APMRESUMESUSPEND
+# <a name="pbt_apmresumesuspend-event"></a>Evento \_ PBT APMRESUMESUSPEND
 
-Notifica a las aplicaciones que el sistema ha reanudado la operación después de suspenderse.
+Notifica a las aplicaciones que el sistema ha reanudado el funcionamiento después de suspenderse.
 
-Una ventana recibe este evento a través del mensaje de [**\_ POWERBROADCAST de WM**](wm-powerbroadcast.md) . Los parámetros *wParam* e *lParam* se establecen como se describe a continuación.
+Una ventana recibe este evento a través del [**mensaje \_ WM POWERBROADCAST.**](wm-powerbroadcast.md) Los *parámetros wParam* *y lParam* se establecen como se describe a continuación.
 
 
 ```C++
@@ -33,7 +33,7 @@ WindowProc( HWND hwnd,      // handle to window
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
 Identificador de la ventana.
@@ -42,7 +42,7 @@ Identificador de la ventana.
 
 | Value                                                                                                                                                                                                                                                                   | Significado                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador de mensaje.<br/> |
+| <span id="WM_POWERBROADCAST"></span><span id="wm_powerbroadcast"></span><dl> <dt>**[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)**</dt> <dt>536 (0x218)</dt> </dl> | Identificador del mensaje.<br/> |
 
 
 
@@ -52,7 +52,7 @@ Identificador de la ventana.
 
 | Value                                                                                                                                                                                                                                           | Significado                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| <span id="PBT_APMRESUMESUSPEND"></span><span id="pbt_apmresumesuspend"></span><dl> <dt>**PBT \_ APMRESUMESUSPEND**</dt> <dt>7 (0X7)</dt> </dl> | Identificador del evento.<br/> |
+| <span id="PBT_APMRESUMESUSPEND"></span><span id="pbt_apmresumesuspend"></span><dl> <dt>**PBT \_ APMRESUMESUSPEND**</dt> <dt>7 (0x7)</dt> </dl> | Identificador de evento.<br/> |
 
 
 
@@ -63,7 +63,7 @@ Identificador de la ventana.
 *lParam* 
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
@@ -71,13 +71,13 @@ Sector debe ser cero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación puede recibir este evento solo si recibió el evento [PBT \_ APMSUSPEND](pbt-apmsuspend.md) antes de que se suspendiera el equipo. De lo contrario, la aplicación recibirá un evento [PBT \_ APMRESUMECRITICAL](pbt-apmresumecritical.md) .
+Una aplicación solo puede recibir este evento si recibió el evento [ \_ PBT APMSUSPEND](pbt-apmsuspend.md) antes de que se suspendiera el equipo. De lo contrario, la aplicación recibirá un evento [ \_ PBT APMRESUMECRITICAL.](pbt-apmresumecritical.md)
 
-Si el sistema se reactiva debido a la actividad del usuario (por ejemplo, al presionar el botón de encendido) o si el sistema detecta la interacción del usuario en la consola física (por ejemplo, la entrada del mouse o del teclado) después de activar desatendido, el sistema emite primero el evento [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) y, a continuación, difunde el \_ evento APMRESUMESUSPEND de PBT. Además, el sistema activa la pantalla. La aplicación debe volver a abrir los archivos que cerró cuando el sistema entró en suspensión y prepararse para los datos proporcionados por el usuario.
+Si el sistema se reactiva debido a la actividad del usuario (por ejemplo, al presionar el botón de encendido) o si el sistema detecta la interacción del usuario en la consola física (como la entrada del mouse o el teclado) después de activarse desatendidamente, el sistema difunde primero el evento [ \_ PBT APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) y luego difunde el evento \_ PBT APMRESUMESUSPEND. Además, el sistema activa la pantalla. La aplicación debe volver a abrir los archivos que cerró cuando el sistema entró en suspensión y prepararse para la entrada del usuario.
 
-Si el sistema se reactiva debido a una señal de reactivación externa (reactivación remota), el sistema difundirá solo el evento [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) . \_No se envía el evento PBT APMRESUMESUSPEND.
+Si el sistema se reactiva debido a una señal de reactivación externa (reactivación remota), el sistema solo difunde el evento [ \_ PBT APMRESUMEAUTOMATIC.](pbt-apmresumeautomatic.md) No se envía el evento \_ PBT APMRESUMESUSPEND.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,9 +85,9 @@ Si el sistema se reactiva debido a una señal de reactivación externa (reactiva
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -107,7 +107,7 @@ Si el sistema se reactiva debido a una señal de reactivación externa (reactiva
 [PBT \_ APMRESUMECRITICAL](pbt-apmresumecritical.md)
 </dt> <dt>
 
-[**POWERBROADCAST de WM \_**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_SETCURSEL (Prsht. h)
+title: PSM_SETCURSEL mensaje (Prsht.h)
 description: Activa la página especificada en una hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro PropSheet \_ SetCurSel.
 ms.assetid: 800aadde-cabc-424e-8e63-60fc7ce952d7
 keywords:
-- PSM_SETCURSEL controles de mensajes de Windows
+- PSM_SETCURSEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12f41f0ba2ec8d13a7bfc932b553b355399f76b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 59b90c5163717712cbb085e0dcdaf1e08fdf64a6b88e59a73bd0a77364dca22b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985645"
 ---
-# <a name="psm_setcursel-message"></a>Mensaje de PSM \_ SETCURSEL
+# <a name="psm_setcursel-message"></a>Mensaje \_ SETCURSEL de PSM
 
-Activa la página especificada en una hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ SetCurSel**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setcursel) .
+Activa la página especificada en una hoja de propiedades. Puede enviar este mensaje explícitamente o mediante la macro [**PropSheet \_ SetCurSel.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setcursel)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,24 +32,24 @@ Activa la página especificada en una hoja de propiedades. Puede enviar este men
 *wParam* 
 </dt> <dd>
 
-Índice de base cero de la página. Una aplicación puede especificar el índice o el identificador o ambos. Si se especifican ambos, *lParam* tiene prioridad.
+Índice de base cero de la página. Una aplicación puede especificar el índice, el identificador o ambos. Si se especifican ambos, *lParam* tiene prioridad.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificador de la página que se va a activar. Una aplicación puede especificar el índice o el identificador o ambos. Si se especifican ambos, *lParam* tiene prioridad.
+Identificador de la página que se activará. Una aplicación puede especificar el índice, el identificador o ambos. Si se especifican ambos, *lParam* tiene prioridad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La ventana que está perdiendo la activación recibe el código de notificación [PSN \_ KILLACTIVE](psn-killactive.md) y la ventana que obtiene la activación recibe el código de notificación [PSN \_ SETACTIVE](psn-setactive.md) .
+La ventana que pierde la activación recibe el código de notificación [ \_ KILLACTIVE](psn-killactive.md) de PSN y la ventana que obtiene la activación recibe el código de [notificación \_ SETACTIVE de PSN.](psn-setactive.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ La ventana que está perdiendo la activación recibe el código de notificación
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

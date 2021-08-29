@@ -1,12 +1,12 @@
 ---
-title: Propiedad de contexto ITsSbTaskInfo
+title: Propiedad Context de ITsSbTaskInfo
 description: Recupera los bytes de contexto asociados a la tarea.
 ms.assetid: ce55ce2a-957f-4b50-b632-42079277102b
 ms.tgt_platform: multiple
 keywords:
-- Propiedad de contexto Servicios de Escritorio remoto
-- Propiedad de contexto Servicios de Escritorio remoto, interfaz ITsSbTaskInfo
-- Servicios de Escritorio remoto de la interfaz ITsSbTaskInfo, propiedad de contexto
+- Propiedades de contexto Servicios de Escritorio remoto
+- Propiedad context Servicios de Escritorio remoto interfaz , ITsSbTaskInfo
+- Interfaz ITsSbTaskInfo Servicios de Escritorio remoto , propiedad Context
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2adc4715f23b2c23ac6dfbdcdd8a489b2b0f5fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e6b733de4bb969e8b8ed65bcc8e080fd49442ba23fbbb16928afafcccb28f05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138288"
 ---
-# <a name="itssbtaskinfocontext-property"></a>ITsSbTaskInfo:: context (propiedad)
+# <a name="itssbtaskinfocontext-property"></a>Propiedad ITsSbTaskInfo::Context
 
 Recupera los bytes de contexto asociados a la tarea.
 
@@ -54,7 +54,7 @@ Contexto de la tarea.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| IDL<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: STATUSTEXT
-description: Se trata de un elemento de texto predefinido con los siguientes valores predeterminados. | STATUSTEXT
+title: Statustext
+description: Se trata de un elemento TEXT predefinido con los siguientes valores predeterminados. | Statustext
 ms.assetid: cb87b34b-bbb7-4bd1-a117-03768f6c5d7e
 keywords:
-- Media Player de Windows STATUSTEXT
+- StatusTEXT Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,33 +13,33 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdd15624bf1c5accb6c8540abb630174d6f58bea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: daf4a4a6e875b4bae24c203472292cacce1d633054da513ebca9c558df12af51
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571825"
 ---
-# <a name="statustext"></a>STATUSTEXT
+# <a name="statustext"></a>Statustext
 
-Se trata de un elemento de **texto** predefinido con los siguientes valores predeterminados.
+Se trata de un elemento **TEXT predefinido** con los siguientes valores predeterminados.
 
 ``` syntax
 value="wmpprop:player.status"
 tabstop="true"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se creará un elemento de **texto** que mostrará el estado de la reproducción. Todas las propiedades de este elemento de **texto** se pueden invalidar mediante su especificación explícita.
+Esto creará un elemento **TEXT** que mostrará el estado de reproducción. Todas las propiedades de **este elemento TEXT** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 

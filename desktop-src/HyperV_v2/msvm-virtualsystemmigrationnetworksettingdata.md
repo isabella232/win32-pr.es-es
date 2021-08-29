@@ -1,7 +1,7 @@
 ---
-description: Representa la red en la que el servicio de migración del sistema virtual está escuchando la migración de sistema virtual entrante.
+description: Representa la red en la que el servicio de migración del sistema virtual escucha la migración entrante del sistema virtual.
 ms.assetid: 24458602-ff5c-45c2-8053-00315b59d3bb
-title: Msvm_VirtualSystemMigrationNetworkSettingData (clase)
+title: Msvm_VirtualSystemMigrationNetworkSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4f7c24bb754148fa8ede12292f308164512af646
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 176e7c46bcb2cf69149b6ce7524a841cf5e072e5d21f9d6f4247c795c839c0f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963555"
 ---
-# <a name="msvm_virtualsystemmigrationnetworksettingdata-class"></a>MSVM \_ VirtualSystemMigrationNetworkSettingData (clase)
+# <a name="msvm_virtualsystemmigrationnetworksettingdata-class"></a>Clase Msvm \_ VirtualSystemMigrationNetworkSettingData
 
-Representa la red en la que el servicio de migración del sistema virtual está escuchando la migración de sistema virtual entrante.
+Representa la red en la que el servicio de migración del sistema virtual escucha la migración entrante del sistema virtual.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se simplifica Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,13 +53,13 @@ class Msvm_VirtualSystemMigrationNetworkSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemMigrationNetworkSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ VirtualSystemMigrationNetworkSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemMigrationNetworkSettingData** tiene estas propiedades.
+La **clase Msvm \_ VirtualSystemMigrationNetworkSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de la clase [**CIM \_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) .
+Breve descripción del objeto. Esta propiedad se hereda de la [**clase \_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
 
 </dd> <dt>
 
@@ -111,36 +111,36 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Métrica**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La métrica de prioridad de esta red para la migración. Los valores más bajos tienen mayor prioridad.
+Métrica de prioridad de esta red para la migración. Los valores más bajos tienen mayor prioridad.
 
 </dd> <dt>
 
 **PrefixLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La longitud del prefijo de subred de la red de migración.
+Longitud del prefijo de subred de la red de migración.
 
 </dd> <dt>
 
@@ -153,20 +153,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de subred de la red de migración.
+Número de subred de la red de migración.
 
 </dd> <dt>
 
 **Etiquetas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una matriz de etiquetas para representar el sistema de administración que ha configurado esta red para el servicio de migración de sistema virtual.
+Matriz de etiquetas para representar qué sistema de administración ha establecido esta red para el servicio de migración del sistema virtual.
 
 </dd> </dl>
 
@@ -176,10 +176,10 @@ Una matriz de etiquetas para representar el sistema de administración que ha co
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -188,7 +188,7 @@ Una matriz de etiquetas para representar el sistema de administración que ha co
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> <dt>
 
 [**ModifyNetworkSettings**](modifynetworksettings-msvm-virtualsystemmigrationservice.md)

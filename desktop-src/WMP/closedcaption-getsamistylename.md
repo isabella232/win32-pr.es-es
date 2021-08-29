@@ -1,11 +1,11 @@
 ---
-title: ClosedCaption. getSAMIStyleName, método
-description: El método getSAMIStyleName recupera el nombre de un estilo compatible con el archivo SAMI actual.
+title: Método ClosedCaption.getSAMIStyleName
+description: El método getSAMIStyleName recupera el nombre de un estilo admitido por el archivo SAMI actual.
 ms.assetid: c2ffedf8-4622-44fe-9d92-b52ed3bf3b9a
 keywords:
-- método getSAMIStyleName de Windows Media Player
-- método getSAMIStyleName de Windows Media Player, clase ClosedCaption
-- Clase ClosedCaption Windows Media Player, método getSAMIStyleName
+- Método getSAMIStyleName Reproductor de Windows Media
+- Método getSAMIStyleName Reproductor de Windows Media , clase ClosedCaption
+- Clase ClosedCaption Reproductor de Windows Media método , getSAMIStyleName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 96480e28e0341b822aaf6726e63a6038681a577f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7b7a8a23c47a464e1b192a4a652d87043765260a1016c707fa8d6c85c22b575
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135808"
 ---
-# <a name="closedcaptiongetsamistylename-method"></a>ClosedCaption. getSAMIStyleName, método
+# <a name="closedcaptiongetsamistylename-method"></a>Método ClosedCaption.getSAMIStyleName
 
-El método **getSAMIStyleName** recupera el nombre de un estilo compatible con el archivo Sami actual.
+El **método getSAMIStyleName** recupera el nombre de un estilo admitido por el archivo SAMI actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,24 +42,24 @@ strRetVal = ClosedCaption.getSAMIStyleName(
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que especifica el índice del nombre de estilo que se va a recuperar.
+**Number** (**long**) que especifica el índice del nombre de estilo que se recuperará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve una **cadena** que contiene el nombre del estilo tal y como se especifica en el archivo Sami.
+Este método devuelve una **cadena** que contiene el nombre del estilo tal como se especifica en el archivo SAMI.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los estilos de un archivo SAMI se indizan en el orden mostrado en el archivo, empezando por cero.
+Los estilos de un archivo SAMI se indexa en el orden que se muestra en el archivo, empezando por cero.
 
-Este método no se puede usar hasta que se abra un archivo multimedia digital (*reproductor*.**openState** es igual a 13).
+Este método no se puede usar hasta que se abra un archivo multimedia digital *(Reproductor de*.**openState** es igual a 13).
 
-**Windows Media Player 10 Mobile:** Este método no se admite.
+**Reproductor de Windows Media 10 Mobile:** No se admite este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Este método no se puede usar hasta que se abra un archivo multimedia digital (*
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -76,10 +76,10 @@ Este método no se puede usar hasta que se abra un archivo multimedia digital (*
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
-[**Objeto ClosedCaption**](closedcaption-object.md)
+[**ClosedCaption (objeto)**](closedcaption-object.md)
 </dt> <dt>
 
 [**ClosedCaption.SAMIStyle**](closedcaption-samistyle.md)

@@ -12,12 +12,12 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 69a5afbc41350092ebd4d433d2f4d7259ece82cf
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 8f40b8338164e992bc9102a37d386f9b470e2159cdc7507ca0cf4c4567fb524b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119349285"
 ---
 # <a name="dlpnotifypostpastefromclipboard-function"></a>Función DlpNotifyPostPasteFromClipboard
 
@@ -64,7 +64,7 @@ Devuelve void.
 
 
 
-| Requisito          |    Value                   |
+| Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 | Archivo DLL<br/>                      | EndpointDlp.dll |

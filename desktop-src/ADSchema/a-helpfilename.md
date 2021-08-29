@@ -1,11 +1,11 @@
 ---
-title: Help-File-Name (atributo)
-description: Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar para el archivo cuando el proveedor descargó los datos de ayuda en un equipo cliente. No se utiliza para ninguna otra versión de Exchange.
+title: Atributo Help-File-Name
+description: Este atributo se usó para Exchange 4.0. Contenía el nombre que se debe usar para el archivo cuando el proveedor descargó los datos de ayuda en un equipo cliente. No se usa para ninguna otra versión de Exchange.
 ms.assetid: 3383b953-8a5c-4dfd-9d06-c35d29d6ea2d
 ms.tgt_platform: multiple
 keywords:
-- Help-File-Name atributo AD Schema
-- helpFileName esquema de AD de atributos
+- Esquema de AD del atributo Help-File-Name
+- Esquema de AD del atributo helpFileName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e049e34fe43cb17314f8483a2a77bd680a4e7fa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d14dc9ce29eea4a7bb0b3f15a35ec0a82bb947da862e658713cde1f64c241f42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119305305"
 ---
-# <a name="help-file-name-attribute"></a>Help-File-Name (atributo)
+# <a name="help-file-name-attribute"></a>Atributo Help-File-Name
 
-Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar para el archivo cuando el proveedor descargó los datos de ayuda en un equipo cliente. No se utiliza para ninguna otra versión de Exchange.
+Este atributo se usó para Exchange 4.0. Contenía el nombre que se debe usar para el archivo cuando el proveedor descargó los datos de ayuda en un equipo cliente. No se usa para ninguna otra versión de Exchange.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Nombre de archivo de ayuda                              |
-| Nombre para mostrar de LDAP | helpFileName                                |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Lo utiliza el sistema.                 |
+| CN                | Help-File-Name                              |
+| Ldap-Display-Name | helpFileName                                |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema lo usa.                 |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.327                      |
-| System-ID-GUID    | 5fd424a9-1262-11d0-a060-00aa006c33ed        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 5fd424a9-1262-11d0-a060-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar pa
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803B                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 13                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -76,13 +76,13 @@ Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar pa
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803B                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 13                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -97,13 +97,13 @@ Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar pa
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803B                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 13                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -118,13 +118,13 @@ Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar pa
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803B                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 13                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -139,13 +139,13 @@ Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar pa
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803B                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 13                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -160,13 +160,13 @@ Este atributo se usó para Exchange 4,0. Contenía el nombre que se debe usar pa
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x803B                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 13                                                       |
 | Search-Flags           | 0x00000000                                               |

@@ -3,30 +3,30 @@ title: Crear perfiles
 description: Crear perfiles
 ms.assetid: af4a8efe-d797-4d19-961d-b917e4c7c81a
 keywords:
-- Windows Media Format SDK, perfiles
-- perfiles, crear
-- perfiles, interfaz IWMProfileManager
-- IWMProfileManager, creación de perfiles
-- perfiles, función WMCreateProfileManager
+- Windows SDK de formato multimedia, perfiles
+- profiles,creating
+- profiles,IWMProfileManager (interfaz)
+- IWMProfileManager, crear perfiles
+- profiles,FUNCIÓN WMCreateProfileManager
 - WMCreateProfileManager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45eeca9e99e09bd709b7e9fdf1aeffe8d35ca14a
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 19dda9d5eb486227d78c735b497a265d9ffcdf6888531227b0d27d8375482c6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104077287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840155"
 ---
 # <a name="creating-profiles"></a>Crear perfiles
 
-En muchos casos, querrá crear un perfil vacío para configurar según sus necesidades. En otros casos, es más fácil editar un perfil existente, como un perfil del sistema. Para obtener más información sobre el uso de perfiles del sistema, vea [usar perfiles del sistema](using-system-profiles.md).
+En muchos casos, querrá crear un perfil vacío para configurarlo según sus necesidades. En otros casos, es más fácil editar un perfil existente, como un perfil del sistema. Para obtener más información sobre el uso de perfiles del sistema, vea [Using System Profiles](using-system-profiles.md).
 
-La creación de un perfil vacío, listo para su configuración, requiere un objeto de administrador de perfiles. Para obtener la interfaz [**IWMProfileManager**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager) de un objeto de administrador de perfiles, llame a la función [**WMCreateProfileManager**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreateprofilemanager) .
+La creación de un perfil vacío, listo para configurarlo, requiere un objeto de administrador de perfiles. Para obtener la [**interfaz IWMProfileManager de**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager) un objeto de administrador de perfiles, llame a la [**función WMCreateProfileManager.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreateprofilemanager)
 
-Para crear un perfil vacío, llame a [**IWMProfileManager:: CreateEmptyProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-createemptyprofile). Cuando se crea un perfil vacío, lo único que se especifica es la versión del SDK de Windows Media Format con el que cumple el perfil. A menos que tenga una necesidad específica de usar una versión anterior, debe usar siempre la versión más reciente. La versión dicta la estructura del perfil; las versiones anteriores no eran compatibles con algunas propiedades.
+Para crear un perfil vacío, llame a [**IWMProfileManager::CreateEmptyProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-createemptyprofile). Cuando se crea un perfil vacío, lo único que se especifica es la versión del SDK de Windows Formato multimedia con el que cumple el perfil. A menos que tenga una necesidad específica de usar una versión anterior, siempre debe usar la versión más reciente. La versión determina la estructura del perfil; las versiones anteriores no admiten algunas propiedades.
 
-En el ejemplo de código siguiente se muestra cómo crear un nuevo perfil. Para compilar este código en la aplicación, incluya stdio. h. Para obtener más información sobre el uso de este código, vea [usar los ejemplos de código](using-the-code-examples.md).
+En el código de ejemplo siguiente se muestra cómo crear un nuevo perfil. Para compilar este código en la aplicación, incluya stdio.h. Para obtener más información sobre el uso de este código, vea [Usar los ejemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -52,18 +52,18 @@ HRESULT CreateProfile(IWMProfileManager* pProfileMgr, IWMProfile** ppProfile)
 
 <dl> <dt>
 
-[**Interfaz IWMProfile**](iwmprofile.md)
+[**IWMProfile (interfaz)**](iwmprofile.md)
 </dt> <dt>
 
-[**Interfaz IWMProfileManager**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager)
+[**IWMProfileManager (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager)
 </dt> <dt>
 
 [**Trabajar con perfiles**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

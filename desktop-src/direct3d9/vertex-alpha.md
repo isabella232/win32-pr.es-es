@@ -1,19 +1,19 @@
 ---
-description: Los datos alfa se pueden proporcionar en los datos de vértices. Para habilitar Vertex Alpha, establezca D3DRS \_ DIFFUSEMATERIALSOURCE en D3DMCS \_ COLOR1 de modo que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del material.
+description: Los datos alfa se pueden proporcionar en los datos del vértice. Para habilitar alfa de vértice, establezca D3DRS \_ DIFUSMATERIALSOURCE en D3DMCS COLOR1 para que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del \_ material.
 ms.assetid: 2b0d842d-ee7d-4633-846d-96697153adc7
 title: Vértice alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5f661c013e324a0bf209b4faca41d1974a41e81
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c2443b14d62698e342b7cbb9c4b79d30d3e11e32be76a3f584823ddf74b16685
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119984545"
 ---
 # <a name="vertex-alpha-direct3d-9"></a>Vértice alfa (Direct3D 9)
 
-Los datos alfa se pueden proporcionar en los datos de vértices. Para habilitar Vertex Alpha, establezca D3DRS \_ DIFFUSEMATERIALSOURCE en D3DMCS \_ COLOR1 de modo que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del material.
+Los datos alfa se pueden proporcionar en los datos del vértice. Para habilitar alfa de vértice, establezca D3DRS \_ DIFUSMATERIALSOURCE en D3DMCS COLOR1 para que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del \_ material.
 
 
 ```
@@ -23,7 +23,7 @@ m_pd3dDevice->SetRenderState( D3DRS_DIFFUSEMATERIALSOURCE,
 
 
 
-A continuación, proporcione valores alfa en el color difuso. La función AddAlphaToASphere, agrega alfa a los vértices de una esfera. A continuación se muestra un ejemplo de cómo proporcionar la información alfa a la función.
+A continuación, proporcione valores alfa en el color difuso. La función AddAlphaToASphere agrega alfa a los vértices de una esfera. Este es un ejemplo de cómo proporcionar la información alfa a la función.
 
 
 ```
@@ -55,9 +55,9 @@ void AddAlphaToASphere(D3DLVERTEX* pVertices, DWORD dwNumRings, D3DCOLOR lightco
 
 
 
-AddAlphaToASphere simplemente modifica el miembro de color de cada vértice, que son de tipo D3DLVERTEX, para incluir la información alfa.
+AddAlphaToASphere simplemente modifica el miembro de color de cada vértice, que es de tipo D3DLVERTEX, para incluir la información alfa.
 
-D3DLVERTEX tiene el siguiente aspecto.
+D3DLVERTEX tiene este aspecto.
 
 
 ```
@@ -90,7 +90,7 @@ m_pd3dDevice->DrawIndexedPrimitive( D3DPT_TRIANGLELIST, D3DFVF_LVERTEX,
 
 
 
-da como resultado una esfera transparente con el vértice alfa.
+da como resultado una esfera transparente mediante vértice alfa.
 
 ## <a name="related-topics"></a>Temas relacionados
 

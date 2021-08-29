@@ -4,37 +4,37 @@ ms.assetid: dd24671a-0689-4490-8d18-2a33ed461e9d
 title: Capturar atributos de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43dd8dbcdf0a441ddb8a5ef2794526e961c22033
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 265a27f34b5b12cc5909ea2cfa8bbf90d6d623fe4b4acf40e39fdd64d8ad8936
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959165"
 ---
 # <a name="capture-device-attributes"></a>Capturar atributos de dispositivo
 
-Los siguientes atributos están relacionados con los dispositivos de captura:
+Los atributos siguientes están relacionados con los dispositivos de captura:
 
 
 
 | Atributo                                                                                                                     | Descripción                                                                         |
 |-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [\_ \_ nombre descriptivo del atributo MF DEVSOURCE \_ \_](mf-devsource-attribute-friendly-name.md)                                          | Nombre para mostrar del dispositivo.                                                          |
-| [\_tipo de \_ medio de atributo MF DEVSOURCE \_ \_](mf-devsource-attribute-media-type.md)                                                | El formato de salida del dispositivo.                                                         |
-| [\_tipo de \_ origen de atributo MF DEVSOURCE \_ \_](mf-devsource-attribute-source-type.md)                                              | El tipo de dispositivo, como captura de audio o captura de vídeo.                         |
-| [\_Type DEVSOURCE \_ tipo de origen de atributo \_ \_ \_ AUDCAP \_ ID. de punto de conexión \_](mf-devsource-attribute-source-type-audcap-endpoint-id.md)     | IDENTIFICADOR del punto de conexión de un dispositivo de captura de audio.                                        |
-| [\_ \_ \_ \_ \_ AUDCAP rol de tipo de origen de atributo MF DEVSOURCE \_](mf-devsource-attribute-source-type-audcap-role.md)                    | El rol de dispositivo para un dispositivo de captura de audio.                                        |
-| [\_tipo de origen de atributo MF DEVSOURCE \_ \_ \_ \_ \_ categoría VIDCAP](mf-devsource-attribute-source-type-vidcap-category.md)            | La categoría de dispositivos para un dispositivo de vídeo.                                             |
-| [tipo de origen de atributo de MF \_ DEVSOURCE \_ \_ origen de \_ \_ HW de VIDCAP \_ \_](mf-devsource-attribute-source-type-vidcap-hw-source.md)         | Especifica si un origen de captura de vídeo es un dispositivo de hardware o un dispositivo de software. |
-| [\_tipo de origen de atributo MF DEVSOURCE \_ \_ \_ \_ \_ búferes de VIDCAP máx \_ .](mf-devsource-attribute-source-type-vidcap-max-buffers.md)     | Especifica el número máximo de fotogramas que el origen de captura de vídeo almacenará en búfer.   |
-| [\_tipo de origen de atributo MF DEVSOURCE \_ \_ \_ \_ vínculo de VIDCAP \_ simbólico \_](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) | El vínculo simbólico de un controlador de captura de vídeo.                                       |
-| [\_ \_ Marca de tiempo \_ de HW de MFT con el \_ \_ atributo QPC](mft-hw-timestamp-with-qpc-attribute.md)                                           | Especifica si el origen del dispositivo utiliza la hora del sistema para las marcas de tiempo.           |
+| [NOMBRE DESCRIPTIVO DEL ATRIBUTO MF \_ DEVSOURCE \_ \_ \_](mf-devsource-attribute-friendly-name.md)                                          | Nombre para mostrar del dispositivo.                                                          |
+| [TIPO \_ DE MEDIO DE ATRIBUTO MF DEVSOURCE \_ \_ \_](mf-devsource-attribute-media-type.md)                                                | Formato de salida del dispositivo.                                                         |
+| [TIPO DE ORIGEN DEL ATRIBUTO MF \_ DEVSOURCE \_ \_ \_](mf-devsource-attribute-source-type.md)                                              | El tipo de dispositivo, como la captura de audio o la captura de vídeo.                         |
+| [MF \_ DEVSOURCE \_ ATTRIBUTE \_ SOURCE \_ TYPE \_ AUDCAP \_ ENDPOINT \_ ID](mf-devsource-attribute-source-type-audcap-endpoint-id.md)     | Identificador del punto de conexión de un dispositivo de captura de audio.                                        |
+| [MF \_ DEVSOURCE \_ ATTRIBUTE \_ SOURCE \_ TYPE \_ AUDCAP \_ ROLE](mf-devsource-attribute-source-type-audcap-role.md)                    | Rol de dispositivo para un dispositivo de captura de audio.                                        |
+| [CATEGORÍA VIDCAP DEL TIPO DE \_ ORIGEN DEL ATRIBUTO MF DEVSOURCE \_ \_ \_ \_ \_](mf-devsource-attribute-source-type-vidcap-category.md)            | Categoría de dispositivo para un dispositivo de vídeo.                                             |
+| [MF \_ DEVSOURCE \_ ATTRIBUTE \_ SOURCE \_ TYPE \_ VIDCAP \_ HW \_ SOURCE](mf-devsource-attribute-source-type-vidcap-hw-source.md)         | Especifica si un origen de captura de vídeo es un dispositivo de hardware o un dispositivo de software. |
+| [BÚFERES \_ MÁXIMOS DE \_ \_ VIDCAP MAX DEL \_ TIPO DE ORIGEN \_ \_ \_ DEL ATRIBUTO MF DEVSOURCE](mf-devsource-attribute-source-type-vidcap-max-buffers.md)     | Especifica el número máximo de fotogramas que almacenará en búfer el origen de captura de vídeo.   |
+| [VÍNCULO SIMBÓLICO DEL TIPO DE ORIGEN DEL ATRIBUTO MF \_ DEVSOURCE \_ \_ \_ \_ VIDCAP \_ \_](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) | Vínculo simbólico para un controlador de captura de vídeo.                                       |
+| [MARCA DE \_ TIEMPO DE MFT \_ HW CON atributo \_ \_ \_ QPC](mft-hw-timestamp-with-qpc-attribute.md)                                           | Especifica si el origen del dispositivo usa la hora del sistema para las marcas de tiempo.           |
 
 
 
  
 
-Estos atributos se utilizan con las siguientes funciones:
+Estos atributos se usan con las siguientes funciones:
 
 -   [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource)
 -   [**MFCreateDeviceSourceActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate)
@@ -44,7 +44,7 @@ Estos atributos se utilizan con las siguientes funciones:
 
 <dl> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> </dl>
 
  

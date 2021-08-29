@@ -2,7 +2,7 @@
 description: Cambia los permisos de seguridad para el archivo de datos lógico especificado en la ruta de acceso del objeto.
 ms.assetid: b0a66411-f973-42ce-a3fe-25c31234a964
 ms.tgt_platform: multiple
-title: Método ChangeSecurityPermissions de la clase CIM_DataFile
+title: Método ChangeSecurityPermissions de la CIM_DataFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: faa2e3ce2f2454d76ff9e55cc10cf09e9b5f715e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b02ea424c3fd0281a58dab8028600e008bbfd2d86563e33c8a054ec7ecfd3187
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323205"
 ---
-# <a name="changesecuritypermissions-method-of-the-cim_datafile-class"></a>Método ChangeSecurityPermissions de la \_ clase de archivo de archivos CIM
+# <a name="changesecuritypermissions-method-of-the-cim_datafile-class"></a>Método ChangeSecurityPermissions de la clase \_ DataFile de CIM
 
-El método **ChangeSecurityPermissions** cambia los permisos de seguridad para el archivo de datos lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es un directorio, este método actuará de forma recursiva y cambiará los permisos de seguridad de todos los archivos y subdirectorios que contiene el directorio. Este método se hereda de [**\_ LogicalFile CIM**](cim-logicalfile.md).
+El **método ChangeSecurityPermissions** cambia los permisos de seguridad para el archivo de datos lógico especificado en la ruta de acceso del objeto. Si el archivo lógico es un directorio, este método actuará de forma recursiva, cambiando los permisos de seguridad para todos los archivos y subdirectorios que contiene el directorio. Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,26 +48,26 @@ uint32 ChangeSecurityPermissions(
 
 <dl> <dt>
 
-*SecurityDescriptor* \[ de\]
+*SecurityDescriptor* \[ En\]
 </dt> <dd>
 
 Especifica la información de seguridad.
 
 > [!Note]  
-> Una lista de control de acceso (ACL) **nula** en la estructura del [**\_ descriptor de seguridad**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede acceso ilimitado. Para obtener información sobre las implicaciones de acceso ilimitado, consulte [crear un descriptor de seguridad para un nuevo objeto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
+> Una **lista de** control de acceso (ACL) NULL en la estructura DESCRIPTOR DE [**\_ SEGURIDAD**](/windows/desktop/api/winnt/ns-winnt-security_descriptor) concede acceso ilimitado. Para obtener información sobre las implicaciones del acceso ilimitado, vea [Crear un descriptor de seguridad para un nuevo objeto](/windows/desktop/SecAuthZ/creating-a-security-descriptor-for-a-new-object-in-c--).
 
  
 
 </dd> <dt>
 
-*Opción* \[ de de\]
+*Opción* \[ En\]
 </dt> <dd>
 
-Privilegio de seguridad que se va a modificar. Por ejemplo, para cambiar la seguridad de la DACL y el propietario, use:
+Privilegio de seguridad que se debe modificar. Por ejemplo, para cambiar el propietario y la seguridad de DACL, use:
 
 `Option = 1 + 4`
 
-or
+o
 
 `Option = CHANGE_OWNER_SECURITY_INFORMATION | CHANGE_DACL_SECURITY_INFORMATION`
 
@@ -75,29 +75,29 @@ or
 
 <span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>
 
-<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad del propietario** (1)
+<span id="CHANGE_OWNER_SECURITY_INFORMATION"></span><span id="change_owner_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE SEGURIDAD DEL \_ PROPIETARIO** (1)
 
 
 </dt> <dd>
 
-Cambiar el propietario del archivo lógico.
+Cambie el propietario del archivo lógico.
 
 </dd> <dt>
 
 <span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>
 
-<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de grupo** (2)
+<span id="CHANGE_GROUP_SECURITY_INFORMATION"></span><span id="change_group_security_information"></span>**CAMBIO \_ INFORMACIÓN \_ DE \_ SEGURIDAD DE** GRUPO (2)
 
 
 </dt> <dd>
 
-Cambiar el grupo del archivo lógico.
+Cambie el grupo del archivo lógico.
 
 </dd> <dt>
 
 <span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>
 
-<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de DACL** (4)
+<span id="CHANGE_DACL_SECURITY_INFORMATION"></span><span id="change_dacl_security_information"></span>**CAMBIO \_ INFORMACIÓN DE \_ SEGURIDAD \_ DE DACL** (4)
 
 
 </dt> <dd>
@@ -108,7 +108,7 @@ Cambie la ACL del archivo lógico.
 
 <span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>
 
-<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**Cambiar \_ \_ \_ Información de seguridad de SACL** (8)
+<span id="CHANGE_SACL_SECURITY_INFORMATION"></span><span id="change_sacl_security_information"></span>**CAMBIO \_ INFORMACIÓN DE \_ SEGURIDAD \_ DE SACL** (8)
 
 
 </dt> <dd>
@@ -119,7 +119,7 @@ Cambie la ACL del sistema del archivo lógico.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 si se ejecuta correctamente y cualquier otro número para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 si se ejecuta correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -137,7 +137,7 @@ Correcto.
 
 2
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ El objeto ya existe.
 
 12
 
-Plataforma no basada en Windows NT.
+Plataforma no Windows basada en NT.
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ Archivo de inicio no válido.
 
 </dd> <dt>
 
-**Privilegio no mantenido**
+**Privilegios no mantenidos**
 </dt> <dd>
 
 17
@@ -238,37 +238,37 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WMI implementa el método **ChangeSecurityPermissions** en el [**archivo de \_ archivos de CIM**](cim-datafile.md) .
+WMI **implementa el método ChangeSecurityPermissions** de CIM [**\_ DataFile.**](cim-datafile.md)
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Archivo de archivos CIM**](changesecuritypermissions-method-in-class-cim-datafile.md)
+[**Archivo de datos CIM \_**](changesecuritypermissions-method-in-class-cim-datafile.md)
 </dt> <dt>
 
-[**\_Archivo de archivos CIM**](cim-datafile.md)
+[**Archivo de datos CIM \_**](cim-datafile.md)
 </dt> <dt>
 
-[Tareas de WMI: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)
+[Tareas wmi: archivos y carpetas](/windows/desktop/WmiSdk/wmi-tasks--files-and-folders)
 </dt> <dt>
 
 [**Constantes de derechos de acceso a archivos y directorios**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)

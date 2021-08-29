@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: VistaGrbits. TruncateLogsAfterRecovery, campo'
-title: Campo VistaGrbits. TruncateLogsAfterRecovery (Microsoft. ISAM. esent. Interop. vista)
+description: Más información sobre el campo VistaGrbits.TruncateLogsAfterRecovery
+title: Campo VistaGrbits.TruncateLogsAfterRecovery (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: TruncateLogsAfterRecovery field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaGrbits.TruncateLogsAfterRecovery
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistagrbits.truncatelogsafterrecovery(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 646bf659dc9270a4c5f40373b871c2c8700586a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 647d42de62c8fdc700191fc06e9445e1eb0e52e4b80bbc58a433f7b35bd8a666
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967555"
 ---
-# <a name="vistagrbitstruncatelogsafterrecovery-field"></a>VistaGrbits. TruncateLogsAfterRecovery, campo
+# <a name="vistagrbitstruncatelogsafterrecovery-field"></a>Campo VistaGrbits.TruncateLogsAfterRecovery
 
-En la recuperación de software correcta, trunque los archivos de registro.
+Si la recuperación flexible se realiza correctamente, trunca los archivos de registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = VistaGrbits.TruncateLogsAfterRecovery
 public const InitGrbit TruncateLogsAfterRecovery
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase VistaGrbits](./vistagrbits-class.md)
+[VistaGrbits (clase)](./vistagrbits-class.md)
 
 [Miembros de VistaGrbits](./vistagrbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

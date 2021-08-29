@@ -1,11 +1,11 @@
 ---
-title: CA-Certificate atributo)
+title: CA-Certificate atributo
 description: Certificados de entidades de certificación de confianza.
 ms.assetid: 1bc1ed97-b985-469e-a198-208cb9f2a0d0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de CA-Certificate
-- El certificado esquema de AD de atributos
+- CA-Certificate esquema de AD del atributo
+- Esquema de AD del atributo cACertificate
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 933c736a2cfc707b65815c9785a29cba76a0dbf2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5ec10c76ce61aa435618181d6a8a1a8e821bf2c3aec86a3cb15e4f805cf1343b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119307185"
 ---
-# <a name="ca-certificate-attribute"></a>CA-Certificate atributo)
+# <a name="ca-certificate-attribute"></a>CA-Certificate atributo
 
 Certificados de entidades de certificación de confianza.
 
@@ -30,13 +30,13 @@ Certificados de entidades de certificación de confianza.
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | CA-Certificate                                        |
-| Nombre para mostrar de LDAP | El certificado                                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | cACertificate                                         |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.5.4.37                                              |
-| System-ID-GUID    | bf967932-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967932-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Certificados de entidades de certificación de confianza.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | 0x8003                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                   |
 | En el catálogo global      | True                                                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                       |
 | Range-Upper            | 32 768                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                              |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Certificados de entidades de certificación de confianza.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | 0x8003                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                   |
 | En el catálogo global      | True                                                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                       |
 | Range-Upper            | 32 768                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                              |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Certificados de entidades de certificación de confianza.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | 0x8003                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                   |
 | En el catálogo global      | True                                                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                       |
 | Range-Upper            | 32 768                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                              |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Certificados de entidades de certificación de confianza.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | 0x8003                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                   |
 | En el catálogo global      | True                                                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                       |
 | Range-Upper            | 32 768                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                              |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Certificados de entidades de certificación de confianza.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | 0x8003                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                   |
 | En el catálogo global      | True                                                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                       |
 | Range-Upper            | 32 768                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                              |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Certificados de entidades de certificación de confianza.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                                                      |
 | MAPI-Id                | 0x8003                                                                                                                                                                                  |
 | System-Only            | False                                                                                                                                                                                   |
-| Tiene un único valor       | False                                                                                                                                                                                   |
+| Es de un solo valor       | False                                                                                                                                                                                   |
 | Está indexado             | False                                                                                                                                                                                   |
 | En el catálogo global      | True                                                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                            |
 | Range-Lower            | 1                                                                                                                                                                                       |
 | Range-Upper            | 32 768                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                                                              |
-| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Entidad de certificación**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

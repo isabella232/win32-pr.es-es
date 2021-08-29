@@ -4,12 +4,12 @@
     - name: Guía de programación para Direct3D 10
       href: d3d10-graphics-programming-guide.md
       items:
-        - name: Características de la API
+        - name: Características de API
           href: d3d10-graphics-programming-guide-api-features.md
           items:
             - name: Objetos de estados
               href: d3d10-graphics-programming-guide-api-features-state-objects.md
-            - name: Niveles de API
+            - name: Capas de API
               href: d3d10-graphics-programming-guide-api-features-layers.md
               items:
                 - name: Personalización de la salida de depuración con ID3D10InfoQueue
@@ -27,21 +27,21 @@
               href: d3d10-graphics-programming-guide-resources-types.md
             - name: Elección de un recurso
               href: d3d10-graphics-programming-guide-resources-choosing-basic.md
-            - name: Crear recursos de búfer
+            - name: Creación de recursos de búfer
               href: d3d10-graphics-programming-guide-resources-creating.md
-            - name: Crear recursos de textura
+            - name: Creación de recursos de textura
               href: d3d10-graphics-programming-guide-resources-creating-textures.md
-            - name: Copiar y obtener acceso a los datos de recursos
+            - name: Copia y acceso a datos de recursos
               href: d3d10-graphics-programming-guide-resources-mapping.md
             - name: Vistas de textura
               href: d3d10-graphics-programming-guide-resources-access-views.md
-            - name: Compresión de bloque
+            - name: Compresión de bloques
               href: d3d10-graphics-programming-guide-resources-block-compression.md
             - name: Límites de recursos
               href: d3d10-graphics-programming-guide-resources-limits.md
             - name: Sistemas de coordenadas
               href: d3d10-graphics-programming-guide-resources-coordinates.md
-            - name: Reglas de Floating-Point
+            - name: Floating-Point reglas
               href: d3d10-graphics-programming-guide-resources-float-rules.md
             - name: Reglas de conversión de datos
               href: d3d10-graphics-programming-guide-resources-data-conversion.md
@@ -52,11 +52,11 @@
           items:
             - name: Organización del estado en un efecto
               href: d3d10-graphics-programming-guide-effects-organize.md
-            - name: Interfaces del sistema de efectos
+            - name: Interfaces del sistema de efecto
               href: d3d10-graphics-programming-guide-effects-interfaces.md
-            - name: Interfaces especializadas
+            - name: Especialización de interfaces
               href: d3d10-graphics-reference-effect-specializing.md
-            - name: Representar un efecto
+            - name: Representación de un efecto
               href: d3d10-graphics-programming-guide-effects-render.md
               items:
                 - name: Compilar un efecto
@@ -73,7 +73,7 @@
           href: d3d10-graphics-programming-guide-d3d9-to-d3d10-considerations.md
         - name: Vinculación de bibliotecas estáticas y dinámicas
           href: d3d10-graphics-programming-guide-libs-and-dlls.md
-        - name: 'Características de Direct3D 10,1'
+        - name: Características de Direct3D 10.1
           href: d3d10-graphics-programming-guide-10-1.md
     - name: Referencia de Direct3D 10
       href: d3d10-graphics-reference.md
@@ -81,7 +81,7 @@
         - name: Referencia de Direct3D
           href: d3d10-graphics-reference-d3d10.md
           items:
-            - name: Referencia básica
+            - name: Referencia principal
               href: d3d10-graphics-reference-d3d10-core.md
               items:
                 - name: Interfaces básicas
@@ -355,7 +355,7 @@
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10devicechild-setprivatedata
                         - name: SetPrivateDataInterface
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10devicechild-setprivatedatainterface
-                    - name: ID3D10Include
+                    - name: ID3D10Incluir
                       href: /previous-versions/windows/desktop/legacy/bb173775(v=vs.85)
                       items:
                         - name: Cerrar
@@ -547,7 +547,7 @@
                       href: /windows/desktop/api/D3D10/ns-d3d10-d3d10_so_declaration_entry
                     - name: D3D10_VIEWPORT
                       href: /windows/desktop/api/D3D10/ns-d3d10-d3d10_viewport
-                - name: Enumeraciones básicas
+                - name: Enumeraciones principales
                   href: d3d10-graphics-reference-d3d10-core-enums.md
                   items:
                     - name: D3D10_ASYNC_GETDATA_FLAG
@@ -623,7 +623,7 @@
                       items:
                         - name: GetDesc
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10buffer-getdesc
-                        - name: Map
+                        - name: Asignación
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10buffer-map
                         - name: Unmap
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10buffer-unmap
@@ -661,7 +661,7 @@
                       items:
                         - name: GetDesc
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture1d-getdesc
-                        - name: Map
+                        - name: Asignación
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture1d-map
                         - name: Unmap
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture1d-unmap
@@ -670,7 +670,7 @@
                       items:
                         - name: GetDesc
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture2d-getdesc
-                        - name: Map
+                        - name: Asignación
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture2d-map
                         - name: Unmap
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture2d-unmap
@@ -679,7 +679,7 @@
                       items:
                         - name: GetDesc
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture3d-getdesc
-                        - name: Map
+                        - name: Asignación
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture3d-map
                         - name: Unmap
                           href: /windows/desktop/api/D3D10/nf-d3d10-id3d10texture3d-unmap
@@ -863,7 +863,7 @@
                           href: /windows/desktop/api/D3D10Shader/nf-d3d10shader-id3d10shaderreflectionvariable-gettype
                     - name: ID3D10VertexShader
                       href: /windows/desktop/api/d3d10/nn-d3d10-id3d10vertexshader
-                - name: Funciones del sombreador
+                - name: Funciones de sombreador
                   href: d3d10-graphics-reference-d3d10-shader-functions.md
                   items:
                     - name: D3D10CompileShader
@@ -961,12 +961,12 @@
                 - name: Constantes de sombreador
                   href: d3d10-graphics-reference-d3d10-shader-constants.md
                   items:
-                    - name: Constantes de D3D10_SHADER
+                    - name: D3D10_SHADER constantes
                       href: d3d10-shader.md
-            - name: Referencia de efectos
+            - name: Referencia de efecto
               href: d3d10-graphics-reference-effect.md
               items:
-                - name: Interfaces de efectos
+                - name: Interfaces de efecto
                   href: d3d10-graphics-reference-effect-interfaces.md
                   items:
                     - name: ID3D10Effect
@@ -1077,7 +1077,7 @@
                     - name: ID3D10EffectPool
                       href: /windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effectpool
                       items:
-                        - name: Aplicar
+                        - name: AsEffect
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectpool-aseffect
                     - name: ID3D10EffectRasterizerVariable
                       href: /windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effectrasterizervariable
@@ -1201,7 +1201,7 @@
                     - name: ID3D10EffectVariable
                       href: /windows/desktop/api/D3D10Effect/nn-d3d10effect-id3d10effectvariable
                       items:
-                        - name: Asblend
+                        - name: AsBlend
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asblend
                         - name: AsConstantBuffer
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asconstantbuffer
@@ -1209,23 +1209,23 @@
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asdepthstencil
                         - name: AsDepthStencilView
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asdepthstencilview
-                        - name: Asmatrix
+                        - name: AsMatrix
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asmatrix
-                        - name: Asrasterizador
+                        - name: AsRasterizer
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asrasterizer
                         - name: AsRenderTargetView
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asrendertargetview
-                        - name: Asmuestreador
+                        - name: AsSampler
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-assampler
-                        - name: Asescalar
+                        - name: AsScalar
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asscalar
-                        - name: Assombreador
+                        - name: AsShader
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asshader
                         - name: AsShaderResource
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asshaderresource
                         - name: AsString
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asstring
-                        - name: Asvector
+                        - name: AsVector
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-asvector
                         - name: GetAnnotationByIndex
                           href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-id3d10effectvariable-getannotationbyindex
@@ -1307,7 +1307,7 @@
                       href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-d3d10stateblockmaskintersect
                     - name: D3D10StateBlockMaskUnion
                       href: /windows/desktop/api/D3D10Effect/nf-d3d10effect-d3d10stateblockmaskunion
-                - name: Estructuras de efectos
+                - name: Estructuras de efecto
                   href: d3d10-graphics-reference-effect-structures.md
                   items:
                     - name: D3D10_EFFECT_DESC
@@ -1327,33 +1327,33 @@
                 - name: Constantes de efecto
                   href: d3d10-graphics-reference-effect-constants.md
                   items:
-                    - name: Constantes de D3D10_EFFECT
+                    - name: D3D10_EFFECT constantes
                       href: d3d10-effect.md
-                    - name: Constantes de D3D10_EFFECT_VARIABLE
+                    - name: D3D10_EFFECT_VARIABLE constantes
                       href: d3d10-effect-variable.md
                 - name: Formato de efecto
                   href: d3d10-effect-format.md
                   items:
-                    - name: Sintaxis de variables de efectos
+                    - name: Sintaxis de variable de efecto
                       href: d3d10-effect-variable-syntax.md
                       items:
                         - name: Sintaxis de anotación
                           href: d3d10-effect-annotation-syntax.md
-                        - name: 'Sintaxis de muestrario de efectos (desusado, Direct3D 10)'
+                        - name: 'Sintaxis del sampler de efecto (en desuso, Direct3D 10)'
                           href: d3d10-effect-sampler-syntax.md
-                    - name: Sintaxis de la función Effect
+                    - name: Sintaxis de función de efecto
                       href: d3d10-effect-function-syntax.md
-                    - name: Sintaxis de la técnica de efectos
+                    - name: Sintaxis de la técnica de efecto
                       href: d3d10-effect-technique-syntax.md
                       items:
-                        - name: Grupos de Estados de efecto
+                        - name: Grupos de estados de efecto
                           href: d3d10-effect-states.md
             - name: Códigos de retorno de Direct3D 10
               href: d3d10-graphics-reference-returnvalues.md
         - name: Referencia de D3DX
           href: d3d10-graphics-reference-d3dx10.md
           items:
-            - name: Interfaces de D3DX
+            - name: D3DX Interfaces
               href: d3d10-graphics-reference-d3dx10-interfaces.md
               items:
                 - name: ID3DX10DataLoader
@@ -1363,7 +1363,7 @@
                       href: id3dx10dataloader-decompress.md
                     - name: Destruir
                       href: id3dx10dataloader-destroy.md
-                    - name: Carga
+                    - name: Cargar
                       href: id3dx10dataloader-load.md
                 - name: ID3DX10DataProcessor
                   href: id3dx10dataprocessor.md
@@ -1377,7 +1377,7 @@
                 - name: ID3DX10Font
                   href: id3dx10font.md
                   items:
-                    - name: DrawText
+                    - name: Drawtext
                       href: id3dx10font-drawtext.md
                     - name: GetDC
                       href: id3dx10font-getdc.md
@@ -1463,36 +1463,36 @@
                   items:
                     - name: GetSize
                       href: id3dx10meshbuffer-getsize.md
-                    - name: Map
+                    - name: Asignación
                       href: id3dx10meshbuffer-map.md
                     - name: Unmap
                       href: id3dx10meshbuffer-unmap.md
                 - name: ID3DX10SkinInfo
                   href: id3dx10skininfo.md
                   items:
-                    - name: AddBoneInfluences
+                    - name: AddIonalInfluences
                       href: id3dx10skininfo-addboneinfluences.md
                     - name: AddBones
                       href: id3dx10skininfo-addbones.md
                     - name: AddVertices
                       href: id3dx10skininfo-addvertices.md
-                    - name: ClearBoneInfluences
+                    - name: ClearIonalInfluences
                       href: id3dx10skininfo-clearboneinfluences.md
                     - name: Compacto
                       href: id3dx10skininfo-compact.md
                     - name: DoSoftwareSkinning
                       href: id3dx10skininfo-dosoftwareskinning.md
-                    - name: FindBoneInfluenceIndex
+                    - name: FindIonalInfluenceIndex
                       href: id3dx10skininfo-findboneinfluenceindex.md
-                    - name: GetBoneInfluence
+                    - name: GetIonalInfluence
                       href: id3dx10skininfo-getboneinfluence.md
-                    - name: GetBoneInfluenceCount
+                    - name: GetIonalInfluenceCount
                       href: id3dx10skininfo-getboneinfluencecount.md
-                    - name: GetBoneInfluences
+                    - name: GetIonalInfluences
                       href: id3dx10skininfo-getboneinfluences.md
-                    - name: GetMaxBoneInfluences
+                    - name: GetMaxIonalInfluences
                       href: id3dx10skininfo-getmaxboneinfluences.md
-                    - name: GetNumBones
+                    - name: GetNumIonals
                       href: id3dx10skininfo-getnumbones.md
                     - name: GetNumVertices
                       href: id3dx10skininfo-getnumvertices.md
@@ -1502,7 +1502,7 @@
                       href: id3dx10skininfo-remapvertices.md
                     - name: RemoveBone
                       href: id3dx10skininfo-removebone.md
-                    - name: SetBoneInfluence
+                    - name: SetIonalInfluence
                       href: id3dx10skininfo-setboneinfluence.md
                 - name: ID3DX10Sprite
                   href: id3dx10sprite.md
@@ -1575,10 +1575,10 @@
                       href: id3dxmatrixstack-translate.md
                     - name: TranslateLocal
                       href: id3dxmatrixstack-translatelocal.md
-            - name: Funciones de D3DX
+            - name: Funciones D3DX
               href: d3d10-graphics-reference-d3dx10-functions.md
               items:
-                - name: Funciones de De uso general
+                - name: De uso general functions
                   href: d3d10-graphics-reference-d3dx10-functions-general-purpose.md
                   items:
                     - name: D3DX10CheckVersion
@@ -1784,7 +1784,7 @@
                       href: d3d10-d3dxquaternionsquadsetup.md
                     - name: D3DXQuaternionToAxisAngle
                       href: d3d10-d3dxquaterniontoaxisangle.md
-                    - name: D3DXSHAdd
+                    - name: D3DXSHAgregue
                       href: d3d10-d3dxshadd.md
                     - name: D3DXSHDot
                       href: d3d10-d3dxshdot.md
@@ -1794,7 +1794,7 @@
                       href: d3d10-d3dxshevaldirection.md
                     - name: D3DXSHEvalDirectionalLight
                       href: d3d10-d3dxshevaldirectionallight.md
-                    - name: D3DXSHEvalHemisphereLight
+                    - name: D3DXSHEvalRriisphereLight
                       href: d3d10-d3dxshevalhemispherelight.md
                     - name: D3DXSHEvalSphericalLight
                       href: d3d10-d3dxshevalsphericallight.md
@@ -1930,7 +1930,7 @@
                       href: d3dx10savetexturetofile.md
                     - name: D3DX10SaveTextureToMemory
                       href: d3dx10savetexturetomemory.md
-            - name: Estructuras de D3DX
+            - name: Estructuras D3DX
               href: d3d10-graphics-reference-d3dx10-structures.md
               items:
                 - name: D3DMATRIX
@@ -1981,7 +1981,7 @@
                   href: d3d10-d3dxvector4.md
                 - name: D3DXVECTOR4_16F
                   href: d3d10-d3dxvector4-16f.md
-            - name: Enumeraciones de D3DX
+            - name: Enumeraciones D3DX
               href: d3d10-graphics-reference-d3dx10-enums.md
               items:
                 - name: D3DX10_CHANNEL_FLAG

@@ -1,11 +1,11 @@
 ---
-title: Atributo de ID. de configuración regional
-description: Este atributo contiene una lista de identificadores de configuración regional admitidos por esta aplicación. Un ID. de configuración regional representa una ubicación geográfica, como un país o región, una ciudad, un condado, etc.
+title: Atributo Locale-ID
+description: Este atributo contiene una lista de los id. de configuración regional admitidos por esta aplicación. Un identificador de configuración regional representa una ubicación geográfica, como un país o región, una ciudad, un condado, y así sucesivamente.
 ms.assetid: 60629155-2bdf-4080-bb88-c8db749ef954
 ms.tgt_platform: multiple
 keywords:
-- Atributo de ID. de configuración regional esquema de AD
-- atributo localeID esquema de AD
+- Esquema de AD del atributo Locale-ID
+- Esquema de AD del atributo localeID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9764c9c1939281501f82cbfacd60bcc6eec2f698
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dee343011d8e8c2dda9e4aa20f0a64eceb43071c9b58e03678bc418c9b11a400
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705875"
 ---
-# <a name="locale-id-attribute"></a>Atributo de ID. de configuración regional
+# <a name="locale-id-attribute"></a>Atributo Locale-ID
 
-Este atributo contiene una lista de identificadores de configuración regional admitidos por esta aplicación. Un ID. de configuración regional representa una ubicación geográfica, como un país o región, una ciudad, un condado, etc.
+Este atributo contiene una lista de los id. de configuración regional admitidos por esta aplicación. Un identificador de configuración regional representa una ubicación geográfica, como un país o región, una ciudad, un condado, y así sucesivamente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------|
-| CN                | IDENTIFICADOR de configuración regional                                                                  |
-| Nombre para mostrar de LDAP | localeID                                                                   |
-| Tamaño              | 4 bytes                                                                    |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                     |
-| Frecuencia de actualización  | Cuando se crea el registro de usuario y cada vez que es necesario cambiar el emplazamiento. |
+| CN                | Locale-ID                                                                  |
+| Ldap-Display-Name | localeID                                                                   |
+| Size              | 4 bytes                                                                    |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                     |
+| Frecuencia de actualización  | Cuando se crea el registro de usuario y cada vez que es necesario cambiar la localidad. |
 | Attribute-Id      | 1.2.840.113556.1.4.58                                                      |
-| System-ID-GUID    | bf9679a1-0de6-11d0-a285-00aa003049e2                                       |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                                       |
+| System-Id-Guid    | bf9679a1-0de6-11d0-a285-00aa003049e2                                       |
+| Syntax            | [**Enumeración**](s-enumeration.md)                                       |
 
 
 
@@ -55,18 +55,18 @@ Este atributo contiene una lista de identificadores de configuración regional a
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                            |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo contiene una lista de identificadores de configuración regional a
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                            |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Este atributo contiene una lista de identificadores de configuración regional a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                            |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Este atributo contiene una lista de identificadores de configuración regional a
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                            |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo contiene una lista de identificadores de configuración regional a
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                            |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo contiene una lista de identificadores de configuración regional a
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                    |
+| Id. de vínculo                | \-                                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                                    |
-| System-Only            | False                                                                                                                                                                 |
-| Tiene un único valor       | False                                                                                                                                                                 |
-| Está indexado             | False                                                                                                                                                                 |
-| En el catálogo global      | False                                                                                                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                          |
+| System-Only            | Falso                                                                                                                                                                 |
+| Es de un solo valor       | Falso                                                                                                                                                                 |
+| Está indexado             | Falso                                                                                                                                                                 |
+| En el catálogo global      | Falso                                                                                                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                                    |
 | Search-Flags           | 0x00000010                                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                                            |
-| Clases usadas en        | [**Categoría-registro**](c-categoryregistration.md)<br/> [**Paquete-registro**](c-packageregistration.md)<br/> [**Usuario**](c-user.md)<br/> |
+| Clases usadas en        | [**Registro de categoría**](c-categoryregistration.md)<br/> [**Registro de paquetes**](c-packageregistration.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 

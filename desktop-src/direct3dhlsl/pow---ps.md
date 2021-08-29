@@ -1,6 +1,6 @@
 ---
-title: Pow-PS
-description: SRC1 de precisión completa ABS (src0). | Pow-PS
+title: 'pow : ps'
+description: 'Abs(src0)src1 de precisión completa. | pow : ps'
 ms.assetid: 39037c51-a524-459c-8422-bd7831e2aa3d
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 84be39ca8f2633482165d76eabfe0f5d0bb22161
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: eb108df22e1b0987a73253afcc2ce79b2af1aeff0a7d39a0aa3f57155d233b9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457225"
 ---
-# <a name="pow---ps"></a>Pow-PS
+# <a name="pow---ps"></a>pow : ps
 
-<sup>SRC1</sup>de precisión completa ABS (src0).
+Abs(src0)<sup>src1</sup>de precisión completa.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| Pow DST, src0, SRC1 |
+| pow dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
--   src0 es un registro de origen de entrada. El registro de origen requiere el uso explícito de replicate swizzle, es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes).
--   SRC1 es un registro de origen de entrada. El registro de origen requiere el uso explícito de replicate swizzle, es decir, se debe especificar exactamente uno de los componentes. x,. y,. z,. w swizzle (o. r,. g,. b,. a equivalentes).
+-   dst es el registro de destino.
+-   src0 es un registro de origen de entrada. El registro de origen requiere el uso explícito de replicar swzzle, es decir, debe especificarse exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes).
+-   src1 es un registro de origen de entrada. El registro de origen requiere el uso explícito de replicar swzzle, es decir, debe especificarse exactamente uno de los componentes .x, .y, .z, .w swzzle (o .r, .g, .b, .a equivalentes).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | pow                   |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -51,17 +51,17 @@ ms.locfileid: "104986295"
 
 Esta instrucción funciona de la siguiente manera:
 
-dest. x = dest. y = dest. z = dest. w = \[ ABS (src0) \] <sup>SRC1</sup>;
+dest.x = dest.y = dest.z = dest.w = \[ abs(src0) \] <sup>src1</sup>;
 
-Se trata de una instrucción escalar, por lo que los registros de origen deben tener replicar swizzles para indicar qué canales se usan.
+Se trata de una instrucción escalar, por lo que los registros de origen deben tener swlinos de replicación para indicar qué canales se usan.
 
-La potencia de entrada (SRC1) debe ser un escalar.
+La potencia de entrada (src1) debe ser escalar.
 
 El resultado escalar se replica en los cuatro canales de salida.
 
-Esta instrucción se puede expandir como exp (SRC1 \* log (src0)).
+Esta instrucción se podría expandir como exp(src1 \* log(src0)).
 
-El registro de DST debe ser un registro temporal y no debe ser el mismo registro que SRC1.
+El registro dst debe ser un registro temporal y no debe ser el mismo registro que src1.
 
 ## <a name="related-topics"></a>Temas relacionados
 

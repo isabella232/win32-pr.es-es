@@ -1,10 +1,10 @@
 ---
-title: DRM_AUDIO_OUTPUT_PROTECTION_IDS_EX estructura (wmdrmsdk. h)
-description: La \_ \_ estructura de los ID. de protección de la salida de audio DRM \_ \_ \_ contiene una lista de identificadores de protección de salida de audio. Esta estructura extiende los \_ \_ \_ identificadores de protección de salida de audio DRM \_ agregando un número de versión.
+title: DRM_AUDIO_OUTPUT_PROTECTION_IDS_EX estructura (Wmdrmsdk.h)
+description: La estructura DRM \_ AUDIO \_ OUTPUT PROTECTION \_ \_ IDS EX contiene una lista de \_ identificadores de protección de salida de audio. Esta estructura amplía los identificadores de PROTECCIÓN DE SALIDA DE AUDIO DE DRM \_ \_ \_ \_ agregando un número de versión.
 ms.assetid: e650ddeb-5e41-4ff8-b872-40c85ab519c1
 keywords:
-- DRM_AUDIO_OUTPUT_PROTECTION_IDS_EX estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- DRM_AUDIO_OUTPUT_PROTECTION_IDS_EX structure windows Media Format
+- Estructura de windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb687b5600e75f845c2d980f73f3b8c2eeda970a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f08489b15efbfae594138185202db0b5b8472570c8e67a6aa71904236c9b6ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705665"
 ---
-# <a name="drm_audio_output_protection_ids_ex-structure"></a>\_Estructura de \_ los \_ \_ identificadores \_ de salida de audio DRM
+# <a name="drm_audio_output_protection_ids_ex-structure"></a>Estructura EX \_ de LA PROTECCIÓN DE SALIDA DE AUDIO \_ \_ \_ \_ DRM
 
-La estructura de los ID. de protección de la **\_ salida de audio \_ \_ \_ \_ DRM** contiene una lista de identificadores de protección de salida de audio. Esta estructura extiende **los \_ \_ \_ \_ identificadores de protección de salida de audio DRM** agregando un número de versión.
+La **estructura DRM AUDIO OUTPUT PROTECTION \_ \_ \_ \_ IDS \_ EX** contiene una lista de identificadores de protección de salida de audio. Esta estructura amplía los identificadores **de PROTECCIÓN DE SALIDA DE AUDIO \_ \_ \_ \_ DE DRM** agregando un número de versión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,14 +53,14 @@ Número de versión.
 **cEntries**
 </dt> <dd>
 
-Número de entradas de la matriz **rgAop** .
+Número de entradas de la **matriz rgAop.**
 
 </dd> <dt>
 
 **rgAop**
 </dt> <dd>
 
-Matriz de **estructuras \_ \_ ex de \_ protección \_ de salida de audio DRM** . **DRM \_ La \_ protección de salida de audio \_ \_ ex** es un tipo definido como [**protección de \_ salida DRM \_ \_ ex**](drm-output-protection-ex.md).
+Matriz de **estructuras DRM AUDIO OUTPUT PROTECTION \_ \_ \_ \_ EX.** **DRM \_ AUDIO \_ OUTPUT \_ PROTECTION \_ EX** es un tipo definido como [**DRM OUTPUT PROTECTION \_ \_ \_ EX**](drm-output-protection-ex.md).
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -82,10 +82,10 @@ Ninguno.
 
 <dl> <dt>
 
-[**\_ \_ \_ identificadores de protección de salida de audio DRM \_**](drm-audio-output-protection-ids.md)
+[**IDENTIFICADORES \_ DE PROTECCIÓN DE SALIDA DE AUDIO \_ \_ \_ DRM**](drm-audio-output-protection-ids.md)
 </dt> <dt>
 
-[**\_ \_ \_ identificadores de protección de salida de \_ vídeo DRM \_**](drm-video-output-protection-ids-ex.md)
+[**IDENTIFICADORES \_ DE PROTECCIÓN DE SALIDA DE VÍDEO \_ \_ \_ \_ DRM, POR EJEMPLO,**](drm-video-output-protection-ids-ex.md)
 </dt> <dt>
 
 [**Estructuras**](drm-structures.md)

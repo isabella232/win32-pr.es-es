@@ -1,9 +1,9 @@
 ---
-title: WM/lenguaje
-description: El atributo WM/Language contiene el lenguaje de la secuencia.
+title: WM/Language
+description: El atributo WM/Language contiene el idioma de la secuencia.
 ms.assetid: 840f95b0-c8f2-4da6-9a76-3870b2325a42
 keywords:
-- Formato de Windows Media WM/idioma
+- Formato multimedia de Windows WM/Language
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e1261d632eecd5271ed2a7cc8d7b1dd37d369f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: afb7f6e2016bcc51b70812b0fe1eea27c419f66772e8c8a795796da183c19b12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584515"
 ---
-# <a name="wmlanguage"></a>WM/lenguaje
+# <a name="wmlanguage"></a>WM/Language
 
-El atributo **WM/Language** contiene el lenguaje de la secuencia.
+El **atributo WM/Language** contiene el idioma de la secuencia.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMLanguage
 
 ## <a name="data-type"></a>Tipo de datos
 
-**\_cadena de tipo WMT \_**
+**CADENA DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La cadena de idioma utilizada debe ser compatible con RFC 1766. Para obtener más información, vea [Language Strings](language-strings.md).
+La cadena de idioma usada debe ser compatible con RFC 1766. Para obtener más información, vea [Cadenas de lenguaje](language-strings.md).
 
 ### <a name="example"></a>Ejemplo
 
@@ -41,11 +41,11 @@ La cadena de idioma utilizada debe ser compatible con RFC 1766. Para obtener má
 
 | Tipo de archivo | Valor de ejemplo |
 |-----------|---------------|
-| All       | "en-US"       |
+| Todo       | "en-us"       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -54,9 +54,9 @@ La cadena de idioma utilizada debe ser compatible con RFC 1766. Para obtener má
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Método ReinstallAgreementLicenseKeyPack de la clase Win32_TSLicenseKeyPack
-description: Vuelve a instalar un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.
+title: Método ReinstallAgreementLicenseKeyPack de la Win32_TSLicenseKeyPack clase
+description: Vuelve a instalar un Servicios de Escritorio remoto de claves de licencia que se compró a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.
 ms.assetid: BC3C966B-E6CE-45E2-BC1D-2439B75D4C3C
 ms.tgt_platform: multiple
 keywords:
 - Método ReinstallAgreementLicenseKeyPack Servicios de Escritorio remoto
-- Método ReinstallAgreementLicenseKeyPack Servicios de Escritorio remoto, clase Win32_TSLicenseKeyPack
-- Win32_TSLicenseKeyPack de clase Servicios de Escritorio remoto, método ReinstallAgreementLicenseKeyPack
+- Método ReinstallAgreementLicenseKeyPack Servicios de Escritorio remoto , Win32_TSLicenseKeyPack clase
+- Win32_TSLicenseKeyPack clase Servicios de Escritorio remoto , método ReinstallAgreementLicenseKeyPack
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 821ff6dc538a670e03757253b616ff16489dc108
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15894ec80819cf39c7eaee45eb6f943e6fd8930618154be62e6a15969b597190
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513885"
 ---
-# <a name="reinstallagreementlicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Método ReinstallAgreementLicenseKeyPack de la \_ clase TSLicenseKeyPack de Win32
+# <a name="reinstallagreementlicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Método ReinstallAgreementLicenseKeyPack de la clase TSLicenseKeyPack de Win32 \_
 
-Vuelve a instalar un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.
+Vuelve a instalar un Servicios de Escritorio remoto de claves de licencia que se compró a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ uint32 ReinstallAgreementLicenseKeyPack(
 
 <dl> <dt>
 
-*AgreementType* \[ de\]
+*AgreementType* \[ En\]
 </dt> <dd>
 
 Tipo de contrato.
@@ -58,53 +58,53 @@ Tipo de contrato.
 0
 </dt> <dd>
 
-El paquete de claves de licencia procede de un contrato de licencia por volumen Select (para clientes con 250 o más equipos). El parámetro *sAgreementNumber* es el número de inscripción (siete dígitos) que se encuentra en el formulario del acuerdo firmado.
+El paquete de claves de licencia es de un contrato de licencia select volume (para clientes con 250 o más equipos). El *parámetro sAgreementNumber es* el número de inscripción (siete dígitos numéricos) que se encuentra en el formulario del contrato firmado.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-El paquete de claves de licencia procede de un contrato de licencia por volumen empresarial para clientes con 250 o más equipos. El parámetro *sAgreementNumber* es el número de inscripción (siete dígitos) que se encuentra en el formulario del acuerdo firmado.
+El paquete de claves de licencia es de Enterprise contrato de licencia por volumen para clientes con 250 o más equipos. El *parámetro sAgreementNumber es* el número de inscripción (siete dígitos numéricos) que se encuentra en el formulario del contrato firmado.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-El paquete de claves de licencia procede de un contrato de licencia por volumen de campus para una institución de educación superior. El parámetro *sAgreementNumber* es el número de inscripción (siete dígitos) que se encuentra en el formulario del acuerdo firmado.
+El paquete de claves de licencia es de un contrato de licencia por volumen de Campus para una institución de educación superior. El *parámetro sAgreementNumber es* el número de inscripción (siete dígitos numéricos) que se encuentra en el formulario del contrato firmado.
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-El paquete de claves de licencia proviene de un contrato de licencia por volumen escolar para instituciones principales y secundarias. El parámetro *sAgreementNumber* es el número de inscripción (siete dígitos) que se encuentra en el formulario del acuerdo firmado.
+El paquete de claves de licencia es de un contrato de licencia por volumen educativo para las instituciones primarias y secundarias. El *parámetro sAgreementNumber es* el número de inscripción (siete dígitos numéricos) que se encuentra en el formulario del contrato firmado.
 
 </dd> <dt>
 
 4
 </dt> <dd>
 
-El paquete de claves de licencia procede de un contrato de licencia de proveedor de servicios para que los proveedores de servicios de licencias de software de Microsoft se basen mensualmente. El parámetro *sAgreementNumber* es el número de inscripción (siete dígitos) que se encuentra en el formulario del acuerdo firmado.
+El paquete de claves de licencia es de un contrato de licencia del proveedor de servicios para que los proveedores de servicios licencian software de Microsoft mensualmente. El *parámetro sAgreementNumber es* el número de inscripción (siete dígitos numéricos) que se encuentra en el formulario del contrato firmado.
 
 </dd> <dt>
 
 5
 </dt> <dd>
 
-El paquete de claves de licencia procede de otro contrato de licencia, como un valor abierto, una licencia Open de varios años y una licencia de suscripción abierta. El parámetro *sAgreementNumber* es el número de contrato proporcionado con la información del programa.
+El paquete de claves de licencia es de otro contrato de licencia, como Open Value, Multi-Year Open License y Open Subscription License. El *parámetro sAgreementNumber* es el número de contrato proporcionado con la información del programa.
 
 </dd> </dl> </dd> <dt>
 
-*sAgreementNumber* \[ de\]
+*sAgreementNumber* \[ En\]
 </dt> <dd>
 
-Número de contrato o número de inscripción. El parámetro *sAgreementNumber* es una cadena numérica de siete dígitos sin guiones.
+Número de contrato o número de inscripción. El *parámetro sAgreementNumber* es una cadena numérica de siete dígitos sin guiones.
 
 </dd> <dt>
 
-*ProductVersion* \[ de\]
+*ProductVersion* \[ En\]
 </dt> <dd>
 
 Versión del producto.
@@ -114,14 +114,14 @@ Versión del producto.
 0
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ Windows Server 2008
 
 </dd> </dl> </dd> <dt>
 
-*ProductType* \[ de\]
+*ProductType* \[ En\]
 </dt> <dd>
 
 Tipo de producto.
@@ -142,14 +142,14 @@ Tipo de producto.
 0
 </dt> <dd>
 
-El tipo de producto del paquete de claves de licencia Servicios de Escritorio remoto es por dispositivo. Por lo tanto, cada dispositivo que se conecta al servidor host de sesión de escritorio remoto debe tener una licencia.
+El Servicios de Escritorio remoto de producto del paquete de claves de licencia es por dispositivo. Por lo tanto, cada dispositivo que se conecta al servidor host de sesión de Escritorio remoto debe tener una licencia.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-El tipo de producto del paquete de claves de licencia Servicios de Escritorio remoto es por usuario. Por lo tanto, cada usuario que se conecta al servidor host de sesión de escritorio remoto debe tener una licencia.
+El Servicios de Escritorio remoto de producto del paquete de claves de licencia es por usuario. Por lo tanto, cada usuario que se conecta al servidor host de sesión de Escritorio remoto debe tener una licencia.
 
 </dd> <dt>
 
@@ -160,14 +160,14 @@ Este tipo de producto no es válido.
 
 </dd> </dl> </dd> <dt>
 
-*LicenseCount* \[ de\]
+*LicenseCount* \[ En\]
 </dt> <dd>
 
-Número de licencias que se van a instalar.
+Número de licencias que se instalarán.
 
 </dd> <dt>
 
-*KeyPackId* \[ enuncia\]
+*KeyPackId* \[ out\]
 </dt> <dd>
 
 Recibe el identificador del paquete de claves.
@@ -176,7 +176,7 @@ Recibe el identificador del paquete de claves.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -187,7 +187,7 @@ Si el método se ejecuta correctamente, devuelve cero. Si el método no se reali
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

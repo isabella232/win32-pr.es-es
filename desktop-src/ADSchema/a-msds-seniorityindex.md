@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Senior-index
-description: Contiene el índice de antigüedad tal como lo aplica la organización en la que trabaja la persona. | atributo MS-DS-Senior-index
+title: Atributo ms-DS-Seniority-Index
+description: Contiene el índice de antigüedad aplicado por la organización donde trabaja la persona. | Atributo ms-DS-Seniority-Index
 ms.assetid: d2fae29b-fab0-48b4-a4df-9259e99eb952
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de índice de MS-DS-Seniority
-- Esquema de AD de atributo msDS-SeniorityIndex
+- Esquema de AD del atributo ms-DS-Seniority-Index
+- Esquema de AD del atributo msDS-SeniorityIndex
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d245dd8232cfa962a743454bf68c5b4e098877c2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d501626611f965df099675b53507eb79b396ee6fc6f8c3b509371e3c3d983480
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544715"
 ---
-# <a name="ms-ds-seniority-index-attribute"></a>atributo MS-DS-Senior-index
+# <a name="ms-ds-seniority-index-attribute"></a>Atributo ms-DS-Seniority-Index
 
-Contiene el índice de antigüedad tal como lo aplica la organización en la que trabaja la persona.
+Contiene el índice de antigüedad aplicado por la organización donde trabaja la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-Senior-index                |
-| Nombre para mostrar de LDAP | msDS-SeniorityIndex                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Seniority-Index                |
+| Ldap-Display-Name | msDS-SeniorityIndex                  |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1947              |
-| System-ID-GUID    | ce7ba5d4-f090-4741-acc3-15e2c95555da |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ce7ba5d4-f090-4741-acc3-15e2c95555da |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,13 +50,13 @@ Contiene el índice de antigüedad tal como lo aplica la organización en la que
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C9C                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
