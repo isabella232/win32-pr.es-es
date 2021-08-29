@@ -1,9 +1,9 @@
 ---
-title: MediaType (atributo)
+title: Atributo MediaType
 description: El atributo MediaType es el tipo de contenido del elemento.
 ms.assetid: 0d8a6937-32d8-4a4a-87e5-0002f077fefe
 keywords:
-- Atributo MediaType Media Player Windows
+- Atributo MediaType Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,33 +12,33 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5779552f62007aa3dd3da0e2f4253fcf5499a6be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 57f75871e2b258b229483114be8f7673cccb7ca005e0b3618f4cfd803d47fe3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996235"
 ---
-# <a name="mediatype-attribute"></a>MediaType (atributo)
+# <a name="mediatype-attribute"></a>Atributo MediaType
 
-El atributo **mediatype** es el tipo de contenido del elemento.
+El **atributo MediaType** es el tipo de contenido del elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
--   [Elementos de fotografía](photo-item-attributes.md)
--   [Reproducción](playlist-attributes-ref.md)
+-   [Elementos de fotos](photo-item-attributes.md)
+-   [Listas](playlist-attributes-ref.md)
 -   [Elementos de radio](radio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Este atributo tiene uno de los valores siguientes: "audio", "otro", "foto", "lista de reproducción", "radio" o "vídeo". Use este atributo con el *MediaCollection*. método **getByAttribute** para recuperar una lista de reproducción que contenga todos los elementos de un tipo determinado.
+Este atributo tiene uno de los siguientes valores: "audio", "other", "photo", "playlist", "radio" o "video". Use este atributo con *MediaCollection*. **Método getByAttribute** para recuperar una lista de reproducción que contiene todos los elementos de un tipo determinado.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -54,7 +54,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> <dt>
 
 [**MediaCollection.getByAttribute**](mediacollection-getbyattribute.md)

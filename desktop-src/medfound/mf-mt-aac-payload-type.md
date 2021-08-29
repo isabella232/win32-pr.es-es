@@ -1,17 +1,17 @@
 ---
 description: Especifica el tipo de carga de una secuencia de codificación de audio avanzada (AAC).
 ms.assetid: a032fcf4-2584-4047-adbd-d94d4fc4e841
-title: MF_MT_AAC_PAYLOAD_TYPE atributo (mfapi. h)
+title: MF_MT_AAC_PAYLOAD_TYPE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd3edba98bdac54b12fb6e3e44fb67373f7fce6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c4c7852e5719f2293e21f7f37c761c39a14dca132113c6b9224038c640e3d2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105721579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940685"
 ---
-# <a name="mf_mt_aac_payload_type-attribute"></a>\_Atributo de \_ \_ tipo de carga de módulo MF MT AAC \_
+# <a name="mf_mt_aac_payload_type-attribute"></a>Atributo MF \_ MT \_ AAC \_ PAYLOAD \_ TYPE
 
 Especifica el tipo de carga de una secuencia de codificación de audio avanzada (AAC).
 
@@ -19,16 +19,16 @@ Especifica el tipo de carga de una secuencia de codificación de audio avanzada 
 
 **UINT32**
 
-Los valores siguientes son posibles.
+Los siguientes valores son posibles.
 
 
 
 | Value                                                                        | Significado                                                                                                                           |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | El flujo solo contiene \_ elementos de bloque de datos sin procesar \_ .<br/>                                                                    |
-| <dl> <dt>1</dt> </dl> | Secuencia de transporte de datos de audio (ADTS). La secuencia contiene una \_ secuencia ADTS, tal y como se define en MPEG-2.<br/>                       |
-| <dl> <dt>2</dt> </dl> | Formato de intercambio de datos de audio (ADIF). La secuencia contiene una \_ secuencia Adif, tal y como se define en MPEG-2.<br/>                     |
-| <dl> <dt>3</dt> </dl> | La secuencia contiene una secuencia de transporte de audio MPEG-4 con una capa de sincronización (Loa) y una capa de multiplexación (LATM).<br/> |
+| <dl> <dt>0</dt> </dl> | La secuencia solo contiene elementos \_ de bloque de datos sin \_ procesar.<br/>                                                                    |
+| <dl> <dt>1</dt> </dl> | Secuencia de transporte de datos de audio (ADTS). La secuencia contiene una secuencia de adts, \_ tal como se define en MPEG-2.<br/>                       |
+| <dl> <dt>2</dt> </dl> | Formato de intercambio de datos de audio (ADIF). La secuencia contiene una secuencia de \_ adif, tal como se define en MPEG-2.<br/>                     |
+| <dl> <dt>3</dt> </dl> | La secuencia contiene una secuencia de transporte de audio MPEG-4 con una capa de sincronización (LOAS) y una capa multiplex (LATM).<br/> |
 
 
 
@@ -36,21 +36,21 @@ Los valores siguientes son posibles.
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Se aplica a
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El \_ \_ tipo de carga AAC MT AAC \_ \_ es opcional. Si no se especifica este atributo, se usa el valor predeterminado 0, que especifica que la secuencia contiene \_ solo elementos de bloque de datos sin procesar \_ .
+MF \_ MT \_ AAC PAYLOAD TYPE es \_ \_ opcional. Si no se especifica este atributo, se usa el valor predeterminado 0, que especifica que la secuencia solo contiene elementos \_ de bloque de datos sin \_ procesar.
 
-Solo se aplica a **MFAudioFormat \_ AAC**.
+Solo se aplica a **MFAudioFormat \_ AAC.**
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mfapi. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -66,10 +66,10 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

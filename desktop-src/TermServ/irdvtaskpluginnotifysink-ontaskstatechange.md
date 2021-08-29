@@ -1,12 +1,12 @@
 ---
-title: IRDVTaskPluginNotifySink OnTaskStateChange, método
+title: Método IRDVTaskPluginNotifySink OnTaskStateChange
 description: Se usa para notificar al agente de desencadenador que el estado de una tarea ha cambiado.
 ms.assetid: 3021ea7a-2627-48d1-8df5-c40e7a9b51c5
 ms.tgt_platform: multiple
 keywords:
 - Método OnTaskStateChange Servicios de Escritorio remoto
-- Método OnTaskStateChange Servicios de Escritorio remoto, interfaz IRDVTaskPluginNotifySink
-- Interfaz IRDVTaskPluginNotifySink Servicios de Escritorio remoto, método OnTaskStateChange
+- Método OnTaskStateChange Servicios de Escritorio remoto , interfaz IRDVTaskPluginNotifySink
+- Interfaz IRDVTaskPluginNotifySink Servicios de Escritorio remoto , método OnTaskStateChange
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c3e3acf1a2d47b1721ef90554f7a11714c02e6df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6e580a78ba14363b140d48896d63ddafaf27f5a2e64c9ff18045b007bcc8d9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129117"
 ---
-# <a name="irdvtaskpluginnotifysinkontaskstatechange-method"></a>IRDVTaskPluginNotifySink:: OnTaskStateChange (método)
+# <a name="irdvtaskpluginnotifysinkontaskstatechange-method"></a>Método IRDVTaskPluginNotifySink::OnTaskStateChange
 
 Se usa para notificar al agente de desencadenador que el estado de una tarea ha cambiado.
 
@@ -43,21 +43,21 @@ HRESULT OnTaskStateChange(
 
 <dl> <dt>
 
-*bstrIdentifier* \[ de\]
+*bstrIdentifier* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Identificador único de la tarea. Este es el identificador que se pasa al método [**StartTask**](irdvtaskplugin-starttask.md) .
+Identificador único de la tarea. Este es el identificador que se pasa al [**método StartTask.**](irdvtaskplugin-starttask.md)
 
 </dd> <dt>
 
-*Estado* \[ de de\]
+*status* \[ En\]
 </dt> <dd>
 
-Tipo: estado de la **[ **\_ tarea \_ RDV**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status)**
+Tipo: **[ **ESTADO DE TAREA \_ RDV \_**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status)**
 
-Un valor de la enumeración del [**\_ \_ Estado de la tarea RDV**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que especifica el nuevo estado de la tarea.
+Valor de la [**enumeración RDV \_ TASK \_ STATUS**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que especifica el nuevo estado de la tarea.
 
 </dd> </dl>
 
@@ -65,15 +65,15 @@ Un valor de la enumeración del [**\_ \_ Estado de la tarea RDV**](/windows/desk
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 
@@ -82,7 +82,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Estado de la \_ tarea RDV \_**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status)
+[**ESTADO DE LA \_ TAREA RDV \_**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status)
 </dt> <dt>
 
 [**IRDVTaskPluginNotifySink**](irdvtaskpluginnotifysink.md)

@@ -1,7 +1,7 @@
 ---
-description: Representa las capacidades de un \_ objeto VirtualSystemManagementService de CIM.
+description: Representa las funciones de un \_ objeto CIM VirtualSystemManagementService.
 ms.assetid: 484b0378-b354-49c4-b98b-a960a7b07b92
-title: CIM_VirtualSystemManagementCapabilities (clase)
+title: CIM_VirtualSystemManagementCapabilities clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2772068ed011a2a61cdd4f5c1396e057838b7720
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d68a156b4037e1c21321ef4662fa1e4a8cfdb0d81ceeea3d66ecf38897aef259
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561785"
 ---
-# <a name="cim_virtualsystemmanagementcapabilities-class"></a>\_Clase VirtualSystemManagementCapabilities de CIM
+# <a name="cim_virtualsystemmanagementcapabilities-class"></a>Cim \_ VirtualSystemManagementCapabilities (clase)
 
-Representa las capacidades de un [**objeto \_ VirtualSystemManagementService de CIM**](cim-virtualsystemmanagementservice.md) .
+Representa las funciones de un [**\_ objeto CIM VirtualSystemManagementService.**](cim-virtualsystemmanagementservice.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,26 +43,26 @@ class CIM_VirtualSystemManagementCapabilities : CIM_EnabledLogicalElementCapabil
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ VirtualSystemManagementCapabilities** tiene estos tipos de miembros:
+La **clase CIM \_ VirtualSystemManagementCapabilities** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ VirtualSystemManagementCapabilities** tiene estas propiedades.
+La **clase CIM \_ VirtualSystemManagementCapabilities** tiene estas propiedades.
 
 <dl> <dt>
 
 **AsynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una matriz que contiene los nombres de método para los métodos de clase [**\_ VirtualSystemManagementService de CIM**](cim-virtualsystemmanagementservice.md) que se admiten para las operaciones asincrónicas.
+Matriz que contiene nombres de método para los métodos [**de \_ clase CIM VirtualSystemManagementService**](cim-virtualsystemmanagementservice.md) que se admiten para operaciones asincrónicas.
 
 <dt>
 
@@ -138,7 +138,7 @@ Una matriz que contiene los nombres de método para los métodos de clase [**\_ 
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32767.. 65535)
+**Vendor Reserved** (32767..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -148,13 +148,13 @@ Una matriz que contiene los nombres de método para los métodos de clase [**\_ 
 **IndicationsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una matriz que contiene los tipos de indicación admitidos de la implementación.
+Matriz que contiene los tipos de indicaciones admitidos de la implementación.
 
 <dt>
 
@@ -188,7 +188,7 @@ Una matriz que contiene los tipos de indicación admitidos de la implementación
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32767.. 65535)
+**Vendor Reserved** (32767..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -198,13 +198,13 @@ Una matriz que contiene los tipos de indicación admitidos de la implementación
 **SynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una matriz que contiene los nombres de método para los métodos de clase [**\_ VirtualSystemManagementService de CIM**](cim-virtualsystemmanagementservice.md) que se admiten para las operaciones sincrónicas.
+Matriz que contiene nombres de método para los métodos de clase [**\_ CIM VirtualSystemManagementService**](cim-virtualsystemmanagementservice.md) que se admiten para operaciones sincrónicas.
 
 <dt>
 
@@ -280,7 +280,7 @@ Una matriz que contiene los nombres de método para los métodos de clase [**\_ 
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32767.. 65535)
+**Vendor Reserved** (32767..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -290,7 +290,7 @@ Una matriz que contiene los nombres de método para los métodos de clase [**\_ 
 **VirtualSystemTypesSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -299,7 +299,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md).**VirtualSystemType**")
 </dt> </dl>
 
-El tipo de sistemas virtuales que admite la implementación.
+Tipo de sistemas virtuales admitidos por la implementación.
 
 </dd> </dl>
 
@@ -307,12 +307,12 @@ El tipo de sistemas virtuales que admite la implementación.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -321,7 +321,7 @@ El tipo de sistemas virtuales que admite la implementación.
 
 <dl> <dt>
 
-[**\_ENABLEDLOGICALELEMENTCAPABILITIES CIM**](cim-enabledlogicalelementcapabilities.md)
+[**CIM \_ EnabledLogicalElementCapabilities**](cim-enabledlogicalelementcapabilities.md)
 </dt> </dl>
 
  

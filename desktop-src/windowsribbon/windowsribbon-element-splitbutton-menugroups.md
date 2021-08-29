@@ -1,9 +1,9 @@
 ---
-title: Propiedad SplitButton. MenuGroups
-description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control de botón de expansión estándar.
+title: SplitButton.MenuGroups, propiedad
+description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control Split Button estándar.
 ms.assetid: 6328ad49-037b-4cd5-90f6-b91646e260ee
 keywords:
-- Propiedad SplitButton. MenuGroups de la cinta de opciones de Windows
+- Propiedad SplitButton.MenuGroups Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b8af4639040d6b6302b4d2b5761d750074389a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6bdc92ba966cab09d2f417fdedbc046d7ec400ea93bdb2d0434194ff1d1824d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933185"
 ---
-# <a name="splitbuttonmenugroups-property"></a>Propiedad SplitButton. MenuGroups
+# <a name="splitbuttonmenugroups-property"></a>SplitButton.MenuGroups, propiedad
 
-Representa un contenedor para un conjunto de elementos de menú desplegable en un control de [botón de expansión](windowsribbon-controls-splitbutton.md) estándar.
+Representa un contenedor para un conjunto de elementos de menú desplegable en un control [Split Button](windowsribbon-controls-splitbutton.md) estándar.
 
 ## <a name="usage"></a>Uso
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                         | Descripción                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe aparecer al menos una vez<br/> <br/> |
+| [**MenuGroup**](windowsribbon-element-menugroup.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -55,17 +55,17 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse como máximo una vez para cada [**splitButton**](windowsribbon-element-splitbutton.md).
+Puede producirse como máximo una vez para [**cada SplitButton**](windowsribbon-element-splitbutton.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para el [botón de expansión](windowsribbon-controls-splitbutton.md).
+En el ejemplo siguiente se muestra el marcado básico para el [botón De división](windowsribbon-controls-splitbutton.md).
 
-En esta sección de código se muestran las declaraciones de comandos [**splitButton**](windowsribbon-element-splitbutton.md) y **splitButton. MenuGroups** , con un [**Grupo**](windowsribbon-element-group.md) asociado que funciona como contenedor primario del elemento **splitButton** .
+En esta sección de código se muestran las declaraciones del comando [](windowsribbon-element-group.md) [**SplitButton**](windowsribbon-element-splitbutton.md) y **SplitButton.MenuGroups,** con un grupo asociado que funciona como contenedor primario para el **elemento SplitButton.**
 
 
 ```XML
@@ -109,7 +109,7 @@ En esta sección de código se muestran las declaraciones de comandos [**splitBu
 
 
 
-En esta sección de código se muestran las declaraciones de control [**splitButton**](windowsribbon-element-splitbutton.md) y **splitButton. MenuGroups** .
+En esta sección de código se muestran las [**declaraciones**](windowsribbon-element-splitbutton.md) de control **SplitButton y SplitButton.MenuGroups.**
 
 
 ```XML
@@ -146,8 +146,8 @@ En esta sección de código se muestran las declaraciones de control [**splitBut
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -155,7 +155,7 @@ En esta sección de código se muestran las declaraciones de control [**splitBut
 
 <dl> <dt>
 
-[Control de botón de expansión](windowsribbon-controls-splitbutton.md)
+[Control Botón de división](windowsribbon-controls-splitbutton.md)
 </dt> </dl>
 
  

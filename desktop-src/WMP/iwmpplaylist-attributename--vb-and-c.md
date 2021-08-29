@@ -1,9 +1,9 @@
 ---
-title: IWMPPlaylist. attributeName (VB y C)
-description: La propiedad attributeName (el \_ método get attributeName en C \) obtiene el nombre de un atributo de lista de reproducción especificado por un índice.
+title: IWMPPlaylist.attributeName (VB y C )
+description: La propiedad attributeName (el método get attributeName en C\) obtiene el nombre de un atributo de lista de \_ reproducción especificado por un índice.
 ms.assetid: bb436657-5156-437e-af58-6497ad3b311b
 keywords:
-- IWMPPlaylist. attributeName (VB y C) Windows Media Player
+- IWMPPlaylist.attributeName (VB y C ) Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 727d58a0cf875ed29efe9235448c1d597e81656a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b495554e4159214cbd5b1f7fa823dfeb373a11a1bfe2514d9ad07da497fa708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135388"
 ---
-# <a name="iwmpplaylistattributename-vb-and-c"></a>IWMPPlaylist. attributeName (VB y C#)
+# <a name="iwmpplaylistattributename-vb-and-c"></a>IWMPPlaylist.attributeName (VB y C#)
 
-La propiedad **attributeName** (el método **Get \_ attributeName** en C#) obtiene el nombre de un atributo de lista de reproducción especificado por un índice.
+La **propiedad attributeName** (el **método get \_ attributeName** en C#) obtiene el nombre de un atributo de lista de reproducción especificado por un índice.
 
 
 ```
@@ -47,29 +47,29 @@ System.String get_attributeName(
 
 ## <a name="parameters"></a>Parámetros
 
-*lIndex*
+*Lindex*
 
-**System. Int32** que es el índice del atributo de la lista de reproducción.
+**System.Int32 que** es el índice del atributo de lista de reproducción.
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. String** que es el nombre del atributo de la lista de reproducción.
+**System.String que** es el nombre del atributo de lista de reproducción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**IWMPPlaylist. attributeName** es una propiedad de solo lectura en Visual Basic que toma un parámetro, mientras que en C# se conoce como el método **IWMPPlaylist. Get \_ attributeName** .
+**IWMPPlaylist.attributeName** es una propiedad de solo lectura en Visual Basic que toma un parámetro, mientras que en C# se conoce como el método **IWMPPlaylist.get \_ attributeName.**
 
-La propiedad **IWMPPlaylist. attributeCount** devuelve el número de atributos asociado a una lista de reproducción.
+La propiedad **IWMPPlaylist.attributeCount** devuelve el número de atributos asociados a una lista de reproducción.
 
 El nombre devuelto por esta propiedad se puede proporcionar a los métodos **setItemInfo** o **getItemInfo** para especificar o recuperar un valor para el atributo con nombre.
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-Para obtener más información sobre los atributos compatibles con Windows Media Player, vea la [referencia de atributo](attribute-reference.md).
+Para obtener más información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
 
 ## <a name="examples"></a>Ejemplos
 
-Vea la propiedad [attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md) para ver el código de ejemplo que usa esta propiedad.
+Vea la [propiedad attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md) para obtener código de ejemplo que usa esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,7 +77,7 @@ Vea la propiedad [attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -90,13 +90,13 @@ Vea la propiedad [attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount
 [**Interfaz IWMPPlaylist (VB y C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. attributeCount (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md)
+[**IWMPPlaylist.attributeCount (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-attributecount--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. getItemInfo (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-getiteminfo--vb-and-c.md)
+[**IWMPPlaylist.getItemInfo (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-getiteminfo--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPPlaylist. setItemInfo (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-setiteminfo--vb-and-c.md)
+[**IWMPPlaylist.setItemInfo (VB y C#)**](wmplibiwmpplaylist-iwmpplaylist-setiteminfo--vb-and-c.md)
 </dt> </dl>
 
  

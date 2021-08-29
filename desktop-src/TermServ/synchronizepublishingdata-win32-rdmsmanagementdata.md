@@ -1,12 +1,12 @@
 ---
-title: Método SynchronizePublishingData de la clase Win32_RDMSManagementData
-description: Sincroniza el conjunto especificado de datos de publicación para Escritorio remoto Management Services (RDMS).
+title: Método SynchronizePublishingData de la Win32_RDMSManagementData clase
+description: Sincroniza el conjunto de datos de publicación especificado para Escritorio remoto Management Services (RDMS).
 ms.assetid: 0476ce12-9b08-418c-83c2-208275574f5b
 ms.tgt_platform: multiple
 keywords:
 - Método SynchronizePublishingData Servicios de Escritorio remoto
-- Método SynchronizePublishingData Servicios de Escritorio remoto, clase Win32_RDMSManagementData
-- Win32_RDMSManagementData de clase Servicios de Escritorio remoto, método SynchronizePublishingData
+- Método SynchronizePublishingData Servicios de Escritorio remoto , Win32_RDMSManagementData clase
+- Win32_RDMSManagementData clase Servicios de Escritorio remoto método , SynchronizePublishingData
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d389ad08d81f39cab45502a42f4ebd95e16f36c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5cadc3581419fa758775a48ba0190300a176364dcf0aad5a8a3ed77fa1db8bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000335"
 ---
-# <a name="synchronizepublishingdata-method-of-the-win32_rdmsmanagementdata-class"></a>Método SynchronizePublishingData de la \_ clase RDMSManagementData de Win32
+# <a name="synchronizepublishingdata-method-of-the-win32_rdmsmanagementdata-class"></a>Método SynchronizePublishingData de la clase \_ RDMSManagementData de Win32
 
-Sincroniza el conjunto especificado de datos de publicación para Escritorio remoto Management Services (RDMS).
+Sincroniza el conjunto de datos de publicación especificado para Escritorio remoto Management Services (RDMS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ uint32 SynchronizePublishingData(
 
 <dl> <dt>
 
-*Contexto* \[ de de\]
+*Contexto* \[ En\]
 </dt> <dd>
 
-Información de contexto de los datos de publicación que se van a sincronizar.
+Información de contexto de los datos de publicación que se sincronizarán.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error de WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -72,7 +72,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 <dl> <dt>
 
-[**Win32 \_ RDMSManagementData**](win32-rdmsmanagementdata.md)
+[**RdMSManagementData de Win32 \_**](win32-rdmsmanagementdata.md)
 </dt> </dl>
 
  

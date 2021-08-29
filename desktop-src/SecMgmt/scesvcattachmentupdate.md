@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 5bc4c9426f6a085c72f2fc3d872de4d7da59156b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b04d8a144373ae493a956e2166ea6dab34d844c71504f303766e8de7915b9a70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004873"
 ---
 # <a name="scesvcattachmentupdate-callback-function"></a>Función de devolución de llamada SceSvcAttachmentUpdate
 
@@ -39,36 +39,36 @@ SCESTATUS WINAPI SceSvcAttachmentUpdate(
 
 <dl> <dt>
 
-*pSceCbInfo* \[ de\]
+*pSceCbInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información de devolución de llamada SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) que contiene el identificador de devolución de llamada y los punteros de función a SCE.
+Puntero a una [**estructura SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) que contiene el identificador de devolución de llamada y los punteros de función a SCE.
 
 </dd> <dt>
 
-*ServiceInfo* \[ de\]
+*ServiceInfo* \[ En\]
 </dt> <dd>
 
-Información de configuración actualizada. La estructura de datos usada para esta información [**es \_ \_ información de configuración de SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_configuration_info).
+Información de configuración actualizada. La estructura de datos utilizada para esta información es [**SCESVC \_ CONFIGURATION \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_configuration_info).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve SCESTATUS \_ Success. En caso contrario, devuelve un código de error. Para obtener más información sobre los códigos de error de configuración de seguridad, vea [valores devueltos de datos adjuntos](management-return-values.md).
+Si esta función se realiza correctamente, devuelve SCESTATUS \_ SUCCESS. De lo contrario, devuelve un código de error. Para obtener más información sobre los códigos de error de configuración de seguridad, vea [Valores devueltos de datos adjuntos.](management-return-values.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **SceSvcAttachmentUpdate** debe hacer lo siguiente:
+La **función SceSvcAttachmentUpdate** debe hacer lo siguiente:
 
--   Llame a la función de devolución de llamada a la que apunta el miembro **pfQueryInfo** de la estructura de [**información de devolución de \_ llamada \_ SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar la información de configuración base actual de la base de datos de seguridad.
--   Llame a la función de devolución de llamada a la que apunta el miembro **pfQueryInfo** de la estructura de [**información de devolución de \_ llamada \_ SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar el último conjunto de diferencias (información de análisis) de la base de datos de seguridad.
--   Utilice la información de servicio suministrada (vea *ServiceInfo*) para calcular la nueva configuración base.
--   Utilice la información de servicio suministrada (vea *ServiceInfo*) y el análisis para calcular la nueva información de diferencia.
--   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura de [**información de devolución de \_ llamada \_ SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para establecer la nueva configuración base en la base de datos de seguridad.
--   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura de [**información de devolución de \_ llamada \_ SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para establecer la nueva información de análisis en la base de datos de seguridad.
+-   Llame a la función de devolución de llamada a la que apunta el miembro **pfQueryInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar la información de configuración base actual de la base de datos de seguridad.
+-   Llame a la función de devolución de llamada a la que apunta el miembro **pfQueryInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar el último conjunto de diferencias (información de análisis) de la base de datos de seguridad.
+-   Use la información de servicio proporcionada (consulte *ServiceInfo*) para calcular la nueva configuración base.
+-   Use la información de servicio proporcionada (consulte *ServiceInfo*) y el análisis para calcular la nueva información de diferencia.
+-   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para establecer la nueva configuración base en la base de datos de seguridad.
+-   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para establecer la nueva información de análisis en la base de datos de seguridad.
 
-Para obtener más información, consulte [implementación de SceSvcAttachmentUpdate](implementing-scesvcattachmentupdate.md)
+Para obtener más información, [vea Implementing SceSvcAttachmentUpdate (Implementación de SceSvcAttachmentUpdate).](implementing-scesvcattachmentupdate.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Para obtener más información, consulte [implementación de SceSvcAttachmentUpd
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -85,10 +85,10 @@ Para obtener más información, consulte [implementación de SceSvcAttachmentUpd
 
 <dl> <dt>
 
-[**información de devolución de llamada de SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info)
+[**INFORMACIÓN DE DEVOLUCIÓN DE LLAMADA DE SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info)
 </dt> <dt>
 
-[**\_información de configuración de SCESVC \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_configuration_info)
+[**INFORMACIÓN DE CONFIGURACIÓN DE SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_configuration_info)
 </dt> </dl>
 
  

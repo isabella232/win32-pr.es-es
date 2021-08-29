@@ -1,26 +1,26 @@
 ---
-title: 'VML MSO-Wrap: atributo editado'
-description: 'VML MSO-Wrap: atributo editado'
+title: Atributo MSO-Wrap-Edited de VML
+description: Atributo MSO-Wrap-Edited de VML
 ms.assetid: cb0e8618-e649-4a3c-9433-2be77c4b65f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a272a56b57d82ca0fee9f69fbde2757316439fd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0eb22fa0ebd87f21643abdcf5a76311431d55d8c98a1f0f90cafc1744579d5fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124305"
 ---
-# <a name="vml-mso-wrap-edited-attribute"></a>VML MSO-Wrap: atributo editado
+# <a name="vml-mso-wrap-edited-attribute"></a>Atributo MSO-Wrap-Edited de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si el usuario personalizó las coordenadas de ajuste. Lectura/escritura **VgTriState**.
+Determina si el usuario personalizó las coordenadas de encapsulado. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Determina si el usuario personalizó las coordenadas de ajuste. Lectura/escritur
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "MSO-Wrap-edited: *expresión* " >
+<v: *element* style="mso-wrap-edited: *expression* ">
 
 **Comentarios:**
 
-Si un editor genera las coordenadas de ajuste, este atributo es **true**; de lo contrario, los personaliza un usuario.
+Si un editor genera las coordenadas de encapsulado, este atributo es **True**; De lo contrario, un usuario los personalizó.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
 **Ejemplo**
 
-Un editor de formas generó las coordenadas de ajuste de la forma.
+Las coordenadas de ajuste de la forma se generaron mediante un editor de formas.
 
 
 ```HTML
@@ -52,6 +52,6 @@ Un editor de formas generó las coordenadas de ajuste de la forma.
 
 
 
- 
+ 
 
- 
+ 

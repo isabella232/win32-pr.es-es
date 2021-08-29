@@ -1,11 +1,11 @@
 ---
-title: MediaCollection. createQuery (método)
-description: El método createQuery crea un nuevo objeto de consulta.
+title: Método MediaCollection.createQuery
+description: El método createQuery crea un nuevo objeto Query.
 ms.assetid: f6360717-ea36-456c-8f3d-683ab6df012e
 keywords:
-- createQuery (método) de Windows Media Player
-- createQuery (método) Windows Media Player, clase MediaCollection
-- Clase MediaCollection Windows Media Player, método createQuery
+- Método createQuery Reproductor de Windows Media
+- Método createQuery Reproductor de Windows Media , clase MediaCollection
+- Clase MediaCollection Reproductor de Windows Media método , createQuery
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dca590dcca3b11e7b6763272a51b86a62e100b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d66c75de2479ce6426546fa58e51afa39d34cf72978e7812680682803d797651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135078"
 ---
-# <a name="mediacollectioncreatequery-method"></a>MediaCollection. createQuery (método)
+# <a name="mediacollectioncreatequery-method"></a>Método MediaCollection.createQuery
 
-El método **createQuery** crea un nuevo objeto de **consulta** .
+El **método createQuery** crea un nuevo **objeto Query.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un nuevo objeto de **consulta** vacío.
+Este método devuelve un nuevo objeto **Query** vacío.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Crear un nuevo objeto de **consulta** es el primer paso para crear una consulta compuesta.
+La creación de **un nuevo objeto Query** es el primer paso para crear una consulta compuesta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Crear un nuevo objeto de **consulta** es el primer paso para crear una consulta 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -66,7 +66,7 @@ Crear un nuevo objeto de **consulta** es el primer paso para crear una consulta 
 [**Objeto MediaCollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Query (objeto)**](query-object.md)
+[**Objeto Query**](query-object.md)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ ms.assetid: 0BC5CD23-35B3-4E6A-85D3-39CFEF3A6C05
 title: Métodos IEnumCERTVIEWEXTENSION
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3a9b85824de5505417be7a01076c3b16cdda6c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc048eddc82d7e19e9352cc2dcb4509632eb24c6acc473379f1203dfba82c086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005413"
 ---
 # <a name="ienumcertviewextension-methods"></a>Métodos IEnumCERTVIEWEXTENSION
 
-La interfaz [**IEnumCERTVIEWEXTENSION**](/windows/desktop/api/Certview/nn-certview-ienumcertviewextension) expone los métodos siguientes.
+La [**interfaz IEnumCERTVIEWEXTENSION**](/windows/desktop/api/Certview/nn-certview-ienumcertviewextension) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

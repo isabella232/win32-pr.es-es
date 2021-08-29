@@ -1,5 +1,5 @@
 ---
-description: Extiende el esquema de Perfil de WLAN V1 para admitir redes de zona activa 2,0.
+description: Extiende el esquema de perfil WLAN v1 para admitir redes hotspot 2.0.
 ms.assetid: DE30DBCB-80B9-43D0-8DE1-56BBA99DBF31
 title: Elemento Hotspot2 (WLANProfile)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 0e372c1025a74dfb304cacdb0f3a4cf18bcdbabd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 754e5e931911dedc74e42a1f7af8a207b400d4ba64949535cfa962e271b47181
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117984310"
 ---
 # <a name="hotspot2-wlanprofile-element"></a>Elemento Hotspot2 (WLANProfile)
 
-Extiende el esquema de Perfil de WLAN V1 para admitir redes de zona activa 2,0. HotSpot 2,0 habilita la conexión automática a los servicios de Wi-Fi públicos mediante las credenciales existentes y la pertenencia a las redes del proveedor de servicios. Los proveedores de servicios especifican cómo se realizan las conexiones con los nuevos elementos de esquema para describir qué redes usar y cómo autenticarse en ellas.
+Extiende el esquema de perfil WLAN v1 para admitir redes hotspot 2.0. Hotspot 2.0 permite la conexión automática a servicios de Wi-Fi públicos mediante credenciales existentes y pertenencia a redes de proveedor de servicios. Los proveedores de servicios especifican cómo se realizan las conexiones mediante los nuevos elementos de esquema para describir qué redes usar y cómo autenticarse en ellas.
 
 ``` syntax
 <xs:element name="Hotspot2">
@@ -44,16 +44,16 @@ Extiende el esquema de Perfil de WLAN V1 para admitir redes de zona activa 2,0. 
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) .
+El elemento [**WLANProfile**](wlan-profileschema-wlanprofile-element.md) define el elemento .
 
 ## <a name="child-elements"></a>Elementos secundarios
 
 | Elemento | Tipo | Descripción |
 |-|-|-|
-| [**DomainName**](wlan-profileschema-hotspot2-domainname-element.md) | | El nombre de dominio del proveedor de red doméstica del dispositivo, que identifica al operador de la red. |
-| [**NAIRealm**](wlan-profileschema-hotspot2-nairealm-element.md) | | Una lista de identificadores de dominio de identificador de acceso de red (NAI). Las entradas de esta lista suelen tener el formato user@domain . |
-| [**Network3GPP**](wlan-profileschema-hotspot2-network3gpp-element.md) | | Una lista de identificadores de red móvil de tierra (PLMN). |
-| [**RoamingConsortium**](wlan-profileschema-hotspot2-roamingconsortium-element.md) | | Lista de identificadores únicos de la organización (OUI) asignados por IEEE.  |
+| [**DomainName**](wlan-profileschema-hotspot2-domainname-element.md) | | Nombre de dominio del proveedor de red principal del dispositivo, que identifica el operador de la red. |
+| [**NAIRealm**](wlan-profileschema-hotspot2-nairealm-element.md) | | Lista de identificadores de dominio del identificador de acceso de red (NAI). Las entradas de esta lista suelen tener el formato user@domain . |
+| [**Network3GPP**](wlan-profileschema-hotspot2-network3gpp-element.md) | | Lista de los IDs de Public Land Mobile Network (PLMN). |
+| [**RoamingConsortium**](wlan-profileschema-hotspot2-roamingconsortium-element.md) | | Lista de identificadores únicos de organización (OUI) asignados por IEEE.  |
 
 ## <a name="examples"></a>Ejemplos
 

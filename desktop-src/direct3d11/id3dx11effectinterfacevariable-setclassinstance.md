@@ -1,10 +1,10 @@
 ---
-title: Método ID3DX11EffectInterfaceVariable SetClassInstance (D3dx11effect. h)
+title: Método ID3DX11EffectInterfaceVariable SetClassInstance (D3dx11effect.h)
 description: Establece una instancia de clase.
 ms.assetid: fc71a0d2-054a-48ed-86a5-54cf0017062a
 keywords:
 - Método SetClassInstance Direct3D 11
-- Método SetClassInstance Direct3D 11, interfaz ID3DX11EffectInterfaceVariable
+- Método SetClassInstance Direct3D 11 , interfaz ID3DX11EffectInterfaceVariable
 - Interfaz ID3DX11EffectInterfaceVariable Direct3D 11, método SetClassInstance
 topic_type:
 - apiref
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c03d319d55b073393ff511b2e072aa07c244e5a2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 305e3dc8b982a5545c9860be92a51306fc438908864b2980bec5197fec76181c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104986947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046223"
 ---
-# <a name="id3dx11effectinterfacevariablesetclassinstance-method"></a>ID3DX11EffectInterfaceVariable:: SetClassInstance (método)
+# <a name="id3dx11effectinterfacevariablesetclassinstance-method"></a>Método ID3DX11EffectInterfaceVariable::SetClassInstance
 
 Establece una instancia de clase.
 
@@ -48,7 +48,7 @@ HRESULT SetClassInstance(
 
 Tipo: **[ **ID3DX11EffectClassInstanceVariable**](id3dx11effectclassinstancevariable.md)\***
 
-Puntero a una interfaz [**ID3DX11EffectClassInstanceVariable**](id3dx11effectclassinstancevariable.md) .
+Puntero a una [**interfaz ID3DX11EffectClassInstanceVariable.**](id3dx11effectclassinstancevariable.md)
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Puntero a una interfaz [**ID3DX11EffectClassInstanceVariable**](id3dx11effectcla
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphi
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

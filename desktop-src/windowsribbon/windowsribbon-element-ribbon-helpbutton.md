@@ -1,9 +1,9 @@
 ---
-title: Propiedad Ribbon. HelpButton
+title: Propiedad Ribbon.HelpButton
 description: Representa un contenedor para el botón ayuda.
 ms.assetid: a64239b2-2440-4bcf-8fd7-079003de6d8c
 keywords:
-- Ribbon. HelpButton (propiedad) cinta de Windows
+- Cinta de opciones de la propiedad Ribbon.HelpButton Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49e343a5181479ede5d428937908ed4bf37764f5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ba568fcd18ab16e1c8bd878dc786b2c415a0329d1bd430e78ec9b03a73424df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933204"
 ---
-# <a name="ribbonhelpbutton-property"></a>Propiedad Ribbon. HelpButton
+# <a name="ribbonhelpbutton-property"></a>Propiedad Ribbon.HelpButton
 
 Representa un contenedor para el [botón ayuda](windowsribbon-controls-helpbutton.md).
 
@@ -41,7 +41,7 @@ No hay atributos.
 
 | Elemento                                                           | Descripción                                   |
 |-------------------------------------------------------------------|-----------------------------------------------|
-| [**HelpButton**](windowsribbon-element-helpbutton.md)<br/> | Puede aparecer como máximo una vez<br/> <br/> |
+| [**HelpButton**](windowsribbon-element-helpbutton.md)<br/> | Puede producirse como máximo una vez<br/> <br/> |
 
 
 
@@ -55,17 +55,17 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**cinta**](windowsribbon-element-ribbon.md)de opciones.
+Puede producirse como máximo una vez para cada cinta [**de opciones.**](windowsribbon-element-ribbon.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico necesario para implementar un botón de ayuda de la cinta de opciones.
+En el ejemplo siguiente se muestra el marcado básico necesario para implementar un botón Ayuda de la cinta de opciones.
 
-En esta sección de código se muestra la declaración de comando **Ribbon. HelpButton** .
+En esta sección de código se muestra la declaración del comando **Ribbon.HelpButton.**
 
 
 ```XML
@@ -76,7 +76,7 @@ En esta sección de código se muestra la declaración de comando **Ribbon. Help
 
 
 
-En esta sección de código se muestra la declaración de control **Ribbon. HelpButton** .
+En esta sección de código se muestra la declaración de control **Ribbon.HelpButton.**
 
 
 ```XML
@@ -93,8 +93,8 @@ En esta sección de código se muestra la declaración de control **Ribbon. Help
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

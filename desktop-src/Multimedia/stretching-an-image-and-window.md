@@ -1,24 +1,24 @@
 ---
-title: Ajustar una imagen y una ventana
-description: Ajustar una imagen y una ventana
+title: Stretching an Image and Window
+description: Stretching an Image and Window
 ms.assetid: 661992eb-b012-47eb-84bc-cd12834c6270
 keywords:
-- MCIWndGetDest (macro)
-- MCIWndPutDest (macro)
-- GetWindowRect (función)
+- Macro MCIWndGetDest
+- Macro MCIWndPutDest
+- Función GetWindowRect
 - Función SetWindowPos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee8ef0bd4d549e6fbe29ced52304cded4ce6979
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a38cc3072be387f549e77186886854c8cf6a40a466ca5014c4eb85469faf762b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105665795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781865"
 ---
-# <a name="stretching-an-image-and-window"></a>Ajustar una imagen y una ventana
+# <a name="stretching-an-image-and-window"></a>Stretching an Image and Window
 
-En el ejemplo siguiente se ajustan las imágenes de un clip de vídeo y se cambia la relación de aspecto de los fotogramas mostrados. Los fotogramas mostrados en la ventana de MCIWnd son dos veces el alto y tres veces el ancho del fotograma original. Las macros [**MCIWndGetDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest) y [**MCIWndPutDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest) recuperan y vuelven a definir las coordenadas del rectángulo de destino. Las funciones [GetWindowRect](/windows/win32/api/winuser/nf-winuser-getwindowrect) y [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) administran los cambios en las dimensiones de la ventana MCIWnd.
+En el ejemplo siguiente se extienden las imágenes de un clip de vídeo y se cambia la relación de aspecto de los fotogramas mostrados. Los fotogramas mostrados en la ventana MCIWnd tienen el doble de alto y tres veces el ancho del marco original. Las macros [**MCIWndGetDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest) y [**MCIWndPutDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndputdest) recuperan y redefinen las coordenadas del rectángulo de destino. Las [funciones GetWindowRect](/windows/win32/api/winuser/nf-winuser-getwindowrect) [y SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) administran los cambios en las dimensiones de ventana de MCIWnd.
 
 
 ```C++
@@ -61,6 +61,6 @@ case WM_COMMAND:
 
 
 
- 
+ 
 
- 
+ 

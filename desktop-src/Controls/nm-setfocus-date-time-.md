@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_SETFOCUS (fecha y hora) (commctrl. h)
-description: Notifica a la ventana primaria de un control de fecha y hora que el control ha recibido el foco de entrada. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_SETFOCUS de notificación (fecha y hora) (Commctrl.h)
+description: Notifica a la ventana primaria de un control selector de fecha y hora que el control ha recibido el foco de entrada. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 61c62fb2-bc79-404b-9958-7208d1c781fa
 keywords:
-- NM_SETFOCUS (fecha y hora) controles de Windows de código de notificación
+- NM_SETFOCUS (fecha y hora) de notificación de Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ba80ea119056c131f1dd94cdf1f39a84371b7052
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a10283f2dee05c7babf94ef8bee4c2cf01fe256d24bbea2cd3e54d0afb15f1d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119261535"
 ---
-# <a name="nm_setfocus-date-time-notification-code"></a>NM \_ código de notificación de SETFOCUS (fecha y hora)
+# <a name="nm_setfocus-date-time-notification-code"></a>Código de notificación DE NM \_ SETFOCUS (fecha y hora)
 
-Notifica a la ventana primaria de un control de fecha y hora que el control ha recibido el foco de entrada. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control selector de fecha y hora que el control ha recibido el foco de entrada. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_SETFOCUS
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Se omite el valor devuelto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

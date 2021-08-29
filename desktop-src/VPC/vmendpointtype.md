@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMEndpointType (VPCCOMInterfaces. h)
-description: Especifica el tipo de extremo.
+title: Enumeración VMEndpointType (VPCCOMInterfaces.h)
+description: Especifica el tipo de punto de conexión.
 ms.assetid: b48bd860-50dc-4c8c-b65b-69c407d4612a
 keywords:
-- Enumeración de VMEndpointType Virtual PC
+- VMEndpointType (enumeración de VIRTUAL PC)
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 912eb43147af03dd2b9923c4bdb778044f40d023
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c2857dc19d6764c5c4052305d430a6ab3601493955c07f39501be4b0af10564d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136468"
 ---
 # <a name="vmendpointtype-enumeration"></a>Enumeración VMEndpointType
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Especifica el tipo de extremo.
+Especifica el tipo de punto de conexión.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -46,14 +46,14 @@ typedef enum  {
 <span id="vmEndpoint_NamedPipe"></span><span id="vmendpoint_namedpipe"></span><span id="VMENDPOINT_NAMEDPIPE"></span>**vmEndpoint \_ NamedPipe**
 </dt> <dd>
 
-El lado del host.
+Lado host.
 
 </dd> <dt>
 
 <span id="vmEndpoint_TCPIP"></span><span id="vmendpoint_tcpip"></span><span id="VMENDPOINT_TCPIP"></span>**vmEndpoint \_ TCPIP**
 </dt> <dd>
 
-El lado invitado.
+Lado invitado.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ El lado invitado.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

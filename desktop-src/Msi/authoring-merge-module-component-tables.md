@@ -1,26 +1,26 @@
 ---
-description: En cada módulo de combinación se requiere una tabla de componentes.
+description: Se requiere una tabla de componentes en cada módulo de combinación.
 ms.assetid: ef4a0678-bf6b-47c9-89e8-40e12da52d9b
-title: Crear tablas de componentes de módulo de combinación
+title: Creación de tablas de componentes de módulo de mezcla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46557541b3a6b89841fe3e26cef7c00e59dc3911
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 728fa03b7041933aff5fc00d839979d90e634853efde1d369970c116367b4637
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119264025"
 ---
-# <a name="authoring-merge-module-component-tables"></a>Crear tablas de componentes de módulo de combinación
+# <a name="authoring-merge-module-component-tables"></a>Creación de tablas de componentes de módulo de mezcla
 
-En cada módulo de combinación se requiere una [tabla de componentes](component-table.md) . Esta tabla contiene un registro para cada componente entregado por el módulo de combinación en el archivo. msi de destino. Tenga en cuenta que cada uno de estos componentes también debe especificarse en la [tabla ModuleComponents](modulecomponents-table.md) que se describe en [creación de tablas ModuleComponents](authoring-modulecomponents-tables.md).
+Se [requiere una tabla](component-table.md) de componentes en cada módulo de combinación. Esta tabla contiene un registro para cada componente entregado por el módulo de mezcla al archivo de .msi destino. Tenga en cuenta que cada uno de estos componentes también debe especificarse en la [tabla ModuleComponents](modulecomponents-table.md) descrita en [Authoring ModuleComponents Tables](authoring-modulecomponents-tables.md).
 
-Use la Convención de nomenclatura estándar al escribir nombres en la columna componente para asegurarse de que el identificador de cada componente es único para todos los módulos de combinación y bases de datos de instalación. Para obtener más información, vea [asignar nombres a las claves principales en las bases de datos de módulos de combinación](naming-primary-keys-in-merge-module-databases.md).
+Use la convención de nomenclatura estándar al escribir nombres en la columna Componente para asegurarse de que el identificador de cada componente es único para todos los módulos de mezcla y bases de datos de instalación. Para obtener más información, vea [Nomenclatura de claves principales en bases de datos de módulos de mezcla](naming-primary-keys-in-merge-module-databases.md).
 
-Complete los campos restantes en cada registro, tal como se describe en una base de datos de instalación en la [tabla de componentes](component-table.md). Los componentes que se agregan a un paquete mediante un módulo de combinación deben cumplir las directrices de los componentes de Windows Installer válidos que se describen en las siguientes secciones:
+Complete los campos restantes de cada registro como se describe para una base de datos de instalación en [la tabla Component](component-table.md). Los componentes agregados a un paquete por un módulo de combinación deben cumplir las directrices para los componentes válidos Windows Installer que se describen en las secciones siguientes:
 
--   [Componentes de Windows Installer](windows-installer-components.md)
--   [Organizar aplicaciones en componentes](organizing-applications-into-components.md)
+-   [Windows Componentes del instalador](windows-installer-components.md)
+-   [Organización de aplicaciones en componentes](organizing-applications-into-components.md)
 
  
 

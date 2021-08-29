@@ -13,7 +13,7 @@ ms.locfileid: "118125573"
 ---
 # <a name="volume-and-lun-binding"></a>Enlace de volúmenes y LUN
 
-\[A partir Windows 8 y Windows Server 2012, la interfaz COM del servicio [virtual](virtual-disk-service-portal.md) de disco se sustituye por [el Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partir Windows 8 y Windows Server 2012, la interfaz COM [de Virtual Disk Service](virtual-disk-service-portal.md) se sustituye por el [Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 El enlace es la creación de volúmenes o LUN. Los volúmenes constan de extensiones de disco y LUN que constan de extensiones de unidad. El enlace selecciona para un conjunto de asignaciones a recursos físicos y se produce dentro de un subsistema, dentro de un paquete o ambos. Todos los programas de proveedor admiten el enlace dirigido parcialmente a un modelo en el que el autor de la llamada especifica solo los atributos de enlace de especial interés y permite al proveedor elegir el resto. Las operaciones en VDS para volúmenes de enlace y LUN son similares, pero no idénticas. Por ejemplo, los proveedores de hardware pueden ofrecer opciones de enlace adicionales.
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: miembros de EsentVersion'
+description: 'Más información sobre: Miembros de EsentVersion'
 title: Miembros de EsentVersion
 TOCTitle: EsentVersion members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.EsentVersion
@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103183
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d16c54ec9efb7d332a5e4ca56e13a96fd595daeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b303a0875a609889bc80b239888a857f420a465d55638616a589fd1b0e86bed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103819107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112784"
 ---
 # <a name="esentversion-members"></a>Miembros de EsentVersion
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Proporciona información sobre la versión de ESENT que se está usando.
+Proporciona información sobre la versión de ESENT que se usa.
 
-El tipo [EsentVersion](./esentversion-class.md) expone los siguientes miembros.
+El [tipo EsentVersion](./esentversion-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -37,32 +37,32 @@ El tipo [EsentVersion](./esentversion-class.md) expone los siguientes miembros.
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn350858(v=exchg.10).md">SupportsLargeKeys</a></td>
-<td>Obtiene un valor que indica si &gt; se admiten claves grandes (255 bytes). El tamaño de la clave de un índice se puede especificar en el objeto <a href="dn335112(v=exchg.10).md">JET_INDEXCREATE</a> .</td>
+<td>Obtiene un valor que indica si se admiten claves grandes &gt; (255 bytes). El tamaño de clave de un índice se puede especificar en el <a href="dn335112(v=exchg.10).md">JET_INDEXCREATE</a> objeto .</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn350871(v=exchg.10).md">SupportsServer2003Features</a></td>
-<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión de Windows Server 2003 de ESENT.</td>
+<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión Windows Server 2003 de ESENT.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn350856(v=exchg.10).md">SupportsUnicodePaths</a></td>
-<td>Obtiene un valor que indica si la versión actual de ESENT puede utilizar rutas de acceso no ASCII para tener acceso a las bases de datos.</td>
+<td>Obtiene un valor que indica si la versión actual de ESENT puede usar rutas de acceso no ASCII para acceder a las bases de datos.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn350861(v=exchg.10).md">SupportsVistaFeatures</a></td>
-<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión de Windows Vista de ESENT.</td>
+<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión Windows Vista de ESENT.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn350860(v=exchg.10).md">SupportsWindows7Features</a></td>
-<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión de Windows 7 de ESENT.</td>
+<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión Windows 7 de ESENT.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn350863(v=exchg.10).md">SupportsWindows8Features</a></td>
-<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en la versión de Windows 8 de ESENT.</td>
+<td>Obtiene un valor que indica si la versión actual de ESENT admite características disponibles en Windows 8 versión de ESENT.</td>
 </tr>
 </tbody>
 </table>
@@ -70,10 +70,10 @@ El tipo [EsentVersion](./esentversion-class.md) expone los siguientes miembros.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [Clase EsentVersion](./esentversion-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

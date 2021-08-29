@@ -1,23 +1,23 @@
 ---
-description: La \_ enumeración de modo de bucle invertido de multidifusión \_ describe el modo de bucle invertido.
+description: La enumeración MULTICAST \_ LOOPBACK \_ MODE describe el modo de bucle recuperación de multidifusión.
 ms.assetid: bf9c3665-71cc-4cde-9ad4-1a8b62eddf9f
-title: Enumeración MULTICAST_LOOPBACK_MODE (Confpriv. h)
+title: MULTICAST_LOOPBACK_MODE enumeración (Confpriv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a15505efcd1a9e399866b104da0582ccf846689
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f322f723d6e1dfa7a0819c661b13d02fdfda753738f7cdb9c304c394bffc2a40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002843"
 ---
-# <a name="multicast_loopback_mode-enumeration"></a>\_Enumeración de modo de bucle invertido \_
+# <a name="multicast_loopback_mode-enumeration"></a>Enumeración MULTICAST \_ LOOPBACK \_ MODE
 
-\[**Multidifusión \_ El \_ modo de bucle invertido** no está disponible para su uso en Windows Vista, windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[**MULTIDIFUSIÓN \_ LOOPBACK \_ MODE no** está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-La enumeración de **\_ \_ modo de bucle invertido de multidifusión** describe el modo de bucle invertido.
+La **enumeración MULTICAST \_ LOOPBACK \_ MODE** describe el modo de bucle recuperación de multidifusión.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -30,24 +30,24 @@ La enumeración de **\_ \_ modo de bucle invertido de multidifusión** describe 
 
 <dl> <dt>
 
-<span id="MM_NO_LOOPBACK"></span><span id="mm_no_loopback"></span>**MM \_ sin \_ bucle invertido**
+<span id="MM_NO_LOOPBACK"></span><span id="mm_no_loopback"></span>**MM \_ NO \_ LOOPBACK**
 </dt> <dd>
 
-Bucle invertido de multidifusión deshabilitado. Esto significa que dos aplicaciones en el mismo equipo que se unen al mismo grupo de multidifusión pueden obtener los paquetes de los demás.
+El bucle de multidifusión está deshabilitado. Esto significa que dos aplicaciones de la misma máquina que se unen al mismo grupo de multidifusión pueden obtener paquetes entre sí.
 
 </dd> <dt>
 
-<span id="MM_FULL_LOOPBACK"></span><span id="mm_full_loopback"></span>**\_ \_ bucle invertido completo mm**
+<span id="MM_FULL_LOOPBACK"></span><span id="mm_full_loopback"></span>**MM \_ FULL \_ LOOPBACK**
 </dt> <dd>
 
-También se recorren en bucle todos los paquetes enviados. Este modo solo es útil para realizar pruebas.
+Todos los paquetes enviados también se recorren en bucle. Este modo solo es útil para las pruebas.
 
 </dd> <dt>
 
-<span id="MM_SELECTIVE_LOOPBACK"></span><span id="mm_selective_loopback"></span>**\_ \_ bucle invertido de mm selectivo**
+<span id="MM_SELECTIVE_LOOPBACK"></span><span id="mm_selective_loopback"></span>**BUCLEBACK \_ \_ SELECTIVO MM**
 </dt> <dd>
 
-El bucle invertido selectivo está habilitado. Esto significa que varias aplicaciones habilitadas en un equipo pueden unirse al mismo grupo de multidifusión sin confusión. Los paquetes se recorren en bucle desde la pila y cada sesión de RTP es responsable de filtrar los paquetes no deseados.
+El bucleback selectivo está habilitado. Esto significa que varias aplicaciones habilitadas en un equipo pueden unirse al mismo grupo de multidifusión sin confusión. Los paquetes se recorren en bucle desde la pila y cada sesión RTP es responsable de filtrar los paquetes no deseados.
 
 </dd> </dl>
 
@@ -57,8 +57,8 @@ El bucle invertido selectivo está habilitado. Esto significa que varias aplicac
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Confpriv.h</dt> </dl> |
 
 
 
@@ -66,10 +66,10 @@ El bucle invertido selectivo está habilitado. Esto significa que varias aplicac
 
 <dl> <dt>
 
-[**IMulticastControl:: get \_ LoopbackMode**](imulticastcontrol-get-loopbackmode.md)
+[**IMulticastControl::get \_ LoopbackMode**](imulticastcontrol-get-loopbackmode.md)
 </dt> <dt>
 
-[**IMulticastControl::p UT \_ LoopbackMode**](imulticastcontrol-put-loopbackmode.md)
+[**IMulticastControl::put \_ LoopbackMode**](imulticastcontrol-put-loopbackmode.md)
 </dt> </dl>
 
  

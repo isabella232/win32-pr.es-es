@@ -1,21 +1,21 @@
 ---
-description: El \_ método get Item devuelve el atributo especificado por el índice.
+description: El método get \_ Item devuelve el atributo especificado por el índice.
 ms.assetid: 67e36587-0bf5-4586-ace9-ef107f0b6548
-title: 'Método ITAttributeList:: get_Item (Sdpblb. h)'
+title: Método ITAttributeList::get_Item (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33745c10bf95fe8a1e9c6d9edc73cad54855a8c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21ffa22eadf9dac4af55b46b59c22a2b265b53a4ec582e36ab563d0fffb36fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003473"
 ---
-# <a name="itattributelistget_item-method"></a>ITAttributeList:: get \_ Item (método)
+# <a name="itattributelistget_item-method"></a>ITAttributeList::get \_ Item (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ Item** devuelve el atributo especificado por el índice.
+El **método get \_ Item** devuelve el atributo especificado por el índice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,14 +33,14 @@ HRESULT get_Item(
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*Índice* \[ En\]
 </dt> <dd>
 
-Índice del elemento que se va a obtener.
+Índice del elemento que se obtiene.
 
 </dd> <dt>
 
-*pval* \[ enuncia\]
+*pVal* \[ out\]
 </dt> <dd>
 
 Puntero a un **BSTR** que contiene los valores del elemento.
@@ -55,10 +55,10 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *pval* no es un puntero válido.<br/>         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El parámetro de *Índice* no es válido.<br/>                  |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro pVal* no es un puntero válido.<br/>         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro Index* no es válido.<br/>                  |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -66,9 +66,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria asignada para el parámetro *pval* .
+La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria asignada para el *parámetro pVal.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,9 +76,9 @@ La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleau
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

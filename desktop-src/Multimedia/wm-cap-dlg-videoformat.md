@@ -23,7 +23,7 @@ ms.locfileid: "118135404"
 ---
 # <a name="wm_cap_dlg_videoformat-message"></a>Mensaje \_ DE \_ DLG \_ VIDEOFORMAT de WM CAP
 
-El **mensaje WM CAP \_ \_ DLG \_ VIDEOFORMAT** muestra un cuadro de diálogo en el que el usuario puede seleccionar el formato de vídeo. El cuadro de diálogo Formato de vídeo puede usarse para seleccionar las opciones de dimensiones de imagen, profundidad de bits y compresión de hardware. Puede enviar este mensaje explícitamente o mediante la [**macro capDlgVideoFormat.**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat)
+El **mensaje WM CAP \_ \_ DLG \_ VIDEOFORMAT** muestra un cuadro de diálogo en el que el usuario puede seleccionar el formato de vídeo. El cuadro de diálogo Formato de vídeo puede usarse para seleccionar dimensiones de imagen, profundidad de bits y opciones de compresión de hardware. Puede enviar este mensaje explícitamente o mediante la [**macro capDlgVideoFormat.**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideoformat)
 
 
 ```C++
@@ -56,7 +56,7 @@ El cuadro de diálogo Formato de vídeo es único para cada controlador de captu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

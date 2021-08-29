@@ -1,9 +1,9 @@
 ---
 title: Elemento ENDMARKER
-description: El elemento ENDMARKER especifica un marcador en el que Windows Media Player detendrá la representación de la secuencia.
+description: El elemento ENDMARKER especifica un marcador en el que Reproductor de Windows Media dejará de representar la secuencia.
 ms.assetid: 554f0612-1669-4da4-9c5f-cc8984ef897c
 keywords:
-- Elemento ENDMARKER Media Player Windows
+- Elemento ENDMARKER Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 94d00eae3681775476af9c3169134b636e2904c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 276b17117d2f01d9bc40d7f171a6d0ff6ea2331da439266ac11bf8c25b5e4f25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996670"
 ---
 # <a name="endmarker-element"></a>Elemento ENDMARKER
 
-El elemento **ENDMARKER** especifica un marcador en el que Windows Media Player detendrá la representación de la secuencia.
+El **elemento ENDMARKER** especifica un marcador en el que Reproductor de Windows Media dejará de representar la secuencia.
 
 ``` syntax
 <ENDMARKER
@@ -33,9 +33,9 @@ El elemento **ENDMARKER** especifica un marcador en el que Windows Media Player 
 
 ## <a name="attributes"></a>Atributos
 
-**NÚMEROS**
+**Número**
 
-El número de un marcador numérico en el índice. El valor predeterminado es el final del contenido.
+Número de un marcador numérico en el índice. El valor predeterminado es el final del contenido.
 
 **NOMBRE**
 
@@ -47,7 +47,7 @@ Nombre de un marcador con nombre en el índice. El valor predeterminado es el fi
 
 | Hierarchy       | Elementos           |
 |-----------------|--------------------|
-| Elementos primarios | **entrada**, **ref** |
+| Elementos primarios | **ENTRY**, **REF** |
 | Elementos secundarios  | Ninguno               |
 
 
@@ -56,17 +56,17 @@ Nombre de un marcador con nombre en el índice. El valor predeterminado es el fi
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento especifica el marcador donde Windows Media Player va a detener la representación de la secuencia definida en el elemento primario **entry** o **ref** .
+Este elemento especifica el marcador en el Reproductor de Windows Media para detener la representación de la secuencia definida en el elemento **primario ENTRY** o **REF.**
 
 Nota
 
-Use el elemento **ENDMARKER** con el atributo **número** o **nombre** , pero no ambos.
+Use el **elemento ENDMARKER** con el atributo **NUMBER** o **NAME,** pero no ambos.
 
-En el modo de vista previa, al alcanzar un marcador final se detiene la vista previa, incluso si no ha transcurrido el tiempo especificado por el elemento **PREVIEWDURATION** . El elemento **ENDMARKER** también tiene prioridad sobre el elemento **Duration** .
+En el modo de vista previa, al llegar a un marcador final se detiene la vista previa, incluso si no ha transcurrido el tiempo especificado por el **elemento PREVIEWDURATION.** El **elemento ENDMARKER** también tiene prioridad sobre el **elemento DURATION.**
 
-Un elemento **ENDMARKER** definido dentro de un elemento **ref** tiene prioridad sobre un **ENDMARKER** definido en el elemento de **entrada** primario del elemento **ref** .
+Un **elemento ENDMARKER** definido dentro de un elemento **REF** tiene  prioridad sobre **un ENDMARKER** definido dentro del elemento PRIMARIO ENTRY del **elemento REF.**
 
-Si el marcador especificado por un elemento **ENDMARKER** se produce antes en el flujo que el marcador definido por un elemento **STARTMARKER** , no se reproduce ningún contenido, pero no se genera ningún error.
+Si el marcador especificado por un elemento **ENDMARKER** se produce antes en la secuencia que el marcador definido por un **elemento STARTMARKER,** no se reproduce contenido, pero no se genera ningún error.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -85,7 +85,7 @@ Si el marcador especificado por un elemento **ENDMARKER** se produce antes en el
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -93,10 +93,10 @@ Si el marcador especificado por un elemento **ENDMARKER** se produce antes en el
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  
