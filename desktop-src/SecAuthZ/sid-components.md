@@ -1,44 +1,44 @@
 ---
-description: Componentes SID
+description: Componentes de SID
 ms.assetid: 528412e7-c2b6-4ddd-86de-999252972421
-title: Componentes SID
+title: Componentes de SID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bbd44d0534cc56c6ef998c150810f14b3eda289d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9286f29015d96aef6a48726229812ad6fe73c23c59cb27aa553188cf2e9fc322
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119907155"
 ---
-# <a name="sid-components"></a>Componentes SID
+# <a name="sid-components"></a>Componentes de SID
 
-Un valor de SID incluye componentes que proporcionan información sobre la estructura de [**SID**](/windows/desktop/api/Winnt/ns-winnt-sid) y los componentes que identifican de forma única a un administrador de confianza. Un SID consta de los siguientes componentes:
+Un valor SID incluye componentes que proporcionan información sobre la [**estructura del SID**](/windows/desktop/api/Winnt/ns-winnt-sid) y los componentes que identifican de forma única a un administrador de confianza. Un SID consta de los siguientes componentes:
 
--   El nivel de revisión de la estructura de [**SID**](/windows/desktop/api/Winnt/ns-winnt-sid)
--   Un valor de autoridad de identificador de 48 bits que identifica la autoridad que emitió el SID.
--   Un número variable de valores de subautoridad o de [*identificador relativo*](/windows/desktop/SecGloss/r-gly) (RID) que identifican de forma única el administrador de confianza con respecto a la autoridad que emitió el SID.
+-   Nivel de revisión de la [**estructura de SID**](/windows/desktop/api/Winnt/ns-winnt-sid)
+-   Valor de autoridad de identificador de 48 bits que identifica la autoridad que emitió el SID
+-   Número variable de valores de [](/windows/desktop/SecGloss/r-gly) subautoridad o identificador relativo (RID) que identifican de forma única al administrador de confianza con respecto a la autoridad que emitió el SID.
 
-La combinación del valor de autoridad de identificador y los valores de subautor garantiza que no habrá dos SID serán el mismo, incluso si dos entidades emisoras de SID diferentes emiten la misma combinación de valores de RID. Cada autoridad emisora de SID emite un RID determinado solo una vez.
+La combinación del valor de autoridad del identificador y los valores de subautoridad garantiza que no haya dos SID iguales, incluso si dos autoridades emisoras de SID diferentes emiten la misma combinación de valores rid. Cada entidad emisora de SID emite un RID determinado solo una vez.
 
-Los SID se almacenan en formato binario en una estructura de [**SID**](/windows/desktop/api/Winnt/ns-winnt-sid) . Para mostrar un SID, puede llamar a la función [**ConvertSidToStringSid**](/windows/desktop/api/Sddl/nf-sddl-convertsidtostringsida) para convertir un SID binario en formato de cadena. Para volver a convertir una cadena SID en un SID funcional válido, llame a la función [**ConvertStringSidToSid**](/windows/desktop/api/Sddl/nf-sddl-convertstringsidtosida) .
+Los SID se almacenan en formato binario en una [**estructura SID.**](/windows/desktop/api/Winnt/ns-winnt-sid) Para mostrar un SID, puede llamar a la [**función ConvertSidToStringSid**](/windows/desktop/api/Sddl/nf-sddl-convertsidtostringsida) para convertir un SID binario en formato de cadena. Para volver a convertir una cadena SID en un SID funcional válido, llame a la [**función ConvertStringSidToSid.**](/windows/desktop/api/Sddl/nf-sddl-convertstringsidtosida)
 
-Estas funciones utilizan la siguiente notación de cadena normalizada para SID, lo que facilita la visualización de sus componentes:
+Estas funciones usan la siguiente notación de cadena estandarizada para los SID, lo que facilita la visualización de sus componentes:
 
-s-*R* - *I* - ...
+S-*R* - *I* - *S*...
 
-En esta notación, el carácter literal "S" identifica la serie de dígitos como un SID, *R* es el nivel de revisión, *I* es el valor de la autoridad de identificador y *S*... es uno o varios valores de subautoridad.
+En esta notación, el carácter literal "S" identifica la serie de dígitos como SID, *R* es el nivel de revisión, *I* es el valor de la entidad de identificador y *S*... es uno o varios valores de subautoridad.
 
-En el ejemplo siguiente se usa esta notación para mostrar el SID relativo al dominio conocido del grupo de administradores locales:
+En el ejemplo siguiente se usa esta notación para mostrar el SID conocido relativo al dominio del grupo de administradores local:
 
 S-1-5-32-544
 
-En este ejemplo, el SID tiene los siguientes componentes. Las constantes entre paréntesis son los valores conocidos de autoridad de identificador conocido y [*RID*](/windows/desktop/SecGloss/r-gly) definidos en Winnt. h:
+En este ejemplo, el SID tiene los siguientes componentes. Las constantes entre paréntesis son valores de [*RID*](/windows/desktop/SecGloss/r-gly) y autoridad de identificador conocidos definidos en Winnt.h:
 
 -   Un nivel de revisión de 1
--   Un valor de autoridad de identificador de 5 (entidad de seguridad de \_ NT \_ )
--   Primer valor de subautoridad de 32 (seguridad, \_ \_ RID de dominio \_ )
--   Un segundo valor de subautoridad de 544 ( \_ administradores de RID de alias de dominio \_ \_ )
+-   Un valor de identificador-autoridad de 5 (SECURITY \_ NT \_ AUTHORITY)
+-   Primer valor de subautoridad de 32 (SECURITY \_ BUILTIN \_ DOMAIN \_ RID)
+-   Un segundo valor de subautoridad de 544 \_ (ADMINISTRADORES DE RID DE ALIAS DE \_ \_ DOMINIO)
 
  
 

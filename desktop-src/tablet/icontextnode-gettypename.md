@@ -1,7 +1,7 @@
 ---
 description: Recupera un nombre de tipo legible de este IContextNode.
 ms.assetid: 02031efd-1e9c-4e96-8dc1-280cc1a6e58f
-title: 'IContextNode:: GetTypeName (método) (IACom. h)'
+title: Método IContextNode::GetTypeName (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: d9d7bc4a24b7abc3ee507d7bda0c547f4c55a787
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 741aea01401c9a266a4345a778e691eac49d9de3d41d59bba9d471cdb10c2af7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008465"
 ---
-# <a name="icontextnodegettypename-method"></a>IContextNode:: GetTypeName (método)
+# <a name="icontextnodegettypename-method"></a>IContextNode::GetTypeName (método)
 
 Recupera un nombre de tipo legible de este [**IContextNode**](icontextnode.md).
 
@@ -39,25 +39,25 @@ HRESULT GetTypeName(
 
 <dl> <dt>
 
-*pbstrContextNodeType* \[ enuncia\]
+*pbstrContextNodeType* \[ out\]
 </dt> <dd>
 
-Un nombre de tipo legible de este [**IContextNode**](icontextnode.md).
+Nombre de tipo legible de este [**IContextNode**](icontextnode.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) en \* *pbstrContextNodeType* cuando ya no necesite usar la cadena.
 
  
 
-Por ejemplo, este método establece *pbstrContextNodeType* en "InkWordNode" para un nodo de palabra de tinta (vea [**IContextNode:: GetType**](icontextnode-gettype.md) y [tipos de nodo de contexto](context-node-types.md)).
+Por ejemplo, este método establece *pbstrContextNodeType* en "InkWordNode" para un nodo de palabras manuscrita (vea [**IContextNode::GetType**](icontextnode-gettype.md) y Tipos de nodo [de contexto).](context-node-types.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Por ejemplo, este método establece *pbstrContextNodeType* en "InkWordNode" para
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -79,13 +79,13 @@ Por ejemplo, este método establece *pbstrContextNodeType* en "InkWordNode" para
 [**IContextNode**](icontextnode.md)
 </dt> <dt>
 
-[**IContextNode:: GetType**](icontextnode-gettype.md)
+[**IContextNode::GetType**](icontextnode-gettype.md)
 </dt> <dt>
 
 [Tipos de nodo de contexto](context-node-types.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

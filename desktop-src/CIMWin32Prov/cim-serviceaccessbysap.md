@@ -1,8 +1,8 @@
 ---
-description: La \_ clase de asociación CIM ServiceAccessBySAP representa los puntos de acceso de un servicio. Por ejemplo, se puede tener acceso a una impresora a través de los puntos de acceso de servicio (SAP, Macintosh o Windows), que pueden hospedarse en sistemas diferentes.
+description: La clase de asociación CIM \_ ServiceAccessBySAP representa los puntos de acceso de un servicio. Por ejemplo, NetWare, Macintosh o Windows service access points (SAP) pueden acceder a una impresora, que se pueden hospedar en sistemas diferentes.
 ms.assetid: 68311a56-b034-4a30-a885-74a745a738d8
 ms.tgt_platform: multiple
-title: CIM_ServiceAccessBySAP (clase)
+title: CIM_ServiceAccessBySAP clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e34b2af50a6475461ae4d39d156d26143fcb75f5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2fa927bdeb2a6554bf6b61822b1bf697984fb883857474e9a9890ac65af50a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919635"
 ---
-# <a name="cim_serviceaccessbysap-class"></a>\_Clase ServiceAccessBySAP de CIM
+# <a name="cim_serviceaccessbysap-class"></a>Cim \_ ServiceAccessBySAP (clase)
 
-La clase de asociación **CIM \_ ServiceAccessBySAP** representa los puntos de acceso de un servicio. Por ejemplo, se puede tener acceso a una impresora a través de los puntos de acceso de servicio (SAP, Macintosh o Windows), que pueden hospedarse en sistemas diferentes.
+La **clase de asociación CIM \_ ServiceAccessBySAP** representa los puntos de acceso de un servicio. Por ejemplo, NetWare, Macintosh o Windows service access points (SAP) pueden acceder a una impresora, que se pueden hospedar en sistemas diferentes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,55 +47,55 @@ class CIM_ServiceAccessBySAP : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ServiceAccessBySAP** tiene estos tipos de miembros:
+La **clase CIM \_ ServiceAccessBySAP** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ServiceAccessBySAP** tiene estas propiedades.
+La **clase CIM \_ ServiceAccessBySAP** tiene estas propiedades.
 
 <dl> <dt>
 
 **Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ servicio CIM**
+Tipo de datos: **Servicio CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ servicio CIM**](cim-service.md) que describe el servicio.
+Un [**servicio CIM \_**](cim-service.md) que describe el servicio.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ punto**
+Tipo de datos: **Cim \_ ServiceAccessPoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ punto de CIM**](cim-serviceaccesspoint.md) que describe un punto de acceso para un servicio. Los puntos de acceso dependen de esta relación, ya que no tienen ninguna función sin un servicio correspondiente.
+Servicio [**\_ CIMAccessPoint**](cim-serviceaccesspoint.md) que describe un punto de acceso para un servicio. Los puntos de acceso dependen de esta relación, ya que no tienen ninguna función sin un servicio correspondiente.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ ServiceAccessBySAP** se deriva de [**la \_ dependencia CIM**](cim-dependency.md).
+La **clase CIM \_ ServiceAccessBySAP** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 
-WMI no implementa esta clase. Para las clases WMI que se derivan de **\_ ServiceAccessBySAP CIM**, vea [clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI que se derivan de **CIM \_ ServiceAccessBySAP,** vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

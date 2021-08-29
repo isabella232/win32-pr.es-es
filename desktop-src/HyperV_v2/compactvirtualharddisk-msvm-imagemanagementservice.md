@@ -1,7 +1,7 @@
 ---
 description: Compacta un archivo de disco duro virtual.
 ms.assetid: 1E64BD91-6FE6-4658-9EBF-615FC705B920
-title: Método CompactVirtualHardDisk de la clase Msvm_ImageManagementService
+title: Método CompactVirtualHardDisk de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8e8c148e51105d8c78021b58366e2f2df3913f57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74e27aa21693a18ce5cc65c8f878496e794fb8ada8aa32082c70d771cb8522ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532685"
 ---
-# <a name="compactvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método CompactVirtualHardDisk de la \_ clase ImageManagementService de MSVM
+# <a name="compactvirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método CompactVirtualHardDisk de la clase \_ Msvm ImageManagementService
 
-Compacta un archivo de disco duro virtual. La compactación es el proceso de liberar partes no utilizadas del disco duro virtual. El disco duro virtual no se monta automáticamente. Vea la sección Comentarios para conocer las restricciones de uso de este método.
+Compacta un archivo de disco duro virtual. La compactación es el proceso de liberar partes no usadas del disco duro virtual. El disco duro virtual no se monta automáticamente. Vea Comentarios sobre las restricciones de uso para este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,27 +41,27 @@ uint32 CompactVirtualHardDisk(
 
 <dl> <dt>
 
-*Ruta de acceso* \[ de\]
+*Ruta de acceso* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
 Ruta de acceso completa que especifica la ubicación del archivo de combinación.
 
 </dd> <dt>
 
-*Modo* \[ de de\]
+*Modo* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt16**
+Tipo: **uint16**
 
-Especifica el modo de la operación de compactación. Debe ser uno de los valores siguientes.
+Especifica el modo para la operación compacta. Debe ser uno de los siguientes valores.
 
 <dt>
 
 <span id="Full"></span><span id="full"></span><span id="FULL"></span>
 
-**Full** (0)
+**Completo** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -82,30 +82,30 @@ Especifica el modo de la operación de compactación. Debe ser uno de los valore
 
 <span id="Pretrimmed"></span><span id="pretrimmed"></span><span id="PRETRIMMED"></span>
 
-**Recortado** (3)
+**Pretrimmed** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Prezeroed"></span><span id="prezeroed"></span><span id="PREZEROED"></span>
 
-**Precero** (4)
+**Prezeroed** (4)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Referencia al trabajo (puede ser **null** si se ha completado la tarea).
+Referencia al trabajo (puede ser **Null si** se completa la tarea).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Este método puede devolver uno de los valores siguientes.
 
@@ -126,16 +126,16 @@ Este método puede devolver uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -144,30 +144,30 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo se pueden usar los siguientes tipos de discos duros virtuales con este método:
+Con este método solo se pueden usar los siguientes tipos de discos duros virtuales:
 
--   VHDX fijo
+-   VHDX corregido
 -   VHD dinámico
 -   VHDX dinámico
--   VHD de diferenciación
--   VHDX de diferenciación
+-   Disco duro virtual de diferenciación
+-   Diferenciación de VHDX
 
-El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ ImageManagementService de Msvm**](msvm-imagemanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se compacta un disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el siguiente ejemplo de C# se compacta un disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -217,12 +217,12 @@ public static void CompactVirtualHardDisk(string vhdPath, VirtualHardDiskCompact
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -231,10 +231,10 @@ public static void CompactVirtualHardDisk(string vhdPath, VirtualHardDiskCompact
 
 <dl> <dt>
 
-[**\_CONCRETEJOB CIM**](/previous-versions//cc136808(v=vs.85))
+[**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))
 </dt> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

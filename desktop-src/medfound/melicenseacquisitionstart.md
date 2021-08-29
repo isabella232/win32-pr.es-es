@@ -1,35 +1,35 @@
 ---
-description: Generado por el motor de directivas cuando la adquisición de licencias está a punto de comenzar. La adquisición de licencias se realiza mediante la implementación de aplicaciones de la interfaz IMFContentProtectionManager.
+description: Lo genera el motor de directivas cuando la adquisición de licencias está a punto de comenzar. La adquisición de licencias se realiza mediante la implementación de aplicaciones de la interfaz IMFContentProtectionManager.
 ms.assetid: c328743c-a69b-431e-8a05-0e140aad9b4d
-title: Evento MELicenseAcquisitionStart (Mfobjects. h)
+title: Evento MELicenseAcquisitionStart (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 914d2580c95cf40986a844a994c1e284c5ad9e22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea326ff23c4d546f0b692a813ef92ccfce8e3cc97320a8129daa9cedc4867bfc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119228975"
 ---
 # <a name="melicenseacquisitionstart-event"></a>Evento MELicenseAcquisitionStart
 
-Generado por el motor de directivas cuando la adquisición de licencias está a punto de comenzar. La adquisición de licencias se realiza mediante la implementación de la aplicación de la interfaz [**IMFContentProtectionManager**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager) .
+Lo genera el motor de directivas cuando la adquisición de licencias está a punto de comenzar. La adquisición de licencias se realiza mediante la implementación de la aplicación de la [**interfaz IMFContentProtectionManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager)
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) se incluyen los siguientes.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando se completa la adquisición de licencias, el motor de directivas genera el evento [MELicenseAcquisitionCompleted](melicenseacquisitioncompleted.md) .
+Cuando se completa la adquisición de licencias, el motor de directivas genera el [evento MELicenseAcquisitionCompleted.](melicenseacquisitioncompleted.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Cuando se completa la adquisición de licencias, el motor de directivas genera e
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Cuando se completa la adquisición de licencias, el motor de directivas genera e
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

@@ -4,39 +4,39 @@ description: Muestra cómo escribir sus propios efectos personalizados mediante 
 ms.assetid: 5D22CA84-6465-4882-863D-81A632ACDD9C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eca6b15fe81ff4ccbd6cebbcee8c0d1955967056
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e14067ebeb7e52a521d7d46d210b79e37cb4377b3f763cb99e63b9e426bf805e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814961"
 ---
 # <a name="custom-effects"></a>Efectos personalizados
 
-[Direct2D](./direct2d-portal.md) se suministra con una biblioteca de efectos que realizan una serie de operaciones de imagen comunes. Vea el tema sobre [efectos integrados](built-in-effects.md) para obtener una lista completa de los efectos. En el caso de las funciones que no se pueden lograr con los efectos integrados, Direct2D le permite escribir sus propios efectos personalizados mediante [HLSL](/windows/desktop/direct3dhlsl/overviews-direct3d-11-hlsl)estándar. Puede usar estos efectos personalizados junto con los efectos integrados que se envían con Direct2D.
+[Direct2D](./direct2d-portal.md) incluye una biblioteca de efectos que realizan diversas operaciones de imagen comunes. Consulte el [tema de efectos integrados](built-in-effects.md) para obtener la lista completa de efectos. Para una funcionalidad que no se puede lograr con los efectos integrados, Direct2D permite escribir sus propios efectos personalizados mediante [HLSL estándar.](/windows/desktop/direct3dhlsl/overviews-direct3d-11-hlsl) Puede usar estos efectos personalizados junto con los efectos integrados que se incluyen con Direct2D.
 
-Para ver ejemplos de un efecto completo de píxeles, vértices y sombreador de cálculo, consulte el [ejemplo de SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
+Para ver ejemplos de un efecto completo de sombreador de cálculo, vértice y píxel, consulte el ejemplo del [SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
 
-En este tema, le mostraremos los pasos y los conceptos que necesita para diseñar y crear un efecto personalizado con todas las características.
+En este tema, le mostramos los pasos y conceptos que necesita para diseñar y crear un efecto personalizado completo.
 
 ## <a name="introduction-what-is-inside-an-effect"></a>Introducción: ¿Qué hay dentro de un efecto?
 
 ![diagrama de efecto de sombra paralela.](images/custom-effects1.png)
 
-Conceptualmente, un efecto de [Direct2D](./direct2d-portal.md) realiza una tarea de creación de imágenes, como cambiar el brillo, dessaturar una imagen o como se mostró anteriormente, creando una sombra paralela. En la aplicación, son sencillas. Pueden aceptar cero o más imágenes de entrada, exponer varias propiedades que controlan su funcionamiento y generar una sola imagen de salida.
+Conceptualmente, un efecto [Direct2D](./direct2d-portal.md) realiza una tarea de creación de imágenes, como cambiar el brillo, desa saturar una imagen o, como se muestra anteriormente, crear una sombra paralela. Para la aplicación, son simples. Pueden aceptar cero o más imágenes de entrada, exponer varias propiedades que controlan su operación y generar una sola imagen de salida.
 
-Hay cuatro partes diferentes de un efecto personalizado que el autor de un efecto es responsable de:
+Hay cuatro partes diferentes de un efecto personalizado del que es responsable un autor del efecto:
 
 1.  Interfaz de efecto: la interfaz de efecto define conceptualmente cómo interactúa una aplicación con un efecto personalizado (como cuántas entradas acepta el efecto y qué propiedades están disponibles). La interfaz de efecto administra un gráfico de transformación, que contiene las operaciones de creación de imágenes reales.
-2.  Transformar gráfico: cada efecto crea un gráfico de transformación interno formado por transformaciones individuales. Cada transformación representa una operación de una sola imagen. El efecto es responsable de vincular estas transformaciones en un gráfico para realizar el efecto de imagen previsto. Un efecto puede Agregar, quitar, modificar y reordenar las transformaciones en respuesta a los cambios en las propiedades externas del efecto.
-3.  Transform: una transformación representa una operación de una sola imagen. Su finalidad principal es hospedar los sombreadores que se ejecutan para cada píxel de salida. Para ello, es responsable de calcular el nuevo tamaño de la imagen de salida basándose en la lógica de sus sombreadores. También debe calcular qué área de la imagen de entrada deben leer los sombreadores para representar la región de salida solicitada.
-4.  Sombreador: se ejecuta un sombreador en la entrada de la transformación en la GPU (o CPU si se especifica la representación de software cuando la aplicación crea el dispositivo Direct3D). Los sombreadores de efectos se escriben en el lenguaje de sombreado de alto nivel ([HLSL](/windows/desktop/direct3dhlsl/overviews-direct3d-11-hlsl)) y se compilan en código de bytes durante la compilación del efecto, que después se carga por el efecto durante el tiempo de ejecución. En este documento de referencia se describe cómo escribir HLSL compatible con [Direct2D](./direct2d-portal.md). La documentación de Direct3D contiene información general básica de HLSL.
+2.  Gráfico de transformación: cada efecto crea un gráfico de transformación interno que se forma con transformaciones individuales. Cada transformación representa una única operación de imagen. El efecto es responsable de vincular estas transformaciones en un gráfico para realizar el efecto de creación de imágenes previsto. Un efecto puede agregar, quitar, modificar y reordenar transformaciones en respuesta a cambios en las propiedades externas del efecto.
+3.  Transformación: una transformación representa una única operación de imagen. Su propósito principal es hospedar los sombreadores que se ejecutan para cada píxel de salida. Para ello, es responsable de calcular el nuevo tamaño de su imagen de salida en función de la lógica de sus sombreadores. También debe calcular el área de su imagen de entrada de la que deben leer los sombreadores para representar la región de salida solicitada.
+4.  Sombreador: se ejecuta un sombreador en la entrada de la transformación en la GPU (o CPU si se especifica la representación de software cuando la aplicación crea el dispositivo Direct3D). Los sombreadores de efecto se escriben en lenguaje de sombreado de alto nivel[(HLSL)](/windows/desktop/direct3dhlsl/overviews-direct3d-11-hlsl)y se compilan en código de bytes durante la compilación del efecto, que el efecto carga después durante el tiempo de ejecución. En este documento de referencia se describe cómo escribir HLSL compatible con [Direct2D.](./direct2d-portal.md) La documentación de Direct3D contiene información general básica de HLSL.
 
-## <a name="creating-an-effect-interface"></a>Crear una interfaz de efecto
+## <a name="creating-an-effect-interface"></a>Creación de una interfaz de efecto
 
-La interfaz de efecto define cómo interactúa una aplicación con el efecto personalizado. Para crear una interfaz de efecto, una clase debe implementar ID2D1EffectImpl, definir metadatos que describan el efecto (como su nombre, recuento de entradas y propiedades) y crear métodos que registren el efecto personalizado para su uso con [Direct2D](./direct2d-portal.md).
+La interfaz de efecto define cómo interactúa una aplicación con el efecto personalizado. Para crear una interfaz de efecto, una clase debe implementar ID2D1EffectImpl, definir metadatos que describan el efecto (como su nombre, recuento de entradas y propiedades) y crear métodos que registren el efecto personalizado para su uso con [Direct2D.](./direct2d-portal.md)
 
-Una vez que se han implementado todos los componentes de una interfaz de efecto, el encabezado de la clase se parecerá a este:
+Una vez implementados todos los componentes de una interfaz de efecto, el encabezado de la clase aparecerá de la siguiente forma:
 
 
 ```C++
@@ -83,33 +83,33 @@ private:
 
 ### <a name="implement-id2d1effectimpl"></a>Implementación de ID2D1EffectImpl
 
-La interfaz [**ID2D1EffectImpl**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectimpl) contiene tres métodos que debe implementar:
+La [**interfaz ID2D1EffectImpl**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectimpl) contiene tres métodos que debe implementar:
 
-### <a name="initializeid2d1effectcontext-pcontextinternal-id2d1transformgraph-ptransformgraph"></a>Initialize (ID2D1EffectContext \* pContextInternal, ID2D1TransformGraph \* pTransformGraph)
+### <a name="initializeid2d1effectcontext-pcontextinternal-id2d1transformgraph-ptransformgraph"></a>Initialize(ID2D1EffectContext \* pContextInternal, ID2D1TransformGraph \* pTransformGraph)
 
-[Direct2D](./direct2d-portal.md) llama al método [**Initialize**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) una vez que la aplicación ha llamado al método [**ID2D1DeviceContext:: CreateEffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect) . Puede utilizar este método para realizar la inicialización interna o cualquier otra operación necesaria para el efecto. Además, puede utilizarlo para crear el gráfico de transformación inicial del efecto.
+[Direct2D](./direct2d-portal.md) llama al [**método Initialize**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) después de que la aplicación haya llamado al método [**ID2D1DeviceContext::CreateEffect.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect) Puede usar este método para realizar la inicialización interna o cualquier otra operación necesaria para el efecto. Además, puede usarlo para crear el gráfico de transformación inicial del efecto.
 
-### <a name="setgraphid2d1transformgraph-ptransformgraph"></a>SetGraph (ID2D1TransformGraph \* pTransformGraph)
+### <a name="setgraphid2d1transformgraph-ptransformgraph"></a>SetGraph(ID2D1TransformGraph \* pTransformGraph)
 
-[Direct2D](./direct2d-portal.md) llama al método [**SetGraph**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-setgraph) cuando se cambia el número de entradas del efecto. Aunque la mayoría de los efectos tienen un número constante de entradas, otras como el [efecto compuesto](composite.md) admiten un número variable de entradas. Este método permite que estos efectos actualicen su gráfico de transformación en respuesta a un recuento de entrada cambiante. Si un efecto no admite un recuento de entrada variable, este método simplemente puede devolver E \_ NOTIMPL.
+[Direct2D](./direct2d-portal.md) llama al [**método SetGraph**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-setgraph) cuando cambia el número de entradas al efecto. Aunque la mayoría de los efectos tienen un número constante de entradas, otras como el efecto [Compuesto](composite.md) admiten un número variable de entradas. Este método permite que estos efectos actualicen su gráfico de transformación en respuesta a un recuento de entradas cambiante. Si un efecto no admite un recuento de entradas variable, este método puede devolver simplemente E \_ NOTIMPL.
 
-### <a name="prepareforrender-d2d1_change_type-changetype"></a>PrepareForRender (tipo de cambio de D2D1 \_ \_ )
+### <a name="prepareforrender-d2d1_change_type-changetype"></a>PrepareForRender (D2D1 \_ CHANGE \_ TYPE changeType)
 
-El método [**PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender) proporciona una oportunidad para que los efectos realicen operaciones en respuesta a cambios externos. [Direct2D](./direct2d-portal.md) llama a este método justo antes de representar un efecto si al menos uno de ellos es true:
+El [**método PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender) proporciona una oportunidad para que los efectos realicen cualquier operación en respuesta a cambios externos. [Direct2D](./direct2d-portal.md) llama a este método justo antes de representar un efecto si se cumple al menos una de estas condiciones:
 
--   El efecto se ha inicializado anteriormente, pero aún no se ha dibujado.
--   Una propiedad de efecto ha cambiado desde la última llamada a Draw.
--   El estado del contexto de [Direct2D](./direct2d-portal.md) que realiza la llamada (como dpi) ha cambiado desde la última llamada a Draw.
+-   El efecto se ha inicializado previamente, pero aún no se ha dibujado.
+-   Una propiedad de efecto ha cambiado desde la última llamada a draw.
+-   El estado del contexto [de Direct2D](./direct2d-portal.md) que realiza la llamada (como PPP) ha cambiado desde la última llamada a Draw.
 
-### <a name="implement-the-effect-registration-and-callback-methods"></a>Implementar los métodos de registro y devolución de llamada de efecto
+### <a name="implement-the-effect-registration-and-callback-methods"></a>Implementar los métodos de devolución de llamada y registro de efectos
 
-Las aplicaciones deben registrar efectos con [Direct2D](./direct2d-portal.md) antes de crear una instancia de ellos. Este registro está en el ámbito de una instancia de un generador de Direct2D y debe repetirse cada vez que se ejecuta la aplicación. Para habilitar este registro, un efecto personalizado define un GUID único, un método público que registra el efecto y un método de devolución de llamada privado que devuelve una instancia del efecto.
+Las aplicaciones deben registrar efectos [con Direct2D antes](./direct2d-portal.md) de crear instancias de ellos. Este registro tiene como ámbito una instancia de un generador de Direct2D y se debe repetir cada vez que se ejecuta la aplicación. Para habilitar este registro, un efecto personalizado define un GUID único, un método público que registra el efecto y un método de devolución de llamada privado que devuelve una instancia del efecto.
 
-### <a name="define-a-guid"></a>Definir un GUID
+### <a name="define-a-guid"></a>Definición de un GUID
 
-Debe definir un GUID que identifique de forma única el efecto de registro con [Direct2D](./direct2d-portal.md). La aplicación usa el mismo para identificar el efecto cuando llama a [**ID2D1DeviceContext:: CreateEffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect).
+Debe definir un GUID que identifique de forma única el efecto para el registro con [Direct2D.](./direct2d-portal.md) La aplicación usa lo mismo para identificar el efecto cuando llama a [**ID2D1DeviceContext::CreateEffect**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createeffect).
 
-Este código muestra cómo definir dicho GUID para un efecto. Debe crear su propio GUID único mediante una herramienta de generación de GUID como guidgen.exe.
+Este código muestra cómo definir este GUID para un efecto. Debe crear su propio GUID único mediante una herramienta de generación de GUID como guidgen.exe.
 
 
 ```C++
@@ -122,13 +122,13 @@ DEFINE_GUID(CLSID_SampleEffect, 0x00000000, 0x0000, 0x0000, 0x00, 0x00, 0x00, 0x
 
 
 
-### <a name="define-a-public-registration-method"></a>Definir un método de registro público
+### <a name="define-a-public-registration-method"></a>Definición de un método de registro público
 
-A continuación, defina un método público para que la aplicación llame a para registrar el efecto con [Direct2D](./direct2d-portal.md). Dado que el registro de efectos es específico de una instancia de un generador de Direct2D, el método acepta una interfaz [**ID2D1Factory1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1factory1) como parámetro. Para registrar el efecto, el método llama entonces a la API [**ID2D1Factory1:: RegisterEffectFromString**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring) en el parámetro **ID2D1Factory1** .
+A continuación, defina un método público para que la aplicación llame a para registrar el efecto con [Direct2D.](./direct2d-portal.md) Dado que el registro de efectos es específico de una instancia de un generador de Direct2D, el método acepta una [**interfaz ID2D1Factory1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1factory1) como parámetro. Para registrar el efecto, el método llama a la API [**ID2D1Factory1::RegisterEffectFromString**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring) en el **parámetro ID2D1Factory1.**
 
-Esta API acepta una cadena XML que describe los metadatos, las entradas y las propiedades del efecto. Los metadatos de un efecto solo tienen fines informativos y la aplicación puede consultarlos a través de la interfaz [**ID2D1Properties**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1properties) . Los datos de entrada y de propiedad, por otro lado, se usan en [Direct2D](./direct2d-portal.md) y representan la funcionalidad del efecto.
+Esta API acepta una cadena XML que describe los metadatos, las entradas y las propiedades del efecto. Los metadatos de un efecto son solo con fines informativos y la aplicación puede consultarlo a través de la [**interfaz ID2D1Properties.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1properties) Por otro lado, [Direct2D](./direct2d-portal.md) usa los datos de entrada y propiedad y representa la funcionalidad del efecto.
 
-Aquí se muestra una cadena XML para un efecto de muestra mínimo. La adición de propiedades personalizadas al XML se trata en la sección agregar propiedades personalizadas a un efecto.
+Aquí se muestra una cadena XML para un efecto de ejemplo mínimo. La adición de propiedades personalizadas al XML se trata en la sección Adición de propiedades personalizadas a un efecto.
 
 
 ```XML
@@ -155,9 +155,9 @@ PCWSTR pszXml =
 
 
 
-### <a name="define-an-effect-factory-callback-method"></a>Definir un método de devolución de llamada del generador de efectos
+### <a name="define-an-effect-factory-callback-method"></a>Definición de un método de devolución de llamada de factoría de efecto
 
-El efecto también debe proporcionar un método de devolución de llamada privado que devuelva una instancia del efecto a través de un único \* \* parámetro IUnknown. Se proporciona un puntero a este método a [Direct2D](./direct2d-portal.md) cuando el efecto se registra a través de la API [**ID2D1Factory1:: RegisterEffectFromString**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring) a través del parámetro de [**\_ \_ generador de efectos PD2D1**](/windows/desktop/api/D2D1_1/nc-d2d1_1-pd2d1_effect_factory) \\ .
+El efecto también debe proporcionar un método de devolución de llamada privado que devuelva una instancia del efecto a través de un único parámetro IUnknown. \* \* Se proporciona un puntero a este método para [Direct2D](./direct2d-portal.md) cuando el efecto se registra a través de la API [**ID2D1Factory1::RegisterEffectFromString**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring) a través del parámetro [**PD2D1 \_ EFFECT \_ FACTORY.**](/windows/desktop/api/D2D1_1/nc-d2d1_1-pd2d1_effect_factory) \\
 
 
 ```C++
@@ -177,30 +177,30 @@ HRESULT __stdcall SampleEffect::CreateEffect(_Outptr_ IUnknown** ppEffectImpl)
 
 
 
-### <a name="implement-the-iunknown-interface"></a>Implementar la interfaz IUnknown
+### <a name="implement-the-iunknown-interface"></a>Implementación de la interfaz IUnknown
 
 Por último, el efecto debe implementar la interfaz IUnknown para la compatibilidad con COM.
 
-## <a name="creating-the-effects-transform-graph"></a>Crear el gráfico de transformación del efecto
+## <a name="creating-the-effects-transform-graph"></a>Creación del gráfico de transformación del efecto
 
-Un efecto puede usar varias transformaciones diferentes (operaciones de imagen individuales) para crear el efecto de imagen deseado. Para controlar el orden en el que estas transformaciones se aplican a la imagen de entrada, el efecto las organiza en un gráfico de transformación. Un gráfico de transformación puede hacer uso de los efectos y las transformaciones incluidos en [Direct2D](./direct2d-portal.md) , así como las transformaciones personalizadas creadas por el autor del efecto.
+Un efecto puede usar varias transformaciones diferentes (operaciones de imagen individuales) para crear su efecto de creación de imágenes deseado. Para controlar el orden en el que se aplican estas transformaciones a la imagen de entrada, el efecto las organiza en un gráfico de transformación. Un gráfico de transformación puede usar los efectos y transformaciones incluidos en [Direct2D,](./direct2d-portal.md) así como las transformaciones personalizadas creadas por el autor del efecto.
 
-### <a name="using-transforms-included-with-direct2d"></a>Usar transformaciones incluidas con Direct2D
+### <a name="using-transforms-included-with-direct2d"></a>Uso de transformaciones incluidas con Direct2D
 
-Estas son las transformaciones que se usan con más frecuencia y que se proporcionan con [Direct2D](./direct2d-portal.md).
+Estas son las transformaciones que se usan con más frecuencia proporcionadas [con Direct2D.](./direct2d-portal.md)
 
--   [**ID2D1BlendTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1blendtransform): esta transformación combina un número arbitrario de entradas en función de una descripción de Blend, vea el tema de [**\_ \_ Descripción de D2D1 Blend**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_blend_description) y el [ejemplo de modos de efecto compuesto de Direct2D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct2D%20composite%20effect%20modes%20sample) para obtener ejemplos de fusión. Esta transformación es devuelta por el método [**ID2D1EffectContext:: CreateBlendTransform**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createblendtransform) .
--   [**ID2D1BorderTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1bordertransform): esta transformación expande el tamaño de salida de una imagen según el [**\_ \_ modo de extensión D2D1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode) especificado. Esta transformación es devuelta por el método [**ID2D1EffectContext:: CreateBorderTransform**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createbordertransform) .
--   [**ID2D1OffsetTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1offsettransform): esta transformación desplaza (traduce) su entrada en cualquier número entero de píxeles. Esta transformación es devuelta por el método [**ID2D1EffectContext:: CreateOffsetTransform**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createoffsettransform) .
--   Cualquier efecto existente se puede tratar como una transformación con el fin de transformar la creación del gráfico mediante el método [**ID2D1EffectContext:: CreateTransformNodeFromEffect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createtransformnodefromeffect) .
+-   [**ID2D1BlendTransform:**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1blendtransform)esta transformación combina un número arbitrario de entradas en función de una descripción de mezcla; consulte el tema DESCRIPCIÓN DE BLEND de [**D2D1 \_ \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_blend_description) y el ejemplo de modos de efecto compuesto de [Direct2D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct2D%20composite%20effect%20modes%20sample) para obtener ejemplos de combinación. El método [**ID2D1EffectContext::CreateBlendTransform**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createblendtransform) devuelve esta transformación.
+-   [**ID2D1BorderTransform:**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1bordertransform)esta transformación expande el tamaño de salida de una imagen según el modo EXTEND MODE de [**D2D1 \_ \_**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode) especificado. El método [**ID2D1EffectContext::CreateBorderTransform**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createbordertransform) devuelve esta transformación.
+-   [**ID2D1OffsetTransform:**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1offsettransform)esta transformación desplaza (traduce) su entrada por cualquier número entero de píxeles. El método [**ID2D1EffectContext::CreateOffsetTransform**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createoffsettransform) devuelve esta transformación.
+-   Cualquier efecto existente se puede tratar como una transformación con el fin de transformar la creación de grafos mediante el [**método ID2D1EffectContext::CreateTransformNodeFromEffect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createtransformnodefromeffect)
 
-### <a name="creating-a-single-node-transform-graph"></a>Crear un gráfico de transformación de un solo nodo
+### <a name="creating-a-single-node-transform-graph"></a>Creación de un gráfico de transformación de nodo único
 
-Una vez que se crea una transformación, la entrada del efecto debe estar conectada a la entrada de la transformación y la salida de la transformación debe estar conectada a la salida del efecto. Cuando un efecto solo contiene una única transformación, puede usar el método [**ID2D1TransformGraph:: SetSingleTransformNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-setsingletransformnode) para lograrlo fácilmente.
+Una vez que se crea una transformación, la entrada del efecto debe estar conectada a la entrada de la transformación y la salida de la transformación debe estar conectada a la salida del efecto. Cuando un efecto solo contiene una sola transformación, puede usar el método [**ID2D1TransformGraph::SetSingleTransformNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-setsingletransformnode) para lograr esto fácilmente.
 
-Puede crear o modificar una transformación en los métodos [**Initialize**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) o [**SetGraph**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-setgraph) del efecto mediante el parámetro ID2D1TransformGraph proporcionado. Si un efecto tiene que realizar cambios en el gráfico de transformación en otro método en el que este parámetro no está disponible, el efecto puede guardar el parámetro [**ID2D1TransformGraph**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transformgraph) como una variable miembro de la clase y acceder a él en otro lugar, como [**PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender) o un método de devolución de llamada de propiedad personalizada.
+Puede crear o modificar una transformación en los métodos [**Initialize**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) o [**SetGraph**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-setgraph) del efecto mediante el parámetro ID2D1TransformGraph proporcionado. Si un efecto necesita realizar cambios en el gráfico de transformación en otro método donde este parámetro no está disponible, el efecto puede guardar el parámetro [**ID2D1TransformGraph**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transformgraph) como una variable miembro de la clase y acceder a él en otro lugar, como [**PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender) o un método de devolución de llamada de propiedad personalizada.
 
-Aquí se muestra un método de [**inicialización**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) de ejemplo. Este método crea un gráfico de transformación de un solo nodo que desplaza la imagen en 100 píxeles en cada eje.
+Aquí se [**muestra un método Initialize**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) de ejemplo. Este método crea un gráfico de transformación de nodo único que desplaza la imagen en cien píxeles en cada eje.
 
 
 ```C++
@@ -227,27 +227,27 @@ IFACEMETHODIMP SampleEffect::Initialize(
 
 
 
-### <a name="creating-a-multi-node-transform-graph"></a>Crear un gráfico de transformación de varios nodos
+### <a name="creating-a-multi-node-transform-graph"></a>Creación de un gráfico de transformación de varios nodos
 
-Agregar varias transformaciones al gráfico de transformación de un efecto permite que los efectos realicen internamente varias operaciones de imagen que se presentan a una aplicación como un solo efecto unificado.
+Agregar varias transformaciones al gráfico de transformación de un efecto permite que los efectos realicen internamente varias operaciones de imagen que se presentan a una aplicación como un único efecto unificado.
 
-Como se indicó anteriormente, el gráfico de transformación del efecto se puede editar en cualquier método de efecto mediante el parámetro [**ID2D1TransformGraph**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transformgraph) recibido en el método [**Initialize**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) del efecto. Las siguientes API de esa interfaz se pueden usar para crear o modificar un gráfico de transformación de un efecto:
+Como se indicó anteriormente, el gráfico de transformación del efecto se puede editar en cualquier método de efecto mediante el parámetro [**ID2D1TransformGraph**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transformgraph) recibido en el método [**Initialize del**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-initialize) efecto. Las siguientes API de esa interfaz se pueden usar para crear o modificar el gráfico de transformación de un efecto:
 
-### <a name="addnodeid2d1transformnode-pnode"></a>AddNode (ID2D1TransformNode \* pNode)
+### <a name="addnodeid2d1transformnode-pnode"></a>AddNode(ID2D1TransformNode \* pNode)
 
-El método [**AddNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-addnode) , en efecto, ' registra ' la transformación con el efecto y se debe llamar antes de que se pueda usar la transformación con cualquiera de los demás métodos del gráfico de transformación.
+En efecto, el método [**AddNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-addnode) "registra" la transformación con el efecto y se debe llamar a para poder usar la transformación con cualquiera de los otros métodos de gráfico de transformación.
 
-### <a name="connecttoeffectinputuint32-toeffectinputindex-id2d1transformnode-pnode-uint32-tonodeinputindex"></a>ConnectToEffectInput (UINT32 toEffectInputIndex, ID2D1TransformNode \* pNode, UINT32 toNodeInputIndex)
+### <a name="connecttoeffectinputuint32-toeffectinputindex-id2d1transformnode-pnode-uint32-tonodeinputindex"></a>ConnectToEffectInput(UINT32 toEffectInputIndex, ID2D1TransformNode \* pNode, UINT32 toNodeInputIndex)
 
-El método [**ConnectToEffectInput**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-connecttoeffectinput) conecta la entrada de imagen del efecto a la entrada de una transformación. La misma entrada de efecto puede estar conectada a varias transformaciones.
+El [**método ConnectToEffectInput**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-connecttoeffectinput) conecta la entrada de imagen del efecto a la entrada de una transformación. La misma entrada de efecto se puede conectar a varias transformaciones.
 
-### <a name="connectnodeid2d1transformnode-pfromnode-id2d1transformnode-ptonode-uint32-tonodeinputindex"></a>ConnectNode (ID2D1TransformNode \* pFromNode, ID2D1TransformNode \* PTONODE, UINT32 toNodeInputIndex)
+### <a name="connectnodeid2d1transformnode-pfromnode-id2d1transformnode-ptonode-uint32-tonodeinputindex"></a>ConnectNode(ID2D1TransformNode \* pFromNode, ID2D1TransformNode \* pToNode, UINT32 toNodeInputIndex)
 
-El método [**ConnectNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-connectnode) conecta la salida de una transformación a otra entrada de la transformación. Una salida de transformación se puede conectar a varias transformaciones.
+El [**método ConnectNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-connectnode) conecta la salida de una transformación a la entrada de otra transformación. Una salida de transformación se puede conectar a varias transformaciones.
 
-### <a name="setoutputnodeid2d1transformnode-pnode"></a>SetOutputNode (ID2D1TransformNode \* pNode)
+### <a name="setoutputnodeid2d1transformnode-pnode"></a>SetOutputNode(ID2D1TransformNode \* pNode)
 
-El método [**SetOutputNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-setoutputnode) conecta la salida de una transformación a la salida del efecto. Dado que un efecto solo tiene una salida, solo se puede designar una única transformación como el "nodo de salida".
+El [**método SetOutputNode**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transformgraph-setoutputnode) conecta la salida de una transformación a la salida del efecto. Dado que un efecto solo tiene una salida, solo se puede designar una única transformación como "nodo de salida".
 
 Este código usa dos transformaciones independientes para crear un efecto unificado. En este caso, el efecto es una sombra paralela traducida.
 
@@ -325,11 +325,11 @@ IFACEMETHODIMP SampleEffect::Initialize(
 
 Los efectos pueden definir propiedades personalizadas que permiten a una aplicación cambiar el comportamiento del efecto durante el tiempo de ejecución. Hay tres pasos para definir una propiedad para un efecto personalizado:
 
-### <a name="add-the-property-metadata-to-the-effects-registration-data"></a>Agregar los metadatos de la propiedad a los datos de registro del efecto
+### <a name="add-the-property-metadata-to-the-effects-registration-data"></a>Agregar los metadatos de propiedad a los datos de registro del efecto
 
-### <a name="add-property-to-registration-xml"></a>Agregar propiedad a XML de registro
+### <a name="add-property-to-registration-xml"></a>Agregar propiedad al XML de registro
 
-Debe definir las propiedades de un efecto personalizado durante el registro inicial del efecto en [Direct2D](./direct2d-portal.md). En primer lugar, debe actualizar el XML de registro del efecto en su método de registro público con la nueva propiedad:
+Debe definir las propiedades de un efecto personalizado durante el registro inicial del efecto con [Direct2D.](./direct2d-portal.md) En primer lugar, debe actualizar el XML de registro del efecto en su método de registro público con la nueva propiedad :
 
 
 ```C++
@@ -362,11 +362,11 @@ PCWSTR pszXml =
 
 
 
-Cuando se define una propiedad de efecto en XML, se necesita un nombre, un tipo y un nombre para mostrar. El nombre para mostrar de una propiedad, así como los valores de categoría, autor y descripción del efecto general, pueden y deben localizarse.
+Al definir una propiedad de efecto en XML, necesita un nombre, un tipo y un nombre para mostrar. El nombre para mostrar de una propiedad, así como los valores de categoría, autor y descripción del efecto general, se pueden y deben localizar.
 
-Para cada propiedad, un efecto puede especificar opcionalmente valores predeterminados, mínimos y máximos. Estos valores son solo para uso informativo. No se aplican en [Direct2D](./direct2d-portal.md). Depende de usted implementar la lógica predeterminada/Min/Max especificada en la clase Effect.
+Para cada propiedad, un efecto puede especificar opcionalmente valores predeterminados, mínimos y máximos. Estos valores son solo para uso informativo. [Direct2D](./direct2d-portal.md)no las aplica. Es el usuario el que tiene que implementar cualquier lógica predeterminada, mínima o máxima especificada en la clase de efecto.
 
-El valor de tipo que aparece en el XML de la propiedad debe coincidir con el tipo de datos correspondiente utilizado por los métodos de captador y establecedor de la propiedad. En esta tabla se muestran los valores XML correspondientes para cada tipo de datos:
+El valor de tipo que aparece en el XML de la propiedad debe coincidir con el tipo de datos correspondiente utilizado por los métodos getter y setter de la propiedad. En esta tabla se muestran los valores XML correspondientes para cada tipo de datos:
 
 
 
@@ -377,28 +377,28 @@ El valor de tipo que aparece en el XML de la propiedad debe coincidir con el tip
 | UINT                                                                                                                                   | uint32                  |
 | INT                                                                                                                                    | int32                   |
 | FLOAT                                                                                                                                  | FLOAT                   |
-| [**\_Vector D2D \_ 2F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_vector_2f)                                                                                               | vector2                 |
-| [**\_Vector D2D \_ 3F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_vector_3f)                                                                                               | Vector3                 |
-| [**D2D \_ Vector \_ 4F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_vector_4f)                                                                                               | Vector4                 |
-| [**D2D \_ Matrix \_ 3x2 \_ F**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f__bool)) | matrix3x2               |
-| [**D2D \_ Matrix \_ 4X3 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x3_f)                                                                                        | matrix4x3               |
-| [**\_Matriz D2D \_ 4x4 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x4_f)                                                                                        | matrix4x4               |
-| [**D2D \_ Matrix \_ 5x4 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_5x4_f)                                                                                        | matrix5x4               |
-| BYTES\[\]                                                                                                                               | blob                    |
-| IUnknown\*                                                                                                                             | IUnknown                |
+| [**VECTOR \_ \_ 2F D2D**](/windows/desktop/api/dcommon/ns-dcommon-d2d_vector_2f)                                                                                               | vector2                 |
+| [**VECTOR \_ 3F D2D \_**](/windows/desktop/api/dcommon/ns-dcommon-d2d_vector_3f)                                                                                               | vector3                 |
+| [**D2D \_ VECTOR \_ 4F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_vector_4f)                                                                                               | vector4                 |
+| [**MATRIZ D2D \_ \_ 3X2 \_ F**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-strokecontainspoint(d2d1_point_2f_float_id2d1strokestyle_constd2d1_matrix_3x2_f__bool)) | matrix3x2               |
+| [**MATRIZ D2D \_ \_ 4X3 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x3_f)                                                                                        | matrix4x3               |
+| [**MATRIZ D2D \_ \_ 4X4 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_4x4_f)                                                                                        | matrix4x4               |
+| [**MATRIZ D2D \_ \_ 5X4 \_ F**](/windows/desktop/api/dcommon/ns-dcommon-d2d_matrix_5x4_f)                                                                                        | matrix5x4               |
+| Byte\[\]                                                                                                                               | blob                    |
+| Iunknown\*                                                                                                                             | Iunknown                |
 | [**ID2D1ColorContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1colorcontext)\*                                                                                       | colorcontext            |
 | CLSID                                                                                                                                  | clsid                   |
-| Enumeración [**( \_ \_ modo de interpolación D2D1**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_interpolation_mode), etc.)                                                | enum                    |
+| Enumeración ([**D2D1 \_ INTERPOLATION \_ MODE,**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_interpolation_mode)etc.)                                                | enum                    |
 
 
 
- 
+ 
 
-### <a name="map-the-new-property-to-getter-and-setter-methods"></a>Asignar la nueva propiedad a métodos getter y Setter
+### <a name="map-the-new-property-to-getter-and-setter-methods"></a>Asignación de la nueva propiedad a métodos de getter y setter
 
-A continuación, el efecto debe asignar esta nueva propiedad a los métodos getter y Setter. Esto se hace a través de la matriz de [**\_ \_ enlace de la propiedad D2D1**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) que se pasa al método [**ID2D1Factory1:: RegisterEffectFromString**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring) .
+A continuación, el efecto debe asignar esta nueva propiedad a los métodos getter y setter. Esto se realiza a través de la [**matriz \_ PROPERTY \_ BINDING de D2D1**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) que se pasa al [**método ID2D1Factory1::RegisterEffectFromString.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring)
 
-La matriz de [**\_ \_ enlace de la propiedad D2D1**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) tiene el siguiente aspecto:
+La [**matriz \_ PROPERTY \_ BINDING de D2D1**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) tiene el siguiente aspecto:
 
 
 ```C++
@@ -414,7 +414,7 @@ const D2D1_PROPERTY_BINDING bindings[] =
 
 
 
-Una vez que cree la matriz XML y los enlaces, pásela al método [**RegisterEffectFromString**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring) :
+Una vez creado el XML y la matriz de enlaces, pásales al [**método RegisterEffectFromString:**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1factory1-registereffectfromstring)
 
 
 ```C++
@@ -429,9 +429,9 @@ pFactory->RegisterEffectFromString(
 
 
 
-La \_ macro de enlace de tipo de valor D2D1 \_ \_ requiere que la clase de efecto herede de [**ID2D1EffectImpl**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectimpl) antes que cualquier otra interfaz.
+La macro D2D1 VALUE TYPE BINDING requiere que la clase de efecto herede de \_ \_ \_ [**ID2D1EffectImpl**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectimpl) antes que cualquier otra interfaz.
 
-Las propiedades personalizadas de un efecto se indizan en el orden en el que se declaran en el XML y, una vez creada, la aplicación puede acceder a ella mediante los métodos [**ID2D1Properties:: SetValue**](id2d1properties-setvalue-overload.md) y [**ID2D1Properties:: GetValue**](id2d1properties-getvalue-overload.md) . Para mayor comodidad, puede crear una enumeración pública que muestre cada propiedad en el archivo de encabezado del efecto:
+Las propiedades personalizadas de un efecto se indexa en el orden en que se declaran en el XML y, una vez creadas, la aplicación puede acceder a ellas mediante los métodos [**ID2D1Properties::SetValue**](id2d1properties-setvalue-overload.md) e [**ID2D1Properties::GetValue.**](id2d1properties-getvalue-overload.md) Para mayor comodidad, puede crear una enumeración pública que enumera cada propiedad en el archivo de encabezado del efecto:
 
 
 ```C++
@@ -443,9 +443,9 @@ typedef enum SAMPLEEFFECT_PROP
 
 
 
-### <a name="create-the-getter-and-setter-methods-for-the-property"></a>Crear los métodos de captador y establecedor para la propiedad
+### <a name="create-the-getter-and-setter-methods-for-the-property"></a>Creación de los métodos de getter y setter para la propiedad
 
-El siguiente paso consiste en crear los métodos de captador y establecedor para la nueva propiedad. Los nombres de los métodos deben coincidir con los especificados en la matriz de [**\_ \_ enlace de la propiedad D2D1**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) . Además, el tipo de propiedad especificado en el XML del efecto debe coincidir con el tipo del parámetro del método setter y el valor devuelto del método del captador.
+El siguiente paso consiste en crear los métodos getter y setter para la nueva propiedad. Los nombres de los métodos deben coincidir con los especificados en la [**matriz \_ PROPERTY BINDING \_ de D2D1.**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) Además, el tipo de propiedad especificado en el XML del efecto debe coincidir con el tipo del parámetro del método establecedor y el valor devuelto del método de establecedor.
 
 
 ```C++
@@ -473,9 +473,9 @@ D2D_VECTOR_2F SampleEffect::GetOffset() const
 
 ### <a name="update-effects-transforms-in-response-to-property-change"></a>Transformaciones del efecto de actualización en respuesta al cambio de propiedad
 
-Para actualizar realmente la salida de la imagen de un efecto en respuesta a un cambio de propiedad, el efecto debe cambiar sus transformaciones subyacentes. Esto se hace normalmente en el método [**PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender) del efecto, al que [Direct2D](./direct2d-portal.md) llama automáticamente cuando se ha cambiado una de las propiedades de un efecto. Sin embargo, las transformaciones se pueden actualizar en cualquiera de los métodos del efecto: como inicializar o los métodos de establecedor de propiedad del efecto.
+Para actualizar realmente la salida de la imagen de un efecto en respuesta a un cambio de propiedad, el efecto debe cambiar sus transformaciones subyacentes. Esto suele hacerse en el método [**PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender) del efecto al que [Direct2D](./direct2d-portal.md) llama automáticamente cuando se ha cambiado una de las propiedades de un efecto. Sin embargo, las transformaciones se pueden actualizar en cualquiera de los métodos del efecto, como Initialize o los métodos de establecimiento de propiedades del efecto.
 
-Por ejemplo, si un efecto contenía un [**ID2D1OffsetTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1offsettransform) y desea modificar su valor de desplazamiento en respuesta a la propiedad de desplazamiento del efecto que se está cambiando, agregaría el código siguiente en [**PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender):
+Por ejemplo, si un efecto contenía un [**ID2D1OffsetTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1offsettransform) y desea modificar su valor de desplazamiento en respuesta a la propiedad Offset del efecto que se está cambiando, agregaría el código siguiente en [**PrepareForRender**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectimpl-prepareforrender):
 
 
 ```C++
@@ -499,13 +499,13 @@ IFACEMETHODIMP SampleEffect::PrepareForRender(D2D1_CHANGE_TYPE changeType)
 
 
 
-## <a name="creating-a-custom-transform"></a>Crear una transformación personalizada
+## <a name="creating-a-custom-transform"></a>Creación de una transformación personalizada
 
-Para implementar las operaciones de imagen más allá de lo que se proporciona en [Direct2D](./direct2d-portal.md), debe implementar transformaciones personalizadas. Las transformaciones personalizadas pueden cambiar arbitrariamente una imagen de entrada mediante el uso de sombreadores HLSL personalizados.
+Para implementar operaciones de imagen más allá de lo que se proporciona [en Direct2D,](./direct2d-portal.md)debe implementar transformaciones personalizadas. Las transformaciones personalizadas pueden cambiar arbitrariamente una imagen de entrada mediante el uso de sombreadores HLSL personalizados.
 
-Las transformaciones implementan una de dos interfaces diferentes en función de los tipos de sombreadores que usan. Las transformaciones que utilizan sombreadores de píxeles o de vértices deben implementar [**ID2D1DrawTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawtransform), mientras que las transformaciones mediante sombreadores de cálculo deben implementar [**ID2D1ComputeTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1computetransform). Estas interfaces heredan de [**ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform). Esta sección se centra en la implementación de la funcionalidad que es común a ambos.
+Las transformaciones implementan una de dos interfaces diferentes en función de los tipos de sombreadores que usan. Las transformaciones que usan sombreadores de píxeles o vértices deben implementar [**ID2D1DrawTransform,**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawtransform)mientras que las transformaciones que usan sombreadores de proceso deben implementar [**ID2D1ComputeTransform.**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1computetransform) Estas interfaces heredan de [**ID2D1Transform.**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform) Esta sección se centra en implementar la funcionalidad que es común a ambos.
 
-La interfaz [**ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform) tiene cuatro métodos para implementar:
+La [**interfaz ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform) tiene cuatro métodos para implementar:
 
 ### <a name="getinputcount"></a>GetInputCount
 
@@ -523,11 +523,11 @@ IFACEMETHODIMP_(UINT32) GetInputCount() const
 
 ### <a name="mapinputrectstooutputrect"></a>MapInputRectsToOutputRect
 
-[Direct2D](./direct2d-portal.md) llama al método [**MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect) cada vez que se representa la transformación. Direct2D pasa un rectángulo que representa los límites de cada una de las entradas a la transformación. La transformación es responsable de calcular los límites de la imagen de salida. El tamaño de los rectángulos de todos los métodos de esta interfaz ([**ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform)) se define en píxeles, no en los DIP.
+[Direct2D llama](./direct2d-portal.md) al [**método MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect) cada vez que se representa la transformación. Direct2D pasa un rectángulo que representa los límites de cada una de las entradas a la transformación. A continuación, la transformación es responsable de calcular los límites de la imagen de salida. El tamaño de los rectángulos para todos los métodos de esta interfaz ([**ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform)) se define en píxeles, no EN DIP.
 
-Este método también es responsable de calcular la región de la salida que es opaca en función de la lógica de su sombreador y las regiones opacas de cada entrada. Una región opaca de una imagen se define como donde el canal alfa es ' 1 ' para la totalidad del rectángulo. Si no está claro si la salida de una transformación es opaca, el rectángulo opaco de salida debe establecerse en (0, 0, 0,0) como un valor seguro. [Direct2D](./direct2d-portal.md) usa esta información para realizar optimizaciones de representación con contenido opaco garantizado. Si este valor no es preciso, se puede producir una representación incorrecta.
+Este método también es responsable de calcular la región de la salida que es opaca en función de la lógica de su sombreador y las regiones opacas de cada entrada. Una región opaca de una imagen se define como donde el canal alfa es "1" para la totalidad del rectángulo. Si no está claro si la salida de una transformación es opaca, el rectángulo opaco de salida debe establecerse en (0, 0, 0, 0) como un valor seguro. [Direct2D usa](./direct2d-portal.md) esta información para realizar optimizaciones de representación con contenido "opaco garantizado". Si este valor es inexacto, puede dar lugar a una representación incorrecta.
 
-Puede modificar el comportamiento de representación de la transformación (tal y como se define en las secciones 6 a 8) durante este método. Sin embargo, no puede modificar otras transformaciones en el gráfico de transformación o aquí el diseño del gráfico.
+Puede modificar el comportamiento de representación de la transformación (tal como se define en las secciones 6 a 8) durante este método. Sin embargo, no puede modificar otras transformaciones en el gráfico de transformación o el propio diseño del grafo aquí.
 
 
 ```C++
@@ -560,7 +560,7 @@ IFACEMETHODIMP SampleTransform::MapInputRectsToOutputRect(
 
 Para obtener un ejemplo más complejo, considere cómo se representaría una operación de desenfoque simple:
 
-Si una operación de desenfoque utiliza un radio de 5 píxeles, el tamaño del rectángulo de salida debe expandirse en 5 píxeles, como se muestra a continuación. Al modificar las coordenadas del rectángulo, una transformación debe asegurarse de que su lógica no cause ningún desbordamiento en las coordenadas del rectángulo.
+Si una operación de desenfoque usa un radio de 5 píxeles, el tamaño del rectángulo de salida debe expandirse en 5 píxeles, como se muestra a continuación. Al modificar las coordenadas del rectángulo, una transformación debe asegurarse de que su lógica no provoca flujos por encima o por debajo de las coordenadas del rectángulo.
 
 
 ```C++
@@ -580,7 +580,7 @@ if (pInputRects[0].right  > pInputRects[0].left &&
 
 
 
-Dado que la imagen está borrosa, una región de la imagen que era opaca ahora puede ser parcialmente transparente. Esto se debe a que el área fuera de la imagen tiene como valor predeterminado negro transparente y esta transparencia se combinará en la imagen alrededor de los bordes. La transformación debe reflejar esto en sus cálculos de rectángulo opaco de salida:
+Dado que la imagen está desenfoque, una región de la imagen que era opaca ahora puede ser parcialmente transparente. Esto se debe a que el área fuera de la imagen tiene como valor predeterminado negro transparente y esta transparencia se combinará con la imagen alrededor de los bordes. La transformación debe reflejar esto en sus cálculos de rectángulo opaco de salida:
 
 
 ```C++
@@ -595,15 +595,15 @@ pOutputOpaqueSubRect->bottom = pInputOpaqueSubRects[0].bottom - 5;
 
 Estos cálculos se visualizan aquí:
 
-![Ilustración de cálculo de rectángulo.](images/custom-effects2.png)
+![Ilustración del cálculo del rectángulo.](images/custom-effects2.png)
 
-Para obtener más información sobre este método, consulte la página de referencia de [**MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect) .
+Para obtener más información sobre este método, consulte la [**página de referencia de MapInputRectsToOutputRect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect)
 
 ### <a name="mapoutputrecttoinputrects"></a>MapOutputRectToInputRects
 
-[Direct2D](./direct2d-portal.md) llama al método [**MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) después de [**MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect). La transformación debe calcular qué parte de la imagen debe leerse para representar correctamente la región de salida solicitada.
+[Direct2D](./direct2d-portal.md) llama al [**método MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) después [**de MapInputRectsToOutputRect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect) La transformación debe calcular la parte de la imagen de la que necesita leer para representar correctamente la región de salida solicitada.
 
-Como antes, si un efecto asigna estrictamente los píxeles 1-1, puede pasar el rectángulo de salida a través del rectángulo de entrada:
+Como antes, si un efecto asigna estrictamente píxeles de 1 a 1, puede pasar el rectángulo de salida al rectángulo de entrada:
 
 
 ```C++
@@ -627,7 +627,7 @@ IFACEMETHODIMP SampleTransform::MapOutputRectToInputRects(
 
 
 
-Del mismo modo, si una transformación reduce o expande una imagen (como el ejemplo de desenfoque aquí), los píxeles suelen utilizar píxeles circundantes para calcular su valor. Con un desenfoque, se calcula el promedio de un píxel con sus píxeles circundantes, incluso si están fuera de los límites de la imagen de entrada. Este comportamiento se refleja en el cálculo. Como antes, la transformación comprueba los desbordamientos al expandir las coordenadas de un rectángulo.
+Del mismo modo, si una transformación reduce o expande una imagen (como el ejemplo de desenfoque aquí), los píxeles suelen usar píxeles circundantes para calcular su valor. Con un desenfoque, se promedia un píxel con sus píxeles circundantes, incluso si están fuera de los límites de la imagen de entrada. Este comportamiento se refleja en el cálculo. Como antes, la transformación comprueba si hay desbordamientos al expandir las coordenadas de un rectángulo.
 
 
 ```C++
@@ -641,21 +641,21 @@ pInputRects[0].bottom = ((pOutputRect->bottom + 5) > pOutputRect->bottom) ? (pOu
 
 
 
-En esta ilustración se visualiza el cálculo. [Direct2D](./direct2d-portal.md) muestrea automáticamente los píxeles negros transparentes en los que no existe la imagen de entrada, lo que permite mezclar gradualmente el desenfoque con el contenido existente en la pantalla.
+Esta ilustración visualiza el cálculo. [Direct2D](./direct2d-portal.md) muestrea automáticamente píxeles negros transparentes donde la imagen de entrada no existe, lo que permite que el desenfoque se combine gradualmente con el contenido existente en la pantalla.
 
-![Ilustración de un efecto muestreo de píxeles negros transparentes fuera de un rectángulo.](images/custom-effects3.png)
+![ilustración de un efecto que muestrea píxeles negros transparentes fuera de un rectángulo.](images/custom-effects3.png)
 
-Si la asignación no es trivial, este método debe establecer el rectángulo de entrada en el área máxima para garantizar resultados correctos. Para ello, establezca los bordes izquierdo y superior en INT \_ min y los bordes inferior y derecho en int \_ máx.
+Si la asignación no es trivial, este método debe establecer el rectángulo de entrada en el área máxima para garantizar los resultados correctos. Para ello, establezca los bordes izquierdo y superior en INT MIN y los bordes derecho \_ e inferior en INT \_ MAX.
 
-Para obtener más información sobre este método, vea el tema [**MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) .
+Para obtener más información sobre este método, vea el [**tema MapOutputRectToInputRects.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects)
 
 ### <a name="mapinvalidrect"></a>MapInvalidRect
 
-[Direct2D](./direct2d-portal.md) también llama al método [**MapInvalidRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect) . Sin embargo, a diferencia de los métodos [**MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect) y [**MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) Direct2D no se garantiza que lo llame en un momento determinado. Este método decide conceptualmente qué parte de la salida de una transformación se debe volver a representar en respuesta a una parte o a todo su cambio de entrada. Hay tres escenarios diferentes para los que se calcula el rectángulo no válido de una transformación.
+[Direct2D también](./direct2d-portal.md) llama al [**método MapInvalidRect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect) Sin embargo, a diferencia [**de los métodos Direct2D MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect) y [**MapOutputRectToInputRects,**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) no se garantiza que lo llame en un momento determinado. Este método decide conceptualmente qué parte de la salida de una transformación debe volver a representarse en respuesta a la parte o a todos sus cambios de entrada. Hay tres escenarios diferentes para los que calcular el rect no válido de una transformación.
 
-### <a name="transforms-with-one-to-one-pixel-mapping"></a>Transformaciones con asignación de píxeles de uno a uno
+### <a name="transforms-with-one-to-one-pixel-mapping"></a>Transformaciones con asignación de píxeles uno a uno
 
-En el caso de las transformaciones que asignan píxeles 1-1, simplemente pase el rectángulo de entrada no válido a través del rectángulo de salida no válido:
+Para las transformaciones que asignan píxeles de 1 a 1, simplemente pase el rectángulo de entrada no válido al rectángulo de salida no válido:
 
 
 ```C++
@@ -683,7 +683,7 @@ IFACEMETHODIMP SampleTransform::MapInvalidRect(
 
 ### <a name="transforms-with-many-to-many-pixel-mapping"></a>Transformaciones con asignación de píxeles de varios a varios
 
-Cuando los píxeles de salida de una transformación dependen de su área circundante, el rectángulo de entrada no válido debe expandirse de forma correspondiente. Esto es para reflejar que los píxeles que rodean el rectángulo de entrada no válido también se verán afectados y dejarán de ser válidos. Por ejemplo, un desenfoque de cinco píxeles usa el siguiente cálculo:
+Cuando los píxeles de salida de una transformación dependen de su área circundante, se debe expandir el rectángulo de entrada no válido. Esto es para reflejar que los píxeles que rodean el rectángulo de entrada no válido también se verán afectados y pasarán a ser no válidos. Por ejemplo, un desenfoque de cinco píxeles usa el siguiente cálculo:
 
 
 ```C++
@@ -698,9 +698,9 @@ pInvalidOutputRect->bottom = ((invalidInputRect.bottom + 5) > invalidInputRect.b
 
 
 
-### <a name="transforms-with-complex-pixel-mapping"></a>Transformaciones con asignación de píxeles complejos
+### <a name="transforms-with-complex-pixel-mapping"></a>Transformaciones con asignación de píxeles compleja
 
-En el caso de las transformaciones en las que los píxeles de entrada y salida no tienen una asignación simple, todo el resultado se puede marcar como no válido. Por ejemplo, si una transformación simplemente genera el color medio de la entrada, la salida completa de la transformación cambia si se cambia incluso una pequeña parte de la entrada. En este caso, el rectángulo de salida no válido debe establecerse en un rectángulo lógicamente infinito (se muestra a continuación). [Direct2D](./direct2d-portal.md) lo fija automáticamente en los límites de la salida.
+En el caso de las transformaciones en las que los píxeles de entrada y salida no tienen una asignación simple, toda la salida se puede marcar como no válida. Por ejemplo, si una transformación simplemente genera el color medio de la entrada, la salida completa de la transformación cambia si se cambia incluso una pequeña parte de la entrada. En este caso, el rectángulo de salida no válido debe establecerse en un rectángulo lógicamente infinito (se muestra a continuación). [Direct2D](./direct2d-portal.md) lo fija automáticamente a los límites de la salida.
 
 
 ```C++
@@ -711,7 +711,7 @@ En el caso de las transformaciones en las que los píxeles de entrada y salida n
 
 
 
-Para obtener más información sobre este método, vea el tema [**MapInvalidRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect) .
+Para obtener más información sobre este método, vea el [**tema MapInvalidRect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect)
 
 Una vez implementados estos métodos, el encabezado de la transformación contendrá lo siguiente:
 
@@ -761,21 +761,21 @@ private:
 
 ## <a name="adding-a-pixel-shader-to-a-custom-transform"></a>Agregar un sombreador de píxeles a una transformación personalizada
 
-Una vez creada una transformación, debe proporcionar un sombreador que manipule los píxeles de la imagen. En esta sección se describen los pasos para usar un sombreador de píxeles con una transformación personalizada.
+Una vez creada una transformación, debe proporcionar un sombreador que manipule los píxeles de la imagen. En esta sección se tratan los pasos para usar un sombreador de píxeles con una transformación personalizada.
 
 ### <a name="implementing-id2d1drawtransform"></a>Implementación de ID2D1DrawTransform
 
-Para usar un sombreador de píxeles, la transformación debe implementar la interfaz [**ID2D1DrawTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawtransform) , que hereda de la interfaz [**ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform) descrita en la sección 5. Esta interfaz contiene un nuevo método para implementar:
+Para usar un sombreador de píxeles, la transformación debe implementar la interfaz [**ID2D1DrawTransform,**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawtransform) que hereda de la interfaz [**ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform) descrita en la sección 5. Esta interfaz contiene un nuevo método para implementar:
 
-### <a name="setdrawinfoid2d1drawinfo-pdrawinfo"></a>SetDrawInfo (ID2D1DrawInfo \* pDrawInfo)
+### <a name="setdrawinfoid2d1drawinfo-pdrawinfo"></a>SetDrawInfo(ID2D1DrawInfo \* pDrawInfo)
 
-[Direct2D](./direct2d-portal.md) llama al método [**SetDrawInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) cuando la transformación se agrega por primera vez al gráfico de transformación de un efecto. Este método proporciona un parámetro [**ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) que controla cómo se representa la transformación. Vea el tema **ID2D1DrawInfo** para obtener los métodos disponibles aquí.
+[Direct2D](./direct2d-portal.md) llama al [**método SetDrawInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) cuando la transformación se agrega por primera vez al gráfico de transformación de un efecto. Este método proporciona un [**parámetro ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) que controla cómo se representa la transformación. Consulte el **tema ID2D1DrawInfo** para ver los métodos disponibles aquí.
 
-Si la transformación decide almacenar este parámetro como una variable de miembro de clase, se puede tener acceso al objeto *drawInfo* y cambiarlo desde otros métodos, como establecedores de propiedad o [**MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect). En particular, no se puede llamar a desde los métodos [**MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) o [**MapInvalidRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect) en [**ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform).
+Si la transformación decide almacenar este parámetro como una variable miembro de clase, se puede acceder al objeto *drawInfo* y cambiarlo desde otros métodos, como establecedores de propiedades o [**MapInputRectsToOutputRect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect) En concreto, no se puede llamar desde los métodos [**MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) o [**MapInvalidRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect) [**en ID2D1Transform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1transform).
 
-### <a name="creating-a-guid-for-the-pixel-shader"></a>Crear un GUID para el sombreador de píxeles
+### <a name="creating-a-guid-for-the-pixel-shader"></a>Creación de un GUID para el sombreador de píxeles
 
-A continuación, la transformación debe definir un GUID único para el propio sombreador de píxeles. Se usa cuando [Direct2D](./direct2d-portal.md) carga el sombreador en la memoria, así como cuando la transformación elige qué sombreador de píxeles se va a usar para la ejecución. Se pueden usar herramientas como guidgen.exe, que se incluye con Visual Studio, para generar un GUID aleatorio.
+A continuación, la transformación debe definir un GUID único para el propio sombreador de píxeles. Esto se usa cuando [Direct2D](./direct2d-portal.md) carga el sombreador en memoria, así como cuando la transformación elige qué sombreador de píxeles se va a usar para la ejecución. Herramientas como guidgen.exe, que se incluye con Visual Studio, se pueden usar para generar un GUID aleatorio.
 
 
 ```C++
@@ -789,19 +789,19 @@ DEFINE_GUID(GUID_SamplePixelShader, 0x00000000, 0x0000, 0x0000, 0x00, 0x00, 0x00
 
 
 
-### <a name="loading-the-pixel-shader-with-direct2d"></a>Cargar el sombreador de píxeles con Direct2D
+### <a name="loading-the-pixel-shader-with-direct2d"></a>Carga del sombreador de píxeles con Direct2D
 
-Un sombreador de píxeles debe cargarse en memoria antes de que lo pueda usar la transformación.
+Un sombreador de píxeles debe cargarse en la memoria para que pueda ser utilizado por la transformación.
 
-Para cargar el sombreador de píxeles en la memoria, la transformación debe leer el código de byte del sombreador compilado de. Archivo CSO generado por Visual Studio (consulte la documentación de [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) para obtener más detalles) en una matriz de bytes. Esta técnica se muestra en detalle en el [ejemplo de SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
+Para cargar el sombreador de píxeles en la memoria, la transformación debe leer el código de bytes del sombreador compilado de . Archivo CSO generado por Visual Studio (consulte la documentación [de Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) para obtener más información) en una matriz de bytes. Esta técnica se muestra en detalle en el ejemplo del [SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
 
-Una vez que los datos del sombreador se han cargado en una matriz de bytes, llame al método [**LoadPixelShader**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-loadpixelshader) en el objeto [**ID2D1EffectContext**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext) del efecto. [Direct2D](./direct2d-portal.md) omite las llamadas a **LoadPixelShader** cuando ya se ha cargado un sombreador con el mismo GUID.
+Una vez cargados los datos del sombreador en una matriz de bytes, llame al [**método LoadPixelShader**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-loadpixelshader) en el objeto [**ID2D1EffectContext del**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext) efecto. [Direct2D omite](./direct2d-portal.md) las llamadas a **LoadPixelShader** cuando ya se ha cargado un sombreador con el mismo GUID.
 
-Una vez que se ha cargado un sombreador de píxeles en la memoria, la transformación debe seleccionarlo para su ejecución pasando su GUID al método [**SetPixelShader**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawinfo-setpixelshaderconstantbuffer) en el parámetro [**ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) proporcionado durante el método [**SetDrawInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) . El sombreador de píxeles debe estar ya cargado en la memoria antes de que se seleccione para su ejecución.
+Después de cargar un sombreador de píxeles en la memoria, la transformación debe seleccionarla para su ejecución pasando su GUID al método [**SetPixelShader**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawinfo-setpixelshaderconstantbuffer) en el parámetro [**ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) proporcionado durante el [**método SetDrawInfo.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) El sombreador de píxeles ya debe cargarse en la memoria antes de seleccionarse para su ejecución.
 
-### <a name="changing-shader-operation-with-constant-buffers"></a>Cambiar el funcionamiento del sombreador con búferes de constantes
+### <a name="changing-shader-operation-with-constant-buffers"></a>Cambio de la operación del sombreador con búferes constantes
 
-Para cambiar el modo en que se ejecuta un sombreador, una transformación puede pasar un búfer de constantes al sombreador de píxeles. Para ello, una transformación define un struct que contiene las variables deseadas en el encabezado de clase:
+Para cambiar cómo se ejecuta un sombreador, una transformación puede pasar un búfer constante al sombreador de píxeles. Para ello, una transformación define un struct que contiene las variables deseadas en el encabezado de clase:
 
 
 ```C++
@@ -815,9 +815,9 @@ struct
 
 
 
-A continuación, la transformación llama al método [**ID2D1DrawInfo:: SetPixelShaderConstantBuffer**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawinfo-setpixelshaderconstantbuffer) en el parámetro [**ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) proporcionado en el método [**SetDrawInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) para pasar este búfer al sombreador.
+A continuación, la transformación llama al método [**ID2D1DrawInfo::SetPixelShaderConstantBuffer**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawinfo-setpixelshaderconstantbuffer) en el parámetro [**ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) proporcionado en el [**método SetDrawInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) para pasar este búfer al sombreador.
 
-[HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl) también debe definir un struct correspondiente que represente el búfer de constantes. Las variables contenidas en el struct del sombreador deben coincidir con las de la estructura de la transformación.
+[HlSL también](/windows/desktop/direct3dhlsl/dx-graphics-hlsl) debe definir una estructura correspondiente que represente el búfer constante. Las variables contenidas en la estructura del sombreador deben coincidir con las del struct de la transformación.
 
 
 ```C++
@@ -830,19 +830,19 @@ cbuffer constants : register(b0)
 
 
 
-Una vez definido el búfer, los valores contenidos en se pueden leer desde cualquier parte del sombreador de píxeles.
+Una vez definido el búfer, los valores contenidos en se pueden leer desde cualquier lugar dentro del sombreador de píxeles.
 
-### <a name="writing-a-pixel-shader-for-direct2d"></a>Escribir un sombreador de píxeles para Direct2D
+### <a name="writing-a-pixel-shader-for-direct2d"></a>Escritura de un sombreador de píxeles para Direct2D
 
-Las transformaciones de [Direct2D](./direct2d-portal.md) usan sombreadores creados mediante [HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl)estándar. Sin embargo, hay algunos conceptos clave para escribir un sombreador de píxeles que se ejecuta desde el contexto de una transformación. Para obtener un ejemplo completo de un sombreador de píxeles totalmente funcional, vea el [ejemplo de SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
+[Las transformaciones de Direct2D](./direct2d-portal.md) usan sombreadores creados con [HLSL estándar.](/windows/desktop/direct3dhlsl/dx-graphics-hlsl) Sin embargo, hay algunos conceptos clave para escribir un sombreador de píxeles que se ejecuta desde el contexto de una transformación. Para obtener un ejemplo completo de un sombreador de píxeles totalmente funcional, vea el ejemplo del [SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects).
 
-[Direct2D](./direct2d-portal.md) asigna automáticamente las entradas de una transformación a los objetos [**Texture2D**](/windows/desktop/direct3dhlsl/sm5-object-texture2d) y [**SamplerState**](/windows/desktop/api/d3d11/nn-d3d11-id3d11samplerstate) en HLSL. El primer **Texture2D** se encuentra en el registro T0 y el primer **SamplerState** se encuentra en el registro S0. Cada entrada adicional se encuentra en los siguientes registros correspondientes (T1 y S1, por ejemplo). Los datos de píxeles de una entrada determinada se pueden muestrear llamando a sample en el objeto **Texture2D** y pasando el objeto **SamplerState** correspondiente y las coordenadas textura.
+[Direct2D](./direct2d-portal.md) asigna automáticamente las entradas de una transformación a objetos [**Texture2D**](/windows/desktop/direct3dhlsl/sm5-object-texture2d) y [**SamplerState**](/windows/desktop/api/d3d11/nn-d3d11-id3d11samplerstate) en HLSL. El primer **Objeto Texture2D** se encuentra en el registro t0 y el primer **SamplerState** se encuentra en el registro s0. Cada entrada adicional se encuentra en los siguientes registros correspondientes (por ejemplo, t1 y s1). Los datos de píxeles de una entrada determinada se pueden muestrear llamando a Sample en el objeto **Texture2D** y pasando el objeto **SamplerState** correspondiente y las coordenadas de texel.
 
-Un sombreador de píxeles personalizado se ejecuta una vez para cada píxel que se representa. Cada vez que se ejecuta el sombreador, [Direct2D](./direct2d-portal.md) proporciona automáticamente tres parámetros que identifican su posición de ejecución actual:
+Un sombreador de píxeles personalizado se ejecuta una vez por cada píxel que se representa. Cada vez que se ejecuta el sombreador, [Direct2D](./direct2d-portal.md) proporciona automáticamente tres parámetros que identifican su posición de ejecución actual:
 
--   Salida de espacio de escena: este parámetro representa la posición de ejecución actual en términos de la superficie de destino general. Se define en píxeles y sus valores Min/Max se corresponden con los límites del rectángulo devuelto por [**MapInputRectsToOutputRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect).
--   Salida de espacio de recorte: este parámetro lo usa Direct3D y no debe usarse en el sombreador de píxeles de una transformación.
--   Entrada de espacio textura: este parámetro representa la posición de ejecución actual en una textura de entrada determinada. Un sombreador no debe tomar ninguna dependencia sobre cómo se calcula este valor. Solo debe usarlo para muestrear la entrada del sombreador de píxeles, tal como se muestra en el código siguiente:
+-   Salida de espacio de escena: este parámetro representa la posición de ejecución actual en términos de la superficie de destino general. Se define en píxeles y sus valores mínimo y máximo corresponden a los límites del rectángulo devuelto por [**MapInputRectsToOutputRect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinputrectstooutputrect)
+-   Salida de espacio de recorte: Direct3D usa este parámetro y no se debe usar en el sombreador de píxeles de una transformación.
+-   Entrada de espacio de texel: este parámetro representa la posición de ejecución actual en una textura de entrada determinada. Un sombreador no debe tomar ninguna dependencia de cómo se calcula este valor. Solo debe usarlo para muestrear la entrada del sombreador de píxeles, como se muestra en el código siguiente:
 
 
 ```C++
@@ -875,27 +875,27 @@ float4 main(
 
 ## <a name="adding-a-vertex-shader-to-a-custom-transform"></a>Agregar un sombreador de vértices a una transformación personalizada
 
-Puede usar sombreadores de vértices para realizar diferentes escenarios de creación de imágenes que los sombreadores de píxeles. En concreto, los sombreadores de vértices pueden realizar efectos de imagen basados en geometría transformando los vértices que componen una imagen. Los sombreadores de vértices se pueden usar de forma independiente o junto con los sombreadores de píxeles especificados por la transformación. Si no se especifica un sombreador de vértices, [Direct2D](./direct2d-portal.md) sustituye en un sombreador de vértices predeterminado para usarlo con el sombreador de píxeles personalizado.
+Puede usar sombreadores de vértices para realizar escenarios de creación de imágenes diferentes que los sombreadores de píxeles. En concreto, los sombreadores de vértices pueden realizar efectos de imagen basados en geometría mediante la transformación de vértices que componen una imagen. Los sombreadores de vértices se pueden usar independientemente de o junto con sombreadores de píxeles especificados por transformación. Si no se especifica un sombreador de vértices, [Direct2D](./direct2d-portal.md) sustituye en un sombreador de vértices predeterminado para usarlo con el sombreador de píxeles personalizado.
 
-El proceso para agregar un sombreador de vértices a una transformación personalizada es similar al de un sombreador de píxeles: la transformación implementa la interfaz [**ID2D1DrawTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawtransform) , crea un GUID y (opcionalmente) pasa búferes de constantes al sombreador. Sin embargo, hay algunos pasos adicionales clave que son exclusivos de los sombreadores de vértices:
+El proceso para agregar un sombreador de vértices a una transformación personalizada es similar al de un sombreador de píxeles: la transformación implementa la interfaz [**ID2D1DrawTransform,**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawtransform) crea un GUID y (opcionalmente) pasa búferes constantes al sombreador. Sin embargo, hay algunos pasos adicionales clave que son únicos para los sombreadores de vértices:
 
-### <a name="creating-a-vertex-buffer"></a>Crear un búfer de vértices
+### <a name="creating-a-vertex-buffer"></a>Creación de un búfer de vértices
 
-Un sombreador de vértices por definición se ejecuta en los vértices que se le pasan, no en píxeles individuales. Para especificar los vértices para los que se va a ejecutar el sombreador, una transformación crea un búfer de vértice para pasar al sombreador. El diseño de los búferes de vértices está fuera del ámbito de este documento. Vea la [referencia de Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) para obtener más información o el ejemplo de [SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para obtener una implementación de ejemplo.
+Un sombreador de vértices por definición se ejecuta en los vértices que se le pasan, no en píxeles individuales. Para especificar los vértices en los que se ejecutará el sombreador, una transformación crea un búfer de vértices para pasarlo al sombreador. El diseño de los búferes de vértices está fuera del ámbito de este documento. Consulte la referencia [de Direct3D para](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) obtener más información o el ejemplo del [SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para obtener una implementación de ejemplo.
 
-Después de crear un búfer de vértices en la memoria, la transformación usa el método [**CreateVertexBuffer**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createvertexbuffer) en el objeto [**ID2D1EffectContext**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext) del efecto contenedor para pasar esos datos a la GPU. De nuevo, vea el [ejemplo de SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para obtener una implementación de ejemplo.
+Después de crear un búfer de vértices en memoria, la transformación usa el método [**CreateVertexBuffer**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-createvertexbuffer) en el objeto [**ID2D1EffectContext**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext) del efecto contenido para pasar los datos a la GPU. De nuevo, consulte el [ejemplo del SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para obtener una implementación de ejemplo.
 
-Si no se especifica ningún búfer de vértices mediante la transformación, [Direct2D](./direct2d-portal.md) pasa un búfer de vértices predeterminado que representa la ubicación de la imagen rectangular.
+Si la transformación no especifica ningún búfer de vértices, [Direct2D](./direct2d-portal.md) pasa un búfer de vértices predeterminado que representa la ubicación de la imagen rectangular.
 
-### <a name="changing-setdrawinfo-to-utilize-a-vertex-shader"></a>Cambiar SetDrawInfo para que use un sombreador de vértices
+### <a name="changing-setdrawinfo-to-utilize-a-vertex-shader"></a>Cambio de SetDrawInfo para utilizar un sombreador de vértices
 
-Al igual que con los sombreadores de píxeles, la transformación debe cargarse y seleccionar un sombreador de vértices para su ejecución. Para cargar el sombreador de vértices, llama al método [**LoadVertexShader**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-loadvertexshader) en el método [**ID2D1EffectContext**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext) recibido en el método Initialize del efecto. Para seleccionar el sombreador de vértices para la ejecución, llama a [**SetVertexProcessing**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawinfo-setvertexprocessing) en el parámetro [**ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) recibido en el método [**SetDrawInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) de la transformación. Este método acepta un GUID para un sombreador de vértices cargado previamente y, opcionalmente, un búfer de vértice creado previamente para que se ejecute el sombreador.
+Al igual que con los sombreadores de píxeles, la transformación debe cargar y seleccionar un sombreador de vértices para su ejecución. Para cargar el sombreador de vértices, llama al método [**LoadVertexShader**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-loadvertexshader) en el método [**ID2D1EffectContext**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1effectcontext) recibido en el método Initialize del efecto. Para seleccionar el sombreador de vértices para su ejecución, llama a [**SetVertexProcessing**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawinfo-setvertexprocessing) en el parámetro [**ID2D1DrawInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1drawinfo) recibido en el [**método SetDrawInfo de la**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1drawtransform-setdrawinfo) transformación. Este método acepta un GUID para un sombreador de vértices cargado previamente, así como (opcionalmente) un búfer de vértices creado previamente para que el sombreador se ejecute en .
 
-### <a name="implementing-a-direct2d-vertex-shader"></a>Implementar un sombreador de vértices de Direct2D
+### <a name="implementing-a-direct2d-vertex-shader"></a>Implementación de un sombreador de vértices de Direct2D
 
-Una transformación de dibujo puede contener un sombreador de píxeles y un sombreador de vértices. Si una transformación define un sombreador de píxeles y un sombreador de vértices, la salida del sombreador de vértices se proporciona directamente al sombreador de píxeles: la aplicación puede personalizar la firma devuelta del sombreador de vértices/los parámetros del sombreador de píxeles siempre que sean coherentes.
+Una transformación de dibujo puede contener un sombreador de píxeles y un sombreador de vértices. Si una transformación define un sombreador de píxeles y un sombreador de vértices, la salida del sombreador de vértices se da directamente al sombreador de píxeles: la aplicación puede personalizar la firma de devolución del sombreador de vértices o los parámetros del sombreador de píxeles siempre que sean coherentes.
 
-Por otro lado, si una transformación solo contiene un sombreador de vértices y se basa en el sombreador de píxeles de paso predeterminado de [Direct2D](./direct2d-portal.md), debe devolver la siguiente salida predeterminada:
+Por otro lado, si una transformación solo contiene un sombreador de vértices y se basa en el sombreador de píxeles de paso a través predeterminado de [Direct2D,](./direct2d-portal.md)debe devolver la siguiente salida predeterminada:
 
 
 ```C++
@@ -909,7 +909,7 @@ struct VSOut
 
 
 
-Un sombreador de vértices almacena el resultado de sus transformaciones de vértices en la variable de salida de espacio de la escena del sombreador. Para calcular la salida del espacio de clips y las variables de entrada de espacio textura, [Direct2D](./direct2d-portal.md) proporciona automáticamente matrices de conversión en un búfer de constantes:
+Un sombreador de vértices almacena el resultado de sus transformaciones de vértice en la variable de salida Espacio de escena del sombreador. Para calcular la salida del espacio de recorte y las variables de entrada de espacio de Texel, [Direct2D](./direct2d-portal.md) proporciona automáticamente matrices de conversión en un búfer constante:
 
 
 ```C++
@@ -927,7 +927,7 @@ cbuffer Direct2DTransforms : register(b0)
 
 
 
-Se puede encontrar código de sombreador de vértices de ejemplo a continuación que usa las matrices de conversión para calcular el clip correcto y los espacios de textura esperados por [Direct2D](./direct2d-portal.md):
+A continuación se puede encontrar código de sombreador de vértices de ejemplo que usa las matrices de conversión para calcular los espacios de clip y texel correctos esperados [por Direct2D:](./direct2d-portal.md)
 
 
 ```C++
@@ -992,9 +992,9 @@ VSOut GeometryVS(float4 outputScenePosition : OUTPUT_SCENE_POSITION)
 
 
 
-El código anterior se puede usar como punto de partida para un sombreador de vértices. Simplemente pasa por la imagen de entrada sin realizar ninguna transformación. De nuevo, vea el [ejemplo de SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para una transformación basada en sombreador de vértices totalmente implementada.
+El código anterior se puede usar como punto de partida para un sombreador de vértices. Simplemente pasa a través de la imagen de entrada sin realizar ninguna transformación. De nuevo, consulte el [ejemplo del SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para obtener una transformación basada en sombreador de vértices totalmente implementada.
 
-Si la transformación no especifica ningún búfer de vértice, [Direct2D](./direct2d-portal.md) sustituye en un búfer de vértices predeterminado que representa la ubicación de la imagen rectangular. Los parámetros para el sombreador de vértices se cambian a los de la salida del sombreador predeterminado:
+Si la transformación no especifica ningún búfer de vértices, [Direct2D](./direct2d-portal.md) sustituye en un búfer de vértice predeterminado que representa la ubicación de la imagen rectangular. Los parámetros del sombreador de vértices se cambian a los de la salida predeterminada del sombreador:
 
 
 ```C++
@@ -1008,39 +1008,39 @@ struct VSIn
 
 
 
-El sombreador de vértices no puede modificar sus parámetros *sceneSpaceOutput* y *clipSpaceOutput* . Debe devolverlos sin cambios. Sin embargo, puede modificar los parámetros *texelSpaceInput* de cada imagen de entrada. Si la transformación también contiene un sombreador de píxeles personalizado, el sombreador de vértices sigue pudiendo pasar parámetros personalizados adicionales directamente al sombreador de píxeles. Además, ya no se proporciona el búfer personalizado de las matrices de conversión *sceneSpace* (b0).
+Es posible que el sombreador de vértices no modifique sus parámetros *sceneSpaceOutput* *y clipSpaceOutput.* Debe devolverlos sin cambios. Sin embargo, puede modificar *los parámetros texelSpaceInput* para cada imagen de entrada. Si la transformación también contiene un sombreador de píxeles personalizado, el sombreador de vértices todavía puede pasar parámetros personalizados adicionales directamente al sombreador de píxeles. Además, ya no se proporciona el búfer personalizado de matrices de conversión *sceneSpace* (b0).
 
-## <a name="adding-a-compute-shader-to-a-custom-transform"></a>Agregar un sombreador de cálculo a una transformación personalizada
+## <a name="adding-a-compute-shader-to-a-custom-transform"></a>Agregar un sombreador de proceso a una transformación personalizada
 
-Por último, las transformaciones personalizadas pueden emplear sombreadores de cálculo para determinados escenarios de destino. Los sombreadores de cálculo se pueden usar para implementar efectos de imagen complejos que requieren acceso arbitrario a los búferes de imagen de entrada y salida. Por ejemplo, un algoritmo de histograma básico no se puede implementar con un sombreador de píxeles debido a las limitaciones en el acceso a la memoria.
+Por último, las transformaciones personalizadas pueden utilizar sombreadores de proceso para determinados escenarios de destino. Los sombreadores de proceso se pueden usar para implementar efectos de imagen complejos que requieren acceso arbitrario a los búferes de imagen de entrada y salida. Por ejemplo, un algoritmo de histograma básico no se puede implementar con un sombreador de píxeles debido a limitaciones en el acceso a la memoria.
 
-Dado que los sombreadores de cálculo tienen más requisitos de nivel de características de hardware que los sombreadores de píxeles, se deben usar sombreadores de píxeles cuando sea posible para implementar un efecto determinado. En concreto, los sombreadores de cálculo solo se ejecutan en la mayoría de las tarjetas de nivel de DirectX 10 y versiones posteriores. Si una transformación decide usar un sombreador de cálculo, debe comprobar la compatibilidad de hardware adecuada durante la creación de instancias además de implementar la interfaz [**ID2D1ComputeTransform**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1computetransform) .
+Dado que los sombreadores de proceso tienen requisitos de nivel de características de hardware más altos que los sombreadores de píxeles, se deben usar sombreadores de píxeles cuando sea posible para implementar un efecto determinado. En concreto, los sombreadores de proceso solo se ejecutan en la mayoría de las tarjetas de nivel 10 de DirectX y superiores. Si una transformación decide usar un sombreador de proceso, debe comprobar la compatibilidad de hardware adecuada durante la creación de instancias, además de implementar la interfaz [**ID2D1ComputeTransform.**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1computetransform)
 
-### <a name="checking-for-compute-shader-support"></a>Comprobando la compatibilidad del sombreador de cálculo
+### <a name="checking-for-compute-shader-support"></a>Comprobación de la compatibilidad con el sombreador de proceso
 
-Si un efecto usa un sombreador de cálculo, debe comprobar la compatibilidad del sombreador de cálculo durante su creación mediante el método [**ID2D1EffectContext:: CheckFeatureSupport**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-checkfeaturesupport) . Si la GPU no admite los sombreadores de cálculo, el efecto debe devolver [**D2DERR \_ insuficientes \_ \_ funcionalidades del dispositivo**](direct2d-error-codes.md).
+Si un efecto usa un sombreador de proceso, debe comprobar la compatibilidad con el sombreador de proceso durante su creación mediante el [**método ID2D1EffectContext::CheckFeatureSupport.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1effectcontext-checkfeaturesupport) Si la GPU no admite sombreadores de proceso, el efecto debe devolver [**D2DERR \_ INSUFFICIENT \_ DEVICE \_ CAPABILITIES**](direct2d-error-codes.md).
 
-Hay dos tipos diferentes de sombreadores de cálculo que una transformación puede usar: Shader Model 4 (DirectX 10) y Shader Model 5 (DirectX 11). Hay ciertas limitaciones en los sombreadores modelo 4 de sombreador. Consulte la documentación de [Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) para obtener más información. Las transformaciones pueden contener ambos tipos de sombreadores y pueden revertir al modelo de sombreador 4 cuando sea necesario: vea el [ejemplo de SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para obtener una implementación de este.
+Hay dos tipos diferentes de sombreadores de proceso que puede usar una transformación: Shader Model 4 (DirectX 10) y Shader Model 5 (DirectX 11). Existen ciertas limitaciones en los sombreadores del modelo 4 del sombreador. Consulte la [documentación de Direct3D](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11) para obtener más información. Las transformaciones pueden contener ambos tipos de sombreadores y pueden volver a Shader Model 4 cuando sea necesario: consulte el ejemplo del [SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects) para obtener una implementación de esto.
 
 ### <a name="implement-id2d1computetransform"></a>Implementación de ID2D1ComputeTransform
 
-Esta interfaz contiene dos nuevos métodos que se deben implementar además de los de [**ID2D1Transform**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)):
+Esta interfaz contiene dos nuevos métodos para implementar además de los de [**ID2D1Transform**](/previous-versions/windows/desktop/legacy/dd371304(v=vs.85)):
 
-### <a name="setcomputeinfoid2d1computeinfo-pcomputeinfo"></a>SetComputeInfo (ID2D1ComputeInfo \* pComputeInfo)
+### <a name="setcomputeinfoid2d1computeinfo-pcomputeinfo"></a>SetComputeInfo(ID2D1ComputeInfo \* pComputeInfo)
 
-Al igual que con los sombreadores de píxeles y vértices, [Direct2D](./direct2d-portal.md) llama al método [**SetComputeInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1computetransform-setcomputeinfo) cuando la transformación se agrega por primera vez al gráfico de transformación de un efecto. Este método proporciona un parámetro [**ID2D1ComputeInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1computeinfo) que controla cómo se representa la transformación. Esto incluye elegir el sombreador de cálculo que se va a ejecutar a través del método [**ID2D1ComputeInfo:: SetComputeShader**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1computeinfo-setcomputeshaderconstantbuffer) . Si la transformación decide almacenar este parámetro como una variable de miembro de clase, se puede tener acceso al mismo y cambiarlo desde cualquier método de transformación o efecto con la excepción de los métodos [**MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) y [**MapInvalidRect**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect) . Vea el tema **ID2D1ComputeInfo** para ver otros métodos disponibles aquí.
+Al igual que con los sombreadores de píxeles y vértices, [Direct2D](./direct2d-portal.md) llama al método [**SetComputeInfo**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1computetransform-setcomputeinfo) cuando la transformación se agrega por primera vez al gráfico de transformación de un efecto. Este método proporciona un [**parámetro ID2D1ComputeInfo**](/windows/win32/api/d2d1effectauthor/nn-d2d1effectauthor-id2d1computeinfo) que controla cómo se representa la transformación. Esto incluye elegir el sombreador de proceso para ejecutarlo mediante el [**método ID2D1ComputeInfo::SetComputeShader.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1computeinfo-setcomputeshaderconstantbuffer) Si la transformación elige almacenar este parámetro como una variable miembro de clase, se puede acceder a él y cambiarlo desde cualquier método de transformación o efecto con la excepción de los métodos [**MapOutputRectToInputRects**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapoutputrecttoinputrects) y [**MapInvalidRect.**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1transform-mapinvalidrect) Consulte el **tema ID2D1ComputeInfo** para ver otros métodos disponibles aquí.
 
-### <a name="calculatethreadgroupsid2d1computeinfo-poutputrect-uint32-pdimensionx-uint32-pdimensiony-uint32-pdimensionz"></a>CalculateThreadgroups (ID2D1ComputeInfo \* pOutputRect, UInt32 \* PDIMENSIONX, UInt32 \* pDimensionY, UInt32 \* pDimensionZ)
+### <a name="calculatethreadgroupsid2d1computeinfo-poutputrect-uint32-pdimensionx-uint32-pdimensiony-uint32-pdimensionz"></a>CalculateThreadgroups(ID2D1ComputeInfo \* pOutputRect, UINT32 \* pDimensionX, UINT32 \* pDimensionY, UINT32 \* pDimensionZ)
 
-Mientras que los sombreadores de píxeles se ejecutan por píxel y los sombreadores de vértices se ejecutan por vértices, los sombreadores de cálculo se ejecutan por cada 'threadgroup. Un elemento threadgroup representa un número de subprocesos que se ejecutan simultáneamente en la GPU. El código HLSL del sombreador de cálculo decide cuántos subprocesos se deben ejecutar por elemento threadgroup. El efecto escala el número de threadgroups de forma que el sombreador ejecute el número deseado de veces, en función de la lógica del sombreador.
+Mientras que los sombreadores de píxeles se ejecutan por píxel y los sombreadores de vértices se ejecutan por vértice, los sombreadores de proceso se ejecutan por grupo de subprocesos. Un grupo de subprocesos representa una serie de subprocesos que se ejecutan simultáneamente en la GPU. El código HLSL del sombreador de proceso decide cuántos subprocesos se deben ejecutar por grupo de subprocesos. El efecto escala el número de grupos de subprocesos para que el sombreador ejecute el número deseado de veces, en función de la lógica del sombreador.
 
-El método [**CalculateThreadgroups**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1computetransform-calculatethreadgroups) permite a la transformación informar a [Direct2D](./direct2d-portal.md) el número de grupos de subprocesos necesarios, en función del tamaño de la imagen y el conocimiento de la transformación del sombreador.
+El [**método CalculateThreadgroups**](/windows/win32/api/d2d1effectauthor/nf-d2d1effectauthor-id2d1computetransform-calculatethreadgroups) permite que la transformación informe a [Direct2D](./direct2d-portal.md) de cuántos grupos de subprocesos son necesarios, en función del tamaño de la imagen y del propio conocimiento de la transformación del sombreador.
 
-El número de veces que se ejecuta el sombreador de cálculo es un producto de los recuentos de elemento threadgroup especificados aquí y la anotación ' numthreads ' en el [HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl)del sombreador de cálculo. Por ejemplo, si la transformación establece las dimensiones elemento threadgroup en (2, 2, 1), el sombreador especifica (3, 3, 1) subprocesos por elemento threadgroup y, a continuación, se ejecutarán 4 threadgroups, cada uno con 9 subprocesos en ellos, para un total de 36 instancias de subproceso.
+El número de veces que se ejecuta el sombreador de proceso es un producto de los recuentos de grupos de subprocesos especificados aquí y de la anotación "numthreads" en el sombreador de proceso [HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl). Por ejemplo, si la transformación establece las dimensiones del grupo de subprocesos en (2,2,1), el sombreador especifica (33,1) subprocesos por grupo de subprocesos, se ejecutarán 4 grupos de subprocesos, cada uno con 9 subprocesos en ellos, para un total de 36 instancias de subproceso.
 
-Un escenario común es procesar un píxel de salida por cada instancia del sombreador de cálculo. Para calcular el número de grupos de subprocesos para este escenario, la transformación divide el ancho y el alto de la imagen por las dimensiones x e y respectivas de la anotación ' numthreads ' en el [HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl)del sombreador de proceso.
+Un escenario común es procesar un píxel de salida para cada instancia del sombreador de proceso. Para calcular el número de grupos de subprocesos para este escenario, la transformación divide el ancho y el alto de la imagen entre las dimensiones x e y respectivas de la anotación "numthreads" en el sombreador de proceso [HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl).
 
-Lo importante es que, si se realiza esta división, el número de grupos de subprocesos solicitados siempre se debe redondear al entero más cercano; de lo contrario, los píxeles de ' resto ' no se ejecutarán en. Si un sombreador (por ejemplo) calcula un solo píxel con cada subproceso, el código del método tendría el siguiente aspecto.
+Lo importante es que, si se realiza esta división, el número de grupos de subprocesos solicitados siempre se debe redondear al entero más cercano; de lo contrario, no se ejecutarán los píxeles de "resto". Si un sombreador (por ejemplo) calcula un solo píxel con cada subproceso, el código del método aparecería como sigue.
 
 
 ```C++
@@ -1074,7 +1074,7 @@ IFACEMETHODIMP SampleTransform::CalculateThreadgroups(
 
 
 
-[HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl) usa el siguiente código para especificar el número de subprocesos de cada grupo de subprocesos:
+[HLSL usa](/windows/desktop/direct3dhlsl/dx-graphics-hlsl) el código siguiente para especificar el número de subprocesos de cada grupo de subprocesos:
 
 
 ```hlsl
@@ -1088,7 +1088,7 @@ void main(
 
 
 
-Durante la ejecución, el elemento threadgroup actual y el índice del subproceso actual se pasan como parámetros al método de sombreador:
+Durante la ejecución, el grupo de subprocesos actual y el índice de subproceso actual se pasan como parámetros al método del sombreador:
 
 
 ```hlsl
@@ -1123,9 +1123,9 @@ void main(
 
 
 
-### <a name="reading-image-data"></a>Leer datos de imagen
+### <a name="reading-image-data"></a>Lectura de datos de imagen
 
-Los sombreadores de cálculo tienen acceso a la imagen de entrada de la transformación como una sola textura bidimensional:
+Los sombreadores de proceso acceden a la imagen de entrada de la transformación como una sola textura bidimensional:
 
 
 ```hlsl
@@ -1135,7 +1135,7 @@ SamplerState InputSampler : register(s0);
 
 
 
-Sin embargo, al igual que los sombreadores de píxeles, no se garantiza que los datos de la imagen empiecen en (0,0) en la textura. En su lugar, [Direct2D](./direct2d-portal.md) proporciona constantes del sistema que permiten a los sombreadores compensar cualquier desplazamiento:
+Sin embargo, al igual que los sombreadores de píxeles, no se garantiza que los datos de la imagen comiencen en (0, 0) en la textura. En su lugar, [Direct2D proporciona](./direct2d-portal.md) constantes del sistema que permiten a los sombreadores compensar cualquier desplazamiento:
 
 
 ```hlsl
@@ -1162,7 +1162,7 @@ float2 ConvertInput0SceneToTexelSpace(float2 inputScenePosition)
 
 
 
-Una vez definidos el método auxiliar y el búfer de constantes anteriores, el sombreador puede realizar un muestreo de los datos de imagen mediante lo siguiente:
+Una vez definidos el búfer constante anterior y el método auxiliar, el sombreador puede muestrear los datos de imagen mediante lo siguiente:
 
 
 ```hlsl
@@ -1178,9 +1178,9 @@ float4 color = InputTexture.SampleLevel(
 
 
 
-### <a name="writing-image-data"></a>Escribir datos de imagen
+### <a name="writing-image-data"></a>Escritura de datos de imagen
 
-[Direct2D](./direct2d-portal.md) espera que un sombreador defina un búfer de salida para la imagen resultante que se va a colocar. En el modelo de sombreador 4 (DirectX 10), este debe ser un búfer unidimensional debido a las restricciones de características:
+[Direct2D espera](./direct2d-portal.md) que un sombreador defina un búfer de salida para la imagen resultante que se va a colocar. En El modelo de sombreador 4 (DirectX 10), debe ser un búfer unidimensional debido a restricciones de características:
 
 
 ```hlsl
@@ -1190,7 +1190,7 @@ RWStructuredBuffer<float4> OutputTexture : register(t1);
 
 
 
-La textura de salida se indexa primero a fila para permitir que se almacene toda la imagen.
+La textura de salida se indexa primero en fila para permitir almacenar toda la imagen.
 
 
 ```hlsl
@@ -1201,7 +1201,7 @@ OutputTexture[yIndex * imageWidth + xIndex] = color;
 
 
 
-Por otro lado, los sombreadores modelo de sombreador 5 (DirectX 11) pueden usar texturas de salida bidimensionales:
+Por otro lado, los sombreadores del Modelo de sombreador 5 (DirectX 11) pueden usar texturas de salida bidimensionales:
 
 
 ```hlsl
@@ -1210,7 +1210,7 @@ RWTexture2D<float4> OutputTexture : register(t1);
 
 
 
-Con los sombreadores modelo de sombreador 5, [Direct2D](./direct2d-portal.md) proporciona un parámetro ' outputOffset ' adicional en el búfer de constantes. La salida del sombreador debe offsettedse en esta cantidad:
+Con los sombreadores del Modelo de sombreador 5, [Direct2D](./direct2d-portal.md) proporciona un parámetro "outputOffset" adicional en el búfer constante. La salida del sombreador debe desplazarse por esta cantidad:
 
 
 ```hlsl
@@ -1219,7 +1219,7 @@ OutputTexture[uint2(xIndex, yIndex) + outputOffset.xy] = color;
 
 
 
-A continuación se muestra un sombreador de cálculo del modelo de sombreador de paso 5 completado. En ella, cada uno de los subprocesos del sombreador de cálculo Lee y escribe un solo píxel de la imagen de entrada.
+A continuación se muestra un sombreador de proceso del modelo 5 de sombreador de paso a través completado. En él, cada uno de los subprocesos del sombreador de proceso lee y escribe un solo píxel de la imagen de entrada.
 
 
 ```hlsl
@@ -1304,7 +1304,7 @@ void main(
 
 
 
-En el código siguiente se muestra la versión equivalente del modelo de sombreador 4 del sombreador. Observe que el sombreador ahora se representa en un búfer de salida de una sola dimensión.
+En el código siguiente se muestra la versión del sombreador Modelo 4 equivalente del sombreador. Observe que el sombreador ahora se representa en un búfer de salida unidimensional.
 
 
 ```hlsl
@@ -1393,9 +1393,9 @@ void main(
 
 <dl> <dt>
 
-[Ejemplo de SDK de D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects)
+[Ejemplo del SDK D2DCustomEffects](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/D2DCustomEffects)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: El método AgreeMediaType busca un tipo de medio para crear una conexión de PIN.
+description: El método AgreeMediaType busca un tipo de medio para realizar una conexión de pin.
 ms.assetid: 545186d2-b5e8-4833-b0ff-11160c1dd53b
-title: Método CBasePin. AgreeMediaType (Amfilter. h)
+title: Método CBasePin.AgreeMediaType (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6e5cdea12cb8bca3319f908fe697251a3d4699d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60eff5a0654f991969f4d03cb6c8c975dfcc2d894b45fbb54f70bfea2870fadf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872535"
 ---
-# <a name="cbasepinagreemediatype-method"></a>CBasePin. AgreeMediaType, método
+# <a name="cbasepinagreemediatype-method"></a>Método CBasePin.AgreeMediaType
 
-El `AgreeMediaType` método busca un tipo de medio para crear una conexión de PIN.
+El `AgreeMediaType` método busca un tipo de medio para realizar una conexión de pin.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,42 +46,42 @@ virtual HRESULT AgreeMediaType(
 *pReceivePin* 
 </dt> <dd>
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN receptor.
+Puntero a la interfaz IPin del [**pin receptor.**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a un objeto [**CMediaType**](cmediatype.md) que especifica un tipo de medio, o **null**.
+Puntero a un [**objeto CMediaType**](cmediatype.md) que especifica un tipo de medio o **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los de la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los de la tabla siguiente.
 
 
 
 | Código devuelto                                                                                                  | Descripción                                    |
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                         | Correcto.<br/>                            |
-| <dl> <dt>**VFW \_ E \_ no \_ hay \_ tipos aceptables**</dt> </dl> | No se encontró ningún tipo de medio aceptable.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                         | Correcto.<br/>                            |
+| <dl> <dt>**VFW \_ E \_ NO \_ ACCEPTABLE \_ TYPES**</dt> </dl> | No se encontró ningún tipo de medio aceptable.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el parámetro *PMT* no es **null** y especifica totalmente un tipo de medio, este método intenta una conexión con ese tipo de medio. Si se produce un error en el intento, el método devuelve un error.
+Si el *parámetro pmt* no es **NULL** y especifica completamente un tipo de medio, este método intenta una conexión con ese tipo de medio. Si se produce un error en el intento, el método devuelve un error.
 
-Si el parámetro *PMT* es **null** o especifica un tipo de medio parcial, este método probará los tipos de medios en el orden siguiente:
+Si el *parámetro pmt* es **NULL** o especifica un tipo de medio parcial, este método intenta los tipos de medios en el orden siguiente:
 
-1.  Los tipos de medios preferidos del PIN receptor.
+1.  Tipos de medios preferidos del pin receptor.
 2.  Tipos de medios preferidos de este pin.
 
-Los tipos de medios preferidos se enumeran con el método [**CBasePin:: EnumMediaTypes**](cbasepin-enummediatypes.md) y el enumerador resultante se pasa al método [**CBasePin:: TryMediaTypes**](cbasepin-trymediatypes.md) .
+Los tipos de medios preferidos se enumeran con el método [**CBasePin::EnumMediaTypes**](cbasepin-enummediatypes.md) y el enumerador resultante se pasa al método [**CBasePin::TryMediaTypes.**](cbasepin-trymediatypes.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ Los tipos de medios preferidos se enumeran con el método [**CBasePin:: EnumMedi
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ Los tipos de medios preferidos se enumeran con el método [**CBasePin:: EnumMedi
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentKeyTooBigException'
-title: Constructor de EsentKeyTooBigException
+description: 'Más información sobre: Constructor EsentKeyTooBigException'
+title: Constructor EsentKeyTooBigException
 TOCTitle: 'EsentKeyTooBigException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentKeyTooBigException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentkeytoobigexception.esentkeytoobigexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e7831d238bed4c25058f78f6e0a341be64228f11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 562f9b4822b1d8bcbb51adbcbec4cd4da5ad505e038f8e81576accc26d4c07bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480375"
 ---
-# <a name="esentkeytoobigexception-constructor"></a>Constructor de EsentKeyTooBigException
+# <a name="esentkeytoobigexception-constructor"></a>Constructor EsentKeyTooBigException
 
 Inicializa una nueva instancia de la clase EsentKeyTooBigException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentKeyTooBigException()
 public EsentKeyTooBigException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentKeyTooBigException()
 
 [Miembros de EsentKeyTooBigException](./esentkeytoobigexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

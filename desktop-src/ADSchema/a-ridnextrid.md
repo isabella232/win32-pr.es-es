@@ -1,11 +1,11 @@
 ---
 title: Atributo RID-Next-RID
-description: Siguiente identificador relativo libre en el grupo actual.
+description: El siguiente identificador relativo gratuito del grupo actual.
 ms.assetid: 6e2339b2-fd4a-4175-a854-c0a4bd9ac599
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo RID-siguiente-RID
-- rIDNextRID esquema de AD de atributos
+- Esquema de AD del atributo RID-Next-RID
+- rIDNextRID attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 054d469bf5e6f29e7714e621b04270959b1df4e9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3bc90ec8ce61384937aa68614e8e60b1380c11757e18c82208c80ffe560f3733
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646694"
 ---
 # <a name="rid-next-rid-attribute"></a>Atributo RID-Next-RID
 
-Siguiente identificador relativo libre en el grupo actual.
+El siguiente identificador relativo gratuito del grupo actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | RID-siguiente-RID                         |
-| Nombre para mostrar de LDAP | rIDNextRID                           |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | RID-Next-RID                         |
+| Ldap-Display-Name | rIDNextRID                           |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.374               |
-| System-ID-GUID    | 6617188c-8f3c-11d0-afda-00c04fd930c9 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 6617188c-8f3c-11d0-afda-00c04fd930c9 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Siguiente identificador relativo libre en el grupo actual.
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000011                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Siguiente identificador relativo libre en el grupo actual.
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000011                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Siguiente identificador relativo libre en el grupo actual.
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000011                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Siguiente identificador relativo libre en el grupo actual.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000011                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Siguiente identificador relativo libre en el grupo actual.
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000011                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Siguiente identificador relativo libre en el grupo actual.
 
 | Entrada | Value |
 |------------------------|----------------------------------------|
-| Identificador de vínculo                | \-                                     |
+| Id. de vínculo                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| Tiene un único valor       | True                                   |
-| Está indexado             | False                                  |
-| En el catálogo global      | False                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                           |
+| System-Only            | Verdadero                                   |
+| Es de un solo valor       | Verdadero                                   |
+| Está indexado             | Falso                                  |
+| En el catálogo global      | Falso                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000011                             |
-| Clases usadas en        | [**RID: conjunto**](c-ridset.md)<br/> |
+| Clases usadas en        | [**CONJUNTO DE RID**](c-ridset.md)<br/> |
 
 
 

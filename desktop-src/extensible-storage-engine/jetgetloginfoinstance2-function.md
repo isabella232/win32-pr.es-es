@@ -1,5 +1,5 @@
 ---
-description: Más información sobre la función JetGetLogInfoInstance2
+description: 'Más información sobre: Función JetGetLogInfoInstance2'
 title: Función JetGetLogInfoInstance2
 TOCTitle: JetGetLogInfoInstance2 Function
 ms:assetid: 50fdae92-611c-4dbf-846e-86cc836a23db
@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ec8bf0a4cee4e89f8252e53ed0ffbeb3aed4bcdf
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 27c0514965dd41b47bb1d1f07ce188a675bd0ebd
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982538"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471771"
 ---
 # <a name="jetgetloginfoinstance2-function"></a>Función JetGetLogInfoInstance2
 
@@ -34,7 +34,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetgetloginfoinstance2-function"></a>Función JetGetLogInfoInstance2
 
-La función **JetGetLogInfoInstance2** se usa durante una copia de seguridad iniciada por [JetBeginExternalBackup para](./jetbeginexternalbackup-function.md) consultar en una instancia los nombres de los archivos de revisión de base de datos y los archivos de registro de transacciones que deben formar parte del conjunto de archivos de copia de seguridad. Estos archivos se pueden abrir posteriormente mediante [JetOpenFile](./jetopenfile-function.md) y [leerse mediante JetReadFile.](./jetreadfile-function.md)
+La función **JetGetLogInfoInstance2** se usa durante una copia de seguridad iniciada por [JetBeginExternalBackup para](./jetbeginexternalbackup-function.md) consultar en una instancia los nombres de los archivos de revisión de base de datos y los archivos de registro de transacciones que deben formar parte del conjunto de archivos de copia de seguridad. Estos archivos se pueden abrir posteriormente [mediante JetOpenFile](./jetopenfile-function.md) y leer [con JetReadFile](./jetreadfile-function.md).
 
 **Windows XP: JetGetLogInfoInstance2** se introdujo en Windows XP.
 
@@ -62,7 +62,7 @@ Para Windows XP y versiones posteriores, solo se puede llamar a la variante de A
 
 Búfer de salida que recibirá la lista de cadenas terminadas en NULL que describen el conjunto de archivos de revisión de base de datos y los archivos de registro de transacciones que deben formar parte del conjunto de archivos de copia de seguridad.
 
-La lista de cadenas devueltas en este búfer tiene el mismo formato que una cadena múltiple usada por el Registro. Cada cadena terminada en NULL se devuelve en secuencia seguida de un terminador null final.
+La lista de cadenas devueltas en este búfer tiene el mismo formato que una cadena múltiple utilizada por el Registro. Cada cadena terminada en NULL se devuelve en secuencia seguida de un terminador null final.
 
 *cbMax*
 
@@ -86,38 +86,31 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errBackupAbortByServer</p> | <p>Error en la operación porque una llamada a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>anuló la copia de seguridad externa actual. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad en la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
-| <p>JET_errInvalidBackupSequence</p> | <p>Error en la operación de copia de seguridad porque se llamó fuera de secuencia. <a href="gg294055(v=exchg.10).md">JetGetLogInfo devolverá</a> este error si hay algún identificador de archivo pendiente creado <a href="gg269249(v=exchg.10).md">mediante JetOpenFile</a> para la instancia.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. Esto puede ocurrir para <a href="gg294055(v=exchg.10).md">JetGetLogInfo</a> cuando el identificador de instancia especificado no es válido (Windows XP y versiones posteriores).</p> | 
+| <p>JET_errBackupAbortByServer</p> | <p>Error en la operación porque la copia de seguridad externa actual se ha anulado mediante una llamada a <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errInvalidBackupSequence</p> | <p>Error en la operación de copia de seguridad porque se llamó fuera de la secuencia. <a href="gg294055(v=exchg.10).md">JetGetLogInfo</a> devolverá este error si hay identificadores de archivo pendientes creados <a href="gg269249(v=exchg.10).md">mediante JetOpenFile</a> para la instancia.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro. Esto puede ocurrir para <a href="gg294055(v=exchg.10).md">JetGetLogInfo</a> cuando el identificador de instancia especificado no es válido (Windows XP y versiones posteriores).</p> | 
 | <p>JET_errNoBackup</p> | <p>Error en la operación porque no hay ninguna copia de seguridad externa en curso.</p> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
-| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando, de hecho, ya existen varias instancias.</p> | 
+| <p>JET_errRunningInMultiInstanceMode</p> | <p>Error en la operación porque se intentó usar el motor en modo heredado (modo de compatibilidad Windows 2000), donde solo se admite una instancia cuando en realidad ya existen varias instancias.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
 
 
 
 Si se ejecuta correctamente, la información solicitada sobre el conjunto de archivos de revisión de base de datos y los archivos de registro de transacciones que deben formar parte del conjunto de archivos de copia de seguridad se colocará en los búferes de salida donde se proporcionan. La máquina de estado de copia de seguridad estará avanzada de modo que ya no se permita la copia de seguridad de los archivos de base de datos. Solo los archivos de revisión de base de datos y los archivos de registro de transacciones pueden abrirse para la copia de seguridad más allá de este punto.
 
-En caso de error, el estado de los búferes de salida es indefinido. El error dará lugar a la cancelación de todo el proceso de copia de seguridad de la instancia.
+En caso de error, el estado de los búferes de salida es indefinido. El error provocará la cancelación de todo el proceso de copia de seguridad de la instancia.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Es importante tener en cuenta que esta API no devuelve un error o una advertencia si el búfer de salida es demasiado pequeño para aceptar la lista completa de archivos que deben formar parte del conjunto de archivos de copia de seguridad. La aplicación siempre debe proporcionar un búfer para recibir el tamaño real de esta lista y usar esa información para determinar si la lista se ha truncado.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetLogInfoInstance2W</strong> (Unicode) y <strong>JetGetLogInfoInstance2A</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetLogInfoInstance2W</strong> (Unicode) y <strong>JetGetLogInfoInstance2A</strong> (ANSI).</p> | 
 
 
 

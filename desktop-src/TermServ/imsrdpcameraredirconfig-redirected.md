@@ -1,11 +1,11 @@
 ---
 title: Propiedad Redirected de la interfaz IMsRdpCameraRedirConfig
-description: Especifica si se redirige la cámara.
+description: Especifica si se redirige o no la cámara.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de propiedad redirigida
-- Servicios de Escritorio remoto de propiedad redirigida, interfaz IMsRdpCameraRedirConfig
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfig, propiedad redirigida
+- Propiedades redirigidas Servicios de Escritorio remoto
+- Propiedad redirigida Servicios de Escritorio remoto interfaz , IMsRdpCameraRedirConfig
+- Interfaz IMsRdpCameraRedirConfig Servicios de Escritorio remoto , propiedad redirigida
 topic_type:
 - apiref
 api_name:
@@ -18,20 +18,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: f81dc643f7911029df088bbb692d7c8c06fddac4
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 6f02d8764eb8fd9cb9f74bc42f8e8a3fee518e2d0841dd8a2ca23fa562354240
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104494170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119400985"
 ---
-# <a name="imsrdpcameraredirconfigredirected-property"></a>IMsRdpCameraRedirConfig:: redirigiód (propiedad)
+# <a name="imsrdpcameraredirconfigredirected-property"></a>Propiedad IMsRdpCameraRedirConfig::Redirected
 
-Especifica si se redirige la cámara.
+Especifica si se redirige o no la cámara.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```C++
 HRESULT put_Redirected(
@@ -45,7 +45,7 @@ HRESULT get_Redirected(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor que especifica si se redirige la cámara.
+Valor que especifica si se redirige o no la cámara.
 
 ## <a name="requirements"></a>Requisitos
 

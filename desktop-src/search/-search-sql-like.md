@@ -4,12 +4,12 @@ ms.assetid: d4bcf406-1253-4e56-b770-79edd4a98205
 title: Predicado LIKE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4846a8c474625e1461b193461d77a184e43c0b603b7ba3cb3ae2f07f5ae18bf8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b2faa337ab96eb8cd32c262eb49c792f545de45
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118051628"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886811"
 ---
 # <a name="like-predicate"></a>Predicado LIKE
 
@@ -22,7 +22,7 @@ El predicado LIKE realiza una comparación de coincidencia de patrones en la col
 
 
 
-puede <column> ser un identificador normal o [delimitado.](-search-sql-identifiers.md) La columna se limita a las propiedades del almacén de propiedades.
+La &lt; columna puede ser un identificador normal o &gt; [delimitado.](-search-sql-identifiers.md) La columna se limita a las propiedades del almacén de propiedades.
 
 El <literal \_ comodín> es un literal de cadena. Se incluye entre comillas y, opcionalmente, puede contener caracteres comodín. La cadena de coincidencia puede contener varios caracteres comodín si es necesario. En la tabla siguiente se describen los caracteres comodín que reconoce el predicado LIKE.
 
@@ -31,9 +31,9 @@ El <literal \_ comodín> es un literal de cadena. Se incluye entre comillas y, o
 | Wildcard (Carácter comodín)                | Descripción                                                                                                                                                                                     | Ejemplo                                                                                                                                                                                                              |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | % (porcentaje)             | Coincide con cero o más caracteres.                                                                                                                                                         | 'comp%r' coincide con 'comp' seguido de cero o más caracteres, finalizando en una r.                                                                                                                                  |
-| \_ (subrayado)         | Coincidencia con cualquier carácter individual.                                                                                                                                                                   | 'comp \_ ter' coincide con 'comp' seguido de exactamente uno de los caracteres, seguido de 'ter'.                                                                                                                              |
-| \[\](corchetes) | Coincide con cualquier carácter individual dentro del intervalo o conjunto especificados. Por ejemplo, \[ a-z \] especifica un intervalo; \[ aeiou \] especifica el conjunto de votos.                                                  | 'comp a-z re' coincide con 'comp' seguido de un solo carácter en el intervalo de a a z, seguido \[ de \] 're'. 'comp \[ ao' coincide con 'comp' seguido de un carácter único que \] debe ser un objeto o una o.<br/> |
-| \[^ \] (caret)          | Coincide con cualquier carácter individual que no esté dentro del intervalo o conjunto especificados. Por ejemplo, \[ ^a-z \] especifica un intervalo que excluye de a a z; \[ ^aeiou \] especifica un conjunto que excluye las votos. | 'comp \[ \] ^u' coincide con 'comp' seguido de cualquier carácter único que no sea una u.                                                                                                                                        |
+| \_ (subrayado)         | Coincidencia con cualquier carácter individual.                                                                                                                                                                   | 'comp \_ ter' coincide con 'comp' seguido exactamente de uno de los caracteres, seguido de 'ter'.                                                                                                                              |
+| \[\](corchetes) | Coincide con cualquier carácter individual dentro del intervalo o conjunto especificado. Por ejemplo, \[ a-z \] especifica un intervalo; \[ aeiou \] especifica el conjunto de votos.                                                  | 'comp a-z re' coincide con 'comp' seguido de un solo carácter en el intervalo de \[ \] a a z, seguido de 're'. 'comp \[ ao' coincide con 'comp' seguido de un carácter único que \] debe ser una o.<br/> |
+| \[^ \] (caret)          | Coincide con cualquier carácter individual que no esté dentro del intervalo o conjunto especificado. Por ejemplo, \[ ^a-z \] especifica un intervalo que excluye de a a z; \[ ^aeiou \] especifica un conjunto que excluye las votos. | 'comp \[ \] ^u' coincide con 'comp' seguido de cualquier carácter único que no sea una u.                                                                                                                                        |
 
 
 

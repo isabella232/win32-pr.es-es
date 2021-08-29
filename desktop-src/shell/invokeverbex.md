@@ -1,7 +1,7 @@
 ---
 description: Ejecuta un verbo en un elemento de Shell.
 ms.assetid: aac3f338-6074-4b1f-9b2f-e6206db52419
-title: Método ShellFolderItem. InvokeVerbEx (Shldisp. h)
+title: Método ShellFolderItem.InvokeVerbEx (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 627c2b40869ac9c509dcd645ec259de7db118235
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 494c6b2926b204225b4afbf41b6271209f8be0abab4432f242ef4a5bd9c26cff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119884425"
 ---
-# <a name="shellfolderiteminvokeverbex-method"></a>ShellFolderItem. InvokeVerbEx, método
+# <a name="shellfolderiteminvokeverbex-method"></a>Método ShellFolderItem.InvokeVerbEx
 
 Ejecuta un verbo en un elemento de Shell.
 
@@ -43,32 +43,32 @@ iRetVal = ShellFolderItem.InvokeVerbEx(
 *vVerb* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-**Variante** que contiene la cadena de verbo que corresponde al comando que se va a ejecutar. Debe ser uno de los valores devueltos por la propiedad [**Name**](folderitemverb-name.md) del elemento. Si no se especifica ningún verbo, se ejecuta el verbo predeterminado.
+Variante **que** contiene la cadena verbal que corresponde al comando que se va a ejecutar. Debe ser uno de los valores devueltos por la propiedad [**Name del**](folderitemverb-name.md) elemento. Si no se especifica ningún verbo, se ejecuta el verbo predeterminado.
 
 </dd> <dt>
 
 *vArgs* \[ en, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-**Variante** que consta de una cadena con uno o más argumentos para el comando especificado por *vVerb*. El formato de esta cadena depende del verbo determinado.
+Variante **que** consta de una cadena con uno o varios argumentos para el comando especificado por *vVerb*. El formato de esta cadena depende del verbo concreto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un verbo es una cadena que se usa para especificar una acción determinada que admite un elemento. Normalmente, al llamar a un verbo se inicia una aplicación relacionada. Por ejemplo, al llamar al verbo **Open** en un archivo. txt, normalmente se abre el archivo con un editor de texto, normalmente el Bloc de notas de Microsoft. El objeto [**FolderItemVerbs**](folderitemverbs.md) representa la colección de verbos asociados al elemento. Para obtener más información sobre los verbos, consulte [Launching Applications](launch.md).
+Un verbo es una cadena que se usa para especificar una acción determinada que admite un elemento. Normalmente, al llamar a un verbo se inicia una aplicación relacionada. Por ejemplo, al llamar al **verbo abierto** en un archivo .txt normalmente se abre el archivo con un editor de texto, normalmente Microsoft Bloc de notas. El [**objeto FolderItemVerbs**](folderitemverbs.md) representa la colección de verbos asociados al elemento. Para obtener más información sobre los verbos, vea [Iniciar aplicaciones.](launch.md)
 
-Este método es similar a [**InvokeVerb**](folderitem-invokeverb.md), pero permite especificar argumentos para el comando, así como el propio comando.
+Este método es similar a [**InvokeVerb,**](folderitem-invokeverb.md)pero permite especificar argumentos para el comando, así como para el propio comando.
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso correcto de este método en JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso adecuado de este método en JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -96,7 +96,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -167,11 +167,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

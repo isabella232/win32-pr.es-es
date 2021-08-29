@@ -1,17 +1,17 @@
 ---
 title: Uso del elemento Image
-description: En este artículo se describe el uso del elemento Image en VML, una característica que está en desuso a partir de Windows Internet Explorer 9.
+description: En este artículo se describe el uso del elemento Image en VML, una característica que está en desuso a partir Windows Internet Explorer 9.
 ms.assetid: 444c0b21-35f0-4e2d-ab6d-87a88229d9d2
 keywords:
 - Taller web, elemento image
 - diseñar páginas web, elemento image
 - Lenguaje de marcado de vectores (VML),elemento image
 - VML (Lenguaje de marcado de vectores),elemento image
-- gráficos vectoriales, elemento image
+- vector graphics,image element
 - elemento de imagen
 - Elementos de VML, imagen
 - Formas de VML, elemento image
-- Lenguaje de marcado de vectores (VML), atributos de propiedad de recorte
+- Lenguaje de marcado de vectores (VML), recortar atributos de propiedad
 - VML (Lenguaje de marcado de vectores), atributos de propiedad de recorte
 - gráficos vectoriales, atributos de propiedad de recorte
 - Formas de VML, atributos de propiedad de recorte
@@ -31,14 +31,14 @@ keywords:
 - Formas de VML, atributo de propiedad blacklevel
 - atributo de propiedad blacklevel
 - Lenguaje de marcado de vectores (VML),brillo
-- VML (Lenguaje de marcado de vectores),brillo
+- VML (Lenguaje de marcado de vectores), brillo
 - gráficos vectoriales, brillo
 - Formas de VML, brillo
-- Lenguaje de marcado de vectores (VML), atributo de propiedad de escala de grises
+- Lenguaje de marcado de vectores (VML),atributo de propiedad de escala de grises
 - VML (Lenguaje de marcado de vectores), atributo de propiedad de escala de grises
 - gráficos vectoriales, atributo de propiedad de escala de grises
 - Atributo de propiedad formas de VML, escala de grises
-- atributo de propiedad de escala de grises
+- atributo de propiedad grayscale
 - Lenguaje de marcado de vectores (VML),atributo de propiedad gamma
 - VML (Lenguaje de marcado de vectores),atributo de propiedad gamma
 - vector graphics,gamma property attribute
@@ -46,37 +46,37 @@ keywords:
 - atributo de propiedad gamma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 572acef76afc42e02f476ca1825ef2541f596380
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 76e770f4c639f75e683d4f8f612263bc06a0f5f09cef769dbaf241541605d598
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513002"
 ---
 # <a name="using-the-image-element"></a>Uso del elemento Image
 
-En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
 > A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
-Usar `<image>`
+Uso de `<image>`
 
 En este tema, se muestra cómo usar el `<image>` elemento para mostrar imágenes con varios efectos especiales.
 
 Si quisiera mostrar una imagen cargada desde un origen externo, normalmente usaría el elemento proporcionado en HTML y, a continuación, apuntaría el atributo de propiedad src a la ubicación del archivo `<img>` de imagen. 
 
-También puede usar el elemento `<image>` proporcionado en VML. Cuando se usa el elemento , solo se puede crear un archivo de imagen y, a continuación, mostrar la imagen de forma diferente modificando los atributos `<image>` de propiedad del `<image>` elemento. Además, el elemento proporciona varios efectos especiales que no puede hacer simplemente con el elemento de HTML, como recortar , contraste, brillo, gamma y escala `<image>` `<img>` de [](#brightness) [grises.](#grayscale) [](#crop) [](#contrast) [](#gamma)
+También puede usar el elemento `<image>` proporcionado en VML. Cuando se usa el elemento , solo se puede crear un archivo de imagen y, a continuación, mostrar la imagen de forma diferente modificando los atributos `<image>` de propiedad del `<image>` elemento. Además, el elemento proporciona varios efectos especiales que no se pueden hacer simplemente con el elemento de HTML, como recortar , contraste, brillo, gamma y escala `<image>` `<img>` de [](#brightness) [grises.](#grayscale) [](#crop) [](#contrast) [](#gamma)
 
-[![volver a la parte ](images/top.gif) superior Atrás a la parte superior](#top)
+[![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
 ## <a name="crop"></a>Cultivo
 
-Puede usar los atributos de propiedad **cropbottom**, **croptop,** **cropleft** y **cropright** del elemento para mostrar imágenes diferentes recortadas del mismo archivo `<image>` de imagen.
+Puede usar los atributos de propiedad **cropbottom**, **croptop,** **cropleft** y **cropright** del elemento para mostrar imágenes diferentes recortadas desde el mismo archivo `<image>` de imagen.
 
-El valor de estos atributos de recorte representa el porcentaje de corte del borde de la imagen. El valor puede ser cualquier número entre 0 y 1. De forma predeterminada, el valor se establece en 0, lo que indica que no se recorta desde el borde. El valor 0,1 indica un recorte del 10 % desde el borde, el valor 0,15 indica un recorte del 15 % desde el borde, y así sucesivamente.
+El valor de estos atributos de recorte representa el porcentaje de corte del borde de la imagen. El valor puede ser cualquier número entre 0 y 1. De forma predeterminada, el valor se establece en 0, lo que indica que no se recorta desde el borde. El valor 0,1 indica un recorte del 10 por ciento desde el borde, el valor 0,15 indica un recorte del 15 por ciento desde el borde, y así sucesivamente.
 
 Por ejemplo, para mostrar cinco imágenes recortadas del mismo archivo de imagen, puede usar el elemento y especificar distintos valores de recorte, como se muestra en la siguiente representación `<image>` de VML:
 
@@ -105,17 +105,17 @@ La segunda imagen, `<v:image style='width:85pt;height:64pt' src="image1.jpg" cro
 
 De forma similar, las imágenes tercera, cuarta y quinta tienen algunos valores de recorte. La imagen original se recorta según los valores de recorte y, a continuación, se muestra según el valor de ancho y alto.
 
-[![volver a la parte ](images/top.gif) superior Atrás a la parte superior](#top)
+[![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
 ## <a name="contrast"></a>contraste
 
 Puede usar el atributo de propiedad **gain** del `<image>` elemento para mostrar varias imágenes con diferentes configuraciones de contraste.
 
-El valor del atributo de propiedad **gain** puede ser cualquier número. De forma predeterminada, el valor es 1, lo que indica el uso del mismo contraste que la imagen original. El valor 0 indica que no hay contraste. Cuanto mayor sea el número, mayor será el contraste.
+El valor del atributo de propiedad **gain** puede ser cualquier número. De forma predeterminada, el valor es 1, lo que indica el uso del mismo contraste que la imagen original. El valor 0 no indica ningún contraste. Cuanto mayor sea el número, mayor será el contraste.
 
 Por ejemplo, para mostrar cinco imágenes que tienen una configuración de contraste diferente, puede usar el elemento y establecer un valor diferente para el atributo de propiedad gain, como se muestra en la siguiente representación `<image>` de VML: 
 
-![image1.jpg (5770 bytes)](images/image1.jpg)![image2 \-2.jpg (270 bytes)](images/image2-2.jpg)![imagen2 \-3.jpg (1919 bytes)](images/image2-3.jpg)![imagen2 \-4.jpg (3143 bytes)](images/image2-4.jpg)![imagen2 \-5.jpg (1724 bytes)](images/image2-5.jpg)
+![image1.jpg (5770 bytes)](images/image1.jpg)![imagen2 \-2.jpg (270 bytes)](images/image2-2.jpg)![image2 \-3.jpg (1919 bytes)](images/image2-3.jpg)![imagen2 \-4.jpg (3143 bytes)](images/image2-4.jpg)![image2 \-5.jpg (1724 bytes)](images/image2-5.jpg)
 
 
 ```HTML
@@ -130,9 +130,9 @@ Por ejemplo, para mostrar cinco imágenes que tienen una configuración de contr
 
 
 
-Cuando el **atributo de** propiedad gain se establece en 0, toda la imagen se vuelve gris porque no hay contraste. El contraste es más evidente cuando el atributo de propiedad **gain** se establece en 3 que cuando se establece en 0,5. El contraste se invierte cuando el atributo de propiedad **gain** se establece en un valor negativo como -0,4.
+Cuando el **atributo de** propiedad gain se establece en 0, toda la imagen se vuelve gris porque no hay ningún contraste. El contraste es más evidente cuando el atributo de propiedad **gain** se establece en 3 que cuando se establece en 0,5. El contraste se invierte cuando el atributo de propiedad **gain** se establece en un valor negativo como -0,4.
 
-[![volver a la parte ](images/top.gif) superior Atrás a la parte superior](#top)
+[![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
 
 ## <a name="brightness"></a>luminosidad
 
@@ -142,7 +142,7 @@ El valor del atributo **de propiedad blacklevel** puede ser cualquier valor entr
 
 Por ejemplo, para mostrar cinco imágenes que tienen una configuración de brillo diferente, puede usar el elemento y establecer un valor diferente para el atributo de propiedad blacklevel, como se muestra en la siguiente representación `<image>` de VML: 
 
-![image1.jpg (5770 bytes)](images/image1.jpg)![image3 \-2.jpg (2579 bytes)](images/image3-2.jpg)![imagen3 \-3.jpg (2330 bytes)](images/image3-3.jpg)![image3 \-4.jpg (2727 bytes)](images/image3-4.jpg)![image3 \-5.jpg (2435 bytes)](images/image3-5.jpg)
+![image1.jpg (5770 bytes)](images/image1.jpg)![image3 \-2.jpg (2579 bytes)](images/image3-2.jpg)![imagen3 \-3.jpg (2330 bytes)](images/image3-3.jpg)![imagen3 \-4.jpg (2727 bytes)](images/image3-4.jpg)![imagen3 \-5.jpg (2435 bytes)](images/image3-5.jpg)
 
 
 ```HTML
@@ -157,11 +157,11 @@ Por ejemplo, para mostrar cinco imágenes que tienen una configuración de brill
 
 
 
-[![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
+[![volver a la parte ](images/top.gif) superior Atrás a la parte superior](#top)
 
 ## <a name="grayscale"></a>escala de grises
 
-Puede usar el atributo **de propiedad de escala** de grises del elemento para mostrar imágenes con o sin escala de `<image>` grises.
+Puede usar el atributo **de propiedad escala** de grises del elemento para mostrar imágenes con o sin escala de `<image>` grises.
 
 El valor del atributo **de propiedad de escala** de grises puede ser true o false. De forma predeterminada, el valor se establece en false para que la imagen se muestre en color. Si el valor se establece en true, la imagen se mostrará en escala de grises.
 
@@ -182,11 +182,11 @@ grayscale=true />
 
 
 
-[![volver a la parte ](images/top.gif) superior Volver a la parte superior](#top)
+[![volver a la parte ](images/top.gif) superior Atrás a la parte superior](#top)
 
 ## <a name="gamma"></a>gamma
 
-Puede usar el atributo de propiedad **gamma** del elemento para mostrar imágenes `<image>` con diferentes configuraciones gamma.
+Puede usar el atributo de propiedad **gamma** del elemento para mostrar imágenes `<image>` que tienen diferentes configuraciones gamma.
 
 El valor del atributo de propiedad gamma puede ser cualquier valor entre 0 y 1. De forma predeterminada, el valor se establece en 1.
 

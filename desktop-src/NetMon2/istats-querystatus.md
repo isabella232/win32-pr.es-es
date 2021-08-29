@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 7587c2fff56d305c0298948bdf8690fd801f3f3b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 297efb0e4410e6b138d41436ee6b546aaebcce3ae65e6ef0a2dd211deb05ee16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495055"
 ---
 # <a name="istatsquerystatus-method"></a>IStats::QueryStatus (método)
 
@@ -43,7 +43,7 @@ HRESULT STDMETHODCALLTYPE QueryStatus(
 *pNetworkStatus* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura [NETWORKSTATUS devuelta](networkstatus.md) que indica el estado actual (captura, pausada, detenida, y así sucesivamente) del NPP. Es responsabilidad de la aplicación asignar y liberar la memoria para la **estructura NETWORKSTATUS.**
+Puntero a una estructura [NETWORKSTATUS](networkstatus.md) devuelta que indica el estado actual (captura, pausado, detenido, y así sucesivamente) del NPP. Es responsabilidad de la aplicación asignar y liberar la memoria para la **estructura NETWORKSTATUS.**
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Puntero a una estructura [NETWORKSTATUS devuelta](networkstatus.md) que indica e
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es el código de error siguiente:
+Si el método no es correcto, el valor devuelto es el código de error siguiente:
 
 
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                              |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ INVALID \_ PARAMETER**</dt> </dl> | El *parámetro pNetworkStatus* no apunta a una estructura [NETWORKSTATUS](networkstatus.md) válida. Asigne memoria para esta estructura y llame de nuevo **al método IStats::QueryStatus.**<br/> |
+| <dl> <dt>**NMERR \_ INVALID \_ PARAMETER**</dt> </dl> | El *parámetro pNetworkStatus* no apunta a una estructura [NETWORKSTATUS](networkstatus.md) válida. Asigne memoria para esta estructura y vuelva a llamar al **método IStats::QueryStatus.**<br/> |
 
 
 
@@ -65,7 +65,7 @@ Si el método no se realiza correctamente, el valor devuelto es el código de er
 
 ## <a name="remarks"></a>Comentarios
 
-Se puede llamar a este método en cualquier momento después de llamar al método [CreateNPPInterface.](createnppinterface.md) Se puede llamar para ver si el NPP está conectado a la red, para averiguar el estado de la captura actual y para ver si hay algún desencadenador pendiente. Sin embargo, antes de llamar a este método, debe asignar la memoria necesaria para la estructura [NETWORKSTATUS](networkstatus.md) y liberar esa memoria cuando la estructura ya no sea necesaria.
+Se puede llamar a este método en cualquier momento después de llamar al [método CreateNPPInterface.](createnppinterface.md) Se puede llamar a para ver si el NPP está conectado a la red, para averiguar el estado de la captura actual y para ver si hay algún desencadenador pendiente. Sin embargo, antes de llamar a este método, debe asignar la memoria necesaria para la estructura [NETWORKSTATUS](networkstatus.md) y liberar esa memoria cuando la estructura ya no sea necesaria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Se puede llamar a este método en cualquier momento después de llamar al métod
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

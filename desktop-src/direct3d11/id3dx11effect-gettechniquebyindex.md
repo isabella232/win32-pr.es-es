@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11Effect GetTechniqueByIndex (D3dx11effect. h)
-description: Obtiene una técnica por índice. | Método ID3DX11Effect GetTechniqueByIndex (D3dx11effect. h)
+title: Método ID3DX11Effect GetTechniqueByIndex (D3dx11effect.h)
+description: Obtenga una técnica por índice. | Método ID3DX11Effect GetTechniqueByIndex (D3dx11effect.h)
 ms.assetid: ee9c0cc3-0ca1-42e8-bd37-5878fd56cff1
 keywords:
 - Método GetTechniqueByIndex Direct3D 11
-- Método GetTechniqueByIndex Direct3D 11, interfaz ID3DX11Effect
-- Interfaz ID3DX11Effect Direct3D 11, método GetTechniqueByIndex
+- Método GetTechniqueByIndex Direct3D 11 , interfaz ID3DX11Effect
+- Interfaz ID3DX11Effect Direct3D 11 , método GetTechniqueByIndex
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81d3be5ec403fb25ab3a49792ed77fd4d96bf571
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: da31aa05486a3b2e7a18e94d4276a581b8be7669f5d5bfdfa9c75e0bdaf25c3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676915"
 ---
-# <a name="id3dx11effectgettechniquebyindex-method"></a>ID3DX11Effect:: GetTechniqueByIndex (método)
+# <a name="id3dx11effectgettechniquebyindex-method"></a>Método ID3DX11Effect::GetTechniqueByIndex
 
-Obtiene una técnica por índice.
+Obtenga una técnica por índice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ ID3DX11EffectTechnique* GetTechniqueByIndex(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Un índice basado en cero.
 
@@ -56,14 +56,14 @@ Un índice basado en cero.
 
 Tipo: **[ **ID3DX11EffectTechnique**](id3dx11effecttechnique.md)\***
 
-Un puntero a un [**ID3DX11EffectTechnique**](id3dx11effecttechnique.md).
+Puntero a [**id3DX11EffectTechnique.**](id3dx11effecttechnique.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un efecto contiene una o más técnicas; cada técnica contiene una o varias fases. Puede tener acceso a una técnica mediante su nombre o con un índice.
+Un efecto contiene una o varias técnicas; cada técnica contiene uno o varios pases. Puede acceder a una técnica mediante su nombre o con un índice.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Un efecto contiene una o más técnicas; cada técnica contiene una o varias fas
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

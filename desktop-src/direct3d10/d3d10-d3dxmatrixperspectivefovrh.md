@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXMatrixPerspectiveFovRH (D3DX10Math.h): crea una matriz de proyección de perspectiva a la derecha basada en un campo de vista.'
+description: 'Función D3DXMatrixPerspectiveFovRH (D3DX10Math.h): crea una matriz de proyección de perspectiva con la mano derecha basada en un campo de vista.'
 ms.assetid: a75e6666-e6c0-4a54-bc88-835fa012542f
 title: Función D3DXMatrixPerspectiveFovRH (D3DX10Math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 38d48789bab9b968b6bcf657459c408abdba774b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8d07e70df213c31d8006bd51d4b8af2f617d69fb44c3b4b8bd0c3931dad312ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990315"
 ---
 # <a name="d3dxmatrixperspectivefovrh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveFovRH (D3DX10Math.h)
 
@@ -85,7 +85,7 @@ Valor Z del plano de vista cercano.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z del plano de vista lejana.
+Valor Z del plano de vista lejano.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Valor Z del plano de vista lejana.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva con la mano derecha.
+Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva a la derecha.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -126,7 +126,7 @@ xScale = yScale / aspect ratio
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

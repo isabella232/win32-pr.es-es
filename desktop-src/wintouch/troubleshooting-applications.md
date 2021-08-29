@@ -13,12 +13,12 @@ keywords:
 - gestos, solución de problemas de aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 166f8c02fde7a9f53d1303c3e79a4fc9910be309
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 7f5d2907fde6751a5fe8d2d4acd761dd5729eac1a92b2a0f32b476c719088462
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122881860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840555"
 ---
 # <a name="troubleshooting-applications"></a>Solución de problemas de aplicaciones
 
@@ -32,7 +32,7 @@ En esta sección se ofrecen soluciones a problemas comunes.
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Problema    | Estoy ejecutando Windows Server 2008 y Windows touch no funcionan.                                                                                                                                                                                                                                       |
 | Causa    | No ha habilitado la experiencia de escritorio.                                                                                                                                                                                                                                                                        |
-| Solución | Abra la herramienta Administrador del servidor administrativa: haga clic **en Iniciar**, seleccione Herramientas **administrativas** y, a continuación, haga **clic Administrador del servidor**. Haga clic en **el elemento** Características de la columna izquierda. Haga **clic en Agregar** características en la **sección** Características. Seleccione **Experiencia de escritorio,** haga clic **en Siguiente** y, a continuación, haga clic **en Instalar.** |
+| Solución | Abra la Administrador del servidor administrativa: haga **clic** en Iniciar , seleccione Herramientas **administrativas** y, a continuación, haga clic **Administrador del servidor**. Haga clic en **el elemento** Características de la columna izquierda. Haga **clic en Agregar** características en la **sección** Características. Seleccione **Experiencia de escritorio,** haga clic **en Siguiente** y, a continuación, haga clic **en Instalar.** |
 
 
 
@@ -54,13 +54,13 @@ En esta sección se ofrecen soluciones a problemas comunes.
 
 <table>
 <colgroup>
-<col  />
-<col  />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>Problema</td>
-<td>No puedo distinguir entre la entrada del mouse Windows entrada táctil.</td>
+<td>No puedo distinguir entre la entrada del mouse y Windows entrada táctil.</td>
 </tr>
 <tr class="even">
 <td>Causa</td>
@@ -71,7 +71,7 @@ En esta sección se ofrecen soluciones a problemas comunes.
 <td>Puede llamar a <a href="/windows/win32/api/winuser/nf-winuser-getmessageextrainfo">GetMessageExtraInfo para</a> los mensajes <strong>WM_LBUTTONDOWN</strong> y <strong>WM_LBUTTONUP</strong> para determinar el origen. En el código siguiente se muestra cómo se podría hacer esto. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -120,7 +120,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Problema    | Mi aplicación se está inmovilizando sin motivo. Obtendros infracciones de acceso al inicializar mis interfaces de objeto.                                                                                                                                          |
 | Causa    | Falta una llamada a **CoInitialize** cuando se usan las interfaces [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) [**o IInertiaProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor)                                                                                 |
-| Solución | Esto podría deberse a la creación de instancias Windows objetos del Modelo de objetos componentes táctiles (COM) sin llamar a CoInitialize. Esto sucede a veces cuando se convierten proyectos de uso de gestos a uso de manipulaciones o interfaces de inercia. |
+| Solución | Esto podría deberse a la creación de instancias Windows objetos del Modelo de objetos componentes táctiles (COM) sin llamar a CoInitialize. Esto sucede a veces cuando se convierten proyectos de usar gestos a usar las manipulaciones o las interfaces de inercia. |
 
 
 
@@ -146,7 +146,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Problema    | Después de controlar el mensaje [**WM \_ TOUCH,**](wm-touchdown.md) deté de recibir comentarios sobre los límites.                                                                                                                                                                                                                                        |
 | Causa    | Consumir el [**mensaje WM \_ TOUCH**](wm-touchdown.md) sin controlarlo.                                                                                                                                                                                                                                                           |
-| Solución | Probablemente esté consumiendo un mensaje Windows Touch sin reenviarlo a **DefWindowProc,** lo que dará lugar a un comportamiento inesperado. Consulte [Tareas iniciales con Windows touch messages](getting-started-with-multi-touch-messages.md) para obtener más información sobre cómo controlar correctamente los mensajes WM [**\_ TOUCH.**](wm-touchdown.md) |
+| Solución | Probablemente esté consumiendo un mensaje Windows touch sin reenviarlo a **DefWindowProc,** lo que dará lugar a un comportamiento inesperado. Consulte [Tareas iniciales con Windows touch messages](getting-started-with-multi-touch-messages.md) para obtener más información sobre cómo controlar correctamente los mensajes WM [**\_ TOUCH.**](wm-touchdown.md) |
 
 
 
@@ -156,8 +156,8 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 
 <table>
 <colgroup>
-<col  />
-<col  />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -173,7 +173,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 <td>No ha establecido la versión Windows correcta en el proyecto. En el código siguiente se muestran las versiones Windows establecidas correctamente para Windows Touch en Windows 7. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -201,8 +201,8 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 
 <table>
 <colgroup>
-<col  />
-<col  />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -218,7 +218,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 <td>Asegúrese de llamar a <a href="/windows/desktop/api/winuser/nf-winuser-touch_coord_to_pixel"><strong>TOUCH_COORD_TO_PIXEL</strong></a> y <a href="/windows/desktop/api/winuser/nf-winuser-screentoclient"><strong>ScreenToClient</strong></a>. El código siguiente muestra cómo hacerlo. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -229,7 +229,7 @@ if ((GetMessageExtraInfo() & MOUSEEVENTF_FROMTOUCH) == MOUSEEVENTF_FROMTOUCH) {
 <tr class="odd">
 <td><pre><code>      POINT ptInput;
       if (GetTouchInputInfo((HTOUCHINPUT)lParam, cInputs, pInputs, sizeof(TOUCHINPUT))){
-        for (int i=0; i < static_cast&lt;INT&gt;(cInputs); i++){
+        for (int i=0; i < static_cast<INT>(cInputs); i++){
           TOUCHINPUT ti = pInputs[i];                       
           if (ti.dwID != 0){                
             // Do something with your touch input handle.
@@ -266,7 +266,7 @@ Para usar la función <a href="/windows/desktop/api/winuser/nf-winuser-screentoc
 
 | Category | Descripción |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Problema    | No veo mensajes [**WM \_ TOUCH,**](wm-touchdown.md) pero sé que Windows Touch funciona porque veo mensajes [**DE WM \_ GESTURE.**](wm-gesture.md)                                                             |
+| Problema    | No veo mensajes [**WM \_ TOUCH,**](wm-touchdown.md) pero sé que Windows Touch funciona porque veo mensajes [**WM \_ GESTURE.**](wm-gesture.md)                                                             |
 | Causa    | Falta una llamada a [**RegisterTouchWindow.**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow)                                                                                                                                                          |
 | Solución | [**WM \_ Los mensajes TOUCH**](wm-touchdown.md) [**y WM \_ GESTURE**](wm-gesture.md) son mutuamente excluyentes. Si no llama a [**RegisterTouchWindow,**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow)solo recibirá mensajes **WM \_ GESTURE.** |
 
@@ -316,13 +316,13 @@ Para usar la función <a href="/windows/desktop/api/winuser/nf-winuser-screentoc
 
 <table>
 <colgroup>
-<col  />
-<col  />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
 <tbody>
 <tr class="odd">
 <td>Problema</td>
-<td>No veo todos los gestos que esperaba ver. Por ejemplo, veo gestos con el identificador GID_PAN <strong>pero</strong> no <strong>GID_ROTATE</strong>.</td>
+<td>No veo todos los gestos que esperaba ver. Por ejemplo, veo gestos con el identificador GID_PAN <strong>pero</strong> <strong>no GID_ROTATE</strong>.</td>
 </tr>
 <tr class="even">
 <td>Causa</td>
@@ -330,10 +330,10 @@ Para usar la función <a href="/windows/desktop/api/winuser/nf-winuser-screentoc
 </tr>
 <tr class="odd">
 <td>Solución</td>
-<td>Debe llamar <a href="wm-gesturenotify.md"><strong>a</strong></a> <a href="/windows/desktop/api/winuser/nf-winuser-setgestureconfig"><strong>SetGestureConfig</strong></a> cuando reciba un mensaje WM_GESTURENOTIFY como se describe en la referencia de <strong>WM_GESTURENOTIFY,</strong> o bien debe agregar un controlador para el mensaje <strong>WM_GESTURENOTIFY.</strong> El código siguiente muestra cómo se podría implementar un controlador para habilitar la compatibilidad con la rotación. <span data-codelanguage="ManagedCPlusPlus"></span>
+<td>Debe llamar <a href="wm-gesturenotify.md"><strong>a</strong></a> <a href="/windows/desktop/api/winuser/nf-winuser-setgestureconfig"><strong>SetGestureConfig</strong></a> cuando reciba un mensaje WM_GESTURENOTIFY como se describe en la referencia de <strong>WM_GESTURENOTIFY</strong> o deberá agregar un controlador para el mensaje <strong>WM_GESTURENOTIFY.</strong> El código siguiente muestra cómo se podría implementar un controlador para habilitar la compatibilidad con la rotación. <span data-codelanguage="ManagedCPlusPlus"></span>
 <table>
 <colgroup>
-<col  />
+<col style="width: 100%" />
 </colgroup>
 <thead>
 <tr class="header">

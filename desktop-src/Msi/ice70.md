@@ -1,38 +1,38 @@
 ---
-description: ICE70 comprueba que los valores enteros de las entradas del registro se especifican correctamente.
+description: ICE70 comprueba que los valores enteros de las entradas del Registro se especifican correctamente.
 ms.assetid: f8493622-867b-42e1-9fda-a7c3229bbb4e
 title: ICE70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 616592a772dec6f95d81b92f03f0bffea6ce7bf1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecd76d38b796650346a8651fe5a3817edfaa412dfe7772f2dba9c0295f7eebdd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649275"
 ---
 # <a name="ice70"></a>ICE70
 
-ICE70 comprueba que los valores enteros de las entradas del registro se especifican correctamente. \# \# No se validan los valores del formato Str, \# % sin expandir. Se validan los valores de la forma \# xhex, \# xhex, \# Integer y \# \[ Property \] . En la tabla siguiente se proporciona una breve introducción.
+ICE70 comprueba que los valores enteros de las entradas del Registro se especifican correctamente. Los valores del formato \# \# str, \# %unexpanded str no se validan. Se validan los valores de la forma \# \# xhex, Xhex, \# entero \# \[ y \] propiedad. En la tabla siguiente se proporciona una breve introducción.
 
 
 
-| Value                 | Validación                                                                    |
+| Valor                 | Validación                                                                    |
 |-----------------------|-------------------------------------------------------------------------------|
-| \#\#CAD               | válido                                                                         |
-| \#% de Str no expandido     | válido                                                                         |
-| \#xHex, \# xHex         | Valide los caracteres hexadecimales válidos (0-9, a-f, A-F). Aquí se permiten las propiedades. |
-| \#+ int, \# -int, \# int | Valide los caracteres numéricos válidos (0-9). Aquí se permiten las propiedades.     |
+| \#\#Str               | Válido                                                                         |
+| \#%unexpanded str     | Válido                                                                         |
+| \#xHex, \# XHex         | Valide si hay caracteres hexadecimales válidos (0-9,a-f,A-F). Aquí se permiten propiedades. |
+| \#+int, \# -int, \# int | Valide si hay caracteres numéricos válidos (0-9). Aquí se permiten propiedades.     |
 
 
 
  
 
-La sintaxis de un valor entero que se va a escribir en el registro es un \# entero en el que el entero es numérico.
+La sintaxis de un valor entero que se va a especificar en el registro es \# un entero donde integer es numérico.
 
 ## <a name="result"></a>Resultado
 
-ICE70 informa de un error si los valores enteros de las entradas del registro no se especifican correctamente.
+ICE70 notifica un error si los valores enteros de las entradas del Registro no se especifican correctamente.
 
 ## <a name="example"></a>Ejemplo
 
@@ -42,15 +42,15 @@ ICE70 notifica los siguientes errores para el ejemplo dado.
 The value #12xz34 is an invalid numeric value for registry entry Reg1. If you meant to use a string, then the string value entry must be preceded by ## not #.
 ```
 
-Para corregir este error: Si desea que el valor sea numérico, cambie el valor para usar todos los caracteres numéricos. Si desea que el valor sea una cadena, debe ir precedido por dos ' \# ' ( \# \# ) en lugar de solo uno.
+Para corregir este error: si desea que el valor sea numérico, cambie el valor para que use todos los caracteres numéricos. Si desea que el valor sea una cadena, debe ir precedida de dos ' ' ( ) en \# \# \# lugar de solo una.
 
 ``` syntax
 The value #xz34 is an invalid hexadecimal value for registry entry Reg2.
 ```
 
-Para corregir este error: los caracteres hexadecimales válidos son 0-9, A-F y a-f. Solo estos caracteres pueden seguir a \# x (o \# x).
+Para corregir este error: los caracteres hexadecimales válidos son 0-9, A-F y a-f. Solo estos caracteres pueden seguir \# la x (o \# X).
 
-[Tabla del registro](registry-table.md) (parcial)
+[Tabla del Registro](registry-table.md) (parcial)
 
 
 
@@ -63,13 +63,13 @@ Para corregir este error: los caracteres hexadecimales válidos son 0-9, A-F y a
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
--   \#\[Property \] es válido.
--   \#\[propiedad no válida (falta el corchete de cierre).
--   \#\[myprop1 \] \[ myprop2 es válido. (Aunque en la última vez falta el corchete de cierre, myprop1 podría evaluarse como \# Str, por lo que tendría \# \# Str \[ myprop2, que es válido.
--   \#\]propiedad \[ no válida
--   Cualquier propiedad incrustada en una cadena de valor no puede estar en la \[ \] forma $compkey, \[ \# filekey \] o \[ ! filekey \] porque no son numéricas. Sin embargo, hay una excepción, el \# \[ $compkey de propiedad \] \[ \] (o \[ \# filekey \] o \[ ! filekey \] ) es válido porque, como con el anterior, la \[ propiedad se \] puede evaluar como \# Str.
+-   \#\[myproperty \] es válida.
+-   \#\[myproperty no es válida (falta el corchete final).
+-   \#\[myprop1 \] \[ myprop2 es válido. (Aunque al último le falta el corchete final, myprop1 podría evaluarse como str, por lo que tendría \# \# \# str \[ myprop2, que es válido
+-   \#\]myproperty \[ no es válida
+-   Cualquier propiedad incrustada en una cadena de valor no puede \[ tener $compkey \] , \[ \# filekey o \] \[ !filekey \] porque no son numéricos. Sin embargo, hay una excepción, \# \[ myproperty \] \[ $compkey \] \[ \# (o filekey o \] \[ !filekey ) es válida \] porque, \[ \] \# al igual que con el anterior, myproperty puede evaluarse como str.
 
 ## <a name="related-topics"></a>Temas relacionados
 

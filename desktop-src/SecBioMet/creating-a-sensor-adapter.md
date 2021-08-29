@@ -1,24 +1,24 @@
 ---
 title: Creación de un adaptador de sensor
-description: Estructura básica de un complemento de adaptador de sensor implementado como una biblioteca de vínculos dinámicos (DLL) de C++.
+description: Estructura básica de un complemento de adaptador de sensor implementado como biblioteca de vínculos dinámicos (DLL) de C++.
 ms.assetid: 4e78f0c2-177c-4e69-8bb6-c548a6f1ac46
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9316137bd42ada330fdbc845591ac2ecfd522342
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a6ab84a32f69bfcef418ae8b5fa70bd8b9d093d4b76691e8b074088da99917b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993825"
 ---
 # <a name="creating-a-sensor-adapter"></a>Creación de un adaptador de sensor
 
-En el ejemplo de código siguiente se muestra la estructura básica de un complemento de adaptador de sensor implementado como una biblioteca de vínculos dinámicos (DLL) de C++. Para ver las implementaciones de pseudocódigo de cada función pública en el archivo DLL, vaya a [funciones del adaptador de sensor](sensor-adapter-functions.md). Si decide no proporcionar funcionalidad para una función determinada, debe definir un código auxiliar para ella y devolver E \_ NOTIMPL.
+En el ejemplo de código siguiente se muestra la estructura básica de un complemento de adaptador de sensor implementado como una biblioteca de vínculos dinámicos (DLL) de C++. Para ver las implementaciones de pseudocódigo de cada función pública en el archivo DLL, vaya a [Funciones del adaptador de sensor](sensor-adapter-functions.md). Si decide no proporcionar funcionalidad para una función determinada, debe definir un código auxiliar para ella y devolver E \_ NOTIMPL.
 
 > [!Note]  
-> Los adaptadores de sensor se pueden crear para cámaras para la identificación de iris. En el caso de la huella digital, use la solución sensor de bandeja de entrada, disponible para los usuarios finales en configuración. Las personalizaciones no están disponibles para el adaptador de detector de huellas digitales.
+> Se pueden crear adaptadores de sensor para las cámaras para la identificación de iris. Para la huella digital, use la solución de sensor de bandeja de entrada, disponible para los usuarios finales en Configuración. Las personalizaciones no están disponibles para el adaptador del sensor de huella digital.
 
- 
+ 
 
 ``` syntax
 C++
@@ -613,9 +613,9 @@ SensorAdapterControlUnitPrivileged(
 [Crear complementos de adaptador](creating-adapter-plug-ins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

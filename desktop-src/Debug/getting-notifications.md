@@ -1,36 +1,36 @@
 ---
-description: En el código siguiente se muestra cómo obtener y notificar información de estado detallada del controlador de símbolos sobre la búsqueda y carga de módulos y los archivos de símbolos correspondientes.
+description: El código siguiente muestra cómo obtener e informar de información detallada del estado del controlador de símbolos sobre la búsqueda y carga de módulos y los archivos de símbolos correspondientes.
 ms.assetid: 1dd8af0e-280b-4fc4-bf75-45c5c7517365
 title: Obtener notificaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bebaed2683f329fa267bdc926063d0b763190400
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2220c555a47e6ed015fb2a9465684f76b5b2ee12086c774dfa75ff12c967291e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912625"
 ---
 # <a name="getting-notifications"></a>Obtener notificaciones
 
-En el código siguiente se muestra cómo obtener y notificar información de estado detallada del controlador de símbolos sobre la búsqueda y carga de módulos y los archivos de símbolos correspondientes.
+El código siguiente muestra cómo obtener e informar de información detallada del estado del controlador de símbolos sobre la búsqueda y carga de módulos y los archivos de símbolos correspondientes.
 
-Muchos familiarizados con el depurador de WinDbg pueden recordar un comando llamado "! SYM ruidoso". Este comando lo usa el usuario para determinar por qué WinDbg es o no puede cargar archivos de símbolos. Muestra una lista detallada de todo lo que el controlador de símbolos intenta.
+Muchos usuarios familiarizados con el depurador de WinDbg pueden recordar un comando llamado "!sym noisy". El usuario usa este comando para determinar por qué WinDbg es o no puede cargar archivos de símbolos. Muestra una lista detallada de todo lo que intenta el controlador de símbolos.
 
-Esta misma lista también está disponible para cualquier persona que desarrolle un cliente al controlador de símbolos de DbgHelp.
+Esta misma lista también está disponible para cualquier persona que desarrolle un cliente para el controlador de símbolos DbgHelp.
 
-En primer lugar, llame a [**SymSetOptions**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) con **SYMOPT \_ Debug**. Esto hace que DbgHelp Active las notificaciones de depuración.
+En primer lugar, [**llame a SymSetOptions**](/windows/desktop/api/Dbghelp/nf-dbghelp-symsetoptions) **con SYMOPT \_ DEBUG**. Esto hace que DbgHelp active las notificaciones de depuración.
 
-Después de llamar a [**SymInitialize**](/windows/desktop/api/Dbghelp/nf-dbghelp-syminitialize), use [**SymRegisterCallback64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symregistercallback) para registrar una función de devolución de llamada a la que se llamará DbgHelp cada vez que se produzca un evento interesante. En este ejemplo, la función de devolución de llamada se denomina [*SymRegisterCallbackProc64*](/windows/desktop/api/DbgHelp/nc-dbghelp-psymbol_registered_callback). A las funciones de devolución de llamada de símbolos se les pasa una variedad de códigos de acción que pueden controlar según el tipo. En este ejemplo, solo se controla el código de la acción de **\_ evento CBA** . Esta función pasa una cadena que contiene información detallada sobre un evento que se produjo en el proceso de carga de un símbolo. Este evento puede ser cualquier cosa desde un intento de leer los datos de una imagen ejecutable hasta la ubicación correcta de un archivo de símbolos. **SymRegisterCallbackProc64** muestra esa cadena y devuelve **true**.
+Después de llamar a [**SymInitialize,**](/windows/desktop/api/Dbghelp/nf-dbghelp-syminitialize)use [**SymRegisterCallback64**](/windows/desktop/api/Dbghelp/nf-dbghelp-symregistercallback) para registrar una función de devolución de llamada a la que DbgHelp llamará cada vez que se produzca un evento interesante. En este ejemplo, la función de devolución de llamada se denomina [*SymRegisterCallbackProc64*](/windows/desktop/api/DbgHelp/nc-dbghelp-psymbol_registered_callback). Las funciones de devolución de llamada de símbolos se pasan una variedad de códigos de acción que pueden controlar según el tipo. En este ejemplo, solo se administra el código **de acción EVENTO de CBA. \_** Esta función pasa una cadena que contiene información detallada sobre un evento que se produjo durante el proceso de carga de un símbolo. Este evento puede ser cualquier cosa, desde un intento de leer los datos de una imagen ejecutable hasta la ubicación correcta de un archivo de símbolos. **SymRegisterCallbackProc64 muestra** esa cadena y devuelve **TRUE**.
 
 > [!IMPORTANT]
-> Asegúrese de que devuelve **false** a cada código de acción que no controla; de lo contrario, puede experimentar un comportamiento indefinido. Consulte [*SymRegisterCallbackProc64*](/windows/desktop/api/DbgHelp/nc-dbghelp-psymbol_registered_callback) para obtener una lista de todos los códigos de acción y sus implicaciones.
+> Asegúrese de devolver **FALSE a** cada código de acción que no controle; de lo contrario, puede experimentar un comportamiento indefinido. Consulte [*SymRegisterCallbackProc64 para*](/windows/desktop/api/DbgHelp/nc-dbghelp-psymbol_registered_callback) obtener una lista de todos los códigos de acción y sus implicaciones.
 
  
 
-Ahora que la devolución de llamada está registrada, es el momento de cargar el módulo especificado en la línea de comandos mediante una llamada a [**SymLoadModuleEx**](/windows/desktop/api/Dbghelp/nf-dbghelp-symloadmoduleex).
+Ahora que la devolución de llamada está registrada, es el momento de cargar el módulo especificado en la línea de comandos mediante una llamada [**a SymLoadModuleEx**](/windows/desktop/api/Dbghelp/nf-dbghelp-symloadmoduleex).
 
-Por último, llame a [**SymCleanup**](/windows/desktop/api/Dbghelp/nf-dbghelp-symcleanup) antes de salir.
+Por último, llame a [**SymCleanup antes**](/windows/desktop/api/Dbghelp/nf-dbghelp-symcleanup) de salir.
 
 
 ```C++
@@ -165,9 +165,9 @@ cleanup:
 
 
 
-Si se especifica **null** como el segundo parámetro de [**SymInitialize**](/windows/desktop/api/Dbghelp/nf-dbghelp-syminitialize) , se indica que el controlador de símbolos debe usar la ruta de búsqueda predeterminada para buscar archivos de símbolos. Para obtener información detallada sobre cómo el controlador de símbolos busca archivos de símbolos o cómo una aplicación puede especificar una ruta de búsqueda de símbolos, vea rutas de acceso de [símbolos](symbol-paths.md).
+Especificar **NULL como** segundo parámetro de [**SymInitialize**](/windows/desktop/api/Dbghelp/nf-dbghelp-syminitialize) indica que el controlador de símbolos debe usar la ruta de acceso de búsqueda predeterminada para buscar archivos de símbolos. Para obtener información detallada sobre cómo el controlador de símbolos busca archivos de símbolos o cómo una aplicación puede especificar una ruta de búsqueda de símbolos, vea [Rutas de acceso de símbolos](symbol-paths.md).
 
-La ejecución de este programa muestra cómo se procesa la ruta de acceso de símbolos. Como DbgHelp busca el archivo de símbolos a través de la ruta de acceso de símbolos, llama repetidamente a [*SymRegisterCallbackProc64*](/windows/desktop/api/DbgHelp/nc-dbghelp-psymbol_registered_callback) que, a su vez, muestra las siguientes cadenas que se pasan por DbgHelp.
+Al ejecutar este programa se muestra cómo se procesa la ruta de acceso del símbolo. A medida que DbgHelp examina la ruta de acceso de símbolos para encontrar el archivo de símbolos, llama repetidamente a [*SymRegisterCallbackProc64*](/windows/desktop/api/DbgHelp/nc-dbghelp-psymbol_registered_callback) que, a su vez, muestra las cadenas siguientes que dbgHelp pasa.
 
 ``` syntax
 d:\load.exe c:\home\dbghelp.dll

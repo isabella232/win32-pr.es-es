@@ -1,9 +1,9 @@
 ---
-title: Función D2DSampleInputAtPosition (D2d1effecthelpers. h)
-description: Muestra la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para las entradas complejas.
+title: Función D2DSampleInputAtPosition (D2d1effecthelpers.h)
+description: Muestra la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para entradas complejas.
 ms.assetid: E839287F-91D1-4591-8DE7-1DFC3001A23D
 keywords:
-- Función D2DSampleInputAtPosition Direct2D
+- Función Direct2DSampleInputAtPosition de D2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e12bba2b83f3956cf4b654c00b0650a6a0ce9a54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c19a455444459e78e2a98fde6386e733c9aa7f1848ed3bb7d2cd6bc22c3062cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119698205"
 ---
-# <a name="d2dsampleinputatposition-function"></a>D2DSampleInputAtPosition función)
+# <a name="d2dsampleinputatposition-function"></a>Función D2DSampleInputAtPosition
 
-Muestra la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para las entradas complejas.
+Muestra la entrada N en una posición de escena absoluta, en lugar de una posición relativa de entrada. Solo está disponible para entradas complejas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,27 +38,27 @@ float4 WINAPI D2DSampleInputAtPosition(
 
 <dl> <dt>
 
-*N* \[ in\]
+*N* \[ en\]
 </dt> <dd>
 
 Número de entrada.
 
 </dd> <dt>
 
-*UV* \[ de\]
+*uv* \[ En\]
 </dt> <dd>
 
-Posición UV.
+Posición uv.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve una **FLOAT4**, en el formato TEXCOORDN.
+La función devuelve **float4**, con el formato TEXCOORDN.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el ejemplo siguiente se muestra la función utilizada en un ceñido circular.
+En el ejemplo siguiente se muestra la función utilizada en un ajuste circular.
 
 ``` syntax
   
@@ -91,7 +91,7 @@ D2D_PS_ENTRY(CircularWrapPS)
 [Vinculación del sombreador de efectos](effect-shader-linking.md)
 </dt> <dt>
 
-[Aplicaciones auxiliares de HLSL](hlsl-helpers.md)
+[Asistentes hlsl](hlsl-helpers.md)
 </dt> </dl>
 
  

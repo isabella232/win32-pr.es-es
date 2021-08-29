@@ -1,17 +1,17 @@
 ---
-title: Clave de file_extension
+title: file_extension clave
 description: Asocia una extensión de nombre de archivo a un ProgID.
 ms.assetid: 018998a8-c0da-43ea-bae2-3b184897eb9b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e602266f3c851975c2f8e008ced5dfc8e2d40b64
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d7624b63d257e0d0edf168956c862c911ba728da955e8eea3ca54f6ce452878
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071235"
 ---
-# <a name="file_extension-key"></a>Clave de> de extensión de archivo <\_
+# <a name="file_extension-key"></a><extensión \_ de archivo> clave
 
 Asocia una extensión de nombre de archivo a un ProgID.
 
@@ -19,14 +19,14 @@ Asocia una extensión de nombre de archivo a un ProgID.
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes
-   .ext = ProgID
+   .ext = ProgID
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La información contenida en la clave de extensión de nombre de archivo la usan el explorador de Windows y los monikers de archivo. [**GetClassFile**](/windows/desktop/api/Objbase/nf-objbase-getclassfile) usa la clave de extensión de nombre de archivo para proporcionar el CLSID asociado.
+La información contenida en la clave de extensión de nombre de archivo se usa tanto en el Explorador de Windows como en los monikers de archivos. [**GetClassFile**](/windows/desktop/api/Objbase/nf-objbase-getclassfile) usa la clave de extensión de nombre de archivo para proporcionar el CLSID asociado.
 
-La clave **HKEY \_ local \_ Machine \\ software \\ classes** corresponde a la clave **\_ \_ raíz de las clases HKEY** , que se conserva por compatibilidad con versiones anteriores de com.
+La **clave HKEY \_ LOCAL MACHINE \_ SOFTWARE \\ \\ Classes** corresponde a la clave RAÍZ **HKEY \_ CLASSES, \_** que se conservaba por compatibilidad con versiones anteriores de COM.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -38,9 +38,9 @@ La clave **HKEY \_ local \_ Machine \\ software \\ classes** corresponde a la cl
 [**GetClassFile**](/windows/desktop/api/Objbase/nf-objbase-getclassfile)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

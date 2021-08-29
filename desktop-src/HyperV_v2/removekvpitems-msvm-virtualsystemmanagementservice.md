@@ -1,7 +1,7 @@
 ---
-description: Quita los pares de clave y valor existentes de una máquina virtual.
+description: Quita los pares clave-valor existentes de una máquina virtual.
 ms.assetid: B2ECF609-89BB-4117-982B-EF56D51E1321
-title: Método RemoveKvpItems de la clase Msvm_VirtualSystemManagementService
+title: Método RemoveKvpItems de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4921805ade9538a4e05a15331f707b9356411aa7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2c6a3aa74937941bf9e30567c3a18a094ab5cf0a4013f62687680dece81c3aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014423"
 ---
-# <a name="removekvpitems-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveKvpItems de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="removekvpitems-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveKvpItems de la clase Msvm \_ VirtualSystemManagementService
 
-Quita los pares de clave y valor existentes de una máquina virtual.
+Quita los pares clave-valor existentes de una máquina virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ uint32 RemoveKvpItems(
 
 <dl> <dt>
 
-*TargetSystem* \[ de\]
+*TargetSystem* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ComputerSystem**](/windows/desktop/CIMWin32Prov/cim-computersystem)**
@@ -50,27 +50,27 @@ Referencia a la máquina virtual en la que se quitarán los pares clave-valor.
 
 </dd> <dt>
 
-*Elementos de elemento* \[ de\]
+*DataItems* \[ En\]
 </dt> <dd>
 
-Tipo: **String \[ \]**
+Tipo: **\[ \] cadena**
 
-Matriz de pares de clave y valor que se van a quitar (solo deben coincidir las claves). Cada elemento de la matriz es una instancia incrustada de la clase [**MSVM \_ KvpExchangeDataItem**](msvm-kvpexchangedataitem.md) . Este método produce un error si alguno de los pares clave-valor especificados no existe en el sistema de destino. Esta matriz puede contener como máximo 128 elementos.
+Matriz de pares clave-valor que se va a quitar (solo las claves deben coincidir). Cada elemento de la matriz es una instancia incrustada de la clase [**Msvm \_ KvpExchangeDataItem.**](msvm-kvpexchangedataitem.md) Este método produce un error si alguno de los pares clave-valor especificados no existe en el sistema de destino. Esta matriz puede contener como máximo 128 elementos.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Este método devuelve uno de los valores siguientes.
 
@@ -91,16 +91,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -109,22 +109,22 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a la [**clase \_ VirtualSystemManagementService de Msvm**](msvm-virtualsystemmanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se quitan los pares clave-valor de una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el siguiente ejemplo de C# se quitan los pares clave-valor de una máquina virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 > [!IMPORTANT]
-> Para que funcione correctamente, se debe ejecutar el código siguiente en el servidor host de máquina virtual y se debe ejecutar con privilegios de administrador.
+> Para funcionar correctamente, el código siguiente debe ejecutarse en el servidor host de la máquina virtual y debe ejecutarse con privilegios de administrador.
 
  
 
@@ -184,10 +184,10 @@ public static void RemoveKvpItems(string vmName, string itemName)
 
 
 
-En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se quitan los pares clave-valor de una máquina virtual.
+En el ejemplo Visual Basic Scripting Edition (VBScript) se quitan los pares clave-valor de una máquina virtual.
 
 > [!IMPORTANT]
-> Para que funcione correctamente, se debe ejecutar el código siguiente en el servidor host de máquina virtual y se debe ejecutar con privilegios de administrador.
+> Para funcionar correctamente, el código siguiente debe ejecutarse en el servidor host de la máquina virtual y debe ejecutarse con privilegios de administrador.
 
  
 
@@ -349,10 +349,10 @@ End Function
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -361,7 +361,7 @@ End Function
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

@@ -1,17 +1,17 @@
 ---
-title: Notificaciones de la vista de lista
-description: Notificaciones de la vista de lista
+title: Enumerar notificaciones de vista
+description: Enumerar notificaciones de vista
 ms.assetid: 6c5239ac-0599-4db8-9f44-c10fa0855b57
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa864a75c09cceda523d753fb6ad195bab024e6e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 328db2ded5d58d994692733c65269847c7ba69456aebd158073dc81f47fb7ce6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971425"
 ---
-# <a name="list-view-notifications"></a>Notificaciones de la vista de lista
+# <a name="list-view-notifications"></a>Enumerar notificaciones de vista
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -35,22 +35,22 @@ ms.locfileid: "104003595"
 -   [LVN \_ ITEMACTIVATE](lvn-itemactivate.md)
 -   [LVN \_ ITEMCHANGED](lvn-itemchanged.md)
 -   [LVN \_ ITEMCHANGING](lvn-itemchanging.md)
--   [LVN ( \_ KEYDOWN)](lvn-keydown.md)
+-   [LVN \_ KEYDOWN](lvn-keydown.md)
 -   [LVN \_ LINKCLICK](lvn-linkclick.md)
 -   [LVN \_ MARQUEEBEGIN](lvn-marqueebegin.md)
 -   [LVN \_ ODCACHEHINT](lvn-odcachehint.md)
 -   [LVN \_ ODFINDITEM](lvn-odfinditem.md)
 -   [LVN \_ ODSTATECHANGED](lvn-odstatechanged.md)
 -   [LVN \_ SETDISPINFO](lvn-setdispinfo.md)
--   [NM \_ haga clic (vista de lista)](nm-click-list-view.md)
+-   [NM \_ CLICK (vista de lista)](nm-click-list-view.md)
 -   [NM \_ CUSTOMDRAW (vista de lista)](nm-customdraw-list-view.md)
 -   [NM \_ DBLCLK (vista de lista)](nm-dblclk-list-view.md)
--   [Desplazamiento de NM \_ (vista de lista)](nm-hover-list-view.md)
+-   [NM \_ HOVER (vista de lista)](nm-hover-list-view.md)
 -   [NM \_ KILLFOCUS (vista de lista)](nm-killfocus-list-view.md)
 -   [NM \_ RCLICK (vista de lista)](nm-rclick-list-view.md)
 -   [NM \_ RDBLCLK (vista de lista)](nm-rdblclk-list-view.md)
 -   [NM \_ RELEASEDCAPTURE (vista de lista)](nm-releasedcapture-list-view-.md)
--   [Retorno de NM \_ (vista de lista)](nm-return-list-view-.md)
+-   [NM \_ RETURN (vista de lista)](nm-return-list-view-.md)
 -   [NM \_ SETFOCUS (vista de lista)](nm-setfocus-list-view-.md)
 
  

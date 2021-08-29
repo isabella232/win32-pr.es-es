@@ -7,12 +7,12 @@ MSHAttr:
 title: IsLongStandingAdditionalPdpContextProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0df0160cd83b09e618ad3da18b902bbc34afe2
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 599cb29ca4d95eb5e3708e991a18a6c25064045e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883545"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478191"
 ---
 # <a name="span-idwwan_profile_v4element_islongstandingadditionalpdpcontextprofilespanislongstandingadditionalpdpcontextprofile"></a><span id="WWAN_profile_v4.element_IsLongStandingAdditionalPdpContextProfile"></span>IsLongStandingAdditionalPdpContextProfile
 
@@ -20,8 +20,8 @@ Especifica que este perfil es un perfil de contexto de PDP adicional de larga du
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
-**&lt;IsLongStandingAdditionalPdpContextProfile&gt;**
+[<MBNProfileExt>](element-mbnprofileext.md)  
+**<IsLongStandingAdditionalPdpContextProfile>**
 
 ## <a name="syntax"></a>Syntax
 

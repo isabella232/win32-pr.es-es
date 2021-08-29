@@ -1,7 +1,7 @@
 ---
 description: Este método devuelve una interfaz que proporciona acceso a los datos de audio.
 ms.assetid: 4FA7CC9D-D379-4C08-8D4F-5301ECCDF372
-title: 'IAudioFrameNative:: GetData (método)'
+title: IAudioFrameNative::GetData (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - windows.media.core.interop.h
-ms.openlocfilehash: eb61bce5132c2029b6f53fdd1159ca50984ba936
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d845cef0a4a9f6ee9d19b35705b20bd7e6bf2862a84ce4118acb92a5c66f37d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642125"
 ---
-# <a name="iaudioframenativegetdata-method"></a>IAudioFrameNative:: GetData (método)
+# <a name="iaudioframenativegetdata-method"></a>IAudioFrameNative::GetData (método)
 
 Este método devuelve una interfaz que proporciona acceso a los datos de audio.
 
@@ -40,21 +40,21 @@ HRESULT GetData(
 
 <dl> <dt>
 
-*riid* \[ de\]
+*riid* \[ En\]
 </dt> <dd>
 
 Tipo: **REFIID**
 
-IID de la interfaz que se va a recuperar.
+El IID de la interfaz que se recuperará.
 
 </dd> <dt>
 
-*PPV* \[ enuncia\]
+*ppv* \[ out\]
 </dt> <dd>
 
-Tipo: **LPVOID \** _
+Tipo: **LPVOID \***
 
-Cuando este método se devuelve correctamente, contiene el puntero de interfaz solicitado en _riid parámetro *.
+Cuando este método se devuelve correctamente, contiene el puntero de interfaz solicitado en *el parámetro riid.*
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Cuando este método se devuelve correctamente, contiene el puntero de interfaz s
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve S \_ correcto al finalizar correctamente. Devuelve E \_ nointerface si no se encuentra la interfaz solicitada.
+Devuelve S \_ OK cuando se completa correctamente. Devuelve E \_ NOINTERFACE si no se encuentra la interfaz solicitada.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,17 +1,17 @@
 ---
 description: Indica si una comunicación era entrante o saliente.
 ms.assetid: b41f185b-f8b3-433b-9aed-8e71d59e4602
-title: System. Communication. Direction
+title: System.Communication.Direction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86ed91eb7d6b771dcddd99aeff7aa249e9bc4bfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee35e5f9dcf32e55e14196344ef0452288d520984e70c77e6a0d55f19911d4f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554235"
 ---
-# <a name="systemcommunicationdirection"></a>System. Communication. Direction
+# <a name="systemcommunicationdirection"></a>System.Communication.Direction
 
 Indica si una comunicación era entrante o saliente
 
@@ -47,9 +47,9 @@ propertyDescription
             defineToken = COMMUNICATION_DIRECTION_OUTGOING
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -64,7 +64,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -76,7 +76,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -94,7 +94,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

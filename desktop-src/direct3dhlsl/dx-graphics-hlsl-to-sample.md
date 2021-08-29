@@ -9,25 +9,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2374063d222d06576f720fed2aa7fb714bcccf04
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 473a68c44f7e98f1a2d1e1e90711585804482e0d
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111825752"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624111"
 ---
 # <a name="sample-directx-hlsl-texture-object"></a>Ejemplo (objeto de textura HLSL de DirectX)
 
 Muestrea una textura.
 
-&lt;Template Type &gt; Object.Sample( sampler \_ state S, float Location \[ , int Offset \] );
+&lt;Tipo de &gt; plantilla Object.Sample( sampler \_ state S, float Location , int Offset \[ \] );
 
 ## <a name="parameters"></a>Parámetros
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -50,7 +50,7 @@ Muestrea una textura.
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object type</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -83,7 +83,7 @@ Muestrea una textura.
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object type</th>
+<th>Texture-Object tipo</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -114,7 +114,7 @@ Muestrea una textura.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en EL [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en el [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -125,7 +125,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 |          |           | x        | x         |          |           |
 
 1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
-2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
 
 ## <a name="example"></a>Ejemplo
 
@@ -160,19 +160,19 @@ VS_OUTPUT In;
 
 El muestreo de textura usa la posición del texel para buscar un valor de texel. Se puede aplicar un desplazamiento a la posición antes de la búsqueda. El estado del muestreador contiene las opciones de muestreo y filtrado. Este método se puede invocar dentro de un sombreador de píxeles, pero no se admite en un sombreador de vértices o un sombreador de geometría.
 
-Use un desplazamiento solo en un miplevel entero; De lo contrario, puede obtener resultados diferentes en función de la implementación de hardware o la configuración del controlador.
+Use un desplazamiento solo en un valor miplevel entero; De lo contrario, puede obtener resultados diferentes en función de la implementación de hardware o la configuración del controlador.
 
-### <a name="calculating-texel-positions"></a>Cálculo de posiciones de textura
+### <a name="calculating-texel-positions"></a>Cálculo de posiciones de texel
 
 Las coordenadas de textura son valores de punto flotante que hacen referencia a los datos de textura, lo que también se conoce como espacio de textura normalizado. Los modos de ajuste de direcciones se aplican en este orden (coordenadas de textura + desplazamientos + modo de ajuste) para modificar las coordenadas de textura fuera del \[ intervalo 0...1. \]
 
-Para las matrices de textura, un valor adicional en el parámetro location especifica un índice en una matriz de texturas. Este índice se trata como un valor float escalado (en lugar del espacio normalizado para coordenadas de textura estándar). La conversión a un índice entero se realiza en el orden siguiente (float + round-to-nearest-even integer + clamp to the array range).
+En el caso de las matrices de texturas, un valor adicional en el parámetro location especifica un índice en una matriz de textura. Este índice se trata como un valor float escalado (en lugar del espacio normalizado para las coordenadas de textura estándar). La conversión a un índice entero se realiza en el orden siguiente (float + entero round-to-nearest-even + fijación al intervalo de matriz).
 
 ### <a name="applying-texture-coordinate-offsets"></a>Aplicar desplazamientos de coordenadas de textura
 
 El parámetro offset modifica las coordenadas de textura, en el espacio de textura. Aunque las coordenadas de textura son números de punto flotante normalizados, el desplazamiento aplica un desplazamiento entero. Tenga en cuenta también que los desplazamientos de textura deben ser estáticos.
 
-El formato de datos devuelto viene determinado por el formato de textura. Por ejemplo, si el recurso de textura se definió con el formato DXGI FORMAT A8B8G8R8 UNORM SRGB, la operación de muestreo convierte los elementos de textura muestreados de \_ \_ gamma \_ 2.0 a 1.0, filtra y escribe el resultado como un valor de punto flotante en el \_ \[ intervalo 0..1. \]
+El formato de datos devuelto viene determinado por el formato de textura. Por ejemplo, si el recurso de textura se definió con el formato DXGI FORMAT A8B8G8R8 UNORM SRGB, la operación de muestreo convierte los texeles muestreados de \_ \_ gamma \_ \_ 2.0 a 1.0, filtra y escribe el resultado como un valor de punto flotante en el \[ intervalo 0..1 \] .
 
 ## <a name="related-topics"></a>Temas relacionados
 
