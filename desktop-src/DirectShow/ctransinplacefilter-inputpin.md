@@ -1,7 +1,7 @@
 ---
 description: El método InputPin recupera un puntero al pin de entrada del filtro.
 ms.assetid: 533a962e-225d-4f10-a9c3-1464bea512ba
-title: Método CTransInPlaceFilter. InputPin (TRANSip. h)
+title: Método CTransInPlaceFilter.InputPin (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b92775eca87a88659326aa5b34eb0c15109ed8a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e70e91780ba1c0d1e1a3d204a6d99826e80a2fe23cbac4125d0b6300e4fdf005
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120083895"
 ---
-# <a name="ctransinplacefilterinputpin-method"></a>CTransInPlaceFilter. InputPin, método
+# <a name="ctransinplacefilterinputpin-method"></a>Método CTransInPlaceFilter.InputPin
 
-El `InputPin` método recupera un puntero al pin de entrada del filtro.
+El `InputPin` método recupera un puntero a la patilla de entrada del filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la variable miembro [**CTransformFilter:: m \_ pInput**](ctransformfilter-m-pinput.md) .
+Devuelve la variable [**miembro CTransformFilter::m \_ pInput.**](ctransformfilter-m-pinput.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve la variable miembro [**CTransformFilter:: m \_ pInput**](ctransformfilt
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>TRANSip. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve la variable miembro [**CTransformFilter:: m \_ pInput**](ctransformfilt
 
 <dl> <dt>
 
-[**Clase CTransInPlaceFilter**](ctransinplacefilter.md)
+[**CTransInPlaceFilter (clase)**](ctransinplacefilter.md)
 </dt> </dl>
 
  

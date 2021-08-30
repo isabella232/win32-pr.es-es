@@ -1,9 +1,9 @@
 ---
-title: Estructura de MCI_OVLY_LOAD_PARMS (mmsystem. h)
-description: La \_ estructura MCI OVLY \_ Load \_ parms contiene información del comando de carga de MCI \_ para dispositivos de superposición de vídeo.
+title: MCI_OVLY_LOAD_PARMS estructura (Mmsystem.h)
+description: La estructura MCI OVLY LOAD PARMS contiene información para el comando MCI LOAD para dispositivos \_ \_ de \_ \_ superposición de vídeo.
 ms.assetid: 701c27da-72bf-493d-a679-9e0bd210215d
 keywords:
-- Estructura de MCI_OVLY_LOAD_PARMS de Windows multimedia
+- MCI_OVLY_LOAD_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2029e92f7991f1ae5d8d0bdbabc76eef456a36ec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc966b51224246dbceda46927f605c214ba4809a1cca451813a1075811fa5225
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039105"
 ---
-# <a name="mci_ovly_load_parms-structure"></a>La \_ estructura de parms de MCI OVLY \_ Load \_
+# <a name="mci_ovly_load_parms-structure"></a>Estructura \_ MCI OVLY \_ LOAD \_ PARMS
 
-La estructura **MCI \_ OVLY \_ Load \_ parms** contiene información del comando de [**\_ carga de MCI**](mci-load.md) para dispositivos de superposición de vídeo.
+La **estructura MCI \_ OVLY \_ LOAD \_ PARMS** contiene información para el [**comando MCI \_ LOAD**](mci-load.md) para dispositivos de superposición de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,25 +45,25 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
 **lpfilename**
 </dt> <dd>
 
-Nombre del archivo que se va a cargar.
+Nombre del archivo que se cargará.
 
 </dd> <dt>
 
-**CR**
+**Rc**
 </dt> <dd>
 
-Identifica el área del búfer de vídeo que se va a actualizar. Las estructuras [Rect](/previous-versions//ms536136(v=vs.85)) se administran de forma diferente en MCI que en otras partes de Windows. en MCI, **RC. Right** contiene el ancho del rectángulo y **RC. Bottom** contiene el alto.
+Identifica el área del búfer de vídeo que se actualizará. [Las estructuras RECT](/previous-versions//ms536136(v=vs.85)) se controlan de forma diferente en MCI que en otras partes de Windows; en MCI, **rc.right** contiene el ancho del rectángulo y **rc.bottom** contiene su alto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -75,7 +75,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h</dt> </dl> |
 
 
 
@@ -83,19 +83,19 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**carga de MCI \_**](mci-load.md)
+[**MCI \_ LOAD**](mci-load.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))
 </dt> <dt>
 
-[RECT](/previous-versions//ms536136(v=vs.85))
+[Rect](/previous-versions//ms536136(v=vs.85))
 </dt> </dl>
 
  

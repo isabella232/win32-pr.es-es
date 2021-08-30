@@ -1,7 +1,7 @@
 ---
 description: La función GetMacAddressFromBlob recupera la dirección MAC con nombre de un BLOB.
 ms.assetid: 1769c92c-0946-447c-885a-fcf175fa1bf3
-title: Función GetMacAddressFromBlob (Netmon. h)
+title: Función GetMacAddressFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 022d4f618c09652c368f6664b194b4ebafc81717
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4d1d7ff2207c19c079ea2405a9cd04744ea6e770f53a7b9e3a68e99dd779caa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910715"
 ---
-# <a name="getmacaddressfromblob-function"></a>GetMacAddressFromBlob función)
+# <a name="getmacaddressfromblob-function"></a>Función GetMacAddressFromBlob
 
-La función **GetMacAddressFromBlob** recupera la dirección Mac con nombre de un BLOB.
+La **función GetMacAddressFromBlob** recupera la dirección MAC con nombre de un BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ DWORD GetMacAddressFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador de un BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ de\]
+*pOwnerName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre del propietario del BLOB.
+Puntero al nombre del propietario de BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ de\]
+*pCategoryName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la categoría de BLOB.
+Puntero al nombre de la categoría BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ de\]
+*pTagName* \[ En\]
 </dt> <dd>
 
-Puntero al nombre de la etiqueta de BLOB.
+Puntero al nombre de la etiqueta BLOB.
 
 </dd> <dt>
 
-*pMacAddress* \[ enuncia\]
+*pMacAddress* \[ out\]
 </dt> <dd>
 
 Puntero a la dirección MAC del BLOB.
@@ -80,9 +80,9 @@ Puntero a la dirección MAC del BLOB.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que describe el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Si la función no es correcta, el valor devuelto es un valor de NMERR que descri
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

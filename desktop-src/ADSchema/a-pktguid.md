@@ -1,11 +1,11 @@
 ---
-title: PKT-Guid atributo)
-description: IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de archivos distribuido determinada.
+title: PKT-Guid atributo
+description: Identificador único de una tabla de conocimientos Sistema de archivos distribuido partición determinada.
 ms.assetid: 13ac3198-1ea1-4d07-8d7d-b8ed54665eaa
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de PKT-Guid
-- pKTGuid esquema de AD de atributos
+- PKT-Guid esquema de AD de atributo
+- Esquema de AD del atributo pKTGuid
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d44b63983b5eb69ec00cd1c5c65cbd15f46c4eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ebc01e003f76b52627ed89c482dda1bd43785c591db7d0d1924d87e4d033b16f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119923845"
 ---
-# <a name="pkt-guid-attribute"></a>PKT-Guid atributo)
+# <a name="pkt-guid-attribute"></a>PKT-Guid atributo
 
-IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de archivos distribuido determinada.
+Identificador único de una tabla de conocimientos Sistema de archivos distribuido partición determinada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | PKT-Guid                                              |
-| Nombre para mostrar de LDAP | pKTGuid                                               |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | pKTGuid                                               |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.205                                |
-| System-ID-GUID    | 8447f9f0-1027-11d0-a05f-00aa006c33ed                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 8447f9f0-1027-11d0-a05f-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,20 +53,20 @@ IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de ar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | 16                                   |
 | Range-Upper            | 16                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de ar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | 16                                   |
 | Range-Upper            | 16                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de ar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | 16                                   |
 | Range-Upper            | 16                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de ar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | 16                                   |
 | Range-Upper            | 16                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de ar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | 16                                   |
 | Range-Upper            | 16                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ IDENTIFICADOR único de una tabla de conocimiento de la partición Sistema de ar
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | 16                                   |
 | Range-Upper            | 16                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 

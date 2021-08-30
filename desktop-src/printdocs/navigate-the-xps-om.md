@@ -1,46 +1,46 @@
 ---
-description: En este tema se describe cómo navegar por un OM XPS y obtener acceso a diferentes partes del documento en memoria.
+description: En este tema se describe cómo navegar por un XPS OM y acceder a diferentes partes del documento en memoria.
 ms.assetid: 90b726aa-29da-4cfb-9c69-f471c2acb678
-title: Navegar por el OM de XPS
+title: Navegar por xps om
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0ec33543867f66dd4da65ef95aab0cdfd8cfe0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39c1ca083ead7cf6294fb4243dd477e2bcb9bdd2f2924a4039b6c22dbe825b27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948365"
 ---
-# <a name="navigate-the-xps-om"></a>Navegar por el OM de XPS
+# <a name="navigate-the-xps-om"></a>Navegar por xps om
 
-En este tema se describe cómo navegar por un OM XPS y obtener acceso a diferentes partes del documento en memoria.
+En este tema se describe cómo navegar por un XPS OM y acceder a diferentes partes del documento en memoria.
 
 La organización de la API de documentos XPS refleja la organización de un documento XPS. En la tabla siguiente se muestra cómo se relacionan las interfaces de la API de documentos XPS con los componentes de un documento XPS.
 
 
 
-| Componente de documento XPS                                         | Interfaz de la API de documentos XPS                                          | Método que se va a llamar para el siguiente nivel hacia abajo en la jerarquía                                                                                       |
+| Componente de documento XPS                                         | Interfaz de LA API de documentos XPS                                          | Método para llamar al siguiente nivel en la jerarquía                                                                                       |
 |----------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Archivo de documento XPS (contiene el paquete OPC)<br/>            | [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage)<br/>                   | [**GetDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackage-getdocumentsequence)<br/>                                                                   |
-| Elemento FixedDocumentSequence<br/>                          | [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/> | [**GetDocuments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocumentsequence-getdocuments)<br/>                                                                        |
+| Parte FixedDocumentSequence<br/>                          | [**IXpsOMDocumentSequence**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocumentsequence)<br/> | [**GetDocuments**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocumentsequence-getdocuments)<br/>                                                                        |
 | Elemento FixedDocument<br/>                                  | [**IXpsOMDocument**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomdocument)<br/>                 | [**GetPageReferences**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomdocument-getpagereferences)<br/>                                                                      |
-| Elemento **PageContent** en el marcado FixedDocument<br/> | [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference)<br/>       | [**GetPage**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-getpage)<br/> [**CollectPartResources**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectpartresources)<br/> |
+| **Elemento PageContent** en el marcado FixedDocument<br/> | [**IXpsOMPageReference**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompagereference)<br/>       | [**GetPage**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-getpage)<br/> [**CollectPartResources**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompagereference-collectpartresources)<br/> |
 | Elemento FixedPage<br/>                                      | [**IXpsOMPage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage)<br/>                         | [**GetVisuals**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompage-getvisuals)<br/>                                                                                        |
-| Elemento **Canvas** en el marcado FixedPage<br/>          | [**IXpsOMCanvas**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcanvas)<br/>                     | [**GetVisuals**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcanvas-getvisuals)<br/>                                                                                      |
-| Elemento **path** en el marcado FixedPage<br/>            | [**IXpsOMPath**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompath)<br/>                         | Fin de la jerarquía de documentos.<br/>                                                                                                         |
-| Elemento **Glyphs** en el marcado FixedPage<br/>          | [**IXpsOMGlyphs**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs)<br/>                     | Fin de la jerarquía de documentos.<br/>                                                                                                         |
-| Parte de fuente<br/>                                           | [**IXpsOMFontResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomfontresource)<br/>         | Fin de la jerarquía de documentos.<br/>                                                                                                         |
-| Elemento de imagen<br/>                                          | [**IXpsOMImageResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimageresource)<br/>       | Fin de la jerarquía de documentos.<br/>                                                                                                         |
+| **Elemento Canvas** en el marcado FixedPage<br/>          | [**IXpsOMCanvas**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomcanvas)<br/>                     | [**GetVisuals**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomcanvas-getvisuals)<br/>                                                                                      |
+| **Elemento Path** en el marcado FixedPage<br/>            | [**IXpsOMPath**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompath)<br/>                         | Final de la jerarquía de documentos.<br/>                                                                                                         |
+| **Elemento Glyphs** del marcado FixedPage<br/>          | [**IXpsOMGlyphs**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs)<br/>                     | Final de la jerarquía de documentos.<br/>                                                                                                         |
+| Elemento de fuente<br/>                                           | [**IXpsOMFontResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomfontresource)<br/>         | Final de la jerarquía de documentos.<br/>                                                                                                         |
+| Parte de la imagen<br/>                                          | [**IXpsOMImageResource**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimageresource)<br/>       | Final de la jerarquía de documentos.<br/>                                                                                                         |
 
 
 
  
 
-Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [las tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
+Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [Tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
 
 ## <a name="code-example"></a>Ejemplo de código
 
-En el siguiente ejemplo de código se presupone la existencia de un OM XPS inicializado y el *paquete* apunta a una interfaz [**IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) que representa ese OM XPS. Para obtener información acerca de cómo crear un OM XPS, consulte [leer un documento XPS en un OM XPS](read-an-xps-document-into-an-xps-om.md) o [crear un OM XPS en blanco](create-a-blank-xps-om.md).
+En el ejemplo de código siguiente se da por  supuesto la existencia de un OM de XPS inicializado y el paquete apunta a una [**interfaz IXpsOMPackage**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompackage) que representa ese XPS OM. Para obtener información sobre cómo crear una OM XPS, vea Leer un documento XPS en una OM [XPS](read-an-xps-document-into-an-xps-om.md) o Crear una OM [XPS en blanco.](create-a-blank-xps-om.md)
 
 
 ```C++
@@ -190,7 +190,7 @@ En el siguiente ejemplo de código se presupone la existencia de un OM XPS inici
 [Dibujar gráficos en un OM XPS](draw-graphics-in-an-xps-om.md)
 </dt> <dt>
 
-[Colocar imágenes en un OM XPS](place-images-in-an-xps-om.md)
+[Colocar imágenes en una om xps](place-images-in-an-xps-om.md)
 </dt> <dt>
 
 **Se usa en esta página**
@@ -238,19 +238,19 @@ En el siguiente ejemplo de código se presupone la existencia de un OM XPS inici
 **Para obtener más información**
 </dt> <dt>
 
-[Inicializar un OM XPS](xps-object-model-initialization.md)
+[Inicialización de una instancia de XPS OM](xps-object-model-initialization.md)
 </dt> <dt>
 
-[Leer un documento XPS en un OM XPS](read-an-xps-document-into-an-xps-om.md)
+[Lectura de un documento XPS en una om xps](read-an-xps-document-into-an-xps-om.md)
 </dt> <dt>
 
-[Crear un OM XPS en blanco](create-a-blank-xps-om.md)
+[Crear un OM xps en blanco](create-a-blank-xps-om.md)
 </dt> <dt>
 
 [API de empaquetado](/previous-versions/windows/desktop/opc/packaging)
 </dt> <dt>
 
-[Referencia de la API de documentos XPS](xps-programming-reference.md)
+[Referencia de LA API del documento XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

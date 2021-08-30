@@ -1,31 +1,31 @@
 ---
 description: En este tema se describe cómo recopilar información del trabajo de impresión del usuario.
 ms.assetid: 98ae97e2-25c1-455c-8283-45bb07fb8251
-title: 'Cómo: recopilar información del trabajo de impresión del usuario'
+title: 'Cómo: Recopilar información del trabajo de impresión del usuario'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c4ddbc874ddbb36aa9b82e8eafeadb46883f528
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f51ccbd221a707fad8059b99f84cc011473450430e7b56578b5e8368cd5bd1c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119947835"
 ---
-# <a name="how-to-collect-print-job-information-from-the-user"></a>Cómo: recopilar información del trabajo de impresión del usuario
+# <a name="how-to-collect-print-job-information-from-the-user"></a>Cómo: Recopilar información del trabajo de impresión del usuario
 
 En este tema se describe cómo recopilar información del trabajo de impresión del usuario.
 
 ## <a name="overview"></a>Información general
 
-Recopile información del trabajo de impresión del usuario mediante una llamada a la función [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) . Esta función muestra el cuadro de diálogo **Imprimir** común al usuario y devuelve la información del trabajo de impresión en una estructura de datos [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) .
+Recopile información del trabajo de impresión del usuario mediante una llamada [**a la función PrintDlg.**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) Esta función muestra el **cuadro de** diálogo Imprimir común al usuario y devuelve la información del trabajo de impresión en una estructura de [**datos PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga)
 
-El cuadro de diálogo **Imprimir** común se muestra cuando el usuario inicia un trabajo de impresión. El cuadro de diálogo **Imprimir** común es un cuadro de diálogo modal, lo que significa que el usuario no puede interactuar con la ventana principal hasta que se cierre el cuadro de diálogo común.
+El **cuadro de** diálogo Imprimir común se muestra cuando el usuario inicia un trabajo de impresión. El **cuadro de** diálogo Imprimir común es un cuadro de diálogo modal, lo que significa que el usuario no puede interactuar con la ventana principal hasta que se cierre el cuadro de diálogo común.
 
-## <a name="collecting-print-job-information"></a>Recopilar información del trabajo de impresión
+## <a name="collecting-print-job-information"></a>Recopilación de información del trabajo de impresión
 
-1.  Inicialice el elemento de la estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) .
+1.  Inicialice [**el elemento de estructura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga)
 
-    Para que un programa pueda mostrar el cuadro de diálogo **Imprimir** común, debe asignar e inicializar una estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) . A continuación, pasa esta estructura a la función [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) , que muestra el cuadro de diálogo y devuelve los datos del trabajo de impresión en la misma estructura. En el ejemplo de código siguiente se muestra cómo realiza este paso el programa de ejemplo.
+    Para que un programa pueda mostrar el **cuadro de** diálogo Imprimir común , debe asignar e inicializar una [**estructura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga) A continuación, pasa esta estructura a la [**función PrintDlg,**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) que muestra el cuadro de diálogo y devuelve los datos del trabajo de impresión en la misma estructura. En el ejemplo de código siguiente se muestra cómo realiza este paso el programa de ejemplo.
 
     ```C++
     // Initialize the print dialog box's data structure.
@@ -42,9 +42,9 @@ El cuadro de diálogo **Imprimir** común se muestra cuando el usuario inicia un
 
     
 
-2.  Muestra el cuadro de diálogo **Imprimir** común.
+2.  Mostrar el **cuadro de** diálogo Imprimir común.
 
-    Llame a [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) con la estructura [**PrintDlg**](/windows/win32/api/commdlg/ns-commdlg-printdlga) inicializada para mostrar el cuadro de diálogo **Imprimir** común y recopilar los datos de usuario, tal y como se muestra en el ejemplo de código siguiente.
+    Llame [**a PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) con la estructura  [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) inicializada para mostrar el cuadro de diálogo Imprimir común y recopilar los datos del usuario, como se muestra en el ejemplo de código siguiente.
 
     ```C++
     // Display the printer dialog and retrieve the printer DC
@@ -53,11 +53,11 @@ El cuadro de diálogo **Imprimir** común se muestra cuando el usuario inicia un
 
     
 
-3.  Guarde los campos de la estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) e inicie el trabajo de impresión.
+3.  Guarde los campos de la [**estructura PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) e inicie el trabajo de impresión.
 
-    La estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) contiene los datos que describen las selecciones realizadas por el usuario en el cuadro de diálogo Imprimir. Algunos miembros de la estructura **PRINTDLG** son identificadores de los objetos de memoria global. El [programa de ejemplo de impresión](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Print%20sample%20(Windows%208)) copia los datos de los objetos de memoria global en bloques de memoria que el programa administra y copia otros campos de la estructura **PRINTDLG** en los campos de una estructura de datos definida por el programa.
+    La [**estructura PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) contiene los datos que describen las selecciones realizadas por el usuario en el cuadro de diálogo de impresión. Algunos miembros de la **estructura PRINTDLG** son identificadores de objetos de memoria global. El [Programa de ejemplo](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Windows%208%20app%20samples/%5BC%2B%2B%5D-Windows%208%20app%20samples/C%2B%2B/Windows%208%20app%20samples/Print%20sample%20(Windows%208)) de impresión copia los datos de los objetos de memoria global en bloques de memoria que el programa administra y copia otros campos de la estructura **PRINTDLG** en los campos de una estructura de datos definida por el programa.
 
-    Después de almacenar los datos de la estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) en la estructura de datos del programa, puede abrir el cuadro de diálogo progreso de la impresión. El procedimiento del cuadro de diálogo progreso de impresión controla los mensajes del cuadro de diálogo e inicia el subproceso de procesamiento de impresión.
+    Después de almacenar los datos de la estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) en la estructura de datos del programa, puede abrir el cuadro de diálogo progreso de impresión. El procedimiento del cuadro de diálogo progreso de impresión controla los mensajes del cuadro de diálogo e inicia el subproceso de procesamiento de impresión.
 
     En el ejemplo de código siguiente se muestra cómo copiar los datos de la estructura [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) en la estructura de datos del programa y cómo iniciar el trabajo de impresión.
 
@@ -122,7 +122,7 @@ El cuadro de diálogo **Imprimir** común se muestra cuando el usuario inicia un
 
     
 
-4.  Si el usuario hace clic en el botón **Cancelar** en el cuadro de diálogo **Imprimir** común, no se realiza ningún otro procesamiento.
+4.  Si el usuario hace clic en el **botón Cancelar** del cuadro **de** diálogo Imprimir común, no se realiza ningún procesamiento adicional.
 
  
 

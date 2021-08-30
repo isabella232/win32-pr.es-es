@@ -3,7 +3,7 @@ title: Atributo WM/WMCollectionGroupID
 description: El atributo WM/WMCollectionGroupID es un GUID que identifica el grupo que contiene la colección a la que pertenece el elemento.
 ms.assetid: 5383fb12-fc16-474e-b9a0-c1e69b86a057
 keywords:
-- Media Player de Windows de atributos de WM/WMCollectionGroupID
+- Atributo WM/WMCollectionGroupID Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,41 +12,41 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c681ad7049520ed77de3ebb385e74efcfef66b4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f35ca1964df5b99658c868bbc46f04ef67e6c9be821d6849be279de20ffaf9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900295"
 ---
 # <a name="wmwmcollectiongroupid-attribute"></a>Atributo WM/WMCollectionGroupID
 
-El atributo **WM/WMCollectionGroupID** es un GUID que identifica el grupo que contiene la colección a la que pertenece el elemento.
+El **atributo WM/WMCollectionGroupID** es un GUID que identifica el grupo que contiene la colección a la que pertenece el elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Listas de reproducción de CD](cd-playlist-attributes.md)
 -   [Pistas de CD](cd-track-attributes.md)
--   [Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca (o caché) y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
-**WMCollectionGroupID** es un alias para este atributo.
+**WMCollectionGroupID es** un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMCollectionGroupID.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMCollectionGroupID.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -54,7 +54,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

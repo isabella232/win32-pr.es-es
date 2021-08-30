@@ -1,19 +1,19 @@
 ---
-description: Indica la referencia para asignar la dirección de la imagen cuando se capturó, (por ejemplo, dirección real, dirección magnética).
+description: Indica la referencia para dar la dirección de la imagen cuando se capturó (por ejemplo, dirección verdadera, dirección magnético).
 ms.assetid: 81937ef2-af86-4434-8000-dd944ad14e9c
-title: System. GPS. ImgDirectionRef
+title: System.GPS.ImgDirectionRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3463905d1c1781c753df7eda23ce24fced012ca1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f6be3ec9489d07ad550b2bc88c28de038a970b02e984df404019abdcd1714d91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945705"
 ---
-# <a name="systemgpsimgdirectionref"></a>System. GPS. ImgDirectionRef
+# <a name="systemgpsimgdirectionref"></a>System.GPS.ImgDirectionRef
 
-Indica la referencia para asignar la dirección de la imagen cuando se capturó, (por ejemplo, dirección real, dirección magnética).
+Indica la referencia para dar la dirección de la imagen cuando se capturó (por ejemplo, dirección verdadera, dirección magnético).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

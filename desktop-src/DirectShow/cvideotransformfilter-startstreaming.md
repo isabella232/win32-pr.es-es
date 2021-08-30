@@ -1,7 +1,7 @@
 ---
-description: 'Se llama al método StartStreaming cuando el filtro cambia al estado de pausa. Este método invalida el método CTransformFilter:: StartStreaming.'
+description: Se llama al método StartStreaming cuando el filtro cambia al estado en pausa. Este método invalida el método CTransformFilter::StartStreaming.
 ms.assetid: fa05f88f-fed8-479d-b0b4-d9df982d51e7
-title: Método CVideoTransformFilter. StartStreaming (Vtrans. h)
+title: Método CVideoTransformFilter.StartStreaming (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5ae8d49401389830f9d5dbf0ec91e7f390c51ca6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 53d448228a650718f8c57d6019dcfb1f3f23f03468e86a77fae167e6481e718c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119998475"
 ---
-# <a name="cvideotransformfilterstartstreaming-method"></a>CVideoTransformFilter. StartStreaming, método
+# <a name="cvideotransformfilterstartstreaming-method"></a>Método CVideoTransformFilter.StartStreaming
 
-`StartStreaming`Se llama al método cuando el filtro cambia al estado de pausa. Este método invalida el método [**CTransformFilter:: StartStreaming**](ctransformfilter-startstreaming.md) .
+Se `StartStreaming` llama al método cuando el filtro cambia al estado en pausa. Este método invalida el [**método CTransformFilter::StartStreaming.**](ctransformfilter-startstreaming.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,9 +42,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método restablece todas las estadísticas de rendimiento.
 
@@ -54,8 +54,8 @@ Este método restablece todas las estadísticas de rendimiento.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método restablece todas las estadísticas de rendimiento.
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

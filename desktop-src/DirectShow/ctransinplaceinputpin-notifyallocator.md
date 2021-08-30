@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ca15be5dc1893a393e6052832cc7522f27355eeb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2397ea32d9069352207eba6a4a5b9709b1c7514fa7d2c5acd16a9539090dba3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999215"
 ---
 # <a name="ctransinplaceinputpinnotifyallocator-method"></a>CTransInPlaceInputPin.NotifyAllocator (método)
 
@@ -53,7 +53,7 @@ Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/St
 *bReadOnly* 
 </dt> <dd>
 
-Marca que especifica si las muestras de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
+Marca que especifica si los ejemplos de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
 El filtro intenta usar el mismo asignador para ambas conexiones de pin.
 
--   Si el pin de salida no está conectado, el pin de entrada acepta automáticamente el asignador. Cuando el pin de salida está conectado, el filtro volverá a conectar el pin de entrada. En ese momento, el filtro intentará de nuevo usar un solo asignador.
+-   Si el pin de salida no está conectado, el pin de entrada acepta automáticamente el asignador. Cuando el pin de salida está conectado, el filtro volverá a conectar el pin de entrada. En ese momento, el filtro volverá a intentar usar un solo asignador.
 -   Si el pin de salida está conectado, el pin de entrada acepta el asignador. El pin de salida también usa el mismo asignador. Llama a `NotifyAllocator` en el pin de entrada de bajada.
 
 El caso anterior tiene la siguiente excepción:
@@ -90,12 +90,12 @@ El caso anterior tiene la siguiente excepción:
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Transip.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

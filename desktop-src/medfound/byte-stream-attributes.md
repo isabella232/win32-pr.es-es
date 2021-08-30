@@ -1,41 +1,41 @@
 ---
-description: Atributos de secuencia de bytes
+description: Atributos de flujo de bytes
 ms.assetid: d57a57e9-87e4-4f7f-943a-63fd2ad1d1a6
-title: Atributos de secuencia de bytes
+title: Atributos de flujo de bytes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0471905925b397f4f83ad457384b5e9b4790b54c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bccc6b6a73d58b3b5817f6c5654a4968c3f4677c0dca9ad4d184e93ee82d8206
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119959375"
 ---
-# <a name="byte-stream-attributes"></a>Atributos de secuencia de bytes
+# <a name="byte-stream-attributes"></a>Atributos de flujo de bytes
 
-Los siguientes atributos se aplican a algunos flujos de bytes. Para averiguar si una secuencia de bytes admite atributos, consulte el objeto de flujo de bytes para la interfaz [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Los atributos siguientes se aplican a algunas secuencias de bytes. Para averiguar si una secuencia de bytes admite atributos, consulte el objeto de secuencia de bytes para la [**interfazATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
 
 
 | Atributo                                                                                  | Descripción                                                       |
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [**tipo de contenido de MF \_ BYTESTREAM \_ \_**](mf-bytestream-content-type-attribute.md)              | Especifica el tipo MIME de una secuencia de bytes.                         |
-| [**\_duración de BYTESTREAM MF \_**](mf-bytestream-duration-attribute.md)                       | Especifica la duración de una secuencia de bytes, en unidades de 100-nanosegundos. |
-| [\_BYTESTREAM \_ \_ identificador URI de archivo IFO \_](mf-bytestream-ifo-file-uri.md)                           | Especifica la dirección URL de un archivo IFO asociado.                      |
-| [**\_hora de \_ última \_ modificación \_ de MF BYTESTREAM**](mf-bytestream-last-modified-time-attribute.md) | Especifica cuándo se modificó por última vez una secuencia de bytes.                   |
-| [**nombre del origen de MF \_ BYTESTREAM \_ \_**](mf-bytestream-origin-name-attribute.md)                | Especifica la dirección URL original de un flujo de bytes.                     |
+| [**TIPO \_ DE CONTENIDO MF \_ \_ BYTESTREAM**](mf-bytestream-content-type-attribute.md)              | Especifica el tipo MIME de una secuencia de bytes.                         |
+| [**DURACIÓN \_ DE BYTESTREAM \_ MF**](mf-bytestream-duration-attribute.md)                       | Especifica la duración de una secuencia de bytes, en unidades de 100 nanosegundos. |
+| [\_URI DE ARCHIVO \_ IFO DE MF BYTESTREAM \_ \_](mf-bytestream-ifo-file-uri.md)                           | Especifica la dirección URL de un archivo IFO asociado.                      |
+| [**HORA \_ DE ÚLTIMA MODIFICACIÓN \_ \_ DE \_ MF BYTESTREAM**](mf-bytestream-last-modified-time-attribute.md) | Especifica cuándo se modificó por última vez una secuencia de bytes.                   |
+| [**NOMBRE \_ DE ORIGEN DE MF BYTESTREAM \_ \_**](mf-bytestream-origin-name-attribute.md)                | Especifica la dirección URL original de una secuencia de bytes.                     |
 
 
 
  
 
-Los siguientes atributos se aplican a los controladores de secuencias de bytes.
+Los atributos siguientes se aplican a los controladores de flujo de bytes.
 
 
 
 | Atributo                                                                                    | Descripción                                                                                                |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [MF \_ BYTESTREAMHANDLER \_ acepta la \_ escritura de recursos compartidos \_](mf-bytestreamhandler-accepts-share-write.md) | Especifica si un controlador de flujo de bytes puede utilizar un flujo de bytes abierto para que otro subproceso lo escriba. |
+| [MF \_ BYTESTREAMHANDLER \_ ACEPTA ESCRITURA DE RECURSO \_ \_ COMPARTIDO](mf-bytestreamhandler-accepts-share-write.md) | Especifica si un controlador de secuencia de bytes puede usar una secuencia de bytes abierta para que la escriba otro subproceso. |
 
 
 
@@ -48,7 +48,7 @@ Los siguientes atributos se aplican a los controladores de secuencias de bytes.
 [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream)
 </dt> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> </dl>
 
  

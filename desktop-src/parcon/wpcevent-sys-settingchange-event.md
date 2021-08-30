@@ -1,17 +1,17 @@
 ---
 description: Evento de nivel de sistema generado en un cambio de configuración de controles parentales.
 ms.assetid: 2540c3cc-96d0-4e01-a525-4da4a857cb58
-title: Evento WPCEVENT_SYS_SETTINGCHANGE (Wpcevent. h)
+title: WPCEVENT_SYS_SETTINGCHANGE evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ea0efb4d68fabcb5f9216c4ccf3bb923ee0ff54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7771560de0424b3a03c937e8ad2a08fdb2f23cec77fd02b6c04b29aacf16b434
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951144"
 ---
-# <a name="wpcevent_sys_settingchange-event"></a>WPCEVENT \_ Sys \_ SETTINGCHANGE
+# <a name="wpcevent_sys_settingchange-event"></a>Evento WPCEVENT \_ SYS \_ SETTINGCHANGE
 
 Evento de nivel de sistema generado en un cambio de configuración de controles parentales.
 
@@ -29,49 +29,49 @@ const EVENT_DESCRIPTOR WPCEVENT_SYS_SETTINGCHANGE = {0x1, 0x0, 0x10, 0x4, 0x15, 
 *Clase* 
 </dt> <dd>
 
-La clase que está generando el evento.
+Clase que genera el evento.
 
 </dd> <dt>
 
 *Configuración* 
 </dt> <dd>
 
-Un valor de la enumeración de **\_ configuración WPC** .
+Valor de la **enumeración WPC \_ SETTINGS.**
 
 </dd> <dt>
 
 *Propietario* 
 </dt> <dd>
 
-El identificador de seguridad del usuario que está generando el evento.
+Identificador de seguridad del usuario que genera el evento.
 
 </dd> <dt>
 
 *OldVal* 
 </dt> <dd>
 
-Valor anterior de esta configuración, si se elimina o se cambia.
+Valor anterior de esta configuración, si se elimina o cambia.
 
 </dd> <dt>
 
 *NewVal* 
 </dt> <dd>
 
-Nuevo valor de esta configuración, si se ha agregado o cambiado.
+Nuevo valor de esta configuración, si se agrega o cambia.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Un valor de la enumeración [**WPCFLAG \_ ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados y qué controles hay en su lugar.
+Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica información sobre qué eventos están bloqueados para su uso y qué controles están en su lugar.
 
 </dd> <dt>
 
 *Opcional* 
 </dt> <dd>
 
-Un campo opcional.
+Campo opcional.
 
 </dd> </dl>
 
@@ -81,9 +81,9 @@ Un campo opcional.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Encabezado<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -91,10 +91,10 @@ Un campo opcional.
 
 <dl> <dt>
 
-[Uso de las API de registro para controles parentales](using-logging-apis-for-parental-controls.md)
+[Uso de las API de registro para los controles parentales](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

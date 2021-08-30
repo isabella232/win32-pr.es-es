@@ -4,20 +4,20 @@ ms.assetid: 4657e814-0e7f-45b5-8ddb-17ec0c3612ba
 title: Servidor de canalización multiproceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64f974ad5ce23b850ab900ea4d34a219851528ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d15d5fd2cdaea5f4cb063ce9496d04e023d1b969f711dc72f577fb4c3634cbb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015255"
 ---
 # <a name="multithreaded-pipe-server"></a>Servidor de canalización multiproceso
 
-El ejemplo siguiente es un servidor de canalización multiproceso. Tiene un subproceso principal con un bucle que crea una instancia de canalización y espera a que se conecte un cliente de canalización. Cuando se conecta un cliente de canalización, el servidor de canalización crea un subproceso para atender a ese cliente y, a continuación, continúa ejecutando el bucle en el subproceso principal. Es posible que un cliente de canalización se conecte correctamente a la instancia de canalización en el intervalo entre las llamadas a las funciones [**CreateNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-createnamedpipea) y [**ConnectNamedPipe**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) . Si esto ocurre, **ConnectNamedPipe** devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve la \_ canalización de errores \_ conectada.
+El ejemplo siguiente es un servidor de canalización multiproceso. Tiene un subproceso principal con un bucle que crea una instancia de canalización y espera a que se conecte un cliente de canalización. Cuando se conecta un cliente de canalización, el servidor de canalización crea un subproceso para dar servicio a ese cliente y, a continuación, continúa con la ejecución del bucle en el subproceso principal. Es posible que un cliente de canalización se conecte correctamente a la instancia de canalización en el intervalo entre las llamadas a las funciones [**CreateNamedPipe**](/windows/desktop/api/Winbase/nf-winbase-createnamedpipea) y [**ConnectNamedPipe.**](/windows/win32/api/namedpipeapi/nf-namedpipeapi-connectnamedpipe) Si esto sucede, **ConnectNamedPipe** devuelve cero y [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve ERROR \_ PIPE \_ CONNECTED.
 
-El subproceso creado para atender cada instancia de canalización lee las solicitudes de la canalización y escribe las respuestas en la canalización hasta que el cliente de la canalización cierra su identificador. Cuando esto sucede, el subproceso vacía la canalización, desconecta, cierra su identificador de canalización y finaliza. El subproceso principal se ejecutará hasta que se produzca un error o hasta que finalice el proceso.
+El subproceso creado para atender cada instancia de canalización lee las solicitudes de la canalización y escribe respuestas en la canalización hasta que el cliente de canalización cierra su identificador. Cuando esto sucede, el subproceso vacía la canalización, se desconecta, cierra su identificador de canalización y finaliza. El subproceso principal se ejecutará hasta que se produzca un error o se termine el proceso.
 
-Este servidor de canalización se puede usar con el cliente de canalización descrito en [cliente de canalización con nombre](named-pipe-client.md).
+Este servidor de canalización se puede usar con el cliente de canalización descrito en [Cliente de canalización con nombre](named-pipe-client.md).
 
 
 ```C++

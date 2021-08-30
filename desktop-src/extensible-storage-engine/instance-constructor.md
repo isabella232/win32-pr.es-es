@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: constructor de instancia'
+description: 'Más información sobre: Constructor de instancia'
 title: Constructor de instancia
 TOCTitle: 'Instance constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Instance.#ctor
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 0cdf885bc705f667421c2040f2dfe44a7e097307
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20fe01ef939f9016af3fde38e6149169bfcc1b7748645faf1077ad628e14a575
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104568220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017715"
 ---
 # <a name="instance-constructor"></a>Constructor de instancia
 
@@ -39,18 +39,18 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350924(v=exchg.10).md">Instancia (cadena)</a></td>
-<td>Inicializa una nueva instancia de la clase de instancia. La JET_INSTANCE subyacente está asignada, pero no se ha inicializado.</td>
+<td><a href="dn350924(v=exchg.10).md">Instance(String)</a></td>
+<td>Inicializa una nueva instancia de la clase Instance. El JET_INSTANCE subyacente se asigna, pero no se inicializa.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350927(v=exchg.10).md">Instancia (cadena, cadena)</a></td>
-<td>Inicializa una nueva instancia de la clase de instancia. La JET_INSTANCE subyacente está asignada, pero no se ha inicializado.</td>
+<td><a href="dn350927(v=exchg.10).md">Instance(String, String)</a></td>
+<td>Inicializa una nueva instancia de la clase Instance. El JET_INSTANCE subyacente se asigna, pero no se inicializa.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350948(v=exchg.10).md">Instancia (cadena, cadena, TermGrbit)</a></td>
-<td>Inicializa una nueva instancia de la clase de instancia. La JET_INSTANCE subyacente está asignada, pero no se ha inicializado.</td>
+<td><a href="dn350948(v=exchg.10).md">Instance(String, String, TermGrbit)</a></td>
+<td>Inicializa una nueva instancia de la clase Instance. El JET_INSTANCE subyacente se asigna, pero no se inicializa.</td>
 </tr>
 </tbody>
 </table>
@@ -66,4 +66,4 @@ Superior
 
 [Miembros de instancia](./instance-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

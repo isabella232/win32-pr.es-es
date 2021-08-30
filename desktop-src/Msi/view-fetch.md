@@ -1,7 +1,7 @@
 ---
-description: El método fetch del objeto View recupera la siguiente fila de datos de columna si hay más filas disponibles en el conjunto de resultados; en caso contrario, es NULL. Llame al método Execute antes del método Fetch.
+description: El método Fetch del objeto View recupera la siguiente fila de datos de columna si hay más filas disponibles en el conjunto de resultados; de lo contrario, es Null. Llame al método Execute antes del método Fetch.
 ms.assetid: d51bf60d-5725-41eb-9002-1d0e5b9f50a3
-title: View. fetch (método)
+title: Método View.Fetch
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: f16d3a14f3c4f54f64364488322007a99c0f7cd2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b05144b542fd1daa1fc59e12d8ab9ec7031c4a3a5eb6506e9d1316a29b4424ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039495"
 ---
-# <a name="viewfetch-method"></a>View. fetch (método)
+# <a name="viewfetch-method"></a>Método View.Fetch
 
-El método **Fetch** del objeto [**View**](view-object.md) recupera la siguiente fila de datos de columna si hay más filas disponibles en el conjunto de resultados; en caso contrario, es NULL. Llame al método [**Execute**](view-execute.md) antes del método **Fetch** .
+El **método Fetch** del objeto [**View**](view-object.md) recupera la siguiente fila de datos de columna si hay más filas disponibles en el conjunto de resultados; de lo contrario, es Null. Llame al [**método Execute**](view-execute.md) antes del **método Fetch.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,9 +41,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se debe usar el mismo objeto de [**registro**](record-object.md) para recuperar los datos de varias filas, o bien se debe liberar el objeto saliendo del ámbito. El registro se puede probar para el final del conjunto de resultados mediante la sintaxis "If FetchRecord is Nothing".
+Debe [**usarse el**](record-object.md) mismo objeto Record para recuperar los datos de varias filas o, de lo contrario, el objeto debe liberarse al salir del ámbito. El registro se puede probar para el final del conjunto de resultados mediante la sintaxis "If FetchRecord Is Nothing".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Se debe usar el mismo objeto de [**registro**](record-object.md) para recuperar 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ iView se define como 000C109C-0000-0000-C000-000000000046<br/>                                                                                                                                                                                |
+| IID<br/>     | IID IView se define como \_ 000C109C-0000-0000-C000-000000000046<br/>                                                                                                                                                                                |
 
 
 

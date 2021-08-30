@@ -1,35 +1,35 @@
 ---
-description: HKLM \\ software \\ Microsoft \\ MSSQLSERVER \\ Client.
+description: HKLM \\ SOFTWARE \\ Microsoft \\ MSSQLServer \\ Client.
 ms.assetid: d6eb774b-d7ae-4f51-9947-90fb176e9acf
 title: ConnectTo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 581b1f77fc90bca467e90a3c3b7f407b8ba6d33d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5637a77589d211aae6eb51cacd6376d86367175699b7a339f11f19cc2108b80e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084745"
 ---
 # <a name="connectto"></a>ConnectTo
 
-**HKLM \\ software \\ Microsoft \\ MSSQLSERVER \\ Client**
+**HKLM \\ SOFTWARE \\ Microsoft \\ MSSQLServer \\ Client**
 
 ## <a name="description"></a>Descripción
 
-La subclave **ConnectTo** almacena información de conexión para los clientes basados en Windows que se conectan a las instancias del motor de base de datos de Microsoft SQL Server. Las entradas del registro de esta subclave son del tipo de datos REG \_ SZ y sus valores especifican la Net-Library que se va a usar para conectarse a la instancia, así como cualquier parámetro específico de la red.
+La **subclave ConnectTo** almacena información de conexión para Windows basados en el servidor que se conectan a instancias del motor Microsoft SQL Server base de datos. Las entradas del Registro de esta subclave son de tipo de datos REG SZ y sus valores especifican el Net-Library que se va a usar para conectarse a la instancia, así como cualquier parámetro específico de \_ la red.
 
-El proveedor de OLE DB lee la información de conexión almacenada en esta subclave para SQL Server, el controlador ODBC de SQL Server o la SQL Server DB-Library biblioteca de vínculos dinámicos (DLL).
+El proveedor de OLE DB para SQL Server, el controlador ODBC de SQL Server o la biblioteca de vínculos dinámicos (DLL) de SQL Server DB-Library leen la información de conexión almacenada en esta subclave.
 
 ## <a name="change-method"></a>Cambiar método
 
-No debe modificar las entradas de esta subclave mediante el editor del registro. Use la herramienta de red de cliente de SQL Server para configurar el nombre del servidor y la información de conexión. Consulte SQL Server ayuda de la herramienta de red de cliente para obtener más instrucciones.
+No debe modificar las entradas de esta subclave mediante el editor del Registro. Use la utilidad de red SQL Server cliente para configurar el nombre del servidor y la información de conexión. Consulte SQL Server de la utilidad de red de cliente para obtener más instrucciones.
 
 ## <a name="notes"></a>Notas
 
--   El proveedor de OLE DB usa la subclave **ConnectTo** para SQL Server, el controlador ODBC de SQL Server y el archivo DLL de DB-Library SQL Server. Las entradas de esta subclave identifican a qué Net-Library estos componentes de la interfaz de programación de aplicaciones (API) de acceso a datos llaman.
--   Net-Libraries son componentes SQL Server que protegen los componentes de la API de acceso a datos de los detalles del uso de diferentes métodos de comunicación entre procesos (IPC) para comunicarse con una instancia del motor de base de datos de SQL Server.
--   La actualización incorrecta de la subclave **ConnectTo** podría impedir que las aplicaciones se conecten correctamente a una instancia del motor de base de datos de SQL Server.
+-   El proveedor de OLE DB usa la subclave **ConnectTo** para SQL Server, SQL Server odbc Driver y SQL Server DB-Library DLL. Las entradas de esta subclave identifican a qué Net-Library llaman estos componentes de la interfaz de programación de aplicaciones (API) de acceso a datos.
+-   Net-Libraries son componentes SQL Server que protegen los componentes de la API de acceso a datos de los detalles del uso de diferentes métodos de comunicación entre procesos (IPC) para comunicarse con instancias del motor de base de datos SQL Server datos.
+-   La actualización incorrecta de la subclave **ConnectTo** podría impedir que las aplicaciones se conecten correctamente a una instancia del motor de SQL Server base de datos.
 
  
 

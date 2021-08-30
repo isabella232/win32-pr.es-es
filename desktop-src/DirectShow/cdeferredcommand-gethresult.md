@@ -1,7 +1,7 @@
 ---
-description: El método Gethresult (recupera el valor HRESULT del comando invocado.
+description: El método GetHResult recupera el valor HRESULT del comando invocado.
 ms.assetid: 7e88a2bd-6b1b-4e59-b185-5dfd501fc37a
-title: Método CDeferredCommand. Gethresult ((Ctlutil. h)
+title: Método CDeferredCommand.GetHResult (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5b09049bc443991dabe07a7626ffc42097feceee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16513cd202d8ad1973a6aa4d2bfd69f8372cb9b611e1dc070e265685db2d2682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910105"
 ---
-# <a name="cdeferredcommandgethresult-method"></a>CDeferredCommand. Gethresult (, método
+# <a name="cdeferredcommandgethresult-method"></a>Método CDeferredCommand.GetHResult
 
 El `GetHResult` método recupera el valor **HRESULT** del comando invocado.
 
@@ -45,17 +45,17 @@ HRESULT GetHResult(
 *phrResult* 
 </dt> <dd>
 
-Puntero al valor **HRESULT** .
+Puntero al **valor HRESULT.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve E \_ Abort si **m \_ pQueue** es **null**. De lo contrario, devuelve S \_ OK.
+Devuelve E \_ ABORT si **m \_ pQueue** es **NULL.** De lo contrario, devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IDeferredCommand:: gethresult (**](/windows/desktop/api/Control/nf-control-ideferredcommand-gethresult) .
+Esta función miembro implementa el [**método IDeferredCommand::GetHResult.**](/windows/desktop/api/Control/nf-control-ideferredcommand-gethresult)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método [**IDeferredCommand:: gethresult (**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método [**IDeferredCommand:: gethresult (**
 
 <dl> <dt>
 
-[**Clase CDeferredCommand**](cdeferredcommand.md)
+[**CDeferredCommand (clase)**](cdeferredcommand.md)
 </dt> </dl>
 
  

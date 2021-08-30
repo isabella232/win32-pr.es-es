@@ -4,29 +4,29 @@ ms.assetid: 95eb1887-8754-43e0-8886-1f23653bff26
 title: Agregar una solicitud de firma a un documento XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9db0d3a899dd49f141adf5cd23ea8c837c8b12d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c4ec1acf5d85ea20a1ba5908324a3645b3e944d28e3e6c7aa540d278ad88fa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950855"
 ---
 # <a name="add-a-signature-request-to-an-xps-document"></a>Agregar una solicitud de firma a un documento XPS
 
-En este tema se describe cómo agregar una solicitud de firma a un documento XPS. Una solicitud de firma solicita a un usuario que firme un documento si está de acuerdo con el intento de firma.
+En este tema se describe cómo agregar una solicitud de firma a un documento XPS. Una solicitud de firma solicita a un usuario que firme un documento si está de acuerdo con la intención de firma.
 
-Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [tareas comunes de programación de firmas digitales](basic-digital-signature-programming-tasks.md).
+Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [Common Digital Signature Programming Tasks](basic-digital-signature-programming-tasks.md).
 
 Para agregar una solicitud de firma a un documento XPS:
 
-1.  Cargue el documento XPS en un administrador de firmas, tal como se describe en [inicializar el administrador de firmas](initialize-the-signature-manager.md).
+1.  Cargue el documento XPS en un administrador de firmas, como se describe [en Inicializar el administrador de firmas.](initialize-the-signature-manager.md)
 2.  Agregue un bloque de firma al administrador de firmas.
 3.  Cree una solicitud de firma en el nuevo bloque de firma.
 4.  Establezca las propiedades de la solicitud de firma:
-    1.  Establezca la intención de la firma.
+    1.  Establezca la intención de firma.
     2.  Establezca el nombre de la persona cuya firma se solicita (el firmante solicitado).
-    3.  Establece la fecha en la que se requiere la firma.
-    4.  Establezca otras propiedades de la firma según sea necesario.
+    3.  Establezca la fecha en que se requiere la firma.
+    4.  Establezca otras propiedades de firma según sea necesario.
 
 En el ejemplo de código siguiente se muestra cómo agregar una solicitud de firma a un documento XPS.
 
@@ -116,10 +116,10 @@ AddSignatureRequestToDocument (
 **Para obtener más información**
 </dt> <dt>
 
-[Errores de la API de firma digital XPS](xps-digital-signatures-errors.md)
+[Errores de API de firma digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
-[Errores de documento XPS](xps-document-errors.md)
+[Errores del documento XPS](xps-document-errors.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

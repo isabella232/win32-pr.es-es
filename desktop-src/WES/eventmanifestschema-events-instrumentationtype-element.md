@@ -1,9 +1,9 @@
 ---
-title: Elemento Events (InstrumentationType)
-description: Contiene una lista de proveedores definidos en el manifiesto. | Elemento Events (InstrumentationType)
+title: Events (InstrumentationType) (Elemento)
+description: Contiene una lista de proveedores definidos en el manifiesto. | Events (InstrumentationType) (Elemento)
 ms.assetid: 1dab7840-75c0-4cee-94ba-9816762ac345
 keywords:
-- Events, elemento EventLog
+- elemento events EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9de42c63c8a7e52f5111facba021f269d86fbf98
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4f307e37edd119ea8ca950acc475f4c6da6e29cb24e27922240853cdf5fd4520
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032085"
 ---
-# <a name="events-instrumentationtype-element"></a>Elemento Events (InstrumentationType)
+# <a name="events-instrumentationtype-element"></a>Events (InstrumentationType) (Elemento)
 
 Contiene una lista de proveedores definidos en el manifiesto.
 
@@ -30,7 +30,7 @@ Contiene una lista de proveedores definidos en el manifiesto.
  />
 ```
 
-El elemento **Events** se define mediante el tipo complejo [**InstrumentationType**](eventmanifestschema-instrumentationtype-complextype.md) .
+El **elemento events** se define mediante el tipo complejo [**InstrumentationType.**](eventmanifestschema-instrumentationtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Events** se define mediante el tipo complejo [**InstrumentationTyp
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -3,34 +3,34 @@ title: Control del contenido protegido en el proveedor de servicios
 description: Control del contenido protegido en el proveedor de servicios
 ms.assetid: 5c18c8ec-d579-41df-8c25-c143fb9cdbef
 keywords:
-- Windows Media Administrador de dispositivos, certificados
-- Administrador de dispositivos, certificados
-- Guía de programación, certificados
+- Windows Media Administrador de dispositivos,certificates
+- Administrador de dispositivos,certificates
+- guía de programación, certificados
 - proveedores de servicios, certificados
 - crear proveedores de servicios, certificados
 - certificates
-- Windows Media Administrador de dispositivos, contenido protegido con DRM
-- Administrador de dispositivos, contenido protegido con DRM
-- Guía de programación, contenido protegido con DRM
-- proveedores de servicios, contenido protegido con DRM
-- creación de proveedores de servicios, contenido protegido con DRM
-- Contenido protegido con DRM
+- Windows Contenido Administrador de dispositivos multimedia protegido por DRM
+- Administrador de dispositivos contenido protegido por DRM
+- guía de programación, contenido protegido por DRM
+- proveedores de servicios, contenido protegido por DRM
+- crear proveedores de servicios, contenido protegido por DRM
+- Contenido protegido por DRM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94d10cf9078cf9aaf631b65de968f01491a97781
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 95bab3bc1fd03d98bf9c04242b6630d0bcc051d23f88a5bcd71a589cdb49e6bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957365"
 ---
 # <a name="handling-protected-content-in-the-service-provider"></a>Control del contenido protegido en el proveedor de servicios
 
-Puede crear un proveedor de servicios que pueda enviar contenido protegido con DRM a un dispositivo basado en DRM de dispositivo portátil (PDDRM), pero no puede crear un proveedor de servicios que pueda enviar contenido protegido con DRM a dispositivos basados en Windows Media DRM 10 para dispositivos portátiles. Estos dispositivos usan MTP y no puede crear su propio proveedor de servicios MTP.
+Puede crear un proveedor de servicios que pueda enviar contenido protegido por DRM a un dispositivo basado en DRM de dispositivo portátil (PDDRM), pero no puede crear un proveedor de servicios que pueda enviar contenido protegido por DRM a dispositivos integrados en Windows Media DRM 10 para dispositivos portátiles. Estos dispositivos usan MTP y no puede crear su propio proveedor de servicios MTP.
 
-El único paso adicional que un proveedor de servicios debe llevar a cabo para enviar material de DRM a un dispositivo PDDRM es obtener un par certificado/clave emitido por Microsoft. Consulte [herramientas de desarrollo](tools-for-development.md) para obtener información sobre dónde obtener este certificado o clave. Las licencias emitidas para estos dispositivos serán licencias simplificadas que solo admitan la reproducción simple del contenido adquirido. no admitirán licencias de expiración de tiempo. Esta licencia la creará el proveedor de contenido seguro (proporcionado por Microsoft para archivos WMA/WMV) y se almacenará en el encabezado del archivo que se envía al proveedor de servicios. No tendrá que realizar ningún paso especial para los archivos protegidos.
+El único paso adicional que debe realizar un proveedor de servicios para enviar material DRM a un dispositivo PDDRM es obtener un par de claves o certificados emitidos por Microsoft. Consulte [Herramientas de desarrollo](tools-for-development.md) para obtener información sobre dónde obtener este certificado o clave. Las licencias emitidas para estos dispositivos serán licencias simplificadas que solo admiten la reproducción sencilla del contenido comprado. no admitirán licencias que expiran en el tiempo. El proveedor de contenido seguro (proporcionado por Microsoft para archivos WMA/WMV) creará automáticamente esta licencia y se almacenará en el encabezado del archivo enviado al proveedor de servicios. No tendrá que realizar ningún paso especial para los archivos protegidos.
 
-Después de enviar el archivo protegido, Windows Media Administrador de dispositivos llamará al proveedor de servicios para solicitar un archivo de almacenamiento de licencias especial del dispositivo. Windows Media Administrador de dispositivos agregará una copia de la nueva licencia a este archivo y lo devolverá al proveedor de servicios para devolverlo al dispositivo. Sin embargo, aunque el proveedor de servicios no encuentre o devuelva este archivo, el dispositivo todavía debe ser capaz de reproducir el archivo protegido mediante la copia de la licencia en el encabezado del archivo.
+Después de enviar el archivo protegido, Windows Media Administrador de dispositivos llamará al proveedor de servicios para solicitar un archivo de almacenamiento de licencia especial del dispositivo. Windows Los Administrador de dispositivos agregarán una copia de la nueva licencia a este archivo y la devolverán al proveedor de servicios para que la devuelva al dispositivo. Sin embargo, incluso si el proveedor de servicios no encuentra o devuelve este archivo, el dispositivo todavía debe poder reproducir el archivo protegido mediante la copia de licencia en el encabezado de archivo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -42,9 +42,9 @@ Después de enviar el archivo protegido, Windows Media Administrador de disposit
 [**Control de contenido protegido**](handling-protected-content.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

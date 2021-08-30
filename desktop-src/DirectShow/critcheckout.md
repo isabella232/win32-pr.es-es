@@ -1,7 +1,7 @@
 ---
 description: Devuelve FALSE si el subproceso actual es el propietario de la sección crítica especificada.
 ms.assetid: 1a2cb56c-2806-4bb2-b904-985af332b290
-title: Función CritCheckOut (Wxutil. h)
+title: Función CritCheckOut (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ae5a888e619f6bed9cda203ccd8a197b0b25c001
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb1289bd89771797be88220f49d8af6f468a11c54e9954c32786e3af72dc1956
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908095"
 ---
-# <a name="critcheckout-function"></a>CritCheckOut función)
+# <a name="critcheckout-function"></a>Función CritCheckOut
 
-Devuelve **false** si el subproceso actual es el propietario de la sección crítica especificada.
+Devuelve **FALSE** si el subproceso actual es el propietario de la sección crítica especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ BOOL WINAPI CritCheckOut(
 *pcCrit* 
 </dt> <dd>
 
-Puntero a una sección crítica de [**CCritSec**](ccritsec.md) .
+Puntero a una sección crítica de [**CCritSec.**](ccritsec.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-En las compilaciones de depuración, devuelve **false** si el subproceso actual es el propietario de esta sección crítica, o bien **true** en caso contrario. En las compilaciones comerciales, siempre devuelve **true**.
+En las compilaciones de depuración, **devuelve FALSE** si el subproceso actual es el propietario de esta sección crítica o TRUE en **caso** contrario. En las compilaciones comerciales, siempre devuelve **TRUE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función es la inversa de la función [**CritCheckIn**](critcheckin.md) . Si **CritCheckIn** devuelve **true**, **CritCheckOut** devuelve **false** y viceversa.
+Esta función es la inversa de la [**función CritCheckIn.**](critcheckin.md) Si **CritCheckIn devuelve** **TRUE,** **CritCheckOut** devuelve **FALSE** y viceversa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función es la inversa de la función [**CritCheckIn**](critcheckin.md) . S
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

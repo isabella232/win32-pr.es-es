@@ -1,7 +1,7 @@
 ---
-description: Establecer los datos que se van a pasar como una matriz a la \_ clase MSVM CollectionReferencePointExportSettingData.
+description: Establecer los datos que se pasarán como una matriz a la clase \_ CollectionReferencePointExportSettingData de Msvm.
 ms.assetid: f127880f-f917-4069-a283-a6f9427c5e07
-title: Msvm_VirtualMachineToDisks (clase)
+title: Msvm_VirtualMachineToDisks clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: cad5de9389b9cb1d5e7db0573f3a4e3fc271ba31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b24c99d4e4c066122dbc26c79433668cd965a2bdcce13e3ceb319fb23a954fdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899035"
 ---
-# <a name="msvm_virtualmachinetodisks-class"></a>MSVM \_ VirtualMachineToDisks (clase)
+# <a name="msvm_virtualmachinetodisks-class"></a>Clase \_ VirtualMachineToDisks de Msvm
 
-Establecer los datos que se van a pasar como una matriz a la clase [**MSVM \_ CollectionReferencePointExportSettingData**](msvm-collectionreferencepointexportsettingdata.md) .
+Establecer los datos que se pasarán como una matriz a la clase [**\_ CollectionReferencePointExportSettingData de Msvm.**](msvm-collectionreferencepointexportsettingdata.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,26 +41,26 @@ class Msvm_VirtualMachineToDisks
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualMachineToDisks** tiene estos tipos de miembros:
+La **clase \_ VirtualMachineToDisks de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualMachineToDisks** tiene estas propiedades.
+La **clase \_ VirtualMachineToDisks de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **DisksToExport**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los identificadores de instancia de WMI de los discos que pertenecen a un ID. de máquina virtual determinado para el que se deben exportar los datos.
+Los identificadores de instancia wmi de los discos que pertenecen a un identificador de máquina virtual determinado para el que se deben exportar los datos.
 
 </dd> <dt>
 
@@ -70,10 +70,10 @@ Los identificadores de instancia de WMI de los discos que pertenecen a un ID. de
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Un ID. de máquina virtual al que están asociados los discos virtuales.
+Identificador de máquina virtual al que están asociados los discos virtuales.
 
 </dd> </dl>
 
@@ -83,10 +83,10 @@ Un ID. de máquina virtual al que están asociados los discos virtuales.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

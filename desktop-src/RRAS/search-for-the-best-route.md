@@ -1,19 +1,19 @@
 ---
 title: Buscar la mejor ruta
-description: En el código de ejemplo siguiente se muestra cómo buscar la mejor ruta en la tabla de enrutamiento.
+description: El código de ejemplo siguiente muestra cómo buscar la mejor ruta en la tabla de enrutamiento.
 ms.assetid: 559459e9-8446-4f37-8123-7d01f8ed427b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d56330ccc88904a173ae116ddd5513cd9c13d99a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f9c4240fd10b02ccd9459ffbe70d06eb6e3331d69d11eaf77944886552c50cee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081005"
 ---
 # <a name="search-for-the-best-route"></a>Buscar la mejor ruta
 
-En el código de ejemplo siguiente se muestra cómo buscar la mejor ruta en la tabla de enrutamiento.
+El código de ejemplo siguiente muestra cómo buscar la mejor ruta en la tabla de enrutamiento.
 
 
 ```C++
@@ -48,9 +48,9 @@ if (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

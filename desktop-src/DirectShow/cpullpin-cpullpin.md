@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5c447d14155534b77edb9a1798d2d7c837a6dfa7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 64b582499ca5fc8ee3074767c4c134c8c05db9170f4e9acd352065bdaa762167
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908905"
 ---
 # <a name="cpullpincpullpin-constructor"></a>Constructor CPullPin.CPullPin
 
@@ -51,7 +51,7 @@ Este constructor no tiene parámetros.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

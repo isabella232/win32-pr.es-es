@@ -1,7 +1,7 @@
 ---
-description: Estira el patrón punteado a lo largo de la dirección de la línea.
+description: Extiende el patrón detippla a lo largo de la dirección de la línea.
 ms.assetid: 411464db-d721-4252-bff3-bec57252273e
-title: 'ID3DXLine:: SetPatternScale (método) (D3dx9core. h)'
+title: Método ID3DXLine::SetPatternScale (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 44c040a2e8899784bcea9b93bf0781afb39c2464
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: df460f8040b1f73d4837b51533586a19630eed1ddcf435291857b05dc4bae1a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951365"
 ---
-# <a name="id3dxlinesetpatternscale-method"></a>ID3DXLine:: SetPatternScale (método)
+# <a name="id3dxlinesetpatternscale-method"></a>Método ID3DXLine::SetPatternScale
 
-Estira el patrón punteado a lo largo de la dirección de la línea.
+Extiende el patrón detippla a lo largo de la dirección de la línea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetPatternScale(
 
 <dl> <dt>
 
-*fPatternScale* \[ de\]
+*fPatternScale* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de escala del patrón punteado. 1.0 f es el valor predeterminado y no representa ningún ajuste de escala. Un valor menor que 1,0 f reduce el modelo y un valor mayor que 1,0 expande el patrón.
+Valor de escalado del patrón de stipple. 1.0f es el valor predeterminado y no representa ningún escalado. Un valor menor que 1,0f reduce el patrón y un valor mayor que 1,0 extiende el patrón.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Valor de escala del patrón punteado. 1.0 f es el valor predeterminado y no repr
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

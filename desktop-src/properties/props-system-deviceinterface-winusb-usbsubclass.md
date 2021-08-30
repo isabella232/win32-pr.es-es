@@ -1,19 +1,19 @@
 ---
-description: Valor de subclase del primer descriptor de la interfaz USB del dispositivo USB.
+description: Valor de subclase del primer descriptor de interfaz USB del dispositivo USB.
 ms.assetid: 1f11154a-d8fd-4067-aea2-6c341a46b3c5
-title: System. DeviceInterface. WinUsb. UsbSubClass
+title: System.DeviceInterface.WinUsb.UsbSubClass
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5714230f373cdfa2d7f67ac0e123e9b4d14bb32c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac607e85a2a8eb815928ac7c833768da9f70c3f85cf76670a9fb88960f3e5d44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010975"
 ---
-# <a name="systemdeviceinterfacewinusbusbsubclass"></a>System. DeviceInterface. WinUsb. UsbSubClass
+# <a name="systemdeviceinterfacewinusbusbsubclass"></a>System.DeviceInterface.WinUsb.UsbSubClass
 
-Valor de subclase del primer descriptor de la interfaz USB del dispositivo USB.
+Valor de subclase del primer descriptor de interfaz USB del dispositivo USB.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Byte
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

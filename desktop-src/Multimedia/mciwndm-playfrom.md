@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_PLAYFROM (VFW. h)
-description: El \_ mensaje MCIWNDM PLAYFROM reproduce el contenido de un dispositivo MCI desde la ubicación especificada hasta el final del contenido o hasta que otro comando detiene la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndPlayFrom.
+title: MCIWNDM_PLAYFROM mensaje (Vfw.h)
+description: El mensaje MCIWNDM PLAYFROM reproduce el contenido de un dispositivo MCI desde la ubicación especificada hasta el final del contenido o hasta que otro comando \_ detiene la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndPlayFrom.
 ms.assetid: 1c47f8eb-2a1b-4671-a9f8-fd6d59a5c7c6
 keywords:
-- Mensaje de MCIWNDM_PLAYFROM de Windows multimedia
+- MCIWNDM_PLAYFROM mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c0fa1b3f4b3359e1609b3ba12009fe5879c304a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67f9f2885b67f82c2285bcaacb395c626dbe460800a2683f72dad0730999e843
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037995"
 ---
-# <a name="mciwndm_playfrom-message"></a>MCIWNDM \_ PLAYFROM
+# <a name="mciwndm_playfrom-message"></a>Mensaje MCIWNDM \_ PLAYFROM
 
-El mensaje **MCIWNDM \_ PLAYFROM** reproduce el contenido de un dispositivo MCI desde la ubicación especificada hasta el final del contenido o hasta que otro comando detiene la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPlayFrom**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfrom) .
+El **mensaje MCIWNDM \_ PLAYFROM** reproduce el contenido de un dispositivo MCI desde la ubicación especificada hasta el final del contenido o hasta que otro comando detiene la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndPlayFrom.**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfrom)
 
 
 ```C++
@@ -47,11 +47,11 @@ Ubicación inicial. Las unidades de la ubicación inicial dependen del formato d
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-También puede especificar una ubicación inicial y final para la reproducción mediante la macro [**MCIWndPlayFromTo**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto) .
+También puede especificar una ubicación inicial y final para la reproducción mediante la macro [**MCIWndPlayFromTo.**](/windows/desktop/api/Vfw/nf-vfw-mciwndplayfromto)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ También puede especificar una ubicación inicial y final para la reproducción 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

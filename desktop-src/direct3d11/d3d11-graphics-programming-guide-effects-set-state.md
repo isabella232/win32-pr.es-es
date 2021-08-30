@@ -1,17 +1,17 @@
 ---
-title: Establecer estado de efecto (Direct3D 11)
+title: Establecer el estado del efecto (Direct3D 11)
 description: Solo es necesario inicializar algunas constantes de efecto. Consulte el código básico para establecer variables de efecto en Direct3D 12.
 ms.assetid: f94ba82e-fc67-4e4d-a49d-20e1163bdff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65c64f9e642e867e9398722d4590a4c2ce9193b4
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: dfa27e817299df9398bd6fa1752e636162d9b97f7b886a372b71c5d0845dff41
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953085"
 ---
-# <a name="set-effect-state-direct3d-11"></a>Establecer estado de efecto (Direct3D 11)
+# <a name="set-effect-state-direct3d-11"></a>Establecer el estado del efecto (Direct3D 11)
 
 Solo es necesario inicializar algunas constantes de efecto. Una vez inicializado, el estado del efecto se establece en el dispositivo para todo el bucle de representación. Es necesario actualizar otras variables cada vez que se llama al bucle de representación. A continuación se muestra el código básico para establecer variables de efecto para cada uno de los tipos de variables.
 
@@ -123,7 +123,7 @@ if( g_pEffect11 )
 
 
 
-La otra manera es obtener el estado del sampler de [**un id3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).
+La otra manera es obtener el estado del muestreador de [**un id3D11SamplerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11samplerstate).
 
 
 ```
@@ -171,7 +171,7 @@ Tenga en cuenta que no se debe establecer todo el estado del sombreador. Este pa
 
 ## <a name="texture-state"></a>Estado de textura
 
-El estado de textura es un poco más complejo que establecer una variable, ya que los datos de textura no se leen simplemente como una variable, sino que se muestrea a partir de una textura. Por lo tanto, debe definir la variable de textura (al igual que una variable normal, excepto que usa un tipo de textura) y debe definir las condiciones de muestreo. Este es un ejemplo de una declaración de variable de textura y la declaración de estado de muestreo correspondiente.
+El estado de textura es un poco más complejo que establecer una variable, ya que los datos de textura no se leen simplemente como una variable, sino que se muestrea a partir de una textura. Por lo tanto, debe definir la variable de textura (al igual que una variable normal excepto que usa un tipo de textura) y debe definir las condiciones de muestreo. Este es un ejemplo de una declaración de variable de textura y la declaración de estado de muestreo correspondiente.
 
 
 ```

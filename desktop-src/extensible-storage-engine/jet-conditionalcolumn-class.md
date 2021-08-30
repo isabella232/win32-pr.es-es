@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_CONDITIONALCOLUMN (clase)'
-title: JET_CONDITIONALCOLUMN (clase)
+description: 'Más información sobre: JET_CONDITIONALCOLUMN clase'
+title: JET_CONDITIONALCOLUMN clase
 TOCTitle: JET_CONDITIONALCOLUMN class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_CONDITIONALCOLUMN
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_conditionalcolumn(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 23b116ce88b24702711d74f610c208a72c44addf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a93eb5f5ffe0d13f78f5d387b37c4d17bd969a697dfb11998f5d7dcc821f1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017625"
 ---
-# <a name="jet_conditionalcolumn-class"></a>JET_CONDITIONALCOLUMN (clase)
+# <a name="jet_conditionalcolumn-class"></a>JET_CONDITIONALCOLUMN clase
 
-Define cómo se realiza la indización condicional para un índice determinado. Un índice condicional solo contiene una entrada de índice para las filas que coincidan con la condición especificada. Sin embargo, la columna condicional no forma parte de la clave del índice, sino que solo controla la presencia de la entrada de índice.
+Define cómo se realiza la indexación condicional para un índice determinado. Un índice condicional contiene una entrada de índice solo para las filas que coinciden con la condición especificada. Sin embargo, la columna condicional no forma parte de la clave del índice, solo controla la presencia de la entrada del índice.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_CONDITIONALCOLUMN  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,6 +68,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-members.md)
+[JET_CONDITIONALCOLUMN miembros](./jet-conditionalcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

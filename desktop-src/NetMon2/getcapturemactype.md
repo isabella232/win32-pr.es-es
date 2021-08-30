@@ -1,7 +1,7 @@
 ---
 description: La función GetCaptureMacType devuelve el tipo MAC de una captura determinada.
 ms.assetid: de0dfb36-df3a-4f6e-b266-09c81dfdc88b
-title: Función GetCaptureMacType (Netmon. h)
+title: Función GetCaptureMacType (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 73569109db5b958e854135461a0e480178d0105a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4405d1b0c5618951360c8b22732796dffdffeb557849388159411c9a17924591
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910805"
 ---
-# <a name="getcapturemactype-function"></a>GetCaptureMacType función)
+# <a name="getcapturemactype-function"></a>Función GetCaptureMacType
 
-La función **GetCaptureMacType** devuelve el tipo Mac de una captura determinada.
+La **función GetCaptureMacType** devuelve el tipo MAC de una captura determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ DWORD WINAPI GetCaptureMacType(
 
 <dl> <dt>
 
-*hCapture* \[ de\]
+*hCapture* \[ En\]
 </dt> <dd>
 
-Identificador de la captura. Para obtener información sobre cómo obtener el identificador de captura, vea la sección Comentarios de este tema **GetCaptureMacType** .
+Identificador de la captura. Para obtener información sobre cómo obtener el identificador de captura, vea la sección Comentarios de este **tema GetCaptureMacType.**
 
 </dd> </dl>
 
@@ -50,28 +50,28 @@ Identificador de la captura. Para obtener información sobre cómo obtener el id
 
 Si la función se realiza correctamente, el valor devuelto es uno de los siguientes tipos de MAC.
 
--   tipo de MAC \_ \_ desconocido
--   \_Ethernet de tipo Mac \_
--   \_TOKENRING de tipo Mac \_
--   \_FDDI de tipo Mac \_
+-   TIPO DE MAC \_ \_ DESCONOCIDO
+-   ETHERNET \_ DE TIPO \_ MAC
+-   TOKENRING \_ DE \_ TIPO MAC
+-   FDDI \_ DE TIPO \_ MAC
 
-Si la función no es correcta, el valor devuelto es un código de error.
+Si la función no se realiza correctamente, el valor devuelto es un código de error.
 
 
 
 | Código devuelto                                                                                              | Descripción                                                 |
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| <dl> <dt>**\_tipo de Mac NMERR \_ \_ desconocido**</dt> </dl> | Monitor de red no encontró un tipo de MAC conocido.<br/> |
+| <dl> <dt>**TIPO DE MAC DE NMERR \_ \_ \_ DESCONOCIDO**</dt> </dl> | Monitor de red no se encontró un tipo MAC conocido.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El identificador de la captura se puede obtener de varias maneras, en función de quién realice la llamada. En el caso de los expertos, el identificador se especifica en el miembro **hCapture** de la estructura [EXPERTSTARTUPINFO](expertstartupinfo.md) . En el caso de los analizadores, el identificador de captura se puede obtener llamando a la función [GetFrameCaptureHandle](getframecapturehandle.md) .
+El identificador de la captura se puede obtener de varias maneras, dependiendo de quién realiza la llamada. Para los expertos, el identificador se especifica en el **miembro hCapture** de la [estructura EXPERTSTARTUPINFO.](expertstartupinfo.md) Para los analizadores, el identificador de captura se puede obtener llamando a la [función GetFrameCaptureHandle.](getframecapturehandle.md)
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **GetCaptureMacType** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetCaptureMacType.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **Ge
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 
