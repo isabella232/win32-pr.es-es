@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents OnRemoteDesktopSizeChanged, método
+title: Método OnRemoteDesktopSizeChanged de IRemoteDesktopClientEvents
 description: Se llama cuando el tamaño del escritorio remoto ha cambiado.
 ms.assetid: DA641CA7-3214-4DB6-9A7F-75903FE93DB4
 ms.tgt_platform: multiple
 keywords:
 - Método OnRemoteDesktopSizeChanged Servicios de Escritorio remoto
-- Método OnRemoteDesktopSizeChanged Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnRemoteDesktopSizeChanged
+- Método OnRemoteDesktopSizeChanged Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto , método OnRemoteDesktopSizeChanged
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a7431d1a6f41a6f87bb34fe1486c203168f2c3e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da10c37bdebcf59fc6a19581dd5bd35f0b751349d447e05524e8c806e410b9a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124865"
 ---
-# <a name="iremotedesktopclienteventsonremotedesktopsizechanged-method"></a>IRemoteDesktopClientEvents:: OnRemoteDesktopSizeChanged (método)
+# <a name="iremotedesktopclienteventsonremotedesktopsizechanged-method"></a>IRemoteDesktopClientEvents::OnRemoteDesktopSizeChanged (método)
 
 Se llama cuando el tamaño del escritorio remoto ha cambiado.
 
@@ -44,10 +44,10 @@ void OnRemoteDesktopSizeChanged(
 
 <dl> <dt>
 
-*ancho* \[ de de\]
+*width* \[ En\]
 </dt> <dd></dd> <dt>
 
-*alto* \[ de de\]
+*alto* \[ En\]
 </dt> <dd></dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto

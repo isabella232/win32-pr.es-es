@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMDVDDriveAttachmentType (VPCCOMInterfaces. h)
-description: Especifica lo que se adjunta a una unidad de DVD.
+title: Enumeración VMDVDDriveAttachmentType (VPCCOMInterfaces.h)
+description: Especifica lo que está conectado a una unidad de DVD.
 ms.assetid: 66f33974-8622-4fa3-b5ac-3fae5a637434
 keywords:
-- Enumeración de VMDVDDriveAttachmentType Virtual PC
+- VMDVDDriveAttachmentType enumeración Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f63c5918fd414a5a83a114ebddf5752647e8db83
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e0af9397153333a8b80f2af5f2b955555fc368048d3b947ae99722e42fc11eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124645"
 ---
 # <a name="vmdvddriveattachmenttype-enumeration"></a>Enumeración VMDVDDriveAttachmentType
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Especifica lo que se adjunta a una unidad de DVD.
+Especifica lo que está conectado a una unidad de DVD.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,14 +44,14 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmDVDDrive_None"></span><span id="vmdvddrive_none"></span><span id="VMDVDDRIVE_NONE"></span>**vmDVDDrive \_ ninguno**
+<span id="vmDVDDrive_None"></span><span id="vmdvddrive_none"></span><span id="VMDVDDRIVE_NONE"></span>**vmDVDDrive \_ None**
 </dt> <dd>
 
-No hay nada adjunto.
+No hay nada asociado.
 
 </dd> <dt>
 
-<span id="vmDVDDrive_Image"></span><span id="vmdvddrive_image"></span><span id="VMDVDDRIVE_IMAGE"></span>**imagen de vmDVDDrive \_**
+<span id="vmDVDDrive_Image"></span><span id="vmdvddrive_image"></span><span id="VMDVDDRIVE_IMAGE"></span>**Imagen de \_ vmDVDDrive**
 </dt> <dd>
 
 Hay un archivo de imagen ISO adjunto.
@@ -71,11 +71,11 @@ Hay una unidad de CD o DVD de host conectada.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Hay una unidad de CD o DVD de host conectada.
 
 <dl> <dt>
 
-[**IVMDVDDrive:: Attachment**](ivmdvddrive-attachment.md)
+[**IVMDVDDrive::Attachment**](ivmdvddrive-attachment.md)
 </dt> </dl>
 
  

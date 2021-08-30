@@ -1,71 +1,71 @@
-- name: Almacenamiento estructurado
+- name: Estructura Storage
   href: structured-storage-start-page.md
   items:
-    - name: Acerca del almacenamiento estructurado
+    - name: Acerca de structured Storage
       href: about-structured-storage.md
       items:
-        - name: Ventajas del almacenamiento estructurado
+        - name: Ventajas de structured Storage
           href: benefits-of-structured-storage.md
           items:
             - name: La evolución de los sistemas de archivos
               href: the-evolution-of-file-systems.md
-            - name: Almacenamiento y secuencias
+            - name: Almacenamientos y Secuencias
               href: storages-and-streams.md
             - name: archivos compuestos
               href: compound-files.md
-        - name: Aspectos básicos de almacenamiento estructurado
+        - name: Aspectos Storage estructurados
           href: structured-storage-fundamentals.md
           items:
-            - name: Objetos COM y almacenamiento estructurado
+            - name: Objetos COM y estructura Storage
               href: com-objects-and-structured-storage.md
-            - name: Convenciones de nomenclatura de objetos de almacenamiento
+            - name: Storage Convenciones de nomenclatura de objetos
               href: storage-object-naming-conventions.md
-            - name: Interfaces de almacenamiento estructurado
+            - name: Interfaces Storage estructuradas
               href: structured-storage-interfaces.md
-            - name: Funciones de la API de almacenamiento estructurado
+            - name: Funciones de api Storage estructurada
               href: structured-storage-api-functions.md
               items:
-                - name: Modos de acceso de almacenamiento estructurado
+                - name: Modos de acceso Storage estructurado
                   href: structured-storage-access-modes.md
                   items:
                     - name: Marcas de transacción
                       href: transaction-flags.md
-                    - name: Marcas de creación de almacenamiento
+                    - name: Storage Marcas de creación
                       href: storage-creation-flags.md
-                    - name: Marcas de creación temporales
+                    - name: Marcas de creación temporal
                       href: temporary-creation-flags.md
                     - name: Marcas de prioridad
                       href: priority-flags.md
-                    - name: Marcas de permisos de acceso
+                    - name: Marcas de permiso de acceso
                       href: access-permission-flags.md
                     - name: Marcas de acceso compartido
                       href: shared-access-flags.md
             - name: Propiedades y conjuntos de propiedades
               href: properties-and-property-sets.md
               items:
-                - name: Conjunto de propiedades de información de Resumen
+                - name: Conjunto de propiedades Demmary Information
                   href: the-summary-information-property-set.md
-                - name: Identificadores de formato del conjunto de propiedades predefinido
+                - name: Identificadores de formato de conjunto de propiedades predefinidos
                   href: predefined-property-set-format-identifiers.md
-                - name: Los conjuntos de propiedades DocumentSummaryInformation y UserDefined
+                - name: Conjuntos de propiedades DocumentSummaryInformation y UserDefined
                   href: the-documentsummaryinformation-and-userdefined-property-sets.md
-            - name: Formato de conjunto de propiedades serializado de almacenamiento estructurado
+            - name: Formato Storage conjunto de propiedades serializados estructurado
               href: structured-storage-serialized-property-set-format.md
               items:
-                - name: Encabezado de conjunto de propiedades
+                - name: Encabezado del conjunto de propiedades
                   href: property-set-header.md
                   items:
-                    - name: Indicador de Byte-Order
+                    - name: Byte-Order indicador
                       href: byte-order-indicator.md
                     - name: Versión de formato
                       href: format-version.md
-                    - name: Versiones de sistema operativo
+                    - name: Versiones del sistema operativo
                       href: operating-system-versions.md
                     - name: Identificador de clase
                       href: class-identifier.md
-                    - name: Reservado
+                    - name: Reservada
                       href: reserved.md
-                - name: Par de identificador de formato/desplazamiento
+                - name: Identificador de formato/par de desplazamiento
                   href: format-identifier-offset-pair.md
                   items:
                     - name: Identificadores de formato
@@ -83,23 +83,23 @@
                       href: property-identifiers-offset-pairs.md
                     - name: Indicadores de tipo
                       href: type-indicators.md
-                - name: Identificadores de propiedad reservados
+                - name: Identificadores de propiedad reservada
                   href: reserved-property-identifiers.md
                   items:
                     - name: Diccionario de nombres para mostrar del conjunto de propiedades
                       href: property-set-display-name-dictionary.md
-        - name: Almacenamiento asincrónico
+        - name: Datos Storage
           href: asynchronous-storage.md
           items:
-            - name: Modos de almacenamiento
+            - name: Storage Modos
               href: storage-modes.md
             - name: Archivos compuestos asincrónicos
               href: asynchronous-compound-files.md
-            - name: Cómo funciona el enlace asincrónico y el almacenamiento
+            - name: Cómo funcionan el enlace asincrónico Storage trabajo
               href: how-asynchronous-binding-and-storage-work.md
             - name: Optimización de archivos compuestos
               href: compound-file-optimization.md
-    - name: Uso de almacenamiento estructurado
+    - name: Uso de structured Storage
       href: using-structured-storage.md
       items:
         - name: Cómo compilar ejemplos
@@ -107,18 +107,18 @@
           items:
             - name: Configuración del entorno
               href: environment-setup.md
-            - name: Archivos make
+            - name: Makefiles
               href: makefiles.md
             - name: Uso de Visual Studio
               href: using-visual-studio.md
-            - name: Extraer los ejemplos de código
+            - name: Extracción de los ejemplos de código
               href: extracting-the-code-samples.md
             - name: Convenciones de estilo de codificación
               href: coding-style-conventions.md
-        - name: Ejemplos de almacenamiento estructurado
+        - name: Ejemplos de Storage estructurados
           href: structured-storage-samples.md
           items:
-            - name: Ejemplo de cliente de almacenamiento estructurado (StoClien)
+            - name: Ejemplo Storage cliente estructurado (StoClien)
               href: structured-storage-client-sample--stoclien-.md
               items:
                 - name: Información general de StoClien
@@ -126,78 +126,78 @@
                   items:
                     - name: Operaciones de StoClien
                       href: stoclien-operations.md
-                - name: Crear y ejecutar el ejemplo StoClien
+                - name: Creación y ejecución de un ejemplo de StoClien
                   href: create-and-run-stoclien-sample.md
                   items:
                     - name: Declaración de clase CGuiPaper
                       href: cguipaper-class-declaration.md
-                    - name: Métodos CGuiPaper
+                    - name: Métodos de CGuiPaper
                       href: cguipaper-methods.md
                       items:
-                        - name: Método InkStart
+                        - name: InkStart (método)
                           href: inkstart-method.md
-                        - name: Método InkDraw
+                        - name: InkDraw (método)
                           href: inkdraw-method.md
-                        - name: Método PaintWin
+                        - name: PaintWin (método)
                           href: paintwin-method.md
                     - name: CMainWindow
                       href: cmainwindow.md
-                    - name: Clase y métodos de CPapFile
+                    - name: CPapFile (clase y métodos)
                       href: cpapfile-class-and-methods.md
                       items:
-                        - name: 'Método init: CPapFile'
+                        - name: 'Método Init : CPapFile'
                           href: init-method---cpapfile.md
                         - name: 'Método Save: CPapFile'
                           href: save-method---cpapfile.md
-                        - name: 'Método de carga: CPapFile'
+                        - name: 'Método Load: CPapFile'
                           href: load-method---cpapfile.md
-            - name: Ejemplo de servidor de almacenamiento estructurado (StoServe)
+            - name: Ejemplo Storage servidor estructurado (StoServe)
               href: structured-storage-server-sample--stoserve-.md
               items:
                 - name: Información general de StoServe
                   href: stoserve-overview.md
-                - name: Usar StoServe
+                - name: Uso de StoServe
                   href: using-stoserve.md
-                - name: Crear y ejecutar el ejemplo StoServe
+                - name: Creación y ejecución de un ejemplo de StoServe
                   href: create-and-run-stoserve-sample.md
                   items:
                     - name: Métodos IPaper
                       href: ipaper-methods.md
                       items:
-                        - name: 'IPaper:: Load'
+                        - name: 'IPaper::Load'
                           href: ipaper--load.md
-                        - name: 'IPaper:: redraw'
+                        - name: 'IPaper::Redraw'
                           href: ipaper--redraw.md
-                        - name: 'IPaper:: Save'
+                        - name: 'IPaper::Save'
                           href: ipaper--save.md
                     - name: Métodos IPaperSink
                       href: ipapersink-methods.md
                     - name: 'Estructuras: StoServe'
                       href: structures---stoserve.md
-                    - name: Consideraciones de Unicode
+                    - name: Consideraciones sobre Unicode
                       href: unicode-considerations.md
         - name: Administrar propiedades
           href: managing-properties.md
           items:
-            - name: Consideraciones sobre el almacenamiento de propiedades
+            - name: Consideraciones Storage propiedades
               href: property-storage-considerations.md
-        - name: Administrar conjuntos de propiedades
+        - name: Administración de conjuntos de propiedades
           href: managing-property-sets.md
           items:
-            - name: Implementaciones de conjuntos de propiedades en COM
+            - name: Implementaciones de conjunto de propiedades en COM
               href: property-set-implementations-in-com.md
               items:
-                - name: Consideraciones sobre los conjuntos de propiedades
+                - name: Consideraciones sobre el conjunto de propiedades
                   href: property-set-considerations.md
                   items:
-                    - name: Consideraciones de implementación de IPropertySetStorage
+                    - name: Consideraciones sobre la implementación de IPropertySetStorage
                       href: ipropertysetstorage-implementation-considerations.md
                       items:
                         - name: Nombres en IStorage
                           href: names-in-istorage.md
-                        - name: Objetos de almacenamiento y de secuencia para un conjunto de propiedades
+                        - name: Storage y objetos de secuencia para un conjunto de propiedades
                           href: storage-vs--stream-for-a-property-set.md
-                        - name: Establecimiento del identificador de clase del conjunto de propiedades
+                        - name: Establecer el identificador de clase del conjunto de propiedades
                           href: setting-the-property-set-class-identifier.md
                         - name: Puntos de sincronización
                           href: synchronization-points.md
@@ -207,15 +207,15 @@
                           href: dictionary.md
                         - name: Extensiones
                           href: extensions.md
-                        - name: Serialización de conjunto de propiedades
+                        - name: Serialización del conjunto de propiedades
                           href: version-0-vs--version-1-property-set-serialization.md
                 - name: Almacenar conjuntos de propiedades
                   href: storing-property-sets.md
                 - name: Características de rendimiento
                   href: performance-characteristics.md
-                - name: Implementar el conjunto de propiedades de información de Resumen
+                - name: Implementar el conjunto de propiedades Demmary Information
                   href: implementing-the-summary-information-property-set.md
-    - name: Referencia de almacenamiento estructurado
+    - name: Referencia de Storage estructura
       href: structured-storage-reference.md
       items:
         - name: Interfaces
@@ -260,7 +260,7 @@
                   href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropstg-reset
                 - name: Omitir
                   href: /windows/desktop/api/propidl/nf-propidl-ienumstatpropstg-skip
-                - name: 'IEnumSTATPROPSTG: implementación de archivos compuestos'
+                - name: 'IEnumSTATPROPSTG: implementación de archivo compuesto'
                   href: ienumstatpropstg-compound-file-implementation.md
             - name: IEnumSTATSTG
               href: /windows/desktop/api/Objidl/nn-objidl-ienumstatstg
@@ -280,7 +280,7 @@
               items:
                 - name: FillAppend
                   href: /windows/desktop/api/Objidl/nf-objidl-ifilllockbytes-fillappend
-                - name: FillAt
+                - name: Fillat
                   href: /windows/desktop/api/Objidl/nf-objidl-ifilllockbytes-fillat
                 - name: RemoteFillAppend
                   href: /previous-versions/windows/desktop/legacy/aa379228(v=vs.85)
@@ -326,16 +326,16 @@
                   href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-unlockregion
                 - name: WriteAt
                   href: /windows/desktop/api/Objidl/nf-objidl-ilockbytes-writeat
-                - name: ILockBytes-File-Based implementación
+                - name: 'ILockBytes: File-Based implementación'
                   href: ilockbytes-file-based-implementation.md
                 - name: 'ILockBytes: implementación de memoria global'
                   href: ilockbytes-global-memory-implementation.md
             - name: IMemoryAllocator
               href: imemoryallocator.md
               items:
-                - name: Asignación
+                - name: Asignar
                   href: imemoryallocator-allocate.md
-                - name: Gratuito
+                - name: Gratis
                   href: imemoryallocator-free.md
             - name: IPropertySetStorage
               href: /windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage
@@ -348,11 +348,11 @@
                   href: /windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-enum
                 - name: Abrir
                   href: /windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-open
-                - name: IPropertySetStorage-Compound la implementación de archivos
+                - name: IPropertySetStorage-Compound de archivos
                   href: ipropertysetstorage-compound-file-implementation.md
-                - name: 'IPropertySetStorage: implementación del sistema de archivos NTFS'
+                - name: Implementación del sistema de archivos IPropertySetStorage-NTFS
                   href: ipropertysetstorage-ntfs-file-system-implementation.md
-                - name: 'IPropertySetStorage: implementación independiente'
+                - name: Implementación independiente de IPropertySetStorage
                   href: ipropertysetstorage-stand-alone-implementation.md
             - name: IPropertyStorage
               href: /windows/desktop/api/Propidl/nn-propidl-ipropertystorage
@@ -393,7 +393,7 @@
                   href: ipropertystorage-ntfs-file-system-implementation.md
                 - name: 'IPropertyStorage: implementación independiente'
                   href: ipropertystorage-stand-alone-implementation.md
-                - name: Diferencias entre las implementaciones de archivos independientes y compuestos
+                - name: Diferencias entre implementaciones de archivos independientes y compuestas
                   href: differences-between-stand-alone-and-compound-file-implementations.md
             - name: IRootStorage
               href: /windows/desktop/api/Objidl/nn-objidl-irootstorage
@@ -422,7 +422,7 @@
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-copyto
                 - name: CreateStorage
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-createstorage
-                - name: CreateStream (
+                - name: CreateStream
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-createstream
                 - name: DestroyElement
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-destroyelement
@@ -430,7 +430,7 @@
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-enumelements
                 - name: MoveElementTo
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-moveelementto
-                - name: OpenStorage
+                - name: Openstorage
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-openstorage
                 - name: OpenStream
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-openstream
@@ -450,9 +450,9 @@
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-setstatebits
                 - name: Estadística
                   href: /windows/desktop/api/Objidl/nf-objidl-istorage-stat
-                - name: Implementación de archivos compuestos de IStorage
+                - name: 'IStorage: implementación de archivos compuestos'
                   href: istorage-compound-file-implementation.md
-            - name: IStream
+            - name: Istream
               href: /windows/desktop/api/Objidl/nn-objidl-istream
               items:
                 - name: Clonar
@@ -477,9 +477,9 @@
                   href: /windows/desktop/api/Objidl/nf-objidl-istream-stat
                 - name: UnlockRegion
                   href: /windows/desktop/api/Objidl/nf-objidl-istream-unlockregion
-                - name: Implementación de archivos compuestos de IStream
+                - name: 'IStream: implementación de archivos compuestos'
                   href: istream-compound-file-implementation.md
-        - name: Functions
+        - name: Funciones
           href: functions.md
           items:
             - name: CreateILockBytesOnHGlobal
@@ -577,7 +577,7 @@
               href: /windows/win32/api/propidl/ns-propidl-propvariant
             - name: RemSNB
               href: /windows/win32/api/Objidl/ns-objidl-remsnb
-            - name: SNB
+            - name: Snb
               href: snb.md
             - name: STATPROPSETSTG
               href: /windows/win32/api/propidl/ns-propidl-statpropsetstg
@@ -609,16 +609,16 @@
         - name: Constantes
           href: constants.md
           items:
-            - name: Constantes de PROPSETFLAG
+            - name: Constantes PROPSETFLAG
               href: propsetflag-constants.md
-            - name: Constantes de STGM
+            - name: Constantes STGM
               href: stgm-constants.md
         - name: Ejemplos
           href: samples.md
           items:
             - name: Ejemplo de WriteRead
               href: writeread-sample.md
-            - name: Ejemplo de EnumAll
+            - name: Ejemplo EnumAll
               href: enumall-sample.md
-            - name: Ejemplo de StgCreatePropSetStg
+            - name: Ejemplo StgCreatePropSetStg
               href: stgcreatepropsetstg-sample.md

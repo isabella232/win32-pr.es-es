@@ -1,10 +1,10 @@
 ---
 title: Elemento IdleTrigger (triggerGroup)
-description: Especifica un desencadenador que inicia una tarea cuando el equipo entra en un estado de inactividad.
+description: Especifica un desencadenador que inicia una tarea cuando el equipo entra en estado de inactividad.
 ms.assetid: c3e317b5-d1a7-46de-ace5-e066452583d3
 keywords:
 - desencadenador inactivo, elemento XML
-- Programador de tareas del elemento IdleTrigger
+- Elemento IdleTrigger Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 221d272145670b9514cde5ffbe8b02e5ddcd6e0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bb3986c94837c7970d178a90341c97e9857c51d346ce0007a491a86f42e82e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125835"
 ---
 # <a name="idletrigger-triggergroup-element"></a>Elemento IdleTrigger (triggerGroup)
 
-Especifica un desencadenador que inicia una tarea cuando el equipo entra en un estado de inactividad. Para obtener información sobre las condiciones de inactividad, consulte [condiciones de inactividad de tareas](task-idle-conditions.md).
+Especifica un desencadenador que inicia una tarea cuando el equipo entra en estado de inactividad. Para obtener información sobre las condiciones de inactividad, vea [Task Idle Conditions](task-idle-conditions.md).
 
 ``` syntax
 <xs:element name="IdleTrigger"
@@ -31,7 +31,7 @@ Especifica un desencadenador que inicia una tarea cuando el equipo entra en un e
  />
 ```
 
-El elemento **IdleTrigger** se define mediante [**triggerGroup**](taskschedulerschema-triggergroup-group.md) .
+El **elemento IdleTrigger** se define mediante [**triggerGroup**](taskschedulerschema-triggergroup-group.md) .
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -50,9 +50,9 @@ El elemento **IdleTrigger** se define mediante [**triggerGroup**](taskschedulers
 | Elemento                                                                                                        | Tipo                                                                     | Descripción                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [**Habilitado (triggerBaseType)**](taskschedulerschema-enabled-triggerbasetype-element.md)                       | boolean                                                                  | Especifica que el desencadenador está habilitado.<br/>                                                                                  |
-| [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | Especifica la fecha y hora de desactivación del desencadenador. El desencadenador no puede iniciar la tarea después de que se haya desactivado.<br/> |
-| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Especifica la cantidad máxima de tiempo que el desencadenador puede iniciar la tarea.<br/>                                   |
-| [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.<br/>          |
+| [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | Especifica la fecha y hora en que se desactiva el desencadenador. El desencadenador no puede iniciar la tarea después de desactivarla.<br/> |
+| [**ExecutionTimeLimit (triggerBaseType)**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Especifica la cantidad máxima de tiempo en la que el desencadenador puede iniciar la tarea.<br/>                                   |
+| [**Repetición (triggerBaseType)**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.<br/>          |
 | [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)           | dateTime                                                                 | Especifica la fecha y hora en que se activa el desencadenador.<br/>                                                              |
 
 
@@ -67,13 +67,13 @@ El elemento **IdleTrigger** se define mediante [**triggerGroup**](taskschedulers
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripting, se especifica un desencadenador inactivo mediante el objeto [**IdleTrigger**](idletrigger.md) .
+Para el desarrollo de scripting, se especifica un desencadenador inactivo mediante el [**objeto IdleTrigger.**](idletrigger.md)
 
-En el desarrollo de C++, se especifica un desencadenador inactivo mediante la interfaz [**IIdleTrigger**](/windows/win32/api/taskschd/nn-taskschd-iidletrigger) .
+Para el desarrollo de C++, se especifica un desencadenador inactivo mediante la [**interfaz IIdleTrigger.**](/windows/win32/api/taskschd/nn-taskschd-iidletrigger)
 
-Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos de [**triggerBaseType**](taskschedulerschema-triggerbasetype-complextype.md) . Estos elementos se deben agregar en la secuencia que se muestra a continuación.
+Los elementos secundarios enumerados anteriormente se definen mediante los tipos de elementos complejos [**triggerBaseType.**](taskschedulerschema-triggerbasetype-complextype.md) Estos elementos deben agregarse en la secuencia que se muestra a continuación.
 
 -   [**StartBoundary (triggerBaseType)**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 -   [**EndBoundary (triggerBaseType)**](taskschedulerschema-endboundary-triggerbasetype-element.md)
@@ -83,7 +83,7 @@ Los elementos secundarios enumerados anteriormente se definen mediante los tipos
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define un desencadenador idle.
+El xml siguiente define un desencadenador inactivo.
 
 
 ```XML
@@ -104,8 +104,8 @@ En el código XML siguiente se define un desencadenador idle.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -113,7 +113,7 @@ En el código XML siguiente se define un desencadenador idle.
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

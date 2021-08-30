@@ -1,6 +1,6 @@
 ---
-title: Obtención de datos del equipo local
-description: Aunque Administración remota de Windows y WS-Management protocolo están diseñados explícitamente para la comunicación remota, el establecimiento de una sesión en el equipo local es el caso más simple.
+title: Obtener datos del equipo local
+description: Aunque Windows administración remota y WS-Management protocolo están diseñados explícitamente para la comunicación remota, el caso más sencillo es establecer una sesión en el equipo local.
 ms.assetid: 7f08b557-bbd4-4f67-b5e5-b84e8af58657
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,36 +10,36 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ccb71fd176bf3faf425ea57d06beb27788f41a62
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 311a5960fc1b2408532acdf1b8048f7146598857696b8f7aa653e457be8be3cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103791704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120121755"
 ---
-# <a name="obtaining-data-from-the-local-computer"></a>Obtención de datos del equipo local
+# <a name="obtaining-data-from-the-local-computer"></a>Obtener datos del equipo local
 
-Aunque Administración remota de Windows y WS-Management protocolo están diseñados explícitamente para la comunicación remota, el establecimiento de una sesión en el equipo local es el caso más simple. Algunos scripts pueden requerir datos de acceso en el equipo local, así como en equipos remotos.
+Aunque Windows administración remota y WS-Management protocolo están diseñados explícitamente para la comunicación remota, el caso más sencillo es establecer una sesión en el equipo local. Algunos scripts pueden requerir datos de acceso en el equipo local, así como en equipos remotos.
 
-**Versión de WinRM 2,0:  **
+**WinRM versión 2.0: **
 
-Todas las operaciones se consideran remotas y el servicio WinRM debe iniciarse antes de que se realice cualquier operación. Si no se especifica un destino remoto, se usa de forma predeterminada el localhost y todas las operaciones se enviarán al servicio WinRM local. Para obtener más información acerca de cómo iniciar el servicio WinRM, consulte [instalación y configuración de administración remota de Windows](installation-and-configuration-for-windows-remote-management.md).
+Todas las operaciones se consideran remotas y el servicio WinRM debe iniciarse antes de realizar cualquier operación. Si no se especifica un destino remoto, se usa localhost de forma predeterminada y todas las operaciones se enviarán al servicio WinRM local. Para obtener más información sobre cómo iniciar el servicio WinRM, vea [Instalación y configuración para Windows administración remota.](installation-and-configuration-for-windows-remote-management.md)
 
-Al usar el servicio WinRM para las operaciones locales, deben tenerse en cuenta los siguientes factores:
+Al usar el servicio WinRM para las operaciones locales, se deben tener en cuenta los siguientes factores:
 
--   La configuración de WinRM local solo la pueden leer los administradores.
--   Los espacios de nombres WMI deben tener establecidos permisos de habilitación remota. Para obtener más información, consulte [protección de una conexión WMI remota](../wmisdk/securing-a-remote-wmi-connection.md).
--   Si no se crea un [*agente de escucha*](windows-remote-management-glossary.md) de WinRM, el servicio WinRM escucha las solicitudes locales en el puerto 47001.
+-   Los administradores solo pueden leer la configuración local de WinRM.
+-   Los espacios de nombres WMI deben tener establecidos permisos de habilitación remota. Para obtener más información, [vea Proteger una conexión WMI remota.](../wmisdk/securing-a-remote-wmi-connection.md)
+-   Si no se crea [*un agente*](windows-remote-management-glossary.md) de escucha de WinRM, el servicio WinRM escucha las solicitudes locales en el puerto 47001.
 
-Cada script de WinRM debe comenzar estableciendo una sesión o una conexión a un equipo mediante la creación de un objeto de [**sesión**](session.md) . Una vez creada la sesión, puede usar los métodos de objeto de **sesión** , como [**Session. Enumerate**](session-enumerate.md) o [**Session. Invoke**](session-invoke.md) para obtener datos o para ejecutar métodos.
+Cada script de WinRM debe empezar estableciendo una sesión o conexión a un equipo mediante la creación de un [**objeto Session.**](session.md) Una vez creada la sesión, puede usar los métodos de objeto **Session,** como [**Session.Enumerate**](session-enumerate.md) o [**Session.Invoke**](session-invoke.md) para obtener datos o ejecutar métodos.
 
-La creación de una sesión es algo similar a la [conexión](/windows/desktop/WmiSdk/wmi-tasks--connecting-to-the-wmi-service) a un espacio de nombres de instrumental de administración de Windows ([WMI](/windows/desktop/WmiSdk/wmi-start-page)). La sesión es esencialmente una capa que le permite enviar y recibir datos a través de mensajes [*SOAP*](windows-remote-management-glossary.md) y el protocolo WS-Management. Para obtener más información, vea [protocolo WS-Management](ws-management-protocol.md).
+La creación de una sesión [](/windows/desktop/WmiSdk/wmi-tasks--connecting-to-the-wmi-service) es algo similar a conectarse a un espacio de nombres Windows Management Instrumentation[(WMI).](/windows/desktop/WmiSdk/wmi-start-page) La sesión es básicamente una capa que permite enviar y recibir datos a través de mensajes [*SOAP*](windows-remote-management-glossary.md) y el WS-Management protocolo. Para obtener más información, [vea protocolo WS-Management](ws-management-protocol.md).
 
-Al llamar al método [**WSMan. createSession**](wsman-createsession.md) para crear un objeto de [**sesión**](session.md) , se iniciará una [*sesión*](windows-remote-management-glossary.md) que se conecta al WinRM local.
+Al llamar [**al método WSMan.CreateSession**](wsman-createsession.md) para [](windows-remote-management-glossary.md) crear un [**objeto Session,**](session.md) se iniciará una sesión que se conecta al WinRM local.
 
-**Para crear una sesión WSMan y obtener datos**
+**Para crear una sesión de WSMan y obtener datos**
 
-1.  Cree un objeto [**WSMan**](wsman.md) .
+1.  Cree un [**objeto WSMan.**](wsman.md)
 
     ```VB
     Set objWsman = CreateObject("Wsman.Automation")
@@ -47,7 +47,7 @@ Al llamar al método [**WSMan. createSession**](wsman-createsession.md) para cre
 
     
 
-2.  Cree una sesión mediante una llamada al método [**WSMan. createSession**](wsman-createsession.md) . Esta sesión se ejecuta con el nombre de usuario y la contraseña de inicio de sesión y puede obtener datos a través del WinRM local.
+2.  Cree una sesión llamando al [**método WSMan.CreateSession.**](wsman-createsession.md) Esta sesión se ejecuta con el nombre de usuario y la contraseña de inicio de sesión y puede obtener datos a través de WinRM local.
 
     ```VB
     Set objSession = objWsman.CreateSession()
@@ -55,7 +55,7 @@ Al llamar al método [**WSMan. createSession**](wsman-createsession.md) para cre
 
     
 
-3.  Cree un [*URI*](windows-remote-management-glossary.md) de recurso para identificar el [*recurso*](windows-remote-management-glossary.md) que desea administrar o para el que desea obtener los datos. Para obtener más información sobre cómo dar formato a un URI, vea [URI de recursos](resource-uris.md). Este URI de recurso es para una instancia específica de la clase de [**\_ servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service) de WMI, el servicio WinMgmt. Para obtener más información, vea [administración remota de Windows y WMI](windows-remote-management-and-wmi.md).
+3.  Cree un [*URI de*](windows-remote-management-glossary.md) recurso para identificar [*el*](windows-remote-management-glossary.md) recurso que desea administrar o para el que desea obtener datos. Para obtener más información sobre cómo dar formato a un URI, vea [Uri de recursos.](resource-uris.md) Este URI de recurso es para una instancia específica de la clase servicio [**Win32 \_ de**](/windows/desktop/CIMWin32Prov/win32-service) WMI, el servicio Winmgmt. Para obtener más información, [vea Windows Administración remota y WMI.](windows-remote-management-and-wmi.md)
 
     ```VB
     strResource = "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32_Service?Name=Winmgmt"
@@ -63,7 +63,7 @@ Al llamar al método [**WSMan. createSession**](wsman-createsession.md) para cre
 
     
 
-4.  Llamar a métodos de [**sesión**](session.md) que obtienen o enumeran datos mediante el URI de recurso. Para obtener más información, consulte la [API de scripting de WinRM](winrm-scripting-api.md).
+4.  Llame [**a métodos**](session.md) session que obtienen o enumeran datos mediante el URI del recurso. Para obtener más información, vea [WinRM Scripting API](winrm-scripting-api.md).
 
     ```VB
     strResponse = objSession.Get(strResource)
@@ -72,9 +72,9 @@ Al llamar al método [**WSMan. createSession**](wsman-createsession.md) para cre
 
     
 
-5.  Para obtener o administrar datos de otro equipo o usar diferentes métodos de autenticación, consulte [obtención de datos de un equipo remoto](obtaining-data-from-a-remote-computer.md).
+5.  Para obtener o administrar datos de otro equipo o usar distintos métodos de autenticación, vea [Obtener datos de un equipo remoto.](obtaining-data-from-a-remote-computer.md)
 
-En el siguiente ejemplo de código de VBScript se muestra el script completo que obtiene la instancia específica [**del \_ servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service) de WMI denominado "WinMgmt".
+En el siguiente ejemplo de código de VBScript se muestra el script completo que obtiene la instancia específica del servicio [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-service) de WMI denominada "Winmgmt".
 
 
 ```VB
@@ -87,7 +87,7 @@ Wscript.Echo strResponse
 
 
 
-En el siguiente ejemplo de código de VBScript se muestra el script completo con la transformación de datos. Para obtener más información, vea [Mostrar la salida XML de los scripts de WinRM](displaying-xml-output-from-winrm-scripts.md).
+En el siguiente ejemplo de código de VBScript se muestra el script completo con la transformación de datos. Para obtener más información, vea [Mostrar la salida XML de scripts winRM.](displaying-xml-output-from-winrm-scripts.md)
 
 
 ```VB
@@ -109,15 +109,15 @@ Wscript.Echo xmlFile.TransformNode(xslFile)
 
 <dl> <dt>
 
-[Acerca de Administración remota de Windows](about-windows-remote-management.md)
+[Acerca Windows administración remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Usar Administración remota de Windows](using-windows-remote-management.md)
+[Uso de Windows administración remota](using-windows-remote-management.md)
 </dt> <dt>
 
-[Referencia de Administración remota de Windows](windows-remote-management-reference.md)
+[Windows Referencia de administración remota](windows-remote-management-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,9 +4,9 @@ description: Especifica si el dispositivo es opcional para el redireccionamiento
 ms.assetid: a7226c40-7e22-48af-9895-b1fb1f861b58
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad IsOptionalDevice
-- Propiedad IsOptionalDevice Servicios de Escritorio remoto, interfaz IMsRdpDeviceV2
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceV2, propiedad IsOptionalDevice
+- Propiedad IsOptionalDevice Servicios de Escritorio remoto
+- Propiedad IsOptionalDevice Servicios de Escritorio remoto , interfaz IMsRdpDeviceV2
+- Interfaz IMsRdpDeviceV2 Servicios de Escritorio remoto , propiedad IsOptionalDevice
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ad0e459a91e88573515128ca37033768f7839ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81cf24e08b8d6c485d08341769391061261b388b7a69c8e887fa094dfd1f03b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120125665"
 ---
-# <a name="imsrdpdevicev2isoptionaldevice-property"></a>IMsRdpDeviceV2:: IsOptionalDevice (propiedad)
+# <a name="imsrdpdevicev2isoptionaldevice-property"></a>Propiedad IMsRdpDeviceV2::IsOptionalDevice
 
 Especifica si el dispositivo es opcional para el redireccionamiento USB.
 
@@ -44,7 +44,7 @@ HRESULT get_IsOptionalDevice(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**true** si el dispositivo es opcional; en caso contrario, **false**.
+**true** si el dispositivo es opcional; de lo contrario, **false**.
 
 ## <a name="requirements"></a>Requisitos
 

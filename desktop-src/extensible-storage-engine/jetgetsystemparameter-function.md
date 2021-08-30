@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 608a9c464ca645668483934a28a3f79945cd443d
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 4cdb8769ff05dde61df13d07564a1e0467fa8897
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984748"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474081"
 ---
 # <a name="jetgetsystemparameter-function"></a>JetGetSystemParameter (Función)
 
@@ -55,13 +55,13 @@ Instancia de que se va a usar para esta llamada.
 
 Para Windows 2000, este parámetro se omite y siempre debe ser **NULL.**
 
-Para Windows XP y versiones posteriores, este parámetro está algo sobrecargado. Si el motor funciona en modo heredado (modo de compatibilidad Windows 2000) donde solo se admite una instancia, este parámetro puede ser **NULL** o puede contener la instancia real devuelta por [JetInit](./jetinit-function.md). En cualquier caso, toda la configuración de parámetros del sistema se lee de esa instancia. Si el motor funciona en modo de varias instancias, este parámetro puede ser **NULL** o un puntero a una instancia creada mediante [JetInit](./jetinit-function.md) o [JetCreateInstance](./jetcreateinstance-function.md). Cuando este parámetro es **NULL,** se lee la configuración global del parámetro del sistema (o el valor predeterminado). Cuando este parámetro es una instancia, se lee la configuración del parámetro del sistema para esa instancia.
+Para Windows XP y versiones posteriores, este parámetro está algo sobrecargado. Si el motor funciona en modo heredado (Windows modo de compatibilidad 2000) donde solo se admite una instancia, este parámetro puede ser **NULL** o puede contener la instancia real devuelta por [JetInit](./jetinit-function.md). En cualquier caso, toda la configuración de parámetros del sistema se lee de esa instancia. Si el motor funciona en modo de varias instancias, este parámetro puede ser **NULL** o un puntero a una instancia creada mediante [JetInit](./jetinit-function.md) o [JetCreateInstance.](./jetcreateinstance-function.md) Cuando este parámetro es **NULL,** se lee la configuración global del parámetro del sistema (o el valor predeterminado). Cuando este parámetro es una instancia de , se lee la configuración del parámetro del sistema para esa instancia.
 
 *sesid*
 
 Sesión que se va a usar para esta llamada.
 
-Cuando se especifica, se omite la instancia especificada y se usa la instancia asociada a la sesión.
+Cuando se especifica, se omite la instancia especificada y se usará la instancia asociada a la sesión.
 
 *paramid*
 
@@ -89,10 +89,10 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad en la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInitInProgress</p> | <p>No es posible completar la operación porque se está inicializando la instancia asociada a la sesión.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro.</p><p>Esto puede ocurrir para <strong>JetGetSystemParameter</strong> cuando:</p><ul><li><p>El identificador de parámetro del sistema especificado no es válido o no es compatible.</p></li><li><p>El parámetro del sistema especificado requiere que se especifique el búfer de salida de enteros y que el puntero del búfer de salida sea <strong>NULL.</strong></p></li><li><p>El parámetro del sistema especificado requiere que se especifique un búfer de salida de cadena y que el puntero del búfer de salida sea <strong>NULL.</strong></p><p><strong>Windows Vista:</strong> Esto solo puede ocurrir en Windows Vista y versiones posteriores.</p></li><li><p>El parámetro del sistema especificado requiere que se proporciona un búfer de salida de cadena y el tamaño de ese búfer de salida es demasiado pequeño para aceptar una cadena terminada en NULL.</p><p><strong>Windows Vista:</strong> Esto solo puede ocurrir en Windows Vista y versiones posteriores.</p></li><li><p>No se puede leer el parámetro del sistema especificado porque es de solo escritura.</p></li><li><p>El parámetro del sistema especificado es solo global y se intentó leer un valor específico de instancia para ese parámetro del sistema. Esto solo puede ocurrir en Windows XP y versiones posteriores.</p></li><li><p>El parámetro del sistema especificado es solo por instancia y se intentó leer el valor global de ese parámetro del sistema. Esto solo puede ocurrir en Windows XP y versiones posteriores.</p></li></ul> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos. Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro.</p><p>Esto puede ocurrir para <strong>JetGetSystemParameter</strong> cuando:</p><ul><li><p>El identificador de parámetro del sistema especificado no es válido o no se admite.</p></li><li><p>El parámetro del sistema especificado requiere que se especifique el búfer de salida entero y que el puntero del búfer de salida sea <strong>NULL.</strong></p></li><li><p>El parámetro del sistema especificado requiere que se especifique un búfer de salida de cadena y que el puntero del búfer de salida sea <strong>NULL.</strong></p><p><strong>Windows Vista:</strong> Esto solo puede ocurrir en Windows Vista y versiones posteriores.</p></li><li><p>El parámetro del sistema especificado requiere que se proporciona un búfer de salida de cadena y el tamaño de ese búfer de salida es demasiado pequeño para aceptar una cadena terminada en NULL.</p><p><strong>Windows Vista:</strong> Esto solo puede ocurrir en Windows Vista y versiones posteriores.</p></li><li><p>No se puede leer el parámetro del sistema especificado porque es de solo escritura.</p></li><li><p>El parámetro del sistema especificado es solo global y se intentó leer un valor específico de instancia para ese parámetro del sistema. Esto solo puede ocurrir en Windows XP y versiones posteriores.</p></li><li><p>El parámetro del sistema especificado es solo por instancia y se intentó leer el valor global de ese parámetro del sistema. Esto solo puede ocurrir en Windows XP y versiones posteriores.</p></li></ul> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
@@ -107,21 +107,14 @@ Si se ejecuta correctamente, el búfer de salida adecuado para el parámetro del
 
 En caso de error, el estado de los búferes de salida será indefinido.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Hay un problema importante en esta API que está presente en todas las versiones. Si se solicita un parámetro del sistema con un valor de cadena y el búfer de salida es demasiado pequeño para recibir toda la configuración de parámetros del sistema, JET_wrnBufferTruncated no se devolverá. JET_errSuccess se devuelve en su lugar. Si la longitud de la cadena devuelta es igual al tamaño del búfer de salida menos el terminador **NULL,** el autor de la llamada debe reaccionar como si JET_wrnBufferTruncated se devolvieron. Si se especifica un búfer de salida de cadena de tamaño cero, el autor de la llamada debe reaccionar como si JET_errInvalidParameter se devolvieron.
+Hay un problema importante en esta API que está presente en todas las versiones. Si se solicita un parámetro del sistema con un valor de cadena y el búfer de salida es demasiado pequeño para recibir toda la configuración de parámetros del sistema, JET_wrnBufferTruncated no se devolverá. JET_errSuccess se devuelve en su lugar. Si la longitud de la cadena devuelta es igual al tamaño del búfer de salida menos el terminador **NULL,** el autor de la llamada debe reaccionar como si se devolvieron JET_wrnBufferTruncated datos. Si se especifica un búfer de salida de cadena de tamaño cero, el autor de la llamada debe reaccionar como si JET_errInvalidParameter se devolvieron.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
-| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetSystemParameterW</strong> (Unicode) y <strong>JetGetSystemParameterA</strong> (ANSI).</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetSystemParameterW</strong> (Unicode) y <strong>JetGetSystemParameterA</strong> (ANSI).</p> | 
 
 
 
