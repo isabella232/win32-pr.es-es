@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a81ac091dc1905c1cbcd2c41575c907ce957e60c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e99aa3e88a13327d7de133b8207ee9626db23a4cbbef9c9ffcaca5582d8e10d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120111515"
 ---
 # <a name="ishelldispatch2getsysteminformation-method"></a>Método IShellDispatch2.GetSystemInformation
 
@@ -96,7 +96,7 @@ DoubleClickTime
 
 **Entero**
 
-Tiempo de doble clic, en milisegundos.
+Hora de doble clic, en milisegundos.
 
 ProcessorLevel
 
@@ -114,7 +114,7 @@ ProcessorArchitecture
 
 **Entero**
 
-Arquitectura del procesador. Para obtener más información, vea la explicación del **miembro wProcessorArchitecture** de la [**estructura SYSTEM \_ INFO.**](/windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info)
+Arquitectura del procesador. Para más información, consulte la explicación del **miembro wProcessorArchitecture** de la [**estructura SYSTEM \_ INFO.**](/windows/win32/api/sysinfoapi/ns-sysinfoapi-system_info)
 
 PhysicalMemoryInstalled
 
@@ -128,13 +128,13 @@ IsOS \_ Professional
 
 **Boolean**
 
-Establezca en **true** si el sistema operativo es Windows XP Professional Edition; de lo contrario, **false**.
+Se establece **en true** si el sistema operativo está Windows XP Professional Edition; de lo contrario, **false**.
 
 IsOS \_ Personal
 
 **Boolean**
 
-Establezca en **true** si el sistema operativo es Windows XP Home Edition; de lo contrario, **false**.
+Se establece **en true** si el sistema operativo está Windows XP Home Edition; de lo contrario, **false**.
 
 Lo siguiente solo es válido en Windows XP y versiones posteriores.
 
@@ -152,9 +152,9 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso **de GetSystemInformation** para JScript y VBScript.
+En los ejemplos siguientes se muestra el uso de **GetSystemInformation** para JScript y VBScript.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -197,11 +197,11 @@ Vbscript:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 

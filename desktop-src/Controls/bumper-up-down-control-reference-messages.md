@@ -1,17 +1,17 @@
 ---
-title: Mensajes de Up-Down
-description: Mensajes de Up-Down
+title: Up-Down mensajes
+description: Up-Down mensajes
 ms.assetid: 5d21ee48-5182-4533-82e2-920cb3f028e4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4094230faa9ee9c7563fdd914e3a06d90b52418a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 5c5cab967d8a235175deb74ba7387d514ff8042c0a953e6b50a35fca3ce693c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105653233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968735"
 ---
-# <a name="up-down-messages"></a>Mensajes de Up-Down
+# <a name="up-down-messages"></a>Up-Down mensajes
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -28,7 +28,7 @@ ms.locfileid: "105653233"
 -   [**UDM \_ SETBUDDY**](udm-setbuddy.md)
 -   [**UDM \_ SETPOS**](udm-setpos.md)
 -   [**UDM \_ SETPOS32**](udm-setpos32.md)
--   [**UDM \_ SetRange**](udm-setrange.md)
+-   [**UDM \_ SETRANGE**](udm-setrange.md)
 -   [**UDM \_ SETRANGE32**](udm-setrange32.md)
 -   [**UDM \_ SETUNICODEFORMAT**](udm-setunicodeformat.md)
 

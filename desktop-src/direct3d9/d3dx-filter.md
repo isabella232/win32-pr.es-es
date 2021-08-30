@@ -4,16 +4,16 @@ ms.assetid: 0317b857-2512-4ad7-b6e3-82afdda7ea10
 title: D3DX_FILTER
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c7580749eca2134f899356c4632d8171b147aa7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d6ee3b0aeb9dcd67b6f6d361258255a867bcc1d7cca64f1c8e0c6065150a7b81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894135"
 ---
 # <a name="d3dx_filter"></a>FILTRO \_ D3DX
 
-Las marcas siguientes se usan para especificar los canales de una textura en los que se va a operar.
+Las marcas siguientes se usan para especificar en qué canales de una textura se va a operar.
 
 
 
@@ -23,26 +23,26 @@ Las marcas siguientes se usan para especificar los canales de una textura en los
 | PUNTO DE FILTRO \_ \_ D3DX     | Cada píxel de destino se calcula mediante el muestreo del píxel más cercano de la imagen de origen.                                                                                                                     |
 | D3DX \_ FILTER \_ LINEAR    | Cada píxel de destino se calcula mediante el muestreo de los cuatro píxeles más cercanos de la imagen de origen. Este filtro funciona mejor cuando la escala en ambos ejes es menor que dos.                                          |
 | TRIÁNGULO DE FILTRO D3DX \_ \_  | Cada píxel de la imagen de origen contribuye igualmente a la imagen de destino. Este es el más lento de los filtros.                                                                                           |
-| CUADRO DE FILTRO \_ \_ D3DX       | Cada píxel se calcula calcula calculando un promedio de un cuadro de 2 x 2 (x2) de píxeles a partir de la imagen de origen. Este filtro solo funciona cuando las dimensiones del destino son la mitad de las del origen, como es el caso de los mapas mip. |
+| CUADRO DE FILTRO \_ \_ D3DX       | Cada píxel se calcula calculando el promedio de un cuadro de 2 x 2(x2) de píxeles a partir de la imagen de origen. Este filtro solo funciona cuando las dimensiones del destino son la mitad de las del origen, como es el caso de los mapas mip. |
 | REFLEJO DEL FILTRO D3DX \_ \_ \_ U | Los píxeles del borde de la textura en el eje U deben reflejarse, no ajustarse.                                                                                                                           |
 | D3DX \_ FILTER \_ MIRROR \_ V | Los píxeles del borde de la textura en el eje v deben reflejarse, no ajustarse.                                                                                                                           |
-| REFLEJO DEL FILTRO D3DX \_ \_ \_ W | Los píxeles del borde de la textura en el eje w deben reflejarse, no ajustarse.                                                                                                                           |
-| REFLEJO DEL FILTRO D3DX \_ \_    | Especificar esta marca es igual que especificar las marcas D3DX \_ FILTER \_ MIRROR \_ U, D3DX \_ FILTER MIRROR V y \_ \_ D3DX \_ FILTER MIRROR \_ \_ W.                                                                     |
+| D3DX \_ FILTER \_ MIRROR \_ W | Los píxeles del borde de la textura en el eje w deben reflejarse, no ajustarse.                                                                                                                           |
+| REFLEJO DEL FILTRO D3DX \_ \_    | Especificar esta marca es lo mismo que especificar las marcas D3DX \_ FILTER \_ MIRROR \_ U, D3DX FILTER MIRROR V y \_ \_ \_ D3DX \_ FILTER MIRROR \_ \_ W.                                                                     |
 | D3DX \_ FILTER \_ DITHER    | La imagen resultante debe estar entrelazada mediante un algoritmo de dither ordenado de 4x4.                                                                                                                                  |
-| FILTRO D3DX \_ \_ SRGB \_ EN  | Los datos de entrada están en un espacio de colores sRGB (gamma 2.2).                                                                                                                                                              |
-| FILTRO D3DX \_ \_ SRGB \_ OUT | Los datos de salida están en el espacio de color sRGB (gamma 2.2).                                                                                                                                                         |
-| FILTRO D3DX \_ \_ SRGB      | Igual que especificar D3DX \_ FILTER \_ SRGB \_ IN \| D3DX \_ FILTER \_ SRGB \_ OUT.                                                                                                                                       |
+| FILTRO D3DX \_ \_ SRGB \_ IN  | Los datos de entrada están en el espacio de colores sRGB (gamma 2.2).                                                                                                                                                              |
+| D3DX \_ FILTER \_ SRGB \_ OUT | Los datos de salida están en el espacio de colores sRGB (gamma 2.2).                                                                                                                                                         |
+| D3DX \_ FILTER \_ SRGB      | Igual que especificar D3DX \_ FILTER \_ SRGB \_ IN \| D3DX \_ FILTER \_ SRGB \_ OUT.                                                                                                                                       |
 
 
 
  
 
-Cada filtro válido debe contener exactamente una de las marcas siguientes: D3DX \_ FILTER \_ NONE, D3DX \_ FILTER \_ POINT, D3DX \_ FILTER \_ LINEAR, D3DX FILTER TRIANGLE o \_ \_ D3DX \_ FILTER \_ BOX. Además, puede usar el operador OR para especificar cero o más de las siguientes marcas opcionales con un filtro válido: D3DX \_ FILTER \_ MIRROR \_ U, D3DX \_ FILTER MIRROR \_ \_ V, D3DX \_ FILTER MIRROR \_ \_ W, D3DX \_ FILTER MIRROR \_ W, D3DX \_ FILTER \_ DITHER, D3DX \_ FILTER \_ SRGB \_ IN, D3DX FILTER SRGB OUT o \_ \_ \_ D3DX \_ FILTER \_ SRGB SRGB.
+Cada filtro válido debe contener exactamente una de las marcas siguientes: D3DX \_ FILTER \_ NONE, D3DX \_ FILTER \_ POINT, D3DX \_ FILTER \_ LINEAR, D3DX FILTER TRIANGLE o \_ \_ D3DX \_ FILTER \_ BOX. Además, puede usar el operador OR para especificar cero o más de las siguientes marcas opcionales con un filtro válido: D3DX \_ FILTER \_ MIRROR \_ U, D3DX \_ FILTER MIRROR \_ \_ V, D3DX \_ FILTER MIRROR \_ \_ W, D3DX \_ FILTER MIRROR \_ W, D3DX \_ FILTER \_ DITHER, D3DX \_ FILTER \_ SRGB \_ IN, D3DX FILTER SRGB OUT o \_ \_ \_ D3DX \_ FILTER \_ SRGB.
 
-Especificar D3DX DEFAULT para este parámetro suele ser el equivalente a especificar \_ D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER. Sin embargo, D3DX \_ DEFAULT puede tener significados diferentes, dependiendo del método que use el filtro. Por ejemplo:
+Especificar D3DX DEFAULT para este parámetro suele ser equivalente a especificar \_ D3DX \_ FILTER \_ TRIANGLE \| D3DX \_ FILTER \_ DITHER. Sin embargo, D3DX \_ DEFAULT puede tener significados diferentes, dependiendo del método que use el filtro. Por ejemplo:
 
 -   Al usar [**D3DXCreateTextureFromFileEx,**](d3dxcreatetexturefromfileex.md)D3DX DEFAULT se asigna a \_ D3DX \_ FILTER TRIANGLE \_ \| D3DX \_ FILTER \_ DITHER.
--   Cuando se [**usa D3DXFilterTexture,**](d3dxfiltertexture.md)D3DX DEFAULT se asigna a D3DX FILTER BOX si el tamaño de textura es una potencia de dos \_ y \_ \_ D3DX \_ FILTER BOX \_ \| D3DX \_ FILTER DITHER \_ en caso contrario.
+-   Al usar [**D3DXFilterTexture,**](d3dxfiltertexture.md)D3DX DEFAULT se asigna a D3DX FILTER BOX si el tamaño de textura es una potencia de \_ dos y \_ \_ D3DX \_ FILTER BOX \_ \| D3DX \_ FILTER DITHER \_ en caso contrario.
 
 Haga referencia a cada método para buscar información sobre cómo se asigna el \_ filtro D3DX DEFAULT.
 

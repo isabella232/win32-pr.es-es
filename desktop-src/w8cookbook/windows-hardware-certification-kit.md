@@ -1,54 +1,54 @@
 ---
-title: Kit de certificación de hardware de Windows
-description: Kit de certificación de hardware de Windows
+title: Windows Kit de certificación de hardware
+description: Windows Kit de certificación de hardware
 ms.assetid: 99BD2D7D-8F9D-445E-AE04-6A58FFF3DCE6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dba820d62d6766f74549ed23f7a5abdccbca258b
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: 038e3bd113c6e8fd0285aa60af64d3574ff2129f05af6ed4608270a70c3f48aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "104078499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932115"
 ---
-# <a name="windows-hardware-certification-kit"></a>Kit de certificación de hardware de Windows
+# <a name="windows-hardware-certification-kit"></a>Windows Kit de certificación de hardware
 
 ## <a name="platforms"></a>Plataformas
 
- **Clientes** : Windows 7 \| Windows 8  
-**Servidores** : windows Server 2008 R2 \| Windows Server 2012  
-**Servidor/controlador** : Windows Server 2008 R2  
+ **Clientes:** Windows 7 \| Windows 8  
+**Servidores:** Windows Server 2008 R2 \| Windows Server 2012  
+**Servidor o controlador:** Windows Server 2008 R2  
 
 
 ## <a name="description"></a>Descripción
 
-El kit de certificación de hardware de Windows permite a los desarrolladores, ISV, IHV y OEM certificar sus dispositivos de hardware, sistemas y controladores de filtro para los sistemas operativos Windows más recientes. Contiene todas las herramientas y documentación que necesita para certificar el hardware y los controladores de filtro para estos sistemas operativos:
+El Kit de certificación de hardware de Windows permite a los desarrolladores, ISV, IHV y OEM certificar sus dispositivos de hardware, sistemas y controladores de filtro para los sistemas operativos de Windows más recientes. Contiene todas las herramientas y la documentación que necesita para certificar el hardware y los controladores de filtro para estos sistemas operativos:
 
--   Windows 8
--   Windows Server 2012
+-   Windows 8
+-   Windows Server 2012
 -   Windows 7
--   Windows Server 2008 R2
+-   Windows Server 2008 R2
 
-El kit de certificación de hardware de Windows sustituye al kit de logotipo de Windows y forma parte del programa de certificación de Windows.
+El kit Windows de certificación de hardware reemplaza el Kit de logotipo de Windows y forma parte del programa Windows certificación.
 
 ## <a name="usage-or-best-practices"></a>Uso o procedimientos recomendados
 
-Para poder probar cualquier controlador de hardware o de filtro, debe configurar el entorno de prueba adecuado en función del hardware o del controlador de filtro que está certificando. Esto incluye el controlador, el cliente y el hardware potencialmente adicional (por ejemplo, dispositivos multifunción) o software. Una vez configurado el entorno, puede probar el hardware con la nueva herramienta de estudio de HCK. En estos pasos se describe el proceso de prueba de certificación.
+Para poder probar cualquier controlador de hardware o filtro, debe configurar el entorno de prueba adecuado en función del hardware o el controlador de filtro que va a certificar. Esto incluye el controlador, el cliente y el hardware potencialmente adicional (por ejemplo, dispositivos multi-función) o software. Una vez configurado el entorno, puede probar el hardware mediante la nueva herramienta de HCK's Studio. En estos pasos se describe el proceso de prueba de certificación.
 
 1.  Configurar un entorno de prueba.
 2.  Crear un proyecto.
 3.  Cree uno o varios grupos de máquinas.
 4.  Seleccione las características que desea validar.
-5.  Seleccione y ejecute las pruebas en esas características.
+5.  Seleccione y ejecute pruebas con esas características.
 6.  Ver los resultados de las pruebas.
 7.  Envíe el paquete.
 
 ## <a name="resources"></a>Recursos
 
--   [Desarrollo de hardware de Windows](https://msdn.microsoft.com/windows/hardware/)
--   [Programa de certificación de hardware de Windows](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
+-   [Windows Desarrollo de hardware](https://msdn.microsoft.com/windows/hardware/)
+-   [Windows Programa de certificación de hardware](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
 -   [Empezar a desarrollar hardware para Windows](/previous-versions/gg507680(v=msdn.10))
 
- 
+ 
 
- 
+ 

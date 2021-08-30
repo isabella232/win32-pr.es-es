@@ -1,7 +1,7 @@
 ---
-description: El método GetBitMasks recupera las máscaras de color para un formato de videoinfo especificado.
+description: El método GetBitMasks recupera las máscaras de color para un formato VIDEOINFO especificado.
 ms.assetid: 72a9ba44-96de-4fff-a3fb-675d3dd080d8
-title: Método CImageDisplay. GetBitMasks (Winutil. h)
+title: Método CImageDisplay.GetBitMasks (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a2defe5e80a0d7311adcd19dca67119019623993
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd8a3eac08a9e058f76e369a401429b69637f6438d60892d2632b88de0a0bb38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120108465"
 ---
-# <a name="cimagedisplaygetbitmasks-method"></a>CImageDisplay. GetBitMasks, método
+# <a name="cimagedisplaygetbitmasks-method"></a>Método CImageDisplay.GetBitMasks
 
-El `GetBitMasks` método recupera las máscaras de color para un formato de [**videoinfo**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) especificado.
+El `GetBitMasks` método recupera las máscaras de color para un formato [**VIDEOINFO**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ const DWORD* GetBitMasks(
 *pVideoInfo* 
 </dt> <dd>
 
-Puntero a la estructura de **videoinfo** .
+Puntero a la **estructura VIDEOINFO.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve una matriz de tres valores **DWORD** .
+Devuelve una matriz de tres **valores DWORD.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el miembro de **bicompresión** son \_ campos de campos de BI, el método devuelve un puntero a las máscaras de color que se proporcionan en el miembro **dwBitMasks** . Si el miembro de **bicompresión** es bi \_ RGB, el método devuelve las máscaras de color que corresponden a la profundidad de bits. Si se produce un error en el método (por ejemplo, la profundidad de bits es menor que 16), el método devuelve la matriz {0,0,0} .
+Si el **miembro biCompression** es BI BITFIELDS, el método devuelve un puntero a las máscaras de color que se proporcionan en el \_ miembro **dwBitMasks.** Si el **miembro biCompression** es BI RGB, el método devuelve las \_ máscaras de color que corresponden a la profundidad de bits. Si se produce un error en el método (por ejemplo, la profundidad de bits es inferior a 16), el método devuelve la matriz {0,0,0} .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Si el miembro de **bicompresión** son \_ campos de campos de BI, el método dev
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Si el miembro de **bicompresión** son \_ campos de campos de BI, el método dev
 
 <dl> <dt>
 
-[**Clase CImageDisplay**](cimagedisplay.md)
+[**CImageDisplay (clase)**](cimagedisplay.md)
 </dt> </dl>
 
  

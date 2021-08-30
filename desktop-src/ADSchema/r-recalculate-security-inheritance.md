@@ -1,10 +1,10 @@
 ---
-title: Recalculate-Security-herencia extendida derecha
-description: Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de ACL en un contexto de nomenclatura.
+title: Derecho extendido Recalculate-Security-Inheritance
+description: Derecho extendido necesario para forzar a DS a volver a compilar la herencia de ACL en un contexto de nomenclatura.
 ms.assetid: 2d6b8a7b-a2ca-4ca6-9b6d-e8c040e8b704
 ms.tgt_platform: multiple
 keywords:
-- Recalculate-Security-herencia Extended Right Schema de AD
+- Recalculate-Security-Inheritance extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16e91310e4fad0cdc3d88c4b5af0c9aadb83a5ff
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d37db46bc3f2a952e0ea42bbab3480a2b8688a9ddeb16555c1c90b7dd22cb92a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922105"
 ---
-# <a name="recalculate-security-inheritance-extended-right"></a>Recalculate-Security-herencia extendida derecha
+# <a name="recalculate-security-inheritance-extended-right"></a>Derecho extendido Recalculate-Security-Inheritance
 
-Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de ACL en un contexto de nomenclatura.
+Derecho extendido necesario para forzar a DS a volver a compilar la herencia de ACL en un contexto de nomenclatura.
 
 
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | Recalculate-Security-inheritance     |
-| Display-Name | Recalcular herencia de seguridad     |
+| CN           | Recalculate-Security-Inheritance     |
+| Display-Name | Volver a calcular la herencia de seguridad     |
 | Rights-GUID  | 62dd28a8-7f46-11d2-b9ad-00c04f79f805 |
 
 
@@ -38,7 +38,7 @@ Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -51,7 +51,7 @@ Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de 
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 52                                       |
+| Localization-Display-ID | 52                                       |
 
 
 
@@ -62,18 +62,18 @@ Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de 
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 52                                       |
+| Localization-Display-ID | 52                                       |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 52                                       |
+| Localization-Display-ID | 52                                       |
 
 
 
@@ -84,7 +84,7 @@ Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de 
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 52                                       |
+| Localization-Display-ID | 52                                       |
 
 
 
@@ -95,7 +95,7 @@ Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de 
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 52                                       |
+| Localization-Display-ID | 52                                       |
 
 
 
@@ -106,7 +106,7 @@ Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de 
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 52                                       |
+| Localization-Display-ID | 52                                       |
 
 
 
@@ -117,7 +117,7 @@ Derecho extendido necesario para forzar que DS vuelva a calcular la herencia de 
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 52                                       |
+| Localization-Display-ID | 52                                       |
 
 
 

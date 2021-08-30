@@ -1,23 +1,23 @@
 ---
 description: En el ejemplo de código siguiente se muestra cómo seleccionar terminales en secuencias asociadas a una llamada.
 ms.assetid: ff43e81c-ff39-466d-870a-54b75c2938a4
-title: Seleccionar un terminal
+title: Selección de un terminal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac3d195e021f5937c733f3d7a0efce0cfee5eba9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b77ee3bb889f5372ae024b29867b6c9d418c5924b4e626be70aa5d49ad72c9c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991845"
 ---
-# <a name="select-a-terminal"></a>Seleccionar un terminal
+# <a name="select-a-terminal"></a>Selección de un terminal
 
 En el ejemplo de código siguiente se muestra cómo seleccionar terminales en secuencias asociadas a una llamada.
 
-Antes de usar este ejemplo de código, debe realizar las operaciones en [Initialize TAPI](initialize-tapi.md) y [seleccionar una dirección](select-an-address.md).
+Antes de usar este ejemplo de código, debe realizar las operaciones de [Inicializar TAPI](initialize-tapi.md) y [Seleccionar una dirección](select-an-address.md).
 
-Además, en este ejemplo se requiere que la aplicación ya tenga un puntero a la interfaz [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) de una llamada entrante o saliente. Vea [crear una llamada](make-a-call.md) o [recibir una llamada](receive-a-call.md) para obtener ejemplos de código sobre cómo obtener este puntero.
+Además, este ejemplo requiere que la aplicación ya tenga un puntero a la interfaz [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) de una llamada entrante o saliente. Vea [Realizar una llamada o](make-a-call.md) recibir una llamada [para](receive-a-call.md) obtener ejemplos de código sobre cómo obtener este puntero.
 
 > [!Note]  
 > Este ejemplo no tiene la comprobación de errores y las versiones adecuadas para el código de producción.

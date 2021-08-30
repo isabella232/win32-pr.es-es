@@ -1,7 +1,7 @@
 ---
 description: Establece la información del clúster en un disco.
 ms.assetid: AB2243D9-4913-4412-87E0-2C8DB8AB10B8
-title: Código de control de IOCTL_DISK_SET_CLUSTER_INFO (Ntdddisk. h)
+title: IOCTL_DISK_SET_CLUSTER_INFO código de control (Ntdddisk.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Ntdddisk.h
-ms.openlocfilehash: 4ba0994dd1c9030e84c22e24b1eb4583eba7e3d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09aa5f228a1567cdccfac4faa67db8bd8209fc35ad68de174dcf9507c162d19a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107465"
 ---
-# <a name="ioctl_disk_set_cluster_info-control-code"></a>\_Código de \_ control de información de \_ clúster de conjunto de discos ioctl \_
+# <a name="ioctl_disk_set_cluster_info-control-code"></a>Código de \_ control IOCTL DISK \_ SET CLUSTER \_ \_ INFO
 
 Establece la información del clúster en un disco.
 
-Para realizar esta operación, llame a la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
+Para realizar esta operación, llame a la [**función DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
 
 
 ```C++
@@ -51,7 +51,7 @@ DeviceIoControl( (HANDLE)       hDevice,         // handle to device
 
 Identificador del disco.
 
-Para recuperar un identificador de dispositivo, llame a la función [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) .
+Para recuperar un identificador de dispositivo, llame a la [**función CreateFile.**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea)
 
 </dd> <dt>
 
@@ -60,14 +60,14 @@ Para recuperar un identificador de dispositivo, llame a la función [**CreateFil
 
 Código de control de la operación.
 
-Use **ioctl \_ Disk \_ set \_ cluster \_ info** para esta operación.
+Use **IOCTL \_ DISK SET CLUSTER INFO \_ \_ \_ para** esta operación.
 
 </dd> <dt>
 
 *lpInBuffer* 
 </dt> <dd>
 
-Un puntero a una estructura de datos de [**\_ \_ información del clúster de disco**](disk-cluster-info.md) que contiene información del clúster para el disco.
+Puntero a una estructura de [**datos \_ DISK CLUSTER \_ INFO**](disk-cluster-info.md) que contiene información de clúster para el disco.
 
 </dd> <dt>
 
@@ -81,34 +81,34 @@ Tamaño del búfer de entrada, en bytes.
 *lpOutBuffer* 
 </dt> <dd>
 
-No se usa con esta operación. Se establece en **null**.
+No se usa con esta operación. Se establece en **NULL.**
 
 </dd> <dt>
 
 *nOutBufferSize* 
 </dt> <dd>
 
-Tamaño del búfer de salida, en bytes. Se establece en 0 (cero).
+Tamaño del búfer de salida, en bytes. Establezca en 0 (cero).
 
 </dd> <dt>
 
 *lpBytesReturned* 
 </dt> <dd>
 
-No se usa con esta operación. Se establece en **null**.
+No se usa con esta operación. Se establece en **NULL.**
 
 </dd> <dt>
 
 *lpOverlapped* 
 </dt> <dd>
 
-Puntero a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) .
+Puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Si se abrió *hDevice* sin especificar la **marca de archivo \_ \_ superpuesta**, *lpOverlapped* se omite.
+Si *hDevice se* abrió sin especificar **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* se omite.
 
-Si *hDevice* se abrió con la marca de **indicador de archivo \_ \_ superpuesto** , la operación se realiza como una operación superpuesta (asincrónica). En este caso, *lpOverlapped* debe apuntar a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida que contiene un identificador para un objeto de evento. De lo contrario, se produce un error imprevisible en la función.
+Si *hDevice se* abrió con la marca **FILE FLAG \_ \_ OVERLAPPED,** la operación se realiza como una operación superpuesta (asincrónica). En este caso, *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida que contenga un identificador a un objeto de evento. De lo contrario, se produce un error en la función de maneras imprevisibles.
 
-En el caso de las operaciones superpuestas, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) vuelve inmediatamente y el objeto de evento se señala cuando se ha completado la operación. De lo contrario, la función no devuelve ningún resultado hasta que se haya completado la operación o se produzca un error.
+Para las operaciones superpuestas, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) devuelve inmediatamente y el objeto de evento se señala cuando se ha completado la operación. De lo contrario, la función no devuelve hasta que se ha completado la operación o se produce un error.
 
 </dd> </dl>
 
@@ -125,8 +125,8 @@ Si se produce un error en la operación o está pendiente, [**DeviceIoControl**]
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Ntdddisk. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Ntdddisk.h</dt> </dl> |
 
 
 
@@ -140,10 +140,10 @@ Si se produce un error en la operación o está pendiente, [**DeviceIoControl**]
 [Códigos de control de administración de discos](disk-management-control-codes.md)
 </dt> <dt>
 
-[**\_información del clúster de disco \_**](disk-cluster-info.md)
+[**INFORMACIÓN DEL \_ CLÚSTER DE \_ DISCO**](disk-cluster-info.md)
 </dt> <dt>
 
-[**\_información de \_ clúster de obtención de disco de ioctl \_ \_**](ioctl-disk-get-cluster-info.md)
+[**IOCTL \_ DISK \_ GET \_ CLUSTER \_ INFO**](ioctl-disk-get-cluster-info.md)
 </dt> </dl>
 
  

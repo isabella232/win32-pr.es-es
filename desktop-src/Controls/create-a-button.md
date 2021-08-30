@@ -1,37 +1,37 @@
 ---
 title: Cómo crear un botón
-description: Para crear botones dinámicamente, se usa la función CreateWindow o CreateWindowEx. En este tema se muestra cómo usar la función CreateWindow para crear un botón de método de envío predeterminado.
+description: Para crear botones dinámicamente, use las funciones CreateWindow o CreateWindowEx. En este tema se muestra cómo usar la función CreateWindow para crear un botón de inserción predeterminado.
 ms.assetid: A8C56D09-90A3-4C70-9907-61390521D1DA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dadc53f91f773e5fce9e29bdf1ae50cc59bfdfd
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: c4940016eaab8f64cd82f18579b31b13f2835ab8a0de00752eabfe81da316d6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104078632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920925"
 ---
 # <a name="how-to-create-a-button"></a>Cómo crear un botón
 
-Para crear botones dinámicamente, se usa la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) . En este tema se muestra cómo usar la función **CreateWindow** para crear un botón de método de envío predeterminado.
+Para crear botones dinámicamente, use las [**funciones CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) [**o CreateWindowEx.**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) En este tema se muestra cómo usar la **función CreateWindow** para crear un botón de inserción predeterminado.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Utilice la función [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) para crear un control de botón.
+Use la [**función CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) para crear un control de botón.
 
-En el siguiente ejemplo de C++, el parámetro *\_ hWnd de m* es el identificador de la ventana primaria. El estilo [**BS \_ DEFPUSHBUTTON**](button-styles.md) especifica que se debe crear un botón de envío predeterminado. Tenga en cuenta que los valores de tamaño y posición deben especificarse porque el uso de **CW \_ USEDEFAULT** para un botón establece los valores en cero.
+En el siguiente ejemplo de C++, el *parámetro m \_ hwnd* es el identificador de la ventana primaria. El [**estilo \_ BS DEFPUSHBUTTON**](button-styles.md) especifica que se debe crear un botón de inserción predeterminado. Tenga en cuenta que los valores de tamaño y posición deben especificarse porque el uso de **CW \_ USEDEFAULT** para un botón establece los valores en cero.
 
 
 ```C++

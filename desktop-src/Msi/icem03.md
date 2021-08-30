@@ -4,26 +4,26 @@ ms.assetid: 8e2b5921-32cf-45e8-9906-30002574a712
 title: ICEM03
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f368fa50a71153c41eebaa9ee5084449cf824993
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f061fbf63fa1874fef8764aee56b3e7caa41976a8280802041c54f088c663c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894615"
 ---
 # <a name="icem03"></a>ICEM03
 
 ICEM03 comprueba que todas las acciones del módulo son acciones base o derivan de una acción base válida.
 
-El módulo de combinación ICEs se almacena en un archivo. Cub de módulo de combinación denominado Mergemod. Cub y no en el archivo. Cub que contiene el ICEs usado para la validación del paquete.
+Los ICE del módulo de mezcla se almacenan en un archivo .uu. del módulo de mezcla denominado Mergemod.pack y no en el archivo .uu. que contiene los ICE usados para la validación del paquete.
 
 ## <a name="result"></a>Resultado
 
-ICEM03 expone los mensajes de error de un módulo que contiene acciones en una tabla de secuencia que no es una acción base o que se deriva de una acción base válida.
+ICEM03 publica los mensajes de error de un módulo que contiene acciones en una tabla de secuencia que no es una acción base o que se deriva de una acción base válida.
 
 ## <a name="example"></a>Ejemplo
 
-ICEM03 expone los siguientes mensajes de error para un módulo que contiene las entradas de base de datos que se muestran a continuación.
+ICEM03 publica los siguientes mensajes de error para un módulo que contiene las entradas de base de datos que se muestran a continuación.
 
 ``` syntax
 The action 'Action1' in the 'ModuleInstallExecuteSequence' table is 
@@ -34,7 +34,7 @@ orphaned. It is not a valid base action and does not derive from a
 valid base action.
 ```
 
-[Tabla ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md)
+[ModuleInstallExecuteSequence Table](moduleinstallexecutesequence-table.md)
 
 
 
@@ -47,15 +47,15 @@ valid base action.
 
  
 
-ICEM03 expone errores para estas dos acciones porque hacen referencia a ellas como acciones base en la tabla ModuleInstallExecuteSequence. Todas las acciones de las tablas [ModuleAdminUISequence](moduleadminuisequence-table.md), [ModuleAdminExecuteSequence](moduleadminexecutesequence-table.md), [ModuleAdvtUISequence](moduleadvtuisequence-table.md), [ModuleAdvtExecuteSequence](moduleadvtexecutesequence-table.md), [ModuleInstallUISequence](moduleinstalluisequence-table.md)y [ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md) deben ser acciones base o derivar su posición de la combinación de otra acción y una marca Before y after.
+ICEM03 publica errores para estas dos acciones porque se hacen referencia entre sí como acciones base en la tabla ModuleInstallExecuteSequence. Todas las acciones de las tablas [ModuleAdminUISequence](moduleadminuisequence-table.md), [ModuleAdminExecuteSequence](moduleadminexecutesequence-table.md), [ModuleAdvtUISequence](moduleadvtuisequence-table.md), [ModuleAdvtExecuteSequence,](moduleadvtexecutesequence-table.md) [ModuleInstallUISequence](moduleinstalluisequence-table.md)y [ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md) deben ser acciones base o derivar su posición de la combinación de otra acción y una marca antes y después.
 
-Para corregir este error, determine las acciones básicas de las dos acciones. Agregue un registro para las acciones base con un número de secuencia predeterminado. Para Action1 y Action2, escriba los nombres de acción base en la columna BaseAction y 0 o 1 en la columna after.
+Para corregir este error, determine las acciones base para las dos acciones. Agregue un registro para las acciones base con un número de secuencia predeterminado. En Acción1 y Acción2, escriba los nombres de acción base en la columna BaseAction y 0 o 1 en la columna Después.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Referencia de módulo de combinación ICE](merge-module-ice-reference.md)
+[Referencia de ICE del módulo de mezcla](merge-module-ice-reference.md)
 </dt> </dl>
 
  

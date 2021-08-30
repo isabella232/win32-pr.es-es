@@ -1,27 +1,27 @@
 ---
-title: Glosario de Windows Ribbon Framework
+title: Windows Glosario del marco de opciones
 description: Página de glosario
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 6fb35475-3b65-43c8-acca-1ec6c36f01c0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81160b3e6e97fb3e8ccfb679bcd103ed97dc53eb
-ms.sourcegitcommit: fdd00b445ee88366e9cdd1eed0cb3e42e2a73eca
+ms.openlocfilehash: 40dab764b73f23844277fc950e340b709417ef5ead656527632b1edd3e4bfffd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "104358596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119933175"
 ---
-# <a name="windows-ribbon-framework-glossary"></a>Glosario de Windows Ribbon Framework
+# <a name="windows-ribbon-framework-glossary"></a>Windows Glosario del marco de opciones
 
 ## <a name="g"></a>G
 
 <dl> <dt>
 
-**galería**
+**Galería**
 </dt> <dd>
 
-Cuadros de lista sofisticados y personalizables que se pueden usar para organizar elementos por categoría, mostrarlos en diseños flexibles basados en columnas y filas, y representarlos con imágenes y texto. En función del tipo de galería, también se admite la vista previa dinámica.
+Cuadros de lista enriquecidos y personalizables que se pueden usar para organizar los elementos por categoría, mostrarlos en diseños flexibles basados en columnas y filas y representarlos con imágenes y texto. En función del tipo de galería, también se admite la versión preliminar en directo.
 
 </dd> </dl>
 
@@ -32,7 +32,7 @@ Cuadros de lista sofisticados y personalizables que se pueden usar para organiza
 **MiniToolbar**
 </dt> <dd>
 
-Conjunto de comandos de la cinta de opciones, cuyo ámbito es el contexto actual y se presenta en un contenedor rectangular que aparece cerca del puntero.
+Conjunto de comandos de la cinta de opciones, con ámbito en el contexto actual y presentados en un contenedor rectangular que aparece cerca del puntero.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Conjunto de comandos de la cinta de opciones, cuyo ámbito es el contexto actual
 **Barra de herramientas de acceso rápido (QAT)**
 </dt> <dd>
 
-Una pequeña barra de herramientas personalizable en la interfaz de usuario de la cinta que proporciona acceso con un solo clic a los comandos seleccionados por el usuario.
+Una pequeña barra de herramientas personalizable en la interfaz de usuario de la cinta de opciones que proporciona acceso con un solo clic a los comandos seleccionados por el usuario.
 
 </dd> </dl>
 
@@ -51,7 +51,7 @@ Una pequeña barra de herramientas personalizable en la interfaz de usuario de l
 
 <dl> <dt>
 
-**Marca de la cinta**
+**Marcado de la cinta de opciones**
 </dt> <dd>
 
 Marcado declarativo basado en XML estándar que especifica los comandos, los recursos visuales, el diseño del control y el comportamiento de escalado de la interfaz de usuario de la cinta de opciones.
@@ -65,7 +65,7 @@ Marcado declarativo basado en XML estándar que especifica los comandos, los rec
 **template**
 </dt> <dd>
 
-Conjunto de sugerencias de diseño que especifican el tamaño y la organización de los controles de la cinta de opciones en función del tamaño de la cinta de opciones.
+Conjunto de sugerencias de diseño que especifican el tamaño y la organización de los controles de la cinta de opciones en función del tamaño de la cinta.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Conjunto de sugerencias de diseño que especifican el tamaño y la organización
 **Vista**
 </dt> <dd>
 
-Contenedor de nivel superior que hospeda los controles de interfaz de usuario de la cinta de opciones de Windows.
+Un contenedor de nivel superior que hospeda controles de Windows interfaz de usuario de la cinta de opciones.
 
 </dd> </dl>
 
@@ -84,16 +84,16 @@ Contenedor de nivel superior que hospeda los controles de interfaz de usuario de
 
 <dl> <dt>
 
-**Marco de cinta de Windows (cinta)**
+**Windows Marco de la cinta de opciones (cinta de opciones)**
 </dt> <dd>
 
-Un sistema de presentación de comandos enriquecido que expone las características principales de una aplicación a través de una barra de comandos en la parte superior de una ventana de la aplicación.
+Un completo sistema de presentación de comandos que expone las características principales de una aplicación a través de una barra de comandos en la parte superior de una ventana de la aplicación.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

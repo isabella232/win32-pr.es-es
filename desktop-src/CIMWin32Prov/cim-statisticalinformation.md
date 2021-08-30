@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM StatisticalInformation es una clase raíz para la colección arbitraria de datos estadísticos o métricas aplicables a uno o varios elementos del sistema administrados.
+description: La clase STATISTICALInformation de CIM es una clase raíz para la colección arbitraria de datos estadísticos o métricas \_ aplicables a uno o varios elementos del sistema administrados.
 ms.assetid: ecc3b310-c553-416b-b4e3-705965557945
 ms.tgt_platform: multiple
-title: CIM_StatisticalInformation (clase)
+title: CIM_StatisticalInformation clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,23 +17,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b6eda3e2463c880a58c4e23a6d09dcab99417ead
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8cb392f787c9f05d6c33545706bb55c90cda5e0ee14fa6e24fe7e6c8a878fe1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919196"
 ---
-# <a name="cim_statisticalinformation-class"></a>\_Clase StatisticalInformation de CIM
+# <a name="cim_statisticalinformation-class"></a>Cim \_ StatisticalInformation (clase)
 
-La clase **CIM \_ StatisticalInformation** es una clase raíz para la colección arbitraria de datos estadísticos o métricas aplicables a uno o varios elementos del sistema administrados.
+La **clase \_ CIM StatisticalInformation** es una clase raíz para la colección arbitraria de datos estadísticos o métricas aplicables a uno o varios elementos del sistema administrados.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,13 +49,13 @@ class CIM_StatisticalInformation
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ StatisticalInformation** tiene estos tipos de miembros:
+La **clase \_ CIM StatisticalInformation** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ StatisticalInformation** tiene estas propiedades.
+La **clase \_ CIM StatisticalInformation** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -71,7 +71,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descripción textual de la estadística o la métrica.
+Breve descripción textual de la estadística o métrica.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción textual de la estadística o la métrica.
+Descripción textual de la estadística o métrica.
 
 </dd> <dt>
 
@@ -100,15 +100,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Etiqueta por la que se conoce la estadística o la métrica. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce la estadística o métrica. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ StatisticalInformation**, vea [clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ StatisticalInformation**, vea [Clases Win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,8 +118,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

@@ -12,46 +12,46 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: f68013985beff427b5681c5b78c2c00df9e69263
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a532d9a9d4614fbaee880145ca35cb7654bf819e1d136dd971f93f55f3ec87e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991294"
 ---
 # <a name="components-collection"></a>Colección de componentes
 
-Contiene un objeto para cada componente de la aplicación relacionada. La colección de **componentes** siempre está relacionada con un objeto de la colección de [**aplicaciones**](applications.md) . Las propiedades expuestas por estos objetos contienen la configuración realizada en el nivel de componente.
+Contiene un objeto para cada componente de la aplicación relacionada. La **colección** Components siempre está relacionada con un objeto de la [**colección Applications.**](applications.md) Las propiedades expuestas por estos objetos mantienen la configuración realizada en el nivel de componente.
 
-Esta colección admite el método [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) , pero no el método [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) . Para instalar o importar componentes en una aplicación, use métodos en el objeto [**COMAdminCatalog**](comadmincatalog.md) .
+Esta colección admite el [**método Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection,**](comadmincatalogcollection.md) pero no [**el método Add.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) Para instalar o importar componentes en una aplicación, use métodos en el [**objeto COMAdminCatalog.**](comadmincatalog.md)
 
 ## <a name="members"></a>Miembros
 
-La colección de **componentes** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección Components** hereda de la interfaz [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ErrorInfo**](errorinfo.md)
 -   [**InterfacesForComponent**](interfacesforcomponent.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 -   [**RolesForComponent**](rolesforcomponent.md)
 -   [**SubscriptionsForComponent**](subscriptionsforcomponent.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
 -   [**APLICACIONES**](applications.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [AllowInprocSubscribers](#allowinprocsubscribers)
 -   [ApplicationID](#applicationid)
--   [Bits](#bitness)
--   [CLSID](#multiinterfacepublisherfilterclsid)
+-   [Bitness](#bitness)
+-   [Clsid](#multiinterfacepublisherfilterclsid)
 -   [ComponentAccessChecksEnabled](#componentaccesschecksenabled)
 -   [ComponentTransactionTimeout](#componenttransactiontimeoutenabled)
 -   [ComponentTransactionTimeoutEnabled](#componenttransactiontimeoutenabled)
@@ -60,7 +60,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 -   [ConstructorString](#constructorstring)
 -   [CreationTimeout](#creationtimeout)
 -   [Descripción](#description)
--   [DLL](#dll)
+-   [Dll](#dll)
 -   [EventTrackingEnabled](#eventtrackingenabled)
 -   [ExceptionClass](#exceptionclass)
 -   [FireInParallel](#fireinparallel)
@@ -100,7 +100,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 | Descripción    | Habilita en los suscriptores de proceso si el componente es una clase de eventos. |
 | Access         | ReadWrite                                                          |
 | Tipo           | Bool                                                               |
-| Valor predeterminado        | True                                                               |
+| Valor predeterminado        | Verdadero                                                               |
 | Sistema mínimo | Windows 2000                                                       |
 
 
@@ -113,7 +113,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | GUID de la aplicación que contiene el componente. Debe ser un GUID de aplicación válido, que se comprueba antes de que se llame a [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) . Si este valor se cambia para ser un GUID para una aplicación diferente, el componente se mueve a esa aplicación. |
+| Descripción    | GUID de la aplicación que contiene el componente. Debe ser un GUID de aplicación válido, que se comprueba antes [**de llamar a SaveChanges.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) Si este valor se cambia para que sea un GUID para una aplicación diferente, el componente se mueve a esa aplicación. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                        |
 | Tipo           | String                                                                                                                                                                                                                                                                                           |
 | Predeterminado        | N/D                                                                                                                                                                                                                                                                                              |
@@ -129,9 +129,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Representa el tipo de bits binario de un componente. En los sistemas que usan Windows de 64 bits, esta propiedad distingue entre los componentes de 64 bits y los componentes de 32 bits. |
+| Descripción    | Representa el tipo de bits binario de un componente. En sistemas que usan componentes de 64 Windows, esta propiedad distingue entre componentes de 64 bits y componentes de 32 bits. |
 | Access         | ReadOnly                                                                                                                                                            |
-| Tipo           | Valores posibles largos: COMAdmin32BitComponent (0x1) COMAdmin64BitComponent (0X2)                                                                                       |
+| Tipo           | Long Possible values:COMAdmin32BitComponent (0x1)COMAdmin64BitComponent (0x2)                                                                                       |
 | Valor predeterminado        | N/D                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                          |
 
@@ -145,7 +145,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | GUID del componente. Esta propiedad se devuelve cuando se llama al método de propiedad de [**clave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
+| Descripción    | GUID para el componente. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) de propiedad Key en un objeto de esta colección. |
 | Access         | ReadOnly                                                                                                                                                  |
 | Tipo           | String                                                                                                                                                    |
 | Predeterminado        | N/D                                                                                                                                                       |
@@ -161,7 +161,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica si las comprobaciones de acceso basadas en roles se realizan en llamadas al componente y funcionan junto con las propiedades AccessChecksLevel y ApplicationAccessChecksEnabled en la aplicación. |
+| Descripción    | Indica si las comprobaciones de acceso basado en rol se realizan en llamadas al componente y funciona junto con las propiedades AccessChecksLevel y ApplicationAccessChecksEnabled en la aplicación. |
 | Access         | ReadWrite                                                                                                                                                                                                  |
 | Tipo           | Bool                                                                                                                                                                                                       |
 | Valor predeterminado        | False                                                                                                                                                                                                      |
@@ -177,7 +177,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Cuando se utiliza en una transacción, especifica el período de tiempo en el que este componente hace que se agote el tiempo de espera de la transacción. El valor predeterminado es 60 segundos y no puede ser superior a 3600 segundos (1 hora). El valor de tiempo de espera se puede establecer en 0, especificando un período de tiempo de espera de transacción infinito. Para usar esta propiedad, ComponentTransactionTimeoutEnabled debe ser true. El valor de esta propiedad invalida el tiempo de espera de la transacción global especificado por la propiedad TransactionTimeout de la colección [**LocalComputer**](localcomputer.md) . |
+| Descripción    | Cuando se usa en una transacción, especifica el período de tiempo en el que este componente hace que la transacción se resalte. El valor predeterminado es 60 segundos y no puede ser superior a 3600 segundos (1 hora). El valor de tiempo de espera se puede establecer en 0, especificando un período de tiempo de espera de transacción infinito. Para que se utilice esta propiedad, ComponentTransactionTimeoutEnabled debe ser True. El valor de esta propiedad invalida el tiempo de espera de transacción global especificado por la propiedad TransactionTimeout de la [**colección LocalComputer.**](localcomputer.md) |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Tipo           | Long (0-3600)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Valor predeterminado        | 60                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -193,7 +193,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Especifica si el período de tiempo de espera de la transacción está habilitado para este componente. De forma predeterminada, la característica de tiempo de espera de la transacción está deshabilitada. Cuando esta propiedad es true, se usa el tiempo de espera especificado por ComponentTransactionTimeout. Cuando esta propiedad es false, se usa el tiempo de espera especificado por la propiedad TransactionTimeout de la colección [**LocalComputer**](localcomputer.md) . |
+| Descripción    | Especifica si el período de tiempo de espera de la transacción está habilitado para este componente. De forma predeterminada, la característica de tiempo de espera de transacción está deshabilitada. Cuando esta propiedad es True, se usa el tiempo de espera especificado por ComponentTransactionTimeout. Cuando esta propiedad es False, se usa el tiempo de espera especificado por la propiedad TransactionTimeout de la [**colección LocalComputer.**](localcomputer.md) |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                      |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                                           |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -209,7 +209,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Permite pasar propiedades de contexto desde el integrador de transacciones COM (COMTI) al contexto de esta clase. El COMTI facilita la tarea de envolver transacciones de gran sistema y lógica de negocios como componentes COM. |
+| Descripción    | Permite pasar propiedades de contexto del Integrador de transacciones COM (COMTI) al contexto de esta clase. COMTI facilita la tarea de encapsular las transacciones del sistema central y la lógica de negocios como componentes COM. |
 | Access         | ReadWrite                                                                                                                                                                                                            |
 | Tipo           | Bool                                                                                                                                                                                                                 |
 | Valor predeterminado        | False                                                                                                                                                                                                                |
@@ -225,7 +225,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------|
-| Descripción    | Determina si el ConstructorString se pasa al objeto cuando se construye. |
+| Descripción    | Determina si constructorString se pasa al objeto cuando se construye. |
 | Access         | ReadWrite                                                                                |
 | Tipo           | Bool                                                                                     |
 | Valor predeterminado        | False                                                                                    |
@@ -241,7 +241,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Cadena de inicialización para la construcción de componentes. Puede crear objetos diferentes del mismo componente genérico mediante cadenas de constructor de objeto. Si ConstructionEnabled es false, se omite esta propiedad. |
+| Descripción    | Cadena de inicialización para la construcción de componentes. Puede crear objetos diferentes a partir del mismo componente genérico mediante cadenas de constructor de objetos. Si ConstructionEnabled es False, se omite esta propiedad. |
 | Access         | ReadWrite                                                                                                                                                                                                          |
 | Tipo           | String                                                                                                                                                                                                             |
 | Predeterminado        | ""                                                                                                                                                                                                                 |
@@ -257,7 +257,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Al crear el objeto, se devuelve el número de milisegundos antes de que se devuelva un error de tiempo de espera. El tiempo de espera máximo es de 2147483647 milisegundos (unos 25 días). |
+| Descripción    | Al crear el objeto, número de milisegundos antes de que se devuelva un error de tiempo de espera. El tiempo de espera máximo es 2147483647 milisegundos (aproximadamente 25 días). |
 | Access         | ReadWrite                                                                                                                                              |
 | Tipo           | Long (0-2147483647)                                                                                                                                    |
 | Valor predeterminado        | 0                                                                                                                                                      |
@@ -305,10 +305,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si se realiza el seguimiento de los eventos. Los eventos incluyen acciones como el cierre de la aplicación; creación y liberación de objetos; referencias a objetos, coherencia, activación y desactivación; llamadas al método, devuelve y excepciones; Inicio de la transacción, preparación para confirmar y anular; conexión, asignación y reciclaje del dispensador de recursos; asignación y reciclaje de subprocesos. |
+| Descripción    | Determina si se realiza un seguimiento de los eventos. Los eventos incluyen acciones como el cierre de la aplicación; creación y liberación de objetos; referencias de objeto, coherencia, activación y desactivación; llamadas a métodos, devoluciones y excepciones; inicio de transacción, preparación para confirmar y anular; conexión, asignación y reciclaje del dispensador de recursos; asignación y reciclaje de subprocesos. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                     |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                          |
-| Valor predeterminado        | True                                                                                                                                                                                                                                                                                                                                                                          |
+| Valor predeterminado        | Verdadero                                                                                                                                                                                                                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                                                  |
 
 
@@ -321,7 +321,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | El CLSID, que puede ser un GUID o una cadena de moniker, para activar un programa alternativo durante el proceso de tratar con un programa de componentes en cola con errores repetidamente. |
+| Descripción    | CLSID, que puede ser un GUID o una cadena de moniker, para activar un programa alternativo durante el proceso de tratar con un programa de componentes en cola con errores repetidos. |
 | Access         | ReadWrite                                                                                                                                                                 |
 | Tipo           | String                                                                                                                                                                    |
 | Predeterminado        | ""                                                                                                                                                                        |
@@ -337,7 +337,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------|
-| Descripción    | Permite que los eventos se activen en paralelo si el componente es una clase de eventos. |
+| Descripción    | Permite que los eventos se despedarán en paralelo si el componente es una clase de eventos. |
 | Access         | ReadWrite                                                                  |
 | Tipo           | Bool                                                                       |
 | Valor predeterminado        | False                                                                      |
@@ -353,7 +353,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Habilita el paso de propiedades de contexto de IIS, como un objeto de sesión de aplicación o un objeto de sesión de usuario, en el contexto de esta clase. |
+| Descripción    | Permite pasar propiedades de contexto de IIS, como un objeto de sesión de aplicación o un objeto de sesión de usuario, al contexto de esta clase. |
 | Access         | ReadWrite                                                                                                                                   |
 | Tipo           | Bool                                                                                                                                        |
 | Valor predeterminado        | False                                                                                                                                       |
@@ -369,7 +369,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------|
-| Descripción    | Indica si el componente se utiliza para inicializar una aplicación de servidor. |
+| Descripción    | Indica si el componente se usa para inicializar una aplicación de servidor. |
 | Access         | ReadWrite                                                                   |
 | Tipo           | Bool                                                                        |
 | Valor predeterminado        | False                                                                       |
@@ -385,10 +385,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | False si el componente o la aplicación COM+ están deshabilitados. Si el componente o la aplicación COM+ está habilitado, IsEnabled es true. |
+| Descripción    | False si la aplicación o componente COM+ está deshabilitado. Si la aplicación o componente COM+ está habilitado, IsEnabled es True. |
 | Access         | ReadWrite                                                                                                                   |
 | Tipo           | Bool                                                                                                                        |
-| Valor predeterminado        | True                                                                                                                        |
+| Valor predeterminado        | Verdadero                                                                                                                        |
 | Sistema mínimo | Windows XP                                                                                                                  |
 
 
@@ -433,7 +433,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si una aplicación de servidor es un componente privado. Un componente privado en una aplicación de servidor solo se puede activar desde dentro de la aplicación. Por ejemplo, si llama a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) en un componente privado, se produce un error de fuera de proceso pero se realiza correctamente en proceso. Por el contrario, si llama a **CoCreateInstance** en un componente público, se realizará correctamente en proceso y fuera de proceso. |
+| Descripción    | Determina si una aplicación de servidor es un componente privado. Un componente privado de una aplicación de servidor solo se puede activar desde dentro de la aplicación. Por ejemplo, si llama a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) en un componente privado, se produce un error de fuera de proceso, pero se realiza correctamente en el proceso. Por el contrario, si llama a **CoCreateInstance** en un componente público, se realiza correctamente tanto en proceso como fuera de proceso. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -449,7 +449,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si la [activación JIT](enabling-jit-activation-for-a-component.md) está habilitada para el componente. Esta propiedad se establece en true cuando la [compatibilidad con transacciones](setting-the-transaction-attribute.md) está establecida en Required, requiere New o Supported. Cuando JustInTimeActivation se establece en true, la [compatibilidad con la sincronización](setting-the-synchronization-attribute.md) debe establecerse en Required (el valor predeterminado) o requiere New. |
+| Descripción    | Determina si la [activación JIT](enabling-jit-activation-for-a-component.md) está habilitada para el componente. Esta propiedad se establece en True cuando [la compatibilidad con](setting-the-transaction-attribute.md) transacciones se establece en Requerido, Requiere nuevo o Compatible. Cuando JustInTimeActivation se establece en [True,](setting-the-synchronization-attribute.md) la compatibilidad con la sincronización debe establecerse en Requerido (valor predeterminado) o Requiere nuevo. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -513,7 +513,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------|
-| Descripción    | CLSID del filtro de publicador utilizado si el componente es una clase de eventos. |
+| Descripción    | CLSID para el filtro del publicador utilizado si el componente es una clase de eventos. |
 | Access         | ReadWrite                                                               |
 | Tipo           | String                                                                  |
 | Predeterminado        | N/D                                                                     |
@@ -545,7 +545,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica que el componente se debe activar en el contexto del llamador predeterminado. De lo contrario, se produce un error en la activación. |
+| Descripción    | Indica que el componente debe activarse en el contexto del autor de la llamada predeterminado. De lo contrario, se produce un error en la activación. |
 | Access         | ReadWrite                                                                                                    |
 | Tipo           | Bool                                                                                                         |
 | Valor predeterminado        | False                                                                                                        |
@@ -561,7 +561,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si la [agrupación de objetos com+](com--object-pooling.md) está habilitada para el componente. |
+| Descripción    | Determina si la [agrupación de objetos COM+](com--object-pooling.md) está habilitada para el componente. |
 | Access         | ReadWrite                                                                                       |
 | Tipo           | Bool                                                                                            |
 | Valor predeterminado        | False                                                                                           |
@@ -577,7 +577,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre descriptivo que se usa para identificar el componente. Esta propiedad se devuelve cuando se llama al método de la propiedad [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
+| Descripción    | Nombre descriptivo que se usa para identificar el componente. Esta propiedad se devuelve cuando se [**llama al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
 | Access         | ReadOnly                                                                                                                                                                              |
 | Tipo           | String                                                                                                                                                                                |
 | Predeterminado        | N/D                                                                                                                                                                                   |
@@ -609,7 +609,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------|
-| Descripción    | GUID que identifica el ensamblado de GAC que se ejecuta cuando se invoca el componente como un servicio SOAP. |
+| Descripción    | GUID que identifica el ensamblado GAC que se ejecuta cuando se invoca el componente como un servicio SOAP. |
 | Access         | ReadWrite                                                                                        |
 | Tipo           | String                                                                                           |
 | Predeterminado        | NULL                                                                                             |
@@ -625,7 +625,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------|
-| Descripción    | El nombre de tipo administrado para un componente que se puede invocar como un servicio SOAP. |
+| Descripción    | Nombre de tipo administrado para un componente que se puede invocar como un servicio SOAP. |
 | Access         | ReadWrite                                                                    |
 | Tipo           | String                                                                       |
 | Predeterminado        | NULL                                                                         |
@@ -635,15 +635,15 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
  
 
-### <a name="synchronization"></a>Synchronization
+### <a name="synchronization"></a>Sincronización
 
 
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina la [sincronización](setting-the-synchronization-attribute.md) de llamadas para el componente.                                                                                                     |
+| Descripción    | Determina la sincronización [de llamadas](setting-the-synchronization-attribute.md) para el componente.                                                                                                     |
 | Access         | ReadWrite                                                                                                                                                                                           |
-| Tipo           | Valores posibles largos: COMAdminSynchronizationIgnored (0) COMAdminSynchronizationNone (1) COMAdminSynchronizationSupported (2) COMAdminSynchronizationRequired (3) COMAdminSynchronizationRequiresNew (4) |
+| Tipo           | Long Possible values:COMAdminSynchronizationIgnored (0)COMAdminSynchronizationNone (1)COMAdminSynchronizationSupported (2)COMAdminSynchronizationRequired (3)COMAdminSynchronizationRequiresNew (4) |
 | Valor predeterminado        | COMAdminSynchronizationIgnored (0)                                                                                                                                                                  |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                        |
 
@@ -659,7 +659,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Determina cómo se asignan las instancias del componente a los subprocesos para la ejecución del método. Los valores corresponden a los modelos de subprocesos COM.                                                                                        |
 | Access         | ReadOnly                                                                                                                                                                                                                  |
-| Tipo           | Valores posibles largos: COMAdminThreadingModelApartment (0) COMAdminThreadingModelFree (1) COMAdminThreadingModelMain (2) COMAdminThreadingModelBoth (3) COMAdminThreadingModelNeutral (4) COMAdminThreadingModelNotSpecified (5) |
+| Tipo           | Long Possible values:COMAdminThreadingModelThread (0)COMAdminThreadingModelFree (1)COMAdminThreadingModelMain (2)COMAdminThreadingModelBoth (3)COMAdminThreadingModelNeutral (4)COMAdminThreadingModelNotSpecified (5) |
 | Valor predeterminado        | N/D                                                                                                                                                                                                                       |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                              |
 
@@ -673,9 +673,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina cómo un componente admite [transacciones](setting-the-transaction-attribute.md). Se recomienda usar las constantes en la enumeración y no los valores numéricos. |
+| Descripción    | Determina cómo un componente admite [transacciones](setting-the-transaction-attribute.md). Se recomienda usar las constantes de la enumeración y no los valores numéricos. |
 | Access         | ReadWrite                                                                                                                                                                              |
-| Tipo           | Valores posibles largos: COMAdminTransactionIgnored (0) COMAdminTransactionNone (1) COMAdminTransactionSupported (2) COMAdminTransactionRequired (3) COMAdminTransactionRequiresNew (4)        |
+| Tipo           | Long Possible values:COMAdminTransactionIgnored (0)COMAdminTransactionNone (1)COMAdminTransactionSupported (2)COMAdminTransactionRequired (3)COMAdminTransactionRequiresNew (4)        |
 | Valor predeterminado        | COMAdminTransactionNone (1)                                                                                                                                                            |
 | Sistema mínimo | Windows 2000                                                                                                                                                                           |
 
@@ -689,9 +689,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica los niveles de aislamiento de transacción. Hay cinco niveles de aislamiento: ninguno, lectura no confirmada, lectura confirmada, lectura repetible y serializada. El nivel de aislamiento predeterminado es serializado.                           |
+| Descripción    | Indica los niveles de aislamiento de transacción. Hay cinco niveles de aislamiento: ninguno, lectura no confirmada, lectura confirmada, lectura repetible y serializada. El nivel de aislamiento predeterminado se serializa.                           |
 | Access         | ReadWrite                                                                                                                                                                                                                  |
-| Tipo           | Valores posibles largos: COMAdminTxIsolationLevelAny (0) COMAdminTxIsolationLevelReadUnCommitted (1) COMAdminTxIsolationLevelReadCommitted (2) COMAdminTxIsolationLevelRepeatableRead (3) COMAdminTxIsolationLevelSerializable (4) |
+| Tipo           | Long Possible values:COMAdminTxIsolationLevelAny (0)COMAdminTxIsolationLevelReadUnCommitted (1)COMAdminTxIsolationLevelReadCommitted (2)COMAdminTxIsolationLevelRepeatableRead (3)COMAdminTxIsolationLevelSerializable (4) |
 | Valor predeterminado        | COMAdminTxIsolationLevelSerializable (4)                                                                                                                                                                                   |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                 |
 
@@ -721,7 +721,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------|
-| Descripción    | Identificador de la versión. |
+| Descripción    | Identificador de versión. |
 | Access         | ReadOnly            |
 | Tipo           | String              |
 | Predeterminado        | ""                  |
@@ -737,7 +737,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------|
-| Descripción    | Subidentificador de versión. |
+| Descripción    | Subdominio de versión. |
 | Access         | ReadOnly                |
 | Tipo           | String                  |
 | Predeterminado        | ""                      |
@@ -753,7 +753,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------|
-| Descripción    | Identificador de subcompilación de versión. |
+| Descripción    | Identificador de la sub compilación de la versión. |
 | Access         | ReadOnly                      |
 | Tipo           | String                        |
 | Predeterminado        | ""                            |

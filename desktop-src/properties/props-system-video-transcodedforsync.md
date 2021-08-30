@@ -1,17 +1,17 @@
 ---
 description: Indica la parte vertical de la relación de aspecto.
 ms.assetid: B957A676-BC00-494c-A731-59237C98F5A5
-title: System. video. TranscodedForSync
+title: System.Video.TranscodedForSync
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4fa9801fe5a441b172725e7f0bbc05ecf7761f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a6d5df2d300c531d1c11fcf82aa099e0a30a194c209766720785986d3568741
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119944895"
 ---
-# <a name="systemvideotranscodedforsync"></a>System. video. TranscodedForSync
+# <a name="systemvideotranscodedforsync"></a>System.Video.TranscodedForSync
 
 Indica la parte vertical de la relación de aspecto.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-RADIUS-SavedFramedIpv6Prefix
-description: Indica un prefijo IPv6 (y la ruta correspondiente) que se va a configurar para el usuario. | atributo MS-RADIUS-SavedFramedIpv6Prefix
+title: Atributo ms-RADIUS-SavedFramedIpv6Prefix
+description: Indica un prefijo IPv6 (y la ruta correspondiente) que se va a configurar para el usuario. | Atributo ms-RADIUS-SavedFramedIpv6Prefix
 ms.assetid: 0d4e819b-3702-4aac-833f-e65c76b6fb68
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-RADIUS-SavedFramedIpv6Prefix
-- msRADIUS-SavedFramedIpv6Prefix atributo AD Schema
+- ms-RADIUS-SavedFramedIpv6Prefix attribute AD Schema
+- msRADIUS-SavedFramedIpv6Prefix attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2365f1a49925996e595dc1ef9926f7f5c3af22e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bff0acc15659566cf4e84e67e03f3bf311b1938591ff63b8c362a29d31b9f8e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066405"
 ---
-# <a name="ms-radius-savedframedipv6prefix-attribute"></a>atributo MS-RADIUS-SavedFramedIpv6Prefix
+# <a name="ms-radius-savedframedipv6prefix-attribute"></a>Atributo ms-RADIUS-SavedFramedIpv6Prefix
 
 Indica un prefijo IPv6 (y la ruta correspondiente) que se va a configurar para el usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-RADIUS-SavedFramedIpv6Prefix      |
-| Nombre para mostrar de LDAP | msRADIUS-SavedFramedIpv6Prefix       |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-RADIUS-SavedFramedIpv6Prefix      |
+| Ldap-Display-Name | msRADIUS-SavedFramedIpv6Prefix       |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1916              |
-| System-ID-GUID    | 0965a062-b1e1-403b-b48d-5c0eb0e952cc |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 0965a062-b1e1-403b-b48d-5c0eb0e952cc |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -50,20 +50,20 @@ Indica un prefijo IPv6 (y la ruta correspondiente) que se va a configurar para e
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -71,20 +71,20 @@ Indica un prefijo IPv6 (y la ruta correspondiente) que se va a configurar para e
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Indica un prefijo IPv6 (y la ruta correspondiente) que se va a configurar para e
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |

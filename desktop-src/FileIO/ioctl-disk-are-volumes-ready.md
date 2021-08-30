@@ -1,7 +1,7 @@
 ---
 description: Espera a que todos los volúmenes del disco especificado estén listos para su uso.
 ms.assetid: 6cf619bb-7ff5-485e-b533-0f7f6503c6e0
-title: Código de control de IOCTL_DISK_ARE_VOLUMES_READY (Ntdddisk. h)
+title: IOCTL_DISK_ARE_VOLUMES_READY código de control (Ntdddisk.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - ntdddisk.h
-ms.openlocfilehash: dc4457af2ce6e7759ef879900803504933a09978
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cba83d8f850151e217460595f5f4fc8831b99ee5ee30fc0bb908c0ca04a9cdce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119981975"
 ---
-# <a name="ioctl_disk_are_volumes_ready-control-code"></a>El \_ disco \_ ioctl \_ está \_ preparado para el código de control
+# <a name="ioctl_disk_are_volumes_ready-control-code"></a>EL DISCO IOCTL \_ SON EL CÓDIGO DE control LISTO PARA \_ \_ \_ VOLÚMENES
 
 Espera a que todos los volúmenes del disco especificado estén listos para su uso.
 
-Para realizar esta operación, llame a la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
+Para realizar esta operación, llame a la [**función DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
 
 
 ```C++
@@ -51,7 +51,7 @@ DeviceIoControl( (HANDLE)       hDevice,         // handle to device
 
 Identificador del disco.
 
-Para recuperar un identificador de dispositivo, llame a la función [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) .
+Para recuperar un identificador de dispositivo, llame a la [**función CreateFile.**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea)
 
 </dd> <dt>
 
@@ -60,55 +60,55 @@ Para recuperar un identificador de dispositivo, llame a la función [**CreateFil
 
 Código de control de la operación.
 
-Usar **el \_ disco ioctl \_ son \_ volúmenes \_ preparados** para esta operación.
+Use **IOCTL \_ DISK ARE VOLUMES READY \_ \_ \_ para** esta operación.
 
 </dd> <dt>
 
 *lpInBuffer* 
 </dt> <dd>
 
-No se usa con esta operación. Se establece en **null**.
+No se usa con esta operación. Se establece en **NULL.**
 
 </dd> <dt>
 
 *nInBufferSize* 
 </dt> <dd>
 
-Tamaño del búfer de entrada, en bytes. Se establece en 0 (cero).
+Tamaño del búfer de entrada, en bytes. Establezca en 0 (cero).
 
 </dd> <dt>
 
 *lpOutBuffer* 
 </dt> <dd>
 
-No se usa con esta operación. Se establece en **null**.
+No se usa con esta operación. Se establece en **NULL.**
 
 </dd> <dt>
 
 *nOutBufferSize* 
 </dt> <dd>
 
-No se usa con esta operación. Se establece en 0 (cero).
+No se usa con esta operación. Establezca en 0 (cero).
 
 </dd> <dt>
 
 *lpBytesReturned* 
 </dt> <dd>
 
-No se usa con esta operación. Se establece en **null**.
+No se usa con esta operación. Se establece en **NULL.**
 
 </dd> <dt>
 
 *lpOverlapped* 
 </dt> <dd>
 
-Puntero a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) .
+Puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Si se abrió *hDevice* sin especificar la **marca de archivo \_ \_ superpuesta**, *lpOverlapped* se omite.
+Si *hDevice se* abrió sin especificar **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* se omite.
 
-Si *hDevice* se abrió con la marca de **indicador de archivo \_ \_ superpuesto** , la operación se realiza como una operación superpuesta (asincrónica). En este caso, *lpOverlapped* debe apuntar a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida que contiene un identificador para un objeto de evento. De lo contrario, se produce un error imprevisible en la función.
+Si *hDevice se* abrió con la marca **FILE FLAG \_ \_ OVERLAPPED,** la operación se realiza como una operación superpuesta (asincrónica). En este caso, *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida que contenga un identificador a un objeto de evento. De lo contrario, se produce un error en la función de maneras imprevisibles.
 
-En el caso de las operaciones superpuestas, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) vuelve inmediatamente y el objeto de evento se señala cuando se ha completado la operación. De lo contrario, la función no devuelve ningún resultado hasta que se haya completado la operación o se produzca un error.
+Para las operaciones superpuestas, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) devuelve inmediatamente y el objeto de evento se señala cuando se ha completado la operación. De lo contrario, la función no devuelve hasta que se ha completado la operación o se produce un error.
 
 </dd> </dl>
 
@@ -124,9 +124,9 @@ Si se produce un error en la operación o está pendiente, [**DeviceIoControl**]
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Ntdddisk. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Ntdddisk.h</dt> </dl> |
 
 
 

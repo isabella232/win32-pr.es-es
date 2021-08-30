@@ -1,8 +1,8 @@
 ---
-description: Representa un trabajo de impresión generado por una aplicación de Windows. Cualquier unidad de trabajo generada por el comando de impresión de una aplicación que se ejecuta en un equipo que ejecuta en un sistema operativo Windows es un descendiente o un miembro de esta clase.
+description: Representa un trabajo de impresión generado por una Windows aplicación. Cualquier unidad de trabajo generada por el comando de impresión de una aplicación que se ejecuta en un equipo que se ejecuta en un sistema operativo Windows es un descendiente o miembro de esta clase.
 ms.assetid: d884acba-e1b2-4d24-9b55-15d175a163d9
 ms.tgt_platform: multiple
-title: Win32_PrintJob (clase)
+title: Win32_PrintJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -42,16 +42,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 10f56034161a9313eed1b7d302ab790d153c0ee6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 62a8f09d6b96e12d75b30c80e5553d3138bcb342f7ca06b53920d897aaa51c57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119971855"
 ---
-# <a name="win32_printjob-class"></a>\_Clase PrintJob de Win32
+# <a name="win32_printjob-class"></a>Clase PrintJob de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ PrintJob de Win32** representa un trabajo de impresión generado por una aplicación de Windows. Cualquier unidad de trabajo generada por el comando de impresión de una aplicación que se ejecuta en un equipo que ejecuta en un sistema operativo Windows es un descendiente o un miembro de esta clase.
+La **clase \_ WMI PrintJob** [de](../wmisdk/retrieving-a-class.md) Win32 representa un trabajo de impresión generado por una Windows aplicación. Cualquier unidad de trabajo generada por el comando de impresión de una aplicación que se ejecuta en un equipo que se ejecuta en un sistema operativo Windows es un descendiente o miembro de esta clase.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -93,14 +93,14 @@ class Win32_PrintJob : CIM_Job
 
 ## <a name="members"></a>Miembros
 
-La clase de **Win32 \_ PrintJob** tiene estos tipos de miembros:
+La **clase \_ PrintJob de Win32** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase de **Win32 \_ PrintJob** tiene estos métodos.
+La **clase \_ PrintJob de Win32** tiene estos métodos.
 
 
 
@@ -115,7 +115,7 @@ La clase de **Win32 \_ PrintJob** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **Win32 \_ PrintJob** tiene estas propiedades.
+La **clase \_ PrintJob de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -128,12 +128,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -146,16 +146,16 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que indica si el documento se imprime en color o monocromo. Algunas impresoras de color tienen la capacidad de imprimir con verdadero negro en lugar de una combinación de amarillo, aguamarina y magenta. True Black normalmente crea texto más oscuro y más nítido para los documentos. Esta opción solo es útil para las impresoras de color que admiten la impresión en negro real.
+Cadena que indica si el documento se imprime en color o monocromo. Algunas impresoras de color tienen la capacidad de imprimir con un color negro verdadero en lugar de una combinación de amarillo, cian y rojo. El negro verdadero suele crear texto más oscuro y más nítido para los documentos. Esta opción solo es útil para impresoras de color que admiten la impresión en negro verdadero.
 
 Los valores son:
 
 <dl><span id="_Color_"></span><span id="_color_"></span><span id="_COLOR_"></span><dt>
 
-**Color**
+**"Color"**
 </dt><span id="_Monochrome_"></span><span id="_monochrome_"></span><span id="_MONOCHROME_"></span><dt>
 
-**Monocromática**
+**"Monocromo"**
 </dt> </dl>
 
 </dd> <dt>
@@ -169,7 +169,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Formato de los datos de este trabajo de impresión. Esto indica al controlador de impresora que traduzca los datos (texto genérico, PostScript o PCL) antes de imprimir o imprime en formato sin procesar (para gráficos e imágenes).
+Formato de los datos de este trabajo de impresión. Esto indica al controlador de impresora que traduzca los datos (texto genérico, PostScript o PCL) antes de imprimirlos, o imprimirlos en un formato sin formato (para gráficos e imágenes).
 
 Ejemplo: "TEXT"
 
@@ -184,12 +184,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -202,9 +202,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del trabajo de impresión. El usuario verá este nombre al ver los documentos que están a la espera de ser impresos.
+Nombre del trabajo de impresión. El usuario ve este nombre al ver documentos que están esperando ser impresos.
 
-Ejemplo: "Microsoft Word-Review.doc"
+Ejemplo: "Microsoft Word - Review.doc"
 
 </dd> <dt>
 
@@ -217,14 +217,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del controlador de impresora utilizado para el trabajo de impresión.
+Nombre del controlador de impresora usado para el trabajo de impresión.
 
 </dd> <dt>
 
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -232,7 +232,7 @@ Tipo de acceso: solo lectura
 
 Período de tiempo durante el que se ha estado ejecutando el trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -252,31 +252,31 @@ Nombre del equipo en el que se crea el trabajo de impresión.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Indica cuándo se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **JobId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de identificación del trabajo. Lo utilizan otros métodos como identificador de un trabajo que se pone en cola en la impresora.
+Número de identificador del trabajo. Lo usan otros métodos como identificador de un trabajo que se cola en la impresora.
 
 </dd> <dt>
 
@@ -291,7 +291,7 @@ Tipo de acceso: solo lectura
 
 Cadena de forma libre que representa el estado del trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -304,12 +304,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -322,9 +322,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Se notifica al usuario sobre la finalización o el error del trabajo.
+Se notifica al usuario tras la finalización o el error del trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -339,27 +339,27 @@ Tipo de acceso: solo lectura
 
 Usuario que envió el trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
 **PagesPrinted**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de páginas que se imprimen. Este valor puede ser 0 (cero) si el trabajo de impresión no contiene información de delimitación de página.
+Número de páginas que se imprimen. Este valor puede ser 0 (cero) si el trabajo de impresión no contiene información delimitada por páginas.
 
 </dd> <dt>
 
 **PaperLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -383,14 +383,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño del papel que se usa para imprimir el trabajo. El valor es uno de los tamaños de papel posibles para la impresora especificada en la propiedad **PaperSizesSupported** de la clase [**\_ Printer de Win32**](win32-printer.md) .
+Tamaño del papel usado para imprimir el trabajo. El valor es uno de los posibles tamaños de papel para la impresora especificada en la **propiedad PaperSizesSupported** de [**la clase Printer \_ de Win32.**](win32-printer.md)
 
 </dd> <dt>
 
 **PaperWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -414,7 +414,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Parámetros opcionales que se van a enviar al procesador de impresión. Para obtener más información, vea la propiedad **PrintProcessor** .
+Parámetros opcionales que se enviarán al procesador de impresión. Para obtener más información, vea la **propiedad PrintProcessor.**
 
 </dd> <dt>
 
@@ -427,14 +427,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Servicio de procesador de impresión usado para procesar el trabajo de impresión. Un procesador de impresora funciona junto con el controlador de impresora para proporcionar una traducción adicional de los datos de la impresora y también se puede usar para proporcionar opciones especiales, como una página de título para el trabajo.
+Servicio de procesador de impresión que se usa para procesar el trabajo de impresión. Un procesador de impresora funciona junto con el controlador de impresora para proporcionar una traducción adicional de los datos de impresora para la impresora y también se puede usar para proporcionar opciones especiales, como una página de título para el trabajo.
 
 </dd> <dt>
 
 **Prioridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -442,14 +442,14 @@ Tipo de acceso: solo lectura
 
 Importancia de la ejecución de un trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
 **Tamaño**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -465,7 +465,7 @@ Tamaño del trabajo de impresión.
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -473,7 +473,7 @@ Tipo de acceso: solo lectura
 
 Hora a la que comenzó el trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
@@ -486,14 +486,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Cadena que indica el estado actual del objeto. Se puede definir un estado operativo y no operativo. El estado operativo puede ser "correcto", "degradado" y "Pred FAIL". "Pred FAIL" indica que un elemento funciona correctamente, pero está prediciendo un error (por ejemplo, una unidad de disco duro habilitada para SMART).
+Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "error", "iniciando", "deteniendo" y "servicio". "Servicio" puede aplicarse durante el reflejo del disco: Resilvering, recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni en ninguno de los otros Estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -501,94 +501,94 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**StatusMask**
+**Máscara de estado**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -605,7 +605,7 @@ En pausa
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Error
@@ -622,7 +622,7 @@ Eliminando
 8 (0x8)
 </dt> <dd>
 
-En cola
+Cola
 
 </dd> <dt>
 
@@ -643,14 +643,14 @@ Sin conexión
 64 (0x40)
 </dt> <dd>
 
-Paperout
+Papeleo
 
 </dd> <dt>
 
 128 (0x80)
 </dt> <dd>
 
-Imprimir
+Impreso
 
 </dd> <dt>
 
@@ -664,14 +664,14 @@ Deleted
 512 (0x200)
 </dt> <dd>
 
-\_DevQ bloqueado
+Blocked \_ DevQ
 
 </dd> <dt>
 
 1024 (0x400)
 </dt> <dd>
 
-\_Solicitud de intervención del usuario \_
+Solicitud de \_ \_ intervención del usuario
 
 </dd> <dt>
 
@@ -687,7 +687,7 @@ Reiniciar
 **TimeSubmitted**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -695,45 +695,45 @@ Tipo de acceso: solo lectura
 
 Hora a la que se envió el trabajo.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> <dt>
 
 **TotalPages**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de páginas necesarias para completar el trabajo. Este valor puede ser 0 (cero) si el trabajo de impresión no contiene información de delimitación de página.
+Número de páginas necesarias para completar el trabajo. Este valor puede ser 0 (cero) si el trabajo de impresión no contiene información delimitada por páginas.
 
 </dd> <dt>
 
 **UntilTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Hora en la que el trabajo no es válido o debe detenerse.
+Hora en la que el trabajo no es válido o se debe detener.
 
-Esta propiedad se hereda del [**\_ trabajo CIM**](cim-job.md).
+Esta propiedad se hereda del [**trabajo \_ cim**](cim-job.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase de **Win32 \_ PrintJob** se deriva del [**\_ trabajo de CIM**](cim-job.md).
+La **clase \_ PrintJob de Win32** se deriva del [**trabajo \_ CIM**](cim-job.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código de VBScript se describe cómo recuperar estadísticas de trabajos de impresora desde instancias de **\_ PrintJob de Win32**.
+En el siguiente ejemplo de código de VBScript se describe cómo recuperar estadísticas de trabajos de impresora de instancias de **\_ PrintJob de Win32.**
 
 
 ```VB
@@ -751,7 +751,7 @@ next
 
 
 
-El siguiente ejemplo de código Perl describe cómo recuperar estadísticas de trabajos de impresora de instancias **de \_ PrintJob de Win32**.
+En el siguiente ejemplo de código perl se describe cómo recuperar estadísticas de trabajos de impresora de instancias de **\_ PrintJob de Win32.**
 
 
 ```
@@ -794,8 +794,8 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -804,10 +804,10 @@ else
 
 <dl> <dt>
 
-[**Trabajo de CIM \_**](./cim-job.md)
+[**Trabajo \_ cim**](./cim-job.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

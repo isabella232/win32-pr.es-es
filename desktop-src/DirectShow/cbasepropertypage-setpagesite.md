@@ -1,7 +1,7 @@
 ---
-description: 'El método SetPageSite inicializa la página de propiedades y proporciona un puntero a la interfaz IPropertyPageSite del marco de propiedad. Este método implementa el método IPropertyPage:: SetPageSite.'
+description: El método SetPageSite inicializa la página de propiedades y proporciona un puntero a la interfaz IPropertyPageSite del marco de propiedades. Este método implementa el método IPropertyPage::SetPageSite.
 ms.assetid: 16c4633f-2f91-4b1b-a47c-4ef945c3af00
-title: Método CBasePropertyPage. SetPageSite (Cprop. h)
+title: Método CBasePropertyPage.SetPageSite (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a165ff60971cef3d2373e0f07b2abee554308279
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5b3a58775a984fe0d9be69d33a5eee0d0e2af1b6f1bd609f399614bf99cdc3f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916365"
 ---
-# <a name="cbasepropertypagesetpagesite-method"></a>CBasePropertyPage. SetPageSite, método
+# <a name="cbasepropertypagesetpagesite-method"></a>Método CBasePropertyPage.SetPageSite
 
-El `SetPageSite` método inicializa la página de propiedades y proporciona un puntero a la interfaz **IPropertyPageSite** del marco de propiedad. Este método implementa el método **IPropertyPage:: SetPageSite** .
+El método inicializa la página de propiedades y proporciona un puntero a la interfaz `SetPageSite` **IPropertyPageSite** del marco de propiedades. Este método implementa el **método IPropertyPage::SetPageSite.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,28 +45,28 @@ HRESULT SetPageSite(
 *pPageSite* 
 </dt> <dd>
 
-Puntero a la interfaz **IPropertyPageSite** .
+Puntero a la **interfaz IPropertyPageSite.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                  | Descripción                    |
 |----------------------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Correcto.<br/>            |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Error inesperado.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Correcto.<br/>            |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Error inesperado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método almacena el puntero *pPageSite* en la variable miembro [**CBasePropertyPage:: m \_ pPageSite**](cbasepropertypage-m-ppagesite.md) .
+El método almacena el *puntero pPageSite* en la variable miembro [**CBasePropertyPage::m \_ pPageSite.**](cbasepropertypage-m-ppagesite.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ El método almacena el puntero *pPageSite* en la variable miembro [**CBaseProper
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ El método almacena el puntero *pPageSite* en la variable miembro [**CBaseProper
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

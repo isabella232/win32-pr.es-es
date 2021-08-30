@@ -1,9 +1,9 @@
 ---
-title: Mensaje de BM_SETDONTCLICK (Winuser. h)
-description: Establece una marca en un botón de radio que controla la generación de \_ mensajes clics de BN cuando el botón recibe el foco.
+title: BM_SETDONTCLICK mensaje (Winuser.h)
+description: Establece una marca en un botón de radio que controla la generación de mensajes CLICKED de BN \_ cuando el botón recibe el foco.
 ms.assetid: 91d98bce-abea-4afc-a995-0f426ba7a518
 keywords:
-- BM_SETDONTCLICK controles de mensajes de Windows
+- BM_SETDONTCLICK controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8596ec679ff07b87b3433d5b5a7805698f56f84
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4a118b0e9ed3e1ea797cdd0b690aee0fe3c4cc067b72990d884fdd121fcb80c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921245"
 ---
-# <a name="bm_setdontclick-message"></a>\_Mensaje SETDONTCLICK de BM
+# <a name="bm_setdontclick-message"></a>Mensaje \_ BM SETDONTCLICK
 
-Establece una marca en un botón de radio que controla la generación de mensajes [ \_ clics de BN](bn-clicked.md) cuando el botón recibe el foco.
+Establece una marca en un botón de radio que controla la generación de mensajes [ \_ CLICKED](bn-clicked.md) de BN cuando el botón recibe el foco.
 
 ## <a name="parameters"></a>Parámetros
 
 <dl> <dt>
 
-*wParam* \[ de\]
+*wParam* \[ En\]
 </dt> <dd>
 
-Un **booleano** que especifica el estado. **True** para establecer la marca; de lo contrario, **false**.
+Valor **BOOL** que especifica el estado. **TRUE** para establecer la marca; de lo **contrario, FALSE.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza. Debe ser cero.
+No se usa. Debe ser cero.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -4,24 +4,24 @@ ms.assetid: 92a8d19f-1c9e-4e02-a3d4-f2869ec871df
 title: Leer un documento XPS en un OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5c3b703de24be58db875618b575cebf9c1c0b27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0361f00d148f8f29ab36577683cecc0087ff91af81469e7de527de90a8b1a795
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112195"
 ---
 # <a name="read-an-xps-document-into-an-xps-om"></a>Leer un documento XPS en un OM XPS
 
 Describe cómo leer un documento XPS existente de un archivo en un OM XPS.
 
-Para crear un OM XPS a partir de un documento XPS, llame al método [**IXpsOMObjectFactory:: CreatePackageFromFile**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagefromfile) .
+Para crear una OM XPS a partir de un documento XPS, llame al método [**IXpsOMObjectFactory::CreatePackageFromFile.**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagefromfile)
 
-Antes de usar estos ejemplos de código en el programa, lea la declinación de responsabilidades en [las tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
+Antes de usar estos ejemplos de código en el programa, lea la declinación de responsabilidades en [Tareas comunes de programación de documentos XPS](common-xps-document-tasks.md).
 
 ## <a name="code-example"></a>Ejemplo de código
 
-En el ejemplo de código siguiente se da por supuesto que la inicialización descrita en [Initialize an XPS OM](xps-object-model-initialization.md) se ha realizado correctamente.
+En el ejemplo de código siguiente se da por supuesto que la inicialización descrita en [Inicialización de una OM XPS](xps-object-model-initialization.md) se ha hecho correctamente.
 
 
 ```C++
@@ -42,21 +42,21 @@ En el ejemplo de código siguiente se da por supuesto que la inicialización des
 
 
 
-Para crear un OM XPS a partir de un documento XPS que está almacenado como un flujo, llame a [**IXpsOMObjectFactory:: CreatePackageFromStream**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagefromstream).
+Para crear una OM XPS a partir de un documento XPS que se almacena como una secuencia, llame a [**IXpsOMObjectFactory::CreatePackageFromStream**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsomobjectfactory-createpackagefromstream).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si escribe un OM XPS inmediatamente después de haber leído un paquete XPS en él, es posible que se pierda o cambie parte del contenido original.
+Si escribe un XPS OM inmediatamente después de haber leído un paquete XPS en él, es posible que parte del contenido original se pierda o cambie.
 
-En la tabla siguiente se enumeran algunos de los cambios que se pueden producir en este caso:
+Algunos de los cambios que pueden producirse en este caso se enumeran en la tabla siguiente:
 
 | Característica de documento                      | Acción                                                             |
 |---------------------------------------|--------------------------------------------------------------------|
-| Firmas digitales<br/>         | Quitado del documento<br/>                               |
-| Elemento DiscardControl<br/>        | Quitado del documento<br/>                               |
-| Partes de documentos externos<br/>     | Quitado del documento<br/>                               |
-| Marcado de FixedPage<br/>           | Modificado desde el original<br/>                              |
-| Marcado del Diccionario de recursos<br/> | Modificado desde el original, si se establece la marca de optimización<br/> |
+| Firmas digitales<br/>         | Se ha quitado del documento.<br/>                               |
+| Elemento DiscardControl<br/>        | Se ha quitado del documento.<br/>                               |
+| Elementos de documentos externos<br/>     | Se ha quitado del documento.<br/>                               |
+| Marcado FixedPage<br/>           | Modificado a partir del original<br/>                              |
+| Marcado del diccionario de recursos<br/> | Se ha modificado a partir del original, si se ha establecido la marca Optimización<br/> |
 
 
 
@@ -69,16 +69,16 @@ En la tabla siguiente se enumeran algunos de los cambios que se pueden producir 
 **Pasos siguientes**
 </dt> <dt>
 
-[Navegar por el OM de XPS](navigate-the-xps-om.md)
+[Navegación por XPS OM](navigate-the-xps-om.md)
 </dt> <dt>
 
-[Escribir texto en un OM XPS](write-text-to-an-xps-om.md)
+[Escribir texto en una om xps](write-text-to-an-xps-om.md)
 </dt> <dt>
 
 [Dibujar gráficos en un OM XPS](draw-graphics-in-an-xps-om.md)
 </dt> <dt>
 
-[Colocar imágenes en un OM XPS](place-images-in-an-xps-om.md)
+[Colocar imágenes en un OM xps](place-images-in-an-xps-om.md)
 </dt> <dt>
 
 **Se usa en esta sección**
@@ -93,13 +93,13 @@ En la tabla siguiente se enumeran algunos de los cambios que se pueden producir 
 **Para obtener más información**
 </dt> <dt>
 
-[Inicializar un OM XPS](xps-object-model-initialization.md)
+[Inicialización de una om xps](xps-object-model-initialization.md)
 </dt> <dt>
 
 [API de empaquetado](/previous-versions/windows/desktop/opc/packaging)
 </dt> <dt>
 
-[Referencia de la API de documentos XPS](xps-programming-reference.md)
+[Referencia de document API de XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

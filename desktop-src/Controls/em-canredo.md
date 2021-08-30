@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_CANREDO (RichEdit. h)
+title: EM_CANREDO mensaje (Richedit.h)
 description: Determina si hay alguna acción en la cola de rehacer del control.
 ms.assetid: 4a76adc8-f815-4cf7-8742-b7695e5a0f64
 keywords:
-- EM_CANREDO controles de mensajes de Windows
+- EM_CANREDO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ccfb12f8e72bdf5321151cd3a70b74f322a46591
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d8898ba469d52e4098c2430dff5234a3522a6fbd3569bec823ff776a3f1c420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916055"
 ---
-# <a name="em_canredo-message"></a>\_Mensaje CANREDO em
+# <a name="em_canredo-message"></a>Mensaje \_ DE EM CANREDO
 
 Determina si hay alguna acción en la cola de rehacer del control.
 
@@ -32,26 +32,26 @@ Determina si hay alguna acción en la cola de rehacer del control.
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si hay acciones en la cola de rehacer de control, el valor devuelto es un valor distinto de cero.
+Si hay acciones en la cola de rehacer del control, el valor devuelto es distinto de cero.
 
 Si la cola de puesta al día está vacía, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para rehacer la operación de deshacer más reciente, envíe el mensaje de [**\_ rehacer em**](em-redo.md) .
+Para rehacer la operación de deshacer más reciente, envíe el mensaje [**\_ EM REDO.**](em-redo.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Para rehacer la operación de deshacer más reciente, envíe el mensaje de [**\_
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,16 +72,16 @@ Para rehacer la operación de deshacer más reciente, envíe el mensaje de [**\_
 **Referencia**
 </dt> <dt>
 
-[**\_GETREDONAME em**](em-getredoname.md)
+[**EM \_ GETREDONAME**](em-getredoname.md)
 </dt> <dt>
 
-[**\_GETUNDONAME em**](em-getundoname.md)
+[**EM \_ GETUNDONAME**](em-getundoname.md)
 </dt> <dt>
 
-[**rehacer EM \_**](em-redo.md)
+[**REDO DE EM \_**](em-redo.md)
 </dt> <dt>
 
-[**deshacer EM \_**](em-undo.md)
+[**EM \_ UNDO**](em-undo.md)
 </dt> </dl>
 
  

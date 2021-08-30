@@ -1,11 +1,11 @@
 ---
-title: Método GetElement de ID3DX11EffectVariable (D3dx11effect. h)
+title: Método ID3DX11EffectVariable GetElement (D3dx11effect.h)
 description: Obtiene un elemento de matriz.
 ms.assetid: 3edf2084-570a-4423-8205-0b94a2a0cfde
 keywords:
-- GetElement (método) Direct3D 11
-- GetElement (método) Direct3D 11, interfaz ID3DX11EffectVariable
-- Interfaz ID3DX11EffectVariable Direct3D 11, GetElement (método)
+- Método GetElement Direct3D 11
+- Método GetElement Direct3D 11, interfaz ID3DX11EffectVariable
+- Interfaz ID3DX11EffectVariable Direct3D 11 , método GetElement
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a5b887bb9e4c1d40f4d3eb0d36b9a7b4d2698b5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a61bd208bb9dfecd861a0fd9e25a974da4daeb40fbcaad2316d677cb61f44315
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104986809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894595"
 ---
-# <a name="id3dx11effectvariablegetelement-method"></a>ID3DX11EffectVariable:: GetElement (método)
+# <a name="id3dx11effectvariablegetelement-method"></a>Método ID3DX11EffectVariable::GetElement
 
 Obtiene un elemento de matriz.
 
@@ -46,9 +46,9 @@ ID3DX11EffectVariable* GetElement(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Índice de base cero; de lo contrario, es 0.
+Índice de base cero; de lo contrario, 0.
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
 
 Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
-Un puntero a un [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
+Puntero a [**id3DX11EffectVariable**](id3dx11effectvariable.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la variable de efecto es una matriz, use este método para devolver uno de los elementos.
+Si la variable de efecto es una matriz, use este método para devolver uno de los elementos .
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Si la variable de efecto es una matriz, use este método para devolver uno de lo
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Una aplicación envía el mensaje de MDIRESTORE de WM \_ a una ventana de cliente de la interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI de tamaño maximizado o minimizado.
+description: Una aplicación envía el mensaje WM MDIRESTORE a una ventana de cliente de interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI de tamaño maximizado \_ o minimizado.
 ms.assetid: bb99fda1-9eb5-4307-9326-9a417a046c22
-title: Mensaje de WM_MDIRESTORE (Winuser. h)
+title: WM_MDIRESTORE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc2cf36a0b428e1e9003682a5e766f613fd7ba81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8bc9a8b4a414a1f987ad51b01f94c50b336adb8a32a298a83a1a3b9de8b0bd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110705"
 ---
-# <a name="wm_mdirestore-message"></a>Mensaje de MDIRESTORE de WM \_
+# <a name="wm_mdirestore-message"></a>Mensaje \_ DE WM MDIRESTORE
 
-Una aplicación envía el mensaje de **\_ MDIRESTORE de WM** a una ventana de cliente de la interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI de tamaño maximizado o minimizado.
+Una aplicación envía el **mensaje WM \_ MDIRESTORE** a una ventana de cliente de interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI de tamaño maximizado o minimizado.
 
 
 ```C++
@@ -54,7 +54,7 @@ El valor devuelto siempre es cero.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -65,10 +65,10 @@ El valor devuelto siempre es cero.
 **Referencia**
 </dt> <dt>
 
-[**MDIMAXIMIZE de WM \_**](wm-mdimaximize.md)
+[**WM \_ MDIMAXIMIZE**](wm-mdimaximize.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Interfaz de varios documentos](multiple-document-interface.md)

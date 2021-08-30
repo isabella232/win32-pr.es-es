@@ -1,19 +1,19 @@
 ---
-description: Este código de ejemplo procede de una acción personalizada ICE (ICE01). Valida que el mecanismo de ICE funciona mostrando la hora. El ICE envía un mensaje que le indica la hora a la que el instalador llamó a ICE. Esta ICE nunca debe devolver un error.
+description: Este código de ejemplo es de una acción personalizada de ICE (ICE01). Valida que el mecanismo ICE funciona mostrando la hora. El ICE publica un mensaje que indica la hora a la que el instalador llamó al ICE. Este ICE nunca debe devolver un error.
 ms.assetid: 7e580f6b-8adf-4b11-9072-5b2e1506fabb
 title: ICE de ejemplo en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91897d4d056052b27025c87f13105e2cc54657df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61c1ddf7dc4f2e650086ee99610a666636cdf5c9770e5979d39258fd746d48ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039585"
 ---
 # <a name="sample-ice-in-c"></a>ICE de ejemplo en C++
 
-Este código de ejemplo procede de una acción personalizada ICE ( [ICE01](ice01.md)). Valida que el mecanismo de ICE funciona mostrando la hora. El ICE envía un mensaje que le indica la hora a la que el instalador llamó a ICE. Esta ICE nunca debe devolver un error.
+Este código de ejemplo es de una acción personalizada de ICE [(ICE01).](ice01.md) Valida que el mecanismo ICE funciona mostrando la hora. El ICE publica un mensaje que indica la hora a la que el instalador llamó al ICE. Este ICE nunca debe devolver un error.
 
 
 ```C++

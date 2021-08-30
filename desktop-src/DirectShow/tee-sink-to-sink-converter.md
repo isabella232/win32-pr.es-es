@@ -1,29 +1,29 @@
 ---
-description: Convertidor Tee/Sink-to-Sink
+description: Convertidor de tee/sink-to-sink
 ms.assetid: 8ee5e20c-f37a-4a9b-9382-2ed94333c6ec
-title: Convertidor Tee/Sink-to-Sink
+title: Convertidor de tee/sink-to-sink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cf85e3eb58f601273ff352a3878d352ca0f0d5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f3b1639572dc4809df4b326fabeac613bbb1b38b9392b32e1c1f54f717a0f44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050015"
 ---
-# <a name="teesink-to-sink-converter"></a>Convertidor Tee/Sink-to-Sink
+# <a name="teesink-to-sink-converter"></a>Convertidor de tee/sink-to-sink
 
-El convertidor Tee/Sink-to-Sink es un filtro basado en KsProxy y en modo kernel. Se usa en gráficos de filtro de televisión de vídeo analógico donde se representan o capturan datos de VBI. El filtro se conecta ascendente al filtro de [captura de vídeo WDM](wdm-video-capture-filter.md) y proporciona un medio eficaz para duplicar secuencias de datos en modo kernel sin las transiciones costosas entre el modo kernel y el usuario. Proporciona cada bloque de datos recibido a todos los pin de salida, y el códec de bajada es responsable de buscar los datos de VBI específicos que se van a descodificar.
+El convertidor de receptor a receptor es un filtro basado en KsProxy en modo kernel. Se usa en gráficos de filtros de televisión de vídeo análogo en los que se representan o capturan datos de VBI. El filtro está conectado en sentido ascendente al filtro de captura de vídeo [de WDM](wdm-video-capture-filter.md) y proporciona un medio eficaz para duplicar flujos de datos en modo kernel sin las costosas transiciones entre el modo kernel y el modo de usuario. Entrega cada bloque de datos recibido a todos los pines de salida y el códec de bajada es responsable de buscar los datos de VBI específicos que se descodifican.
 
-El convertidor Tee/Sink-to-Sink aparece en la categoría de filtro "dispositivos de transmisión por secuencias WDM y divisora" ( \_ KSCATEGORY \_ ).
+El convertidor de tee/sink-to-sink aparece en la categoría de filtro "WDM Streaming Tee/Splitter Devices" (AM \_ KSCATEGORY \_ SPLITTER).
 
-Dado que se trata de un filtro en modo kernel, las aplicaciones no pueden crearlo directamente mediante [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance). En su lugar, use el [enumerador de dispositivos del sistema](system-device-enumerator.md). Para obtener más información, vea [crear filtros de Kernel-Mode](creating-kernel-mode-filters.md).
+Dado que se trata de un filtro en modo kernel, las aplicaciones no pueden crearlo directamente mediante [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance). En su lugar, use [el enumerador de dispositivos del sistema](system-device-enumerator.md). Para obtener más información, vea [Creating Kernel-Mode Filters](creating-kernel-mode-filters.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

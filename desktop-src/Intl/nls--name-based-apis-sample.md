@@ -1,29 +1,29 @@
 ---
-description: La aplicación de ejemplo que se describe en este tema muestra algunas de las funciones NLS &\# 0034; nombre de configuración regional&\# 0034;. Las aplicaciones deben usar nombres de configuración regional en lugar de los identificadores de configuración regional cuando sea posible.
+description: La aplicación de ejemplo descrita en este tema muestra algunas de las funciones nls &\# 0034;nombre de configuración regional&\# 0034;. Las aplicaciones deben usar nombres de configuración regional en lugar de identificadores de configuración regional cuando sea posible.
 ms.assetid: 0502dba0-a26f-4238-b68e-bb41ef17ff08
-title: 'NLS: ejemplo de API basadas en nombre'
+title: 'NLS: ejemplo de API basadas en nombres'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd5acab078f06e345184769b5a472e6d2f307c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52c7f8e244c1d86a5beba6ea77f2b9f26baf6169a39484a436484e6a7ab0b2df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040815"
 ---
-# <a name="nls-name-based-apis-sample"></a>NLS: ejemplo de API basadas en nombre
+# <a name="nls-name-based-apis-sample"></a>NLS: ejemplo de API basadas en nombres
 
-La aplicación de ejemplo que se describe en este tema muestra algunas de las [funciones de "nombre de la configuración regional"](calling-the--locale-name--functions.md)de NLS. Las aplicaciones deben usar [nombres de configuración regional](locale-names.md) en lugar de los [identificadores de configuración regional](locale-identifiers.md) cuando sea posible.
+La aplicación de ejemplo que se describe en este tema muestra algunas de las funciones [nls "nombre de configuración regional".](calling-the--locale-name--functions.md) Las aplicaciones deben usar nombres [de configuración regional en](locale-names.md) lugar de [identificadores de configuración regional](locale-identifiers.md) cuando sea posible.
 
-La aplicación de ejemplo usa [**EnumSystemLocalesEx**](/windows/desktop/api/Winnls/nf-winnls-enumsystemlocalesex) para enumerar todas las configuraciones regionales en el sistema operativo, incluidas las [configuraciones regionales complementarias](custom-locales.md).
+La aplicación de ejemplo [**usa EnumSystemLocalesEx para**](/windows/desktop/api/Winnls/nf-winnls-enumsystemlocalesex) enumerar todas las configuraciones regionales del sistema operativo, incluidas [las configuraciones regionales complementarias.](custom-locales.md)
 
-La función de devolución de llamada de enumeración admitida por la aplicación puede tomar uno o más nombres de configuración regional como parámetros. [**EnumSystemLocalesEx**](/windows/desktop/api/Winnls/nf-winnls-enumsystemlocalesex) pasa estos nombres a la función de devolución de llamada en el valor *lParam* opcional. Si el usuario especifica las configuraciones regionales en la línea de comandos, la función de devolución de llamada solo muestra las configuraciones regionales especificadas en lugar de mostrar todas las configuraciones regionales.
+La función de devolución de llamada de enumeración admitida por la aplicación puede tomar uno o varios nombres de configuración regional como parámetros. [**EnumSystemLocalesEx**](/windows/desktop/api/Winnls/nf-winnls-enumsystemlocalesex) pasa estos nombres a la función de devolución de llamada en el valor *lparam* opcional. Si el usuario escribe las configuraciones regionales en la línea de comandos, la función de devolución de llamada solo muestra las configuraciones regionales especificadas en lugar de mostrar todas las configuraciones regionales.
 
-Para cada configuración regional mostrada, la función de devolución de llamada indica si se trata de la configuración regional del sistema, imprime la fecha actual con los formatos predeterminados de la configuración regional y muestra todos los datos de la configuración regional en cada [constante de información de configuración regional](locale-information-constants.md) introducida en Windows Vista, por ejemplo, [ \_ SSCRIPTS de configuración regional](locale-sscripts.md).
+Para cada configuración regional mostrada, la función de devolución de llamada notifica si es la configuración regional del sistema, imprime la [](locale-information-constants.md) fecha actual con los formatos predeterminados de la configuración regional y muestra todos los datos de la configuración regional en cada constante de información de configuración regional introducida en Windows Vista, por ejemplo, [LOCALE \_ SSCRIPTS](locale-sscripts.md).
 
 La aplicación de ejemplo analiza las configuraciones regionales de entrada para ver si son válidas mediante [**IsValidLocaleName**](/windows/desktop/api/Winnls/nf-winnls-isvalidlocalename).
 
-Este ejemplo muestra las siguientes funciones:
+En este ejemplo se muestran las siguientes funciones:
 
 -   [CompareStringEx](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringex)
 -   [**EnumSystemLocalesEx**](/windows/desktop/api/Winnls/nf-winnls-enumsystemlocalesex)

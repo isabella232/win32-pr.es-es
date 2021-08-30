@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 53c4bf27a359bd6d131f8d6d9c685e929d1a9ec1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e338ba63a3c750c2d2b8064113039919b709ed94e282be17f7c042f93a08252d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119990305"
 ---
 # <a name="d3dxmatrixrotationx-function-d3dx10mathh"></a>Función D3DXMatrixRotationX (D3DX10Math.h)
 
@@ -67,7 +67,7 @@ Puntero a una estructura D3DXMATRIX girada alrededor del eje X.
 
 ## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixRotationX se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixRotationX se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

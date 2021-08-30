@@ -1,5 +1,5 @@
 ---
-description: Enumera el contenido de la lista de mru usada más recientemente. Opcionalmente, recupera un elemento de la enumeración .
+description: Enumera el contenido de la lista usada más recientemente (MRU). Opcionalmente, recupera un elemento de la enumeración .
 title: Función EnumMRUListW
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Comctl32.dll
 ms.assetid: 630e5f27-96bf-4e88-b01a-127b301cc051
-ms.openlocfilehash: 1e6e4bd0820d35fec2a108a81eb1030567493e6a
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 668b92ad8e89c4b3a4082142c7eb8cdc722b8b2f4ce01827319c0480e0d2e997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943005"
 ---
 # <a name="enummrulistw-function"></a>Función EnumMRUListW
 
-\[Esta función está disponible a través de Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows. \]
+\[Esta función está disponible a través Windows XP con Service Pack 2 (SP2) y Windows Server 2003. Podría modificarse o no estar disponible en versiones posteriores de Windows. \]
 
-Enumera el contenido de la lista de mru usada más recientemente. Opcionalmente, recupera un elemento de la enumeración .
+Enumera el contenido de la lista usada más recientemente (MRU). Opcionalmente, recupera un elemento de la enumeración .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ Elemento que se devuelve. Si este valor es menor que 0, la función devuelve el 
 
 Tipo: **\* void**
 
-Puntero a un búfer que recibe el elemento solicitado en *nItem*. Si *nItem* es menor que 0, el contenido de este búfer no se modifica.
+Puntero a un búfer que recibe el elemento solicitado en *nItem*. Si *nItem* es menor que 0, el contenido de este búfer no cambia.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ Devuelve uno de los valores siguientes.
 -   Devuelve -1 si se produjo un error.
 -   De lo contrario, devuelve el tamaño de la cadena devuelta *en lpData*, incluido el carácter nulo de terminación. Si la lista de MRU se creó con la **marca \_ BINARY de MRU,** este es el tamaño en bytes. De lo contrario, es el tamaño en caracteres.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta función no se incluye en un encabezado o biblioteca públicos. Se puede acceder a él a través de [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) o extraerse de comctl32.dll por su ordinal, que es 403 para **EnumMRUListW**.
 
@@ -108,7 +108,7 @@ Esta función no se incluye en un encabezado o biblioteca públicos. Se puede ac
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

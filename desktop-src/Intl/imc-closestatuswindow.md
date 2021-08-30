@@ -1,19 +1,19 @@
 ---
-description: Indica a la ventana del IME que oculte la ventana de estado. Para enviar este comando, la aplicación usa el mensaje de control de IME de WM \_ \_ con la configuración de parámetros que se muestra a continuación.
+description: Indica a la ventana IME que oculte la ventana de estado. Para enviar este comando, la aplicación usa el mensaje WM \_ IME \_ CONTROL con la configuración de parámetros que se muestra a continuación.
 ms.assetid: e3da5962-a652-409e-b0ec-eb93671049b4
-title: Comando IMC_CLOSESTATUSWINDOW (IMM. h)
+title: IMC_CLOSESTATUSWINDOW comando (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 207f04d53f269318f87ed11038cbd6817d5e607e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31393c57c01f8f90d042e9bde1fe5bc742d606e099064e13f8de5baefeb46f58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120107395"
 ---
-# <a name="imc_closestatuswindow-command"></a>\_Comando IMC CLOSESTATUSWINDOW
+# <a name="imc_closestatuswindow-command"></a>Comando \_ CLOSESTATUSWINDOW de IMC
 
-Indica a la ventana del IME que oculte la ventana de estado. Para enviar este comando, la aplicación usa el mensaje de [**\_ \_ control de IME de WM**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
+Indica a la ventana IME que oculte la ventana de estado. Para enviar este comando, la aplicación usa el mensaje [**WM \_ IME \_ CONTROL**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
 
 
 ```C++
@@ -26,27 +26,27 @@ LRESULT IMC_CLOSESTATUSWINDOW
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Establezca en IMC \_ CLOSESTATUSWINDOW.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se realiza correctamente, o un valor distinto de cero en caso contrario.
+Devuelve 0 si se realiza correctamente o un valor distinto de cero de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la ventana de estado de IME ya está oculta, este comando no hace nada. Aunque una aplicación puede enviar este comando a la ventana del IME, la aplicación no recibe el comando [imn \_ CLOSESTATUSWINDOW](imn-closestatuswindow.md) correspondiente.
+Cuando la ventana de estado de IME ya está oculta, este comando no hace nada. Aunque una aplicación puede enviar este comando a la ventana de IME, la aplicación no recibe el comando [ \_ CLOSESTATUSWINDOW de IMN](imn-closestatuswindow.md) correspondiente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Cuando la ventana de estado de IME ya está oculta, este comando no hace nada. A
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Cuando la ventana de estado de IME ya está oculta, este comando no hace nada. A
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos del administrador de métodos de entrada](input-method-manager-commands.md)
+[Comandos del Administrador de métodos de entrada](input-method-manager-commands.md)
 </dt> </dl>
 
  

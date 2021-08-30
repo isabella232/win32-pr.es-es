@@ -1,6 +1,6 @@
 ---
 title: Métodos ID2D1Geometry GetWidenedBounds
-description: Obtiene los límites de la geometría después de que se hayan ensanchado con el ancho y el estilo de trazo especificados y transformados por la matriz especificada.
+description: Obtiene los límites de la geometría después de que se haya ensandado por el ancho y el estilo de trazo especificados y transformados por la matriz especificada.
 ms.assetid: 1790ff9d-cb30-4cd4-af0d-385a37cad043
 keywords:
 - Métodos de GetWidenedBounds Direct2D
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: d29db08f16766f52be6fa223920956b7cca58768
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a340e0a104c9153b29bf45818bc6e3f87187447404cc8d01f9f7fef16324430
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917969"
 ---
-# <a name="id2d1geometrygetwidenedbounds-methods"></a>ID2D1Geometry:: GetWidenedBounds (métodos)
+# <a name="id2d1geometrygetwidenedbounds-methods"></a>Métodos ID2D1Geometry::GetWidenedBounds
 
-Obtiene los límites de la geometría después de que se hayan ensanchado con el ancho y el estilo de trazo especificados y transformados por la matriz especificada.
+Obtiene los límites de la geometría después de que se haya ensandado por el ancho y el estilo de trazo especificados y transformados por la matriz especificada.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -30,16 +30,16 @@ Obtiene los límites de la geometría después de que se hayan ensanchado con el
 
 | Método                                                                                                                                                                                                 | Descripción                                                                                                                                           |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetWidenedBounds (FLOAT, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F&, D2D1 \_ Rect \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__d2d1_rect_f))              | Obtiene los límites de la geometría después de que se hayan ensanchado con el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
-| [**GetWidenedBounds (FLOAT, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F \* , D2D1 \_ Rect \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_d2d1_rect_f))             | Obtiene los límites de la geometría después de que se hayan ensanchado con el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
-| [**GetWidenedBounds (FLOAT, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F&, Float, D2D1 \_ Rect \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_d2d1_rect_f))  | Obtiene los límites de la geometría después de que se hayan ensanchado con el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
-| [**GetWidenedBounds (FLOAT, ID2D1StrokeStyle \* , D2D1 \_ Matrix \_ 3x2 \_ F \* , Float, D2D1 \_ Rect \_ F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_d2d1_rect_f)) | Obtiene los límites de la geometría después de que se hayan ensanchado con el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
+| [**GetWidenedBounds(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F&,D2D1 \_ RECT F \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__d2d1_rect_f))              | Obtiene los límites de la geometría después de que se haya ensandado por el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
+| [**GetWidenedBounds(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F \* ,D2D1 \_ RECT F \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_d2d1_rect_f))             | Obtiene los límites de la geometría después de que se haya ensandado por el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
+| [**GetWidenedBounds(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,D2D1 \_ RECT F \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f__float_d2d1_rect_f))  | Obtiene los límites de la geometría después de que se haya ensandado por el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
+| [**GetWidenedBounds(FLOAT,ID2D1StrokeStyle \* ,D2D1 \_ MATRIX \_ 3X2 \_ F \* ,FLOAT,D2D1 \_ RECT F \_ \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-getwidenedbounds(float_id2d1strokestyle_constd2d1_matrix_3x2_f_float_d2d1_rect_f)) | Obtiene los límites de la geometría después de que se haya ensandado por el ancho y el estilo de trazo especificados y transformados por la matriz especificada.<br/> |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-En el código siguiente se muestra cómo usar **GetWidenedBounds** para recuperar los límites de la geometría después de que se hayan ensanchado con el ancho y el estilo del trazo especificados y transformados por la matriz especificada.
+En el código siguiente se muestra cómo usar **GetWidenedBounds** para recuperar los límites de la geometría después de que se haya ensandado por el ancho y el estilo de trazo especificados y transformados por la matriz especificada.
 
 
 ```C++
@@ -341,7 +341,7 @@ if (SUCCEEDED(hr))
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

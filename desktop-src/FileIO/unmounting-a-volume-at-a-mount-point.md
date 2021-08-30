@@ -1,19 +1,19 @@
 ---
-description: Cómo eliminar una carpeta montada con la función DeleteVolumeMountPoint.
+description: Cómo eliminar una carpeta montada mediante la función DeleteVolumeMountPoint.
 ms.assetid: 33049110-acf8-4db5-a9c4-bd4a884c8590
-title: Eliminar una carpeta montada
+title: Eliminación de una carpeta montada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b177aa2010d33b84aa98993d66952c50acb014e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a972e17decd2e923a2f789e1dd9156a07c2301d1ccecdaf55778b364b834cdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047755"
 ---
-# <a name="deleting-a-mounted-folder"></a>Eliminar una carpeta montada
+# <a name="deleting-a-mounted-folder"></a>Eliminación de una carpeta montada
 
-En el ejemplo de código de este tema se muestra cómo eliminar una carpeta montada mediante la función [**DeleteVolumeMountPoint**](/windows/desktop/api/FileAPI/nf-fileapi-deletevolumemountpointw) . Para obtener más información, vea [crear carpetas montadas](mounting-and-dismounting-a-volume.md).
+En el ejemplo de código de este tema se muestra cómo eliminar una carpeta montada mediante la [**función DeleteVolumeMountPoint.**](/windows/desktop/api/FileAPI/nf-fileapi-deletevolumemountpointw) Para obtener más información, vea [Crear carpetas montadas.](mounting-and-dismounting-a-volume.md)
 
 
 ```C++

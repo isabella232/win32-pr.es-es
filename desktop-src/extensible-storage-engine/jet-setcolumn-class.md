@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_SETCOLUMN (clase)'
-title: JET_SETCOLUMN (clase)
+description: 'Más información sobre: JET_SETCOLUMN clase'
+title: JET_SETCOLUMN clase
 TOCTitle: JET_SETCOLUMN class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SETCOLUMN
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_setcolumn(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7263506fb63572be5587fa55400bf6ef0966222e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 239a6641645aa527809c16f09519a05b4774d4a29c85ab2f373eede643883a40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967605"
 ---
-# <a name="jet_setcolumn-class"></a>JET_SETCOLUMN (clase)
+# <a name="jet_setcolumn-class"></a>JET_SETCOLUMN clase
 
-Contiene parámetros de entrada y salida para [JetSetColumns (JET_SESID, JET_TABLEID, \[ \] , Int32)](./api.jetsetcolumns-method.md). Los campos de la estructura describen qué valor de columna se va a establecer, cómo se establece y dónde se obtienen los datos del conjunto de columnas.
+Contiene parámetros de entrada y salida [para JetSetColumns(JET_SESID, JET_TABLEID, \[ \] , Int32).](./api.jetsetcolumns-method.md) Los campos de la estructura describen qué valor de columna se va a establecer, cómo establecerlo y dónde obtener los datos del conjunto de columnas.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_SETCOLUMN  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,6 +66,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_SETCOLUMN](./jet-setcolumn-members.md)
+[JET_SETCOLUMN miembros](./jet-setcolumn-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
