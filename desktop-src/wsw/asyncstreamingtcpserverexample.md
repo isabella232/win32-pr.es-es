@@ -1,29 +1,29 @@
 ---
 title: AsyncStreamingTcpServerExample
-description: En este ejemplo se muestra un servidor TCP que recibe mensajes unidireccionales en un modo de transmisión por secuencias asincrónica.
+description: En este ejemplo se muestra un servidor TCP que recibe mensajes un solo sentido en un modo de streaming asincrónico.
 ms.assetid: 8b79735b-f238-4d49-8977-2935fc208d48
 keywords:
 - AsyncStreamingTcpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1103d46bc777e56090b90b318a1138eb88aef2ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 222d7bbf5cf5e2f219da5f5703b7cf2e1f8bb898b65c0bc61c6b288116cab048
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927675"
 ---
 # <a name="asyncstreamingtcpserverexample"></a>AsyncStreamingTcpServerExample
 
-En este ejemplo se muestra un servidor TCP que recibe mensajes unidireccionales en un modo de transmisión por secuencias asincrónica.
+En este ejemplo se muestra un servidor TCP que recibe mensajes un solo sentido en un modo de streaming asincrónico.
 
--   [AsyncStreamingTcpServer. cpp](#asyncstreamingtcpservercpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [AsyncStreamingTcpServer.cpp](#asyncstreamingtcpservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="asyncstreamingtcpservercpp"></a>AsyncStreamingTcpServer. cpp
+## <a name="asyncstreamingtcpservercpp"></a>AsyncStreamingTcpServer.cpp
 
 
 ```C++
@@ -502,7 +502,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -641,9 +641,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

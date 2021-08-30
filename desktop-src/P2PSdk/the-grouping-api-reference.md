@@ -1,23 +1,23 @@
 ---
-description: Describe las funciones, estructuras y enumeraciones que se deben usar al trabajar con la API de agrupación.
+description: Describe las funciones, estructuras y enumeraciones que se usarán al trabajar con la API de agrupación.
 ms.assetid: c5058631-6ae2-4a59-afb0-6135b6b45829
-title: Referencia de la API de agrupación
+title: Referencia de API de agrupación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa3ddfb4cb56621e0191c70b7625e19a9113b231
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77002dd360488821de086042562ce6e9aa7ed92ed15f565266987cb65960e3f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034205"
 ---
-# <a name="grouping-api-reference"></a>Referencia de la API de agrupación
+# <a name="grouping-api-reference"></a>Referencia de API de agrupación
 
-En la siguiente documentación se describen las funciones, estructuras y enumeraciones que se deben usar al trabajar con la API de agrupación:
+En la documentación siguiente se describen las funciones, estructuras y enumeraciones que se usarán al trabajar con la API de agrupación:
 
--   [Agrupar funciones de la API](grouping-api-functions.md)
--   [Agrupar estructuras de API](grouping-api-structures.md)
--   [Agrupar enumeraciones de API](grouping-api-enumerations.md)
+-   [Agrupación de funciones de API](grouping-api-functions.md)
+-   [Agrupación de estructuras de API](grouping-api-structures.md)
+-   [Agrupación de enumeraciones de API](grouping-api-enumerations.md)
 -   [Formato de consulta de búsqueda de registros](record-search-query-format.md)
 
  

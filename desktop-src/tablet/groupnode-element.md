@@ -4,12 +4,12 @@ ms.assetid: 59ee3037-7178-41c8-84d5-d5c68fa2cf9b
 title: Elemento GroupNode
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbc4d39a592b5b6328bd31ff37761cfd3f0138c0
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: c1dd4258628fbd40c19f8cb1acf3fd0bacbc5557abb967b879dcb78031736288
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008595"
 ---
 # <a name="groupnode-element"></a>Elemento GroupNode
 
@@ -37,7 +37,7 @@ Contiene un conjunto de elementos ([**Paragraph**](paragraph-element.md), [**Ink
 
 [**Imagen**](docimage-element.md)
 
-[**Marca**](flag-element.md)
+[**Bandera**](flag-element.md)
 
 ## <a name="attributes"></a>Atributos
 

@@ -1,7 +1,7 @@
 ---
-description: El método ExtractCAB del objeto Merge extrae el archivo. cab incrustado de un módulo y lo guarda como el archivo especificado. El instalador crea este archivo si aún no existe y se sobrescribe si existe.
+description: El método ExtractCAB del objeto Merge extrae el archivo .cab incrustado de un módulo y lo guarda como el archivo especificado. El instalador crea este archivo si aún no existe y se sobrescribe si existe.
 ms.assetid: a6fe8b69-8f4a-45f7-b7e6-7620a00500bb
-title: Método Merge. ExtractCAB (Mergemod. h)
+title: Método Merge.ExtractCAB (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: d0bdc79fb0087456d035bf732faca384b35b2a9f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e14f1163c16d7b12ea223baa533f3953cd22d88ec6e3cc617f5ffe72adb5075c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926635"
 ---
-# <a name="mergeextractcab-method"></a>Merge. ExtractCAB (método)
+# <a name="mergeextractcab-method"></a>Método Merge.ExtractCAB
 
-El método **ExtractCAB** del objeto [**Merge**](merge-object.md) extrae el archivo. cab incrustado de un módulo y lo guarda como el archivo especificado. El instalador crea este archivo si aún no existe y se sobrescribe si existe.
+El **método ExtractCAB** del objeto [**Merge**](merge-object.md) extrae el archivo .cab incrustado de un módulo y lo guarda como el archivo especificado. El instalador crea este archivo si aún no existe y se sobrescribe si existe.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ Merge.ExtractCAB(
 *FileName* 
 </dt> <dd>
 
-El archivo de destino completo.
+Archivo de destino completo.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="c"></a>C++
 
-Consulte función [**ExtractCAB**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-extractcab) .
+Consulte [**Función ExtractCAB.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-extractcab)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Consulte función [**ExtractCAB**](/windows/win32/api/mergemod/nf-mergemod-imsmm
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 1,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

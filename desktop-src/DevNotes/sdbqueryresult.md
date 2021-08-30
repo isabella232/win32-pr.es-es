@@ -1,5 +1,5 @@
 ---
-description: Contiene los resultados de la consulta de la base de datos de correcciones de compatibilidad (shim) para un ejecutable coincidente.
+description: Contiene los resultados de consultar la base de datos de correcciones de compatibilidad (shim) para obtener un ejecutable correspondiente.
 ms.assetid: 6e6df118-fb64-4a97-9280-050e3b4e3a4b
 title: Estructura SDBQUERYRESULT
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9c631438d36116d47bfcb8675c390fb2974271c8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 772d30bec52758eb2ce1c39e0dcaa415c1eab25b81628e5b2865d3bdeed1b3a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815305"
 ---
 # <a name="sdbqueryresult-structure"></a>Estructura SDBQUERYRESULT
 
-Contiene los resultados de la consulta de la base de datos de correcciones de compatibilidad (shim) para un ejecutable coincidente.
+Contiene los resultados de consultar la base de datos de correcciones de compatibilidad (shim) para obtener un ejecutable correspondiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ typedef struct tagSDBQUERYRESULT {
 **atrExes**
 </dt> <dd>
 
-Los valores **TAGREF** de los archivos ejecutables coincidentes. Tenga en cuenta que los archivos **\_ \_ exe Max de SDB** se definen como 16.
+Valores **TAGREF de** los archivos ejecutables correspondientes. Tenga en **cuenta que SDB \_ MAX \_ EXES** se define como 16.
 
 </dd> <dt>
 
@@ -62,31 +62,31 @@ Este parámetro puede ser uno o varios de los valores siguientes.
 
 <dl> <dt>
 
-<span id="SHIMREG_DISABLE_SHIM"></span><span id="shimreg_disable_shim"></span>**SHIMREG \_ Deshabilitar \_ correcciones de compatibilidad** (0x00000001)
+<span id="SHIMREG_DISABLE_SHIM"></span><span id="shimreg_disable_shim"></span>**SHIMREG \_ DISABLE \_ SHIM** (0x00000001)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_APPHELP"></span><span id="shimreg_disable_apphelp"></span>**SHIMREG \_ Deshabilitar \_ APPHELP** (0x00000002)
+<span id="SHIMREG_DISABLE_APPHELP"></span><span id="shimreg_disable_apphelp"></span>**SHIMREG \_ DISABLE \_ APPHELP** (0x00000002)
 </dt> <dt>
 
 <span id="SHIMREG_APPHELP_NOUI"></span><span id="shimreg_apphelp_noui"></span>**SHIMREG \_ APPHELP \_ NOUI** (0x00000004)
 </dt> <dt>
 
-<span id="SHIMREG_APPHELP_CANCEL"></span><span id="shimreg_apphelp_cancel"></span>**SHIMREG \_ APPHELP \_ Cancel** (0x10000000)
+<span id="SHIMREG_APPHELP_CANCEL"></span><span id="shimreg_apphelp_cancel"></span>**SHIMREG \_ APPHELP \_ CANCEL** (0x10000000)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_SXS"></span><span id="shimreg_disable_sxs"></span>**SHIMREG \_ Deshabilitar \_ SxS** (0x00000010)
+<span id="SHIMREG_DISABLE_SXS"></span><span id="shimreg_disable_sxs"></span>**SHIMREG \_ DISABLE \_ SXS** (0x00000010)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_LAYER"></span><span id="shimreg_disable_layer"></span>**SHIMREG \_ Deshabilitar \_ capa** (0x00000020)
+<span id="SHIMREG_DISABLE_LAYER"></span><span id="shimreg_disable_layer"></span>**SHIMREG \_ DISABLE \_ LAYER** (0x00000020)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_DRIVER"></span><span id="shimreg_disable_driver"></span>**SHIMREG \_ Deshabilitar \_ controlador** (0x00000040)
+<span id="SHIMREG_DISABLE_DRIVER"></span><span id="shimreg_disable_driver"></span>**SHIMREG \_ DISABLE \_ DRIVER** (0x00000040)
 </dt> </dl> </dd> <dt>
 
 **atrLayers**
 </dt> <dd>
 
-Los valores de **TAGREF** de las capas coincidentes. Tenga en cuenta que los **\_ \_ niveles máximos de SDB** están definidos como 8.
+Valores **TAGREF** de las capas correspondientes. Tenga en cuenta **que SDB \_ MAX \_ LAYERS** se define como 8.
 
 </dd> <dt>
 
@@ -97,45 +97,45 @@ Este parámetro puede ser uno o varios de los valores siguientes.
 
 <dl> <dt>
 
-<span id="SHIMREG_DISABLE_SHIM"></span><span id="shimreg_disable_shim"></span>**SHIMREG \_ Deshabilitar \_ correcciones de compatibilidad** (0x00000001)
+<span id="SHIMREG_DISABLE_SHIM"></span><span id="shimreg_disable_shim"></span>**SHIMREG \_ DISABLE \_ SHIM** (0x00000001)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_APPHELP"></span><span id="shimreg_disable_apphelp"></span>**SHIMREG \_ Deshabilitar \_ APPHELP** (0x00000002)
+<span id="SHIMREG_DISABLE_APPHELP"></span><span id="shimreg_disable_apphelp"></span>**SHIMREG \_ DISABLE \_ APPHELP** (0x00000002)
 </dt> <dt>
 
 <span id="SHIMREG_APPHELP_NOUI"></span><span id="shimreg_apphelp_noui"></span>**SHIMREG \_ APPHELP \_ NOUI** (0x00000004)
 </dt> <dt>
 
-<span id="SHIMREG_APPHELP_CANCEL"></span><span id="shimreg_apphelp_cancel"></span>**SHIMREG \_ APPHELP \_ Cancel** (0x10000000)
+<span id="SHIMREG_APPHELP_CANCEL"></span><span id="shimreg_apphelp_cancel"></span>**SHIMREG \_ APPHELP \_ CANCEL** (0x10000000)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_SXS"></span><span id="shimreg_disable_sxs"></span>**SHIMREG \_ Deshabilitar \_ SxS** (0x00000010)
+<span id="SHIMREG_DISABLE_SXS"></span><span id="shimreg_disable_sxs"></span>**SHIMREG \_ DISABLE \_ SXS** (0x00000010)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_LAYER"></span><span id="shimreg_disable_layer"></span>**SHIMREG \_ Deshabilitar \_ capa** (0x00000020)
+<span id="SHIMREG_DISABLE_LAYER"></span><span id="shimreg_disable_layer"></span>**SHIMREG \_ DISABLE \_ LAYER** (0x00000020)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_DRIVER"></span><span id="shimreg_disable_driver"></span>**SHIMREG \_ Deshabilitar \_ controlador** (0x00000040)
+<span id="SHIMREG_DISABLE_DRIVER"></span><span id="shimreg_disable_driver"></span>**SHIMREG \_ DISABLE \_ DRIVER** (0x00000040)
 </dt> </dl> </dd> <dt>
 
 **trApphelp**
 </dt> <dd>
 
-El valor **TAGREF** del mensaje de apphelp del ejecutable correspondiente.
+Valor **TAGREF** del mensaje apphelp del ejecutable correspondiente.
 
 </dd> <dt>
 
 **dwExeCount**
 </dt> <dd>
 
-Número de elementos de **atrExes**.
+Número de elementos de **atrExes.**
 
 </dd> <dt>
 
 **dwLayerCount**
 </dt> <dd>
 
-Número de elementos de **atrLayers**.
+Número de elementos de **atrLayers.**
 
 </dd> <dt>
 
@@ -153,38 +153,38 @@ Este parámetro puede ser uno o varios de los valores siguientes.
 
 <dl> <dt>
 
-<span id="SHIMREG_DISABLE_SHIM"></span><span id="shimreg_disable_shim"></span>**SHIMREG \_ Deshabilitar \_ correcciones de compatibilidad** (0x00000001)
+<span id="SHIMREG_DISABLE_SHIM"></span><span id="shimreg_disable_shim"></span>**SHIMREG \_ DISABLE \_ SHIM** (0x00000001)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_APPHELP"></span><span id="shimreg_disable_apphelp"></span>**SHIMREG \_ Deshabilitar \_ APPHELP** (0x00000002)
+<span id="SHIMREG_DISABLE_APPHELP"></span><span id="shimreg_disable_apphelp"></span>**SHIMREG \_ DISABLE \_ APPHELP** (0x00000002)
 </dt> <dt>
 
 <span id="SHIMREG_APPHELP_NOUI"></span><span id="shimreg_apphelp_noui"></span>**SHIMREG \_ APPHELP \_ NOUI** (0x00000004)
 </dt> <dt>
 
-<span id="SHIMREG_APPHELP_CANCEL"></span><span id="shimreg_apphelp_cancel"></span>**SHIMREG \_ APPHELP \_ Cancel** (0x10000000)
+<span id="SHIMREG_APPHELP_CANCEL"></span><span id="shimreg_apphelp_cancel"></span>**SHIMREG \_ APPHELP \_ CANCEL** (0x10000000)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_SXS"></span><span id="shimreg_disable_sxs"></span>**SHIMREG \_ Deshabilitar \_ SxS** (0x00000010)
+<span id="SHIMREG_DISABLE_SXS"></span><span id="shimreg_disable_sxs"></span>**SHIMREG \_ DISABLE \_ SXS** (0x00000010)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_LAYER"></span><span id="shimreg_disable_layer"></span>**SHIMREG \_ Deshabilitar \_ capa** (0x00000020)
+<span id="SHIMREG_DISABLE_LAYER"></span><span id="shimreg_disable_layer"></span>**SHIMREG \_ DISABLE \_ LAYER** (0x00000020)
 </dt> <dt>
 
-<span id="SHIMREG_DISABLE_DRIVER"></span><span id="shimreg_disable_driver"></span>**SHIMREG \_ Deshabilitar \_ controlador** (0x00000040)
+<span id="SHIMREG_DISABLE_DRIVER"></span><span id="shimreg_disable_driver"></span>**SHIMREG \_ DISABLE \_ DRIVER** (0x00000040)
 </dt> </dl> </dd> <dt>
 
 **dwCustomSDBMap**
 </dt> <dd>
 
-Una asignación de las bases de datos de corrección de compatibilidad (shim) personalizadas. Los bits correspondientes se establecen si **rgGuidDB** es válido.
+Mapa de las bases de datos de correcciones de compatibilidad (shim) personalizadas. Los bits correspondientes se establecen si **rgGuidDB** es válido.
 
 </dd> <dt>
 
 **rgGuidDB**
 </dt> <dd>
 
-Los GUID de las bases de datos de correcciones de compatibilidad (shim). Tenga en cuenta que **SDB \_ Max \_ SDBS** se define como 16.
+GUID de las bases de datos de correcciones de compatibilidad (shim). Tenga en **cuenta que \_ SDB MAX \_ SDBS** se define como 16.
 
 </dd> </dl>
 
@@ -194,8 +194,8 @@ Los GUID de las bases de datos de correcciones de compatibilidad (shim). Tenga e
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: STYLE (instrucción)
-description: Define el estilo de ventana del cuadro de diálogo. El estilo de ventana especifica si el cuadro es una ventana emergente o secundaria.
+title: STYLE , instrucción
+description: Define el estilo de ventana del cuadro de diálogo. El estilo de ventana especifica si el cuadro es un elemento emergente o una ventana secundaria.
 ms.assetid: 5ede57ad-5fa5-414c-9823-e66994826027
 keywords:
-- Menús de instrucciones de estilo y otros recursos
+- Menús de instrucción STYLE y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67cd8f6af4a6baa2f36b66855cbe9faa2b0e5120
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 88d74ced35b6b5a2f6c04004fbd2e161df7ba16ff5111577835b93363291c114
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104420653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886774"
 ---
-# <a name="style-statement"></a>STYLE (instrucción)
+# <a name="style-statement"></a>STYLE , instrucción
 
-Define el estilo de ventana del cuadro de diálogo. El estilo de ventana especifica si el cuadro es una ventana emergente o secundaria.
+Define el estilo de ventana del cuadro de diálogo. El estilo de ventana especifica si el cuadro es un elemento emergente o una ventana secundaria.
 
 ``` syntax
 STYLE style
@@ -29,15 +29,15 @@ STYLE style
 
 <dl> <dt>
 
-<span id="style"></span><span id="STYLE"></span>*aplicar*
+<span id="style"></span><span id="STYLE"></span>*Estilo*
 </dt> <dd>
 
-Nombre del estilo de la ventana. Este parámetro puede ser un valor entero o una combinación de valores de estilo de ventana (como **WS \_ Caption** y **WS \_ SYSMENU**) y valores de estilo de cuadro de diálogo (como el **\_ centro de DS**).
+Nombre del estilo de la ventana. Este parámetro puede ser un valor entero o una combinación de valores de estilo de ventana (como **WS \_ CAPTION** y **WS \_ SYSMENU)** y valores de estilo de cuadro de diálogo (como **DS \_ CENTER**).
 
 </dd> </dl>
 
-Para obtener una lista de estilos de ventana, vea [estilos de ventana](/windows/desktop/winmsg/window-styles). Para obtener una lista de estilos de cuadro de diálogo, vea [estilos de plantilla de cuadro de diálogo](../dlgbox/about-dialog-boxes.md). Si utiliza los valores de estilo de ventana o de cuadro de diálogo, debe incluir Windows. h.
+Para obtener una lista de estilos de ventana, vea [Estilos de ventana](/windows/desktop/winmsg/window-styles). Para obtener una lista de estilos de cuadro de diálogo, vea [Estilos de plantilla de cuadro de diálogo](../dlgbox/about-dialog-boxes.md). Si usa los valores de estilo de ventana o cuadro de diálogo, debe incluir Windows.h.
 
- 
+ 
 
- 
+ 

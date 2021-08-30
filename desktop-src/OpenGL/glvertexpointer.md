@@ -1,9 +1,9 @@
 ---
-title: función glVertexPointer (GL. h)
-description: La función glVertexPointer define una matriz de datos de vértice.
+title: Función glVertexPointer (Gl.h)
+description: La función glVertexPointer define una matriz de datos de vértices.
 ms.assetid: e5f97fdc-9448-4389-8533-3855a3213feb
 keywords:
-- glVertexPointer (función) OpenGL
+- Función glVertexPointer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 422dd1a7938cc5adb183ff7e17c59a8f52eb4909
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7526b553bcacfae421541dc3c695611d704a76ae960db61dab2795e80315d951
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035455"
 ---
-# <a name="glvertexpointer-function"></a>glVertexPointer función)
+# <a name="glvertexpointer-function"></a>Función glVertexPointer
 
-La función **glVertexPointer** define una matriz de datos de vértice.
+La **función glVertexPointer** define una matriz de datos de vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,25 +46,25 @@ void WINAPI glVertexPointer(
 *size* 
 </dt> <dd>
 
-Número de coordenadas por vértice. El valor de *size* debe ser 2, 3 ó 4.
+Número de coordenadas por vértice. El valor de *size* debe ser 2, 3 o 4.
 
 </dd> <dt>
 
 *type* 
 </dt> <dd>
 
-El tipo de datos de cada coordenada de la matriz mediante las siguientes constantes simbólicas: GL \_ Short, GL \_ int, GL \_ float y GL \_ Double.
+Tipo de datos de cada coordenada de la matriz mediante las siguientes constantes simbólicas: GL \_ SHORT, GL \_ INT, GL \_ FLOAT y GL \_ DOUBLE.
 
 </dd> <dt>
 
-*STRI* 
+*Paso* 
 </dt> <dd>
 
-Desplazamiento de bytes entre los vértices consecutivos. Cuando *STRIDE* es cero, los vértices están estrechamente empaquetados en la matriz.
+Desplazamiento de bytes entre vértices consecutivos. Cuando *stride* es cero, los vértices se empaquetan estrechamente en la matriz.
 
 </dd> <dt>
 
-*puntero* 
+*Puntero* 
 </dt> <dd>
 
 Puntero a la primera coordenada del primer vértice de la matriz.
@@ -83,37 +83,37 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                              | Significado                                       |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | *el tamaño* no era 2, 3 o 4. <br/>        |
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>  | el *tipo* no era un valor aceptado.<br/>  |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl> | *STRIDE* o *Count* era negativo. <br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | *el* tamaño no era 2, 3 o 4. <br/>        |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>  | *Type* no era un valor aceptado.<br/>  |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl> | *stride* o *count era* negativo. <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glVertexPointer** especifica la ubicación y los datos de una matriz de coordenadas de vértice que se van a usar en la representación. El parámetro *size* especifica el número de coordenadas por vértice. El parámetro de *tipo* especifica el tipo de datos de cada coordenada del vértice. El parámetro *STRIDE* determina el desplazamiento de bytes de un vértice al siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, el almacenamiento de vértices y atributos en una sola matriz puede ser más eficaz que el uso de matrices independientes (vea [**glInterleavedArrays**](glinterleavedarrays.md)).
+La **función glVertexPointer** especifica la ubicación y los datos de una matriz de coordenadas de vértice que se usarán al representar. El *parámetro size* especifica el número de coordenadas por vértice. El *parámetro type* especifica el tipo de datos de cada coordenada de vértice. El *parámetro stride* determina el desplazamiento de bytes de un vértice al siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes (vea [**glInterleavedArrays**](glinterleavedarrays.md)).
 
-Una matriz de vértices se habilita al especificar la \_ \_ constante de matriz de vértices de GL con [**glEnableClientState**](glenableclientstate.md). Cuando está habilitado, [**glDrawArrays**](gldrawarrays.md), [**glDrawElements**](gldrawelements.md)y [**glArrayElement**](glarrayelement.md) usan la matriz de vértices. De forma predeterminada, la matriz de vértices está deshabilitada.
+Se habilita una matriz de vértices cuando se especifica la constante GL \_ VERTEX \_ ARRAY con [**glEnableClientState**](glenableclientstate.md). Cuando se habilita, [**glDrawArrays,**](gldrawarrays.md) [**glDrawElements**](gldrawelements.md)y [**glArrayElement**](glarrayelement.md) usan la matriz de vértices. De forma predeterminada, la matriz de vértices está deshabilitada.
 
-No se puede incluir **glVertexPointer** en las listas de visualización.
+No se puede **incluir glVertexPointer en** las listas para mostrar.
 
-Cuando se especifica una matriz de vértices mediante **glVertexPointer**, los valores de todos los parámetros de matriz de vértices de la función se guardan en un estado del lado cliente y los elementos de matriz estáticos se pueden almacenar en caché. Dado que los parámetros de la matriz de vértices son de cliente, los valores no se guardan ni restauran en [**glPushAttrib**](glpushattrib.md) y **glPopAttrib**.
+Cuando se especifica una matriz de vértices mediante **glVertexPointer**, los valores de todos los parámetros de la matriz de vértices de la función se guardan en un estado del lado cliente y los elementos de la matriz estática se pueden almacenar en caché. Dado que los parámetros de la matriz de vértices son de estado del lado cliente, [**glPushAttrib**](glpushattrib.md) y **glPopAttrib** no guardan ni restauran sus valores.
 
-Aunque no se genera ningún error si se llama a **glVertexPointer** en pares [**glBegin**](glbegin.md) y [**glEnd**](glend.md) , los resultados son indefinidos.
+Aunque no se genera ningún error si se llama **a glVertexPointer** dentro de los pares [**glBegin**](glbegin.md) y [**glEnd,**](glend.md) los resultados son indefinidos.
 
-Las siguientes funciones recuperan información relacionada con **glVertexPointer**:
+Las siguientes funciones recuperan información relacionada **con glVertexPointer**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ \_ tamaño de matriz de vértices de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ VERTEX ARRAY \_ \_ SIZE
 
-**glGet** con argumento \_ intervalo de matriz de VÉRTICEs de GL \_ \_
+**glGet con** el argumento GL \_ VERTEX ARRAY \_ \_ STRIDE
 
-**glGet** con el argumento \_ \_ Count de matriz de vértices de contabilidad \_
+**glGet con** el argumento GL \_ VERTEX ARRAY \_ \_ COUNT
 
-**glGet** con argumento \_ tipo de matriz de VÉRTICEs de contabilidad \_ \_
+**glGet con** el argumento GL \_ VERTEX ARRAY \_ \_ TYPE
 
-[**glGetPointerv**](glgetpointerv.md) con el argumento de \_ matriz de vértices de contabilidad de argumentos \_ \_
+[**glGetPointerv con el**](glgetpointerv.md) argumento GL \_ VERTEX ARRAY \_ \_ POINTER
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ matriz de VÉRTICEs de GL \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ VERTEX \_ ARRAY
 
 ## <a name="requirements"></a>Requisitos
 
@@ -123,8 +123,8 @@ Las siguientes funciones recuperan información relacionada con **glVertexPointe
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

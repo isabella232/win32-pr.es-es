@@ -1,5 +1,5 @@
 ---
-description: 'Destructor CBaseList.~CBaseList: método Destructor.'
+description: 'Destructor CBaseList.~CBaseList: método destructor.'
 ms.assetid: bfc7a979-fbce-4680-a4b6-3273b9d1a9c2
 title: Destructor CBaseList.~CBaseList (Wxlist.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b0e9f17aa0525b018c551b8763b3293ca0f3b0ec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 434a180ec32042e3bc1b86138ceb5cb3350f836fe9b617452ba6b4ec43708d3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119983575"
 ---
 # <a name="cbaselistcbaselist-destructor"></a>Destructor CBaseList.~CBaseList
 
@@ -42,12 +42,12 @@ Método destructor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Streams.h)</dt> </dl>                                                                                    |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

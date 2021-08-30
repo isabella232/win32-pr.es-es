@@ -1,25 +1,25 @@
 ---
-description: 'Más información sobre: métodos EsentResource'
-title: Métodos EsentResource
+description: 'Más información sobre: Métodos de EsentResource'
+title: Métodos de EsentResource
 TOCTitle: EsentResource methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource_methods(v=EXCHG.10)
 ms:contentKeyID: 55102608
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c07cd44075284e4e8fd736102f62f702e055db99
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5e5ca0f686d25d3244f3ba949a0eedb028d1f05bbaebc7636dc2a79104c907c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104569396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018795"
 ---
-# <a name="esentresource-methods"></a>Métodos EsentResource
+# <a name="esentresource-methods"></a>Métodos de EsentResource
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo [EsentResource](./esentresource-class.md) expone los siguientes miembros.
+El [tipo EsentResource](./esentresource-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,17 +35,17 @@ El tipo [EsentResource](./esentresource-class.md) expone los siguientes miembros
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350541(v=exchg.10).md">CheckObjectIsNotDisposed</a></td>
-<td>Produce una excepción si este objeto se ha eliminado.</td>
+<td>Produce una excepción si se ha eliminado este objeto.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350553(v=exchg.10).md">Dispose ()</a></td>
-<td>Desechar este objeto, liberando el recurso esent subyacente.</td>
+<td><a href="dn350553(v=exchg.10).md">Dispose()</a></td>
+<td>Elimine este objeto y libere el recurso subyacente de Esent.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350543(v=exchg.10).md">Dispose (booleano)</a></td>
-<td>Lo llama Dispose y el finalizador.</td>
+<td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
+<td>Llamado por Dispose y el finalizador.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -54,8 +54,8 @@ El tipo [EsentResource](./esentresource-class.md) expone los siguientes miembros
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350552(v=exchg.10).md">Finalize</a></td>
-<td>Finaliza una instancia de la clase EsentResource. (Invalida <a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Object. Finalize ()</a>).</td>
+<td><a href="dn350552(v=exchg.10).md">Finalizar</a></td>
+<td>Finalizará una instancia de la clase EsentResource. (Invalida <a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Object.Finalize()</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -64,7 +64,7 @@ El tipo [EsentResource](./esentresource-class.md) expone los siguientes miembros
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="even">
@@ -104,4 +104,4 @@ Superior
 
 [Clase EsentResource](./esentresource-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

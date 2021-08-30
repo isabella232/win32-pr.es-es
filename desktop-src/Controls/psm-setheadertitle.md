@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_SETHEADERTITLE (Prsht. h)
-description: Establece el texto del título para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o utilizar la \_ macro PropSheet SetHeaderTitle.
+title: PSM_SETHEADERTITLE mensaje (Prsht.h)
+description: Establece el texto del título del encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la macro PropSheet \_ SetHeaderTitle.
 ms.assetid: 19d4badf-d99d-4a28-92d4-33bcf5d23944
 keywords:
-- PSM_SETHEADERTITLE controles de mensajes de Windows
+- PSM_SETHEADERTITLE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8140eef4aa09e9dd19d8baaf8193a836b105482e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 743eda08070769c9fd603efc878e27672cc4bdfabac5af71c07566f710660818
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119985445"
 ---
-# <a name="psm_setheadertitle-message"></a>Mensaje de PSM \_ SETHEADERTITLE
+# <a name="psm_setheadertitle-message"></a>Mensaje \_ SETHEADERTITLE de PSM
 
-Establece el texto del título para el encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o utilizar la macro [**PropSheet \_ SetHeaderTitle**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadertitle) .
+Establece el texto del título del encabezado de la página interior de un asistente. Puede enviar este mensaje explícitamente o usar la macro [**PropSheet \_ SetHeaderTitle.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setheadertitle)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ Nuevo subtítulo de encabezado.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si especifica la página actual, se volverá a dibujar inmediatamente para mostrar el nuevo título.
 
@@ -59,9 +59,9 @@ Si especifica la página actual, se volverá a dibujar inmediatamente para mostr
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **PSM \_ SETHEADERTITLEW** (Unicode) y **PSM \_ SETHEADERTITLEA** (ANSI)<br/>  |
 
 

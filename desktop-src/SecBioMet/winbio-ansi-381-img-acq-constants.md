@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_ANSI_381_IMG_ACQ (Winbio \_ Types. h)
-description: Especifique los niveles de adquisición de la imagen.
+title: WINBIO_ANSI_381_IMG_ACQ constantes (Winbio \_ types.h)
+description: Especifique los niveles de adquisición de imágenes.
 ms.assetid: 1A57C4C0-35FA-43A0-A97E-C87D1DD03404
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9b119fd601fbb6788f34640fde8c779c4a2bff9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 917cf6fc56b15fc3bb07a76b6256499894a3af566e8c40ba61ca6759db7eac11
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035135"
 ---
-# <a name="winbio_ansi_381_img_acq-constants"></a>WINBIO \_ ANSI \_ 381 \_ IMG \_ constantes de Adquis
+# <a name="winbio_ansi_381_img_acq-constants"></a>Constantes ACQ de IMG DE WINBIO \_ ANSI \_ 381 \_ \_
 
-Se pueden usar las constantes siguientes para especificar los niveles de adquisición de la imagen:
+Las siguientes constantes se pueden usar para especificar los niveles de adquisición de imágenes:
 
-<dl> <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_10"></span><span id="winbio_ansi_381_img_acq_level_10"></span>**WINBIO \_ ANSI \_ 381 \_ IMG \_ - \_ nivel \_ de Adquis 10** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_20"></span> <span id="winbio_ansi_381_img_acq_level_20"></span> **WINBIO \_ ANSI \_ 381 \_ IMG de \_ \_ nivel \_ 20** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_30"></span> <span id="winbio_ansi_381_img_acq_level_30"></span> **WINBIO \_ ANSI \_ 381 \_ IMG de \_ \_ nivel \_ 30** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_31"></span> <span id="winbio_ansi_381_img_acq_level_31"></span> **WINBIO \_ ANSI \_ 381 IMG de \_ \_ \_ nivel \_ 31** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_40"></span> <span id="winbio_ansi_381_img_acq_level_40"></span> **WINBIO \_ ANSI \_ 381 IMG de \_ \_ \_ nivel \_** de ad 40 <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_41"></span> <span id="winbio_ansi_381_img_acq_level_41"></span> **WINBIO \_ ANSI \_ 381 \_ IMG \_ \_ \_**  
+<dl> <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_10"></span><span id="winbio_ansi_381_img_acq_level_10"></span>**WINBIO \_ ANSI \_ 381 \_ IMG \_ ACQ \_ LEVEL \_ 10** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_20"></span> <span id="winbio_ansi_381_img_acq_level_20"></span> **WINBIO \_ ANSI \_ 381 \_ IMG \_ ACQ LEVEL \_ \_ 20** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_30"></span> <span id="winbio_ansi_381_img_acq_level_30"></span> **WINBIO \_ ANSI \_ 381 \_ IMG \_ ACQ LEVEL \_ \_ 30** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_31"></span> <span id="winbio_ansi_381_img_acq_level_31"></span> **WINBIO \_ ANSI \_ 381 \_ IMG \_ ACQ LEVEL \_ \_ 31** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_40"></span> <span id="winbio_ansi_381_img_acq_level_40"></span> **WINBIO \_ ANSI \_ 381 \_ IMG \_ ACQ LEVEL \_ \_ 40** <span id="WINBIO_ANSI_381_IMG_ACQ_LEVEL_41"></span> <span id="winbio_ansi_381_img_acq_level_41"></span> **WINBIO \_ ANSI \_ 381 \_ IMG \_ ACQ LEVEL \_ \_ 41**  
 </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -37,9 +37,9 @@ Se pueden usar las constantes siguientes para especificar los niveles de adquisi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

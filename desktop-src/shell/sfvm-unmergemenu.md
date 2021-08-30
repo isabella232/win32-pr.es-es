@@ -1,6 +1,6 @@
 ---
-description: 'Notifica al objeto de devolución de llamada que se está quitando un menú. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensaje de SFVM_UNMERGEMENU (ShlObj. h)
+description: Notifica al objeto de devolución de llamada que se está quitando un menú. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_UNMERGEMENU mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 0255a41d-e8b4-48d2-931a-aa76ad83c18c
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6c83df7ca42d66f320339901a176dc9d4d38ff37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 058335543a82330f33bc058cfe366c8d9b8d803e13ec57d1d04a9863e1772c95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120008935"
 ---
-# <a name="sfvm_unmergemenu-message"></a>SFVM \_ UNMERGEMENU
+# <a name="sfvm_unmergemenu-message"></a>Mensaje \_ SFVM UNMERGEMENU
 
-Notifica al objeto de devolución de llamada que se está quitando un menú. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Notifica al objeto de devolución de llamada que se está quitando un menú. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -39,7 +39,7 @@ SFVM_UNMERGEMENU
 
 <dl> <dt>
 
-*hmenuCurrent* \[ de\]
+*hmenuCurrent* \[ En\]
 </dt> <dd>
 
 Identificador del menú que se va a quitar.
@@ -54,7 +54,7 @@ Identificador del menú que se va a quitar.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

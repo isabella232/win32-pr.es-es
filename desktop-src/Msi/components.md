@@ -1,5 +1,5 @@
 ---
-description: El objeto de componente representa una instancia única de un componente que está disponible para la enumeración.
+description: El objeto Component representa una instancia única de un componente que está disponible para la enumeración.
 ms.assetid: cdc99bc3-9e2a-49db-8c01-b9634aefac38
 title: Objeto de componente
 ms.topic: reference
@@ -13,28 +13,28 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 5e31d6a7c3d2422111d0d8c3247e022fa35bdc43
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e30c0c5ad7efa727d00c46b84bcfa6dfb4285d59e4fe0d3c40d6a0128be01ca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077934"
 ---
 # <a name="component-object"></a>Objeto de componente
 
-El objeto de componente representa una instancia única de un componente que está disponible para la enumeración.
+El objeto Component representa una instancia única de un componente que está disponible para la enumeración.
 
-**[Windows Installer 4,5 o una versión anterior](not-supported-in-windows-installer-4-5.md):** No compatible. Este objeto está disponible a partir de Windows Installer 5,0.
+**[Windows Instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Este objeto está disponible a partir de Windows Installer 5.0.
 
 ## <a name="members"></a>Miembros
 
-El objeto de **componente** tiene estos tipos de miembros:
+El **objeto Component** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-El objeto de **componente** tiene estas propiedades.
+El **objeto Component** tiene estas propiedades.
 
 
 
@@ -52,11 +52,11 @@ El objeto de **componente** tiene estas propiedades.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 o posterior.<br/>                                         |
+| Versión<br/> | Windows Instalador 5.0 o posterior.<br/>                                         |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
-| IID<br/>     | IID \_ IComponent se define como 000C1097-0000-0000-C000-000000000046<br/>      |
+| IID<br/>     | IID IComponent se define como \_ 000C1097-0000-0000-C000-000000000046<br/>      |
 
 
 
@@ -64,10 +64,10 @@ El objeto de **componente** tiene estas propiedades.
 
 <dl> <dt>
 
-[Usar la interfaz de automatización](using-the-automation-interface.md)
+[Uso de la interfaz de Automation](using-the-automation-interface.md)
 </dt> <dt>
 
-[Ejemplos de scripting Windows Installer](windows-installer-scripting-examples.md)
+[Windows Ejemplos de scripting del instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: MCI_GENERIC_PARMS estructura (Mciapi. h)
-description: La \_ \_ estructura parms genérica de MCI contiene el identificador de la ventana que recibe los mensajes de notificación. Esta estructura se usa para los mensajes de comandos MCI que tienen listas de parámetros vacías.
+title: MCI_GENERIC_PARMS estructura (Mciapi.h)
+description: La estructura MCI \_ GENERIC \_ PARMS contiene el identificador de la ventana que recibe mensajes de notificación. Esta estructura se usa para los mensajes de comandos de MCI que tienen listas de parámetros vacías.
 ms.assetid: 706e406c-d263-4347-932c-e5f125acfe0f
 keywords:
-- Estructura de MCI_GENERIC_PARMS de Windows multimedia
+- MCI_GENERIC_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1f96482ed5ec7e27253f234031cd099600bf1b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e2da55b721c7567b5fbc52d965cf753f896ee28fa4d76e094c7867434a69791
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784315"
 ---
-# <a name="mci_generic_parms-structure"></a>\_Estructura parms genérica de MCI \_
+# <a name="mci_generic_parms-structure"></a>Estructura \_ \_ parms genéricos de MCI
 
-La **estructura \_ \_ parms genérica de MCI** contiene el identificador de la ventana que recibe los mensajes de notificación. Esta estructura se usa para los mensajes de comandos MCI que tienen listas de parámetros vacías.
+La **estructura MCI \_ GENERIC \_ PARMS** contiene el identificador de la ventana que recibe mensajes de notificación. Esta estructura se usa para los mensajes de comandos de MCI que tienen listas de parámetros vacías.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,13 +43,13 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las estructuras **MCI \_ Close \_ parms** y **MCI \_ observan \_ parms** son idénticas a la estructura **\_ \_ parms de MCI genérica** .
+Las **estructuras MCI \_ CLOSE \_ PARMS** y **MCI REALIZE \_ \_ PARMS** son idénticas a la estructura **\_ MCI GENERIC \_ PARMS.**
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -61,7 +61,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

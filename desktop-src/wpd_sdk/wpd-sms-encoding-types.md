@@ -1,7 +1,7 @@
 ---
-description: El \_ \_ \_ tipo de enumeración de tipos de codificación SMS de WPD describe el tipo de codificación de un mensaje de servicio de mensajes cortos (SMS).
+description: El tipo de enumeración \_ WPD SMS \_ ENCODING TYPES describe el tipo de codificación de un mensaje corto del servicio de mensajes \_ (SMS).
 ms.assetid: 5a9752e5-4e09-42a4-8fed-b4ea551fa36f
-title: Enumeración WPD_SMS_ENCODING_TYPES (PortableDevice. h)
+title: WPD_SMS_ENCODING_TYPES enumeración (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: f7deae3cdc560e27e19b5ff7664e5566cff6d7e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 648815f8a82248151b19f5c753bf3e42643d61eb507501d907c5ac54a2b226b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927685"
 ---
-# <a name="wpd_sms_encoding_types-enumeration"></a>\_ \_ Enumeración de tipos de codificación SMS de WPD \_
+# <a name="wpd_sms_encoding_types-enumeration"></a>Enumeración WPD \_ SMS \_ ENCODING \_ TYPES
 
-El tipo de enumeración de **\_ \_ \_ tipos de codificación SMS de WPD** describe el tipo de codificación de un mensaje de servicio de mensajes cortos (SMS).
+El **tipo de enumeración \_ WPD SMS \_ ENCODING \_ TYPES** describe el tipo de codificación de un mensaje corto del servicio de mensajes (SMS).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -41,30 +41,30 @@ typedef enum WPD_SMS_ENCODING_TYPES {
 
 <dl> <dt>
 
-<span id="SMS_ENCODING_7_BIT"></span><span id="sms_encoding_7_bit"></span>**\_Codificación SMS de \_ 7 \_ bits**
+<span id="SMS_ENCODING_7_BIT"></span><span id="sms_encoding_7_bit"></span>**CODIFICACIÓN DE SMS \_ \_ DE 7 \_ BITS**
 </dt> <dd>
 
 Codificación de siete bits.
 
 </dd> <dt>
 
-<span id="SMS_ENCODING_8_BIT"></span><span id="sms_encoding_8_bit"></span>**CODIFICACIÓN de SMS de \_ \_ 8 \_ bits**
+<span id="SMS_ENCODING_8_BIT"></span><span id="sms_encoding_8_bit"></span>**CODIFICACIÓN DE SMS \_ \_ DE 8 \_ BITS**
 </dt> <dd>
 
 Codificación de ocho bits.
 
 </dd> <dt>
 
-<span id="SMS_ENCODING_UTF_16"></span><span id="sms_encoding_utf_16"></span>**\_Codificación de SMS \_ UTF \_ 16**
+<span id="SMS_ENCODING_UTF_16"></span><span id="sms_encoding_utf_16"></span>**CODIFICACIÓN DE SMS \_ \_ UTF \_ 16**
 </dt> <dd>
 
-Codificación de dieciséis bits (UTF).
+Codificación de 16 bits (UTF).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración la usa la propiedad de [ \_ \_ codificación de SMS de WPD](sms-properties.md) .
+Esta enumeración la usa la [propiedad WPD \_ SMS \_ ENCODING.](sms-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Esta enumeración la usa la propiedad de [ \_ \_ codificación de SMS de WPD](sm
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

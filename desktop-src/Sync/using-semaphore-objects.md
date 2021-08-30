@@ -1,23 +1,23 @@
 ---
-description: En el ejemplo siguiente se usa un objeto Semaphore para limitar el número de subprocesos que pueden realizar una tarea determinada.
+description: En el ejemplo siguiente se usa un objeto semáforo para limitar el número de subprocesos que pueden realizar una tarea determinada.
 ms.assetid: 24a5c13c-573a-4fc2-ac19-98188c9eb68a
-title: Usar objetos Semaphore
+title: Usar objetos semáforos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ded28014c7e832ab5bdc96d724d57e314d0cc857
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: f66ca0dc941852efd20d1d17bca1c1730fb6bac9782c86c50ef8fdd9e94bd043
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105670283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034695"
 ---
-# <a name="using-semaphore-objects"></a>Usar objetos Semaphore
+# <a name="using-semaphore-objects"></a>Usar objetos semáforos
 
-En el ejemplo siguiente se usa un [objeto Semaphore](semaphore-objects.md) para limitar el número de subprocesos que pueden realizar una tarea determinada. En primer lugar, usa la función [**createsemaphore (**](/windows/desktop/api/WinBase/nf-winbase-createsemaphorea) para crear el semáforo y para especificar recuentos iniciales y máximos, y luego usa la función [**CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para crear los subprocesos.
+En el ejemplo siguiente se usa [un objeto semáforo](semaphore-objects.md) para limitar el número de subprocesos que pueden realizar una tarea determinada. En primer lugar, usa la función [**CreateSemaphore**](/windows/desktop/api/WinBase/nf-winbase-createsemaphorea) para crear el semáforo y para especificar los recuentos iniciales y máximos, y luego usa la [**función CreateThread**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) para crear los subprocesos.
 
-Antes de que un subproceso intente realizar la tarea, utiliza la función [**WaitForSingleObject**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) para determinar si el recuento actual del semáforo lo permite. El parámetro de tiempo de espera de la función de espera se establece en cero, por lo que la función se devuelve inmediatamente si el semáforo está en el estado no señalado. **WaitForSingleObject** reduce el número de semáforos en uno.
+Antes de que un subproceso intente realizar la tarea, usa la función [**WaitForSingleObject**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) para determinar si el recuento actual del semáforo permite hacerlo. El parámetro de tiempo de espera de la función wait se establece en cero, por lo que la función devuelve inmediatamente si el semáforo está en estado no con signo. **WaitForSingleObject** disminuye el recuento del semáforo en uno.
 
-Cuando un subproceso completa la tarea, usa la función [**ReleaseSemaphore (**](/windows/win32/api/synchapi/nf-synchapi-releasesemaphore) para incrementar el recuento del semáforo, lo que permite que otro subproceso en espera realice la tarea.
+Cuando un subproceso completa la tarea, usa la función [**ReleaseSemaphore**](/windows/win32/api/synchapi/nf-synchapi-releasesemaphore) para incrementar el recuento del semáforo, lo que permite que otro subproceso en espera realice la tarea.
 
 
 ```C++

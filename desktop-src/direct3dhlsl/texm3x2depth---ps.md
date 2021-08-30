@@ -1,6 +1,6 @@
 ---
-title: texm3x2depth-PS
-description: Calcular el valor de profundidad que se va a usar en las pruebas de profundidad para este píxel.
+title: texm3x2depth - ps
+description: Calcule el valor de profundidad que se usará en las pruebas de profundidad para este píxel.
 ms.assetid: bacdd471-a6ee-4998-badd-93ffd4fd61d4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,48 +9,48 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 26d2c3efd1a31681520828b18d606d618d8c900a
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 17d3f04cd722664992911759ae1f5f6a4bd5947e0b46e37dc61b62b999ac8d47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104983854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892535"
 ---
-# <a name="texm3x2depth---ps"></a>texm3x2depth-PS
+# <a name="texm3x2depth---ps"></a>texm3x2depth - ps
 
-Calcular el valor de profundidad que se va a usar en las pruebas de profundidad para este píxel.
+Calcule el valor de profundidad que se usará en las pruebas de profundidad para este píxel.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| texm3x2depth DST, src |
+| texm3x2depth dst, src |
 |-----------------------|
 
 
 
- 
+ 
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | texm3x2depth          |      |      | x    |      |      |      |       |      |       |
 
 
 
- 
+ 
 
-Esta instrucción debe usarse con la instrucción [texm3x2pad-PS](texm3x2pad---ps.md) .
+Esta instrucción debe usarse con la [instrucción texm3x2pad - ps.](texm3x2pad---ps.md)
 
-Al utilizar estas dos instrucciones, los registros de textura deben usar la siguiente secuencia.
+Al usar estas dos instrucciones, los registros de textura deben usar la siguiente secuencia.
 
 
 ```
@@ -65,17 +65,17 @@ texm3x2depth t(m+1), t(n)    // Calculate w value; use both z and w to
 
 
 
-El cálculo de profundidad se realiza después de usar una operación de producto punto para buscar z y w. Aquí encontrará más detalles sobre cómo se realiza el cálculo de profundidad.
+El cálculo de profundidad se realiza después de usar una operación de producto de puntos para buscar z y w. Este es un detalle más detallado sobre cómo se realiza el cálculo de profundidad.
 
 La instrucción texm3x2pad calcula z.
 
-z = TextureCoordinates (Stage m)<sub>UVW</sub> \* t (n)<sub>RGB</sub>
+z = TextureCoordinates(stage m)<sub>UVW</sub> \* t(n)<sub>RGB</sub>
 
 La instrucción texm3x2depth calcula w.
 
-w = TextureCoordinates (fase m + 1)<sub>UVW</sub> \* t (n)<sub>RGB</sub>
+w = TextureCoordinates(stage m+1)<sub>UVW</sub> \* t(n)<sub>RGB</sub>
 
-Calcule la profundidad y almacene el resultado en t (m + 1).
+Calcule la profundidad y almacene el resultado en t(m+1).
 
 
 ```
@@ -90,11 +90,11 @@ else
 
 La profundidad calculada se etiqueta para usarse en la prueba de profundidad del píxel, reemplazando el valor de prueba de profundidad existente para el píxel.
 
-Asegúrese de fijar z/w en el intervalo de (0-1). Si z/w está fuera de este intervalo, el resultado almacenado en el búfer de profundidad no estará definido.
+Asegúrese de fijar z/w para que esté en el intervalo de (0-1). Si z/w está fuera de este intervalo, el resultado almacenado en el búfer de profundidad será indefinido.
 
-Después de ejecutar texm3x2depth, el registro t (m + 1) ya no está disponible para su uso en el sombreador.
+Después de ejecutar texm3x2depth, register t(m+1) ya no está disponible para su uso en el sombreador.
 
-Cuando se usa el muestreo múltiple, el uso de esta instrucción elimina la mayoría de las ventajas del búfer de profundidad de mayor resolución. Dado que el sombreador de píxeles se ejecuta una vez por píxel, se usará la salida de un solo valor de profundidad por texm3x2depth o [texdepth-PS](texdepth---ps.md) para cada una de las pruebas de comparación de profundidad de subpíxeles.
+Al multimuestreo, el uso de esta instrucción elimina la mayor parte de la ventaja del búfer de profundidad de resolución superior. Dado que el sombreador de píxeles se ejecuta una vez por píxel, la salida de valor de profundidad única de texm3x2depth o [texdepth: ps](texdepth---ps.md) se usará para cada una de las pruebas de comparación de profundidad de subpíxel.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -103,9 +103,9 @@ Cuando se usa el muestreo múltiple, el uso de esta instrucción elimina la mayo
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

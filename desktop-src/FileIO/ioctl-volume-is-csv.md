@@ -1,7 +1,7 @@
 ---
 description: Determina si un volumen es un volumen CSV.
 ms.assetid: 6B09B519-1E2F-4757-AAD5-1E4C81023E14
-title: Código de control de IOCTL_VOLUME_IS_CSV (Ntddvol. h)
+title: IOCTL_VOLUME_IS_CSV código de control (Ntddvol.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Ntddvol.h
-ms.openlocfilehash: 8121e1b89c88ad05a2c2be8537d7170bfabfc412
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe89e17688bb5566ade0530ce9a1710b5b2c52c7656bf335a89be63a2ca051d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119927665"
 ---
-# <a name="ioctl_volume_is_csv-control-code"></a>El \_ volumen ioctl \_ es \_ código de control CSV
+# <a name="ioctl_volume_is_csv-control-code"></a>Código de \_ control CSV DE IOCTL VOLUME \_ IS \_
 
 Determina si un volumen es un volumen CSV.
 
-Para realizar esta operación, llame a la función [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
+Para realizar esta operación, llame a la [**función DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) con los parámetros siguientes.
 
 
 ```C++
@@ -49,35 +49,35 @@ DeviceIoControl( (HANDLE) hDevice,              // handle to device
 *hDevice* 
 </dt> <dd>
 
-Identificador del volumen. Para recuperar un identificador de volumen, llame a la función [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) . Solo los administradores pueden abrir identificadores de volumen.
+Identificador del volumen. Para recuperar un identificador de volumen, llame a la [**función CreateFile.**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) Solo los administradores pueden abrir identificadores de volumen.
 
 </dd> <dt>
 
 *dwIoControlCode* 
 </dt> <dd>
 
-Código de control de la operación. Use **el \_ volumen ioctl \_ es \_ CSV** para esta operación.
+Código de control de la operación. Use **IOCTL \_ VOLUME IS \_ CSV \_ para** esta operación.
 
 </dd> <dt>
 
 *lpInBuffer* 
 </dt> <dd>
 
-No se utiliza con esta operación; se establece en **null**.
+No se usa con esta operación; se establece en **NULL.**
 
 </dd> <dt>
 
 *nInBufferSize* 
 </dt> <dd>
 
-No se utiliza con esta operación; se establece en cero (0).
+No se usa con esta operación; se establece en cero (0).
 
 </dd> <dt>
 
 *lpOutBuffer* 
 </dt> <dd>
 
-Un puntero a **true** si el volumen es un volumen CSV; de lo contrario, se produce un error en la llamada de función.
+Puntero a **TRUE si** el volumen es un volumen CSV; De lo contrario, se produce un error en la llamada de función.
 
 </dd> <dt>
 
@@ -93,22 +93,22 @@ Tamaño del búfer de salida, en bytes.
 
 Puntero a una variable que recibe el tamaño de los datos almacenados en el búfer de salida, en bytes.
 
-Si *lpOverlapped* es **null**, *lpBytesReturned* no puede ser **null**. Incluso cuando una operación no devuelve datos de salida y *lpOutBuffer* es **null**, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) hace uso de *lpBytesReturned*. Después de una operación de este tipo, el valor de *lpBytesReturned* no tiene sentido.
+Si *lpOverlapped* es **NULL,** *lpBytesReturned* no puede ser **NULL.** Incluso cuando una operación no devuelve datos de salida y *lpOutBuffer* es **NULL,** [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) usa *lpBytesReturned.* Después de esta operación, el valor *de lpBytesReturned* no tiene sentido.
 
-Si *lpOverlapped* no es **null**, *lpBytesReturned* puede ser **null**. Si este parámetro no es **null** y la operación devuelve datos, *lpBytesReturned* no tiene sentido hasta que se haya completado la operación superpuesta. Para recuperar el número de bytes devueltos, llame a [**GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult). Si *hDevice* está asociado a un puerto de finalización de e/s, puede recuperar el número de bytes devueltos mediante una llamada a [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus).
+Si *lpOverlapped* no es **NULL,** *lpBytesReturned* puede ser **NULL.** Si este parámetro no es **NULL y** la operación devuelve datos, *lpBytesReturned* no tiene sentido hasta que se completa la operación superpuesta. Para recuperar el número de bytes devueltos, llame [**a GetOverlappedResult**](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult). Si *hDevice* está asociado a un puerto de finalización de E/S, puede recuperar el número de bytes devueltos llamando a [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus).
 
 </dd> <dt>
 
 *lpOverlapped* 
 </dt> <dd>
 
-Puntero a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) .
+Puntero a una [**estructura OVERLAPPED.**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped)
 
-Si se abrió *hDevice* sin especificar la **marca de archivo \_ \_ superpuesta**, *lpOverlapped* se omite.
+Si *hDevice se* abrió sin especificar **FILE FLAG \_ \_ OVERLAPPED,** *lpOverlapped* se omite.
 
-Si *hDevice* se abrió con la marca de **indicador de archivo \_ \_ superpuesto** , la operación se realiza como una operación superpuesta (asincrónica). En este caso, *lpOverlapped* debe apuntar a una estructura [**superpuesta**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida que contiene un identificador para un objeto de evento. De lo contrario, se produce un error imprevisible en la función.
+Si *hDevice se* abrió con la marca **FILE FLAG \_ \_ OVERLAPPED,** la operación se realiza como una operación superpuesta (asincrónica). En este caso, *lpOverlapped* debe apuntar a una estructura [**OVERLAPPED**](/windows/desktop/api/minwinbase/ns-minwinbase-overlapped) válida que contenga un identificador a un objeto de evento. De lo contrario, se produce un error en la función de maneras imprevisibles.
 
-En el caso de las operaciones superpuestas, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) vuelve inmediatamente y el objeto de evento se señala cuando se ha completado la operación. De lo contrario, la función no devuelve ningún resultado hasta que se haya completado la operación o se produzca un error.
+Para las operaciones superpuestas, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) devuelve inmediatamente y el objeto de evento se señala cuando se ha completado la operación. De lo contrario, la función no devuelve hasta que se ha completado la operación o se produce un error.
 
 </dd> </dl>
 
@@ -122,11 +122,11 @@ Si se produce un error en la operación o está pendiente, [**DeviceIoControl**]
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Ntddvol. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Ntddvol.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: REPEATBUTTON
-description: Se trata de un botón predefinido con los siguientes valores predeterminados. | REPEATBUTTON
+description: Se trata de un button predefinido con los siguientes valores predeterminados. | REPEATBUTTON
 ms.assetid: 4322ee45-c2b2-4fa0-aa9c-624be5d464ea
 keywords:
-- Media Player de Windows REPEATBUTTON
+- RepeatBUTTON Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8082b13e887c2a8341d72419d1ccf0d95a19a206
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a9e72d737ceccfac5046f286c7be095fe40f73c02a5872226aaf19912ec6fe6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861455"
 ---
 # <a name="repeatbutton"></a>REPEATBUTTON
 
-Se trata de un **botón** predefinido con los siguientes valores predeterminados.
+Se trata de un **button** predefinido con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:player.settings.setMode('loop',down);"
@@ -32,9 +32,9 @@ down="wmpprop:player.settings.getMode('loop')"
 sticky="true"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto crea un control de **botón** que activa y desactiva la repetición. La información sobre herramientas está localizada. Todas las propiedades de este **botón** se pueden invalidar si se especifican explícitamente.
+Esto crea un control **BUTTON** que activa y desactiva Repetir. La información sobre herramientas se localiza. Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ Esto crea un control de **botón** que activa y desactiva la repetición. La inf
 
 | Requisito | Value |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Obtiene la lista de verbos comunes a todos los elementos de carpeta.
 ms.assetid: f72f5dcc-35e0-4a23-ae4c-355da2858aab
-title: Propiedad FolderItems3. Verbs (Shldisp. h)
+title: Propiedad FolderItems3.Verbs (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 7e07da0b4901b4d4ba7a1bda1f20d3f58298f9d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0c3511be1840e9d30a0bc95cfce2ccdb43638e85e1894fdfe0939a7d9fa18fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009475"
 ---
-# <a name="folderitems3verbs-property"></a>FolderItems3. Verbs (propiedad)
+# <a name="folderitems3verbs-property"></a>Propiedad FolderItems3.Verbs
 
 Obtiene la lista de verbos comunes a todos los elementos de carpeta.
 
@@ -37,13 +37,13 @@ Verbs = FolderItems3.Verbs
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Dirección de un puntero a la colección de verbos. Vea [**FolderItemVerbs**](folderitemverbs.md).
+Dirección de un puntero a la colección de verbos. Vea [**FolderItemVerbs.**](folderitemverbs.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de los **verbos** para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de **verbos** para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -74,7 +74,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -153,11 +153,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 

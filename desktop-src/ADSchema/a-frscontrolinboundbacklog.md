@@ -1,11 +1,11 @@
 ---
-title: FRS-control-Inbound-atributo de trabajo pendiente
-description: Par de nivel de error/advertencia para el trabajo pendiente de entrada (número de archivos).
+title: Atributo FRS-Control-Inbound-Backlog
+description: Par de nivel de advertencia/error para el trabajo pendiente de entrada (número de archivos).
 ms.assetid: 4b3cc978-cdc5-4423-a78d-477e4bc5e489
 ms.tgt_platform: multiple
 keywords:
-- FRS-control-entrante-atributo de trabajo pendiente esquema de AD
-- fRSControlInboundBacklog esquema de AD de atributos
+- Esquema de AD del atributo FRS-Control-Inbound-Backlog
+- fRSControlInboundBacklog attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27e45a6b535c889d9482b78165a4317fb54826cf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ec19a86ef05288c92d7039dbcb370f5d8d7a9a18a363abfbab7009cd9863943f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925685"
 ---
-# <a name="frs-control-inbound-backlog-attribute"></a>FRS-control-Inbound-atributo de trabajo pendiente
+# <a name="frs-control-inbound-backlog-attribute"></a>Atributo FRS-Control-Inbound-Backlog
 
-Par de nivel de error/advertencia para el trabajo pendiente de entrada (número de archivos).
+Par de nivel de advertencia/error para el trabajo pendiente de entrada (número de archivos).
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | FRS-control-entrada del trabajo pendiente                 |
-| Nombre para mostrar de LDAP | fRSControlInboundBacklog                    |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | FRS-Control-Inbound-Backlog                 |
+| Ldap-Display-Name | fRSControlInboundBacklog                    |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.872                      |
-| System-ID-GUID    | 2a13257b-9373-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2a13257b-9373-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Par de nivel de error/advertencia para el trabajo pendiente de entrada (número 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Par de nivel de error/advertencia para el trabajo pendiente de entrada (número 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Par de nivel de error/advertencia para el trabajo pendiente de entrada (número 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Par de nivel de error/advertencia para el trabajo pendiente de entrada (número 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Par de nivel de error/advertencia para el trabajo pendiente de entrada (número 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Par de nivel de error/advertencia para el trabajo pendiente de entrada (número 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | 0                                                |
 | Range-Upper            | 32                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Clases usadas en        | [**Miembro de NTFRS**](c-ntfrsmember.md)<br/> |
+| Clases usadas en        | [**NTFRS-Member**](c-ntfrsmember.md)<br/> |
 
 
 

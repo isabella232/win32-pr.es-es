@@ -1,24 +1,24 @@
 ---
-title: RPC asincrónica y de e/s asincrónica
-description: La e/s asincrónica es un medio eficaz para que un único subproceso administre varias solicitudes de e/s simultáneamente.
+title: E/S asincrónica y RPC asincrónica
+description: La E/S asincrónica es un medio eficaz para que un único subproceso administre varias solicitudes de E/S simultáneamente.
 ms.assetid: a9105518-4130-4119-b8d1-e73064b077e9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e932e85283eb67ff6675a646e791bbce5fe15d65
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f7bdd198143c2f1f1d03aa73249680f47dec6d6ac6f996675df1f1e53fb56137
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120023815"
 ---
-# <a name="asynchronous-io-and-asynchronous-rpc"></a>RPC asincrónica y de e/s asincrónica
+# <a name="asynchronous-io-and-asynchronous-rpc"></a>E/S asincrónica y RPC asincrónica
 
-La e/s asincrónica es un medio eficaz para que un único subproceso administre varias solicitudes de e/s simultáneamente. RPC asincrónico en el servidor lleva a cabo un propósito similar para las solicitudes RPC. En las versiones de Windows anteriores a Windows Vista, no se recomienda el envío de solicitudes de e/s asincrónicas desde procedimientos de servidor mediante RPC asincrónico. Sin embargo, en Windows Vista y versiones posteriores de Windows, las solicitudes de e/s asincrónicas que están asociadas a un puerto de finalización de e/s son compatibles con RPC asincrónico.
+La E/S asincrónica es un medio eficaz para que un único subproceso administre varias solicitudes de E/S simultáneamente. RPC asincrónica en el servidor realiza un propósito similar para las solicitudes RPC. En versiones de Windows antes de Windows Vista, no se recomienda publicar solicitudes de E/S asincrónicas de procedimientos de servidor mediante RPC asincrónica. Sin embargo, en Windows Vista y versiones posteriores de Windows, las solicitudes de E/S asincrónicas asociadas a un puerto de finalización de E/S son compatibles con RPC asincrónico.
 
-Antes de Windows Vista, una llamada a procedimiento remoto asincrónica puede completarse antes de que se complete la solicitud de e/s asincrónica. Cuando se completa la llamada asincrónica, su subproceso puede terminar si el tiempo de ejecución de RPC decide que tiene suficientes subprocesos disponibles para dar servicio a la carga de trabajo esperada. El sistema enlaza todas las solicitudes de e/s al subproceso que las inicia. Si el subproceso finaliza, se anulan las solicitudes de e/s pendientes en ese subproceso. Las solicitudes de e/s pendientes no se pueden pasar a otro subproceso.
+Antes de Windows Vista, una llamada a procedimiento remoto asincrónico puede completarse antes de que se complete la solicitud de E/S asincrónica. Cuando se completa la llamada asincrónica, su subproceso puede finalizar si el tiempo de ejecución de RPC decide que tiene suficientes subprocesos disponibles para dar servicio a la carga de trabajo esperada. El sistema enlaza todas las solicitudes de E/S al subproceso que las inicia. Si el subproceso finaliza, se anulan las solicitudes de E/S pendientes en ese subproceso. Las solicitudes de E/S pendientes no se pueden mover a otro subproceso.
 
-Por lo tanto, los diseñadores de aplicaciones que tienen como destino versiones de Windows anteriores a Windows Vista pueden usar e/s sincrónicas en los procedimientos de servidor, o pueden reenviar todas las solicitudes que impliquen la e/s asincrónica a los procedimientos que se ejecutan en un grupo de subprocesos que administra la aplicación. La API de Windows proporciona funciones para la administración de grupos de subprocesos. Consulte [funciones de proceso y subproceso](/windows/desktop/ProcThread/process-and-thread-functions).
+Por lo tanto, los diseñadores de aplicaciones que tienen como destino versiones de Windows anteriores a Windows Vista pueden usar E/S sincrónica en procedimientos de servidor o pueden reenviar todas las solicitudes que implican E/S asincrónica a procedimientos que se ejecutan en un grupo de subprocesos que administra la aplicación. La API Windows proporciona funciones para la administración del grupo de subprocesos. Vea [Funciones de proceso y subproceso.](/windows/desktop/ProcThread/process-and-thread-functions)
 
- 
+ 
 
- 
+ 

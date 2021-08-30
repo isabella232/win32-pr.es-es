@@ -4,12 +4,12 @@ ms.assetid: 87557bb3-9d92-c85e-4e7a-d21af03db624
 title: API de XAudio2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 767beffa80f42d18d84d428c28e9a7b808c489d7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 919cdb1748c1498ab29081ae87279a92df759aaeb2e6feceb93528230294e3e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005685"
 ---
 # <a name="xaudio2-apis"></a>API de XAudio2
 

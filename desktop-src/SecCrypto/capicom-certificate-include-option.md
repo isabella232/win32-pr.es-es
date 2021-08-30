@@ -1,7 +1,7 @@
 ---
 description: Define qué certificados de una cadena se guardan.
 ms.assetid: 6f9e28e6-b01f-4803-8259-8ab73abeecf8
-title: Enumeración CAPICOM_CERTIFICATE_INCLUDE_OPTION (CAPICOM. h)
+title: CAPICOM_CERTIFICATE_INCLUDE_OPTION enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 45ea9ccf7d3a43e325073f04e28bbd392fa34998
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5b6bb2cd36d6ce8ca422d680a05a1e84318d745981a8ca15d9de0be3dfe45c03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879395"
 ---
-# <a name="capicom_certificate_include_option-enumeration"></a>\_ \_ Enumeración de opciones de inclusión de certificado de CAPICOM \_
+# <a name="capicom_certificate_include_option-enumeration"></a>CAPICOM \_ CERTIFICATE INCLUDE OPTION \_ \_ (enumeración)
 
-El tipo de enumeración de la **\_ \_ \_ opción incluir certificado de CAPICOM** define qué certificados de una cadena se guardan. Este tipo de enumeración se presentó en CAPICOM 2,0.
+El **tipo de enumeración CAPICOM \_ CERTIFICATE INCLUDE \_ \_ OPTION** define qué certificados de una cadena se guardan. Este tipo de enumeración se introdujo en CAPICOM 2.0.
 
 ## <a name="members"></a>Miembros
 
@@ -30,15 +30,15 @@ El tipo de enumeración de la **\_ \_ \_ opción incluir certificado de CAPICOM*
 
 | Miembro                                                 | Descripción                                                                           | Value |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|-------|
-| **el \_ certificado de CAPICOM \_ incluye una \_ cadena excepto la \_ \_ raíz** | Guarda todos los certificados de la cadena con la excepción de la entidad raíz.<br/> | 0     |
-| **el \_ certificado de CAPICOM \_ incluye una \_ \_ cadena entera**        | Guarda la cadena de certificados completa.<br/>                                      | 1     |
-| **el \_ certificado de CAPICOM \_ incluye \_ \_ solo la entidad final \_**   | Guarda solo el certificado de entidad final.<br/>                                     | 2     |
+| **CAPICOM \_ CERTIFICATE \_ INCLUDE \_ CHAIN \_ EXCEPT \_ ROOT** | Guarda todos los certificados de la cadena con la excepción de la entidad raíz.<br/> | 0     |
+| **EL CERTIFICADO CAPICOM \_ \_ INCLUYE CADENA \_ \_ COMPLETA**        | Guarda la cadena de certificados completa.<br/>                                      | 1     |
+| **EL CERTIFICADO CAPICOM \_ \_ INCLUYE SOLO ENTIDAD \_ \_ \_ FINAL**   | Guarda solo el certificado de entidad final.<br/>                                     | 2     |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**Certificate. Save**](certificate-save.md) usa el tipo de enumeración de la **\_ opción de \_ inclusión \_ de certificado CAPICOM** .
+El método [**Certificate.Save**](certificate-save.md) usa el tipo de enumeración **CAPICOM \_ CERTIFICATE INCLUDE \_ \_ OPTION.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ El método [**Certificate. Save**](certificate-save.md) usa el tipo de enumeraci
 
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

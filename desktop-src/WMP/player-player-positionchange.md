@@ -1,11 +1,11 @@
 ---
-title: Player. PositionChange (evento)
-description: El evento PositionChange se produce cuando se ha cambiado la posición actual del elemento multimedia.
+title: Evento Player.PositionChange
+description: El evento PositionChange tiene lugar cuando se ha cambiado la posición actual del elemento multimedia.
 ms.assetid: 0561c58c-da5d-438e-adf8-2472405c6b9e
 keywords:
-- Media Player de eventos de PositionChange en Windows
-- Evento PositionChange Windows Media Player, clase Player
-- Clase de reproductor Windows Media Player, evento PositionChange
+- Evento PositionChange Reproductor de Windows Media
+- Evento PositionChange Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media , evento PositionChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0ab7f64d6f5c4a081b8a81a14e3fcb353e1478e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0156cab32f4a11ec239e7bdfe2b2896a59c44f986f1f1d51b49619e86e6ab4a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119862405"
 ---
-# <a name="playerpositionchange-event"></a>Player. PositionChange (evento)
+# <a name="playerpositionchange-event"></a>Evento Player.PositionChange
 
-El evento **PositionChange** se produce cuando se ha cambiado la posición actual del elemento multimedia.
+El **evento PositionChange** tiene lugar cuando se ha cambiado la posición actual del elemento multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ Player.PositionChange(
 *oldPosition* 
 </dt> <dd>
 
-Número (**Double**) que especifica la posición anterior.
+Number (**double**) que especifica la posición anterior.
 
 </dd> <dt>
 
 *newPosition* 
 </dt> <dd>
 
-**Número** (**Double**) que especifica la nueva posición.
+**Number** (**double**) que especifica la nueva posición.
 
 </dd> </dl>
 
@@ -61,13 +61,13 @@ Número (**Double**) que especifica la posición anterior.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento no se genera rutinariamente durante la reproducción. Solo se produce cuando algo cambia activamente la posición actual del elemento multimedia de reproducción, como el usuario que mueve el identificador de búsqueda o el código que especifica un valor para *los controles*. **currentPosition**.
+Este evento no se genera rutinariamente durante la reproducción. Solo se produce cuando algo cambia activamente la posición actual del elemento multimedia de reproducción, como el usuario que mueve el identificador de búsqueda o el código que especifica un valor para *Controles*. **currentPosition**.
 
-El valor de los parámetros de evento lo especifica Windows Media Player y se puede tener acceso a él o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro dado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluidas las mayúsculas y minúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
-**Windows Media Player 10 Mobile:** Este evento no se admite.
+**Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ El valor de los parámetros de evento lo especifica Windows Media Player y se pu
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

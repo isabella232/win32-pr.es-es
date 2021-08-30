@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TDN_EXPANDO_BUTTON_CLICKED (commctrl. h)
-description: Enviado por el cuadro de diálogo de tarea cuando el usuario hace clic en el botón Expando del cuadro de diálogo. Esta notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
+title: TDN_EXPANDO_BUTTON_CLICKED de notificación (Commctrl.h)
+description: Enviado por el cuadro de diálogo de tarea cuando el usuario hace clic en el botón de expansión del diálogo. Esta notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método TaskDialogIndirect.
 ms.assetid: 15e2a9d0-9986-4fb1-a15e-dd4839e45146
 keywords:
-- TDN_EXPANDO_BUTTON_CLICKED controles de código de notificación de Windows
+- TDN_EXPANDO_BUTTON_CLICKED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f3c36379a8efc40c7873d817b832705b3c1e084
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ac901777ab7599592e5646946f19d9e2456b6afbe911645259adbf7459e3995
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875785"
 ---
-# <a name="tdn_expando_button_clicked-notification-code"></a>TDN \_ botón Expando con \_ \_ clic en el código de notificación
+# <a name="tdn_expando_button_clicked-notification-code"></a>Código de notificación \_ CLICKED DEL BOTÓN EXPANDO \_ de TDN \_
 
-Enviado por el cuadro de diálogo de tarea cuando el usuario hace clic en el botón Expando del cuadro de diálogo. Esta notificación se recibe solo a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el método [**TaskDialogIndirect**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect) .
+Enviado por el cuadro de diálogo de tarea cuando el usuario hace clic en el botón de expansión del diálogo. Esta notificación solo se recibe a través de la función de devolución de llamada del cuadro de diálogo de tarea, que se puede registrar mediante el [**método TaskDialogIndirect.**](/windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect)
 
 
 ```C++
@@ -42,7 +42,7 @@ TDN_EXPANDO_BUTTON_CLICKED
 *wParam* 
 </dt> <dd>
 
-Valor **booleano** que es **true** si el cuadro de diálogo está expandido, o **false** en caso contrario.
+Un **VALOR BOOL** que es **TRUE** si el cuadro de diálogo está expandido o **FALSE** si no es así.
 
 </dd> <dt>
 
@@ -57,9 +57,9 @@ Debe ser cero.
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el ejemplo de la sección sintaxis se muestra la conversión a wParam antes de enviar la notificación. **LParam** no se utiliza y debe ser cero.
+En el ejemplo de la sección Sintaxis se muestra la conversión a wParam antes de enviar la notificación. **LPARAM** no se usa y debe ser cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ En el ejemplo de la sección sintaxis se muestra la conversión a wParam antes d
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

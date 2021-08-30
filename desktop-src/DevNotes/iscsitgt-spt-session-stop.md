@@ -1,7 +1,7 @@
 ---
-description: Se usa con el \_ IOCTL del minipuerto SCSI de ioctl \_ y el código de control del extremo de la sesión de CTLCODE \_ ISCSITGT de un solo \_ \_ \_ controlador de sesión (0x101) para detener una sesión.
+description: Se usa con el código de \_ \_ control IOCTL SCSI MINIPORT IOCTL y el código de control CTLCODE \_ ISCSITGT \_ SPT SESSION END \_ (0x101) para detener una \_ sesión.
 ms.assetid: 74DAA560-A5BA-475C-AA36-7E6F0EA82EFE
-title: Estructura de ISCSITGT_SPT_SESSION_STOP
+title: ISCSITGT_SPT_SESSION_STOP estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: e4501fbe2d1bbf884448d6b6a9476ee4782d3da7
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: dba4c54e6fbae3ef947ec5ac5f5c4b178434566d15cc0591104dd38a8e456fb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "103914290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120001494"
 ---
-# <a name="iscsitgt_spt_session_stop-structure"></a>\_Estructura de \_ detención de sesión de ISCSITGT \_
+# <a name="iscsitgt_spt_session_stop-structure"></a>Estructura ISCSITGT \_ SPT \_ SESSION \_ STOP
 
 \[La siguiente estructura está disponible para su uso en Windows Server 2012 R2. En versiones posteriores podría modificarse o no estar disponible.\]
 
-Se usa con el IOCTL del [**\_ \_ minipuerto SCSI de ioctl**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) y el código de control del extremo de la sesión de CTLCODE \_ ISCSITGT de un solo \_ \_ \_ controlador de sesión (0x101) para detener una sesión.
+Se usa con el código de control [**\_ \_ IOCTL SCSI MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) IOCTL y el código de control CTLCODE \_ ISCSITGT \_ SPT \_ SESSION END (0x101) para detener una \_ sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Encabezado obligatorio.
 **ITNexusHandle**
 </dt> <dd>
 
-Un identificador opaco que representa una sesión.
+Identificador opaco que representa una sesión.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ Un identificador opaco que representa una sesión.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | No se admite ninguno<br/>                               |
-| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                       |
+| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                       |
 
 
 
@@ -75,7 +75,7 @@ Un identificador opaco que representa una sesión.
 [Paso a través de destino iSCSI](/powershell/module/iscsi)
 </dt> <dt>
 
-[**\_control de e/s SRB \_**](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control)
+[**SRB \_ IO \_ CONTROL**](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: El método RecordFrameLateness registra el tiempo que se produce la representación y recopila las estadísticas de la página de propiedades.
+description: El método RecordFrameLateness registra la hora a la que se produjo la representación y recopila estadísticas de la página de propiedades.
 ms.assetid: 9d4b90d7-b529-40cc-a0fd-6635163fb7dd
-title: Método CBaseVideoRenderer. RecordFrameLateness (Renbase. h)
+title: Método CBaseVideoRenderer.RecordFrameLateness (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 10ae7069ceedbe43f9614ea3fd1c7c901d7023cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89682799ce71df8a8b08feb01454db3ec4fdd475a4107fcdb96e3a215a416657
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814105"
 ---
-# <a name="cbasevideorendererrecordframelateness-method"></a>CBaseVideoRenderer. RecordFrameLateness, método
+# <a name="cbasevideorendererrecordframelateness-method"></a>Método CBaseVideoRenderer.RecordFrameLateness
 
-El `RecordFrameLateness` método registra el tiempo que se produce la representación y recopila estadísticas de la página de propiedades.
+El `RecordFrameLateness` método registra la hora a la que se produjo la representación y recopila estadísticas de la página de propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,14 +46,14 @@ virtual void RecordFrameLateness(
 *trLate* 
 </dt> <dd>
 
-Valor que indica el retraso de la muestra más allá de su tiempo de espera, en unidades de tiempo de referencia.
+Valor que indica el retraso de la muestra más allá de su tiempo debido, en unidades de tiempo de referencia.
 
 </dd> <dt>
 
 *trFrame* 
 </dt> <dd>
 
-Tiempo de INTERMARCO, en unidades de tiempo de referencia.
+Tiempo de interframe, en unidades de tiempo de referencia.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

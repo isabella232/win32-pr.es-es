@@ -1,7 +1,7 @@
 ---
-description: El método Addtail (anexa una lista al final de la lista.
+description: El método AddTail anexa una lista al final de la lista.
 ms.assetid: 006cccc5-4fb2-4e3f-9481-5d10c090d24e
-title: 'Método CGenericList. Addtail ((Wxlist. h): parámetro plist'
+title: 'Método CGenericList.AddTail (Wxlist.h): parámetro pList'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6695df796e54e85ba32dcd63cce2940e00a0199c
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 1cf647fb70b6d2896991bda2e8558ad34407f3427a2eef2d2ce8cd4295c95486
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105660105"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814005"
 ---
-# <a name="cgenericlistaddtail-method-wxlisth---plist-parameter"></a>Método CGenericList. Addtail ((Wxlist. h): parámetro plist
+# <a name="cgenericlistaddtail-method-wxlisth---plist-parameter"></a>Método CGenericList.AddTail (Wxlist.h): parámetro pList
 
 El `AddTail` método anexa una lista al final de la lista.
 
@@ -42,29 +42,29 @@ BOOL AddTail(
 
 <dl> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
-Puntero a la lista que se va a anexar.
+Puntero a la lista que se anexará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Wxlist. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Wxlist.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

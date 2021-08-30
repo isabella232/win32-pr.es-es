@@ -1,19 +1,19 @@
 ---
-description: El instalador establece la propiedad MediaSourceDir en 1 cuando la instalación utiliza un origen ubicado en un medio, como un CD-ROM.
+description: El instalador establece la propiedad MediaSourceDir en 1 cuando la instalación usa un origen ubicado en medios, como un CD-ROM.
 ms.assetid: 79c7c5eb-b212-4dbf-943a-00ebd6037ce1
-title: Propiedad MediaSourceDir
+title: MediaSourceDir, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ae8ec79d11f8aaf5027ae0e68003532449c52ba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d3346cc275fec22b555cd5408fb544bf22339e61dce46785622357e9c9b779c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926815"
 ---
-# <a name="mediasourcedir-property"></a>Propiedad MediaSourceDir
+# <a name="mediasourcedir-property"></a>MediaSourceDir, propiedad
 
-El instalador establece la propiedad **MediaSourceDir** en 1 cuando la instalación utiliza un origen ubicado en un medio, como un CD-ROM. Esta propiedad no se establece cuando la instalación utiliza un origen ubicado en una ubicación de red. Por ejemplo, el [control SelectionTree](selectiontree-control.md) usa **MediaSourceDir** para determinar si la instalación se ejecuta desde el origen o se ejecuta desde una ubicación de red.
+El instalador establece la **propiedad MediaSourceDir** en 1 cuando la instalación usa un origen ubicado en medios, como un CD-ROM. Esta propiedad no se establece cuando la instalación usa un origen ubicado en una ubicación de red. Por ejemplo, el [control SelectionTree](selectiontree-control.md) usa **MediaSourceDir** para determinar si la instalación se ejecuta desde el origen o desde una ubicación de red.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ El instalador establece la propiedad **MediaSourceDir** en 1 cuando la instalaci
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

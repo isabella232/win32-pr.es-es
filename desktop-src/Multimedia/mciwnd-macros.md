@@ -1,23 +1,23 @@
 ---
-title: Macros MCIWnd
-description: Macros MCIWnd
+title: MCIWnd Macros
+description: MCIWnd Macros
 ms.assetid: 945eaf5c-afb2-4ccb-bab3-67fae5a1f93c
 keywords:
 - MCI (interfaz de control multimedia), macros MCIWnd
 - Clase de ventana MCIWnd, macros
-- Ventana MCIWnd, macros
+- Ventana de MCIWnd, macros
 - Referencia de MCIWnd, macros
 - Macros MCIWnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79addd5944a491e2e3fc946a0e8ccce65055d5ff
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e67b950c7cf89462df4095c7a93357c98d40f96654ff0da6eedc4cf373f0e87d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783405"
 ---
-# <a name="mciwnd-macros"></a>Macros MCIWnd
+# <a name="mciwnd-macros"></a>MCIWnd Macros
 
 Las macros siguientes se usan con MCIWnd.
 
@@ -98,9 +98,9 @@ Las macros siguientes se usan con MCIWnd.
 [Referencia de MCIWnd](mciwnd-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Funciones RPC
-description: Página de navegación de las funciones llamada a procedimiento remoto (RPC).
+description: Página de navegación para las funciones de llamada a procedimiento remoto (RPC).
 ms.assetid: 2e82667d-5a88-4763-a41a-a09dd53829ae
 keywords:
 - Llamada a procedimiento remoto RPC, referencia, funciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8abaa00de5bae6b0381d67f82e5ca75cd528361
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4a1eeb52119aa5b2df381f84da17adb787342a9478fa170bb00a531e581cb894
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120018435"
 ---
 # <a name="rpc-functions"></a>Funciones RPC
 
-Microsoft RPC admite actualmente las siguientes funciones:
+Rpc de Microsoft admite actualmente las siguientes funciones:
 
 -   [**DceErrorInqText**](/windows/desktop/api/Rpcdce/nf-rpcdce-dceerrorinqtext)
 -   [**MesBufferHandleReset**](/windows/desktop/api/Midles/nf-midles-mesbufferhandlereset)
@@ -27,7 +27,7 @@ Microsoft RPC admite actualmente las siguientes funciones:
 -   [**MesHandleFree**](/windows/desktop/api/Midles/nf-midles-meshandlefree)
 -   [**MesIncrementalHandleReset**](/windows/desktop/api/Midles/nf-midles-mesincrementalhandlereset)
 -   [**MesInqProcEncodingId**](/windows/desktop/api/Midles/nf-midles-mesinqprocencodingid)
--   [**NdrGetUserMarshalInfo**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
+-   [**GetGetUserMarshalInfo**](/windows/desktop/api/Rpcndr/nf-rpcndr-ndrgetusermarshalinfo)
 -   [**RpcAbnormalTermination**](/previous-versions/)
 -   [**RpcAsyncAbortCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasyncabortcall)
 -   [**RpcAsyncCancelCall**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcasynccancelcall)
@@ -207,6 +207,6 @@ Microsoft RPC admite actualmente las siguientes funciones:
 -   [**UuidIsNil**](/windows/desktop/api/Rpcdce/nf-rpcdce-uuidisnil)
 -   [**UuidToString**](/windows/desktop/api/Rpcdce/nf-rpcdce-uuidtostring)
 
- 
+ 
 
- 
+ 

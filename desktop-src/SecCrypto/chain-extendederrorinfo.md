@@ -1,7 +1,7 @@
 ---
 description: Devuelve una cadena que contiene información de error adicional sobre la entrada indizada.
 ms.assetid: 4f0d5289-c414-4e2b-b612-be8ce1d98b12
-title: 'IChain2:: ExtendedErrorInfo (método)'
+title: IChain2::ExtendedErrorInfo (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: f8a7840d0f54ea7e93ad9998d5e8772a2ae411f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 460e16fd99a8599927e80c2e737ed35c5eb1e138899f83c4450ae2220d67f7fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119876944"
 ---
-# <a name="ichain2extendederrorinfo-method"></a>IChain2:: ExtendedErrorInfo (método)
+# <a name="ichain2extendederrorinfo-method"></a>IChain2::ExtendedErrorInfo (método)
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la [**clase X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase X509Chain**](/dotnet/api/system.security.cryptography.x509certificates.x509chain?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-El método **ExtendedErrorInfo** devuelve una cadena que contiene información de error adicional sobre la entrada indizada.
+El **método ExtendedErrorInfo** devuelve una cadena que contiene información de error adicional sobre la entrada indizada.
 
-Este método se presenta en CAPICOM 2,0.
+Este método se introdujo en CAPICOM 2.0.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,10 +44,10 @@ Chain.ExtendedErrorInfo( _
 
 <dl> <dt>
 
-*Índice* \[ de en, opcional\]
+*Índice* \[ en, opcional\]
 </dt> <dd>
 
-Un **valor de tipo Long** que representa el índice de la entrada. El valor predeterminado es 1, que devuelve información de error para el certificado final de la cadena. Certificates **. Count** devuelve información sobre el certificado raíz de la cadena. 0 devuelve información de error extendida para toda la cadena.
+Long **que** representa el índice de la entrada. El valor predeterminado es 1, que devuelve información de error para el certificado final de la cadena. **Certificates.Count** devuelve información sobre el certificado raíz de la cadena. 0 devuelve información de error extendida para toda la cadena.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Cadena que contiene la información de error extendida.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -72,7 +72,7 @@ Cadena que contiene la información de error extendida.
 
 <dl> <dt>
 
-[**IAM**](chain.md)
+[**Cadena**](chain.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCDecoderDeinterlacing (Wmcodecdsp. h)
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | g_wszWMVCDecoderDeinterlacing (Wmcodecdsp. h)
+title: g_wszWMVCDecoderDeinterlacing (Wmcodecdsp.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | g_wszWMVCDecoderDeinterlacing (Wmcodecdsp.h)
 ms.assetid: f36266dd-7040-477c-89bc-44903b2613f1
 keywords:
-- g_wszWMVCDecoderDeinterlacing formato de Windows Media
+- g_wszWMVCDecoderDeinterlacing windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e089e8011b3a8394c68d2fd92bbfe9c03266926
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a369ccebc0c8b35c7f4b2cd7cf7ac305b6afb86dbaf80988c85394211da5368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930425"
 ---
 # <a name="g_wszwmvcdecoderdeinterlacing"></a>g \_ wszWMVCDecoderDeinterlacing
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obtener la documentación actual sobre los códecs de Windows Media y los p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

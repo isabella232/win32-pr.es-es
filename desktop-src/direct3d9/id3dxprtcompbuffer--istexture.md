@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e58512ee538c2dc74251d9db6c0b86e6f185ed31
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9c73cee3077c23b08291efd3b9051fd694d2fe9a106368c80debbf2441448e32
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120026175"
 ---
-# <a name="id3dxprtcompbufferistexture-method"></a>Método ID3DXPRTCompBuffer::IsTexture
+# <a name="id3dxprtcompbufferistexture-method"></a>Id3DXPRTCompBuffer::IsTexture (método)
 
 Indica si el búfer contiene una textura.
 
@@ -55,7 +55,7 @@ Devuelve **TRUE** si el búfer contiene una textura; devuelve **FALSE en caso** 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
