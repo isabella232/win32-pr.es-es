@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 07167dc0f2cad5192dc30e9897541b6619086bfc
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3fe6dbdc997b7c9f72094999aa852036c578dd99
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481351"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988508"
 ---
 # <a name="jetgetinstancemiscinfo-function"></a>Función JetGetInstanceMiscInfo
 
@@ -61,12 +61,12 @@ Tamaño, en bytes, del búfer pasado en *pvResult*.
 
 *InfoLevel*
 
-Determina qué tipo de información se recuperará para la instancia especificada por la *instancia*. El formato de los datos almacenados *en pvResult* depende de *InfoLevel*.
+Determina qué tipo de información se recuperará para la instancia especificada por *la instancia*. El formato de los datos almacenados *en pvResult* depende de *InfoLevel*.
 
 Las siguientes opciones están disponibles para su uso con este parámetro.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_InstanceMiscInfoLogSignature</p> | <p><em>pvResult</em> se interpreta como una estructura <a href="gg269340(v=exchg.10).md">JET_SIGNATURE</a> de la secuencia del registro de transacciones asociada a esta instancia.</p> | 
 
@@ -81,14 +81,20 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errBufferTooSmall</p> | <p>El búfer era demasiado pequeño.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Se especificó <a href="gg294048(v=exchg.10).md">un JET_INSTANCE</a> no válido o <em>infoLevel</em> no válido.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Se especificó <a href="gg294048(v=exchg.10).md">JET_INSTANCE</a> <em>infoLevel</em> no válido o no válido.</p> | 
 
 
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

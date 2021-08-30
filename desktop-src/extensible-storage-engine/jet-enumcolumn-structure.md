@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f0fa6d326120355e43b29cd87e13d5c0ebbf68b
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 4f27fd08cb9df4c9e777524b14c1dfbdfe274dab
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122988648"
 ---
 # <a name="jet_enumcolumn-structure"></a>Estructura de JET_ENUMCOLUMN
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_enumcolumn-structure"></a>Estructura de JET_ENUMCOLUMN
 
-La **JET_ENUMCOLUMN** enumera los valores de columna de un registro cuando se usa la función [JetEnumerateColumns.](./jetenumeratecolumns-function.md) [JetEnumerateColumns](./jetenumeratecolumns-function.md) devuelve una matriz de **JET_ENUMCOLUMN** estructuras. La matriz se devuelve en memoria que se asigna mediante la [devolución](/cpp/c-runtime-library/reference/realloc?view=vs-2019) de llamada compatible con reasignación que se proporcionó a esa API.
+La **JET_ENUMCOLUMN** enumera los valores de columna de un registro cuando se usa la función [JetEnumerateColumns.](./jetenumeratecolumns-function.md) [JetEnumerateColumns](./jetenumeratecolumns-function.md) devuelve una matriz de **JET_ENUMCOLUMN** estructuras. La matriz se devuelve en memoria que se asigna mediante la devolución de llamada compatible con [el](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a esa API.
 
 ```cpp
     typedef struct {
@@ -52,7 +52,7 @@ La **JET_ENUMCOLUMN** enumera los valores de columna de un registro cuando se us
 
 **columnid**
 
-Identificador de columna enumerado.
+El identificador de columna que se enumeró.
 
 **Err**
 
@@ -65,14 +65,14 @@ Código de estado de columna que resulta de la enumeración de la columna.
 | <p>JET_errColumnNotFound</p> | <p>La columna descrita por el identificador de columna no existe en la tabla.</p> | 
 | <p>JET_wrnColumnNull</p> | <p>Todos los valores de esta columna son NULL.</p> | 
 | <p>JET_wrnColumnPresent</p> | <p>JET_bitEnumeratePresenceOnly se especificó y se habría devuelto al menos un valor de columna distinto de NULL para esta columna.</p> | 
-| <p>JET_wrnColumnSingleValue</p> | <p>JET_bitEnumerateCompressOutput se especificó y se ha devuelto exactamente un valor de columna distinto de NULL para esta columna. Como resultado, se ha devuelto la <strong>forma comprimida JET_ENUMCOLUMN</strong> . Consulte <strong>JET_ENUMCOLUMN</strong> para obtener más información.</p> | 
-| <p>JET_wrnColumnSkipped</p> | <p>El identificador de columna del <a href="gg269251(v=exchg.10).md">JET_ENUMCOLUMNID</a> estructura correspondiente a esta <strong>estructura JET_ENUMCOLUMN</strong> estructura era cero.</p> | 
+| <p>JET_wrnColumnSingleValue</p> | <p>JET_bitEnumerateCompressOutput se especificó y se ha devuelto exactamente un valor de columna distinto de NULL para esta columna. Como resultado, se ha devuelto la <strong>forma JET_ENUMCOLUMN</strong> comprimida de . Consulte <strong>JET_ENUMCOLUMN</strong> para obtener más información.</p> | 
+| <p>JET_wrnColumnSkipped</p> | <p>El identificador de columna del <a href="gg269251(v=exchg.10).md">JET_ENUMCOLUMNID</a> struct correspondiente a este <strong>JET_ENUMCOLUMN</strong> struct era cero.</p> | 
 
 
 
 **cEnumColumnValue**
 
-Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en la memoria que se asignó mediante la devolución de llamada compatible con [la](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Este búfer de salida se usa cuando el código de estado de la columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
@@ -80,7 +80,7 @@ Se devuelve si "err \! = JET_wrnColumnSingleValue".
 
 **rgEnumColumnValue**
 
-Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en la memoria que se asignó mediante la devolución de llamada compatible con [la](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Este búfer de salida se usa cuando el código de estado de la columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
@@ -90,9 +90,9 @@ Se devuelve si "err \! = JET_wrnColumnSingleValue".
 
 Valor de columna que se enumeró para la columna.
 
-El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+El búfer de salida se devuelve en la memoria que se asignó mediante la devolución de llamada compatible con [la](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Este búfer de salida solo se usa cuando el código de estado de la columna se JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Este búfer de salida solo se usa cuando el código de estado de la columna JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Se devuelve si "err == JET_wrnColumnSingleValue".
 
@@ -100,16 +100,20 @@ Se devuelve si "err == JET_wrnColumnSingleValue".
 
 Valor de columna que se enumeró para la columna.
 
-El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
+El búfer de salida se devuelve en la memoria que se asignó mediante la devolución de llamada compatible con [la](/cpp/c-runtime-library/reference/realloc?view=vs-2019) reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Este búfer de salida solo se usa cuando el código de estado de la columna se JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Este búfer de salida solo se usa cuando el código de estado de la columna JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Se devuelve si "err == JET_wrnColumnSingleValue".
 
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 
