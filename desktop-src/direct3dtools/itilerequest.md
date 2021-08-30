@@ -1,5 +1,5 @@
 ---
-description: Solicitud para que una textura en mosaico se escriba como un archivo DDS.
+description: Solicitar que una textura en mosaico se escriba como un archivo DDS.
 MS-HAID: vspixengine.ITileRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b0a5f31e68f53f316ea77f77f2ff778eb817e11c
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: d26692393a01ecf2fdea99033f1067cf2de0d329
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786171"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624731"
 ---
 # <a name="span-idvspixengineitilerequestspanitilerequest-interface"></a><span id="vspixengine.itilerequest"></span>Interfaz ITileRequest
 
-Solicitud para que una textura en mosaico se escriba como un archivo DDS.
+Solicitar que una textura en mosaico se escriba como un archivo DDS.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz ITileRequest** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITileRequest** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz ITileRequest** hereda de la [**interfaz IUnknown.**](/windows/desk
 
 La **interfaz ITileRequest** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/itilerequest-requestbuffertileasync-eventid-dword-bstr-uint-ibufferobjectdatacallback-ptr-dword-dword"><strong>RequestBufferTileAsync</strong></a></td><td ><p>Solicita obtener el contenido sin procesar de un icono.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/itilerequest-requesttexturetileasync-eventid-dword-uint-uint-uint-uint-bstr-itexturecallback-ptr-dword-dword"><strong>RequestTextureTileAsync</strong></a></td><td ><p>Solicita obtener el contenido de una textura en mosaico como . Archivo DDS (DirectDraw Surface).</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/itilerequest-requestbuffertileasync-eventid-dword-bstr-uint-ibufferobjectdatacallback-ptr-dword-dword"><strong>RequestBufferTileAsync</strong></a></td><td style="text-align: left;"><p>Solicita obtener el contenido sin procesar de un icono.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/itilerequest-requesttexturetileasync-eventid-dword-uint-uint-uint-uint-bstr-itexturecallback-ptr-dword-dword"><strong>RequestTextureTileAsync</strong></a></td><td style="text-align: left;"><p>Solicita obtener el contenido de una textura en mosaico como . Archivo DDS (DirectDraw Surface).</p></td></tr></tbody></table>
 
  
 

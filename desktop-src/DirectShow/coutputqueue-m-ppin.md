@@ -1,7 +1,7 @@
 ---
-description: Puntero a la interfaz IPin del PIN de entrada.
+description: Puntero a la interfaz IPin del pin de entrada.
 ms.assetid: caa36019-1d48-4c2d-9327-517f3a8d3941
-title: 'Miembro COutputQueue:: m_pPin (Outputq. h)'
+title: Miembro COutputQueue::m_pPin (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5764ec047849feeceae34f02b5598fbc37299609
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 904027c1a31ddc0cae3c718a6003098fec21cb681d18d17d02ed330f5158fd93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119909585"
 ---
-# <a name="coutputqueuem_ppin-member"></a>Miembro pPin COutputQueue:: m \_
+# <a name="coutputqueuem_ppin-member"></a>Miembro COutputQueue::m \_ pPin
 
-Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN de entrada.
+Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del pin de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ IPin * const m_pPin;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ IPin * const m_pPin;
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

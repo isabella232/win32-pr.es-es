@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e3e83786236a95cf2b0c4d77e26e6987334a5b00
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: ea962bca11466fae526150d970f2b4aeead53198
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986158"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465872"
 ---
 # <a name="jet_lgpos-structure"></a>JET_LGPOS estructura
 
@@ -56,11 +56,7 @@ Admite la infraestructura ese y no se puede usar desde el código.
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

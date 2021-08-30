@@ -1,7 +1,7 @@
 ---
-description: Contiene información detallada sobre una interfaz requerida por un cliente RPC.
+description: Contiene información detallada sobre una interfaz que requiere un cliente RPC.
 ms.assetid: 92e734f3-eacb-44dc-9016-88dc6e9f04b6
-title: INTF_ENTRY estructura (wzcsapi. h)
+title: INTF_ENTRY estructura (Wzcsapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - wzcsapi.h
-ms.openlocfilehash: e08efc8c95374f268efe21f963357e9c4f34ae35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e93a9a0214e9ca46e6ae6872e0d341cd703ed9331622dfbc27bd5a949ece61c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801315"
 ---
-# <a name="intf_entry-structure"></a>\_Estructura de entrada Intf
+# <a name="intf_entry-structure"></a>Estructura INTF \_ ENTRY
 
-\[**Intf \_ La entrada** ya no se admite en Windows Vista y Windows Server 2008. En su lugar, use la [API WiFi nativa](native-wifi-reference.md), que proporciona una funcionalidad similar. Para obtener más información, consulte [acerca de la API WiFi nativa](about-the-native-wifi-api.md).\]
+\[**INTF \_ ENTRY** ya no se admite a partir de Windows Vista y Windows Server 2008. En su lugar, use [la API Wi-Fi nativa,](native-wifi-reference.md)que proporciona una funcionalidad similar. Para obtener más información, vea [Acerca de la API Wi-Fi nativa.](about-the-native-wifi-api.md)\]
 
-Contiene información detallada sobre una interfaz requerida por un cliente RPC.
+Contiene información detallada sobre una interfaz que requiere un cliente RPC.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,14 +61,14 @@ typedef struct {
 **wszGuid**
 </dt> <dd>
 
-Puntero al GUID de la interfaz que se representa como una cadena Unicode en el siguiente formato: "{xxxxxxxx-XXXX-XXXX-XXXX-XXXXXXXXXXXX}".
+Puntero al GUID de interfaz representado como una cadena Unicode con el siguiente formato: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}".
 
 </dd> <dt>
 
 **wszDescr**
 </dt> <dd>
 
-Un puntero a una cadena que contiene la descripción de la interfaz recuperada por el servicio de configuración inalámbrica rápida (WZCSVC).
+Puntero a una cadena que contiene la descripción de la interfaz recuperada por el servicio configuración inalámbrica cero (WZCSVC).
 
 </dd> <dt>
 
@@ -82,15 +82,15 @@ Reservado para uso interno.
 **ulMediaState**
 </dt> <dd>
 
-Estado actual de conexión multimedia de NDIS para la interfaz. En la siguiente tabla se muestran los valores posibles.
+Estado actual de conexión de medios NDIS para la interfaz. En la siguiente tabla se muestran los valores posibles.
 
 
 
 | Valor                                                                                                                                                                                                                                                  | Significado                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| <span id="MEDIA_STATE_CONNECTED_"></span><span id="media_state_connected_"></span><dl> <dt> **\_ Estado multimedia \_ conectado**</dt> <dt>1</dt> </dl>       | El medio está conectado.<br/>     |
-| <span id="MEDIA_STATE_DISCONNECTED"></span><span id="media_state_disconnected"></span><dl> <dt>**Medios \_ de ESTADO \_ desconectado**</dt> <dt>0</dt> </dl> | El medio está desconectado.<br/>  |
-| <span id="MEDIA_STATE_UNKNOWN"></span><span id="media_state_unknown"></span><dl> <dt>**Medios \_ de ESTADO \_ desconocido**</dt> <dt>-1</dt> </dl>               | No se conoce el estado del medio.<br/> |
+| <span id="MEDIA_STATE_CONNECTED_"></span><span id="media_state_connected_"></span><dl> <dt> **ESTADO \_ MULTIMEDIA \_ CONECTADO**</dt> <dt>1</dt> </dl>       | El medio está conectado.<br/>     |
+| <span id="MEDIA_STATE_DISCONNECTED"></span><span id="media_state_disconnected"></span><dl> <dt>**MEDIA \_ ESTADO \_ DESCONECTADO**</dt> <dt>0</dt> </dl> | El medio está desconectado.<br/>  |
+| <span id="MEDIA_STATE_UNKNOWN"></span><span id="media_state_unknown"></span><dl> <dt>**MEDIA \_ ESTADO \_ DESCONOCIDO**</dt> <dt>-1</dt> </dl>               | Se desconoce el estado del medio.<br/> |
 
 
 
@@ -101,44 +101,44 @@ Estado actual de conexión multimedia de NDIS para la interfaz. En la siguiente 
 **ulMediaType**
 </dt> <dd>
 
-Los tipos de medios NDIS que usa actualmente la NIC. Cuando se consulta, el valor de este miembro es **NdisMedium802 \_ 3** , tal y como se define en el archivo de encabezado *Ndispnp. h* .
+Los tipos de medios NDIS que usa actualmente la NIC. Cuando se consulta, el valor de este miembro es **NdisMedium802 \_ 3,** tal como se define en el archivo de encabezado *Ndispnp.h.*
 
 </dd> <dt>
 
 **ulPhysicalMediaType**
 </dt> <dd>
 
-El tipo de medio NDIS para la interfaz. Cuando se consulta, el valor de este miembro es **NdisPhysicalMediumWirelessLan** , tal y como se define en el archivo de encabezado *Ndispnp. h* .
+Tipo de medio NDIS para la interfaz. Cuando se consulta, el valor de este miembro es **NdisPhysicalMediumWirelessLan,** tal como se define en el archivo de encabezado *Ndispnp.h.*
 
 </dd> <dt>
 
 **nInfraMode**
 </dt> <dd>
 
-El modo de infraestructura 802,11 actual establecido en la interfaz.
+El modo de infraestructura 802.11 actual establecido en la interfaz.
 
 </dd> <dt>
 
 **nAuthMode**
 </dt> <dd>
 
-El modo de autenticación 802,11 actual establecido en la interfaz.
+El modo de autenticación 802.11 actual establecido en la interfaz .
 
-En la tabla siguiente se muestran los posibles valores para el parámetro basado en la enumeración del **\_ modo de autenticación NDIS 802 \_ 11 \_ \_** definida en el archivo de encabezado *NtDDNdis. h* .
+En la tabla siguiente se muestran los valores posibles para el parámetro basándose en la enumeración AUTHENTICATION MODE de **NDIS \_ 802 \_ 11 \_ \_** definida en el archivo de encabezado *NtDDNdis.h.*
 
 
 
-| Value                                                                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                                                                                                 |
+| Valor                                                                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                                                                                                 |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Ndis802_11AuthModeOpen"></span><span id="ndis802_11authmodeopen"></span><span id="NDIS802_11AUTHMODEOPEN"></span><dl> <dt>**Ndis802 \_ 11AuthModeOpen**</dt> <dt>1</dt> </dl>                         | IEEE 802,11 Open System Authentication.<br/>                                                                                                                                                                                                      |
-| <span id="Ndis802_11AuthModeShared"></span><span id="ndis802_11authmodeshared"></span><span id="NDIS802_11AUTHMODESHARED"></span><dl> <dt>**Ndis802 \_ 11AuthModeShared**</dt> <dt>2</dt> </dl>                 | Autenticación compartida IEEE 802,11 que usa una clave de privacidad equivalente por cable (WEP) previamente compartida. <br/>                                                                                                                                                |
-| <span id="Ndis802_11AuthModeAutoSwitch"></span><span id="ndis802_11authmodeautoswitch"></span><span id="NDIS802_11AUTHMODEAUTOSWITCH"></span><dl> <dt>**Ndis802 \_ 11AuthModeAutoSwitch**</dt> <dt>3</dt> </dl> | Modo de cambio automático. Al usar el modo de conmutador automático, la tarjeta de interfaz de red inalámbrica (NIC) intenta en primer lugar el modo de autenticación compartida. Si se produce un error en el modo compartido, la NIC intenta usar el modo de autenticación abierta. <br/>                                    |
-| <span id="Ndis802_11AuthModeWPA"></span><span id="ndis802_11authmodewpa"></span><span id="NDIS802_11AUTHMODEWPA"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPA**</dt> <dt>4</dt> </dl>                             | Seguridad de acceso protegido inalámbrico (WPA). La autenticación se realiza entre el solicitante, el autenticador y el servidor de autenticación a través de IEEE 802.1 X. Las claves de cifrado son dinámicas y se derivan a través del proceso de autenticación. <br/>     |
-| <span id="Ndis802_11AuthModeWPAPSK"></span><span id="ndis802_11authmodewpapsk"></span><span id="NDIS802_11AUTHMODEWPAPSK"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPAPSK**</dt> <dt>5</dt> </dl>                 | Seguridad de WPA mediante una clave previamente compartida. La autenticación se realiza entre el solicitante y el autenticador a través de IEEE 802.1 X. Las claves de cifrado son dinámicas y se derivan de la clave previamente compartida utilizada por el solicitante y el autenticador. <br/> |
-| <span id="Ndis802_11AuthModeWPANone"></span><span id="ndis802_11authmodewpanone"></span><span id="NDIS802_11AUTHMODEWPANONE"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPANone**</dt> <dt>6</dt> </dl>             | Seguridad de WPA. La autenticación se realiza mediante una clave previamente compartida sin la autenticación IEEE 802.1 X. Las claves de cifrado son estáticas y se derivan de la clave previamente compartida. Este modo solo es aplicable a los tipos de red ad hoc. <br/>             |
-| <span id="Ndis802_11AuthModeWPA2"></span><span id="ndis802_11authmodewpa2"></span><span id="NDIS802_11AUTHMODEWPA2"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPA2**</dt> <dt>7</dt> </dl>                         | Seguridad de WPA2. La autenticación se realiza entre el solicitante, el autenticador y el servidor de autenticación a través de IEEE 802.1 X. Las claves de cifrado son dinámicas y se derivan a través del proceso de autenticación. <br/>                               |
-| <span id="Ndis802_11AuthModeWPA2PSK"></span><span id="ndis802_11authmodewpa2psk"></span><span id="NDIS802_11AUTHMODEWPA2PSK"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPA2PSK**</dt> <dt>8</dt> </dl>             | Especifica la seguridad de WPA2. La autenticación se realiza entre el solicitante y el autenticador a través de IEEE 802 1X. Las claves de cifrado son dinámicas y se derivan de la clave previamente compartida utilizada por el solicitante y el autenticador. <br/>             |
-| <span id="Ndis802_11AuthModeMax"></span><span id="ndis802_11authmodemax"></span><span id="NDIS802_11AUTHMODEMAX"></span><dl> <dt>**Ndis802 \_ 11AuthModeMax**</dt> <dt>9</dt> </dl>                             | El valor máximo posible para el valor de enumeración del **\_ modo de autenticación NDIS 802 \_ 11 \_ \_** . Este no es un valor válido para el modo de autenticación. <br/>                                                                                        |
+| <span id="Ndis802_11AuthModeOpen"></span><span id="ndis802_11authmodeopen"></span><span id="NDIS802_11AUTHMODEOPEN"></span><dl> <dt>**Ndis802 \_ 11AuthModeAbrir**</dt> <dt>1</dt> </dl>                         | Autenticación del sistema abierto IEEE 802.11.<br/>                                                                                                                                                                                                      |
+| <span id="Ndis802_11AuthModeShared"></span><span id="ndis802_11authmodeshared"></span><span id="NDIS802_11AUTHMODESHARED"></span><dl> <dt>**Ndis802 \_ 11AuthModeShared**</dt> <dt>2</dt> </dl>                 | Autenticación compartida IEEE 802.11 que usa una clave de privacidad equivalente cableada (WEP) previamente compartida. <br/>                                                                                                                                                |
+| <span id="Ndis802_11AuthModeAutoSwitch"></span><span id="ndis802_11authmodeautoswitch"></span><span id="NDIS802_11AUTHMODEAUTOSWITCH"></span><dl> <dt>**Ndis802 \_ 11AuthModeAutoSwitch**</dt> <dt>3</dt> </dl> | Modo de conmutación automática. Cuando se usa el modo de conmutación automática, la tarjeta de interfaz de red inalámbrica (NIC) intenta primero el modo de autenticación compartida. Si se produce un error en el modo compartido, la NIC intenta usar el modo de autenticación abierto. <br/>                                    |
+| <span id="Ndis802_11AuthModeWPA"></span><span id="ndis802_11authmodewpa"></span><span id="NDIS802_11AUTHMODEWPA"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPA**</dt> <dt>4</dt> </dl>                             | Seguridad de acceso protegido inalámbrico (WPA). La autenticación se realiza entre el servidor de suplicación, autenticador y autenticación a través de IEEE 802.1X. Las claves de cifrado son dinámicas y se derivan a través del proceso de autenticación. <br/>     |
+| <span id="Ndis802_11AuthModeWPAPSK"></span><span id="ndis802_11authmodewpapsk"></span><span id="NDIS802_11AUTHMODEWPAPSK"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPAPSK**</dt> <dt>5</dt> </dl>                 | Seguridad wpa mediante una clave pre shared. La autenticación se realiza entre el suplicante y el autenticador a través de IEEE 802.1X. Las claves de cifrado son dinámicas y se derivan a través de la clave previamente compartida usada por el suplicante y el autenticador. <br/> |
+| <span id="Ndis802_11AuthModeWPANone"></span><span id="ndis802_11authmodewpanone"></span><span id="NDIS802_11AUTHMODEWPANONE"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPANone**</dt> <dt>6</dt> </dl>             | Seguridad de WPA. La autenticación se realiza mediante una clave previamente compartida sin autenticación IEEE 802.1X. Las claves de cifrado son estáticas y se derivan a través de la clave previamente compartida. Este modo solo es aplicable a los tipos de red ad hoc. <br/>             |
+| <span id="Ndis802_11AuthModeWPA2"></span><span id="ndis802_11authmodewpa2"></span><span id="NDIS802_11AUTHMODEWPA2"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPA2**</dt> <dt>7</dt> </dl>                         | Seguridad de WPA2. La autenticación se realiza entre el servidor de suplicación, autenticador y autenticación a través de IEEE 802.1X. Las claves de cifrado son dinámicas y se derivan a través del proceso de autenticación. <br/>                               |
+| <span id="Ndis802_11AuthModeWPA2PSK"></span><span id="ndis802_11authmodewpa2psk"></span><span id="NDIS802_11AUTHMODEWPA2PSK"></span><dl> <dt>**Ndis802 \_ 11AuthModeWPA2PSK**</dt> <dt>8</dt> </dl>             | Especifica la seguridad wpa2. La autenticación se realiza entre el suplicante y el autenticador a través de IEEE 802 1X. Las claves de cifrado son dinámicas y se derivan a través de la clave previamente compartida usada por el suplicante y el autenticador. <br/>             |
+| <span id="Ndis802_11AuthModeMax"></span><span id="ndis802_11authmodemax"></span><span id="NDIS802_11AUTHMODEMAX"></span><dl> <dt>**Ndis802 \_ 11AuthModeMax**</dt> <dt>9</dt> </dl>                             | Valor máximo posible para el valor de **enumeración NDIS \_ 802 \_ 11 \_ AUTHENTICATION \_ MODE.** Este no es un valor legal para el modo de autenticación. <br/>                                                                                        |
 
 
 
@@ -149,28 +149,28 @@ En la tabla siguiente se muestran los posibles valores para el parámetro basado
 **nWepStatus**
 </dt> <dd>
 
-El modo de cifrado de 802,11 actual establecido en la interfaz.
+El modo de cifrado 802.11 actual establecido en la interfaz .
 
 </dd> <dt>
 
 **dwCtlFlags**
 </dt> <dd>
 
-Un valor de máscara de máscara de marcas de control que indica cómo funciona WZCSVC en la interfaz.
+Valor de máscara de bits de marcas de control que indican cómo funciona WZCSVC en la interfaz.
 
-En la tabla siguiente se muestran los posibles valores de bit.
+En la tabla siguiente se muestran los valores de bits posibles.
 
 
 
 | Value                                                                                                                                                                                                                                 | Significado                                                                                                                                                                                                                                                                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="INTFCTL_CM_MASK"></span><span id="intfctl_cm_mask"></span><dl> <dt>**INTFCTL \_ \_Máscara de cm**</dt> <dt>0x0007</dt> </dl>      | Máscara de red para el modo de filtro de red. INTFCTL \_ cm \_ Mask & dwCtlFlags generan un valor del tipo \_ infraestructura de red NDIS \_ 802 \_ 11 \_ . El valor resultante indica si WZCSVC solo se conecta a redes de infraestructura, redes ad hoc o a ambos tipos de redes.<br/> |
-| <span id="INTFCTL_ENABLED"></span><span id="intfctl_enabled"></span><dl> <dt>**INTFCTL \_ HABILITAdo**</dt> <dt>0x8000</dt> </dl>       | Indica si WZCSVC debe configurar la interfaz.<br/>                                                                                                                                                                                                                         |
-| <span id="INTFCTL_FALLBACK"></span><span id="intfctl_fallback"></span><dl> <dt>**INTFCTL \_**</dt> <dt>0X4000</dt> de reserva </dl>    | Si una red preferida no está disponible, este valor indica si WZCSVC debe configurar automáticamente la NIC para asociar a cualquier red disponible.<br/>                                                                                                                       |
-| <span id="INTFCTL_OIDSSUPP_"></span><span id="intfctl_oidssupp_"></span><dl> <dt> **INTFCTL \_ OIDSSUPP**</dt> <dt>0x2000</dt> </dl> | Indica si el controlador NIC admite todos los OID 802,11 requeridos por WZCSVC para funcionar.<br/>                                                                                                                                                                                    |
-| <span id="INTFCTL_VOLATILE_"></span><span id="intfctl_volatile_"></span><dl> <dt> **INTFCTL \_ volatile**</dt> <dt>0x1000</dt> </dl> | Indica si los parámetros de servicio de esta interfaz se deben conservar en el registro. <br/> Si se establece este valor, estos parámetros son volátiles y no deben conservarse en el registro.<br/>                                                                 |
-| <span id="INTFCTL_POLICY_"></span><span id="intfctl_policy_"></span><dl> <dt>0x0800</dt> de <dt> **\_ Directiva de INTFCTL**</dt> </dl>       | Indica si una directiva de grupo inserta los parámetros de servicio para esta interfaz.<br/> Si se establece este valor, la Directiva de grupo inserta los parámetros del servicio en el equipo local.<br/>                                                                         |
-| <span id="INTFCTL_8021XSUPP"></span><span id="intfctl_8021xsupp"></span><dl> <dt>**INTFCTL \_ 8021XSUPP**</dt> <dt>0x1000</dt> </dl> | Indica si la compatibilidad con 802.1 X está habilitada.<br/>                                                                                                                                                                                                                                     |
+| <span id="INTFCTL_CM_MASK"></span><span id="intfctl_cm_mask"></span><dl> <dt>**INTFCTL \_ Máscara \_ de CM**</dt> <dt>0x0007</dt> </dl>      | Máscara de bits para el modo de filtro de red. INTFCTL CM MASK & dwCtlFlags tiene como resultado un valor del tipo \_ \_ \_ NDIS 802 \_ 11 \_ NETWORK \_ INFRASTRUCTURE. El valor resultante indica si WZCSVC solo se conecta a redes de infraestructura, redes addhoc o a ambos tipos de redes.<br/> |
+| <span id="INTFCTL_ENABLED"></span><span id="intfctl_enabled"></span><dl> <dt>**INTFCTL \_ HABILITADO**</dt> <dt>0x8000</dt> </dl>       | Indica si WZCSVC debe configurar la interfaz.<br/>                                                                                                                                                                                                                         |
+| <span id="INTFCTL_FALLBACK"></span><span id="intfctl_fallback"></span><dl> <dt>**INTFCTL \_ FallBACK**</dt> <dt>0x4000</dt> </dl>    | Si una red preferida no está disponible, este valor indica si WZCSVC debe configurar automáticamente la NIC para asociarla a cualquier red disponible.<br/>                                                                                                                       |
+| <span id="INTFCTL_OIDSSUPP_"></span><span id="intfctl_oidssupp_"></span><dl> <dt> **INTFCTL \_ OIDSSUPP**</dt> <dt>0x2000</dt> </dl> | Indica si el controlador NIC admite todos los 802.11 OID requeridos por WZCSVC para funcionar.<br/>                                                                                                                                                                                    |
+| <span id="INTFCTL_VOLATILE_"></span><span id="intfctl_volatile_"></span><dl> <dt> **InTFCTL \_ VOLATILE**</dt> <dt>0x1000</dt> </dl> | Indica si los parámetros de servicio para esta interfaz deben conservarse en el Registro. <br/> Si se establece este valor, estos parámetros son volátiles y no deben conservarse en el Registro.<br/>                                                                 |
+| <span id="INTFCTL_POLICY_"></span><span id="intfctl_policy_"></span><dl> <dt> **Directiva de \_ INTFCTL**</dt> <dt>0x0800</dt> </dl>       | Indica si una directiva de grupo inserta los parámetros de servicio para esta interfaz.<br/> Si se establece este valor, la directiva de grupo inserta los parámetros de servicio en el equipo local.<br/>                                                                         |
+| <span id="INTFCTL_8021XSUPP"></span><span id="intfctl_8021xsupp"></span><dl> <dt>**INTFCTL \_ 8021XSUPP**</dt> <dt>0x1000</dt> </dl> | Indica si está habilitada la compatibilidad con 802.1X.<br/>                                                                                                                                                                                                                                     |
 
 
 
@@ -183,15 +183,15 @@ En la tabla siguiente se muestran los posibles valores de bit.
 
 Máscara de bits de marcas dinámicas que controlan el comportamiento dinámico (no persistente y no estático) en la interfaz.
 
-Estos bits son útiles para desencadenar cambios temporales y dinámicos en la forma en que el WZCSVC actúa en la interfaz. Ninguno de estos bits se conserva en el registro, por lo que la configuración no sobrevive al reinicio del sistema o a una secuencia de deshabilitación y habilitación de dispositivos.
+Estos bits son útiles para desencadenar cambios dinámicos y temporales en la forma en que WZCSVC actúa en la interfaz. Ninguno de estos bits se conserva en el Registro, por lo que la configuración no sobrevivirá a un reinicio del sistema o a que un dispositivo deshabilite y habilite la secuencia.
 
-En la tabla siguiente se muestran los posibles valores de bit.
+En la tabla siguiente se muestran los posibles valores de bits.
 
 
 
-| Value                                                                                                                                                                                                                            | Significado                                                                                                                                            |
+| Valor                                                                                                                                                                                                                            | Significado                                                                                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="INTFDYN_NOSCAN"></span><span id="intfdyn_noscan"></span><dl> <dt>**INTFDYN \_ Noscan**</dt> <dt>0x00000001</dt> </dl> | Indica que WZCSVC no debe solicitar que la interfaz realice un examen activo, sino que use los valores almacenados en caché del controlador NIC.<br/> |
+| <span id="INTFDYN_NOSCAN"></span><span id="intfdyn_noscan"></span><dl> <dt>**INTFDYN \_ Noscan**</dt> <dt>0x00000001</dt> </dl> | Indica que WZCSVC no debe solicitar que la interfaz realice un examen activo, sino que use los valores almacenados en caché en el controlador NIC.<br/> |
 
 
 
@@ -202,15 +202,15 @@ En la tabla siguiente se muestran los posibles valores de bit.
 **dwCapabilities**
 </dt> <dd>
 
-Especifica las capacidades del controlador.
+Especifica las funcionalidades del controlador.
 
 
 
-| Value                                                                                                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Valor                                                                                                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="INTFCAP_MAX_CIPHER_MASK"></span><span id="intfcap_max_cipher_mask"></span><dl> <dt>**INTFCAP \_ \_ \_ Máscara de cifrado máxima**</dt> <dt>0x000000ff</dt> </dl> | Los bits de orden inferior de este miembro se utilizan para indicar el cifrado máximo que se admite. Los valores posibles son algunos de los valores de enumeración definidos en la estructura de **\_ \_ \_ \_ Estado WEP 802 11 de NDIS** en el archivo de encabezado *NtDDNdis. h* incluido en el Windows SDK.<br/> El valor de 11Encryption1Enabled de Ndis802 \_ (2) indica que se admite WEP. TKIP y AES no se admiten, y es posible que una clave de transmisión esté disponible o no. <br/> El valor de 11Encryption2Enabled de Ndis802 \_ (9) indica que se admiten TKIP y WEP. No se admite AES y está disponible una clave de transmisión. <br/> El valor de 11Encryption3Enabled de Ndis802 \_ (11) indica que se admiten AES, TKIP y WEP, y que hay disponible una clave de transmisión. <br/> Ndis802 \_ 11EncryptionNotSupported (8) indica que no se admite la clave WEP. <br/> |
-| <span id="INTFCAP_SSN"></span><span id="intfcap_ssn"></span><dl> <dt>**INTFCAP \_ SSN**</dt> <dt>0x00000100</dt> </dl>                                       | Indica compatibilidad con la red segura simple (SSN), que es un subconjunto de 802.11 i. <br/> SSN cambia la clave de cifrado periódicamente, en lugar de la estándar WEP (privacidad equivalente por cable), que usa una clave estática. Para que SSN funcione, el cifrado máximo admitido debe ser al menos TKIP. SSN fue desarrollado por un consorcio de proveedores en 2002 como un enfoque provisional para mejorar la seguridad de LAN inalámbrica mientras se completaba la norma IEEE 802.11 i.<br/>                                                                                                                                                                                                                                                                                                                                                                                            |
-| <span id="INTFCAP_80211I"></span><span id="intfcap_80211i"></span><dl> <dt>**INTFCAP \_ 80211I**</dt> <dt>0x00000200</dt> </dl>                              | Indica compatibilidad con el estándar IEEE 802.11 i.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| <span id="INTFCAP_MAX_CIPHER_MASK"></span><span id="intfcap_max_cipher_mask"></span><dl> <dt>**INTFCAP \_ MAX \_ CIPHER \_ MASK**</dt> <dt>0x000000ff</dt> </dl> | Los bits de orden inferior de este miembro se usan para indicar el cifrado máximo admitido. Los valores posibles son algunos de los valores de enumeración definidos en la estructura **NDIS \_ 802 \_ 11 \_ WEP \_ STATUS** en el archivo de encabezado *NtDDNdis.h* incluido en el SDK de Windows.<br/> El valor Ndis802 \_ 11Encryption1Enabled (2) indica que se admite WEP. No se admiten TKIP y AES, y una clave de transmisión puede estar disponible o no. <br/> El valor Ndis802 \_ 11Encryption2Enabled (9) indica que se admiten TKIP y WEP. No se admite AES y hay disponible una clave de transmisión. <br/> El valor Ndis802 \_ 11Encryption3Enabled (11) indica que se admiten AES, TKIP y WEP, y hay disponible una clave de transmisión. <br/> Ndis802 11EncryptionNotSupported (8) indica que no se admite la clave \_ WEP. <br/> |
+| <span id="INTFCAP_SSN"></span><span id="intfcap_ssn"></span><dl> <dt>**INTFCAP \_ SSN**</dt> <dt>0x00000100</dt> </dl>                                       | Indica la compatibilidad con Simple Secure Network (SSN), que es un subconjunto de 802.11i. <br/> SSN cambia la clave de cifrado periódicamente, en lugar del estándar WEP (Wired Equivalent Privacy), que usa una clave estática. Para que SSN funcione, el cifrado máximo admitido debe ser al menos TKIP. SSN fue desarrollado por un consorcio de proveedores en 2002 como un enfoque provisional para mejorar la seguridad de LAN inalámbrica mientras se completaba el estándar IEEE 802.11i.<br/>                                                                                                                                                                                                                                                                                                                                                                                            |
+| <span id="INTFCAP_80211I"></span><span id="intfcap_80211i"></span><dl> <dt>**INTFCAP \_ 80211I**</dt> <dt>0x00000200</dt> </dl>                              | Indica la compatibilidad con el estándar IEEE 802.11i.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
 
 
@@ -221,40 +221,40 @@ Especifica las capacidades del controlador.
 **rdNicCapabilities**
 </dt> <dd>
 
-Un conjunto de funcionalidades para 802.11 i.
+Un conjunto de funcionalidades para 802.11i.
 
-La función [**WZCQueryInterface**](wzcqueryinterface.md) devuelve los datos de **rdNicCapabilities** cuando se llama con la marca de **\_ funcionalidades Intf** que se pasa en el parámetro *dwInflags* . Si la llamada de función se realiza correctamente, el miembro **pdata** de la estructura de **\_ datos sin procesar** contiene una estructura de **capacidad de Intf \_ 80211 \_** .
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdNicCapabilities** cuando se llama a con la marca **CAPABILITIES de INTF \_** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el **miembro pData** de la **estructura RAW \_ DATA** contiene una estructura **CAPABILITY INTF \_ 80211. \_**
 
 </dd> <dt>
 
 **rdSSID**
 </dt> <dd>
 
-Datos binarios que contienen el SSID 802,11 actualmente configurado en la interfaz.
+Datos binarios que contienen el SSID 802.11 configurado actualmente en la interfaz.
 
-La función [**WZCQueryInterface**](wzcqueryinterface.md) devuelve los datos de **rdSSID** cuando se llama con la marca **Intf \_ SSID** pasada en el parámetro *dwInflags* . Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura de **\_ datos sin procesar** contiene el miembro **SsidLength** de una estructura de **SSID de NDIS \_ 802 \_ \_ 11** y el miembro **pdata** de la estructura de **\_ datos sin procesar** contiene el miembro **SSID** de una estructura de **\_ \_ \_ SSID 802 11 de NDIS** .
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdSSID** cuando se llama con la marca **INTF \_ SSID** pasada en el *parámetro dwInflags.* Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene el miembro **SsidLength** de una estructura **\_ \_ \_ SSID NDIS 802 11** y el miembro **pData** de la estructura **RAW \_ DATA** contiene el miembro **Ssid** de una estructura **\_ \_ \_ SSID NDIS 802 11.**
 
-La estructura de **\_ \_ \_ SSID NDIS 802 11** se define en el archivo de encabezado *Ntddndis. h* .
+La **estructura \_ \_ \_ SSID NDIS 802 11** se define en el archivo de encabezado *Ntddndis.h.*
 
 </dd> <dt>
 
 **rdBSSID**
 </dt> <dd>
 
-Datos binarios que contienen el valor de BSSID 802,11 configurado en la interfaz.
+Datos binarios que contienen el BSSID 802.11 configurado en la interfaz.
 
-La función [**WZCQueryInterface**](wzcqueryinterface.md) devuelve los datos de **rdBSSID** cuando se llama con la marca **\_ BSSID Intf** pasada en el parámetro *dwInflags* . Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura de **\_ datos sin procesar** contiene el tamaño de una estructura de **\_ \_ \_ \_ direcciones MAC NDIS 802 11** y el miembro **pdata** de la estructura de **\_ datos sin procesar** contiene la estructura de **\_ \_ \_ \_ dirección Mac de NDIS 802 11** .
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdBSSID** cuando se llama con la marca **\_ BSSID de INTF** pasada en el *parámetro dwInflags.* Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene el tamaño de una estructura **NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS** y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura **NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS.**
 
-La estructura de **\_ \_ \_ \_ direcciones MAC NDIS 802 11** se define en el archivo de encabezado *Ntddndis. h* .
+La **estructura NDIS \_ 802 \_ 11 \_ MAC \_ ADDRESS** se define en el archivo de encabezado *Ntddndis.h.*
 
 </dd> <dt>
 
 **rdBSSIDList**
 </dt> <dd>
 
-Datos binarios que contienen la lista de BSSIDs que el WZCSVC recuperó por última vez.
+Datos binarios que contienen la lista de SSID que WZCSVC recuperó por última vez.
 
-La función [**WZCQueryInterface**](wzcqueryinterface.md) devuelve los datos de **rdBSSIDList** cuando se llama con la marca **Intf \_ BSSIDLIST** pasada en el parámetro *dwInflags* . Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura de **\_ datos sin procesar** contiene la longitud del búfer con los datos devueltos y el miembro **pdata** de la estructura de **\_ datos sin procesar** contiene la estructura de la **lista de configuración de WZC \_ 802 \_ 11 \_ \_** .
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdBSSIDList** cuando se llama a con la marca **\_ INTF BSSIDLIST** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene la longitud del búfer con los datos devueltos y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura CONFIG LIST de **WZC \_ 802 \_ \_ \_ 11.**
 
 </dd> <dt>
 
@@ -263,9 +263,9 @@ La función [**WZCQueryInterface**](wzcqueryinterface.md) devuelve los datos de 
 
 Datos binarios que contienen la lista de redes preferidas configuradas para esta interfaz.
 
-La función [**WZCQueryInterface**](wzcqueryinterface.md) devuelve los datos de **rdStSSIDList** cuando se llama con la marca **Intf \_ PREFLIST** pasada en el parámetro *dwInflags* . Si la llamada de función se realiza correctamente, el miembro **dwDataLen** de la estructura de **\_ datos sin procesar** contiene la longitud del búfer con los datos devueltos y el miembro **pdata** de la estructura de **\_ datos sin procesar** contiene la estructura de la **lista de configuración de WZC \_ 802 \_ 11 \_ \_** .
+La [**función WZCQueryInterface**](wzcqueryinterface.md) devuelve datos **rdStSSIDList** cuando se llama a con la marca **\_ PREFLIST de INTF** pasada en el *parámetro dwInflags.* Si la llamada a la función se realiza correctamente, el miembro **dwDataLen** de la estructura **RAW \_ DATA** contiene la longitud del búfer con los datos devueltos y el miembro **pData** de la estructura **RAW \_ DATA** contiene la estructura CONFIG LIST de **WZC \_ 802 \_ \_ \_ 11.**
 
-Si una de las redes preferidas está conectada actualmente, el miembro **dwCtlFlags** de la estructura de **configuración de \_ WLAN \_ de WZC** para la red tendrá establecido el bit **WZCCTL \_ media \_ Connected** (0x0400).
+Si una de las redes preferidas está conectada actualmente, el miembro **dwCtlFlags** de la estructura **\_ WZC WLAN \_ CONFIG** de la red tendrá el conjunto de bits **WZCCTL \_ MEDIA \_ CONNECTED** (0x0400).
 
 </dd> <dt>
 
@@ -276,11 +276,11 @@ Datos binarios usados con otras marcas de control, al establecer parámetros adi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las funciones [**WZCQueryInterface**](wzcqueryinterface.md) y [**WZCRefreshInterface**](wzcrefreshinterface.md) usan la estructura de **\_ entrada Intf** .
+Las funciones [**WZCQueryInterface**](wzcqueryinterface.md) y [**WZCRefreshInterface**](wzcrefreshinterface.md) usan la estructura **INTF \_ ENTRY.**
 
-La estructura de **\_ datos sin procesar** se define de la siguiente manera:
+La **estructura \_ RAW DATA** se define de la siguiente manera:
 
 
 ```C++
@@ -293,10 +293,10 @@ typedef struct
 
 
 
-El miembro *pdata* apunta a datos binarios. *DwDataLen* indica el número de bytes señalado por *pdata*.
+El *miembro pData* apunta a datos binarios. *dwDataLen indica* el número de bytes a los que apunta *pData.*
 
 > [!Note]  
-> El archivo de encabezado *wzcsapi. h* no está disponible en el Windows SDK.
+> El *archivo de encabezado Wzcsapi.h* no está disponible en Windows SDK.
 
  
 
@@ -304,13 +304,13 @@ El miembro *pdata* apunta a datos binarios. *DwDataLen* indica el número de byt
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                 |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP con SP3<br/>                                                       |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Wzcsapi. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl> |
 
 
 

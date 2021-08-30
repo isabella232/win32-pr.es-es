@@ -1,34 +1,34 @@
 ---
-title: Mensajes de control de buscapersonas
-description: Mensajes de control de buscapersonas
+title: Mensajes de control de paginación
+description: Mensajes de control de paginación
 ms.assetid: 9f0f9f7c-49c5-4c44-9c0a-692a62383550
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33689132216ac96899339aa482c3f26c7f69a0d5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: baf20a4322dc8bf51ec179c3136a3efb3c2a55a871d67c3663be746581e49407
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119970905"
 ---
-# <a name="pager-control-messages"></a>Mensajes de control de buscapersonas
+# <a name="pager-control-messages"></a>Mensajes de control de paginación
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**\_FORWARDMOUSE PGM**](pgm-forwardmouse.md)
--   [**\_GETBKCOLOR PGM**](pgm-getbkcolor.md)
--   [**\_GETBORDER PGM**](pgm-getborder.md)
--   [**\_GETBUTTONSIZE PGM**](pgm-getbuttonsize.md)
--   [**\_GETBUTTONSTATE PGM**](pgm-getbuttonstate.md)
--   [**\_GETDROPTARGET PGM**](pgm-getdroptarget.md)
--   [**\_GETPOS PGM**](pgm-getpos.md)
--   [**\_RECALCSIZE PGM**](pgm-recalcsize.md)
--   [**\_SETBKCOLOR PGM**](pgm-setbkcolor.md)
--   [**\_SETBORDER PGM**](pgm-setborder.md)
--   [**\_SETBUTTONSIZE PGM**](pgm-setbuttonsize.md)
--   [**\_SETCHILD PGM**](pgm-setchild.md)
--   [**\_SETPOS PGM**](pgm-setpos.md)
--   [**\_SETSCROLLINFO PGM**](pgm-setscrollinfo.md)
+-   [**PGM \_ FORWARDMOUSE**](pgm-forwardmouse.md)
+-   [**PGM \_ GETBKCOLOR**](pgm-getbkcolor.md)
+-   [**PGM \_ GETBORDER**](pgm-getborder.md)
+-   [**PGM \_ GETBUTTONSIZE**](pgm-getbuttonsize.md)
+-   [**PGM \_ GETBUTTONSTATE**](pgm-getbuttonstate.md)
+-   [**PGM \_ GETDROPTARGET**](pgm-getdroptarget.md)
+-   [**PGM \_ GETPOS**](pgm-getpos.md)
+-   [**PGM \_ RECALCSIZE**](pgm-recalcsize.md)
+-   [**PGM \_ SETBKCOLOR**](pgm-setbkcolor.md)
+-   [**PGM \_ SETBORDER**](pgm-setborder.md)
+-   [**PGM \_ SETBUTTONSIZE**](pgm-setbuttonsize.md)
+-   [**PGM \_ SETCHILD**](pgm-setchild.md)
+-   [**PGM \_ SETPOS**](pgm-setpos.md)
+-   [**PGM \_ SETSCROLLINFO**](pgm-setscrollinfo.md)
 
  
 

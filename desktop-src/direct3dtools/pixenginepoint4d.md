@@ -1,10 +1,10 @@
 ---
-description: Representa un punto 4D con coordenadas de punto flotante de 64 bits (doble).
+description: Representa un punto 4D con coordenadas de punto flotante (doble) de 64 bits.
 MS-HAID: vspixengine.PixEnginePoint4D
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Estructura DesenginePoint4D
+title: Estructura DeLoEnginePoint4D
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: B64925AF-7F38-4DB7-9613-E63BAC187F74
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 2ca929459658af64243e8895f97b81cfd18e1f0e6cde9349dc4cba5625cb54c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5852f819bbfbd6929888f3a89e2882255386de25
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119289"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122623150"
 ---
-# <a name="span-idvspixenginepixenginepoint4dspanpixenginepoint4d-structure"></a><span id="vspixengine.pixenginepoint4d"></span>Estructura DesenginePoint4D
+# <a name="span-idvspixenginepixenginepoint4dspanpixenginepoint4d-structure"></a><span id="vspixengine.pixenginepoint4d"></span>Estructura DeLoEnginePoint4D
 
-Representa un punto 4D con coordenadas de punto flotante de 64 bits (doble).
+Representa un punto 4D con coordenadas de punto flotante (doble) de 64 bits.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Valor del componente W homogéneo.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

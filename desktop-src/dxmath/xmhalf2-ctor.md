@@ -11,21 +11,21 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 341b5099e43392f978f3923afd02f05e71fcda62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab8d809d67248a437c208921798fa874413bfc10
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715568"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478741"
 ---
 # <a name="xmhalf2-constructors"></a>Constructores XMHALF2
 
 Constructores expuestos por `XMHALF2` .
 
-Construye instancias de la estructura [**XMHALF2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2) .
+Construye instancias de la estructura [**XMHALF2.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2)
 
 > [!Note]  
-> Los constructores que se enumeran aquí solo están disponibles en C++.
+> Los constructores enumerados aquí solo están disponibles en C++.
 
  
 
@@ -33,73 +33,23 @@ Construye instancias de la estructura [**XMHALF2**](/windows/desktop/api/DirectX
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constructor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(constfloat)"><strong>XMHALF2 ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMHALF2</code> . <br/> Constructor predeterminado para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a>. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(half_half)"><strong>XMHALF2 (MITAD, MITAD)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMHALF2</code> a partir de dos <code>HALF</code> argumentos.<br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de dos <code>HALF</code> argumentos.<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(consthalf)"><strong>XMHALF2 (const HALF *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMHALF2</code> partir de un argumento de matriz de dos elementos <code>HALF</code> . <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de un argumento de matriz de dos elementos <code>HALF</code> . <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(float_float)"><strong>XMHALF2 (float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de <code>XMHALF2</code> a partir de dos <code>float</code> argumentos. <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de dos <code>float</code> argumentos. <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(constfloat)"><strong>XMHALF2 (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMHALF2</code> partir de un argumento de matriz de dos elementos <code>float</code> . <br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de un argumento de matriz de dos elementos <code>float</code> . <br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constructor | Descripción | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(constfloat)"><strong>XMHALF2 ()</strong></a> | Constructor predeterminado para <code>XMHALF2</code> . <br /> Constructor predeterminado para <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2.</strong></a> <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(half_half)"><strong>XMHALF2 (HALF,HALF)</strong></a> | Inicializa una nueva instancia de a <code>XMHALF2</code> partir de <code>HALF</code> dos argumentos.<br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de <code>HALF</code> dos argumentos.<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(consthalf)"><strong>XMHALF2 (const HALF*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMHALF2</code> de un argumento de matriz de dos <code>HALF</code> elementos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de un argumento de matriz <code>HALF</code> de dos elementos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(float_float)"><strong>XMHALF2 (float,float)</strong></a> | Inicializa una nueva instancia de a <code>XMHALF2</code> partir de <code>float</code> dos argumentos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de <code>float</code> dos argumentos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmhalf2-xmhalf2(constfloat)"><strong>XMHALF2 (const float*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMHALF2</code> de un argumento de matriz de dos <code>float</code> elementos. <br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmhalf2"><strong>XMHALF2</strong></a> a partir de un argumento de matriz <code>float</code> de dos elementos. <br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Extensiones de XMHALF2](ovw-xmhalf2-extensions.md)
+[Extensiones XMHALF2](ovw-xmhalf2-extensions.md)
 </dt> <dt>
 
 **Referencia**

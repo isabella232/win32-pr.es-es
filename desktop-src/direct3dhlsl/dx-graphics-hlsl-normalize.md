@@ -1,6 +1,6 @@
 ---
-title: normalizar
-description: Normaliza el vector de punto flotante especificado según x/length (x).
+title: Normalizar
+description: Normaliza el vector de punto flotante especificado según x/ length(x).
 ms.assetid: 7fd6f8ff-f3ff-4d14-b3fc-b44fdddf6c75
 keywords:
 - normalizar HLSL
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f48c78f80f5f92f950795018f05a46c7883d9736
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 01b14fb95e77542ab48e535add548514af22829644934abffdc845c27d3d96b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103995597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024305"
 ---
-# <a name="normalize"></a>normalizar
+# <a name="normalize"></a>Normalizar
 
-Normaliza el vector de punto flotante especificado según x/length (x).
+Normaliza el vector de punto flotante especificado según x/ length(x).
 
 
 
-| *Normalize (* *x*) |
+| *ret* normalize(*x*) |
 |----------------------|
 
 
@@ -39,7 +39,7 @@ Normaliza el vector de punto flotante especificado según x/length (x).
 
 | Elemento                                                   | Descripción                                            |
 |--------------------------------------------------------|--------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el vector de punto flotante especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El vector de punto flotante especificado.<br/> |
 
 
 
@@ -47,26 +47,26 @@ Normaliza el vector de punto flotante especificado según x/length (x).
 
 ## <a name="return-value"></a>Valor devuelto
 
-Parámetro *x* normalizado. Si la longitud del parámetro *x* es 0, el resultado es indefinido.
+Parámetro *x* normalizado. Si la longitud del *parámetro x* es 0, el resultado es indefinido.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **normalizar** intrínseca de HLSL usa la siguiente fórmula: *x*  /  [**longitud**](dx-graphics-hlsl-length.md)(*x*).
+La **función intrínseca normalize** HLSL usa la fórmula siguiente: *x*  /  [**length**](dx-graphics-hlsl-length.md)(*x*).
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**medios**](dx-graphics-hlsl-intrinsic-functions.md) | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *direcc* | igual que la entrada *x*                                                                   | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**Vector**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *Ret* | igual que la entrada *x*                                                                   | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -74,8 +74,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible           |
 |------------------------------------------------------------------------------------|---------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí ( \_ solo vs 1 \_ 1) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                 |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (solo \_ frente a \_ 1 1) |
 
 
 
@@ -85,7 +85,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

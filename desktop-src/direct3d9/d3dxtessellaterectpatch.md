@@ -1,7 +1,7 @@
 ---
-description: Tessellates una revisión de la superficie de orden superior rectangular en una malla de triángulo.
+description: Tesola una revisión rectangular de superficie de orden superior en una malla de triángulo.
 ms.assetid: d941d994-8a13-49ff-a0b1-b21a3f84ed78
-title: Función D3DXTessellateRectPatch (D3DX9Mesh. h)
+title: Función D3DXTessellateRectPatch (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 887f0035b50efd860149410e50dd6abff301968d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b7fb3ab1c47ded6fe6ca6548ca6c90b3027e30280acf819d5d024fd0bd554d58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120119055"
 ---
-# <a name="d3dxtessellaterectpatch-function"></a>D3DXTessellateRectPatch función)
+# <a name="d3dxtessellaterectpatch-function"></a>Función D3DXTessellateRectPatch
 
-Tessellates una revisión de la superficie de orden superior rectangular en una malla de triángulo.
+Tesola una revisión rectangular de superficie de orden superior en una malla de triángulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ HRESULT D3DXTessellateRectPatch(
 
 <dl> <dt>
 
-*pVB* \[ de\]
+*pVB* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DVERTEXBUFFER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dvertexbuffer9)**
@@ -53,39 +53,39 @@ Búfer de vértices que contiene los datos de revisión.
 
 </dd> <dt>
 
-*pNumSegs* \[ de\]
+*pNumSegs* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de cuatro valores de punto flotante que identifican el número de segmentos en los que cada borde de la revisión del rectángulo debe dividirse cuando se tesela. Vea [**\_ información de D3DRECTPATCH**](d3drectpatch-info.md).
+Puntero a una matriz de cuatro valores de punto flotante que identifican el número de segmentos en los que se debe dividir cada borde de la revisión del rectángulo cuando se tesela. Vea [**D3DRECTPATCH \_ INFO**](d3drectpatch-info.md).
 
 </dd> <dt>
 
-*pInDecl* \[ de\]
+*pInDecl* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Estructura de declaración de vértices que define los datos de vértices. Vea [**D3DVERTEXELEMENT9**](d3dvertexelement9.md).
+Estructura de declaración de vértice que define los datos del vértice. Vea [**D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
 
 </dd> <dt>
 
-*pRectPatchInfo* \[ de\]
+*pRectPatchInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**D3DRECTPATCH \_ info**](d3drectpatch-info.md) \***
+Tipo: **const [**D3DRECTPATCH \_ INFO**](d3drectpatch-info.md) \***
 
-Describe una revisión rectangular. Vea [**\_ información de D3DRECTPATCH**](d3drectpatch-info.md).
+Describe una revisión rectangular. Vea [**D3DRECTPATCH \_ INFO**](d3drectpatch-info.md).
 
 </dd> <dt>
 
-*pmesh* \[ in, out\]
+*pMesh* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a la malla creada. Vea [**ID3DXMesh**](id3dxmesh.md).
+Puntero a la malla creada. Vea [**ID3DXMesh.**](id3dxmesh.md)
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Puntero a la malla creada. Vea [**ID3DXMesh**](id3dxmesh.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use [**D3DXRectPatchSize**](d3dxrectpatchsize.md) para obtener el número de vértices y índices de salida que necesita la función de teselación.
+Use [**D3DXRectPatchSize para**](d3dxrectpatchsize.md) obtener el número de vértices de salida e índices que necesita la función de teselación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Use [**D3DXRectPatchSize**](d3dxrectpatchsize.md) para obtener el número de vé
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

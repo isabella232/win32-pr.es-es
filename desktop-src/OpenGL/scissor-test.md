@@ -1,26 +1,26 @@
 ---
-title: Prueba de tijera
-description: La prueba glScissor especifica un rectángulo alineado de pantalla arbitrario fuera de los fragmentos que se descartarán.
+title: Prueba de la indesa
+description: La prueba glScissor especifica un rectángulo arbitrario alineado con la pantalla fuera del cual se descartarán los fragmentos.
 ms.assetid: 97c60b8f-96b1-4ee1-9033-f4d7ee48b58d
 keywords:
-- Canalización de procesamiento de OpenGL, prueba de tijera
-- prueba de tijeras OpenGL
+- Canalización de procesamiento de OpenGL, prueba de indesa
+- prueba de deserción OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c8cb4b0deb78bb91357c4bc0b6670eb4cb19835
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2e5dc42e9891b2fd1be7d9acc8579c498c0fd0ec7b03e8da9b0bbf340bac45b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034715"
 ---
-# <a name="scissor-test"></a>Prueba de tijera
+# <a name="scissor-test"></a>Prueba de la indesa
 
-La prueba [**glScissor**](glscissor.md) especifica un rectángulo alineado de pantalla arbitrario fuera de los fragmentos que se descartarán.
+La [**prueba glScissor**](glscissor.md) especifica un rectángulo arbitrario alineado con la pantalla fuera del cual se descartarán los fragmentos.
 
- 
+ 
 
- 
+ 
 
 
 

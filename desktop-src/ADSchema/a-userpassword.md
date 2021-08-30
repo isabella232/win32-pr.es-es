@@ -1,11 +1,11 @@
 ---
-title: User-Password atributo)
-description: Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
+title: User-Password atributo
+description: Contraseña del usuario en formato UTF-8. Se trata de un atributo de solo escritura.
 ms.assetid: fcbd5e46-93fc-461e-aa6e-26d08114e73a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de User-Password
-- atributo userPassword esquema de AD
+- User-Password esquema de AD del atributo
+- Esquema de AD del atributo userPassword
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f84dbb0b8bbc9ebf6995738050cddb226049658b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9d15fae037e2b2e8fdb7889b6ba18e0269244174a80f7a373edc2b1457faced1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922925"
 ---
-# <a name="user-password-attribute"></a>User-Password atributo)
+# <a name="user-password-attribute"></a>User-Password atributo
 
-Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
+Contraseña del usuario en formato UTF-8. Se trata de un atributo de solo escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | User-Password                                         |
-| Nombre para mostrar de LDAP | userPassword                                          |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                |
+| Ldap-Display-Name | Contraseña_usuario                                          |
+| Size              | \-                                                    |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.5.4.35                                              |
-| System-ID-GUID    | bf967a6e-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a6e-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -54,15 +54,15 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                     |
+| Id. de vínculo                | \-                                                                                                                                                     |
 | MAPI-Id                | 0x8153                                                                                                                                                 |
-| System-Only            | False                                                                                                                                                  |
-| Tiene un único valor       | False                                                                                                                                                  |
-| Está indexado             | False                                                                                                                                                  |
-| En el catálogo global      | False                                                                                                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                           |
+| System-Only            | Falso                                                                                                                                                  |
+| Es de un solo valor       | Falso                                                                                                                                                  |
+| Está indexado             | Falso                                                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                           |
 | Range-Lower            | 1                                                                                                                                                      |
 | Range-Upper            | 128                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                             |
@@ -75,15 +75,15 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                                                                                       |
 | MAPI-Id                | 0x8153                                                                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                                                                    |
-| Tiene un único valor       | False                                                                                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                                                                                    |
-| En el catálogo global      | False                                                                                                                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                                                                                    |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                                                                                        |
 | Range-Upper            | 128                                                                                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                               |
@@ -92,19 +92,19 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                               |
+| Id. de vínculo                | \-                                                                                                               |
 | MAPI-Id                | 0x8153                                                                                                           |
-| System-Only            | False                                                                                                            |
-| Tiene un único valor       | False                                                                                                            |
-| Está indexado             | False                                                                                                            |
-| En el catálogo global      | False                                                                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                     |
+| System-Only            | Falso                                                                                                            |
+| Es de un solo valor       | Falso                                                                                                            |
+| Está indexado             | Falso                                                                                                            |
+| En el catálogo global      | Falso                                                                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                     |
 | Range-Lower            | 1                                                                                                                |
 | Range-Upper            | 128                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                       |
@@ -117,15 +117,15 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
 | MAPI-Id                | 0x8153                                                                                                                                                                                                                                                                                                                                                                       |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                        |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                 |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                   |
@@ -138,15 +138,15 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
 | MAPI-Id                | 0x8153                                                                                                                                                                                                                                                                                                                                                                       |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                        |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                 |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                   |
@@ -159,15 +159,15 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
 | MAPI-Id                | 0x8153                                                                                                                                                                                                                                                                                                                                                                       |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                        |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                 |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                   |
@@ -180,15 +180,15 @@ Contraseña del usuario en formato UTF-8. Este atributo es de solo escritura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                                                                                                                                                                                                                                                                           |
 | MAPI-Id                | 0x8153                                                                                                                                                                                                                                                                                                                                                                       |
-| System-Only            | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Está indexado             | False                                                                                                                                                                                                                                                                                                                                                                        |
-| En el catálogo global      | False                                                                                                                                                                                                                                                                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                                                                                                                                                                                                                 |
+| System-Only            | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| Está indexado             | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                                                                                                                                                                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                                                                 |
 | Range-Lower            | 1                                                                                                                                                                                                                                                                                                                                                                            |
 | Range-Upper            | 128                                                                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                                                                   |

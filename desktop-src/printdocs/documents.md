@@ -4,12 +4,12 @@ ms.assetid: 14ae2c97-8596-46db-a55c-ef706d2cd00b
 title: Documentos XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 625c2f04a43db9433fe125b52a4bbc08e37fb4f4
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 587f9b421c64287647e39d13d98a9f826f591d7be907ac14df21d649b3a66c80
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092124"
 ---
 # <a name="xps-documents"></a>Documentos XPS
 
@@ -17,7 +17,7 @@ En esta sección se describen las tecnologías de documentos compatibles con Mic
 
 -   [Elección de una tecnología de documentos](#choosing-a-document-technology)
 -   [En esta sección](#in-this-section)
--   [Herramientas de documento XPS](#xps-document-tools)
+-   [Herramientas de documentos XPS](#xps-document-tools)
 -   [Temas relacionados](#related-topics)
 
 
@@ -27,29 +27,29 @@ Microsoft proporciona varias tecnologías de documentos diferentes para admitir 
 
 -   **XPS y OpenXPS**
 
-    XPS y OpenXPS se admiten en Windows 8 versiones posteriores de Windows. Consulte el diagrama anterior para determinar el escenario de uso correcto para XPS y OpenXPS. Para obtener más información sobre estas tecnologías de documentos, vea [Open XML Paper Specification (OpenXPS).](https://www.ecma-international.org/publications/standards/Ecma-388.htm)
+    XPS y OpenXPS se admiten en Windows 8 versiones posteriores de Windows. Consulte el diagrama anterior para determinar el escenario de uso correcto para XPS y OpenXPS. Para obtener más información sobre estas tecnologías de documentos, [vea Open XML Paper Specification (OpenXPS).](https://www.ecma-international.org/publications/standards/Ecma-388.htm)
 
     En el caso de usar OpenXPS con Windows 8 y Windows Server 2012, la compatibilidad solo se proporciona a través de [la API de documentos XPS.](documents-xps.md)
 
-    Si necesita convertir entre Microsoft XPS (MSXPS) y OpenXPS, Microsoft ha proporcionado una herramienta (XPSConverter.exe) que le permite convertir documentos con formato MSXPS al formato OpenXPS y viceversa. La herramienta forma parte de la Kit para controladores de Windows (WDK). Para descargar wdk, consulte [Cómo obtener la WDK](/windows-hardware/drivers/download-the-wdk).
+    Si necesita convertir entre Microsoft XPS (MSXPS) y OpenXPS, Microsoft ha proporcionado una herramienta (XPSConverter.exe) que le permite convertir documentos con formato MSXPS al formato OpenXPS y viceversa. La herramienta forma parte de Windows Driver Kit (WDK). Para descargar wdk, [consulte Cómo obtener la WDK](/windows-hardware/drivers/download-the-wdk).
 
-    Y para obtener más información sobre OpenXPS y Windows 8, vea [Compatibilidad con OpenXPS en Windows.](/windows-hardware/drivers/print/driver-support-for-openxps)
+    Y para obtener más información sobre OpenXPS y Windows 8, vea [Compatibilidad con OpenXPS en Windows](/windows-hardware/drivers/print/driver-support-for-openxps).
 
 -   **XPS Document API**
 
-    XpS Document API es una API nativa de Windows que admite XPS OM. La API de documentos XPS se introdujo en Windows 7 y se puede usar en programas en modo de usuario y controladores de impresora XPSDrv.
+    XpS Document API es una API Windows que admite XPS OM. La API de documentos XPS se introdujo en Windows 7 y se puede usar en programas en modo de usuario y controladores de impresora XPSDrv.
 
     Para obtener más información, vea XPS Document API y [XPS Digital Signature API](xps-digital-signatures.md).
 
-    \*La API de documentos XPS también se admite en Windows Vista con Service Pack 2 (SP2) con la actualización de plataforma para Windows Vista y Windows Server 2008 con SP2 mediante la actualización de plataforma para Windows Server 2008. Para obtener más información sobre la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008, vea Actualización de [plataforma para Windows Vista.](/windows/desktop/win7ip/platform-update-for-windows-vista-portal)
+    \*La API de documentos XPS también se admite en Windows Vista con Service Pack 2 (SP2) con la actualización de plataforma para Windows Vista y Windows Server 2008 con SP2 mediante la actualización de plataforma para Windows Server 2008. Para obtener más información sobre la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008, vea Actualización de plataforma [para Windows Vista.](/windows/desktop/win7ip/platform-update-for-windows-vista-portal)
 
 -   **.NET Framework**
 
     .NET Framework proporciona compatibilidad con documentos XPS para programas de código administrado en modo de usuario.
 
-    .NET Framework 3.0 se admite en Windows XP con Service Pack 2 (SP2) y versiones posteriores de sistemas operativos cliente de Windows, y en Windows Server 2003 con Service Pack 2 (SP2) y versiones posteriores de sistemas operativos Windows Server.
+    .NET Framework 3.0 se admite en Windows XP con Service Pack 2 (SP2) y versiones posteriores de sistemas operativos cliente de Windows, y en Windows Server 2003 con Service Pack 2 (SP2) y versiones posteriores de sistemas operativos de servidor Windows.
 
-    .NET Framework 3.5 se admite en las versiones de Windows XP de los sistemas operativos cliente de Windows y en Windows Server 2003 y versiones posteriores de los sistemas operativos Windows Server.
+    .NET Framework 3.5 se admite en versiones de Windows XP de sistemas operativos cliente de Windows y en Windows Server 2003 y versiones posteriores de Windows Server.
 
     > [!Note]  
     > Se recomienda el uso de .NET Framework para crear documentos XPS solo en aplicaciones cliente, no en aplicaciones de servidor a menos que la aplicación se cierre periódicamente, como lo haría si fuera una aplicación cliente.
@@ -65,7 +65,7 @@ Microsoft proporciona varias tecnologías de documentos diferentes para admitir 
 
 ## <a name="in-this-section"></a>En esta sección
 
-En esta sección se describen las tecnologías nativas de documentos de Windows compatibles con Microsoft Windows.
+En esta sección se describen las Windows de documentos nativas compatibles con Microsoft Windows.
 
 
 
@@ -79,7 +79,7 @@ En esta sección se describen las tecnologías nativas de documentos de Windows 
 
  
 
-## <a name="xps-document-tools"></a>Herramientas de documento XPS
+## <a name="xps-document-tools"></a>Herramientas de documentos XPS
 
 Las siguientes herramientas están disponibles para ayudarle a probar y solucionar problemas de archivos de documentos XPS.
 

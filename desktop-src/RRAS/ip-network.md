@@ -1,10 +1,10 @@
 ---
-title: Estructura de IP_NETWORK (RTM. h)
-description: La \_ estructura de red IP describe una dirección de red IP.
+title: IP_NETWORK estructura (Rtm.h)
+description: La estructura \_ IP NETWORK describe una dirección de red IP.
 ms.assetid: 5dcc733f-c86f-407e-8727-64f3ae71dd48
 keywords:
-- IP_NETWORK de la estructura RAS
-- PIP_NETWORK de puntero de estructura RAS
+- IP_NETWORK ras de estructura
+- PIP_NETWORK puntero de estructura RAS
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2541c493b1b2e3805e3705c71e890c6a6aaa98ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5976211d0aea5936278353a9fb1b172585c0ee63531dde229ef4bf561c5dbb4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029965"
 ---
-# <a name="ip_network-structure"></a>\_Estructura de red IP
+# <a name="ip_network-structure"></a>Estructura \_ DE RED IP
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La estructura de **\_ red IP** describe una dirección de red IP.
+La **estructura \_ IP NETWORK** describe una dirección de red IP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ typedef struct _IP_NETWORK {
 **N \_ NetNumber**
 </dt> <dd>
 
-Especifica el número de red IP expresado como una dirección IP en orden de bytes de la máquina.
+Especifica el número de red IP expresado como una dirección IP en orden de bytes de máquina.
 
 </dd> <dt>
 
-**\_Máscara de máscara**
+**N \_ NetMask**
 </dt> <dd>
 
-Especifica la máscara de red. Aplique esta máscara a la dirección IP para extraer la dirección de red. La máscara de red está en orden de bytes de la máquina.
+Especifica la máscara de red. Aplique esta máscara a la dirección IP para extraer la dirección de red. La máscara de red está en orden de bytes de máquina.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Especifica la máscara de red. Aplique esta máscara a la dirección IP para ext
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
@@ -75,13 +75,13 @@ Especifica la máscara de red. Aplique esta máscara a la dirección IP para ext
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de Routing Table Manager versión 1](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_ruta IP de RTM \_**](rtm-ip-route.md)
+[**RTM \_ IP \_ ROUTE**](rtm-ip-route.md)
 </dt> </dl>
 
  

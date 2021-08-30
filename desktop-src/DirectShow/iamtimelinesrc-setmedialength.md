@@ -1,7 +1,7 @@
 ---
-description: El método SetMediaLength especifica la duración del archivo de código fuente.
+description: El método SetMediaLength especifica la duración del archivo de origen.
 ms.assetid: 0a68ad50-91d5-4cb3-95ef-35b9460ac3e4
-title: 'IAMTimelineSrc:: SetMediaLength (método) (QEDIT. h)'
+title: Método IAMTimelineSrc::SetMediaLength (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d585e9076606a77c8ecd03701ad41ab421eacd27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2e4b608fea02ac8a7424e980ba3d3e63105e88bc0689d0ea281415bd14d00e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120051665"
 ---
-# <a name="iamtimelinesrcsetmedialength-method"></a>IAMTimelineSrc:: SetMediaLength (método)
+# <a name="iamtimelinesrcsetmedialength-method"></a>IamTimelineSrc::SetMediaLength (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetMediaLength` método especifica la duración del archivo de código fuente.
+El `SetMediaLength` método especifica la duración del archivo de origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,27 +48,27 @@ HRESULT SetMediaLength(
 *Duración* 
 </dt> <dd>
 
-Longitud del medio, en unidades de 100-nanosegundos.
+Longitud del medio, en unidades de 100 nanosegundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede evitar posibles errores de representación si establece la longitud del medio antes de establecer la hora de detención del medio. Al establecer el tiempo de detención del medio, DES lo comprueba con la longitud del medio.
+Puede evitar posibles errores de representación estableciendo la longitud del medio antes de establecer el tiempo de detenerse del medio. Al establecer el tiempo de detenerse del medio, DES lo comprueba con respecto a la longitud del medio.
 
-Este método no valida el parámetro de *longitud* , pero el valor debe ser igual a la duración real del archivo de código fuente. Obtenga la duración del archivo de origen mediante una llamada a [**IMediaDet:: get \_ StreamLength**](imediadet-get-streamlength.md).
+Este método no valida el *parámetro Length,* pero el valor debe ser igual a la duración real del archivo de origen. Obtenga la duración del archivo de origen llamando [**a IMediaDet::get \_ StreamLength.**](imediadet-get-streamlength.md)
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ Este método no valida el parámetro de *longitud* , pero el valor debe ser igua
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -87,10 +87,10 @@ Este método no valida el parámetro de *longitud* , pero el valor debe ser igua
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineSrc**](iamtimelinesrc.md)
+[**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

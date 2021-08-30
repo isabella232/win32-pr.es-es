@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Additional-Sam-Account-Name
-description: Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a los nombres de host DNS en MS-DS-Additional-DNS-host-name.
+title: Atributo ms-DS-Additional-Sam-Account-Name
+description: Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a los nombres de host DNS en ms-DS-Additional-Dns-Host-Name.
 ms.assetid: eb69e1d4-42b7-42e1-aeae-77188db307ef
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de nombre de cuenta de MS-DS-Account-Sam
-- Esquema de AD de atributo msDS-AdditionalSamAccountName
+- Esquema de AD del atributo ms-DS-Additional-Sam-Account-Name
+- Esquema de AD del atributo msDS-AdditionalSamAccountName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a437c30e6ddb0e551498480f7589791bce59feaf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 11f501cc22412ede77c01a7bdb11e6a6fb1a6a312838424d0dab56d3e165bb14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804245"
 ---
-# <a name="ms-ds-additional-sam-account-name-attribute"></a>atributo MS-DS-Additional-Sam-Account-Name
+# <a name="ms-ds-additional-sam-account-name-attribute"></a>Atributo ms-DS-Additional-Sam-Account-Name
 
-Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a los nombres de host DNS en MS-DS-Additional-DNS-host-name.
+Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a los nombres de host DNS en ms-DS-Additional-Dns-Host-Name.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Nombre de la cuenta de MS-DS-Additional-Sam           |
-| Nombre para mostrar de LDAP | msDS-AdditionalSamAccountName               |
-| Tamaño              | Menos de 20 bytes.                         |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | ms-DS-Additional-Sam-Account-Name           |
+| Ldap-Display-Name | msDS-AdditionalSamAccountName               |
+| Size              | Menos de 20 bytes.                         |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | Cuando se cambia el nombre del controlador de dominio.                     |
 | Attribute-Id      | 1.2.840.113556.1.4.1718                     |
-| System-ID-GUID    | 975571df-a4d5-429a-9f59-cdc6581d91e6        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 975571df-a4d5-429a-9f59-cdc6581d91e6        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,13 +54,13 @@ Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | True                                      |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Verdadero                                      |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x0000000D                                |
@@ -75,13 +75,13 @@ Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | True                                      |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Verdadero                                      |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x0000000D                                |
@@ -94,15 +94,15 @@ Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | True                                      |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Verdadero                                      |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x0000000D                                |
@@ -115,15 +115,15 @@ Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | True                                      |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Verdadero                                      |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x0000000D                                |
@@ -138,13 +138,13 @@ Este atributo se usa para almacenar los nombres de cuenta SAM que corresponden a
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
-| Tiene un único valor       | False                                     |
-| Está indexado             | True                                      |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Verdadero                                      |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Verdadero                                      |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 256                                       |
 | Search-Flags           | 0x0000000D                                |

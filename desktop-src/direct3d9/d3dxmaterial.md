@@ -1,7 +1,7 @@
 ---
-description: Devuelve información de material guardada en archivos de Direct3D (. x).
+description: Devuelve información de material guardada en archivos de Direct3D (.x).
 ms.assetid: dfa021ba-61d8-4f99-9bbb-0cfbe11b787d
-title: Estructura D3DXMATERIAL (D3dx9mesh. h)
+title: Estructura D3DXMATERIAL (D3dx9mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 89079b716a8c5808255b2bc660f1d364bb97315f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c90b03f5d6526fc3545ff1ffe1d48dfea20f96ea4ae34602f885ce7f062003b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027415"
 ---
 # <a name="d3dxmaterial-structure"></a>Estructura D3DXMATERIAL
 
-Devuelve información de material guardada en archivos de Direct3D (. x).
+Devuelve información de material guardada en archivos de Direct3D (.x).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ Tipo: **[ **D3DMATERIAL9**](d3dmaterial9.md)**
 
 </dd> <dd>
 
-Estructura [**D3DMATERIAL9**](d3dmaterial9.md) que describe las propiedades del material.
+[**Estructura D3DMATERIAL9**](d3dmaterial9.md) que describe las propiedades del material.
 
 </dd> <dt>
 
@@ -62,11 +62,11 @@ Puntero a una cadena que especifica el nombre de archivo de la textura.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las funciones [**D3DXLoadMeshFromX**](d3dxloadmeshfromx.md) y [**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md) devuelven una matriz de estructuras **D3DXMATERIAL** que especifican el color del material y el nombre de la textura de cada material de la malla. A continuación, se requiere la aplicación para cargar la textura.
+Las funciones [**D3DXLoadMeshFromX**](d3dxloadmeshfromx.md) y [**D3DXLoadMeshFromXof**](d3dxloadmeshfromxof.md) devuelven una matriz de estructuras **D3DXMATERIAL** que especifican el color del material y el nombre de la textura para cada material de la malla. A continuación, se requiere que la aplicación cargue la textura.
 
-El tipo LPD3DXMATERIAL se define como un puntero a la estructura **D3DXMATERIAL** .
+El tipo LPD3DXMATERIAL se define como un puntero a la **estructura D3DXMATERIAL.**
 
 
 ```
@@ -81,7 +81,7 @@ typedef struct D3DXMATERIAL* LPD3DXMATERIAL;
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ typedef struct D3DXMATERIAL* LPD3DXMATERIAL;
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**D3DXLoadMeshFromX**](d3dxloadmeshfromx.md)

@@ -1,9 +1,9 @@
 ---
-title: Métodos de ID2D1SvgPaint SetColor
-description: Establece el color de dibujo que se usa si el tipo de pintura es el color del tipo de pintura \_ SVG D2D1 \_ \_ \_ .
+title: Métodos ID2D1SvgPaint SetColor
+description: Establece el color de pintura que se usa si el tipo de pintura es D2D1 \_ SVG \_ PAINT TYPE \_ \_ COLOR.
 ms.assetid: 74e1b0ac-27d3-8ca0-1b81-d29474c0f148
 keywords:
-- Métodos de SetColor Direct2D
+- Métodos SetColor de Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 18643a9cac64e190157f8fde95d383a2e890877c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7b73e4528f0c242be8974dc9642d364b1e7f9b7cd5bddb70cb4a2a4ef247f6b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105676431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076845"
 ---
-# <a name="id2d1svgpaintsetcolor-methods"></a>ID2D1SvgPaint:: SetColor (métodos)
+# <a name="id2d1svgpaintsetcolor-methods"></a>Métodos ID2D1SvgPaint::SetColor
 
-Establece el color de dibujo que se usa si el tipo de pintura es el color del tipo de pintura \_ SVG D2D1 \_ \_ \_ .
+Establece el color de pintura que se usa si el tipo de pintura es D2D1 \_ SVG \_ PAINT TYPE \_ \_ COLOR.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el color de dibujo que se usa si el tipo de pintura es el color del ti
 
 | Método                                                         | Descripción                                                                                      |
 |:---------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
-| [**SetColor (D2D1 de \_ color \_ F \* )**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setcolor(constd2d1_color_f))  | Establece el color de dibujo que se usa si el tipo de pintura es el color del tipo de pintura \_ SVG D2D1 \_ \_ \_ .<br/> |
-| [**SetColor (D2D1 de \_ color \_ F &)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setcolor(constd2d1_color_f_)) | Establece el color de dibujo que se usa si el tipo de pintura es el color del tipo de pintura \_ SVG D2D1 \_ \_ \_ .<br/> |
+| [**SetColor(D2D1 \_ COLOR \_ F \* )**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setcolor(constd2d1_color_f))  | Establece el color de pintura que se usa si el tipo de pintura es D2D1 \_ SVG \_ PAINT TYPE \_ \_ COLOR.<br/> |
+| [**SetColor(D2D1 \_ COLOR \_ F &)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgpaint-setcolor(constd2d1_color_f_)) | Establece el color de pintura que se usa si el tipo de pintura es D2D1 \_ SVG \_ PAINT TYPE \_ \_ COLOR.<br/> |
 
 
 

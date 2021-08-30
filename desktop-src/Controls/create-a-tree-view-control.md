@@ -1,36 +1,36 @@
 ---
-title: Cómo crear un control de Tree-View
-description: Para crear un control de vista de árbol, utilice la función CreateWindowEx, especificando el \_ valor TREEVIEW de CT para la clase de ventana.
+title: Cómo crear un control Tree-View control
+description: Para crear un control de vista de árbol, use la función CreateWindowEx y especifique el valor TREEVIEW de WC \_ para la clase de ventana.
 ms.assetid: FEC3BF62-3085-47D4-B82E-7BD7B34B397D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 136ec22cc4f3f88e57266a4c2ac88df542a39429
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 5c217ed9d1ea29d1c563ee1bc4246b43528182383b6f8d1dd78dd4f73a220e9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920665"
 ---
-# <a name="how-to-create-a-tree-view-control"></a>Cómo crear un control de Tree-View
+# <a name="how-to-create-a-tree-view-control"></a>Cómo crear un control Tree-View control
 
-Para crear un control de vista de árbol, utilice la función [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , especificando el valor [**\_ TREEVIEW de CT**](common-control-window-classes.md) para la clase de ventana. La clase de ventana de vista de árbol se registra en el espacio de direcciones de la aplicación cuando se carga el archivo DLL de control común. Para asegurarse de que se carga el archivo DLL, utilice la función [**InitCommonControls**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols) .
+Para crear un control de vista de árbol, use la [**función CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) y especifique el valor [**\_ TREEVIEW de WC**](common-control-window-classes.md) para la clase de ventana. La clase de ventana de vista de árbol se registra en el espacio de direcciones de la aplicación cuando se carga la DLL de control común. Para asegurarse de que se carga el archivo DLL, use la [**función InitCommonControls.**](/windows/desktop/api/Commctrl/nf-commctrl-initcommoncontrols)
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="create-an-instance-of-a-tree-view-control"></a>Crear una instancia de un control Tree-View
+### <a name="create-an-instance-of-a-tree-view-control"></a>Crear una instancia de un control Tree-View control
 
-En el ejemplo siguiente se crea un control de vista de árbol cuyo tamaño se ajusta para el área cliente de la ventana primaria. También utiliza funciones definidas por la aplicación para asociar una lista de imágenes con el control y agregar elementos al control.
+En el ejemplo siguiente se crea un control de vista de árbol con el tamaño adecuado para ajustarse al área de cliente de la ventana primaria. También usa funciones definidas por la aplicación para asociar una lista de imágenes al control y agregar elementos al control.
 
 
 ```C++
@@ -81,20 +81,20 @@ HWND CreateATreeView(HWND hwndParent)
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al crear un control de vista de árbol, también puede enviarle un mensaje de [**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont) para establecer la fuente que se utilizará para el texto. Debe enviar este mensaje antes de insertar elementos. De forma predeterminada, una vista de árbol utiliza la fuente del título del icono. Aunque puede personalizar la fuente por elemento mediante el uso de [Draw personalizado](custom-draw.md), el control de vista de árbol utiliza las dimensiones de la fuente especificada por el mensaje de **WM de \_ WM** para determinar el espaciado y el diseño.
+Al crear un control de vista de árbol, también puede enviarle un mensaje [**\_ WM SETFONT**](/windows/desktop/winmsg/wm-setfont) para establecer la fuente que se usará para el texto. Debe enviar este mensaje antes de insertar los elementos. De forma predeterminada, una vista de árbol usa la fuente de título del icono. Aunque puede personalizar la fuente por elemento mediante El dibujo personalizado [,](custom-draw.md)el control de vista de árbol usa las dimensiones de la fuente especificada por el mensaje **WM \_ SETFONT** para determinar el espaciado y el diseño.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar controles Tree-View](using-treeview.md)
+[Usar Tree-View controles](using-treeview.md)
 </dt> <dt>
 
-[En el ejemplo CustDTv se muestra el dibujo personalizado en un control Tree-View](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
+[El ejemplo CustDTv muestra el dibujo personalizado en un control Tree-View datos](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

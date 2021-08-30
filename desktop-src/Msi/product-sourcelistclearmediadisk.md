@@ -1,7 +1,7 @@
 ---
-description: El método SourceListClearMediaDisk del objeto Product quita un disco especificado del conjunto de discos registrados para un producto. Acepta el dipatine como parámetro. Este método llama a MsiSourceListClearMediaDisk.
+description: El método SourceListClearMediaDisk del objeto Product quita un disco especificado del conjunto de discos registrados para un producto. Acepta Diskid como parámetro. Este método llama a MsiSourceListClearMediaDisk.
 ms.assetid: 7eec644e-5127-4c17-a8bd-6b0eb091c8aa
-title: Product. SourceListClearMediaDisk (método)
+title: Método Product.SourceListClearMediaDisk
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: a607591f45208854118b0f97849cd7072e484bee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6e1115c8c2c02078dc9de08d3e0f64b08272dadc7309af5c7a3bbcf4134ee152
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653420"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074725"
 ---
-# <a name="productsourcelistclearmediadisk-method"></a>Product. SourceListClearMediaDisk (método)
+# <a name="productsourcelistclearmediadisk-method"></a>Método Product.SourceListClearMediaDisk
 
-El método **SourceListClearMediaDisk** del objeto [**Product**](product-object.md) quita un disco especificado del conjunto de discos registrados para un producto. Acepta el *dipatine* como parámetro. Este método llama a [**MsiSourceListClearMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska).
+El **método SourceListClearMediaDisk** del [**objeto Product**](product-object.md) quita un disco especificado del conjunto de discos registrados para un producto. Acepta *Diskid como* parámetro. Este método llama a [**MsiSourceListClearMediaDisk.**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ Product.SourceListClearMediaDisk(
 
 <dl> <dt>
 
-*Detectaron* 
+*Diskid* 
 </dt> <dd>
 
 Este parámetro proporciona el identificador del disco que se va a quitar.
@@ -54,11 +54,11 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer 3,0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IProduct se define como 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-00000000046<br/>                                                                                                                                                                                                          |
 
 
 
@@ -66,13 +66,13 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Manuales**](product-object.md)
+[**Producto**](product-object.md)
 </dt> <dt>
 
 [**MsiSourceListClearMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska)
 </dt> <dt>
 
-[No se admite en Windows Installer 2,0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
+[No se admite en Windows Installer 2.0 y versiones anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

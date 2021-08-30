@@ -1,9 +1,9 @@
 ---
-title: Warning (Directiva pragma)
-description: Directiva pragma que modifica el comportamiento de los mensajes de advertencia del compilador.
+title: warning pragma (directiva)
+description: Directiva Pragma que modifica el comportamiento de los mensajes de advertencia del compilador.
 ms.assetid: 69488014-36e3-4c87-8b65-6123b5e87bcb
 keywords:
-- Warning (Directiva pragma) HLSL
+- advertencia de directiva pragma HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7599886b47830b33c69f11c0c341c7775c644dd3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2d98e80ba691422b0a197b732dbc5fc762a25562
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103994710"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122631863"
 ---
-# <a name="warning-pragma-directive"></a>Warning (Directiva pragma)
+# <a name="warning-pragma-directive"></a>warning pragma (directiva)
 
-Directiva pragma que modifica el comportamiento de los mensajes de advertencia del compilador.
+Directiva Pragma que modifica el comportamiento de los mensajes de advertencia del compilador.
 
 
 
-| \#pragma warning ( *Warning-Specifier* : *Warning-Number-List* \[ ; *Warning-Specifier* : *ADVERTENCIA-número-lista*... \] ) |
+| \#pragma warning( *warning-specifier* : *warning-number-list* \[ ; *warning-specifier:* *warning-number-list*... \] ) |
 |----------------------------------------------------------------------------------------------------------------------|
 
 
@@ -39,8 +39,8 @@ Directiva pragma que modifica el comportamiento de los mensajes de advertencia d
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
@@ -50,8 +50,8 @@ Directiva pragma que modifica el comportamiento de los mensajes de advertencia d
 </thead>
 <tbody>
 <tr class="odd">
-<td><span id="warning-specifier"></span><span id="WARNING-SPECIFIER"></span><em>Warning-Specifier</em><br/></td>
-<td>Comportamiento que se va a establecer para las advertencias especificadas. Este parámetro puede tomar uno de los valores enumerados en la tabla siguiente. <br/> 
+<td><span id="warning-specifier"></span><span id="WARNING-SPECIFIER"></span><em>warning-specifier</em><br/></td>
+<td>Comportamiento que se establece para las advertencias especificadas. Este parámetro puede tomar uno de los valores enumerados en la tabla siguiente. <br/> 
 <table>
 <thead>
 <tr class="header">
@@ -62,15 +62,15 @@ Directiva pragma que modifica el comportamiento de los mensajes de advertencia d
 <tbody>
 <tr class="odd">
 <td>once</td>
-<td>Muestra el mensaje de las advertencias con los números especificados una sola vez.</td>
+<td>Muestra el mensaje de las advertencias con los números especificados solo una vez.</td>
 </tr>
 <tr class="even">
 <td>default</td>
-<td>Restablezca el comportamiento de las advertencias con los números especificados a su valor predeterminado. Esto también tiene el efecto de activar una advertencia en que está desactivada de forma predeterminada. La advertencia se generará en su nivel predeterminado.</td>
+<td>Restablezca el comportamiento de las advertencias con los números especificados a su valor predeterminado. Esto también tiene el efecto de activar una advertencia que está desactivada de forma predeterminada. La advertencia se generará en su nivel predeterminado.</td>
 </tr>
 <tr class="odd">
 <td>1, 2, 3, 4</td>
-<td>Aplica el nivel especificado a las advertencias con los números especificados. Esto también tiene el efecto de activar una advertencia en que está desactivada de forma predeterminada.</td>
+<td>Aplique el nivel especificado a las advertencias con los números especificados. Esto también tiene el efecto de activar una advertencia que está desactivada de forma predeterminada.</td>
 </tr>
 <tr class="even">
 <td>disable</td>
@@ -86,8 +86,8 @@ Directiva pragma que modifica el comportamiento de los mensajes de advertencia d
 <p> </p></td>
 </tr>
 <tr class="even">
-<td><p><span id="warning-number-list"></span><span id="WARNING-NUMBER-LIST"></span><em>ADVERTENCIA: número-lista</em></p></td>
-<td><p>Lista delimitada por espacios en blanco de los números de las advertencias para modificar el comportamiento de.</p></td>
+<td><p><span id="warning-number-list"></span><span id="WARNING-NUMBER-LIST"></span><em>warning-number-list</em></p></td>
+<td><p>Lista delimitada por espacios en blanco de los números de las advertencias de las que se modificará el comportamiento.</p></td>
 </tr>
 </tbody>
 </table>
@@ -96,13 +96,13 @@ Directiva pragma que modifica el comportamiento de los mensajes de advertencia d
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede especificar cualquier número de cambios de comportamiento de advertencia distintos dentro de la misma pragma warning separando los cambios con punto y coma.
+Puede especificar cualquier número de cambios de comportamiento de advertencia distintos dentro de la misma pragma de advertencia separando los cambios con punto y coma.
 
-El compilador agregará 4000 a cualquier número de advertencia que esté entre 0 y 999. Para los números de advertencia mayores que 4699 (los asociados a la generación de código), la pragma warning solo tiene efecto cuando se colocan fuera de las definiciones de función. La Directiva pragma se omite si especifica un número mayor que 4699 y se utiliza dentro de una función.
+El compilador agregará 4000 a cualquier número de advertencia que esté entre 0 y 999. Para los números de advertencia mayores que 4699, (los asociados a la generación de código) la pragma de advertencia solo tiene efecto cuando se coloca fuera de las definiciones de función. La pragma se omite si especifica un número mayor que 4699 y se usa dentro de una función.
 
-La instrucción pragma de advertencia de HLSL no admite la **funcionalidad de** **extracción** y de confirmación de la pragma warning incluida en el compilador de C++.
+La pragma de advertencia hlsl  no admite la funcionalidad **de** inserción y pop de la pragma de advertencia incluida en el compilador de C++.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -115,7 +115,7 @@ En el ejemplo siguiente se deshabilitan las advertencias 4507 y 4034, se muestra
 
 
 
-El ejemplo anterior es funcionalmente equivalente a lo siguiente:
+El ejemplo anterior es funcionalmente equivalente al siguiente:
 
 
 ```
@@ -130,10 +130,10 @@ El ejemplo anterior es funcionalmente equivalente a lo siguiente:
 
 <dl> <dt>
 
-[Directivas de preprocesador (DirectX HLSL)](dx-graphics-hlsl-appendix-preprocessor.md)
+[Directivas de preprocesador (HLSL de DirectX)](dx-graphics-hlsl-appendix-preprocessor.md)
 </dt> <dt>
 
-[\#pragma (Directiva) (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
+[\#directiva pragma (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
 </dt> </dl>
 
  

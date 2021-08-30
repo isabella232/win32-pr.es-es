@@ -1,8 +1,8 @@
 ---
-description: La \_ clase DiskSpaceCheck de CIM comprueba la cantidad de espacio en disco disponible del sistema y lo especifica en la propiedad AvailableDiskSpace.
+description: La clase CIM DiskSpaceCheck comprueba la cantidad de espacio disponible en disco del sistema y la \_ especifica en la propiedad AvailableDiskSpace.
 ms.assetid: 51440084-7713-4106-b05b-cd2827f4cb05
 ms.tgt_platform: multiple
-title: CIM_DiskSpaceCheck (clase)
+title: CIM_DiskSpaceCheck clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ad7452698b4969e78ee14cf4144e1f5c7883892b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cea65666ce515a0f508a23edfaebf941237dabe8
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153182"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886624"
 ---
-# <a name="cim_diskspacecheck-class"></a>\_Clase DiskSpaceCheck de CIM
+# <a name="cim_diskspacecheck-class"></a>Cim \_ DiskSpaceCheck (clase)
 
-La **clase \_ DiskSpaceCheck de CIM** comprueba la cantidad de espacio en disco disponible del sistema y lo especifica en la propiedad **AvailableDiskSpace** . Los detalles se comparan con el valor de la propiedad **AvailableSpace** del objeto de sistema de [**\_ archivos CIM**](cim-filesystem.md) que está asociado al objeto [**\_ ComputerSystem de CIM**](cim-computersystem.md) , que describe el entorno del sistema. Cuando el valor de la propiedad **AvailableSpace** es mayor o igual que el valor especificado en la propiedad **AvailableDiskSpace** , se cumple la condición.
+La **clase CIM \_ DiskSpaceCheck** comprueba la cantidad de espacio disponible en disco del sistema y la especifica en la **propiedad AvailableDiskSpace.** Los detalles se comparan con el valor de la propiedad **AvailableSpace** del objeto [**\_ FileSystem cim**](cim-filesystem.md) asociado al objeto [**\_ ComputerSystem de CIM,**](cim-computersystem.md) que describe el entorno del sistema. Cuando el valor de la **propiedad AvailableSpace** es mayor o igual que el valor especificado en la **propiedad AvailableDiskSpace,** se cumple la condición.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -63,20 +63,20 @@ class CIM_DiskSpaceCheck : CIM_Check
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ DiskSpaceCheck** tiene estos tipos de miembros:
+La **clase \_ DiskSpaceCheck de CIM** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **CIM \_ DiskSpaceCheck** tiene estos métodos.
+La **clase \_ DiskSpaceCheck de CIM** tiene estos métodos.
 
 
 
 | Método                                                      | Descripción                                                   |
 |:------------------------------------------------------------|:--------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-diskspacecheck.md) | Toma una acción concreta. No implementado por WMI.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-diskspacecheck.md) | Realiza una acción determinada. No implementado por WMI.<br/> |
 
 
 
@@ -84,25 +84,25 @@ La clase **CIM \_ DiskSpaceCheck** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ DiskSpaceCheck** tiene estas propiedades.
+La **clase \_ DiskSpaceCheck de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **AvailableDiskSpace**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ sistema de archivos CIM**](cim-filesystem.md).**AvailableSpace** "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) (" kilobytes ")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**AvailableSpace** "), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
 Espacio disponible en disco.
 
-Para obtener más información sobre el uso de valores **UInt64** en scripts, vea [scripting en WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
@@ -118,9 +118,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descripción textual del sujeto.
+Breve descripción textual del asunto.
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -133,12 +133,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador que se usa junto con otras claves para identificar de forma única la comprobación.
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -151,11 +151,11 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que el método [**Invoke**](invoke-method-in-class-cim-check.md) debe devolver **true**.
+Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
 
-Si es **false**, no se espera que la condición exista. Por ejemplo, un archivo no se encuentra en un sistema, por lo que el método [**Invoke**](invoke-method-in-class-cim-check.md) debe devolver **false**.
+Si **es FALSE**, no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -170,7 +170,7 @@ Tipo de acceso: solo lectura
 
 Descripción de los objetos.
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -183,12 +183,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Nombre**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre usado para identificar el elemento de software
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -201,41 +201,41 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Este es un identificador de este elemento de software.
+Se trata de un identificador para este elemento de software.
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-El estado de elemento de software de un elemento de software.
+Estado del elemento de software de un elemento de software.
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
 <span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>
 
-<span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>Se pueden **implementar** (0)
+<span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>**Implementable** (0)
 
 
 </dt> <dd>
 
-Describe los detalles necesarios para la distribución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado instalable (es decir, el siguiente estado).
+Describe los detalles necesarios para la distribución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado instalable (es decir, el estado siguiente).
 
 </dd> <dt>
 
@@ -246,29 +246,29 @@ Describe los detalles necesarios para la distribución correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para una instalación correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado del archivo ejecutable (es decir, el siguiente estado).
+Describe los detalles necesarios para una instalación correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado ejecutable (es decir, el estado siguiente).
 
 </dd> <dt>
 
 <span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>
 
-<span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>**Archivo ejecutable** (2)
+<span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>**Ejecutable** (2)
 
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en el estado de ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>En **ejecución** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**En** ejecución (3)
 
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
+Describe los detalles necesarios para supervisar y operar en un elemento start.
 
 </dd> </dl>
 
@@ -277,18 +277,18 @@ Describe los detalles necesarios para supervisar y operar en un elemento de inic
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Información del componente de software de DMTF \| 002,5 ")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software.
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -301,14 +301,14 @@ Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MACOS"></span><span id="macos"></span>
 
-<span id="MACOS"></span><span id="macos"></span>**MacOS** (2)
+<span id="MACOS"></span><span id="macos"></span>**MACOS** (2)
 
 
 </dt> <dd>
@@ -324,7 +324,7 @@ Mac OS
 
 </dt> <dd>
 
-ATT UNIX
+Att UNIX
 
 </dd> <dt>
 
@@ -344,7 +344,7 @@ ATT UNIX
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**UNIX digital** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix digital** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -373,7 +373,7 @@ HP-UX
 
 <span id="AIX"></span><span id="aix"></span>
 
-<span id="AIX"></span><span id="aix"></span>**Aix** (9)
+<span id="AIX"></span><span id="aix"></span>**AIX** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -394,7 +394,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**Os/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -412,7 +412,7 @@ Máquina virtual (VM) de Microsoft para Java
 
 <span id="MSDOS"></span><span id="msdos"></span>
 
-<span id="MSDOS"></span><span id="msdos"></span>**Msdos** (14)
+<span id="MSDOS"></span><span id="msdos"></span>**MSDOS** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -424,13 +424,13 @@ Máquina virtual (VM) de Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows 3.x
 
 </dd> <dt>
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
+<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
 
 
 </dt> <dd>
@@ -441,7 +441,7 @@ Windows 95
 
 <span id="WIN98"></span><span id="win98"></span>
 
-<span id="WIN98"></span><span id="win98"></span>**Win98** (17)
+<span id="WIN98"></span><span id="win98"></span>**WIN98** (17)
 
 
 </dt> <dd>
@@ -452,7 +452,7 @@ Windows 98
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-<span id="WINNT"></span><span id="winnt"></span>**WinNT** (18)
+<span id="WINNT"></span><span id="winnt"></span>**WINNT** (18)
 
 
 </dt> <dd>
@@ -463,7 +463,7 @@ Windows NT
 
 <span id="WINCE"></span><span id="wince"></span>
 
-<span id="WINCE"></span><span id="wince"></span>**WinCE** (19)
+<span id="WINCE"></span><span id="wince"></span>**WINCE** (19)
 
 
 </dt> <dd>
@@ -499,14 +499,14 @@ NCR 3000
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-<span id="DC_OS"></span><span id="dc_os"></span>**DC/os** (23)
+<span id="DC_OS"></span><span id="dc_os"></span>**DC/OS** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**UNIX que depende** de (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -534,7 +534,7 @@ NCR 3000
 
 <span id="IRIX"></span><span id="irix"></span>
 
-<span id="IRIX"></span><span id="irix"></span>**IRIX** (28)
+<span id="IRIX"></span><span id="irix"></span>**IIONES** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -567,7 +567,7 @@ NCR 3000
 
 </dt> <dd>
 
-Una serie
+Serie A
 
 </dd> <dt>
 
@@ -589,7 +589,7 @@ Tándem NSK
 
 </dt> <dd>
 
-Tándem
+Tándem NT
 
 </dd> <dt>
 
@@ -606,35 +606,35 @@ BS2000/OSD
 
 <span id="LINUX"></span><span id="linux"></span>
 
-<span id="LINUX"></span><span id="linux"></span>**Linux** (36)
+<span id="LINUX"></span><span id="linux"></span>**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Lynx** (37)
+<span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>**Estaciones** (37)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-<span id="XENIX"></span><span id="xenix"></span>**Xenix** (38)
+<span id="XENIX"></span><span id="xenix"></span>**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="VM_ESA"></span><span id="vm_esa"></span>
 
-<span id="VM_ESA"></span><span id="vm_esa"></span>**VM/sec** (39)
+<span id="VM_ESA"></span><span id="vm_esa"></span>**VM/ESA** (39)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**UNIX interactivo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -684,7 +684,7 @@ Mac OS 9
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel de Mach** (46)
+<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel de MACH** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -726,7 +726,7 @@ Mac OS 9
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**Menta** (52)
+<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -759,7 +759,7 @@ Mac OS 9
 
 </dt> <dd>
 
-Palm OS
+So de mano
 
 </dd> <dt>
 
@@ -809,36 +809,36 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Versión**"), [**\_ clave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. DMTF \| ComponentID \| 001,3 ")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**CIM \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versión de la operación.
 
-La versión de la operación debe estar en una de las siguientes formas:
+La versión de la operación debe tener uno de los siguientes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
-Esta propiedad se hereda de [**la \_ comprobación CIM**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -847,7 +847,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**Comprobación de CIM \_**](cim-check.md)
+[**Comprobación de \_ CIM**](cim-check.md)
 </dt> </dl>
 
  

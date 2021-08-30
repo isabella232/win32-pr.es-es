@@ -1,9 +1,9 @@
 ---
-title: TEXT. hoverForegroundColor
-description: El atributo hoverForegroundColor especifica o recupera el color de texto utilizado para el control de texto cuando el cursor del mouse se desplaza sobre él.
+title: TEXT.hoverForegroundColor
+description: El atributo hoverForegroundColor especifica o recupera el color de texto utilizado para el control Text cuando el cursor del mouse se desplaza sobre él.
 ms.assetid: 6d956ea3-8395-416f-ad22-a70b7beaf9c4
 keywords:
-- Media Player de Windows TEXT. hoverForegroundColor
+- TEXT.hoverForegroundColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72b4039d87dca77ce5150df41528a385e76d8f62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a7f9675eca27ff094b0929a1b138c189c65978227b35702a47a776e0262e36f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002025"
 ---
-# <a name="texthoverforegroundcolor"></a>TEXT. hoverForegroundColor
+# <a name="texthoverforegroundcolor"></a>TEXT.hoverForegroundColor
 
-El atributo **hoverForegroundColor** especifica o recupera el color de texto utilizado para el control de texto cuando el cursor del mouse se desplaza sobre él.
+El **atributo hoverForegroundColor** especifica o recupera el color de texto utilizado para el control Text cuando el cursor del mouse se desplaza sobre él.
 
 ``` syntax
         elementID.hoverForegroundColor
@@ -29,13 +29,13 @@ El atributo **hoverForegroundColor** especifica o recupera el color de texto uti
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si no se especifica **hoverForegroundColor** , se usa **foregroundColor** .
+Si **no se especifica hoverForegroundColor,** se usa **foregroundColor.**
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -57,7 +57,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. foregroundColor**](text-foregroundcolor.md)
+[**TEXT.foregroundColor**](text-foregroundcolor.md)
 </dt> </dl>
 
  

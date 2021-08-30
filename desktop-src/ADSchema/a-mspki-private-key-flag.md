@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-Private-Key-Flag
+title: Atributo ms-PKI-Private-Key-Flag
 description: Contiene las marcas relacionadas con la clave privada.
 ms.assetid: 5d5246b0-eca4-461e-956b-cdfa36576b14
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-PKI-Private-Key-Flag
-- Atributo mspki-Private-Key-Flag atributo AD Schema
+- ms-PKI-Private-Key-Flag attribute AD Schema
+- Esquema de AD del atributo msPKI-Private-Key-Flag
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc80873afcb65b323a5ea072520ef85535effb7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 22c67b678963f48d9bff8c4692e469200cee905b4132013d276c46387969eb2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803145"
 ---
-# <a name="ms-pki-private-key-flag-attribute"></a>atributo MS-PKI-Private-Key-Flag
+# <a name="ms-pki-private-key-flag-attribute"></a>Atributo ms-PKI-Private-Key-Flag
 
 Contiene las marcas relacionadas con la clave privada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-Private-Key-Flag                                                                           |
-| Nombre para mostrar de LDAP | Atributo mspki-Private-Key-Flag                                                                            |
-| Tamaño              | 4 bytes                                                                                           |
-| Actualizar privilegio  | Administrador de dominio                                                                              |
-| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto plantilla de certificado (MS-PKI-Certificate-template). |
+| CN                | ms-PKI-Private-Key-Flag                                                                           |
+| Ldap-Display-Name | msPKI-Private-Key-Flag                                                                            |
+| Size              | 4 bytes                                                                                           |
+| Actualizar privilegios  | Administrador de dominio                                                                              |
+| Frecuencia de actualización  | Cuando se edita, crea o clona el objeto de plantilla de certificado (ms-PKI-Certificate-Template). |
 | Attribute-Id      | 1.2.840.113556.1.4.1431                                                                           |
-| System-ID-GUID    | bab04ac2-0435-4709-9307-28380e7c7001                                                              |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                                                              |
+| System-Id-Guid    | solo 04ac2-0435-4709-9307-28380e7c7001                                                              |
+| Syntax            | [**Enumeración**](s-enumeration.md)                                                              |
 
 
 
@@ -54,18 +54,18 @@ Contiene las marcas relacionadas con la clave privada.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Contiene las marcas relacionadas con la clave privada.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Contiene las marcas relacionadas con la clave privada.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Contiene las marcas relacionadas con la clave privada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Contiene las marcas relacionadas con la clave privada.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
+| Clases usadas en        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

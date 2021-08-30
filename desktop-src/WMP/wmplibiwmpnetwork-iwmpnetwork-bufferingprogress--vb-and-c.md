@@ -1,11 +1,11 @@
 ---
-title: Propiedad bufferingProgress de IWMPNetwork
+title: Propiedad IWMPNetwork bufferingProgress
 description: La propiedad bufferingProgress obtiene el porcentaje de almacenamiento en búfer completado.
 ms.assetid: 8dc9f31e-7c34-4714-a633-d92c3da3052b
 keywords:
-- propiedades de bufferingProgress Media Player de Windows
-- propiedad bufferingProgress de Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, propiedad bufferingProgress
+- bufferingProgress, propiedad Reproductor de Windows Media
+- bufferingProgress, propiedad Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , propiedad bufferingProgress
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1da8a27ba41e5c4e201a5bdf0197992c30bce80b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f068f842a6e8e42f46a6fe8953aeeb667366b5925729594a2ccd60bd789c8afc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120000005"
 ---
-# <a name="iwmpnetworkbufferingprogress-property"></a>IWMPNetwork:: bufferingProgress (propiedad)
+# <a name="iwmpnetworkbufferingprogress-property"></a>Propiedad IWMPNetwork::bufferingProgress
 
-La propiedad **bufferingProgress** obtiene el porcentaje de almacenamiento en búfer completado.
+La **propiedad bufferingProgress** obtiene el porcentaje de almacenamiento en búfer completado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public ReadOnly Property bufferingProgress As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el progreso del almacenamiento en búfer expresado como un porcentaje.
+**System.Int32 que** es el progreso de almacenamiento en búfer expresado como porcentaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada vez que se detiene y se reinicia la reproducción, esta propiedad se restablece en cero. No se restablece si la reproducción está en pausa.
+Cada vez que se detiene y reinicia la reproducción, esta propiedad se restablece en cero. No se restablece si la reproducción está en pausa.
 
-El almacenamiento en búfer solo se aplica al contenido de streaming. Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando se establece la dirección URL para la reproducción mediante la propiedad **AxWindowsMediaPlayer. URL** .
+El almacenamiento en búfer solo se aplica al contenido de streaming. Esta propiedad obtiene información válida solo durante el tiempo de ejecución cuando la dirección URL para la reproducción se establece mediante la **propiedad AxWindowsMediaPlayer.URL.**
 
-Use **AxWindowsMediaPlayer. \_ WMPOCXEvents \_ BufferingEvent** para determinar cuándo se inicia o se detiene el almacenamiento en búfer.
+Use **AxWindowsMediaPlayer. \_ WMPOCXEvents \_ BufferingEvent** para determinar cuándo se inicia o detiene el almacenamiento en búfer.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **bufferingProgress** para mostrar el porcentaje de almacenamiento en búfer completado en una etiqueta, en respuesta al evento de almacenamiento en búfer. En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa bufferingProgress** para mostrar el porcentaje de almacenamiento en búfer completado en una etiqueta, en respuesta al evento de almacenamiento en búfer. En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -138,7 +138,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -148,10 +148,10 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
+[**AxWindowsMediaPlayer.URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. buffering (VB y C#)**](axwmplib-axwindowsmediaplayer-buffering.md)
+[**Evento AxWindowsMediaPlayer.Buffering (VB y C#)**](axwmplib-axwindowsmediaplayer-buffering.md)
 </dt> <dt>
 
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)

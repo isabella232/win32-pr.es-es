@@ -1,99 +1,53 @@
 ---
-title: Barra de título (referencia de elementos de interfaz de usuario de MSAA)
-description: En la barra de título de la parte superior de una ventana se muestra un icono y una línea de texto definidos por la aplicación.
+title: Barra de título (Referencia de elementos de la interfaz de usuario de MSAA)
+description: La barra de título de la parte superior de una ventana muestra un icono definido por la aplicación y una línea de texto.
 ms.assetid: f41ab777-6c94-4d8e-b743-c635e93df396
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1fee3642a67be85b27eac6a73ac7c452f2349d1
-ms.sourcegitcommit: 927b9c371f75f52b8011483edf3a4ba37d11ebe4
+ms.openlocfilehash: 620fa8716cb498857cdf12c652b99f409e6e4214
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "104420181"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122480131"
 ---
-# <a name="title-bar-msaa-ui-element-reference"></a>Barra de título (referencia de elementos de interfaz de usuario de MSAA)
+# <a name="title-bar-msaa-ui-element-reference"></a>Barra de título (Referencia de elementos de la interfaz de usuario de MSAA)
 
 > [!Note]  
-> En este tema se describen los objetos de **barra de título** para la referencia de elementos de interfaz de usuario de MSAA. La forma de crear objetos de **barra de título** en varios marcos de interfaz de usuario no se describe aquí. Consulte la documentación de referencia de la API del marco de interfaz de usuario que está usando.
+> En este tema se describen **los objetos de barra** de título para fines de referencia de elementos de la interfaz de usuario de MSAA. Aquí no se describe **cómo crear objetos de barra** de título en varios marcos de interfaz de usuario. Consulte la documentación de referencia de API para el marco de interfaz de usuario que está usando.
 
  
 
-En la barra de título de la parte superior de una ventana se muestra un icono y una línea de texto definidos por la aplicación. El texto especifica el nombre de la aplicación e indica el propósito de la ventana. La barra de título también permite que el usuario mueva la ventana con un mouse u otro dispositivo señalador.
+La barra de título de la parte superior de una ventana muestra un icono definido por la aplicación y una línea de texto. El texto especifica el nombre de la aplicación e indica el propósito de la ventana. La barra de título también permite al usuario mover la ventana con un mouse u otro dispositivo que señala.
 
-Las barras de título contienen al menos tres botones pequeños que minimizan, maximizan o restauran, y cierran la ventana asociada a la barra de título. Las barras de título también contienen un botón ayuda contextual. Las aplicaciones que se ejecutan en la versión Far-East del sistema operativo Windows también pueden contener botones del editor de métodos de entrada (IME). Microsoft Active Accessibility expone estos botones como elementos secundarios de la barra de título.
+Las barras de título contienen al menos tres botones pequeños que minimizan, maximizan o restauran, y cierran la ventana asociada a la barra de título. Las barras de título también contienen un botón de Ayuda contextual. Las aplicaciones que se ejecutan en la Far-East del sistema operativo Windows también pueden contener botones del Editor de métodos de entrada (IME). Microsoft Active Accessibility estos botones como elementos secundarios de la barra de título.
 
 ## <a name="iaccessible-methods"></a>Métodos IAccessible
 
-Las barras de título admiten los siguientes métodos [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Las barras de título admiten los [**siguientes métodos IAccessible:**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 -   [**accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
 -   [**accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)
 -   [**accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate)
 -   [**accSelect**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect)
 
-## <a name="iaccessible-properties"></a>Propiedades de IAccessible
+## <a name="iaccessible-properties"></a>Propiedades IAccessible
 
-Las barras de título admiten las siguientes propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+Las barras de título admiten las [**siguientes propiedades IAccessible:**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Propiedad</th>
-<th>Comentarios</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount"><strong>get_accChildCount</strong></a></td>
-<td>La propiedad <strong>ChildCount</strong> es cinco. La propiedad <strong>ChildCount</strong> incluye los botones IME y ayuda contextual incluso cuando no se muestran. Los botones que no se muestran tienen la propiedad <strong>State</strong> <a href="object-state-constants.md"><strong>STATE_SYSTEM_INVISIBLE</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><strong>get_accDescription</strong></td>
-<td>La propiedad <strong>Description</strong> de la propia barra de título es: &quot; muestra el nombre de la ventana y contiene controles para manipularla. &quot; Los botones secundarios de la barra de título tienen las siguientes descripciones:<br/>
-<ul>
-<li>&quot;Saca la ventana del</li>
-<li>&quot;Hace que la ventana esté completa</li>
-<li>&quot;Coloca un minimizado o</li>
-<li>&quot;Cierra la ventana&quot;</li>
-<li>&quot;Entra o sale del contexto-</li>
-<li>&quot;Muestra el teclado cuando se presiona&quot;</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>get_accName</strong></td>
-<td>La barra de título no admite la propiedad <strong>Name</strong> . Los botones secundarios de la barra de título tienen los nombres siguientes:
-<ul>
-<li>&quot;Minimizar&quot;</li>
-<li>&quot;Maximizar &quot; o &quot; restaurar &quot; ,</li>
-<li>&quot;Close&quot;</li>
-<li>&quot;Ayuda contextual&quot;</li>
-<li>&quot;IME&quot;</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><strong>get_accParent</strong></td>
-<td>La propiedad <strong>primaria</strong> de la barra de título es la ventana principal de la aplicación ( <a href="object-roles.md"><strong>ROLE_SYSTEM_WINDOW</strong></a> ) que tiene el mismo nombre de clase de ventana definida por la aplicación que la barra de título.</td>
-</tr>
-<tr class="odd">
-<td><strong>get_accRole</strong></td>
-<td>La propiedad de <strong>rol</strong> es <a href="object-roles.md"><strong>ROLE_SYSTEM_TITLEBAR</strong></a>. Los botones secundarios de la barra de título tienen la propiedad de <strong>rol</strong> <a href="object-roles.md"><strong>ROLE_SYSTEM_PUSHBUTTON</strong></a>.</td>
-</tr>
-<tr class="even">
-<td><strong>get_accState</strong></td>
-<td>La propiedad <strong>Estado</strong> de la barra de título y los botones secundarios puede ser una combinación de uno o varios de los <a href="object-state-constants.md">valores</a>siguientes: <a href="object-state-constants.md"><strong>STATE_SYSTEM_FOCUSABLE</strong></a>  |  <a href="object-state-constants.md"><strong>STATE_SYSTEM_INVISIBLE</strong></a>  |  <a href="object-state-constants.md"><strong>STATE_SYSTEM_OFFSCREEN</strong></a>  |  <a href="object-state-constants.md"><strong>STATE_SYSTEM_UNAVAILABLE</strong></a>  |  <a href="object-state-constants.md"><strong>STATE_SYSTEM_PRESSED</strong></a><br/></td>
-</tr>
-<tr class="odd">
-<td><strong>get_accValue</strong></td>
-<td>La propiedad <strong>Value</strong> es una cadena que es igual que el texto que se muestra en la barra de título.</td>
-</tr>
-</tbody>
-</table>
+
+| Propiedad | Comentarios | 
+|----------|----------|
+| <a href="/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount"><strong>get_accChildCount</strong></a> | La <strong>propiedad ChildCount</strong> es cinco. La <strong>propiedad ChildCount</strong> incluye los botones IME y Ayuda contextual incluso cuando no se muestran. Los botones que no se muestran tienen la <strong>propiedad State</strong> <a href="object-state-constants.md"><strong>STATE_SYSTEM_INVISIBLE</strong></a>. | 
+| <strong>get_accDescription</strong> | La <strong>propiedad Description</strong> de la propia barra de título es: "Muestra el nombre de la ventana y contiene controles para manipularla". Los botones secundarios de la barra de título tienen las descripciones siguientes:<br /><ul><li>"Mueve la ventana fuera de</li><li>"Hace que la ventana se llena</li><li>"Coloca un minimizado o</li><li>"Cierra la ventana"</li><li>"Entra o sale del contexto:</li><li>"Abre el teclado cuando se presiona"</li></ul> | 
+| <strong>get_accName</strong> | La propia barra de título no admite la <strong>propiedad Name.</strong> Los botones secundarios de la barra de título tienen los nombres siguientes:<ul><li>"Minimizar"</li><li>"Maximizar" o "Restaurar",</li><li>"Cerrar"</li><li>"Ayuda de contexto"</li><li>"IME"</li></ul> | 
+| <strong>get_accParent</strong> | La <strong>propiedad Parent</strong> de la barra de título es la ventana principal de la aplicación <a href="object-roles.md"><strong>(ROLE_SYSTEM_WINDOW</strong></a> ) que tiene el mismo nombre de clase de ventana definido por la aplicación que la barra de título. | 
+| <strong>get_accRole</strong> | La <strong>propiedad Role</strong> es <a href="object-roles.md"><strong>ROLE_SYSTEM_TITLEBAR</strong></a>. Los botones secundarios de la barra de título tienen la <strong>propiedad Role</strong> <a href="object-roles.md"><strong>ROLE_SYSTEM_PUSHBUTTON</strong></a>. | 
+| <strong>get_accState</strong> | La <strong>propiedad State</strong> de la barra de título y los botones secundarios puede ser una combinación de uno o varios de los valores <a href="object-state-constants.md">siguientes:</a> <a href="object-state-constants.md"><strong>STATE_SYSTEM_FOCUSABLE</strong></a> | <a href="object-state-constants.md"><strong>STATE_SYSTEM_INVISIBLE</strong></a> | <a href="object-state-constants.md"><strong>STATE_SYSTEM_OFFSCREEN</strong></a> | <a href="object-state-constants.md"><strong>STATE_SYSTEM_UNAVAILABLE</strong></a> | <a href="object-state-constants.md"><strong>STATE_SYSTEM_PRESSED</strong></a><br /> | 
+| <strong>get_accValue</strong> | La <strong>propiedad Value</strong> es una cadena que es la misma que el texto mostrado en la barra de título. | 
+
 
 
 
@@ -101,15 +55,15 @@ Las barras de título admiten las siguientes propiedades [**IAccessible**](/wind
 
 ## <a name="notes"></a>Notas
 
--   Aunque la barra de título de una aplicación tiene el indicador de estado de la marca de la propiedad **State** , nunca tiene el sistema de estado de marca **de estado** [**\_ \_ centrado**](object-state-constants.md). [**\_ \_**](object-state-constants.md) Establecer el foco en un objeto de barra de título se centra en la ventana de la aplicación.
--   Dado que el objeto de barra de título no admite [**Get \_ accChild**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchild), los botones de la barra de título son elementos simples. No admiten la propia interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) . El objeto de barra de título proporciona información sobre estos botones secundarios.
--   Dado que las barras de título no obtienen el foco y no tienen ninguna acción predeterminada, los métodos [**accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction) y [**Get \_ accDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction) no se admiten para este control.
+-   Aunque la barra de título  de una aplicación tiene la marca de propiedad [**State STATE \_ SYSTEM \_ FOCUSABLE**](object-state-constants.md), nunca tiene la marca **de** estado STATE [**SYSTEM \_ \_ FOCUSED**](object-state-constants.md). Al establecer el foco en un objeto de barra de título, se centra la ventana de la aplicación.
+-   Dado que el objeto de barra de título no admite [**get \_ accChild,**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchild)los botones de la barra de título son elementos simples. No admiten la interfaz [**IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) El objeto de barra de título proporciona información sobre estos botones secundarios.
+-   Dado que las barras de título no obtienen el foco y no tienen ninguna acción predeterminada, los métodos [**accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction) y [**\_ get accDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction) no se admiten para este control.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[IAccessible (interfaz)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+[IAccessible (Interfaz)](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
  

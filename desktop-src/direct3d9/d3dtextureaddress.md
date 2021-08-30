@@ -1,7 +1,7 @@
 ---
 description: Define constantes que describen los modos de direccionamiento de textura admitidos.
 ms.assetid: 5c03c55f-4a74-4b0e-ba05-e4a6582ff47c
-title: Enumeración D3DTEXTUREADDRESS (D3D9Types. h)
+title: Enumeración D3DTEXTUREADDRESS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 2cb1893541f80efb9bf85ea444b27bebba5dea29
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0ad5fad2699eac272c8abc173af47402130ecaafc918921cdef7717ccdab2095
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104083712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120069415"
 ---
-# <a name="d3dtextureaddress-enumeration"></a>Enumeración D3DTEXTUREADDRESS
+# <a name="d3dtextureaddress-enumeration"></a>D3DTEXTUREADDRESS (enumeración)
 
 Define constantes que describen los modos de direccionamiento de textura admitidos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,45 +44,45 @@ typedef enum D3DTEXTUREADDRESS {
 
 <dl> <dt>
 
-<span id="D3DTADDRESS_WRAP"></span><span id="d3dtaddress_wrap"></span>**D3DTADDRESS \_ Wrap**
+<span id="D3DTADDRESS_WRAP"></span><span id="d3dtaddress_wrap"></span>**D3DTADDRESS \_ WRAP**
 </dt> <dd>
 
-Coloque la textura en mosaico en cada unión de enteros. Por ejemplo, para los valores entre 0 y 3, la textura se repite tres veces; no se realiza la creación de reflejo.
+Mosaico de la textura en cada unión de entero. Por ejemplo, para los valores entre 0 y 3, la textura se repite tres veces; no se realiza ninguna creación de reflejo.
 
 </dd> <dt>
 
-<span id="D3DTADDRESS_MIRROR"></span><span id="d3dtaddress_mirror"></span>**Reflejo de D3DTADDRESS \_**
+<span id="D3DTADDRESS_MIRROR"></span><span id="d3dtaddress_mirror"></span>**D3DTADDRESS \_ MIRROR**
 </dt> <dd>
 
-Similar a D3DTADDRESS \_ Wrap, salvo que la textura se voltea en cada unión de enteros. para los valores entre 0 y 1, por ejemplo, la textura se corrige normalmente; entre 1 y 2, la textura se voltea (reflejada). entre 2 y 3, la textura es normal de nuevo; etc.
+Es similar a D3DTADDRESS WRAP, salvo que la textura \_ se volteará en cada unión de entero. para los valores entre 0 y 1, por ejemplo, la textura se aborda normalmente; entre 1 y 2, la textura se voltear (reflejada); entre 2 y 3, la textura vuelve a ser normal; y así sucesivamente.
 
 </dd> <dt>
 
-<span id="D3DTADDRESS_CLAMP"></span><span id="d3dtaddress_clamp"></span>**\_Abrazadera D3DTADDRESS**
+<span id="D3DTADDRESS_CLAMP"></span><span id="d3dtaddress_clamp"></span>**D3DTADDRESS \_ CLAMP**
 </dt> <dd>
 
-Las coordenadas de textura fuera del intervalo \[ 0,0, 1,0 \] se establecen en el color de textura en 0,0 o 1,0, respectivamente.
+Las coordenadas de textura fuera del intervalo 0,0, 1,0 se establecen en el color de textura en \[ \] 0,0 o 1,0, respectivamente.
 
 </dd> <dt>
 
-<span id="D3DTADDRESS_BORDER"></span><span id="d3dtaddress_border"></span>**Borde de D3DTADDRESS \_**
+<span id="D3DTADDRESS_BORDER"></span><span id="d3dtaddress_border"></span>**BORDE \_ D3DTADDRESS**
 </dt> <dd>
 
-Las coordenadas de textura fuera del intervalo \[ 0,0, 1,0 \] se establecen en el color del borde.
+Las coordenadas de textura fuera \[ del intervalo 0,0, 1,0 \] se establecen en el color del borde.
 
 </dd> <dt>
 
 <span id="D3DTADDRESS_MIRRORONCE"></span><span id="d3dtaddress_mirroronce"></span>**D3DTADDRESS \_ MIRRORONCE**
 </dt> <dd>
 
-Similar a D3DTADDRESS \_ Mirror y D3DTADDRESS \_ Clamp. Toma el valor absoluto de la coordenada de textura (por lo tanto, la creación de reflejo alrededor de 0) y, a continuación, se fija en el valor máximo. El uso más común es para las texturas de volumen, donde la compatibilidad con el modo completo de D3DTADDRESS \_ MIRRORONCE Texture-Addressing no es necesario, pero los datos son simétricos alrededor de un eje.
+Similar a D3DTADDRESS \_ MIRROR y D3DTADDRESS \_ CLAMP. Toma el valor absoluto de la coordenada de textura (por lo tanto, la creación de reflejo alrededor de 0) y, a continuación, fija al valor máximo. El uso más común es para las texturas de volumen, donde la compatibilidad con el modo de direccionamiento de textura D3DTADDRESS MIRRORONCE completo no es necesaria, pero los datos son simétricos alrededor de un \_ eje.
 
 </dd> <dt>
 
-<span id="D3DTADDRESS_FORCE_DWORD"></span><span id="d3dtaddress_force_dword"></span>**D3DTADDRESS \_ forzar \_ DWORD**
+<span id="D3DTADDRESS_FORCE_DWORD"></span><span id="d3dtaddress_force_dword"></span>**D3DTADDRESS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -92,7 +92,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

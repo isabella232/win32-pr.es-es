@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Quartz.dll
-ms.openlocfilehash: 9560280fa6f16699af907cdb5cf682b9c4bb1277
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: b1d3541eb91d4ee2e193db3a81f6524f72b615c029346d84e0c9a4d83e5b57a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119965335"
 ---
-# <a name="iamfilterdataparsefilterdata-method"></a>IAMFilterData::P arseFilterData (método)
+# <a name="iamfilterdataparsefilterdata-method"></a>IamFilterData::P arseFilterData (método)
 
 > [!Note]  
 > Esta interfaz está desusada. Las nuevas aplicaciones no deben usarla.
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error
 ## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El encabezado Fil \_ data.h se encuentra en el directorio [Ejemplo del](mapper-sample.md) asignador en la Windows SDK.
+> El encabezado Fil \_ data.h se encuentra en el directorio [Mapper Sample](mapper-sample.md) del SDK Windows.
 
  
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentIndexTuplesSecondaryIndexOnlyException'
-title: Constructor de EsentIndexTuplesSecondaryIndexOnlyException
+description: 'Más información sobre: Constructor EsentIndexTuplesSecondaryIndexOnlyException'
+title: Constructor EsentIndexTuplesSecondaryIndexOnlyException
 TOCTitle: 'EsentIndexTuplesSecondaryIndexOnlyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentIndexTuplesSecondaryIndexOnlyException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentindextuplessecondaryindexonlyexception.esentindextuplessecondaryindexonlyexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1a3b9ea0b3f00c75adebbcfbbbfff155b76f9f9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 250ab097830163f0ff6c4ee63f1a8b5cf09c055d98557d0af4d786d2de79535f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783945"
 ---
-# <a name="esentindextuplessecondaryindexonlyexception-constructor"></a>Constructor de EsentIndexTuplesSecondaryIndexOnlyException
+# <a name="esentindextuplessecondaryindexonlyexception-constructor"></a>Constructor EsentIndexTuplesSecondaryIndexOnlyException
 
 Inicializa una nueva instancia de la clase EsentIndexTuplesSecondaryIndexOnlyException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentIndexTuplesSecondaryIndexOnlyException()
 public EsentIndexTuplesSecondaryIndexOnlyException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentIndexTuplesSecondaryIndexOnlyException()
 
 [Miembros de EsentIndexTuplesSecondaryIndexOnlyException](./esentindextuplessecondaryindexonlyexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b57528899b8d78ecee31f6dd54c2ac8decece383
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 890114147950d74dcf2c9004a34cc2c0ab30f61c
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122984438"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122471741"
 ---
 # <a name="jetossnapshotend-function"></a>Función JetOSSnapshotEnd
 
@@ -54,7 +54,7 @@ Identificador de la sesión de instantánea.
 Opciones de esta llamada. Este parámetro puede tener una combinación de los siguientes valores.
 
 
-| <p>Value</p> | <p>Significado</p> | 
+| <p>Valor</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>0</p> | <p>Final correcto de la sesión de instantánea.</p> | 
 | <p>JET_bitAbortSnapshot</p> | <p>Sesión de instantánea anulada.</p> | 
@@ -80,7 +80,7 @@ Si esta función se realiza correctamente, se completará una sesión de instant
 
 Si se produce un error en esta función, JET_errOSSnapshotTimeOut el código devuelto y finaliza la sesión de instantánea actual, pero la inmovilización de las E/S durante el período de instantánea no se respeta internamente. Para todos los demás errores, no se cambiará el estado de la sesión de instantánea.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
 Se llama a esta función solo si se llamó [a JetOSSnapshotThaw](./jetossnapshotthaw-function.md) con JET_bitContinueAfterThaw.
 
@@ -89,19 +89,13 @@ La sesión de instantánea debe completarse para que se lleve a cabo la comproba
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte también
 
 [Parámetros de control de errores](./error-handling-parameters.md)  
-[Errores extensibles Storage motor de instalación](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de ejecución](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotThaw](./jetossnapshotthaw-function.md)

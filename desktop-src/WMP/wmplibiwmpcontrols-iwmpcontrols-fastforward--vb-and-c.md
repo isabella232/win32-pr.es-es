@@ -1,11 +1,11 @@
 ---
-title: IWMPControls fastForward, método
-description: El método fastForward inicia la reproducción rápida del elemento multimedia en la dirección de avance. | IWMPControls fastForward, método
+title: Método fastForward de IWMPControls
+description: El método fastForward inicia el juego rápido del elemento multimedia en la dirección hacia delante. | Método fastForward de IWMPControls
 ms.assetid: 44609d63-1d1a-489c-ac17-60b6d3ddc588
 keywords:
-- método fastForward de Windows Media Player
-- método fastForward Windows Media Player, interfaz IWMPControls
-- Interfaz IWMPControls Windows Media Player, método fastForward
+- Método fastForward Reproductor de Windows Media
+- Método fastForward Reproductor de Windows Media interfaz , IWMPControls
+- Interfaz IWMPControls Reproductor de Windows Media método , fastForward
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d99307a7b188b238157af62833273b8c724eab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f283ef56f3831f58b8d57f3d172ad3b80163ee62fdaa24b05bdca02c68cafcf5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031335"
 ---
-# <a name="iwmpcontrolsfastforward-method"></a>IWMPControls:: fastForward (método)
+# <a name="iwmpcontrolsfastforward-method"></a>IWMPControls::fastForward (método)
 
-El método **fastForward** inicia la reproducción rápida del elemento multimedia en la dirección de avance.
+El **método fastForward** inicia el juego rápido del elemento multimedia en la dirección hacia delante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,15 +53,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **fastForward** reproduce el clip cinco veces la velocidad normal. Llamar a **fastForward** es equivalente a especificar 5,0 para la velocidad estableciendo la propiedad **IWMPSettings. rate** . Si posteriormente se cambia la frecuencia, o si se llama a **IWMPControls. Play** o **IWMPControls. stop** , Windows Media Player dejará de reenviar rápidamente.
+El **método fastForward** reproduce el clip a una velocidad cinco veces mayor que la normal. Llamar **a fastForward** equivale a especificar 5,0 para la velocidad estableciendo la **propiedad IWMPSettings.rate.** Si posteriormente se cambia la velocidad, o si se llama a **IWMPControls.play** o **IWMPControls.stop,** Reproductor de Windows Media el reenvío rápido.
 
-El método **fastForward** no funciona para las difusiones en vivo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, pase el valor **System. String** "Fastforward" a la propiedad **IWMPControls. isavailable** (el método **IWMPControls. Get \_ isavailable** en C#).
+El **método fastForward** no funciona para difusiones en directo y determinados tipos de medios. Para determinar si puede avanzar rápidamente en un clip, pase el valor **System.String** "FastForward" a la propiedad **IWMPControls.isAvailable** (el método **IWMPControls.get \_ isAvailable** en C#).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **fastForward** para reenviar rápidamente el elemento multimedia actual en respuesta al evento click de un botón. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa fastForward para** reenviar rápidamente el elemento multimedia actual en respuesta al evento Click de un botón. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -108,7 +108,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -121,16 +121,16 @@ End Sub
 [**Interfaz IWMPControls (VB y C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. isAvailable (VB y C#)**](iwmpcontrols-isavailable--vb-and-c.md)
+[**IWMPControls.isAvailable (VB y C#)**](iwmpcontrols-isavailable--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. Play (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
+[**IWMPControls.play (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-play--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. STOP (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
+[**IWMPControls.stop (VB y C#)**](wmplibiwmpcontrols-iwmpcontrols-stop--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. Rate (VB y C#)**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)
+[**IWMPSettings.rate (VB y C#)**](wmplibiwmpsettings-iwmpsettings-rate--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI SystemNetworkConnections Association de Win32 relaciona una conexión de red y el sistema del equipo en el que reside.
+description: La clase WMI de asociación SystemNetworkConnections de Win32 relaciona una conexión de red y el sistema informático en \_ el que reside.
 ms.assetid: 7c47f653-74a9-4729-a72c-94930181f8c9
 ms.tgt_platform: multiple
-title: Win32_SystemNetworkConnections (clase)
+title: Win32_SystemNetworkConnections clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e90562dd4f98a00cf848fb83a9e3051b387241e4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8004ab6cecfec7ac17a0aee15e3b7869a2d35977901971f8b5dbf3790313c942
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828025"
 ---
-# <a name="win32_systemnetworkconnections-class"></a>\_Clase Win32 SystemNetworkConnections
+# <a name="win32_systemnetworkconnections-class"></a>Clase \_ SystemNetworkConnections de Win32
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemNetworkConnections** Association de Win32 relaciona una conexión de red y el sistema del equipo en el que reside.
+La clase [WMI](../wmisdk/retrieving-a-class.md) de asociación **\_ SystemNetworkConnections de Win32** relaciona una conexión de red y el sistema informático en el que reside.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
@@ -61,10 +61,10 @@ Tipo de datos: **Win32 \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Referencia a la instancia de que representa el sistema del equipo conectado a la red.
+Referencia a la instancia de que representa el sistema de equipo conectado a la red.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Tipo de datos: **Win32 \_ NetworkConnection**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**invalidación**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkConnection")
+Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("PartComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ NetworkConnection")
 </dt> </dl>
 
-Referencia a la instancia de que representa la conexión de red a este equipo.
+Referencia a la instancia de que representa la conexión de red a este sistema informático.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ SystemNetworkConnections de Win32** se deriva de [**\_ SystemComponent de CIM**](cim-systemcomponent.md).
+La **clase \_ SystemNetworkConnections de Win32** se deriva de [**CIM \_ SystemComponent**](cim-systemcomponent.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ La **clase \_ SystemNetworkConnections de Win32** se deriva de [**\_ SystemCompo
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La **clase \_ SystemNetworkConnections de Win32** se deriva de [**\_ SystemCompo
 
 <dl> <dt>
 
-[**\_SYSTEMCOMPONENT CIM**](cim-systemcomponent.md)
+[**CIM \_ SystemComponent**](cim-systemcomponent.md)
 </dt> <dt>
 
 [Clases de sistema operativo](./operating-system-classes.md)

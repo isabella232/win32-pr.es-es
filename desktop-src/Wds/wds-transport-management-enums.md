@@ -1,35 +1,35 @@
 ---
-title: Enumeraciones de administración de transporte de WDS
+title: Enumeraciones Transport Management WDS
 ms.assetid: dad1b0a0-2db8-4af8-a149-04c9e7788487
-description: 'Más información sobre: enumeraciones de administración de transporte de WDS'
+description: 'Más información sobre: Enumeraciones de Transport Management WDS'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2086c11bcadefc2557a293213050e550896eed76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbc2e6d338e13b0ac389408a6e6ea92c1ac6fbad034475e48144d34a42b76308
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120072015"
 ---
-# <a name="wds-transport-management-enumerations"></a>Enumeraciones de administración de transporte de WDS
+# <a name="wds-transport-management-enumerations"></a>Enumeraciones Transport Management WDS
 
-La API de administración de transporte de servicios de implementación de Windows (WDS) utiliza las enumeraciones siguientes:
+Windows Deployment Services (WDS) Transport Management API usa las enumeraciones siguientes:
 
--   [**\_marcas de \_ componentes de diagnóstico de WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_diagnostics_component_flags)
--   [**WDSTRANSPORT \_ tipo de desconexión \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_disconnect_type)
--   [**\_marcas de características de WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_feature_flags)
--   [**\_tipo de \_ origen de dirección IP \_ de WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_ip_address_source_type)
--   [**\_tipo de \_ dirección \_ IP de WDSTRANSPORT**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_ip_address_type)
--   [**\_tipo de espacio de nombres WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_namespace_type)
--   [**\_tipo de \_ Perfil de red de WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_network_profile_type)
--   [**\_marcas de protocolo WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_protocol_flags)
--   [**\_notificación del servicio WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_service_notification)
--   [**WDSTRANSPORT \_ \_ tipo de \_ control de cliente lento \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_slow_client_handling_type)
+-   [**MARCAS DE COMPONENTES DE DIAGNÓSTICO DE WDSTRANSPORT \_ \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_diagnostics_component_flags)
+-   [**TIPO DE \_ DESCONEXIÓN DE WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_disconnect_type)
+-   [**MARCAS DE CARACTERÍSTICAS DE WDSTRANSPORT \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_feature_flags)
+-   [**TIPO DE ORIGEN \_ DE DIRECCIÓN IP WDSTRANSPORT \_ \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_ip_address_source_type)
+-   [**TIPO DE \_ DIRECCIÓN IP WDSTRANSPORT \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_ip_address_type)
+-   [**TIPO DE ESPACIO DE NOMBRES WDSTRANSPORT \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_namespace_type)
+-   [**TIPO DE PERFIL \_ DE RED WDSTRANSPORT \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_network_profile_type)
+-   [**MARCAS DE PROTOCOLO WDSTRANSPORT \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_protocol_flags)
+-   [**NOTIFICACIÓN DEL SERVICIO WDSTRANSPORT \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_service_notification)
+-   [**WDSTRANSPORT SLOW CLIENT HANDLING TYPE (TIPO \_ DE CONTROL DE CLIENTE LENTO DE WDSTRANSPORT) \_ \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_slow_client_handling_type)
 
 Lo siguiente está disponible a partir de Windows 8 y Windows Server 2012.
 
--   [**\_funcionalidad de TFTP de WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_tftp_capability)
--   [**\_Directiva de \_ Puerto \_ UDP de WDSTRANSPORT**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_udp_port_policy)
+-   [**FUNCIONALIDAD \_ TFTP DE WDSTRANSPORT \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_tftp_capability)
+-   [**DIRECTIVA DE PUERTO UDP DE WDSTRANSPORT \_ \_ \_**](/windows/win32/api/wdstptmgmt/ne-wdstptmgmt-wdstransport_udp_port_policy)
 
  
 

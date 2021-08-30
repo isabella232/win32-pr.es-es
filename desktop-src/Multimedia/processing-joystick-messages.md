@@ -1,24 +1,24 @@
 ---
-title: Procesamiento de mensajes de joystick
-description: Procesamiento de mensajes de joystick
+title: Procesamiento de mensajes de mensajes
+description: Procesamiento de mensajes de mensajes
 ms.assetid: d21a9d49-1fc0-4899-9083-87c3cf4e0e62
 keywords:
-- joysticks, mensajes
-- Mensaje MM_JOY1MOVE
-- Mensaje MM_JOY1BUTTONDOWN
-- Mensaje MM_JOY1BUTTONUP
+- y, por último, mensajes
+- MM_JOY1MOVE mensaje
+- MM_JOY1BUTTONDOWN mensaje
+- MM_JOY1BUTTONUP mensaje
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f2337d392c0104dcb49839b19c5fb615481ee2a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 913af14abea7c1f888e3650739014ee0063e8ccea8c5b339eafcd688da80a47c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120037895"
 ---
-# <a name="processing-joystick-messages"></a>Procesamiento de mensajes de joystick
+# <a name="processing-joystick-messages"></a>Procesamiento de mensajes de mensajes
 
-En el ejemplo siguiente se muestra cómo una aplicación podría responder a los movimientos del joystick y a los cambios en los Estados del botón. Cuando el joystick cambia de posición, la aplicación mueve el cursor y, si se presiona cualquiera de los botones, dibuja un orificio de viñeta en el escritorio. Cuando se presiona un botón del joystick, la aplicación dibuja un orificio en el escritorio y reproduce un sonido continuamente hasta que se suelta un botón. Los mensajes que se van a inspeccionar son [**mm \_ JOY1MOVE**](mm-joy1move.md), [**mm \_ JOY1BUTTONDOWN**](mm-joy1buttondown.md)y [**mm \_ JOY1BUTTONUP**](mm-joy1buttonup.md).
+En el ejemplo siguiente se muestra cómo una aplicación podría responder a movimientos y cambios en los estados del botón. Cuando cambia de posición, la aplicación mueve el cursor y, si se presiona cualquiera de los botones, dibuja un hueco de viñeta en el escritorio. Cuando se presiona un botón de botón de botón, la aplicación dibuja un hueco en el escritorio y reproduce un sonido continuamente hasta que se libera un botón. Los mensajes que se van a ver [**son MM \_ SOAP1MOVE,**](mm-joy1move.md) [**MM \_ SOAP1BUTTONDOWN**](mm-joy1buttondown.md)y [**MM \_ SOAP1BUTTONUP.**](mm-joy1buttonup.md)
 
 
 ```C++
@@ -47,9 +47,9 @@ case MM_JOY1BUTTONUP :                 // button is up
 
 
 
- 
+ 
 
- 
+ 
 
 
 

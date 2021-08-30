@@ -1,9 +1,9 @@
 ---
-title: función glClearAccum (GL. h)
-description: La función glClearAccum especifica los valores claros para el búfer de acumulación.
+title: Función glClearAccum (Gl.h)
+description: La función glClearAccum especifica los valores sin borrar para el búfer de acumulación.
 ms.assetid: 77d8f340-be47-43f4-96fc-31025a4c8b4e
 keywords:
-- glClearAccum (función) OpenGL
+- Función glClearAccum OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3098e87a47509b8c05035171a8f31e57d8618424
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8e4e5b02b52ac72e5694b1c5f912dd8dd98fb8dda5b623b28addd20fccbb7dd1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082075"
 ---
-# <a name="glclearaccum-function"></a>glClearAccum función)
+# <a name="glclearaccum-function"></a>Función glClearAccum
 
-La función **glClearAccum** especifica los valores claros para el búfer de acumulación.
+La **función glClearAccum** especifica los valores sin borrar para el búfer de acumulación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,31 +43,31 @@ void WINAPI glClearAccum(
 
 <dl> <dt>
 
-*alerta* 
+*Rojo* 
 </dt> <dd>
 
-El valor rojo que se utiliza cuando se borra el búfer de acumulación. El valor predeterminado es cero.
+Valor rojo que se usa cuando se borra el búfer de acumulación. El valor predeterminado es cero.
 
 </dd> <dt>
 
-*verde* 
+*Verde* 
 </dt> <dd>
 
-El valor verde que se utiliza cuando se borra el búfer de acumulación. El valor predeterminado es cero.
+Valor verde que se usa cuando se borra el búfer de acumulación. El valor predeterminado es cero.
 
 </dd> <dt>
 
-*azul* 
+*Azul* 
 </dt> <dd>
 
-El valor azul que se utiliza cuando se borra el búfer de acumulación. El valor predeterminado es cero.
+Valor azul que se usa cuando se borra el búfer de acumulación. El valor predeterminado es cero.
 
 </dd> <dt>
 
 *alpha* 
 </dt> <dd>
 
-Valor alfa que se utiliza cuando se borra el búfer de acumulación. El valor predeterminado es cero.
+Valor alfa utilizado cuando se borra el búfer de acumulación. El valor predeterminado es cero.
 
 </dd> </dl>
 
@@ -77,25 +77,25 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glClearAccum** especifica los valores rojo, verde, azul y alfa usados por [**glClear**](glclear.md) para borrar el búfer de acumulación.
+La **función glClearAccum** especifica los valores rojo, verde, azul y alfa que [**usa glClear**](glclear.md) para borrar el búfer de acumulación.
 
-Los valores especificados por **glClearAccum** se fijan en el intervalo \[ 1, 1 \] .
+Los valores especificados **por glClearAccum** se fijan en el intervalo \[ 1,1. \]
 
-La siguiente función recupera información relacionada con **glClearAccum**:
+La función siguiente recupera información relacionada con **glClearAccum**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ \_ valor Clear acumulado de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento \_ GL ACCUM CLEAR \_ \_ VALUE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ La siguiente función recupera información relacionada con **glClearAccum**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

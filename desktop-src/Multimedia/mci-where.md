@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_WHERE (mmsystem. h)
-description: El \_ comando MCI donde obtiene el rectángulo de recorte para el dispositivo de vídeo.
+title: MCI_WHERE comando (Mmsystem.h)
+description: El comando MCI \_ WHERE obtiene el rectángulo de recorte para el dispositivo de vídeo.
 ms.assetid: f64a7e49-4ee1-4836-ba9a-0bbdc47626b3
 keywords:
-- Comando de MCI_WHERE de Windows multimedia
+- MCI_WHERE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6619131319863d1159a3bdb8bb85d366243544a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 922c68340cd776c8c23c0c1b60c3aa4de67e4e713d27e54510d2bf0f6978f442
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783745"
 ---
-# <a name="mci_where-command"></a>\_Comando MCI Where
+# <a name="mci_where-command"></a>Comando WHERE de MCI \_
 
-El \_ comando MCI donde obtiene el rectángulo de recorte para el dispositivo de vídeo. Los dispositivos de vídeo digital y de superposición reconocen este comando. Los miembros **superior** e **izquierdo** del [Rect](/previous-versions//ms536136(v=vs.85)) devuelto contienen el origen del rectángulo de recorte y los miembros **derecho** e **inferior** contienen el ancho y el alto del rectángulo de recorte. (Este no es el uso estándar de los miembros **derecho** e **inferior** ).
+El comando MCI \_ WHERE obtiene el rectángulo de recorte para el dispositivo de vídeo. Los dispositivos de superposición de vídeo y vídeo digital reconocen este comando. Los **miembros** superior **e izquierdo** del [RECT](/previous-versions//ms536136(v=vs.85)) devuelto contienen el  origen  del rectángulo de recorte, y los miembros derecho e inferior contienen el ancho y el alto del rectángulo de recorte. (Este no es el uso estándar de los **miembros derecho** **e** inferior).
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,66 +50,66 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_La notificación de MCI, la espera de MCI \_ o, para dispositivos de vídeo digital, la prueba de MCI \_ . Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital, MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpQuery"></span><span id="lpquery"></span><span id="LPQUERY"></span>*lpQuery*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms genérica de MCI**](mci-generic-parms.md) . (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura con una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Con el tipo de dispositivo **DigitalVideo** se usan las siguientes marcas adicionales:
+Las siguientes marcas adicionales se usan con el **tipo de dispositivo digitalvideo:**
 
 <dl> <dt>
 
-<span id="MCI_DGV_WHERE_DESTINATION"></span><span id="mci_dgv_where_destination"></span>MCI \_ DGV \_ donde \_ destino
+<span id="MCI_DGV_WHERE_DESTINATION"></span><span id="mci_dgv_where_destination"></span>MCI \_ DGV \_ WHERE \_ DESTINATION
 </dt> <dd>
 
-Obtiene una descripción de la región rectangular utilizada para mostrar vídeo e imágenes en el área cliente de la ventana actual.
+Obtiene una descripción de la región rectangular que se usa para mostrar vídeo e imágenes en el área cliente de la ventana actual.
 
 </dd> <dt>
 
-<span id="MCI_DGV_WHERE_FRAME"></span><span id="mci_dgv_where_frame"></span>\_DGV MCI \_ donde \_ marco
+<span id="MCI_DGV_WHERE_FRAME"></span><span id="mci_dgv_where_frame"></span>MCI \_ DGV \_ WHERE \_ FRAME
 </dt> <dd>
 
-Obtiene una descripción de la región rectangular del búfer de fotogramas en el que se escalan las imágenes del rectángulo de vídeo. Las coordenadas del rectángulo se colocan en el miembro **RC** de la estructura identificada por *lpQuery*.
+Obtiene una descripción de la región rectangular del búfer de fotogramas en la que se escalan las imágenes del rectángulo de vídeo. Las coordenadas del rectángulo se colocan en el **miembro rc** de la estructura identificada por *lpQuery*.
 
 </dd> <dt>
 
-<span id="MCI_DGV_WHERE_MAX"></span><span id="mci_dgv_where_max"></span>MCI \_ DGV \_ Where \_ Max
+<span id="MCI_DGV_WHERE_MAX"></span><span id="mci_dgv_where_max"></span>MCI \_ DGV \_ WHERE \_ MAX
 </dt> <dd>
 
-Cuando se usa con MCI \_ DGV \_ donde \_ Destination o MCI \_ DGV \_ Where \_ source, el rectángulo devuelto indica el ancho y el alto máximos de la región especificada. Cuando se usa con la ventana de MCI \_ DGV \_ Where \_ , el rectángulo devuelto indica el tamaño de la pantalla completa.
+Cuando se usa con MCI DGV WHERE DESTINATION o \_ \_ \_ MCI \_ DGV WHERE SOURCE, el rectángulo devuelto indica el ancho y alto máximos de \_ \_ la región especificada. Cuando se usa con MCI \_ DGV WHERE WINDOW, el rectángulo devuelto \_ indica el tamaño de toda la \_ pantalla.
 
 </dd> <dt>
 
-<span id="MCI_DGV_WHERE_SOURCE"></span><span id="mci_dgv_where_source"></span>MCI \_ DGV \_ Where \_ source
+<span id="MCI_DGV_WHERE_SOURCE"></span><span id="mci_dgv_where_source"></span>MCI \_ DGV \_ WHERE \_ SOURCE
 </dt> <dd>
 
-Obtiene una descripción de la región rectangular (recortada a partir del búfer de fotogramas) que se ajusta para ajustarse al rectángulo de destino de la pantalla.
+Obtiene una descripción de la región rectangular (recortada del búfer del marco) que se ajusta al rectángulo de destino en la pantalla.
 
 </dd> <dt>
 
-<span id="MCI_DGV_WHERE_VIDEO"></span><span id="mci_dgv_where_video"></span>DGV de MCI \_ \_ donde \_ vídeo
+<span id="MCI_DGV_WHERE_VIDEO"></span><span id="mci_dgv_where_video"></span>MCI \_ DGV \_ WHERE \_ VIDEO
 </dt> <dd>
 
-Obtiene una descripción de la región rectangular recortada del origen de presentación para rellenar el rectángulo del marco en el búfer de fotogramas. Las coordenadas del rectángulo se colocan en el miembro **RC** de la estructura identificada por *lpQuery*.
+Obtiene una descripción de la región rectangular recortada del origen de la presentación para rellenar el rectángulo del marco en el búfer del marco. Las coordenadas del rectángulo se colocan en el **miembro rc** de la estructura identificada por *lpQuery*.
 
 </dd> <dt>
 
-<span id="MCI_DGV_WHERE_WINDOW"></span><span id="mci_dgv_where_window"></span>\_ventana de DGV MCI \_ \_
+<span id="MCI_DGV_WHERE_WINDOW"></span><span id="mci_dgv_where_window"></span>VENTANA \_ DE MCI DGV \_ \_ WHERE
 </dt> <dd>
 
 Obtiene una descripción del marco de la ventana de presentación.
@@ -119,51 +119,51 @@ Obtiene una descripción del marco de la ventana de presentación.
 
 </dt> <dd></dd> </dl>
 
-En el caso de los dispositivos de vídeo digital, el parámetro *lpQuery* apunta a una **\_ DGV MCI \_ donde \_ parms** estructura. La estructura **MCI \_ DGV \_ donde \_ parms** es idéntica a la estructura [**MCI \_ DGV \_ Rect \_ parms**](/windows/win32/api/digitalv/ns-digitalv-mci_dgv_rect_parms) .
+En el caso de los dispositivos de vídeo digital, el parámetro *lpQuery* apunta a una **estructura de MCI \_ DGV WHERE \_ \_ PARMS.** La **estructura MCI \_ DGV WHERE \_ \_ PARMS** es idéntica a la estructura [**\_ MCI DGV \_ RECT \_ PARMS.**](/windows/win32/api/digitalv/ns-digitalv-mci_dgv_rect_parms)
 
-Se usan las siguientes marcas adicionales con el tipo de dispositivo **superpuesto** :
+Las siguientes marcas adicionales se usan con el tipo **de dispositivo de** superposición:
 
 <dl> <dt>
 
-<span id="MCI_OVLY_WHERE_DESTINATION"></span><span id="mci_ovly_where_destination"></span>MCI \_ OVLY \_ donde \_ destino
+<span id="MCI_OVLY_WHERE_DESTINATION"></span><span id="mci_ovly_where_destination"></span>MCI \_ OVLY \_ WHERE \_ DESTINATION
 </dt> <dd>
 
-Obtiene el rectángulo de presentación de destino. Las coordenadas del rectángulo se colocan en el miembro **RC** de la estructura identificada por *lpQuery*.
+Obtiene el rectángulo de presentación de destino. Las coordenadas del rectángulo se colocan en el **miembro rc** de la estructura identificada por *lpQuery*.
 
 </dd> <dt>
 
-<span id="MCI_OVLY_WHERE_FRAME"></span><span id="mci_ovly_where_frame"></span>\_OVLY MCI \_ donde \_ marco
+<span id="MCI_OVLY_WHERE_FRAME"></span><span id="mci_ovly_where_frame"></span>MCI \_ OVLY \_ WHERE \_ FRAME
 </dt> <dd>
 
-Obtiene el rectángulo del marco superpuesto. Las coordenadas del rectángulo se colocan en el miembro **RC** de la estructura identificada por *lpQuery*.
+Obtiene el rectángulo del marco de superposición. Las coordenadas del rectángulo se colocan en el **miembro rc** de la estructura identificada por *lpQuery*.
 
 </dd> <dt>
 
-<span id="MCI_OVLY_WHERE_SOURCE"></span><span id="mci_ovly_where_source"></span>MCI \_ OVLY \_ Where \_ source
+<span id="MCI_OVLY_WHERE_SOURCE"></span><span id="mci_ovly_where_source"></span>MCI \_ OVLY \_ WHERE \_ SOURCE
 </dt> <dd>
 
-Obtiene el rectángulo de origen. Las coordenadas del rectángulo se colocan en el miembro **RC** de la estructura identificada por *lpQuery*.
+Obtiene el rectángulo de origen. Las coordenadas del rectángulo se colocan en el **miembro rc** de la estructura identificada por *lpQuery*.
 
 </dd> <dt>
 
-<span id="MCI_OVLY_WHERE_VIDEO"></span><span id="mci_ovly_where_video"></span>OVLY de MCI \_ \_ donde \_ vídeo
+<span id="MCI_OVLY_WHERE_VIDEO"></span><span id="mci_ovly_where_video"></span>MCI \_ OVLY \_ WHERE \_ VIDEO
 </dt> <dd>
 
-Obtiene el rectángulo de vídeo. Las coordenadas del rectángulo se colocan en el miembro **RC** de la estructura identificada por *lpQuery*.
+Obtiene el rectángulo de vídeo. Las coordenadas del rectángulo se colocan en el **miembro rc** de la estructura identificada por *lpQuery*.
 
 </dd> </dl>
 
-En el caso de los dispositivos de superposición de vídeo, el parámetro *lpQuery* apunta a una estructura [**MCI \_ OVLY \_ Rect \_ parms**](mci-ovly-rect-parms.md) .
+En el caso de los dispositivos de superposición de vídeo, el parámetro *lpQuery* apunta a una estructura [**\_ MCI OVLY \_ RECT \_ PARMS.**](mci-ovly-rect-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -171,10 +171,10 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpQue
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

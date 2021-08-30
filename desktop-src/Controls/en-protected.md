@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_PROTECTED (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit que el usuario está realizando una acción que cambiaría un intervalo de texto protegido. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_PROTECTED de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control de edición enriquecido que el usuario está tomando una acción que cambiaría un intervalo de texto protegido. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 29c0cb51-675c-44b1-ad45-5f7140ca5675
 keywords:
-- EN_PROTECTED controles de código de notificación de Windows
+- EN_PROTECTED código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1475053366a06f46b0c99514ade961f1a2998b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d56af51eea8486286dea8905d52dc64fe0a54803c30d6b6c6f4dabd49ea406b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047635"
 ---
-# <a name="en_protected-notification-code"></a>\_Código de notificación en protegido
+# <a name="en_protected-notification-code"></a>Código de notificación EN \_ PROTECTED
 
-Notifica a la ventana primaria de un control Rich Edit que el usuario está realizando una acción que cambiaría un intervalo de texto protegido. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de edición enriquecido que el usuario está tomando una acción que cambiaría un intervalo de texto protegido. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ EN_PROTECTED
 *lParam* 
 </dt> <dd>
 
-Estructura [**protegida**](/windows/desktop/api/Richedit/ns-richedit-enprotected) que contiene información sobre el mensaje que desencadenó el código de notificación.
+Estructura [**ENPROTECTED que**](/windows/desktop/api/Richedit/ns-richedit-enprotected) contiene información sobre el mensaje que desencadenó el código de notificación.
 
 </dd> </dl>
 
@@ -51,11 +51,11 @@ Devuelve cero para permitir la operación.
 
 Devuelve un valor distinto de cero para evitar la operación.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se devuelve cero y se cambian los miembros **MSG**, **wParam** e **lParam** de la estructura [**enprotected**](/windows/desktop/api/Richedit/ns-richedit-enprotected) , el control procesa el mensaje revisado en lugar del mensaje original.
+Si se devuelve cero y se cambian los miembros **msg**, **wParam** y **lParam** de la estructura [**ENPROTECTED,**](/windows/desktop/api/Richedit/ns-richedit-enprotected) el control procesa el mensaje revisado en lugar del mensaje original.
 
-Para recibir \_ códigos de notificación protegidos, especifique [**ENM \_ protegido**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir códigos de notificación EN \_ PROTECTED, especifique [**ENM \_ PROTECTED en**](rich-edit-control-event-mask-flags.md) la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Para recibir \_ códigos de notificación protegidos, especifique [**ENM \_ prot
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Para recibir \_ códigos de notificación protegidos, especifique [**ENM \_ prot
 **Referencia**
 </dt> <dt>
 
-[**PROTEGIDO**](/windows/desktop/api/Richedit/ns-richedit-enprotected)
+[**ENPROTECTED**](/windows/desktop/api/Richedit/ns-richedit-enprotected)
 </dt> <dt>
 
-[**\_notificaciones de WM**](wm-notify.md)
+[**WM \_ NOTIFY**](wm-notify.md)
 </dt> </dl>
 
  

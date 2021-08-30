@@ -1,23 +1,23 @@
 ---
 title: Acceso a servicios de voz (interfaz del servidor de Microsoft Agent)
-description: Obtenga información sobre el acceso a los servicios de voz con la interfaz del servidor de Microsoft Agent. Microsoft Agent está en desuso a partir de Windows 7.
+description: Obtenga información sobre el acceso a los servicios de voz con la interfaz del servidor de Microsoft Agent. Microsoft Agent está en desuso a partir Windows 7.
 ms.assetid: 99cf630d-3bd1-403a-833a-9173a84fe3c0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f87bf5cf88141344d5328592c9e823c7365c5d5
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: cbc481a72ee4693d4980104e10c76fdade1b9deee9171ce2e82643e21ce53c12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119963485"
 ---
 # <a name="accessing-speech-services-microsoft-agent-server-interface"></a>Acceso a servicios de voz (interfaz del servidor de Microsoft Agent)
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 Aunque los servicios de Microsoft Agent incluyen compatibilidad con la entrada de voz, se debe instalar un motor de reconocimiento de voz compatible con comandos y controles para acceder a los servicios de entrada de voz del Agente. Del mismo modo, si desea usar los servicios de voz de Microsoft Agent para admitir la salida de voz sintetizada para un carácter, debe instalar un motor de voz de texto a voz (TTS) compatible para el carácter. Dado que los servicios de voz de Microsoft Agent se basan en Microsoft Speech API (SAPI), puede usar cualquier motor que admita las interfaces de voz necesarias.
 
-Para habilitar la compatibilidad con la entrada de voz en la aplicación, defina un [**objeto Command**](https://www.bing.com/search?q=**Command**) y establezca su [**propiedad Voice.**](https://www.bing.com/search?q=**Voice**) Microsoft Agent cargará automáticamente los servicios de voz, de modo que cuando el usuario presione la tecla Escuchando o llame a [**Escucha,**](https://www.bing.com/search?q=**Listen**)se cargará el motor de reconocimiento de voz. De forma predeterminada, el identificador de idioma del carácter determinará qué motor se carga. El agente intenta cargar el primer motor que devuelve SAPI como que coincide con este lenguaje. Use **IAgentCharacterEx::SetSRModeID** si desea cargar un motor específico.
+Para habilitar la compatibilidad con la entrada de voz en la aplicación, defina un [**objeto Command**](https://www.bing.com/search?q=**Command**) y establezca su [**propiedad Voice.**](https://www.bing.com/search?q=**Voice**) Microsoft Agent cargará automáticamente los servicios de voz, de modo que cuando el usuario presione la tecla Listening o llame a [**Listen**](https://www.bing.com/search?q=**Listen**), se cargará el motor de reconocimiento de voz. De forma predeterminada, el identificador de idioma del carácter determinará qué motor se carga. El agente intenta cargar el primer motor que devuelve SAPI como que coincide con este lenguaje. Use **IAgentCharacterEx::SetSRModeID** si desea cargar un motor específico.
 
 Para habilitar la salida de texto a voz, use el [**método Speak.**](https://www.bing.com/search?q=**Speak**) Microsoft Agent intentará cargar automáticamente un motor que coincida con el identificador de idioma del carácter. Si la definición del carácter incluye un identificador de modo de motor TTS específico y ese motor está disponible y coincide con el identificador de idioma del carácter, el Agente carga ese motor para el carácter. Si no es así, el Agente carga el primer motor de TTS que devuelve SAPI como que coincide con la configuración de idioma del carácter. También puede usar **IAgentCharacterEx::SetTTSModeID para** cargar un motor específico.
 

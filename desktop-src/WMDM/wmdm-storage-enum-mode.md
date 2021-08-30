@@ -1,9 +1,9 @@
 ---
-title: Enumeración WMDM_STORAGE_ENUM_MODE
-description: El \_ tipo de \_ enumeración de modo de enumeración de almacenamiento WMDM \_ define cómo se va a enumerar el contenido del almacenamiento. IWMDMStorage3 SetEnumPreference usa esta enumeración.
+title: WMDM_STORAGE_ENUM_MODE enumeración
+description: El tipo de enumeración WMDM STORAGE ENUM MODE define cómo se enumerará el \_ \_ contenido del \_ almacenamiento. IWMDMStorage3 SetEnumPreference usa esta enumeración.
 ms.assetid: 38293e54-92e4-4f0a-bdea-5dc684a9548b
 keywords:
-- Enumeración WMDM_STORAGE_ENUM_MODE Administrador de dispositivos de Windows Media
+- WMDM_STORAGE_ENUM_MODE enumeración windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d886ade00289e655ae3323a70d01be96a09852b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8ba8b524618ebc0c5d40f9f4e9f0ad0871b7c8c39a0919d594a39248bc2d6dc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120004775"
 ---
-# <a name="wmdm_storage_enum_mode-enumeration"></a>\_ \_ Enumeración de modo de enumeración de almacenamiento WMDM \_
+# <a name="wmdm_storage_enum_mode-enumeration"></a>Enumeración \_ WMDM STORAGE \_ ENUM \_ MODE
 
-El tipo de enumeración de **\_ \_ \_ modo de enumeración de almacenamiento WMDM** define cómo se va a enumerar el contenido del almacenamiento. [**IWMDMStorage3:: SetEnumPreference**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setenumpreference)usa esta enumeración.
+El **tipo de \_ enumeración WMDM STORAGE \_ ENUM \_ MODE** define cómo se enumerará el contenido del almacenamiento. [**IWMDMStorage3::SetEnumPreference**](/windows/desktop/api/mswmdm/nf-mswmdm-iwmdmstorage3-setenumpreference)usa esta enumeración.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,33 +42,33 @@ typedef enum tagWMDM_STORAGE_ENUM_MODE {
 
 <dl> <dt>
 
-<span id="ENUM_MODE_RAW"></span><span id="enum_mode_raw"></span>**modo de ENUMERAción \_ \_ sin formato**
+<span id="ENUM_MODE_RAW"></span><span id="enum_mode_raw"></span>**MODO ENUM \_ \_ RAW**
 </dt> <dd>
 
-Enumera el contenido del almacenamiento tal como está organizado en el sistema de archivos del almacenamiento.
+Enumera el contenido del almacenamiento tal como se organiza en el sistema de archivos del almacenamiento.
 
-**modo de ENUMERAción \_ \_ use \_ Pref de dispositivo \_**
+**ENUM \_ MODE \_ USE \_ DEVICE \_ PREF**
 
-Enumera el contenido del almacenamiento en función de la preferencia del dispositivo, tal como se indica en el parámetro de dispositivo *UseMetadataViews* .
+Enumera el contenido del almacenamiento en función de la preferencia del dispositivo, tal como se indica en el parámetro de dispositivo *UseMetadataViews.*
 
-**\_vistas de \_ metadatos de modo de enumeración \_**
+**VISTAS DE \_ METADATOS DEL MODO \_ ENUM \_**
 
 Enumera el contenido del almacenamiento organizando el contenido en función de una vista de metadatos.
 
 </dd> <dt>
 
-<span id="ENUM_MODE_USE_DEVICE_PREF"></span><span id="enum_mode_use_device_pref"></span>**modo de ENUMERAción \_ \_ use \_ Pref de dispositivo \_**
+<span id="ENUM_MODE_USE_DEVICE_PREF"></span><span id="enum_mode_use_device_pref"></span>**ENUM \_ MODE \_ USE \_ DEVICE \_ PREF**
 </dt> <dd>
 
-Enumera el contenido del almacenamiento en función de la preferencia del dispositivo, tal como se indica en el parámetro de dispositivo *UseMetadataViews* .
+Enumera el contenido del almacenamiento en función de la preferencia del dispositivo, tal como se indica en el parámetro de dispositivo *UseMetadataViews.*
 
-**\_vistas de \_ metadatos de modo de enumeración \_**
+**VISTAS DE \_ METADATOS DEL MODO \_ ENUM \_**
 
 Enumera el contenido del almacenamiento organizando el contenido en función de una vista de metadatos.
 
 </dd> <dt>
 
-<span id="ENUM_MODE_METADATA_VIEWS"></span><span id="enum_mode_metadata_views"></span>**\_vistas de \_ metadatos de modo de enumeración \_**
+<span id="ENUM_MODE_METADATA_VIEWS"></span><span id="enum_mode_metadata_views"></span>**VISTAS DE \_ METADATOS DEL MODO \_ ENUM \_**
 </dt> <dd>
 
 Enumera el contenido del almacenamiento organizando el contenido en función de una vista de metadatos.
@@ -81,7 +81,7 @@ Enumera el contenido del almacenamiento organizando el contenido en función de 
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

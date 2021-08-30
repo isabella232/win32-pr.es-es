@@ -4,18 +4,18 @@ ms.assetid: da957aca-1655-4e8d-9e7b-4da0f253293b
 title: PageBlackGenerationProcessingUnderColorAdditionLevel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3b496fbe890f53d1da8d1054cc5a19fe6318811
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: c3e29073e0c27d433b96137983b10aab4ac0969b1b90010178b4fdd796f2043d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948235"
 ---
 # <a name="pageblackgenerationprocessingundercoloradditionlevel"></a>PageBlackGenerationProcessingUnderColorAdditionLevel
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la cantidad de lápiz tótic (en proporción de componentes grises) que se va a agregar a las áreas donde GCR/UCR ha generado "BlackInkLimit" (o IZOStart, si se especifica) en las áreas neutras oscuras y casi neutras.
+Describe la cantidad de entrada de lápiz (en proporción de componentes grises) que se va a agregar a las áreas donde GCR/UCR ha generado "BlackInkLimit" (o IZOStart, si se especifica) en las áreas neutras oscuras y casi neutras.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -24,7 +24,7 @@ Describe la cantidad de lápiz tótic (en proporción de componentes grises) que
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
 | Prefijo de ámbito <br/> | Página<br/>                                            |
@@ -70,13 +70,13 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | 100<br/>             |
 | MinValue<br/>     | integer<br/> | 0<br/>               |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 

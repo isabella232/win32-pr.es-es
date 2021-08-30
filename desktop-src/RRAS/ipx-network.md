@@ -1,10 +1,10 @@
 ---
-title: Estructura de IPX_NETWORK (RTM. h)
-description: La \_ estructura de red IPX describe una dirección de red IPX.
+title: IPX_NETWORK estructura (Rtm.h)
+description: La estructura IPX \_ NETWORK describe una dirección de red IPX.
 ms.assetid: 83fc4022-8515-4a51-ac47-f92572447fbf
 keywords:
-- IPX_NETWORK de la estructura RAS
-- PIPX_NETWORK de puntero de estructura RAS
+- IPX_NETWORK estructura RAS
+- PIPX_NETWORK puntero de estructura RAS
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04aabf363c0152ba520bb5c8894142715b5bff56
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e667dd21176d88070cdf775fc9b38ca601e59dd542f6237beaffe2711b1ee5ed
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074165"
 ---
-# <a name="ipx_network-structure"></a>\_Estructura de red IPX
+# <a name="ipx_network-structure"></a>Estructura NETWORK de IPX \_
 
-\[Esta API se ha sustituido por la API del [Administrador de tablas de enrutamiento versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API del administrador de tabla de enrutamiento versión 2.\]
+\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La estructura de **\_ red IPX** describe una dirección de red IPX.
+La **estructura IPX \_ NETWORK** describe una dirección de red IPX.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ typedef struct _IPX_NETWORK {
 **N \_ NetNumber**
 </dt> <dd>
 
-Contiene el número de red IPX en el orden de bytes de la máquina.
+Contiene el número de red IPX en orden de bytes de máquina.
 
 </dd> </dl>
 
@@ -54,12 +54,12 @@ Contiene el número de red IPX en el orden de bytes de la máquina.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
@@ -67,13 +67,13 @@ Contiene el número de red IPX en el orden de bytes de la máquina.
 
 <dl> <dt>
 
-[Referencia de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de la versión 1 del administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)
+[Estructuras de Routing Table Manager versión 1](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_ruta IPX de RTM \_**](rtm-ipx-route.md)
+[**RTM \_ IPX \_ ROUTE**](rtm-ipx-route.md)
 </dt> </dl>
 
  

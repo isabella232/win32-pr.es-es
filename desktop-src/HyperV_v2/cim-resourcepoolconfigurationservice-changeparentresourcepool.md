@@ -1,7 +1,7 @@
 ---
-description: Iniciar un trabajo para cambiar un grupo primario con la configuración de asignación especificada.
+description: Inicie un trabajo para cambiar un grupo primario con la configuración de asignación especificada.
 ms.assetid: 2eea1a60-fbf0-49a7-8f79-52c62c295316
-title: Método ChangeParentResourcePool de la clase CIM_ResourcePoolConfigurationService
+title: Método ChangeParentResourcePool de la CIM_ResourcePoolConfigurationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6ef852d6af8f0973b6b3f29fca5fcd90e9ce726a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7030cb4ed9333ad5c56722954a24a1ee7bff351a15873423dbfe6e8dca1830d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119980905"
 ---
-# <a name="changeparentresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método ChangeParentResourcePool de la \_ clase ResourcePoolConfigurationService de CIM
+# <a name="changeparentresourcepool-method-of-the-cim_resourcepoolconfigurationservice-class"></a>Método ChangeParentResourcePool de la clase \_ ResourcePoolConfigurationService de CIM
 
-Iniciar un trabajo para cambiar un grupo primario con la configuración de asignación especificada.
+Inicie un trabajo para cambiar un grupo primario con la configuración de asignación especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,41 +42,41 @@ uint32 ChangeParentResourcePool(
 
 <dl> <dt>
 
-*ChildPool* \[ de\]
+*ChildPool* \[ En\]
 </dt> <dd>
 
-[**\_ ResourcePool CIM**](cim-resourcepool.md) que hace referencia al grupo secundario.
+Grupo [**\_ de recursos CIM que**](cim-resourcepool.md) hace referencia al grupo secundario.
 
 </dd> <dt>
 
-*ParentPool* \[ de\]
+*ParentPool* \[ En\]
 </dt> <dd>
 
-Una [**matriz \_ ResourcePool de CIM**](cim-resourcepool.md) que hace referencia a los grupos primarios.
+Matriz [**\_ ResourcePool**](cim-resourcepool.md) de CIM que hace referencia a los grupos primarios.
 
 </dd> <dt>
 
-*Configuración* \[ de de\]
+*Configuración* \[ En\]
 </dt> <dd>
 
-Cadena opcional que contiene una representación de una instancia de [**\_ SettingData de CIM**](cim-settingdata.md) que se usa para especificar la configuración del grupo primario.
+Cadena opcional que contiene una representación de una instancia [**\_ settingData**](cim-settingdata.md) de CIM que se usa para especificar la configuración del grupo primario.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Un [**\_ ConcreteJob de CIM**](cim-concretejob.md) que hace referencia al trabajo (puede ser **null** si el trabajo se completó).
+Un [**\_ objeto ConcreteJob de CIM**](cim-concretejob.md) que hace referencia al trabajo (puede ser NULL **si** el trabajo se ha completado).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-**Trabajo completado sin errores** (0)
+**Trabajo completado sin error** (0)
 </dt> <dt>
 
 **No compatible** (1)
@@ -85,7 +85,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Desconocido** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Error** (4)
@@ -97,7 +97,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **En uso** (6)
 </dt> <dt>
 
-**Resourcetype incorrecto para el grupo** (7)
+**ResourceType incorrecto para el grupo** (7)
 </dt> <dt>
 
 **Recursos insuficientes** (8)
@@ -109,13 +109,13 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Tamaño no compatible** (4097)
+**Tamaño no admitido** (4097)
 </dt> <dt>
 
-**Método reservado** (4098.. 32767)
+**Método reservado** (4098..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -125,9 +125,9 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**\_RESOURCEPOOLCONFIGURATIONSERVICE CIM**](cim-resourcepoolconfigurationservice.md)
+[**CIM \_ ResourcePoolConfigurationService**](cim-resourcepoolconfigurationservice.md)
 </dt> </dl>
 
  

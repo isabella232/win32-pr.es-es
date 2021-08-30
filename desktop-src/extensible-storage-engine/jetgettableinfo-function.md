@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c17e1c5aa23e8e2fe77aaa07f98fee1b2df0c12
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 1a300ac2a0c1b9c501c807368d121b7beca46454
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122465802"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122984698"
 ---
 # <a name="jetgettableinfo-function"></a>Función JetGetTableInfo
 
@@ -71,21 +71,21 @@ Tipo de información que se recuperará para la tabla especificada por *tableid*
 Se pueden establecer las siguientes opciones para este parámetro:
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_TblInfo</p> | <p><em>pvResult</em> se interpreta como una <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> estructura. Si el método se realiza correctamente, <a href="gg269353(v=exchg.10).md">JET_OBJECTINFO</a> estructura se rellena con los datos adecuados. Si se produce un error, el contenido no está definido.</p> | 
 | <p>JET_TblInfoDbid</p> | <p><em>pvResult</em> se trata como una matriz de dos <a href="gg269248(v=exchg.10).md">JET_DBID</a> objetos. El identificador de base de datos de la base de datos propietaria de la tabla se almacena en esta matriz dos veces.</p> | 
 | <p>JET_TblInfoDumpTable</p> | <p>JET_TblInfoDumpTable está en desuso. La API devolverá JET_errFeatureNotAvailable.</p> | 
-| <p>JET_TblInfoName</p> | <p>JET_TblInfoName recupera el nombre de la tabla y la almacena en <em>pvResult</em>. Si el búfer es demasiado pequeño, el comportamiento no está definido.</p> | 
-| <p>JET_TblInfoMostMany</p> | <p>JET_TblInfoMostMany recupera el nombre de la tabla y la almacena en <em>pvResult</em>. Si el búfer es demasiado pequeño, el comportamiento no está definido.</p> | 
+| <p>JET_TblInfoName</p> | <p>JET_TblInfoName recupera el nombre de la tabla y la almacena en <em>pvResult</em>. Si el búfer es demasiado pequeño, el comportamiento es indefinido.</p> | 
+| <p>JET_TblInfoMostMany</p> | <p>JET_TblInfoMostMany recupera el nombre de la tabla y la almacena en <em>pvResult</em>. Si el búfer es demasiado pequeño, el comportamiento es indefinido.</p> | 
 | <p>JET_TblInfoOLC</p> | <p>JET_TblInfoOLC está en desuso. La API devolverá JET_errFeatureNotAvailable.</p> | 
 | <p>JET_TblInfoRvt</p> | <p>JET_TblInfoRvt está en desuso. La API devolverá JET_errQueryNotSupported.</p> | 
 | <p>JET_TblInfoResetOLC</p> | <p>JET_TblInfoResetOLC está en desuso. La API devolverá JET_errFeatureNotAvailable.</p> | 
 | <p>JET_TblInfoSpaceAlloc</p> | <p><em>pvResult</em> se interpreta como una matriz de dos ULONG:</p><ul><li><p>El primer <strong>ULONG</strong> es el número de páginas de la tabla.</p></li><li><p>El segundo <strong>ULONG</strong> es la densidad de destino de las páginas de la tabla.</p></li></ul> | 
-| <p>JET_TblInfoSpaceAvailable</p> | <p><em>pvResult</em> se interpreta como <strong>ULONG.</strong> <strong>ULONG</strong> es la suma del número de páginas que están disponibles en la tabla, sus índices y el árbol de valores largos.</p> | 
-| <p>JET_TblInfoSpaceOwned</p> | <p><em>pvResult</em> se interpreta como <strong>ULONG.</strong> <strong>ULONG es</strong> la suma del número de páginas que pertenecen a la tabla (incluidos sus índices, y el árbol de valores largos y las páginas disponibles en ellas).</p> | 
+| <p>JET_TblInfoSpaceAvailable</p> | <p><em>pvResult</em> se interpreta como <strong>ULONG.</strong> ULONG <strong>es</strong> la suma del número de páginas que están disponibles en la tabla, sus índices y el árbol de valores largos.</p> | 
+| <p>JET_TblInfoSpaceOwned</p> | <p><em>pvResult</em> se interpreta como <strong>ULONG.</strong> <strong>ULONG es</strong> la suma del número de páginas que pertenecen a la tabla (incluidos sus índices, el árbol de valores largos y las páginas disponibles en ellas).</p> | 
 | <p>JET_TblInfoSpaceUsage</p> | <p>El comportamiento de la API depende del tamaño del búfer que se pasa a la API. Dos <em>valores cbMax</em> deben ser al menos ( 2 * sizeof( ULONG ) ).</p><ul><li><p>Si <em>cbMax</em> es ( 2 * sizeof( ULONG ) ), <em>pvResult</em> se interpreta como una matriz de dos ULONG:</p><ul><li><p>El primer <strong>ULONG</strong> es el número de extensiones de propiedad de la tabla.</p></li><li><p>El segundo <strong>ULONG</strong> es el número de extensiones disponibles de la tabla.</p></li></ul></li><li><p><em>pvResult</em> se interpreta como una matriz de:</p><ul><li><p>El primer <strong>ULONG</strong> es el número de extensiones de propiedad de la tabla.</p></li><li><p>El segundo <strong>ULONG</strong> es el número de extensiones disponibles de la tabla.</p></li></ul></li></ul> | 
-| <p>JET_TblInfoTemplateTableName</p> | <p><em>pvResult</em> se interpreta como un búfer de cadena. El búfer debe ser al menos JET_cbNameMost + 1, incluido el valor <strong>NULL final.</strong> Si la tabla es una tabla derivada, el búfer se rellenará con el nombre de la tabla de la que la tabla derivada heredó su DDL. Si la tabla no es una tabla derivada, el búfer tendrá una cadena vacía.</p> | 
+| <p>JET_TblInfoTemplateTableName</p> | <p><em>pvResult se</em> interpreta como un búfer de cadena. El búfer debe ser al menos JET_cbNameMost + 1, incluido el valor <strong>NULL final.</strong> Si la tabla es una tabla derivada, el búfer se rellenará con el nombre de la tabla de la que la tabla derivada heredó su DDL. Si la tabla no es una tabla derivada, el búfer será una cadena vacía.</p> | 
 
 
 
@@ -105,20 +105,27 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 | <p>JET_errQueryNotSupported</p> | <p>No <em>se admite InfoLevel.</em></p> | 
 | <p>JET_errTableInUse</p> | <p>Otra operación de base de datos está utilizando la tabla.</p> | 
 | <p>JET_errTableLocked</p> | <p>Otra operación de base de datos bloquea la tabla.</p> | 
-| <p>JET_wrnTableInUseBySystem</p> | <p>El sistema está utilizando la tabla. Esta advertencia no es importante.</p> | 
+| <p>JET_wrnTableInUseBySystem</p> | <p>El sistema está utilizando la tabla. Esta advertencia no es posible.</p> | 
 
 
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Algunos fragmentos de información no son válidos para las tablas temporales (vea [JetOpenTempTable).](./jetopentemptable-function.md)
 
-Las estadísticas de tabla incluyen el número de registros y el número de páginas del índice clúster (es decir, el índice que contiene los datos de registro). Se accede a las estadísticas de índice por separado por nombre, mediante [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo](./jetgettableindexinfo-function.md).
+Las estadísticas de tabla incluyen el número de registros y el número de páginas del índice clúster (es decir, el índice que contiene los datos del registro). Se accede a las estadísticas de índice por separado por nombre, mediante [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo.](./jetgettableindexinfo-function.md)
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetGetTableInfoW</strong> (Unicode) y <strong>JetGetTableInfoA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetGetTableInfoW</strong> (Unicode) y <strong>JetGetTableInfoA</strong> (ANSI).</p> | 
 
 
 

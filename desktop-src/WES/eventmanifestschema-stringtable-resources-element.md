@@ -1,6 +1,6 @@
 ---
-title: stringTable (Resources) (elemento)
-description: Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto. | stringTable (Resources) (elemento)
+title: elemento stringTable (resources)
+description: Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto. | elemento stringTable (resources)
 ms.assetid: 769077bd-1c38-401d-a77d-35d881014a39
 keywords:
 - elemento stringTable EventLog
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dc1fd72cda5b9dbb6f2e30595855ef5bf061e2f2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 187add16555150727c019e1afde8eb89eaaed5acbdfe1b5f66b220effc724206
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124275"
 ---
-# <a name="stringtable-resources-element"></a>stringTable (Resources) (elemento)
+# <a name="stringtable-resources-element"></a>elemento stringTable (resources)
 
-Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto.
+Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto.
 
 ``` syntax
 <xs:element name="stringTable"
@@ -30,7 +30,7 @@ Define una lista de cadenas traducidas a las que se puede hacer referencia en el
  />
 ```
 
-El elemento **stringTable** se define mediante el elemento [**Resources**](eventmanifestschema-resources-localizationtype-element.md) .
+El **elemento stringTable** se define mediante el [**elemento resources.**](eventmanifestschema-resources-localizationtype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **stringTable** se define mediante el elemento [**Resources**](event
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **stringTable** se define mediante el elemento [**Resources**](event
 **Elemento primario**
 </dt> <dt>
 
-[**recursos (LocalizationType)**](eventmanifestschema-resources-localizationtype-element.md)
+[**resources (LocalizationType)**](eventmanifestschema-resources-localizationtype-element.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: BUTTONELEMENT. click
-description: El método click llama al controlador de eventos OnClick definido para BUTTONELEMENT.
+title: BUTTONELEMENT.click
+description: El método click llama al controlador de eventos onclick definido para BUTTONELEMENT.
 ms.assetid: ede09c10-f52f-4a9f-ae68-1091642ee6bd
 keywords:
-- BUTTONELEMENT. Haga clic en Windows Media Player
+- BUTTONELEMENT.click Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d8aba2cddaa59eede23d5aa18529ba9589855dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e25e3ffe2e840d255041caef97da76850adb797ffe1113b8c6ac6918050dbb7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119902345"
 ---
-# <a name="buttonelementclick"></a>BUTTONELEMENT. click
+# <a name="buttonelementclick"></a>BUTTONELEMENT.click
 
-El método **click** llama al controlador de eventos **onclick** definido para **BUTTONELEMENT**.
+El **método click** llama al controlador de eventos **onclick** definido para **BUTTONELEMENT.**
 
 ``` syntax
         elementID.click()
@@ -35,9 +35,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice este método para proporcionar un medio alternativo para ejecutar el código asociado a un botón.
+Use este método para proporcionar un medio alternativo para ejecutar el código asociado a un botón.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Utilice este método para proporcionar un medio alternativo para ejecutar el có
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -53,7 +53,7 @@ Utilice este método para proporcionar un medio alternativo para ejecutar el có
 
 <dl> <dt>
 
-[**BUTTONELEMENT (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  
