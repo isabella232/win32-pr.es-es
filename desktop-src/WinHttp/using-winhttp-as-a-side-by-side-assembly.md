@@ -4,12 +4,12 @@ ms.assetid: 524d926d-4d8a-4576-96fd-c533517ba28e
 title: Uso de WinHTTP como ensamblado en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c8c6312fb57f210e0324c1ae89bb785fd5b51bcb2b1ea4ba1a4959a3d0fd540
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f682586ba315932d8dc7812f7e74bd15e20e4ad6
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119614095"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882137"
 ---
 # <a name="using-winhttp-as-a-side-by-side-assembly"></a>Uso de WinHTTP como ensamblado en paralelo
 
@@ -25,9 +25,9 @@ Para usar este mecanismo para vincular a WinHTTP versión 5.1 en Windows Server 
 
 El siguiente manifiesto de ejemplo muestra un manifiesto de aplicación que se puede usar para vincular a WinHTTP.
 
-Todos los atributos excepto "type" de " <assembly> <assemblyIdentity> " deben modificarse según corresponda para la aplicación en particular. Lo mismo sucede con el contenido del elemento " &lt; description &gt; ".
+Todos los atributos excepto "type" de " &lt; &gt; &lt; assembly assemblyIdentity " deben modificarse según &gt; corresponda para la aplicación en particular. Lo mismo sucede con el contenido del elemento " &lt; description &gt; ".
 
-Además, asegúrese de que el atributo "processorArchitecture" de " " coincide con el atributo <dependentAssembly> <assemblyIdentity> "processorArchitecture" de " <assembly> <assemblyIdentity> ". A continuación, por ejemplo, ambos se establecen en "x86".
+Además, asegúrese de que el atributo "processorArchitecture" de " dependentAssembly assemblyIdentity " coincide con el atributo &lt; &gt; &lt; &gt; "processorArchitecture" de " &lt; &gt; &lt; assembly assemblyIdentity &gt; ". A continuación, por ejemplo, ambos se establecen en "x86".
 
 Todos los valores no específicos de la aplicación deben tener los formularios que se muestran a continuación.
 

@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee83dc86aa6faf5fab0b45596a586c657e4c6e2a
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 3e9824c29297b3a406fb945e511288e3ebf52b92
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474131"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122987818"
 ---
 # <a name="jet_snp"></a>JET_SNP
 
@@ -38,7 +38,7 @@ El **JET_SNP** de constantes describe el tipo de la operación para la que se va
 | <p>JET_snpCompact<br />4</p> | <p>La devolución de llamada es para la desfragmentación de la base de datos.</p> | 
 | <p>JET_snpRestore<br />8</p> | <p>La devolución de llamada es para una operación de restauración.</p> | 
 | <p>JET_snpBackup<br />9</p> | <p>La devolución de llamada es para una operación de copia de seguridad.</p> | 
-| <p>JET_snpUpgrade<br />10</p> | <p>No se admite.</p><p><strong>Windows 2000:</strong>  La devolución de llamada es para la operación de actualización de formato de base de datos.</p> | 
+| <p>JET_snpUpgrade<br />10</p> | <p>No compatible.</p><p><strong>Windows 2000:</strong>  La devolución de llamada es para la operación de actualización de formato de base de datos.</p> | 
 | <p>JET_snpScrub<br />11</p> | <p>La devolución de llamada es para una operación de ceros de base de datos (es decir, limpieza).</p><p><strong>Windows Server 2003 y Windows 2000 Server:</strong>  No se admite.</p> | 
 | <p>JET_snpUpgradeRecordFormat<br />12</p> | <p>La devolución de llamada es para el proceso de actualización del formato de registro de todas las páginas de base de datos.</p><p><strong>Windows Server 2003 y Windows 2000 Server:</strong>  No se admite.</p> | 
 
@@ -47,7 +47,11 @@ El **JET_SNP** de constantes describe el tipo de la operación para la que se va
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

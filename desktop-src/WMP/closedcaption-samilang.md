@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c423b041601a38e81b1c4e83c34c010edb3365a4eb7e05596038fa887818ba1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0edae5d9315bde8c6fc4d507518a335bfb37fd22
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118342290"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122880257"
 ---
 # <a name="closedcaptionsamilang"></a>ClosedCaption.SAMILang
 
@@ -35,7 +35,7 @@ Esta propiedad es una cadena de lectura y **escritura.**
 
 ## <a name="remarks"></a>Comentarios
 
-Un archivo SAMI puede contener texto para uno o varios idiomas. Los idiomas disponibles para los subtítulos se definen entre las <STYLE> etiquetas y </STYLE> del archivo SAMI. Un identificador de idioma se especifica con una cadena alfanumérica única precedida de un punto (.). El nombre especificado para un idioma puede ser cualquier cadena. Por ejemplo, se podría usar lo siguiente para definir el inglés de EE. UU.:
+Un archivo SAMI puede contener texto para uno o varios idiomas. Los idiomas disponibles para los subtítulos se definen entre &lt; style &gt; y </STYLE> etiquetas en el archivo SAMI. Un identificador de idioma se especifica con una cadena alfanumérica única precedida de un punto (.). El nombre especificado para un idioma puede ser cualquier cadena. Por ejemplo, se podría usar lo siguiente para definir el inglés de EE. UU.:
 
 
 ```
@@ -87,7 +87,7 @@ En el ejemplo JScript siguiente se *usa ClosedCaption*. **SAMILang en** un eleme
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

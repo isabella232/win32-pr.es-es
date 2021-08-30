@@ -1,19 +1,19 @@
 ---
-description: Trabajar con categorías de PIN
+description: Trabajar con categorías de pin
 ms.assetid: 1ee648b3-8370-4e4d-b513-d998131512ee
-title: Trabajar con categorías de PIN
+title: Trabajar con categorías de pin
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ac58fff91821477cca51e0613772e3e5763d4d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e65b8229c3a3b3cf60a2c0fe208af0b17992e97880a04f565017a026eb932e46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119964305"
 ---
-# <a name="working-with-pin-categories"></a>Trabajar con categorías de PIN
+# <a name="working-with-pin-categories"></a>Trabajar con categorías de pin
 
-Para buscar en un filtro el para un pin con una categoría de PIN determinada, puede usar el método [**ICaptureGraphBuilder2:: FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) . En el siguiente ejemplo se busca un PIN de vista previa de vídeo:
+Para buscar en un filtro para un pin con una categoría de pin determinada, puede usar el método [**ICaptureGraphBuilder2::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) En el ejemplo siguiente se busca un pin de vista previa de vídeo:
 
 
 ```C++
@@ -31,11 +31,11 @@ hr = pBuild->FindPin(
 
 
 
-El primer parámetro es un puntero a la interfaz [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) del filtro. Los tres parámetros siguientes especifican la dirección, la categoría del PIN y el tipo de medio. El valor **false** en el quinto parámetro indica que el pin puede estar conectado o no conectado. (Para conocer las definiciones exactas de estos parámetros, consulte la documentación del método). Si el método encuentra un PIN coincidente, devuelve un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) en el parámetro *pPin* .
+El primer parámetro es un puntero a la interfaz [**IBaseFilter del**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) filtro. Los tres parámetros siguientes especifican la dirección, la categoría de anclado y el tipo de medio. El valor **FALSE** del quinto parámetro indica que el pin puede estar conectado o no conectado. (Para obtener las definiciones exactas de estos parámetros, consulte la documentación del método ). Si el método encuentra un pin correspondiente, devuelve un puntero a la [**interfaz IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) en el *parámetro pPin.*
 
-Aunque el método [**FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) es práctico, también puede escribir sus propias funciones auxiliares si lo prefiere. Para determinar la categoría de un PIN, llame al método [**IKsPropertySet:: get**](ikspropertyset-get.md) como se describe en el tema [conjunto de propiedades](pin-property-set.md).
+Aunque el [**método FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) es cómodo, también puede escribir sus propias funciones auxiliares si lo prefiere. Para determinar la categoría de un pin, llame al método [**IKsPropertySet::Get**](ikspropertyset-get.md) como se describe en el tema [Pin Property Set](pin-property-set.md).
 
-En el código siguiente se muestra una función auxiliar que comprueba si un PIN coincide con una categoría especificada:
+El código siguiente muestra una función auxiliar que comprueba si un pin coincide con una categoría especificada:
 
 
 ```C++
@@ -65,7 +65,7 @@ BOOL PinMatchesCategory(IPin *pPin, REFGUID Category)
 
 
 
-El ejemplo siguiente es una función que busca un PIN por categoría, de forma similar al método [**FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) :
+El ejemplo siguiente es una función que busca un pin por categoría, similar al [**método FindPin:**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin)
 
 
 ```C++
@@ -123,7 +123,7 @@ done:
 
 
 
-En el código siguiente se usa la función Previous para buscar un PIN de puerto de vídeo en un filtro:
+El código siguiente usa la función anterior para buscar un pin de puerto de vídeo en un filtro:
 
 
 ```C++
@@ -140,7 +140,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para obtener más información acerca de los conjuntos de propiedades, consulte la documentación del [Kit de controladores de Windows (WDK)](/windows-hardware/drivers/gettingstarted/) .
+Para obtener más información sobre los conjuntos de propiedades, consulte la [documentación Windows Driver Kit (WDK).](/windows-hardware/drivers/gettingstarted/)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -149,10 +149,10 @@ Para obtener más información acerca de los conjuntos de propiedades, consulte 
 [Temas de captura avanzada](advanced-capture-topics.md)
 </dt> <dt>
 
-[Conjunto de propiedades de PIN](pin-property-set.md)
+[Anclar conjunto de propiedades](pin-property-set.md)
 </dt> <dt>
 
-[Filtros de captura de vídeo de DirectShow](directshow-video-capture-filters.md)
+[DirectShow Filtros de captura de vídeo](directshow-video-capture-filters.md)
 </dt> </dl>
 
  

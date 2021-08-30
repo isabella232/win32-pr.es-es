@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_RSTINFO'
-title: Estructura de JET_RSTINFO
+description: 'Más información sobre: JET_RSTINFO estructura'
+title: JET_RSTINFO estructura
 TOCTitle: JET_RSTINFO Structure
 ms:assetid: 2f144d68-dcd9-4d0d-9d9e-a7d2a5c350fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269216(v=EXCHG.10)
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3a776c84d89dfc97272c65bb0c0684faba814fdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05e2a96eba5be3e9d10ac167e122c12f3d08d885
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154020"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478461"
 ---
-# <a name="jet_rstinfo-structure"></a>Estructura de JET_RSTINFO
+# <a name="jet_rstinfo-structure"></a>JET_RSTINFO estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_rstinfo-structure"></a>Estructura de JET_RSTINFO
+## <a name="jet_rstinfo-structure"></a>JET_RSTINFO estructura
 
-La estructura **JET_RSTINFO** contiene información sobre el control del proceso de recuperación, como la información de reubicación de la base de datos y la capacidad de controlar la detención de la recuperación.
+La JET_RSTINFO contiene **información** de control para el proceso de recuperación, como la información de reubicación de la base de datos y la capacidad de controlar la detención de la recuperación.
 
-**Windows Vista:** La estructura de **JET_RSTINFO** se introduce en Windows Vista.
+**Windows Vista:** La **JET_RSTINFO** se introduce en Windows Vista.
 
 ```cpp
     typedef struct {
@@ -52,15 +52,15 @@ Tamaño de la estructura.
 
 **rgrstmap**
 
-La estructura que describe la ruta de acceso antigua y nueva de una base de datos restaurada.
+Estructura que describe la ruta de acceso antigua y nueva de una base de datos restaurada.
 
 **crstmap**
 
-Recuento de entradas de matriz en rgrstmap.
+Recuento de entradas de matriz en el gráfico rgrstmap.
 
 **lgposStop**
 
-La posición del registro en la que detener la recuperación. No se realizará la operación de deshacer.
+Posición del registro en la que se detiene la recuperación. No se realizará ninguna deshacer.
 
 **logtimeStop**
 
@@ -72,30 +72,9 @@ Función de estado para notificar el estado de recuperación.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Unicode</strong></p></td>
-<td><p>Se implementa como <strong>JET_RSTINFO_W</strong> (Unicode) y <strong>JET_RSTINFO_A</strong> (ANSI).</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JET_RSTINFO_W</strong> (Unicode) <strong>y JET_RSTINFO_A</strong> (ANSI).</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

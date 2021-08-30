@@ -1,7 +1,7 @@
 ---
-description: Recupera información acerca de la clave del registro especificada en un subárbol del registro sin conexión.
+description: Recupera información sobre la clave del Registro especificada en un subárbol del Registro sin conexión.
 ms.assetid: b565c55c-acc2-4880-91eb-7bd9188e4749
-title: Función ORQueryInfoKey (Offreg. h)
+title: Función ORQueryInfoKey (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: b38a0dd35b1fe1755fbcbc3bcac3da379ee57e6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb7bf6d4a9440e648844e6e18d9b4965b0240de98f8f27f4aac142276142515b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120058615"
 ---
-# <a name="orqueryinfokey-function"></a>ORQueryInfoKey función)
+# <a name="orqueryinfokey-function"></a>Función ORQueryInfoKey
 
-Recupera información acerca de la clave del registro especificada en un subárbol del registro sin conexión.
+Recupera información sobre la clave del Registro especificada en un subárbol del Registro sin conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,30 +49,30 @@ DWORD ORQueryInfoKey(
 
 <dl> <dt>
 
-*Identificador* \[ de de\]
+*Identificador* \[ En\]
 </dt> <dd>
 
-Identificador de una clave del registro abierta en un subárbol del registro sin conexión.
+Identificador de una clave del Registro abierta en un subárbol del Registro sin conexión.
 
 </dd> <dt>
 
 *lpClass* \[ out, opcional\]
 </dt> <dd>
 
-Un puntero a un búfer que recibe la clase clave. Este parámetro puede ser **NULL**.
+Puntero a un búfer que recibe la clase de clave. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
-*lpcClass* \[ in, out, opcional\]
+*lpcClass* \[ in, out, optional\]
 </dt> <dd>
 
-Puntero a una variable que especifica el tamaño del búfer al que apunta el parámetro *lpClass* , en caracteres.
+Puntero a una variable que especifica el tamaño del búfer al que apunta el parámetro *lpClass,* en caracteres.
 
-El tamaño debe incluir el carácter nulo de terminación. Cuando la función devuelve, esta variable contiene el tamaño de la cadena de clase que se almacena en el búfer. El recuento devuelto no incluye el carácter nulo de terminación. Si el búfer no es suficientemente grande, la función devuelve un ERROR \_ más \_ datos y la variable contiene el tamaño de la cadena, en caracteres, sin contar el carácter null de terminación.
+El tamaño debe incluir el carácter nulo de terminación. Cuando la función vuelve, esta variable contiene el tamaño de la cadena de clase que se almacena en el búfer. El recuento devuelto no incluye el carácter nulo de terminación. Si el búfer no es lo suficientemente grande, la función devuelve ERROR MORE DATA y la variable contiene el tamaño de la cadena, en caracteres, sin contar el carácter \_ \_ nulo final.
 
-Si *lpClass* es **null**, *lpcClass* puede ser **null**.
+Si *lpClass* es **NULL,** *lpcClass* puede ser **NULL.**
 
-Si el parámetro *lpClass* es una dirección válida, pero el parámetro *lpcClass* no es (por ejemplo, si el parámetro *lpcClass* es **null**), la función devuelve un parámetro de error \_ no válido \_ .
+Si el *parámetro lpClass* es una dirección válida, pero el parámetro *lpcClass* no es (por ejemplo, si el parámetro *lpcClass* es **NULL),** la función devuelve ERROR \_ INVALID \_ PARAMETER.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Puntero a una variable que recibe el número de subclaves que contiene la clave 
 *lpcMaxSubKeyLen* \[ out, opcional\]
 </dt> <dd>
 
-Puntero a una variable que recibe el tamaño de la subclave de la clave con el nombre más largo, en caracteres Unicode, sin incluir el carácter nulo de terminación. Este parámetro puede ser **NULL**.
+Puntero a una variable que recibe el tamaño de la subclave de la clave con el nombre más largo, en caracteres Unicode, sin incluir el carácter nulo final. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
@@ -100,14 +100,14 @@ Puntero a una variable que recibe el tamaño de la cadena más larga que especif
 *lpcValues* \[ out, opcional\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número de valores que están asociados a la clave. Este parámetro puede ser **NULL**.
+Puntero a una variable que recibe el número de valores asociados a la clave. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
 *lpcMaxValueNameLen* \[ out, opcional\]
 </dt> <dd>
 
-Puntero a una variable que recibe el tamaño del nombre del valor más largo de la clave, en caracteres Unicode. El tamaño no incluye el carácter nulo de terminación. Este parámetro puede ser **NULL**.
+Puntero a una variable que recibe el tamaño del nombre de valor más largo de la clave, en caracteres Unicode. El tamaño no incluye el carácter nulo de terminación. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
@@ -128,19 +128,19 @@ Puntero a una variable que recibe el tamaño del descriptor de seguridad de la c
 *lpftLastWriteTime* \[ out, opcional\]
 </dt> <dd>
 
-Puntero a una estructura [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) que recibe la hora de la última escritura. Este parámetro puede ser **NULL**.
+Puntero a una [estructura FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) que recibe la hora de la última escritura. Este parámetro puede ser **NULL**.
 
-La función establece los miembros de la estructura [FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) para indicar la última vez que se modifica la clave o cualquiera de sus entradas de valor.
+La función establece los miembros de la [estructura FILETIME](/windows/win32/api/minwinbase/ns-minwinbase-filetime) para indicar la última vez que se modifica la clave o cualquiera de sus entradas de valor.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
-Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror. h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la \_ \_ marca de formato mensaje de \_ sistema para obtener una descripción genérica del error.
+Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror.h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la marca FORMAT \_ MESSAGE FROM SYSTEM para obtener una descripción genérica del \_ \_ error.
 
-Si el búfer de *lpClass* es demasiado pequeño para recibir el nombre de la clase, la función devuelve los datos de error \_ \_ .
+Si el *búfer lpClass* es demasiado pequeño para recibir el nombre de la clase , la función devuelve ERROR \_ MORE \_ DATA.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -148,8 +148,8 @@ Si el búfer de *lpClass* es demasiado pequeño para recibir el nombre de la cla
 
 | Requisito | Value |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuible<br/> | Windows offline Registry Library versión 1,0 o posterior<br/>                      |
-| Encabezado<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuible<br/> | Windows Biblioteca del Registro sin conexión versión 1.0 o posterior<br/>                      |
+| Header<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | Archivo DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 

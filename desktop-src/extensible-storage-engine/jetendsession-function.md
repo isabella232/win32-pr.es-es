@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2b96ae49ef907cea158d1496339a740e1026ffea
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: f6e620a801f0ee7f2dc6f9c6f2dfe90e9f766e5e
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122472571"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983468"
 ---
 # <a name="jetendsession-function"></a>JetEndSession (Función)
 
@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetendsession-function"></a>JetEndSession (Función)
 
-La **función JetEndSession** finaliza la sesión, limpia y desasigna los recursos asociados a la sesión especificada.
+La **función JetEndSession** finaliza la sesión y limpia y desasigna los recursos asociados a la sesión especificada.
 
 ```cpp
     JET_ERR JET_API JetEndSession(
@@ -49,23 +49,23 @@ Sesión que se finalizará. Los recursos asociados se liberan cuando finaliza la
 
 *grbit*
 
-Reservado. Este parámetro puede contener la JET_bitForceSessionClosed, pero esta marca está reservada y su configuración no tiene ningún efecto.
+Reservado. Este parámetro puede contener la JET_bitForceSessionClosed, pero esta marca está reservada y establecerla no tiene ningún efecto.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o la combinación de varios valores de parámetro produjo un resultado inesperado.</p> | 
+| <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad en la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros que se proporcionó contenía un valor inesperado o la combinación de varios valores de parámetro produjo un resultado inesperado.</p> | 
 | <p>JET_errInvalidSesid</p> | <p>La sesión no era una sesión JET válida.</p> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errOutOfMemory</p> | <p>Error en la operación porque no se pudo asignar memoria.</p> | 
-| <p>JET_errSessionInUse</p> | <p>Esto significa que la sesión estaba en uso en otro subproceso o que la sesión no se estableció ni restablecó correctamente.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p>Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
+| <p>JET_errSessionInUse</p> | <p>Esto significa que la sesión estaba en uso en otro subproceso o que la sesión no se estableció o restablecó correctamente.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error grave que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p>Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
 | <p>JET_errOutOfBuffers</p> | <p>Error del sistema que indica que no hay más búferes.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
@@ -74,16 +74,22 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 Si se ejecuta correctamente, el identificador de sesión se cierra y no está disponible, y se limpian todos los recursos relacionados con esta sesión.
 
-En caso de error, hay varios errores adicionales que podrían producirse como parte del cierre de la tabla de ordenación, el cierre del cursor y la reversión de transacciones. Estos errores son bastante improbables y muy poco probables si las sesiones no están completamente en uso cuando se llama a **JetEndSession.** Estos errores se devolverán si alguna parte de la sesión no se pudo limpiar correctamente.
+En caso de error, hay varios errores adicionales que podrían producirse como parte del cierre de la tabla de ordenación, el cierre del cursor y la reversión de transacciones. Estos errores son bastante improbables y extremadamente improbables si las sesiones no están completamente en uso cuando se llama a **JetEndSession.** Estos errores se devolverán si alguna parte de la sesión no se pudo limpiar correctamente.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Esta API revertirá las transacciones abiertas (no confirmadas en el nivel 0). También se limpiarán todos los cursores asociados a esta sesión y las tablas de ordenación que se hayan creado o abierto.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

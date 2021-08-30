@@ -7,12 +7,12 @@ MSHAttr:
 title: IsExclusiveToOther
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57f53a270849dd2bcde7c394dddfe7cf9abe793c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: be2b66d4e3566b95f830291234faf099a8e28e29
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122879896"
+ms.locfileid: "122986288"
 ---
 # <a name="span-idwwan_profile_v4element_isexclusivetootherspanisexclusivetoother"></a><span id="WWAN_profile_v4.element_IsExclusiveToOther"></span>IsExclusiveToOther
 
@@ -23,7 +23,7 @@ Especifica que este perfil es exclusivo de otros perfiles de los mismos conjunto
 [&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
 **&lt;IsExclusiveToOther&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <IsExclusiveToOther>
@@ -56,7 +56,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

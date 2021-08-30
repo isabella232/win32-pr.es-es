@@ -4,12 +4,12 @@ description: En la lista siguiente se incluyen todas las funciones de WinINet.
 ms.assetid: 2e0da5c6-29e4-47b5-8ed2-8712c9ca2c97
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed50afee0920a9a0d5012c830744d9bee6865050
-ms.sourcegitcommit: 8a31a21726d4a8ebfddfa71f02f1bfffea459277
+ms.openlocfilehash: e087fe0f83577924e8ad6b752e8ad4ed5d250d1c9da2a368273c5eb2af9e921c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110208703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071655"
 ---
 # <a name="wininet-functions"></a>Funciones de WinINet
 
@@ -107,7 +107,7 @@ ms.locfileid: "110208703"
 
 [**InternetAutodialHangup**](/windows/win32/api/winineti/nf-winineti-internetautodialhangup)
 
-[**InternetCanalizeUrl**](/windows/win32/api/Wininet/nf-wininet-internetcanonicalizeurla)
+[**InternetNtenicalizeUrl**](/windows/win32/api/Wininet/nf-wininet-internetcanonicalizeurla)
 
 [**InternetCheckConnection**](/windows/win32/api/Wininet/nf-wininet-internetcheckconnectiona)
 

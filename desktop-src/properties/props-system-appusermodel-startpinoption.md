@@ -1,19 +1,19 @@
 ---
-description: Establezca esta propiedad en un acceso directo a (1) evitar que una aplicación se ancle automáticamente a la pantalla de inicio tras la instalación; o (2) indican que un elemento se agrega mediante programación al iniciador a través de la acción del usuario (lo que implica anclar automáticamente a Inicio y eliminar al desanclar).
+description: Establezca esta propiedad en un acceso directo en (1) para evitar que una aplicación se anclar automáticamente a pantalla Inicio tras la instalación; o (2) indican que un elemento se agrega mediante programación al iniciador a través de la acción del usuario (lo que implica anclar automáticamente a Inicio y eliminar al desanclar).
 ms.assetid: 247ad0a6-ce65-45f1-a0d5-51ad135000aa
-title: System. AppUserModel. StartPinOption
+title: System.AppUserModel.StartPinOption
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43cdef82a90488ce87bbf182323b00d62a5cdfea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd2467a6a734e8dc8f1e30aed9ba0a5b986191c457186aff1d145c95cc838f19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120059985"
 ---
-# <a name="systemappusermodelstartpinoption"></a>System. AppUserModel. StartPinOption
+# <a name="systemappusermodelstartpinoption"></a>System.AppUserModel.StartPinOption
 
-Establezca esta propiedad en un acceso directo a (1) evitar que una aplicación se ancle automáticamente a la pantalla de inicio tras la instalación; o (2) indican que un elemento se agrega mediante programación al iniciador a través de la acción del usuario (lo que implica anclar automáticamente a Inicio y eliminar al desanclar).
+Establezca esta propiedad en un acceso directo en (1) para evitar que una aplicación se anclar automáticamente a pantalla Inicio tras la instalación; o (2) indican que un elemento se agrega mediante programación al iniciador a través de la acción del usuario (lo que implica anclar automáticamente a Inicio y eliminar al desanclar).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -48,9 +48,9 @@ propertyDescription
             defineToken = APPUSERMODEL_STARTPINOPTION_USERPINNED
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -65,7 +65,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -95,7 +95,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración GetSecondaryIndexBookmarkGrbit'
-title: Enumeración GetSecondaryIndexBookmarkGrbit
+description: 'Más información sobre: Enumeración GetSecondaryIndexBookmarkGrbit'
+title: GetSecondaryIndexBookmarkGrbit (enumeración)
 TOCTitle: GetSecondaryIndexBookmarkGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.GetSecondaryIndexBookmarkGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.getsecondaryindexbookmarkgrbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 65510386e2b335d5c2e06ec647360b8383424784
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a507403bdd2ec76631ff001752e62e5b4d808904da03bbf53902a53a6d40cab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968765"
 ---
-# <a name="getsecondaryindexbookmarkgrbit-enumeration"></a>Enumeración GetSecondaryIndexBookmarkGrbit
+# <a name="getsecondaryindexbookmarkgrbit-enumeration"></a>GetSecondaryIndexBookmarkGrbit (enumeración)
 
-Opciones para [JetGetSecondaryIndexBookmark (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, \[ \] , Int32, Int32, GetSecondaryIndexBookmarkGrbit)](./api.jetgetsecondaryindexbookmark-method.md).
+Opciones de [JetGetSecondaryIndexBookmark(JET_SESID, JET_TABLEID, , \[ \] Int32, Int32, \[ \] , Int32, Int32, GetSecondaryIndexBookmarkGrbit)](./api.jetgetsecondaryindexbookmark-method.md).
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ public enum GetSecondaryIndexBookmarkGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 </tbody>
@@ -81,4 +81,4 @@ public enum GetSecondaryIndexBookmarkGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

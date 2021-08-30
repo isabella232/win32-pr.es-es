@@ -7,12 +7,12 @@ MSHAttr:
 title: PurposeGroupGuid
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73d772a79d1802c99cde571abc1c665c73ddd06c
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 091ccd49a30e554806cea1472ca940042283472a
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476081"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883471"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupguidspanpurposegroupguid"></a><span id="WWAN_profile_v4.element_PurposeGroupGuid"></span>PurposeGroupGuid
 
@@ -33,9 +33,9 @@ Se definen cuatro valores GUID, como se muestra en la tabla siguiente.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-[<PurposeGroups>](element-purposegroups.md)  
-**<PurposeGroupGuid>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+[&lt;PurposeGroups&gt;](element-purposegroups.md)  
+**&lt;PurposeGroupGuid&gt;**
 
 ## <a name="syntax"></a>Syntax
 

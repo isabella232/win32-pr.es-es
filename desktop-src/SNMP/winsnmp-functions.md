@@ -4,12 +4,12 @@ description: Las funciones usadas con WinSNMP se agrupan en las siguientes agrup
 ms.assetid: ae95ac47-81ff-4715-b3e9-e19c07223712
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e29169e8cf86b7f21ebbc40ced2ac37a46668c727183a9b2970eb368c7e81d85
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec1c355cb8da6a892614e7729d1db75ded3c3fb9
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142808"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122476961"
 ---
 # <a name="winsnmp-functions"></a>Funciones de WinSNMP
 
@@ -31,77 +31,23 @@ Las funciones de comunicaciones de WinSNMP proporcionan una interfaz entre la ap
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Función</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcancelmsg"><strong>SnmpCancelMsg</strong></a></td>
-<td>Solicita que la implementación de Microsoft WinSNMP cancele los intentos de retransmisión y las notificaciones de tiempo de espera para un mensaje de solicitud SNMP.</td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanup"><strong>SnmpCleanup</strong></a></td>
-<td>Informa a la implementación de que una aplicación se está desconectando y ya no requiere recursos asignados.</td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanupex"><strong>SnmpCleanupEx</strong></a></td>
-<td>Realiza la limpieza cuando no hay llamadas correctas pendientes a <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>SnmpStartup</strong></a> o <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartupex"><strong>SnmpStartupEx</strong></a> dentro de una aplicación WinSNMP.</td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpclose"><strong>SnmpClose</strong></a></td>
-<td>Permite que la implementación desasigne los recursos asociados a una sesión y cierre los mecanismos de comunicación.</td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a></td>
-<td>Solicita la implementación para abrir una sesión de WinSNMP y asignar recursos y mecanismos de comunicación. Al desarrollar nuevas aplicaciones WinSNMP, se recomienda llamar a la función <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a> para abrir una sesión winSNMP en lugar de llamar a <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpopen"><strong>la función SnmpOpen.</strong></a></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmplisten"><strong>SnmpListen</strong></a></td>
-<td>Registra o anula el registro de una aplicación WinSNMP como agente SNMP.</td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpopen"><strong>SnmpOpen</strong></a></td>
-<td>Solicita la implementación para abrir una sesión de WinSNMP y asignar recursos y mecanismos de comunicación. Al desarrollar nuevas aplicaciones WinSNMP, se recomienda llamar a la función <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a> para abrir una sesión winSNMP en lugar de llamar a <strong>la función SnmpOpen.</strong></td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg"><strong>SnmpRecvMsg</strong></a></td>
-<td>Devuelve mensajes SNMP y notificaciones y datos de captura pendientes.</td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpregister"><strong>SnmpRegister</strong></a></td>
-<td>Informa a la implementación de que la aplicación debe registrar o anular el registro de capturas y notificaciones.</td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg"><strong>SnmpSendMsg</strong></a></td>
-<td>Solicita que la implementación transmita una unidad de datos de protocolo.</td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>SnmpStartup</strong></a></td>
-<td>Notifica a la implementación que realice procedimientos de inicialización para la aplicación. Una aplicación debe llamar correctamente <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>a la función SnmpStartup</strong></a> antes de llamar a cualquier otra función WinSNMP.</td>
-</tr>
-<tr class="even">
-<td><a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartupex"><strong>SnmpStartupEx</strong></a></td>
-<td>Notifica a la implementación de Microsoft WinSNMP que la aplicación WinSNMP requiere los servicios de la implementación. <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartupex"><strong>SnmpStartupEx habilita la</strong></a> compatibilidad con varios módulos de software independientes que usan WinSNMP dentro de la misma aplicación.</td>
-</tr>
-<tr class="odd">
-<td><a href="/windows/desktop/api/Winsnmp/nc-winsnmp-snmpapi_callback"><strong>SNMPAPI_CALLBACK</strong></a></td>
-<td>Notifica a una sesión de WinSNMP que hay disponible un mensaje SNMP o un evento asincrónico.
-<blockquote>
-[!Note]<br />
-Esta función de devolución de llamada solo se aplica a las sesiones abiertas como resultado de una llamada a la <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>función SnmpCreateSession.</strong></a>
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Función | Descripción | 
+|----------|-------------|
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcancelmsg"><strong>SnmpCancelMsg</strong></a> | Solicita que la implementación de Microsoft WinSNMP cancele los intentos de retransmisión y las notificaciones de tiempo de espera para un mensaje de solicitud SNMP. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanup"><strong>SnmpCleanup</strong></a> | Informa a la implementación de que una aplicación se está desconectando y ya no requiere recursos asignados. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcleanupex"><strong>SnmpCleanupEx</strong></a> | Realiza la limpieza cuando no hay llamadas correctas pendientes a <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>SnmpStartup</strong></a> o <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartupex"><strong>SnmpStartupEx</strong></a> dentro de una aplicación WinSNMP. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpclose"><strong>SnmpClose</strong></a> | Permite que la implementación desasigne los recursos asociados a una sesión y cierre los mecanismos de comunicación. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a> | Solicita la implementación para abrir una sesión de WinSNMP y asignar recursos y mecanismos de comunicaciones. Al desarrollar nuevas aplicaciones WinSNMP, se recomienda llamar a la función <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a> para abrir una sesión winSNMP en lugar de llamar a <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpopen"><strong>la función SnmpOpen.</strong></a> | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmplisten"><strong>SnmpListen</strong></a> | Registra o anula el registro de una aplicación WinSNMP como agente SNMP. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpopen"><strong>SnmpOpen</strong></a> | Solicita la implementación para abrir una sesión de WinSNMP y asignar recursos y mecanismos de comunicaciones. Al desarrollar nuevas aplicaciones WinSNMP, se recomienda llamar a la función <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>SnmpCreateSession</strong></a> para abrir una sesión winSNMP en lugar de llamar a <strong>la función SnmpOpen.</strong> | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg"><strong>SnmpRecvMsg</strong></a> | Devuelve mensajes SNMP y notificaciones y datos de captura pendientes. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpregister"><strong>SnmpRegister</strong></a> | Informa a la implementación de que la aplicación debe registrar o anular el registro de capturas y notificaciones. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg"><strong>SnmpSendMsg</strong></a> | Solicita que la implementación transmita una unidad de datos de protocolo. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>SnmpStartup</strong></a> | Notifica a la implementación que realice procedimientos de inicialización para la aplicación. Una aplicación debe llamar correctamente <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartup"><strong>a la función SnmpStartup</strong></a> antes de llamar a cualquier otra función WinSNMP. | 
+| <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartupex"><strong>SnmpStartupEx</strong></a> | Notifica a la implementación de Microsoft WinSNMP que la aplicación WinSNMP requiere los servicios de la implementación. <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstartupex"><strong>SnmpStartupEx habilita la</strong></a> compatibilidad con varios módulos de software independientes que usan WinSNMP dentro de la misma aplicación. | 
+| <a href="/windows/desktop/api/Winsnmp/nc-winsnmp-snmpapi_callback"><strong>SNMPAPI_CALLBACK</strong></a> | Notifica a una sesión de WinSNMP que hay disponible un mensaje SNMP o un evento asincrónico.<blockquote>[!Note]<br />Esta función de devolución de llamada solo se aplica a las sesiones abiertas como resultado de una llamada a la <a href="/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcreatesession"><strong>función SnmpCreateSession.</strong></a></blockquote><br /> | 
+
 
 
 
@@ -151,7 +97,7 @@ Las funciones de base de datos winSNMP proporcionan una aplicación WinSNMP con 
 
 ## <a name="winsnmp-pdu-functions"></a>Funciones de PDU de WinSNMP
 
-Las funciones de PDU de WinSNMP permiten a las aplicaciones WinSNMP extraer y actualizar los elementos de datos (o campos) de una PDU. Esto incluye las PDU devueltas por una llamada a la [**función SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) o [**a la función SnmpDecodeMsg.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpdecodemsg) Las funciones PDU también construyen PDU para su uso en las funciones [**SnmpSendMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg) y [**SnmpEncodeMsg.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpencodemsg)
+Las funciones de PDU de WinSNMP permiten a las aplicaciones WinSNMP extraer y actualizar los elementos de datos (o campos) de una PDU. Esto incluye las PDU devueltas por una llamada a la [**función SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) o [**a la función SnmpDecodeMsg.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpdecodemsg) Las funciones PDU también construyen PDU para su uso en las [**funciones SnmpSendMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg) y [**SnmpEncodeMsg.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpencodemsg)
 
 
 

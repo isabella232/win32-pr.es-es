@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_CHANGE (Rich Edit) (Winuser. h)
-description: Notifica a la ventana host de un control Rich Edit sin ventana que se ha producido un cambio. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_CHANGE (edición enriquecte) código de notificación (Winuser.h)
+description: Notifica a la ventana host de un control de edición enriquecido sin ventanas que se ha producido un cambio. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 97C0D9F1-7D4E-409D-A4F6-E645475A8EEF
 keywords:
-- Código de notificación de EN_CHANGE (edición enriquecida) controles de Windows
+- EN_CHANGE (edición enriquecte) código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ea615234aba881b2a8938b8e502b36acfa565fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 489ab6043937e10c18d689fc74a5e7ffbd415e81fd627a257a9e7021701de6ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120047845"
 ---
-# <a name="en_change-rich-edit-notification-code"></a>\_Código de notificación en cambio (Rich Edit)
+# <a name="en_change-rich-edit-notification-code"></a>Código de notificación EN \_ CHANGE (rich edit)
 
-Notifica a la ventana host de un control Rich Edit sin ventana que se ha producido un cambio. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana host de un control de edición enriquecido sin ventanas que se ha producido un cambio. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ EN_CHANGE
 *lParam* 
 </dt> <dd>
 
-Estructura [**CHANGENOTIFY**](/windows/desktop/api/Textserv/ns-textserv-changenotify) que especifica el cambio que se realizó.
+Estructura [**CHANGENOTIFY**](/windows/desktop/api/Textserv/ns-textserv-changenotify) que especifica el cambio realizado.
 
 </dd> </dl>
 
@@ -49,9 +49,9 @@ Estructura [**CHANGENOTIFY**](/windows/desktop/api/Textserv/ns-textserv-changeno
 
 Este código de notificación no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recibir los \_ códigos de notificación de cambio, especifique el [**\_ cambio ENM**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir códigos de notificación EN \_ CHANGE, especifique [**ENM \_ CHANGE**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Para recibir los \_ códigos de notificación de cambio, especifique el [**\_ ca
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

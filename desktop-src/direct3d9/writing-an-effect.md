@@ -1,25 +1,25 @@
 ---
-description: La escritura de un efecto requiere que entienda la sintaxis de los efectos y genere la información de estado necesaria. Puede Agregar el estado del sombreador, la textura y el estado del muestrario, y todo el estado de la canalización que la aplicación requiera en un efecto.
+description: La escritura de un efecto requiere que comprenda la sintaxis del efecto y genere la información de estado necesaria. Puede agregar el estado del sombreador, la textura y el muestreador, y todo el estado de canalización que la aplicación requiere en un efecto.
 ms.assetid: 361dd260-526a-4484-8dc9-3857874e5023
 title: Escribir un efecto (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e0f456c5a2bce66f782b4da7d426de5c86bbb33
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d6d625d09f57b68f6447982769d0ff4d4731e6aaaeff330b1cec639c4dffec8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120068805"
 ---
 # <a name="writing-an-effect-direct3d-9"></a>Escribir un efecto (Direct3D 9)
 
-La escritura de un efecto requiere que entienda la sintaxis de los efectos y genere la información de estado necesaria. Puede Agregar el estado del sombreador, la textura y el estado del muestrario, y todo el estado de la canalización que la aplicación requiera en un efecto.
+La escritura de un efecto requiere que comprenda la sintaxis del efecto y genere la información de estado necesaria. Puede agregar el estado del sombreador, la textura y el muestreador, y todo el estado de canalización que la aplicación requiere en un efecto.
 
-La sintaxis del efecto se detalla en el [formato de efecto (Direct3D 9)](dx9-graphics-reference-effects-file-format.md). Un efecto se encapsula normalmente en un archivo de efectos (. FX), pero también se puede escribir como una cadena de texto en una aplicación.
+La sintaxis del efecto se detalla en [El formato de efecto (Direct3D 9).](dx9-graphics-reference-effects-file-format.md) Normalmente, un efecto se encapsula en un archivo de efecto (.fx), pero también se puede escribir como una cadena de texto en una aplicación.
 
 ## <a name="effect-example"></a>Ejemplo de efecto
 
-Los efectos contienen tres tipos de estado: el estado del sombreador, la textura y el estado del muestrario, y el estado de la canalización. Este es un ejemplo de un efecto del [ejemplo BasicHLSL](https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx):
+Los efectos contienen tres tipos de estado: estado del sombreador, estado de textura y muestra y estado de canalización. Este es un ejemplo de un efecto del [ejemplo BasicHLSL](https://msdn.microsoft.com/library/Ee416223(v=VS.85).aspx):
 
 
 ```
@@ -122,7 +122,7 @@ technique RenderSceneWithTexture1Light
 
 Este efecto contiene:
 
--   El estado del sombreador, que es todo el estado asociado con el sombreador de vértices y el sombreador de píxeles. Esto se define mediante las funciones de sombreador de vértices y píxeles, las variables globales que requieran y sus estructuras de datos de entrada y salida, que se enumeran aquí:
+-   Estado del sombreador, que es todo el estado asociado al sombreador de vértices y al sombreador de píxeles. Esto se define mediante las funciones de sombreador de vértices y píxeles, las variables globales que necesiten y sus estructuras de datos de entrada y salida, que se enumeran aquí:
 
     ```
     struct VS_OUTPUT
@@ -140,7 +140,7 @@ Este efecto contiene:
 
     
 
--   Estado de muestra y textura, que son las variables globales para el objeto de textura y el objeto de muestra:
+-   Estado de textura y muestreador, que son las variables globales para el objeto de textura y el objeto sampler:
 
     ```
     texture g_MeshTexture;              // Color texture for mesh
@@ -154,7 +154,7 @@ Este efecto contiene:
 
     
 
--   El otro estado del efecto. En este ejemplo no se usa explícitamente ningún otro estado de efecto. Si lo hubiera, sería la técnica dentro del paso al que se aplicó:
+-   El otro estado de efecto. No hay ningún otro estado de efecto que se utilice explícitamente en este ejemplo. Si lo hubiera, sería la técnica dentro del paso al que se aplicó:
 
     ```
     technique RenderSceneWithTexture1Light
@@ -172,11 +172,11 @@ Este efecto contiene:
 
     
 
-## <a name="effects-contain-one-or-more-techniques-and-passes"></a>Los efectos contienen una o más técnicas y pases
+## <a name="effects-contain-one-or-more-techniques-and-passes"></a>Los efectos contienen una o varias técnicas y pases
 
-Las opciones de representación de efectos se controlan agregando técnicas y pasadas.
+Las opciones de representación de efectos se controlan mediante la adición de técnicas y pases.
 
-Los efectos se pueden crear con pasos adicionales para facilitar efectos de representación más complejos. Una técnica admite un número arbitrario de pasos:
+Los efectos se pueden crear con pases adicionales para facilitar efectos de representación más complejos. Una técnica admite un número arbitrario de pases:
 
 
 ```
@@ -240,7 +240,7 @@ technique TVertexShaderOnly
 
 
 
-Las técnicas y los pasos pueden tener nombres arbitrarios.
+Las técnicas y los pases pueden tener nombres arbitrarios.
 
 ## <a name="related-topics"></a>Temas relacionados
 

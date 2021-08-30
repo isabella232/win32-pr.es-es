@@ -4,16 +4,16 @@ description: IAgentBalloon GetFontBold
 ms.assetid: 5a55f771-d68e-4f66-8001-47c141661b06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 858f6f42964db1bdd7ae548d308c6f6668b05631
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45dc48eeba39a889c5a7cbee9bc9caeef759571e98b904646c62cd903c444305
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962615"
 ---
 # <a name="iagentballoongetfontbold"></a>IAgentBalloon::GetFontBold
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetFontBold(
@@ -21,24 +21,24 @@ HRESULT GetFontBold(
 );                    // font displayed in word balloon 
 ```
 
-Indica si la fuente utilizada en un globo de palabras está en negrita.
+Indica si la fuente usada en un globo de palabras está en negrita.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
 <span id="pbFontBold"></span><span id="pbfontbold"></span><span id="PBFONTBOLD"></span>*pbFontBold*
 </dt> <dd>
 
-Dirección de un valor que recibe **true** si la fuente está en negrita y **false** si no está en negrita.
+Dirección de un valor que recibe **True si** la fuente está en negrita y **False** si no está en negrita.
 
 </dd> </dl>
 
-El estilo de fuente utilizado en un globo de palabras de caracteres se define en el editor de caracteres del agente de Microsoft. No se puede cambiar por una aplicación. Sin embargo, el usuario puede invalidar la configuración de fuente para todos los caracteres a través de la hoja de propiedades del agente de Microsoft.
+El estilo de fuente utilizado en un globo de palabras de caracteres se define en el Editor de caracteres de Microsoft Agent. Una aplicación no puede cambiarlo. Sin embargo, el usuario puede invalidar la configuración de fuente de todos los caracteres a través de la hoja de propiedades de Microsoft Agent.
 
- 
+ 
 
- 
+ 
 
 
 

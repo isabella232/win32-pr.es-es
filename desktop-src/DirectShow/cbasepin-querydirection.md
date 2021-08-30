@@ -1,7 +1,7 @@
 ---
-description: 'El método QueryDirection recupera la dirección del PIN (entrada o salida). Este método implementa el método IPin:: QueryDirection.'
+description: El método QueryDirection recupera la dirección del pin (entrada o salida). Este método implementa el método IPin::QueryDirection.
 ms.assetid: c28332dc-5ac4-4c89-98b4-281424f36ba9
-title: Método CBasePin. QueryDirection (Amfilter. h)
+title: Método CBasePin.QueryDirection (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7e2ebfaa3d12b5f582b4b67014280fa0a0d5299d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3769b7cd510b21d91a0b855fa0551cf698b91812e5aab3fc53bda32bb4ce82cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120056235"
 ---
-# <a name="cbasepinquerydirection-method"></a>CBasePin. QueryDirection, método
+# <a name="cbasepinquerydirection-method"></a>Método CBasePin.QueryDirection
 
-El `QueryDirection` método recupera la dirección del PIN (entrada o salida). Este método implementa el método [**IPin:: QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) .
+El `QueryDirection` método recupera la dirección del pin (entrada o salida). Este método implementa el [**método IPin::QueryDirection.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT QueryDirection(
 *pPinDir* 
 </dt> <dd>
 
-Puntero a una variable que recibe un miembro del tipo enumerado de la [**\_ dirección del PIN**](/windows/win32/api/strmif/ne-strmif-pin_direction) .
+Puntero a una variable que recibe un miembro del tipo [**enumerado \_ PIN DIRECTION.**](/windows/win32/api/strmif/ne-strmif-pin_direction)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el \_ puntero S o E \_ .
+Devuelve S \_ OK o E \_ POINTER.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el \_ puntero S o E \_ .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el \_ puntero S o E \_ .
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

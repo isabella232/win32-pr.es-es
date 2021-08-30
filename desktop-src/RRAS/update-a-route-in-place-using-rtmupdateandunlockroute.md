@@ -1,32 +1,32 @@
 ---
-title: Actualización de una ruta en contexto mediante RtmUpdateAndUnlockRoute
-description: En el procedimiento siguiente se describen los pasos que se usan para actualizar una ruta en contexto. En el código de ejemplo siguiente se muestra cómo implementar el procedimiento.
+title: Actualización de una ruta local mediante RtmUpdateAndUnlockRoute
+description: En el procedimiento siguiente se describen los pasos usados para actualizar una ruta en su lugar. El código de ejemplo siguiente muestra cómo implementar el procedimiento.
 ms.assetid: 3598a28f-8ade-4b3f-9d31-4f2c84df2dd6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cb79b86645d77f0ee44ffd06b8ef6f403dbd8ac
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 95429383b3c13bfb0a02282425c004f77205ba494ac4026c8b066db0726b9966
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120101725"
 ---
-# <a name="update-a-route-in-place-using-rtmupdateandunlockroute"></a>Actualización de una ruta en contexto mediante RtmUpdateAndUnlockRoute
+# <a name="update-a-route-in-place-using-rtmupdateandunlockroute"></a>Actualización de una ruta local mediante RtmUpdateAndUnlockRoute
 
-En el procedimiento siguiente se describen los pasos que se usan para actualizar una ruta en contexto. En el código de ejemplo siguiente se muestra cómo implementar el procedimiento.
+En el procedimiento siguiente se describen los pasos usados para actualizar una ruta en su lugar. El código de ejemplo siguiente muestra cómo implementar el procedimiento.
 
-**Para actualizar una ruta en contexto, el cliente debe realizar los siguientes pasos:**
+**Para actualizar una ruta en su lugar, el cliente debe realizar los pasos siguientes**
 
-1.  Bloquee la ruta mediante una llamada a [**RtmLockRoute**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmlockroute). Actualmente, esta función bloquea el destino de la ruta. El administrador de tablas de enrutamiento devuelve un puntero a la ruta.
-2.  Use el puntero a la estructura de [**\_ \_ información de ruta RTM**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) del administrador de tablas de enrutamiento, obtenida en el paso 1, para realizar los cambios necesarios en la ruta. Solo se pueden modificar determinados miembros de la estructura de **\_ \_ información de ruta RTM** al actualizarse. Estos miembros son: **vecino**, **PrefInfo**, **EntitySpecificInfo**, **BelongsToViews** y **NextHopsList**.
+1.  Bloquee la ruta mediante una [**llamada a RtmLockRoute**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmlockroute). Actualmente, esta función bloquea realmente el destino de la ruta. El administrador de tablas de enrutamiento devuelve un puntero a la ruta.
+2.  Use el puntero a la estructura [**RTM \_ ROUTE \_ INFO**](/windows/desktop/api/Rtmv2/ns-rtmv2-rtm_route_info) del administrador de tabla de enrutamiento, obtenida en el paso 1, para realizar los cambios necesarios en la ruta. Solo se pueden modificar determinados miembros de la estructura DE INFORMACIÓN DE RUTA DE **RTM \_ \_** al actualizar en su lugar. Estos miembros son: **Verónica,** **PrefInfo,** **EntitySpecificInfo,** **BelongsToViews** y **NextHopsList.**
     > [!Note]  
-    > Si el cliente agrega información a los miembros de **vecino** o **NextHopsList** , el cliente debe llamar a [**RtmReferenceHandles**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreferencehandles) para incrementar explícitamente el recuento de referencias que el administrador de tabla de enrutamiento mantiene en el objeto de próximo salto. Del mismo modo, si el cliente quita información del miembro **NextHopsList** , el cliente debe llamar a [**RtmReleaseNextHops**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasenexthops) para reducir el recuento de referencias.
+    > Si el cliente agrega información a los miembros **Desconexión** o **NextHopsList,** el cliente debe llamar a [**RtmReferenceHandles**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreferencehandles) para incrementar explícitamente el recuento de referencias que el administrador de tabla de enrutamiento mantiene en el objeto de próximo salto. De forma similar, si el cliente quita información del miembro **NextHopsList,** el cliente debe llamar a [**RtmReleaseNextHops**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmreleasenexthops) para disminuir el recuento de referencias.
 
-     
+     
 
-3.  Llame a [**RtmUpdateAndUnlockRoute**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmupdateandunlockroute) para notificar al administrador de tablas de enrutamiento que se ha producido un cambio. El administrador de tablas de enrutamiento confirma los cambios, actualiza el destino para reflejar la nueva información y, a continuación, desbloquea la ruta.
+3.  Llame [**a RtmUpdateAndUnlockRoute para**](/windows/desktop/api/Rtmv2/nf-rtmv2-rtmupdateandunlockroute) notificar al administrador de tablas de enrutamiento que se ha realizado un cambio. El administrador de tabla de enrutamiento confirma los cambios, actualiza el destino para reflejar la nueva información y, a continuación, desbloquea la ruta.
 
-En el código de ejemplo siguiente se muestra cómo actualizar una ruta directamente, utilizando un puntero a la información de ruta real en la tabla de enrutamiento.
+En el código de ejemplo siguiente se muestra cómo actualizar una ruta directamente mediante un puntero a la información de ruta real de la tabla de enrutamiento.
 
 
 ```C++
@@ -84,9 +84,9 @@ if (Status == NO_ERROR)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

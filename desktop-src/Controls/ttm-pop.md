@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_POP (commctrl. h)
-description: Quita de la vista una ventana de información sobre herramientas que se muestra.
+title: TTM_POP mensaje (Commctrl.h)
+description: Quita una ventana de información sobre herramientas mostrada de la vista.
 ms.assetid: 911f8e55-5b5a-46f8-9895-58b06cbf8828
 keywords:
-- TTM_POP controles de mensajes de Windows
+- TTM_POP controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02c0ea6fc4c45db1dbee51ef42d49165fddead35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f033350dad02d6c5e34488c7f06c4f9975d9c9e312fc367439bda4dd8d19116b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967865"
 ---
-# <a name="ttm_pop-message"></a>TTM \_ mensaje pop
+# <a name="ttm_pop-message"></a>Mensaje POP de TTM \_
 
-Quita de la vista una ventana de información sobre herramientas que se muestra.
+Quita una ventana de información sobre herramientas mostrada de la vista.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Quita de la vista una ventana de información sobre herramientas que se muestra.
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para este mensaje.
+No se usa el valor devuelto para este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ No se utiliza el valor devuelto para este mensaje.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

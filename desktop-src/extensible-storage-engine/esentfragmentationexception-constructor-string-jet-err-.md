@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: constructor EsentFragmentationException (String, JET_err)'
-title: Constructor EsentFragmentationException (String, JET_err)
+description: 'Más información sobre: Constructor EsentFragmentationException (String, JET_err)'
+title: EsentFragmentationException constructor (String, JET_err)
 TOCTitle: EsentFragmentationException constructor (String, JET_err)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFragmentationException.#ctor(System.String,Microsoft.Isam.Esent.Interop.JET_err)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfragmentationexception.esentfragmentationexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a3c6492ac4055b985194b3849090672d471390cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3343957dd19fc67d13fd46d5e64281c7d056993493d002691d08daa0f000664
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065305"
 ---
-# <a name="esentfragmentationexception-constructor-string-jet_err"></a>Constructor EsentFragmentationException (String, JET_err)
+# <a name="esentfragmentationexception-constructor-string-jet_err"></a>EsentFragmentationException constructor (String, JET_err)
 
 Inicializa una nueva instancia de la clase EsentFragmentationException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,16 +60,16 @@ protected EsentFragmentationException(
 #### <a name="parameters"></a>Parámetros
 
   - description  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Descripción del error.
 
 <!-- end list -->
 
   - err  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
     
-    El código de error de la excepción.
+    Código de error de la excepción.
 
 ## <a name="see-also"></a>Vea también
 
@@ -79,6 +79,6 @@ protected EsentFragmentationException(
 
 [Miembros de EsentFragmentationException](./esentfragmentationexception-members.md)
 
-[Sobrecarga EsentFragmentationException](./esentfragmentationexception-constructor.md)
+[Sobrecarga de EsentFragmentationException](./esentfragmentationexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

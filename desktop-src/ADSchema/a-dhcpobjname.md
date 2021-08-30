@@ -1,11 +1,11 @@
 ---
-title: atributo DHCP-obj-Name
-description: El atributo DHCP-obj-Name no se usa actualmente.
+title: atributo dhcp-Obj-Name
+description: El atributo dhcp-Obj-Name no se usa actualmente.
 ms.assetid: 9bf5c6d3-8df0-4d65-a630-a821a4335fb0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos DHCP-obj-Name
-- dhcpObjName esquema de AD de atributos
+- Esquema de AD del atributo dhcp-Obj-Name
+- Esquema de AD del atributo dhcpObjName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6b3f30baae70c1a8e3fb69d6c574124a625987f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 48af2b0e3095ea35efc113e06c6669de9938e5a8de46b53646117e2bde97c501
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120050055"
 ---
-# <a name="dhcp-obj-name-attribute"></a>atributo DHCP-obj-Name
+# <a name="dhcp-obj-name-attribute"></a>atributo dhcp-Obj-Name
 
-El atributo **DHCP-obj-Name** no se usa actualmente.
+El **atributo dhcp-Obj-Name** no se usa actualmente.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | DHCP-obj-Name                               |
-| Nombre para mostrar de LDAP | dhcpObjName                                 |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | dhcp-Obj-Name                               |
+| Ldap-Display-Name | dhcpObjName                                 |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.702                      |
-| System-ID-GUID    | 963d2743-48be-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 963d2743-48be-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ El atributo **DHCP-obj-Name** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ El atributo **DHCP-obj-Name** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ El atributo **DHCP-obj-Name** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**CLASE DHCP**](c-dhcpclass.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ El atributo **DHCP-obj-Name** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ El atributo **DHCP-obj-Name** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ El atributo **DHCP-obj-Name** no se usa actualmente.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Clase de DHCP**](c-dhcpclass.md)<br/> |
+| Clases usadas en        | [**DHCP-Class**](c-dhcpclass.md)<br/> |
 
 
 

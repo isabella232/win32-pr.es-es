@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Parámetros del sistema extensibles Storage engine'
+description: 'Más información sobre: Parámetros del sistema Storage motor extensible'
 title: Parámetros extensibles Storage del sistema del motor de base de datos
 TOCTitle: Extensible Storage Engine System Parameters
 ms:assetid: f95c2e87-b25e-4be5-8c17-8486ba37dad4
@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 501f98ec1b360e3eaa10988c140f30b86dcacb5a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 6d51d8c918b9c6dfc8f4dde652bbabe7fe3c17ae
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987348"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122475571"
 ---
 # <a name="extensible-storage-engine-system-parameters"></a>Parámetros extensibles Storage del sistema del motor de base de datos
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="extensible-storage-engine-system-parameters"></a>Parámetros extensibles Storage del sistema del motor de base de datos
 
-Las siguientes constantes se usan como valores para el parámetro *paramid* de las funciones [JetGetSystemParameter](./jetgetsystemparameter-function.md) y [JetSetSystemParameter.](./jetsetsystemparameter-function.md)
+Las constantes siguientes se usan como valores para el parámetro *paramid* de las funciones [JetGetSystemParameter](./jetgetsystemparameter-function.md) y [JetSetSystemParameter.](./jetsetsystemparameter-function.md)
 
   - [Parámetros de copia de seguridad y restauración](./backup-and-restore-parameters.md)
 
@@ -66,17 +66,5 @@ JET_paramX
 Descripción del parámetro JET_paramX del sistema.
 
 
-| Etiqueta | Value |
-|--------|-------|
-| <p>Valor predeterminado:</p> | <p>Valor predeterminado del parámetro.</p> | 
-| <p>Escriba:</p> | <p>El tipo de datos del parámetro.</p> | 
-| <p>Intervalo válido:</p> | <p>Valores legales del parámetro.</p> | 
-| <p>Ámbito:</p> | <p>¿Es el parámetro Global o por instancia?</p> | 
-| <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>¿Se puede establecer el parámetro si existe alguna instancia?</p> | 
-| <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>¿Se puede establecer el parámetro cuando se inicializa?</p> | 
-| <p>Afecta al diseño físico:</p> | <p>¿Afecta el parámetro a los archivos del disco?</p> | 
-| <p>Afecta a la confiabilidad:</p> | <p>¿Afecta el parámetro a la confiabilidad del motor?</p> | 
-| <p>Afecta al rendimiento:</p> | <p>¿Afecta el parámetro al rendimiento del motor?</p> | 
-| <p>Afecta a los recursos:</p> | <p>¿Afecta el parámetro a los recursos del motor?</p> | 
-| <p>Disponibilidad:</p> | <p>Versiones de Windows que admiten el parámetro .</p> | 
+| | | <p>Valor predeterminado:</p> | <p>Valor predeterminado del parámetro.</p> | | <p>Escriba:</p> | <p>El tipo de datos del parámetro.</p> | | <p>Intervalo válido:</p> | <p>Los valores legales del parámetro.</p> | | <p>Ámbito:</p> | <p>¿Es el parámetro Global o por instancia?</p> | | <p>Establezca después <a href="gg269354(v=exchg.10).md">de JetCreateInstance</a>:</p> | <p>¿Se puede establecer el parámetro si existe alguna instancia?</p> | | <p>Establezca después <a href="gg294068(v=exchg.10).md">de JetInit</a>:</p> | <p>¿Se puede establecer el parámetro cuando se inicializa?</p> | | <p>Afecta al diseño físico:</p> | <p>¿Afecta el parámetro a los archivos del disco?</p> | | <p>Afecta a la confiabilidad:</p> | <p>¿Afecta el parámetro a la confiabilidad del motor?</p> | | <p>Afecta al rendimiento:</p> | <p>¿Afecta el parámetro al rendimiento del motor?</p> | | <p>Afecta a los recursos:</p> | <p>¿Afecta el parámetro a los recursos del motor?</p> | | <p>Disponibilidad:</p> | <p>Versiones de Windows admiten el parámetro .</p> | 
 

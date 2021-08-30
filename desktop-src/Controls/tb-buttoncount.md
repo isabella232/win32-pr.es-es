@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_BUTTONCOUNT (commctrl. h)
-description: Recupera un recuento de los botones que se encuentran actualmente en la barra de herramientas.
+title: TB_BUTTONCOUNT mensaje (Commctrl.h)
+description: Recupera un recuento de los botones actualmente en la barra de herramientas.
 ms.assetid: 4d1b53a9-c561-49ce-9f8c-ffc9ce4dbbf7
 keywords:
-- TB_BUTTONCOUNT controles de mensajes de Windows
+- TB_BUTTONCOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 280148702432bab7b26328a8c16fce3a4712b619
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd690118baed519233308c671a7c5e1cb9aefbc824b341aebe94918726e19a48
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919245"
 ---
-# <a name="tb_buttoncount-message"></a>\_Mensaje BUTTONCOUNT TB
+# <a name="tb_buttoncount-message"></a>Mensaje \_ BUTTONCOUNT de TB
 
-Recupera un recuento de los botones que se encuentran actualmente en la barra de herramientas.
+Recupera un recuento de los botones actualmente en la barra de herramientas.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,9 +45,9 @@ Devuelve el recuento de los botones.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

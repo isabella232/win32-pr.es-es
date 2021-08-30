@@ -1,17 +1,17 @@
 ---
 description: Especifica una superficie protegida.
 ms.assetid: 9838AF18-A468-4B04-80A3-4863DE7572CF
-title: MFPROTECTION_PROTECTED_SURFACE atributo (Mfidl. h)
+title: MFPROTECTION_PROTECTED_SURFACE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7c6abe5ebd60abe74ee5057d26ef7e357af2aa9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eeb994bb6023e42548c149b982b98d638511cacb4ea7f03361dd6425c986dffc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113095"
 ---
-# <a name="mfprotection_protected_surface-attribute"></a>\_Atributo de \_ superficie protegida MFPROTECTION
+# <a name="mfprotection_protected_surface-attribute"></a>Atributo MFPROTECTION \_ PROTECTED \_ SURFACE
 
 Especifica una superficie protegida.
 
@@ -25,9 +25,9 @@ Especifica una superficie protegida.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Especifica una superficie protegida.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

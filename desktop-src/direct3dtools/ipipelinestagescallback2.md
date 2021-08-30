@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c851831208b18f06bda57dbab1c3efc462944bb3
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 5a1c0300142ad934b3e36ae27ee2d8fa38bdd2cf
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786961"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630088"
 ---
 # <a name="span-idvspixengineipipelinestagescallback2spanipipelinestagescallback2-interface"></a><span id="vspixengine.ipipelinestagescallback2"></span>Interfaz IPipeLineStagesCallback2
 
 No se utiliza. Anteriormente, una devolución de llamada para los datos de fases de canalización.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IPipeLineStagesCallback2** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPipeLineStagesCallback2** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IPipeLineStagesCallback2** hereda de la [**interfaz IUnknown.**](/
 
 La **interfaz IPipeLineStagesCallback2** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/ipipelinestagescallback2-threaddatadimensioncallback-threaddata3d-threaddata3d"><strong>ThreadDataDimensionCallback</strong></a></td><td ><p>Devolución de llamada que notifica al host el número de subprocesos y grupos del sombreador de proceso en la solicitud asociada.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/ipipelinestagescallback2-threaddatanotavailablecallback-pipelinestageerror-eventid"><strong>ThreadDataNotAvailableCallback</strong></a></td><td ><p>Devolución de llamada que notifica al host que ThreadData no está disponible para una fase y un evento de canalización determinados.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback2-threaddatadimensioncallback-threaddata3d-threaddata3d"><strong>ThreadDataDimensionCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host el número de subprocesos y grupos del sombreador de proceso en la solicitud asociada.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/ipipelinestagescallback2-threaddatanotavailablecallback-pipelinestageerror-eventid"><strong>ThreadDataNotAvailableCallback</strong></a></td><td style="text-align: left;"><p>Devolución de llamada que notifica al host que ThreadData no está disponible para una fase y un evento de canalización determinados.</p></td></tr></tbody></table>
 
  
 

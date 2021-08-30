@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_COMPRESS_QUERY (VFW. h)
-description: El mensaje de consulta de compresión ICM consulta \_ \_ un controlador de compresión de vídeo para determinar si admite un formato de entrada específico o si puede comprimir un formato de entrada específico a un formato de salida específico.
+title: ICM_COMPRESS_QUERY mensaje (Vfw.h)
+description: El ICM de COMPRESS QUERY consulta un controlador de compresión de vídeo para determinar si admite un formato de entrada específico o si puede comprimir un formato de entrada específico a un formato de \_ \_ salida específico.
 ms.assetid: 6d0e735e-8252-4507-b8be-1ba87774f637
 keywords:
-- Mensaje de ICM_COMPRESS_QUERY de Windows multimedia
+- ICM_COMPRESS_QUERY mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00a00482cc39f21ef6ddfb241f0534924c503200
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75a68bf93a3d3ea96447dd061d859ccbf4483124dc8955fbd6efc39c180d782c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785025"
 ---
-# <a name="icm_compress_query-message"></a>Mensaje de consulta de \_ compresión ICM \_
+# <a name="icm_compress_query-message"></a>\_ICM Mensaje COMPRESS \_ QUERY
 
-El mensaje de **\_ \_ consulta** de compresión ICM consulta un controlador de compresión de vídeo para determinar si admite un formato de entrada específico o si puede comprimir un formato de entrada específico a un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la macro [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) .
+El **ICM mensaje COMPRESS \_ \_ QUERY** consulta un controlador de compresión de vídeo para determinar si admite un formato de entrada específico o si puede comprimir un formato de entrada específico a un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la macro [**ICCompressQuery.**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery)
 
 
 ```C++
@@ -41,14 +41,14 @@ lParam = (DWORD_PTR) (LPVOID) lpbiOutput;
 <span id="lpbiInput"></span><span id="lpbiinput"></span><span id="LPBIINPUT"></span>*lpbiInput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
 
 </dd> <dt>
 
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida. Puede especificar cero para que este parámetro indique que el formato de salida es aceptable.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida. Puede especificar cero para este parámetro para indicar que cualquier formato de salida es aceptable.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-
 
 Devuelve ICERR \_ OK si se admite la compresión especificada o ICERR \_ BADFORMAT en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando un controlador recibe este mensaje, debe examinar la estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) asociada a *lpbiInput* para determinar si puede comprimir el formato de entrada.
+Cuando un controlador recibe este mensaje, debe examinar la estructura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) asociada a *lpbiInput* para determinar si puede comprimir el formato de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Cuando un controlador recibe este mensaje, debe examinar la estructura [**bitmap
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Método GetStringProperty de la clase Win32_RDMSDeploymentSettings
+title: Método GetStringProperty de la Win32_RDMSDeploymentSettings clase
 description: Recupera una propiedad de cadena para la configuración de implementación de una colección de escritorios virtuales.
 ms.assetid: 468ffdea-57a9-4478-adae-3629e4522762
 ms.tgt_platform: multiple
 keywords:
 - Método GetStringProperty Servicios de Escritorio remoto
-- Método GetStringProperty Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetStringProperty
+- Método GetStringProperty Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , método GetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f26a570becbbae6b0d768c399acd3dd2954ecdc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4a7cb338cd6f6858bba0536b012effb8621eee0d68dc386eceb79cdfd694e30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033695"
 ---
-# <a name="getstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetStringProperty de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getstringproperty-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetStringProperty de la clase RDMSDeploymentSettings de Win32 \_
 
 Recupera una propiedad de cadena para la configuración de implementación de una colección de escritorios virtuales.
 
@@ -44,14 +44,14 @@ uint32 GetStringProperty(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-El alias de la colección de escritorios virtuales.
+Alias de la colección de escritorios virtuales.
 
 </dd> <dt>
 
-*Valor* \[ de enuncia\]
+*Valor* \[ out\]
 </dt> <dd>
 
 Cadena que recibe el valor recuperado.
@@ -66,8 +66,8 @@ Cadena que recibe el valor recuperado.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -76,7 +76,7 @@ Cadena que recibe el valor recuperado.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

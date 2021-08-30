@@ -1,7 +1,7 @@
 ---
-description: El \_ método put BackgroundPalette establece una marca para obtener la paleta en segundo plano.
+description: El método \_ put BackgroundPalette establece una marca para realizar la paleta en segundo plano.
 ms.assetid: db420e75-e300-41fa-bae4-fb267cc99c7c
-title: Método CBaseControlWindow.put_BackgroundPalette (Ctlutil. h)
+title: CBaseControlWindow.put_BackgroundPalette método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 04aeb445be91426e7995ecd01c9326cda586a447
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 295889510b96a085865eeff45ba976278519670adbd596b24e6aea829a29df4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966725"
 ---
-# <a name="cbasecontrolwindowput_backgroundpalette-method"></a>CBaseControlWindow. put \_ BackgroundPalette (método)
+# <a name="cbasecontrolwindowput_backgroundpalette-method"></a>CBaseControlWindow.put \_ BackgroundPalette (método)
 
-El `put_BackgroundPalette` método establece una marca para obtener la paleta en segundo plano.
+El `put_BackgroundPalette` método establece una marca para realizar la paleta en segundo plano.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT put_BackgroundPalette(
 *BackgroundPalette* 
 </dt> <dd>
 
-Marca booleana de Automation (0 está desactivado, 1 en).
+Marca booleana de Automation (0 está desactivada, 1 está desactivada).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para reproducir un vídeo dentro de otra aplicación o documento, es posible que la aplicación desee usar su propia paleta. Puede solicitar que el vídeo use la paleta de primer plano actual en lugar de la suya propia como paleta de fondo; para ello, establezca esta marca en 1. Si se establece en 0, la ventana instalará y obtendrá su propia paleta preferida. Pedir a la ventana que use una paleta diferente producirá penalizaciones de rendimiento graves.
+Para reproducir un vídeo dentro de otra aplicación o documento, es posible que la aplicación quiera usar su propia paleta. Puede pedir que el vídeo use la paleta de primer plano actual en lugar de la suya propia como paleta de fondo estableciendo esta marca en 1. Si se establece en 0, la ventana se instalará y se dará cuenta de su propia paleta preferida. Pedir a la ventana que use una paleta diferente provocará graves penalizaciones de rendimiento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Para reproducir un vídeo dentro de otra aplicación o documento, es posible que
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Para reproducir un vídeo dentro de otra aplicación o documento, es posible que
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

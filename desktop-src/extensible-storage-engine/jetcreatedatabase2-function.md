@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b362b7ada2c0cc2924ce178adda2368faef770bf
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: e4cbc3f8def16edf7e252865c4b1abcb71db12fe
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479211"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981958"
 ---
 # <a name="jetcreatedatabase2-function"></a>Función JetCreateDatabase2
 
@@ -71,9 +71,9 @@ Puntero a un búfer que, en una llamada correcta, contiene el identificador de l
 Grupo de bits que especifica cero o más de las opciones siguientes.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
-| <p>JET_bitDbOverwriteExisting</p> | <p>De forma predeterminada, si se llama a <a href="gg269212(v=exchg.10).md">JetCreateDatabase</a> o <strong>JetCreateDatabase2</strong> y la base de datos ya existe, se producirá un error en la llamada API y no se sobrescribirá la base de datos original. JET_bitDbOverwriteExisting este comportamiento y la base de datos anterior se sobrescribirá con una nueva. Windows XP y versiones posteriores.</p> | 
+| <p>JET_bitDbOverwriteExisting</p> | <p>De forma predeterminada, si se llama a <a href="gg269212(v=exchg.10).md">JetCreateDatabase</a> o <strong>JetCreateDatabase2</strong> y la base de datos ya existe, se producirá un error en la llamada API y no se sobrescribirá la base de datos original. JET_bitDbOverwriteExisting este comportamiento y la base de datos antigua se sobrescribirá con una nueva. Windows XP y versiones posteriores.</p> | 
 | <p>JET_bitDbRecoveryOff</p> | <p>JET_bitDbRecoveryOff desactiva el registro. Al establecer este bit, se pierde la capacidad de reproducir archivos de registro y recuperar la base de datos a un estado utilizable coherente después de un evento catastrófico.</p> | 
 | <p>JET_bitDbShadowingOff</p> | <p>Al JET_bitDbShadowingOff se deshabilitará la duplicación de algunas estructuras de base de datos internas (sombreado). La duplicación de estas estructuras se realiza para lograr resistencia, por lo JET_bitDbShadowingOff quitará esa resistencia.</p> | 
 
@@ -104,9 +104,9 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 
 
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
-Si la base de datos especificada en *szFilename* existe y JET_bitDbOverwriteExisting no se pasó, se producirá un error en la llamada API. Si JET_bitDbOverwriteExisting se pasó, primero se eliminará el archivo de base de datos antiguo.
+Si la base de datos especificada en *szFilename* existe y JET_bitDbOverwriteExisting no se pasó, se producirá un error en la llamada API. Si JET_bitDbOverwriteExisting se ha pasado, primero se eliminará el archivo de base de datos antiguo.
 
 Si la API crea un archivo de base de datos y, a continuación, produce otro error, limpiará y eliminará el archivo.
 
@@ -115,7 +115,14 @@ Si la API crea un archivo de base de datos y, a continuación, produce otro erro
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetCreateDatabase2W</strong> (Unicode) y <strong>JetCreateDatabase2A</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetCreateDatabase2W</strong> (Unicode) y <strong>JetCreateDatabase2A</strong> (ANSI).</p> | 
 
 
 

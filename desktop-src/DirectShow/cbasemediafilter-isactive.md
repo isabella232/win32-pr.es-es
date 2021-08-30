@@ -1,7 +1,7 @@
 ---
 description: El método IsActive determina si el objeto está activo (en ejecución o en pausa).
 ms.assetid: 6531cf1f-e057-4094-9354-d5a32371c83c
-title: Método CBaseMediaFilter. IsActive (Amfilter. h)
+title: Método CBaseMediaFilter.IsActive (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6438850b90309b47fbe1fb76b1fd4f7baea8f48
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2e59e15994f9a00f15538b95bf303195083bb364b5a34378ee32cd99bd88a50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084505"
 ---
-# <a name="cbasemediafilterisactive-method"></a>CBaseMediaFilter. IsActive (método)
+# <a name="cbasemediafilterisactive-method"></a>Método CBaseMediaFilter.IsActive
 
 El `IsActive` método determina si el objeto está activo (en ejecución o en pausa).
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el objeto está en pausa o en ejecución, o **false** si se detiene.
+Devuelve **TRUE** si el objeto está en pausa o en ejecución, o **FALSE** si se detiene.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si el objeto está en pausa o en ejecución, o **false** si se
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si el objeto está en pausa o en ejecución, o **false** si se
 
 <dl> <dt>
 
-[**Clase CBaseMediaFilter**](cbasemediafilter.md)
+[**CBaseMediaFilter (clase)**](cbasemediafilter.md)
 </dt> </dl>
 
  

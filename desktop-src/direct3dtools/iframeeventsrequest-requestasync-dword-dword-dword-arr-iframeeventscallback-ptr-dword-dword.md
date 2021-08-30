@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 3ee7f86b0f2eaaa3270849a205c70c35c4d4ce46a61b4bcd7e1fef7c48a4b521
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2299a63b7613aaa6875211149cbce1f47308a8f
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119981485"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122630816"
 ---
 # <a name="span-idvspixengineiframeeventsrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dwordspaniframeeventsrequestrequestasync-method"></a><span id="vspixengine.iframeeventsrequest_requestasync_dword_dword_dword_arr_iframeeventscallback_ptr_dword_dword"></span>IFrameEventsRequest::RequestAsync (método)
 
@@ -48,7 +48,7 @@ HRESULT RequestAsync(
 Marco especificado.
 
 *numColumns*   
-Columnas especificadas (campos).
+Las columnas especificadas (campos).
 
 *columnas \_ count1*   
 Dirección de devolución de llamada utilizada para notificar al host de resultados.
@@ -60,7 +60,7 @@ Dirección de devolución de llamada utilizada para notificar al host de resulta
 Cookie que identifica de forma única la solicitud y se puede usar para indicar que se cancele.
 
 *progressIntervalMsecs*   
-No se usa.
+No se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -68,7 +68,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Header</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
 ## <a name="span-idsee_alsospansee-also"></a><span id="see_also"></span>Vea también
 

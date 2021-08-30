@@ -1,39 +1,39 @@
 ---
-title: EC_WMT_INDEX_EVENT (Windows Media Format 11 SDK)
-description: '\_evento de \_ Índice \_ WMT de EC'
+title: EC_WMT_INDEX_EVENT (Windows SDK de Formato multimedia 11)
+description: EVENTO \_ DE ÍNDICE WMT DE \_ \_ EC
 ms.assetid: 46e6a011-7f25-470b-9e10-fa59f0ddbf22
 keywords:
-- SDK de Windows Media Format, EC_WMT_INDEX_EVENT
-- DirectShow, EC_WMT_INDEX_EVENT
+- Windows SDK de formato multimedia, EC_WMT_INDEX_EVENT
+- DirectShow,EC_WMT_INDEX_EVENT
 - EC_WMT_INDEX_EVENT
-- Advanced Systems Format (ASF), EC_WMT_INDEX_EVENT
-- ASF (formato de sistemas avanzados), EC_WMT_INDEX_EVENT
+- Formato de sistemas avanzados (ASF), EC_WMT_INDEX_EVENT
+- ASF (formato de sistemas avanzados),EC_WMT_INDEX_EVENT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f34bca14ed02ac78fcfc77d1b9b716f75115a24f
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: fd6efe81f6ea924b234dced2d38a11eda240b5de1b9edbe1e4f66c541e7a1b65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104078699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110485"
 ---
-# <a name="ec_wmt_index_event-windows-media-format-11-sdk"></a>EC_WMT_INDEX_EVENT (Windows Media Format 11 SDK)
+# <a name="ec_wmt_index_event-windows-media-format-11-sdk"></a>EC_WMT_INDEX_EVENT (Windows SDK de Formato multimedia 11)
 
-Lo envía el SDK de Windows Media Format cuando una aplicación utiliza el escritor ASF para indizar Windows Media Video archivos.
+Enviado por el SDK Windows Media Format cuando una aplicación usa ASF Writer para indexar Windows archivos de vídeo multimedia.
 
 Parámetros
 
 *lParam1*
 
-Puede ser cualquiera de los siguientes mensajes **de \_ Estado de WMT** .
+Puede ser cualquiera de los siguientes **mensajes DE ESTADO \_ DE WMT.**
 
 
 
 | Message              | Descripción                                     |
 |----------------------|-------------------------------------------------|
-| WMT \_ iniciado         | La indización ha comenzado. *lParam2* es cero.          |
-| WMT \_ cerrado          | Se ha completado la indexación. *lParam2* es cero. |
-| \_progreso del índice WMT \_ | La indexación está en curso.                        |
+| WMT \_ STARTED         | La indexación ha comenzado. *lParam2* es cero.          |
+| WMT \_ CLOSED          | Se ha completado la indexación. *lParam2* es cero. |
+| PROGRESO DEL \_ ÍNDICE WMT \_ | La indexación está en curso.                        |
 
 
 
@@ -41,13 +41,13 @@ Puede ser cualquiera de los siguientes mensajes **de \_ Estado de WMT** .
 
 *lParam2*
 
-Si *lParam1* es WMT \_ Closed o WMT \_ iniciado, entonces *lParam2* es cero. Si *lParam1* es \_ \_ el progreso del índice WMT, *lParam2* es un **valor DWORD** que expresa la cantidad de progreso como un porcentaje del tamaño total de la descarga.
+Si *lParam1* es WMT \_ CLOSED o WMT \_ STARTED, *lParam2* es cero. Si *lParam1* es WMT \_ INDEX \_ PROGRESS, *lParam2* es un **DWORD** que expresa la cantidad de progreso como porcentaje del tamaño total de descarga.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de QASF de DirectShow**](directshow-qasf-reference.md)
+[**DirectShow Referencia de QASF**](directshow-qasf-reference.md)
 </dt> </dl>
 
  

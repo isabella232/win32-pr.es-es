@@ -20,12 +20,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e737d6fe31dde43eeba7526e740ec096db20abc9
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 56f2c5b4a7bcd2d81c75f90d723a59057ba5c8ce
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466212"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122982378"
 ---
 # <a name="jetossnapshotgetfreezeinfo-function"></a>JetOSSnapshotGetFreezeInfo (Función)
 
@@ -87,14 +87,21 @@ Si se produce un error en esta función, no se produce ningún cambio en el esta
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOSSnapshotGetFreezeInfoW</strong> (Unicode) y <strong>JetOSSnapshotGetFreezeInfoA</strong> (ANSI).</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOSSnapshotGetFreezeInfoW</strong> (Unicode) y <strong>JetOSSnapshotGetFreezeInfoA</strong> (ANSI).</p> | 
 
 
 
 #### <a name="see-also"></a>Consulte también
 
 [Parámetros de control de errores](./error-handling-parameters.md)  
-[Errores extensibles Storage motor de datos](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de ejecución](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetFreeBuffer](./jetfreebuffer-function.md)  
 [JetOSSnapshotAbort](./jetossnapshotabort-function.md)  

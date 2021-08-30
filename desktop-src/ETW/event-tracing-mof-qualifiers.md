@@ -1,5 +1,5 @@
 ---
-description: Use los calificadores definidos en esta sección al crear la clase MOF del proveedor, la clase MOF de evento, la clase MOF del tipo de evento y las propiedades de la clase MOF del tipo de evento.
+description: Use los calificadores definidos en esta sección al crear la clase MOF del proveedor, la clase MOF de eventos, la clase MOF del tipo de evento y las propiedades de la clase MOF del tipo de evento.
 ms.assetid: 3bc82074-05a7-411f-884f-5da1fd08112b
 title: Calificadores MOF de seguimiento de eventos
 ms.topic: article
@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 578699b04c5ba2d0f39afb2e8ff5141151bd208b
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: e118f5315316386426cff89fa1405b92b6dadb70
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122628444"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885051"
 ---
 # <a name="event-tracing-mof-qualifiers"></a>Calificadores MOF de seguimiento de eventos
 
@@ -28,7 +28,7 @@ En la tabla siguiente se enumeran los calificadores que puede especificar en una
 
 | Qualifier | Tipo de datos  | Descripción                                                                                                                                                                                                                                                  |
 |-----------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Guid**  | **String** | Necesario. Guid de cadena que identifica de forma única un proveedor. Por ejemplo, Guid("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Se trata del mismo GUID que se usa al llamar a la [**función RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) para registrar el proveedor. |
+| **Guid**  | **String** | Obligatorio. Guid de cadena que identifica de forma única un proveedor. Por ejemplo, Guid("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Se trata del mismo GUID que se usa al llamar a [**la función RegisterTraceGuids**](/windows/win32/api/evntrace/nf-evntrace-registertraceguidsa) para registrar el proveedor. |
 
 
 
@@ -40,8 +40,8 @@ En la tabla siguiente se enumeran los calificadores que puede especificar en una
 
 | Qualifier        | Tipo de datos   | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |------------------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Guid**         | **String**  | Necesario. Guid de cadena que identifica una clase de eventos. Por ejemplo, Guid("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Los proveedores de eventos usan el GUID para establecer [**el ENCABEZADO DE SEGUIMIENTO DE \_ \_ EVENTOS. Miembro**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) GUID, para que los consumidores puedan determinar la clase de eventos que reciben.                                                                                                                                                                                                                                                                                  |
-| **EventVersion** | **Entero** | Este calificador es opcional para la versión más reciente de una clase de seguimiento de eventos y es necesario para todas las versiones anteriores de la clase. La versión más reciente de la clase no especifica el **calificador EventVersion** o tiene el número de versión más alto. Los números de versión comienzan por 0, por ejemplo, EventVersion(0). Normalmente, cuando se crea una nueva versión de la clase , también se cambia el nombre de la versión anterior a Vn, donde n es un número incremental a partir <classname> \_ de 0. Para obtener un ejemplo, [**vea FileIo**](fileio.md) y [**FileIo \_ V0.**](fileio-v0.md)<br/> |
+| **Guid**         | **String**  | Obligatorio. Guid de cadena que identifica una clase de eventos. Por ejemplo, Guid("{3F92E6E0-9886-434e-85DB-0D11D3904C0A}"). Los proveedores de eventos usan el GUID para establecer [**el ENCABEZADO DE SEGUIMIENTO DE \_ \_ EVENTOS. Miembro**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header) GUID, para que los consumidores puedan determinar la clase de eventos que reciben.                                                                                                                                                                                                                                                                                  |
+| **EventVersion** | **Entero** | Este calificador es opcional para la versión más reciente de una clase de seguimiento de eventos y es necesario para todas las versiones anteriores de la clase. La versión más reciente de la clase no especifica el **calificador EventVersion** o tiene el número de versión más alto. Los números de versión comienzan por 0, por ejemplo, EventVersion(0). Normalmente, cuando se crea una nueva versión de la clase , también se cambia el nombre de la versión anterior a classname Vn, donde n es un número incremental a partir &lt; &gt; \_ de 0. Para obtener un ejemplo, [**vea FileIo**](fileio.md) y [**FileIo \_ V0.**](fileio-v0.md)<br/> |
 
 
 
@@ -53,9 +53,9 @@ En la tabla siguiente se enumeran los calificadores que puede especificar en una
 
 
 
-| Qualifier         | Value       | Descripción                                                                                                                                                                                                                                                                                                                                                                       |
+| Qualifier         | Valor       | Descripción                                                                                                                                                                                                                                                                                                                                                                       |
 |-------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **EventType**     | **Entero** | Necesario. Identifica la clase de tipo de evento. Por ejemplo, EventType(1). El proveedor de eventos usa el mismo valor de tipo de evento para establecer [**EVENT \_ TRACE \_ HEADER. Class.Type**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header). Si se usa la misma clase MOF para varios tipos de eventos (porque usan los mismos datos de evento), especifique el valor del tipo de evento como una matriz de enteros, por ejemplo, EventType {12,15} . |
+| **EventType**     | **Entero** | Obligatorio. Identifica la clase de tipo de evento. Por ejemplo, EventType(1). El proveedor de eventos usa el mismo valor de tipo de evento para establecer [**EVENT \_ TRACE \_ HEADER. Class.Type**](/windows/win32/api/evntrace/ns-evntrace-event_trace_header). Si se usa la misma clase MOF para varios tipos de eventos (porque usan los mismos datos de evento), especifique el valor del tipo de evento como una matriz de enteros, por ejemplo, EventType {12,15} . |
 | **EventTypeName** | **String**  | Opcional. Describe el tipo de evento. Por ejemplo, EventTypeName("Start"). Si se usa la misma clase MOF para varios tipos de eventos (porque usan los mismos datos de evento), especifique el valor del nombre del tipo de evento como una matriz de cadenas, por ejemplo, EventTypeName{"Start", "End"}. Los elementos de la matriz EventTypeName corresponden directamente a la matriz EventType.                 |
 
 
@@ -93,7 +93,7 @@ En la tabla siguiente se enumeran los calificadores que puede especificar en una
 <td>Proporciona información adicional sobre cómo consumir (interpretar) los datos. El valor de extensión no tiene en cuenta las mayúsculas y minúsculas. Incluya el valor entre comillas, por ejemplo, Extension( &quot; Guid &quot; ). Los valores de extensión posibles son: <dl> <dt><span id="Guid"></span><span id="guid"></span><span id="GUID"></span>Guid</dt> <dd> Indica que los datos de propiedad son guid. El tipo de datos MOF debe ser <strong>el objeto</strong>. Se espera que la carga sea una <strong>estructura GUID.</strong><br/> </dd> <dt><span id="IPAddr_and_IPAddrV4"></span><span id="ipaddr_and_ipaddrv4"></span><span id="IPADDR_AND_IPADDRV4"></span>IPAddr e IPAddrV4</dt> <dd> Los datos son una dirección IP V4. El tipo de datos MOF debe ser <strong>el objeto</strong>. Se espera que la carga sea larga sin signo. Cada byte del largo sin signo representa una de las cuatro partes de la dirección IP (p1.p2.p3.p4). El byte de orden bajo contiene el valor de p1, el byte siguiente contiene el valor de p2, y así sucesivamente.<br/> <strong>Antes de Windows Vista:</strong> No se admite la extensión IPAddrV4.<br/> </dd> <dt><span id="IPAddrV6"></span><span id="ipaddrv6"></span><span id="IPADDRV6"></span>IPAddrV6</dt> <dd> Los datos son una dirección IP V6. El tipo de datos MOF debe ser <strong>el objeto</strong>. Se espera que la carga sea una <strong>IN6_ADDR</strong> estructura. <br/> <strong>Antes de Windows Vista:</strong> No se admite la extensión IPAddrV6.<br/> </dd> <dt><span id="NoPrint"></span><span id="noprint"></span><span id="NOPRINT"></span>NoPrint</dt> <dd> Indica que el consumidor no debe imprimir estos datos.<br/> </dd> <dt><span id="Port"></span><span id="port"></span><span id="PORT"></span>Puerto</dt> <dd> Los datos identifican un número de puerto. El tipo de datos MOF debe ser <strong>el objeto</strong>. Se espera que la carga sea un short sin signo.<br/> </dd> <dt><span id="RString"></span><span id="rstring"></span><span id="RSTRING"></span>RString</dt> <dd> Los caracteres de nueva línea se reemplazaron por espacios. Se espera que la carga sea una cadena ANSI terminada en NULL.<br/> </dd> <dt><span id="RWString"></span><span id="rwstring"></span><span id="RWSTRING"></span>RWString</dt> <dd> Los caracteres de nueva línea se reemplazaron por espacios. Se espera que la carga sea una cadena de caracteres anchos terminada en NULL.<br/> </dd> <dt><span id="Sid"></span><span id="sid"></span><span id="SID"></span>Sid</dt> <dd> Los datos representan un SID de blob binario. El tipo de datos MOF debe ser <strong>el objeto</strong>. <br/> El SID tiene una longitud variable. El valor contenido en los primeros 4 bytes<strong>(ULONG)</strong>indica si el blob contiene un SID. Si los primeros 4 bytes<strong>(ULONG)</strong>del blob son distintos de cero, el blob contiene un SID. La primera parte del blob contiene el TOKEN_USER (la estructura está alineada en un límite de 8 bytes) y la segunda parte contiene el SID. Para solucionar la parte del SID del blob:<br/>
 <ul>
 <li>Establecer un puntero de bytes al principio del blob</li>
-<li>Multiplique el tamaño del puntero para el registro de eventos por 2 y agregue el producto al puntero de bytes (el <strong>miembro PointerSize</strong> de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> contiene el valor de tamaño del puntero)</li>
+<li>Multiplique el tamaño del puntero para el registro de eventos por 2 y agregue el producto al puntero de bytes (el <strong>miembro PointerSize</strong> de <a href="/windows/win32/api/evntrace/ns-evntrace-trace_logfile_header"><strong>TRACE_LOGFILE_HEADER</strong></a> contiene el valor de tamaño del puntero).</li>
 </ul>
 <br/> Puede usar la macro siguiente para determinar la longitud del SID. <br/>
 <pre class="syntax" data-space="preserve"><code>#define SeLengthSid( Sid ) \
@@ -183,7 +183,7 @@ Values {&quot;ValueMapFlag1&quot;, &quot;ValueMapFlag2&quot;, &quot;ValueMapFlag
 </tr>
 <tr class="odd">
 <td><strong>WmiDataId</strong></td>
-<td>Cada propiedad debe contener el <strong>calificador WmiDataId.</strong> <strong>WmiDataId define</strong> el orden en el que el consumidor lee los datos del evento. El valor de <strong>WmiDataId</strong> comienza en 1 e incrementa para cada propiedad de la clase . Por ejemplo, WmiDataId(1).</td>
+<td>Cada propiedad debe contener el <strong>calificador WmiDataId.</strong> <strong>WmiDataId</strong> define el orden en el que el consumidor lee los datos del evento. El valor de <strong>WmiDataId</strong> comienza en 1 e incrementa para cada propiedad de la clase . Por ejemplo, WmiDataId(1).</td>
 </tr>
 <tr class="even">
 <td><strong>XMLFragment</strong></td>
@@ -198,7 +198,7 @@ Values {&quot;ValueMapFlag1&quot;, &quot;ValueMapFlag2&quot;, &quot;ValueMapFlag
 
 ## <a name="specifying-level-and-enable-flags-values-for-a-provider"></a>Especificación de valores de nivel y habilitación de marcas para un proveedor
 
-Para documentar el nivel y habilitar las marcas que un controlador usaría para habilitar el proveedor, incluya las propiedades "Level" y "Flags" en la clase MOF del proveedor. Los nombres de propiedad Level y Flags distinguen mayúsculas de minúsculas. Las propiedades deben incluir los **calificadores Values** **y ValueMap,** que especifican el nivel posible y habilitan los valores de marca. ValueMap **para** los valores de marca de habilitación debe ser valores de bits (marca). El **calificador ValueDescriptions** es opcional, pero debe usarlo para proporcionar descripciones para cada valor posible. Las descripciones se usan cuando alguien llama a las funciones [**TdhEnumerateProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviderfieldinformation) y [**TdhQueryProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhqueryproviderfieldinformation) para obtener el nivel posible y habilitar los valores de marcas (palabras clave) para el proveedor.
+Para documentar el nivel y habilitar las marcas que un controlador usaría para habilitar el proveedor, incluya las propiedades "Level" y "Flags" en la clase MOF del proveedor. Los nombres de propiedad Level y Flags distinguen mayúsculas de minúsculas. Las propiedades deben incluir los **calificadores Values** **y ValueMap,** que especifican el nivel posible y habilitan los valores de marca. ValueMap **para** los valores de marca de habilitación debe ser valores de bit (marca). El **calificador ValueDescriptions** es opcional, pero debe usarlo para proporcionar descripciones para cada valor posible. Las descripciones se usan cuando alguien llama a las funciones [**TdhEnumerateProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviderfieldinformation) y [**TdhQueryProviderFieldInformation**](/windows/desktop/api/Tdh/nf-tdh-tdhqueryproviderfieldinformation) para obtener el nivel posible y habilitar los valores de marcas (palabras clave) para el proveedor.
 
 A continuación se muestra una clase de proveedor que especifica el nivel posible y habilita los valores de las marcas.
 

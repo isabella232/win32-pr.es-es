@@ -4,12 +4,12 @@ ms.assetid: 68459b22-0f35-444a-969e-29695e735774
 title: elemento messageStructureDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a116658fc7ce7f985b7b717c7a7b4ce38be4637
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 403463d42126d59258be2b274ca4c82bcfbf4198e516a75e632acf323860e920
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107993672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120071445"
 ---
 # <a name="messagestructuredefinitions-element"></a>elemento messageStructureDefinitions
 
@@ -33,7 +33,7 @@ No hay atributos.
 
 | Elemento                                   | Descripción                                                                       |
 |-------------------------------------------|-----------------------------------------------------------------------------------|
-| [**Operación**](operation.md)<br/> | Especifica una operación para la que se va a generar código.<br/> <br/>  |
+| [**operation**](operation.md)<br/> | Especifica una operación para la que se va a generar código.<br/> <br/>  |
 | [**portType**](porttype.md)<br/>   | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/> |
 
 
@@ -65,7 +65,7 @@ El proxy y el código auxiliar generados hacen referencia a las estructuras de m
 
 
 
-| Etiqueta | Value |
+| Etiqueta | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

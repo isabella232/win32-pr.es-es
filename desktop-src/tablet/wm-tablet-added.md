@@ -1,19 +1,19 @@
 ---
-description: El mensaje de la tableta de WM \_ \_ agregada se envía cuando se agrega un dispositivo de tableta a Windows.
+description: El mensaje WM TABLET ADDED se publica cuando se agrega un dispositivo de tableta a \_ \_ Windows.
 ms.assetid: 74323b34-2364-47eb-b8ac-b97546e43b32
-title: Mensaje de WM_TABLET_ADDED (Tpcshrd. h)
+title: WM_TABLET_ADDED mensaje (Tpcshrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a721f83cbab3c520a5502fa2f1262de9a26b25a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9c56b475eb63c292d2638d5a34b831862da967868944f823c90b184bdbc076a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934335"
 ---
-# <a name="wm_tablet_added-message"></a>\_Mensaje agregado a Tablet PC de WM \_
+# <a name="wm_tablet_added-message"></a>Mensaje \_ de WM TABLET \_ ADDED
 
-El mensaje de la **tableta de WM \_ \_ agregada** se envía cuando se agrega un dispositivo de tableta a Windows.
+El **mensaje WM TABLET \_ \_ ADDED** se publica cuando se agrega un dispositivo de tableta a Windows.
 
 
 ```C++
@@ -30,7 +30,7 @@ El mensaje de la **tableta de WM \_ \_ agregada** se envía cuando se agrega un 
 *wParam* 
 </dt> <dd>
 
-Índice del dispositivo de tableta gráfica que se va a agregar
+Índice de dispositivo de tableta que se va a agregar
 
 </dd> <dt>
 
@@ -41,11 +41,11 @@ Sin usar.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje se envía a todas las ventanas de nivel superior del sistema, incluidas las ventanas sin propietario deshabilitadas o invisibles, las ventanas superpuestas y las ventanas emergentes. pero el mensaje no se envía a las ventanas secundarias.
+Este mensaje se envía a todas las ventanas de nivel superior del sistema, incluidas las ventanas sin control deshabilitadas o invisibles, las ventanas superpuestas y las ventanas emergentes. pero el mensaje no se envía a las ventanas secundarias.
 
-Los índices pasados en *wParam* están relacionados con el índice utilizado por el método [**ITabletManager:: GetTablet**](/previous-versions/windows/desktop/legacy/aa373683(v=vs.85)) .
+Los índices pasados *en wParam* están relacionados con el índice utilizado por el [**método ITabletManager::GetTablet.**](/previous-versions/windows/desktop/legacy/aa373683(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Los índices pasados en *wParam* están relacionados con el índice utilizado po
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                        |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
-| Encabezado<br/>                   | <dl> <dt>Tpcshrd. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Tpcshrd.h</dt> </dl> |
 
 
 

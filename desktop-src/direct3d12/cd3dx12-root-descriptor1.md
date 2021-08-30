@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_ROOT_DESCRIPTOR1 estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ \_ estructura DESCRIPTOR1 raíz D3D12.
+title: CD3DX12_ROOT_DESCRIPTOR1 estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura D3D12 \_ ROOT \_ DESCRIPTOR1.
 ms.assetid: 664822BF-5C27-4541-953F-219894547A6C
 keywords:
-- Estructura de CD3DX12_ROOT_DESCRIPTOR1
+- CD3DX12_ROOT_DESCRIPTOR1 estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66cb64509c82c11180ca3e1d2937dff5d077897d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e75fd8274e9f1901274c8002a6826b4c7633b3afae78d10ad9be2abad7d74ecf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120028235"
 ---
-# <a name="cd3dx12_root_descriptor1-structure"></a>CD3DX12 \_ raíz \_ DESCRIPTOR1 estructura
+# <a name="cd3dx12_root_descriptor1-structure"></a>Estructura CD3DX12 \_ ROOT \_ DESCRIPTOR1
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura [**\_ \_ DESCRIPTOR1 raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1) .
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**D3D12 \_ ROOT \_ DESCRIPTOR1.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,58 +45,58 @@ struct CD3DX12_ROOT_DESCRIPTOR1  : public D3D12_ROOT_DESCRIPTOR1{
 
 <dl> <dt>
 
-**\_DESCRIPTOR1 raíz CD3DX12 \_ ()**
+**DESCRIPTOR RAÍZ \_ CD3DX121() \_**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un \_ DESCRIPTOR1 raíz CD3DX12 \_ .
+Crea una nueva instancia sin inicializar de un DESCRIPTOR RAÍZ CD3DX121. \_ \_
 
 </dd> <dt>
 
-**CD3DX12 \_ raíz explícita \_ DESCRIPTOR1 (const D3D12 \_ raíz \_ DESCRIPTOR1 &)**
+**EXPLICIT CD3DX12 \_ ROOT \_ DESCRIPTOR1(const D3D12 \_ ROOT \_ DESCRIPTOR1 &o)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ DESCRIPTOR1 raíz CD3DX12 \_ , inicializada con el contenido de otra [**estructura \_ \_ DESCRIPTOR1 raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1) .
+Crea una nueva instancia de un DESCRIPTOR RAÍZ CD3DX12, inicializado con el contenido de otra estructura \_ \_ [**D3D12 \_ ROOT \_ DESCRIPTOR1.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1)
 
 </dd> <dt>
 
-**CD3DX12 \_ root \_ DESCRIPTOR1 (uint SHADERREGISTER, uint registerSpace = 0, D3D12 \_ root \_ descriptor Flag \_ Flags = D3D12 \_ \_ marcador de descriptor raíz \_ \_ None)**
+**CD3DX12 \_ ROOT \_ DESCRIPTOR1(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAG \_ NONE)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ DESCRIPTOR1 raíz CD3DX12 \_ , inicializando los parámetros siguientes:
+Crea una nueva instancia de un DESCRIPTOR RAÍZ \_ \_ CD3DX12, inicializando los parámetros siguientes:
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Marcas \_ de \_ descriptor raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) marcas = \_ marcador de \_ descriptor raíz D3D12 \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE DESCRIPTOR RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**Inicialización en línea (UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ raíz \_ descriptor marcas \_ Flags = D3D12 \_ marcador de \_ descriptor raíz \_ \_ ninguno)**
+**inline Init(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Marcas \_ de \_ descriptor raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) marcas = \_ marcador de \_ descriptor raíz D3D12 \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE DESCRIPTOR RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE
 
 </dd> <dt>
 
-**Static inline init (D3D12 \_ raíz \_ DESCRIPTOR1 &Table, uint SHADERREGISTER, uint registerSpace = 0, D3D12 \_ root \_ descriptor Flags \_ = D3D12 \_ \_ marcador de descriptor raíz \_ \_ None)**
+**static inline Init(D3D12 \_ ROOT \_ DESCRIPTOR1 &table, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT DESCRIPTOR \_ \_ FLAGS flags = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-[**D3D12 \_ Tabla de &raíz \_ DESCRIPTOR1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1)
+[**D3D12 \_ Tabla \_ raíz descriptor1**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1) &raíz
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
 UINT registerSpace = 0
 
-[**D3D12 \_ Marcas \_ de \_ descriptor raíz**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) marcas = \_ marcador de \_ descriptor raíz D3D12 \_ \_ ninguno
+[**D3D12 \_ MARCAS \_ DE DESCRIPTOR RAÍZ \_ FLAGS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_root_descriptor_flags) = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE
 
 </dd> </dl>
 
@@ -106,7 +106,7 @@ UINT registerSpace = 0
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ UINT registerSpace = 0
 
 <dl> <dt>
 
-[**\_DESCRIPTOR1 raíz \_ D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1)
+[**DESCRIPTOR RAÍZ D3D121 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor1)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

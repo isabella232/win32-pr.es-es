@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4da1fb99e0a11a1c0975fd57166af44ad481081c747f1c7991e6a565d5260ed0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fe90152d9cc1a9ca5d508f89d7e5511a62c224d
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919125"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122887417"
 ---
 # <a name="cim_swapspacecheck-class"></a>Cim \_ SwapSpaceCheck (clase)
 
-La **clase \_ SWAPSpaceCheck** de CIM especifica la cantidad de espacio de intercambio que debe estar disponible en el sistema. La cantidad se especifica en la **propiedad SwapSpaceSize.** Los detalles de esta comprobación se comparan con los detalles correspondientes que se encuentran en un objeto [**\_ OperatingSystem cim**](cim-operatingsystem.md) al que hace referencia la asociación [**CIM \_ InstalledOS para**](cim-installedos.md) el objeto [**\_ ComputerSystem de CIM**](cim-computersystem.md) que describe el entorno. Cuando el valor de la **propiedad TotalSwapSpaceSize** es mayor o igual que el valor especificado en la propiedad **SwapSpaceSize,** se cumple la condición.
+La **clase CIM \_ SwapSpaceCheck** especifica la cantidad de espacio de intercambio que debe estar disponible en el sistema. La cantidad se especifica en la **propiedad SwapSpaceSize.** Los detalles de esta comprobación se comparan con los detalles correspondientes que se encuentran en un objeto [**\_ OperatingSystem cim**](cim-operatingsystem.md) al que hace referencia la asociación [**CIM \_ InstalledOS**](cim-installedos.md) para el objeto [**\_ ComputerSystem de CIM**](cim-computersystem.md) que describe el entorno. Cuando el valor de la **propiedad TotalSwapSpaceSize** es mayor o igual que el valor especificado en la propiedad **SwapSpaceSize,** se cumple la condición.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -63,20 +63,20 @@ class CIM_SwapSpaceCheck : CIM_Check
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ SWAPSpaceCheck de CIM** tiene estos tipos de miembros:
+La **clase \_ CIM SwapSpaceCheck** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ SWAPSpaceCheck de CIM** tiene estos métodos.
+La **clase CIM \_ SwapSpaceCheck** tiene estos métodos.
 
 
 
 | Método                                                      | Descripción                                                   |
 |:------------------------------------------------------------|:--------------------------------------------------------------|
-| [**Invocar**](invoke-method-in-class-cim-swapspacecheck.md) | Realiza una acción determinada. No implementado por WMI.<br/> |
+| [**Invocar**](invoke-method-in-class-cim-swapspacecheck.md) | Realiza una acción determinada. Wmi no implementa.<br/> |
 
 
 
@@ -84,7 +84,7 @@ La **clase \_ SWAPSpaceCheck de CIM** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ SWAPSpaceCheck de CIM** tiene estas propiedades.
+La **clase CIM \_ SwapSpaceCheck** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -102,7 +102,7 @@ Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del asunto.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/w
 
 Identificador que se usa junto con otras claves para identificar de forma única la comprobación.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -133,11 +133,11 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
+Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que el [**método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
 
-Si **es FALSE**, no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
+Si **es FALSE,** no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Tipo de acceso: solo lectura
 
 Descripción de los objetos.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -165,12 +165,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre usado para identificar el elemento de software
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -183,12 +183,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Se trata de un identificador para este elemento de software.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 </dd> <dt>
 
@@ -201,12 +201,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado del elemento de software de un elemento de software.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 <dt>
 
@@ -239,7 +239,7 @@ Describe los detalles necesarios para una instalación correcta y los detalles (
 
 </dt> <dd>
 
-Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado en ejecución (es decir, el siguiente estado).
+Describe los detalles necesarios para la ejecución correcta y los detalles (condiciones y acciones) necesarios para crear un elemento de software en estado de ejecución (es decir, el siguiente estado).
 
 </dd> <dt>
 
@@ -250,7 +250,7 @@ Describe los detalles necesarios para la ejecución correcta y los detalles (con
 
 </dt> <dd>
 
-Describe los detalles necesarios para supervisar y operar en un elemento start.
+Describe los detalles necesarios para supervisar y operar en un elemento de inicio.
 
 </dd> </dl>
 
@@ -270,7 +270,7 @@ Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualif
 
 Tamaño mínimo del espacio de intercambio, en kilobytes, que debe estar disponible en el sistema de destino.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
 
 </dd> <dt>
 
@@ -283,12 +283,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5")
 </dt> </dl>
 
 Sistema operativo de destino del elemento de software.
 
-Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
+Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
 
 <dt>
 
@@ -356,7 +356,7 @@ Att UNIX
 
 </dt> <dd>
 
-Abrir máquinas virtuales
+Apertura de MÁQUINAS VIRTUALES
 
 </dd> <dt>
 
@@ -816,8 +816,8 @@ Versión de la operación.
 
 La versión de la operación debe tener uno de los siguientes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
 Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
@@ -833,7 +833,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

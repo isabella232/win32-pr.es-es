@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6ac89a45e37631b554fc7b2dc28266c95cfae3fba54debb427abfd8db621ea3f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f0fa6d326120355e43b29cd87e13d5c0ebbf68b
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118766093"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474541"
 ---
 # <a name="jet_enumcolumn-structure"></a>Estructura de JET_ENUMCOLUMN
 
@@ -58,51 +58,23 @@ Identificador de columna enumerado.
 
 Código de estado de columna que resulta de la enumeración de la columna.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Códigos de error</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errBadColumnId</p></td>
-<td><p>El identificador de columna está fuera de los límites legales de un identificador de columna.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errColumnNotFound</p></td>
-<td><p>La columna descrita por el identificador de columna no existe en la tabla.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnColumnNull</p></td>
-<td><p>Todos los valores de esta columna son NULL.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnColumnPresent</p></td>
-<td><p>JET_bitEnumeratePresenceOnly se especificó y se habría devuelto al menos un valor de columna distinto de NULL para esta columna.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_wrnColumnSingleValue</p></td>
-<td><p>JET_bitEnumerateCompressOutput se especificó y se ha devuelto exactamente un valor de columna distinto de NULL para esta columna. Como resultado, se ha devuelto la <strong>forma comprimida JET_ENUMCOLUMN</strong> . Consulte <strong>JET_ENUMCOLUMN</strong> para obtener más información.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_wrnColumnSkipped</p></td>
-<td><p>El identificador de columna del <a href="gg269251(v=exchg.10).md">JET_ENUMCOLUMNID</a> estructura correspondiente a este <strong>JET_ENUMCOLUMN</strong> estructura era cero.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Códigos de error</p> | <p>Significado</p> | 
+|--------------------|----------------|
+| <p>JET_errBadColumnId</p> | <p>El identificador de columna está fuera de los límites legales de un identificador de columna.</p> | 
+| <p>JET_errColumnNotFound</p> | <p>La columna descrita por el identificador de columna no existe en la tabla.</p> | 
+| <p>JET_wrnColumnNull</p> | <p>Todos los valores de esta columna son NULL.</p> | 
+| <p>JET_wrnColumnPresent</p> | <p>JET_bitEnumeratePresenceOnly se especificó y se habría devuelto al menos un valor de columna distinto de NULL para esta columna.</p> | 
+| <p>JET_wrnColumnSingleValue</p> | <p>JET_bitEnumerateCompressOutput se especificó y se ha devuelto exactamente un valor de columna distinto de NULL para esta columna. Como resultado, se ha devuelto la <strong>forma comprimida JET_ENUMCOLUMN</strong> . Consulte <strong>JET_ENUMCOLUMN</strong> para obtener más información.</p> | 
+| <p>JET_wrnColumnSkipped</p> | <p>El identificador de columna del <a href="gg269251(v=exchg.10).md">JET_ENUMCOLUMNID</a> estructura correspondiente a esta <strong>estructura JET_ENUMCOLUMN</strong> estructura era cero.</p> | 
+
 
 
 **cEnumColumnValue**
 
 Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Este búfer de salida se usa cuando el código de estado de columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Este búfer de salida se usa cuando el código de estado de la columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Se devuelve si "err \! = JET_wrnColumnSingleValue".
 
@@ -110,13 +82,13 @@ Se devuelve si "err \! = JET_wrnColumnSingleValue".
 
 Matriz de valores de columna que se enumeraron para la columna. El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
-Este búfer de salida se usa cuando el código de estado de columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
+Este búfer de salida se usa cuando el código de estado de la columna no es igual a JET_wrnColumnSingleValue. Para obtener más información, [vea JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
 Se devuelve si "err \! = JET_wrnColumnSingleValue".
 
 **cbData**
 
-Valor de columna enumerado para la columna.
+Valor de columna que se enumeró para la columna.
 
 El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
@@ -126,7 +98,7 @@ Se devuelve si "err == JET_wrnColumnSingleValue".
 
 **pvData**
 
-Valor de columna enumerado para la columna.
+Valor de columna que se enumeró para la columna.
 
 El búfer de salida se devuelve en memoria que se asignó mediante la devolución de llamada [compatible](/cpp/c-runtime-library/reference/realloc?view=vs-2019) con reasignación que se proporcionó a [JetEnumerateColumns](./jetenumeratecolumns-function.md).
 
@@ -136,26 +108,9 @@ Se devuelve si "err == JET_wrnColumnSingleValue".
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en Esent.h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

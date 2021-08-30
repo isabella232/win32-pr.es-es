@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f43f2cba06d75aa08a6419c0b39fa08bf898c111
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: b1164c388b66ff4b5e4ee3f32281b78ab09fd662
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987098"
+ms.locfileid: "122883490"
 ---
 # <a name="span-idwwan_profile_v4element_dataroamingpartnersspandataroamingpartners"></a><span id="WWAN_profile_v4.element_DataRoamingPartners"></span>DataRoamingPartners
 
@@ -34,7 +34,7 @@ Para más información, consulte la documentación del elemento [**DataRoamingPa
 [&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
 **&lt;DataRoamingPartners&gt;**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <DataRoamingPartners>
@@ -78,9 +78,7 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

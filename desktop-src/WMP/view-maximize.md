@@ -1,9 +1,9 @@
 ---
-title: VER. maximizar
-description: El método Maximize maximiza la vista.
+title: VIEW.maximize
+description: El método maximize maximiza view.
 ms.assetid: c419f7a8-e340-4b67-a5f0-967ed6794aa6
 keywords:
-- VER. maximizar Windows Media Player
+- VIEW.maximize Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a65c3c600f95c76253bbba1a5ac40e94909518da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d057890f0a63925c11ee92dcadc514a9446aed1fb61175f5b49ee261944852ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122714"
 ---
-# <a name="viewmaximize"></a>VER. maximizar
+# <a name="viewmaximize"></a>VIEW.maximize
 
-El método **Maximize** maximiza la **vista**.
+El **método maximize** maximiza view . 
 
 ``` syntax
         elementID.maximize()
@@ -57,7 +57,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -65,10 +65,10 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> <dt>
 
-[**VER. minimizar**](view-minimize.md)
+[**VIEW.minimize**](view-minimize.md)
 </dt> </dl>
 
  

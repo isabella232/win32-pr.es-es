@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0a8b49b112c9566b15226e8ffd52f4240cff2fb8
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 9286cc9ffc07f9b03bf6cfa84add8ba5b031fe97
+ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471721"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122983318"
 ---
 # <a name="jetsettablesequential-function"></a>JetSetTableSequential (Función)
 
@@ -59,7 +59,7 @@ Cursor que se va a usar para esta llamada.
 Grupo de bits que especifican cero o más de las siguientes opciones.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitPrereadForward</p> | <p>Esta opción se usa para indexar en la dirección hacia delante.</p><p><strong>Windows 7:</strong><strong>JET_bitPrereadForward</strong> se introdujo en Windows 7.  </p> | 
 | <p>JET_bitPrereadBackward</p> | <p>Esta opción se usa para indexar en dirección hacia atrás.</p><p><strong>Windows 7:</strong><strong>JET_bitPrereadBackward</strong> se introdujo en Windows 7.  </p> | 
@@ -68,7 +68,7 @@ Grupo de bits que especifican cero o más de las siguientes opciones.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -85,18 +85,24 @@ Si esta función se realiza correctamente, el índice actual del cursor se optim
 
 Si se produce un error en esta función, no se producirá ningún cambio en la configuración del cursor. No se producirá ningún cambio en el estado de la base de datos.
 
-#### <a name="remarks"></a>Comentarios
+#### <a name="remarks"></a>Observaciones
 
 Si la aplicación necesita examinar eficazmente un subconjunto conocido de un índice, también se realiza una optimización similar siempre que se establece un intervalo de índices [mediante JetSetIndexRange](./jetsetindexrange-function.md). Esta optimización solo está disponible en Windows XP y versiones posteriores.
 
 Si la aplicación necesita examinar eficazmente un subconjunto desconocido de un índice, no se debe realizar ninguna acción. El motor puede detectar automáticamente el comportamiento del examen y capturará los datos con antelación. Sin embargo, este comportamiento no es tan agresivo.
 
-Esta optimización hará que el examen del índice principal sea eficaz y hará que el examen solo sea eficaz en los datos de entrada de índice de un índice secundario. No hará que el examen de un índice secundario al recuperar los datos del registro sea eficaz. Esto se debe a que el motor no realiza una lectura adelantada en los datos de registro.
+Esta optimización hará que el examen del índice principal sea eficaz y hará que el examen solo sea eficaz de los datos de entrada de índice en un índice secundario. No hará que el examen de un índice secundario al recuperar los datos del registro sea eficaz. Esto se debe a que el motor no realiza una lectura adelantada en los datos de registro.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista o Windows XP.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
+| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

@@ -1,50 +1,50 @@
 ---
-description: Permite el procesamiento de vídeo avanzado por el lector de origen, incluida la conversión del espacio de colores, el desentrelazado, el cambio de tamaño de vídeo y la conversión de velocidad de fotogramas.
+description: Permite el procesamiento avanzado de vídeo mediante el Lector de origen, incluida la conversión de espacio de color, el desenlazado, el cambio de tamaño de vídeo y la conversión de velocidad de fotogramas.
 ms.assetid: 1055CD55-4B25-4EEC-AF1B-C84C52287F8F
-title: MF_SOURCE_READER_ENABLE_ADVANCED_VIDEO_PROCESSING atributo (Mfreadwrite. h)
+title: MF_SOURCE_READER_ENABLE_ADVANCED_VIDEO_PROCESSING atributo (Mfreadwrite.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6978239c5c1c466c78a310b38b5d10bd41f9e004
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e873252dc67269124283b8e79760938d0f3302d348f21ea5506172cbe7b42ec3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113725"
 ---
-# <a name="mf_source_reader_enable_advanced_video_processing-attribute"></a>\_Lector de código fuente MF \_ \_ Habilitar atributo de \_ \_ procesamiento de vídeo avanzado \_
+# <a name="mf_source_reader_enable_advanced_video_processing-attribute"></a>ATRIBUTO ENABLE ADVANCED VIDEO PROCESSING DEL LECTOR DE ORIGEN \_ \_ \_ \_ \_ \_ DE MF
 
-Permite el procesamiento de vídeo avanzado por el [lector de origen](source-reader.md), incluida la conversión del espacio de colores, el desentrelazado, el cambio de tamaño de vídeo y la conversión de velocidad de fotogramas.
+Permite el procesamiento avanzado de vídeo mediante el Lector de [origen,](source-reader.md)incluida la conversión de espacio de color, el desenlazado, el cambio de tamaño de vídeo y la conversión de velocidad de fotogramas.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si este atributo es **true**, el lector de origen puede insertar un procesador de vídeo en la canalización de procesamiento, lo que permite los siguientes tipos de conversión de formato:
+Si este atributo es **TRUE**, el Lector de origen puede insertar un procesador de vídeo en la canalización de procesamiento, lo que permite los siguientes tipos de conversión de formato:
 
--   Conversión de espacio de colores (YUV a RGB-32)
+-   Conversión de espacio de color (YUV a RGB-32)
 -   Desentrelazado
--   Cambio de tamaño de vídeo
+-   Tamaño de vídeo
 -   Conversión de velocidad de fotogramas
 
-Si este atributo es **true**, el atributo [MF \_ ReadWrite \_ Disable \_ Converters](mf-readwrite-disable-converters.md) debe ser **false**.
+Si este atributo es **TRUE**, el atributo [MF \_ READWRITE \_ DISABLE \_ CONVERTERS](mf-readwrite-disable-converters.md) debe ser **FALSE.**
 
-El lector de origen busca los procesadores de vídeo que están registrados en la categoría de **\_ \_ \_ procesador de vídeo categoría de MFT** , incluidos los MFTs registrados para el proceso local. (Consulte [**MFTRegisterLocal**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) para obtener más información sobre el registro local de MFTs). El lector de origen usa el procesador de vídeo de Transcode (XVP) si no se encuentra ningún otro procesador de vídeo adecuado.
+El Lector de origen busca procesadores de vídeo registrados en la categoría **MFT \_ CATEGORY VIDEO \_ \_ PROCESSOR,** incluidos los MFT registrados para el proceso local. (Vea [**MFTRegisterLocal para**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) obtener más información sobre el registro local de MFT). El Lector de origen usa el procesador de vídeo transcodificador (XVP) si no se encuentra ningún otro procesador de vídeo adecuado.
 
-La aplicación especifica el tipo de salida deseado llamando a [**IMFSourceReader:: SetCurrentMediaType**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setcurrentmediatype). Cuando el lector de origen configura el procesador de vídeo, intenta coincidir con los siguientes atributos del tipo de salida:
+La aplicación especifica el tipo de salida deseado llamando [**a IMFSourceReader::SetCurrentMediaType.**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-imfsourcereader-setcurrentmediatype) Cuando el Lector de origen configura el procesador de vídeo, intenta hacer coincidir los siguientes atributos del tipo de salida:
 
--   Velocidad de fotogramas ([ \_ \_ \_ velocidad de fotogramas MF MT](mf-mt-frame-rate-attribute.md))
--   Tamaño de marco ([MF \_ MT \_ Frame \_ size](mf-mt-frame-size-attribute.md))
--   Modo entrelazado[( \_ \_ \_ modo entrelazado MF MT](mf-mt-interlace-mode-attribute.md))
--   Relación de aspecto de píxeles ([ \_ relación de aspecto de \_ píxeles \_ \_ MF MT](mf-mt-pixel-aspect-ratio-attribute.md))
--   Subtipo ([ \_ \_ subtipo MF MT](mf-mt-subtype-attribute.md))
+-   Velocidad de fotogramas ([MF \_ MT FRAME \_ \_ RATE](mf-mt-frame-rate-attribute.md))
+-   Tamaño del marco ([MF \_ MT FRAME \_ \_ SIZE](mf-mt-frame-size-attribute.md))
+-   Modo de interlace ([MF \_ MT \_ INTERLACE \_ MODE](mf-mt-interlace-mode-attribute.md))
+-   Relación de aspecto de píxeles[(MF \_ MT PIXEL \_ ASPECT \_ \_ RATIO)](mf-mt-pixel-aspect-ratio-attribute.md)
+-   Subtipo ([MF \_ MT \_ SUBTYPE](mf-mt-subtype-attribute.md))
 
-Este atributo es similar al del [ \_ lector de código fuente MF habilitar el atributo de \_ \_ \_ \_ procesamiento de vídeo](mf-source-reader-enable-video-processing.md) , pero ofrece las siguientes ventajas:
+Este atributo es similar al atributo [ENABLE VIDEO PROCESSING de MF \_ SOURCE \_ READER, \_ \_ \_ ](mf-source-reader-enable-video-processing.md) pero ofrece las siguientes ventajas:
 
--   Se admite un mayor número de conversiones de formato.
+-   Se admite una mayor variedad de conversiones de formato.
 -   Las aplicaciones pueden registrar sus propios convertidores.
--   Algunas conversiones se pueden realizar en el hardware mediante la GPU.
+-   Algunas conversiones se pueden realizar en hardware mediante la GPU.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Este atributo es similar al del [ \_ lector de código fuente MF habilitar el at
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Mfreadwrite.h</dt> </dl> |
 
 
 
@@ -62,13 +62,13 @@ Este atributo es similar al del [ \_ lector de código fuente MF habilitar el at
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Lector de origen](source-reader.md)
 </dt> <dt>
 
-[Atributos del lector de código fuente](source-reader-attributes.md)
+[Atributos del lector de origen](source-reader-attributes.md)
 </dt> </dl>
 
  
