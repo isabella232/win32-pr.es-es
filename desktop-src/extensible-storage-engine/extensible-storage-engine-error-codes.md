@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8c6854b23a7399abb12f8eebb37c03aacde9ef11
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: cdbdff7255b621eaab59cfbf38cb577a6e8c0331
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983188"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481781"
 ---
 # <a name="extensible-storage-engine-error-codes"></a>Códigos de error Storage motor extensibles
 
@@ -43,7 +43,7 @@ Un [JET_ERR](./jet-err.md) valor cero debe interpretarse como correcto.
 Un [JET_ERR](./jet-err.md) que sea mayor que cero debe interpretarse como una advertencia.
 
 
-| <p>Advertencias</p> | <p>Descripción</p> | 
+| <p>Warnings</p> | <p>Descripción</p> | 
 |-----------------|--------------------|
 | <p>JET_wrnRemainingVersions<br />321</p> | <p>El almacén de versiones sigue activo. El administrador de directorios devuelve este error.</p> | 
 | <p>JET_wrnUniqueKey<br />345</p> | <p>Una búsqueda en un índice no único produjo una clave única. El administrador de directorios devuelve este error.</p> | 
@@ -69,10 +69,10 @@ Un [JET_ERR](./jet-err.md) que sea mayor que cero debe interpretarse como una ad
 | <p>JET_wrnCorruptIndexDeleted<br />1415</p> | <p>Se debe quitar el índice no actualizado.</p> | 
 | <p>JET_wrnColumnMaxTruncated<br />1512</p> | <p>La longitud máxima es demasiado grande y se ha truncado.</p> | 
 | <p>JET_wrnCopyLongValue<br />1520</p> | <p>Un valor BLOB se ha movido del registro a un almacenamiento independiente de blobs grandes.</p><p><strong>Nota</strong> Este error es solo para uso interno.</p> | 
-| <p>JET_wrnColumnSkipped<br />1531</p> | <p>No se devolvieron los valores de columna porque el identificador de columna correspondiente o el miembro <em>itagSequence</em> de la estructura <a href="gg294052(v=exchg.10).md">JET_ENUMCOLUMNVALUE</a> que se solicitó para la enumeración era NULL.</p> | 
+| <p>JET_wrnColumnSkipped<br />1531</p> | <p>No se devolvieron los valores de columna porque el identificador <a href="gg294052(v=exchg.10).md"></a> de columna correspondiente o el miembro <em>itagSequence</em> de la estructura JET_ENUMCOLUMNVALUE que se solicitó para la enumeración era NULL.</p> | 
 | <p>JET_wrnColumnNotLocal<br />1532</p> | <p>No se devolvieron los valores de columna porque no se pudieron reconstruir a partir de los datos existentes.</p> | 
 | <p>JET_wrnColumnMoreTags<br />1533</p> | <p>Los valores de columna existentes no se solicitaron para la enumeración.</p> | 
-| <p>JET_wrnColumnTruncated<br />1534</p> | <p>El valor de columna se truncaba en el límite de tamaño solicitado durante la enumeración.</p> | 
+| <p>JET_wrnColumnTruncated<br />1534</p> | <p>El valor de columna se truntó en el límite de tamaño solicitado durante la enumeración.</p> | 
 | <p>JET_wrnColumnPresent<br />1535</p> | <p>Los valores de columna existen, pero la solicitud no los devolvió.</p> | 
 | <p>JET_wrnColumnSingleValue<br />1536</p> | <p>El valor de columna se devolvió en JET_COLUMNENUM como resultado de la JET_bitEnumerateCompressOutput se establece.</p> | 
 | <p>JET_wrnColumnDefault<br />1537</p> | <p>El valor de columna se establece en el valor predeterminado de la columna.</p> | 
@@ -89,7 +89,7 @@ Un [JET_ERR](./jet-err.md) que sea mayor que cero debe interpretarse como una ad
 Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un error.
 
 
-| <p>Errores</p> | <p>Descripción</p> | 
+| <p>Errors</p> | <p>Descripción</p> | 
 |---------------|--------------------|
 | <p>JET_wrnNyi<br />-1</p> | <p>La función aún no se ha implementado.</p> | 
 | <p>JET_errRfsFailure<br />-100</p> | <p>Error en el simulador de errores de recursos.</p> | 
@@ -109,9 +109,9 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errBadParentPageLink<br />-338</p> | <p>Una base de datos primaria está dañada. El administrador de directorios devuelve este error.</p> | 
 | <p>JET_errSPAvailExtCacheOutOfSync<br />-340</p> | <p>La caché AvailExt no coincide con el árbol B+. El administrador de directorios devuelve este error.</p> | 
 | <p>JET_errSPAvailExtCorrupted<br />-341</p> | <p>El árbol de espacio AllAvailExt está dañado. El administrador de directorios devuelve este error.</p> | 
-| <p>JET_errSPAvailExtCacheOutOfMemory<br />-342</p> | <p>Error de memoria fuera de memoria al asignar un nodo de caché AvailExt. El administrador de directorios devuelve este error.</p> | 
+| <p>JET_errSPAvailExtCacheOutOfMemory<br />-342</p> | <p>Se produjo un error de memoria fuera de memoria al asignar un nodo de caché AvailExt. El administrador de directorios devuelve este error.</p> | 
 | <p>JET_errSPOwnExtCorrupted<br />-343</p> | <p>El árbol de espacio OwnExt está dañado. El administrador de directorios devuelve este error.</p> | 
-| <p>JET_errDbTimeCorrupted<br />-344</p> | <p>El valor de Dbtime de la página actual es mayor que el valor de dbtime de la base de datos global. El administrador de directorios devuelve este error.</p> | 
+| <p>JET_errDbTimeCorrupted<br />-344</p> | <p>Dbtime en la página actual es mayor que el valor de dbtime de la base de datos global. El administrador de directorios devuelve este error.</p> | 
 | <p>JET_errKeyTruncated<br />-346</p> | <p>Error al intentar crear una clave para una entrada de índice porque la clave se habría truncado y la definición de índice no permite el truncamiento de la clave.</p> | 
 | <p>JET_errKeyTooBig<br />-408</p> | <p>La clave es demasiado grande. El administrador de registros devuelve este error.</p> | 
 | <p>JET_errInvalidLoggedOperation<br />-500</p> | <p>La operación registrada no se puede volver a crear.</p> | 
@@ -119,13 +119,13 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errNoBackupDirectory<br />-503</p> | <p>No se ha especificado un directorio de copia de seguridad.</p> | 
 | <p>JET_errBackupDirectoryNotEmpty<br />-504</p> | <p>El directorio de copia de seguridad no está vacío.</p> | 
 | <p>JET_errBackupInProgress<br />-505</p> | <p>La copia de seguridad ya está activa.</p> | 
-| <p>JET_errRestoreInProgress<br />-506</p> | <p>Una restauración está en curso.</p> | 
+| <p>JET_errRestoreInProgress<br />-506</p> | <p>Hay una restauración en curso.</p> | 
 | <p>JET_errMissingPreviousLogFile<br />-509</p> | <p>Falta el archivo de registro para el punto de comprobación.</p> | 
 | <p>JET_errLogWriteFail<br />-510</p> | <p>Error al escribir en el archivo de registro.</p> | 
 | <p>JET_errLogDisabledDueToRecoveryFailure<br />-511</p> | <p>Error al intentar escribir en el registro después de la recuperación.</p> | 
 | <p>JET_errCannotLogDuringRecoveryRedo<br />-512</p> | <p>Error al intentar escribir en el registro durante la fase de rehacer la recuperación.</p> | 
 | <p>JET_errLogGenerationMismatch<br />-513</p> | <p>El nombre del archivo de registro no coincide con el número de generación interno.</p> | 
-| <p>JET_errBadLogVersion<br />-514</p> | <p>La versión del archivo de registro no es compatible con la versión de ESE.</p> | 
+| <p>JET_errBadLogVersion<br />-514</p> | <p>La versión del archivo de registro no es compatible con la versión ese.</p> | 
 | <p>JET_errInvalidLogSequence<br />-515</p> | <p>La marca de tiempo del siguiente registro no coincide con la marca de tiempo esperada.</p> | 
 | <p>JET_errLoggingDisabled<br />-516</p> | <p>El registro no está activo.</p> | 
 | <p>JET_errLogBufferTooSmall<br />-517</p> | <p>El búfer de registro es demasiado pequeño para la recuperación.</p> | 
@@ -142,36 +142,36 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errBadLogSignature<br />-530</p> | <p>Hay una firma no válida para un archivo de registro.</p> | 
 | <p>JET_errBadDbSignature<br />-531</p> | <p>Hay una firma no válida para un archivo de base de datos.</p> | 
 | <p>JET_errBadCheckpointSignature<br />-532</p> | <p>Hay una firma no válida para un archivo de punto de comprobación.</p> | 
-| <p>JET_errCheckpointCorrupt<br />-533</p> | <p>No se encontró el archivo de punto de comprobación o se ha dañado.</p> | 
+| <p>JET_errCheckpointCorrupt<br />-533</p> | <p>El archivo de punto de comprobación no se encontró o estaba dañado.</p> | 
 | <p>JET_errMissingPatchPage<br />-534</p> | <p>No se encontró la página del archivo de revisión de base de datos durante la recuperación.</p> | 
 | <p>JET_errBadPatchPage<br />-535</p> | <p>La página del archivo de revisión de base de datos no es válida.</p> | 
 | <p>JET_errRedoAbruptEnded<br />-536</p> | <p>La rehacer finalizó repentinamente debido a un error repentino al leer los registros del archivo de registro.</p> | 
 | <p>JET_errBadSLVSignature<br />-537</p> | <p>Esta marca está reservada.</p> | 
-| <p>JET_errPatchFileMissing<br />-538</p> | <p>La restauración fuerte detectó que falta un archivo de revisión de base de datos en el conjunto de copia de seguridad.</p> | 
+| <p>JET_errPatchFileMissing<br />-538</p> | <p>La restauración en disco detectó que falta un archivo de revisión de base de datos del conjunto de copia de seguridad.</p> | 
 | <p>JET_errDatabaseLogSetMismatch<br />-539</p> | <p>La base de datos no pertenece al conjunto actual de archivos de registro.</p> | 
 | <p>JET_errDatabaseStreamingFileMismatch<br />-540</p> | <p>Esta marca está reservada.</p> | 
 | <p>JET_errLogFileSizeMismatch<br />-541</p> | <p>El tamaño real del archivo de registro no coincide <a href="gg269235(v=exchg.10).md">JET_paramLogFileSize</a>.</p> | 
 | <p>JET_errCheckpointFileNotFound<br />-542</p> | <p>No se pudo encontrar el archivo de punto de comprobación.</p> | 
 | <p>JET_errRequiredLogFilesMissing<br />-543</p> | <p>Faltan los archivos de registro necesarios para la recuperación.</p> | 
-| <p>JET_errSoftRecoveryOnBackupDatabase<br />-544</p> | <p>Una recuperación de software está a punto de usarse en una base de datos de copia de seguridad cuando se debe usar una restauración en su lugar.</p> | 
-| <p>JET_errLogFileSizeMismatchDatabasesConsistent<br />-545</p> | <p>Las bases de datos se han recuperado, pero el tamaño del archivo de registro utilizado durante la recuperación no coincide <a href="gg269235(v=exchg.10).md">con JET_paramLogFileSize</a>.</p> | 
+| <p>JET_errSoftRecoveryOnBackupDatabase<br />-544</p> | <p>Una recuperación flexible está a punto de usarse en una base de datos de copia de seguridad cuando se debe usar una restauración en su lugar.</p> | 
+| <p>JET_errLogFileSizeMismatchDatabasesConsistent<br />-545</p> | <p>Las bases de datos se han recuperado, pero el tamaño del archivo de registro utilizado durante la recuperación no coincide <a href="gg269235(v=exchg.10).md">JET_paramLogFileSize</a>.</p> | 
 | <p>JET_errLogSectorSizeMismatch<br />-546</p> | <p>El tamaño del sector del archivo de registro no coincide con el tamaño del sector del volumen actual.</p> | 
-| <p>JET_errLogSectorSizeMismatchDatabasesConsistent<br />-547</p> | <p>Las bases de datos se han recuperado, pero el tamaño del sector del archivo de registro (que se usa durante la recuperación) no coincide con el tamaño de sector del volumen actual.</p> | 
-| <p>JET_errLogSequenceEndDatabasesConsistent<br />-548</p> | <p>Las bases de datos se han recuperado, pero se han usado todas las generaciones de registros posibles de la secuencia actual. Se deben eliminar todos los archivos de registro y el archivo de punto de comprobación y se debe hacer una copia de seguridad de las bases de datos antes de continuar.</p> | 
+| <p>JET_errLogSectorSizeMismatchDatabasesConsistent<br />-547</p> | <p>Las bases de datos se han recuperado, pero el tamaño del sector del archivo de registro (que se usa durante la recuperación) no coincide con el tamaño del sector del volumen actual.</p> | 
+| <p>JET_errLogSequenceEndDatabasesConsistent<br />-548</p> | <p>Se han recuperado las bases de datos, pero se han usado todas las generaciones de registros posibles de la secuencia actual. Todos los archivos de registro y el archivo de punto de comprobación deben eliminarse y se debe realizar una copia de seguridad de las bases de datos antes de continuar.</p> | 
 | <p>JET_errStreamingDataNotLogged<br />-549</p> | <p>Se ha intentado reproducir una operación de archivo de streaming en la que no se registraron los datos. Esto probablemente se debe a un intento de revertir con el registro circular habilitado.</p> | 
 | <p>JET_errDatabaseDirtyShutdown<br />-550</p> | <p>La base de datos no se ha apagado correctamente. Primero se debe ejecutar una recuperación para completar correctamente las operaciones de base de datos del cierre anterior.</p> | 
 | <p>JET_errDatabaseInconsistent<br />JET_errDatabaseDirtyShutdown</p> | <p>Este error está obsoleto y se ha reemplazado por JET_errDatabaseDirtyShutdown.</p> | 
-| <p>JET_errConsistentTimeMismatch<br />-551</p> | <p>La última hora coherente para la base de datos no ha coincidido.</p> | 
+| <p>JET_errConsistentTimeMismatch<br />-551</p> | <p>No se ha coincidente la última hora coherente para la base de datos.</p> | 
 | <p>JET_errDatabasePatchFileMismatch<br />-552</p> | <p>El archivo de revisión de base de datos no se genera a partir de esta copia de seguridad.</p> | 
 | <p>JET_errEndingRestoreLogTooLow<br />-553</p> | <p>El número de registro inicial es demasiado bajo para la restauración.</p> | 
 | <p>JET_errStartingRestoreLogTooHigh<br />-554</p> | <p>El número de registro inicial es demasiado alto para la restauración.</p> | 
 | <p>JET_errGivenLogFileHasBadSignature<br />-555</p> | <p>El archivo de registro de restauración tiene una firma no válida.</p> | 
 | <p>JET_errGivenLogFileIsNotContiguous<br />-556</p> | <p>El archivo de registro de restauración no es contiguo.</p> | 
 | <p>JET_errMissingRestoreLogFiles<br />-557</p> | <p>Faltan algunos archivos de registro de restauración.</p> | 
-| <p>JET_errMissingFullBackup<br />-560</p> | <p>La base de datos perdió una copia de seguridad completa anterior antes de intentar realizar una copia de seguridad incremental.</p> | 
+| <p>JET_errMissingFullBackup<br />-560</p> | <p>La base de datos omitía una copia de seguridad completa anterior antes de intentar realizar una copia de seguridad incremental.</p> | 
 | <p>JET_errBadBackupDatabaseSize<br />-561</p> | <p>El tamaño de la base de datos de copia de seguridad no es un múltiplo del tamaño de página de la base de datos.</p> | 
 | <p>JET_errDatabaseAlreadyUpgraded<br />-562</p> | <p>El intento actual de actualizar una base de datos se ha detenido porque la base de datos ya está actualizada.</p> | 
-| <p>JET_errDatabaseIncompleteUpgrade<br />-563</p> | <p>La base de datos solo se convirtió parcialmente al formato actual. La base de datos debe restaurarse a partir de la copia de seguridad.</p> | 
+| <p>JET_errDatabaseIncompleteUpgrade<br />-563</p> | <p>La base de datos solo se ha convertido parcialmente al formato actual. La base de datos debe restaurarse a partir de la copia de seguridad.</p> | 
 | <p>JET_errMissingCurrentLogFiles<br />-565</p> | <p>Faltan algunos archivos de registro actuales para la restauración continua.</p> | 
 | <p>JET_errDbTimeTooOld<br />-566</p> | <p>El valor dbtime de una página es menor que dbtimeBefore que se encuentra en el registro.</p> | 
 | <p>JET_errDbTimeTooNew<br />-567</p> | <p>El dbtime de una página es anterior al dbtimeBefore que se encuentra en el registro.</p> | 
@@ -207,7 +207,7 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errOutOfBuffers<br />-1014</p> | <p>La base de datos está fuera de los búferes de página.</p> | 
 | <p>JET_errTooManyIndexes<br />-1015</p> | <p>Hay demasiados índices.</p> | 
 | <p>JET_errTooManyKeys<br />-1016</p> | <p>Hay demasiadas columnas en un índice.</p> | 
-| <p>JET_errRecordDeleted<br />-1017</p> | <p>Se ha eliminado el registro.</p> | 
+| <p>JET_errRecordDeleted<br />-1017</p> | <p>El registro se ha eliminado.</p> | 
 | <p>JET_errReadVerifyFailure<br />-1018</p> | <p>Hay un error de suma de comprobación en una página de base de datos.</p> | 
 | <p>JET_errPageNotInitialized<br />-1019</p> | <p>Hay una página de base de datos en blanco.</p> | 
 | <p>JET_errOutOfFileHandles<br />-1020</p> | <p>No hay identificadores de archivo.</p> | 
@@ -272,8 +272,8 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errRecordTooBigForBackwardCompatibility<br />-1112</p> | <p>El registro sería demasiado grande si se representa en un formato de base de datos de una versión anterior de Jet.</p> | 
 | <p>JET_errCannotMaterializeForwardOnlySort<br />-1113</p> | <p>No se pudo crear la tabla temporal debido a parámetros que entren en conflicto con JET_bitTTForwardOnly.</p> | 
 | <p>JET_errSesidTableIdMismatch<br />-1114</p> | <p>El identificador de sesión no se puede usar con el identificador de tabla porque no se usó para crearlo.</p> | 
-| <p>JET_errInvalidInstance<br />-1115</p> | <p>El identificador de instancia no es válido o hace referencia a una instancia que se ha apagado.</p> | 
-| <p>JET_errReadLostFlushVerifyFailure<br />-1119</p> | <p>La página de base de datos leída desde el disco tenía una escritura anterior no representada en la página. Disponible en Windows 8 y versiones posteriores para el cliente, y Windows Server 2012 y versiones posteriores para el servidor.</p> | 
+| <p>JET_errInvalidInstance<br />-1115</p> | <p>El identificador de instancia no es válido o hace referencia a una instancia que se ha cerrado.</p> | 
+| <p>JET_errReadLostFlushVerifyFailure<br />-1119</p> | <p>La página de base de datos leía desde el disco tenía una escritura anterior no representada en la página. Disponible en Windows 8 y versiones posteriores para el cliente, y Windows Server 2012 y versiones posteriores para el servidor.</p> | 
 | <p>JET_errDatabaseDuplicate<br />-1201</p> | <p>La base de datos ya existe.</p> | 
 | <p>JET_errDatabaseInUse<br />-1202</p> | <p>Base de datos en uso.</p> | 
 | <p>JET_errDatabaseNotFound<br />-1203</p> | <p>No hay ninguna base de datos de este tipo.</p> | 
@@ -283,41 +283,41 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errDatabaseLocked<br />-1207</p> | <p>La base de datos está bloqueada exclusivamente.</p> | 
 | <p>JET_errCannotDisableVersioning<br />-1208</p> | <p>No se puede deshabilitar el control de versiones de esta base de datos.</p> | 
 | <p>JET_errInvalidDatabaseVersion<br />-1209</p> | <p>El motor de base de datos no es compatible con la base de datos.</p> | 
-| <p>JET_errDatabase200Format<br />-1210</p> | <p>La base de datos tiene un formato anterior (200). Este error lo devuelve <a href="gg294068(v=exchg.10).md">JetInit</a> <a href="gg269337(v=exchg.10).md">si JET_paramCheckFormatWhenOpenFail</a> está establecido. Windows Solo cliente NT.</p> | 
-| <p>JET_errDatabase400Format<br />-1211</p> | <p>La base de datos tiene un formato anterior (400). Este error lo devuelve <a href="gg294068(v=exchg.10).md">JetInit</a> <a href="gg269337(v=exchg.10).md">si JET_paramCheckFormatWhenOpenFail</a> está establecido. Windows Solo cliente NT.</p> | 
-| <p>JET_errDatabase500Format<br />-1212</p> | <p>La base de datos tiene un formato anterior (500). Este error lo devuelve <a href="gg294068(v=exchg.10).md">JetInit</a> <a href="gg269337(v=exchg.10).md">si JET_paramCheckFormatWhenOpenFail</a> está establecido. Windows Solo cliente NT.</p> | 
+| <p>JET_errDatabase200Format<br />-1210</p> | <p>La base de datos está en un formato anterior (200). JetInit devuelve <a href="gg294068(v=exchg.10).md"></a> este error <a href="gg269337(v=exchg.10).md">si JET_paramCheckFormatWhenOpenFail</a> está establecido. Windows Solo cliente NT.</p> | 
+| <p>JET_errDatabase400Format<br />-1211</p> | <p>La base de datos está en un formato anterior (400). JetInit devuelve <a href="gg294068(v=exchg.10).md"></a> este error <a href="gg269337(v=exchg.10).md">si JET_paramCheckFormatWhenOpenFail</a> está establecido. Windows Solo cliente NT.</p> | 
+| <p>JET_errDatabase500Format<br />-1212</p> | <p>La base de datos tiene un formato anterior (500). JetInit devuelve <a href="gg294068(v=exchg.10).md"></a> este error <a href="gg269337(v=exchg.10).md">si JET_paramCheckFormatWhenOpenFail</a> está establecido. Windows Solo cliente NT.</p> | 
 | <p>JET_errPageSizeMismatch<br />-1213</p> | <p>El tamaño de página de la base de datos no coincide con el motor.</p> | 
 | <p>JET_errTooManyInstances<br />-1214</p> | <p>No se pueden iniciar más instancias de base de datos.</p> | 
 | <p>JET_errDatabaseSharingViolation<br />-1215</p> | <p>Una instancia de base de datos diferente usa esta base de datos.</p> | 
 | <p>JET_errAttachedDatabaseMismatch<br />-1216</p> | <p>Se ha detectado un dato adjunto pendiente de la base de datos al principio o al final de la recuperación, pero falta la base de datos o no coincide con la información de los datos adjuntos.</p> | 
 | <p>JET_errDatabaseInvalidPath<br />-1217</p> | <p>La ruta de acceso especificada al archivo de base de datos no es válida.</p> | 
 | <p>JET_errDatabaseIdInUse<br />-1218</p> | <p>A una base de datos se le asigna un identificador que ya está en uso.</p> | 
-| <p>JET_errForceDetachNotAllowed<br />-1219</p> | <p>La desasoción de fuerza solo se permite después de que se detuvo la desasoción normal debido a un error.</p> | 
+| <p>JET_errForceDetachNotAllowed<br />-1219</p> | <p>La desasoción por fuerza solo se permite después de que se detuvo la desasoción normal debido a un error.</p> | 
 | <p>JET_errCatalogCorrupted<br />-1220</p> | <p>Se detectaron daños en el catálogo.</p> | 
 | <p>JET_errPartiallyAttachedDB<br />-1221</p> | <p>La base de datos solo está parcialmente adjuntada y no se puede completar la operación de asociación.</p> | 
 | <p>JET_errDatabaseSignInUse<br />-1222</p> | <p>La base de datos con la misma firma ya está en uso.</p> | 
 | <p>JET_errDatabaseCorruptedNoRepair<br />-1224</p> | <p>La base de datos está dañada, pero no se permite una reparación.</p> | 
-| <p>JET_errInvalidCreateDbVersion<br />-1225</p> | <p>El motor de base de datos intentó reproducir una operación Crear base de datos desde el registro de transacciones, pero no se pudo realizar debido a una versión incompatible de esa operación.</p> | 
+| <p>JET_errInvalidCreateDbVersion<br />-1225</p> | <p>El motor de base de datos intentó reproducir una operación Crear base de datos del registro de transacciones, pero no se pudo realizar debido a una versión incompatible de esa operación.</p> | 
 | <p>JET_errTableLocked<br />-1302</p> | <p>La tabla está bloqueada exclusivamente.</p> | 
 | <p>JET_errTableDuplicate<br />-1303</p> | <p>La tabla ya existe.</p> | 
 | <p>JET_errTableInUse<br />-1304</p> | <p>La tabla está en uso y no se puede bloquear.</p> | 
 | <p>JET_errObjectNotFound<br />-1305</p> | <p>No hay ninguna tabla u objeto de este tipo.</p> | 
-| <p>JET_errDensityInvalid<br />-1307</p> | <p>Hay una densidad de índice o archivo no buena.</p> | 
+| <p>JET_errDensityInvalid<br />-1307</p> | <p>Hay una densidad de índice o archivo no es buena.</p> | 
 | <p>JET_errTableNotEmpty<br />-1308</p> | <p>La tabla no está vacía.</p> | 
 | <p>JET_errInvalidTableId<br />-1310</p> | <p>El identificador de tabla no es válido.</p> | 
 | <p>JET_errTooManyOpenTables<br />-1311</p> | <p>No se pueden abrir más tablas, incluso después de que se haya ejecutado la tarea de limpieza interna.</p> | 
 | <p>JET_errIllegalOperation<br />-1312</p> | <p>La operación no se admite en la tabla.</p> | 
 | <p>JET_errTooManyOpenTablesAndCleanupTimedOut<br />-1313</p> | <p>No se pueden abrir más tablas porque no se pudo completar el intento de limpieza.</p> | 
-| <p>JET_errObjectDuplicate<br />-1314</p> | <p>El nombre de la tabla u objeto está en uso.</p> | 
+| <p>JET_errObjectDuplicate<br />-1314</p> | <p>El nombre de la tabla o del objeto está en uso.</p> | 
 | <p>JET_errInvalidObject<br />-1316</p> | <p>El objeto no es válido para la operación.</p> | 
-| <p>JET_errCannotDeleteTempTable<br />-1317</p> | <p><a href="gg294087(v=exchg.10).md">JetCloseTable</a> debe usarse en lugar de <a href="gg294128(v=exchg.10).md">JetDeleteTable</a> para eliminar una tabla temporal.</p> | 
-| <p>JET_errCannotDeleteSystemTable<br />-1318</p> | <p>Se ha intentado eliminar una tabla del sistema de forma no ilegal.</p> | 
+| <p>JET_errCannotDeleteTempTable<br />-1317</p> | <p><a href="gg294087(v=exchg.10).md">JetCloseTable debe</a> usarse en lugar de <a href="gg294128(v=exchg.10).md">JetDeleteTable</a> para eliminar una tabla temporal.</p> | 
+| <p>JET_errCannotDeleteSystemTable<br />-1318</p> | <p>Hubo un intento no ilegal de eliminar una tabla del sistema.</p> | 
 | <p>JET_errCannotDeleteTemplateTable<br />-1319</p> | <p>Se ha intentado eliminar una tabla de plantillas de forma no ilegal.</p> | 
 | <p>JET_errExclusiveTableLockRequired<br />-1322</p> | <p>Debe haber un bloqueo exclusivo en la tabla.</p> | 
 | <p>JET_errFixedDDL<br />-1323</p> | <p>Las operaciones DDL están prohibidas en esta tabla.</p> | 
 | <p>JET_errFixedInheritedDDL<br />-1324</p> | <p>En una tabla derivada, las operaciones DDL están prohibidas en la parte heredada del DDL.</p> | 
 | <p>JET_errCannotNestDDL<br />-1325</p> | <p>Actualmente no se admite el anidamiento del DDL jerárquico.</p> | 
-| <p>JET_errDDLNotInheritable<br />-1326</p> | <p>Se intentó heredar un DDL de una tabla que no está marcada como tabla de plantilla.</p> | 
+| <p>JET_errDDLNotInheritable<br />-1326</p> | <p>Se intentó heredar un DDL de una tabla que no está marcada como una tabla de plantilla.</p> | 
 | <p>JET_errInvalidSettings<br />-1328</p> | <p>Los parámetros del sistema se han establecido incorrectamente.</p> | 
 | <p>JET_errClientRequestToStopJetService<br />-1329</p> | <p>El cliente ha solicitado que se detenga el servicio.</p> | 
 | <p>JET_errCannotAddFixedVarColumnToDerivedTable<br />-1330</p> | <p>La tabla Template se creó con la marca NoFixedVarColumnsInDerivedTables establecida.</p> | 
@@ -326,11 +326,11 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errIndexDuplicate<br />-1403</p> | <p>El índice ya está definido.</p> | 
 | <p>JET_errIndexNotFound<br />-1404</p> | <p>No hay ningún índice de este tipo.</p> | 
 | <p>JET_errIndexMustStay<br />-1405</p> | <p>No se puede eliminar el índice clúster.</p> | 
-| <p>JET_errIndexInvalidDef<br />-1406</p> | <p>La definición de índice no es válida.</p> | 
+| <p>JET_errIndexInvalidDef<br />-1406</p> | <p>La definición del índice no es válida.</p> | 
 | <p>JET_errInvalidCreateIndex<br />-1409</p> | <p>La creación de la descripción del índice no era válida.</p> | 
 | <p>JET_errTooManyOpenIndexes<br />-1410</p> | <p>La base de datos está fuera de los bloques de descripción del índice.</p> | 
 | <p>JET_errMultiValuedIndexViolation<br />-1411</p> | <p>Se han generado claves de índice entre registros no únicas para un índice con varios valores.</p> | 
-| <p>JET_errIndexBuildCorrupted<br />-1412</p> | <p>Índice secundario que refleja correctamente el error de compilación del índice principal.</p> | 
+| <p>JET_errIndexBuildCorrupted<br />-1412</p> | <p>Índice secundario que refleja correctamente que el índice principal no se pudo compilar.</p> | 
 | <p>JET_errPrimaryIndexCorrupted<br />-1413</p> | <p>El índice principal está dañado y la base de datos se debe desfragmentar.</p> | 
 | <p>JET_errSecondaryIndexCorrupted<br />-1414</p> | <p>El índice secundario está dañado y la base de datos se debe desfragmentar.</p> | 
 | <p>JET_errInvalidIndexId<br />-1416</p> | <p>El identificador de índice no es válido.</p> | 
@@ -341,7 +341,7 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errIndexTuplesVarSegMacNotAllowed<br />-1434</p> | <p>El índice de tupla no permite establecer cbVarSegMac.</p> | 
 | <p>JET_errIndexTuplesInvalidLimits<br />-1435</p> | <p>La longitud mínima o máxima de la tupla o el número máximo de caracteres especificados para un índice no son válidos.</p> | 
 | <p>JET_errIndexTuplesCannotRetrieveFromIndex<br />-1436</p> | <p>No se puede llamar a <a href="gg269198(v=exchg.10).md">JetRetrieveColumn</a> con la JET_bitRetrieveFromIndex establecida al recuperar una columna en un índice de tupla.</p> | 
-| <p>JET_errIndexTuplesKeyTooSmall<br />-1437</p> | <p>La clave especificada no cumple la longitud mínima de la tupla.</p> | 
+| <p>JET_errIndexTuplesKeyTooSmall<br />-1437</p> | <p>La clave especificada no cumple la longitud mínima de tupla.</p> | 
 | <p>JET_errColumnLong<br />-1501</p> | <p>El valor de la columna es long.</p> | 
 | <p>JET_errColumnNoChunk<br />-1502</p> | <p>No hay ningún fragmento de este tipo en un valor largo.</p> | 
 | <p>JET_errColumnDoesNotFit<br />-1503</p> | <p>El campo no cabe en el registro.</p> | 
@@ -371,7 +371,7 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errRecordNoCopy -1602</p> | <p>No hay ningún búfer de trabajo.</p> | 
 | <p>JET_errNoCurrentRecord -1603</p> | <p>No hay ningún registro actual.</p> | 
 | <p>JET_errRecordPrimaryChanged -1604</p> | <p>Es posible que la clave principal no cambie.</p> | 
-| <p>JET_errKeyDuplicate -1605</p> | <p>Hay una clave duplicada no es posible.</p> | 
+| <p>JET_errKeyDuplicate -1605</p> | <p>Hay una clave duplicada no ilegal.</p> | 
 | <p>JET_errAlreadyPrepared -1607</p> | <p>Se intentó actualizar un registro mientras ya había una actualización de registros en curso.</p> | 
 | <p>JET_errKeyNotMade -1608</p> | <p>No se realizó una llamada <a href="gg269329(v=exchg.10).md">a JetMakeKey.</a></p> | 
 | <p>JET_errUpdateNotPrepared -1609</p> | <p>No se realizó una llamada <a href="gg269339(v=exchg.10).md">a JetPrepareUpdate</a>.</p> | 
@@ -409,25 +409,21 @@ Un [JET_ERR](./jet-err.md) que sea menor que cero debe interpretarse como un err
 | <p>JET_errLSNotSet -3002</p> | <p>Se intentó recuperar el almacenamiento local de un objeto que no tenía establecido.</p> | 
 | <p>JET_errFileIOSparse -4000</p> | <p>Error en una operación de E/S porque se intentó en una región sin asignar de un archivo.</p> | 
 | <p>JET_errFileIOBeyondEOF -4001</p> | <p>Se emitió una lectura en una ubicación más allá del EOF (las escrituras expandirán el archivo).</p> | 
-| <p>JET_errFileIOAbort -4002</p> | <p>Esta marca indica al JET_ABORTRETRYFAILCALLBACK que anule la E/S especificada.</p> | 
+| <p>JET_errFileIOAbort -4002</p> | <p>Esta marca indica al autor JET_ABORTRETRYFAILCALLBACK que anule la E/S especificada.</p> | 
 | <p>JET_errFileIORetry -4003</p> | <p>Esta marca indica al autor JET_ABORTRETRYFAILCALLBACK que vuelva a intentar la E/S especificada.</p> | 
-| <p>JET_errFileIOFail -4004</p> | <p>Esta marca indica al JET_ABORTRETRYFAILCALLBACK llamador que no se puede usar la E/S especificada.</p> | 
+| <p>JET_errFileIOFail -4004</p> | <p>Esta marca indica al autor JET_ABORTRETRYFAILCALLBACK que no se haya producido un error en la E/S especificada.</p> | 
 | <p>JET_errFileCompressed -4005</p> | <p>El acceso de lectura y escritura no se admite en archivos comprimidos.</p> | 
 
 
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
 En general, un valor mayor que cero debe interpretarse como una advertencia, un valor de cero debe interpretarse como correcto y un valor menor que cero debe interpretarse como un error. Una aplicación no debe confiar en ningún otro patrón de estos valores, como los intervalos de valores.
 
 ### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

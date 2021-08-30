@@ -4,7 +4,7 @@ MS-HAID: vspixengine.PixEngineTextureFormatDesc
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Estructura PixEngineTextureFormatDesc
+title: Estructura DesenlazingTextureFormatDesc
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 685DC746-544D-4ACB-AB1F-9FA62C5CF416
@@ -17,14 +17,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 960186f0c28be88805c1df65f1a517c4ce4a4c64
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b868c1b248d2d2a37422acbb5cfe1ae3feede804
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997889"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122622301"
 ---
-# <a name="span-idvspixenginepixenginetextureformatdescspanpixenginetextureformatdesc-structure"></a><span id="vspixengine.pixenginetextureformatdesc"></span>Estructura PixEngineTextureFormatDesc
+# <a name="span-idvspixenginepixenginetextureformatdescspanpixenginetextureformatdesc-structure"></a><span id="vspixengine.pixenginetextureformatdesc"></span>Estructura DesenlazingTextureFormatDesc
 
 Representa una descripción de un formato de textura.
 
@@ -38,38 +38,38 @@ Representa una descripción de un formato de textura.
 ## <a name="members"></a>Miembros
 
 **dxgiFormat**  
-Formato de DXGI de la textura.
+Formato DXGI de la textura.
 
 **dataFormat**  
 Formato de datos de la textura.
 
 **blockBytes**  
-El número de bytes en un bloque de datos.
+Número de bytes de un bloque de datos.
 
 **blockHeight**  
-El alto (número de muestras en el eje Y) del bloque.
+Alto (ejemplos de número en el eje Y) del bloque.
 
 **blockWidth**  
-El ancho (número de muestras en el eje X) del bloque.
+Ancho (número de muestras en el eje X) del bloque.
 
 **channelX**  
-Describe las propiedades del canal X. Para obtener más información, vea la estructura PixEngineChannelDescription.
+Describe las propiedades del canal X. Para obtener más información, vea la estructura PixelEngineChannelDescription.
 
-**canaly**  
-Describe las propiedades del canal Y. Para obtener más información, vea la estructura PixEngineChannelDescription.
+**channelY**  
+Describe las propiedades del canal Y. Para obtener más información, vea la estructura PixelEngineChannelDescription.
 
 **channelZ**  
-Describe las propiedades del canal Z. Para obtener más información, vea la estructura PixEngineChannelDescription.
+Describe las propiedades del canal Z. Para obtener más información, vea la estructura PixelEngineChannelDescription.
 
 **channelW**  
-Describe las propiedades del canal W. Para obtener más información, vea la estructura PixEngineChannelDescription.
+Describe las propiedades del canal W. Para obtener más información, vea la estructura PixelEngineChannelDescription.
 
-**swizzle**  
-Describe la swizzle (intercambio de canales) aplicada al ejemplo.
+**Swizzle**  
+Describe el swzzle (intercambio de canales) aplicado al ejemplo.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

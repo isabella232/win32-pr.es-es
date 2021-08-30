@@ -7,12 +7,12 @@ MSHAttr:
 title: PurposeGroups
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3b158938e1a41f6ab8d3f1df0cae6a2166bc21c
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: fa1daa1b6b1985ddbc94eb302adf15a1b88e2d8c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122630941"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122879731"
 ---
 # <a name="span-idwwan_profile_v4element_purposegroupsspanpurposegroups"></a><span id="WWAN_profile_v4.element_PurposeGroups"></span>PurposeGroups
 
@@ -24,10 +24,10 @@ Un perfil se puede enumerar en varios grupos.
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
-[<MBNProfileExt>](element-mbnprofileext.md)  
-**<PurposeGroups>**
+[&lt;MBNProfileExt&gt;](element-mbnprofileext.md)  
+**&lt;PurposeGroups&gt;**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <PurposeGroups>
@@ -46,7 +46,7 @@ Un perfil se puede enumerar en varios grupos.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
 
-Ninguna.
+Ninguno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios
 

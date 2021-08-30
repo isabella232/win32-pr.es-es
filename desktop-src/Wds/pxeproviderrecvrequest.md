@@ -1,9 +1,9 @@
 ---
 title: Función de devolución de llamada PxeProviderRecvRequest
-description: Se le llama cuando se recibe una solicitud de un cliente.
+description: Se llama cuando se recibe una solicitud de un cliente.
 ms.assetid: 704972d5-177a-490e-881f-d2b3025babda
 keywords:
-- Función de devolución de llamada PxeProviderRecvRequest servicios de implementación de Windows
+- Función de devolución de llamada PxeProviderRecvRequest Windows Deployment Services
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a173c6ba356d98dfd44beb64033f491b9c200d58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6dc2ef36c26e667e55870d38f450891e9e91134c297d09ba12157452e4d01442
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098655"
 ---
 # <a name="pxeproviderrecvrequest-callback-function"></a>Función de devolución de llamada PxeProviderRecvRequest
 
-Se le llama cuando se recibe una solicitud de un cliente. Esta función se registra mediante una llamada a la función [**PxeRegisterCallback**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeregistercallback) con el parámetro *CallbackType* establecido en **\_ \_ \_ solicitud de devolución de llamada de PXE**.
+Se llama cuando se recibe una solicitud de un cliente. Esta función se registra mediante una llamada a [**la función PxeRegisterCallback**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeregistercallback) con el parámetro *CallbackType* establecido en **PXE \_ CALLBACK \_ RECV \_ REQUEST**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,42 +45,42 @@ DWORD PXEAPI PxeProviderRecvRequest(
 
 <dl> <dt>
 
-*hClientRequest* \[ de\]
+*hClientRequest* \[ En\]
 </dt> <dd>
 
-Identificador de una solicitud recibida de un cliente.
+Controlar una solicitud recibida de un cliente.
 
 </dd> <dt>
 
-*pPacket* \[ de\]
+*pPacket* \[ En\]
 </dt> <dd>
 
 Puntero al búfer de memoria que contiene el paquete recibido.
 
 </dd> <dt>
 
-*uPacketLen* \[ de\]
+*uPacketLen* \[ En\]
 </dt> <dd>
 
-Longitud, en bytes, del búfer al que apunta el parámetro *pPacket* .
+Longitud, en bytes, del búfer al que apunta el *parámetro pPacket.*
 
 </dd> <dt>
 
-*pLocalAddress* \[ de\]
+*pLocalAddress* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ direcciones de PXE**](/windows/win32/api/wdspxe/ns-wdspxe-pxe_address) que contiene la dirección local en la que se recibió el paquete.
+Puntero a una [**estructura DIRECCIÓN \_ PXE**](/windows/win32/api/wdspxe/ns-wdspxe-pxe_address) que contiene la dirección local en la que se recibió el paquete.
 
 </dd> <dt>
 
-*pRemoteAddress* \[ de\]
+*pRemoteAddress* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ direcciones de PXE**](/windows/win32/api/wdspxe/ns-wdspxe-pxe_address) que contiene la dirección de origen del paquete.
+Puntero a una [**estructura DIRECCIÓN \_ PXE**](/windows/win32/api/wdspxe/ns-wdspxe-pxe_address) que contiene la dirección de origen del paquete.
 
 </dd> <dt>
 
-*pAction* \[ enuncia\]
+*pAction* \[ out\]
 </dt> <dd>
 
 Especifica la acción que debe realizar el sistema.
@@ -89,10 +89,10 @@ Especifica la acción que debe realizar el sistema.
 
 | Value                                                                                                                                                                                                                       | Significado                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PXE_BA_NBP"></span><span id="pxe_ba_nbp"></span><dl> <dt>**PXE \_ BA \_ NBP**</dt> <dt>1</dt> </dl>                | El proveedor respondió a un cliente con un paquete de respuesta DHCP estándar que contiene una ruta de acceso al programa de arranque de red. Devolver esta acción significa que el proveedor completó correctamente la solicitud de cliente mediante una llamada a la función [**PxeSendReply**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxesendreply) al menos una vez.<br/>                        |
-| <span id="PXE_BA_CUSTOM"></span><span id="pxe_ba_custom"></span><dl> <dt>**PXE \_ BA \_ personalizado**</dt> <dt>2</dt> </dl>       | El proveedor respondió a un cliente mediante una respuesta personalizada que no se ajusta a las especificaciones de DHCP. Devolver esta acción significa que el proveedor completó correctamente la solicitud de cliente mediante una llamada a la función [**PxeSendReply**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxesendreply) al menos una vez.<br/>                                      |
-| <span id="PXE_BA_IGNORE"></span><span id="pxe_ba_ignore"></span><dl> <dt>**PXE \_ BA \_ omitir**</dt> <dt>3</dt> </dl>       | El proveedor no desea atender la solicitud del cliente y la solicitud no debe pasarse al siguiente proveedor. Se liberan todos los recursos asociados a la solicitud del cliente y se omite la solicitud del cliente. Los proveedores también pueden usar este valor si reconocen el cliente pero la solicitud tiene un formato incorrecto.<br/> |
-| <span id="PXE_BA_REJECTED"></span><span id="pxe_ba_rejected"></span><dl> <dt>**PXE \_ BA \_ rechazado**</dt> <dt>4</dt> </dl> | El proveedor no desea atender la solicitud del cliente. El sistema pasa la solicitud al siguiente proveedor de la lista de proveedores registrados. Si este era el último proveedor de la lista, se liberarán todos los recursos asociados a la solicitud del cliente y se omitirá la solicitud del cliente.<br/>                     |
+| <span id="PXE_BA_NBP"></span><span id="pxe_ba_nbp"></span><dl> <dt>**PXE \_ BA \_ NBP**</dt> <dt>1</dt> </dl>                | El proveedor respondió a un cliente con un paquete de respuesta DHCP estándar que contiene una ruta de acceso al programa de arranque de red. Devolver esta acción significa que el proveedor completó correctamente la solicitud de cliente mediante una llamada a la [**función PxeSendReply**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxesendreply) al menos una vez.<br/>                        |
+| <span id="PXE_BA_CUSTOM"></span><span id="pxe_ba_custom"></span><dl> <dt>**PXE \_ BA \_ CUSTOM**</dt> <dt>2</dt> </dl>       | El proveedor respondió a un cliente mediante una respuesta personalizada que no se ajusta a las especificaciones de DHCP. Devolver esta acción significa que el proveedor completó correctamente la solicitud de cliente mediante una llamada a la [**función PxeSendReply**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxesendreply) al menos una vez.<br/>                                      |
+| <span id="PXE_BA_IGNORE"></span><span id="pxe_ba_ignore"></span><dl> <dt>**PXE \_ BA \_ IGNORE**</dt> <dt>3</dt> </dl>       | El proveedor no quiere dar servicio a la solicitud de cliente y la solicitud no debe pasarse al proveedor siguiente. Se liberan todos los recursos asociados a la solicitud de cliente y se omite la solicitud de cliente. Los proveedores también pueden usar este valor si reconocen el cliente pero la solicitud tiene un formato mal.<br/> |
+| <span id="PXE_BA_REJECTED"></span><span id="pxe_ba_rejected"></span><dl> <dt>**PXE \_ BA \_ REJECTED**</dt> <dt>4</dt> </dl> | El proveedor no quiere dar servicio a la solicitud de cliente. El sistema pasa la solicitud al siguiente proveedor de la lista de proveedores registrados. Si se trata del último proveedor de la lista, se liberan todos los recursos asociados a la solicitud de cliente y se omite la solicitud de cliente.<br/>                     |
 
 
 
@@ -100,20 +100,20 @@ Especifica la acción que debe realizar el sistema.
 
 </dd> <dt>
 
-*pContext* \[ de\]
+*pContext* \[ En\]
 </dt> <dd>
 
-Valor de contexto que se pasa a la función [**PxeRegisterCallback**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeregistercallback) .
+Valor de contexto pasado a la [**función PxeRegisterCallback.**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeregistercallback)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el proveedor ha procesado correctamente la solicitud de cliente, la devolución de llamada debe devolver el **error \_ Success** y la **\_ \_ acción de arranque de PXE** a la que apunta el parámetro *pAction* contiene la acción de arranque adecuada para esta solicitud. Si el proveedor va a procesar la solicitud de cliente de forma asincrónica, la devolución de llamada debe devolver la **\_ e/s de error \_ pendiente** y llamar a la función [**PxeAsyncRecvDone**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeasyncrecvdone) cuando se haya procesado la solicitud de cliente. En caso de error, se debe devolver un código de error adecuado y el sistema continuará como si se hubiera especificado la acción de arranque de la operación **PXE \_ BA \_ rechazada** .
+Si el proveedor procesó correctamente la solicitud de cliente, la devolución de llamada debe devolver **ERROR \_ SUCCESS** y la ACCIÓN DE **\_ ARRANQUE \_ PXE** a la que apunta el *parámetro pAction* contiene la acción de arranque adecuada para esta solicitud. Si el proveedor procesará la solicitud de cliente de forma asincrónica, la devolución de llamada debe devolver **ERROR \_ IO \_ PENDING** y llamar a la [**función PxeAsyncRecvDone**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeasyncrecvdone) cuando se haya procesado la solicitud de cliente. En caso de error, se debe devolver un código de error adecuado y el sistema continuará como si se hubiera especificado la acción de arranque **PXE \_ BA \_ REJECTED.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El tipo de paquetes que detecta un proveedor se puede cambiar con la función [**PxeProviderSetAttribute**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeprovidersetattribute) .
+El tipo de paquetes que ve un proveedor se puede cambiar con la [**función PxeProviderSetAttribute.**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeprovidersetattribute)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,7 +122,7 @@ El tipo de paquetes que detecta un proveedor se puede cambiar con la función [*
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008, Windows Server 2003 con \[ solo aplicaciones de escritorio de SP2\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Server 2008, Windows Server 2003 solo con aplicaciones de escritorio sp2 \[\]<br/> |
 
 
 
@@ -130,7 +130,7 @@ El tipo de paquetes que detecta un proveedor se puede cambiar con la función [*
 
 <dl> <dt>
 
-[Funciones de servidor de servicios de implementación de Windows](windows-deployment-services-server-functions.md)
+[Windows Funciones del servidor de Servicios de implementación](windows-deployment-services-server-functions.md)
 </dt> <dt>
 
 [**PxeRegisterCallback**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxeregistercallback)

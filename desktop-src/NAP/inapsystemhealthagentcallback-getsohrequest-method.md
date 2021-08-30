@@ -1,11 +1,11 @@
 ---
 title: Método INapSystemHealthAgentCallback GetSoHRequest (NapSystemHealthAgent.h)
-description: NapAgent llama a para consultar la solicitud soH del agente de mantenimiento del sistema.
+description: NapAgent llama a para consultar la solicitud de SoH del agente de mantenimiento del sistema.
 ms.assetid: 4161a3e7-2f7a-40d1-b973-47f991bba5d0
 keywords:
-- Método NAP de GetSoHRequest
+- Nap del método GetSoHRequest
 - Método NAP de GetSoHRequest, interfaz INapSystemHealthAgentCallback
-- INapSystemHealthAgentCallback interface NAP , GetSoHRequest method
+- Interfaz NAP de INapSystemHealthAgentCallback , método GetSoHRequest
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6c9203a782be34be66e84fa8238a678647a4359df8cde3408aa8de99e73fcce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 96b9770607685dbd69e115f4f18d646b6d552fae
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118133774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122884480"
 ---
 # <a name="inapsystemhealthagentcallbackgetsohrequest-method"></a>Método INapSystemHealthAgentCallback::GetSoHRequest
 
@@ -61,17 +61,17 @@ Puntero COM a un [**objeto INapSystemHealthAgentRequest**](inapsystemhealthagent
 | Código devuelto                                                                                                                      | Descripción                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                             | Indica que se completó correctamente.<br/>                                                                                                                      |
-| <dl> <dt>**HRESULT \_ DE \_ WIN32 (SERVIDOR RPC \_ S NO \_ \_ DISPONIBLE)**</dt> </dl> | Si la implementación devuelve este código, NapAgent quita sha de la lista de SHA enlazado y vacía su entrada de caché.<br/> |
+| <dl> <dt>**HRESULT \_ DE \_ WIN32 (SERVIDOR RPC \_ NO \_ \_ DISPONIBLE)**</dt> </dl> | Si la implementación devuelve este código, NapAgent quita el SHA de la lista bound-SHA y vacía su entrada de caché.<br/> |
 
 
 
  
 
-Cuando la implementación devuelve cualquier valor devuelto (excepto **HRESULT \_ FROM \_ WIN32(RPC \_ S SERVER \_ \_ UNAVAILABLE)**) , el sistema NAP crea y devuelve un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) al SHV correspondiente con los siguientes tipos y valores de atributo:
+Cuando la implementación devuelve cualquier valor devuelto (excepto **HRESULT \_ FROM \_ WIN32(RPC \_ S SERVER \_ \_ UNAVAILABLE)**) , el sistema NAP crea y devuelve un [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) a la SHV correspondiente con los siguientes tipos y valores de atributo:
 
--   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
+-   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) =  &lt; Id&gt;
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientComponent**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
--   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md) = <código de error>
+-   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  &lt; error-code&gt;
 
 ## <a name="remarks"></a>Comentarios
 
@@ -79,23 +79,23 @@ El sistema NAP declara este método de devolución de llamada y lo va a implemen
 
 Este método debe procesar la solicitud y devolver inmediatamente. Retrasar la devolución de este método afecta negativamente al rendimiento y la capacidad de respuesta del sistema, y puede hacer que otras partes del sistema operativo se quejen del tiempo de espera.
 
-La supervisión del estado de mantenimiento no debe realizarse como parte de esta llamada, especialmente si el cálculo es intensivo y tarda mucho tiempo. La supervisión del estado de mantenimiento y el cálculo de SoH deben realizarse en un subproceso o servicio independiente. La única función de este método debe ser establecer el SoH y la devolución de SHA.
+La supervisión del estado de mantenimiento no debe realizarse como parte de esta llamada, especialmente si el cálculo es intensivo y tarda mucho tiempo. La supervisión del estado de mantenimiento y el cálculo de SoH deben realizarse en un subproceso o servicio independiente. La única función de este método debe ser establecer el SoH de SHA y devolver.
 
 Si el SHA va a tardar mucho tiempo en generar un SoH, el SoH almacenado en caché debe devolverse a NapAgent. Si no hay ningún SoH almacenado en caché para devolver, sha debe devolver inmediatamente un SoH con los siguientes tipos y valores de atributo:
 
--   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
+-   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) =  &lt; Id&gt;
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientCommunication**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
 -   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **NAP \_ E NO CACHED \_ \_ \_ SOH**](nap-error-constants.md)
 
 Cuando se ha generado el SoH, sha debe llamar a [**INapSystemHealthAgentBinding::NotifySoHChange para**](inapsystemhealthagentbinding-notifysohchange-method.md) notificar al NapAgent el cambio de estado del sistema.
 
-NapAgent llama a este método para consultar el SoHRequest del agente de mantenimiento del sistema. Sha puede consultar el objeto [**INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) pasado para ver los parámetros que necesita para calcular soHRequest. Sha debe establecer el SoHRequest calculado en el objeto de solicitud. Sha no debe contener referencias al objeto de solicitud una vez completada esta llamada.
+NapAgent llama a este método para consultar el SoHRequest del agente de mantenimiento del sistema. Sha puede consultar el objeto [**INapSystemHealthAgentRequest**](inapsystemhealthagentrequest.md) pasado para los parámetros que necesita para calcular soHRequest. Sha debe establecer el SoHRequest calculado en el objeto de solicitud. Sha no debe contener referencias al objeto de solicitud una vez completada esta llamada.
 
-Cuando se llama a este método, si hay un SoH en la caché de NapAgent, se establece en el objeto de solicitud. Sha puede consultarlo mediante **GetSoHRequest.** Si sha no establece un soH nuevo, se usa el almacenado en caché.
+Cuando se llama a este método, si hay un SoH en la memoria caché de NapAgent, se establece en el objeto de solicitud. Sha puede consultarlo mediante **GetSoHRequest.** Si sha no establece un nuevo SoH, se usa el almacenado en caché.
 
-En el caso de las SHA sin enlazar registradas con el sistema, el sistema NAP construye y envía un SoHRequest al SHV correspondiente con los siguientes tipos y valores de atributo:
+En el caso de las SHA sin enlazar registradas en el sistema, el sistema NAP crea y envía un SoHRequest a la SHV correspondiente con los siguientes tipos de atributo y valores:
 
--   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md)= <id>
+-   [**sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) =  &lt; Id&gt;
 -   [**sohAttributeTypeFailureCategory**](sohattributetype-enum.md) =  [ **failureCategoryClientComponent**](/windows/win32/api/naptypes/ne-naptypes-failurecategory)
 -   [**sohAttributeTypeErrorCodes**](sohattributetype-enum.md)  =  [ **NAP \_ E NO \_ \_ INICIALIZADO**](nap-error-constants.md)
 
@@ -103,12 +103,12 @@ En el caso de las SHA sin enlazar registradas con el sistema, el sistema NAP con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
 
 
 

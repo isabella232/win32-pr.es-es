@@ -18,12 +18,12 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bd1e84b995485afd46119b78289c1cac23e19215
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.openlocfilehash: 570b3b94859db939c6f8a6944673f88dc47be9e6
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982438"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481341"
 ---
 # <a name="jetgetrecordposition-function"></a>Función JetGetRecordPosition
 
@@ -63,13 +63,13 @@ Tamaño de memoria asignado en *precpos*.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el [JET_ERR](./jet-err.md) de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
-| <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>Esta operación no se puede completar porque la instancia de , asociada a la sesión, encontró un error irreales. Es necesario revocar el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows 2000:</strong>  El sistema operativo Windows 2000 no devolverá este error.</p> | 
 | <p>JET_errInvalidParameter</p> | <p>El tamaño de la memoria asignada en <em>precpos</em> no es suficiente.</p> | 
@@ -84,22 +84,16 @@ Si se ejecuta correctamente, el número aproximado de entradas de índice que pr
 
 En caso de error, no se realiza ningún cambio en la memoria asignada en *precpos*.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Esta operación devuelve datos variables cuando las actualizaciones se producen continuamente en la tabla. Los cambios en los valores no siempre coincidirán con las expectativas en función del conocimiento de las actualizaciones, ya que los valores son aproximaciones basadas en las propiedades físicas del índice. El aislamiento transaccional no se aplica a las posiciones de **JetGetRecordPosition,** ya que los valores dependen de propiedades físicas del índice que no están aisladas de transacciones.
+Esta operación devuelve datos variables cuando las actualizaciones se producen continuamente en la tabla. Los cambios en los valores no siempre coincidirán con las expectativas en función del conocimiento de las actualizaciones, ya que los valores son aproximaciones basadas en propiedades físicas del índice. El aislamiento transaccional no se aplica a las posiciones de **JetGetRecordPosition,** ya que los valores dependen de propiedades físicas del índice que no están aisladas de transacciones.
 
-[JET_RECPOS](./jet-recpos-structure.md) debe usarse para describir un registro dentro de una tabla o para cambiar la posición de un registro cerca de un registro existente. En su lugar, se deben recuperar los marcadores de un registro existente y, a continuación, se deben usar para cambiar la posición del mismo registro.
+[JET_RECPOS](./jet-recpos-structure.md) debe usarse para describir un registro dentro de una tabla o para cambiar la posición de un registro cerca de un registro existente. En su lugar, se deben recuperar los marcadores de un registro existente y, a continuación, usarse para cambiar la posición del mismo registro.
 
 #### <a name="requirements"></a>Requisitos
 
 
-| Requisito | Value |
-|------------|----------|
-| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
-| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
-| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
-| <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | | <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

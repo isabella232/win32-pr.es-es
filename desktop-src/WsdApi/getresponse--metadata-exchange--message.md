@@ -4,12 +4,12 @@ ms.assetid: aff05317-35db-4ea6-9692-1e09e4682fe7
 title: Mensaje GetResponse (metadatos Exchange)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47141228fec0ae528e33e41f1bdf65db8325e5c2
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 6b22782ae8b00530f6c857d867694be43b32e495
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626311"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122883068"
 ---
 # <a name="getresponse-metadata-exchange-message"></a>Mensaje GetResponse (metadatos Exchange)
 
@@ -130,23 +130,23 @@ Un mensaje GetResponse tiene los siguientes puntos de enfoque.
 <tbody>
 <tr class="odd">
 <td>GetResponse</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Action>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Action&gt;
     https://schemas.xmlsoap.org/ws/2004/09/transfer/GetResponse
-</wsa:Action></code></pre></td>
+&lt;/wsa:Action&gt;</code></pre></td>
 <td>La acción GETResponse SOAP identifica el mensaje como un mensaje GetResponse.</td>
 </tr>
 <tr class="even">
 <td>RelatesTo</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:RelatesTo>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:RelatesTo&gt;
     urn:uuid:027bec45-c37c-466c-936c-68f648abe2bb
-</wsa:RelatesTo></code></pre></td>
+&lt;/wsa:RelatesTo&gt;</code></pre></td>
 <td>Identificador del mensaje al que responde el dispositivo. Este encabezado coincide con el MessageID del <a href="get--metadata-exchange--http-request-and-message.md">mensaje Get.</a></td>
 </tr>
 <tr class="odd">
 <td>Dirección</td>
-<td><pre class="syntax" data-space="preserve"><code><wsa:Address>
+<td><pre class="syntax" data-space="preserve"><code>&lt;wsa:Address&gt;
     https://192.168.0.2:5357/37f86d35-e6ac-4241-964f-1d9ae46fb366
-</wsa:Address></code></pre></td>
+&lt;/wsa:Address&gt;</code></pre></td>
 <td>Contiene la dirección del punto de conexión de los servicios hospedados en este dispositivo.</td>
 </tr>
 </tbody>

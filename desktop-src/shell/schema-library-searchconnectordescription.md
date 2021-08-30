@@ -1,19 +1,19 @@
 ---
-description: El <searchConnectorDescription> elemento es el elemento contenedor de nivel superior de una definición de conector de búsqueda.
+description: El &lt; elemento searchConnectorDescription &gt; es el elemento contenedor de nivel superior de una definición de conector de búsqueda.
 ms.assetid: 383CAA20-56CA-4bdc-AC79-E57A1D59785C
 title: elemento searchConnectorDescription (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91be0345ae2770e28437f13cdc754a1855f050210b85a03a4eb5c6c3726af98b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eddf7c2795f5c87009bc17b5fa3899d339ceed3c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117858254"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885971"
 ---
 # <a name="searchconnectordescription-element-library-schema"></a>elemento searchConnectorDescription (esquema de biblioteca)
 
-El <searchConnectorDescription> elemento es el elemento contenedor de nivel superior de una definición de conector de búsqueda. El elemento es una extensión del tipo de elemento asociado a los conectores de búsqueda federada de Windows; sin embargo, no puede incluir conectores de búsqueda para la búsqueda federada de Windows o controladores de protocolo en una <searchConnectorDescription> <searchConnectorDescriptionType> biblioteca.
+El &lt; elemento searchConnectorDescription &gt; es el elemento contenedor de nivel superior de una definición de conector de búsqueda. El elemento searchConnectorDescription es una extensión del tipo de elemento &lt; &gt; &lt; searchConnectorDescriptionType asociado a los conectores de búsqueda federada de Windows; sin embargo, no puede incluir conectores de búsqueda para Windows Federated Search o controladores de protocolo en una &gt; biblioteca.
 
 ## <a name="syntax"></a>Syntax
 
@@ -104,22 +104,22 @@ Consulte la documentación del esquema en [Windows Search.](/previous-versions/b
 | Elemento primario                                                                                               | Elementos secundarios                        |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | [elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md) | <isSearchOnlyI.tem>             |
-|                                                                                                              | <description>                   |
-|                                                                                                              | <iconReference>                 |
-|                                                                                                              | <imageLink>                     |
-|                                                                                                              | <author>                        |
-|                                                                                                              | <dateCreated>                   |
-|                                                                                                              | <templateInfo>                  |
-|                                                                                                              | <locationProvider>              |
-|                                                                                                              | <scope>                         |
-|                                                                                                              | <propertyStore>                 |
-|                                                                                                              | <domain>                        |
-|                                                                                                              | <supportsAdvancedQuerySyntax>   |
-|                                                                                                              | <isDefaultSaveLocation>         |
-|                                                                                                              | <isDefaultNonOwnerSaveLocation> |
-|                                                                                                              | <isIndexed>                     |
-|                                                                                                              | <simpleLocation>                |
-|                                                                                                              | <includeInStartMenu>            |
+|                                                                                                              | &lt;description&gt;                   |
+|                                                                                                              | &lt;iconReference&gt;                 |
+|                                                                                                              | &lt;Imagelink&gt;                     |
+|                                                                                                              | &lt;Autor&gt;                        |
+|                                                                                                              | &lt;dateCreated&gt;                   |
+|                                                                                                              | &lt;templateInfo&gt;                  |
+|                                                                                                              | &lt;locationProvider&gt;              |
+|                                                                                                              | &lt;scope&gt;                         |
+|                                                                                                              | &lt;propertyStore&gt;                 |
+|                                                                                                              | &lt;dominio&gt;                        |
+|                                                                                                              | &lt;supportsAdvancedQuerySyntax&gt;   |
+|                                                                                                              | &lt;isDefaultSaveLocation&gt;         |
+|                                                                                                              | &lt;isDefaultNonOwnerSaveLocation&gt; |
+|                                                                                                              | &lt;isIndexed&gt;                     |
+|                                                                                                              | &lt;simpleLocation&gt;                |
+|                                                                                                              | &lt;includeInStartMenu&gt;            |
 
 
 
@@ -140,7 +140,7 @@ Consulte la documentación del esquema en [Windows Search.](/previous-versions/b
 
 ## <a name="remarks"></a>Comentarios
 
-El <searchConnectorDescription> elemento de una biblioteca usa la misma definición de esquema que para Windows búsqueda <searchConnectorDescription> federada. Aunque usan los mismos esquemas, los conectores de búsqueda para Windows búsqueda federada no se pueden incluir en una biblioteca.
+El elemento searchConnectorDescription de una biblioteca usa la misma definición de esquema que &lt; &gt; &lt; searchConnectorDescription &gt; para Windows búsqueda federada. Aunque usan los mismos esquemas, los conectores de búsqueda para Windows búsqueda federada no se pueden incluir en una biblioteca.
 
 ## <a name="related-topics"></a>Temas relacionados
 

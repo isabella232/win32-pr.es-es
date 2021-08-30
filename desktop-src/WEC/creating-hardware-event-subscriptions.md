@@ -5,12 +5,12 @@ ms.assetid: 646ab546-500e-44ee-8b08-2f835e57e3e6
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54ee32d590143ed8a1ffacec6f59ad3b3094c2d2a22d0df66b0cb0d3521f83e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a56f2fa627de3a640e03be7c60f3950d06f752b3
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117751117"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885861"
 ---
 # <a name="creating-hardware-event-subscriptions"></a>Creación de suscripciones de eventos de hardware
 
@@ -41,17 +41,17 @@ El procedimiento siguiente define cómo crear la suscripción de eventos SEL par
 
     
 
-2.  Cree una suscripción de eventos ejecutando el siguiente comando en una ventana del símbolo del sistema (el programa Wecutil.exe se encuentra en el directorio %SYSTEMROOT% \\ System32).:
+2.  Cree una suscripción de eventos ejecutando el siguiente comando en una ventana del símbolo del sistema (el programa Wecutil.exe se encuentra en el directorio %SYSTEMROOT% \\ System32).):
 
-    **Cs de Wecutil** *<path> \\wsmanselrg.xml*
+    **Ruta de acceso de Wecutil cs** *&lt; &gt; \\wsmanselrg.xml*
 
 3.  Asegúrese de que la suscripción está activa ejecutando el siguiente comando en una ventana del símbolo del sistema:
 
     **Wecutil gr** *wsmanselrg*
 
-El BMC es un microcontrolador conectado localmente a un servidor. Los BMC tienen sensores que supervisan el estado físico del servidor y una conexión de red independiente que se puede comunicar a través de la red, incluso si el servidor está sin conexión. Tiene acceso a los datos de BMC a través del proveedor WMI de interfaz de administración de plataforma inteligente (IPMI). Para obtener más información sobre el proveedor de IPMI, vea [Proveedor de IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider).
+BMC es un microcontrolador conectado localmente a un servidor. Los BMC tienen sensores que supervisan el estado físico del servidor y una conexión de red independiente que se puede comunicar a través de la red, incluso si el servidor está sin conexión. Tiene acceso a los datos de BMC a través del proveedor WMI de interfaz de administración de plataforma inteligente (IPMI). Para obtener más información sobre el proveedor de IPMI, vea [Proveedor de IPMI.](/previous-versions/windows/desktop/ipmiprv/ipmi-provider)
 
-El equipo debe tener el BMC y el proveedor IPMI instalados para que la suscripción de eventos funcione. En el caso de los equipos Windows Server 2008, el proveedor IPMI está instalado de forma predeterminada. Si el BMC no está disponible, no se puede instalar el controlador IPMI y el estado del tiempo de ejecución de la suscripción siempre mostrará un error (0x8004001- Error genérico de WMI).
+El equipo debe tener el BMC y el proveedor de IPMI instalados para que la suscripción de eventos funcione. En el caso de los equipos Windows Server 2008, el proveedor de IPMI se instala de forma predeterminada. Si el BMC no está disponible, no se puede instalar el controlador IPMI y el estado de tiempo de ejecución de la suscripción siempre mostrará un error (0x8004001- Error genérico de WMI).
 
  
 

@@ -8,12 +8,12 @@ keywords:
 - aplicar animaciones de DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecba1bde3c430acbb49f640dc7611452f0967746
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 03142fbf536c13a3a47b93488779a71688e6b018
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474231"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787191"
 ---
 # <a name="how-to-apply-animations"></a>Cómo aplicar animaciones
 
@@ -30,20 +30,20 @@ En este tema se muestra cómo animar las propiedades de un objeto visual mediant
 -   [Gráficos de Direct3D 11](/windows/desktop/direct3d11/atoc-dx-graphics-direct3d-11)
 -   [Infraestructura de gráficos de DirectX (DXGI)](/windows/desktop/direct3ddxgi/dx-graphics-dxgi)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Microsoft Win32
 -   Modelo de objetos componentes (COM)
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 ### <a name="step-1-initialize-directcomposition-objects"></a>Paso 1: Inicializar objetos DirectComposition
 
 1.  Cree el objeto de dispositivo y el objeto de destino de composición.
 2.  Cree un objeto visual, establezca su contenido y agrégrélo al árbol visual.
 
-Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
+Para obtener más información, [vea Cómo inicializar DirectComposition.](initialize-directcomposition.md)
 
 ### <a name="step-2-create-an-animation-object"></a>Paso 2: Crear un objeto de animación
 
@@ -94,7 +94,7 @@ hr = m_pDevice->CreateEffectGroup(&m_pEffectGroup);
 
 
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 
 | C++ | 
@@ -102,7 +102,7 @@ hr = m_pDevice->CreateEffectGroup(&m_pEffectGroup);
 | <pre><code>if (SUCCEEDED(hr)){    hr = m_pEffectGroup-&gt;SetOpacity(m_pFadeInAnimation);}</code></pre> | 
 
 
-<span codelanguage="ManagedCPlusPlus"></span>
+
 
 
 | C++ | 
@@ -134,7 +134,7 @@ SafeRelease(&m_pFadeInAnimation);
 
 
 
-Recuerde también liberar los demás objetos DirectComposition antes de que se cierre la aplicación, incluido el objeto de dispositivo, el objeto de destino de composición y el objeto visual. Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
+Recuerde también liberar los demás objetos DirectComposition antes de que se cierre la aplicación, incluido el objeto de dispositivo, el objeto de destino de composición y el objeto visual. Para obtener más información, [vea Cómo inicializar DirectComposition.](initialize-directcomposition.md)
 
 ## <a name="complete-example"></a>Ejemplo completo
 

@@ -1,19 +1,19 @@
 ---
-description: 'El Microsoft Media Foundation descodificador de AAC es una transformación de Media Foundation que descodifica los siguientes perfiles de Codificación de audio avanzada (AAC) y AAC de alta eficacia (HE-AAC):'
+description: 'El descodificador Microsoft Media Foundation AAC es una transformación de Media Foundation que descodifica los siguientes perfiles de Codificación de audio avanzada (AAC) y AAC de alta eficacia (HE-AAC):'
 ms.assetid: 036fb0ee-8165-41a3-b41a-2e9bf035a6a6
 title: Descodificador de AAC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b9990965092c04b6ddc9e7b6c7b4d26cf577937
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 9daf50196029f484264ddb33c8e10a25e61cb0dc
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122483111"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122885386"
 ---
 # <a name="aac-decoder"></a>Descodificador de AAC
 
-El Microsoft Media Foundation descodificador de AAC es una transformación de [Media Foundation que](media-foundation-transforms.md) descodifica los siguientes perfiles de Codificación de audio avanzada (AAC) y AAC de alta eficacia (HE-AAC):
+El descodificador Microsoft Media Foundation AAC es una transformación de [Media Foundation](media-foundation-transforms.md) que descodifica los siguientes perfiles de Codificación de audio avanzada (AAC) y AAC de alta eficacia (HE-AAC):
 
 -   Perfil de baja complejidad (LC) de AAC MPEG-2 (multicanal).
 -   MPEG-4 HE-AAC v1 (multicanal) con núcleo AAC-LC.
@@ -21,7 +21,7 @@ El Microsoft Media Foundation descodificador de AAC es una transformación de [M
 
 El descodificador de AAC admite tanto secuencias AAC sin procesar sin encabezados como AAC en una secuencia de transporte de datos de audio (ADTS).
 
-A partir Windows 8, el descodificador AAC también admite la descodificación de secuencias de transporte de audio MPEG-4 con una capa multiplex (LATM) y una capa de sincronización (LOAS). También puede convertir una secuencia LATM/LOAS en ADTS.
+A partir Windows 8, el descodificador de AAC también admite la descodificación de secuencias de transporte de audio MPEG-4 con una capa multiplex (LATM) y una capa de sincronización (LOAS). También puede convertir una secuencia LATM/LOAS en ADTS.
 
 ## <a name="class-identifier"></a>Identificador de clase
 
@@ -39,8 +39,8 @@ El descodificador de AAC admite los siguientes subtipos de audio:
 
 | Subtype                     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Encabezado       |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| **MFAudioFormat_AAC**      | AAC sin procesar o AAC de ADTS.<br/> Para este subtipo, el tipo de medio proporciona la frecuencia de muestreo y el número de canales antes de la aplicación de las herramientas de replicación de banda espectral (SBR) y estéreo paramétrico (PS), si están presentes. El efecto de la herramienta SBR es duplicar la frecuencia de muestreo descodificada en relación con la frecuencia de muestreo de AAC-LC principal. El efecto de la herramienta PS es descodificar estéreo de una secuencia AAC-LC de núcleo monocanal.<br/> Este subtipo es equivalente **a MEDIASUBTYPE_MPEG_HEAAC**, definido en wmcodecdsp.h. Consulte [GUID de subtipo de audio.](audio-subtype-guids.md) <br/> El [origen de archivo MPEG-4](mpeg-4-file-source.md) y el analizador de ADTS emiten este subtipo. <br/> | mfapi.h      |
-| **MEDIASUBTYPE_RAW_AAC1** | AAC sin formato. <br/> Este subtipo se usa para AAC incluido en un archivo AVI con la etiqueta de formato de audio igual a WAVE_FORMAT_RAW_AAC1 (0x00FF). <br/> Para este subtipo, el tipo de medio proporciona la frecuencia de muestreo y el número de canales después de aplicar las herramientas SBR y PS, si están presentes.<br/>                                                                                                                                                                                                                                                                                                                                                                                      | wmcodecdsp.h |
+| **MFAudioFormat_AAC**      | AAC sin procesar o AAC de ADTS.<br/> Para este subtipo, el tipo de medio proporciona la frecuencia de muestreo y el número de canales antes de la aplicación de las herramientas de replicación de banda espectral (SBR) y estéreo paramétrico (PS), si están presentes. El efecto de la herramienta SBR es duplicar la frecuencia de muestreo descodificada en relación con la frecuencia de muestreo principal de AAC-LC. El efecto de la herramienta PS es descodificar estéreo de una secuencia AAC-LC de núcleo monocanal.<br/> Este subtipo es equivalente **a MEDIASUBTYPE_MPEG_HEAAC**, definido en wmcodecdsp.h. Consulte [GUID de subtipo de audio.](audio-subtype-guids.md) <br/> El [origen de archivo MPEG-4](mpeg-4-file-source.md) y el analizador de ADTS emiten este subtipo. <br/> | mfapi.h      |
+| **MEDIASUBTYPE_RAW_AAC1** | AAC sin procesar. <br/> Este subtipo se usa para AAC incluido en un archivo AVI con la etiqueta de formato de audio igual a WAVE_FORMAT_RAW_AAC1 (0x00FF). <br/> Para este subtipo, el tipo de medio proporciona la frecuencia de muestreo y el número de canales después de aplicar las herramientas SBR y PS, si están presentes.<br/>                                                                                                                                                                                                                                                                                                                                                                                      | wmcodecdsp.h |
 
 
 
@@ -56,12 +56,12 @@ Para configurar el descodificador de AAC, establezca los siguientes atributos en
 | <a href="mf-mt-major-type-attribute.md"><strong>MF_MT_MAJOR_TYPE</strong></a> | Tipo principal. | Debe ser <strong>MFMediaType_Audio</strong>. | 
 | <a href="mf-mt-subtype-attribute.md"><strong>MF_MT_SUBTYPE</strong></a> | Subtipo de audio. | Consulte la descripción anterior para obtener más información. | 
 | <a href="mf-mt-aac-audio-profile-level-indication.md">MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION</a> | Perfil y nivel de audio. <br /> | Opcional. Solo se aplica a <strong>MFAudioFormat_AAC</strong>. <br /> El valor de este atributo es el <strong>campo audioProfileLevelIndication,</strong> tal como se define en ISO/IEC 14496-3. <br /> Si es desconocido, establezca en cero o 0xFE ("no se especificó ningún perfil de audio").<br /> | 
-| <a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a> | Tipo de carga.<br /> | Solo se aplica a <strong>MFAudioFormat_AAC</strong>. El descodificador admite los siguientes tipos de carga: <br /><ul><li>0: AAC sin formato. La secuencia solo contiene raw_data_block(), tal como se define en MPEG-2.</li><li>1: ADTS. La secuencia contiene un adts_sequence(), tal como se define en MPEG-2. Solo se permite raw_data_block() por adts_frame().</li><li>3: Flujo de transporte de audio con una capa de sincronización (LOAS) y una capa multiplex (LATM). De los tres tipos de LOAS, solo <strong>se admite AudioSyncStream.</strong> La capa multiplex es <strong>AudioMuxElement,</strong>restringida a un programa de audio y una capa.</li></ul><a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE es</a> opcional. Si no se especifica este atributo, se usa el valor predeterminado 0, que especifica que la secuencia solo raw_data_block elementos.<br /> | 
+| <a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a> | Tipo de carga.<br /> | Solo se aplica a <strong>MFAudioFormat_AAC</strong>. El descodificador admite los siguientes tipos de carga: <br /><ul><li>0: AAC sin formato. La secuencia solo raw_data_block(), tal como se define en MPEG-2.</li><li>1: ADTS. La secuencia contiene un adts_sequence(), tal como se define en MPEG-2. Solo se permite raw_data_block() por adts_frame().</li><li>3: Secuencia de transporte de audio con una capa de sincronización (LOAS) y una capa multiplex (LATM). De los tres tipos de LOAS, solo <strong>se admite AudioSyncStream.</strong> La capa multiplex es <strong>AudioMuxElement,</strong>restringida a un programa de audio y una capa.</li></ul><a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE es</a> opcional. Si no se especifica este atributo, se usa el valor predeterminado 0, que especifica que la secuencia solo raw_data_block elementos.<br /> | 
 | <a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a> | Profundidad de bits deseada del audio PCM descodificado. | 
-| <a href="mf-mt-audio-channel-mask-attribute.md"><strong>MF_MT_AUDIO_CHANNEL_MASK</strong></a> | Especifica la asignación de canales de audio a las posiciones del hablante. | Opcional. Para obtener más información, vea <a href="#format-constraints">Format Constraints</a>. | 
-| <a href="mf-mt-audio-num-channels-attribute.md"><strong>MF_MT_AUDIO_NUM_CHANNELS</strong></a> | Número de canales, incluido el canal de baja frecuencia (LFE), si está presente.<br /> | La interpretación de este valor depende del subtipo de medios, como se ha descrito anteriormente.<br /> | 
-| <a href="mf-mt-audio-samples-per-second-attribute.md"><strong>MF_MT_AUDIO_SAMPLES_PER_SECOND</strong></a> | Frecuencia de muestreo, en muestras por segundo.<br /> | La interpretación de este valor depende del subtipo de medios, como se ha descrito anteriormente.<br /> | 
-| <a href="mf-mt-user-data-attribute.md"><strong>MF_MT_USER_DATA</strong></a> | Información de formato adicional. | El valor de este atributo depende del subtipo.<br /><ul><li><strong>MFAudioFormat_AAC:</strong>contiene la parte de la estructura <a href="/windows/desktop/api/mmreg/ns-mmreg-heaacwaveinfo"><strong>HEAACWAVEINFO</strong></a> que aparece después de la estructura <strong>DESACWAVEATEX</strong> (es decir, después del <strong>miembro wfx).</strong> Esto va seguido de los datos AudioSpecificConfig(), tal como se define en ISO/IEC 14496-3.</li><li><strong>MEDIASUBTYPE_RAW_AAC1:</strong>contiene los datos AudioSpecificConfig(). Estos datos deben aparecer; De lo contrario, el descodificador rechazará el tipo de medio.</li></ul>La longitud de los datos AudioSpecificConfig() es de 2 bytes para AAC-LC o HE-AAC con señalización implícita de SBR/PS. Tiene más de 2 bytes para HE-AAC con señalización explícita de SBR/PS.<br /> El valor de <strong>audioObjectType</strong> tal como se define en AudioSpecificConfig() debe ser 2, lo que indica AAC-LC. El valor de <strong>extensionAudioObjectType</strong> debe ser 5 para SBR o 29 para PS. <br /> | 
+| <a href="mf-mt-audio-channel-mask-attribute.md"><strong>MF_MT_AUDIO_CHANNEL_MASK</strong></a> | Especifica la asignación de canales de audio a las posiciones del hablante. | Opcional. Para obtener más información, vea <a href="#format-constraints">Restricciones de formato</a>. | 
+| <a href="mf-mt-audio-num-channels-attribute.md"><strong>MF_MT_AUDIO_NUM_CHANNELS</strong></a> | Número de canales, incluido el canal de baja frecuencia (LFE), si está presente.<br /> | La interpretación de este valor depende del subtipo de medios, como se describió anteriormente.<br /> | 
+| <a href="mf-mt-audio-samples-per-second-attribute.md"><strong>MF_MT_AUDIO_SAMPLES_PER_SECOND</strong></a> | Frecuencia de muestreo, en muestras por segundo.<br /> | La interpretación de este valor depende del subtipo de medios, como se describió anteriormente.<br /> | 
+| <a href="mf-mt-user-data-attribute.md"><strong>MF_MT_USER_DATA</strong></a> | Información de formato adicional. | El valor de este atributo depende del subtipo.<br /><ul><li><strong>MFAudioFormat_AAC:</strong>contiene la parte de la estructura <a href="/windows/desktop/api/mmreg/ns-mmreg-heaacwaveinfo"><strong>HEAACWAVEINFO</strong></a> que aparece después de la estructura <strong>DESACWAVEATEX</strong> (es decir, después del <strong>miembro wfx).</strong> Esto va seguido de los datos AudioSpecificConfig(), tal como se define en ISO/IEC 14496-3.</li><li><strong>MEDIASUBTYPE_RAW_AAC1:</strong>contiene los datos audioSpecificConfig(). Estos datos deben aparecer; De lo contrario, el descodificador rechazará el tipo de medio.</li></ul>La longitud de los datos de AudioSpecificConfig() es de 2 bytes para AAC-LC o HE-AAC con señalización implícita de SBR/PS. Es más de 2 bytes para HE-AAC con señalización explícita de SBR/PS.<br /> El valor de <strong>audioObjectType</strong> tal como se define en AudioSpecificConfig() debe ser 2, lo que indica AAC-LC. El valor de <strong>extensionAudioObjectType</strong> debe ser 5 para SBR o 29 para PS. <br /> | 
 
 
 
@@ -79,7 +79,7 @@ El descodificador admite los siguientes tipos de salida:
 |---------|-------------|
 | <strong>MFAudioFormat_Float</strong> | Audio de punto flotante IEEE. | 
 | <strong>MFAudioFormat_PCM</strong> | Audio PCM de 16 bits. | 
-| <strong>MFAudioFormat_AAC</strong> | Requiere Windows 8. <br /> Este tipo de salida se puede usar para convertir una secuencia de AAC en el formato LOAS/LATM al formato ADTS. <br /> Para convertir una secuencia LOAS/LATM en una secuencia de ADTS, establezca el tipo de entrada <strong>en MFAudioFormat_AAC</strong> con el tipo de carga 3 (LOAS). A continuación, establezca el tipo de <strong>salida MFAudioFormat_AAC</strong> con el tipo de carga 1 (ADTS). El descodificador volverá a formatear el conainter sin descodificar la secuencia de bits. <br /><blockquote>[!Note]<br />El descodificador no <strong>registra</strong> MFAudioFormat_AAC como un tipo de salida. Sin embargo, si la <strong>aplicación</strong> establece el tipo de entrada como se describe, el método <a href="/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype"><strong>IMFTransform::GetOutputAvailableType</strong></a> devuelve MFAudioFormat_AAC en la lista de tipos de salida disponibles.</blockquote><br /><br /> | 
+| <strong>MFAudioFormat_AAC</strong> | Requiere Windows 8. <br /> Este tipo de salida se puede usar para convertir una secuencia de AAC en el formato LOAS/LATM al formato ADTS. <br /> Para convertir un flujo LOAS/LATM en un flujo de ADTS, establezca el tipo de entrada en <strong>MFAudioFormat_AAC</strong> con el tipo de carga 3 (LOAS). A continuación, establezca el tipo <strong>de salida MFAudioFormat_AAC</strong> con el tipo de carga 1 (ADTS). El descodificador volverá a formatear el conainter sin descodificar la secuencia de bits. <br /><blockquote>[!Note]<br />El descodificador no <strong>registra</strong> MFAudioFormat_AAC como un tipo de salida. Sin embargo, <strong>si</strong> la aplicación establece el tipo de entrada como se describe, el método <a href="/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype"><strong>IMFTransform::GetOutputAvailableType</strong></a> devuelve MFAudioFormat_AAC en la lista de tipos de salida disponibles.</blockquote><br /><br /> | 
 
 
 
@@ -109,11 +109,11 @@ No se admiten velocidades de muestreo superiores a 48 kHz.
 
 El descodificador admite hasta 6 canales de audio. Para cada configuración del hablante, el descodificador espera que los elementos sintácticos de AAC aparezcan en un orden determinado. En la tabla siguiente se enumeran las configuraciones admitidas del hablante. En la tercera columna de la tabla se enumeran los elementos sintácticos esperados y su orden, mediante la siguiente notación:
 
--   <SCE1>: el single_channel_element (SCE) asociado al altavoz del centro frontal.
--   <SCE2>: SCE asociado al altavoz del centro posterior.
--   <CPE1>: el channel_pair_element (CPE) asociado a los altavoces frontales.
--   <CPE2>: el CPE asociado a los altavoces de fondo (o lateral)
--   <LFE>: el lfe_channel_element (LFE).
+-   &lt;SCE1: &gt; el single_channel_element (SCE) asociado al altavoz del centro frontal.
+-   &lt;SCE2: &gt; SCE asociado al altavoz del centro posterior.
+-   &lt;CPE1: &gt; el channel_pair_element (CPE) asociado a los altavoces frontales.
+-   &lt;CPE2: el CPE asociado a los altavoces de la parte posterior &gt; (o lateral)
+-   &lt;&gt;LFE: el lfe_channel_element (LFE).
 
 Para obtener más información sobre estos elementos sintácticos, consulte ISO/IEC 13818-7.
 
@@ -121,14 +121,14 @@ Para obtener más información sobre estos elementos sintácticos, consulte ISO/
 
 | Configuración       | Máscara de canal                                                                                                                                                              | Elementos sintácticos de AAC                          |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| Mono                | **SPEAKER_FRONT_CENTER**                                                                                                                                                | <SCE1>                                    |
-| Mono estéreo o dual | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT**                                                                                                                     | <CPE1>                                    |
-| 2/1                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_BACK_CENTER**                                                                                        | <CPE1><SCE1>                        |
-| 2/2                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_BACK_LEFT** \| **SPEAKER_BACK_RIGHT**                                                              | <CPE1><CPE2>                        |
-| 3/0                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER**                                                                                       | <SCE1><CPE1>                        |
-| 3/1                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER** \| **SPEAKER_BACK_CENTER**                                                          | <SCE1><CPE1><SCE2>            |
-| 3/2                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER** \| **SPEAKER_BACK_LEFT** \| **SPEAKER_BACK_RIGHT**                                | <SCE1><CPE1><CPE2>            |
-| 3/2 + LFE           | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER** \| **SPEAKER_LOW_FREQUENCY** \| **SPEAKER_BACK_LEFT** \| **SPEAKER_BACK_RIGHT** | <SCE1><CPE1><CPE2><LFE> |
+| Mono                | **SPEAKER_FRONT_CENTER**                                                                                                                                                | &lt;SCE1&gt;                                    |
+| Mono estéreo o dual | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT**                                                                                                                     | &lt;CPE1&gt;                                    |
+| 2/1                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_BACK_CENTER**                                                                                        | &lt;CPE1 &gt; &lt; SCE1&gt;                        |
+| 2/2                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_BACK_LEFT** \| **SPEAKER_BACK_RIGHT**                                                              | &lt;CPE1 &gt; &lt; CPE2&gt;                        |
+| 3/0                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER**                                                                                       | &lt;SCE1 &gt; &lt; CPE1&gt;                        |
+| 3/1                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER** \| **SPEAKER_BACK_CENTER**                                                          | &lt;SCE1 &gt; &lt; CPE1 &gt; &lt; SCE2&gt;            |
+| 3/2                 | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER** \| **SPEAKER_BACK_LEFT** \| **SPEAKER_BACK_RIGHT**                                | &lt;SCE1 &gt; &lt; CPE1 &gt; &lt; CPE2&gt;            |
+| 3/2 + LFE           | **SPEAKER_FRONT_LEFT** \| **SPEAKER_FRONT_RIGHT** \| **SPEAKER_FRONT_CENTER** \| **SPEAKER_LOW_FREQUENCY** \| **SPEAKER_BACK_LEFT** \| **SPEAKER_BACK_RIGHT** | &lt;SCE1 &gt; &lt; CPE1 &gt; &lt; CPE2 &gt; &lt; LFE&gt; |
 
 
 
@@ -157,7 +157,7 @@ El descodificador de AAC implementa el [**método IMFTransform::GetAttributes.**
 |-----------|-------------|
 | <a href="/windows/desktop/DirectShow/avdecaudiodualmono-property"><strong>CODECAPI_AVDecAudioDualMono</strong></a> | Especifica si el audio de 2 canales se codifica como estéreo o mono dual. Tratar como de solo lectura. | 
 | <a href="/windows/desktop/DirectShow/avdecaudiodualmonorepromode-property"><strong>CODECAPI_AVDecAudioDualMonoReproMode</strong></a> | Especifica cómo el descodificador reproduce el audio mono dual. El valor predeterminado es <strong>eAVDecAudioDualMonoReproMode_LEFT_MONO</strong>salida Ch1 a los altavoces izquierdo y derecho. <br /> Las aplicaciones pueden establecer esta propiedad para cambiar el comportamiento predeterminado.<br /> | 
-| <a href="mft-support-dynamic-format-change-attribute.md"><strong>MFT_SUPPORT_DYNAMIC_FORMAT_CHANGE</strong></a> | El descodificador de AAC no controla los cambios de formato dinámico y se debe vaciar o purgar antes de establecer un nuevo tipo de medio de entrada. Trate este atributo como de solo lectura. <br /><blockquote>[!Note]<br />El descodificador de AAC notifica incorrectamente un valor <strong>de TRUE</strong> para este atributo.</blockquote><br /><br /> En Windows 7, el descodificador notifica incorrectamente un valor de <strong>TRUE</strong> para este atributo. En Windows 8, el descodificador notifica <strong>FALSE</strong>, que es el valor correcto.<br /> | 
+| <a href="mft-support-dynamic-format-change-attribute.md"><strong>MFT_SUPPORT_DYNAMIC_FORMAT_CHANGE</strong></a> | El descodificador de AAC no controla los cambios de formato dinámico y debe vaciarse o purgarse antes de establecer un nuevo tipo de medio de entrada. Trate este atributo como de solo lectura. <br /><blockquote>[!Note]<br />El descodificador de AAC notifica incorrectamente un valor <strong>de TRUE</strong> para este atributo.</blockquote><br /><br /> En Windows 7, el descodificador notifica incorrectamente un valor de <strong>TRUE</strong> para este atributo. En Windows 8, el descodificador notifica <strong>FALSE</strong>, que es el valor correcto.<br /> | 
 
 
 
@@ -218,7 +218,7 @@ Dado este tipo de entrada, use el siguiente tipo de medio de salida para obtener
 
  
 
-Si el complemento de actualización de plataforma para Windows Vista está instalado, el descodificador de audio AAC está disponible en Windows Vista, pero solo se puede acceder a él en Windows Vista mediante el Lector de origen [.](source-reader.md)
+Si se instala el complemento de actualización de plataforma para Windows Vista, el descodificador de audio AAC está disponible en Windows Vista, pero solo se puede acceder a él en Windows Vista mediante el lector de [origen](source-reader.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -232,7 +232,7 @@ Si el complemento de actualización de plataforma para Windows Vista está insta
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

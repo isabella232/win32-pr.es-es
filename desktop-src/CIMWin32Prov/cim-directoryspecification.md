@@ -25,19 +25,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 2464636b717d320c592cc007a8f0e688a9e3dfcd27e0eb49ae29e391b2a05cb0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 903fccebeb5599842bbcd51623dcd8f25aee27eb
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119924215"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122886126"
 ---
-# <a name="cim_directoryspecification-class"></a>Clase \_ Cim DirectorySpecification
+# <a name="cim_directoryspecification-class"></a>Cim \_ DirectorySpecification (clase)
 
 La **clase CIM \_ DirectorySpecification** captura la estructura de directorios principal de un elemento de software. Esta clase se usa para organizar los archivos de un elemento de software en unidades administrables que se pueden reubicar en un sistema informático.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -65,14 +65,14 @@ class CIM_DirectorySpecification : CIM_Check
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ Cim DirectorySpecification** tiene estos tipos de miembros:
+La **clase Cim \_ DirectorySpecification** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ Cim DirectorySpecification** tiene estos métodos.
+La **clase Cim \_ DirectorySpecification** tiene estos métodos.
 
 
 
@@ -86,7 +86,7 @@ La **clase \_ Cim DirectorySpecification** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Cim DirectorySpecification** tiene estas propiedades.
+La **clase \_ DirectorySpecification de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -104,7 +104,7 @@ Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del asunto.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/w
 
 Identificador que se usa junto con otras claves para identificar de forma única la comprobación.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -135,11 +135,11 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que el [**método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
+Si **es TRUE,** se espera que la condición exista en el entorno. Por ejemplo, se espera que un archivo esté en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **TRUE**.
 
-Si **es FALSE,** no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
+Si **es FALSE**, no se espera que exista la condición. Por ejemplo, un archivo no está en un sistema, por lo que [**el método Invoke**](invoke-method-in-class-cim-check.md) debe devolver **FALSE**.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Tipo de acceso: solo lectura
 
 Descripción de los objetos.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ Tipo de directorio que se describe.
 
 <span id="Product_include_directory"></span><span id="product_include_directory"></span><span id="PRODUCT_INCLUDE_DIRECTORY"></span>
 
-**Directorio de include del** producto (4)
+**Directorio de incluir producto** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -262,14 +262,14 @@ Tipo de directorio que se describe.
 
 <span id="Shared_include_directory"></span><span id="shared_include_directory"></span><span id="SHARED_INCLUDE_DIRECTORY"></span>
 
-**Directorio de incluyeción** compartido (10)
+**Directorio de incluir compartido** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_base_directory"></span><span id="system_base_directory"></span><span id="SYSTEM_BASE_DIRECTORY"></span>
 
-**Directorio base del** sistema (11)
+**Directorio base del sistema** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -283,7 +283,7 @@ Tipo de directorio que se describe.
 
 <span id="System_library_directory"></span><span id="system_library_directory"></span><span id="SYSTEM_LIBRARY_DIRECTORY"></span>
 
-**Directorio de la biblioteca del** sistema (13)
+**Directorio de biblioteca del** sistema (13)
 
 
 </dt> <dd></dd> <dt>
@@ -297,7 +297,7 @@ Tipo de directorio que se describe.
 
 <span id="System_include_directory"></span><span id="system_include_directory"></span><span id="SYSTEM_INCLUDE_DIRECTORY"></span>
 
-**Directorio de incluyeción** del sistema (15)
+**Directorio de incluyeción del** sistema (15)
 
 
 </dt> <dd></dd> <dt>
@@ -327,12 +327,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Nombre usado para identificar el elemento de software
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -345,12 +345,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ clave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Se trata de un identificador para este elemento de software.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 </dd> <dt>
 
@@ -363,12 +363,12 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**clave \_ CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado del elemento de software de un elemento de software.
 
-Esta propiedad se hereda de [**cim \_ check**](cim-check.md).
+Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 <dt>
 
@@ -960,8 +960,8 @@ Versión de la operación.
 
 La versión de la operación debe tener uno de los siguientes formatos:
 
--   <major>.<minor>.<revision>
--   <major>.<minor><letter><revision>
+-   &lt;&gt;principal. &lt; &gt;secundaria. &lt; Revisión&gt;
+-   &lt;&gt;principal. &lt; revisión &gt; &lt; de letra &gt; &lt; secundaria&gt;
 
 Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
@@ -971,13 +971,13 @@ Esta propiedad se hereda de [**CIM \_ Check**](cim-check.md).
 
 WMI no implementa esta clase. Para las clases derivadas de **CIM \_ DirectorySpecification**, vea [Clases win32](win32-provider.md).
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

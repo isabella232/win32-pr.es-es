@@ -1,19 +1,19 @@
 ---
-description: Opcional <description> El elemento especifica una descripción para este conector de búsqueda. Este elemento no tiene elementos secundarios ni atributos.
+description: El elemento &lt; description opcional especifica una descripción para este conector de &gt; búsqueda. Este elemento no tiene elementos secundarios ni atributos.
 ms.assetid: 0e9d806c-7dfd-4e7f-8843-15a4e22f317f
 title: elemento description (Esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4cadc9b41c7c85f95db9f455fabe61e65663b30a2b6882c796ad5f0126db7e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0fd7314f29fb6a402416d861069cf048ecfac0c
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117680223"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882487"
 ---
 # <a name="description-element-search-connector-schema"></a>elemento description (Esquema del conector de búsqueda)
 
-Opcional <description> El elemento especifica una descripción para este conector de búsqueda. Este elemento no tiene elementos secundarios ni atributos.
+El elemento &lt; description opcional especifica una descripción para este conector de &gt; búsqueda. Este elemento no tiene elementos secundarios ni atributos.
 
 ## <a name="syntax"></a>Syntax
 

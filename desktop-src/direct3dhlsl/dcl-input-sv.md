@@ -1,6 +1,6 @@
 ---
-title: dcl_input_sv (SM4-ASM)
-description: '\_ \_ SV de entrada de DCL (SM4-ASM)'
+title: dcl_input_sv (sm4 - asm)
+description: dcl \_ input \_ sv (sm4 - asm)
 ms.assetid: 59270148-e2eb-4525-a888-ad7e843d62a5
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 650196dff224259f48d1471f3005f95ec0de9c8b
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b703677bb4e99f70443c89a8f907fa7abfaaff11
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103785021"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122481271"
 ---
-# <a name="dcl_input_sv-sm4---asm"></a>\_ \_ SV de entrada de DCL (SM4-ASM)
+# <a name="dcl_input_sv-sm4---asm"></a>dcl \_ input \_ sv (sm4 - asm)
 
-Declara un registro de entrada de sombreador que espera que se proporcione un [valor del sistema](dx-graphics-hlsl-semantics.md) desde una fase anterior.
+Declara un registro de entrada de sombreador que espera que se proporciona un valor [del](dx-graphics-hlsl-semantics.md) sistema de una fase anterior.
 
 
 
-| \_entrada \_ de DCL SV v *N \[ . \] Mask*, *systemValueName \[ , \] interpolationMode* |
+| dcl \_ input sv v N \_ *\[ \] .mask*, *systemValueName \[ , interpolationMode \]* |
 |------------------------------------------------------------------------|
 
 
@@ -31,49 +31,19 @@ Declara un registro de entrada de sombreador que espera que se proporcione un [v
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="vN_.mask_"></span><span id="vn_.mask_"></span><span id="VN_.MASK_"></span>v<em>N [. Mask]</em><br/></td>
-<td>de Un registro de datos de vértice. <br/>
-<ul>
-<li><em>N</em> es un entero que identifica el número de registro.</li>
-<li><em>[. Mask]</em> es una máscara de componente opcional (. xyzw) que especifica cuál de los componentes de registro se va a usar.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><span id="systemValueName"></span><span id="systemvaluename"></span><span id="SYSTEMVALUENAME"></span><em>systemValueName</em><br/></td>
-<td>de Nombre del valor del sistema que es una cadena (vea <a href="dx-graphics-hlsl-semantics.md">semántica de valor del sistema</a>) sin el &quot; &quot; prefijo SV_.<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="interpolationMode"></span><span id="interpolationmode"></span><span id="INTERPOLATIONMODE"></span><em>interpolationMode</em><br/></td>
-<td>[in] Opcional. El modo de interpolación que afecta al modo en que se calculan los valores durante la rasterización; el modo solo lo usa un sombreador de píxeles. Puede ser uno de los siguientes valores: <br/>
-<ul>
-<li>constante: no se interpola entre los valores de registro.</li>
-<li>lineal: interpolación lineal entre valores de registro.</li>
-<li>linearCentroid: igual que lineal, pero centroide en el muestreo múltiple.</li>
-<li>linearNoperspective: igual que lineal pero sin corrección de perspectiva.</li>
-<li>linearNoperspectiveCentroid: igual que lineal, pero sin corrección de la perspectiva y centroide en el muestreo múltiple.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Elemento | Descripción | 
+|------|-------------|
+| <span id="vN_.mask_"></span><span id="vn_.mask_"></span><span id="VN_.MASK_"></span>v<em>N[.mask]</em><br /> | [in] Registro de datos de vértice. <br /><ul><li><em>N</em> es un entero que identifica el número de registro.</li><li><em>[.mask] es</em> una máscara de componente opcional (.xyzw) que especifica cuál de los componentes de registro se va a usar.</li></ul> | 
+| <span id="systemValueName"></span><span id="systemvaluename"></span><span id="SYSTEMVALUENAME"></span><em>systemValueName</em><br /> | [in] Nombre del valor del sistema que es una cadena (vea semántica de valores del <a href="dx-graphics-hlsl-semantics.md">sistema)</a>sin el prefijo "SV_".<br /> | 
+| <span id="interpolationMode"></span><span id="interpolationmode"></span><span id="INTERPOLATIONMODE"></span><em>interpolationMode</em><br /> | [in] Opcional. Modo de interpolación que afecta a cómo se calculan los valores durante la rasterización; el modo solo lo usa un sombreador de píxeles. Puede ser uno de los siguientes valores: <br /><ul><li>constant: no interpola entre los valores de registro.</li><li>linear: interpola linealmente entre valores de registro.</li><li>linearCentroid: igual que lineal pero centroide fija al multimuestreo.</li><li>linearNoperspective: igual que lineal pero sin corrección de perspectiva.</li><li>linearNoperspectiveCentroid: igual que lineal pero sin corrección de perspectiva y centroide fija cuando se multimuestreo.</li></ul> | 
+
 
 
 
  
 
-Una máscara de componente para una declaración de valor del sistema puede ser cualquier subconjunto adecuado de \[ xyzw \] ; las declaraciones no pueden superponerse (cada declaración debe seguir a la secuencia xyzw). Al declarar valores del sistema escalares (distancia de clip y distancia de selección, por ejemplo), puede declarar varios valores del sistema en un solo registro. Si lo hace, asegúrese de que otros modificadores, como los modos de interpolación coinciden.
+Una máscara de componente para una declaración de valor del sistema puede ser cualquier subconjunto adecuado de xyzw; es posible que las declaraciones no se superpongan (cada declaración debe \[ \] seguir la secuencia xyzw). Al declarar valores escalares del sistema (por ejemplo, distancia de recorte y distancia cull), puede declarar varios valores del sistema en un único registro. Si lo hace, asegúrese de que otros modificadores, como los modos de interpolación, coincidan.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -87,7 +57,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar en la depuración de un sombreador en el ensamblado. no se puede crear un sombreador en lenguaje de ensamblado con el modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -117,7 +87,7 @@ dcl_input_sv v0.z, renderTargetArrayIndex, constant  // the interpolation modes 
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -125,12 +95,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -140,7 +110,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

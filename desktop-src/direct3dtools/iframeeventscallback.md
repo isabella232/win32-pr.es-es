@@ -17,18 +17,18 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: fc7a16ad31835b9369ef61388bb4548ce44020ea
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.openlocfilehash: 0f9961ba4b29b688de198828a5e217b3c8c86c1e
+ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122630834"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122787161"
 ---
 # <a name="span-idvspixengineiframeeventscallbackspaniframeeventscallback-interface"></a><span id="vspixengine.iframeeventscallback"></span>IFrameEventsCallback (interfaz)
 
 Devolución de llamada para devolver la lista de eventos de un marco.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IFrameEventsCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IFrameEventsCallback** también tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ La **interfaz IFrameEventsCallback** hereda de la [**interfaz IUnknown.**](/wind
 
 La **interfaz IFrameEventsCallback** tiene estos métodos.
 
-<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descripción</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframeeventscallback-getsupportedeventcolumns-dword-eventcolumnid-arr-bstr-arr"><strong>GetSupportedEventColumns</strong></a></td><td style="text-align: left;"><p>Obtiene información sobre qué columnas (tipos de datos de eventos) son compatibles con la lista de eventos.</p></td></tr><tr class="even"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/iframeeventscallback-resultcallback-dword-dword-dword-dword-variant-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Función de devolución de llamada que se usa para notificar al host información sobre los eventos de la lista de eventos.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th >Método</th><th >Descripción</th></tr></thead><tbody><tr class="odd"><td ><a href="/windows/desktop/direct3dtools/iframeeventscallback-getsupportedeventcolumns-dword-eventcolumnid-arr-bstr-arr"><strong>GetSupportedEventColumns</strong></a></td><td ><p>Obtiene información sobre qué columnas (tipos de datos de eventos) son compatibles con la lista de eventos.</p></td></tr><tr class="even"><td ><a href="/windows/desktop/direct3dtools/iframeeventscallback-resultcallback-dword-dword-dword-dword-variant-arr"><strong>ResultCallback</strong></a></td><td ><p>Función de devolución de llamada que se usa para notificar al host información sobre los eventos de la lista de eventos.</p></td></tr></tbody></table>
 
  
 

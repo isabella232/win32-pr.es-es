@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre el elemento Option. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento Option. Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: feda78d9-58e7-4668-8a25-40e5fd8ad456
 title: Opción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1f02f506c61353698bc4386541ea96dbf858790dd7c34c6d80b8dc2542c46a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6da0c50443f1a431d4f4032741669ed08e6235b3
+ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098979"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122882210"
 ---
 # <a name="option"></a>Opción
 
@@ -19,7 +19,7 @@ Un elemento Option contiene todos los elementos Property y ScoredProperty asocia
 
 ## <a name="element-tag"></a>Etiqueta de elemento
 
-<Option>
+&lt;Opción&gt;
 
 ## <a name="xml-attributes"></a>Atributos XML
 
